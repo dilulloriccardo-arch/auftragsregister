@@ -1,0 +1,6 @@
+# The raw pulls stay local: they are 150 MB of JSON that the site already renders,
+# and re-fetching them costs nothing but time. The repo carries the site.
+dati/
+*.log
+__pycache__/
+*.bak

@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
+<style>
+:root{
+  --paper:oklch(99% .004 250); --ink:oklch(20% .018 250); --muted:oklch(50% .015 250);
+  --rule:oklch(89% .008 250); --rule-strong:oklch(72% .012 250);
+  --accent:oklch(46% .10 245); --signal:oklch(52% .10 62); --wash:oklch(97% .006 250);
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(17% .015 250); --ink:oklch(93% .008 250); --muted:oklch(68% .015 250);
+  --rule:oklch(29% .012 250); --rule-strong:oklch(42% .015 250);
+  --accent:oklch(76% .10 245); --signal:oklch(78% .10 62); --wash:oklch(21% .014 250);
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.55;
+  -webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none;text-underline-offset:3px}
+a:hover{text-decoration:underline}
+.serif{font-family:"Source Serif 4","Iowan Old Style",Georgia,serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
+.eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);
+  font-weight:500}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 14px;border-bottom:2px solid var(--ink)}
+.masthead .name{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:19px;
+  letter-spacing:-.01em}
+.runhead{display:flex;justify-content:space-between;padding:9px 0;
+  border-bottom:1px solid var(--rule);font-size:11px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--muted)}
+h1{font-family:"Source Serif 4",Georgia,serif;font-weight:700;letter-spacing:-.021em;
+  line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:19px;margin:0;
+  letter-spacing:-.01em}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;padding:0 12px 7px 0;border-bottom:1px solid var(--rule-strong)}
+td{padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top;font-size:14px}
+td.r,th.r{text-align:right;padding-right:0}
+.rail{color:var(--muted);font-size:12px}
+</style>
+<style>
+.state{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;font-weight:600;color:var(--signal)}
+.state i{width:7px;height:7px;background:var(--signal);border-radius:50%;display:block}
+.title{padding:32px 0 24px;border-bottom:1px solid var(--rule-strong);
+  display:grid;grid-template-columns:1fr 210px;gap:52px;align-items:start}
+.title h1{font-size:34px;margin-top:12px;max-width:22ch}
+.meta{border-left:1px solid var(--rule);padding-left:20px}
+.meta dt{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+  margin-top:13px;font-weight:600}
+.meta dt:first-child{margin-top:0}
+.meta dd{margin:3px 0 0;font-size:14px}
+.figures{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--rule-strong)}
+.fig{padding:20px 18px 18px 0;border-right:1px solid var(--rule)}
+.fig:last-child{border-right:0}
+.fig b{display:block;font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:27px;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+.fig span{display:block;margin-top:6px;font-size:11px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted)}
+.body{display:grid;grid-template-columns:1fr 292px;gap:54px;padding-top:32px;align-items:start}
+.prose p{margin:0 0 14px;font-size:15px;line-height:1.65;max-width:62ch}
+.winner{border:1px solid var(--rule-strong);padding:18px 20px;margin:6px 0 0}
+.winner .who{font-family:"Source Serif 4",Georgia,serif;font-size:21px;font-weight:600;
+  letter-spacing:-.01em}
+.winner .amt{margin-top:5px;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+.facts td{padding:9px 12px 9px 0;font-size:13.5px}
+.facts th{width:120px;text-transform:none;letter-spacing:0;font-size:13px;font-weight:500;
+  color:var(--muted);border-bottom:1px solid var(--rule);padding:9px 12px 9px 0;
+  vertical-align:top}
+.official{margin-top:22px;padding:13px 15px;background:var(--wash);
+  border-left:2px solid var(--accent);font-size:12.5px;color:var(--muted)}
+</style>
+</helmet>
+<div style="padding:0 56px 48px">
+  <div class="masthead">
+    <span class="name">Öffentliche Aufträge Schweiz</span>
+    <span class="eyebrow">Zuschlag</span>
+  </div>
+
+  <div class="title">
+    <div>
+      <span class="state"><i></i>Zuschlag erteilt</span>
+      <h1>Sissach ARA E1, gesamtleitender Projektingenieur</h1>
+    </div>
+    <dl class="meta">
+      <dt>Publikation</dt><dd class="mono">29478-02</dd>
+      <dt>Publiziert</dt><dd class="mono">2026-08-18</dd>
+      <dt>Verfahren</dt><dd>Offen</dd>
+    </dl>
+  </div>
+
+  <div class="figures">
+    <div class="fig"><b>6’674’595</b><span>Zuschlagssumme CHF</span></div>
+    <div class="fig"><b>5</b><span>eingegangene Angebote</span></div>
+    <div class="fig"><b>BL</b><span>Kanton</span></div>
+  </div>
+
+  <div class="body">
+    <div class="prose">
+      <div class="runhead"><span>Zuschlag</span><span>1 Anbieter</span></div>
+      <div class="winner">
+        <a href="#" class="who">HOLINGER AG</a>
+        <div class="amt">6’674’595 CHF · Ingenieurbüro, Zürich · 4 Zuschläge im Register</div>
+      </div>
+
+      <h2 style="margin:34px 0 12px">Begründung des Auftraggebers</h2>
+      <p>Das Angebot hat in der Gesamtbewertung der Zuschlagskriterien die höchste Punktzahl
+      erreicht. Das Team überzeugt im Qualitätskriterium «Zugang zur Aufgabe» durch eine
+      vertiefte Auseinandersetzung mit der Aufgabenstellung.</p>
+      <p>Besonders positiv sind die klare Etappierung und das konstruktive Vorgehen, welche
+      eine nachvollziehbare und realistische Projektabwicklung erwarten lassen.</p>
+
+      <h2 style="margin:30px 0 12px">Beschreibung</h2>
+      <p>Gesamtleitung der Projektierung und Realisierung der Erweiterung E1 der
+      Abwasserreinigungsanlage Sissach, einschliesslich Verfahrenstechnik, Bauleitung und
+      Inbetriebnahme.</p>
+
+      <div class="official">Amtliche Publikation:
+        <a href="#">Projekt 29478 auf simap.ch ansehen</a> — massgebend ist ausschliesslich
+        die dortige Veröffentlichung.</div>
+    </div>
+
+    <div>
+      <div class="runhead"><span>Angaben</span><span></span></div>
+      <table class="facts">
+        <tbody>
+          <tr><th>Auftraggeber</th><td>Zentrale Beschaffungsstelle Kanton Basel-Landschaft</td></tr>
+          <tr><th>Ort</th><td>Sissach</td></tr>
+          <tr><th>Auftragsart</th><td>Dienstleistungsauftrag</td></tr>
+          <tr><th>CPV</th><td><span class="mono">71300000</span><br>Dienstleistungen von
+            Ingenieurbüros</td></tr>
+          <tr><th>Staatsvertrag</th><td>Ja (GATT/WTO)</td></tr>
+        </tbody>
+      </table>
+      <div class="tags" style="display:flex;flex-wrap:wrap;gap:7px;margin-top:18px">
+        <a href="#" style="border:1px solid var(--rule-strong);padding:4px 9px;font-size:12px">
+          Weitere Aufträge im Kanton BL</a>
+        <a href="#" style="border:1px solid var(--rule-strong);padding:4px 9px;font-size:12px">
+          Ingenieurdienstleistungen</a>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
+<style>
+:root{
+  --paper:oklch(99% .004 250); --ink:oklch(20% .018 250); --muted:oklch(50% .015 250);
+  --rule:oklch(89% .008 250); --rule-strong:oklch(72% .012 250);
+  --accent:oklch(46% .10 245); --signal:oklch(52% .10 62); --wash:oklch(97% .006 250);
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(17% .015 250); --ink:oklch(93% .008 250); --muted:oklch(68% .015 250);
+  --rule:oklch(29% .012 250); --rule-strong:oklch(42% .015 250);
+  --accent:oklch(76% .10 245); --signal:oklch(78% .10 62); --wash:oklch(21% .014 250);
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.55;
+  -webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none;text-underline-offset:3px}
+a:hover{text-decoration:underline}
+.serif{font-family:"Source Serif 4","Iowan Old Style",Georgia,serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
+.eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);
+  font-weight:500}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 14px;border-bottom:2px solid var(--ink)}
+.masthead .name{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:19px;
+  letter-spacing:-.01em}
+.runhead{display:flex;justify-content:space-between;padding:9px 0;
+  border-bottom:1px solid var(--rule);font-size:11px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--muted)}
+h1{font-family:"Source Serif 4",Georgia,serif;font-weight:700;letter-spacing:-.021em;
+  line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:19px;margin:0;
+  letter-spacing:-.01em}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;padding:0 12px 7px 0;border-bottom:1px solid var(--rule-strong)}
+td{padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top;font-size:14px}
+td.r,th.r{text-align:right;padding-right:0}
+.rail{color:var(--muted);font-size:12px}
+</style>
+<style>
+.title{padding:38px 0 26px;border-bottom:1px solid var(--rule-strong);
+  display:grid;grid-template-columns:1fr 250px;gap:52px;align-items:end}
+.title h1{font-size:44px}
+.title p{margin:14px 0 0;color:var(--muted);font-size:15.5px;max-width:50ch}
+.figures{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--rule-strong)}
+.fig{padding:20px 18px 18px 0;border-right:1px solid var(--rule)}
+.fig:last-child{border-right:0}
+.fig b{display:block;font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:27px;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+.fig span{display:block;margin-top:6px;font-size:11px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:54px;padding-top:32px;align-items:start}
+.bar{display:block;height:3px;background:var(--accent);margin-top:6px;opacity:.75}
+.sect li{list-style:none;padding:11px 0;border-bottom:1px solid var(--rule)}
+.sect ul{margin:0;padding:0}
+.sect .row{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.sect .n{color:var(--muted);font-size:12.5px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.nav{display:flex;flex-wrap:wrap;gap:7px;padding:26px 0 0;margin-top:30px;
+  border-top:1px solid var(--rule)}
+.nav a{border:1px solid var(--rule-strong);padding:4px 10px;font-size:12px;
+  font-variant-numeric:tabular-nums}
+.nav a:hover{border-color:var(--accent);text-decoration:none}
+.nav a.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+</style>
+</helmet>
+<div style="padding:0 56px 48px">
+  <div class="masthead">
+    <span class="name">Öffentliche Aufträge Schweiz</span>
+    <span class="eyebrow">Kanton</span>
+  </div>
+
+  <div class="title">
+    <div>
+      <p class="eyebrow" style="margin:0 0 12px">Kanton</p>
+      <h1>Zürich</h1>
+      <p>233 publizierte Zuschläge an 186 Unternehmen, von der Stadt Zürich, kantonalen
+      Ämtern und Gemeinden.</p>
+    </div>
+    <div class="rail" style="border-left:1px solid var(--rule);padding-left:20px">
+      <span class="eyebrow">Zeitraum</span>
+      <p style="margin:7px 0 0">August 2024 – August 2026</p>
+    </div>
+  </div>
+
+  <div class="figures">
+    <div class="fig"><b>233</b><span>Zuschläge</span></div>
+    <div class="fig"><b>186</b><span>Unternehmen</span></div>
+    <div class="fig"><b>412 Mio.</b><span>Summe CHF</span></div>
+    <div class="fig"><b>61</b><span>Auftraggeber</span></div>
+  </div>
+
+  <div class="cols">
+    <div>
+      <div class="runhead"><span>Unternehmen</span><span>nach Zuschlägen</span></div>
+      <table>
+        <thead><tr><th>Unternehmen</th><th class="r">Zuschläge</th><th class="r">Summe CHF</th></tr></thead>
+        <tbody>
+          <tr><td><a href="#">Repoxit AG</a></td><td class="r num">4</td><td class="r num">761’800</td></tr>
+          <tr><td><a href="#">HOLINGER AG</a></td><td class="r num">4</td><td class="r num">7’285’783</td></tr>
+          <tr><td><a href="#">cablex AG</a></td><td class="r num">4</td><td class="r num">2’978’894</td></tr>
+          <tr><td><a href="#">EKZ Eltop AG</a></td><td class="r num">4</td><td class="r num">1’595’357</td></tr>
+          <tr><td><a href="#">Honegger AG</a></td><td class="r num">4</td><td class="r num">7’725’765</td></tr>
+          <tr><td><a href="#">Walo Bertschinger AG</a></td><td class="r num">3</td><td class="r num">9’140’220</td></tr>
+          <tr><td><a href="#">Schindler Aufzüge AG</a></td><td class="r num">2</td><td class="r num">1’204’500</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="sect">
+      <div class="runhead"><span>Bereiche</span><span>CPV</span></div>
+      <ul>
+        <li><div class="row"><a href="#">Bauarbeiten</a><span class="n">78</span></div>
+          <span class="bar" style="width:100%"></span></li>
+        <li><div class="row"><a href="#">Ingenieurdienstleistungen</a><span class="n">31</span></div>
+          <span class="bar" style="width:40%"></span></li>
+        <li><div class="row"><a href="#">IT-Dienstleistungen</a><span class="n">24</span></div>
+          <span class="bar" style="width:31%"></span></li>
+        <li><div class="row"><a href="#">Elektroinstallationen</a><span class="n">18</span></div>
+          <span class="bar" style="width:23%"></span></li>
+        <li><div class="row"><a href="#">Gebäudereinigung</a><span class="n">11</span></div>
+          <span class="bar" style="width:14%"></span></li>
+      </ul>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a class="on" href="#">ZH 233</a><a href="#">BE 116</a><a href="#">VD 89</a>
+    <a href="#">GE 80</a><a href="#">AG 66</a><a href="#">GR 44</a><a href="#">BS 42</a>
+    <a href="#">LU 38</a><a href="#">VS 37</a><a href="#">SG 26</a><a href="#">TI 21</a>
+    <a href="#">SO 19</a>
+  </nav>
+</div>
+</x-dc>
+</body>
+</html>

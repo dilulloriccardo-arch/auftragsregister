@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap">
+<style>
+:root{
+  --paper:oklch(99% .004 250); --ink:oklch(20% .018 250); --muted:oklch(50% .015 250);
+  --rule:oklch(89% .008 250); --rule-strong:oklch(72% .012 250);
+  --accent:oklch(46% .10 245); --signal:oklch(52% .10 62); --wash:oklch(97% .006 250);
+}
+@media (prefers-color-scheme:dark){:root{
+  --paper:oklch(17% .015 250); --ink:oklch(93% .008 250); --muted:oklch(68% .015 250);
+  --rule:oklch(29% .012 250); --rule-strong:oklch(42% .015 250);
+  --accent:oklch(76% .10 245); --signal:oklch(78% .10 62); --wash:oklch(21% .014 250);
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.55;
+  -webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none;text-underline-offset:3px}
+a:hover{text-decoration:underline}
+.serif{font-family:"Source Serif 4","Iowan Old Style",Georgia,serif}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.num{font-variant-numeric:tabular-nums}
+.eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);
+  font-weight:500}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;
+  padding:20px 0 14px;border-bottom:2px solid var(--ink)}
+.masthead .name{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:19px;
+  letter-spacing:-.01em}
+.runhead{display:flex;justify-content:space-between;padding:9px 0;
+  border-bottom:1px solid var(--rule);font-size:11px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--muted)}
+h1{font-family:"Source Serif 4",Georgia,serif;font-weight:700;letter-spacing:-.021em;
+  line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:19px;margin:0;
+  letter-spacing:-.01em}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);font-weight:600;padding:0 12px 7px 0;border-bottom:1px solid var(--rule-strong)}
+td{padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top;font-size:14px}
+td.r,th.r{text-align:right;padding-right:0}
+.rail{color:var(--muted);font-size:12px}
+</style>
+<style>
+.title{display:grid;grid-template-columns:1fr 232px;gap:52px;align-items:start;
+  padding:38px 0 26px;border-bottom:1px solid var(--rule-strong)}
+.title h1{font-size:40px}
+.title .kicker{margin:0 0 12px}
+.title p{margin:14px 0 0;color:var(--muted);font-size:15.5px;max-width:52ch}
+.meta{border-left:1px solid var(--rule);padding-left:20px}
+.meta dt{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+  margin-top:13px;font-weight:600}
+.meta dt:first-child{margin-top:0}
+.meta dd{margin:3px 0 0;font-size:14px}
+.figures{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--rule-strong)}
+.fig{padding:20px 18px 18px 0;border-right:1px solid var(--rule)}
+.fig:last-child{border-right:0}
+.fig b{display:block;font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:27px;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1}
+.fig span{display:block;margin-top:6px;font-size:11px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted)}
+.sec{margin-top:34px}
+.open{border-top:1px solid var(--rule-strong)}
+.open li{list-style:none;padding:13px 0;border-bottom:1px solid var(--rule);
+  display:grid;grid-template-columns:1fr 108px;gap:18px;align-items:baseline}
+.open ul{margin:0;padding:0}
+.open .when{text-align:right;font-size:12.5px;color:var(--signal);
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.open .who{display:block;color:var(--muted);font-size:12.5px;margin-top:3px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.tag{border:1px solid var(--rule-strong);padding:4px 9px;font-size:12px}
+.tag:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+.lead-in{color:var(--muted);font-size:13px;margin:9px 0 0}
+</style>
+</helmet>
+<div style="padding:0 56px 48px">
+  <div class="masthead">
+    <span class="name">Öffentliche Aufträge Schweiz</span>
+    <span class="eyebrow">Unternehmen</span>
+  </div>
+
+  <div class="title">
+    <div>
+      <p class="eyebrow kicker">Ingenieurbüro · Zürich</p>
+      <h1>HOLINGER AG</h1>
+      <p>Vier publizierte Zuschläge zwischen August 2024 und August 2026, überwiegend
+      Wasserbau und Altlastensanierung für kantonale Ämter.</p>
+    </div>
+    <dl class="meta">
+      <dt>Hauptbereich</dt><dd>Dienstleistungen von Ingenieurbüros</dd>
+      <dt>CPV</dt><dd class="mono">71300000</dd>
+      <dt>Kantone</dt><dd>ZH · SO · BL</dd>
+    </dl>
+  </div>
+
+  <div class="figures">
+    <div class="fig"><b>4</b><span>Zuschläge</span></div>
+    <div class="fig"><b>7’285’783</b><span>Summe CHF</span></div>
+    <div class="fig"><b>4</b><span>Auftraggeber</span></div>
+    <div class="fig"><b>1’821’446</b><span>Median CHF</span></div>
+  </div>
+
+  <div class="sec">
+    <div class="runhead"><span>Zuschläge</span><span>chronologisch</span></div>
+    <table>
+      <thead><tr><th style="width:88px">Datum</th><th>Auftrag</th><th>Auftraggeber</th>
+      <th style="width:44px">Kt.</th><th class="r">Betrag CHF</th></tr></thead>
+      <tbody>
+        <tr><td class="mono" style="font-size:12.5px">2026-08-25</td>
+          <td><a href="#">Generalplaner Überschussentwässerung Kläranlage Hard Winterthur</a></td>
+          <td>Stadtwerk Winterthur</td><td>ZH</td><td class="r num">183’770</td></tr>
+        <tr><td class="mono" style="font-size:12.5px">2026-08-21</td>
+          <td><a href="#">Fachplanung Altlasten, Sanierung Schiessanlagen SanReg 7</a></td>
+          <td>Amt für Umwelt</td><td>SO</td><td class="r num">169’868</td></tr>
+        <tr><td class="mono" style="font-size:12.5px">2026-08-21</td>
+          <td><a href="#">Revitalisierung und Dammsanierung Flaacherbach</a></td>
+          <td>AWEL, Abteilung Wasserbau</td><td>ZH</td><td class="r num">257’550</td></tr>
+        <tr><td class="mono" style="font-size:12.5px">2026-08-18</td>
+          <td><a href="#">Sissach ARA E1, gesamtleitender Projektingenieur</a></td>
+          <td>Zentrale Beschaffungsstelle BL</td><td>BL</td><td class="r num">6’674’595</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec open">
+    <div class="runhead" style="border-bottom:0;padding-bottom:2px">
+      <span>Offene Ausschreibungen im selben Bereich</span><span>4 Treffer</span></div>
+    <p class="lead-in">Laufende Ausschreibungen, deren CPV-Code den bisherigen Zuschlägen
+      dieses Unternehmens entspricht.</p>
+    <ul style="margin-top:12px">
+      <li><div><a href="#">Kontrollen von Brandschutzanlagen</a>
+        <span class="who">Kanton Solothurn · SO · Ingenieurdienstleistungen</span></div>
+        <span class="when">bis 02.10.</span></li>
+      <li><div><a href="#">Olten, Neuer Bahnhofplatz — Gesamtplanung</a>
+        <span class="who">Stadt Olten · SO · Ingenieurdienstleistungen</span></div>
+        <span class="when">bis 14.10.</span></li>
+      <li><div><a href="#">Rorschach, Neue Serviceanlage Etappe 1 &amp; 2</a>
+        <span class="who">SBB Infrastruktur · SG · Bauingenieurwesen</span></div>
+        <span class="when">bis 30.10.</span></li>
+    </ul>
+  </div>
+
+  <div class="sec">
+    <div class="runhead"><span>Auftraggeber</span><span>4</span></div>
+    <div class="tags">
+      <a class="tag" href="#">Stadtwerk Winterthur</a>
+      <a class="tag" href="#">Amt für Umwelt SO</a>
+      <a class="tag" href="#">AWEL Wasserbau</a>
+      <a class="tag" href="#">Zentrale Beschaffungsstelle BL</a>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
