@@ -129,6 +129,27 @@ def main() -> int:
         say(f"  ATTENZIONE push fallito: {push.stderr.strip()[:300]}")
         return 1
     say(f"pubblicato: {changed} pagine cambiate su {pages}")
+
+    # Only the pages that changed: submitting the whole site nightly is what gets a
+    # host throttled, and IndexNow exists precisely to avoid that.
+    site, base = "", ""
+    try:
+        lines = (ROOT / "dominio.txt").read_text().strip().splitlines()
+        site = lines[0].strip().rstrip("/")
+        base = lines[1].strip().rstrip("/") if len(lines) > 1 else ""
+        urls = []
+        for line in st.splitlines():
+            f = line[3:].strip().strip('"')
+            if f.startswith("docs/") and f.endswith("index.html"):
+                rel = f[len("docs"):-len("index.html")]
+                urls.append(f"{site}{base}{rel}")
+        if urls:
+            r = subprocess.run([sys.executable, str(ROOT / "indexnow.py")],
+                               input="\n".join(urls[:10000]), text=True,
+                               capture_output=True, cwd=ROOT)
+            say("  " + (r.stdout.strip() or r.stderr.strip()[:200]))
+    except Exception as exc:
+        say(f"  IndexNow saltato: {type(exc).__name__}")
     say(f"dati: {n_now} questo mese, {n_prev} il mese scorso, {n_open} bandi aperti")
     return 0
 

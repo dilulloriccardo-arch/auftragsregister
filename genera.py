@@ -45,6 +45,11 @@ _DOMAIN = ROOT / "dominio.txt"
 _lines = (_DOMAIN.read_text().strip().splitlines() if _DOMAIN.exists()
           else ["https://example.invalid"])
 SITE = _lines[0].strip().rstrip("/")
+# Search Console proves ownership with a meta tag. The token is pasted into
+# search-console.txt once; the tag then rides on every page automatically.
+_SC = ROOT / "search-console.txt"
+VERIFY = (f'<meta name="google-site-verification" content="{_SC.read_text().strip()}">\n'
+          if _SC.exists() and _SC.read_text().strip() else "")
 BASE = (_lines[1].strip().rstrip("/") if len(_lines) > 1 else "")
 DISCLAIMER = lingue.PROSE["disclaimer"]["de"]   # prescribed verbatim by simap's terms
 LANG = "de"                                     # set per pass by main()
@@ -307,7 +312,7 @@ HEAD = """<!doctype html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap">
 <link rel="stylesheet" href="{base}/style.css">
-</head><body>
+{verify}</head><body>
 <div class="wrap">
 <div class="masthead"><a class="name" href="{base}/{lang}/">{sitename}</a>
 <span class="eyebrow">{kicker}</span></div>
@@ -369,6 +374,7 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
          else f'<a href="{BASE}{lang_path(path, l)}">{e(NAMES[l])}</a>') for l in LANGS)
     return (HEAD.format(title=e(title), desc=e(desc), site=SITE, base=BASE, path=path,
                         kicker=e(kicker or _.register), lang=LANG, alts=alts,
+                        verify=VERIFY,
                         sitename=e(_.site), langnav=nav, langlabel=e(_.language))
             + breadcrumbs(path, leaf or title.split(" — ")[0])
             + body + FOOT.format(disc=e(DISCLAIMER), today=TODAY,
@@ -1101,7 +1107,7 @@ def build_root() -> None:
             f'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
             f'family=IBM+Plex+Sans:wght@400;500;600&amp;'
             f'family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap">'
-            f'<link rel="stylesheet" href="{BASE}/style.css"></head><body><div class="wrap">'
+            f'<link rel="stylesheet" href="{BASE}/style.css">{VERIFY}</head><body><div class="wrap">'
             f'{body}</div></body></html>')
     write("/index.html", html)
 

@@ -117,3 +117,37 @@ Nessun dato personale: le aziende del registro sono persone giuridiche, e dal
    trasforma il sito nello strumento di misura per cui esiste.
 5. Aspettare. L'indicizzazione richiede mesi; il sito nel frattempo si aggiorna
    da solo e non chiede niente a nessuno.
+
+## Search Console — l'unico passo che resta, e perché non posso farlo io
+
+Search Console richiede l'accesso al tuo account Google. Non entro in account con
+credenziali altrui, quindi questo pezzo resta tuo. Ma è già tutto predisposto:
+
+1. Vai su **search.google.com/search-console**, aggiungi una proprietà di tipo
+   **"Prefisso URL"** con
+   `https://dilulloriccardo-arch.github.io/auftragsregister/`
+2. Scegli il metodo **"Tag HTML"**. Google ti mostra una riga tipo
+   `<meta name="google-site-verification" content="AbCdEf123...">`
+3. Copia **solo il valore** dentro `content="..."` e incollalo qui:
+
+   ```
+   echo "AbCdEf123..." > ~/auftragsregister/search-console.txt
+   cd ~/auftragsregister && python3 genera.py && git add -A && \
+     git commit -m "Search Console" && git push
+   ```
+
+4. Aspetta un paio di minuti che GitHub Pages ricostruisca, poi premi **Verifica**.
+5. Dentro Search Console, **Sitemap** → aggiungi `sitemap.xml`.
+
+Il tag finisce su tutte e 75.000 le pagine da solo, a ogni rigenerazione: il token
+va incollato una volta sola.
+
+**Cosa ti dà.** La query esatta che le persone hanno digitato per arrivare qui. È
+il dato per cui il sito è stato costruito: misura la domanda senza contattare
+nessuno. Senza Search Console il sito viene comunque indicizzato, ma alla cieca.
+
+## IndexNow — già attivo, non richiede nulla
+
+Bing, Yandex, Seznam e Naver accettano segnalazioni dirette senza account. La chiave
+è pubblicata sul sito e il job notturno segnala ogni notte **solo le pagine
+cambiate**. Google non aderisce: per lui serve Search Console.
