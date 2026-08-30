@@ -86,9 +86,33 @@ def main() -> int:
     if out.returncode != 0:
         say(f"  ERRORE nella generazione:\n{out.stderr[-800:]}")
         return 1
+    check = subprocess.run([sys.executable, str(ROOT / "controlla.py")],
+                           capture_output=True, text=True, cwd=ROOT)
+    if check.returncode != 0:
+        say("  controlli falliti — sito rigenerato ma NON pubblicato")
+        say("  " + check.stdout.strip().replace("\n", "\n  ")[-600:])
+        return 1
+
     pages = sum(1 for _ in (ROOT / "docs").rglob("index.html"))
-    say(f"aggiornato: {n_now} Zuschläge questo mese, {n_prev} il mese scorso, "
-        f"{n_open} offene — {pages} pagine generate")
+    # Publishing is a plain commit: unchanged pages cost nothing in git, so a daily
+    # push of 76k files only carries the ones the day actually changed.
+    subprocess.run(["git", "add", "-A"], cwd=ROOT, capture_output=True)
+    st = subprocess.run(["git", "status", "--porcelain"], cwd=ROOT,
+                        capture_output=True, text=True).stdout.strip()
+    if not st:
+        say(f"nessun cambiamento — {pages} pagine invariate")
+        return 0
+    changed = len(st.splitlines())
+    subprocess.run(["git", "-c", "user.email=dilulloriccardo@gmail.com",
+                    "-c", "user.name=Riccardo Di Lullo", "commit", "-q",
+                    "-m", f"Aggiornamento {datetime.date.today():%Y-%m-%d}: "
+                          f"{changed} pagine cambiate"], cwd=ROOT, capture_output=True)
+    push = subprocess.run(["git", "push", "-q"], cwd=ROOT, capture_output=True, text=True)
+    if push.returncode != 0:
+        say(f"  ATTENZIONE push fallito: {push.stderr.strip()[:300]}")
+        return 1
+    say(f"pubblicato: {changed} pagine cambiate su {pages}")
+    say(f"dati: {n_now} questo mese, {n_prev} il mese scorso, {n_open} bandi aperti")
     return 0
 
 
