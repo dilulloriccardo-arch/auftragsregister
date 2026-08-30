@@ -86,7 +86,7 @@ def main() -> int:
     if out.returncode != 0:
         say(f"  ERRORE nella generazione:\n{out.stderr[-800:]}")
         return 1
-    pages = sum(1 for _ in (ROOT / "www").rglob("index.html"))
+    pages = sum(1 for _ in (ROOT / "docs").rglob("index.html"))
     say(f"aggiornato: {n_now} Zuschläge questo mese, {n_prev} il mese scorso, "
         f"{n_open} offene — {pages} pagine generate")
     return 0

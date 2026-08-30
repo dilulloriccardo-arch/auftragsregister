@@ -19,7 +19,7 @@ A 50-150 €/mese bastano 20-40 clienti per CHF 2.000 al mese.
 
 ## Come si usa
 
-    python3 genera.py       # ricostruisce www/ dai dati in dati/
+    python3 genera.py       # ricostruisce docs/ dai dati in dati/
     python3 controlla.py    # link rotti, titoli, description — esce 1 se trova qualcosa
     python3 aggiorna.py     # scarica il nuovo e ricostruisce (è il lavoro notturno)
     ./pubblica.sh           # pubblica su Netlify (i controlli bloccano se falliscono)
@@ -31,12 +31,12 @@ Guardare il sito in locale:
 
 ## I file
 
-    genera.py      il generatore: legge dati/, scrive www/
+    genera.py      il generatore: legge dati/, scrive docs/
     controlla.py   controllo qualità prima della pubblicazione
     aggiorna.py    aggiornamento notturno (mese corrente + precedente + gare aperte)
     pull_storico.py raccolta iniziale dello storico, un mese per volta
     dati/          le aggiudicazioni scaricate, un file per mese — l'archivio
-    www/           il sito generato (si rigenera da zero ogni volta)
+    docs/           il sito generato (si rigenera da zero ogni volta)
     dominio.txt    l'origine canonica, es. https://auftragsregister.ch
     design/        le quattro schermate del progetto grafico
 

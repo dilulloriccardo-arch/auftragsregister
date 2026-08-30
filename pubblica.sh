@@ -27,6 +27,6 @@ fi
 python3 genera.py
 python3 controlla.py || { echo "  controlli falliti — non pubblico" >&2; exit 1; }
 
-PAGES=$(find www -name index.html | wc -l | tr -d ' ')
+PAGES=$(find docs -name index.html | wc -l | tr -d ' ')
 echo "  pubblico $PAGES pagine su $(cat dominio.txt)"
-netlify deploy --dir=www --prod
+netlify deploy --dir=docs --prod

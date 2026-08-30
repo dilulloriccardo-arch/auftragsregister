@@ -14,7 +14,7 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent
-OUT = ROOT / "www"
+OUT = ROOT / "docs"
 # The site can be served from a subdirectory (GitHub Pages project sites are), in
 # which case every internal link carries that prefix while the files do not. Without
 # stripping it, every link on the site reads as broken.

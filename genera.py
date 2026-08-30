@@ -34,7 +34,7 @@ from lingue import LANGS, NAMES
 
 ROOT = pathlib.Path(__file__).resolve().parent
 DATI = ROOT / "dati"
-OUT = ROOT / "www"
+OUT = ROOT / "docs"
 # The canonical origin. Kept in a file rather than in code so the domain can be set
 # once, without editing the generator; every canonical link and the sitemap use it.
 # The canonical origin, and the path the site is served from. GitHub Pages serves a
