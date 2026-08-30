@@ -1155,6 +1155,9 @@ def build_language(awards: list, opens: list) -> tuple[int, int, int, int, int, 
 
 def main() -> None:
     global LANG
+    # docs/ is wiped every build, so the IndexNow key file — proof of ownership,
+    # served at the site root — is put back afterwards rather than lost each night.
+    keyfile = ROOT / "indexnow.key"
     if OUT.exists():
         shutil.rmtree(OUT)
     awards, opens = load()
@@ -1167,6 +1170,9 @@ def main() -> None:
     LANG = "de"
     build_root()
     write("/style.css", CSS)
+    if keyfile.exists():
+        k = keyfile.read_text().strip()
+        write(f"/{k}.txt", k)
     print(f"  sitemap : {build_sitemap()} URL in {len(LANGS)} lingue")
 
 
