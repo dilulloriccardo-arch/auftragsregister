@@ -58,13 +58,30 @@ def run(kinds, frm, to, dest: pathlib.Path) -> int:
     items = json.loads(urllib.request.urlopen(
         f"https://api.apify.com/v2/datasets/{r['defaultDatasetId']}/items"
         f"?token={TOKEN}&clean=true&limit=50000", timeout=300).read())
-    if not items and dest.exists():
-        # an empty answer for a month that already has rows is a source hiccup, not
-        # a month that emptied; keeping the old file is the safe reading
-        say(f"  {dest.name}: 0 righe ma il file esiste — tengo la versione precedente")
-        return 0
-    dest.write_text(json.dumps(items, ensure_ascii=False))
-    return len(items)
+    # MERGE, never replace. simap matches a date window against each project's NEWEST
+    # publication, so an award from July that gets a correction in August stops
+    # matching July — refetching a month and overwriting it silently drops those rows.
+    # It cost 220 rows on 2026-08-30 before this was fixed. An archive only grows.
+    old = json.loads(dest.read_text()) if dest.exists() else []
+    by_id = {(r.get("publicationId") or r.get("publicationNumber")): r for r in old}
+    added = updated = 0
+    for r in items:
+        k = r.get("publicationId") or r.get("publicationNumber")
+        if not k:
+            continue
+        if k not in by_id:
+            added += 1
+        elif by_id[k] != r:
+            updated += 1
+        by_id[k] = r
+    merged = list(by_id.values())
+    if len(merged) < len(old):
+        say(f"  {dest.name}: la fusione ridurrebbe da {len(old)} a {len(merged)} — non scrivo")
+        return len(old)
+    dest.write_text(json.dumps(merged, ensure_ascii=False))
+    if added or updated:
+        say(f"  {dest.name}: +{added} nuove, {updated} aggiornate, {len(merged)} totali")
+    return len(merged)
 
 
 def main() -> int:
