@@ -29,6 +29,7 @@ import shutil
 import unicodedata
 from datetime import date
 
+import grafici
 import lingue
 from lingue import LANGS, NAMES
 
@@ -293,6 +294,10 @@ ul.plain li{padding:11px 0;border-bottom:1px solid var(--rule)}
   border-left:2px solid var(--accent);font-size:12.5px;color:var(--muted)}
 .prose p{margin:0 0 14px;font-size:15px;line-height:1.65;max-width:64ch}
 .bar{display:block;height:3px;background:var(--accent);margin-top:6px;opacity:.7}
+.fig-chart{margin:14px 0 0;padding:0}
+.fig-chart svg{max-width:100%}
+.fig-cap{margin-top:9px;font-size:12px;color:var(--muted);max-width:66ch}
+.figs{display:grid;gap:26px;margin-top:4px}
 .cols{display:grid;grid-template-columns:1fr 300px;gap:54px;padding-top:32px;
   align-items:start}
 .half{display:grid;grid-template-columns:1fr 1fr;gap:54px;padding-top:32px;align-items:start}
@@ -461,6 +466,23 @@ def matches(comp: dict, opens: list) -> dict:
     return out
 
 
+def per_month(rows: list) -> dict:
+    """Publication counts by month — the dimension the tables do not carry."""
+    c = collections.Counter((r.get("publicationDate") or "")[:7] for r in rows
+                            if (r.get("publicationDate") or "")[:7])
+    if not c:
+        return {}
+    keys = sorted(c)
+    # fill the gaps: a month with no awards is a fact, and leaving it out would
+    # squeeze the axis and quietly imply activity that was not there
+    out, y, m = {}, int(keys[0][:4]), int(keys[0][5:7])
+    ly, lm = int(keys[-1][:4]), int(keys[-1][5:7])
+    while (y, m) <= (ly, lm):
+        out[f"{y:04d}-{m:02d}"] = c.get(f"{y:04d}-{m:02d}", 0)
+        y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+    return out
+
+
 def median(xs: list) -> float:
     xs = sorted(xs)
     if not xs:
@@ -546,6 +568,10 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
             b.append(f'<div class="fig"><b>{chf(median(c["amounts"]))}</b><span>{_.median}</span></div>')
         b.append("</div>")
 
+        tl = grafici.timeline(rows, _p.chart_timeline, _p.chart_timeline_cap, chf)
+        if tl:
+            b.append(f'<div class="sec"><div class="runhead">'
+                     f'<span>{_p.chart_timeline}</span><span>{len(rows)}</span></div>{tl}</div>')
         b.append(f'<div class="sec"><div class="runhead"><span>{_.awards}</span>'
                  f'<span>{_.chronological}</span></div><div class="scroll"><table><thead><tr>'
                  f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.buyer}</th>'
@@ -885,7 +911,12 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
                     else e(label[:52]))
             b.append(f'<li><div class="row">{cell}<span class="sub num">{k}</span></div>'
                      f'<span class="bar" style="width:{max(4, round(k / top * 100))}%"></span></li>')
-        b.append("</ul></div></div>" + nav)
+        b.append("</ul></div></div>")
+        col = grafici.columns(per_month(rows), _p.chart_months, _p.chart_months_cap)
+        if col:
+            b.append(f'<div class="sec"><div class="runhead"><span>{_p.chart_months}</span>'
+                     f'<span>{len(rows)}</span></div>{col}</div>')
+        b.append(nav)
         write(f"/{LANG}/kanton/{code}/index.html",
               page(fit_title(_m("canton_title", name=name), _m("canton_suffix")),
                    _m("canton_desc", n=zuschlag(len(rows)), name=name, f=nfirms),
@@ -909,6 +940,10 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
              f'<div class="fig"><b>{len(cants)}</b><span>{_.cantons}</span></div></div>',
              f'<div class="sec"><div class="runhead"><span>{_.companies}</span>'
              f"<span>{_.by_awards}</span></div>" + table + "</div>",
+             (lambda g: f'<div class="sec"><div class="runhead">'
+                        f'<span>{_p.chart_months}</span><span>{len(rows)}</span></div>'
+                        f'{g}</div>' if g else "")(
+                 grafici.columns(per_month(rows), _p.chart_months, _p.chart_months_cap)),
              '<div class="tags" style="margin-top:24px">'
              + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">{e(c)} {k}</a>'
                        for c, k in cants.most_common(14)) + "</div>"]
@@ -959,7 +994,11 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: set[str]) -> int:
          f'<p class="sum">' + e(_m("open_lead", n=len(opens))) + "</p></div>"
          f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{TODAY}</dd>'
          f"<dt>{_.cantons}</dt><dd>{len(by_cant)}</dd></dl></div>",
-         '<div class="sec">' + table(opens[:400]) + "</div>", nav]
+         '<div class="sec">' + table(opens[:400]) + "</div>",
+         (f'<p class="sub" style="margin:12px 0 0">'
+          + e(_m("open_truncated", shown=400, total=len(opens))) + "</p>"
+          if len(opens) > 400 else ""),
+         nav]
     write(f"/{LANG}/ausschreibungen/index.html", page(
         _m("open_title"), _m("open_desc", n=len(opens)),
         "\n".join(b), f"/{LANG}/ausschreibungen/", _.tenders))
@@ -1085,6 +1124,11 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
              f'<a class="tag" href="{BASE}/{LANG}/auftraggeber/">{e(_i.all_buyers)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/kanton/">{e(_i.all_cantons)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/bereich/">{e(_i.all_sectors)}</a></div>')
+    col = grafici.columns(per_month(awards), _p.chart_months, _p.chart_months_cap)
+    if col:
+        b.append(f'<div class="sec"><div class="runhead"><span>{_p.chart_months}</span>'
+                 f'<span>{chf(len(awards))}</span></div>{col}</div>')
+
     b.append('<div class="official" style="margin-top:36px">Diese Website bereitet '
              "öffentlich publizierte Daten auf und ist kein Ersatz für simap.ch. "
              "Massgebend sind ausschliesslich die dort veröffentlichten Publikationen.</div>")

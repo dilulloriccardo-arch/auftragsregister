@@ -164,6 +164,45 @@ PROSE: dict[str, dict[str, str]] = {
         "de": "Offene Ausschreibungen", "fr": "Appels d'offres en cours",
         "it": "Bandi aperti", "en": "Open tenders",
     },
+    "chart_timeline": {
+        "de": "Zuschläge im Zeitverlauf", "fr": "Adjudications dans le temps",
+        "it": "Aggiudicazioni nel tempo", "en": "Awards over time"},
+    "chart_timeline_cap": {
+        "de": "Ein Punkt pro Zuschlag, waagrecht nach Datum, die Fläche im Verhältnis "
+              "zum publizierten Betrag. Zuschläge ohne publizierten Betrag stehen offen "
+              "auf der Grundlinie.",
+        "fr": "Un point par adjudication, en abscisse la date, la surface proportionnelle "
+              "au montant publié. Les adjudications sans montant publié restent ouvertes "
+              "sur la ligne de base.",
+        "it": "Un punto per aggiudicazione, in ascissa la data, l'area proporzionale "
+              "all'importo pubblicato. Le aggiudicazioni senza importo restano vuote "
+              "sulla linea di base.",
+        "en": "One dot per award, date across, area proportional to the published amount. "
+              "Awards with no published amount sit open on the baseline."},
+    "chart_sectors": {
+        "de": "Zuschläge nach Bereich", "fr": "Adjudications par domaine",
+        "it": "Aggiudicazioni per settore", "en": "Awards by sector"},
+    "chart_sectors_cap": {
+        "de": "Die zehn häufigsten CPV-Bereiche, nach Anzahl publizierter Zuschläge.",
+        "fr": "Les dix domaines CPV les plus fréquents, par nombre d'adjudications publiées.",
+        "it": "I dieci settori CPV più frequenti, per numero di aggiudicazioni pubblicate.",
+        "en": "The ten most frequent CPV sectors, by number of published awards."},
+    "chart_firms": {
+        "de": "Unternehmen nach Anzahl Zuschläge", "fr": "Entreprises par adjudications",
+        "it": "Imprese per aggiudicazioni", "en": "Companies by awards"},
+    "chart_firms_cap": {
+        "de": "Die zehn Unternehmen mit den meisten publizierten Zuschlägen in diesem Bereich.",
+        "fr": "Les dix entreprises comptant le plus d'adjudications publiées dans ce domaine.",
+        "it": "Le dieci imprese con più aggiudicazioni pubblicate in questo ambito.",
+        "en": "The ten companies with the most published awards in this area."},
+    "chart_months": {
+        "de": "Publizierte Zuschläge pro Monat", "fr": "Adjudications publiées par mois",
+        "it": "Aggiudicazioni pubblicate per mese", "en": "Awards published per month"},
+    "chart_months_cap": {
+        "de": "Anzahl der auf simap.ch publizierten Zuschläge je Publikationsmonat.",
+        "fr": "Nombre d'adjudications publiées sur simap.ch par mois de publication.",
+        "it": "Numero di aggiudicazioni pubblicate su simap.ch per mese di pubblicazione.",
+        "en": "Number of awards published on simap.ch by month of publication."},
     "translation_note": {
         "de": "Titel und Beschreibungen erscheinen in der Sprache, in der sie publiziert "
               "wurden. Nicht jede Publikation liegt in allen Landessprachen vor.",
@@ -296,6 +335,16 @@ META: dict[str, dict[str, str]] = {
     "open_canton_title": {"de": "Offene Ausschreibungen {name}",
                           "fr": "Appels d'offres en cours {name}",
                           "it": "Bandi aperti {name}", "en": "Open tenders {name}"},
+    "open_truncated": {
+        "de": "Diese Seite zeigt die {shown} Ausschreibungen mit der nächsten Frist von "
+              "insgesamt {total}. Die übrigen stehen auf den Kantonsseiten unten.",
+        "fr": "Cette page montre les {shown} appels d'offres dont le délai est le plus "
+              "proche, sur {total} au total. Les autres figurent sur les pages cantonales "
+              "ci-dessous.",
+        "it": "Questa pagina mostra i {shown} bandi con la scadenza più vicina su {total} "
+              "totali. Gli altri sono nelle pagine cantonali qui sotto.",
+        "en": "This page shows the {shown} tenders with the nearest deadline out of "
+              "{total}. The rest are on the canton pages below."},
     "open_canton_desc": {
         "de": "{n} laufende Ausschreibungen im Kanton {name} mit offener Eingabefrist.",
         "fr": "{n} appels d'offres en cours dans le canton de {name}, délai ouvert.",
