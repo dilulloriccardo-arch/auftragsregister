@@ -165,15 +165,44 @@ def dmyy(iso: str) -> str:
 
 
 def fit_title(text: str, suffix: str, limit: int = 64) -> str:
-    """A title Google will not truncate: cut on a word boundary, keep the suffix."""
+    """A title Google will not truncate, cut so it still identifies the page.
+
+    Cutting only the tail produced 747 titles shared by 3,036 pages: awards from one
+    big project share a long prefix and differ only in the part that gets thrown away —
+    28 pages all reading "Flumenthal; Zentralgefängnis Kanton Solothurn (ZGSO)…" where
+    the real subject was Brandschutzbekleidung, Innentüren, Gärtnerarbeiten. Identical
+    titles are what tells a search engine a set of pages carries nothing of its own.
+
+    So the ellipsis goes in the MIDDLE: the head keeps the project, the tail keeps the
+    trade, and both are cut on a word boundary.
+    """
     room = limit - len(suffix)
     text = " ".join(text.split())
     if len(text) <= room:
         return text + suffix
-    cut = text[:room]
-    if " " in cut[max(0, room - 22):]:
-        cut = cut[:cut.rfind(" ")]
-    return cut.rstrip(" ,.;:-–—") + "…" + suffix
+
+    def cut_end(t: str, n: int) -> str:
+        c = t[:n]
+        if " " in c[max(0, n - 22):]:
+            c = c[:c.rfind(" ")]
+        return c.rstrip(" ,.;:-–—/")
+
+    def cut_start(t: str, n: int) -> str:
+        """Whole words from the end. A tail that begins mid-word ("dschutzbekleidung")
+        is worse than a shorter one: it reads as damage, not as an abbreviation."""
+        words, out = t.split(" "), []
+        for w in reversed(words):
+            if len(" ".join([w] + out)) > n:
+                break
+            out.insert(0, w)
+        return " ".join(out).lstrip(" ,.;:-–—/")
+
+    tail_room = max(0, room * 2 // 5)
+    head = cut_end(text, room - tail_room - 1)
+    tail = cut_start(text, tail_room) if tail_room >= 8 else ""
+    if not tail or tail in head:
+        return head + "…" + suffix
+    return f"{head}…{tail}{suffix}"
 
 
 def zuschlag(n: int) -> str:
@@ -272,7 +301,18 @@ def norm_buyer(name: str) -> str:
     Normalising the NAME, not the slug: slug() truncates at 70 characters, and grouping
     on that would merge genuinely separate SBB purchasing units into one page.
     """
-    return " ".join((name or "").split()).casefold().rstrip(" .,:;-").replace("(", "").replace(")", "")
+    n = (name or "")
+    # Typographic variants of the same character: the register writes both l'environnement
+    # and l’environnement for one office, and separates a department from its parent with a
+    # comma here and a dash there.
+    for a, b in (("\u2019", "'"), ("\u2018", "'"), ("\u201c", '"'), ("\u201d", '"'),
+                 ("\u2013", "-"), ("\u2014", "-"), (",", " "), ("/", " "), ("-", " ")):
+        n = n.replace(a, b)
+    n = n.replace("(", " ").replace(")", " ")
+    # Genuine typos are left alone on purpose: "Bundebahnen" for "Bundesbahnen" and
+    # "Resourcen" for "Ressourcen" are real spellings in the source, and the fuzzy match
+    # that would merge them would also merge authorities that are actually different.
+    return " ".join(n.split()).casefold().rstrip(" .:;'")
 
 
 def sig(code) -> str:
@@ -783,6 +823,21 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
         by_project.setdefault(a.get("projectId"), {})["award"] = a
     for t in opens:
         by_project.setdefault(t.get("projectId"), {})["open"] = t
+    # A first pass over the titles, because uniqueness is not a property any single
+    # page can see. Truncation alone got the duplicates from 3,036 pages down to 712,
+    # and the rest genuinely share a title — twelve awards read only "BKP 211
+    # Baumeisterarbeiten". Knowing which ones collide is what lets the distinguisher
+    # be added only where it earns its space.
+    heads: dict[str, str] = {}
+    for pid, rec in by_project.items():
+        if not pid:
+            continue
+        src = rec.get("open") or rec.get("award")
+        t = de(src, "title")
+        if t:
+            heads[pid] = fit_title(t, "")
+    clash = {h for h, k in collections.Counter(heads.values()).items() if k > 1}
+
     n = 0
     for pid, rec in by_project.items():
         if not pid:
@@ -889,10 +944,21 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
             desc += f", Eingabefrist {src['offerDeadline'][:10]}"
         elif aw and aw.get("winnerPrice"):
             desc += f", {_.award} {money(aw)}" + (f" — {ws[0]}" if ws else "")
+        # Some award titles are genuinely identical — twelve read only "BKP 211
+        # Baumeisterarbeiten". No amount of clever truncation separates those, so the
+        # title carries who won: it is what distinguishes the page and what a reader
+        # searching for a firm's public work would type.
+        who = ws[0] if ws else (src.get("buyerName") or "")
+        if heads.get(pid) in clash:
+            # this one would otherwise be indistinguishable: trade the title's tail for
+            # the name, and fall back to the publication number when even that repeats
+            head = f"{who} · {title}" if who else f"{title} · {src.get('publicationNumber') or pid[:8]}"
+        else:
+            head = f"{title} · {who}" if who and len(title) < 46 else title
         write(f"/{LANG}/auftrag/{pid}/index.html",
-              page(fit_title(title, _m("tender_suffix") if is_open else _m("award_suffix")),
+              page(fit_title(head, _m("tender_suffix") if is_open else _m("award_suffix")),
                    desc[:180], "\n".join(b), f"/{LANG}/auftrag/{pid}/",
-                   "Ausschreibung" if is_open else "Zuschlag"))
+                   _.tenders if is_open else _.award))
         n += 1
     return n
 
