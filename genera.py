@@ -182,9 +182,56 @@ def zuschlag(n: int) -> str:
 
 
 def de(row: dict, field: str) -> str:
-    """German text where the publication carries a translation, else as published."""
+    """The publication's own text, in the page's language where it exists.
+
+    simap translates 74% of titles into German and 51% into French, so hardcoding
+    German threw away roughly 3,700 French titles the source had already published —
+    on the French site, which serves a quarter of the market. Italian sits at 3% and
+    English at nothing, so those fall back rather than pretend.
+
+    The fallback order is deliberate: the page's language, then German as the register's
+    majority language, then the field as published. It never paraphrases, and it never
+    labels one language's text as another's.
+    """
     t = ((row.get("translations") or {}).get(field) or {})
-    return (t.get("de") or row.get(field) or "").strip()
+    order = (LANG, "de", "fr", "it")
+    for lang in order:
+        if t.get(lang):
+            return t[lang].strip()
+    return (row.get(field) or "").strip()
+
+
+def chf_amount(row: dict) -> float | None:
+    """The awarded amount, but only when the register published it IN FRANCS.
+
+    98 awards are published in euros and 11 in dollars. Adding them to a CHF total
+    silently overstated it by roughly half a billion, and each page printed a foreign
+    figure under a "CHF" label — a converted or mislabelled amount is a number the
+    source never published, and this is a register. Foreign amounts are shown on their
+    own page with their own currency and left out of every total.
+    """
+    p = row.get("winnerPrice")
+    if not isinstance(p, (int, float)) or not p:
+        return None
+    cur = (row.get("winnerCurrency") or "CHF").strip().upper()
+    return float(p) if cur == "CHF" else None
+
+
+def _e(kind: str, value) -> str:
+    return lingue.enum(kind, value, LANG)
+
+
+def money(row: dict) -> str:
+    """The awarded amount as the register published it, currency and all.
+
+    Never relabelled: 109 awards are in euros or dollars, and printing them under a
+    CHF heading states something the publication does not.
+    """
+    p = row.get("winnerPrice")
+    if not isinstance(p, (int, float)) or not p:
+        return ""
+    cur = (row.get("winnerCurrency") or "CHF").strip().upper()
+    return f"{chf(p)}" + ("" if cur == "CHF" else f" {cur}")
 
 
 def winners(row: dict) -> list[str]:
@@ -234,6 +281,12 @@ def sig(code) -> str:
 
 
 def load() -> tuple[list, list]:
+    """Awards and open tenders.
+
+    `abandonment` publications ride in the same feed: a procurement the authority
+    called off. Presenting one as an award says a contract was granted that was not,
+    so they are dropped here rather than counted.
+    """
     awards, seen = [], set()
     for f in sorted(DATI.glob("aggiudicazioni_*.json")):
         for a in json.loads(f.read_text()):
@@ -241,6 +294,8 @@ def load() -> tuple[list, list]:
             if k and k in seen:
                 continue
             seen.add(k)
+            if a.get("pubType") == "abandonment":
+                continue
             awards.append(a)
     p = DATI / "gare_aperte.json"
     opens = [t for t in json.loads(p.read_text())
@@ -470,10 +525,10 @@ def profile(awards: list) -> dict:
                                     "cpv": collections.Counter(), "cant": collections.Counter(),
                                     "buyers": collections.Counter(), "sig": set()})
             c["awards"].append(a)
-            p = a.get("winnerPrice")
+            p = chf_amount(a)
             # a joint award names several firms for one price; splitting it would
             # invent a figure the register never published
-            if isinstance(p, (int, float)) and p and len(ws) == 1:
+            if p is not None and len(ws) == 1:
                 c["value"] += p
                 c["amounts"].append(p)
             if a.get("cpvCode"):
@@ -630,7 +685,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                 f'<tr><td class="mono" style="font-size:12.5px">{e((a.get("publicationDate") or "")[:10])}</td>'
                 f'<td><a href="{BASE}/{LANG}/auftrag/{e(a.get("projectId"))}/">{e(de(a, "title")[:130])}</a></td>'
                 f'<td>{e(a.get("buyerName"))}</td><td>{e(a.get("canton"))}</td>'
-                f'<td class="r num">{e(chf(a.get("winnerPrice")))}</td></tr>')
+                f'<td class="r num">{e(money(a))}</td></tr>')
         b.append("</tbody></table></div></div>")
 
         m = open_for.get(s, [])
@@ -722,7 +777,7 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
         if src.get("publicationDate"):
             b.append(f'<dt>{_.published_on}</dt><dd class="mono">{e(src["publicationDate"][:10])}</dd>')
         if src.get("processType"):
-            b.append(f"<dt>{_.procedure}</dt><dd>{e(src['processType'])}</dd>")
+            b.append(f"<dt>{_.procedure}</dt><dd>{e(_e('processType', src['processType']))}</dd>")
         b.append("</dl></div>")
 
         figs = []
@@ -730,7 +785,7 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
             figs.append(f'<div class="fig"><b>{e(src["offerDeadline"][:10])}</b>'
                         f"<span>{_.deadline}</span></div>")
         if aw and aw.get("winnerPrice"):
-            figs.append(f'<div class="fig"><b>{chf(aw["winnerPrice"])}</b>'
+            figs.append(f'<div class="fig"><b>{money(aw)}</b>'
                         f"<span>{_.sum}</span></div>")
         if award.get("numberOfSubmissions"):
             figs.append(f'<div class="fig"><b>{e(award["numberOfSubmissions"])}</b>'
@@ -752,7 +807,8 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
                         if known else f'<span class="who">{e(w)}</span>')
                 extra = []
                 if aw.get("winnerPrice") and len(ws) == 1:
-                    extra.append(f'{chf(aw["winnerPrice"])} CHF')
+                    extra.append(money(aw) + (" CHF" if not (aw.get("winnerCurrency")
+                                  or "CHF").strip().upper() != "CHF" else ""))
                 if known:
                     extra.append(f'{zuschlag(known["n"])} im Register')
                 b.append(f'<div class="winner">{link}'
@@ -783,9 +839,9 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
         for label, val in [(_.buyer, buyer_cell if src.get("buyerName") else ""),
                            (_.place, e(src.get("city"))),
                            (_.canton, e(CANTONS.get(src.get("canton"), src.get("canton") or ""))),
-                           (_.type, e(src.get("orderType"))),
+                           (_.type, e(_e("orderType", src.get("orderType")))),
                            ("CPV", cpv if src.get("cpvCode") else ""),
-                           (_.treaty, e(src.get("stateContractArea")))]:
+                           (_.treaty, e(_e("bool", src.get("stateContractArea"))))]:
             if val:
                 b.append(f'<tr><th style="width:112px;text-transform:none;letter-spacing:0;'
                          f'font-size:13px;font-weight:500;border-bottom:1px solid var(--rule);'
@@ -805,7 +861,7 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
         if is_open and src.get("offerDeadline"):
             desc += f", Eingabefrist {src['offerDeadline'][:10]}"
         elif aw and aw.get("winnerPrice"):
-            desc += f", Zuschlag {chf(aw['winnerPrice'])} CHF" + (f" an {ws[0]}" if ws else "")
+            desc += f", {_.award} {money(aw)}" + (f" — {ws[0]}" if ws else "")
         write(f"/{LANG}/auftrag/{pid}/index.html",
               page(fit_title(title, _m("tender_suffix") if is_open else _m("award_suffix")),
                    desc[:180], "\n".join(b), f"/{LANG}/auftrag/{pid}/",
@@ -861,8 +917,7 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
         # never unpack into _ here: `_` is the translation accessor, and shadowing it
         # replaces every label on the page with an integer
         sl, name, _n = bmap[key]
-        total = sum(a.get("winnerPrice") or 0 for a in rows
-                    if isinstance(a.get("winnerPrice"), (int, float)))
+        total = sum(chf_amount(a) or 0 for a in rows)
         table, nfirms = firm_table(rows, comp, pages, limit=40)
         cants = collections.Counter(a["canton"] for a in rows if a.get("canton"))
         sect = collections.Counter(
@@ -904,7 +959,7 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
             b.append(f'<tr><td class="mono" style="font-size:12.5px">'
                      f'{e((a.get("publicationDate") or "")[:10])}</td>'
                      f'<td><a href="{BASE}/{LANG}/auftrag/{e(a.get("projectId"))}/">{e(de(a, "title")[:110])}</a></td>'
-                     f"<td>{who}</td><td class=\"r num\">{e(chf(a.get('winnerPrice')))}</td></tr>")
+                     f"<td>{who}</td><td class=\"r num\">{e(money(a))}</td></tr>")
         b.append("</tbody></table></div></div>")
         write(f"/{LANG}/auftraggeber/{sl}/index.html",
               page(fit_title(name, _m("buyer_title")),
@@ -934,8 +989,8 @@ def firm_table(rows: list, comp: dict, pages: dict, limit: int = 60) -> str:
             k = slug(w)
             firms[k] += 1
             seen_name.setdefault(k, w)
-            p = r.get("winnerPrice")
-            if isinstance(p, (int, float)) and p and len(ws) == 1:
+            p = chf_amount(r)
+            if p is not None and len(ws) == 1:
                 sums[k] += p
     out = [f'<div class="scroll"><table><thead><tr><th>{_.companies}</th>'
            f'<th class="r">{_.awards}</th><th class="r">{_.sum}</th></tr></thead><tbody>']
@@ -965,8 +1020,7 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
     for code, rows in cant_list:
         name = CANTONS.get(code, code)
         table, nfirms = firm_table(rows, comp, pages)
-        total = sum(a.get("winnerPrice") or 0 for a in rows
-                    if isinstance(a.get("winnerPrice"), (int, float)))
+        total = sum(chf_amount(a) or 0 for a in rows)
         sect = collections.Counter(
             (de(a, "cpvLabel") or a.get("cpvLabel") or "", str(a.get("cpvCode") or ""))
             for a in rows if a.get("cpvCode"))
@@ -1035,6 +1089,9 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
 
 
 # ------------------------------------------------------------- open tenders
+
+SHOWN = 400            # rows on the all-tenders index; the rest live on the canton pages
+
 
 def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
     """The open tenders, whole and by canton.
@@ -1133,8 +1190,7 @@ def build_index(path: str, kicker: str, h1: str, lead: str, items: list,
 # ------------------------------------------------------------- home & sitemap
 
 def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cpv_list) -> None:
-    total = sum(a.get("winnerPrice") or 0 for a in awards
-                if isinstance(a.get("winnerPrice"), (int, float)))
+    total = sum(chf_amount(a) or 0 for a in awards)
     months = sorted({(a.get("publicationDate") or "")[:7] for a in awards if a.get("publicationDate")})
     span = ""
     if months:

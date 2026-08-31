@@ -456,3 +456,52 @@ IDX: dict[str, dict[str, str]] = {
 
 def i(key: str, lang: str, **kw) -> str:
     return IDX[key][lang].format(**kw) if kw else IDX[key][lang]
+
+
+# The API's own enum values, as a reader should see them. Printing "open" and "True"
+# to a German reader is not a register, it is a database dump.
+ENUM: dict[str, dict[str, dict[str, str]]] = {
+    "processType": {
+        "open": {"de": "Offenes Verfahren", "fr": "Procédure ouverte",
+                 "it": "Procedura aperta", "en": "Open procedure"},
+        "selective": {"de": "Selektives Verfahren", "fr": "Procédure sélective",
+                      "it": "Procedura selettiva", "en": "Selective procedure"},
+        "invitation": {"de": "Einladungsverfahren", "fr": "Procédure sur invitation",
+                       "it": "Procedura su invito", "en": "Invitation procedure"},
+        "direct": {"de": "Freihändige Vergabe", "fr": "Gré à gré",
+                   "it": "Trattativa privata", "en": "Direct award"},
+    },
+    "orderType": {
+        "construction": {"de": "Bauauftrag", "fr": "Marché de travaux",
+                         "it": "Appalto di lavori", "en": "Works contract"},
+        "service": {"de": "Dienstleistungsauftrag", "fr": "Marché de services",
+                    "it": "Appalto di servizi", "en": "Services contract"},
+        "supply": {"de": "Lieferauftrag", "fr": "Marché de fournitures",
+                   "it": "Appalto di forniture", "en": "Supply contract"},
+    },
+    "bool": {
+        "True": {"de": "Ja", "fr": "Oui", "it": "Sì", "en": "Yes"},
+        "False": {"de": "Nein", "fr": "Non", "it": "No", "en": "No"},
+    },
+}
+
+
+def enum(kind: str, value, lang: str) -> str:
+    """A reader-facing label, or the raw value when the source used one we do not know
+    — showing an unknown code is honest; inventing a translation for it is not."""
+    if value is None or value == "":
+        return ""
+    key = str(value)
+    return ENUM.get(kind, {}).get(key, {}).get(lang, key)
+
+
+IDX["showing_n"] = {
+    "de": "Angezeigt werden die {n} nächsten von {total} laufenden Ausschreibungen; "
+          "die übrigen stehen auf den Kantonsseiten.",
+    "fr": "Les {n} échéances les plus proches sur {total} appels d'offres en cours ; "
+          "les autres figurent sur les pages cantonales.",
+    "it": "Sono mostrate le {n} scadenze più vicine su {total} bandi aperti; "
+          "gli altri sono nelle pagine cantonali.",
+    "en": "Showing the {n} nearest of {total} current tenders; the rest are on the "
+          "canton pages.",
+}
