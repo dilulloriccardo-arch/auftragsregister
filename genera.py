@@ -188,10 +188,44 @@ def de(row: dict, field: str) -> str:
 
 
 def winners(row: dict) -> list[str]:
+    """Every firm the award names, from the structured list where the source has one.
+
+    simap publishes `award.vendors` as a list and `winnerName` as a flat string that
+    holds only the FIRST of them. Parsing the string dropped 1,162 firm-award rows
+    across 473 awards — one framework contract names 36 suppliers and the page showed
+    a single "1 Anbieter", contradicting the publication it links to.
+
+    Names only. `vendors[i].price` is not money per firm: on many of these rows every
+    vendor carries the identical figure, a framework ceiling repeated line by line, so
+    attributing it per name would invent billions the register never published. The
+    money rule elsewhere is unchanged — an amount is only ever credited to a firm when
+    the award names exactly one.
+    """
+    vend = (row.get("award") or {}).get("vendors") or []
+    names = [str(v.get("name") or "").strip() for v in vend if isinstance(v, dict)]
+    names = [n for n in names if len(n) > 2]
+    if names:
+        return list(dict.fromkeys(names))
     w = (row.get("winnerName") or "").strip()
     if not w:
         return []
     return [p.strip() for p in re.split(r"\s*;\s*|\s+/\s+|\n", w) if len(p.strip()) > 2]
+
+
+def norm_buyer(name: str) -> str:
+    """The key that decides whether two spellings are the same authority.
+
+    The register writes one office several ways — a trailing space, a leading tab,
+    "BBL" against "(BBL)". Keyed on the raw string, each variant became its own page
+    writing to the same file, and the last write won: the Bundesamt für Bauten und
+    Logistik page stated 3 awards where the office has 156, and Basel-Stadt 3 where it
+    has 351. Figures that wrong about a named public body are the worst thing a
+    register can publish.
+
+    Normalising the NAME, not the slug: slug() truncates at 70 characters, and grouping
+    on that would merge genuinely separate SBB purchasing units into one page.
+    """
+    return " ".join((name or "").split()).casefold().rstrip(" .,:;-").replace("(", "").replace(")", "")
 
 
 def sig(code) -> str:
@@ -543,7 +577,7 @@ def peers(comp: dict, keep: set[str]) -> dict:
 
 
 def build_companies(comp: dict, open_for: dict, sectors: set[str],
-                    buyer_slugs: set[str], peer_map: dict) -> dict:
+                    buyer_slugs: dict, peer_map: dict) -> dict:
     pages = {}
     for s, c in comp.items():
         rows = sorted(c["awards"], key=lambda a: a.get("publicationDate") or "", reverse=True)
@@ -629,9 +663,10 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
             b.append(f'<div class="sec"><div class="runhead"><span>{_.buyers}</span>'
                      f'<span>{len(c["buyers"])}</span></div><div class="tags">')
             for bu, k in c["buyers"].most_common(12):
-                sl = slug(bu)
-                b.append(f'<a class="tag" href="{BASE}/{LANG}/auftraggeber/{e(sl)}/">{e(bu[:52])} · {k}</a>'
-                         if sl in buyer_slugs else f'<span class="tag">{e(bu[:52])} · {k}</span>')
+                hit = buyer_slugs.get(norm_buyer(bu))
+                b.append(f'<a class="tag" href="{BASE}/{LANG}/auftraggeber/{e(hit[0])}/">'
+                         f'{e(hit[1][:52])} · {k}</a>' if hit
+                         else f'<span class="tag">{e(bu[:52])} · {k}</span>')
             b.append("</div></div>")
 
         pr = peer_map.get(s)
@@ -660,7 +695,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
 # ----------------------------------------------------------------- award page
 
 def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
-                 buyer_slugs: set[str]) -> int:
+                 buyer_slugs: dict) -> int:
     by_project = {}
     for a in awards:
         by_project.setdefault(a.get("projectId"), {})["award"] = a
@@ -742,9 +777,9 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
         cpv = f'<span class="mono">{e(src.get("cpvCode") or "")}</span>' + (
             "<br>" + e(de(src, "cpvLabel") or src.get("cpvLabel") or "")
             if (src.get("cpvLabel") or de(src, "cpvLabel")) else "")
-        bslug = slug(src.get("buyerName") or "")
-        buyer_cell = (f'<a href="{BASE}/{LANG}/auftraggeber/{e(bslug)}/">{e(src.get("buyerName"))}</a>'
-                      if bslug in buyer_slugs else e(src.get("buyerName")))
+        hit = buyer_slugs.get(norm_buyer(src.get("buyerName") or ""))
+        buyer_cell = (f'<a href="{BASE}/{LANG}/auftraggeber/{e(hit[0])}/">{e(hit[1])}</a>'
+                      if hit else e(src.get("buyerName")))
         for label, val in [(_.buyer, buyer_cell if src.get("buyerName") else ""),
                            (_.place, e(src.get("city"))),
                            (_.canton, e(CANTONS.get(src.get("canton"), src.get("canton") or ""))),
@@ -781,20 +816,51 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
 
 # ------------------------------------------------------------------ buyer page
 
+def buyer_map(awards: list, floor: int = 3) -> dict:
+    """key -> (slug, display name), decided once so every link agrees with the page.
+
+    Computed before anything is written: a company page, an award page and the buyer
+    page itself all have to resolve the same authority to the same URL, and deriving
+    the slug separately in each builder is how they drifted apart.
+    """
+    counts: dict[str, int] = collections.Counter()
+    spell: dict[str, collections.Counter] = {}
+    for a in awards:
+        b = a.get("buyerName")
+        if not b:
+            continue
+        k = norm_buyer(b)
+        counts[k] += 1
+        spell.setdefault(k, collections.Counter())[" ".join(b.split())] += 1
+    taken: dict[str, str] = {}
+    out: dict[str, tuple] = {}
+    for k in sorted(counts, key=lambda x: (-counts[x], x)):
+        name = spell[k].most_common(1)[0][0]
+        base_sl = slug(name)
+        sl = base_sl
+        if taken.get(sl, k) != k:
+            sl = f"{base_sl[:62]}-{abs(hash(k)) % 9973:04d}"
+        taken[sl] = k
+        out[k] = (sl, name, counts[k])
+    return {k: v for k, v in out.items() if v[2] >= floor}
+
+
 def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
-                 floor: int = 3) -> list:
+                 bmap: dict, floor: int = 3) -> list:
     """A page per contracting authority. "Welche Aufträge hat die Gemeinde X
     vergeben" is a proper-name search with a real reader behind it — a resident, a
     journalist, a competitor — and no site answers it today."""
     by = collections.defaultdict(list)
     for a in awards:
         if a.get("buyerName"):
-            by[a["buyerName"]].append(a)
+            by[norm_buyer(a["buyerName"])].append(a)
     out = []
-    for name, rows in sorted(by.items(), key=lambda kv: -len(kv[1])):
-        if len(rows) < floor:
+    for key, rows in sorted(by.items(), key=lambda kv: -len(kv[1])):
+        if key not in bmap:
             continue
-        sl = slug(name)
+        # never unpack into _ here: `_` is the translation accessor, and shadowing it
+        # replaces every label on the page with an integer
+        sl, name, _n = bmap[key]
         total = sum(a.get("winnerPrice") or 0 for a in rows
                     if isinstance(a.get("winnerPrice"), (int, float)))
         table, nfirms = firm_table(rows, comp, pages, limit=40)
@@ -970,7 +1036,7 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
 
 # ------------------------------------------------------------- open tenders
 
-def build_open(opens: list, sectors: set[str], buyer_slugs: set[str]) -> int:
+def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
     """The open tenders, whole and by canton.
 
     This is the part with intent behind it: someone searching for current tenders is
@@ -1187,13 +1253,12 @@ def build_language(awards: list, opens: list) -> tuple[int, int, int, int, int, 
     comp = profile(awards)
     open_for = matches(comp, opens)
     sectors = sector_pages(awards)
-    buyer_counts = collections.Counter(a["buyerName"] for a in awards if a.get("buyerName"))
-    buyer_slugs = {slug(b) for b, k in buyer_counts.items() if k >= 3}
+    buyer_slugs = buyer_map(awards)
     keep = {n for n, c in comp.items() if len(c["awards"]) >= MIN_AWARDS}
     peer_map = peers(comp, keep)
     pages = build_companies(comp, open_for, sectors, buyer_slugs, peer_map)
     n_aw = build_awards(awards, opens, pages, sectors, buyer_slugs)
-    buyers = build_buyers(awards, comp, pages, sectors)
+    buyers = build_buyers(awards, comp, pages, sectors, buyer_slugs)
     cant_list, cpv_list = build_hubs(awards, comp, pages, sectors)
     n_open = build_open(opens, sectors, buyer_slugs)
     build_index("/unternehmen/", _.companies, _i.companies_h1, _i.companies_lead,
