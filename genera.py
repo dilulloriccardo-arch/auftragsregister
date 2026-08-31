@@ -107,8 +107,14 @@ CANTONS = {
 # --------------------------------------------------------------------- helpers
 
 def slug(s: str) -> str:
-    s = unicodedata.normalize("NFKD", (s or "").lower())
+    # The umlaut expansion has to happen BEFORE normalising: NFKD decomposes ä into
+    # a + combining diaeresis, so a .replace("ä", "ae") afterwards finds nothing and
+    # every umlaut collapses to the bare vowel. That silently merged Stämpfli AG and
+    # Stampfli AG — two different companies — onto one page, and gave every German
+    # name the transliteration nobody uses (muller rather than mueller).
+    s = (s or "").lower()
     s = s.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss")
+    s = unicodedata.normalize("NFKD", s)
     s = "".join(c for c in s if not unicodedata.combining(c))
     s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
     return s[:70] or "x"
@@ -391,11 +397,22 @@ def write(path: str, content: str) -> None:
 # --------------------------------------------------------------- the analysis
 
 def profile(awards: list) -> dict:
-    """One record per company, built only from what the publications actually say."""
+    """One record per company, built only from what the publications actually say.
+
+    Keyed by SLUG, not by the raw name: the register spells the same firm several ways
+    ("CSD INGENIEURE AG" and "CSD Ingenieure AG", "Bolliger & Co. AG" and
+    "Bolliger + Co. AG"), and keying by name made each variant its own company writing
+    to the same file — so the second silently overwrote the first and half that firm's
+    awards vanished from its page. The spelling shown is the one the register uses most
+    often for that firm.
+    """
     comp = {}
+    variants: dict[str, collections.Counter] = {}
     for a in awards:
         ws = winners(a)
-        for n in ws:
+        for raw in ws:
+            n = slug(raw)
+            variants.setdefault(n, collections.Counter())[raw] += 1
             c = comp.setdefault(n, {"awards": [], "value": 0.0, "amounts": [],
                                     "cpv": collections.Counter(), "cant": collections.Counter(),
                                     "buyers": collections.Counter(), "sig": set()})
@@ -413,6 +430,8 @@ def profile(awards: list) -> dict:
                 c["cant"][a["canton"]] += 1
             if a.get("buyerName"):
                 c["buyers"][a["buyerName"]] += 1
+    for n, c in comp.items():
+        c["name"] = variants[n].most_common(1)[0][0]
     return comp
 
 
@@ -490,11 +509,11 @@ def peers(comp: dict, keep: set[str]) -> dict:
 def build_companies(comp: dict, open_for: dict, sectors: set[str],
                     buyer_slugs: set[str], peer_map: dict) -> dict:
     pages = {}
-    for name, c in comp.items():
+    for s, c in comp.items():
         rows = sorted(c["awards"], key=lambda a: a.get("publicationDate") or "", reverse=True)
         if len(rows) < MIN_AWARDS:
             continue
-        s = slug(name)
+        name = c["name"]
         years = sorted({(a.get("publicationDate") or "")[:7] for a in rows if a.get("publicationDate")})
         span = ""
         if years:
@@ -540,7 +559,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                 f'<td class="r num">{e(chf(a.get("winnerPrice")))}</td></tr>')
         b.append("</tbody></table></div></div>")
 
-        m = open_for.get(name, [])
+        m = open_for.get(s, [])
         if m:
             b.append('<div class="sec"><div class="runhead"><span>Offene Ausschreibungen '
                      f'im selben Bereich</span><span>{len(m)}</span></div>'
@@ -575,7 +594,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                          if sl in buyer_slugs else f'<span class="tag">{e(bu[:52])} · {k}</span>')
             b.append("</div></div>")
 
-        pr = peer_map.get(name)
+        pr = peer_map.get(s)
         if pr:
             others, cant = pr
             b.append('<div class="sec"><div class="runhead"><span>Weitere Anbieter im '
@@ -583,7 +602,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                      '<ul class="plain">')
             for o in others:
                 oc = comp[o]
-                b.append(f'<li><div class="row"><a href="{BASE}/{LANG}/unternehmen/{e(slug(o))}/">{e(o)}</a>'
+                b.append(f'<li><div class="row"><a href="{BASE}/{LANG}/unternehmen/{e(o)}/">{e(oc["name"])}</a>'
                          f'<span class="sub num">{zuschlag(len(oc["awards"]))}</span></div></li>')
             b.append("</ul></div>")
 
@@ -798,22 +817,28 @@ def firm_table(rows: list, comp: dict, pages: dict, limit: int = 60) -> str:
     total: on a buyer's page the column reads as "what this authority awarded them",
     and a global figure there states something the register never published.
     """
+    # Counted by slug, not by spelling: the register writes the same firm several
+    # ways, and counting the strings put it in the table twice with its awards split.
     firms = collections.Counter()
     sums: dict[str, float] = collections.defaultdict(float)
+    seen_name: dict[str, str] = {}
     for r in rows:
         ws = winners(r)
         for w in ws:
-            firms[w] += 1
+            k = slug(w)
+            firms[k] += 1
+            seen_name.setdefault(k, w)
             p = r.get("winnerPrice")
             if isinstance(p, (int, float)) and p and len(ws) == 1:
-                sums[w] += p
+                sums[k] += p
     out = [f'<div class="scroll"><table><thead><tr><th>{_.companies}</th>'
            f'<th class="r">{_.awards}</th><th class="r">{_.sum}</th></tr></thead><tbody>']
-    for f, k in firms.most_common(limit):
-        s = slug(f)
-        cell = f'<a href="{BASE}/{LANG}/unternehmen/{e(s)}/">{e(f)}</a>' if s in pages else e(f)
+    for sl, k in firms.most_common(limit):
+        label = (comp.get(sl) or {}).get("name") or seen_name.get(sl, sl)
+        cell = (f'<a href="{BASE}/{LANG}/unternehmen/{e(sl)}/">{e(label)}</a>'
+                if sl in pages else e(label))
         out.append(f'<tr><td>{cell}</td><td class="r num">{k}</td>'
-                   f'<td class="r num">{e(chf(sums.get(f, 0)))}</td></tr>')
+                   f'<td class="r num">{e(chf(sums.get(sl, 0)))}</td></tr>')
     out.append("</tbody></table></div>")
     return "\n".join(out), len(firms)
 
@@ -996,7 +1021,7 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
     if months:
         fmt = lambda m: f"{m[5:7]}/{m[:4]}"
         span = fmt(months[0]) if len(months) == 1 else f"{fmt(months[0])} – {fmt(months[-1])}"
-    firms = collections.Counter(w for a in awards for w in winners(a))
+    firms = collections.Counter(slug(w) for a in awards for w in winners(a))
     soon = sorted((t for t in opens if t.get("offerDeadline")),
                   key=lambda t: t["offerDeadline"])[:8]
 
