@@ -20,7 +20,51 @@ OUT = ROOT / "docs"
 # stripping it, every link on the site reads as broken.
 _d = ROOT / "dominio.txt"
 _l = _d.read_text().strip().splitlines() if _d.exists() else []
+SITE = _l[0].strip().rstrip("/") if _l else ""
 BASE = _l[1].strip().rstrip("/") if len(_l) > 1 else ""
+
+
+
+def check_absolute(pages: set, site: str, base: str) -> list[str]:
+    """The URLs a page declares about ITSELF — canonical, hreflang, breadcrumb item,
+    sitemap <loc>. These were never checked, and that is how 75,141 canonicals and
+    375,705 hreflang alternates shipped pointing at 404s while this script reported
+    zero broken links: it only ever looked at root-relative hrefs in the body.
+    """
+    import json as _json
+    origin = site + base
+    errs = []
+    sample = sorted(OUT.rglob("index.html"))
+    step = max(1, len(sample) // 400)          # a spread sample, not the first 400
+    for f in sample[::step]:
+        html = f.read_text(errors="replace")
+        urls = re.findall(r'<link rel="canonical" href="([^"]+)"', html)
+        urls += re.findall(r'<link rel="alternate" hreflang="[^"]+" href="([^"]+)"', html)
+        urls += re.findall(r'"item": "([^"]+)"', html)
+        for u in urls:
+            if not u.startswith(origin + "/") and u != origin + "/":
+                errs.append(f"{f.relative_to(OUT)}: URL assoluto senza prefisso — {u}")
+                break
+            rest = u[len(origin):] or "/"
+            if rest not in pages:
+                errs.append(f"{f.relative_to(OUT)}: URL assoluto verso una pagina "
+                            f"inesistente — {u}")
+                break
+    for sm in OUT.glob("sitemap*.xml"):
+        body = sm.read_text(errors="replace")
+        locs = re.findall(r"<loc>([^<]+)</loc>", body)
+        if len(locs) > 50_000:
+            errs.append(f"{sm.name}: {len(locs)} URL, il limite del protocollo e' 50 000")
+        bad = [u for u in locs if not u.startswith(origin + "/") and u != origin + "/"]
+        if bad:
+            errs.append(f"{sm.name}: {len(bad)} <loc> senza il prefisso, es. {bad[0]}")
+        if sm.name != "sitemap.xml":
+            missing = [u for u in locs
+                       if (u[len(origin):] or "/") not in pages and not u.endswith(".xml")]
+            if missing:
+                errs.append(f"{sm.name}: {len(missing)} <loc> verso pagine inesistenti, "
+                            f"es. {missing[0]}")
+    return errs
 
 
 def main() -> int:
@@ -99,6 +143,12 @@ def main() -> int:
     print(f"  titoli oltre 65 char    {len(long_titles)}")
     print(f"  senza description       {len(no_desc)}")
     print(f"  link interni rotti      {counts['link rotti']} verso {len(broken)} destinazioni")
+    abs_errs = check_absolute(pages, SITE, BASE)
+    print(f"  URL assoluti sbagliati  {len(abs_errs)}")
+    if abs_errs:
+        print("\n  URL che il sito dichiara su se stesso e che non risolvono:")
+        for m in abs_errs[:6]:
+            print(f"    {m}")
     if broken:
         print("\n  destinazioni mancanti più citate:")
         for tgt, k in broken.most_common(8):
@@ -107,7 +157,7 @@ def main() -> int:
         print("\n  titoli troppo lunghi (Google li tronca):")
         for h, n in long_titles[:5]:
             print(f"    {n} char  {h}")
-    return 1 if (broken or empty_titles or no_desc) else 0
+    return 1 if (broken or empty_titles or no_desc or abs_errs) else 0
 
 
 if __name__ == "__main__":

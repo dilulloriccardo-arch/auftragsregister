@@ -52,6 +52,11 @@ _SC = ROOT / "search-console.txt"
 VERIFY = (f'<meta name="google-site-verification" content="{_SC.read_text().strip()}">\n'
           if _SC.exists() and _SC.read_text().strip() else "")
 BASE = (_lines[1].strip().rstrip("/") if len(_lines) > 1 else "")
+# Every absolute URL the site declares about itself — canonical, hreflang, breadcrumb
+# item, sitemap <loc> — has to carry the base path too. Using SITE alone published
+# 75,141 canonicals and 375,705 hreflang alternates pointing at 404s, which would have
+# made a Search Console submission return "not found" for the entire site.
+ORIGIN = SITE + BASE
 DISCLAIMER = lingue.PROSE["disclaimer"]["de"]   # prescribed verbatim by simap's terms
 LANG = "de"                                     # set per pass by main()
 
@@ -340,6 +345,12 @@ SECTIONS = {"unternehmen": "companies", "auftraggeber": "buyers",
             "kanton": "cantons", "bereich": "sectors", "auftrag": "contracts",
             "ausschreibungen": "tenders"}
 
+# Sections that actually have an index page. /auftrag/ deliberately has none — 14,987
+# awards do not belong in one alphabetical list, and the sitemap already carries them —
+# so a breadcrumb must not claim that level: it would point at a 404 and Google reads
+# breadcrumbs as a promise about the site's shape.
+INDEXED = {"unternehmen", "auftraggeber", "kanton", "bereich", "ausschreibungen"}
+
 
 def breadcrumbs(path: str, leaf: str) -> str:
     """Schema.org trail, so a result shows Register > Unternehmen > HOLINGER AG rather
@@ -348,15 +359,18 @@ def breadcrumbs(path: str, leaf: str) -> str:
     if parts and parts[0] in LANGS:
         parts = parts[1:]
     crumbs = [{"@type": "ListItem", "position": 1, "name": _.register,
-               "item": f"{SITE}/{LANG}/"}]
+               "item": f"{ORIGIN}/{LANG}/"}]
     if parts:
         sec = parts[0]
-        crumbs.append({"@type": "ListItem", "position": 2,
-                       "name": lingue.t(SECTIONS.get(sec, "register"), LANG),
-                       "item": f"{SITE}/{LANG}/{sec}/"})
+        pos = 2
+        if sec in INDEXED:
+            crumbs.append({"@type": "ListItem", "position": pos,
+                           "name": lingue.t(SECTIONS.get(sec, "register"), LANG),
+                           "item": f"{ORIGIN}/{LANG}/{sec}/"})
+            pos += 1
         if len(parts) > 1:
-            crumbs.append({"@type": "ListItem", "position": 3, "name": leaf,
-                           "item": SITE + path})
+            crumbs.append({"@type": "ListItem", "position": pos, "name": leaf,
+                           "item": ORIGIN + path})
     return ('<script type="application/ld+json">'
             + json.dumps({"@context": "https://schema.org", "@type": "BreadcrumbList",
                           "itemListElement": crumbs}, ensure_ascii=False)
@@ -378,12 +392,12 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
     # hreflang tells the search engine these are one page in four languages, not four
     # pages competing with each other for the same query.
     alts = "\n".join(
-        f'<link rel="alternate" hreflang="{l}" href="{SITE}{lang_path(path, l)}">'
-        for l in LANGS) + f'\n<link rel="alternate" hreflang="x-default" href="{SITE}/">'
+        f'<link rel="alternate" hreflang="{l}" href="{ORIGIN}{lang_path(path, l)}">'
+        for l in LANGS) + f'\n<link rel="alternate" hreflang="x-default" href="{ORIGIN}/">'
     nav = "".join(
         (f'<span class="on">{e(NAMES[l])}</span>' if l == LANG
          else f'<a href="{BASE}{lang_path(path, l)}">{e(NAMES[l])}</a>') for l in LANGS)
-    return (HEAD.format(title=e(title), desc=e(desc), site=SITE, base=BASE, path=path,
+    return (HEAD.format(title=e(title), desc=e(desc), site=ORIGIN, base=BASE, path=path,
                         kicker=e(kicker or _.register), lang=LANG, alts=alts,
                         verify=VERIFY,
                         sitename=e(_.site), langnav=nav, langlabel=e(_.language))
@@ -1138,20 +1152,6 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
         "\n".join(b), f"/{LANG}/"))
 
 
-def build_sitemap() -> int:
-    def url_of(f: pathlib.Path) -> str:
-        rel = f.relative_to(OUT).parent.as_posix()
-        return "/" if rel == "." else f"/{rel}/"
-
-    urls = sorted({url_of(f) for f in OUT.rglob("index.html")})
-    parts = ['<?xml version="1.0" encoding="UTF-8"?>',
-             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for u in urls:
-        parts.append(f"<url><loc>{SITE}{u}</loc><lastmod>{TODAY}</lastmod></url>")
-    parts.append("</urlset>")
-    write("/sitemap.xml", "\n".join(parts))
-    write("/robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
-    return len(urls)
 
 
 def build_root() -> None:
@@ -1161,8 +1161,8 @@ def build_root() -> None:
         f'<li><div class="row"><a href="/{l}/"><b style="font-size:17px">{e(NAMES[l])}</b>'
         f'<span class="sub" style="display:block;margin-top:2px">'
         f'{e(lingue.p("tagline", l))}</span></a></div></li>' for l in LANGS)
-    alts = "\n".join(f'<link rel="alternate" hreflang="{l}" href="{SITE}/{l}/">'
-                     for l in LANGS) + f'\n<link rel="alternate" hreflang="x-default" href="{SITE}/">'
+    alts = "\n".join(f'<link rel="alternate" hreflang="{l}" href="{ORIGIN}/{l}/">'
+                     for l in LANGS) + f'\n<link rel="alternate" hreflang="x-default" href="{ORIGIN}/">'
     body = (f'<div class="masthead"><span class="name">{e(lingue.t("site", "de"))}</span>'
             f'<span class="eyebrow">Sprache · Langue · Lingua · Language</span></div>'
             f'<div class="sec"><ul class="plain">{rows}</ul></div>')
@@ -1171,7 +1171,7 @@ def build_root() -> None:
             f'<title>{e(lingue.t("site", "de"))} — Marchés publics · Appalti · Contracts</title>'
             f'<meta name="description" content="'
             f'{e(lingue.m("home_desc", "de", n=""))}">'
-            f'<link rel="canonical" href="{SITE}/">\n{alts}\n'
+            f'<link rel="canonical" href="{ORIGIN}/">\n{alts}\n'
             f'<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
             f'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
             f'family=IBM+Plex+Sans:wght@400;500;600&amp;'
@@ -1181,20 +1181,6 @@ def build_root() -> None:
     write("/index.html", html)
 
 
-def build_sitemap() -> int:
-    def url_of(f: pathlib.Path) -> str:
-        rel = f.relative_to(OUT).parent.as_posix()
-        return "/" if rel == "." else f"/{rel}/"
-
-    urls = sorted({url_of(f) for f in OUT.rglob("index.html")})
-    parts = ['<?xml version="1.0" encoding="UTF-8"?>',
-             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-    for u in urls:
-        parts.append(f"<url><loc>{SITE}{u}</loc><lastmod>{TODAY}</lastmod></url>")
-    parts.append("</urlset>")
-    write("/sitemap.xml", "\n".join(parts))
-    write("/robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n")
-    return len(urls)
 
 
 def build_language(awards: list, opens: list) -> tuple[int, int, int, int, int, int]:
@@ -1249,6 +1235,54 @@ def main() -> None:
         k = keyfile.read_text().strip()
         write(f"/{k}.txt", k)
     print(f"  sitemap : {build_sitemap()} URL in {len(LANGS)} lingue")
+
+
+def build_sitemap() -> int:
+    """One sitemap per language plus an index.
+
+    Two limits force the split. The protocol caps a sitemap file at 50,000 URLs and
+    75,141 in one file makes Search Console reject it — a third of the register would
+    never be submitted. And every <loc> has to carry the base path: without it the
+    submission comes back "not found" for every URL, which is the whole point of the
+    site failing silently.
+    """
+    def url_of(f: pathlib.Path) -> str:
+        rel = f.relative_to(OUT).parent.as_posix()
+        return "/" if rel == "." else f"/{rel}/"
+
+    by_lang: dict[str, list[str]] = {l: [] for l in LANGS}
+    root: list[str] = []
+    for f in OUT.rglob("index.html"):
+        u = url_of(f)
+        seg = u.strip("/").split("/")[0]
+        (by_lang[seg] if seg in by_lang else root).append(u)
+
+    def doc(urls: list[str]) -> str:
+        head = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+        body = "".join(f"<url><loc>{ORIGIN}{u}</loc><lastmod>{TODAY}</lastmod></url>"
+                       for u in sorted(urls))
+        return head + body + "</urlset>"
+
+    files, total = [], 0
+    for lang in LANGS:
+        urls = by_lang[lang] + (root if lang == LANGS[0] else [])
+        assert len(urls) <= 50_000, f"sitemap-{lang}: {len(urls)} URL, il limite e' 50 000"
+        write(f"/sitemap-{lang}.xml", doc(urls))
+        files.append(f"sitemap-{lang}.xml")
+        total += len(urls)
+
+    idx = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+           '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+           + "".join(f"<sitemap><loc>{ORIGIN}/{f}</loc><lastmod>{TODAY}</lastmod></sitemap>"
+                     for f in files)
+           + "</sitemapindex>")
+    write("/sitemap.xml", idx)
+    # robots.txt sits at /auftragsregister/robots.txt on a project Pages site, where no
+    # crawler looks for it — the origin root is not ours to write. It is emitted for
+    # correctness; discovery happens through the Search Console submission.
+    write("/robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {ORIGIN}/sitemap.xml\n")
+    return total
 
 
 if __name__ == "__main__":
