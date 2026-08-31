@@ -1,13 +1,9 @@
 {
   "artboards": [
-    { "file": "Main.dc.html",        "x": 0,    "y": 0,    "w": 1180, "h": 940,  "title": "Startseite" },
-    { "file": "Unternehmen.dc.html", "x": 1300, "y": 0,    "w": 1180, "h": 1080, "title": "Unternehmen" },
-    { "file": "Auftrag.dc.html",     "x": 0,    "y": 1240, "w": 1180, "h": 980,  "title": "Zuschlag" },
-    { "file": "Kanton.dc.html",      "x": 1300, "y": 1240, "w": 1180, "h": 900,  "title": "Kanton" }
-  ],
-  "annotations": [
-    { "id": "brief", "x": 0, "y": -190, "w": 520,
-      "text": "Öffentliche Aufträge Schweiz — Registro di trasparenza sugli appalti pubblici.\n\nImpostazione: filetti invece di schede, griglia asimmetrica, cifre tabulari.\nSource Serif 4 per i titoli, IBM Plex Sans per i dati, IBM Plex Mono per numeri di pubblicazione e CPV.\n\nI dati mostrati sono reali, presi da simap.ch." }
+    { "file": "Main.dc.html",       "x": 0,    "y": 0,    "w": 1000, "h": 420, "title": "Scegli" },
+    { "file": "A_Terminale.dc.html","x": 0,    "y": 560,  "w": 900,  "h": 760, "title": "A · Terminale" },
+    { "file": "B_Rivista.dc.html",  "x": 1000, "y": 560,  "w": 900,  "h": 980, "title": "B · Rivista di dati" },
+    { "file": "C_Scheda.dc.html",   "x": 2000, "y": 560,  "w": 900,  "h": 900, "title": "C · Scheda prodotto" }
   ],
   "launch": { "view": "canvas" }
 }

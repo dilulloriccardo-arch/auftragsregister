@@ -29,7 +29,9 @@ CSS = """
 .chart .axis{fill:var(--muted);font-size:10.5px;letter-spacing:.02em}
 .chart .mark{fill:var(--mark)}
 .chart .mark-soft{fill:var(--mark);opacity:.28}
-.chart .ring{stroke:var(--paper);stroke-width:1.5}
+/* the ring separates overlapping dots, so it has to be the colour of the
+   surface the chart actually sits on — the panel, not the page */
+.chart .ring{stroke:var(--panel);stroke-width:1.5}
 .chart .lab{fill:var(--ink);font-size:11px;font-variant-numeric:tabular-nums}
 .chart .lab-mute{fill:var(--muted);font-size:10.5px;font-variant-numeric:tabular-nums}
 .chart-note{color:var(--muted);font-size:11.5px;margin:2px 0 0}

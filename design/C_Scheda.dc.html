@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><script src="./support.js"></script></head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f4f6f9;color:#111827;font-family:Manrope,system-ui,sans-serif;
+  font-size:13.5px;line-height:1.55}
+a{color:#1d5fd8;text-decoration:none}a:hover{text-decoration:underline}
+.top{display:flex;justify-content:space-between;align-items:center;padding:14px 26px;
+  background:#fff;border-bottom:1px solid #e3e8ef}
+.brand{font-weight:800;font-size:15px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.brand i{width:20px;height:20px;background:#1d5fd8;display:inline-block;
+  clip-path:polygon(0 0,100% 0,100% 62%,50% 100%,0 62%)}
+.langs{display:flex;gap:3px;background:#eef1f6;padding:3px;border-radius:9px}
+.langs a,.langs b{font-size:11.5px;padding:5px 11px;border-radius:6px;color:#5b6676;font-weight:600}
+.langs b{background:#fff;color:#111827;box-shadow:0 1px 2px rgba(16,24,40,.08)}
+.wrap{padding:22px 26px;max-width:1000px}
+.card{background:#fff;border:1px solid #e3e8ef;border-radius:14px;padding:20px 22px;
+  margin-bottom:16px;box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+h1{margin:8px 0 6px;font-size:27px;font-weight:800;letter-spacing:-.03em}
+.chip{display:inline-block;font-size:11px;font-weight:700;padding:4px 10px;border-radius:100px;
+  background:#eaf0fd;color:#1d5fd8;letter-spacing:.02em}
+.head .side{text-align:right;font-size:12px;color:#5b6676;line-height:1.9;white-space:nowrap}
+.head .side b{color:#111827;font-weight:600}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.kpi{background:#fff;border:1px solid #e3e8ef;border-radius:14px;padding:16px 18px;
+  box-shadow:0 1px 2px rgba(16,24,40,.04)}
+.kpi .v{font-size:25px;font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums;
+  line-height:1}
+.kpi .v.accent{color:#1d5fd8}
+.kpi .l{font-size:11px;color:#5b6676;margin-top:7px;font-weight:600}
+h2{font-size:15px;font-weight:700;margin:0 0 3px;letter-spacing:-.01em}
+.sub{color:#5b6676;font-size:12.5px;margin:0 0 14px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;font-size:11px;color:#5b6676;font-weight:700;padding:0 12px 10px 0;
+  border-bottom:1px solid #e3e8ef}
+td{padding:12px 12px 12px 0;border-bottom:1px solid #f0f2f6;vertical-align:top}
+td.r,th.r{text-align:right;padding-right:0;font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+.cols{display:grid;grid-template-columns:1fr 290px;gap:16px;align-items:start}
+.bar{display:grid;grid-template-columns:1fr 40px;gap:10px;align-items:center;
+  font-size:12.5px;margin-bottom:11px}
+.track{height:7px;background:#eef1f6;border-radius:100px;overflow:hidden}
+.fill{height:7px;background:#1d5fd8;border-radius:100px}
+.n{text-align:right;color:#5b6676;font-weight:600;font-variant-numeric:tabular-nums}
+</style>
+</helmet>
+<div class="top">
+  <span class="brand"><i></i>Auftragsregister</span>
+  <nav class="langs"><b>DE</b><a href="#">FR</a><a href="#">IT</a><a href="#">EN</a></nav>
+</div>
+<div class="wrap">
+  <div class="card">
+    <div class="head">
+      <div>
+        <span class="chip">Ingenieurbüro</span>
+        <h1>HOLINGER AG</h1>
+        <p style="margin:0;color:#5b6676;max-width:52ch">23 öffentliche Zuschläge von
+        20 Auftraggebern, Oktober 2024 bis August 2026.</p>
+      </div>
+      <div class="side">
+        CPV <b>71300000</b><br>Kantone <b>ZH · BE · BL · SO</b>
+      </div>
+    </div>
+  </div>
+
+  <div class="kpis">
+    <div class="kpi"><div class="v">23</div><div class="l">Zuschläge</div></div>
+    <div class="kpi"><div class="v accent">24,8 Mio.</div><div class="l">Summe CHF</div></div>
+    <div class="kpi"><div class="v">20</div><div class="l">Auftraggeber</div></div>
+    <div class="kpi"><div class="v">350’273</div><div class="l">Median CHF</div></div>
+  </div>
+
+  <div class="card">
+    <h2>Zuschläge über Zeit</h2>
+    <p class="sub">Ein Punkt je Zuschlag, Fläche nach Betrag.</p>
+    <svg viewBox="0 0 660 92" style="width:100%;height:auto;display:block">
+      <line x1="6" y1="46" x2="654" y2="46" stroke="#e3e8ef" stroke-width="1"/>
+      <circle cx="18" cy="46" r="5" fill="#1d5fd8" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="80" cy="46" r="7" fill="#1d5fd8" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="102" cy="46" r="6" fill="#1d5fd8" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="196" cy="46" r="4" fill="#1d5fd8" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="250" cy="46" r="9" fill="#1d5fd8" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="276" cy="46" r="18" fill="#1d5fd8" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="330" cy="46" r="6" fill="#1d5fd8" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="436" cy="46" r="6" fill="#1d5fd8" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="556" cy="46" r="6" fill="#1d5fd8" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="608" cy="46" r="4" fill="#1d5fd8" opacity=".28" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="634" cy="46" r="8" fill="#1d5fd8" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="650" cy="46" r="13" fill="#1d5fd8" stroke="#fff" stroke-width="1.5"/>
+      <text x="6" y="86" fill="#5b6676" font-size="10.5">Okt 2024</text>
+      <text x="654" y="86" fill="#5b6676" font-size="10.5" text-anchor="end">Aug 2026</text>
+    </svg>
+  </div>
+
+  <div class="cols">
+    <div class="card">
+      <h2>Die Zuschläge</h2>
+      <p class="sub">Chronologisch</p>
+      <table>
+        <thead><tr><th style="width:92px">Datum</th><th>Auftrag</th><th class="r">CHF</th></tr></thead>
+        <tbody>
+          <tr><td>25.08.2026</td><td><a href="#">Generalplaner Überschussentwässerung ARA Hard</a></td><td class="r">183’770</td></tr>
+          <tr><td>21.08.2026</td><td><a href="#">Fachplanung Altlasten SanReg 7</a></td><td class="r">169’868</td></tr>
+          <tr><td>21.08.2026</td><td><a href="#">Revitalisierung Flaacherbach</a></td><td class="r">257’550</td></tr>
+          <tr><td>18.08.2026</td><td><a href="#">Sissach ARA E1, Projektingenieur</a></td><td class="r">6’674’595</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card">
+      <h2>Bereiche</h2>
+      <p class="sub">Nach Zuschlägen</p>
+      <div><div class="bar"><span>Ingenieurbüros</span><span class="n">14</span></div>
+        <div class="track"><div class="fill" style="width:100%"></div></div></div>
+      <div style="margin-top:11px"><div class="bar"><span>Wasserbau</span><span class="n">5</span></div>
+        <div class="track"><div class="fill" style="width:36%"></div></div></div>
+      <div style="margin-top:11px"><div class="bar"><span>Altlasten</span><span class="n">3</span></div>
+        <div class="track"><div class="fill" style="width:21%"></div></div></div>
+      <div style="margin-top:11px"><div class="bar"><span>Hochbau</span><span class="n">1</span></div>
+        <div class="track"><div class="fill" style="width:7%"></div></div></div>
+    </div>
+  </div>
+</div>
+</x-dc>
+</body>
+</html>

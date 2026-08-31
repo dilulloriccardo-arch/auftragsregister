@@ -306,107 +306,131 @@ def load() -> tuple[list, list]:
 # ------------------------------------------------------------------ the chrome
 
 CSS = grafici.CSS + """
+/* Direction: data magazine. A dark hero block carries the name, warm paper carries the
+   record, and one brick accent marks the figure that matters. Bricolage Grotesque sets
+   the display — a variable grotesque with real character rather than the safe default —
+   against Libre Franklin for reading.
+
+   Muted text is #736e65, not the #7a756c the sketch used: that measured 4.38:1 on this
+   paper, under the 4.5:1 AA floor, and it carries captions and lead paragraphs, which
+   are body text however small they look. */
 :root{
-  --paper:oklch(99% .004 250); --ink:oklch(20% .018 250); --muted:oklch(50% .015 250);
-  --rule:oklch(89% .008 250); --rule-strong:oklch(72% .012 250);
-  --accent:oklch(46% .10 245); --signal:oklch(52% .10 62); --wash:oklch(97% .006 250);
-  --mark:oklch(52% .13 245);
+  --paper:#fbfaf7; --ink:#1a1a18; --muted:#736e65; --rule:#ddd8cf;
+  --rule-strong:#1a1a18; --accent:#c4472a; --accent-soft:#e8a08c; --signal:#b06a1e;
+  --wash:#f2eee6; --panel:#ffffff; --hero:#1a1a18; --hero-ink:#fbfaf7;
+  --hero-muted:#a8a29a; --mark:#c4472a;
 }
 @media (prefers-color-scheme:dark){:root{
-  --paper:oklch(17% .015 250); --ink:oklch(93% .008 250); --muted:oklch(68% .015 250);
-  --rule:oklch(29% .012 250); --rule-strong:oklch(42% .015 250);
-  --accent:oklch(76% .10 245); --signal:oklch(78% .10 62); --wash:oklch(21% .014 250);
-  /* the dark step is chosen against the dark surface, not flipped from the light one */
-  --mark:oklch(72% .13 245);
+  /* Chosen against the dark ground, not flipped: the brick lightens so it still reads
+     as the same accent, and the paper becomes a warm near-black rather than blue. */
+  --paper:#141311; --ink:#f0ece5; --muted:#a49d92; --rule:#2e2b26;
+  --rule-strong:#f0ece5; --accent:#e8734f; --accent-soft:#e8a08c; --signal:#d99a4a;
+  --wash:#1e1c19; --panel:#1c1a17; --hero:#0d0c0b; --hero-ink:#f7f4ee;
+  --hero-muted:#9b958a; --mark:#e8734f;
 }}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);
-  font-family:"IBM Plex Sans",system-ui,-apple-system,sans-serif;font-size:15px;
-  line-height:1.55;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1080px;margin:0 auto;padding:0 28px 56px}
-a{color:var(--accent);text-decoration:none;text-underline-offset:3px}
-a:hover{text-decoration:underline}
+  font-family:"Libre Franklin",system-ui,-apple-system,sans-serif;font-size:14.5px;
+  line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 30px 60px}
+a{color:var(--ink);text-decoration:none;
+  background-image:linear-gradient(var(--accent),var(--accent));
+  background-size:100% 1px;background-repeat:no-repeat;background-position:0 100%;
+  padding-bottom:1px}
+a:hover{background-size:100% 2px}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.disp,h1,h2,.fig b,.masthead a.name{font-family:"Bricolage Grotesque","Libre Franklin",
+  system-ui,sans-serif}
+.mono{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
 .num{font-variant-numeric:tabular-nums}
-.eyebrow{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);
-  font-weight:500;margin:0}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+  font-weight:600;margin:0}
 .masthead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
-  padding:20px 0 14px;border-bottom:2px solid var(--ink);flex-wrap:wrap}
-.masthead a.name{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:19px;
-  letter-spacing:-.01em;color:var(--ink)}
-.masthead a.name:hover{text-decoration:none;color:var(--accent)}
-.runhead{display:flex;justify-content:space-between;gap:16px;padding:9px 0;
-  border-bottom:1px solid var(--rule);font-size:11px;letter-spacing:.13em;
-  text-transform:uppercase;color:var(--muted)}
-h1{font-family:"Source Serif 4",Georgia,serif;font-weight:700;letter-spacing:-.021em;
-  line-height:1.08;margin:0;text-wrap:balance;font-size:clamp(28px,4.4vw,42px)}
-h2{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:19px;margin:0;
-  letter-spacing:-.01em}
-.title{display:grid;grid-template-columns:1fr 240px;gap:52px;align-items:start;
-  padding:36px 0 26px;border-bottom:1px solid var(--rule-strong)}
-.title p.sum{margin:14px 0 0;color:var(--muted);font-size:16px;max-width:54ch}
-.rail{border-left:1px solid var(--rule);padding-left:20px;font-size:13px}
-.rail dt{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
-  margin-top:13px;font-weight:600}
+  padding:18px 0 14px;border-bottom:2px solid var(--rule-strong);flex-wrap:wrap}
+.masthead a.name{font-weight:800;font-size:18px;letter-spacing:-.025em;color:var(--ink);
+  background:none;padding:0}
+.masthead a.name:hover{color:var(--accent)}
+.langs{display:flex;gap:16px;padding:10px 0 0;font-size:12.5px;font-weight:600;
+  justify-content:flex-end}
+.langs a{color:var(--muted);background:none;padding:0}
+.langs a:hover{color:var(--accent)}
+.langs .on{color:var(--accent)}
+/* The hero is the one place the page goes dark: it names the thing and gets out of
+   the way. Bleeding it to the viewport edge keeps the paper below feeling like paper. */
+.title{background:var(--hero);color:var(--hero-ink);margin:0 -30px;padding:36px 30px 30px;
+  display:grid;grid-template-columns:1fr 250px;gap:44px;align-items:start}
+.title .eyebrow{color:var(--accent-soft)}
+.title h1{color:var(--hero-ink)}
+.title p.sum{margin:14px 0 0;color:var(--hero-muted);font-size:15.5px;max-width:50ch}
+h1{font-weight:800;letter-spacing:-.035em;line-height:1;margin:10px 0 0;
+  text-wrap:balance;font-size:clamp(30px,5vw,46px)}
+h2{font-weight:700;font-size:20px;margin:0 0 3px;letter-spacing:-.022em}
+.runhead{display:flex;justify-content:space-between;gap:16px;padding:0 0 9px;
+  margin-top:34px;border-bottom:2px solid var(--rule-strong);font-size:11px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.rail{border-left:0;padding-left:0;font-size:13px;color:var(--hero-muted)}
+.rail dt{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--accent-soft);margin-top:14px;font-weight:600}
 .rail dt:first-child{margin-top:0}
-.rail dd{margin:3px 0 0;font-size:14px}
-.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-  border-bottom:1px solid var(--rule-strong)}
-.fig{padding:20px 18px 18px 0;border-right:1px solid var(--rule)}
-.fig:last-child{border-right:0}
-.fig b{display:block;font-family:"Source Serif 4",Georgia,serif;font-weight:600;
-  font-size:clamp(21px,4.6vw,27px);letter-spacing:-.02em;font-variant-numeric:tabular-nums;
-  line-height:1;overflow-wrap:anywhere}
-.fig span{display:block;margin-top:6px;font-size:11px;letter-spacing:.09em;
-  text-transform:uppercase;color:var(--muted)}
-.sec{margin-top:34px}
+.rail dd{margin:3px 0 0;font-size:14px;color:var(--hero-ink)}
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:26px;
+  padding:26px 0;border-bottom:1px solid var(--rule)}
+.fig{border:0;padding:0}
+.fig b{display:block;font-weight:700;font-size:clamp(24px,4vw,34px);letter-spacing:-.035em;
+  font-variant-numeric:tabular-nums;line-height:1;overflow-wrap:anywhere}
+/* the accent marks the money, wherever it falls in the row — pinning it to
+   the second slot put it on "companies" on a canton page and on the sum on a
+   company page, so it stopped meaning anything */
+.fig.money b{color:var(--accent)}
+.fig span{display:block;margin-top:8px;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);font-weight:600}
+.sec{margin-top:6px}
 .scroll{overflow-x:auto}
 table{width:100%;border-collapse:collapse}
 th{text-align:left;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--muted);font-weight:600;padding:0 12px 7px 0;
-  border-bottom:1px solid var(--rule-strong);white-space:nowrap}
-td{padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);vertical-align:top;
+  color:var(--muted);font-weight:700;padding:0 12px 10px 0;
+  border-bottom:2px solid var(--rule-strong);white-space:nowrap}
+td{padding:12px 12px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top;
   font-size:14px}
 td.r,th.r{text-align:right;padding-right:0}
-td.sub,.sub{color:var(--muted);font-size:12.5px}
+td.sub,.sub{color:var(--muted);font-size:13px}
 ul.plain{list-style:none;margin:0;padding:0}
-ul.plain li{padding:11px 0;border-bottom:1px solid var(--rule)}
+ul.plain li{padding:12px 0;border-bottom:1px solid var(--rule)}
 .row{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
-.when{color:var(--signal);font-size:12.5px;font-variant-numeric:tabular-nums;
-  white-space:nowrap}
+.when{color:var(--accent);font-size:12.5px;font-variant-numeric:tabular-nums;
+  white-space:nowrap;font-weight:600}
 .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
-.tag{border:1px solid var(--rule-strong);padding:4px 10px;font-size:12px;color:var(--ink);
-  font-variant-numeric:tabular-nums}
-.tag:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
-.tag.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.state{display:inline-flex;align-items:center;gap:7px;font-size:11px;letter-spacing:.12em;
-  text-transform:uppercase;font-weight:600;color:var(--signal)}
-.state i{width:7px;height:7px;background:var(--signal);border-radius:50%;display:block}
-.winner{border:1px solid var(--rule-strong);padding:18px 20px;margin:6px 0 0}
-.winner .who{font-family:"Source Serif 4",Georgia,serif;font-size:21px;font-weight:600;
-  letter-spacing:-.01em}
-.official{margin-top:22px;padding:13px 15px;background:var(--wash);
-  border-left:2px solid var(--accent);font-size:12.5px;color:var(--muted)}
-.prose p{margin:0 0 14px;font-size:15px;line-height:1.65;max-width:64ch}
-.bar{display:block;height:3px;background:var(--accent);margin-top:6px;opacity:.7}
-.fig-chart{margin:14px 0 0;padding:0}
-.fig-chart svg{max-width:100%}
-.fig-cap{margin-top:9px;font-size:12px;color:var(--muted);max-width:66ch}
-.figs{display:grid;gap:26px;margin-top:4px}
-.cols{display:grid;grid-template-columns:1fr 300px;gap:54px;padding-top:32px;
+.tag{border:0;background:var(--wash);border-radius:100px;padding:5px 13px;font-size:12px;
+  color:var(--ink);font-variant-numeric:tabular-nums}
+a.tag:hover{background:var(--accent);color:var(--paper)}
+.tag.on{background:var(--ink);color:var(--paper)}
+.state{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.13em;
+  text-transform:uppercase;font-weight:700;color:var(--accent-soft)}
+.state i{width:7px;height:7px;background:var(--accent);border-radius:50%;display:block}
+.winner{border:1px solid var(--rule);background:var(--panel);padding:18px 20px;margin:8px 0 0}
+.winner .who{font-family:"Bricolage Grotesque",sans-serif;font-size:21px;font-weight:700;
+  letter-spacing:-.022em}
+.official{margin-top:24px;padding:14px 16px;background:var(--wash);
+  border-left:3px solid var(--accent);font-size:12.5px;color:var(--muted)}
+.prose p{margin:0 0 14px;font-size:15px;line-height:1.7;max-width:64ch}
+.bar{display:block;height:4px;background:var(--accent);margin-top:6px}
+.cols{display:grid;grid-template-columns:1fr 300px;gap:44px;padding-top:6px;
   align-items:start}
-.half{display:grid;grid-template-columns:1fr 1fr;gap:54px;padding-top:32px;align-items:start}
-.langs{display:flex;gap:14px;padding:10px 0 0;font-size:12.5px;justify-content:flex-end}
-.langs .on{color:var(--muted)}
-footer{border-top:1px solid var(--rule);margin-top:44px;padding-top:16px;
+.half{display:grid;grid-template-columns:1fr 1fr;gap:44px;padding-top:6px;align-items:start}
+/* Charts sit on their own white panel so the mark reads against a plain ground, not
+   against the warm paper the rest of the page uses. */
+figure{margin:16px 0 4px;background:var(--panel);border:1px solid var(--rule);
+  padding:18px 20px}
+figcaption{color:var(--muted);font-size:12px;margin-top:10px}
+svg.chart{margin:0}
+footer{border-top:2px solid var(--rule-strong);margin-top:52px;padding-top:18px;
   color:var(--muted);font-size:12.5px}
 footer p{margin:0 0 6px;max-width:78ch}
 @media(max-width:860px){
-  .title,.cols,.half{grid-template-columns:1fr;gap:26px}
-  .rail{border-left:0;border-top:1px solid var(--rule);padding:16px 0 0}
-  .fig{border-right:0;border-bottom:1px solid var(--rule)}
+  .wrap{padding:0 20px 44px}
+  .title{margin:0 -20px;padding:28px 20px 24px;grid-template-columns:1fr;gap:22px}
+  .cols,.half{grid-template-columns:1fr;gap:28px}
 }
 """
 
@@ -418,7 +442,7 @@ HEAD = """<!doctype html>
 <link rel="canonical" href="{site}{path}">
 {alts}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&amp;family=Libre+Franklin:wght@400;500;600&amp;display=swap">
 <link rel="stylesheet" href="{base}/style.css">
 {verify}</head><body>
 <div class="wrap">
@@ -668,7 +692,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
         b.append('<div class="figures">')
         b.append(f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>')
         if c["value"]:
-            b.append(f'<div class="fig"><b>{chf(c["value"])}</b><span>{_.sum}</span></div>')
+            b.append(f'<div class="fig money"><b>{chf(c["value"])}</b><span>{_.sum}</span></div>')
         b.append(f'<div class="fig"><b>{len(c["buyers"])}</b><span>{_.buyers}</span></div>')
         if len(c["amounts"]) > 1:
             b.append(f'<div class="fig"><b>{chf(median(c["amounts"]))}</b><span>{_.median}</span></div>')
@@ -937,7 +961,7 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
              f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>',
              f'<div class="fig"><b>{nfirms}</b><span>{_.companies}</span></div>']
         if total:
-            b.append(f'<div class="fig"><b>{chf_big(total)}</b><span>{_.sum}</span></div>')
+            b.append(f'<div class="fig money"><b>{chf_big(total)}</b><span>{_.sum}</span></div>')
         b.append("</div>")
         b.append(f'<div class="half"><div><div class="runhead"><span>{_.companies}</span>'
                  f'<span>{_.by_awards}</span></div>' + table + "</div><div>")
@@ -1040,7 +1064,7 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
              f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>',
              f'<div class="fig"><b>{nfirms}</b><span>{_.companies}</span></div>']
         if total:
-            b.append(f'<div class="fig"><b>{chf_big(total)}</b><span>{_.sum}</span></div>')
+            b.append(f'<div class="fig money"><b>{chf_big(total)}</b><span>{_.sum}</span></div>')
         b.append("</div>")
         b.append(f'<div class="half"><div><div class="runhead"><span>{_.companies}</span>'
                  f"<span>{_.by_awards}</span></div>" + table + "</div>")
@@ -1221,7 +1245,7 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
          f'<div class="fig"><b>{chf(len(awards))}</b><span>{_.awards}</span></div>',
          f'<div class="fig"><b>{chf(len(firms))}</b><span>{_.companies}</span></div>']
     if total:
-        b.append(f'<div class="fig"><b>{chf_big(total)}</b><span>{_.sum_published}</span></div>')
+        b.append(f'<div class="fig money"><b>{chf_big(total)}</b><span>{_.sum_published}</span></div>')
     b.append(f'<div class="fig"><b>{chf(len(opens))}</b><span>{_.tenders}</span></div>'
              "</div>")
 
@@ -1307,8 +1331,8 @@ def build_root() -> None:
             f'<link rel="canonical" href="{ORIGIN}/">\n{alts}\n'
             f'<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
             f'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
-            f'family=IBM+Plex+Sans:wght@400;500;600&amp;'
-            f'family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&amp;display=swap">'
+            f'family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&amp;'
+            f'family=Libre+Franklin:wght@400;500;600&amp;display=swap">'
             f'<link rel="stylesheet" href="{BASE}/style.css">{VERIFY}</head><body><div class="wrap">'
             f'{body}</div></body></html>')
     write("/index.html", html)
