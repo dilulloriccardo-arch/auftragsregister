@@ -1,13 +1,28 @@
 
+.chart{width:100%;height:auto;display:block;margin:14px 0 4px;overflow:visible}
+.chart .grid{stroke:var(--rule);stroke-width:1;fill:none}
+.chart .axis{fill:var(--muted);font-size:10.5px;letter-spacing:.02em}
+.chart .mark{fill:var(--mark)}
+.chart .mark-soft{fill:var(--mark);opacity:.28}
+.chart .ring{stroke:var(--paper);stroke-width:1.5}
+.chart .lab{fill:var(--ink);font-size:11px;font-variant-numeric:tabular-nums}
+.chart .lab-mute{fill:var(--muted);font-size:10.5px;font-variant-numeric:tabular-nums}
+.chart-note{color:var(--muted);font-size:11.5px;margin:2px 0 0}
+figure{margin:0}
+figcaption{color:var(--muted);font-size:11.5px;margin-top:6px}
+
 :root{
   --paper:oklch(99% .004 250); --ink:oklch(20% .018 250); --muted:oklch(50% .015 250);
   --rule:oklch(89% .008 250); --rule-strong:oklch(72% .012 250);
   --accent:oklch(46% .10 245); --signal:oklch(52% .10 62); --wash:oklch(97% .006 250);
+  --mark:oklch(52% .13 245);
 }
 @media (prefers-color-scheme:dark){:root{
   --paper:oklch(17% .015 250); --ink:oklch(93% .008 250); --muted:oklch(68% .015 250);
   --rule:oklch(29% .012 250); --rule-strong:oklch(42% .015 250);
   --accent:oklch(76% .10 245); --signal:oklch(78% .10 62); --wash:oklch(21% .014 250);
+  /* the dark step is chosen against the dark surface, not flipped from the light one */
+  --mark:oklch(72% .13 245);
 }}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}

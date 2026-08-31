@@ -305,16 +305,19 @@ def load() -> tuple[list, list]:
 
 # ------------------------------------------------------------------ the chrome
 
-CSS = """
+CSS = grafici.CSS + """
 :root{
   --paper:oklch(99% .004 250); --ink:oklch(20% .018 250); --muted:oklch(50% .015 250);
   --rule:oklch(89% .008 250); --rule-strong:oklch(72% .012 250);
   --accent:oklch(46% .10 245); --signal:oklch(52% .10 62); --wash:oklch(97% .006 250);
+  --mark:oklch(52% .13 245);
 }
 @media (prefers-color-scheme:dark){:root{
   --paper:oklch(17% .015 250); --ink:oklch(93% .008 250); --muted:oklch(68% .015 250);
   --rule:oklch(29% .012 250); --rule-strong:oklch(42% .015 250);
   --accent:oklch(76% .10 245); --signal:oklch(78% .10 62); --wash:oklch(21% .014 250);
+  /* the dark step is chosen against the dark surface, not flipped from the light one */
+  --mark:oklch(72% .13 245);
 }}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -671,10 +674,10 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
             b.append(f'<div class="fig"><b>{chf(median(c["amounts"]))}</b><span>{_.median}</span></div>')
         b.append("</div>")
 
-        tl = grafici.timeline(rows, _p.chart_timeline, _p.chart_timeline_cap, chf)
+        tl = grafici.timeline([(a.get("publicationDate") or "", chf_amount(a) or 0)
+                               for a in rows], title=f"{name}: {zuschlag(len(rows))}")
         if tl:
-            b.append(f'<div class="sec"><div class="runhead">'
-                     f'<span>{_p.chart_timeline}</span><span>{len(rows)}</span></div>{tl}</div>')
+            b.append(f'<figure>{tl}<figcaption>{e(_i.timeline_cap)}</figcaption></figure>')
         b.append(f'<div class="sec"><div class="runhead"><span>{_.awards}</span>'
                  f'<span>{_.chronological}</span></div><div class="scroll"><table><thead><tr>'
                  f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.buyer}</th>'
@@ -939,14 +942,17 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
         b.append(f'<div class="half"><div><div class="runhead"><span>{_.companies}</span>'
                  f'<span>{_.by_awards}</span></div>' + table + "</div><div>")
         b.append(f'<div class="runhead"><span>{_.sectors}</span><span>CPV</span></div>'
-                 '<ul class="plain">')
-        top = sect.most_common(1)[0][1] if sect else 1
+                 + grafici.bars([(lab, k) for (lab, _c), k in sect.most_common(8)],
+                                unit=_.awards, title=_i.sectors_cap)
+                 + '<ul class="plain">')
         for (label, code), k in sect.most_common(8):
             cell = (f'<a href="{BASE}/{LANG}/bereich/{e(code)}/">{e(label[:48])}</a>' if code in sectors
                     else e(label[:48]))
-            b.append(f'<li><div class="row">{cell}<span class="sub num">{k}</span></div>'
-                     f'<span class="bar" style="width:{max(4, round(k / top * 100))}%"></span></li>')
+            b.append(f'<li><div class="row">{cell}<span class="sub num">{k}</span></div></li>')
         b.append("</ul></div></div>")
+        col = grafici.columns(sorted(per_month(rows).items()), title=_i.volume_cap)
+        if col:
+            b.append(f'<figure>{col}<figcaption>{e(_i.volume_cap)}</figcaption></figure>')
         b.append(f'<div class="sec"><div class="runhead"><span>{_.awards}</span>'
                  f"<span>{_.chronological}</span></div><div class=\"scroll\"><table><thead><tr>"
                  f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.award}</th>'
@@ -1039,17 +1045,19 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
         b.append(f'<div class="half"><div><div class="runhead"><span>{_.companies}</span>'
                  f"<span>{_.by_awards}</span></div>" + table + "</div>")
         b.append(f'<div><div class="runhead"><span>{_.sectors}</span><span>CPV</span></div>'
-                 '<ul class="plain">')
+                 + grafici.bars([(lab, k) for (lab, _c), k in sect.most_common(8)],
+                                unit=_.awards, title=_i.sectors_cap)
+                 + '<ul class="plain">')
         for (label, code2), k in sect.most_common(10):
             cell = (f'<a href="{BASE}/{LANG}/bereich/{e(code2)}/">{e(label[:52])}</a>' if code2 in sectors
                     else e(label[:52]))
             b.append(f'<li><div class="row">{cell}<span class="sub num">{k}</span></div>'
                      f'<span class="bar" style="width:{max(4, round(k / top * 100))}%"></span></li>')
         b.append("</ul></div></div>")
-        col = grafici.columns(per_month(rows), _p.chart_months, _p.chart_months_cap)
+        col = grafici.columns(sorted(per_month(rows).items()),
+                              title=_i.volume_cap)
         if col:
-            b.append(f'<div class="sec"><div class="runhead"><span>{_p.chart_months}</span>'
-                     f'<span>{len(rows)}</span></div>{col}</div>')
+            b.append(f'<figure>{col}<figcaption>{e(_i.volume_cap)}</figcaption></figure>')
         b.append(nav)
         write(f"/{LANG}/kanton/{code}/index.html",
               page(fit_title(_m("canton_title", name=name), _m("canton_suffix")),
@@ -1074,10 +1082,9 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
              f'<div class="fig"><b>{len(cants)}</b><span>{_.cantons}</span></div></div>',
              f'<div class="sec"><div class="runhead"><span>{_.companies}</span>'
              f"<span>{_.by_awards}</span></div>" + table + "</div>",
-             (lambda g: f'<div class="sec"><div class="runhead">'
-                        f'<span>{_p.chart_months}</span><span>{len(rows)}</span></div>'
-                        f'{g}</div>' if g else "")(
-                 grafici.columns(per_month(rows), _p.chart_months, _p.chart_months_cap)),
+             (lambda g: f'<figure>{g}<figcaption>{e(_i.volume_cap)}</figcaption></figure>'
+              if g else "")(grafici.columns(sorted(per_month(rows).items()),
+                                            title=_i.volume_cap)),
              '<div class="tags" style="margin-top:24px">'
              + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">{e(c)} {k}</a>'
                        for c, k in cants.most_common(14)) + "</div>"]
@@ -1263,9 +1270,10 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
              f'<a class="tag" href="{BASE}/{LANG}/auftraggeber/">{e(_i.all_buyers)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/kanton/">{e(_i.all_cantons)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/bereich/">{e(_i.all_sectors)}</a></div>')
-    col = grafici.columns(per_month(awards), _p.chart_months, _p.chart_months_cap)
+    col = grafici.columns(sorted(per_month(awards).items()), title=_i.volume_cap,
+                          width=900, height=150)
     if col:
-        b.append(f'<div class="sec"><div class="runhead"><span>{_p.chart_months}</span>'
+        b.append(f'<div class="sec"><div class="runhead"><span>{_i.volume_cap}</span>'
                  f'<span>{chf(len(awards))}</span></div>{col}</div>')
 
     b.append('<div class="official" style="margin-top:36px">Diese Website bereitet '

@@ -505,3 +505,27 @@ IDX["showing_n"] = {
     "en": "Showing the {n} nearest of {total} current tenders; the rest are on the "
           "canton pages.",
 }
+
+
+IDX["timeline_cap"] = {
+    "de": "Ein Punkt je Zuschlag, Fläche nach Betrag. Zuschläge ohne publizierten "
+          "Betrag erscheinen klein und blass.",
+    "fr": "Un point par adjudication, surface selon le montant. Les adjudications sans "
+          "montant publié apparaissent petites et pâles.",
+    "it": "Un punto per aggiudicazione, area secondo l'importo. Le aggiudicazioni senza "
+          "importo pubblicato appaiono piccole e chiare.",
+    "en": "One dot per award, area by amount. Awards with no published amount appear "
+          "small and faint.",
+}
+IDX["sectors_cap"] = {
+    "de": "Zuschläge je Beschaffungsbereich", "fr": "Adjudications par domaine",
+    "it": "Aggiudicazioni per settore", "en": "Awards by procurement sector",
+}
+IDX["volume_cap"] = {
+    "de": "Publizierte Zuschläge je Monat", "fr": "Adjudications publiées par mois",
+    "it": "Aggiudicazioni pubblicate per mese", "en": "Published awards per month",
+}
+IDX["firms_cap"] = {
+    "de": "Unternehmen mit den meisten Zuschlägen", "fr": "Entreprises les plus adjudicataires",
+    "it": "Imprese con più aggiudicazioni", "en": "Companies with the most awards",
+}
