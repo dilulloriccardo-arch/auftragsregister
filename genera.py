@@ -1131,10 +1131,13 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
          f'<p class="sum">' + e(_m("open_lead", n=len(opens))) + "</p></div>"
          f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{TODAY}</dd>'
          f"<dt>{_.cantons}</dt><dd>{len(by_cant)}</dd></dl></div>",
-         '<div class="sec">' + table(opens[:400]) + "</div>",
+         # sorted BEFORE slicing: taking 400 in file order and then sorting those
+         # states "the nearest deadlines" about an arbitrary subset of the 588.
+         '<div class="sec">' + table(sorted(
+             opens, key=lambda x: x.get("offerDeadline") or "9999")[:SHOWN]) + "</div>",
          (f'<p class="sub" style="margin:12px 0 0">'
-          + e(_m("open_truncated", shown=400, total=len(opens))) + "</p>"
-          if len(opens) > 400 else ""),
+          + e(_if("showing_n", n=SHOWN, total=len(opens))) + "</p>"
+          if len(opens) > SHOWN else ""),
          nav]
     write(f"/{LANG}/ausschreibungen/index.html", page(
         _m("open_title"), _m("open_desc", n=len(opens)),
