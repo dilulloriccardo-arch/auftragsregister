@@ -630,3 +630,59 @@ SUPPLIER: dict[str, tuple[str, str]] = {
     "de": ("Anbieter", "Anbieter"), "fr": ("soumissionnaire", "soumissionnaires"),
     "it": ("offerente", "offerenti"), "en": ("bidder", "bidders"),
 }
+
+
+T["abbr"] = {"de": "Kürzel", "fr": "Sigle", "it": "Sigla", "en": "Code"}
+T["in_register"] = {"de": "im Register", "fr": "dans le registre",
+                    "it": "nel registro", "en": "in the register"}
+# The firms an award names are its WINNERS: French separates soumissionnaire (any
+# bidder) from adjudicataire (the one awarded) — the reviewer caught the site calling
+# a winner a mere bidder.
+WINNER: dict[str, tuple[str, str]] = {
+    "de": ("Anbieter", "Anbieter"), "fr": ("adjudicataire", "adjudicataires"),
+    "it": ("aggiudicatario", "aggiudicatari"), "en": ("awardee", "awardees"),
+}
+# Big-figure abbreviations are language-specific: Mrd./Mio. read German to a romand eye.
+BIG_UNITS: dict[str, tuple[str, str, str]] = {   # (billion, million, decimal mark)
+    "de": ("Mrd.", "Mio.", ","), "fr": ("mrd", "mio", ","),
+    "it": ("mia.", "mio.", ","), "en": ("bn", "m", "."),
+}
+T["reason"]["fr"] = "Motifs de l'adjudication"
+T["reason"]["it"] = "Motivazione dell'aggiudicazione"
+T["treaty"]["fr"] = "Soumis aux accords internationaux"
+T["treaty"]["it"] = "Soggetto ai trattati internazionali"
+T["treaty"]["en"] = "Covered by international treaties"
+META["canton_title"]["fr"] = "Marchés publics du canton de {name}"
+META["canton_title"]["it"] = "Appalti pubblici Canton {name}"
+META["buyers_count_one"] = {"de": "1 Auftraggeber", "fr": "1 adjudicateur",
+                            "it": "1 committente", "en": "1 authority"}
+IDX["contracts_in"]["fr"] = "Marchés dans le canton de {c}"
+PROSE["official_link"]["fr"] = ("Publication officielle : {link} — seule la publication "
+                               "qui y figure fait foi.")
+
+# Canton names in the reader's language — "Tessin" on the Italian page named the
+# reader's own canton in German.
+CANTON_NAMES: dict[str, dict[str, str]] = {
+    "de": {}, # the German names live in genera.CANTONS and stay authoritative for /de/
+    "fr": {"AG": "Argovie", "AI": "Appenzell Rhodes-Intérieures",
+           "AR": "Appenzell Rhodes-Extérieures", "BE": "Berne", "BL": "Bâle-Campagne",
+           "BS": "Bâle-Ville", "FR": "Fribourg", "GE": "Genève", "GL": "Glaris",
+           "GR": "Grisons", "JU": "Jura", "LU": "Lucerne", "NE": "Neuchâtel",
+           "NW": "Nidwald", "OW": "Obwald", "SG": "Saint-Gall", "SH": "Schaffhouse",
+           "SO": "Soleure", "SZ": "Schwytz", "TG": "Thurgovie", "TI": "Tessin",
+           "UR": "Uri", "VD": "Vaud", "VS": "Valais", "ZG": "Zoug", "ZH": "Zurich"},
+    "it": {"AG": "Argovia", "AI": "Appenzello Interno", "AR": "Appenzello Esterno",
+           "BE": "Berna", "BL": "Basilea Campagna", "BS": "Basilea Città",
+           "FR": "Friburgo", "GE": "Ginevra", "GL": "Glarona", "GR": "Grigioni",
+           "JU": "Giura", "LU": "Lucerna", "NE": "Neuchâtel", "NW": "Nidvaldo",
+           "OW": "Obvaldo", "SG": "San Gallo", "SH": "Sciaffusa", "SO": "Soletta",
+           "SZ": "Svitto", "TG": "Turgovia", "TI": "Ticino", "UR": "Uri",
+           "VD": "Vaud", "VS": "Vallese", "ZG": "Zugo", "ZH": "Zurigo"},
+    "en": {"AG": "Aargau", "AI": "Appenzell Innerrhoden", "AR": "Appenzell Ausserrhoden",
+           "BE": "Bern", "BL": "Basel-Landschaft", "BS": "Basel-Stadt", "FR": "Fribourg",
+           "GE": "Geneva", "GL": "Glarus", "GR": "Graubünden", "JU": "Jura",
+           "LU": "Lucerne", "NE": "Neuchâtel", "NW": "Nidwalden", "OW": "Obwalden",
+           "SG": "St. Gallen", "SH": "Schaffhausen", "SO": "Solothurn", "SZ": "Schwyz",
+           "TG": "Thurgau", "TI": "Ticino", "UR": "Uri", "VD": "Vaud", "VS": "Valais",
+           "ZG": "Zug", "ZH": "Zurich"},
+}

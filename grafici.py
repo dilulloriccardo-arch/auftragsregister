@@ -51,14 +51,30 @@ def _num(v: float) -> str:
     return f"{v:,.0f}".replace(",", "’")
 
 
+# Set per language pass by the generator: Mrd./Mio. are German abbreviations and read
+# foreign on the French and Italian charts.
+BILLION, MILLION, DEC = "Mrd.", "Mio.", ","
+
+
 def _compact(v: float) -> str:
     if v >= 1_000_000_000:
-        return f"{v/1_000_000_000:.1f}".replace(".", ",") + " Mrd."
+        return f"{v/1_000_000_000:.1f}".replace(".", DEC) + f" {BILLION}"
     if v >= 1_000_000:
-        return f"{v/1_000_000:.0f} Mio."
+        return f"{v/1_000_000:.0f} {MILLION}"
     if v >= 1_000:
         return f"{v/1_000:.0f}k"
     return _num(v)
+
+
+def _wcut(t: str, n: int) -> str:
+    """Bar labels cut on a word boundary — mid-word ends read as damage."""
+    t = (t or "").strip()
+    if len(t) <= n:
+        return t
+    c = t[:n]
+    if " " in c[max(0, n - 14):]:
+        c = c[:c.rfind(" ")]
+    return c.rstrip(" ,.;:-–—/") + "…"
 
 
 def bars(items: list[tuple[str, float]], *, unit: str = "", title: str = "",
@@ -81,7 +97,7 @@ def bars(items: list[tuple[str, float]], *, unit: str = "", title: str = "",
         y = i * row
         w = max(2, round(bar_w * v / top))
         out.append(
-            f'<text class="axis" x="0" y="{y + row/2 + 3.5}">{_e(k[:30])}</text>'
+            f'<text class="axis" x="0" y="{y + row/2 + 3.5}">{_e(_wcut(k, 30))}</text>'
             # 4px rounded data-end, square at the baseline: rx on a rect rounds both
             # ends, so the bar is drawn as a path instead
             f'<path class="mark" d="M{lab_w} {y+5} h{max(0, w-4)} a4 4 0 0 1 4 4 '

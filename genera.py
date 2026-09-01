@@ -136,17 +136,15 @@ def chf(v) -> str:
 
 
 def chf_big(v) -> str:
-    """Headline sums only. A register writes figures in full, but 5’673’988’931 in a
-    27px serif overflows its neighbour on a 375px screen, and an unreadable number
-    states nothing. Detail pages keep the exact figure."""
+    """Headline sums only, abbreviated in the READER's units: Mrd. and Mio. are the
+    German abbreviations and read foreign on the French and Italian pages."""
     if not isinstance(v, (int, float)) or not v:
         return ""
+    bn, mn, dec = lingue.BIG_UNITS[LANG]
     if v >= 1_000_000_000:
-        # comma is the decimal mark in Swiss German; replace it in the number only,
-        # or the abbreviation's full stop becomes "Mrd," too
-        return f"{v / 1_000_000_000:.2f}".replace(".", ",") + " Mrd."
+        return f"{v / 1_000_000_000:.2f}".replace(".", dec) + f" {bn}"
     if v >= 10_000_000:
-        return f"{v / 1_000_000:.0f} Mio."
+        return f"{v / 1_000_000:.0f} {mn}"
     return chf(v)
 
 
@@ -160,8 +158,13 @@ def dmy(iso: str) -> str:
 
 
 def dmyy(iso: str) -> str:
-    """Full German date: 09.10.2026."""
-    return f"{iso[8:10]}.{iso[5:7]}.{iso[:4]}" if iso and len(iso) >= 10 else ""
+    """A date as the reader writes it: dd.mm.yyyy in the three national languages,
+    ISO on the English pages, where it reads international rather than foreign."""
+    if not iso or len(iso) < 10:
+        return ""
+    if LANG == "en":
+        return iso[:10]
+    return f"{iso[8:10]}.{iso[5:7]}.{iso[:4]}"
 
 
 def fit_title(text: str, suffix: str, limit: int = 64) -> str:
@@ -286,6 +289,51 @@ def winners(row: dict) -> list[str]:
     if not w:
         return []
     return [p.strip() for p in re.split(r"\s*;\s*|\s+/\s+|\n", w) if len(p.strip()) > 2]
+
+
+_CPV = json.loads((ROOT / "cpv_labels.json").read_text()) if (ROOT / "cpv_labels.json").exists() else {}
+_CPV_COL = {"de": 0, "fr": 1, "it": 2, "en": 3}
+
+
+def cpv_label(code, fallback: str = "") -> str:
+    """The official EU label for a CPV code, in the page's language.
+
+    The register's own labels come back only in the language of the request, which
+    left every sector name German on three of the four language versions — the
+    reviewers' single most repeated finding. The EU publishes the whole vocabulary
+    in every official language; unknown codes fall back to whatever simap sent.
+    """
+    row = _CPV.get(str(code or "").strip())
+    return row[_CPV_COL[LANG]] if row else fallback
+
+
+def canton_name_or(code, fallback=None):
+    """Drop-in for the old CANTONS.get(code, fallback) call sites."""
+    if not code:
+        return fallback if fallback is not None else ""
+    n = canton_name(code)
+    return n if n else (fallback if fallback is not None else code)
+
+
+def canton_name(code: str) -> str:
+    """The canton's name as the reader calls it — 'Tessin' on the Italian page named
+    the reader's own canton in German."""
+    if LANG != "de":
+        n = lingue.CANTON_NAMES.get(LANG, {}).get(code)
+        if n:
+            return n
+    return CANTONS.get(code, code or "")
+
+
+def wcut(t: str, n: int) -> str:
+    """Cut on a word boundary: a label ending mid-word reads as damage."""
+    t = (t or "").strip()
+    if len(t) <= n:
+        return t
+    c = t[:n]
+    if " " in c[max(0, n - 18):]:
+        c = c[:c.rfind(" ")]
+    return c.rstrip(" ,.;:-–—/") + "…"
 
 
 def norm_buyer(name: str) -> str:
@@ -611,7 +659,7 @@ def profile(awards: list) -> dict:
                 c["value"] += p
                 c["amounts"].append(p)
             if a.get("cpvCode"):
-                c["cpv"][(str(a["cpvCode"]), de(a, "cpvLabel") or a.get("cpvLabel") or "")] += 1
+                c["cpv"][(str(a["cpvCode"]), cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") or "")] += 1
                 c["sig"].add(sig(a["cpvCode"]))
             if a.get("canton"):
                 c["cant"][a["canton"]] += 1
@@ -727,11 +775,12 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
         cants = [k for k, _ in c["cant"].most_common(4)]
 
         b = [f'<div class="title"><div><p class="eyebrow">'
-             + " · ".join(x for x in (sector[:44], CANTONS.get(cants[0], cants[0]) if cants else "") if x)
+             + " · ".join(x for x in (wcut(sector, 44), canton_name_or(cants[0], cants[0]) if cants else "") if x)
              + f'</p><h1>{e(name)}</h1>'
              f'<p class="sum">' + e(_m("company_lead", n=zuschlag(len(rows)),
                                        span=(f", {span}" if span else ""),
-                                       b=_m("buyers_count", k=len(c["buyers"]))))
+                                       b=(_m("buyers_count_one") if len(c["buyers"]) == 1
+                                          else _m("buyers_count", k=len(c["buyers"])))))
              + '</p></div><dl class="rail">']
         if sector:
             b.append(f"<dt>{_.main_sector}</dt><dd>{e(sector)}</dd>")
@@ -778,8 +827,8 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                 b.append(f'<li><div class="row"><div><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/">'
                          f'{e(de(t, "title")[:120])}</a><span class="sub" style="display:block;'
                          f'margin-top:3px">{e(t.get("buyerName"))} · {e(t.get("canton"))} · '
-                         f'{e(de(t, "cpvLabel") or t.get("cpvLabel") or "")[:44]}</span></div>'
-                         f'<span class="when">bis {e(dmyy(t.get("offerDeadline") or ""))}</span>'
+                         f'{e(cpv_label(t.get("cpvCode"), de(t, "cpvLabel") or t.get("cpvLabel") or "") or "")[:44]}</span></div>'
+                         f'<span class="when">{_.until} {e(dmyy(t.get("offerDeadline") or ""))}</span>'
                          "</div></li>")
             b.append("</ul></div>")
 
@@ -807,7 +856,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
         if pr:
             others, cant = pr
             b.append(f'<div class="sec"><div class="runhead"><span>{e(_p.peers)}'
-                     f'</span><span>{e(CANTONS.get(cant, cant))}</span></div>'
+                     f'</span><span>{e(canton_name_or(cant, cant))}</span></div>'
                      '<ul class="plain">')
             for o in others:
                 oc = comp[o]
@@ -893,7 +942,7 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
         ws = winners(aw) if aw else []
         if ws:
             b.append(f'<div class="runhead"><span>{_.award}</span>'
-                     f'<span>{plural(len(ws), *lingue.SUPPLIER[LANG])}</span></div>')
+                     f'<span>{plural(len(ws), *lingue.WINNER[LANG])}</span></div>')
             for w in ws:
                 s = slug(w)
                 known = pages.get(s)
@@ -904,7 +953,7 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
                     extra.append(money(aw) + (" CHF" if not (aw.get("winnerCurrency")
                                   or "CHF").strip().upper() != "CHF" else ""))
                 if known:
-                    extra.append(f'{zuschlag(known["n"])} im Register')
+                    extra.append(f'{zuschlag(known["n"])} {_.in_register}')
                 b.append(f'<div class="winner">{link}'
                          + (f'<div class="sub" style="margin-top:5px">' + " · ".join(extra)
                             + "</div>" if extra else "") + "</div>")
@@ -916,23 +965,24 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
             b.append(f'<h2 style="margin:30px 0 12px">{_.description}</h2><p>'
                      + e(body_txt[:1600]) + "</p>")
         if src.get("simapUrl"):
-            b.append(f'<div class="official">Amtliche Publikation: '
-                     f'<a href="{e(src["simapUrl"])}">Projekt {e(src.get("projectNumber") or "")} '
-                     "auf simap.ch ansehen</a> — massgebend ist ausschliesslich die dortige "
-                     "Veröffentlichung.</div>")
+            link = (f'<a href="{e(src["simapUrl"])}">'
+                    + e(lingue.p("view_on_simap", LANG).format(n=src.get("projectNumber") or ""))
+                    + "</a>")
+            b.append('<div class="official">'
+                     + e(_p.official_link).replace("{link}", link) + "</div>")
         b.append("</div><div>")
 
         b.append(f'<div class="runhead"><span>{_.details}</span><span></span></div>'
                  '<div class="scroll"><table><tbody>')
         cpv = f'<span class="mono">{e(src.get("cpvCode") or "")}</span>' + (
-            "<br>" + e(de(src, "cpvLabel") or src.get("cpvLabel") or "")
+            "<br>" + e(cpv_label(src.get("cpvCode"), de(src, "cpvLabel") or src.get("cpvLabel") or "") or "")
             if (src.get("cpvLabel") or de(src, "cpvLabel")) else "")
         hit = buyer_slugs.get(norm_buyer(src.get("buyerName") or ""))
         buyer_cell = (f'<a href="{BASE}/{LANG}/auftraggeber/{e(hit[0])}/">{e(hit[1])}</a>'
                       if hit else e(src.get("buyerName")))
         for label, val in [(_.buyer, buyer_cell if src.get("buyerName") else ""),
                            (_.place, e(src.get("city"))),
-                           (_.canton, e(CANTONS.get(src.get("canton"), src.get("canton") or ""))),
+                           (_.canton, e(canton_name_or(src.get("canton"), src.get("canton") or ""))),
                            (_.type, e(_e("orderType", src.get("orderType")))),
                            ("CPV", cpv if src.get("cpvCode") else ""),
                            (_.treaty, e(_e("bool", src.get("stateContractArea"))))]:
@@ -1030,7 +1080,7 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
             for a in rows if a.get("cpvCode"))
         cant = cants.most_common(1)[0][0] if cants else ""
         b = [f'<div class="title"><div><p class="eyebrow">{_.buyer}'
-             + (f" · {e(CANTONS.get(cant, cant))}" if cant else "") + f'</p><h1>{e(name)}</h1>'
+             + (f" · {e(canton_name_or(cant, cant))}" if cant else "") + f'</p><h1>{e(name)}</h1>'
              f'<p class="sum">' + e(_m("buyer_lead", n=zuschlag(len(rows)), f=nfirms))
              + '</p></div><dl class="rail">'
              + (f"<dt>{_.canton}</dt><dd>{e(cant)}</dd>" if cant else "")
@@ -1058,7 +1108,7 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
         b.append(f'<div class="sec"><div class="runhead"><span>{_.awards}</span>'
                  f"<span>{_.chronological}</span></div><div class=\"scroll\"><table><thead><tr>"
                  f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.award}</th>'
-                 '<th class="r">Betrag CHF</th></tr></thead><tbody>')
+                 f'<th class="r">{_.amount}</th></tr></thead><tbody>')
         for a in sorted(rows, key=lambda x: x.get("publicationDate") or "", reverse=True)[:60]:
             ws = winners(a)
             who = " · ".join(
@@ -1126,17 +1176,17 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
                     for c, r in cant_list) + "</div>"
 
     for code, rows in cant_list:
-        name = CANTONS.get(code, code)
+        name = canton_name_or(code, code)
         table, nfirms = firm_table(rows, comp, pages)
         total = sum(chf_amount(a) or 0 for a in rows)
         sect = collections.Counter(
-            (de(a, "cpvLabel") or a.get("cpvLabel") or "", str(a.get("cpvCode") or ""))
+            (cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") or "", str(a.get("cpvCode") or ""))
             for a in rows if a.get("cpvCode"))
         top = sect.most_common(1)[0][1] if sect else 1
         b = [f'<div class="title"><div><p class="eyebrow">{_.canton}</p><h1>{e(name)}</h1>'
              f'<p class="sum">' + e(_m("canton_lead", n=zuschlag(len(rows)), f=nfirms))
              + "</p></div>"
-             f'<dl class="rail"><dt>Kürzel</dt><dd class="mono">{e(code)}</dd>'
+             f'<dl class="rail"><dt>{_.abbr}</dt><dd class="mono">{e(code)}</dd>'
              f'<dt>{_.buyers}</dt><dd>{len({a.get("buyerName") for a in rows})}</dd></dl></div>',
              '<div class="figures">',
              f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>',
@@ -1169,8 +1219,8 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
     cpv_list = [(c, r) for c, r in sorted(by_cpv.items(), key=lambda kv: -len(kv[1]))
                 if c in sectors]
     for code, rows in cpv_list:
-        label = next((de(a, "cpvLabel") or a.get("cpvLabel") for a in rows
-                      if de(a, "cpvLabel") or a.get("cpvLabel")), code)
+        label = next((cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") for a in rows
+                      if cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "")), code)
         table, nfirms = firm_table(rows, comp, pages)
         cants = collections.Counter(a["canton"] for a in rows if a.get("canton"))
         b = [f'<div class="title"><div><p class="eyebrow">{_.sector} · CPV {e(code)}</p>'
@@ -1210,8 +1260,8 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
     the fact that decides whether the rest matters.
     """
     def table(rows: list) -> str:
-        out = ['<div class="scroll"><table><thead><tr><th style="width:104px">Eingabefrist</th>'
-               '<th>Ausschreibung</th><th>Auftraggeber</th><th style="width:44px">Kt.</th>'
+        out = [f'<div class="scroll"><table><thead><tr><th style="width:104px">{_.deadline}</th>'
+               f'<th>{_.tenders}</th><th>{_.buyer}</th><th style="width:44px">{_.canton_abbr}</th>'
                "</tr></thead><tbody>"]
         for t in sorted(rows, key=lambda x: x.get("offerDeadline") or "9999"):
             out.append(
@@ -1219,7 +1269,7 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
                 f'{e(dmyy(t.get("offerDeadline") or ""))}</td>'
                 f'<td><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/">{e(de(t, "title")[:120])}</a>'
                 + (f'<span class="sub" style="display:block;margin-top:2px">'
-                   f'{e((de(t, "cpvLabel") or t.get("cpvLabel") or "")[:60])}</span>'
+                   f'{e((cpv_label(t.get("cpvCode"), de(t, "cpvLabel") or t.get("cpvLabel") or "") or "")[:60])}</span>'
                    if (t.get("cpvLabel") or de(t, "cpvLabel")) else "")
                 + f'</td><td>{e(t.get("buyerName"))}</td><td>{e(t.get("canton"))}</td></tr>')
         out.append("</tbody></table></div>")
@@ -1253,7 +1303,7 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
         "\n".join(b), f"/{LANG}/ausschreibungen/", _.tenders))
 
     for code, rows in by_cant.items():
-        name = CANTONS.get(code, code)
+        name = canton_name_or(code, code)
         b = [f'<div class="title"><div><p class="eyebrow">{_.running_canton}</p>'
              f'<h1>{e(_m("open_canton_title", name=name))}</h1>'
              f'<p class="sum">'
@@ -1312,12 +1362,10 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
     soon = sorted((t for t in opens if t.get("offerDeadline")),
                   key=lambda t: t["offerDeadline"])[:8]
 
-    b = [f'<div class="title"><div><h1>Wer gewinnt die öffentlichen Aufträge der Schweiz.</h1>'
-         '<p class="sum">Jeder auf simap.ch publizierte Zuschlag, nach Unternehmen '
-         "aufbereitet: Auftraggeber, Betrag, Verfahren — und welche Ausschreibungen "
-         "gerade offen sind.</p></div>"
-         f'<dl class="rail"><dt>{_.source}</dt><dd>Amtliche Publikationen von Bund, Kantonen '
-         "und Gemeinden</dd>" + (f"<dt>{_.period}</dt><dd>{e(span)}</dd>" if span else "")
+    b = [f'<div class="title"><div><h1>{e(_p.tagline)}</h1>'
+         f'<p class="sum">{e(_p.lead)}</p></div>'
+         f'<dl class="rail"><dt>{_.source}</dt><dd>{e(_p.source_note)}</dd>'
+         + (f"<dt>{_.period}</dt><dd>{e(span)}</dd>" if span else "")
          + f"<dt>{_.updated}</dt><dd>{e(TODAY)}</dd></dl></div>",
          '<div class="figures">',
          f'<div class="fig"><b>{chf(len(awards))}</b><span>{_.awards}</span></div>',
@@ -1331,7 +1379,7 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
              f'<div class="runhead"><span>{_.companies}</span>'
              f'<span>{e(span)}</span></div>'
              '<div class="scroll"><table><thead><tr><th style="width:34px"></th>'
-             f'<th>{_.companies}</th><th style="width:46px">Kt.</th>'
+             f'<th>{_.companies}</th><th style="width:46px">{_.canton_abbr}</th>'
              f'<th class="r">{_.awards}</th><th class="r">{_.sum}</th></tr></thead><tbody>')
     rank = [(s, p) for s, p in sorted(pages.items(), key=lambda kv: (-kv[1]["n"], -kv[1]["value"]))][:25]
     for i, (s, p) in enumerate(rank, 1):
@@ -1359,8 +1407,8 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
     b.append(f'<div class="runhead" style="margin-top:28px"><span>{_i.by_sector}</span>'
              f'<span>{len(cpv_list)}</span></div><ul class="plain">')
     for code, rows in cpv_list[:8]:
-        label = next((de(a, "cpvLabel") or a.get("cpvLabel") for a in rows
-                      if de(a, "cpvLabel") or a.get("cpvLabel")), code)
+        label = next((cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") for a in rows
+                      if cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "")), code)
         b.append(f'<li><div class="row"><a href="{BASE}/{LANG}/bereich/{e(code)}/">{e(label[:40])}</a>'
                  f'<span class="sub num">{len(rows)}</span></div></li>')
     b.append("</ul></div></div>")
@@ -1462,11 +1510,11 @@ def build_language(awards: list, opens: list) -> tuple[int, int, int, int, int, 
                 [(sl, n, k) for sl, n, k in buyers],
                 _i.buyers_title, _if("buyers_desc", n=len(buyers)))
     build_index("/kanton/", _.cantons, _.cantons, _i.cantons_lead,
-                [(c, CANTONS.get(c, c), len(r)) for c, r in cant_list],
+                [(c, canton_name_or(c, c), len(r)) for c, r in cant_list],
                 _i.cantons_title, _i.cantons_desc)
     build_index("/bereich/", _.sectors, _i.sectors_h1, _i.sectors_lead,
-                [(c, next((de(a, "cpvLabel") or a.get("cpvLabel") or c for a in r
-                           if de(a, "cpvLabel") or a.get("cpvLabel")), c), len(r))
+                [(c, next((cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") or c for a in r
+                           if cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "")), c), len(r))
                  for c, r in cpv_list],
                 _i.sectors_title, _i.sectors_desc)
     build_home(pages, comp, awards, opens, cant_list, cpv_list)
@@ -1485,6 +1533,7 @@ def main() -> None:
     print(f"  dati    : {len(awards)} aggiudicazioni · {len(opens)} bandi aperti")
     for lang in LANGS:
         LANG = lang
+        grafici.BILLION, grafici.MILLION, grafici.DEC = lingue.BIG_UNITS[lang]
         n = build_language(awards, opens)
         print(f"  {lang}      : {n[0]} imprese · {n[1]} appalti · {n[2]} committenti "
               f"· {n[3]} cantoni · {n[4]} settori · {n[5]} bandi")
