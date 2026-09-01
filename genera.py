@@ -481,14 +481,16 @@ HEAD = """<!doctype html>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{site}{path}">
 {alts}
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&amp;family=Libre+Franklin:wght@400;500;600&amp;display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2718%27 fill=%27%23c4472a%27/%3E%3Ctext x=%2750%27 y=%2773%27 font-size=%2762%27 font-family=%27Arial,sans-serif%27 font-weight=%27800%27 fill=%27%23fbfaf7%27 text-anchor=%27middle%27%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="{base}/fonts/LibreFranklin-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{base}/fonts/BricolageGrotesque-800-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{base}/style.css">
 {verify}</head><body>
 <div class="wrap">
 <div class="masthead"><a class="name" href="{base}/{lang}/">{sitename}</a>
 <span class="eyebrow">{kicker}</span></div>
 <nav class="langs" aria-label="{langlabel}">{langnav}</nav>
+<main>
 """
 
 # The first footer line says "not official" in the READER's language. simap's §5
@@ -496,7 +498,7 @@ HEAD = """<!doctype html>
 # who reads only French, Italian or English: the audit found the byte-identical German
 # string on all four language versions, making the "it plainly says so" defence false
 # on three of them. The verbatim notice keeps its lang="de" so screen readers switch.
-FOOT = """<footer><p>{notoff}</p>
+FOOT = """</main><footer><p>{notoff}</p>
 <p lang="de">{disc}</p>
 <p>{srcnote}</p>
 <p>{source}: <a href="https://www.simap.ch">simap.ch</a> — {official}. {asof} {today} ·
@@ -804,8 +806,8 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
         pr = peer_map.get(s)
         if pr:
             others, cant = pr
-            b.append('<div class="sec"><div class="runhead"><span>Weitere Anbieter im '
-                     f'selben Bereich</span><span>{e(CANTONS.get(cant, cant))}</span></div>'
+            b.append(f'<div class="sec"><div class="runhead"><span>{e(_p.peers)}'
+                     f'</span><span>{e(CANTONS.get(cant, cant))}</span></div>'
                      '<ul class="plain">')
             for o in others:
                 oc = comp[o]
@@ -891,7 +893,7 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
         ws = winners(aw) if aw else []
         if ws:
             b.append(f'<div class="runhead"><span>{_.award}</span>'
-                     f'<span>{plural(len(ws), "Anbieter", "Anbieter")}</span></div>')
+                     f'<span>{plural(len(ws), *lingue.SUPPLIER[LANG])}</span></div>')
             for w in ws:
                 s = slug(w)
                 known = pages.get(s)
@@ -1027,7 +1029,7 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
             (de(a, "cpvLabel") or a.get("cpvLabel") or "", str(a.get("cpvCode") or ""))
             for a in rows if a.get("cpvCode"))
         cant = cants.most_common(1)[0][0] if cants else ""
-        b = [f'<div class="title"><div><p class="eyebrow">Auftraggeber'
+        b = [f'<div class="title"><div><p class="eyebrow">{_.buyer}'
              + (f" · {e(CANTONS.get(cant, cant))}" if cant else "") + f'</p><h1>{e(name)}</h1>'
              f'<p class="sum">' + e(_m("buyer_lead", n=zuschlag(len(rows)), f=nfirms))
              + '</p></div><dl class="rail">'
@@ -1131,7 +1133,7 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
             (de(a, "cpvLabel") or a.get("cpvLabel") or "", str(a.get("cpvCode") or ""))
             for a in rows if a.get("cpvCode"))
         top = sect.most_common(1)[0][1] if sect else 1
-        b = [f'<div class="title"><div><p class="eyebrow">Kanton</p><h1>{e(name)}</h1>'
+        b = [f'<div class="title"><div><p class="eyebrow">{_.canton}</p><h1>{e(name)}</h1>'
              f'<p class="sum">' + e(_m("canton_lead", n=zuschlag(len(rows)), f=nfirms))
              + "</p></div>"
              f'<dl class="rail"><dt>Kürzel</dt><dd class="mono">{e(code)}</dd>'
@@ -1171,7 +1173,7 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
                       if de(a, "cpvLabel") or a.get("cpvLabel")), code)
         table, nfirms = firm_table(rows, comp, pages)
         cants = collections.Counter(a["canton"] for a in rows if a.get("canton"))
-        b = [f'<div class="title"><div><p class="eyebrow">Bereich · CPV {e(code)}</p>'
+        b = [f'<div class="title"><div><p class="eyebrow">{_.sector} · CPV {e(code)}</p>'
              f'<h1>{e(label)}</h1><p class="sum">'
              + e(_m("sector_lead", n=zuschlag(len(rows)), f=nfirms)) + "</p></div>"
              f'<dl class="rail"><dt>CPV</dt><dd class="mono">{e(code)}</dd>'
@@ -1233,7 +1235,7 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
                      for c, r in sorted(by_cant.items(), key=lambda kv: -len(kv[1])))
            + "</div>")
 
-    b = [f'<div class="title"><div><p class="eyebrow">Laufend</p>'
+    b = [f'<div class="title"><div><p class="eyebrow">{_.running}</p>'
          f"<h1>{e(_p.open_tenders_h1)}</h1>"
          f'<p class="sum">' + e(_m("open_lead", n=len(opens))) + "</p></div>"
          f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{TODAY}</dd>'
@@ -1252,7 +1254,7 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
 
     for code, rows in by_cant.items():
         name = CANTONS.get(code, code)
-        b = [f'<div class="title"><div><p class="eyebrow">Laufend · Kanton</p>'
+        b = [f'<div class="title"><div><p class="eyebrow">{_.running_canton}</p>'
              f'<h1>{e(_m("open_canton_title", name=name))}</h1>'
              f'<p class="sum">'
              + e(_m("open_canton_desc", n=len(rows), name=name)) + "</p></div>"
@@ -1428,12 +1430,9 @@ def build_root() -> None:
             f'<meta name="description" content="'
             f'{e(lingue.m("home_desc", "de", n=""))}">'
             f'<link rel="canonical" href="{ORIGIN}/">\n{alts}\n'
-            f'<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-            f'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?'
-            f'family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&amp;'
-            f'family=Libre+Franklin:wght@400;500;600&amp;display=swap">'
+            f'<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2718%27 fill=%27%23c4472a%27/%3E%3Ctext x=%2750%27 y=%2773%27 font-size=%2762%27 font-family=%27Arial,sans-serif%27 font-weight=%27800%27 fill=%27%23fbfaf7%27 text-anchor=%27middle%27%3EA%3C/text%3E%3C/svg%3E">'
             f'<link rel="stylesheet" href="{BASE}/style.css">{VERIFY}</head><body><div class="wrap">'
-            f'{body}</div></body></html>')
+            f'<main>{body}</main></div></body></html>')
     html = html.replace("</ul></div>",
         "</ul></div>"
         '<p style="margin-top:26px;color:var(--muted);font-size:12px">'
@@ -1491,7 +1490,18 @@ def main() -> None:
               f"· {n[3]} cantoni · {n[4]} settori · {n[5]} bandi")
     LANG = "de"
     build_root()
-    write("/style.css", CSS)
+    # Fonts are served from our own origin: the Google Fonts link both blocked first
+    # paint for ~2 seconds on mobile and sent every visitor's IP to Google — the same
+    # embedding European courts have already sanctioned. docs/ is wiped every build,
+    # so the woff2 files are copied in each time, like the CNAME and the IndexNow key.
+    fdir = ROOT / "fonts"
+    fontcss = ""
+    if fdir.exists():
+        (OUT / "fonts").mkdir(parents=True, exist_ok=True)
+        for f in fdir.glob("*.woff2"):
+            shutil.copy(f, OUT / "fonts" / f.name)
+        fontcss = (fdir / "fonts.css").read_text().replace("/fonts/", f"{BASE}/fonts/")
+    write("/style.css", fontcss + "\n" + CSS)
     if keyfile.exists():
         k = keyfile.read_text().strip()
         write(f"/{k}.txt", k)

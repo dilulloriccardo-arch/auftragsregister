@@ -618,3 +618,15 @@ IMP: dict[str, dict] = {
         ],
     },
 }
+
+
+T["sector"] = {"de": "Bereich", "fr": "Domaine", "it": "Settore", "en": "Sector"}
+T["running_canton"] = {"de": "Laufend · Kanton", "fr": "En cours · Canton",
+                       "it": "In corso · Cantone", "en": "Current · Canton"}
+
+# Singular/plural of "bidder" — the one label that still used plural() with two
+# identical German forms, which then leaked German into every other language.
+SUPPLIER: dict[str, tuple[str, str]] = {
+    "de": ("Anbieter", "Anbieter"), "fr": ("soumissionnaire", "soumissionnaires"),
+    "it": ("offerente", "offerenti"), "en": ("bidder", "bidders"),
+}

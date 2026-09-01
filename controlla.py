@@ -100,7 +100,7 @@ def main() -> int:
                 href = href[len(BASE):]
             elif BASE and href == BASE:
                 href = "/"
-            if href.startswith(("/style.css", "/sitemap.xml", "/robots.txt")):
+            if href.startswith(("/style.css", "/sitemap.xml", "/robots.txt", "/fonts/")):
                 continue
             target = href if href.endswith("/") else href + "/"
             if target not in pages:
