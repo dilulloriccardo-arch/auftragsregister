@@ -529,3 +529,92 @@ IDX["firms_cap"] = {
     "de": "Unternehmen mit den meisten Zuschlägen", "fr": "Entreprises les plus adjudicataires",
     "it": "Imprese con più aggiudicazioni", "en": "Companies with the most awards",
 }
+
+
+T["imprint"] = {"de": "Impressum", "fr": "Mentions légales", "it": "Note legali",
+                "en": "Legal notice"}
+
+# The Impressum, per language. The operator's name and address of contact are injected
+# by the generator so they live in one place.
+IMP: dict[str, dict] = {
+    "de": {
+        "title": "Impressum",
+        "operator_h": "Betreiber",
+        "operator_note": "Privatperson, Schweiz",
+        "contact_h": "Kontakt",
+        "paras": [
+            ("Unabhängiges Projekt",
+             "Öffentliche Aufträge Schweiz ist ein privates, unabhängiges Projekt. Es "
+             "ist kein amtliches Register und steht in keiner Verbindung zu simap.ch "
+             "oder zu einer Behörde von Bund, Kantonen oder Gemeinden."),
+            ("Datengrundlage",
+             "Alle Inhalte beruhen auf amtlichen Publikationen der Plattform simap.ch "
+             "und werden gemäss deren API-Nutzungsbedingungen inhaltlich unverändert "
+             "wiedergegeben. Massgebend sind ausschliesslich die dort veröffentlichten "
+             "Daten."),
+            ("Keine Gewähr",
+             "Für die Vollständigkeit und Richtigkeit der Aufbereitung wird keine "
+             "Gewähr übernommen. Hinweise auf Fehler nehme ich gerne per E-Mail "
+             "entgegen."),
+        ],
+    },
+    "fr": {
+        "title": "Mentions légales",
+        "operator_h": "Exploitant",
+        "operator_note": "Particulier, Suisse",
+        "contact_h": "Contact",
+        "paras": [
+            ("Projet indépendant",
+             "Marchés publics suisses est un projet privé et indépendant. Ce n'est pas "
+             "un registre officiel et il n'a aucun lien avec simap.ch ni avec une "
+             "autorité fédérale, cantonale ou communale."),
+            ("Source des données",
+             "Tous les contenus reposent sur les publications officielles de la "
+             "plateforme simap.ch et sont restitués sans modification de leur contenu, "
+             "conformément à ses conditions d'utilisation de l'API. Seules les données "
+             "qui y sont publiées font foi."),
+            ("Absence de garantie",
+             "L'exhaustivité et l'exactitude de la présentation ne sont pas garanties. "
+             "Les signalements d'erreurs sont bienvenus par e-mail."),
+        ],
+    },
+    "it": {
+        "title": "Note legali",
+        "operator_h": "Gestore",
+        "operator_note": "Privato, Svizzera",
+        "contact_h": "Contatto",
+        "paras": [
+            ("Progetto indipendente",
+             "Appalti pubblici svizzeri è un progetto privato e indipendente. Non è un "
+             "registro ufficiale e non ha alcun legame con simap.ch né con autorità "
+             "federali, cantonali o comunali."),
+            ("Fonte dei dati",
+             "Tutti i contenuti si basano sulle pubblicazioni ufficiali della "
+             "piattaforma simap.ch e sono riportati senza modifiche nel contenuto, "
+             "secondo le sue condizioni d'uso dell'API. Fanno fede esclusivamente i "
+             "dati ivi pubblicati."),
+            ("Nessuna garanzia",
+             "Non si garantisce la completezza né la correttezza della rielaborazione. "
+             "Le segnalazioni di errori sono benvenute via e-mail."),
+        ],
+    },
+    "en": {
+        "title": "Legal notice",
+        "operator_h": "Operator",
+        "operator_note": "Private individual, Switzerland",
+        "contact_h": "Contact",
+        "paras": [
+            ("Independent project",
+             "Swiss Public Contracts is a private, independent project. It is not an "
+             "official register and has no connection to simap.ch or to any federal, "
+             "cantonal or communal authority."),
+            ("Data source",
+             "All content is based on the official publications of the simap.ch "
+             "platform and is reproduced with its content unaltered, under simap's API "
+             "terms of use. Only the data published there is authoritative."),
+            ("No guarantee",
+             "No guarantee is given for the completeness or correctness of this "
+             "presentation. Error reports are welcome by e-mail."),
+        ],
+    },
+}

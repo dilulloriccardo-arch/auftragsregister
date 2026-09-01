@@ -491,9 +491,16 @@ HEAD = """<!doctype html>
 <nav class="langs" aria-label="{langlabel}">{langnav}</nav>
 """
 
-FOOT = """<footer><p>{disc}</p>
+# The first footer line says "not official" in the READER's language. simap's §5
+# notice must stay verbatim — which means German — so on its own it protected nobody
+# who reads only French, Italian or English: the audit found the byte-identical German
+# string on all four language versions, making the "it plainly says so" defence false
+# on three of them. The verbatim notice keeps its lang="de" so screen readers switch.
+FOOT = """<footer><p>{notoff}</p>
+<p lang="de">{disc}</p>
 <p>{srcnote}</p>
-<p>{source}: <a href="https://www.simap.ch">simap.ch</a> — {official}. {asof} {today}.</p>
+<p>{source}: <a href="https://www.simap.ch">simap.ch</a> — {official}. {asof} {today} ·
+<a href="{imphref}">{implabel}</a></p>
 </footer></div></body></html>"""
 
 
@@ -559,6 +566,9 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
                         sitename=e(_.site), langnav=nav, langlabel=e(_.language))
             + breadcrumbs(path, leaf or title.split(" — ")[0])
             + body + FOOT.format(disc=e(DISCLAIMER), today=TODAY,
+                                 notoff=e(_p.not_official),
+                                 imphref=f"{BASE}/{LANG}/impressum/",
+                                 implabel=e(_.imprint),
                                  srcnote=e(_p.translation_note), source=e(_.source),
                                  asof=e(_.as_of), official=e(_p.source_note)))
 
@@ -1366,15 +1376,38 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
         b.append(f'<div class="sec"><div class="runhead"><span>{_i.volume_cap}</span>'
                  f'<span>{chf(len(awards))}</span></div>{col}</div>')
 
-    b.append('<div class="official" style="margin-top:36px">Diese Website bereitet '
-             "öffentlich publizierte Daten auf und ist kein Ersatz für simap.ch. "
-             "Massgebend sind ausschliesslich die dort veröffentlichten Publikationen.</div>")
+    # the one prominent notice on the home — in the reader's language, like the footer
+    b.append(f'<div class="official" style="margin-top:36px">{e(_p.not_official)}</div>')
 
     write(f"/{LANG}/index.html", page(
         _m("home_title"), _m("home_desc", n=chf(len(awards))),
         "\n".join(b), f"/{LANG}/"))
 
 
+
+
+OPERATOR_NAME = "Riccardo Di Lullo"
+OPERATOR_EMAIL = "dilulloriccardo@gmail.com"     # already public in the repo history
+
+
+def build_impressum() -> None:
+    """The operator, named. Until now the only identity signal on the whole site was
+    the username inside the canonical URLs — and on a custom domain even that goes
+    away, making the site MORE anonymous exactly when it starts looking serious."""
+    imp = lingue.IMP[LANG]
+    b = [f'<div class="title"><div><p class="eyebrow">{e(_.register)}</p>'
+         f'<h1>{e(imp["title"])}</h1></div><dl class="rail">'
+         f'<dt>{e(imp["operator_h"])}</dt><dd>{e(OPERATOR_NAME)}<br>'
+         f'{e(imp["operator_note"])}</dd>'
+         f'<dt>{e(imp["contact_h"])}</dt><dd><a href="mailto:{e(OPERATOR_EMAIL)}">'
+         f'{e(OPERATOR_EMAIL)}</a></dd></dl></div>',
+         '<div class="sec prose" style="padding-top:24px">']
+    for h, t in imp["paras"]:
+        b.append(f"<h2 style=\"margin:22px 0 8px\">{e(h)}</h2><p>{e(t)}</p>")
+    b.append("</div>")
+    write(f"/{LANG}/impressum/index.html", page(
+        f"{imp['title']} — {_.site}", imp["paras"][0][1][:170],
+        "\n".join(b), f"/{LANG}/impressum/", _.register, imp["title"]))
 
 
 def build_root() -> None:
@@ -1401,6 +1434,11 @@ def build_root() -> None:
             f'family=Libre+Franklin:wght@400;500;600&amp;display=swap">'
             f'<link rel="stylesheet" href="{BASE}/style.css">{VERIFY}</head><body><div class="wrap">'
             f'{body}</div></body></html>')
+    html = html.replace("</ul></div>",
+        "</ul></div>"
+        '<p style="margin-top:26px;color:var(--muted);font-size:12px">'
+        "Kein amtliches Register · Registre non officiel · "
+        "Registro non ufficiale · Not an official register</p>")
     write("/index.html", html)
 
 
@@ -1433,6 +1471,7 @@ def build_language(awards: list, opens: list) -> tuple[int, int, int, int, int, 
                  for c, r in cpv_list],
                 _i.sectors_title, _i.sectors_desc)
     build_home(pages, comp, awards, opens, cant_list, cpv_list)
+    build_impressum()
     return (len(pages), n_aw, len(buyers), len(cant_list), len(cpv_list), n_open)
 
 
