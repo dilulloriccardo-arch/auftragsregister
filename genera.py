@@ -1495,6 +1495,14 @@ def main() -> None:
     if keyfile.exists():
         k = keyfile.read_text().strip()
         write(f"/{k}.txt", k)
+    # Pages reads the custom domain from a CNAME file in the publish directory, and
+    # this directory is wiped on every build — so the file is emitted here, like the
+    # IndexNow key, or the nightly rebuild would silently detach the domain.
+    host = SITE.split("//", 1)[-1]
+    if not host.endswith("github.io"):
+        write("/CNAME", host + "\n")
+    # 76k files do not need a Jekyll pass; skipping it makes Pages builds faster
+    write("/.nojekyll", "")
     print(f"  sitemap : {build_sitemap()} URL in {len(LANGS)} lingue")
 
 
