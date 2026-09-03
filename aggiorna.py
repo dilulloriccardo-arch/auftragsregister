@@ -84,7 +84,24 @@ def run(kinds, frm, to, dest: pathlib.Path) -> int:
     return len(merged)
 
 
+def wait_online(attempts: int = 12, wait: int = 150) -> bool:
+    """Alle 05:40 la rete del Mac puo' non esserci (3/9/2026: DNS giu').
+    Aspetta fino a ~30 minuti prima di arrendersi, invece di morire subito."""
+    import socket, time
+    for i in range(attempts):
+        try:
+            socket.gethostbyname("api.apify.com")
+            return True
+        except OSError:
+            say(f"rete assente (tentativo {i + 1}/{attempts}), riprovo tra {wait}s")
+            time.sleep(wait)
+    say("rete assente per 30 minuti: rinuncio, si riprova domani")
+    return False
+
+
 def main() -> int:
+    if not wait_online():
+        return 2
     today = datetime.date.today()
     first = today.replace(day=1)
     prev_end = first
