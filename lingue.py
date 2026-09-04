@@ -534,6 +534,9 @@ IDX["firms_cap"] = {
 T["imprint"] = {"de": "Impressum", "fr": "Mentions légales", "it": "Note legali",
                 "en": "Legal notice"}
 
+T["privacy"] = {"de": "Datenschutz", "fr": "Protection des données",
+                "it": "Protezione dei dati", "en": "Privacy"}
+
 # The Impressum, per language. The operator's name and address of contact are injected
 # by the generator so they live in one place.
 IMP: dict[str, dict] = {
@@ -615,6 +618,171 @@ IMP: dict[str, dict] = {
             ("No guarantee",
              "No guarantee is given for the completeness or correctness of this "
              "presentation. Error reports are welcome by e-mail."),
+        ],
+    },
+}
+
+
+# The site reproduces official award publications. Most awardees are companies, but a
+# measured 3.3% of the 10,547 names are natural persons (sole traders), so the site
+# does process personal data and owes a notice under the revised Swiss DSG.
+PRIV: dict[str, dict] = {
+    "de": {
+        "title": "Datenschutz",
+        "operator_h": "Verantwortliche Person",
+        "operator_note": "Privatperson, Schweiz",
+        "contact_h": "Kontakt",
+        "paras": [
+            ("Welche Personendaten diese Website enthält",
+             "Diese Website gibt amtliche Publikationen von simap.ch wieder. Die meisten "
+             "genannten Anbieterinnen und Anbieter sind Unternehmen. Ein Teil der "
+             "Zuschlagsempfänger sind jedoch Einzelfirmen und selbständig Erwerbende: in "
+             "diesen Fällen erscheint der Name einer natürlichen Person zusammen mit dem "
+             "Auftrag, dem Betrag und der Auftraggeberin. Weitere Personendaten - "
+             "Kontaktpersonen, E-Mail-Adressen, Telefonnummern - werden nicht "
+             "übernommen und nicht veröffentlicht."),
+            ("Zweck und Rechtfertigung",
+             "Zweck ist es, bereits amtlich veröffentlichte Vergabeentscheide auffindbar "
+             "und vergleichbar zu machen. Die Daten wurden von Behörden des Bundes, der "
+             "Kantone und der Gemeinden im Rahmen des öffentlichen Beschaffungsrechts "
+             "publiziert, sind allgemein zugänglich und werden gemäss den "
+             "API-Nutzungsbedingungen von simap.ch inhaltlich unverändert wiedergegeben. "
+             "Die Bearbeitung stützt sich auf das überwiegende Interesse an der "
+             "Transparenz öffentlicher Beschaffungen."),
+            ("Keine Daten über Besucherinnen und Besucher",
+             "Diese Website setzt keine Cookies, verwendet keine Analyse- oder "
+             "Tracking-Dienste und bindet keine Skripte oder Schriften von Dritten ein. "
+             "Es bestehen keine Benutzerkonten und es werden keine Formulare angeboten. "
+             "Die Website wird über GitHub Pages ausgeliefert; der Hosting-Anbieter kann "
+             "im Rahmen des Betriebs technische Verbindungsdaten wie IP-Adressen in "
+             "eigenen Server-Logs erfassen."),
+            ("Archiv und Aufbewahrung",
+             "Der Datenbestand wird täglich aus simap.ch aktualisiert. Ältere "
+             "Publikationen bleiben als Archiv erhalten, auch wenn sie über die "
+             "Schnittstelle von simap.ch nicht mehr abgefragt werden können."),
+            ("Ihre Rechte",
+             "Sie können jederzeit Auskunft über die zu Ihrer Person bearbeiteten Daten "
+             "verlangen sowie deren Berichtigung oder Löschung beantragen und der "
+             "Bearbeitung widersprechen. Eine kurze E-Mail an die oben genannte Adresse "
+             "genügt; Anliegen werden ohne Kostenfolge behandelt. Massgebend bleibt die "
+             "Publikation auf simap.ch: eine Berichtigung dort sollte zusätzlich bei der "
+             "publizierenden Behörde verlangt werden."),
+        ],
+    },
+    "fr": {
+        "title": "Protection des données",
+        "operator_h": "Responsable du traitement",
+        "operator_note": "Particulier, Suisse",
+        "contact_h": "Contact",
+        "paras": [
+            ("Quelles données personnelles figurent sur ce site",
+             "Ce site reproduit des publications officielles de simap.ch. La plupart des "
+             "adjudicataires sont des entreprises. Certains sont toutefois des raisons "
+             "individuelles ou des indépendants: dans ces cas, le nom d'une personne "
+             "physique apparaît avec le marché, le montant et l'adjudicateur. Aucune "
+             "autre donnée personnelle - personnes de contact, adresses e-mail, numéros "
+             "de téléphone - n'est reprise ni publiée."),
+            ("Finalité et justification",
+             "La finalité est de rendre repérables et comparables des décisions "
+             "d'adjudication déjà publiées officiellement. Les données ont été publiées "
+             "par des autorités fédérales, cantonales et communales dans le cadre du "
+             "droit des marchés publics, elles sont accessibles au public et sont "
+             "restituées sans modification de contenu conformément aux conditions "
+             "d'utilisation de l'API de simap.ch. Le traitement repose sur l'intérêt "
+             "prépondérant à la transparence des marchés publics."),
+            ("Aucune donnée sur les visiteurs",
+             "Ce site n'utilise pas de cookies, aucun service d'analyse ou de suivi, et "
+             "n'intègre aucun script ni police provenant de tiers. Il n'y a ni compte "
+             "utilisateur ni formulaire. Le site est diffusé via GitHub Pages; "
+             "l'hébergeur peut enregistrer dans ses propres journaux des données "
+             "techniques de connexion telles que les adresses IP."),
+            ("Archive et conservation",
+             "Les données sont mises à jour chaque jour depuis simap.ch. Les "
+             "publications plus anciennes sont conservées sous forme d'archive, même "
+             "lorsqu'elles ne peuvent plus être interrogées via l'interface de simap.ch."),
+            ("Vos droits",
+             "Vous pouvez en tout temps demander l'accès aux données vous concernant, "
+             "leur rectification ou leur effacement, et vous opposer au traitement. Un "
+             "simple e-mail à l'adresse ci-dessus suffit; les demandes sont traitées "
+             "sans frais. La publication sur simap.ch fait foi: une rectification "
+             "devrait également être demandée auprès de l'autorité qui a publié."),
+        ],
+    },
+    "it": {
+        "title": "Protezione dei dati",
+        "operator_h": "Titolare del trattamento",
+        "operator_note": "Privato, Svizzera",
+        "contact_h": "Contatto",
+        "paras": [
+            ("Quali dati personali contiene questo sito",
+             "Questo sito riproduce pubblicazioni ufficiali di simap.ch. La maggior parte "
+             "degli aggiudicatari sono imprese. Alcuni sono però ditte individuali e "
+             "lavoratori indipendenti: in questi casi il nome di una persona fisica "
+             "compare insieme all'appalto, all'importo e al committente. Nessun altro "
+             "dato personale - persone di contatto, indirizzi e-mail, numeri di telefono "
+             "- viene ripreso o pubblicato."),
+            ("Finalità e giustificazione",
+             "La finalità è rendere reperibili e confrontabili decisioni di "
+             "aggiudicazione già pubblicate ufficialmente. I dati sono stati pubblicati "
+             "da autorità federali, cantonali e comunali nell'ambito del diritto degli "
+             "appalti pubblici, sono accessibili a chiunque e vengono riprodotti senza "
+             "modifiche nel contenuto secondo le condizioni d'uso dell'API di simap.ch. "
+             "Il trattamento si fonda sull'interesse preponderante alla trasparenza "
+             "degli appalti pubblici."),
+            ("Nessun dato sui visitatori",
+             "Questo sito non usa cookie, non impiega servizi di analisi o "
+             "tracciamento e non incorpora script o caratteri di terzi. Non esistono "
+             "account utente né moduli. Il sito è distribuito tramite GitHub Pages; il "
+             "fornitore di hosting può registrare nei propri log dati tecnici di "
+             "connessione come gli indirizzi IP."),
+            ("Archivio e conservazione",
+             "I dati sono aggiornati ogni giorno da simap.ch. Le pubblicazioni più "
+             "vecchie restano conservate come archivio, anche quando non sono più "
+             "interrogabili tramite l'interfaccia di simap.ch."),
+            ("I suoi diritti",
+             "Può in ogni momento chiedere l'accesso ai dati che la riguardano, la loro "
+             "rettifica o cancellazione e opporsi al trattamento. È sufficiente una "
+             "breve e-mail all'indirizzo indicato sopra; le richieste sono trattate "
+             "senza spese. Fa fede la pubblicazione su simap.ch: una rettifica andrebbe "
+             "richiesta anche all'autorità che ha pubblicato."),
+        ],
+    },
+    "en": {
+        "title": "Privacy",
+        "operator_h": "Controller",
+        "operator_note": "Private individual, Switzerland",
+        "contact_h": "Contact",
+        "paras": [
+            ("What personal data this site contains",
+             "This site reproduces official publications from simap.ch. Most awardees "
+             "are companies. Some, however, are sole proprietorships and self-employed "
+             "individuals: in those cases the name of a natural person appears together "
+             "with the contract, the amount and the contracting authority. No other "
+             "personal data - contact persons, e-mail addresses, telephone numbers - is "
+             "taken over or published."),
+            ("Purpose and justification",
+             "The purpose is to make already officially published award decisions "
+             "findable and comparable. The data was published by federal, cantonal and "
+             "communal authorities under public-procurement law, is publicly accessible, "
+             "and is reproduced without changes to its content under the simap.ch API "
+             "terms of use. The processing rests on the overriding interest in the "
+             "transparency of public procurement."),
+            ("No data about visitors",
+             "This site sets no cookies, uses no analytics or tracking services, and "
+             "embeds no third-party scripts or fonts. There are no user accounts and no "
+             "forms. The site is served through GitHub Pages; the hosting provider may "
+             "record technical connection data such as IP addresses in its own server "
+             "logs."),
+            ("Archive and retention",
+             "The data is refreshed daily from simap.ch. Older publications are kept as "
+             "an archive, even once they can no longer be queried through the simap.ch "
+             "interface."),
+            ("Your rights",
+             "You may at any time request access to the data concerning you, ask for it "
+             "to be corrected or deleted, and object to the processing. A short e-mail "
+             "to the address above is enough; requests are handled free of charge. The "
+             "publication on simap.ch remains authoritative: a correction should also be "
+             "requested from the authority that published it."),
         ],
     },
 }

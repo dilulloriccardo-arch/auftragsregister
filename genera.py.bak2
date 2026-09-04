@@ -1,0 +1,1617 @@
+#!/usr/bin/env python3
+"""Build the static register from simap award and tender data.
+
+The look follows the design canvas: a printed register rather than a product page —
+hairline rules instead of cards, an asymmetric grid with the metadata on a rail,
+tabular figures, running heads. Source Serif 4 sets the headings, IBM Plex Sans the
+data, IBM Plex Mono the publication numbers and CPV codes.
+
+Every page has to earn its place in an index. A page carrying a company name and one
+line of data is thin content, and thin content is what search engines drop — so a
+company page is written only when the record behind it is worth reading, and it
+carries the full award list, the aggregates computed from it, the open tenders that
+match the company's own history, and links out to its sector and canton.
+
+Legal: simap's API terms permit commercial reuse and passing data to third parties
+(§4) provided the data is not altered in content, stays visually distinct from
+commentary, and carries the notice verbatim (§5). The notice is in the footer of
+every page that shows publication data, commentary sits in its own marked block, and
+no figure is recomputed into something the source did not say.
+"""
+from __future__ import annotations
+
+import collections
+import html
+import json
+import pathlib
+import re
+import shutil
+import unicodedata
+from datetime import date
+
+import grafici
+import lingue
+from lingue import LANGS, NAMES
+
+ROOT = pathlib.Path(__file__).resolve().parent
+DATI = ROOT / "dati"
+OUT = ROOT / "docs"
+# The canonical origin. Kept in a file rather than in code so the domain can be set
+# once, without editing the generator; every canonical link and the sitemap use it.
+# The canonical origin, and the path the site is served from. GitHub Pages serves a
+# project site from /<repo>/, so every root-relative link needs that prefix; a custom
+# domain serves from the root and BASE is empty. Both live in dominio.txt: first line
+# the origin, optional second line the base path.
+_DOMAIN = ROOT / "dominio.txt"
+_lines = (_DOMAIN.read_text().strip().splitlines() if _DOMAIN.exists()
+          else ["https://example.invalid"])
+SITE = _lines[0].strip().rstrip("/")
+# Search Console proves ownership with a meta tag. The token is pasted into
+# search-console.txt once; the tag then rides on every page automatically.
+_SC = ROOT / "search-console.txt"
+VERIFY = (f'<meta name="google-site-verification" content="{_SC.read_text().strip()}">\n'
+          if _SC.exists() and _SC.read_text().strip() else "")
+BASE = (_lines[1].strip().rstrip("/") if len(_lines) > 1 else "")
+# Every absolute URL the site declares about itself — canonical, hreflang, breadcrumb
+# item, sitemap <loc> — has to carry the base path too. Using SITE alone published
+# 75,141 canonicals and 375,705 hreflang alternates pointing at 404s, which would have
+# made a Search Console submission return "not found" for the entire site.
+ORIGIN = SITE + BASE
+DISCLAIMER = lingue.PROSE["disclaimer"]["de"]   # prescribed verbatim by simap's terms
+LANG = "de"                                     # set per pass by main()
+
+
+class _Words:
+    """Chrome strings reached by attribute rather than by call.
+
+    Python 3.11 forbids reusing the delimiter quote inside an f-string
+    expression, and this template code is nothing but f-strings — so an
+    attribute lookup keeps every substitution quote-free.
+    """
+
+    def __getattr__(self, key: str) -> str:
+        return lingue.t(key, LANG)
+
+
+class _Prose:
+    def __getattr__(self, key: str) -> str:
+        return lingue.p(key, LANG)
+
+
+def _m(key: str, **kw) -> str:
+    return lingue.m(key, LANG, **kw)
+
+
+class _Idx:
+    def __getattr__(self, key: str) -> str:
+        return lingue.i(key, LANG)
+
+
+_i = _Idx()
+
+
+def _if(key: str, **kw) -> str:
+    return lingue.i(key, LANG, **kw)
+
+
+_ = _Words()
+_p = _Prose()
+MIN_AWARDS = 2          # below this a company page is thin; the record still shows in hubs
+TODAY = date.today().isoformat()
+
+CANTONS = {
+    "AG": "Aargau", "AI": "Appenzell Innerrhoden", "AR": "Appenzell Ausserrhoden",
+    "BE": "Bern", "BL": "Basel-Landschaft", "BS": "Basel-Stadt", "FR": "Freiburg",
+    "GE": "Genf", "GL": "Glarus", "GR": "Graubünden", "JU": "Jura", "LU": "Luzern",
+    "NE": "Neuenburg", "NW": "Nidwalden", "OW": "Obwalden", "SG": "St. Gallen",
+    "SH": "Schaffhausen", "SO": "Solothurn", "SZ": "Schwyz", "TG": "Thurgau",
+    "TI": "Tessin", "UR": "Uri", "VD": "Waadt", "VS": "Wallis", "ZG": "Zug",
+    "ZH": "Zürich",
+}
+
+
+# --------------------------------------------------------------------- helpers
+
+def slug(s: str) -> str:
+    # The umlaut expansion has to happen BEFORE normalising: NFKD decomposes ä into
+    # a + combining diaeresis, so a .replace("ä", "ae") afterwards finds nothing and
+    # every umlaut collapses to the bare vowel. That silently merged Stämpfli AG and
+    # Stampfli AG — two different companies — onto one page, and gave every German
+    # name the transliteration nobody uses (muller rather than mueller).
+    s = (s or "").lower()
+    s = s.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss")
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return s[:70] or "x"
+
+
+def e(v) -> str:
+    return html.escape(str(v)) if v is not None else ""
+
+
+def chf(v) -> str:
+    """Swiss thousands separator, the way the register writes figures."""
+    return f"{v:,.0f}".replace(",", "’") if isinstance(v, (int, float)) and v else ""
+
+
+def chf_big(v) -> str:
+    """Headline sums only, abbreviated in the READER's units: Mrd. and Mio. are the
+    German abbreviations and read foreign on the French and Italian pages."""
+    if not isinstance(v, (int, float)) or not v:
+        return ""
+    bn, mn, dec = lingue.BIG_UNITS[LANG]
+    if v >= 1_000_000_000:
+        return f"{v / 1_000_000_000:.2f}".replace(".", dec) + f" {bn}"
+    if v >= 10_000_000:
+        return f"{v / 1_000_000:.0f} {mn}"
+    return chf(v)
+
+
+def plural(n: int, one: str, many: str) -> str:
+    return f"{n} {one if n == 1 else many}"
+
+
+def dmy(iso: str) -> str:
+    """Short German date: 28.08 — day before month, unlike the ISO the source uses."""
+    return f"{iso[8:10]}.{iso[5:7]}" if iso and len(iso) >= 10 else ""
+
+
+def dmyy(iso: str) -> str:
+    """A date as the reader writes it: dd.mm.yyyy in the three national languages,
+    ISO on the English pages, where it reads international rather than foreign."""
+    if not iso or len(iso) < 10:
+        return ""
+    if LANG == "en":
+        return iso[:10]
+    return f"{iso[8:10]}.{iso[5:7]}.{iso[:4]}"
+
+
+def fit_title(text: str, suffix: str, limit: int = 64) -> str:
+    """A title Google will not truncate, cut so it still identifies the page.
+
+    Cutting only the tail produced 747 titles shared by 3,036 pages: awards from one
+    big project share a long prefix and differ only in the part that gets thrown away —
+    28 pages all reading "Flumenthal; Zentralgefängnis Kanton Solothurn (ZGSO)…" where
+    the real subject was Brandschutzbekleidung, Innentüren, Gärtnerarbeiten. Identical
+    titles are what tells a search engine a set of pages carries nothing of its own.
+
+    So the ellipsis goes in the MIDDLE: the head keeps the project, the tail keeps the
+    trade, and both are cut on a word boundary.
+    """
+    room = limit - len(suffix)
+    text = " ".join(text.split())
+    if len(text) <= room:
+        return text + suffix
+
+    def cut_end(t: str, n: int) -> str:
+        c = t[:n]
+        if " " in c[max(0, n - 22):]:
+            c = c[:c.rfind(" ")]
+        return c.rstrip(" ,.;:-–—/")
+
+    def cut_start(t: str, n: int) -> str:
+        """Whole words from the end. A tail that begins mid-word ("dschutzbekleidung")
+        is worse than a shorter one: it reads as damage, not as an abbreviation."""
+        words, out = t.split(" "), []
+        for w in reversed(words):
+            if len(" ".join([w] + out)) > n:
+                break
+            out.insert(0, w)
+        return " ".join(out).lstrip(" ,.;:-–—/")
+
+    tail_room = max(0, room * 2 // 5)
+    head = cut_end(text, room - tail_room - 1)
+    tail = cut_start(text, tail_room) if tail_room >= 8 else ""
+    if not tail or tail in head:
+        return head + "…" + suffix
+    return f"{head}…{tail}{suffix}"
+
+
+def zuschlag(n: int) -> str:
+    one, many = lingue.PLURALS[LANG]
+    return plural(n, one, many)
+
+
+def de(row: dict, field: str) -> str:
+    """The publication's own text, in the page's language where it exists.
+
+    simap translates 74% of titles into German and 51% into French, so hardcoding
+    German threw away roughly 3,700 French titles the source had already published —
+    on the French site, which serves a quarter of the market. Italian sits at 3% and
+    English at nothing, so those fall back rather than pretend.
+
+    The fallback order is deliberate: the page's language, then German as the register's
+    majority language, then the field as published. It never paraphrases, and it never
+    labels one language's text as another's.
+    """
+    t = ((row.get("translations") or {}).get(field) or {})
+    order = (LANG, "de", "fr", "it")
+    for lang in order:
+        if t.get(lang):
+            return t[lang].strip()
+    return (row.get(field) or "").strip()
+
+
+def chf_amount(row: dict) -> float | None:
+    """The awarded amount, but only when the register published it IN FRANCS.
+
+    98 awards are published in euros and 11 in dollars. Adding them to a CHF total
+    silently overstated it by roughly half a billion, and each page printed a foreign
+    figure under a "CHF" label — a converted or mislabelled amount is a number the
+    source never published, and this is a register. Foreign amounts are shown on their
+    own page with their own currency and left out of every total.
+    """
+    p = row.get("winnerPrice")
+    if not isinstance(p, (int, float)) or not p:
+        return None
+    cur = (row.get("winnerCurrency") or "CHF").strip().upper()
+    return float(p) if cur == "CHF" else None
+
+
+def _e(kind: str, value) -> str:
+    return lingue.enum(kind, value, LANG)
+
+
+def money(row: dict) -> str:
+    """The awarded amount as the register published it, currency and all.
+
+    Never relabelled: 109 awards are in euros or dollars, and printing them under a
+    CHF heading states something the publication does not.
+    """
+    p = row.get("winnerPrice")
+    if not isinstance(p, (int, float)) or not p:
+        return ""
+    cur = (row.get("winnerCurrency") or "CHF").strip().upper()
+    return f"{chf(p)}" + ("" if cur == "CHF" else f" {cur}")
+
+
+def winners(row: dict) -> list[str]:
+    """Every firm the award names, from the structured list where the source has one.
+
+    simap publishes `award.vendors` as a list and `winnerName` as a flat string that
+    holds only the FIRST of them. Parsing the string dropped 1,162 firm-award rows
+    across 473 awards — one framework contract names 36 suppliers and the page showed
+    a single "1 Anbieter", contradicting the publication it links to.
+
+    Names only. `vendors[i].price` is not money per firm: on many of these rows every
+    vendor carries the identical figure, a framework ceiling repeated line by line, so
+    attributing it per name would invent billions the register never published. The
+    money rule elsewhere is unchanged — an amount is only ever credited to a firm when
+    the award names exactly one.
+    """
+    vend = (row.get("award") or {}).get("vendors") or []
+    names = [str(v.get("name") or "").strip() for v in vend if isinstance(v, dict)]
+    names = [n for n in names if len(n) > 2]
+    if names:
+        return list(dict.fromkeys(names))
+    w = (row.get("winnerName") or "").strip()
+    if not w:
+        return []
+    return [p.strip() for p in re.split(r"\s*;\s*|\s+/\s+|\n", w) if len(p.strip()) > 2]
+
+
+_CPV = json.loads((ROOT / "cpv_labels.json").read_text()) if (ROOT / "cpv_labels.json").exists() else {}
+_CPV_COL = {"de": 0, "fr": 1, "it": 2, "en": 3}
+
+
+def cpv_label(code, fallback: str = "") -> str:
+    """The official EU label for a CPV code, in the page's language.
+
+    The register's own labels come back only in the language of the request, which
+    left every sector name German on three of the four language versions — the
+    reviewers' single most repeated finding. The EU publishes the whole vocabulary
+    in every official language; unknown codes fall back to whatever simap sent.
+    """
+    row = _CPV.get(str(code or "").strip())
+    return row[_CPV_COL[LANG]] if row else fallback
+
+
+def canton_name_or(code, fallback=None):
+    """Drop-in for the old CANTONS.get(code, fallback) call sites."""
+    if not code:
+        return fallback if fallback is not None else ""
+    n = canton_name(code)
+    return n if n else (fallback if fallback is not None else code)
+
+
+def canton_name(code: str) -> str:
+    """The canton's name as the reader calls it — 'Tessin' on the Italian page named
+    the reader's own canton in German."""
+    if LANG != "de":
+        n = lingue.CANTON_NAMES.get(LANG, {}).get(code)
+        if n:
+            return n
+    return CANTONS.get(code, code or "")
+
+
+def wcut(t: str, n: int) -> str:
+    """Cut on a word boundary: a label ending mid-word reads as damage."""
+    t = (t or "").strip()
+    if len(t) <= n:
+        return t
+    c = t[:n]
+    if " " in c[max(0, n - 18):]:
+        c = c[:c.rfind(" ")]
+    return c.rstrip(" ,.;:-–—/") + "…"
+
+
+def norm_buyer(name: str) -> str:
+    """The key that decides whether two spellings are the same authority.
+
+    The register writes one office several ways — a trailing space, a leading tab,
+    "BBL" against "(BBL)". Keyed on the raw string, each variant became its own page
+    writing to the same file, and the last write won: the Bundesamt für Bauten und
+    Logistik page stated 3 awards where the office has 156, and Basel-Stadt 3 where it
+    has 351. Figures that wrong about a named public body are the worst thing a
+    register can publish.
+
+    Normalising the NAME, not the slug: slug() truncates at 70 characters, and grouping
+    on that would merge genuinely separate SBB purchasing units into one page.
+    """
+    n = (name or "")
+    # Typographic variants of the same character: the register writes both l'environnement
+    # and l’environnement for one office, and separates a department from its parent with a
+    # comma here and a dash there.
+    for a, b in (("\u2019", "'"), ("\u2018", "'"), ("\u201c", '"'), ("\u201d", '"'),
+                 ("\u2013", "-"), ("\u2014", "-"), (",", " "), ("/", " "), ("-", " ")):
+        n = n.replace(a, b)
+    n = n.replace("(", " ").replace(")", " ")
+    # Genuine typos are left alone on purpose: "Bundebahnen" for "Bundesbahnen" and
+    # "Resourcen" for "Ressourcen" are real spellings in the source, and the fuzzy match
+    # that would merge them would also merge authorities that are actually different.
+    return " ".join(n.split()).casefold().rstrip(" .:;'")
+
+
+def sig(code) -> str:
+    """Significant digits of a CPV code: 45000000 -> '45' (a bucket, not a category)."""
+    return str(code).rstrip("0") or str(code)[:2]
+
+
+def load() -> tuple[list, list]:
+    """Awards and open tenders.
+
+    `abandonment` publications ride in the same feed: a procurement the authority
+    called off. Presenting one as an award says a contract was granted that was not,
+    so they are dropped here rather than counted.
+    """
+    awards, seen = [], set()
+    for f in sorted(DATI.glob("aggiudicazioni_*.json")):
+        for a in json.loads(f.read_text()):
+            k = a.get("publicationId") or a.get("publicationNumber")
+            if k and k in seen:
+                continue
+            seen.add(k)
+            if a.get("pubType") == "abandonment":
+                continue
+            awards.append(a)
+    p = DATI / "gare_aperte.json"
+    opens = [t for t in json.loads(p.read_text())
+             if (t.get("offerDeadline") or "")[:10] >= TODAY] if p.exists() else []
+    return awards, opens
+
+
+# ------------------------------------------------------------------ the chrome
+
+CSS = grafici.CSS + """
+/* Direction: data magazine. A dark hero block carries the name, warm paper carries the
+   record, and one brick accent marks the figure that matters. Bricolage Grotesque sets
+   the display — a variable grotesque with real character rather than the safe default —
+   against Libre Franklin for reading.
+
+   Muted text is #736e65, not the #7a756c the sketch used: that measured 4.38:1 on this
+   paper, under the 4.5:1 AA floor, and it carries captions and lead paragraphs, which
+   are body text however small they look. */
+:root{
+  --paper:#fbfaf7; --ink:#1a1a18; --muted:#736e65; --rule:#ddd8cf;
+  --rule-strong:#1a1a18; --accent:#c4472a; --accent-soft:#e8a08c; --signal:#b06a1e;
+  --wash:#f2eee6; --panel:#ffffff; --hero:#1a1a18; --hero-ink:#fbfaf7;
+  --hero-muted:#a8a29a; --mark:#c4472a;
+}
+@media (prefers-color-scheme:dark){:root{
+  /* Chosen against the dark ground, not flipped: the brick lightens so it still reads
+     as the same accent, and the paper becomes a warm near-black rather than blue. */
+  --paper:#141311; --ink:#f0ece5; --muted:#a49d92; --rule:#2e2b26;
+  --rule-strong:#f0ece5; --accent:#e8734f; --accent-soft:#e8a08c; --signal:#d99a4a;
+  --wash:#1e1c19; --panel:#1c1a17; --hero:#0d0c0b; --hero-ink:#f7f4ee;
+  --hero-muted:#9b958a; --mark:#e8734f;
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Libre Franklin",system-ui,-apple-system,sans-serif;font-size:14.5px;
+  line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 30px 60px}
+a{color:var(--ink);text-decoration:none;
+  background-image:linear-gradient(var(--accent),var(--accent));
+  background-size:100% 1px;background-repeat:no-repeat;background-position:0 100%;
+  padding-bottom:1px}
+a:hover{background-size:100% 2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.disp,h1,h2,.fig b,.masthead a.name{font-family:"Bricolage Grotesque","Libre Franklin",
+  system-ui,sans-serif}
+.mono{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+.num{font-variant-numeric:tabular-nums}
+.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+  font-weight:600;margin:0}
+.masthead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+  padding:18px 0 14px;border-bottom:2px solid var(--rule-strong);flex-wrap:wrap}
+.masthead a.name{font-weight:800;font-size:18px;letter-spacing:-.025em;color:var(--ink);
+  background:none;padding:0}
+.masthead a.name:hover{color:var(--accent)}
+.langs{display:flex;gap:16px;padding:10px 0 0;font-size:12.5px;font-weight:600;
+  justify-content:flex-end}
+.langs a{color:var(--muted);background:none;padding:0}
+.langs a:hover{color:var(--accent)}
+.langs .on{color:var(--accent)}
+/* The hero is the one place the page goes dark: it names the thing and gets out of
+   the way. Bleeding it to the viewport edge keeps the paper below feeling like paper. */
+.title{background:var(--hero);color:var(--hero-ink);margin:0 -30px;padding:36px 30px 30px;
+  display:grid;grid-template-columns:1fr 250px;gap:44px;align-items:start}
+.title .eyebrow{color:var(--accent-soft)}
+.title h1{color:var(--hero-ink)}
+.title p.sum{margin:14px 0 0;color:var(--hero-muted);font-size:15.5px;max-width:50ch}
+h1{font-weight:800;letter-spacing:-.035em;line-height:1;margin:10px 0 0;
+  text-wrap:balance;font-size:clamp(30px,5vw,46px)}
+h2{font-weight:700;font-size:20px;margin:0 0 3px;letter-spacing:-.022em}
+.runhead{display:flex;justify-content:space-between;gap:16px;padding:0 0 9px;
+  margin-top:34px;border-bottom:2px solid var(--rule-strong);font-size:11px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.rail{border-left:0;padding-left:0;font-size:13px;color:var(--hero-muted)}
+.rail dt{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--accent-soft);margin-top:14px;font-weight:600}
+.rail dt:first-child{margin-top:0}
+.rail dd{margin:3px 0 0;font-size:14px;color:var(--hero-ink)}
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:26px;
+  padding:26px 0;border-bottom:1px solid var(--rule)}
+.fig{border:0;padding:0}
+.fig b{display:block;font-weight:700;font-size:clamp(24px,4vw,34px);letter-spacing:-.035em;
+  font-variant-numeric:tabular-nums;line-height:1;overflow-wrap:anywhere}
+/* the accent marks the money, wherever it falls in the row — pinning it to
+   the second slot put it on "companies" on a canton page and on the sum on a
+   company page, so it stopped meaning anything */
+.fig.money b{color:var(--accent)}
+.fig span{display:block;margin-top:8px;font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);font-weight:600}
+.sec{margin-top:6px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);font-weight:700;padding:0 12px 10px 0;
+  border-bottom:2px solid var(--rule-strong);white-space:nowrap}
+td{padding:12px 12px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top;
+  font-size:14px}
+td.r,th.r{text-align:right;padding-right:0}
+td.sub,.sub{color:var(--muted);font-size:13px}
+ul.plain{list-style:none;margin:0;padding:0}
+ul.plain li{padding:12px 0;border-bottom:1px solid var(--rule)}
+.row{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.when{color:var(--accent);font-size:12.5px;font-variant-numeric:tabular-nums;
+  white-space:nowrap;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.tag{border:0;background:var(--wash);border-radius:100px;padding:5px 13px;font-size:12px;
+  color:var(--ink);font-variant-numeric:tabular-nums}
+a.tag:hover{background:var(--accent);color:var(--paper)}
+.tag.on{background:var(--ink);color:var(--paper)}
+.state{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.13em;
+  text-transform:uppercase;font-weight:700;color:var(--accent-soft)}
+.state i{width:7px;height:7px;background:var(--accent);border-radius:50%;display:block}
+.winner{border:1px solid var(--rule);background:var(--panel);padding:18px 20px;margin:8px 0 0}
+.winner .who{font-family:"Bricolage Grotesque",sans-serif;font-size:21px;font-weight:700;
+  letter-spacing:-.022em}
+.official{margin-top:24px;padding:14px 16px;background:var(--wash);
+  border-left:3px solid var(--accent);font-size:12.5px;color:var(--muted)}
+.prose p{margin:0 0 14px;font-size:15px;line-height:1.7;max-width:64ch}
+.bar{display:block;height:4px;background:var(--accent);margin-top:6px}
+.cols{display:grid;grid-template-columns:1fr 300px;gap:44px;padding-top:6px;
+  align-items:start}
+.half{display:grid;grid-template-columns:1fr 1fr;gap:44px;padding-top:6px;align-items:start}
+/* Charts sit on their own white panel so the mark reads against a plain ground, not
+   against the warm paper the rest of the page uses. */
+figure{margin:16px 0 4px;background:var(--panel);border:1px solid var(--rule);
+  padding:18px 20px}
+figcaption{color:var(--muted);font-size:12px;margin-top:10px}
+svg.chart{margin:0}
+footer{border-top:2px solid var(--rule-strong);margin-top:52px;padding-top:18px;
+  color:var(--muted);font-size:12.5px}
+footer p{margin:0 0 6px;max-width:78ch}
+@media(max-width:860px){
+  .wrap{padding:0 20px 44px}
+  .title{margin:0 -20px;padding:28px 20px 24px;grid-template-columns:1fr;gap:22px}
+  .cols,.half{grid-template-columns:1fr;gap:28px}
+}
+"""
+
+HEAD = """<!doctype html>
+<html lang="{lang}"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{title}</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="{site}{path}">
+{alts}
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2718%27 fill=%27%23c4472a%27/%3E%3Ctext x=%2750%27 y=%2773%27 font-size=%2762%27 font-family=%27Arial,sans-serif%27 font-weight=%27800%27 fill=%27%23fbfaf7%27 text-anchor=%27middle%27%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="{base}/fonts/LibreFranklin-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{base}/fonts/BricolageGrotesque-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{base}/style.css">
+{verify}</head><body>
+<div class="wrap">
+<div class="masthead"><a class="name" href="{base}/{lang}/">{sitename}</a>
+<span class="eyebrow">{kicker}</span></div>
+<nav class="langs" aria-label="{langlabel}">{langnav}</nav>
+<main>
+"""
+
+# The first footer line says "not official" in the READER's language. simap's §5
+# notice must stay verbatim — which means German — so on its own it protected nobody
+# who reads only French, Italian or English: the audit found the byte-identical German
+# string on all four language versions, making the "it plainly says so" defence false
+# on three of them. The verbatim notice keeps its lang="de" so screen readers switch.
+FOOT = """</main><footer><p>{notoff}</p>
+<p lang="de">{disc}</p>
+<p>{srcnote}</p>
+<p>{source}: <a href="https://www.simap.ch">simap.ch</a> — {official}. {asof} {today} ·
+<a href="{imphref}">{implabel}</a></p>
+</footer></div></body></html>"""
+
+
+SECTIONS = {"unternehmen": "companies", "auftraggeber": "buyers",
+            "kanton": "cantons", "bereich": "sectors", "auftrag": "contracts",
+            "ausschreibungen": "tenders"}
+
+# Sections that actually have an index page. /auftrag/ deliberately has none — 14,987
+# awards do not belong in one alphabetical list, and the sitemap already carries them —
+# so a breadcrumb must not claim that level: it would point at a 404 and Google reads
+# breadcrumbs as a promise about the site's shape.
+INDEXED = {"unternehmen", "auftraggeber", "kanton", "bereich", "ausschreibungen"}
+
+
+def breadcrumbs(path: str, leaf: str) -> str:
+    """Schema.org trail, so a result shows Register > Unternehmen > HOLINGER AG rather
+    than a bare URL. Only claims the structure the site actually has."""
+    parts = [x for x in path.strip("/").split("/") if x]
+    if parts and parts[0] in LANGS:
+        parts = parts[1:]
+    crumbs = [{"@type": "ListItem", "position": 1, "name": _.register,
+               "item": f"{ORIGIN}/{LANG}/"}]
+    if parts:
+        sec = parts[0]
+        pos = 2
+        if sec in INDEXED:
+            crumbs.append({"@type": "ListItem", "position": pos,
+                           "name": lingue.t(SECTIONS.get(sec, "register"), LANG),
+                           "item": f"{ORIGIN}/{LANG}/{sec}/"})
+            pos += 1
+        if len(parts) > 1:
+            crumbs.append({"@type": "ListItem", "position": pos, "name": leaf,
+                           "item": ORIGIN + path})
+    return ('<script type="application/ld+json">'
+            + json.dumps({"@context": "https://schema.org", "@type": "BreadcrumbList",
+                          "itemListElement": crumbs}, ensure_ascii=False)
+            + "</script>")
+
+
+def lang_path(path: str, lang: str) -> str:
+    """The same page in another language: only the language segment changes."""
+    parts = [x for x in path.strip("/").split("/") if x]
+    if parts and parts[0] in LANGS:
+        parts[0] = lang
+    else:
+        parts = [lang] + parts
+    return "/" + "/".join(parts) + "/"
+
+
+def page(title: str, desc: str, body: str, path: str, kicker: str = "",
+         leaf: str = "") -> str:
+    # hreflang tells the search engine these are one page in four languages, not four
+    # pages competing with each other for the same query.
+    alts = "\n".join(
+        f'<link rel="alternate" hreflang="{l}" href="{ORIGIN}{lang_path(path, l)}">'
+        for l in LANGS) + f'\n<link rel="alternate" hreflang="x-default" href="{ORIGIN}/">'
+    nav = "".join(
+        (f'<span class="on">{e(NAMES[l])}</span>' if l == LANG
+         else f'<a href="{BASE}{lang_path(path, l)}">{e(NAMES[l])}</a>') for l in LANGS)
+    return (HEAD.format(title=e(title), desc=e(desc), site=ORIGIN, base=BASE, path=path,
+                        kicker=e(kicker or _.register), lang=LANG, alts=alts,
+                        verify=VERIFY,
+                        sitename=e(_.site), langnav=nav, langlabel=e(_.language))
+            + breadcrumbs(path, leaf or title.split(" — ")[0])
+            + body + FOOT.format(disc=e(DISCLAIMER), today=TODAY,
+                                 notoff=e(_p.not_official),
+                                 imphref=f"{BASE}/{LANG}/impressum/",
+                                 implabel=e(_.imprint),
+                                 srcnote=e(_p.translation_note), source=e(_.source),
+                                 asof=e(_.as_of), official=e(_p.source_note)))
+
+
+def write(path: str, content: str) -> None:
+    f = OUT / path.lstrip("/")
+    f.parent.mkdir(parents=True, exist_ok=True)
+    f.write_text(content, encoding="utf-8")
+
+
+# --------------------------------------------------------------- the analysis
+
+def profile(awards: list) -> dict:
+    """One record per company, built only from what the publications actually say.
+
+    Keyed by SLUG, not by the raw name: the register spells the same firm several ways
+    ("CSD INGENIEURE AG" and "CSD Ingenieure AG", "Bolliger & Co. AG" and
+    "Bolliger + Co. AG"), and keying by name made each variant its own company writing
+    to the same file — so the second silently overwrote the first and half that firm's
+    awards vanished from its page. The spelling shown is the one the register uses most
+    often for that firm.
+    """
+    comp = {}
+    variants: dict[str, collections.Counter] = {}
+    for a in awards:
+        ws = winners(a)
+        for raw in ws:
+            n = slug(raw)
+            variants.setdefault(n, collections.Counter())[raw] += 1
+            c = comp.setdefault(n, {"awards": [], "value": 0.0, "amounts": [],
+                                    "cpv": collections.Counter(), "cant": collections.Counter(),
+                                    "buyers": collections.Counter(), "sig": set()})
+            c["awards"].append(a)
+            p = chf_amount(a)
+            # a joint award names several firms for one price; splitting it would
+            # invent a figure the register never published
+            if p is not None and len(ws) == 1:
+                c["value"] += p
+                c["amounts"].append(p)
+            if a.get("cpvCode"):
+                c["cpv"][(str(a["cpvCode"]), cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") or "")] += 1
+                c["sig"].add(sig(a["cpvCode"]))
+            if a.get("canton"):
+                c["cant"][a["canton"]] += 1
+            if a.get("buyerName"):
+                c["buyers"][a["buyerName"]] += 1
+    for n, c in comp.items():
+        c["name"] = variants[n].most_common(1)[0][0]
+    return comp
+
+
+def matches(comp: dict, opens: list) -> dict:
+    """Open tenders that match a company's own record.
+
+    Weighted by how specific the CPV code is: 45000000 "Bauarbeiten" is not a category
+    but the absence of one, so matching on it offers a cabling firm a football pitch.
+    Four significant digits in common is the floor.
+    """
+    out = {}
+    for name, c in comp.items():
+        scored = []
+        for t in opens:
+            if not t.get("cpvCode"):
+                continue
+            ts, best = sig(t["cpvCode"]), 0
+            for cs in c["sig"]:
+                k = 0
+                while k < min(len(cs), len(ts)) and cs[k] == ts[k]:
+                    k += 1
+                best = max(best, k)
+            if best >= 4:
+                scored.append((best + (1 if t.get("canton") in c["cant"] else 0), t))
+        if scored:
+            out[name] = [t for _, t in sorted(scored, key=lambda x: -x[0])[:6]]
+    return out
+
+
+def per_month(rows: list) -> dict:
+    """Publication counts by month — the dimension the tables do not carry."""
+    c = collections.Counter((r.get("publicationDate") or "")[:7] for r in rows
+                            if (r.get("publicationDate") or "")[:7])
+    if not c:
+        return {}
+    keys = sorted(c)
+    # fill the gaps: a month with no awards is a fact, and leaving it out would
+    # squeeze the axis and quietly imply activity that was not there
+    out, y, m = {}, int(keys[0][:4]), int(keys[0][5:7])
+    ly, lm = int(keys[-1][:4]), int(keys[-1][5:7])
+    while (y, m) <= (ly, lm):
+        out[f"{y:04d}-{m:02d}"] = c.get(f"{y:04d}-{m:02d}", 0)
+        y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+    return out
+
+
+def median(xs: list) -> float:
+    xs = sorted(xs)
+    if not xs:
+        return 0.0
+    m = len(xs) // 2
+    return xs[m] if len(xs) % 2 else (xs[m - 1] + xs[m]) / 2
+
+
+# ---------------------------------------------------------------- company page
+
+def sector_pages(awards: list, floor: int = 3) -> set[str]:
+    """Which CPV codes get their own page. Computed before anything links to one:
+    linking to a page the build never writes is a 404 for the reader and a wasted
+    crawl for the search engine."""
+    n = collections.Counter(str(a["cpvCode"]) for a in awards if a.get("cpvCode"))
+    return {c for c, k in n.items() if k >= floor}
+
+
+def peers(comp: dict, keep: set[str]) -> dict:
+    """Companies that bid for the same work in the same place.
+
+    Useful to the reader — a procurement officer or a competitor comparing bidders —
+    and it links leaf pages to each other, which is how a crawler reaches the deep
+    ones. Grouped on the SIGNIFICANT CPV digits, so 45000000 does not put every
+    builder in the country in the same group.
+    """
+    groups = collections.defaultdict(list)
+    for name, c in comp.items():
+        if name not in keep or not c["cpv"]:
+            continue
+        code = sig(c["cpv"].most_common(1)[0][0][0])[:4]
+        cant = c["cant"].most_common(1)[0][0] if c["cant"] else ""
+        groups[(code, cant)].append(name)
+    out = {}
+    for (code, cant), names in groups.items():
+        if len(names) < 2:
+            continue
+        ranked = sorted(names, key=lambda n: -len(comp[n]["awards"]))
+        for n in names:
+            others = [x for x in ranked if x != n][:6]
+            if others:
+                out[n] = (others, cant)
+    return out
+
+
+def build_companies(comp: dict, open_for: dict, sectors: set[str],
+                    buyer_slugs: dict, peer_map: dict) -> dict:
+    pages = {}
+    for s, c in comp.items():
+        rows = sorted(c["awards"], key=lambda a: a.get("publicationDate") or "", reverse=True)
+        if len(rows) < MIN_AWARDS:
+            continue
+        name = c["name"]
+        years = sorted({(a.get("publicationDate") or "")[:7] for a in rows if a.get("publicationDate")})
+        span = ""
+        if years:
+            fmt = lambda y: f"{y[5:7]}/{y[:4]}"
+            span = fmt(years[0]) if len(years) == 1 else f"{fmt(years[0])} – {fmt(years[-1])}"
+        sector = c["cpv"].most_common(1)[0][0][1] if c["cpv"] else ""
+        cants = [k for k, _ in c["cant"].most_common(4)]
+
+        b = [f'<div class="title"><div><p class="eyebrow">'
+             + " · ".join(x for x in (wcut(sector, 44), canton_name_or(cants[0], cants[0]) if cants else "") if x)
+             + f'</p><h1>{e(name)}</h1>'
+             f'<p class="sum">' + e(_m("company_lead", n=zuschlag(len(rows)),
+                                       span=(f", {span}" if span else ""),
+                                       b=(_m("buyers_count_one") if len(c["buyers"]) == 1
+                                          else _m("buyers_count", k=len(c["buyers"])))))
+             + '</p></div><dl class="rail">']
+        if sector:
+            b.append(f"<dt>{_.main_sector}</dt><dd>{e(sector)}</dd>")
+        if c["cpv"]:
+            b.append(f'<dt>CPV</dt><dd class="mono">{e(c["cpv"].most_common(1)[0][0][0])}</dd>')
+        if cants:
+            b.append(f"<dt>{_.cantons}</dt><dd>" + " · ".join(e(x) for x in cants) + "</dd>")
+        b.append("</dl></div>")
+
+        b.append('<div class="figures">')
+        b.append(f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>')
+        if c["value"]:
+            b.append(f'<div class="fig money"><b>{chf(c["value"])}</b><span>{_.sum}</span></div>')
+        b.append(f'<div class="fig"><b>{len(c["buyers"])}</b><span>{_.buyers}</span></div>')
+        if len(c["amounts"]) > 1:
+            b.append(f'<div class="fig"><b>{chf(median(c["amounts"]))}</b><span>{_.median}</span></div>')
+        b.append("</div>")
+
+        tl = grafici.timeline([(a.get("publicationDate") or "", chf_amount(a) or 0)
+                               for a in rows], title=f"{name}: {zuschlag(len(rows))}")
+        if tl:
+            b.append(f'<figure>{tl}<figcaption>{e(_i.timeline_cap)}</figcaption></figure>')
+        b.append(f'<div class="sec"><div class="runhead"><span>{_.awards}</span>'
+                 f'<span>{_.chronological}</span></div><div class="scroll"><table><thead><tr>'
+                 f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.buyer}</th>'
+                 f'<th style="width:44px">{_.canton_abbr}</th><th class="r">{_.amount}</th>'
+                 "</tr></thead><tbody>")
+        for a in rows:
+            b.append(
+                f'<tr><td class="mono" style="font-size:12.5px">{e((a.get("publicationDate") or "")[:10])}</td>'
+                f'<td><a href="{BASE}/{LANG}/auftrag/{e(a.get("projectId"))}/">{e(de(a, "title")[:130])}</a></td>'
+                f'<td>{e(a.get("buyerName"))}</td><td>{e(a.get("canton"))}</td>'
+                f'<td class="r num">{e(money(a))}</td></tr>')
+        b.append("</tbody></table></div></div>")
+
+        m = open_for.get(s, [])
+        if m:
+            b.append('<div class="sec"><div class="runhead"><span>Offene Ausschreibungen '
+                     f'im selben Bereich</span><span>{len(m)}</span></div>'
+                     '<p class="sub" style="margin:10px 0 0">Laufende Ausschreibungen, deren '
+                     "CPV-Code den bisherigen Zuschlägen dieses Unternehmens entspricht.</p>"
+                     '<ul class="plain" style="margin-top:10px">')
+            for t in m:
+                b.append(f'<li><div class="row"><div><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/">'
+                         f'{e(de(t, "title")[:120])}</a><span class="sub" style="display:block;'
+                         f'margin-top:3px">{e(t.get("buyerName"))} · {e(t.get("canton"))} · '
+                         f'{e(cpv_label(t.get("cpvCode"), de(t, "cpvLabel") or t.get("cpvLabel") or "") or "")[:44]}</span></div>'
+                         f'<span class="when">{_.until} {e(dmyy(t.get("offerDeadline") or ""))}</span>'
+                         "</div></li>")
+            b.append("</ul></div>")
+
+        if c["cpv"]:
+            b.append(f'<div class="sec"><div class="runhead"><span>{_.activities}</span>'
+                     f'<span>{len(c["cpv"])}</span></div><ul class="plain">')
+            for (code, label), k in c["cpv"].most_common(8):
+                cell = (f'<a href="{BASE}/{LANG}/bereich/{e(code)}/">{e(label)}</a>' if code in sectors
+                        else e(label))
+                b.append(f'<li><div class="row">{cell}'
+                         f'<span class="sub num">{zuschlag(k)}</span></div></li>')
+            b.append("</ul></div>")
+
+        if c["buyers"]:
+            b.append(f'<div class="sec"><div class="runhead"><span>{_.buyers}</span>'
+                     f'<span>{len(c["buyers"])}</span></div><div class="tags">')
+            for bu, k in c["buyers"].most_common(12):
+                hit = buyer_slugs.get(norm_buyer(bu))
+                b.append(f'<a class="tag" href="{BASE}/{LANG}/auftraggeber/{e(hit[0])}/">'
+                         f'{e(hit[1][:52])} · {k}</a>' if hit
+                         else f'<span class="tag">{e(bu[:52])} · {k}</span>')
+            b.append("</div></div>")
+
+        pr = peer_map.get(s)
+        if pr:
+            others, cant = pr
+            b.append(f'<div class="sec"><div class="runhead"><span>{e(_p.peers)}'
+                     f'</span><span>{e(canton_name_or(cant, cant))}</span></div>'
+                     '<ul class="plain">')
+            for o in others:
+                oc = comp[o]
+                b.append(f'<li><div class="row"><a href="{BASE}/{LANG}/unternehmen/{e(o)}/">{e(oc["name"])}</a>'
+                         f'<span class="sub num">{zuschlag(len(oc["awards"]))}</span></div></li>')
+            b.append("</ul></div>")
+
+        desc = _m("company_desc", name=name, n=zuschlag(len(rows)),
+                  val=(f", {chf(c['value'])} CHF" if c["value"] else ""),
+                  span=(f", {span}" if span else ""))
+        pages[s] = {"name": name, "n": len(rows), "value": c["value"],
+                    "cant": cants[0] if cants else "", "sector": sector}
+        write(f"/{LANG}/unternehmen/{s}/index.html",
+              page(fit_title(name, _m("company_title")), desc[:180],
+                   "\n".join(b), f"/{LANG}/unternehmen/{s}/", _.companies))
+    return pages
+
+
+# ----------------------------------------------------------------- award page
+
+def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
+                 buyer_slugs: dict) -> int:
+    by_project = {}
+    for a in awards:
+        by_project.setdefault(a.get("projectId"), {})["award"] = a
+    for t in opens:
+        by_project.setdefault(t.get("projectId"), {})["open"] = t
+    # A first pass over the titles, because uniqueness is not a property any single
+    # page can see. Truncation alone got the duplicates from 3,036 pages down to 712,
+    # and the rest genuinely share a title — twelve awards read only "BKP 211
+    # Baumeisterarbeiten". Knowing which ones collide is what lets the distinguisher
+    # be added only where it earns its space.
+    heads: dict[str, str] = {}
+    for pid, rec in by_project.items():
+        if not pid:
+            continue
+        src = rec.get("open") or rec.get("award")
+        t = de(src, "title")
+        if t:
+            heads[pid] = fit_title(t, "")
+    clash = {h for h, k in collections.Counter(heads.values()).items() if k > 1}
+
+    n = 0
+    for pid, rec in by_project.items():
+        if not pid:
+            continue
+        src = rec.get("open") or rec.get("award")
+        aw = rec.get("award")
+        title = de(src, "title")
+        if not title:
+            continue
+        is_open = "open" in rec
+        award = (aw or {}).get("award") or {}
+
+        b = [f'<div class="title"><div><span class="state"><i></i>'
+             + (_.tender_open if is_open else _.award_granted)
+             + f'</span><h1 style="margin-top:12px;font-size:clamp(24px,3.4vw,34px)">'
+             f'{e(title)}</h1></div><dl class="rail">']
+        if src.get("publicationNumber"):
+            b.append(f'<dt>{_.publication}</dt><dd class="mono">{e(src["publicationNumber"])}</dd>')
+        if src.get("publicationDate"):
+            b.append(f'<dt>{_.published_on}</dt><dd class="mono">{e(src["publicationDate"][:10])}</dd>')
+        if src.get("processType"):
+            b.append(f"<dt>{_.procedure}</dt><dd>{e(_e('processType', src['processType']))}</dd>")
+        b.append("</dl></div>")
+
+        figs = []
+        if is_open and src.get("offerDeadline"):
+            figs.append(f'<div class="fig"><b>{e(src["offerDeadline"][:10])}</b>'
+                        f"<span>{_.deadline}</span></div>")
+        if aw and aw.get("winnerPrice"):
+            figs.append(f'<div class="fig"><b>{money(aw)}</b>'
+                        f"<span>{_.sum}</span></div>")
+        if award.get("numberOfSubmissions"):
+            figs.append(f'<div class="fig"><b>{e(award["numberOfSubmissions"])}</b>'
+                        f"<span>{_.offers}</span></div>")
+        if src.get("canton"):
+            figs.append(f'<div class="fig"><b>{e(src["canton"])}</b><span>{_.canton}</span></div>')
+        if figs:
+            b.append('<div class="figures">' + "".join(figs) + "</div>")
+
+        b.append('<div class="cols"><div class="prose">')
+        ws = winners(aw) if aw else []
+        if ws:
+            b.append(f'<div class="runhead"><span>{_.award}</span>'
+                     f'<span>{plural(len(ws), *lingue.WINNER[LANG])}</span></div>')
+            for w in ws:
+                s = slug(w)
+                known = pages.get(s)
+                link = (f'<a href="{BASE}/{LANG}/unternehmen/{e(s)}/" class="who">{e(w)}</a>'
+                        if known else f'<span class="who">{e(w)}</span>')
+                extra = []
+                if aw.get("winnerPrice") and len(ws) == 1:
+                    extra.append(money(aw) + (" CHF" if not (aw.get("winnerCurrency")
+                                  or "CHF").strip().upper() != "CHF" else ""))
+                if known:
+                    extra.append(f'{zuschlag(known["n"])} {_.in_register}')
+                b.append(f'<div class="winner">{link}'
+                         + (f'<div class="sub" style="margin-top:5px">' + " · ".join(extra)
+                            + "</div>" if extra else "") + "</div>")
+        if award.get("justification"):
+            b.append(f'<h2 style="margin:34px 0 12px">{_.reason}</h2><p>'
+                     + e(award["justification"][:1500]) + "</p>")
+        body_txt = de(src, "description")
+        if body_txt:
+            b.append(f'<h2 style="margin:30px 0 12px">{_.description}</h2><p>'
+                     + e(body_txt[:1600]) + "</p>")
+        if src.get("simapUrl"):
+            link = (f'<a href="{e(src["simapUrl"])}">'
+                    + e(lingue.p("view_on_simap", LANG).format(n=src.get("projectNumber") or ""))
+                    + "</a>")
+            b.append('<div class="official">'
+                     + e(_p.official_link).replace("{link}", link) + "</div>")
+        b.append("</div><div>")
+
+        b.append(f'<div class="runhead"><span>{_.details}</span><span></span></div>'
+                 '<div class="scroll"><table><tbody>')
+        cpv = f'<span class="mono">{e(src.get("cpvCode") or "")}</span>' + (
+            "<br>" + e(cpv_label(src.get("cpvCode"), de(src, "cpvLabel") or src.get("cpvLabel") or "") or "")
+            if (src.get("cpvLabel") or de(src, "cpvLabel")) else "")
+        hit = buyer_slugs.get(norm_buyer(src.get("buyerName") or ""))
+        buyer_cell = (f'<a href="{BASE}/{LANG}/auftraggeber/{e(hit[0])}/">{e(hit[1])}</a>'
+                      if hit else e(src.get("buyerName")))
+        for label, val in [(_.buyer, buyer_cell if src.get("buyerName") else ""),
+                           (_.place, e(src.get("city"))),
+                           (_.canton, e(canton_name_or(src.get("canton"), src.get("canton") or ""))),
+                           (_.type, e(_e("orderType", src.get("orderType")))),
+                           ("CPV", cpv if src.get("cpvCode") else ""),
+                           (_.treaty, e(_e("bool", src.get("stateContractArea"))))]:
+            if val:
+                b.append(f'<tr><th style="width:112px;text-transform:none;letter-spacing:0;'
+                         f'font-size:13px;font-weight:500;border-bottom:1px solid var(--rule);'
+                         f'padding:9px 12px 9px 0">{label}</th><td>{val}</td></tr>')
+        b.append("</tbody></table></div>")
+        links = []
+        if src.get("canton"):
+            links.append(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(src["canton"])}/">'
+                         f'{e(_if("contracts_in", c=src["canton"]))}</a>')
+        if str(src.get("cpvCode") or "") in sectors:
+            links.append(f'<a class="tag" href="{BASE}/{LANG}/bereich/{e(src["cpvCode"])}/">{e(_i.same_sector)}</a>')
+        if links:
+            b.append('<div class="tags">' + "".join(links) + "</div>")
+        b.append("</div></div>")
+
+        desc = f"{title[:110]} — {src.get('buyerName') or ''}"
+        if is_open and src.get("offerDeadline"):
+            desc += f", Eingabefrist {src['offerDeadline'][:10]}"
+        elif aw and aw.get("winnerPrice"):
+            desc += f", {_.award} {money(aw)}" + (f" — {ws[0]}" if ws else "")
+        # Some award titles are genuinely identical — twelve read only "BKP 211
+        # Baumeisterarbeiten". No amount of clever truncation separates those, so the
+        # title carries who won: it is what distinguishes the page and what a reader
+        # searching for a firm's public work would type.
+        who = ws[0] if ws else (src.get("buyerName") or "")
+        if heads.get(pid) in clash:
+            # this one would otherwise be indistinguishable: trade the title's tail for
+            # the name, and fall back to the publication number when even that repeats
+            head = f"{who} · {title}" if who else f"{title} · {src.get('publicationNumber') or pid[:8]}"
+        else:
+            head = f"{title} · {who}" if who and len(title) < 46 else title
+        write(f"/{LANG}/auftrag/{pid}/index.html",
+              page(fit_title(head, _m("tender_suffix") if is_open else _m("award_suffix")),
+                   desc[:180], "\n".join(b), f"/{LANG}/auftrag/{pid}/",
+                   _.tenders if is_open else _.award))
+        n += 1
+    return n
+
+
+# ------------------------------------------------------------------ buyer page
+
+def buyer_map(awards: list, floor: int = 3) -> dict:
+    """key -> (slug, display name), decided once so every link agrees with the page.
+
+    Computed before anything is written: a company page, an award page and the buyer
+    page itself all have to resolve the same authority to the same URL, and deriving
+    the slug separately in each builder is how they drifted apart.
+    """
+    counts: dict[str, int] = collections.Counter()
+    spell: dict[str, collections.Counter] = {}
+    for a in awards:
+        b = a.get("buyerName")
+        if not b:
+            continue
+        k = norm_buyer(b)
+        counts[k] += 1
+        spell.setdefault(k, collections.Counter())[" ".join(b.split())] += 1
+    taken: dict[str, str] = {}
+    out: dict[str, tuple] = {}
+    for k in sorted(counts, key=lambda x: (-counts[x], x)):
+        name = spell[k].most_common(1)[0][0]
+        base_sl = slug(name)
+        sl = base_sl
+        if taken.get(sl, k) != k:
+            sl = f"{base_sl[:62]}-{abs(hash(k)) % 9973:04d}"
+        taken[sl] = k
+        out[k] = (sl, name, counts[k])
+    return {k: v for k, v in out.items() if v[2] >= floor}
+
+
+def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
+                 bmap: dict, floor: int = 3) -> list:
+    """A page per contracting authority. "Welche Aufträge hat die Gemeinde X
+    vergeben" is a proper-name search with a real reader behind it — a resident, a
+    journalist, a competitor — and no site answers it today."""
+    by = collections.defaultdict(list)
+    for a in awards:
+        if a.get("buyerName"):
+            by[norm_buyer(a["buyerName"])].append(a)
+    out = []
+    for key, rows in sorted(by.items(), key=lambda kv: -len(kv[1])):
+        if key not in bmap:
+            continue
+        # never unpack into _ here: `_` is the translation accessor, and shadowing it
+        # replaces every label on the page with an integer
+        sl, name, _n = bmap[key]
+        total = sum(chf_amount(a) or 0 for a in rows)
+        table, nfirms = firm_table(rows, comp, pages, limit=40)
+        cants = collections.Counter(a["canton"] for a in rows if a.get("canton"))
+        sect = collections.Counter(
+            (de(a, "cpvLabel") or a.get("cpvLabel") or "", str(a.get("cpvCode") or ""))
+            for a in rows if a.get("cpvCode"))
+        cant = cants.most_common(1)[0][0] if cants else ""
+        b = [f'<div class="title"><div><p class="eyebrow">{_.buyer}'
+             + (f" · {e(canton_name_or(cant, cant))}" if cant else "") + f'</p><h1>{e(name)}</h1>'
+             f'<p class="sum">' + e(_m("buyer_lead", n=zuschlag(len(rows)), f=nfirms))
+             + '</p></div><dl class="rail">'
+             + (f"<dt>{_.canton}</dt><dd>{e(cant)}</dd>" if cant else "")
+             + f"<dt>{_.companies}</dt><dd>{nfirms}</dd></dl></div>",
+             '<div class="figures">',
+             f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>',
+             f'<div class="fig"><b>{nfirms}</b><span>{_.companies}</span></div>']
+        if total:
+            b.append(f'<div class="fig money"><b>{chf_big(total)}</b><span>{_.sum}</span></div>')
+        b.append("</div>")
+        b.append(f'<div class="half"><div><div class="runhead"><span>{_.companies}</span>'
+                 f'<span>{_.by_awards}</span></div>' + table + "</div><div>")
+        b.append(f'<div class="runhead"><span>{_.sectors}</span><span>CPV</span></div>'
+                 + grafici.bars([(lab, k) for (lab, _c), k in sect.most_common(8)],
+                                unit=_.awards, title=_i.sectors_cap)
+                 + '<ul class="plain">')
+        for (label, code), k in sect.most_common(8):
+            cell = (f'<a href="{BASE}/{LANG}/bereich/{e(code)}/">{e(label[:48])}</a>' if code in sectors
+                    else e(label[:48]))
+            b.append(f'<li><div class="row">{cell}<span class="sub num">{k}</span></div></li>')
+        b.append("</ul></div></div>")
+        col = grafici.columns(sorted(per_month(rows).items()), title=_i.volume_cap)
+        if col:
+            b.append(f'<figure>{col}<figcaption>{e(_i.volume_cap)}</figcaption></figure>')
+        b.append(f'<div class="sec"><div class="runhead"><span>{_.awards}</span>'
+                 f"<span>{_.chronological}</span></div><div class=\"scroll\"><table><thead><tr>"
+                 f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.award}</th>'
+                 f'<th class="r">{_.amount}</th></tr></thead><tbody>')
+        for a in sorted(rows, key=lambda x: x.get("publicationDate") or "", reverse=True)[:60]:
+            ws = winners(a)
+            who = " · ".join(
+                (f'<a href="{BASE}/{LANG}/unternehmen/{e(slug(w))}/">{e(w)}</a>'
+                 if slug(w) in pages else e(w)) for w in ws) or "—"
+            b.append(f'<tr><td class="mono" style="font-size:12.5px">'
+                     f'{e((a.get("publicationDate") or "")[:10])}</td>'
+                     f'<td><a href="{BASE}/{LANG}/auftrag/{e(a.get("projectId"))}/">{e(de(a, "title")[:110])}</a></td>'
+                     f"<td>{who}</td><td class=\"r num\">{e(money(a))}</td></tr>")
+        b.append("</tbody></table></div></div>")
+        write(f"/{LANG}/auftraggeber/{sl}/index.html",
+              page(fit_title(name, _m("buyer_title")),
+                   _m("buyer_desc", name=name, n=zuschlag(len(rows)), f=nfirms),
+                   "\n".join(b), f"/{LANG}/auftraggeber/{sl}/", _.buyers))
+        out.append((sl, name, len(rows)))
+    return out
+
+
+# ------------------------------------------------------------------- the hubs
+
+def firm_table(rows: list, comp: dict, pages: dict, limit: int = 60) -> str:
+    """Companies ranked within THESE rows.
+
+    The sum is computed from the rows passed in, never from the company's global
+    total: on a buyer's page the column reads as "what this authority awarded them",
+    and a global figure there states something the register never published.
+    """
+    # Counted by slug, not by spelling: the register writes the same firm several
+    # ways, and counting the strings put it in the table twice with its awards split.
+    firms = collections.Counter()
+    sums: dict[str, float] = collections.defaultdict(float)
+    seen_name: dict[str, str] = {}
+    for r in rows:
+        ws = winners(r)
+        for w in ws:
+            k = slug(w)
+            firms[k] += 1
+            seen_name.setdefault(k, w)
+            p = chf_amount(r)
+            if p is not None and len(ws) == 1:
+                sums[k] += p
+    out = [f'<div class="scroll"><table><thead><tr><th>{_.companies}</th>'
+           f'<th class="r">{_.awards}</th><th class="r">{_.sum}</th></tr></thead><tbody>']
+    for sl, k in firms.most_common(limit):
+        label = (comp.get(sl) or {}).get("name") or seen_name.get(sl, sl)
+        cell = (f'<a href="{BASE}/{LANG}/unternehmen/{e(sl)}/">{e(label)}</a>'
+                if sl in pages else e(label))
+        out.append(f'<tr><td>{cell}</td><td class="r num">{k}</td>'
+                   f'<td class="r num">{e(chf(sums.get(sl, 0)))}</td></tr>')
+    out.append("</tbody></table></div>")
+    return "\n".join(out), len(firms)
+
+
+def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tuple[list, list]:
+    by_cant, by_cpv = collections.defaultdict(list), collections.defaultdict(list)
+    for a in awards:
+        if a.get("canton"):
+            by_cant[a["canton"]].append(a)
+        if a.get("cpvCode"):
+            by_cpv[str(a["cpvCode"])].append(a)
+
+    cant_list = sorted(by_cant.items(), key=lambda kv: -len(kv[1]))
+    nav = '<div class="tags" style="margin-top:26px;padding-top:22px;border-top:1px solid var(--rule)">' \
+          + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">{e(c)} {len(r)}</a>'
+                    for c, r in cant_list) + "</div>"
+
+    for code, rows in cant_list:
+        name = canton_name_or(code, code)
+        table, nfirms = firm_table(rows, comp, pages)
+        total = sum(chf_amount(a) or 0 for a in rows)
+        sect = collections.Counter(
+            (cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") or "", str(a.get("cpvCode") or ""))
+            for a in rows if a.get("cpvCode"))
+        top = sect.most_common(1)[0][1] if sect else 1
+        b = [f'<div class="title"><div><p class="eyebrow">{_.canton}</p><h1>{e(name)}</h1>'
+             f'<p class="sum">' + e(_m("canton_lead", n=zuschlag(len(rows)), f=nfirms))
+             + "</p></div>"
+             f'<dl class="rail"><dt>{_.abbr}</dt><dd class="mono">{e(code)}</dd>'
+             f'<dt>{_.buyers}</dt><dd>{len({a.get("buyerName") for a in rows})}</dd></dl></div>',
+             '<div class="figures">',
+             f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>',
+             f'<div class="fig"><b>{nfirms}</b><span>{_.companies}</span></div>']
+        if total:
+            b.append(f'<div class="fig money"><b>{chf_big(total)}</b><span>{_.sum}</span></div>')
+        b.append("</div>")
+        b.append(f'<div class="half"><div><div class="runhead"><span>{_.companies}</span>'
+                 f"<span>{_.by_awards}</span></div>" + table + "</div>")
+        b.append(f'<div><div class="runhead"><span>{_.sectors}</span><span>CPV</span></div>'
+                 + grafici.bars([(lab, k) for (lab, _c), k in sect.most_common(8)],
+                                unit=_.awards, title=_i.sectors_cap)
+                 + '<ul class="plain">')
+        for (label, code2), k in sect.most_common(10):
+            cell = (f'<a href="{BASE}/{LANG}/bereich/{e(code2)}/">{e(label[:52])}</a>' if code2 in sectors
+                    else e(label[:52]))
+            b.append(f'<li><div class="row">{cell}<span class="sub num">{k}</span></div>'
+                     f'<span class="bar" style="width:{max(4, round(k / top * 100))}%"></span></li>')
+        b.append("</ul></div></div>")
+        col = grafici.columns(sorted(per_month(rows).items()),
+                              title=_i.volume_cap)
+        if col:
+            b.append(f'<figure>{col}<figcaption>{e(_i.volume_cap)}</figcaption></figure>')
+        b.append(nav)
+        write(f"/{LANG}/kanton/{code}/index.html",
+              page(fit_title(_m("canton_title", name=name), _m("canton_suffix")),
+                   _m("canton_desc", n=zuschlag(len(rows)), name=name, f=nfirms),
+                   "\n".join(b), f"/{LANG}/kanton/{code}/", _.canton))
+
+    cpv_list = [(c, r) for c, r in sorted(by_cpv.items(), key=lambda kv: -len(kv[1]))
+                if c in sectors]
+    for code, rows in cpv_list:
+        label = next((cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") for a in rows
+                      if cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "")), code)
+        table, nfirms = firm_table(rows, comp, pages)
+        cants = collections.Counter(a["canton"] for a in rows if a.get("canton"))
+        b = [f'<div class="title"><div><p class="eyebrow">{_.sector} · CPV {e(code)}</p>'
+             f'<h1>{e(label)}</h1><p class="sum">'
+             + e(_m("sector_lead", n=zuschlag(len(rows)), f=nfirms)) + "</p></div>"
+             f'<dl class="rail"><dt>CPV</dt><dd class="mono">{e(code)}</dd>'
+             f'<dt>{_.cantons}</dt><dd>{len(cants)}</dd></dl></div>',
+             '<div class="figures">',
+             f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>',
+             f'<div class="fig"><b>{nfirms}</b><span>{_.companies}</span></div>',
+             f'<div class="fig"><b>{len(cants)}</b><span>{_.cantons}</span></div></div>',
+             f'<div class="sec"><div class="runhead"><span>{_.companies}</span>'
+             f"<span>{_.by_awards}</span></div>" + table + "</div>",
+             (lambda g: f'<figure>{g}<figcaption>{e(_i.volume_cap)}</figcaption></figure>'
+              if g else "")(grafici.columns(sorted(per_month(rows).items()),
+                                            title=_i.volume_cap)),
+             '<div class="tags" style="margin-top:24px">'
+             + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">{e(c)} {k}</a>'
+                       for c, k in cants.most_common(14)) + "</div>"]
+        write(f"/{LANG}/bereich/{code}/index.html",
+              page(fit_title(label, _m("sector_suffix", code=code)),
+                   _m("sector_desc", n=zuschlag(len(rows)), label=label, f=nfirms),
+                   "\n".join(b), f"/{LANG}/bereich/{code}/", _.sectors))
+    return cant_list, cpv_list
+
+
+# ------------------------------------------------------------- open tenders
+
+SHOWN = 400            # rows on the all-tenders index; the rest live on the canton pages
+
+
+def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
+    """The open tenders, whole and by canton.
+
+    This is the part with intent behind it: someone searching for current tenders is
+    looking to bid, not to browse. The pages carry the deadline first, because that is
+    the fact that decides whether the rest matters.
+    """
+    def table(rows: list) -> str:
+        out = [f'<div class="scroll"><table><thead><tr><th style="width:104px">{_.deadline}</th>'
+               f'<th>{_.tenders}</th><th>{_.buyer}</th><th style="width:44px">{_.canton_abbr}</th>'
+               "</tr></thead><tbody>"]
+        for t in sorted(rows, key=lambda x: x.get("offerDeadline") or "9999"):
+            out.append(
+                f'<tr><td class="when mono" style="font-size:12.5px">'
+                f'{e(dmyy(t.get("offerDeadline") or ""))}</td>'
+                f'<td><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/">{e(de(t, "title")[:120])}</a>'
+                + (f'<span class="sub" style="display:block;margin-top:2px">'
+                   f'{e((cpv_label(t.get("cpvCode"), de(t, "cpvLabel") or t.get("cpvLabel") or "") or "")[:60])}</span>'
+                   if (t.get("cpvLabel") or de(t, "cpvLabel")) else "")
+                + f'</td><td>{e(t.get("buyerName"))}</td><td>{e(t.get("canton"))}</td></tr>')
+        out.append("</tbody></table></div>")
+        return "\n".join(out)
+
+    by_cant = collections.defaultdict(list)
+    for t in opens:
+        if t.get("canton"):
+            by_cant[t["canton"]].append(t)
+    nav = ('<div class="tags" style="margin-top:26px;padding-top:22px;'
+           'border-top:1px solid var(--rule)">'
+           + "".join(f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/{e(c)}/">{e(c)} {len(r)}</a>'
+                     for c, r in sorted(by_cant.items(), key=lambda kv: -len(kv[1])))
+           + "</div>")
+
+    b = [f'<div class="title"><div><p class="eyebrow">{_.running}</p>'
+         f"<h1>{e(_p.open_tenders_h1)}</h1>"
+         f'<p class="sum">' + e(_m("open_lead", n=len(opens))) + "</p></div>"
+         f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{TODAY}</dd>'
+         f"<dt>{_.cantons}</dt><dd>{len(by_cant)}</dd></dl></div>",
+         # sorted BEFORE slicing: taking 400 in file order and then sorting those
+         # states "the nearest deadlines" about an arbitrary subset of the 588.
+         '<div class="sec">' + table(sorted(
+             opens, key=lambda x: x.get("offerDeadline") or "9999")[:SHOWN]) + "</div>",
+         (f'<p class="sub" style="margin:12px 0 0">'
+          + e(_if("showing_n", n=SHOWN, total=len(opens))) + "</p>"
+          if len(opens) > SHOWN else ""),
+         nav]
+    write(f"/{LANG}/ausschreibungen/index.html", page(
+        _m("open_title"), _m("open_desc", n=len(opens)),
+        "\n".join(b), f"/{LANG}/ausschreibungen/", _.tenders))
+
+    for code, rows in by_cant.items():
+        name = canton_name_or(code, code)
+        b = [f'<div class="title"><div><p class="eyebrow">{_.running_canton}</p>'
+             f'<h1>{e(_m("open_canton_title", name=name))}</h1>'
+             f'<p class="sum">'
+             + e(_m("open_canton_desc", n=len(rows), name=name)) + "</p></div>"
+             f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{TODAY}</dd>'
+             f'<dt>{_.canton}</dt><dd class="mono">{e(code)}</dd></dl></div>',
+             '<div class="sec">' + table(rows) + "</div>",
+             f'<div class="tags" style="margin-top:22px">'
+             f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(code)}/">{e(_if("awarded_in", c=code))}</a>'
+             f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/">{e(_i.all_open)}</a></div>']
+        write(f"/{LANG}/ausschreibungen/{code}/index.html", page(
+            fit_title(_m("open_canton_title", name=name), " — simap"),
+            _m("open_canton_desc", n=len(rows), name=name),
+            "\n".join(b), f"/{LANG}/ausschreibungen/{code}/", _.tenders))
+    return 1 + len(by_cant)
+
+
+# --------------------------------------------------------------- section index
+
+def build_index(path: str, kicker: str, h1: str, lead: str, items: list,
+                title: str, desc: str) -> None:
+    """The root of each section. Without one the URL is a 404 in production (the local
+    server's directory listing hides this), and the leaves lose their nearest hub."""
+    groups = collections.defaultdict(list)
+    for sl, name, n in items:
+        first = (name.strip()[:1] or "#").upper()
+        groups["0–9" if first.isdigit() else (first if first.isalpha() else "#")].append(
+            (sl, name, n))
+    b = [f'<div class="title"><div><p class="eyebrow">{e(kicker)}</p><h1>{e(h1)}</h1>'
+         f'<p class="sum">{e(lead)}</p></div>'
+         f'<dl class="rail"><dt>{_.entries}</dt><dd class="num">{len(items)}</dd></dl></div>']
+    letters = sorted(groups)
+    b.append('<div class="tags" style="margin:22px 0 0">'
+             + "".join(f'<a class="tag" href="#{e(g)}">{e(g)}</a>' for g in letters) + "</div>")
+    for g in letters:
+        rows = sorted(groups[g], key=lambda x: x[1].lower())
+        b.append(f'<div class="sec" id="{e(g)}"><div class="runhead"><span>{e(g)}</span>'
+                 f'<span>{len(rows)}</span></div><ul class="plain">')
+        for sl, name, n in rows:
+            b.append(f'<li><div class="row"><a href="/{LANG}{path}{e(sl)}/">{e(name)}</a>'
+                     f'<span class="sub num">{zuschlag(n)}</span></div></li>')
+        b.append("</ul></div>")
+    write(f"/{LANG}{path}index.html", page(title, desc, "\n".join(b), f"/{LANG}{path}", kicker))
+
+
+# ------------------------------------------------------------- home & sitemap
+
+def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cpv_list) -> None:
+    total = sum(chf_amount(a) or 0 for a in awards)
+    months = sorted({(a.get("publicationDate") or "")[:7] for a in awards if a.get("publicationDate")})
+    span = ""
+    if months:
+        fmt = lambda m: f"{m[5:7]}/{m[:4]}"
+        span = fmt(months[0]) if len(months) == 1 else f"{fmt(months[0])} – {fmt(months[-1])}"
+    firms = collections.Counter(slug(w) for a in awards for w in winners(a))
+    soon = sorted((t for t in opens if t.get("offerDeadline")),
+                  key=lambda t: t["offerDeadline"])[:8]
+
+    b = [f'<div class="title"><div><h1>{e(_p.tagline)}</h1>'
+         f'<p class="sum">{e(_p.lead)}</p></div>'
+         f'<dl class="rail"><dt>{_.source}</dt><dd>{e(_p.source_note)}</dd>'
+         + (f"<dt>{_.period}</dt><dd>{e(span)}</dd>" if span else "")
+         + f"<dt>{_.updated}</dt><dd>{e(TODAY)}</dd></dl></div>",
+         '<div class="figures">',
+         f'<div class="fig"><b>{chf(len(awards))}</b><span>{_.awards}</span></div>',
+         f'<div class="fig"><b>{chf(len(firms))}</b><span>{_.companies}</span></div>']
+    if total:
+        b.append(f'<div class="fig money"><b>{chf_big(total)}</b><span>{_.sum_published}</span></div>')
+    b.append(f'<div class="fig"><b>{chf(len(opens))}</b><span>{_.tenders}</span></div>'
+             "</div>")
+
+    b.append('<div class="cols"><div>'
+             f'<div class="runhead"><span>{_.companies}</span>'
+             f'<span>{e(span)}</span></div>'
+             '<div class="scroll"><table><thead><tr><th style="width:34px"></th>'
+             f'<th>{_.companies}</th><th style="width:46px">{_.canton_abbr}</th>'
+             f'<th class="r">{_.awards}</th><th class="r">{_.sum}</th></tr></thead><tbody>')
+    rank = [(s, p) for s, p in sorted(pages.items(), key=lambda kv: (-kv[1]["n"], -kv[1]["value"]))][:25]
+    for i, (s, p) in enumerate(rank, 1):
+        b.append(f'<tr><td class="sub num">{i:02d}</td><td>'
+                 f'<a href="{BASE}/{LANG}/unternehmen/{e(s)}/">{e(p["name"])}</a>'
+                 + (f'<span class="sub" style="display:block;margin-top:2px">'
+                    f'{e(p["sector"][:46])}</span>' if p["sector"] else "")
+                 + f'</td><td>{e(p["cant"])}</td><td class="r num">{p["n"]}</td>'
+                 f'<td class="r num">{e(chf(p["value"]))}</td></tr>')
+    b.append("</tbody></table></div></div><div>")
+
+    if soon:
+        b.append(f'<div class="runhead"><span>{_i.next_deadlines}</span>'
+                 f'<span>{_if("open_count", n=len(opens))}</span></div><ul class="plain">')
+        for t in soon:
+            b.append(f'<li><div class="row"><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/">'
+                     f'{e(de(t, "title")[:66])}</a>'
+                     f'<span class="when">{e(dmy(t["offerDeadline"]))}</span>'
+                     "</div></li>")
+        b.append("</ul>")
+    b.append(f'<div class="runhead" style="margin-top:28px"><span>{_i.by_canton}</span>'
+             f'<span>{len(cant_list)}</span></div><div class="tags">'
+             + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">{e(c)} {len(r)}</a>'
+                       for c, r in cant_list[:16]) + "</div>")
+    b.append(f'<div class="runhead" style="margin-top:28px"><span>{_i.by_sector}</span>'
+             f'<span>{len(cpv_list)}</span></div><ul class="plain">')
+    for code, rows in cpv_list[:8]:
+        label = next((cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") for a in rows
+                      if cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "")), code)
+        b.append(f'<li><div class="row"><a href="{BASE}/{LANG}/bereich/{e(code)}/">{e(label[:40])}</a>'
+                 f'<span class="sub num">{len(rows)}</span></div></li>')
+    b.append("</ul></div></div>")
+
+    b.append('<div class="tags" style="margin-top:32px;padding-top:22px;'
+             'border-top:1px solid var(--rule)">'
+             f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/">{e(_p.open_tenders_h1)}</a>'
+             f'<a class="tag" href="{BASE}/{LANG}/unternehmen/">{e(_i.all_companies)}</a>'
+             f'<a class="tag" href="{BASE}/{LANG}/auftraggeber/">{e(_i.all_buyers)}</a>'
+             f'<a class="tag" href="{BASE}/{LANG}/kanton/">{e(_i.all_cantons)}</a>'
+             f'<a class="tag" href="{BASE}/{LANG}/bereich/">{e(_i.all_sectors)}</a></div>')
+    col = grafici.columns(sorted(per_month(awards).items()), title=_i.volume_cap,
+                          width=900, height=150)
+    if col:
+        b.append(f'<div class="sec"><div class="runhead"><span>{_i.volume_cap}</span>'
+                 f'<span>{chf(len(awards))}</span></div>{col}</div>')
+
+    # the one prominent notice on the home — in the reader's language, like the footer
+    b.append(f'<div class="official" style="margin-top:36px">{e(_p.not_official)}</div>')
+
+    write(f"/{LANG}/index.html", page(
+        _m("home_title"), _m("home_desc", n=chf(len(awards))),
+        "\n".join(b), f"/{LANG}/"))
+
+
+
+
+OPERATOR_NAME = "Riccardo Di Lullo"
+OPERATOR_EMAIL = "dilulloriccardo@gmail.com"     # already public in the repo history
+
+
+def build_impressum() -> None:
+    """The operator, named. Until now the only identity signal on the whole site was
+    the username inside the canonical URLs — and on a custom domain even that goes
+    away, making the site MORE anonymous exactly when it starts looking serious."""
+    imp = lingue.IMP[LANG]
+    b = [f'<div class="title"><div><p class="eyebrow">{e(_.register)}</p>'
+         f'<h1>{e(imp["title"])}</h1></div><dl class="rail">'
+         f'<dt>{e(imp["operator_h"])}</dt><dd>{e(OPERATOR_NAME)}<br>'
+         f'{e(imp["operator_note"])}</dd>'
+         f'<dt>{e(imp["contact_h"])}</dt><dd><a href="mailto:{e(OPERATOR_EMAIL)}">'
+         f'{e(OPERATOR_EMAIL)}</a></dd></dl></div>',
+         '<div class="sec prose" style="padding-top:24px">']
+    for h, t in imp["paras"]:
+        b.append(f"<h2 style=\"margin:22px 0 8px\">{e(h)}</h2><p>{e(t)}</p>")
+    b.append("</div>")
+    write(f"/{LANG}/impressum/index.html", page(
+        f"{imp['title']} — {_.site}", imp["paras"][0][1][:170],
+        "\n".join(b), f"/{LANG}/impressum/", _.register, imp["title"]))
+
+
+def build_root() -> None:
+    """The root is a real page, not a redirect: it is what x-default points at, and a
+    visitor who does not read German should not be guessed at."""
+    rows = "".join(
+        f'<li><div class="row"><a href="/{l}/"><b style="font-size:17px">{e(NAMES[l])}</b>'
+        f'<span class="sub" style="display:block;margin-top:2px">'
+        f'{e(lingue.p("tagline", l))}</span></a></div></li>' for l in LANGS)
+    alts = "\n".join(f'<link rel="alternate" hreflang="{l}" href="{ORIGIN}/{l}/">'
+                     for l in LANGS) + f'\n<link rel="alternate" hreflang="x-default" href="{ORIGIN}/">'
+    body = (f'<div class="masthead"><span class="name">{e(lingue.t("site", "de"))}</span>'
+            f'<span class="eyebrow">Sprache · Langue · Lingua · Language</span></div>'
+            f'<div class="sec"><ul class="plain">{rows}</ul></div>')
+    html = (f'<!doctype html>\n<html lang="de"><head><meta charset="utf-8">'
+            f'<meta name="viewport" content="width=device-width,initial-scale=1">'
+            f'<title>{e(lingue.t("site", "de"))} — Marchés publics · Appalti · Contracts</title>'
+            f'<meta name="description" content="'
+            f'{e(lingue.m("home_desc", "de", n=""))}">'
+            f'<link rel="canonical" href="{ORIGIN}/">\n{alts}\n'
+            f'<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2718%27 fill=%27%23c4472a%27/%3E%3Ctext x=%2750%27 y=%2773%27 font-size=%2762%27 font-family=%27Arial,sans-serif%27 font-weight=%27800%27 fill=%27%23fbfaf7%27 text-anchor=%27middle%27%3EA%3C/text%3E%3C/svg%3E">'
+            f'<link rel="stylesheet" href="{BASE}/style.css">{VERIFY}</head><body><div class="wrap">'
+            f'<main>{body}</main></div></body></html>')
+    html = html.replace("</ul></div>",
+        "</ul></div>"
+        '<p style="margin-top:26px;color:var(--muted);font-size:12px">'
+        "Kein amtliches Register · Registre non officiel · "
+        "Registro non ufficiale · Not an official register</p>")
+    write("/index.html", html)
+
+
+
+
+def build_language(awards: list, opens: list) -> tuple[int, int, int, int, int, int]:
+    comp = profile(awards)
+    open_for = matches(comp, opens)
+    sectors = sector_pages(awards)
+    buyer_slugs = buyer_map(awards)
+    keep = {n for n, c in comp.items() if len(c["awards"]) >= MIN_AWARDS}
+    peer_map = peers(comp, keep)
+    pages = build_companies(comp, open_for, sectors, buyer_slugs, peer_map)
+    n_aw = build_awards(awards, opens, pages, sectors, buyer_slugs)
+    buyers = build_buyers(awards, comp, pages, sectors, buyer_slugs)
+    cant_list, cpv_list = build_hubs(awards, comp, pages, sectors)
+    n_open = build_open(opens, sectors, buyer_slugs)
+    build_index("/unternehmen/", _.companies, _i.companies_h1, _i.companies_lead,
+                [(sl, p["name"], p["n"]) for sl, p in pages.items()],
+                _i.companies_title, _if("companies_desc", n=len(pages)))
+    build_index("/auftraggeber/", _.buyers, _i.buyers_h1, _i.buyers_lead,
+                [(sl, n, k) for sl, n, k in buyers],
+                _i.buyers_title, _if("buyers_desc", n=len(buyers)))
+    build_index("/kanton/", _.cantons, _.cantons, _i.cantons_lead,
+                [(c, canton_name_or(c, c), len(r)) for c, r in cant_list],
+                _i.cantons_title, _i.cantons_desc)
+    build_index("/bereich/", _.sectors, _i.sectors_h1, _i.sectors_lead,
+                [(c, next((cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") or c for a in r
+                           if cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "")), c), len(r))
+                 for c, r in cpv_list],
+                _i.sectors_title, _i.sectors_desc)
+    build_home(pages, comp, awards, opens, cant_list, cpv_list)
+    build_impressum()
+    return (len(pages), n_aw, len(buyers), len(cant_list), len(cpv_list), n_open)
+
+
+def main() -> None:
+    global LANG
+    # docs/ is wiped every build, so the IndexNow key file — proof of ownership,
+    # served at the site root — is put back afterwards rather than lost each night.
+    keyfile = ROOT / "indexnow.key"
+    if OUT.exists():
+        shutil.rmtree(OUT)
+    awards, opens = load()
+    print(f"  dati    : {len(awards)} aggiudicazioni · {len(opens)} bandi aperti")
+    for lang in LANGS:
+        LANG = lang
+        grafici.BILLION, grafici.MILLION, grafici.DEC = lingue.BIG_UNITS[lang]
+        n = build_language(awards, opens)
+        print(f"  {lang}      : {n[0]} imprese · {n[1]} appalti · {n[2]} committenti "
+              f"· {n[3]} cantoni · {n[4]} settori · {n[5]} bandi")
+    LANG = "de"
+    build_root()
+    # Fonts are served from our own origin: the Google Fonts link both blocked first
+    # paint for ~2 seconds on mobile and sent every visitor's IP to Google — the same
+    # embedding European courts have already sanctioned. docs/ is wiped every build,
+    # so the woff2 files are copied in each time, like the CNAME and the IndexNow key.
+    fdir = ROOT / "fonts"
+    fontcss = ""
+    if fdir.exists():
+        (OUT / "fonts").mkdir(parents=True, exist_ok=True)
+        for f in fdir.glob("*.woff2"):
+            shutil.copy(f, OUT / "fonts" / f.name)
+        fontcss = (fdir / "fonts.css").read_text().replace("/fonts/", f"{BASE}/fonts/")
+    write("/style.css", fontcss + "\n" + CSS)
+    if keyfile.exists():
+        k = keyfile.read_text().strip()
+        write(f"/{k}.txt", k)
+    # Pages reads the custom domain from a CNAME file in the publish directory, and
+    # this directory is wiped on every build — so the file is emitted here, like the
+    # IndexNow key, or the nightly rebuild would silently detach the domain.
+    host = SITE.split("//", 1)[-1]
+    if not host.endswith("github.io"):
+        write("/CNAME", host + "\n")
+    # 76k files do not need a Jekyll pass; skipping it makes Pages builds faster
+    write("/.nojekyll", "")
+    print(f"  sitemap : {build_sitemap()} URL in {len(LANGS)} lingue")
+
+
+def build_sitemap() -> int:
+    """One sitemap per language plus an index.
+
+    Two limits force the split. The protocol caps a sitemap file at 50,000 URLs and
+    75,141 in one file makes Search Console reject it — a third of the register would
+    never be submitted. And every <loc> has to carry the base path: without it the
+    submission comes back "not found" for every URL, which is the whole point of the
+    site failing silently.
+    """
+    def url_of(f: pathlib.Path) -> str:
+        rel = f.relative_to(OUT).parent.as_posix()
+        return "/" if rel == "." else f"/{rel}/"
+
+    by_lang: dict[str, list[str]] = {l: [] for l in LANGS}
+    root: list[str] = []
+    for f in OUT.rglob("index.html"):
+        u = url_of(f)
+        seg = u.strip("/").split("/")[0]
+        (by_lang[seg] if seg in by_lang else root).append(u)
+
+    def doc(urls: list[str]) -> str:
+        head = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+        body = "".join(f"<url><loc>{ORIGIN}{u}</loc><lastmod>{TODAY}</lastmod></url>"
+                       for u in sorted(urls))
+        return head + body + "</urlset>"
+
+    files, total = [], 0
+    for lang in LANGS:
+        urls = by_lang[lang] + (root if lang == LANGS[0] else [])
+        assert len(urls) <= 50_000, f"sitemap-{lang}: {len(urls)} URL, il limite e' 50 000"
+        write(f"/sitemap-{lang}.xml", doc(urls))
+        files.append(f"sitemap-{lang}.xml")
+        total += len(urls)
+
+    idx = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+           '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+           + "".join(f"<sitemap><loc>{ORIGIN}/{f}</loc><lastmod>{TODAY}</lastmod></sitemap>"
+                     for f in files)
+           + "</sitemapindex>")
+    write("/sitemap.xml", idx)
+    # robots.txt sits at /auftragsregister/robots.txt on a project Pages site, where no
+    # crawler looks for it — the origin root is not ours to write. It is emitted for
+    # correctness; discovery happens through the Search Console submission.
+    write("/robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {ORIGIN}/sitemap.xml\n")
+    return total
+
+
+if __name__ == "__main__":
+    main()

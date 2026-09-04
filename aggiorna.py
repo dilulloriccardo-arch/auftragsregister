@@ -99,7 +99,26 @@ def wait_online(attempts: int = 12, wait: int = 150) -> bool:
     return False
 
 
+# simap AGB API Ziff. 5 (letta 2026-09-04 su simap.ch/de/about/legal):
+# «Die simap-Daten dürfen Dritten ab 8:00 Uhr des Erscheinungstages bekannt
+# gegeben werden.» Le pubblicazioni del giorno stesso entrano nella finestra di
+# fetch, quindi pubblicare il sito prima delle 08:00 (ora di Zurigo) viola il
+# contratto. Il job è schedulato alle 08:20; questo blocco impedisce che una
+# modifica futura dello schedule, o un lancio manuale, ripubblichi troppo presto.
+EMBARGO_ORA = 8
+
+
+def embargo_ok() -> bool:
+    now = datetime.datetime.now()
+    if now.hour >= EMBARGO_ORA:
+        return True
+    say(f"prima delle {EMBARGO_ORA}:00: i dati simap del giorno non possono "
+        f"ancora essere pubblicati (AGB API Ziff. 5) — non faccio nulla")
+    return False
+
 def main() -> int:
+    if not embargo_ok():
+        return 0
     if not wait_online():
         return 2
     today = datetime.date.today()

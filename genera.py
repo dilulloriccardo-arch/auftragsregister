@@ -550,7 +550,7 @@ FOOT = """</main><footer><p>{notoff}</p>
 <p lang="de">{disc}</p>
 <p>{srcnote}</p>
 <p>{source}: <a href="https://www.simap.ch">simap.ch</a> — {official}. {asof} {today} ·
-<a href="{imphref}">{implabel}</a></p>
+<a href="{imphref}">{implabel}</a> · <a href="{privhref}">{privlabel}</a></p>
 </footer></div></body></html>"""
 
 
@@ -619,6 +619,8 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
                                  notoff=e(_p.not_official),
                                  imphref=f"{BASE}/{LANG}/impressum/",
                                  implabel=e(_.imprint),
+                                 privhref=f"{BASE}/{LANG}/datenschutz/",
+                                 privlabel=e(_.privacy),
                                  srcnote=e(_p.translation_note), source=e(_.source),
                                  asof=e(_.as_of), official=e(_p.source_note)))
 
@@ -1460,6 +1462,27 @@ def build_impressum() -> None:
         "\n".join(b), f"/{LANG}/impressum/", _.register, imp["title"]))
 
 
+def build_privacy() -> None:
+    """A privacy notice is owed because ~3.3% of the 10,547 awardee names are natural
+    persons (sole traders), so the site processes personal data even though every field
+    it shows was already officially published. The page is one URL per language under
+    /datenschutz/ regardless of language, so the footer link needs no per-language path."""
+    pr = lingue.PRIV[LANG]
+    b = [f'<div class="title"><div><p class="eyebrow">{e(_.register)}</p>'
+         f'<h1>{e(pr["title"])}</h1></div><dl class="rail">'
+         f'<dt>{e(pr["operator_h"])}</dt><dd>{e(OPERATOR_NAME)}<br>'
+         f'{e(pr["operator_note"])}</dd>'
+         f'<dt>{e(pr["contact_h"])}</dt><dd><a href="mailto:{e(OPERATOR_EMAIL)}">'
+         f'{e(OPERATOR_EMAIL)}</a></dd></dl></div>',
+         '<div class="sec prose" style="padding-top:24px">']
+    for h, t in pr["paras"]:
+        b.append(f"<h2 style=\"margin:22px 0 8px\">{e(h)}</h2><p>{e(t)}</p>")
+    b.append("</div>")
+    write(f"/{LANG}/datenschutz/index.html", page(
+        f"{pr['title']} — {_.site}", pr["paras"][0][1][:170],
+        "\n".join(b), f"/{LANG}/datenschutz/", _.register, pr["title"]))
+
+
 def build_root() -> None:
     """The root is a real page, not a redirect: it is what x-default points at, and a
     visitor who does not read German should not be guessed at."""
@@ -1519,6 +1542,7 @@ def build_language(awards: list, opens: list) -> tuple[int, int, int, int, int, 
                 _i.sectors_title, _i.sectors_desc)
     build_home(pages, comp, awards, opens, cant_list, cpv_list)
     build_impressum()
+    build_privacy()
     return (len(pages), n_aw, len(buyers), len(cant_list), len(cpv_list), n_open)
 
 
