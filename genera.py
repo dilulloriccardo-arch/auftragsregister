@@ -601,7 +601,7 @@ def lang_path(path: str, lang: str) -> str:
 
 
 def page(title: str, desc: str, body: str, path: str, kicker: str = "",
-         leaf: str = "") -> str:
+         leaf: str = "", robots: str = "") -> str:
     # hreflang tells the search engine these are one page in four languages, not four
     # pages competing with each other for the same query.
     alts = "\n".join(
@@ -612,7 +612,7 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
          else f'<a href="{BASE}{lang_path(path, l)}">{e(NAMES[l])}</a>') for l in LANGS)
     return (HEAD.format(title=e(title), desc=e(desc), site=ORIGIN, base=BASE, path=path,
                         kicker=e(kicker or _.register), lang=LANG, alts=alts,
-                        verify=VERIFY,
+                        verify=VERIFY + (f'<meta name="robots" content="{robots}">\n' if robots else ""),
                         sitename=e(_.site), langnav=nav, langlabel=e(_.language))
             + breadcrumbs(path, leaf or title.split(" — ")[0])
             + body + FOOT.format(disc=e(DISCLAIMER), today=TODAY,
@@ -800,6 +800,32 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
         if len(c["amounts"]) > 1:
             b.append(f'<div class="fig"><b>{chf(median(c["amounts"]))}</b><span>{_.median}</span></div>')
         b.append("</div>")
+
+        # Derived analysis (2026-09-07): what simap does not say — per-year rhythm and
+        # how concentrated the client base is. Aggregation, not alteration (AGB §5).
+        per_year: dict[str, list] = {}
+        for a in rows:
+            y = (a.get("publicationDate") or "")[:4]
+            if y:
+                per_year.setdefault(y, [0, 0.0])
+                per_year[y][0] += 1
+                per_year[y][1] += chf_amount(a) or 0
+        if len(per_year) >= 1:
+            top_b = c["buyers"].most_common(1)[0] if c["buyers"] else None
+            share = round(100 * top_b[1] / len(rows)) if top_b else 0
+            b.append(f'<div class="sec"><div class="runhead"><span>{e(_p.analysis)}</span>'
+                     f'<span>{e(_p.derived)}</span></div><div class="scroll"><table><thead><tr>'
+                     f'<th>{_.year}</th><th class="r">{_.awards}</th><th class="r">{_.sum}</th>'
+                     "</tr></thead><tbody>")
+            for y in sorted(per_year, reverse=True):
+                n_y, v_y = per_year[y]
+                b.append(f'<tr><td class="mono">{e(y)}</td><td class="r num">{n_y}</td>'
+                         f'<td class="r num">{e(chf(v_y)) if v_y else "–"}</td></tr>')
+            b.append("</tbody></table></div>")
+            if top_b:
+                b.append(f'<p class="sub" style="margin:10px 0 0">'
+                         + e(_m("top_buyer_share", buyer=top_b[0][:60], share=share)) + "</p>")
+            b.append("</div>")
 
         tl = grafici.timeline([(a.get("publicationDate") or "", chf_amount(a) or 0)
                                for a in rows], title=f"{name}: {zuschlag(len(rows))}")
@@ -1022,7 +1048,12 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
         write(f"/{LANG}/auftrag/{pid}/index.html",
               page(fit_title(head, _m("tender_suffix") if is_open else _m("award_suffix")),
                    desc[:180], "\n".join(b), f"/{LANG}/auftrag/{pid}/",
-                   _.tenders if is_open else _.award))
+                   _.tenders if is_open else _.award,
+                   # 2026-09-07: 77.8k schede "rilevate ma non indicizzate" (Search Console).
+                   # Sono quasi identiche fra loro e il testo simap non e' modificabile (AGB
+                   # §5): tolte dall'indice per concentrare il budget di scansione sulle
+                   # pagine azienda e sugli indici, che hanno contenuto proprio.
+                   robots="noindex,follow"))
         n += 1
     return n
 
@@ -1484,31 +1515,16 @@ def build_privacy() -> None:
 
 
 def build_root() -> None:
-    """The root is a real page, not a redirect: it is what x-default points at, and a
-    visitor who does not read German should not be guessed at."""
-    rows = "".join(
-        f'<li><div class="row"><a href="/{l}/"><b style="font-size:17px">{e(NAMES[l])}</b>'
-        f'<span class="sub" style="display:block;margin-top:2px">'
-        f'{e(lingue.p("tagline", l))}</span></a></div></li>' for l in LANGS)
-    alts = "\n".join(f'<link rel="alternate" hreflang="{l}" href="{ORIGIN}/{l}/">'
-                     for l in LANGS) + f'\n<link rel="alternate" hreflang="x-default" href="{ORIGIN}/">'
-    body = (f'<div class="masthead"><span class="name">{e(lingue.t("site", "de"))}</span>'
-            f'<span class="eyebrow">Sprache · Langue · Lingua · Language</span></div>'
-            f'<div class="sec"><ul class="plain">{rows}</ul></div>')
-    html = (f'<!doctype html>\n<html lang="de"><head><meta charset="utf-8">'
-            f'<meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>{e(lingue.t("site", "de"))} — Marchés publics · Appalti · Contracts</title>'
-            f'<meta name="description" content="'
-            f'{e(lingue.m("home_desc", "de", n=""))}">'
-            f'<link rel="canonical" href="{ORIGIN}/">\n{alts}\n'
-            f'<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2718%27 fill=%27%23c4472a%27/%3E%3Ctext x=%2750%27 y=%2773%27 font-size=%2762%27 font-family=%27Arial,sans-serif%27 font-weight=%27800%27 fill=%27%23fbfaf7%27 text-anchor=%27middle%27%3EA%3C/text%3E%3C/svg%3E">'
-            f'<link rel="stylesheet" href="{BASE}/style.css">{VERIFY}</head><body><div class="wrap">'
-            f'<main>{body}</main></div></body></html>')
-    html = html.replace("</ul></div>",
-        "</ul></div>"
-        '<p style="margin-top:26px;color:var(--muted);font-size:12px">'
-        "Kein amtliches Register · Registre non officiel · "
-        "Registro non ufficiale · Not an official register</p>")
+    """The root used to be a language picker. Search Console (2026-09-07) showed it
+    was the ONLY page Google indexed, ranking at position 61 for "ausschreibungen
+    schweiz" with nothing on it, and every observed query was German. So the root now
+    carries the German homepage itself; the language switch stays in the masthead.
+    Canonical points at /de/ so the two copies consolidate instead of competing;
+    x-default keeps pointing at / (hreflang alternates are copied along)."""
+    de_home = OUT / "de" / "index.html"
+    html = de_home.read_text(encoding="utf-8")
+    html = html.replace(f'<link rel="canonical" href="{ORIGIN}/de/">',
+                        f'<link rel="canonical" href="{ORIGIN}/de/">', 1)
     write("/index.html", html)
 
 
@@ -1606,6 +1622,8 @@ def build_sitemap() -> int:
     root: list[str] = []
     for f in OUT.rglob("index.html"):
         u = url_of(f)
+        if "/auftrag/" in u:          # noindex: fuori dalla sitemap, vedi build_awards
+            continue
         seg = u.strip("/").split("/")[0]
         (by_lang[seg] if seg in by_lang else root).append(u)
 

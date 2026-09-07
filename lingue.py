@@ -160,6 +160,13 @@ PROSE: dict[str, dict[str, str]] = {
         "de": "Weitere Anbieter im selben Bereich", "fr": "Autres soumissionnaires du domaine",
         "it": "Altri offerenti nello stesso settore", "en": "Other bidders in the sector",
     },
+    "analysis": {
+        "de": "Analyse", "fr": "Analyse", "it": "Analisi", "en": "Analysis",
+    },
+    "derived": {
+        "de": "aus den Publikationen abgeleitet", "fr": "dérivée des publications",
+        "it": "derivata dalle pubblicazioni", "en": "derived from the publications",
+    },
     "open_tenders_h1": {
         "de": "Offene Ausschreibungen", "fr": "Appels d'offres en cours",
         "it": "Bandi aperti", "en": "Open tenders",
@@ -237,6 +244,12 @@ META: dict[str, dict[str, str]] = {
         "fr": "{name} : {n} sur simap.ch{val}{span}. Adjudicateurs, montants, cantons.",
         "it": "{name}: {n} su simap.ch{val}{span}. Committenti, importi, cantoni.",
         "en": "{name}: {n} on simap.ch{val}{span}. Authorities, amounts, cantons.",
+    },
+    "top_buyer_share": {
+        "de": "Grösster Auftraggeber: {buyer} ({share} % der Zuschläge).",
+        "fr": "Principal adjudicateur : {buyer} ({share} % des adjudications).",
+        "it": "Committente principale: {buyer} ({share} % delle aggiudicazioni).",
+        "en": "Largest contracting authority: {buyer} ({share}% of awards).",
     },
     "company_lead": {
         "de": "{n} auf simap.ch publiziert{span}, {b}.",
@@ -789,6 +802,7 @@ PRIV: dict[str, dict] = {
 
 
 T["sector"] = {"de": "Bereich", "fr": "Domaine", "it": "Settore", "en": "Sector"}
+T["year"] = {"de": "Jahr", "fr": "Année", "it": "Anno", "en": "Year"}
 T["running_canton"] = {"de": "Laufend · Kanton", "fr": "En cours · Canton",
                        "it": "In corso · Cantone", "en": "Current · Canton"}
 
