@@ -98,6 +98,9 @@ _ = _Words()
 _p = _Prose()
 MIN_AWARDS = 2          # below this a company page is thin; the record still shows in hubs
 TODAY = date.today().isoformat()
+# Data mostrata nelle pagine = data dell'ultimo dato pubblicato (non del giorno di build): cosi'
+# le pagine i cui dati non cambiano restano identiche da una notte all'altra (git, IndexNow, Google).
+DATA_DATE = TODAY
 
 CANTONS = {
     "AG": "Aargau", "AI": "Appenzell Innerrhoden", "AR": "Appenzell Ausserrhoden",
@@ -549,7 +552,7 @@ HEAD = """<!doctype html>
 FOOT = """</main><footer><p>{notoff}</p>
 <p lang="de">{disc}</p>
 <p>{srcnote}</p>
-<p>{source}: <a href="https://www.simap.ch">simap.ch</a> — {official}. {asof} {today} ·
+<p>{source}: <a href="https://www.simap.ch">simap.ch</a> — {official} ·
 <a href="{imphref}">{implabel}</a> · <a href="{privhref}">{privlabel}</a></p>
 </footer></div></body></html>"""
 
@@ -615,14 +618,14 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
                         verify=VERIFY + (f'<meta name="robots" content="{robots}">\n' if robots else ""),
                         sitename=e(_.site), langnav=nav, langlabel=e(_.language))
             + breadcrumbs(path, leaf or title.split(" — ")[0])
-            + body + FOOT.format(disc=e(DISCLAIMER), today=TODAY,
+            + body + FOOT.format(disc=e(DISCLAIMER),
                                  notoff=e(_p.not_official),
                                  imphref=f"{BASE}/{LANG}/impressum/",
                                  implabel=e(_.imprint),
                                  privhref=f"{BASE}/{LANG}/datenschutz/",
                                  privlabel=e(_.privacy),
                                  srcnote=e(_p.translation_note), source=e(_.source),
-                                 asof=e(_.as_of), official=e(_p.source_note)))
+                                 official=e(_p.source_note)))
 
 
 def write(path: str, content: str) -> None:
@@ -1318,10 +1321,25 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
                      for c, r in sorted(by_cant.items(), key=lambda kv: -len(kv[1])))
            + "</div>")
 
+    # Branche = CPV-Abteilung (erste zwei Ziffern): "45" Bauarbeiten, "71" Planung, "72" IT …
+    by_sect = collections.defaultdict(list)
+    for t in opens:
+        code2 = str(t.get("cpvCode") or "")[:2]
+        if code2.isdigit():
+            by_sect[code2].append(t)
+    def sect_name(code2: str) -> str:
+        return cpv_label(code2 + "000000", "") or e(next((de(t, "cpvLabel") or t.get("cpvLabel") or "")
+                                                          for t in by_sect[code2]) or code2)
+    sect_nav = ('<div class="tags">'
+                + "".join(f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/bereich/{e(c)}/">'
+                          f'{e(sect_name(c)[:40])} {len(r)}</a>'
+                          for c, r in sorted(by_sect.items(), key=lambda kv: -len(kv[1]))[:24])
+                + "</div>")
+
     b = [f'<div class="title"><div><p class="eyebrow">{_.running}</p>'
          f"<h1>{e(_p.open_tenders_h1)}</h1>"
          f'<p class="sum">' + e(_m("open_lead", n=len(opens))) + "</p></div>"
-         f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{TODAY}</dd>'
+         f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{DATA_DATE}</dd>'
          f"<dt>{_.cantons}</dt><dd>{len(by_cant)}</dd></dl></div>",
          # sorted BEFORE slicing: taking 400 in file order and then sorting those
          # states "the nearest deadlines" about an arbitrary subset of the 588.
@@ -1330,10 +1348,27 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
          (f'<p class="sub" style="margin:12px 0 0">'
           + e(_if("showing_n", n=SHOWN, total=len(opens))) + "</p>"
           if len(opens) > SHOWN else ""),
-         nav]
+         f'<div class="sec"><h2>{e(_m("open_by_canton_h2"))}</h2>' + nav + "</div>",
+         f'<div class="sec"><h2>{e(_m("open_by_sector_h2"))}</h2>' + sect_nav + "</div>",
+         f'<div class="sec"><h2>{e(_m("open_howto_h2"))}</h2><p>{e(_m("open_howto"))}</p></div>']
     write(f"/{LANG}/ausschreibungen/index.html", page(
-        _m("open_title"), _m("open_desc", n=len(opens)),
+        _m("open_title", n=len(opens)), _m("open_desc", n=len(opens)),
         "\n".join(b), f"/{LANG}/ausschreibungen/", _.tenders))
+
+    for code2, rows in by_sect.items():
+        name = sect_name(code2)
+        b = [f'<div class="title"><div><p class="eyebrow">{_.running}</p>'
+             f'<h1>{e(_m("open_sector_title", name=name, n=len(rows)))}</h1>'
+             f'<p class="sum">' + e(_m("open_sector_desc", n=len(rows), name=name, code=code2)) + "</p></div>"
+             f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{DATA_DATE}</dd>'
+             f'<dt>CPV</dt><dd class="mono">{e(code2)}</dd></dl></div>',
+             '<div class="sec">' + table(rows) + "</div>",
+             f'<div class="tags" style="margin-top:22px">'
+             f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/">{e(_i.all_open)}</a></div>']
+        write(f"/{LANG}/ausschreibungen/bereich/{code2}/index.html", page(
+            fit_title(_m("open_sector_title", name=name, n=len(rows)), " — simap"),
+            _m("open_sector_desc", n=len(rows), name=name, code=code2),
+            "\n".join(b), f"/{LANG}/ausschreibungen/bereich/{code2}/", _.tenders))
 
     for code, rows in by_cant.items():
         name = canton_name_or(code, code)
@@ -1341,7 +1376,7 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
              f'<h1>{e(_m("open_canton_title", name=name))}</h1>'
              f'<p class="sum">'
              + e(_m("open_canton_desc", n=len(rows), name=name)) + "</p></div>"
-             f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{TODAY}</dd>'
+             f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{DATA_DATE}</dd>'
              f'<dt>{_.canton}</dt><dd class="mono">{e(code)}</dd></dl></div>',
              '<div class="sec">' + table(rows) + "</div>",
              f'<div class="tags" style="margin-top:22px">'
@@ -1351,7 +1386,7 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
             fit_title(_m("open_canton_title", name=name), " — simap"),
             _m("open_canton_desc", n=len(rows), name=name),
             "\n".join(b), f"/{LANG}/ausschreibungen/{code}/", _.tenders))
-    return 1 + len(by_cant)
+    return 1 + len(by_cant) + len(by_sect)
 
 
 # --------------------------------------------------------------- section index
@@ -1399,7 +1434,7 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
          f'<p class="sum">{e(_p.lead)}</p></div>'
          f'<dl class="rail"><dt>{_.source}</dt><dd>{e(_p.source_note)}</dd>'
          + (f"<dt>{_.period}</dt><dd>{e(span)}</dd>" if span else "")
-         + f"<dt>{_.updated}</dt><dd>{e(TODAY)}</dd></dl></div>",
+         + f"<dt>{_.updated}</dt><dd>{e(DATA_DATE)}</dd></dl></div>",
          '<div class="figures">',
          f'<div class="fig"><b>{chf(len(awards))}</b><span>{_.awards}</span></div>',
          f'<div class="fig"><b>{chf(len(firms))}</b><span>{_.companies}</span></div>']
@@ -1570,7 +1605,9 @@ def main() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
     awards, opens = load()
-    print(f"  dati    : {len(awards)} aggiudicazioni · {len(opens)} bandi aperti")
+    global DATA_DATE
+    DATA_DATE = max(((a.get("publicationDate") or "")[:10] for a in awards), default=TODAY) or TODAY
+    print(f"  dati    : {len(awards)} aggiudicazioni · {len(opens)} bandi aperti · dati al {DATA_DATE}")
     for lang in LANGS:
         LANG = lang
         grafici.BILLION, grafici.MILLION, grafici.DEC = lingue.BIG_UNITS[lang]
@@ -1605,6 +1642,38 @@ def main() -> None:
     print(f"  sitemap : {build_sitemap()} URL in {len(LANGS)} lingue")
 
 
+
+def page_dates() -> dict[str, str]:
+    """URL -> data dell'ultima modifica reale (vedi build_sitemap). Vuoto se git non risponde."""
+    import subprocess
+    try:
+        rel = OUT.relative_to(ROOT).as_posix()
+        def url_of_rel(path: str) -> str | None:
+            if not path.startswith(rel + "/") or not path.endswith("index.html"):
+                return None
+            return "/" + path[len(rel) + 1:-len("index.html")]
+        out: dict[str, str] = {}
+        st = subprocess.run(["git", "status", "--porcelain", "--", rel], cwd=ROOT,
+                            capture_output=True, text=True, timeout=600).stdout
+        for line in st.splitlines():
+            u = url_of_rel(line[3:].strip().strip('"'))
+            if u:
+                out[u] = DATA_DATE            # cambiata in questo build
+        log = subprocess.run(["git", "log", "-n", "10", "--format=%x01%cs", "--name-only", "--", rel],
+                             cwd=ROOT, capture_output=True, text=True, timeout=600).stdout
+        cur = DATA_DATE
+        for line in log.splitlines():
+            if line.startswith("\x01"):
+                cur = line[1:].strip() or cur
+                continue
+            u = url_of_rel(line.strip())
+            if u and u not in out:
+                out[u] = cur                 # primo (= piu' recente) commit che l'ha toccata
+        return out
+    except Exception as exc:                 # mai bloccare la pubblicazione per la sitemap
+        print(f"  sitemap : lastmod da git non disponibile ({type(exc).__name__}), uso {DATA_DATE}")
+        return {}
+
 def build_sitemap() -> int:
     """One sitemap per language plus an index.
 
@@ -1627,10 +1696,15 @@ def build_sitemap() -> int:
         seg = u.strip("/").split("/")[0]
         (by_lang[seg] if seg in by_lang else root).append(u)
 
+    # <lastmod> = data dell'ultima modifica REALE della pagina, non del build: Google ignora le
+    # sitemap in cui tutte le date cambiano ogni giorno. Pagine cambiate in questo build (non ancora
+    # committate) -> DATA_DATE; le altre -> data dell'ultimo commit che le ha toccate; fallback DATA_DATE.
+    dates = page_dates()
+
     def doc(urls: list[str]) -> str:
         head = ('<?xml version="1.0" encoding="UTF-8"?>\n'
                 '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
-        body = "".join(f"<url><loc>{ORIGIN}{u}</loc><lastmod>{TODAY}</lastmod></url>"
+        body = "".join(f"<url><loc>{ORIGIN}{u}</loc><lastmod>{dates.get(u, DATA_DATE)}</lastmod></url>"
                        for u in sorted(urls))
         return head + body + "</urlset>"
 
@@ -1644,7 +1718,7 @@ def build_sitemap() -> int:
 
     idx = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-           + "".join(f"<sitemap><loc>{ORIGIN}/{f}</loc><lastmod>{TODAY}</lastmod></sitemap>"
+           + "".join(f"<sitemap><loc>{ORIGIN}/{f}</loc><lastmod>{DATA_DATE}</lastmod></sitemap>"
                      for f in files)
            + "</sitemapindex>")
     write("/sitemap.xml", idx)

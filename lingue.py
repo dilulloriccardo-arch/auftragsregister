@@ -168,8 +168,10 @@ PROSE: dict[str, dict[str, str]] = {
         "it": "derivata dalle pubblicazioni", "en": "derived from the publications",
     },
     "open_tenders_h1": {
-        "de": "Offene Ausschreibungen", "fr": "Appels d'offres en cours",
-        "it": "Bandi aperti", "en": "Open tenders",
+        "de": "Aktuelle Ausschreibungen in der Schweiz finden",
+        "fr": "Trouver les appels d'offres en cours en Suisse",
+        "it": "Trovare i bandi di gara aperti in Svizzera",
+        "en": "Find current public tenders in Switzerland",
     },
     "chart_timeline": {
         "de": "Zuschläge im Zeitverlauf", "fr": "Adjudications dans le temps",
@@ -321,33 +323,100 @@ META: dict[str, dict[str, str]] = {
         "en": "{n} awards published on simap.ch, arranged by company: who wins which "
               "public contracts in Switzerland and for what amount.",
     },
-    "open_title": {"de": "Offene Ausschreibungen Schweiz — laufende öffentliche Aufträge",
-                   "fr": "Appels d'offres en cours en Suisse — marchés publics",
-                   "it": "Bandi aperti in Svizzera — appalti pubblici in corso",
-                   "en": "Open tenders in Switzerland — current public contracts"},
+    "open_title": {"de": "Ausschreibungen Schweiz: {n} aktuelle öffentliche Ausschreibungen finden",
+                   "fr": "Appels d'offres Suisse : {n} marchés publics en cours à trouver",
+                   "it": "Bandi di gara Svizzera: {n} appalti pubblici aperti da trovare",
+                   "en": "Public tenders Switzerland: find {n} current open tenders"},
     "open_desc": {
-        "de": "{n} laufende Ausschreibungen mit offener Eingabefrist aus dem öffentlichen "
-              "Beschaffungswesen der Schweiz, nach Frist geordnet.",
-        "fr": "{n} appels d'offres en cours avec délai ouvert dans les marchés publics "
-              "suisses, classés par délai.",
-        "it": "{n} bandi aperti con termine ancora valido negli appalti pubblici svizzeri, "
-              "ordinati per scadenza.",
-        "en": "{n} current tenders with an open deadline in Swiss public procurement, "
-              "ordered by deadline.",
+        "de": "Ausschreibungen suchen und finden: {n} aktuelle öffentliche Ausschreibungen "
+              "von Bund, Kantonen und Gemeinden (simap.ch), nach Eingabefrist geordnet, nach "
+              "Kanton und Branche filterbar, täglich aktualisiert. Kostenlos, ohne Anmeldung.",
+        "fr": "Chercher et trouver des appels d'offres : {n} marchés publics en cours de la "
+              "Confédération, des cantons et des communes (simap.ch), classés par délai, "
+              "par canton et par branche, mis à jour chaque jour. Gratuit, sans inscription.",
+        "it": "Cercare e trovare bandi di gara: {n} appalti pubblici aperti di Confederazione, "
+              "cantoni e comuni (simap.ch), ordinati per scadenza, per cantone e per settore, "
+              "aggiornati ogni giorno. Gratis, senza registrazione.",
+        "en": "Search and find public tenders: {n} current tenders from the Confederation, "
+              "cantons and communes (simap.ch), ordered by deadline, by canton and by sector, "
+              "updated daily. Free, no sign-up.",
     },
     "open_lead": {
-        "de": "{n} Ausschreibungen mit noch offener Eingabefrist, publiziert von Bund, "
-              "Kantonen und Gemeinden auf simap.ch.",
-        "fr": "{n} appels d'offres dont le délai est encore ouvert, publiés par la "
-              "Confédération, les cantons et les communes sur simap.ch.",
-        "it": "{n} bandi con termine ancora aperto, pubblicati da Confederazione, cantoni "
-              "e comuni su simap.ch.",
-        "en": "{n} tenders with a deadline still open, published by the Confederation, "
-              "cantons and communes on simap.ch.",
+        "de": "{n} öffentliche Ausschreibungen mit noch offener Eingabefrist, publiziert von "
+              "Bund, Kantonen und Gemeinden auf simap.ch — nach Frist geordnet, nach Kanton "
+              "und Branche filterbar, jeden Morgen aktualisiert.",
+        "fr": "{n} appels d'offres publics dont le délai est encore ouvert, publiés par la "
+              "Confédération, les cantons et les communes sur simap.ch — classés par délai, "
+              "par canton et par branche, mis à jour chaque matin.",
+        "it": "{n} bandi di gara pubblici con termine ancora aperto, pubblicati da "
+              "Confederazione, cantoni e comuni su simap.ch — ordinati per scadenza, per "
+              "cantone e per settore, aggiornati ogni mattina.",
+        "en": "{n} public tenders with a deadline still open, published by the Confederation, "
+              "cantons and communes on simap.ch — ordered by deadline, filterable by canton "
+              "and sector, updated every morning.",
     },
-    "open_canton_title": {"de": "Offene Ausschreibungen {name}",
-                          "fr": "Appels d'offres en cours {name}",
-                          "it": "Bandi aperti {name}", "en": "Open tenders {name}"},
+    "open_howto_h2": {
+        "de": "Ausschreibungen suchen: so funktioniert es",
+        "fr": "Chercher un appel d'offres : mode d'emploi",
+        "it": "Cercare un bando: come funziona",
+        "en": "How to search the tenders",
+    },
+    "open_howto": {
+        "de": "Die Tabelle zeigt die Ausschreibungen mit der nächsten Eingabefrist zuerst. "
+              "Jede Zeile führt zur Ausschreibung mit Auftraggeber, Frist, Branche (CPV) und "
+              "dem Link zur amtlichen Publikation. Über die Kantonsseiten finden Sie "
+              "Ausschreibungen in Ihrer Region, über die Branchenseiten Ausschreibungen "
+              "für Ihr Gewerbe: Bauarbeiten, Planung, IT, Versicherungen, Fahrzeuge und "
+              "mehr. Die Daten stammen aus dem amtlichen Register simap.ch und werden jeden "
+              "Morgen nach dem Publikationsembargo aktualisiert.",
+        "fr": "Le tableau montre d'abord les appels d'offres dont le délai est le plus "
+              "proche. Chaque ligne mène à l'appel d'offres avec l'adjudicateur, le délai, "
+              "la branche (CPV) et le lien vers la publication officielle. Les pages "
+              "cantonales regroupent les marchés de votre région, les pages par branche ceux "
+              "de votre métier : construction, études, informatique, assurances, véhicules "
+              "et plus. Les données viennent du registre officiel simap.ch et sont mises à "
+              "jour chaque matin après l'embargo de publication.",
+        "it": "La tabella mostra prima i bandi con la scadenza più vicina. Ogni riga porta al "
+              "bando con committente, termine, settore (CPV) e link alla pubblicazione "
+              "ufficiale. Le pagine cantonali raccolgono i bandi della vostra regione, quelle "
+              "per settore i bandi del vostro mestiere: edilizia, progettazione, informatica, "
+              "assicurazioni, veicoli e altro. I dati provengono dal registro ufficiale "
+              "simap.ch e sono aggiornati ogni mattina dopo l'embargo di pubblicazione.",
+        "en": "The table lists the tenders with the nearest deadline first. Each row leads to "
+              "the tender with buyer, deadline, sector (CPV) and the link to the official "
+              "notice. Canton pages collect the tenders of your region, sector pages those of "
+              "your trade: construction, engineering, IT, insurance, vehicles and more. The "
+              "data come from the official register simap.ch and are refreshed every morning "
+              "after the publication embargo.",
+    },
+    "open_by_canton_h2": {
+        "de": "Ausschreibungen nach Kanton", "fr": "Appels d'offres par canton",
+        "it": "Bandi per cantone", "en": "Tenders by canton",
+    },
+    "open_by_sector_h2": {
+        "de": "Ausschreibungen nach Branche", "fr": "Appels d'offres par branche",
+        "it": "Bandi per settore", "en": "Tenders by sector",
+    },
+    "open_sector_title": {
+        "de": "Ausschreibungen {name}: {n} aktuelle öffentliche Ausschreibungen",
+        "fr": "Appels d'offres {name} : {n} marchés publics en cours",
+        "it": "Bandi {name}: {n} appalti pubblici aperti",
+        "en": "{name} tenders: {n} current public tenders",
+    },
+    "open_sector_desc": {
+        "de": "{n} laufende öffentliche Ausschreibungen in der Branche {name} (CPV {code}) "
+              "aus der ganzen Schweiz, nach Eingabefrist geordnet, täglich aktualisiert.",
+        "fr": "{n} appels d'offres publics en cours dans la branche {name} (CPV {code}) "
+              "dans toute la Suisse, classés par délai, mis à jour chaque jour.",
+        "it": "{n} bandi pubblici aperti nel settore {name} (CPV {code}) in tutta la "
+              "Svizzera, ordinati per scadenza, aggiornati ogni giorno.",
+        "en": "{n} current public tenders in the {name} sector (CPV {code}) across "
+              "Switzerland, ordered by deadline, updated daily.",
+    },
+    "open_canton_title": {"de": "Ausschreibungen {name}: aktuelle öffentliche Ausschreibungen",
+                          "fr": "Appels d'offres {name} : marchés publics en cours",
+                          "it": "Bandi {name}: appalti pubblici aperti",
+                          "en": "{name} tenders: current public tenders"},
     "open_truncated": {
         "de": "Diese Seite zeigt die {shown} Ausschreibungen mit der nächsten Frist von "
               "insgesamt {total}. Die übrigen stehen auf den Kantonsseiten unten.",
@@ -359,10 +428,14 @@ META: dict[str, dict[str, str]] = {
         "en": "This page shows the {shown} tenders with the nearest deadline out of "
               "{total}. The rest are on the canton pages below."},
     "open_canton_desc": {
-        "de": "{n} laufende Ausschreibungen im Kanton {name} mit offener Eingabefrist.",
-        "fr": "{n} appels d'offres en cours dans le canton de {name}, délai ouvert.",
-        "it": "{n} bandi aperti nel cantone {name}, termine ancora valido.",
-        "en": "{n} current tenders in the canton of {name} with an open deadline.",
+        "de": "{n} aktuelle öffentliche Ausschreibungen im Kanton {name} mit offener "
+              "Eingabefrist, nach Frist geordnet, täglich aktualisiert (Quelle simap.ch).",
+        "fr": "{n} appels d'offres publics en cours dans le canton de {name}, délai ouvert, "
+              "classés par délai, mis à jour chaque jour (source simap.ch).",
+        "it": "{n} bandi pubblici aperti nel cantone {name} con termine ancora valido, "
+              "ordinati per scadenza, aggiornati ogni giorno (fonte simap.ch).",
+        "en": "{n} current public tenders in the canton of {name} with an open deadline, "
+              "ordered by deadline, updated daily (source simap.ch).",
     },
 }
 
