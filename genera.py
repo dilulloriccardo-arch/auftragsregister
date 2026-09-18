@@ -604,7 +604,7 @@ def lang_path(path: str, lang: str) -> str:
 
 
 def page(title: str, desc: str, body: str, path: str, kicker: str = "",
-         leaf: str = "", robots: str = "") -> str:
+         leaf: str = "", robots: str = "", head_extra: str = "") -> str:
     # hreflang tells the search engine these are one page in four languages, not four
     # pages competing with each other for the same query.
     alts = "\n".join(
@@ -615,7 +615,7 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
          else f'<a href="{BASE}{lang_path(path, l)}">{e(NAMES[l])}</a>') for l in LANGS)
     return (HEAD.format(title=e(title), desc=e(desc), site=ORIGIN, base=BASE, path=path,
                         kicker=e(kicker or _.register), lang=LANG, alts=alts,
-                        verify=VERIFY + (f'<meta name="robots" content="{robots}">\n' if robots else ""),
+                        verify=VERIFY + (f'<meta name="robots" content="{robots}">\n' if robots else "") + head_extra,
                         sitename=e(_.site), langnav=nav, langlabel=e(_.language))
             + breadcrumbs(path, leaf or title.split(" — ")[0])
             + body + FOOT.format(disc=e(DISCLAIMER),
@@ -1288,6 +1288,68 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
 SHOWN = 400            # rows on the all-tenders index; the rest live on the canton pages
 
 
+ABO_MAIL = "abo@auftragsregister.ch"
+
+
+def feed_xml(scope: str, self_path: str, rows: list) -> str:
+    """Atom feed of the newest publications (max 100), newest first."""
+    rows = sorted(rows, key=lambda t: t.get("publicationDate") or "", reverse=True)[:100]
+    upd = (rows[0].get("publicationDate") if rows else DATA_DATE) or DATA_DATE
+    out = ['<?xml version="1.0" encoding="utf-8"?>',
+           '<feed xmlns="http://www.w3.org/2005/Atom">',
+           f"<title>{e(_m('feed_title', scope=scope))}</title>",
+           f'<link href="{ORIGIN}{self_path}" rel="self"/>',
+           f'<link href="{ORIGIN}{self_path.rsplit("/", 1)[0]}/"/>',
+           f"<id>{ORIGIN}{self_path}</id>",
+           f"<updated>{upd[:10]}T06:20:00Z</updated>"]
+    for t in rows:
+        d = (t.get("publicationDate") or DATA_DATE)[:10]
+        label = cpv_label(t.get("cpvCode"), de(t, "cpvLabel") or t.get("cpvLabel") or "")
+        summary = " · ".join(x for x in (t.get("buyerName") or "", f"{_.deadline}: {dmyy(t.get('offerDeadline') or '')}",
+                                         t.get("canton") or "", label) if x)
+        out.append("<entry>"
+                   f"<title>{e(de(t, 'title'))}</title>"
+                   f'<link href="{ORIGIN}/{LANG}/auftrag/{e(t.get("projectId"))}/"/>'
+                   f'<id>{ORIGIN}/{LANG}/auftrag/{e(t.get("projectId"))}/</id>'
+                   f"<updated>{d}T06:20:00Z</updated>"
+                   f"<summary>{e(summary)}</summary></entry>")
+    out.append("</feed>")
+    return "\n".join(out)
+
+
+def feed_head(path: str, scope: str) -> str:
+    return (f'<link rel="alternate" type="application/atom+xml" '
+            f'title="{e(_m("feed_title", scope=scope))}" href="{ORIGIN}{path}">\n')
+
+
+def abo_block(feed_path: str) -> str:
+    """The subscribe call-out shown on every tenders page."""
+    return (f'<div class="sec"><p><a class="tag" href="{BASE}/{LANG}/ausschreibungen/abo/">'
+            f'{e(_m("abo_cta"))}</a> <a class="tag" href="{ORIGIN}{feed_path}">{e(_m("feed_link"))}</a></p></div>')
+
+
+def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
+    mail = ABO_MAIL
+    b = [f'<div class="title"><div><p class="eyebrow">{_.running}</p><h1>{e(_m("abo_h1"))}</h1>'
+         f'<p class="sum">{e(_m("abo_lead"))}</p></div></div>',
+         f'<div class="sec"><h2>{e(_m("abo_email_h2"))}</h2><p>'
+         + e(_m("abo_email_text", mail=mail)).replace(e(mail), f'<a href="mailto:{mail}?subject=Abo">{e(mail)}</a>')
+         + "</p></div>",
+         f'<div class="sec"><h2>{e(_m("abo_rss_h2"))}</h2><p>{e(_m("abo_rss_text"))}</p>'
+         f'<p><a class="tag" href="{ORIGIN}/{LANG}/ausschreibungen/feed.xml">{e(_m("abo_rss_all"))}</a></p>'
+         f'<h3>{e(_m("abo_by_canton"))}</h3><div class="tags">'
+         + "".join(f'<a class="tag" href="{ORIGIN}/{LANG}/ausschreibungen/{e(c)}/feed.xml">{e(c)}</a>'
+                   for c in sorted(by_cant))
+         + f'</div><h3>{e(_m("abo_by_sector"))}</h3><div class="tags">'
+         + "".join(f'<a class="tag" href="{ORIGIN}/{LANG}/ausschreibungen/bereich/{e(c)}/feed.xml">'
+                   f'{e(sect_name(c)[:40])}</a>'
+                   for c, r in sorted(by_sect.items(), key=lambda kv: -len(kv[1]))[:24])
+         + "</div></div>"]
+    write(f"/{LANG}/ausschreibungen/abo/index.html", page(
+        fit_title(_m("abo_title"), " — auftragsregister.ch"), _m("abo_desc"),
+        "\n".join(b), f"/{LANG}/ausschreibungen/abo/", _.tenders))
+
+
 def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
     """The open tenders, whole and by canton.
 
@@ -1348,12 +1410,16 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
          (f'<p class="sub" style="margin:12px 0 0">'
           + e(_if("showing_n", n=SHOWN, total=len(opens))) + "</p>"
           if len(opens) > SHOWN else ""),
+         abo_block(f"/{LANG}/ausschreibungen/feed.xml"),
          f'<div class="sec"><h2>{e(_m("open_by_canton_h2"))}</h2>' + nav + "</div>",
          f'<div class="sec"><h2>{e(_m("open_by_sector_h2"))}</h2>' + sect_nav + "</div>",
          f'<div class="sec"><h2>{e(_m("open_howto_h2"))}</h2><p>{e(_m("open_howto"))}</p></div>']
     write(f"/{LANG}/ausschreibungen/index.html", page(
         _m("open_title", n=len(opens)), _m("open_desc", n=len(opens)),
-        "\n".join(b), f"/{LANG}/ausschreibungen/", _.tenders))
+        "\n".join(b), f"/{LANG}/ausschreibungen/", _.tenders,
+        head_extra=feed_head(f"/{LANG}/ausschreibungen/feed.xml", _m("feed_all"))))
+    write(f"/{LANG}/ausschreibungen/feed.xml", feed_xml(_m("feed_all"), f"/{LANG}/ausschreibungen/feed.xml", opens))
+    build_abo(by_cant, by_sect, sect_name)
 
     for code2, rows in by_sect.items():
         name = sect_name(code2)
@@ -1365,10 +1431,14 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
              '<div class="sec">' + table(rows) + "</div>",
              f'<div class="tags" style="margin-top:22px">'
              f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/">{e(_i.all_open)}</a></div>']
+        fp = f"/{LANG}/ausschreibungen/bereich/{code2}/feed.xml"
+        b.insert(1, abo_block(fp))
         write(f"/{LANG}/ausschreibungen/bereich/{code2}/index.html", page(
             fit_title(_m("open_sector_title", name=name, n=len(rows)), " — simap"),
             _m("open_sector_desc", n=len(rows), name=name, code=code2),
-            "\n".join(b), f"/{LANG}/ausschreibungen/bereich/{code2}/", _.tenders))
+            "\n".join(b), f"/{LANG}/ausschreibungen/bereich/{code2}/", _.tenders,
+            head_extra=feed_head(fp, name)))
+        write(f"/{LANG}/ausschreibungen/bereich/{code2}/feed.xml", feed_xml(name, fp, rows))
 
     for code, rows in by_cant.items():
         name = canton_name_or(code, code)
@@ -1382,10 +1452,14 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
              f'<div class="tags" style="margin-top:22px">'
              f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(code)}/">{e(_if("awarded_in", c=code))}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/">{e(_i.all_open)}</a></div>']
+        fp = f"/{LANG}/ausschreibungen/{code}/feed.xml"
+        b.insert(1, abo_block(fp))
         write(f"/{LANG}/ausschreibungen/{code}/index.html", page(
             fit_title(_m("open_canton_title", name=name), " — simap"),
             _m("open_canton_desc", n=len(rows), name=name),
-            "\n".join(b), f"/{LANG}/ausschreibungen/{code}/", _.tenders))
+            "\n".join(b), f"/{LANG}/ausschreibungen/{code}/", _.tenders,
+            head_extra=feed_head(fp, name)))
+        write(f"/{LANG}/ausschreibungen/{code}/feed.xml", feed_xml(name, fp, rows))
     return 1 + len(by_cant) + len(by_sect)
 
 

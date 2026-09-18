@@ -403,6 +403,73 @@ META: dict[str, dict[str, str]] = {
         "it": "Bandi {name}: {n} appalti pubblici aperti",
         "en": "{name} tenders: {n} current public tenders",
     },
+    "feed_title": {"de": "Neue Ausschreibungen {scope} — auftragsregister.ch",
+                   "fr": "Nouveaux appels d'offres {scope} — auftragsregister.ch",
+                   "it": "Nuovi bandi {scope} — auftragsregister.ch",
+                   "en": "New tenders {scope} — auftragsregister.ch"},
+    "feed_all": {"de": "Schweiz", "fr": "Suisse", "it": "Svizzera", "en": "Switzerland"},
+    "feed_link": {"de": "RSS-Feed", "fr": "Flux RSS", "it": "Feed RSS", "en": "RSS feed"},
+    "abo_cta": {"de": "Neue Ausschreibungen automatisch erhalten (kostenlos)",
+                "fr": "Recevoir les nouveaux appels d'offres automatiquement (gratuit)",
+                "it": "Ricevere i nuovi bandi automaticamente (gratis)",
+                "en": "Get new tenders automatically (free)"},
+    "abo_title": {"de": "Ausschreibungen abonnieren: neue Ausschreibungen täglich per E-Mail oder RSS",
+                  "fr": "S'abonner aux appels d'offres : nouveautés par e-mail ou RSS",
+                  "it": "Abbonarsi ai bandi: novità ogni giorno via e-mail o RSS",
+                  "en": "Subscribe to tenders: daily new tenders by e-mail or RSS"},
+    "abo_desc": {"de": "Kostenlose Benachrichtigung über neue öffentliche Ausschreibungen in der Schweiz, "
+                       "nach Kanton und Branche: täglich per E-Mail oder als RSS-Feed. Quelle simap.ch.",
+                 "fr": "Alerte gratuite sur les nouveaux appels d'offres publics en Suisse, par canton et "
+                       "par branche : chaque jour par e-mail ou par flux RSS. Source simap.ch.",
+                 "it": "Avviso gratuito sui nuovi bandi pubblici in Svizzera, per cantone e settore: ogni "
+                       "giorno via e-mail o feed RSS. Fonte simap.ch.",
+                 "en": "Free alert on new public tenders in Switzerland, by canton and sector: daily by "
+                       "e-mail or as an RSS feed. Source simap.ch."},
+    "abo_h1": {"de": "Neue Ausschreibungen automatisch erhalten",
+               "fr": "Recevoir les nouveaux appels d'offres automatiquement",
+               "it": "Ricevere i nuovi bandi automaticamente",
+               "en": "Get new tenders automatically"},
+    "abo_lead": {"de": "Jeden Morgen erscheinen auf simap.ch neue Ausschreibungen. Wählen Sie Kanton und "
+                       "Branche und lassen Sie sich die neuen Ausschreibungen zuschicken — kostenlos, ohne Konto.",
+                 "fr": "Chaque matin, de nouveaux appels d'offres paraissent sur simap.ch. Choisissez le canton "
+                       "et la branche et recevez les nouveautés — gratuitement, sans compte.",
+                 "it": "Ogni mattina su simap.ch escono nuovi bandi. Scegliete cantone e settore e ricevete le "
+                       "novità — gratis, senza account.",
+                 "en": "New tenders appear on simap.ch every morning. Pick canton and sector and get the new "
+                       "ones delivered — free, no account needed."},
+    "abo_email_h2": {"de": "Täglich per E-Mail", "fr": "Chaque jour par e-mail",
+                     "it": "Ogni giorno via e-mail", "en": "Daily by e-mail"},
+    "abo_email_text": {"de": "Schreiben Sie eine E-Mail an {mail} mit dem Betreff «Abo» und nennen Sie im Text "
+                             "Kanton (z.B. ZH) und Branche (z.B. Bauarbeiten oder CPV 45). Sie erhalten eine "
+                             "Bestätigung und danach an jedem Werktag die neuen Ausschreibungen, die passen. "
+                             "Abmelden: E-Mail mit Betreff «Stop». Ihre Adresse wird nur dafür verwendet und "
+                             "nicht weitergegeben.",
+                       "fr": "Envoyez un e-mail à {mail} avec l'objet « Abo » et indiquez le canton (p. ex. GE) "
+                             "et la branche (p. ex. construction ou CPV 45). Vous recevez une confirmation, puis "
+                             "chaque jour ouvrable les nouveaux appels d'offres correspondants. Désabonnement : "
+                             "e-mail avec l'objet « Stop ». Votre adresse ne sert qu'à cela et n'est pas transmise.",
+                       "it": "Scrivete un'e-mail a {mail} con oggetto «Abo» indicando cantone (es. TI) e settore "
+                             "(es. edilizia o CPV 45). Ricevete una conferma e poi, ogni giorno feriale, i nuovi "
+                             "bandi corrispondenti. Per cancellarsi: e-mail con oggetto «Stop». L'indirizzo serve "
+                             "solo a questo e non viene ceduto.",
+                       "en": "Send an e-mail to {mail} with the subject \"Abo\" and state the canton (e.g. ZH) "
+                             "and sector (e.g. construction or CPV 45). You get a confirmation, then the matching "
+                             "new tenders every working day. To stop: e-mail with the subject \"Stop\". Your "
+                             "address is used for this only and never shared."},
+    "abo_rss_h2": {"de": "Per RSS-Feed (sofort, ohne Anmeldung)", "fr": "Par flux RSS (immédiat, sans inscription)",
+                   "it": "Via feed RSS (subito, senza iscrizione)", "en": "By RSS feed (instant, no sign-up)"},
+    "abo_rss_text": {"de": "Jede Kantons- und Branchenseite hat einen Feed. Fügen Sie die Adresse in Ihren "
+                           "Feed-Reader, in Outlook (RSS-Abonnements) oder in einen RSS-zu-E-Mail-Dienst ein.",
+                     "fr": "Chaque page cantonale et de branche a son flux. Ajoutez l'adresse à votre lecteur, à "
+                           "Outlook (abonnements RSS) ou à un service RSS-vers-e-mail.",
+                     "it": "Ogni pagina cantonale e di settore ha il suo feed. Aggiungete l'indirizzo al vostro "
+                           "lettore, a Outlook (abbonamenti RSS) o a un servizio RSS-verso-e-mail.",
+                     "en": "Every canton and sector page has a feed. Add the address to your feed reader, to "
+                           "Outlook (RSS subscriptions) or to an RSS-to-e-mail service."},
+    "abo_rss_all": {"de": "Alle neuen Ausschreibungen der Schweiz", "fr": "Tous les nouveaux appels d'offres suisses",
+                    "it": "Tutti i nuovi bandi svizzeri", "en": "All new Swiss tenders"},
+    "abo_by_canton": {"de": "Feeds nach Kanton", "fr": "Flux par canton", "it": "Feed per cantone", "en": "Feeds by canton"},
+    "abo_by_sector": {"de": "Feeds nach Branche", "fr": "Flux par branche", "it": "Feed per settore", "en": "Feeds by sector"},
     "open_sector_desc": {
         "de": "{n} laufende öffentliche Ausschreibungen in der Branche {name} (CPV {code}) "
               "aus der ganzen Schweiz, nach Eingabefrist geordnet, täglich aktualisiert.",
