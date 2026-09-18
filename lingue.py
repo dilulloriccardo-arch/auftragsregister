@@ -323,10 +323,10 @@ META: dict[str, dict[str, str]] = {
         "en": "{n} awards published on simap.ch, arranged by company: who wins which "
               "public contracts in Switzerland and for what amount.",
     },
-    "open_title": {"de": "Ausschreibungen Schweiz: {n} aktuelle öffentliche Ausschreibungen finden",
-                   "fr": "Appels d'offres Suisse : {n} marchés publics en cours à trouver",
-                   "it": "Bandi di gara Svizzera: {n} appalti pubblici aperti da trovare",
-                   "en": "Public tenders Switzerland: find {n} current open tenders"},
+    "open_title": {"de": "Ausschreibungen Schweiz: {n} aktuelle Ausschreibungen finden",
+                   "fr": "Appels d'offres Suisse : {n} marchés publics en cours",
+                   "it": "Bandi di gara Svizzera: {n} appalti pubblici aperti",
+                   "en": "Public tenders Switzerland: {n} current open tenders"},
     "open_desc": {
         "de": "Ausschreibungen suchen und finden: {n} aktuelle öffentliche Ausschreibungen "
               "von Bund, Kantonen und Gemeinden (simap.ch), nach Eingabefrist geordnet, nach "
