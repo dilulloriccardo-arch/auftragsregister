@@ -809,6 +809,8 @@ PRIV: dict[str, dict] = {
              "Die Website wird über GitHub Pages ausgeliefert; der Hosting-Anbieter kann "
              "im Rahmen des Betriebs technische Verbindungsdaten wie IP-Adressen in "
              "eigenen Server-Logs erfassen."),
+            ("Abonnement neuer Ausschreibungen (E-Mail und RSS)",
+             "Wer neue Ausschreibungen per E-Mail erhalten möchte, schreibt an abo@auftragsregister.ch und nennt Kanton und Branche. Bearbeitet werden dafür nur die E-Mail-Adresse, die gewählten Kantone und Branchen und die Sprache, ausschliesslich zum Versand dieser Benachrichtigungen; Grundlage ist Ihre eigene Anmeldung, die jederzeit mit einer E-Mail mit dem Betreff «Stop» widerrufen werden kann; die Daten werden danach innert 30 Tagen gelöscht. Sie werden weder weitergegeben noch für andere Zwecke verwendet. Eingehende E-Mails werden über ImprovMX Inc. (USA, Weiterleitung) an ein Postfach bei Google LLC (Gmail) zugestellt; für den Versand kann ein Newsletter-Dienstleister mit Sitz in der EU beigezogen werden, der die Adressen nur in unserem Auftrag verarbeitet. Die RSS-Feeds erfordern keine Anmeldung und übermitteln uns keine Personendaten."),
             ("Archiv und Aufbewahrung",
              "Der Datenbestand wird täglich aus simap.ch aktualisiert. Ältere "
              "Publikationen bleiben als Archiv erhalten, auch wenn sie über die "
@@ -849,6 +851,8 @@ PRIV: dict[str, dict] = {
              "utilisateur ni formulaire. Le site est diffusé via GitHub Pages; "
              "l'hébergeur peut enregistrer dans ses propres journaux des données "
              "techniques de connexion telles que les adresses IP."),
+            ("Abonnement aux nouveaux appels d'offres (e-mail et RSS)",
+             "Pour recevoir les nouveaux appels d'offres par e-mail, on écrit à abo@auftragsregister.ch en indiquant le canton et la branche. Seuls l'adresse e-mail, les cantons et branches choisis et la langue sont traités, uniquement pour l'envoi de ces alertes ; la base est votre propre inscription, révocable à tout moment par un e-mail avec l'objet « Stop » ; les données sont ensuite effacées dans les 30 jours. Elles ne sont ni transmises ni utilisées à d'autres fins. Les e-mails entrants sont acheminés par ImprovMX Inc. (États-Unis, transfert) vers une boîte chez Google LLC (Gmail) ; pour l'envoi, un prestataire de newsletter établi dans l'UE peut intervenir et traite les adresses uniquement pour notre compte. Les flux RSS ne demandent aucune inscription et ne nous transmettent aucune donnée personnelle."),
             ("Archive et conservation",
              "Les données sont mises à jour chaque jour depuis simap.ch. Les "
              "publications plus anciennes sont conservées sous forme d'archive, même "
@@ -888,6 +892,8 @@ PRIV: dict[str, dict] = {
              "account utente né moduli. Il sito è distribuito tramite GitHub Pages; il "
              "fornitore di hosting può registrare nei propri log dati tecnici di "
              "connessione come gli indirizzi IP."),
+            ("Abbonamento ai nuovi bandi (e-mail e RSS)",
+             "Per ricevere i nuovi bandi via e-mail si scrive a abo@auftragsregister.ch indicando cantone e settore. Vengono trattati solo l'indirizzo e-mail, i cantoni e settori scelti e la lingua, esclusivamente per l'invio di questi avvisi; la base è la vostra iscrizione, revocabile in ogni momento con un'e-mail con oggetto «Stop»; i dati sono poi cancellati entro 30 giorni. Non vengono ceduti né usati per altri scopi. Le e-mail in arrivo sono inoltrate da ImprovMX Inc. (USA) a una casella presso Google LLC (Gmail); per l'invio può intervenire un fornitore di newsletter con sede nell'UE, che tratta gli indirizzi solo per nostro conto. I feed RSS non richiedono iscrizione e non ci trasmettono dati personali."),
             ("Archivio e conservazione",
              "I dati sono aggiornati ogni giorno da simap.ch. Le pubblicazioni più "
              "vecchie restano conservate come archivio, anche quando non sono più "
@@ -926,6 +932,8 @@ PRIV: dict[str, dict] = {
              "forms. The site is served through GitHub Pages; the hosting provider may "
              "record technical connection data such as IP addresses in its own server "
              "logs."),
+            ("Subscription to new tenders (e-mail and RSS)",
+             "To receive new tenders by e-mail, write to abo@auftragsregister.ch stating canton and sector. Only the e-mail address, the chosen cantons and sectors and the language are processed, solely to send these alerts; the basis is your own request, which you can withdraw at any time with an e-mail with the subject \"Stop\"; the data are then deleted within 30 days. They are neither shared nor used for other purposes. Incoming e-mails are forwarded by ImprovMX Inc. (USA) to a mailbox at Google LLC (Gmail); an EU-based newsletter provider may be used for sending and processes the addresses only on our behalf. The RSS feeds need no sign-up and send us no personal data."),
             ("Archive and retention",
              "The data is refreshed daily from simap.ch. Older publications are kept as "
              "an archive, even once they can no longer be queried through the simap.ch "
