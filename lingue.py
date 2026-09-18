@@ -470,6 +470,59 @@ META: dict[str, dict[str, str]] = {
                     "it": "Tutti i nuovi bandi svizzeri", "en": "All new Swiss tenders"},
     "abo_by_canton": {"de": "Feeds nach Kanton", "fr": "Flux par canton", "it": "Feed per cantone", "en": "Feeds by canton"},
     "abo_by_sector": {"de": "Feeds nach Branche", "fr": "Flux par branche", "it": "Feed per settore", "en": "Feeds by sector"},
+    "abo_check_title": {"de": "Fast geschafft: bitte E-Mail bestätigen", "fr": "Presque fini : confirmez votre e-mail",
+                        "it": "Quasi fatto: confermi l'e-mail", "en": "Almost done: please confirm your e-mail"},
+    "abo_check": {"de": "Wir haben Ihnen eine E-Mail geschickt. Klicken Sie auf den Bestätigungslink, dann ist das Abo aktiv. "
+                        "Keine E-Mail? Bitte den Spam-Ordner prüfen.",
+                  "fr": "Nous vous avons envoyé un e-mail. Cliquez sur le lien de confirmation pour activer l'abonnement. "
+                        "Pas d'e-mail ? Vérifiez le dossier spam.",
+                  "it": "Le abbiamo inviato un'e-mail. Clicchi sul link di conferma per attivare l'abbonamento. "
+                        "Nessuna e-mail? Controlli la cartella spam.",
+                  "en": "We have sent you an e-mail. Click the confirmation link to activate the subscription. "
+                        "No e-mail? Check your spam folder."},
+    "abo_ok_title": {"de": "Abo bestätigt", "fr": "Abonnement confirmé", "it": "Abbonamento confermato",
+                     "en": "Subscription confirmed"},
+    "abo_ok": {"de": "Ab jetzt erhalten Sie an Werktagen die neuen Ausschreibungen, die zu Ihrer Auswahl passen. "
+                     "Abmelden: Link am Ende jeder E-Mail.",
+               "fr": "Dès maintenant, vous recevez les jours ouvrables les nouveaux appels d'offres correspondant à "
+                     "votre choix. Désinscription : lien au bas de chaque e-mail.",
+               "it": "Da ora riceve nei giorni feriali i nuovi bandi corrispondenti alla Sua scelta. "
+                     "Cancellazione: link in fondo a ogni e-mail.",
+               "en": "From now on you get the new tenders matching your choice on working days. "
+                     "Unsubscribe: link at the bottom of every e-mail."},
+    "abo_back": {"de": "Zur Abo-Seite", "fr": "Vers la page Abonnement", "it": "Alla pagina Abbonamento",
+                 "en": "To the subscription page"},
+    "abo_form_h2": {"de": "Anmelden (kostenlos)", "fr": "S'inscrire (gratuit)", "it": "Iscriversi (gratis)", "en": "Sign up (free)"},
+    "abo_form_email": {"de": "E-Mail-Adresse", "fr": "Adresse e-mail", "it": "Indirizzo e-mail", "en": "E-mail address"},
+    "abo_form_cantons": {"de": "Kantone (keine Auswahl = ganze Schweiz)", "fr": "Cantons (aucun choix = toute la Suisse)",
+                         "it": "Cantoni (nessuna scelta = tutta la Svizzera)", "en": "Cantons (no selection = all of Switzerland)"},
+    "abo_form_sectors": {"de": "Branchen (keine Auswahl = alle)", "fr": "Branches (aucun choix = toutes)",
+                         "it": "Settori (nessuna scelta = tutti)", "en": "Sectors (no selection = all)"},
+    "abo_form_submit": {"de": "Abonnieren", "fr": "S'abonner", "it": "Abbonarsi", "en": "Subscribe"},
+    "abo_form_consent": {"de": "Sie erhalten zuerst eine E-Mail mit einem Bestätigungslink; erst danach ist das Abo aktiv. "
+                               "Dann kommt an Werktagen eine E-Mail mit den neuen Ausschreibungen, die passen. Abmelden "
+                               "jederzeit über den Link in jeder E-Mail. Anmeldung und Versand über Brevo (EU).",
+                         "fr": "Vous recevez d'abord un e-mail avec un lien de confirmation ; l'abonnement n'est actif "
+                               "qu'ensuite. Puis, les jours ouvrables, un e-mail avec les nouveaux appels d'offres "
+                               "correspondants. Désinscription à tout moment par le lien dans chaque e-mail. Inscription "
+                               "et envoi via Brevo (UE).",
+                         "it": "Riceve prima un'e-mail con un link di conferma; solo dopo l'abbonamento è attivo. Poi, nei "
+                               "giorni feriali, un'e-mail con i nuovi bandi corrispondenti. Cancellazione in ogni momento "
+                               "con il link in ogni e-mail. Iscrizione e invio tramite Brevo (UE).",
+                         "en": "You first get an e-mail with a confirmation link; only then is the subscription active. "
+                               "Then, on working days, one e-mail with the matching new tenders. Unsubscribe any time via "
+                               "the link in every e-mail. Sign-up and sending via Brevo (EU)."},
+    "abo_form_sending": {"de": "Wird gesendet …", "fr": "Envoi en cours …", "it": "Invio in corso …", "en": "Sending …"},
+    "abo_form_ok": {"de": "Fast geschafft: Bitte klicken Sie auf den Link in der E-Mail, die wir Ihnen gerade geschickt haben.",
+                    "fr": "Presque fini : cliquez sur le lien dans l'e-mail que nous venons de vous envoyer.",
+                    "it": "Quasi fatto: clicchi sul link nell'e-mail che Le abbiamo appena inviato.",
+                    "en": "Almost done: please click the link in the e-mail we have just sent you."},
+    "abo_form_err": {"de": "Das hat nicht geklappt. Bitte die E-Mail-Adresse prüfen oder an {mail} schreiben.",
+                     "fr": "Cela n'a pas fonctionné. Vérifiez l'adresse e-mail ou écrivez à {mail}.",
+                     "it": "Non ha funzionato. Controlli l'indirizzo e-mail o scriva a {mail}.",
+                     "en": "That didn't work. Please check the e-mail address or write to {mail}."},
+    "abo_email_alt_h2": {"de": "Ohne Formular: per E-Mail", "fr": "Sans formulaire : par e-mail",
+                         "it": "Senza modulo: via e-mail", "en": "Without the form: by e-mail"},
     "open_sector_desc": {
         "de": "{n} laufende öffentliche Ausschreibungen in der Branche {name} (CPV {code}) "
               "aus der ganzen Schweiz, nach Eingabefrist geordnet, täglich aktualisiert.",
@@ -810,7 +863,7 @@ PRIV: dict[str, dict] = {
              "im Rahmen des Betriebs technische Verbindungsdaten wie IP-Adressen in "
              "eigenen Server-Logs erfassen."),
             ("Abonnement neuer Ausschreibungen (E-Mail und RSS)",
-             "Wer neue Ausschreibungen per E-Mail erhalten möchte, schreibt an abo@auftragsregister.ch und nennt Kanton und Branche. Bearbeitet werden dafür nur die E-Mail-Adresse, die gewählten Kantone und Branchen und die Sprache, ausschliesslich zum Versand dieser Benachrichtigungen; Grundlage ist Ihre eigene Anmeldung, die jederzeit mit einer E-Mail mit dem Betreff «Stop» widerrufen werden kann; die Daten werden danach innert 30 Tagen gelöscht. Sie werden weder weitergegeben noch für andere Zwecke verwendet. Eingehende E-Mails werden über ImprovMX Inc. (USA, Weiterleitung) an ein Postfach bei Google LLC (Gmail) zugestellt; für den Versand kann ein Newsletter-Dienstleister mit Sitz in der EU beigezogen werden, der die Adressen nur in unserem Auftrag verarbeitet. Die RSS-Feeds erfordern keine Anmeldung und übermitteln uns keine Personendaten."),
+             "Wer neue Ausschreibungen per E-Mail erhalten möchte, meldet sich über das Formular auf der Abo-Seite an oder schreibt an abo@auftragsregister.ch. Die Anmeldung wird erst aktiv, wenn der Bestätigungslink in der zugestellten E-Mail angeklickt wird (Double-Opt-in). Bearbeitet werden nur die E-Mail-Adresse, die gewählten Kantone und Branchen, die Sprache sowie Zeitpunkt und IP-Adresse der Bestätigung, ausschliesslich zum Versand dieser Benachrichtigungen; Grundlage ist Ihre eigene Anmeldung. Abmelden können Sie sich jederzeit über den Link in jeder E-Mail oder mit einer E-Mail mit dem Betreff «Stop»; die Daten werden danach innert 30 Tagen gelöscht und weder weitergegeben noch für andere Zwecke verwendet. Anmeldung und Versand laufen über Brevo (Sendinblue SAS, Paris, EU), das die Adressen nur in unserem Auftrag verarbeitet; eingehende E-Mails werden über ImprovMX Inc. (USA, Weiterleitung) an ein Postfach bei Google LLC (Gmail) zugestellt. Die RSS-Feeds erfordern keine Anmeldung und übermitteln uns keine Personendaten."),
             ("Archiv und Aufbewahrung",
              "Der Datenbestand wird täglich aus simap.ch aktualisiert. Ältere "
              "Publikationen bleiben als Archiv erhalten, auch wenn sie über die "
@@ -852,7 +905,7 @@ PRIV: dict[str, dict] = {
              "l'hébergeur peut enregistrer dans ses propres journaux des données "
              "techniques de connexion telles que les adresses IP."),
             ("Abonnement aux nouveaux appels d'offres (e-mail et RSS)",
-             "Pour recevoir les nouveaux appels d'offres par e-mail, on écrit à abo@auftragsregister.ch en indiquant le canton et la branche. Seuls l'adresse e-mail, les cantons et branches choisis et la langue sont traités, uniquement pour l'envoi de ces alertes ; la base est votre propre inscription, révocable à tout moment par un e-mail avec l'objet « Stop » ; les données sont ensuite effacées dans les 30 jours. Elles ne sont ni transmises ni utilisées à d'autres fins. Les e-mails entrants sont acheminés par ImprovMX Inc. (États-Unis, transfert) vers une boîte chez Google LLC (Gmail) ; pour l'envoi, un prestataire de newsletter établi dans l'UE peut intervenir et traite les adresses uniquement pour notre compte. Les flux RSS ne demandent aucune inscription et ne nous transmettent aucune donnée personnelle."),
+             "Pour recevoir les nouveaux appels d'offres par e-mail, on s'inscrit via le formulaire de la page Abonnement ou on écrit à abo@auftragsregister.ch. L'inscription n'est active qu'après un clic sur le lien de confirmation envoyé par e-mail (double opt-in). Seuls l'adresse e-mail, les cantons et branches choisis, la langue ainsi que la date et l'adresse IP de la confirmation sont traités, uniquement pour l'envoi de ces alertes ; la base est votre propre inscription. Vous pouvez vous désabonner à tout moment par le lien présent dans chaque e-mail ou par un e-mail avec l'objet « Stop » ; les données sont ensuite effacées dans les 30 jours et ne sont ni transmises ni utilisées à d'autres fins. L'inscription et l'envoi passent par Brevo (Sendinblue SAS, Paris, UE), qui traite les adresses uniquement pour notre compte ; les e-mails entrants sont acheminés par ImprovMX Inc. (États-Unis, transfert) vers une boîte chez Google LLC (Gmail). Les flux RSS ne demandent aucune inscription et ne nous transmettent aucune donnée personnelle."),
             ("Archive et conservation",
              "Les données sont mises à jour chaque jour depuis simap.ch. Les "
              "publications plus anciennes sont conservées sous forme d'archive, même "
@@ -893,7 +946,7 @@ PRIV: dict[str, dict] = {
              "fornitore di hosting può registrare nei propri log dati tecnici di "
              "connessione come gli indirizzi IP."),
             ("Abbonamento ai nuovi bandi (e-mail e RSS)",
-             "Per ricevere i nuovi bandi via e-mail si scrive a abo@auftragsregister.ch indicando cantone e settore. Vengono trattati solo l'indirizzo e-mail, i cantoni e settori scelti e la lingua, esclusivamente per l'invio di questi avvisi; la base è la vostra iscrizione, revocabile in ogni momento con un'e-mail con oggetto «Stop»; i dati sono poi cancellati entro 30 giorni. Non vengono ceduti né usati per altri scopi. Le e-mail in arrivo sono inoltrate da ImprovMX Inc. (USA) a una casella presso Google LLC (Gmail); per l'invio può intervenire un fornitore di newsletter con sede nell'UE, che tratta gli indirizzi solo per nostro conto. I feed RSS non richiedono iscrizione e non ci trasmettono dati personali."),
+             "Per ricevere i nuovi bandi via e-mail ci si iscrive con il modulo della pagina Abbonamento oppure si scrive a abo@auftragsregister.ch. L'iscrizione diventa attiva solo dopo il clic sul link di conferma inviato via e-mail (double opt-in). Vengono trattati solo l'indirizzo e-mail, i cantoni e settori scelti, la lingua nonché data e indirizzo IP della conferma, esclusivamente per l'invio di questi avvisi; la base è la vostra iscrizione. Potete cancellarvi in ogni momento con il link presente in ogni e-mail o con un'e-mail con oggetto «Stop»; i dati sono poi cancellati entro 30 giorni e non vengono ceduti né usati per altri scopi. Iscrizione e invio passano da Brevo (Sendinblue SAS, Parigi, UE), che tratta gli indirizzi solo per nostro conto; le e-mail in arrivo sono inoltrate da ImprovMX Inc. (USA) a una casella presso Google LLC (Gmail). I feed RSS non richiedono iscrizione e non ci trasmettono dati personali."),
             ("Archivio e conservazione",
              "I dati sono aggiornati ogni giorno da simap.ch. Le pubblicazioni più "
              "vecchie restano conservate come archivio, anche quando non sono più "
@@ -933,7 +986,7 @@ PRIV: dict[str, dict] = {
              "record technical connection data such as IP addresses in its own server "
              "logs."),
             ("Subscription to new tenders (e-mail and RSS)",
-             "To receive new tenders by e-mail, write to abo@auftragsregister.ch stating canton and sector. Only the e-mail address, the chosen cantons and sectors and the language are processed, solely to send these alerts; the basis is your own request, which you can withdraw at any time with an e-mail with the subject \"Stop\"; the data are then deleted within 30 days. They are neither shared nor used for other purposes. Incoming e-mails are forwarded by ImprovMX Inc. (USA) to a mailbox at Google LLC (Gmail); an EU-based newsletter provider may be used for sending and processes the addresses only on our behalf. The RSS feeds need no sign-up and send us no personal data."),
+             "To receive new tenders by e-mail, sign up with the form on the subscription page or write to abo@auftragsregister.ch. The subscription only becomes active once you click the confirmation link sent by e-mail (double opt-in). Only the e-mail address, the chosen cantons and sectors, the language and the time and IP address of the confirmation are processed, solely to send these alerts; the basis is your own request. You can unsubscribe at any time via the link in every e-mail or with an e-mail with the subject \"Stop\"; the data are then deleted within 30 days and are neither shared nor used for other purposes. Sign-up and sending run through Brevo (Sendinblue SAS, Paris, EU), which processes the addresses only on our behalf; incoming e-mails are forwarded by ImprovMX Inc. (USA) to a mailbox at Google LLC (Gmail). The RSS feeds need no sign-up and send us no personal data."),
             ("Archive and retention",
              "The data is refreshed daily from simap.ch. Older publications are kept as "
              "an archive, even once they can no longer be queried through the simap.ch "

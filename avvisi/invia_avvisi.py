@@ -30,15 +30,17 @@ def api(method: str, path: str, body=None):
     key = KEYFILE.read_text().strip()
     req = urllib.request.Request("https://api.brevo.com/v3" + path, method=method,
                                  data=json.dumps(body).encode() if body is not None else None,
-                                 headers={"api-key": key, "Content-Type": "application/json", "Accept": "application/json"})
+                                 headers={"api-key": key, "Content-Type": "application/json", "Accept": "application/json", "User-Agent": "auftragsregister-avvisi/1.0"})
     with urllib.request.urlopen(req, timeout=60) as r:
         return json.loads(r.read().decode() or "{}")
 
+LIST_ID = 3   # lista Brevo "Avvisi bandi" (solo chi ha confermato il double opt-in ci entra)
+
 def contacts() -> list[dict]:
-    """Tutti i contatti confermati (double opt-in fatto = presenti nella lista) con i loro attributi."""
+    """I contatti della lista avvisi (double opt-in confermato) con i loro attributi."""
     out, offset = [], 0
     while True:
-        d = api("GET", f"/contacts?limit=500&offset={offset}")
+        d = api("GET", f"/contacts/lists/{LIST_ID}/contacts?limit=500&offset={offset}")
         page = d.get("contacts", [])
         out += [c for c in page if not c.get("emailBlacklisted")]
         if len(page) < 500: return out
@@ -57,10 +59,10 @@ def lang_of(contact: dict) -> str:
     return l if l in ("de", "fr", "it", "en") else "de"
 
 T = {
-    "de": ("Neue Ausschreibungen für Sie", "{n} neue Ausschreibungen seit {since}", "Eingabefrist", "Abmelden: Link am Ende der E-Mail.", "Keine neuen Ausschreibungen — es gibt heute nichts zu tun."),
-    "fr": ("Nouveaux appels d'offres pour vous", "{n} nouveaux appels d'offres depuis le {since}", "Délai", "Désabonnement : lien en bas de l'e-mail.", "Pas de nouvel appel d'offres — rien à faire aujourd'hui."),
-    "it": ("Nuovi bandi per voi", "{n} nuovi bandi dal {since}", "Termine", "Disiscrizione: link in fondo all'e-mail.", "Nessun nuovo bando — oggi niente da fare."),
-    "en": ("New tenders for you", "{n} new tenders since {since}", "Deadline", "Unsubscribe: link at the bottom.", "No new tenders — nothing to do today."),
+    "de": ("Neue Ausschreibungen für Sie", "{n} neue Ausschreibungen seit {since}", "Eingabefrist", "Abmelden", "Keine neuen Ausschreibungen — es gibt heute nichts zu tun."),
+    "fr": ("Nouveaux appels d'offres pour vous", "{n} nouveaux appels d'offres depuis le {since}", "Délai", "Se désabonner", "Pas de nouvel appel d'offres — rien à faire aujourd'hui."),
+    "it": ("Nuovi bandi per voi", "{n} nuovi bandi dal {since}", "Termine", "Cancellarsi", "Nessun nuovo bando — oggi niente da fare."),
+    "en": ("New tenders for you", "{n} new tenders since {since}", "Deadline", "Unsubscribe", "No new tenders — nothing to do today."),
 }
 
 def mail_html(lang: str, rows: list[dict], since: str) -> tuple[str, str]:
@@ -73,7 +75,9 @@ def mail_html(lang: str, rows: list[dict], since: str) -> tuple[str, str]:
                      f'{dl} {html.escape((t.get("offerDeadline") or "")[:10])}</span></li>')
     more = f'<p><a href="{SITE}/{lang}/ausschreibungen/">…</a></p>' if len(rows) > MAX_PER_MAIL else ""
     body = (f'<p>{head.format(n=len(rows), since=since)}</p><ul style="padding-left:18px">{"".join(items)}</ul>{more}'
-            f'<p style="color:#777;font-size:12px">auftragsregister.ch — Quelle: simap.ch. {foot}</p>')
+            f'<p style="color:#777;font-size:12px">auftragsregister.ch — Quelle: simap.ch · '
+            f'<a href="{{{{ unsubscribe }}}}" style="color:#777">{foot}</a> · '
+            f'<a href="{SITE}/{lang}/datenschutz/" style="color:#777">Datenschutz</a></p>')
     return f"{subj} ({len(rows)})", body
 
 def main() -> int:

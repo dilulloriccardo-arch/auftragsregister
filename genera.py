@@ -496,6 +496,21 @@ ul.plain li{padding:12px 0;border-bottom:1px solid var(--rule)}
   color:var(--ink);font-variant-numeric:tabular-nums}
 a.tag:hover{background:var(--accent);color:var(--paper)}
 .tag.on{background:var(--ink);color:var(--paper)}
+.form{margin-top:18px;max-width:600px;position:relative}
+.form .f{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+  font-weight:700;margin:18px 0 7px}
+.form input[type=email]{width:100%;box-sizing:border-box;border:1px solid var(--rule-strong);border-radius:8px;
+  padding:11px 12px;font-size:15px;background:var(--paper);color:var(--ink)}
+.form .pills{display:flex;flex-wrap:wrap;gap:7px}
+.form .pills label{cursor:pointer;position:relative}
+.form .pills input{position:absolute;opacity:0;width:1px;height:1px;left:0;top:0}
+.form .pills input:checked+.tag{background:var(--ink);color:var(--paper)}
+.form .pills input:focus-visible+.tag{outline:2px solid var(--accent)}
+.form button{margin-top:20px;border:0;background:var(--accent);color:var(--paper);border-radius:100px;
+  padding:12px 24px;font-size:14px;font-weight:600;cursor:pointer}
+.form .hp{position:absolute;left:-9999px;opacity:0}
+.form .msg{margin-top:12px;font-size:14px;min-height:1.4em}
+.form .msg.err{color:#b3261e}
 .state{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.13em;
   text-transform:uppercase;font-weight:700;color:var(--accent-soft)}
 .state i{width:7px;height:7px;background:var(--accent);border-radius:50%;display:block}
@@ -1328,11 +1343,51 @@ def abo_block(feed_path: str) -> str:
             f'{e(_m("abo_cta"))}</a> <a class="tag" href="{ORIGIN}{feed_path}">{e(_m("feed_link"))}</a></p></div>')
 
 
+BREVO_FORM = ("https://127f7d6f.sibforms.com/serve/MUIFAMYhHZXtCOd46O8Uq0H9DqIvbKjonCrMyCDZwBkCaUnmAUo6jz94s1wMVgHNKqluVahz4Xv"
+              "QKlERvQhB9gdn9vtuebLrP6KdDdG-3VnrsJ2y6Ex6qU_Zcqp-Wv-dehKLXyYafqlL6rKK8lfXo4avjXTlNc7fPriLfxDj82TdfHK5WP8LSbpWo5N"
+              "AVMf2FdpJXb1me5DNcx-xaQ==")
+
+# The form posts straight to Brevo (double opt-in, list "Avvisi bandi"). Without JS the
+# browser submits it normally and Brevo redirects to /abo/check/; with JS the answer is
+# shown in place, in the page's language. Canton and sector pills are folded into the two
+# text attributes the daily sender reads (KANTON, BRANCHE: codes joined by commas, or ALLE).
+ABO_JS = """(function(){var f=document.getElementById('abo');if(!f)return;var m=f.querySelector('.msg'),b=f.querySelector('button');
+function j(n){var v=[].map.call(f.querySelectorAll('input[name='+n+']:checked'),function(x){return x.value});return v.length?v.join(','):'ALLE'}
+function fill(){f.elements.KANTON.value=j('k');f.elements.BRANCHE.value=j('b')}
+f.addEventListener('change',fill);
+f.addEventListener('submit',function(ev){ev.preventDefault();fill();b.disabled=true;m.className='msg';m.textContent=f.dataset.sending;
+fetch(f.action+'?isAjax=1',{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(r){
+if(r.success){m.textContent=f.dataset.ok;}else{b.disabled=false;m.className='msg err';m.textContent=f.dataset.err;}
+}).catch(function(){b.disabled=false;f.submit();});});})();"""
+
+
 def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
     mail = ABO_MAIL
+    cant_pills = "".join(
+        f'<label><input type="checkbox" name="k" value="{e(c)}"><span class="tag">{e(canton_name_or(c, c))}</span></label>'
+        for c in sorted(by_cant))
+    top_sect = sorted(by_sect.items(), key=lambda kv: -len(kv[1]))[:24]
+    sect_pills = "".join(
+        f'<label><input type="checkbox" name="b" value="{e(c)}"><span class="tag">{e(sect_name(c)[:40])}</span></label>'
+        for c, r in top_sect)
+    form = (f'<div class="sec"><h2>{e(_m("abo_form_h2"))}</h2>'
+            f'<form id="abo" class="form" method="post" action="{BREVO_FORM}" data-sending="{e(_m("abo_form_sending"))}" '
+            f'data-ok="{e(_m("abo_form_ok"))}" data-err="{e(_m("abo_form_err", mail=mail))}">'
+            f'<label class="f" for="abo-email">{e(_m("abo_form_email"))}</label>'
+            f'<input id="abo-email" type="email" name="EMAIL" required autocomplete="email" placeholder="name@firma.ch">'
+            f'<span class="f">{e(_m("abo_form_cantons"))}</span><div class="pills">{cant_pills}</div>'
+            f'<span class="f">{e(_m("abo_form_sectors"))}</span><div class="pills">{sect_pills}</div>'
+            f'<input type="hidden" name="KANTON" value="ALLE"><input type="hidden" name="BRANCHE" value="ALLE">'
+            f'<input type="hidden" name="SPRACHE" value="{LANG}"><input type="hidden" name="locale" value="{LANG}">'
+            f'<input type="text" name="email_address_check" value="" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">'
+            f'<button type="submit">{e(_m("abo_form_submit"))}</button>'
+            f'<p class="msg" aria-live="polite"></p>'
+            f'<p class="sub">{e(_m("abo_form_consent"))} <a href="{BASE}/{LANG}/datenschutz/">{e(_.privacy)}</a></p>'
+            f'</form><script>{ABO_JS}</script></div>')
     b = [f'<div class="title"><div><p class="eyebrow">{_.running}</p><h1>{e(_m("abo_h1"))}</h1>'
          f'<p class="sum">{e(_m("abo_lead"))}</p></div></div>',
-         f'<div class="sec"><h2>{e(_m("abo_email_h2"))}</h2><p>'
+         form,
+         f'<div class="sec"><h2>{e(_m("abo_email_alt_h2"))}</h2><p>'
          + e(_m("abo_email_text", mail=mail)).replace(e(mail), f'<a href="mailto:{mail}?subject=Abo">{e(mail)}</a>')
          + "</p></div>",
          f'<div class="sec"><h2>{e(_m("abo_rss_h2"))}</h2><p>{e(_m("abo_rss_text"))}</p>'
@@ -1343,12 +1398,11 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
          + f'</div><h3>{e(_m("abo_by_sector"))}</h3><div class="tags">'
          + "".join(f'<a class="tag" href="{ORIGIN}/{LANG}/ausschreibungen/bereich/{e(c)}/feed.xml">'
                    f'{e(sect_name(c)[:40])}</a>'
-                   for c, r in sorted(by_sect.items(), key=lambda kv: -len(kv[1]))[:24])
+                   for c, r in top_sect)
          + "</div></div>"]
     write(f"/{LANG}/ausschreibungen/abo/index.html", page(
         fit_title(_m("abo_title"), " — auftragsregister.ch"), _m("abo_desc"),
         "\n".join(b), f"/{LANG}/ausschreibungen/abo/", _.tenders))
-
 
 def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
     """The open tenders, whole and by canton.
@@ -1623,6 +1677,24 @@ def build_privacy() -> None:
         "\n".join(b), f"/{LANG}/datenschutz/", _.register, pr["title"]))
 
 
+def build_abo_status() -> None:
+    """The two pages Brevo sends people to: after the form (check your mail) and after
+    the opt-in click (done). The redirect target is one fixed URL per form, so these
+    live outside the language tree, carry all four languages and stay out of the index."""
+    for slug, key in (("check", "abo_check"), ("ok", "abo_ok")):
+        blocks = "".join(
+            f'<p><b>{e(NAMES[l])}</b> — {e(lingue.m(key, l))} '
+            f'<a href="{BASE}/{l}/ausschreibungen/abo/">{e(lingue.m("abo_back", l))}</a></p>' for l in LANGS)
+        title = lingue.m(key + "_title", "de")
+        html = page(title, lingue.m(key, "de"),
+                    f'<div class="title"><div><p class="eyebrow">{e(_.tenders)}</p><h1>{e(title)}</h1></div></div>'
+                    f'<div class="sec">{blocks}</div>', f"/abo/{slug}/", _.tenders, robots="noindex,nofollow")
+        html = re.sub(r'<link rel="alternate"[^>]*>\n?', "", html)
+        for l in LANGS:      # the masthead language switch: point it at the real abo pages
+            html = html.replace(f'href="{BASE}/{l}/abo/{slug}/"', f'href="{BASE}/{l}/ausschreibungen/abo/"')
+        write(f"/abo/{slug}/index.html", html)
+
+
 def build_root() -> None:
     """The root used to be a language picker. Search Console (2026-09-07) showed it
     was the ONLY page Google indexed, ranking at position 61 for "ausschreibungen
@@ -1690,6 +1762,7 @@ def main() -> None:
               f"· {n[3]} cantoni · {n[4]} settori · {n[5]} bandi")
     LANG = "de"
     build_root()
+    build_abo_status()
     # Fonts are served from our own origin: the Google Fonts link both blocked first
     # paint for ~2 seconds on mobile and sent every visitor's IP to Google — the same
     # embedding European courts have already sanctioned. docs/ is wiped every build,
@@ -1765,7 +1838,7 @@ def build_sitemap() -> int:
     root: list[str] = []
     for f in OUT.rglob("index.html"):
         u = url_of(f)
-        if "/auftrag/" in u:          # noindex: fuori dalla sitemap, vedi build_awards
+        if "/auftrag/" in u or u.startswith("/abo/"):   # noindex: fuori dalla sitemap (schede: vedi build_awards; /abo/: pagine di ritorno Brevo)
             continue
         seg = u.strip("/").split("/")[0]
         (by_lang[seg] if seg in by_lang else root).append(u)
