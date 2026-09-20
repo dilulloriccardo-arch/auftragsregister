@@ -21,6 +21,7 @@ no figure is recomputed into something the source did not say.
 from __future__ import annotations
 
 import collections
+import hashlib
 import html
 import json
 import pathlib
@@ -1101,7 +1102,11 @@ def buyer_map(awards: list, floor: int = 3) -> dict:
         base_sl = slug(name)
         sl = base_sl
         if taken.get(sl, k) != k:
-            sl = f"{base_sl[:62]}-{abs(hash(k)) % 9973:04d}"
+            # hash() is randomized per process (PYTHONHASHSEED), so this suffix used to
+            # change on EVERY build: the 9 colliding buyer URLs 404ed each night and
+            # could never stay indexed (Search Console 404, 19.09.2026). blake2s is stable.
+            digest = hashlib.blake2s(k.encode("utf-8"), digest_size=8).hexdigest()
+            sl = f"{base_sl[:62]}-{int(digest, 16) % 9973:04d}"
         taken[sl] = k
         out[k] = (sl, name, counts[k])
     return {k: v for k, v in out.items() if v[2] >= floor}
