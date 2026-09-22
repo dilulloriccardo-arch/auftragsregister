@@ -398,146 +398,243 @@ def load() -> tuple[list, list]:
 # ------------------------------------------------------------------ the chrome
 
 CSS = grafici.CSS + """
-/* Direction: data magazine. A dark hero block carries the name, warm paper carries the
-   record, and one brick accent marks the figure that matters. Bricolage Grotesque sets
-   the display — a variable grotesque with real character rather than the safe default —
-   against Libre Franklin for reading.
+/* Direction: dark instrument panel. One visual world, deliberately dark — the record is
+   the light in the room. Bricolage Grotesque sets the display, Libre Franklin reads, and
+   every figure is monospaced so columns of numbers line up the way a ledger does.
 
-   Muted text is #736e65, not the #7a756c the sketch used: that measured 4.38:1 on this
-   paper, under the 4.5:1 AA floor, and it carries captions and lead paragraphs, which
-   are body text however small they look. */
+   Adapted 21.09.2026 from a design study, with three things deliberately NOT carried over:
+   no web fonts from a third party (the privacy page promises none, and the Google Fonts
+   link would send every visitor's IP abroad), no client-side view switching (the whole
+   value of this site is 81'891 pages a crawler can read), and no pricing. */
 :root{
-  --paper:#fbfaf7; --ink:#1a1a18; --muted:#736e65; --rule:#ddd8cf;
-  --rule-strong:#1a1a18; --accent:#c4472a; --accent-soft:#e8a08c; --signal:#b06a1e;
-  --wash:#f2eee6; --panel:#ffffff; --hero:#1a1a18; --hero-ink:#fbfaf7;
-  --hero-muted:#a8a29a; --mark:#c4472a;
+  --paper:#07090c; --paper-2:#0a0d12;
+  --ink:#f3f6f9; --muted:#9db0c2; --muted-2:#6d8093;
+  --rule:rgba(255,255,255,.085); --rule-strong:rgba(255,255,255,.17);
+  --accent:#ff4356; --accent-soft:#ff8a96; --signal:#ffb454;
+  --wash:rgba(255,255,255,.045); --panel:#0d1117;
+  --hero:transparent; --hero-ink:#f3f6f9; --hero-muted:#9db0c2;
+  --mark:#38b5dd;
+  --glass:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.017));
+  --d1:#10303f; --d2:#15485f; --d3:#1b6484; --d4:#2288ae; --d5:#38b5dd; --d6:#7fe3ff;
+  --ease:cubic-bezier(.22,.68,.24,1);
+  color-scheme:dark;
 }
-@media (prefers-color-scheme:dark){:root{
-  /* Chosen against the dark ground, not flipped: the brick lightens so it still reads
-     as the same accent, and the paper becomes a warm near-black rather than blue. */
-  --paper:#141311; --ink:#f0ece5; --muted:#a49d92; --rule:#2e2b26;
-  --rule-strong:#f0ece5; --accent:#e8734f; --accent-soft:#e8a08c; --signal:#d99a4a;
-  --wash:#1e1c19; --panel:#1c1a17; --hero:#0d0c0b; --hero-ink:#f7f4ee;
-  --hero-muted:#9b958a; --mark:#e8734f;
-}}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);
-  font-family:"Libre Franklin",system-ui,-apple-system,sans-serif;font-size:14.5px;
-  line-height:1.6;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1080px;margin:0 auto;padding:0 30px 60px}
+  font-family:"Libre Franklin",system-ui,-apple-system,sans-serif;font-size:15px;
+  line-height:1.6;-webkit-font-smoothing:antialiased;position:relative}
+/* Background, painted with pseudo-elements so no page needs extra markup. */
+body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
+  background:
+    radial-gradient(48vw 40vw at 6% -8%,rgba(56,181,221,.30),transparent 64%),
+    radial-gradient(42vw 36vw at 96% -4%,rgba(124,92,255,.22),transparent 64%),
+    radial-gradient(40vw 34vw at 58% 22%,rgba(255,67,86,.14),transparent 66%),
+    var(--paper)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:
+    repeating-linear-gradient(90deg,rgba(255,255,255,.032) 0 1px,transparent 1px 72px),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.032) 0 1px,transparent 1px 72px);
+  -webkit-mask-image:radial-gradient(130% 88% at 50% 0%,#000 26%,transparent 74%);
+  mask-image:radial-gradient(130% 88% at 50% 0%,#000 26%,transparent 74%)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 30px 60px}
 a{color:var(--ink);text-decoration:none;
   background-image:linear-gradient(var(--accent),var(--accent));
   background-size:100% 1px;background-repeat:no-repeat;background-position:0 100%;
-  padding-bottom:1px}
-a:hover{background-size:100% 2px}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.disp,h1,h2,.fig b,.masthead a.name{font-family:"Bricolage Grotesque","Libre Franklin",
-  system-ui,sans-serif}
-.mono{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
-.num{font-variant-numeric:tabular-nums}
-.eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
-  font-weight:600;margin:0}
+  padding-bottom:1px;transition:color .15s}
+a:hover{background-size:100% 2px;color:#fff}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:5px}
+.disp,h1,h2,h3,.fig b,.masthead a.name{font-family:"Bricolage Grotesque","Libre Franklin",
+  system-ui,sans-serif;font-variation-settings:"wdth" 92}
+.mono,.num,.when,.tag,.amount{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,
+  Consolas,monospace;font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+.eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--muted-2);font-weight:500;margin:0}
 .masthead{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
-  padding:18px 0 14px;border-bottom:2px solid var(--rule-strong);flex-wrap:wrap}
-.masthead a.name{font-weight:800;font-size:18px;letter-spacing:-.025em;color:var(--ink);
+  padding:18px 0 14px;border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.masthead a.name{font-weight:800;font-size:18px;letter-spacing:-.03em;color:var(--ink);
   background:none;padding:0}
 .masthead a.name:hover{color:var(--accent)}
 .langs{display:flex;gap:16px;padding:10px 0 0;font-size:12.5px;font-weight:600;
   justify-content:flex-end}
-.langs a{color:var(--muted);background:none;padding:0}
-.langs a:hover{color:var(--accent)}
+.langs a{color:var(--muted-2);background:none;padding:0}
+.langs a:hover{color:var(--ink)}
 .langs .on{color:var(--accent)}
-/* The hero is the one place the page goes dark: it names the thing and gets out of
-   the way. Bleeding it to the viewport edge keeps the paper below feeling like paper. */
-.title{background:var(--hero);color:var(--hero-ink);margin:0 -30px;padding:36px 30px 30px;
-  display:grid;grid-template-columns:1fr 250px;gap:44px;align-items:start}
+/* The hero no longer needs its own dark block: the whole page is dark. It keeps the
+   same class name and grid so every existing page renders unchanged. */
+.title{background:var(--hero);color:var(--hero-ink);margin:0;padding:44px 0 34px;
+  display:grid;grid-template-columns:1fr 280px;gap:48px;align-items:start;
+  border-bottom:1px solid var(--rule)}
 .title .eyebrow{color:var(--accent-soft)}
 .title h1{color:var(--hero-ink)}
-.title p.sum{margin:14px 0 0;color:var(--hero-muted);font-size:15.5px;max-width:50ch}
-h1{font-weight:800;letter-spacing:-.035em;line-height:1;margin:10px 0 0;
-  text-wrap:balance;font-size:clamp(30px,5vw,46px)}
-h2{font-weight:700;font-size:20px;margin:0 0 3px;letter-spacing:-.022em}
+.title p.sum{margin:16px 0 0;color:var(--hero-muted);font-size:16px;max-width:52ch}
+h1{font-weight:800;letter-spacing:-.045em;line-height:1;margin:12px 0 0;
+  text-wrap:balance;font-size:clamp(32px,5.4vw,54px)}
+h2{font-weight:700;font-size:23px;margin:0 0 3px;letter-spacing:-.032em}
+h3{font-weight:700;font-size:16px;margin:0;letter-spacing:-.02em}
 .runhead{display:flex;justify-content:space-between;gap:16px;padding:0 0 9px;
-  margin-top:34px;border-bottom:2px solid var(--rule-strong);font-size:11px;
-  letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  margin-top:40px;border-bottom:1px solid var(--rule-strong);font-size:10.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);font-weight:600;
+  font-family:ui-monospace,Menlo,monospace}
 .rail{border-left:0;padding-left:0;font-size:13px;color:var(--hero-muted)}
-.rail dt{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
-  color:var(--accent-soft);margin-top:14px;font-weight:600}
+.rail dt{font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent-soft);margin-top:15px;font-weight:600;
+  font-family:ui-monospace,Menlo,monospace}
 .rail dt:first-child{margin-top:0}
-.rail dd{margin:3px 0 0;font-size:14px;color:var(--hero-ink)}
-.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:26px;
-  padding:26px 0;border-bottom:1px solid var(--rule)}
-.fig{border:0;padding:0}
-.fig b{display:block;font-weight:700;font-size:clamp(24px,4vw,34px);letter-spacing:-.035em;
+.rail dd{margin:4px 0 0;font-size:14px;color:var(--hero-ink)}
+/* ── figures / KPI ─────────────────────────────────────────────────────── */
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;
+  padding:26px 0 6px;border-bottom:0}
+.fig{border:1px solid var(--rule);border-radius:16px;padding:20px 22px;background:var(--glass);
+  position:relative;overflow:hidden}
+.fig::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.26),transparent)}
+.fig b{display:block;font-weight:700;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.045em;
   font-variant-numeric:tabular-nums;line-height:1;overflow-wrap:anywhere}
-/* the accent marks the money, wherever it falls in the row — pinning it to
-   the second slot put it on "companies" on a canton page and on the sum on a
-   company page, so it stopped meaning anything */
 .fig.money b{color:var(--accent)}
-.fig span{display:block;margin-top:8px;font-size:11px;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--muted);font-weight:600}
-.sec{margin-top:6px}
-.scroll{overflow-x:auto}
+.fig span{display:block;margin-top:11px;font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--muted-2);font-weight:600;
+  font-family:ui-monospace,Menlo,monospace}
+.sec{margin-top:10px}
+.scroll{overflow-x:auto;max-width:100%}
+/* ── tables ────────────────────────────────────────────────────────────── */
 table{width:100%;border-collapse:collapse}
-th{text-align:left;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--muted);font-weight:700;padding:0 12px 10px 0;
-  border-bottom:2px solid var(--rule-strong);white-space:nowrap}
-td{padding:12px 12px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top;
-  font-size:14px}
+th{text-align:left;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--muted-2);font-weight:600;padding:0 14px 11px 0;
+  border-bottom:1px solid var(--rule-strong);white-space:nowrap;
+  font-family:ui-monospace,Menlo,monospace}
+td{padding:13px 14px 13px 0;border-bottom:1px solid var(--rule);vertical-align:top;
+  font-size:14.5px}
+tbody tr{transition:background .15s}
+tbody tr:hover{background:rgba(255,255,255,.032)}
 td.r,th.r{text-align:right;padding-right:0}
 td.sub,.sub{color:var(--muted);font-size:13px}
 ul.plain{list-style:none;margin:0;padding:0}
-ul.plain li{padding:12px 0;border-bottom:1px solid var(--rule)}
+ul.plain li{padding:13px 0;border-bottom:1px solid var(--rule)}
+ul.plain li:last-child{border-bottom:0}
 .row{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
-.when{color:var(--accent);font-size:12.5px;font-variant-numeric:tabular-nums;
-  white-space:nowrap;font-weight:600}
+.when{color:var(--accent);font-size:12px;white-space:nowrap;font-weight:600}
+/* ── tags / chips ──────────────────────────────────────────────────────── */
 .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
-.tag{border:0;background:var(--wash);border-radius:100px;padding:5px 13px;font-size:12px;
-  color:var(--ink);font-variant-numeric:tabular-nums}
-a.tag:hover{background:var(--accent);color:var(--paper)}
-.tag.on{background:var(--ink);color:var(--paper)}
-.form{margin-top:18px;max-width:600px;position:relative}
-.form .f{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
-  font-weight:700;margin:18px 0 7px}
-.form input[type=email]{width:100%;box-sizing:border-box;border:1px solid var(--rule-strong);border-radius:8px;
-  padding:11px 12px;font-size:15px;background:var(--paper);color:var(--ink)}
+.tag{border:1px solid var(--rule);background:var(--wash);border-radius:100px;
+  padding:6px 14px;font-size:12px;color:var(--muted);
+  transition:border-color .16s,color .16s,transform .16s var(--ease)}
+a.tag{background-image:none;padding-bottom:6px}
+a.tag:hover{background:var(--wash);border-color:var(--rule-strong);color:var(--ink);
+  transform:translateY(-1px)}
+.tag.on{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:600}
+/* ── glass panel, the one new primitive ────────────────────────────────── */
+.glass{position:relative;border:1px solid var(--rule);border-radius:18px;overflow:hidden;
+  background:var(--glass);margin-top:16px}
+.glass::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;
+  pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.26),transparent)}
+.glass .ch{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+  padding:18px 24px 14px}
+.glass .ch .side{font-family:ui-monospace,Menlo,monospace;font-size:10px;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--muted-2)}
+.glass .pad{padding:0 24px 22px}
+.glass .pad.top{padding-top:20px}
+/* ── canton map: 26 links, works with JavaScript switched off ──────────── */
+.gmap{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;padding:4px 24px 20px}
+.gmap a{border-radius:11px;aspect-ratio:1;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:3px;line-height:1;background-image:none;
+  padding-bottom:0;transition:transform .2s var(--ease),box-shadow .2s}
+.gmap a:hover{transform:scale(1.11);z-index:2;box-shadow:0 10px 28px -8px rgba(0,0,0,.85)}
+.gmap .c{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;font-weight:600}
+.gmap .v{font-family:ui-monospace,Menlo,monospace;font-size:8.5px;opacity:.72}
+.s1{background:var(--d1);color:#cfe6f2} .s2{background:var(--d2);color:#e4f2f9}
+.s3{background:var(--d3);color:#eaf6fb} .s4{background:var(--d4);color:#04141c}
+.s5{background:var(--d5);color:#04141c} .s6{background:var(--d6);color:#04141c}
+.mleg{display:flex;align-items:center;gap:9px;padding:0 24px 20px;font-size:10px;
+  color:var(--muted-2);font-family:ui-monospace,Menlo,monospace;letter-spacing:.08em}
+.mleg .sw{display:flex;gap:3px}
+.mleg i{width:20px;height:8px;border-radius:3px;display:block}
+/* ── comparison table ──────────────────────────────────────────────────── */
+.cmp th{padding:16px 18px;font-size:12px;letter-spacing:.03em;text-transform:none;
+  color:var(--muted);font-weight:600;font-family:"Libre Franklin",sans-serif;
+  border-bottom:1px solid var(--rule)}
+.cmp th.us{color:var(--accent-soft)}
+.cmp td{padding:15px 18px;font-size:14px}
+.cmp td.c{text-align:center;width:180px;font-family:ui-monospace,Menlo,monospace;
+  font-size:12.5px;color:var(--muted-2)}
+.cmp td.c.y{color:#3ddc97}
+/* ── FAQ ───────────────────────────────────────────────────────────────── */
+.faq details{border-bottom:1px solid var(--rule);padding:16px 0}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;font-weight:600;font-size:15.5px;list-style:none;display:flex;
+  justify-content:space-between;gap:14px;align-items:baseline}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);
+  font-family:ui-monospace,Menlo,monospace;flex:0 0 auto}
+.faq details[open] summary::after{content:"\2212"}
+.faq p{margin:12px 0 0;font-size:14.5px;color:var(--muted);max-width:74ch}
+/* ── subscribe form ────────────────────────────────────────────────────── */
+.form{margin-top:18px;max-width:620px;position:relative}
+.form .f{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted-2);font-weight:600;margin:20px 0 8px;
+  font-family:ui-monospace,Menlo,monospace}
+.form input[type=email]{width:100%;box-sizing:border-box;border:1px solid var(--rule-strong);
+  border-radius:12px;padding:13px 15px;font-size:15.5px;background:rgba(255,255,255,.05);
+  color:var(--ink);font-family:inherit;transition:border-color .2s,background .2s}
+.form input[type=email]::placeholder{color:var(--muted-2)}
+.form input[type=email]:focus{background:rgba(255,255,255,.085);border-color:var(--accent);
+  outline:none}
 .form .pills{display:flex;flex-wrap:wrap;gap:7px}
 .form .pills label{cursor:pointer;position:relative}
 .form .pills input{position:absolute;opacity:0;width:1px;height:1px;left:0;top:0}
-.form .pills input:checked+.tag{background:var(--ink);color:var(--paper)}
-.form .pills input:focus-visible+.tag{outline:2px solid var(--accent)}
-.form button{margin-top:20px;border:0;background:var(--accent);color:var(--paper);border-radius:100px;
-  padding:12px 24px;font-size:14px;font-weight:600;cursor:pointer}
+.form .pills input:checked+.tag{background:var(--ink);border-color:var(--ink);
+  color:var(--paper);font-weight:600}
+.form .pills input:focus-visible+.tag{outline:2px solid var(--accent);outline-offset:2px}
+.form button{margin-top:22px;border:1px solid #ff6b7a;
+  background:linear-gradient(180deg,#ff5b6b,#e8283c);color:#fff;border-radius:100px;
+  padding:13px 26px;font-size:14.5px;font-weight:600;cursor:pointer;
+  box-shadow:0 8px 26px -10px rgba(255,67,86,.8);
+  transition:transform .18s var(--ease),box-shadow .25s}
+.form button:hover{transform:translateY(-2px);
+  box-shadow:0 14px 36px -10px rgba(255,67,86,.95)}
+.form button:disabled{opacity:.55;transform:none;cursor:default}
 .form .hp{position:absolute;left:-9999px;opacity:0}
-.form .msg{margin-top:12px;font-size:14px;min-height:1.4em}
-.form .msg.err{color:#b3261e}
-.state{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.13em;
-  text-transform:uppercase;font-weight:700;color:var(--accent-soft)}
-.state i{width:7px;height:7px;background:var(--accent);border-radius:50%;display:block}
-.winner{border:1px solid var(--rule);background:var(--panel);padding:18px 20px;margin:8px 0 0}
-.winner .who{font-family:"Bricolage Grotesque",sans-serif;font-size:21px;font-weight:700;
-  letter-spacing:-.022em}
-.official{margin-top:24px;padding:14px 16px;background:var(--wash);
-  border-left:3px solid var(--accent);font-size:12.5px;color:var(--muted)}
-.prose p{margin:0 0 14px;font-size:15px;line-height:1.7;max-width:64ch}
-.bar{display:block;height:4px;background:var(--accent);margin-top:6px}
-.cols{display:grid;grid-template-columns:1fr 300px;gap:44px;padding-top:6px;
+.form .msg{margin-top:14px;font-size:14px;min-height:1.4em}
+.form .msg.err{color:var(--accent-soft)}
+/* ── misc ──────────────────────────────────────────────────────────────── */
+.state{display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;font-weight:600;color:#3ddc97;padding:5px 12px;border-radius:100px;
+  background:rgba(61,220,151,.12);font-family:ui-monospace,Menlo,monospace}
+.state i{width:6px;height:6px;background:currentColor;border-radius:50%;display:block}
+.winner{border:1px solid var(--rule);border-radius:16px;background:var(--glass);
+  padding:20px 22px;margin:10px 0 0}
+.winner .who{font-family:"Bricolage Grotesque",sans-serif;font-size:22px;font-weight:700;
+  letter-spacing:-.03em}
+.official{margin-top:26px;padding:15px 18px;background:rgba(255,67,86,.09);
+  border-left:2px solid var(--accent);border-radius:0 10px 10px 0;font-size:12.5px;
+  color:var(--muted)}
+.prose p{margin:0 0 15px;font-size:15.5px;line-height:1.7;max-width:66ch;color:var(--muted)}
+.prose p strong{color:var(--ink)}
+.bar{display:block;height:4px;border-radius:2px;
+  background:linear-gradient(90deg,var(--d3),var(--d6));margin-top:6px}
+.cols{display:grid;grid-template-columns:1fr 320px;gap:48px;padding-top:6px;
   align-items:start}
-.half{display:grid;grid-template-columns:1fr 1fr;gap:44px;padding-top:6px;align-items:start}
-/* Charts sit on their own white panel so the mark reads against a plain ground, not
-   against the warm paper the rest of the page uses. */
+.half{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding-top:6px;align-items:start}
+.cols>*,.half>*{min-width:0}
 figure{margin:16px 0 4px;background:var(--panel);border:1px solid var(--rule);
-  padding:18px 20px}
-figcaption{color:var(--muted);font-size:12px;margin-top:10px}
+  border-radius:16px;padding:20px 22px}
+figcaption{color:var(--muted-2);font-size:12px;margin-top:10px}
 svg.chart{margin:0}
-footer{border-top:2px solid var(--rule-strong);margin-top:52px;padding-top:18px;
-  color:var(--muted);font-size:12.5px}
-footer p{margin:0 0 6px;max-width:78ch}
+footer{border-top:1px solid var(--rule);margin-top:56px;padding-top:22px;
+  color:var(--muted-2);font-size:12.5px}
+footer p{margin:0 0 6px;max-width:80ch}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;
+  transition-duration:.01ms!important}}
 @media(max-width:860px){
   .wrap{padding:0 20px 44px}
-  .title{margin:0 -20px;padding:28px 20px 24px;grid-template-columns:1fr;gap:22px}
-  .cols,.half{grid-template-columns:1fr;gap:28px}
+  .title{padding:30px 0 24px;grid-template-columns:1fr;gap:24px}
+  .cols,.half{grid-template-columns:1fr;gap:30px}
+  .gmap{grid-template-columns:repeat(5,1fr);padding-inline:16px}
+  .gmap .v{display:none}
+  .glass .ch,.glass .pad,.mleg{padding-inline:16px}
+  .cmp td.c{width:96px;font-size:11.5px}
+  .cmp th,.cmp td{padding:12px 10px}
 }
 """
 
@@ -619,6 +716,26 @@ def lang_path(path: str, lang: str) -> str:
     return "/" + "/".join(parts) + "/"
 
 
+def fit_desc(text: str, limit: int = 155) -> str:
+    """A description Google shows whole.
+
+    The snippet is cut at roughly 155 characters, and 28 % of the pages were over it —
+    the worst at 224 — so a third of the site advertised itself with a sentence that
+    stopped mid-word. Cut at the last sentence that fits; if none does, at the last
+    word, and only then add an ellipsis. Measured 22.09.2026.
+    """
+    text = " ".join(text.split())
+    if len(text) <= limit:
+        return text
+    head = text[:limit]
+    # a full sentence is better than a trimmed one, but not if it throws away half
+    cut = max(head.rfind(". "), head.rfind("? "), head.rfind("! "))
+    if cut >= limit * 0.6:
+        return head[:cut + 1]
+    cut = head.rfind(" ")
+    return (head[:cut] if cut > 0 else head).rstrip(" ,;:—-") + "\u2026"
+
+
 def page(title: str, desc: str, body: str, path: str, kicker: str = "",
          leaf: str = "", robots: str = "", head_extra: str = "") -> str:
     # hreflang tells the search engine these are one page in four languages, not four
@@ -629,7 +746,7 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
     nav = "".join(
         (f'<span class="on">{e(NAMES[l])}</span>' if l == LANG
          else f'<a href="{BASE}{lang_path(path, l)}">{e(NAMES[l])}</a>') for l in LANGS)
-    return (HEAD.format(title=e(title), desc=e(desc), site=ORIGIN, base=BASE, path=path,
+    return (HEAD.format(title=e(title), desc=e(fit_desc(desc)), site=ORIGIN, base=BASE, path=path,
                         kicker=e(kicker or _.register), lang=LANG, alts=alts,
                         verify=VERIFY + (f'<meta name="robots" content="{robots}">\n' if robots else "") + head_extra,
                         sitename=e(_.site), langnav=nav, langlabel=e(_.language))
@@ -1409,6 +1526,53 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
         fit_title(_m("abo_title"), " — auftragsregister.ch"), _m("abo_desc"),
         "\n".join(b), f"/{LANG}/ausschreibungen/abo/", _.tenders))
 
+def canton_map(by_cant: dict) -> str:
+    """The 26 cantons as a heat grid. Every tile is a plain link to a page that already
+    exists, so it works with JavaScript switched off and a crawler follows all 26."""
+    if not by_cant:
+        return ""
+    counts = {c: len(r) for c, r in by_cant.items()}
+    hi, lo = max(counts.values()), min(counts.values())
+    # Rank, not raw count: tender volume follows a power law (Zurich alone carries a
+    # sixth of them), so a linear scale painted 13 of 26 cantons the same darkest shade
+    # and the map said nothing. Ranking spreads the six steps evenly across the field.
+    order = sorted(counts, key=lambda c: (-counts[c], c))
+    rank = {c: i for i, c in enumerate(order)}
+    tiles = []
+    for c, rows in sorted(by_cant.items()):
+        step = 6 - min(5, rank[c] * 6 // max(len(order), 1))
+        tiles.append(
+            f'<a class="s{step}" href="{BASE}/{LANG}/ausschreibungen/{e(c)}/" '
+            f'title="{e(canton_name_or(c, c))}: {len(rows)}">'
+            f'<span class="c">{e(c)}</span><span class="v">{len(rows)}</span></a>')
+    legend = "".join(f'<i style="background:var(--d{i})"></i>' for i in range(1, 7))
+    return (f'<div class="glass"><div class="gmap" style="padding-top:20px">'
+            f'{"".join(tiles)}</div>'
+            f'<div class="mleg"><span>{e(_m("open_map_few"))}</span>'
+            f'<span class="sw">{legend}</span><span>{e(_m("open_map_many"))}</span>'
+            f'<span style="margin-left:auto">{e(_m("open_map_note"))} '
+            f'({lo}\u2009\u2013\u2009{hi})</span></div></div>')
+
+
+def simap_compare() -> str:
+    """What simap.ch is, and what this register adds. Stated as fact, without claiming
+    simap lacks anything it actually offers: its alerts exist, they need an account."""
+    yes, no_, link = _m("cmp_yes"), _m("cmp_no"), _m("cmp_link")
+    rows = [("cmp_r1", yes, link), ("cmp_r2", yes, yes), ("cmp_r3", no_, yes),
+            ("cmp_r4", no_, yes), ("cmp_r5", no_, yes), ("cmp_r6", no_, yes),
+            ("cmp_r7", _m("cmp_acct"), yes), ("cmp_r8", _m("cmp_partly"), yes)]
+    body = "".join(
+        f'<tr><td>{e(_m(k))}</td>'
+        f'<td class="c{" y" if a == yes else ""}">{e(a)}</td>'
+        f'<td class="c{" y" if b == yes else ""}">{e(b)}</td></tr>' for k, a, b in rows)
+    return (f'<div class="sec"><h2>{e(_m("cmp_h2"))}</h2>'
+            f'<p class="sub" style="max-width:66ch;margin:10px 0 0">{e(_m("cmp_lead"))}</p>'
+            f'<div class="glass"><div class="scroll"><table class="cmp">'
+            f'<thead><tr><th>&nbsp;</th><th class="c" style="text-align:center">simap.ch</th>'
+            f'<th class="c us" style="text-align:center">{e(_m("cmp_us"))}</th></tr></thead>'
+            f"<tbody>{body}</tbody></table></div></div></div>")
+
+
 def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
     """The open tenders, whole and by canton.
 
@@ -1436,12 +1600,6 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
     for t in opens:
         if t.get("canton"):
             by_cant[t["canton"]].append(t)
-    nav = ('<div class="tags" style="margin-top:26px;padding-top:22px;'
-           'border-top:1px solid var(--rule)">'
-           + "".join(f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/{e(c)}/">{e(c)} {len(r)}</a>'
-                     for c, r in sorted(by_cant.items(), key=lambda kv: -len(kv[1])))
-           + "</div>")
-
     # Branche = CPV-Abteilung (erste zwei Ziffern): "45" Bauarbeiten, "71" Planung, "72" IT …
     by_sect = collections.defaultdict(list)
     for t in opens:
@@ -1462,6 +1620,16 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
          f'<p class="sum">' + e(_m("open_lead", n=len(opens))) + "</p></div>"
          f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{DATA_DATE}</dd>'
          f"<dt>{_.cantons}</dt><dd>{len(by_cant)}</dd></dl></div>",
+         f'<div class="figures">'
+         f'<div class="fig money"><b class="num">{len(opens)}</b>'
+         f'<span>{e(_m("open_kpi_open"))}</span></div>'
+         f'<div class="fig"><b class="num">{len(by_cant)}</b>'
+         f'<span>{e(_m("open_kpi_cantons"))}</span></div>'
+         f'<div class="fig"><b class="num">{len(by_sect)}</b>'
+         f'<span>{e(_m("open_kpi_sectors"))}</span></div>'
+         f'<div class="fig"><b class="num">{e(dmyy(next(iter(sorted((t.get("offerDeadline") or "" for t in opens if t.get("offerDeadline")))), "")))}</b>'
+         f'<span>{e(_m("open_kpi_next"))}</span></div></div>',
+         f'<div class="sec"><h2>{e(_m("open_by_canton_h2"))}</h2>' + canton_map(by_cant) + "</div>",
          # sorted BEFORE slicing: taking 400 in file order and then sorting those
          # states "the nearest deadlines" about an arbitrary subset of the 588.
          '<div class="sec">' + table(sorted(
@@ -1470,9 +1638,9 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
           + e(_if("showing_n", n=SHOWN, total=len(opens))) + "</p>"
           if len(opens) > SHOWN else ""),
          abo_block(f"/{LANG}/ausschreibungen/feed.xml"),
-         f'<div class="sec"><h2>{e(_m("open_by_canton_h2"))}</h2>' + nav + "</div>",
          f'<div class="sec"><h2>{e(_m("open_by_sector_h2"))}</h2>' + sect_nav + "</div>",
-         f'<div class="sec"><h2>{e(_m("open_howto_h2"))}</h2><p>{e(_m("open_howto"))}</p></div>']
+         f'<div class="sec"><h2>{e(_m("open_howto_h2"))}</h2><p>{e(_m("open_howto"))}</p></div>',
+         simap_compare()]
     write(f"/{LANG}/ausschreibungen/index.html", page(
         _m("open_title", n=len(opens)), _m("open_desc", n=len(opens)),
         "\n".join(b), f"/{LANG}/ausschreibungen/", _.tenders,
