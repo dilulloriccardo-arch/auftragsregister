@@ -46,32 +46,12 @@ def contacts() -> list[dict]:
         if len(page) < 500: return out
         offset += 500
 
-WILDCARD = {"ALLE", "ALL", "TOUS", "TUTTI", "*", ""}
-
-
-def _picks(raw, trim: int = 0) -> set:
-    """Chosen values, upper case, with the wildcard recognised BEFORE any trimming.
-
-    The sector list used to be built as x.strip()[:2], which turned the wildcard "ALLE"
-    into "AL": the test for "ALLE" could then never be true, so every contact who left
-    the sectors unchosen — the default on the form — matched nothing and would have got
-    no e-mail, ever. Found 22.09.2026, before anyone but the test address had signed up.
-    """
-    out = set()
-    for part in str(raw or "ALLE").split(","):
-        v = part.strip().upper()
-        if not v:
-            continue
-        out.add(v if v in WILDCARD else (v[:trim] if trim else v))
-    return out or {"ALLE"}
-
-
 def wants(contact: dict, tender: dict) -> bool:
     a = contact.get("attributes", {}) or {}
-    kant = _picks(a.get("KANTON"))
-    bran = _picks(a.get("BRANCHE"), trim=2)
-    ok_k = bool(kant & WILDCARD) or (tender.get("canton") or "").upper() in kant
-    ok_b = bool(bran & WILDCARD) or str(tender.get("cpvCode") or "")[:2] in bran
+    kant = [x.strip().upper() for x in str(a.get("KANTON") or "ALLE").split(",") if x.strip()]
+    bran = [x.strip()[:2] for x in str(a.get("BRANCHE") or "ALLE").split(",") if x.strip()]
+    ok_k = "ALLE" in kant or (tender.get("canton") or "").upper() in kant
+    ok_b = "ALLE" in bran or str(tender.get("cpvCode") or "")[:2] in bran
     return ok_k and ok_b
 
 def lang_of(contact: dict) -> str:
