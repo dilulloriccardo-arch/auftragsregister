@@ -896,6 +896,87 @@ def peers(comp: dict, keep: set[str]) -> dict:
     return out
 
 
+_TAIL_STOP = {"und", "oder", "sowie", "der", "die", "das", "des", "den", "dem", "für", "von", "vom",
+              "in", "im", "mit", "zu", "zur", "zum", "außer", "ausser", "ausgenommen",
+              "einschließlich", "einschliesslich", "et", "ou", "de", "des", "du", "la", "le", "les",
+              "pour", "en", "à", "au", "aux", "sauf", "y", "compris", "e", "o", "ed", "di", "del",
+              "della", "dei", "degli", "delle", "per", "con", "a", "al", "da", "and", "or", "of",
+              "the", "for", "with", "except", "including", "to"}
+
+
+def short_sector(name: str, limit: int) -> str:
+    """A division name short enough for a call-out or a pill, cut so it still reads.
+
+    The EU names run to 138 characters. A plain cut left "…und der Tierhaltung sowie"
+    or an open parenthesis; this ends on the last whole word, drops a trailing
+    conjunction, article or preposition and never stops inside "(…". On /de/ it
+    writes Swiss spelling (ss), as the rest of the German site does.
+    """
+    name = " ".join((name or "").split())
+    if LANG == "de":
+        name = name.replace("ß", "ss")
+    if len(name) <= limit:
+        return name
+    head = name[:limit + 1]
+    cut = head[:head.rfind(" ")] if " " in head else name[:limit]
+    if cut.count("(") > cut.count(")"):
+        cut = cut[:cut.rfind("(")]
+    words = cut.rstrip(" ,;:–—-").split()
+    while words and (words[-1].lower().strip(",;:") in _TAIL_STOP or words[-1].endswith("-")):
+        words.pop()
+    return " ".join(words).rstrip(" ,;:–—-") + "…"
+
+
+def top_division(cpv: collections.Counter) -> str:
+    """The company's main CPV division (first two digits), summed over ALL its awards.
+
+    Taking [:2] of the single most common 8-digit code misreads a firm whose work is
+    spread over many codes of one division (four awards under 71000000 would beat
+    twelve spread over different 45… codes): measured 23.09.2026, the two readings
+    disagree for 203 of the 2,558 company pages. Ties go to the lower code, so the page
+    is the same from one build to the next.
+    """
+    div: collections.Counter = collections.Counter()
+    for (code, _label), k in cpv.items():
+        d = str(code)[:2]
+        if len(d) == 2 and d.isdigit():
+            div[d] += k
+    return min(div.items(), key=lambda kv: (-kv[1], kv[0]))[0] if div else ""
+
+
+def alert_callout(c: dict) -> str:
+    """The free e-mail alert, offered where most visitors actually land.
+
+    8 of the 10 queries with the most impressions in Search Console are company names,
+    and the alert was offered only on the tenders pages. The link carries the
+    company's main canton and division so the form opens already filled in; it is
+    nofollow because thousands of parameter URLs are not pages worth crawling.
+    """
+    cant = next((k for k, _n in c["cant"].most_common() if k in CANTONS), "")
+    div = top_division(c["cpv"])
+    sector = short_sector(cpv_label(div + "000000", ""), 60) if div else ""
+    if not sector:
+        div = ""
+    where = ""
+    if cant:
+        cname = canton_name_or(cant, cant)
+        where = _m("alert_where", name=cname, of=lingue.canton_of(cant, cname, LANG))
+    if cant and div:
+        text = _m("alert_both", sector=sector, where=where)
+    elif cant:
+        text = _m("alert_canton", where=where)
+    elif div:
+        text = _m("alert_sector", sector=sector)
+    else:
+        text = _m("alert_none")
+    query = "&".join(f"{k}={v}" for k, v in (("k", cant), ("b", div)) if v)
+    href = f"{BASE}/{LANG}/ausschreibungen/abo/" + (f"?{query}" if query else "")
+    return (f'<div class="glass"><div class="pad top">'
+            f'<p style="margin:0;font-size:15.5px">{e(text)}</p>'
+            f'<p style="margin:14px 0 0"><a class="tag on" href="{e(href)}" rel="nofollow">'
+            f'{e(_m("alert_link"))}</a></p></div></div>')
+
+
 def build_companies(comp: dict, open_for: dict, sectors: set[str],
                     buyer_slugs: dict, peer_map: dict) -> dict:
     pages = {}
@@ -936,6 +1017,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
         if len(c["amounts"]) > 1:
             b.append(f'<div class="fig"><b>{chf(median(c["amounts"]))}</b><span>{_.median}</span></div>')
         b.append("</div>")
+        b.append(alert_callout(c))
 
         # Derived analysis (2026-09-07): what simap does not say — per-year rhythm and
         # how concentrated the client base is. Aggregation, not alteration (AGB §5).
@@ -982,10 +1064,10 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
 
         m = open_for.get(s, [])
         if m:
-            b.append('<div class="sec"><div class="runhead"><span>Offene Ausschreibungen '
-                     f'im selben Bereich</span><span>{len(m)}</span></div>'
-                     '<p class="sub" style="margin:10px 0 0">Laufende Ausschreibungen, deren '
-                     "CPV-Code den bisherigen Zuschlägen dieses Unternehmens entspricht.</p>"
+            # was hardcoded German, shipped on 1,938 company pages in each of fr/it/en
+            b.append(f'<div class="sec"><div class="runhead"><span>{e(_p.matched_tenders)}'
+                     f'</span><span>{len(m)}</span></div>'
+                     f'<p class="sub" style="margin:10px 0 0">{e(_p.matched_note)}</p>'
                      '<ul class="plain" style="margin-top:10px">')
             for t in m:
                 b.append(f'<li><div class="row"><div><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/">'
@@ -1167,7 +1249,7 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
 
         desc = f"{title[:110]} — {src.get('buyerName') or ''}"
         if is_open and src.get("offerDeadline"):
-            desc += f", Eingabefrist {src['offerDeadline'][:10]}"
+            desc += f", {_.deadline} {src['offerDeadline'][:10]}"
         elif aw and aw.get("winnerPrice"):
             desc += f", {_.award} {money(aw)}" + (f" — {ws[0]}" if ws else "")
         # Some award titles are genuinely identical — twelve read only "BKP 211
@@ -1248,8 +1330,13 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
         total = sum(chf_amount(a) or 0 for a in rows)
         table, nfirms = firm_table(rows, comp, pages, limit=40)
         cants = collections.Counter(a["canton"] for a in rows if a.get("canton"))
+        # fr/it/en: the EU label in the page's language — the publication's own label left
+        # the sector list German there. /de/ keeps simap's label: it is Swiss German
+        # ("Strasse"), where the EU vocabulary writes "Straße".
         sect = collections.Counter(
-            (de(a, "cpvLabel") or a.get("cpvLabel") or "", str(a.get("cpvCode") or ""))
+            (((de(a, "cpvLabel") or a.get("cpvLabel") or "") if LANG == "de" else
+              (cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") or "")),
+             str(a.get("cpvCode") or ""))
             for a in rows if a.get("cpvCode"))
         cant = cants.most_common(1)[0][0] if cants else ""
         b = [f'<div class="title"><div><p class="eyebrow">{_.buyer}'
@@ -1480,7 +1567,30 @@ f.addEventListener('change',fill);
 f.addEventListener('submit',function(ev){ev.preventDefault();fill();b.disabled=true;m.className='msg';m.textContent=f.dataset.sending;
 fetch(f.action+'?isAjax=1',{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(r){
 if(r.success){m.textContent=f.dataset.ok;}else{b.disabled=false;m.className='msg err';m.textContent=f.dataset.err;}
-}).catch(function(){b.disabled=false;f.submit();});});})();"""
+}).catch(function(){b.disabled=false;f.submit();});});
+var K='AG AI AR BE BL BS FR GE GL GR JU LU NE NW OW SG SH SO SZ TG TI UR VD VS ZG ZH'.split(' ');
+function pre(){var q,d={},hit=0;try{q=new URLSearchParams(location.search)}catch(x){return}
+if(!q.has('k')&&!q.has('b'))return;
+try{d=JSON.parse(document.getElementById('abo-names').textContent)||{}}catch(x){d={}}
+[['k',function(v){return K.indexOf(v)>=0}],['b',function(v){return /^[0-9]{2}$/.test(v)}]].forEach(function(g){
+var n=g[0],ok=g[1],nm=d[n]||{},box=f.querySelector('.pills[data-g="'+n+'"]'),seen={},c=0,last=null;
+q.getAll(n).join(',').split(',').forEach(function(v){v=v.trim().toUpperCase();
+if(c>=5||!v||!ok(v)||seen[v])return;seen[v]=1;
+var i=null,all=f.querySelectorAll('input[name="'+n+'"]'),z;
+for(z=0;z<all.length;z++){if(all[z].value===v){i=all[z];break}}
+if(!i){var t=Object.prototype.hasOwnProperty.call(nm,v)?String(nm[v]):'';if(!t||!box)return;
+var l=document.createElement('label'),s=document.createElement('span'),ref=null;i=document.createElement('input');
+i.type='checkbox';i.name=n;i.value=v;s.className='tag';s.textContent=t;l.appendChild(i);l.appendChild(s);
+if(n==='k'){for(z=0;z<all.length;z++){if(all[z].value>v){ref=all[z].parentNode;break}}}else{ref=last?last.nextSibling:box.firstChild;last=l}
+box.insertBefore(l,ref)}
+i.checked=true;c++;hit++})});
+if(!hit)return;fill();
+var em=f.elements.EMAIL,sec=f.parentNode||f;try{sec.scrollIntoView({block:'start'})}catch(x){}
+try{if(window.matchMedia&&matchMedia('(pointer:fine)').matches)em.focus({preventScroll:true})}catch(x){}}
+pre();})();"""
+# The prefill above reads ?k=ZH&b=45 (the links on the company pages): only the 26
+# canton codes and two-digit CPV divisions are accepted, at most five of each. A value
+# without a pill gets one, labelled from the build-time name map, never from the URL.
 
 
 def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
@@ -1490,22 +1600,31 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
         for c in sorted(by_cant))
     top_sect = sorted(by_sect.items(), key=lambda kv: -len(kv[1]))[:24]
     sect_pills = "".join(
-        f'<label><input type="checkbox" name="b" value="{e(c)}"><span class="tag">{e(sect_name(c)[:40])}</span></label>'
+        f'<label><input type="checkbox" name="b" value="{e(c)}"><span class="tag">{e(short_sector(sect_name(c), 40))}</span></label>'
         for c, r in top_sect)
+    # Names for pills the prefill may have to create: every canton, every CPV division,
+    # in the page's language. Escaped so no label can close the script element.
+    names = {"k": {c: canton_name_or(c, c) for c in sorted(CANTONS)},
+             "b": {k[:2]: short_sector(cpv_label(k, ""), 40) for k in sorted(_CPV)
+                   if re.fullmatch(r"\d{2}000000", k) and cpv_label(k, "")}}
+    names_json = (json.dumps(names, ensure_ascii=False, sort_keys=True)
+                  .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026"))
     form = (f'<div class="sec"><h2>{e(_m("abo_form_h2"))}</h2>'
             f'<form id="abo" class="form" method="post" action="{BREVO_FORM}" data-sending="{e(_m("abo_form_sending"))}" '
             f'data-ok="{e(_m("abo_form_ok"))}" data-err="{e(_m("abo_form_err", mail=mail))}">'
             f'<label class="f" for="abo-email">{e(_m("abo_form_email"))}</label>'
-            f'<input id="abo-email" type="email" name="EMAIL" required autocomplete="email" placeholder="name@firma.ch">'
-            f'<span class="f">{e(_m("abo_form_cantons"))}</span><div class="pills">{cant_pills}</div>'
-            f'<span class="f">{e(_m("abo_form_sectors"))}</span><div class="pills">{sect_pills}</div>'
+            f'<input id="abo-email" type="email" name="EMAIL" required autocomplete="email" '
+            f'placeholder="{e(_m("abo_form_placeholder"))}">'
+            f'<span class="f">{e(_m("abo_form_cantons"))}</span><div class="pills" data-g="k">{cant_pills}</div>'
+            f'<span class="f">{e(_m("abo_form_sectors"))}</span><div class="pills" data-g="b">{sect_pills}</div>'
             f'<input type="hidden" name="KANTON" value="ALLE"><input type="hidden" name="BRANCHE" value="ALLE">'
             f'<input type="hidden" name="SPRACHE" value="{LANG}"><input type="hidden" name="locale" value="{LANG}">'
             f'<input type="text" name="email_address_check" value="" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">'
             f'<button type="submit">{e(_m("abo_form_submit"))}</button>'
             f'<p class="msg" aria-live="polite"></p>'
             f'<p class="sub">{e(_m("abo_form_consent"))} <a href="{BASE}/{LANG}/datenschutz/">{e(_.privacy)}</a></p>'
-            f'</form><script>{ABO_JS}</script></div>')
+            f'</form><script type="application/json" id="abo-names">{names_json}</script>'
+            f'<script>{ABO_JS}</script></div>')
     b = [f'<div class="title"><div><p class="eyebrow">{_.running}</p><h1>{e(_m("abo_h1"))}</h1>'
          f'<p class="sum">{e(_m("abo_lead"))}</p></div></div>',
          form,

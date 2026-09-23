@@ -928,7 +928,8 @@ PRIV: dict[str, dict] = {
             ("Keine Daten über Besucherinnen und Besucher",
              "Diese Website setzt keine Cookies, verwendet keine Analyse- oder "
              "Tracking-Dienste und bindet keine Skripte oder Schriften von Dritten ein. "
-             "Es bestehen keine Benutzerkonten und es werden keine Formulare angeboten. "
+             "Es bestehen keine Benutzerkonten. Das einzige Formular ist die freiwillige Anmeldung für "
+             "E-Mail-Benachrichtigungen (siehe unten). "
              "Die Website wird über GitHub Pages ausgeliefert; der Hosting-Anbieter kann "
              "im Rahmen des Betriebs technische Verbindungsdaten wie IP-Adressen in "
              "eigenen Server-Logs erfassen."),
@@ -970,8 +971,9 @@ PRIV: dict[str, dict] = {
              "prépondérant à la transparence des marchés publics."),
             ("Aucune donnée sur les visiteurs",
              "Ce site n'utilise pas de cookies, aucun service d'analyse ou de suivi, et "
-             "n'intègre aucun script ni police provenant de tiers. Il n'y a ni compte "
-             "utilisateur ni formulaire. Le site est diffusé via GitHub Pages; "
+             "n'intègre aucun script ni police provenant de tiers. Il n'y a pas de compte "
+             "utilisateur ; le seul formulaire est l'inscription facultative aux alertes par "
+             "e-mail (voir ci-dessous). Le site est diffusé via GitHub Pages; "
              "l'hébergeur peut enregistrer dans ses propres journaux des données "
              "techniques de connexion telles que les adresses IP."),
             ("Abonnement aux nouveaux appels d'offres (e-mail et RSS)",
@@ -1012,7 +1014,8 @@ PRIV: dict[str, dict] = {
             ("Nessun dato sui visitatori",
              "Questo sito non usa cookie, non impiega servizi di analisi o "
              "tracciamento e non incorpora script o caratteri di terzi. Non esistono "
-             "account utente né moduli. Il sito è distribuito tramite GitHub Pages; il "
+             "account utente; l'unico modulo è l'iscrizione facoltativa agli avvisi via e-mail "
+             "(vedi sotto). Il sito è distribuito tramite GitHub Pages; il "
              "fornitore di hosting può registrare nei propri log dati tecnici di "
              "connessione come gli indirizzi IP."),
             ("Abbonamento ai nuovi bandi (e-mail e RSS)",
@@ -1051,8 +1054,8 @@ PRIV: dict[str, dict] = {
              "transparency of public procurement."),
             ("No data about visitors",
              "This site sets no cookies, uses no analytics or tracking services, and "
-             "embeds no third-party scripts or fonts. There are no user accounts and no "
-             "forms. The site is served through GitHub Pages; the hosting provider may "
+             "embeds no third-party scripts or fonts. There are no user accounts; the only form "
+             "is the optional sign-up for e-mail alerts (see below). The site is served through GitHub Pages; the hosting provider may "
              "record technical connection data such as IP addresses in its own server "
              "logs."),
             ("Subscription to new tenders (e-mail and RSS)",
@@ -1139,3 +1142,55 @@ CANTON_NAMES: dict[str, dict[str, str]] = {
            "TG": "Thurgau", "TI": "Ticino", "UR": "Uri", "VD": "Vaud", "VS": "Valais",
            "ZG": "Zug", "ZH": "Zurich"},
 }
+
+# The alert call-out on every company page (23.09.2026). Search Console: 8 of the 10
+# queries with the most impressions are company names, so visitors land on company
+# pages — and the free e-mail alert was offered only on the tenders pages.
+# {sector} is the company's main CPV division, {where} the phrase from alert_where.
+META["alert_both"] = {
+    "de": "Neue Ausschreibungen in «{sector}» {where} — an Werktagen per E-Mail, kostenlos.",
+    "fr": "Nouveaux appels d'offres « {sector} » {where} — les jours ouvrables par e-mail, gratuitement.",
+    "it": "Nuovi bandi «{sector}» {where} — nei giorni feriali via e-mail, gratis.",
+    "en": "New “{sector}” tenders {where} — on working days by e-mail, free.",
+}
+META["alert_sector"] = {
+    "de": "Neue Ausschreibungen in «{sector}» aus der ganzen Schweiz — an Werktagen per E-Mail, kostenlos.",
+    "fr": "Nouveaux appels d'offres « {sector} » dans toute la Suisse — les jours ouvrables par e-mail, gratuitement.",
+    "it": "Nuovi bandi «{sector}» in tutta la Svizzera — nei giorni feriali via e-mail, gratis.",
+    "en": "New “{sector}” tenders from all over Switzerland — on working days by e-mail, free.",
+}
+META["alert_canton"] = {
+    "de": "Neue öffentliche Ausschreibungen {where} — an Werktagen per E-Mail, kostenlos.",
+    "fr": "Nouveaux appels d'offres publics {where} — les jours ouvrables par e-mail, gratuitement.",
+    "it": "Nuovi bandi pubblici {where} — nei giorni feriali via e-mail, gratis.",
+    "en": "New public tenders {where} — on working days by e-mail, free.",
+}
+META["alert_none"] = {
+    "de": "Neue öffentliche Ausschreibungen — an Werktagen per E-Mail, kostenlos.",
+    "fr": "Nouveaux appels d'offres publics — les jours ouvrables par e-mail, gratuitement.",
+    "it": "Nuovi bandi pubblici — nei giorni feriali via e-mail, gratis.",
+    "en": "New public tenders — on working days by e-mail, free.",
+}
+META["alert_link"] = {"de": "Benachrichtigung einrichten", "fr": "Créer l'alerte",
+                      "it": "Attivare l'avviso", "en": "Set up the alert"}
+META["alert_where"] = {"de": "im Kanton {name}", "fr": "dans le canton {of}",
+                       "it": "nel cantone {of}", "en": "in the canton of {name}"}
+# The e-mail field's example address: "name@firma.ch" read German on every other page.
+META["abo_form_placeholder"] = {"de": "name@firma.ch", "fr": "nom@entreprise.ch",
+                                "it": "nome@azienda.ch", "en": "name@company.ch"}
+
+# "canton de …" / "cantone di …" take the article the name carries: du Valais, des
+# Grisons, d'Argovie; del Vallese, dei Grigioni, and Cantone Ticino with none at all.
+CANTON_OF: dict[str, dict[str, str]] = {
+    "fr": {"AG": "d'Argovie", "AI": "d'Appenzell Rhodes-Intérieures",
+           "AR": "d'Appenzell Rhodes-Extérieures", "GR": "des Grisons", "JU": "du Jura",
+           "OW": "d'Obwald", "TI": "du Tessin", "UR": "d'Uri", "VS": "du Valais"},
+    "it": {"GR": "dei Grigioni", "JU": "del Giura", "TI": "Ticino", "VS": "del Vallese"},
+}
+
+
+def canton_of(code: str, name: str, lang: str) -> str:
+    """The canton's name with the preposition it takes: 'de Vaud', 'du Valais'."""
+    if code in CANTON_OF.get(lang, {}):
+        return CANTON_OF[lang][code]
+    return {"fr": "de ", "it": "di "}.get(lang, "") + name

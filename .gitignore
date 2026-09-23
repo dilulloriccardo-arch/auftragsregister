@@ -4,4 +4,7 @@ dati/
 *.log
 __pycache__/
 *.bak
+*.bak[0-9]*
+*.bak-*
+*.orig
 indexnow.key
