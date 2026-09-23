@@ -1788,7 +1788,11 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
              f'<a class="tag" href="{BASE}/{LANG}/unternehmen/">{e(_i.all_companies)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/auftraggeber/">{e(_i.all_buyers)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/kanton/">{e(_i.all_cantons)}</a>'
-             f'<a class="tag" href="{BASE}/{LANG}/bereich/">{e(_i.all_sectors)}</a></div>')
+             f'<a class="tag" href="{BASE}/{LANG}/bereich/">{e(_i.all_sectors)}</a>'
+             # l'iscrizione agli avvisi era raggiungibile solo dalle pagine bandi e
+             # cantonali: dalla home, che e' la pagina piu' linkata del sito, non lo era
+             f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/abo/">'
+             f'{e(_m("abo_cta"))}</a></div>')
     col = grafici.columns(sorted(per_month(awards).items()), title=_i.volume_cap,
                           width=900, height=150)
     if col:
