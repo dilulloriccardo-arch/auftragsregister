@@ -8,3 +8,7 @@ __pycache__/
 *.bak-*
 *.orig
 indexnow.key
+
+# Subscriber e-mail addresses: never in the public repo (nDSG / GDPR).
+avvisi/stato.json
+avvisi/*.lock

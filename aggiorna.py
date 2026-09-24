@@ -10,8 +10,10 @@ because simap's API answers a wide date window with only its most recent weeks.
 from __future__ import annotations
 
 import datetime
+import http.client
 import json
 import pathlib
+import socket
 import subprocess
 import sys
 import time
@@ -32,13 +34,48 @@ def say(msg: str) -> None:
         f.write(line + "\n")
 
 
+_RETRY_WAIT = (15, 45, 120)
+_TRANSIENT = (urllib.error.URLError, ConnectionError, TimeoutError, socket.timeout,
+              http.client.HTTPException)
+
+
+def _pre_send(exc: BaseException) -> bool:
+    """True when the request certainly never reached the server (refused, no DNS)."""
+    reason = getattr(exc, "reason", exc)
+    return isinstance(reason, (ConnectionRefusedError, socket.gaierror))
+
+
+def _open(url: str, timeout: int, method: str = "GET", data=None, headers=None) -> bytes:
+    """urlopen with retries for transient network errors.
+
+    On 24.09.2026 one "connection reset by peer" while polling a run's status killed the
+    whole nightly: the awards were fetched, the tenders never, and nothing was published.
+    GETs are retried on any transient error. A POST is retried only when the connection
+    was never established, so a retry can never start a second paid Actor run.
+    """
+    for attempt in range(len(_RETRY_WAIT) + 1):
+        req = urllib.request.Request(url, data=data, method=method, headers=headers or {})
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if method == "GET" and e.code in (429, 500, 502, 503, 504) and attempt < len(_RETRY_WAIT):
+                say(f"  rete: HTTP {e.code}, nuovo tentativo fra {_RETRY_WAIT[attempt]} s")
+                time.sleep(_RETRY_WAIT[attempt]); continue
+            raise
+        except _TRANSIENT as e:
+            if (method == "GET" or _pre_send(e)) and attempt < len(_RETRY_WAIT):
+                say(f"  rete: {type(e).__name__}, nuovo tentativo fra {_RETRY_WAIT[attempt]} s")
+                time.sleep(_RETRY_WAIT[attempt]); continue
+            raise
+    raise RuntimeError("unreachable")
+
+
 def api(method: str, path: str, body=None):
     url = f"https://api.apify.com/v2{path}{'&' if '?' in path else '?'}token={TOKEN}"
-    req = urllib.request.Request(
-        url, data=json.dumps(body).encode() if body is not None else None,
-        method=method, headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        return json.loads(r.read().decode()).get("data", {})
+    raw = _open(url, 180, method, json.dumps(body).encode() if body is not None else None,
+                {"Content-Type": "application/json"})
+    return json.loads(raw.decode()).get("data", {})
 
 
 def run(kinds, frm, to, dest: pathlib.Path) -> int:
@@ -55,9 +92,9 @@ def run(kinds, frm, to, dest: pathlib.Path) -> int:
     if r["status"] != "SUCCEEDED":
         say(f"  ATTENZIONE run {rid} finito {r['status']} — {dest.name} non aggiornato")
         return -1
-    items = json.loads(urllib.request.urlopen(
+    items = json.loads(_open(
         f"https://api.apify.com/v2/datasets/{r['defaultDatasetId']}/items"
-        f"?token={TOKEN}&clean=true&limit=50000", timeout=300).read())
+        f"?token={TOKEN}&clean=true&limit=50000", 300))
     # MERGE, never replace. simap matches a date window against each project's NEWEST
     # publication, so an award from July that gets a correction in August stops
     # matching July — refetching a month and overwriting it silently drops those rows.
