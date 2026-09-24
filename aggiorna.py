@@ -12,7 +12,9 @@ from __future__ import annotations
 import datetime
 import http.client
 import json
+import os
 import pathlib
+import shutil
 import socket
 import subprocess
 import sys
@@ -153,6 +155,47 @@ def embargo_ok() -> bool:
         f"ancora essere pubblicati (AGB API Ziff. 5) — non faccio nulla")
     return False
 
+
+def git(*args: str) -> subprocess.CompletedProcess:
+    return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True)
+
+
+def unpushed() -> str:
+    """How many local commits GitHub does not have yet ("" when git cannot tell: treated as unsafe)."""
+    r = git("rev-list", "--count", "@{u}..HEAD")
+    return r.stdout.strip() if r.returncode == 0 else ""
+
+
+def mark_published(complete: bool = True) -> None:
+    """Called only when every commit is on GitHub. The alert sender reads nothing but this copy, so an
+    e-mail never links to a page a failed push or failed checks kept offline; ultimo_ok.txt tells the
+    catch-up job the day is done. dati/ is gitignored: neither file ever reaches the public repo."""
+    src = DATI / "gare_aperte.json"
+    if src.exists():
+        tmp = DATI / "gare_pubblicate.json.tmp"
+        shutil.copyfile(src, tmp)
+        os.replace(tmp, DATI / "gare_pubblicate.json")
+    if complete:   # a failed Apify pull leaves the day open, so the catch-up tries again
+        (DATI / "ultimo_ok.txt").write_text(datetime.date.today().isoformat() + "\n")
+    else:
+        say("  un download Apify e' fallito: giornata NON segnata come fatta, il recupero riprovera'")
+
+
+def send_alerts() -> None:
+    """E-mail alerts on the data just published. Never turns a good nightly red."""
+    try:
+        r = subprocess.run([sys.executable, str(ROOT / "avvisi" / "invia_avvisi.py")],
+                           capture_output=True, text=True, cwd=ROOT, timeout=1500)
+    except Exception as exc:   # hung or missing sender: the 12:30 fallback run tries again
+        say(f"  ATTENZIONE avvisi non eseguiti: {type(exc).__name__}")
+        return
+    out = (r.stdout.strip().splitlines() or [""])[-1]
+    if r.returncode == 0:
+        say(f"  avvisi: {out}")
+    else:
+        say(f"  ATTENZIONE avvisi exit {r.returncode}: {out} {r.stderr.strip()[-400:]}")
+
+
 def main() -> int:
     if not embargo_ok():
         return 0
@@ -186,22 +229,42 @@ def main() -> int:
     pages = sum(1 for _ in (ROOT / "docs").rglob("index.html"))
     # Publishing is a plain commit: unchanged pages cost nothing in git, so a daily
     # push of 76k files only carries the ones the day actually changed.
-    subprocess.run(["git", "add", "-A"], cwd=ROOT, capture_output=True)
-    st = subprocess.run(["git", "status", "--porcelain"], cwd=ROOT,
-                        capture_output=True, text=True).stdout.strip()
+    add = git("add", "-A")
+    if add.returncode != 0:
+        say(f"  ATTENZIONE git add fallito — NON pubblicato: {add.stderr.strip()[:300]}")
+        return 1
+    st = git("status", "--porcelain").stdout.strip()
     if not st:
-        say(f"nessun cambiamento — {pages} pagine invariate")
+        # a clean tree only means nothing changed since the last COMMIT: after a failed push that
+        # commit is still local, so push it before telling anyone the pages exist
+        ahead = unpushed()
+        if ahead != "0":
+            push = git("push", "-q")
+            if push.returncode != 0 or unpushed() != "0":
+                say(f"  ATTENZIONE push dei commit in sospeso fallito — NON pubblicato: {push.stderr.strip()[:300]}")
+                return 1
+            say(f"pubblicato: {ahead or '?'} commit in sospeso, nessuna pagina nuova")
+        else:
+            say(f"nessun cambiamento — {pages} pagine invariate")
+        mark_published(-1 not in (n_now, n_prev, n_open))
+        send_alerts()
         return 0
     changed = len(st.splitlines())
-    subprocess.run(["git", "-c", "user.email=dilulloriccardo@gmail.com",
-                    "-c", "user.name=Riccardo Di Lullo", "commit", "-q",
-                    "-m", f"Aggiornamento {datetime.date.today():%Y-%m-%d}: "
-                          f"{changed} pagine cambiate"], cwd=ROOT, capture_output=True)
-    push = subprocess.run(["git", "push", "-q"], cwd=ROOT, capture_output=True, text=True)
+    commit = git("-c", "user.email=dilulloriccardo@gmail.com", "-c", "user.name=Riccardo Di Lullo",
+                 "commit", "-q", "-m", f"Aggiornamento {datetime.date.today():%Y-%m-%d}: "
+                                       f"{changed} pagine cambiate")
+    if commit.returncode != 0:
+        say(f"  ATTENZIONE commit fallito — NON pubblicato: {(commit.stderr or commit.stdout).strip()[:300]}")
+        return 1
+    push = git("push", "-q")
     if push.returncode != 0:
         say(f"  ATTENZIONE push fallito: {push.stderr.strip()[:300]}")
         return 1
+    if unpushed() != "0":
+        say("  ATTENZIONE dopo il push GitHub non ha ancora tutti i commit — NON pubblicato")
+        return 1
     say(f"pubblicato: {changed} pagine cambiate su {pages}")
+    mark_published(-1 not in (n_now, n_prev, n_open))
 
     # Only the pages that changed: submitting the whole site nightly is what gets a
     # host throttled, and IndexNow exists precisely to avoid that.
@@ -224,6 +287,7 @@ def main() -> int:
     except Exception as exc:
         say(f"  IndexNow saltato: {type(exc).__name__}")
     say(f"dati: {n_now} questo mese, {n_prev} il mese scorso, {n_open} bandi aperti")
+    send_alerts()
     return 0
 
 

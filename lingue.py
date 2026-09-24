@@ -914,9 +914,10 @@ PRIV: dict[str, dict] = {
              "genannten Anbieterinnen und Anbieter sind Unternehmen. Ein Teil der "
              "Zuschlagsempfänger sind jedoch Einzelfirmen und selbständig Erwerbende: in "
              "diesen Fällen erscheint der Name einer natürlichen Person zusammen mit dem "
-             "Auftrag, dem Betrag und der Auftraggeberin. Weitere Personendaten - "
-             "Kontaktpersonen, E-Mail-Adressen, Telefonnummern - werden nicht "
-             "übernommen und nicht veröffentlicht."),
+             "Auftrag, dem Betrag und der Auftraggeberin. Kontaktpersonen, "
+             "E-Mail-Adressen und Telefonnummern werden nicht gesondert erfasst; stehen "
+             "solche Angaben im Text einer Ausschreibung, werden sie unverändert aus "
+             "simap.ch übernommen."),
             ("Zweck und Rechtfertigung",
              "Zweck ist es, bereits amtlich veröffentlichte Vergabeentscheide auffindbar "
              "und vergleichbar zu machen. Die Daten wurden von Behörden des Bundes, der "
@@ -934,7 +935,7 @@ PRIV: dict[str, dict] = {
              "im Rahmen des Betriebs technische Verbindungsdaten wie IP-Adressen in "
              "eigenen Server-Logs erfassen."),
             ("Abonnement neuer Ausschreibungen (E-Mail und RSS)",
-             "Wer neue Ausschreibungen per E-Mail erhalten möchte, meldet sich über das Formular auf der Abo-Seite an oder schreibt an abo@auftragsregister.ch. Die Anmeldung wird erst aktiv, wenn der Bestätigungslink in der zugestellten E-Mail angeklickt wird (Double-Opt-in). Bearbeitet werden nur die E-Mail-Adresse, die gewählten Kantone und Branchen, die Sprache sowie Zeitpunkt und IP-Adresse der Bestätigung, ausschliesslich zum Versand dieser Benachrichtigungen; Grundlage ist Ihre eigene Anmeldung. Abmelden können Sie sich jederzeit über den Link in jeder E-Mail oder mit einer E-Mail mit dem Betreff «Stop»; die Daten werden danach innert 30 Tagen gelöscht und weder weitergegeben noch für andere Zwecke verwendet. Anmeldung und Versand laufen über Brevo (Sendinblue SAS, Paris, EU), das die Adressen nur in unserem Auftrag verarbeitet; eingehende E-Mails werden über ImprovMX Inc. (USA, Weiterleitung) an ein Postfach bei Google LLC (Gmail) zugestellt. Die RSS-Feeds erfordern keine Anmeldung und übermitteln uns keine Personendaten."),
+             "Wer neue Ausschreibungen per E-Mail erhalten möchte, meldet sich über das Formular auf der Abo-Seite an oder schreibt an abo@auftragsregister.ch. Die Anmeldung wird erst aktiv, wenn der Bestätigungslink in der zugestellten E-Mail angeklickt wird (Double-Opt-in). Bearbeitet werden die E-Mail-Adresse, die gewählten Kantone und Branchen, die Sprache, Zeitpunkt und IP-Adresse der Bestätigung sowie während höchstens 45 Tagen die Liste der bereits zugestellten Ausschreibungen, damit keine doppelt kommt; alles ausschliesslich zum Versand dieser Benachrichtigungen, Grundlage ist Ihre eigene Anmeldung. Die E-Mails enthalten ein Zählpixel und Links, die über einen Server von Brevo laufen; Brevo kann dabei Öffnungen und Klicks erfassen. Sie können das verhindern, indem Sie das automatische Laden von Bildern ausschalten und die Ausschreibungen direkt auf auftragsregister.ch aufrufen. Abmelden können Sie sich jederzeit über den Link in jeder E-Mail oder mit einer E-Mail mit dem Betreff «Stop»; danach nehmen wir Sie innert 30 Tagen aus der Verteilerliste und löschen die Liste der zugestellten Ausschreibungen. Bei Brevo bleiben Ihr Kontakteintrag (unter anderem E-Mail-Adresse und Zeitpunkt von Anmeldung und Bestätigung), der Vermerk der Abmeldung und die Versandprotokolle der bereits zugestellten E-Mails bestehen, damit Sie sicher keine weiteren E-Mails erhalten. Die Daten werden weder weitergegeben noch für andere Zwecke verwendet. Anmeldung und Versand laufen über Brevo (Sendinblue SAS, Paris, EU), das die Adressen nur in unserem Auftrag verarbeitet; eingehende E-Mails werden über ImprovMX Inc. (USA, Weiterleitung) an ein Postfach bei Google LLC (Gmail) zugestellt. Die RSS-Feeds erfordern keine Anmeldung und übermitteln uns keine Personendaten."),
             ("Archiv und Aufbewahrung",
              "Der Datenbestand wird täglich aus simap.ch aktualisiert. Ältere "
              "Publikationen bleiben als Archiv erhalten, auch wenn sie über die "
@@ -958,9 +959,10 @@ PRIV: dict[str, dict] = {
              "Ce site reproduit des publications officielles de simap.ch. La plupart des "
              "adjudicataires sont des entreprises. Certains sont toutefois des raisons "
              "individuelles ou des indépendants: dans ces cas, le nom d'une personne "
-             "physique apparaît avec le marché, le montant et l'adjudicateur. Aucune "
-             "autre donnée personnelle - personnes de contact, adresses e-mail, numéros "
-             "de téléphone - n'est reprise ni publiée."),
+             "physique apparaît avec le marché, le montant et l'adjudicateur. Les personnes "
+             "de contact, adresses e-mail et numéros de téléphone ne sont pas collectés "
+             "séparément ; lorsque le texte d'un appel d'offres en contient, ils sont "
+             "repris tels quels de simap.ch."),
             ("Finalité et justification",
              "La finalité est de rendre repérables et comparables des décisions "
              "d'adjudication déjà publiées officiellement. Les données ont été publiées "
@@ -977,7 +979,7 @@ PRIV: dict[str, dict] = {
              "l'hébergeur peut enregistrer dans ses propres journaux des données "
              "techniques de connexion telles que les adresses IP."),
             ("Abonnement aux nouveaux appels d'offres (e-mail et RSS)",
-             "Pour recevoir les nouveaux appels d'offres par e-mail, on s'inscrit via le formulaire de la page Abonnement ou on écrit à abo@auftragsregister.ch. L'inscription n'est active qu'après un clic sur le lien de confirmation envoyé par e-mail (double opt-in). Seuls l'adresse e-mail, les cantons et branches choisis, la langue ainsi que la date et l'adresse IP de la confirmation sont traités, uniquement pour l'envoi de ces alertes ; la base est votre propre inscription. Vous pouvez vous désabonner à tout moment par le lien présent dans chaque e-mail ou par un e-mail avec l'objet « Stop » ; les données sont ensuite effacées dans les 30 jours et ne sont ni transmises ni utilisées à d'autres fins. L'inscription et l'envoi passent par Brevo (Sendinblue SAS, Paris, UE), qui traite les adresses uniquement pour notre compte ; les e-mails entrants sont acheminés par ImprovMX Inc. (États-Unis, transfert) vers une boîte chez Google LLC (Gmail). Les flux RSS ne demandent aucune inscription et ne nous transmettent aucune donnée personnelle."),
+             "Pour recevoir les nouveaux appels d'offres par e-mail, on s'inscrit via le formulaire de la page Abonnement ou on écrit à abo@auftragsregister.ch. L'inscription n'est active qu'après un clic sur le lien de confirmation envoyé par e-mail (double opt-in). Sont traités l'adresse e-mail, les cantons et branches choisis, la langue, la date et l'adresse IP de la confirmation ainsi que, pendant 45 jours au plus, la liste des appels d'offres déjà envoyés, pour qu'aucun ne parte deux fois ; le tout uniquement pour l'envoi de ces alertes, sur la base de votre propre inscription. Les e-mails contiennent un pixel de comptage et des liens qui passent par un serveur de Brevo ; Brevo peut ainsi enregistrer les ouvertures et les clics. Vous pouvez l'empêcher en désactivant le chargement automatique des images et en consultant les appels d'offres directement sur auftragsregister.ch. Vous pouvez vous désabonner à tout moment par le lien présent dans chaque e-mail ou par un e-mail avec l'objet « Stop » ; nous vous retirons ensuite dans les 30 jours de la liste de diffusion et effaçons la liste des appels d'offres envoyés. Chez Brevo restent votre fiche de contact (notamment l'adresse e-mail et la date de l'inscription et de la confirmation), la mention de la désinscription et les journaux des e-mails déjà envoyés, pour que vous ne receviez plus aucun e-mail. Les données ne sont ni transmises ni utilisées à d'autres fins. L'inscription et l'envoi passent par Brevo (Sendinblue SAS, Paris, UE), qui traite les adresses uniquement pour notre compte ; les e-mails entrants sont acheminés par ImprovMX Inc. (États-Unis, transfert) vers une boîte chez Google LLC (Gmail). Les flux RSS ne demandent aucune inscription et ne nous transmettent aucune donnée personnelle."),
             ("Archive et conservation",
              "Les données sont mises à jour chaque jour depuis simap.ch. Les "
              "publications plus anciennes sont conservées sous forme d'archive, même "
@@ -1000,9 +1002,10 @@ PRIV: dict[str, dict] = {
              "Questo sito riproduce pubblicazioni ufficiali di simap.ch. La maggior parte "
              "degli aggiudicatari sono imprese. Alcuni sono però ditte individuali e "
              "lavoratori indipendenti: in questi casi il nome di una persona fisica "
-             "compare insieme all'appalto, all'importo e al committente. Nessun altro "
-             "dato personale - persone di contatto, indirizzi e-mail, numeri di telefono "
-             "- viene ripreso o pubblicato."),
+             "compare insieme all'appalto, all'importo e al committente. Persone di "
+             "contatto, indirizzi e-mail e numeri di telefono non vengono raccolti a "
+             "parte; se il testo di un bando li contiene, sono ripresi invariati da "
+             "simap.ch."),
             ("Finalità e giustificazione",
              "La finalità è rendere reperibili e confrontabili decisioni di "
              "aggiudicazione già pubblicate ufficialmente. I dati sono stati pubblicati "
@@ -1019,7 +1022,7 @@ PRIV: dict[str, dict] = {
              "fornitore di hosting può registrare nei propri log dati tecnici di "
              "connessione come gli indirizzi IP."),
             ("Abbonamento ai nuovi bandi (e-mail e RSS)",
-             "Per ricevere i nuovi bandi via e-mail ci si iscrive con il modulo della pagina Abbonamento oppure si scrive a abo@auftragsregister.ch. L'iscrizione diventa attiva solo dopo il clic sul link di conferma inviato via e-mail (double opt-in). Vengono trattati solo l'indirizzo e-mail, i cantoni e settori scelti, la lingua nonché data e indirizzo IP della conferma, esclusivamente per l'invio di questi avvisi; la base è la vostra iscrizione. Potete cancellarvi in ogni momento con il link presente in ogni e-mail o con un'e-mail con oggetto «Stop»; i dati sono poi cancellati entro 30 giorni e non vengono ceduti né usati per altri scopi. Iscrizione e invio passano da Brevo (Sendinblue SAS, Parigi, UE), che tratta gli indirizzi solo per nostro conto; le e-mail in arrivo sono inoltrate da ImprovMX Inc. (USA) a una casella presso Google LLC (Gmail). I feed RSS non richiedono iscrizione e non ci trasmettono dati personali."),
+             "Per ricevere i nuovi bandi via e-mail ci si iscrive con il modulo della pagina Abbonamento oppure si scrive a abo@auftragsregister.ch. L'iscrizione diventa attiva solo dopo il clic sul link di conferma inviato via e-mail (double opt-in). Vengono trattati l'indirizzo e-mail, i cantoni e settori scelti, la lingua, data e indirizzo IP della conferma e, per al massimo 45 giorni, l'elenco dei bandi già inviati, perché nessuno parta due volte; il tutto esclusivamente per l'invio di questi avvisi, sulla base della vostra iscrizione. Le e-mail contengono un pixel di conteggio e link che passano da un server di Brevo; Brevo può così registrare aperture e clic. Potete impedirlo disattivando il caricamento automatico delle immagini e aprendo i bandi direttamente su auftragsregister.ch. Potete cancellarvi in ogni momento con il link presente in ogni e-mail o con un'e-mail con oggetto «Stop»; entro 30 giorni vi togliamo poi dalla lista di invio e cancelliamo l'elenco dei bandi inviati. Presso Brevo restano la vostra scheda di contatto (fra l'altro indirizzo e-mail e data di iscrizione e conferma), l'annotazione della disiscrizione e i registri delle e-mail già inviate, perché non riceviate più alcuna e-mail. I dati non vengono ceduti né usati per altri scopi. Iscrizione e invio passano da Brevo (Sendinblue SAS, Parigi, UE), che tratta gli indirizzi solo per nostro conto; le e-mail in arrivo sono inoltrate da ImprovMX Inc. (USA) a una casella presso Google LLC (Gmail). I feed RSS non richiedono iscrizione e non ci trasmettono dati personali."),
             ("Archivio e conservazione",
              "I dati sono aggiornati ogni giorno da simap.ch. Le pubblicazioni più "
              "vecchie restano conservate come archivio, anche quando non sono più "
@@ -1042,9 +1045,10 @@ PRIV: dict[str, dict] = {
              "This site reproduces official publications from simap.ch. Most awardees "
              "are companies. Some, however, are sole proprietorships and self-employed "
              "individuals: in those cases the name of a natural person appears together "
-             "with the contract, the amount and the contracting authority. No other "
-             "personal data - contact persons, e-mail addresses, telephone numbers - is "
-             "taken over or published."),
+             "with the contract, the amount and the contracting authority. Contact persons, "
+             "e-mail addresses and telephone numbers are not collected separately; where "
+             "the text of a tender contains them, they are taken over unchanged from "
+             "simap.ch."),
             ("Purpose and justification",
              "The purpose is to make already officially published award decisions "
              "findable and comparable. The data was published by federal, cantonal and "
@@ -1059,7 +1063,7 @@ PRIV: dict[str, dict] = {
              "record technical connection data such as IP addresses in its own server "
              "logs."),
             ("Subscription to new tenders (e-mail and RSS)",
-             "To receive new tenders by e-mail, sign up with the form on the subscription page or write to abo@auftragsregister.ch. The subscription only becomes active once you click the confirmation link sent by e-mail (double opt-in). Only the e-mail address, the chosen cantons and sectors, the language and the time and IP address of the confirmation are processed, solely to send these alerts; the basis is your own request. You can unsubscribe at any time via the link in every e-mail or with an e-mail with the subject \"Stop\"; the data are then deleted within 30 days and are neither shared nor used for other purposes. Sign-up and sending run through Brevo (Sendinblue SAS, Paris, EU), which processes the addresses only on our behalf; incoming e-mails are forwarded by ImprovMX Inc. (USA) to a mailbox at Google LLC (Gmail). The RSS feeds need no sign-up and send us no personal data."),
+             "To receive new tenders by e-mail, sign up with the form on the subscription page or write to abo@auftragsregister.ch. The subscription only becomes active once you click the confirmation link sent by e-mail (double opt-in). We process the e-mail address, the chosen cantons and sectors, the language, the time and IP address of the confirmation and, for at most 45 days, the list of tenders already sent, so that none is sent twice; all solely to send these alerts, on the basis of your own request. The e-mails contain a counting pixel and links that pass through a Brevo server, so Brevo may record opens and clicks. You can prevent this by turning off automatic image loading and opening the tenders directly on auftragsregister.ch. You can unsubscribe at any time via the link in every e-mail or with an e-mail with the subject \"Stop\"; within 30 days we then remove you from the mailing list and delete the list of tenders sent. Brevo keeps your contact record (among other things the e-mail address and the time of sign-up and confirmation), the note of the unsubscription and the logs of the e-mails already sent, so that you receive no further e-mails. The data are neither shared nor used for other purposes. Sign-up and sending run through Brevo (Sendinblue SAS, Paris, EU), which processes the addresses only on our behalf; incoming e-mails are forwarded by ImprovMX Inc. (USA) to a mailbox at Google LLC (Gmail). The RSS feeds need no sign-up and send us no personal data."),
             ("Archive and retention",
              "The data is refreshed daily from simap.ch. Older publications are kept as "
              "an archive, even once they can no longer be queried through the simap.ch "
