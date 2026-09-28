@@ -183,12 +183,39 @@ def lang_of(contact: dict) -> str:
     return l if l in ("de", "fr", "it", "en") else "de"
 
 CORR = {"de": "Berichtigung", "fr": "rectificatif", "it": "rettifica", "en": "correction"}
+# (oggetto singolare, oggetto plurale, riga singolare, riga plurale, etichetta scadenza, disiscrizione, luogo)
 T = {
-    "de": ("Neue Ausschreibungen für Sie", "{n} neue Ausschreibungen seit {since}", "Eingabefrist", "Abmelden", "Keine neuen Ausschreibungen — es gibt heute nichts zu tun."),
-    "fr": ("Nouveaux appels d'offres pour vous", "{n} nouveaux appels d'offres depuis le {since}", "Délai", "Se désabonner", "Pas de nouvel appel d'offres — rien à faire aujourd'hui."),
-    "it": ("Nuovi bandi per voi", "{n} nuovi bandi dal {since}", "Termine", "Cancellarsi", "Nessun nuovo bando — oggi niente da fare."),
-    "en": ("New tenders for you", "{n} new tenders since {since}", "Deadline", "Unsubscribe", "No new tenders — nothing to do today."),
+    "de": ("Neue Ausschreibung für Sie", "Neue Ausschreibungen für Sie", "1 neue Ausschreibung seit {since}",
+           "{n} neue Ausschreibungen seit {since}", "Eingabefrist", "Abmelden", "Ort"),
+    "fr": ("Nouvel appel d'offres pour vous", "Nouveaux appels d'offres pour vous",
+           "1 nouvel appel d'offres depuis le {since}", "{n} nouveaux appels d'offres depuis le {since}",
+           "Délai de remise", "Se désabonner", "Lieu"),
+    "it": ("Nuovo bando per voi", "Nuovi bandi per voi", "1 nuovo bando dal {since}", "{n} nuovi bandi dal {since}",
+           "Termine d'inoltro", "Cancellarsi", "Luogo"),
+    "en": ("New tender for you", "New tenders for you", "1 new tender since {since}", "{n} new tenders since {since}",
+           "Deadline", "Unsubscribe", "Place"),
 }
+_MON = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+
+def fmt_day(iso, lang: str) -> str:
+    """24.09.2026 (de/fr/it, uso svizzero) o 24 Sep 2026 (en); vuoto se non e' una data."""
+    d = str(iso or "")[:10]
+    if not _DAY.match(d):
+        return ""
+    y, m, g = d.split("-")
+    return f"{int(g)} {_MON[int(m) - 1]} {y}" if lang == "en" else f"{g}.{m}.{y}"
+
+
+def fmt_deadline(iso, lang: str) -> str:
+    """La scadenza con l'ora, che per chi consegna un'offerta conta: 20.10.2026, 12:00."""
+    raw = str(iso or "")
+    out = fmt_day(raw, lang)
+    hm = raw[11:16]
+    if out and len(hm) == 5 and hm[2] == ":" and hm != "00:00":
+        out += f", {hm}"
+    return out
+
 FOOT = {"de": ("Quelle", "Datenschutz"), "fr": ("Source", "Protection des données"),
         "it": ("Fonte", "Protezione dei dati"), "en": ("Source", "Privacy")}
 
@@ -196,22 +223,29 @@ FOOT = {"de": ("Quelle", "Datenschutz"), "fr": ("Source", "Protection des donné
 
 def mail_html(lang: str, rows: list, since: str, total: int = 0, part: int = 1, parts: int = 1):
     """Mostra TUTTE le righe ricevute: e' il chiamante che divide in parti da MAX_PER_MAIL."""
-    subj, head, dl, foot, _ = T[lang]
+    subj1, subjn, head1, headn, dl, foot, place = T[lang]
     total = total or len(rows)
     items = []
     for t in rows:
         url = f"{SITE}/{lang}/auftrag/{t.get('projectId')}/"
+        bits = [html.escape(str(t.get("buyerName") or ""))]
+        if t.get("canton"):
+            bits.append(f'{place} {html.escape(str(t.get("canton")))}')
+        dline = fmt_deadline(t.get("offerDeadline"), lang)
+        if dline:
+            bits.append(f"{dl} {html.escape(dline)}")
+        if t.get("corrected"):
+            bits.append(CORR[lang])
         items.append(f'<li style="margin:0 0 10px"><a href="{url}">{html.escape(str(t.get("title") or ""))}</a><br>'
-                     f'<span style="color:#555">{html.escape(str(t.get("buyerName") or ""))} · '
-                     f'{html.escape(str(t.get("canton") or ""))} · '
-                     f'{dl} {html.escape(str(t.get("offerDeadline") or "")[:10])}'
-                     + (f' · {CORR[lang]}' if t.get("corrected") else "") + '</span></li>')
+                     f'<span style="color:#555">{" · ".join(b for b in bits if b)}</span></li>')
     tag = f" ({part}/{parts})" if parts > 1 else ""
-    body = (f'<p>{head.format(n=total, since=since)}{tag}</p><ul style="padding-left:18px">{"".join(items)}</ul>'
+    head = (head1 if total == 1 else headn).format(n=total, since=fmt_day(since, lang) or since)
+    body = (f'<p>{head}{tag}</p><ul style="padding-left:18px">{"".join(items)}</ul>'
             f'<p style="color:#777;font-size:12px">auftragsregister.ch — {FOOT[lang][0]}: simap.ch · '
             f'<a href="{{{{ unsubscribe }}}}" style="color:#777">{foot}</a> · '
             f'<a href="{SITE}/{lang}/datenschutz/" style="color:#777">{FOOT[lang][1]}</a></p>')
-    return f"{subj} ({total}){tag}", body
+    subject = subj1 if total == 1 else f"{subjn} ({total})"
+    return subject + tag, body
 
 
 def pub_day(t) -> str:
