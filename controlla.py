@@ -67,6 +67,15 @@ def check_absolute(pages: set, site: str, base: str) -> list[str]:
     return errs
 
 
+_TENDER_LISTS = re.compile(r'<(table|ul) class="[^"]*\btl\b[^"]*"[^>]*>.*?</\1>', re.S)
+_LISTS = re.compile(r'<tbody>.*?</tbody>|<ul class="plain[^"]*"[^>]*>.*?</ul>', re.S)
+_ROWS = re.compile(r'<tr\b.*?</tr>|<li\b.*?</li>', re.S)
+
+
+def _text(row: str) -> str:
+    return " ".join(htmlmod.unescape(re.sub(r"<[^>]+>", " ", row)).split())
+
+
 def main() -> int:
     def url_of(f: pathlib.Path) -> str:
         rel = f.relative_to(OUT).parent.as_posix()
@@ -77,6 +86,7 @@ def main() -> int:
     counts = collections.Counter()
     empty_titles, long_titles, no_desc = [], [], []
     broken = collections.Counter()
+    same_tender, twin_rows = [], []
 
     for f in OUT.rglob("index.html"):
         html = f.read_text(encoding="utf-8")
@@ -94,6 +104,23 @@ def main() -> int:
         d = re.search(r'<meta name="description" content="(.*?)"', html, re.S)
         if not d or not d.group(1).strip():
             no_desc.append(here)
+
+        # A tender list names each tender once: simap republishes a tender for every
+        # correction, and each copy was listed as a tender of its own (the same line two or
+        # three times, a superseded deadline beside the current one; 28.09.2026).
+        for m in _TENDER_LISTS.finditer(html):
+            ids = [re.search(r'href="[^"]*/auftrag/([^/"]+)/"', r) for r in _ROWS.findall(m.group(0))]
+            seen = collections.Counter(x.group(1) for x in ids if x)
+            dup = [k for k, n in seen.items() if n > 1]
+            if dup:
+                same_tender.append((here, dup[0]))
+        # No list shows two rows a reader cannot tell apart.
+        for lst in _LISTS.findall(html):
+            rows = [_text(r) for r in _ROWS.findall(lst)]
+            n = collections.Counter(r for r in rows if r)
+            twin = [r for r, k in n.items() if k > 1]
+            if twin:
+                twin_rows.append((here, twin[0][:90]))
 
         for href in re.findall(r'href="(/[^"#?]*)"', html):
             if BASE and href.startswith(BASE + "/"):
@@ -143,6 +170,12 @@ def main() -> int:
     print(f"  titoli oltre 65 char    {len(long_titles)}")
     print(f"  senza description       {len(no_desc)}")
     print(f"  link interni rotti      {counts['link rotti']} verso {len(broken)} destinazioni")
+    print(f"  bandi ripetuti in lista {len(same_tender)} pagine")
+    for h, k in same_tender[:4]:
+        print(f"    {h}  /auftrag/{k}/")
+    print(f"  righe identiche         {len(twin_rows)} pagine")
+    for h, k in twin_rows[:4]:
+        print(f"    {h}  «{k}»")
     abs_errs = check_absolute(pages, SITE, BASE)
     print(f"  URL assoluti sbagliati  {len(abs_errs)}")
     if abs_errs:
@@ -157,7 +190,7 @@ def main() -> int:
         print("\n  titoli troppo lunghi (Google li tronca):")
         for h, n in long_titles[:5]:
             print(f"    {n} char  {h}")
-    return 1 if (broken or empty_titles or no_desc or abs_errs) else 0
+    return 1 if (broken or empty_titles or no_desc or abs_errs or same_tender or twin_rows) else 0
 
 
 if __name__ == "__main__":

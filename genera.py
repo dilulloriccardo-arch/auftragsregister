@@ -20,6 +20,7 @@ no figure is recomputed into something the source did not say.
 """
 from __future__ import annotations
 
+import calendar
 import collections
 import hashlib
 import html
@@ -30,6 +31,7 @@ import shutil
 import unicodedata
 from datetime import date
 
+import formato
 import grafici
 import lingue
 from lingue import LANGS, NAMES
@@ -80,7 +82,9 @@ class _Prose:
 
 
 def _m(key: str, **kw) -> str:
-    return lingue.m(key, LANG, **kw)
+    s = lingue.m(key, LANG, **kw)
+    # French elision where a filled-in phrase meets a preposition: "de une seule entreprise"
+    return s.replace("de une ", "d’une ") if LANG == "fr" else s
 
 
 class _Idx:
@@ -102,6 +106,12 @@ TODAY = date.today().isoformat()
 # Data mostrata nelle pagine = data dell'ultimo dato pubblicato (non del giorno di build): cosi'
 # le pagine i cui dati non cambiano restano identiche da una notte all'altra (git, IndexNow, Google).
 DATA_DATE = TODAY
+# Monthly charts (set once in main() from the national series): FULL_FROM is the first
+# month the data covers fully, RAMP_START..RAMP_END the build-up months before it (drawn
+# striped, with a note), CUR_MONTH the month of DATA_DATE and CUR_PARTIAL whether it is
+# still running.
+FULL_FROM = RAMP_START = RAMP_END = CUR_MONTH = ""
+CUR_PARTIAL = False
 
 CANTONS = {
     "AG": "Aargau", "AI": "Appenzell Innerrhoden", "AR": "Appenzell Ausserrhoden",
@@ -134,82 +144,427 @@ def e(v) -> str:
     return html.escape(str(v)) if v is not None else ""
 
 
-def chf(v) -> str:
-    """Swiss thousands separator, the way the register writes figures."""
-    return f"{v:,.0f}".replace(",", "’") if isinstance(v, (int, float)) and v else ""
-
-
-def chf_big(v) -> str:
-    """Headline sums only, abbreviated in the READER's units: Mrd. and Mio. are the
-    German abbreviations and read foreign on the French and Italian pages."""
-    if not isinstance(v, (int, float)) or not v:
-        return ""
-    bn, mn, dec = lingue.BIG_UNITS[LANG]
-    if v >= 1_000_000_000:
-        return f"{v / 1_000_000_000:.2f}".replace(".", dec) + f" {bn}"
-    if v >= 10_000_000:
-        return f"{v / 1_000_000:.0f} {mn}"
-    return chf(v)
-
-
 def plural(n: int, one: str, many: str) -> str:
-    return f"{n} {one if n == 1 else many}"
+    """'1 Unternehmen / 27 Unternehmen', '1 impresa / 22 imprese': every 'number + noun'
+    goes through here, so the count is grouped and the noun agrees."""
+    return f"{formato.count(n)} {one if n == 1 else many}"
 
 
-def dmy(iso: str) -> str:
-    """Short German date: 28.08 — day before month, unlike the ISO the source uses."""
-    return f"{iso[8:10]}.{iso[5:7]}" if iso and len(iso) >= 10 else ""
+_ONE = {"awards": "award", "companies": "company", "buyers": "buyer", "cantons": "canton"}
 
 
-def dmyy(iso: str) -> str:
-    """A date as the reader writes it: dd.mm.yyyy in the three national languages,
-    ISO on the English pages, where it reads international rather than foreign."""
-    if not iso or len(iso) < 10:
-        return ""
-    if LANG == "en":
-        return iso[:10]
-    return f"{iso[8:10]}.{iso[5:7]}.{iso[:4]}"
+def lab_n(n: int, many: str) -> str:
+    """A tile or rail label that agrees with the figure above it: '1 Committente', not
+    '1 Committenti' (193 company pages, 34 sector pages, 7 buyer pages; verifier 28.09.2026)."""
+    return lingue.t(_ONE[many] if n == 1 else many, LANG)
 
 
-def fit_title(text: str, suffix: str, limit: int = 64) -> str:
+def firms(n: int) -> str:
+    """'27 Unternehmen'; one is 'ein einziges Unternehmen' / 'une seule entreprise': '3
+    adjudications en faveur de 1 entreprise' read like a form letter (verifier, 28.09.2026)."""
+    return lingue.COMPANY_ONE[LANG] if n == 1 else plural(n, *lingue.COMPANY[LANG])
+
+
+def open_n(n: int) -> str:
+    return plural(n, *lingue.OPEN_TENDERS[LANG])
+
+
+def open_contracts(n: int) -> str:
+    return plural(n, *lingue.OPEN_CONTRACTS[LANG])
+
+
+def first_fit(*cands: str, limit: int = 64) -> str:
+    """The first candidate that fits, never an ellipsis on a title template (SEO audit 28.09.2026)."""
+    for c in cands:
+        if c and len(c) <= limit:
+            return c
+    return fit_title(cands[-1], "")
+
+
+def cur_of(row: dict) -> str:
+    return (row.get("winnerCurrency") or "CHF").strip().upper()
+
+
+def cant_of(code: str, name: str | None = None) -> str:
+    """The canton with the preposition French needs: 'de Vaud', 'du Valais'."""
+    return lingue.canton_of(code, name or canton_name_or(code, code), LANG)
+
+
+def tt(iso: str, text: str) -> str:
+    return formato.time_tag(iso, text)
+
+
+def fold(s: str) -> str:
+    """Sort key that files É under E and Ö under O, instead of after Z."""
+    return unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().casefold()
+
+
+def abbr_canton(code: str) -> str:
+    return f'<abbr title="{e(canton_name_or(code, code))}">{e(code)}</abbr>' if code else ""
+
+
+_INVISIBLE = re.compile("[​-‍﻿]")
+
+
+def _ws(s: str) -> str:
+    """Collapse ASCII whitespace only. str.split() also splits on U+00A0 and U+202F, and
+    re-joining with a plain space undid the French typography in every meta description,
+    title and short label that passed through it (verifier, 28.09.2026). Zero-width spaces
+    from the source go too: invisible, but they counted against the title's 64 characters."""
+    return re.sub(r"[ \t\r\n\f\v]+", " ", _INVISIBLE.sub("", s or "")).strip()
+
+
+_LEAD_STOP = {"und", "oder", "sowie", "et", "ou", "e", "o", "ed", "and", "or"}
+
+_PAIRS = {"(": ")", "[": "]", "«": "»", "‹": "›", "„": "“", "“": "”"}
+_CLOSERS = {")", "]", "»", "›", "”"}
+
+
+def _brackets(t: str) -> tuple[list[int], int]:
+    """(positions of the openers left unclosed, position of the first closer without an
+    opener or -1). Straight double quotes count by parity; '“' closes a German '„' and
+    otherwise opens an English quote."""
+    stack: list[int] = []
+    stray = -1
+    quote = -1
+    for i, ch in enumerate(t):
+        if ch == '"':
+            quote = -1 if quote >= 0 else i
+        elif ch == "“" and stack and t[stack[-1]] == "„":
+            stack.pop()
+        elif ch in _PAIRS:
+            stack.append(i)
+        elif ch in _CLOSERS:
+            if stack and _PAIRS[t[stack[-1]]] == ch:
+                stack.pop()
+            elif stray < 0:
+                stray = i
+    if quote >= 0:
+        stack.append(quote)
+    return sorted(stack), stray
+
+
+def _balanced(t: str) -> bool:
+    op, stray = _brackets(t)
+    return not op and stray < 0
+
+
+def _suspended(w: str) -> bool:
+    """'Turn-', 'Alters-', 'Wohn-': the first half of a German suspended compound, which
+    reads as a whole word once its hyphen is stripped ('Sanierung Turn … Bedachungsarbeiten')."""
+    return len(w) > 1 and w.endswith("-") and w[-2].isalpha()
+
+
+def _susp(w: str) -> str:
+    """'Heizungs-,', 'Hellfeld-/', 'Nutzer-', 'Natur-' -> the same word ending on its hyphen;
+    '' for any other word. Whatever follows ('und', a comma, a slash, the next half 'Sicherheits-'
+    or 'in'), a word written with a trailing hyphen is the first half of a compound."""
+    w = w.rstrip(",/;")
+    return w if _suspended(w) else ""
+
+
+# a lone separator left at the end of a cut ('Sanierung Wohnheim West |…')
+_SEPS = {"·", "-", "–", "—", "/", "&", "+", "|"}
+
+
+def cut_end(t: str, n: int, safe: bool = True, back: bool = True) -> str:
+    """The first n characters of t cut back to a whole word, without a trailing 'und', 'de',
+    'per', 'aus', 'sur' …, a lone separator, or an abbreviation cut from its word ('St.' of
+    'St. Bernhardstrasse'), and never inside a bracket or quote it opened (safe=True, and only
+    when t itself is balanced).
+
+    The first half of a suspended compound keeps its hyphen: 'Installation von Heizungs-,
+    Lüftungs-…'. Dropping it with the words before it cut 'Heizungs-, Lüftungs- und
+    Klimaanlagen' down to 'Installation…', and stripping only the hyphen turned 'Lift-,
+    Brandschutz- und Erdbebensanierung' into 'Lift' (verifier, 28.09.2026)."""
+    t = _ws(t)
+    if n >= len(t):
+        return t
+    c = t[:n]
+    if t[n] != " ":
+        if " " in c:
+            c = c[:c.rfind(" ")]      # never inside a word, however long the word
+        else:
+            # one long token ('596-GyEchallens_Lot6_SciageSechage…'): back to its last joint
+            j = max(c.rfind("_"), c.rfind("/"), c.rfind("-"))
+            if j >= 8:
+                c = c[:j]
+    check = safe and _balanced(t)
+    while True:
+        c = c.rstrip(" ,;:–—/·|")
+        hw = c.split(" ")
+        while len(hw) > 1 and (hw[-1].lower().strip(",;:(«„“\"") in _TAIL_STOP
+                               # half a name: 'Lycée Denis-de…' of 'Denis-de Rougemont'
+                               or ("-" in hw[-1][1:] and hw[-1].rsplit("-", 1)[1].lower() in _TAIL_STOP)
+                               or hw[-1] in _SEPS
+                               or (hw[-1].endswith(".") and len(hw[-1]) <= 4)):
+            hw.pop()
+        # a stop word glued on by a no-break space in the source ('Adobe\u202fpour')
+        m = re.search(r"[\u00a0\u202f]([^\u00a0\u202f]*)$", hw[-1])
+        if m and m.start() and m.group(1).lower().strip(",;:") in _TAIL_STOP:
+            hw[-1] = hw[-1][:m.start()]
+            c = " ".join(hw)
+            continue
+        s = _susp(hw[-1])
+        if s:
+            hw[-1] = s
+            c = " ".join(hw)
+        else:
+            c = " ".join(hw).rstrip(" ,.;:-–—/·|")
+        if check:
+            op, _stray = _brackets(c)
+            pre = c[:op[0]].rstrip(" ,;:-–—/·|") if op else ""
+            # back to before the bracket when that still leaves a name ('Neubau Kindergarten
+            # (inkl. Umgebung…' -> 'Neubau Kindergarten…'); otherwise the caller closes it
+            if back and op and len(pre.split()) >= 2 and len(pre) >= 0.4 * n:
+                c = pre
+                continue
+        return c
+
+
+def _shown(core: str) -> tuple[int, int]:
+    """(words, characters) a cut title still shows of its name; the parts of a hyphenated
+    compound count as words ('Structured-Illumination-Mikroskop' says as much as three)."""
+    s = core.replace("…", " ")
+    return (sum(1 for w in re.split(r"[\s\-_/]+", s) if re.search(r"[^\W\d_]", w)),
+            len(s.replace(" ", "")))
+
+
+def _poor(core: str) -> bool:
+    """A cut that no longer says what the page is about: one word, under twenty characters,
+    or two short words before the ellipsis ('Installation…', 'Eidgenössisches…', 'Lift-…',
+    'Aufwertung Gennersbrunner-…'). Two long German compounds ('Ingenieurleistungen
+    Siedlungsentwässerung…') still say it."""
+    if "…" not in core:
+        return False
+    w, n = _shown(core)
+    return w < 2 or n < 20 or (w < 3 and n < 30)
+
+
+def rank_titles(cands: list, most: bool = False) -> list[str]:
+    """[(title, the part of it taken from the name)] in order of preference -> the titles,
+    those whose cut still says something first, in their order (most=True: the one showing
+    the most words of the name first — a buyer's or a company's name is what its page is
+    searched by); the poor ones after them, the one showing the most first. 22 indexed pages
+    and 438 award pages per language had come down to one word and an ellipsis (verifier,
+    28.09.2026)."""
+    good = [x for x in cands if not _poor(x[1])]
+    if most:
+        good.sort(key=lambda x: -_shown(x[1])[0])
+    good = [t for t, _core in good]
+    poor = sorted((x for x in cands if _poor(x[1])), key=lambda x: (-_shown(x[1])[0], -_shown(x[1])[1]))
+    return list(dict.fromkeys(good + [t for t, _core in poor]))
+
+
+def _ft(text: str, suffix: str, **kw) -> tuple[str, str]:
+    """fit_title, with the part of the title that comes from the text."""
+    t = fit_title(text, suffix, **kw)
+    return t, (t[:-len(suffix)] if suffix else t)
+
+
+def fit_title(text: str, suffix: str, limit: int = 64, tail_share: float = 0.4,
+              head_min: int = 0, gap1: bool = False) -> str:
     """A title Google will not truncate, cut so it still identifies the page.
 
     Cutting only the tail produced 747 titles shared by 3,036 pages: awards from one
     big project share a long prefix and differ only in the part that gets thrown away —
     28 pages all reading "Flumenthal; Zentralgefängnis Kanton Solothurn (ZGSO)…" where
-    the real subject was Brandschutzbekleidung, Innentüren, Gärtnerarbeiten. Identical
-    titles are what tells a search engine a set of pages carries nothing of its own.
+    the real subject was Brandschutzbekleidung, Innentüren, Gärtnerarbeiten. So with
+    tail_share > 0 the ellipsis may go in the MIDDLE: the head keeps the project, the tail
+    keeps the trade.
 
-    So the ellipsis goes in the MIDDLE: the head keeps the project, the tail keeps the
-    trade, and both are cut on a word boundary.
+    Both halves are cut on whole words and never split a bracket or a quote: a tail never
+    starts inside '(…)' or '«…»' (it moves past the closing mark, or widens to the opening
+    one), a head never ends inside one, a tail is never a bare number ('Lose 340 … 3599'
+    read as a range) and the suspended compound 'Turn-' keeps its hyphen. A middle cut that
+    would drop a single word is not worth its ellipsis: the end is cut instead — unless that
+    end cut leaves a poor title ('Eidgenössisches…', 'Gesundheitsinformationssystem…'), where
+    the middle cut may keep a one-word head or skip a one-word gap ('Eidgenössisches … ENSI').
+    tail_share=0 cuts at the end only; head_min keeps at least that many leading characters
+    in the head (a buyer's name up to its first comma: the town); gap1=True allows the
+    one-word gap where it is what tells two pages apart ('Hälg & Co. AG, … Zürich').
     """
     room = limit - len(suffix)
-    text = " ".join(text.split())
+    text = _ws(text)
     if len(text) <= room:
         return text + suffix
+    check = _balanced(text)
 
-    def cut_end(t: str, n: int) -> str:
-        c = t[:n]
-        if " " in c[max(0, n - 22):]:
-            c = c[:c.rfind(" ")]
-        return c.rstrip(" ,.;:-–—/")
+    def end_only(back: bool = True) -> str:
+        # a bracket or quote the cut could not avoid is closed after the ellipsis: '(Etappe 2…)'
+        n = room - 1
+        while n > 0:
+            h = cut_end(text, n, back=back)
+            op = _brackets(h)[0] if check else []
+            close = "".join('"' if h[i] == '"' else _PAIRS[h[i]] for i in reversed(op))
+            if len(h) + 1 + len(close) <= room:
+                out = h + "…" + close
+                if back and _poor(out):
+                    # 'Volkswirtschaftliche Studien…' -> '… Studien zu "Impulse für Wachstum…"'
+                    alt = end_only(False)
+                    alt = alt[:len(alt) - len(suffix)]
+                    if _shown(alt) > _shown(out):
+                        out = alt
+                return out + suffix
+            n -= 1
+        return text[:room - 1] + "…" + suffix
 
-    def cut_start(t: str, n: int) -> str:
-        """Whole words from the end. A tail that begins mid-word ("dschutzbekleidung")
-        is worse than a shorter one: it reads as damage, not as an abbreviation."""
-        words, out = t.split(" "), []
-        for w in reversed(words):
-            if len(" ".join([w] + out)) > n:
+    end = end_only()
+    if tail_share <= 0 or room < 20:
+        return end
+    end_core = end[:len(end) - len(suffix)]
+    poor_end = _poor(end_core)
+    # tail candidates: every whole-word ending of the text, the preferred length first
+    starts = [0] + [i + 1 for i, ch in enumerate(text) if ch == " "]
+    tail_room = (room - head_min - 3) if head_min else int(room * tail_share)
+    if tail_room < 8:
+        return end
+    cands = [text[i:] for i in starts[1:]]
+    fits = sorted((c for c in cands if len(c) <= tail_room), key=len, reverse=True)
+    wider = sorted((c for c in cands if tail_room < len(c) <= room - 12), key=len)
+
+    def tail_ok(tail: str) -> bool:
+        first = tail.split(" ")[0]
+        if (not tail or first.lower() in _LEAD_STOP or first in _SEPS
+                or first.startswith(("-", ",", ";", ":", ".", ")", "]", "»", "”", "|"))):
+            return False
+        if not re.search(r"[^\W\d_]", tail):          # a bare number reads as a range
+            return False
+        if check and not _balanced(tail):
+            return False
+        return True
+
+    for tail in fits + wider:
+        tail = tail.strip()
+        if not tail_ok(tail):
+            continue
+        head = cut_end(text, room - len(tail) - 3)
+        if (len(head.split(" ")) < 2 and not poor_end) or (head_min and len(head) < head_min - 1):
+            continue
+        if head.split(" ")[-1].lower() in _TAIL_STOP:        # 'Ein … die BioImaging Platform'
+            continue
+        # a head is whole words: never the front of one long word or of a hyphenated one
+        # ('Unterstützungsdienstleist …', 'Breitband … ' of 'Breitband-Frequenzvervielfacher')
+        if text[len(head):len(head) + 1] not in ("", " ", ",", ";", ":", "/", "|") and not head.endswith("-"):
+            continue
+        if check and not _balanced(head):
+            continue
+        t0 = len(text) - len(tail)
+        if len(head) >= t0:
+            continue
+        gap = text[len(head):t0].strip(" ,.;:-–—/·|")
+        if len(gap.split()) <= 1 and not gap1 and not poor_end:
+            return end                   # a one-word gap is not worth the ellipsis
+        if head[-1:].isdigit() and tail[:1].isdigit():
+            continue
+        mid = f"{head} … {tail}"
+        if poor_end and _shown(mid) <= _shown(end_core):
+            continue
+        return mid + suffix
+    return end
+
+
+# where a project name ends and a lot's own name begins: " / BKP 240", " - BKP 281.0",
+# ": BKP 250", ", Los 3", " (Los 2)"
+_LOT_SEP = re.compile(r"\s+[-–—/|:]\s+|[,;:]\s+|\s+\(")
+
+
+def _stem(a: str, b: str) -> str:
+    """The project name two lot titles share, cut at a separator; '' when they share none
+    worth a line of its own (at least two words and twenty characters)."""
+    if a == b:
+        return a
+    n = 0
+    while n < min(len(a), len(b)) and a[n] == b[n]:
+        n += 1
+    for x, y in ((a, b), (b, a)):
+        if n == len(x) and _LOT_SEP.match(y, n):
+            return x
+    cut = [m.start() for m in _LOT_SEP.finditer(a[:n])]
+    stem = a[:cut[-1]].rstrip(" ,;:-–—/|(") if cut else ""
+    return stem if len(stem) >= 20 and len(stem.split()) >= 2 else ""
+
+
+def lot_groups(tenders: list) -> list:
+    """Tenders in deadline order -> [(project name, [tenders])]: the lots one authority
+    published under one project name, due the same day, become one line ('… · 6 Lose')
+    instead of six identical ones (owner, 28.09.2026)."""
+    groups: list = []
+    for t in tenders:
+        title = _ws(de(t, "title"))
+        key = (norm_buyer(t.get("buyerName") or ""), (t.get("offerDeadline") or "")[:10])
+        for g in groups:
+            if g[0] == key and (st := _stem(g[1], title)):
+                g[1] = st
+                g[2].append(t)
                 break
-            out.insert(0, w)
-        return " ".join(out).lstrip(" ,.;:-–—/")
+        else:
+            groups.append([key, title, [t]])
+    return [(stem, lst) for _k, stem, lst in groups]
 
-    tail_room = max(0, room * 2 // 5)
-    head = cut_end(text, room - tail_room - 1)
-    tail = cut_start(text, tail_room) if tail_room >= 8 else ""
-    if not tail or tail in head:
-        return head + "…" + suffix
-    return f"{head}…{tail}{suffix}"
+
+def pick_unique(cands: dict) -> dict:
+    """key -> the first of its candidate titles that no other page shares: pages in a
+    collision move to their next candidate, round by round, until none collides or the
+    candidates run out."""
+    pick = {k: 0 for k in cands}
+    for _round in range(max((len(v) for v in cands.values()), default=0)):
+        n = collections.Counter(cands[k][pick[k]] for k in cands)
+        moved = False
+        for k in cands:
+            if n[cands[k][pick[k]]] > 1 and pick[k] < len(cands[k]) - 1:
+                pick[k] += 1
+                moved = True
+        if not moved:
+            break
+    out = {k: cands[k][pick[k]] for k in cands}
+    # the pages still sharing a title take any candidate of theirs nobody else holds
+    n = collections.Counter(out.values())
+    for k in cands:
+        if n[out[k]] > 1:
+            free = next((c for c in cands[k] if not n[c]), None)
+            if free:
+                n[out[k]] -= 1
+                out[k] = free
+                n[free] += 1
+    return out
+
+
+def twin_rows(keys: list) -> set[int]:
+    """Positions whose visible text repeats in the same list."""
+    n = collections.Counter(keys)
+    return {i for i, k in enumerate(keys) if n[k] > 1}
+
+
+def project_no(row: dict) -> str:
+    """' · Projekt 42676': what still tells apart lots published under one identical title
+    (3× 'SGS Erweiterung Schulanlage Gutenbrunnen Schübelbach', same code, same deadline)."""
+    n = row.get("projectNumber") or row.get("publicationNumber") or ""
+    return f" · {_if('project_no', n=n)}".replace(f" {n}", f"\u00a0{n}") if n else ""
+
+
+def distinct_titles(texts: list[str], limit: int) -> list[str]:
+    """Titles for one list, each cut to `limit` and told apart from its neighbours.
+
+    A plain end cut printed six identical lines on every home page ('Modernisierung
+    "Kirchzelg", St. Bernhardstrasse 38, 5430…': the lots differ only after the cut) and 14
+    on one buyer page (owner and verifier, 28.09.2026). Every line is cut at its end, the way
+    a reader expects; only the lines that then read the same as another line get a middle
+    cut that keeps their own tail, with more room for the tail if they still clash, and as a
+    last resort the whole title."""
+    out = [fit_title(t, "", limit, 0) for t in texts]
+    for share in (0.4, 0.55, 0.7, None):
+        seen = collections.defaultdict(set)
+        for t, o in zip(texts, out):
+            seen[o].add(_ws(t))
+        clash = {o for o, full in seen.items() if len(full) > 1}
+        if not clash:
+            break
+        # the difference sits in the middle (two refuse lorries that differ only in their
+        # width): those lines are printed whole
+        out = [(_ws(t) if share is None else fit_title(t, "", limit, share)) if o in clash else o
+               for t, o in zip(texts, out)]
+    return out
 
 
 def zuschlag(n: int) -> str:
@@ -230,11 +585,51 @@ def de(row: dict, field: str) -> str:
     labels one language's text as another's.
     """
     t = ((row.get("translations") or {}).get(field) or {})
+    orig = (row.get(field) or "").strip()
     order = (LANG, "de", "fr", "it")
     for lang in order:
-        if t.get(lang):
-            return t[lang].strip()
-    return (row.get(field) or "").strip()
+        v = (t.get(lang) or "").strip()
+        if not v:
+            continue
+        # simap's own translation is sometimes one text pasted onto several lots ('Extension
+        # de l'École de la Champagne - CFC' for 18 different lots; the ventilation lot of
+        # Kalktarren reads 'maçonnerie' in French) or cut at 100 characters ('…Heizungs- und
+        # Kühlwasse'): then the publication's own title is the true one
+        if (field, lang, _ws(v)) in _SHARED or (orig and len(v) < len(orig) and orig.startswith(v)):
+            continue
+        # a template simap never filled in: 'Erneuerung der amtlichen Vermessung, Nom
+        # entreprise, los x' for the Tafers lot whose French title names 'Rue, lot 4'
+        if _PLACEHOLDER.search(v):
+            continue
+        # a translation left over from the publication it was copied from ('Copie de …',
+        # 'Kopie von …'): several name another lot or project than the award (verifier,
+        # 29.09.2026), so the publication's own text is the true one
+        if _COPY.match(v) and not _COPY.match(orig):
+            continue
+        return _INVISIBLE.sub("", v)
+    return _INVISIBLE.sub("", orig)
+
+
+_COPY = re.compile(r"\s*(?:copie|copy|kopie|copia)\b", re.I)
+_PLACEHOLDER = re.compile(r"\bnom (?:de l['’])?entreprise\b|\bfirmenname\b|\b(?:los|lot|lotto) x\b"
+                          r"|\bx{3,}\b", re.I)
+
+
+# (field, language, text) of translations that simap attached to publications whose own
+# texts differ: filled once by main(), before any page is written
+_SHARED: set = set()
+
+
+def find_shared(rows: list) -> set:
+    seen = collections.defaultdict(set)
+    for r in rows:
+        for field in ("title",):
+            tr = ((r.get("translations") or {}).get(field) or {})
+            o = _ws(r.get(field) or "").casefold()
+            for lang, v in tr.items():
+                if v and o:
+                    seen[(field, lang, _ws(v))].add(o)
+    return {k for k, v in seen.items() if len(v) > 1}
 
 
 def chf_amount(row: dict) -> float | None:
@@ -253,21 +648,14 @@ def chf_amount(row: dict) -> float | None:
     return float(p) if cur == "CHF" else None
 
 
+def price_of(row: dict) -> float | None:
+    """The published amount in whatever currency it was published, or None."""
+    p = row.get("winnerPrice")
+    return float(p) if isinstance(p, (int, float)) and not isinstance(p, bool) and p else None
+
+
 def _e(kind: str, value) -> str:
     return lingue.enum(kind, value, LANG)
-
-
-def money(row: dict) -> str:
-    """The awarded amount as the register published it, currency and all.
-
-    Never relabelled: 109 awards are in euros or dollars, and printing them under a
-    CHF heading states something the publication does not.
-    """
-    p = row.get("winnerPrice")
-    if not isinstance(p, (int, float)) or not p:
-        return ""
-    cur = (row.get("winnerCurrency") or "CHF").strip().upper()
-    return f"{chf(p)}" + ("" if cur == "CHF" else f" {cur}")
 
 
 def winners(row: dict) -> list[str]:
@@ -308,7 +696,27 @@ def cpv_label(code, fallback: str = "") -> str:
     in every official language; unknown codes fall back to whatever simap sent.
     """
     row = _CPV.get(str(code or "").strip())
-    return row[_CPV_COL[LANG]] if row else fallback
+    if not row:
+        # simap's own label, as sent; on /fr/ with the French narrow space before ':' and ';'
+        # like every other label (it kept a plain one in the tender tables)
+        return lingue._typo(_ws(fallback), "fr") if LANG == "fr" and fallback else fallback
+    # the EU chrome only, never simap's own text: Swiss German writes ss, and the EU file
+    # carries a few typos, French colons without their space and one Italian label left in
+    # English (32400000 'Network')
+    lab = _CPV_FIX.get((LANG, str(code).strip())) or row[_CPV_COL[LANG]]
+    if LANG == "de":
+        lab = (lab.replace("ß", "ss").replace("Veschiedene", "Verschiedene")
+               .replace("Forstwirtschft", "Forstwirtschaft"))
+    else:
+        lab = lab.replace("'", "’")
+    if LANG == "fr":
+        lab = (re.sub(r"\s*([:;])\s*", " \\1 ", lab).strip().replace("theâtres", "théâtres")
+               .replace("personnnels", "personnels"))
+        lab = lingue._typo(lab, "fr")
+    return lab
+
+
+_CPV_FIX = {("it", "32400000"): "Reti"}
 
 
 def canton_name_or(code, fallback=None):
@@ -338,6 +746,27 @@ def wcut(t: str, n: int) -> str:
     if " " in c[max(0, n - 18):]:
         c = c[:c.rfind(" ")]
     return c.rstrip(" ,.;:-–—/") + "…"
+
+
+def name_cut(t: str, n: int) -> str:
+    """A name cut for a pill or a line: on a word boundary, never after 'des', 'de la',
+    'und' …, never inside '(…' ('Unité soumissions - Département de l'aménagement, des…',
+    'Gemeinde Kölliken, Abteilung Hochbau (müller verdan…': 507 pills per language)."""
+    t = _ws(t)
+    if len(t) <= n:
+        return t
+    cut = t[:n + 1]
+    cut = cut[:cut.rfind(" ")] if " " in cut else t[:n]
+    if cut.count("(") > cut.count(")"):
+        cut = cut[:cut.rfind("(")]
+    words = cut.rstrip(" ,;:–—/|").split(" ")
+    while len(words) > 1 and (words[-1].lower().strip(",;:") in _TAIL_STOP
+                              or words[-1] in _SEPS):
+        words.pop()
+    sp = _susp(words[-1])
+    # the first half of a suspended compound keeps its hyphen ('Bau- und Umwelt-…')
+    s = " ".join(words[:-1] + [sp]) if sp else " ".join(words).rstrip(" ,;:–—-/|")
+    return (s if len(s) >= min(20, n // 2) else cut_end(t, n)) + "…"
 
 
 def norm_buyer(name: str) -> str:
@@ -388,11 +817,69 @@ def load() -> tuple[list, list]:
             seen.add(k)
             if a.get("pubType") == "abandonment":
                 continue
+            _clean_names(a)
             awards.append(a)
+    # A corrected award is published again under the same project (38433-02, -03, -04: the
+    # same winner, the same amount): each copy counted as an award of its own, so the line
+    # repeated on the company and buyer pages and the sums counted it twice or three times
+    # (verifier, 29.09.2026). Only copies naming the same companies are merged; a project
+    # whose later publication names other companies is a different lot and stays.
+    newest_aw: dict = {}
+    for a in awards:
+        k = (a.get("projectId"), _vendor_set(a))
+        if not k[0] or not k[1]:
+            continue
+        if k not in newest_aw or _aw_order(a) > _aw_order(newest_aw[k]):
+            newest_aw[k] = a
+    awards = [a for a in awards
+              if not (a.get("projectId") and _vendor_set(a))
+              or newest_aw[(a.get("projectId"), _vendor_set(a))] is a]
     p = DATI / "gare_aperte.json"
-    opens = [t for t in json.loads(p.read_text())
-             if (t.get("offerDeadline") or "")[:10] >= TODAY] if p.exists() else []
+    rows = json.loads(p.read_text()) if p.exists() else []
+    for t in rows:
+        _clean_names(t)
+    # One row per project: simap republishes a tender for every correction (-02, -03 …),
+    # and each copy used to be listed as a tender of its own — the same line two or three
+    # times, the superseded deadline beside the current one, 1’458 "open tenders" that were
+    # 1’394 projects (verifier, 28.09.2026). The newest publication is the one in force:
+    # highest publication suffix, then the latest publication date.
+    newest: dict = {}
+    for t in rows:
+        k = t.get("projectId") or t.get("publicationId") or t.get("publicationNumber")
+        if k not in newest or _pub_order(t) > _pub_order(newest[k]):
+            newest[k] = t
+    opens = [t for t in newest.values() if (t.get("offerDeadline") or "")[:10] >= TODAY]
     return awards, opens
+
+
+def _clean_names(r: dict) -> None:
+    """Zero-width characters out of the names ('\u200bGesundheitsnetz Küsnacht AG'): invisible,
+    they changed nothing a reader sees but split sort order and counted in cut lengths."""
+    for k in ("buyerName", "winnerName"):
+        if isinstance(r.get(k), str):
+            r[k] = _INVISIBLE.sub("", r[k])
+    for v in ((r.get("award") or {}).get("vendors") or []):
+        if isinstance(v, dict) and isinstance(v.get("name"), str):
+            v["name"] = _INVISIBLE.sub("", v["name"])
+
+
+def _vendor_set(a: dict) -> tuple:
+    names = [(v.get("name") or "").strip().casefold()
+             for v in ((a.get("award") or {}).get("vendors") or []) if isinstance(v, dict)]
+    if not any(names) and a.get("winnerName"):
+        names = [a["winnerName"].strip().casefold()]
+    return tuple(sorted(n for n in names if n))
+
+
+def _aw_order(a: dict) -> tuple:
+    """The correction in force is the one published last (34279-02 came a day after -04)."""
+    return (a.get("publicationDate") or "", _pub_order(a)[0])
+
+
+def _pub_order(t: dict) -> tuple:
+    num = str(t.get("publicationNumber") or "")
+    suf = num.rsplit("-", 1)[-1] if "-" in num else ""
+    return (int(suf) if suf.isdigit() else -1, t.get("publicationDate") or "")
 
 
 # ------------------------------------------------------------------ the chrome
@@ -415,7 +902,6 @@ CSS = grafici.CSS + """
   --hero:transparent; --hero-ink:#f3f6f9; --hero-muted:#9db0c2;
   --mark:#38b5dd;
   --glass:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.017));
-  --d1:#10303f; --d2:#15485f; --d3:#1b6484; --d4:#2288ae; --d5:#38b5dd; --d6:#7fe3ff;
   --ease:cubic-bezier(.22,.68,.24,1);
   color-scheme:dark;
 }
@@ -490,15 +976,32 @@ h3{font-weight:700;font-size:16px;margin:0;letter-spacing:-.02em}
 .fig::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;
   background:linear-gradient(90deg,transparent,rgba(255,255,255,.26),transparent)}
 .fig b{display:block;font-weight:700;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.045em;
-  font-variant-numeric:tabular-nums;line-height:1;overflow-wrap:anywhere}
+  font-variant-numeric:normal;line-height:1;overflow-wrap:break-word}
+/* a figure never breaks inside its digits or its unit ("827’782.5|5", "C|HF"); only the
+   currency may move to the next line, as a whole word */
+.fig b .n{white-space:nowrap}
+.fig b small{font-size:.42em;font-weight:600;letter-spacing:0;color:var(--muted)}
+/* phones: the exact amount and the deadline on the award page take the whole row */
+@media(max-width:599px){.figures .fig.wide{grid-column:1/-1}
+  /* two tiles per row: the currency on its own line in every tile, not only in the
+     ones whose figure happens to be wide ('30,2 mia.' / 'CHF' beside '2,2 mio. CHF') */
+  .fig b small{display:block;margin-top:.4em}
+  html:lang(en) .fig b small{margin:0 0 .4em}}
+.fig .approx{display:block;margin-top:8px;font-size:13px;font-style:normal;color:var(--muted)}
 .fig.money b{color:var(--accent)}
-.fig span{display:block;margin-top:11px;font-size:10px;letter-spacing:.16em;
+.fig>span{display:block;margin-top:11px;font-size:10px;letter-spacing:.16em;
   text-transform:uppercase;color:var(--muted-2);font-weight:600;
   font-family:ui-monospace,Menlo,monospace}
 .sec{margin-top:10px}
-.scroll{overflow-x:auto;max-width:100%}
+.scroll{overflow-x:auto;max-width:100%;position:relative}
+/* position: the visually hidden cell text (.sr) is absolutely positioned; without a
+   positioned scroll box it escaped the clipping and widened the page on phones */
 /* ── tables ────────────────────────────────────────────────────────────── */
 table{width:100%;border-collapse:collapse}
+/* the Details box sits in a 320px column: long names and CPV labels wrap in place instead
+   of pushing the value column past the edge (verifier, 29.09.2026) */
+.kv{table-layout:fixed}
+.kv td{padding-right:0;overflow-wrap:break-word;hyphens:auto}
 th{text-align:left;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;
   color:var(--muted-2);font-weight:600;padding:0 14px 11px 0;
   border-bottom:1px solid var(--rule-strong);white-space:nowrap;
@@ -507,19 +1010,26 @@ td{padding:13px 14px 13px 0;border-bottom:1px solid var(--rule);vertical-align:t
   font-size:14.5px}
 tbody tr{transition:background .15s}
 tbody tr:hover{background:rgba(255,255,255,.032)}
-td.r,th.r{text-align:right;padding-right:0}
+td.r,th.r{text-align:right;padding-right:0;padding-left:18px}
+abbr[title]{text-decoration:none;cursor:help}
 td.sub,.sub{color:var(--muted);font-size:13px}
 ul.plain{list-style:none;margin:0;padding:0}
 ul.plain li{padding:13px 0;border-bottom:1px solid var(--rule)}
 ul.plain li:last-child{border-bottom:0}
 .row{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+/* a long unbroken name ('PricewaterhouseCoopers', 'Infrastrukturunterhaltsgesellschaft')
+   wraps instead of widening the page on phones; the count beside it never wraps */
+.row>*{min-width:0;overflow-wrap:anywhere}
+.row>.sub,.row>.when,.row>.num{flex:none;overflow-wrap:normal}
+h1,.eyebrow{overflow-wrap:anywhere}
 .when{color:var(--accent);font-size:12px;white-space:nowrap;font-weight:600}
 /* ── tags / chips ──────────────────────────────────────────────────────── */
 .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
 .tag{border:1px solid var(--rule);background:var(--wash);border-radius:100px;
   padding:6px 14px;font-size:12px;color:var(--muted);
   transition:border-color .16s,color .16s,transform .16s var(--ease)}
-a.tag{background-image:none;padding-bottom:6px}
+a.tag{background-image:none;padding-bottom:6px;display:inline-block;max-width:100%;line-height:1.45}
+/* inline-block: a pill whose text wraps on a phone stays one rounded box */
 a.tag:hover{background:var(--wash);border-color:var(--rule-strong);color:var(--ink);
   transform:translateY(-1px)}
 .tag.on{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:600}
@@ -535,21 +1045,6 @@ a.tag:hover{background:var(--wash);border-color:var(--rule-strong);color:var(--i
   letter-spacing:.15em;text-transform:uppercase;color:var(--muted-2)}
 .glass .pad{padding:0 24px 22px}
 .glass .pad.top{padding-top:20px}
-/* ── canton map: 26 links, works with JavaScript switched off ──────────── */
-.gmap{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;padding:4px 24px 20px}
-.gmap a{border-radius:11px;aspect-ratio:1;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:3px;line-height:1;background-image:none;
-  padding-bottom:0;transition:transform .2s var(--ease),box-shadow .2s}
-.gmap a:hover{transform:scale(1.11);z-index:2;box-shadow:0 10px 28px -8px rgba(0,0,0,.85)}
-.gmap .c{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;font-weight:600}
-.gmap .v{font-family:ui-monospace,Menlo,monospace;font-size:8.5px;opacity:.72}
-.s1{background:var(--d1);color:#cfe6f2} .s2{background:var(--d2);color:#e4f2f9}
-.s3{background:var(--d3);color:#eaf6fb} .s4{background:var(--d4);color:#04141c}
-.s5{background:var(--d5);color:#04141c} .s6{background:var(--d6);color:#04141c}
-.mleg{display:flex;align-items:center;gap:9px;padding:0 24px 20px;font-size:10px;
-  color:var(--muted-2);font-family:ui-monospace,Menlo,monospace;letter-spacing:.08em}
-.mleg .sw{display:flex;gap:3px}
-.mleg i{width:20px;height:8px;border-radius:3px;display:block}
 /* ── comparison table ──────────────────────────────────────────────────── */
 .cmp th{padding:16px 18px;font-size:12px;letter-spacing:.03em;text-transform:none;
   color:var(--muted);font-weight:600;font-family:"Libre Franklin",sans-serif;
@@ -611,16 +1106,12 @@ a.tag:hover{background:var(--wash);border-color:var(--rule-strong);color:var(--i
   color:var(--muted)}
 .prose p{margin:0 0 15px;font-size:15.5px;line-height:1.7;max-width:66ch;color:var(--muted)}
 .prose p strong{color:var(--ink)}
-.bar{display:block;height:4px;border-radius:2px;
-  background:linear-gradient(90deg,var(--d3),var(--d6));margin-top:6px}
 .cols{display:grid;grid-template-columns:1fr 320px;gap:48px;padding-top:6px;
   align-items:start}
 .half{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding-top:6px;align-items:start}
 .cols>*,.half>*{min-width:0}
 figure{margin:16px 0 4px;background:var(--panel);border:1px solid var(--rule);
   border-radius:16px;padding:20px 22px}
-figcaption{color:var(--muted-2);font-size:12px;margin-top:10px}
-svg.chart{margin:0}
 footer{border-top:1px solid var(--rule);margin-top:56px;padding-top:22px;
   color:var(--muted-2);font-size:12.5px}
 footer p{margin:0 0 6px;max-width:80ch}
@@ -630,10 +1121,14 @@ footer p{margin:0 0 6px;max-width:80ch}
   .wrap{padding:0 20px 44px}
   .title{padding:30px 0 24px;grid-template-columns:1fr;gap:24px}
   .cols,.half{grid-template-columns:1fr;gap:30px}
-  .gmap{grid-template-columns:repeat(5,1fr);padding-inline:16px}
-  .gmap .v{display:none}
-  .glass .ch,.glass .pad,.mleg{padding-inline:16px}
+  .glass .ch,.glass .pad{padding-inline:16px}
+  /* phones: headers such as "Totale (CHF)" may wrap and the numeric gutter narrows, so
+     the half-width firm tables fit 390px again instead of scrolling by 7-21px */
+  th{white-space:normal;vertical-align:bottom;letter-spacing:.08em}
+  td.r,th.r{padding-left:12px}
   .cmp td.c{width:96px;font-size:11.5px}
+  /* the home ranking fits a phone without scrolling: rank and canton step aside */
+  table.top .n0,table.top .kt{display:none}
   .cmp th,.cmp td{padding:12px 10px}
 }
 """
@@ -665,7 +1160,7 @@ HEAD = """<!doctype html>
 FOOT = """</main><footer><p>{notoff}</p>
 <p lang="de">{disc}</p>
 <p>{srcnote}</p>
-<p>{source}: <a href="https://www.simap.ch">simap.ch</a> — {official} ·
+<p>{source}{colon} <a href="https://www.simap.ch">simap.ch</a> ({official}) ·
 <a href="{imphref}">{implabel}</a> · <a href="{privhref}">{privlabel}</a></p>
 </footer></div></body></html>"""
 
@@ -716,24 +1211,66 @@ def lang_path(path: str, lang: str) -> str:
     return "/" + "/".join(parts) + "/"
 
 
+# words a cut description must not end on: articles, conjunctions, prepositions
+_DESC_STOP = {"an", "auf", "aus", "bei", "über", "nach", "bis", "zwischen", "sur", "dans", "par",
+              "avec", "entre", "chez", "su", "tra", "fra", "nel", "nella", "nei", "nelle", "sul",
+              "sulla", "dal", "dalla", "on", "at", "by", "from", "in", "into", "a", "an"}
+
+
 def fit_desc(text: str, limit: int = 155) -> str:
     """A description Google shows whole.
 
     The snippet is cut at roughly 155 characters, and 28 % of the pages were over it —
     the worst at 224 — so a third of the site advertised itself with a sentence that
-    stopped mid-word. Cut at the last sentence that fits; if none does, at the last
-    word, and only then add an ellipsis. Measured 22.09.2026.
+    stopped mid-word. Cut at the last sentence that fits; if none worth keeping does, at
+    the last clause boundary (comma, semicolon, dash) and only then at the last word,
+    never after 'zu', 'avec', 'Zuschlag an' … (2,432 German descriptions ended '… an…',
+    '… und…'; verifier 28.09.2026). Only ASCII whitespace is collapsed: the French
+    U+00A0/U+202F stay (10,371 French descriptions had lost them).
+    Builders drop their optional closing clause first (desc_pick); this is the last resort.
     """
-    text = " ".join(text.split())
+    text = _ws(text)
     if len(text) <= limit:
         return text
-    head = text[:limit]
-    # a full sentence is better than a trimmed one, but not if it throws away half
-    cut = max(head.rfind(". "), head.rfind("? "), head.rfind("! "))
+    head = text[:limit + 1]
+
+    def sentence_end(h: str) -> int:
+        return max(h.rfind(". "), h.rfind("? "), h.rfind("! "), h.rfind(" ? "),
+                   h.rfind(" ! "))
+
+    cut = sentence_end(head)
     if cut >= limit * 0.6:
-        return head[:cut + 1]
-    cut = head.rfind(" ")
-    return (head[:cut] if cut > 0 else head).rstrip(" ,;:—-") + "\u2026"
+        return text[:cut + 1].rstrip()
+    body = text[:limit - 1]
+    clause = max(body.rfind(", "), body.rfind("; "), body.rfind(" ; "), body.rfind(" – "),
+                 body.rfind(" – "))
+    if clause >= limit * 0.6:
+        c = body[:clause].rstrip(" ,;:  –—")
+        # 'Lift-, Brandschutz- und …' cut at its first comma keeps 'Lift-', not 'Lift'
+        return (c if _susp(c.split(" ")[-1]) else c.rstrip("-")) + "…"
+    if cut >= limit * 0.35:
+        return text[:cut + 1].rstrip()
+    c = body[:body.rfind(" ")] if " " in body else body
+    words = c.rstrip(" ,;:—–  /|").split(" ")
+    stop = _TAIL_STOP | _DESC_STOP
+    while len(words) > 1 and (words[-1].lower().strip(",;:  ") in stop
+                              or words[-1] in _SEPS):
+        words.pop()
+    sp = _susp(words[-1])
+    if sp:
+        # the first half of a suspended compound keeps its hyphen: 'Umbau Natur-…'
+        return " ".join(words[:-1] + [sp]) + "…"
+    return " ".join(words).rstrip(" ,;:—–-  /|") + "…"
+
+
+def desc_pick(*cands: str, limit: int = 155) -> str:
+    """The first description that fits whole, else the last one cut by fit_desc: a template
+    drops its optional closing clause ('– mit Auftraggebern, Beträgen und Kantonen', ',
+    publiées sur simap.ch') before anything is cut."""
+    for c in cands:
+        if c and len(_ws(c)) <= limit:
+            return _ws(c)
+    return fit_desc(cands[-1], limit)
 
 
 def page(title: str, desc: str, body: str, path: str, kicker: str = "",
@@ -750,15 +1287,16 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
                         kicker=e(kicker or _.register), lang=LANG, alts=alts,
                         verify=VERIFY + (f'<meta name="robots" content="{robots}">\n' if robots else "") + head_extra,
                         sitename=e(_.site), langnav=nav, langlabel=e(_.language))
-            + breadcrumbs(path, leaf or title.split(" — ")[0])
+            + breadcrumbs(path, leaf or re.split(r"\s[—–]\s", title)[0])
             + body + FOOT.format(disc=e(DISCLAIMER),
-                                 notoff=e(_p.not_official),
+                                 notoff=e(_p.footer_note),
                                  imphref=f"{BASE}/{LANG}/impressum/",
                                  implabel=e(_.imprint),
                                  privhref=f"{BASE}/{LANG}/datenschutz/",
                                  privlabel=e(_.privacy),
                                  srcnote=e(_p.translation_note), source=e(_.source),
-                                 official=e(_p.source_note)))
+                                 colon=lingue.COLON[LANG],
+                                 official=e(_p.source_inline)))
 
 
 def write(path: str, content: str) -> None:
@@ -830,12 +1368,18 @@ def matches(comp: dict, opens: list) -> dict:
             if best >= 4:
                 scored.append((best + (1 if t.get("canton") in c["cant"] else 0), t))
         if scored:
-            out[name] = [t for _, t in sorted(scored, key=lambda x: -x[0])[:6]]
+            # the six closest matches, shown by deadline: in score order the dates read as
+            # unsorted (07.10., 19.10., 06.10. …; verifier 28.09.2026)
+            top = [t for _, t in sorted(scored, key=lambda x: -x[0])[:6]]
+            out[name] = sorted(top, key=lambda t: t.get("offerDeadline") or "9999")
     return out
 
 
-def per_month(rows: list) -> dict:
-    """Publication counts by month — the dimension the tables do not carry."""
+def per_month(rows: list, until: str = "") -> dict:
+    """Publication counts by month — the dimension the tables do not carry.
+
+    until='YYYY-MM' extends the series with zero months up to that month, so a buyer
+    that has gone quiet shows its silence instead of ending on its last award."""
     c = collections.Counter((r.get("publicationDate") or "")[:7] for r in rows
                             if (r.get("publicationDate") or "")[:7])
     if not c:
@@ -845,9 +1389,126 @@ def per_month(rows: list) -> dict:
     # squeeze the axis and quietly imply activity that was not there
     out, y, m = {}, int(keys[0][:4]), int(keys[0][5:7])
     ly, lm = int(keys[-1][:4]), int(keys[-1][5:7])
+    if until and until > keys[-1]:
+        ly, lm = int(until[:4]), int(until[5:7])
     while (y, m) <= (ly, lm):
         out[f"{y:04d}-{m:02d}"] = c.get(f"{y:04d}-{m:02d}", 0)
         y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+    return out
+
+
+def month_chart(rows: list, title: str, fig_id: str = "chart-months") -> str:
+    """Awards per month as a chart a reader understands without help (owner, 28.09.2026:
+    "I don't understand the data in the charts"): a title that says what is counted, a
+    one-line takeaway from complete months only (and saying so: a running month can be taller
+    than the peak it names), a scale, readable month ticks, and the incomplete months drawn
+    striped with a note saying why. Below the minimum data it is one sentence instead of a chart."""
+    ser = sorted(per_month(rows, until=CUR_MONTH).items())
+    if not ser:
+        return ""
+    tot = sum(v for _k, v in ser)
+    part = {k for k, _v in ser if k < FULL_FROM or (k == CUR_MONTH and CUR_PARTIAL)}
+    if tot < 12 or len(ser) < 6:
+        # one sentence instead of a chart: "5 Zuschläge, alle im Juli 2026." — the plural
+        # "Publikationsmonate: Juli 2026 (5)" named one month and repeated the count
+        used = [(k, v) for k, v in ser if v]
+        if len(used) == 1:
+            lede = _if("mc_few_single" if tot == 1 else "mc_few_one", n=zuschlag(tot),
+                       month=formato.month(used[0][0], full=True))
+        else:
+            # every month with its count: 'Mai 2026 (7), Aug. 2026 (1)', not '…, Aug. 2026.'
+            months = ", ".join(formato.month(k) + f" ({formato.count(v)})" for k, v in used)
+            lede = _if("mc_few", n=zuschlag(tot), k=formato.count(len(used)), months=months)
+        return (f'<figure class="mc"><h3>{e(title)}</h3>'
+                f'<p class="lede">{e(lede)}</p></figure>')
+    comp = [(k, v) for k, v in ser if k not in part]
+    tk = ""
+    if comp:
+        avg = sum(v for _k, v in comp) / len(comp)
+        # a tie is named in full (122 charts per language named one month of a tie)
+        peaks = grafici.peak_months(ser, part)
+        top = dict(ser)[peaks[0]] if peaks else 0
+        start, avg_s = formato.month(comp[0][0]), formato.num1(avg)
+        if len(peaks) == 1:
+            tk = _if("mc_takeaway", start=start, avg=avg_s,
+                     peak_month=formato.month(peaks[0]), peak=formato.count(top))
+        elif len(peaks) == 2:
+            tk = _if("mc_takeaway_two", start=start, avg=avg_s, months=formato.month_list(peaks),
+                     peak=formato.count(top))
+        elif peaks:
+            tk = _if("mc_takeaway_many", start=start, avg=avg_s, peak=zuschlag(top),
+                     k=formato.count(len(peaks)))
+    notes = []
+    # a note describes only columns the reader can see: the build-up months when at least one
+    # of them has an award, the running month as a striped column only when it has one — with
+    # none so far, "striped last column" pointed at the last complete month instead.
+    # The build-up is the archive's coverage (it starts in August 2024; owner, 28.09.2026):
+    # said in the past tense, naming this chart's own striped months, singular for one column.
+    ramp = [k for k, v in ser if k < FULL_FROM and v]
+    if ramp:
+        if len(ramp) == 1:
+            notes.append(_if("mc_note_start_one", m=formato.month(ramp[0]),
+                             start=formato.month(RAMP_START, full=True)))
+        else:
+            notes.append(_if("mc_note_start", span=formato.month_range(ramp[0], ramp[-1]),
+                             start=formato.month(RAMP_START, full=True)))
+    if CUR_PARTIAL and ser[-1][0] == CUR_MONTH:
+        notes.append(_if("mc_note_end" if ser[-1][1] else "mc_note_end_zero",
+                         m=formato.month(CUR_MONTH), date=formato.date(DATA_DATE)))
+    return grafici.month_columns(ser, fig_id=fig_id, title=title, takeaway=tk,
+                                 unit_label=_i.mc_unit, units=lingue.PLURALS[LANG],
+                                 partial=part, notes=notes)
+
+
+def division_figure(rows: list, sect_counter: collections.Counter, sectors: set[str]) -> str:
+    """Awards by CPV division (first two digits) as a ranked list with bars: the top 8 and
+    one row for the rest, each with its share. Parent and sub-classes no longer compete
+    for the same eight slots, so the list covers most awards instead of half. The links
+    to the eight-digit sector pages stay, as a tag row under it."""
+    div = collections.Counter(str(a.get("cpvCode") or "")[:2] for a in rows
+                              if re.fullmatch(r"\d{2}", str(a.get("cpvCode") or "")[:2]))
+    if not div:
+        return ""
+    ranked = sorted(div.items(), key=lambda kv: (-kv[1], kv[0]))
+    # one industry left over is shown as a ninth row: "Übrige 1 Branchen" / "Altri 1 rami"
+    # grouped a single row under a plural (6 buyer pages per language)
+    top, rest = (ranked, []) if len(ranked) <= 9 else (ranked[:8], ranked[8:])
+
+    def label(d: str) -> str:
+        return lingue.CPV_SHORT[LANG].get(d) or cpv_label(d + "000000", d)
+
+    if len(ranked) == 1:
+        # a single bar at 100 % says nothing a sentence does not (368 buyer pages per language)
+        n = ranked[0][1]
+        out = (f'<figure class="rk" aria-labelledby="chart-sectors"><h3 id="chart-sectors">{e(_i.div_title)}</h3>'
+               f'<p class="lede">{e(_if("div_single" if n > 1 else "div_single_one", n=zuschlag(n), label=label(ranked[0][0])))}</p></figure>')
+    else:
+        items = [(label(d), None, k, formato.count(k)) for d, k in top]
+        other = None
+        if rest:
+            s = sum(k for _d, k in rest)
+            other = (_if("div_other", k=formato.count(len(rest))), None, s, formato.count(s))
+        lede = _if("div_lede_top", k=len(top), total=len(ranked)) if rest else _i.div_lede_all
+        out = grafici.rank_list(items, fig_id="chart-sectors", title=_i.div_title, lede=lede,
+                                other=other, total=sum(div.values()))
+    tops = [(lab, code, k) for (lab, code), k in sect_counter.most_common(20) if code in sectors][:8]
+
+    def tag_label(lab: str, code: str) -> str:
+        # A division's own general code (45000000) carries the division's name: the list read
+        # "Bauarbeiten 2’148" and the pill right under it "Bauarbeiten · 758" (462 /de/ pages).
+        # The pill now names it for what it counts — the awards filed under the general code.
+        if code[2:] == "000000" and code[:2] in lingue.CPV_SHORT[LANG]:
+            return _if("tag_general", label=label(code[:2]))
+        s = short_sector(lab, 48)
+        # a few sub-codes carry their division's name word for word (fr/it 72500000
+        # "Services informatiques"): the code itself tells them apart
+        return f"{s} ({code})" if s.casefold() == label(code[:2]).casefold() else s
+
+    if tops:
+        out += (f'<p class="sub" style="margin:14px 0 0">{e(_i.detail_sectors)}</p><div class="tags">'
+                + "".join(f'<a class="tag" href="{BASE}/{LANG}/bereich/{e(code)}/">'
+                          f'{e(tag_label(lab, code))} · {formato.count(k)}</a>' for lab, code, k in tops)
+                + "</div>")
     return out
 
 
@@ -881,7 +1542,7 @@ def peers(comp: dict, keep: set[str]) -> dict:
     for name, c in comp.items():
         if name not in keep or not c["cpv"]:
             continue
-        code = sig(c["cpv"].most_common(1)[0][0][0])[:4]
+        code = sig(main_cpv(c)[0])[:4]
         cant = c["cant"].most_common(1)[0][0] if c["cant"] else ""
         groups[(code, cant)].append(name)
     out = {}
@@ -896,12 +1557,21 @@ def peers(comp: dict, keep: set[str]) -> dict:
     return out
 
 
-_TAIL_STOP = {"und", "oder", "sowie", "der", "die", "das", "des", "den", "dem", "für", "von", "vom",
+_TAIL_STOP = {"und", "oder", "sowie", "bis", "der", "die", "das", "des", "den", "dem", "für", "von", "vom",
               "in", "im", "mit", "zu", "zur", "zum", "außer", "ausser", "ausgenommen",
               "einschließlich", "einschliesslich", "et", "ou", "de", "des", "du", "la", "le", "les",
               "pour", "en", "à", "au", "aux", "sauf", "y", "compris", "e", "o", "ed", "di", "del",
               "della", "dei", "degli", "delle", "per", "con", "a", "al", "da", "and", "or", "of",
-              "the", "for", "with", "except", "including", "to"}
+              "the", "for", "with", "except", "including", "to",
+              # prepositions and articles a cut stopped on ('Bodenbeläge aus…', 'sur la RC no 61,
+              # sur…', 'Wettswil am…', 'per il…'; verifier 28.09.2026)
+              "aus", "auf", "bei", "beim", "am", "an", "ans", "nach", "über", "unter", "gegen", "ohne",
+              "durch", "gemäss", "gemäß", "zwischen", "als", "ein", "eine", "einer", "eines", "einem",
+              "einen", "inkl.", "bzw.", "resp.", "evtl.", "sur", "avec", "par", "dans", "chez", "sous",
+              "vers", "entre", "jusqu'à", "jusqu’à", "un", "une", "su", "sul", "sullo", "sulla", "sui",
+              "sugli", "sulle", "alla", "allo", "alle", "ai", "agli", "nel", "nello", "nella", "nei",
+              "negli", "nelle", "dal", "dallo", "dalla", "dai", "dagli", "dalle", "col", "tra", "fra",
+              "il", "lo", "gli", "uno", "una", "at", "from", "on", "into", "by", "a", "an"}
 
 
 def short_sector(name: str, limit: int) -> str:
@@ -912,19 +1582,34 @@ def short_sector(name: str, limit: int) -> str:
     conjunction, article or preposition and never stops inside "(…". On /de/ it
     writes Swiss spelling (ss), as the rest of the German site does.
     """
-    name = " ".join((name or "").split())
+    name = _ws(name)
     if LANG == "de":
         name = name.replace("ß", "ss")
     if len(name) <= limit:
         return name
-    head = name[:limit + 1]
-    cut = head[:head.rfind(" ")] if " " in head else name[:limit]
-    if cut.count("(") > cut.count(")"):
-        cut = cut[:cut.rfind("(")]
-    words = cut.rstrip(" ,;:–—-").split()
-    while words and (words[-1].lower().strip(",;:") in _TAIL_STOP or words[-1].endswith("-")):
-        words.pop()
-    return " ".join(words).rstrip(" ,;:–—-") + "…"
+
+    def cut_at(room: int) -> str:
+        # cut_end: whole words, no dangling 'und'/'des', no bracket left open, and the first
+        # half of a suspended compound dropped with its hyphen ('…von Architektur-,
+        # Konstruktions- und …' printed 'Dienstleistungen von Architektur…')
+        c = cut_end(name, room)
+        return c if _balanced(c) else ""
+
+    # German suspended compounds ("Elektrizitätsverteilungs- und -schalteinrichtungen",
+    # "Architektur- und Ingenieurbüros") put the cut between the two halves; dropping the
+    # dangling half and the "und" before it left "Dienstleistungen…" or a bare "…" on 62
+    # /de/ pills (verifier, 28.09.2026). A cut that keeps less than two words or twenty
+    # characters is not a name: allow 16 more characters, then the full name.
+    for room in (limit, limit + 16, limit + 24):
+        if len(name) <= room:
+            return name
+        s = cut_at(room)
+        if len(s.split()) >= 2 and len(s) >= min(20, limit // 2):
+            return s + "…"
+    m = re.fullmatch(r"(.+?)\s*\([^()]*\)", name)       # "RAID (Redundant Array …)" -> "RAID…"
+    if m and len(m.group(1)) <= limit + 16:
+        return m.group(1).rstrip(" ,;:–—-") + "…"
+    return name if len(name) <= limit + 24 else cut_end(name, limit + 16) + "…"
 
 
 def top_division(cpv: collections.Counter) -> str:
@@ -944,6 +1629,38 @@ def top_division(cpv: collections.Counter) -> str:
     return min(div.items(), key=lambda kv: (-kv[1], kv[0]))[0] if div else ""
 
 
+def main_cpv(c: dict) -> tuple:
+    """The company's main (code, label): the most frequent 8-digit code INSIDE its main
+    division, ties to the lower code. The header took the first of Counter.most_common while
+    the alert took top_division, so a firm with one award in 45210000 and one in 31500000
+    read 'Lavori generali di costruzione di edifici' above an alert for «Materiale elettrico e
+    illuminazione» (verifier, 28.09.2026)."""
+    div = top_division(c["cpv"])
+    keys = [(k, n) for k, n in c["cpv"].items() if str(k[0])[:2] == div] or list(c["cpv"].items())
+    return min(keys, key=lambda kv: (-kv[1], str(kv[0][0]), kv[0][1]))[0] if keys else ("", "")
+
+
+def twin_notes(rows: list, keys: list) -> dict[int, str]:
+    """Rows whose visible text repeats in one table -> the sub-line that tells them apart:
+    the project number when the twins belong to different projects ('Umbau und Erweiterung
+    Jurastrasse 16' twice for the Integra foundation, projects 34265 and 34307), else the
+    publication number (three awards of project 38433, one per lot, identical on the page)."""
+    groups = collections.defaultdict(list)
+    for i, k in enumerate(keys):
+        groups[k].append(i)
+    out: dict[int, str] = {}
+    for idx in groups.values():
+        if len(idx) < 2:
+            continue
+        projs = [str(rows[i].get("projectNumber") or "") for i in idx]
+        by_proj = len(set(projs)) == len(projs) and all(projs)
+        for i in idx:
+            r = rows[i]
+            out[i] = (_if("project_no", n=r.get("projectNumber")) if by_proj
+                      else _if("publication_no", n=r.get("publicationNumber") or r.get("projectNumber") or ""))
+    return out
+
+
 def alert_callout(c: dict) -> str:
     """The free e-mail alert, offered where most visitors actually land.
 
@@ -954,7 +1671,8 @@ def alert_callout(c: dict) -> str:
     """
     cant = next((k for k, _n in c["cant"].most_common() if k in CANTONS), "")
     div = top_division(c["cpv"])
-    sector = short_sector(cpv_label(div + "000000", ""), 60) if div else ""
+    sector = (lingue.CPV_SHORT[LANG].get(div) or short_sector(cpv_label(div + "000000", ""), 60)
+              if div else "")
     if not sector:
         div = ""
     where = ""
@@ -977,110 +1695,223 @@ def alert_callout(c: dict) -> str:
             f'{e(_m("alert_link"))}</a></p></div></div>')
 
 
+def company_titles(comp: dict, taken: set = frozenset()) -> dict:
+    """slug -> the company page's <title>, unique across the site; `taken`: the buyers' names,
+    which their own pages may carry bare."""
+    sfx, short = _m("company_title"), _m("company_title_short")
+
+    def cands(name: str) -> list[str]:
+        name = _ws(name)
+        # the whole name with the short suffix before a cut name with the long one
+        # ('AS Aufzüge AG, Zweigniederlassung Wettswil am… – marchés publics'); the bare name
+        # and the short suffix only where no authority of that name has a page (Transports
+        # publics fribourgeois Trafic is both, and its buyer page may carry either)
+        both = name in taken
+        out = [(name + x, name) for x in (sfx, short) if len(name + x) <= 64 and not (both and x == short)]
+        out += [_ft(name, sfx), _ft(name, sfx, gap1=True), _ft(name, sfx, tail_share=.7, gap1=True)]
+        if not both:
+            out += [_ft(name, short, gap1=True), _ft(name, short, tail_share=.7, gap1=True)]
+            if len(name) <= 64:
+                out.append((name, name))
+        return rank_titles(out, most=True)
+    return pick_unique({s: cands(c["name"]) for s, c in comp.items() if len(c["awards"]) >= MIN_AWARDS})
+
+
 def build_companies(comp: dict, open_for: dict, sectors: set[str],
                     buyer_slugs: dict, peer_map: dict) -> dict:
     pages = {}
+    # one <title> per company page: branches of one firm differ only at the end of the name
+    # ('Hälg & Co. AG, Zweigniederlassung Zürich' / '… Basel')
+    ctitle = company_titles(comp, {_ws(v[1]) for v in buyer_slugs.values()})
     for s, c in comp.items():
         rows = sorted(c["awards"], key=lambda a: a.get("publicationDate") or "", reverse=True)
         if len(rows) < MIN_AWARDS:
             continue
         name = c["name"]
         years = sorted({(a.get("publicationDate") or "")[:7] for a in rows if a.get("publicationDate")})
-        span = ""
-        if years:
-            fmt = lambda y: f"{y[5:7]}/{y[:4]}"
-            span = fmt(years[0]) if len(years) == 1 else f"{fmt(years[0])} – {fmt(years[-1])}"
-        sector = c["cpv"].most_common(1)[0][0][1] if c["cpv"] else ""
+        span = formato.period(years[0], years[-1]) if years else ""
+        main_code, sector = main_cpv(c) if c["cpv"] else ("", "")
         cants = [k for k, _ in c["cant"].most_common(4)]
 
         b = [f'<div class="title"><div><p class="eyebrow">'
-             + " · ".join(x for x in (wcut(sector, 44), canton_name_or(cants[0], cants[0]) if cants else "") if x)
+             # the sector only: a canton here read as the firm's seat ('Swisscom … · Genf'),
+             # while it is where most of its awards fall — the rail says so ('Häufigste Kantone')
+             + e(short_sector(sector, 44) if sector else _.company)
              + f'</p><h1>{e(name)}</h1>'
              f'<p class="sum">' + e(_m("company_lead", n=zuschlag(len(rows)),
-                                       span=(f", {span}" if span else ""),
+                                       span=(f" ({span})" if span else ""),
                                        b=(_m("buyers_count_one") if len(c["buyers"]) == 1
-                                          else _m("buyers_count", k=len(c["buyers"])))))
+                                          else _m("buyers_count", k=formato.count(len(c["buyers"]))))))
              + '</p></div><dl class="rail">']
         if sector:
             b.append(f"<dt>{_.main_sector}</dt><dd>{e(sector)}</dd>")
-        if c["cpv"]:
-            b.append(f'<dt>CPV</dt><dd class="mono">{e(c["cpv"].most_common(1)[0][0][0])}</dd>')
+        if main_code:
+            b.append(f'<dt>CPV</dt><dd class="mono">{e(main_code)}</dd>')
         if cants:
-            b.append(f"<dt>{_.cantons}</dt><dd>" + " · ".join(e(x) for x in cants) + "</dd>")
+            # up to four, the most frequent first: "Kantone" over a list cut at four read as all
+            b.append(f"<dt>{_.canton if len(c['cant']) == 1 else _.main_cantons}</dt><dd>"
+                     + " · ".join(e(canton_name_or(x, x)) for x in cants) + "</dd>")
         b.append("</dl></div>")
 
         b.append('<div class="figures">')
-        b.append(f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>')
+        b.append(f'<div class="fig"><b>{formato.count(len(rows))}</b><span>{lab_n(len(rows), "awards")}</span></div>')
         if c["value"]:
-            b.append(f'<div class="fig money"><b>{chf(c["value"])}</b><span>{_.sum}</span></div>')
-        b.append(f'<div class="fig"><b>{len(c["buyers"])}</b><span>{_.buyers}</span></div>')
-        if len(c["amounts"]) > 1:
-            b.append(f'<div class="fig"><b>{chf(median(c["amounts"]))}</b><span>{_.median}</span></div>')
+            b.append(f'<div class="fig money"><b>{formato.tile(c["value"])}</b><span>{_.sum_published}</span></div>')
+        b.append(f'<div class="fig"><b>{formato.count(len(c["buyers"]))}</b>'
+                 f'<span>{lab_n(len(c["buyers"]), "buyers")}</span></div>')
+        if len(c["amounts"]) >= 3:
+            b.append(f'<div class="fig" title="{e(_.median_help)}"><b>{formato.tile(median(c["amounts"]))}</b>'
+                     f'<span>{_.median}</span></div>')
         b.append("</div>")
         b.append(alert_callout(c))
 
         # Derived analysis (2026-09-07): what simap does not say — per-year rhythm and
         # how concentrated the client base is. Aggregation, not alteration (AGB §5).
+        # One money rule for every figure on the page: an amount is credited to the firm
+        # only when the award names exactly one firm — the same rule as the headline total,
+        # which 595 company pages used to contradict in this table.
         per_year: dict[str, list] = {}
+        joint = 0
         for a in rows:
             y = (a.get("publicationDate") or "")[:4]
             if y:
                 per_year.setdefault(y, [0, 0.0])
                 per_year[y][0] += 1
-                per_year[y][1] += chf_amount(a) or 0
-        if len(per_year) >= 1:
-            top_b = c["buyers"].most_common(1)[0] if c["buyers"] else None
-            share = round(100 * top_b[1] / len(rows)) if top_b else 0
+                p = chf_amount(a)
+                if p is not None and len(winners(a)) == 1:
+                    per_year[y][1] += p
+                elif p is not None:
+                    joint += 1
+        if per_year:
             b.append(f'<div class="sec"><div class="runhead"><span>{e(_p.analysis)}</span>'
                      f'<span>{e(_p.derived)}</span></div><div class="scroll"><table><thead><tr>'
                      f'<th>{_.year}</th><th class="r">{_.awards}</th><th class="r">{_.sum}</th>'
                      "</tr></thead><tbody>")
             for y in sorted(per_year, reverse=True):
                 n_y, v_y = per_year[y]
-                b.append(f'<tr><td class="mono">{e(y)}</td><td class="r num">{n_y}</td>'
-                         f'<td class="r num">{e(chf(v_y)) if v_y else "–"}</td></tr>')
+                b.append(f'<tr><td class="mono">{e(y)}</td><td class="r num">{formato.count(n_y)}</td>'
+                         f'<td class="r num">{formato.cell(v_y or None, empty_sr=_.no_own_amount)}</td></tr>')
             b.append("</tbody></table></div>")
-            if top_b:
+            if joint:
                 b.append(f'<p class="sub" style="margin:10px 0 0">'
-                         + e(_m("top_buyer_share", buyer=top_b[0][:60], share=share)) + "</p>")
+                         f'{e(_if("joint_note_one" if joint == 1 else "joint_note", k=formato.count(joint)))}</p>')
+            line = ""
+            if len(c["buyers"]) == 1:
+                line = _m("top_buyer_only", buyer=name_cut(next(iter(c["buyers"])), 90))
+            elif len(c["buyers"]) > 1:
+                # "most frequent" only when there is one: a tie, or a single award, is not a pattern
+                (b1, k1), (_b2, k2) = c["buyers"].most_common(2)
+                if k1 >= 2 and k1 > k2:
+                    line = _m("top_buyer_share", buyer=name_cut(b1, 90), share=formato.pct(100 * k1 / len(rows)))
+            if line:
+                b.append(f'<p class="sub" style="margin:10px 0 0">{e(line)}</p>')
             b.append("</div>")
 
-        tl = grafici.timeline([(a.get("publicationDate") or "", chf_amount(a) or 0)
-                               for a in rows], title=f"{name}: {zuschlag(len(rows))}")
-        if tl:
-            b.append(f'<figure>{tl}<figcaption>{e(_i.timeline_cap)}</figcaption></figure>')
+        # How large the awards are: counts per amount band, read without a legend. It
+        # replaces the bubble timeline (overlapping dots, ISO ends, contrast 1.68:1).
+        if len(rows) >= 5:
+            bands = [0] * 6
+            for a in rows:
+                p = chf_amount(a)
+                if p is not None and len(winners(a)) == 1:
+                    # banded on the figure the page prints: 999’696 shows as "1 Mio." and so
+                    # belongs to "1 bis unter 10 Mio.", not to the band below it
+                    q = formato.shown(p)
+                    bands[0 if q >= 1e8 else 1 if q >= 1e7 else 2 if q >= 1e6 else 3 if q >= 1e5 else 4] += 1
+                else:
+                    bands[5] += 1
+            if not sum(bands[:5]):
+                # five empty bars and nothing to read (all amounts in euros, or none published)
+                b.append(f'<figure class="rk" aria-labelledby="chart-sizes"><h3 id="chart-sizes">'
+                         f'{e(_if("bands_title", name=name))}</h3><p class="lede">'
+                         f'{e(_if("bands_none", n=formato.count(len(rows))))}</p></figure>')
+            else:
+                band_rows = [(lingue.BANDS[LANG][i], None, bands[i], formato.count(bands[i])) for i in range(6)]
+                note = ((_if("bands_median", m=formato.money(median(c["amounts"])))
+                         if len(c["amounts"]) >= 3 else "")
+                        + (" " + _i.bands_noown if bands[5] else ""))
+                b.append(grafici.rank_list(band_rows[:5], other=band_rows[5], fig_id="chart-sizes",
+                                           title=_if("bands_title", name=name), lede=_i.bands_lede,
+                                           note=note.strip()))
+        # ... and which ones they are: a 331 Mio. total is often one award
+        own = sorted(((chf_amount(a), a) for a in rows
+                      if chf_amount(a) is not None and len(winners(a)) == 1),
+                     key=lambda x: -x[0])
+        if len(own) >= 3:
+            b.append(f'<div class="sec"><div class="runhead"><span>{_i.largest_h}</span><span></span></div>'
+                     '<ul class="plain">')
+            top3 = own[:3]
+            heads3 = distinct_titles([de(a, "title") for _p, a in top3], 110)
+            tw3 = twin_notes([a for _p, a in top3],
+                             [(h, a.get("buyerName"), a.get("publicationDate"), formato.money(p))
+                              for (p, a), h in zip(top3, heads3)])
+            for i, ((p, a), head) in enumerate(zip(top3, heads3)):
+                d = a.get("publicationDate") or ""
+                meta = " · ".join(x for x in (e(a.get("buyerName") or ""), tt(d, formato.date(d)),
+                                              e(tw3.get(i, ""))) if x)
+                b.append(f'<li><div class="row"><div><a href="{BASE}/{LANG}/auftrag/{e(a.get("projectId"))}/">'
+                         f'{e(head)}</a>'
+                         f'<span class="sub" style="display:block;margin-top:3px">{meta}</span></div>'
+                         f'<span class="num" style="white-space:nowrap">{formato.money_data(p)}</span></div></li>')
+            b.append("</ul>")
+            top1 = own[0][0]
+            if c["value"] and top1 / c["value"] >= .25:
+                share = formato.pct(100 * top1 / c["value"])
+                if share.startswith(">"):          # 99.6 % is not "100 %" when other amounts exist
+                    share = _if("over_pct", p=share[1:])
+                b.append(f'<p class="sub" style="margin:10px 0 0">'
+                         f'{e(_if("largest_share", share=share))}</p>')
+            b.append("</div>")
+
         b.append(f'<div class="sec"><div class="runhead"><span>{_.awards}</span>'
                  f'<span>{_.chronological}</span></div><div class="scroll"><table><thead><tr>'
                  f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.buyer}</th>'
                  f'<th style="width:44px">{_.canton_abbr}</th><th class="r">{_.amount}</th>'
                  "</tr></thead><tbody>")
-        for a in rows:
+        heads = distinct_titles([de(a, "title") for a in rows], 130)
+        twn = twin_notes(rows, [(a.get("publicationDate"), h, a.get("buyerName"), a.get("canton"),
+                                 formato.amount(price_of(a)), cur_of(a)) for a, h in zip(rows, heads)])
+        for i, (a, head) in enumerate(zip(rows, heads)):
+            d = a.get("publicationDate") or ""
+            p = price_of(a)
+            amt = formato.cell(p, cur_of(a), empty_sr=_.not_published)
+            if p and len(winners(a)) > 1:
+                amt += f'<span class="sub" style="display:block">{_.joint}</span>'
+            tn = twn.get(i)
+            twin = f'<span class="sub" style="display:block;margin-top:2px">{e(tn)}</span>' if tn else ""
             b.append(
-                f'<tr><td class="mono" style="font-size:12.5px">{e((a.get("publicationDate") or "")[:10])}</td>'
-                f'<td><a href="{BASE}/{LANG}/auftrag/{e(a.get("projectId"))}/">{e(de(a, "title")[:130])}</a></td>'
-                f'<td>{e(a.get("buyerName"))}</td><td>{e(a.get("canton"))}</td>'
-                f'<td class="r num">{e(money(a))}</td></tr>')
+                f'<tr><td class="mono" style="font-size:12.5px">{tt(d, formato.date(d))}</td>'
+                f'<td><a href="{BASE}/{LANG}/auftrag/{e(a.get("projectId"))}/">{e(head)}</a>{twin}</td>'
+                f'<td>{e(a.get("buyerName"))}</td><td>{abbr_canton(a.get("canton") or "")}</td>'
+                f'<td class="r num">{amt}</td></tr>')
         b.append("</tbody></table></div></div>")
 
         m = open_for.get(s, [])
         if m:
             # was hardcoded German, shipped on 1,938 company pages in each of fr/it/en
-            b.append(f'<div class="sec"><div class="runhead"><span>{e(_p.matched_tenders)}'
-                     f'</span><span>{len(m)}</span></div>'
+            b.append(f'<div class="sec"><div class="runhead"><span>'
+                     f'{e(_p.matched_tenders_one if len(m) == 1 else _p.matched_tenders)}'
+                     f'</span><span>{formato.count(len(m))}</span></div>'
                      f'<p class="sub" style="margin:10px 0 0">{e(_p.matched_note)}</p>'
-                     '<ul class="plain" style="margin-top:10px">')
-            for t in m:
+                     '<ul class="plain tl" style="margin-top:10px">')
+            heads = distinct_titles([de(t, "title") for t in m], 120)
+            labels = [short_sector(cpv_label(t.get("cpvCode"), de(t, "cpvLabel") or t.get("cpvLabel") or "") or "", 44)
+                      for t in m]
+            twins = twin_rows(list(zip(heads, labels)))
+            for i, (t, head, label) in enumerate(zip(m, heads, labels)):
+                dl = t.get("offerDeadline") or ""
                 b.append(f'<li><div class="row"><div><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/">'
-                         f'{e(de(t, "title")[:120])}</a><span class="sub" style="display:block;'
-                         f'margin-top:3px">{e(t.get("buyerName"))} · {e(t.get("canton"))} · '
-                         f'{e(cpv_label(t.get("cpvCode"), de(t, "cpvLabel") or t.get("cpvLabel") or "") or "")[:44]}</span></div>'
-                         f'<span class="when">{_.until} {e(dmyy(t.get("offerDeadline") or ""))}</span>'
+                         f'{e(head)}</a><span class="sub" style="display:block;'
+                         f'margin-top:3px">{e(t.get("buyerName"))} · {abbr_canton(t.get("canton") or "")} · '
+                         f'{e(label)}{e(project_no(t)) if i in twins else ""}</span></div>'
+                         f'<span class="when">{_.until} {tt(dl, formato.date(dl))}</span>'
                          "</div></li>")
             b.append("</ul></div>")
 
         if c["cpv"]:
-            b.append(f'<div class="sec"><div class="runhead"><span>{_.activities}</span>'
-                     f'<span>{len(c["cpv"])}</span></div><ul class="plain">')
+            b.append(f'<div class="sec"><div class="runhead"><span>'
+                     f'{_.activity if len(c["cpv"]) == 1 else _.activities}</span>'
+                     f'<span>{formato.count(len(c["cpv"]))}</span></div><ul class="plain">')
             for (code, label), k in c["cpv"].most_common(8):
                 cell = (f'<a href="{BASE}/{LANG}/bereich/{e(code)}/">{e(label)}</a>' if code in sectors
                         else e(label))
@@ -1089,13 +1920,14 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
             b.append("</ul></div>")
 
         if c["buyers"]:
-            b.append(f'<div class="sec"><div class="runhead"><span>{_.buyers}</span>'
-                     f'<span>{len(c["buyers"])}</span></div><div class="tags">')
+            b.append(f'<div class="sec"><div class="runhead"><span>'
+                     f'{_.buyer if len(c["buyers"]) == 1 else _.buyers}</span>'
+                     f'<span>{formato.count(len(c["buyers"]))}</span></div><div class="tags">')
             for bu, k in c["buyers"].most_common(12):
                 hit = buyer_slugs.get(norm_buyer(bu))
-                b.append(f'<a class="tag" href="{BASE}/{LANG}/auftraggeber/{e(hit[0])}/">'
-                         f'{e(hit[1][:52])} · {k}</a>' if hit
-                         else f'<span class="tag">{e(bu[:52])} · {k}</span>')
+                b.append(f'<a class="tag" href="{BASE}/{LANG}/auftraggeber/{e(hit[0])}/" title="{e(hit[1])}">'
+                         f'{e(name_cut(hit[1], 60))} · {formato.count(k)}</a>' if hit
+                         else f'<span class="tag" title="{e(bu)}">{e(name_cut(bu, 60))} · {formato.count(k)}</span>')
             b.append("</div></div>")
 
         pr = peer_map.get(s)
@@ -1110,21 +1942,168 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                          f'<span class="sub num">{zuschlag(len(oc["awards"]))}</span></div></li>')
             b.append("</ul></div>")
 
-        desc = _m("company_desc", name=name, n=zuschlag(len(rows)),
-                  val=(f", {chf(c['value'])} CHF" if c["value"] else ""),
-                  span=(f", {span}" if span else ""))
+        kw = dict(n=zuschlag(len(rows)),
+                  val=(_m("company_val", v=formato.money(c["value"])) if c["value"] else ""),
+                  span=(f" ({span})" if span else ""))
+        desc = desc_pick(_m("company_desc", name=name, **kw), _m("company_desc_short", name=name, **kw),
+                         _m("company_desc_short", name=name, **{**kw, "span": ""}),
+                         _m("company_desc_short", name=name_cut(name, 70), **{**kw, "span": ""}))
         pages[s] = {"name": name, "n": len(rows), "value": c["value"],
                     "cant": cants[0] if cants else "", "sector": sector}
         write(f"/{LANG}/unternehmen/{s}/index.html",
-              page(fit_title(name, _m("company_title")), desc[:180],
-                   "\n".join(b), f"/{LANG}/unternehmen/{s}/", _.companies))
+              page(ctitle[s], desc,
+                   "\n".join(b), f"/{LANG}/unternehmen/{s}/", _.companies,
+                   leaf=fit_title(name, "", tail_share=0)))
     return pages
 
 
 # ----------------------------------------------------------------- award page
 
+def _drop_echo(t: str) -> str:
+    """t without a bracket that only repeats, translated, the name before it: 'MehrSpur Zürich –
+    Winterthur (VoiePlus Zurich - Winterthur), Lots 140 et 141, …'. Kept in a cut, it pushed
+    out the lot numbers that tell the French pages apart (verifier 28.09.2026)."""
+    for m in re.finditer(r"\s*\(([^()]{3,90})\)", t):
+        inner = set(re.findall(r"\w{3,}", fold(m.group(1))))
+        before = set(re.findall(r"\w{3,}", fold(t[:m.start()]))[-8:])
+        common = inner & before
+        if len(common) >= 2 and len(common) * 2 >= len(inner):
+            return _ws(t[:m.start()] + t[m.end():])
+    return t
+
+
+def title_cands(t: str, who: str, num: str, sfx: str) -> list[str]:
+    """Candidate <title>s for one award or tender page, in order of preference.
+
+    Each is cut inside the publication's title only: a middle cut across the boundary
+    between the title and the buyer read 'Fenstersanierung Schulhaus … Abteilung Hochbau'
+    (297 German tender titles; verifier 28.09.2026). The winner or buyer is added only when
+    it fits whole, and the project number is appended, never cut ('Lose 340 … 3599' read
+    as a range of lots). A title that fits the 64 characters only without its suffix is
+    shown whole rather than cut ('Gesundheitsinformationssystem für Vollzugseinrichtungen'
+    had become 'Gesundheitsinformationssystem… – Zuschlag'), and a cut that leaves one or two
+    words comes after every cut that still says something (rank_titles)."""
+    t, who = _ws(t), _ws(who)
+    room = 64 - len(sfx)
+    out = []
+    if who and len(t) < 46 and len(t) + 3 + len(who) <= room:
+        out.append((f"{t} · {who}{sfx}", t))
+    if len(t) <= room:
+        out.append((t + sfx, t))
+    else:
+        if len(t) <= 64:
+            out.append((t, t))
+        t = _drop_echo(t)
+        out += [_ft(t, sfx, tail_share=0), _ft(t, sfx), _ft(t, sfx, tail_share=.7)]
+    if who and room - len(who) - 3 >= 24:
+        part, core = _ft(t, sfx, limit=64 - len(who) - 3)
+        out.append((f"{who} · {part}", core))
+    if num:
+        # labelled where the title still fits whole with it ('· Nr. 42546'), bare otherwise
+        nums = [f" · {_m('title_no', n=num)}{sfx}", f" · {num}{sfx}"]
+        fit = [x for x in nums if len(t + x) <= 64]
+        out += [(t + x, t) for x in fit[:1]]
+        for x in nums:
+            if x not in fit:
+                out += [_ft(t, x), _ft(t, x, tail_share=0)]
+        # without the suffix: the whole title and its number
+        out += [(t + x, t) for x in (f" · {_m('title_no', n=num)}", f" · {num}") if len(t + x) <= 64][:1]
+    # the last resort before a one-word title: a longer cut without the suffix
+    out.append(_ft(t, ""))
+    return rank_titles(out)
+
+
+def paras(text: str) -> str:
+    """A publication's text, whole, with its own paragraphs and line breaks. It used to be
+    cut at 1,500/1,600 characters in the middle of a word with no ellipsis ('…führt
+    westlich, paralle'; 662 German award pages): the longest text is 9 KB, and the source
+    is quoted, not trimmed."""
+    text = _INVISIBLE.sub("", text or "").replace("\r\n", "\n").replace("\r", "\n").strip()
+    out = []
+    for block in re.split(r"\n\s*\n", text):
+        lines = [x.strip() for x in block.split("\n") if x.strip()]
+        if lines:
+            out.append("<p>" + "<br>".join(e(x) for x in lines) + "</p>")
+    return "".join(out)
+
+
+def award_desc(title: str, buyer: str, tail: str, limit: int = 155) -> str:
+    """'Title – Buyer, Zuschlag an X für 1,2 Mio. CHF' made to fit: the title gives way
+    first, then the buyer; the winner and the amount are never the part that is cut off
+    ('…Hochbauamt Thurgau, Zuschlag an…' dropped the winner on 7,018 German pages)."""
+    title, buyer = _ws(title), _ws(buyer)
+    for b in (buyer, name_cut(buyer, 60) if len(buyer) > 60 else None,
+              name_cut(buyer, 36) if len(buyer) > 36 else None, ""):
+        if b is None:
+            continue
+        rest = (f"\u00a0– {b}" if b else "") + tail
+        room = limit - len(rest)
+        if room >= 40 or (not b and room >= 24):
+            t = title if len(title) <= room else fit_title(_drop_echo(title), "", room)
+            return t + rest
+    return fit_desc(f"{title}\u00a0– {buyer}{tail}", limit)
+
+
+def award_titles(by_project: dict) -> dict:
+    """projectId -> the page's <title>, unique across the site (see build_awards)."""
+    heads: dict[str, list] = {}
+    for pid, rec in by_project.items():
+        if not pid:
+            continue
+        src = rec.get("open") or rec.get("award")
+        t = de(src, "title")
+        if not t:
+            continue
+        aw = rec.get("award")
+        ws = winners(aw) if aw else []
+        # a winner only when there is exactly one: 'B + S AG · Rahmenvertrag …' named one of
+        # five winners as if it were the only one (verifier 28.09.2026)
+        who = ws[0] if len(ws) == 1 else (src.get("buyerName") or "")
+        sfx = _m("tender_suffix") if "open" in rec else _m("award_suffix")
+        num = src.get("projectNumber") or src.get("publicationNumber") or pid[:8]
+        heads[pid] = title_cands(t, who, str(num), sfx)
+    return pick_unique(heads)
+
+
+def award_desc_parts(rec: dict) -> tuple[str, str, str]:
+    """(title, buyer, closing clause) of an award or tender page's meta description."""
+    src = rec.get("open") or rec.get("award")
+    aw = rec.get("award")
+    ws = winners(aw) if aw else []
+    price = price_of(aw) if aw else None
+    tail = ""
+    if "open" in rec and src.get("offerDeadline"):
+        tail = _m("desc_deadline", date=formato.date(src["offerDeadline"]))
+    elif price:
+        # one money rule: an amount is never attached to a single name when the award
+        # names several firms
+        amt = formato.money(price, cur_of(aw))
+        tail = (_m("desc_won", who=ws[0]) + _m("desc_amount", amount=amt) if len(ws) == 1
+                else _m("desc_amount_only", amount=amt))
+    elif len(ws) == 1:
+        tail = _m("desc_won", who=ws[0])
+    return de(src, "title"), (src.get("buyerName") or "").strip(), tail
+
+
+def award_descs(by_project: dict) -> dict:
+    """projectId -> meta description. Pages whose simap titles are identical ('SGS Erweiterung
+    Schulanlage Gutenbrunnen Schübelbach', projects 42676 and 42684) shared one description
+    although their <title>s differ: those get the project number (verifier, 28.09.2026)."""
+    parts = {pid: award_desc_parts(rec) for pid, rec in by_project.items()
+             if pid and de(rec.get("open") or rec.get("award"), "title")}
+    out = {pid: award_desc(*p) for pid, p in parts.items()}
+    seen = collections.Counter(out.values())
+    for pid, (t, b, tail) in parts.items():
+        if seen[out[pid]] > 1:
+            src = by_project[pid].get("open") or by_project[pid].get("award")
+            num = src.get("projectNumber") or src.get("publicationNumber")
+            if num:
+                out[pid] = award_desc(t, b, tail + " · " + _if("project_no", n=num))
+    return out
+
+
 def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
-                 buyer_slugs: dict) -> int:
+                 buyer_slugs: dict, lot_sib: dict | None = None) -> int:
     by_project = {}
     for a in awards:
         by_project.setdefault(a.get("projectId"), {})["award"] = a
@@ -1135,15 +2114,12 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
     # and the rest genuinely share a title — twelve awards read only "BKP 211
     # Baumeisterarbeiten". Knowing which ones collide is what lets the distinguisher
     # be added only where it earns its space.
-    heads: dict[str, str] = {}
-    for pid, rec in by_project.items():
-        if not pid:
-            continue
-        src = rec.get("open") or rec.get("award")
-        t = de(src, "title")
-        if t:
-            heads[pid] = fit_title(t, "")
-    clash = {h for h, k in collections.Counter(heads.values()).items() if k > 1}
+    # The collision test runs on the FINAL titles, suffix included: testing a longer
+    # suffix-free cut missed 243 pages that the real, shorter cut made identical. Up to three
+    # rounds: the title as is (with the winner when it is short), then the winner in front,
+    # then the project number at the end, where the middle cut keeps it.
+    final_title = award_titles(by_project)
+    final_desc = award_descs(by_project)
 
     n = 0
     for pid, rec in by_project.items():
@@ -1164,62 +2140,80 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
         if src.get("publicationNumber"):
             b.append(f'<dt>{_.publication}</dt><dd class="mono">{e(src["publicationNumber"])}</dd>')
         if src.get("publicationDate"):
-            b.append(f'<dt>{_.published_on}</dt><dd class="mono">{e(src["publicationDate"][:10])}</dd>')
+            pd = src["publicationDate"]
+            b.append(f'<dt>{_.published_on}</dt><dd>{tt(pd, formato.date(pd))}</dd>')
         if src.get("processType"):
             b.append(f"<dt>{_.procedure}</dt><dd>{e(_e('processType', src['processType']))}</dd>")
         b.append("</dl></div>")
 
         figs = []
         if is_open and src.get("offerDeadline"):
-            figs.append(f'<div class="fig"><b>{e(src["offerDeadline"][:10])}</b>'
+            dl = src["offerDeadline"]
+            figs.append(f'<div class="fig wide"><b>{tt(dl, formato.deadline(dl))}</b>'
                         f"<span>{_.deadline}</span></div>")
-        if aw and aw.get("winnerPrice"):
-            figs.append(f'<div class="fig"><b>{money(aw)}</b>'
-                        f"<span>{_.sum}</span></div>")
+        # The award page is the official record: the amount exactly as published, Rappen
+        # included, with a rounded reading under it from one million up.
+        price = price_of(aw) if aw else None
+        if price:
+            cur = cur_of(aw)
+            approx = (f'<em class="approx">{e(_.approx.format(v=formato.money(price, cur)))}</em>'
+                      if price >= 999_500 else "")
+            figs.append(f'<div class="fig wide"><b>{formato.exact_tile(price, cur)}</b>'
+                        f"<span>{_.award_amount}</span>{approx}</div>")
         if award.get("numberOfSubmissions"):
-            figs.append(f'<div class="fig"><b>{e(award["numberOfSubmissions"])}</b>'
-                        f"<span>{_.offers}</span></div>")
-        if src.get("canton"):
-            figs.append(f'<div class="fig"><b>{e(src["canton"])}</b><span>{_.canton}</span></div>')
+            ns = award["numberOfSubmissions"]
+            try:
+                one = int(ns) == 1
+                shown = formato.count(int(ns))
+            except (TypeError, ValueError):
+                one, shown = False, e(ns)
+            figs.append(f'<div class="fig"><b>{shown}</b>'
+                        f"<span>{_.offers_one if one else _.offers}</span></div>")
         if figs:
             b.append('<div class="figures">' + "".join(figs) + "</div>")
 
         b.append('<div class="cols"><div class="prose">')
         ws = winners(aw) if aw else []
         if ws:
-            b.append(f'<div class="runhead"><span>{_.award}</span>'
-                     f'<span>{plural(len(ws), *lingue.WINNER[LANG])}</span></div>')
+            b.append(f'<div class="runhead"><span>{_.award_to}</span>'
+                     f'<span>{e(_if("joint_n", n=formato.count(len(ws)))) if len(ws) > 1 else ""}</span></div>')
             for w in ws:
                 s = slug(w)
                 known = pages.get(s)
                 link = (f'<a href="{BASE}/{LANG}/unternehmen/{e(s)}/" class="who">{e(w)}</a>'
                         if known else f'<span class="who">{e(w)}</span>')
                 extra = []
-                if aw.get("winnerPrice") and len(ws) == 1:
-                    extra.append(money(aw) + (" CHF" if not (aw.get("winnerCurrency")
-                                  or "CHF").strip().upper() != "CHF" else ""))
                 if known:
                     extra.append(f'{zuschlag(known["n"])} {_.in_register}')
                 b.append(f'<div class="winner">{link}'
                          + (f'<div class="sub" style="margin-top:5px">' + " · ".join(extra)
                             + "</div>" if extra else "") + "</div>")
         if award.get("justification"):
-            b.append(f'<h2 style="margin:34px 0 12px">{_.reason}</h2><p>'
-                     + e(award["justification"][:1500]) + "</p>")
+            b.append(f'<h2 style="margin:34px 0 12px">{_.reason}</h2>'
+                     + paras(award["justification"]))
         body_txt = de(src, "description")
         if body_txt:
-            b.append(f'<h2 style="margin:30px 0 12px">{_.description}</h2><p>'
-                     + e(body_txt[:1600]) + "</p>")
+            b.append(f'<h2 style="margin:30px 0 12px">{_.description}</h2>'
+                     + paras(body_txt))
         if src.get("simapUrl"):
             link = (f'<a href="{e(src["simapUrl"])}">'
                     + e(lingue.p("view_on_simap", LANG).format(n=src.get("projectNumber") or ""))
                     + "</a>")
             b.append('<div class="official">'
                      + e(_p.official_link).replace("{link}", link) + "</div>")
+        sib = (lot_sib or {}).get(pid) if is_open else None
+        if sib:
+            # the home shows these lots as one line ('… · 6 Lose') linking here
+            b.append(f'<h2 id="lose" style="margin:30px 0 8px">{e(_i.other_lots)}</h2><ul class="plain tl">')
+            for x, head in zip(sib, distinct_titles([de(x, "title") for x in sib], 100)):
+                xd = x.get("offerDeadline") or ""
+                b.append(f'<li><div class="row"><a href="{BASE}/{LANG}/auftrag/{e(x.get("projectId"))}/">'
+                         f'{e(head + project_no(x))}</a><span class="when">{_.until} {tt(xd, formato.date(xd))}</span></div></li>')
+            b.append("</ul>")
         b.append("</div><div>")
 
         b.append(f'<div class="runhead"><span>{_.details}</span><span></span></div>'
-                 '<div class="scroll"><table><tbody>')
+                 '<div class="scroll"><table class="kv"><tbody>')
         cpv = f'<span class="mono">{e(src.get("cpvCode") or "")}</span>' + (
             "<br>" + e(cpv_label(src.get("cpvCode"), de(src, "cpvLabel") or src.get("cpvLabel") or "") or "")
             if (src.get("cpvLabel") or de(src, "cpvLabel")) else "")
@@ -1240,33 +2234,25 @@ def build_awards(awards: list, opens: list, pages: dict, sectors: set[str],
         links = []
         if src.get("canton"):
             links.append(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(src["canton"])}/">'
-                         f'{e(_if("contracts_in", c=src["canton"]))}</a>')
+                         f'{e(_if("contracts_in", c=canton_name_or(src["canton"], src["canton"]), of=cant_of(src["canton"])))}</a>')
         if str(src.get("cpvCode") or "") in sectors:
             links.append(f'<a class="tag" href="{BASE}/{LANG}/bereich/{e(src["cpvCode"])}/">{e(_i.same_sector)}</a>')
         if links:
             b.append('<div class="tags">' + "".join(links) + "</div>")
         b.append("</div></div>")
 
-        desc = f"{title[:110]} — {src.get('buyerName') or ''}"
-        if is_open and src.get("offerDeadline"):
-            desc += f", {_.deadline} {src['offerDeadline'][:10]}"
-        elif aw and aw.get("winnerPrice"):
-            desc += f", {_.award} {money(aw)}" + (f" — {ws[0]}" if ws else "")
+        desc = final_desc[pid]
         # Some award titles are genuinely identical — twelve read only "BKP 211
         # Baumeisterarbeiten". No amount of clever truncation separates those, so the
         # title carries who won: it is what distinguishes the page and what a reader
-        # searching for a firm's public work would type.
-        who = ws[0] if ws else (src.get("buyerName") or "")
-        if heads.get(pid) in clash:
-            # this one would otherwise be indistinguishable: trade the title's tail for
-            # the name, and fall back to the publication number when even that repeats
-            head = f"{who} · {title}" if who else f"{title} · {src.get('publicationNumber') or pid[:8]}"
-        else:
-            head = f"{title} · {who}" if who and len(title) < 46 else title
+        # searching for a firm's public work would type (chosen above, per collision).
         write(f"/{LANG}/auftrag/{pid}/index.html",
-              page(fit_title(head, _m("tender_suffix") if is_open else _m("award_suffix")),
-                   desc[:180], "\n".join(b), f"/{LANG}/auftrag/{pid}/",
+              page(final_title[pid],
+                   desc, "\n".join(b), f"/{LANG}/auftrag/{pid}/",
                    _.tenders if is_open else _.award,
+                   # the breadcrumb names the publication, not the part of it before its
+                   # first dash ('Chavornay' for 'Chavornay – Raccordement de la boucle TRAVYS')
+                   leaf=fit_title(title, "", tail_share=0),
                    # 2026-09-07: 77.8k schede "rilevate ma non indicizzate" (Search Console).
                    # Sono quasi identiche fra loro e il testo simap non e' modificabile (AGB
                    # §5): tolte dall'indice per concentrare il budget di scansione sulle
@@ -1311,6 +2297,27 @@ def buyer_map(awards: list, floor: int = 3) -> dict:
     return {k: v for k, v in out.items() if v[2] >= floor}
 
 
+def buyer_title_cands(name: str, sfx: str, short: str) -> list[str]:
+    """A buyer's <title>: the whole name, with the long suffix, the short one or none; only
+    then cut, at its end first ('Politische Gemeinde Turbenthal…'), and where two authorities
+    then read the same, a middle cut that keeps the name up to its first comma — the town —
+    before the part that tells them apart. The generic middle cut dropped the town
+    ('Politische Gemeinde … Tiefbau und Werke'), and the long suffix left 'Eidgenössisches…
+    – vergebene Aufträge' where 'Eidgenössisches Nuklearsicherheitsinspektorat ENSI –
+    Aufträge' fits (verifier 28.09.2026)."""
+    name = _ws(name)
+    m = re.search(r",\s|\s[-–—]\s", name)
+    head = m.start() if m and m.start() >= 12 else 0
+    out = [(name + x, name) for x in (sfx, short, "") if len(name + x) <= 64]
+    for x in (sfx, short):
+        out.append(_ft(name, x, tail_share=0))
+        if head:
+            out.append(_ft(name, x, head_min=head))
+        out += [_ft(name, x), _ft(name, x, tail_share=.7)]
+    out.append(_ft(name, ""))
+    return rank_titles(out, most=True)
+
+
 def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
                  bmap: dict, floor: int = 3) -> list:
     """A page per contracting authority. "Welche Aufträge hat die Gemeinde X
@@ -1320,6 +2327,10 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
     for a in awards:
         if a.get("buyerName"):
             by[norm_buyer(a["buyerName"])].append(a)
+    # names that differ only in the middle ("Bundesamt für Strassen ASTRA, Filiale Zofingen" /
+    # "… Abteilung Strasseninfrastruktur Ost Filiale Zofingen") would share a middle-cut title
+    sfx, short = _m("buyer_title"), _m("buyer_title_short")
+    btitle = pick_unique({k: buyer_title_cands(v[1], sfx, short) for k, v in bmap.items()})
     out = []
     for key, rows in sorted(by.items(), key=lambda kv: -len(kv[1])):
         if key not in bmap:
@@ -1339,55 +2350,72 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
              str(a.get("cpvCode") or ""))
             for a in rows if a.get("cpvCode"))
         cant = cants.most_common(1)[0][0] if cants else ""
-        b = [f'<div class="title"><div><p class="eyebrow">{_.buyer}'
-             + (f" · {e(canton_name_or(cant, cant))}" if cant else "") + f'</p><h1>{e(name)}</h1>'
-             f'<p class="sum">' + e(_m("buyer_lead", n=zuschlag(len(rows)), f=nfirms))
-             + '</p></div><dl class="rail">'
-             + (f"<dt>{_.canton}</dt><dd>{e(cant)}</dd>" if cant else "")
-             + f"<dt>{_.companies}</dt><dd>{nfirms}</dd></dl></div>",
+        lead = e(_m("buyer_lead", n=zuschlag(len(rows)), f=firms(nfirms)))
+        if nfirms > len(rows):
+            # "83 Zuschläge an 90 Unternehmen" reads as an error without this
+            k_joint = sum(1 for a in rows if len(winners(a)) > 1)
+            lead += " " + e(_m("buyer_joint_note_one") if k_joint == 1
+                            else _m("buyer_joint_note", k=formato.count(k_joint)))
+        # The eyebrow no longer names a canton: a federal office is not "Kanton TG" because
+        # most of its awards are carried out there. The rail says what the canton is.
+        b = [f'<div class="title"><div><p class="eyebrow">{_.buyer}</p><h1>{e(name)}</h1>'
+             f'<p class="sum">{lead}</p></div><dl class="rail">'
+             + (f"<dt>{_.main_canton}</dt><dd>{e(canton_name_or(cant, cant))}</dd>" if cant else "")
+             # one firm: its name, not "Impresa: 1" (which reads as a firm called 1)
+             + (f"<dt>{_.company}</dt><dd>{e(only_firm(rows, comp))}</dd></dl></div>" if nfirms == 1
+                else f"<dt>{lab_n(nfirms, 'companies')}</dt><dd>{formato.count(nfirms)}</dd></dl></div>"),
              '<div class="figures">',
-             f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>',
-             f'<div class="fig"><b>{nfirms}</b><span>{_.companies}</span></div>']
+             f'<div class="fig"><b>{formato.count(len(rows))}</b><span>{lab_n(len(rows), "awards")}</span></div>',
+             f'<div class="fig"><b>{formato.count(nfirms)}</b><span>{lab_n(nfirms, "companies")}</span></div>']
         if total:
-            b.append(f'<div class="fig money"><b>{chf_big(total)}</b><span>{_.sum}</span></div>')
+            b.append(f'<div class="fig money"><b>{formato.tile(total)}</b><span>{_.sum_published}</span></div>')
         b.append("</div>")
+        b.append(month_chart(rows, _i.mc_title_buyer))
         b.append(f'<div class="half"><div><div class="runhead"><span>{_.companies}</span>'
-                 f'<span>{_.by_awards}</span></div>' + table + "</div><div>")
-        b.append(f'<div class="runhead"><span>{_.sectors}</span><span>CPV</span></div>'
-                 + grafici.bars([(lab, k) for (lab, _c), k in sect.most_common(8)],
-                                unit=_.awards, title=_i.sectors_cap)
-                 + '<ul class="plain">')
-        for (label, code), k in sect.most_common(8):
-            cell = (f'<a href="{BASE}/{LANG}/bereich/{e(code)}/">{e(label[:48])}</a>' if code in sectors
-                    else e(label[:48]))
-            b.append(f'<li><div class="row">{cell}<span class="sub num">{k}</span></div></li>')
-        b.append("</ul></div></div>")
-        col = grafici.columns(sorted(per_month(rows).items()), title=_i.volume_cap)
-        if col:
-            b.append(f'<figure>{col}<figcaption>{e(_i.volume_cap)}</figcaption></figure>')
+                 f'<span>{_.by_awards}</span></div>' + table + "</div><div>"
+                 + division_figure(rows, sect, sectors) + "</div></div>")
         b.append(f'<div class="sec"><div class="runhead"><span>{_.awards}</span>'
                  f"<span>{_.chronological}</span></div><div class=\"scroll\"><table><thead><tr>"
-                 f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.award}</th>'
+                 f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.winner}</th>'
                  f'<th class="r">{_.amount}</th></tr></thead><tbody>')
-        for a in sorted(rows, key=lambda x: x.get("publicationDate") or "", reverse=True)[:60]:
+        recent = sorted(rows, key=lambda x: x.get("publicationDate") or "", reverse=True)[:60]
+        heads = distinct_titles([de(a, "title") for a in recent], 110)
+        # rows that still read the same (two projects under one title, or one project's lots
+        # awarded separately) get the number that tells them apart
+        twn = twin_notes(recent, [(a.get("publicationDate"), h, tuple(winners(a)),
+                                   formato.amount(price_of(a)), cur_of(a)) for a, h in zip(recent, heads)])
+        for i, (a, head) in enumerate(zip(recent, heads)):
             ws = winners(a)
             who = " · ".join(
                 (f'<a href="{BASE}/{LANG}/unternehmen/{e(slug(w))}/">{e(w)}</a>'
-                 if slug(w) in pages else e(w)) for w in ws) or "—"
-            b.append(f'<tr><td class="mono" style="font-size:12.5px">'
-                     f'{e((a.get("publicationDate") or "")[:10])}</td>'
-                     f'<td><a href="{BASE}/{LANG}/auftrag/{e(a.get("projectId"))}/">{e(de(a, "title")[:110])}</a></td>'
-                     f"<td>{who}</td><td class=\"r num\">{e(money(a))}</td></tr>")
+                 if slug(w) in pages else e(w)) for w in ws) or "–"
+            d = a.get("publicationDate") or ""
+            tn = twn.get(i)
+            twin = f'<span class="sub" style="display:block;margin-top:2px">{e(tn)}</span>' if tn else ""
+            b.append(f'<tr><td class="mono" style="font-size:12.5px">{tt(d, formato.date(d))}</td>'
+                     f'<td><a href="{BASE}/{LANG}/auftrag/{e(a.get("projectId"))}/">{e(head)}</a>{twin}</td>'
+                     f'<td>{who}</td><td class="r num">'
+                     f'{formato.cell(price_of(a), cur_of(a), empty_sr=_.not_published)}</td></tr>')
         b.append("</tbody></table></div></div>")
         write(f"/{LANG}/auftraggeber/{sl}/index.html",
-              page(fit_title(name, _m("buyer_title")),
-                   _m("buyer_desc", name=name, n=zuschlag(len(rows)), f=nfirms),
-                   "\n".join(b), f"/{LANG}/auftraggeber/{sl}/", _.buyers))
+              page(btitle[key],
+                   desc_pick(_m("buyer_desc", name=name, n=zuschlag(len(rows)), f=firms(nfirms)),
+                             _m("buyer_desc_short", name=name, n=zuschlag(len(rows)), f=firms(nfirms)),
+                             _m("buyer_desc_short", name=name_cut(name, 100), n=zuschlag(len(rows)),
+                                f=firms(nfirms))),
+                   "\n".join(b), f"/{LANG}/auftraggeber/{sl}/", _.buyers,
+                   leaf=fit_title(name, "", tail_share=0)))
         out.append((sl, name, len(rows)))
     return out
 
 
 # ------------------------------------------------------------------- the hubs
+
+def only_firm(rows: list, comp: dict) -> str:
+    """The single firm named across these rows, spelled as on its company page."""
+    w = next((w for r in rows for w in winners(r)), "")
+    return (comp.get(slug(w)) or {}).get("name") or w
+
 
 def firm_table(rows: list, comp: dict, pages: dict, limit: int = 60) -> str:
     """Companies ranked within THESE rows.
@@ -1410,19 +2438,50 @@ def firm_table(rows: list, comp: dict, pages: dict, limit: int = 60) -> str:
             p = chf_amount(r)
             if p is not None and len(ws) == 1:
                 sums[k] += p
-    out = [f'<div class="scroll"><table><thead><tr><th>{_.companies}</th>'
+    out = [f'<div class="scroll"><table><thead><tr><th>{_.company}</th>'
            f'<th class="r">{_.awards}</th><th class="r">{_.sum}</th></tr></thead><tbody>']
-    for sl, k in firms.most_common(limit):
+    # ties: the larger sum first, then the name — the same order on every build
+    order = sorted(firms.items(), key=lambda kv: (-kv[1], -sums.get(kv[0], 0),
+                                                  fold(seen_name.get(kv[0], ""))))[:limit]
+    for sl, k in order:
         label = (comp.get(sl) or {}).get("name") or seen_name.get(sl, sl)
         cell = (f'<a href="{BASE}/{LANG}/unternehmen/{e(sl)}/">{e(label)}</a>'
                 if sl in pages else e(label))
-        out.append(f'<tr><td>{cell}</td><td class="r num">{k}</td>'
-                   f'<td class="r num">{e(chf(sums.get(sl, 0)))}</td></tr>')
+        out.append(f'<tr><td>{cell}</td><td class="r num">{formato.count(k)}</td>'
+                   f'<td class="r num">{formato.cell(sums.get(sl) or None, empty_sr=_.no_own_amount)}</td></tr>')
     out.append("</tbody></table></div>")
     return "\n".join(out), len(firms)
 
 
-def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tuple[list, list]:
+def canton_title(t: str, sfx: str) -> str:
+    """The canton's <title>: with its suffix when it fits, else without it — a cut left both
+    Appenzell cantons as 'Marchés publics du canton d’Appenzell… – adjudications'."""
+    return t + sfx if len(t + sfx) <= 64 else t if len(t) <= 64 else fit_title(t, sfx, gap1=True)
+
+
+def sector_title(label: str, code: str) -> str:
+    """A sector's <title>: the name whole with 'Aufträge' when it fits, else whole with the
+    code only; a division's own general code (71000000) by the division's short name; only
+    then a cut. 'Installation… – CPV 45331000' and 'Dienstleistungen… – CPV 71000000' named
+    nothing, and 'Bauarbeiten – CPV 45000000' had lost the keyword (verifier 28.09.2026)."""
+    long_, sfx = _m("sector_suffix_long", code=code), _m("sector_suffix", code=code)
+    whole = short_sector(label, 999)
+    for x in (long_, sfx):
+        if len(whole + x) <= 64:
+            return whole + x
+    div = lingue.CPV_SHORT[LANG].get(code[:2]) if code[2:] == "000000" else None
+    if div:
+        for x in (long_, sfx):
+            if len(div + x) <= 64:
+                return div + x
+    cut = _ft(short_sector(label, 63 - len(sfx)), sfx)
+    # the name alone, whole, rather than 'Elektrizitätsverteilungs-… – CPV 31200000'
+    bare = [(whole, whole)] if len(whole) <= 64 and _poor(cut[1]) else []
+    return rank_titles([cut] + bare + [_ft(whole, sfx), _ft(whole, sfx, tail_share=.7, gap1=True)])[0]
+
+
+def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str],
+               open_cants: collections.Counter) -> tuple[list, list]:
     by_cant, by_cpv = collections.defaultdict(list), collections.defaultdict(list)
     for a in awards:
         if a.get("canton"):
@@ -1431,49 +2490,48 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
             by_cpv[str(a["cpvCode"])].append(a)
 
     cant_list = sorted(by_cant.items(), key=lambda kv: -len(kv[1]))
-    nav = '<div class="tags" style="margin-top:26px;padding-top:22px;border-top:1px solid var(--rule)">' \
-          + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">{e(c)} {len(r)}</a>'
-                    for c, r in cant_list) + "</div>"
+    nav = (f'<div class="runhead" style="margin-top:26px"><span>{_i.all_cantons}</span>'
+           f'<span>{_.awards}</span></div><div class="tags">'
+           + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">'
+                     f'{e(canton_name_or(c, c))} · {formato.count(len(r))}</a>'
+                     for c, r in cant_list) + "</div>")
 
     for code, rows in cant_list:
         name = canton_name_or(code, code)
+        of = cant_of(code, name)
         table, nfirms = firm_table(rows, comp, pages)
         total = sum(chf_amount(a) or 0 for a in rows)
         sect = collections.Counter(
             (cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") or "", str(a.get("cpvCode") or ""))
             for a in rows if a.get("cpvCode"))
-        top = sect.most_common(1)[0][1] if sect else 1
-        b = [f'<div class="title"><div><p class="eyebrow">{_.canton}</p><h1>{e(name)}</h1>'
-             f'<p class="sum">' + e(_m("canton_lead", n=zuschlag(len(rows)), f=nfirms))
-             + "</p></div>"
+        # the canton's open tenders, when it has any (only then does that page exist)
+        open_link = ""
+        if open_cants.get(code):
+            k_open = open_cants[code]
+            open_link = (f'<p style="margin:14px 0 0"><a class="tag on" href="{BASE}/{LANG}/ausschreibungen/{code}/">'
+                         f'{e(_if("open_in_one" if k_open == 1 else "open_in", c=name, of=of, k=formato.count(k_open)))}</a></p>')
+        nbuyers = len({a.get("buyerName") for a in rows})
+        b = [f'<div class="title"><div><p class="eyebrow">{_.canton}</p><h1>{e(_m("canton_title", name=name, of=of))}</h1>'
+             f'<p class="sum">' + e(_m("canton_lead_one" if len(rows) == 1 else "canton_lead",
+                                       n=zuschlag(len(rows)), f=firms(nfirms), name=name, of=of))
+             + "</p>" + open_link + "</div>"
              f'<dl class="rail"><dt>{_.abbr}</dt><dd class="mono">{e(code)}</dd>'
-             f'<dt>{_.buyers}</dt><dd>{len({a.get("buyerName") for a in rows})}</dd></dl></div>',
+             f'<dt>{lab_n(nbuyers, "buyers")}</dt><dd>{formato.count(nbuyers)}</dd></dl></div>',
              '<div class="figures">',
-             f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>',
-             f'<div class="fig"><b>{nfirms}</b><span>{_.companies}</span></div>']
+             f'<div class="fig"><b>{formato.count(len(rows))}</b><span>{lab_n(len(rows), "awards")}</span></div>',
+             f'<div class="fig"><b>{formato.count(nfirms)}</b><span>{lab_n(nfirms, "companies")}</span></div>']
         if total:
-            b.append(f'<div class="fig money"><b>{chf_big(total)}</b><span>{_.sum}</span></div>')
+            b.append(f'<div class="fig money"><b>{formato.tile(total)}</b><span>{_.sum_published}</span></div>')
         b.append("</div>")
+        b.append(month_chart(rows, _if("mc_title_canton", name=name, of=of)))
         b.append(f'<div class="half"><div><div class="runhead"><span>{_.companies}</span>'
-                 f"<span>{_.by_awards}</span></div>" + table + "</div>")
-        b.append(f'<div><div class="runhead"><span>{_.sectors}</span><span>CPV</span></div>'
-                 + grafici.bars([(lab, k) for (lab, _c), k in sect.most_common(8)],
-                                unit=_.awards, title=_i.sectors_cap)
-                 + '<ul class="plain">')
-        for (label, code2), k in sect.most_common(10):
-            cell = (f'<a href="{BASE}/{LANG}/bereich/{e(code2)}/">{e(label[:52])}</a>' if code2 in sectors
-                    else e(label[:52]))
-            b.append(f'<li><div class="row">{cell}<span class="sub num">{k}</span></div>'
-                     f'<span class="bar" style="width:{max(4, round(k / top * 100))}%"></span></li>')
-        b.append("</ul></div></div>")
-        col = grafici.columns(sorted(per_month(rows).items()),
-                              title=_i.volume_cap)
-        if col:
-            b.append(f'<figure>{col}<figcaption>{e(_i.volume_cap)}</figcaption></figure>')
+                 f"<span>{_.by_awards}</span></div>" + table + "</div><div>"
+                 + division_figure(rows, sect, sectors) + "</div></div>")
         b.append(nav)
         write(f"/{LANG}/kanton/{code}/index.html",
-              page(fit_title(_m("canton_title", name=name), _m("canton_suffix")),
-                   _m("canton_desc", n=zuschlag(len(rows)), name=name, f=nfirms),
+              page(canton_title(_m("canton_title", name=name, of=of), _m("canton_suffix")),
+                   desc_pick(_m("canton_desc", n=zuschlag(len(rows)), name=name, of=of, f=firms(nfirms)),
+                             _m("canton_desc_short", n=zuschlag(len(rows)), name=name, of=of, f=firms(nfirms))),
                    "\n".join(b), f"/{LANG}/kanton/{code}/", _.canton))
 
     cpv_list = [(c, r) for c, r in sorted(by_cpv.items(), key=lambda kv: -len(kv[1]))
@@ -1483,27 +2541,43 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str]) -> tupl
                       if cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "")), code)
         table, nfirms = firm_table(rows, comp, pages)
         cants = collections.Counter(a["canton"] for a in rows if a.get("canton"))
-        b = [f'<div class="title"><div><p class="eyebrow">{_.sector} · CPV {e(code)}</p>'
+        # a division's own general code (72000000) names its division: the pills that link here
+        # call it "Informatikdienstleistungen (allgemeiner Code)", the EU label reads otherwise
+        general = code[2:] == "000000" and code[:2] in lingue.CPV_SHORT[LANG]
+        eyebrow = (_if("sector_general", label=lingue.CPV_SHORT[LANG][code[:2]]) + f" · CPV {code}"
+                   if general else f"{_.sector} · CPV {code}")
+        # one canton: its name ("Kanton: 1" read as a canton called 1)
+        rail_cant = (f'<dt>{_.canton}</dt><dd>{e(canton_name_or(next(iter(cants)), ""))}</dd>'
+                     if len(cants) == 1 else
+                     f'<dt>{lab_n(len(cants), "cantons")}</dt><dd>{formato.count(len(cants))}</dd>')
+        b = [f'<div class="title"><div><p class="eyebrow">{e(eyebrow)}</p>'
              f'<h1>{e(label)}</h1><p class="sum">'
-             + e(_m("sector_lead", n=zuschlag(len(rows)), f=nfirms)) + "</p></div>"
+             + e(_m("sector_lead", n=zuschlag(len(rows)), f=firms(nfirms))) + "</p></div>"
              f'<dl class="rail"><dt>CPV</dt><dd class="mono">{e(code)}</dd>'
-             f'<dt>{_.cantons}</dt><dd>{len(cants)}</dd></dl></div>',
+             f'{rail_cant}</dl></div>',
              '<div class="figures">',
-             f'<div class="fig"><b>{len(rows)}</b><span>{_.awards}</span></div>',
-             f'<div class="fig"><b>{nfirms}</b><span>{_.companies}</span></div>',
-             f'<div class="fig"><b>{len(cants)}</b><span>{_.cantons}</span></div></div>',
+             f'<div class="fig"><b>{formato.count(len(rows))}</b><span>{lab_n(len(rows), "awards")}</span></div>',
+             f'<div class="fig"><b>{formato.count(nfirms)}</b><span>{lab_n(nfirms, "companies")}</span></div>',
+             f'<div class="fig"><b>{formato.count(len(cants))}</b><span>{lab_n(len(cants), "cantons")}</span></div></div>',
+             month_chart(rows, _i.mc_title_sector),
              f'<div class="sec"><div class="runhead"><span>{_.companies}</span>'
              f"<span>{_.by_awards}</span></div>" + table + "</div>",
-             (lambda g: f'<figure>{g}<figcaption>{e(_i.volume_cap)}</figcaption></figure>'
-              if g else "")(grafici.columns(sorted(per_month(rows).items()),
-                                            title=_i.volume_cap)),
-             '<div class="tags" style="margin-top:24px">'
-             + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">{e(c)} {k}</a>'
-                       for c, k in cants.most_common(14)) + "</div>"]
+             f'<div class="runhead" style="margin-top:26px"><span>{lab_n(len(cants), "cantons")}</span>'
+             f'<span>{lab_n(len(rows), "awards")}</span></div><div class="tags">'
+             + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">'
+                       f'{e(canton_name_or(c, c))} · {formato.count(k)}</a>'
+                       # every canton: the tile above counts them all, and 14 of 18 read as
+                       # the whole list (verifier 28.09.2026); there are at most 26
+                       for c, k in cants.most_common()) + "</div>"]
         write(f"/{LANG}/bereich/{code}/index.html",
-              page(fit_title(label, _m("sector_suffix", code=code)),
-                   _m("sector_desc", n=zuschlag(len(rows)), label=label, f=nfirms),
-                   "\n".join(b), f"/{LANG}/bereich/{code}/", _.sectors))
+              page(sector_title(label, code),
+                   # the counts first and the name shortened, so the snippet never ends mid-number
+                   desc_pick(_m("sector_desc", n=zuschlag(len(rows)), label=short_sector(label, 70), f=firms(nfirms)),
+                             _m("sector_desc_short", n=zuschlag(len(rows)), label=short_sector(label, 70),
+                                f=firms(nfirms)),
+                             _m("sector_desc_short", n=zuschlag(len(rows)), label=short_sector(label, 44),
+                                f=firms(nfirms))),
+                   "\n".join(b), f"/{LANG}/bereich/{code}/", _.sectors, leaf=short_sector(label, 64)))
     return cant_list, cpv_list
 
 
@@ -1529,10 +2603,12 @@ def feed_xml(scope: str, self_path: str, rows: list) -> str:
     for t in rows:
         d = (t.get("publicationDate") or DATA_DATE)[:10]
         label = cpv_label(t.get("cpvCode"), de(t, "cpvLabel") or t.get("cpvLabel") or "")
-        summary = " · ".join(x for x in (t.get("buyerName") or "", f"{_.deadline}: {dmyy(t.get('offerDeadline') or '')}",
-                                         t.get("canton") or "", label) if x)
+        dl = formato.date(t.get("offerDeadline") or "")
+        summary = " · ".join(x for x in (_ws(t.get("buyerName")),
+                                         f"{_.deadline}{lingue.COLON[LANG]} {dl}" if dl else "",
+                                         canton_name_or(t.get("canton"), t.get("canton") or ""), label) if x)
         out.append("<entry>"
-                   f"<title>{e(de(t, 'title'))}</title>"
+                   f"<title>{e(_ws(de(t, 'title')))}</title>"
                    f'<link href="{ORIGIN}/{LANG}/auftrag/{e(t.get("projectId"))}/"/>'
                    f'<id>{ORIGIN}/{LANG}/auftrag/{e(t.get("projectId"))}/</id>'
                    f"<updated>{d}T06:20:00Z</updated>"
@@ -1595,18 +2671,26 @@ pre();})();"""
 
 def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
     mail = ABO_MAIL
+    # all 26 cantons, in the reader's alphabetical order (AI was missing whenever it had
+    # no open tender, and the Italian list was sorted by code)
     cant_pills = "".join(
         f'<label><input type="checkbox" name="k" value="{e(c)}"><span class="tag">{e(canton_name_or(c, c))}</span></label>'
-        for c in sorted(by_cant))
-    top_sect = sorted(by_sect.items(), key=lambda kv: -len(kv[1]))[:24]
+        for c in sorted(CANTONS, key=lambda c: fold(canton_name_or(c, c))))
+    # every industry with an open tender, like the tenders page (it listed 40 industries, each
+    # with a feed, while this page offered 24 and said "every industry page has a feed")
+    top_sect = sorted(by_sect.items(), key=lambda kv: (-len(kv[1]), kv[0]))
+
+    def pill(code2: str) -> str:
+        return lingue.CPV_SHORT[LANG].get(code2) or short_sector(sect_name(code2), 40)
+
     sect_pills = "".join(
-        f'<label><input type="checkbox" name="b" value="{e(c)}"><span class="tag">{e(short_sector(sect_name(c), 40))}</span></label>'
+        f'<label><input type="checkbox" name="b" value="{e(c)}"><span class="tag">{e(pill(c))}</span></label>'
         for c, r in top_sect)
     # Names for pills the prefill may have to create: every canton, every CPV division,
     # in the page's language. Escaped so no label can close the script element.
     names = {"k": {c: canton_name_or(c, c) for c in sorted(CANTONS)},
-             "b": {k[:2]: short_sector(cpv_label(k, ""), 40) for k in sorted(_CPV)
-                   if re.fullmatch(r"\d{2}000000", k) and cpv_label(k, "")}}
+             "b": {k[:2]: lingue.CPV_SHORT[LANG].get(k[:2]) or short_sector(cpv_label(k, ""), 40)
+                   for k in sorted(_CPV) if re.fullmatch(r"\d{2}000000", k) and cpv_label(k, "")}}
     names_json = (json.dumps(names, ensure_ascii=False, sort_keys=True)
                   .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026"))
     form = (f'<div class="sec"><h2>{e(_m("abo_form_h2"))}</h2>'
@@ -1625,7 +2709,7 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
             f'<p class="sub">{e(_m("abo_form_consent"))} <a href="{BASE}/{LANG}/datenschutz/">{e(_.privacy)}</a></p>'
             f'</form><script type="application/json" id="abo-names">{names_json}</script>'
             f'<script>{ABO_JS}</script></div>')
-    b = [f'<div class="title"><div><p class="eyebrow">{_.running}</p><h1>{e(_m("abo_h1"))}</h1>'
+    b = [f'<div class="title"><div><p class="eyebrow">{_.tenders}</p><h1>{e(_m("abo_h1"))}</h1>'
          f'<p class="sum">{e(_m("abo_lead"))}</p></div></div>',
          form,
          f'<div class="sec"><h2>{e(_m("abo_email_alt_h2"))}</h2><p>'
@@ -1634,43 +2718,29 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
          f'<div class="sec"><h2>{e(_m("abo_rss_h2"))}</h2><p>{e(_m("abo_rss_text"))}</p>'
          f'<p><a class="tag" href="{ORIGIN}/{LANG}/ausschreibungen/feed.xml">{e(_m("abo_rss_all"))}</a></p>'
          f'<h3>{e(_m("abo_by_canton"))}</h3><div class="tags">'
-         + "".join(f'<a class="tag" href="{ORIGIN}/{LANG}/ausschreibungen/{e(c)}/feed.xml">{e(c)}</a>'
-                   for c in sorted(by_cant))
+         + "".join(f'<a class="tag" href="{ORIGIN}/{LANG}/ausschreibungen/{e(c)}/feed.xml">{e(canton_name_or(c, c))}</a>'
+                   for c in sorted(by_cant, key=lambda c: fold(canton_name_or(c, c))))
          + f'</div><h3>{e(_m("abo_by_sector"))}</h3><div class="tags">'
          + "".join(f'<a class="tag" href="{ORIGIN}/{LANG}/ausschreibungen/bereich/{e(c)}/feed.xml">'
-                   f'{e(sect_name(c)[:40])}</a>'
+                   f'{e(pill(c))}</a>'
                    for c, r in top_sect)
          + "</div></div>"]
     write(f"/{LANG}/ausschreibungen/abo/index.html", page(
-        fit_title(_m("abo_title"), " — auftragsregister.ch"), _m("abo_desc"),
+        fit_title(_m("abo_title"), "\u00a0– auftragsregister.ch"), _m("abo_desc"),
         "\n".join(b), f"/{LANG}/ausschreibungen/abo/", _.tenders))
 
-def canton_map(by_cant: dict) -> str:
-    """The 26 cantons as a heat grid. Every tile is a plain link to a page that already
-    exists, so it works with JavaScript switched off and a crawler follows all 26."""
-    if not by_cant:
-        return ""
-    counts = {c: len(r) for c, r in by_cant.items()}
-    hi, lo = max(counts.values()), min(counts.values())
-    # Rank, not raw count: tender volume follows a power law (Zurich alone carries a
-    # sixth of them), so a linear scale painted 13 of 26 cantons the same darkest shade
-    # and the map said nothing. Ranking spreads the six steps evenly across the field.
-    order = sorted(counts, key=lambda c: (-counts[c], c))
-    rank = {c: i for i, c in enumerate(order)}
-    tiles = []
-    for c, rows in sorted(by_cant.items()):
-        step = 6 - min(5, rank[c] * 6 // max(len(order), 1))
-        tiles.append(
-            f'<a class="s{step}" href="{BASE}/{LANG}/ausschreibungen/{e(c)}/" '
-            f'title="{e(canton_name_or(c, c))}: {len(rows)}">'
-            f'<span class="c">{e(c)}</span><span class="v">{len(rows)}</span></a>')
-    legend = "".join(f'<i style="background:var(--d{i})"></i>' for i in range(1, 7))
-    return (f'<div class="glass"><div class="gmap" style="padding-top:20px">'
-            f'{"".join(tiles)}</div>'
-            f'<div class="mleg"><span>{e(_m("open_map_few"))}</span>'
-            f'<span class="sw">{legend}</span><span>{e(_m("open_map_many"))}</span>'
-            f'<span style="margin-left:auto">{e(_m("open_map_note"))} '
-            f'({lo}\u2009\u2013\u2009{hi})</span></div></div>')
+def canton_list(by_cant: dict) -> str:
+    """Open tenders per canton: all 26 by name, with the count and a bar, sorted by count.
+
+    It replaces a heat grid whose legend said only "few … many", which hid the counts on
+    phones and left Appenzell Innerrhoden out whenever it had nothing open. A canton with
+    no open tender shows 0 and no link, because its tenders page is not written."""
+    n = {c: len(by_cant.get(c, [])) for c in CANTONS}
+    order = sorted(CANTONS, key=lambda c: (-n[c], fold(canton_name_or(c, c))))
+    items = [(canton_name_or(c, c), f"{BASE}/{LANG}/ausschreibungen/{c}/" if n[c] else None,
+              n[c], formato.count(n[c])) for c in order]
+    return grafici.rank_list(items, fig_id="open-cantons-list", labelledby="open-cantons",
+                             lede=_m("open_canton_lede", date=formato.date(DATA_DATE)), two_cols=True)
 
 
 def simap_compare() -> str:
@@ -1692,6 +2762,17 @@ def simap_compare() -> str:
             f"<tbody>{body}</tbody></table></div></div></div>")
 
 
+def open_sector_title(name: str, k: int) -> str:
+    """'{branch}: 12 offene Ausschreibungen' within 64 characters: the branch name is cut, never
+    the count ('Eaux usées, déchets, nettoyage … appels d’offres en cours' had lost it)."""
+    h = _m("open_sector_title", name=name, n=open_n(k))
+    if len(h) <= 64:
+        return h
+    room = 64 - (len(h) - len(name)) - 1
+    t = _m("open_sector_title", name=cut_end(name, room) + "…", n=open_n(k)) if room >= 12 else ""
+    return t if t and len(t) <= 64 else fit_title(h, "", tail_share=0)
+
+
 def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
     """The open tenders, whole and by canton.
 
@@ -1700,18 +2781,23 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
     the fact that decides whether the rest matters.
     """
     def table(rows: list) -> str:
-        out = [f'<div class="scroll"><table><thead><tr><th style="width:104px">{_.deadline}</th>'
-               f'<th>{_.tenders}</th><th>{_.buyer}</th><th style="width:44px">{_.canton_abbr}</th>'
+        out = [f'<div class="scroll"><table class="tl"><thead><tr><th style="width:104px">{_.deadline}</th>'
+               f'<th>{_.tender}</th><th>{_.buyer}</th><th style="width:44px">{_.canton_abbr}</th>'
                "</tr></thead><tbody>"]
-        for t in sorted(rows, key=lambda x: x.get("offerDeadline") or "9999"):
+        rows = sorted(rows, key=lambda x: x.get("offerDeadline") or "9999")
+        heads = distinct_titles([de(t, "title") for t in rows], 120)
+        labels = [short_sector(cpv_label(t.get("cpvCode"), de(t, "cpvLabel") or t.get("cpvLabel") or "") or "", 60)
+                  if (t.get("cpvLabel") or de(t, "cpvLabel")) else "" for t in rows]
+        twins = twin_rows(list(zip(heads, labels)))
+        for i, (t, head, label) in enumerate(zip(rows, heads, labels)):
+            dl = t.get("offerDeadline") or ""
+            sub = label + (project_no(t) if i in twins else "")
             out.append(
-                f'<tr><td class="when mono" style="font-size:12.5px">'
-                f'{e(dmyy(t.get("offerDeadline") or ""))}</td>'
-                f'<td><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/">{e(de(t, "title")[:120])}</a>'
-                + (f'<span class="sub" style="display:block;margin-top:2px">'
-                   f'{e((cpv_label(t.get("cpvCode"), de(t, "cpvLabel") or t.get("cpvLabel") or "") or "")[:60])}</span>'
-                   if (t.get("cpvLabel") or de(t, "cpvLabel")) else "")
-                + f'</td><td>{e(t.get("buyerName"))}</td><td>{e(t.get("canton"))}</td></tr>')
+                f'<tr><td class="when mono" style="font-size:12.5px">{tt(dl, formato.date(dl))}</td>'
+                f'<td><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/">{e(head)}</a>'
+                + (f'<span class="sub" style="display:block;margin-top:2px">{e(sub.lstrip(" ·"))}</span>'
+                   if sub else "")
+                + f'</td><td>{e(t.get("buyerName"))}</td><td>{abbr_canton(t.get("canton") or "")}</td></tr>')
         out.append("</tbody></table></div>")
         return "\n".join(out)
 
@@ -1725,43 +2811,50 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
         code2 = str(t.get("cpvCode") or "")[:2]
         if code2.isdigit():
             by_sect[code2].append(t)
+
     def sect_name(code2: str) -> str:
-        return cpv_label(code2 + "000000", "") or e(next((de(t, "cpvLabel") or t.get("cpvLabel") or "")
-                                                          for t in by_sect[code2]) or code2)
+        return (lingue.CPV_SHORT[LANG].get(code2) or cpv_label(code2 + "000000", "")
+                or next((de(t, "cpvLabel") or t.get("cpvLabel") or "" for t in by_sect[code2]), "")
+                or code2)
+
     sect_nav = ('<div class="tags">'
                 + "".join(f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/bereich/{e(c)}/">'
-                          f'{e(sect_name(c)[:40])} {len(r)}</a>'
-                          for c, r in sorted(by_sect.items(), key=lambda kv: -len(kv[1]))[:24])
+                          f'{e(sect_name(c))} · {formato.count(len(r))}</a>'
+                          # all of them: the tile above counts every industry (40), and 24 pills
+                          # under it left 16 unexplained
+                          for c, r in sorted(by_sect.items(), key=lambda kv: (-len(kv[1]), kv[0])))
                 + "</div>")
+    nxt = next(iter(sorted(t.get("offerDeadline") for t in opens if t.get("offerDeadline"))), "")
+    today = tt(DATA_DATE, formato.date(DATA_DATE))
 
     b = [f'<div class="title"><div><p class="eyebrow">{_.running}</p>'
          f"<h1>{e(_p.open_tenders_h1)}</h1>"
-         f'<p class="sum">' + e(_m("open_lead", n=len(opens))) + "</p></div>"
-         f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{DATA_DATE}</dd>'
-         f"<dt>{_.cantons}</dt><dd>{len(by_cant)}</dd></dl></div>",
+         f'<p class="sum">' + e(_m("open_lead", n=formato.count(len(opens)))) + "</p></div>"
+         f'<dl class="rail"><dt>{_.as_of}</dt><dd>{today}</dd>'
+         f"<dt>{lab_n(len(by_cant), 'cantons')}</dt><dd>{formato.count(len(by_cant))}</dd></dl></div>",
          f'<div class="figures">'
-         f'<div class="fig money"><b class="num">{len(opens)}</b>'
+         f'<div class="fig money"><b class="num">{formato.count(len(opens))}</b>'
          f'<span>{e(_m("open_kpi_open"))}</span></div>'
-         f'<div class="fig"><b class="num">{len(by_cant)}</b>'
+         f'<div class="fig"><b class="num">{formato.count(len(by_cant))}</b>'
          f'<span>{e(_m("open_kpi_cantons"))}</span></div>'
-         f'<div class="fig"><b class="num">{len(by_sect)}</b>'
+         f'<div class="fig"><b class="num">{formato.count(len(by_sect))}</b>'
          f'<span>{e(_m("open_kpi_sectors"))}</span></div>'
-         f'<div class="fig"><b class="num">{e(dmyy(next(iter(sorted((t.get("offerDeadline") or "" for t in opens if t.get("offerDeadline")))), "")))}</b>'
+         f'<div class="fig"><b class="num">{tt(nxt, formato.date(nxt))}</b>'
          f'<span>{e(_m("open_kpi_next"))}</span></div></div>',
-         f'<div class="sec"><h2>{e(_m("open_by_canton_h2"))}</h2>' + canton_map(by_cant) + "</div>",
+         f'<div class="sec"><h2 id="open-cantons">{e(_m("open_by_canton_h2"))}</h2>' + canton_list(by_cant) + "</div>",
          # sorted BEFORE slicing: taking 400 in file order and then sorting those
          # states "the nearest deadlines" about an arbitrary subset of the 588.
          '<div class="sec">' + table(sorted(
              opens, key=lambda x: x.get("offerDeadline") or "9999")[:SHOWN]) + "</div>",
          (f'<p class="sub" style="margin:12px 0 0">'
-          + e(_if("showing_n", n=SHOWN, total=len(opens))) + "</p>"
+          + e(_if("showing_n", n=formato.count(SHOWN), total=formato.count(len(opens)))) + "</p>"
           if len(opens) > SHOWN else ""),
          abo_block(f"/{LANG}/ausschreibungen/feed.xml"),
          f'<div class="sec"><h2>{e(_m("open_by_sector_h2"))}</h2>' + sect_nav + "</div>",
          f'<div class="sec"><h2>{e(_m("open_howto_h2"))}</h2><p>{e(_m("open_howto"))}</p></div>',
          simap_compare()]
     write(f"/{LANG}/ausschreibungen/index.html", page(
-        _m("open_title", n=len(opens)), _m("open_desc", n=len(opens)),
+        _m("open_title", n=formato.count(len(opens))), _m("open_desc", n=formato.count(len(opens))),
         "\n".join(b), f"/{LANG}/ausschreibungen/", _.tenders,
         head_extra=feed_head(f"/{LANG}/ausschreibungen/feed.xml", _m("feed_all"))))
     write(f"/{LANG}/ausschreibungen/feed.xml", feed_xml(_m("feed_all"), f"/{LANG}/ausschreibungen/feed.xml", opens))
@@ -1769,10 +2862,21 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
 
     for code2, rows in by_sect.items():
         name = sect_name(code2)
+        # one template for title and H1: "{name}: 762 offene Ausschreibungen"
+        h = _m("open_sector_title", name=name, n=open_n(len(rows)))
+        desc = _m("open_sector_desc_one" if len(rows) == 1 else "open_sector_desc",
+                  n=open_n(len(rows)), name=name, code=code2)
+        word = lingue.SECTOR_WORD[LANG].get(code2)
+        seo_title = ""
+        if word and len(rows) > 1:
+            k = formato.count(len(rows))
+            seo_title = first_fit(_m("open_sector_t1", word=word[0], k=k), _m("open_sector_t2", word=word[0], k=k))
+            h = _m("open_sector_t2", word=word[0], k=k)
+            desc = _m("open_sector_desc_word", k=k, w=word[1])
         b = [f'<div class="title"><div><p class="eyebrow">{_.running}</p>'
-             f'<h1>{e(_m("open_sector_title", name=name, n=len(rows)))}</h1>'
-             f'<p class="sum">' + e(_m("open_sector_desc", n=len(rows), name=name, code=code2)) + "</p></div>"
-             f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{DATA_DATE}</dd>'
+             f'<h1>{e(h)}</h1>'
+             f'<p class="sum">' + e(desc) + "</p></div>"
+             f'<dl class="rail"><dt>{_.as_of}</dt><dd>{today}</dd>'
              f'<dt>CPV</dt><dd class="mono">{e(code2)}</dd></dl></div>',
              '<div class="sec">' + table(rows) + "</div>",
              f'<div class="tags" style="margin-top:22px">'
@@ -1780,29 +2884,33 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict) -> int:
         fp = f"/{LANG}/ausschreibungen/bereich/{code2}/feed.xml"
         b.insert(1, abo_block(fp))
         write(f"/{LANG}/ausschreibungen/bereich/{code2}/index.html", page(
-            fit_title(_m("open_sector_title", name=name, n=len(rows)), " — simap"),
-            _m("open_sector_desc", n=len(rows), name=name, code=code2),
+            seo_title or open_sector_title(name, len(rows)),
+            desc if seo_title else desc_pick(desc, _m("open_sector_desc_one" if len(rows) == 1
+                                                      else "open_sector_desc_short",
+                                                      n=open_n(len(rows)), name=name, code=code2)),
             "\n".join(b), f"/{LANG}/ausschreibungen/bereich/{code2}/", _.tenders,
             head_extra=feed_head(fp, name)))
         write(f"/{LANG}/ausschreibungen/bereich/{code2}/feed.xml", feed_xml(name, fp, rows))
 
     for code, rows in by_cant.items():
         name = canton_name_or(code, code)
+        of = cant_of(code, name)
+        desc = _m("open_canton_desc_one" if len(rows) == 1 else "open_canton_desc",
+                  n=open_n(len(rows)), name=name, of=of)
         b = [f'<div class="title"><div><p class="eyebrow">{_.running_canton}</p>'
-             f'<h1>{e(_m("open_canton_title", name=name))}</h1>'
-             f'<p class="sum">'
-             + e(_m("open_canton_desc", n=len(rows), name=name)) + "</p></div>"
-             f'<dl class="rail"><dt>{_.as_of}</dt><dd class="mono">{DATA_DATE}</dd>'
-             f'<dt>{_.canton}</dt><dd class="mono">{e(code)}</dd></dl></div>',
+             f'<h1>{e(_m("open_canton_h1", name=name, of=of))}</h1>'
+             f'<p class="sum">' + e(desc) + "</p></div>"
+             f'<dl class="rail"><dt>{_.as_of}</dt><dd>{today}</dd>'
+             f'<dt>{_.canton}</dt><dd>{e(name)}</dd></dl></div>',
              '<div class="sec">' + table(rows) + "</div>",
              f'<div class="tags" style="margin-top:22px">'
-             f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(code)}/">{e(_if("awarded_in", c=code))}</a>'
+             f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(code)}/">{e(_if("awarded_in", c=name, of=of))}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/">{e(_i.all_open)}</a></div>']
         fp = f"/{LANG}/ausschreibungen/{code}/feed.xml"
         b.insert(1, abo_block(fp))
         write(f"/{LANG}/ausschreibungen/{code}/index.html", page(
-            fit_title(_m("open_canton_title", name=name), " — simap"),
-            _m("open_canton_desc", n=len(rows), name=name),
+            first_fit(*(_m(t, name=name, of=of, c=open_contracts(len(rows)))
+                         for t in ("open_canton_t1", "open_canton_t2", "open_canton_t3"))), desc,
             "\n".join(b), f"/{LANG}/ausschreibungen/{code}/", _.tenders,
             head_extra=feed_head(fp, name)))
         write(f"/{LANG}/ausschreibungen/{code}/feed.xml", feed_xml(name, fp, rows))
@@ -1817,19 +2925,20 @@ def build_index(path: str, kicker: str, h1: str, lead: str, items: list,
     server's directory listing hides this), and the leaves lose their nearest hub."""
     groups = collections.defaultdict(list)
     for sl, name, n in items:
-        first = (name.strip()[:1] or "#").upper()
+        # folded, so É files under E and Ö under O instead of after Z
+        first = (fold(name.strip())[:1] or "#").upper()
         groups["0–9" if first.isdigit() else (first if first.isalpha() else "#")].append(
             (sl, name, n))
     b = [f'<div class="title"><div><p class="eyebrow">{e(kicker)}</p><h1>{e(h1)}</h1>'
          f'<p class="sum">{e(lead)}</p></div>'
-         f'<dl class="rail"><dt>{_.entries}</dt><dd class="num">{len(items)}</dd></dl></div>']
+         f'<dl class="rail"><dt>{_.entries}</dt><dd class="num">{formato.count(len(items))}</dd></dl></div>']
     letters = sorted(groups)
     b.append('<div class="tags" style="margin:22px 0 0">'
              + "".join(f'<a class="tag" href="#{e(g)}">{e(g)}</a>' for g in letters) + "</div>")
     for g in letters:
-        rows = sorted(groups[g], key=lambda x: x[1].lower())
+        rows = sorted(groups[g], key=lambda x: fold(x[1]))
         b.append(f'<div class="sec" id="{e(g)}"><div class="runhead"><span>{e(g)}</span>'
-                 f'<span>{len(rows)}</span></div><ul class="plain">')
+                 f'<span>{formato.count(len(rows))}</span></div><ul class="plain">')
         for sl, name, n in rows:
             b.append(f'<li><div class="row"><a href="/{LANG}{path}{e(sl)}/">{e(name)}</a>'
                      f'<span class="sub num">{zuschlag(n)}</span></div></li>')
@@ -1842,63 +2951,77 @@ def build_index(path: str, kicker: str, h1: str, lead: str, items: list,
 def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cpv_list) -> None:
     total = sum(chf_amount(a) or 0 for a in awards)
     months = sorted({(a.get("publicationDate") or "")[:7] for a in awards if a.get("publicationDate")})
-    span = ""
-    if months:
-        fmt = lambda m: f"{m[5:7]}/{m[:4]}"
-        span = fmt(months[0]) if len(months) == 1 else f"{fmt(months[0])} – {fmt(months[-1])}"
-    firms = collections.Counter(slug(w) for a in awards for w in winners(a))
-    soon = sorted((t for t in opens if t.get("offerDeadline")),
-                  key=lambda t: t["offerDeadline"])[:8]
+    span = formato.period(months[0], months[-1]) if months else ""
+    winners_all = collections.Counter(slug(w) for a in awards for w in winners(a))
+    soon = lot_groups(sorted((t for t in opens if t.get("offerDeadline")),
+                             key=lambda t: t["offerDeadline"]))[:8]
 
     b = [f'<div class="title"><div><h1>{e(_p.tagline)}</h1>'
          f'<p class="sum">{e(_p.lead)}</p></div>'
          f'<dl class="rail"><dt>{_.source}</dt><dd>{e(_p.source_note)}</dd>'
          + (f"<dt>{_.period}</dt><dd>{e(span)}</dd>" if span else "")
-         + f"<dt>{_.updated}</dt><dd>{e(DATA_DATE)}</dd></dl></div>",
+         + f"<dt>{_.updated}</dt><dd>{tt(DATA_DATE, formato.date(DATA_DATE))}</dd></dl></div>",
          '<div class="figures">',
-         f'<div class="fig"><b>{chf(len(awards))}</b><span>{_.awards}</span></div>',
-         f'<div class="fig"><b>{chf(len(firms))}</b><span>{_.companies}</span></div>']
+         f'<div class="fig"><b>{formato.count(len(awards))}</b><span>{lab_n(len(awards), "awards")}</span></div>',
+         f'<div class="fig"><b>{formato.count(len(winners_all))}</b>'
+         f'<span>{lab_n(len(winners_all), "companies")}</span></div>']
     if total:
-        b.append(f'<div class="fig money"><b>{chf_big(total)}</b><span>{_.sum_published}</span></div>')
-    b.append(f'<div class="fig"><b>{chf(len(opens))}</b><span>{_.tenders}</span></div>'
+        b.append(f'<div class="fig money"><b>{formato.tile(total)}</b><span>{_.sum_published}</span></div>')
+    b.append(f'<div class="fig"><b>{formato.count(len(opens))}</b><span>{e(_m("open_kpi_open"))}</span></div>'
              "</div>")
+    # the monthly chart sits right under the key figures, with its own title and takeaway
+    b.append(month_chart(awards, _i.mc_title_home))
 
     b.append('<div class="cols"><div>'
-             f'<div class="runhead"><span>{_.companies}</span>'
+             f'<div class="runhead"><span>{_i.firms_cap}</span>'
              f'<span>{e(span)}</span></div>'
-             '<div class="scroll"><table><thead><tr><th style="width:34px"></th>'
-             f'<th>{_.companies}</th><th style="width:46px">{_.canton_abbr}</th>'
+             '<div class="scroll"><table class="top"><thead><tr><th class="n0" style="width:34px"></th>'
+             f'<th>{_.company}</th><th class="kt" style="width:46px">'
+             f'<abbr title="{e(_.canton_most)}">{_.canton_abbr}</abbr></th>'
              f'<th class="r">{_.awards}</th><th class="r">{_.sum}</th></tr></thead><tbody>')
     rank = [(s, p) for s, p in sorted(pages.items(), key=lambda kv: (-kv[1]["n"], -kv[1]["value"]))][:25]
     for i, (s, p) in enumerate(rank, 1):
-        b.append(f'<tr><td class="sub num">{i:02d}</td><td>'
+        b.append(f'<tr><td class="sub num n0">{i:02d}</td><td>'
                  f'<a href="{BASE}/{LANG}/unternehmen/{e(s)}/">{e(p["name"])}</a>'
                  + (f'<span class="sub" style="display:block;margin-top:2px">'
-                    f'{e(p["sector"][:46])}</span>' if p["sector"] else "")
-                 + f'</td><td>{e(p["cant"])}</td><td class="r num">{p["n"]}</td>'
-                 f'<td class="r num">{e(chf(p["value"]))}</td></tr>')
+                    f'{e(short_sector(p["sector"], 46))}</span>' if p["sector"] else "")
+                 + f'</td><td class="kt">{abbr_canton(p["cant"])}</td><td class="r num">{formato.count(p["n"])}</td>'
+                 f'<td class="r num">{formato.cell(p["value"] or None, empty_sr=_.no_own_amount)}</td></tr>')
     b.append("</tbody></table></div></div><div>")
 
     if soon:
         b.append(f'<div class="runhead"><span>{_i.next_deadlines}</span>'
-                 f'<span>{_if("open_count", n=len(opens))}</span></div><ul class="plain">')
-        for t in soon:
+                 f'<span>{e(_if("open_count", n=formato.count(len(opens))))}</span></div><ul class="plain tl">')
+        single = distinct_titles([de(g[0], "title") for _stem, g in soon], 66)
+        for (stem, g), one in zip(soon, single):
+            t = g[0]
+            dl = t["offerDeadline"]
+            if len(g) > 1:
+                # the shared project name, cut at its end if at all: the lots' own names are
+                # what the count replaces, so there is no tail worth keeping
+                # no-break spaces around the dot: '· 6 lots' never starts a line of its own; the
+                # link opens the first lot, whose page lists the others ("Weitere Lose")
+                text = (name_cut(stem, 70) + "\u00a0·\u00a0"
+                        + _if("lots_n", n=formato.count(len(g))).replace(" ", "\u00a0"))
+            else:
+                text = one
             b.append(f'<li><div class="row"><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/">'
-                     f'{e(de(t, "title")[:66])}</a>'
-                     f'<span class="when">{e(dmy(t["offerDeadline"]))}</span>'
+                     f'{e(text)}</a>'
+                     f'<span class="when">{tt(dl, formato.date_short(dl))}</span>'
                      "</div></li>")
         b.append("</ul>")
     b.append(f'<div class="runhead" style="margin-top:28px"><span>{_i.by_canton}</span>'
-             f'<span>{len(cant_list)}</span></div><div class="tags">'
-             + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">{e(c)} {len(r)}</a>'
+             f'<span>{formato.count(len(cant_list))} {_.cantons}</span></div><div class="tags">'
+             + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">'
+                       f'{e(canton_name_or(c, c))} · {formato.count(len(r))}</a>'
                        for c, r in cant_list[:16]) + "</div>")
     b.append(f'<div class="runhead" style="margin-top:28px"><span>{_i.by_sector}</span>'
-             f'<span>{len(cpv_list)}</span></div><ul class="plain">')
+             f'<span>{formato.count(len(cpv_list))} {_.sectors}</span></div><ul class="plain">')
     for code, rows in cpv_list[:8]:
         label = next((cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "") for a in rows
                       if cpv_label(a.get("cpvCode"), de(a, "cpvLabel") or a.get("cpvLabel") or "")), code)
-        b.append(f'<li><div class="row"><a href="{BASE}/{LANG}/bereich/{e(code)}/">{e(label[:40])}</a>'
-                 f'<span class="sub num">{len(rows)}</span></div></li>')
+        b.append(f'<li><div class="row"><a href="{BASE}/{LANG}/bereich/{e(code)}/">{e(label)}</a>'
+                 f'<span class="sub num">{formato.count(len(rows))}</span></div></li>')
     b.append("</ul></div></div>")
 
     b.append('<div class="tags" style="margin-top:32px;padding-top:22px;'
@@ -1912,17 +3035,12 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
              # cantonali: dalla home, che e' la pagina piu' linkata del sito, non lo era
              f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/abo/">'
              f'{e(_m("abo_cta"))}</a></div>')
-    col = grafici.columns(sorted(per_month(awards).items()), title=_i.volume_cap,
-                          width=900, height=150)
-    if col:
-        b.append(f'<div class="sec"><div class="runhead"><span>{_i.volume_cap}</span>'
-                 f'<span>{chf(len(awards))}</span></div>{col}</div>')
 
-    # the one prominent notice on the home — in the reader's language, like the footer
-    b.append(f'<div class="official" style="margin-top:36px">{e(_p.not_official)}</div>')
+    # no separate notice box on the home: it repeated, word for word, the footer's first
+    # paragraph right below it (verifier, 28.09.2026)
 
     write(f"/{LANG}/index.html", page(
-        _m("home_title"), _m("home_desc", n=chf(len(awards))),
+        _m("home_title"), _m("home_desc", n=formato.count(len(awards))),
         "\n".join(b), f"/{LANG}/"))
 
 
@@ -1930,6 +3048,20 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
 
 OPERATOR_NAME = "Riccardo Di Lullo"
 OPERATOR_EMAIL = "dilulloriccardo@gmail.com"     # already public in the repo history
+
+
+def sentences(text: str, limit: int = 155) -> str:
+    """As many whole sentences from the start as fit: a legal page's description ended
+    '…steht in keiner Verbindung zu simap.ch oder zu…' (verifier, 28.09.2026)."""
+    text = _ws(text)
+    parts = re.split(r"(?<=[.!?])\s+", text)
+    out = ""
+    for x in parts:
+        nxt = f"{out} {x}".strip()
+        if len(nxt) > limit:
+            break
+        out = nxt
+    return out or fit_desc(text, limit)
 
 
 def build_impressum() -> None:
@@ -1948,7 +3080,7 @@ def build_impressum() -> None:
         b.append(f"<h2 style=\"margin:22px 0 8px\">{e(h)}</h2><p>{e(t)}</p>")
     b.append("</div>")
     write(f"/{LANG}/impressum/index.html", page(
-        f"{imp['title']} — {_.site}", imp["paras"][0][1][:170],
+        f"{imp['title']}\u00a0– {_.site}", sentences(imp["paras"][0][1]),
         "\n".join(b), f"/{LANG}/impressum/", _.register, imp["title"]))
 
 
@@ -1969,7 +3101,7 @@ def build_privacy() -> None:
         b.append(f"<h2 style=\"margin:22px 0 8px\">{e(h)}</h2><p>{e(t)}</p>")
     b.append("</div>")
     write(f"/{LANG}/datenschutz/index.html", page(
-        f"{pr['title']} — {_.site}", pr["paras"][0][1][:170],
+        f"{pr['title']}\u00a0– {_.site}", sentences(pr["paras"][0][1]),
         "\n".join(b), f"/{LANG}/datenschutz/", _.register, pr["title"]))
 
 
@@ -1979,7 +3111,7 @@ def build_abo_status() -> None:
     live outside the language tree, carry all four languages and stay out of the index."""
     for slug, key in (("check", "abo_check"), ("ok", "abo_ok")):
         blocks = "".join(
-            f'<p><b>{e(NAMES[l])}</b> — {e(lingue.m(key, l))} '
+            f'<p{"" if l == "de" else f" lang={chr(34)}{l}{chr(34)}"}><b>{e(NAMES[l])}</b>{lingue.COLON[l]} {e(lingue.m(key, l))} '
             f'<a href="{BASE}/{l}/ausschreibungen/abo/">{e(lingue.m("abo_back", l))}</a></p>' for l in LANGS)
         title = lingue.m(key + "_title", "de")
         html = page(title, lingue.m(key, "de"),
@@ -2015,16 +3147,23 @@ def build_language(awards: list, opens: list) -> tuple[int, int, int, int, int, 
     keep = {n for n, c in comp.items() if len(c["awards"]) >= MIN_AWARDS}
     peer_map = peers(comp, keep)
     pages = build_companies(comp, open_for, sectors, buyer_slugs, peer_map)
-    n_aw = build_awards(awards, opens, pages, sectors, buyer_slugs)
+    lot_sib = {}
+    for _stem, g in lot_groups(sorted((t for t in opens if t.get("offerDeadline")),
+                                      key=lambda t: t["offerDeadline"])):
+        if len(g) > 1:
+            for t in g:
+                lot_sib[t.get("projectId")] = [x for x in g if x is not t]
+    n_aw = build_awards(awards, opens, pages, sectors, buyer_slugs, lot_sib)
     buyers = build_buyers(awards, comp, pages, sectors, buyer_slugs)
-    cant_list, cpv_list = build_hubs(awards, comp, pages, sectors)
+    open_cants = collections.Counter(t["canton"] for t in opens if t.get("canton"))
+    cant_list, cpv_list = build_hubs(awards, comp, pages, sectors, open_cants)
     n_open = build_open(opens, sectors, buyer_slugs)
     build_index("/unternehmen/", _.companies, _i.companies_h1, _i.companies_lead,
                 [(sl, p["name"], p["n"]) for sl, p in pages.items()],
-                _i.companies_title, _if("companies_desc", n=len(pages)))
+                _i.companies_title, _if("companies_desc", n=formato.count(len(pages))))
     build_index("/auftraggeber/", _.buyers, _i.buyers_h1, _i.buyers_lead,
                 [(sl, n, k) for sl, n, k in buyers],
-                _i.buyers_title, _if("buyers_desc", n=len(buyers)))
+                _i.buyers_title, _if("buyers_desc", n=formato.count(len(buyers))))
     build_index("/kanton/", _.cantons, _.cantons, _i.cantons_lead,
                 [(c, canton_name_or(c, c), len(r)) for c, r in cant_list],
                 _i.cantons_title, _i.cantons_desc)
@@ -2047,12 +3186,34 @@ def main() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
     awards, opens = load()
+    _SHARED.update(find_shared(awards + opens))
     global DATA_DATE
     DATA_DATE = max(((a.get("publicationDate") or "")[:10] for a in awards), default=TODAY) or TODAY
     print(f"  dati    : {len(awards)} aggiudicazioni · {len(opens)} bandi aperti · dati al {DATA_DATE}")
+    formato.MONTHS = lingue.MONTHS
+    # Monthly charts: which months are complete. FULL_FROM is the first month whose count
+    # reaches half the median of it and every later complete month — on 28.09.2026 that is
+    # 2024-11 (Aug 13, Sep 96, Oct 198, Nov 446): the months before are the series
+    # building up and are drawn striped with a note, not read as a market trend.
+    global FULL_FROM, RAMP_START, RAMP_END, CUR_MONTH, CUR_PARTIAL
+    nat = per_month(awards)
+    keys = sorted(nat)
+    CUR_MONTH = DATA_DATE[:7]
+    CUR_PARTIAL = int(DATA_DATE[8:10]) < calendar.monthrange(int(DATA_DATE[:4]), int(DATA_DATE[5:7]))[1]
+    RAMP_START = FULL_FROM = keys[0] if keys else CUR_MONTH
+    done = [k for k in keys if k < CUR_MONTH]
+    for i, k in enumerate(done):
+        rest = sorted(nat[x] for x in done[i:])
+        if nat[k] >= 0.5 * rest[len(rest) // 2]:
+            FULL_FROM = k
+            break
+    y, m = int(FULL_FROM[:4]), int(FULL_FROM[5:7])
+    RAMP_END = f"{y - 1}-12" if m == 1 else f"{y}-{m - 1:02d}"
+    print(f"  mesi    : serie completa da {FULL_FROM} (rampa {RAMP_START}..{RAMP_END}), "
+          f"mese corrente {CUR_MONTH}{' parziale' if CUR_PARTIAL else ''}")
     for lang in LANGS:
         LANG = lang
-        grafici.BILLION, grafici.MILLION, grafici.DEC = lingue.BIG_UNITS[lang]
+        formato.LANG = lang
         n = build_language(awards, opens)
         print(f"  {lang}      : {n[0]} imprese · {n[1]} appalti · {n[2]} committenti "
               f"· {n[3]} cantoni · {n[4]} settori · {n[5]} bandi")
@@ -2069,6 +3230,18 @@ def main() -> None:
         (OUT / "fonts").mkdir(parents=True, exist_ok=True)
         for f in fdir.glob("*.woff2"):
             shutil.copy(f, OUT / "fonts" / f.name)
+        # The French pages space digit groups and ':' ';' '?' '!' '%' with U+202F. Google's
+        # subsets have no glyph for it, so the browser fell back to a system font that draws it
+        # 1.3-1.8 px wide: '888 382 352.95' read as one run of digits (verifier, 28.09.2026).
+        # The *-latin.woff2 files in fonts/ were patched once (U+202F -> the space glyph);
+        # warn if a font update ever brings the unpatched files back.
+        try:
+            from fontTools.ttLib import TTFont
+            bad = [f.name for f in fdir.glob("*-latin.woff2") if 0x202F not in TTFont(f).getBestCmap()]
+            if bad:
+                print(f"  ATTENZIONE: font senza U+202F (spazio fine francese): {', '.join(bad)}")
+        except Exception:
+            pass
         fontcss = (fdir / "fonts.css").read_text().replace("/fonts/", f"{BASE}/fonts/")
     write("/style.css", fontcss + "\n" + CSS)
     if keyfile.exists():

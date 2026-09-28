@@ -101,19 +101,52 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.chart{width:100%;height:auto;display:block;margin:14px 0 4px;overflow:visible}
-.chart .grid{stroke:var(--rule);stroke-width:1;fill:none}
-.chart .axis{fill:var(--muted);font-size:10.5px;letter-spacing:.02em}
-.chart .mark{fill:var(--mark)}
-.chart .mark-soft{fill:var(--mark);opacity:.28}
-/* the ring separates overlapping dots, so it has to be the colour of the
-   surface the chart actually sits on — the panel, not the page */
-.chart .ring{stroke:var(--panel);stroke-width:1.5}
-.chart .lab{fill:var(--ink);font-size:11px;font-variant-numeric:tabular-nums}
-.chart .lab-mute{fill:var(--muted);font-size:10.5px;font-variant-numeric:tabular-nums}
-.chart-note{color:var(--muted);font-size:11.5px;margin:2px 0 0}
-figure{margin:0}
-figcaption{color:var(--muted);font-size:11.5px;margin-top:6px}
+figure .lede{color:var(--muted);font-size:14px;margin:6px 0 0;max-width:70ch}
+figure h3{font-size:17px;margin:0}
+figure .note{color:var(--muted);font-size:12.5px;margin:12px 0 0;max-width:80ch}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.mc .unit{font-size:11.5px;color:var(--muted);margin:14px 0 10px}
+.cc{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 8px}
+.cc .yax{position:relative;height:160px;min-width:2.4em;font-size:11.5px;color:var(--muted);
+  font-variant-numeric:tabular-nums}
+.cc .yax span{position:absolute;right:0;transform:translateY(50%);line-height:1}
+.cc table{width:100%;border-collapse:collapse;table-layout:fixed}
+.cc tbody{display:flex;align-items:flex-end;height:160px;gap:2px;
+  background:linear-gradient(var(--rule),var(--rule)) 0 0/100% 1px no-repeat,
+    linear-gradient(var(--rule),var(--rule)) 0 50%/100% 1px no-repeat,
+    linear-gradient(var(--rule-strong),var(--rule-strong)) 0 100%/100% 1px no-repeat}
+.cc.nomid tbody{background:linear-gradient(var(--rule),var(--rule)) 0 0/100% 1px no-repeat,
+    linear-gradient(var(--rule-strong),var(--rule-strong)) 0 100%/100% 1px no-repeat}
+.cc tr{flex:1;min-width:0;display:flex;height:100%;position:relative}
+.cc th,.cc td{padding:0;border:0}
+.cc td{flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:100%}
+.cc td span{display:block;position:relative;background:var(--mark);border-radius:3px 3px 0 0}
+.cc tr.part td span{background:repeating-linear-gradient(-45deg,var(--mark) 0 2px,transparent 2px 5px);
+  box-shadow:inset 0 0 0 1.5px var(--mark);min-height:7px}
+figure .note .key{display:inline-block;width:.95em;height:.95em;margin:0 .45em -.12em 0;
+  border-radius:2px;background:repeating-linear-gradient(-45deg,var(--mark) 0 2px,transparent 2px 5px);
+  box-shadow:inset 0 0 0 1.5px var(--mark)}
+.cc tr.zero td span{display:none}
+.cc td b{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:4px;
+  font-size:11.5px;line-height:1;font-weight:600;color:var(--ink);white-space:nowrap}
+.cc tr:first-child td b{left:0;transform:none}
+.cc tr:last-child td b{left:auto;right:0;transform:none}
+.cc .xax{grid-column:2;display:flex;gap:2px;margin-top:6px;font-size:11.5px;color:var(--muted)}
+.cc .xax>span{flex:1;min-width:0;white-space:nowrap;overflow:visible}
+.cc .xax span.yr{color:var(--ink);font-weight:600}
+.cc .xax span.r0{display:flex;justify-content:flex-end}
+.cc .xax .m{font-weight:400;color:var(--muted)}
+@media(max-width:600px){.cc .xax span.q{visibility:hidden}}
+.bl{list-style:none;margin:16px 0 0;padding:0}
+.bl li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;padding:9px 0;
+  border-bottom:1px solid var(--rule);break-inside:avoid}
+.bl .lab{font-size:14px;line-height:1.35}
+.bl .val{font-size:13.5px;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bl .val small{color:var(--muted);font-size:12px;margin-left:8px}
+.bl .trk{grid-column:1/-1;height:6px}
+.bl .trk i{display:block;height:6px;background:var(--mark);border-radius:0 3px 3px 0}
+.bl li.oth .lab,.bl li.oth .val{color:var(--muted)}
+@media(min-width:861px){.bl.two{columns:2;column-gap:48px}}
 
 /* Direction: dark instrument panel. One visual world, deliberately dark — the record is
    the light in the room. Bricolage Grotesque sets the display, Libre Franklin reads, and
@@ -132,7 +165,6 @@ figcaption{color:var(--muted);font-size:11.5px;margin-top:6px}
   --hero:transparent; --hero-ink:#f3f6f9; --hero-muted:#9db0c2;
   --mark:#38b5dd;
   --glass:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.017));
-  --d1:#10303f; --d2:#15485f; --d3:#1b6484; --d4:#2288ae; --d5:#38b5dd; --d6:#7fe3ff;
   --ease:cubic-bezier(.22,.68,.24,1);
   color-scheme:dark;
 }
@@ -207,15 +239,32 @@ h3{font-weight:700;font-size:16px;margin:0;letter-spacing:-.02em}
 .fig::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;
   background:linear-gradient(90deg,transparent,rgba(255,255,255,.26),transparent)}
 .fig b{display:block;font-weight:700;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.045em;
-  font-variant-numeric:tabular-nums;line-height:1;overflow-wrap:anywhere}
+  font-variant-numeric:normal;line-height:1;overflow-wrap:break-word}
+/* a figure never breaks inside its digits or its unit ("827’782.5|5", "C|HF"); only the
+   currency may move to the next line, as a whole word */
+.fig b .n{white-space:nowrap}
+.fig b small{font-size:.42em;font-weight:600;letter-spacing:0;color:var(--muted)}
+/* phones: the exact amount and the deadline on the award page take the whole row */
+@media(max-width:599px){.figures .fig.wide{grid-column:1/-1}
+  /* two tiles per row: the currency on its own line in every tile, not only in the
+     ones whose figure happens to be wide ('30,2 mia.' / 'CHF' beside '2,2 mio. CHF') */
+  .fig b small{display:block;margin-top:.4em}
+  html:lang(en) .fig b small{margin:0 0 .4em}}
+.fig .approx{display:block;margin-top:8px;font-size:13px;font-style:normal;color:var(--muted)}
 .fig.money b{color:var(--accent)}
-.fig span{display:block;margin-top:11px;font-size:10px;letter-spacing:.16em;
+.fig>span{display:block;margin-top:11px;font-size:10px;letter-spacing:.16em;
   text-transform:uppercase;color:var(--muted-2);font-weight:600;
   font-family:ui-monospace,Menlo,monospace}
 .sec{margin-top:10px}
-.scroll{overflow-x:auto;max-width:100%}
+.scroll{overflow-x:auto;max-width:100%;position:relative}
+/* position: the visually hidden cell text (.sr) is absolutely positioned; without a
+   positioned scroll box it escaped the clipping and widened the page on phones */
 /* ── tables ────────────────────────────────────────────────────────────── */
 table{width:100%;border-collapse:collapse}
+/* the Details box sits in a 320px column: long names and CPV labels wrap in place instead
+   of pushing the value column past the edge (verifier, 29.09.2026) */
+.kv{table-layout:fixed}
+.kv td{padding-right:0;overflow-wrap:break-word;hyphens:auto}
 th{text-align:left;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;
   color:var(--muted-2);font-weight:600;padding:0 14px 11px 0;
   border-bottom:1px solid var(--rule-strong);white-space:nowrap;
@@ -224,19 +273,26 @@ td{padding:13px 14px 13px 0;border-bottom:1px solid var(--rule);vertical-align:t
   font-size:14.5px}
 tbody tr{transition:background .15s}
 tbody tr:hover{background:rgba(255,255,255,.032)}
-td.r,th.r{text-align:right;padding-right:0}
+td.r,th.r{text-align:right;padding-right:0;padding-left:18px}
+abbr[title]{text-decoration:none;cursor:help}
 td.sub,.sub{color:var(--muted);font-size:13px}
 ul.plain{list-style:none;margin:0;padding:0}
 ul.plain li{padding:13px 0;border-bottom:1px solid var(--rule)}
 ul.plain li:last-child{border-bottom:0}
 .row{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+/* a long unbroken name ('PricewaterhouseCoopers', 'Infrastrukturunterhaltsgesellschaft')
+   wraps instead of widening the page on phones; the count beside it never wraps */
+.row>*{min-width:0;overflow-wrap:anywhere}
+.row>.sub,.row>.when,.row>.num{flex:none;overflow-wrap:normal}
+h1,.eyebrow{overflow-wrap:anywhere}
 .when{color:var(--accent);font-size:12px;white-space:nowrap;font-weight:600}
 /* ── tags / chips ──────────────────────────────────────────────────────── */
 .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
 .tag{border:1px solid var(--rule);background:var(--wash);border-radius:100px;
   padding:6px 14px;font-size:12px;color:var(--muted);
   transition:border-color .16s,color .16s,transform .16s var(--ease)}
-a.tag{background-image:none;padding-bottom:6px}
+a.tag{background-image:none;padding-bottom:6px;display:inline-block;max-width:100%;line-height:1.45}
+/* inline-block: a pill whose text wraps on a phone stays one rounded box */
 a.tag:hover{background:var(--wash);border-color:var(--rule-strong);color:var(--ink);
   transform:translateY(-1px)}
 .tag.on{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:600}
@@ -252,21 +308,6 @@ a.tag:hover{background:var(--wash);border-color:var(--rule-strong);color:var(--i
   letter-spacing:.15em;text-transform:uppercase;color:var(--muted-2)}
 .glass .pad{padding:0 24px 22px}
 .glass .pad.top{padding-top:20px}
-/* ── canton map: 26 links, works with JavaScript switched off ──────────── */
-.gmap{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;padding:4px 24px 20px}
-.gmap a{border-radius:11px;aspect-ratio:1;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:3px;line-height:1;background-image:none;
-  padding-bottom:0;transition:transform .2s var(--ease),box-shadow .2s}
-.gmap a:hover{transform:scale(1.11);z-index:2;box-shadow:0 10px 28px -8px rgba(0,0,0,.85)}
-.gmap .c{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;font-weight:600}
-.gmap .v{font-family:ui-monospace,Menlo,monospace;font-size:8.5px;opacity:.72}
-.s1{background:var(--d1);color:#cfe6f2} .s2{background:var(--d2);color:#e4f2f9}
-.s3{background:var(--d3);color:#eaf6fb} .s4{background:var(--d4);color:#04141c}
-.s5{background:var(--d5);color:#04141c} .s6{background:var(--d6);color:#04141c}
-.mleg{display:flex;align-items:center;gap:9px;padding:0 24px 20px;font-size:10px;
-  color:var(--muted-2);font-family:ui-monospace,Menlo,monospace;letter-spacing:.08em}
-.mleg .sw{display:flex;gap:3px}
-.mleg i{width:20px;height:8px;border-radius:3px;display:block}
 /* ── comparison table ──────────────────────────────────────────────────── */
 .cmp th{padding:16px 18px;font-size:12px;letter-spacing:.03em;text-transform:none;
   color:var(--muted);font-weight:600;font-family:"Libre Franklin",sans-serif;
@@ -328,16 +369,12 @@ a.tag:hover{background:var(--wash);border-color:var(--rule-strong);color:var(--i
   color:var(--muted)}
 .prose p{margin:0 0 15px;font-size:15.5px;line-height:1.7;max-width:66ch;color:var(--muted)}
 .prose p strong{color:var(--ink)}
-.bar{display:block;height:4px;border-radius:2px;
-  background:linear-gradient(90deg,var(--d3),var(--d6));margin-top:6px}
 .cols{display:grid;grid-template-columns:1fr 320px;gap:48px;padding-top:6px;
   align-items:start}
 .half{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding-top:6px;align-items:start}
 .cols>*,.half>*{min-width:0}
 figure{margin:16px 0 4px;background:var(--panel);border:1px solid var(--rule);
   border-radius:16px;padding:20px 22px}
-figcaption{color:var(--muted-2);font-size:12px;margin-top:10px}
-svg.chart{margin:0}
 footer{border-top:1px solid var(--rule);margin-top:56px;padding-top:22px;
   color:var(--muted-2);font-size:12.5px}
 footer p{margin:0 0 6px;max-width:80ch}
@@ -347,9 +384,13 @@ footer p{margin:0 0 6px;max-width:80ch}
   .wrap{padding:0 20px 44px}
   .title{padding:30px 0 24px;grid-template-columns:1fr;gap:24px}
   .cols,.half{grid-template-columns:1fr;gap:30px}
-  .gmap{grid-template-columns:repeat(5,1fr);padding-inline:16px}
-  .gmap .v{display:none}
-  .glass .ch,.glass .pad,.mleg{padding-inline:16px}
+  .glass .ch,.glass .pad{padding-inline:16px}
+  /* phones: headers such as "Totale (CHF)" may wrap and the numeric gutter narrows, so
+     the half-width firm tables fit 390px again instead of scrolling by 7-21px */
+  th{white-space:normal;vertical-align:bottom;letter-spacing:.08em}
+  td.r,th.r{padding-left:12px}
   .cmp td.c{width:96px;font-size:11.5px}
+  /* the home ranking fits a phone without scrolling: rank and canton step aside */
+  table.top .n0,table.top .kt{display:none}
   .cmp th,.cmp td{padding:12px 10px}
 }
