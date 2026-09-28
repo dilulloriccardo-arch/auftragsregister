@@ -196,7 +196,29 @@ def send_alerts() -> None:
         say(f"  ATTENZIONE avvisi exit {r.returncode}: {out} {r.stderr.strip()[-400:]}")
 
 
+
+def wip_source() -> list:
+    """Tracked or new files outside docs/ and dati/ with uncommitted changes: work in progress.
+
+    The nightly builds with whatever code is on disk and then commits everything, so it must never
+    run on half-done code. On 28.09.2026 a rewrite of ~580 texts, still under review, sat uncommitted
+    overnight and this run would have published it. Logs and ignored files do not count.
+    """
+    r = git("status", "--porcelain")
+    out = []
+    for line in r.stdout.splitlines():
+        path = line[3:].strip().strip('"')
+        if path.startswith(("docs/", "dati/")) or path.endswith(".log"):
+            continue
+        out.append(path)
+    return out
+
 def main() -> int:
+    wip = wip_source()
+    if wip:
+        say(f"ATTENZIONE codice modificato e non ancora pubblicato ({', '.join(wip[:4])}"
+            f"{'…' if len(wip) > 4 else ''}): nightly sospeso finche' non viene confermato o annullato")
+        return 1
     if not embargo_ok():
         return 0
     if not wait_online():
