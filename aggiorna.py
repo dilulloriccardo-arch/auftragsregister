@@ -3,8 +3,9 @@
 
 Only the current and previous month of awards are re-fetched — a publication can be
 corrected after the fact, and those two months are where corrections land — plus the
-open tenders, which turn over constantly. Everything older is already on disk and is
-never re-fetched: it is the archive, and it is the part no one else can rebuild,
+open tenders, which turn over constantly, and the awards of the other lots of a project,
+which the search shows with one lot only (lotti.py). Everything older is already on disk
+and is never re-fetched: it is the archive, and it is the part no one else can rebuild,
 because simap's API answers a wide date window with only its most recent weeks.
 """
 from __future__ import annotations
@@ -181,6 +182,24 @@ def mark_published(complete: bool = True) -> None:
         say("  un download Apify e' fallito: giornata NON segnata come fatta, il recupero riprovera'")
 
 
+def fetch_lots() -> None:
+    """The awards of a project's other lots (lotti.py). simap publishes one award per lot but
+    its search returns one row per project, so a project in lots arrived with one award of
+    several: 2'684 missing in 856 projects on 08.10.2026. Like the alerts, a failure here
+    (simap down, a crash) is logged and the night goes on with the data it already has."""
+    try:
+        r = subprocess.run([sys.executable, str(ROOT / "lotti.py")],
+                           capture_output=True, text=True, cwd=ROOT, timeout=1800)
+    except Exception as exc:   # hung beyond its own 25-minute stop: the next night carries on
+        say(f"  ATTENZIONE lotti non controllati: {type(exc).__name__}")
+        return
+    out = (r.stdout.strip().splitlines() or [""])[-1]
+    if r.returncode == 0:
+        say(f"  {out}")
+    else:
+        say(f"  ATTENZIONE lotti exit {r.returncode}: {out} {r.stderr.strip()[-400:]}")
+
+
 def send_alerts() -> None:
     """E-mail alerts on the data just published. Never turns a good nightly red."""
     try:
@@ -233,6 +252,7 @@ def main() -> int:
                 DATI / f"aggiudicazioni_{first:%Y-%m}.json")
     n_prev = run(["award_tender", "direct_award"], prev.isoformat(), prev_end.isoformat(),
                  DATI / f"aggiudicazioni_{prev:%Y-%m}.json")
+    fetch_lots()
     since = (today - datetime.timedelta(days=75)).isoformat()
     n_open = run(["tender"], since, nxt.isoformat(), DATI / "gare_aperte.json")
 
@@ -300,6 +320,10 @@ def main() -> int:
             f = line[3:].strip().strip('"')
             if f.startswith("docs/") and f.endswith("index.html"):
                 rel = f[len("docs"):-len("index.html")]
+                # award/tender detail pages and the abo pages are noindex: submitting them only
+                # filled the 10'000 cap before the pages that can rank (08.10.2026)
+                if "/auftrag/" in rel or "/abo/" in rel:
+                    continue
                 urls.append(f"{site}{base}{rel}")
         if urls:
             r = subprocess.run([sys.executable, str(ROOT / "indexnow.py")],

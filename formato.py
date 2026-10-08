@@ -154,6 +154,16 @@ def cell(v, cur: str = "CHF", empty_sr: str = "") -> str:
             f"{html.escape(txt)}</data>")
 
 
+def exact_cell(v, cur: str = "CHF", empty_sr: str = "") -> str:
+    """Table cell content (HTML) on the award page, the official record: the amount as published,
+    Rappen kept, without the column's currency; a foreign currency keeps its code. The lots of a
+    project are listed there in a table (08.10.2026). Missing: as in cell()."""
+    if v is None or not v:
+        return "–" + (f'<span class="sr"> {html.escape(empty_sr)}</span>' if empty_sr else "")
+    txt = _exact_num(v) if cur == "CHF" else exact(v, cur)
+    return f'<data value="{_value(v)}">{html.escape(txt)}</data>'
+
+
 def tile(v, cur: str = "CHF") -> str:
     """KPI tile value (HTML): number big, currency small. '<span class="n">992 Mio.</span> <small>CHF</small>'
     / '<small>CHF </small><span class="n">992m</span>'. The number and its unit never break; on a
@@ -227,19 +237,26 @@ def date_short(iso: str) -> str:
     return f"{d}{NBSP}{MONTHS['en'][0][m-1]}" if LANG == "en" else f"{d:02d}.{m:02d}."
 
 
+def clock(iso: str) -> str:
+    """The published local time of a deadline, as each language writes a time in Switzerland:
+    '12.00 Uhr', '12 h 00', '12:00'; '' when there is none or it is 00:00. Split out of deadline()
+    for 'läuft heute ab, 12.00 Uhr' in the tender lists (08.10.2026)."""
+    t = iso[11:16] if len(iso or "") >= 16 and iso[10] == "T" else ""
+    if not t or t == "00:00":
+        return ""
+    h, m = t[:2], t[3:5]
+    if LANG == "de":
+        return f"{int(h)}.{m}{NBSP}Uhr"
+    if LANG == "fr":
+        return f"{int(h)}{NNBSP}h{NNBSP}{m}"
+    return t
+
+
 def deadline(iso: str) -> str:
     """Date plus the published local time when there is one, as each language writes a time
     in Switzerland: '25.09.2026, 12.00 Uhr', '25.09.2026, 12 h 00', '25.09.2026, 12:00'."""
-    s = date(iso)
-    t = iso[11:16] if len(iso) >= 16 and iso[10] == "T" else ""
-    if not (s and t and t != "00:00"):
-        return s
-    h, m = t[:2], t[3:5]
-    if LANG == "de":
-        t = f"{int(h)}.{m}{NBSP}Uhr"
-    elif LANG == "fr":
-        t = f"{int(h)}{NNBSP}h{NNBSP}{m}"
-    return f"{s}, {t}"
+    s, t = date(iso), clock(iso)
+    return f"{s}, {t}" if s and t else s
 
 
 def month(ym: str, full: bool = False) -> str:

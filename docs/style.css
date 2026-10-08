@@ -104,7 +104,7 @@
 figure .lede{color:var(--muted);font-size:14px;margin:6px 0 0;max-width:70ch}
 figure h3{font-size:17px;margin:0}
 figure .note{color:var(--muted);font-size:12.5px;margin:12px 0 0;max-width:80ch}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 .mc .unit{font-size:11.5px;color:var(--muted);margin:14px 0 10px}
 .cc{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 8px}
 .cc .yax{position:relative;height:160px;min-width:2.4em;font-size:11.5px;color:var(--muted);
@@ -252,6 +252,15 @@ h3{font-weight:700;font-size:16px;margin:0;letter-spacing:-.02em}
   html:lang(en) .fig b small{margin:0 0 .4em}}
 .fig .approx{display:block;margin-top:8px;font-size:13px;font-style:normal;color:var(--muted)}
 .fig.money b{color:var(--accent)}
+/* a date tile keeps its date on one line ('08.10.20|26' on phones, and in four tiles a row up
+   to ~1000 px): never larger than the other tiles' figures, smaller where 17 % of the tile's own
+   width, which fits the longest date ('30 May 2026'), asks for it; the media query is for
+   browsers without container units (08.10.2026) */
+.fig.date{container-type:inline-size}
+.fig.date b{white-space:nowrap}
+@media(max-width:419px){.fig.date b{font-size:clamp(17px,5.2vw,26px)}}
+.fig.date b{font-size:max(17px,min(17cqi,clamp(26px,3.6vw,38px)))}
+.fig.off b{color:var(--muted)}
 .fig>span{display:block;margin-top:11px;font-size:10px;letter-spacing:.16em;
   text-transform:uppercase;color:var(--muted-2);font-weight:600;
   font-family:ui-monospace,Menlo,monospace}
@@ -259,12 +268,29 @@ h3{font-weight:700;font-size:16px;margin:0;letter-spacing:-.02em}
 .scroll{overflow-x:auto;max-width:100%;position:relative}
 /* position: the visually hidden cell text (.sr) is absolutely positioned; without a
    positioned scroll box it escaped the clipping and widened the page on phones */
+/* A table wider than the screen fades out at the edge it continues past, so the sideways scroll
+   shows (08.10.2026). Driven by the box's own scroll position: no fade while the table fits (the
+   timeline is inactive then) and none at the end reached; without scroll timelines, as before. */
+@property --fl{syntax:"<length>";inherits:false;initial-value:0px}
+@property --fr{syntax:"<length>";inherits:false;initial-value:0px}
+@keyframes scroll-hint{0%{--fl:0px;--fr:28px}6%,94%{--fl:28px;--fr:28px}100%{--fl:28px;--fr:0px}}
+@supports (animation-timeline:scroll(self inline)){
+  .scroll{-webkit-mask-image:linear-gradient(90deg,transparent,#000 var(--fl),#000 calc(100% - var(--fr)),transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 var(--fl),#000 calc(100% - var(--fr)),transparent);
+    animation:scroll-hint linear both;animation-timeline:scroll(self inline)}}
 /* ── tables ────────────────────────────────────────────────────────────── */
 table{width:100%;border-collapse:collapse}
 /* the Details box sits in a 320px column: long names and CPV labels wrap in place instead
    of pushing the value column past the edge (verifier, 29.09.2026) */
 .kv{table-layout:fixed}
-.kv td{padding-right:0;overflow-wrap:break-word;hyphens:auto}
+.kv td{padding-right:0;overflow-wrap:break-word;hyphens:auto;vertical-align:baseline}
+/* the label column takes 42 % and its labels wrap: at a fixed 112 px 'Staatsvertragsbereich',
+   'Contracting authority' and the French and Italian labels ran into the value (08.10.2026);
+   42 % of the 320 px column fits 'Staatsvertrags-' on one line. Hyphens only where lingue.py puts
+   a soft one: automatic hyphenation split 'ac-cords' though the line breaks at spaces */
+.kv th{width:42%;white-space:normal;overflow-wrap:break-word;hyphens:manual;-webkit-hyphens:manual;
+  text-transform:none;letter-spacing:0;font-size:13px;font-weight:500;line-height:1.45;
+  border-bottom:1px solid var(--rule);padding:13px 12px 13px 0;vertical-align:baseline}
 th{text-align:left;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;
   color:var(--muted-2);font-weight:600;padding:0 14px 11px 0;
   border-bottom:1px solid var(--rule-strong);white-space:nowrap;
@@ -286,6 +312,10 @@ ul.plain li:last-child{border-bottom:0}
 .row>.sub,.row>.when,.row>.num{flex:none;overflow-wrap:normal}
 h1,.eyebrow{overflow-wrap:anywhere}
 .when{color:var(--accent);font-size:12px;white-space:nowrap;font-weight:600}
+/* due today: 'läuft heute ab, 16.00 Uhr' in the signal colour, free to wrap before the time (its
+   other spaces are no-break) instead of widening the column or squeezing the title (08.10.2026) */
+.when.today{color:var(--signal);white-space:normal}
+.row>.when.today{flex:0 1 auto;min-width:min-content;text-align:right}
 /* ── tags / chips ──────────────────────────────────────────────────────── */
 .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
 .tag{border:1px solid var(--rule);background:var(--wash);border-radius:100px;
@@ -360,6 +390,9 @@ a.tag:hover{background:var(--wash);border-color:var(--rule-strong);color:var(--i
   text-transform:uppercase;font-weight:600;color:#3ddc97;padding:5px 12px;border-radius:100px;
   background:rgba(61,220,151,.12);font-family:ui-monospace,Menlo,monospace}
 .state i{width:6px;height:6px;background:currentColor;border-radius:50%;display:block}
+/* a tender due today, and one past its deadline (08.10.2026) */
+.state.today{color:var(--signal);background:rgba(255,180,84,.13)}
+.state.off{color:var(--muted);background:rgba(255,255,255,.07)}
 .winner{border:1px solid var(--rule);border-radius:16px;background:var(--glass);
   padding:20px 22px;margin:10px 0 0}
 .winner .who{font-family:"Bricolage Grotesque",sans-serif;font-size:22px;font-weight:700;
@@ -367,7 +400,7 @@ a.tag:hover{background:var(--wash);border-color:var(--rule-strong);color:var(--i
 .official{margin-top:26px;padding:15px 18px;background:rgba(255,67,86,.09);
   border-left:2px solid var(--accent);border-radius:0 10px 10px 0;font-size:12.5px;
   color:var(--muted)}
-.prose p{margin:0 0 15px;font-size:15.5px;line-height:1.7;max-width:66ch;color:var(--muted)}
+.prose p{margin:0 0 15px;font-size:15.5px;line-height:1.7;max-width:66ch;color:var(--muted);overflow-wrap:break-word}
 .prose p strong{color:var(--ink)}
 .cols{display:grid;grid-template-columns:1fr 320px;gap:48px;padding-top:6px;
   align-items:start}

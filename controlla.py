@@ -72,6 +72,41 @@ _LISTS = re.compile(r'<tbody>.*?</tbody>|<ul class="plain[^"]*"[^>]*>.*?</ul>', 
 _ROWS = re.compile(r'<tr\b.*?</tr>|<li\b.*?</li>', re.S)
 
 
+def expected_sums(G, awards: list) -> dict:
+    """'<lang>/<section>/<key>/' (and '<lang>/' for the home) -> the CHF sum the money tile of that
+    home, canton, buyer or company page must state: the francs published for awards that name ONE
+    firm, recomputed here from the records rather than taken from the generator; 0 means the page
+    shows no money tile at all."""
+    def single(rows):
+        out = 0.0
+        for a in rows:
+            p = a.get("winnerPrice")
+            if (len(G.winners(a)) == 1 and isinstance(p, (int, float)) and not isinstance(p, bool) and p
+                    and not a.get("_price_repeat")
+                    and (a.get("winnerCurrency") or "CHF").strip().upper() == "CHF"):
+                out += p
+        return out
+    groups = collections.defaultdict(list)
+    bmap = G.buyer_map(awards)
+    for a in awards:
+        groups[""].append(a)
+        if a.get("canton"):
+            groups["kanton/" + a["canton"]].append(a)
+        hit = bmap.get(G.norm_buyer(a.get("buyerName") or "")) if a.get("buyerName") else None
+        if hit:
+            groups["auftraggeber/" + hit[0]].append(a)
+        ws = G.winners(a)
+        for w in dict.fromkeys(G.slug(x) for x in ws):
+            groups["unternehmen/" + w].append(a)
+    out = {}
+    for k, rows in groups.items():
+        if k.startswith("unternehmen/") and len(rows) < G.MIN_AWARDS:
+            continue
+        for lang in ("de", "fr", "it", "en"):
+            out[f"{lang}/{k}/" if k else f"{lang}/"] = single(rows)
+    return out
+
+
 def _text(row: str) -> str:
     return " ".join(htmlmod.unescape(re.sub(r"<[^>]+>", " ", row)).split())
 
@@ -82,11 +117,23 @@ def main() -> int:
         return "/" if rel == "." else f"/{rel}/"
 
     pages = {url_of(f) for f in OUT.rglob("index.html")}
-    problems: list[str] = []
     counts = collections.Counter()
     empty_titles, long_titles, no_desc = [], [], []
     broken = collections.Counter()
     same_tender, twin_rows = [], []
+    # what the money figures and the award pages must say, from the data itself
+    import sys as _sys
+    _sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+    import genera as G
+    import lingue
+    awards, *_ = G.load()
+    expected = expected_sums(G, awards)
+    projects = G.project_awards(awards)
+    bad_sums, single_amount = [], []
+    anchors_to: list = []                 # (page, target, fragment)
+    anchors_at: dict = {}                 # award page -> the line ids it carries
+    listed: list = []                     # (page, project id) of every row in a tender list
+    closed: set = set()                   # project ids whose page says the deadline has passed
 
     for f in OUT.rglob("index.html"):
         html = f.read_text(encoding="utf-8")
@@ -114,6 +161,12 @@ def main() -> int:
             dup = [k for k, n in seen.items() if n > 1]
             if dup:
                 same_tender.append((here, dup[0]))
+            listed.extend((here, k) for k in seen)
+        # a tender past its deadline keeps its page, marked so (08.10.2026), and is listed nowhere
+        # as open: read from the pages themselves, so a deadline passing between the build and
+        # this check is not an error
+        if '<span class="state off">' in html and "/auftrag/" in here:
+            closed.add(here.rstrip("/").rsplit("/", 1)[-1])
         # No list shows two rows a reader cannot tell apart.
         for lst in _LISTS.findall(html):
             rows = [_text(r) for r in _ROWS.findall(lst)]
@@ -133,37 +186,58 @@ def main() -> int:
             if target not in pages:
                 broken[target] += 1
                 counts["link rotti"] += 1
+        # a row that links to its own lot on a project's page (#lot-2): the line must be there
+        for href, frag in re.findall(r'href="(/[^"#?]*)#((?:lot|pub)-[^"]*)"', html):
+            if BASE and href.startswith(BASE + "/"):
+                href = href[len(BASE):]
+            target = href if href.endswith("/") else href + "/"
+            anchors_to.append((here, target, frag))
+            if target not in pages:          # the pattern above skips links with a fragment
+                broken[target] += 1
+                counts["link rotti"] += 1
 
-    # The invariant that matters on a transparency register: a page's headline sum
-    # must equal the sum of the rows it shows. A figure that states more than the
-    # source published is worse than no figure.
-    import sys as _sys
-    _sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-    import genera as G
-    awards, _ = G.load()
-    by_buyer = collections.defaultdict(list)
-    for a in awards:
-        if a.get("buyerName"):
-            by_buyer[a["buyerName"]].append(a)
-    mismatch = 0
-    for name, rows in by_buyer.items():
-        if len(rows) < 3:
-            continue
-        head = sum(a.get("winnerPrice") or 0 for a in rows
-                   if isinstance(a.get("winnerPrice"), (int, float)))
-        per, joint = 0.0, 0.0
-        for r in rows:
-            ws, pr = G.winners(r), r.get("winnerPrice")
-            if isinstance(pr, (int, float)) and pr:
-                if len(ws) == 1:
-                    per += pr
-                else:
-                    joint += pr
-        if abs(head - per - joint) > 1:
-            mismatch += 1
-    print(f"  somme che non quadrano  {mismatch} pagine committente")
-    if mismatch:
-        problems.append("somme incoerenti")
+        # The money figures. The invariant that matters on a transparency register: a page's
+        # headline sum must equal the sum of the rows it shows, and a figure that states more
+        # than the source published is worse than no figure. Since 08.10.2026 a CHF total counts
+        # awards to ONE firm only: an award to several firms has a price per firm and no amount
+        # of its own, so a total that counts one states a figure nobody published.
+        tile = re.search(r'<div class="fig money"><b><data value="([0-9.]+)"', html)
+        key = here.lstrip("/") or "de/"          # the root carries the German home
+        if key in expected:
+            want = expected[key]
+            got = float(tile.group(1)) if tile else 0.0
+            if abs(got - round(want, 2)) > 0.05:
+                bad_sums.append((here, got, want))
+        # An award page never shows a single amount for an award naming several firms: not as
+        # its 'Zuschlagsbetrag' tile, and not on the award's line in a project's list of lots.
+        parts = here.strip("/").split("/")
+        if len(parts) == 3 and parts[1] == "auftrag" and parts[2] in projects:
+            rows = projects[parts[2]]
+            label = re.escape(htmlmod.escape(lingue.t("award_amount", parts[0]), quote=True))
+            has_tile = re.search(r'<div class="fig[^"]*"><b>.*?</b><span>' + label + "</span>", html)
+            if has_tile and (len(rows) > 1 or len(G.winners(rows[0])) > 1):
+                single_amount.append((here, "Zuschlagsbetrag"))
+            lines = dict(re.findall(r'<tr id="((?:lot|pub)-[^"]*)">(.*?)</tr>', html, re.S))
+            anchors_at[here] = set(lines)
+            for a in rows:
+                if len(rows) == 1:
+                    break
+                line = lines.get(a.get("_anchor") or "")
+                if line is None:
+                    single_amount.append((here, f"riga mancante {a.get('publicationNumber')}"))
+                elif len(G.winners(a)) > 1 and "<data" in line.rsplit('<td class="r num">', 1)[-1]:
+                    single_amount.append((here, f"importo unico {a.get('publicationNumber')}"))
+
+    print(f"  somme che non quadrano  {len(bad_sums)} pagine (home, cantoni, committenti, imprese)")
+    for h, got, want in bad_sums[:4]:
+        print(f"    {h}  pagina {got:,.2f} · righe con una sola impresa {want:,.2f}")
+    print(f"  un importo per più ditte {len(single_amount)} pagine appalto")
+    for h, what in single_amount[:4]:
+        print(f"    {h}  {what}")
+    lost = [(h, t, fr) for h, t, fr in anchors_to if t in anchors_at and fr not in anchors_at[t]]
+    print(f"  ancore di lotto rotte   {len(lost)} su {len(anchors_to)}")
+    for h, t, fr in lost[:4]:
+        print(f"    {h} -> {t}#{fr}")
 
     print(f"  pagine controllate      {counts['pagine']}")
     print(f"  titoli vuoti            {len(empty_titles)}")
@@ -173,6 +247,24 @@ def main() -> int:
     print(f"  bandi ripetuti in lista {len(same_tender)} pagine")
     for h, k in same_tender[:4]:
         print(f"    {h}  /auftrag/{k}/")
+    stale = [(h, k) for h, k in listed if k in closed]
+    print(f"  scaduti fra gli aperti  {len(stale)} righe ({len(closed)} pagine di bandi scaduti)")
+    for h, k in stale[:4]:
+        print(f"    {h}  /auftrag/{k}/")
+    # docs/404.html, served by GitHub Pages for every missing URL: it must exist, and its links —
+    # root-relative, since it is served at any depth — must lead to pages (08.10.2026)
+    nf, nf_bad = OUT / "404.html", []
+    if not nf.exists():
+        nf_bad.append("docs/404.html manca")
+    else:
+        for href in re.findall(r'href="(/[^"#?]*)"', nf.read_text(encoding="utf-8")):
+            if BASE and href.startswith(BASE + "/"):
+                href = href[len(BASE):]
+            if href.startswith(("/style.css", "/fonts/")):
+                continue
+            if (href if href.endswith("/") else href + "/") not in pages:
+                nf_bad.append(href)
+    print(f"  pagina 404              {'ok' if not nf_bad else 'link rotti: ' + ', '.join(nf_bad[:4])}")
     print(f"  righe identiche         {len(twin_rows)} pagine")
     for h, k in twin_rows[:4]:
         print(f"    {h}  «{k}»")
@@ -190,7 +282,8 @@ def main() -> int:
         print("\n  titoli troppo lunghi (Google li tronca):")
         for h, n in long_titles[:5]:
             print(f"    {n} char  {h}")
-    return 1 if (broken or empty_titles or no_desc or abs_errs or same_tender or twin_rows) else 0
+    return 1 if (broken or empty_titles or no_desc or abs_errs or same_tender or twin_rows
+                 or bad_sums or single_amount or lost or stale or nf_bad) else 0
 
 
 if __name__ == "__main__":

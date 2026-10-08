@@ -41,8 +41,9 @@ T: dict[str, dict[str, str]] = {
                       "it": "Totale degli importi pubblicati", "en": "Total of published amounts"},
     "median": {"de": "Typischer Betrag (Median)", "fr": "Montant typique (médiane)", "it": "Importo tipico (mediana)",
                "en": "Typical amount (median)"},
-    "amount": {"de": "Betrag (CHF)", "fr": "Montant (CHF)", "it": "Importo (CHF)",
-               "en": "Amount (CHF)"},
+    # the award lists (company, buyer, a project's lots): no currency in the header, which stood over
+    # euro and dollar amounts; a foreign amount names its currency in its cell (08.10.2026)
+    "amount": {"de": "Betrag", "fr": "Montant", "it": "Importo", "en": "Amount"},
     "date": {"de": "Datum", "fr": "Date", "it": "Data", "en": "Date"},
     "contract": {"de": "Auftrag", "fr": "Marché", "it": "Appalto", "en": "Contract"},
     "buyer": {"de": "Auftraggeber", "fr": "Adjudicateur", "it": "Committente",
@@ -78,7 +79,8 @@ T: dict[str, dict[str, str]] = {
     "details": {"de": "Angaben", "fr": "Détails", "it": "Dettagli", "en": "Details"},
     "type": {"de": "Auftragsart", "fr": "Type de marché", "it": "Tipo di appalto",
              "en": "Contract type"},
-    "treaty": {"de": "Staatsvertragsbereich", "fr": "Accord international",
+    # a soft hyphen: the Details column breaks the compound there rather than mid-syllable
+    "treaty": {"de": "Staatsvertrags\u00adbereich", "fr": "Accord international",
                "it": "Trattato internazionale", "en": "International treaty"},
     "place": {"de": "Ort", "fr": "Lieu", "it": "Luogo", "en": "Location"},
     "source": {"de": "Quelle", "fr": "Source", "it": "Fonte", "en": "Source"},
@@ -517,20 +519,22 @@ META: dict[str, dict[str, str]] = {
                 "fr": "Recevoir automatiquement les nouveaux appels d’offres (gratuit)",
                 "it": "Ricevere i nuovi bandi automaticamente (gratis)",
                 "en": "Get new tenders automatically (free)"},
+    # No "every day" / "täglich" about the e-mail: the sender writes only on days with new matching
+    # tenders (08.10.2026)
     "abo_title": {"de": "Ausschreibungen abonnieren (E-Mail, RSS)",
                   "fr": "Nouveaux appels d’offres par e-mail ou RSS",
-                  "it": "Nuovi bandi ogni giorno via e-mail o RSS",
+                  "it": "Nuovi bandi via e-mail o RSS",
                   "en": "Subscribe to tender alerts by email or RSS"},
     "abo_desc": {"de": "Kostenlose Benachrichtigung über neue öffentliche Ausschreibungen in der "
-                       "Schweiz, nach Kanton und Branche: täglich per E-Mail oder als RSS-Feed. "
+                       "Schweiz, nach Kanton und Branche: per E-Mail oder als RSS-Feed. "
                        "Quelle: simap.ch.",
                  "fr": "Alerte gratuite sur les nouveaux appels d’offres publics en Suisse, par "
-                       "canton et par branche : chaque jour par e-mail ou par flux RSS. Source : "
+                       "canton et par branche : par e-mail ou par flux RSS. Source : "
                        "simap.ch.",
                  "it": "Avviso gratuito sui nuovi bandi pubblici in Svizzera, per cantone e "
-                       "ramo: ogni giorno via e-mail o feed RSS. Fonte: simap.ch.",
+                       "ramo: via e-mail o feed RSS. Fonte: simap.ch.",
                  "en": "Free alerts for new public tenders in Switzerland, by canton and "
-                       "industry: daily by email or as an RSS feed. Source: simap.ch."},
+                       "industry: by email or as an RSS feed. Source: simap.ch."},
     "abo_h1": {"de": "Neue Ausschreibungen automatisch erhalten",
                "fr": "Recevoir automatiquement les nouveaux appels d’offres",
                "it": "Ricevere i nuovi bandi automaticamente",
@@ -546,24 +550,24 @@ META: dict[str, dict[str, str]] = {
     "abo_email_text": {"de": "Schreiben Sie eine E-Mail an {mail} mit dem Betreff «Abo» und "
                              "nennen Sie im Text Kanton (z. B. ZH) und Branche (z. B. "
                              "Bauarbeiten oder CPV 45). Sie erhalten eine Bestätigung und danach "
-                             "an jedem Werktag die neuen Ausschreibungen, die zu Ihrer Auswahl "
-                             "passen. Abmelden: E-Mail mit Betreff «Stop». Ihre Adresse wird nur "
-                             "dafür verwendet und nicht weitergegeben.",
+                             "eine E-Mail, wenn neue Ausschreibungen erscheinen, die zu Ihrer "
+                             "Auswahl passen. Abmelden: E-Mail mit Betreff «Stop». Ihre Adresse "
+                             "wird nur dafür verwendet und nicht weitergegeben.",
                        "fr": "Envoyez un e-mail à {mail} avec l’objet « Abo » en indiquant le "
                              "canton (p. ex. GE) et la branche (p. ex. construction ou CPV 45). "
-                             "Vous recevrez une confirmation, puis, chaque jour ouvrable, les "
-                             "nouveaux appels d’offres correspondants. Pour vous désabonner, "
-                             "envoyez un e-mail avec l’objet « Stop ». Votre adresse ne sert "
-                             "qu’à cet envoi et n’est transmise à personne.",
+                             "Vous recevrez une confirmation, puis un e-mail les jours où "
+                             "paraissent de nouveaux appels d’offres correspondants. Pour vous "
+                             "désabonner, envoyez un e-mail avec l’objet « Stop ». Votre adresse "
+                             "ne sert qu’à cet envoi et n’est transmise à personne.",
                        "it": "Scriva un’e-mail ad {mail} con oggetto «Abo», indicando il cantone "
                              "(p. es. TI) e il ramo (p. es. edilizia o CPV 45). Riceverà una "
-                             "conferma e poi, ogni giorno feriale, i nuovi bandi corrispondenti. "
-                             "Per cancellarsi basta un’e-mail con oggetto «Stop». Il suo "
-                             "indirizzo serve solo a questo e non viene ceduto a terzi.",
+                             "conferma e poi un’e-mail nei giorni in cui escono nuovi bandi "
+                             "corrispondenti. Per cancellarsi basta un’e-mail con oggetto «Stop». "
+                             "Il suo indirizzo serve solo a questo e non viene ceduto a terzi.",
                        "en": "Send an email to {mail} with the subject “Abo”, stating the canton "
                              "(e.g. ZH) and the industry (e.g. construction or CPV 45). You will "
-                             "receive a confirmation and then, every working day, the new "
-                             "tenders that match. To stop, send an email with the subject "
+                             "receive a confirmation and then an email on days when new matching "
+                             "tenders appear. To stop, send an email with the subject "
                              "“Stop”. Your address is used only for this and is never shared."},
     "abo_rss_h2": {"de": "Per RSS-Feed (sofort, ohne Anmeldung)", "fr": "Par flux RSS (immédiat, sans inscription)",
                    "it": "Via feed RSS (subito, senza iscrizione)", "en": "By RSS feed (instant, no sign-up)"},
@@ -601,15 +605,16 @@ META: dict[str, dict[str, str]] = {
                         "activate your subscription. No email? Check your spam folder."},
     "abo_ok_title": {"de": "Abo bestätigt", "fr": "Abonnement confirmé", "it": "Abbonamento confermato",
                      "en": "Subscription confirmed"},
-    "abo_ok": {"de": "Ab jetzt erhalten Sie an Werktagen die neuen Ausschreibungen, die zu Ihrer Auswahl passen. "
-                     "Abmelden: Link am Ende jeder E-Mail.",
-               "fr": "Dès à présent, vous recevrez chaque jour ouvrable les nouveaux appels "
-                     "d’offres correspondant à votre sélection. Pour vous désabonner : lien au "
-                     "bas de chaque e-mail.",
-               "it": "D’ora in poi riceverà, nei giorni feriali, i nuovi bandi corrispondenti "
-                     "alla sua scelta. Per cancellarsi: link in fondo a ogni e-mail.",
-               "en": "From now on, you will receive the new tenders matching your selection on "
-                     "working days. To unsubscribe, use the link at the bottom of any email."},
+    "abo_ok": {"de": "Ab jetzt erhalten Sie eine E-Mail, wenn neue Ausschreibungen erscheinen, die zu "
+                     "Ihrer Auswahl passen. Abmelden: Link am Ende jeder E-Mail.",
+               "fr": "Dès à présent, vous recevrez un e-mail les jours où paraissent de nouveaux "
+                     "appels d’offres correspondant à votre sélection. Pour vous désabonner : lien "
+                     "au bas de chaque e-mail.",
+               "it": "D’ora in poi riceverà un’e-mail nei giorni in cui escono nuovi bandi "
+                     "corrispondenti alla sua scelta. Per cancellarsi: link in fondo a ogni e-mail.",
+               "en": "From now on, you will receive an email on days when new tenders matching "
+                     "your selection appear. To unsubscribe, use the link at the bottom of any "
+                     "email."},
     "abo_back": {"de": "Zur Abo-Seite", "fr": "Retour à la page d’abonnement", "it": "Torna alla pagina di abbonamento",
                  "en": "Back to the subscription page"},
     "abo_form_h2": {"de": "Anmelden (kostenlos)", "fr": "S'inscrire (gratuit)", "it": "Iscriversi (gratis)", "en": "Sign up (free)"},
@@ -625,27 +630,31 @@ META: dict[str, dict[str, str]] = {
                          "it": "Rami (nessuna scelta = tutti)", "en": "Industries (none "
                                                                          "selected = all)"},
     "abo_form_submit": {"de": "Abonnieren", "fr": "S'abonner", "it": "Iscriversi", "en": "Subscribe"},
+    # an e-mail only on a day with new matching tenders: "an jedem Werktag eine E-Mail" promised one
+    # every working day, and none goes out without a match (08.10.2026)
     "abo_form_consent": {"de": "Sie erhalten zuerst eine E-Mail mit einem Bestätigungslink; erst "
-                               "danach ist das Abo aktiv. Von da an erhalten Sie an jedem Werktag "
-                               "eine E-Mail mit den neuen Ausschreibungen, die zu Ihrer Auswahl "
-                               "passen. Abmelden können Sie sich jederzeit über den Link in "
-                               "jeder E-Mail. Anmeldung und Versand über Brevo (EU).",
+                               "danach ist das Abo aktiv. Von da an erhalten Sie eine E-Mail, wenn "
+                               "neue Ausschreibungen erscheinen, die zu Ihrer Auswahl passen – an "
+                               "Tagen ohne solche Ausschreibungen keine. Abmelden können Sie sich "
+                               "jederzeit über den Link in jeder E-Mail. Anmeldung und Versand "
+                               "über Brevo (EU).",
                          "fr": "Vous recevrez d’abord un e-mail contenant un lien de "
                                "confirmation : l’abonnement ne sera actif qu’après votre clic. "
-                               "Ensuite, chaque jour ouvrable, un e-mail vous présentera les "
-                               "nouveaux appels d’offres correspondant à votre sélection. Vous "
+                               "Ensuite, un e-mail vous présentera les nouveaux appels d’offres "
+                               "correspondant à votre sélection, les jours où il en paraît ; les "
+                               "autres jours, vous n’en recevrez pas. Vous "
                                "pouvez vous désabonner à tout moment grâce au lien présent dans "
                                "chaque e-mail. L’inscription et l’envoi passent par Brevo (UE).",
                          "it": "Riceverà prima un’e-mail con un link di conferma: l’abbonamento "
-                               "si attiva solo dopo il clic su quel link. In seguito, nei giorni "
-                               "feriali, riceverà un’e-mail con i nuovi bandi corrispondenti "
-                               "alla sua scelta. Può cancellarsi in qualsiasi momento con il "
-                               "link presente in ogni e-mail. Iscrizione e invio tramite Brevo "
-                               "(UE).",
+                               "si attiva solo dopo il clic su quel link. In seguito riceverà "
+                               "un’e-mail nei giorni in cui escono nuovi bandi corrispondenti alla "
+                               "sua scelta; negli altri giorni nessuna. Può cancellarsi in "
+                               "qualsiasi momento con il link presente in ogni e-mail. Iscrizione "
+                               "e invio tramite Brevo (UE).",
                          "en": "You will first receive an email with a confirmation link; the "
                                "subscription starts only once you click it. After that, you will "
-                               "receive one email per working day with the new tenders that match "
-                               "your selection. "
+                               "receive an email on days when new tenders matching your selection "
+                               "appear, and none on other days. "
                                "You can unsubscribe at any time via the link in every email. "
                                "Sign-up and sending are handled by Brevo (EU)."},
     "abo_form_sending": {"de": "Wird gesendet …", "fr": "Envoi en cours…", "it": "Invio in "
@@ -721,10 +730,10 @@ META: dict[str, dict[str, str]] = {
                "fr": "Flux RSS par canton et par branche",
                "it": "Feed RSS per cantone e ramo",
                "en": "RSS feed for each canton and industry"},
-    "cmp_r7": {"de": "Tägliche E-Mail nach eigenem Filter",
-               "fr": "E-mail quotidien selon vos propres critères",
-               "it": "E-mail giornaliera secondo il proprio filtro",
-               "en": "Daily email matching your own filters"},
+    "cmp_r7": {"de": "E-Mail-Benachrichtigung nach eigenem Filter",
+               "fr": "Alerte e-mail selon vos propres critères",
+               "it": "Avviso e-mail secondo il proprio filtro",
+               "en": "Email alerts matching your own filters"},
     "cmp_r8": {"de": "Nutzung ohne Konto", "fr": "Utilisation sans compte",
                "it": "Uso senza account", "en": "Use without an account"},
     "open_sector_desc": {
@@ -801,12 +810,8 @@ META: dict[str, dict[str, str]] = {
         "it": " per {amount}",
         "en": " for {amount}",
     },
-    "desc_amount_only": {
-        "de": ", Zuschlag über {amount}",
-        "fr": ", adjugé pour {amount}",
-        "it": ", aggiudicato per {amount}",
-        "en": ", awarded for {amount}",
-    },
+    # (", Zuschlag über {amount}" for an award to several firms is gone: it gave the first
+    # firm's price as the award's; desc_won_n names how many firms instead, 08.10.2026)
 }
 
 # Plural of the central noun, per language.
@@ -1181,24 +1186,28 @@ IDX: dict[str, dict[str, str]] = {
         "en": "more than {p}",
     },
     # an award that names several firms is often a set of separate awards (one per lot,
-    # section or framework contract): the notes say "an mehrere Unternehmen", never "gemeinsam"
+    # section or framework contract): the notes say "an mehrere Unternehmen", never "gemeinsam".
+    # Such an award has no amount to split: simap publishes one price per firm, which the rows
+    # below now show ("Betrag nicht aufteilbar" assumed a single amount; 08.10.2026)
     "joint_note": {
         "de": "Nicht in den Summen enthalten sind {k} Zuschläge, die an mehrere Unternehmen "
-              "gingen (Betrag nicht aufteilbar).",
+              "gingen (publiziert ist ein Preis je Unternehmen).",
         "fr": "Les totaux n’incluent pas {k} adjudications attribuées à plusieurs entreprises "
-              "(montant impossible à répartir).",
-        "it": "I totali non comprendono {k} aggiudicazioni attribuite a più imprese (importo "
-              "non ripartibile).",
-        "en": "Totals exclude {k} awards made to several companies (the amount cannot be split).",
+              "(la publication indique un prix par entreprise).",
+        "it": "I totali non comprendono {k} aggiudicazioni attribuite a più imprese (la "
+              "pubblicazione indica un prezzo per impresa).",
+        "en": "Totals exclude {k} awards made to several companies (the publication gives one "
+              "price per company).",
     },
     "joint_note_one": {
         "de": "Nicht in den Summen enthalten ist ein Zuschlag, der an mehrere Unternehmen ging "
-              "(Betrag nicht aufteilbar).",
+              "(publiziert ist ein Preis je Unternehmen).",
         "fr": "Une adjudication attribuée à plusieurs entreprises n’est pas comprise dans les "
-              "totaux (montant impossible à répartir).",
-        "it": "I totali non comprendono un’aggiudicazione attribuita a più imprese (importo non "
-              "ripartibile).",
-        "en": "Totals exclude one award made to several companies (the amount cannot be split).",
+              "totaux (la publication indique un prix par entreprise).",
+        "it": "I totali non comprendono un’aggiudicazione attribuita a più imprese (la "
+              "pubblicazione indica un prezzo per impresa).",
+        "en": "Totals exclude one award made to several companies (the publication gives one "
+              "price per company).",
     },
     "joint_n": {
         "de": "{n} Unternehmen",
@@ -1691,37 +1700,34 @@ CANTON_NAMES: dict[str, dict[str, str]] = {
 # queries with the most impressions are company names, so visitors land on company
 # pages — and the free e-mail alert was offered only on the tenders pages.
 # {sector} is the company's main CPV division, {where} the phrase from alert_where.
+# No "an Werktagen" / "chaque jour ouvrable": an e-mail goes out only on a day with new matching
+# tenders (08.10.2026, as on the subscription page)
 META["alert_both"] = {
-    "de": "Neue Ausschreibungen der Branche «{sector}» {where} — an Werktagen per E-Mail, "
-          "kostenlos.",
-    "fr": "Recevez gratuitement par e-mail, chaque jour ouvrable, les nouveaux appels d’offres de "
-          "la branche « {sector} » {where}.",
-    "it": "Nuovi bandi nel ramo «{sector}» {where} – nei giorni feriali via e-mail, gratis.",
-    "en": "New tenders in the “{sector}” industry {where}: by email on working days, free.",
+    "de": "Neue Ausschreibungen der Branche «{sector}» {where} — per E-Mail, kostenlos.",
+    "fr": "Recevez gratuitement par e-mail les nouveaux appels d’offres de la branche « {sector} » "
+          "{where}.",
+    "it": "Nuovi bandi nel ramo «{sector}» {where} – via e-mail, gratis.",
+    "en": "New tenders in the “{sector}” industry {where}: by email, free.",
 }
 META["alert_sector"] = {
-    "de": "Neue Ausschreibungen der Branche «{sector}» aus der ganzen Schweiz — an Werktagen per "
-          "E-Mail, kostenlos.",
-    "fr": "Recevez gratuitement par e-mail, chaque jour ouvrable, les nouveaux appels d’offres de "
-          "la branche « {sector} » de toute la Suisse.",
-    "it": "Nuovi bandi nel ramo «{sector}» in tutta la Svizzera – nei giorni feriali via e-mail, "
-          "gratis.",
-    "en": "New tenders in the “{sector}” industry from all over Switzerland: by email on working "
-          "days, free.",
+    "de": "Neue Ausschreibungen der Branche «{sector}» aus der ganzen Schweiz — per E-Mail, "
+          "kostenlos.",
+    "fr": "Recevez gratuitement par e-mail les nouveaux appels d’offres de la branche « {sector} » "
+          "de toute la Suisse.",
+    "it": "Nuovi bandi nel ramo «{sector}» in tutta la Svizzera – via e-mail, gratis.",
+    "en": "New tenders in the “{sector}” industry from all over Switzerland: by email, free.",
 }
 META["alert_canton"] = {
-    "de": "Neue öffentliche Ausschreibungen {where} — an Werktagen per E-Mail, kostenlos.",
-    "fr": "Recevez gratuitement par e-mail, chaque jour ouvrable, les nouveaux appels d’offres "
-          "publics {where}.",
-    "it": "Nuovi bandi pubblici {where} — nei giorni feriali via e-mail, gratis.",
-    "en": "New public tenders {where}: by email on working days, free.",
+    "de": "Neue öffentliche Ausschreibungen {where} — per E-Mail, kostenlos.",
+    "fr": "Recevez gratuitement par e-mail les nouveaux appels d’offres publics {where}.",
+    "it": "Nuovi bandi pubblici {where} — via e-mail, gratis.",
+    "en": "New public tenders {where}: by email, free.",
 }
 META["alert_none"] = {
-    "de": "Neue öffentliche Ausschreibungen — an Werktagen per E-Mail, kostenlos.",
-    "fr": "Recevez gratuitement par e-mail, chaque jour ouvrable, les nouveaux appels d’offres "
-          "publics.",
-    "it": "Nuovi bandi pubblici — nei giorni feriali via e-mail, gratis.",
-    "en": "New public tenders: by email on working days, free.",
+    "de": "Neue öffentliche Ausschreibungen — per E-Mail, kostenlos.",
+    "fr": "Recevez gratuitement par e-mail les nouveaux appels d’offres publics.",
+    "it": "Nuovi bandi pubblici — via e-mail, gratis.",
+    "en": "New public tenders: by email, free.",
 }
 META["alert_link"] = {"de": "Benachrichtigung einrichten", "fr": "Créer l'alerte",
                       "it": "Attivare l'avviso", "en": "Set up the alert"}
@@ -1940,6 +1946,30 @@ IDX["other_lots"] = {
     "it": "Altri lotti con la stessa scadenza",
     "en": "Other lots with the same deadline",
 }
+# The title of a lot's own award, which simap publishes apart from the other lots (28439-02
+# for lot 1, -03 for lot 2) under the project's title alone: lotti.py names the lot after it
+# (08.10.2026). Written into the record in the language of {title}, not of the page; {title}
+# and {lot} are simap's own texts.
+IDX["lot_award_title"] = {
+    "de": "{title} – Los\u00a0{n}: {lot}",
+    "fr": "{title} – lot\u00a0{n} : {lot}",
+    "it": "{title} – lotto\u00a0{n}: {lot}",
+    "en": "{title} – lot\u00a0{n}: {lot}",
+}
+# the lot's own name already says which lot it is ('Los 3 Zone C', 'Lotto 1 - Medicamenti')
+IDX["lot_award_title_named"] = {
+    "de": "{title} – {lot}",
+    "fr": "{title} – {lot}",
+    "it": "{title} – {lot}",
+    "en": "{title} – {lot}",
+}
+# the lot has no name of its own beyond the project's (2018-02: both lots repeat it)
+IDX["lot_award_title_bare"] = {
+    "de": "{title} – Los\u00a0{n}",
+    "fr": "{title} – lot\u00a0{n}",
+    "it": "{title} – lotto\u00a0{n}",
+    "en": "{title} – lot\u00a0{n}",
+}
 # the page of a division's own general code (72000000) says which division it belongs to:
 # the pills name it "Informatikdienstleistungen (allgemeiner Code)", the EU label reads
 # "IT-Dienste: Beratung, Software-Entwicklung, …"
@@ -1949,6 +1979,144 @@ IDX["sector_general"] = {
     "it": "Codice generico del ramo «{label}»",
     "en": "General code of the “{label}” industry",
 }
+# A project's page lists every lot awarded, one line per lot ('Lose'), and each line is what a
+# company or buyer row links to (#lot-2): the page used to show one lot, the last one read
+# (6965: lot 15 of 15; 08.10.2026)
+T["lots"] = {"de": "Lose", "fr": "Lots", "it": "Lotti", "en": "Lots"}
+T["lot"] = {"de": "Los", "fr": "Lot", "it": "Lotto", "en": "Lot"}
+T["lot_name"] = {"de": "Bezeichnung", "fr": "Intitulé", "it": "Denominazione", "en": "Title"}
+T["project_number"] = {"de": "Projektnummer", "fr": "N° de projet", "it": "N. di progetto",
+                       "en": "Project no."}
+# the texts that differ from lot to lot, each under the lots it belongs to
+IDX["lot_n"] = {"de": "Los\u00a0{n}", "fr": "Lot\u00a0{n}", "it": "Lotto\u00a0{n}", "en": "Lot\u00a0{n}"}
+IDX["lots_list"] = {"de": "Lose\u00a0{n}", "fr": "Lots\u00a0{n}", "it": "Lotti\u00a0{n}", "en": "Lots\u00a0{n}"}
+META["desc_lots"] = {
+    "de": ", {n} Lose vergeben",
+    "fr": ", {n} lots adjugés",
+    "it": ", {n} lotti aggiudicati",
+    "en": ", {n} lots awarded",
+}
+# a project without lots whose later award names other firms (4 on 08.10.2026)
+META["desc_awards_n"] = {
+    "de": ", {n} Zuschläge",
+    "fr": ", {n} adjudications",
+    "it": ", {n} aggiudicazioni",
+    "en": ", {n} awards",
+}
+# An award to several firms has no amount of its own: simap publishes a price beside each name,
+# the price of that firm's successful offer, and the page printed the first firm's as the
+# 'Zuschlagsbetrag' (15349-02: 313'744.35 of five BKP packages worth 5.87 Mio.). Narrowed
+# (owner, 08.10.2026): each firm with its own price, no figure for the award, and on a company
+# page the firm's own price marked as its offer — not a "share", which it is not: in a
+# framework the same ceiling stands beside every name.
+T["offer_price"] = {"de": "Angebotspreis", "fr": "Prix de l'offre", "it": "Prezzo dell'offerta",
+                    "en": "Offer price"}
+T["per_firm"] = {"de": "Preise je Unternehmen", "fr": "prix par entreprise", "it": "prezzi per impresa",
+                 "en": "prices per company"}
+IDX["own_offer"] = {
+    "de": "Angebotspreis · Zuschlag an {n} Unternehmen",
+    "fr": "prix de l'offre · adjugé à {n} entreprises",
+    "it": "prezzo dell'offerta · aggiudicato a {n} imprese",
+    "en": "offer price · awarded to {n} companies",
+}
+IDX["same_price"] = {
+    "de": "Die Publikation nennt für alle {n} Unternehmen denselben Preis.",
+    "fr": "La publication indique le même prix pour les {n} entreprises.",
+    "it": "La pubblicazione indica lo stesso prezzo per tutte le {n} imprese.",
+    "en": "The publication gives the same price for all {n} companies.",
+}
+# two firms, the most common case: 'für alle 2 Unternehmen' reads wrong (verifier, 08.10.2026)
+IDX["same_price_two"] = {
+    "de": "Die Publikation nennt für beide Unternehmen denselben Preis.",
+    "fr": "La publication indique le même prix pour les deux entreprises.",
+    "it": "La pubblicazione indica lo stesso prezzo per entrambe le imprese.",
+    "en": "The publication gives the same price for both companies.",
+}
+META["desc_won_n"] = {
+    "de": ", Zuschlag an {n} Unternehmen",
+    "fr": ", adjugé à {n} entreprises",
+    "it": ", aggiudicato a {n} imprese",
+    "en": ", awarded to {n} companies",
+}
+# under the CHF total of the home, a canton or a buyer, which leaves those awards out like the
+# company pages always did (the home counted 5.1 Mrd. of first firms' prices; 08.10.2026)
+IDX["sum_no_joint"] = {
+    "de": "ohne die {k} Zuschläge an mehrere Unternehmen",
+    "fr": "sans les {k} adjudications attribuées à plusieurs entreprises",
+    "it": "escluse le {k} aggiudicazioni attribuite a più imprese",
+    "en": "excluding the {k} awards made to several companies",
+}
+IDX["sum_no_joint_one"] = {
+    "de": "ohne den Zuschlag an mehrere Unternehmen",
+    "fr": "sans l'adjudication attribuée à plusieurs entreprises",
+    "it": "esclusa l'aggiudicazione attribuita a più imprese",
+    "en": "excluding the award made to several companies",
+}
+# A tender keeps its page for a while after its deadline: the links in alert e-mails and feeds
+# led to a missing page the day after (08.10.2026). The status says so, with the date and time.
+T["tender_expired"] = {"de": "Eingabefrist abgelaufen", "fr": "Délai de remise expiré",
+                       "it": "Termine scaduto", "en": "Deadline passed"}
+# {when}: formato.deadline(); Italian without an article before the date ("il 08.10.2026" needs
+# "l’8"), as in mc_note_end
+META["expired_lead"] = {
+    "de": "Die Eingabefrist ist am {when} abgelaufen. Wird der Zuschlag auf simap.ch publiziert, "
+          "erscheint er unter dieser Adresse.",
+    "fr": "Le délai de remise a expiré le {when}. Si l’adjudication est publiée sur simap.ch, elle "
+          "apparaîtra à cette adresse.",
+    "it": "Termine d’inoltro scaduto ({when}). Se l’aggiudicazione verrà pubblicata su simap.ch, "
+          "comparirà a questo indirizzo.",
+    "en": "The submission deadline passed on {when}. If the award is published on simap.ch, it "
+          "will appear at this address.",
+}
+META["desc_deadline_passed"] = {
+    "de": ", Eingabefrist abgelaufen ({date})",
+    "fr": ", délai de remise expiré ({date})",
+    "it": ", termine scaduto ({date})",
+    "en": ", submission deadline passed ({date})",
+}
+# A deadline on the day of the build: the site is built once each morning, and a tender due at
+# 16.00 stood under the bare date all day (08.10.2026). {t} is formato.clock(); the no-break spaces
+# leave one place to wrap, before the time.
+META["due_today"] = {
+    "de": "läuft\u00a0heute\u00a0ab, {t}",
+    "fr": "expire\u00a0aujourd’hui à\u00a0{t}",
+    "it": "scade\u00a0oggi, ore\u00a0{t}",
+    "en": "closes\u00a0today at\u00a0{t}",
+}
+META["due_today_bare"] = {"de": "läuft\u00a0heute\u00a0ab", "fr": "expire\u00a0aujourd’hui",
+                          "it": "scade\u00a0oggi", "en": "closes\u00a0today"}
+# Without JavaScript the pills are not copied into KANTON/BRANCHE, which stay ALLE (08.10.2026)
+META["abo_form_nojs"] = {
+    "de": "Ohne JavaScript wird die Auswahl oben nicht übernommen: Das Abo gilt dann für die ganze "
+          "Schweiz und alle Branchen.",
+    "fr": "Sans JavaScript, la sélection ci-dessus n’est pas transmise : l’alerte couvre alors toute "
+          "la Suisse et toutes les branches.",
+    "it": "Senza JavaScript la scelta qui sopra non viene trasmessa: l’avviso vale allora per tutta "
+          "la Svizzera e per tutti i rami.",
+    "en": "Without JavaScript, the selection above is not sent: the alert then covers all of "
+          "Switzerland and every industry.",
+}
+# The page GitHub Pages serves for any missing URL (docs/404.html), all four languages on one page.
+# {days}: genera.EXPIRED_DAYS
+META["nf_title"] = {"de": "Seite nicht gefunden", "fr": "Page introuvable",
+                    "it": "Pagina non trovata", "en": "Page not found"}
+META["nf_text"] = {
+    "de": "Diese Seite gibt es nicht oder nicht mehr. Ausschreibungen bleiben nach Ablauf der "
+          "Eingabefrist noch {days} Tage abrufbar.",
+    "fr": "Cette page n’existe pas ou n’existe plus. Les appels d’offres restent consultables "
+          "{days} jours après l’expiration du délai de remise.",
+    "it": "Questa pagina non esiste o non esiste più. I bandi restano consultabili per {days} "
+          "giorni dopo la scadenza del termine d’inoltro.",
+    "en": "This page does not exist, or no longer does. Tenders stay online for {days} days after "
+          "their submission deadline.",
+}
+META["nf_home"] = {"de": "Startseite", "fr": "Page d’accueil", "it": "Pagina iniziale",
+                   "en": "Home page"}
+# shown by the page's script when the missing URL was a tender's (/de/auftrag/<id>/)
+META["nf_simap"] = {"de": "Diese Ausschreibung auf simap.ch öffnen",
+                    "fr": "Ouvrir cet appel d’offres sur simap.ch",
+                    "it": "Aprire questo bando su simap.ch",
+                    "en": "Open this tender on simap.ch"}
 
 
 # ---------------------------------------------------------------- typography

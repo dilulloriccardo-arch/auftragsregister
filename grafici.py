@@ -21,7 +21,7 @@ CSS = """
 figure .lede{color:var(--muted);font-size:14px;margin:6px 0 0;max-width:70ch}
 figure h3{font-size:17px;margin:0}
 figure .note{color:var(--muted);font-size:12.5px;margin:12px 0 0;max-width:80ch}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 .mc .unit{font-size:11.5px;color:var(--muted);margin:14px 0 10px}
 .cc{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 8px}
 .cc .yax{position:relative;height:160px;min-width:2.4em;font-size:11.5px;color:var(--muted);
