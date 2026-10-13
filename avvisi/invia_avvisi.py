@@ -218,6 +218,10 @@ def fmt_deadline(iso, lang: str) -> str:
 
 FOOT = {"de": ("Quelle", "Datenschutz"), "fr": ("Source", "Protection des données"),
         "it": ("Fonte", "Protezione dei dati"), "en": ("Source", "Privacy")}
+# simap's API terms (§5) require this sentence, verbatim and in German, wherever its data is passed
+# on: the site's footer always carried it, the e-mails did not (pricing study, 13.10.2026)
+SIMAP_NOTICE = ("Dies ist keine amtliche Veröffentlichung. Massgebend sind die auf der Plattform "
+                "www.simap.ch veröffentlichten Daten.")
 
 
 
@@ -243,7 +247,8 @@ def mail_html(lang: str, rows: list, since: str, total: int = 0, part: int = 1, 
     body = (f'<p>{head}{tag}</p><ul style="padding-left:18px">{"".join(items)}</ul>'
             f'<p style="color:#777;font-size:12px">auftragsregister.ch — {FOOT[lang][0]}: simap.ch · '
             f'<a href="{{{{ unsubscribe }}}}" style="color:#777">{foot}</a> · '
-            f'<a href="{SITE}/{lang}/datenschutz/" style="color:#777">{FOOT[lang][1]}</a></p>')
+            f'<a href="{SITE}/{lang}/datenschutz/" style="color:#777">{FOOT[lang][1]}</a></p>'
+            f'<p style="color:#777;font-size:11px">{SIMAP_NOTICE}</p>')
     subject = subj1 if total == 1 else f"{subjn} ({total})"
     return subject + tag, body
 
