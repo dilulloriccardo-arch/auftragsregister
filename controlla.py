@@ -242,6 +242,159 @@ def _text(row: str) -> str:
     return " ".join(htmlmod.unescape(re.sub(r"<[^>]+>", " ", row)).split())
 
 
+# ------------------------------------------------------------- step 3b (15.10.2026)
+# The interactive layer: the data the scripts read, the words that depend on the reader's clock, the search
+# that must work without JavaScript. Limits restated here, not imported (see above).
+SHARD_MAX = 320_000           # bytes of one search shard
+DATA_MAX = 6_000_000          # /daten/offen.json, /daten/suche/, /daten/kb/, /daten/abo-rate.json together
+JS_MAX_GZ = 25_000            # /stand.js and /js/*.js together, gzip -9
+LANGS4 = ("de", "fr", "it", "en")
+
+
+def relative_patterns(lingue) -> list:
+    """Regular expressions of the day-relative wording, in the four languages, from the scripts' templates
+    ('noch {n} Tage' -> 'noch \d+ Tage'); no-break spaces match any space. The unmistakable ones ('läuft
+    heute ab', 'expire demain', 'neu seit gestern' …) count anywhere; the ones prose also uses ('noch 90 Tage
+    abrufbar' on the about page, 'seit gestern') only as a label: the whole text of an element, give or take
+    a count before it. 'abgelaufen' alone is left out: it is also the static state 'Eingabefrist abgelaufen'
+    of an expired tender, which is a fact."""
+    out = []
+    strong = [lingue.JS[k][l] for k in ("due_tomorrow", "new_today", "new_today_1", "new_yday", "new_yday_1")
+              for l in LANGS4]
+    strong += [lingue.META[k][l] for k in ("due_today", "due_today_bare") for l in LANGS4]
+    weak = [lingue.JS[k][l] for k in ("due_days", "hidden_1", "hidden_n") for l in LANGS4]
+    weak += ["seit gestern", "depuis hier", "da ieri", "since yesterday"]
+    for t in strong + weak:
+        rx = re.escape(t)
+        rx = re.sub(r"\\\{[a-z]+\\\}", r"[\\d’ ,]+", rx)
+        rx = rx.replace(" ", "[\\s  ]").replace("\\ ", "[\\s  ]")
+        if t in weak:
+            rx = r">[^<>]{0,30}" + rx + r"[^<>]{0,12}<"
+        out.append(re.compile(rx, re.I))
+    return out
+
+
+_SCRIPT = re.compile(r"<script\b[^>]*>.*?</script>", re.S)
+# a class the build used to set by its own date (14.10.2026): .today/.soon are the script's since step 3b
+_REL_CLASS = re.compile(r'class="[^"]*\b(?:when|state|fig|dnew)\b[^"]*\b(?:today|soon)\b[^"]*"')
+
+
+def relative_errors(html: str, patterns: list) -> list:
+    """Day-relative wording or classes in a static page (they changed with the build's date and were wrong
+    by evening; the reader's clock writes them now, through /stand.js)."""
+    text = _SCRIPT.sub("", html)
+    errs = [m.group(0) for m in _REL_CLASS.finditer(text)][:1]
+    for rx in patterns:
+        m = rx.search(text)
+        if m:
+            errs.append(m.group(0).strip("<>"))
+    return errs
+
+
+def json_errors(files: dict) -> list:
+    """Every data file of the scripts parses (name -> bytes)."""
+    errs = []
+    for name, raw in sorted(files.items()):
+        try:
+            json.loads(raw.decode("utf-8"))
+        except (ValueError, UnicodeDecodeError) as ex:
+            errs.append(f"{name}: {str(ex)[:80]}")
+    return errs
+
+
+def size_errors(sizes: dict, js_gz: int) -> list:
+    """The byte limits: each search shard, the data all together, the scripts all together (gzip)."""
+    errs = [f"{n}: {v} byte, oltre {SHARD_MAX}" for n, v in sorted(sizes.items())
+            if n.startswith("/daten/suche/") and n != "/daten/suche/themen.json" and v > SHARD_MAX]
+    tot = sum(sizes.values())
+    if tot > DATA_MAX:
+        errs.append(f"dati degli script {tot} byte, oltre {DATA_MAX}")
+    if js_gz > JS_MAX_GZ:
+        errs.append(f"script {js_gz} byte gzip, oltre {JS_MAX_GZ}")
+    return errs
+
+
+def search_index_errors(shards: dict, companies: dict, buyers: dict, pages: set) -> list:
+    """Every company and every contracting authority is in the search index exactly once — one entry, the
+    same in every shard it sits in, none missing, none extra — and links where it should: a company or an
+    authority with a page to that page, one without to an award page that exists (companies: name ->
+    (slug, awards, has page); buyers: name -> (slug, awards, has page))."""
+    errs, seen = [], {"u": {}, "b": {}}
+    for k, sh in sorted(shards.items()):
+        for kind in ("u", "f", "b", "g"):
+            names = [x[0] for x in sh.get(kind, [])]
+            if len(names) != len(set(names)):
+                errs.append(f"shard {k}: {kind} doppio")
+            for x in sh.get(kind, []):
+                grp = "u" if kind in "uf" else "b"
+                prev = seen[grp].get(x[0])
+                if prev is not None and prev != (kind, x):
+                    errs.append(f"{x[0]}: voci diverse fra gli shard")
+                seen[grp][x[0]] = (kind, x)
+    for grp, want, kind_page, sec in (("u", companies, "u", "unternehmen"), ("b", buyers, "b", "auftraggeber")):
+        got = seen[grp]
+        miss, extra = sorted(set(want) - set(got)), sorted(set(got) - set(want))
+        if miss:
+            errs.append(f"{sec}: {len(miss)} mancanti, es. {miss[0]}")
+        if extra:
+            errs.append(f"{sec}: {len(extra)} in piu', es. {extra[0]}")
+        for name, (kind, x) in got.items():
+            if name not in want:
+                continue
+            sl, n, has_page = want[name]
+            if has_page != (kind == kind_page):
+                errs.append(f"{sec}/{name}: pagina {'mancante' if has_page else 'inesistente'} nell'indice")
+            elif kind == kind_page:
+                if (x[1] or sl) != sl or f"/de/{sec}/{sl}/" not in pages or x[2] != n:
+                    errs.append(f"{sec}/{name}: link o conteggio sbagliato")
+            elif f"/de/auftrag/{x[1].split('#')[0]}" not in pages:
+                errs.append(f"{sec}/{name}: pagina del zuschlag inesistente {x[1]}")
+    return errs[:20] if len(errs) > 20 else errs
+
+
+def open_index_errors(offen: dict, open_ids: set) -> list:
+    """/daten/offen.json holds every open tender exactly once: the tenders whose page is open."""
+    ids = [r[0] for r in offen.get("t", [])]
+    errs = []
+    if len(ids) != len(set(ids)):
+        errs.append(f"{len(ids) - len(set(ids))} bandi doppi")
+    miss, extra = open_ids - set(ids), set(ids) - open_ids
+    if miss:
+        errs.append(f"{len(miss)} bandi aperti mancanti, es. {sorted(miss)[0]}")
+    if extra:
+        errs.append(f"{len(extra)} bandi che non sono aperti, es. {sorted(extra)[0]}")
+    for r in offen.get("t", []):
+        if not (isinstance(r, list) and len(r) == 7 and r[1] and 0 <= r[5] < len(offen.get("b", []))):
+            errs.append(f"riga malformata {str(r)[:60]}")
+            break
+    return errs
+
+
+def open_count_errors(offen: dict, counts: dict) -> list:
+    """/daten/offen-n.json (the pills' counts on the award pages) says what /daten/offen.json holds: the open
+    tenders per canton (each canton a tender is listed under) and per Branche."""
+    k, b = collections.Counter(), collections.Counter()
+    for r in offen.get("t", []):
+        for c in r[3].replace("*", "").split():
+            k[c] += 1
+        if r[4][:2] in offen.get("d", {}):
+            b[r[4][:2]] += 1
+    errs = [f"cantone {c}: {counts.get('k', {}).get(c)} / {n}" for c, n in sorted(k.items()) if counts.get("k", {}).get(c) != n]
+    errs += [f"branca {c}: {counts.get('b', {}).get(c)} / {n}" for c, n in sorted(b.items()) if counts.get("b", {}).get(c) != n]
+    if sum(counts.get("k", {}).values()) != sum(k.values()) or sum(counts.get("b", {}).values()) != sum(b.values()):
+        errs.append("totali diversi")
+    return errs
+
+
+def search_page_errors(pages: set) -> list:
+    """The header's search works without JavaScript: it submits to /xx/suche/, which exists in each language."""
+    return [f"/{l}/suche/ mancante" for l in LANGS4 if f"/{l}/suche/" not in pages]
+
+
+_SEARCH_FORM = re.compile(r'<header class="masthead">.*?<form role="search" action="([^"]+)"><input name="q" '
+                          r'aria-label="[^"]+"><button>[^<]+</button></form>.*?</header>', re.S)
+
+
 # ------------------------------------------------------------- structure (14.10.2026)
 # The menu, the breadcrumbs, the headings, the prefilled alert links and the files the pages offer
 # (calendar .ics, CSV): each page is read once, in the main loop, and the files after it.
@@ -265,6 +418,7 @@ class Structure:
         self.files = {}                                     # docs path -> (page, link attributes)
         self.noindex = set()
         self.ics_pages = 0
+        self.scripts = set()
         self.names = {}
         for l in ("de", "fr", "it", "en"):
             f = OUT / l / "ausschreibungen" / "abo" / "index.html"
@@ -386,6 +540,7 @@ class Structure:
             self.files[path] = (here, attrs)
         if re.search(r'<meta name="robots" content="[^"]*noindex', html):
             self.noindex.add(here)
+        self.scripts.update(re.findall(r'<script src="([^"]+)"', html))
 
     def check_files(self) -> None:
         for path, (here, attrs) in self.files.items():
@@ -421,6 +576,9 @@ class Structure:
             self.err(".ics: file e bandi aperti non coincidono", "", f"{n_ics} / {self.ics_pages}")
         if not (OUT / "stand.js").is_file():
             self.err("stand.js mancante", "/")
+        for js in re.findall(r"/js/(\w+)\.js", " ".join(self.scripts)):
+            if not (OUT / "js" / f"{js}.js").is_file():
+                self.err("script mancante", "/", js)
         for sm in OUT.glob("sitemap-*.xml"):
             origin = self.origin
             for u in re.findall(r"<loc>([^<]+)</loc>", sm.read_text(errors="replace")):
@@ -742,6 +900,9 @@ def main() -> int:
     bad_buyers, bad_form, bad_ld = [], [], []
     units = {lingue.t(f"unit_{u}", l): u for u in ("k", "m", "chf") for l in ("de", "fr", "it", "en")}
     ds = Design(SITE + BASE, BASE, units)
+    # step 3b: day-relative wording, the header's search, the open tenders as the pages show them
+    rel_pat = relative_patterns(lingue)
+    rel_bad, form_bad, open_ids = [], [], set()
 
     for f in OUT.rglob("index.html"):
         html = f.read_text(encoding="utf-8")
@@ -766,6 +927,19 @@ def main() -> int:
                 bad_buyers.append((here, x))
         elif len(hp) == 3 and hp[1:] == ["ausschreibungen", "abo"]:
             bad_form += [(here, x) for x in form_branch_errors(html, lingue.CPV_SHORT["de"])]
+
+        x = relative_errors(html, rel_pat)
+        if x:
+            rel_bad.append((here, x[0]))
+        fm = _SEARCH_FORM.search(html)
+        lang_here = hp[0] if hp and hp[0] in LANGS4 else "de"
+        if not fm:
+            form_bad.append((here, "manca la ricerca nell'intestazione"))
+        elif fm.group(1) != f"{BASE}/{lang_here}/suche/":
+            form_bad.append((here, fm.group(1)))
+        if (len(hp) == 3 and hp[0] == "de" and hp[1] == "auftrag" and '<div class="fig wide" data-deadline="' in html
+                and '<span class="state off">' not in html):
+            open_ids.add(hp[2])
 
         t = re.search(r"<title>(.*?)</title>", html, re.S)
         # measure what a reader sees: an apostrophe is one character, not the six
@@ -902,6 +1076,52 @@ def main() -> int:
     for h, t, fr in lost[:4]:
         print(f"    {h} -> {t}#{fr}")
 
+    # step 3b: the scripts' data, the search index, the byte limits, the day-relative wording
+    import gzip
+    data_files = {"/" + f.relative_to(OUT).as_posix(): f.read_bytes()
+                  for f in [OUT / "daten" / "offen.json", OUT / "daten" / "offen-n.json", OUT / "daten" / "abo-rate.json",
+                            *sorted((OUT / "daten" / "suche").glob("*.json")), *sorted((OUT / "daten" / "kb").glob("*.json"))]
+                  if f.is_file()}
+    j_errs = json_errors(data_files)
+    for need in ("/daten/offen.json", "/daten/offen-n.json", "/daten/abo-rate.json", "/daten/suche/themen.json"):
+        if need not in data_files:
+            j_errs.append(f"{need} mancante")
+    js_gz = sum(len(gzip.compress(f.read_bytes(), 9)) for f in [OUT / "stand.js", *sorted((OUT / "js").glob("*.js"))]
+                if f.is_file())
+    sz_errs = size_errors({k: len(v) for k, v in data_files.items()}, js_gz)
+    idx_errs, open_errs = [], []
+    if not j_errs:
+        comp = G.profile(awards)
+        companies = {c["name"]: (sl, len(c["awards"]), len(c["awards"]) >= G.MIN_AWARDS) for sl, c in comp.items()}
+        bmap = G.buyer_map(awards)
+        bk = collections.defaultdict(collections.Counter)
+        for a in awards:
+            if a.get("buyerName"):
+                bk[G.norm_buyer(a["buyerName"])][" ".join(a["buyerName"].split())] += 1
+        buyers = {(bmap[k][1] if k in bmap else c.most_common(1)[0][0]): (bmap[k][0] if k in bmap else "", sum(c.values()), k in bmap)
+                  for k, c in bk.items()}
+        shards = {k[len("/daten/suche/"):-5]: json.loads(v) for k, v in data_files.items()
+                  if k.startswith("/daten/suche/") and not k.endswith("/themen.json")}
+        idx_errs = search_index_errors(shards, companies, buyers, pages)
+        open_errs = open_index_errors(json.loads(data_files["/daten/offen.json"]), open_ids)
+        open_errs += open_count_errors(json.loads(data_files["/daten/offen.json"]), json.loads(data_files["/daten/offen-n.json"]))
+    sp_errs = search_page_errors(pages)
+    n_entries = sum(len(v) for sh in (json.loads(x) for k, x in data_files.items() if k.startswith("/daten/suche/")
+                                      and not k.endswith("themen.json")) for v in sh.values())
+    print(f"  dati degli script       {len(j_errs)} illeggibili su {len(data_files)} file · "
+          f"{sum(len(v) for v in data_files.values()) / 1e6:.2f} MB · script {js_gz / 1e3:.1f} KB gzip")
+    for m in (j_errs + sz_errs)[:6]:
+        print(f"    {m}")
+    print(f"  indice di ricerca       {len(idx_errs)} problemi ({n_entries} voci negli shard) · "
+          f"bandi aperti {len(open_errs)} problemi ({len(open_ids)} pagine aperte)")
+    for m in (idx_errs + open_errs)[:6]:
+        print(f"    {m}")
+    print(f"  ricerca senza JS        {len(sp_errs) + len(form_bad)} problemi (/xx/suche/ e il modulo in ogni intestazione)")
+    for m in (sp_errs + [f"{h} {x}" for h, x in form_bad])[:4]:
+        print(f"    {m}")
+    print(f"  parole relative al giorno {len(rel_bad)} pagine")
+    for h, x in rel_bad[:4]:
+        print(f"    {h}  «{x}»")
     print(f"  pagine controllate      {counts['pagine']}")
     print(f"  titoli vuoti            {len(empty_titles)}")
     print(f"  titoli oltre 65 char    {len(long_titles)}")
@@ -971,7 +1191,8 @@ def main() -> int:
     return 1 if (broken or empty_titles or no_desc or abs_errs or same_tender or twin_rows
                  or bad_sums or single_amount or lost or stale or nf_bad or n_struct
                  or n_design or c_errs or f_errs or a_errs or tot_errs or bad_buyers or bad_form
-                 or bad_feeds or bad_ld) else 0
+                 or bad_feeds or bad_ld or j_errs or sz_errs or idx_errs or open_errs or sp_errs or form_bad
+                 or rel_bad) else 0
 
 
 if __name__ == "__main__":

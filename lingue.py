@@ -3099,6 +3099,275 @@ META["abo_lang_label"] = {"de": "Diese Seite in", "fr": "Cette page en", "it": "
                           "en": "This page in"}
 
 
+# ------------------------------------------- step 3b (15.10.2026): the interactive layer
+# The search in the header of every page (its field's name and button), the search page, the A–Z
+# letter pages, the long lists cut to their first rows, the company finder on the home.
+T["search"] = {"de": "Suche", "fr": "Recherche", "it": "Ricerca", "en": "Search"}
+T["search_go"] = {"de": "Suchen", "fr": "Rechercher", "it": "Cerca", "en": "Search"}
+META["search_title"] = {"de": "Suche im Register", "fr": "Recherche dans le registre",
+                        "it": "Ricerca nel registro", "en": "Search the register"}
+META["search_desc"] = {
+    "de": "Unternehmen, Auftraggeber, offene Ausschreibungen, Branchen und Kantone im Register der "
+          "öffentlichen Aufträge der Schweiz suchen.",
+    "fr": "Rechercher entreprises, adjudicateurs, appels d’offres en cours, branches et cantons dans le "
+          "registre des marchés publics suisses.",
+    "it": "Cercare imprese, committenti, bandi aperti, rami e cantoni nel registro degli appalti pubblici "
+          "svizzeri.",
+    "en": "Search companies, contracting authorities, open tenders, industries and cantons in the register "
+          "of Swiss public contracts.",
+}
+META["search_lead"] = {
+    "de": "Unternehmen, Auftraggeber, offene Ausschreibungen, Branchen und Kantone – nach Name oder Thema, "
+          "in jeder Landessprache: «Reinigung» findet auch «nettoyage».",
+    "fr": "Entreprises, adjudicateurs, appels d’offres en cours, branches et cantons – par nom ou par thème, "
+          "dans chaque langue nationale : « nettoyage » trouve aussi « Reinigung ».",
+    "it": "Imprese, committenti, bandi aperti, rami e cantoni – per nome o per tema, in ogni lingua "
+          "nazionale: «pulizia» trova anche «Reinigung».",
+    "en": "Companies, contracting authorities, open tenders, industries and cantons – by name or by topic, "
+          "in any national language: “cleaning” also finds “Reinigung”.",
+}
+META["search_label"] = {"de": "Suchbegriff", "fr": "Terme recherché", "it": "Termine di ricerca",
+                        "en": "Search term"}
+META["search_nojs"] = {
+    "de": "Die Suche braucht JavaScript. Ohne JavaScript führen diese Verzeichnisse zu jedem Eintrag "
+          "des Registers:",
+    "fr": "La recherche nécessite JavaScript. Sans JavaScript, ces répertoires mènent à chaque entrée "
+          "du registre :",
+    "it": "La ricerca richiede JavaScript. Senza JavaScript, questi elenchi portano a ogni voce del "
+          "registro:",
+    "en": "Search needs JavaScript. Without it, these directories lead to every entry in the register:",
+}
+META["search_dirs"] = {"de": "Verzeichnisse", "fr": "Répertoires", "it": "Elenchi", "en": "Directories"}
+META["az_companies"] = {"de": "Unternehmen von A bis Z", "fr": "Entreprises de A à Z",
+                        "it": "Imprese dalla A alla Z", "en": "Companies from A to Z"}
+META["az_buyers"] = {"de": "Auftraggeber von A bis Z", "fr": "Adjudicateurs de A à Z",
+                     "it": "Committenti dalla A alla Z", "en": "Contracting authorities from A to Z"}
+# a letter page of the company and buyer indexes: '{l}' is the letter ('A', '0–9')
+META["letter_companies_title"] = {"de": "Unternehmen mit {l} – öffentliche Aufträge",
+                                  "fr": "Entreprises en {l} – marchés publics",
+                                  "it": "Imprese con la {l} – appalti pubblici",
+                                  "en": "Companies starting with {l} – public contracts"}
+META["letter_companies_h1"] = {"de": "Unternehmen: {l}", "fr": "Entreprises : {l}", "it": "Imprese: {l}",
+                               "en": "Companies: {l}"}
+META["letter_companies_desc"] = {
+    "de": "{n} Unternehmen mit dem Anfangsbuchstaben {l}, jedes mit seinen öffentlichen Aufträgen in der "
+          "Schweiz.",
+    "fr": "{n} entreprises commençant par {l}, chacune avec ses marchés publics en Suisse.",
+    "it": "{n} imprese che iniziano con la {l}, ognuna con i suoi appalti pubblici in Svizzera.",
+    "en": "{n} companies starting with {l}, each with its public contracts in Switzerland.",
+}
+META["letter_buyers_title"] = {"de": "Auftraggeber mit {l} – öffentliche Aufträge",
+                               "fr": "Adjudicateurs en {l} – marchés publics",
+                               "it": "Committenti con la {l} – appalti pubblici",
+                               "en": "Contracting authorities: {l} – public contracts"}
+META["letter_buyers_h1"] = {"de": "Auftraggeber: {l}", "fr": "Adjudicateurs : {l}", "it": "Committenti: {l}",
+                            "en": "Contracting authorities: {l}"}
+META["letter_buyers_desc"] = {
+    "de": "{n} Auftraggeber mit dem Anfangsbuchstaben {l}, jeder mit den Zuschlägen, die er auf simap.ch "
+          "publiziert hat.",
+    "fr": "{n} adjudicateurs commençant par {l}, chacun avec les adjudications publiées sur simap.ch.",
+    "it": "{n} committenti che iniziano con la {l}, ognuno con le aggiudicazioni pubblicate su simap.ch.",
+    "en": "{n} contracting authorities starting with {l}, each with the awards it published on simap.ch.",
+}
+META["letters_lead"] = {
+    "de": "Nach Anfangsbuchstabe; jeder Buchstabe hat seine eigene Seite.",
+    "fr": "Par initiale ; chaque lettre a sa propre page.",
+    "it": "Per iniziale; ogni lettera ha la sua pagina.",
+    "en": "By first letter; each letter has a page of its own.",
+}
+META["letter_prev"] = {"de": "Vorheriger Buchstabe", "fr": "Lettre précédente", "it": "Lettera precedente",
+                       "en": "Previous letter"}
+META["letter_next"] = {"de": "Nächster Buchstabe", "fr": "Lettre suivante", "it": "Lettera successiva",
+                       "en": "Next letter"}
+# a list over 300 rows shows its first 100; the whole list is a page of its own (without JavaScript)
+# or loaded in place (with it)
+IDX["show_all_n"] = {"de": "Alle {n} anzeigen", "fr": "Afficher les {n}", "it": "Mostrare tutti i {n}",
+                     "en": "Show all {n}"}
+IDX["first_n_note"] = {
+    "de": "Die {n} Ausschreibungen mit der nächsten Eingabefrist, von {total}.",
+    "fr": "Les {n} appels d’offres dont le délai est le plus proche, sur {total}.",
+    "it": "I {n} bandi con la scadenza più vicina, su {total}.",
+    "en": "The {n} tenders with the nearest deadlines, out of {total}.",
+}
+IDX["rest_note"] = {
+    "de": "Die übrigen {n} stehen in den Listen der Kantone und Branchen.",
+    "fr": "Les {n} autres figurent dans les listes des cantons et des branches.",
+    "it": "Gli altri {n} si trovano negli elenchi dei cantoni e dei rami.",
+    "en": "The other {n} are in the canton and industry lists.",
+}
+META["all_list_title"] = {"de": "{h} – vollständige Liste", "fr": "{h} – liste complète",
+                          "it": "{h} – elenco completo", "en": "{h} – full list"}
+META["all_list_lead"] = {
+    "de": "Alle {n} offenen Ausschreibungen dieser Liste auf einer Seite, die nächste Eingabefrist zuerst.",
+    "fr": "Les {n} appels d’offres en cours de cette liste sur une seule page, le délai le plus proche "
+          "en premier.",
+    "it": "Tutti i {n} bandi aperti di questo elenco su una sola pagina, la scadenza più vicina per prima.",
+    "en": "All {n} open tenders of this list on one page, the nearest deadline first.",
+}
+META["all_list_back"] = {"de": "Zur kurzen Liste", "fr": "Retour à la liste courte", "it": "Torna all’elenco breve",
+                         "en": "Back to the short list"}
+# the home's company finder (the door 'Unternehmen finden' becomes a search box)
+META["finder_label"] = {"de": "Name des Unternehmens", "fr": "Nom de l’entreprise", "it": "Nome dell’impresa",
+                        "en": "Company name"}
+META["finder_ph"] = {"de": "z. B. Implenia", "fr": "p. ex. Implenia", "it": "ad es. Implenia",
+                     "en": "e.g. Implenia"}
+META["finder_sub"] = {
+    "de": "{n} Unternehmen mit mindestens einem Zuschlag, {k} davon mit eigener Seite.",
+    "fr": "{n} entreprises ayant obtenu au moins une adjudication, dont {k} avec leur propre page.",
+    "it": "{n} imprese con almeno un’aggiudicazione, di cui {k} con una pagina propria.",
+    "en": "{n} companies with at least one award, {k} of them with a page of their own.",
+}
+META["finder_az"] = {"de": "Von A bis Z", "fr": "De A à Z", "it": "Dalla A alla Z", "en": "From A to Z"}
+# the alert form: the e-mail field's error, tied to the field (aria-describedby)
+META["abo_email_missing"] = {"de": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+                             "fr": "Veuillez saisir votre adresse e-mail.",
+                             "it": "Inserisca il suo indirizzo e-mail.",
+                             "en": "Please enter your email address."}
+META["abo_email_bad"] = {
+    "de": "Diese E-Mail-Adresse ist nicht gültig. Beispiel: name@firma.ch",
+    "fr": "Cette adresse e-mail n’est pas valable. Exemple : nom@entreprise.ch",
+    "it": "Questo indirizzo e-mail non è valido. Esempio: nome@ditta.ch",
+    "en": "This email address is not valid. Example: name@company.ch",
+}
+
+# The pill to a list of open tenders on the award pages of a Bereich, a Branche and a canton, without its
+# count: the count changed every night and rewrote 1'700 pages for that one number; /stand.js adds it from
+# /daten/offen-n.json (step 3b)
+IDX["open_in_sector_x"] = {"de": "Offene Ausschreibungen der Branche «{name}»",
+                           "fr": "Appels d’offres en cours dans la branche « {name} »",
+                           "it": "Bandi aperti nel ramo «{name}»", "en": "Open tenders in the “{name}” industry"}
+IDX["open_in_x"] = {"de": "Offene Ausschreibungen im Kanton {c}", "fr": "Appels d’offres en cours dans le canton {of}",
+                    "it": "Bandi aperti nel Canton {c}", "en": "Open tenders in the canton of {c}"}
+
+# The scripts' words (js/*.js read them from the data genera.py writes into each script): every label
+# that depends on the reader's clock lives here and nowhere in the static pages, which carry absolute
+# dates only (the static HTML must not say 'heute', 'morgen', 'noch 5 Tage' or 'seit gestern').
+JS: dict[str, dict[str, str]] = {
+    # the deadlines, from the reader's clock (stand.js)
+    "due_tomorrow": {"de": "läuft morgen ab", "fr": "expire demain", "it": "scade domani",
+                     "en": "closes tomorrow"},
+    "due_days": {"de": "noch {n} Tage", "fr": "encore {n} jours", "it": "ancora {n} giorni",
+                 "en": "{n} days left"},
+    "due_over": {"de": "abgelaufen", "fr": "expiré", "it": "scaduto", "en": "closed"},
+    "hidden_1": {"de": "1 inzwischen abgelaufene Ausschreibung ausgeblendet",
+                 "fr": "1 appel d’offres expiré entre-temps, masqué",
+                 "it": "1 bando scaduto nel frattempo, nascosto",
+                 "en": "1 tender closed since, hidden"},
+    "hidden_n": {"de": "{n} inzwischen abgelaufene ausgeblendet",
+                 "fr": "{n} appels d’offres expirés entre-temps, masqués",
+                 "it": "{n} bandi scaduti nel frattempo, nascosti",
+                 "en": "{n} tenders closed since, hidden"},
+    # the home's 'neu' badge while its day is today or yesterday on the reader's clock
+    "new_today": {"de": "{m} neu heute", "fr": "{m} nouveaux aujourd’hui", "it": "{m} nuovi oggi",
+                  "en": "{m} new today"},
+    "new_today_1": {"de": "1 neu heute", "fr": "1 nouveau aujourd’hui", "it": "1 nuovo oggi",
+                    "en": "1 new today"},
+    "new_yday": {"de": "{m} neu seit gestern", "fr": "{m} nouveaux depuis hier", "it": "{m} nuovi da ieri",
+                 "en": "{m} new since yesterday"},
+    "new_yday_1": {"de": "1 neu seit gestern", "fr": "1 nouveau depuis hier", "it": "1 nuovo da ieri",
+                   "en": "1 new since yesterday"},
+    "top": {"de": "Nach oben", "fr": "Haut de page", "it": "Torna su", "en": "Back to top"},
+    "ph": {"de": "Unternehmen, Auftraggeber, Ausschreibung, Branche suchen …",
+           "fr": "Entreprise, adjudicateur, appel d’offres, branche …",
+           "it": "Impresa, committente, bando, ramo …",
+           "en": "Search companies, authorities, tenders, industries …"},
+    # the search (suche.js), its groups in this order
+    "g_t": {"de": "Offene Ausschreibungen", "fr": "Appels d’offres en cours", "it": "Bandi aperti",
+            "en": "Open tenders"},
+    "g_u": {"de": "Unternehmen", "fr": "Entreprises", "it": "Imprese", "en": "Companies"},
+    "g_b": {"de": "Auftraggeber", "fr": "Adjudicateurs", "it": "Committenti", "en": "Contracting authorities"},
+    "g_s": {"de": "Branchen und Bereiche", "fr": "Branches et domaines", "it": "Rami e settori",
+            "en": "Industries and sectors"},
+    "g_k": {"de": "Kantone", "fr": "Cantons", "it": "Cantoni", "en": "Cantons"},
+    "g_p": {"de": "Seiten", "fr": "Pages", "it": "Pagine", "en": "Pages"},
+    "all_t": {"de": "Alle offenen Ausschreibungen zu «{q}»", "fr": "Tous les appels d’offres en cours pour « {q} »",
+              "it": "Tutti i bandi aperti per «{q}»", "en": "All open tenders for “{q}”"},
+    "all_r": {"de": "Alle Ergebnisse für «{q}»", "fr": "Tous les résultats pour « {q} »",
+              "it": "Tutti i risultati per «{q}»", "en": "All results for “{q}”"},
+    "res_h": {"de": "Ergebnisse für «{q}»", "fr": "Résultats pour « {q} »", "it": "Risultati per «{q}»",
+              "en": "Results for “{q}”"},
+    "none": {"de": "Keine Treffer für «{q}».", "fr": "Aucun résultat pour « {q} ».",
+             "it": "Nessun risultato per «{q}».", "en": "No results for “{q}”."},
+    "none_hint": {"de": "Versuchen Sie ein anderes Wort, einen Teil des Namens oder die Verzeichnisse unten.",
+                  "fr": "Essayez un autre mot, une partie du nom ou les répertoires ci-dessous.",
+                  "it": "Provi un’altra parola, una parte del nome o gli elenchi qui sotto.",
+                  "en": "Try another word, part of the name, or the directories below."},
+    "n_res": {"de": "{n} Treffer", "fr": "{n} résultats", "it": "{n} risultati", "en": "{n} results"},
+    "n_res_1": {"de": "1 Treffer", "fr": "1 résultat", "it": "1 risultato", "en": "1 result"},
+    "n_sug": {"de": "{n} Vorschläge, mit den Pfeiltasten wählen", "fr": "{n} suggestions, choisir avec les flèches",
+              "it": "{n} suggerimenti, scegliere con le frecce", "en": "{n} suggestions, use the arrow keys"},
+    "more": {"de": "{n} weitere anzeigen", "fr": "Afficher les {n} autres", "it": "Mostrare gli altri {n}",
+             "en": "Show {n} more"},
+    "aw_1": {"de": "1 Zuschlag", "fr": "1 adjudication", "it": "1 aggiudicazione", "en": "1 award"},
+    "aw_n": {"de": "{n} Zuschläge", "fr": "{n} adjudications", "it": "{n} aggiudicazioni", "en": "{n} awards"},
+    "open_1": {"de": "1 offen", "fr": "1 en cours", "it": "1 aperto", "en": "1 open"},
+    "open_n": {"de": "{n} offen", "fr": "{n} en cours", "it": "{n} aperti", "en": "{n} open"},
+    "to_award": {"de": "Seite des Zuschlags", "fr": "page de l’adjudication", "it": "pagina dell’aggiudicazione",
+                 "en": "award page"},
+    "k_canton": {"de": "Kanton", "fr": "Canton", "it": "Cantone", "en": "Canton"},
+    "k_div": {"de": "Branche", "fr": "Branche", "it": "Ramo", "en": "Industry"},
+    "k_sec": {"de": "Bereich", "fr": "Domaine", "it": "Settore", "en": "Sector"},
+    "until": {"de": "bis {d}", "fr": "jusqu’au {d}", "it": "entro il {d}", "en": "due {d}"},
+    "loading": {"de": "Wird geladen …", "fr": "Chargement …", "it": "Caricamento …", "en": "Loading …"},
+    "failed": {"de": "Die Daten konnten nicht geladen werden.", "fr": "Les données n’ont pas pu être chargées.",
+               "it": "Non è stato possibile caricare i dati.", "en": "The data could not be loaded."},
+    # the filters of the tender lists (liste.js)
+    "f_label": {"de": "Ausschreibungen filtern", "fr": "Filtrer les appels d’offres", "it": "Filtrare i bandi",
+                "en": "Filter tenders"},
+    "f_q": {"de": "Titel oder Auftraggeber", "fr": "Titre ou adjudicateur", "it": "Titolo o committente",
+            "en": "Title or authority"},
+    "f_k_all": {"de": "Alle Kantone", "fr": "Tous les cantons", "it": "Tutti i cantoni", "en": "All cantons"},
+    "f_b_all": {"de": "Alle Branchen", "fr": "Toutes les branches", "it": "Tutti i rami", "en": "All industries"},
+    "f_soon": {"de": "Frist in ≤ 7 Tagen", "fr": "Délai dans 7 jours au plus", "it": "Scadenza entro 7 giorni",
+               "en": "Deadline within 7 days"},
+    "f_clear": {"de": "Filter zurücksetzen", "fr": "Réinitialiser les filtres", "it": "Azzerare i filtri",
+                "en": "Clear filters"},
+    "f_abo": {"de": "Diese Auswahl per E-Mail-Abo", "fr": "Recevoir cette sélection par e-mail",
+              "it": "Ricevere questa selezione via e-mail", "en": "Get this selection by email"},
+    "f_count": {"de": "{n} von {m} offenen Ausschreibungen", "fr": "{n} sur {m} appels d’offres en cours",
+                "it": "{n} di {m} bandi aperti", "en": "{n} of {m} open tenders"},
+    "f_none": {"de": "Keine offene Ausschreibung entspricht dieser Auswahl.",
+               "fr": "Aucun appel d’offres en cours ne correspond à cette sélection.",
+               "it": "Nessun bando aperto corrisponde a questa selezione.",
+               "en": "No open tender matches this selection."},
+    "multi": {"de": "mehrere Kantone", "fr": "plusieurs cantons", "it": "più cantoni", "en": "several cantons"},
+    # the alert form (abo.js)
+    "sel": {"de": "({n} ausgewählt)", "fr": "(sélection : {n})", "it": "(selezionati: {n})", "en": "({n} selected)"},
+    "pv": {"de": "Zurzeit {open} · ≈ {w} neue pro Woche", "fr": "Actuellement {open} · ≈ {w} nouveaux par semaine",
+           "it": "Attualmente {open} · ≈ {w} nuovi alla settimana", "en": "Currently {open} · ≈ {w} new a week"},
+    "pv_lt": {"de": "Zurzeit {open} · weniger als 1 neue pro Woche",
+              "fr": "Actuellement {open} · moins d’un nouveau par semaine",
+              "it": "Attualmente {open} · meno di uno nuovo alla settimana",
+              "en": "Currently {open} · fewer than 1 new a week"},
+    "pv_note": {"de": "für die gewählten Kantone und Branchen, nach den letzten 8 Wochen",
+                "fr": "pour les cantons et branches choisis, d’après les 8 dernières semaines",
+                "it": "per i cantoni e i rami scelti, secondo le ultime 8 settimane",
+                "en": "for the cantons and industries chosen, based on the last 8 weeks"},
+    # a canton's awards in one industry (kb.js)
+    "kb_h": {"de": "{div} im Kanton {name}", "fr": "{div} dans le canton {of}", "it": "{div} nel Canton {name}",
+             "en": "{div} in the canton of {name}"},
+    "kb_lead": {"de": "{n} an {f}, nach den Zuschlägen dieses Registers.",
+                "fr": "{n} à {f}, d’après les adjudications de ce registre.",
+                "it": "{n} a {f}, secondo le aggiudicazioni di questo registro.",
+                "en": "{n} to {f}, from the awards in this register."},
+    "kb_f1": {"de": "1 Unternehmen", "fr": "1 entreprise", "it": "1 impresa", "en": "1 company"},
+    "kb_fn": {"de": "{n} Unternehmen", "fr": "{n} entreprises", "it": "{n} imprese", "en": "{n} companies"},
+    "kb_top": {"de": "Unternehmen mit den meisten Zuschlägen", "fr": "Entreprises avec le plus d’adjudications",
+               "it": "Imprese con più aggiudicazioni", "en": "Companies with the most awards"},
+    "kb_recent": {"de": "Die {k} neuesten von {n}", "fr": "Les {k} plus récentes sur {n}",
+                  "it": "Le {k} più recenti su {n}", "en": "The {k} most recent of {n}"},
+    "kb_all": {"de": "Die Branche in der ganzen Schweiz", "fr": "La branche dans toute la Suisse",
+               "it": "Il ramo in tutta la Svizzera", "en": "The industry across Switzerland"},
+    "kb_csv": {"de": "Alle Zuschläge des Kantons als CSV", "fr": "Toutes les adjudications du canton en CSV",
+               "it": "Tutte le aggiudicazioni del cantone in CSV", "en": "All the canton’s awards as CSV"},
+    "kb_close": {"de": "Schliessen", "fr": "Fermer", "it": "Chiudere", "en": "Close"},
+    "kb_hint": {"de": "Branche wählen: die Zuschläge dieses Kantons und die Unternehmen mit den meisten davon.",
+                "fr": "Choisir une branche : les adjudications de ce canton et les entreprises qui en ont le plus.",
+                "it": "Scegliere un ramo: le aggiudicazioni di questo cantone e le imprese che ne hanno di più.",
+                "en": "Pick an industry: this canton’s awards and the companies with the most of them."},
+}
+
+
 # ---------------------------------------------------------------- typography
 # One rule set per language, applied once at import to the site's own templates and never
 # to simap data. Strings above are written with plain spaces and straight apostrophes;
@@ -3125,7 +3394,7 @@ def _typo(s, lang):
     return s
 
 
-for _tbl in (T, PROSE, META, IDX):
+for _tbl in (T, PROSE, META, IDX, JS):
     for _k, _d in _tbl.items():
         if _tbl is PROSE and _k == "disclaimer":
             continue
@@ -3170,7 +3439,7 @@ for _l in list(BANDS):
 
 # Drift fails the build: a French template with a plain space before : ; ? !, or an
 # unconverted spaced em dash anywhere.
-for _tbl in (T, PROSE, META, IDX):
+for _tbl in (T, PROSE, META, IDX, JS):
     for _k, _d in _tbl.items():
         for _l, _v in _d.items():
             assert " \u2014 " not in _v, (_k, _l, _v)
