@@ -449,11 +449,13 @@ META: dict[str, dict[str, str]] = {
               "cantons and communes on simap.ch – sorted by deadline, grouped by canton and "
               "industry, updated every morning.",
     },
+    # no heading may promise a search the page does not have ("Ausschreibungen suchen: So
+    # funktioniert es"; audit 13.10.2026)
     "open_howto_h2": {
-        "de": "Ausschreibungen suchen: So funktioniert es",
-        "fr": "Chercher un appel d'offres : mode d'emploi",
-        "it": "Cercare un bando: come funziona",
-        "en": "How to find tenders",
+        "de": "So ist die Liste aufgebaut",
+        "fr": "Comment cette liste est organisée",
+        "it": "Come è organizzato l’elenco",
+        "en": "How this list is organised",
     },
     "open_howto": {
         "de": "Die Tabelle zeigt die Ausschreibungen mit der nächsten Eingabefrist zuerst. Jede "
@@ -2119,6 +2121,609 @@ META["nf_simap"] = {"de": "Diese Ausschreibung auf simap.ch öffnen",
                     "en": "Open this tender on simap.ch"}
 
 
+# ------------------------------------------------- navigation, doors, alerts (14.10.2026)
+# The audit of 13.10.2026: no menu, no visible breadcrumbs, no skip link, the alert offered
+# prefilled only on company pages. One label per section, shared by the menu and the breadcrumbs.
+# 'Branchen' in German as the owner named it (the /bereich/ pages still say 'Bereich': copy pass).
+T["nav_tenders"] = {"de": "Ausschreibungen", "fr": "Appels d’offres", "it": "Bandi", "en": "Tenders"}
+T["nav_alert"] = {"de": "E-Mail-Alarm", "fr": "Alerte e-mail", "it": "Avviso e-mail", "en": "Email alerts"}
+T["nav_companies"] = {"de": "Unternehmen", "fr": "Entreprises", "it": "Imprese", "en": "Companies"}
+T["nav_buyers"] = {"de": "Auftraggeber", "fr": "Adjudicateurs", "it": "Committenti",
+                   "en": "Contracting authorities"}
+T["nav_cantons"] = {"de": "Kantone", "fr": "Cantons", "it": "Cantoni", "en": "Cantons"}
+T["nav_sectors"] = {"de": "Branchen", "fr": "Domaines", "it": "Settori", "en": "Sectors"}
+T["nav_about"] = {"de": "Über das Register", "fr": "À propos", "it": "Informazioni", "en": "About"}
+T["nav_label"] = {"de": "Hauptnavigation", "fr": "Navigation principale", "it": "Navigazione principale",
+                  "en": "Main navigation"}
+T["crumbs_label"] = {"de": "Sie sind hier", "fr": "Fil d’Ariane", "it": "Percorso di navigazione",
+                     "en": "Breadcrumb"}
+T["skip"] = {"de": "Zum Inhalt springen", "fr": "Aller au contenu", "it": "Vai al contenuto",
+             "en": "Skip to main content"}
+# the footer's data line: the date is the newest publication (DATA_DATE). Pages whose content does
+# not change from one day to the next carry it through /stand.js, so they stay byte-identical
+# overnight (git, IndexNow and the sitemap's lastmod read every changed page as news).
+# Italian without a preposition before the date ("del 08.10.2026" needs "dell’8").
+META["stand"] = {"de": "Daten vom {d} · täglich aktualisiert",
+                 "fr": "État des données : {d} · mise à jour quotidienne",
+                 "it": "Stato dei dati: {d} · aggiornamento quotidiano",
+                 "en": "Data as of {d} · updated daily"}
+META["stand_nojs"] = {"de": "Täglich aktualisiert", "fr": "Mise à jour quotidienne",
+                      "it": "Aggiornamento quotidiano", "en": "Updated daily"}
+META["methodik"] = {"de": "Methodik", "fr": "Méthodologie", "it": "Metodologia", "en": "Methodology"}
+
+# The home's two doors: open tenders (with the ones first published on the day of the build) and
+# the company index. {m}: tenders whose first publication (-01) is dated the build day.
+META["door_new"] = {"de": "{m} neu seit gestern", "fr": "{m} nouveaux depuis hier",
+                    "it": "{m} nuovi da ieri", "en": "{m} new since yesterday"}
+META["door_new_one"] = {"de": "1 neu seit gestern", "fr": "1 nouveau depuis hier",
+                        "it": "1 nuovo da ieri", "en": "1 new since yesterday"}
+META["door_open_sub"] = {
+    "de": "Nach Eingabefrist, Kanton und Branche – jede mit dem Link zur amtlichen Publikation.",
+    "fr": "Par délai, par canton et par branche – chacun avec le lien vers la publication officielle.",
+    "it": "Per scadenza, cantone e ramo – ognuno con il link alla pubblicazione ufficiale.",
+    "en": "By deadline, canton and industry – each with a link to the official publication.",
+}
+META["door_companies_h"] = {"de": "Unternehmen finden", "fr": "Trouver une entreprise",
+                            "it": "Trovare un’impresa", "en": "Find a company"}
+META["door_companies_sub"] = {
+    "de": "{n} Unternehmen und die öffentlichen Aufträge, die sie gewonnen haben – von A bis Z.",
+    "fr": "{n} entreprises et les marchés publics qu’elles ont remportés, de A à Z.",
+    "it": "{n} imprese e gli appalti pubblici che hanno vinto, dalla A alla Z.",
+    "en": "{n} companies and the public contracts they have won, from A to Z.",
+}
+# the home's lower half counts awards: the headings say so (the chips read like open tenders)
+IDX["by_canton_awards"] = {"de": "Zuschläge nach Kanton", "fr": "Adjudications par canton",
+                           "it": "Aggiudicazioni per cantone", "en": "Awards by canton"}
+IDX["by_sector_awards"] = {"de": "Zuschläge nach Bereich", "fr": "Adjudications par domaine",
+                           "it": "Aggiudicazioni per settore", "en": "Awards by sector"}
+
+# The hub's table gets a heading of its own (it had none, under the canton list)
+META["open_table_h2"] = {"de": "Offene Ausschreibungen nach Eingabefrist",
+                         "fr": "Appels d’offres en cours par délai",
+                         "it": "Bandi aperti per scadenza", "en": "Open tenders by deadline"}
+# a canton or industry without an open tender keeps its page and its feed, and offers the alert
+META["empty_canton"] = {
+    "de": "Zurzeit ist im Kanton {name} keine Ausschreibung offen.",
+    "fr": "Aucun appel d’offres n’est actuellement en cours dans le canton {of}.",
+    "it": "Al momento nel Canton {name} non ci sono bandi aperti.",
+    "en": "There are no open tenders in the canton of {name} at the moment.",
+}
+META["empty_sector"] = {
+    "de": "Zurzeit ist in der Branche «{name}» keine Ausschreibung offen.",
+    "fr": "Aucun appel d’offres n’est actuellement en cours dans la branche « {name} ».",
+    "it": "Al momento nel ramo «{name}» non ci sono bandi aperti.",
+    "en": "There are no open tenders in the “{name}” industry at the moment.",
+}
+META["empty_buyer"] = {
+    "de": "Zurzeit hat dieser Auftraggeber keine offene Ausschreibung.",
+    "fr": "Cet adjudicateur n’a actuellement aucun appel d’offres en cours.",
+    "it": "Al momento questo committente non ha bandi aperti.",
+    "en": "This contracting authority has no open tenders at the moment.",
+}
+# a tender page past its deadline: the hook above the alert
+META["alert_missed"] = {
+    "de": "Frist verpasst? Die nächsten Ausschreibungen dieser Art erhalten Sie kostenlos per E-Mail.",
+    "fr": "Délai manqué ? Recevez gratuitement par e-mail les prochains appels d’offres de ce type.",
+    "it": "Scadenza mancata? Riceva gratis via e-mail i prossimi bandi di questo tipo.",
+    "en": "Missed the deadline? Get the next tenders like this by email, free.",
+}
+# the open tenders of the division a sector page belongs to
+IDX["open_in_sector"] = {
+    "de": "Offene Ausschreibungen der Branche «{name}»: {k}",
+    "fr": "Appels d’offres en cours dans la branche « {name} » : {k}",
+    "it": "Bandi aperti nel ramo «{name}»: {k}",
+    "en": "Open tenders in the “{name}” industry: {k}",
+}
+
+# The tender page as a bid/no-bid page (audit 13.10.2026, Pacchetto 2 #14)
+IDX["back_canton"] = {
+    "de": "Alle offenen Ausschreibungen im Kanton {name}",
+    "fr": "Tous les appels d’offres en cours dans le canton {of}",
+    "it": "Tutti i bandi aperti nel Canton {name}",
+    "en": "All open tenders in the canton of {name}",
+}
+IDX["ics_link"] = {"de": "Frist in den Kalender", "fr": "Ajouter le délai à l’agenda",
+                   "it": "Aggiungere la scadenza al calendario", "en": "Add the deadline to your calendar"}
+IDX["ics_summary"] = {"de": "Eingabefrist: {title}", "fr": "Délai de remise : {title}",
+                      "it": "Scadenza: {title}", "en": "Submission deadline: {title}"}
+IDX["ics_official"] = {"de": "Amtliche Publikation", "fr": "Publication officielle",
+                       "it": "Pubblicazione ufficiale", "en": "Official publication"}
+IDX["ics_page"] = {"de": "Im Register", "fr": "Dans le registre", "it": "Nel registro", "en": "In the register"}
+IDX["buyer_open_h"] = {"de": "Zurzeit offen", "fr": "Appels d’offres en cours", "it": "Bandi aperti",
+                       "en": "Open tenders"}
+IDX["tender_buyer_open_h"] = {"de": "Zurzeit offen bei diesem Auftraggeber",
+                              "fr": "Autres appels d’offres en cours de cet adjudicateur",
+                              "it": "Altri bandi aperti dello stesso committente",
+                              "en": "Also open from this contracting authority"}
+IDX["tender_buyer_awards_h"] = {"de": "Frühere Zuschläge dieses Auftraggebers",
+                                "fr": "Adjudications précédentes de cet adjudicateur",
+                                "it": "Aggiudicazioni precedenti dello stesso committente",
+                                "en": "Previous awards by this contracting authority"}
+IDX["tender_buyer_awards_all"] = {"de": "Alle {n} dieses Auftraggebers",
+                                  "fr": "Les {n} de cet adjudicateur",
+                                  "it": "Tutte le {n} del committente",
+                                  "en": "All {n} by this contracting authority"}
+IDX["buyer_open_all"] = {"de": "Alle {n} offenen Ausschreibungen dieses Auftraggebers",
+                         "fr": "Les {n} appels d’offres en cours de cet adjudicateur",
+                         "it": "Tutti i {n} bandi aperti del committente",
+                         "en": "All {n} open tenders from this contracting authority"}
+# a long list of open tenders on a buyer page: the first ones, the rest behind a disclosure
+IDX["show_more"] = {"de": "{n} weitere anzeigen", "fr": "Afficher les {n} autres", "it": "Mostrare gli altri {n}",
+                    "en": "Show {n} more"}
+IDX["similar_h"] = {"de": "Ähnliche Zuschläge", "fr": "Adjudications similaires",
+                    "it": "Aggiudicazioni simili", "en": "Similar awards"}
+IDX["similar_note"] = {
+    "de": "Zuschläge der Branche «{sector}» im Kanton {name} mit möglichst ähnlichem CPV-Code; "
+          "die neuesten zuerst.",
+    "fr": "Adjudications de la branche « {sector} » dans le canton {of}, au code CPV le plus proche "
+          "possible ; les plus récentes d’abord.",
+    "it": "Aggiudicazioni del ramo «{sector}» nel Canton {name}, con il codice CPV più simile "
+          "possibile; dalla più recente.",
+    "en": "Awards in the “{sector}” industry in the canton of {name} with the closest CPV codes, "
+          "newest first.",
+}
+# CSV downloads (canton, buyer and company pages): one file per page, its awards newest first
+IDX["csv_link"] = {"de": "Daten als CSV", "fr": "Données en CSV", "it": "Dati in CSV", "en": "Data as CSV"}
+IDX["csv_meta"] = {"de": "{n} Zeilen, {size}", "fr": "{n} lignes, {size}", "it": "{n} righe, {size}",
+                   "en": "{n} rows, {size}"}
+# file names: the URL keeps one German name per language like every other path segment; the
+# download attribute names the saved file in the reader's language
+CSV_STEM = {"de": "zuschlaege", "fr": "adjudications", "it": "aggiudicazioni", "en": "awards"}
+ICS_STEM = {"de": "eingabefrist", "fr": "delai", "it": "scadenza", "en": "deadline"}
+# visually hidden table captions
+IDX["cap_company_awards"] = {"de": "Zuschläge an {name}, neueste zuerst",
+                             "fr": "Adjudications obtenues par {name}, les plus récentes d’abord",
+                             "it": "Aggiudicazioni a {name}, dalla più recente",
+                             "en": "Awards to {name}, newest first"}
+
+# The about and methodology page (/xx/ueber/). Facts only, each checked against the generator:
+# MIN_AWARDS, buyer_map(floor=3), sector_pages(floor=3), EXPIRED_DAYS, load() (abandonments,
+# corrections, deadlines), chf_total(), firm_prices(), the 08:00 release in simap's API terms
+# (aggiorna.embargo_ok) and the commit times of the nightly (mostly 08:40-09:00, 14.10.2026).
+# Blocks: a string is a paragraph, a list a bulleted list. Placeholders are filled by genera.
+UEBER: dict[str, dict] = {
+    "de": {
+        "title": "Über das Register und seine Methodik",
+        "h1": "Über das Register",
+        "lead": "Woher die Daten kommen, wie sie zusammengeführt werden und was sie nicht zeigen.",
+        "sections": [
+            ("register", "Was dieses Register ist", [
+                "Öffentliche Aufträge Schweiz ordnet die Zuschläge und Ausschreibungen, die Bund, Kantone "
+                "und Gemeinden auf simap.ch publizieren, nach Unternehmen, Auftraggebern, Kantonen und "
+                "Branchen. So lässt sich nachlesen, wer welche öffentlichen Aufträge gewonnen hat – eine "
+                "Frage, die simap.ch selbst nicht beantwortet.",
+                "Das Register ist ein privates, unabhängiges Projekt. Es ist keine amtliche Veröffentlichung "
+                "und steht in keiner Verbindung zu simap.ch oder zu einer Behörde. Massgebend sind "
+                "ausschliesslich die Publikationen auf simap.ch; jede Seite verlinkt die amtliche Publikation.",
+            ]),
+            ("quelle", "Quelle und Nutzungsbedingungen", [
+                "Alle Daten stammen aus der Programmierschnittstelle (API) von simap.ch, der amtlichen "
+                "Plattform für das öffentliche Beschaffungswesen der Schweiz. Deren Nutzungsbedingungen "
+                "erlauben die Weiterverwendung, auch zu gewerblichen Zwecken, sofern die Daten inhaltlich "
+                "unverändert, getrennt von eigenen Auswertungen und mit dem vorgeschriebenen Hinweis "
+                "wiedergegeben werden. Dieser Hinweis steht im Fuss jeder Seite; eigene Auswertungen sind "
+                "als solche gekennzeichnet.",
+                "Titel und Beschreibungen erscheinen so, wie sie publiziert wurden, in der Sprache der "
+                "Publikation. Sie werden weder übersetzt noch umformuliert.",
+            ]),
+            ("aktualisierung", "Aktualisierung", [
+                "simap.ch gibt die Publikationen eines Tages ab 8 Uhr zur Weiterverbreitung frei. Das "
+                "Register holt sie jeden Morgen danach ab und ist in der Regel gegen 9 Uhr aktualisiert; "
+                "an einzelnen Tagen dauert es länger. Abgerufen werden jeweils die Zuschläge des laufenden "
+                "und des vorangehenden Monats – dort treffen auch nachträgliche Berichtigungen ein – sowie "
+                "alle offenen Ausschreibungen.",
+                "Das Datum im Fuss jeder Seite («{stand}») ist das Datum der neuesten Publikation im "
+                "Register. Heute: {date}, {awards} Zuschläge und {open} offene Ausschreibungen.",
+            ]),
+            ("abdeckung", "Abdeckung", [
+                "Das Archiv beginnt im {start}.{ramp}",
+                "Erfasst sind die Zuschläge aller Verfahrensarten, soweit sie auf simap.ch publiziert "
+                "werden, sowie alle Ausschreibungen mit noch offener Eingabefrist. Aufträge, die nicht auf "
+                "simap.ch publiziert werden müssen – etwa unterhalb der Schwellenwerte –, fehlen hier wie dort.",
+                "Kantone: Massgebend ist der Ort der Auftragsausführung, wie ihn die Publikation angibt – "
+                "nicht der Sitz des Auftraggebers oder des Unternehmens.",
+            ]),
+            ("methodik", "Wie Unternehmen und Auftraggeber zusammengeführt werden", [
+                "Ein Unternehmen erscheint in den Publikationen nicht immer gleich geschrieben. "
+                "Schreibweisen, die sich nur in Gross- und Kleinschreibung, Umlauten, Akzenten oder "
+                "Satzzeichen unterscheiden («CSD INGENIEURE AG» und «CSD Ingenieure AG», «Bolliger & Co. AG» "
+                "und «Bolliger + Co. AG»), gelten als dasselbe Unternehmen; angezeigt wird die häufigste "
+                "Schreibweise. Unterschiedlich benannte Einheiten, etwa Zweigniederlassungen, bleiben "
+                "getrennt. Ein Abgleich mit dem Handelsregister findet nicht statt.",
+                "Eine eigene Seite erhält ein Unternehmen ab {min_c} Zuschlägen, ein Auftraggeber ab "
+                "{min_b} und ein Bereich (CPV-Code) ab {min_s}. Auftraggeber werden ebenfalls über ihren "
+                "Namen zusammengeführt, unabhängig von Leerzeichen, Bindestrichen, Anführungszeichen und "
+                "Klammern.",
+                "Ein Zuschlag an mehrere Unternehmen erscheint auf der Seite jedes genannten Unternehmens.",
+            ]),
+            ("betraege", "Beträge, Lose und Summen", [
+                "Beträge werden so wiedergegeben, wie sie publiziert wurden. Die Seite eines Zuschlags nennt "
+                "den genauen Betrag; Listen zeigen einen gerundeten Betrag, den genauen beim Darüberfahren "
+                "mit der Maus und für Screenreader.",
+                "Summen enthalten nur Zuschläge in Franken an ein einziges Unternehmen. Bei einem Zuschlag "
+                "an mehrere Unternehmen nennt die Publikation einen Preis je Unternehmen: Diese Preise "
+                "werden einzeln gezeigt, aber weder addiert noch einem Gesamtauftrag zugeschrieben – bei "
+                "Rahmenverträgen steht oft bei jedem Unternehmen dieselbe Obergrenze. Beträge in Euro oder "
+                "anderen Währungen erscheinen mit ihrer Währung und zählen in keiner Summe.",
+                "simap.ch publiziert ein Projekt mit Losen als einen Zuschlag pro Los. Die Seite des "
+                "Projekts listet alle Lose; nennt simap für mehrere Lose desselben Unternehmens denselben "
+                "Projektpreis, zählt er in Summen nur einmal.",
+            ]),
+            ("ausgeschlossen", "Was nicht enthalten ist", [[
+                "Abgebrochene Verfahren: simap.ch publiziert sie im selben Datenstrom wie die Zuschläge; "
+                "hier erscheinen sie nicht als Zuschlag.",
+                "Berichtigungen: Wird eine Ausschreibung oder ein Zuschlag berichtigt, gilt die zuletzt "
+                "publizierte Fassung; frühere Fassungen erscheinen nicht zusätzlich.",
+                "Abgelaufene Ausschreibungen: Nach Ablauf der Eingabefrist bleibt die Seite einer "
+                "Ausschreibung noch {days} Tage abrufbar, gekennzeichnet mit «{expired}». Wird der "
+                "Zuschlag vorher publiziert, erscheint er unter derselben Adresse.",
+                "Ausschreibungen ohne lesbare Eingabefrist werden nicht als offen aufgeführt.",
+            ]]),
+            ("cpv", "Branchen und Bereiche (CPV)", [
+                "Die Einteilung folgt dem CPV, dem EU-weit einheitlichen Vokabular für öffentliche Aufträge. "
+                "Eine Branche umfasst die ersten zwei Ziffern des Codes (z. B. 45, Bauarbeiten), ein Bereich "
+                "den genauen achtstelligen Code (z. B. 45233000). Die Bezeichnungen stammen aus der amtlichen "
+                "Fassung der EU in der jeweiligen Sprache.",
+                "«{matched}» auf den Unternehmensseiten und «{similar}» auf den Ausschreibungsseiten beruhen "
+                "auf den gemeinsamen Ziffern der CPV-Codes: Ein allgemeiner Code wie 45000000 (Bauarbeiten) "
+                "ist keine Kategorie. Für Unternehmen müssen mindestens vier massgebende Ziffern "
+                "übereinstimmen; ähnliche Zuschläge stammen aus derselben Branche und demselben Kanton, die "
+                "mit dem ähnlichsten Code zuerst.",
+            ]),
+            ("daten", "Daten herunterladen und abonnieren", [[
+                "CSV: {csv_pages} bieten ihre Zuschläge als CSV-Datei an – UTF-8 mit BOM, Semikolon als "
+                "Trennzeichen, Beträge mit Punkt als Dezimalzeichen; eine Datei für alle vier "
+                "Sprachversionen, mit englischen Spaltennamen ({cols}) und den Titeln in der Sprache der "
+                "Publikation. Bei Zuschlägen an mehrere Unternehmen bleibt die Spalte «Amount» leer. "
+                "Zellen, die mit =, +, - oder @ beginnen, erhalten ein vorangestelltes Apostroph, damit "
+                "Tabellenprogramme sie nicht als Formel ausführen.",
+                "Kalender: Jede offene Ausschreibung bietet ihre Eingabefrist als Kalenderdatei (.ics) an.",
+                "RSS und E-Mail: Für jeden Kanton und jede Branche gibt es einen RSS-Feed; der E-Mail-Alarm "
+                "schickt neue Ausschreibungen nach Kanton und Branche, kostenlos und ohne Konto.",
+            ]]),
+            ("kontakt", "Kontakt", [
+                "Fehler, Fragen und Hinweise an {mail}. Das Register wird von einer Privatperson in der "
+                "Schweiz betrieben; die Angaben zum Betreiber stehen im Impressum.",
+            ]),
+        ],
+        "csv_pages": "Die Kantons-, Auftraggeber- und Unternehmensseiten",
+        "csv_pages_nocomp": "Die Kantons- und Auftraggeberseiten",
+        "ramp": " Von {a} bis {b} sind die Daten unvollständig: Das Archiv war in seinen ersten Monaten "
+                "noch nicht vollständig; in den Monatsgrafiken sind diese Monate schraffiert. Ab {full} "
+                "ist jeder Monat vollständig erfasst.",
+        "alert_link": "Zum E-Mail-Alarm",
+    },
+    "fr": {
+        "title": "À propos du registre et de sa méthodologie",
+        "h1": "À propos du registre",
+        "lead": "D’où viennent les données, comment elles sont regroupées et ce qu’elles ne montrent pas.",
+        "sections": [
+            ("register", "Ce qu’est ce registre", [
+                "Marchés publics suisses classe par entreprise, par adjudicateur, par canton et par branche "
+                "les adjudications et les appels d’offres que la Confédération, les cantons et les communes "
+                "publient sur simap.ch. On peut ainsi savoir qui a remporté quels marchés publics – une "
+                "question à laquelle simap.ch ne répond pas lui-même.",
+                "Le registre est un projet privé et indépendant. Il ne s’agit pas d’une publication "
+                "officielle, et il n’a aucun lien avec simap.ch ni avec aucune autorité. Seules les "
+                "publications de simap.ch font foi ; chaque page renvoie à la publication officielle.",
+            ]),
+            ("quelle", "Source et conditions d’utilisation", [
+                "Toutes les données proviennent de l’interface de programmation (API) de simap.ch, la "
+                "plateforme officielle des marchés publics en Suisse. Ses conditions d’utilisation autorisent "
+                "la réutilisation, y compris à des fins commerciales, à condition que les données soient "
+                "reproduites sans modification de leur contenu, séparées des analyses propres et "
+                "accompagnées de la mention prescrite. Cette mention figure au bas de chaque page ; les "
+                "analyses propres sont signalées comme telles.",
+                "Les titres et les descriptions apparaissent tels qu’ils ont été publiés, dans la langue de "
+                "la publication. Ils ne sont ni traduits ni reformulés.",
+            ]),
+            ("aktualisierung", "Mise à jour", [
+                "simap.ch libère les publications du jour pour la diffusion à partir de 8 h. Le registre les "
+                "récupère chaque matin après cette heure et il est en général à jour vers 9 h ; certains "
+                "jours, cela prend plus de temps. Sont relevés à chaque fois les adjudications du mois en "
+                "cours et du mois précédent – c’est là qu’arrivent aussi les rectifications – ainsi que tous "
+                "les appels d’offres en cours.",
+                "La date indiquée au bas de chaque page (« {stand} ») est celle de la publication la plus "
+                "récente du registre. Aujourd’hui : {date}, {awards} adjudications et {open} appels "
+                "d’offres en cours.",
+            ]),
+            ("abdeckung", "Couverture", [
+                "L’archive commence en {start}.{ramp}",
+                "Sont repris les adjudications de tous les types de procédure, dans la mesure où elles sont "
+                "publiées sur simap.ch, ainsi que tous les appels d’offres dont le délai de remise court "
+                "encore. Les marchés qui ne doivent pas être publiés sur simap.ch – par exemple en dessous "
+                "des valeurs seuils – manquent ici comme là-bas.",
+                "Cantons : c’est le lieu d’exécution indiqué dans la publication qui compte, et non le siège "
+                "de l’adjudicateur ou de l’entreprise.",
+            ]),
+            ("methodik", "Comment les entreprises et les adjudicateurs sont regroupés", [
+                "Une entreprise n’apparaît pas toujours sous la même graphie dans les publications. Les "
+                "graphies qui ne diffèrent que par les majuscules, les trémas, les accents ou la ponctuation "
+                "(« CSD INGENIEURE AG » et « CSD Ingenieure AG », « Bolliger & Co. AG » et « Bolliger + Co. "
+                "AG ») sont considérées comme une seule entreprise ; la graphie la plus fréquente est "
+                "affichée. Les unités portant des noms différents, comme les succursales, restent "
+                "distinctes. Aucune comparaison avec le registre du commerce n’est effectuée.",
+                "Une entreprise a sa propre page à partir de {min_c} adjudications, un adjudicateur à partir "
+                "de {min_b} et un domaine (code CPV) à partir de {min_s}. Les adjudicateurs sont eux aussi "
+                "regroupés par leur nom, indépendamment des espaces, des traits d’union, des guillemets et "
+                "des parenthèses.",
+                "Une adjudication attribuée à plusieurs entreprises figure sur la page de chacune d’elles.",
+            ]),
+            ("betraege", "Montants, lots et totaux", [
+                "Les montants sont repris tels qu’ils ont été publiés. La page d’une adjudication indique le "
+                "montant exact ; les listes affichent un montant arrondi, et le montant exact au survol de "
+                "la souris ainsi que pour les lecteurs d’écran.",
+                "Les totaux ne comprennent que les adjudications en francs attribuées à une seule "
+                "entreprise. Pour une adjudication à plusieurs entreprises, la publication indique un prix "
+                "par entreprise : ces prix sont affichés séparément, mais ne sont ni additionnés ni "
+                "attribués à un marché global – dans les contrats-cadres, le même plafond figure souvent à "
+                "côté de chaque entreprise. Les montants en euros ou dans d’autres monnaies sont affichés "
+                "avec leur devise et n’entrent dans aucun total.",
+                "simap.ch publie un projet divisé en lots sous la forme d’une adjudication par lot. La page "
+                "du projet liste tous les lots ; lorsque simap indique le même prix de projet pour plusieurs "
+                "lots attribués à la même entreprise, ce prix n’est compté qu’une fois dans les totaux.",
+            ]),
+            ("ausgeschlossen", "Ce qui n’est pas repris", [[
+                "Procédures interrompues : simap.ch les publie dans le même flux que les adjudications ; "
+                "elles ne sont pas présentées ici comme des adjudications.",
+                "Rectifications : lorsqu’un appel d’offres ou une adjudication est rectifié, seule la "
+                "dernière version publiée compte ; les versions antérieures n’apparaissent pas en plus.",
+                "Appels d’offres échus : après l’expiration du délai de remise, la page d’un appel d’offres "
+                "reste consultable pendant {days} jours, avec la mention « {expired} ». Si l’adjudication "
+                "est publiée entre-temps, elle apparaît à la même adresse.",
+                "Les appels d’offres sans délai de remise lisible ne sont pas listés comme étant en cours.",
+            ]]),
+            ("cpv", "Branches et domaines (CPV)", [
+                "La classification suit le CPV, le vocabulaire commun pour les marchés publics de l’UE. Une "
+                "branche correspond aux deux premiers chiffres du code (p. ex. 45, travaux de construction), "
+                "un domaine au code exact à huit chiffres (p. ex. 45233000). Les intitulés proviennent de "
+                "la version officielle de l’UE dans chaque langue.",
+                "Les « {matched} » des pages d’entreprise et les « {similar} » des pages d’appel d’offres "
+                "reposent sur les chiffres communs des codes CPV : un code général comme 45000000 (travaux "
+                "de construction) n’est pas une catégorie. Pour les entreprises, au moins quatre chiffres "
+                "significatifs doivent coïncider ; les adjudications similaires appartiennent à la même "
+                "branche et au même canton, les codes les plus proches d’abord.",
+            ]),
+            ("daten", "Télécharger et s’abonner", [[
+                "CSV : {csv_pages} proposent leurs adjudications sous forme de fichier CSV – UTF-8 avec BOM, "
+                "point-virgule comme séparateur, montants avec un point décimal ; un seul fichier pour les "
+                "quatre versions linguistiques, avec des noms de colonnes en anglais ({cols}) et les titres "
+                "dans la langue de la publication. Pour les adjudications à plusieurs entreprises, la "
+                "colonne « Amount » reste vide. Les cellules qui commencent par =, +, - ou @ sont précédées "
+                "d’une apostrophe, afin que les tableurs ne les exécutent pas comme des formules.",
+                "Agenda : chaque appel d’offres en cours propose son délai de remise sous forme de fichier "
+                "d’agenda (.ics).",
+                "RSS et e-mail : chaque canton et chaque branche a son flux RSS ; l’alerte e-mail envoie "
+                "les nouveaux appels d’offres par canton et par branche, gratuitement et sans compte.",
+            ]]),
+            ("kontakt", "Contact", [
+                "Erreurs, questions et remarques : {mail}. Le registre est exploité par un particulier en "
+                "Suisse ; les informations sur l’exploitant figurent dans les mentions légales.",
+            ]),
+        ],
+        "csv_pages": "les pages des cantons, des adjudicateurs et des entreprises",
+        "csv_pages_nocomp": "les pages des cantons et des adjudicateurs",
+        "ramp": " Entre {a} et {b}, les données sont incomplètes : l’archive n’était pas encore complète "
+                "au cours de ses premiers mois ; ces mois sont hachurés dans les graphiques mensuels. "
+                "Chaque mois est complet à partir de {full}.",
+        "alert_link": "Vers l’alerte e-mail",
+    },
+    "it": {
+        "title": "Informazioni sul registro e sulla metodologia",
+        "h1": "Informazioni sul registro",
+        "lead": "Da dove vengono i dati, come vengono raggruppati e che cosa non mostrano.",
+        "sections": [
+            ("register", "Che cos’è questo registro", [
+                "Appalti pubblici svizzeri ordina per impresa, committente, cantone e ramo le aggiudicazioni "
+                "e i bandi che Confederazione, Cantoni e Comuni pubblicano su simap.ch. Così si può sapere "
+                "chi ha vinto quali appalti pubblici – una domanda a cui simap.ch stesso non risponde.",
+                "Il registro è un progetto privato e indipendente. Non è una pubblicazione ufficiale e non "
+                "ha alcun legame con simap.ch né con alcuna autorità. Fanno fede esclusivamente le "
+                "pubblicazioni su simap.ch; ogni pagina rimanda alla pubblicazione ufficiale.",
+            ]),
+            ("quelle", "Fonte e condizioni d’uso", [
+                "Tutti i dati provengono dall’interfaccia di programmazione (API) di simap.ch, la piattaforma "
+                "ufficiale degli appalti pubblici in Svizzera. Le sue condizioni d’uso consentono il "
+                "riutilizzo, anche a fini commerciali, a condizione che i dati siano riprodotti senza "
+                "modificarne il contenuto, separati dalle analisi proprie e accompagnati dall’avvertenza "
+                "prescritta. L’avvertenza figura in fondo a ogni pagina; le analisi proprie sono indicate "
+                "come tali.",
+                "Titoli e descrizioni compaiono così come sono stati pubblicati, nella lingua della "
+                "pubblicazione. Non vengono né tradotti né riformulati.",
+            ]),
+            ("aktualisierung", "Aggiornamento", [
+                "simap.ch rende disponibili per la diffusione le pubblicazioni del giorno a partire dalle 8. "
+                "Il registro le riprende ogni mattina dopo quell’ora ed è di solito aggiornato verso le 9; in "
+                "alcuni giorni ci vuole più tempo. Ogni volta vengono ripresi le aggiudicazioni del mese "
+                "corrente e del mese precedente – dove arrivano anche le rettifiche – e tutti i bandi aperti.",
+                "La data indicata in fondo a ogni pagina («{stand}») è quella della pubblicazione più recente "
+                "del registro. Oggi: {date}, {awards} aggiudicazioni e {open} bandi aperti.",
+            ]),
+            ("abdeckung", "Copertura", [
+                "L’archivio parte da {start}.{ramp}",
+                "Sono riprese le aggiudicazioni di tutti i tipi di procedura, se pubblicate su simap.ch, e "
+                "tutti i bandi con il termine d’inoltro ancora aperto. Gli appalti che non devono essere "
+                "pubblicati su simap.ch – per esempio sotto i valori soglia – mancano qui come là.",
+                "Cantoni: conta il luogo di esecuzione indicato nella pubblicazione, non la sede del "
+                "committente o dell’impresa.",
+            ]),
+            ("methodik", "Come vengono raggruppati imprese e committenti", [
+                "Nelle pubblicazioni un’impresa non è sempre scritta allo stesso modo. Le grafie che "
+                "differiscono solo per maiuscole, dieresi, accenti o punteggiatura («CSD INGENIEURE AG» e "
+                "«CSD Ingenieure AG», «Bolliger & Co. AG» e «Bolliger + Co. AG») sono considerate la stessa "
+                "impresa; viene mostrata la grafia più frequente. Le unità con nomi diversi, per esempio le "
+                "succursali, restano separate. Non avviene alcun confronto con il registro di commercio.",
+                "Un’impresa ha una pagina propria a partire da {min_c} aggiudicazioni, un committente da "
+                "{min_b} e un settore (codice CPV) da {min_s}. Anche i committenti sono raggruppati per "
+                "nome, indipendentemente da spazi, trattini, virgolette e parentesi.",
+                "Un’aggiudicazione a più imprese compare sulla pagina di ciascuna di esse.",
+            ]),
+            ("betraege", "Importi, lotti e totali", [
+                "Gli importi sono riportati come sono stati pubblicati. La pagina di un’aggiudicazione "
+                "indica l’importo esatto; gli elenchi mostrano un importo arrotondato, quello esatto "
+                "passando il mouse e per i lettori di schermo.",
+                "I totali comprendono solo le aggiudicazioni in franchi a una sola impresa. Per "
+                "un’aggiudicazione a più imprese la pubblicazione indica un prezzo per impresa: questi "
+                "prezzi sono mostrati singolarmente, ma non vengono sommati né attribuiti a un appalto "
+                "complessivo – nei contratti quadro accanto a ogni impresa compare spesso lo stesso tetto "
+                "massimo. Gli importi in euro o in altre valute sono mostrati con la loro valuta e non "
+                "rientrano in alcun totale.",
+                "simap.ch pubblica un progetto suddiviso in lotti come un’aggiudicazione per lotto. La "
+                "pagina del progetto elenca tutti i lotti; se simap indica lo stesso prezzo di progetto per "
+                "più lotti della stessa impresa, nei totali conta una volta sola.",
+            ]),
+            ("ausgeschlossen", "Che cosa non è incluso", [[
+                "Procedure interrotte: simap.ch le pubblica nello stesso flusso delle aggiudicazioni; qui non "
+                "compaiono come aggiudicazioni.",
+                "Rettifiche: se un bando o un’aggiudicazione viene rettificato, vale l’ultima versione "
+                "pubblicata; le versioni precedenti non compaiono in aggiunta.",
+                "Bandi scaduti: dopo la scadenza del termine d’inoltro la pagina di un bando resta "
+                "consultabile per {days} giorni, con la dicitura «{expired}». Se nel frattempo viene "
+                "pubblicata l’aggiudicazione, compare allo stesso indirizzo.",
+                "I bandi senza un termine d’inoltro leggibile non sono elencati come aperti.",
+            ]]),
+            ("cpv", "Rami e settori (CPV)", [
+                "La classificazione segue il CPV, il vocabolario comune europeo per gli appalti pubblici. "
+                "Un ramo corrisponde alle prime due cifre del codice (p. es. 45, lavori di costruzione), un "
+                "settore al codice esatto di otto cifre (p. es. 45233000). Le denominazioni provengono dalla "
+                "versione ufficiale dell’UE in ciascuna lingua.",
+                "I «{matched}» delle pagine delle imprese e le «{similar}» delle pagine dei bandi si basano "
+                "sulle cifre in comune dei codici CPV: un codice generico come 45000000 (lavori di "
+                "costruzione) non è una categoria. Per le imprese devono coincidere almeno quattro cifre "
+                "significative; le aggiudicazioni simili appartengono allo stesso ramo e allo stesso "
+                "cantone, a partire dai codici più vicini.",
+            ]),
+            ("daten", "Scaricare i dati e abbonarsi", [[
+                "CSV: {csv_pages} offrono le loro aggiudicazioni come file CSV – UTF-8 con BOM, punto e "
+                "virgola come separatore, importi con il punto come separatore decimale; un solo file per "
+                "le quattro versioni linguistiche, con i nomi delle colonne in inglese ({cols}) e i titoli "
+                "nella lingua della pubblicazione. Per le aggiudicazioni a più imprese la colonna «Amount» "
+                "resta vuota. Le celle che iniziano con =, +, - o @ sono precedute da un apostrofo, "
+                "affinché i fogli di calcolo non le eseguano come formule.",
+                "Calendario: ogni bando aperto offre la sua scadenza come file di calendario (.ics).",
+                "RSS ed e-mail: ogni cantone e ogni ramo ha il suo feed RSS; l’avviso e-mail invia i nuovi "
+                "bandi per cantone e ramo, gratis e senza account.",
+            ]]),
+            ("kontakt", "Contatto", [
+                "Errori, domande e segnalazioni: {mail}. Il registro è gestito da un privato in Svizzera; "
+                "i dati del gestore si trovano nelle note legali.",
+            ]),
+        ],
+        "csv_pages": "Le pagine dei cantoni, dei committenti e delle imprese",
+        "csv_pages_nocomp": "Le pagine dei cantoni e dei committenti",
+        "ramp": " Da {a} a {b} i dati sono incompleti: nei primi mesi l’archivio non era ancora completo; "
+                "nei grafici mensili questi mesi sono tratteggiati. Da {full} ogni mese è completo.",
+        "alert_link": "All’avviso e-mail",
+    },
+    "en": {
+        "title": "About the register and its methodology",
+        "h1": "About the register",
+        "lead": "Where the data comes from, how it is matched and what it does not show.",
+        "sections": [
+            ("register", "What this register is", [
+                "Swiss Public Contracts arranges the awards and tenders that the Confederation, cantons and "
+                "communes publish on simap.ch by company, contracting authority, canton and industry. That "
+                "makes it possible to see who has won which public contracts – a question simap.ch itself "
+                "does not answer.",
+                "The register is a private, independent project. It is not an official publication and has "
+                "no connection to simap.ch or to any authority. Only the publications on simap.ch are "
+                "authoritative; every page links to the official publication.",
+            ]),
+            ("quelle", "Source and terms of use", [
+                "All data comes from the application programming interface (API) of simap.ch, the official "
+                "platform for public procurement in Switzerland. Its terms of use allow the data to be "
+                "reused, including commercially, provided it is reproduced without changes to its content, "
+                "kept separate from our own analysis and accompanied by the prescribed notice. That notice "
+                "is in the footer of every page; our own analysis is marked as such.",
+                "Titles and descriptions appear as they were published, in the language of the publication. "
+                "They are neither translated nor reworded.",
+            ]),
+            ("aktualisierung", "Updates", [
+                "simap.ch releases each day’s publications for redistribution from 8 am. The register "
+                "fetches them every morning after that and is usually up to date by about 9 am; on some days "
+                "it takes longer. Each run fetches the awards of the current and the previous month – where "
+                "corrections also arrive – and every open tender.",
+                "The date in the footer of every page (“{stand}”) is the date of the newest publication in "
+                "the register. Today: {date}, {awards} awards and {open} open tenders.",
+            ]),
+            ("abdeckung", "Coverage", [
+                "The archive begins in {start}.{ramp}",
+                "The register covers awards from every type of procedure, as far as they are published on "
+                "simap.ch, and every tender whose submission deadline is still open. Contracts that do not "
+                "have to be published on simap.ch – below the thresholds, for example – are missing here "
+                "as they are there.",
+                "Cantons: what counts is the place of performance given in the publication, not the seat "
+                "of the contracting authority or of the company.",
+            ]),
+            ("methodik", "How companies and contracting authorities are matched", [
+                "A company is not always spelled the same way in the publications. Spellings that differ "
+                "only in capitalisation, umlauts, accents or punctuation (“CSD INGENIEURE AG” and “CSD "
+                "Ingenieure AG”, “Bolliger & Co. AG” and “Bolliger + Co. AG”) are treated as one company, "
+                "shown under its most frequent spelling. Units with different names, such as branches, stay "
+                "separate. There is no matching against the commercial register.",
+                "A company gets its own page from {min_c} awards, a contracting authority from {min_b} and "
+                "a sector (CPV code) from {min_s}. Contracting authorities are also matched by name, "
+                "regardless of spaces, hyphens, quotation marks and brackets.",
+                "An award to several companies appears on the page of each of them.",
+            ]),
+            ("betraege", "Amounts, lots and totals", [
+                "Amounts are shown as published. An award’s page gives the exact amount; lists show a "
+                "rounded figure, with the exact amount on hover and for screen readers.",
+                "Totals include only awards in Swiss francs made to a single company. For an award to "
+                "several companies the publication gives a price per company: these prices are shown "
+                "individually, but are never added up or attributed to an overall contract – in framework "
+                "agreements the same ceiling often appears next to every company. Amounts in euros or other "
+                "currencies are shown with their currency and left out of every total.",
+                "simap.ch publishes a project divided into lots as one award per lot. The project’s page "
+                "lists every lot; where simap gives the same project price for several lots won by the same "
+                "company, totals count it once.",
+            ]),
+            ("ausgeschlossen", "What is not included", [[
+                "Cancelled procedures: simap.ch publishes them in the same feed as awards; they are not shown "
+                "here as awards.",
+                "Corrections: when a tender or an award is corrected, the version published last applies; "
+                "earlier versions are not shown in addition.",
+                "Expired tenders: after the submission deadline, a tender’s page stays online for {days} "
+                "days, marked “{expired}”. If the award is published in the meantime, it appears at the "
+                "same address.",
+                "Tenders without a readable submission deadline are not listed as open.",
+            ]]),
+            ("cpv", "Industries and sectors (CPV)", [
+                "The classification follows the CPV, the EU’s Common Procurement Vocabulary. An industry is "
+                "the first two digits of the code (e.g. 45, construction work), a sector the exact "
+                "eight-digit code (e.g. 45233000). The labels come from the EU’s official version in each "
+                "language.",
+                "“{matched}” on company pages and “{similar}” on tender pages are based on the digits that "
+                "CPV codes have in common: a general code such as 45000000 (construction work) is not a "
+                "category. For companies at least four significant digits must match; similar awards are in "
+                "the same industry and the same canton, closest codes first.",
+            ]),
+            ("daten", "Downloads and subscriptions", [[
+                "CSV: {csv_pages} offer their awards as a CSV file – UTF-8 with a BOM, semicolon as the "
+                "separator, amounts with a decimal point; one file for all four language versions, with "
+                "English column names ({cols}) and the titles in the language of the publication. For "
+                "awards to several companies the “Amount” column is left empty. Cells that begin with =, "
+                "+, - or @ get a leading apostrophe, so that spreadsheet programs do not run them as "
+                "formulas.",
+                "Calendar: every open tender offers its submission deadline as a calendar file (.ics).",
+                "RSS and email: every canton and every industry has its own RSS feed; the email alert sends "
+                "new tenders by canton and industry, free and without an account.",
+            ]]),
+            ("kontakt", "Contact", [
+                "Errors, questions and suggestions: {mail}. The register is run by a private individual in "
+                "Switzerland; details of the operator are in the legal notice.",
+            ]),
+        ],
+        "csv_pages": "Canton, contracting authority and company pages",
+        "csv_pages_nocomp": "Canton and contracting authority pages",
+        "ramp": " From {a} to {b} the data is incomplete: the archive was not yet complete in its first "
+                "months, and these months are striped in the monthly charts. Every month from {full} on is "
+                "complete.",
+        "alert_link": "Go to the email alert",
+    },
+}
+
+
 # ---------------------------------------------------------------- typography
 # One rule set per language, applied once at import to the site's own templates and never
 # to simap data. Strings above are written with plain spaces and straight apostrophes;
@@ -2160,6 +2765,12 @@ for _doc in (IMP, PRIV):
         for _f in ("title", "operator_h", "operator_note", "contact_h"):
             _v[_f] = _typo(_v[_f], _l)
         _v["paras"] = [(_typo(h, _l), _typo(t, _l)) for h, t in _v["paras"]]
+for _l, _v in UEBER.items():
+    for _f in ("title", "h1", "lead", "csv_pages", "csv_pages_nocomp", "ramp", "alert_link"):
+        _v[_f] = _typo(_v[_f], _l)
+    _v["sections"] = [(_id, _typo(h, _l), [[_typo(x, _l) for x in blk] if isinstance(blk, list)
+                                           else _typo(blk, _l) for blk in blocks])
+                      for _id, h, blocks in _v["sections"]]
 for _l, _d in SECTOR_WORD.items():
     for _c in list(_d):
         _d[_c] = tuple(_typo(x, _l) for x in _d[_c])
@@ -2189,3 +2800,9 @@ for _tbl in (T, PROSE, META, IDX):
             assert " \u2014 " not in _v, (_k, _l, _v)
             if _l == "fr":
                 assert not _re.search(r" [:;?!]", _v), (_k, _v)
+for _l, _v in UEBER.items():
+    for _id, _h, _blocks in _v["sections"]:
+        for _x in [_h] + [y for b in _blocks for y in (b if isinstance(b, list) else [b])]:
+            assert " — " not in _x, (_id, _l, _x)
+            if _l == "fr":
+                assert not _re.search(r" [:;?!]", _x), (_id, _x)

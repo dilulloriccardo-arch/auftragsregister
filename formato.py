@@ -107,13 +107,24 @@ def _value(v) -> str:
     return f"{_q(v, '0.01'):.2f}"
 
 
+def sr_exact(v, cur: str, shown: str) -> str:
+    """The exact amount for screen readers wherever the visible figure is rounded: the title tooltip
+    is all a mouse user needs, and screen readers do not read it (accessibility audit, 13.10.2026).
+    Nothing when the rounded figure already is the exact one."""
+    ex = exact(v, cur)
+    if not ex or _exact_num(v) == shown:
+        return ""
+    return f'<span class="sr"> ({html.escape(ex)})</span>'
+
+
 def money_data(v, cur: str = "CHF") -> str:
     """A rounded amount in running text or a list (HTML), with the exact figure on hover:
     '<data value="331000000.00" title="331’042’118.20 CHF">331 Mio. CHF</data>'."""
     m = money(v, cur)
     if not m:
         return ""
-    return f'<data value="{_value(v)}" title="{html.escape(exact(v, cur))}">{html.escape(m)}</data>'
+    return (f'<data value="{_value(v)}" title="{html.escape(exact(v, cur))}">{html.escape(m)}'
+            f'{sr_exact(v, cur, amount(v))}</data>')
 
 
 def _exact_num(v) -> str:
@@ -151,7 +162,7 @@ def cell(v, cur: str = "CHF", empty_sr: str = "") -> str:
         return "–" + (f'<span class="sr"> {html.escape(empty_sr)}</span>' if empty_sr else "")
     txt = amount(v) if cur == "CHF" else money(v, cur)
     return (f'<data value="{_value(v)}" title="{html.escape(exact(v, cur))}">'
-            f"{html.escape(txt)}</data>")
+            f"{html.escape(txt)}{sr_exact(v, cur, amount(v))}</data>")
 
 
 def exact_cell(v, cur: str = "CHF", empty_sr: str = "") -> str:
@@ -172,9 +183,18 @@ def tile(v, cur: str = "CHF") -> str:
     if not a:
         return ""
     t = f'<data value="{_value(v)}" title="{html.escape(exact(v, cur))}">'
+    sr = sr_exact(v, cur, a)
     if LANG == "en":
-        return t + f'<small>{cur}{NBSP}</small><span class="n">{html.escape(a)}</span></data>'
-    return t + f'<span class="n">{html.escape(a)}</span> <small>{cur}</small></data>'
+        return t + f'<small>{cur}{NBSP}</small><span class="n">{html.escape(a)}</span>{sr}</data>'
+    return t + f'<span class="n">{html.escape(a)}</span> <small>{cur}</small>{sr}</data>'
+
+
+def size(n: int) -> str:
+    """A file size beside a download link: '312 KB', '1,2 MB'; French '312 ko', '1,2 Mo'."""
+    kb, mb = ("ko", "Mo") if LANG == "fr" else ("KB", "MB")
+    if n >= 999_500:
+        return _dec1(_q(n / 1e6, "0.1")) + NBSP + mb
+    return _group(max(1, int(_q(n / 1e3, "1")))) + NBSP + kb
 
 
 def pct(x: float) -> str:

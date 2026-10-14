@@ -19,7 +19,8 @@ import lingue
 
 CSS = """
 figure .lede{color:var(--muted);font-size:14px;margin:6px 0 0;max-width:70ch}
-figure h3{font-size:17px;margin:0}
+/* a chart's title is a section heading of the page: h2, not h3 under the h1 (14.10.2026) */
+figure h2{font-size:17px;margin:0;letter-spacing:-.02em}
 figure .note{color:var(--muted);font-size:12.5px;margin:12px 0 0;max-width:80ch}
 .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 .mc .unit{font-size:11.5px;color:var(--muted);margin:14px 0 10px}
@@ -165,7 +166,7 @@ def month_columns(series, *, fig_id: str, title: str, takeaway: str, unit_label:
     note = " ".join(n for n in notes if n)
     key = '<i class="key" aria-hidden="true"></i>' if any(vals[k] for k in keys if k in partial) else ""
     return (f'<figure class="mc" aria-labelledby="{fig_id}" aria-describedby="{fig_id}-t">'
-            f'<h3 id="{fig_id}">{_e(title)}</h3>'
+            f'<h2 id="{fig_id}">{_e(title)}</h2>'
             + (f'<p class="lede" id="{fig_id}-t">{_e(takeaway)}</p>' if takeaway else "")
             + f'<p class="unit" aria-hidden="true">{_e(unit_label)}</p>'
             f'<div class="cc{"" if mid else " nomid"}"><div class="yax" aria-hidden="true">{yax}</div>'
@@ -197,7 +198,7 @@ def rank_list(items, *, fig_id: str, title: str | None = None, labelledby: str |
                   f'<span class="val">{_e(vt)}{share}</span>{trk}</li>')
     lab_attr = labelledby or fig_id
     return (f'<figure class="rk" aria-labelledby="{lab_attr}">'
-            + (f'<h3 id="{fig_id}">{_e(title)}</h3>' if title else "")
+            + (f'<h2 id="{fig_id}">{_e(title)}</h2>' if title else "")
             + (f'<p class="lede">{_e(lede)}</p>' if lede else "")
             + f'<ol class="bl{" two" if two_cols else ""}">{"".join(li)}</ol>'
             + (f'<p class="note">{_e(note)}</p>' if note else "") + "</figure>")

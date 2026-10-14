@@ -8,10 +8,14 @@ generator cannot see about itself.
 from __future__ import annotations
 
 import collections
+import csv
 import html as htmlmod
+import io
+import json
 import pathlib
 import re
 import sys
+import urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent
 OUT = ROOT / "docs"
@@ -111,6 +115,194 @@ def _text(row: str) -> str:
     return " ".join(htmlmod.unescape(re.sub(r"<[^>]+>", " ", row)).split())
 
 
+# ------------------------------------------------------------- structure (14.10.2026)
+# The menu, the breadcrumbs, the headings, the prefilled alert links and the files the pages offer
+# (calendar .ics, CSV): each page is read once, in the main loop, and the files after it.
+_CRUMB_LD = re.compile(r'<script type="application/ld\+json">(\{"@context": "https://schema.org", '
+                       r'"@type": "BreadcrumbList".*?)</script>', re.S)
+_CRUMB_NAV = re.compile(r'<nav class="crumbs"[^>]*><ol>(.*?)</ol></nav>', re.S)
+_CRUMB_LI = re.compile(r'<li>(?:<a href="([^"]*)">(.*?)</a>|<span aria-current="page"[^>]*>(.*?)</span>)</li>', re.S)
+_HEADING = re.compile(r"<h([1-6])\b")
+_ALERT = re.compile(r'href="([^"]*/ausschreibungen/abo/\?[^"]*)"')
+_FILE_LINK = re.compile(r'<a [^>]*?href="(/[^"#?]*\.(?:ics|csv))"([^>]*)>')
+_TH_NOSCOPE = re.compile(r"<th(?![^>]*\bscope=)(?=[\s>])")
+_CANTONS = {"AG", "AI", "AR", "BE", "BL", "BS", "FR", "GE", "GL", "GR", "JU", "LU", "NE", "NW", "OW", "SG",
+            "SH", "SO", "SZ", "TG", "TI", "UR", "VD", "VS", "ZG", "ZH"}
+
+
+class Structure:
+    def __init__(self, origin: str, base: str, csv_cols: tuple):
+        self.origin, self.base, self.csv_cols = origin, base, csv_cols
+        self.errs = collections.defaultdict(list)          # kind -> [(page, detail)]
+        self.files = {}                                     # docs path -> (page, link attributes)
+        self.noindex = set()
+        self.ics_pages = 0
+        self.names = {}
+        for l in ("de", "fr", "it", "en"):
+            f = OUT / l / "ausschreibungen" / "abo" / "index.html"
+            m = re.search(r'<script type="application/json" id="abo-names">(.*?)</script>',
+                          f.read_text(encoding="utf-8") if f.exists() else "", re.S)
+            self.names[l] = json.loads(m.group(1)) if m else {"k": {}, "b": {}}
+
+    def err(self, kind: str, here: str, detail: str = "") -> None:
+        self.errs[kind].append((here, detail))
+
+    def page(self, here: str, html: str) -> None:
+        lang = here.strip("/").split("/")[0] if here != "/" else "de"
+        if lang not in self.names:
+            lang = "de"
+        # the menu, the skip link and the landmarks on every page
+        for kind, needle in (("menu", '<nav class="sitenav"'), ("salta al contenuto", 'class="skip" href="#inhalt"'),
+                             ("<main id=inhalt>", '<main id="inhalt">'), ("<header>", '<header class="masthead">'),
+                             ("<footer>", "<footer>"), ("riga dati nel piede", '<p class="stand">')):
+            if needle not in html:
+                self.err(kind, here)
+        nav = re.search(r'<nav class="sitenav"[^>]*>(.*?)</nav>', html, re.S)
+        if nav and nav.group(1).count("aria-current=") > 1:
+            self.err("menu: piu' voci correnti", here)
+        langs = re.search(r'<nav class="langs"[^>]*>(.*?)</nav>', html, re.S)
+        if langs and any("lang=" not in a or "hreflang=" not in a for a in re.findall(r"<a [^>]*>", langs.group(1))):
+            self.err("lingue senza lang/hreflang", here)
+        # breadcrumbs: the visible trail is the BreadcrumbList, item by item
+        ld = _CRUMB_LD.search(html)
+        vis = _CRUMB_NAV.search(html)
+        noindex = re.search(r'<meta name="robots" content="[^"]*noindex', html)
+        if not ld:
+            # a noindex page carries no BreadcrumbList (14.10.2026): its visible trail must be there,
+            # every level but the last a link, the last the page itself
+            if not noindex:
+                self.err("briciole: manca il BreadcrumbList", here)
+            elif here not in ("/",) and not vis:
+                self.err("briciole: mancano quelle visibili", here)
+            elif vis:
+                lis = _CRUMB_LI.findall(vis.group(1))
+                if len(lis) < 2 or any(not h for h, _n, _c in lis[:-1]) or lis[-1][0]:
+                    self.err("briciole: forma sbagliata", here)
+        else:
+            items = [(x["name"], x["item"]) for x in json.loads(ld.group(1))["itemListElement"]]
+            if len(items) == 1:
+                if vis:
+                    self.err("briciole visibili sulla home", here)
+            elif not vis:
+                self.err("briciole: mancano quelle visibili", here)
+            else:
+                shown = []
+                for href, name, cur in _CRUMB_LI.findall(vis.group(1)):
+                    shown.append((htmlmod.unescape(name or cur), href))
+                if len(shown) != len(items):
+                    self.err("briciole: numero di livelli diverso", here, f"{len(shown)} / {len(items)}")
+                else:
+                    for (vn, vh), (ln, lu) in zip(shown, items):
+                        if vn != ln:
+                            self.err("briciole: nome diverso", here, f"{vn!r} / {ln!r}")
+                            break
+                        if vh and self.origin + (vh[len(self.base):] if self.base and vh.startswith(self.base) else vh) != lu:
+                            self.err("briciole: link diverso", here, f"{vh} / {lu}")
+                            break
+                    if shown[-1][1]:
+                        self.err("briciole: l'ultima e' un link", here)
+        # headings: one h1, first; never a level skipped going down
+        levels = [int(x) for x in _HEADING.findall(html)]
+        if not levels or levels[0] != 1 or levels.count(1) != 1:
+            self.err("titoli: h1 mancante, doppio o non primo", here, str(levels[:6]))
+        else:
+            for a, b in zip(levels, levels[1:]):
+                if b > a + 1:
+                    self.err("titoli: salto di livello", here, f"h{a} -> h{b}")
+                    break
+        # tables: a caption each, and every header cell with its scope
+        if html.count("<table") != html.count("<caption"):
+            self.err("tabelle senza didascalia", here)
+        if _TH_NOSCOPE.search(html):
+            self.err("celle d'intestazione senza scope", here)
+        # the prefilled alert links: only canton codes and CPV divisions the form can name
+        for href in _ALERT.findall(html):
+            q = urllib.parse.parse_qs(urllib.parse.urlsplit(htmlmod.unescape(href)).query)
+            bad = set(q) - {"k", "b"}
+            ks = [v for x in q.get("k", []) for v in x.split(",")]
+            bs = [v for x in q.get("b", []) for v in x.split(",")]
+            if (bad or len(ks) > 5 or len(bs) > 5 or any(k not in _CANTONS for k in ks)
+                    or any(not re.fullmatch(r"\d{2}", v) or v not in self.names[lang]["b"] for v in bs)):
+                self.err("avviso precompilato non valido", here, href)
+        parts = here.strip("/").split("/")
+        want = None
+        if len(parts) == 3 and parts[1] == "ausschreibungen" and parts[2] in _CANTONS:
+            want = ("k", parts[2])
+        elif len(parts) == 4 and parts[1:3] == ["ausschreibungen", "bereich"]:
+            want = ("b", parts[3]) if parts[3] in self.names[lang]["b"] else None
+        elif len(parts) == 3 and parts[1] == "kanton":
+            want = ("k", parts[2])
+        elif len(parts) == 3 and parts[1] == "bereich" and parts[2][:2] in self.names[lang]["b"]:
+            want = ("b", parts[2][:2])
+        if want:
+            ok = any(want[1] in urllib.parse.parse_qs(urllib.parse.urlsplit(htmlmod.unescape(h)).query).get(want[0], [])
+                     for h in _ALERT.findall(html))
+            if not ok:
+                self.err("avviso: manca il precompilato della pagina", here, f"{want[0]}={want[1]}")
+        elif len(parts) == 3 and parts[1] in ("auftraggeber", "auftrag") and "/ausschreibungen/abo/" not in html:
+            self.err("avviso: manca", here)
+        # an open tender offers its deadline as a calendar file
+        if '<div class="fig wide" data-deadline="' in html:
+            self.ics_pages += 1
+            if "/frist.ics" not in html:
+                self.err("bando aperto senza .ics", here)
+        for href, attrs in _FILE_LINK.findall(html):
+            path = href[len(self.base):] if self.base and href.startswith(self.base) else href
+            self.files[path] = (here, attrs)
+        if re.search(r'<meta name="robots" content="[^"]*noindex', html):
+            self.noindex.add(here)
+
+    def check_files(self) -> None:
+        for path, (here, attrs) in self.files.items():
+            f = OUT / path.lstrip("/")
+            if not f.is_file():
+                self.err("file mancante", here, path)
+                continue
+            raw = f.read_bytes()
+            if path.endswith(".ics"):
+                txt = raw.decode("utf-8")
+                lines = txt.split("\r\n")
+                if (not txt.startswith("BEGIN:VCALENDAR\r\n") or not txt.endswith("END:VCALENDAR\r\n")
+                        or "\n" in txt.replace("\r\n", "")
+                        or any(len(x.encode("utf-8")) > 75 for x in lines)
+                        or not all(k in txt for k in ("BEGIN:VEVENT", "\r\nUID:", "\r\nDTSTAMP:",
+                                                      "\r\nDTSTART", "\r\nSUMMARY:", "END:VEVENT"))):
+                    self.err(".ics non valido", here, path)
+            else:
+                if not raw.startswith(b"\xef\xbb\xbf"):
+                    self.err("CSV senza BOM", here, path)
+                    continue
+                rows = list(csv.reader(io.StringIO(raw[3:].decode("utf-8"), newline=""), delimiter=";"))
+                head = tuple(rows[0]) if rows else ()
+                if head != tuple(self.csv_cols):
+                    self.err("CSV: intestazione sbagliata", here, path)
+                elif any(len(r) != len(head) for r in rows[1:]):
+                    self.err("CSV: righe con colonne diverse", here, path)
+                m = re.search(r'data-rows="(\d+)"', attrs)
+                if m and int(m.group(1)) != len(rows) - 1:
+                    self.err("CSV: numero di righe diverso dal link", here, f"{path} {len(rows) - 1}/{m.group(1)}")
+        n_ics = sum(1 for p in self.files if p.endswith(".ics"))
+        if n_ics != self.ics_pages:
+            self.err(".ics: file e bandi aperti non coincidono", "", f"{n_ics} / {self.ics_pages}")
+        if not (OUT / "stand.js").is_file():
+            self.err("stand.js mancante", "/")
+        for sm in OUT.glob("sitemap-*.xml"):
+            origin = self.origin
+            for u in re.findall(r"<loc>([^<]+)</loc>", sm.read_text(errors="replace")):
+                rest = u[len(origin):] or "/"
+                if rest in self.noindex:
+                    self.err("sitemap con pagine noindex", sm.name, rest)
+
+    def report(self) -> int:
+        n = sum(len(v) for v in self.errs.values())
+        print(f"  struttura (menu, briciole, titoli, avvisi, .ics, CSV)  {n} problemi"
+              f" · {sum(1 for p in self.files if p.endswith('.ics'))} .ics"
+              f" · {sum(1 for p in self.files if p.endswith('.csv'))} CSV")
+        for kind, v in sorted(self.errs.items(), key=lambda kv: -len(kv[1])):
+            print(f"    {len(v):>6}  {kind}" + (f"  es. {v[0][0]} {v[0][1]}"[:200] if v else ""))
+        return n
+
+
 def main() -> int:
     def url_of(f: pathlib.Path) -> str:
         rel = f.relative_to(OUT).parent.as_posix()
@@ -134,11 +326,13 @@ def main() -> int:
     anchors_at: dict = {}                 # award page -> the line ids it carries
     listed: list = []                     # (page, project id) of every row in a tender list
     closed: set = set()                   # project ids whose page says the deadline has passed
+    st = Structure(SITE + BASE, BASE, G.CSV_COLS)
 
     for f in OUT.rglob("index.html"):
         html = f.read_text(encoding="utf-8")
         here = url_of(f)
         counts["pagine"] += 1
+        st.page(here, html)
 
         t = re.search(r"<title>(.*?)</title>", html, re.S)
         # measure what a reader sees: an apostrophe is one character, not the six
@@ -181,6 +375,11 @@ def main() -> int:
             elif BASE and href == BASE:
                 href = "/"
             if href.startswith(("/style.css", "/sitemap.xml", "/robots.txt", "/fonts/")):
+                continue
+            if re.search(r"\.(?:ics|csv|xml|js|svg)$", href):    # a file, not a page (14.10.2026)
+                if not (OUT / href.lstrip("/")).is_file():
+                    broken[href] += 1
+                    counts["link rotti"] += 1
                 continue
             target = href if href.endswith("/") else href + "/"
             if target not in pages:
@@ -262,9 +461,20 @@ def main() -> int:
                 href = href[len(BASE):]
             if href.startswith(("/style.css", "/fonts/")):
                 continue
+            if re.search(r"\.(?:ics|csv|xml|js|svg)$", href):
+                if not (OUT / href.lstrip("/")).is_file():
+                    nf_bad.append(href)
+                continue
             if (href if href.endswith("/") else href + "/") not in pages:
                 nf_bad.append(href)
+    if nf.exists():
+        nft = nf.read_text(encoding="utf-8")
+        for needle in ('<nav class="sitenav', 'class="skip" href="#inhalt"', '<main id="inhalt">', "<header"):
+            if needle not in nft:
+                nf_bad.append(f"manca {needle}")
     print(f"  pagina 404              {'ok' if not nf_bad else 'link rotti: ' + ', '.join(nf_bad[:4])}")
+    st.check_files()
+    n_struct = st.report()
     print(f"  righe identiche         {len(twin_rows)} pagine")
     for h, k in twin_rows[:4]:
         print(f"    {h}  «{k}»")
@@ -283,7 +493,7 @@ def main() -> int:
         for h, n in long_titles[:5]:
             print(f"    {n} char  {h}")
     return 1 if (broken or empty_titles or no_desc or abs_errs or same_tender or twin_rows
-                 or bad_sums or single_amount or lost or stale or nf_bad) else 0
+                 or bad_sums or single_amount or lost or stale or nf_bad or n_struct) else 0
 
 
 if __name__ == "__main__":
