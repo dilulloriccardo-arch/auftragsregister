@@ -97,7 +97,7 @@ def peak_months(series, partial) -> list[str]:
 
 
 def month_columns(series, *, fig_id: str, title: str, takeaway: str, unit_label: str,
-                  units: tuple[str, str], partial: set, notes: list[str]) -> str:
+                  units: tuple[str, str], partial: set, notes: list[str], src: str = "") -> str:
     """series: [(YYYY-MM, count)] consecutive months, zeros filled; partial: months drawn striped.
     The caller has already applied the minimum-data rule. The note opens with a striped key
     only when a striped column is actually drawn (a partial month with at least one award)."""
@@ -137,7 +137,8 @@ def month_columns(series, *, fig_id: str, title: str, takeaway: str, unit_label:
         b = f'<b aria-hidden="true">{_e(formato.count(v))}</b>' if k in lab and v else ""
         rows.append(f'<tr{f" class={chr(34)}{cls}{chr(34)}" if cls else ""}>'
                     f'<th scope="row" class="sr">{_e(formato.month(k, full=True))}</th>'
-                    f'<td title="{_e(tip)}"><span style="height:{100 * v / ymax:.1f}%">{b}</span>'
+                    # a month without awards draws no column (tr.zero hides it): no height to state
+                    f'<td title="{_e(tip)}"><span{f" style={chr(34)}height:{100 * v / ymax:.1f}%{chr(34)}" if v else ""}>{b}</span>'
                     f'<em class="sr">{_e(formato.count(v))} {_e(unit)}</em></td></tr>')
     # x axis: slot 0 always names its month AND year ('Okt. 2024'): an axis opening on a bare
     # "Okt." left the reader guessing the year (80 charts per language), and a bare "2024"
@@ -173,15 +174,15 @@ def month_columns(series, *, fig_id: str, title: str, takeaway: str, unit_label:
             f'<div class="cc{"" if mid else " nomid"}"><div class="yax" aria-hidden="true">{yax}</div>'
             f'<table><caption class="sr">{_e(title)}</caption><tbody>{"".join(rows)}</tbody></table>'
             f'<div class="xax" aria-hidden="true">{"".join(xs)}</div></div>'
-            + (f'<p class="note">{key}{_e(note)}</p>' if note else "") + "</figure>")
+            + (f'<p class="note">{key}{_e(note)}</p>' if note else "") + src + "</figure>")
 
 
 def rank_list(items, *, fig_id: str, title: str | None = None, labelledby: str | None = None,
               lede: str = "", other=None, total: int | None = None, two_cols: bool = False,
-              note: str = "") -> str:
+              note: str = "", src: str = "") -> str:
     """items: [(label, href or None, value, value_text)] in display order; other: same shape
     or None (muted, no bar). total set -> each row shows its share. Bars scale to the largest
-    item; fewer than 3 items -> no bars."""
+    item; fewer than 3 items -> no bars. src: the chart's source line (HTML, step 3a)."""
     mx = max((v for _, _, v, _ in items), default=0) or 1
     bars = len(items) >= 3
     li = []
@@ -202,4 +203,4 @@ def rank_list(items, *, fig_id: str, title: str | None = None, labelledby: str |
             + (f'<h2 id="{fig_id}">{_e(title)}</h2>' if title else "")
             + (f'<p class="lede">{_e(lede)}</p>' if lede else "")
             + f'<ol class="bl{" two" if two_cols else ""}">{"".join(li)}</ol>'
-            + (f'<p class="note">{_e(note)}</p>' if note else "") + "</figure>")
+            + (f'<p class="note">{_e(note)}</p>' if note else "") + src + "</figure>")

@@ -76,6 +76,131 @@ _LISTS = re.compile(r'<tbody>.*?</tbody>|<ul class="plain[^"]*"[^>]*>.*?</ul>', 
 _ROWS = re.compile(r'<tr\b.*?</tr>|<li\b.*?</li>', re.S)
 
 
+# ------------------------------------------------------------- step 3a (14.10.2026)
+# Restated here rather than imported from genera: a check that reads the generator's own constant
+# could not catch it changing.
+RATE_FLOOR = 1000          # an award under CHF 1'000 is a unit rate: in no sum, no median
+SIMAP_TERMS = "https://www.simap.ch/de/about/legal"
+N_DIVISIONS = 45
+_TOTAL = re.compile(r'<data value="(\d+)" id="total">')
+_SRN = re.compile(r'<em class="sr">([\d’\u202f,\u00a0 ]+?)\s+\D')
+
+
+def sum_ok(got: float, want: float) -> bool:
+    """A page's CHF total equals the one recomputed from the records (expected_sums: one firm, francs,
+    no unit rate): a total that counts a rate, a foreign amount or a joint award fails."""
+    return abs(got - round(want, 2)) <= 0.05
+
+
+def total_of(html: str):
+    """The awards total a home, a canton page or the about page states (<data id="total">), or None."""
+    m = _TOTAL.search(html)
+    return int(m.group(1)) if m else None
+
+
+def chart_sum(html: str):
+    """The sum of the first monthly chart's columns (each says '781 Zuschläge' to screen readers), or
+    None when the page draws no chart."""
+    m = re.search(r'<figure class="mc"[^>]*>(.*?)</figure>', html, re.S)
+    if not m or "<table" not in m.group(1):
+        return None
+    return sum(int(re.sub(r"\D", "", x)) for x in _SRN.findall(m.group(1)))
+
+
+def nocant_of(html: str) -> int:
+    """The awards without a canton the canton index lists (0 when it has no such section)."""
+    m = re.search(r'<div class="sec" id="ohne-kanton"><div class="runhead"><h2>[^<]*</h2><span>([^<]*)</span>', html)
+    return int(re.sub(r"\D", "", m.group(1))) if m else 0
+
+
+def reconcile_totals(home: dict, about: dict, cantons: dict, nocant: dict, csv_rows: dict, nocant_csv: int,
+                     chart: dict, canton_chart: dict) -> list:
+    """The national total is the same everywhere (step 3a: the home said 18'552, the cantons and their
+    CSVs 18'443): per language, the home's and the about page's figure, the sum of the 26 canton pages
+    plus the awards without a canton, the home's monthly chart; and, for the files the four languages
+    share, the rows of the canton CSVs plus the one without a canton. Each canton page's own chart and
+    CSV agree with its figure."""
+    errs = []
+    for lang, total in sorted(home.items()):
+        if total is None:
+            errs.append(f"{lang}: la home non dichiara il totale")
+            continue
+        if about.get(lang) != total:
+            errs.append(f"{lang}: Über {about.get(lang)} / home {total}")
+        sc = sum(v for v in cantons.get(lang, {}).values() if v) + nocant.get(lang, 0)
+        if sc != total:
+            errs.append(f"{lang}: cantoni + senza cantone {sc} / home {total}")
+        if chart.get(lang) is not None and chart[lang] != total:
+            errs.append(f"{lang}: grafico mensile {chart[lang]} / home {total}")
+        sv = sum(csv_rows.values()) + nocant_csv
+        if sv != total:
+            errs.append(f"{lang}: righe CSV dei cantoni + senza cantone {sv} / home {total}")
+        for code, n in sorted(cantons.get(lang, {}).items()):
+            if csv_rows.get(code) is not None and csv_rows[code] != n:
+                errs.append(f"{lang}/kanton/{code}: CSV {csv_rows[code]} / pagina {n}")
+            c = canton_chart.get(lang, {}).get(code)
+            if c is not None and c != n:
+                errs.append(f"{lang}/kanton/{code}: grafico {c} / pagina {n}")
+    return errs
+
+
+def company_buyer_errors(html: str, expected: int):
+    """None when a company page lists every one of its contracting authorities (step 3a: 'Auftraggeber 71'
+    showed 12), else 'shown / expected'."""
+    m = re.search(r'<div class="sec" id="auftraggeber">.*?<ul class="plain">(.*?)</ul>', html, re.S)
+    n = len(re.findall(r"<li\b", m.group(1))) if m else 0
+    return None if n == expected else f"{n} / {expected}"
+
+
+def form_branch_errors(html: str, divisions) -> list:
+    """The alert form offers every Branche once (step 3a: 41 of 45; 14, 37, 73, 76 only by prefill)."""
+    vals = re.findall(r'<input type="checkbox" name="b" value="(\d{2})"', html)
+    errs = []
+    if len(vals) != len(set(vals)):
+        errs.append("branche doppie")
+    miss, extra = sorted(set(divisions) - set(vals)), sorted(set(vals) - set(divisions))
+    if miss:
+        errs.append(f"mancano {', '.join(miss)}")
+    if extra:
+        errs.append(f"in piu' {', '.join(extra)}")
+    if len(set(vals)) != N_DIVISIONS:
+        errs.append(f"{len(set(vals))} branche invece di {N_DIVISIONS}")
+    return errs
+
+
+def atom_errors(xml_text: str) -> list:
+    """An Atom feed RFC 4287 accepts: well-formed, a feed with id, title, updated and an author (none
+    of the 288 had one; step 3a), each entry with id, title, updated and a link."""
+    import xml.etree.ElementTree as ET
+    A = "{http://www.w3.org/2005/Atom}"
+    try:
+        root = ET.fromstring(xml_text.encode("utf-8"))
+    except ET.ParseError as ex:
+        return [f"XML: {ex}"]
+    if root.tag != A + "feed":
+        return ["non e' un feed Atom"]
+    errs = [f"feed senza <{x}>" for x in ("id", "title", "updated") if root.find(A + x) is None]
+    if root.find(f"{A}author/{A}name") is None:
+        errs.append("feed senza <author><name>")
+    for ent in root.findall(A + "entry"):
+        miss = [x for x in ("id", "title", "updated", "link") if ent.find(A + x) is None]
+        if miss:
+            errs.append(f"voce senza {', '.join(miss)}")
+            break
+    return errs
+
+
+def jsonld_errors(html: str) -> list:
+    """Every JSON-LD block of a page parses."""
+    out = []
+    for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', html, re.S):
+        try:
+            json.loads(m.group(1))
+        except ValueError as ex:
+            out.append(str(ex)[:80])
+    return out
+
+
 def expected_sums(G, awards: list) -> dict:
     """'<lang>/<section>/<key>/' (and '<lang>/' for the home) -> the CHF sum the money tile of that
     home, canton, buyer or company page must state: the francs published for awards that name ONE
@@ -87,7 +212,9 @@ def expected_sums(G, awards: list) -> dict:
             p = a.get("winnerPrice")
             if (len(G.winners(a)) == 1 and isinstance(p, (int, float)) and not isinstance(p, bool) and p
                     and not a.get("_price_repeat")
-                    and (a.get("winnerCurrency") or "CHF").strip().upper() == "CHF"):
+                    and (a.get("winnerCurrency") or "CHF").strip().upper() == "CHF"
+                    # step 3a: an amount under CHF 1'000 is a unit rate and in no sum
+                    and p >= RATE_FLOOR):
                 out += p
         return out
     groups = collections.defaultdict(list)
@@ -131,8 +258,9 @@ _CANTONS = {"AG", "AI", "AR", "BE", "BL", "BS", "FR", "GE", "GL", "GR", "JU", "L
 
 
 class Structure:
-    def __init__(self, origin: str, base: str, csv_cols: tuple):
+    def __init__(self, origin: str, base: str, csv_cols: tuple, agg: dict | None = None):
         self.origin, self.base, self.csv_cols = origin, base, csv_cols
+        self.agg = agg or {}
         self.errs = collections.defaultdict(list)          # kind -> [(page, detail)]
         self.files = {}                                     # docs path -> (page, link attributes)
         self.noindex = set()
@@ -167,10 +295,15 @@ class Structure:
         ld = _CRUMB_LD.search(html)
         vis = _CRUMB_NAV.search(html)
         noindex = re.search(r'<meta name="robots" content="[^"]*noindex', html)
+        home = here in ("/", "/de/", "/fr/", "/it/", "/en/")
         if not ld:
             # a noindex page carries no BreadcrumbList (14.10.2026): its visible trail must be there,
-            # every level but the last a link, the last the page itself
-            if not noindex:
+            # every level but the last a link, the last the page itself; the home carries none at all
+            # (a one-item trail, step 3a)
+            if home:
+                if vis:
+                    self.err("briciole visibili sulla home", here)
+            elif not noindex:
                 self.err("briciole: manca il BreadcrumbList", here)
             elif here not in ("/",) and not vis:
                 self.err("briciole: mancano quelle visibili", here)
@@ -234,6 +367,8 @@ class Structure:
             want = ("k", parts[2])
         elif len(parts) == 3 and parts[1] == "bereich" and parts[2][:2] in self.names[lang]["b"]:
             want = ("b", parts[2][:2])
+        elif len(parts) == 3 and parts[1] == "branche" and parts[2] in self.names[lang]["b"]:
+            want = ("b", parts[2])
         if want:
             ok = any(want[1] in urllib.parse.parse_qs(urllib.parse.urlsplit(htmlmod.unescape(h)).query).get(want[0], [])
                      for h in _ALERT.findall(html))
@@ -274,7 +409,7 @@ class Structure:
                     continue
                 rows = list(csv.reader(io.StringIO(raw[3:].decode("utf-8"), newline=""), delimiter=";"))
                 head = tuple(rows[0]) if rows else ()
-                if head != tuple(self.csv_cols):
+                if head != tuple(self.agg.get(path, self.csv_cols)):
                     self.err("CSV: intestazione sbagliata", here, path)
                 elif any(len(r) != len(head) for r in rows[1:]):
                     self.err("CSV: righe con colonne diverse", here, path)
@@ -427,6 +562,47 @@ _UNIT_RE = {"k": re.compile(r"(?:< )?\d{1,3}(?:[’ ,]\d{3})*"),
 _SR = re.compile(r'<span class="(?:sr|sub[^"]*)">.*?</span>', re.S)
 
 
+# a currency other than the franc, by its ISO code (the data has EUR and USD)
+_FX = re.compile(r"\b(?:EUR|USD|GBP|JPY|CNY|SEK|NOK|DKK|PLN|CZK|HUF|CAD|AUD|RUB|INR|TRY)\b")
+
+
+def money_column_errors(html: str, units: dict) -> tuple[int, list]:
+    """(money columns seen, [(kind, detail)]): every money column (th class amt) states its unit in its
+    header, every figure under it is in that unit, and no amount in another currency stands in a CHF
+    column at all — not even with its code (step 3a, 14.10.2026: 1'436 EUR cells sat under 'Betrag
+    (Tsd. CHF)'); such an amount belongs in the row's title cell."""
+    n, errs = 0, []
+    for t in re.finditer(r"<table\b[^>]*>(.*?)</table>", html, re.S):
+        body = t.group(1)
+        head = re.search(r"<thead>(.*?)</thead>", body, re.S)
+        if not head or 'class="r amt"' not in head.group(1):
+            continue
+        cells = re.findall(r"<t[hd]\b([^>]*)>(.*?)</t[hd]>", head.group(1), re.S)
+        idx = next(i for i, (attrs, _x) in enumerate(cells) if "amt" in attrs)
+        label = htmlmod.unescape(re.sub(r"<[^>]+>", "", cells[idx][1]))
+        unit = next((u for txt, u in units.items() if f"({txt})" in label), None)
+        n += 1
+        if not unit:
+            errs.append(("colonna importi: unità mancante nell'intestazione", label))
+            continue
+        tb = re.search(r"<tbody>(.*?)</tbody>", body, re.S)
+        for row in re.findall(r"<tr\b[^>]*>(.*?)</tr>", tb.group(1) if tb else "", re.S):
+            tds = re.findall(r"<td\b[^>]*>(.*?)</td>", row, re.S)
+            if len(tds) <= idx:
+                continue
+            whole = htmlmod.unescape(re.sub(r"<[^>]+>", " ", tds[idx]))
+            if _FX.search(whole):
+                errs.append(("colonna importi CHF con una valuta estera", f"{label}: «{' '.join(whole.split())}»"))
+                break
+            txt = htmlmod.unescape(re.sub(r"<[^>]+>", "", _SR.sub("", tds[idx]))).strip()
+            if txt in ("–", ""):
+                continue          # not published, or not in francs (the dash's hidden text says why)
+            if not _UNIT_RE[unit].fullmatch(txt):
+                errs.append(("colonna importi: cifra fuori dall'unità della colonna", f"{label}: «{txt}»"))
+                break
+    return n, errs
+
+
 class Design:
     """What every page's head and money columns must say (14.10.2026)."""
 
@@ -443,30 +619,10 @@ class Design:
         self.errs[kind].append((here, detail))
 
     def money_columns(self, here: str, html: str) -> None:
-        for t in re.finditer(r"<table\b[^>]*>(.*?)</table>", html, re.S):
-            body = t.group(1)
-            head = re.search(r"<thead>(.*?)</thead>", body, re.S)
-            if not head or 'class="r amt"' not in head.group(1):
-                continue
-            cells = re.findall(r"<t[hd]\b([^>]*)>(.*?)</t[hd]>", head.group(1), re.S)
-            idx = next(i for i, (attrs, _x) in enumerate(cells) if "amt" in attrs)
-            label = htmlmod.unescape(re.sub(r"<[^>]+>", "", cells[idx][1]))
-            unit = next((u for txt, u in self.units.items() if f"({txt})" in label), None)
-            self.columns += 1
-            if not unit:
-                self.err("colonna importi: unità mancante nell'intestazione", here, label)
-                continue
-            for row in re.findall(r"<tr\b[^>]*>(.*?)</tr>", re.search(r"<tbody>(.*?)</tbody>", body, re.S).group(1)
-                                  if "<tbody>" in body else "", re.S):
-                tds = re.findall(r"<td\b[^>]*>(.*?)</td>", row, re.S)
-                if len(tds) <= idx:
-                    continue
-                txt = htmlmod.unescape(re.sub(r"<[^>]+>", "", _SR.sub("", tds[idx]))).strip()
-                if txt in ("–", "") or re.search(r"\b(?!CHF)[A-Z]{3}\b", txt):
-                    continue          # not published; or a foreign currency, which names its own unit
-                if not _UNIT_RE[unit].fullmatch(txt):
-                    self.err("colonna importi: cifra fuori dall'unità della colonna", here, f"{label}: «{txt}»")
-                    break
+        n, errs = money_column_errors(html, self.units)
+        self.columns += n
+        for kind, detail in errs:
+            self.err(kind, here, detail)
 
     def head(self, here: str, html: str, open_tender: bool) -> None:
         headpart = html.split("</head>", 1)[0]
@@ -479,8 +635,8 @@ class Design:
                 continue
             graph = data.get("@graph", [data]) if isinstance(data, dict) else []
             for x in graph:
-                if x.get("@type") == "Dataset" and "license" in x:
-                    self.err("Dataset con licenza (i dati sono di simap)", here)
+                if x.get("@type") == "Dataset" and (x.get("license") != SIMAP_TERMS or not x.get("@id")):
+                    self.err("Dataset senza licenza (condizioni simap) o senza @id", here)
                 if x.get("@type") == "Organization" and "address" in x:
                     self.err("Organization con indirizzo postale", here)
         parts = here.strip("/").split("/")
@@ -574,7 +730,16 @@ def main() -> int:
     anchors_at: dict = {}                 # award page -> the line ids it carries
     listed: list = []                     # (page, project id) of every row in a tender list
     closed: set = set()                   # project ids whose page says the deadline has passed
-    st = Structure(SITE + BASE, BASE, G.CSV_COLS)
+    st = Structure(SITE + BASE, BASE, G.CSV_COLS, getattr(G, "AGG_CSV", {}))
+    # step 3a: what the totals, the company pages and the alert form must say, from the data
+    home_t, about_t, cant_t, nocant_t, chart_t, cchart_t = {}, {}, collections.defaultdict(dict), {}, {}, \
+        collections.defaultdict(dict)
+    want_buyers = collections.defaultdict(set)
+    for a in awards:
+        if a.get("buyerName"):
+            for w in G.winners(a):
+                want_buyers[G.slug(w)].add(G.norm_buyer(a["buyerName"]))
+    bad_buyers, bad_form, bad_ld = [], [], []
     units = {lingue.t(f"unit_{u}", l): u for u in ("k", "m", "chf") for l in ("de", "fr", "it", "en")}
     ds = Design(SITE + BASE, BASE, units)
 
@@ -585,6 +750,22 @@ def main() -> int:
         st.page(here, html)
         ds.money_columns(here, html)
         ds.head(here, html, '<div class="fig wide" data-deadline="' in html)
+        # step 3a: the totals, every buyer of a company, the 45 Branchen of the form
+        hp = here.strip("/").split("/")
+        if len(hp) == 1 and hp[0] in ("de", "fr", "it", "en"):
+            home_t[hp[0]], chart_t[hp[0]] = total_of(html), chart_sum(html)
+        elif len(hp) == 2 and hp[1] == "ueber":
+            about_t[hp[0]] = total_of(html)
+        elif len(hp) == 2 and hp[1] == "kanton":
+            nocant_t[hp[0]] = nocant_of(html)
+        elif len(hp) == 3 and hp[1] == "kanton":
+            cant_t[hp[0]][hp[2]], cchart_t[hp[0]][hp[2]] = total_of(html), chart_sum(html)
+        elif len(hp) == 3 and hp[1] == "unternehmen":
+            x = company_buyer_errors(html, len(want_buyers.get(hp[2], ())))
+            if x:
+                bad_buyers.append((here, x))
+        elif len(hp) == 3 and hp[1:] == ["ausschreibungen", "abo"]:
+            bad_form += [(here, x) for x in form_branch_errors(html, lingue.CPV_SHORT["de"])]
 
         t = re.search(r"<title>(.*?)</title>", html, re.S)
         # measure what a reader sees: an apostrophe is one character, not the six
@@ -657,7 +838,7 @@ def main() -> int:
         if key in expected:
             want = expected[key]
             got = float(tile.group(1)) if tile else 0.0
-            if abs(got - round(want, 2)) > 0.05:
+            if not sum_ok(got, want):
                 bad_sums.append((here, got, want))
         # An award page never shows a single amount for an award naming several firms: not as
         # its 'Zuschlagsbetrag' tile, and not on the award's line in a project's list of lots.
@@ -679,6 +860,37 @@ def main() -> int:
                 elif len(G.winners(a)) > 1 and "<data" in line.rsplit('<td class="r num">', 1)[-1]:
                     single_amount.append((here, f"importo unico {a.get('publicationNumber')}"))
 
+    # the national total everywhere (home, about, cantons + no canton, CSV, monthly chart)
+    csv_rows, nocant_csv = {}, 0
+    for f in sorted((OUT / "daten" / "kanton").glob("*.csv")):
+        n = sum(1 for _r in csv.reader(io.StringIO(f.read_bytes()[3:].decode("utf-8"), newline=""), delimiter=";")) - 1
+        if f.stem == "ohne-kanton":
+            nocant_csv = n
+        else:
+            csv_rows[f.stem] = n
+    tot_errs = reconcile_totals(home_t, about_t, cant_t, nocant_t, csv_rows, nocant_csv, chart_t, cchart_t)
+    nat = next(iter(home_t.values()), None)
+    print(f"  totale che non quadra   {len(tot_errs)} (totale {nat}, cantoni {sum(v or 0 for v in cant_t.get('de', {}).values())}"
+          f" + senza cantone {nocant_t.get('de', 0)}, CSV {sum(csv_rows.values())} + {nocant_csv})")
+    for m in tot_errs[:6]:
+        print(f"    {m}")
+    print(f"  imprese senza tutti i committenti {len(bad_buyers)} pagine")
+    for h, x in bad_buyers[:4]:
+        print(f"    {h}  {x}")
+    print(f"  modulo avvisi: branche  {len(bad_form)} problemi")
+    for h, x in bad_form[:4]:
+        print(f"    {h}  {x}")
+    # every Atom feed valid (RFC 4287), every JSON-LD block of the 404 page too
+    bad_feeds = []
+    feeds = sorted(OUT.rglob("feed.xml"))
+    for f in feeds:
+        for x in atom_errors(f.read_text(encoding="utf-8")):
+            bad_feeds.append((f.relative_to(OUT).as_posix(), x))
+    print(f"  feed Atom non validi    {len(bad_feeds)} su {len(feeds)}")
+    for h, x in bad_feeds[:4]:
+        print(f"    {h}  {x}")
+    if (OUT / "404.html").exists():
+        bad_ld += [("404.html", x) for x in jsonld_errors((OUT / "404.html").read_text(encoding="utf-8"))]
     print(f"  somme che non quadrano  {len(bad_sums)} pagine (home, cantoni, committenti, imprese)")
     for h, got, want in bad_sums[:4]:
         print(f"    {h}  pagina {got:,.2f} · righe con una sola impresa {want:,.2f}")
@@ -758,7 +970,8 @@ def main() -> int:
             print(f"    {n} char  {h}")
     return 1 if (broken or empty_titles or no_desc or abs_errs or same_tender or twin_rows
                  or bad_sums or single_amount or lost or stale or nf_bad or n_struct
-                 or n_design or c_errs or f_errs or a_errs) else 0
+                 or n_design or c_errs or f_errs or a_errs or tot_errs or bad_buyers or bad_form
+                 or bad_feeds or bad_ld) else 0
 
 
 if __name__ == "__main__":

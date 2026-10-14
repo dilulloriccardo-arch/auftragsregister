@@ -32,6 +32,9 @@ from __future__ import annotations
 import datetime, fcntl, html, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+# i cantoni di un bando: lo stesso modulo che usa il sito per le sue liste (kantone.py, nella radice)
+sys.path.insert(0, str(ROOT))
+from kantone import cantons_of  # noqa: E402
 KEYFILE = pathlib.Path.home() / ".brevo_api_key"
 STATE = ROOT / "avvisi" / "stato.json"
 LOG = ROOT / "avvisi" / "avvisi.log"
@@ -170,13 +173,19 @@ def _picks(raw, trim: int = 0) -> set:
     return out or {"ALLE"}
 
 
+def matches(kantone_scelti: set, branche_scelte: set, tender: dict) -> bool:
+    """Pura: il bando corrisponde alle scelte? Cantone: uno qualsiasi dei cantoni sotto cui il sito elenca il
+    bando (kantone.cantons_of: indirizzo dell'ordine + cantoni dei lotti, altrimenti la sede del committente),
+    cosi' l'e-mail e le liste del sito usano lo stesso insieme (passo 3a, 14.10.2026: un bando con i lotti in
+    GE, NE, VD e VS arrivava solo a chi aveva scelto VD, il cantone della sede). Settore: prime due cifre CPV."""
+    ok_k = bool(kantone_scelti & WILDCARD) or bool(set(cantons_of(tender)[0]) & kantone_scelti)
+    ok_b = bool(branche_scelte & WILDCARD) or str(tender.get("cpvCode") or "")[:2] in branche_scelte
+    return ok_k and ok_b
+
+
 def wants(contact: dict, tender: dict) -> bool:
     a = contact.get("attributes", {}) or {}
-    kant = _picks(a.get("KANTON"))
-    bran = _picks(a.get("BRANCHE"), trim=2)
-    ok_k = bool(kant & WILDCARD) or str(tender.get("canton") or "").upper() in kant
-    ok_b = bool(bran & WILDCARD) or str(tender.get("cpvCode") or "")[:2] in bran
-    return ok_k and ok_b
+    return matches(_picks(a.get("KANTON")), _picks(a.get("BRANCHE"), trim=2), tender)
 
 def lang_of(contact: dict) -> str:
     l = str((contact.get("attributes", {}) or {}).get("SPRACHE") or "de").lower()[:2]

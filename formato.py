@@ -220,11 +220,35 @@ def exact_cell(v, cur: str = "CHF", empty_sr: str = "") -> str:
     return f'<data value="{_value(v)}">{html.escape(txt)}</data>'
 
 
+def amount3(v) -> str:
+    """A tile's amount, rounded to three significant digits: '1,01 Mrd.', '12,3 Mio.', '506’000', a zero
+    fraction dropped ('1 Mrd.' is exactly 1,00). The Implenia page read '1 Mrd.' beside the home's
+    '1’005,3' (Mio. CHF) for the same sum (step 3a, 14.10.2026). Below 1’000 as amount()."""
+    if v is None or not v:
+        return ""
+    v = float(v)
+    if v < 999.5:
+        return amount(v)
+    d = Decimal(str(v))
+    r = d.quantize(Decimal(1).scaleb(d.adjusted() - 2), rounding=ROUND_HALF_UP)
+    mn, bn = UNITS[LANG]
+    sep = "" if LANG == "en" else NBSP
+    if r < 1_000_000:
+        return _group(int(r))
+    x, unit = (r / Decimal(1_000_000_000), bn) if r >= 1_000_000_000 else (r / Decimal(1_000_000), mn)
+    s = f"{x:f}"
+    if "." in s:
+        s = s.rstrip("0").rstrip(".")
+    whole, _dot, frac = s.partition(".")
+    return _group(int(whole)) + (DEC[LANG] + frac if frac else "") + sep + unit
+
+
 def tile(v, cur: str = "CHF") -> str:
     """KPI tile value (HTML): number big, currency small. '<span class="n">992 Mio.</span> <small>CHF</small>'
     / '<small>CHF </small><span class="n">992m</span>'. The number and its unit never break; on a
-    narrow tile the currency moves to the next line as a whole word (an ordinary space before it)."""
-    a = amount(v)
+    narrow tile the currency moves to the next line as a whole word (an ordinary space before it).
+    Three significant digits (amount3) since step 3a."""
+    a = amount3(v)
     if not a:
         return ""
     t = f'<data value="{_value(v)}" title="{html.escape(exact(v, cur))}">'
