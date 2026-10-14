@@ -2724,6 +2724,34 @@ UEBER: dict[str, dict] = {
 }
 
 
+# ------------------------------------------------- design step 2: units, form groups (14.10.2026)
+# A money column states its unit once, in its header: 'Betrag (Tsd. CHF)', 'Summe (Mio. CHF)'
+# (formato.unit_for / column_cell). The award page's lots keep the exact amount: 'Betrag (CHF)'.
+T["sum_l"] = {"de": "Summe", "fr": "Total", "it": "Totale", "en": "Total"}
+T["unit_k"] = {"de": "Tsd. CHF", "fr": "milliers de CHF", "it": "migliaia di CHF", "en": "CHF thousand"}
+T["unit_m"] = {"de": "Mio. CHF", "fr": "millions de CHF", "it": "milioni di CHF", "en": "CHF million"}
+T["unit_chf"] = {"de": "CHF", "fr": "CHF", "it": "CHF", "en": "CHF"}
+# The alert form's industries in groups, each one a <details> (genera.ABO_GROUPS): forty pills one
+# under the other put the button 1,600 px below the e-mail field on a phone.
+META["abo_grp_bau"] = {"de": "Bau und Planung", "fr": "Construction et planification",
+                       "it": "Costruzione e progettazione", "en": "Construction and planning"}
+META["abo_grp_it"] = {"de": "Informatik und Telekommunikation", "fr": "Informatique et télécommunications",
+                      "it": "Informatica e telecomunicazioni", "en": "IT and telecoms"}
+META["abo_grp_tech"] = {"de": "Technik, Energie und Umwelt", "fr": "Technique, énergie et environnement",
+                        "it": "Tecnica, energia e ambiente", "en": "Engineering, energy and environment"}
+META["abo_grp_verkehr"] = {"de": "Verkehr und Sicherheit", "fr": "Transports et sécurité",
+                           "it": "Trasporti e sicurezza", "en": "Transport and security"}
+META["abo_grp_dienst"] = {"de": "Dienstleistungen, Gesundheit, Bildung", "fr": "Services, santé, formation",
+                          "it": "Servizi, sanità, formazione", "en": "Services, health, education"}
+META["abo_grp_waren"] = {"de": "Waren und Material", "fr": "Biens et fournitures",
+                         "it": "Beni e forniture", "en": "Goods and supplies"}
+META["abo_grp_other"] = {"de": "Weitere Branchen", "fr": "Autres branches", "it": "Altri rami",
+                         "en": "Other industries"}
+# structured data: the country a Dataset covers (schema.org spatialCoverage), and og:locale
+COUNTRY = {"de": "Schweiz", "fr": "Suisse", "it": "Svizzera", "en": "Switzerland"}
+OG_LOCALE = {"de": "de_CH", "fr": "fr_CH", "it": "it_CH", "en": "en_GB"}
+
+
 # ---------------------------------------------------------------- typography
 # One rule set per language, applied once at import to the site's own templates and never
 # to simap data. Strings above are written with plain spaces and straight apostrophes;

@@ -165,6 +165,51 @@ def cell(v, cur: str = "CHF", empty_sr: str = "") -> str:
             f"{html.escape(txt)}{sr_exact(v, cur, amount(v))}</data>")
 
 
+# A money COLUMN (design step 2, 14.10.2026): one unit per column, stated once in its header. The home's
+# company table read "175 Mio.", "1 Mrd." and "34,2 Mio." one under the other, the company pages
+# "450’000" under "1,2 Mio.": a reader compared lengths of strings, not amounts. unit_for() picks the
+# column's unit from its own values, column_cell() prints every CHF figure in it; the exact amount stays
+# in the tooltip and, wherever the figure is rounded, in the visually hidden text.
+def unit_for(values) -> str:
+    """'k' (thousands, whole numbers) or 'm' (millions, one decimal): millions when the median amount of
+    the column is a million or more, else thousands, so most rows read without a fraction."""
+    vs = sorted(float(v) for v in values if v)
+    if not vs:
+        return "k"
+    h = len(vs) // 2
+    mid = vs[h] if len(vs) % 2 else (vs[h - 1] + vs[h]) / 2
+    return "m" if mid >= 1_000_000 else "k"
+
+
+def scaled(v, unit: str) -> str:
+    """A CHF amount in its column's unit: '450', '1’235' (thousands) or '0,5', '175,0', '1’000,0'
+    (millions, one decimal); a figure that would round to nothing reads '< 1' / '< 0,1', never 0."""
+    v = float(v)
+    if unit == "m":
+        d = _q(v / 1e6, "0.1")
+        if d == 0:
+            return "<" + NBSP + "0" + DEC[LANG] + "1"
+        return _group(int(d)) + DEC[LANG] + f"{d:.1f}".split(".")[1]
+    d = _q(v / 1e3, "1")
+    return "<" + NBSP + "1" if d == 0 else _group(int(d))
+
+
+def column_cell(v, unit: str, cur: str = "CHF", empty_sr: str = "") -> str:
+    """Table cell content (HTML) in a money column: the figure in the column's unit (scaled), the exact
+    amount in the tooltip, and for screen readers too when the figure is rounded. A foreign currency
+    keeps its own rounded amount and code ('1,2 Mio. EUR'): it is not in the column's unit, and says so.
+    Missing: '–' + the reason, visually hidden."""
+    if v is None or not v:
+        return "–" + (f'<span class="sr"> {html.escape(empty_sr)}</span>' if empty_sr else "")
+    ex = html.escape(exact(v, cur))
+    if cur != "CHF":
+        return f'<data value="{_value(v)}" title="{ex}">{html.escape(money(v, cur))}{sr_exact(v, cur, amount(v))}</data>'
+    q = _q(v, "0.01")
+    back = _q(v / 1e6, "0.1") * 1_000_000 if unit == "m" else _q(v / 1e3, "1") * 1000
+    sr = f'<span class="sr"> ({ex})</span>' if q != back else ""
+    return f'<data value="{_value(v)}" title="{ex}">{html.escape(scaled(v, unit))}{sr}</data>'
+
+
 def exact_cell(v, cur: str = "CHF", empty_sr: str = "") -> str:
     """Table cell content (HTML) on the award page, the official record: the amount as published,
     Rappen kept, without the column's currency; a foreign currency keeps its code. The lots of a

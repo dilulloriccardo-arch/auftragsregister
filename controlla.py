@@ -303,6 +303,254 @@ class Structure:
         return n
 
 
+# ------------------------------------------------------------- design (14.10.2026)
+# The look as data: the colour tokens of both themes against WCAG 2.2 AA (genera.CONTRAST), no text
+# under 12 px in the stylesheet, one unit per money column, and the head of each page — JSON-LD that
+# parses, the share card where it belongs (and only there), feeds and icons that exist, and nothing
+# fetched from another host.
+_TOKEN = re.compile(r"--([\w-]+):\s*([^;]+?)\s*(?:;|$)")
+
+
+def css_tokens(css: str) -> dict:
+    """{'dark': {...}, 'light': {...}}: the custom properties of the stylesheet's first :root block
+    (dark, the default) and of the one in @media (prefers-color-scheme:light), which inherits what it
+    does not redefine."""
+    m = re.search(r":root\{(.*?)\}", css, re.S)
+    dark = dict(_TOKEN.findall(m.group(1))) if m else {}
+    lm = re.search(r"@media \(prefers-color-scheme:light\)\{:root\{(.*?)\}\}", css, re.S)
+    light = dict(dark)
+    if lm:
+        light.update(_TOKEN.findall(lm.group(1)))
+    return {"dark": dark, "light": light if lm else {}}
+
+
+def _rgba(v: str):
+    v = v.strip()
+    m = re.fullmatch(r"#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})", v)
+    if m:
+        h = m.group(1)
+        h = "".join(c * 2 for c in h) if len(h) == 3 else h
+        return (int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16), 1.0)
+    m = re.fullmatch(r"rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(?:,\s*([\d.]+)\s*)?\)", v)
+    if m:
+        return (int(m.group(1)), int(m.group(2)), int(m.group(3)), float(m.group(4) or 1))
+    return None
+
+
+def _over(fg, bg):
+    a = fg[3]
+    return tuple(round(fg[i] * a + bg[i] * (1 - a)) for i in range(3)) + (1.0,)
+
+
+def _lum(c) -> float:
+    def ch(x):
+        x /= 255
+        return x / 12.92 if x <= 0.04045 else ((x + 0.055) / 1.055) ** 2.4
+    return 0.2126 * ch(c[0]) + 0.7152 * ch(c[1]) + 0.0722 * ch(c[2])
+
+
+def ratio(a, b) -> float:
+    la, lb = sorted((_lum(a), _lum(b)), reverse=True)
+    return (la + 0.05) / (lb + 0.05)
+
+
+def check_contrast(css: str, pairs) -> tuple[list, list]:
+    """(errors, rows): every pair of genera.CONTRAST measured in both themes; a translucent colour is
+    laid over --paper. rows: (theme, fg, bg, ratio, minimum) for the report."""
+    errs, rows = [], []
+    toks = css_tokens(css)
+    if not toks["light"]:
+        errs.append("tema chiaro: nessun blocco @media (prefers-color-scheme:light) con i token")
+    for theme, t in toks.items():
+        if not t:
+            continue
+        paper = _rgba(t.get("paper", ""))
+        for fg, bg, need in pairs:
+            a, b = _rgba(t.get(fg, "")), _rgba(t.get(bg, ""))
+            if not (a and b and paper):
+                errs.append(f"{theme}: token --{fg} o --{bg} mancante o non leggibile")
+                continue
+            b = _over(b, paper) if b[3] < 1 else b
+            a = _over(a, b) if a[3] < 1 else a
+            r = ratio(a, b)
+            rows.append((theme, fg, bg, r, need))
+            if r + 1e-9 < need:
+                errs.append(f"{theme}: --{fg} su --{bg} {r:.2f}:1, ne servono {need}:1")
+    return errs, rows
+
+
+def _px(v: str):
+    """A font-size value in CSS px, or None when it is relative to nothing the stylesheet knows."""
+    v = v.strip().lower()
+    m = re.fullmatch(r"([\d.]+)(px|pt|rem|em|%)?", v)
+    if not m:
+        return None
+    n, u = float(m.group(1)), m.group(2) or "px"
+    return {"px": n, "pt": n * 4 / 3, "rem": n * 16, "em": n * 16, "%": n * 16 / 100}[u]
+
+
+def check_font_sizes(css: str) -> list:
+    """No font-size under 12 px (0.75 rem) anywhere in the stylesheet: plain values, the smallest end of
+    a clamp(), and a max() only when one of its terms is 12 px or more."""
+    errs = []
+    for m in re.finditer(r"([^{}]*)\{([^{}]*)\}", css):
+        sel, body = m.group(1).strip(), m.group(2)
+        if sel == ".sr" or sel.startswith("@font-face"):
+            continue
+        for d in re.finditer(r"(?<![\w-])font(-size)?\s*:\s*([^;]+)", body):
+            val = d.group(2).strip()
+            if d.group(1) is None:
+                # the shorthand: its size is the token before an optional /line-height
+                sz = re.search(r"(?:^|\s)((?:max|min|clamp)\([^)]*\)+|[\d.]+(?:px|pt|rem|em|%))(?:/|\s)", val + " ")
+                if not sz:
+                    continue
+                val = sz.group(1)
+            if val in ("inherit", "initial", "unset", "100%"):
+                continue
+            if val.startswith("max("):
+                terms = [_px(x) for x in re.split(r",(?![^(]*\))", val[4:-1])]
+                ok = any(x is not None and x >= 12 for x in terms)
+            elif val.startswith("clamp("):
+                lo = _px(re.split(r",(?![^(]*\))", val[6:-1])[0])
+                ok = lo is not None and lo >= 12
+            else:
+                x = _px(val)
+                ok = x is None or x >= 12
+            if not ok:
+                errs.append(f"{sel[:60]} {{font-size:{val}}}")
+    return errs
+
+
+_UNIT_RE = {"k": re.compile(r"(?:< )?\d{1,3}(?:[’ ,]\d{3})*"),
+            "m": re.compile(r"(?:< )?\d{1,3}(?:[’ ,]\d{3})*[,.]\d"),
+            "chf": re.compile(r"\d{1,3}(?:[’ ,]\d{3})*(?:\.\d{2})?")}
+_SR = re.compile(r'<span class="(?:sr|sub[^"]*)">.*?</span>', re.S)
+
+
+class Design:
+    """What every page's head and money columns must say (14.10.2026)."""
+
+    def __init__(self, origin: str, base: str, units: dict):
+        self.origin, self.base = origin, base
+        # header text -> unit key, in the four languages ('Tsd. CHF' -> 'k')
+        self.units = units
+        self.errs = collections.defaultdict(list)
+        self.columns = 0
+        self.og = 0
+        self.ld = 0
+
+    def err(self, kind: str, here: str, detail: str = "") -> None:
+        self.errs[kind].append((here, detail))
+
+    def money_columns(self, here: str, html: str) -> None:
+        for t in re.finditer(r"<table\b[^>]*>(.*?)</table>", html, re.S):
+            body = t.group(1)
+            head = re.search(r"<thead>(.*?)</thead>", body, re.S)
+            if not head or 'class="r amt"' not in head.group(1):
+                continue
+            cells = re.findall(r"<t[hd]\b([^>]*)>(.*?)</t[hd]>", head.group(1), re.S)
+            idx = next(i for i, (attrs, _x) in enumerate(cells) if "amt" in attrs)
+            label = htmlmod.unescape(re.sub(r"<[^>]+>", "", cells[idx][1]))
+            unit = next((u for txt, u in self.units.items() if f"({txt})" in label), None)
+            self.columns += 1
+            if not unit:
+                self.err("colonna importi: unità mancante nell'intestazione", here, label)
+                continue
+            for row in re.findall(r"<tr\b[^>]*>(.*?)</tr>", re.search(r"<tbody>(.*?)</tbody>", body, re.S).group(1)
+                                  if "<tbody>" in body else "", re.S):
+                tds = re.findall(r"<td\b[^>]*>(.*?)</td>", row, re.S)
+                if len(tds) <= idx:
+                    continue
+                txt = htmlmod.unescape(re.sub(r"<[^>]+>", "", _SR.sub("", tds[idx]))).strip()
+                if txt in ("–", "") or re.search(r"\b(?!CHF)[A-Z]{3}\b", txt):
+                    continue          # not published; or a foreign currency, which names its own unit
+                if not _UNIT_RE[unit].fullmatch(txt):
+                    self.err("colonna importi: cifra fuori dall'unità della colonna", here, f"{label}: «{txt}»")
+                    break
+
+    def head(self, here: str, html: str, open_tender: bool) -> None:
+        headpart = html.split("</head>", 1)[0]
+        for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', html, re.S):
+            self.ld += 1
+            try:
+                data = json.loads(m.group(1))
+            except ValueError as ex:
+                self.err("JSON-LD che non si legge", here, str(ex)[:80])
+                continue
+            graph = data.get("@graph", [data]) if isinstance(data, dict) else []
+            for x in graph:
+                if x.get("@type") == "Dataset" and "license" in x:
+                    self.err("Dataset con licenza (i dati sono di simap)", here)
+                if x.get("@type") == "Organization" and "address" in x:
+                    self.err("Organization con indirizzo postale", here)
+        parts = here.strip("/").split("/")
+        if len(parts) == 1 and parts[0] in ("de", "fr", "it", "en"):
+            if '"@type": "WebSite"' not in headpart or '"@type": "Organization"' not in headpart:
+                self.err("home senza WebSite/Organization", here)
+        if len(parts) == 2 and parts[1] == "ueber" and '"@type": "Dataset"' not in headpart:
+            self.err("pagina Über senza Dataset", here)
+        noindex = re.search(r'<meta name="robots" content="[^"]*noindex', headpart)
+        og = dict(re.findall(r'<meta (?:property|name)="((?:og|twitter):[\w:]+)" content="([^"]*)"', headpart))
+        if not noindex or open_tender:
+            self.og += 1
+            need = ("og:type", "og:title", "og:description", "og:url", "og:image", "og:locale", "twitter:card")
+            miss = [k for k in need if not og.get(k)]
+            if miss:
+                self.err("Open Graph mancante", here, ", ".join(miss))
+            else:
+                canon = re.search(r'<link rel="canonical" href="([^"]+)"', headpart)
+                if canon and og["og:url"] != canon.group(1):
+                    self.err("og:url diverso dal canonical", here, og["og:url"])
+                img = og["og:image"]
+                if not img.startswith(self.origin + "/") or not (OUT / img[len(self.origin) + 1:]).is_file():
+                    self.err("og:image inesistente", here, img)
+        elif og:
+            self.err("Open Graph su una pagina noindex (byte)", here)
+        for href in re.findall(r'<link rel="alternate" type="application/(?:atom|rss)\+xml"[^>]*href="([^"]+)"', headpart):
+            rest = href[len(self.origin):] if href.startswith(self.origin) else href
+            if not rest.startswith("/") or not (OUT / rest.lstrip("/")).is_file():
+                self.err("feed annunciato che non esiste", here, href)
+        # nothing loaded from another host: scripts, stylesheets, fonts, icons, images, frames
+        for _tag, url in re.findall(r'<(script|link|img|iframe|source|video|audio)\b[^>]*?\b(?:src|href)="(https?://[^"]+)"', html):
+            if not url.startswith(self.origin + "/"):
+                self.err("risorsa da un altro host", here, url[:80])
+
+    def report(self) -> int:
+        n = sum(len(v) for v in self.errs.values())
+        print(f"  design (importi, JSON-LD, Open Graph, feed, host esterni)  {n} problemi"
+              f" · {self.columns} colonne importi · {self.ld} blocchi JSON-LD · {self.og} pagine con Open Graph")
+        for kind, v in sorted(self.errs.items(), key=lambda kv: -len(kv[1])):
+            print(f"    {len(v):>6}  {kind}" + (f"  es. {v[0][0]} {v[0][1]}"[:200] if v else ""))
+        return n
+
+
+def _png_size(f: pathlib.Path):
+    b = f.read_bytes()[:24]
+    return (int.from_bytes(b[16:20], "big"), int.from_bytes(b[20:24], "big")) if b[:8] == b"\x89PNG\r\n\x1a\n" else None
+
+
+def check_assets(css: str) -> list:
+    """The icons and share cards, their sizes, and a stylesheet that loads nothing from elsewhere."""
+    errs = []
+    want = {"favicon.svg": None, "favicon.ico": None, "apple-touch-icon.png": (180, 180), "icon-512.png": (512, 512)}
+    want.update({f"og-{l}.png": (1200, 630) for l in ("de", "fr", "it", "en")})
+    for name, dim in want.items():
+        f = OUT / name
+        if not f.is_file():
+            errs.append(f"{name} mancante")
+            continue
+        if dim and _png_size(f) != dim:
+            errs.append(f"{name}: {_png_size(f)} invece di {dim}")
+        if name.startswith("og-") and f.stat().st_size > 100_000:
+            errs.append(f"{name}: {f.stat().st_size} byte, oltre 100 KB")
+    for u in re.findall(r"url\(\s*['\"]?([^'\")]+)", css):
+        if re.match(r"(?:https?:)?//", u):
+            errs.append(f"style.css carica {u}")
+        elif not u.startswith("data:") and not (OUT / u.split("?")[0].lstrip("/")[len(BASE.lstrip("/")):].lstrip("/")).is_file():
+            errs.append(f"style.css: file mancante {u}")
+    return errs
+
+
 def main() -> int:
     def url_of(f: pathlib.Path) -> str:
         rel = f.relative_to(OUT).parent.as_posix()
@@ -327,12 +575,16 @@ def main() -> int:
     listed: list = []                     # (page, project id) of every row in a tender list
     closed: set = set()                   # project ids whose page says the deadline has passed
     st = Structure(SITE + BASE, BASE, G.CSV_COLS)
+    units = {lingue.t(f"unit_{u}", l): u for u in ("k", "m", "chf") for l in ("de", "fr", "it", "en")}
+    ds = Design(SITE + BASE, BASE, units)
 
     for f in OUT.rglob("index.html"):
         html = f.read_text(encoding="utf-8")
         here = url_of(f)
         counts["pagine"] += 1
         st.page(here, html)
+        ds.money_columns(here, html)
+        ds.head(here, html, '<div class="fig wide" data-deadline="' in html)
 
         t = re.search(r"<title>(.*?)</title>", html, re.S)
         # measure what a reader sees: an apostrophe is one character, not the six
@@ -475,6 +727,18 @@ def main() -> int:
     print(f"  pagina 404              {'ok' if not nf_bad else 'link rotti: ' + ', '.join(nf_bad[:4])}")
     st.check_files()
     n_struct = st.report()
+    n_design = ds.report()
+    css = (OUT / "style.css").read_text(encoding="utf-8") if (OUT / "style.css").is_file() else ""
+    c_errs, c_rows = check_contrast(css, G.CONTRAST)
+    print(f"  contrasto dei token      {len(c_errs)} coppie sotto WCAG AA su {len(c_rows)} (due temi)")
+    for m in c_errs[:8]:
+        print(f"    {m}")
+    f_errs = check_font_sizes(css)
+    print(f"  testo sotto 12 px       {len(f_errs)} dichiarazioni")
+    for m in f_errs[:8]:
+        print(f"    {m}")
+    a_errs = check_assets(css)
+    print(f"  icone e immagini        {'ok' if not a_errs else '; '.join(a_errs[:4])}")
     print(f"  righe identiche         {len(twin_rows)} pagine")
     for h, k in twin_rows[:4]:
         print(f"    {h}  «{k}»")
@@ -493,7 +757,8 @@ def main() -> int:
         for h, n in long_titles[:5]:
             print(f"    {n} char  {h}")
     return 1 if (broken or empty_titles or no_desc or abs_errs or same_tender or twin_rows
-                 or bad_sums or single_amount or lost or stale or nf_bad or n_struct) else 0
+                 or bad_sums or single_amount or lost or stale or nf_bad or n_struct
+                 or n_design or c_errs or f_errs or a_errs) else 0
 
 
 if __name__ == "__main__":

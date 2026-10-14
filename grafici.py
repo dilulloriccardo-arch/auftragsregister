@@ -6,7 +6,8 @@ Two components serve every chart on the site:
 - month_columns(): awards per month (home, canton, buyer, sector pages)
 - rank_list():     a ranked list with a bar under each label (CPV divisions on canton and
                    buyer pages, amount bands on company pages, open tenders per canton)
-One hue (--mark). Incomplete months are STRIPED (hatch plus outline), not paler: on the dark
+One hue (--mark, a token of each theme: the charts follow the light and the dark theme
+and print grey). Incomplete months are STRIPED (hatch plus outline), not paler: on the dark
 panel a paler column rendered darker, and the note calling it "lighter" pointed the reader at
 the wrong columns (verifier, 28.09.2026). A striped key swatch opens the note that explains them.
 """
@@ -18,14 +19,14 @@ import formato
 import lingue
 
 CSS = """
-figure .lede{color:var(--muted);font-size:14px;margin:6px 0 0;max-width:70ch}
+figure .lede{color:var(--muted);font-size:15px;margin:6px 0 0;max-width:70ch}
 /* a chart's title is a section heading of the page: h2, not h3 under the h1 (14.10.2026) */
-figure h2{font-size:17px;margin:0;letter-spacing:-.02em}
-figure .note{color:var(--muted);font-size:12.5px;margin:12px 0 0;max-width:80ch}
+figure h2{font-size:18px;margin:0;letter-spacing:-.015em}
+figure .note{color:var(--muted);font-size:13px;margin:12px 0 0;max-width:80ch}
 .sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
-.mc .unit{font-size:11.5px;color:var(--muted);margin:14px 0 10px}
+.mc .unit{font-size:12px;color:var(--muted);margin:14px 0 10px}
 .cc{display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 8px}
-.cc .yax{position:relative;height:160px;min-width:2.4em;font-size:11.5px;color:var(--muted);
+.cc .yax{position:relative;height:160px;min-width:2.4em;font-size:12px;color:var(--muted);
   font-variant-numeric:tabular-nums}
 .cc .yax span{position:absolute;right:0;transform:translateY(50%);line-height:1}
 .cc table{width:100%;border-collapse:collapse;table-layout:fixed}
@@ -46,10 +47,10 @@ figure .note .key{display:inline-block;width:.95em;height:.95em;margin:0 .45em -
   box-shadow:inset 0 0 0 1.5px var(--mark)}
 .cc tr.zero td span{display:none}
 .cc td b{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);margin-bottom:4px;
-  font-size:11.5px;line-height:1;font-weight:600;color:var(--ink);white-space:nowrap}
+  font-size:12px;line-height:1;font-weight:600;color:var(--ink);white-space:nowrap}
 .cc tr:first-child td b{left:0;transform:none}
 .cc tr:last-child td b{left:auto;right:0;transform:none}
-.cc .xax{grid-column:2;display:flex;gap:2px;margin-top:6px;font-size:11.5px;color:var(--muted)}
+.cc .xax{grid-column:2;display:flex;gap:2px;margin-top:6px;font-size:12px;color:var(--muted)}
 .cc .xax>span{flex:1;min-width:0;white-space:nowrap;overflow:visible}
 .cc .xax span.yr{color:var(--ink);font-weight:600}
 .cc .xax span.r0{display:flex;justify-content:flex-end}
@@ -58,9 +59,9 @@ figure .note .key{display:inline-block;width:.95em;height:.95em;margin:0 .45em -
 .bl{list-style:none;margin:16px 0 0;padding:0}
 .bl li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;padding:9px 0;
   border-bottom:1px solid var(--rule);break-inside:avoid}
-.bl .lab{font-size:14px;line-height:1.35}
-.bl .val{font-size:13.5px;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
-.bl .val small{color:var(--muted);font-size:12px;margin-left:8px}
+.bl .lab{font-size:15px;line-height:1.35}
+.bl .val{font-size:14px;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bl .val small{color:var(--muted);font-size:12.5px;margin-left:8px}
 .bl .trk{grid-column:1/-1;height:6px}
 .bl .trk i{display:block;height:6px;background:var(--mark);border-radius:0 3px 3px 0}
 .bl li.oth .lab,.bl li.oth .val{color:var(--muted)}

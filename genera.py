@@ -232,13 +232,22 @@ def due_today(iso: str) -> str:
     return _m("due_today", t=t) if t else _m("due_today_bare")
 
 
-def due_cell(iso: str, text: str, until: bool = False) -> tuple[str, str]:
+def due_cell(iso: str, text: str, until: bool = False, soon: bool = False) -> tuple[str, str]:
     """(extra class, content) of a deadline in a tender list: the date as before ('bis 25.09.2026'),
-    or on its own day 'läuft heute ab, 16.00 Uhr', which the class sets in the signal colour."""
+    or on its own day 'läuft heute ab, 16.00 Uhr', which the class sets in the signal colour.
+    soon: the lists the build rewrites every morning anyway (home, open tenders) also mark a deadline
+    seven days away or less (' soon'); elsewhere a page would change the day a tender came within the
+    week, and a script reads data-deadline instead (14.10.2026)."""
     today = due_today(iso)
     if today:
         return " today", f'<time datetime="{e(iso)}">{e(today)}</time>'
-    return "", (f"{_.until} " if until else "") + tt(iso, text)
+    cls = ""
+    if soon and iso[:10] > TODAY:
+        try:
+            cls = " soon" if (date.fromisoformat(iso[:10]) - date.fromisoformat(TODAY)).days <= 7 else ""
+        except ValueError:
+            cls = ""
+    return cls, (f"{_.until} " if until else "") + tt(iso, text)
 
 
 def fold(s: str) -> str:
@@ -795,15 +804,27 @@ def sum_tile(rows: list) -> str:
     return f'<div class="fig money"><b>{formato.tile(total)}</b><span>{_.sum_published}</span>{note}</div>'
 
 
-def award_cell(a: dict) -> str:
-    """An award's amount in a list of awards: its amount when it names one firm; for several firms
-    no figure — each has its own price, on the award's page."""
+def award_cell(a: dict, unit: str) -> str:
+    """An award's amount in a list of awards, in the column's unit: its amount when it names one firm;
+    for several firms no figure — each has its own price, on the award's page."""
     firms = firm_prices(a)
     if len(firms) > 1:
         if any(p for _w, p, _c, _n in firms):
-            return f'–<span class="sub" style="display:block">{e(_.per_firm)}</span>'
+            return f'–<span class="sub sb2">{e(_.per_firm)}</span>'
         return formato.cell(None, empty_sr=_.not_published)
-    return formato.cell(price_of(a), cur_of(a), empty_sr=_.not_published)
+    return formato.column_cell(price_of(a), unit, cur_of(a), empty_sr=_.not_published)
+
+
+def award_unit(rows: list) -> str:
+    """The unit of a column of award amounts (formato.unit_for), from the CHF figures it prints: the
+    amounts of awards to one firm (14.10.2026)."""
+    return formato.unit_for(price_of(a) for a in rows if len(firm_prices(a)) == 1 and cur_of(a) == "CHF")
+
+
+def money_th(key: str, unit: str) -> str:
+    """A money column's header: its name and, once, the unit of every figure under it ('Betrag
+    (Tsd. CHF)', 'Summe (Mio. CHF)'); class amt marks the column for controlla.py (14.10.2026)."""
+    return f'<th class="r amt">{e(lingue.t(key, LANG))} ({e(lingue.t("unit_" + unit, LANG))})</th>'
 
 
 # a vendor's note shown beside its price when it is short ('1710 Pfählungen', '2. Rang', 'Hinweis:
@@ -1239,131 +1260,133 @@ def project_title(rows: list) -> str:
 # ------------------------------------------------------------------ the chrome
 
 CSS = grafici.CSS + """
-/* Direction: dark instrument panel. One visual world, deliberately dark — the record is
-   the light in the room. Bricolage Grotesque sets the display, Libre Franklin reads, and
-   every figure is monospaced so columns of numbers line up the way a ledger does.
-
-   Adapted 21.09.2026 from a design study, with three things deliberately NOT carried over:
-   no web fonts from a third party (the privacy page promises none, and the Google Fonts
-   link would send every visitor's IP abroad), no client-side view switching (the whole
-   value of this site is 81'891 pages a crawler can read), and no pricing. */
+/* Design step 2 (14.10.2026): readable first, at GOV.UK / Our World in Data level. The dark
+   instrument panel stays the look for a dark preference and for browsers that state none; a light
+   theme answers prefers-color-scheme: light, and a print sheet prints black on white. Every colour is
+   a token, defined once per theme, and controlla.py measures each pair in CONTRAST (genera.py) in both
+   themes against WCAG 2.2 AA. No text below 12 px, form fields at 16 px (no zoom on iOS), targets of
+   at least 24 px, one link style; red only for the primary action, urgent deadlines, errors and the
+   current menu item. Bricolage Grotesque sets the display, Libre Franklin reads, and every figure in
+   a table is monospaced so columns of numbers line up the way a ledger does.
+   Adapted 21.09.2026 from a design study, with three things deliberately NOT carried over: no web
+   fonts from a third party (the privacy page promises none), no client-side view switching (the
+   whole value of this site is the pages a crawler can read), and no pricing. */
 :root{
-  --paper:#07090c; --paper-2:#0a0d12;
-  --ink:#f3f6f9; --muted:#9db0c2; --muted-2:#6d8093;
-  --rule:rgba(255,255,255,.085); --rule-strong:rgba(255,255,255,.17);
-  --accent:#ff4356; --accent-soft:#ff8a96; --signal:#ffb454;
-  --wash:rgba(255,255,255,.045); --panel:#0d1117;
-  --hero:transparent; --hero-ink:#f3f6f9; --hero-muted:#9db0c2;
+  --paper:#07090c; --card:#0f1318; --panel:#0d1117; --sticky:#0a0d12;
+  --ink:#f3f6f9; --text:#d6dee6; --muted:#aab7c4; --muted-2:#8d9cac;
+  --rule:rgba(255,255,255,.13); --rule-strong:rgba(255,255,255,.28); --line:#6f7d8c;
+  --hover:rgba(255,255,255,.04);
+  --link:#8ccbff; --link-hover:#c6e5ff; --focus:#9fd8ff;
+  --accent:#d0263a; --accent-hover:#b81f31; --on-accent:#ffffff;
+  --accent-text:#ff7684; --warm:#ffb454;
+  --ok:#43d99a; --ok-bg:rgba(67,217,154,.12); --off-bg:rgba(255,255,255,.07);
   --mark:#38b5dd;
-  --glass:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.017));
-  --ease:cubic-bezier(.22,.68,.24,1);
+  --glass:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,0));
+  --glow-1:rgba(56,181,221,.26); --glow-2:rgba(124,92,255,.18); --grid:rgba(255,255,255,.028);
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+  --display:"Bricolage Grotesque","Libre Franklin",system-ui,sans-serif;
   color-scheme:dark;
 }
+@media (prefers-color-scheme:light){:root{
+  --paper:#ffffff; --card:#f5f7f9; --panel:#f5f7f9; --sticky:#ffffff;
+  --ink:#111827; --text:#1f2937; --muted:#465162; --muted-2:#5a6576;
+  --rule:#d6dbe2; --rule-strong:#98a2ae; --line:#7b8695;
+  --hover:#f1f4f7;
+  --link:#0a58ad; --link-hover:#063c78; --focus:#0b57d0;
+  --accent:#c81e33; --accent-hover:#a5182a; --on-accent:#ffffff;
+  --accent-text:#b4182d; --warm:#a14d00;
+  --ok:#11734a; --ok-bg:#e2f3ea; --off-bg:#eceff3;
+  --mark:#1f6fb2;
+  --glass:none; --glow-1:transparent; --glow-2:transparent; --grid:transparent;
+  color-scheme:light}}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);
-  font-family:"Libre Franklin",system-ui,-apple-system,sans-serif;font-size:15px;
+  font-family:"Libre Franklin",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;
   line-height:1.6;-webkit-font-smoothing:antialiased;position:relative}
-/* Background, painted with pseudo-elements so no page needs extra markup. */
+/* Background, painted with pseudo-elements so no page needs extra markup; none in the light theme. */
 body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
-  background:
-    radial-gradient(48vw 40vw at 6% -8%,rgba(56,181,221,.30),transparent 64%),
-    radial-gradient(42vw 36vw at 96% -4%,rgba(124,92,255,.22),transparent 64%),
-    radial-gradient(40vw 34vw at 58% 22%,rgba(255,67,86,.14),transparent 66%),
-    var(--paper)}
+  background:radial-gradient(48vw 40vw at 6% -8%,var(--glow-1),transparent 64%),
+    radial-gradient(42vw 36vw at 96% -4%,var(--glow-2),transparent 64%),var(--paper)}
 body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background-image:
-    repeating-linear-gradient(90deg,rgba(255,255,255,.032) 0 1px,transparent 1px 72px),
-    repeating-linear-gradient(0deg,rgba(255,255,255,.032) 0 1px,transparent 1px 72px);
+  background-image:repeating-linear-gradient(90deg,var(--grid) 0 1px,transparent 1px 72px),
+    repeating-linear-gradient(0deg,var(--grid) 0 1px,transparent 1px 72px);
   -webkit-mask-image:radial-gradient(130% 88% at 50% 0%,#000 26%,transparent 74%);
   mask-image:radial-gradient(130% 88% at 50% 0%,#000 26%,transparent 74%)}
 .wrap{max-width:1180px;margin:0 auto;padding:0 30px 60px}
-a{color:var(--ink);text-decoration:none;
-  background-image:linear-gradient(var(--accent),var(--accent));
-  background-size:100% 1px;background-repeat:no-repeat;background-position:0 100%;
-  padding-bottom:1px;transition:color .15s}
-a:hover{background-size:100% 2px;color:#fff}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:5px}
-.disp,h1,h2,h3,.fig b,.masthead a.name{font-family:"Bricolage Grotesque","Libre Franklin",
-  system-ui,sans-serif;font-variation-settings:"wdth" 92}
-.mono,.num,.when,.tag,.amount{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,
-  Consolas,monospace;font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
-.eyebrow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;
-  letter-spacing:.2em;text-transform:uppercase;color:var(--muted-2);font-weight:500;margin:0}
+/* one link style everywhere: the link colour, underlined; thicker on hover. Chips, menu items and
+   clickable tiles are controls, not running links, and carry their own frame instead */
+a{color:var(--link);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;
+  text-decoration-color:color-mix(in srgb,currentColor 55%,transparent)}
+a:hover{color:var(--link-hover);text-decoration-thickness:2px;text-decoration-color:currentColor}
+/* a visible focus on everything that takes it */
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:3px}
+.disp,h1,h2,h3,.fig b,.masthead a.name{font-family:var(--display)}
+.mono,.num,.when,.amount{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.eyebrow{font:600 12px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}
 /* the masthead is the page's <header>: name and languages, then the menu on its own row; the
    active section is underlined where the menu meets the rule (14.10.2026) */
-.masthead{display:flex;justify-content:space-between;align-items:center;gap:6px 16px;
-  padding:18px 0 0;border-bottom:1px solid var(--rule);flex-wrap:wrap}
-.masthead a.name{font-weight:800;font-size:18px;letter-spacing:-.03em;color:var(--ink);
-  background:none;padding:0}
-.masthead a.name:hover{color:var(--accent)}
-.langs{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:12.5px;font-weight:600;
-  justify-content:flex-end}
-.langs a{color:var(--muted-2);background:none;padding:0}
-.langs a:hover{color:var(--ink)}
-.langs .on{color:var(--accent)}
-/* The hero no longer needs its own dark block: the whole page is dark. It keeps the
-   same class name and grid so every existing page renders unchanged. */
-.title{background:var(--hero);color:var(--hero-ink);margin:0;padding:44px 0 34px;
-  display:grid;grid-template-columns:1fr 280px;gap:48px;align-items:start;
-  border-bottom:1px solid var(--rule)}
-.title .eyebrow{color:var(--accent-soft)}
-.title h1{color:var(--hero-ink)}
-.title p.sum{margin:16px 0 0;color:var(--hero-muted);font-size:16px;max-width:52ch}
-h1{font-weight:800;letter-spacing:-.045em;line-height:1;margin:12px 0 0;
+.masthead{display:flex;justify-content:space-between;align-items:center;gap:2px 16px;
+  padding:16px 0 0;border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.masthead a.name{display:inline-block;padding:2px 0;font-weight:800;font-size:18px;line-height:1.3;
+  letter-spacing:-.03em;color:var(--ink);text-decoration:none}
+.masthead a.name:hover{color:var(--ink);text-decoration:underline}
+.langs{display:flex;flex-wrap:wrap;gap:0 16px;font-size:13px;font-weight:600;justify-content:flex-end}
+.langs a,.langs .on{display:inline-block;padding:4px 0;line-height:16px}
+.langs a{color:var(--muted);text-decoration:none}
+.langs a:hover{color:var(--ink);text-decoration:underline}
+.langs .on{color:var(--ink);box-shadow:inset 0 -2px var(--accent-text)}
+.title{margin:0;padding:40px 0 32px;display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:48px;
+  align-items:start;border-bottom:1px solid var(--rule)}
+.title p.sum{margin:16px 0 0;color:var(--muted);font-size:17px;line-height:1.55;max-width:56ch}
+h1{font-weight:800;letter-spacing:-.04em;line-height:1.04;margin:10px 0 0;
   text-wrap:balance;font-size:clamp(32px,5.4vw,54px)}
-h2{font-weight:700;font-size:23px;margin:0 0 3px;letter-spacing:-.032em}
-h3{font-weight:700;font-size:16px;margin:0;letter-spacing:-.02em}
-.runhead{display:flex;justify-content:space-between;gap:16px;padding:0 0 9px;
-  margin-top:40px;border-bottom:1px solid var(--rule-strong);font-size:10.5px;
-  letter-spacing:.16em;text-transform:uppercase;color:var(--muted-2);font-weight:600;
-  font-family:ui-monospace,Menlo,monospace}
-/* a running head's label is the section's real heading (an h2 since 14.10.2026), in the same look */
-.runhead h2{font:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit;margin:0;
-  font-variation-settings:normal}
-.rail{border-left:0;padding-left:0;font-size:13px;color:var(--hero-muted)}
-.rail dt{font-size:10px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--accent-soft);margin-top:15px;font-weight:600;
-  font-family:ui-monospace,Menlo,monospace}
+h2{font-weight:700;font-size:23px;line-height:1.25;margin:0 0 4px;letter-spacing:-.025em}
+h3{font-weight:700;font-size:17px;margin:0;letter-spacing:-.015em}
+/* a running head: the section's real heading (an h2 since 14.10.2026) and, on the right, a note on
+   what the section counts, in the small label face */
+.runhead{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 16px;
+  padding:0 0 8px;margin-top:44px;border-bottom:2px solid var(--rule-strong);
+  font:600 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.runhead h2{font:700 19px/1.3 var(--display);letter-spacing:-.015em;text-transform:none;
+  color:var(--ink);margin:0}
+.rail{font-size:14px;color:var(--muted)}
+.rail dt{font:600 12px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted-2);margin-top:16px}
 .rail dt:first-child{margin-top:0}
-.rail dd{margin:4px 0 0;font-size:14px;color:var(--hero-ink)}
+.rail dd{margin:4px 0 0;font-size:15px;color:var(--ink)}
 /* ── figures / KPI ─────────────────────────────────────────────────────── */
-.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;
-  padding:26px 0 6px;border-bottom:0}
-.fig{border:1px solid var(--rule);border-radius:16px;padding:20px 22px;background:var(--glass);
-  position:relative;overflow:hidden}
-.fig::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.26),transparent)}
-.fig b{display:block;font-weight:700;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.045em;
-  font-variant-numeric:normal;line-height:1;overflow-wrap:break-word}
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;padding:26px 0 6px}
+.fig{border:1px solid var(--rule);border-radius:14px;padding:18px 20px;background:var(--glass),var(--card);
+  position:relative}
+/* big numbers are neutral: colour is kept for what needs action (14.10.2026) */
+.fig b{display:block;font-weight:700;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.04em;
+  line-height:1.05;overflow-wrap:break-word;color:var(--ink)}
 /* a figure never breaks inside its digits or its unit ("827’782.5|5", "C|HF"); only the
    currency may move to the next line, as a whole word */
 .fig b .n{white-space:nowrap}
-.fig b small{font-size:.42em;font-weight:600;letter-spacing:0;color:var(--muted)}
+.fig b small{font-size:max(12px,.42em);font-weight:600;letter-spacing:0;color:var(--muted)}
 /* phones: the exact amount and the deadline on the award page take the whole row */
 @media(max-width:599px){.figures .fig.wide{grid-column:1/-1}
-  /* two tiles per row: the currency on its own line in every tile, not only in the
-     ones whose figure happens to be wide ('30,2 mia.' / 'CHF' beside '2,2 mio. CHF') */
+  /* two tiles per row: the currency on its own line in every tile */
   .fig b small{display:block;margin-top:.4em}
   html:lang(en) .fig b small{margin:0 0 .4em}}
-.fig .approx{display:block;margin-top:8px;font-size:13px;font-style:normal;color:var(--muted)}
-.fig.money b{color:var(--accent)}
-/* a date tile keeps its date on one line ('08.10.20|26' on phones, and in four tiles a row up
-   to ~1000 px): never larger than the other tiles' figures, smaller where 17 % of the tile's own
-   width, which fits the longest date ('30 May 2026'), asks for it; the media query is for
-   browsers without container units (08.10.2026) */
+.fig .approx{display:block;margin-top:8px;font-size:13.5px;font-style:normal;color:var(--muted)}
+/* a date tile keeps its date on one line: never larger than the other tiles' figures, smaller where
+   17 % of the tile's own width asks for it; the media query is for browsers without container units */
 .fig.date{container-type:inline-size}
 .fig.date b{white-space:nowrap}
 @media(max-width:419px){.fig.date b{font-size:clamp(17px,5.2vw,26px)}}
 .fig.date b{font-size:max(17px,min(17cqi,clamp(26px,3.6vw,38px)))}
 .fig.off b{color:var(--muted)}
-.fig>span{display:block;margin-top:11px;font-size:10px;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--muted-2);font-weight:600;
-  font-family:ui-monospace,Menlo,monospace}
+.fig>span{display:block;margin-top:10px;font:600 12px/1.4 var(--mono);letter-spacing:.06em;
+  text-transform:uppercase;color:var(--muted)}
 .sec{margin-top:10px}
-.scroll{overflow-x:auto;max-width:100%;position:relative}
+/* a section opened by its own heading (hub, alert page) gets room above it */
+.sec>h2:first-child{margin:36px 0 10px}
 /* position: the visually hidden cell text (.sr) is absolutely positioned; without a
    positioned scroll box it escaped the clipping and widened the page on phones */
+.scroll{overflow-x:auto;max-width:100%;position:relative}
 /* A table wider than the screen fades out at the edge it continues past, so the sideways scroll
    shows (08.10.2026). Driven by the box's own scroll position: no fade while the table fits (the
    timeline is inactive then) and none at the end reached; without scroll timelines, as before. */
@@ -1376,224 +1399,304 @@ h3{font-weight:700;font-size:16px;margin:0;letter-spacing:-.02em}
     animation:scroll-hint linear both;animation-timeline:scroll(self inline)}}
 /* ── tables ────────────────────────────────────────────────────────────── */
 table{width:100%;border-collapse:collapse}
-/* the Details box sits in a 320px column: long names and CPV labels wrap in place instead
-   of pushing the value column past the edge (verifier, 29.09.2026) */
+/* the Details box sits in a 320px column: long names and CPV labels wrap in place */
 .kv{table-layout:fixed}
 .kv td{padding-right:0;overflow-wrap:break-word;hyphens:auto;vertical-align:baseline}
-/* the label column takes 42 % and its labels wrap: at a fixed 112 px 'Staatsvertragsbereich',
-   'Contracting authority' and the French and Italian labels ran into the value (08.10.2026);
-   42 % of the 320 px column fits 'Staatsvertrags-' on one line. Hyphens only where lingue.py puts
-   a soft one: automatic hyphenation split 'ac-cords' though the line breaks at spaces */
+/* the label column takes 42 % and its labels wrap; hyphens only where lingue.py puts a soft one */
 .kv th{width:42%;white-space:normal;overflow-wrap:break-word;hyphens:manual;-webkit-hyphens:manual;
-  text-transform:none;letter-spacing:0;font-size:13px;font-weight:500;line-height:1.45;
-  border-bottom:1px solid var(--rule);padding:13px 12px 13px 0;vertical-align:baseline}
-th{text-align:left;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;
-  color:var(--muted-2);font-weight:600;padding:0 14px 11px 0;
-  border-bottom:1px solid var(--rule-strong);white-space:nowrap;
-  font-family:ui-monospace,Menlo,monospace}
-td{padding:13px 14px 13px 0;border-bottom:1px solid var(--rule);vertical-align:top;
-  font-size:14.5px}
+  font-size:13.5px;font-weight:500;line-height:1.45;color:var(--muted);
+  border-bottom:1px solid var(--rule);padding:12px 12px 12px 0;vertical-align:baseline}
+/* column headers in the reading face, in sentence case: a header such as 'Betrag (Tsd. CHF)' is read,
+   not decoded (they were 9.5 px monospaced capitals; 14.10.2026) */
+th{text-align:left;font-size:13px;font-weight:600;line-height:1.35;color:var(--muted);
+  padding:0 14px 10px 0;border-bottom:2px solid var(--rule-strong);vertical-align:bottom}
+td{padding:12px 14px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top;font-size:15px}
 /* an empty corner cell is a td, not an empty header (14.10.2026): it keeps the header row's rule */
-thead td{border-bottom:1px solid var(--rule-strong);padding:0 14px 11px 0}
-tbody tr{transition:background .15s}
-tbody tr:hover{background:rgba(255,255,255,.032)}
-td.r,th.r{text-align:right;padding-right:0;padding-left:18px}
+thead td{border-bottom:2px solid var(--rule-strong);padding:0 14px 10px 0}
+tbody tr:hover{background:var(--hover)}
+td.r,th.r{text-align:right;padding-right:0;padding-left:16px}
+td.num{font-size:14.5px}
+/* a note under a figure ('Preise je Unternehmen') reads in the text face */
+td.num .sub{font-family:"Libre Franklin",system-ui,sans-serif}
 abbr[title]{text-decoration:none;cursor:help}
-td.sub,.sub{color:var(--muted);font-size:13px}
+td.sub,.sub{color:var(--muted);font-size:13.5px}
 ul.plain{list-style:none;margin:0;padding:0}
-ul.plain li{padding:13px 0;border-bottom:1px solid var(--rule)}
+ul.plain li{padding:12px 0;border-bottom:1px solid var(--rule)}
 ul.plain li:last-child{border-bottom:0}
 .row{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
-/* a long unbroken name ('PricewaterhouseCoopers', 'Infrastrukturunterhaltsgesellschaft')
-   wraps instead of widening the page on phones; the count beside it never wraps */
+/* a long unbroken name wraps instead of widening the page on phones; the count beside it never wraps */
 .row>*{min-width:0;overflow-wrap:anywhere}
 .row>.sub,.row>.when,.row>.num{flex:none;overflow-wrap:normal}
 h1,.eyebrow{overflow-wrap:anywhere}
-.when{color:var(--accent);font-size:12px;white-space:nowrap;font-weight:600}
-/* due today: 'läuft heute ab, 16.00 Uhr' in the signal colour, free to wrap before the time (its
-   other spaces are no-break) instead of widening the column or squeezing the title (08.10.2026) */
-.when.today{color:var(--signal);white-space:normal}
+/* deadlines: neutral; .soon (seven days or less) warm, .today ('läuft heute ab, 16.00 Uhr') red. The
+   build sets them on the lists it rewrites every morning; every list row carries data-deadline for a
+   script to keep them current (14.10.2026) */
+.when{color:var(--ink);font-size:13px;white-space:nowrap;font-weight:600}
+.when.soon{color:var(--warm)}
+.when.today{color:var(--accent-text);white-space:normal}
 .row>.when.today{flex:0 1 auto;min-width:min-content;text-align:right}
 /* ── tags / chips ──────────────────────────────────────────────────────── */
-.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
-.tag{border:1px solid var(--rule);background:var(--wash);border-radius:100px;
-  padding:6px 14px;font-size:12px;color:var(--muted);
-  transition:border-color .16s,color .16s,transform .16s var(--ease)}
-a.tag{background-image:none;padding-bottom:6px;display:inline-block;max-width:100%;line-height:1.45}
-/* inline-block: a pill whose text wraps on a phone stays one rounded box */
-a.tag:hover{background:var(--wash);border-color:var(--rule-strong);color:var(--ink);
-  transform:translateY(-1px)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+/* inline-block: a pill whose text wraps on a phone stays one rounded box; 32 px tall */
+.tag{display:inline-block;max-width:100%;border:1px solid var(--line);border-radius:999px;
+  padding:5px 13px;font-size:13.5px;line-height:20px;color:var(--ink);background:transparent;
+  text-decoration:none;transition:border-color .16s,background-color .16s}
+a.tag:hover{border-color:var(--ink);background:var(--hover);color:var(--ink)}
 .tag.on{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:600}
-/* ── glass panel, the one new primitive ────────────────────────────────── */
-.glass{position:relative;border:1px solid var(--rule);border-radius:18px;overflow:hidden;
-  background:var(--glass);margin-top:16px}
-.glass::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;
-  pointer-events:none;
-  background:linear-gradient(90deg,transparent,rgba(255,255,255,.26),transparent)}
-.glass .ch{display:flex;justify-content:space-between;align-items:baseline;gap:14px;
-  padding:18px 24px 14px}
-.glass .ch .side{font-family:ui-monospace,Menlo,monospace;font-size:10px;
-  letter-spacing:.15em;text-transform:uppercase;color:var(--muted-2)}
+a.tag.on:hover{background:var(--muted);border-color:var(--muted);color:var(--paper)}
+/* ── panels ────────────────────────────────────────────────────────────── */
+.glass{position:relative;border:1px solid var(--rule);border-radius:16px;overflow:hidden;
+  background:var(--glass),var(--card);margin-top:16px}
 .glass .pad{padding:0 24px 22px}
 .glass .pad.top{padding-top:20px}
 /* ── comparison table ──────────────────────────────────────────────────── */
-.cmp th{padding:16px 18px;font-size:12px;letter-spacing:.03em;text-transform:none;
-  color:var(--muted);font-weight:600;font-family:"Libre Franklin",sans-serif;
-  border-bottom:1px solid var(--rule)}
-.cmp th.us{color:var(--accent-soft)}
-.cmp thead td{padding:16px 18px;border-bottom:1px solid var(--rule)}
-.cmp td{padding:15px 18px;font-size:14px}
-.cmp tbody th{padding:15px 18px;font-size:14px;font-weight:400;color:var(--ink);text-transform:none;
-  letter-spacing:0;white-space:normal;font-family:inherit;border-bottom:1px solid var(--rule);vertical-align:top}
-.cmp td.c{text-align:center;width:180px;font-family:ui-monospace,Menlo,monospace;
-  font-size:12.5px;color:var(--muted-2)}
-.cmp td.c.y{color:#3ddc97}
-/* ── FAQ ───────────────────────────────────────────────────────────────── */
-.faq details{border-bottom:1px solid var(--rule);padding:16px 0}
-.faq details:last-child{border-bottom:0}
-.faq summary{cursor:pointer;font-weight:600;font-size:15.5px;list-style:none;display:flex;
-  justify-content:space-between;gap:14px;align-items:baseline}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";color:var(--accent);
-  font-family:ui-monospace,Menlo,monospace;flex:0 0 auto}
-.faq details[open] summary::after{content:"\2212"}
-.faq p{margin:12px 0 0;font-size:14.5px;color:var(--muted);max-width:74ch}
+.cmp th{padding:14px 18px;border-bottom:1px solid var(--rule)}
+.cmp th.us{color:var(--ink)}
+.cmp thead td{padding:14px 18px;border-bottom:1px solid var(--rule)}
+.cmp td{padding:14px 18px;font-size:14.5px}
+.cmp tbody th{padding:14px 18px;font-size:14.5px;font-weight:400;color:var(--text);white-space:normal;
+  border-bottom:1px solid var(--rule);vertical-align:top}
+.cmp td.c{text-align:center;width:180px;font:600 13px/1.4 var(--mono);color:var(--muted)}
+.cmp td.c.y{color:var(--ok)}
 /* ── subscribe form ────────────────────────────────────────────────────── */
 .form{margin-top:18px;max-width:620px;position:relative}
-.form .f{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--muted-2);font-weight:600;margin:20px 0 8px;
-  font-family:ui-monospace,Menlo,monospace}
-.form input[type=email]{width:100%;box-sizing:border-box;border:1px solid var(--rule-strong);
-  border-radius:12px;padding:13px 15px;font-size:15.5px;background:rgba(255,255,255,.05);
-  color:var(--ink);font-family:inherit;transition:border-color .2s,background .2s}
+.form .f{display:block;font-size:14.5px;font-weight:600;line-height:1.4;color:var(--ink);margin:24px 0 8px}
+.form input[type=email]{width:100%;border:1px solid var(--line);border-radius:10px;padding:12px 14px;
+  font-size:16px;font-family:inherit;line-height:1.4;background:var(--paper);color:var(--ink)}
 .form input[type=email]::placeholder{color:var(--muted-2)}
-.form input[type=email]:focus{background:rgba(255,255,255,.085);border-color:var(--accent);
-  outline:none}
+.form input[type=email]:focus{outline:3px solid var(--focus);outline-offset:1px;border-color:var(--ink)}
 /* the canton and industry pills are two groups of checkboxes: a fieldset each, its legend in the
    look of the other field labels (14.10.2026) */
 .form fieldset{border:0;margin:0;padding:0;min-width:0}
 .form legend.f{padding:0;float:left;width:100%}
 .form legend.f+*{clear:both}
-.form .pills{display:flex;flex-wrap:wrap;gap:7px}
-.form .pills label{cursor:pointer;position:relative}
+.form .pills{display:flex;flex-wrap:wrap;gap:8px}
+.form .pills label{cursor:pointer;position:relative;display:inline-block}
 .form .pills input{position:absolute;opacity:0;width:1px;height:1px;left:0;top:0}
-.form .pills input:checked+.tag{background:var(--ink);border-color:var(--ink);
-  color:var(--paper);font-weight:600}
-.form .pills input:focus-visible+.tag{outline:2px solid var(--accent);outline-offset:2px}
-.form button{margin-top:22px;border:1px solid #ff6b7a;
-  background:linear-gradient(180deg,#ff5b6b,#e8283c);color:#fff;border-radius:100px;
-  padding:13px 26px;font-size:14.5px;font-weight:600;cursor:pointer;
-  box-shadow:0 8px 26px -10px rgba(255,67,86,.8);
-  transition:transform .18s var(--ease),box-shadow .25s}
-.form button:hover{transform:translateY(-2px);
-  box-shadow:0 14px 36px -10px rgba(255,67,86,.95)}
-.form button:disabled{opacity:.55;transform:none;cursor:default}
+/* chosen: inverted and ticked, so the state does not rest on colour alone */
+.form .pills input:checked+.tag{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:600}
+.form .pills input:checked+.tag::before{content:"\\2713\\00a0";content:"\\2713\\00a0"/""}
+.form .pills input:focus-visible+.tag{outline:3px solid var(--focus);outline-offset:2px}
+/* the 26 cantons by their codes, seven to a row on a phone (full name for screen readers and on hover) */
+.form .pills.k{gap:8px 6px}
+.form .pills.k .tag{min-width:50px;text-align:center;padding:5px 6px;font-family:var(--mono)}
+/* the industries in groups, each one closed until opened: the button sat 1,600 px under the e-mail
+   field on a phone. A group holding a choice shows a dot (14.10.2026) */
+.form details.grp{border:1px solid var(--rule);border-radius:12px;margin-top:8px;background:var(--card)}
+.form details.grp>summary{display:flex;align-items:center;gap:10px;min-height:46px;padding:10px 14px;
+  cursor:pointer;font-weight:600;font-size:15px;line-height:1.35;list-style:none;border-radius:12px}
+.form details.grp>summary::-webkit-details-marker{display:none}
+.form details.grp>summary::after{content:"+";content:"+"/"";margin-left:auto;font:600 18px/1 var(--mono);
+  color:var(--muted)}
+.form details.grp[open]>summary::after{content:"\\2212";content:"\\2212"/""}
+.form details.grp:has(input:checked)>summary::before{content:"";width:8px;height:8px;flex:none;
+  border-radius:50%;background:var(--ink)}
+.form details.grp .pills{padding:2px 14px 14px}
+/* the primary action: the one red button of the page */
+.form button{margin-top:24px;border:0;background:var(--accent);color:var(--on-accent);border-radius:999px;
+  padding:13px 28px;min-height:48px;font-family:inherit;font-size:16px;font-weight:600;cursor:pointer;
+  transition:background-color .16s}
+.form button:hover{background:var(--accent-hover)}
+.form button:focus-visible{outline-offset:3px}
+.form button:disabled{opacity:.6;cursor:default}
 .form .hp{position:absolute;left:-9999px;opacity:0}
-.form .msg{margin-top:14px;font-size:14px;min-height:1.4em}
-.form .msg.err{color:var(--accent-soft)}
+.form .msg{margin-top:14px;font-size:15px;min-height:1.4em}
+.form .msg.err{color:var(--accent-text)}
 /* ── misc ──────────────────────────────────────────────────────────────── */
-.state{display:inline-flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.16em;
-  text-transform:uppercase;font-weight:600;color:#3ddc97;padding:5px 12px;border-radius:100px;
-  background:rgba(61,220,151,.12);font-family:ui-monospace,Menlo,monospace}
+.state{display:inline-flex;align-items:center;gap:8px;font:600 12px/1.4 var(--mono);letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ok);padding:5px 12px;border-radius:999px;background:var(--ok-bg)}
 .state i{width:6px;height:6px;background:currentColor;border-radius:50%;display:block}
 /* a tender due today, and one past its deadline (08.10.2026) */
-.state.today{color:var(--signal);background:rgba(255,180,84,.13)}
-.state.off{color:var(--muted);background:rgba(255,255,255,.07)}
-.winner{border:1px solid var(--rule);border-radius:16px;background:var(--glass);
-  padding:20px 22px;margin:10px 0 0}
-.winner .who{font-family:"Bricolage Grotesque",sans-serif;font-size:22px;font-weight:700;
-  letter-spacing:-.03em}
-.official{margin-top:26px;padding:15px 18px;background:rgba(255,67,86,.09);
-  border-left:2px solid var(--accent);border-radius:0 10px 10px 0;font-size:12.5px;
-  color:var(--muted)}
-.prose p{margin:0 0 15px;font-size:15.5px;line-height:1.7;max-width:66ch;color:var(--muted);overflow-wrap:break-word}
+.state.today{color:var(--accent-text);background:var(--off-bg)}
+.state.off{color:var(--muted);background:var(--off-bg)}
+.winner{border:1px solid var(--rule);border-radius:14px;background:var(--glass),var(--card);
+  padding:18px 20px;margin:10px 0 0}
+.winner .who{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.025em}
+/* the link to the publication itself: set apart, neutral */
+.official{margin-top:26px;padding:14px 18px;background:var(--card);border-left:3px solid var(--rule-strong);
+  border-radius:0 10px 10px 0;font-size:14px;color:var(--muted)}
+.prose p{margin:0 0 15px;font-size:16.5px;line-height:1.7;max-width:68ch;color:var(--text);overflow-wrap:break-word}
 .prose p strong{color:var(--ink)}
-.cols{display:grid;grid-template-columns:1fr 320px;gap:48px;padding-top:6px;
-  align-items:start}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:48px;padding-top:6px;align-items:start}
 .half{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding-top:6px;align-items:start}
 .cols>*,.half>*{min-width:0}
-figure{margin:16px 0 4px;background:var(--panel);border:1px solid var(--rule);
-  border-radius:16px;padding:20px 22px}
-footer{border-top:1px solid var(--rule);margin-top:56px;padding-top:22px;
-  color:var(--muted-2);font-size:12.5px}
+figure{margin:16px 0 4px;background:var(--panel);border:1px solid var(--rule);border-radius:14px;padding:20px 22px}
+footer{border-top:1px solid var(--rule);margin-top:56px;padding-top:22px;color:var(--muted);font-size:13.5px}
 footer p{margin:0 0 6px;max-width:80ch}
+footer .stand{color:var(--ink)}
 /* ── menu, breadcrumbs, skip link (14.10.2026) ───────────────────────────── */
 .skip{position:absolute;left:16px;top:-90px;z-index:20;padding:10px 16px;border-radius:10px;
-  background:var(--ink);color:var(--paper);font-weight:600;background-image:none}
+  background:var(--ink);color:var(--paper);font-weight:600;text-decoration:none}
 .skip:focus{top:12px;color:var(--paper)}
-.sitenav{flex:1 1 100%}
+.sitenav{flex:1 1 100%;min-width:0}
 .sitenav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;column-gap:22px}
-.sitenav a{display:block;padding:11px 0 10px;font-size:14px;font-weight:600;color:var(--muted);
-  background:none;border-bottom:2px solid transparent;margin-bottom:-1px}
+.sitenav a{display:block;padding:10px 0 9px;font-size:14px;font-weight:600;line-height:1.5;color:var(--muted);
+  text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px}
 .sitenav a:hover{color:var(--ink)}
-.sitenav a[aria-current]{color:var(--ink);border-bottom-color:var(--accent)}
+.sitenav a[aria-current]{color:var(--ink);border-bottom-color:var(--accent-text)}
+.sitenav a:focus-visible{outline-offset:-3px}
 .sitenav .aux{margin-left:auto}
-.crumbs ol{list-style:none;margin:0;padding:14px 0 0;display:flex;flex-wrap:wrap;
-  font-size:13px;line-height:1.5;color:var(--muted)}
+.crumbs ol{list-style:none;margin:0;padding:12px 0 0;display:flex;flex-wrap:wrap;
+  font-size:13.5px;line-height:24px;color:var(--muted)}
 .crumbs li{min-width:0;overflow-wrap:anywhere}
 .crumbs li+li::before{content:"›";content:"›"/"";margin:0 8px;color:var(--muted-2)}
-.crumbs a{color:var(--muted)}
 .crumbs [aria-current]{color:var(--ink)}
 /* ── the home's two doors, buttons, clickable tiles (14.10.2026) ───────── */
 .doors{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:14px;margin-top:26px}
-a.door{display:block;border:1px solid var(--rule-strong);border-radius:18px;padding:22px 24px;
-  background:var(--glass);color:var(--ink);transition:border-color .16s,transform .16s var(--ease)}
-a.door:hover{background:var(--glass);border-color:var(--accent);transform:translateY(-1px);color:var(--ink)}
-.door .dh{display:block;font-family:"Bricolage Grotesque","Libre Franklin",system-ui,sans-serif;
-  font-variation-settings:"wdth" 92;font-weight:800;font-size:clamp(22px,2.6vw,28px);
-  letter-spacing:-.035em;line-height:1.15}
-.door .dh b{color:var(--accent);font-weight:800}
-.door .dnew{display:inline-block;margin-top:10px;padding:3px 10px;border-radius:100px;font-size:12.5px;
-  font-weight:600;color:#3ddc97;background:rgba(61,220,151,.12)}
-.door .dsub{display:block;margin-top:10px;color:var(--muted);font-size:14px;line-height:1.5}
+a.door{display:block;border:1px solid var(--rule-strong);border-radius:16px;padding:20px 22px;
+  background:var(--glass),var(--card);color:var(--ink);text-decoration:none;transition:border-color .16s}
+a.door:hover{border-color:var(--ink);color:var(--ink)}
+.door .dh{display:block;font-family:var(--display);font-weight:800;font-size:clamp(22px,2.6vw,28px);
+  letter-spacing:-.03em;line-height:1.15}
+.door .dh b{font-weight:800}
+.door .dnew{display:inline-block;margin-top:10px;padding:3px 10px;border-radius:999px;font-size:13px;
+  font-weight:600;color:var(--ok);background:var(--ok-bg)}
+.door .dsub{display:block;margin-top:10px;color:var(--muted);font-size:14.5px;line-height:1.5}
 .doors .cta{grid-column:1/-1;margin:4px 0 0}
-a.btn{display:inline-block;border:1px solid #e0485a;background:#d0263a;color:#fff;border-radius:100px;
-  padding:11px 22px;font-size:14.5px;font-weight:600;line-height:1.4;
-  box-shadow:0 8px 26px -10px rgba(255,67,86,.8);transition:transform .16s var(--ease)}
-a.btn:hover{background:#b81f31;color:#fff;transform:translateY(-1px)}
-a.fig{display:block;color:var(--ink);transition:border-color .16s}
-a.fig:hover{background:var(--glass);border-color:var(--rule-strong);color:var(--ink)}
+a.btn{display:inline-block;background:var(--accent);color:var(--on-accent);border-radius:999px;
+  padding:12px 22px;font-size:15px;font-weight:600;line-height:1.4;text-decoration:none;
+  transition:background-color .16s}
+a.btn:hover{background:var(--accent-hover);color:var(--on-accent)}
+a.fig{display:block;color:var(--ink);text-decoration:none;transition:border-color .16s}
+a.fig:hover{border-color:var(--ink);color:var(--ink)}
 a.fig>span::after{content:" \\2192";content:" \\2192"/""}
-.dl{margin:14px 0 0;font-size:14px}
+.dl{margin:14px 0 0;font-size:14.5px}
 /* the most repeated inline styles, as classes (14.10.2026): same look, 18 MB less over the site */
 .sub.sb2{display:block;margin-top:2px}
 .sub.sb3{display:block;margin-top:3px}
 .sub.mt5{margin-top:5px}
-td.d{font-size:12.5px}
+td.d{font-size:13px}
 h1.rec{margin-top:12px;font-size:clamp(24px,3.4vw,34px)}
 h2.pr34{margin:34px 0 12px}
 h2.pr30{margin:30px 0 12px}
-.alert .pad>p{margin:0;font-size:15.5px}
+.alert .pad>p{margin:0;font-size:16px}
 .alert .pad>p.lead{margin:0 0 8px;font-weight:600}
 .alert .pad>p.act{margin:14px 0 0}
-.empty{margin:22px 0 0;font-size:16px;color:var(--ink)}
-details.more summary{cursor:pointer;margin:12px 0 0;font-size:14px;font-weight:600;color:var(--ink)}
-footer .stand{color:var(--muted)}
-@media(max-width:600px){
-  .sitenav ul{column-gap:16px}
-  .sitenav a{font-size:13.5px;padding:9px 0 8px}
-  .sitenav .aux{margin-left:0}
-  .doors{grid-template-columns:minmax(0,1fr)}
-  a.door{padding:18px 18px}
-}
+.empty{margin:22px 0 0;font-size:16.5px;color:var(--ink)}
+details.more summary{cursor:pointer;margin:12px 0 0;padding:4px 0;font-size:14.5px;font-weight:600;color:var(--link)}
 @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;
   transition-duration:.01ms!important}}
 @media(max-width:860px){
   .wrap{padding:0 20px 44px}
-  .title{padding:30px 0 24px;grid-template-columns:1fr;gap:24px}
-  .cols,.half{grid-template-columns:1fr;gap:30px}
-  .glass .ch,.glass .pad{padding-inline:16px}
-  /* phones: headers such as "Totale (CHF)" may wrap and the numeric gutter narrows, so
-     the half-width firm tables fit 390px again instead of scrolling by 7-21px */
-  th{white-space:normal;vertical-align:bottom;letter-spacing:.08em}
+  .title{padding:28px 0 24px;grid-template-columns:minmax(0,1fr);gap:22px}
+  .cols,.half{grid-template-columns:minmax(0,1fr);gap:30px}
+  .glass .pad{padding-inline:16px}
   td.r,th.r{padding-left:12px}
-  .cmp td.c{width:96px;font-size:11.5px}
+  .cmp td.c{width:96px;font-size:12px}
   /* the home ranking fits a phone without scrolling: rank and canton step aside */
   table.top .n0,table.top .kt{display:none}
   .cmp th,.cmp td{padding:12px 10px}
 }
+@media(min-width:861px){
+  th{white-space:nowrap}
+  /* the long lists keep their header row in view (sticky) on a screen wide enough to show the whole
+     table; scroll-padding keeps a focused link clear of it */
+  html{scroll-padding-top:60px}
+  .scroll:has(>table.ls){overflow:visible}
+  table.ls thead :is(th,td){position:sticky;top:0;z-index:1;padding-top:10px;background:var(--sticky);
+    border-bottom:0;box-shadow:inset 0 -2px var(--rule-strong)}
+}
+/* ── phones (14.10.2026) ──────────────────────────────────────────────── */
+@media(max-width:600px){
+  /* the header in under 120 px: name, languages, and the menu as one row that scrolls sideways */
+  .masthead{padding-top:10px;row-gap:0}
+  .masthead a.name{font-size:16.5px}
+  .sitenav ul{flex-wrap:nowrap;overflow-x:auto;column-gap:20px;scrollbar-width:none}
+  .sitenav ul::-webkit-scrollbar{display:none}
+  .sitenav li{flex:none}
+  .sitenav .aux{margin-left:0}
+  .doors{grid-template-columns:minmax(0,1fr)}
+  a.door{padding:18px}
+  /* the comparison of simap.ch and the register fits a phone: narrower cells, the names may break */
+  .cmp th,.cmp td{padding:10px 6px}
+  .cmp td.c{width:76px}
+  .cmp thead th{overflow-wrap:anywhere}
+  /* The list tables (open tenders, a company's or an authority's awards, a project's lots) as
+     stacked rows: the first cell (deadline, date, lot) and the last (canton, amount) share the top
+     line, the others follow full width; no sideways scrolling. The header row stays a table header,
+     showing its first and last names (the unit of the amounts with them); the others are read by
+     screen readers only. No ARIA role per cell (byte budget): Safari may read a stacked row as
+     plain text, in table order. */
+  table.ls,table.ls thead,table.ls tbody{display:block}
+  table.ls thead tr{display:flex;justify-content:space-between;gap:12px;border-bottom:2px solid var(--rule-strong)}
+  table.ls thead :is(th,td){display:block;border:0;padding:0 0 8px;white-space:nowrap}
+  table.ls thead :is(th,td):not(:first-child):not(:last-child){position:absolute;width:1px;height:1px;
+    margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  table.ls tbody tr{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:14px;row-gap:4px;
+    padding:12px 0;border-bottom:1px solid var(--rule)}
+  table.ls td{display:block;grid-column:1/-1;min-width:0;padding:0;border:0;overflow-wrap:anywhere}
+  table.ls td:first-child{grid-column:1;grid-row:1}
+  table.ls td:last-child{grid-column:2;grid-row:1;text-align:right;padding-left:0}
+  /* a company's awards: the authority and the canton share the third line */
+  table.awc td:nth-child(3){grid-column:1;grid-row:3}
+  table.awc td:nth-child(4){grid-column:2;grid-row:3;text-align:right}
+}
+@supports (animation-timeline:scroll(self inline)){@media(max-width:600px){
+  .sitenav ul{-webkit-mask-image:linear-gradient(90deg,transparent,#000 var(--fl),#000 calc(100% - var(--fr)),transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 var(--fl),#000 calc(100% - var(--fr)),transparent);
+    animation:scroll-hint linear both;animation-timeline:scroll(self inline)}}}
+/* ── print: the record on paper. No menu, no forms, no decoration, black on white; the links to the
+   publication on simap.ch printed out; a row never split over two pages (14.10.2026) ───────────── */
+@media print{
+  :root{--paper:#fff;--card:#fff;--panel:#fff;--sticky:#fff;--ink:#000;--text:#000;--muted:#333;
+    --muted-2:#333;--rule:#bbb;--rule-strong:#555;--line:#555;--hover:transparent;--link:#000;
+    --link-hover:#000;--accent-text:#000;--warm:#000;--ok:#000;--ok-bg:#fff;
+    --off-bg:#fff;--mark:#555;--glass:none;color-scheme:light}
+  @page{margin:16mm 14mm}
+  body{background:#fff;color:#000;font-size:10.5pt;line-height:1.45}
+  body::before,body::after,.skip,.langs,.sitenav,.crumbs,.alert,.doors,.tags,.dl,.form,
+  details.more>summary,noscript,.cta,a.fig>span::after{display:none!important}
+  .wrap{max-width:none;padding:0}
+  .masthead{border:0;padding:0 0 6pt}
+  .masthead a.name{font-size:11pt}
+  .title{display:block;padding:6pt 0 10pt}
+  .title .rail{margin-top:8pt}
+  h1{font-size:20pt;letter-spacing:-.02em}
+  h1.rec{font-size:16pt}
+  .runhead{margin-top:16pt}
+  .figures{display:flex;flex-wrap:wrap;gap:6pt;padding:10pt 0 0}
+  .fig{flex:1 1 30%;border:1px solid #999;padding:6pt 8pt}
+  .fig b{font-size:15pt}
+  .cols,.half{display:block}
+  .scroll{overflow:visible!important;-webkit-mask-image:none!important;mask-image:none!important;
+    animation:none!important}
+  table{font-size:9.5pt}
+  thead{display:table-header-group}
+  tr,li,.fig,figure,.winner,.official,.glass{break-inside:avoid}
+  h1,h2,h3,.runhead{break-after:avoid}
+  a{color:#000;text-decoration:underline}
+  a[href^="https://www.simap.ch"]::after{content:" <" attr(href) ">";font-size:9pt;word-break:break-all}
+  figure,.winner,.official{border:1px solid #999;background:#fff}
+  .cc td span,.bl .trk i,figure .note .key{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  footer{margin-top:16pt;color:#000}
+}
 """
 
+# What the colour tokens of the CSS must satisfy in BOTH themes (WCAG 2.2 AA; 14.10.2026): text 4.5:1
+# against every background it is set on, and 3:1 for what identifies a control (the border of a field
+# or a pill, the red button against the page), the focus ring, the current menu item's underline and
+# the chart marks. (foreground token, background token, minimum); a translucent background is laid
+# over --paper first. controlla.py reads both token sets from docs/style.css and measures each pair.
+CONTRAST = (
+    ("ink", "paper", 4.5), ("ink", "card", 4.5), ("ink", "sticky", 4.5), ("text", "paper", 4.5),
+    ("text", "card", 4.5), ("muted", "paper", 4.5), ("muted", "card", 4.5), ("muted", "sticky", 4.5),
+    ("muted", "off-bg", 4.5), ("muted-2", "paper", 4.5), ("muted-2", "card", 4.5),
+    ("link", "paper", 4.5), ("link", "card", 4.5), ("link-hover", "paper", 4.5), ("link-hover", "card", 4.5),
+    ("accent-text", "paper", 4.5), ("accent-text", "card", 4.5), ("accent-text", "off-bg", 4.5),
+    ("warm", "paper", 4.5), ("warm", "card", 4.5), ("ok", "ok-bg", 4.5), ("ok", "card", 4.5),
+    ("on-accent", "accent", 4.5), ("on-accent", "accent-hover", 4.5),
+    ("paper", "ink", 4.5), ("paper", "muted", 4.5),
+    ("accent", "paper", 3), ("line", "paper", 3), ("line", "card", 3), ("focus", "paper", 3),
+    ("focus", "card", 3), ("accent-text", "paper", 3), ("mark", "panel", 3), ("mark", "paper", 3),
+)
+# The two fonts the first screen sets (text and headings), one file each (14.10.2026): every weight of
+# a family was its own URL of one and the same variable file, fetched two and three times per page
+# (net log: 289 KB of fonts on the home, 106 KB needed). No type="font/woff2": every browser that
+# preloads reads woff2, and the attribute cost 34 bytes on each of 92,000 pages.
+PRELOAD = ('<link rel="preload" href="{base}/fonts/lf.woff2" as="font" crossorigin>\n'
+           '<link rel="preload" href="{base}/fonts/bg.woff2" as="font" crossorigin>\n')
+# The icon: the SVG for browsers that take one; /favicon.ico and /apple-touch-icon.png sit at the root,
+# where browsers and iOS look for them without a tag (two tags would cost 9 MB over the site).
 HEAD = """<!doctype html>
 <html lang="{lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -1602,9 +1705,7 @@ HEAD = """<!doctype html>
 <link rel="canonical" href="{site}{path}">
 {alts}
 <link rel="icon" href="{base}/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="{base}/fonts/LibreFranklin-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="{base}/fonts/BricolageGrotesque-800-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{base}/style.css">
+""" + PRELOAD + """<link rel="stylesheet" href="{base}/style.css">
 {verify}</head><body>
 <a class="skip" href="#inhalt">{skip}</a>
 <div class="wrap">
@@ -1801,13 +1902,34 @@ def desc_pick(*cands: str, limit: int = 155) -> str:
     return fit_desc(cands[-1], limit)
 
 
+def og_tags(title: str, desc: str, path: str) -> str:
+    """Open Graph and the Twitter card (14.10.2026), for a link shared in a chat or a social network:
+    title, description, address, type, the card image of the page's language (1200×630) and the
+    locale. X reads the og: tags for everything but the card type. title and desc come escaped."""
+    return (f'<meta property="og:type" content="website">\n'
+            f'<meta property="og:title" content="{title}">\n'
+            f'<meta property="og:description" content="{desc}">\n'
+            f'<meta property="og:url" content="{ORIGIN}{path}">\n'
+            f'<meta property="og:image" content="{ORIGIN}/og-{LANG}.png">\n'
+            f'<meta property="og:locale" content="{lingue.OG_LOCALE[LANG]}">\n'
+            '<meta name="twitter:card" content="summary_large_image">\n')
+
+
+def ld_script(data: dict) -> str:
+    """A JSON-LD block; '<' escaped so no value can close the script element."""
+    js = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c")
+    return f'<script type="application/ld+json">{js}</script>\n'
+
+
 def page(title: str, desc: str, body: str, path: str, kicker: str = "",
          leaf: str = "", robots: str = "", head_extra: str = "", fresh: bool = False,
-         mid=None, leaf_lang: str = "") -> str:
+         mid=None, leaf_lang: str = "", og=None) -> str:
     """One page in the site's shell. kicker is no longer shown (the menu marks the section since
     14.10.2026); fresh: the page changes every day anyway and states the data date itself
     (stand_line); mid, leaf_lang: the breadcrumb levels its URL does not show (trail) and the
-    language of its last crumb when that is a publication's title in another language."""
+    language of its last crumb when that is a publication's title in another language.
+    og: the Open Graph tags, by default on every indexable page; an open tender's page (noindex)
+    asks for them, the 66,000 award pages do not carry them (600 bytes a page; 14.10.2026)."""
     # hreflang tells the search engine these are one page in four languages, not four
     # pages competing with each other for the same query.
     # x-default is the page's own German version: it named the root for every page, a URL that
@@ -1826,9 +1948,11 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
     tr = trail(path, leaf or re.split(r"\s[—–]\s", title)[0], mid)
     if noindex:
         NOINDEX.add(path)
+    og_html = og_tags(e(title), e(fit_desc(desc)), path) if (not noindex if og is None else og) else ""
     return (HEAD.format(title=e(title), desc=e(fit_desc(desc)), site=ORIGIN, base=BASE, path=path,
                         lang=LANG, alts=alts,
-                        verify=VERIFY + (f'<meta name="robots" content="{robots}">\n' if robots else "") + head_extra,
+                        verify=VERIFY + (f'<meta name="robots" content="{robots}">\n' if robots else "")
+                        + og_html + head_extra,
                         sitename=e(_.site), langnav=nav, langlabel=e(_.language), skip=e(_.skip),
                         navlabel=e(_.nav_label), sitenav=site_nav(path, tr))
             + crumbs_html(tr, leaf_lang, ld=not noindex) + '<main id="inhalt">\n'
@@ -2417,14 +2541,15 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                 elif joint_priced(a):
                     joint += 1
         if per_year:
+            yu = formato.unit_for(v for _n, v in per_year.values())
             b.append(f'<div class="sec"><div class="runhead"><h2>{e(_p.analysis)}</h2>'
                      f'<span>{e(_p.derived)}</span></div><div class="scroll"><table>{cap(_p.analysis)}<thead><tr>'
-                     f'<th>{_.year}</th><th class="r">{_.awards}</th><th class="r">{_.sum}</th>'
+                     f'<th>{_.year}</th><th class="r">{_.awards}</th>{money_th("sum_l", yu)}'
                      "</tr></thead><tbody>")
             for y in sorted(per_year, reverse=True):
                 n_y, v_y = per_year[y]
                 b.append(f'<tr><td class="mono">{e(y)}</td><td class="r num">{formato.count(n_y)}</td>'
-                         f'<td class="r num">{formato.cell(v_y or None, empty_sr=_.no_own_amount)}</td></tr>')
+                         f'<td class="r num">{formato.column_cell(v_y or None, yu, empty_sr=_.no_own_amount)}</td></tr>')
             b.append("</tbody></table></div>")
             if joint:
                 b.append(f'<p class="sub" style="margin:10px 0 0">'
@@ -2497,26 +2622,30 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                          f'{e(_if("largest_share", share=share))}</p>')
             b.append("</div>")
 
-        b.append(f'<div class="sec"><div class="runhead"><h2>{_.awards}</h2>'
-                 f'<span>{_.chronological}</span></div><div class="scroll"><table>'
-                 f'{cap(_if("cap_company_awards", name=name))}<thead><tr>'
-                 f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.buyer}</th>'
-                 f'<th style="width:44px">{_.canton_abbr}</th><th class="r">{_.amount}</th>'
-                 "</tr></thead><tbody>")
-        heads = distinct_titles([de(a, "title") for a in rows], 130)
         # An award to several firms: this firm's own price, marked as the price of its offer — the
         # column showed the FIRST firm's price under 'an mehrere Unternehmen' (08.10.2026). It
         # stays out of every sum on the page, like before.
-        amts = []
+        firm_amt = []
         for a in rows:
             firms = firm_prices(a)
             if len(firms) > 1:
-                p, cur = next(((fp, fc) for fw, fp, fc, _n in firms if slug(fw) == s), (None, cur_of(a)))
-                amts.append(formato.cell(p, cur, empty_sr=_.not_published)
-                            + f'<span class="sub" style="display:block">'
-                            f'{e(_if("own_offer", n=formato.count(len(firms))) if p else _.joint)}</span>')
+                firm_amt.append(next(((fp, fc) for fw, fp, fc, _n in firms if slug(fw) == s), (None, cur_of(a))))
             else:
-                amts.append(formato.cell(price_of(a), cur_of(a), empty_sr=_.not_published))
+                firm_amt.append((price_of(a), cur_of(a)))
+        unit = formato.unit_for(p for p, cur in firm_amt if p and cur == "CHF")
+        b.append(f'<div class="sec"><div class="runhead"><h2>{_.awards}</h2>'
+                 f'<span>{_.chronological}</span></div><div class="scroll"><table class="ls awc">'
+                 f'{cap(_if("cap_company_awards", name=name))}<thead><tr>'
+                 f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.buyer}</th>'
+                 f'<th style="width:44px">{_.canton_abbr}</th>{money_th("amount", unit)}'
+                 "</tr></thead><tbody>")
+        heads = distinct_titles([de(a, "title") for a in rows], 130)
+        amts = []
+        for a, (p, cur) in zip(rows, firm_amt):
+            n_f = len(firm_prices(a))
+            amts.append(formato.column_cell(p, unit, cur, empty_sr=_.not_published)
+                        + (f'<span class="sub sb2">{e(_if("own_offer", n=formato.count(n_f)) if p else _.joint)}</span>'
+                           if n_f > 1 else ""))
         twn = twin_notes(rows, [(a.get("publicationDate"), h, a.get("buyerName"), a.get("canton"), amt)
                                 for a, h, amt in zip(rows, heads, amts)])
         for i, (a, head, amt) in enumerate(zip(rows, heads, amts)):
@@ -2813,12 +2942,13 @@ def lot_table(rows: list, pages: dict, h1: str) -> str:
     of them, the last one read: lot 15 of 6965, lot 2 of 28439 (08.10.2026)."""
     has_lots = any(a.get("_lot") is not None for a in rows)
     days = {(a.get("publicationDate") or "")[:10] for a in rows}
+    # the official record: each amount exactly as published, in francs, the unit in the header
     out = [f'<div class="sec"><div class="runhead"><h2>{_.lots if has_lots else _.awards}</h2>'
-           f'<span>{formato.count(len(rows))}</span></div><div class="scroll"><table>'
+           f'<span>{formato.count(len(rows))}</span></div><div class="scroll"><table class="ls lots">'
            f'{cap(_.lots if has_lots else _.awards)}<thead><tr>'
            + (f'<th style="width:52px">{_.lot}</th><th>{_.lot_name}</th>' if has_lots
               else f'<th style="width:96px">{_.date}</th>')
-           + f'<th>{_.winner}</th><th class="r">{_.amount}</th></tr></thead><tbody>']
+           + f'<th>{_.winner}</th>{money_th("amount", "chf")}</tr></thead><tbody>']
     for a in rows:
         d = (a.get("publicationDate") or "")[:10]
         sub = [e(a.get("publicationNumber") or "")]
@@ -2854,7 +2984,7 @@ def lot_table(rows: list, pages: dict, h1: str) -> str:
                    f'{formato.exact(p, c) if p else e(_.not_published)}</span>' if priced else "")
                 + (f'<span class="sub" style="display:block">{note_html(nt)}</span>' if nt else "")
                 + "</div>" for i, ((w, p, c, _n), nt) in enumerate(zip(firms, each))) + price_notes(firms)
-            amt = (f'–<span class="sub" style="display:block">{e(_.per_firm)}</span>'
+            amt = (f'–<span class="sub sb2">{e(_.per_firm)}</span>'
                    if priced else formato.cell(None, empty_sr=_.not_published))
         else:
             who = firm_link(firms[0][0], pages) if firms else "–"
@@ -2958,11 +3088,12 @@ def award_mini_table(rows: list, pages: dict, caption: str, with_buyer: bool) ->
     """A few awards in a table: date, title (and the authority when it is not the page's own), who
     won, the amount by the site's rule (award_cell: one firm's amount, none for several)."""
     heads = distinct_titles([de(a, "title") for a in rows], 100)
-    amts = [award_cell(a) for a in rows]
+    unit = award_unit(rows)
+    amts = [award_cell(a, unit) for a in rows]
     twn = twin_notes(rows, [(a.get("publicationDate"), h, a.get("buyerName") if with_buyer else "",
                              tuple(winners(a)), amt) for a, h, amt in zip(rows, heads, amts)])
-    out = [f'<div class="scroll"><table>{cap(caption)}<thead><tr><th style="width:96px">{_.date}</th>'
-           f'<th>{_.contract}</th><th>{_.winner}</th><th class="r">{_.amount}</th></tr></thead><tbody>']
+    out = [f'<div class="scroll"><table class="ls awb">{cap(caption)}<thead><tr><th style="width:96px">{_.date}</th>'
+           f'<th>{_.contract}</th><th>{_.winner}</th>{money_th("amount", unit)}</tr></thead><tbody>']
     for i, (a, head, amt) in enumerate(zip(rows, heads, amts)):
         d = a.get("publicationDate") or ""
         who = " · ".join(firm_link(w, pages) for w in winners(a)) or "–"
@@ -3296,7 +3427,9 @@ def build_awards(awards: list, opens: list, expired: list, pages: dict, sectors:
                    # Sono quasi identiche fra loro e il testo simap non e' modificabile (AGB
                    # §5): tolte dall'indice per concentrare il budget di scansione sulle
                    # pagine azienda e sugli indici, che hanno contenuto proprio.
-                   robots="noindex,follow"))
+                   # An open tender's page is the one link people pass on: it carries the share
+                   # card (og:*), the award pages do not (14.10.2026).
+                   robots="noindex,follow", og=is_tender and not gone))
         n += 1
     return n
 
@@ -3456,16 +3589,17 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
         b.append(f'<div class="half"><div><div class="runhead"><h2>{_.companies}</h2>'
                  f'<span>{_.by_awards}</span></div>' + table + "</div><div>"
                  + division_figure(rows, sect, sectors) + "</div></div>")
+        recent = sorted(rows, key=lambda x: x.get("publicationDate") or "", reverse=True)[:60]
+        unit = award_unit(recent)
         b.append(f'<div class="sec"><div class="runhead"><h2>{_.awards}</h2>'
-                 f"<span>{_.chronological}</span></div><div class=\"scroll\"><table>"
+                 f"<span>{_.chronological}</span></div><div class=\"scroll\"><table class=\"ls awb\">"
                  f'{cap(_.awards + ", " + _.chronological)}<thead><tr>'
                  f'<th style="width:96px">{_.date}</th><th>{_.contract}</th><th>{_.winner}</th>'
-                 f'<th class="r">{_.amount}</th></tr></thead><tbody>')
-        recent = sorted(rows, key=lambda x: x.get("publicationDate") or "", reverse=True)[:60]
+                 f'{money_th("amount", unit)}</tr></thead><tbody>')
         heads = distinct_titles([de(a, "title") for a in recent], 110)
         # rows that still read the same (two projects under one title, or one project's lots
         # awarded separately) get the number that tells them apart
-        amts = [award_cell(a) for a in recent]
+        amts = [award_cell(a, unit) for a in recent]
         twn = twin_notes(recent, [(a.get("publicationDate"), h, tuple(winners(a)), amt)
                                   for a, h, amt in zip(recent, heads, amts)])
         for i, (a, head, amt) in enumerate(zip(recent, heads, amts)):
@@ -3521,17 +3655,18 @@ def firm_table(rows: list, comp: dict, pages: dict, limit: int = 60) -> str:
             p = chf_amount(r)
             if p is not None and len(ws) == 1:
                 sums[k] += p
-    out = [f'<div class="scroll"><table>{cap(_.companies + " – " + _.by_awards)}<thead><tr><th>{_.company}</th>'
-           f'<th class="r">{_.awards}</th><th class="r">{_.sum}</th></tr></thead><tbody>']
     # ties: the larger sum first, then the name — the same order on every build
     order = sorted(firms.items(), key=lambda kv: (-kv[1], -sums.get(kv[0], 0),
                                                   fold(seen_name.get(kv[0], ""))))[:limit]
+    unit = formato.unit_for(sums.get(sl) for sl, _k in order)
+    out = [f'<div class="scroll"><table>{cap(_.companies + " – " + _.by_awards)}<thead><tr><th>{_.company}</th>'
+           f'<th class="r">{_.awards}</th>{money_th("sum_l", unit)}</tr></thead><tbody>']
     for sl, k in order:
         label = (comp.get(sl) or {}).get("name") or seen_name.get(sl, sl)
         cell = (f'<a href="{BASE}/{LANG}/unternehmen/{e(sl)}/">{e(label)}</a>'
                 if sl in pages else e(label))
         out.append(f'<tr><td>{cell}</td><td class="r num">{formato.count(k)}</td>'
-                   f'<td class="r num">{formato.cell(sums.get(sl) or None, empty_sr=_.no_own_amount)}</td></tr>')
+                   f'<td class="r num">{formato.column_cell(sums.get(sl) or None, unit, empty_sr=_.no_own_amount)}</td></tr>')
     out.append("</tbody></table></div>")
     return "\n".join(out), len(firms)
 
@@ -3740,25 +3875,40 @@ for(z=0;z<all.length;z++){if(all[z].value===v){i=all[z];break}}
 if(!i){var t=Object.prototype.hasOwnProperty.call(nm,v)?String(nm[v]):'';if(!t||!box)return;
 var l=document.createElement('label'),s=document.createElement('span'),ref=null;i=document.createElement('input');
 i.type='checkbox';i.name=n;i.value=v;s.className='tag';s.textContent=t;l.appendChild(i);l.appendChild(s);
-if(n==='k'){for(z=0;z<all.length;z++){if(all[z].value>v){ref=all[z].parentNode;break}}}else{ref=last?last.nextSibling:box.firstChild;last=l}
-box.insertBefore(l,ref)}
-i.checked=true;c++;hit++})});
+var bx=box;if(n==='k'){for(z=0;z<all.length;z++){if(all[z].value>v){ref=all[z].parentNode;break}}}
+else{[].forEach.call(f.querySelectorAll('details[data-c]'),function(dd){if((' '+dd.getAttribute('data-c')+' ').indexOf(' '+v+' ')>=0)bx=dd.querySelector('.pills')||bx});ref=bx.firstChild}
+bx.insertBefore(l,ref)}
+i.checked=true;c++;hit++;var g=i.closest?i.closest('details'):null;if(g)g.open=true})});
 if(!hit)return;fill();
 var em=f.elements.EMAIL,sec=f.parentNode||f;try{sec.scrollIntoView({block:'start'})}catch(x){}
 try{if(window.matchMedia&&matchMedia('(pointer:fine)').matches)em.focus({preventScroll:true})}catch(x){}}
 pre();})();"""
 # The prefill above reads ?k=ZH&b=45 (the links on the company pages): only the 26
 # canton codes and two-digit CPV divisions are accepted, at most five of each. A value
-# without a pill gets one, labelled from the build-time name map, never from the URL.
+# without a pill gets one, labelled from the build-time name map, never from the URL, in the
+# group of its division; the group holding a prefilled choice is opened (14.10.2026).
+
+# The industries of the form in groups (14.10.2026): forty pills one under the other put the button
+# 1,600 px below the e-mail field on a phone. Every CPV division of lingue.CPV_SHORT is in one group;
+# a division the vocabulary lacks lands in 'Weitere Branchen'. Names: META["abo_grp_<key>"].
+ABO_GROUPS = (("bau", ("45", "71", "44", "43", "70")),
+              ("it", ("72", "48", "30", "32", "64")),
+              ("tech", ("31", "38", "42", "50", "51", "65", "09", "41", "76", "90", "77")),
+              ("verkehr", ("34", "35", "60", "63")),
+              ("dienst", ("79", "73", "75", "66", "80", "85", "33", "92", "98", "55")),
+              ("waren", ("03", "14", "15", "16", "18", "19", "22", "24", "37", "39")))
+assert sorted(c for _g, cs in ABO_GROUPS for c in cs) == sorted(lingue.CPV_SHORT["de"])
 
 
 def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
     mail = ABO_MAIL
-    # all 26 cantons, in the reader's alphabetical order (AI was missing whenever it had
-    # no open tender, and the Italian list was sorted by code)
+    # all 26 cantons (AI was missing whenever it had no open tender), by their codes since 14.10.2026:
+    # seven to a row on a phone instead of three, in the order of the codes; the name is read out
+    # with the code and shown on hover
     cant_pills = "".join(
-        f'<label><input type="checkbox" name="k" value="{e(c)}"><span class="tag">{e(canton_name_or(c, c))}</span></label>'
-        for c in sorted(CANTONS, key=lambda c: fold(canton_name_or(c, c))))
+        f'<label title="{e(canton_name_or(c, c))}"><input type="checkbox" name="k" value="{e(c)}">'
+        f'<span class="tag">{e(c)}<span class="sr"> {e(canton_name_or(c, c))}</span></span></label>'
+        for c in sorted(CANTONS))
     # every industry with an open tender, like the tenders page (it listed 40 industries, each
     # with a feed, while this page offered 24 and said "every industry page has a feed")
     top_sect = sorted(by_sect.items(), key=lambda kv: (-len(kv[1]), kv[0]))
@@ -3766,9 +3916,16 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
     def pill(code2: str) -> str:
         return lingue.CPV_SHORT[LANG].get(code2) or short_sector(sect_name(code2), 40)
 
-    sect_pills = "".join(
-        f'<label><input type="checkbox" name="b" value="{e(c)}"><span class="tag">{e(pill(c))}</span></label>'
-        for c, r in top_sect)
+    def pills(codes: list) -> str:
+        return "".join(f'<label><input type="checkbox" name="b" value="{e(c)}"><span class="tag">{e(pill(c))}</span></label>'
+                       for c in codes)
+    grouped = {c for _g, cs in ABO_GROUPS for c in cs}
+    groups = [(g, " ".join(cs), [c for c, _r in top_sect if c in cs]) for g, cs in ABO_GROUPS]
+    groups.append(("other", "", [c for c, _r in top_sect if c not in grouped]))
+    # each group closed until opened, the most frequent industry first inside it (as before)
+    sect_groups = "".join(
+        f'<details class="grp"{f" data-c={chr(34)}{dc}{chr(34)}" if dc else ""}><summary>{e(_m("abo_grp_" + g))}</summary>'
+        f'<div class="pills" data-g="b">{pills(cs)}</div></details>' for g, dc, cs in groups if cs)
     # Names for pills the prefill may have to create: every canton, every CPV division,
     # in the page's language. Escaped so no label can close the script element.
     names = {"k": {c: canton_name_or(c, c) for c in sorted(CANTONS)},
@@ -3785,9 +3942,8 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
             # each group of pills is a fieldset: a screen reader names the group with every checkbox
             # in it (audit 13.10.2026)
             f'<fieldset><legend class="f">{e(_m("abo_form_cantons"))}</legend>'
-            f'<div class="pills" data-g="k">{cant_pills}</div></fieldset>'
-            f'<fieldset><legend class="f">{e(_m("abo_form_sectors"))}</legend>'
-            f'<div class="pills" data-g="b">{sect_pills}</div></fieldset>'
+            f'<div class="pills k" data-g="k">{cant_pills}</div></fieldset>'
+            f'<fieldset><legend class="f">{e(_m("abo_form_sectors"))}</legend>{sect_groups}</fieldset>'
             # the pills reach KANTON/BRANCHE only through the script; without it both stay ALLE
             f'<noscript><p class="sub" style="margin:14px 0 0">{e(_m("abo_form_nojs"))}</p></noscript>'
             f'<input type="hidden" name="KANTON" value="ALLE"><input type="hidden" name="BRANCHE" value="ALLE">'
@@ -3817,7 +3973,8 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
          + "</div></div>"]
     write(f"/{LANG}/ausschreibungen/abo/index.html", page(
         fit_title(_m("abo_title"), "\u00a0– auftragsregister.ch"), _m("abo_desc"),
-        "\n".join(b), f"/{LANG}/ausschreibungen/abo/", _.tenders, leaf=_.nav_alert))
+        "\n".join(b), f"/{LANG}/ausschreibungen/abo/", _.tenders, leaf=_.nav_alert,
+        head_extra=feed_head(f"/{LANG}/ausschreibungen/feed.xml", _m("feed_all"))))
 
 
 def canton_list(by_cant: dict) -> str:
@@ -3868,7 +4025,7 @@ def open_sector_title(name: str, k: int) -> str:
 def tender_table(rows: list) -> str:
     """Open tenders, the nearest deadline first: deadline, title (in its own language, lang=),
     authority, canton."""
-    out = [f'<div class="scroll"><table class="tl">{cap(_m("open_table_h2"))}<thead><tr>'
+    out = [f'<div class="scroll"><table class="tl ls">{cap(_m("open_table_h2"))}<thead><tr>'
            f'<th style="width:104px">{_.deadline}</th>'
            f'<th>{_.tender}</th><th>{_.buyer}</th><th style="width:44px">{_.canton_abbr}</th>'
            "</tr></thead><tbody>"]
@@ -3880,7 +4037,7 @@ def tender_table(rows: list) -> str:
     for i, (t, head, label) in enumerate(zip(rows, heads, labels)):
         dl = t.get("offerDeadline") or ""
         sub = label + (project_no(t) if i in twins else "")
-        cls, when = due_cell(dl, formato.date(dl))
+        cls, when = due_cell(dl, formato.date(dl), soon=True)
         out.append(
             f'<tr data-deadline="{e(dl)}"><td class="when mono d{cls}">{when}</td>'
             f'<td><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/"{la(t)}>{e(head)}</a>'
@@ -4104,21 +4261,22 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
     # the monthly chart sits right under the key figures, with its own title and takeaway
     b.append(month_chart(awards, _i.mc_title_home))
 
+    rank = [(s, p) for s, p in sorted(pages.items(), key=lambda kv: (-kv[1]["n"], -kv[1]["value"]))][:25]
+    unit = formato.unit_for(p["value"] for _s, p in rank)
     b.append('<div class="cols"><div>'
              f'<div class="runhead"><h2>{_i.firms_cap}</h2>'
              f'<span>{e(span)}</span></div>'
              f'<div class="scroll"><table class="top">{cap(_i.firms_cap)}<thead><tr><td class="n0" style="width:34px"></td>'
              f'<th>{_.company}</th><th class="kt" style="width:46px">'
              f'<abbr title="{e(_.canton_most)}">{_.canton_abbr}</abbr></th>'
-             f'<th class="r">{_.awards}</th><th class="r">{_.sum}</th></tr></thead><tbody>')
-    rank = [(s, p) for s, p in sorted(pages.items(), key=lambda kv: (-kv[1]["n"], -kv[1]["value"]))][:25]
+             f'<th class="r">{_.awards}</th>{money_th("sum_l", unit)}</tr></thead><tbody>')
     for i, (s, p) in enumerate(rank, 1):
         b.append(f'<tr><td class="sub num n0">{i:02d}</td><td>'
                  f'<a href="{BASE}/{LANG}/unternehmen/{e(s)}/">{e(p["name"])}</a>'
                  + (f'<span class="sub sb2">'
                     f'{e(short_sector(p["sector"], 46))}</span>' if p["sector"] else "")
                  + f'</td><td class="kt">{abbr_canton(p["cant"])}</td><td class="r num">{formato.count(p["n"])}</td>'
-                 f'<td class="r num">{formato.cell(p["value"] or None, empty_sr=_.no_own_amount)}</td></tr>')
+                 f'<td class="r num">{formato.column_cell(p["value"] or None, unit, empty_sr=_.no_own_amount)}</td></tr>')
     b.append("</tbody></table></div></div><div>")
 
     if soon:
@@ -4137,7 +4295,7 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
                         + _if("lots_n", n=formato.count(len(g))).replace(" ", "\u00a0"))
             else:
                 text = one
-            cls, when = due_cell(dl, formato.date_short(dl))
+            cls, when = due_cell(dl, formato.date_short(dl), soon=True)
             b.append(f'<li data-deadline="{e(dl)}"><div class="row"><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/"{la(t)}>'
                      f'{e(text)}</a>'
                      f'<span class="when{cls}">{when}</span>'
@@ -4174,7 +4332,8 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
 
     write(f"/{LANG}/index.html", page(
         _m("home_title"), _m("home_desc", n=formato.count(len(awards))),
-        "\n".join(b), f"/{LANG}/", fresh=True))
+        "\n".join(b), f"/{LANG}/", fresh=True,
+        head_extra=site_ld() + feed_head(f"/{LANG}/ausschreibungen/feed.xml", _m("feed_all"))))
 
 
 
@@ -4197,6 +4356,43 @@ def sentences(text: str, limit: int = 155) -> str:
             break
         out = nxt
     return out or fit_desc(text, limit)
+
+
+# The register as an organisation and a website, for search engines (14.10.2026): name, address on
+# the web, logo, e-mail — no postal address. No SearchAction until the site has a search.
+ORG_NAME = "auftragsregister.ch"
+
+
+def org_ld() -> dict:
+    return {"@type": "Organization", "@id": f"{ORIGIN}/#org", "name": ORG_NAME, "url": f"{ORIGIN}/",
+            "logo": f"{ORIGIN}/icon-512.png", "email": ABO_MAIL}
+
+
+def site_ld() -> str:
+    """WebSite and Organization, on the home pages."""
+    return ld_script({"@context": "https://schema.org", "@graph": [
+        {"@type": "WebSite", "@id": f"{ORIGIN}/{LANG}/#site", "name": _.site, "url": f"{ORIGIN}/{LANG}/",
+         "inLanguage": LANG, "publisher": {"@id": f"{ORIGIN}/#org"}},
+        org_ld()]})
+
+
+def dataset_ld(u: dict) -> str:
+    """The register as a Dataset, on the about pages: what it covers (since the archive's first
+    month, Switzerland), what it is built from (simap.ch) and the CSV files it offers, one per canton.
+    No licence: the publications are simap's, and their terms are not ours to grant (14.10.2026)."""
+    files = sorted(k for k in _CSV_DONE if k.startswith("/daten/kanton/"))
+    return ld_script({
+        "@context": "https://schema.org", "@type": "Dataset",
+        "name": f"{_.site} – {_.awards}",
+        "description": _ws(u["lead"] + " " + u["sections"][0][2][0]),
+        "url": f"{ORIGIN}/{LANG}/ueber/", "inLanguage": LANG,
+        "creator": org_ld(), "isAccessibleForFree": True,
+        "temporalCoverage": f"{RAMP_START or CUR_MONTH}/{DATA_DATE}",
+        "spatialCoverage": {"@type": "Country", "name": lingue.COUNTRY[LANG]},
+        "isBasedOn": "https://www.simap.ch", "dateModified": DATA_DATE,
+        "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv",
+                          "name": canton_name_or(k.rsplit("/", 1)[-1][:-4], ""),
+                          "contentUrl": f"{ORIGIN}{k}"} for k in files]})
 
 
 def build_impressum() -> None:
@@ -4284,7 +4480,8 @@ def build_about(awards: list, opens: list) -> None:
     write(f"/{LANG}/ueber/index.html", page(
         f"{u['title']}\u00a0– {_.site}" if len(f"{u['title']}\u00a0– {_.site}") <= 64 else u["title"],
         sentences(u["lead"] + " " + u["sections"][0][2][0]),
-        "\n".join(b), f"/{LANG}/ueber/", _.register, leaf=_.nav_about, fresh=True))
+        "\n".join(b), f"/{LANG}/ueber/", _.register, leaf=_.nav_about, fresh=True,
+        head_extra=dataset_ld(u)))
 
 
 def build_abo_status() -> None:
@@ -4341,9 +4538,8 @@ def build_404() -> None:
             '<meta name="viewport" content="width=device-width,initial-scale=1">\n'
             f'<title>404 · {" · ".join(e(lingue.m("nf_title", l)) for l in LANGS)}</title>\n'
             '<meta name="robots" content="noindex">\n'
-            + re.search(r'<link rel="icon"[^>]*>\n', HEAD).group(0).replace("{base}", BASE) +
-            f'<link rel="preload" href="{BASE}/fonts/LibreFranklin-400-latin.woff2" as="font" type="font/woff2" crossorigin>\n'
-            f'<link rel="preload" href="{BASE}/fonts/BricolageGrotesque-800-latin.woff2" as="font" type="font/woff2" crossorigin>\n'
+            + re.search(r'<link rel="icon"[^>]*>\n', HEAD).group(0).replace("{base}", BASE)
+            + PRELOAD.replace("{base}", BASE) +
             f'<link rel="stylesheet" href="{BASE}/style.css">\n<style>{NF_CSS}</style>\n</head><body>\n'
             f'<a class="skip" href="#inhalt">{e(lingue.t("skip", "de"))}</a>\n'
             f'<div class="wrap">\n<header class="masthead"><a class="name" href="{BASE}/">auftragsregister.ch</a>\n'
@@ -4365,9 +4561,6 @@ def build_404() -> None:
     write("/404.html", html)
 
 
-FAVICON = ("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' "
-           "rx='18' fill='#c4472a'/><text x='50' y='73' font-size='62' font-family='Arial,sans-serif' "
-           "font-weight='800' fill='#fbfaf7' text-anchor='middle'>A</text></svg>\n")
 STAND_JS = """(function(){var d=%s,l=document.documentElement.lang,s=d[l],p=(d.t[l]||'').split('{d}');
 if(!s||p.length!==2)return;[].forEach.call(document.querySelectorAll('[data-stand]'),function(e){
 var t=document.createElement('time');t.setAttribute('datetime',d.iso);t.textContent=s;
@@ -4516,8 +4709,13 @@ def main() -> None:
     build_abo_status()
     build_404()
     write("/stand.js", stand_js())
-    # the icon every page names (it was a 600-byte data URI inside each of 92,000 pages)
-    write("/favicon.svg", FAVICON)
+    # The icons and the share cards (immagini/, 14.10.2026): favicon.svg, which every page names (it
+    # was a 600-byte data URI inside each of 92,000 pages); favicon.ico and apple-touch-icon.png at the
+    # root, where browsers and iOS look for them without a tag; icon-512.png, the logo of the
+    # structured data; og-<lang>.png, the 1200×630 card of a shared link.
+    for f in sorted((ROOT / "immagini").glob("*")):
+        if f.suffix in (".svg", ".png", ".ico"):
+            shutil.copy(f, OUT / f.name)
     if CSV_BYTES:
         print(f"  csv     : {len(_CSV_DONE)} file, "
               + " · ".join(f"{k} {v / 1e6:.1f} MB" for k, v in sorted(CSV_BYTES.items())))
@@ -4534,11 +4732,12 @@ def main() -> None:
         # The French pages space digit groups and ':' ';' '?' '!' '%' with U+202F. Google's
         # subsets have no glyph for it, so the browser fell back to a system font that draws it
         # 1.3-1.8 px wide: '888 382 352.95' read as one run of digits (verifier, 28.09.2026).
-        # The *-latin.woff2 files in fonts/ were patched once (U+202F -> the space glyph);
-        # warn if a font update ever brings the unpatched files back.
+        # The Latin files in fonts/ (lf.woff2, bg.woff2) were patched once (U+202F -> the space
+        # glyph); warn if a font update ever brings unpatched files back.
         try:
             from fontTools.ttLib import TTFont
-            bad = [f.name for f in fdir.glob("*-latin.woff2") if 0x202F not in TTFont(f).getBestCmap()]
+            bad = [f.name for f in (fdir / "lf.woff2", fdir / "bg.woff2")
+                   if 0x202F not in TTFont(f).getBestCmap()]
             if bad:
                 print(f"  ATTENZIONE: font senza U+202F (spazio fine francese): {', '.join(bad)}")
         except Exception:
