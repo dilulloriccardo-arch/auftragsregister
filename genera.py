@@ -210,7 +210,8 @@ def open_n(n: int) -> str:
 
 
 def open_contracts(n: int) -> str:
-    return plural(n, *lingue.OPEN_CONTRACTS[LANG])
+    """The count in a canton's tender title: '341 offen', '1 aperto'; none: 'zurzeit keine offen' (step 5)."""
+    return plural(n, *lingue.OPEN_CONTRACTS[LANG]) if n else lingue.OPEN_NONE[LANG]
 
 
 def first_fit(*cands: str, limit: int = 64) -> str:
@@ -2369,7 +2370,7 @@ def trail(path: str, leaf: str, mid=None) -> list:
     parts = [x for x in path.strip("/").split("/") if x]
     if parts and parts[0] in LANGS:
         parts = parts[1:]
-    out = [(_.register, f"/{LANG}/")]
+    out = [(_.home, f"/{LANG}/")]
     if not parts:
         return out
     sec = parts[0]
@@ -2383,7 +2384,7 @@ def trail(path: str, leaf: str, mid=None) -> list:
 
 
 def crumbs_html(tr: list, leaf_lang: str = "", ld: bool = True) -> str:
-    """Schema.org trail, so a result shows Register > Unternehmen > HOLINGER AG rather than a bare
+    """Schema.org trail, so a result shows Startseite > Unternehmen > HOLINGER AG rather than a bare
     URL (ld: indexable pages only), and the same trail on the page above the title (none on the
     home itself, which carries no one-item BreadcrumbList either: step 3a, 14.10.2026)."""
     out = ""
@@ -3356,6 +3357,8 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                 share = formato.pct(100 * top1 / c["value"])
                 if share.startswith(">"):          # 99.6 % is not "100 %" when other amounts exist
                     share = _if("over_pct", p=share[1:])
+                elif LANG == "it":
+                    share = ("l’" if share.startswith("8") else "il ") + share
                 b.append(f'<p class="sub m10">'
                          f'{e(_if("largest_share", share=share))}</p>')
             b.append("</div>")
@@ -3632,15 +3635,15 @@ def award_descs(by_project: dict) -> dict:
     although their <title>s differ: those get the project number (verifier, 28.09.2026)."""
     parts = {pid: award_desc_parts(rec) for pid, rec in by_project.items()
              if pid and rec_title(rec)}
-    out = {pid: award_desc(*p) for pid, p in parts.items()}
+    out = {pid: award_desc(*p, limit=154) for pid, p in parts.items()}
     seen = collections.Counter(out.values())
     for pid, (t, b, tail) in parts.items():
         if seen[out[pid]] > 1:
             src = rec_src(by_project[pid])
             num = src.get("projectNumber") or src.get("publicationNumber")
             if num:
-                out[pid] = award_desc(t, b, tail + " · " + _if("project_no", n=num))
-    return out
+                out[pid] = award_desc(t, b, tail + " · " + _if("project_no", n=num), limit=154)
+    return {pid: d if d.endswith((".", "!", "?", "…")) else d + "." for pid, d in out.items()}
 
 
 def firm_link(name: str, pages: dict) -> str:
@@ -4779,7 +4782,7 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
                    for c, r in top_sect)
          + "</div></div>"]
     write(f"/{LANG}/ausschreibungen/abo/index.html", page(
-        fit_title(_m("abo_title"), "\u00a0– auftragsregister.ch"), _m("abo_desc"),
+        first_fit(f"{_m('abo_title')}\u00a0– {_.site}", _m("abo_title")), _m("abo_desc"),
         "\n".join(b), f"/{LANG}/ausschreibungen/abo/", _.tenders, leaf=_.nav_alert,
         head_extra=feed_head(f"/{LANG}/ausschreibungen/feed.xml", _m("feed_all")), scripts=("abo",)))
 
@@ -4806,7 +4809,7 @@ def simap_compare() -> str:
     simap lacks anything it actually offers: its alerts exist, they need an account."""
     yes, no_, link = _m("cmp_yes"), _m("cmp_no"), _m("cmp_link")
     rows = [("cmp_r1", yes, link), ("cmp_r2", yes, yes), ("cmp_r3", no_, yes),
-            ("cmp_r4", no_, yes), ("cmp_r5", no_, yes), ("cmp_r6", no_, yes),
+            ("cmp_r4", _m("cmp_partly"), yes), ("cmp_r5", no_, yes), ("cmp_r6", no_, yes),
             ("cmp_r7", _m("cmp_acct"), yes), ("cmp_r8", _m("cmp_partly"), yes)]
     body = "".join(
         f'<tr><th scope="row">{e(_m(k))}</th>'
@@ -4822,12 +4825,14 @@ def simap_compare() -> str:
 
 def open_sector_title(name: str, k: int) -> str:
     """'{branch}: 12 offene Ausschreibungen' within 64 characters: the branch name is cut, never
-    the count ('Eaux usées, déchets, nettoyage … appels d’offres en cours' had lost it)."""
-    h = _m("open_sector_title", name=name, n=open_n(k))
+    the count ('Eaux usées, déchets, nettoyage … appels d’offres en cours' had lost it). None open:
+    '{branch}: zurzeit keine offene Ausschreibung' (step 5: '0 offene Ausschreibungen')."""
+    key, kw = ("open_sector_title", {"n": open_n(k)}) if k else ("open_sector_title_none", {})
+    h = _m(key, name=name, **kw)
     if len(h) <= 64:
         return h
     room = 64 - (len(h) - len(name)) - 1
-    t = _m("open_sector_title", name=cut_end(name, room) + "…", n=open_n(k)) if room >= 12 else ""
+    t = _m(key, name=cut_end(name, room) + "…", **kw) if room >= 12 else ""
     return t if t and len(t) <= 64 else fit_title(h, "", tail_share=0)
 
 
@@ -4971,8 +4976,9 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict, award_cants: s
     for code2 in sorted(set(lingue.CPV_SHORT[LANG]) | set(by_sect)):
         rows = by_sect.get(code2, [])
         name = sect_name(code2)
-        # one template for title and H1: "{name}: 762 offene Ausschreibungen"
-        h = _m("open_sector_title", name=name, n=open_n(len(rows)))
+        # one template for title and H1: "{name}: 762 offene Ausschreibungen" ('zurzeit keine' when none)
+        h = (_m("open_sector_title", name=name, n=open_n(len(rows))) if rows
+             else _m("open_sector_title_none", name=name))
         desc = _m("open_sector_desc_one" if len(rows) == 1 else "open_sector_desc",
                   n=open_n(len(rows)), name=name, code=code2)
         word = lingue.SECTOR_WORD[LANG].get(code2)
@@ -5252,10 +5258,10 @@ def build_index(path: str, kicker: str, h1: str, lead: str, items: list,
             pn = []
             if i:
                 pn.append(f'<a class="tag" href="{BASE}/{LANG}{path}{slugs[letters[i - 1]]}/" rel="prev">'
-                          f'<span aria-hidden="true">← </span>{e(_m("letter_prev"))}: {e(letters[i - 1])}</a>')
+                          f'<span aria-hidden="true">← </span>{e(_m("letter_prev"))}{lingue.COLON[LANG]} {e(letters[i - 1])}</a>')
             if i + 1 < len(letters):
                 pn.append(f'<a class="tag" href="{BASE}/{LANG}{path}{slugs[letters[i + 1]]}/" rel="next">'
-                          f'{e(_m("letter_next"))}: {e(letters[i + 1])}<span aria-hidden="true"> →</span></a>')
+                          f'{e(_m("letter_next"))}{lingue.COLON[LANG]} {e(letters[i + 1])}<span aria-hidden="true"> →</span></a>')
             body = [f'<div class="title"><div><p class="eyebrow">{e(kicker)}</p>'
                     f'<h1>{e(_m("letter_" + split + "_h1", l=g))}</h1></div>'
                     f'<dl class="rail"><dt>{_.entries}</dt><dd class="num">{formato.count(len(rows))}</dd></dl></div>',
@@ -5509,7 +5515,7 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
     b.append(f'<section class="band hsec" id="branchen" aria-labelledby="h-br"><div class="in">'
              f'<header class="sh"><p class="eyebrow">{e(_m("sec_divisions"))}</p>'
              f'<h2 id="h-br" data-split>{e(_i.by_division_awards)}{dot}</h2>'
-             f'<p class="aside">{formato.count(len(lingue.CPV_SHORT[LANG]))} {_.divisions}</p></header>'
+             f'<p class="aside">{formato.count(len(lingue.CPV_SHORT[LANG]))} {_.divisions_n}</p></header>'
              f'<ul class="ber" data-up>{ber}</ul><a class="more" href="{BASE}/{LANG}/branche/">{e(_i.all_divisions)}{ARROW}</a>'
              '</div></section>')
 
@@ -5731,7 +5737,8 @@ def build_about(awards: list, opens: list) -> None:
 ABO_STATUS_JS = """(function(){var d=document.documentElement,t=%s,s=%s,b=%s,L=['de','fr','it','en'],l='',
 m=location.search.match(/[?&](?:lang|locale|sprache)=(de|fr|it|en)/i);if(m)l=m[1].toLowerCase();
 if(!l){var n=navigator.languages||[navigator.language||''];for(var i=0;i<n.length&&!l;i++){var c=String(n[i]).slice(0,2).toLowerCase();if(L.indexOf(c)>=0)l=c}}
-if(!l)l='de';d.lang=l;d.setAttribute('data-l',l);document.title=t[l];var k=document.querySelector('.skip');if(k)k.textContent=s[l];
+if(!l)l='de';d.lang=l;d.setAttribute('data-l',l);document.title=t[l];var k=document.querySelector('.skip');if(k)k.textContent=s[l][0];
+var u=document.querySelector('.masthead summary');if(u)u.textContent=s[l][1];
 document.querySelector('.masthead a.name').href=b+'/'+l+'/';var a=document.querySelector('.langs a[lang='+l+']');if(a)a.className='on';
 var c=document.querySelector('.crumbs [aria-current]');if(c)c.textContent=t[l];
 var f=document.querySelector('.masthead [role=search]'),q=%s;if(f){f.action=b+'/'+l+'/suche/';f.q.setAttribute('aria-label',q[l][0]);f.querySelector('button').textContent=q[l][1]}})();"""
@@ -5762,7 +5769,7 @@ def build_abo_status() -> None:
             + f'<div class="tags"><a class="tag on" href="{BASE}/{l}/ausschreibungen/abo/">{e(lingue.m("abo_back", l))}</a>'
             f'<a class="tag" href="{BASE}/{l}/ausschreibungen/">{e(lingue.i("all_open", l))}</a></div></div>'
             for l in LANGS)
-        skips = {l: lingue.t("skip", l) for l in LANGS}
+        skips = {l: [lingue.t("skip", l), lingue.t("menu", l)] for l in LANGS}
         js = ABO_STATUS_JS % (json.dumps(titles, ensure_ascii=False).replace("<", "\\u003c"),
                               json.dumps(skips, ensure_ascii=False).replace("<", "\\u003c"), json.dumps(BASE),
                               json.dumps(SEARCH_WORDS, ensure_ascii=False))
@@ -5777,7 +5784,7 @@ def build_abo_status() -> None:
                 + f'<link rel="stylesheet" href="{BASE}/style.css">\n<style>{ABO_STATUS_CSS}</style>\n</head><body>\n'
                 f'<a class="skip" href="#inhalt">{e(lingue.t("skip", "de"))}</a>\n'
                 f'<header class="masthead"><a class="name" href="{BASE}/">auftragsregister.ch</a>\n'
-                '<details><summary>Menu</summary></details>' + search_form("de", BASE) + "\n"
+                f'<details><summary>{e(lingue.t("menu", "de"))}</summary></details>' + search_form("de", BASE) + "\n"
                 # the menu in each language, the reader's own with the script, all four without it
                 + "".join(f'<nav class="sitenav" data-nf lang="{l}" aria-label="{e(lingue.t("nav_label", l))}"><ul>'
                           + "".join(f'<li><a href="{BASE}/{l}/{h}">{e(lingue.t(k, l))}</a></li>' for k, h in NAV)
@@ -5805,7 +5812,8 @@ def build_abo_status() -> None:
 NF_JS = """(function(){var d=document.documentElement,p=location.pathname,b=%s,t=%s,s=%s;
 if(b&&p.indexOf(b)===0)p=p.slice(b.length);
 var m=p.match(/^\\/(de|fr|it|en)(\\/|$)/),id=p.match(/^\\/(?:de|fr|it|en)\\/auftrag\\/([0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12})\\/?$/);
-if(m){d.lang=m[1];d.setAttribute('data-l',m[1]);document.title=t[m[1]];var k=document.querySelector('.skip');if(k&&s[m[1]])k.textContent=s[m[1]];
+if(m){d.lang=m[1];d.setAttribute('data-l',m[1]);document.title=t[m[1]];var k=document.querySelector('.skip');if(k&&s[m[1]])k.textContent=s[m[1]][0];
+var u=document.querySelector('.masthead summary');if(u&&s[m[1]])u.textContent=s[m[1]][1];
 document.querySelector('.masthead a.name').href=b+'/'+m[1]+'/';document.querySelector('.langs a[lang='+m[1]+']').className='on';
 var f=document.querySelector('.masthead [role=search]'),q=%s;if(f){f.action=b+'/'+m[1]+'/suche/';f.q.setAttribute('aria-label',q[m[1]][0]);f.querySelector('button').textContent=q[m[1]][1]}}
 if(id)[].forEach.call(document.querySelectorAll('a[data-simap]'),function(a){
@@ -5829,7 +5837,7 @@ def build_404() -> None:
         f'<a class="tag" href="{BASE}/{l}/">{e(lingue.m("nf_home", l))}</a>'
         f'<a class="tag" href="https://www.simap.ch/{l}/" data-simap="{l}" hidden>{e(lingue.m("nf_simap", l))}</a>'
         "</div></div>" for l in LANGS)
-    skips = {l: lingue.t("skip", l) for l in LANGS}
+    skips = {l: [lingue.t("skip", l), lingue.t("menu", l)] for l in LANGS}
     js = NF_JS % (json.dumps(BASE), json.dumps(titles, ensure_ascii=False).replace("<", "\\u003c"),
                   json.dumps(skips, ensure_ascii=False).replace("<", "\\u003c"), json.dumps(SEARCH_WORDS, ensure_ascii=False))
     html = ('<!doctype html>\n<html lang="de"><head><meta charset="utf-8">\n'
@@ -5841,7 +5849,7 @@ def build_404() -> None:
             f'<link rel="stylesheet" href="{BASE}/style.css">\n<style>{NF_CSS}</style>\n</head><body>\n'
             f'<a class="skip" href="#inhalt">{e(lingue.t("skip", "de"))}</a>\n'
             f'<header class="masthead"><a class="name" href="{BASE}/">auftragsregister.ch</a>\n'
-            '<details><summary>Menu</summary></details>' + search_form("de", BASE) + "\n"
+            f'<details><summary>{e(lingue.t("menu", "de"))}</summary></details>' + search_form("de", BASE) + "\n"
             # the menu in each language, shown like the text blocks below: the reader's own with
             # the script, all four without it (14.10.2026)
             + "".join(f'<nav class="sitenav nf" lang="{l}" aria-label="{e(lingue.t("nav_label", l))}"><ul>'

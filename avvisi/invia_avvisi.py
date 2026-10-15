@@ -192,17 +192,19 @@ def lang_of(contact: dict) -> str:
     return l if l in ("de", "fr", "it", "en") else "de"
 
 CORR = {"de": "Berichtigung", "fr": "rectificatif", "it": "rettifica", "en": "correction"}
-# (oggetto singolare, oggetto plurale, riga singolare, riga plurale, etichetta scadenza, disiscrizione, luogo)
+# (oggetto singolare, oggetto plurale, riga singolare, riga plurale, etichetta scadenza, disiscrizione, cantone)
+# Le parole del sito (passo 5, 15.10.2026): Eingabefrist / délai de remise / termine d'inoltro / submission
+# deadline; il "Lei" di cortesia in italiano; l'etichetta davanti alla sigla del cantone dice "Kanton", non "Ort".
 T = {
     "de": ("Neue Ausschreibung für Sie", "Neue Ausschreibungen für Sie", "1 neue Ausschreibung seit {since}",
-           "{n} neue Ausschreibungen seit {since}", "Eingabefrist", "Abmelden", "Ort"),
-    "fr": ("Nouvel appel d'offres pour vous", "Nouveaux appels d'offres pour vous",
-           "1 nouvel appel d'offres depuis le {since}", "{n} nouveaux appels d'offres depuis le {since}",
-           "Délai de remise", "Se désabonner", "Lieu"),
-    "it": ("Nuovo bando per voi", "Nuovi bandi per voi", "1 nuovo bando dal {since}", "{n} nuovi bandi dal {since}",
-           "Termine d'inoltro", "Cancellarsi", "Luogo"),
+           "{n} neue Ausschreibungen seit {since}", "Eingabefrist", "Abmelden", "Kanton"),
+    "fr": ("Nouvel appel d’offres pour vous", "Nouveaux appels d’offres pour vous",
+           "1 nouvel appel d’offres depuis le {since}", "{n} nouveaux appels d’offres depuis le {since}",
+           "Délai de remise", "Se désabonner", "Canton"),
+    "it": ("Nuovo bando per Lei", "Nuovi bandi per Lei", "1 nuovo bando dal {since}", "{n} nuovi bandi dal {since}",
+           "Termine d’inoltro", "Annulla l’iscrizione", "Cantone"),
     "en": ("New tender for you", "New tenders for you", "1 new tender since {since}", "{n} new tenders since {since}",
-           "Deadline", "Unsubscribe", "Place"),
+           "Submission deadline", "Unsubscribe", "Canton"),
 }
 _MON = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 
@@ -225,8 +227,10 @@ def fmt_deadline(iso, lang: str) -> str:
         out += f", {hm}"
     return out
 
-FOOT = {"de": ("Quelle", "Datenschutz"), "fr": ("Source", "Protection des données"),
-        "it": ("Fonte", "Protezione dei dati"), "en": ("Source", "Privacy")}
+FOOT = {"de": ("Quelle:", "Datenschutz", "E-Mail-Abo von auftragsregister.ch"),
+        "fr": ("Source\u202f:", "Protection des données", "Alerte e-mail d’auftragsregister.ch"),
+        "it": ("Fonte:", "Protezione dei dati", "Avviso e-mail di auftragsregister.ch"),
+        "en": ("Source:", "Privacy", "Email alert from auftragsregister.ch")}
 # simap's API terms (§5) require this sentence, verbatim and in German, wherever its data is passed
 # on: the site's footer always carried it, the e-mails did not (pricing study, 13.10.2026)
 SIMAP_NOTICE = ("Dies ist keine amtliche Veröffentlichung. Massgebend sind die auf der Plattform "
@@ -254,7 +258,7 @@ def mail_html(lang: str, rows: list, since: str, total: int = 0, part: int = 1, 
     tag = f" ({part}/{parts})" if parts > 1 else ""
     head = (head1 if total == 1 else headn).format(n=total, since=fmt_day(since, lang) or since)
     body = (f'<p>{head}{tag}</p><ul style="padding-left:18px">{"".join(items)}</ul>'
-            f'<p style="color:#777;font-size:12px">auftragsregister.ch — {FOOT[lang][0]}: simap.ch · '
+            f'<p style="color:#777;font-size:12px">{FOOT[lang][2]} – {FOOT[lang][0]} simap.ch · '
             f'<a href="{{{{ unsubscribe }}}}" style="color:#777">{foot}</a> · '
             f'<a href="{SITE}/{lang}/datenschutz/" style="color:#777">{FOOT[lang][1]}</a></p>'
             f'<p style="color:#777;font-size:11px">{SIMAP_NOTICE}</p>')

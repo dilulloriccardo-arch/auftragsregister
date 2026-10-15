@@ -401,6 +401,89 @@ _SEARCH_FORM = re.compile(r'<header class="masthead">.*?<form role="search" acti
                           r'aria-label="[^"]+"><button>[^<]+</button></form>.*?</header>', re.S)
 
 
+# ------------------------------------------------------------- step 5 (15.10.2026): one name per concept
+# The copy pass gave each concept one name per language: the e-mail alert (E-Mail-Abo / alerte e-mail / avviso
+# e-mail / email alert), the open tender (never a "contract"), «kostenlos» and «ohne Konto». The words it
+# retired must not come back in the site's own text. Restated here, not imported from lingue (see above).
+# Publications are quoted as published and may say anything ('Gratis-WLAN', 'Login-Prozess', 'Submissionen'
+# in titles, 'E-mail system' as an EU CPV label): the lint reads only what the site writes itself, the chrome,
+# with every quoted text masked inside it, so a title can never stop the nightly.
+BANNED_TERMS = {
+    "de": ("offene Aufträge", "Submissionen", "E-Mail-Alarm", "Benachrichtigung einrichten", "Gratis", "Login"),
+    "fr": ("marchés ouverts", "marchés publics en cours"),
+    "it": ("appalti aperti",),
+    "en": ("open contracts", "e-mail"),
+}
+_TERM_RX = {l: re.compile("|".join(r"(?<![\w-])" + re.escape(t).replace("\\ ", " ").replace(" ", r"\s+") for t in ts), re.I)
+            for l, ts in BANNED_TERMS.items()}
+# Inside the chrome, the quoted texts: code, anything in another language (lang=), the links to a record, a
+# company, an authority or a CPV category (their text is a title, a name or an EU label), the last breadcrumb,
+# the sub-lines under a row (CPV labels, co-winners), table data cells (but the comparison table's), values.
+_TERM_MASK = re.compile(
+    r"<script\b.*?</script>|<style\b.*?</style>"
+    r'|<(a|abbr|div|em|h[1-6]|li|nav|p|span|strong|td|ul)\b[^>]*\slang="[a-z]{2}"[^>]*>.*?</\1>'
+    r'|<a\b[^>]*\shref="[^"]*/(?:auftrag|unternehmen|auftraggeber|bereich)/[^"/#?]+/[^"]*"[^>]*>.*?</a>'
+    r'|<span aria-current="page"[^>]*>.*?</span>|<span class="sub[^"]*">.*?</span>'
+    r'|<td\b(?![^>]*\bclass="c[ "])[^>]*>.*?</td>|<dd\b[^>]*>.*?</dd>|<div class="row">.*?</div>', re.S)
+# The chrome of a page that also shows publications: the header, the breadcrumbs, the footer, the alert boxes,
+# a record's buttons and state, the eyebrows, headings, leads and notes, the labels of rails, tables and forms.
+_TERM_CHROME = re.compile(
+    r'<header class="masthead">.*?</header>|<nav class="crumbs".*?</nav>|<footer>.*?</footer>'
+    r'|<div class="glass alert".*?</p></div></div>|<div class="acts">.*?</div>|<span class="state">.*?</span>'
+    r'|<p class="(?:eyebrow|sum|sub|lead|lede|note|aside|empty|dl|src|unit|act|s|aud)\b[^"]*">.*?</p>'
+    r"|<h([1-6])\b[^>]*>.*?</h\1>|<dt>.*?</dt>|<th\b[^>]*>.*?</th>|<caption\b[^>]*>.*?</caption>"
+    r"|<label\b[^>]*>.*?</label>|<legend\b[^>]*>.*?</legend>|<summary>.*?</summary>|<button\b[^>]*>.*?</button>"
+    r'|<a class="(?:tag|btn|more|rep)\b[^"]*"[^>]*>.*?</a>|<td class="c[ "][^>]*>.*?</td>', re.S)
+_TAG = re.compile(r"<[^>]+>")
+# pages whose main shows no publication: the whole of it is the site's own text
+_TERM_OWN = re.compile(r"^/(?:(?:de|fr|it|en)/(?:ueber|impressum|datenschutz|suche|ausschreibungen/abo)/|(?:de|fr|it|en)/)?$")
+# pages about one record, firm, authority or CPV category: their H1, <title> and description quote it
+_TERM_DATA = re.compile(r"^/(?:de|fr|it|en)/(?:auftrag|unternehmen|auftraggeber|bereich)/"
+                        r"(?!(?:[a-z]|0-9|andere)(?:-az)?/$)[^/]+/$")
+_TERM_HEAD = re.compile(r'<title>(.*?)</title>|<meta name="description" content="([^"]*)"', re.S)
+
+
+def _term_text(fragment: str) -> str:
+    return " ".join(htmlmod.unescape(_TAG.sub(" ", fragment)).replace("\u00ad", "").split())
+
+
+def term_hits(text: str, lang: str) -> list:
+    """The retired words of `lang` in a text, each with a little of its context."""
+    return [text[max(0, m.start() - 30):m.end() + 30] for m in _TERM_RX[lang].finditer(text)]
+
+
+def term_errors(here: str, html: str) -> list:
+    """[(lang, context)] of every retired word in a page's own text. The two pages Brevo sends people to and the
+    404 page carry the four languages side by side, each block with its lang=: each is read in its language."""
+    if here in ("/abo/check/", "/abo/ok/", "/404.html"):
+        out = []
+        for m in re.finditer(r'<(div|nav|span|p)\b[^>]*\slang="([a-z]{2})"[^>]*>(.*?)</\1>', _SCRIPT.sub("", html), re.S):
+            if m.group(2) in _TERM_RX:
+                out += [(m.group(2), c) for c in term_hits(_term_text(m.group(3)), m.group(2))]
+        return out
+    p = here.strip("/").split("/")
+    lang = p[0] if p and p[0] in LANGS4 else "de"
+    head, _sep, body = html.partition("</head>")
+    data_page = bool(_TERM_DATA.match(here))
+    if data_page:
+        # its own name or title, wherever the chrome repeats it ('Wie hoch sind die Zuschläge an X?')
+        h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", body, re.S)
+        if h1 and _TAG.sub("", h1.group(1)).strip():
+            body = body.replace(h1.group(1), " ")
+        if p[1] == "unternehmen":
+            body = re.sub(r'<p class="eyebrow">.*?</p>', " ", body, flags=re.S)   # its main CPV label
+        if p[1] == "bereich":
+            body = re.sub(r'<p class="sum">.*?</p>', " ", body, flags=re.S)       # names without a page of their own
+    if _TERM_OWN.match(here):
+        parts = [body]
+    else:
+        parts = [m.group(0) for m in _TERM_CHROME.finditer(body)]
+    if not data_page:
+        parts += [x for m in _TERM_HEAD.finditer(head) for x in m.groups() if x]
+    text = _term_text(_TERM_MASK.sub(" ", " ".join(parts)))
+    return [(lang, c) for c in term_hits(text, lang)]
+
+
 # ------------------------------------------------------------- structure (14.10.2026)
 # The menu, the breadcrumbs, the headings, the prefilled alert links and the files the pages offer
 # (calendar .ics, CSV): each page is read once, in the main loop, and the files after it.
@@ -945,6 +1028,8 @@ def main() -> int:
     rel_pat = relative_patterns(lingue)
     rel_bad, form_bad, open_ids = [], [], set()
     home_js_bad, first_head = [], ""
+    # step 5: the retired words, page by page; meta descriptions over 155 characters
+    term_bad, long_desc = [], []
 
     for f in OUT.rglob("index.html"):
         html = f.read_text(encoding="utf-8")
@@ -973,6 +1058,9 @@ def main() -> int:
         x = relative_errors(html, rel_pat)
         if x:
             rel_bad.append((here, x[0]))
+        x = term_errors(here, html)
+        if x:
+            term_bad.append((here, x))
         # step 4: the home's script on the five home pages, and on no other
         has_home = f'src="{BASE}/js/home.js' in html
         if has_home != (here in HOMES):
@@ -1000,6 +1088,8 @@ def main() -> int:
         d = re.search(r'<meta name="description" content="(.*?)"', html, re.S)
         if not d or not d.group(1).strip():
             no_desc.append(here)
+        elif len(htmlmod.unescape(d.group(1).strip())) > 155:
+            long_desc.append((here, len(htmlmod.unescape(d.group(1).strip()))))
 
         # A tender list names each tender once: simap republishes a tender for every
         # correction, and each copy was listed as a tender of its own (the same line two or
@@ -1178,10 +1268,24 @@ def main() -> int:
     print(f"  parole relative al giorno {len(rel_bad)} pagine")
     for h, x in rel_bad[:4]:
         print(f"    {h}  «{x}»")
+    if (OUT / "404.html").exists():
+        x = term_errors("/404.html", (OUT / "404.html").read_text(encoding="utf-8"))
+        if x:
+            term_bad.append(("/404.html", x))
+    # which word, how often (each hit's context names it)
+    n_terms = collections.Counter(t for _h, xs in term_bad for l, c in xs for t in BANNED_TERMS[l]
+                                  if re.search(re.escape(t).replace("\\ ", " ").replace(" ", r"\s+"), c, re.I))
+    print(f"  parole ritirate (una per concetto) {len(term_bad)} pagine"
+          + (f" · {', '.join(f'«{t}» {k}' for t, k in n_terms.most_common())}" if n_terms else ""))
+    for h, xs in term_bad[:6]:
+        print(f"    {h}  [{xs[0][0]}] …{xs[0][1]}…")
     print(f"  pagine controllate      {counts['pagine']}")
     print(f"  titoli vuoti            {len(empty_titles)}")
     print(f"  titoli oltre 65 char    {len(long_titles)}")
     print(f"  senza description       {len(no_desc)}")
+    print(f"  description oltre 155   {len(long_desc)}")
+    for h, n in long_desc[:4]:
+        print(f"    {n} char  {h}")
     print(f"  link interni rotti      {counts['link rotti']} verso {len(broken)} destinazioni")
     print(f"  bandi ripetuti in lista {len(same_tender)} pagine")
     for h, k in same_tender[:4]:
@@ -1253,7 +1357,7 @@ def main() -> int:
                  or bad_sums or single_amount or lost or stale or nf_bad or n_struct
                  or n_design or c_errs or f_errs or fo_errs or a_errs or tot_errs or bad_buyers or bad_form
                  or bad_feeds or bad_ld or j_errs or sz_errs or idx_errs or open_errs or sp_errs or form_bad
-                 or rel_bad) else 0
+                 or rel_bad or term_bad or long_desc) else 0
 
 
 if __name__ == "__main__":
