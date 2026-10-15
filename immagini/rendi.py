@@ -10,8 +10,8 @@ genera.main() only copies the results to docs/; run this by hand after changing 
 
 Needs Google Chrome (headless, its own throwaway profile) and Pillow. The card is set in the site's
 own fonts (../fonts), loaded from disk: nothing is fetched from the network. The mark is a bold "A"
-with a red bar, deliberately no cross, coat of arms or anything that reads as an authority's
-emblem: the register is not an official publication.
+with a brass bar (design A2 "Brass", step 4), deliberately no cross, coat of arms or anything that
+reads as an authority's emblem: the register is not an official publication.
 """
 from __future__ import annotations
 
@@ -65,8 +65,8 @@ def icons(tmp: pathlib.Path) -> None:
     # iOS rounds the corners itself and fills transparency with black: a full square for the
     # home-screen icon and the logo
     square = svg.replace(' rx="14"', "").replace(
-        '<rect x=".75" y=".75" width="62.5" height="62.5" rx="13.25" fill="none" stroke="#fff" '
-        'stroke-opacity=".22" stroke-width="1.5"/>', "")
+        '<rect x=".75" y=".75" width="62.5" height="62.5" rx="13.25" fill="none" stroke="#c9a24e" '
+        'stroke-opacity=".6" stroke-width="1.5"/>', "")
     (tmp / "r.svg").write_text(svg)
     (tmp / "s.svg").write_text(square)
     (tmp / "icons.html").write_text(
@@ -95,10 +95,10 @@ def cards(tmp: pathlib.Path) -> None:
         (tmp / f"card-{lang}.html").write_text(page)
         im = shot(tmp / f"card-{lang}.html", 1200, 630, tmp / f"card-{lang}.png").convert("RGB")
         # 256 colours, dithered, keep the card sharp, the glows free of bands and the file under 100 KB:
-        # a median-cut palette of 255 plus the mark's red, which median cut alone turned grey
+        # a median-cut palette of 255 plus the mark's brass (design A2, step 4), which median cut alone dulled
         pal = im.quantize(255, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.NONE).getpalette()[:765]
         pimg = Image.new("P", (1, 1))
-        pimg.putpalette(pal + [0xff, 0x43, 0x56])
+        pimg.putpalette(pal + [0xc9, 0xa2, 0x4e])
         q = im.quantize(palette=pimg, dither=Image.Dither.FLOYDSTEINBERG)
         q.save(HERE / f"og-{lang}.png", optimize=True)
         print(f"og-{lang}.png", (HERE / f"og-{lang}.png").stat().st_size, "bytes")

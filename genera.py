@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Build the static register from simap award and tender data.
 
-The look follows the design canvas: a printed register rather than a product page —
-hairline rules instead of cards, an asymmetric grid with the metadata on a rail,
-tabular figures, running heads. Source Serif 4 sets the headings, IBM Plex Sans the
-data, IBM Plex Mono the publication numbers and CPV codes.
+The look is design A2 "Brass" (step 4, 15.10.2026): black, warm off-white and metallic
+brass; League Gothic in capitals for the site's and the sections' headings, Instrument Sans
+for everything read, tabular figures in every column of numbers, an asymmetric grid with
+the metadata on a rail, running heads. The home carries the halftone map of the open
+tenders per canton and the motion of js/home.js; the data pages are a calm instrument.
 
 Every page has to earn its place in an index. A page carrying a company name and one
 line of data is thin content, and thin content is what search engines drop — so a
@@ -1436,579 +1437,866 @@ def project_title(rows: list) -> str:
 
 # ------------------------------------------------------------------ the chrome
 
-CSS = grafici.CSS + """
-/* Design step 2 (14.10.2026): readable first, at GOV.UK / Our World in Data level. The dark
-   instrument panel stays the look for a dark preference and for browsers that state none; a light
-   theme answers prefers-color-scheme: light, and a print sheet prints black on white. Every colour is
-   a token, defined once per theme, and controlla.py measures each pair in CONTRAST (genera.py) in both
-   themes against WCAG 2.2 AA. No text below 12 px, form fields at 16 px (no zoom on iOS), targets of
-   at least 24 px, one link style; red only for the primary action, urgent deadlines, errors and the
-   current menu item. Bricolage Grotesque sets the display, Libre Franklin reads, and every figure in
-   a table is monospaced so columns of numbers line up the way a ledger does.
-   Adapted 21.09.2026 from a design study, with three things deliberately NOT carried over: no web
-   fonts from a third party (the privacy page promises none), no client-side view switching (the
-   whole value of this site is the pages a crawler can read), and no pricing. */
+CSS = grafici.CSS + r"""
+/* Step 4 (15.10.2026): design A2 "Brass" on every page, in the owner's chosen look: black, warm off-white
+   and metallic brass; League Gothic (as "AR Gothic") for the site's and the sections' headings, set in
+   capitals, and Instrument Sans for everything that is read, with tabular figures in every column of
+   numbers. One dark theme for everyone (the owner's choice), a print sheet and a forced-colours mode. Every
+   colour is a token defined once below, and controlla.py measures each pair in genera.CONTRAST against
+   WCAG 2.2 AA. Font sizes in rem only, none under 0.8125 rem (13 px); body text 17 px, prose 18 px and
+   never wider than about 70 characters; targets of at least 24 px; the brass focus ring on everything that
+   takes focus. The official titles of tenders and awards, and the names of companies and authorities, stay
+   in Instrument Sans as published (h1.rec): long official titles in condensed capitals would not read.
+   The data pages are an instrument: subtle hover and focus transitions only. The home alone moves
+   (js/home.js), and is complete and still without it. Hooks are the pages' existing classes, so the look
+   costs no byte on the 92,000 pages: the header's search is `.masthead [role=search]`, the phone menu the
+   header's <details>, the stacked tables' labels come from the table's class and the column's position,
+   keyed by :lang() (generated in genera.css_labels). */
 :root{
-  --paper:#07090c; --card:#0f1318; --panel:#0d1117; --sticky:#0a0d12;
-  --ink:#f3f6f9; --text:#d6dee6; --muted:#aab7c4; --muted-2:#8d9cac;
-  --rule:rgba(255,255,255,.13); --rule-strong:rgba(255,255,255,.28); --line:#6f7d8c;
-  --hover:rgba(255,255,255,.04);
-  --link:#8ccbff; --link-hover:#c6e5ff; --focus:#9fd8ff;
-  --accent:#d0263a; --accent-hover:#b81f31; --on-accent:#ffffff;
-  --accent-text:#ff7684; --warm:#ffb454;
-  --ok:#43d99a; --ok-bg:rgba(67,217,154,.12); --off-bg:rgba(255,255,255,.07);
-  --mark:#38b5dd;
-  --glass:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,0));
-  --glow-1:rgba(56,181,221,.26); --glow-2:rgba(124,92,255,.18); --grid:rgba(255,255,255,.028);
-  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
-  --display:"Bricolage Grotesque","Libre Franklin",system-ui,sans-serif;
-  color-scheme:dark;
-}
-@media (prefers-color-scheme:light){:root{
-  --paper:#ffffff; --card:#f5f7f9; --panel:#f5f7f9; --sticky:#ffffff;
-  --ink:#111827; --text:#1f2937; --muted:#465162; --muted-2:#5a6576;
-  --rule:#d6dbe2; --rule-strong:#98a2ae; --line:#7b8695;
-  --hover:#f1f4f7;
-  --link:#0a58ad; --link-hover:#063c78; --focus:#0b57d0;
-  --accent:#c81e33; --accent-hover:#a5182a; --on-accent:#ffffff;
-  --accent-text:#b4182d; --warm:#a14d00;
-  --ok:#11734a; --ok-bg:#e2f3ea; --off-bg:#eceff3;
-  --mark:#1f6fb2;
-  --glass:none; --glow-1:transparent; --glow-2:transparent; --grid:transparent;
-  color-scheme:light}}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font-family:"Libre Franklin",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;
-  line-height:1.6;-webkit-font-smoothing:antialiased;position:relative}
-/* Background, painted with pseudo-elements so no page needs extra markup; none in the light theme. */
-body::before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;
-  background:radial-gradient(48vw 40vw at 6% -8%,var(--glow-1),transparent 64%),
-    radial-gradient(42vw 36vw at 96% -4%,var(--glow-2),transparent 64%),var(--paper)}
-body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background-image:repeating-linear-gradient(90deg,var(--grid) 0 1px,transparent 1px 72px),
-    repeating-linear-gradient(0deg,var(--grid) 0 1px,transparent 1px 72px);
-  -webkit-mask-image:radial-gradient(130% 88% at 50% 0%,#000 26%,transparent 74%);
-  mask-image:radial-gradient(130% 88% at 50% 0%,#000 26%,transparent 74%)}
-.wrap{max-width:1180px;margin:0 auto;padding:0 30px 60px}
-/* one link style everywhere: the link colour, underlined; thicker on hover. Chips, menu items and
-   clickable tiles are controls, not running links, and carry their own frame instead */
-a{color:var(--link);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;
-  text-decoration-color:color-mix(in srgb,currentColor 55%,transparent)}
+  --paper:#000;--band:#050403;--card:#0d0b08;--panel:#090806;--sticky:#000;--alert-bg:#15110a;
+  --ink:#f4f1ea;--text:#e2ddd1;--muted:#a6a39b;
+  --brass:#c9a24e;--brass-lo:#9c7633;--gold:#d8b66a;--gold-hi:#f3dc9a;--on-brass:#0b0905;
+  --link:#f3dc9a;--link-hover:#fff6dc;--focus:#f3dc9a;
+  --field:#8a6a2d;--line:#2f2c27;--line2:#565046;
+  --warm:#ffc46b;--hot:#ff9a8a;--ok:#9fdcb7;--ok-bg:#0d1a12;--off-bg:#16140f;
+  --hover:rgba(201,162,78,.08);--mark:#c9a24e;
+  --grad:linear-gradient(100deg,#9c7633 0%,#c9a24e 20%,#f2d892 44%,#d4ae5c 62%,#a17a35 100%);
+  --grad-v:linear-gradient(180deg,#f6e2a6 0%,#d7b263 32%,#a8803a 100%);
+  --bar:linear-gradient(180deg,#f2d892,#c9a24e 34%,#8f6c2c);
+  --display:"AR Gothic","AR Gothic fb","AR Gothic fb2","Arial Narrow",sans-serif;
+  --sans:"Instrument Sans","IS fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --max:77.5rem;--gut:2rem;
+  --cut:polygon(0 0,100% 0,100% calc(100% - .625rem),calc(100% - .625rem) 100%,0 100%);
+  --cut0:polygon(100% 0,100% 0,100% calc(100% - .625rem),100% 100%,100% 100%);
+  --mk:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23f4f1ea' fill-rule='evenodd' d='M12 54 27 10h10l15 44h-9.5l-3.1-9H24.6l-3.1 9zM32 23.2 36.7 37h-9.4z'/%3E%3Cpath fill='%23c9a24e' d='M27.3 37h9.4l2.7 8H24.6z'/%3E%3C/svg%3E");
+  color-scheme:dark}
+@media(max-width:40rem){:root{--gut:1rem}}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;background:var(--paper)}
+body{margin:0;background:var(--paper);color:var(--text);font:400 1.0625rem/1.6 var(--sans);
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-synthesis-weight:none}
+::selection{background:var(--brass);color:#000}
+img,svg,canvas{max-width:100%}
+/* one link style: brass-underlined, thicker on hover; chips, menu items and buttons carry their own frame */
+a{color:var(--link);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em;
+  text-decoration-color:rgba(201,162,78,.65)}
 a:hover{color:var(--link-hover);text-decoration-thickness:2px;text-decoration-color:currentColor}
-/* a visible focus on everything that takes it */
-:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:3px}
-.disp,h1,h2,h3,.fig b,.masthead a.name{font-family:var(--display)}
-.mono,.num,.when,.amount{font-family:var(--mono);font-variant-numeric:tabular-nums}
-.eyebrow{font:600 12px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}
-/* the masthead is the page's <header>: name and languages, then the menu on its own row; the
-   active section is underlined where the menu meets the rule (14.10.2026) */
-.masthead{display:flex;justify-content:space-between;align-items:center;gap:2px 16px;
-  padding:16px 0 0;border-bottom:1px solid var(--rule);flex-wrap:wrap}
-.masthead a.name{display:inline-block;padding:2px 0;font-weight:800;font-size:18px;line-height:1.3;
-  letter-spacing:-.03em;color:var(--ink);text-decoration:none}
-.masthead a.name:hover{color:var(--ink);text-decoration:underline}
-.langs{display:flex;flex-wrap:wrap;gap:0 16px;font-size:13px;font-weight:600;justify-content:flex-end}
-.langs a,.langs .on{display:inline-block;padding:4px 0;line-height:16px}
-.langs a{color:var(--muted);text-decoration:none}
-.langs a:hover{color:var(--ink);text-decoration:underline}
-.langs .on{color:var(--ink);box-shadow:inset 0 -2px var(--accent-text)}
-.title{margin:0;padding:40px 0 32px;display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:48px;
-  align-items:start;border-bottom:1px solid var(--rule)}
-.title p.sum{margin:16px 0 0;color:var(--muted);font-size:17px;line-height:1.55;max-width:56ch}
-h1{font-weight:800;letter-spacing:-.04em;line-height:1.04;margin:10px 0 0;
-  text-wrap:balance;font-size:clamp(32px,5.4vw,54px)}
-h2{font-weight:700;font-size:23px;line-height:1.25;margin:0 0 4px;letter-spacing:-.025em}
-h3{font-weight:700;font-size:17px;margin:0;letter-spacing:-.015em}
-/* a running head: the section's real heading (an h2 since 14.10.2026) and, on the right, a note on
-   what the section counts, in the small label face */
-.runhead{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 16px;
-  padding:0 0 8px;margin-top:44px;border-bottom:2px solid var(--rule-strong);
-  font:600 12px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.runhead h2{font:700 19px/1.3 var(--display);letter-spacing:-.015em;text-transform:none;
-  color:var(--ink);margin:0}
-.rail{font-size:14px;color:var(--muted)}
-.rail dt{font:600 12px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;
-  color:var(--muted-2);margin-top:16px}
-.rail dt:first-child{margin-top:0}
-.rail dd{margin:4px 0 0;font-size:15px;color:var(--ink)}
-/* ── figures / KPI ─────────────────────────────────────────────────────── */
-.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;padding:26px 0 6px}
-.fig{border:1px solid var(--rule);border-radius:14px;padding:18px 20px;background:var(--glass),var(--card);
-  position:relative}
-/* big numbers are neutral: colour is kept for what needs action (14.10.2026) */
-.fig b{display:block;font-weight:700;font-size:clamp(26px,3.6vw,38px);letter-spacing:-.04em;
-  line-height:1.05;overflow-wrap:break-word;color:var(--ink)}
-/* a figure never breaks inside its digits or its unit ("827’782.5|5", "C|HF"); only the
-   currency may move to the next line, as a whole word */
-.fig b .n{white-space:nowrap}
-.fig b small{font-size:max(12px,.42em);font-weight:600;letter-spacing:0;color:var(--muted)}
-/* phones: the exact amount and the deadline on the award page take the whole row */
-@media(max-width:599px){.figures .fig.wide{grid-column:1/-1}
-  /* two tiles per row: the currency on its own line in every tile */
-  .fig b small{display:block;margin-top:.4em}
-  html:lang(en) .fig b small{margin:0 0 .4em}}
-.fig .approx{display:block;margin-top:8px;font-size:13.5px;font-style:normal;color:var(--muted)}
-/* a date tile keeps its date on one line: never larger than the other tiles' figures, smaller where
-   17 % of the tile's own width asks for it; the media query is for browsers without container units */
-.fig.date{container-type:inline-size}
-.fig.date b{white-space:nowrap}
-@media(max-width:419px){.fig.date b{font-size:clamp(17px,5.2vw,26px)}}
-.fig.date b{font-size:max(17px,min(17cqi,clamp(26px,3.6vw,38px)))}
-.fig.off b{color:var(--muted)}
-.fig>span{display:block;margin-top:10px;font:600 12px/1.4 var(--mono);letter-spacing:.06em;
-  text-transform:uppercase;color:var(--muted)}
-.sec{margin-top:10px}
-/* a section opened by its own heading (hub, alert page) gets room above it */
-.sec>h2:first-child{margin:36px 0 10px}
-/* position: the visually hidden cell text (.sr) is absolutely positioned; without a
-   positioned scroll box it escaped the clipping and widened the page on phones */
-.scroll{overflow-x:auto;max-width:100%;position:relative}
-/* A table wider than the screen fades out at the edge it continues past, so the sideways scroll
-   shows (08.10.2026). Driven by the box's own scroll position: no fade while the table fits (the
-   timeline is inactive then) and none at the end reached; without scroll timelines, as before. */
-@property --fl{syntax:"<length>";inherits:false;initial-value:0px}
-@property --fr{syntax:"<length>";inherits:false;initial-value:0px}
-@keyframes scroll-hint{0%{--fl:0px;--fr:28px}6%,94%{--fl:28px;--fr:28px}100%{--fl:28px;--fr:0px}}
-@supports (animation-timeline:scroll(self inline)){
-  .scroll{-webkit-mask-image:linear-gradient(90deg,transparent,#000 var(--fl),#000 calc(100% - var(--fr)),transparent);
-    mask-image:linear-gradient(90deg,transparent,#000 var(--fl),#000 calc(100% - var(--fr)),transparent);
-    animation:scroll-hint linear both;animation-timeline:scroll(self inline)}}
-/* ── tables ────────────────────────────────────────────────────────────── */
-table{width:100%;border-collapse:collapse}
-/* the Details box sits in a 320px column: long names and CPV labels wrap in place */
-.kv{table-layout:fixed}
-.kv td{padding-right:0;overflow-wrap:break-word;hyphens:auto;vertical-align:baseline}
-/* the label column takes 42 % and its labels wrap; hyphens only where lingue.py puts a soft one */
-.kv th{width:42%;white-space:normal;overflow-wrap:break-word;hyphens:manual;-webkit-hyphens:manual;
-  font-size:13.5px;font-weight:500;line-height:1.45;color:var(--muted);
-  border-bottom:1px solid var(--rule);padding:12px 12px 12px 0;vertical-align:baseline}
-/* column headers in the reading face, in sentence case: a header such as 'Betrag (Tsd. CHF)' is read,
-   not decoded (they were 9.5 px monospaced capitals; 14.10.2026) */
-th{text-align:left;font-size:13px;font-weight:600;line-height:1.35;color:var(--muted);
-  padding:0 14px 10px 0;border-bottom:2px solid var(--rule-strong);vertical-align:bottom}
-td{padding:12px 14px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top;font-size:15px}
-/* an empty corner cell is a td, not an empty header (14.10.2026): it keeps the header row's rule */
-thead td{border-bottom:2px solid var(--rule-strong);padding:0 14px 10px 0}
-tbody tr:hover{background:var(--hover)}
-td.r,th.r{text-align:right;padding-right:0;padding-left:16px}
-td.num{font-size:14.5px}
-/* a note under a figure ('Preise je Unternehmen') reads in the text face */
-td.num .sub{font-family:"Libre Franklin",system-ui,sans-serif}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.sr{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;border:0;overflow:hidden;
+  clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.skip{position:absolute;left:1rem;top:-6rem;z-index:100;padding:.625rem 1rem;background:var(--ink);
+  color:var(--paper);font-weight:700;text-decoration:none}
+.skip:focus{top:.75rem;color:var(--paper)}
+/* ── type ───────────────────────────────────────────────────────────────── */
+h1,h2,h3,.disp{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.015em;
+  color:var(--ink);text-wrap:balance}
+h1{margin:.875rem 0 0;font-size:clamp(2.5rem,1.5rem + 3.6vw,4.5rem);line-height:.94}
+h2{margin:0 0 .25rem;font-size:clamp(1.75rem,1.4rem + 1.2vw,2.375rem);line-height:1}
+h3{margin:0;font-size:1.375rem;line-height:1.1;letter-spacing:.03em}
+/* the official title of a tender or an award, the name of a company or an authority: as published */
+h1.rec{margin:.875rem 0 0;font:700 clamp(1.5rem,1.15rem + 1.4vw,2.25rem)/1.18 var(--sans);letter-spacing:-.01em;
+  text-transform:none;max-width:38ch;text-wrap:pretty;overflow-wrap:anywhere}
+.eyebrow{display:flex;align-items:center;gap:.875rem;margin:0;font:700 .8125rem/1.35 var(--sans);
+  letter-spacing:.2em;text-transform:uppercase;color:var(--gold);overflow-wrap:anywhere}
+.eyebrow::before{content:"";flex:none;width:2.75rem;height:1px;background:linear-gradient(90deg,transparent,var(--brass))}
+.dot{color:var(--brass)}
+.num,.mono,.when,.amount,td.r{font-variant-numeric:tabular-nums}
+.mono{letter-spacing:.02em}
+.sub{color:var(--muted);font-size:.875rem;line-height:1.45}
 abbr[title]{text-decoration:none;cursor:help}
-td.sub,.sub{color:var(--muted);font-size:13.5px}
+p{max-width:70ch}
+/* ── header: the A, the name and the search on the first row; the menu, the alert and the languages on the
+   second; on a phone the search under the name, the rest behind "Menü" (a <details>: no script) ───── */
+.masthead{position:relative;z-index:30;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;column-gap:1.5rem;
+  padding:0 max(var(--gut),(100% - var(--max))/2);background:#000;border-bottom:1px solid rgba(201,162,78,.34)}
+.masthead a.name{grid-row:1;grid-column:1;display:flex;align-items:center;gap:.75rem;min-height:4.25rem;
+  font:400 1.375rem/1 var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--ink);text-decoration:none}
+.masthead a.name::before{content:"";flex:none;width:1.875rem;height:1.875rem;background:var(--mk) center/contain no-repeat}
+.masthead a.name:hover{color:var(--gold-hi)}
+.masthead details{grid-row:1;grid-column:2;justify-self:end;display:none}
+.masthead summary{display:flex;align-items:center;gap:.625rem;min-height:2.75rem;padding:0 .875rem;
+  border:1px solid var(--line2);cursor:pointer;list-style:none;font:700 .8125rem/1 var(--sans);
+  letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
+.masthead summary::-webkit-details-marker{display:none}
+.masthead summary::before{content:"";width:1.125rem;height:.75rem;
+  background:linear-gradient(currentColor,currentColor) 0 0/100% 2px no-repeat,
+    linear-gradient(currentColor,currentColor) 0 50%/100% 2px no-repeat,
+    linear-gradient(currentColor,currentColor) 0 100%/100% 2px no-repeat}
+.masthead details[open] summary{border-color:var(--brass);color:var(--gold-hi)}
+.masthead summary:hover{border-color:var(--brass)}
+.masthead [role=search]{grid-row:1;grid-column:2/4;justify-self:end;display:flex;position:relative;width:min(100%,28rem);margin:0}
+[role=search] input{flex:1 1 auto;min-width:0;min-height:2.75rem;margin:0;font:inherit;font-size:1rem;line-height:1.3;
+  padding:.5rem .75rem .5rem 2.375rem;border:1px solid var(--field);border-right:0;border-radius:0;color:var(--ink);
+  background:#0b0a08 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='6.5' cy='6.5' r='4.75' fill='none' stroke='%23c9a24e' stroke-width='1.6'/%3E%3Cpath d='M10 10l4.25 4.25' stroke='%23c9a24e' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat .75rem 50%/1rem 1rem}
+[role=search] input::placeholder{color:var(--muted);opacity:1}
+[role=search] input::-webkit-search-decoration{-webkit-appearance:none}
+[role=search] input:focus{outline:3px solid var(--focus);outline-offset:1px;border-color:var(--brass)}
+[role=search] button{flex:none;min-height:2.75rem;margin:0;padding:0 1rem;border:1px solid var(--field);border-radius:0;
+  background:#0b0a08;color:var(--gold-hi);font:700 .8125rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;
+  cursor:pointer;transition:background-color .2s,color .2s}
+[role=search] button:hover{background:var(--brass);border-color:var(--brass);color:var(--on-brass)}
+.sitenav{grid-column:1/3;min-width:0}
+.sitenav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;column-gap:1.375rem}
+.sitenav a{position:relative;display:block;padding:.6875rem 0 .8125rem;font-size:.9375rem;line-height:1.4;
+  color:var(--text);text-decoration:none}
+.sitenav li:not(:last-child) a::after{content:"";position:absolute;left:0;right:0;bottom:.375rem;height:2px;background:var(--brass);
+  transform:scaleX(0);transform-origin:left;transition:transform .3s cubic-bezier(.33,0,0,1)}
+.sitenav a:hover,.sitenav a[aria-current]{color:var(--ink)}
+.sitenav li:not(:last-child) a:hover::after,.sitenav li:not(:last-child) a[aria-current]::after{transform:scaleX(1)}
+/* the alert, last in the menu: a brass, chamfered button that floods on hover */
+.sitenav li:last-child{margin-left:auto}
+.sitenav li:last-child a,a.btn,.alert .tag.on,.form button,.btn2{position:relative;isolation:isolate;display:inline-flex;
+  align-items:center;justify-content:center;gap:.75rem;min-height:2.75rem;padding:.625rem 1.375rem .625rem 1.25rem;
+  border:0;background:none;font:700 .8125rem/1.25 var(--sans);letter-spacing:.12em;text-transform:uppercase;
+  text-decoration:none;color:var(--on-brass);cursor:pointer;transition:color .25s}
+.sitenav li:last-child a::before,a.btn::before,.alert .tag.on::before,.form button::before,.btn2::before{content:"";position:absolute;inset:0;z-index:-2;
+  background:linear-gradient(100deg,#fff6dc,#f6e2a6 60%,#e6c77e);clip-path:var(--cut)}
+.sitenav li:last-child a::after,a.btn::after,.alert .tag.on::after,.form button::after,.btn2::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:var(--grad);clip-path:var(--cut);transition:clip-path .3s cubic-bezier(.33,0,0,1)}
+.sitenav li:last-child a:hover::after,a.btn:hover::after,.alert .tag.on:hover::after,.form button:hover::after,.btn2:hover::after,
+a.btn:focus-visible::after,.alert .tag.on:focus-visible::after{clip-path:var(--cut0)}
+a.btn:hover,.alert .tag.on:hover,.form button:hover{color:var(--on-brass)}
+/* the ghost variant in the header: a 1-px brass edge, the brass floods in on hover */
+.sitenav li:last-child a{color:var(--gold-hi);padding-block:.5rem;min-height:2.5rem}
+.sitenav li:last-child a::before{background:var(--grad)}
+.sitenav li:last-child a::after{inset:1px;background:#0b0a08;clip-path:polygon(0 0,100% 0,100% calc(100% - .5625rem),calc(100% - .5625rem) 100%,0 100%)}
+.sitenav li:last-child a:hover::after,.sitenav li:last-child a[aria-current]::after{clip-path:polygon(100% 0,100% 0,100% calc(100% - .5625rem),100% 100%,100% 100%)}
+.sitenav li:last-child a:hover,.sitenav li:last-child a[aria-current]{color:var(--on-brass)}
+.sitenav li:last-child a[aria-current]{box-shadow:0 2px 0 var(--brass)}
+/* the languages: chips with the code (from the lang attribute) and the language's name for screen readers */
+.langs{grid-row:2;grid-column:3;display:flex;gap:.25rem;margin-left:1rem}
+.langs a,.langs .on{position:relative;display:block;width:2.375rem;height:1.875rem;overflow:hidden;white-space:nowrap;
+  text-indent:4rem;border:1px solid var(--line2);color:var(--muted);text-decoration:none;transition:border-color .2s,color .2s}
+.langs a::before,.langs .on::before{content:attr(lang);content:attr(lang)/"";position:absolute;inset:0;display:grid;
+  place-items:center;text-indent:0;font:700 .8125rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase}
+.langs a:hover{border-color:var(--brass);color:var(--ink)}
+.langs .on{background:var(--grad);border-color:transparent;color:var(--on-brass)}
+@media(max-width:72rem){
+  .masthead{grid-template-columns:minmax(0,1fr) auto;padding-bottom:.875rem}
+  .masthead a.name{min-height:4rem}
+  .masthead details{display:block}
+  .masthead [role=search]{grid-row:2;grid-column:1/-1;justify-self:stretch;width:100%}
+  .masthead>details:not([open])~nav.sitenav,.masthead>details:not([open])~nav.langs{display:none}
+  .sitenav{grid-column:1/-1;margin-top:.5rem}
+  .sitenav ul{flex-direction:column;align-items:stretch}
+  .sitenav li{border-bottom:1px solid var(--line)}
+  .sitenav a{padding:.8125rem 0;font-size:1.0625rem}
+  .sitenav li:not(:last-child) a::after{bottom:.5rem;right:auto;width:2.5rem}
+  .sitenav li:last-child{margin:1.125rem 0 .25rem;border:0}
+  .sitenav li:last-child a{display:flex;width:100%;min-height:3rem}
+  .langs{grid-row:auto;grid-column:1/-1;margin:.75rem 0 0}
+  .langs a,.langs .on{width:3rem;height:2.5rem}
+}
+@media(max-width:26.25rem){.masthead a.name{font-size:1.1875rem;letter-spacing:.04em;gap:.625rem}
+  .masthead a.name::before{width:1.625rem;height:1.625rem}.masthead summary{padding:0 .625rem}}
+/* ── the page: header and footer full width, the content centred ───────────────────────────── */
+/* the content column: a grid, so no component's own margins can pull a block out of line */
+main{display:grid;grid-template-columns:minmax(var(--gut),1fr) min(var(--max),100% - 2*var(--gut)) minmax(var(--gut),1fr)}
+main>*{grid-column:2;min-width:0}
+.crumbs{width:min(var(--max),100% - 2*var(--gut));margin-inline:auto}
+.crumbs ol{list-style:none;margin:0;padding:1.25rem 0 0;display:flex;flex-wrap:wrap;font-size:.875rem;line-height:1.5rem;color:var(--muted)}
+.crumbs li{min-width:0;overflow-wrap:anywhere}
+.crumbs li+li::before{content:"/";content:"/"/"";margin:0 .625rem;color:var(--brass)}
+.crumbs a{color:var(--gold-hi);text-decoration-color:rgba(201,162,78,.45)}
+.crumbs [aria-current]{color:var(--text)}
+.title{display:grid;grid-template-columns:minmax(0,1fr) 17.5rem;gap:1.75rem 3.5rem;align-items:end;
+  padding:2.75rem 0 2.25rem;border-bottom:1px solid rgba(201,162,78,.34)}
+.title>div:only-child{grid-column:1/-1}
+.title p.sum{margin:1.125rem 0 0;max-width:68ch;font-size:1.125rem;line-height:1.6;color:var(--text)}
+.title p.aud{margin:1rem 0 0;max-width:60ch;font-size:1.1875rem;line-height:1.5;color:var(--ink)}
+.title .m14{margin-top:1.25rem}
+.rail{margin:0;padding:0 0 .25rem 1.5rem;border-left:1px solid rgba(201,162,78,.38);font-size:.9375rem;color:var(--text)}
+.rail dt{margin:1rem 0 0;font:700 .8125rem/1.35 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.rail dt:first-child{margin-top:0}
+.rail dd{margin:.25rem 0 0;color:var(--ink);overflow-wrap:anywhere}
+.state{display:inline-flex;align-items:center;gap:.5rem;padding:.3125rem .75rem;border:1px solid rgba(201,162,78,.55);
+  font:700 .8125rem/1.3 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-hi)}
+.state i{width:.4375rem;height:.4375rem;background:currentColor;transform:rotate(45deg);display:block;flex:none}
+.state.today{color:var(--hot);border-color:var(--hot)}
+.state.off{color:var(--muted);border-color:var(--line2);background:var(--off-bg)}
+/* ── figures: big brass numbers, small capitals under them ────────────────────────────────── */
+.figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,11.5rem),1fr));gap:1.5rem 0;padding:2rem 0 .5rem}
+.fig{position:relative;display:block;padding:.25rem 1.5rem .25rem;border-left:1px solid var(--line);min-width:0}
+.figures>.fig:first-child{border-left:0;padding-left:0}
+.fig b{display:block;font:400 clamp(2.75rem,2rem + 2.4vw,4rem)/.92 var(--display);letter-spacing:.01em;color:var(--gold-hi);
+  background:var(--grad-v);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;overflow-wrap:break-word}
+.fig b .n{white-space:nowrap}
+.fig b small{font-size:1.125rem;letter-spacing:.06em;margin-left:.15em;white-space:nowrap}
+.fig>span{display:block;margin-top:.75rem;font:700 .8125rem/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.fig .approx{display:block;margin-top:.5rem;font-size:.875rem;font-style:normal;line-height:1.45;color:var(--muted)}
+a.fig{color:var(--ink);text-decoration:none}
+a.fig>span::after{content:" \2192";content:" \2192"/"";color:var(--brass)}
+a.fig:hover b{filter:brightness(1.18)}
+a.fig:hover>span{color:var(--ink)}
+.fig.date b{font-size:clamp(2rem,1.6rem + 1.4vw,2.75rem);white-space:nowrap}
+.fig.off b{background:none;-webkit-text-fill-color:currentColor;color:var(--muted)}
+.fig .rel{display:block;margin-top:.5rem;font:700 .9375rem/1.35 var(--sans);font-style:normal;letter-spacing:.02em;color:var(--gold-hi)}
+.fig.soon .rel{color:var(--warm)}
+.fig.today b{background:none;-webkit-text-fill-color:currentColor;color:var(--hot)}
+.fig.today .rel{color:var(--hot)}
+/* a record's deadline (or amount): the tile in brass brackets */
+.fig.wide{grid-column:span 2;max-width:42rem;padding:1.25rem 1.5rem 1.125rem;border:0;background:linear-gradient(180deg,rgba(201,162,78,.09),rgba(201,162,78,.02))}
+.figures>.fig.wide:first-child{padding-left:1.5rem}
+.fig.wide::before,.cols>.prose+div::before,.kb::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(var(--brass),var(--brass)) 0 0/.75rem 1px,linear-gradient(var(--brass),var(--brass)) 0 0/1px .75rem,
+    linear-gradient(var(--brass),var(--brass)) 100% 0/.75rem 1px,linear-gradient(var(--brass),var(--brass)) 100% 0/1px .75rem,
+    linear-gradient(var(--brass),var(--brass)) 0 100%/.75rem 1px,linear-gradient(var(--brass),var(--brass)) 0 100%/1px .75rem,
+    linear-gradient(var(--brass),var(--brass)) 100% 100%/.75rem 1px,linear-gradient(var(--brass),var(--brass)) 100% 100%/1px .75rem;
+  background-repeat:no-repeat}
+.fig.wide b{font-size:clamp(2.25rem,1.7rem + 2vw,3.5rem)}
+.fig.wide.off::before{opacity:.45}
+@media(max-width:37.5rem){.fig{padding:.25rem 0 .25rem 1rem}.figures>.fig:nth-child(odd):not(.wide){border-left:0;padding-left:0}
+  .fig.wide{grid-column:1/-1}.figures{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fig.wide+.fig{border-left:0;padding-left:0}}
+@media(max-width:23.75rem){.figures{grid-template-columns:minmax(0,1fr);gap:1rem 0}
+  .figures>.fig{border-left:0;padding:0}.figures>.fig+.fig{border-top:1px solid var(--line);padding-top:1rem}
+  .figures>.fig.wide{padding:1.125rem 1.25rem 1rem;border:0}}
+/* ── sections and running heads ───────────────────────────────────────────────────────────── */
+.sec{margin-top:.75rem}
+.sec>h2:first-child,.sec>h2.pr30:first-child{margin:3.25rem 0 .75rem}
+.runhead{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.25rem 1.5rem;
+  margin-top:3.25rem;padding:0 0 .75rem;border-bottom:1px solid rgba(201,162,78,.42)}
+.runhead h2{margin:0;font-size:clamp(1.5rem,1.25rem + .9vw,2rem)}
+.runhead>span{font:700 .8125rem/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.runhead.mt26{margin-top:1.75rem}
+.lede,figure .lede{margin:.75rem 0 0;max-width:70ch;color:var(--muted);font-size:1rem;line-height:1.6}
+.prose p{margin:0 0 1rem;font-size:1.125rem;line-height:1.7;max-width:70ch;color:var(--text)}
+.prose p strong{color:var(--ink)}
+.prose h2,h2.pr34,h2.pr30{margin:2.25rem 0 .75rem;font-size:1.625rem}
+.prose>h2:first-child{margin-top:2.75rem}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) 25rem;gap:3.5rem;align-items:start;padding-top:.5rem}
+.half{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:start;padding-top:.5rem}
+.cols>*,.half>*{min-width:0}
+/* a record's "Angaben": the details in a brass-bracketed panel */
+.cols>.prose+div{position:relative;margin-top:2.75rem;padding:.25rem 1.5rem 1.5rem;background:var(--card)}
+.cols>.prose+div .runhead{margin-top:1.25rem}
+.cols>.prose+div .tags{margin-top:1.25rem}
+/* ── tables ───────────────────────────────────────────────────────────────────────────────── */
+table{width:100%;border-collapse:collapse}
+th{text-align:left;font:700 .8125rem/1.35 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+  padding:0 .875rem .75rem 0;border-bottom:1px solid var(--line2);vertical-align:bottom}
+td{padding:.875rem .875rem .875rem 0;border-bottom:1px solid var(--line);vertical-align:top;font-size:1rem;line-height:1.5}
+thead td{border-bottom:1px solid var(--line2);padding:0 .875rem .75rem 0}
+td.r,th.r{text-align:right;padding-right:0;padding-left:1rem}
+td.num{white-space:nowrap}
+td.num .sub{white-space:normal;font-variant-numeric:normal}
+td a,ul.plain a,.bl a,.ber a{color:var(--ink);text-decoration-color:rgba(201,162,78,.5)}
+td a:hover,ul.plain a:hover,.bl a:hover,.ber a:hover{color:var(--gold-hi)}
+td.d,td.when{white-space:nowrap}
+td.sub,.sub{color:var(--muted)}
+td .sub{display:block;margin-top:.25rem}
+td.when{font-weight:700;color:var(--ink)}
+th.w96{width:7.5rem}
+th.w44{width:3.5rem}
+th.w52{width:4rem}
+tbody tr{position:relative;transition:background-color .2s}
+tbody tr:hover{background:var(--hover)}
+tbody tr:hover>:first-child{box-shadow:inset 2px 0 0 var(--brass)}
+/* a row with one primary link is tappable as a whole: the first linked cell's link covers the row */
+tbody td a::after{content:"";position:absolute;inset:0}
+tbody td:has(a)~td a{position:relative;z-index:1}
+tbody td:has(a)~td a::after,.kv a::after,.lots a::after,.cmp a::after,td .sub a::after,.kb a::after{content:none}
+.kv a,.cmp a{position:static}
+.kv tbody tr:hover,.cmp tbody tr:hover,.cc tbody tr:hover{background:none}
+.kv tbody tr:hover>:first-child,.cmp tbody tr:hover>:first-child,.cc tbody tr:hover>:first-child{box-shadow:none}
+.scroll{overflow-x:auto;max-width:100%;position:relative}
+/* the details of a record: label and value */
+.kv{table-layout:fixed}
+.kv th{width:33%;padding:.75rem .875rem .75rem 0;font:400 1rem/1.45 var(--sans);letter-spacing:0;text-transform:none;
+  color:var(--muted);border-bottom:1px solid var(--line);vertical-align:baseline;white-space:normal;overflow-wrap:break-word;
+  hyphens:manual;-webkit-hyphens:manual}
+.kv td{padding:.75rem 0;vertical-align:baseline;color:var(--ink);overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;
+  hyphenate-limit-chars:12 5 5}
+.kv tr:last-child>*{border-bottom:0}
+/* simap.ch and the register side by side (the hub) */
+.cmp th{padding:.875rem 1rem;border-bottom:1px solid var(--line)}
+.cmp thead td{padding:.875rem 1rem}
+.cmp th.us{color:var(--gold-hi)}
+.cmp tbody th{font:400 1rem/1.5 var(--sans);letter-spacing:0;text-transform:none;color:var(--text);white-space:normal;vertical-align:top}
+.cmp td{padding:.875rem 1rem}
+.cmp td.c{text-align:center;width:11rem;font-weight:700;color:var(--muted)}
+.cmp td.c.y{color:var(--gold-hi)}
+.top td.n0,.top .n0{width:3rem;font:400 1.625rem/1 var(--display);color:var(--gold);padding-top:1rem}
+.top td.r.num{font-weight:700;color:var(--ink)}
+.top td.r.num:last-child{font-weight:400;color:var(--text)}
+@media(min-width:53.8125rem){
+  th{white-space:nowrap}
+  html{scroll-padding-top:4rem}
+  .scroll:has(>table.ls){overflow:visible}
+  table.ls thead :is(th,td){position:sticky;top:0;z-index:2;padding-top:.75rem;background:var(--sticky);
+    border-bottom:0;box-shadow:inset 0 -1px var(--line2)}
+}
+/* ── lists ────────────────────────────────────────────────────────────────────────────────── */
 ul.plain{list-style:none;margin:0;padding:0}
-ul.plain li{padding:12px 0;border-bottom:1px solid var(--rule)}
+ul.plain li{position:relative;padding:.875rem 0;border-bottom:1px solid var(--line)}
 ul.plain li:last-child{border-bottom:0}
-.row{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
-/* a long unbroken name wraps instead of widening the page on phones; the count beside it never wraps */
+.row{display:flex;justify-content:space-between;gap:1rem;align-items:baseline}
 .row>*{min-width:0;overflow-wrap:anywhere}
-.row>.sub,.row>.when,.row>.num{flex:none;overflow-wrap:normal}
-h1,.eyebrow{overflow-wrap:anywhere}
-/* deadlines: neutral; .soon (seven days or less) warm, .today ('läuft heute ab, 16.00 Uhr') red. The
-   build sets them on the lists it rewrites every morning; every list row carries data-deadline for a
-   script to keep them current (14.10.2026) */
-.when{color:var(--ink);font-size:13px;white-space:nowrap;font-weight:600}
-.when.soon{color:var(--warm)}
-.when.today{color:var(--accent-text);white-space:normal}
+.row>.when,.row>.nw{flex:none}
+.row>.sub,.row>.num:not(.nw){flex:0 1 auto;min-width:auto;text-align:right;overflow-wrap:normal}
+ul.plain .row>a:first-child::after,ul.plain .row>div:first-child>a:first-child::after{content:"";position:absolute;inset:0}
+ul.plain li a~a,ul.plain .row>:not(:first-child) a,ul.plain .sub a{position:relative;z-index:1}
+ul.plain li:hover{background:var(--hover)}
+ul.plain.cols2{columns:2;column-gap:3.5rem}
+ul.plain.cols2 li{break-inside:avoid}
+.when{color:var(--ink);font-size:.875rem;white-space:nowrap;font-weight:700}
+.when.soon,td.when.soon{color:var(--warm)}
+.when.today,td.when.today{color:var(--hot);white-space:normal}
 .row>.when.today{flex:0 1 auto;min-width:min-content;text-align:right}
-/* ── tags / chips ──────────────────────────────────────────────────────── */
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-/* inline-block: a pill whose text wraps on a phone stays one rounded box; 32 px tall */
-.tag{display:inline-block;max-width:100%;border:1px solid var(--line);border-radius:999px;
-  padding:5px 13px;font-size:13.5px;line-height:20px;color:var(--ink);background:transparent;
-  text-decoration:none;transition:border-color .16s,background-color .16s}
-a.tag:hover{border-color:var(--ink);background:var(--hover);color:var(--ink)}
-.tag.on{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:600}
-a.tag.on:hover{background:var(--muted);border-color:var(--muted);color:var(--paper)}
-/* ── panels ────────────────────────────────────────────────────────────── */
-.glass{position:relative;border:1px solid var(--rule);border-radius:16px;overflow:hidden;
-  background:var(--glass),var(--card);margin-top:16px}
-.glass .pad{padding:0 24px 22px}
-.glass .pad.top{padding-top:20px}
-/* ── comparison table ──────────────────────────────────────────────────── */
-.cmp th{padding:14px 18px;border-bottom:1px solid var(--rule)}
-.cmp th.us{color:var(--ink)}
-.cmp thead td{padding:14px 18px;border-bottom:1px solid var(--rule)}
-.cmp td{padding:14px 18px;font-size:14.5px}
-.cmp tbody th{padding:14px 18px;font-size:14.5px;font-weight:400;color:var(--text);white-space:normal;
-  border-bottom:1px solid var(--rule);vertical-align:top}
-.cmp td.c{text-align:center;width:180px;font:600 13px/1.4 var(--mono);color:var(--muted)}
-.cmp td.c.y{color:var(--ok)}
-/* ── subscribe form ────────────────────────────────────────────────────── */
-.form{margin-top:18px;max-width:620px;position:relative}
-.form .f{display:block;font-size:14.5px;font-weight:600;line-height:1.4;color:var(--ink);margin:24px 0 8px}
-.form input[type=email]{width:100%;border:1px solid var(--line);border-radius:10px;padding:12px 14px;
-  font-size:16px;font-family:inherit;line-height:1.4;background:var(--paper);color:var(--ink)}
-.form input[type=email]::placeholder{color:var(--muted-2)}
-.form input[type=email]:focus{outline:3px solid var(--focus);outline-offset:1px;border-color:var(--ink)}
-/* the canton and industry pills are two groups of checkboxes: a fieldset each, its legend in the
-   look of the other field labels (14.10.2026) */
+.when .rel{display:block;font-weight:400;font-size:.875rem;white-space:normal}
+td.when.today,td.when.soon{white-space:normal}
+p.xh{margin:.625rem 0 0;font-size:.875rem;color:var(--muted)}
+/* ── chips ────────────────────────────────────────────────────────────────────────────────── */
+.tags{display:flex;flex-wrap:wrap;gap:.625rem;margin-top:1rem}
+.tag{display:inline-block;max-width:100%;padding:.5rem .875rem;border:1px solid var(--field);font-size:.9375rem;line-height:1.4;
+  color:var(--ink);background:transparent;text-decoration:none;transition:border-color .2s,background-color .2s,color .2s}
+a.tag:hover{border-color:var(--gold-hi);background:var(--hover);color:var(--ink)}
+.tag.on{background:var(--grad);border-color:transparent;color:var(--on-brass);font-weight:700}
+a.tag.on:hover{background:var(--gold-hi);color:var(--on-brass)}
+/* ── panels: the alert in brass, the others dark ──────────────────────────────────────────── */
+.glass{position:relative;margin-top:1.5rem;border:1px solid var(--line);background:var(--card)}
+.glass .pad{padding:0 1.5rem 1.375rem}
+.glass .pad.top{padding-top:1.25rem}
+.glass.alert{margin-top:2.75rem;border:0;border-top:1px solid var(--brass);
+  background:linear-gradient(100deg,rgba(201,162,78,.16),rgba(201,162,78,.05) 55%,rgba(201,162,78,.02)),var(--alert-bg)}
+.alert .pad{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 2rem;padding:1.5rem 1.75rem}
+.alert .pad>p{margin:0;flex:1 1 22rem;font-size:1.0625rem;color:var(--ink)}
+.alert .pad>p.lead{flex-basis:100%;font-weight:700}
+.alert .pad>p.act{flex:0 1 auto;display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
+.alert .tag{border-color:var(--field)}
+.winner{margin:.75rem 0 0;padding:1.125rem 1.25rem;border-left:2px solid var(--brass);background:var(--card)}
+.winner .who{font:700 1.375rem/1.3 var(--sans);color:var(--ink)}
+.official{margin-top:1.75rem;padding:.875rem 1.125rem;border-left:2px solid var(--line2);background:var(--card);font-size:.9375rem;color:var(--muted)}
+.acts{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1rem;margin-top:1.5rem}
+.acts .rep{font-size:.9375rem}
+a.btn{min-height:3.25rem;padding-inline:1.5rem 1.625rem;font-size:.875rem}
+a.btn::after{transition:clip-path .3s cubic-bezier(.33,0,0,1)}
+.dl{margin:1rem 0 0;font-size:.9375rem}
+.empty{margin:1.5rem 0 0;font-size:1.125rem;color:var(--ink)}
+details.more summary{cursor:pointer;margin:.75rem 0 0;padding:.25rem 0;font-size:.9375rem;font-weight:700;color:var(--link)}
+abbr.fb::after{content:"*"}
+p.fbn{margin:.5rem 0 0}
+.lead{font-weight:700;color:var(--ink)}
+/* the most repeated spacing, as classes (on 92,000 pages) */
+.sub.sb2{display:block;margin-top:.125rem}
+.sub.sb3{display:block;margin-top:.1875rem}
+.sub.sb6{display:block;margin-top:.375rem}
+.sub.sb0{display:block}
+.sub.mt5{margin-top:.3125rem}
+.mt3{margin-top:.1875rem}
+.mt4{margin-top:.25rem}
+.mt10,ul.plain.mt10{margin-top:.625rem}
+ul.plain.mt6{margin-top:.375rem}
+.m10{margin:.625rem 0 0}
+.m106{margin:.625rem 0 .375rem}
+.m14{margin:.875rem 0 0}
+.m18{margin:1.125rem 0 0}
+.prose p.p4{margin:0 0 .25rem}
+.nw{white-space:nowrap}
+/* ── the A–Z, the pager, the finder, the search ───────────────────────────────────────────── */
+.az{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.25rem 0 0;padding:0;list-style:none}
+.az a,.az span{display:inline-block;min-width:2.75rem;padding:.375rem .625rem;border:1px solid var(--field);text-align:center;
+  font:400 1.375rem/1.1 var(--display);letter-spacing:.04em;color:var(--ink);text-decoration:none;transition:background-color .2s,color .2s}
+.az a:hover{background:var(--hover);border-color:var(--gold-hi)}
+.az [aria-current]{background:var(--grad);border-color:transparent;color:var(--on-brass)}
+.az small{display:block;font:400 .8125rem/1.3 var(--sans);letter-spacing:0;color:inherit;opacity:.85}
+.pn{display:flex;justify-content:space-between;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem}
+form.finder{position:relative;padding:1.375rem 1.5rem;border:1px solid var(--line);background:linear-gradient(180deg,rgba(244,241,234,.06),rgba(244,241,234,.02))}
+form.finder .dh{display:block;margin-bottom:.875rem;font:400 clamp(1.75rem,1.4rem + 1.2vw,2.5rem)/1 var(--display);
+  letter-spacing:.02em;text-transform:uppercase;color:var(--ink)}
+form.finder .row2{display:flex;position:relative}
+form.finder .dsub{display:block;margin-top:.75rem;color:var(--muted);font-size:.9375rem;line-height:1.5}
+form.search-page{display:flex;max-width:40rem;margin:1.75rem 0 0;position:relative}
+form.search-page label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+form.search-page input{font-size:1.125rem;padding:.75rem .875rem .75rem 2.5rem;min-height:3.25rem}
+form.search-page button{font-size:.875rem;padding:0 1.25rem;min-height:3.25rem}
+.search-res{margin-top:1.5rem}
+.search-res h2{margin:2rem 0 .375rem}
+.search-res ul.plain li{padding:.625rem 0}
+.search-res .kind{color:var(--muted);font-size:.875rem}
+.search-dirs h3{margin:1.75rem 0 0}
+/* the live results under a search field (js/suche.js) */
+.search-pop{position:absolute;left:0;right:0;top:calc(100% + .375rem);z-index:40;min-width:min(100%,20rem);max-height:min(72vh,37.5rem);
+  overflow:auto;padding:.25rem 0 .375rem;background:#0b0a08;border:1px solid rgba(201,162,78,.6);box-shadow:0 1.25rem 2.5rem rgba(0,0,0,.6);text-align:left}
+.search-pop[hidden]{display:none}
+.search-grp{display:block;padding:.75rem 1rem .25rem;font:700 .8125rem/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.search-opt{display:block;padding:.5rem 1rem;color:var(--ink);text-decoration:none;line-height:1.35;font-size:1rem}
+.search-opt:hover{color:var(--ink);background:var(--hover)}
+.search-opt[aria-selected=true]{background:var(--hover);box-shadow:inset 3px 0 var(--brass)}
+.search-opt .sub{display:block;margin-top:.125rem;font-size:.875rem}
+.search-opt.all{font-weight:700;color:var(--gold-hi)}
+.search-msg{display:block;padding:.75rem 1rem;color:var(--muted);font-size:.9375rem}
+/* ── forms: the alert and the filters ─────────────────────────────────────────────────────── */
+.form{margin-top:1.25rem;max-width:40rem;position:relative}
+.form .f{display:block;font:700 .9375rem/1.4 var(--sans);color:var(--ink);margin:1.5rem 0 .5rem}
+.form input[type=email]{width:100%;min-height:3rem;border:1px solid var(--field);border-radius:0;padding:.75rem .875rem;font:inherit;font-size:1rem;
+  line-height:1.4;background:#0b0a08;color:var(--ink)}
+.form input[type=email]::placeholder{color:var(--muted)}
+.form input[type=email]:focus{outline:3px solid var(--focus);outline-offset:1px;border-color:var(--brass)}
 .form fieldset{border:0;margin:0;padding:0;min-width:0}
 .form legend.f{padding:0;float:left;width:100%}
 .form legend.f+*{clear:both}
-.form .pills{display:flex;flex-wrap:wrap;gap:8px}
+.form .pills{display:flex;flex-wrap:wrap;gap:.5rem}
 .form .pills label{cursor:pointer;position:relative;display:inline-block}
 .form .pills input{position:absolute;opacity:0;width:1px;height:1px;left:0;top:0}
-/* chosen: inverted and ticked, so the state does not rest on colour alone */
-.form .pills input:checked+.tag{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:600}
-.form .pills input:checked+.tag::before{content:"\\2713\\00a0";content:"\\2713\\00a0"/""}
+.form .pills input:checked+.tag{background:var(--grad);border-color:transparent;color:var(--on-brass);font-weight:700}
+.form .pills input:checked+.tag::before{content:"\2713\00a0";content:"\2713\00a0"/""}
 .form .pills input:focus-visible+.tag{outline:3px solid var(--focus);outline-offset:2px}
-/* the 26 cantons by code AND name (step 3a: a reader who does not know AI, AR, NW or OW had to hover),
-   compact so the form stays short on a phone */
-.form .pills.k{gap:6px}
-.form .pills.k .tag{padding:4px 10px;font-size:13px}
-/* the industries in groups, each one closed until opened: the button sat 1,600 px under the e-mail
-   field on a phone. A group holding a choice shows a dot (14.10.2026) */
-.form details.grp{border:1px solid var(--rule);border-radius:12px;margin-top:8px;background:var(--card)}
-.form details.grp>summary{display:flex;align-items:center;gap:10px;min-height:46px;padding:10px 14px;
-  cursor:pointer;font-weight:600;font-size:15px;line-height:1.35;list-style:none;border-radius:12px}
+.form .pills.k{gap:.375rem}
+.form .pills.k .tag{padding:.375rem .625rem;font-size:.875rem}
+.form .pills.k .tag b{font-weight:700;margin-right:.25rem}
+.form details.grp{margin-top:.5rem;border:1px solid var(--line);background:var(--card)}
+.form details.grp>summary{display:flex;align-items:center;gap:.625rem;min-height:3rem;padding:.625rem .875rem;cursor:pointer;
+  font-weight:700;font-size:1rem;line-height:1.35;color:var(--ink);list-style:none}
 .form details.grp>summary::-webkit-details-marker{display:none}
-.form details.grp>summary::after{content:"+";content:"+"/"";margin-left:auto;font:600 18px/1 var(--mono);
-  color:var(--muted)}
-.form details.grp[open]>summary::after{content:"\\2212";content:"\\2212"/""}
-.form details.grp:has(input:checked)>summary::before{content:"";width:8px;height:8px;flex:none;
-  border-radius:50%;background:var(--ink)}
-.form details.grp .pills{padding:2px 14px 14px}
-/* the primary action: the one red button of the page */
-.form button{margin-top:24px;border:0;background:var(--accent);color:var(--on-accent);border-radius:999px;
-  padding:13px 28px;min-height:48px;font-family:inherit;font-size:16px;font-weight:600;cursor:pointer;
-  transition:background-color .16s}
-.form button:hover{background:var(--accent-hover)}
-.form button:focus-visible{outline-offset:3px}
-.form button:disabled{opacity:.6;cursor:default}
+.form details.grp>summary::after{content:"+";content:"+"/"";margin-left:auto;font:700 1.25rem/1 var(--sans);color:var(--brass)}
+.form details.grp[open]>summary::after{content:"\2212";content:"\2212"/""}
+.form details.grp:has(input:checked)>summary::before{content:"";width:.5rem;height:.5rem;flex:none;background:var(--brass);transform:rotate(45deg)}
+.form details.grp .pills{padding:.125rem .875rem .875rem}
+.form button{margin-top:1.5rem;min-height:3.25rem;padding-inline:1.75rem 1.875rem;font-size:.875rem}
+.form button:disabled,.form button[aria-disabled=true]{opacity:.6;cursor:progress}
 .form .hp{position:absolute;left:-9999px;opacity:0}
-.form .msg{margin-top:14px;font-size:15px;min-height:1.4em}
-.form .msg.err{color:var(--accent-text)}
-/* ── misc ──────────────────────────────────────────────────────────────── */
-.state{display:inline-flex;align-items:center;gap:8px;font:600 12px/1.4 var(--mono);letter-spacing:.08em;
-  text-transform:uppercase;color:var(--ok);padding:5px 12px;border-radius:999px;background:var(--ok-bg)}
-.state i{width:6px;height:6px;background:currentColor;border-radius:50%;display:block}
-/* a tender due today, and one past its deadline (08.10.2026) */
-.state.today{color:var(--accent-text);background:var(--off-bg)}
-.state.off{color:var(--muted);background:var(--off-bg)}
-.winner{border:1px solid var(--rule);border-radius:14px;background:var(--glass),var(--card);
-  padding:18px 20px;margin:10px 0 0}
-.winner .who{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.025em}
-/* the link to the publication itself: set apart, neutral */
-.official{margin-top:26px;padding:14px 18px;background:var(--card);border-left:3px solid var(--rule-strong);
-  border-radius:0 10px 10px 0;font-size:14px;color:var(--muted)}
-.prose p{margin:0 0 15px;font-size:16.5px;line-height:1.7;max-width:68ch;color:var(--text);overflow-wrap:break-word}
-.prose p strong{color:var(--ink)}
-.cols{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:48px;padding-top:6px;align-items:start}
-.half{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding-top:6px;align-items:start}
-.cols>*,.half>*{min-width:0}
-figure{margin:16px 0 4px;background:var(--panel);border:1px solid var(--rule);border-radius:14px;padding:20px 22px}
-footer{border-top:1px solid var(--rule);margin-top:56px;padding-top:22px;color:var(--muted);font-size:13.5px}
-footer p{margin:0 0 6px;max-width:80ch}
-footer .stand{color:var(--ink)}
-/* ── menu, breadcrumbs, skip link (14.10.2026) ───────────────────────────── */
-.skip{position:absolute;left:16px;top:-90px;z-index:20;padding:10px 16px;border-radius:10px;
-  background:var(--ink);color:var(--paper);font-weight:600;text-decoration:none}
-.skip:focus{top:12px;color:var(--paper)}
-.sitenav{flex:1 1 100%;min-width:0}
-.sitenav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;column-gap:22px}
-.sitenav a{display:block;padding:10px 0 9px;font-size:14px;font-weight:600;line-height:1.5;color:var(--muted);
-  text-decoration:none;border-bottom:2px solid transparent;margin-bottom:-1px}
-.sitenav a:hover{color:var(--ink)}
-.sitenav a[aria-current]{color:var(--ink);border-bottom-color:var(--accent-text)}
-.sitenav a:focus-visible{outline-offset:-3px}
-.sitenav .aux{margin-left:auto}
-.crumbs ol{list-style:none;margin:0;padding:12px 0 0;display:flex;flex-wrap:wrap;
-  font-size:13.5px;line-height:24px;color:var(--muted)}
-.crumbs li{min-width:0;overflow-wrap:anywhere}
-.crumbs li+li::before{content:"›";content:"›"/"";margin:0 8px;color:var(--muted-2)}
-.crumbs [aria-current]{color:var(--ink)}
-/* ── the home's two doors, buttons, clickable tiles (14.10.2026) ───────── */
-.doors{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:14px;margin-top:26px}
-a.door{display:block;border:1px solid var(--rule-strong);border-radius:16px;padding:20px 22px;
-  background:var(--glass),var(--card);color:var(--ink);text-decoration:none;transition:border-color .16s}
-a.door:hover{border-color:var(--ink);color:var(--ink)}
-.door .dh{display:block;font-family:var(--display);font-weight:800;font-size:clamp(22px,2.6vw,28px);
-  letter-spacing:-.03em;line-height:1.15}
-.door .dh b{font-weight:800}
-.door .dnew{display:inline-block;margin-top:10px;padding:3px 10px;border-radius:999px;font-size:13px;
-  font-weight:600;color:var(--ok);background:var(--ok-bg)}
-.door .dsub{display:block;margin-top:10px;color:var(--muted);font-size:14.5px;line-height:1.5}
-.doors .cta{grid-column:1/-1;margin:4px 0 0}
-a.btn{display:inline-block;background:var(--accent);color:var(--on-accent);border-radius:999px;
-  padding:12px 22px;font-size:15px;font-weight:600;line-height:1.4;text-decoration:none;
-  transition:background-color .16s}
-a.btn:hover{background:var(--accent-hover);color:var(--on-accent)}
-a.fig{display:block;color:var(--ink);text-decoration:none;transition:border-color .16s}
-a.fig:hover{border-color:var(--ink);color:var(--ink)}
-a.fig>span::after{content:" \\2192";content:" \\2192"/""}
-.dl{margin:14px 0 0;font-size:14.5px}
-/* the most repeated inline styles, as classes (14.10.2026): same look, 18 MB less over the site; more
-   of them in step 3a (14.10.2026), each with the specificity its inline style had over the rule it beat */
-.sub.sb2{display:block;margin-top:2px}
-.sub.sb3{display:block;margin-top:3px}
-.sub.sb6{display:block;margin-top:6px}
-.sub.sb0{display:block}
-.sub.mt5{margin-top:5px}
-.mt3{margin-top:3px}
-.mt4{margin-top:4px}
-.mt10,ul.plain.mt10{margin-top:10px}
-ul.plain.mt6{margin-top:6px}
-.m10{margin:10px 0 0}
-.m106{margin:10px 0 6px}
-.m14{margin:14px 0 0}
-.m18{margin:18px 0 0}
-.prose p.p4{margin:0 0 4px}
-.runhead.mt26{margin-top:26px}
-.nw{white-space:nowrap}
-th.w96{width:96px}
-th.w44{width:44px}
-th.w52{width:52px}
-td.d{font-size:13px}
-h1.rec{margin-top:12px;font-size:clamp(24px,3.4vw,34px)}
-h2.pr34{margin:34px 0 12px}
-h2.pr30{margin:30px 0 12px}
-.alert .pad>p{margin:0;font-size:16px}
-.alert .pad>p.lead{margin:0 0 8px;font-weight:600}
-.alert .pad>p.act{margin:14px 0 0}
-.empty{margin:22px 0 0;font-size:16.5px;color:var(--ink)}
-details.more summary{cursor:pointer;margin:12px 0 0;padding:4px 0;font-size:14.5px;font-weight:600;color:var(--link)}
-/* step 3a (14.10.2026): a canton taken from the buyer's seat carries an asterisk, explained under the
-   list; a chart names its source and links its data; a record page leads with the publication on
-   simap.ch (primary), the calendar file and the way back (secondary), and the error report */
-abbr.fb::after{content:"*"}
-p.fbn{margin:8px 0 0}
-figure .src,p.src{margin:12px 0 0;font-size:13px;color:var(--muted)}
-.acts{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin-top:20px}
-.acts .rep{font-size:14px}
-.title p.aud{margin:12px 0 0;font-size:17px;line-height:1.5;color:var(--ink);max-width:56ch}
-.form .pills.k .tag b{font-family:var(--mono);font-weight:600;margin-right:4px}
-ul.plain.cols2{columns:2;column-gap:48px}
-ul.plain.cols2 li{break-inside:avoid}
-@media(max-width:860px){ul.plain.cols2{columns:1}}
-@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;
-  transition-duration:.01ms!important}}
-@media(max-width:860px){
-  .wrap{padding:0 20px 44px}
-  .title{padding:28px 0 24px;grid-template-columns:minmax(0,1fr);gap:22px}
-  .cols,.half{grid-template-columns:minmax(0,1fr);gap:30px}
-  .glass .pad{padding-inline:16px}
-  td.r,th.r{padding-left:12px}
-  .cmp td.c{width:96px;font-size:12px}
-  /* the home ranking fits a phone without scrolling: rank and canton step aside */
-  table.top .n0,table.top .kt{display:none}
-  .cmp th,.cmp td{padding:12px 10px}
-}
-@media(min-width:861px){
-  th{white-space:nowrap}
-  /* the long lists keep their header row in view (sticky) on a screen wide enough to show the whole
-     table; scroll-padding keeps a focused link clear of it */
-  html{scroll-padding-top:60px}
-  .scroll:has(>table.ls){overflow:visible}
-  table.ls thead :is(th,td){position:sticky;top:0;z-index:1;padding-top:10px;background:var(--sticky);
-    border-bottom:0;box-shadow:inset 0 -2px var(--rule-strong)}
-}
-/* ── phones (14.10.2026) ──────────────────────────────────────────────── */
-@media(max-width:600px){
-  /* the header in under 120 px: name, languages, and the menu as one row that scrolls sideways */
-  .masthead{padding-top:10px;row-gap:0}
-  .masthead a.name{font-size:16.5px}
-  .sitenav ul{flex-wrap:nowrap;overflow-x:auto;column-gap:20px;scrollbar-width:none}
-  .sitenav ul::-webkit-scrollbar{display:none}
-  .sitenav li{flex:none}
-  .sitenav .aux{margin-left:0}
-  .doors{grid-template-columns:minmax(0,1fr)}
-  a.door{padding:18px}
-  /* the comparison of simap.ch and the register fits a phone: narrower cells, the names may break */
-  .cmp th,.cmp td{padding:10px 6px}
-  .cmp td.c{width:76px}
-  .cmp thead th{overflow-wrap:anywhere}
-  /* The list tables (open tenders, a company's or an authority's awards, a project's lots) as
-     stacked rows: the first cell (deadline, date, lot) and the last (canton, amount) share the top
-     line, the others follow full width; no sideways scrolling. The header row stays a table header,
-     showing its first and last names (the unit of the amounts with them); the others are read by
-     screen readers only. No ARIA role per cell (byte budget): Safari may read a stacked row as
-     plain text, in table order. */
+.form .msg{margin-top:.875rem;font-size:1rem;min-height:1.4em}
+.form .msg.err,.form .ferr{color:var(--hot)}
+.form .ferr{margin:.5rem 0 0;font-size:.9375rem}
+.form input[aria-invalid=true]{border-color:var(--hot)}
+.form .pv{margin:1.125rem 0 0;padding:.75rem .875rem;border-left:2px solid var(--brass);background:var(--card);font-size:1rem;color:var(--ink)}
+.form .pv small{display:block;margin-top:.125rem;font-size:.875rem;color:var(--muted)}
+.flt{display:flex;flex-wrap:wrap;gap:.75rem .875rem;align-items:flex-end;margin:1.25rem 0 .5rem;padding:1rem 1.125rem;
+  border:1px solid var(--line);border-top-color:rgba(201,162,78,.5);background:var(--card)}
+.flt label{display:flex;flex-direction:column;gap:.3125rem;font:700 .8125rem/1.35 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);min-width:0}
+.flt .fq{flex:2 1 15rem}
+.flt .fk,.flt .fb{flex:1 1 10.5rem}
+.flt input[type=search],.flt select{width:100%;min-height:2.75rem;font:inherit;font-size:1rem;font-weight:400;letter-spacing:0;text-transform:none;line-height:1.3;
+  padding:.5rem .625rem;border:1px solid var(--field);border-radius:0;background:#0b0a08;color:var(--ink)}
+.flt .chk{flex-direction:row;align-items:center;gap:.5rem;font:400 1rem/1.3 var(--sans);letter-spacing:0;text-transform:none;color:var(--ink);min-height:2.75rem}
+.flt .chk input{width:1.5rem;height:1.5rem;margin:0;accent-color:var(--brass)}
+.flt button,button.all{min-height:2.75rem;padding:.5rem 1rem;border:1px solid var(--field);background:transparent;color:var(--gold-hi);
+  font:700 .8125rem/1.3 var(--sans);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:background-color .2s,color .2s}
+.flt button:hover,button.all:hover{background:var(--brass);border-color:var(--brass);color:var(--on-brass)}
+button.all{margin:.875rem 0 0}
+.flt .fa{min-height:2.75rem;display:inline-flex;align-items:center}
+.flt .cnt{flex:1 1 100%;margin:.125rem 0 0;font-size:.9375rem;font-weight:700;color:var(--ink)}
+.flt-none{margin:1rem 0 0;font-size:1rem;color:var(--ink)}
+.totop{position:fixed;right:1rem;bottom:1rem;z-index:35;padding:.625rem 1rem;border:1px solid var(--brass);background:#0b0a08;
+  color:var(--gold-hi);font:700 .8125rem/1.2 var(--sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+.totop:hover{background:var(--brass);color:var(--on-brass)}
+.totop[hidden]{display:none}
+/* a canton's awards in one industry (js/kb.js) */
+.kb{position:relative;margin-top:2rem;padding:1.25rem 1.5rem 1.5rem;background:var(--card)}
+.kb h2{margin:0}
+.kb h3{margin:1.5rem 0 .5rem}
+.kb .kbx{float:right;margin:0 0 .5rem .75rem}
+.rk a.kbs[aria-current]{font-weight:700;color:var(--gold-hi)}
+/* the check-your-mail and done pages, the 404 */
+.blk{margin-top:1.75rem}
+.blk p{margin:0 0 .75rem}
+.nf h2{margin:0 0 .625rem}
+/* ── footer: the A and the name, the data line, the simap notice, the links ─────────────────── */
+footer{margin-top:5.5rem;padding:3.25rem max(var(--gut),(100% - var(--max))/2) 3.5rem;border-top:1px solid rgba(201,162,78,.34);
+  background:#000;color:var(--muted);font-size:.9375rem;line-height:1.65}
+footer::before{display:flex;align-items:center;min-height:1.875rem;padding-left:2.625rem;margin-bottom:1.5rem;
+  background:var(--mk) 0 50%/1.875rem no-repeat;font:400 1.625rem/1 var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--ink)}
+footer p{margin:.625rem 0 0;max-width:70ch}
+footer .stand{color:var(--text)}
+footer a{color:var(--gold-hi)}
+/* ── narrow screens ──────────────────────────────────────────────────────────────────────── */
+@media(max-width:53.75rem){
+  .title{padding:2rem 0 1.75rem;grid-template-columns:minmax(0,1fr);gap:1.5rem}
+  .rail{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:.5rem 1rem;align-items:baseline;padding-left:1rem}
+  .rail dt,.rail dd{margin:0}
+  .cols,.half{grid-template-columns:minmax(0,1fr);gap:2rem}
+  .glass .pad,.alert .pad{padding-inline:1.125rem}
+  .cmp td.c{width:6rem}
+  .cmp th,.cmp td,.cmp thead td{padding:.75rem .5rem}
+  ul.plain.cols2{columns:1}
+  .top .n0{display:none}
+  td.r,th.r{padding-left:.75rem}
+  /* the list tables as stacked rows, labels and units from the CSS (genera.css_labels) */
   table.ls,table.ls thead,table.ls tbody{display:block}
-  table.ls thead tr{display:flex;justify-content:space-between;gap:12px;border-bottom:2px solid var(--rule-strong)}
-  table.ls thead :is(th,td){display:block;border:0;padding:0 0 8px;white-space:nowrap}
-  table.ls thead :is(th,td):not(:first-child):not(:last-child){position:absolute;width:1px;height:1px;
-    margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-  table.ls tbody tr{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:14px;row-gap:4px;
-    padding:12px 0;border-bottom:1px solid var(--rule)}
-  table.ls td{display:block;grid-column:1/-1;min-width:0;padding:0;border:0;overflow-wrap:anywhere}
+  table.ls thead{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%)}
+  table.ls tbody{border-top:1px solid var(--line2)}
+  table.ls tbody tr{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:1rem;row-gap:.375rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+  table.ls td{display:block;grid-column:1/-1;min-width:0;padding:0;border:0;overflow-wrap:anywhere;white-space:normal}
   table.ls td:first-child{grid-column:1;grid-row:1}
   table.ls td:last-child{grid-column:2;grid-row:1;text-align:right;padding-left:0}
-  /* a company's awards: the authority and the canton share the third line */
+  table.ls td::before{display:block;font:700 .8125rem/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  table.ls td:first-child::before{display:inline;margin-right:.5rem}
+  table.ls tbody tr:hover>:first-child{box-shadow:none}
   table.awc td:nth-child(3){grid-column:1;grid-row:3}
   table.awc td:nth-child(4){grid-column:2;grid-row:3;text-align:right}
+  table.tl td:nth-child(3){grid-column:1}
+  table.tl td:last-child::before,table.awc td:nth-child(4)::before{display:inline;margin-right:.375rem}
 }
-@supports (animation-timeline:scroll(self inline)){@media(max-width:600px){
-  .sitenav ul{-webkit-mask-image:linear-gradient(90deg,transparent,#000 var(--fl),#000 calc(100% - var(--fr)),transparent);
-    mask-image:linear-gradient(90deg,transparent,#000 var(--fl),#000 calc(100% - var(--fr)),transparent);
-    animation:scroll-hint linear both;animation-timeline:scroll(self inline)}}}
-/* ── print: the record on paper. No menu, no forms, no decoration, black on white; the links to the
-   publication on simap.ch printed out; a row never split over two pages (14.10.2026) ───────────── */
+@media(max-width:37.5rem){
+  th{letter-spacing:.04em;white-space:normal;overflow-wrap:anywhere;hyphens:auto;-webkit-hyphens:auto}
+  th.r{overflow-wrap:normal;hyphens:manual;-webkit-hyphens:manual}
+  th.r:not(.amt){white-space:nowrap}
+  td{overflow-wrap:anywhere}
+  td.r,th.r{padding-left:.625rem}
+  .masthead [role=search] button{padding:0 .75rem}
+  .alert .pad>p.act{flex-basis:100%}
+  .alert .tag.on{width:100%;justify-content:space-between}
+  a.btn{width:100%;justify-content:space-between}
+  .acts{gap:.625rem}
+  .cmp td.c{width:4.75rem}
+  .cmp thead th{overflow-wrap:anywhere}
+  .runhead>span{letter-spacing:.1em}
+}
+/* ── forced colours: frames instead of fills ─────────────────────────────────────────────── */
+@media(forced-colors:active){
+  .fig b,.fig.today b,.fig.off b{background:none;-webkit-text-fill-color:CanvasText;color:CanvasText}
+  .sitenav li:last-child a,a.btn,.alert .tag.on,.form button,.btn2,.tag.on,.langs .on,.az [aria-current]{border:2px solid ButtonText}
+  .sitenav li:last-child a::before,.sitenav li:last-child a::after,a.btn::before,a.btn::after,.alert .tag.on::before,.alert .tag.on::after,
+  .form button::before,.form button::after,.btn2::before,.btn2::after{display:none}
+  .cc td>span,.bl .trk i,.ber .t i{forced-color-adjust:none;background:CanvasText}
+  .langs .on{outline:2px solid Highlight}
+  .masthead summary::before{background:none;border-block:2px solid CanvasText}
+}
+/* ── print: the record on paper, black on white; the links to simap.ch printed out ────────────── */
 @media print{
-  :root{--paper:#fff;--card:#fff;--panel:#fff;--sticky:#fff;--ink:#000;--text:#000;--muted:#333;
-    --muted-2:#333;--rule:#bbb;--rule-strong:#555;--line:#555;--hover:transparent;--link:#000;
-    --link-hover:#000;--accent-text:#000;--warm:#000;--ok:#000;--ok-bg:#fff;
-    --off-bg:#fff;--mark:#555;--glass:none;color-scheme:light}
+  :root{--paper:#fff;--card:#fff;--panel:#fff;--sticky:#fff;--band:#fff;--alert-bg:#fff;--ink:#000;--text:#000;--muted:#333;
+    --line:#bbb;--line2:#555;--link:#000;--link-hover:#000;--gold:#000;--gold-hi:#000;--hot:#000;--warm:#000;--ok:#000;
+    --hover:transparent;--brass:#555;color-scheme:light}
   @page{margin:16mm 14mm}
-  body{background:#fff;color:#000;font-size:10.5pt;line-height:1.45}
-  body::before,body::after,.skip,.langs,.sitenav,.crumbs,.alert,.doors,.tags,.dl,.form,
-  details.more>summary,noscript,.cta,a.fig>span::after,.acts .tag,.acts .rep,p.src,
-  [role=search],.search-pop,.flt,.totop,button.all,.kb .kbx{display:none!important}
-  .wrap{max-width:none;padding:0}
-  .masthead{border:0;padding:0 0 6pt}
-  .masthead a.name{font-size:11pt}
+  html,body{background:#fff;color:#000}
+  body{font-size:10.5pt;line-height:1.45}
+  .skip,.masthead details,.masthead [role=search],.langs,.sitenav,.crumbs,.alert,.tags,.dl,.form,details.more>summary,noscript,
+  a.fig>span::after,.acts,p.src,.search-pop,.flt,.totop,button.all,.kb .kbx,footer::before{display:none!important}
+  .masthead{display:block;padding:0 0 6pt;border-bottom:1px solid #999;background:#fff}
+  .fig.wide,.glass,.winner,.official,.state{background:#fff!important}
+  .masthead a.name{min-height:0;font-size:12pt;color:#000}
+  .masthead a.name::before{display:none}
+  main{display:block}
+  .crumbs{width:auto}
   .title{display:block;padding:6pt 0 10pt}
-  .title .rail{margin-top:8pt}
-  h1{font-size:20pt;letter-spacing:-.02em}
+  .title .rail{margin-top:8pt;border-left:0;padding-left:0}
+  h1{font-size:20pt}
   h1.rec{font-size:16pt}
-  .runhead{margin-top:16pt}
+  .runhead{margin-top:16pt;border-color:#999}
   .figures{display:flex;flex-wrap:wrap;gap:6pt;padding:10pt 0 0}
   .fig{flex:1 1 30%;border:1px solid #999;padding:6pt 8pt}
-  .fig b{font-size:15pt}
+  .fig b{font-size:15pt;background:none;-webkit-text-fill-color:#000;color:#000}
+  .fig.wide::before,.cols>.prose+div::before{display:none}
   .cols,.half{display:block}
-  .scroll{overflow:visible!important;-webkit-mask-image:none!important;mask-image:none!important;
-    animation:none!important}
+  .cols>.prose+div{background:#fff;padding:0}
+  .scroll{overflow:visible!important}
   table{font-size:9.5pt}
   thead{display:table-header-group}
   tr,li,.fig,figure,.winner,.official,.glass{break-inside:avoid}
   h1,h2,h3,.runhead{break-after:avoid}
   a{color:#000;text-decoration:underline}
+  tbody td a::after{content:none}
   a[href^="https://www.simap.ch"]::after{content:" <" attr(href) ">";font-size:9pt;word-break:break-all}
   figure,.winner,.official{border:1px solid #999;background:#fff}
-  .cc td span,.bl .trk i,figure .note .key{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  footer{margin-top:16pt;color:#000}
+  .cc td>span,.bl .trk i,figure .note .key{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  footer{margin-top:16pt;padding:8pt 0 0;color:#000;border-color:#999}
 }
-/* ── step 3b (15.10.2026): the interactive layer, in the current style; the redesign restyles it.
-   Static hooks: the header's search is `.masthead [role=search]` (no class: 92,000 pages), the home's
-   company finder `form.finder`, the search page's field `form.search-page`. What the scripts write
-   carries classes of its own: search-pop (the live results), search-grp, search-opt, search-res (the
-   results page), flt (a list's filters), rel (a deadline's relative label), xh (the note on rows
-   hidden since the build), totop, kb (a canton's awards in one industry), pv (the alert's preview). */
-.masthead a.name{order:0}
-.masthead [role=search]{order:1;flex:1 1 280px;max-width:460px;margin:6px 0 2px auto;display:flex;position:relative}
-.langs{order:2}
-.sitenav{order:3}
-[role=search] input{flex:1 1 auto;min-width:0;margin:0;font:inherit;font-size:16px;line-height:1.3;
-  padding:8px 10px 8px 34px;border:1px solid var(--line);border-right:0;border-radius:10px 0 0 10px;
-  color:var(--ink);background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='6.5' cy='6.5' r='4.75' fill='none' stroke='%238d9cac' stroke-width='1.6'/%3E%3Cpath d='M10 10l4.25 4.25' stroke='%238d9cac' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat 11px 50%/16px 16px}
-[role=search] input::placeholder{color:var(--muted-2);opacity:1}
-[role=search] input::-webkit-search-decoration{-webkit-appearance:none}
-[role=search] input:focus{outline:3px solid var(--focus);outline-offset:1px;border-color:var(--ink)}
-[role=search] button{flex:none;margin:0;border:1px solid var(--line);border-radius:0 10px 10px 0;
-  background:var(--card);color:var(--ink);font:600 14px/1.2 "Libre Franklin",system-ui,sans-serif;
-  padding:0 14px;min-height:40px;cursor:pointer}
-[role=search] button:hover{background:var(--hover);border-color:var(--ink)}
-@media(max-width:600px){.langs{order:1}
-  .masthead [role=search]{order:2;flex:1 1 100%;max-width:none;margin:8px 0 4px}}
-/* the live results under a search field: a listbox in groups, each option a link */
-.search-pop{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:40;min-width:min(100%,320px);
-  max-height:min(72vh,600px);overflow:auto;padding:4px 0 6px;background:var(--card);border:1px solid var(--rule-strong);
-  border-radius:12px;box-shadow:0 14px 34px rgba(0,0,0,.38);text-align:left}
-.search-pop[hidden]{display:none}
-.search-grp{display:block;padding:10px 14px 4px;font:600 12px/1.4 var(--mono);letter-spacing:.06em;
-  text-transform:uppercase;color:var(--muted)}
-.search-opt{display:block;padding:8px 14px;color:var(--ink);text-decoration:none;line-height:1.35;font-size:15px}
-.search-opt:hover{color:var(--ink);background:var(--hover)}
-.search-opt[aria-selected=true]{background:var(--hover);box-shadow:inset 3px 0 var(--accent-text)}
-.search-opt .sub{display:block;margin-top:2px;font-size:13px}
-.search-opt.all{font-weight:600;color:var(--link)}
-.search-msg{display:block;padding:10px 14px;color:var(--muted);font-size:14.5px}
-/* the search page: the field large, the results in groups */
-form.search-page{display:flex;max-width:640px;margin:22px 0 0;position:relative}
-form.search-page label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-form.search-page input{font-size:17px;padding:11px 12px 11px 36px}
-form.search-page button{font-size:15px;padding:0 20px;min-height:46px}
-.search-res{margin-top:22px}
-.search-res h2{margin:30px 0 6px}
-.search-res ul.plain li{padding:10px 0}
-.search-res .kind{color:var(--muted);font-size:13px}
-/* the home's company finder, in the place of the door 'Unternehmen finden' */
-form.finder{border:1px solid var(--rule-strong);border-radius:16px;padding:20px 22px;background:var(--glass),var(--card);
-  position:relative}
-form.finder .dh{display:block;margin-bottom:12px;font-family:var(--display);font-weight:800;
-  font-size:clamp(22px,2.6vw,28px);letter-spacing:-.03em;line-height:1.15}
-.search-dirs h3{margin:26px 0 0}
-form.finder .row2{display:flex;position:relative}
-form.finder .dsub{display:block;margin-top:10px;color:var(--muted);font-size:14.5px;line-height:1.5}
-/* a tender list's filters (liste.js) */
-.flt{display:flex;flex-wrap:wrap;gap:12px 14px;align-items:flex-end;margin:18px 0 6px;padding:14px 16px;
-  border:1px solid var(--rule);border-radius:14px;background:var(--card)}
-.flt label{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:600;color:var(--muted);min-width:0}
-.flt .fq{flex:2 1 240px}
-.flt .fk,.flt .fb{flex:1 1 170px}
-.flt input[type=search],.flt select{width:100%;font:inherit;font-size:16px;line-height:1.3;padding:8px 10px;
-  border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
-.flt .chk{flex-direction:row;align-items:center;gap:8px;font-size:15px;color:var(--ink);min-height:40px}
-.flt .chk input{width:18px;height:18px;accent-color:var(--accent)}
-.flt button{font:600 14px/1.3 "Libre Franklin",system-ui,sans-serif;padding:9px 14px;min-height:40px;border-radius:999px;
-  border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
-.flt button:hover{border-color:var(--ink);background:var(--hover)}
-.flt .fa{min-height:40px;display:inline-flex;align-items:center}
-.flt .cnt{flex:1 1 100%;margin:2px 0 0;font-size:14.5px;font-weight:600;color:var(--ink)}
-.flt-none{margin:16px 0 0;font-size:16px;color:var(--ink)}
-button.all{margin:14px 0 0;font:600 14.5px/1.3 "Libre Franklin",system-ui,sans-serif;padding:10px 18px;border-radius:999px;
-  border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
-button.all:hover{border-color:var(--ink);background:var(--hover)}
-/* a deadline's relative label, from the reader's clock (stand.js); a list's note on rows hidden since */
-.when .rel,.fig .rel{display:block;font-weight:500;font-family:"Libre Franklin",system-ui,sans-serif;font-size:13px;white-space:normal}
-.fig .rel{margin-top:8px;font-size:13.5px;font-style:normal}
-.fig.today b,.fig.today .rel{color:var(--accent-text)}
-.fig.soon .rel{color:var(--warm)}
-td.when.today,td.when.soon{white-space:normal}
-p.xh{margin:10px 0 0;font-size:13.5px;color:var(--muted)}
-.totop{position:fixed;right:16px;bottom:16px;z-index:35;padding:9px 16px;border-radius:999px;background:var(--ink);
-  color:var(--paper);font-size:14px;font-weight:600;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.3)}
-.totop:hover{color:var(--paper);background:var(--muted)}
-.totop[hidden]{display:none}
-/* the A–Z letters of the company and buyer indexes, each a page */
-.az{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0;padding:0;list-style:none}
-.az a,.az span{display:inline-block;min-width:44px;padding:6px 10px;border:1px solid var(--line);border-radius:10px;
-  text-align:center;font-weight:600;color:var(--ink);text-decoration:none}
-.az a:hover{border-color:var(--ink);background:var(--hover)}
-.az [aria-current]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-.az small{display:block;font-size:12px;font-weight:500;color:inherit;opacity:.85}
-.pn{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:22px}
-/* the alert form's preview and its e-mail error */
-.form .pv{margin:18px 0 0;padding:12px 14px;border-left:3px solid var(--rule-strong);background:var(--card);
-  font-size:15px;color:var(--ink)}
-.form .pv small{display:block;margin-top:2px;font-size:13px;color:var(--muted)}
-.form .ferr{margin:8px 0 0;font-size:14.5px;color:var(--accent-text)}
-.form input[aria-invalid=true]{border-color:var(--accent-text)}
-.form button[aria-disabled=true]{opacity:.6;cursor:progress}
-/* a canton's awards in one industry (kb.js) */
-.kb{margin-top:30px;padding:18px 20px 22px;border:1px solid var(--rule-strong);border-radius:16px;background:var(--card)}
-.kb h2{margin:0}
-.kb h3{margin:24px 0 8px}
-.kb .kbx{float:right;margin:0 0 8px 12px}
-.rk a.kbs[aria-current]{font-weight:700}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;
+  transition-duration:.01ms!important;scroll-behavior:auto!important}}
+"""
+# The home's own rules (step 4): in the <head> of the four home pages (and the root), not in the sheet
+# the 92,000 other pages load. They extend the classes above; js/home.js moves what they describe.
+HOME_CSS = r"""
+/* ── the home (A2 as approved, 14.10.2026): full-bleed bands, each with its content centred ───────── */
+main>.band{grid-column:1/-1}
+.band .in{width:min(var(--max),100% - 2*var(--gut));margin-inline:auto}
+.band h2{font-size:clamp(2.5rem,1.6rem + 3.6vw,4.75rem);line-height:.9}
+.sh{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:1.125rem 2.5rem;margin-bottom:2.75rem}
+.sh .eyebrow,.sh .lede{grid-column:1/-1}
+.sh .lede{margin-top:0}
+.sh .aside{font:700 .8125rem/1.4 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding-bottom:.5rem;margin:0}
+.more{display:inline-flex;align-items:center;gap:.625rem;margin-top:1rem;min-height:2.75rem;color:var(--gold-hi);
+  font:700 .8125rem/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase;text-decoration:none}
+.more:hover{color:var(--link-hover)}
+.ar{flex:none;width:1.25rem;height:.75rem;transition:transform .25s cubic-bezier(.33,0,0,1)}
+.more:hover .ar,a.btn:hover .ar,a.btn:focus-visible .ar,.door:hover .ar,.door:focus-visible .ar{transform:translateX(.3rem)}
+/* the hero: the question, the brass pillars of the awards per month, the doors */
+.hero{position:relative;isolation:isolate;z-index:0;height:clamp(40rem,100svh - 6.5rem,60rem);background:#000;overflow:hidden}
+.hero .recede{position:relative;height:100%;transform-origin:50% 0}
+.hero .shade{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;z-index:5}
+.hero .bg{position:absolute;inset:0;z-index:0;pointer-events:none}
+.vign{position:absolute;inset:0;background:radial-gradient(120% 90% at 78% 70%,rgba(201,162,78,.16),transparent 55%),
+  radial-gradient(70% 60% at 10% 0%,rgba(244,241,234,.05),transparent 60%),linear-gradient(180deg,rgba(0,0,0,0) 60%,#000 100%)}
+.ghost{position:absolute;right:-1.5vw;top:8%;font:400 clamp(15rem,31vw,29.5rem)/.78 var(--display);color:transparent;
+  -webkit-text-stroke:1px rgba(201,162,78,.26);white-space:nowrap;user-select:none}
+.hero .glow{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .6s;
+  background:radial-gradient(27.5rem circle at var(--mx,70%) var(--my,35%),rgba(201,162,78,.16),transparent 62%)}
+.hero.glow-on .glow{opacity:1}
+.hero-in{position:relative;z-index:3;height:100%;display:grid;container-type:inline-size;grid-template-columns:minmax(0,1fr) minmax(0,31.25rem);
+  grid-template-rows:1fr auto;column-gap:2.5rem;padding-top:2rem}
+.hero .copy{grid-column:1/-1;grid-row:1;max-width:56rem;align-self:center;padding-bottom:1.5rem;position:relative;z-index:2}
+.hero h1{margin-top:1.125rem;font-size:clamp(3.5rem,min(7.6vw,10.6svh),7.75rem);line-height:.9;text-shadow:0 2px 30px rgba(0,0,0,.6)}
+.hero .aud{margin:1.25rem 0 0;max-width:min(58ch,100cqw - 33.5rem);font-size:clamp(1.125rem,1rem + .4vw,1.25rem);line-height:1.45;color:var(--ink)}
+.hero .lead{margin:.625rem 0 0;max-width:min(62ch,100cqw - 33.5rem);font-size:clamp(1.0625rem,1rem + .2vw,1.15625rem);font-weight:400;color:var(--text)}
+.ctas{margin:1.625rem 0 0;display:flex;flex-wrap:wrap;gap:1.125rem 1.625rem;align-items:center}
+.ctas a.btn{min-height:3.625rem;padding-inline:1.5rem 1.625rem;font-size:.875rem}
+.sky{grid-column:2;grid-row:1;align-self:end;justify-self:end;width:min(31.25rem,100%);height:min(44svh,21.875rem);position:relative;z-index:1;
+  display:flex;align-items:flex-end;gap:5px;pointer-events:none}
+.sky i{position:relative;flex:1;height:var(--h);min-height:3px;border-radius:2px 2px 0 0;
+  background:linear-gradient(180deg,rgba(246,226,166,.95) 0,rgba(215,178,99,.75) 18%,rgba(168,128,58,.32) 62%,rgba(140,104,44,.05) 100%);
+  box-shadow:0 -10px 24px -14px rgba(242,216,146,.55)}
+.sky i.p{background:repeating-linear-gradient(-45deg,rgba(201,162,78,.75) 0 2px,transparent 2px 6px);box-shadow:inset 0 0 0 1px rgba(201,162,78,.6)}
+.sky i.pk{background:linear-gradient(180deg,#fff2c8 0,#f2d892 14%,rgba(201,162,78,.55) 60%,rgba(140,104,44,.08) 100%);box-shadow:0 0 36px -6px rgba(242,216,146,.6)}
+.sky .pkl{position:absolute;bottom:calc(100% + .875rem);right:-.25rem;font:400 .8125rem/1.35 var(--sans);letter-spacing:.14em;
+  text-transform:uppercase;color:var(--gold-hi);white-space:nowrap;text-align:right}
+.sky .pkl b{display:block;font:400 2.125rem/1 var(--display);letter-spacing:.02em}
+.horizon{position:absolute;left:-50vw;right:-50vw;top:0;height:1px;pointer-events:none;
+  background:linear-gradient(90deg,transparent 0,rgba(201,162,78,.5) 35%,rgba(242,216,146,.95) 72%,rgba(201,162,78,.35) 100%)}
+.doors{grid-column:1/-1;grid-row:2;position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(0,.55fr);
+  gap:1.375rem;padding:1.375rem 0 1.75rem}
+.door{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;align-content:start;gap:.125rem 1.125rem;padding:1.125rem 1.375rem;
+  color:var(--ink);text-decoration:none;isolation:isolate;margin:0}
+.door::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(244,241,234,.07),rgba(244,241,234,.025));
+  border:1px solid rgba(244,241,234,.1);transition:inset .35s cubic-bezier(.33,0,0,1),background .35s}
+a.door:hover::after,a.door:focus-visible::after{inset:.375rem;background:linear-gradient(180deg,rgba(201,162,78,.14),rgba(201,162,78,.04))}
+a.door:hover{color:var(--ink)}
+.door::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;transition:inset .35s cubic-bezier(.33,0,0,1);
+  background:linear-gradient(var(--brass),var(--brass)) 0 0/.75rem 1px,linear-gradient(var(--brass),var(--brass)) 0 0/1px .75rem,
+    linear-gradient(var(--brass),var(--brass)) 100% 0/.75rem 1px,linear-gradient(var(--brass),var(--brass)) 100% 0/1px .75rem,
+    linear-gradient(var(--brass),var(--brass)) 0 100%/.75rem 1px,linear-gradient(var(--brass),var(--brass)) 0 100%/1px .75rem,
+    linear-gradient(var(--brass),var(--brass)) 100% 100%/.75rem 1px,linear-gradient(var(--brass),var(--brass)) 100% 100%/1px .75rem;
+  background-repeat:no-repeat}
+a.door:hover::before,a.door:focus-visible::before{inset:-.375rem}
+.door .k{grid-column:1/-1;font:700 .8125rem/1.35 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.door .big{grid-column:1;display:flex;align-items:baseline;flex-wrap:wrap;gap:.25rem .75rem}
+.door .big b{font:400 4rem/.9 var(--display);letter-spacing:.01em;background:var(--grad-v);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold-hi)}
+.door .big .lbl{font:400 1.875rem/1 var(--display);text-transform:uppercase;letter-spacing:.03em}
+.door .dnew{grid-column:1/-1;display:inline-flex;align-items:center;gap:.5625rem;justify-self:start;margin-top:.375rem;padding:.25rem .625rem;
+  font:700 .8125rem/1.35 var(--sans);letter-spacing:.06em;color:var(--gold-hi);border:1px solid rgba(201,162,78,.5)}
+.door .dnew::before{content:"";width:.4375rem;height:.4375rem;border-radius:50%;background:var(--gold-hi);flex:none;box-shadow:0 0 0 0 rgba(243,220,154,.6);animation:ping 1.6s cubic-bezier(.2,.6,.3,1) 3}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(243,220,154,.7)}80%,100%{box-shadow:0 0 0 .5rem rgba(243,220,154,0)}}
+.door .sub{grid-column:1/-1;margin-top:.5rem;font-size:.9375rem;line-height:1.45;color:var(--muted)}
+.door .ar{grid-column:2;grid-row:2;align-self:center;color:var(--brass)}
+form.finder.door{padding:1.125rem 1.375rem;border:0;background:none;display:block}
+form.finder.door .dh{font-size:2.875rem;line-height:.95;margin:.25rem 0 .875rem}
+.hmeta{align-self:end;justify-self:end;text-align:right;font:400 .8125rem/1.7 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0}
+.hmeta b{color:var(--gold-hi)}
+@media(min-width:56.25rem) and (min-height:43.75rem) and (max-height:87.5rem) and (prefers-reduced-motion:no-preference){.hero{position:sticky;top:0}}
+.hero~*{position:relative;z-index:3}
+/* 01 · the map of the open tenders per canton (official 2026 boundaries; js/home.js draws and reads it) */
+.mapsec{background:radial-gradient(60% 55% at 32% 58%,rgba(201,162,78,.09),transparent 70%),var(--band);border-top:1px solid rgba(201,162,78,.38);
+  padding:7.5rem 0 6.25rem;box-shadow:0 -2.5rem 5rem rgba(0,0,0,.7)}
+.mapsec .stage{position:relative}
+@media(min-width:56.25rem) and (min-height:53.75rem) and (max-height:87.5rem) and (prefers-reduced-motion:no-preference){
+  .js .mapsec.pin{height:205svh;padding:0}
+  .js .mapsec.pin .stage{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:flex-start;padding:5.5rem 0 1.25rem}
+  .js .mapsec.pin .sh{margin-bottom:.875rem}
+}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 20.625rem;gap:2.75rem;align-items:center}
+.mapbox{position:relative}
+.mapbox canvas{width:100%;display:block}
+.mapbox .mapfb{width:100%;height:auto;display:block}
+.mapbox.ready .mapfb{display:none}
+.mapbox .tip{position:absolute;left:0;top:0;z-index:4;pointer-events:none;padding:.5625rem .75rem .625rem;background:rgba(5,4,3,.94);
+  border:1px solid var(--brass);color:var(--ink);white-space:nowrap;opacity:0;transform:translate(-9999px,0);transition:opacity .15s}
+.mapbox .tip.on{opacity:1}
+.mapbox .tip b{display:block;font:400 1.625rem/1 var(--display);letter-spacing:.03em;color:var(--gold-hi)}
+.mapbox .tip span{display:block;margin-top:.25rem;font-size:.8125rem;color:var(--text)}
+.maplegend{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.125rem;margin:.875rem 0 0;font-size:.875rem;color:var(--muted);max-width:none}
+.maplegend .ramp{width:7.5rem;height:.5rem;background:linear-gradient(90deg,#3a2f1a,#8a6a2d 35%,#c9a24e 60%,#f2d892 85%,#fff4d8)}
+.mapsrc{margin:.375rem 0 0;font-size:.8125rem;color:var(--muted)}
+html:not(.js) .maplegend span:last-child{display:none}
+.ro{border-left:1px solid rgba(201,162,78,.3);padding-left:1.75rem}
+.ro .rk{margin:0;font:700 .8125rem/1.35 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.ro .nm{display:block;margin-top:.5rem;font:400 3.25rem/.9 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--ink);min-height:2.9rem}
+.ro .vl{display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .75rem;margin:.625rem 0 0}
+.ro .vl b{font:400 7rem/.8 var(--display);background:var(--grad-v);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold-hi)}
+.ro .vl span{font-size:.875rem;color:var(--text);max-width:9em;line-height:1.3}
+.ro .cum{margin:.75rem 0 0;font-size:.875rem;color:var(--muted)}
+.ro .cum b{color:var(--ink)}
+.ro .bar{height:3px;margin-top:.5rem;background:rgba(244,241,234,.08)}
+.ro .bar i{display:block;height:100%;width:var(--w,100%);background:linear-gradient(90deg,#8f6c2c,#f2d892);transition:width .4s cubic-bezier(.2,.7,.2,1)}
+.kl{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 .875rem;margin:1.25rem 0 0;border-top:1px solid var(--line)}
+.kl li{border-bottom:1px solid var(--line)}
+.kl a{display:flex;justify-content:space-between;gap:.375rem;min-height:2rem;align-items:center;padding:.25rem .25rem;font-size:.875rem;color:var(--text);text-decoration:none;transition:background-color .15s,color .15s}
+.kl a b{font-weight:700;color:var(--gold-hi);font-variant-numeric:tabular-nums}
+.kl a:hover,.kl a.on{background:rgba(201,162,78,.16);color:var(--ink)}
+.kl abbr{font-weight:700;letter-spacing:.06em}
+/* the key figures, sliding over the hero */
+.stats{background:var(--band);border-top:1px solid rgba(201,162,78,.38);padding:5.25rem 0 4.375rem;box-shadow:0 -2.5rem 5rem rgba(0,0,0,.7)}
+.stats .figures{padding:0;gap:2.125rem 0;grid-template-columns:repeat(4,minmax(0,1fr))}
+.stats .fig{padding:.375rem 1.625rem .25rem}
+.stats .fig b{font-size:clamp(4rem,7vw,6.75rem);line-height:.86}
+.stats .fig b small{font-size:2.25rem}
+.stats .rail{display:flex;flex-wrap:wrap;gap:.625rem 2.75rem;margin-top:3.5rem;padding:1.375rem 0 0;border:0;border-top:1px solid var(--line)}
+.stats .rail div,.stats .rail{align-items:baseline}
+.stats .rail dt{margin:0 .75rem 0 0;display:inline}
+.stats .rail dd{margin:0 2.75rem 0 0;display:inline;font-size:.9375rem;color:var(--text)}
+/* 02–04: the chart, the companies and the next deadlines, the industries */
+.hsec{padding:7.5rem 0 2.5rem;background:#000}
+.hsec figure.mc{margin:0;padding:0;background:none;border:0}
+.hsec figure.mc>h2{font-size:clamp(2.5rem,1.6rem + 3.6vw,4.75rem);line-height:.9;margin:1.125rem 0 0}
+.hsec figure.mc>.lede{margin:1rem 0 2.75rem;font-size:1.0625rem}
+.mcp{--ch:17.5rem;--gap:5px;padding:2.125rem 2.125rem 1.625rem;background:linear-gradient(180deg,rgba(201,162,78,.05),rgba(201,162,78,0) 70%);border-top:1px solid rgba(201,162,78,.3)}
+.mcp .unit{margin-top:0}
+.two{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:3.5rem;align-items:start}
+.aside-col{position:sticky;top:1.5rem}
+.sub-h{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:.875rem;border-bottom:1px solid rgba(201,162,78,.4);margin-bottom:.375rem}
+.sub-h h3{font-size:1.875rem;letter-spacing:.03em;margin:0}
+.sub-h span{font:700 .8125rem/1.35 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.top thead th,.top thead td{padding:0 .75rem .875rem}
+.top td{padding:.75rem;vertical-align:baseline}
+.top td.n0{padding-left:.25rem}
+.top td:nth-child(2) a{font-weight:700}
+.tl li{display:block}
+.tl .row{flex-direction:column;gap:.375rem;align-items:flex-start}
+.tl .when{display:flex;align-items:center;gap:.5625rem;font:700 .8125rem/1.35 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);white-space:normal}
+.tl .when::before{content:"";width:.4375rem;height:.4375rem;border:1px solid currentColor;transform:rotate(45deg);flex:none}
+.tl .when.today::before{background:currentColor}
+.tl .when .rel{display:inline;margin-left:.25rem;font-size:.8125rem}
+.ber{list-style:none;margin:0;padding:0;columns:2;column-gap:3.5rem}
+.ber li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.375rem 1.125rem;padding:.8125rem 0;border-bottom:1px solid var(--line);break-inside:avoid;position:relative}
+.ber a{font-size:1rem}
+.ber a::after{content:"";position:absolute;inset:0}
+.ber li:hover{background:var(--hover)}
+.ber .v{font-weight:700;color:var(--gold-hi);font-variant-numeric:tabular-nums}
+.ber .t{grid-column:1/-1;height:3px;background:rgba(244,241,234,.06)}
+.ber .t i{display:block;height:100%;background:linear-gradient(90deg,#8f6c2c,#f2d892)}
+/* the alarm band in brass, the closing links */
+.alarm{position:relative;background:linear-gradient(100deg,#b78f43 0%,#d9b867 30%,#f3dc9a 52%,#d6b262 74%,#c09848 100%);color:var(--on-brass);
+  padding:7.5rem 0 6.875rem;overflow:hidden}
+.alarm::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 120% at 80% 0%,rgba(255,255,255,.35),transparent 60%);pointer-events:none}
+.alarm .in{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:2.5rem}
+.alarm .in>*{grid-column:1}
+.alarm .eyebrow{color:#2a2009}
+.alarm .eyebrow::before{background:linear-gradient(90deg,transparent,#2a2009)}
+.alarm h2{color:var(--on-brass);font-size:clamp(3.5rem,6.6vw,6.75rem);margin-top:1.25rem;max-width:21ch}
+.alarm h2 .dot{color:#fff}
+.alarm .s{margin:1.375rem 0 0;font-size:1.1875rem;max-width:44ch;color:#1d1608}
+.alarm .ctas{margin-top:2.25rem}
+.alarm a.btn{color:var(--gold-hi)}
+.alarm a.btn::before{background:#1c1710}
+.alarm a.btn::after{background:#0b0905}
+.alarm a.btn:hover,.alarm a.btn:focus-visible{color:var(--gold-hi)}
+.alarm a.btn:focus-visible{outline-color:#0b0905}
+.alarm .since{grid-column:2;grid-row:1/span 4;align-self:center;text-align:right;color:var(--on-brass);margin:0}
+.alarm .since b{display:block;font:400 clamp(11.25rem,22vw,20.625rem)/.8 var(--display);color:transparent;-webkit-text-stroke:2px #0b0905}
+.alarm .since span{display:block;margin-top:.875rem;font:700 .875rem/1.35 var(--sans);letter-spacing:.2em;text-transform:uppercase}
+.endband{position:relative;background:#000;padding-top:3.5rem}
+.endband .tags{margin:0}
+.js .endband{padding-top:13.125rem}
+canvas.seam{position:absolute;left:0;right:0;top:0;width:100%;height:13.125rem;pointer-events:none;z-index:0}
+.endband .in{position:relative;z-index:1}
+main:has(>.endband){padding-bottom:0}
+main:has(>.endband)+footer{margin-top:0;border-top:0;padding-top:2.5rem}
+/* the motion of js/home.js: word reveals and block reveals only for what starts below the fold */
+.split{display:inline}
+.split .w{display:inline-block;white-space:nowrap}
+.cnt{display:inline-block;min-width:var(--w)}
+.js [data-up]{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.js [data-up].up0{opacity:0;transform:translate3d(0,1.625rem,0)}
+@media(max-width:56.1875rem){
+  .hero{height:auto}
+  .hero-in{padding-top:2.75rem;padding-bottom:2.25rem;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto}
+  .hero h1{font-size:clamp(3.125rem,14.5vw,4.75rem)}
+  .hero .aud,.hero .lead{max-width:62ch}
+  .ghost{display:none}
+  .sky{grid-column:1;grid-row:2;justify-self:stretch;width:100%;height:7.5rem;margin-top:4rem;gap:3px}
+  .doors{grid-row:3;grid-template-columns:minmax(0,1fr);gap:.875rem;padding-top:1.375rem}
+  .hmeta{justify-self:start;text-align:left}
+  .stats .figures{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stats .fig:nth-child(3){border-left:0;padding-left:0}
+  .stats .fig b{font-size:clamp(3.375rem,15vw,4.5rem)}
+  .stats .fig b small{font-size:1.375rem}
+  .two{grid-template-columns:minmax(0,1fr);gap:4rem}
+  .aside-col{position:static}
+  .hsec{padding-top:5.5rem}
+  .sh{grid-template-columns:minmax(0,1fr)}
+  .mcp{padding:1.375rem 0 1.125rem;--ch:12.5rem;--gap:2px;background:none}
+  .mapgrid{grid-template-columns:minmax(0,1fr);gap:1.625rem}
+  .ro{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:1.375rem}
+  .ro .vl b{font-size:5.375rem}
+  .mapsec{padding:6rem 0 4.375rem}
+  .ber{columns:1}
+  .alarm{padding:6rem 0 5.25rem}
+}
+@media(max-width:40rem){
+  .ctas a.btn{width:100%;justify-content:space-between;letter-spacing:.06em;font-size:.8125rem}
+  .door .big b{font-size:3.5rem}
+  .door .big .lbl{font-size:1.625rem}
+  form.finder.door .dh{font-size:2.25rem}
+  .stats{padding:4rem 0 3.375rem}
+  .stats .fig{padding:.25rem 0 0 1rem}
+  .stats .fig:first-child,.stats .fig:nth-child(3){padding-left:0}
+  .stats .fig>span{letter-spacing:.12em}
+  .stats .rail{flex-direction:column;gap:.75rem}
+  .alarm h2{font-size:clamp(3.125rem,14vw,4.5rem)}
+  .alarm .in{grid-template-columns:minmax(0,1fr)}
+  .alarm .since{grid-column:1;grid-row:auto;text-align:left;margin-top:2.5rem}
+  .alarm .since b{font-size:9.375rem}
+  .kl a{font-size:.875rem}
+  .top td{padding:.75rem .375rem}
+  .top thead th,.top thead td{padding:0 .375rem .625rem;letter-spacing:.06em;white-space:normal}
+  .js .endband{padding-top:9.375rem}
+  canvas.seam{height:9.375rem}
+}
+@media(max-width:23.75rem){.stats .figures{grid-template-columns:minmax(0,1fr)}.stats .fig,.stats .fig:nth-child(3){padding:1rem 0 0}}
 """
 
-# What the colour tokens of the CSS must satisfy in BOTH themes (WCAG 2.2 AA; 14.10.2026): text 4.5:1
-# against every background it is set on, and 3:1 for what identifies a control (the border of a field
-# or a pill, the red button against the page), the focus ring, the current menu item's underline and
-# the chart marks. (foreground token, background token, minimum); a translucent background is laid
-# over --paper first. controlla.py reads both token sets from docs/style.css and measures each pair.
+
+def css_min(css: str) -> str:
+    """The stylesheet as served: comments, line breaks, indentation and the spaces around { } ; , out, and the
+    last ';' of each block. Nothing else is touched: the sheets are written so that this is safe (no '/*', no run
+    of spaces and no space before or after a comma inside a string or a url()), and calc()'s spaces stay."""
+    css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
+    css = re.sub(r"\s+", " ", css)
+    css = re.sub(r"\s*([{};,])\s*", r"\1", css)
+    return css.replace(";}", "}").strip()
+
+
+def css_labels() -> str:
+    """The labels of the stacked list tables on a narrow screen (step 4, 15.10.2026): each cell says what it
+    holds, a money cell its unit too, from the table's class (tl, awb, awc, lots; uk, um, uchf: the unit of its
+    money column) and the column's place, in each language through :lang(). No attribute on any cell (byte
+    budget). The labels are hidden from screen readers ('/""'), which read the column headers."""
+    out, sig = [], []
+    for l in LANGS:
+        def t(k: str) -> str:
+            return lingue.t(k, l)
+        q = json.dumps(t("site"), ensure_ascii=False)
+        sig.append(f':lang({l}) footer::before{{content:{q};content:{q}/""}}')
+        rules = [("table.tl td.when", t("deadline")), ("table.tl td:nth-child(3)", t("buyer")),
+                 ("table.tl td:last-child", t("canton_abbr")), ("table.awb td.d", t("date")),
+                 ("table.awb td:nth-child(3)", t("winner")), ("table.awc td.d", t("date")),
+                 ("table.awc td:nth-child(3)", t("buyer")), ("table.awc td:nth-child(4)", t("canton_abbr")),
+                 ("table.lots td.mono:first-child:not(.d)", t("lot")), ("table.lots td.d", t("date")),
+                 ("table.lots td:nth-last-child(2)", t("winner"))]
+        for u in ("k", "m", "chf"):
+            rules.append((f"table.u{u} td:last-child", f"{t('amount')} ({t('unit_' + u)})"))
+        for sel, txt in rules:
+            q = json.dumps(txt, ensure_ascii=False)
+            out.append(f':lang({l}) {sel}::before{{content:{q};content:{q}/""}}')
+    return "".join(sig) + "@media(max-width:53.75rem){" + "".join(out) + "}"
+
+
+# What the colour tokens of the CSS must satisfy (WCAG 2.2 AA). Design A2 (step 4, 15.10.2026) has one theme, dark,
+# for everyone: text 4.5:1 against every background it is set on, and 3:1 for what identifies a control (the edge
+# of a field or a chip, the brass of a button against the page), the focus ring and the chart marks. (foreground
+# token, background token, minimum); a translucent colour is laid over --paper first. controlla.py reads the
+# tokens from docs/style.css and measures each pair.
 CONTRAST = (
-    ("ink", "paper", 4.5), ("ink", "card", 4.5), ("ink", "sticky", 4.5), ("text", "paper", 4.5),
-    ("text", "card", 4.5), ("muted", "paper", 4.5), ("muted", "card", 4.5), ("muted", "sticky", 4.5),
-    ("muted", "off-bg", 4.5), ("muted-2", "paper", 4.5), ("muted-2", "card", 4.5),
-    ("link", "paper", 4.5), ("link", "card", 4.5), ("link-hover", "paper", 4.5), ("link-hover", "card", 4.5),
-    ("accent-text", "paper", 4.5), ("accent-text", "card", 4.5), ("accent-text", "off-bg", 4.5),
-    ("warm", "paper", 4.5), ("warm", "card", 4.5), ("ok", "ok-bg", 4.5), ("ok", "card", 4.5),
-    ("on-accent", "accent", 4.5), ("on-accent", "accent-hover", 4.5),
-    ("paper", "ink", 4.5), ("paper", "muted", 4.5),
-    ("accent", "paper", 3), ("line", "paper", 3), ("line", "card", 3), ("focus", "paper", 3),
-    ("focus", "card", 3), ("accent-text", "paper", 3), ("mark", "panel", 3), ("mark", "paper", 3),
+    ("ink", "paper", 4.5), ("ink", "band", 4.5), ("ink", "card", 4.5), ("ink", "panel", 4.5), ("ink", "sticky", 4.5),
+    ("ink", "alert-bg", 4.5), ("text", "paper", 4.5), ("text", "band", 4.5), ("text", "card", 4.5), ("text", "panel", 4.5),
+    ("muted", "paper", 4.5), ("muted", "band", 4.5), ("muted", "card", 4.5), ("muted", "panel", 4.5),
+    ("muted", "sticky", 4.5), ("muted", "off-bg", 4.5), ("muted", "alert-bg", 4.5),
+    ("gold", "paper", 4.5), ("gold", "band", 4.5), ("gold", "card", 4.5), ("gold-hi", "paper", 4.5),
+    ("gold-hi", "card", 4.5), ("gold-hi", "alert-bg", 4.5), ("link", "paper", 4.5), ("link", "card", 4.5),
+    ("link-hover", "paper", 4.5), ("warm", "paper", 4.5), ("warm", "card", 4.5), ("hot", "paper", 4.5),
+    ("hot", "card", 4.5), ("hot", "off-bg", 4.5), ("ok", "ok-bg", 4.5), ("ok", "paper", 4.5),
+    ("on-brass", "brass", 4.5), ("on-brass", "brass-lo", 4.5), ("on-brass", "gold-hi", 4.5), ("paper", "ink", 4.5),
+    ("brass", "paper", 3), ("brass", "card", 3), ("field", "paper", 3), ("field", "card", 3), ("focus", "paper", 3),
+    ("focus", "card", 3), ("focus", "alert-bg", 3), ("mark", "panel", 3), ("mark", "paper", 3),
 )
-# The two fonts the first screen sets (text and headings), one file each (14.10.2026): every weight of
-# a family was its own URL of one and the same variable file, fetched two and three times per page
-# (net log: 289 KB of fonts on the home, 106 KB needed). No type="font/woff2": every browser that
-# preloads reads woff2, and the attribute cost 34 bytes on each of 92,000 pages.
-PRELOAD = ('<link rel="preload" href="{base}/fonts/lf.woff2" as="font" crossorigin>\n'
-           '<link rel="preload" href="{base}/fonts/bg.woff2" as="font" crossorigin>\n')
+# The one font the first screen reads, preloaded: Instrument Sans 400, Latin (step 4). The display face is not
+# preloaded (63 bytes on each of 92,000 pages); its fallback carries its metrics (fonts/fonts.css), so the swap
+# moves no line. No type="font/woff2": every browser that preloads reads woff2.
+PRELOAD = '<link rel="preload" href="{base}/fonts/is.woff2" as="font" crossorigin>\n'
 # The icon: the SVG for browsers that take one; /favicon.ico and /apple-touch-icon.png sit at the root,
 # where browsers and iOS look for them without a tag (two tags would cost 9 MB over the site).
+# The header (step 4): the name and the search, then the menu and the languages; on a phone the menu sits behind
+# the <details> ("Menü"), which needs no script and shows the menu right under it when opened. No wrapper
+# around the page: the header and the footer run full width, the content is centred by the CSS.
 HEAD = """<!doctype html>
 <html lang="{lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -2019,10 +2307,9 @@ HEAD = """<!doctype html>
 """ + PRELOAD + """<link rel="stylesheet" href="{base}/style.css">
 {verify}</head><body>
 <a class="skip" href="#inhalt">{skip}</a>
-<div class="wrap">
 <header class="masthead"><a class="name" href="{base}/{lang}/">{sitename}</a>
-<nav class="langs" aria-label="{langlabel}">{langnav}</nav>{search}
-<nav class="sitenav" aria-label="{navlabel}"><ul>{sitenav}</ul></nav></header>
+<details><summary>{menu}</summary></details>{search}
+<nav class="sitenav" aria-label="{navlabel}"><ul>{sitenav}</ul></nav><nav class="langs" aria-label="{langlabel}">{langnav}</nav></header>
 """
 
 
@@ -2052,14 +2339,15 @@ FOOT = """</main><footer><p class="stand">{stand}<a href="{base}/{lang}/ueber/#m
 <p>{srcnote}</p>
 <p>{source}{colon} <a href="https://www.simap.ch">simap.ch</a> ({official}) ·
 <a href="{abouthref}">{aboutlabel}</a> · <a href="{imphref}">{implabel}</a> · <a href="{privhref}">{privlabel}</a></p>
-</footer></div><script src="{base}/stand.js" defer></script>{scripts}</body></html>"""
+</footer><script src="{base}/stand.js" defer></script>{scripts}</body></html>"""
 
 
 # The menu (14.10.2026; audit of 13.10.2026: there was none, and the tenders were linked only at
-# the foot of the home). The five sections people look for, the alert, and the about page apart.
-NAV = (("nav_tenders", "ausschreibungen/"), ("nav_alert", "ausschreibungen/abo/"),
-       ("nav_companies", "unternehmen/"), ("nav_buyers", "auftraggeber/"), ("nav_cantons", "kanton/"),
-       ("nav_sectors", "branche/"), ("nav_about", "ueber/"))
+# the foot of the home). The five sections people look for, the about page, and the alert last: the CSS
+# makes the last item the brass button at the end of the row (step 4), in the order a keyboard reaches it.
+NAV = (("nav_tenders", "ausschreibungen/"), ("nav_companies", "unternehmen/"), ("nav_buyers", "auftraggeber/"),
+       ("nav_cantons", "kanton/"), ("nav_sectors", "branche/"), ("nav_about", "ueber/"),
+       ("nav_alert", "ausschreibungen/abo/"))
 # The sections that have an index page, by the name the menu gives them. /auftrag/ deliberately has
 # none — 18,000 awards do not belong in one alphabetical list — so no breadcrumb claims that level:
 # it would point at a 404, and Google reads breadcrumbs as a promise about the site's shape.
@@ -2122,8 +2410,7 @@ def site_nav(path: str, tr: list) -> str:
         full = f"/{LANG}/{h}"
         cur = (' aria-current="page"' if full == path
                else ' aria-current="true"' if not own and full == sec else "")
-        cls = ' class="aux"' if key == "nav_about" else ""
-        out.append(f'<li{cls}><a href="{BASE}{full}"{cur}>{e(lingue.t(key, LANG))}</a></li>')
+        out.append(f'<li><a href="{BASE}{full}"{cur}>{e(lingue.t(key, LANG))}</a></li>')
     return "".join(out)
 
 
@@ -2297,7 +2584,8 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
                         verify=VERIFY + (f'<meta name="robots" content="{robots}">\n' if robots else "")
                         + og_html + head_extra,
                         sitename=e(_.site), langnav=nav, langlabel=e(_.language), skip=e(_.skip),
-                        navlabel=e(_.nav_label), sitenav=site_nav(path, tr), search=search_form(LANG, BASE))
+                        navlabel=e(_.nav_label), sitenav=site_nav(path, tr), search=search_form(LANG, BASE),
+                        menu=e(_.menu))
             + crumbs_html(tr, leaf_lang, ld=not noindex) + '<main id="inhalt">\n'
             + scoped(body) + FOOT.format(disc=e(DISCLAIMER), base=BASE, lang=LANG,
                                  stand=stand_line(fresh), methodik=e(_m("methodik")),
@@ -2936,7 +3224,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
              # the sector only: a canton here read as the firm's seat ('Swisscom … · Genf'),
              # while it is where most of its awards fall — the rail says so ('Häufigste Kantone')
              + e(short_sector(sector, 44) if sector else _.company)
-             + f'</p><h1>{e(name)}</h1>'
+             + f'</p><h1 class="rec">{e(name)}</h1>'
              f'<p class="sum">' + e(_m("company_lead", n=zuschlag(len(rows)),
                                        span=(f" ({span})" if span else ""),
                                        b=(_m("buyers_count_one") if len(c["buyers"]) == 1
@@ -3085,7 +3373,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                 firm_amt.append((price_of(a), cur_of(a)))
         unit = formato.unit_for(p for p, cur in firm_amt if p and cur == "CHF")
         b.append(f'<div class="sec"><div class="runhead"><h2>{_.awards}</h2>'
-                 f'<span>{_.chronological}</span></div><div class="scroll"><table class="ls awc">'
+                 f'<span>{_.chronological}</span></div><div class="scroll"><table class="ls awc u{unit}">'
                  f'{cap(_if("cap_company_awards", name=name))}<thead><tr>'
                  f'<th class="w96">{_.date}</th><th>{_.contract}</th><th>{_.buyer}</th>'
                  f'<th class="w44">{_.canton_abbr}</th>{money_th("amount", unit)}'
@@ -3401,7 +3689,7 @@ def lot_table(rows: list, pages: dict, h1: str) -> str:
     days = {(a.get("publicationDate") or "")[:10] for a in rows}
     # the official record: each amount exactly as published, in francs, the unit in the header
     out = [f'<div class="sec"><div class="runhead"><h2>{_.lots if has_lots else _.awards}</h2>'
-           f'<span>{formato.count(len(rows))}</span></div><div class="scroll"><table class="ls lots">'
+           f'<span>{formato.count(len(rows))}</span></div><div class="scroll"><table class="ls lots uchf">'
            f'{cap(_.lots if has_lots else _.awards)}<thead><tr>'
            + (f'<th class="w52">{_.lot}</th><th>{_.lot_name}</th>' if has_lots
               else f'<th class="w96">{_.date}</th>')
@@ -3554,7 +3842,7 @@ def award_mini_table(rows: list, pages: dict, caption: str, with_buyer: bool) ->
     amts = [award_cell(a, unit) for a in rows]
     twn = twin_notes(rows, [(a.get("publicationDate"), h, a.get("buyerName") if with_buyer else "",
                              tuple(winners(a)), amt) for a, h, amt in zip(rows, heads, amts)])
-    out = [f'<div class="scroll"><table class="ls awb">{cap(caption)}<thead><tr><th class="w96">{_.date}</th>'
+    out = [f'<div class="scroll"><table class="ls awb u{unit}">{cap(caption)}<thead><tr><th class="w96">{_.date}</th>'
            f'<th>{_.contract}</th><th>{_.winner}</th>{money_th("amount", unit)}</tr></thead><tbody>']
     for i, (a, head, amt) in enumerate(zip(rows, heads, amts)):
         d = a.get("publicationDate") or ""
@@ -4054,7 +4342,7 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
                             else _m("buyer_joint_note", k=formato.count(k_joint)))
         # The eyebrow no longer names a canton: a federal office is not "Kanton TG" because
         # most of its awards are carried out there. The rail says what the canton is.
-        b = [f'<div class="title"><div><p class="eyebrow">{_.buyer}</p><h1>{e(name)}</h1>'
+        b = [f'<div class="title"><div><p class="eyebrow">{_.buyer}</p><h1 class="rec">{e(name)}</h1>'
              f'<p class="sum">{lead}</p></div><dl class="rail">'
              + (f"<dt>{_.main_canton}</dt><dd>{e(canton_name_or(cant, cant))}</dd>" if cant else "")
              # one firm: its name, not "Impresa: 1" (which reads as a firm called 1)
@@ -4087,7 +4375,7 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
         recent = sorted(rows, key=lambda x: x.get("publicationDate") or "", reverse=True)[:60]
         unit = award_unit(recent)
         b.append(f'<div class="sec"><div class="runhead"><h2>{_.awards}</h2>'
-                 f"<span>{_.chronological}</span></div><div class=\"scroll\"><table class=\"ls awb\">"
+                 f"<span>{_.chronological}</span></div><div class=\"scroll\"><table class=\"ls awb u{unit}\">"
                  f'{cap(_.awards + ", " + _.chronological)}<thead><tr>'
                  f'<th class="w96">{_.date}</th><th>{_.contract}</th><th>{_.winner}</th>'
                  f'{money_th("amount", unit)}</tr></thead><tbody>')
@@ -5037,7 +5325,76 @@ def build_search_page() -> None:
         f"/{LANG}/suche/", leaf=_.search, robots="noindex", scripts=("suche",)))
 
 
+# The arrow of the home's buttons and links (step 4); the data pages' buttons carry none (bytes)
+ARROW = ('<svg class="ar" viewBox="0 0 20 12" aria-hidden="true"><path d="M0 6h17M12.5 1.2 17.6 6l-5.1 4.8" fill="none" '
+         'stroke="currentColor" stroke-width="1.6"/></svg>')
+# the halftone lattice of Switzerland, rasterised once from the official 2026 boundaries (reticolo.py)
+LATTICE = json.loads((ROOT / "reticolo.json").read_text(encoding="utf-8")) if (ROOT / "reticolo.json").exists() else None
+
+
+def home_map(opens: list) -> str:
+    """01 · the open tenders per canton on the halftone map (step 4, design A2). Without JavaScript the map is
+    an SVG of the dotted outline, and the 26 cantons are a list of links with their counts: the keyboard's path
+    and the screen reader's, the same as the hub's list. With it, js/home.js draws the lattice from the JSON
+    below (the dots of each canton, from reticolo.json; the counts, names and links of this build)."""
+    oc = collections.Counter(k for t in opens for k in (t.get("_cants") or []))
+    order = sorted(CANTONS, key=lambda c: (-oc.get(c, 0), fold(canton_name_or(c, c))))
+    noun = lingue.OPEN_TENDERS[LANG]
+    kl = "".join(f'<li><a href="{BASE}/{LANG}/ausschreibungen/{c}/" data-k="{c}"><span><abbr title="{e(canton_name_or(c, c))}">{c}</abbr>'
+                 f'<span class="sr"> {e(canton_name_or(c, c))}</span></span><b>{formato.count(oc.get(c, 0))}</b></a></li>'
+                 for c in order)
+    fb, data = "", ""
+    if LATTICE:
+        L_ = LATTICE
+        cols, rows = L_["cols"], L_["rows"]
+        fb = (f'<svg class="mapfb" viewBox="0 0 {cols} {rows}"><defs><pattern id="dotA" width="1" height="1" patternUnits="userSpaceOnUse">'
+              '<circle cx=".5" cy=".5" r=".27" fill="#c9a24e" fill-opacity=".55"/></pattern>'
+              f'<mask id="lkA" maskUnits="userSpaceOnUse" x="0" y="0" width="{cols}" height="{rows}"><rect width="{cols}" height="{rows}" fill="#fff"/>'
+              f'<path d="{L_["lakes"]}" fill="#000"/></mask></defs>'
+              f'<path d="{L_["outline"]}" fill="url(#dotA)" fill-rule="evenodd" mask="url(#lkA)"/></svg>')
+        d = {"cols": cols, "rows": rows, "order": L_["order"], "packed": L_["packed"], "anchors": L_["anchors"],
+             "k": {c: [oc.get(c, 0), canton_name_or(c, c), f"{BASE}/{LANG}/ausschreibungen/{c}/"] for c in L_["order"]},
+             "total": len(opens)}
+        data = ('<script type="application/json" id="karte">'
+                + json.dumps(d, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c") + "</script>")
+    return (f'<section class="band mapsec pin" aria-labelledby="open-cantons"><div class="stage"><div class="in">'
+            f'<header class="sh"><p class="eyebrow">{e(_m("map_eyebrow", d=formato.date(DATA_DATE)))}</p>'
+            f'<h2 id="open-cantons" data-split>{e(_m("open_by_canton_h2"))}<span class="dot" aria-hidden="true">.</span></h2>'
+            f'<p class="lede">{e(_m("open_canton_lede", date=formato.date(DATA_DATE)))}</p></header>'
+            '<div class="mapgrid"><div>'
+            f'<div class="mapbox" aria-hidden="true">{fb}<div class="tip"><b></b><span></span></div></div>'
+            f'<p class="maplegend"><span class="ramp" aria-hidden="true"></span><span>{e(_m("map_legend"))}</span>'
+            f'<span>{e(_m("map_hint"))}</span></p><p class="mapsrc">{e(_m("map_src"))}</p></div>'
+            f'<div class="ro"><p class="rk">{e(_m("map_ch"))}</p><b class="nm">{e(_m("map_all"))}</b>'
+            f'<p class="vl"><b>{formato.count(len(opens))}</b><span>{e(noun[0 if len(opens) == 1 else 1])}</span></p>'
+            f'<p class="cum">{e(_m("stand", d=formato.date(DATA_DATE)))}</p><div class="bar" aria-hidden="true"><i></i></div>'
+            f'<ol class="kl" aria-label="{e(_m("map_list"))}">{kl}</ol></div></div></div></div>{data}</section>')
+
+
+def home_sky(awards: list) -> str:
+    """The hero's brass pillars: the awards per month, the incomplete months hatched, the busiest complete
+    month brightest and named (decoration: the chart of section 02 says the same in full)."""
+    ser = sorted(per_month(awards, until=CUR_MONTH).items())
+    if not ser:
+        return ""
+    part = {k for k, _v in ser if k < FULL_FROM or (k == CUR_MONTH and CUR_PARTIAL)}
+    peaks = grafici.peak_months(ser, part)
+    top = max(v for _k, v in ser) * 1.04 or 1
+    out = []
+    for k, v in ser:
+        cls = "p" if k in part else ("pk" if peaks and k == peaks[0] else "")
+        lab = (f'<span class="pkl"><b>{formato.count(v)}</b>{e(_m("sky_peak", m=formato.month(k)))}</span>'
+               if peaks and k == peaks[0] else "")
+        out.append(f'<i{f" class={chr(34)}{cls}{chr(34)}" if cls else ""} style="--h:{100 * v / top:.1f}%">{lab}</i>')
+    return "".join(out)
+
+
 def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cpv_list) -> None:
+    """The home in design A2 "Brass" (step 4, 15.10.2026, as the owner approved it): the question and its two
+    doors (the open tenders, the company finder) over the brass pillars of the awards per month; 01 the open
+    tenders per canton on the halftone map; the key figures; 02 the awards per month; 03 the companies with the
+    most awards beside the next deadlines; 04 the awards by industry; the alarm band. The H1 is there at first
+    paint; js/home.js adds the motion and the map's canvas, the content is complete without it."""
     months = sorted({(a.get("publicationDate") or "")[:7] for a in awards if a.get("publicationDate")})
     span = formato.period(months[0], months[-1]) if months else ""
     winners_all = collections.Counter(slug(w) for a in awards for w in winners(a))
@@ -5045,126 +5402,138 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
     # may all have passed, and /stand.js shows the next ones in their place (step 3b)
     soon = lot_groups(sorted((t for t in opens if t.get("offerDeadline")),
                              key=lambda t: t["offerDeadline"]))[:24]
-
-    # Tenders first (audit 13.10.2026: the link to the open tenders was the home's last element): two
-    # doors — the open tenders with how many are new, and the companies — and the alert, in the hero's
-    # text column (on a phone right under the lead). 'Neu' (step 3a, 14.10.2026) = first published
-    # (-01, a correction is not new) on the latest day simap published tenders, and the label names
-    # that day: 'seit gestern' was wrong after a missed run and on Mondays.
+    # 'Neu' (step 3a, 14.10.2026) = first published (-01, a correction is not new) on the latest day simap
+    # published tenders, and the label names that day: 'seit gestern' was wrong after a missed run
     day = LATEST_TENDER_DAY[0]
     fresh_n = sum(1 for t in opens if day and t.get("_first") == day)
     d_short = formato.date_short(day) if day else ""
     new_txt = ((_m("door_new_one", d=d_short) if fresh_n == 1 else _m("door_new", m=formato.count(fresh_n), d=d_short))
                if fresh_n else "")
     noun = lingue.OPEN_TENDERS[LANG][0 if len(opens) == 1 else 1]
-    doors = ('<div class="doors">'
-             f'<a class="door" href="{BASE}/{LANG}/ausschreibungen/">'
-             f'<span class="dh"><b>{formato.count(len(opens))}</b> {e(noun)}</span>'
+    abo = f"{BASE}/{LANG}/ausschreibungen/abo/"
+    dot = '<span class="dot" aria-hidden="true">.</span>'
+
+    # the hero: the question (its last sign in brass), who the site is for, the alert; the pillars; the doors
+    tag = _p.tagline
+    h1 = (e(tag[:-1]) + f'<span class="dot">{e(tag[-1])}</span>') if tag[-1:] in ("?", ".") else e(tag)
+    door1 = (f'<a class="door d1" href="{BASE}/{LANG}/ausschreibungen/"><span class="k" aria-hidden="true">{e(_.nav_tenders)}</span>'
+             f'<span class="big"><b>{formato.count(len(opens))}</b> <span class="lbl">{e(noun)}</span></span>'
              + (f'<span class="dnew" data-day="{day}" data-n="{fresh_n}">{e(new_txt)}</span>' if new_txt else "")
-             + f'<span class="dsub">{e(_m("door_open_sub"))}</span></a>'
-             # 'Unternehmen finden' is a company finder since step 3b: the search, limited to companies
-             + finder(len(winners_all), len(pages), "door") +
-             f'<p class="cta"><a class="btn" href="{BASE}/{LANG}/ausschreibungen/abo/">{e(_m("abo_cta"))}</a></p>'
-             "</div>")
-    # who the site is for, in one line under the H1 (step 3a)
-    b = [f'<div class="title"><div><h1>{e(_p.tagline)}</h1><p class="aud">{e(_m("audience"))}</p>'
-         f'<p class="sum">{e(_p.lead)}</p>{doors}</div>'
-         f'<dl class="rail"><dt>{_.source}</dt><dd>{e(_p.source_note)}</dd>'
-         + (f"<dt>{_.period}</dt><dd>{e(span)}</dd>" if span else "")
-         + f"<dt>{_.updated}</dt><dd>{tt(DATA_DATE, formato.date(DATA_DATE))}</dd></dl></div>"]
-    # the tiles that have a page behind them lead there; the companies tile says how many of them have
-    # a page, the number the door and the index give (step 3a: '3’205' and '7’057' stood side by side)
+             + f'<span class="sub">{e(_m("door_open_sub"))}</span>{ARROW}</a>')
+    # 'Unternehmen finden' is the company finder since step 3b: the search, limited to companies
+    door2 = finder(len(winners_all), len(pages), "door d2").replace(
+        ">", f'><span class="k" aria-hidden="true">{e(_.search)}</span>', 1)
+    b = [f'<section class="band hero" data-rest=".72,.36" aria-labelledby="h1"><div class="recede">'
+         f'<div class="bg" aria-hidden="true"><div class="vign"></div><div class="ghost" data-depth=".22">{formato.count(len(awards))}</div></div>'
+         '<div class="glow" aria-hidden="true"></div><div class="in hero-in"><div class="copy">'
+         f'<p class="eyebrow">{e(_m("home_eyebrow", span=span, d=formato.date(DATA_DATE)))}</p>'
+         f'<h1 id="h1">{h1}</h1><p class="aud">{e(_m("audience"))}</p><p class="lead">{e(_p.lead)}</p>'
+         f'<p class="ctas"><a class="btn" href="{abo}">{e(_m("abo_cta"))}{ARROW}</a></p></div>'
+         f'<div class="sky" data-depth=".55" aria-hidden="true">{home_sky(awards)}</div>'
+         f'<div class="doors"><span class="horizon" data-depth=".85" aria-hidden="true"></span>{door1}{door2}'
+         f'<p class="hmeta">{e(_.source)}<br><b>simap.ch</b></p></div></div></div><div class="shade"></div></section>']
+    b.append(home_map(opens))
+
+    # the key figures; the tiles that have a page behind them lead there (the companies tile says how many of
+    # them have a page, the number the finder and the index give)
     nfirms = len(winners_all)
     firms_lab = (_m("home_firms_tile", k=formato.count(len(pages))) if nfirms != 1 else _m("home_firms_tile_one"))
-    b += ['<div class="figures">',
-          f'<div class="fig"><b><data value="{len(awards)}" id="total">{formato.count(len(awards))}</data></b>'
-          f'<span>{lab_n(len(awards), "awards")}</span></div>',
-          f'<a class="fig" href="{BASE}/{LANG}/unternehmen/"><b>{formato.count(nfirms)}</b>'
-          f'<span>{e(firms_lab)}</span></a>', sum_tile(awards),
-          f'<a class="fig" href="{BASE}/{LANG}/ausschreibungen/"><b>{formato.count(len(opens))}</b>'
-          f'<span>{e(_m("open_kpi_open"))}</span></a>', "</div>"]
-    # the monthly chart sits right under the key figures, with its own title and takeaway
-    b.append(month_chart(awards, _i.mc_title_home, csv="/daten/monate.csv"))
+    b.append(f'<section class="band stats" aria-label="{e(_m("key_figures"))}"><div class="in"><div class="figures">'
+             f'<div class="fig" data-up><b><data value="{len(awards)}" id="total">{formato.count(len(awards))}</data></b>'
+             f'<span>{lab_n(len(awards), "awards")}</span></div>'
+             f'<a class="fig" href="{BASE}/{LANG}/unternehmen/" data-up style="--d:.08s"><b>{formato.count(nfirms)}</b>'
+             f'<span>{e(firms_lab)}</span></a>'
+             + re.sub(r'<span class="n">([^<]*?\d)\s+([^<\d][^<]*)</span> <small>', r'<span class="n">\1</span> <small>\2 ', sum_tile(awards), 1)
+             + f'<a class="fig" href="{BASE}/{LANG}/ausschreibungen/" data-up style="--d:.24s"><b>{formato.count(len(opens))}</b>'
+             f'<span>{e(_m("open_kpi_open"))}</span></a></div>'
+             f'<dl class="rail"><div><dt>{_.source}</dt><dd>{e(_p.source_note)}</dd></div>'
+             + (f"<div><dt>{_.period}</dt><dd>{e(span)}</dd></div>" if span else "")
+             + f"<div><dt>{_.updated}</dt><dd>{tt(DATA_DATE, formato.date(DATA_DATE))}</dd></div></dl></div></section>")
 
-    # no canton column any more (step 3a): it read as the firm's seat (Müller Gleisbau, Frauenfeld, under
-    # BE); a company's page says in which cantons its awards fall
+    # 02 · the awards per month: the chart as everywhere, its panel set apart under the heading
+    fig = month_chart(awards, _i.mc_title_home, csv="/daten/monate.csv")
+    if '<p class="unit"' in fig:
+        fig = (fig.replace('<h2 id="chart-months">', '<h2 id="chart-months" data-split>', 1)
+                  .replace("</h2>", f"{dot}</h2>", 1)
+                  .replace('<p class="unit"', '<div class="mcp" data-up><p class="unit"', 1)
+                  .replace("</figure>", "</div></figure>", 1))
+    b.append(f'<section class="band hsec" id="monate" aria-labelledby="chart-months"><div class="in">'
+             f'<p class="eyebrow">{e(_m("sec_awards"))}</p>{fig}</div></section>')
+
+    # 03 · the companies with the most awards (no canton column since step 3a: it read as the firm's seat),
+    # beside the next deadlines
     rank = [(s, p) for s, p in sorted(pages.items(), key=lambda kv: (-kv[1]["n"], -kv[1]["value"]))][:25]
     unit = formato.unit_for(p["value"] for _s, p in rank)
-    b.append('<div class="cols"><div>'
-             f'<div class="runhead"><h2>{_i.firms_cap}</h2>'
-             f'<span>{e(span)}</span></div>'
-             f'<div class="scroll"><table class="top">{cap(_i.firms_cap)}<thead><tr><td class="n0" style="width:34px"></td>'
-             f'<th>{_.company}</th>'
-             f'<th class="r">{_.awards}</th>{money_th("sum_l", unit)}</tr></thead><tbody>')
+    t = [f'<div class="scroll"><table class="top">{cap(_i.firms_cap)}<thead><tr><td class="n0"></td>'
+         f'<th>{_.company}</th><th class="r">{_.awards}</th>{money_th("sum_l", unit)}</tr></thead><tbody>']
     for i, (s, p) in enumerate(rank, 1):
-        b.append(f'<tr><td class="sub num n0">{i:02d}</td><td>'
-                 f'<a href="{BASE}/{LANG}/unternehmen/{e(s)}/">{e(p["name"])}</a>'
-                 + (f'<span class="sub sb2">'
-                    f'{e(short_sector(p["sector"], 46))}</span>' if p["sector"] else "")
+        t.append(f'<tr><td class="n0">{i:02d}</td><td><a href="{BASE}/{LANG}/unternehmen/{e(s)}/">{e(p["name"])}</a>'
+                 + (f'<span class="sub sb2">{e(short_sector(p["sector"], 46))}</span>' if p["sector"] else "")
                  + f'</td><td class="r num">{formato.count(p["n"])}</td>'
                  f'<td class="r num">{formato.column_cell(p["value"] or None, unit, empty_sr=_.no_own_amount)}</td></tr>')
-    b.append("</tbody></table></div></div><div>")
-
+    t.append("</tbody></table></div>")
+    dl = []
     if soon:
-        b.append(f'<div class="runhead"><h2>{_i.next_deadlines}</h2>'
-                 f'<span>{e(_if("open_count", n=formato.count(len(opens))))}</span></div><ul class="plain tl" data-show="8">')
+        dl.append('<ul class="plain tl" data-show="8">')
         single = distinct_titles([de(g[0], "title") for _stem, g in soon], 66)
         for k_, ((stem, g), one) in enumerate(zip(soon, single)):
-            t = g[0]
-            dl = t["offerDeadline"]
+            t0 = g[0]
+            dln = t0["offerDeadline"]
             if len(g) > 1:
-                # the shared project name, cut at its end if at all: the lots' own names are
-                # what the count replaces, so there is no tail worth keeping
-                # no-break spaces around the dot: '· 6 lots' never starts a line of its own; the
-                # link opens the first lot, whose page lists the others ("Weitere Lose")
-                text = (name_cut(stem, 70) + "\u00a0·\u00a0"
-                        + _if("lots_n", n=formato.count(len(g))).replace(" ", "\u00a0"))
+                # the shared project name; '· 6 Lose' never starts a line of its own; the link opens the
+                # first lot, whose page lists the others
+                text = (name_cut(stem, 70) + " · " + _if("lots_n", n=formato.count(len(g))).replace(" ", " "))
             else:
                 text = one
-            cls, when = due_cell(dl, formato.date_short(dl), soon=True)
+            cls, when = due_cell(dln, formato.date_short(dln), soon=True)
             more = " data-more hidden" if k_ >= 8 else ""
-            b.append(f'<li data-deadline="{e(dl)}"{more}><div class="row"><a href="{BASE}/{LANG}/auftrag/{e(t.get("projectId"))}/"{la(t)}>'
-                     f'{e(text)}</a>'
-                     f'<span class="when{cls}">{when}</span>'
-                     "</div></li>")
-        b.append("</ul>")
-    b.append(f'<div class="runhead" style="margin-top:28px"><h2>{_i.by_canton_awards}</h2>'
-             f'<span>{formato.count(len(cant_list))} {_.cantons}</span></div><div class="tags">'
-             + "".join(f'<a class="tag" href="{BASE}/{LANG}/kanton/{e(c)}/">'
-                       f'{e(canton_name_or(c, c))} · {formato.count(len(r))}</a>'
-                       for c, r in cant_list[:16]) + "</div>")
-    # the awards by Branche (division), each linking to its page: the list showed 8-digit codes, and
-    # 'Bauarbeiten' there meant code 45000000 while the canton charts meant all of division 45 (step 3a)
+            dl.append(f'<li data-deadline="{e(dln)}"{more}><div class="row"><a href="{BASE}/{LANG}/auftrag/{e(t0.get("projectId"))}/"{la(t0)}>'
+                      f'{e(text)}</a><span class="when{cls}">{when}</span></div></li>')
+        dl.append("</ul>")
+    b.append(f'<section class="band hsec" id="unternehmen" aria-labelledby="h-top"><div class="in">'
+             f'<header class="sh"><p class="eyebrow">{e(_m("sec_companies"))}</p>'
+             f'<h2 id="h-top" data-split>{e(_i.firms_cap)}{dot}</h2><p class="aside">{e(span)}</p></header>'
+             f'<div class="two"><div data-up>{"".join(t)}'
+             f'<a class="more" href="{BASE}/{LANG}/unternehmen/">{e(_i.all_companies)}{ARROW}</a></div>'
+             f'<aside class="aside-col" aria-labelledby="h-dl" data-up style="--d:.1s"><div class="sub-h"><h3 id="h-dl">{e(_i.next_deadlines)}</h3>'
+             f'<span>{e(_if("open_count", n=formato.count(len(opens))))}</span></div>{"".join(dl)}'
+             f'<a class="more" href="{BASE}/{LANG}/ausschreibungen/">{e(lingue.i("all_open", LANG))}{ARROW}</a></aside></div></div></section>')
+
+    # 04 · the awards by Branche (division), each linking to its page
     divs = collections.Counter(str(a.get("cpvCode") or "")[:2] for a in awards
                                if str(a.get("cpvCode") or "")[:2] in lingue.CPV_SHORT[LANG])
-    b.append(f'<div class="runhead" style="margin-top:28px"><h2>{_i.by_division_awards}</h2>'
-             f'<span>{formato.count(len(lingue.CPV_SHORT[LANG]))} {_.divisions}</span></div><ul class="plain">')
-    for d, k in sorted(divs.items(), key=lambda kv: (-kv[1], kv[0]))[:8]:
-        b.append(f'<li><div class="row"><a href="{BASE}/{LANG}/branche/{d}/">{e(div_name(d))}</a>'
-                 f'<span class="sub num">{formato.count(k)}</span></div></li>')
-    b.append("</ul></div></div>")
+    top8 = sorted(divs.items(), key=lambda kv: (-kv[1], kv[0]))[:8]
+    mx = top8[0][1] if top8 else 1
+    ber = "".join(f'<li><a href="{BASE}/{LANG}/branche/{d}/">{e(div_name(d))}</a><span class="v num">{formato.count(k)}</span>'
+                  f'<span class="t" aria-hidden="true"><i style="width:{100 * k / mx:.1f}%"></i></span></li>' for d, k in top8)
+    b.append(f'<section class="band hsec" id="branchen" aria-labelledby="h-br"><div class="in">'
+             f'<header class="sh"><p class="eyebrow">{e(_m("sec_divisions"))}</p>'
+             f'<h2 id="h-br" data-split>{e(_i.by_division_awards)}{dot}</h2>'
+             f'<p class="aside">{formato.count(len(lingue.CPV_SHORT[LANG]))} {_.divisions}</p></header>'
+             f'<ul class="ber" data-up>{ber}</ul><a class="more" href="{BASE}/{LANG}/branche/">{e(_i.all_divisions)}{ARROW}</a>'
+             '</div></section>')
 
-    b.append('<div class="tags" style="margin-top:32px;padding-top:22px;'
-             'border-top:1px solid var(--rule)">'
+    # the alarm band in brass, then every section of the register
+    b.append(f'<section class="band alarm" aria-labelledby="h-alarm"><div class="in">'
+             f'<p class="eyebrow">{e(_m("alarm_eyebrow"))}</p><h2 id="h-alarm" data-split>{e(_m("alarm_h2"))}{dot}</h2>'
+             f'<p class="s">{e(_m("alert_none"))}</p><p class="ctas"><a class="btn" href="{abo}">{e(_m("alert_link"))}{ARROW}</a></p>'
+             + (f'<p class="since" data-up><b aria-hidden="true">{formato.count(fresh_n)}</b><span>{e(new_txt)}</span></p>' if fresh_n else "")
+             + "</div></section>")
+    b.append('<div class="band endband"><div class="in"><div class="tags">'
              f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/">{e(_p.open_tenders_h1)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/unternehmen/">{e(_i.all_companies)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/auftraggeber/">{e(_i.all_buyers)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/kanton/">{e(_i.all_cantons)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/branche/">{e(_i.all_divisions)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/bereich/">{e(_i.all_sectors)}</a>'
-             # l'iscrizione agli avvisi era raggiungibile solo dalle pagine bandi e
-             # cantonali: dalla home, che e' la pagina piu' linkata del sito, non lo era
-             f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/abo/">'
-             f'{e(_m("abo_cta"))}</a></div>')
-
-    # no separate notice box on the home: it repeated, word for word, the footer's first
-    # paragraph right below it (verifier, 28.09.2026)
+             f'<a class="tag" href="{abo}">{e(_m("abo_cta"))}</a></div></div></div>')
 
     write(f"/{LANG}/index.html", page(
         _m("home_title"), _m("home_desc", n=formato.count(len(awards))),
         "\n".join(b), f"/{LANG}/", fresh=True,
-        head_extra=site_ld() + feed_head(f"/{LANG}/ausschreibungen/feed.xml", _m("feed_all")),
-        lastmod=newest(awards, opens)))
+        head_extra=(site_ld() + feed_head(f"/{LANG}/ausschreibungen/feed.xml", _m("feed_all"))
+                    + f"<style>{css_min(HOME_CSS)}</style>\n"),
+        lastmod=newest(awards, opens), scripts=("home",)))
 
 
 
@@ -5339,6 +5708,9 @@ def build_about(awards: list, opens: list) -> None:
                 if sid == "aktualisierung" and "{awards}" in blk:
                     para = para.replace(e(kw["awards"]), f'<data value="{len(awards)}" id="total">{e(kw["awards"])}</data>', 1)
                 b.append(para)
+        if sid == "quelle":
+            # the home's map: its base and its licence (step 4)
+            b.append(f'<p>{e(_m("map_about"))}</p>')
         if sid == "daten":
             b.append(f'<p><a class="tag on" href="{BASE}/{LANG}/ausschreibungen/abo/">{e(u["alert_link"])}</a></p>')
         if sid == "kontakt":
@@ -5404,15 +5776,15 @@ def build_abo_status() -> None:
                 + PRELOAD.replace("{base}", BASE)
                 + f'<link rel="stylesheet" href="{BASE}/style.css">\n<style>{ABO_STATUS_CSS}</style>\n</head><body>\n'
                 f'<a class="skip" href="#inhalt">{e(lingue.t("skip", "de"))}</a>\n'
-                f'<div class="wrap">\n<header class="masthead"><a class="name" href="{BASE}/">auftragsregister.ch</a>\n'
-                f'<nav class="langs" aria-label="{e(" · ".join(lingue.t("language", l) for l in LANGS))}">'
-                + "".join(f'<a href="{BASE}/{l}/ausschreibungen/abo/" lang="{l}" hreflang="{l}">{e(NAMES[l])}</a>'
-                          for l in LANGS) + "</nav>" + search_form("de", BASE) + "\n"
+                f'<header class="masthead"><a class="name" href="{BASE}/">auftragsregister.ch</a>\n'
+                '<details><summary>Menu</summary></details>' + search_form("de", BASE) + "\n"
                 # the menu in each language, the reader's own with the script, all four without it
                 + "".join(f'<nav class="sitenav" data-nf lang="{l}" aria-label="{e(lingue.t("nav_label", l))}"><ul>'
-                          + "".join(f'<li{" class=" + chr(34) + "aux" + chr(34) if k == "nav_about" else ""}>'
-                                    f'<a href="{BASE}/{l}/{h}">{e(lingue.t(k, l))}</a></li>' for k, h in NAV)
+                          + "".join(f'<li><a href="{BASE}/{l}/{h}">{e(lingue.t(k, l))}</a></li>' for k, h in NAV)
                           + "</ul></nav>" for l in LANGS)
+                + f'<nav class="langs" aria-label="{e(" · ".join(lingue.t("language", l) for l in LANGS))}">'
+                + "".join(f'<a href="{BASE}/{l}/ausschreibungen/abo/" lang="{l}" hreflang="{l}">{e(NAMES[l])}</a>'
+                          for l in LANGS) + "</nav>"
                 + f'</header>\n<nav class="crumbs" aria-label="{e(lingue.t("crumbs_label", "de"))}"><ol>'
                 f'<li><a href="{BASE}/">auftragsregister.ch</a></li>'
                 f'<li><span aria-current="page">{" · ".join(e(titles[l]) for l in LANGS)}</span></li></ol></nav>\n'
@@ -5423,7 +5795,7 @@ def build_abo_status() -> None:
                 + " · ".join(f'<a href="{BASE}/{l}/datenschutz/" lang="{l}">{e(lingue.t("privacy", l))}</a>' for l in LANGS)
                 + "</p><p>"
                 + " · ".join(f'<a href="{BASE}/{l}/impressum/" lang="{l}">{e(lingue.t("imprint", l))}</a>' for l in LANGS)
-                + f'</p></footer></div><script src="{BASE}/stand.js" defer></script></body></html>')
+                + f'</p></footer><script src="{BASE}/stand.js" defer></script></body></html>')
         write(f"/abo/{slug_}/index.html", html)
 
 
@@ -5468,16 +5840,15 @@ def build_404() -> None:
             + PRELOAD.replace("{base}", BASE) +
             f'<link rel="stylesheet" href="{BASE}/style.css">\n<style>{NF_CSS}</style>\n</head><body>\n'
             f'<a class="skip" href="#inhalt">{e(lingue.t("skip", "de"))}</a>\n'
-            f'<div class="wrap">\n<header class="masthead"><a class="name" href="{BASE}/">auftragsregister.ch</a>\n'
-            f'<nav class="langs" aria-label="{e(" · ".join(lingue.t("language", l) for l in LANGS))}">'
-            + "".join(f'<a href="{BASE}/{l}/" lang="{l}" hreflang="{l}">{e(NAMES[l])}</a>' for l in LANGS) + "</nav>"
-            + search_form("de", BASE) + "\n"
+            f'<header class="masthead"><a class="name" href="{BASE}/">auftragsregister.ch</a>\n'
+            '<details><summary>Menu</summary></details>' + search_form("de", BASE) + "\n"
             # the menu in each language, shown like the text blocks below: the reader's own with
             # the script, all four without it (14.10.2026)
             + "".join(f'<nav class="sitenav nf" lang="{l}" aria-label="{e(lingue.t("nav_label", l))}"><ul>'
-                      + "".join(f'<li{" class=" + chr(34) + "aux" + chr(34) if k == "nav_about" else ""}>'
-                                f'<a href="{BASE}/{l}/{h}">{e(lingue.t(k, l))}</a></li>' for k, h in NAV)
+                      + "".join(f'<li><a href="{BASE}/{l}/{h}">{e(lingue.t(k, l))}</a></li>' for k, h in NAV)
                       + "</ul></nav>" for l in LANGS)
+            + f'<nav class="langs" aria-label="{e(" · ".join(lingue.t("language", l) for l in LANGS))}">'
+            + "".join(f'<a href="{BASE}/{l}/" lang="{l}" hreflang="{l}">{e(NAMES[l])}</a>' for l in LANGS) + "</nav>"
             + '</header>\n<main id="inhalt">\n'
             '<div class="title"><div><h1>404</h1></div></div>\n'
             + blocks + f"\n<script>{js}</script>\n</main><footer><p>"
@@ -5485,7 +5856,7 @@ def build_404() -> None:
             + "</p><p>"
             + " · ".join(f'<a href="{BASE}/{l}/impressum/" lang="{l}">{e(lingue.t("imprint", l))}</a>' for l in LANGS)
             # the core script: the header's search finds the page that was looked for (step 3b)
-            + f'</p></footer></div><script src="{BASE}/stand.js" defer></script></body></html>')
+            + f'</p></footer><script src="{BASE}/stand.js" defer></script></body></html>')
     write("/404.html", html)
 
 
@@ -5503,7 +5874,8 @@ SEARCH_STOP = ("ag", "sa", "gmbh", "sarl", "sagl", "ltd", "kg", "co", "cie", "in
                "zu", "zur", "zum", "par", "pour", "per")
 SHARD_MAX = 320_000            # bytes of one search shard (the largest, 's', is fetched for 'Stadt', 'SBB' …)
 DATA_MAX = 6_000_000           # every file of /daten/suche/, /daten/offen.json, /daten/kb/, /daten/abo-rate.json
-JS_MAX_GZ = 25_000             # all the scripts together, gzip
+JS_MAX_GZ = 25_000             # all the scripts together but the home's, gzip
+HOME_JS_MAX_GZ = 12_000        # /js/home.js alone, gzip (step 4): the home's motion and its map
 LIST_CUT = 300                 # a tender list longer than this shows its first LIST_FIRST rows…
 LIST_FIRST = 100               # …and the whole list on a page of its own (alle/), or in place with JavaScript
 # shared by the four language passes (build_language, first pass): what the search index is built from
@@ -5774,11 +6146,15 @@ JS_WORDS = {
     "abo": ("email_missing", "email_bad", "sel", "pv", "pv_lt", "pv_note", "open_1", "open_n"),
     "kb": ("kb_close", "kb_h", "kb_lead", "aw_1", "aw_n", "kb_f1", "kb_fn", "kb_top", "company", "awards", "sum_l",
            "unit_k", "unit_m", "amount", "kb_recent", "date", "contract", "winner", "kb_all", "kb_csv", "kb_hint"),
+    # the home's map read-out (step 4); dec: the decimal sign of the language
+    "home": ("map_rank", "map_share", "map_lit", "open_1", "open_n", "dec"),
 }
 
 
 def _word(mod: str, key: str, l: str) -> str:
-    if mod == "abo" and key in ("open_1", "open_n"):
+    if key == "dec":
+        return "." if l == "en" else ","
+    if mod in ("abo", "home") and key in ("open_1", "open_n"):
         one, many = lingue.OPEN_TENDERS[l]
         return f"1 {one}" if key == "open_1" else f"{{n}} {many}"
     if mod == "abo" and key.startswith("email_"):
@@ -5810,7 +6186,7 @@ def js_module(name: str) -> str:
     return out
 
 
-JS_MODULES = ("suche", "liste", "abo", "kb")
+JS_MODULES = ("suche", "liste", "abo", "kb", "home")
 JS_VER = [hashlib.sha1("".join(js_module(m) for m in JS_MODULES).encode("utf-8")
                        + (JS_DIR / "stand.js").read_bytes()).hexdigest()[:8]
           if (JS_DIR / "stand.js").exists() else "0"]
@@ -6024,23 +6400,25 @@ def main() -> None:
     fontcss = ""
     if fdir.exists():
         (OUT / "fonts").mkdir(parents=True, exist_ok=True)
-        for f in fdir.glob("*.woff2"):
+        # the fonts and, beside them, their licences (SIL OFL 1.1 asks for the licence with the fonts)
+        for f in [*fdir.glob("*.woff2"), *fdir.glob("*-OFL.txt")]:
             shutil.copy(f, OUT / "fonts" / f.name)
         # The French pages space digit groups and ':' ';' '?' '!' '%' with U+202F. Google's
         # subsets have no glyph for it, so the browser fell back to a system font that draws it
         # 1.3-1.8 px wide: '888 382 352.95' read as one run of digits (verifier, 28.09.2026).
-        # The Latin files in fonts/ (lf.woff2, bg.woff2) were patched once (U+202F -> the space
-        # glyph); warn if a font update ever brings unpatched files back.
+        # The Latin files in fonts/ map it (step 4: Instrument Sans got a narrow space glyph of its own,
+        # League Gothic has one); warn if a font update ever brings files without it back.
         try:
             from fontTools.ttLib import TTFont
-            bad = [f.name for f in (fdir / "lf.woff2", fdir / "bg.woff2")
+            bad = [f.name for f in (fdir / "is.woff2", fdir / "is7.woff2", fdir / "lg.woff2")
                    if 0x202F not in TTFont(f).getBestCmap()]
             if bad:
                 print(f"  ATTENZIONE: font senza U+202F (spazio fine francese): {', '.join(bad)}")
         except Exception:
             pass
         fontcss = (fdir / "fonts.css").read_text().replace("/fonts/", f"{BASE}/fonts/")
-    write("/style.css", fontcss + "\n" + CSS)
+    # one minified sheet: the fonts, the look, the stacked tables' labels (the home's own rules are in its head)
+    write("/style.css", css_min(fontcss + "\n" + CSS + "\n" + css_labels()) + "\n")
     if keyfile.exists():
         k = keyfile.read_text().strip()
         write(f"/{k}.txt", k)

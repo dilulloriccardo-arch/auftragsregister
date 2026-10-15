@@ -42,6 +42,10 @@ Guardare il sito in locale:
     docs/           il sito generato (si rigenera da zero ogni volta)
     dominio.txt    l'origine canonica, es. https://auftragsregister.ch
     design/        le quattro schermate del progetto grafico
+    fonts/         Instrument Sans e League Gothic (sottoinsiemi woff2, licenze OFL accanto): look A2 "Brass"
+    js/home.js     il movimento della home e la mappa a punti (solo sulle quattro home)
+    reticolo.json  la mappa a punti della Svizzera (confini ufficiali 2026), generata una volta da
+                   reticolo.py; i conteggi per cantone li aggiunge genera.py a ogni build
 
 ## Stato al 29 agosto 2026
 

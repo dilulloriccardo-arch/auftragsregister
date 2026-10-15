@@ -1,23 +1,25 @@
 <!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>
-/* the share card (og-<lang>.png, 1200x630): rendered by rendi.py with the site's own fonts */
-@font-face{font-family:"Libre Franklin";font-weight:400 700;src:url({fonts}/lf.woff2) format("woff2")}
-@font-face{font-family:"Bricolage Grotesque";font-weight:600 800;src:url({fonts}/bg.woff2) format("woff2")}
+/* the share card (og-<lang>.png, 1200x630) in design A2 "Brass" (step 4, 15.10.2026): rendered by rendi.py with the
+   site's own fonts; the brass pillars are decoration (the home's sky), not data */
+@font-face{font-family:"Instrument Sans";font-weight:700;src:url({fonts}/is7.woff2) format("woff2")}
+@font-face{font-family:"AR Gothic";src:url({fonts}/lg.woff2) format("woff2")}
 html,body{margin:0;width:1200px;height:630px;overflow:hidden}
-body{background:#07090c;color:#f3f6f9;font-family:"Libre Franklin",sans-serif;position:relative}
-.glow{position:absolute;inset:0;background:radial-gradient(620px 480px at 6% -12%,rgba(56,181,221,.32),transparent 66%),
-  radial-gradient(560px 440px at 100% -8%,rgba(124,92,255,.24),transparent 66%)}
-.grid{position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.04) 0 1px,transparent 1px 72px),
-  repeating-linear-gradient(0deg,rgba(255,255,255,.04) 0 1px,transparent 1px 72px);
-  -webkit-mask-image:radial-gradient(130% 90% at 50% 0%,#000 30%,transparent 80%)}
-.c{position:absolute;left:84px;right:84px;top:70px;bottom:64px;display:flex;flex-direction:column}
-.top{display:flex;align-items:center;gap:22px}
-.top img{width:68px;height:68px}
-.site{font:700 32px/1.2 "Bricolage Grotesque";letter-spacing:-.02em}
-h1{font:800 78px/1.02 "Bricolage Grotesque";letter-spacing:-.045em;margin:auto 0 0;max-width:1000px;text-wrap:balance}
-.foot{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-top:36px;padding-top:22px;
-  border-top:2px solid rgba(255,255,255,.28);font:600 26px/1.2 "Libre Franklin";color:#aab7c4}
-.foot b{color:#f3f6f9;font-weight:700}
-</style></head><body><div class="glow"></div><div class="grid"></div>
+body{background:#000;color:#f4f1ea;font-family:"Instrument Sans",sans-serif;position:relative}
+.glow{position:absolute;inset:0;background:radial-gradient(720px 520px at 92% 100%,rgba(201,162,78,.24),transparent 62%),
+  radial-gradient(600px 420px at 0% 0%,rgba(244,241,234,.05),transparent 60%)}
+.sky{position:absolute;right:84px;bottom:150px;display:flex;align-items:flex-end;gap:6px;width:300px;height:250px}
+.sky i{flex:1;background:linear-gradient(180deg,rgba(246,226,166,.95),rgba(215,178,99,.7) 22%,rgba(168,128,58,.28) 66%,rgba(140,104,44,.04))}
+.sky i.p{background:repeating-linear-gradient(-45deg,rgba(201,162,78,.75) 0 2px,transparent 2px 6px)}
+.c{position:absolute;left:84px;right:84px;top:66px;bottom:60px;display:flex;flex-direction:column}
+.top{display:flex;align-items:center;gap:18px}
+.top img{width:58px;height:58px}
+.site{font:400 38px/1 "AR Gothic";letter-spacing:.05em;text-transform:uppercase}
+h1{font:400 100px/.9 "AR Gothic";letter-spacing:.012em;text-transform:uppercase;margin:auto 0 0;max-width:740px;text-wrap:balance}
+.foot{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-top:34px;padding-top:22px;
+  border-top:1px solid rgba(201,162,78,.6);font:700 21px/1.2 "Instrument Sans";letter-spacing:.14em;text-transform:uppercase;color:#a6a39b}
+.foot b{color:#f3dc9a}
+</style></head><body><div class="glow"></div>
+<div class="sky"><i class="p" style="height:6%"></i><i class="p" style="height:14%"></i><i style="height:46%"></i><i style="height:50%"></i><i style="height:57%"></i><i style="height:62%"></i><i style="height:55%"></i><i style="height:66%"></i><i style="height:72%"></i><i style="height:69%"></i><i style="height:79%"></i><i style="height:74%"></i><i style="height:100%"></i><i class="p" style="height:41%"></i></div>
 <div class="c"><div class="top"><img src="{mark}" alt=""><span class="site">{site}</span></div>
 <h1>{tagline}</h1>
 <div class="foot"><b>auftragsregister.ch</b><span>{words}</span></div></div></body></html>

@@ -247,7 +247,13 @@ def _text(row: str) -> str:
 # that must work without JavaScript. Limits restated here, not imported (see above).
 SHARD_MAX = 320_000           # bytes of one search shard
 DATA_MAX = 6_000_000          # /daten/offen.json, /daten/suche/, /daten/kb/, /daten/abo-rate.json together
-JS_MAX_GZ = 25_000            # /stand.js and /js/*.js together, gzip -9
+JS_MAX_GZ = 25_000            # /stand.js and /js/*.js together but the home's, gzip -9
+HOME_JS_MAX_GZ = 12_000       # /js/home.js alone, gzip -9 (step 4: the home's motion and its map)
+FONTS_MAX = 120_000           # every woff2 in /fonts/ together (step 4)
+FONTS_NEED = ("is.woff2", "is7.woff2", "lg.woff2", "is-ext.woff2", "is7-ext.woff2", "lg-ext.woff2",
+              "InstrumentSans-OFL.txt", "LeagueGothic-OFL.txt")
+MIN_REM = 0.8125              # the smallest font size the stylesheet may set: 13 px (step 4)
+HOMES = ("/", "/de/", "/fr/", "/it/", "/en/")
 LANGS4 = ("de", "fr", "it", "en")
 
 
@@ -434,7 +440,8 @@ class Structure:
         if lang not in self.names:
             lang = "de"
         # the menu, the skip link and the landmarks on every page
-        for kind, needle in (("menu", '<nav class="sitenav"'), ("salta al contenuto", 'class="skip" href="#inhalt"'),
+        for kind, needle in (("menu", '<nav class="sitenav"'), ("menu del telefono", '<details><summary>'),
+                             ("salta al contenuto", 'class="skip" href="#inhalt"'),
                              ("<main id=inhalt>", '<main id="inhalt">'), ("<header>", '<header class="masthead">'),
                              ("<footer>", "<footer>"), ("riga dati nel piede", '<p class="stand">')):
             if needle not in html:
@@ -596,25 +603,20 @@ class Structure:
         return n
 
 
-# ------------------------------------------------------------- design (14.10.2026)
-# The look as data: the colour tokens of both themes against WCAG 2.2 AA (genera.CONTRAST), no text
-# under 12 px in the stylesheet, one unit per money column, and the head of each page — JSON-LD that
-# parses, the share card where it belongs (and only there), feeds and icons that exist, and nothing
+# ------------------------------------------------------------- design (14.10.2026; A2 "Brass", step 4)
+# The look as data: the colour tokens of the one dark theme against WCAG 2.2 AA (genera.CONTRAST), every
+# font size in rem and none under 13 px (the shared sheet and the home's own), the fonts and their licences,
+# the home's script on the home pages only, one unit per money column, and the head of each page — JSON-LD
+# that parses, the share card where it belongs (and only there), feeds and icons that exist, and nothing
 # fetched from another host.
 _TOKEN = re.compile(r"--([\w-]+):\s*([^;]+?)\s*(?:;|$)")
 
 
 def css_tokens(css: str) -> dict:
-    """{'dark': {...}, 'light': {...}}: the custom properties of the stylesheet's first :root block
-    (dark, the default) and of the one in @media (prefers-color-scheme:light), which inherits what it
-    does not redefine."""
+    """{'dark': {...}}: the custom properties of the stylesheet's first :root block. Design A2 (step 4) has
+    one theme for everyone; a light theme coming back is an error (check_contrast)."""
     m = re.search(r":root\{(.*?)\}", css, re.S)
-    dark = dict(_TOKEN.findall(m.group(1))) if m else {}
-    lm = re.search(r"@media \(prefers-color-scheme:light\)\{:root\{(.*?)\}\}", css, re.S)
-    light = dict(dark)
-    if lm:
-        light.update(_TOKEN.findall(lm.group(1)))
-    return {"dark": dark, "light": light if lm else {}}
+    return {"dark": dict(_TOKEN.findall(m.group(1))) if m else {}}
 
 
 def _rgba(v: str):
@@ -652,8 +654,8 @@ def check_contrast(css: str, pairs) -> tuple[list, list]:
     laid over --paper. rows: (theme, fg, bg, ratio, minimum) for the report."""
     errs, rows = [], []
     toks = css_tokens(css)
-    if not toks["light"]:
-        errs.append("tema chiaro: nessun blocco @media (prefers-color-scheme:light) con i token")
+    if "prefers-color-scheme" in css:
+        errs.append("un tema chiaro nel foglio: A2 ha un solo tema, scuro (passo 4)")
     for theme, t in toks.items():
         if not t:
             continue
@@ -672,21 +674,32 @@ def check_contrast(css: str, pairs) -> tuple[list, list]:
     return errs, rows
 
 
-def _px(v: str):
-    """A font-size value in CSS px, or None when it is relative to nothing the stylesheet knows."""
-    v = v.strip().lower()
-    m = re.fullmatch(r"([\d.]+)(px|pt|rem|em|%)?", v)
-    if not m:
-        return None
-    n, u = float(m.group(1)), m.group(2) or "px"
-    return {"px": n, "pt": n * 4 / 3, "rem": n * 16, "em": n * 16, "%": n * 16 / 100}[u]
+def _rem(v: str):
+    """A font size in rem, or None when it is not a rem value."""
+    m = re.fullmatch(r"([\d.]+)rem", v.strip().lower())
+    return float(m.group(1)) if m else None
+
+
+def _no_print(css: str) -> str:
+    """The stylesheet without its @media print block: paper is set in points."""
+    i = css.find("@media print{")
+    if i < 0:
+        return css
+    depth, j = 0, i + len("@media print")
+    while j < len(css):
+        depth += {"{": 1, "}": -1}.get(css[j], 0)
+        j += 1
+        if depth == 0:
+            break
+    return css[:i] + css[j:]
 
 
 def check_font_sizes(css: str) -> list:
-    """No font-size under 12 px (0.75 rem) anywhere in the stylesheet: plain values, the smallest end of
-    a clamp(), and a max() only when one of its terms is 12 px or more."""
+    """Every font size in rem (step 4: none in px, em or %, so the reader's own text size scales them all) and
+    none under MIN_REM (13 px): plain values, the smallest end of a clamp() (which must be rem; its middle may
+    add vw), each term of a min() and the largest of a max(). The print sheet is left out (points)."""
     errs = []
-    for m in re.finditer(r"([^{}]*)\{([^{}]*)\}", css):
+    for m in re.finditer(r"([^{}]*)\{([^{}]*)\}", _no_print(css)):
         sel, body = m.group(1).strip(), m.group(2)
         if sel == ".sr" or sel.startswith("@font-face"):
             continue
@@ -700,17 +713,45 @@ def check_font_sizes(css: str) -> list:
                 val = sz.group(1)
             if val in ("inherit", "initial", "unset", "100%"):
                 continue
-            if val.startswith("max("):
-                terms = [_px(x) for x in re.split(r",(?![^(]*\))", val[4:-1])]
-                ok = any(x is not None and x >= 12 for x in terms)
-            elif val.startswith("clamp("):
-                lo = _px(re.split(r",(?![^(]*\))", val[6:-1])[0])
-                ok = lo is not None and lo >= 12
+            if val.startswith(("max(", "min(", "clamp(")):
+                inner = val[val.index("(") + 1:-1]
+                terms = re.split(r",(?![^(]*\))", inner)
+                if val.startswith("clamp("):
+                    lo = _rem(terms[0])
+                    ok = (lo is not None and lo >= MIN_REM
+                          and not re.search(r"\d(?:px|pt|em|%)", inner.replace("rem", "")))
+                elif val.startswith("min("):
+                    ok = all(_rem(t) is not None and _rem(t) >= MIN_REM for t in terms if not re.search(r"v[wh]|svh", t))
+                else:
+                    ok = any(_rem(t) is not None and _rem(t) >= MIN_REM for t in terms)
             else:
-                x = _px(val)
-                ok = x is None or x >= 12
+                x = _rem(val)
+                ok = x is not None and x >= MIN_REM
             if not ok:
                 errs.append(f"{sel[:60]} {{font-size:{val}}}")
+    return errs
+
+
+def check_fonts(css: str, pages_head: str) -> list:
+    """The fonts of design A2 (step 4): the six woff2 files and the two licences in /fonts/, together at most
+    FONTS_MAX bytes; no file of the fonts it replaced; every url() of the sheet's @font-face there; the font a
+    page preloads is one of them."""
+    errs, fdir = [], OUT / "fonts"
+    for name in FONTS_NEED:
+        if not (fdir / name).is_file():
+            errs.append(f"/fonts/{name} mancante")
+    for old in ("lf.woff2", "lf-ext.woff2", "bg.woff2", "bg-ext.woff2"):
+        if (fdir / old).exists():
+            errs.append(f"/fonts/{old}: font sostituito ancora presente")
+    tot = sum(f.stat().st_size for f in fdir.glob("*.woff2")) if fdir.is_dir() else 0
+    if tot > FONTS_MAX:
+        errs.append(f"font {tot} byte, oltre {FONTS_MAX}")
+    for u in re.findall(r"@font-face\{[^}]*?url\(([^)]+)\)", css):
+        if not (OUT / u.strip("'\"").split("?")[0].lstrip("/")[len(BASE.lstrip("/")):].lstrip("/")).is_file():
+            errs.append(f"@font-face: {u} mancante")
+    for u in re.findall(r'<link rel="preload" href="([^"]+)" as="font"', pages_head):
+        if not (OUT / u[len(BASE):].lstrip("/")).is_file():
+            errs.append(f"preload di un font che non esiste: {u}")
     return errs
 
 
@@ -903,6 +944,7 @@ def main() -> int:
     # step 3b: day-relative wording, the header's search, the open tenders as the pages show them
     rel_pat = relative_patterns(lingue)
     rel_bad, form_bad, open_ids = [], [], set()
+    home_js_bad, first_head = [], ""
 
     for f in OUT.rglob("index.html"):
         html = f.read_text(encoding="utf-8")
@@ -931,6 +973,12 @@ def main() -> int:
         x = relative_errors(html, rel_pat)
         if x:
             rel_bad.append((here, x[0]))
+        # step 4: the home's script on the five home pages, and on no other
+        has_home = f'src="{BASE}/js/home.js' in html
+        if has_home != (here in HOMES):
+            home_js_bad.append((here, "home.js su una pagina che non è la home" if has_home else "home senza home.js"))
+        if not first_head:
+            first_head = html.split("</head>", 1)[0]
         fm = _SEARCH_FORM.search(html)
         lang_here = hp[0] if hp and hp[0] in LANGS4 else "de"
         if not fm:
@@ -1087,8 +1135,15 @@ def main() -> int:
         if need not in data_files:
             j_errs.append(f"{need} mancante")
     js_gz = sum(len(gzip.compress(f.read_bytes(), 9)) for f in [OUT / "stand.js", *sorted((OUT / "js").glob("*.js"))]
-                if f.is_file())
+                if f.is_file() and f.name != "home.js")
     sz_errs = size_errors({k: len(v) for k, v in data_files.items()}, js_gz)
+    # the home's motion and map (step 4): a file of its own, on the home pages only, at most HOME_JS_MAX_GZ
+    home_gz = len(gzip.compress((OUT / "js" / "home.js").read_bytes(), 9)) if (OUT / "js" / "home.js").is_file() else 0
+    if not home_gz:
+        sz_errs.append("/js/home.js mancante")
+    elif home_gz > HOME_JS_MAX_GZ:
+        sz_errs.append(f"/js/home.js {home_gz} byte gzip, oltre {HOME_JS_MAX_GZ}")
+    sz_errs += [f"{h}: {x}" for h, x in home_js_bad[:6]]
     idx_errs, open_errs = [], []
     if not j_errs:
         comp = G.profile(awards)
@@ -1109,7 +1164,8 @@ def main() -> int:
     n_entries = sum(len(v) for sh in (json.loads(x) for k, x in data_files.items() if k.startswith("/daten/suche/")
                                       and not k.endswith("themen.json")) for v in sh.values())
     print(f"  dati degli script       {len(j_errs)} illeggibili su {len(data_files)} file · "
-          f"{sum(len(v) for v in data_files.values()) / 1e6:.2f} MB · script {js_gz / 1e3:.1f} KB gzip")
+          f"{sum(len(v) for v in data_files.values()) / 1e6:.2f} MB · script {js_gz / 1e3:.1f} KB gzip"
+          f" · home.js {home_gz / 1e3:.1f} KB gzip ({len(home_js_bad)} pagine fuori posto)")
     for m in (j_errs + sz_errs)[:6]:
         print(f"    {m}")
     print(f"  indice di ricerca       {len(idx_errs)} problemi ({n_entries} voci negli shard) · "
@@ -1162,12 +1218,17 @@ def main() -> int:
     n_design = ds.report()
     css = (OUT / "style.css").read_text(encoding="utf-8") if (OUT / "style.css").is_file() else ""
     c_errs, c_rows = check_contrast(css, G.CONTRAST)
-    print(f"  contrasto dei token      {len(c_errs)} coppie sotto WCAG AA su {len(c_rows)} (due temi)")
+    print(f"  contrasto dei token      {len(c_errs)} coppie sotto WCAG AA su {len(c_rows)} (un tema, scuro)")
     for m in c_errs[:8]:
         print(f"    {m}")
-    f_errs = check_font_sizes(css)
-    print(f"  testo sotto 12 px       {len(f_errs)} dichiarazioni")
+    f_errs = check_font_sizes(css) + [f"home: {x}" for x in check_font_sizes(G.css_min(G.HOME_CSS))]
+    print(f"  corpi non in rem o sotto 13 px  {len(f_errs)} dichiarazioni (foglio e home)")
     for m in f_errs[:8]:
+        print(f"    {m}")
+    fo_errs = check_fonts(css, first_head)
+    fo_tot = sum(f.stat().st_size for f in (OUT / "fonts").glob("*.woff2")) if (OUT / "fonts").is_dir() else 0
+    print(f"  font                    {len(fo_errs)} problemi · {fo_tot / 1e3:.1f} KB woff2 (max {FONTS_MAX / 1e3:.0f})")
+    for m in fo_errs[:6]:
         print(f"    {m}")
     a_errs = check_assets(css)
     print(f"  icone e immagini        {'ok' if not a_errs else '; '.join(a_errs[:4])}")
@@ -1190,7 +1251,7 @@ def main() -> int:
             print(f"    {n} char  {h}")
     return 1 if (broken or empty_titles or no_desc or abs_errs or same_tender or twin_rows
                  or bad_sums or single_amount or lost or stale or nf_bad or n_struct
-                 or n_design or c_errs or f_errs or a_errs or tot_errs or bad_buyers or bad_form
+                 or n_design or c_errs or f_errs or fo_errs or a_errs or tot_errs or bad_buyers or bad_form
                  or bad_feeds or bad_ld or j_errs or sz_errs or idx_errs or open_errs or sp_errs or form_bad
                  or rel_bad) else 0
 

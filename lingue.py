@@ -3367,6 +3367,58 @@ JS: dict[str, dict[str, str]] = {
                 "en": "Pick an industry: this canton’s awards and the companies with the most of them."},
 }
 
+# ---------------------------------------------------------------- step 4: design A2 "Brass"
+# The phone menu (a <details> in the header of every page) and the home in the A2 design (15.10.2026):
+# the hero's eyebrow and its brass pillars, the map of the open tenders per canton (legend, attribution,
+# read-out), the section eyebrows and the alarm band. The map's read-out words for the script are in JS.
+T["menu"] = {"de": "Menü", "fr": "Menu", "it": "Menu", "en": "Menu"}
+META["home_eyebrow"] = {"de": "{span} · Daten vom {d}", "fr": "{span} · données du {d}",
+                        "it": "{span} · dati al {d}", "en": "{span} · data as of {d}"}
+META["sky_peak"] = {"de": "{m} · meiste Zuschläge", "fr": "{m} · record d’adjudications",
+                    "it": "{m} · record di aggiudicazioni", "en": "{m} · most awards"}
+META["map_eyebrow"] = {"de": "01 · Karte · Stand {d}", "fr": "01 · Carte · état au {d}",
+                       "it": "01 · Mappa · stato al {d}", "en": "01 · Map · as of {d}"}
+META["map_legend"] = {"de": "Je heller ein Kanton, desto mehr offene Ausschreibungen.",
+                      "fr": "Plus un canton est clair, plus il compte d’appels d’offres en cours.",
+                      "it": "Più un cantone è chiaro, più bandi aperti conta.",
+                      "en": "The brighter a canton, the more open tenders it has."}
+META["map_hint"] = {"de": "Zeigen Sie auf einen Kanton oder wählen Sie ihn in der Liste.",
+                    "fr": "Survolez un canton ou choisissez-le dans la liste.",
+                    "it": "Passi il puntatore su un cantone o lo scelga nell’elenco.",
+                    "en": "Point at a canton or pick it from the list."}
+META["map_src"] = {"de": "Kartengrundlage: BFS, swisstopo (swiss-maps © Interactive Things)",
+                   "fr": "Fond de carte : OFS, swisstopo (swiss-maps © Interactive Things)",
+                   "it": "Base cartografica: UST, swisstopo (swiss-maps © Interactive Things)",
+                   "en": "Base map: FSO, swisstopo (swiss-maps © Interactive Things)"}
+META["map_ch"] = {"de": "Schweiz · 26 Kantone", "fr": "Suisse · 26 cantons", "it": "Svizzera · 26 Cantoni",
+                  "en": "Switzerland · 26 cantons"}
+META["map_all"] = {"de": "Alle Kantone", "fr": "Tous les cantons", "it": "Tutti i Cantoni", "en": "All cantons"}
+META["map_list"] = {"de": "Offene Ausschreibungen der 26 Kantone", "fr": "Appels d’offres en cours des 26 cantons",
+                    "it": "Bandi aperti dei 26 Cantoni", "en": "Open tenders of the 26 cantons"}
+META["key_figures"] = {"de": "Kennzahlen", "fr": "Chiffres clés", "it": "Cifre chiave", "en": "Key figures"}
+META["sec_awards"] = {"de": "02 · Zuschläge", "fr": "02 · Adjudications", "it": "02 · Aggiudicazioni",
+                      "en": "02 · Awards"}
+META["sec_companies"] = {"de": "03 · Unternehmen", "fr": "03 · Entreprises", "it": "03 · Imprese",
+                         "en": "03 · Companies"}
+META["sec_divisions"] = {"de": "04 · Branchen", "fr": "04 · Branches", "it": "04 · Rami", "en": "04 · Industries"}
+META["alarm_eyebrow"] = {"de": "E-Mail-Alarm · kostenlos", "fr": "Alerte e-mail · gratuite",
+                         "it": "Avviso e-mail · gratuito", "en": "Email alerts · free"}
+META["alarm_h2"] = {"de": "Neue Ausschreibungen automatisch erhalten",
+                    "fr": "Recevoir automatiquement les nouveaux appels d’offres",
+                    "it": "Ricevere automaticamente i nuovi bandi", "en": "Get new tenders automatically"}
+META["map_about"] = {
+    "de": "Kartengrundlage der Startseite: swiss-maps © Interactive Things (BSD-3-Clause), Daten BFS/swisstopo.",
+    "fr": "Fond de carte de la page d’accueil : swiss-maps © Interactive Things (BSD-3-Clause), données OFS/swisstopo.",
+    "it": "Base cartografica della pagina iniziale: swiss-maps © Interactive Things (BSD-3-Clause), dati UST/swisstopo.",
+    "en": "Base map of the home page: swiss-maps © Interactive Things (BSD-3-Clause), data FSO/swisstopo.",
+}
+JS["map_rank"] = {"de": "Rang {r} von 26", "fr": "Rang {r} sur 26", "it": "Posizione {r} su 26",
+                  "en": "Rank {r} of 26"}
+JS["map_share"] = {"de": "{p} % aller offenen Ausschreibungen", "fr": "{p} % des appels d’offres en cours",
+                   "it": "{p} % dei bandi aperti", "en": "{p}% of all open tenders"}
+JS["map_lit"] = {"de": "{n} von 26 Kantonen", "fr": "{n} cantons sur 26", "it": "{n} Cantoni su 26",
+                 "en": "{n} of 26 cantons"}
+
 
 # ---------------------------------------------------------------- typography
 # One rule set per language, applied once at import to the site's own templates and never

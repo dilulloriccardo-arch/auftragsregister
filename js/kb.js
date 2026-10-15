@@ -46,7 +46,7 @@
       '<th scope="col" class="r">' + esc(L.awards) + '</th>' + money_th(uf).replace('<th', '<th scope="col"') + '</tr></thead><tbody>' +
       x.f.map(function (r) { return '<tr><td>' + firm(r) + '</td><td class="r num">' + A.count(r[2]) + '</td><td class="r num">' + scaled(r[3], uf) + '</td></tr>'; }).join('') +
       '</tbody></table></div>' +
-      '<h3>' + esc(fmt(L.kb_recent, { k: A.count(x.r.length), n: A.count(x.a) })) + '</h3><div class="scroll"><table class="ls awb"><caption class="sr">' +
+      '<h3>' + esc(fmt(L.kb_recent, { k: A.count(x.r.length), n: A.count(x.a) })) + '</h3><div class="scroll"><table class="ls awb u' + ur + '"><caption class="sr">' +
       esc(fmt(L.kb_recent, { k: x.r.length, n: x.a })) + '</caption><thead><tr><th scope="col" class="w96">' + esc(L.date) + '</th><th scope="col">' + esc(L.contract) +
       '</th><th scope="col">' + esc(L.winner) + '</th>' + money_th(ur, 'amount').replace('<th', '<th scope="col"') + '</tr></thead><tbody>' +
       x.r.map(function (r) {
