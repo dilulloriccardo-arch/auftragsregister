@@ -38,7 +38,7 @@ T: dict[str, dict[str, str]] = {
                     "it": "Bando aperto", "en": "Open for bids"},
     "sum": {"de": "Summe (CHF)", "fr": "Total (CHF)", "it": "Totale (CHF)", "en": "Total (CHF)"},
     "sum_published": {"de": "Summe der Beträge in CHF", "fr": "Total des montants en CHF",
-                      "it": "Totale degli importi in CHF", "en": "Total of amounts in CHF"},
+                      "it": "Totale degli importi in CHF", "en": "Total awarded (CHF)"},
     "median": {"de": "Typischer Betrag (Median)", "fr": "Montant typique (médiane)", "it": "Importo tipico (mediana)",
                "en": "Typical amount (median)"},
     # the award lists (company, buyer, a project's lots): no currency in the header, which stood over
@@ -77,7 +77,7 @@ T: dict[str, dict[str, str]] = {
     "description": {"de": "Beschreibung", "fr": "Description", "it": "Descrizione",
                     "en": "Description"},
     "details": {"de": "Angaben", "fr": "Détails", "it": "Dettagli", "en": "Details"},
-    "type": {"de": "Auftragsart", "fr": "Type de marché", "it": "Tipo di appalto",
+    "type": {"de": "Auftragsart", "fr": "Type de marché", "it": "Tipo di commessa",
              "en": "Contract type"},
     # a soft hyphen: the Details column breaks the compound there rather than mid-syllable
     "treaty": {"de": "Staatsvertrags\u00adbereich", "fr": "Accord international",
@@ -91,7 +91,7 @@ T: dict[str, dict[str, str]] = {
     "period": {"de": "Zeitraum", "fr": "Période", "it": "Periodo", "en": "Period"},
     # one label for the same date on the home and the tenders pages
     "as_of": {"de": "Daten vom", "fr": "État des données", "it": "Stato dei dati", "en": "Data as of"},
-    "entries": {"de": "Einträge", "fr": "Entrées", "it": "Voci", "en": "Entries"},
+    "entries": {"de": "Einträge", "fr": "Nombre", "it": "Voci", "en": "Entries"},
     "until": {"de": "bis", "fr": "jusqu'au", "it": "entro il", "en": "due"},
     "running": {"de": "Offene Ausschreibungen", "fr": "Appels d’offres en cours", "it": "Bandi aperti", "en": "Open tenders"},
     "language": {"de": "Sprache", "fr": "Langue", "it": "Lingua", "en": "Language"},
@@ -322,7 +322,7 @@ META: dict[str, dict[str, str]] = {
         "en": "Sole contracting authority: {buyer}.",
     },
     "company_lead": {
-        "de": "{n} auf simap.ch publiziert{span}, erteilt von {b}.",
+        "de": "Auf simap.ch wurden {n}{span} an dieses Unternehmen publiziert, erteilt von {b}.",
         "fr": "{n} publiées sur simap.ch par {b}{span}.",
         "it": "{n} pubblicate su simap.ch{span}, da {b}.",
         "en": "{n} published on simap.ch{span}, from {b}.",
@@ -438,7 +438,7 @@ META: dict[str, dict[str, str]] = {
         "de": "{n} öffentliche Ausschreibungen mit noch offener Eingabefrist, publiziert von "
               "Bund, Kantonen und Gemeinden auf simap.ch – nach Frist geordnet, nach Kanton und "
               "Branche gegliedert, in der Regel werktags aktualisiert.",
-        "fr": "{n} appels d’offres publics dont le délai de remise court encore, publiés sur "
+        "fr": "{n} appels d’offres publics dont le délai de remise des offres court encore, publiés sur "
               "simap.ch par la Confédération, les cantons et les communes – par ordre d’échéance, "
               "consultables par canton et par branche, mis à jour en règle générale les jours ouvrables.",
         "it": "{n} bandi di gara ancora aperti, pubblicati da Confederazione, Cantoni e Comuni "
@@ -446,7 +446,7 @@ META: dict[str, dict[str, str]] = {
               "nei giorni feriali.",
         "en": "{n} public tenders with a deadline still open, published by the Confederation, "
               "cantons and communes on simap.ch – sorted by deadline, grouped by canton and "
-              "industry, usually updated on working days.",
+              "industry, usually updated Monday to Saturday.",
     },
     # no heading may promise a search the page does not have ("Ausschreibungen suchen: So
     # funktioniert es"; audit 13.10.2026)
@@ -484,7 +484,7 @@ META: dict[str, dict[str, str]] = {
               "a link to the official publication. Canton pages list the tenders in your region; "
               "industry pages list those in your line of work: construction, engineering, IT, "
               "insurance, vehicles and more. The data comes from simap.ch, the official "
-              "platform, and is usually refreshed on working days, after simap.ch releases the day’s "
+              "platform, and is usually refreshed Monday to Saturday, after simap.ch releases the day’s "
               "publications.",
     },
     "open_by_canton_h2": {
@@ -519,7 +519,7 @@ META: dict[str, dict[str, str]] = {
                    "fr": "Nouveaux appels d’offres : {scope} – Marchés publics suisses",
                    "it": "Nuovi bandi: {scope} – Appalti pubblici svizzeri",
                    "en": "New tenders: {scope} – Swiss Public Contracts"},
-    "feed_all": {"de": "Schweiz", "fr": "Suisse", "it": "Svizzera", "en": "Switzerland"},
+    "feed_all": {"de": "ganze Schweiz", "fr": "toute la Suisse", "it": "tutta la Svizzera", "en": "all of Switzerland"},
     "feed_link": {"de": "RSS-Feed", "fr": "Flux RSS", "it": "Feed RSS", "en": "RSS feed"},
     "abo_cta": {"de": "Kostenloses E-Mail-Abo einrichten",
                 "fr": "Créer une alerte e-mail gratuite",
@@ -551,7 +551,7 @@ META: dict[str, dict[str, str]] = {
                  "it": "Ogni giorno feriale su simap.ch vengono pubblicati nuovi bandi. Scelga i cantoni "
                        "e i rami che le interessano: le invieremo i nuovi bandi corrispondenti – gratuitamente, "
                        "senza account.",
-                 "en": "New tenders appear on simap.ch on every working day. Choose your cantons and "
+                 "en": "New tenders appear on simap.ch every day from Monday to Saturday. Choose your cantons and "
                        "industries, and we will send you the new ones – free, no account needed."},
     "abo_rss_h2": {"de": "Per RSS-Feed (bei jeder Aktualisierung, ohne Anmeldung)",
                    "fr": "Par flux RSS (à chaque mise à jour, sans inscription)",
@@ -588,8 +588,8 @@ META: dict[str, dict[str, str]] = {
                         "l’avviso e-mail sarà attivo.",
                   "en": "We have sent you an email. Click the confirmation link in it – your email alert starts "
                         "only after that."},
-    "abo_ok_title": {"de": "Abo bestätigt", "fr": "Abonnement confirmé", "it": "Iscrizione confermata",
-                     "en": "Subscription confirmed"},
+    "abo_ok_title": {"de": "E-Mail-Abo bestätigt", "fr": "Alerte e-mail confirmée", "it": "Avviso e-mail confermato",
+                     "en": "Email alert confirmed"},
     "abo_ok": {"de": "Ihr E-Mail-Abo ist aktiv. Abmelden können Sie sich jederzeit über den Link am Ende "
                      "jeder E-Mail.",
                "fr": "Votre alerte e-mail est active. Vous pouvez vous désabonner à tout moment par le lien au "
@@ -602,7 +602,7 @@ META: dict[str, dict[str, str]] = {
                  "en": "Back to email alerts"},
     # the form's heading names the alert as the links to it do; the button says the verb (abonnieren /
     # s'abonner / iscriversi / subscribe) and that it is free (step 5, owner's terminology)
-    "abo_form_h2": {"de": "E-Mail-Abo einrichten", "fr": "Créer une alerte e-mail", "it": "Attivare l’avviso e-mail",
+    "abo_form_h2": {"de": "E-Mail-Abo einrichten", "fr": "Créer une alerte e-mail", "it": "Attiva l’avviso e-mail",
                     "en": "Set up an email alert"},
     "abo_form_email": {"de": "E-Mail-Adresse", "fr": "Adresse e-mail", "it": "Indirizzo e-mail", "en": "Email "
                                                                                                        "address"},
@@ -616,7 +616,7 @@ META: dict[str, dict[str, str]] = {
                          "it": "Rami (nessuna scelta = tutti)", "en": "Industries (none "
                                                                          "selected = all)"},
     "abo_form_submit": {"de": "Kostenlos abonnieren", "fr": "S'abonner gratuitement", "it": "Iscriviti gratuitamente",
-                        "en": "Subscribe free"},
+                        "en": "Subscribe for free"},
     # an e-mail only on a day with new matching tenders: "an jedem Werktag eine E-Mail" promised one
     # every working day, and none goes out without a match (08.10.2026)
     "abo_form_consent": {"de": "Sie erhalten zuerst eine E-Mail mit einem Bestätigungslink; erst "
@@ -644,7 +644,7 @@ META: dict[str, dict[str, str]] = {
                                "appear, and none on other days. "
                                "You can unsubscribe at any time via the link in every email. "
                                "Subscriptions and sending are handled by Brevo (EU)."},
-    "abo_form_sending": {"de": "Wird gesendet …", "fr": "Envoi en cours…", "it": "Invio in "
+    "abo_form_sending": {"de": "Wird gesendet\u00a0…", "fr": "Envoi en cours…", "it": "Invio in "
                                                                                   "corso…", "en": "Sending…"},
     "abo_form_ok": {"de": "Fast geschafft: Bitte klicken Sie auf den Link in der E-Mail, die wir Ihnen gerade geschickt haben.",
                     "fr": "Plus qu’une étape : cliquez sur le lien contenu dans l’e-mail que "
@@ -741,8 +741,7 @@ META: dict[str, dict[str, str]] = {
                        "fr": "Appels d’offres du canton {of} : {c}",
                        "it": "Bandi nel Canton {name}: {c}",
                        "en": "Tenders in the canton of {name}: {c}"},
-    "open_canton_t3": {"de": "Ausschreibungen {name}: {c}", "fr": "Appels d’offres {name} : {c}",
-                       "it": "Bandi {name}: {c}", "en": "Tenders in {name}: {c}"},
+    "open_canton_t3": {"de": "{name}: {o}", "fr": "{name} : {o}", "it": "{name}: {o}", "en": "{name}: {o}"},
     "open_sector_t1": {"de": "{word} in der Schweiz: {k} offen",
                        "fr": "{word} en Suisse : {k} en cours",
                        "it": "{word} in Svizzera: {k} aperti",
@@ -772,8 +771,8 @@ META: dict[str, dict[str, str]] = {
               "gratuite, sans compte.",
         "it": "{n} nel Canton {name}: in ordine di scadenza, aggiornati nei giorni feriali, con avviso "
               "e-mail gratuito e senza account.",
-        "en": "{n} in the canton of {name}: sorted by deadline, updated on working days, with a free email "
-              "alert and no account needed.",
+        "en": "{n} in the canton of {name}: sorted by deadline, updated Monday to Saturday, with a free "
+              "email alert, no account needed.",
     },
     "desc_deadline": {
         "de": ", Eingabefrist {date}",
@@ -832,8 +831,10 @@ IDX: dict[str, dict[str, str]] = {
               "simap.ch.",
         "en": "Alphabetical directory of the {n} companies with at least two awards published "
               "on simap.ch."},
-    "buyers_h1": {"de": "Auftraggeber", "fr": "Adjudicateurs", "it": "Committenti",
-                  "en": "Contracting authorities"},
+    "buyers_h1": {"de": "Auftraggeber im Register", "fr": "Adjudicateurs du registre", "it": "Committenti nel registro",
+                  "en": "Contracting authorities in the register"},
+    "cantons_h1": {"de": "Öffentliche Aufträge nach Kanton", "fr": "Marchés publics par canton",
+                   "it": "Appalti pubblici per cantone", "en": "Public contracts by canton"},
     "buyers_lead": {
         "de": "Alle Auftraggeber mit mindestens drei publizierten Zuschlägen, alphabetisch.",
         "fr": "Tous les adjudicateurs ayant publié au moins trois adjudications, par ordre "
@@ -913,7 +914,7 @@ IDX: dict[str, dict[str, str]] = {
     "same_sector": {"de": "Aufträge im selben Bereich", "fr": "Marchés du même domaine",
                     "it": "Appalti della stessa categoria", "en": "Awards in the same category"},
     "contracts_in": {"de": "Aufträge im Kanton {c}", "fr": "Marchés du canton {of}",
-                     "it": "Altri appalti nel Canton {c}", "en": "Awards in the canton of {c}"},
+                     "it": "Appalti nel Canton {c}", "en": "Awards in the canton of {c}"},
     "mc_title_home": {
         "de": "Zuschläge pro Monat in der ganzen Schweiz",
         "fr": "Adjudications par mois dans toute la Suisse",
@@ -1237,21 +1238,21 @@ def i(key: str, lang: str, **kw) -> str:
 ENUM: dict[str, dict[str, dict[str, str]]] = {
     "processType": {
         "open": {"de": "Offenes Verfahren", "fr": "Procédure ouverte",
-                 "it": "Procedura aperta", "en": "Open procedure"},
+                 "it": "Procedura di pubblico concorso", "en": "Open procedure"},
         "selective": {"de": "Selektives Verfahren", "fr": "Procédure sélective",
                       "it": "Procedura selettiva", "en": "Selective procedure"},
         "invitation": {"de": "Einladungsverfahren", "fr": "Procédure sur invitation",
-                       "it": "Procedura su invito", "en": "Invitation procedure"},
+                       "it": "Procedura mediante invito", "en": "Invitation procedure"},
         "direct": {"de": "Freihändiges Verfahren", "fr": "Procédure de gré à gré",
-                   "it": "Trattativa privata", "en": "Direct award"},
+                   "it": "Procedura per incarico diretto", "en": "Direct award"},
     },
     "orderType": {
         "construction": {"de": "Bauauftrag", "fr": "Marché de travaux",
-                         "it": "Appalto di lavori", "en": "Works contract"},
+                         "it": "Commessa edile", "en": "Works contract"},
         "service": {"de": "Dienstleistungsauftrag", "fr": "Marché de services",
-                    "it": "Appalto di servizi", "en": "Services contract"},
+                    "it": "Commessa di servizi", "en": "Services contract"},
         "supply": {"de": "Lieferauftrag", "fr": "Marché de fournitures",
-                   "it": "Appalto di forniture", "en": "Supply contract"},
+                   "it": "Commessa di forniture", "en": "Supply contract"},
     },
     "bool": {
         "True": {"de": "Ja", "fr": "Oui", "it": "Sì", "en": "Yes"},
@@ -1498,10 +1499,10 @@ PRIV: dict[str, dict] = {
              "l'inscription et de la confirmation), la mention de votre désabonnement et les "
              "journaux des e-mails déjà envoyés, afin que vous ne receviez plus aucun e-mail. "
              "Les données ne sont ni vendues, ni cédées à des tiers pour leurs propres fins, ni "
-             "utilisées à d'autres fins. Les traitent pour notre compte : Brevo (Sendinblue SAS, "
-             "Paris, UE) pour l’inscription et l’envoi et, pour les e-mails adressés à "
-             "abo@auftragsregister.ch (y compris les signalements d’erreur), ImprovMX Inc. "
-             "(États-Unis), qui les redirige, et Google LLC, qui héberge la boîte aux lettres "
+             "utilisées à d'autres fins. Ces données sont traitées pour notre compte par Brevo "
+             "(Sendinblue SAS, Paris, UE) pour l’inscription et l’envoi et, pour les e-mails adressés à "
+             "abo@auftragsregister.ch (y compris les signalements d’erreur), par ImprovMX Inc. "
+             "(États-Unis), qui les redirige, et par Google LLC, qui héberge la boîte aux lettres "
              "(Gmail). Les flux RSS ne demandent aucune inscription et ne nous transmettent "
              "aucune donnée personnelle."),
             ("Archive et conservation",
@@ -1561,9 +1562,9 @@ PRIV: dict[str, dict] = {
              "dell’iscrizione e della conferma), l’annotazione della cancellazione e i registri "
              "delle e-mail già inviate, affinché non riceva più alcuna e-mail. I dati non "
              "vengono venduti, non vengono ceduti a terzi per i loro scopi e non sono usati per "
-             "altri scopi. Li trattano per nostro conto: Brevo (Sendinblue SAS, Parigi, UE) per "
+             "altri scopi. I dati sono trattati per nostro conto da Brevo (Sendinblue SAS, Parigi, UE) per "
              "iscrizione e invio e, per le e-mail inviate ad abo@auftragsregister.ch (anche le "
-             "segnalazioni di errori), ImprovMX Inc. (USA), che le inoltra, e Google LLC, presso cui "
+             "segnalazioni di errori), da ImprovMX Inc. (USA), che le inoltra, e da Google LLC, presso cui "
              "si trova la casella di posta (Gmail). I feed RSS non richiedono iscrizione e non ci "
              "trasmettono dati personali."),
             ("Archivio e conservazione",
@@ -1626,7 +1627,7 @@ PRIV: dict[str, dict] = {
              "ImprovMX Inc. (USA), which forwards them, and Google LLC, which hosts the mailbox "
              "(Gmail). The RSS feeds require no registration and send us no personal data."),
             ("Archive and retention",
-             "The data is refreshed from simap.ch, usually on working days. Older publications are kept as "
+             "The data is refreshed from simap.ch, usually Monday to Saturday. Older publications are kept as "
              "an archive, even once they can no longer be queried through the simap.ch "
              "interface."),
             ("Your rights",
@@ -1767,7 +1768,7 @@ CPV_SHORT = {
         "33": "Matériel médical et médicaments", "34": "Matériel de transport", "35": "Sécurité, police, défense",
         "37": "Musique, sport, jeux et jouets", "38": "Instruments de laboratoire et de précision", "39": "Mobilier et électroménager",
         "41": "Eau", "42": "Machines industrielles", "43": "Engins de chantier et d’exploitation minière", "44": "Matériaux de construction",
-        "45": "Travaux de construction", "48": "Logiciels", "50": "Réparation et entretien",
+        "45": "Travaux de construction", "48": "Logiciels et systèmes d’information", "50": "Réparation et entretien",
         "51": "Installation (hors logiciels)", "55": "Hôtellerie, restauration et commerce de détail", "60": "Transports",
         "63": "Services liés aux transports, agences de voyage", "64": "Poste et télécommunications", "65": "Distribution d’énergie et d’eau",
         "66": "Finance et assurances", "70": "Services immobiliers", "71": "Architecture et ingénierie",
@@ -1784,11 +1785,11 @@ CPV_SHORT = {
         "41": "Acqua", "42": "Macchinari industriali", "43": "Macchine edili e per cave", "44": "Materiali da costruzione",
         "45": "Lavori di costruzione", "48": "Software e sistemi informativi", "50": "Riparazione e manutenzione",
         "51": "Installazione (escluso software)", "55": "Alberghi, ristorazione, commercio", "60": "Trasporti",
-        "63": "Servizi ausiliari ai trasporti", "64": "Poste e telecomunicazioni", "65": "Distribuzione di energia e acqua",
+        "63": "Servizi ausiliari ai trasporti, agenzie di viaggio", "64": "Poste e telecomunicazioni", "65": "Distribuzione di energia e acqua",
         "66": "Finanza e assicurazioni", "70": "Servizi immobiliari", "71": "Architettura e ingegneria",
         "72": "Servizi informatici", "73": "Ricerca e sviluppo", "75": "Amministrazione pubblica e previdenza sociale",
         "76": "Servizi per petrolio e gas", "77": "Agricoltura, selvicoltura, giardinaggio", "79": "Servizi alle imprese",
-        "80": "Istruzione e formazione", "85": "Sanità e assistenza sociale", "90": "Acque reflue, rifiuti, pulizia",
+        "80": "Istruzione e formazione", "85": "Sanità e assistenza sociale", "90": "Acque reflue, rifiuti, pulizia, ambiente",
         "92": "Cultura, sport, tempo libero", "98": "Altri servizi"},
  "en": {"03": "Agricultural and forestry products", "09": "Energy and fuels", "14": "Mining and metals",
         "15": "Food and beverages", "16": "Agricultural machinery", "18": "Clothing and footwear",
@@ -1799,11 +1800,11 @@ CPV_SHORT = {
         "41": "Water", "42": "Industrial machinery", "43": "Construction and mining machinery", "44": "Construction materials",
         "45": "Construction work", "48": "Software and information systems", "50": "Repair and maintenance",
         "51": "Installation (except software)", "55": "Hotels, catering and retail", "60": "Transport services",
-        "63": "Transport support services", "64": "Post and telecommunications", "65": "Energy and water supply",
+        "63": "Transport support services, travel agencies", "64": "Post and telecommunications", "65": "Energy and water supply",
         "66": "Finance and insurance", "70": "Real estate services", "71": "Architecture and engineering",
         "72": "IT services", "73": "Research and development", "75": "Public administration and social security",
         "76": "Oil and gas services", "77": "Agriculture, forestry, gardening", "79": "Business services",
-        "80": "Education and training", "85": "Health and social work", "90": "Sewage, waste, cleaning",
+        "80": "Education and training", "85": "Health and social work", "90": "Sewage, waste, cleaning, environment",
         "92": "Culture, sport, recreation", "98": "Other services"},
 }
 # Company size bands, top to bottom: >=100m, >=10m, >=1m, >=100k, <100k, no attributable
@@ -1894,16 +1895,16 @@ META["canton_desc_short"] = {
 # one open tender: "classés par délai" / "nach Eingabefrist geordnet" said nothing about one
 # item, and the French plural participle disagreed with "1 appel d’offres"
 META["open_sector_desc_one"] = {
-    "de": "{n} in der Branche «{name}» (CPV {code}) aus der ganzen Schweiz (Quelle: simap.ch).",
-    "fr": "{n} en Suisse dans la branche « {name} » (CPV {code}) (source : simap.ch).",
-    "it": "{n} nel ramo «{name}» (CPV {code}) in tutta la Svizzera (fonte: simap.ch).",
-    "en": "{n} across Switzerland in the “{name}” industry (CPV {code}) (source: simap.ch).",
+    "de": "{n} in der Branche «{name}» aus der ganzen Schweiz (CPV {code}), Quelle: simap.ch.",
+    "fr": "{n} en Suisse dans la branche « {name} » (CPV {code}), source : simap.ch.",
+    "it": "{n} nel ramo «{name}» in tutta la Svizzera (CPV {code}), fonte: simap.ch.",
+    "en": "{n} across Switzerland in the “{name}” industry (CPV {code}); source: simap.ch.",
 }
 META["open_canton_desc_one"] = {
     "de": "{n} im Kanton {name}, werktags aktualisiert (Quelle: simap.ch).",
     "fr": "{n} dans le canton {of}, mis à jour les jours ouvrables (source : simap.ch).",
     "it": "{n} nel Canton {name}, aggiornato nei giorni feriali (fonte: simap.ch).",
-    "en": "{n} in the canton of {name}, updated on working days (source: simap.ch).",
+    "en": "{n} in the canton of {name}, updated Monday to Saturday (source: simap.ch).",
 }
 # the note on buyer pages, counted: 72 of 128 German pages had exactly one such award
 META["buyer_joint_note_one"] = {
@@ -2012,7 +2013,7 @@ IDX["own_offer"] = {
 IDX["same_price"] = {
     "de": "Die Publikation nennt für alle {n} Unternehmen denselben Preis.",
     "fr": "La publication indique le même prix pour les {n} entreprises.",
-    "it": "La pubblicazione indica lo stesso prezzo per tutte le {n} imprese.",
+    "it": "La pubblicazione indica lo stesso prezzo per tutte e {n} le imprese.",
     "en": "The publication gives the same price for all {n} companies.",
 }
 # two firms, the most common case: 'für alle 2 Unternehmen' reads wrong (verifier, 08.10.2026)
@@ -2051,7 +2052,7 @@ T["tender_expired"] = {"de": "Eingabefrist abgelaufen", "fr": "Délai de remise 
 META["expired_lead"] = {
     "de": "Die Eingabefrist ist abgelaufen ({when}). Wird der Zuschlag auf simap.ch publiziert, "
           "erscheint er unter dieser Adresse.",
-    "fr": "Le délai de remise a expiré ({when}). Si l’adjudication est publiée sur simap.ch, elle "
+    "fr": "Le délai de remise des offres a expiré ({when}). Si l’adjudication est publiée sur simap.ch, elle "
           "apparaîtra à cette adresse.",
     "it": "Termine d’inoltro scaduto ({when}). Se l’aggiudicazione verrà pubblicata su simap.ch, "
           "comparirà a questo indirizzo.",
@@ -2094,7 +2095,7 @@ META["nf_text"] = {
     "de": "Diese Seite gibt es nicht oder nicht mehr. Ausschreibungen bleiben nach Ablauf der "
           "Eingabefrist noch {days} Tage abrufbar.",
     "fr": "Cette page n’existe pas ou n’existe plus. Les appels d’offres restent consultables "
-          "{days} jours après l’expiration du délai de remise.",
+          "{days} jours après l’expiration du délai de remise des offres.",
     "it": "Questa pagina non esiste o non esiste più. I bandi restano consultabili per {days} "
           "giorni dopo la scadenza del termine d’inoltro.",
     "en": "This page does not exist, or no longer does. Tenders stay online for {days} days after "
@@ -2139,9 +2140,9 @@ META["methodik"] = {"de": "Methodik", "fr": "Méthodologie", "it": "Metodologia"
 # The home's two doors: open tenders (with the ones first published on the day of the build) and
 # the company index. {m}: tenders whose first publication (-01) is dated the build day.
 META["door_new"] = {"de": "{m} neue am {d}", "fr": "{m} nouveaux le {d}",
-                    "it": "{m} nuovi ({d})", "en": "{m} new on {d}"}
+                    "it": "{m} nuovi il {d}", "en": "{m} new on {d}"}
 META["door_new_one"] = {"de": "1 neue am {d}", "fr": "1 nouveau le {d}",
-                        "it": "1 nuovo ({d})", "en": "1 new on {d}"}
+                        "it": "1 nuovo il {d}", "en": "1 new on {d}"}
 META["door_open_sub"] = {
     "de": "Nach Eingabefrist, Kanton und Branche – jede mit dem Link zur amtlichen Publikation.",
     "fr": "Par délai, par canton et par branche – chacun avec le lien vers la publication officielle.",
@@ -2241,7 +2242,7 @@ IDX["similar_note"] = {
     "de": "Zuschläge der Branche «{sector}» im Kanton {name}: die mit dem ähnlichsten CPV-Code "
           "zuerst, bei gleicher Ähnlichkeit die neuesten.",
     "fr": "Adjudications de la branche « {sector} » dans le canton {of} : les codes CPV les plus "
-          "proches d’abord, puis les plus récentes à proximité égale.",
+          "proches d’abord ; à égalité, les plus récentes.",
     "it": "Aggiudicazioni del ramo «{sector}» nel Canton {name}: prima i codici CPV più simili, a "
           "parità di somiglianza le più recenti.",
     "en": "Awards in the “{sector}” industry in the canton of {name}: closest CPV codes first, "
@@ -2258,7 +2259,7 @@ ICS_STEM = {"de": "eingabefrist", "fr": "delai", "it": "scadenza", "en": "deadli
 # visually hidden table captions
 IDX["cap_company_awards"] = {"de": "Zuschläge an {name}, neueste zuerst",
                              "fr": "Adjudications obtenues par {name}, les plus récentes d’abord",
-                             "it": "Aggiudicazioni a {name}, dalla più recente",
+                             "it": "Aggiudicazioni ottenute da {name}, dalla più recente",
                              "en": "Awards to {name}, newest first"}
 
 # The about and methodology page (/xx/ueber/). Facts only, each checked against the generator:
@@ -2287,7 +2288,7 @@ UEBER: dict[str, dict] = {
                 "Plattform für das öffentliche Beschaffungswesen der Schweiz. Deren Nutzungsbedingungen "
                 "erlauben die Weiterverwendung, auch zu gewerblichen Zwecken, sofern die Daten inhaltlich "
                 "unverändert, getrennt von eigenen Auswertungen und mit dem vorgeschriebenen Hinweis "
-                "wiedergegeben werden. Dieser Hinweis steht im Fuss jeder Seite; eigene Auswertungen sind "
+                "wiedergegeben werden. Dieser Hinweis steht in der Fusszeile jeder Seite; eigene Auswertungen sind "
                 "als solche gekennzeichnet.",
                 "Titel und Beschreibungen erscheinen so, wie sie publiziert wurden, in der Sprache der "
                 "Publikation. Sie werden weder übersetzt noch umformuliert.",
@@ -2301,7 +2302,7 @@ UEBER: dict[str, dict] = {
                 "aktualisiert; an einzelnen Tagen später oder erst am Folgetag. Abgerufen werden jeweils die "
                 "Zuschläge des laufenden und des vorangehenden Monats – dort treffen auch nachträgliche "
                 "Berichtigungen ein – sowie die Ausschreibungen der letzten 75 Tage.",
-                "Das Datum im Fuss jeder Seite («{stand}») ist das Datum der neuesten Publikation im "
+                "Das Datum in der Fusszeile jeder Seite («{stand}») ist das Datum der neuesten Publikation im "
                 "Register. Daten vom {date}: {awards} Zuschläge und {open} offene Ausschreibungen.",
             ]),
             ("abdeckung", "Abdeckung", [
@@ -2309,8 +2310,8 @@ UEBER: dict[str, dict] = {
                 "Erfasst sind die Zuschläge, die auf simap.ch nach einem offenen Verfahren, einem selektiven "
                 "Verfahren oder einem Einladungsverfahren publiziert werden, sowie die Ausschreibungen mit noch "
                 "offener Eingabefrist. Freihändige Vergaben, die simap.ch in einzelnen Fällen ebenfalls "
-                "publiziert, sind nicht enthalten. Aufträge, die nicht auf simap.ch publiziert werden müssen – "
-                "etwa unterhalb der Schwellenwerte –, fehlen hier wie auf simap.ch.",
+                "publiziert, sind nicht enthalten. Aufträge, die nicht auf simap.ch publiziert werden – etwa "
+                "freihändige Vergaben unterhalb der Schwellenwerte –, fehlen hier wie dort.",
             ]),
             ("kantone", "Wie Aufträge den Kantonen zugeordnet werden", [
                 "Massgebend ist der Kanton, den die Publikation als Ort der Leistung angibt (die Adresse des "
@@ -2408,8 +2409,8 @@ UEBER: dict[str, dict] = {
                 "Monate schraffiert. Ab {full} enthält das Register die Zuschläge, die die Schnittstelle von "
                 "simap.ch beim Abruf für den jeweiligen Monat geliefert hat; ein Abgleich mit amtlichen "
                 "Gesamtzahlen findet nicht statt.",
-        "incomplete": " {n} Zuschlagspublikationen ({months}) kamen über die Schnittstelle ohne Titel und "
-                      "ohne Zuschlagsempfänger an; sie fehlen in allen Zahlen und Listen.",
+        "incomplete": " Bei {n} Zuschlagspublikationen ({months}) fehlten in den Daten der Schnittstelle Titel und "
+                      "Zuschlagsempfänger; sie sind in keiner Zahl und keiner Liste enthalten.",
         "nocant": "{n} nennen weder einen Ort noch einen Auftraggeber mit Kanton; sie zählen zu keinem "
                   "Kanton, und die Kantonsübersicht führt sie gesondert auf.",
         "nocant_zero": "Zurzeit hat jeder Zuschlag einen Kanton.",
@@ -2421,7 +2422,7 @@ UEBER: dict[str, dict] = {
         "lead": "D’où viennent les données, comment elles sont regroupées et ce qu’elles ne montrent pas.",
         "sections": [
             ("register", "Ce qu’est ce registre", [
-                "Marchés publics suisses classe par entreprise, par adjudicateur, par canton et par branche "
+                "« Marchés publics suisses » classe par entreprise, par adjudicateur, par canton et par branche "
                 "les adjudications et les appels d’offres que la Confédération, les cantons et les communes "
                 "publient sur simap.ch. On peut ainsi savoir qui a remporté quels marchés publics – une "
                 "question à laquelle simap.ch ne répond pas lui-même.",
@@ -2458,10 +2459,10 @@ UEBER: dict[str, dict] = {
                 "Les données commencent en {start}.{ramp}{incomplete}",
                 "Le registre reprend les adjudications publiées sur simap.ch à l’issue d’une procédure "
                 "ouverte, d’une procédure sélective ou d’une procédure sur invitation, ainsi que tous les "
-                "appels d’offres dont le délai de remise court encore. Les adjudications de gré à gré, que "
-                "simap.ch publie aussi dans certains cas, n’y figurent pas. Les marchés qui ne doivent pas être "
-                "publiés sur simap.ch – par exemple en dessous des valeurs seuils – ne figurent ni ici ni sur "
-                "simap.ch.",
+                "appels d’offres dont le délai de remise des offres court encore. Les adjudications de gré à gré, que "
+                "simap.ch publie aussi dans certains cas, n’y figurent pas. Les marchés qui ne sont pas publiés "
+                "sur simap.ch – par exemple les adjudications de gré à gré en dessous des valeurs seuils – ne "
+                "figurent ni ici ni sur simap.ch.",
             ]),
             ("kantone", "Comment les marchés sont attribués aux cantons", [
                 "Ce qui compte est le canton que la publication indique comme lieu d’exécution (l’adresse "
@@ -2486,7 +2487,7 @@ UEBER: dict[str, dict] = {
                 "(« CSD INGENIEURE AG » et « CSD Ingenieure AG », « Bolliger & Co. AG » et « Bolliger + Co. "
                 "AG ») sont considérées comme une seule entreprise ; la graphie la plus fréquente est "
                 "affichée. Les unités portant des noms différents, comme les succursales, restent "
-                "distinctes. Aucune comparaison avec le registre du commerce n’est effectuée.",
+                "distinctes. Aucun rapprochement avec le registre du commerce n’est effectué.",
                 "Une entreprise a sa propre page à partir de {min_c} adjudications, un adjudicateur à partir "
                 "de {min_b} et un domaine (code CPV) à partir de {min_s}. Les adjudicateurs sont eux aussi "
                 "regroupés par leur nom, indépendamment des espaces, des traits d’union, des guillemets et "
@@ -2517,7 +2518,7 @@ UEBER: dict[str, dict] = {
                 "elles ne sont pas présentées ici comme des adjudications.",
                 "Rectifications : lorsqu’un appel d’offres ou une adjudication est rectifié, seule la "
                 "dernière version publiée compte ; les versions antérieures n’apparaissent pas en plus.",
-                "Appels d’offres échus : après l’expiration du délai de remise, la page d’un appel d’offres "
+                "Appels d’offres échus : après l’expiration du délai de remise des offres, la page d’un appel d’offres "
                 "reste consultable pendant {days} jours, avec la mention « {expired} ». Si l’adjudication "
                 "est publiée entre-temps, elle apparaît à la même adresse.",
                 "Les appels d’offres sans délai de remise lisible ne sont pas listés comme étant en cours.",
@@ -2545,7 +2546,7 @@ UEBER: dict[str, dict] = {
                 "siège de l’adjudicateur), « Amount note » signale les prix probablement unitaires "
                 "(probable unit rate).",
                 "Graphiques : chaque graphique indique sa source et renvoie à ses données en CSV.",
-                "Agenda : chaque appel d’offres en cours propose son délai de remise sous forme de fichier "
+                "Agenda : chaque appel d’offres en cours propose son délai de remise des offres sous forme de fichier "
                 "d’agenda (.ics).",
                 "RSS et e-mail : chaque canton et chaque branche a son flux RSS ; l’alerte e-mail envoie "
                 "les nouveaux appels d’offres par canton et par branche, gratuitement et sans compte.",
@@ -2611,9 +2612,8 @@ UEBER: dict[str, dict] = {
                 "Il registro riprende le aggiudicazioni pubblicate su simap.ch al termine di una procedura di "
                 "pubblico concorso, di una procedura selettiva o di una procedura mediante invito, e tutti i "
                 "bandi con il termine d’inoltro ancora aperto. Le aggiudicazioni per incarico diretto, che "
-                "simap.ch pubblica in alcuni casi, non vi figurano. Gli appalti che non devono essere "
-                "pubblicati su simap.ch – per esempio sotto i valori soglia – non figurano né qui né su "
-                "simap.ch.",
+                "simap.ch pubblica in alcuni casi, non vi figurano. Gli appalti non pubblicati su simap.ch – per "
+                "esempio gli incarichi diretti sotto i valori soglia – non figurano né qui né su simap.ch.",
             ]),
             ("kantone", "Come gli appalti vengono attribuiti ai cantoni", [
                 "Conta il cantone che la pubblicazione indica come luogo di esecuzione (l’indirizzo "
@@ -2626,7 +2626,7 @@ UEBER: dict[str, dict] = {
                 "nazionali in Turgovia o a San Gallo che la filiale USTRA di Winterthur mette a concorso "
                 "senza indicare il luogo compaiono sotto Zurigo. Altri committenti indicano il proprio "
                 "indirizzo come luogo di esecuzione; figura allora il cantone della loro sede, anche se i "
-                "lavori si svolgono altrove – dai dati non è possibile accorgersene.",
+                "lavori si svolgono altrove – i dati non permettono di rilevarlo.",
                 "{nocant} La somma di tutti i cantoni e di queste aggiudicazioni dà il numero totale della "
                 "pagina iniziale. L’avviso e-mail usa la stessa attribuzione: un bando viene inviato per "
                 "ciascuno dei suoi cantoni.",
@@ -2636,7 +2636,7 @@ UEBER: dict[str, dict] = {
                 "differiscono solo per maiuscole, dieresi, accenti o punteggiatura («CSD INGENIEURE AG» e "
                 "«CSD Ingenieure AG», «Bolliger & Co. AG» e «Bolliger + Co. AG») sono considerate la stessa "
                 "impresa; viene mostrata la grafia più frequente. Le unità con nomi diversi, per esempio le "
-                "succursali, restano separate. Non avviene alcun confronto con il registro di commercio.",
+                "succursali, restano separate. Non viene effettuato alcun confronto con il registro di commercio.",
                 "Un’impresa ha una pagina propria a partire da {min_c} aggiudicazioni, un committente da "
                 "{min_b} e una categoria (codice CPV) da {min_s}. Anche i committenti sono raggruppati per "
                 "nome, indipendentemente da spazi, trattini, virgolette e parentesi.",
@@ -2644,8 +2644,8 @@ UEBER: dict[str, dict] = {
             ]),
             ("betraege", "Importi, lotti e totali", [
                 "Gli importi sono riportati come sono stati pubblicati. La pagina di un’aggiudicazione "
-                "indica l’importo esatto; gli elenchi mostrano un importo arrotondato, quello esatto "
-                "passando il mouse e per i lettori di schermo.",
+                "indica l’importo esatto; gli elenchi mostrano un importo arrotondato e, al passaggio del mouse e "
+                "nei lettori di schermo, quello esatto.",
                 "I totali comprendono solo le aggiudicazioni in franchi a una sola impresa. Per "
                 "un’aggiudicazione a più imprese la pubblicazione indica un prezzo per impresa: questi "
                 "prezzi sono mostrati singolarmente, ma non vengono sommati né attribuiti a un appalto "
@@ -2707,8 +2707,8 @@ UEBER: dict[str, dict] = {
         "csv_pages_nocomp": "Le pagine dei cantoni e dei committenti",
         "ramp": " Tra {a} e {b} è stata rilevata solo una parte delle aggiudicazioni; nei grafici mensili "
                 "questi mesi sono tratteggiati. Da {full} il registro contiene le aggiudicazioni che "
-                "l’interfaccia di simap.ch ha fornito per ciascun mese al momento del rilevamento; non avviene "
-                "alcun confronto con totali ufficiali.",
+                "l’interfaccia di simap.ch ha fornito per ciascun mese al momento del rilevamento; non viene "
+                "effettuato alcun confronto con i totali ufficiali.",
         "incomplete": " {n} pubblicazioni di aggiudicazione di {months} sono arrivate dall’interfaccia senza "
                       "titolo né aggiudicatario; mancano da tutti i numeri e da tutti gli elenchi.",
         "nocant": "{n} non indicano né un luogo né un committente con cantone; non contano in alcun "
@@ -2738,13 +2738,13 @@ UEBER: dict[str, dict] = {
                 "is in the footer of every page; our own analysis is marked as such.",
                 "Titles and descriptions appear as they were published, in the language of the publication. "
                 "They are neither translated nor reworded.",
-                "Licence: the register grants no licence of its own on the data; their reuse is governed by "
+                "Licence: the register grants no licence of its own for the data; its reuse is governed by "
                 "simap.ch’s terms of use ({terms}). The licence field in this page’s structured data "
                 "(schema.org/Dataset) points to those terms.",
             ]),
             ("aktualisierung", "Updates", [
                 "simap.ch releases each day’s publications for redistribution from 8 am. The register "
-                "usually fetches them every working day after that and is mostly up to date by late morning; "
+                "usually fetches them every day from Monday to Saturday after that and is mostly up to date by late morning; "
                 "on some days later, or the next day. Each run fetches the awards of the current and the "
                 "previous month – where corrections also arrive – and the tenders of the last 75 days.",
                 "The date in the footer of every page (“{stand}”) is the date of the newest publication in "
@@ -2754,8 +2754,8 @@ UEBER: dict[str, dict] = {
                 "The archive begins in {start}.{ramp}{incomplete}",
                 "The register covers the awards published on simap.ch after an open, a selective or an "
                 "invitation procedure, and the tenders whose submission deadline is still open. Direct awards, "
-                "which simap.ch also publishes in some cases, are not included. Contracts that do not have to "
-                "be published on simap.ch – below the thresholds, for example – are missing here, just as they "
+                "which simap.ch also publishes in some cases, are not included. Contracts that are not published "
+                "on simap.ch – direct awards below the thresholds, for example – are missing here, just as they "
                 "are on simap.ch.",
             ]),
             ("kantone", "How contracts are assigned to cantons", [
@@ -2900,11 +2900,11 @@ T["divisions_n"] = {"de": "Branchen", "fr": "branches", "it": "rami", "en": "ind
 T["fb_note"] = {"de": "Ort nicht angegeben – Kanton des Auftraggebers",
                 "fr": "Lieu non indiqué – canton de l’adjudicateur",
                 "it": "Luogo non indicato – cantone del committente",
-                "en": "Place not given – canton of the contracting authority"}
+                "en": "Location not given – canton of the contracting authority"}
 T["multi_cantons"] = {"de": "mehrere Kantone", "fr": "plusieurs cantons", "it": "più cantoni",
                       "en": "several cantons"}
 T["lot_cantons"] = {"de": "nach den Losen", "fr": "selon les lots", "it": "secondo i lotti", "en": "from the lots"}
-T["no_canton"] = {"de": "Ohne Kanton", "fr": "Sans canton", "it": "Senza cantone", "en": "Without a canton"}
+T["no_canton"] = {"de": "Ohne Kanton", "fr": "Sans canton", "it": "Senza cantone", "en": "No canton"}
 # An award amount under CHF 1'000: almost always a unit rate (per hour, item, km), never in a sum
 T["rate_flag"] = {"de": "vermutlich Einheitspreis", "fr": "probablement un prix unitaire",
                   "it": "probabilmente un prezzo unitario", "en": "probably a unit rate"}
@@ -3105,8 +3105,8 @@ META["abo_when"] = {
           "sélection ont paru, le plus souvent dans la matinée ; les autres jours, aucun.",
     "it": "Le e-mail dell’avviso arrivano nei giorni feriali in cui sono usciti nuovi bandi corrispondenti alla "
           "sua scelta, per lo più in mattinata; negli altri giorni nessuna.",
-    "en": "Alert emails arrive on working days when new tenders matching your selection have appeared, usually "
-          "in the morning; on other days, none is sent.",
+    "en": "Alert emails arrive on days when new tenders matching your selection have appeared (Monday to "
+          "Saturday), usually in the morning; on other days, none is sent.",
 }
 META["abo_spam"] = {
     "de": "Keine E-Mail erhalten? Bitte prüfen Sie Ihren Spam-Ordner.",
@@ -3147,13 +3147,13 @@ META["search_desc"] = {
 }
 META["search_lead"] = {
     "de": "Unternehmen, Auftraggeber, offene Ausschreibungen, Branchen und Kantone – nach Name oder Thema, "
-          "in jeder Landessprache: «Reinigung» findet auch «nettoyage».",
+          "auf Deutsch, Französisch, Italienisch oder Englisch: «Reinigung» findet auch «nettoyage».",
     "fr": "Entreprises, adjudicateurs, appels d’offres en cours, branches et cantons – par nom ou par thème, "
-          "dans chaque langue nationale : « nettoyage » trouve aussi « Reinigung ».",
-    "it": "Imprese, committenti, bandi aperti, rami e cantoni – per nome o per tema, in ogni lingua "
-          "nazionale: «pulizia» trova anche «Reinigung».",
+          "en français, en allemand, en italien ou en anglais : « nettoyage » trouve aussi « Reinigung ».",
+    "it": "Imprese, committenti, bandi aperti, rami e cantoni – per nome o per tema, in italiano, tedesco, "
+          "francese o inglese: «pulizia» trova anche «Reinigung».",
     "en": "Companies, contracting authorities, open tenders, industries and cantons – by name or by topic, "
-          "in any national language: “cleaning” also finds “Reinigung”.",
+          "in English, German, French or Italian: “cleaning” also finds “Reinigung” and “nettoyage”.",
 }
 META["search_label"] = {"de": "Suchbegriff", "fr": "Terme recherché", "it": "Termine di ricerca",
                         "en": "Search term"}
@@ -3231,7 +3231,7 @@ META["all_list_lead"] = {
     "fr": "Les {n} appels d’offres en cours de cette liste sur une seule page, le délai le plus proche "
           "en premier.",
     "it": "Tutti i {n} bandi aperti di questo elenco su una sola pagina, la scadenza più vicina per prima.",
-    "en": "All {n} open tenders of this list on one page, the nearest deadline first.",
+    "en": "All {n} open tenders in this list on one page, nearest deadline first.",
 }
 META["all_list_back"] = {"de": "Zur kurzen Liste", "fr": "Retour à la liste courte", "it": "Torna all’elenco breve",
                          "en": "Back to the short list"}
@@ -3296,10 +3296,12 @@ JS: dict[str, dict[str, str]] = {
     "new_yday_1": {"de": "1 neue seit gestern", "fr": "1 nouveau depuis hier", "it": "1 nuovo da ieri",
                    "en": "1 new since yesterday"},
     "top": {"de": "Nach oben", "fr": "Haut de page", "it": "Torna su", "en": "Back to top"},
-    "ph": {"de": "Unternehmen, Auftraggeber, Ausschreibung, Branche …",
-           "fr": "Entreprise, adjudicateur, appel d’offres, branche …",
-           "it": "Impresa, committente, bando, ramo …",
-           "en": "Company, contracting authority, tender, industry …"},
+    # fix round 2: short enough for the field (the longer list was cut mid-word at 1280 and 390 px); '|' separates
+    # shorter forms, and /stand.js shows the first that fits the field as the reader sees it
+    "ph": {"de": "Firma, Auftraggeber, Thema\u00a0…|Firma, Auftraggeber\u00a0…|Firma, Thema\u00a0…",
+           "fr": "Entreprise, adjudicateur, thème…|Entreprise, adjudicateur…|Entreprise, thème…",
+           "it": "Impresa, committente, tema…|Impresa, committente…|Impresa, tema…",
+           "en": "Company, authority, topic…|Company, authority…|Company, topic…"},
     # the search (suche.js), its groups in this order
     "g_t": {"de": "Offene Ausschreibungen", "fr": "Appels d’offres en cours", "it": "Bandi aperti",
             "en": "Open tenders"},
@@ -3337,7 +3339,7 @@ JS: dict[str, dict[str, str]] = {
     "k_div": {"de": "Branche", "fr": "Branche", "it": "Ramo", "en": "Industry"},
     "k_sec": {"de": "Bereich", "fr": "Domaine", "it": "Categoria", "en": "Category"},
     "until": {"de": "bis {d}", "fr": "jusqu’au {d}", "it": "entro il {d}", "en": "due {d}"},
-    "loading": {"de": "Wird geladen …", "fr": "Chargement …", "it": "Caricamento …", "en": "Loading …"},
+    "loading": {"de": "Wird geladen\u00a0…", "fr": "Chargement …", "it": "Caricamento …", "en": "Loading …"},
     "failed": {"de": "Die Daten konnten nicht geladen werden.", "fr": "Les données n’ont pas pu être chargées.",
                "it": "Non è stato possibile caricare i dati.", "en": "The data could not be loaded."},
     # the filters of the tender lists (liste.js)
@@ -3410,12 +3412,10 @@ META["map_eyebrow"] = {"de": "01 · Karte · Daten vom {d}", "fr": "01 · Carte 
                        "it": "01 · Mappa · stato dei dati: {d}", "en": "01 · Map · data as of {d}"}
 META["map_legend"] = {"de": "Je heller ein Kanton, desto mehr offene Ausschreibungen.",
                       "fr": "Plus un canton est clair, plus il compte d’appels d’offres en cours.",
-                      "it": "Più un cantone è chiaro, più bandi aperti conta.",
+                      "it": "Più un cantone è chiaro, più bandi aperti ha.",
                       "en": "The brighter a canton, the more open tenders it has."}
-META["map_hint"] = {"de": "Zeigen Sie auf einen Kanton oder wählen Sie ihn in der Liste.",
-                    "fr": "Survolez un canton ou choisissez-le dans la liste.",
-                    "it": "Passi il puntatore su un cantone o lo scelga nell’elenco.",
-                    "en": "Point at a canton or pick it from the list."}
+META["map_hint"] = {"de": "Oder wählen Sie den Kanton in der Liste.", "fr": "Ou choisissez-le dans la liste.",
+                    "it": "Oppure lo scelga nell’elenco.", "en": "Or pick it from the list."}
 META["map_src"] = {"de": "Kartengrundlage: BFS, swisstopo (swiss-maps © Interactive Things)",
                    "fr": "Fond de carte : OFS, swisstopo (swiss-maps © Interactive Things)",
                    "it": "Base cartografica: UST, swisstopo (swiss-maps © Interactive Things)",
@@ -3517,7 +3517,8 @@ META["abo_step2"] = {
     "fr": "Chaque jour ouvrable où de nouveaux appels d’offres correspondent à votre sélection, vous recevez un "
           "e-mail.",
     "it": "In ogni giorno feriale in cui escono nuovi bandi corrispondenti alla sua scelta riceverà un’e-mail.",
-    "en": "On every working day when new tenders matching your selection appear, you get an email.",
+    "en": "On every day from Monday to Saturday when new tenders matching your selection appear, you get an "
+          "email.",
 }
 META["abo_step3"] = {"de": "Abmelden können Sie sich jederzeit über den Link am Ende jeder E-Mail.",
                      "fr": "Vous pouvez vous désabonner à tout moment par le lien au bas de chaque e-mail.",
@@ -3643,6 +3644,83 @@ JS["bf_none"] = {"de": "Keine Branche passt zu «{q}».", "fr": "Aucune branche 
                  "it": "Nessun ramo corrisponde a «{q}».", "en": "No industry matches “{q}”."}
 
 
+# ---------------------------------------------------------------- fix round 2 (20.10.2026)
+# The copy audit of 15.10 (audit3/copy/fixes.md): the home's alarm band said the same thing three times and printed
+# its number twice; an expired tender's alert box made its promise twice; a company page without a CHF sum said
+# nothing about why; small counts at the start of a sentence, and the thresholds on the Über page, in words.
+META["alarm_sub"] = {
+    "de": "Kantone und Branchen wählen – die passenden neuen Ausschreibungen kommen meist am Vormittag per "
+          "E-Mail. Ohne Konto.",
+    "fr": "Choisissez vos cantons et vos branches : les nouveaux appels d’offres correspondants arrivent par "
+          "e-mail, le plus souvent dans la matinée. Sans compte.",
+    "it": "Scelga cantoni e rami: i nuovi bandi corrispondenti arrivano via e-mail, per lo più in mattinata. "
+          "Senza account.",
+    "en": "Choose your cantons and industries – matching new tenders arrive by email, usually in the morning. "
+          "No account needed.",
+}
+# under the big number of the alarm band: the number is not said twice
+META["alarm_since"] = {"de": "neue Ausschreibungen am {d}", "fr": "nouveaux appels d’offres le {d}",
+                       "it": "nuovi bandi il {d}", "en": "new tenders on {d}"}
+META["alarm_since_one"] = {"de": "neue Ausschreibung am {d}", "fr": "nouvel appel d’offres le {d}",
+                           "it": "nuovo bando il {d}", "en": "new tender on {d}"}
+# an expired tender's alert box: after 'Frist verpasst? …' only what the alert would cover
+META["alert_scope_div"] = {"de": "Branche «{sector}»", "fr": "Branche « {sector} »", "it": "Ramo «{sector}»",
+                           "en": "“{sector}” industry"}
+META["alert_scope_alldiv"] = {"de": "Alle Branchen", "fr": "Toutes les branches", "it": "Tutti i rami",
+                              "en": "All industries"}
+META["alert_scope_k"] = {"de": "Kanton {name}", "fr": "canton {of}", "it": "Canton {name}", "en": "canton of {name}"}
+META["alert_scope_ch"] = {"de": "ganze Schweiz", "fr": "toute la Suisse", "it": "tutta la Svizzera",
+                          "en": "all of Switzerland"}
+# a company page whose awards give no CHF sum (all unit rates, awards to several firms …): the tile says why
+IDX["nosum"] = {"de": "Keine Summe in CHF: {why}.", "fr": "Pas de total en CHF : {why}.",
+                "it": "Nessun totale in CHF: {why}.", "en": "No CHF total: {why}."}
+IDX["nosum_rates"] = {"de": "{k} vermutliche Einheitspreise", "fr": "{k} prix probablement unitaires",
+                      "it": "{k} probabili prezzi unitari", "en": "{k} probable unit rates"}
+IDX["nosum_rates_one"] = {"de": "ein vermutlicher Einheitspreis", "fr": "un prix probablement unitaire",
+                          "it": "un probabile prezzo unitario", "en": "one probable unit rate"}
+IDX["nosum_joint"] = {"de": "{k} Zuschläge an mehrere Unternehmen", "fr": "{k} adjudications à plusieurs entreprises",
+                      "it": "{k} aggiudicazioni a più imprese", "en": "{k} awards to several companies"}
+IDX["nosum_joint_one"] = {"de": "ein Zuschlag an mehrere Unternehmen", "fr": "une adjudication à plusieurs entreprises",
+                          "it": "un’aggiudicazione a più imprese", "en": "one award to several companies"}
+IDX["nosum_fx"] = {"de": "{k} Beträge in Fremdwährung", "fr": "{k} montants en devise étrangère",
+                   "it": "{k} importi in valuta estera", "en": "{k} amounts in a foreign currency"}
+IDX["nosum_fx_one"] = {"de": "ein Betrag in Fremdwährung", "fr": "un montant en devise étrangère",
+                       "it": "un importo in valuta estera", "en": "one amount in a foreign currency"}
+IDX["nosum_none"] = {"de": "{k} Zuschläge ohne publizierten Betrag", "fr": "{k} adjudications sans montant publié",
+                     "it": "{k} aggiudicazioni senza importo pubblicato", "en": "{k} awards without a published amount"}
+IDX["nosum_none_one"] = {"de": "ein Zuschlag ohne publizierten Betrag", "fr": "une adjudication sans montant publié",
+                         "it": "un’aggiudicazione senza importo pubblicato", "en": "one award without a published amount"}
+AND = {"de": " und ", "fr": " et ", "it": " e ", "en": " and "}
+# the canton overview's awards without a canton, one of them
+IDX["nocant_lead_one"] = {
+    "de": "Ein Zuschlag nennt weder einen Ort noch einen Auftraggeber mit Kanton. Alle Kantone zusammen und dieser "
+          "Zuschlag ergeben die {total} der Startseite.",
+    "fr": "Une adjudication n’indique ni lieu ni adjudicateur avec canton. Avec elle, la somme de tous les cantons "
+          "correspond aux {total} de la page d’accueil.",
+    "it": "Un’aggiudicazione non indica né un luogo né un committente con cantone. Sommando tutti i cantoni e questa "
+          "aggiudicazione si ottengono le {total} della pagina iniziale.",
+    "en": "One award names neither a place nor a contracting authority with a canton. All cantons together and this "
+          "award make up the {total} on the home page.",
+}
+for _l, _x in (("de", "Ein Zuschlag nennt weder einen Ort noch einen Auftraggeber mit Kanton; er zählt zu keinem Kanton, "
+                      "und die Kantonsübersicht führt ihn gesondert auf."),
+               ("fr", "Une adjudication n’indique ni lieu ni adjudicateur avec canton ; elle ne compte dans aucun canton, "
+                      "et l’aperçu des cantons la présente à part."),
+               ("it", "Un’aggiudicazione non indica né un luogo né un committente con cantone; non conta in alcun "
+                      "cantone, e la panoramica dei cantoni la elenca a parte."),
+               ("en", "One award names neither a place nor a contracting authority with a canton; it counts in no "
+                      "canton, and the canton overview lists it separately.")):
+    UEBER[_l]["nocant_one"] = _x
+# small numbers in words (a count that opens a sentence, the thresholds on the Über page; British house style
+# spells out numbers under ten): genera.spelled()
+NUM_WORDS = {
+    "de": ("null", "ein", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn", "elf", "zwölf"),
+    "fr": ("zéro", "un", "deux", "trois", "quatre", "cinq", "six", "sept", "huit", "neuf", "dix", "onze", "douze"),
+    "it": ("zero", "uno", "due", "tre", "quattro", "cinque", "sei", "sette", "otto", "nove", "dieci", "undici", "dodici"),
+    "en": ("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"),
+}
+
+
 # ---------------------------------------------------------------- typography
 # One rule set per language, applied once at import to the site's own templates and never
 # to simap data. Strings above are written with plain spaces and straight apostrophes;
@@ -3688,7 +3766,7 @@ for _doc in (IMP, PRIV):
         _v["paras"] = [(_typo(h, _l), _typo(t, _l)) for h, t in _v["paras"]]
 for _l, _v in UEBER.items():
     for _f in ("title", "h1", "lead", "csv_pages", "csv_pages_nocomp", "ramp", "alert_link", "incomplete",
-               "nocant", "nocant_zero"):
+               "nocant", "nocant_zero", "nocant_one"):
         _v[_f] = _typo(_v[_f], _l)
     _v["sections"] = [(_id, _typo(h, _l), [[_typo(x, _l) for x in blk] if isinstance(blk, list)
                                            else _typo(blk, _l) for blk in blocks])

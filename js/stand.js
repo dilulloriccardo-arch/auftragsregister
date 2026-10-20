@@ -230,7 +230,7 @@
     [].forEach.call(t.querySelectorAll('th'), function (c) { c.setAttribute('role', c.closest('thead') ? 'columnheader' : 'rowheader'); });
     [].forEach.call(t.querySelectorAll('td'), function (c) { c.setAttribute('role', 'cell'); });
   }
-  [].forEach.call(d.querySelectorAll('table.ls'), roles);
+  [].forEach.call(d.querySelectorAll('table.ls,table.top'), roles);
 
   // on a phone a long table shows its first 25 rows and 'Alle N anzeigen' (fix round 1); more: what the button
   // does instead of showing the rows already there (liste.js: the whole list)
@@ -300,15 +300,32 @@
     });
   });
 
-  // the search fields: the search script at the first focus or keystroke
+  // the search fields: the search script at the first focus or keystroke; the placeholder's longest form that fits the
+  // field as the reader sees it (fix round 2: 'Unternehmen, Auftraggeber, Ausschre' was cut at 1280 and 390 px)
+  var phs = [], cvx = null;
+  function fitph() {
+    var o = L.ph.split('|');
+    cvx = cvx || d.createElement('canvas').getContext('2d');
+    phs.forEach(function (i) {
+      var cs = getComputedStyle(i), w = i.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+      cvx.font = cs.fontStyle + ' ' + cs.fontWeight + ' ' + cs.fontSize + ' ' + cs.fontFamily;
+      for (var k = 0; k < o.length; k++) if (k === o.length - 1 || cvx.measureText(o[k]).width <= w) { i.placeholder = o[k]; break; }
+    });
+  }
   [].forEach.call(d.querySelectorAll('form[role=search]'), function (f) {
     var i = f.querySelector('input[name=q]');
     if (!i) return;
     i.type = 'search'; i.setAttribute('autocomplete', 'off'); i.setAttribute('spellcheck', 'false');
-    if (!i.placeholder) i.placeholder = L.ph;
+    if (!i.placeholder) phs.push(i);
     function go() { load('suche'); }
     i.addEventListener('focus', go); i.addEventListener('input', go);
   });
+  if (phs.length) {
+    fitph();
+    if (d.fonts && d.fonts.ready) d.fonts.ready.then(fitph);
+    var phq = 0;
+    addEventListener('resize', function () { if (!phq) phq = requestAnimationFrame(function () { phq = 0; fitph(); }); });
+  }
 
   // 'Nach oben' on a page longer than three screens
   var tp = null, tq = 0;

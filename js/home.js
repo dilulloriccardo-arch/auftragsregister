@@ -11,7 +11,10 @@
      lit by rank as the pinned stage scrolls (or on a timer), a reticle and a read-out under the cursor, the
      canton list as the keyboard's path to the same read-out; a click on a canton opens its tenders;
    - the chequered seam where the brass alarm band ends (a decision falls).
-   Its words are those of the page's language (__L__, written by genera.py). */
+   Its words are those of the page's language (__L__, written by genera.py).
+   Fix round 2: the reveal starts as soon as a block is a tenth into the screen, the horizon moves with the pillars,
+   the seam continues the band's own gradient, the map shows a pointer over a canton and keeps its read-out while a
+   canton is hovered or focused. */
 (function () {
   "use strict";
   var A = window.AR; if (!A || A.home) return; A.home = 1;
@@ -128,11 +131,15 @@
     });
   }
 
-  /* blocks rise into place, only those that start below the fold (data-up: stand.js marks its deadlines data-r) */
+  /* blocks rise into place, only those that start below the fold (data-up: stand.js marks its deadlines data-r).
+     Fix round 2: from the moment their top is a tenth of the screen above its bottom edge (threshold 0; the margin
+     counts the 1.625rem they rise from), not once 12 % of a tall block is in view: a band of 270-450 px stayed black */
+  var LIFT = 1.625 * (parseFloat(getComputedStyle(H).fontSize) || 16);
   function rise(el) {
     if (RM || !below(el)) return;
     el.classList.add("up0");
-    var o = io(el, function (v) { if (v) { el.classList.remove("up0"); if (o) o.disconnect(); } }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+    var m = Math.max(0, Math.round((W.innerHeight || 800) * 0.1 - LIFT));
+    var o = io(el, function (v) { if (v) { el.classList.remove("up0"); if (o) o.disconnect(); } }, { threshold: 0, rootMargin: "0px 0px -" + m + "px 0px" });
   }
 
   /* the hero: glow under the cursor, a soft parallax of its layers; its recede under the next band */
@@ -190,8 +197,11 @@
     h = Math.imul(h ^ (h >>> 13), 1274126177);
     return ((h ^ (h >>> 16)) >>> 0) / 4294967295;
   }
-  function seam(cv) {
-    var ctx = cv.getContext("2d"), stops = ["#b78f43", "#d9b867", "#f3dc9a", "#d6b262", "#c09848"], acc = "#fff6dc", cell = 24, last = -1, q = 0, live = false;
+  /* fix round 2: its solid rows and its cells are the alarm band's own gradient (100deg, its five stops), laid over the
+     band's box and continued below it; the seam had its own, horizontal one, a colour step at the joint */
+  function seam(cv, al) {
+    var ctx = cv.getContext("2d"), stops = [[0, "#b78f43"], [0.3, "#d9b867"], [0.52, "#f3dc9a"], [0.74, "#d6b262"], [1, "#c09848"]],
+      acc = "#fff6dc", cell = 24, last = -1, q = 0, live = false;
     function draw(prog) {
       var w = cv.clientWidth, h = cv.clientHeight, dpr = Math.min(2, W.devicePixelRatio || 1);
       if (!w || !h) return;
@@ -200,8 +210,12 @@
       if (Math.abs(lift - last) < 0.5) return;
       last = lift;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, w, h);
-      var fill = ctx.createLinearGradient(0, 0, w, 0);
-      stops.forEach(function (c, i) { fill.addColorStop(i / (stops.length - 1), c); });
+      // CSS linear-gradient(100deg) over the band (w x ah, its bottom edge at y 0): the line through its centre, as long as
+      // the box's projection on it
+      var ah = al.offsetHeight || 0, a = 100 * Math.PI / 180, dx = Math.sin(a), dy = -Math.cos(a),
+        len = Math.abs(w * dx) + Math.abs(ah * dy), cx = w / 2, cy = -ah / 2;
+      var fill = ctx.createLinearGradient(cx - dx * len / 2, cy - dy * len / 2, cx + dx * len / 2, cy + dy * len / 2);
+      stops.forEach(function (s) { fill.addColorStop(s[0], s[1]); });
       var rows = Math.ceil(h / cell) + 1, cols = Math.ceil(w / cell), solid = Math.round(rows * 0.16);
       ctx.fillStyle = fill; ctx.fillRect(0, 0, w, solid * cell - sub);
       for (var r = solid; r < rows; r++) {
@@ -254,6 +268,9 @@
     ranks();
     var lit = new Float32Array(N), act = [], inAct = new Uint8Array(N), ign = 26, hov = -1, P = 0, Wd = 0, Ht = 0, dpr = 1;
     var px = -1, py = -1, lx = 0, ly = 0, lt = 0, inside = false, arm = new Spring(ROW, 0), stop = null, settle = 0;
+    // fix round 2: the canton under the pointer on the map (mk), under the pointer in the list (lk), focused in the list
+    // (fk); the read-out shows the first of them, and the cantons lighting up leave it alone
+    var mk = -1, lk = -1, fk = -1;
     var links = [].slice.call(sec.querySelectorAll(".kl a[data-k]"));
     var rk = ro.querySelector(".rk"), nm = ro.querySelector(".nm"), vl = ro.querySelector(".vl b"), cum = ro.querySelector(".cum"), bar = ro.querySelector(".bar i");
     var r0 = [rk.textContent, nm.textContent, vl.textContent, cum.textContent];
@@ -346,12 +363,18 @@
         tip.style.transform = "translate(" + Math.max(0, lx2).toFixed(1) + "px," + Math.max(0, ly2).toFixed(1) + "px)";
       }
     }
+    function held() {
+      var ci = lk >= 0 ? lk : fk;
+      if (ci >= 0) hover(ci, (K[ci].ax + 0.5) * P, (K[ci].ay + 0.5) * P); else hover(-1);
+    }
     function move(x, y, now) {
       var sp = Math.hypot(x - lx, y - ly) / Math.max(8, now - lt);
       lx = x; ly = y; lt = now; px = x; py = y; inside = true;
       arm.t = sp > 0.9 ? 0.12 : 1;
       clearTimeout(settle); settle = setTimeout(function () { arm.t = 1; run(); }, 110);
-      hover(at(x, y), x, y);
+      mk = at(x, y);
+      cv.style.cursor = mk >= 0 ? "pointer" : "";
+      if (mk >= 0) hover(mk, x, y); else held();
       run();
     }
     if (!RM) {
@@ -359,7 +382,7 @@
         if (e.pointerType !== "mouse" && !FINE) return;
         var r = cv.getBoundingClientRect(); move(e.clientX - r.left, e.clientY - r.top, performance.now());
       }, { passive: true });
-      cv.addEventListener("pointerleave", function () { inside = false; arm.t = 0; hover(-1); run(); });
+      cv.addEventListener("pointerleave", function () { inside = false; arm.t = 0; mk = -1; cv.style.cursor = ""; held(); run(); });
     }
     cv.addEventListener("pointerdown", function (e) {
       var r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top, ci = at(x, y);
@@ -369,9 +392,10 @@
     links.forEach(function (a) {
       var ci = M.order.indexOf(a.getAttribute("data-k"));
       if (ci < 0) return;
-      function on() { hover(ci, (K[ci].ax + 0.5) * P, (K[ci].ay + 0.5) * P); }
-      a.addEventListener("mouseenter", on); a.addEventListener("focus", on);
-      a.addEventListener("mouseleave", function () { hover(-1); }); a.addEventListener("blur", function () { hover(-1); });
+      a.addEventListener("mouseenter", function () { lk = ci; if (mk < 0) held(); });
+      a.addEventListener("focus", function () { fk = ci; if (mk < 0) held(); });
+      a.addEventListener("mouseleave", function () { lk = -1; if (mk < 0) held(); });
+      a.addEventListener("blur", function () { fk = -1; if (mk < 0) held(); });
     });
     /* the cantons light up in rank order: with the scroll on a pinned stage, else on a timer */
     var q = 0;
@@ -394,7 +418,7 @@
         ign = 0; paintBase(); draw();
         once(box, 0, function () {
           var t0 = -1;
-          tick(function (dt, now) { if (t0 < 0) t0 = now; var n = Math.min(26, Math.floor((now - t0) / 95) + 1); if (n !== ign) { ign = n; paintBase(); draw(); readout(-1); } return n < 26; });
+          tick(function (dt, now) { if (t0 < 0) t0 = now; var n = Math.min(26, Math.floor((now - t0) / 95) + 1); if (n !== ign) { ign = n; paintBase(); draw(); if (hov < 0) readout(-1); } return n < 26; });
         });
       }
     }
@@ -415,5 +439,5 @@
   var h = D.querySelector(".hero");
   hero(h); stack(h, h && h.nextElementSibling);
   var al = D.querySelector(".alarm"), nx = al && al.nextElementSibling;
-  if (nx && W.HTMLCanvasElement) { var cv = D.createElement("canvas"); cv.className = "seam"; cv.setAttribute("aria-hidden", "true"); nx.insertBefore(cv, nx.firstChild); seam(cv); }
+  if (nx && W.HTMLCanvasElement) { var cv = D.createElement("canvas"); cv.className = "seam"; cv.setAttribute("aria-hidden", "true"); nx.insertBefore(cv, nx.firstChild); seam(cv, al); }
 })();

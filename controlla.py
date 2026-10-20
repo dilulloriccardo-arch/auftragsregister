@@ -514,6 +514,8 @@ _HEADING = re.compile(r"<h([1-6])\b")
 _ALERT = re.compile(r'href="([^"]*/ausschreibungen/abo/\?[^"]*)"')
 _FILE_LINK = re.compile(r'<a [^>]*?href="(/[^"#?]*\.(?:ics|csv))"([^>]*)>')
 _TH_NOSCOPE = re.compile(r"<th(?![^>]*\bscope=)(?=[\s>])")
+_TABLE_NAME = re.compile(r"<table\b([^>]*)>(\s*<caption)?")
+_REC_H1 = re.compile(r'<h1 class="rec([^"]*)"[^>]*>(.*?)</h1>', re.S)
 _CANTONS = {"AG", "AI", "AR", "BE", "BL", "BS", "FR", "GE", "GL", "GR", "JU", "LU", "NE", "NW", "OW", "SG",
             "SH", "SO", "SZ", "TG", "TI", "UR", "VD", "VS", "ZG", "ZH"}
 
@@ -606,9 +608,13 @@ class Structure:
                 if b > a + 1:
                     self.err("titoli: salto di livello", here, f"h{a} -> h{b}")
                     break
-        # tables: a caption each, and every header cell with its scope
-        if html.count("<table") != html.count("<caption"):
-            self.err("tabelle senza didascalia", here)
+        # tables: a caption each, or the visible heading that names them (aria-labelledby, fix round 2), and every
+        # header cell with its scope
+        for attrs, capt in _TABLE_NAME.findall(html):
+            ref = re.search(r'aria-labelledby="([^"]+)"', attrs)
+            if not capt and not (ref and all(f'id="{x}"' in html for x in ref.group(1).split())):
+                self.err("tabelle senza didascalia", here)
+                break
         if _TH_NOSCOPE.search(html):
             self.err("celle d'intestazione senza scope", here)
         # the prefilled alert links: only canton codes and CPV divisions the form can name
@@ -1168,6 +1174,9 @@ def main() -> int:
     # fix round 1: simap.ch in the page's language, the total's note, the company pages named after a person
     simap_bad, note_bad, person_pages, email_bad = [], [], {}, []
     joint_n = sum(1 for a in awards if len(G.winners(a)) > 1)
+    # fix round 2: one gold button (the flat 'tag on' chip is gone), the A–Z component on the Bereich and canton
+    # indexes, an official title over 110 characters a size smaller
+    gold_bad, az_bad, lt_bad = [], [], []
 
     for f in OUT.rglob("index.html"):
         html = f.read_text(encoding="utf-8")
@@ -1212,6 +1221,13 @@ def main() -> int:
         x = term_errors(here, html)
         if x:
             term_bad.append((here, x))
+        if 'class="tag on"' in html:
+            gold_bad.append(here)
+        if len(hp) == 2 and hp[1] in ("bereich", "kanton") and '<ul class="az' not in html:
+            az_bad.append(here)
+        h1r = _REC_H1.search(html)
+        if h1r and len(htmlmod.unescape(_TAG.sub("", h1r.group(2)))) > G.LONG_TITLE and " lt" not in h1r.group(1):
+            lt_bad.append(here)
         # step 4: the home's script on the five home pages, and on no other
         has_home = f'src="{BASE}/js/home.js' in html
         if has_home != (here in HOMES):
@@ -1440,6 +1456,10 @@ def main() -> int:
     for m in ([f"{h} {x}" for h, x in simap_bad[:3]] + [f"{h} {x}" for h, x in note_bad[:3]] + person_bad[:3]
               + [f"{h} {x}" for h, x in email_bad[:3]]):
         print(f"    {m}")
+    print(f"  giro 2: bottoni d'oro piatti {len(gold_bad)} pagine · indici senza A–Z {len(az_bad)}"
+          f" · titoli lunghi senza la misura minore {len(lt_bad)}")
+    for m in (gold_bad[:3] + az_bad[:3] + lt_bad[:3]):
+        print(f"    {m}")
     print(f"  parole relative al giorno {len(rel_bad)} pagine")
     for h, x in rel_bad[:4]:
         print(f"    {h}  «{x}»")
@@ -1533,7 +1553,7 @@ def main() -> int:
                  or n_design or c_errs or f_errs or fo_errs or a_errs or tot_errs or bad_buyers or bad_form
                  or bad_feeds or bad_ld or j_errs or sz_errs or idx_errs or open_errs or sp_errs or form_bad
                  or rel_bad or term_bad or long_desc or hid_errs or simap_bad or note_bad or person_bad
-                 or email_bad) else 0
+                 or email_bad or gold_bad or az_bad or lt_bad) else 0
 
 
 if __name__ == "__main__":

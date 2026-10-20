@@ -23,10 +23,10 @@ CSS = r"""
 figure{position:relative;margin:2.5rem 0 0;padding:1.75rem 1.75rem 1.5rem;border-top:1px solid rgba(201,162,78,.38);
   background:linear-gradient(180deg,rgba(201,162,78,.06),rgba(201,162,78,0) 70%),var(--panel)}
 figure h2{margin:0;font-size:clamp(1.5rem,1.25rem + .9vw,2rem)}
-figure .note{color:var(--muted);font-size:.875rem;line-height:1.55;margin:1rem 0 0;max-width:70ch}
+figure .note{color:var(--muted);font-size:.875rem;line-height:1.55;margin:1rem 0 0;max-width:33em}
 figure .note .key{display:inline-block;width:.95em;height:.95em;margin:0 .5em -.12em 0;
   background:repeating-linear-gradient(-45deg,var(--mark) 0 2px,transparent 2px 5px);box-shadow:inset 0 0 0 1.5px var(--mark)}
-figure .src,p.src{margin:.75rem 0 0;font-size:.875rem;color:var(--muted);max-width:70ch}
+figure .src,p.src{margin:.75rem 0 0;font-size:.875rem;color:var(--muted);max-width:33em}
 .mc .unit{margin:1.25rem 0 1rem;font:700 .8125rem/1.35 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 /* fix round 1: the month under the pointer or the keyboard in the unit line (no native title on 27 bars), and
    the chart as a table on demand (a details, so it works without a script; :has() switches the view) */
@@ -86,7 +86,8 @@ figure .src,p.src{margin:.75rem 0 0;font-size:.875rem;color:var(--muted);max-wid
 .bl .trk i{display:block;height:100%;background:linear-gradient(90deg,#8f6c2c,#f2d892)}
 .bl li.oth .lab,.bl li.oth .val{color:var(--muted)}
 @media(min-width:53.8125rem){.bl.two{columns:2;column-gap:3.5rem}}
-@media(max-width:37.5rem){figure{padding:1.25rem 0 1rem;background:none}.cc{--ch:10rem;--gap:2px}.cc .xax span.q{visibility:hidden;overflow:hidden}}
+@media(max-width:37.5rem){figure{padding:1.25rem 0 1rem;background:none}.cc{--ch:10rem;--gap:2px}.cc .xax span.q{visibility:hidden;overflow:hidden}
+  .cc .yax{min-width:3.75em}}
 """
 
 _e = lambda s: html.escape(str(s), quote=True) if s is not None else ""
@@ -151,7 +152,8 @@ def month_columns(series, *, fig_id: str, title: str, takeaway: str, unit_label:
         v = vals[k]
         cls = " ".join(c for c in ("part" if k in partial else "", "zero" if v == 0 else "",
                                     "pk" if k in peaks and v else "") if c)
-        unit = units[0] if v == 1 else units[1]
+        # French takes the singular for zero too ('0 adjudication'; fix round 2)
+        unit = units[0] if v == 1 or (v == 0 and formato.LANG == "fr") else units[1]
         # the visible label is hidden from screen readers: the cell's own text already says
         # "7 aggiudicazioni", and they heard "7 7 aggiudicazioni" (verifier, 28.09.2026)
         b = f'<b aria-hidden="true">{_e(formato.count(v))}</b>' if k in lab and v else ""

@@ -37,7 +37,7 @@
     else if (r[6] === 'x') {
       amt = '–';
       fx = '<span class="sub sb2">' + esc(fmt(L.fx_amount, { a: A.count(r[5][0]) + ' ' + r[5][1] })) + '</span>';
-    } else amt = cell(r[5], u) + (r[6] === 'r' ? '<span class="sub sb2">' + esc(L.rate_flag) + '</span>' : '');
+    } else amt = cell(r[5], u) + (r[6] === 'r' ? '<span class="sub sb2 rt">' + esc(L.rate_flag) + '</span>' : '');
     return '<tr><td class="mono d"><time datetime="' + r[0] + '">' + A.date(r[0]) + '</time></td><td><a href="' + B + '/' + l + '/auftrag/' + r[1] + '"' +
       (tl !== l && tl !== '--' ? ' lang="' + tl + '"' : '') + '>' + esc(t) + '</a>' + fx + '</td><td>' + (r[4].map(firm).join(' · ') || '–') +
       '</td><td class="r num">' + amt + '</td></tr>';

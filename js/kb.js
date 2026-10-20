@@ -7,7 +7,8 @@
    Bern is one click.
    Fix round 1 (20.10.2026): the address is #kb-72 (the Branche pages link to it; without JavaScript it leads to the
    Branche's row), the panel scrolls into view before it takes the focus, its tables use the page's money scale,
-   and it says how many of its awards count here only as the authority's seat, with a toggle that leaves them out. */
+   and it says how many of its awards count here only as the authority's seat, with a toggle that leaves them out.
+   Fix round 2: its companies as cards on a phone (table.fk), the name on a row of its own ('Eraneos Switz-erland AG'). */
 (function () {
   var A = window.AR; if (!A || A.kb) return; A.kb = 1;
   var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc;
@@ -50,7 +51,7 @@
       '<p class="sub m10">' + esc(fmt(L.kb_lead, { n: na === 1 ? L.aw_1 : fmt(L.aw_n, { n: A.count(na) }), f: nk === 1 ? L.kb_f1 : fmt(L.kb_fn, { n: A.count(nk) }) })) + '</p>' +
       (x.x ? '<p class="sub m10">' + esc(fmt(L.kb_fb, { k: A.count(x.x), p: Math.round(100 * x.x / x.a) + (l === 'de' ? '\u00a0%' : l === 'fr' ? '\u202f%' : '%') })) + '</p>' +
         '<label class="fbx"><input type="checkbox"' + (ex ? ' checked' : '') + '> ' + esc(L.kb_fbx) + '</label>' : '') +
-      '<h3>' + esc(L.kb_top) + '</h3><div class="scroll"><table><caption class="sr">' + esc(L.kb_top) + '</caption><thead><tr><th scope="col">' + esc(L.company) + '</th>' +
+      '<h3>' + esc(L.kb_top) + '</h3><div class="scroll"><table class="ls fk u' + uf + '"><caption class="sr">' + esc(L.kb_top) + '</caption><thead><tr><th scope="col">' + esc(L.company) + '</th>' +
       '<th scope="col" class="r">' + esc(L.awards) + '</th>' + money_th(uf).replace('<th', '<th scope="col"') + '</tr></thead><tbody>' +
       fs.map(function (r) { return '<tr><td>' + firm(r) + '</td><td class="r num">' + A.count(r[2]) + '</td><td class="r num">' + scaled(r[3], uf) + '</td></tr>'; }).join('') +
       '</tbody></table></div>' +
