@@ -6,13 +6,16 @@ la lista iscritti (API), si inviano le e-mail (API transazionale) e si cancellan
 Quando gira: chiamato da aggiorna.py subito dopo una pubblicazione verificata, piu' un giro di riserva via
 launchd (ch.auftragsregister.avvisi, 12:30). Legge SOLO dati/gare_pubblicate.json, la copia che aggiorna.py
 scrive quando le pagine sono davvero su GitHub, e prima di inviare aspetta che GitHub Pages le serva: un link
-in una e-mail non punta mai a una pagina che non esiste ancora. Due giri lo stesso giorno sono innocui.
+in una e-mail non punta mai a una pagina che non esiste ancora. Due giri lo stesso giorno sono innocui: ogni
+iscritto riceve al massimo UNA e-mail al giorno (giorno svizzero, 21.10.2026); i bandi trovati dopo la sua e-mail
+del giorno (pagine arrivate tardi, nightly rilanciato) restano non segnati e partono con l'e-mail di domani.
 
 Prerequisiti (una volta, dall'utente): account Brevo gratuito; attributi contatto KANTON / BRANCHE / SPRACHE;
 lista "Avvisi bandi" (id 3) con double opt-in; API key in ~/.brevo_api_key (contacts + transactional).
 
 Stato: avvisi/stato.json (MAI nel repo pubblico: contiene indirizzi; .gitignore copre avvisi/stato.json*) =
-per contatto {"floor", "last", "sent": {id pubblicazione | "P:"+id progetto: data}, "gone"}. Un bando e' nuovo
+per contatto {"floor", "last", "sent": {id pubblicazione | "P:"+id progetto: data}, "gone", "mailed": giorno
+svizzero dell'ultima e-mail di avviso, assente negli stati di prima del 21.10.2026}. Un bando e' nuovo
 se ne' la pubblicazione ne' il progetto sono gia' stati inviati a quel contatto, e' pubblicato da non piu' di
 LOOKBACK_DAYS rispetto al dato piu' recente, non e' scaduto, ha la sua pagina sul sito e corrisponde ai
 filtri. Giorni saltati, nightly falliti, bandi indicizzati in ritardo e invii falliti non fanno perdere nulla,
@@ -254,22 +257,33 @@ def day(iso: str, delta: int = 0) -> str:
     return (datetime.date.fromisoformat(iso) + datetime.timedelta(days=delta)).isoformat()
 
 
+def oggi_ch() -> str:
+    """Il giorno di "una e-mail al giorno": la data in Svizzera, anche se il Mac fosse su un altro fuso."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.datetime.now(ZoneInfo("Europe/Zurich")).date().isoformat()
+    except Exception:          # niente banca dati dei fusi: la data locale (il Mac e' a Zurigo)
+        return datetime.date.today().isoformat()
+
+
 def contact_state(raw, hw: str) -> dict:
-    """Lo stato di un contatto, anche dal vecchio formato (una data) o da una voce rovinata."""
+    """Lo stato di un contatto, anche dal vecchio formato (una data) o da una voce rovinata. "mailed" (il giorno
+    svizzero dell'ultima e-mail) manca negli stati di prima del 21.10.2026 o e' rovinato: None, nessuna e-mail oggi."""
     try:
         if isinstance(raw, dict) and raw.get("floor"):
             floor = str(raw["floor"])[:10]; day(floor)
             sent = raw.get("sent") if isinstance(raw.get("sent"), dict) else {}
             sent = {str(k): str(v)[:10] for k, v in sent.items() if _DAY.match(str(v)[:10])}
             last = str(raw.get("last"))[:10] if raw.get("last") else None
+            mailed = str(raw.get("mailed") or "")[:10]
             return {"floor": floor, "last": last if last and _DAY.match(last) else None,
-                    "sent": sent, "gone": raw.get("gone")}
+                    "sent": sent, "gone": raw.get("gone"), "mailed": mailed if _DAY.match(mailed) else None}
         if isinstance(raw, str) and _DAY.match(raw[:10]):
             d = day(raw[:10], -1)   # il vecchio formato salvava "oggi" su dati di ieri
-            return {"floor": d, "last": d, "sent": {}, "gone": None}
+            return {"floor": d, "last": d, "sent": {}, "gone": None, "mailed": None}
     except (ValueError, TypeError):
         pass
-    return {"floor": hw, "last": None, "sent": {}, "gone": None}   # nuovo: parte dal giorno piu' recente
+    return {"floor": hw, "last": None, "sent": {}, "gone": None, "mailed": None}   # nuovo: dal giorno piu' recente
 
 
 def select(contact: dict, rows_all: list, st: dict, hw: str, today: str, lang: str) -> list:
@@ -353,6 +367,38 @@ def only_live(plan: list) -> list:
                 keep.append(t)
         out.append((email, c, st, lang, keep))
     return out
+
+
+def deliver(plan: list, work: dict, hw: str, today: str, oggi: str) -> tuple:
+    """L'invio: per ogni iscritto UNA e-mail al giorno (oggi = giorno svizzero, oggi_ch()), mai di piu'. Chi l'ha gia'
+    ricevuta oggi (secondo giro, pagine arrivate tardi, nightly rilanciato) aspetta: nulla segnato, "last" fermo
+    all'ultima e-mail, e domani i suoi bandi partono insieme ai nuovi (al massimo 40 schede piu' "+ N").
+    Ritorna (inviati, senza novita', errori, rinviati a domani)."""
+    sent = skipped = failed = later = 0
+    for email, c, st, lang, rows in plan:
+        try:
+            if rows and st.get("mailed") == oggi:
+                later += 1
+            else:
+                if rows:
+                    since = st["last"] or day(st["floor"], -1)
+                    api("POST", "/smtp/email", message(email, c, lang, rows, since, today))   # una sola e-mail
+                    for t in rows:   # segnato solo cio' che e' davvero partito: le schede E i bandi contati nel "+ N"
+                        for k in keys_of(t):   # (annunciati e sul sito: domani non tornano come "nuovi")
+                            st["sent"][k] = pub_day(t)
+                    st["mailed"] = oggi
+                    save_state(work)
+                    sent += 1
+                else:
+                    skipped += 1
+                st["last"] = hw
+        except Exception as e:
+            failed += 1
+            detail = e.read().decode(errors="replace")[:160] if isinstance(e, urllib.error.HTTPError) else str(e)[:160]
+            say(f"errore invio a {mask(email)}: {type(e).__name__} {detail}")   # riprovato al prossimo giro
+        keep = day(hw, -KEEP_SENT_DAYS)
+        st["sent"] = {k: d for k, d in st["sent"].items() if d >= keep}
+    return sent, skipped, failed, later
 
 
 def main() -> int:
@@ -466,28 +512,10 @@ def main() -> int:
         say("il sito non serve ancora le pagine nuove: invio rimandato al prossimo giro"); return 0
     plan = only_live(plan)
 
-    sent = skipped = failed = 0
-    for email, c, st, lang, rows in plan:
-        try:
-            if rows:
-                since = st["last"] or day(st["floor"], -1)
-                api("POST", "/smtp/email", message(email, c, lang, rows, since, today))   # una sola e-mail
-                for t in rows:   # segnato solo cio' che e' davvero partito: le schede E i bandi contati nel "+ N"
-                    for k in keys_of(t):   # (annunciati e sul sito: domani non tornano come "nuovi")
-                        st["sent"][k] = pub_day(t)
-                save_state(work)
-                sent += 1
-            else:
-                skipped += 1
-            st["last"] = hw
-        except Exception as e:
-            failed += 1
-            detail = e.read().decode(errors="replace")[:160] if isinstance(e, urllib.error.HTTPError) else str(e)[:160]
-            say(f"errore invio a {mask(email)}: {type(e).__name__} {detail}")   # riprovato al prossimo giro
-        keep = day(hw, -KEEP_SENT_DAYS)
-        st["sent"] = {k: d for k, d in st["sent"].items() if d >= keep}
+    sent, skipped, failed, later = deliver(plan, work, hw, today, oggi_ch())
     save_state(work)
     say(f"inviati {sent}, senza novita' {skipped}, errori {failed}, dati fino al {hw}"
+        + (f", rinviati a domani {later} (e-mail di oggi gia' partita)" if later else "")
         + (f", dati cancellati per {gone_now} disiscritti" if gone_now else ""))
     return 0
 
