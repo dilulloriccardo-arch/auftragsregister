@@ -14,7 +14,12 @@
    any of its words, a tender or a topic by any part of its text in any language ('reinigung',
    'nettoyage', 'pulizia' and 'cleaning' find the cleaning tenders and CPV 909…). Results come in groups:
    open tenders, companies, authorities, industries and sectors, cantons, pages. ARIA: the field is a
-   combobox, its results a listbox of grouped options (links); the arrow keys choose, Enter opens. */
+   combobox, its results a listbox of grouped options (links); the arrow keys choose, Enter opens.
+   Fix round 1 (20.10.2026): a canton named in the query becomes the tenders' canton ('Reinigung Zürich': the cleaning
+   tenders in Zurich, and the hub's list filtered so, scrolled to); tenders are ranked (the topic and the start of a
+   title's words before a word inside another: 'Vereinigung' after the cleaning tenders); an exact canton, Branche or
+   company name leads; Escape first lets go of the chosen option; no result offers a word less and the alert;
+   t=b searches the authorities only (their index's finder). */
 (function () {
   var A = window.AR; if (!A || A.suche) return; A.suche = 1;
   var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, fold = A.fold;
@@ -50,45 +55,57 @@
     return { t: v.slice(3), l: v.slice(0, 2) };
   }
   // every result as {g: group, s: score, n: weight, h: href, x: text, xl: its language, u: sub-line}
+  // the canton a query names (A.qparse) and the rest of its words; names from the tenders' file or the topics'
+  function parse(q, th, op) {
+    var names = op && op.k ? op.k : null;
+    if (!names && th && th.k) { names = {}; th.k.forEach(function (e) { names[e[0]] = e[1]; }); }
+    return names ? A.qparse(q, names) : { q: q, k: '' };
+  }
   function search(q, only, shard, th, op) {
-    var qt = toks(q), out = [], key = null, i;
+    var qt = toks(q), out = [], key = null, i, qp = parse(q, th, op), qr = toks(qp.q), fq = fold(q).replace(/[^0-9a-z]+/g, ' ').trim();
     if (!qt.length) return out;
     for (i = 0; i < qt.length; i++) if (STOP.indexOf(qt[i]) < 0 && qt[i].length > 1) { key = qt[i]; break; }
     if (key === null) key = qt[0];
-    function add(g, s, n, h, x, u, xl) { if (s) out.push({ g: g, s: s + Math.log(n + 1) / Math.LN10, n: n, h: h, x: x, u: u, xl: xl || '' }); }
+    // ex: the entry's name is the query itself (an exact canton, Branche or company leads, fix round 1)
+    function add(g, s, n, h, x, u, xl, ex) { if (s) out.push({ g: g, s: s + (ex ? 50 : 0) + Math.log(n + 1) / Math.LN10, n: n, h: h, x: x, u: u, xl: xl || '', ex: !!ex }); }
+    function same(name) { return fold(name).replace(/[^0-9a-z]+/g, ' ').trim() === fq; }
     var base = B + '/' + l + '/';
     if (shard) {
-      (shard.u || []).forEach(function (e) { add('u', score(e, e[0], qt, key), e[2], base + 'unternehmen/' + (e[1] || slug(e[0])) + '/', e[0], n_aw(e[2])); });
-      (shard.f || []).forEach(function (e) { add('u', score(e, e[0], qt, key), 1, base + 'auftrag/' + e[1], e[0], n_aw(1) + ' · ' + L.to_award); });
+      if (only !== 'b') {
+        (shard.u || []).forEach(function (e) { add('u', score(e, e[0], qt, key), e[2], base + 'unternehmen/' + (e[1] || slug(e[0])) + '/', e[0], n_aw(e[2]), '', same(e[0])); });
+        (shard.f || []).forEach(function (e) { add('u', score(e, e[0], qt, key), 1, base + 'auftrag/' + e[1], e[0], n_aw(1) + ' · ' + L.to_award, '', same(e[0])); });
+      }
       if (only !== 'u') {
-        (shard.b || []).forEach(function (e) { add('b', score(e, e[0], qt, key), e[2], base + 'auftraggeber/' + (e[1] || slug(e[0])) + '/', e[0], n_aw(e[2])); });
-        (shard.g || []).forEach(function (e) { add('b', score(e, e[0], qt, key), e[2], base + 'auftrag/' + e[1], e[0], n_aw(e[2]) + ' · ' + L.to_award); });
+        (shard.b || []).forEach(function (e) { add('b', score(e, e[0], qt, key), e[2], base + 'auftraggeber/' + (e[1] || slug(e[0])) + '/', e[0], n_aw(e[2]), '', same(e[0])); });
+        (shard.g || []).forEach(function (e) { add('b', score(e, e[0], qt, key), e[2], base + 'auftrag/' + e[1], e[0], n_aw(e[2]) + ' · ' + L.to_award, '', same(e[0])); });
       }
     }
-    if (only === 'u') return out;
+    if (only) return out;
     if (op && op.t) {
+      // the tenders: in the canton the query names, ranked by A.tscore (the topic, then the title's words)
       op.t.forEach(function (r) {
         if (A.when(r[6]) <= A.now) return;
-        if (!r.f) {
-          var c = op.c[r[4]] || [], k = r[3].replace('*', '');
-          r.f = fold(r[1].map(function (v) { return v.slice(3); }).join(' ') + ' ' + op.b[r[5]] + ' ' + c.join(' '));
-          r.w = r.f.split(/[^0-9a-z]+/);
-        }
-        var s = score(r, '', qt, null), t = title(r);
+        if (qp.k && r[3].replace(/\*/g, '').split(' ').indexOf(qp.k) < 0) return;
+        var s = qr.length ? A.tscore(A.twords(r, op), qr) : (qp.k ? 1 : 0), t = title(r);
+        // the nearest deadline first among equals (n: the minus of its time, scaled)
         add('t', s, 0, base + 'auftrag/' + r[0] + '/', t.t,
           fmt(L.until, { d: A.date(r[6]) }) + ' · ' + op.b[r[5]] + ' · ' + r[3].replace(/\*/g, ''), t.l);
+        if (s) out[out.length - 1].d = A.when(r[6]);
       });
     }
     if (th) {
+      var tq = qr.length ? qr : qt;
       (th.s || []).concat(th.d || []).forEach(function (e) {
-        var div = e[0].length === 2, sc = score(e, e[1].join(' ') + ' ' + e[0], qt, null);
+        var div = e[0].length === 2, sc = score(e, e[1].join(' ') + ' ' + e[0], tq, null);
         // a Branche before its own Bereiche when both match as well
         add('s', sc && sc + (div ? 1 : 0), e[2], base + (div ? 'branche/' : 'bereich/') + e[0] + '/', e[1][LI],
-          (div ? L.k_div : L.k_sec) + ' · CPV ' + e[0] + ' · ' + n_aw(e[2]) + (e[3] ? ' · ' + n_open(e[3]) : ''));
+          (div ? L.k_div : L.k_sec) + ' · CPV ' + e[0] + ' · ' + n_aw(e[2]) + (e[3] ? ' · ' + n_open(e[3]) : ''), '',
+          div && e[1].some(same));
       });
       (th.k || []).forEach(function (e) {
-        add('k', score(e, e[1].join(' ') + ' ' + e[0], qt, null), e[2], base + 'kanton/' + e[0] + '/', L.k_canton + ' ' + e[1][LI],
-          n_aw(e[2]) + (e[3] ? ' · ' + n_open(e[3]) : ''));
+        var sc = qp.k === e[0] ? 12 : score(e, e[1].join(' ') + ' ' + e[0], qt, null);
+        add('k', sc, e[2], base + 'kanton/' + e[0] + '/', L.k_canton + ' ' + e[1][LI],
+          n_aw(e[2]) + (e[3] ? ' · ' + n_open(e[3]) : ''), '', e[1].some(same) || e[0] === q.trim());
       });
       (th.p || []).forEach(function (e) {
         add('p', score(e, e[1].join(' ') + ' ' + e[3], qt, null), 0, base + e[2], e[1][LI], '');
@@ -101,8 +118,10 @@
     var g = {};
     res.forEach(function (r) { (g[r.g] = g[r.g] || []).push(r); });
     ORDER.forEach(function (k) {
-      if (g[k]) g[k].sort(function (a, b) { return b.s - a.s || b.n - a.n || (a.x < b.x ? -1 : a.x > b.x ? 1 : 0); });
+      if (g[k]) g[k].sort(function (a, b) { return b.s - a.s || (a.d && b.d ? a.d - b.d : 0) || b.n - a.n || (a.x < b.x ? -1 : a.x > b.x ? 1 : 0); });
     });
+    // the groups holding an exact name first (fix round 1: 'Zürich' showed tenders before the canton)
+    g.order = ORDER.filter(function (k) { return g[k] && g[k][0].ex; }).concat(ORDER.filter(function (k) { return g[k] && !g[k][0].ex; }));
     return g;
   }
   function data(q) {
@@ -114,7 +133,22 @@
     return Promise.all([c ? soft(A.json('/daten/suche/' + c + '.json')) : null, soft(A.json('/daten/suche/themen.json')),
       soft(A.json('/daten/offen.json'))]);
   }
-  function hubq(q) { return B + '/' + l + '/ausschreibungen/?q=' + encodeURIComponent(q); }
+  // the hub's list for a query: its canton as the canton filter, scrolled to the list (fix round 1)
+  function hubq(q, r) {
+    var p = parse(q, r && r[1], r && r[2]), a = [];
+    if (p.q) a.push('q=' + encodeURIComponent(p.q)); if (p.k) a.push('k=' + p.k);
+    return B + '/' + l + '/ausschreibungen/' + (a.length ? '?' + a.join('&') : '') + '#fristen';
+  }
+  // no result: a word less (when the query has several), the alert, and on the page the directories (fix round 1)
+  function sugg(q, only) {
+    var ws = q.trim().split(/\s+/), out = [];
+    if (ws.length > 1) ws.forEach(function (w, i) {
+      var rest = ws.filter(function (x, j) { return j !== i; }).join(' ');
+      out.push({ h: resq(rest, only), x: fmt(L.z_drop, { t: w, n: '' }).replace(/[:\s]+$/, '') });
+    });
+    out.push({ h: B + '/' + l + '/ausschreibungen/abo/', x: L.z_abo });
+    return out;
+  }
   function resq(q, only) { return B + '/' + l + '/suche/?q=' + encodeURIComponent(q) + (only ? '&t=' + only : ''); }
 
   // the combobox under a field
@@ -149,18 +183,21 @@
       if (q.length < 2) { close(); st.textContent = ''; return; }
       data(q).then(function (r) {
         if (my !== seq) return;
-        var g = groups(search(q, only, r[0], r[1], r[2])), html = '', n = 0, cap = { t: 3, u: only ? 8 : 4, b: 3, s: 3, k: 2, p: 2 };
+        var g = groups(search(q, only, r[0], r[1], r[2])), html = '', n = 0, cap = { t: 3, u: only ? 8 : 4, b: only ? 8 : 3, s: 3, k: 2, p: 2 };
         opts = []; act = -1;
-        ORDER.forEach(function (k, gi) {
-          var rs = g[k]; if (!rs) return;
+        g.order.forEach(function (k) {
+          var rs = g[k], gi = ORDER.indexOf(k);
           var gid = id + '-g' + gi;
           html += '<div role="group" aria-labelledby="' + gid + '"><span class="search-grp" id="' + gid + '" role="presentation">' + esc(L['g_' + k]) + ' (' + A.count(rs.length) + ')</span>';
           rs.slice(0, cap[k]).forEach(function (x) { html += opt(x.h, x.x, x.u, '', x.xl); n++; });
-          if (k === 't') html += opt(hubq(q), fmt(L.all_t, { q: q }), '', 'all');
+          if (k === 't') html += opt(hubq(q, r), fmt(L.all_t, { q: q }), '', 'all');
           html += '</div>';
         });
         if (n) html += opt(resq(q, only), fmt(L.all_r, { q: q }), '', 'all');
-        else html = '<span class="search-msg">' + esc(fmt(L.none, { q: q })) + '</span>';
+        else {
+          html = '<span class="search-msg">' + esc(fmt(L.none, { q: q })) + ' ' + esc(L.z_h) + '</span>';
+          sugg(q, only).forEach(function (x) { html += opt(x.h, x.x, '', 'all'); });
+        }
         pop.innerHTML = html;
         opts = [].slice.call(pop.querySelectorAll('[role=option]'));
         pop.hidden = false; i.setAttribute('aria-expanded', 'true');
@@ -178,7 +215,9 @@
       } else if (k === 'Enter' && act >= 0 && !pop.hidden) {
         ev.preventDefault(); location.href = opts[act].href;
       } else if (k === 'Escape') {
-        if (!pop.hidden) { ev.preventDefault(); close(); } else if (i.value) { ev.preventDefault(); i.value = ''; }
+        // first the chosen option is let go, then the list closes, then the field empties (fix round 1)
+        if (!pop.hidden && act >= 0) { ev.preventDefault(); opts[act].setAttribute('aria-selected', 'false'); act = -1; i.removeAttribute('aria-activedescendant'); }
+        else if (!pop.hidden) { ev.preventDefault(); close(); } else if (i.value) { ev.preventDefault(); i.value = ''; }
       } else if (k === 'Tab') close();
     });
     pop.addEventListener('mousedown', function (ev) { ev.preventDefault(); });
@@ -191,7 +230,7 @@
   var res = d.getElementById('treffer'), fseq = 0;
   function full(q) {
     if (!res) return;
-    var my = ++fseq, sp = new URLSearchParams(location.search), only = sp.get('t') === 'u' ? 'u' : '';
+    var my = ++fseq, sp = new URLSearchParams(location.search), only = /^[ub]$/.test(sp.get('t') || '') ? sp.get('t') : '';
     q = (q || '').trim();
     try { history.replaceState(null, '', q ? resq(q, only) : location.pathname); } catch (e) { }
     if (q.length < 2) { res.innerHTML = ''; return; }
@@ -201,10 +240,11 @@
       if (!r[0] && !r[1] && !r[2]) { res.innerHTML = '<p class="cnt">' + esc(L.failed) + '</p>'; return; }
       var all = search(q, only, r[0], r[1], r[2]), g = groups(all), html = '';
       html += '<p class="cnt" role="status">' + esc(all.length === 1 ? L.n_res_1 : fmt(L.n_res, { n: A.count(all.length) })) + '</p>';
-      if (!all.length) html += '<p class="empty">' + esc(fmt(L.none, { q: q })) + ' ' + esc(L.none_hint) + '</p>';
+      if (!all.length) html += '<p class="empty">' + esc(fmt(L.none, { q: q })) + ' ' + esc(L.none_hint) + '</p>' +
+        '<p class="zs"><strong>' + esc(L.z_h) + '</strong> ' + sugg(q, only).map(function (x) { return '<a href="' + esc(x.h) + '">' + esc(x.x) + '</a>'; }).join(' · ') + '</p>';
       html += '<div class="search-res">';
-      ORDER.forEach(function (k) {
-        var rs = g[k]; if (!rs) return;
+      g.order.forEach(function (k) {
+        var rs = g[k];
         html += '<h2>' + esc(L['g_' + k]) + ' <span class="sub">(' + A.count(rs.length) + ')</span></h2><ul class="plain">';
         rs.forEach(function (x, j) {
           html += '<li' + (j >= 50 ? ' hidden' : '') + '><a href="' + esc(x.h) + '"' + (x.xl && x.xl !== l ? ' lang="' + x.xl + '"' : '') + '>' + esc(x.x) + '</a>' +
@@ -212,7 +252,7 @@
         });
         html += '</ul>';
         if (rs.length > 50) html += '<button type="button" class="all" data-more>' + esc(fmt(L.more, { n: A.count(rs.length - 50) })) + '</button>';
-        if (k === 't') html += '<p class="dl"><a href="' + esc(hubq(q)) + '">' + esc(fmt(L.all_t, { q: q })) + '</a></p>';
+        if (k === 't') html += '<p class="dl"><a href="' + esc(hubq(q, r)) + '">' + esc(fmt(L.all_t, { q: q })) + '</a></p>';
       });
       res.innerHTML = html + '</div>';
       [].forEach.call(res.querySelectorAll('[data-more]'), function (b) {

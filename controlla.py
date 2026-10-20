@@ -80,6 +80,24 @@ _ROWS = re.compile(r'<tr\b.*?</tr>|<li\b.*?</li>', re.S)
 # Restated here rather than imported from genera: a check that reads the generator's own constant
 # could not catch it changing.
 RATE_FLOOR = 1000          # an award under CHF 1'000 is a unit rate: in no sum, no median
+RATE_CUE_MAX = 5000        # fix round 1: so is one up to CHF 5'000 whose publication speaks of a day or hour rate
+_RATE_CUE = re.compile(
+    r"(?<![\w-])(?:(?-i:LSE)|location\s+de\s+(?:services|personnel)|Personal(?:verleih|ausleihe)\w*|Temporärpersonal"
+    r"|Tagess[aä]tz\w*|Stundens[aä]tz\w*|Tagespauschal\w*|Regie(?!rung)\w*|pro\s+(?:Tag|Stunde|Arbeitstag)|Ans[aä]tz\w*"
+    r"|tarifs?\s+(?:journalier|horaire)s?|taux\s+(?:journalier|horaire)s?|prix\s+(?:journalier|horaire)s?"
+    r"|tariff[ae]\s+(?:giornalier|orari)[ae]|prestito\s+di\s+personale|(?:day|daily|hourly)\s+rates?"
+    r"|postes?\s+externes?)(?![\w-])|délégation\s+d['’]activités(?![\w-])", re.I)
+
+
+def rate_cue(a: dict) -> bool:
+    aw = a.get("award") or {}
+    parts = [a.get("title"), a.get("description"), aw.get("justification")]
+    for f in ("title", "description"):
+        parts += list(((a.get("translations") or {}).get(f) or {}).values())
+    parts += [v.get("note") for v in (aw.get("vendors") or []) if isinstance(v, dict)]
+    return bool(_RATE_CUE.search(" ".join(str(x) for x in parts if x)))
+
+
 SIMAP_TERMS = "https://www.simap.ch/de/about/legal"
 N_DIVISIONS = 45
 _TOTAL = re.compile(r'<data value="(\d+)" id="total">')
@@ -213,8 +231,9 @@ def expected_sums(G, awards: list) -> dict:
             if (len(G.winners(a)) == 1 and isinstance(p, (int, float)) and not isinstance(p, bool) and p
                     and not a.get("_price_repeat")
                     and (a.get("winnerCurrency") or "CHF").strip().upper() == "CHF"
-                    # step 3a: an amount under CHF 1'000 is a unit rate and in no sum
-                    and p >= RATE_FLOOR):
+                    # step 3a: an amount under CHF 1'000 is a unit rate and in no sum; fix round 1: up to
+                    # CHF 5'000 with a rate cue too
+                    and p >= RATE_FLOOR and not (p <= RATE_CUE_MAX and rate_cue(a))):
                 out += p
         return out
     groups = collections.defaultdict(list)
@@ -247,7 +266,7 @@ def _text(row: str) -> str:
 # that must work without JavaScript. Limits restated here, not imported (see above).
 SHARD_MAX = 320_000           # bytes of one search shard
 DATA_MAX = 6_000_000          # /daten/offen.json, /daten/suche/, /daten/kb/, /daten/abo-rate.json together
-JS_MAX_GZ = 25_000            # /stand.js and /js/*.js together but the home's, gzip -9
+JS_MAX_GZ = 30_000            # /stand.js and /js/*.js together but the home's, gzip -9 (fix round 1: 25 -> 30 KB)
 HOME_JS_MAX_GZ = 12_000       # /js/home.js alone, gzip -9 (step 4: the home's motion and its map)
 FONTS_MAX = 120_000           # every woff2 in /fonts/ together (step 4)
 FONTS_NEED = ("is.woff2", "is7.woff2", "lg.woff2", "is-ext.woff2", "is7-ext.woff2", "lg-ext.woff2",
@@ -370,7 +389,7 @@ def open_index_errors(offen: dict, open_ids: set) -> list:
     if extra:
         errs.append(f"{len(extra)} bandi che non sono aperti, es. {sorted(extra)[0]}")
     for r in offen.get("t", []):
-        if not (isinstance(r, list) and len(r) == 7 and r[1] and 0 <= r[5] < len(offen.get("b", []))):
+        if not (isinstance(r, list) and len(r) == 8 and r[1] and 0 <= r[5] < len(offen.get("b", []))):
             errs.append(f"riga malformata {str(r)[:60]}")
             break
     return errs
@@ -642,6 +661,9 @@ class Structure:
             if path.endswith(".ics"):
                 txt = raw.decode("utf-8")
                 lines = txt.split("\r\n")
+                pl = path.strip("/").split("/")[0]
+                if pl in LANGS4 and simap_lang_errors(pl, txt.replace("\r\n ", "")):
+                    self.err(".ics: simap.ch in un'altra lingua", here, path)
                 if (not txt.startswith("BEGIN:VCALENDAR\r\n") or not txt.endswith("END:VCALENDAR\r\n")
                         or "\n" in txt.replace("\r\n", "")
                         or any(len(x.encode("utf-8")) > 75 for x in lines)
@@ -848,11 +870,12 @@ _SR = re.compile(r'<span class="(?:sr|sub[^"]*)">.*?</span>', re.S)
 _FX = re.compile(r"\b(?:EUR|USD|GBP|JPY|CNY|SEK|NOK|DKK|PLN|CZK|HUF|CAD|AUD|RUB|INR|TRY)\b")
 
 
-def money_column_errors(html: str, units: dict) -> tuple[int, list]:
+def money_column_errors(html: str, units: dict, seen: list | None = None) -> tuple[int, list]:
     """(money columns seen, [(kind, detail)]): every money column (th class amt) states its unit in its
     header, every figure under it is in that unit, and no amount in another currency stands in a CHF
     column at all — not even with its code (step 3a, 14.10.2026: 1'436 EUR cells sat under 'Betrag
-    (Tsd. CHF)'); such an amount belongs in the row's title cell."""
+    (Tsd. CHF)'); such an amount belongs in the row's title cell. seen: the units of the page's columns are
+    appended to it (one_scale_errors)."""
     n, errs = 0, []
     for t in re.finditer(r"<table\b[^>]*>(.*?)</table>", html, re.S):
         body = t.group(1)
@@ -864,6 +887,8 @@ def money_column_errors(html: str, units: dict) -> tuple[int, list]:
         label = htmlmod.unescape(re.sub(r"<[^>]+>", "", cells[idx][1]))
         unit = next((u for txt, u in units.items() if f"({txt})" in label), None)
         n += 1
+        if seen is not None and unit:
+            seen.append(unit)
         if not unit:
             errs.append(("colonna importi: unità mancante nell'intestazione", label))
             continue
@@ -885,6 +910,115 @@ def money_column_errors(html: str, units: dict) -> tuple[int, list]:
     return n, errs
 
 
+# ------------------------------------------------------------- fix round 1 (20.10.2026)
+# What the third audit found and must not come back: an element the scripts hide that stays visible, a page that
+# prints one money table in thousands and another in millions, simap.ch opened in German from a French page, the
+# total's note counting fewer awards than it leaves out, a sole trader's name in the sitemap.
+def hidden_rule_errors(css: str) -> list:
+    """The stylesheet keeps [hidden] hidden whatever display a component sets (.tl li, the stacked rows)."""
+    return [] if re.search(r"\[hidden\]\{display:none!important\}", css) else ["[hidden]{display:none!important} manca in style.css"]
+
+
+def one_scale_errors(units: list) -> list:
+    """One scale per page: its money columns all in 'Tsd. CHF', all in 'Mio. CHF' or all exact."""
+    return [("piu' scale nella stessa pagina", " / ".join(sorted(set(units))))] if len(set(units)) > 1 else []
+
+
+_SIMAP_LINK = re.compile(r"https://www\.simap\.ch/([a-z]{2})/project-detail/")
+
+
+def simap_lang_errors(lang: str, text: str) -> list:
+    """Every link to a publication on simap.ch in the page's (or the calendar file's) language."""
+    return sorted({x for x in _SIMAP_LINK.findall(text) if x != lang})
+
+
+def sum_note_errors(html: str, joint: int) -> list:
+    """The note under the home's total names every award to several firms it leaves out (fix round 1: 966 of
+    1'140): the first figure of the first note of the money tile is that count."""
+    m = re.search(r'<div class="fig money">.*?<em class="approx">([^<]*)</em>', html, re.S)
+    if not joint:
+        return []
+    if not m:
+        return ["nota della somma mancante"]
+    k = re.search(r"\d[\d’'\u202f\u00a0 ,]*", m.group(1))
+    n = int(re.sub(r"\D", "", k.group(0))) if k else None
+    return [] if n == joint else [f"nota: {n} / {joint} zuschläge a piu' imprese"]
+
+
+# a company page named after a natural person (genera.natural_person, restated): no legal form, no business
+# word, two or three name-shaped words, one of them a common first name
+_P_LEGAL = re.compile(r"(?i)(?<![\w])(?:ag|gmbh|sa|sàrl|sarl|sagl|kg|gen|genossenschaft|verein|stiftung|fondation|"
+                      r"fondazione|ltd|inc|srl|spa|snc|co|cie|holding|aktiengesellschaft|gesellschaft|partner\w*)\.?(?![\w])")
+_P_FIRM = re.compile(r"(?i)(?:technik|bau|werk|betrieb|dienst|service|consult|studio|atelier|büro|office|praxis|"
+                     r"traduc|traduz|übersetz|schaft|handel|transport|reinigung|garten|ingenieur|architekt|design|"
+                     r"solution|system|energie|immobil|treuhand|stadt|gemeinde|swiss|schweiz)")
+_P_FIRST = frozenset("adelheid agata angelika anna barbara christian claudio concetta corina daniel isabelle karin "
+                     "laurence maria matteo michael rodolfo sara stefan tatjana thomas valérie valerie viviana".split())
+
+
+def person_name(name: str) -> bool:
+    n = " ".join((name or "").split())
+    if not n or _P_LEGAL.search(n) or _P_FIRM.search(n) or re.search(r"[\d&/+@()]", n):
+        return False
+    toks = [t for t in re.split(r"[\s,]+", n) if t]
+    return 2 <= len(toks) <= 3 and all(re.fullmatch(r"[^\W\d_]+(?:[-'’][^\W\d_]+)*", t) for t in toks) \
+        and any(t.casefold() in _P_FIRST for t in toks)
+
+
+# an e-mail address as the name of an entity (fix round 1: 'valentin.berclaz@eraneos.com' as a contracting
+# authority): in a link to a company or an authority, a page's H1 or <title> or description, a table cell, a winner's
+# card, the search index, the open tenders' file, the CSV files' name columns
+_EMAIL = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+")
+_ENT_LINK = re.compile(r'<a href="[^"]*/(?:unternehmen|auftraggeber)/[^"]*"[^>]*>(.*?)</a>|<span class="who">(.*?)</span>', re.S)
+_ENT_TD = re.compile(r"<td\b[^>]*>(.*?)</td>", re.S)
+# inside a cell: a record's title (a publication's text), the notes under a name, a mailto: link
+_ENT_NOT = re.compile(r'<a href="[^"]*/auftrag/[^"]*"[^>]*>.*?</a>|<(span|div) class="sub[^"]*"[^>]*>.*?</\1>'
+                      r'|<a href="mailto:[^"]*">.*?</a>', re.S)
+_ENT_PAGE = re.compile(r"^/(?:de|fr|it|en)/(?:unternehmen|auftraggeber)/[^/]+/$")
+_ENT_HEAD = re.compile(r'<h1\b[^>]*>(.*?)</h1>|<title>(.*?)</title>|<meta name="description" content="([^"]*)"', re.S)
+
+
+def email_entity_errors(here: str, html: str) -> list:
+    """E-mail addresses where a page names a company or an authority: a link to its page, a winner's card, a
+    table's name cells (not a title, not a note), and on a company's or an authority's own page its H1, <title> and
+    description. Publication texts may quote an address; a name may not."""
+    parts = [g for m in _ENT_LINK.finditer(html) for g in m.groups() if g]
+    parts += [_ENT_NOT.sub(" ", m.group(1)) for m in _ENT_TD.finditer(html)]
+    if _ENT_PAGE.match(here):
+        parts += [next((g for g in m.groups() if g), "") for m in _ENT_HEAD.finditer(html)]
+    out = []
+    for x in parts:
+        hit = _EMAIL.search(htmlmod.unescape(_TAG.sub(" ", x)))
+        if hit:
+            out.append(hit.group(0))
+    return out
+
+
+def email_data_errors(shards: dict, offen: dict, csv_texts: dict) -> list:
+    """E-mail addresses as names in the search index, the open tenders' authorities and the CSV name columns."""
+    out = []
+    for k, sh in shards.items():
+        for kind, rows in sh.items():
+            out += [f"suche/{k}.json {kind}: {r[0]}" for r in rows if _EMAIL.search(str(r[0]))]
+    out += [f"offen.json: {b}" for b in offen.get("b", []) if _EMAIL.search(str(b))]
+    for name, txt in csv_texts.items():
+        for r in csv.reader(io.StringIO(txt, newline=""), delimiter=";"):
+            if len(r) > 3 and (_EMAIL.search(r[2]) or _EMAIL.search(r[3])):
+                out.append(f"{name}: {r[2] or r[3]}")
+                break
+    return out
+
+
+def person_sitemap_errors(pages: dict, sitemap_urls: set) -> list:
+    """No company page named after a natural person in the sitemap, and none indexable (pages: path -> (name,
+    noindex))."""
+    out = []
+    for here, (name, noindex) in sorted(pages.items()):
+        if person_name(name) and (here in sitemap_urls or not noindex):
+            out.append(f"{here} ({name})")
+    return out
+
+
 class Design:
     """What every page's head and money columns must say (14.10.2026)."""
 
@@ -901,9 +1035,10 @@ class Design:
         self.errs[kind].append((here, detail))
 
     def money_columns(self, here: str, html: str) -> None:
-        n, errs = money_column_errors(html, self.units)
+        seen: list = []
+        n, errs = money_column_errors(html, self.units, seen)
         self.columns += n
-        for kind, detail in errs:
+        for kind, detail in errs + one_scale_errors(seen):
             self.err(kind, here, detail)
 
     def head(self, here: str, html: str, open_tender: bool) -> None:
@@ -1030,6 +1165,9 @@ def main() -> int:
     home_js_bad, first_head = [], ""
     # step 5: the retired words, page by page; meta descriptions over 155 characters
     term_bad, long_desc = [], []
+    # fix round 1: simap.ch in the page's language, the total's note, the company pages named after a person
+    simap_bad, note_bad, person_pages, email_bad = [], [], {}, []
+    joint_n = sum(1 for a in awards if len(G.winners(a)) > 1)
 
     for f in OUT.rglob("index.html"):
         html = f.read_text(encoding="utf-8")
@@ -1058,6 +1196,19 @@ def main() -> int:
         x = relative_errors(html, rel_pat)
         if x:
             rel_bad.append((here, x[0]))
+        if hp and hp[0] in LANGS4:
+            x = simap_lang_errors(hp[0], html)
+            if x:
+                simap_bad.append((here, x[0]))
+        x = email_entity_errors(here, html)
+        if x:
+            email_bad.append((here, x[0]))
+        if len(hp) == 1 and hp[0] in LANGS4:
+            note_bad += [(here, x) for x in sum_note_errors(html, joint_n)]
+        if len(hp) == 3 and hp[1] == "unternehmen":
+            h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", html, re.S)
+            person_pages[here] = (htmlmod.unescape(_TAG.sub("", h1.group(1))) if h1 else "",
+                                  bool(re.search(r'<meta name="robots" content="[^"]*noindex', html)))
         x = term_errors(here, html)
         if x:
             term_bad.append((here, x))
@@ -1218,10 +1369,13 @@ def main() -> int:
     import gzip
     data_files = {"/" + f.relative_to(OUT).as_posix(): f.read_bytes()
                   for f in [OUT / "daten" / "offen.json", OUT / "daten" / "offen-n.json", OUT / "daten" / "abo-rate.json",
-                            *sorted((OUT / "daten" / "suche").glob("*.json")), *sorted((OUT / "daten" / "kb").glob("*.json"))]
+                            OUT / "daten" / "offen-dl.json",
+                            *sorted((OUT / "daten" / "suche").glob("*.json")), *sorted((OUT / "daten" / "kb").glob("*.json")),
+                            *sorted((OUT / "daten" / "ab").glob("*.json")), *sorted((OUT / "daten" / "kf").glob("*.json"))]
                   if f.is_file()}
     j_errs = json_errors(data_files)
-    for need in ("/daten/offen.json", "/daten/offen-n.json", "/daten/abo-rate.json", "/daten/suche/themen.json"):
+    for need in ("/daten/offen.json", "/daten/offen-n.json", "/daten/abo-rate.json", "/daten/suche/themen.json",
+                 "/daten/offen-dl.json"):
         if need not in data_files:
             j_errs.append(f"{need} mancante")
     js_gz = sum(len(gzip.compress(f.read_bytes(), 9)) for f in [OUT / "stand.js", *sorted((OUT / "js").glob("*.js"))]
@@ -1264,6 +1418,27 @@ def main() -> int:
         print(f"    {m}")
     print(f"  ricerca senza JS        {len(sp_errs) + len(form_bad)} problemi (/xx/suche/ e il modulo in ogni intestazione)")
     for m in (sp_errs + [f"{h} {x}" for h, x in form_bad])[:4]:
+        print(f"    {m}")
+    sm_urls = set()
+    for sm in OUT.glob("sitemap-*.xml"):
+        sm_urls |= {u[len(SITE + BASE):] for u in re.findall(r"<loc>([^<]+)</loc>", sm.read_text(errors="replace"))}
+    person_bad = person_sitemap_errors(person_pages, sm_urls)
+    css0 = (OUT / "style.css").read_text(encoding="utf-8") if (OUT / "style.css").is_file() else ""
+    hid_errs = hidden_rule_errors(css0)
+    csv_texts = {f.relative_to(OUT).as_posix(): f.read_bytes()[3:].decode("utf-8")
+                 for f in (OUT / "daten").glob("*/*.csv")}
+    shards0 = {k[len("/daten/suche/"):-5]: json.loads(v) for k, v in data_files.items()
+               if k.startswith("/daten/suche/") and not k.endswith("/themen.json")} if not j_errs else {}
+    email_bad += [("daten", x) for x in email_data_errors(
+        shards0, json.loads(data_files["/daten/offen.json"]) if "/daten/offen.json" in data_files and not j_errs else {},
+        csv_texts)]
+    print(f"  giro 1: [hidden] {'ok' if not hid_errs else hid_errs[0]} · simap in un'altra lingua {len(simap_bad)} pagine"
+          f" · nota della somma {len(note_bad)} problemi ({joint_n} zuschläge a piu' imprese)"
+          f" · persone fisiche indicizzabili o in sitemap {len(person_bad)}"
+          f" (su {sum(1 for n, _x in person_pages.values() if person_name(n))} pagine di persone)"
+          f" · indirizzi e-mail come nome {len(email_bad)}")
+    for m in ([f"{h} {x}" for h, x in simap_bad[:3]] + [f"{h} {x}" for h, x in note_bad[:3]] + person_bad[:3]
+              + [f"{h} {x}" for h, x in email_bad[:3]]):
         print(f"    {m}")
     print(f"  parole relative al giorno {len(rel_bad)} pagine")
     for h, x in rel_bad[:4]:
@@ -1357,7 +1532,8 @@ def main() -> int:
                  or bad_sums or single_amount or lost or stale or nf_bad or n_struct
                  or n_design or c_errs or f_errs or fo_errs or a_errs or tot_errs or bad_buyers or bad_form
                  or bad_feeds or bad_ld or j_errs or sz_errs or idx_errs or open_errs or sp_errs or form_bad
-                 or rel_bad or term_bad or long_desc) else 0
+                 or rel_bad or term_bad or long_desc or hid_errs or simap_bad or note_bad or person_bad
+                 or email_bad) else 0
 
 
 if __name__ == "__main__":

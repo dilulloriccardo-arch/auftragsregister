@@ -167,6 +167,10 @@
   function stack(h, next) {
     if (!h || !next || RM) return;
     var inner = h.querySelector(".recede"), shade = h.querySelector(".shade"), q = 0;
+    // pinned only while the hero fits the screen (fix round 1): taller, its doors would never come into view
+    function fit() { h.classList.toggle("pin", h.offsetHeight <= W.innerHeight); }
+    fit();
+    W.addEventListener("resize", fit);
     function upd() {
       q = 0;
       if (getComputedStyle(h).position !== "sticky") { shade.style.opacity = 0; inner.style.transform = ""; h.style.visibility = ""; return; }
@@ -239,11 +243,15 @@
       }
     });
     var K = M.order.map(function (k) { var c = M.k[k]; return { k: k, n: c[0], name: c[1], href: c[2], ax: M.anchors[k][0], ay: M.anchors[k][1] }; });
-    var maxN = 1, total = M.total || 0;
-    K.forEach(function (c) { maxN = Math.max(maxN, c.n); });
-    K.forEach(function (c) { c.t = Math.sqrt(c.n / maxN); });
-    var order = K.map(function (c, i) { return i; }).sort(function (a, b) { return K[b].n - K[a].n; }), rankOf = [];
-    order.forEach(function (ci, r) { rankOf[ci] = r; });
+    var maxN = 1, total = M.total || 0, order = [], rankOf = [];
+    function ranks() {
+      maxN = 1;
+      K.forEach(function (c) { maxN = Math.max(maxN, c.n); });
+      K.forEach(function (c) { c.t = Math.sqrt(c.n / maxN); });
+      order = K.map(function (c, i) { return i; }).sort(function (a, b) { return K[b].n - K[a].n; });
+      order.forEach(function (ci, r) { rankOf[ci] = r; });
+    }
+    ranks();
     var lit = new Float32Array(N), act = [], inAct = new Uint8Array(N), ign = 26, hov = -1, P = 0, Wd = 0, Ht = 0, dpr = 1;
     var px = -1, py = -1, lx = 0, ly = 0, lt = 0, inside = false, arm = new Spring(ROW, 0), stop = null, settle = 0;
     var links = [].slice.call(sec.querySelectorAll(".kl a[data-k]"));
@@ -391,6 +399,12 @@
       }
     }
     readout(-1);
+    // the counts of the reader's moment, once a deadline has passed since the build (/stand.js, fix round 1)
+    if (A.oc) A.oc.then(function (c) {
+      if (!c) return;
+      K.forEach(function (k) { k.n = c.k[k.k] || 0; });
+      total = c.a; r0[2] = A.count(total); ranks(); paintBase(); draw(); if (hov < 0) readout(-1);
+    });
   }
 
   var mj = D.getElementById("karte"), mb = D.querySelector(".mapbox");

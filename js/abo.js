@@ -10,7 +10,9 @@
    and the new ones a week, from the last 8 weeks of first publications (/daten/abo-rate.json).
    The prefill reads ?k=ZH&b=45 (the links of the pages' alert boxes): only the 26 canton codes and
    two-digit CPV divisions, at most five of each; a value without a pill gets one, labelled from the
-   build-time name map (never from the address), in the group of its division, which opens. */
+   build-time name map (never from the address), in the group of its division, which opens.
+   Fix round 1 (20.10.2026): the selection said in words beside the button ('Sie abonnieren: Zürich · Bauarbeiten'),
+   a box that filters the 45 Branchen as one types, the preview in its box from the start (nothing moves). */
 (function () {
   var d = document, f = d.getElementById('abo'); if (!f) return;
   var LL = __L__, A = window.AR, l = d.documentElement.lang, L = LL[l] || LL.de;
@@ -51,11 +53,8 @@
       s.textContent = ' ' + fmt(L.sel, { n: g.querySelectorAll('input:checked').length });
     });
   }
-  // the preview: open now, and new ones a week
-  var pv = d.createElement('p'), O = null, R = null;
-  pv.className = 'pv'; pv.setAttribute('role', 'status'); pv.setAttribute('aria-live', 'polite'); pv.hidden = true;
-  var fs = f.querySelectorAll('fieldset'), last = fs[fs.length - 1];
-  if (last) last.parentNode.insertBefore(pv, last.nextSibling);
+  // the preview: open now, and new ones a week (its box is in the page)
+  var pv = f.querySelector('.pv'), sm = f.querySelector('.sumry'), O = null, R = null;
   function week(w) {
     var s = w >= 10 ? String(Math.round(w)) : (Math.round(w * 10) / 10).toFixed(1).replace(/\.0$/, '');
     return l === 'en' ? s : s.replace('.', ',');
@@ -75,10 +74,37 @@
     var open = n === 1 ? L.open_1 : fmt(L.open_n, { n: A.count(n) });
     pv.innerHTML = '';
     pv.appendChild(d.createTextNode(w > 0 && w < 1 ? fmt(L.pv_lt, { open: open }) : fmt(L.pv, { open: open, w: week(w) })));
-    var sm = d.createElement('small'); sm.textContent = L.pv_note; pv.appendChild(sm);
-    pv.hidden = false;
+    var nt = d.createElement('small'); nt.textContent = L.pv_note; pv.appendChild(nt);
   }
-  function changed() { fill(); counts(); preview(); }
+  // the selection in words, beside the button: 'Sie abonnieren: Zürich, Bern · Bauarbeiten' (fix round 1)
+  function names(n) {
+    return [].map.call(f.querySelectorAll('input[name=' + n + ']:checked'), function (x) {
+      var t = x.nextElementSibling, b = t && t.querySelector('b');
+      return t ? (b ? t.textContent.slice(b.textContent.length) : t.textContent).trim() : x.value;
+    });
+  }
+  function summary() {
+    if (!sm) return;
+    var k = names('k'), b = names('b');
+    sm.textContent = fmt(L.sum_sel, { s: (k.length ? k.join(', ') : L.all_ch) + ' · ' + (b.length ? b.join(', ') : L.all_b) });
+  }
+  function changed() { fill(); counts(); preview(); summary(); }
+  // the Branchen as one types (fix round 1): the pills that match, their groups opened, the others hidden
+  var bq = d.getElementById('abo-bq'), bqn = f.querySelector('.bqn');
+  if (bq && A) bq.addEventListener('input', function () {
+    var q = A.fold(bq.value.trim()), hit = 0;
+    [].forEach.call(f.querySelectorAll('details.grp'), function (g) {
+      var n = 0;
+      [].forEach.call(g.querySelectorAll('label'), function (lb) {
+        var ok = !q || A.fold(lb.textContent).indexOf(q) >= 0;
+        lb.hidden = !ok; if (ok) n++;
+      });
+      g.hidden = !n; if (q) g.open = n > 0; hit += n;
+    });
+    if (bqn) { bqn.hidden = !!hit || !q; bqn.textContent = hit || !q ? '' : fmt(L.bf_none, { q: bq.value.trim() }); }
+  });
+  // Enter in the filter box does not send the form
+  if (bq) bq.addEventListener('keydown', function (ev) { if (ev.key === 'Enter') ev.preventDefault(); });
   f.addEventListener('change', changed);
   var K = 'AG AI AR BE BL BS FR GE GL GR JU LU NE NW OW SG SH SO SZ TG TI UR VD VS ZG ZH'.split(' ');
   function pre() {
@@ -119,7 +145,7 @@
     try { sec.scrollIntoView({ block: 'start' }); } catch (x) { }
     try { if (window.matchMedia && matchMedia('(pointer:fine)').matches) em.focus({ preventScroll: true }); } catch (x) { }
   }
-  pre(); fill(); counts();
+  pre(); fill(); counts(); summary();
   if (A) {
     var go = function () {
       Promise.all([A.json('/daten/offen.json'), A.json('/daten/abo-rate.json')]).then(function (x) { O = x[0]; R = x[1]; preview(); }, function () { });

@@ -28,6 +28,25 @@ figure .note .key{display:inline-block;width:.95em;height:.95em;margin:0 .5em -.
   background:repeating-linear-gradient(-45deg,var(--mark) 0 2px,transparent 2px 5px);box-shadow:inset 0 0 0 1.5px var(--mark)}
 figure .src,p.src{margin:.75rem 0 0;font-size:.875rem;color:var(--muted);max-width:70ch}
 .mc .unit{margin:1.25rem 0 1rem;font:700 .8125rem/1.35 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+/* fix round 1: the month under the pointer or the keyboard in the unit line (no native title on 27 bars), and
+   the chart as a table on demand (a details, so it works without a script; :has() switches the view) */
+.mch{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem 1rem;margin:1.25rem 0 1rem}
+.mch .unit{margin:0}
+.mc .rd{margin-left:.875rem;color:var(--ink);letter-spacing:.06em}
+.tg>summary{display:inline-flex;align-items:center;min-height:2.25rem;padding:.25rem .75rem;border:1px solid var(--field);cursor:pointer;
+  list-style:none;font:700 .8125rem/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold-hi)}
+.tg>summary::-webkit-details-marker{display:none}
+.tg[open]>summary{background:var(--grad);border-color:transparent;color:var(--on-brass)}
+.mc:has(.tg[open]) .cc{display:block}
+.mc:has(.tg[open]) .yax,.mc:has(.tg[open]) .xax,.mc:has(.tg[open]) .cc td>span{display:none}
+.mc:has(.tg[open]) .cc tbody{display:table-row-group;height:auto;background:none}
+.mc:has(.tg[open]) .cc tr{display:table-row}
+.mc:has(.tg[open]) .cc th,.mc:has(.tg[open]) .cc td{display:table-cell;height:auto;padding:.3125rem .875rem .3125rem 0;
+  border-bottom:1px solid var(--line);font-size:.9375rem;font-weight:400;text-align:left;color:var(--text)}
+.mc:has(.tg[open]) .cc .sr{position:static!important;width:auto;height:auto;margin:0;overflow:visible;clip:auto;clip-path:none;
+  white-space:normal;font-style:normal}
+.cc tr.on td>span{filter:brightness(1.35)}
+.cc table:focus-visible{outline:3px solid var(--focus);outline-offset:.375rem}
 .cc{--ch:13.75rem;display:grid;grid-template-columns:auto minmax(0,1fr);gap:0 .625rem}
 .cc .yax{position:relative;height:var(--ch);min-width:2.6em;font-size:.8125rem;color:var(--muted);font-variant-numeric:tabular-nums}
 .cc .yax span{position:absolute;right:0;transform:translateY(50%);line-height:1}
@@ -127,21 +146,21 @@ def month_columns(series, *, fig_id: str, title: str, takeaway: str, unit_label:
     if cur and vals[cur] > pk and all(
             abs(pos[k] - len(keys) + 1) > 2 or abs(vals[cur] - vals[k]) >= .15 * ymax for k in lab):
         lab.add(cur)
-    colon = lingue.COLON[formato.LANG]
     rows = []
     for k in keys:
         v = vals[k]
         cls = " ".join(c for c in ("part" if k in partial else "", "zero" if v == 0 else "",
                                     "pk" if k in peaks and v else "") if c)
         unit = units[0] if v == 1 else units[1]
-        tip = f"{formato.month(k, full=True)}{colon} {formato.count(v)} {unit}"
         # the visible label is hidden from screen readers: the cell's own text already says
         # "7 aggiudicazioni", and they heard "7 7 aggiudicazioni" (verifier, 28.09.2026)
         b = f'<b aria-hidden="true">{_e(formato.count(v))}</b>' if k in lab and v else ""
+        # no title on the cell (fix round 1): /stand.js shows the month under the pointer or the keyboard in the
+        # unit line, and the 'Tabelle' toggle shows every value; 27 native tooltips cost 1.2 KB a chart
         rows.append(f'<tr{f" class={chr(34)}{cls}{chr(34)}" if cls else ""}>'
                     f'<th scope="row" class="sr">{_e(formato.month(k, full=True))}</th>'
                     # a month without awards draws no column (tr.zero hides it): no height to state
-                    f'<td title="{_e(tip)}"><span{f" style={chr(34)}height:{100 * v / ymax:.1f}%{chr(34)}" if v else ""}>{b}</span>'
+                    f'<td><span{f" style={chr(34)}height:{100 * v / ymax:.1f}%{chr(34)}" if v else ""}>{b}</span>'
                     f'<em class="sr">{_e(formato.count(v))} {_e(unit)}</em></td></tr>')
     # x axis: slot 0 always names its month AND year ('Okt. 2024'): an axis opening on a bare
     # "Okt." left the reader guessing the year (80 charts per language), and a bare "2024"
@@ -173,7 +192,8 @@ def month_columns(series, *, fig_id: str, title: str, takeaway: str, unit_label:
     return (f'<figure class="mc" aria-labelledby="{fig_id}" aria-describedby="{fig_id}-t">'
             f'<h2 id="{fig_id}">{_e(title)}</h2>'
             + (f'<p class="lede" id="{fig_id}-t">{_e(takeaway)}</p>' if takeaway else "")
-            + f'<p class="unit" aria-hidden="true">{_e(unit_label)}</p>'
+            + f'<div class="mch"><p class="unit" aria-hidden="true">{_e(unit_label)}<span class="rd"></span></p>'
+            f'<details class="tg"><summary>{_e(lingue.t("chart_table", formato.LANG))}</summary></details></div>'
             f'<div class="cc{"" if mid else " nomid"}"><div class="yax" aria-hidden="true">{yax}</div>'
             f'<table><caption class="sr">{_e(title)}</caption><tbody>{"".join(rows)}</tbody></table>'
             f'<div class="xax" aria-hidden="true">{"".join(xs)}</div></div>'
@@ -182,7 +202,7 @@ def month_columns(series, *, fig_id: str, title: str, takeaway: str, unit_label:
 
 def rank_list(items, *, fig_id: str, title: str | None = None, labelledby: str | None = None,
               lede: str = "", other=None, total: int | None = None, two_cols: bool = False,
-              note: str = "", src: str = "") -> str:
+              note: str = "", src: str = "", ids=None, vattrs=None) -> str:
     """items: [(label, href or None, value, value_text)] in display order; other: same shape
     or None (muted, no bar). total set -> each row shows its share. Bars scale to the largest
     item; fewer than 3 items -> no bars. src: the chart's source line (HTML, step 3a)."""
@@ -199,7 +219,12 @@ def rank_list(items, *, fig_id: str, title: str | None = None, labelledby: str |
         if bars and not oth:
             trk = ('<span class="trk" aria-hidden="true">'
                    + (f'<i style="width:{max(1.0, 100 * v / mx):.1f}%"></i>' if v else "") + "</span>")
-        li.append(f'<li{" class=" + chr(34) + "oth" + chr(34) if oth else ""}><span class="lab">{name}</span>'
+        # ids: an anchor per row (#kb-72 on a canton page); vattrs: attributes of the value (data-oc, fix round 1)
+        rid = f' id="{_e(ids[i])}"' if ids and i < len(ids) and ids[i] else ""
+        va = vattrs[i] if vattrs and i < len(vattrs) and vattrs[i] else ""
+        li.append(f'<li{rid}{" class=" + chr(34) + "oth" + chr(34) if oth else ""}><span class="lab">{name}</span>'
+                  f'<span class="val"><span{va}>{_e(vt)}</span>{share}</span>{trk}</li>' if va else
+                  f'<li{rid}{" class=" + chr(34) + "oth" + chr(34) if oth else ""}><span class="lab">{name}</span>'
                   f'<span class="val">{_e(vt)}{share}</span>{trk}</li>')
     lab_attr = labelledby or fig_id
     return (f'<figure class="rk" aria-labelledby="{lab_attr}">'
