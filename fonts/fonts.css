@@ -4,7 +4,14 @@
    with such a letter (ž, Š, ő …). The Latin files of both families map U+202F, the French narrow no-break
    space (genera.main checks it). Only is.woff2 is preloaded: the text of the first screen.
    The fallbacks carry the web fonts' metrics (size-adjust and the overrides, measured with fontTools against
-   Arial, Arial Bold and Arial Narrow), so the swap to the web font moves no line. */
+   Arial, Arial Bold and Arial Narrow), so the swap to the web font moves no line.
+   Fix round 5 (21.10.2026): Android has no Arial, and its first paint fell to Roboto with no metrics of ours (a buyer's
+   page moved by 0.38 at 390 px when the display face came: the site's name took two lines in Roboto). "IS fr" and
+   "AR Gothic fr" are Roboto with the same metrics: size-adjust measured with fontTools on the site's own text (the
+   regular 102.8-103.6 %, the bold 106.2-106.5 %, the display face on the headings in capitals 56.0-56.9 %; Roboto 2.137,
+   the bold on Roboto Bold 2011 corrected by the regular's difference between the two), the value within each range
+   chosen on 15 pages at 390 and 1280 px, the web fonts blocked: 51 of 7'212 text blocks with a line more or less, as
+   with Arial (56); the overrides are the web font's ascent and descent over the size-adjust. */
 @font-face{font-family:"Instrument Sans";font-weight:400;font-display:swap;src:url(/fonts/is.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2190-2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:"Instrument Sans";font-weight:400;font-display:swap;src:url(/fonts/is-ext.woff2) format("woff2");unicode-range:U+0100-0130,U+0132-0151,U+0154-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:"Instrument Sans";font-weight:700;font-display:swap;src:url(/fonts/is7.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2190-2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -15,3 +22,6 @@
 @font-face{font-family:"IS fb";font-weight:700;src:local("Arial Bold"),local("Arial-BoldMT");size-adjust:99.81%;ascent-override:97.19%;descent-override:25.05%;line-gap-override:0%}
 @font-face{font-family:"AR Gothic fb";src:local("Arial Narrow"),local("ArialNarrow");size-adjust:64.11%;ascent-override:148.52%;descent-override:42.04%;line-gap-override:0%}
 @font-face{font-family:"AR Gothic fb2";src:local("Arial"),local("ArialMT");size-adjust:52.56%;ascent-override:181.14%;descent-override:51.28%;line-gap-override:0%}
+@font-face{font-family:"IS fr";font-weight:400;src:local("Roboto"),local("Roboto-Regular");size-adjust:103.2%;ascent-override:93.99%;descent-override:24.22%;line-gap-override:0%}
+@font-face{font-family:"IS fr";font-weight:700;src:local("Roboto Bold"),local("Roboto-Bold");size-adjust:106.3%;ascent-override:91.25%;descent-override:23.52%;line-gap-override:0%}
+@font-face{font-family:"AR Gothic fr";src:local("Roboto"),local("Roboto-Regular");size-adjust:56.5%;ascent-override:168.52%;descent-override:47.7%;line-gap-override:0%}

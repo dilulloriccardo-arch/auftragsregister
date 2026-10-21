@@ -3703,6 +3703,9 @@ JS["z_h"] = {"de": "Vorschläge:", "fr": "Suggestions :", "it": "Suggerimenti:",
 # fix round 3: the divider before the matches of a part of a word, and the alert link's note when a keyword names a Branche
 JS["tier_w"] = {"de": "Weitere Treffer (Wortteil)", "fr": "Autres résultats (partie de mot)",
                 "it": "Altri risultati (parte di parola)", "en": "More matches (part of a word)"}
+# fix round 5: the same divider when no match is whole ('Weitere' with nothing above it), in the lists and the search
+JS["tier_a"] = {"de": "Treffer als Wortteil", "fr": "Résultats par partie de mot", "it": "Risultati per parte di parola",
+                "en": "Matches on part of a word"}
 JS["f_abo_kwb"] = {"de": "Das E-Mail-Abo übernimmt die Branche «{b}»; nach Stichwörtern filtert es nicht.",
                    "fr": "L’alerte e-mail reprend la branche « {b} » ; elle ne filtre pas par mots-clés.",
                    "it": "L’avviso e-mail riprende il ramo «{b}»; non filtra per parole chiave.",

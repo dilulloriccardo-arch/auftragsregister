@@ -14,21 +14,11 @@
    '268 Zuschläge an 264 Unternehmen' says how many of them won exactly one. */
 (function () {
   var A = window.AR; if (!A || A.kb) return; A.kb = 1;
-  var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc;
+  var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, firm = A.firm;
   var LI = { de: 0, fr: 1, it: 2, en: 3 }[l];
   var m = location.pathname.match(/\/kanton\/([A-Z]{2})\/$/); if (!m) return;
   var K = m[1], fig = d.querySelector('figure.rk[aria-labelledby="chart-sectors"]'); if (!fig) return;
   var links = [].slice.call(fig.querySelectorAll('a[href*="/branche/"]')), panel = null, from = null, PU = fig.getAttribute('data-u') || '', xo = false;
-  function slug(s) {
-    s = String(s).toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss');
-    if (s.normalize) s = s.normalize('NFKD');
-    try { s = s.replace(new RegExp('\\p{M}', 'gu'), ''); } catch (e) { s = s.replace(/[̀-ͯ]/g, ''); }
-    return s.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 70) || 'x';
-  }
-  function firm(x) {
-    var p = x[1], name = esc(x[0]);
-    return p ? '<a href="' + B + '/' + l + '/unternehmen/' + (p === 1 ? slug(x[0]) : p) + '/">' + name + '</a>' : name;
-  }
   // a money column in one unit, as formato.unit_for()/scaled(): thousands, or millions from a median of a million
   var DEC = l === 'en' ? '.' : ',';
   function unit(vs) {

@@ -38,6 +38,17 @@
     return s.replace(MK, '').replace(/ae/g, 'a').replace(/oe/g, 'o').replace(/ue/g, 'u');
   }
   function words(s) { return fold(s).split(/[^0-9a-z]+/).filter(function (x) { return x; }); }
+  // a name's page, as genera.slug() (fix round 5: one copy for the search, the canton's panel and the buyer's table);
+  // a company [name, 0 | 1 (its page is slug(name)) | its page's slug], linked when it has a page
+  function slug(s) {
+    s = String(s).toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss');
+    if (s.normalize) s = s.normalize('NFKD');
+    return s.replace(MK, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 70) || 'x';
+  }
+  function firm(x) {
+    var p = x[1], n = esc(x[0]);
+    return p ? '<a href="' + B + '/' + l + '/unternehmen/' + (p === 1 ? slug(x[0]) : p) + '/">' + n + '</a>' : n;
+  }
 
   // the footer's data line
   var sd = D[l], sp = (D.t[l] || '').split('{d}');
@@ -100,17 +111,25 @@
     }
     [].forEach.call(d.querySelectorAll('.acts a[href$="frist.ics"]'), function (a) { if (live) a.style.visibility = 'hidden'; else a.hidden = true; });
   }
-  // one element with a deadline: its label and class once; a list row whose deadline has passed hidden (live: muted in
-  // its place, its label 'abgelaufen'), a record's deadline tile expired
-  function one(e, hid, live) {
+  // one element with a deadline: its label and class once; a list row whose deadline has passed hidden, or muted in its
+  // place with 'abgelaufen' as its label: live, and at load once the page is painted (pt; fix round 5: a slow load hid
+  // the rows after the first paint and the list moved by 0.04-0.07), but in a tender list, whose head hid them before
+  // it (J_LIST), and in the home's next deadlines, which keep a reserve (data-show); a record's deadline tile expired.
+  // Painted: the document's timeline has run a frame (Chrome reports the paint itself some 50 ms after it, too late
+  // for a script that comes right after it), or the paint is reported
+  function one(e, hid, live, pt) {
     var r = rel(e.getAttribute('data-deadline')), x;
     if (!r) return;
     if (r.c === 'over') {
-      if (e.tagName === 'TR' || e.tagName === 'LI') {
-        if (live) { if (!e.classList.contains('off')) { e.classList.add('off'); x = e.querySelector('.rel'); if (x) over(x); hid.push(e); } }
-        else if (!e.hasAttribute('data-gone')) { e.hidden = true; e.setAttribute('data-gone', ''); hid.push(e); }
-      } else if (!e.classList.contains('off')) expire(e, live);
-      return;
+      if (e.tagName !== 'TR' && e.tagName !== 'LI') { if (!e.classList.contains('off')) expire(e, live); return; }
+      if (!live && !(pt && e.tagName === 'LI' && !e.closest('[data-show]'))) {
+        if (!e.hasAttribute('data-gone')) { e.hidden = true; e.setAttribute('data-gone', ''); hid.push(e); }
+        return;
+      }
+      if (e.classList.contains('off')) return;
+      e.classList.add('off'); hid.push(e);
+      if ((x = e.querySelector('.rel'))) return over(x);
+      r.c = '';
     }
     if (e.getAttribute('data-r')) return;
     e.setAttribute('data-r', '1');
@@ -126,11 +145,11 @@
       if (st && !st.classList.contains('off')) { st.className = 'state today'; st.lastChild.textContent = r.x; }
     }
   }
-  // every data-deadline in root; its section's own count lowered and, at load, under each list that lost rows a
-  // note. Returns the rows hidden (live: muted).
+  // every data-deadline in root; its section's own count lowered and, under each list that hid rows, a note. Returns
+  // the rows hidden or muted.
   function deco(root, live) {
-    var hid = [];
-    [].forEach.call((root || d).querySelectorAll('[data-deadline]'), function (e) { one(e, hid, live); });
+    var hid = [], pt = !live && (d.timeline && d.timeline.currentTime || performance.getEntriesByType('paint').length);
+    [].forEach.call((root || d).querySelectorAll('[data-deadline]'), function (e) { one(e, hid, live, pt); });
     var lists = [];
     hid.forEach(function (e) { var c = e.closest('table') || e.parentNode; if (lists.indexOf(c) < 0) lists.push(c); });
     lists.forEach(function (c) {
@@ -139,8 +158,8 @@
         if (!k.hasAttribute('data-n0')) k.setAttribute('data-n0', k.textContent.replace(/\D/g, ''));
         k.textContent = count(Math.max(0, +k.getAttribute('data-n0') - sec.querySelectorAll('[data-gone],[data-deadline].off').length));
       }
-      if (live) return;
       var n = c.querySelectorAll('[data-gone]').length;
+      if (live || !n) return;
       var a = c.tagName === 'TABLE' ? (c.closest('.scroll') || c) : c, nx = a.nextElementSibling, note;
       if (nx && nx.classList.contains('xh')) note = nx;
       else { note = d.createElement('p'); note.className = 'xh'; a.parentNode.insertBefore(note, a.nextSibling); }
@@ -274,7 +293,8 @@
       wrap.parentNode.insertBefore(b, wrap.nextSibling);
     }
     var btn = b.firstChild;
-    btn.textContent = fmt(L.all_n, { n: count(Math.max(total || 0, rows.length)) });
+    // the divider of a list's word parts is no row (fix round 5: 'Alle 135 anzeigen' for 134)
+    btn.textContent = fmt(L.all_n, { n: count(Math.max(total || 0, rows.length - !!tb.querySelector('tr.tier'))) });
     btn.onclick = function () {
       var r26 = rows[25];
       t.setAttribute('data-all', '1');
@@ -377,7 +397,10 @@
   totop();
 
   // a query's canton (fix round 1): 'Reinigung Zürich', 'nettoyage Genève', 'pulizia Ticino' -> the words without
-  // the canton's name (in any of the four languages, or its code in capitals) and the canton. names: {ZH: [names]}
+  // the canton's name (in any of the four languages, or its code in capitals) and the canton. names: {ZH: [names]}.
+  // Not a town's or a commune's name (fix round 5: 'Stadt Zürich' found Winterthur and Adliswil, and the alert took the
+  // Branche of 'Stadtreinigung'): 'Stadt Zürich', 'Ville de Genève' stay the phrase; PW, the words that say so
+  var PW = /(^| )(stadt|ville|citta|city|gemeinde|commune|comune)( de| di| of)?$/;
   function qparse(q, names) {
     var ow = String(q || '').trim().split(/[\s\-]+/).filter(function (x) { return x; }), t = ow.map(function (w) { return words(w).join(''); }), best = null;
     Object.keys(names || {}).forEach(function (k) {
@@ -389,7 +412,7 @@
         for (var i = 0; i + nt.length <= t.length; i++) {
           var ok = true;
           for (var x = 0; x < nt.length; x++) if (t[i + x] !== nt[x]) { ok = false; break; }
-          if (ok && (!best || nt.length > best.n)) best = { k: k, i: i, n: nt.length };
+          if (ok && !PW.test(t.slice(i < 2 ? 0 : i - 2, i).join(' ')) && (!best || nt.length > best.n)) best = { k: k, i: i, n: nt.length };
         }
       });
     });
@@ -403,8 +426,10 @@
   // whole word 4, the start of a word 3, the end of a compound ('Gebäudereinigung') 2, inside a word
   // ('Vereinigung') 1; in its authority 2 at most. A word found nowhere: 0, no match. f: {c, t, b} folded words
   // the CPV prefixes a word stands for, its topic (fix round 4: 'IT' the software and the computers too, 48 and 302)
+  // (fix round 5: 'Personalverleih' found only word parts, then nothing: the staffing services, CPV 796)
   var IT = '72 48 302', SYN = { it: IT, ict: IT, edv: IT, informatik: IT, informatique: IT, informatica: IT, bau: '45',
-    construction: '45', costruzione: '45', reinigung: '909', nettoyage: '909', pulizia: '909', cleaning: '909' };
+    construction: '45', costruzione: '45', reinigung: '909', nettoyage: '909', pulizia: '909', cleaning: '909',
+    personalverleih: '796' };
   function syn(q, v) { return v && (SYN[q] || '').split(' ').some(function (p) { return p && !v.indexOf(p); }); }
   // the words a query drops while another one remains (fix round 4: 'Reinigung an Schulen' found nothing): the four
   // languages' articles and prepositions and the legal forms (genera.QUERY_STOP); liste.js and suche.js
@@ -423,10 +448,11 @@
     }
     return b;
   }
-  // a word part (fix round 4): the query's first 6 letters or more as a word's end (a compound's head: 'Reinigungsarbeiten'
-  // finds 'Gebäudereinigung'), or its last 8 or more ('Unterhaltsreinigung' finds 'Gebäudereinigung'); never a generic
-  // ending on its own ('Gärtnerarbeiten' found 641 '…arbeiten', 'Reinigung' a 'Verteidigung', 'pulizia' the 'polizia'):
-  // once its generic endings are off, 4 letters are left. PC: the parts of each word, computed once
+  // a word part (fix round 4): the query less its last one or two letters as a word's end ('Reinigungen' finds
+  // 'Gebäudereinigung'; fix round 5: its first 6 letters or more found 'Laborgebäude' for 'Gebäudereinigung' and every
+  // '…strasse' for 'Strassenreinigung'), or its last 8 or more ('Unterhaltsreinigung' finds 'Gebäudereinigung'); never
+  // a generic ending on its own ('Gärtnerarbeiten' found 641 '…arbeiten', 'Reinigung' a 'Verteidigung', 'pulizia' the
+  // 'polizia'): once its generic endings are off, 4 letters are left. PC: the parts of each word, computed once
   var GW = ' dienstleistungen leistungen leistung arbeiten dienste dienst lieferungen lieferung anlagen systeme system projekte projekt planungen planung igung isierung ierung isation ation ',
     GX = RegExp('s?(' + GW.trim().split(' ').join('|') + ')$'), PC = {};
   function gen(t) {
@@ -436,7 +462,7 @@
   function part(ws, q) {
     var c = PC[q], k, j;
     if (!c) for (c = PC[q] = [], k = q.length - 1; k > 5; k--) {
-      if (!gen(q.slice(0, k))) c.push(q.slice(0, k));
+      if (k >= q.length - 2 && !gen(q.slice(0, k))) c.push(q.slice(0, k));
       if (k > 7 && !gen(q.slice(-k))) c.push(q.slice(-k));
     }
     for (k = 0; k < c.length; k++) for (j = 0; j < ws.length; j++) if (ws[j].slice(-c[k].length) === c[k]) return 1;
@@ -455,15 +481,21 @@
     }
     return s;
   }
+  // 1 when a word of the query is found only inside a word or as a word part, after the whole matches (fix round 3, the
+  // tender lists; fix round 5, the search too)
+  function tier(f, qt) {
+    for (var i = 0; i < qt.length; i++) if (tscore(f, [qt[i]]) < 2) return 1;
+    return 0;
+  }
   // the words of an open tender of /daten/offen.json for tscore(): its titles, its CPV labels, its authority
   function twords(r, o) {
     if (!r.fw) r.fw = { t: words(r[1].map(function (v) { return v.slice(3); }).join(' ')), c: words((o.c[r[4]] || []).join(' ')), b: words(o.b[r[5]]), v: r[4] || '' };
     return r.fw;
   }
 
-  window.AR = { l: l, B: B, v: D.v, iso: D.iso, L: L, fmt: fmt, esc: esc, count: count, date: date, fold: fold, words: words,
+  window.AR = { l: l, B: B, v: D.v, iso: D.iso, L: L, fmt: fmt, esc: esc, count: count, date: date, fold: fold, words: words, slug: slug, firm: firm,
     deco: deco, rel: rel, when: when, now: now, today: today, dnum: dnum, zday: zday, load: load, json: json, totop: totop,
-    roles: roles, cut: cut, ph: PH, qparse: qparse, tscore: tscore, twords: twords, syn: SYN, sw: sw, oc: null };
+    roles: roles, cut: cut, ph: PH, qparse: qparse, tscore: tscore, tier: tier, twords: twords, syn: SYN, sw: sw, pw: PW, oc: null };
   A = window.AR;
   A.oc = counts();
   later();

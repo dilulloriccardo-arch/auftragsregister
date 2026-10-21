@@ -25,22 +25,18 @@
    whole word or a word's start; the topics' synonyms (IT -> Informatikdienstleistungen); the results page says its
    count in one live region that stays.
    Fix round 4 (21.10.2026): the stop words (A.sw, one list with the tender lists') off the query while another word
-   remains, and out of the shard's choice; 'IT' names the software and the computers too (CPV 48, 302). */
+   remains, and out of the shard's choice; 'IT' names the software and the computers too (CPV 48, 302).
+   Fix round 5 (21.10.2026): the tenders in the tender lists' order (A.tier): the whole matches first, the matches of a
+   word part after them under a divider, and in the field's list only when nothing matches whole ('Gebäudereinigung':
+   the laboratory buildings came first); 'Treffer als Wortteil' when every match is one. */
 (function () {
   var A = window.AR; if (!A || A.suche) return; A.suche = 1;
-  var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, fold = A.fold;
+  var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, fold = A.fold, toks = A.words, slug = A.slug;
   var LI = { de: 0, fr: 1, it: 2, en: 3 }[l];
-  function toks(s) { return fold(s).split(/[^0-9a-z]+/).filter(function (x) { return x; }); }
   // the word that picks the shard: the first of two letters or more once the stop words are off (A.sw: articles,
   // prepositions, legal forms; fix round 4: one list with the tender lists', in /stand.js)
   function kw(qt) { var f = A.sw(qt), i; for (i = 0; i < f.length; i++) if (f[i].length > 1) return f[i]; return f[0] || ''; }
   function words(e, s) { if (!e.w) { e.f = fold(s); e.w = e.f.split(/[^0-9a-z]+/); } return e.w; }
-  function slug(s) {
-    s = String(s).toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss');
-    if (s.normalize) s = s.normalize('NFKD');
-    try { s = s.replace(new RegExp('\\p{M}', 'gu'), ''); } catch (e) { s = s.replace(/[̀-ͯ]/g, ''); }
-    return s.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 70) || 'x';
-  }
   function n_aw(n) { return n === 1 ? L.aw_1 : fmt(L.aw_n, { n: A.count(n) }); }
   function n_open(n) { return n === 1 ? L.open_1 : fmt(L.open_n, { n: A.count(n) }); }
   // a word-prefix (key) and part-of-text (the others) test; score: whole word 4, word start 3, inside 1; the stop words
@@ -93,11 +89,12 @@
       op.t.forEach(function (r) {
         if (A.when(r[6]) <= A.now) return;
         if (qp.k && r[3].replace(/\*/g, '').split(' ').indexOf(qp.k) < 0) return;
-        var s = qr.length ? A.tscore(A.twords(r, op), qr) : (qp.k ? 1 : 0), t = title(r);
+        var s = qr.length ? A.tscore(A.twords(r, op), qr) : (qp.k ? 1 : 0), t = title(r), x;
         // the nearest deadline first among equals (n: the minus of its time, scaled)
         add('t', s, 0, base + 'auftrag/' + r[0] + '/', t.t,
           fmt(L.until, { d: A.date(r[6]) }) + ' · ' + op.b[r[5]] + ' · ' + r[3].replace(/\*/g, ''), t.l);
-        if (s) out[out.length - 1].d = A.when(r[6]);
+        // w: a word part's match (A.tier), after the whole ones
+        if (s) { x = out[out.length - 1]; x.d = A.when(r[6]); x.w = A.tier(A.twords(r, op), qr); }
       });
     }
     if (th) {
@@ -128,7 +125,7 @@
     var g = {};
     res.forEach(function (r) { (g[r.g] = g[r.g] || []).push(r); });
     ORDER.forEach(function (k) {
-      if (g[k]) g[k].sort(function (a, b) { return b.s - a.s || (a.d && b.d ? a.d - b.d : 0) || b.n - a.n || (a.x < b.x ? -1 : a.x > b.x ? 1 : 0); });
+      if (g[k]) g[k].sort(function (a, b) { return (a.w | 0) - (b.w | 0) || b.s - a.s || (a.d && b.d ? a.d - b.d : 0) || b.n - a.n || (a.x < b.x ? -1 : a.x > b.x ? 1 : 0); });
     });
     // the groups holding an exact name first (fix round 1: 'Zürich' showed tenders before the canton)
     g.order = ORDER.filter(function (k) { return g[k] && g[k][0].ex; }).concat(ORDER.filter(function (k) { return g[k] && !g[k][0].ex; }));
@@ -193,10 +190,12 @@
         var g = groups(search(q, only, r[0], r[1], r[2])), html = '', n = 0, cap = { t: 3, u: only ? 8 : 4, b: only ? 8 : 3, s: 3, k: 2, p: 2 };
         opts = []; act = -1;
         g.order.forEach(function (k) {
-          var rs = g[k], gi = ORDER.indexOf(k);
+          // tw: every tender found as a word part, said under the group's name; else only the whole matches here
+          var rs = g[k], gi = ORDER.indexOf(k), tw = rs[0].w;
           var gid = id + '-g' + gi;
-          html += '<div role="group" aria-labelledby="' + gid + '"><span class="search-grp" id="' + gid + '" role="presentation">' + esc(L['g_' + k]) + ' (' + A.count(rs.length) + ')</span>';
-          rs.slice(0, cap[k]).forEach(function (x) { html += opt(x.h, x.x, x.u, '', x.xl); n++; });
+          html += '<div role="group" aria-labelledby="' + gid + '"><span class="search-grp" id="' + gid + '" role="presentation">' + esc(L['g_' + k]) + ' (' + A.count(rs.length) + ')' +
+            (tw ? '<span class="tw">' + esc(L.tier_a) + '</span>' : '') + '</span>';
+          rs.filter(function (x) { return tw || !x.w; }).slice(0, cap[k]).forEach(function (x) { html += opt(x.h, x.x, x.u, '', x.xl); n++; });
           if (k === 't') html += opt(hubq(q, r), fmt(L.all_t, { q: q }), '', 'all');
           html += '</div>';
         });
@@ -259,6 +258,8 @@
         var rs = g[k];
         html += '<h2>' + esc(L['g_' + k]) + ' <span class="sub">(' + A.count(rs.length) + ')</span></h2><ul class="plain">';
         rs.forEach(function (x, j) {
+          // the matches of a word part after a divider, as in the tender lists
+          if (x.w && !(rs[j - 1] || {}).w) html += '<li class="tier"' + (j >= 50 ? ' hidden' : '') + '>' + esc(j ? L.tier_w : L.tier_a) + '</li>';
           html += '<li' + (j >= 50 ? ' hidden' : '') + '><a href="' + esc(x.h) + '"' + (x.xl && x.xl !== l ? ' lang="' + x.xl + '"' : '') + '>' + esc(x.x) + '</a>' +
             (x.u ? '<span class="sub sb2">' + esc(x.u) + '</span>' : '') + '</li>';
         });
@@ -272,9 +273,9 @@
       res.innerHTML = html + '</div>';
       [].forEach.call(res.querySelectorAll('[data-more]'), function (b) {
         b.addEventListener('click', function () {
-          var ul = b.previousElementSibling, first = ul.querySelector('li[hidden]');
+          var ul = b.previousElementSibling, a = ul.querySelector('li[hidden] a');
           [].forEach.call(ul.querySelectorAll('li[hidden]'), function (x) { x.hidden = false; });
-          b.remove(); if (first) { var a = first.querySelector('a'); if (a) a.focus(); }
+          b.remove(); if (a) a.focus();
         });
       });
     });

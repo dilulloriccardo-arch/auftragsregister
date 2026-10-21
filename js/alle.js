@@ -6,18 +6,8 @@
    /daten/kf/<canton>.json. Shared by the four languages; without JavaScript the CSV file is the way to all. */
 (function () {
   var A = window.AR; if (!A || A.alle) return; A.alle = 1;
-  var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc;
+  var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, firm = A.firm;
   var LI = { de: 0, fr: 1, it: 2, en: 3 }[l], DEC = l === 'en' ? '.' : ',', NB = l === 'en' ? '' : ' ';
-  function slug(s) {
-    s = String(s).toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss');
-    if (s.normalize) s = s.normalize('NFKD');
-    try { s = s.replace(new RegExp('\\p{M}', 'gu'), ''); } catch (e) { s = s.replace(/[̀-ͯ]/g, ''); }
-    return s.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 70) || 'x';
-  }
-  function firm(x) {
-    var p = x[1], name = esc(x[0]);
-    return p ? '<a href="' + B + '/' + l + '/unternehmen/' + (p === 1 ? slug(x[0]) : p) + '/">' + name + '</a>' : name;
-  }
   // an amount in the table's scale, the exact one on hover (formato.column_cell)
   function exact(v) {
     var s = v.toFixed(2).split('.'), i = A.count(+s[0]) + (s[1] === '00' ? '' : '.' + s[1]);

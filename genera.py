@@ -1597,8 +1597,8 @@ CSS = grafici.CSS + r"""
   --grad:linear-gradient(100deg,#9c7633 0%,#c9a24e 20%,#f2d892 44%,#d4ae5c 62%,#a17a35 100%);
   --grad-v:linear-gradient(180deg,#f6e2a6 0%,#d7b263 32%,#a8803a 100%);
   --bar:linear-gradient(180deg,#f2d892,#c9a24e 34%,#8f6c2c);
-  --display:"AR Gothic","AR Gothic fb","AR Gothic fb2","Arial Narrow",sans-serif;
-  --sans:"Instrument Sans","IS fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --display:"AR Gothic","AR Gothic fb","AR Gothic fb2","AR Gothic fr","Arial Narrow",sans-serif;
+  --sans:"Instrument Sans","IS fb","IS fr",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --max:77.5rem;--gut:2rem;
   --cut:polygon(0 0,100% 0,100% calc(100% - .625rem),calc(100% - .625rem) 100%,0 100%);
   --cut0:polygon(100% 0,100% 0,100% calc(100% - .625rem),100% 100%,100% 100%);
@@ -2043,6 +2043,8 @@ form.search-page button{font-size:.875rem;padding:0 1.25rem;min-height:3.25rem}
   overflow:auto;padding:.25rem 0 .375rem;background:#0b0a08;border:1px solid rgba(201,162,78,.6);box-shadow:0 1.25rem 2.5rem rgba(0,0,0,.6);text-align:left}
 .search-pop[hidden]{display:none}
 .search-grp{display:block;padding:.75rem 1rem .25rem;font:700 .8125rem/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+/* fix round 5: 'Treffer als Wortteil' under the tenders' name when no tender matches whole (js/suche.js) */
+.search-grp .tw{display:block;margin-top:.375rem;padding-top:.375rem;border-top:1px solid var(--line2);color:var(--muted);letter-spacing:.1em}
 .search-opt{display:block;padding:.5rem 1rem;color:var(--ink);text-decoration:none;line-height:1.35;font-size:1rem}
 .search-opt:hover{color:var(--ink);background:var(--hover)}
 .search-opt[aria-selected=true]{background:var(--hover);box-shadow:inset 3px 0 var(--brass)}
@@ -2123,9 +2125,9 @@ html:not(.j) .flt{display:none}
 .flt .fan{margin:.5rem 0 0;font-size:.875rem;color:var(--muted)}
 .zs{margin:.75rem 0 0;font-size:.9375rem;color:var(--ink)}
 table.tl tr.ab{display:none}
-table.tl tr.tier td{padding:.75rem 0 .5rem;border-bottom:1px solid var(--line2);font:700 .8125rem/1.35 var(--sans);letter-spacing:.14em;
+table.tl tr.tier td,.search-res .plain li.tier{padding:.75rem 0 .5rem;border-bottom:1px solid var(--line2);font:700 .8125rem/1.35 var(--sans);letter-spacing:.14em;
   text-transform:uppercase;color:var(--gold)}
-table.tl tbody tr.tier:hover{background:none}
+table.tl tbody tr.tier:hover,.search-res li.tier:hover{background:none}
 table.tl tbody tr.tier:hover>:first-child{box-shadow:none}
 table.tl.ls tr.tier>td::before{content:none}
 table.tl.ls tr.tier>td{grid-column:1/-1;grid-row:1;text-align:left}
@@ -2181,6 +2183,12 @@ button.all{margin:.875rem 0 0}
 .kb h2{margin:0}
 .kb h3{margin:1.5rem 0 .5rem}
 .kb .kbx{float:right;margin:0 0 .5rem .75rem}
+/* fix round 5: beside its list (1024-1440 px) the panel is half the page, and the newest awards' table, a list table
+   that does not scroll on a wide screen (its headers stick), stood out of it and the page scrolled sideways by 67-195 px:
+   here its headers wrap, its words break at their hyphens, and what still does not fit scrolls in the panel */
+.kb th{white-space:normal}
+.kb td{-webkit-hyphens:auto;hyphens:auto}
+.kb .scroll:has(>table.ls){overflow-x:auto}
 .rk a.kbs[aria-current]{font-weight:700;color:var(--gold-hi)}
 html:not(.j) .kbh{display:none}
 /* the panel's share of awards placed at the authority's seat, and the toggle that leaves them out (fix round 1) */
@@ -7168,9 +7176,9 @@ JS_WORDS = {
     # fix round 4: the words no script reads any more out (suche res_h, liste k_canton and k_div, kb rate_flag, alle all_n)
     "suche": ("g_t", "g_u", "g_b", "g_s", "g_k", "g_p", "all_t", "all_r", "none", "none_hint", "n_res",
               "n_res_1", "n_sug", "more", "aw_1", "aw_n", "open_1", "open_n", "to_award", "k_canton", "k_div", "k_sec",
-              "until", "loading", "failed", "z_h", "z_drop", "z_abo"),
+              "until", "loading", "failed", "z_h", "z_drop", "z_abo", "tier_w", "tier_a"),
     "liste": ("f_count", "f_first", "f_none", "f_active", "f_active_1", "multi", "all_n",
-              "z_h", "z_drop", "z_near", "z_abo", "tier_w", "f_abo_kwb"),
+              "z_h", "z_drop", "z_near", "z_abo", "tier_w", "tier_a", "f_abo_kwb"),
     "abo": ("email_missing", "email_bad", "sel", "pv", "pv_lt", "pv_note", "open_1", "open_n", "sum_sel", "all_ch",
             "all_b", "bf_none"),
     "kb": ("kb_close", "kb_h", "kb_lead", "aw_1", "aw_n", "kb_f1", "kb_fn", "kb_top", "company", "awards", "sum_l",

@@ -74,12 +74,6 @@
     if (qp.t.length && !A.tscore(A.twords(r, O), qp.t)) return false;
     return true;
   }
-  // strong: every word of the query in the topic, a title's word start or a compound's end; weak ones after them
-  function tier(r, qp) {
-    var f = A.twords(r, O);
-    for (var i = 0; i < qp.t.length; i++) if (A.tscore(f, [qp.t[i]]) < 2) return 1;
-    return 0;
-  }
   // a row as genera.tender_table() writes it
   function row(r) {
     var t = title(r), dl = r[6], cs = cants(r), fbk = r[3].indexOf('*') >= 0, lab = (O.c[r[4]] || [])[LI] || '';
@@ -123,13 +117,14 @@
     zs.innerHTML = '<strong>' + esc(L.z_h) + '</strong> ' + out.join(' · ');
   }
   // the Branche a keyword names, for the alert (fix round 3: 'Reinigung' -> 90): its synonym, else the Branche or the
-  // Bereiche whose names start with it, when one Branche holds most of them
+  // Bereiche whose names start with it, when one Branche holds most of them; never a town's word (fix round 5: 'Stadt'
+  // -> 'Stadtreinigung' -> 90, A.pw)
   function kwdiv(qt, th) {
     var s = {}, tot = 0, best = '', i, v;
     for (i = 0; i < qt.length; i++) if (A.syn[qt[i]]) return A.syn[qt[i]].slice(0, 2);
     function hit(ns) {
       var ws = A.words(ns.join(' '));
-      return qt.some(function (q) { return q.length > 2 && ws.some(function (w) { return w.indexOf(q) === 0; }); });
+      return qt.some(function (q) { return q.length > 2 && !A.pw.test(q) && ws.some(function (w) { return w.indexOf(q) === 0; }); });
     }
     (th.d || []).forEach(function (e) { if (hit(e[1])) s[e[0]] = (s[e[0]] || 0) + 1e6; });
     (th.s || []).forEach(function (e) { if (hit(e[1])) { v = e[0].slice(0, 2); s[v] = (s[v] || 0) + (e[2] || 1); } });
@@ -157,15 +152,17 @@
     if (on) {
       var rows = sc.filter(function (r) { return pass(r, qp); });
       var neu = st.o === 'neu', html = '', w = -1;
-      rows.forEach(function (r) { r.ti = qp.t.length ? tier(r, qp) : 0; });
+      // strong: every word of the query in the topic, a title's word start or a compound's end; weak ones after them
+      rows.forEach(function (r) { r.ti = qp.t.length && A.tier(A.twords(r, O), qp.t); });
       rows.sort(function (a, b) {
         return a.ti - b.ti || (neu ? (a[7] < b[7] ? 1 : a[7] > b[7] ? -1 : 0) : 0) || (A.when(a[6]) - A.when(b[6]));
       });
       // the order chosen holds within each group; the matches of a word part after a divider of their own
-      // (fix round 4: above the first match of a word part even when it is the first row, or the only one)
+      // (fix round 4: above the first match of a word part even when it is the first row, or the only one; fix round 5:
+      // 'Treffer als Wortteil' then, 'Weitere Treffer' only after whole matches)
       rows.forEach(function (r, i) { if (w < 0 && r.ti) w = i; });
       rows.forEach(function (r, i) {
-        if (i === w) html += '<tr class="tier"><td colspan="4">' + esc(L.tier_w) + '</td></tr>';
+        if (i === w) html += '<tr class="tier"><td colspan="4">' + esc(i ? L.tier_w : L.tier_a) + '</td></tr>';
         html += row(r);
       });
       tb.innerHTML = html;
