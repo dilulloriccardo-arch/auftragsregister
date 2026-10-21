@@ -430,8 +430,11 @@ _SEARCH_FORM = re.compile(r'<header class="masthead">.*?<form role="search" acti
 BANNED_TERMS = {
     "de": ("offene Aufträge", "Submissionen", "E-Mail-Alarm", "Benachrichtigung einrichten", "Gratis", "Login"),
     "fr": ("marchés ouverts", "marchés publics en cours"),
-    "it": ("appalti aperti",),
-    "en": ("open contracts", "e-mail"),
+    # fix round 3 (item 37): the buttons and controls in the Lei form, as the prose ('Iscriviti' was the tu form)
+    "it": ("appalti aperti", "Iscriviti", "Vai al contenuto", "Attiva l’avviso", "Mostra tutti", "Mostra gli altri",
+           "Cerca un ramo", "Torna su", "Azzera i filtri", "Segnala un errore", "Apri questo bando", "Aggiungi la scadenza"),
+    # fix round 3 (item 40): the term table's 'Open tender'
+    "en": ("open contracts", "e-mail", "Open for bids"),
 }
 _TERM_RX = {l: re.compile("|".join(r"(?<![\w-])" + re.escape(t).replace("\\ ", " ").replace(" ", r"\s+") for t in ts), re.I)
             for l, ts in BANNED_TERMS.items()}
@@ -501,6 +504,91 @@ def term_errors(here: str, html: str) -> list:
         parts += [x for m in _TERM_HEAD.finditer(head) for x in m.groups() if x]
     text = _term_text(_TERM_MASK.sub(" ", " ".join(parts)))
     return [(lang, c) for c in term_hits(text, lang)]
+
+
+# ------------------------------------------------------------- fix round 3 (21.10.2026)
+# The H1 never repeats its eyebrow ('OFFENE AUSSCHREIBUNGEN · KANTON' over 'Offene Ausschreibungen im Kanton Zug' on
+# 581 pages): no segment of the eyebrow whose words all stand in the H1. A record's own name (h1.rec: a company, an
+# authority, a publication) may share a word with its sector by chance ('Fenster' over 'Fenster-Keller AG').
+_EYEBROW = re.compile(r'<p class="eyebrow">(.*?)</p>', re.S)
+_H1 = re.compile(r"<h1\b([^>]*)>(.*?)</h1>", re.S)
+
+
+def _fold_words(s: str) -> list:
+    import unicodedata
+    s = unicodedata.normalize("NFKD", htmlmod.unescape(_TAG.sub(" ", s))).encode("ascii", "ignore").decode().lower()
+    return [w for w in re.split(r"[^a-z0-9]+", s) if w]
+
+
+def eyebrow_errors(html: str) -> list:
+    main = html.partition('<main id="inhalt">')[2]
+    eb, h1 = _EYEBROW.search(main), _H1.search(main)
+    if not eb or not h1 or 'class="rec' in h1.group(1):
+        return []
+    hw = set(_fold_words(h1.group(2)))
+    out = []
+    for seg in htmlmod.unescape(_TAG.sub("", eb.group(1))).split("·"):
+        ws = _fold_words(seg)
+        if ws and not re.fullmatch(r"(cpv )?[\d ]+", " ".join(ws)) and all(w in hw for w in ws):
+            out.append(f"«{seg.strip()}» nel titolo «{htmlmod.unescape(_TAG.sub('', h1.group(2)))[:60]}»")
+    return out
+
+
+# A name that ends in a full stop gets no second one from the sentence around it ('Coopérative T.B.R.C..'): the
+# site's own sentences (leads, notes, sub-lines, the tiles' notes), never a quoted publication.
+_OWN_SENTENCE = re.compile(r'<p class="(?:sum|sub|lede|note|empty)\b[^"]*">(.*?)</p>|<em class="approx">(.*?)</em>', re.S)
+_DOUBLE_STOP = re.compile(r"(?<![.\d])\.\.(?![.\d/])")
+
+
+def double_stop_errors(html: str) -> list:
+    out = []
+    for m in _OWN_SENTENCE.finditer(html.partition('<main id="inhalt">')[2]):
+        frag = m.group(1) or m.group(2) or ""
+        frag = re.sub(r'<(\w+)\b[^>]*\slang="[a-z]{2}"[^>]*>.*?</\1>', " ", frag, flags=re.S)   # a quoted text
+        t = htmlmod.unescape(_TAG.sub("", frag))
+        for x in _DOUBLE_STOP.finditer(t):
+            out.append(t[max(0, x.start() - 40):x.end() + 5])
+    return out
+
+
+# French elides 'de', 'le', 'que' before a vowel or an h, before an inserted name too ('Adjudications de Abteilung
+# Tiefbau (CSV)' on 234 pages): every French template that inserts a value after them, filled with a name that
+# starts with a vowel and one with an h, and the pages' own places where names are inserted (the CSV links, the notes).
+_ELISION_SLOT = re.compile(r"(?<![\w’'])(?:de|De|le|Le|que|Que) \{(\w+)\}")
+_NO_ELISION = re.compile(r"(?<![\w’'-])(?:de|De|le|Le|que|Que) (?=[AEIOUYHÀÂÄÉÈÊËÎÏÔÖÛÜaeiouyhàâäéèêëîïôöûü])")
+
+
+def elision_template_errors(lingue_mod) -> list:
+    out = []
+    for name, fn, tbl in (("META", lingue_mod.m, lingue_mod.META), ("IDX", lingue_mod.i, lingue_mod.IDX)):
+        for key, d in tbl.items():
+            tpl = d.get("fr") if isinstance(d, dict) else None
+            if not isinstance(tpl, str) or not _ELISION_SLOT.search(tpl):
+                continue
+            fields = set(re.findall(r"\{(\w+)\}", tpl))
+            for probe in ("Abteilung Tiefbau", "Hochbauamt", "Office fédéral des routes"):
+                kw = {f: "12" for f in fields}
+                kw.update({m.group(1): probe for m in _ELISION_SLOT.finditer(tpl)})
+                try:
+                    txt = fn(key, "fr", **kw)
+                except (KeyError, IndexError, ValueError):
+                    continue
+                if _NO_ELISION.search(txt):
+                    out.append(f"{name}[{key!r}]: {txt[:90]}")
+                    break
+    return out
+
+
+_FR_SLOTS = re.compile(r'<a [^>]*type="text/csv"[^>]*>(.*?)</a>|<p class="note">(.*?)</p>', re.S)
+
+
+def elision_page_errors(html: str) -> list:
+    out = []
+    for m in _FR_SLOTS.finditer(html):
+        t = htmlmod.unescape(_TAG.sub("", m.group(1) or m.group(2) or ""))
+        for x in _NO_ELISION.finditer(t):
+            out.append(t[max(0, x.start() - 25):x.end() + 25])
+    return out
 
 
 # ------------------------------------------------------------- structure (14.10.2026)
@@ -1177,6 +1265,8 @@ def main() -> int:
     # fix round 2: one gold button (the flat 'tag on' chip is gone), the A–Z component on the Bereich and canton
     # indexes, an official title over 110 characters a size smaller
     gold_bad, az_bad, lt_bad = [], [], []
+    # fix round 3: H1 against its eyebrow, double full stops, French elision
+    eb_bad, stop_bad, elide_bad = [], [], []
 
     for f in OUT.rglob("index.html"):
         html = f.read_text(encoding="utf-8")
@@ -1223,6 +1313,10 @@ def main() -> int:
             term_bad.append((here, x))
         if 'class="tag on"' in html:
             gold_bad.append(here)
+        eb_bad += [(here, x) for x in eyebrow_errors(html)]
+        stop_bad += [(here, x) for x in double_stop_errors(html)]
+        if hp and hp[0] == "fr":
+            elide_bad += [(here, x) for x in elision_page_errors(html)]
         if len(hp) == 2 and hp[1] in ("bereich", "kanton") and '<ul class="az' not in html:
             az_bad.append(here)
         h1r = _REC_H1.search(html)
@@ -1460,6 +1554,11 @@ def main() -> int:
           f" · titoli lunghi senza la misura minore {len(lt_bad)}")
     for m in (gold_bad[:3] + az_bad[:3] + lt_bad[:3]):
         print(f"    {m}")
+    elide_bad = [("lingue", x) for x in elision_template_errors(lingue)] + elide_bad
+    print(f"  giro 3: H1 che ripete l'occhiello {len(eb_bad)} pagine · doppio punto {len(stop_bad)}"
+          f" · elisione francese {len(elide_bad)}")
+    for h, x in (eb_bad[:3] + stop_bad[:3] + elide_bad[:3]):
+        print(f"    {h}  {x}")
     print(f"  parole relative al giorno {len(rel_bad)} pagine")
     for h, x in rel_bad[:4]:
         print(f"    {h}  «{x}»")
@@ -1553,7 +1652,7 @@ def main() -> int:
                  or n_design or c_errs or f_errs or fo_errs or a_errs or tot_errs or bad_buyers or bad_form
                  or bad_feeds or bad_ld or j_errs or sz_errs or idx_errs or open_errs or sp_errs or form_bad
                  or rel_bad or term_bad or long_desc or hid_errs or simap_bad or note_bad or person_bad
-                 or email_bad or gold_bad or az_bad or lt_bad) else 0
+                 or email_bad or gold_bad or az_bad or lt_bad or eb_bad or stop_bad or elide_bad) else 0
 
 
 if __name__ == "__main__":

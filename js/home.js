@@ -14,7 +14,10 @@
    Its words are those of the page's language (__L__, written by genera.py).
    Fix round 2: the reveal starts as soon as a block is a tenth into the screen, the horizon moves with the pillars,
    the seam continues the band's own gradient, the map shows a pointer over a canton and keeps its read-out while a
-   canton is hovered or focused. */
+   canton is hovered or focused.
+   Fix round 3 (21.10.2026): a tap on the map keeps its canton when the finger lifts, and the read-out links to that
+   canton's tenders ('Ausschreibungen in Bern →'); the list of the 26 follows the live counts; the next deadlines
+   refill from /daten/offen.json once fewer than eight remain; a figure counting up keeps the width it ends with. */
 (function () {
   "use strict";
   var A = window.AR; if (!A || A.home) return; A.home = 1;
@@ -116,9 +119,9 @@
       var s = v.toFixed(dec).split("."), i = sep ? s[0].replace(/\B(?=(\d{3})+(?!\d))/g, sep) : s[0];
       return dec ? i + dch + s[1] : i;
     }
-    var sr = D.createElement("span"), vis = D.createElement("span");
+    var sr = D.createElement("span"), vis = D.createElement("span"), w0 = el.getBoundingClientRect().width;
     sr.className = "sr"; sr.textContent = raw; vis.setAttribute("aria-hidden", "true"); vis.className = "cnt";
-    vis.style.setProperty("--w", raw.length + "ch"); vis.textContent = f(0) + tail;
+    vis.style.width = w0 + "px"; vis.textContent = f(0) + tail;
     el.textContent = ""; el.appendChild(sr); el.appendChild(vis);
     once(el, 0.4, function () {
       var t0 = -1, dur = 1300 + Math.min(700, target / 40);
@@ -126,7 +129,7 @@
         if (t0 < 0) t0 = now;
         var p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 4);
         vis.textContent = f(target * e) + tail;
-        if (p >= 1) { vis.textContent = raw; vis.style.removeProperty("--w"); return false; }
+        if (p >= 1) { vis.textContent = raw; vis.style.removeProperty("width"); return false; }
       });
     });
   }
@@ -273,7 +276,8 @@
     var mk = -1, lk = -1, fk = -1;
     var links = [].slice.call(sec.querySelectorAll(".kl a[data-k]"));
     var rk = ro.querySelector(".rk"), nm = ro.querySelector(".nm"), vl = ro.querySelector(".vl b"), cum = ro.querySelector(".cum"), bar = ro.querySelector(".bar i");
-    var r0 = [rk.textContent, nm.textContent, vl.textContent, cum.textContent];
+    var go = ro.querySelector(".go a");
+    var r0 = [rk.textContent, nm.textContent, vl.textContent, cum.textContent, go ? go.textContent : "", go ? go.getAttribute("href") : ""];
     function pct(v) { return (v * 100).toFixed(1).replace(".", L.dec); }
     function size() {
       Wd = box.clientWidth; if (!Wd) return;
@@ -337,6 +341,7 @@
     }
     function readout(ci) {
       var c, w;
+      if (go) { go.textContent = ci < 0 ? r0[4] : fmt(L.map_go, { c: K[ci].name }); go.setAttribute("href", ci < 0 ? r0[5] : K[ci].href); }
       if (ci < 0 && (ign >= 26 || ign < 1)) {
         rk.textContent = r0[0]; nm.textContent = r0[1]; vl.textContent = r0[2]; cum.textContent = r0[3]; w = 100;
       } else if (ci < 0) {
@@ -382,7 +387,7 @@
         if (e.pointerType !== "mouse" && !FINE) return;
         var r = cv.getBoundingClientRect(); move(e.clientX - r.left, e.clientY - r.top, performance.now());
       }, { passive: true });
-      cv.addEventListener("pointerleave", function () { inside = false; arm.t = 0; mk = -1; cv.style.cursor = ""; held(); run(); });
+      cv.addEventListener("pointerleave", function (e) { if (e.pointerType === "touch") return; inside = false; arm.t = 0; mk = -1; cv.style.cursor = ""; held(); run(); });
     }
     cv.addEventListener("pointerdown", function (e) {
       var r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top, ci = at(x, y);
@@ -428,9 +433,31 @@
       if (!c) return;
       K.forEach(function (k) { k.n = c.k[k.k] || 0; });
       total = c.a; r0[2] = A.count(total); ranks(); paintBase(); draw(); if (hov < 0) readout(-1);
+      var ol = sec.querySelector(".kl"), lis = ol ? [].slice.call(ol.children) : [];
+      lis.map(function (li, i) { var a = li.querySelector("a[data-k]"); return [li, a ? c.k[a.getAttribute("data-k")] || 0 : 0, i]; })
+        .sort(function (a, b) { return b[1] - a[1] || a[2] - b[2]; }).forEach(function (x) { ol.appendChild(x[0]); });
     });
   }
 
+  function refill(ul) {
+    var want = +ul.getAttribute("data-show") || 8, LI = { de: 0, fr: 1, it: 2, en: 3 }[A.l];
+    if (ul.querySelectorAll("li[data-deadline]:not([hidden])").length >= want) return;
+    A.json("/daten/offen.json").then(function (o) {
+      var have = {}, html = "", need = want - ul.querySelectorAll("li[data-deadline]:not([hidden])").length;
+      [].forEach.call(ul.querySelectorAll("li a"), function (a) { have[a.getAttribute("href")] = 1; });
+      o.t.filter(function (r) { return A.when(r[6]) > Date.now() && !have[A.B + "/" + A.l + "/auftrag/" + r[0] + "/"]; })
+        .sort(function (a, b) { return A.when(a[6]) - A.when(b[6]); }).slice(0, Math.max(0, need)).forEach(function (r) {
+          var v = r[1][r[2] ? +r[2].charAt(LI) : 0] || r[1][0], t = v.slice(3), tl = v.slice(0, 2), m = r[6];
+          if (t.length > 66) t = t.slice(0, 66).replace(/\s+\S*$/, "") + "…";
+          html += '<li data-deadline="' + A.esc(m) + '"><div class="row"><a href="' + A.B + "/" + A.l + "/auftrag/" + r[0] + '/"' +
+            (tl !== A.l && tl !== "--" ? ' lang="' + tl + '"' : "") + ">" + A.esc(t) + '</a><span class="when"><time datetime="' + m.slice(0, 10) + '">' +
+            (A.l === "en" ? +m.slice(8, 10) + "\u00a0" + A.date(m).split(" ")[1] : m.slice(8, 10) + "." + m.slice(5, 7) + ".") + "</time></span></div></li>";
+        });
+      if (html) { ul.insertAdjacentHTML("beforeend", html); A.deco(ul); }
+    }, function () { });
+  }
+  var nd = D.querySelector("ul.tl[data-show]");
+  if (nd) refill(nd);
   var mj = D.getElementById("karte"), mb = D.querySelector(".mapbox");
   if (mj && mb && W.Path2D) { try { map(mb, JSON.parse(mj.textContent)); } catch (x) { } }
   [].forEach.call(D.querySelectorAll("h2[data-split]"), reveal);

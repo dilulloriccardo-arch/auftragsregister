@@ -19,7 +19,11 @@
    tenders in Zurich, and the hub's list filtered so, scrolled to); tenders are ranked (the topic and the start of a
    title's words before a word inside another: 'Vereinigung' after the cleaning tenders); an exact canton, Branche or
    company name leads; Escape first lets go of the chosen option; no result offers a word less and the alert;
-   t=b searches the authorities only (their index's finder). */
+   t=b searches the authorities only (their index's finder).
+   Fix round 3 (21.10.2026): no open tender for a query still says so, 'Offene Ausschreibungen (0)', with the link to
+   the tender list (its own zero state names the neighbouring cantons and the alert); a word of two letters only as a
+   whole word or a word's start; the topics' synonyms (IT -> Informatikdienstleistungen); the results page says its
+   count in one live region that stays. */
 (function () {
   var A = window.AR; if (!A || A.suche) return; A.suche = 1;
   var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, fold = A.fold;
@@ -44,7 +48,7 @@
         if (w[j] === t) best = 4; else if (best < 3 && w[j].indexOf(t) === 0) best = 3;
       }
       // the shard's own word must start a word (that is why the entry is in this shard); the rest may be inside one
-      if (!best && t !== key && e.f.indexOf(t) >= 0) best = 1;
+      if (!best && t !== key && t.length > 2 && e.f.indexOf(t) >= 0) best = 1;
       if (!best) return 0;
       s += best;
     }
@@ -95,8 +99,11 @@
     }
     if (th) {
       var tq = qr.length ? qr : qt;
+      var syn = tq.map(function (w) { return A.syn[w] || ''; });
       (th.s || []).concat(th.d || []).forEach(function (e) {
         var div = e[0].length === 2, sc = score(e, e[1].join(' ') + ' ' + e[0], tq, null);
+        // the Branche a synonym names leads its group ('IT' -> Informatikdienstleistungen)
+        if (syn.some(function (v) { return v && (e[0].indexOf(v) === 0 || (div && v.indexOf(e[0]) === 0)); })) sc = Math.max(sc, 4) + (div ? 4 : 0);
         // a Branche before its own Bereiche when both match as well
         add('s', sc && sc + (div ? 1 : 0), e[2], base + (div ? 'branche/' : 'bereich/') + e[0] + '/', e[1][LI],
           (div ? L.k_div : L.k_sec) + ' · CPV ' + e[0] + ' · ' + n_aw(e[2]) + (e[3] ? ' · ' + n_open(e[3]) : ''), '',
@@ -193,10 +200,13 @@
           if (k === 't') html += opt(hubq(q, r), fmt(L.all_t, { q: q }), '', 'all');
           html += '</div>';
         });
-        if (n) html += opt(resq(q, only), fmt(L.all_r, { q: q }), '', 'all');
+        var t0 = !only && r[2] && !g.t ? '<div role="group" aria-labelledby="' + id + '-g0"><span class="search-grp" id="' + id +
+          '-g0" role="presentation">' + esc(L.g_t) + ' (0)</span>' + opt(hubq(q, r), fmt(L.all_t, { q: q }), '', 'all') + '</div>' : '';
+        if (n) html += t0 + opt(resq(q, only), fmt(L.all_r, { q: q }), '', 'all');
         else {
           html = '<span class="search-msg">' + esc(fmt(L.none, { q: q })) + ' ' + esc(L.z_h) + '</span>';
           sugg(q, only).forEach(function (x) { html += opt(x.h, x.x, '', 'all'); });
+          html += t0;
         }
         pop.innerHTML = html;
         opts = [].slice.call(pop.querySelectorAll('[role=option]'));
@@ -227,19 +237,21 @@
   }
 
   // the results page, /xx/suche/?q=…&t=u
-  var res = d.getElementById('treffer'), fseq = 0;
+  var res = d.getElementById('treffer'), fseq = 0, live = null;
+  if (res) { live = d.createElement('p'); live.className = 'sr'; live.setAttribute('role', 'status'); res.parentNode.insertBefore(live, res); }
   function full(q) {
     if (!res) return;
     var my = ++fseq, sp = new URLSearchParams(location.search), only = /^[ub]$/.test(sp.get('t') || '') ? sp.get('t') : '';
     q = (q || '').trim();
     try { history.replaceState(null, '', q ? resq(q, only) : location.pathname); } catch (e) { }
-    if (q.length < 2) { res.innerHTML = ''; return; }
+    if (q.length < 2) { res.innerHTML = ''; live.textContent = ''; return; }
     res.innerHTML = '<p class="cnt">' + esc(L.loading) + '</p>';
     data(q).then(function (r) {
       if (my !== fseq) return;
       if (!r[0] && !r[1] && !r[2]) { res.innerHTML = '<p class="cnt">' + esc(L.failed) + '</p>'; return; }
-      var all = search(q, only, r[0], r[1], r[2]), g = groups(all), html = '';
-      html += '<p class="cnt" role="status">' + esc(all.length === 1 ? L.n_res_1 : fmt(L.n_res, { n: A.count(all.length) })) + '</p>';
+      var all = search(q, only, r[0], r[1], r[2]), g = groups(all), html = '', nt = all.length === 1 ? L.n_res_1 : fmt(L.n_res, { n: A.count(all.length) });
+      html += '<p class="cnt">' + esc(nt) + '</p>';
+      live.textContent = nt;
       if (!all.length) html += '<p class="empty">' + esc(fmt(L.none, { q: q })) + ' ' + esc(L.none_hint) + '</p>' +
         '<p class="zs"><strong>' + esc(L.z_h) + '</strong> ' + sugg(q, only).map(function (x) { return '<a href="' + esc(x.h) + '">' + esc(x.x) + '</a>'; }).join(' · ') + '</p>';
       html += '<div class="search-res">';
@@ -254,6 +266,9 @@
         if (rs.length > 50) html += '<button type="button" class="all" data-more>' + esc(fmt(L.more, { n: A.count(rs.length - 50) })) + '</button>';
         if (k === 't') html += '<p class="dl"><a href="' + esc(hubq(q, r)) + '">' + esc(fmt(L.all_t, { q: q })) + '</a></p>';
       });
+      // no open tender for the query: said, and the list's own zero state one click away (fix round 3)
+      if (!only && r[2] && !g.t) html += '<h2>' + esc(L.g_t) + ' <span class="sub">(0)</span></h2><p class="dl"><a href="' +
+        esc(hubq(q, r)) + '">' + esc(fmt(L.all_t, { q: q })) + '</a></p>';
       res.innerHTML = html + '</div>';
       [].forEach.call(res.querySelectorAll('[data-more]'), function (b) {
         b.addEventListener('click', function () {

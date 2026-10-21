@@ -23,7 +23,7 @@
   function fmt(s, o) { return String(s).replace(/\{(\w+)\}/g, function (m, k) { return k in o ? o[k] : m; }); }
   function p2(n) { n = +n; return (n < 10 ? '0' : '') + n; }
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
-  var GR = { de: '’', it: '’', fr: ' ', en: ',' };
+  var GR = { de: '’', it: '’', fr: '\u202f', en: ',' };
   function count(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, GR[l]); }
   function date(iso) {
     var y = iso.slice(0, 4), m = +iso.slice(5, 7), x = +iso.slice(8, 10);
@@ -63,7 +63,7 @@
   function clock(t) {
     var o = parts(t), hh = +o.hour, mm = o.minute;
     if (!hh && mm === '00') return '';
-    return l === 'de' ? hh + '.' + mm + ' Uhr' : l === 'fr' ? hh + ' h ' + mm : p2(hh) + ':' + mm;
+    return l === 'de' ? hh + '.' + mm + '\u00a0Uhr' : l === 'fr' ? hh + '\u202fh\u202f' + mm : p2(hh) + ':' + mm;
   }
   // {c: '' | 'soon' | 'today' | 'over', x: the label, n: days to go}
   function rel(iso) {
@@ -77,10 +77,10 @@
     return { c: '', x: '', n: n };
   }
   function expire(e) {
-    e.classList.add('off');
-    var x = d.createElement('em'); x.className = 'rel'; x.textContent = L.due_over;
-    var old = e.querySelector('.rel'); if (old) old.remove();
-    e.appendChild(x);
+    e.classList.add('off'); h.classList.add('xp');
+    var x = e.querySelector('.rel');
+    if (!x) { x = d.createElement('em'); x.className = 'rel'; e.appendChild(x); }
+    x.textContent = L.due_over;
     var st = d.querySelector('.title .state'), h1 = d.querySelector('.title h1'), b = e.querySelector('b');
     if (st && !st.classList.contains('off')) { st.className = 'state off'; st.lastChild.textContent = L.tender_expired; }
     if (h1 && b && !h1.parentNode.querySelector('.sum')) {
@@ -104,7 +104,11 @@
     e.setAttribute('data-r', '1');
     var w = e.classList.contains('when') ? e : (e.querySelector('.when') || e);
     if (r.c) { w.classList.add(r.c); e.classList.add(r.c); }
-    if (r.x) { var s = d.createElement(e.tagName === 'DIV' ? 'em' : 'span'); s.className = 'rel'; s.textContent = r.x; w.appendChild(s); }
+    if (r.x) {
+      var s = w.querySelector('.rel');
+      if (!s) { s = d.createElement(e.tagName === 'DIV' ? 'em' : 'span'); s.className = 'rel'; w.appendChild(s); }
+      s.textContent = r.x;
+    }
     if (r.c === 'today' && e.tagName === 'DIV') {
       var st = d.querySelector('.title .state');
       if (st && !st.classList.contains('off')) { st.className = 'state today'; st.lastChild.textContent = r.x; }
@@ -133,6 +137,12 @@
       if (want) [].forEach.call(c.querySelectorAll('[data-more]:not([data-gone])'), function (x) {
         if (c.querySelectorAll('[data-deadline]:not([hidden])').length < want) x.hidden = false;
       });
+    });
+    [].forEach.call((root || d).querySelectorAll('table.tl tr.ab'), function (ab) {
+      var rs = [].filter.call(ab.parentNode.rows, function (r) { return !r.hidden && r.hasAttribute('data-deadline'); }),
+        at = rs[Math.min(10, rs.length) - 1];
+      if (at && at.nextElementSibling !== ab) at.parentNode.insertBefore(ab, at.nextSibling);
+      ab.setAttribute('data-p', '');
     });
     return hid;
   }
@@ -201,7 +211,9 @@
         [].forEach.call(op, function (e) {
           var s = e.getAttribute('data-open').split(':'), v = (n[s[0]] || {})[s[1]], x = e.querySelector('.ocn');
           if (!x) { x = d.createElement('span'); x.className = 'ocn'; e.appendChild(x); }
-          x.textContent = v ? L.colon + ' ' + count(v) : '';
+          // a badge on the chip's corner, out of the line (fix round 3: appended to the text it wrapped the chip to a second
+          // line and moved the page); the colon for screen readers only
+          x.innerHTML = v ? '<span class="sr">' + esc(L.colon) + ' </span>' + count(v) : '';
         });
       }, function () { });
     });
@@ -230,7 +242,7 @@
     [].forEach.call(t.querySelectorAll('th'), function (c) { c.setAttribute('role', c.closest('thead') ? 'columnheader' : 'rowheader'); });
     [].forEach.call(t.querySelectorAll('td'), function (c) { c.setAttribute('role', 'cell'); });
   }
-  [].forEach.call(d.querySelectorAll('table.ls,table.top'), roles);
+  [].forEach.call(d.querySelectorAll('table.ls,table.top,table.kv'), roles);
 
   // on a phone a long table shows its first 25 rows and 'Alle N anzeigen' (fix round 1); more: what the button
   // does instead of showing the rows already there (liste.js: the whole list)
@@ -276,18 +288,20 @@
   [].forEach.call(d.querySelectorAll('figure.mc'), function (f) {
     var t = f.querySelector('.cc table'), rd = f.querySelector('.rd');
     if (!t || !rd) return;
-    var rows = [].slice.call(t.tBodies[0] ? t.tBodies[0].rows : []), cur = -1;
-    function show(i) {
+    var rows = [].slice.call(t.tBodies[0] ? t.tBodies[0].rows : []), cur = -1, lv = d.createElement('span');
+    lv.className = 'sr'; lv.setAttribute('aria-live', 'polite'); f.appendChild(lv);
+    function show(i, say) {
       if (cur >= 0 && rows[cur]) rows[cur].classList.remove('on');
       cur = i;
       if (i < 0 || !rows[i]) { rd.textContent = ''; cur = -1; return; }
-      var r = rows[i], v = r.querySelector('em');
+      var r = rows[i], v = r.querySelector('em'), x = r.cells[0].textContent + L.colon + ' ' + (v ? v.textContent : '');
       r.classList.add('on');
-      rd.textContent = '· ' + r.cells[0].textContent + L.colon + ' ' + (v ? v.textContent : '');
+      rd.textContent = '· ' + x;
+      if (say) lv.textContent = x;
     }
     t.tabIndex = 0;
     t.addEventListener('pointerover', function (ev) { var r = ev.target.closest('tr'); if (r) show(rows.indexOf(r)); });
-    t.addEventListener('pointerleave', function () { if (d.activeElement !== t) show(-1); });
+    t.addEventListener('pointerleave', function (ev) { if (ev.pointerType !== 'touch' && d.activeElement !== t) show(-1); });
     t.addEventListener('focus', function () { if (cur < 0) show(rows.length - 1); });
     t.addEventListener('blur', function () { show(-1); });
     t.addEventListener('keydown', function (ev) {
@@ -296,7 +310,7 @@
       else if (k === 'Home') i = 0;
       else if (k === 'End') i = rows.length - 1;
       else return;
-      ev.preventDefault(); show(Math.max(0, Math.min(rows.length - 1, i)));
+      ev.preventDefault(); show(Math.max(0, Math.min(rows.length - 1, i)), 1);
     });
   });
 
@@ -334,8 +348,13 @@
     tp = d.createElement('a'); tp.href = '#top'; tp.className = 'totop'; tp.hidden = true;
     tp.innerHTML = '<span aria-hidden="true">↑ </span>' + esc(L.top);
     d.body.appendChild(tp);
+    var ly = scrollY;
     addEventListener('scroll', function () {
-      if (!tq) tq = setTimeout(function () { tq = 0; tp.hidden = scrollY < 1.5 * innerHeight; }, 120);
+      if (!tq) tq = setTimeout(function () {
+        tq = 0; var y = scrollY;
+        if (y < 1.5 * innerHeight || y > ly + 2) tp.hidden = true; else if (y < ly - 2) tp.hidden = false;
+        ly = y;
+      }, 120);
     }, { passive: true });
     tp.addEventListener('click', function (ev) {
       ev.preventDefault(); scrollTo(0, 0);
@@ -370,23 +389,35 @@
   // a tender's relevance to a query's words (fix round 1): a word in its CPV labels — its topic — 5; in its title a
   // whole word 4, the start of a word 3, the end of a compound ('Gebäudereinigung') 2, inside a word
   // ('Vereinigung') 1; in its authority 2 at most. A word found nowhere: 0, no match. f: {c, t, b} folded words
+  var SYN = { it: '72', ict: '72', edv: '72', informatik: '72', informatique: '72', informatica: '72', bau: '45',
+    construction: '45', costruzione: '45', reinigung: '909', nettoyage: '909', pulizia: '909', cleaning: '909' };
   function wscore(ws, q, top) {
-    var b = 0, j, w, x;
+    var b = 0, j, w, x, sh = q.length <= 2;
     for (j = 0; j < ws.length; j++) {
       w = ws[j];
       if (w === q) return top;
       x = w.indexOf(q);
-      if (x === 0) b = Math.max(b, top === 5 ? 5 : 3);
-      else if (x > 0) b = Math.max(b, top === 5 ? (x >= 3 ? 5 : 1) : (x >= 3 && x + q.length === w.length ? 2 : 1));
+      // a short word in the topic only whole: its labels in four languages start many words ('it' in 'items')
+      if (x === 0) b = Math.max(b, top === 5 ? (sh ? 0 : 5) : 3);
+      else if (x > 0 && !sh) b = Math.max(b, top === 5 ? (x >= 3 ? 5 : 1) : (x >= 3 && x + q.length === w.length ? 2 : 1));
     }
     return b;
   }
+  function part(ws, q) {
+    for (var n = q.length - 1; n >= 5; n--) {
+      var a = q.slice(0, n), z = q.slice(q.length - n);
+      for (var j = 0; j < ws.length; j++) { var t = ws[j].slice(-n); if (t === a || t === z) return 1; }
+    }
+    return 0;
+  }
   function tscore(f, qt) {
-    var s = 0, i, best;
+    var s = 0, i, best, q;
     for (i = 0; i < qt.length; i++) {
-      best = wscore(f.c, qt[i], 5);
-      if (best < 5) best = Math.max(best, wscore(f.t, qt[i], 4));
-      if (best < 2) best = Math.max(best, Math.min(2, wscore(f.b, qt[i], 3)));
+      q = qt[i];
+      best = SYN[q] && f.v && f.v.indexOf(SYN[q]) === 0 ? 5 : wscore(f.c, q, 5);
+      if (best < 5) best = Math.max(best, wscore(f.t, q, 4));
+      if (best < 2) best = Math.max(best, Math.min(2, wscore(f.b, q, 3)));
+      if (!best && q.length > 5) best = part(f.t, q) || part(f.c, q);
       if (!best) return 0;
       s += best;
     }
@@ -394,13 +425,13 @@
   }
   // the words of an open tender of /daten/offen.json for tscore(): its titles, its CPV labels, its authority
   function twords(r, o) {
-    if (!r.fw) r.fw = { t: words(r[1].map(function (v) { return v.slice(3); }).join(' ')), c: words((o.c[r[4]] || []).join(' ')), b: words(o.b[r[5]]) };
+    if (!r.fw) r.fw = { t: words(r[1].map(function (v) { return v.slice(3); }).join(' ')), c: words((o.c[r[4]] || []).join(' ')), b: words(o.b[r[5]]), v: r[4] || '' };
     return r.fw;
   }
 
   window.AR = { l: l, B: B, v: D.v, iso: D.iso, L: L, fmt: fmt, esc: esc, count: count, date: date, fold: fold, words: words,
     deco: deco, rel: rel, when: when, now: now, today: today, dnum: dnum, zday: zday, load: load, json: json, totop: totop,
-    roles: roles, cut: cut, ph: PH, qparse: qparse, tscore: tscore, twords: twords, oc: null };
+    roles: roles, cut: cut, ph: PH, qparse: qparse, tscore: tscore, twords: twords, syn: SYN, oc: null };
   A = window.AR;
   A.oc = counts();
   later();

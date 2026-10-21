@@ -8,7 +8,10 @@
    Fix round 1 (20.10.2026): the address is #kb-72 (the Branche pages link to it; without JavaScript it leads to the
    Branche's row), the panel scrolls into view before it takes the focus, its tables use the page's money scale,
    and it says how many of its awards count here only as the authority's seat, with a toggle that leaves them out.
-   Fix round 2: its companies as cards on a phone (table.fk), the name on a row of its own ('Eraneos Switz-erland AG'). */
+   Fix round 2: its companies as cards on a phone (table.fk), the name on a row of its own ('Eraneos Switz-erland AG').
+   Fix round 3 (21.10.2026): the panel opens beside the list it was chosen from (it opened under the 60 companies); an
+   address with #kb-72 draws the panel first and scrolls to it two frames later (the page jumped by 0.8 of a screen);
+   '268 Zuschläge an 264 Unternehmen' says how many of them won exactly one. */
 (function () {
   var A = window.AR; if (!A || A.kb) return; A.kb = 1;
   var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc;
@@ -44,11 +47,12 @@
     var x = o.d[v]; if (!x) return false;
     // without the awards placed here only as the authority's seat (the toggle): their own lists
     var ex = xo && x.x, fs = ex ? x.fx : x.f, rs = ex ? x.r.filter(function (r) { return !r[6]; }).concat(x.rx || []) : x.r,
-      na = ex ? x.a - x.x : x.a, nk = ex ? x.kx : x.k;
+      na = ex ? x.a - x.x : x.a, nk = ex ? x.kx : x.k, no = ex ? x.ox : x.o;
     var cn = o.c[l] || o.c.de, name = x.n[LI], uf = PU || unit(fs.map(function (r) { return r[3]; })), ur = PU || unit(rs.map(function (r) { return r[5]; }));
     var h = '<button type="button" class="tag kbx">' + esc(L.kb_close) + '</button>' +
       '<h2 id="kb-h">' + esc(fmt(L.kb_h, { div: name, name: cn[0], of: cn[1] })) + '</h2>' +
-      '<p class="sub m10">' + esc(fmt(L.kb_lead, { n: na === 1 ? L.aw_1 : fmt(L.aw_n, { n: A.count(na) }), f: nk === 1 ? L.kb_f1 : fmt(L.kb_fn, { n: A.count(nk) }) })) + '</p>' +
+      '<p class="sub m10">' + esc(fmt(L.kb_lead, { n: na === 1 ? L.aw_1 : fmt(L.aw_n, { n: A.count(na) }), f: nk === 1 ? L.kb_f1 : fmt(L.kb_fn, { n: A.count(nk) }) }) +
+        (no && nk >= 10 && no * 2 > nk ? ' ' + fmt(L.kb_once, { k: A.count(no), f: A.count(nk) }) : '')) + '</p>' +
       (x.x ? '<p class="sub m10">' + esc(fmt(L.kb_fb, { k: A.count(x.x), p: Math.round(100 * x.x / x.a) + (l === 'de' ? '\u00a0%' : l === 'fr' ? '\u202f%' : '%') })) + '</p>' +
         '<label class="fbx"><input type="checkbox"' + (ex ? ' checked' : '') + '> ' + esc(L.kb_fbx) + '</label>' : '') +
       '<h3>' + esc(L.kb_top) + '</h3><div class="scroll"><table class="ls fk u' + uf + '"><caption class="sr">' + esc(L.kb_top) + '</caption><thead><tr><th scope="col">' + esc(L.company) + '</th>' +
@@ -68,7 +72,7 @@
     if (!panel) {
       panel = d.createElement('section'); panel.className = 'kb'; panel.id = 'kb'; panel.tabIndex = -1;
       panel.setAttribute('aria-labelledby', 'kb-h');
-      var at = fig.closest('.half') || fig; at.parentNode.insertBefore(panel, at.nextSibling);
+      fig.parentNode.insertBefore(panel, fig.nextSibling);
     }
     panel.innerHTML = h;
     panel.querySelector('.kbx').addEventListener('click', close);
@@ -84,12 +88,18 @@
     try { history.replaceState(null, '', location.pathname); } catch (e) { }
     if (from) from.focus();
   }
-  function show(v, push, scroll) {
+  function show(v, push, scroll, first) {
     A.json('/daten/kb/' + K + '.json').then(function (o) {
+      // an address with #kb-72: the browser stands at the Branche's row; the page moves so that the panel's place is
+      // just below the screen before the panel is drawn there, so nothing the reader sees is pushed (fix round 3)
+      if (first && !panel) { var y = fig.getBoundingClientRect().bottom + scrollY - innerHeight; if (y < scrollY) scrollTo(0, Math.max(0, y)); }
       if (!render(o, v)) return;
       try { history[push ? 'pushState' : 'replaceState'](null, '', location.pathname + '#kb-' + v); } catch (e) { }
-      // into view first, then the focus without a second jump (fix round 1: focus() scrolled it half out of view)
-      if (scroll) { try { panel.scrollIntoView({ block: 'start' }); } catch (e) { } panel.focus({ preventScroll: true }); }
+      // drawn first, into view two frames later, then the focus without a second jump (fix round 1: focus() scrolled it
+      // half out of view; fix round 3: drawing and scrolling in one frame moved the page under the reader)
+      if (scroll) requestAnimationFrame(function () {
+        requestAnimationFrame(function () { try { panel.scrollIntoView({ block: 'start' }); } catch (e) { } panel.focus({ preventScroll: true }); });
+      });
       A.totop();
     }, function () { var a = links.filter(function (x) { return x.getAttribute('data-b') === v; })[0]; if (a && push) location.href = a.getAttribute('data-href'); });
   }
@@ -102,14 +112,12 @@
       ev.preventDefault(); from = a; show(v, true, true);
     });
   });
-  var hint = d.createElement('p'); hint.className = 'sub m10'; hint.textContent = L.kb_hint;
-  var lede = fig.querySelector('.lede'); if (lede) lede.parentNode.insertBefore(hint, lede.nextSibling);
   // #kb-72 (and the older ?b=72)
-  function fromUrl(scroll) {
+  function fromUrl(scroll, first) {
     var v = (location.hash.match(/^#kb-(\d\d)$/) || [])[1] || new URLSearchParams(location.search).get('b');
-    if (v && /^\d\d$/.test(v)) show(v, false, scroll); else if (panel) { panel.remove(); panel = null; }
+    if (v && /^\d\d$/.test(v)) show(v, false, scroll, first); else if (panel) { panel.remove(); panel = null; }
   }
   addEventListener('popstate', function () { fromUrl(false); });
   addEventListener('hashchange', function () { fromUrl(true); });
-  fromUrl(true);
+  fromUrl(true, true);
 })();

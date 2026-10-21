@@ -2,17 +2,22 @@
    lists, the industry lists and their full-list pages. The section holding the list says its scope (data-liste="",
    "k:ZH" or "b:45") and its size at build time (data-n); its filter bar is in the page (genera.flt_bar), shown
    only with JavaScript, so nothing moves when this script arrives.
-   Once the browser is idle (at once when the address carries a selection), /daten/offen.json is read — every open
-   tender, not only the rows the page shows — and the bar works: free text over the titles in every language, the
-   authority and the CPV labels, ranked (a word of the topic or the start of a title's word before a word merely
-   inside another: 'Reinigung' finds 'Gebäudereinigung' before 'Vereinigung'), a canton named in it becoming the
+   On the first interaction with the bar (at once when the address carries a selection), /daten/offen.json is read —
+   every open tender, not only the rows the page shows — and the bar works: free text over the titles in every
+   language, the authority and the CPV labels, ranked (a word of the topic or the start of a title's word before a word
+   merely inside another: 'Reinigung' finds 'Gebäudereinigung' before 'Vereinigung'), a canton named in it becoming the
    canton filter ('Reinigung Zürich'); canton and industry, each option with its count for the rest of the
    selection; the order (nearest deadline or newest); new ones only (first published on the latest day); deadline
    within 7 days. The list shows 'N von M', said by a live region; the selection lives in the address
    (?q=&k=&b=&sort=&neu=1&soon=1) so it can be shared; with a selection in the address the list is scrolled to and
    its count focused. No result: what would give some (a word less, a neighbouring canton) and the alert. One
    button clears it all, one link opens the alert form with the same canton and industry. A list cut to its first
-   100 rows gets them all in place ('Alle N anzeigen'); on a phone it shows 25 rows first. */
+   100 rows gets them all in place ('Alle N anzeigen'); on a phone it shows 25 rows first.
+   Fix round 3 (21.10.2026): the order chosen is the order shown: the matches of a word part come after a divider
+   ('Weitere Treffer (Wortteil)'), each group in that order; the suggestions of an empty result are separated; the
+   count takes the focus with a short highlight, not an input's ring; a keyword that names a Branche ('Reinigung')
+   carries it to the alert form; /daten/offen.json (150 KB) waits for the first touch of the bar, and until then the
+   count line and the next deadline come from the page and /stand.js's live count. */
 (function () {
   var A = window.AR; if (!A || A.liste) return; A.liste = 1;
   var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, fold = A.fold;
@@ -27,11 +32,11 @@
   var P = new URLSearchParams(location.search);
   var st = { q: P.get('q') || '', k: (P.get('k') || '').toUpperCase(), b: P.get('b') || '', s: P.get('soon') === '1',
     n: P.get('neu') === '1', o: P.get('sort') === 'neu' ? 'neu' : '', all: false };
-  var O = null, none, zs, tm = 0, wait = null, first = true;
+  var O = null, none, zs, tm = 0, wait = null, first = true, aboQ = '';
   var fq = bar.querySelector('input[name=q]'), fk = bar.querySelector('select[name=k]'), fb = bar.querySelector('select[name=b]'),
     fo = bar.querySelector('select[name=sort]'), fn = bar.querySelector('input[name=neu]'), fs = bar.querySelector('input[name=soon]'),
     cnt = bar.querySelector('.cnt'), abo = bar.querySelector('a.fa'), fan = bar.querySelector('.fan'), fd = bar.querySelector('details'),
-    act = bar.querySelector('.fn0'), clr = bar.querySelector('button.clr');
+    act = bar.querySelector('.fn0'), clr = bar.querySelector('button.clr'), fan0 = fan ? fan.textContent : '';
   // the neighbours of each canton, for 'nothing here — in Bern 3'
   var NB = { AG: 'ZH LU ZG SO BL BE', AI: 'AR SG', AR: 'AI SG', BE: 'JU SO AG LU OW NW UR VS VD FR NE', BL: 'BS AG SO JU', BS: 'BL',
     FR: 'BE VD NE', GE: 'VD', GL: 'SZ UR GR SG', GR: 'TI UR GL SG', JU: 'BE SO BL', LU: 'AG BE OW NW SZ ZG', NE: 'VD FR BE',
@@ -99,7 +104,7 @@
     fill(fk, O.k, kc, ek(qp), true);
     fill(fb, O.d, bc, st.b, false);
   }
-  // nothing found: a word less, a neighbouring canton, the alert (fix round 1)
+  // nothing found: a word less, a neighbouring canton, the alert (fix round 1); separated by ' · ' (fix round 3)
   function suggest(sc, qp, k) {
     var out = [];
     if (qp.t.length > 1) qp.t.forEach(function (w, i) {
@@ -111,18 +116,54 @@
       if (n && out.length < 6) out.push('<a href="#" data-k="' + c + '">' + esc(fmt(L.z_near, { c: O.k[c][LI], n: A.count(n) })) + '</a>');
     });
     out.push('<a href="' + esc(abo.href) + '">' + esc(L.z_abo) + '</a>');
-    zs.innerHTML = '<strong>' + esc(L.z_h) + '</strong> ' + out.join(' ');
+    zs.innerHTML = '<strong>' + esc(L.z_h) + '</strong> ' + out.join(' · ');
+  }
+  // the Branche a keyword names, for the alert (fix round 3: 'Reinigung' -> 90): its synonym, else the Branche or the
+  // Bereiche whose names start with it, when one Branche holds most of them
+  function kwdiv(qt, th) {
+    var s = {}, tot = 0, best = '', i, v;
+    for (i = 0; i < qt.length; i++) if (A.syn[qt[i]]) return A.syn[qt[i]].slice(0, 2);
+    function hit(ns) {
+      var ws = A.words(ns.join(' '));
+      return qt.some(function (q) { return q.length > 2 && ws.some(function (w) { return w.indexOf(q) === 0; }); });
+    }
+    (th.d || []).forEach(function (e) { if (hit(e[1])) s[e[0]] = (s[e[0]] || 0) + 1e6; });
+    (th.s || []).forEach(function (e) { if (hit(e[1])) { v = e[0].slice(0, 2); s[v] = (s[v] || 0) + (e[2] || 1); } });
+    for (v in s) { tot += s[v]; if (!best || s[v] > s[best]) best = v; }
+    return best && O.d[best] && s[best] * 2 >= tot ? best : '';
+  }
+  function aboLink(k, b, qp) {
+    var a = [];
+    if (k) a.push('k=' + k); if (b) a.push('b=' + b);
+    abo.href = B + '/' + l + '/ausschreibungen/abo/' + (a.length ? '?' + a.join('&') : '');
+    if (fan) { fan.hidden = !qp.q; fan.textContent = fan0; }
+    if (b || !qp.q) return;
+    // a keyword's Branche, once the topics are in (the alert itself filters by canton and Branche only)
+    var my = aboQ = qp.q;
+    A.json('/daten/suche/themen.json').then(function (th) {
+      if (my !== aboQ) return;
+      var v = kwdiv(qp.t, th); if (!v) return;
+      a.push('b=' + v);
+      abo.href = B + '/' + l + '/ausschreibungen/abo/?' + a.join('&');
+      if (fan) fan.textContent = fmt(L.f_abo_kwb, { b: O.d[v][LI] });
+    }, function () { });
   }
   function render() {
     var qp = query(), sc = scoped(), n, k = ek(qp), on = active() || st.all;
     if (on) {
       var rows = sc.filter(function (r) { return pass(r, qp); });
-      var neu = st.o === 'neu';
+      var neu = st.o === 'neu', html = '', w = -1;
       rows.forEach(function (r) { r.ti = qp.t.length ? tier(r, qp) : 0; });
       rows.sort(function (a, b) {
         return a.ti - b.ti || (neu ? (a[7] < b[7] ? 1 : a[7] > b[7] ? -1 : 0) : 0) || (A.when(a[6]) - A.when(b[6]));
       });
-      tb.innerHTML = rows.map(row).join('');
+      // the order chosen holds within each group; the matches of a word part after a divider of their own
+      rows.forEach(function (r, i) { if (w < 0 && r.ti && i) w = i; });
+      rows.forEach(function (r, i) {
+        if (i === w) html += '<tr class="tier"><td colspan="4">' + esc(L.tier_w) + '</td></tr>';
+        html += row(r);
+      });
+      tb.innerHTML = html;
       n = rows.length;
     } else {
       tb.innerHTML = orig;
@@ -136,11 +177,8 @@
     A.deco(tb);
     if (!on) n = tb.querySelectorAll('tr[data-deadline]:not([hidden])').length;
     A.roles(tbl);
-    // the alert with the list's canton and industry; a keyword does not travel (fix round 1: the note says so)
-    var a = [], ab = st.b || sb;
-    if (k) a.push('k=' + k); if (ab) a.push('b=' + ab);
-    abo.href = B + '/' + l + '/ausschreibungen/abo/' + (a.length ? '?' + a.join('&') : '');
-    if (fan) fan.hidden = !qp.q;
+    // the alert with the list's canton and industry; a keyword that names a Branche brings it (fix round 3)
+    aboLink(k, st.b || sb, qp);
     none.hidden = n > 0; wrap.hidden = !n; zs.hidden = n > 0;
     if (!n) suggest(sc, qp, k);
     // the notes on the page's own rows (hidden since the build; 'the 100 nearest of …') belong to those rows
@@ -172,11 +210,13 @@
     A.totop();
     if (first) {
       first = false;
-      // a selection in the address (the search's hand-off, a shared link): the list in view, its count said
+      // a selection in the address (the search's hand-off, a shared link): the list in view, its count said and
+      // briefly lit (fix round 3: no 3-px ring on a line of text)
       if (active()) {
         if (fd && !fd.open) fd.open = true;
         try { bar.scrollIntoView({ block: 'start' }); } catch (e) { }
         cnt.focus({ preventScroll: true });
+        cnt.classList.remove('hl'); void cnt.offsetWidth; cnt.classList.add('hl');
       }
     }
   }
@@ -184,6 +224,9 @@
     none = d.createElement('p'); none.className = 'flt-none'; none.hidden = true; none.textContent = L.f_none;
     zs = d.createElement('p'); zs.className = 'zs'; zs.hidden = true;
     wrap.parentNode.insertBefore(none, wrap); wrap.parentNode.insertBefore(zs, wrap);
+    // what the reader did before the data came stands (the field typed in, a box ticked)
+    if (fq.value) st.q = fq.value;
+    if (fs.checked) st.s = true; if (fn && fn.checked) st.n = true; if (fo && fo.value) st.o = fo.value;
     var qp = A.qparse(st.q, O.k);
     if (!sk && qp.k) { st.q = qp.q; st.k = qp.k; }
     fq.value = st.q; fs.checked = st.s; if (fn) fn.checked = st.n; if (fo) fo.value = st.o;
@@ -235,7 +278,22 @@
   }
   // a phone's cut table (stand.js): one button, with the whole count, for the whole list
   if (tbl._cb && (allA || allB)) { A.cut(tbl, total, showAll); ((allA && allA.closest('p')) || allB).hidden = true; }
+  // until the data comes: the count line from the page's rows and the live count of /stand.js (offen-dl.json, 30 KB:
+  // read only once a deadline has passed since the build), the next deadline from the first row still shown
+  function pre(c) {
+    var n = tb.querySelectorAll('tr[data-deadline]:not([hidden])').length,
+      m = c ? (scope ? (c[scope.charAt(0)] || {})[scope.slice(2)] || 0 : c.a) : total;
+    m = Math.max(m, n);
+    if (!O) cnt.textContent = n < m ? fmt(L.f_first, { k: A.count(n), m: A.count(m) }) : fmt(L.f_count, { n: A.count(n), m: A.count(m) });
+    var nx = !scope && d.querySelector('a.fig.date time'), r0 = tb.querySelector('tr[data-deadline]:not([hidden])');
+    if (!O && nx && r0) { var t = r0.getAttribute('data-deadline'); nx.setAttribute('datetime', t.slice(0, 10)); nx.textContent = A.date(t); }
+  }
   if (active()) ready();
-  else if (window.requestIdleCallback) requestIdleCallback(ready, { timeout: 2500 });
-  else setTimeout(ready, 1200);
+  else {
+    pre(null);
+    if (A.oc) A.oc.then(pre, function () { });
+    // the first touch of the bar (a pointer over it, the focus in it) fetches the data
+    var go = function () { bar.removeEventListener('pointerover', go); bar.removeEventListener('focusin', go); ready(); };
+    bar.addEventListener('pointerover', go); bar.addEventListener('focusin', go);
+  }
 })();

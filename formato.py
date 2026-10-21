@@ -244,7 +244,7 @@ def amount3(v) -> str:
 
 
 def tile(v, cur: str = "CHF") -> str:
-    """KPI tile value (HTML): number big, currency small. '<span class="n">992 Mio.</span> <small>CHF</small>'
+    """KPI tile value (HTML): number big, unit and currency small. '<span class="n">992</span> <small>Mio. CHF</small>'
     / '<small>CHF </small><span class="n">992m</span>'. The number and its unit never break; on a
     narrow tile the currency moves to the next line as a whole word (an ordinary space before it).
     Three significant digits (amount3) since step 3a."""
@@ -255,7 +255,10 @@ def tile(v, cur: str = "CHF") -> str:
     sr = sr_exact(v, cur, a)
     if LANG == "en":
         return t + f'<small>{cur}{NBSP}</small><span class="n">{html.escape(a)}</span>{sr}</data>'
-    return t + f'<span class="n">{html.escape(a)}</span> <small>{cur}</small>{sr}</data>'
+    # fix round 3: one format on every tile, the home's: the figure big, its unit and the currency small ('32,5' over
+    # 'Mrd. CHF'; the canton pages read '8,76 Mrd.' big and 'CHF' small)
+    num, _sp, unit = a.partition(NBSP)
+    return t + f'<span class="n">{html.escape(num)}</span> <small>{html.escape(unit + NBSP if unit else "")}{cur}</small>{sr}</data>'
 
 
 def size(n: int) -> str:

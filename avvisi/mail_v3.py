@@ -125,7 +125,7 @@ S = {
         "web": "Tous les nouveaux appels d’offres sur le site",
         "more1": "{p} autre nouvel appel d’offres sur le site",
         "moren": "{p} autres nouveaux appels d’offres sur le site",
-        "dl": "Délai de remise des offres", "buyer": "Adjudicateur", "corr": "Rectificatif",
+        "dl": "Délai de remise", "buyer": "Adjudicateur", "corr": "Rectificatif",
         "open": "Voir l’appel d’offres",
         "why": "Vous recevez cet e-mail parce que vous avez confirmé l’alerte e-mail gratuite "
                "d’auftragsregister.ch pour cette sélection\u202f: {sel}.",
@@ -141,14 +141,14 @@ S = {
         "pro_cta": "Découvrir Pro",
     },
     "it": {
-        "alert": "Avviso e-mail", "since": "Dal {d}",
+        "alert": "Avviso e-mail", "since": "Dal {d}", "since_v": "Dall’{d}",
         "n1": "1 nuovo bando", "nn": "{n} nuovi bandi", "h1": "Nuovo bando", "hn": "Nuovi bandi",
         "k1": "Cantone", "kn": "Cantoni", "b1": "Ramo", "bn": "Rami",
         "all_k": "tutta la Svizzera", "all_b": "tutti i rami",
         "urgent": "{u} con termine d’inoltro nei prossimi 7 giorni", "next": "Prossimo termine d’inoltro: {d}",
         "web": "Tutti i nuovi bandi sul sito",
         "more1": "{p} altro nuovo bando sul sito", "moren": "{p} altri nuovi bandi sul sito",
-        "dl": "Termine d’inoltro", "buyer": "Committente", "corr": "Rettifica", "open": "Vai al bando",
+        "dl": "Termine d’inoltro", "buyer": "Committente", "corr": "Rettifica", "open": "Apra il bando",
         "why": "Riceve questa e-mail perché ha confermato l’avviso e-mail gratuito di auftragsregister.ch per "
                "questa scelta: {sel}.",
         "why0": "Riceve questa e-mail perché ha confermato l’avviso e-mail gratuito di auftragsregister.ch.",
@@ -422,7 +422,9 @@ def _band(lang, s, total, since, ks, bs, rows, today, web) -> str:
     home = esc(f"{SITE}/{lang}/")
     eyebrow = [s["alert"]]
     if fdate(since, lang):
-        eyebrow.append(s["since"].format(d=fdate(since, lang)))
+        # Italian elides before a day read with a vowel: 'dall’8', 'dall’11' (fix round 3)
+        d = fdate(since, lang)
+        eyebrow.append((s["since_v"] if "since_v" in s and d[:2] in ("08", "11") else s["since"]).format(d=d))
     sel = ""
     if ks is not None:
         kn = [kname(k, lang) for k in ks[:4]] or [s["all_k"]]
