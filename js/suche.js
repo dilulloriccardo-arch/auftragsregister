@@ -23,13 +23,17 @@
    Fix round 3 (21.10.2026): no open tender for a query still says so, 'Offene Ausschreibungen (0)', with the link to
    the tender list (its own zero state names the neighbouring cantons and the alert); a word of two letters only as a
    whole word or a word's start; the topics' synonyms (IT -> Informatikdienstleistungen); the results page says its
-   count in one live region that stays. */
+   count in one live region that stays.
+   Fix round 4 (21.10.2026): the stop words (A.sw, one list with the tender lists') off the query while another word
+   remains, and out of the shard's choice; 'IT' names the software and the computers too (CPV 48, 302). */
 (function () {
   var A = window.AR; if (!A || A.suche) return; A.suche = 1;
   var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, fold = A.fold;
   var LI = { de: 0, fr: 1, it: 2, en: 3 }[l];
-  var STOP = __STOP__;
   function toks(s) { return fold(s).split(/[^0-9a-z]+/).filter(function (x) { return x; }); }
+  // the word that picks the shard: the first of two letters or more once the stop words are off (A.sw: articles,
+  // prepositions, legal forms; fix round 4: one list with the tender lists', in /stand.js)
+  function kw(qt) { var f = A.sw(qt), i; for (i = 0; i < f.length; i++) if (f[i].length > 1) return f[i]; return f[0] || ''; }
   function words(e, s) { if (!e.w) { e.f = fold(s); e.w = e.f.split(/[^0-9a-z]+/); } return e.w; }
   function slug(s) {
     s = String(s).toLowerCase().replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss');
@@ -39,11 +43,12 @@
   }
   function n_aw(n) { return n === 1 ? L.aw_1 : fmt(L.aw_n, { n: A.count(n) }); }
   function n_open(n) { return n === 1 ? L.open_1 : fmt(L.open_n, { n: A.count(n) }); }
-  // a word-prefix (key) and part-of-text (the others) test; score: whole word 4, word start 3, inside 1
+  // a word-prefix (key) and part-of-text (the others) test; score: whole word 4, word start 3, inside 1; the stop words
+  // only in the bonus of a name that starts with the query (fix round 4: 'Reinigung an Schulen')
   function score(e, text, qt, key) {
-    var w = words(e, text), s = 0, i, j, t, best;
-    for (i = 0; i < qt.length; i++) {
-      t = qt[i]; best = 0;
+    var w = words(e, text), s = 0, i, j, t, best, f = A.sw(qt);
+    for (i = 0; i < f.length; i++) {
+      t = f[i]; best = 0;
       for (j = 0; j < w.length && best < 4; j++) {
         if (w[j] === t) best = 4; else if (best < 3 && w[j].indexOf(t) === 0) best = 3;
       }
@@ -66,10 +71,8 @@
     return names ? A.qparse(q, names) : { q: q, k: '' };
   }
   function search(q, only, shard, th, op) {
-    var qt = toks(q), out = [], key = null, i, qp = parse(q, th, op), qr = toks(qp.q), fq = fold(q).replace(/[^0-9a-z]+/g, ' ').trim();
+    var qt = toks(q), out = [], key = kw(qt), qp = parse(q, th, op), qr = A.sw(toks(qp.q)), fq = fold(q).replace(/[^0-9a-z]+/g, ' ').trim();
     if (!qt.length) return out;
-    for (i = 0; i < qt.length; i++) if (STOP.indexOf(qt[i]) < 0 && qt[i].length > 1) { key = qt[i]; break; }
-    if (key === null) key = qt[0];
     // ex: the entry's name is the query itself (an exact canton, Branche or company leads, fix round 1)
     function add(g, s, n, h, x, u, xl, ex) { if (s) out.push({ g: g, s: s + (ex ? 50 : 0) + Math.log(n + 1) / Math.LN10, n: n, h: h, x: x, u: u, xl: xl || '', ex: !!ex }); }
     function same(name) { return fold(name).replace(/[^0-9a-z]+/g, ' ').trim() === fq; }
@@ -99,7 +102,7 @@
     }
     if (th) {
       var tq = qr.length ? qr : qt;
-      var syn = tq.map(function (w) { return A.syn[w] || ''; });
+      var syn = tq.map(function (w) { return A.syn[w] || ''; }).join(' ').split(' ');
       (th.s || []).concat(th.d || []).forEach(function (e) {
         var div = e[0].length === 2, sc = score(e, e[1].join(' ') + ' ' + e[0], tq, null);
         // the Branche a synonym names leads its group ('IT' -> Informatikdienstleistungen)
@@ -132,10 +135,7 @@
     return g;
   }
   function data(q) {
-    var qt = toks(q), key = null, i, c;
-    for (i = 0; i < qt.length; i++) if (STOP.indexOf(qt[i]) < 0 && qt[i].length > 1) { key = qt[i]; break; }
-    key = key || qt[0] || '';
-    c = /[0-9]/.test(key.charAt(0)) ? '0' : key.charAt(0);
+    var key = kw(toks(q)), c = /[0-9]/.test(key.charAt(0)) ? '0' : key.charAt(0);
     function soft(p) { return p.catch(function () { return null; }); }
     return Promise.all([c ? soft(A.json('/daten/suche/' + c + '.json')) : null, soft(A.json('/daten/suche/themen.json')),
       soft(A.json('/daten/offen.json'))]);

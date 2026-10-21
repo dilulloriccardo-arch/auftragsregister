@@ -7,8 +7,9 @@
    - every deadline (data-deadline): 'läuft heute ab, 14.00 Uhr', 'läuft morgen ab', 'noch 5 Tage',
      the classes .today and .soon; a list row whose deadline has passed since the build is hidden, with
      a note under its list and its section's count lowered; a tender page past its deadline shows the
-     'Eingabefrist abgelaufen' state and loses its calendar link — at load, and again when the next deadline
-     on the page passes while it is open (fix round 1);
+     'Eingabefrist abgelaufen' state and loses its calendar link — at load; when the next deadline on the page
+     passes while it is open (fix round 1), nothing comes or goes (fix round 4): the row stays, muted, its label
+     'abgelaufen', the state and the counts change in place, the calendar link keeps its place unseen;
    - every count of open tenders (data-oc) and the pills' counts (data-open): once a deadline has passed since
      the build, recounted from /daten/offen-dl.json, so a page never says 1'477 beside '92 von 1'469' (fix
      round 1);
@@ -76,28 +77,39 @@
     if (n <= 7) return { c: 'soon', x: fmt(L.due_days, { n: n }), n: n };
     return { c: '', x: '', n: n };
   }
-  function expire(e) {
-    e.classList.add('off'); h.classList.add('xp');
+  // a label that turns 'abgelaufen' keeps its height, and a list row's date its width (fix round 4: 'läuft heute ab,
+  // 9.00 Uhr' took two lines; narrower, the date gave the title a line less and the rows under it moved up)
+  function over(x) {
+    var w = x.parentNode;
+    if (w.tagName === 'SPAN') w.style.minWidth = w.getBoundingClientRect().width + 'px';
+    x.style.minHeight = x.getBoundingClientRect().height + 'px'; x.textContent = L.due_over;
+  }
+  // live: the deadline passed while the page is open (fix round 4: the lead appeared under the title and the page
+  // moved by 0.53): nothing comes or goes, the calendar link keeps its place unseen; at load the expired state
+  function expire(e, live) {
+    e.classList.add('off');
     var x = e.querySelector('.rel');
     if (!x) { x = d.createElement('em'); x.className = 'rel'; e.appendChild(x); }
-    x.textContent = L.due_over;
+    over(x);
     var st = d.querySelector('.title .state'), h1 = d.querySelector('.title h1'), b = e.querySelector('b');
     if (st && !st.classList.contains('off')) { st.className = 'state off'; st.lastChild.textContent = L.tender_expired; }
-    if (h1 && b && !h1.parentNode.querySelector('.sum')) {
+    if (!live) h.classList.add('xp');
+    if (!live && h1 && b && !h1.parentNode.querySelector('.sum')) {
       var p = d.createElement('p'); p.className = 'sum'; p.textContent = fmt(L.expired_lead, { when: b.textContent });
       h1.parentNode.insertBefore(p, h1.nextSibling);
     }
-    [].forEach.call(d.querySelectorAll('.acts a[href$="frist.ics"]'), function (a) { a.hidden = true; });
+    [].forEach.call(d.querySelectorAll('.acts a[href$="frist.ics"]'), function (a) { if (live) a.style.visibility = 'hidden'; else a.hidden = true; });
   }
-  // one element with a deadline: its label and class once; a list row whose deadline has passed hidden, a
-  // record's deadline tile expired (also when it passes while the page is open)
-  function one(e, hid) {
-    var r = rel(e.getAttribute('data-deadline'));
+  // one element with a deadline: its label and class once; a list row whose deadline has passed hidden (live: muted in
+  // its place, its label 'abgelaufen'), a record's deadline tile expired
+  function one(e, hid, live) {
+    var r = rel(e.getAttribute('data-deadline')), x;
     if (!r) return;
     if (r.c === 'over') {
       if (e.tagName === 'TR' || e.tagName === 'LI') {
-        if (!e.hasAttribute('data-gone')) { e.hidden = true; e.setAttribute('data-gone', ''); hid.push(e); }
-      } else if (!e.classList.contains('off')) expire(e);
+        if (live) { if (!e.classList.contains('off')) { e.classList.add('off'); x = e.querySelector('.rel'); if (x) over(x); hid.push(e); } }
+        else if (!e.hasAttribute('data-gone')) { e.hidden = true; e.setAttribute('data-gone', ''); hid.push(e); }
+      } else if (!e.classList.contains('off')) expire(e, live);
       return;
     }
     if (e.getAttribute('data-r')) return;
@@ -114,31 +126,32 @@
       if (st && !st.classList.contains('off')) { st.className = 'state today'; st.lastChild.textContent = r.x; }
     }
   }
-  // every data-deadline in root; under each list that lost rows, a note, and its section's own count lowered.
-  // Returns the rows hidden.
-  function deco(root) {
+  // every data-deadline in root; its section's own count lowered and, at load, under each list that lost rows a
+  // note. Returns the rows hidden (live: muted).
+  function deco(root, live) {
     var hid = [];
-    [].forEach.call((root || d).querySelectorAll('[data-deadline]'), function (e) { one(e, hid); });
+    [].forEach.call((root || d).querySelectorAll('[data-deadline]'), function (e) { one(e, hid, live); });
     var lists = [];
     hid.forEach(function (e) { var c = e.closest('table') || e.parentNode; if (lists.indexOf(c) < 0) lists.push(c); });
     lists.forEach(function (c) {
+      var sec = c.closest('.sec'), k = sec && sec.querySelector('.runhead>span');
+      if (k && /^[\d’ ,]+$/.test(k.textContent)) {
+        if (!k.hasAttribute('data-n0')) k.setAttribute('data-n0', k.textContent.replace(/\D/g, ''));
+        k.textContent = count(Math.max(0, +k.getAttribute('data-n0') - sec.querySelectorAll('[data-gone],[data-deadline].off').length));
+      }
+      if (live) return;
       var n = c.querySelectorAll('[data-gone]').length;
       var a = c.tagName === 'TABLE' ? (c.closest('.scroll') || c) : c, nx = a.nextElementSibling, note;
       if (nx && nx.classList.contains('xh')) note = nx;
       else { note = d.createElement('p'); note.className = 'xh'; a.parentNode.insertBefore(note, a.nextSibling); }
       note.textContent = n === 1 ? L.hidden_1 : fmt(L.hidden_n, { n: count(n) });
-      var sec = c.closest('.sec'), k = sec && sec.querySelector('.runhead>span');
-      if (k && /^[\d’ ,]+$/.test(k.textContent)) {
-        if (!k.hasAttribute('data-n0')) k.setAttribute('data-n0', k.textContent.replace(/\D/g, ''));
-        k.textContent = count(Math.max(0, +k.getAttribute('data-n0') - sec.querySelectorAll('[data-gone]').length));
-      }
       // a list that keeps a reserve (the home's next deadlines, data-show="8"): its next rows step in
       var want = +c.getAttribute('data-show') || 0;
       if (want) [].forEach.call(c.querySelectorAll('[data-more]:not([data-gone])'), function (x) {
         if (c.querySelectorAll('[data-deadline]:not([hidden])').length < want) x.hidden = false;
       });
     });
-    [].forEach.call((root || d).querySelectorAll('table.tl tr.ab'), function (ab) {
+    if (!live) [].forEach.call((root || d).querySelectorAll('table.tl tr.ab'), function (ab) {
       var rs = [].filter.call(ab.parentNode.rows, function (r) { return !r.hidden && r.hasAttribute('data-deadline'); }),
         at = rs[Math.min(10, rs.length) - 1];
       if (at && at.nextElementSibling !== ab) at.parentNode.insertBefore(ab, at.nextSibling);
@@ -220,8 +233,8 @@
     return pr;
   }
 
-  // the next deadline on the page that is still ahead: when it passes while the page is open, its row goes, its
-  // calendar link goes, and the counts follow
+  // the next deadline on the page that is still ahead: when it passes while the page is open, its row is muted in its
+  // place, its calendar link unseen, and the counts follow in place (the list's own line too: A.lx)
   function later() {
     var t = Date.now(), nx = 0;
     [].forEach.call(d.querySelectorAll('[data-deadline]:not([data-gone]):not(.off)'), function (e) {
@@ -229,7 +242,7 @@
     });
     if (nx && nx - t < 864e5) setTimeout(function () {
       now = Date.now(); A.now = now; today = dnum(zday(now)); A.today = today;
-      deco(d); A.oc = counts(); later();
+      deco(d, 1); A.oc = counts(); if (A.lx) A.lx(); later();
     }, nx - t + 1000);
   }
 
@@ -389,35 +402,54 @@
   // a tender's relevance to a query's words (fix round 1): a word in its CPV labels — its topic — 5; in its title a
   // whole word 4, the start of a word 3, the end of a compound ('Gebäudereinigung') 2, inside a word
   // ('Vereinigung') 1; in its authority 2 at most. A word found nowhere: 0, no match. f: {c, t, b} folded words
-  var SYN = { it: '72', ict: '72', edv: '72', informatik: '72', informatique: '72', informatica: '72', bau: '45',
+  // the CPV prefixes a word stands for, its topic (fix round 4: 'IT' the software and the computers too, 48 and 302)
+  var IT = '72 48 302', SYN = { it: IT, ict: IT, edv: IT, informatik: IT, informatique: IT, informatica: IT, bau: '45',
     construction: '45', costruzione: '45', reinigung: '909', nettoyage: '909', pulizia: '909', cleaning: '909' };
+  function syn(q, v) { return v && (SYN[q] || '').split(' ').some(function (p) { return p && !v.indexOf(p); }); }
+  // the words a query drops while another one remains (fix round 4: 'Reinigung an Schulen' found nothing): the four
+  // languages' articles and prepositions and the legal forms (genera.QUERY_STOP); liste.js and suche.js
+  var SW = ' ' + D.sw + ' ';
+  function sw(t) { var u = t.filter(function (x) { return SW.indexOf(' ' + x + ' ') < 0; }); return u.length ? u : t; }
   function wscore(ws, q, top) {
-    var b = 0, j, w, x, sh = q.length <= 2;
+    // a word of one or two letters only whole, in every field (fix round 4: 'IT' found the authority 'Itten+Brechbühl')
+    if (q.length < 3) return ws.indexOf(q) < 0 ? 0 : top;
+    var b = 0, j, w, x;
     for (j = 0; j < ws.length; j++) {
       w = ws[j];
       if (w === q) return top;
       x = w.indexOf(q);
-      // a short word in the topic only whole: its labels in four languages start many words ('it' in 'items')
-      if (x === 0) b = Math.max(b, top === 5 ? (sh ? 0 : 5) : 3);
-      else if (x > 0 && !sh) b = Math.max(b, top === 5 ? (x >= 3 ? 5 : 1) : (x >= 3 && x + q.length === w.length ? 2 : 1));
+      if (!x) b = Math.max(b, top === 5 ? 5 : 3);
+      else if (x > 0) b = Math.max(b, top === 5 ? (x >= 3 ? 5 : 1) : (x >= 3 && x + q.length === w.length ? 2 : 1));
     }
     return b;
   }
+  // a word part (fix round 4): the query's first 6 letters or more as a word's end (a compound's head: 'Reinigungsarbeiten'
+  // finds 'Gebäudereinigung'), or its last 8 or more ('Unterhaltsreinigung' finds 'Gebäudereinigung'); never a generic
+  // ending on its own ('Gärtnerarbeiten' found 641 '…arbeiten', 'Reinigung' a 'Verteidigung', 'pulizia' the 'polizia'):
+  // once its generic endings are off, 4 letters are left. PC: the parts of each word, computed once
+  var GW = ' dienstleistungen leistungen leistung arbeiten dienste dienst lieferungen lieferung anlagen systeme system projekte projekt planungen planung igung isierung ierung isation ation ',
+    GX = RegExp('s?(' + GW.trim().split(' ').join('|') + ')$'), PC = {};
+  function gen(t) {
+    for (var n = t.length, u; GW.indexOf(t + ' ') < 0; t = u) if ((u = t.replace(GX, '')) === t) return t.length < n && t.length < 4;
+    return 1;
+  }
   function part(ws, q) {
-    for (var n = q.length - 1; n >= 5; n--) {
-      var a = q.slice(0, n), z = q.slice(q.length - n);
-      for (var j = 0; j < ws.length; j++) { var t = ws[j].slice(-n); if (t === a || t === z) return 1; }
+    var c = PC[q], k, j;
+    if (!c) for (c = PC[q] = [], k = q.length - 1; k > 5; k--) {
+      if (!gen(q.slice(0, k))) c.push(q.slice(0, k));
+      if (k > 7 && !gen(q.slice(-k))) c.push(q.slice(-k));
     }
+    for (k = 0; k < c.length; k++) for (j = 0; j < ws.length; j++) if (ws[j].slice(-c[k].length) === c[k]) return 1;
     return 0;
   }
   function tscore(f, qt) {
     var s = 0, i, best, q;
     for (i = 0; i < qt.length; i++) {
       q = qt[i];
-      best = SYN[q] && f.v && f.v.indexOf(SYN[q]) === 0 ? 5 : wscore(f.c, q, 5);
+      best = syn(q, f.v) ? 5 : wscore(f.c, q, 5);
       if (best < 5) best = Math.max(best, wscore(f.t, q, 4));
       if (best < 2) best = Math.max(best, Math.min(2, wscore(f.b, q, 3)));
-      if (!best && q.length > 5) best = part(f.t, q) || part(f.c, q);
+      if (!best && q.length > 6) best = part(f.t, q) || part(f.c, q);
       if (!best) return 0;
       s += best;
     }
@@ -431,7 +463,7 @@
 
   window.AR = { l: l, B: B, v: D.v, iso: D.iso, L: L, fmt: fmt, esc: esc, count: count, date: date, fold: fold, words: words,
     deco: deco, rel: rel, when: when, now: now, today: today, dnum: dnum, zday: zday, load: load, json: json, totop: totop,
-    roles: roles, cut: cut, ph: PH, qparse: qparse, tscore: tscore, twords: twords, syn: SYN, oc: null };
+    roles: roles, cut: cut, ph: PH, qparse: qparse, tscore: tscore, twords: twords, syn: SYN, sw: sw, oc: null };
   A = window.AR;
   A.oc = counts();
   later();

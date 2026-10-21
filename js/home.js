@@ -354,6 +354,15 @@
         cum.textContent = fmt(L.map_share, { p: pct(total ? c.n / total : 0) }); w = total ? c.n / total * 100 : 0;
       }
       bar.style.setProperty("--w", w.toFixed(1) + "%");
+      fitnm();
+    }
+    // fix round 4: a name taller than its box's reserved height ('Appenzell Ausserrhoden' on two lines in the 330 px column
+    // beside the map) a size smaller until it fits: it moved the page by 47 px while the cantons lit up. The box keeps its
+    // height (min-height), so the smaller name moves nothing; a phone reserves two lines for it (the head's CSS)
+    function fitnm() {
+      nm.style.fontSize = "";
+      var cs = getComputedStyle(nm), m = parseFloat(cs.minHeight) + 1, f = parseFloat(cs.fontSize);
+      while (nm.offsetHeight > m && f > 20) nm.style.fontSize = (f -= 2) + "px";
     }
     function hover(ci, x, y) {
       if (ci !== hov) {

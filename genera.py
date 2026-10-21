@@ -1630,13 +1630,16 @@ h1,h2,h3,.disp{font-family:var(--display);font-weight:400;text-transform:upperca
 h1{margin:.875rem 0 0;font-size:clamp(2.5rem,1.5rem + 3.6vw,4.5rem);line-height:.94}
 h2{margin:0 0 .25rem;font-size:clamp(1.75rem,1.4rem + 1.2vw,2.375rem);line-height:1}
 h3{margin:0;font-size:1.375rem;line-height:1.1;letter-spacing:.03em}
-/* the official title of a tender or an award, the name of a company or an authority: as published */
+/* the official title of a tender or an award, the name of a company or an authority: as published. Its measure in em,
+   not ch (fix round 4): a ch is the width of the font's '0', 0.68 em in Instrument Sans bold and 0.56 em in its fallback,
+   so until the bold face arrived the title was 158 px narrower, took a line more and the page moved by up to 0.48 on a
+   slow first visit; 25.9 em and 32.7 em are the 38 ch and 48 ch of Instrument Sans bold */
 h1.rec{margin:.875rem 0 0;font:700 clamp(1.5rem,1.15rem + 1.4vw,2.25rem)/1.18 var(--sans);letter-spacing:-.01em;
-  text-transform:none;max-width:38ch;text-wrap:pretty;overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;
+  text-transform:none;max-width:25.9em;text-wrap:pretty;overflow-wrap:break-word;hyphens:auto;-webkit-hyphens:auto;
   hyphenate-limit-chars:6 3 3}
 /* fix round 2: an official title over 110 characters a size smaller (it ran 6 lines at 1280 and 10 at 390), broken
    at a hyphen or after a slash or an ampersand (genera puts a <wbr> there), never in the middle of a word */
-h1.rec.lt{font-size:clamp(1.25rem,1rem + 1vw,1.75rem);line-height:1.25;max-width:48ch}
+h1.rec.lt{font-size:clamp(1.25rem,1rem + 1vw,1.75rem);line-height:1.25;max-width:32.7em}
 .eyebrow{display:flex;align-items:center;gap:.875rem;margin:0;max-width:none;font:700 .8125rem/1.35 var(--sans);
   letter-spacing:.2em;text-transform:uppercase;color:var(--gold);overflow-wrap:anywhere}
 .eyebrow::before{content:"";flex:none;width:2.75rem;height:1px;background:linear-gradient(90deg,transparent,var(--brass))}
@@ -1913,7 +1916,9 @@ tbody td:has(a)~td a::after,.kv a::after,.lots a::after,.cmp a::after,td .sub a:
 ul.plain{list-style:none;margin:0;padding:0}
 ul.plain li{position:relative;padding:.875rem 0;border-bottom:1px solid var(--line)}
 ul.plain li:last-child{border-bottom:0}
-.row{display:flex;justify-content:space-between;gap:1rem;align-items:baseline}
+/* fix round 4: a name without a page of its own is the row's bare text, which kept its longest word whole and pushed the
+   figures out (320 px with WCAG text spacing: 'Einwohnergemeinde Biberstein', 47 px sideways); it may break like a link */
+.row{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;overflow-wrap:anywhere}
 .row>*{min-width:0;overflow-wrap:anywhere}
 .row>.when,.row>.nw{flex:none}
 .row>.sub,.row>.num:not(.nw){flex:0 1 auto;min-width:auto;text-align:right;overflow-wrap:normal}
@@ -1930,6 +1935,9 @@ ul.plain.cols2 li{break-inside:avoid}
 .when .rel{display:block;font-weight:400;font-size:.875rem;white-space:normal;overflow-wrap:normal}
 td.when.today,td.when.soon{white-space:normal}
 p.xh{margin:.625rem 0 0;font-size:.875rem;color:var(--muted)}
+/* fix round 4: a row whose deadline passes while the page is open stays in its place (it went, and the list moved by
+   0.04-0.38), muted, 'abgelaufen' as its label (/stand.js); the next page view leaves it out (J_LIST) */
+[data-deadline].off .when,[data-deadline].off a,[data-deadline].off>b,[data-deadline].off .rel{color:var(--muted)}
 /* ── chips ────────────────────────────────────────────────────────────────────────────────── */
 .tags{display:flex;flex-wrap:wrap;gap:.625rem;margin-top:1rem}
 .tag{display:inline-block;max-width:100%;padding:.5rem .875rem;border:1px solid var(--field);font-size:.9375rem;line-height:1.4;
@@ -2228,6 +2236,8 @@ footer a{color:var(--gold-hi)}
   table.tl td:nth-child(3){grid-column:1/-1}
   table.tl td:last-child::before,table.awc td:nth-child(4)::before,table.tl td:nth-child(3)::before{display:inline;margin-right:.375rem}
   table.tl tbody tr{row-gap:.25rem;padding:.75rem 0}
+  /* fix round 4: the divider row keeps its own rule only (the card's under it drew a second one) */
+  table.tl tbody tr.tier{padding:0;border-bottom:0}
   table.tl td:nth-child(2){font-size:.9375rem;line-height:1.38}
   table.tl td:nth-child(3){font-size:.875rem;line-height:1.45}
   /* item 14: on a canton's page (and a buyer's) its awards by Branche before the long table of companies */
@@ -2443,10 +2453,15 @@ form.finder.door .dh{font-size:2.875rem;line-height:.95;margin:.25rem 0 .875rem}
 html:not(.js) .maplegend span:last-child{display:none}
 .ro{border-left:1px solid rgba(201,162,78,.3);padding-left:1.75rem}
 .ro .rk{margin:0;font:700 .8125rem/1.35 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
-.ro .nm{display:block;margin-top:.5rem;font:400 3.25rem/.9 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--ink);min-height:2.9rem}
-.ro .vl{display:flex;flex-wrap:wrap;align-items:baseline;gap:.25rem .75rem;margin:.625rem 0 0}
+/* the name's box one line high exactly (fix round 4: 2.925 rem, not 2.9; js/home.js sets a long name a size smaller in
+   it, and the box kept 0.4 px less than a line) */
+.ro .nm{display:block;margin-top:.5rem;font:400 3.25rem/.9 var(--display);text-transform:uppercase;letter-spacing:.02em;color:var(--ink);min-height:2.925rem}
+/* fix round 4: beside the map, the count and its words on one row whatever the count (French 'appels d’offres en cours'
+   went under '1 492' and back beside a canton's '264', and the map moved by 12 px as the cantons lit up); the words may
+   break rather than push out (WCAG text spacing); a phone's full-width read-out wraps as before */
+.ro .vl{display:flex;flex-wrap:nowrap;align-items:baseline;gap:.25rem .75rem;margin:.625rem 0 0}
 .ro .vl b{font:400 7rem/.8 var(--display);background:var(--grad-v);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold-hi)}
-.ro .vl span{font-size:.875rem;color:var(--text);max-width:9em;line-height:1.3}
+.ro .vl span{font-size:.875rem;color:var(--text);max-width:9em;line-height:1.3;min-width:0;overflow-wrap:anywhere}
 .ro .cum{margin:.75rem 0 0;font-size:.875rem;color:var(--muted)}
 .ro .cum b{color:var(--ink)}
 .ro .bar{height:3px;margin-top:.5rem;background:rgba(244,241,234,.08)}
@@ -2562,12 +2577,17 @@ main:has(>.endband)+footer{margin-top:0;border-top:0;padding-top:2.5rem}
   .mapgrid{grid-template-columns:minmax(0,1fr);gap:1.625rem}
   .ro{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:1.375rem}
   .ro .vl b{font-size:5.375rem}
+  .ro .vl{flex-wrap:wrap}
   .mapsec{padding:6rem 0 4.375rem}
   .ber{columns:1}
   .alarm{padding:6rem 0 5.25rem}
 }
 @media(max-width:40rem){
   .ctas a.btn{width:100%;justify-content:space-between;letter-spacing:.06em;font-size:.8125rem}
+  /* fix round 4: the read-out's canton keeps two lines while the map lights the cantons one by one ('Appenzell
+     Ausserrhoden' took a second line and moved the page by 47 px, CLS 0.06-0.17); a size smaller on a narrow phone, so
+     'Appenzell Rhodes-Extérieures' keeps to two lines (it took three at 320 px) */
+  .ro .nm{font-size:min(3.25rem,13.6vw);min-height:1.8em}
   .door .big b{font-size:3.5rem}
   .door .big .lbl{font-size:1.625rem}
   form.finder.door .dh{font-size:2.25rem}
@@ -2679,6 +2699,13 @@ PRELOAD = '<link rel="preload" href="{base}/fonts/is.woff2" as="font" crossorigi
 # (the hero's heading re-wrapped when they came); on the five home pages only (bytes)
 HOME_PRELOAD = ('<link rel="preload" href="{base}/fonts/lg.woff2" as="font" crossorigin>\n'
                 '<link rel="preload" href="{base}/fonts/is7.woff2" as="font" crossorigin>\n')
+# Fix round 4: a tender's page (open or past its deadline) loads the bold face at once (17.7 KB): its row of buttons
+# ('UNTERLAGEN … AUF SIMAP.CH', the calendar, the canton's list, 'Fehler melden') fits a 1440-px line in Instrument Sans
+# bold and not in its fallback, and on a slow first visit the page moved by 0.20 when the face arrived. 67 bytes on the
+# 9,408 tender pages (0.63 MB); the 63,316 award pages, whose row is short, go without (on all 72,724 detail pages the
+# bold and the display face would cost 9.7 MB, the bold alone 4.9 MB, over the round's 3 MB). Every title's measure is
+# in em (h1.rec), so the fallback no longer changes it.
+BOLD_PRELOAD = '<link rel="preload" href="{base}/fonts/is7.woff2" as="font" crossorigin>\n'
 # The icon: the SVG for browsers that take one; /favicon.ico and /apple-touch-icon.png sit at the root,
 # where browsers and iOS look for them without a tag (two tags would cost 9 MB over the site).
 # The header (step 4): the name and the search, then the menu and the languages; on a phone the menu sits behind
@@ -4783,7 +4810,8 @@ def build_awards(awards: list, opens: list, expired: list, pages: dict, sectors:
                    # An open tender's page is the one link people pass on: it carries the share
                    # card (og:*), the award pages do not (14.10.2026).
                    robots="noindex", og=is_tender and not gone,
-                   head_extra=XP_JS.format(t=int(dl_at.timestamp() * 1000)) if near else ""))
+                   head_extra=(BOLD_PRELOAD.format(base=BASE) if is_tender else "")
+                   + (XP_JS.format(t=int(dl_at.timestamp() * 1000)) if near else "")))
         n += 1
     return n
 
@@ -6776,11 +6804,21 @@ def build_404() -> None:
 # company, authority and open tender is in it exactly once, and the byte limits below.
 DATA_BYTES: collections.Counter = collections.Counter()
 # words that never choose a search shard (a firm is not found under 'A' for its 'AG'): legal forms,
-# articles, prepositions; js/suche.js gets the same list
+# articles, prepositions
 SEARCH_STOP = ("ag", "sa", "gmbh", "sarl", "sagl", "ltd", "kg", "co", "cie", "inc", "llc", "ug", "se", "sas", "srl",
                "spa", "de", "du", "des", "la", "le", "les", "der", "die", "das", "dem", "den", "und", "et", "ed",
                "di", "del", "della", "dei", "von", "fur", "and", "of", "the", "en", "au", "aux", "im", "in", "an",
                "zu", "zur", "zum", "par", "pour", "per")
+# Fix round 4: the words a query drops while another word remains, folded ('für' fur, 'à' a, 'd’' d), on the tender
+# lists (js/liste.js) and in the search (js/suche.js), through /stand.js (D.sw: these and SEARCH_STOP, one list):
+# 'Reinigung an Schulen' found nothing where 'Reinigung Schulen' found 2. The articles and prepositions of the four
+# languages (the brief's lists, and the Italian articulated forms and the French elided ones); a superset of
+# SEARCH_STOP, so the shard a query picks (its first word not in the list) still holds what it finds.
+QUERY_STOP = ("an", "fur", "der", "die", "das", "und", "im", "in", "von", "zu", "mit", "bei", "auf",
+              "de", "du", "des", "la", "le", "les", "et", "a", "au", "aux", "pour", "en", "d", "l",
+              "di", "del", "della", "dei", "e", "al", "per", "con", "delle", "degli", "dello", "dell", "alla", "alle",
+              "nel", "nella",
+              "of", "the", "and", "for", "at", "to", "with")
 SHARD_MAX = 320_000            # bytes of one search shard (the largest, 's', is fetched for 'Stadt', 'SBB' …)
 DATA_MAX = 6_000_000           # every file of /daten/suche/, /daten/offen.json, /daten/kb/, /daten/abo-rate.json
 JS_MAX_GZ = 30_000             # all the scripts together but the home's, gzip (fix round 1: 25 -> 30 KB, the brief's budget)
@@ -7127,18 +7165,19 @@ JS_WORDS = {
     "stand": ("due_today", "due_today_bare", "due_tomorrow", "due_days", "due_over", "hidden_1", "hidden_n",
               "tender_expired", "expired_lead", "new_today", "new_today_1", "new_yday", "new_yday_1", "top", "ph",
               "colon", "all_n"),
-    "suche": ("g_t", "g_u", "g_b", "g_s", "g_k", "g_p", "all_t", "all_r", "res_h", "none", "none_hint", "n_res",
+    # fix round 4: the words no script reads any more out (suche res_h, liste k_canton and k_div, kb rate_flag, alle all_n)
+    "suche": ("g_t", "g_u", "g_b", "g_s", "g_k", "g_p", "all_t", "all_r", "none", "none_hint", "n_res",
               "n_res_1", "n_sug", "more", "aw_1", "aw_n", "open_1", "open_n", "to_award", "k_canton", "k_div", "k_sec",
               "until", "loading", "failed", "z_h", "z_drop", "z_abo"),
-    "liste": ("f_count", "f_first", "f_none", "f_active", "f_active_1", "multi", "k_canton", "k_div", "all_n",
+    "liste": ("f_count", "f_first", "f_none", "f_active", "f_active_1", "multi", "all_n",
               "z_h", "z_drop", "z_near", "z_abo", "tier_w", "f_abo_kwb"),
     "abo": ("email_missing", "email_bad", "sel", "pv", "pv_lt", "pv_note", "open_1", "open_n", "sum_sel", "all_ch",
             "all_b", "bf_none"),
     "kb": ("kb_close", "kb_h", "kb_lead", "aw_1", "aw_n", "kb_f1", "kb_fn", "kb_top", "company", "awards", "sum_l",
            "unit_k", "unit_m", "amount", "kb_recent", "date", "contract", "winner", "kb_all", "kb_csv",
-           "kb_fb", "kb_fbx", "rate_flag", "kb_once"),
+           "kb_fb", "kb_fbx", "kb_once"),
     # the rest of a cut table, in place (fix round 1)
-    "alle": ("all_n", "rate_flag", "per_firm", "fx_amount", "not_published", "failed"),
+    "alle": ("rate_flag", "per_firm", "fx_amount", "not_published", "failed"),
     # the home's map read-out (step 4); dec: the decimal sign of the language
     "home": ("map_rank", "map_share", "map_lit", "open_1", "open_n", "dec", "map_go"),
 }
@@ -7171,12 +7210,9 @@ def js_min(src: str) -> str:
 
 def js_module(name: str) -> str:
     src = js_min((JS_DIR / f"{name}.js").read_text(encoding="utf-8"))
-    assert src.count("__L__") == 1 and src.count("__STOP__") == (name == "suche"), name
+    assert src.count("__L__") == 1, name
     words = {l: {k: _word(name, k, l) for k in JS_WORDS[name]} for l in LANGS}
-    out = src.replace("__L__", json.dumps(words, ensure_ascii=False, separators=(",", ":")), 1)
-    if name == "suche":
-        out = out.replace("__STOP__", json.dumps(list(SEARCH_STOP), separators=(",", ":")), 1)
-    return out
+    return src.replace("__L__", json.dumps(words, ensure_ascii=False, separators=(",", ":")), 1)
 
 
 JS_MODULES = ("suche", "liste", "abo", "kb", "home", "alle")
@@ -7192,6 +7228,8 @@ def write_scripts() -> None:
             # the nearest deadline of the open tenders (minutes since 1970): until it passes, every count of open
             # tenders on a page is still the build's and /stand.js recounts nothing (fix round 1)
             "nx": min((m for m in (deadline_min(t) for t in OPENS) if m), default=0),
+            # the words a query drops (fix round 4): one list for the tender lists and the search, the shards' too
+            "sw": " ".join(dict.fromkeys(SEARCH_STOP + QUERY_STOP)),
             "L": {l: {k: _word("stand", k, l) for k in JS_WORDS["stand"]} for l in LANGS}}
     for l in LANGS:
         formato.LANG = l

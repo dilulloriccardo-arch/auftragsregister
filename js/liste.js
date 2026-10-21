@@ -17,7 +17,10 @@
    ('Weitere Treffer (Wortteil)'), each group in that order; the suggestions of an empty result are separated; the
    count takes the focus with a short highlight, not an input's ring; a keyword that names a Branche ('Reinigung')
    carries it to the alert form; /daten/offen.json (150 KB) waits for the first touch of the bar, and until then the
-   count line and the next deadline come from the page and /stand.js's live count. */
+   count line and the next deadline come from the page and /stand.js's live count.
+   Fix round 4 (21.10.2026): the stop words of the four languages off the query while another word remains ('Reinigung an
+   Schulen' = 'Reinigung Schulen'); the divider above the first match of a word part, also when no row matches whole;
+   a deadline passing while the page is open leaves its row in place (/stand.js) and the count line follows (A.lx). */
 (function () {
   var A = window.AR; if (!A || A.liste) return; A.liste = 1;
   var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, fold = A.fold;
@@ -46,10 +49,11 @@
   function cants(r) { return r[3].replace(/\*/g, '').split(' ').filter(function (x) { return x; }); }
   function title(r) { var v = r[1][r[2] ? +r[2].charAt(LI) : 0] || r[1][0]; return { t: v.slice(3), l: v.slice(0, 2) }; }
   function cut(s, n) { if (s.length <= n) return s; s = s.slice(0, n); var i = s.lastIndexOf(' '); return (i > n - 20 ? s.slice(0, i) : s).replace(/[\s,;:.\-–]+$/, '') + '…'; }
-  // the query as typed, its canton (when the list has no canton of its own) and its words
+  // the query as typed, its canton (when the list has no canton of its own) and its words, the stop words off while
+  // another word remains (fix round 4: 'Reinigung an Schulen' = 'Reinigung Schulen')
   function query() {
     var p = !sk && O ? A.qparse(st.q, O.k) : { q: st.q.trim(), k: '' };
-    return { k: p.k, t: fold(p.q).split(/[^0-9a-z]+/).filter(function (x) { return x; }), q: p.q };
+    return { k: p.k, t: A.sw(A.words(p.q)), q: p.q };
   }
   function ek(qp) { return sk || qp.k || st.k; }
   function active() { return !!(st.q.trim() || st.k || st.b || st.s || st.n || st.o); }
@@ -158,7 +162,8 @@
         return a.ti - b.ti || (neu ? (a[7] < b[7] ? 1 : a[7] > b[7] ? -1 : 0) : 0) || (A.when(a[6]) - A.when(b[6]));
       });
       // the order chosen holds within each group; the matches of a word part after a divider of their own
-      rows.forEach(function (r, i) { if (w < 0 && r.ti && i) w = i; });
+      // (fix round 4: above the first match of a word part even when it is the first row, or the only one)
+      rows.forEach(function (r, i) { if (w < 0 && r.ti) w = i; });
       rows.forEach(function (r, i) {
         if (i === w) html += '<tr class="tier"><td colspan="4">' + esc(L.tier_w) + '</td></tr>';
         html += row(r);
@@ -280,18 +285,21 @@
   if (tbl._cb && (allA || allB)) { A.cut(tbl, total, showAll); ((allA && allA.closest('p')) || allB).hidden = true; }
   // until the data comes: the count line from the page's rows and the live count of /stand.js (offen-dl.json, 30 KB:
   // read only once a deadline has passed since the build), the next deadline from the first row still shown
+  // (fix round 4: a row muted since its deadline passed while the page is open no longer counts, A.lx)
+  var live = 'tr[data-deadline]:not([hidden]):not(.off)';
   function pre(c) {
-    var n = tb.querySelectorAll('tr[data-deadline]:not([hidden])').length,
+    var n = tb.querySelectorAll(live).length,
       m = c ? (scope ? (c[scope.charAt(0)] || {})[scope.slice(2)] || 0 : c.a) : total;
     m = Math.max(m, n);
     if (!O) cnt.textContent = n < m ? fmt(L.f_first, { k: A.count(n), m: A.count(m) }) : fmt(L.f_count, { n: A.count(n), m: A.count(m) });
-    var nx = !scope && d.querySelector('a.fig.date time'), r0 = tb.querySelector('tr[data-deadline]:not([hidden])');
+    var nx = !scope && d.querySelector('a.fig.date time'), r0 = tb.querySelector(live);
     if (!O && nx && r0) { var t = r0.getAttribute('data-deadline'); nx.setAttribute('datetime', t.slice(0, 10)); nx.textContent = A.date(t); }
   }
+  A.lx = function () { (A.oc || Promise.resolve(null)).then(pre, function () { }); };
   if (active()) ready();
   else {
     pre(null);
-    if (A.oc) A.oc.then(pre, function () { });
+    A.lx();
     // the first touch of the bar (a pointer over it, the focus in it) fetches the data
     var go = function () { bar.removeEventListener('pointerover', go); bar.removeEventListener('focusin', go); ready(); };
     bar.addEventListener('pointerover', go); bar.addEventListener('focusin', go);

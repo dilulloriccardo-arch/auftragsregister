@@ -432,7 +432,9 @@ BANNED_TERMS = {
     "fr": ("marchés ouverts", "marchés publics en cours"),
     # fix round 3 (item 37): the buttons and controls in the Lei form, as the prose ('Iscriviti' was the tu form)
     "it": ("appalti aperti", "Iscriviti", "Vai al contenuto", "Attiva l’avviso", "Mostra tutti", "Mostra gli altri",
-           "Cerca un ramo", "Torna su", "Azzera i filtri", "Segnala un errore", "Apri questo bando", "Aggiungi la scadenza"),
+           "Cerca un ramo", "Torna su", "Azzera i filtri", "Segnala un errore", "Apri questo bando", "Aggiungi la scadenza",
+           # fix round 4: the about page's button
+           "Vai all’avviso"),
     # fix round 3 (item 40): the term table's 'Open tender'
     "en": ("open contracts", "e-mail", "Open for bids"),
 }
@@ -551,11 +553,15 @@ def double_stop_errors(html: str) -> list:
     return out
 
 
-# French elides 'de', 'le', 'que' before a vowel or an h, before an inserted name too ('Adjudications de Abteilung
+# French elides 'de', 'le', 'que' before a vowel, before an inserted name too ('Adjudications de Abteilung
 # Tiefbau (CSV)' on 234 pages): every French template that inserts a value after them, filled with a name that
 # starts with a vowel and one with an h, and the pages' own places where names are inserted (the CSV links, the notes).
+# Fix round 4: before an h only a mute one ('d’Hôpital'): 'd’Haute école', 'd’Hochbauamt', 'd’HOLINGER' are wrong too.
+# The mute-h starts restated from lingue._MUTE_H, not imported (see above).
+_MUTE_H = r"(?i:h(?:ôpita|ôtel|ospi|abita|ygièn|éberg|orlog))"
 _ELISION_SLOT = re.compile(r"(?<![\w’'])(?:de|De|le|Le|que|Que) \{(\w+)\}")
-_NO_ELISION = re.compile(r"(?<![\w’'-])(?:de|De|le|Le|que|Que) (?=[AEIOUYHÀÂÄÉÈÊËÎÏÔÖÛÜaeiouyhàâäéèêëîïôöûü])")
+_NO_ELISION = re.compile(r"(?<![\w’'-])(?:de|De|le|Le|que|Que) (?=[AEIOUYÀÂÄÉÈÊËÎÏÔÖÛÜaeiouyàâäéèêëîïôöûü]|" + _MUTE_H + ")")
+_BAD_ELISION = re.compile(r"(?<![\w’'-])(?:[dDlL]|[qQ]u)’(?=[Hh])(?!" + _MUTE_H + ")")
 
 
 def elision_template_errors(lingue_mod) -> list:
@@ -566,14 +572,14 @@ def elision_template_errors(lingue_mod) -> list:
             if not isinstance(tpl, str) or not _ELISION_SLOT.search(tpl):
                 continue
             fields = set(re.findall(r"\{(\w+)\}", tpl))
-            for probe in ("Abteilung Tiefbau", "Hochbauamt", "Office fédéral des routes"):
+            for probe in ("Abteilung Tiefbau", "Hochbauamt", "Office fédéral des routes", "Hôpital du Valais", "HOLINGER AG"):
                 kw = {f: "12" for f in fields}
                 kw.update({m.group(1): probe for m in _ELISION_SLOT.finditer(tpl)})
                 try:
                     txt = fn(key, "fr", **kw)
                 except (KeyError, IndexError, ValueError):
                     continue
-                if _NO_ELISION.search(txt):
+                if _NO_ELISION.search(txt) or _BAD_ELISION.search(txt):
                     out.append(f"{name}[{key!r}]: {txt[:90]}")
                     break
     return out
@@ -586,8 +592,9 @@ def elision_page_errors(html: str) -> list:
     out = []
     for m in _FR_SLOTS.finditer(html):
         t = htmlmod.unescape(_TAG.sub("", m.group(1) or m.group(2) or ""))
-        for x in _NO_ELISION.finditer(t):
-            out.append(t[max(0, x.start() - 25):x.end() + 25])
+        for rx in (_NO_ELISION, _BAD_ELISION):
+            for x in rx.finditer(t):
+                out.append(t[max(0, x.start() - 25):x.end() + 25])
     return out
 
 

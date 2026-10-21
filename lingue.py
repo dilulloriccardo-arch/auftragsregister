@@ -1234,21 +1234,29 @@ IDX: dict[str, dict[str, str]] = {
 }
 
 
-# Fix round 3 (item 36): French elides 'de', 'le' and 'que' before a vowel or an h, also before a name the template
-# inserts: 'Adjudications de Abteilung Tiefbau (CSV)' (234 pages), 'd’un seul projet de Office…' (23). The template's
+# Fix round 3 (item 36): French elides 'de', 'le' and 'que' before a vowel, also before a name the template inserts:
+# 'Adjudications de Abteilung Tiefbau (CSV)' (234 pages), 'd’un seul projet de Office…' (23). The template's
 # 'de {name}' becomes 'd’{name}' when the value starts so; a figure ('de 12 projets') or a consonant keeps it.
+# Fix round 4: before an h only where it is mute ('d’Hôpital du Valais'): an aspirated or a foreign one keeps 'de'
+# ('d’Haute école', 'd’Hochbauamt', 'd’HOLINGER' were wrong). _MUTE_H: the starts of the mute-h words names begin with.
 _ELIDE = __import__("re").compile(r"(?<![\w’'])(de|De|le|Le|que|Que) \{(\w+)\}")
-_ELIDE_START = "aeiouyhàâäéèêëîïôöûüœæAEIOUYHÀÂÄÉÈÊËÎÏÔÖÛÜŒÆ"
+_ELIDE_START = "aeiouyàâäéèêëîïôöûüœæAEIOUYÀÂÄÉÈÊËÎÏÔÖÛÜŒÆ"
+_MUTE_H = ("hôpita", "hôtel", "hospi", "habita", "hygièn", "héberg", "horlog")
+
+
+def elides(v: str) -> bool:
+    """French elides before v: a vowel, or a mute h (_MUTE_H)."""
+    return bool(v) and (v[0] in _ELIDE_START or v.lower().startswith(_MUTE_H))
 
 
 def elide(tpl: str, lang: str, kw: dict) -> str:
-    """tpl with every 'de {x}' / 'le {x}' / 'que {x}' elided where kw's x starts with a vowel or an h (French only)."""
+    """tpl with every 'de {x}' / 'le {x}' / 'que {x}' elided where kw's x starts with a vowel or a mute h (French only)."""
     if lang != "fr" or not kw:
         return tpl
 
     def one(m):
         v = str(kw.get(m.group(2), ""))
-        if not v or v[0] not in _ELIDE_START:
+        if not elides(v):
             return m.group(0)
         w = m.group(1)
         return (w[:2] if w.lower() == "que" else w[0]) + "’{" + m.group(2) + "}"
@@ -2747,7 +2755,8 @@ UEBER: dict[str, dict] = {
         "nocant": "{n} non indicano né un luogo né un committente con cantone; non contano in alcun "
                   "cantone, e la panoramica dei cantoni le elenca a parte.",
         "nocant_zero": "Al momento ogni aggiudicazione ha un cantone.",
-        "alert_link": "Vai all’avviso e-mail",
+        # fix round 4: the Lei form, as the other buttons ('Vai' was the tu form)
+        "alert_link": "All’avviso e-mail",
     },
     "en": {
         "title": "About the register and its methodology",
