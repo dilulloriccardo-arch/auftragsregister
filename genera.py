@@ -7170,24 +7170,27 @@ def write_script_data(awards: list, opens: list) -> None:
 # so a page names a new one only when a script changed, never because a night passed.
 JS_DIR = ROOT / "js"
 JS_WORDS = {
+    # fix round 6: with the words two scripts share (the search's and the tender lists' suggestions and dividers, the
+    # awards' count, the failure), read as A.L: one copy instead of two, for the room the search's fixes needed
     "stand": ("due_today", "due_today_bare", "due_tomorrow", "due_days", "due_over", "hidden_1", "hidden_n",
-              "tender_expired", "expired_lead", "new_today", "new_today_1", "new_yday", "new_yday_1", "top", "ph",
-              "colon", "all_n"),
+              "tender_expired", "expired_lead", "top", "ph", "colon", "all_n", "z_h", "z_drop", "z_abo", "z_dym",
+              "tier_w", "tier_a", "aw_1", "aw_n", "failed"),
     # fix round 4: the words no script reads any more out (suche res_h, liste k_canton and k_div, kb rate_flag, alle all_n)
     "suche": ("g_t", "g_u", "g_b", "g_s", "g_k", "g_p", "all_t", "all_r", "none", "none_hint", "n_res",
-              "n_res_1", "n_sug", "more", "aw_1", "aw_n", "open_1", "open_n", "to_award", "k_canton", "k_div", "k_sec",
-              "until", "loading", "failed", "z_h", "z_drop", "z_abo", "tier_w", "tier_a"),
-    "liste": ("f_count", "f_first", "f_none", "f_active", "f_active_1", "multi", "all_n",
-              "z_h", "z_drop", "z_near", "z_abo", "tier_w", "tier_a", "f_abo_kwb"),
+              "n_res_1", "n_sug", "more", "open_1", "open_n", "to_award", "k_canton", "k_div", "k_sec", "until",
+              "loading"),
+    "liste": ("f_count", "f_first", "f_none", "f_active", "f_active_1", "multi", "z_near", "f_abo_kwb"),
     "abo": ("email_missing", "email_bad", "sel", "pv", "pv_lt", "pv_note", "open_1", "open_n", "sum_sel", "all_ch",
             "all_b", "bf_none"),
-    "kb": ("kb_close", "kb_h", "kb_lead", "aw_1", "aw_n", "kb_f1", "kb_fn", "kb_top", "company", "awards", "sum_l",
+    "kb": ("kb_close", "kb_h", "kb_lead", "kb_f1", "kb_fn", "kb_top", "company", "awards", "sum_l",
            "unit_k", "unit_m", "amount", "kb_recent", "date", "contract", "winner", "kb_all", "kb_csv",
            "kb_fb", "kb_fbx", "kb_once"),
     # the rest of a cut table, in place (fix round 1)
-    "alle": ("rate_flag", "per_firm", "fx_amount", "not_published", "failed"),
-    # the home's map read-out (step 4); dec: the decimal sign of the language
-    "home": ("map_rank", "map_share", "map_lit", "open_1", "open_n", "dec", "map_go"),
+    "alle": ("rate_flag", "per_firm", "fx_amount", "not_published"),
+    # the home's map read-out (step 4); dec: the decimal sign of the language; the 'neu' badge's words (fix round 6:
+    # from /stand.js, the home is the only page that has the badge)
+    "home": ("map_rank", "map_share", "map_lit", "open_1", "open_n", "dec", "map_go", "new_today", "new_today_1",
+             "new_yday", "new_yday_1"),
 }
 
 

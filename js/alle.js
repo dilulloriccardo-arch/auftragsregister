@@ -53,7 +53,7 @@
         p.remove();
         var r = focus >= 0 && t.tBodies[0].rows[focus], a = r && r.querySelector('a'); if (a) a.focus();
         A.totop();
-      }, function () { if (!kf) location.href = el.href; else { p.hidden = false; el.textContent = L.failed; } });
+      }, function () { if (!kf) location.href = el.href; else { p.hidden = false; el.textContent = A.L.failed; } });
     }
     el.addEventListener('click', function (ev) {
       if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.button) return;

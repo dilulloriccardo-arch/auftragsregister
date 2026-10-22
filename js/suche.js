@@ -28,21 +28,28 @@
    remains, and out of the shard's choice; 'IT' names the software and the computers too (CPV 48, 302).
    Fix round 5 (21.10.2026): the tenders in the tender lists' order (A.tier): the whole matches first, the matches of a
    word part after them under a divider, and in the field's list only when nothing matches whole ('Gebäudereinigung':
-   the laboratory buildings came first); 'Treffer als Wortteil' when every match is one. */
+   the laboratory buildings came first); 'Treffer als Wortteil' when every match is one.
+   Fix round 6 (21.10.2026): a group whose best match is a word part after the groups with whole matches ('Marchese': the
+   firm before three 'Marché…'); a town's word in any language the same ('City of Zurich' = 'Stadt Zürich', its shard the
+   town's name); no result offers the query with a word one letter away ('Reinigng': 'Meinten Sie «Reinigung»?'). */
 (function () {
   var A = window.AR; if (!A || A.suche) return; A.suche = 1;
-  var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, fold = A.fold, toks = A.words, slug = A.slug;
-  var LI = { de: 0, fr: 1, it: 2, en: 3 }[l];
+  var d = document, LL = __L__, L = LL[A.l] || LL.de, S = A.L, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, fold = A.fold, toks = A.words, slug = A.slug;
+  var LI = A.li, cw = A.cw;
   // the word that picks the shard: the first of two letters or more once the stop words are off (A.sw: articles,
-  // prepositions, legal forms; fix round 4: one list with the tender lists', in /stand.js)
-  function kw(qt) { var f = A.sw(qt), i; for (i = 0; i < f.length; i++) if (f[i].length > 1) return f[i]; return f[0] || ''; }
-  function words(e, s) { if (!e.w) { e.f = fold(s); e.w = e.f.split(/[^0-9a-z]+/); } return e.w; }
-  function n_aw(n) { return n === 1 ? L.aw_1 : fmt(L.aw_n, { n: A.count(n) }); }
+  // prepositions, legal forms; fix round 4: one list with the tender lists', in /stand.js), a town's word only alone
+  // (fix round 6: 'Ville de Genève' and 'City of Zurich' are in the shards of 'Genève' and 'Zurich', not 'Stadt')
+  function kw(qt) {
+    var f = A.sw(qt).filter(function (x) { return x.length > 1; });
+    return f.filter(function (x) { return cw(x) !== 'stadt'; })[0] || f[0] || A.sw(qt)[0] || '';
+  }
+  function words(e, s) { if (!e.w) { e.f = fold(s); e.w = e.f.split(/[^0-9a-z]+/).map(cw); } return e.w; }
+  function n_aw(n) { return n === 1 ? S.aw_1 : fmt(S.aw_n, { n: A.count(n) }); }
   function n_open(n) { return n === 1 ? L.open_1 : fmt(L.open_n, { n: A.count(n) }); }
   // a word-prefix (key) and part-of-text (the others) test; score: whole word 4, word start 3, inside 1; the stop words
   // only in the bonus of a name that starts with the query (fix round 4: 'Reinigung an Schulen')
   function score(e, text, qt, key) {
-    var w = words(e, text), s = 0, i, j, t, best, f = A.sw(qt);
+    var w = words(e, text), s = 0, i, j, t, best, f = A.sw(qt).map(cw);
     for (i = 0; i < f.length; i++) {
       t = f[i]; best = 0;
       for (j = 0; j < w.length && best < 4; j++) {
@@ -55,19 +62,12 @@
     }
     return s + (e.f.indexOf(qt.join(' ')) === 0 ? 3 : 0);
   }
-  function title(r) {
-    var v = r[1][r[2] ? +r[2].charAt(LI) : 0] || r[1][0];
-    return { t: v.slice(3), l: v.slice(0, 2) };
-  }
   // every result as {g: group, s: score, n: weight, h: href, x: text, xl: its language, u: sub-line}
-  // the canton a query names (A.qparse) and the rest of its words; names from the tenders' file or the topics'
-  function parse(q, th, op) {
-    var names = op && op.k ? op.k : null;
-    if (!names && th && th.k) { names = {}; th.k.forEach(function (e) { names[e[0]] = e[1]; }); }
-    return names ? A.qparse(q, names) : { q: q, k: '' };
-  }
+  // the canton a query names (A.qparse) and the rest of its words; the names from the tenders' file (fix round 6: not
+  // from the topics' when that file failed: no tender to filter then, and the hub's list reads the canton itself)
+  function parse(q, op) { return op && op.k ? A.qparse(q, op.k) : { q: q, k: '' }; }
   function search(q, only, shard, th, op) {
-    var qt = toks(q), out = [], key = kw(qt), qp = parse(q, th, op), qr = A.sw(toks(qp.q)), fq = fold(q).replace(/[^0-9a-z]+/g, ' ').trim();
+    var qt = toks(q), out = [], key = kw(qt), qp = parse(q, op), qr = A.sw(toks(qp.q)), fq = fold(q).replace(/[^0-9a-z]+/g, ' ').trim();
     if (!qt.length) return out;
     // ex: the entry's name is the query itself (an exact canton, Branche or company leads, fix round 1)
     function add(g, s, n, h, x, u, xl, ex) { if (s) out.push({ g: g, s: s + (ex ? 50 : 0) + Math.log(n + 1) / Math.LN10, n: n, h: h, x: x, u: u, xl: xl || '', ex: !!ex }); }
@@ -89,7 +89,7 @@
       op.t.forEach(function (r) {
         if (A.when(r[6]) <= A.now) return;
         if (qp.k && r[3].replace(/\*/g, '').split(' ').indexOf(qp.k) < 0) return;
-        var s = qr.length ? A.tscore(A.twords(r, op), qr) : (qp.k ? 1 : 0), t = title(r), x;
+        var s = qr.length ? A.tscore(A.twords(r, op), qr) : (qp.k ? 1 : 0), t = A.title(r), x;
         // the nearest deadline first among equals (n: the minus of its time, scaled)
         add('t', s, 0, base + 'auftrag/' + r[0] + '/', t.t,
           fmt(L.until, { d: A.date(r[6]) }) + ' · ' + op.b[r[5]] + ' · ' + r[3].replace(/\*/g, ''), t.l);
@@ -102,8 +102,9 @@
       var syn = tq.map(function (w) { return A.syn[w] || ''; }).join(' ').split(' ');
       (th.s || []).concat(th.d || []).forEach(function (e) {
         var div = e[0].length === 2, sc = score(e, e[1].join(' ') + ' ' + e[0], tq, null);
-        // the Branche a synonym names leads its group ('IT' -> Informatikdienstleistungen)
-        if (syn.some(function (v) { return v && (e[0].indexOf(v) === 0 || (div && v.indexOf(e[0]) === 0)); })) sc = Math.max(sc, 4) + (div ? 4 : 0);
+        // the Branche a synonym names leads its group ('IT' -> Informatikdienstleistungen), when the synonym is that broad
+        // (fix round 6: 'Übersetzung' -> 7953 put the Branche of all business services before the translations)
+        if (syn.some(function (v) { return v && (e[0].indexOf(v) === 0 || (div && v.length < 4 && v.indexOf(e[0]) === 0)); })) sc = Math.max(sc, 4) + (div ? 4 : 0);
         // a Branche before its own Bereiche when both match as well
         add('s', sc && sc + (div ? 1 : 0), e[2], base + (div ? 'branche/' : 'bereich/') + e[0] + '/', e[1][LI],
           (div ? L.k_div : L.k_sec) + ' · CPV ' + e[0] + ' · ' + n_aw(e[2]) + (e[3] ? ' · ' + n_open(e[3]) : ''), '',
@@ -121,14 +122,16 @@
     return out;
   }
   var ORDER = ['t', 'u', 'b', 's', 'k', 'p'];
+  function rank(x) { return x.ex ? 0 : x.w ? 2 : 1; }
   function groups(res) {
     var g = {};
     res.forEach(function (r) { (g[r.g] = g[r.g] || []).push(r); });
     ORDER.forEach(function (k) {
       if (g[k]) g[k].sort(function (a, b) { return (a.w | 0) - (b.w | 0) || b.s - a.s || (a.d && b.d ? a.d - b.d : 0) || b.n - a.n || (a.x < b.x ? -1 : a.x > b.x ? 1 : 0); });
     });
-    // the groups holding an exact name first (fix round 1: 'Zürich' showed tenders before the canton)
-    g.order = ORDER.filter(function (k) { return g[k] && g[k][0].ex; }).concat(ORDER.filter(function (k) { return g[k] && !g[k][0].ex; }));
+    // the groups holding an exact name first (fix round 1: 'Zürich' showed tenders before the canton), the ones whose best
+    // match is a word part last (fix round 6: 'Marchese' showed three 'Marché…' before the firm)
+    g.order = ORDER.filter(function (k) { return g[k]; }).sort(function (a, b) { return rank(g[a][0]) - rank(g[b][0]); });
     return g;
   }
   function data(q) {
@@ -139,18 +142,20 @@
   }
   // the hub's list for a query: its canton as the canton filter, scrolled to the list (fix round 1)
   function hubq(q, r) {
-    var p = parse(q, r && r[1], r && r[2]), a = [];
+    var p = parse(q, r && r[2]), a = [];
     if (p.q) a.push('q=' + encodeURIComponent(p.q)); if (p.k) a.push('k=' + p.k);
     return B + '/' + l + '/ausschreibungen/' + (a.length ? '?' + a.join('&') : '') + '#fristen';
   }
-  // no result: a word less (when the query has several), the alert, and on the page the directories (fix round 1)
-  function sugg(q, only) {
-    var ws = q.trim().split(/\s+/), out = [];
+  // no result: the query with a word one letter away (fix round 6), a word less (when the query has several), the alert,
+  // and on the page the directories (fix round 1)
+  function sugg(q, only, op) {
+    var ws = q.trim().split(/\s+/), out = [], y = op && A.dym(q, op);
+    if (y) out.push({ h: resq(y, only), x: fmt(S.z_dym, { q: y }) });
     if (ws.length > 1) ws.forEach(function (w, i) {
       var rest = ws.filter(function (x, j) { return j !== i; }).join(' ');
-      out.push({ h: resq(rest, only), x: fmt(L.z_drop, { t: w, n: '' }).replace(/[:\s]+$/, '') });
+      out.push({ h: resq(rest, only), x: fmt(S.z_drop, { t: w, n: '' }).replace(/[:\s]+$/, '') });
     });
-    out.push({ h: B + '/' + l + '/ausschreibungen/abo/', x: L.z_abo });
+    out.push({ h: B + '/' + l + '/ausschreibungen/abo/', x: S.z_abo });
     return out;
   }
   function resq(q, only) { return B + '/' + l + '/suche/?q=' + encodeURIComponent(q) + (only ? '&t=' + only : ''); }
@@ -194,7 +199,7 @@
           var rs = g[k], gi = ORDER.indexOf(k), tw = rs[0].w;
           var gid = id + '-g' + gi;
           html += '<div role="group" aria-labelledby="' + gid + '"><span class="search-grp" id="' + gid + '" role="presentation">' + esc(L['g_' + k]) + ' (' + A.count(rs.length) + ')' +
-            (tw ? '<span class="tw">' + esc(L.tier_a) + '</span>' : '') + '</span>';
+            (tw ? '<span class="tw">' + esc(S.tier_a) + '</span>' : '') + '</span>';
           rs.filter(function (x) { return tw || !x.w; }).slice(0, cap[k]).forEach(function (x) { html += opt(x.h, x.x, x.u, '', x.xl); n++; });
           if (k === 't') html += opt(hubq(q, r), fmt(L.all_t, { q: q }), '', 'all');
           html += '</div>';
@@ -203,8 +208,8 @@
           '-g0" role="presentation">' + esc(L.g_t) + ' (0)</span>' + opt(hubq(q, r), fmt(L.all_t, { q: q }), '', 'all') + '</div>' : '';
         if (n) html += t0 + opt(resq(q, only), fmt(L.all_r, { q: q }), '', 'all');
         else {
-          html = '<span class="search-msg">' + esc(fmt(L.none, { q: q })) + ' ' + esc(L.z_h) + '</span>';
-          sugg(q, only).forEach(function (x) { html += opt(x.h, x.x, '', 'all'); });
+          html = '<span class="search-msg">' + esc(fmt(L.none, { q: q })) + ' ' + esc(S.z_h) + '</span>';
+          sugg(q, only, r[2]).forEach(function (x) { html += opt(x.h, x.x, '', 'all'); });
           html += t0;
         }
         pop.innerHTML = html;
@@ -247,19 +252,19 @@
     res.innerHTML = '<p class="cnt">' + esc(L.loading) + '</p>';
     data(q).then(function (r) {
       if (my !== fseq) return;
-      if (!r[0] && !r[1] && !r[2]) { res.innerHTML = '<p class="cnt">' + esc(L.failed) + '</p>'; return; }
+      if (!r[0] && !r[1] && !r[2]) { res.innerHTML = '<p class="cnt">' + esc(S.failed) + '</p>'; return; }
       var all = search(q, only, r[0], r[1], r[2]), g = groups(all), html = '', nt = all.length === 1 ? L.n_res_1 : fmt(L.n_res, { n: A.count(all.length) });
       html += '<p class="cnt">' + esc(nt) + '</p>';
       live.textContent = nt;
       if (!all.length) html += '<p class="empty">' + esc(fmt(L.none, { q: q })) + ' ' + esc(L.none_hint) + '</p>' +
-        '<p class="zs"><strong>' + esc(L.z_h) + '</strong> ' + sugg(q, only).map(function (x) { return '<a href="' + esc(x.h) + '">' + esc(x.x) + '</a>'; }).join(' · ') + '</p>';
+        '<p class="zs"><strong>' + esc(S.z_h) + '</strong> ' + sugg(q, only, r[2]).map(function (x) { return '<a href="' + esc(x.h) + '">' + esc(x.x) + '</a>'; }).join(' · ') + '</p>';
       html += '<div class="search-res">';
       g.order.forEach(function (k) {
         var rs = g[k];
         html += '<h2>' + esc(L['g_' + k]) + ' <span class="sub">(' + A.count(rs.length) + ')</span></h2><ul class="plain">';
         rs.forEach(function (x, j) {
           // the matches of a word part after a divider, as in the tender lists
-          if (x.w && !(rs[j - 1] || {}).w) html += '<li class="tier"' + (j >= 50 ? ' hidden' : '') + '>' + esc(j ? L.tier_w : L.tier_a) + '</li>';
+          if (x.w && !(rs[j - 1] || {}).w) html += '<li class="tier"' + (j >= 50 ? ' hidden' : '') + '>' + esc(j ? S.tier_w : S.tier_a) + '</li>';
           html += '<li' + (j >= 50 ? ' hidden' : '') + '><a href="' + esc(x.h) + '"' + (x.xl && x.xl !== l ? ' lang="' + x.xl + '"' : '') + '>' + esc(x.x) + '</a>' +
             (x.u ? '<span class="sub sb2">' + esc(x.u) + '</span>' : '') + '</li>';
         });

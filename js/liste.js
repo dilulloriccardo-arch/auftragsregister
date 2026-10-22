@@ -20,11 +20,14 @@
    count line and the next deadline come from the page and /stand.js's live count.
    Fix round 4 (21.10.2026): the stop words of the four languages off the query while another word remains ('Reinigung an
    Schulen' = 'Reinigung Schulen'); the divider above the first match of a word part, also when no row matches whole;
-   a deadline passing while the page is open leaves its row in place (/stand.js) and the count line follows (A.lx). */
+   a deadline passing while the page is open leaves its row in place (/stand.js) and the count line follows (A.lx).
+   Fix round 6 (21.10.2026): the alert's Branche for a keyword is the one most of its tenders are in ('entretien espaces
+   verts' -> 77, not 50 from 'entretien' in a Branche's name); 'Alle N anzeigen' says the live count before the data
+   comes, as the count line does; no result offers the query with a word one letter away ('Meinten Sie «Reinigung»?'). */
 (function () {
   var A = window.AR; if (!A || A.liste) return; A.liste = 1;
-  var d = document, LL = __L__, L = LL[A.l] || LL.de, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, fold = A.fold;
-  var LI = { de: 0, fr: 1, it: 2, en: 3 }[l];
+  var d = document, LL = __L__, L = LL[A.l] || LL.de, S = A.L, l = A.l, B = A.B, fmt = A.fmt, esc = A.esc, fold = A.fold;
+  var LI = A.li, title = A.title;
   var sec = d.querySelector('[data-liste]'); if (!sec) return;
   var scope = sec.getAttribute('data-liste') || '', sk = scope.indexOf('k:') === 0 ? scope.slice(2) : '',
     sb = scope.indexOf('b:') === 0 ? scope.slice(2) : '';
@@ -35,7 +38,7 @@
   var P = new URLSearchParams(location.search);
   var st = { q: P.get('q') || '', k: (P.get('k') || '').toUpperCase(), b: P.get('b') || '', s: P.get('soon') === '1',
     n: P.get('neu') === '1', o: P.get('sort') === 'neu' ? 'neu' : '', all: false };
-  var O = null, none, zs, tm = 0, wait = null, first = true, aboQ = '';
+  var O = null, none, zs, tm = 0, wait = null, first = true;
   var fq = bar.querySelector('input[name=q]'), fk = bar.querySelector('select[name=k]'), fb = bar.querySelector('select[name=b]'),
     fo = bar.querySelector('select[name=sort]'), fn = bar.querySelector('input[name=neu]'), fs = bar.querySelector('input[name=soon]'),
     cnt = bar.querySelector('.cnt'), abo = bar.querySelector('a.fa'), fan = bar.querySelector('.fan'), fd = bar.querySelector('details'),
@@ -47,7 +50,6 @@
     TG: 'SH ZH SG', TI: 'VS UR GR', UR: 'SZ NW OW BE VS TI GR GL', VD: 'GE FR NE BE VS', VS: 'VD BE UR TI', ZG: 'ZH AG LU SZ',
     ZH: 'SH TG SG SZ ZG AG' };
   function cants(r) { return r[3].replace(/\*/g, '').split(' ').filter(function (x) { return x; }); }
-  function title(r) { var v = r[1][r[2] ? +r[2].charAt(LI) : 0] || r[1][0]; return { t: v.slice(3), l: v.slice(0, 2) }; }
   function cut(s, n) { if (s.length <= n) return s; s = s.slice(0, n); var i = s.lastIndexOf(' '); return (i > n - 20 ? s.slice(0, i) : s).replace(/[\s,;:.\-–]+$/, '') + '…'; }
   // the query as typed, its canton (when the list has no canton of its own) and its words, the stop words off while
   // another word remains (fix round 4: 'Reinigung an Schulen' = 'Reinigung Schulen')
@@ -102,55 +104,50 @@
     fill(fk, O.k, kc, ek(qp), true);
     fill(fb, O.d, bc, st.b, false);
   }
-  // nothing found: a word less, a neighbouring canton, the alert (fix round 1); separated by ' · ' (fix round 3)
+  // nothing found: the query with a word one letter away (fix round 6), a word less, a neighbouring canton, the alert
+  // (fix round 1); separated by ' · ' (fix round 3)
   function suggest(sc, qp, k) {
-    var out = [];
+    var out = [], y = qp.t.length && A.dym(st.q, O);
+    if (y) out.push('<a href="#" data-q="' + esc(y) + '">' + esc(fmt(S.z_dym, { q: y })) + '</a>');
     if (qp.t.length > 1) qp.t.forEach(function (w, i) {
       var t2 = qp.t.filter(function (x, j) { return j !== i; }), n = sc.filter(function (r) { return pass(r, { k: qp.k, t: t2 }); }).length;
-      if (n) out.push('<a href="#" data-q="' + esc(qp.q.split(/\s+/).filter(function (x) { return fold(x).replace(/[^0-9a-z]/g, '') !== w; }).join(' ')) + '">' + esc(fmt(L.z_drop, { t: w, n: A.count(n) })) + '</a>');
+      if (n) out.push('<a href="#" data-q="' + esc(qp.q.split(/\s+/).filter(function (x) { return fold(x).replace(/[^0-9a-z]/g, '') !== w; }).join(' ')) + '">' + esc(fmt(S.z_drop, { t: w, n: A.count(n) })) + '</a>');
     });
     if (k && !sk && NB[k]) NB[k].split(' ').forEach(function (c) {
       var n = sc.filter(function (r) { return cants(r).indexOf(c) >= 0 && pass(r, qp, 'k'); }).length;
       if (n && out.length < 6) out.push('<a href="#" data-k="' + c + '">' + esc(fmt(L.z_near, { c: O.k[c][LI], n: A.count(n) })) + '</a>');
     });
-    out.push('<a href="' + esc(abo.href) + '">' + esc(L.z_abo) + '</a>');
-    zs.innerHTML = '<strong>' + esc(L.z_h) + '</strong> ' + out.join(' · ');
+    out.push('<a href="' + esc(abo.href) + '">' + esc(S.z_abo) + '</a>');
+    zs.innerHTML = '<strong>' + esc(S.z_h) + '</strong> ' + out.join(' · ');
   }
-  // the Branche a keyword names, for the alert (fix round 3: 'Reinigung' -> 90): its synonym, else the Branche or the
-  // Bereiche whose names start with it, when one Branche holds most of them; never a town's word (fix round 5: 'Stadt'
-  // -> 'Stadtreinigung' -> 90, A.pw)
-  function kwdiv(qt, th) {
-    var s = {}, tot = 0, best = '', i, v;
-    for (i = 0; i < qt.length; i++) if (A.syn[qt[i]]) return A.syn[qt[i]].slice(0, 2);
-    function hit(ns) {
-      var ws = A.words(ns.join(' '));
-      return qt.some(function (q) { return q.length > 2 && !A.pw.test(q) && ws.some(function (w) { return w.indexOf(q) === 0; }); });
+  // the alert with the list's canton and Branche; a keyword's Branche (the alert itself filters by canton and Branche
+  // only): the one most of the tenders it finds are in, by their topic (a word in their CPV labels: no town, no
+  // authority), a word part's match a tenth, those shown or else all the open ones; a tie to the Branche of the query's
+  // synonym (fix round 3: 'Reinigung' -> 90; fix round 6: from the tenders, not from a word of a Branche's name:
+  // 'entretien espaces verts' gave 50, not 77; 'manutenzione strade Ticino', none in Ticino: 45)
+  function aboLink(k, b, qp, rows) {
+    var a = [], c = {}, v = '', x;
+    function most(rs) {
+      rs.forEach(function (r) {
+        var f = A.twords(r, O), w = A.tscore(f, qp.t) && (A.tier(f, qp.t) ? .1 : 1);
+        if (w && O.d[x = r[4].slice(0, 2)] && A.topic(f, qp.t))
+          c[x] = (c[x] || 0) + w + (qp.t.some(function (q) { return !(A.syn[q] || '').indexOf(x); }) ? .01 : 0);
+      });
+      for (x in c) if (!v || c[x] > c[v]) v = x;
     }
-    (th.d || []).forEach(function (e) { if (hit(e[1])) s[e[0]] = (s[e[0]] || 0) + 1e6; });
-    (th.s || []).forEach(function (e) { if (hit(e[1])) { v = e[0].slice(0, 2); s[v] = (s[v] || 0) + (e[2] || 1); } });
-    for (v in s) { tot += s[v]; if (!best || s[v] > s[best]) best = v; }
-    return best && O.d[best] && s[best] * 2 >= tot ? best : '';
-  }
-  function aboLink(k, b, qp) {
-    var a = [];
-    if (k) a.push('k=' + k); if (b) a.push('b=' + b);
+    if (!b && qp.q) {
+      most(rows); if (!v) most(scoped());
+      // no tender: the Branche of the query's synonym ('Übersetzung' -> 79)
+      qp.t.forEach(function (q) { x = (A.syn[q] || '').slice(0, 2); if (!v && O.d[x]) v = x; });
+    }
+    if (k) a.push('k=' + k); if (b || v) a.push('b=' + (b || v));
     abo.href = B + '/' + l + '/ausschreibungen/abo/' + (a.length ? '?' + a.join('&') : '');
-    if (fan) { fan.hidden = !qp.q; fan.textContent = fan0; }
-    if (b || !qp.q) return;
-    // a keyword's Branche, once the topics are in (the alert itself filters by canton and Branche only)
-    var my = aboQ = qp.q;
-    A.json('/daten/suche/themen.json').then(function (th) {
-      if (my !== aboQ) return;
-      var v = kwdiv(qp.t, th); if (!v) return;
-      a.push('b=' + v);
-      abo.href = B + '/' + l + '/ausschreibungen/abo/?' + a.join('&');
-      if (fan) fan.textContent = fmt(L.f_abo_kwb, { b: O.d[v][LI] });
-    }, function () { });
+    if (fan) { fan.hidden = !qp.q; fan.textContent = v ? fmt(L.f_abo_kwb, { b: O.d[v][LI] }) : fan0; }
   }
   function render() {
-    var qp = query(), sc = scoped(), n, k = ek(qp), on = active() || st.all;
+    var qp = query(), sc = scoped(), n, k = ek(qp), on = active() || st.all, rows = [];
     if (on) {
-      var rows = sc.filter(function (r) { return pass(r, qp); });
+      rows = sc.filter(function (r) { return pass(r, qp); });
       var neu = st.o === 'neu', html = '', w = -1;
       // strong: every word of the query in the topic, a title's word start or a compound's end; weak ones after them
       rows.forEach(function (r) { r.ti = qp.t.length && A.tier(A.twords(r, O), qp.t); });
@@ -162,7 +159,7 @@
       // 'Treffer als Wortteil' then, 'Weitere Treffer' only after whole matches)
       rows.forEach(function (r, i) { if (w < 0 && r.ti) w = i; });
       rows.forEach(function (r, i) {
-        if (i === w) html += '<tr class="tier"><td colspan="4">' + esc(i ? L.tier_w : L.tier_a) + '</td></tr>';
+        if (i === w) html += '<tr class="tier"><td colspan="4">' + esc(i ? S.tier_w : S.tier_a) + '</td></tr>';
         html += row(r);
       });
       tb.innerHTML = html;
@@ -179,8 +176,7 @@
     A.deco(tb);
     if (!on) n = tb.querySelectorAll('tr[data-deadline]:not([hidden])').length;
     A.roles(tbl);
-    // the alert with the list's canton and industry; a keyword that names a Branche brings it (fix round 3)
-    aboLink(k, st.b || sb, qp);
+    aboLink(k, st.b || sb, qp, rows);
     none.hidden = n > 0; wrap.hidden = !n; zs.hidden = n > 0;
     if (!n) suggest(sc, qp, k);
     // the notes on the page's own rows (hidden since the build; 'the 100 nearest of …') belong to those rows
@@ -192,7 +188,7 @@
     var more = (allA && allA.closest('p')) || allB;
     if (more) {
       more.hidden = on || n >= sc.length || !!tbl._cb;
-      (allA || allB.firstChild).textContent = fmt(L.all_n, { n: A.count(sc.length) });
+      (allA || allB.firstChild).textContent = fmt(S.all_n, { n: A.count(sc.length) });
     }
     // the hub's 'next deadline' tile: the next one still ahead, not the build's
     var nx = !scope && d.querySelector('a.fig.date time');
@@ -274,7 +270,7 @@
   var total = +sec.getAttribute('data-n') || 0;
   if (!allA && total > tb.querySelectorAll('tr[data-deadline]').length) {
     allB = d.createElement('p');
-    allB.innerHTML = '<button type="button" class="all">' + esc(fmt(L.all_n, { n: A.count(total) })) + '</button>';
+    allB.innerHTML = '<button type="button" class="all">' + esc(fmt(S.all_n, { n: A.count(total) })) + '</button>';
     wrap.parentNode.insertBefore(allB, wrap.nextSibling);
     allB.firstChild.addEventListener('click', showAll);
   }
@@ -288,9 +284,12 @@
     var n = tb.querySelectorAll(live).length,
       m = c ? (scope ? (c[scope.charAt(0)] || {})[scope.slice(2)] || 0 : c.a) : total;
     m = Math.max(m, n);
-    if (!O) cnt.textContent = n < m ? fmt(L.f_first, { k: A.count(n), m: A.count(m) }) : fmt(L.f_count, { n: A.count(n), m: A.count(m) });
+    if (O) return;
+    cnt.textContent = n < m ? fmt(L.f_first, { k: A.count(n), m: A.count(m) }) : fmt(L.f_count, { n: A.count(n), m: A.count(m) });
+    // the whole list's button and the phone's too (fix round 6: 'Alle 1’492' under '… von 1’448')
+    [allA, allB && allB.firstChild, tbl._cb && tbl._cb.firstChild].forEach(function (b) { if (b) b.textContent = fmt(S.all_n, { n: A.count(m) }); });
     var nx = !scope && d.querySelector('a.fig.date time'), r0 = tb.querySelector(live);
-    if (!O && nx && r0) { var t = r0.getAttribute('data-deadline'); nx.setAttribute('datetime', t.slice(0, 10)); nx.textContent = A.date(t); }
+    if (nx && r0) { var t = r0.getAttribute('data-deadline'); nx.setAttribute('datetime', t.slice(0, 10)); nx.textContent = A.date(t); }
   }
   A.lx = function () { (A.oc || Promise.resolve(null)).then(pre, function () { }); };
   if (active()) ready();

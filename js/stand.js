@@ -13,7 +13,7 @@
    - every count of open tenders (data-oc) and the pills' counts (data-open): once a deadline has passed since
      the build, recounted from /daten/offen-dl.json, so a page never says 1'477 beside '92 von 1'469' (fix
      round 1);
-   - the home's 'neu' badge reads 'heute' or 'seit gestern' only when that is true; else its date stays;
+   - (the home's 'neu' badge: /js/home.js since fix round 6, the only page that has it);
    - the search fields: their placeholder, and /js/suche.js at the first focus;
    - a 'Nach oben' link on long pages; on a phone, a long table shows 25 rows and 'Alle N anzeigen';
    - the stacked tables keep their table roles for screen readers (VoiceOver drops them with the CSS display);
@@ -179,14 +179,6 @@
     return hid;
   }
   deco(d);
-
-  // the home's 'neu': 'heute' or 'seit gestern' only while true; otherwise the date the page states
-  var nb = d.querySelector('.dnew[data-day]');
-  if (nb) {
-    var m = +nb.getAttribute('data-n'), dd = today - dnum(nb.getAttribute('data-day'));
-    if (dd === 0) nb.textContent = m === 1 ? L.new_today_1 : fmt(L.new_today, { m: count(m) });
-    else if (dd === 1) nb.textContent = m === 1 ? L.new_yday_1 : fmt(L.new_yday, { m: count(m) });
-  }
 
   // the page type's scripts, once each; JSON once each, by the day of the data
   var got = {}, J = {};
@@ -419,32 +411,45 @@
     if (!best) return { q: String(q || '').trim(), k: '' };
     var rest = ow.filter(function (w, i) {
       return (i < best.i || i >= best.i + best.n) && !/^(kanton|canton|cantone|kt|ct)\.?$/i.test(w);
-    });
-    return { q: rest.join(' '), k: best.k };
+    }).join(' ');
+    // what is left only articles: the canton alone (fix round 6: 'Canton de Vaud' searched 'de', 132 of 138)
+    return { q: words(rest).every(stop) ? '' : rest, k: best.k };
   }
   // a tender's relevance to a query's words (fix round 1): a word in its CPV labels — its topic — 5; in its title a
   // whole word 4, the start of a word 3, the end of a compound ('Gebäudereinigung') 2, inside a word
   // ('Vereinigung') 1; in its authority 2 at most. A word found nowhere: 0, no match. f: {c, t, b} folded words
   // the CPV prefixes a word stands for, its topic (fix round 4: 'IT' the software and the computers too, 48 and 302)
-  // (fix round 5: 'Personalverleih' found only word parts, then nothing: the staffing services, CPV 796)
-  var IT = '72 48 302', SYN = { it: IT, ict: IT, edv: IT, informatik: IT, informatique: IT, informatica: IT, bau: '45',
-    construction: '45', costruzione: '45', reinigung: '909', nettoyage: '909', pulizia: '909', cleaning: '909',
-    personalverleih: '796' };
+  // (fix round 5: 'Personalverleih' found only word parts, then nothing: the staffing services, CPV 796). Fix round 6:
+  // the keys folded as the query is ('informatique' folds to 'informatiqu' and was never found); the compounds of
+  // cleaning and gardening; the street cleaning is CPV 906 (its 9061 and the open tenders' 90600000) and the sweepers;
+  // the roads in Italian ('manutenzione strade': the CPV label says 'manutenzione stradale'); the translations and the
+  // snow clearing, which no open tender has now, for the alert's Branche
+  var IT = '72 48 302', CL = '909', SYN = Object.create(null), S0 = { it: IT, ict: IT, edv: IT, informatik: IT,
+    informatique: IT, informatica: IT, bau: '45', construction: '45', costruzione: '45', reinigung: CL, nettoyage: CL,
+    pulizia: CL, cleaning: CL, personalverleih: '796', 'gebäudereinigung': CL, unterhaltsreinigung: CL,
+    strassenreinigung: '906 3414443', gartenpflege: '773', strada: '45233', strade: '45233', 'übersetzung': '7953',
+    traduction: '7953', traduzione: '7953', translation: '7953', 'déneigement': '9062' }, s0;
+  for (s0 in S0) SYN[fold(s0)] = S0[s0];
   function syn(q, v) { return v && (SYN[q] || '').split(' ').some(function (p) { return p && !v.indexOf(p); }); }
   // the words a query drops while another one remains (fix round 4: 'Reinigung an Schulen' found nothing): the four
   // languages' articles and prepositions and the legal forms (genera.QUERY_STOP); liste.js and suche.js
   var SW = ' ' + D.sw + ' ';
-  function sw(t) { var u = t.filter(function (x) { return SW.indexOf(' ' + x + ' ') < 0; }); return u.length ? u : t; }
+  function stop(x) { return SW.indexOf(' ' + x + ' ') >= 0; }
+  function sw(t) { var u = t.filter(function (x) { return !stop(x); }); return u.length ? u : t; }
+  // a town's word in any language is the German one for the tenders (fix round 6: 'City of Zurich' as 'Stadt Zürich')
+  function cw(x) { return /^(city|ville|citta)$/.test(x) ? 'stadt' : x; }
   function wscore(ws, q, top) {
     // a word of one or two letters only whole, in every field (fix round 4: 'IT' found the authority 'Itten+Brechbühl')
     if (q.length < 3) return ws.indexOf(q) < 0 ? 0 : top;
-    var b = 0, j, w, x;
+    var b = 0, j, w, x, n = q.length;
     for (j = 0; j < ws.length; j++) {
       w = ws[j];
       if (w === q) return top;
       x = w.indexOf(q);
-      if (!x) b = Math.max(b, top === 5 ? 5 : 3);
-      else if (x > 0) b = Math.max(b, top === 5 ? (x >= 3 ? 5 : 1) : (x >= 3 && x + q.length === w.length ? 2 : 1));
+      // fix round 6: in the CPV labels an acronym of four letters or fewer only whole ('ETH' found 'Polyethylen'), and a
+      // word of five inside another only as its end ('ASTRA' found 'cadastral')
+      if (x < 0 || (top === 5 && n < 5)) continue;
+      b = Math.max(b, top === 5 ? (!x || (x > 2 && (n > 5 || x + n === w.length)) ? 5 : 1) : !x ? 3 : x > 2 && x + n === w.length ? 2 : 1);
     }
     return b;
   }
@@ -452,50 +457,108 @@
   // 'Gebäudereinigung'; fix round 5: its first 6 letters or more found 'Laborgebäude' for 'Gebäudereinigung' and every
   // '…strasse' for 'Strassenreinigung'), or its last 8 or more ('Unterhaltsreinigung' finds 'Gebäudereinigung'); never
   // a generic ending on its own ('Gärtnerarbeiten' found 641 '…arbeiten', 'Reinigung' a 'Verteidigung', 'pulizia' the
-  // 'polizia'): once its generic endings are off, 4 letters are left. PC: the parts of each word, computed once
+  // 'polizia'): once its generic endings are off, 4 letters are left. Fix round 6: a word's end only with 3 letters or
+  // more before it ('Vereinigung' is no '…reinigung'), or the whole word; the last letters also as a word's start, from 6
+  // letters on ('Gebäudereinigung' finds 'Reinigungsdienstleistungen'; 6 or 7 only so, and only of a longer word:
+  // 'armasuisse' is no 'suisse'). PC: the parts of each word, computed once ('=' first: the query's start, '^' its end,
+  // ' ' its end of 6 or 7 letters)
   var GW = ' dienstleistungen leistungen leistung arbeiten dienste dienst lieferungen lieferung anlagen systeme system projekte projekt planungen planung igung isierung ierung isation ation ',
-    GX = RegExp('s?(' + GW.trim().split(' ').join('|') + ')$'), PC = {};
+    GX = RegExp('s?(' + GW.trim().split(' ').join('|') + ')$'), PC = Object.create(null);
   function gen(t) {
     for (var n = t.length, u; GW.indexOf(t + ' ') < 0; t = u) if ((u = t.replace(GX, '')) === t) return t.length < n && t.length < 4;
     return 1;
   }
   function part(ws, q) {
-    var c = PC[q], k, j;
+    var c = PC[q], k, j, w, x, h, s, e;
     if (!c) for (c = PC[q] = [], k = q.length - 1; k > 5; k--) {
-      if (k >= q.length - 2 && !gen(q.slice(0, k))) c.push(q.slice(0, k));
-      if (k > 7 && !gen(q.slice(-k))) c.push(q.slice(-k));
+      if (k >= q.length - 2 && !gen(x = q.slice(0, k))) c.push('=' + x);
+      if (!gen(x = q.slice(-k))) c.push((k > 7 ? '^' : ' ') + x);
     }
-    for (k = 0; k < c.length; k++) for (j = 0; j < ws.length; j++) if (ws[j].slice(-c[k].length) === c[k]) return 1;
+    for (k = 0; k < c.length; k++) for (h = c[k][0], x = c[k].slice(1), j = 0; j < ws.length; j++) {
+      w = ws[j]; s = !w.indexOf(x); e = w.length > x.length + 2 && w.slice(-x.length) === x;
+      if (h === '=' ? w === x || e : h === '^' ? s || e : s && w !== x) return 1;
+    }
     return 0;
   }
   function tscore(f, qt) {
-    var s = 0, i, best, q;
+    var s = 0, i, best, q, a = qt.length > 1;
     for (i = 0; i < qt.length; i++) {
-      q = qt[i];
+      q = cw(qt[i]);
       best = syn(q, f.v) ? 5 : wscore(f.c, q, 5);
       if (best < 5) best = Math.max(best, wscore(f.t, q, 4));
+      // fix round 6: an acronym's authority, its whole name's word, as strong as the title's ('ERZ', 'SIG')
+      if (best < 4 && q.length < 5 && f.b.indexOf(q) >= 0) best = 4;
       if (best < 2) best = Math.max(best, Math.min(2, wscore(f.b, q, 3)));
       if (!best && q.length > 6) best = part(f.t, q) || part(f.c, q);
       if (!best) return 0;
+      if (f.b.indexOf(q) < 0) a = false;
       s += best;
     }
-    return s;
+    // every word of the query in the authority's name: that authority's tenders first (fix round 6: 'Ville de Lausanne'
+    // put Geneva's 'Lausanne 30-32', a street, first)
+    return s + (a ? 4 : 0);
   }
+  // a word of the query in the tender's topic, its CPV labels or a synonym, neither an article nor a town's word ('Stadt'
+  // is in 'städtisch') (fix round 6: the alert's Branche, liste.js)
+  function topic(f, qt) { return qt.some(function (q) { q = cw(q); return !stop(q) && !PW.test(q) && (syn(q, f.v) || wscore(f.c, q, 5) > 4); }); }
   // 1 when a word of the query is found only inside a word or as a word part, after the whole matches (fix round 3, the
   // tender lists; fix round 5, the search too)
   function tier(f, qt) {
     for (var i = 0; i < qt.length; i++) if (tscore(f, [qt[i]]) < 2) return 1;
     return 0;
   }
+  // no result: for a word of the query found nowhere, the word of the open tenders' titles and CPV labels one letter
+  // away (one more, one less, another one, two neighbours swapped), the most frequent, as written there; the query with
+  // it, or '' when a word is then still unknown (fix round 6: 'Reinigng' -> 'Reinigung'). The words of four letters or
+  // more, counted once from /daten/offen.json; o: its data
+  var VO = null;
+  // a and b one letter apart; never the same word (dym() asks for a word that is not in the vocabulary)
+  function ed1(a, b) {
+    var i = 0, m = a.length, n = b.length;
+    if (m - n > 1 || n - m > 1) return 0;
+    while (i < m && a[i] === b[i]) i++;
+    return m < n ? a.slice(i) === b.slice(i + 1) : m > n ? a.slice(i + 1) === b.slice(i) :
+      a.slice(i + 1) === b.slice(i + 1) || (a[i] === b[i + 1] && a[i + 1] === b[i] && a.slice(i + 2) === b.slice(i + 2));
+  }
+  function dym(q, o) {
+    var hit = 0, c, add = function (s) {
+      s.split(/[^A-Za-zÀ-ÿ]+/).forEach(function (w) {
+        var f = fold(w), e;
+        if (f.length < 4) return;
+        e = VO[f] || (VO[f] = { n: 0, w: w });
+        // a title in capitals: the word's other form
+        e.n++; if (e.w === e.w.toUpperCase()) e.w = w;
+      });
+    };
+    if (!VO) {
+      VO = Object.create(null);
+      o.t.forEach(function (r) { r[1].forEach(function (v) { add(v.slice(3)); }); });
+      // the CPV labels, and the cantons' names ('Grisons' is no 'prisons')
+      for (c in o.c) add(o.c[c].join(' '));
+      for (c in o.k) add(o.k[c].join(' '));
+    }
+    q = String(q).trim().split(/\s+/).map(function (w) {
+      var f = words(w).join(''), b = null, x;
+      if (f.length > 3 && !VO[f]) for (x in VO) if (ed1(f, x) && (!b || VO[x].n > b.n)) b = VO[x];
+      // a word found nowhere and nothing near it: no suggestion ('Gipsergeschäft Marchese' is no 'marchés')
+      hit = b ? hit || 1 : f.length > 3 && !VO[f] ? -1 : hit;
+      return b ? b.w : w;
+    }).join(' ');
+    return hit > 0 ? q : '';
+  }
+  // a tender's title in the reader's language, and that language (suche.js, liste.js)
+  var LI = { de: 0, fr: 1, it: 2, en: 3 }[l];
+  function title(r) { var v = r[1][r[2] ? +r[2].charAt(LI) : 0] || r[1][0]; return { t: v.slice(3), l: v.slice(0, 2) }; }
   // the words of an open tender of /daten/offen.json for tscore(): its titles, its CPV labels, its authority
   function twords(r, o) {
-    if (!r.fw) r.fw = { t: words(r[1].map(function (v) { return v.slice(3); }).join(' ')), c: words((o.c[r[4]] || []).join(' ')), b: words(o.b[r[5]]), v: r[4] || '' };
+    if (!r.fw) r.fw = { t: words(r[1].map(function (v) { return v.slice(3); }).join(' ')).map(cw), c: words((o.c[r[4]] || []).join(' ')), b: words(o.b[r[5]]).map(cw), v: r[4] || '' };
     return r.fw;
   }
 
   window.AR = { l: l, B: B, v: D.v, iso: D.iso, L: L, fmt: fmt, esc: esc, count: count, date: date, fold: fold, words: words, slug: slug, firm: firm,
     deco: deco, rel: rel, when: when, now: now, today: today, dnum: dnum, zday: zday, load: load, json: json, totop: totop,
-    roles: roles, cut: cut, ph: PH, qparse: qparse, tscore: tscore, tier: tier, twords: twords, syn: SYN, sw: sw, pw: PW, oc: null };
+    roles: roles, cut: cut, ph: PH, qparse: qparse, tscore: tscore, tier: tier, twords: twords, syn: SYN, sw: sw, oc: null,
+    cw: cw, dym: dym, li: LI, title: title, topic: topic };
   A = window.AR;
   A.oc = counts();
   later();

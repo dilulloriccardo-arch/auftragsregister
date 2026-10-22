@@ -3713,6 +3713,9 @@ JS["f_abo_kwb"] = {"de": "Das E-Mail-Abo übernimmt die Branche «{b}»; nach St
 JS["z_drop"] = {"de": "ohne «{t}»: {n}", "fr": "sans « {t} » : {n}", "it": "senza «{t}»: {n}",
                 "en": "without “{t}”: {n}"}
 JS["z_near"] = {"de": "{c}: {n}", "fr": "{c} : {n}", "it": "{c}: {n}", "en": "{c}: {n}"}
+# fix round 6: no result, the query with a word one letter away (the open tenders' words)
+JS["z_dym"] = {"de": "Meinten Sie «{q}»?", "fr": "Vouliez-vous dire « {q} » ?", "it": "Forse cercava «{q}»?",
+               "en": "Did you mean “{q}”?"}
 JS["z_abo"] = {"de": "E-Mail-Abo: neue Ausschreibungen dieser Auswahl automatisch erhalten",
                "fr": "Alerte e-mail : recevoir automatiquement les nouveaux appels d’offres de cette sélection",
                "it": "Avviso e-mail: ricevere automaticamente i nuovi bandi di questa selezione",

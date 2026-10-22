@@ -41,7 +41,7 @@
     var cn = o.c[l] || o.c.de, name = x.n[LI], uf = PU || unit(fs.map(function (r) { return r[3]; })), ur = PU || unit(rs.map(function (r) { return r[5]; }));
     var h = '<button type="button" class="tag kbx">' + esc(L.kb_close) + '</button>' +
       '<h2 id="kb-h">' + esc(fmt(L.kb_h, { div: name, name: cn[0], of: cn[1] })) + '</h2>' +
-      '<p class="sub m10">' + esc(fmt(L.kb_lead, { n: na === 1 ? L.aw_1 : fmt(L.aw_n, { n: A.count(na) }), f: nk === 1 ? L.kb_f1 : fmt(L.kb_fn, { n: A.count(nk) }) }) +
+      '<p class="sub m10">' + esc(fmt(L.kb_lead, { n: na === 1 ? A.L.aw_1 : fmt(A.L.aw_n, { n: A.count(na) }), f: nk === 1 ? L.kb_f1 : fmt(L.kb_fn, { n: A.count(nk) }) }) +
         (no && nk >= 10 && no * 2 > nk ? ' ' + fmt(L.kb_once, { k: A.count(no), f: A.count(nk) }) : '')) + '</p>' +
       (x.x ? '<p class="sub m10">' + esc(fmt(L.kb_fb, { k: A.count(x.x), p: Math.round(100 * x.x / x.a) + (l === 'de' ? '\u00a0%' : l === 'fr' ? '\u202f%' : '%') })) + '</p>' +
         '<label class="fbx"><input type="checkbox"' + (ex ? ' checked' : '') + '> ' + esc(L.kb_fbx) + '</label>' : '') +

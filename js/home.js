@@ -27,6 +27,15 @@
   function clamp(v, a, b) { return v < a ? a : v > b ? b : v; }
   function fmt(s, o) { return A.fmt(s, o); }
 
+  /* the 'neu' badge: 'heute' or 'seit gestern' only while true, otherwise the date the page states (fix round 6: it was
+     in /stand.js, on every page; only the home has it) */
+  var nb = D.querySelector(".dnew[data-day]");
+  if (nb) {
+    var nbm = +nb.getAttribute("data-n"), nbd = A.today - A.dnum(nb.getAttribute("data-day"));
+    if (nbd === 0) nb.textContent = nbm === 1 ? L.new_today_1 : fmt(L.new_today, { m: A.count(nbm) });
+    else if (nbd === 1) nb.textContent = nbm === 1 ? L.new_yday_1 : fmt(L.new_yday, { m: A.count(nbm) });
+  }
+
   /* ticker: subscribers with a minimum interval; runs only while someone listens */
   var subs = [], raf = 0;
   function frame(now) {
