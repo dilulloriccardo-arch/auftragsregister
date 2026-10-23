@@ -21,7 +21,16 @@
    Its helpers are window.AR, for the page type's own script (liste.js, suche.js, abo.js, kb.js, alle.js). */
 (function () {
   var D = __DATA__, d = document, h = d.documentElement, l = D.L[h.lang] ? h.lang : 'de', L = D.L[l], B = D.B, A = null;
-  function fmt(s, o) { return String(s).replace(/\{(\w+)\}/g, function (m, k) { return k in o ? o[k] : m; }); }
+  // Italian elides an article before a day read with a vowel: 'entro l’11.11.2026', 'all’08.11.' (as lingue.it_dates)
+  var IE = { al: 'all’', dal: 'dall’', del: 'dell’', nel: 'nell’', il: 'l’' };
+  function fmt(s, o) {
+    s = String(s);
+    if (l == 'it') s = s.replace(/(^|[^\w’'])(al|dal|del|nel|il) \{(\w+)\}/gi, function (m, a, w, k) {
+      var x = IE[w.toLowerCase()];
+      return /^(0?8|11)\.\d/.test(o[k]) ? a + (w[0] == w[0].toLowerCase() ? x : x[0].toUpperCase() + x.slice(1)) + '{' + k + '}' : m;
+    });
+    return s.replace(/\{(\w+)\}/g, function (m, k) { return k in o ? o[k] : m; });
+  }
   function p2(n) { n = +n; return (n < 10 ? '0' : '') + n; }
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
   var GR = { de: '’', it: '’', fr: '\u202f', en: ',' };

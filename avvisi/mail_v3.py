@@ -98,7 +98,7 @@ S = {
         "n1": "1 neue Ausschreibung", "nn": "{n} neue Ausschreibungen",
         "h1": "Neue Ausschreibung", "hn": "Neue Ausschreibungen",
         "k1": "Kanton", "kn": "Kantone", "b1": "Branche", "bn": "Branchen",
-        "all_k": "ganze Schweiz", "all_b": "alle Branchen",
+        "all_k": "ganze Schweiz", "all_b": "alle Branchen", "all_b0": "alle",
         "urgent": "{u} mit Eingabefrist in den nächsten 7 Tagen", "next": "Nächste Eingabefrist: {d}",
         "web": "Alle neuen Ausschreibungen auf der Website",
         "more1": "{p} weitere neue Ausschreibung auf der Website",
@@ -123,7 +123,7 @@ S = {
         "n1": "1 nouvel appel d’offres", "nn": "{n} nouveaux appels d’offres",
         "h1": "Nouvel appel d’offres", "hn": "Nouveaux appels d’offres",
         "k1": "Canton", "kn": "Cantons", "b1": "Secteur", "bn": "Secteurs",
-        "all_k": "toute la Suisse", "all_b": "tous les secteurs",
+        "all_k": "toute la Suisse", "all_b": "tous les secteurs", "all_b0": "tous",
         "urgent": "{u} dont le délai expire dans les 7 prochains jours",
         "next": "Prochain délai\u202f: {d}",
         "web": "Tous les nouveaux appels d’offres sur le site",
@@ -150,7 +150,7 @@ S = {
         "alert": "Bandi via e-mail", "since": "Dal {d}", "since_v": "Dall’{d}",
         "n1": "1 nuovo bando", "nn": "{n} nuovi bandi", "h1": "Nuovo bando", "hn": "Nuovi bandi",
         "k1": "Cantone", "kn": "Cantoni", "b1": "Settore", "bn": "Settori",
-        "all_k": "tutta la Svizzera", "all_b": "tutti i settori",
+        "all_k": "tutta la Svizzera", "all_b": "tutti i settori", "all_b0": "tutti",
         "urgent": "{u} in scadenza nei prossimi 7 giorni", "next": "Prossima scadenza: {d}",
         "web": "Tutti i nuovi bandi sul sito",
         "more1": "{p} altro nuovo bando sul sito", "moren": "{p} altri nuovi bandi sul sito",
@@ -159,8 +159,8 @@ S = {
                "auftragsregister.ch per questa scelta: {sel}.",
         "why0": "Ricevi questa e-mail perché hai confermato l’iscrizione gratuita a «Bandi via e-mail» di "
                 "auftragsregister.ch.",
-        "change": "Vuoi cambiare la scelta? Clicca «Annulla l’iscrizione» qui sotto, poi iscriviti di nuovo con la "
-                  "nuova scelta nella {a}pagina «Bandi via e-mail»{z}.",
+        "change": "Vuoi cambiare cantoni o settori? Clicca «Annulla l’iscrizione» qui sotto, poi iscriviti di nuovo "
+                  "nella {a}pagina «Bandi via e-mail»{z}.",
         "unsub": "Annulla l’iscrizione", "privacy": "Protezione dei dati", "imprint": "Note legali",
         "source": "Fonte: simap.ch (pubblicazioni ufficiali della Confederazione, dei Cantoni e dei Comuni)",
         "titles": "I titoli compaiono nella lingua in cui sono stati pubblicati.", "asof": "Aggiornato al {d}",
@@ -173,7 +173,7 @@ S = {
         "alert": "Tenders by email", "since": "Since {d}",
         "n1": "1 new tender", "nn": "{n} new tenders", "h1": "New tender", "hn": "New tenders",
         "k1": "Canton", "kn": "Cantons", "b1": "Sector", "bn": "Sectors",
-        "all_k": "all of Switzerland", "all_b": "all sectors",
+        "all_k": "all of Switzerland", "all_b": "all sectors", "all_b0": "all",
         "urgent": "{u} closing in the next 7 days", "next": "Next deadline: {d}",
         "web": "All new tenders on the website",
         "more1": "{p} more new tender on the website", "moren": "{p} more new tenders on the website",
@@ -445,7 +445,7 @@ def _band(lang, s, total, since, ks, bs, rows, today, web) -> str:
     sel = ""
     if ks is not None:
         kn = [kname(k, lang) for k in ks[:4]] or [s["all_k"]]
-        bn = [dname(b, lang) for b in bs[:3]] or [s["all_b"]]
+        bn = [dname(b, lang) for b in bs[:3]] or [s["all_b0"]]     # «Settori: tutti», not «Settori: tutti i settori»
         lab = (f'<td valign="top" style="padding:3px 14px 6px 0;{FT};font-size:10px;line-height:16px;font-weight:700;'
                f'letter-spacing:1.4px;text-transform:uppercase;color:{GOLD};white-space:nowrap">')
         val = f'<td valign="top" style="padding:0 0 6px;{FT};font-size:14px;line-height:20px;color:{IVORY}">'
@@ -706,7 +706,7 @@ def render_text(lang, rows, since, contact=None, today=None, *, cap=CAP, pro=Fal
     out.append(" · ".join(head))
     if ks is not None:
         out.append(f'{s["k1"] if len(ks) == 1 else s["kn"]}: ' + (", ".join(kname(k, lang) for k in ks) or s["all_k"]))
-        out.append(f'{s["b1"] if len(bs) == 1 else s["bn"]}: ' + ("; ".join(dname(b, lang) for b in bs) or s["all_b"]))
+        out.append(f'{s["b1"] if len(bs) == 1 else s["bn"]}: ' + ("; ".join(dname(b, lang) for b in bs) or s["all_b0"]))
     out.append("")
     for t in shown:
         ks_t = row_cantons(t)

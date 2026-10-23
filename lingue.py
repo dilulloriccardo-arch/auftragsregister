@@ -283,7 +283,7 @@ META: dict[str, dict[str, str]] = {
     "company_desc": {
         "de": "{name} hat {n} gewonnen{span}{val} – laut simap.ch. Mit Auftraggebern, Beträgen und Kantonen.",
         "fr": "{name} a remporté {n}{span}{val}, selon simap.ch. Acheteurs publics, montants et cantons.",
-        "it": "{name} ha vinto {n}{span}{val}, secondo simap.ch. Con enti pubblici, importi e cantoni.",
+        "it": "{name} ha vinto {n}{span}{val}, secondo simap.ch. Qui trovi enti pubblici, importi e cantoni.",
         "en": "{name} has won {n}{span}{val}, according to simap.ch. With public buyers, amounts and cantons.",
     },
     "company_val": {
@@ -428,7 +428,7 @@ META: dict[str, dict[str, str]] = {
               "scadenza, categoria (codice CPV) e link alla pubblicazione ufficiale. Nelle pagine dei cantoni "
               "trovi i bandi della tua regione, in quelle dei settori i bandi del tuo mestiere: edilizia, "
               "progettazione, informatica, assicurazioni, veicoli e altro. I dati vengono da simap.ch, la "
-              "piattaforma ufficiale. Li aggiorniamo di norma nei giorni feriali, dopo che simap.ch ha messo a "
+              "piattaforma ufficiale. Li aggiorniamo di solito nei giorni feriali, dopo che simap.ch ha messo a "
               "disposizione le pubblicazioni del giorno.",
         "en": "The tenders that close first are at the top. Each row opens the tender: public buyer, deadline, "
               "category (CPV code) and a link to the official publication. Canton pages show the tenders in "
@@ -618,7 +618,7 @@ META: dict[str, dict[str, str]] = {
                "en": "RSS feed for each canton and sector"},
     "cmp_r7": {"de": "Neue Ausschreibungen per E-Mail, nach Ihrer Auswahl",
                "fr": "Nouveaux appels d’offres par e-mail, selon vos critères",
-               "it": "Nuovi bandi via e-mail, scelti da te",
+               "it": "Nuovi bandi via e-mail, solo quelli che ti interessano",
                "en": "New tenders by email, matching your own filters"},
     "cmp_r8": {"de": "Ohne Konto nutzbar", "fr": "Sans compte",
                "it": "Si usa senza account", "en": "No account needed"},
@@ -881,7 +881,7 @@ IDX: dict[str, dict[str, str]] = {
         "de": "Seit {start} im Schnitt {avg} pro Monat. Höchstens {peak} in einem vollständigen Monat, erreicht "
               "in {k} Monaten.",
         "fr": "Depuis {start}, {avg} par mois en moyenne. Au plus {peak} sur un mois complet, atteint {k} fois.",
-        "it": "Da {start} in media {avg} al mese. Al massimo {peak} in un mese completo, raggiunto in {k} mesi.",
+        "it": "Da {start} in media {avg} al mese. Il massimo in un mese completo è {peak}, raggiunto {k} volte.",
         "en": "Since {start}, an average of {avg} a month. At most {peak} in a complete month, reached in "
               "{k} months.",
     },
@@ -1399,9 +1399,9 @@ PRIV: dict[str, dict] = {
              "(tra l’altro l’indirizzo e-mail, la data e l’ora dell’iscrizione e della conferma), l’annotazione "
              "della disiscrizione e i registri delle e-mail già inviate, perché tu non riceva più nessuna "
              "e-mail. Non vendiamo i dati, non li cediamo a terzi per i loro scopi e non li usiamo per altri "
-             "scopi. Li trattano per nostro conto Brevo (Sendinblue SAS, Parigi, UE) per iscrizione e invio e, "
-             "per le e-mail inviate ad abo@auftragsregister.ch (anche le segnalazioni di errori), ImprovMX Inc. "
-             "(USA), che le inoltra, e Google LLC, presso cui si trova la casella di posta (Gmail). I feed RSS "
+             "scopi. Trattano i dati per nostro conto: Brevo (Sendinblue SAS, Parigi, UE), per iscrizione e invio; "
+             "ImprovMX Inc. (USA), che inoltra le e-mail inviate ad abo@auftragsregister.ch (anche le segnalazioni "
+             "di errori); Google LLC, che ospita la casella di posta (Gmail). I feed RSS "
              "non richiedono iscrizione e non ci trasmettono dati personali."),
             ("Archivio e conservazione",
              "Riprendiamo i dati da simap.ch, di norma nei giorni feriali. Le pubblicazioni più vecchie restano "
@@ -2514,8 +2514,8 @@ UEBER: dict[str, dict] = {
                 "dell’ente pubblico, con la nota «{fallback}». Per esempio, i lavori sulle strade nazionali in "
                 "Turgovia o a San Gallo che la filiale USTRA di Winterthur mette a concorso senza indicare il "
                 "luogo compaiono sotto Zurigo. Altri enti pubblici indicano come luogo di esecuzione il proprio "
-                "indirizzo: allora compare il cantone della loro sede, anche se i lavori si svolgono altrove. "
-                "Dai dati non si capisce.",
+                "indirizzo: allora compare il cantone della loro sede, anche se i lavori si svolgono altrove: "
+                "dai dati non lo possiamo sapere.",
                 "{nocant} Con questi, la somma dei cantoni dà il totale della home. «Bandi via e-mail» usa la "
                 "stessa regola: per la tua scelta conta ogni cantone del bando.",
             ]),
@@ -2557,7 +2557,7 @@ UEBER: dict[str, dict] = {
                 "Bandi scaduti: dopo la scadenza la pagina di un bando resta online per {days} giorni, con la "
                 "scritta «{expired}». Se nel frattempo l’appalto viene aggiudicato e pubblicato, allo stesso "
                 "indirizzo vedi chi l’ha vinto. Raccogliamo i bandi dal {since}.",
-                "I bandi senza una scadenza leggibile non li elenchiamo tra quelli aperti.",
+                "I bandi senza una scadenza chiara non li elenchiamo tra quelli aperti.",
             ]]),
             ("cpv", "Settori e categorie (CPV)", [
                 "La classificazione segue il CPV, il vocabolario comune europeo per gli appalti pubblici. "
@@ -2874,13 +2874,13 @@ IDX["chart_src"] = {"de": "Quelle: simap.ch, eigene Auswertung", "fr": "Source :
 IDX["multi_note"] = {
     "de": "Eine Ausschreibung mit Losen in mehreren Kantonen zählt in jedem dieser Kantone.",
     "fr": "Un appel d’offres dont les lots se situent dans plusieurs cantons compte dans chacun d’eux.",
-    "it": "Un bando con lotti in più cantoni conta in ognuno di questi cantoni.",
+    "it": "Un bando con lotti in più cantoni conta in tutti quei cantoni.",
     "en": "A tender with lots in several cantons counts in each of them.",
 }
 IDX["nodl_note"] = {
     "de": "{n} Ausschreibungen ohne lesbare Eingabefrist führen wir nicht auf.",
     "fr": "Nous ne listons pas {n} appels d’offres dont le délai de remise est illisible.",
-    "it": "Non elenchiamo {n} bandi senza una scadenza leggibile.",
+    "it": "Non elenchiamo {n} bandi senza una scadenza chiara.",
     "en": "We don’t list {n} tenders without a readable submission deadline.",
 }
 # the canton overview: the awards that count in no canton, so that the cantons add up to the total
@@ -3530,7 +3530,7 @@ JS["tier_a"] = {"de": "Treffer als Wortteil", "fr": "Résultats par partie de mo
                 "en": "Matches on part of a word"}
 JS["f_abo_kwb"] = {"de": "Per E-Mail: die Branche «{b}», ohne Stichwörter.",
                    "fr": "Par e-mail : le secteur « {b} », sans mots-clés.",
-                   "it": "Via e-mail: il settore «{b}», senza parole chiave.",
+                   "it": "Via e-mail ricevi tutto il settore «{b}»: le parole chiave valgono solo qui.",
                    "en": "By email: the “{b}” sector, without keywords."}
 JS["z_drop"] = {"de": "ohne «{t}»: {n}", "fr": "sans « {t} » : {n}", "it": "senza «{t}»: {n}",
                 "en": "without “{t}”: {n}"}
@@ -3556,21 +3556,22 @@ JS["sum_sel"] = {"de": "Sie abonnieren: {s}", "fr": "Vous vous abonnez à : {s}"
 JS["all_ch"] = {"de": "ganze Schweiz", "fr": "toute la Suisse", "it": "tutta la Svizzera", "en": "all of Switzerland"}
 JS["all_b"] = {"de": "alle Branchen", "fr": "tous les secteurs", "it": "tutti i settori", "en": "all sectors"}
 JS["bf_none"] = {"de": "Keine Branche passt zu «{q}».", "fr": "Aucun secteur ne correspond à « {q} ».",
-                 "it": "Nessun settore per «{q}».", "en": "No sector matches “{q}”."}
+                 "it": "Nessun settore trovato per «{q}».", "en": "No sector matches “{q}”."}
 
 
 # ---------------------------------------------------------------- fix round 2 (20.10.2026)
 # The copy audit of 15.10 (audit3/copy/fixes.md): the home's alarm band said the same thing three times and printed
 # its number twice; an expired tender's alert box made its promise twice; a company page without a CHF sum said
 # nothing about why; small counts at the start of a sentence, and the thresholds on the Über page, in words.
-# The owner's own wording for the Italian (23.10.2026): «Scegli cantoni e settori: ti mandiamo i nuovi bandi via
-# e-mail, di solito al mattino. Non serve registrarsi.» The e-mail goes out only on a day with matching new tenders.
+# The Italian answers the owner's example of a stilted line (23.10.2026, «Cantoni e settori a scelta: … per lo più in
+# mattinata. Senza account.»); under the heading «Ricevi i nuovi bandi via e-mail» it does not repeat «via e-mail».
+# The e-mail goes out only on a day with matching new tenders.
 META["alarm_sub"] = {
     "de": "Wählen Sie Kantone und Branchen: Wir schicken Ihnen die neuen Ausschreibungen per E-Mail, meist am "
           "Vormittag. Ein Konto brauchen Sie nicht.",
     "fr": "Choisissez vos cantons et vos secteurs : nous vous envoyons les nouveaux appels d’offres par e-mail, "
           "en général le matin. Pas besoin de compte.",
-    "it": "Scegli cantoni e settori: ti mandiamo i nuovi bandi via e-mail, di solito al mattino. Non serve "
+    "it": "Scegli cantoni e settori: ti scriviamo quando escono bandi nuovi, di solito al mattino. Non serve "
           "registrarsi.",
     "en": "Choose your cantons and sectors, and we’ll email you the new tenders, usually in the morning. "
           "No account needed.",
@@ -3654,11 +3655,11 @@ PROSE["lead"] = {
     "de": "Hier sehen Sie, wer sie seit August 2024 gewonnen hat – Firma für Firma. Dazu die offenen Ausschreibungen.",
     "fr": "Découvrez qui les a remportés depuis août 2024, entreprise par entreprise – et trouvez les appels d'offres "
           "en cours.",
-    "it": "Qui vedi chi li ha vinti da agosto 2024, azienda per azienda. E trovi i bandi ancora aperti.",
+    "it": "Qui trovi tutti gli appalti aggiudicati da agosto 2024, azienda per azienda, e i bandi ancora aperti.",
     "en": "See who has won them since August 2024, company by company – and find the tenders open now.",
 }
 META["door_open_sub"] = {"de": "Nach Frist, Kanton und Branche.", "fr": "Par délai, canton et secteur.",
-                         "it": "Per scadenza, cantone e settore.", "en": "By deadline, canton and sector."}
+                         "it": "In ordine di scadenza, per cantone e settore.", "en": "By deadline, canton and sector."}
 # the leads of the company, buyer, canton and Branche pages say what the page holds; their numbers are the figures'
 META["company_lead"] = {"de": "Hier finden Sie die öffentlichen Aufträge, die diese Firma gewonnen hat{span} – laut "
                               "simap.ch.",
@@ -3670,13 +3671,10 @@ META["buyer_lead"] = {"de": "Hier finden Sie die Aufträge, die dieser Auftragge
                       "it": "Qui trovi gli appalti aggiudicati da questo ente pubblico, secondo simap.ch.",
                       "en": "Here are the contracts this public buyer has awarded, according to simap.ch."}
 META["canton_lead"] = {
-    "de": "Hier sehen Sie, wer im Kanton {name} Aufträge für Arbeiten und Lieferungen gewonnen hat{span} – laut "
-          "simap.ch.",
-    "fr": "Voici qui a remporté les marchés pour des travaux et des fournitures dans le canton {of}{span}, selon "
-          "simap.ch.",
-    "it": "Qui vedi chi ha vinto gli appalti per lavori e forniture nel Canton {name}{span}, secondo simap.ch.",
-    "en": "Here you can see who won contracts for work and supplies in the canton of {name}{span}, according to "
-          "simap.ch.",
+    "de": "Hier sehen Sie, wer im Kanton {name} öffentliche Aufträge gewonnen hat{span} – laut simap.ch.",
+    "fr": "Voici qui a remporté les marchés publics dans le canton {of}{span}, selon simap.ch.",
+    "it": "Qui vedi chi ha vinto gli appalti pubblici nel Canton {name}{span}, secondo simap.ch.",
+    "en": "Here you can see who won public contracts in the canton of {name}{span}, according to simap.ch.",
 }
 META["canton_lead_one"] = dict(META["canton_lead"])
 IDX["fb_share"] = {
@@ -3753,8 +3751,9 @@ META["search_lead"] = {
     "it": "Aziende, enti pubblici, bandi, settori e cantoni: se scrivi «pulizia», trovi anche «Reinigung».",
     "en": "Companies, public buyers, tenders, sectors and cantons: type “cleaning” and you also find “Reinigung”.",
 }
-# the e-mail service: one line and a link over the form, two short lines of consent under the button. The owner's
-# words for the Italian (23.10.2026): «Scegli cantoni e settori: ti mandiamo i nuovi bandi via e-mail.»
+# the e-mail service: one line and a link over the form, two short lines of consent under the button. The Italian
+# is the natural-voice line agreed in the review of 23.10.2026: «Scegli cantoni e settori: ti mandiamo i nuovi bandi
+# via e-mail.»
 META["abo_lead"] = {
     "de": "Wählen Sie Kantone und Branchen: Wir schicken Ihnen die neuen Ausschreibungen per E-Mail. Gratis und ohne "
           "Konto.",

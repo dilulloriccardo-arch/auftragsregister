@@ -272,7 +272,9 @@ def due_cell(iso: str, text: str, until: bool = False, soon: bool = False) -> tu
     changed with the build's date, rewrote thousands of pages every night for no new fact, and were wrong
     by the evening. /stand.js reads data-deadline on the row and writes them from the reader's clock;
     without JavaScript the date stands, which is always true. The class slot stays for the callers."""
-    return "", (f"{_.until} " if until else "") + tt(iso, text)
+    s = (f"{_.until} " if until else "") + tt(iso, text)
+    # Italian elides before a day read with a vowel: 'entro l’11.11.2026' (review of 23.10.2026)
+    return "", lingue.it_dates(s) if LANG == "it" else s
 
 
 def fold(s: str) -> str:
