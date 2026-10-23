@@ -3681,8 +3681,6 @@ JS["map_lit"] = {"de": "{n} von 26 Kantonen", "fr": "{n} cantons sur 26", "it": 
 # After the third audit: the masthead's 'independent, not official', the short phone units of the stacked tables,
 # the chart as a table, the lists' filter bar and leads, the cut tables, the buyer's-seat share, the outlier notes,
 # the CSV links that say what they download, the authorities' finder, the alert form and its two return pages.
-T["indep"] = {"de": "Unabhängig · nicht amtlich", "fr": "Indépendant · non officiel",
-              "it": "Indipendente · non ufficiale", "en": "Independent · not official"}
 T["chart_table"] = {"de": "Tabelle", "fr": "Tableau", "it": "Tabella", "en": "Table"}
 T["unit_k_ph"] = {"de": "Tsd. CHF", "fr": "k CHF", "it": "k CHF", "en": "CHF k"}
 T["unit_m_ph"] = {"de": "Mio. CHF", "fr": "mio CHF", "it": "mio. CHF", "en": "CHF m"}
@@ -3962,6 +3960,172 @@ NUM_WORDS = {
     "it": ("zero", "uno", "due", "tre", "quattro", "cinque", "sei", "sette", "otto", "nove", "dieci", "undici", "dodici"),
     "en": ("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"),
 }
+
+
+# ------------------------------------------------- strictly necessary (owner, 23.10.2026)
+# Every page asked: is each element needed, would a reader with ADHD take it in at a glance? Short sentences (20 words at
+# most), one or two lines of lead, no number said twice, the explanations on the about page or behind a 'more'. The
+# masthead's 'Unabhängig · nicht amtlich' is gone (its T["indep"] with it); the simap notice and its translation stay in
+# the footer.
+# the footer's last link (the minimal footer: the notice, the source, one date, the about and legal pages, the contact)
+T["contact"] = {"de": "Kontakt", "fr": "Contact", "it": "Contatto", "en": "Contact"}
+# the home's one line of trust over the question: the source and the page's one date (it elides like the footer's line)
+META["home_source"] = {"de": "Daten von simap.ch · aktualisiert am {d}", "fr": "Données de simap.ch · mis à jour le {d}",
+                       "it": "Dati di simap.ch · aggiornato al {d}", "en": "Data from simap.ch · updated {d}"}
+# the home's lead, one line (it was two paragraphs: who the site is for, then what it holds)
+PROSE["lead"] = {
+    "de": "Die öffentlichen Aufträge seit August 2024, nach Firma geordnet – und die offenen Ausschreibungen.",
+    "fr": "Les marchés publics attribués depuis août 2024, entreprise par entreprise – et les appels d'offres en cours.",
+    "it": "Gli appalti pubblici aggiudicati da agosto 2024, azienda per azienda – e i bandi ancora aperti.",
+    "en": "Public contracts awarded since August 2024, company by company – and the tenders open now.",
+}
+META["door_open_sub"] = {"de": "Nach Eingabefrist, Kanton und Branche.", "fr": "Par délai, canton et secteur.",
+                         "it": "Per scadenza, cantone e settore.", "en": "By deadline, canton and sector."}
+# the leads of the company, buyer, canton and Branche pages say what the page holds; their numbers are the figures'
+META["company_lead"] = {"de": "Gewonnene öffentliche Aufträge laut simap.ch{span}.",
+                        "fr": "Marchés publics remportés selon simap.ch{span}.",
+                        "it": "Appalti pubblici vinti secondo simap.ch{span}.",
+                        "en": "Public contracts won, according to simap.ch{span}."}
+META["buyer_lead"] = {"de": "Vergebene Aufträge dieses Auftraggebers laut simap.ch.",
+                      "fr": "Marchés attribués par cet acheteur public, selon simap.ch.",
+                      "it": "Appalti aggiudicati da questo ente pubblico secondo simap.ch.",
+                      "en": "Contracts awarded by this public buyer, according to simap.ch."}
+META["canton_lead"] = {
+    "de": "Vergebene Aufträge für Arbeiten und Lieferungen im Kanton {name}{span}, laut simap.ch.",
+    "fr": "Marchés attribués pour des travaux et des fournitures dans le canton {of}{span}, selon simap.ch.",
+    "it": "Appalti aggiudicati per lavori e forniture nel Canton {name}{span}, secondo simap.ch.",
+    "en": "Contracts awarded for work and supplies in the canton of {name}{span}, according to simap.ch.",
+}
+META["canton_lead_one"] = dict(META["canton_lead"])
+IDX["fb_share"] = {
+    "de": "{k} Aufträge ({p}) nennen keinen Ort und zählen hier, weil der Auftraggeber hier seinen Sitz hat.",
+    "fr": "{k} marchés ({p}) n'indiquent aucun lieu et comptent ici, où l'acheteur public a son siège.",
+    "it": "{k} appalti ({p}) non indicano il luogo e contano qui, dove l'ente pubblico ha sede.",
+    "en": "{k} contracts ({p}) name no place and count here, where the public buyer is based.",
+}
+IDX["fb_share_one"] = {
+    "de": "Ein Auftrag ({p}) nennt keinen Ort und zählt hier, weil der Auftraggeber hier seinen Sitz hat.",
+    "fr": "Un marché ({p}) n'indique aucun lieu et compte ici, où l'acheteur public a son siège.",
+    "it": "Un appalto ({p}) non indica il luogo e conta qui, dove l'ente pubblico ha sede.",
+    "en": "One contract ({p}) names no place and counts here, where the public buyer is based.",
+}
+META["div_lead"] = {"de": "Vergebene Aufträge in dieser Branche, laut simap.ch.",
+                    "fr": "Marchés attribués dans ce secteur, selon simap.ch.",
+                    "it": "Appalti aggiudicati in questo settore, secondo simap.ch.",
+                    "en": "Contracts awarded in this sector, according to simap.ch."}
+# the sectors panel: what a sector is, the about page says ('Branchen und Kategorien (CPV)')
+IDX["div_lede_top"] = {"de": "Die häufigsten Branchen: {k} von {total}.", "fr": "Les secteurs les plus fréquents : {k} sur {total}.",
+                       "it": "I settori più frequenti: {k} su {total}.", "en": "The most frequent sectors: {k} of {total}."}
+IDX["div_lede_all"] = {"de": "", "fr": "", "it": "", "en": ""}
+# the notes under the charts: what changes how they read, nothing more (the archive's start is the about page's, the
+# date the page's one date)
+IDX["mc_note_start"] = {"de": "Schraffierte Säulen ({span}): unvollständig erfasste Monate am Anfang des Archivs.",
+                        "fr": "Colonnes hachurées ({span}) : mois incomplets du début des archives.",
+                        "it": "Colonne tratteggiate ({span}): mesi incompleti all'inizio dell'archivio.",
+                        "en": "Striped columns ({span}): incomplete months at the start of the archive."}
+IDX["mc_note_start_one"] = {"de": "Schraffierte Säule ({m}): unvollständig erfasster Monat am Anfang des Archivs.",
+                            "fr": "Colonne hachurée ({m}) : mois incomplet du début des archives.",
+                            "it": "Colonna tratteggiata ({m}): mese incompleto all'inizio dell'archivio.",
+                            "en": "Striped column ({m}): incomplete month at the start of the archive."}
+IDX["mc_note_end"] = {"de": "Schraffierte letzte Säule: laufender Monat.", "fr": "Dernière colonne hachurée : mois en cours.",
+                      "it": "Ultima colonna tratteggiata: mese in corso.", "en": "Striped last column: current month."}
+IDX["mc_note_end_zero"] = {"de": "Laufender Monat ({m}): bisher kein vergebener Auftrag.",
+                           "fr": "Mois en cours ({m}) : aucun marché attribué pour l'instant.",
+                           "it": "Mese in corso ({m}): finora nessun appalto aggiudicato.",
+                           "en": "Current month ({m}): no contracts awarded so far."}
+# the notes that change how a list or a total reads, short (what a CPV code or a unit rate is: the about page)
+PROSE["matched_note"] = {
+    "de": "Offene Ausschreibungen mit gleichem oder verwandtem CPV-Code wie die bisherigen Aufträge.",
+    "fr": "Appels d'offres en cours au code CPV identique ou proche de celui des marchés déjà remportés.",
+    "it": "Bandi aperti con un codice CPV uguale o affine a quello degli appalti già vinti.",
+    "en": "Open tenders with the same or a related CPV code as the contracts already won.",
+}
+IDX["similar_note"] = {"de": "Branche «{sector}», Kanton {name}: die ähnlichsten zuerst.",
+                       "fr": "Secteur « {sector} », canton {of} : les plus proches d'abord.",
+                       "it": "Settore «{sector}», Canton {name}: prima i più simili.",
+                       "en": "“{sector}” sector, canton of {name}: closest first."}
+IDX["joint_note"] = {"de": "Nicht in den Summen: die {k} Aufträge an mehrere Firmen.",
+                     "fr": "Les totaux n'incluent pas les {k} marchés attribués à plusieurs entreprises.",
+                     "it": "I totali non comprendono i {k} appalti aggiudicati a più aziende.",
+                     "en": "Totals exclude the {k} contracts awarded to several companies."}
+IDX["joint_note_one"] = {"de": "Nicht in den Summen: der Auftrag an mehrere Firmen.",
+                         "fr": "Les totaux n'incluent pas le marché attribué à plusieurs entreprises.",
+                         "it": "I totali non comprendono l'appalto aggiudicato a più aziende.",
+                         "en": "Totals exclude the contract awarded to several companies."}
+IDX["rates_note"] = {"de": "Nicht in den Summen und im Median: {k} vermutliche Einheitspreise.",
+                     "fr": "Les totaux et la médiane n'incluent pas {k} prix unitaires probables.",
+                     "it": "I totali e la mediana non comprendono {k} probabili prezzi unitari.",
+                     "en": "Totals and the median exclude {k} probable unit rates."}
+IDX["rates_note_one"] = {"de": "Nicht in den Summen und im Median: ein vermutlicher Einheitspreis.",
+                         "fr": "Les totaux et la médiane n'incluent pas un prix unitaire probable.",
+                         "it": "I totali e la mediana non comprendono un probabile prezzo unitario.",
+                         "en": "Totals and the median exclude one probable unit rate."}
+# the search page's directories, behind a 'more': its summary says what opens
+META["search_dirs"] = {"de": "Verzeichnisse von A bis Z", "fr": "Répertoires de A à Z", "it": "Elenchi dalla A alla Z",
+                       "en": "Directories from A to Z"}
+META["search_lead"] = {
+    "de": "Firmen, Auftraggeber, Ausschreibungen, Branchen und Kantone. «Reinigung» findet auch «nettoyage».",
+    "fr": "Entreprises, acheteurs publics, appels d'offres, secteurs et cantons. « nettoyage » trouve aussi « Reinigung ».",
+    "it": "Aziende, enti pubblici, bandi, settori e cantoni. «pulizia» trova anche «Reinigung».",
+    "en": "Companies, public buyers, tenders, sectors and cantons. “cleaning” also finds “Reinigung”.",
+}
+# the e-mail service: one line and a link over the form, two short lines of consent under the button
+META["abo_lead"] = {
+    "de": "Neue Ausschreibungen aus Ihren Kantonen und Branchen per E-Mail – gratis, ohne Konto.",
+    "fr": "Les nouveaux appels d'offres de vos cantons et secteurs par e-mail – gratuitement, sans compte.",
+    "it": "I nuovi bandi dei cantoni e dei settori scelti, via e-mail – gratis, senza account.",
+    "en": "New tenders from your cantons and sectors by email – free, no account needed.",
+}
+META["abo_form_consent"] = {
+    "de": "Zuerst kommt eine E-Mail mit einem Bestätigungslink. Jede E-Mail enthält einen Abmeldelink. Versand über Brevo (EU).",
+    "fr": "Vous recevrez d'abord un e-mail avec un lien de confirmation. Chaque e-mail contient un lien de désabonnement. "
+          "Envoi par Brevo (UE).",
+    "it": "Prima arriva un'e-mail con un link di conferma. Ogni e-mail contiene il link per cancellarsi. Invio tramite Brevo (UE).",
+    "en": "First you get an email with a confirmation link. Every email has an unsubscribe link. Sent via Brevo (EU).",
+}
+META["abo_rss_h2"] = {"de": "RSS-Feeds (ohne Anmeldung)", "fr": "Flux RSS (sans inscription)",
+                      "it": "Feed RSS (senza iscrizione)", "en": "RSS feeds (no sign-up)"}
+JS["pv"] = {"de": "≈ {w} neue Ausschreibungen pro Woche", "fr": "≈ {w} nouveaux appels d'offres par semaine",
+            "it": "≈ {w} nuovi bandi alla settimana", "en": "≈ {w} new tenders a week"}
+JS["pv_lt"] = {"de": "weniger als eine neue Ausschreibung pro Woche", "fr": "moins d'un nouvel appel d'offres par semaine",
+               "it": "meno di un nuovo bando alla settimana", "en": "fewer than one new tender a week"}
+# the two pages Brevo sends people to
+META["abo_resend"] = {
+    "de": "Keine E-Mail nach 15 Minuten? Prüfen Sie den Spam-Ordner oder melden Sie sich noch einmal an.",
+    "fr": "Pas d'e-mail après 15 minutes ? Vérifiez vos courriers indésirables ou inscrivez-vous à nouveau.",
+    "it": "Nessuna e-mail dopo 15 minuti? Controlla lo spam o iscriviti di nuovo.",
+    "en": "No email after 15 minutes? Check your spam folder or sign up again.",
+}
+META["abo_ok"] = {"de": "Ihr Abo ist aktiv.", "fr": "Votre abonnement est actif.", "it": "L'iscrizione è attiva.",
+                  "en": "Your subscription is active."}
+META["abo_when"] = {
+    "de": "Die E-Mails kommen an Werktagen mit passenden neuen Ausschreibungen, meist am Vormittag.",
+    "fr": "Les e-mails arrivent les jours ouvrables où paraissent de nouveaux appels d'offres correspondants, le plus "
+          "souvent le matin.",
+    "it": "Le e-mail arrivano nei giorni feriali con nuovi bandi adatti, per lo più in mattinata.",
+    "en": "Emails arrive on days with matching new tenders, usually in the morning.",
+}
+META["abo_change"] = {
+    "de": "Auswahl ändern: über den Link am Ende einer E-Mail abmelden, dann neu abonnieren.",
+    "fr": "Pour changer de sélection : se désabonner par le lien au bas d'un e-mail, puis s'abonner à nouveau.",
+    "it": "Per cambiare la scelta: cancellarsi con il link in fondo a un'e-mail, poi iscriversi di nuovo.",
+    "en": "To change your selection, unsubscribe with the link at the bottom of an email, then subscribe again.",
+}
+META["nf_text"] = {
+    "de": "Diese Seite gibt es nicht oder nicht mehr. Abgelaufene Ausschreibungen bleiben {days} Tage online.",
+    "fr": "Cette page n'existe pas ou n'existe plus. Les appels d'offres expirés restent en ligne {days} jours.",
+    "it": "Questa pagina non esiste o non esiste più. I bandi scaduti restano online {days} giorni.",
+    "en": "This page does not exist, or no longer does. Expired tenders stay online for {days} days.",
+}
+# the footer's line on the language of the titles, moved to the about page (its source section already said the first
+# half: titles appear as published, in the publication's language)
+for _l, _x in (("de", " Nicht jede Publikation liegt in allen Landessprachen vor."),
+               ("fr", " Toutes les publications ne sont pas disponibles dans toutes les langues."),
+               ("it", " Non tutte le pubblicazioni sono disponibili in tutte le lingue."),
+               ("en", " Only some are available in English.")):
+    for _sec in UEBER[_l]["sections"]:
+        if _sec[0] == "quelle":
+            _sec[2][1] += _x
 
 
 # ---------------------------------------------------------------- typography

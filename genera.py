@@ -1659,10 +1659,8 @@ p{max-width:33em}
   font:400 1.375rem/1 var(--display);letter-spacing:.05em;text-transform:uppercase;color:var(--ink);text-decoration:none}
 .masthead a.name::before{content:"";flex:none;width:1.875rem;height:1.875rem;background:var(--mk) center/contain no-repeat}
 .masthead a.name:hover{color:var(--gold-hi)}
-/* 'unabhängig · nicht amtlich' under the name, from the stylesheet (css_labels, by :lang): no byte on the pages */
-.masthead a.name{flex-wrap:wrap;align-content:center;row-gap:.25rem}
-.masthead a.name::after{flex-basis:100%;padding-left:2.625rem;font:600 .8125rem/1.2 var(--sans);
-  letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+/* the 'unabhängig · nicht amtlich' line under the name is gone (owner, 23.10.2026): the simap notice stays in the
+   footer, the home's hero names the source */
 .masthead details{grid-row:1;grid-column:2;justify-self:end;display:none}
 .masthead summary{display:flex;align-items:center;gap:.625rem;min-height:2.75rem;padding:0 .875rem;
   border:1px solid var(--line2);cursor:pointer;list-style:none;font:700 .8125rem/1 var(--sans);
@@ -1744,7 +1742,6 @@ a.btn:hover,.form button:hover{color:var(--on-brass)}
 }
 @media(max-width:26.25rem){.masthead a.name{font-size:1.1875rem;letter-spacing:.04em;column-gap:.625rem}
   .masthead a.name::before{width:1.625rem;height:1.625rem}
-  .masthead a.name::after{padding-left:2.25rem;letter-spacing:.02em;text-transform:none;font-weight:500}
   .masthead summary{padding:0 .625rem}}
 /* ── the page: header and footer full width, the content centred ───────────────────────────── */
 /* the content column: a grid, so no component's own margins can pull a block out of line */
@@ -1761,7 +1758,6 @@ main>*{grid-column:2;min-width:0}
   padding:2.75rem 0 2.25rem;border-bottom:1px solid rgba(201,162,78,.34)}
 .title>div:only-child{grid-column:1/-1}
 .title p.sum{margin:1.125rem 0 0;max-width:33em;font-size:1.125rem;line-height:1.6;color:var(--text)}
-.title p.aud{margin:1rem 0 0;max-width:30em;font-size:1.1875rem;line-height:1.5;color:var(--ink)}
 .title .m14{margin-top:1.25rem}
 .rail{margin:0;padding:0 0 .25rem 1.5rem;border-left:1px solid rgba(201,162,78,.38);font-size:.9375rem;color:var(--text)}
 .rail dt{margin:1rem 0 0;font:700 .8125rem/1.35 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
@@ -1971,6 +1967,9 @@ a.btn.gh:hover,a.btn.gh:focus-visible{color:var(--on-brass)}
 /* the scope under 'Frist verpasst? …' (fix round 2): what the alert would cover, not the promise again */
 .alert .pad>p.sc{color:var(--gold-hi)}
 .winner{margin:.75rem 0 0;padding:1.125rem 1.25rem;border-left:2px solid var(--brass);background:var(--card)}
+/* who won, under a record's title (23.10.2026) */
+.sec.win{max-width:42rem}
+.sec.win .runhead{margin-top:2rem}
 .winner .who{font:700 1.375rem/1.3 var(--sans);color:var(--ink)}
 .official{margin-top:1.75rem;padding:.875rem 1.125rem;border-left:2px solid var(--line2);background:var(--card);font-size:.9375rem;color:var(--muted)}
 .acts{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1rem;margin-top:1.5rem}
@@ -2035,7 +2034,14 @@ form.search-page button{font-size:.875rem;padding:0 1.25rem;min-height:3.25rem}
 .search-res h2{margin:2rem 0 .375rem}
 .search-res ul.plain li{padding:.625rem 0}
 .search-res .kind{color:var(--muted);font-size:.875rem}
-.search-dirs h3{margin:1.75rem 0 0}
+.search-dirs h2{margin:1.75rem 0 0;font-size:1.375rem;line-height:1.1;letter-spacing:.03em}
+/* the header's search on the search page: its own field is the page's (23.10.2026: two fields, one above the other) */
+body:has(form.search-page) .masthead [role=search]{display:none}
+/* the explanations behind a 'more' (23.10.2026): the list's how-to and simap.ch beside the register on the hub, the
+   directories on the search page, the RSS feeds under the e-mail form */
+main>details.more{margin-top:2rem}
+main>details.more+details.more{margin-top:.25rem}
+details.more[open]>summary{margin-bottom:.75rem}
 .search-dirs .az{display:grid;grid-template-columns:repeat(auto-fill,minmax(3.25rem,1fr))}
 .search-dirs .az a{display:block}
 /* the live results under a search field (js/suche.js) */
@@ -2085,25 +2091,19 @@ form.search-page button{font-size:.875rem;padding:0 1.25rem;min-height:3.25rem}
 .form .msg.err,.form .ferr{color:var(--hot)}
 .form .ferr{margin:.5rem 0 0;font-size:.9375rem}
 .form input[aria-invalid=true]{border-color:var(--hot)}
-.form .pv{margin:1.125rem 0 0;padding:.75rem .875rem;border-left:2px solid var(--brass);background:var(--card);font-size:1rem;color:var(--ink);
-  min-height:4.75rem}
-.form .pv small{display:block;margin-top:.125rem;font-size:.875rem;color:var(--muted)}
-/* fix round 1: without a script no selection (it would not reach Brevo), the summary of the selection beside the
-   button, the Branchen filter, and two columns from 1000 px (the selection left, the address and the button right) */
+/* what the selection brings a week, one line under the selection in words (23.10.2026: a box of two lines) */
+.form .pv{margin:.25rem 0 0;font-size:.9375rem;color:var(--muted);min-height:1.5em}
+/* fix round 1: without a script no selection (it would not reach Brevo), the summary of the selection over the
+   button, the Branchen filter; one column since 23.10.2026 (the address, the cantons, the sectors, the button) */
 html:not(.j) #abo fieldset,html:not(.j) #abo .pv,html:not(.j) #abo .sumry{display:none}
-.form .sumry{margin:1rem 0 0;min-height:1.6em;font-size:1rem;font-weight:700;color:var(--ink)}
+.form .sumry{margin:1.75rem 0 0;min-height:1.6em;font-size:1rem;font-weight:700;color:var(--ink)}
 .form .bq{display:flex;flex-direction:column;gap:.3125rem;margin:0 0 .625rem;font:700 .8125rem/1.35 var(--sans);letter-spacing:.1em;
   text-transform:uppercase;color:var(--muted)}
 .form .bq input{width:100%;max-width:22rem;min-height:2.75rem;margin:0;font:inherit;font-size:1rem;font-weight:400;letter-spacing:0;
   text-transform:none;line-height:1.3;padding:.5rem .625rem;border:1px solid var(--field);border-radius:0;background:#0b0a08;color:var(--ink)}
 .form .bqn{margin:.25rem 0 .5rem;font-size:.9375rem;color:var(--muted)}
-@media(min-width:62.5rem){
-  .form.two{max-width:none;display:grid;grid-template-columns:minmax(0,1fr) minmax(18rem,24rem);grid-template-areas:"sel em" "sel side";
-    grid-template-rows:auto 1fr;column-gap:3.5rem;align-items:start}
-  .form.two .fe{grid-area:em}
-  .form.two .fsel{grid-area:sel}
-  .form.two .fside{grid-area:side;position:sticky;top:1rem}
-}
+/* the RSS feeds under the form, behind a 'more' (23.10.2026) */
+details.feeds h2{margin:1.5rem 0 .5rem;font-size:1.375rem;line-height:1.1;letter-spacing:.03em}
 /* the filter bar of the tender lists (fix round 1): in the page from the start, so nothing moves when the
    script arrives; shown only with JavaScript (the class j, set in the page's head), its controls behind
    'Filter' on a phone */
@@ -2311,8 +2311,7 @@ footer a{color:var(--gold-hi)}
   html,body{background:#fff;color:#000}
   body{font-size:10.5pt;line-height:1.45}
   .skip,.masthead details,.masthead [role=search],.langs,.sitenav,.crumbs,.alert,.tags,.dl,.form,details.more>summary,noscript,
-  a.fig>span::after,.acts,p.src,.search-pop,.flt,.totop,button.all,.kb .kbx,footer::before,.tg,.ab-out,tr.ab,
-  .masthead a.name::after{display:none!important}
+  a.fig>span::after,.acts,p.src,.search-pop,.flt,.totop,button.all,.kb .kbx,footer::before,.tg,.ab-out,tr.ab{display:none!important}
   .masthead{display:block;padding:0 0 6pt;border-bottom:1px solid #999;background:#fff}
   .fig.wide,.glass,.winner,.official,.state{background:#fff!important}
   .masthead a.name{min-height:0;font-size:12pt;color:#000}
@@ -2371,8 +2370,6 @@ main>.band{grid-column:1/-1}
 .hero .bg{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .vign{position:absolute;inset:0;background:radial-gradient(120% 90% at 78% 70%,rgba(201,162,78,.16),transparent 55%),
   radial-gradient(70% 60% at 10% 0%,rgba(244,241,234,.05),transparent 60%),linear-gradient(180deg,rgba(0,0,0,0) 60%,#000 100%)}
-.ghost{position:absolute;right:-1.5vw;top:8%;font:400 clamp(15rem,31vw,29.5rem)/.78 var(--display);color:transparent;
-  -webkit-text-stroke:1px rgba(201,162,78,.26);white-space:nowrap;user-select:none}
 .hero .glow{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;transition:opacity .6s;
   background:radial-gradient(27.5rem circle at var(--mx,70%) var(--my,35%),rgba(201,162,78,.16),transparent 62%)}
 .hero.glow-on .glow{opacity:1}
@@ -2380,7 +2377,6 @@ main>.band{grid-column:1/-1}
   grid-template-rows:1fr auto;column-gap:2.5rem;padding-top:2rem}
 .hero .copy{grid-column:1/-1;grid-row:1;max-width:56rem;align-self:center;padding-bottom:1.5rem;position:relative;z-index:2}
 .hero h1{margin-top:1.125rem;font-size:clamp(3.5rem,min(7.6vw,10.6svh),7.75rem);line-height:.9;text-shadow:0 2px 30px rgba(0,0,0,.6)}
-.hero .aud{margin:1.25rem 0 0;max-width:min(58ch,100cqw - 33.5rem);font-size:clamp(1.125rem,1rem + .4vw,1.25rem);line-height:1.45;color:var(--ink)}
 .hero .lead{margin:.625rem 0 0;max-width:min(62ch,100cqw - 33.5rem);font-size:clamp(1.0625rem,1rem + .2vw,1.15625rem);font-weight:400;color:var(--text)}
 .ctas{margin:1.625rem 0 0;display:flex;flex-wrap:wrap;gap:1.125rem 1.625rem;align-items:center}
 .ctas a.btn{min-height:3.625rem;padding-inline:1.5rem 1.625rem;font-size:.875rem}
@@ -2391,9 +2387,6 @@ main>.band{grid-column:1/-1}
   box-shadow:0 -10px 24px -14px rgba(242,216,146,.55)}
 .sky i.p{background:repeating-linear-gradient(-45deg,rgba(201,162,78,.75) 0 2px,transparent 2px 6px);box-shadow:inset 0 0 0 1px rgba(201,162,78,.6)}
 .sky i.pk{background:linear-gradient(180deg,#fff2c8 0,#f2d892 14%,rgba(201,162,78,.55) 60%,rgba(140,104,44,.08) 100%);box-shadow:0 0 36px -6px rgba(242,216,146,.6)}
-.sky .pkl{position:absolute;bottom:calc(100% + .875rem);right:-.25rem;font:400 .8125rem/1.35 var(--sans);letter-spacing:.14em;
-  text-transform:uppercase;color:var(--gold-hi);white-space:nowrap;text-align:right}
-.sky .pkl b{display:block;font:400 2.125rem/1 var(--display);letter-spacing:.02em}
 .horizon{position:absolute;left:-50vw;right:-50vw;top:0;height:1px;pointer-events:none;
   background:linear-gradient(90deg,transparent 0,rgba(201,162,78,.5) 35%,rgba(242,216,146,.95) 72%,rgba(201,162,78,.35) 100%)}
 .doors{grid-column:1/-1;grid-row:2;position:relative;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) minmax(0,.55fr);
@@ -2416,7 +2409,6 @@ div.door:hover::after,div.door:focus-within::after{inset:.375rem;background:line
     linear-gradient(var(--brass),var(--brass)) 100% 100%/.75rem 1px,linear-gradient(var(--brass),var(--brass)) 100% 100%/1px .75rem;
   background-repeat:no-repeat}
 div.door:hover::before,div.door:focus-within::before{inset:-.375rem}
-.door .k{grid-column:1/-1;font:700 .8125rem/1.35 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
 .door .big{grid-column:1;display:flex;align-items:baseline;flex-wrap:wrap;gap:.25rem .75rem}
 .door .big b{font:400 4rem/.9 var(--display);letter-spacing:.01em;background:var(--grad-v);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:var(--gold-hi)}
 .door .big .lbl{font:400 1.875rem/1 var(--display);text-transform:uppercase;letter-spacing:.03em}
@@ -2428,8 +2420,6 @@ div.door:hover::before,div.door:focus-within::before{inset:-.375rem}
 .door .ar{grid-column:2;grid-row:2;align-self:center;color:var(--brass)}
 form.finder.door{padding:1.125rem 1.375rem;border:0;background:none;display:block}
 form.finder.door .dh{font-size:2.875rem;line-height:.95;margin:.25rem 0 .875rem}
-.hmeta{align-self:end;justify-self:end;text-align:right;font:400 .8125rem/1.7 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0}
-.hmeta b{color:var(--gold-hi)}
 /* pinned only while it fits the screen (js/home.js sets .pin): pinned taller than the screen, its doors would
    never come into view */
 @media(min-width:56.25rem) and (min-height:43.75rem) and (max-height:87.5rem) and (prefers-reduced-motion:no-preference){.hero.pin{position:sticky;top:0}}
@@ -2458,7 +2448,6 @@ form.finder.door .dh{font-size:2.875rem;line-height:.95;margin:.25rem 0 .875rem}
 .maplegend .sc{display:inline-flex;align-items:center;gap:.5rem}
 .maplegend .sc b{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
 .mapsrc{margin:.375rem 0 0;font-size:.8125rem;color:var(--muted)}
-html:not(.js) .maplegend span:last-child{display:none}
 .ro{border-left:1px solid rgba(201,162,78,.3);padding-left:1.75rem}
 .ro .rk{margin:0;font:700 .8125rem/1.35 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
 /* the name's box one line high exactly (fix round 4: 2.925 rem, not 2.9; js/home.js sets a long name a size smaller in
@@ -2487,16 +2476,12 @@ html:not(.js) .maplegend span:last-child{display:none}
 .kl abbr{font-weight:700;letter-spacing:.06em}
 /* the key figures, sliding over the hero */
 .stats{background:var(--band);border-top:1px solid rgba(201,162,78,.38);padding:5.25rem 0 4.375rem;box-shadow:0 -2.5rem 5rem rgba(0,0,0,.7)}
-.stats .figures{padding:0;gap:2.125rem 0;grid-template-columns:repeat(4,minmax(0,1fr))}
+.stats .figures{padding:0;gap:2.125rem 0;grid-template-columns:repeat(3,minmax(0,1fr))}
 .stats .fig{padding:.375rem 1.625rem .25rem}
 .stats .fig b{font-size:clamp(4rem,7vw,6.75rem);line-height:.86}
 .stats .fig b small{font-size:2.25rem}
 .stats .fig.money b{white-space:nowrap;font-size:clamp(3.25rem,5.4vw,5.5rem)}
 .stats .fig.money b small{font-size:1.375rem;letter-spacing:.04em;margin-left:.1em}
-.stats .rail{display:flex;flex-wrap:wrap;gap:.625rem 2.75rem;margin-top:3.5rem;padding:1.375rem 0 0;border:0;border-top:1px solid var(--line)}
-.stats .rail div,.stats .rail{align-items:baseline}
-.stats .rail dt{margin:0 .75rem 0 0;display:inline}
-.stats .rail dd{margin:0 2.75rem 0 0;display:inline;font-size:.9375rem;color:var(--text)}
 /* 02–04: the chart, the companies and the next deadlines, the industries */
 .hsec{padding:7.5rem 0 2.5rem;background:#000}
 .hsec figure.mc{margin:0;padding:0;background:none;border:0}
@@ -2533,10 +2518,7 @@ html:not(.js) .maplegend span:last-child{display:none}
 .alarm{position:relative;background:linear-gradient(100deg,#b78f43 0%,#d9b867 30%,#f3dc9a 52%,#d6b262 74%,#c09848 100%);color:var(--on-brass);
   padding:7.5rem 0 6.875rem;overflow:hidden}
 .alarm::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 120% at 80% 0%,rgba(255,255,255,.35),transparent 60%);pointer-events:none}
-.alarm .in{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:2.5rem}
-.alarm .in>*{grid-column:1}
-.alarm .eyebrow{color:#2a2009}
-.alarm .eyebrow::before{background:linear-gradient(90deg,transparent,#2a2009)}
+.alarm .in{position:relative}
 .alarm h2{color:var(--on-brass);font-size:clamp(3.5rem,6.6vw,6.75rem);margin-top:1.25rem;max-width:21ch}
 .alarm h2 .dot{color:#fff}
 .alarm .s{margin:1.375rem 0 0;font-size:1.1875rem;max-width:44ch;color:#1d1608}
@@ -2546,14 +2528,9 @@ html:not(.js) .maplegend span:last-child{display:none}
 .alarm a.btn::after{background:#0b0905}
 .alarm a.btn:hover,.alarm a.btn:focus-visible{color:var(--gold-hi)}
 .alarm a.btn:focus-visible{outline-color:#0b0905}
-.alarm .since{grid-column:2;grid-row:1/span 4;align-self:center;text-align:right;color:var(--on-brass);margin:0}
-.alarm .since b{display:block;font:400 clamp(11.25rem,22vw,20.625rem)/.8 var(--display);color:transparent;-webkit-text-stroke:2px #0b0905}
-.alarm .since span{display:block;margin-top:.875rem;font:700 .875rem/1.35 var(--sans);letter-spacing:.2em;text-transform:uppercase}
 .endband{position:relative;background:#000;padding-top:3.5rem}
-.endband .tags{margin:0}
 .js .endband{padding-top:13.125rem}
 canvas.seam{position:absolute;left:0;right:0;top:0;width:100%;height:13.125rem;pointer-events:none;z-index:0}
-.endband .in{position:relative;z-index:1}
 main:has(>.endband){padding-bottom:0}
 main:has(>.endband)+footer{margin-top:0;border-top:0;padding-top:2.5rem}
 /* the motion of js/home.js: word reveals and block reveals only for what starts below the fold */
@@ -2566,11 +2543,9 @@ main:has(>.endband)+footer{margin-top:0;border-top:0;padding-top:2.5rem}
   .hero{min-height:0}
   .hero-in{padding-top:2.75rem;padding-bottom:2.25rem;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto}
   .hero h1{font-size:clamp(3.125rem,14.5vw,4.75rem)}
-  .hero .aud,.hero .lead{max-width:62ch}
-  .ghost{display:none}
+  .hero .lead{max-width:62ch}
   .sky{grid-column:1;grid-row:2;justify-self:stretch;width:100%;height:7.5rem;margin-top:4rem;gap:3px}
   .doors{grid-row:3;grid-template-columns:minmax(0,1fr);gap:.875rem;padding-top:1.375rem}
-  .hmeta{justify-self:start;text-align:left}
   .stats .figures{grid-template-columns:repeat(2,minmax(0,1fr))}
   .stats .fig:nth-child(3){border-left:0;padding-left:0}
   .stats .fig b{font-size:clamp(3.375rem,15vw,4.5rem)}
@@ -2603,11 +2578,7 @@ main:has(>.endband)+footer{margin-top:0;border-top:0;padding-top:2.5rem}
   .stats .fig{padding:.25rem 0 0 1rem}
   .stats .fig:first-child,.stats .fig:nth-child(3){padding-left:0}
   .stats .fig>span{letter-spacing:.12em}
-  .stats .rail{flex-direction:column;gap:.75rem}
   .alarm h2{font-size:clamp(3.125rem,14vw,4.5rem);hyphens:auto;-webkit-hyphens:auto}
-  .alarm .in{grid-template-columns:minmax(0,1fr)}
-  .alarm .since{grid-column:1;grid-row:auto;text-align:left;margin-top:2.5rem}
-  .alarm .since b{font-size:9.375rem}
   .kl a{font-size:.875rem}
   .top td{padding:.75rem .375rem}
   .top thead th,.top thead td{padding:0 .375rem .625rem;letter-spacing:.06em;white-space:normal}
@@ -2659,9 +2630,6 @@ def css_labels() -> str:
         for sel, k in (("table:is(.awb,.awc,.lots)", "not_published"), ("table:not(.awb,.awc,.lots)", "no_own_amount")):
             q = json.dumps("– " + t(k), ensure_ascii=False)
             sig.append(f':lang({l}) .scroll:has(>{sel} td.num>.sr:only-child)::after{{content:{q};content:{q}/""}}')
-        # under the name in the header, on every page (fix round 1): 'unabhängig · nicht amtlich'
-        q = json.dumps(t("indep"), ensure_ascii=False)
-        sig.append(f':lang({l}) .masthead a.name::after{{content:{q};content:{q}/""}}')
         rules = [("table.tl td.when", t("deadline")), ("table.tl td:nth-child(3)", t("buyer")),
                  ("table.tl td:last-child", t("canton_abbr")), ("table.awb td.d", t("date")),
                  ("table.awb td:nth-child(3)", t("winner")), ("table.awc td.d", t("date")),
@@ -2753,14 +2721,16 @@ def search_form(lang: str, base: str = "") -> str:
 # who reads only French, Italian or English: the audit found the byte-identical German
 # string on all four language versions, making the "it plainly says so" defence false
 # on three of them. The verbatim notice keeps its lang="de" so screen readers switch.
-# The data line opens the footer (14.10.2026): the date of the newest publication, how often the
-# register is refreshed, and the methodology behind it.
-FOOT = """</main><footer><p class="stand">{stand}<a href="{base}/{lang}/ueber/#methodik">{methodik}</a></p>
+# The data line opens the footer (14.10.2026): the date of the newest publication and the source.
+# Only what is needed since the 'strictly necessary' pass (owner, 23.10.2026): one date and the source on one line (the
+# home states its date in the hero, so its line names the source alone), the simap notice and its translation, the
+# about page, the legal pages and the contact. The line on the language of the titles and the bracket on the
+# publishers went to the about page, the 'Woher die Daten kommen' link was a second way to it.
+FOOT = """</main><footer><p class="stand">{stand}{source}{colon} <a href="https://www.simap.ch">simap.ch</a></p>
 <p>{notoff}</p>
 <p lang="de">{disc}</p>
-<p>{srcnote}</p>
-<p>{source}{colon} <a href="https://www.simap.ch">simap.ch</a> ({official}) ·
-<a href="{abouthref}">{aboutlabel}</a> · <a href="{imphref}">{implabel}</a> · <a href="{privhref}">{privlabel}</a></p>
+<p><a href="{abouthref}">{aboutlabel}</a> · <a href="{imphref}">{implabel}</a> · <a href="{privhref}">{privlabel}</a> ·
+<a href="mailto:{mail}">{contact}</a></p>
 </footer><script src="{base}/stand.js" defer></script>{scripts}</body></html>"""
 
 
@@ -2969,10 +2939,11 @@ def ld_script(data: dict) -> str:
 
 def page(title: str, desc: str, body: str, path: str, kicker: str = "",
          leaf: str = "", robots: str = "", head_extra: str = "", fresh: bool = False,
-         mid=None, leaf_lang: str = "", og=None, lastmod: str = "", scripts: tuple = ()) -> str:
+         mid=None, leaf_lang: str = "", og=None, lastmod: str = "", scripts: tuple = (), nodate: bool = False) -> str:
     """One page in the site's shell. kicker is no longer shown (the menu marks the section since
     14.10.2026); fresh: the page changes every day anyway and states the data date itself
-    (stand_line); mid, leaf_lang: the breadcrumb levels its URL does not show (trail) and the
+    (stand_line); nodate: the page states its date elsewhere (the home's hero), the footer names the source
+    alone (one date a page, 23.10.2026); mid, leaf_lang: the breadcrumb levels its URL does not show (trail) and the
     language of its last crumb when that is a publication's title in another language.
     og: the Open Graph tags, by default on every indexable page; an open tender's page (noindex)
     asks for them, the 66,000 award pages do not carry them (600 bytes a page; 14.10.2026)."""
@@ -3011,17 +2982,16 @@ def page(title: str, desc: str, body: str, path: str, kicker: str = "",
                         navlabel=e(_.nav_label), sitenav=site_nav(path, tr), search=search_form(LANG, BASE),
                         menu=e(_.menu))
             + crumbs_html(tr, leaf_lang, ld=not noindex) + '<main id="inhalt">\n'
-            + scoped(body) + FOOT.format(disc=e(DISCLAIMER), base=BASE, lang=LANG,
-                                 stand=stand_line(fresh), methodik=e(_m("methodik")),
+            + scoped(body) + FOOT.format(disc=e(DISCLAIMER), base=BASE,
+                                 stand="" if nodate else stand_line(fresh),
                                  notoff=e(_p.footer_note),
                                  abouthref=f"{BASE}/{LANG}/ueber/", aboutlabel=e(_.nav_about),
                                  imphref=f"{BASE}/{LANG}/impressum/",
                                  implabel=e(_.imprint),
                                  privhref=f"{BASE}/{LANG}/datenschutz/",
                                  privlabel=e(_.privacy),
-                                 srcnote=e(_p.translation_note), source=e(_.source),
-                                 colon=lingue.COLON[LANG],
-                                 official=e(_p.source_inline),
+                                 mail=ABO_MAIL, contact=e(_.contact),
+                                 source=e(_.source), colon=lingue.COLON[LANG],
                                  # the page type's script (step 3b): after /stand.js, whose helpers it uses
                                  scripts="".join(f'<script src="{BASE}/js/{x}.js?v={JS_VER[0]}" defer></script>'
                                                  for x in scripts)))
@@ -3272,8 +3242,9 @@ def division_figure(rows: list, sect_counter: collections.Counter, sectors: set[
         if anchors:
             # the canton x Branche panel's hint in the page, shown with JavaScript only (fix round 3: js/kb.js inserted it
             # after the first paint and moved the rows, the deep link's target among them)
-            out = re.sub(r'(<p class="lede"[^>]*>.*?</p>)', lambda m: m.group(1) + f'<p class="sub m10 kbh">{e(lingue.JS["kb_hint"][LANG])}</p>',
-                         out, count=1, flags=re.S)
+            hint = f'<p class="sub m10 kbh">{e(lingue.JS["kb_hint"][LANG])}</p>'
+            out = (re.sub(r'(<p class="lede"[^>]*>.*?</p>)', lambda m: m.group(1) + hint, out, count=1, flags=re.S)
+                   if '<p class="lede"' in out else out.replace("</h2>", "</h2>" + hint, 1))
     tops = [(lab, code, k) for (lab, code), k in sect_counter.most_common(20) if code in sectors][:8]
 
     def tag_label(lab: str, code: str) -> str:
@@ -3743,11 +3714,8 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
         bnames = {k: (buyer_slugs[k][1] if k in buyer_slugs else c["bname"][k].most_common(1)[0][0])
                   for k in c["buyers"]}
 
-        b = [f'<div class="title"><div><p class="eyebrow">'
-             # the sector only: a canton here read as the firm's seat ('Swisscom … · Genf'),
-             # while it is where most of its awards fall — the rail says so ('Häufigste Kantone')
-             + e(short_sector(sector, 44) if sector else _.company)
-             + f'</p>{rec_h1(name)}'
+        # no eyebrow (its main sector is the rail's first line), a lead without the figures' numbers (23.10.2026)
+        b = [f'<div class="title"><div>{rec_h1(name)}'
              f'<p class="sum">' + e(_m("company_lead", n=zuschlag(len(rows)),
                                        span=(f" ({span})" if span else ""),
                                        b=(_m("buyers_count_one") if len(c["buyers"]) == 1
@@ -3783,10 +3751,13 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                 [("bereiche", _.activity if len(c["cpv"]) == 1 else _.activities)] if c["cpv"] else []) + (
                 [("auftraggeber", _.buyer if len(c["buyers"]) == 1 else _.buyers)] if c["buyers"] else [])
             b.append('<p class="jl">' + " · ".join(f'<a href="#{i}">{t}</a>' for i, t in jl) + "</p>")
-        if CSV_COMPANIES:
-            b.append(csv_download(rows, "unternehmen", s, _if("csv_company", name=name_cut(name, 60))))
+        # the CSV link sits under the awards table since 23.10.2026 (it stood between the figures and the alert)
+        csv_link = csv_download(rows, "unternehmen", s, _if("csv_company", name=name_cut(name, 60))) if CSV_COMPANIES else ""
         b.append(alert_callout(c))
 
+        # the analysis (per year, the amount bands, the largest) after the awards and the open tenders since
+        # 23.10.2026: the list of awards is what a visitor comes for, the analysis is secondary
+        ana = []
         # Derived analysis (2026-09-07): what simap does not say — per-year rhythm and
         # how concentrated the client base is. Aggregation, not alteration (AGB §5).
         # One money rule for every figure on the page: an amount is credited to the firm
@@ -3820,20 +3791,20 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                        unit_of(p for p, cur in firm_amt if p and cur == "CHF"))
         if per_year:
             yu = pu
-            b.append(f'<div class="sec"><div class="runhead"><h2>{e(_p.analysis)}</h2>'
+            ana.append(f'<div class="sec"><div class="runhead"><h2>{e(_p.analysis)}</h2>'
                      f'<span>{e(_p.derived)}</span></div><div class="scroll"><table>{cap(_p.analysis)}<thead><tr>'
                      f'<th>{_.year}</th><th class="r">{_.awards_col}</th>{money_th("sum_l", yu)}'
                      "</tr></thead><tbody>")
             for y in sorted(per_year, reverse=True):
                 n_y, v_y = per_year[y]
-                b.append(f'<tr><td class="mono">{e(y)}</td><td class="r num">{formato.count(n_y)}</td>'
+                ana.append(f'<tr><td class="mono">{e(y)}</td><td class="r num">{formato.count(n_y)}</td>'
                          f'<td class="r num">{formato.column_cell(v_y or None, yu, empty_sr=_.no_own_amount)}</td></tr>')
-            b.append("</tbody></table></div>")
+            ana.append("</tbody></table></div>")
             if joint:
-                b.append(f'<p class="sub m10">'
+                ana.append(f'<p class="sub m10">'
                          f'{e(_if("joint_note_one" if joint == 1 else "joint_note", k=formato.count(joint)))}</p>')
             if rates:
-                b.append(f'<p class="sub m10">'
+                ana.append(f'<p class="sub m10">'
                          f'{e(_if("rates_note_one" if rates == 1 else "rates_note", k=formato.count(rates)))}</p>')
             line = ""
             if len(c["buyers"]) == 1:
@@ -3844,8 +3815,8 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                 if k1 >= 2 and k1 > k2:
                     line = _m("top_buyer_share", buyer=name_cut(bnames[b1], 90), share=formato.pct(100 * k1 / len(rows)))
             if line:
-                b.append(f'<p class="sub m10">{e(line)}</p>')
-            b.append("</div>")
+                ana.append(f'<p class="sub m10">{e(line)}</p>')
+            ana.append("</div>")
 
         # How large the awards are: counts per amount band, read without a legend. It
         # replaces the bubble timeline (overlapping dots, ISO ends, contrast 1.68:1).
@@ -3863,15 +3834,14 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                     bands[5] += 1
             if not sum(bands[:5]):
                 # five empty bars and nothing to read (all amounts in euros, or none published)
-                b.append(f'<figure class="rk" aria-labelledby="chart-sizes"><h2 id="chart-sizes">'
+                ana.append(f'<figure class="rk" aria-labelledby="chart-sizes"><h2 id="chart-sizes">'
                          f'{e(_if("bands_title", name=name))}</h2><p class="lede">'
                          f'{e(_if("bands_none", n=formato.count(len(rows))))}</p></figure>')
             else:
                 band_rows = [(lingue.BANDS[LANG][i], None, bands[i], formato.count(bands[i])) for i in range(6)]
-                note = ((_if("bands_median", m=formato.money(median(c["amounts"])))
-                         if len(c["amounts"]) >= 3 else "")
-                        + (" " + _i.bands_noown if bands[5] else ""))
-                b.append(grafici.rank_list(band_rows[:5], other=band_rows[5], fig_id="chart-sizes",
+                # the median is the figures' tile (23.10.2026: the note stated it a second time, with its definition)
+                note = _i.bands_noown if bands[5] else ""
+                ana.append(grafici.rank_list(band_rows[:5], other=band_rows[5], fig_id="chart-sizes",
                                            title=_if("bands_title", name=name), lede=_i.bands_lede,
                                            note=note.strip(), src=chart_src(csv_path)))
         # ... and which ones they are: a 331 Mio. total is often one award
@@ -3879,7 +3849,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                       if chf_amount(a) is not None and len(winners(a)) == 1),
                      key=lambda x: -x[0])
         if len(own) >= 3:
-            b.append(f'<div class="sec"><div class="runhead"><h2>{_i.largest_h}</h2></div>'
+            ana.append(f'<div class="sec"><div class="runhead"><h2>{_i.largest_h}</h2></div>'
                      '<ul class="plain">')
             top3 = own[:3]
             heads3 = distinct_titles([de(a, "title") for _p, a in top3], 110)
@@ -3890,11 +3860,11 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                 d = a.get("publicationDate") or ""
                 meta = " · ".join(x for x in (e(buyer_label(a)), tt(d, formato.date(d)),
                                               e(tw3.get(i, ""))) if x)
-                b.append(f'<li><div class="row"><div><a href="{award_href(a)}"{la(a)}>'
+                ana.append(f'<li><div class="row"><div><a href="{award_href(a)}"{la(a)}>'
                          f'{e(head)}</a>'
                          f'<span class="sub sb3">{meta}</span></div>'
                          f'<span class="num nw">{formato.money_data(p)}</span></div></li>')
-            b.append("</ul>")
+            ana.append("</ul>")
             top1 = own[0][0]
             if c["value"] and top1 / c["value"] >= .25:
                 share = formato.pct(100 * top1 / c["value"])
@@ -3902,9 +3872,9 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                     share = _if("over_pct", p=share[1:])
                 elif LANG == "it":
                     share = ("l’" if share.startswith("8") else "il ") + share
-                b.append(f'<p class="sub m10">'
+                ana.append(f'<p class="sub m10">'
                          f'{e(_if("largest_share", share=share))}</p>')
-            b.append("</div>")
+            ana.append("</div>")
 
         # An award to several firms: this firm's own price, marked as the price of its offer — the
         # column showed the FIRST firm's price under 'an mehrere Unternehmen' (08.10.2026). It
@@ -3936,7 +3906,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                 f'<td><a href="{award_href(a)}"{la(a)}>{e(head)}</a>{twin}</td>'
                 f'<td>{e(buyer_label(a))}</td><td>{abbr_canton(a.get("canton") or "", a.get("_ksrc", ""))}</td>'
                 f'<td class="r num">{amt}</td></tr>')
-        b.append("</tbody></table></div>" + fb_foot(rows) + "</div>")
+        b.append("</tbody></table></div>" + fb_foot(rows) + csv_link + "</div>")
 
         m = open_for.get(s, [])
         if m:
@@ -3959,6 +3929,8 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
                          f'<span class="when{cls}">{when}</span>'
                          "</div></li>")
             b.append("</ul>" + fb_foot(m) + "</div>")
+
+        b += ana
 
         if c["cpv"]:
             # every exact code, the most frequent first (it listed 8 of 21 under 'Tätigkeitsbereiche 21')
@@ -4597,39 +4569,88 @@ def build_awards(awards: list, opens: list, expired: list, pages: dict, sectors:
         tl = la(src) if (is_tender or len(rows) == 1) else (la(rows[0]) if rows else "")
         cant = src.get("canton") if src.get("canton") in CANTONS else ""
         div = str(src.get("cpvCode") or "")[:2]
+        hit = buyer_slugs.get(norm_buyer(src.get("buyerName") or ""))
+        # the authority as this publication names it, linked to its page (fix round 1: 41 names showed the
+        # spelling the buyer page uses instead)
+        buyer_cell = (f'<a href="{BASE}/{LANG}/auftraggeber/{e(hit[0])}/">{e(_ws(src.get("buyerName")))}</a>'
+                      if hit else e(src.get("buyerName")))
+        if src.get("_buyer_nn"):
+            # a name that was an e-mail address: 'Name nicht angegeben', linked only to the page of the publication's
+            # other name for the authority, when it has one (fix round 1)
+            alt = buyer_slugs.get(norm_buyer(src["_buyer_nn"])) if isinstance(src["_buyer_nn"], str) else None
+            buyer_cell = (f'<a href="{BASE}/{LANG}/auftraggeber/{e(alt[0])}/">{e(_.noname)}</a>' if alt
+                          else e(_.noname))
+        # 'Strictly necessary' (owner, 23.10.2026): the first screen says what, who and by when, and offers simap.ch.
+        # The rail beside the title names the contracting authority alone; the publication's number, its date, the lot
+        # and the procedure went to the details, the facts one looks up rather than reads first.
         b = [f'<div class="title"><div>{state}'
              + rec_h1(title, tl)
              + (f'<p class="sum">{e(_m("expired_lead", when=formato.deadline(dl)))}</p>' if gone and dl else "")
              + (f'<p class="sum xl">{e(_m("expired_lead", when=formato.deadline(dl)))}</p>' if near else "")
-             + '</div><dl class="rail">']
+             + "</div>"
+             + (f'<dl class="rail"><dt>{_.buyer}</dt><dd>{buyer_cell}</dd></dl>'
+                if src.get("buyerName") or src.get("_buyer_nn") else "")
+             + "</div>"]
+        meta = []
         if many and not is_tender:
             # several publications: the project's number, and the day or the span they came out
             if src.get("projectNumber"):
-                b.append(f'<dt>{_.project_number}</dt><dd class="mono">{e(src["projectNumber"])}</dd>')
+                meta.append((_.project_number, f'<span class="mono">{e(src["projectNumber"])}</span>'))
             days = sorted({(a.get("publicationDate") or "")[:10] for a in rows} - {""})
             if len(days) == 1:
-                b.append(f'<dt>{_.published_on}</dt><dd>{tt(days[0], formato.date(days[0]))}</dd>')
+                meta.append((_.published_on, tt(days[0], formato.date(days[0]))))
             elif days:
-                b.append(f'<dt>{_.period}</dt><dd>{tt(days[0], formato.date(days[0]))}\u00a0– '
-                         f'{tt(days[-1], formato.date(days[-1]))}</dd>')
+                meta.append((_.period, f'{tt(days[0], formato.date(days[0]))} – '
+                                       f'{tt(days[-1], formato.date(days[-1]))}'))
         else:
             if src.get("publicationNumber"):
-                b.append(f'<dt>{_.publication}</dt><dd class="mono">{e(src["publicationNumber"])}</dd>')
+                meta.append((_.publication, f'<span class="mono">{e(src["publicationNumber"])}</span>'))
             if src.get("publicationDate"):
                 pd = src["publicationDate"]
-                b.append(f'<dt>{_.published_on}</dt><dd>{tt(pd, formato.date(pd))}</dd>')
+                meta.append((_.published_on, tt(pd, formato.date(pd))))
         if aw and aw.get("_lot") is not None and not is_tender:
-            b.append(f'<dt>{_.lot}</dt><dd class="mono">{e(aw["_lot"])}</dd>')
+            meta.append((_.lot, f'<span class="mono">{e(aw["_lot"])}</span>'))
         if src.get("processType"):
-            b.append(f"<dt>{_.procedure}</dt><dd>{e(_e('processType', src['processType']))}</dd>")
-        b.append("</dl></div>")
+            meta.append((_.procedure, e(_e("processType", src["processType"]))))
+
+        ws = winners(aw) if aw else []
+        firms = firm_prices(aw) if aw else []
+        # who won, right under the title (23.10.2026: it came after the amount, the buttons and on a phone a screen
+        # further down): the question the register answers
+        if not ws and aw and aw.get("_win_nn"):
+            b.append(f'<div class="sec win"><div class="runhead"><h2>{_.award_to}</h2></div>'
+                     f'<div class="winner"><span class="who">{e(_.noname)}</span></div></div>')
+        if ws:
+            b.append(f'<div class="sec win"><div class="runhead"><h2>{_.award_to}</h2>'
+                     + (f'<span>{e(_if("joint_n", n=formato.count(len(ws))))}</span>' if len(ws) > 1 else "")
+                     + "</div>")
+            each, _shared = firm_notes(firms)
+            for (w, p, cur, _note), nt in zip(firms, each):
+                s = slug(w)
+                known = pages.get(s)
+                link = (f'<a href="{BASE}/{LANG}/unternehmen/{e(s)}/" class="who">{e(w)}</a>'
+                        if known else f'<span class="who">{e(w)}</span>')
+                extra = []
+                if len(firms) > 1 and any(fp for _w, fp, _c, _n in firms):
+                    # the firm's own price, as the publication gives it beside its name
+                    extra.append(f'{e(_.offer_price)}{lingue.COLON[LANG]} '
+                                 + (e(formato.exact(p, cur)) if p else e(_.not_published))
+                                 + (f" ({e(_.rate_flag)})" if rate_price(p, cur, aw) else ""))
+                if known:
+                    extra.append(f'{zuschlag(known["n"])} {_.in_register}')
+                b.append(f'<div class="winner">{link}'
+                         + (f'<div class="sub mt5">' + " · ".join(extra)
+                            + "</div>" if extra else "")
+                         + (f'<div class="sub mt3"{text_la(nt)}>{note_html(nt)}</div>' if nt else "")
+                         + "</div>")
+            if len(firms) > 1:
+                b.append(price_notes(firms, block=True))
+            b.append("</div>")
 
         figs = []
         if dl:
             figs.append(f'<div class="fig wide{" off" if gone else ""}" data-deadline="{e(dl)}"><b>{tt(dl, formato.deadline(dl))}</b>'
                         f"<span>{_.deadline}</span>" + ('<em class="rel"></em>' if near else "") + "</div>")
-        ws = winners(aw) if aw else []
-        firms = firm_prices(aw) if aw else []
         # The award page is the official record: the amount exactly as published, Rappen
         # included, with a rounded reading under it from one million up. Only for an award to
         # one firm: several firms have a price each, shown beside their names, and the award
@@ -4665,19 +4686,15 @@ def build_awards(awards: list, opens: list, expired: list, pages: dict, sectors:
         if figs:
             b.append('<div class="figures">' + "".join(figs) + "</div>")
         # The publication on simap.ch is the primary action, above any long description (it sat at
-        # 11'241 px on a phone under one award's 15 lots); the calendar file and the way back to the
-        # canton's open tenders are secondary; 'Fehler melden' opens an e-mail with the publication
-        # number in its subject (step 3a, 14.10.2026)
+        # 11'241 px on a phone under one award's 15 lots); the calendar file is secondary; 'Fehler melden' opens an
+        # e-mail with the publication number in its subject (step 3a, 14.10.2026). The way back to the canton's open
+        # tenders went on 23.10.2026: the breadcrumbs above the title lead there.
         acts = []
         if src.get("simapUrl"):
             acts.append(f'<a class="btn" href="{e(simap_href(src))}">{e(_.simap_btn)}</a>')
         if is_tender and not gone:
             acts.append(f'<a class="tag" href="{BASE}/{LANG}/auftrag/{e(pid)}/frist.ics" type="text/calendar" rel="nofollow">'
                         f'{e(_i.ics_link)}</a>')
-        if is_tender and cant:
-            cn = canton_name_or(cant, cant)
-            acts.append(f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/{cant}/">'
-                        f'<span aria-hidden="true">← </span>{e(_if("back_canton", name=cn, of=cant_of(cant, cn)))}</a>')
         ref = (src.get("projectNumber") if many and not is_tender else src.get("publicationNumber")) or pid[:8]
         acts.append(f'<a class="rep" href="mailto:{ABO_MAIL}?subject={urllib.parse.quote(f"{_.report_subj} {ref}")}">'
                     f'{e(_.report_error)}</a>')
@@ -4688,34 +4705,6 @@ def build_awards(awards: list, opens: list, expired: list, pages: dict, sectors:
             b.append(lot_table(rows, pages, title))
 
         b.append('<div class="cols"><div class="prose">')
-        if not ws and aw and aw.get("_win_nn"):
-            b.append(f'<div class="runhead"><h2>{_.award_to}</h2></div>'
-                     f'<div class="winner"><span class="who">{e(_.noname)}</span></div>')
-        if ws:
-            b.append(f'<div class="runhead"><h2>{_.award_to}</h2>'
-                     + (f'<span>{e(_if("joint_n", n=formato.count(len(ws))))}</span>' if len(ws) > 1 else "")
-                     + "</div>")
-            each, _shared = firm_notes(firms)
-            for (w, p, cur, _note), nt in zip(firms, each):
-                s = slug(w)
-                known = pages.get(s)
-                link = (f'<a href="{BASE}/{LANG}/unternehmen/{e(s)}/" class="who">{e(w)}</a>'
-                        if known else f'<span class="who">{e(w)}</span>')
-                extra = []
-                if len(firms) > 1 and any(fp for _w, fp, _c, _n in firms):
-                    # the firm's own price, as the publication gives it beside its name
-                    extra.append(f'{e(_.offer_price)}{lingue.COLON[LANG]} '
-                                 + (e(formato.exact(p, cur)) if p else e(_.not_published))
-                                 + (f" ({e(_.rate_flag)})" if rate_price(p, cur, aw) else ""))
-                if known:
-                    extra.append(f'{zuschlag(known["n"])} {_.in_register}')
-                b.append(f'<div class="winner">{link}'
-                         + (f'<div class="sub mt5">' + " · ".join(extra)
-                            + "</div>" if extra else "")
-                         + (f'<div class="sub mt3"{text_la(nt)}>{note_html(nt)}</div>' if nt else "")
-                         + "</div>")
-            if len(firms) > 1:
-                b.append(price_notes(firms, block=True))
         if many:
             just = grouped_texts(rows, [(a.get("award") or {}).get("justification") for a in rows])
             body = grouped_texts(rows, [de(a, "description") for a in rows], "description")
@@ -4750,23 +4739,12 @@ def build_awards(awards: list, opens: list, expired: list, pages: dict, sectors:
         cpv = f'<span class="mono">{e(src.get("cpvCode") or "")}</span>' + (
             "<br>" + e(cpv_label(src.get("cpvCode"), de(src, "cpvLabel") or src.get("cpvLabel") or "") or "")
             if (src.get("cpvLabel") or de(src, "cpvLabel")) else "")
-        hit = buyer_slugs.get(norm_buyer(src.get("buyerName") or ""))
-        # the authority as this publication names it, linked to its page (fix round 1: 41 names showed the
-        # spelling the buyer page uses instead)
-        buyer_cell = (f'<a href="{BASE}/{LANG}/auftraggeber/{e(hit[0])}/">{e(_ws(src.get("buyerName")))}</a>'
-                      if hit else e(src.get("buyerName")))
-        if src.get("_buyer_nn"):
-            # a name that was an e-mail address: 'Name nicht angegeben', linked only to the page of the publication's
-            # other name for the authority, when it has one (fix round 1)
-            alt = buyer_slugs.get(norm_buyer(src["_buyer_nn"])) if isinstance(src["_buyer_nn"], str) else None
-            buyer_cell = (f'<a href="{BASE}/{LANG}/auftraggeber/{e(alt[0])}/">{e(_.noname)}</a>' if alt
-                          else e(_.noname))
-        for label, val in [(_.buyer, buyer_cell if src.get("buyerName") or src.get("_buyer_nn") else ""),
-                           (_.place, e(src.get("city"))),
-                           (_.canton, canton_detail(src if is_tender else None, rows)),
-                           (_.type, e(_e("orderType", src.get("orderType")))),
-                           ("CPV", cpv if src.get("cpvCode") else ""),
-                           (_.treaty, e(_e("bool", src.get("stateContractArea"))))]:
+        # the authority is the rail's (23.10.2026): here the publication's own facts first, then the place and the kind
+        for label, val in meta + [(_.place, e(src.get("city"))),
+                                  (_.canton, canton_detail(src if is_tender else None, rows)),
+                                  (_.type, e(_e("orderType", src.get("orderType")))),
+                                  ("CPV", cpv if src.get("cpvCode") else ""),
+                                  (_.treaty, e(_e("bool", src.get("stateContractArea"))))]:
             if val:
                 # the label's look lives in the CSS (.kv th): a fixed 112 px let 'Staatsvertrags-
                 # bereich' and 'Contracting authority' run into the value (08.10.2026)
@@ -4968,13 +4946,13 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
                             else _m("buyer_joint_note", k=formato.count(k_joint)))
         # The eyebrow no longer names a canton: a federal office is not "Kanton TG" because
         # most of its awards are carried out there. The rail says what the canton is.
-        b = [f'<div class="title"><div><p class="eyebrow">{_.buyer}</p>{rec_h1(name)}'
-             f'<p class="sum">{lead}</p></div><dl class="rail">'
-             + (f"<dt>{_.main_canton}</dt><dd>{e(canton_name_or(cant, cant))}</dd>" if cant else "")
-             # one firm: its name, not "Impresa: 1" (which reads as a firm called 1)
-             + (f"<dt>{_.company}</dt><dd>{e(only_firm(rows, comp))}</dd></dl></div>" if nfirms == 1
-                else f"<dt>{lab_n(nfirms, 'companies')}</dt><dd>{formato.count(nfirms)}</dd></dl></div>"),
-             ]
+        # no eyebrow ('Auftraggeber': the breadcrumbs and the menu say it), a lead without the figures' numbers, and in the
+        # rail the canton and, for one firm, its name; the count of firms is the figures' (23.10.2026)
+        rail = ((f"<dt>{_.main_canton}</dt><dd>{e(canton_name_or(cant, cant))}</dd>" if cant else "")
+                # one firm: its name, not "Impresa: 1" (which reads as a firm called 1)
+                + (f"<dt>{_.company}</dt><dd>{e(only_firm(rows, comp))}</dd>" if nfirms == 1 else ""))
+        b = [f'<div class="title"><div>{rec_h1(name)}'
+             f'<p class="sum">{lead}</p></div>' + (f'<dl class="rail">{rail}</dl>' if rail else "") + "</div>"]
         # what it has open now, first: the reason most visitors come (audit 13.10.2026); with nothing
         # open, one sentence in the alert box
         now = sorted(open_by_buyer.get(key, []), key=lambda t: (t.get("offerDeadline") or "9999",
@@ -4991,15 +4969,17 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
         b += ['<div class="figures">',
               f'<div class="fig"><b>{formato.count(len(rows))}</b><span>{lab_n(len(rows), "awards")}</span></div>',
               f'<div class="fig"><b>{formato.count(nfirms)}</b><span>{lab_n(nfirms, "companies")}</span></div>',
-              sum_tile(rows), "</div>",
-              csv_download(rows, "auftraggeber", sl, _if("csv_buyer", name=name_cut(name, 60)))]
+              sum_tile(rows), "</div>"]
+        # the awards first, then the chart and the rankings (23.10.2026: the list a visitor comes for stood last, under
+        # the chart and the companies); the CSV link under the list
+        csv_link = csv_download(rows, "auftraggeber", sl, _if("csv_buyer", name=name_cut(name, 60)))
         bcsv = f"/daten/auftraggeber/{sl}.csv"
-        b.append(month_chart(rows, _i.mc_title_buyer, csv=bcsv, own_buyer=True))
         # a table cut to its first rows says so (fix round 1): 'die 40 mit den meisten Zuschlägen von 263'
         f_head = (e(_if("cut_firms", k=formato.count(40), n=formato.count(nfirms))) if nfirms > 40 else _.by_awards)
-        b.append(f'<div class="half"><div><div class="runhead"><h2>{_.companies}</h2>'
+        later = [month_chart(rows, _i.mc_title_buyer, csv=bcsv, own_buyer=True),
+                 f'<div class="half"><div><div class="runhead"><h2>{_.companies}</h2>'
                  f'<span>{f_head}</span></div>' + table + "</div><div>"
-                 + division_figure(rows, sect, sectors, csv=bcsv) + "</div></div>")
+                 + division_figure(rows, sect, sectors, csv=bcsv) + "</div></div>"]
         unit = pu
         cut = len(rows) > BUYER_SHOWN
         # the newest BUYER_SHOWN; the others from /daten/ab/<slug>.json in place (js/alle.js), or the CSV file
@@ -5034,7 +5014,10 @@ def build_buyers(awards: list, comp: dict, pages: dict, sectors: set[str],
                      f'download="{e(lingue.CSV_STEM[LANG])}-{e(sl)}.csv" data-alle="/daten/ab/{e(sl)}.json" '
                      f'data-t="{e(_if("show_all_n", n=formato.count(len(rows))))}">'
                      f'{e(_if("csv_all_n", n=formato.count(len(rows))))}</a></p>')
+        # (with JavaScript the link above becomes 'Alle N anzeigen': the file keeps its own link)
+        b.append(csv_link)
         b.append("</div>")
+        b += later
         write(f"/{LANG}/auftraggeber/{sl}/index.html",
               page(btitle[key],
                    desc_pick(_m("buyer_desc", name=name, n=zuschlag(len(rows)), f=firms(nfirms)),
@@ -5197,21 +5180,25 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str],
         fb_line = (f'<p class="sub m10">{e(_if("fb_share_one" if k_fb == 1 else "fb_share", k=formato.count(k_fb), n=zuschlag(len(rows)), p=formato.pct(100 * k_fb / len(rows)), name=name, of=of))}</p>'
                    if k_fb else "")
         cm = sorted({(a.get("publicationDate") or "")[:7] for a in rows if a.get("publicationDate")})
-        b = [f'<div class="title"><div><p class="eyebrow">{e(formato.period(cm[0], cm[-1]) if cm else _.canton)}</p>'
+        # 'Strictly necessary' (owner, 23.10.2026): no eyebrow (the period is in the lead), a lead without the figures'
+        # numbers, no rail ('Kürzel ZH' was decoration; the authorities' count is a figure now); the CSV link under the
+        # rankings
+        b = [f'<div class="title"><div>'
              f'<h1>{e(_m("canton_title", name=name, of=of))}</h1>'
              f'<p class="sum">' + e(_m("canton_lead_one" if len(rows) == 1 else "canton_lead",
-                                       n=zuschlag(len(rows)), f=firms(nfirms), name=name, of=of))
-             + "</p>" + fb_line + open_link + "</div>"
-             f'<dl class="rail"><dt>{_.abbr}</dt><dd class="mono">{e(code)}</dd>'
-             f'<dt>{lab_n(nbuyers, "buyers")}</dt><dd>{formato.count(nbuyers)}</dd></dl></div>',
+                                       n=zuschlag(len(rows)), f=firms(nfirms), name=name, of=of,
+                                       span=(f" ({formato.period(cm[0], cm[-1])})" if cm else "")))
+             + "</p>" + fb_line + open_link + "</div></div>",
              '<div class="figures">',
              f'<div class="fig"><b><data value="{len(rows)}" id="total">{formato.count(len(rows))}</data></b>'
              f'<span>{lab_n(len(rows), "awards")}</span></div>',
              f'<div class="fig"><b>{formato.count(nfirms)}</b><span>{lab_n(nfirms, "companies")}</span></div>',
+             f'<div class="fig"><b>{formato.count(nbuyers)}</b><span>{lab_n(nbuyers, "buyers")}</span></div>',
              sum_tile(rows), "</div>",
-             # the canton's awards as a file, and its new tenders by e-mail (14.10.2026)
-             csv_download(rows, "kanton", code, _if("csv_canton", name=name, of=of)),
+             # its new tenders by e-mail (14.10.2026)
              alert_box(code)]
+        # the canton's awards as a file (14.10.2026)
+        csv_link = csv_download(rows, "kanton", code, _if("csv_canton", name=name, of=of))
         ccsv = f"/daten/kanton/{code}.csv"
         b.append(month_chart(rows, _if("mc_title_canton", name=name, of=of), csv=ccsv))
         # the CANTON_FIRMS with the most awards, said so, and the others from /daten/kf/<canton>.json (js/alle.js)
@@ -5224,6 +5211,7 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str],
         b.append(f'<div class="half"><div><div class="runhead"><h2>{_.companies}</h2>'
                  f"<span>{f_head}</span></div>" + table.replace("<table ", f'<table data-u="{pu}" ', 1) + more
                  + "</div><div>" + division_figure(rows, sect, sectors, csv=ccsv, anchors=True, unit=pu) + "</div></div>")
+        b.append(csv_link)
         b.append(nav)
         write(f"/{LANG}/kanton/{code}/index.html",
               page(canton_title(_m("canton_title", name=name, of=of), _m("canton_suffix")),
@@ -5240,19 +5228,17 @@ def build_hubs(awards: list, comp: dict, pages: dict, sectors: set[str],
         table, nfirms = firm_table(rows, comp, pages)
         f_head = (e(_if("cut_firms", k=formato.count(60), n=formato.count(nfirms))) if nfirms > 60 else _.by_awards)
         cants = collections.Counter(a["canton"] for a in rows if a.get("canton"))
-        # a division's own general code (72000000) names its division: the pills that link here
-        # call it "Informatikdienstleistungen (allgemeiner Code)", the EU label reads otherwise
-        general = code[2:] == "000000" and code[:2] in lingue.CPV_SHORT[LANG]
-        eyebrow = (_if("sector_general", label=lingue.CPV_SHORT[LANG][code[:2]]) + f" · CPV {code}"
-                   if general else f"{_.sector} · CPV {code}")
-        # the label itself names the word ('Dienstleistungen im Bereich Rechnungslegung'): the code alone
-        if not general and fold(_.sector) in fold(label).split():
-            eyebrow = f"CPV {code}"
         # one canton: its name ("Kanton: 1" read as a canton called 1)
         rail_cant = (f'<dt>{_.canton}</dt><dd>{e(canton_name_or(next(iter(cants)), ""))}</dd>'
                      if len(cants) == 1 else
                      f'<dt>{lab_n(len(cants), "cantons")}</dt><dd>{formato.count(len(cants))}</dd>')
-        b = [f'<div class="title"><div><p class="eyebrow">{e(eyebrow)}</p>'
+        # the eyebrow only on a division's own general code (72000000), which carries its division's name: the pills that
+        # link here call it "Informatikdienstleistungen (allgemeiner Code)", and its EU label is the Branche page's H1.
+        # Elsewhere none since 23.10.2026: it said 'Kategorie · CPV 45233000', the rail gives the code.
+        general = code[2:] == "000000" and code[:2] in lingue.CPV_SHORT[LANG]
+        eyebrow = (f'<p class="eyebrow">{e(_if("sector_general", label=lingue.CPV_SHORT[LANG][code[:2]]))}</p>'
+                   if general else "")
+        b = [f'<div class="title"><div>{eyebrow}'
              f'<h1>{e(label)}</h1><p class="sum">'
              + e(_m("sector_lead", n=zuschlag(len(rows)), f=firms(nfirms))) + " "
              + sector_stats(rows, comp, pages, buyer_slugs, code[:2]) + "</p></div>"
@@ -5470,16 +5456,22 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
                    for k in sorted(_CPV) if re.fullmatch(r"\d{2}000000", k) and cpv_label(k, "")}}
     names_json = (json.dumps(names, ensure_ascii=False, sort_keys=True)
                   .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026"))
-    # Fix round 1 (20.10.2026): from 1000 px two columns, the selection on the left, the e-mail address, a summary
-    # of the selection, the preview and the button on the right ('Sie abonnieren: Zürich · Bauarbeiten'); a box that
-    # filters the 45 Branchen as one types; without JavaScript no selection at all (it would not reach Brevo, which
-    # would subscribe the reader to the whole country), and a note that says so; the e-mail field's error is
+    # Fix round 1 (20.10.2026): a summary of the selection beside the button ('Sie abonnieren: Zürich · Bauarbeiten'); a
+    # box that filters the 45 Branchen as one types; without JavaScript no selection at all (it would not reach Brevo,
+    # which would subscribe the reader to the whole country), and a note that says so; the e-mail field's error is
     # announced (role=alert).
-    form = (f'<div class="sec"><h2>{e(_m("abo_form_h2"))}</h2>'
-            f'<form id="abo" class="form two" method="post" action="{BREVO_FORM}" data-sending="{e(_m("abo_form_sending"))}" '
+    # 'Strictly necessary' (owner, 23.10.2026): the form shows what subscribing needs, in the order one fills it in,
+    # in one column: the address, the cantons, the sectors, then the selection in words, what it brings a week, the
+    # button and the consent in two short lines. No heading over it (the legends name each part), no eyebrow over the
+    # page's heading; the lead one line and a link; the RSS feeds behind a 'more' under the form.
+    form = (f'<div class="sec" id="formular">'
+            f'<form id="abo" class="form" method="post" action="{BREVO_FORM}" data-sending="{e(_m("abo_form_sending"))}" '
             f'data-ok="{e(_m("abo_form_ok"))}" data-err="{e(_m("abo_form_err", mail=mail))}">'
-            # fix round 3 (item 28): the selection first, then the address and the button, so Tab goes from the field to the
-            # button (it went back to the 26 canton pills); from 1000 px the grid still sets the address beside the selection
+            f'<div class="fe"><label class="f" for="abo-email">{e(_m("abo_form_email"))}</label>'
+            f'<input id="abo-email" type="email" name="EMAIL" required autocomplete="email" '
+            f'placeholder="{e(_m("abo_form_placeholder"))}" aria-describedby="abo-email-err">'
+            # the field's error, which js/abo.js fills and ties to it (aria-invalid; step 3b)
+            f'<p id="abo-email-err" class="ferr" role="alert" hidden></p></div>'
             # each group of pills is a fieldset: a screen reader names the group with every checkbox
             # in it (audit 13.10.2026)
             f'<div class="fsel"><fieldset><legend class="f">{e(_m("abo_form_cantons"))}</legend>'
@@ -5488,13 +5480,8 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
             f'<label class="bq"><span>{e(_m("abo_bfilter"))}</span><input id="abo-bq" type="search" autocomplete="off" '
             f'spellcheck="false" placeholder="{e(_m("abo_bfilter_ph"))}"></label>'
             f'<p class="bqn" role="status" hidden></p>{sect_groups}</fieldset></div>'
-            f'<div class="fe"><label class="f" for="abo-email">{e(_m("abo_form_email"))}</label>'
-            f'<input id="abo-email" type="email" name="EMAIL" required autocomplete="email" '
-            f'placeholder="{e(_m("abo_form_placeholder"))}" aria-describedby="abo-email-err">'
-            # the field's error, which js/abo.js fills and ties to it (aria-invalid; step 3b)
-            f'<p id="abo-email-err" class="ferr" role="alert" hidden></p></div>'
-            f'<div class="fside"><p class="pv" role="status" aria-live="polite"></p>'
-            f'<p class="sumry" aria-live="polite"></p>'
+            f'<div class="fside"><p class="sumry" aria-live="polite"></p>'
+            f'<p class="pv" role="status" aria-live="polite"></p>'
             # the pills reach KANTON/BRANCHE only through the script; without it both stay ALLE
             f'<noscript><p class="sub m14">{e(_m("abo_form_nojs"))}</p></noscript>'
             f'<input type="hidden" name="KANTON" value="ALLE"><input type="hidden" name="BRANCHE" value="ALLE">'
@@ -5505,20 +5492,20 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
             f'<p class="sub">{e(_m("abo_form_consent"))} <a href="{BASE}/{LANG}/datenschutz/">{e(_.privacy)}</a></p></div>'
             f'</form><script type="application/json" id="abo-names">{names_json}</script></div>')
     # no 'Ohne Formular: per E-Mail' any more (step 3a): nobody processes those e-mails
-    b = [f'<div class="title"><div><p class="eyebrow">{e(_m("abo_eyebrow"))}</p><h1>{e(_m("abo_h1"))}</h1>'
-         f'<p class="sum">{e(_m("abo_lead"))}</p></div></div>',
+    b = [f'<div class="title"><div><h1>{e(_m("abo_h1"))}</h1>'
+         f'<p class="sum">{e(_m("abo_lead"))} <a href="{BASE}/{LANG}/ueber/#daten">{e(_.nav_about)}</a></p></div></div>',
          form,
-         f'<div class="sec"><h2>{e(_m("abo_rss_h2"))}</h2><p>{e(_m("abo_rss_text"))}</p>'
+         f'<details class="more feeds"><summary>{e(_m("abo_rss_h2"))}</summary><p>{e(_m("abo_rss_text"))}</p>'
          f'<p><a class="tag" href="{ORIGIN}/{LANG}/ausschreibungen/feed.xml">{e(_m("abo_rss_all"))}</a></p>'
-         f'<h3>{e(_m("abo_by_canton"))}</h3><div class="tags">'
+         f'<h2>{e(_m("abo_by_canton"))}</h2><div class="tags">'
          # all 26: every canton keeps its list and its feed, with or without open tenders (14.10.2026)
          + "".join(f'<a class="tag" href="{ORIGIN}/{LANG}/ausschreibungen/{e(c)}/feed.xml">{e(canton_name_or(c, c))}</a>'
                    for c in sorted(CANTONS, key=lambda c: fold(canton_name_or(c, c))))
-         + f'</div><h3>{e(_m("abo_by_sector"))}</h3><div class="tags">'
+         + f'</div><h2>{e(_m("abo_by_sector"))}</h2><div class="tags">'
          + "".join(f'<a class="tag" href="{ORIGIN}/{LANG}/ausschreibungen/bereich/{e(c)}/feed.xml">'
                    f'{e(pill(c))}</a>'
                    for c, r in top_sect)
-         + "</div></div>"]
+         + "</div></details>"]
     # the title without the site's name in every language (fix round 2: it fitted in IT and EN only, so two of the four
     # carried it)
     write(f"/{LANG}/ausschreibungen/abo/index.html", page(
@@ -5527,8 +5514,9 @@ def build_abo(by_cant: dict, by_sect: dict, sect_name) -> None:
         head_extra=J_HEAD + feed_head(f"/{LANG}/ausschreibungen/feed.xml", _m("feed_all")), scripts=("abo",)))
 
 
-def canton_list(by_cant: dict) -> str:
-    """Open tenders per canton: all 26 by name, with the count and a bar, sorted by count.
+def canton_list(by_cant: dict, lede: bool = True) -> str:
+    """Open tenders per canton: all 26 by name, with the count and a bar, sorted by count. lede: the line on how to
+    use it (off on the hub since 23.10.2026: a list of links says it itself).
 
     It replaces a heat grid whose legend said only "few … many", which hid the counts on
     phones and left Appenzell Innerrhoden out whenever it had nothing open. A canton with
@@ -5541,7 +5529,7 @@ def canton_list(by_cant: dict) -> str:
     multi = any(len(t.get("_cants") or []) > 1 for rows in by_cant.values() for t in rows)
     # each count recounted by /stand.js from the reader's clock (data-oc, fix round 1)
     return grafici.rank_list(items, fig_id="open-cantons-list", labelledby="open-cantons",
-                             lede=_m("open_canton_lede", date=formato.date(DATA_DATE)), two_cols=True,
+                             lede=_m("open_canton_lede", date=formato.date(DATA_DATE)) if lede else "", two_cols=True,
                              note=_i.multi_note if multi else "", src=chart_src("/daten/offen-kantone.csv"),
                              vattrs=[f' data-oc="k:{c}"' for c in order])
 
@@ -5557,12 +5545,13 @@ def simap_compare() -> str:
         f'<tr><th scope="row">{e(_m(k))}</th>'
         f'<td class="c{" y" if a == yes else ""}">{e(a)}</td>'
         f'<td class="c{" y" if b == yes else ""}">{e(b)}</td></tr>' for k, a, b in rows)
-    return (f'<div class="sec"><h2>{e(_m("cmp_h2"))}</h2>'
+    # behind a 'more' since 23.10.2026: an explanation, not the page's business
+    return (f'<details class="more"><summary>{e(_m("cmp_h2"))}</summary>'
             f'<p class="sub" style="max-width:66ch;margin:10px 0 0">{e(_m("cmp_lead"))}</p>'
             f'<div class="glass"><div class="scroll"><table class="cmp">{cap(_m("cmp_h2"))}'
             f'<thead><tr><td></td><th class="c" style="text-align:center">simap.ch</th>'
             f'<th class="c us" style="text-align:center">{e(_m("cmp_us"))}</th></tr></thead>'
-            f"<tbody>{body}</tbody></table></div></div></div>")
+            f"<tbody>{body}</tbody></table></div></div></details>")
 
 
 def open_sector_title(name: str, k: int) -> str:
@@ -5720,9 +5709,9 @@ def write_all_list(rows: list, path: str, name: str, scope: str, mid: list, aler
     Titled '{name} – vollständige Liste', its last breadcrumb 'Vollständige Liste' (fix round 1)."""
     key = "k:" + scope[2:] if scope.startswith("k:") else "b:" + scope[2:]
     h1 = _m("all_list_title", h=name)
-    b = [f'<div class="title lst"><div><p class="eyebrow">{e(_m("list_eyebrow"))}</p><h1{lst_h1(h1)}>{e(h1)}</h1>'
-         f'<p class="sum">{oc_text(_m("all_list_lead", n=NUL), len(rows), key)}</p></div>'
-         f'<dl class="rail"><dt>{_.as_of}</dt><dd>{tt(DATA_DATE, formato.date(DATA_DATE))}</dd></dl></div>',
+    # (no eyebrow, no rail: 23.10.2026)
+    b = [f'<div class="title lst"><div><h1{lst_h1(h1)}>{e(h1)}</h1>'
+         f'<p class="sum">{oc_text(_m("all_list_lead", n=NUL), len(rows), key)}</p></div></div>',
          f'<div class="sec" id="fristen" data-liste="{scope}" data-n="{len(rows)}">' + flt_bar(scope)
          + tender_table(rows, alert) + "</div>",
          f'<div class="ab-out">{alert}</div>',
@@ -5770,19 +5759,18 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict, award_cants: s
                           # under it left 16 unexplained
                           for c, r in sorted(by_sect.items(), key=lambda kv: (-len(kv[1]), kv[0])))
                 + "</div>")
-    nxt = next(iter(sorted(t.get("offerDeadline") for t in opens if t.get("offerDeadline"))), "")
-    today = tt(DATA_DATE, formato.date(DATA_DATE))
 
     # The hub (fix round 1): the list first — its filter, the nearest deadlines, the alert after ten rows on a
     # phone — and only then the figures, the ways in by canton and by industry, and the explanations. Every count
     # of open tenders is recounted from the reader's clock by /stand.js (oc_span).
     hub_rows = sorted(opens, key=lambda x: (x.get("offerDeadline") or "9999", str(x.get("projectId") or "")))[:SHOWN]
     abx = alert_box(feed=f"/{LANG}/ausschreibungen/feed.xml")
-    b = [f'<div class="title lst"><div><p class="eyebrow">{e(_m("list_eyebrow"))}</p>'
-         f"<h1>{e(_p.open_tenders_h1)}</h1>"
-         f'<p class="sum">' + oc_text(_m("open_lead_short", n="\x00"), len(opens), "*") + "</p></div>"
-         f'<dl class="rail"><dt>{_.as_of}</dt><dd>{today}</dd>'
-         f"<dt>{lab_n(len(by_cant), 'cantons')}</dt><dd>{oc_span(len(by_cant), 'nk')}</dd></dl></div>",
+    # 'Strictly necessary' (owner, 23.10.2026): the heading and the list. No eyebrow ('Nächste Frist zuerst', which the
+    # filter's order says), no lead (the filter's count line gives the number), no rail (the date is the footer's,
+    # '26 Kantone' was decoration); under the list no row of figures that repeated the count, and the explanations
+    # behind a 'more' (<details>), in the page for whoever wants them
+    b = [f'<div class="title lst"><div>'
+         f"<h1>{e(_p.open_tenders_h1)}</h1></div></div>",
          f'<div class="sec" id="fristen" data-liste="" data-n="{len(opens)}"><h2 class="sr">{e(_m("open_table_h2"))}</h2>'
          + flt_bar("")
          + (f'<p class="sub m10 fn">'
@@ -5794,20 +5782,10 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict, award_cants: s
          + (f'<p class="sub m10">{e(_if("nodl_note", n=formato.count(NO_DEADLINE[0])))}</p>' if NO_DEADLINE[0] else "")
          + "</div>",
          f'<div class="ab-out">{abx}</div>',
-         f'<div class="figures">'
-         f'<a class="fig money" href="#fristen"><b class="num" data-oc="*">{formato.count(len(opens))}</b>'
-         f'<span>{e(_m("open_kpi_open"))}</span></a>'
-         f'<a class="fig" href="#open-cantons"><b class="num" data-oc="nk">{formato.count(len(by_cant))}</b>'
-         f'<span>{e(_m("open_kpi_cantons"))}</span></a>'
-         f'<a class="fig" href="#branchen"><b class="num" data-oc="nb">{formato.count(len(by_sect))}</b>'
-         f'<span>{e(_m("open_kpi_sectors"))}</span></a>'
-         # .date: the date stays on one line ('08.10.20|26' on phones, 08.10.2026)
-         f'<a class="fig date" href="#fristen"><b class="num">{tt(nxt, formato.date(nxt))}</b>'
-         f'<span>{e(_m("open_kpi_next"))}</span></a></div>',
-         f'<div class="sec"><h2 id="open-cantons">{e(_m("open_by_canton_h2"))}</h2>' + canton_list(by_cant) + "</div>",
+         f'<div class="sec"><h2 id="open-cantons">{e(_m("open_by_canton_h2"))}</h2>' + canton_list(by_cant, lede=False) + "</div>",
          f'<div class="sec"><h2 id="branchen">{e(_m("open_by_sector_h2"))}</h2>' + sect_nav + "</div>",
-         f'<div class="sec"><h2>{e(_m("open_howto_h2"))}</h2>'
-         f'<p>{oc_text(_m("open_lead", n=NUL), len(opens), "*")}</p><p>{e(_m("open_howto"))}</p></div>',
+         f'<details class="more"><summary>{e(_m("open_howto_h2"))}</summary>'
+         f'<div class="prose"><p>{oc_text(_m("open_lead", n=NUL), len(opens), "*")}</p><p>{e(_m("open_howto"))}</p></div></details>',
          simap_compare()]
     write(f"/{LANG}/ausschreibungen/index.html", page(
         _m("open_title", n=formato.count(len(opens))), _m("open_desc", n=formato.count(len(opens))),
@@ -5841,13 +5819,10 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict, award_cants: s
             desc = _m("empty_sector", name=name)
         fp = f"/{LANG}/ausschreibungen/bereich/{code2}/feed.xml"
         path = f"/{LANG}/ausschreibungen/bereich/{code2}/"
-        # a short lead: the page's description was written for search engines (five lines on a phone)
-        b = [f'<div class="title lst"><div><p class="eyebrow">{e(_m("list_eyebrow"))}</p>'
-             f'<h1{lst_h1(h_html)}>{h_html}</h1>'
-             + (f'<p class="sum">' + oc_text(_m("list_lead_div", n=open_n_oc(len(rows)), name=name), len(rows), key)
-                + "</p>" if rows else "") + "</div>"
-             f'<dl class="rail"><dt>{_.as_of}</dt><dd>{today}</dd>'
-             f'<dt>CPV</dt><dd class="mono">{e(code2)}</dd></dl></div>']
+        # the heading and the list (23.10.2026): no eyebrow, no lead repeating the heading and the filter's count, no
+        # rail (the date is the footer's, the division's code the sector index's)
+        b = [f'<div class="title lst"><div>'
+             f'<h1{lst_h1(h_html)}>{h_html}</h1></div></div>']
         if rows:
             abx = alert_box("", code2, feed=fp)
             b += [list_section(rows, key, path, abx), f'<div class="ab-out">{abx}</div>']
@@ -5878,13 +5853,10 @@ def build_open(opens: list, sectors: set[str], buyer_slugs: dict, award_cants: s
                    n=open_n(len(rows)), name=name, of=of))
         fp = f"/{LANG}/ausschreibungen/{code}/feed.xml"
         path = f"/{LANG}/ausschreibungen/{code}/"
-        b = [f'<div class="title lst"><div><p class="eyebrow">{e(_m("list_eyebrow"))}</p>'
+        # the heading and the list (23.10.2026; see the Branche lists above)
+        b = [f'<div class="title lst"><div>'
              f'<h1{lst_h1(_m("open_canton_h1", name=name, of=of))}>{e(_m("open_canton_h1", name=name, of=of))}</h1>'
-             + (f'<p class="sum">'
-                + oc_text(_m("list_lead_canton", n=open_n_oc(len(rows)), name=name, of=of), len(rows), key)
-                + "</p>" if rows else "") + "</div>"
-             f'<dl class="rail"><dt>{_.as_of}</dt><dd>{today}</dd>'
-             f'<dt>{_.canton}</dt><dd>{e(name)}</dd></dl></div>']
+             '</div></div>']
         if rows:
             abx = alert_box(code, feed=fp)
             b += [list_section(rows, key, path, abx), f'<div class="ab-out">{abx}</div>']
@@ -5987,7 +5959,7 @@ def build_divisions(awards: list, opens: list, comp: dict, pages: dict, sectors:
         rows_html.append(f'<tr><td><a href="{BASE}/{LANG}/branche/{d}/">{e(div_name(d))}</a></td>'
                          f'<td class="mono">{d}</td><td class="r num">{open_cell}</td>'
                          f'<td class="r num">{formato.count(k_aw)}</td></tr>')
-    b = [f'<div class="title"><div><p class="eyebrow">{e(_.divisions)}</p><h1>{e(_i.div_index_h1)}</h1>'
+    b = [f'<div class="title"><div><h1>{e(_i.div_index_h1)}</h1>'
          f'<p class="sum">{e(_if("div_index_lead", n=n_all))}</p></div>'
          f'<dl class="rail"><dt>{_.entries}</dt><dd class="num">{formato.count(n_all)}</dd></dl></div>',
          # a card per Branche on a phone (table.ls.dv, fix round 1: four columns at 390 px broke 47 words)
@@ -6012,12 +5984,12 @@ def build_divisions(awards: list, opens: list, comp: dict, pages: dict, sectors:
         once = sum(1 for k in fk.values() if k == 1)
         why = (" " + _if("div_once", k=formato.count(once), f=formato.count(nfirms))
                if rows and nfirms >= 10 and once * 2 > nfirms else "")
-        b = [f'<div class="title"><div><p class="eyebrow">{e(_.division)} · CPV {d}</p><h1>{e(name)}</h1>'
+        # no eyebrow (the code is the rail's), a lead without the figures' numbers, no count of cantons in the rail (the
+        # chart by canton below lists them; 23.10.2026)
+        b = [f'<div class="title"><div><h1>{e(name)}</h1>'
              + (f'<p class="sum">{e(_m("div_lead", n=zuschlag(len(rows)), f=firms(nfirms), name=name) + why)}</p>'
                 if rows else f'<p class="sum">{e(_i.div_none)}</p>')
-             + f'</div><dl class="rail"><dt>CPV</dt><dd class="mono">{d}</dd>'
-             f'<dt>{lab_n(len([c for c in cants if c]), "cantons")}</dt>'
-             f'<dd>{formato.count(len([c for c in cants if c]))}</dd></dl></div>']
+             + f'</div><dl class="rail"><dt>CPV</dt><dd class="mono">{d}</dd></dl></div>']
         if rows:
             b += ['<div class="figures">',
                   f'<div class="fig"><b>{formato.count(len(rows))}</b><span>{lab_n(len(rows), "awards")}</span></div>',
@@ -6125,8 +6097,9 @@ def build_index(path: str, kicker: str, h1: str, lead: str, items: list,
     def row(sl, name, n):
         return (f'<li><div class="row"><a href="{BASE}/{LANG}{path}{e(sl)}/">{e(name)}</a>'
                 f'<span class="sub num">{zuschlag(n)}</span></div></li>')
-    eyebrow = _m("az_eyebrow") if split else kicker
-    head = (f'<div class="title"><div><p class="eyebrow">{e(eyebrow)}</p><h1>{e(h1)}</h1>'
+    # no eyebrow since 23.10.2026 ('Verzeichnis A–Z', 'Kantone' over 'Öffentliche Aufträge nach Kanton': the menu and
+    # the breadcrumbs name the section)
+    head = (f'<div class="title"><div><h1>{e(h1)}</h1>'
             f'<p class="sum">{e(lead)}</p></div>'
             f'<dl class="rail"><dt>{_.entries}</dt><dd class="num">{formato.count(len(items))}</dd></dl></div>')
     if split:
@@ -6150,7 +6123,7 @@ def build_index(path: str, kicker: str, h1: str, lead: str, items: list,
             if i + 1 < len(letters):
                 pn.append(f'<a class="tag" href="{BASE}/{LANG}{path}{slugs[letters[i + 1]]}/" rel="next">'
                           f'{e(_m("letter_next"))}{lingue.COLON[LANG]} {e(az_label(letters[i + 1]))}<span aria-hidden="true"> →</span></a>')
-            body = [f'<div class="title"><div><p class="eyebrow">{e(eyebrow)}</p>'
+            body = [f'<div class="title"><div>'
                     f'<h1>{e(_m("letter_" + split + "_h1", l=gl) if g != "#" else _m("letter_" + split + "_h1_other"))}</h1></div>'
                     f'<dl class="rail"><dt>{_.entries}</dt><dd class="num">{formato.count(len(rows))}</dd></dl></div>',
                     f'<nav aria-label="{e(_m("az_" + split))}">{az_grid(path, letters, groups, slugs, g)}</nav>',
@@ -6192,14 +6165,16 @@ def finder(n_all: int, n_pages: int, cls: str = "", az: bool = True, kind: str =
     """The company finder (step 3b, 15.10.2026; the home's door 'Unternehmen finden' was a link to the A–Z):
     the search, limited to companies (t=u), with the header's engine. Without JavaScript it opens the
     search page, whose A–Z directories lead to every company. kind 'b': the authorities' finder, on their index
-    (fix round 1)."""
+    (fix round 1). az: the home's door, under the field the way to the A–Z alone (23.10.2026: the counts under it
+    were the key figures' a second time)."""
     sfx = "" if kind == "u" else "_b"
+    sub = (f'<span class="dsub"><a href="{BASE}/{LANG}/unternehmen/">{e(_i.all_companies)}</a></span>' if az else
+           f'<span class="dsub" id="finder-sub">{e(_m("finder_sub" + sfx, n=formato.count(n_all), k=formato.count(n_pages)))}</span>')
     return (f'<form class="finder{" " + cls if cls else ""}" role="search" action="{BASE}/{LANG}/suche/">'
             f'<label class="dh" for="finder">{e(_m("door_companies_h" if kind == "u" else "door_buyers_h"))}</label>'
-            f'<div class="row2"><input id="finder" name="q" placeholder="{e(_m("finder_ph" + sfx))}" aria-describedby="finder-sub">'
-            f'<input type="hidden" name="t" value="{kind}"><button>{e(_.search_go)}</button></div>'
-            f'<span class="dsub" id="finder-sub">{e(_m("finder_sub" + sfx, n=formato.count(n_all), k=formato.count(n_pages)))}'
-            + (f' <a href="{BASE}/{LANG}/unternehmen/">{e(_m("finder_az"))}</a>' if az else "") + "</span></form>")
+            f'<div class="row2"><input id="finder" name="q" placeholder="{e(_m("finder_ph" + sfx))}"'
+            + ("" if az else ' aria-describedby="finder-sub"') + '>'
+            f'<input type="hidden" name="t" value="{kind}"><button>{e(_.search_go)}</button></div>{sub}</form>')
 
 
 def build_search_page() -> None:
@@ -6220,11 +6195,13 @@ def build_search_page() -> None:
          # directories below jumped down when the results arrived, CLS 0.21-0.44)
          '<div id="treffer"></div><script>if(/[?&]q=[^&]/.test(location.search))'
          'document.getElementById("treffer").className="wait"</script>',
-         f'<div class="sec search-dirs" id="verzeichnisse"><h2 class="pr30">{e(_m("search_dirs"))}</h2>'
-         f'<noscript><p>{e(_m("search_nojs"))}</p></noscript>'
-         f'<h3>{e(_m("az_companies"))}</h3>{grid("/unternehmen/")}'
-         f'<h3>{e(_m("az_buyers"))}</h3>{grid("/auftraggeber/")}'
-         '<ul class="plain mt10">' + "".join(f'<li><a href="{BASE}{h}">{e(t)}</a></li>' for h, t in links) + "</ul></div>"]
+         # the directories behind a 'more' (23.10.2026: 54 letter buttons under the field drew the eye from it); without
+         # JavaScript the note says they are the way, and they open with a click
+         f'<noscript><p class="m18">{e(_m("search_nojs"))}</p></noscript>'
+         f'<details class="more search-dirs" id="verzeichnisse"><summary>{e(_m("search_dirs"))}</summary>'
+         f'<h2>{e(_m("az_companies"))}</h2>{grid("/unternehmen/")}'
+         f'<h2>{e(_m("az_buyers"))}</h2>{grid("/auftraggeber/")}'
+         '<ul class="plain mt10">' + "".join(f'<li><a href="{BASE}{h}">{e(t)}</a></li>' for h, t in links) + "</ul></details>"]
     write(f"/{LANG}/suche/index.html", page(
         first_fit(f"{_m('search_title')}\u00a0– {_.site}", _m("search_title")), _m("search_desc"), "\n".join(b),
         f"/{LANG}/suche/", leaf=_.search, robots="noindex", scripts=("suche",)))
@@ -6271,8 +6248,11 @@ def home_map(opens: list) -> str:
              "total": len(opens)}
         data = ('<script type="application/json" id="karte">'
                 + json.dumps(d, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c") + "</script>")
+    # no '01 · Karte · aktualisiert am …' eyebrow, no 'Oder wählen Sie den Kanton in der Liste' beside the list itself,
+    # no date under the read-out's count (one date a page: the hero's; 23.10.2026). The read-out's line under the count
+    # stays, empty until a canton is pointed at (js/home.js writes its share there)
     return (f'<section class="band mapsec pin" aria-labelledby="open-cantons"><div class="stage"><div class="in">'
-            f'<header class="sh"><p class="eyebrow">{e(_m("map_eyebrow", d=formato.date(DATA_DATE)))}</p>'
+            f'<header class="sh">'
             f'<h2 id="open-cantons" data-split>{e(_m("open_by_canton_h2"))}<span class="dot" aria-hidden="true">.</span></h2>'
             f'<p class="lede"><span class="hf">{e(_m("open_canton_lede", date=formato.date(DATA_DATE)))}</span>'
             f'<span class="hc">{e(_m("open_canton_lede_tap"))}</span></p></header>'
@@ -6281,17 +6261,18 @@ def home_map(opens: list) -> str:
             # the legend's scale, from none to the canton with the most (fix round 1)
             f'<p class="maplegend"><span class="sc"><b>0</b><span class="ramp" aria-hidden="true"></span>'
             f'<b data-oc="mx">{formato.count(max(oc.values(), default=0))}</b></span><span>{e(_m("map_legend"))}</span>'
-            f'<span>{e(_m("map_hint"))}</span></p><p class="mapsrc">{e(_m("map_src"))}</p></div>'
+            f'</p><p class="mapsrc">{e(_m("map_src"))}</p></div>'
             f'<div class="ro"><p class="rk">{e(_m("map_ch"))}</p><b class="nm">{e(_m("map_all"))}</b>'
             f'<p class="vl"><b data-oc="*">{formato.count(len(opens))}</b><span>{e(noun[0 if len(opens) == 1 else 1])}</span></p>'
-            f'<p class="cum">{e(_m("stand", d=formato.date(DATA_DATE)))}</p><div class="bar" aria-hidden="true"><i></i></div>'
+            '<p class="cum"> </p><div class="bar" aria-hidden="true"><i></i></div>'
             f'<p class="go"><a href="{BASE}/{LANG}/ausschreibungen/">{e(lingue.i("all_open", LANG))}</a></p>'
             f'<ol class="kl" aria-label="{e(_m("map_list"))}">{kl}</ol></div></div></div></div>{data}</section>')
 
 
 def home_sky(awards: list) -> str:
     """The hero's brass pillars: the awards per month, the incomplete months hatched, the busiest complete
-    month brightest and named (decoration: the chart of section 02 says the same in full)."""
+    month brightest. Decoration only since 23.10.2026: its label ('1'108 · Sept. 2026 · die meisten Aufträge') was a
+    number beside the H1 that the chart further down states in full."""
     ser = sorted(per_month(awards, until=CUR_MONTH).items())
     if not ser:
         return ""
@@ -6301,9 +6282,7 @@ def home_sky(awards: list) -> str:
     out = []
     for k, v in ser:
         cls = "p" if k in part else ("pk" if peaks and k == peaks[0] else "")
-        lab = (f'<span class="pkl"><b>{formato.count(v)}</b>{e(_m("sky_peak", m=formato.month(k)))}</span>'
-               if peaks and k == peaks[0] else "")
-        out.append(f'<i{f" class={chr(34)}{cls}{chr(34)}" if cls else ""} style="--h:{100 * v / top:.1f}%">{lab}</i>')
+        out.append(f'<i{f" class={chr(34)}{cls}{chr(34)}" if cls else ""} style="--h:{100 * v / top:.1f}%"></i>')
     return "".join(out)
 
 
@@ -6331,35 +6310,43 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
     abo = f"{BASE}/{LANG}/ausschreibungen/abo/"
     dot = '<span class="dot" aria-hidden="true">.</span>'
 
-    # the hero: the question (its last sign in brass), who the site is for, the alert; the pillars; the doors
+    # the hero: the question (its last sign in brass), what the register is, the alert; the pillars; the doors.
+    # 'Strictly necessary' (owner, 23.10.2026): one line of trust over the question (the source and the one date of
+    # the page), one line of lead under it; no 'who it is for' line, no outlined total behind the question, no label on
+    # the pillars, no door labels repeating the doors' headings, no 'Quelle simap.ch' corner.
     tag = _p.tagline
     h1 = (e(tag[:-1]) + f'<span class="dot">{e(tag[-1])}</span>') if tag[-1:] in ("?", ".") else e(tag)
+    trust = e(_m("home_source", d=formato.date(DATA_DATE)))
+    trust = lingue.it_dates(trust) if LANG == "it" else trust
+    # on a phone the line breaks at its dot, never inside 'aktualisiert am 23.10.2026'; one flex item in the eyebrow
+    src_, _dot, upd_ = trust.partition(" · ")
+    trust = f'<span>{src_} · <span class="nw">{upd_}</span></span>' if upd_ else trust
     # the door of the open tenders (fix round 1): the count is the link and covers the door; 'N neue' links to the
     # list's 'Neu' filter
-    door1 = (f'<div class="door d1"><span class="k" aria-hidden="true">{e(_.nav_tenders)}</span>'
+    door1 = (f'<div class="door d1">'
              f'<a class="big" href="{BASE}/{LANG}/ausschreibungen/"><b data-oc="*">{formato.count(len(opens))}</b> '
              f'<span class="lbl">{e(noun)}</span></a>'
              + (f'<a class="dnew" href="{BASE}/{LANG}/ausschreibungen/?neu=1#fristen" rel="nofollow" data-day="{day}" '
                 f'data-n="{fresh_n}">{e(new_txt)}</a>' if new_txt else "")
              + f'<span class="sub">{e(_m("door_open_sub"))}</span>{ARROW}</div>')
     # 'Unternehmen finden' is the company finder since step 3b: the search, limited to companies
-    door2 = finder(len(winners_all), len(pages), "door d2").replace(
-        ">", f'><span class="k" aria-hidden="true">{e(_.search)}</span>', 1)
+    door2 = finder(len(winners_all), len(pages), "door d2")
     b = [f'<section class="band hero" data-rest=".72,.36" aria-labelledby="h1"><div class="recede">'
-         f'<div class="bg" aria-hidden="true"><div class="vign"></div><div class="ghost" data-depth=".22">{formato.count(len(awards))}</div></div>'
+         f'<div class="bg" aria-hidden="true"><div class="vign"></div></div>'
          '<div class="glow" aria-hidden="true"></div><div class="in hero-in"><div class="copy">'
-         f'<p class="eyebrow">{e(_m("home_eyebrow", span=span, d=formato.date(DATA_DATE)))}</p>'
-         f'<h1 id="h1">{h1}</h1><p class="aud">{e(_m("audience"))}</p><p class="lead">{e(_p.lead)}</p>'
+         f'<p class="eyebrow">{trust}</p>'
+         f'<h1 id="h1">{h1}</h1><p class="lead">{e(_p.lead)}</p>'
          # one flex item for the words (the button is a flex box: a bare text and a span would be two)
          f'<p class="ctas"><a class="btn" href="{abo}"><span>{nobreak_mail(e(_m("abo_cta")))}</span>{ARROW}</a></p></div>'
          f'<div class="sky" data-depth=".55" aria-hidden="true">{home_sky(awards)}</div>'
          # the horizon moves with the pillars it underlines (fix round 2: .85 against their .55 drifted 3-5 px apart)
          f'<div class="doors"><span class="horizon" data-depth=".55" aria-hidden="true"></span>{door1}{door2}'
-         f'<p class="hmeta">{e(_.source)}<br><b>simap.ch</b></p></div></div></div><div class="shade"></div></section>']
+         f'</div></div></div><div class="shade"></div></section>']
     b.append(home_map(opens))
 
     # the key figures; the tiles that have a page behind them lead there (the companies tile says how many of
-    # them have a page, the number the finder and the index give)
+    # them have a page, the number the finder and the index give). The open tenders' tile and the rail (source,
+    # period, date) went on 23.10.2026: the hero's door, its line and the map say them already.
     nfirms = len(winners_all)
     firms_lab = (_m("home_firms_tile", k=formato.count(len(pages))) if nfirms != 1 else _m("home_firms_tile_one"))
     b.append(f'<section class="band stats" aria-label="{e(_m("key_figures"))}"><div class="in"><div class="figures">'
@@ -6367,22 +6354,16 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
              f'<span>{lab_n(len(awards), "awards")}</span></div>'
              f'<a class="fig" href="{BASE}/{LANG}/unternehmen/" data-up style="--d:.08s"><b>{formato.count(nfirms)}</b>'
              f'<span>{e(firms_lab)}</span></a>'
-             + sum_tile(awards)
-             + f'<a class="fig" href="{BASE}/{LANG}/ausschreibungen/" data-up style="--d:.24s"><b data-oc="*">{formato.count(len(opens))}</b>'
-             f'<span>{e(_m("open_kpi_open"))}</span></a></div>'
-             f'<dl class="rail"><div><dt>{_.source}</dt><dd>{e(_p.source_note)}</dd></div>'
-             + (f"<div><dt>{_.period}</dt><dd>{e(span)}</dd></div>" if span else "")
-             + f"<div><dt>{_.updated}</dt><dd>{tt(DATA_DATE, formato.date(DATA_DATE))}</dd></div></dl></div></section>")
+             + sum_tile(awards) + '</div></div></section>')
 
-    # 02 · the awards per month: the chart as everywhere, its panel set apart under the heading
+    # the awards per month: the chart as everywhere, its panel set apart under the heading (no '02 ·' eyebrow)
     fig = month_chart(awards, _i.mc_title_home, csv="/daten/monate.csv")
     if '<p class="unit"' in fig:
         fig = (fig.replace('<h2 id="chart-months">', '<h2 id="chart-months" data-split>', 1)
                   .replace("</h2>", f"{dot}</h2>", 1)
                   .replace('<div class="mch">', '<div class="mcp" data-up><div class="mch">', 1)
                   .replace("</figure>", "</div></figure>", 1))
-    b.append(f'<section class="band hsec" id="monate" aria-labelledby="chart-months"><div class="in">'
-             f'<p class="eyebrow">{e(_m("sec_awards"))}</p>{fig}</div></section>')
+    b.append(f'<section class="band hsec" id="monate" aria-labelledby="chart-months"><div class="in">{fig}</div></section>')
 
     # 03 · the companies with the most awards (no canton column since step 3a: it read as the firm's seat),
     # beside the next deadlines
@@ -6414,13 +6395,14 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
             dl.append(f'<li data-deadline="{e(dln)}"{more}><div class="row"><a href="{BASE}/{LANG}/auftrag/{e(t0.get("projectId"))}/"{la(t0)}>'
                       f'{e(text)}</a><span class="when{cls}">{when}</span></div></li>')
         dl.append("</ul>")
+    # (no '03 ·' eyebrow, no count of open tenders a fourth time beside the next deadlines; 23.10.2026)
     b.append(f'<section class="band hsec" id="unternehmen" aria-labelledby="h-top"><div class="in">'
-             f'<header class="sh"><p class="eyebrow">{e(_m("sec_companies"))}</p>'
+             f'<header class="sh">'
              f'<h2 id="h-top" data-split>{e(_i.firms_cap)}{dot}</h2><p class="aside">{e(span)}</p></header>'
              f'<div class="two"><div data-up>{"".join(t)}'
              f'<a class="more" href="{BASE}/{LANG}/unternehmen/">{e(_i.all_companies)}{ARROW}</a></div>'
              f'<aside class="aside-col" aria-labelledby="h-dl" data-up style="--d:.1s"><div class="sub-h"><h3 id="h-dl">{e(_i.next_deadlines)}</h3>'
-             f'<span>{oc_text(_if("open_count", n=NUL), len(opens), "*")}</span></div>{"".join(dl)}'
+             f'</div>{"".join(dl)}'
              f'<a class="more" href="{BASE}/{LANG}/ausschreibungen/">{e(lingue.i("all_open", LANG))}{ARROW}</a></aside></div></div></section>')
 
     # 04 · the awards by Branche (division), each linking to its page
@@ -6431,34 +6413,24 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
     ber = "".join(f'<li><a href="{BASE}/{LANG}/branche/{d}/">{e(div_name(d))}</a><span class="v num">{formato.count(k)}</span>'
                   f'<span class="t" aria-hidden="true"><i style="width:{100 * k / mx:.1f}%"></i></span></li>' for d, k in top8)
     b.append(f'<section class="band hsec" id="branchen" aria-labelledby="h-br"><div class="in">'
-             f'<header class="sh"><p class="eyebrow">{e(_m("sec_divisions"))}</p>'
+             f'<header class="sh">'
              f'<h2 id="h-br" data-split>{e(_i.by_division_awards)}{dot}</h2>'
              f'<p class="aside">{formato.count(len(lingue.CPV_SHORT[LANG]))} {_.divisions_n}</p></header>'
              f'<ul class="ber" data-up>{ber}</ul><a class="more" href="{BASE}/{LANG}/branche/">{e(_i.all_divisions)}{ARROW}</a>'
              '</div></section>')
 
-    # the alarm band in brass, then every section of the register
+    # the alarm band in brass: its heading, how it works, the button (23.10.2026: no eyebrow repeating the heading, no
+    # outlined count of the day's new tenders, which the hero's door states). The end band under it carries the
+    # chequered seam of js/home.js and nothing else: its row of links repeated the menu, the e-mail service a third time.
     b.append(f'<section class="band alarm" aria-labelledby="h-alarm"><div class="in">'
-             f'<p class="eyebrow">{nobreak_mail(e(_m("alarm_eyebrow")))}</p><h2 id="h-alarm" data-split>{e(_m("alarm_h2"))}{dot}</h2>'
-             # how it works, not the promise a third time (fix round 2: eyebrow, heading and this line all said 'free, by
-             # e-mail'); the number once, its caption without it
+             f'<h2 id="h-alarm" data-split>{e(_m("alarm_h2"))}{dot}</h2>'
              f'<p class="s">{e(_m("alarm_sub"))}</p><p class="ctas"><a class="btn" href="{abo}">{e(_m("alert_link"))}{ARROW}</a></p>'
-             + (f'<p class="since" data-up><b aria-hidden="true">{formato.count(fresh_n)}</b><span><em class="sr">'
-                f'{formato.count(fresh_n)} </em>{e(_m("alarm_since_one" if fresh_n == 1 else "alarm_since", d=d_short))}</span></p>'
-                if fresh_n else "")
-             + "</div></section>")
-    b.append('<div class="band endband"><div class="in"><div class="tags">'
-             f'<a class="tag" href="{BASE}/{LANG}/ausschreibungen/">{e(_p.open_tenders_h1)}</a>'
-             f'<a class="tag" href="{BASE}/{LANG}/unternehmen/">{e(_i.all_companies)}</a>'
-             f'<a class="tag" href="{BASE}/{LANG}/auftraggeber/">{e(_i.all_buyers)}</a>'
-             f'<a class="tag" href="{BASE}/{LANG}/kanton/">{e(_i.all_cantons)}</a>'
-             f'<a class="tag" href="{BASE}/{LANG}/branche/">{e(_i.all_divisions)}</a>'
-             f'<a class="tag" href="{BASE}/{LANG}/bereich/">{e(_i.all_sectors)}</a>'
-             f'<a class="tag" href="{abo}">{nobreak_mail(e(_m("abo_cta")))}</a></div></div></div>')
+             "</div></section>")
+    b.append('<div class="band endband" aria-hidden="true"></div>')
 
     write(f"/{LANG}/index.html", page(
         _m("home_title"), _m("home_desc", n=formato.count(len(awards))),
-        "\n".join(b), f"/{LANG}/", fresh=True,
+        "\n".join(b), f"/{LANG}/", fresh=True, nodate=True,
         head_extra=(HOME_PRELOAD.format(base=BASE) + site_ld() + feed_head(f"/{LANG}/ausschreibungen/feed.xml", _m("feed_all"))
                     + f"<style>{css_min(HOME_CSS)}</style>\n"),
         lastmod=newest(awards, opens), scripts=("home",)))
@@ -6543,7 +6515,7 @@ def build_impressum() -> None:
     the username inside the canonical URLs — and on a custom domain even that goes
     away, making the site MORE anonymous exactly when it starts looking serious."""
     imp = lingue.IMP[LANG]
-    b = [f'<div class="title"><div><p class="eyebrow">{e(_.register)}</p>'
+    b = [f'<div class="title"><div>'
          f'<h1>{e(imp["title"])}</h1></div><dl class="rail">'
          f'<dt>{e(imp["operator_h"])}</dt><dd>{e(OPERATOR_NAME)}<br>'
          f'{e(imp["operator_note"])}</dd>'
@@ -6564,7 +6536,7 @@ def build_privacy() -> None:
     it shows was already officially published. The page is one URL per language under
     /datenschutz/ regardless of language, so the footer link needs no per-language path."""
     pr = lingue.PRIV[LANG]
-    b = [f'<div class="title"><div><p class="eyebrow">{e(_.register)}</p>'
+    b = [f'<div class="title"><div>'
          f'<h1>{e(pr["title"])}</h1></div><dl class="rail">'
          f'<dt>{e(pr["operator_h"])}</dt><dd>{e(OPERATOR_NAME)}<br>'
          f'{e(pr["operator_note"])}</dd>'
@@ -6618,12 +6590,10 @@ def build_about(awards: list, opens: list) -> None:
               incomplete=incomplete_note(u), multi=_.multi_cantons, fallback=_.fb_note,
               nocant=nocant_sentence(u, sum(1 for a in awards if not a.get("canton"))),
               rate=_.rate_flag, report=_.report_error)
-    b = [f'<div class="title"><div><p class="eyebrow">{e(_m("about_eyebrow"))}</p><h1>{e(u["h1"])}</h1>'
-         f'<p class="sum">{e(u["lead"])}</p></div>'
-         f'<dl class="rail"><dt>{e(_.source)}</dt><dd><a href="https://www.simap.ch">simap.ch</a></dd>'
-         f'<dt>{_.updated}</dt><dd>{tt(DATA_DATE, formato.date(DATA_DATE))}</dd>'
-         # 'Kontakt und Fehlermeldungen' (fix round 1): what the address is for
-         f'<dt>{e(_.contact_errors)}</dt><dd><a href="mailto:{ABO_MAIL}">{ABO_MAIL}</a></dd></dl></div>',
+    # no eyebrow (it listed the lead's words), no rail (the source, the date and the contact are the footer's and the
+    # last section's; 23.10.2026): the heading, one line, the sections at a glance
+    b = [f'<div class="title"><div><h1>{e(u["h1"])}</h1>'
+         f'<p class="sum">{e(u["lead"])}</p></div></div>',
          # the sections at a glance, for a page this long: where the footer's 'Methodik' leads (fix round 1: it led
          # to the section on how names are merged)
          '<div class="tags" id="methodik" style="margin:22px 0 0">'
@@ -6681,8 +6651,6 @@ ABO_STATUS_CSS = ("html[data-l] [data-nf]{display:none}"
                   + ",".join(f"html[data-l={l}] [data-nf][lang={l}]" for l in LANGS) + "{display:block}"
                   + ",".join(f"html[data-l={l}] span[data-nf][lang={l}]" for l in LANGS) + "{display:inline}"
                   ".blk{margin-top:26px}.blk p{margin:0 0 12px;max-width:33em}.blk .tags{margin-top:18px}"
-                  ".blk h2{margin:1.75rem 0 .5rem;font-size:1.5rem}.blk ol{margin:0 0 12px;padding-left:1.25rem;max-width:33em}"
-                  ".blk li{margin:0 0 .375rem}"
                   "span[data-nf]+span[data-nf]::before{content:' · ';content:' · '/''}"
                   "html[data-l] span[data-nf]+span[data-nf]::before{content:none}"
                   # one menu without a script: the German one (the language links lead to the others)
@@ -6705,15 +6673,22 @@ def build_abo_status() -> None:
         def body(l: str) -> str:
             frm = e(lingue.m("abo_from", l, mail=NUL)).replace(NUL, f'<a href="mailto:{mail}">{mail}</a>')
             if slug_ == "check":
-                steps = "".join(f"<li>{e(lingue.m(k, l))}</li>" for k in ("abo_step1", "abo_step2", "abo_step3"))
-                return (f"<p>{e(lingue.m(key, l))}</p><p>{e(lingue.m('abo_resend', l))}</p><p>{frm}</p>"
-                        f"<h2>{e(lingue.m('abo_recap_h', l))}</h2><ol>{steps}</ol>")
-            return (f"<p>{e(lingue.m(key, l))}</p><p>{frm}</p><p>{e(lingue.m('abo_when', l))}</p>"
-                    f"<p>{e(lingue.m('abo_change', l))}</p>")
+                # (no 'So geht es weiter' list since 23.10.2026: its first step was the line above, the other two the
+                # done page's)
+                return f"<p>{e(lingue.m(key, l))}</p><p>{e(lingue.m('abo_resend', l))}</p><p>{frm}</p>"
+            return (f"<p>{e(lingue.m(key, l))}</p><p>{e(lingue.m('abo_when', l))}</p>"
+                    f"<p>{e(lingue.m('abo_change', l))}</p><p>{frm}</p>")
+
+        def acts(l: str) -> str:
+            # one button where there is a next step on the site (the done page: the open tenders); on the check page
+            # the next step is in the mailbox, so both links are plain (23.10.2026)
+            back = f'href="{BASE}/{l}/ausschreibungen/abo/">{e(lingue.m("abo_back", l))}</a>'
+            tenders = f'href="{BASE}/{l}/ausschreibungen/">{e(lingue.i("all_open", l))}</a>'
+            if slug_ == "check":
+                return f'<a class="tag" {back}<a class="tag" {tenders}'
+            return f'<a class="btn" {tenders}<a class="tag" {back}'
         blocks = "".join(
-            f'<div class="blk" data-nf lang="{l}">' + body(l)
-            + f'<div class="acts"><a class="btn" href="{BASE}/{l}/ausschreibungen/abo/">{e(lingue.m("abo_back", l))}</a>'
-            f'<a class="tag" href="{BASE}/{l}/ausschreibungen/">{e(lingue.i("all_open", l))}</a></div></div>'
+            f'<div class="blk" data-nf lang="{l}">' + body(l) + f'<div class="acts">{acts(l)}</div></div>'
             for l in LANGS)
         skips = {l: [lingue.t("skip", l), lingue.t("menu", l), lingue.t("site", l), lingue.t("home", l)] for l in LANGS}
         js = ABO_STATUS_JS % (json.dumps(titles, ensure_ascii=False).replace("<", "\\u003c"),
@@ -6782,7 +6757,6 @@ def build_404() -> None:
     served at whatever depth the missing URL had; noindex, no canonical. Fix round 1: the register's name in
     the header, an eyebrow and a display H1, one menu."""
     titles = {l: f"{lingue.m('nf_title', l)} – {lingue.t('site', l)}" for l in LANGS}
-    eyebrow = "".join(f'<span class="nf" lang="{l}">{e(lingue.m("nf_eyebrow", l))}</span>' for l in LANGS)
     h1 = "".join(f'<span class="nf" lang="{l}">{e(lingue.m("nf_title", l))}</span>' for l in LANGS)
     blocks = "".join(
         f'<div class="nf" lang="{l}"><p>{e(lingue.m("nf_text", l, days=EXPIRED_DAYS, since=in_lang(l, lambda: formato.date(TENDERS_SINCE[0]))))}</p><div class="acts">'
@@ -6811,7 +6785,8 @@ def build_404() -> None:
             + f'<nav class="langs" aria-label="{e(" · ".join(lingue.t("language", l) for l in LANGS))}">'
             + "".join(f'<a href="{BASE}/{l}/" lang="{l}" hreflang="{l}">{e(NAMES[l])}</a>' for l in LANGS) + "</nav>"
             + '</header>\n<main id="inhalt">\n'
-            f'<div class="title"><div><p class="eyebrow">{eyebrow}</p><h1>{h1}</h1></div></div>\n'
+            # no 'Fehler 404' eyebrow over 'Seite nicht gefunden' (23.10.2026): the tab's title keeps the code
+            f'<div class="title"><div><h1>{h1}</h1></div></div>\n'
             + blocks + f"\n<script>{js}</script>\n</main><footer><p>"
             + " · ".join(f'<a href="{BASE}/{l}/ueber/" lang="{l}">{e(lingue.t("nav_about", l))}</a>' for l in LANGS)
             + "</p><p>"
@@ -7200,8 +7175,7 @@ JS_WORDS = {
               "n_res_1", "n_sug", "more", "open_1", "open_n", "to_award", "k_canton", "k_div", "k_sec", "until",
               "loading"),
     "liste": ("f_count", "f_first", "f_none", "f_active", "f_active_1", "multi", "z_near", "f_abo_kwb"),
-    "abo": ("email_missing", "email_bad", "sel", "pv", "pv_lt", "pv_note", "open_1", "open_n", "sum_sel", "all_ch",
-            "all_b", "bf_none"),
+    "abo": ("email_missing", "email_bad", "sel", "pv", "pv_lt", "sum_sel", "all_ch", "all_b", "bf_none"),
     "kb": ("kb_close", "kb_h", "kb_lead", "kb_f1", "kb_fn", "kb_top", "company", "awards", "sum_l",
            "unit_k", "unit_m", "amount", "kb_recent", "date", "contract", "winner", "kb_all", "kb_csv",
            "kb_fb", "kb_fbx", "kb_once"),

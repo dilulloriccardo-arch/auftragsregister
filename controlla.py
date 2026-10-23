@@ -1168,7 +1168,8 @@ def person_name(name: str) -> bool:
 # card, the search index, the open tenders' file, the CSV files' name columns
 _EMAIL = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+")
 _ENT_LINK = re.compile(r'<a href="[^"]*/(?:unternehmen|auftraggeber)/[^"]*"[^>]*>(.*?)</a>|<span class="who">(.*?)</span>', re.S)
-_ENT_TD = re.compile(r"<td\b[^>]*>(.*?)</td>", re.S)
+# a table cell, or a rail's value: a record's contracting authority stands in its rail since 23.10.2026
+_ENT_TD = re.compile(r"<(?:td|dd)\b[^>]*>(.*?)</(?:td|dd)>", re.S)
 # inside a cell: a record's title (a publication's text), the notes under a name, a mailto: link
 _ENT_NOT = re.compile(r'<a href="[^"]*/auftrag/[^"]*"[^>]*>.*?</a>|<(span|div) class="sub[^"]*"[^>]*>.*?</\1>'
                       r'|<a href="mailto:[^"]*">.*?</a>', re.S)

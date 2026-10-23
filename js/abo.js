@@ -6,13 +6,13 @@
    Step 3b: the button is never disabled while sending (aria-disabled: the focus stays on it), and the
    focus moves to the answer; the e-mail field says aria-invalid and points at its error
    (aria-describedby); each industry group's summary says how many it has chosen, in visually hidden
-   text; and a preview counts what the selection would bring: the tenders open now (/daten/offen.json)
-   and the new ones a week, from the last 8 weeks of first publications (/daten/abo-rate.json).
+   text; and a preview counts what the selection would bring: the new tenders a week, from the last 8 weeks of first
+   publications (/daten/abo-rate.json; the open ones now and the note went on 23.10.2026).
    The prefill reads ?k=ZH&b=45 (the links of the pages' alert boxes): only the 26 canton codes and
    two-digit CPV divisions, at most five of each; a value without a pill gets one, labelled from the
    build-time name map (never from the address), in the group of its division, which opens.
-   Fix round 1 (20.10.2026): the selection said in words beside the button ('Sie abonnieren: Zürich · Bauarbeiten'),
-   a box that filters the 45 Branchen as one types, the preview in its box from the start (nothing moves). */
+   Fix round 1 (20.10.2026): the selection said in words over the button ('Sie abonnieren: Zürich · Bauarbeiten'),
+   a box that filters the 45 Branchen as one types, the preview's line in the page from the start (nothing moves). */
 (function () {
   var d = document, f = d.getElementById('abo'); if (!f) return;
   var LL = __L__, A = window.AR, l = d.documentElement.lang, L = LL[l] || LL.de;
@@ -53,28 +53,20 @@
       s.textContent = ' ' + fmt(L.sel, { n: g.querySelectorAll('input:checked').length });
     });
   }
-  // the preview: open now, and new ones a week (its box is in the page)
-  var pv = f.querySelector('.pv'), sm = f.querySelector('.sumry'), O = null, R = null;
+  // the preview: the new tenders a week the selection brings, from the last 8 weeks of first publications (its line is
+  // in the page). 'Strictly necessary' (23.10.2026): no count of the open ones now, no note on how it is computed
+  var pv = f.querySelector('.pv'), sm = f.querySelector('.sumry'), R = null;
   function week(w) {
     var s = w >= 10 ? String(Math.round(w)) : (Math.round(w * 10) / 10).toFixed(1).replace(/\.0$/, '');
     return l === 'en' ? s : s.replace('.', ',');
   }
   function preview() {
-    if (!O || !R || !A) return;
-    var ks = vals('k'), bs = vals('b'), n = 0, w = 0;
-    O.t.forEach(function (r) {
-      if (A.when(r[6]) <= A.now) return;
-      if (bs.length && bs.indexOf(r[4].slice(0, 2)) < 0) return;
-      if (ks.length && !r[3].replace(/\*/g, '').split(' ').some(function (k) { return ks.indexOf(k) >= 0; })) return;
-      n++;
-    });
+    if (!R) return;
+    var ks = vals('k'), bs = vals('b'), w = 0;
     (ks.length ? ks : ['*']).forEach(function (k) {
       (bs.length ? bs : ['*']).forEach(function (v) { w += ((R[k] || {})[v] || 0) / 8; });
     });
-    var open = n === 1 ? L.open_1 : fmt(L.open_n, { n: A.count(n) });
-    pv.innerHTML = '';
-    pv.appendChild(d.createTextNode(w > 0 && w < 1 ? fmt(L.pv_lt, { open: open }) : fmt(L.pv, { open: open, w: week(w) })));
-    var nt = d.createElement('small'); nt.textContent = L.pv_note; pv.appendChild(nt);
+    pv.textContent = w > 0 && w < 1 ? L.pv_lt : fmt(L.pv, { w: week(w) });
   }
   // the selection in words, beside the button: 'Sie abonnieren: Zürich, Bern · Bauarbeiten' (fix round 1)
   function names(n) {
@@ -148,7 +140,7 @@
   pre(); fill(); counts(); summary();
   if (A) {
     var go = function () {
-      Promise.all([A.json('/daten/offen.json'), A.json('/daten/abo-rate.json')]).then(function (x) { O = x[0]; R = x[1]; preview(); }, function () { });
+      A.json('/daten/abo-rate.json').then(function (x) { R = x; preview(); }, function () { });
     };
     if (window.requestIdleCallback) requestIdleCallback(go, { timeout: 2000 }); else setTimeout(go, 800);
   }
