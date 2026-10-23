@@ -86,12 +86,14 @@ FT = "font-family:Arial,sans-serif"
 FD = "font-family:Impact,'Arial Narrow',sans-serif"
 
 # ---------------------------------------------------------------- words
-# The terms (one per concept): E-Mail-Abo / alerte e-mail / avviso e-mail / email alert; Eingabefrist /
-# délai de remise des offres / termine d'inoltro / submission deadline; Auftraggeber / adjudicateur /
-# committente / contracting authority; Branche / branche / ramo / industry.
+# The terms (one per concept), as the site names them since the plain-language pass (owner, 22.10.2026): the
+# service «Ausschreibungen per E-Mail» / «Appels d’offres par e-mail» / «Bandi via e-mail» / «Tenders by email»;
+# Eingabefrist / délai de remise des offres / termine d'inoltro / submission deadline next to a date;
+# Auftraggeber / acheteur public / ente pubblico / public buyer; Branche / secteur / settore / sector.
+# Italian: controls in the familiar imperative, the rest impersonal.
 S = {
     "de": {
-        "alert": "E-Mail-Abo", "since": "Neu seit {d}",
+        "alert": "Ausschreibungen per E-Mail", "since": "Neu seit {d}",
         "n1": "1 neue Ausschreibung", "nn": "{n} neue Ausschreibungen",
         "h1": "Neue Ausschreibung", "hn": "Neue Ausschreibungen",
         "k1": "Kanton", "kn": "Kantone", "b1": "Branche", "bn": "Branchen",
@@ -101,87 +103,92 @@ S = {
         "more1": "{p} weitere neue Ausschreibung auf der Website",
         "moren": "{p} weitere neue Ausschreibungen auf der Website",
         "dl": "Eingabefrist", "buyer": "Auftraggeber", "corr": "Berichtigung", "open": "Zur Ausschreibung",
-        "why": "Sie erhalten diese E-Mail, weil Sie das kostenlose E-Mail-Abo von auftragsregister.ch für diese "
-               "Auswahl bestätigt haben: {sel}.",
-        "why0": "Sie erhalten diese E-Mail, weil Sie das kostenlose E-Mail-Abo von auftragsregister.ch bestätigt haben.",
+        "why": "Sie erhalten diese E-Mail, weil Sie «Ausschreibungen per E-Mail» von auftragsregister.ch gratis für "
+               "diese Auswahl abonniert und bestätigt haben: {sel}.",
+        "why0": "Sie erhalten diese E-Mail, weil Sie «Ausschreibungen per E-Mail» von auftragsregister.ch gratis "
+                "abonniert und bestätigt haben.",
         "change": "Auswahl ändern: Melden Sie sich über «Abmelden» ab und abonnieren Sie dann auf der {a}Seite "
-                  "des E-Mail-Abos{z} mit der neuen Auswahl erneut.",
+                  "«Ausschreibungen per E-Mail»{z} mit der neuen Auswahl erneut.",
         "unsub": "Abmelden", "privacy": "Datenschutz", "imprint": "Impressum",
         "source": "Quelle: simap.ch (amtliche Publikationen von Bund, Kantonen und Gemeinden)",
-        "titles": "Titel erscheinen in der Sprache, in der sie publiziert wurden.", "asof": "Daten vom {d}",
+        "titles": "Titel erscheinen in der Sprache, in der sie publiziert wurden.", "asof": "Aktualisiert am {d}",
         "pro_tag": "CHF 29 pro Monat", "pro_h": "Mehr Kantone, mehr Branchen – und wer gewinnt",
-        "pro_1": "Mehr Kantone und Branchen im selben E-Mail-Abo",
-        "pro_2": "Jede Woche ein Bericht: wer in Ihren Kantonen und Branchen die Zuschläge erhalten hat",
+        "pro_1": "Mehr Kantone und Branchen im selben Abo",
+        "pro_2": "Jede Woche ein Bericht: wer in Ihren Kantonen und Branchen die Aufträge erhalten hat",
         "pro_cta": "Pro ansehen",
     },
     "fr": {
-        "alert": "Alerte e-mail", "since": "Depuis le {d}",
+        "alert": "Appels d’offres par e-mail", "since": "Depuis le {d}",
         "n1": "1 nouvel appel d’offres", "nn": "{n} nouveaux appels d’offres",
         "h1": "Nouvel appel d’offres", "hn": "Nouveaux appels d’offres",
-        "k1": "Canton", "kn": "Cantons", "b1": "Branche", "bn": "Branches",
-        "all_k": "toute la Suisse", "all_b": "toutes les branches",
-        "urgent": "{u} avec un délai de remise des offres dans les 7 prochains jours",
-        "next": "Prochain délai de remise des offres\u202f: {d}",
+        "k1": "Canton", "kn": "Cantons", "b1": "Secteur", "bn": "Secteurs",
+        "all_k": "toute la Suisse", "all_b": "tous les secteurs",
+        "urgent": "{u} dont le délai expire dans les 7 prochains jours",
+        "next": "Prochain délai\u202f: {d}",
         "web": "Tous les nouveaux appels d’offres sur le site",
         "more1": "{p} autre nouvel appel d’offres sur le site",
         "moren": "{p} autres nouveaux appels d’offres sur le site",
-        "dl": "Délai de remise", "buyer": "Adjudicateur", "corr": "Rectificatif",
+        "dl": "Délai de remise", "buyer": "Acheteur public", "corr": "Rectificatif",
         "open": "Voir l’appel d’offres",
-        "why": "Vous recevez cet e-mail parce que vous avez confirmé l’alerte e-mail gratuite "
-               "d’auftragsregister.ch pour cette sélection\u202f: {sel}.",
-        "why0": "Vous recevez cet e-mail parce que vous avez confirmé l’alerte e-mail gratuite d’auftragsregister.ch.",
+        "why": "Vous recevez cet e-mail parce que vous avez confirmé votre abonnement gratuit à «\u202fAppels "
+               "d’offres par e-mail\u202f» d’auftragsregister.ch pour cette sélection\u202f: {sel}.",
+        "why0": "Vous recevez cet e-mail parce que vous avez confirmé votre abonnement gratuit à «\u202fAppels "
+                "d’offres par e-mail\u202f» d’auftragsregister.ch.",
         "change": "Pour modifier votre sélection\u202f: désabonnez-vous par «\u202fSe désabonner\u202f», puis "
-                  "abonnez-vous à nouveau avec la nouvelle sélection sur la {a}page de l’alerte e-mail{z}.",
+                  "abonnez-vous à nouveau avec la nouvelle sélection sur la {a}page «\u202fAppels d’offres par "
+                  "e-mail\u202f»{z}.",
         "unsub": "Se désabonner", "privacy": "Protection des données", "imprint": "Mentions légales",
         "source": "Source\u202f: simap.ch (publications officielles de la Confédération, des cantons et des communes)",
-        "titles": "Les titres apparaissent dans la langue de publication.", "asof": "État des données\u202f: {d}",
-        "pro_tag": "CHF 29 par mois", "pro_h": "Plus de cantons, plus de branches – et qui remporte les marchés",
-        "pro_1": "Plus de cantons et de branches dans la même alerte e-mail",
-        "pro_2": "Chaque semaine, un rapport\u202f: qui a remporté les adjudications dans vos cantons et vos branches",
+        "titles": "Les titres apparaissent dans la langue de publication.", "asof": "Mis à jour le {d}",
+        "pro_tag": "CHF 29 par mois", "pro_h": "Plus de cantons, plus de secteurs – et qui remporte les marchés",
+        "pro_1": "Plus de cantons et de secteurs dans le même abonnement",
+        "pro_2": "Chaque semaine, un rapport\u202f: qui a remporté les marchés dans vos cantons et vos secteurs",
         "pro_cta": "Découvrir Pro",
     },
     "it": {
-        "alert": "Avviso e-mail", "since": "Dal {d}", "since_v": "Dall’{d}",
+        "alert": "Bandi via e-mail", "since": "Dal {d}", "since_v": "Dall’{d}",
         "n1": "1 nuovo bando", "nn": "{n} nuovi bandi", "h1": "Nuovo bando", "hn": "Nuovi bandi",
-        "k1": "Cantone", "kn": "Cantoni", "b1": "Ramo", "bn": "Rami",
-        "all_k": "tutta la Svizzera", "all_b": "tutti i rami",
-        "urgent": "{u} con termine d’inoltro nei prossimi 7 giorni", "next": "Prossimo termine d’inoltro: {d}",
+        "k1": "Cantone", "kn": "Cantoni", "b1": "Settore", "bn": "Settori",
+        "all_k": "tutta la Svizzera", "all_b": "tutti i settori",
+        "urgent": "{u} in scadenza nei prossimi 7 giorni", "next": "Prossima scadenza: {d}",
         "web": "Tutti i nuovi bandi sul sito",
         "more1": "{p} altro nuovo bando sul sito", "moren": "{p} altri nuovi bandi sul sito",
-        "dl": "Termine d’inoltro", "buyer": "Committente", "corr": "Rettifica", "open": "Apra il bando",
-        "why": "Riceve questa e-mail perché ha confermato l’avviso e-mail gratuito di auftragsregister.ch per "
-               "questa scelta: {sel}.",
-        "why0": "Riceve questa e-mail perché ha confermato l’avviso e-mail gratuito di auftragsregister.ch.",
-        "change": "Per cambiare la scelta: si cancelli con «Annulla l’iscrizione» e si iscriva di nuovo con la "
-                  "nuova scelta nella {a}pagina dell’avviso e-mail{z}.",
+        "dl": "Termine d’inoltro", "buyer": "Ente pubblico", "corr": "Rettifica", "open": "Apri il bando",
+        "why": "Questa e-mail arriva perché è stata confermata l’iscrizione gratuita a «Bandi via e-mail» di "
+               "auftragsregister.ch per questa scelta: {sel}.",
+        "why0": "Questa e-mail arriva perché è stata confermata l’iscrizione gratuita a «Bandi via e-mail» di "
+                "auftragsregister.ch.",
+        "change": "Per cambiare la scelta: annullare l’iscrizione con «Annulla l’iscrizione» e iscriversi di nuovo "
+                  "con la nuova scelta nella {a}pagina «Bandi via e-mail»{z}.",
         "unsub": "Annulla l’iscrizione", "privacy": "Protezione dei dati", "imprint": "Note legali",
         "source": "Fonte: simap.ch (pubblicazioni ufficiali della Confederazione, dei Cantoni e dei Comuni)",
-        "titles": "I titoli compaiono nella lingua in cui sono stati pubblicati.", "asof": "Stato dei dati: {d}",
-        "pro_tag": "CHF 29 al mese", "pro_h": "Più cantoni, più rami – e chi vince gli appalti",
-        "pro_1": "Più cantoni e rami nello stesso avviso e-mail",
-        "pro_2": "Ogni settimana un rapporto: chi ha ottenuto le aggiudicazioni nei suoi cantoni e rami",
-        "pro_cta": "Scopra Pro",
+        "titles": "I titoli compaiono nella lingua in cui sono stati pubblicati.", "asof": "Aggiornato al {d}",
+        "pro_tag": "CHF 29 al mese", "pro_h": "Più cantoni, più settori – e chi vince gli appalti",
+        "pro_1": "Più cantoni e settori nella stessa iscrizione",
+        "pro_2": "Ogni settimana un rapporto: chi ha vinto gli appalti nei cantoni e nei settori scelti",
+        "pro_cta": "Scopri Pro",
     },
     "en": {
-        "alert": "Email alert", "since": "Since {d}",
+        "alert": "Tenders by email", "since": "Since {d}",
         "n1": "1 new tender", "nn": "{n} new tenders", "h1": "New tender", "hn": "New tenders",
-        "k1": "Canton", "kn": "Cantons", "b1": "Industry", "bn": "Industries",
-        "all_k": "all of Switzerland", "all_b": "all industries",
-        "urgent": "{u} with a submission deadline in the next 7 days", "next": "Next submission deadline: {d}",
+        "k1": "Canton", "kn": "Cantons", "b1": "Sector", "bn": "Sectors",
+        "all_k": "all of Switzerland", "all_b": "all sectors",
+        "urgent": "{u} closing in the next 7 days", "next": "Next deadline: {d}",
         "web": "All new tenders on the website",
         "more1": "{p} more new tender on the website", "moren": "{p} more new tenders on the website",
-        "dl": "Submission deadline", "buyer": "Contracting authority", "corr": "Correction", "open": "View tender",
-        "why": "You are receiving this email because you confirmed the free email alert from auftragsregister.ch "
-               "for this selection: {sel}.",
-        "why0": "You are receiving this email because you confirmed the free email alert from auftragsregister.ch.",
+        "dl": "Submission deadline", "buyer": "Public buyer", "corr": "Correction", "open": "View tender",
+        "why": "You are receiving this email because you confirmed your free subscription to Tenders by email "
+               "from auftragsregister.ch for this selection: {sel}.",
+        "why0": "You are receiving this email because you confirmed your free subscription to Tenders by email "
+                "from auftragsregister.ch.",
         "change": "To change your selection, unsubscribe with “Unsubscribe” below and subscribe again with the "
-                  "new selection on the {a}email alert page{z}.",
+                  "new selection on the {a}Tenders by email page{z}.",
         "unsub": "Unsubscribe", "privacy": "Privacy", "imprint": "Legal notice",
         "source": "Source: simap.ch (official publications of the Confederation, cantons and communes)",
-        "titles": "Titles are shown in the language in which they were published.", "asof": "Data as of {d}",
-        "pro_tag": "CHF 29 a month", "pro_h": "More cantons, more industries – and who wins",
-        "pro_1": "More cantons and industries in the same email alert",
-        "pro_2": "A weekly report: who won the contracts in your cantons and industries",
+        "titles": "Titles are shown in the language in which they were published.", "asof": "Updated {d}",
+        "pro_tag": "CHF 29 a month", "pro_h": "More cantons, more sectors – and who wins",
+        "pro_1": "More cantons and sectors in the same subscription",
+        "pro_2": "A weekly report: who won the contracts in your cantons and sectors",
         "pro_cta": "See Pro",
     },
 }
@@ -359,6 +366,19 @@ def _today(today) -> str:
     return iso_day(today) or datetime.date.today().isoformat()
 
 
+def since_label(s: dict, since, lang: str) -> str:
+    """'Neu seit 08.10.2026'; Italian elides before a day read with a vowel: 'Dall’08.10.2026', 'Dall’11…' (fix round
+    3), in the band and, since 22.10.2026, in the text part too."""
+    d = fdate(since, lang)
+    return (s["since_v"] if "since_v" in s and d[:2] in ("08", "11") else s["since"]).format(d=d)
+
+
+def asof(s: dict, today, lang: str) -> str:
+    """'Aktualisiert am 23.10.2026'; Italian elides before a day read with a vowel ('Aggiornato all’08.10.2026')."""
+    t = s["asof"].format(d=fdate(today, lang))
+    return L.it_dates(t) if lang == "it" else t
+
+
 def _list(names: list, more: int = 0) -> str:
     return " · ".join(names) + (f" +{more}" if more else "")
 
@@ -420,11 +440,7 @@ def _ghost(inner: str) -> str:
 
 def _band(lang, s, total, since, ks, bs, rows, today, web) -> str:
     home = esc(f"{SITE}/{lang}/")
-    eyebrow = [s["alert"]]
-    if fdate(since, lang):
-        # Italian elides before a day read with a vowel: 'dall’8', 'dall’11' (fix round 3)
-        d = fdate(since, lang)
-        eyebrow.append((s["since_v"] if "since_v" in s and d[:2] in ("08", "11") else s["since"]).format(d=d))
+    eyebrow = [s["alert"]] + ([since_label(s, since, lang)] if fdate(since, lang) else [])
     sel = ""
     if ks is not None:
         kn = [kname(k, lang) for k in ks[:4]] or [s["all_k"]]
@@ -582,7 +598,7 @@ def _footer(lang, s, ks, bs, today) -> str:
         f'<p style="margin:0 0 6px">{esc(s["source"]).replace("simap.ch", simap.format("simap.ch"), 1)}</p>'
         f'<p{de} style="margin:0 0 6px;font-size:11px;line-height:16px">'
         f'{esc(SIMAP_NOTICE).replace("www.simap.ch", simap.format("www.simap.ch"))}</p>'
-        f'<p style="margin:0;font-size:11px;line-height:16px">{esc(s["titles"])} {esc(s["asof"].format(d=fdate(today, lang)))}'
+        f'<p style="margin:0;font-size:11px;line-height:16px">{esc(s["titles"])} {esc(asof(s, today, lang))}'
         f' · <a href="{esc(f"{SITE}/{lang}/")}" {link}>auftragsregister.ch</a></p>'
         '</td></tr>')
 
@@ -685,7 +701,7 @@ def render_text(lang, rows, since, contact=None, today=None, *, cap=CAP, pro=Fal
     today = _today(today)
     ks, bs = selection(contact)
     out = [subject_of(lang, rows, ks), ""]
-    head = [s["alert"]] + ([s["since"].format(d=fdate(since, lang))] if fdate(since, lang) else [])
+    head = [s["alert"]] + ([since_label(s, since, lang)] if fdate(since, lang) else [])
     out.append(" · ".join(head))
     if ks is not None:
         out.append(f'{s["k1"] if len(ks) == 1 else s["kn"]}: ' + (", ".join(kname(k, lang) for k in ks) or s["all_k"]))
@@ -715,6 +731,6 @@ def render_text(lang, rows, since, contact=None, today=None, *, cap=CAP, pro=Fal
             s["change"].replace("{a}", "").replace("{z}", "") + " " + abo_url(lang, ks or [], bs or []),
             f'{s["unsub"]}: ']
     tail = [f'{s["privacy"]}: {SITE}/{lang}/datenschutz/', f'{s["imprint"]}: {SITE}/{lang}/impressum/',
-            s["source"], SIMAP_NOTICE, s["asof"].format(d=fdate(today, lang))]
+            s["source"], SIMAP_NOTICE, asof(s, today, lang)]
     text = plain("\n".join(out)) + "{{ unsubscribe }}\n" + plain("\n".join(tail))
     return text.replace(NBSP, " ").replace(NNBSP, " ")

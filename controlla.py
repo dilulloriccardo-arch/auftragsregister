@@ -421,25 +421,52 @@ _SEARCH_FORM = re.compile(r'<header class="masthead">.*?<form role="search" acti
 
 
 # ------------------------------------------------------------- step 5 (15.10.2026): one name per concept
-# The copy pass gave each concept one name per language: the e-mail alert (E-Mail-Abo / alerte e-mail / avviso
-# e-mail / email alert), the open tender (never a "contract"), «kostenlos» and «ohne Konto». The words it
-# retired must not come back in the site's own text. Restated here, not imported from lingue (see above).
+# The copy pass gave each concept one name per language, the open tender (never a "contract") and «ohne Konto».
+# The words it retired must not come back in the site's own text. Restated here, not imported from lingue (see above).
 # Publications are quoted as published and may say anything ('Gratis-WLAN', 'Login-Prozess', 'Submissionen'
 # in titles, 'E-mail system' as an EU CPV label): the lint reads only what the site writes itself, the chrome,
 # with every quoted text masked inside it, so a title can never stop the nightly.
+# Plain-language pass (22.10.2026, owner): the procurement office's words out of the chrome. The e-mail service is
+# «Ausschreibungen per E-Mail» / «Appels d’offres par e-mail» / «Bandi via e-mail» / «Tenders by email» (no more
+# E-Mail-Abo / alerte e-mail / avviso e-mail / email alert), the date «Aktualisiert am» / «Mis à jour le» /
+# «Aggiornato al» / «Updated» (no more Daten vom / État des données / Stato dei dati / Data as of), the about page
+# «So funktioniert’s» / «Comment ça marche» / «Come funziona» / «How it works», «gratis» in German (the owner's
+# «Gratis abonnieren»; «kostenlos» retired), Settori / Secteurs / Sectors for the 45 CPV divisions, Kategorie for
+# the 8-digit codes, Aziende, Enti pubblici / Acheteurs publics / Public buyers, and the old headings. Italian: the
+# controls in the familiar imperative as the owner approved them («Ricevi», «Cerca», «Mostra tutti»), so the
+# Lei-form controls are the retired ones now. The about page explains each official term once, in the singular
+# («Zuschlag», «adjudicateur», «committente», «contracting authority»): those stay allowed.
+# A term matches as a whole word; one ending in '*' matches as the start of a word ('E-Mail-Abo*': E-Mail-Abos).
 BANNED_TERMS = {
-    "de": ("offene Aufträge", "Submissionen", "E-Mail-Alarm", "Benachrichtigung einrichten", "Gratis", "Login"),
-    "fr": ("marchés ouverts", "marchés publics en cours"),
-    # fix round 3 (item 37): the buttons and controls in the Lei form, as the prose ('Iscriviti' was the tu form)
-    "it": ("appalti aperti", "Iscriviti", "Vai al contenuto", "Attiva l’avviso", "Mostra tutti", "Mostra gli altri",
-           "Cerca un ramo", "Torna su", "Azzera i filtri", "Segnala un errore", "Apri questo bando", "Aggiungi la scadenza",
-           # fix round 4: the about page's button
-           "Vai all’avviso"),
+    "de": ("offene Aufträge", "Submissionen", "E-Mail-Alarm", "Benachrichtigung einrichten", "Login",
+           "E-Mail-Abo*", "Daten vom", "Über das Register", "Methodik", "kostenlos*", "Bereiche", "verwandten Bereichen",
+           "Unternehmen mit den meisten Zuschlägen", "Zuschläge pro Monat", "Zuschläge nach", "Zuschläge pro Jahr",
+           "Unternehmen finden", "Unternehmen im Register"),
+    "fr": ("marchés ouverts", "marchés publics en cours", "alerte e-mail", "alertes e-mail", "État des données",
+           "Méthodologie", "À propos du registre", "adjudicateurs", "Adjudications par", "Adjudications du",
+           "le plus d’adjudications", "par branche", "Toutes les branches"),
+    "it": ("appalti aperti", "Vai al contenuto", "Vai all’avviso",
+           # the Lei form of a control (the owner: «Ricevi», «Cerca», «Mostra tutti», «Iscriviti gratis»)
+           "Si iscriva", "Mostri tutti", "Mostri gli altri", "Cerchi un", "Torni all*", "Azzeri i filtri",
+           "Segnali un errore", "Apra questo bando", "Apra il bando", "Aggiunga la scadenza", "Attivi l’avviso",
+           "Clicchi", "Tocchi", "Scelga", "Inserisca", "Riceva gratuitamente", "Cercare",
+           "avviso e-mail", "avvisi e-mail", "Stato dei dati", "rami", "ramo", "committenti", "Metodologia",
+           "Informazioni sul registro", "Imprese con più aggiudicazioni", "Aggiudicazioni al mese",
+           "Aggiudicazioni per", "Ricevere automaticamente"),
     # fix round 3 (item 40): the term table's 'Open tender'
-    "en": ("open contracts", "e-mail", "Open for bids"),
+    "en": ("open contracts", "e-mail*", "Open for bids", "email alert*", "Data as of", "Methodology",
+           "contracting authorities", "industries", "Awards by", "Awards per month", "Companies with the most awards"),
 }
-_TERM_RX = {l: re.compile("|".join(r"(?<![\w-])" + re.escape(t).replace("\\ ", " ").replace(" ", r"\s+") for t in ts), re.I)
-            for l, ts in BANNED_TERMS.items()}
+
+
+def _term_pat(t: str) -> str:
+    """A banned term as a pattern: whole words, or the start of a word when it ends in '*'; any run of white
+    space (the no-break spaces of the typography too) between its words."""
+    body = re.escape(t.rstrip("*")).replace("\\ ", " ").replace(" ", r"\s+")
+    return r"(?<![\w-])" + body + ("" if t.endswith("*") else r"(?![\w’'-])")
+
+
+_TERM_RX = {l: re.compile("|".join(_term_pat(t) for t in ts), re.I) for l, ts in BANNED_TERMS.items()}
 # Inside the chrome, the quoted texts: code, anything in another language (lang=), the links to a record, a
 # company, an authority or a CPV category (their text is a title, a name or an EU label), the last breadcrumb,
 # the sub-lines under a row (CPV labels, co-winners), table data cells (but the comparison table's), values.
@@ -506,6 +533,76 @@ def term_errors(here: str, html: str) -> list:
         parts += [x for m in _TERM_HEAD.finditer(head) for x in m.groups() if x]
     text = _term_text(_TERM_MASK.sub(" ", " ".join(parts)))
     return [(lang, c) for c in term_hits(text, lang)]
+
+
+# The new names must be there, not only the old ones gone (plain-language pass, 22.10.2026): the menu's seven labels
+# in order on every page (the four menus of the 404 page and of the two pages Brevo sends people to, each in its
+# language), the e-mail service's page (its heading the service's name, its button the short call), the home's two
+# calls to action, the date line of the footer and its template in /stand.js. Restated here, not imported from lingue.
+NAV_WANT = {
+    "de": ("Ausschreibungen", "Firmen", "Auftraggeber", "Kantone", "Branchen", "So funktioniert’s",
+           "Ausschreibungen per E-Mail"),
+    "fr": ("Appels d’offres", "Entreprises", "Acheteurs publics", "Cantons", "Secteurs", "Comment ça marche",
+           "Appels d’offres par e-mail"),
+    "it": ("Bandi", "Aziende", "Enti pubblici", "Cantoni", "Settori", "Come funziona", "Bandi via e-mail"),
+    "en": ("Tenders", "Companies", "Public buyers", "Cantons", "Sectors", "How it works", "Tenders by email"),
+}
+CTA_MAIN = {"de": "Neue Ausschreibungen gratis per E-Mail",
+            "fr": "Recevoir gratuitement les nouveaux appels d’offres par e-mail",
+            "it": "Ricevi gratis i nuovi bandi via e-mail", "en": "Get new tenders by email – free"}
+CTA_SHORT = {"de": "Gratis abonnieren", "fr": "S’abonner gratuitement", "it": "Iscriviti gratis",
+             "en": "Subscribe free"}
+# Italian elides before the 8th and the 11th ('Aggiornato all’08.10.2026')
+DATE_LABEL = {"de": ("Aktualisiert am ",), "fr": ("Mis à jour le ",), "it": ("Aggiornato al ", "Aggiornato all’"),
+              "en": ("Updated ",)}
+_NAV = re.compile(r'<nav class="sitenav[^"]*"(?: data-nf)?(?: lang="([a-z]{2})")?[^>]*><ul>(.*?)</ul></nav>', re.S)
+_NAV_A = re.compile(r"<a\b[^>]*>(.*?)</a>", re.S)
+
+
+def _plain(fragment: str) -> str:
+    return " ".join(htmlmod.unescape(_TAG.sub("", fragment)).split())
+
+
+def required_errors(here: str, html: str) -> list:
+    """[(what, what the page says)] wherever a page lacks the new name it must carry."""
+    p = here.strip("/").split("/")
+    lang = p[0] if p and p[0] in LANGS4 else "de"
+    out = []
+    for m in _NAV.finditer(html):
+        lm = m.group(1) or lang
+        got = tuple(_plain(a) for a in _NAV_A.findall(m.group(2)))
+        if got != NAV_WANT.get(lm):
+            out.append((f"menu {lm}", " · ".join(got)[:140]))
+    body = html.partition('<main id="inhalt">')[2]
+    if len(p) == 3 and p[1:] == ["ausschreibungen", "abo"]:
+        h1 = re.search(r"<h1\b[^>]*>(.*?)</h1>", body, re.S)
+        if not h1 or _plain(h1.group(1)) != NAV_WANT[lang][-1]:
+            out.append(("titolo della pagina del servizio", _plain(h1.group(1)) if h1 else ""))
+        btn = re.search(r'<button type="submit">(.*?)</button>', body, re.S)
+        if not btn or _plain(btn.group(1)) != CTA_SHORT[lang]:
+            out.append(("bottone del modulo", _plain(btn.group(1)) if btn else ""))
+    if here in HOMES:
+        ctas = [_plain(x) for x in re.findall(r'<p class="ctas"><a class="btn"[^>]*>(.*?)</a>', body, re.S)]
+        if ctas[:1] != [CTA_MAIN[lang]] or ctas[1:2] != [CTA_SHORT[lang]]:
+            out.append(("inviti della home", " | ".join(ctas)))
+    st = re.search(r'<p class="stand">(.*?)</p>', html, re.S)
+    if st and "<time" in st.group(1) and not _plain(st.group(1)).startswith(DATE_LABEL[lang]):
+        out.append(("riga della data", _plain(st.group(1))[:60]))
+    return out
+
+
+def stand_template_errors(js: str) -> list:
+    """/stand.js writes the footer's date line on every page that does not state it: its template per language."""
+    i = js.find("var D = ")
+    if i < 0:
+        return ["/stand.js: dati non trovati"]
+    try:
+        data, _end = json.JSONDecoder().raw_decode(js, i + len("var D = "))
+    except ValueError as ex:
+        return [f"/stand.js: {ex}"]
+    t = data.get("t") or {}
+    return [f"/stand.js {l}: {t.get(l)!r}" for l in LANGS4
+            if not (isinstance(t.get(l), str) and "{d}" in t[l] and t[l].startswith(DATE_LABEL[l]))]
 
 
 # ------------------------------------------------------------- fix round 3 (21.10.2026)
@@ -1264,8 +1361,8 @@ def main() -> int:
     rel_pat = relative_patterns(lingue)
     rel_bad, form_bad, open_ids = [], [], set()
     home_js_bad, first_head = [], ""
-    # step 5: the retired words, page by page; meta descriptions over 155 characters
-    term_bad, long_desc = [], []
+    # step 5: the retired words, page by page; meta descriptions over 155 characters; the new names (22.10.2026)
+    term_bad, long_desc, req_bad = [], [], []
     # fix round 1: simap.ch in the page's language, the total's note, the company pages named after a person
     simap_bad, note_bad, person_pages, email_bad = [], [], {}, []
     joint_n = sum(1 for a in awards if len(G.winners(a)) > 1)
@@ -1318,6 +1415,9 @@ def main() -> int:
         x = term_errors(here, html)
         if x:
             term_bad.append((here, x))
+        x = required_errors(here, html)
+        if x:
+            req_bad.append((here, x))
         if 'class="tag on"' in html:
             gold_bad.append(here)
         eb_bad += [(here, x) for x in eyebrow_errors(html)]
@@ -1573,13 +1673,22 @@ def main() -> int:
         x = term_errors("/404.html", (OUT / "404.html").read_text(encoding="utf-8"))
         if x:
             term_bad.append(("/404.html", x))
+        x = required_errors("/404.html", (OUT / "404.html").read_text(encoding="utf-8"))
+        if x:
+            req_bad.append(("/404.html", x))
+    if (OUT / "stand.js").is_file():
+        req_bad += [("/stand.js", [("modello della riga della data", x)])
+                    for x in stand_template_errors((OUT / "stand.js").read_text(encoding="utf-8"))]
     # which word, how often (each hit's context names it)
     n_terms = collections.Counter(t for _h, xs in term_bad for l, c in xs for t in BANNED_TERMS[l]
-                                  if re.search(re.escape(t).replace("\\ ", " ").replace(" ", r"\s+"), c, re.I))
+                                  if re.search(_term_pat(t), c, re.I))
     print(f"  parole ritirate (una per concetto) {len(term_bad)} pagine"
           + (f" · {', '.join(f'«{t}» {k}' for t, k in n_terms.most_common())}" if n_terms else ""))
     for h, xs in term_bad[:6]:
         print(f"    {h}  [{xs[0][0]}] …{xs[0][1]}…")
+    print(f"  nomi nuovi mancanti (menu, servizio e-mail, inviti, data) {len(req_bad)} pagine")
+    for h, xs in req_bad[:6]:
+        print(f"    {h}  {xs[0][0]}: «{xs[0][1]}»")
     print(f"  pagine controllate      {counts['pagine']}")
     print(f"  titoli vuoti            {len(empty_titles)}")
     print(f"  titoli oltre 65 char    {len(long_titles)}")
@@ -1658,7 +1767,7 @@ def main() -> int:
                  or bad_sums or single_amount or lost or stale or nf_bad or n_struct
                  or n_design or c_errs or f_errs or fo_errs or a_errs or tot_errs or bad_buyers or bad_form
                  or bad_feeds or bad_ld or j_errs or sz_errs or idx_errs or open_errs or sp_errs or form_bad
-                 or rel_bad or term_bad or long_desc or hid_errs or simap_bad or note_bad or person_bad
+                 or rel_bad or term_bad or req_bad or long_desc or hid_errs or simap_bad or note_bad or person_bad
                  or email_bad or gold_bad or az_bad or lt_bad or eb_bad or stop_bad or elide_bad) else 0
 
 

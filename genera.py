@@ -2669,8 +2669,8 @@ def css_labels() -> str:
                  ("table.lots td.mono:first-child:not(.d)", t("lot")), ("table.lots td.d", t("date")),
                  ("table.lots td:nth-last-child(2)", t("winner")),
                  ("table.dv td:nth-child(2)", "CPV"), ("table.dv td:nth-child(3)", lingue.i("col_open", l)),
-                 ("table.dv td:nth-child(4)", t("awards")), ("table.fk td:nth-child(2)", t("awards")),
-                 ("table.top td:nth-child(3)", t("awards"))]
+                 ("table.dv td:nth-child(4)", t("awards")), ("table.fk td:nth-child(2)", t("awards_col")),
+                 ("table.top td:nth-child(3)", t("awards_col"))]
         # a money cell's label on a phone is its unit alone, short ('Tsd. CHF', 'k CHF'; fix round 1): the long
         # 'Betrag (milliers de CHF)' made the amount column the widest and squeezed the dates
         for u in ("k", "m", "chf"):
@@ -2843,7 +2843,9 @@ def stand_line(fresh: bool) -> str:
     for git and IndexNow. Without JavaScript those pages say nothing about it (step 3a: 'täglich
     aktualisiert' was a promise the nightly does not keep)."""
     if fresh:
-        return e(_m("stand", d="\x00")).replace("\x00", tt(DATA_DATE, formato.date(DATA_DATE))) + " · "
+        out = e(_m("stand", d="\x00")).replace("\x00", tt(DATA_DATE, formato.date(DATA_DATE)))
+        # «aggiornato al 22.10.2026» (owner, 22.10.2026): 'all’08.10.2026' on the 8th and the 11th
+        return (lingue.it_dates(out) if LANG == "it" else out) + " · "
     # without JavaScript nothing: the date is not on the page, and 'täglich aktualisiert' was a claim
     return '<span data-stand></span>'
 
@@ -3820,7 +3822,7 @@ def build_companies(comp: dict, open_for: dict, sectors: set[str],
             yu = pu
             b.append(f'<div class="sec"><div class="runhead"><h2>{e(_p.analysis)}</h2>'
                      f'<span>{e(_p.derived)}</span></div><div class="scroll"><table>{cap(_p.analysis)}<thead><tr>'
-                     f'<th>{_.year}</th><th class="r">{_.awards}</th>{money_th("sum_l", yu)}'
+                     f'<th>{_.year}</th><th class="r">{_.awards_col}</th>{money_th("sum_l", yu)}'
                      "</tr></thead><tbody>")
             for y in sorted(per_year, reverse=True):
                 n_y, v_y = per_year[y]
@@ -5113,7 +5115,7 @@ def firm_table(rows: list, comp: dict, pages: dict, limit: int = 60, unit: str =
     unit = unit or formato.unit_for(sums.get(sl) for sl, _k in order)
     # a card per company on a phone (fix round 2): the name on a row of its own, the awards and the sum under it
     out = [cut + f'<div class="scroll"><table class="ls fk u{unit}">{cap(_.companies + " – " + _.by_awards)}<thead><tr>'
-           f'<th>{_.company}</th><th class="r">{_.awards}</th>{money_th("sum_l", unit)}</tr></thead><tbody>']
+           f'<th>{_.company}</th><th class="r">{_.awards_col}</th>{money_th("sum_l", unit)}</tr></thead><tbody>']
     for sl, k in order:
         label = (comp.get(sl) or {}).get("name") or seen_name.get(sl, sl)
         cell = (f'<a href="{BASE}/{LANG}/unternehmen/{e(sl)}/">{e(label)}</a>'
@@ -5650,7 +5652,7 @@ def flt_bar(scope: str) -> str:
             f'<option value="neu">{j("f_sort_new")}</option></select></label>'
             + '<div class="chks">'
             + (f'<label class="chk"><input type="checkbox" name="neu"> '
-               f'{e(lingue.JS["f_new"][LANG].format(d=formato.date_short(day)))}</label>' if day else "")
+               f'{e(lingue.it_dates(lingue.JS["f_new"][LANG].format(d=formato.date_short(day))) if LANG == "it" else lingue.JS["f_new"][LANG].format(d=formato.date_short(day)))}</label>' if day else "")
             + f'<label class="chk"><input type="checkbox" name="soon"> {j("f_soon")}</label></div>'
             f'</div></details>{FLT_JS}'
             # the count, and beside it the reset (while a filter is set) and the alert for the selection
@@ -5932,7 +5934,7 @@ def buyer_table(rows: list, buyer_slugs: dict, limit: int = 25, unit: str = "") 
     cnt, sums, spell, order = buyer_rank(rows, limit)
     unit = unit or formato.unit_for(sums.get(k) for k, _n in order)
     out = [f'<div class="scroll"><table class="ls fk u{unit}">{cap(_.buyers + " – " + _.by_awards)}<thead><tr>'
-           f'<th>{_.buyer}</th><th class="r">{_.awards}</th>{money_th("sum_l", unit)}</tr></thead><tbody>']
+           f'<th>{_.buyer}</th><th class="r">{_.awards_col}</th>{money_th("sum_l", unit)}</tr></thead><tbody>']
     for k, n in order:
         hit = buyer_slugs.get(k)
         nm = hit[1] if hit else spell[k].most_common(1)[0][0]
@@ -6231,6 +6233,15 @@ def build_search_page() -> None:
 # The arrow of the home's buttons and links (step 4); the data pages' buttons carry none (bytes)
 ARROW = ('<svg class="ar" viewBox="0 0 20 12" aria-hidden="true"><path d="M0 6h17M12.5 1.2 17.6 6l-5.1 4.8" fill="none" '
          'stroke="currentColor" stroke-width="1.6"/></svg>')
+# 'e-mail' kept on one line in the home's buttons and eyebrows (plain-language pass, 22.10.2026: at 390 px the hero's
+# «RICEVI GRATIS I NUOVI BANDI VIA E-» left «MAIL» alone on the next line); escaped text in, HTML out
+_MAIL = re.compile(r"(?<![\w-])([Ee])-(mail|Mail|MAIL)(?![\w-])")
+
+
+def nobreak_mail(text_html: str) -> str:
+    return _MAIL.sub(r'<span class="nw">\1-\2</span>', text_html)
+
+
 # the halftone lattice of Switzerland, rasterised once from the official 2026 boundaries (reticolo.py)
 LATTICE = json.loads((ROOT / "reticolo.json").read_text(encoding="utf-8")) if (ROOT / "reticolo.json").exists() else None
 
@@ -6339,7 +6350,8 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
          '<div class="glow" aria-hidden="true"></div><div class="in hero-in"><div class="copy">'
          f'<p class="eyebrow">{e(_m("home_eyebrow", span=span, d=formato.date(DATA_DATE)))}</p>'
          f'<h1 id="h1">{h1}</h1><p class="aud">{e(_m("audience"))}</p><p class="lead">{e(_p.lead)}</p>'
-         f'<p class="ctas"><a class="btn" href="{abo}">{e(_m("abo_cta"))}{ARROW}</a></p></div>'
+         # one flex item for the words (the button is a flex box: a bare text and a span would be two)
+         f'<p class="ctas"><a class="btn" href="{abo}"><span>{nobreak_mail(e(_m("abo_cta")))}</span>{ARROW}</a></p></div>'
          f'<div class="sky" data-depth=".55" aria-hidden="true">{home_sky(awards)}</div>'
          # the horizon moves with the pillars it underlines (fix round 2: .85 against their .55 drifted 3-5 px apart)
          f'<div class="doors"><span class="horizon" data-depth=".55" aria-hidden="true"></span>{door1}{door2}'
@@ -6377,7 +6389,7 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
     rank = [(s, p) for s, p in sorted(pages.items(), key=lambda kv: (-kv[1]["n"], -kv[1]["value"]))][:25]
     unit = formato.unit_for(p["value"] for _s, p in rank)
     t = [f'<div class="scroll"><table class="top u{unit}">{cap(_i.firms_cap)}<thead><tr><td class="n0"></td>'
-         f'<th>{_.company}</th><th class="r">{_.awards}</th>{money_th("sum_l", unit)}</tr></thead><tbody>']
+         f'<th>{_.company}</th><th class="r">{_.awards_col}</th>{money_th("sum_l", unit)}</tr></thead><tbody>']
     for i, (s, p) in enumerate(rank, 1):
         t.append(f'<tr><td class="n0">{i:02d}</td><td><a href="{BASE}/{LANG}/unternehmen/{e(s)}/">{e(p["name"])}</a>'
                  + (f'<span class="sub sb2">{e(short_sector(p["sector"], 46))}</span>' if p["sector"] else "")
@@ -6427,7 +6439,7 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
 
     # the alarm band in brass, then every section of the register
     b.append(f'<section class="band alarm" aria-labelledby="h-alarm"><div class="in">'
-             f'<p class="eyebrow">{e(_m("alarm_eyebrow"))}</p><h2 id="h-alarm" data-split>{e(_m("alarm_h2"))}{dot}</h2>'
+             f'<p class="eyebrow">{nobreak_mail(e(_m("alarm_eyebrow")))}</p><h2 id="h-alarm" data-split>{e(_m("alarm_h2"))}{dot}</h2>'
              # how it works, not the promise a third time (fix round 2: eyebrow, heading and this line all said 'free, by
              # e-mail'); the number once, its caption without it
              f'<p class="s">{e(_m("alarm_sub"))}</p><p class="ctas"><a class="btn" href="{abo}">{e(_m("alert_link"))}{ARROW}</a></p>'
@@ -6442,7 +6454,7 @@ def build_home(pages: dict, comp: dict, awards: list, opens: list, cant_list, cp
              f'<a class="tag" href="{BASE}/{LANG}/kanton/">{e(_i.all_cantons)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/branche/">{e(_i.all_divisions)}</a>'
              f'<a class="tag" href="{BASE}/{LANG}/bereich/">{e(_i.all_sectors)}</a>'
-             f'<a class="tag" href="{abo}">{e(_m("abo_cta"))}</a></div></div></div>')
+             f'<a class="tag" href="{abo}">{nobreak_mail(e(_m("abo_cta")))}</a></div></div></div>')
 
     write(f"/{LANG}/index.html", page(
         _m("home_title"), _m("home_desc", n=formato.count(len(awards))),
@@ -6617,16 +6629,20 @@ def build_about(awards: list, opens: list) -> None:
          '<div class="tags" id="methodik" style="margin:22px 0 0">'
          + "".join(f'<a class="tag" href="#{sid}">{e(h)}</a>' for sid, h, _b in u["sections"]) + "</div>",
          '<div class="sec prose" style="padding-top:8px">']
+    def fill(x: str) -> str:
+        # Italian elides before a date read with a vowel ('aggiornato all’08.10.2026', 'dall’11.08.2026')
+        return lingue.it_dates(x.format(**kw)) if LANG == "it" else x.format(**kw)
+
     for sid, h, blocks in u["sections"]:
         b.append(f'<h2 id="{sid}" style="margin:34px 0 10px">{e(h)}</h2>')
         for blk in blocks:
             if isinstance(blk, list):
                 b.append('<ul style="margin:0 0 15px;padding-left:20px;color:var(--muted)">'
-                         + "".join(f'<li style="margin:0 0 8px">{e(x.format(**kw))}</li>' for x in blk) + "</ul>")
+                         + "".join(f'<li style="margin:0 0 8px">{e(fill(x))}</li>' for x in blk) + "</ul>")
             else:
                 # the terms of use as a link (the licence the Dataset names); the national total as a
                 # value controlla.py reconciles with the home and the cantons
-                para = f"<p>{e(blk.format(**kw))}</p>".replace(
+                para = f"<p>{e(fill(blk))}</p>".replace(
                     e(kw["terms"]), f'<a href="{SIMAP_TERMS}">{e(kw["terms"])}</a>', 1)
                 if sid == "aktualisierung" and "{awards}" in blk:
                     para = para.replace(e(kw["awards"]), f'<data value="{len(awards)}" id="total">{e(kw["awards"])}</data>', 1)
@@ -6983,16 +6999,20 @@ def kf_rows(rows: list, comp: dict, pages: dict) -> list:
 
 
 # the key pages, for the search: path under /<lang>/, the label key, and words in any language that find it
-SEARCH_PAGES = (("ueber/", "nav_about", "uber register methodik quelle daten about methodology source a propos "
+# (the plain-language names of 22.10.2026 added, the old ones kept: a reader may still type 'Methodik' or 'avviso')
+SEARCH_PAGES = (("ueber/", "nav_about", "so funktioniert wie comment ca marche come funziona how it works begriffe "
+                 "termes termini terms glossar uber register methodik quelle daten about methodology source a propos "
                  "informazioni metodologia fonte simap kontakt contact"),
-                ("ausschreibungen/abo/", "nav_alert", "abo abonnement alarm alert alerte avviso benachrichtigung "
-                 "newsletter e-mail email mail rss feed"),
+                ("ausschreibungen/abo/", "nav_alert", "abo abonnieren gratis abonnement alarm alert alerte avviso "
+                 "iscriviti iscrizione subscribe benachrichtigung newsletter e-mail email mail rss feed"),
                 ("ausschreibungen/", "nav_tenders", "ausschreibungen offen appels offres bandi aperti tenders open"),
-                ("unternehmen/", "nav_companies", "firmen verzeichnis a-z entreprises imprese companies"),
-                ("auftraggeber/", "nav_buyers", "verzeichnis a-z adjudicateurs committenti authorities"),
+                ("unternehmen/", "nav_companies", "firmen unternehmen verzeichnis a-z entreprises aziende imprese "
+                 "companies"),
+                ("auftraggeber/", "nav_buyers", "verzeichnis a-z acheteurs publics adjudicateurs enti pubblici "
+                 "committenti public buyers authorities"),
                 ("kanton/", "nav_cantons", "kantone cantons cantoni"),
-                ("branche/", "divisions", "branchen branches rami industries cpv"),
-                ("bereich/", "sectors", "bereiche domaines settori sectors cpv"),
+                ("branche/", "divisions", "branchen branches secteurs rami settori industries sectors cpv"),
+                ("bereich/", "sectors", "kategorien bereiche categories domaines categorie cpv"),
                 ("impressum/", "imprint", "impressum mentions legales note legali imprint betreiber"),
                 ("datenschutz/", "privacy", "datenschutz confidentialite privacy cookies"))
 
@@ -7206,6 +7226,9 @@ def _word(mod: str, key: str, l: str) -> str:
         return lingue.IDX["show_all_n"][l]
     if key == "colon":
         return lingue.COLON[l]
+    if mod == "kb" and key == "awards":
+        # the panel's column header: the short form, as every table's (plain-language pass, 22.10.2026)
+        return lingue.T["awards_col"][l]
     for tbl in (lingue.JS, lingue.META, lingue.T, lingue.IDX):
         if key in tbl:
             return tbl[key][l]
@@ -7234,7 +7257,7 @@ JS_VER = [hashlib.sha1("".join(js_module(m) for m in JS_MODULES).encode("utf-8")
 
 def write_scripts() -> None:
     """/stand.js (the day's data and the core) and /js/<module>.js."""
-    data = {"iso": DATA_DATE, "t": {l: lingue.m("stand", l, d="{d}") for l in LANGS}, "B": BASE, "v": JS_VER[0],
+    data = {"iso": DATA_DATE, "t": {}, "B": BASE, "v": JS_VER[0],
             "mo": list(lingue.MONTHS["en"][0]),
             # the nearest deadline of the open tenders (minutes since 1970): until it passes, every count of open
             # tenders on a page is still the build's and /stand.js recounts nothing (fix round 1)
@@ -7246,6 +7269,9 @@ def write_scripts() -> None:
         formato.LANG = l
         data[l] = formato.date(DATA_DATE)
     formato.LANG = LANG
+    # the footer's template per language, from this build's date: Italian elides before the 8th and the 11th
+    # («aggiornato al 22.10.2026», 'Aggiornato all’08.10.2026'; owner, 22.10.2026)
+    data["t"] = {l: lingue.m("stand", l, d=data[l]).replace(data[l], "{d}", 1) for l in LANGS}
     src = js_min((JS_DIR / "stand.js").read_text(encoding="utf-8"))
     assert src.count("__DATA__") == 1
     write("/stand.js", src.replace("__DATA__", json.dumps(data, ensure_ascii=False, separators=(",", ":")), 1))
