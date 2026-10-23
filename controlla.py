@@ -436,15 +436,20 @@ _SEARCH_FORM = re.compile(r'<header class="masthead">.*?<form role="search" acti
 # controls in the familiar imperative as the owner approved them («Ricevi», «Cerca», «Mostra tutti»), so the
 # Lei-form controls are the retired ones now. The about page explains each official term once, in the singular
 # («Zuschlag», «adjudicateur», «committente», «contracting authority»): those stay allowed.
+# Natural-voice pass (owner, 23.10.2026): the office phrasing the owner named goes too, as the site's own words
+# (never a publication's): «a scelta», «per lo più», «in mattinata», «qualora», «suddetto» …; «erfolgt», «mittels»,
+# «gemäss», «zwecks»; «s’effectue», «afin de procéder»; «in order to», «utilise», «commence».
 # A term matches as a whole word; one ending in '*' matches as the start of a word ('E-Mail-Abo*': E-Mail-Abos).
 BANNED_TERMS = {
     "de": ("offene Aufträge", "Submissionen", "E-Mail-Alarm", "Benachrichtigung einrichten", "Login",
            "E-Mail-Abo*", "Daten vom", "Über das Register", "Methodik", "kostenlos*", "Bereiche", "verwandten Bereichen",
            "Unternehmen mit den meisten Zuschlägen", "Zuschläge pro Monat", "Zuschläge nach", "Zuschläge pro Jahr",
-           "Unternehmen finden", "Unternehmen im Register"),
+           "Unternehmen finden", "Unternehmen im Register",
+           "erfolgt", "mittels", "bzgl.", "gemäss", "zwecks"),
     "fr": ("marchés ouverts", "marchés publics en cours", "alerte e-mail", "alertes e-mail", "État des données",
            "Méthodologie", "À propos du registre", "adjudicateurs", "Adjudications par", "Adjudications du",
-           "le plus d’adjudications", "par branche", "Toutes les branches"),
+           "le plus d’adjudications", "par branche", "Toutes les branches",
+           "s’effectue", "afin de procéder"),
     "it": ("appalti aperti", "Vai al contenuto", "Vai all’avviso",
            # the Lei form of a control (the owner: «Ricevi», «Cerca», «Mostra tutti», «Iscriviti gratis»)
            "Si iscriva", "Mostri tutti", "Mostri gli altri", "Cerchi un", "Torni all*", "Azzeri i filtri",
@@ -452,10 +457,13 @@ BANNED_TERMS = {
            "Clicchi", "Tocchi", "Scelga", "Inserisca", "Riceva gratuitamente", "Cercare",
            "avviso e-mail", "avvisi e-mail", "Stato dei dati", "rami", "ramo", "committenti", "Metodologia",
            "Informazioni sul registro", "Imprese con più aggiudicazioni", "Aggiudicazioni al mese",
-           "Aggiudicazioni per", "Ricevere automaticamente"),
+           "Aggiudicazioni per", "Ricevere automaticamente",
+           "a scelta", "per lo più", "in mattinata", "suddett*", "qualora", "in merito a", "vigenti", "effettuare",
+           "procedere a"),
     # fix round 3 (item 40): the term table's 'Open tender'
     "en": ("open contracts", "e-mail*", "Open for bids", "email alert*", "Data as of", "Methodology",
-           "contracting authorities", "industries", "Awards by", "Awards per month", "Companies with the most awards"),
+           "contracting authorities", "industries", "Awards by", "Awards per month", "Companies with the most awards",
+           "in order to", "utilise*", "commence*"),
 }
 
 

@@ -42,8 +42,8 @@ T: dict[str, dict[str, str]] = {
     "tender_open": {"de": "Ausschreibung offen", "fr": "Appel d'offres en cours",
                     "it": "Bando aperto", "en": "Open tender"},
     "sum": {"de": "Summe (CHF)", "fr": "Total (CHF)", "it": "Totale (CHF)", "en": "Total (CHF)"},
-    "sum_published": {"de": "Summe der Beträge in CHF", "fr": "Total des montants en CHF",
-                      "it": "Totale degli importi in CHF", "en": "Total awarded (CHF)"},
+    "sum_published": {"de": "Summe in CHF", "fr": "Total en CHF",
+                      "it": "Totale in CHF", "en": "Total awarded (CHF)"},
     "median": {"de": "Typischer Betrag (Median)", "fr": "Montant typique (médiane)", "it": "Importo tipico (mediana)",
                "en": "Typical amount (median)"},
     # the award lists (company, buyer, a project's lots): no currency in the header, which stood over
@@ -58,7 +58,9 @@ T: dict[str, dict[str, str]] = {
     # the home's company table: the canton where most of the firm's awards fall, not its seat
     "canton_most": {"de": "Kanton mit den meisten Aufträgen", "fr": "Canton comptant le plus de marchés",
                     "it": "Cantone con più appalti", "en": "Canton with the most contracts"},
-    "deadline": {"de": "Eingabefrist", "fr": "Délai de remise", "it": "Termine d'inoltro",
+    # Italian: «Scadenza», the word the lists already used ('Prossime scadenze'); the official «termine
+    # d'inoltro» is explained once on the about page (natural-voice pass, 23.10.2026)
+    "deadline": {"de": "Eingabefrist", "fr": "Délai de remise", "it": "Scadenza",
                  "en": "Submission deadline"},
     "procedure": {"de": "Verfahren", "fr": "Procédure", "it": "Procedura",
                   "en": "Procedure"},
@@ -114,10 +116,8 @@ T: dict[str, dict[str, str]] = {
     "median_help": {
         "de": "Die Hälfte der Aufträge mit zurechenbarem Betrag liegt darüber, die andere Hälfte "
               "darunter.",
-        "fr": "La moitié des marchés dotés d’un montant attribuable se situe au-dessus de ce "
-              "montant, l’autre moitié en dessous.",
-        "it": "Metà degli appalti con un importo attribuibile supera questo valore, l’altra "
-              "metà resta al di sotto.",
+        "fr": "La moitié des marchés avec un montant attribuable est au-dessus, l’autre moitié en dessous.",
+        "it": "Metà degli appalti con un importo attribuibile sta sopra questo valore, metà sotto.",
         "en": "Half of the contracts with an attributable amount are above this figure, half below.",
     },
     "not_published": {
@@ -131,7 +131,7 @@ T: dict[str, dict[str, str]] = {
     "no_own_amount": {
         "de": "kein zurechenbarer Betrag",
         "fr": "pas de montant attribuable",
-        "it": "nessun importo attribuibile",
+        "it": "importo non attribuibile",
         "en": "no attributable amount",
     },
     "main_cantons": {
@@ -171,19 +171,7 @@ PROSE: dict[str, dict[str, str]] = {
         "it": "Chi vince gli appalti pubblici in Svizzera?",
         "en": "Who wins public contracts in Switzerland?",
     },
-    "lead": {
-        # "all awards" promised more than the archive holds: it starts in August 2024, and its
-        # first months are incomplete (the chart below says so)
-        "de": "Die öffentlichen Aufträge, die seit August 2024 vergeben und auf simap.ch publiziert "
-              "wurden, nach Firma geordnet – mit Auftraggeber, Betrag und Verfahren. Dazu die "
-              "Ausschreibungen, die gerade offen sind.",
-        "fr": "Les marchés publics attribués depuis août 2024 et publiés sur simap.ch, présentés "
-              "par entreprise : acheteur public, montant, procédure — et les appels d'offres en cours.",
-        "it": "Gli appalti pubblici aggiudicati da agosto 2024 e pubblicati su simap.ch, raggruppati "
-              "per azienda: ente pubblico, importo, procedura – e i bandi ancora aperti.",
-        "en": "The public contracts awarded since August 2024 and published on simap.ch, arranged by "
-              "company: public buyer, amount, procedure — and the tenders open right now.",
-    },
+    # (the home's "lead" is at the end of the file, in the 'strictly necessary' pass)
     "source_note": {
         "de": "Amtliche Publikationen von Bund, Kantonen und Gemeinden",
         "fr": "Publications officielles de la Confédération, des cantons et des communes",
@@ -209,13 +197,13 @@ PROSE: dict[str, dict[str, str]] = {
     # the footer's first line. In German it stops after the first sentence: the verbatim
     # simap notice right below it already says "Massgebend sind …", and the footer printed
     # two consecutive "Massgebend" sentences on every German page
+    # the same meaning in plainer words (natural-voice pass, 23.10.2026)
     "footer_note": {
-        "de": "Diese Website bereitet öffentlich publizierte Daten auf und ist kein Ersatz für "
-              "simap.ch.",
+        "de": "Diese Website bereitet öffentlich publizierte Daten auf und ersetzt simap.ch nicht.",
         "fr": "Ce site présente des données publiées officiellement et ne remplace pas "
-              "simap.ch. Seules les publications qui y figurent font foi.",
+              "simap.ch. Seules les publications de simap.ch font foi.",
         "it": "Questo sito rielabora dati pubblicati ufficialmente e non sostituisce "
-              "simap.ch. Fanno fede esclusivamente le pubblicazioni che vi figurano.",
+              "simap.ch. Fanno fede solo le pubblicazioni su simap.ch.",
         "en": "This site presents officially published data and does not replace simap.ch. "
               "Only the publications on simap.ch are authoritative.",
     },
@@ -233,35 +221,24 @@ PROSE: dict[str, dict[str, str]] = {
     # closely related one, never "the same sector" (the list shows other exact codes)
     "matched_tenders": {
         "de": "Offene Ausschreibungen in verwandten Kategorien",
-        "fr": "Appels d’offres en cours dans des catégories apparentées",
-        "it": "Bandi aperti in categorie affini",
+        "fr": "Appels d’offres en cours dans des catégories proches",
+        "it": "Bandi aperti in categorie simili",
         "en": "Open tenders in related categories",
     },
-    "matched_note": {
-        "de": "Offene Ausschreibungen mit demselben oder einem eng verwandten CPV-Code (der "
-              "EU-weit einheitlichen Einteilung der Leistungen) wie die bisherigen Aufträge "
-              "dieser Firma.",
-        "fr": "Appels d’offres en cours dont le code CPV (le vocabulaire commun pour les marchés "
-              "publics de l’UE) est identique ou étroitement apparenté à celui de marchés déjà "
-              "remportés par cette entreprise.",
-        "it": "Bandi aperti con un codice CPV (il vocabolario comune per gli appalti pubblici dell’UE) "
-              "uguale o affine a quello degli appalti già vinti da questa azienda.",
-        "en": "Tenders still open whose CPV code (the EU’s Common Procurement Vocabulary) is the same "
-              "as, or closely related to, that of the contracts this company has already won.",
-    },
+    # (the note under it, "matched_note", is at the end of the file, in the 'strictly necessary' pass)
     # grouped on the first four significant CPV digits of the main code: related sectors,
     # not one exact code (the same wording as the matched tenders above it)
     "peers": {
-        "de": "Weitere Firmen in verwandten Kategorien", "fr": "Autres entreprises dans des catégories apparentées",
-        "it": "Altre aziende in categorie affini", "en": "Other companies in related categories",
+        "de": "Weitere Firmen in verwandten Kategorien", "fr": "Autres entreprises dans des catégories proches",
+        "it": "Altre aziende in categorie simili", "en": "Other companies in related categories",
     },
     "analysis": {
         "de": "Aufträge pro Jahr", "fr": "Marchés par année", "it": "Appalti per anno", "en": "Contracts per year",
     },
+    # our own figures, marked as such (simap's terms §5): said by the one who worked them out
     "derived": {
-        "de": "eigene Auswertung der Publikationen", "fr": "analyse établie à partir des "
-                                                        "publications",
-        "it": "elaborazione propria dei dati pubblicati", "en": "our analysis of the published data",
+        "de": "von uns aus den Publikationen berechnet", "fr": "calculé par nous à partir des publications",
+        "it": "calcolato da noi sui dati pubblicati", "en": "worked out by us from the published data",
     },
     "open_tenders_h1": {
         "de": "Offene Ausschreibungen in der Schweiz",
@@ -301,12 +278,13 @@ META: dict[str, dict[str, str]] = {
     # for a long company name: the awards it won (a buyer page's short suffix is ' — Aufträge')
     "company_title_short": {"de": " — Aufträge", "fr": " — marchés", "it": " — appalti",
                             "en": " — contracts"},
+    # natural-voice pass (owner, 23.10.2026): who did what, with a verb ('Implenia Schweiz AG hat 102 Aufträge
+    # gewonnen'); {n} is the count with its noun, {span} ' (Okt. 2024 – Okt. 2026)', {val} ', zusammen …'
     "company_desc": {
-        "de": "{name}: {n} auf simap.ch{span}{val} – mit Auftraggebern, Beträgen und Kantonen.",
-        "fr": "{name} : {n} publiés sur simap.ch{span}{val}. Acheteurs publics, montants, cantons.",
-        "it": "{name}: {n} pubblicati su simap.ch{span}{val}. Enti pubblici, importi e cantoni.",
-        "en": "{name}: {n} published on simap.ch{span}{val}, with public buyers, "
-              "amounts and cantons.",
+        "de": "{name} hat {n} gewonnen{span}{val} – laut simap.ch. Mit Auftraggebern, Beträgen und Kantonen.",
+        "fr": "{name} a remporté {n}{span}{val}, selon simap.ch. Acheteurs publics, montants et cantons.",
+        "it": "{name} ha vinto {n}{span}{val}, secondo simap.ch. Con enti pubblici, importi e cantoni.",
+        "en": "{name} has won {n}{span}{val}, according to simap.ch. With public buyers, amounts and cantons.",
     },
     "company_val": {
         "de": ", zusammen {v}",
@@ -316,22 +294,17 @@ META: dict[str, dict[str, str]] = {
     },
     "top_buyer_share": {
         "de": "Häufigster Auftraggeber: {buyer} ({share} der Aufträge).",
-        "fr": "Principal acheteur public : {buyer} ({share} de ses marchés).",
-        "it": "Ente pubblico principale: {buyer} ({share} degli appalti).",
+        "fr": "Acheteur public le plus fréquent : {buyer} ({share} des marchés).",
+        "it": "Ente pubblico più frequente: {buyer} ({share} degli appalti).",
         "en": "Most frequent public buyer: {buyer} ({share} of contracts).",
     },
     "top_buyer_only": {
-        "de": "Einziger Auftraggeber: {buyer}.",
-        "fr": "Seul acheteur public : {buyer}.",
-        "it": "Unico ente pubblico: {buyer}.",
-        "en": "Sole public buyer: {buyer}.",
+        "de": "Alle Aufträge stammen von {buyer}.",
+        "fr": "Tous les marchés viennent de {buyer}.",
+        "it": "Tutti gli appalti vengono da {buyer}.",
+        "en": "All contracts come from {buyer}.",
     },
-    "company_lead": {
-        "de": "Laut simap.ch hat diese Firma {n} gewonnen{span}, vergeben von {b}.",
-        "fr": "Selon simap.ch, cette entreprise a remporté {n}{span}, attribués par {b}.",
-        "it": "Secondo simap.ch questa azienda ha vinto {n}{span}, aggiudicati da {b}.",
-        "en": "According to simap.ch, this company won {n}{span}, awarded by {b}.",
-    },
+    # (the company page's lead, "company_lead", is at the end of the file, in the 'strictly necessary' pass)
     "buyers_count": {"de": "{k} verschiedenen Auftraggebern", "fr": "{k} acheteurs publics différents",
                      "it": "{k} enti pubblici diversi", "en": "{k} different public buyers"},
     "award_suffix": {"de": " — vergeben", "fr": " — attribué", "it": " — aggiudicato",
@@ -344,17 +317,12 @@ META: dict[str, dict[str, str]] = {
     "buyer_title_short": {"de": " — Aufträge", "fr": " — marchés", "it": " — appalti",
                           "en": " — contracts"},
     "buyer_desc": {
-        "de": "{name}: {n} an {f} vergeben, publiziert auf simap.ch.",
-        "fr": "{name} : {n} attribués à {f}, publiés sur simap.ch.",
-        "it": "{name}: {n} aggiudicati a {f}, pubblicati su simap.ch.",
-        "en": "{name}: {n} awarded to {f}, published on simap.ch.",
+        "de": "{name} hat {n} an {f} vergeben, laut simap.ch.",
+        "fr": "{name} a attribué {n} à {f}, selon simap.ch.",
+        "it": "{name} ha aggiudicato {n} a {f}, secondo simap.ch.",
+        "en": "{name} has awarded {n} to {f}, according to simap.ch.",
     },
-    "buyer_lead": {
-        "de": "Dieser Auftraggeber hat {n} an {f} vergeben und auf simap.ch publiziert.",
-        "fr": "{n} attribués à {f} et publiés sur simap.ch.",
-        "it": "{n} aggiudicati a {f} e pubblicati su simap.ch.",
-        "en": "{n} awarded to {f} and published on simap.ch.",
-    },
+    # (the buyer page's lead, "buyer_lead", is at the end of the file)
     "buyer_joint_note": {
         "de": "{k} Aufträge gingen an mehrere Firmen.",
         "fr": "{k} marchés ont été attribués à plusieurs entreprises.",
@@ -368,35 +336,16 @@ META: dict[str, dict[str, str]] = {
     "canton_suffix": {"de": " — wer sie gewinnt", "fr": " — qui les remporte",
                       "it": " — chi li vince", "en": " — who wins them"},
     "canton_desc": {
-        "de": "{n} im Kanton {name} an {f} vergeben, publiziert auf simap.ch – mit Beträgen, Branchen "
-              "und Verlauf pro Monat.",
-        "fr": "{n} dans le canton {of} attribués à {f} (simap.ch) : montants, secteurs et "
-              "évolution mensuelle.",
-        "it": "{n} nel Canton {name} aggiudicati a {f} e pubblicati su simap.ch: importi, settori e "
-              "andamento mensile.",
-        "en": "{n} awarded to {f} in the canton of {name}, published on simap.ch, with amounts, "
-              "sectors and monthly trend.",
+        "de": "Im Kanton {name} gingen {n} an {f}: Beträge, Branchen und Verlauf Monat für Monat, laut simap.ch.",
+        "fr": "Dans le canton {of}, {n} ont été attribués à {f} : montants, secteurs et évolution mois par mois, "
+              "selon simap.ch.",
+        "it": "Nel Canton {name} {n} sono andati a {f}: importi, settori e andamento mese per mese, secondo "
+              "simap.ch.",
+        "en": "In the canton of {name}, {n} went to {f}: amounts, sectors and the month-by-month trend, according "
+              "to simap.ch.",
     },
-    # the canton pages count awards by the canton where the contract is carried out; many
-    # were published by companies owned by the state (airport, utilities), not by offices
-    "canton_lead": {
-        "de": "Für Arbeiten und Lieferungen im Kanton {name} wurden {n} an {f} vergeben und auf simap.ch "
-              "publiziert.",
-        "fr": "Dans le canton {of}, {n} ont été attribués à {f} et publiés sur simap.ch.",
-        "it": "Per lavori e forniture nel Canton {name} sono stati aggiudicati {n} a {f}, "
-              "pubblicati su simap.ch.",
-        "en": "For work and supplies in the canton of {name}, {n} were awarded to {f} and published "
-              "on simap.ch.",
-    },
-    "canton_lead_one": {
-        "de": "Für Arbeiten und Lieferungen im Kanton {name} wurde {n} an {f} vergeben und auf simap.ch "
-              "publiziert.",
-        "fr": "Dans le canton {of}, {n} a été attribué à {f} et publié sur simap.ch.",
-        "it": "Per lavori e forniture nel Canton {name} è stato aggiudicato {n} a {f}, "
-              "pubblicato su simap.ch.",
-        "en": "For work and supplies in the canton of {name}, {n} was awarded to {f} and published "
-              "on simap.ch.",
-    },
+    # (the canton page's lead, "canton_lead", is at the end of the file: the canton pages count awards by the
+    # canton where the contract is carried out; many were published by companies owned by the state)
     "sector_suffix": {"de": " – CPV {code}", "fr": " – CPV {code}",
                       "it": " – CPV {code}", "en": " – CPV {code}"},
     # with the keyword a searcher types, where the sector's name leaves room for it
@@ -405,112 +354,103 @@ META: dict[str, dict[str, str]] = {
     # the project number at the end of an award or tender <title>, where two pages share a title
     "title_no": {"de": "Nr. {n}", "fr": "n°\u00a0{n}", "it": "n. {n}", "en": "no. {n}"},
     "sector_desc": {
-        "de": "{n} an {f} in der Kategorie «{label}», publiziert auf simap.ch.",
-        "fr": "{n} attribués à {f} dans la catégorie « {label} », publiés sur simap.ch.",
-        "it": "{n} aggiudicati a {f} nella categoria «{label}», pubblicati su simap.ch.",
-        "en": "{n} awarded to {f} in the “{label}” category, published on simap.ch.",
+        "de": "In der Kategorie «{label}» gingen {n} an {f}, laut simap.ch.",
+        "fr": "Dans la catégorie « {label} », {n} ont été attribués à {f}, selon simap.ch.",
+        "it": "Nella categoria «{label}» {n} sono andati a {f}, secondo simap.ch.",
+        "en": "In the “{label}” category, {n} went to {f}, according to simap.ch.",
     },
-    "sector_lead": {"de": "{n} an {f} in dieser Kategorie.",
-                    "fr": "{n} attribués à {f} dans cette catégorie.",
-                    "it": "{n} aggiudicati a {f} in questa categoria.",
-                    "en": "{n} awarded to {f} in this category."},
+    "sector_lead": {"de": "In dieser Kategorie gingen {n} an {f}.",
+                    "fr": "Dans cette catégorie, {n} ont été attribués à {f}.",
+                    "it": "In questa categoria {n} sono andati a {f}.",
+                    "en": "In this category, {n} went to {f}."},
     "home_title": {"de": "Öffentliche Aufträge Schweiz — wer welche Aufträge gewinnt",
                    "fr": "Marchés publics suisses — qui remporte quels marchés",
                    "it": "Appalti pubblici svizzeri — chi vince quali appalti",
                    "en": "Swiss Public Contracts — who wins which contracts"},
     "home_desc": {
-        "de": "{n} vergebene öffentliche Aufträge aus simap.ch, nach Firma geordnet: wer in der "
-              "Schweiz welche Aufträge gewinnt und zu welchem Betrag.",
-        "fr": "{n} marchés publics attribués et publiés sur simap.ch, présentés par entreprise : qui "
-              "remporte quels marchés en Suisse et pour quel montant.",
-        "it": "{n} appalti pubblici aggiudicati e pubblicati su simap.ch, raggruppati per azienda: chi "
-              "vince quali appalti in Svizzera e per quale importo.",
-        "en": "{n} public contracts awarded and published on simap.ch, arranged by company: who wins "
-              "which contracts in Switzerland and for how much.",
+        "de": "Wer gewinnt die öffentlichen Aufträge in der Schweiz – und zu welchem Betrag? {n} vergebene "
+              "Aufträge von simap.ch, nach Firma geordnet.",
+        "fr": "Qui remporte les marchés publics en Suisse, et pour quel montant ? {n} marchés attribués, publiés "
+              "sur simap.ch et classés par entreprise.",
+        "it": "Chi vince gli appalti pubblici in Svizzera, e per quanto? {n} appalti aggiudicati, pubblicati su "
+              "simap.ch e ordinati per azienda.",
+        "en": "Who wins public contracts in Switzerland, and for how much? {n} contracts awarded, published on "
+              "simap.ch and sorted by company.",
     },
     "open_title": {"de": "Öffentliche Ausschreibungen Schweiz: {n} offen",
                    "fr": "Appels d’offres publics en Suisse : {n} en cours",
                    "it": "Bandi di gara in Svizzera: {n} aperti",
                    "en": "Public tenders in Switzerland: {n} open"},
     "open_desc": {
-        "de": "Offene Ausschreibungen von Bund, Kantonen und Gemeinden auf simap.ch an einem Ort: "
-              "nach Frist, Kanton und Branche. Ohne Konto, gratis auch per E-Mail.",
-        "fr": "Appels d’offres publics en cours de la Confédération, des cantons et des communes publiés "
-              "sur simap.ch, par délai, canton et secteur. Sans compte, aussi par e-mail, gratuitement.",
-        "it": "Bandi aperti di Confederazione, Cantoni e Comuni pubblicati su simap.ch, in un unico posto: per "
-              "scadenza, cantone e settore. Senza account, gratis anche via e-mail.",
-        "en": "Open public tenders from the Confederation, cantons and communes published on simap.ch, in one "
-              "place, by deadline, canton and sector. No account, free by email too.",
+        "de": "Offene Ausschreibungen von Bund, Kantonen und Gemeinden an einem Ort. Nach Frist, Kanton und "
+              "Branche filtern – oder gratis per E-Mail erhalten.",
+        "fr": "Les appels d’offres en cours de la Confédération, des cantons et des communes, réunis ici. Par "
+              "délai, canton et secteur – aussi par e-mail, gratuitement.",
+        "it": "I bandi aperti di Confederazione, Cantoni e Comuni in un unico posto. Filtra per scadenza, "
+              "cantone e settore, o ricevili gratis via e-mail.",
+        "en": "Open tenders from the Confederation, cantons and communes in one place. Filter by deadline, "
+              "canton and sector – or get them by email, free.",
     },
+    # the hub's 'how to read this list', behind a <details>: what is listed and in which order; when it is updated
+    # the paragraph under it says
     "open_lead": {
-        "de": "{n} öffentliche Ausschreibungen mit noch offener Eingabefrist, publiziert von "
-              "Bund, Kantonen und Gemeinden auf simap.ch – nach Frist geordnet, nach Kanton und "
-              "Branche gegliedert, in der Regel werktags aktualisiert.",
-        "fr": "{n} appels d’offres publics dont le délai de remise des offres court encore, publiés sur "
-              "simap.ch par la Confédération, les cantons et les communes – par ordre d’échéance, "
-              "consultables par canton et par secteur, mis à jour en règle générale les jours ouvrables.",
-        "it": "{n} bandi di gara ancora aperti, pubblicati da Confederazione, Cantoni e Comuni "
-              "su simap.ch: ordinati per scadenza, suddivisi per cantone e settore, aggiornati di norma "
-              "nei giorni feriali.",
-        "en": "{n} public tenders with a deadline still open, published by the Confederation, "
-              "cantons and communes on simap.ch – sorted by deadline, grouped by canton and "
-              "sector, usually updated Monday to Saturday.",
+        "de": "{n} Ausschreibungen von Bund, Kantonen und Gemeinden, deren Eingabefrist noch läuft – publiziert "
+              "auf simap.ch. Wir ordnen sie nach Frist und gliedern sie nach Kanton und Branche.",
+        "fr": "{n} appels d’offres de la Confédération, des cantons et des communes dont le délai court encore, "
+              "publiés sur simap.ch. Nous les classons par délai, par canton et par secteur.",
+        "it": "{n} bandi ancora aperti di Confederazione, Cantoni e Comuni, pubblicati su simap.ch. Li "
+              "ordiniamo per scadenza e li raggruppiamo per cantone e settore.",
+        "en": "{n} tenders from the Confederation, cantons and communes whose deadline is still open, published "
+              "on simap.ch. We sort them by deadline and group them by canton and sector.",
     },
     # no heading may promise a search the page does not have ("Ausschreibungen suchen: So
     # funktioniert es"; audit 13.10.2026)
     "open_howto_h2": {
         "de": "So ist die Liste aufgebaut",
-        "fr": "Comment cette liste est organisée",
-        "it": "Come è organizzato l’elenco",
-        "en": "How this list is organised",
+        "fr": "Comment lire cette liste",
+        "it": "Come leggere l’elenco",
+        "en": "How to read this list",
     },
     "open_howto": {
-        "de": "Die Tabelle zeigt die Ausschreibungen mit der nächsten Eingabefrist zuerst. Jede "
-              "Zeile führt zur Ausschreibung mit Auftraggeber, Frist, Kategorie (CPV-Code nach der "
-              "EU-weit einheitlichen Einteilung der Leistungen) und dem Link zur amtlichen "
-              "Publikation. Über die Kantonsseiten finden Sie Ausschreibungen in Ihrer Region, "
-              "über die Branchenseiten Ausschreibungen für Ihr Gewerbe: Bauarbeiten, Planung, "
-              "IT, Versicherungen, Fahrzeuge und mehr. Die Daten stammen von der amtlichen "
-              "Plattform simap.ch und werden in der Regel werktags aktualisiert, nachdem simap.ch die "
-              "Publikationen des Tages freigegeben hat.",
-        "fr": "Le tableau présente d’abord les appels d’offres dont le délai est le plus proche. "
-              "Chaque ligne ouvre la fiche de l’appel d’offres : acheteur public, délai, catégorie "
-              "(code CPV) et lien vers la publication officielle. Les pages cantonales regroupent les "
-              "appels d’offres de votre région, les pages par secteur ceux de votre métier : "
-              "construction, études, informatique, assurances, véhicules, etc. Les données "
-              "proviennent de la plateforme officielle simap.ch et sont mises à jour en règle "
-              "générale les jours ouvrables, après que simap.ch a mis en ligne les publications du jour.",
-        "it": "La tabella mostra per primi i bandi con la scadenza più vicina. Ogni riga rimanda "
-              "alla scheda del bando, con ente pubblico, scadenza, categoria (codice CPV) e link alla "
-              "pubblicazione ufficiale. Le pagine dei cantoni raccolgono i bandi di una regione, "
-              "quelle dei settori i bandi di un mestiere: edilizia, progettazione, "
-              "informatica, assicurazioni, veicoli e altro. I dati provengono dalla piattaforma "
-              "ufficiale simap.ch e sono aggiornati di norma nei giorni feriali, dopo che simap.ch ha "
-              "reso disponibili le pubblicazioni del giorno.",
-        "en": "The table lists the tenders with the nearest deadline first. Each row leads to "
-              "the tender, with the public buyer, the deadline, the category (CPV code) and "
-              "a link to the official publication. Canton pages list the tenders in your region; "
-              "sector pages list those in your line of work: construction, engineering, IT, "
-              "insurance, vehicles and more. The data comes from simap.ch, the official "
-              "platform, and is usually refreshed Monday to Saturday, after simap.ch releases the day’s "
-              "publications.",
+        "de": "Oben stehen die Ausschreibungen, deren Frist zuerst abläuft. Jede Zeile führt zur Ausschreibung: "
+              "Auftraggeber, Frist, Kategorie (CPV-Code) und Link zur amtlichen Publikation. Auf den "
+              "Kantonsseiten finden Sie die Ausschreibungen Ihrer Region, auf den Branchenseiten die für Ihr "
+              "Gewerbe: Bau, Planung, IT, Versicherungen, Fahrzeuge und mehr. Die Daten stammen von simap.ch, der "
+              "amtlichen Plattform. Wir aktualisieren sie in der Regel werktags, sobald simap.ch die Publikationen "
+              "des Tages freigegeben hat.",
+        "fr": "En haut, les appels d’offres dont le délai expire en premier. Chaque ligne ouvre la fiche de "
+              "l’appel d’offres : acheteur public, délai, catégorie (code CPV) et lien vers la publication "
+              "officielle. Les pages des cantons montrent les appels d’offres de votre région, celles des secteurs "
+              "ceux de votre métier : construction, études, informatique, assurances, véhicules, etc. Les données "
+              "viennent de simap.ch, la plateforme officielle. Nous les mettons à jour en règle générale les jours "
+              "ouvrables, dès que simap.ch a mis en ligne les publications du jour.",
+        "it": "In cima trovi i bandi che scadono prima. Ogni riga apre la scheda del bando: ente pubblico, "
+              "scadenza, categoria (codice CPV) e link alla pubblicazione ufficiale. Nelle pagine dei cantoni "
+              "trovi i bandi della tua regione, in quelle dei settori i bandi del tuo mestiere: edilizia, "
+              "progettazione, informatica, assicurazioni, veicoli e altro. I dati vengono da simap.ch, la "
+              "piattaforma ufficiale. Li aggiorniamo di norma nei giorni feriali, dopo che simap.ch ha messo a "
+              "disposizione le pubblicazioni del giorno.",
+        "en": "The tenders that close first are at the top. Each row opens the tender: public buyer, deadline, "
+              "category (CPV code) and a link to the official publication. Canton pages show the tenders in "
+              "your region, sector pages those in your line of work: construction, engineering, IT, insurance, "
+              "vehicles and more. The data comes from simap.ch, the official platform. We usually update it "
+              "Monday to Saturday, once simap.ch has released the day’s publications.",
     },
     "open_by_canton_h2": {
         "de": "Offene Ausschreibungen nach Kanton", "fr": "Appels d’offres en cours par canton",
         "it": "Bandi aperti per cantone", "en": "Open tenders by canton",
     },
     "open_canton_lede": {
-        "de": "Klicken Sie auf einen Kanton, um seine offenen Ausschreibungen nach Eingabefrist geordnet "
-              "zu sehen.",
+        "de": "Klicken Sie auf einen Kanton, um seine offenen Ausschreibungen zu sehen – nach Frist geordnet.",
         "fr": "Cliquez sur un canton pour voir ses appels d’offres en cours, par ordre d’échéance.",
-        "it": "Un clic su un cantone mostra i suoi bandi aperti, ordinati per scadenza.",
+        "it": "Clicca su un cantone per vedere i suoi bandi aperti, in ordine di scadenza.",
         "en": "Click a canton to see its open tenders, sorted by deadline.",
     },
     # fix round 3: on a touch screen the map is tapped
     "open_canton_lede_tap": {
-        "de": "Tippen Sie auf einen Kanton, um seine offenen Ausschreibungen nach Eingabefrist geordnet zu sehen.",
+        "de": "Tippen Sie auf einen Kanton, um seine offenen Ausschreibungen zu sehen – nach Frist geordnet.",
         "fr": "Touchez un canton pour voir ses appels d’offres en cours, par ordre d’échéance.",
-        "it": "Un tocco su un cantone mostra i suoi bandi aperti, ordinati per scadenza.",
+        "it": "Tocca un cantone per vedere i suoi bandi aperti, in ordine di scadenza.",
         "en": "Tap a canton to see its open tenders, sorted by deadline.",
     },
     "open_by_sector_h2": {
@@ -550,39 +490,27 @@ META: dict[str, dict[str, str]] = {
                   "fr": "Appels d’offres par e-mail ou flux RSS – gratuit",
                   "it": "Bandi via e-mail o feed RSS – gratis",
                   "en": "Tenders by email or RSS feed – free"},
-    "abo_desc": {"de": "Neue öffentliche Ausschreibungen der Schweiz gratis per E-Mail, nach Kanton und Branche – "
-                       "oder als RSS-Feed. Quelle: simap.ch.",
-                 "fr": "Les nouveaux appels d’offres publics en Suisse, gratuitement par e-mail, par canton et par "
-                       "secteur – ou par flux RSS. Source : simap.ch.",
-                 "it": "I nuovi bandi pubblici in Svizzera gratis via e-mail, per cantone e settore – "
-                       "oppure via feed RSS. Fonte: simap.ch.",
-                 "en": "New Swiss public tenders by email, free, by canton and sector – or as an RSS feed. "
-                       "Source: simap.ch."},
+    "abo_desc": {"de": "Erhalten Sie neue öffentliche Ausschreibungen der Schweiz gratis per E-Mail, nach Kanton "
+                       "und Branche – oder als RSS-Feed. Quelle: simap.ch.",
+                 "fr": "Recevez gratuitement par e-mail les nouveaux appels d’offres publics en Suisse, par canton "
+                       "et par secteur – ou suivez-les par flux RSS. Source : simap.ch.",
+                 "it": "Ricevi gratis via e-mail i nuovi bandi pubblici in Svizzera, per cantone e settore, oppure "
+                       "seguili con un feed RSS. Fonte: simap.ch.",
+                 "en": "Get new Swiss public tenders by email, free, by canton and sector – or follow them by RSS "
+                       "feed. Source: simap.ch."},
     "abo_h1": {"de": "Ausschreibungen per E-Mail",
                "fr": "Appels d’offres par e-mail",
                "it": "Bandi via e-mail",
                "en": "Tenders by email"},
-    "abo_lead": {"de": "An jedem Werktag erscheinen auf simap.ch neue Ausschreibungen. Wählen Sie Kantone und "
-                       "Branchen: Die passenden neuen Ausschreibungen kommen per E-Mail — gratis, ohne Konto.",
-                 "fr": "Chaque jour ouvrable, de nouveaux appels d'offres paraissent sur simap.ch. Choisissez les "
-                       "cantons et les secteurs qui vous intéressent : nous vous envoyons les nouveaux appels "
-                       "d’offres correspondants — gratuitement, sans compte.",
-                 "it": "Ogni giorno feriale su simap.ch escono nuovi bandi. Basta scegliere cantoni e settori: "
-                       "i nuovi bandi adatti arrivano via e-mail – gratis, senza account.",
-                 "en": "New tenders appear on simap.ch every day from Monday to Saturday. Choose your cantons and "
-                       "sectors, and we will send you the new ones by email – free, no account needed."},
-    "abo_rss_h2": {"de": "Per RSS-Feed (bei jeder Aktualisierung, ohne Anmeldung)",
-                   "fr": "Par flux RSS (à chaque mise à jour, sans inscription)",
-                   "it": "Via feed RSS (a ogni aggiornamento, senza iscrizione)",
-                   "en": "By RSS feed (at every update, no sign-up)"},
+    # (the page's lead, "abo_lead", and the RSS heading, "abo_rss_h2", are at the end of the file)
     "abo_rss_text": {"de": "Jede Kantons- und Branchenseite hat einen Feed. Fügen Sie die Adresse in Ihren "
                            "Feed-Reader, in Outlook (RSS-Abonnements) oder in einen RSS-zu-E-Mail-Dienst ein.",
                      "fr": "Chaque page de canton et de secteur a son propre flux. Ajoutez son "
                            "adresse à votre lecteur de flux, à Outlook (abonnements RSS) ou à un "
                            "service qui transforme les flux RSS en e-mails.",
-                     "it": "Ogni pagina di cantone e di settore ha il proprio feed. L’indirizzo si "
-                           "aggiunge al proprio lettore di feed, a Outlook (abbonamenti RSS) o a "
-                           "un servizio che inoltra i feed RSS via e-mail.",
+                     "it": "Ogni pagina di cantone e di settore ha il suo feed. Aggiungi l’indirizzo al tuo "
+                           "lettore di feed, a Outlook (abbonamenti RSS) o a un servizio che ti inoltra i feed "
+                           "via e-mail.",
                      "en": "Every canton and sector page has its own feed. Add its address to "
                            "your feed reader, to Outlook (RSS subscriptions) or to an "
                            "RSS-to-email service."},
@@ -593,26 +521,18 @@ META: dict[str, dict[str, str]] = {
                       "en": "Feeds by sector"},
     "abo_check_title": {"de": "Fast geschafft: Bitte bestätigen Sie Ihre E-Mail-Adresse",
                         "fr": "Plus qu’une étape : confirmez votre adresse e-mail",
-                        "it": "Quasi fatto: manca la conferma dell’indirizzo e-mail",
+                        "it": "Quasi fatto: conferma il tuo indirizzo e-mail",
                         "en": "Almost done: please confirm your email address"},
-    "abo_check": {"de": "Wir haben Ihnen eine E-Mail geschickt. Klicken Sie auf den Bestätigungslink darin – erst "
-                        "dann ist Ihr Abo aktiv.",
-                  "fr": "Nous vous avons envoyé un e-mail. Cliquez sur le lien de confirmation qu’il contient – "
-                        "votre abonnement ne sera actif qu’après ce clic.",
-                  "it": "È appena partita un’e-mail con un link di conferma: l’iscrizione è attiva solo dopo "
-                        "il clic su quel link.",
-                  "en": "We have sent you an email. Click the confirmation link in it – your subscription starts "
-                        "only after that."},
+    # the click on the link is what starts the subscription (double opt-in)
+    "abo_check": {"de": "Wir haben Ihnen eine E-Mail geschickt. Klicken Sie auf den Link darin, um Ihr Abo zu "
+                        "aktivieren.",
+                  "fr": "Nous vous avons envoyé un e-mail. Cliquez sur le lien qu’il contient pour activer votre "
+                        "abonnement.",
+                  "it": "Ti abbiamo mandato un’e-mail. Clicca sul link che trovi dentro per attivare l’iscrizione.",
+                  "en": "We’ve sent you an email. Click the link in it to start your subscription."},
     "abo_ok_title": {"de": "Anmeldung bestätigt", "fr": "Abonnement confirmé", "it": "Iscrizione confermata",
                      "en": "Subscription confirmed"},
-    "abo_ok": {"de": "Ihr Abo ist aktiv. Abmelden können Sie sich jederzeit über den Link am Ende "
-                     "jeder E-Mail.",
-               "fr": "Votre abonnement est actif. Vous pouvez vous désabonner à tout moment par le lien au "
-                     "bas de chaque e-mail.",
-               "it": "L’iscrizione è attiva. Per cancellarsi basta il link in fondo a ogni e-mail, in "
-                     "qualsiasi momento.",
-               "en": "Your subscription is active. You can unsubscribe at any time with the link at the bottom "
-                     "of any email."},
+    # (the done page's first line, "abo_ok", is at the end of the file)
     "abo_back": {"de": "Zurück zur Anmeldung", "fr": "Retour à l’inscription", "it": "Torna all’iscrizione",
                  "en": "Back to sign-up"},
     # the form's heading says what to do; its button the short call (owner, 22.10.2026)
@@ -620,53 +540,27 @@ META: dict[str, dict[str, str]] = {
                     "it": "Scegli cantoni e settori", "en": "Choose cantons and sectors"},
     "abo_form_email": {"de": "E-Mail-Adresse", "fr": "Adresse e-mail", "it": "Indirizzo e-mail",
                        "en": "Email address"},
-    "abo_form_cantons": {"de": "Kantone (keine Auswahl = ganze Schweiz)", "fr": "Cantons (aucun choix = toute la Suisse)",
-                         "it": "Cantoni (nessuna scelta = tutta la Svizzera)",
-                         "en": "Cantons (none selected = all of Switzerland)"},
-    "abo_form_sectors": {"de": "Branchen (keine Auswahl = alle)", "fr": "Secteurs (aucun choix = tous)",
-                         "it": "Settori (nessuna scelta = tutti)", "en": "Sectors (none selected = all)"},
+    # what an empty choice means, said as one would say it
+    "abo_form_cantons": {"de": "Kantone (ohne Auswahl: ganze Schweiz)", "fr": "Cantons (sans choix : toute la Suisse)",
+                         "it": "Cantoni (se non ne scegli nessuno: tutta la Svizzera)",
+                         "en": "Cantons (none chosen: all of Switzerland)"},
+    "abo_form_sectors": {"de": "Branchen (ohne Auswahl: alle)", "fr": "Secteurs (sans choix : tous)",
+                         "it": "Settori (se non ne scegli nessuno: tutti)", "en": "Sectors (none chosen: all)"},
     "abo_form_submit": {"de": "Gratis abonnieren", "fr": "S'abonner gratuitement", "it": "Iscriviti gratis",
                         "en": "Subscribe free"},
-    # an e-mail only on a day with new matching tenders: "an jedem Werktag eine E-Mail" promised one
-    # every working day, and none goes out without a match (08.10.2026)
-    "abo_form_consent": {"de": "Sie erhalten zuerst eine E-Mail mit einem Bestätigungslink; erst "
-                               "danach ist das Abo aktiv. Von da an erhalten Sie eine E-Mail, wenn "
-                               "neue Ausschreibungen erscheinen, die zu Ihrer Auswahl passen – an "
-                               "Tagen ohne solche Ausschreibungen keine. Abmelden können Sie sich "
-                               "jederzeit über den Link in jeder E-Mail. Anmeldung und Versand "
-                               "über Brevo (EU).",
-                         "fr": "Vous recevrez d’abord un e-mail contenant un lien de "
-                               "confirmation : l’abonnement ne sera actif qu’après votre clic. "
-                               "Ensuite, un e-mail vous présentera les nouveaux appels d’offres "
-                               "correspondant à votre sélection, les jours où il en paraît ; les "
-                               "autres jours, vous n’en recevrez pas. Vous "
-                               "pouvez vous désabonner à tout moment grâce au lien présent dans "
-                               "chaque e-mail. L’inscription et l’envoi passent par Brevo (UE).",
-                         "it": "Prima arriva un’e-mail con un link di conferma: l’iscrizione è attiva "
-                               "solo dopo il clic su quel link. In seguito arriva un’e-mail nei giorni "
-                               "in cui escono nuovi bandi adatti alla scelta fatta; negli altri giorni "
-                               "nessuna. Per cancellarsi basta il link presente in ogni e-mail, in "
-                               "qualsiasi momento. Iscrizione e invio tramite Brevo (UE).",
-                         "en": "You will first receive an email with a confirmation link; your "
-                               "subscription starts only once you click it. After that, you will "
-                               "receive an email on days when new tenders matching your selection "
-                               "appear, and none on other days. "
-                               "You can unsubscribe at any time via the link in every email. "
-                               "Subscriptions and sending are handled by Brevo (EU)."},
-    "abo_form_sending": {"de": "Wird gesendet …", "fr": "Envoi en cours…", "it": "Invio in corso…",
+    # (the consent under the button, "abo_form_consent", is at the end of the file: an e-mail only on a day with
+    # new matching tenders, none without a match, 08.10.2026)
+    "abo_form_sending": {"de": "Wird gesendet\u00a0…", "fr": "Envoi en cours…", "it": "Invio in corso…",
                          "en": "Sending…"},
     "abo_form_ok": {"de": "Fast geschafft: Bitte klicken Sie auf den Link in der E-Mail, die wir Ihnen gerade geschickt haben.",
-                    "fr": "Plus qu’une étape : cliquez sur le lien contenu dans l’e-mail que "
-                          "nous venons de vous envoyer.",
-                    "it": "Quasi fatto: manca solo il clic sul link nell’e-mail appena inviata.",
-                    "en": "Almost done: please click the link in the email we have just sent you."},
-    "abo_form_err": {"de": "Die Anmeldung ist fehlgeschlagen. Bitte prüfen Sie die E-Mail-Adresse oder "
-                           "schreiben Sie an {mail}.",
-                     "fr": "L’inscription n’a pas abouti. Vérifiez l’adresse e-mail ou écrivez à "
+                    "fr": "Plus qu’une étape : cliquez sur le lien de l’e-mail que nous venons de vous envoyer.",
+                    "it": "Quasi fatto: clicca sul link nell’e-mail che ti abbiamo appena mandato.",
+                    "en": "Almost done: please click the link in the email we’ve just sent you."},
+    "abo_form_err": {"de": "Das hat nicht geklappt. Prüfen Sie bitte die E-Mail-Adresse oder schreiben Sie uns an "
                            "{mail}.",
-                     "it": "Iscrizione non riuscita: controllare l’indirizzo e-mail o scrivere ad "
-                           "{mail}.",
-                     "en": "Subscription failed. Please check the email address or write to {mail}."},
+                     "fr": "L’inscription n’a pas fonctionné. Vérifiez l’adresse e-mail ou écrivez-nous à {mail}.",
+                     "it": "L’iscrizione non è riuscita. Controlla l’indirizzo e-mail o scrivici ad {mail}.",
+                     "en": "That didn’t work. Please check the email address or write to us at {mail}."},
     "open_kpi_open": {"de": "offene Ausschreibungen", "fr": "appels d’offres en cours",
                       "it": "bandi aperti", "en": "open tenders"},
     "open_kpi_cantons": {"de": "Kantone mit offenen Ausschreibungen", "fr": "cantons avec des appels d’offres en cours",
@@ -680,23 +574,21 @@ META: dict[str, dict[str, str]] = {
                "fr": "simap.ch et ce registre",
                "it": "simap.ch e questo registro",
                "en": "simap.ch and this register"},
-    "cmp_lead": {"de": "simap.ch ist die amtliche Plattform und bleibt die massgebende Quelle. "
-                       "Dieses Register liest sie regelmässig aus und beantwortet zusätzlich Fragen, "
-                       "die sich dort nicht stellen lassen.",
-                 "fr": "simap.ch est la plateforme officielle et reste la source déterminante. "
-                       "Ce registre la consulte régulièrement et répond en outre à des questions "
-                       "que l’on ne peut pas y poser.",
-                 "it": "simap.ch è la piattaforma ufficiale e resta la fonte che fa fede. Questo "
-                       "registro ne riprende regolarmente i dati e risponde anche a domande che "
-                       "su simap.ch non si possono porre.",
-                 "en": "simap.ch is the official platform and remains the authoritative source. "
-                       "This register reads it regularly and additionally answers questions that "
-                       "cannot be asked there."},
+    "cmp_lead": {"de": "simap.ch ist die amtliche Plattform und bleibt die massgebende Quelle. Wir übernehmen "
+                       "ihre Daten regelmässig und beantworten zusätzlich Fragen, die Sie dort nicht stellen "
+                       "können.",
+                 "fr": "simap.ch est la plateforme officielle et reste la source qui fait foi. Nous reprenons "
+                       "régulièrement ses données et répondons aussi à des questions que vous ne pouvez pas y "
+                       "poser.",
+                 "it": "simap.ch è la piattaforma ufficiale e resta la fonte che fa fede. Noi ne riprendiamo "
+                       "regolarmente i dati e rispondiamo anche a domande che su simap.ch non puoi fare.",
+                 "en": "simap.ch is the official platform and remains the authoritative source. We take its data "
+                       "regularly and also answer questions you can’t ask there."},
     "cmp_us": {"de": "auftragsregister.ch", "fr": "auftragsregister.ch", "it": "auftragsregister.ch",
                "en": "auftragsregister.ch"},
     "cmp_yes": {"de": "ja", "fr": "oui", "it": "sì", "en": "yes"},
     "cmp_no": {"de": "nein", "fr": "non", "it": "no", "en": "no"},
-    "cmp_link": {"de": "verweist darauf", "fr": "y renvoie", "it": "vi rimanda",
+    "cmp_link": {"de": "verweist darauf", "fr": "y renvoie", "it": "con il link",
                  "en": "links to it"},
     "cmp_acct": {"de": "mit Konto", "fr": "avec un compte", "it": "con un account",
                  "en": "with an account"},
@@ -724,12 +616,12 @@ META: dict[str, dict[str, str]] = {
                "fr": "Flux RSS par canton et par secteur",
                "it": "Feed RSS per cantone e settore",
                "en": "RSS feed for each canton and sector"},
-    "cmp_r7": {"de": "Neue Ausschreibungen per E-Mail, nach eigener Auswahl",
+    "cmp_r7": {"de": "Neue Ausschreibungen per E-Mail, nach Ihrer Auswahl",
                "fr": "Nouveaux appels d’offres par e-mail, selon vos critères",
-               "it": "Nuovi bandi via e-mail, secondo i propri criteri",
+               "it": "Nuovi bandi via e-mail, scelti da te",
                "en": "New tenders by email, matching your own filters"},
-    "cmp_r8": {"de": "Nutzung ohne Konto", "fr": "Utilisation sans compte",
-               "it": "Uso senza account", "en": "Use without an account"},
+    "cmp_r8": {"de": "Ohne Konto nutzbar", "fr": "Sans compte",
+               "it": "Si usa senza account", "en": "No account needed"},
     "open_sector_desc": {
         "de": "{n} in der Branche «{name}» (CPV {code}) aus der ganzen Schweiz, nach "
               "Eingabefrist geordnet.",
@@ -757,14 +649,14 @@ META: dict[str, dict[str, str]] = {
     "open_sector_t2": {"de": "{word} in der Schweiz: {k} offen", "fr": "{word} en Suisse : {k} en cours",
                        "it": "{word} in Svizzera: {k} aperti", "en": "{word} in Switzerland: {k} open"},
     "open_sector_desc_word": {
-        "de": "Die {k} offenen {w} der Schweiz auf simap.ch, nach Eingabefrist und Kanton geordnet. "
-              "Gratis, ohne Konto, auch per E-Mail.",
-        "fr": "Les {k} {w} en cours en Suisse (simap.ch), classés par délai et par canton. Gratuit, "
-              "sans compte, aussi par e-mail.",
-        "it": "I {k} {w} aperti in Svizzera (simap.ch), in ordine di scadenza e per cantone. Gratis, "
-              "senza account, anche via e-mail.",
-        "en": "The {k} open {w} in Switzerland on simap.ch, sorted by deadline and canton. Free, no "
-              "account, also by email.",
+        "de": "Die {k} offenen {w} der Schweiz auf simap.ch, nach Frist und Kanton geordnet. Auch gratis "
+              "per E-Mail, ohne Konto.",
+        "fr": "Les {k} {w} en cours en Suisse (simap.ch), par délai et par canton. Aussi par e-mail, "
+              "gratuitement et sans compte.",
+        "it": "I {k} {w} aperti in Svizzera (simap.ch), in ordine di scadenza e per cantone. Ricevili gratis "
+              "anche via e-mail.",
+        "en": "The {k} open {w} in Switzerland on simap.ch, by deadline and canton. Also by email – free, no "
+              "account needed.",
     },
     "open_canton_h1": {
         "de": "Offene Ausschreibungen im Kanton {name}",
@@ -773,14 +665,14 @@ META: dict[str, dict[str, str]] = {
         "en": "Open public tenders in the canton of {name}",
     },
     "open_canton_desc": {
-        "de": "{n} im Kanton {name}: nach Eingabefrist geordnet, werktags aktualisiert, gratis auch "
-              "per E-Mail, ohne Konto.",
-        "fr": "{n} dans le canton {of} : classés par délai, mis à jour les jours ouvrables, aussi par "
-              "e-mail, gratuitement, sans compte.",
-        "it": "{n} nel Canton {name}: in ordine di scadenza, aggiornati nei giorni feriali, gratis anche "
-              "via e-mail e senza account.",
-        "en": "{n} in the canton of {name}: sorted by deadline, updated Monday to Saturday, free by "
-              "email too, no account needed.",
+        "de": "{n} im Kanton {name}, nach Frist geordnet und werktags aktualisiert. Auch gratis per E-Mail, "
+              "ohne Konto.",
+        "fr": "{n} dans le canton {of}, par délai, mis à jour les jours ouvrables. Aussi par e-mail, "
+              "gratuitement et sans compte.",
+        "it": "{n} nel Canton {name}, in ordine di scadenza e aggiornati nei giorni feriali. Ricevili gratis "
+              "anche via e-mail.",
+        "en": "{n} in the canton of {name}, sorted by deadline and updated Monday to Saturday. Also by email – "
+              "free, no account needed.",
     },
     "desc_deadline": {
         "de": ", Eingabefrist {date}",
@@ -840,76 +732,72 @@ IDX: dict[str, dict[str, str]] = {
     "companies_h1": {"de": "Firmen im Register", "fr": "Entreprises du registre",
                      "it": "Aziende nel registro", "en": "Companies in the register"},
     "companies_lead": {
-        "de": "Alle Firmen mit mindestens zwei vergebenen Aufträgen, alphabetisch.",
-        "fr": "Toutes les entreprises ayant remporté au moins deux marchés publiés, par "
-              "ordre alphabétique.",
-        "it": "Tutte le aziende con almeno due appalti vinti, in ordine alfabetico.",
-        "en": "Every company with at least two contracts won, listed alphabetically."},
+        "de": "Alle Firmen, die mindestens zwei Aufträge gewonnen haben, von A bis Z.",
+        "fr": "Toutes les entreprises qui ont remporté au moins deux marchés, de A à Z.",
+        "it": "Tutte le aziende che hanno vinto almeno due appalti, dalla A alla Z.",
+        "en": "Every company that has won at least two contracts, from A to Z."},
     "companies_title": {"de": "Firmen mit öffentlichen Aufträgen — Verzeichnis",
-                        "fr": "Entreprises titulaires de marchés publics — répertoire",
+                        "fr": "Entreprises qui remportent des marchés publics — répertoire",
                         "it": "Aziende con appalti pubblici — elenco",
-                        "en": "Companies holding public contracts — directory"},
+                        "en": "Companies winning public contracts — directory"},
     # the same population as the lead: companies with at least two awards (the home counts
     # every company, 6,278, and a bare "2574 Unternehmen" contradicted it)
     "companies_desc": {
-        "de": "Alphabetisches Verzeichnis der {n} Firmen mit mindestens zwei öffentlichen Aufträgen, "
-              "publiziert auf simap.ch.",
-        "fr": "Répertoire alphabétique des {n} entreprises ayant remporté au moins deux "
-              "marchés publiés sur simap.ch.",
-        "it": "Elenco alfabetico delle {n} aziende con almeno due appalti vinti, pubblicati su "
+        "de": "Die {n} Firmen, die mindestens zwei öffentliche Aufträge gewonnen haben, von A bis Z. Daten von "
               "simap.ch.",
-        "en": "Alphabetical directory of the {n} companies with at least two contracts won, as published "
-              "on simap.ch."},
+        "fr": "Les {n} entreprises qui ont remporté au moins deux marchés publics, de A à Z. Données de "
+              "simap.ch.",
+        "it": "Le {n} aziende che hanno vinto almeno due appalti pubblici, dalla A alla Z. Dati di simap.ch.",
+        "en": "The {n} companies that have won at least two public contracts, from A to Z. Data from "
+              "simap.ch."},
     "buyers_h1": {"de": "Auftraggeber im Register", "fr": "Acheteurs publics du registre", "it": "Enti pubblici nel registro",
                   "en": "Public buyers in the register"},
     "cantons_h1": {"de": "Öffentliche Aufträge nach Kanton", "fr": "Marchés publics par canton",
                    "it": "Appalti pubblici per cantone", "en": "Public contracts by canton"},
     "buyers_lead": {
-        "de": "Alle Auftraggeber mit mindestens drei vergebenen Aufträgen, alphabetisch.",
-        "fr": "Tous les acheteurs publics ayant attribué au moins trois marchés publiés, par ordre "
-              "alphabétique.",
-        "it": "Tutti gli enti pubblici con almeno tre appalti aggiudicati, in ordine alfabetico.",
-        "en": "Every public buyer with at least three contracts awarded, listed "
-              "alphabetically."},
+        "de": "Alle Auftraggeber, die mindestens drei Aufträge vergeben haben, von A bis Z.",
+        "fr": "Tous les acheteurs publics qui ont attribué au moins trois marchés, de A à Z.",
+        "it": "Tutti gli enti pubblici che hanno aggiudicato almeno tre appalti, dalla A alla Z.",
+        "en": "Every public buyer that has awarded at least three contracts, from A to Z."},
     "buyers_title": {"de": "Öffentliche Auftraggeber — Verzeichnis",
                      "fr": "Acheteurs publics en Suisse — répertoire",
                      "it": "Enti pubblici che aggiudicano appalti — elenco",
                      "en": "Public buyers awarding contracts — directory"},
     "buyers_desc": {
-        "de": "Verzeichnis der {n} Auftraggeber mit mindestens drei vergebenen Aufträgen, publiziert auf "
+        "de": "Die {n} Auftraggeber, die mindestens drei Aufträge vergeben haben, von A bis Z. Daten von "
               "simap.ch.",
-        "fr": "Répertoire des {n} acheteurs publics ayant attribué au moins trois marchés publiés sur "
+        "fr": "Les {n} acheteurs publics qui ont attribué au moins trois marchés, de A à Z. Données de "
               "simap.ch.",
-        "it": "Elenco dei {n} enti pubblici con almeno tre appalti aggiudicati, pubblicati su simap.ch.",
-        "en": "Directory of the {n} public buyers with at least three contracts awarded, as published on "
+        "it": "I {n} enti pubblici che hanno aggiudicato almeno tre appalti, dalla A alla Z. Dati di simap.ch.",
+        "en": "The {n} public buyers that have awarded at least three contracts, from A to Z. Data from "
               "simap.ch."},
-    "cantons_lead": {"de": "Vergebene Aufträge nach dem Kanton, den die Publikation als Ort der Leistung "
-                           "nennt; ohne Angabe nach dem Kanton des Auftraggebers.",
-                     "fr": "Marchés attribués, par canton du lieu d’exécution indiqué dans la "
-                           "publication ; à défaut, par canton de l’acheteur public.",
-                     "it": "Appalti aggiudicati per il cantone che la pubblicazione indica come luogo "
-                           "di esecuzione; in mancanza, per il cantone dell’ente pubblico.",
-                     "en": "Contracts awarded, by the canton the publication gives as the place of "
-                           "performance; where it gives none, by the public buyer’s canton."},
+    "cantons_lead": {"de": "Wir zählen jeden Auftrag im Kanton, den die Publikation als Ort der Leistung nennt. "
+                           "Fehlt diese Angabe, zählt der Kanton des Auftraggebers.",
+                     "fr": "Nous comptons chaque marché dans le canton du lieu d’exécution indiqué dans la "
+                           "publication. S’il manque, dans celui de l’acheteur public.",
+                     "it": "Contiamo ogni appalto nel cantone che la pubblicazione indica come luogo di "
+                           "esecuzione. Se manca, in quello dell’ente pubblico.",
+                     "en": "We count each contract in the canton the publication gives as the place of "
+                           "performance. If it gives none, we use the public buyer’s canton."},
     "cantons_title": {"de": "Öffentliche Aufträge nach Kanton — Übersicht",
                       "fr": "Marchés publics par canton — aperçu",
                       "it": "Appalti pubblici per cantone — panoramica",
                       "en": "Public contracts by canton — overview"},
     "cantons_desc": {
-        "de": "Vergebene öffentliche Aufträge in der Schweiz, nach Kanton geordnet.",
-        "fr": "Marchés publics attribués en Suisse, classés par canton.",
-        "it": "Appalti pubblici aggiudicati in Svizzera, ordinati per cantone.",
-        "en": "Public contracts awarded in Switzerland, ordered by canton."},
+        "de": "Die vergebenen öffentlichen Aufträge der Schweiz, Kanton für Kanton.",
+        "fr": "Les marchés publics attribués en Suisse, canton par canton.",
+        "it": "Gli appalti pubblici aggiudicati in Svizzera, cantone per cantone.",
+        "en": "Public contracts awarded in Switzerland, canton by canton."},
     "sectors_h1": {"de": "Öffentliche Aufträge nach Kategorie", "fr": "Marchés publics par catégorie",
                    "it": "Appalti pubblici per categoria", "en": "Public contracts by category"},
-    "sectors_lead": {"de": "Vergebene Aufträge nach Kategorie. Die Kategorien folgen dem CPV, der "
-                           "EU-weit einheitlichen Einteilung der Leistungen.",
-                     "fr": "Marchés attribués, par catégorie. Les catégories suivent le CPV, le "
-                           "vocabulaire commun pour les marchés publics de l’UE.",
-                     "it": "Appalti aggiudicati per categoria. Le categorie seguono il CPV, il "
-                           "vocabolario comune per gli appalti pubblici dell’UE.",
-                     "en": "Contracts awarded, by category. Categories follow the CPV, the EU’s "
-                           "Common Procurement Vocabulary."},
+    "sectors_lead": {"de": "Die vergebenen Aufträge, Kategorie für Kategorie. Die Kategorien stammen aus dem CPV, "
+                           "der EU-weit einheitlichen Einteilung der Leistungen.",
+                     "fr": "Les marchés attribués, catégorie par catégorie. Les catégories sont celles du CPV, "
+                           "le vocabulaire commun de l’UE pour les marchés publics.",
+                     "it": "Gli appalti aggiudicati, categoria per categoria. Le categorie sono quelle del CPV, "
+                           "il vocabolario comune dell’UE per gli appalti pubblici.",
+                     "en": "Contracts awarded, category by category. The categories are those of the CPV, the "
+                           "EU’s Common Procurement Vocabulary."},
     "sectors_title": {"de": "Öffentliche Aufträge nach Kategorie — CPV-Übersicht",
                       "fr": "Marchés publics par catégorie — aperçu CPV",
                       "it": "Appalti pubblici per categoria — panoramica CPV",
@@ -972,36 +860,30 @@ IDX: dict[str, dict[str, str]] = {
     # computed from complete months only, and it says so: the running month can already be
     # taller than the peak named here (20 chart pages per language on 28.09.2026)
     "mc_takeaway": {
-        "de": "Seit {start} im Schnitt {avg} pro Monat; vollständiger Monat mit den meisten "
-              "Aufträgen: {peak_month} ({peak}).",
-        "fr": "Depuis {start}, {avg} par mois en moyenne ; mois complet avec le plus "
-              "de marchés : {peak_month} ({peak}).",
-        "it": "Da {start} in media {avg} al mese; mese completo con più appalti: "
-              "{peak_month} ({peak}).",
-        "en": "Since {start}, an average of {avg} a month; busiest complete month: "
-              "{peak_month} ({peak}).",
+        "de": "Seit {start} im Schnitt {avg} pro Monat. Stärkster vollständiger Monat: {peak_month} ({peak}).",
+        "fr": "Depuis {start}, {avg} par mois en moyenne. Le mois complet le plus chargé a été {peak_month} "
+              "({peak}).",
+        "it": "Da {start} in media {avg} al mese. Il mese completo con più appalti è stato {peak_month} ({peak}).",
+        "en": "Since {start}, an average of {avg} a month. The busiest complete month was {peak_month} ({peak}).",
     },
     # two complete months tie for the most awards: both are named
     "mc_takeaway_two": {
-        "de": "Seit {start} im Schnitt {avg} pro Monat; vollständige Monate mit den meisten "
-              "Aufträgen: {months} (je {peak}).",
-        "fr": "Depuis {start}, {avg} par mois en moyenne ; mois complets avec le plus "
-              "de marchés : {months} ({peak} chacun).",
-        "it": "Da {start} in media {avg} al mese; mesi completi con più appalti: "
-              "{months} ({peak} ciascuno).",
-        "en": "Since {start}, an average of {avg} a month; busiest complete months: "
-              "{months} ({peak} each).",
+        "de": "Seit {start} im Schnitt {avg} pro Monat. Stärkste vollständige Monate: {months} (je {peak}).",
+        "fr": "Depuis {start}, {avg} par mois en moyenne. Les mois complets les plus chargés ont été {months} "
+              "({peak} chacun).",
+        "it": "Da {start} in media {avg} al mese. I mesi completi con più appalti sono stati {months} "
+              "({peak} ciascuno).",
+        "en": "Since {start}, an average of {avg} a month. The busiest complete months were {months} "
+              "({peak} each).",
     },
     # three or more tie: the value, and how often it was reached
     "mc_takeaway_many": {
-        "de": "Seit {start} im Schnitt {avg} pro Monat; Höchstwert eines vollständigen Monats: "
-              "{peak}, erreicht in {k} Monaten.",
-        "fr": "Depuis {start}, {avg} par mois en moyenne ; maximum sur un mois complet : "
-              "{peak}, atteint à {k} reprises.",
-        "it": "Da {start} in media {avg} al mese; massimo di un mese completo: {peak}, "
-              "raggiunto in {k} mesi.",
-        "en": "Since {start}, an average of {avg} a month; most contracts in a complete month: "
-              "{peak}, reached in {k} months.",
+        "de": "Seit {start} im Schnitt {avg} pro Monat. Höchstens {peak} in einem vollständigen Monat, erreicht "
+              "in {k} Monaten.",
+        "fr": "Depuis {start}, {avg} par mois en moyenne. Au plus {peak} sur un mois complet, atteint {k} fois.",
+        "it": "Da {start} in media {avg} al mese. Al massimo {peak} in un mese completo, raggiunto in {k} mesi.",
+        "en": "Since {start}, an average of {avg} a month. At most {peak} in a complete month, reached in "
+              "{k} months.",
     },
     "mc_unit": {
         "de": "Anzahl Aufträge",
@@ -1009,50 +891,9 @@ IDX: dict[str, dict[str, str]] = {
         "it": "Numero di appalti",
         "en": "Number of contracts",
     },
-    # Incomplete months are drawn STRIPED. The notes used to call them "lighter", but on the
-    # site's dark panel a paler column renders darker: the note named a colour nobody saw.
-    # The striped build-up months are the ARCHIVE's coverage, not a market trend: the archive
-    # starts in August 2024 and its first months were not collected in full (owner,
-    # 28.09.2026). Past tense; {span}/{m} are this chart's own striped months, {start} the
-    # archive's first month; one striped column takes the singular.
-    # The striped months come first, so "dieser Monat" / "that month" cannot be read as the
-    # archive's first month named after it (verifier, 28.09.2026: the Uri chart has no August)
-    # "because the archive starts in August" did not explain a striped September or October
-    # (verifier, 28.09.2026): the reason is that its first months were incomplete
-    "mc_note_start": {
-        "de": "Schraffierte Säulen ({span}): Diese Monate sind nur teilweise erfasst – das "
-              "Archiv beginnt im {start} und war in den ersten Monaten noch unvollständig.",
-        "fr": "Colonnes hachurées ({span}) : mois relevés partiellement ; les données commencent "
-              "en {start} et étaient encore incomplètes les premiers mois.",
-        "it": "Colonne tratteggiate ({span}): mesi rilevati solo in parte; l’archivio parte da "
-              "{start} e nei primi mesi era ancora incompleto.",
-        "en": "Striped columns ({span}): these months are only partly covered; the archive "
-              "begins in {start} and was still incomplete in its first months.",
-    },
-    "mc_note_start_one": {
-        "de": "Schraffierte Säule ({m}): Dieser Monat ist nur teilweise erfasst – das Archiv "
-              "beginnt im {start} und war in den ersten Monaten noch unvollständig.",
-        "fr": "Colonne hachurée ({m}) : mois relevé partiellement ; les données commencent en "
-              "{start} et étaient encore incomplètes les premiers mois.",
-        "it": "Colonna tratteggiata ({m}): mese rilevato solo in parte; l’archivio parte da "
-              "{start} e nei primi mesi era ancora incompleto.",
-        "en": "Striped column ({m}): this month is only partly covered; the archive begins in "
-              "{start} and was still incomplete in its first months.",
-    },
-    # «aggiornato al {date}» (owner, 22.10.2026): it_dates() writes 'all’08.10.2026' on the 8th and the 11th
-    "mc_note_end": {
-        "de": "Schraffierte letzte Säule: laufender Monat (aktualisiert am {date}).",
-        "fr": "Dernière colonne hachurée : mois en cours (mis à jour le {date}).",
-        "it": "Ultima colonna tratteggiata: mese in corso (aggiornato al {date}).",
-        "en": "Striped last column: current month (updated {date}).",
-    },
-    # the running month with no award yet: no column is drawn, so no "last column" to point at
-    "mc_note_end_zero": {
-        "de": "Laufender Monat ({m}): bisher kein vergebener Auftrag (aktualisiert am {date}).",
-        "fr": "Mois en cours ({m}) : aucun marché attribué pour l’instant (mis à jour le {date}).",
-        "it": "Mese in corso ({m}): finora nessun appalto aggiudicato (aggiornato al {date}).",
-        "en": "Current month ({m}): no contracts awarded so far (updated {date}).",
-    },
+    # Incomplete months are drawn STRIPED (the notes once called them "lighter", a colour nobody saw on the dark
+    # panel); the striped build-up months are the archive's coverage, not a market trend. The notes themselves,
+    # "mc_note_start" … "mc_note_end_zero", are at the end of the file, in the 'strictly necessary' pass.
     # too few data for a chart: one sentence. Several months: the count of months, then the
     # months, each with its count; one month: no list and no repeated count
     "mc_few": {
@@ -1064,13 +905,13 @@ IDX: dict[str, dict[str, str]] = {
     "mc_few_one": {
         "de": "{n}, alle publiziert im {month}.",
         "fr": "{n}, tous publiés en {month}.",
-        "it": "{n}, tutti pubblicati nel mese di {month}.",
+        "it": "{n}, tutti pubblicati a {month}.",
         "en": "{n}, all published in {month}.",
     },
     "mc_few_single": {
         "de": "{n}, publiziert im {month}.",
         "fr": "{n}, publié en {month}.",
-        "it": "{n}, pubblicato nel mese di {month}.",
+        "it": "{n}, pubblicato a {month}.",
         "en": "{n}, published in {month}.",
     },
     # «Appalti aggiudicati per settore» (owner, 22.10.2026)
@@ -1080,34 +921,8 @@ IDX: dict[str, dict[str, str]] = {
         "it": "Appalti aggiudicati per settore",
         "en": "Contracts awarded by sector",
     },
-    # A Branche (division, 2 digits) groups many Kategorien (exact 8-digit codes); both appear on
-    # canton and buyer pages, one above the other, so the lede says how they relate.
-    "div_lede_all": {
-        "de": "Anzahl vergebener Aufträge je Branche. Branchen sind die Abteilungen des CPV (erste zwei "
-              "Ziffern), der EU-weit einheitlichen Einteilung der Leistungen; jede umfasst viele "
-              "einzelne Kategorien.",
-        "fr": "Nombre de marchés attribués par secteur. Les secteurs sont les divisions du CPV, le "
-              "vocabulaire commun pour les marchés publics de l’UE ; chacun regroupe de "
-              "nombreuses catégories détaillées.",
-        "it": "Numero di appalti aggiudicati per settore. I settori sono le divisioni del CPV, il vocabolario "
-              "comune per gli appalti pubblici dell’UE; ognuno comprende molte categorie specifiche.",
-        "en": "Number of contracts awarded per sector. Sectors are the top-level groups of the CPV, "
-              "the EU’s Common Procurement Vocabulary; each covers many specific categories.",
-    },
-    "div_lede_top": {
-        "de": "Anzahl vergebener Aufträge je Branche. Branchen sind die Abteilungen des CPV (erste zwei "
-              "Ziffern), der EU-weit einheitlichen Einteilung der Leistungen; jede umfasst viele "
-              "einzelne Kategorien. Hier die {k} häufigsten von {total}.",
-        "fr": "Nombre de marchés attribués par secteur. Les secteurs sont les divisions du CPV, le "
-              "vocabulaire commun pour les marchés publics de l’UE ; chacun regroupe de "
-              "nombreuses catégories détaillées. Voici les {k} plus fréquents sur {total}.",
-        "it": "Numero di appalti aggiudicati per settore. I settori sono le divisioni del CPV, il vocabolario "
-              "comune per gli appalti pubblici dell’UE; ognuno comprende molte categorie specifiche. "
-              "Qui i settori più frequenti: {k} su {total}.",
-        "en": "Number of contracts awarded per sector. Sectors are the top-level groups of the CPV, "
-              "the EU’s Common Procurement Vocabulary; each covers many specific categories. "
-              "Shown: the {k} most frequent of {total}.",
-    },
+    # A Branche (division, 2 digits) groups many Kategorien (exact 8-digit codes); what they are, the about page
+    # says ("div_lede_all" and "div_lede_top" are at the end of the file, in the 'strictly necessary' pass)
     "div_other": {
         "de": "{k} weitere Branchen",
         "fr": "Autres secteurs ({k})",
@@ -1117,14 +932,14 @@ IDX: dict[str, dict[str, str]] = {
     # one industry only: a sentence instead of a single bar at 100 %
     "div_single": {
         "de": "Alle {n} gehören zur Branche «{label}».",
-        "fr": "Les {n} relèvent tous du secteur « {label} ».",
-        "it": "I {n} appartengono tutti al settore «{label}».",
+        "fr": "Les {n} sont tous du secteur « {label} ».",
+        "it": "Tutti i {n} sono del settore «{label}».",
         "en": "All {n} are in the “{label}” sector.",
     },
     "div_single_one": {
         "de": "Der einzige Auftrag gehört zur Branche «{label}».",
-        "fr": "L’unique marché relève du secteur « {label} ».",
-        "it": "L’unico appalto appartiene al settore «{label}».",
+        "fr": "Le seul marché est du secteur « {label} ».",
+        "it": "L’unico appalto è del settore «{label}».",
         "en": "The only contract is in the “{label}” sector.",
     },
     "detail_sectors": {
@@ -1143,7 +958,7 @@ IDX: dict[str, dict[str, str]] = {
     },
     "bands_title": {
         "de": "Wie gross sind die Aufträge von {name}?",
-        "fr": "Quels sont les montants des marchés remportés par {name} ?",
+        "fr": "Combien valent les marchés remportés par {name} ?",
         "it": "Quanto valgono gli appalti vinti da {name}?",
         "en": "How large are the contracts won by {name}?",
     },
@@ -1165,14 +980,14 @@ IDX: dict[str, dict[str, str]] = {
     },
     # quotes the last label of lingue.BANDS word for word
     "bands_noown": {
-        "de": "«Ohne zurechenbaren Betrag»: kein Betrag publiziert, Betrag in Fremdwährung, "
-              "Auftrag an mehrere Firmen oder vermutlicher Einheitspreis.",
-        "fr": "« Sans montant attribuable » : montant non publié, montant en devise étrangère, "
-              "marché attribué à plusieurs entreprises ou prix probablement unitaire.",
-        "it": "«Importo non attribuibile»: importo non pubblicato o in valuta estera, appalto "
-              "aggiudicato a più aziende oppure probabile prezzo unitario.",
-        "en": "“No attributable CHF amount”: no amount published, an amount in a foreign "
-              "currency, a contract awarded to several companies, or a probable unit rate.",
+        "de": "«Ohne zurechenbaren Betrag» heisst: kein Betrag publiziert, Betrag in Fremdwährung, Auftrag an "
+              "mehrere Firmen oder vermutlich ein Einheitspreis.",
+        "fr": "« Sans montant attribuable » signifie : aucun montant publié, un montant en devise étrangère, un "
+              "marché attribué à plusieurs entreprises ou probablement un prix unitaire.",
+        "it": "«Importo non attribuibile» vuol dire: nessun importo pubblicato, importo in valuta estera, "
+              "appalto andato a più aziende o probabile prezzo unitario.",
+        "en": "“No attributable CHF amount” means: no amount published, an amount in a foreign currency, a "
+              "contract awarded to several companies, or probably a unit rate.",
     },
     # every award without a CHF amount of its own: a sentence, not five empty bars
     "bands_none": {
@@ -1184,14 +999,14 @@ IDX: dict[str, dict[str, str]] = {
     "largest_h": {
         "de": "Die grössten Aufträge",
         "fr": "Les marchés les plus importants",
-        "it": "Gli appalti maggiori",
-        "en": "Largest contracts",
+        "it": "Gli appalti più grandi",
+        "en": "The largest contracts",
     },
     # Italian: genera puts the article before the figure ("il 33%", "l’80%"; step 5); none before "oltre il 99%"
     "largest_share": {
         "de": "Allein der grösste Auftrag macht {share} der Summe aus.",
         "fr": "À lui seul, le plus important représente {share} du total.",
-        "it": "Da solo, l’appalto maggiore rappresenta {share} del totale.",
+        "it": "Il più grande vale da solo {share} del totale.",
         "en": "The largest contract alone accounts for {share} of the total.",
     },
     # a share between 99.5 and 100 %, in prose ("macht mehr als 99 % der Summe aus")
@@ -1204,25 +1019,8 @@ IDX: dict[str, dict[str, str]] = {
     # an award that names several firms is often a set of separate awards (one per lot,
     # section or framework contract): the notes say "an mehrere Firmen", never "gemeinsam".
     # Such an award has no amount to split: simap publishes one price per firm, which the rows
-    # below now show ("Betrag nicht aufteilbar" assumed a single amount; 08.10.2026)
-    "joint_note": {
-        "de": "Nicht in den Summen enthalten sind die {k} Aufträge an mehrere Firmen (ein Preis je "
-              "Firma oder keiner).",
-        "fr": "Les totaux n’incluent pas les {k} marchés attribués à plusieurs entreprises (un prix par "
-              "entreprise, ou aucun).",
-        "it": "I totali non comprendono i {k} appalti aggiudicati a più aziende (un prezzo per azienda, "
-              "o nessuno).",
-        "en": "Totals exclude the {k} contracts awarded to several companies (one price per company, or none).",
-    },
-    "joint_note_one": {
-        "de": "Nicht in den Summen enthalten ist der Auftrag an mehrere Firmen (ein Preis je Firma "
-              "oder keiner).",
-        "fr": "Les totaux n’incluent pas le marché attribué à plusieurs entreprises (un prix par "
-              "entreprise, ou aucun).",
-        "it": "I totali non comprendono l’appalto aggiudicato a più aziende (un prezzo per azienda, "
-              "o nessuno).",
-        "en": "Totals exclude the contract awarded to several companies (one price per company, or none).",
-    },
+    # below now show ("Betrag nicht aufteilbar" assumed a single amount; 08.10.2026). The notes, "joint_note" and
+    # "joint_note_one", are at the end of the file, in the 'strictly necessary' pass.
     "joint_n": {
         "de": "{n} Firmen",
         "fr": "{n} entreprises",
@@ -1336,20 +1134,20 @@ def enum(kind: str, value, lang: str) -> str:
 
 
 IDX["showing_n"] = {
-    "de": "Angezeigt werden die {n} Ausschreibungen mit der nächsten Eingabefrist (von insgesamt "
-          "{total} offenen); alle übrigen finden Sie auf den Kantonsseiten.",
-    "fr": "Cette liste affiche les {n} appels d’offres dont le délai est le plus proche, sur "
-          "{total} en cours ; les autres figurent sur les pages cantonales.",
-    "it": "Sono elencati i {n} bandi con la scadenza più vicina, su {total} bandi aperti; gli "
-          "altri si trovano nelle pagine cantonali.",
-    "en": "Showing the {n} tenders with the nearest deadlines, out of {total} open; the others "
-          "are on the canton pages.",
+    "de": "Hier sehen Sie die {n} Ausschreibungen, deren Frist zuerst abläuft – von {total} offenen. Die "
+          "übrigen finden Sie auf den Kantonsseiten.",
+    "fr": "Voici les {n} appels d’offres dont le délai expire en premier, sur {total} en cours. Les autres "
+          "sont sur les pages des cantons.",
+    "it": "Qui vedi i {n} bandi che scadono prima, su {total} aperti. Gli altri sono nelle pagine dei "
+          "cantoni.",
+    "en": "Here are the {n} tenders that close first, out of {total} open. The others are on the canton "
+          "pages.",
 }
 
 
 # «Aziende che hanno vinto più appalti» / «Firmen mit den meisten Aufträgen» (owner, 22.10.2026)
 IDX["firms_cap"] = {
-    "de": "Firmen mit den meisten Aufträgen", "fr": "Entreprises ayant remporté le plus de marchés",
+    "de": "Firmen mit den meisten Aufträgen", "fr": "Entreprises qui ont remporté le plus de marchés",
     "it": "Aziende che hanno vinto più appalti", "en": "Companies that won the most contracts",
 }
 
@@ -1374,13 +1172,12 @@ IMP: dict[str, dict] = {
              "ist kein amtliches Register und steht in keiner Verbindung zu simap.ch "
              "oder zu einer Behörde von Bund, Kantonen oder Gemeinden."),
             ("Datengrundlage",
-             "Alle Inhalte beruhen auf amtlichen Publikationen der Plattform simap.ch "
-             "und werden gemäss deren API-Nutzungsbedingungen inhaltlich unverändert "
-             "wiedergegeben. Massgebend sind ausschliesslich die dort veröffentlichten "
-             "Daten."),
+             "Alle Inhalte beruhen auf amtlichen Publikationen der Plattform simap.ch. Wir geben sie nach "
+             "den API-Nutzungsbedingungen von simap.ch inhaltlich unverändert wieder. Massgebend sind "
+             "ausschliesslich die dort veröffentlichten Daten."),
             ("Keine Gewähr",
-             "Für die Vollständigkeit und Richtigkeit der Aufbereitung wird keine Gewähr "
-             "übernommen. Hinweise auf Fehler sind per E-Mail willkommen."),
+             "Wir übernehmen keine Gewähr für die Vollständigkeit und Richtigkeit der Aufbereitung. "
+             "Hinweise auf Fehler nehmen wir gern per E-Mail entgegen."),
         ],
     },
     "fr": {
@@ -1390,17 +1187,16 @@ IMP: dict[str, dict] = {
         "contact_h": "Contact",
         "paras": [
             ("Projet indépendant",
-             "« Marchés publics suisses » est un projet privé et indépendant. Il ne s’agit pas "
-             "d’un registre officiel, et le projet n’a aucun lien avec simap.ch ni avec aucune "
-             "autorité fédérale, cantonale ou communale."),
+             "« Marchés publics suisses » est un projet privé et indépendant. Ce n’est pas un registre "
+             "officiel, et le projet n’a aucun lien avec simap.ch ni avec aucune autorité fédérale, "
+             "cantonale ou communale."),
             ("Source des données",
-             "Toutes les informations reposent sur les publications officielles de la plateforme "
-             "simap.ch et sont restituées sans modification de leur contenu, conformément aux "
-             "conditions d’utilisation de l’API de simap.ch. Seules les données qui y sont "
-             "publiées font foi."),
+             "Toutes les informations reposent sur les publications officielles de la plateforme simap.ch. "
+             "Nous les reproduisons sans en modifier le contenu, conformément aux conditions d’utilisation "
+             "de l’API de simap.ch. Seules les données publiées sur simap.ch font foi."),
             ("Absence de garantie",
-             "L’exhaustivité et l’exactitude de la présentation ne sont pas garanties. Les "
-             "erreurs peuvent être signalées par e-mail."),
+             "Nous ne garantissons ni l’exhaustivité ni l’exactitude de cette présentation. Vous pouvez "
+             "nous signaler les erreurs par e-mail."),
         ],
     },
     "it": {
@@ -1414,13 +1210,12 @@ IMP: dict[str, dict] = {
              "registro ufficiale e non ha alcun legame con simap.ch né con autorità "
              "federali, cantonali o comunali."),
             ("Fonte dei dati",
-             "Tutti i contenuti si basano sulle pubblicazioni ufficiali della piattaforma "
-             "simap.ch e sono riprodotti senza modificarne il contenuto, conformemente alle "
-             "condizioni d’uso dell’API di simap.ch. Fanno fede esclusivamente i dati ivi "
-             "pubblicati."),
+             "Tutti i contenuti si basano sulle pubblicazioni ufficiali della piattaforma simap.ch. Li "
+             "riproduciamo senza modificarne il contenuto, nel rispetto delle condizioni d’uso dell’API di "
+             "simap.ch. Fanno fede solo i dati pubblicati su simap.ch."),
             ("Nessuna garanzia",
-             "Non si garantiscono né la completezza né l’esattezza della rielaborazione. "
-             "Eventuali errori possono essere segnalati via e-mail."),
+             "Non garantiamo né la completezza né l’esattezza della rielaborazione. Se trovi un errore, "
+             "segnalacelo via e-mail."),
         ],
     },
     "en": {
@@ -1434,12 +1229,12 @@ IMP: dict[str, dict] = {
              "official register and has no connection to simap.ch or to any federal, "
              "cantonal or communal authority."),
             ("Data source",
-             "All content is based on the official publications of the simap.ch platform and is "
-             "reproduced without any change to its content, in accordance with simap.ch’s API "
-             "terms of use. Only the data published there is authoritative."),
+             "All content is based on the official publications of the simap.ch platform. We reproduce it "
+             "without changing its content, in accordance with simap.ch’s API terms of use. Only the data "
+             "published on simap.ch is authoritative."),
             ("No guarantee",
-             "No guarantee is given that this presentation is complete or correct. Please report "
-             "any errors by email."),
+             "We give no guarantee that this presentation is complete or correct. Please report any errors "
+             "by email."),
         ],
     },
 }
@@ -1456,65 +1251,55 @@ PRIV: dict[str, dict] = {
         "contact_h": "Kontakt",
         "paras": [
             ("Welche Personendaten enthält diese Website?",
-             "Diese Website gibt amtliche Publikationen von simap.ch wieder. Die meisten "
-             "genannten Anbieterinnen und Anbieter sind Unternehmen. Ein Teil der "
-             "Zuschlagsempfängerinnen und -empfänger sind jedoch Einzelfirmen und "
-             "Selbständigerwerbende: In diesen Fällen erscheint der Name einer natürlichen Person "
-             "zusammen mit dem Auftrag, dem Betrag und dem Auftraggeber. Kontaktpersonen, E-Mail-Adressen und Telefonnummern "
-             "werden nicht gesondert erfasst; stehen solche Angaben im Text einer Ausschreibung, "
-             "werden sie unverändert von simap.ch übernommen."),
+             "Diese Website gibt amtliche Publikationen von simap.ch wieder. Die meisten genannten "
+             "Anbieterinnen und Anbieter sind Unternehmen. Einige, die einen Zuschlag erhalten, sind jedoch "
+             "Einzelfirmen oder Selbständigerwerbende: Dann erscheint der Name einer natürlichen Person zusammen "
+             "mit dem Auftrag, dem Betrag und dem Auftraggeber. Kontaktpersonen, E-Mail-Adressen und "
+             "Telefonnummern erfassen wir nicht gesondert. Stehen solche Angaben im Text einer Ausschreibung, "
+             "übernehmen wir sie unverändert von simap.ch."),
             ("Zweck und Rechtfertigung",
-             "Zweck ist es, bereits amtlich veröffentlichte Vergabeentscheide auffindbar "
-             "und vergleichbar zu machen. Die Daten wurden von Behörden des Bundes, der "
-             "Kantone und der Gemeinden im Rahmen des öffentlichen Beschaffungsrechts "
-             "publiziert, sind allgemein zugänglich und werden gemäss den "
-             "API-Nutzungsbedingungen von simap.ch inhaltlich unverändert wiedergegeben. "
-             "Die Bearbeitung stützt sich auf das überwiegende Interesse an der "
-             "Transparenz öffentlicher Beschaffungen."),
+             "Der Zweck ist, bereits amtlich veröffentlichte Vergabeentscheide auffindbar und vergleichbar zu "
+             "machen. Behörden von Bund, Kantonen und Gemeinden haben diese Daten nach dem öffentlichen "
+             "Beschaffungsrecht publiziert; sie sind allgemein zugänglich. Wir geben sie nach den "
+             "API-Nutzungsbedingungen von simap.ch inhaltlich unverändert wieder. Die Bearbeitung stützt sich "
+             "auf das überwiegende Interesse an der Transparenz öffentlicher Beschaffungen."),
             ("Daten über Besucherinnen und Besucher",
-             "Diese Website setzt keine Cookies, verwendet keine Analyse- oder "
-             "Tracking-Dienste und bindet keine Skripte oder Schriften von Dritten ein. "
-             "Es bestehen keine Benutzerkonten. Das einzige Formular ist die freiwillige Anmeldung für "
-             "«Ausschreibungen per E-Mail» (siehe unten). "
-             "Die Website wird über GitHub Pages ausgeliefert; der Hosting-Anbieter kann "
-             "im Rahmen des Betriebs technische Verbindungsdaten wie IP-Adressen in "
-             "eigenen Server-Logs erfassen."),
+             "Diese Website setzt keine Cookies, nutzt keine Analyse- oder Tracking-Dienste und bindet keine "
+             "Skripte oder Schriften von Dritten ein. Es gibt keine Benutzerkonten. Das einzige Formular ist "
+             "die freiwillige Anmeldung für «Ausschreibungen per E-Mail» (siehe unten). Die Website wird über "
+             "GitHub Pages ausgeliefert. Der Hosting-Anbieter kann im Betrieb technische Verbindungsdaten wie "
+             "IP-Adressen in eigenen Server-Logs erfassen."),
             ("Ausschreibungen per E-Mail und RSS-Feeds",
-             "Wer neue Ausschreibungen per E-Mail erhalten möchte, abonniert sie über das Formular "
-             "auf der Seite «Ausschreibungen per E-Mail». Das Abo wird erst "
-             "aktiv, wenn der Bestätigungslink in der zugestellten E-Mail angeklickt wird "
-             "(Double-Opt-in). Bearbeitet werden die E-Mail-Adresse, die gewählten Kantone und "
-             "Branchen, die Sprache, der Zeitpunkt und die IP-Adresse der Bestätigung sowie während "
-             "höchstens 45 Tagen die Liste der bereits zugestellten Ausschreibungen, damit keine "
-             "Ausschreibung doppelt verschickt wird. Alle diese Daten werden ausschliesslich für "
-             "den Versand der Abo-E-Mails bearbeitet; Grundlage ist Ihre eigene "
-             "Anmeldung. Die E-Mails enthalten ein Zählpixel und Links, die über einen Server "
-             "von Brevo laufen; Brevo kann dabei Öffnungen und Klicks erfassen. Sie können das "
-             "verhindern, indem Sie das automatische Laden von Bildern ausschalten und die "
-             "Ausschreibungen direkt auf auftragsregister.ch aufrufen. Abmelden können Sie sich "
-             "jederzeit über den Link in jeder E-Mail oder per E-Mail mit dem Betreff «Stop»; "
-             "danach entfernen wir Sie innert 30 Tagen aus der Verteilerliste und löschen die "
-             "Liste der zugestellten Ausschreibungen. Bei Brevo bleiben Ihr Kontakteintrag "
-             "(unter anderem E-Mail-Adresse und Zeitpunkt von Anmeldung und Bestätigung), der "
-             "Vermerk der Abmeldung und die Versandprotokolle der bereits zugestellten E-Mails "
-             "bestehen, damit Sie sicher keine weiteren E-Mails erhalten. Die Daten werden nicht "
-             "verkauft, nicht an Dritte zu deren eigenen Zwecken weitergegeben und nicht für andere "
-             "Zwecke verwendet. In unserem Auftrag bearbeiten sie: Brevo (Sendinblue SAS, Paris, EU) "
-             "für Anmeldung und Versand sowie, für E-Mails an abo@auftragsregister.ch (auch "
-             "Fehlermeldungen), ImprovMX Inc. (USA), das sie weiterleitet, und Google LLC, bei dem "
-             "das Postfach liegt (Gmail). Die RSS-Feeds erfordern keine Anmeldung und übermitteln "
-             "uns keine Personendaten."),
+             "Wer neue Ausschreibungen per E-Mail erhalten möchte, abonniert sie über das Formular auf der "
+             "Seite «Ausschreibungen per E-Mail». Das Abo wird erst aktiv, wenn Sie auf den Bestätigungslink in "
+             "der E-Mail klicken, die wir Ihnen schicken (Double-Opt-in). Wir bearbeiten Ihre E-Mail-Adresse, "
+             "die gewählten Kantone und Branchen, die Sprache, Zeitpunkt und IP-Adresse der Bestätigung sowie "
+             "während höchstens 45 Tagen die Liste der bereits zugestellten Ausschreibungen, damit keine "
+             "Ausschreibung doppelt verschickt wird. Alle diese Daten bearbeiten wir ausschliesslich für den "
+             "Versand der Abo-E-Mails; Grundlage ist Ihre eigene Anmeldung. Die E-Mails enthalten ein "
+             "Zählpixel und Links, die über einen Server von Brevo laufen; Brevo kann so Öffnungen und Klicks "
+             "erfassen. Das können Sie verhindern, indem Sie das automatische Laden von Bildern ausschalten und "
+             "die Ausschreibungen direkt auf auftragsregister.ch aufrufen. Abmelden können Sie sich jederzeit "
+             "über den Link in jeder E-Mail oder per E-Mail mit dem Betreff «Stop». Danach entfernen wir Sie "
+             "innert 30 Tagen aus der Verteilerliste und löschen die Liste der zugestellten Ausschreibungen. "
+             "Bei Brevo bleiben Ihr Kontakteintrag (unter anderem E-Mail-Adresse und Zeitpunkt von Anmeldung "
+             "und Bestätigung), der Vermerk der Abmeldung und die Versandprotokolle der bereits zugestellten "
+             "E-Mails bestehen, damit Sie sicher keine weiteren E-Mails erhalten. Wir verkaufen die Daten "
+             "nicht, geben sie nicht an Dritte zu deren eigenen Zwecken weiter und verwenden sie nicht für "
+             "andere Zwecke. In unserem Auftrag bearbeiten sie: Brevo (Sendinblue SAS, Paris, EU) für Anmeldung "
+             "und Versand sowie, für E-Mails an abo@auftragsregister.ch (auch Fehlermeldungen), ImprovMX Inc. "
+             "(USA), das sie weiterleitet, und Google LLC, bei dem das Postfach liegt (Gmail). Die RSS-Feeds "
+             "erfordern keine Anmeldung und übermitteln uns keine Personendaten."),
             ("Archiv und Aufbewahrung",
-             "Der Datenbestand wird in der Regel werktags mit den Daten von simap.ch aktualisiert. Ältere "
-             "Publikationen bleiben als Archiv erhalten, auch wenn sie über die Schnittstelle "
-             "von simap.ch nicht mehr abgefragt werden können."),
+             "Wir aktualisieren den Datenbestand in der Regel werktags mit den Daten von simap.ch. Ältere "
+             "Publikationen bleiben im Archiv erhalten, auch wenn man sie über die Schnittstelle von simap.ch "
+             "nicht mehr abfragen kann."),
             ("Ihre Rechte",
-             "Sie können jederzeit Auskunft über die zu Ihrer Person bearbeiteten Daten "
-             "verlangen sowie deren Berichtigung oder Löschung beantragen und der Bearbeitung "
-             "widersprechen. Eine kurze E-Mail an die oben genannte Adresse genügt; Anliegen "
-             "werden ohne Kostenfolge behandelt. Massgebend bleibt die Publikation auf simap.ch: "
-             "Eine Berichtigung dort sollte zusätzlich bei der publizierenden Behörde verlangt "
-             "werden."),
+             "Sie können jederzeit Auskunft über die Daten verlangen, die wir zu Ihrer Person bearbeiten. Sie "
+             "können auch verlangen, dass wir sie berichtigen oder löschen, und der Bearbeitung widersprechen. Eine "
+             "kurze E-Mail an die oben genannte Adresse genügt; wir bearbeiten Ihr Anliegen ohne Kosten für "
+             "Sie. Massgebend bleibt die Publikation auf simap.ch: Eine Berichtigung dort sollten Sie "
+             "zusätzlich bei der Behörde verlangen, die sie publiziert hat."),
         ],
     },
     "fr": {
@@ -1524,64 +1309,58 @@ PRIV: dict[str, dict] = {
         "contact_h": "Contact",
         "paras": [
             ("Quelles données personnelles figurent sur ce site ?",
-             "Ce site reproduit des publications officielles de simap.ch. La plupart des "
-             "adjudicataires sont des entreprises. Certains sont toutefois des raisons "
-             "individuelles ou des indépendants : dans ces cas, le nom d'une personne physique "
-             "apparaît avec le marché, le montant et l'adjudicateur. Les personnes de contact, "
-             "adresses e-mail et numéros de téléphone ne sont pas collectés séparément ; lorsque "
-             "le texte d'un appel d'offres en contient, ils sont repris tels quels de simap.ch."),
+             "Ce site reproduit des publications officielles de simap.ch. La plupart des adjudicataires sont "
+             "des entreprises. Certains sont toutefois des raisons individuelles ou des indépendants : dans ces "
+             "cas, le nom d'une personne physique apparaît avec le marché, le montant et l'acheteur public. "
+             "Nous ne collectons pas séparément les personnes de contact, les adresses e-mail ni les numéros "
+             "de téléphone. Si le texte d'un appel d'offres en contient, nous les reprenons tels quels de "
+             "simap.ch."),
             ("Finalité et justification",
-             "La finalité est de rendre repérables et comparables des décisions "
-             "d'adjudication déjà publiées officiellement. Les données ont été publiées "
-             "par des autorités fédérales, cantonales et communales dans le cadre du "
-             "droit des marchés publics ; elles sont accessibles au public et sont "
-             "restituées sans modification de contenu conformément aux conditions "
-             "d'utilisation de l'API de simap.ch. Le traitement repose sur l'intérêt "
-             "prépondérant à la transparence des marchés publics."),
+             "La finalité est de rendre repérables et comparables des décisions d'adjudication déjà publiées "
+             "officiellement. Des autorités fédérales, cantonales et communales ont publié ces données dans le "
+             "cadre du droit des marchés publics ; elles sont accessibles au public. Nous les reproduisons sans "
+             "modification de contenu, conformément aux conditions d'utilisation de l'API de simap.ch. Le "
+             "traitement repose sur l'intérêt prépondérant à la transparence des marchés publics."),
             ("Données sur les visiteurs",
-             "Ce site ne dépose aucun cookie, n’utilise aucun service d’analyse ou de suivi et "
-             "n’intègre aucun script ni aucune police de caractères de tiers. Il n’y a pas de "
-             "compte utilisateur ; le seul formulaire est l’inscription facultative à « Appels "
-             "d’offres par e-mail » (voir ci-dessous). Le site est diffusé via GitHub Pages ; l’hébergeur "
-             "peut enregistrer dans ses propres journaux des données techniques de connexion "
-             "telles que les adresses IP."),
+             "Ce site ne dépose aucun cookie, n’utilise aucun service d’analyse ou de suivi et n’intègre aucun "
+             "script ni aucune police de caractères de tiers. Il n’y a pas de compte utilisateur. Le seul "
+             "formulaire est l’inscription facultative à « Appels d’offres par e-mail » (voir ci-dessous). Le "
+             "site est diffusé via GitHub Pages ; l’hébergeur peut enregistrer dans ses propres journaux des "
+             "données techniques de connexion, comme les adresses IP."),
             ("Appels d’offres par e-mail et flux RSS",
-             "Pour recevoir les nouveaux appels d'offres par e-mail, il suffit de remplir le "
-             "formulaire de la page « Appels d’offres par e-mail ». "
-             "L'inscription n'est active qu'après un clic sur le lien de confirmation envoyé par "
-             "e-mail (double opt-in). Sont traités l'adresse e-mail, les cantons et secteurs "
-             "choisis, la langue, la date et l'adresse IP de la confirmation ainsi que, pendant "
-             "45 jours au plus, la liste des appels d'offres déjà envoyés, afin qu’aucun ne soit "
-             "envoyé deux fois ; le tout uniquement pour l'envoi de ces e-mails, sur la base de "
-             "votre propre inscription. Les e-mails contiennent un pixel de suivi et des liens "
-             "qui passent par un serveur de Brevo ; Brevo peut ainsi enregistrer les ouvertures "
-             "et les clics. Vous pouvez l'empêcher en désactivant le chargement automatique des "
-             "images et en consultant les appels d'offres directement sur auftragsregister.ch. "
-             "Vous pouvez vous désabonner à tout moment par le lien présent dans chaque e-mail "
-             "ou par un e-mail avec l'objet « Stop » ; nous vous retirons ensuite de la liste de "
-             "diffusion dans les 30 jours et effaçons la liste des appels d'offres envoyés. "
-             "Brevo conserve votre fiche de contact (notamment l'adresse e-mail et la date de "
-             "l'inscription et de la confirmation), la mention de votre désabonnement et les "
-             "journaux des e-mails déjà envoyés, afin que vous ne receviez plus aucun e-mail. "
-             "Les données ne sont ni vendues, ni cédées à des tiers pour leurs propres fins, ni "
-             "utilisées à d'autres fins. Ces données sont traitées pour notre compte par Brevo "
-             "(Sendinblue SAS, Paris, UE) pour l’inscription et l’envoi et, pour les e-mails adressés à "
-             "abo@auftragsregister.ch (y compris les signalements d’erreur), par ImprovMX Inc. "
-             "(États-Unis), qui les redirige, et par Google LLC, qui héberge la boîte aux lettres "
-             "(Gmail). Les flux RSS ne demandent aucune inscription et ne nous transmettent "
-             "aucune donnée personnelle."),
+             "Pour recevoir les nouveaux appels d'offres par e-mail, il suffit de remplir le formulaire de la "
+             "page « Appels d’offres par e-mail ». L'inscription n'est active qu'après un clic sur le lien de "
+             "confirmation que nous vous envoyons par e-mail (double opt-in). Nous traitons votre adresse "
+             "e-mail, les cantons et secteurs choisis, la langue, la date et l'adresse IP de la confirmation "
+             "ainsi que, pendant 45 jours au plus, la liste des appels d'offres déjà envoyés, afin qu’aucun ne "
+             "soit envoyé deux fois. Nous utilisons ces données uniquement pour l'envoi de ces e-mails, sur la "
+             "base de votre propre inscription. Les e-mails contiennent un pixel de suivi et des liens qui "
+             "passent par un serveur de Brevo ; Brevo peut ainsi enregistrer les ouvertures et les clics. Vous "
+             "pouvez l'empêcher en désactivant le chargement automatique des images et en consultant les appels "
+             "d'offres directement sur auftragsregister.ch. Vous pouvez vous désabonner à tout moment par le "
+             "lien présent dans chaque e-mail ou par un e-mail avec l'objet « Stop ». Nous vous retirons alors "
+             "de la liste de diffusion dans les 30 jours et effaçons la liste des appels d'offres envoyés. "
+             "Brevo conserve votre fiche de contact (notamment l'adresse e-mail et la date de l'inscription et "
+             "de la confirmation), la mention de votre désabonnement et les journaux des e-mails déjà envoyés, "
+             "afin que vous ne receviez plus aucun e-mail. Nous ne vendons pas les données, ne les cédons pas à "
+             "des tiers pour leurs propres fins et ne les utilisons pas à d'autres fins. Elles sont traitées "
+             "pour notre compte par Brevo (Sendinblue SAS, Paris, UE) pour l’inscription et l’envoi et, pour "
+             "les e-mails adressés à abo@auftragsregister.ch (y compris les signalements d’erreur), par "
+             "ImprovMX Inc. (États-Unis), qui les redirige, et par Google LLC, qui héberge la boîte aux lettres "
+             "(Gmail). Les flux RSS ne demandent aucune inscription et ne nous transmettent aucune donnée "
+             "personnelle."),
             ("Archive et conservation",
-             "Les données sont mises à jour depuis simap.ch, en règle générale les jours ouvrables. Les "
-             "publications plus anciennes sont conservées sous forme d'archive, même "
-             "lorsqu'elles ne peuvent plus être interrogées via l'interface de simap.ch."),
+             "Nous mettons les données à jour depuis simap.ch, en règle générale les jours ouvrables. Les "
+             "publications plus anciennes restent dans les archives, même lorsqu'on ne peut plus les interroger "
+             "via l'interface de simap.ch."),
             ("Vos droits",
-             "Vous pouvez en tout temps demander l'accès aux données vous concernant, leur "
-             "rectification ou leur effacement, et vous opposer au traitement. Un simple e-mail "
-             "à l'adresse ci-dessus suffit ; les demandes sont traitées sans frais. Seule la "
-             "publication sur simap.ch fait foi : pour la faire rectifier, il convient en outre "
-             "de s’adresser à l’autorité qui l’a publiée."),
+             "Vous pouvez en tout temps demander l'accès aux données vous concernant, leur rectification ou "
+             "leur effacement, et vous opposer au traitement. Un simple e-mail à l'adresse ci-dessus suffit ; "
+             "nous traitons les demandes sans frais. Seule la publication sur simap.ch fait foi : pour la faire "
+             "rectifier, vous devriez aussi vous adresser à l’autorité qui l’a publiée."),
         ],
     },
+    # Italian: «tu», as on the rest of the site (natural-voice pass, owner, 23.10.2026); the meaning unchanged
     "it": {
         "title": "Protezione dei dati",
         "operator_h": "Titolare del trattamento",
@@ -1589,59 +1368,49 @@ PRIV: dict[str, dict] = {
         "contact_h": "Contatto",
         "paras": [
             ("Quali dati personali contiene questo sito?",
-             "Questo sito riproduce pubblicazioni ufficiali di simap.ch. La maggior parte "
-             "degli aggiudicatari sono imprese. Alcuni sono però ditte individuali e "
-             "lavoratori indipendenti: in questi casi il nome di una persona fisica "
-             "compare insieme all'appalto, all'importo e al committente. Persone di "
-             "contatto, indirizzi e-mail e numeri di telefono non vengono raccolti a "
-             "parte; se il testo di un bando li contiene, sono ripresi invariati da "
-             "simap.ch."),
-            ("Finalità e giustificazione",
-             "La finalità è rendere reperibili e confrontabili decisioni di aggiudicazione già "
-             "pubblicate ufficialmente. I dati sono stati pubblicati da autorità federali, "
-             "cantonali e comunali nell'ambito del diritto degli appalti pubblici, sono "
-             "accessibili a chiunque e vengono riprodotti senza modificarne il contenuto, "
-             "conformemente alle condizioni d’uso dell’API di simap.ch. Il trattamento si fonda "
+             "Questo sito riproduce pubblicazioni ufficiali di simap.ch. La maggior parte dei vincitori sono "
+             "imprese. Alcuni però sono ditte individuali o lavoratori indipendenti: in questi casi compare il "
+             "nome di una persona fisica, insieme all'appalto, all'importo e all'ente pubblico. Non raccogliamo "
+             "a parte persone di contatto, indirizzi e-mail e numeri di telefono. Se il testo di un bando li "
+             "contiene, li riprendiamo invariati da simap.ch."),
+            ("Scopo e giustificazione",
+             "Lo scopo è rendere reperibili e confrontabili decisioni di aggiudicazione già pubblicate "
+             "ufficialmente. Sono dati pubblicati da autorità federali, cantonali e comunali in base al diritto "
+             "degli appalti pubblici e accessibili a tutti. Li riproduciamo senza modificarne il "
+             "contenuto, nel rispetto delle condizioni d’uso dell’API di simap.ch. Il trattamento si fonda "
              "sull'interesse preponderante alla trasparenza degli appalti pubblici."),
-            ("Dati sui visitatori",
-             "Questo sito non usa cookie, non impiega servizi di analisi o tracciamento e non "
-             "incorpora script o font di terzi. Non esistono account utente; l'unico modulo è "
-             "l'iscrizione facoltativa a «Bandi via e-mail» (vedi sotto). Il sito è "
-             "distribuito tramite GitHub Pages; il fornitore di hosting può registrare nei "
-             "propri log dati tecnici di connessione come gli indirizzi IP."),
+            ("Dati di chi visita il sito",
+             "Questo sito non usa cookie, né servizi di analisi o di tracciamento, e non incorpora script o "
+             "font di terzi. Non ci sono account utente. L'unico modulo è l'iscrizione facoltativa a «Bandi via "
+             "e-mail» (vedi sotto). Il sito è distribuito tramite GitHub Pages: il fornitore di hosting può "
+             "registrare nei suoi log dati tecnici di connessione, come gli indirizzi IP."),
             ("Bandi via e-mail e feed RSS",
-             "Per ricevere i nuovi bandi via e-mail ci si iscrive con il modulo della pagina "
-             "«Bandi via e-mail». L’iscrizione diventa "
-             "attiva solo dopo il clic sul link di conferma inviato via e-mail (double opt-in). "
-             "Vengono trattati l’indirizzo e-mail, i cantoni e i settori scelti, la lingua, la "
-             "data, l’ora e l’indirizzo IP della conferma e, per 45 giorni al massimo, l’elenco "
-             "dei bandi già inviati, affinché nessun bando venga inviato due volte; il tutto "
-             "esclusivamente per l’invio di queste e-mail e sulla base della sua iscrizione. Le "
-             "e-mail contengono un pixel di tracciamento e link che passano da un server di "
-             "Brevo; Brevo può così registrare aperture e clic. Può impedirlo disattivando il "
-             "caricamento automatico delle immagini e aprendo i bandi direttamente su "
-             "auftragsregister.ch. Può cancellarsi in qualsiasi momento con il link presente in "
-             "ogni e-mail o inviando un’e-mail con oggetto «Stop»; entro 30 giorni la togliamo "
-             "dalla lista d’invio e cancelliamo l’elenco dei bandi inviati. Presso Brevo "
-             "restano la sua scheda di contatto (tra l’altro l’indirizzo e-mail, la data e l’ora "
-             "dell’iscrizione e della conferma), l’annotazione della cancellazione e i registri "
-             "delle e-mail già inviate, affinché non riceva più alcuna e-mail. I dati non "
-             "vengono venduti, non vengono ceduti a terzi per i loro scopi e non sono usati per "
-             "altri scopi. I dati sono trattati per nostro conto da Brevo (Sendinblue SAS, Parigi, UE) per "
-             "iscrizione e invio e, per le e-mail inviate ad abo@auftragsregister.ch (anche le "
-             "segnalazioni di errori), da ImprovMX Inc. (USA), che le inoltra, e da Google LLC, presso cui "
-             "si trova la casella di posta (Gmail). I feed RSS non richiedono iscrizione e non ci "
-             "trasmettono dati personali."),
+             "Per ricevere i nuovi bandi via e-mail ti iscrivi con il modulo della pagina «Bandi via e-mail». "
+             "L’iscrizione diventa attiva solo dopo il clic sul link di conferma che ti mandiamo via e-mail "
+             "(double opt-in). Trattiamo il tuo indirizzo e-mail, i cantoni e i settori che scegli, la lingua, "
+             "la data, l’ora e l’indirizzo IP della conferma e, per 45 giorni al massimo, l’elenco dei bandi "
+             "già inviati, così nessun bando ti arriva due volte. Usiamo tutti questi dati solo per inviarti "
+             "queste e-mail, sulla base della tua iscrizione. Le e-mail contengono un pixel di tracciamento e "
+             "link che passano da un server di Brevo: Brevo può così registrare aperture e clic. Puoi evitarlo "
+             "disattivando il caricamento automatico delle immagini e aprendo i bandi direttamente su "
+             "auftragsregister.ch. Puoi annullare l’iscrizione in qualsiasi momento con il link presente in "
+             "ogni e-mail o mandando un’e-mail con oggetto «Stop». Entro 30 giorni ti togliamo dalla lista "
+             "d’invio e cancelliamo l’elenco dei bandi inviati. Presso Brevo restano la tua scheda di contatto "
+             "(tra l’altro l’indirizzo e-mail, la data e l’ora dell’iscrizione e della conferma), l’annotazione "
+             "della disiscrizione e i registri delle e-mail già inviate, perché tu non riceva più nessuna "
+             "e-mail. Non vendiamo i dati, non li cediamo a terzi per i loro scopi e non li usiamo per altri "
+             "scopi. Li trattano per nostro conto Brevo (Sendinblue SAS, Parigi, UE) per iscrizione e invio e, "
+             "per le e-mail inviate ad abo@auftragsregister.ch (anche le segnalazioni di errori), ImprovMX Inc. "
+             "(USA), che le inoltra, e Google LLC, presso cui si trova la casella di posta (Gmail). I feed RSS "
+             "non richiedono iscrizione e non ci trasmettono dati personali."),
             ("Archivio e conservazione",
-             "I dati vengono ripresi da simap.ch, di norma nei giorni feriali. Le pubblicazioni più "
-             "vecchie restano conservate come archivio, anche quando non sono più "
-             "interrogabili tramite l'interfaccia di simap.ch."),
-            ("I suoi diritti",
-             "Può in ogni momento chiedere l'accesso ai dati che la riguardano, la loro "
-             "rettifica o cancellazione e opporsi al trattamento. È sufficiente una breve e-mail "
-             "all'indirizzo indicato sopra; le richieste sono trattate senza spese. Fa fede la "
-             "pubblicazione su simap.ch: una rettifica andrebbe richiesta anche all’autorità che "
-             "l’ha pubblicata."),
+             "Riprendiamo i dati da simap.ch, di norma nei giorni feriali. Le pubblicazioni più vecchie restano "
+             "nell’archivio, anche quando non si possono più consultare tramite l'interfaccia di simap.ch."),
+            ("I tuoi diritti",
+             "Puoi chiedere in ogni momento l'accesso ai dati che ti riguardano, la loro rettifica o la loro "
+             "cancellazione, e puoi opporti al trattamento. Basta una breve e-mail all'indirizzo indicato "
+             "sopra; trattiamo le richieste senza spese. Fa fede la pubblicazione su simap.ch: una rettifica "
+             "dovresti chiederla anche all’autorità che l’ha pubblicata."),
         ],
     },
     "en": {
@@ -1651,56 +1420,49 @@ PRIV: dict[str, dict] = {
         "contact_h": "Contact",
         "paras": [
             ("What personal data does this site contain?",
-             "This site reproduces official publications from simap.ch. Most contract winners are "
-             "companies. Some, however, are sole proprietorships and self-employed individuals: "
-             "in those cases the name of a natural person appears together with the contract, "
-             "the amount and the contracting authority. Contact persons, email addresses and "
-             "telephone numbers are not collected separately; where the text of a tender "
-             "contains them, they are reproduced unchanged from simap.ch."),
+             "This site reproduces official publications from simap.ch. Most contract winners are companies. "
+             "Some, however, are sole proprietorships or self-employed individuals: in those cases the name of "
+             "a natural person appears together with the contract, the amount and the public buyer. We do not "
+             "collect contact persons, email addresses or telephone numbers separately. Where the text of a "
+             "tender contains them, we reproduce them unchanged from simap.ch."),
             ("Purpose and justification",
-             "The purpose is to make already officially published award decisions "
-             "findable and comparable. The data was published by federal, cantonal and "
-             "communal authorities under public-procurement law, is publicly accessible, "
-             "and is reproduced without changes to its content under the simap.ch API "
-             "terms of use. The processing rests on the overriding interest in the "
-             "transparency of public procurement."),
+             "The purpose is to make award decisions that have already been officially published findable and "
+             "comparable. Federal, cantonal and communal authorities published this data under "
+             "public-procurement law, and it is publicly accessible. We reproduce it without changes to its "
+             "content, under the simap.ch API terms of use. The processing rests on the overriding interest in "
+             "the transparency of public procurement."),
             ("Data about visitors",
-             "This site sets no cookies, uses no analytics or tracking services, and embeds no "
-             "third-party scripts or fonts. There are no user accounts; the only form is the "
-             "optional subscription to Tenders by email (see below). The site is served through GitHub "
-             "Pages; the hosting provider may record technical connection data such as IP "
-             "addresses in its own server logs."),
+             "This site sets no cookies, uses no analytics or tracking services, and embeds no third-party "
+             "scripts or fonts. There are no user accounts. The only form is the optional subscription to "
+             "Tenders by email (see below). The site is served through GitHub Pages; the hosting provider may "
+             "record technical connection data such as IP addresses in its own server logs."),
             ("Tenders by email and RSS feeds",
-             "To receive new tenders by email, subscribe with the form on the Tenders by email page. "
-             "Your subscription only becomes active once you "
-             "click the confirmation link sent to you by email (double opt-in). We process your "
-             "email address, the cantons and sectors you choose, your language, the time and "
-             "IP address of your confirmation and, for no more than 45 days, the list of tenders "
-             "already sent to you, so that none is sent twice; all of this solely to send these "
-             "emails, on the basis of your own subscription. The emails contain a tracking pixel and "
-             "links that pass through a Brevo server, so Brevo may record opens and clicks. You "
-             "can prevent this by turning off automatic image loading and opening the tenders "
-             "directly on auftragsregister.ch. You can unsubscribe at any time via the link in "
-             "every email or by sending an email with the subject “Stop”; we then remove you "
-             "from the mailing list within 30 days and delete the list of tenders sent. Brevo "
-             "keeps your contact record (including your email address and the time of subscription "
-             "and confirmation), a record that you unsubscribed and the logs of the emails "
-             "already sent, to make sure you receive no further emails. The data is not sold, not "
-             "passed on to third parties for their own use, and not used for any other purpose. It "
-             "is processed on our behalf by Brevo (Sendinblue SAS, Paris, EU) for subscriptions and "
-             "sending and, for emails sent to abo@auftragsregister.ch (error reports included), by "
-             "ImprovMX Inc. (USA), which forwards them, and Google LLC, which hosts the mailbox "
-             "(Gmail). The RSS feeds require no registration and send us no personal data."),
+             "To receive new tenders by email, subscribe with the form on the Tenders by email page. Your "
+             "subscription only becomes active once you click the confirmation link we email you (double "
+             "opt-in). We process your email address, the cantons and sectors you choose, your language, the "
+             "time and IP address of your confirmation and, for no more than 45 days, the list of tenders "
+             "already sent to you, so that none is sent twice. We use all of this solely to send these emails, "
+             "on the basis of your own subscription. The emails contain a tracking pixel and links that pass "
+             "through a Brevo server, so Brevo may record opens and clicks. You can prevent this by turning off "
+             "automatic image loading and opening the tenders directly on auftragsregister.ch. You can "
+             "unsubscribe at any time via the link in every email or by sending an email with the subject "
+             "“Stop”. We then remove you from the mailing list within 30 days and delete the list of tenders "
+             "sent. Brevo keeps your contact record (including your email address and the time of subscription "
+             "and confirmation), a record that you unsubscribed and the logs of the emails already sent, to "
+             "make sure you receive no further emails. We do not sell the data, pass it on to third parties for "
+             "their own use, or use it for any other purpose. It is processed on our behalf by Brevo "
+             "(Sendinblue SAS, Paris, EU) for subscriptions and sending and, for emails sent to "
+             "abo@auftragsregister.ch (error reports included), by ImprovMX Inc. (USA), which forwards them, "
+             "and Google LLC, which hosts the mailbox (Gmail). The RSS feeds require no registration and send "
+             "us no personal data."),
             ("Archive and retention",
-             "The data is refreshed from simap.ch, usually Monday to Saturday. Older publications are kept as "
-             "an archive, even once they can no longer be queried through the simap.ch "
-             "interface."),
+             "We refresh the data from simap.ch, usually Monday to Saturday. Older publications stay in the "
+             "archive, even once they can no longer be queried through the simap.ch interface."),
             ("Your rights",
-             "You may at any time request access to the data concerning you, ask for it to be "
-             "corrected or deleted, and object to the processing. A short email to the address "
-             "above is enough; requests are handled free of charge. The publication on simap.ch "
-             "remains authoritative: a correction should also be requested from the authority "
-             "that published it."),
+             "You may at any time request access to the data concerning you, ask for it to be corrected or "
+             "deleted, and object to the processing. A short email to the address above is enough; we handle "
+             "requests free of charge. The publication on simap.ch remains authoritative: you should also ask "
+             "the authority that published it for a correction."),
         ],
     },
 }
@@ -1758,29 +1520,30 @@ CANTON_NAMES: dict[str, dict[str, str]] = {
 # tenders (08.10.2026, as on the subscription page)
 # The box says what comes by e-mail; its button is the short call, «Gratis abonnieren» / «S’abonner
 # gratuitement» / «Iscriviti gratis» / «Subscribe free» (owner, 22.10.2026)
+# Natural-voice pass (owner, 23.10.2026): the service speaks («Ti mandiamo …», «Wir schicken Ihnen …»).
 META["alert_both"] = {
-    "de": "Neue Ausschreibungen der Branche «{sector}» {where} per E-Mail erhalten.",
-    "fr": "Recevez par e-mail les nouveaux appels d’offres du secteur « {sector} » {where}.",
-    "it": "I nuovi bandi del settore «{sector}» {where}, via e-mail.",
-    "en": "Get new tenders in the “{sector}” sector {where} by email.",
+    "de": "Wir schicken Ihnen neue Ausschreibungen der Branche «{sector}» {where} per E-Mail.",
+    "fr": "Nous vous envoyons par e-mail les nouveaux appels d’offres du secteur « {sector} » {where}.",
+    "it": "Ti mandiamo via e-mail i nuovi bandi del settore «{sector}» {where}.",
+    "en": "We email you new tenders in the “{sector}” sector {where}.",
 }
 META["alert_sector"] = {
-    "de": "Neue Ausschreibungen der Branche «{sector}» aus der ganzen Schweiz per E-Mail erhalten.",
-    "fr": "Recevez par e-mail les nouveaux appels d’offres du secteur « {sector} » de toute la Suisse.",
-    "it": "I nuovi bandi del settore «{sector}» in tutta la Svizzera, via e-mail.",
-    "en": "Get new tenders in the “{sector}” sector from all over Switzerland by email.",
+    "de": "Wir schicken Ihnen neue Ausschreibungen der Branche «{sector}» aus der ganzen Schweiz per E-Mail.",
+    "fr": "Nous vous envoyons par e-mail les nouveaux appels d’offres du secteur « {sector} » de toute la Suisse.",
+    "it": "Ti mandiamo via e-mail i nuovi bandi del settore «{sector}» in tutta la Svizzera.",
+    "en": "We email you new tenders in the “{sector}” sector from all over Switzerland.",
 }
 META["alert_canton"] = {
-    "de": "Neue öffentliche Ausschreibungen {where} per E-Mail erhalten.",
-    "fr": "Recevez par e-mail les nouveaux appels d’offres publics {where}.",
-    "it": "I nuovi bandi pubblici {where}, via e-mail.",
-    "en": "Get new public tenders {where} by email.",
+    "de": "Wir schicken Ihnen neue öffentliche Ausschreibungen {where} per E-Mail.",
+    "fr": "Nous vous envoyons par e-mail les nouveaux appels d’offres publics {where}.",
+    "it": "Ti mandiamo via e-mail i nuovi bandi pubblici {where}.",
+    "en": "We email you new public tenders {where}.",
 }
 META["alert_none"] = {
-    "de": "Neue öffentliche Ausschreibungen per E-Mail erhalten.",
-    "fr": "Recevez par e-mail les nouveaux appels d’offres publics.",
-    "it": "I nuovi bandi pubblici, via e-mail.",
-    "en": "Get new public tenders by email.",
+    "de": "Wir schicken Ihnen neue öffentliche Ausschreibungen per E-Mail.",
+    "fr": "Nous vous envoyons par e-mail les nouveaux appels d’offres publics.",
+    "it": "Ti mandiamo via e-mail i nuovi bandi pubblici.",
+    "en": "We email you new public tenders.",
 }
 META["alert_link"] = {"de": "Gratis abonnieren", "fr": "S’abonner gratuitement",
                       "it": "Iscriviti gratis", "en": "Subscribe free"}
@@ -1926,35 +1689,35 @@ T["activity"] = {"de": "Kategorie", "fr": "Catégorie", "it": "Categoria",
                  "en": "Category"}
 PROSE["matched_tenders_one"] = {
     "de": "Offene Ausschreibung in einer verwandten Kategorie",
-    "fr": "Appel d’offres en cours dans une catégorie apparentée",
-    "it": "Bando aperto in una categoria affine",
+    "fr": "Appel d’offres en cours dans une catégorie proche",
+    "it": "Bando aperto in una categoria simile",
     "en": "Open tender in a related category",
 }
 # Meta descriptions without their closing clause, used when the full one would be cut
 # ("… – mit Auftraggebern, Beträgen und…", "… », publiées sur…"; verifier 28.09.2026)
 META["company_desc_short"] = {
-    "de": "{name}: {n} auf simap.ch{span}{val}.",
-    "fr": "{name} : {n} publiés sur simap.ch{span}{val}.",
-    "it": "{name}: {n} pubblicati su simap.ch{span}{val}.",
-    "en": "{name}: {n} published on simap.ch{span}{val}.",
+    "de": "{name} hat {n} gewonnen{span}{val} – laut simap.ch.",
+    "fr": "{name} a remporté {n}{span}{val}, selon simap.ch.",
+    "it": "{name} ha vinto {n}{span}{val}, secondo simap.ch.",
+    "en": "{name} has won {n}{span}{val}, according to simap.ch.",
 }
 META["buyer_desc_short"] = {
-    "de": "{name}: {n} an {f} vergeben.",
-    "fr": "{name} : {n} attribués à {f}.",
-    "it": "{name}: {n} aggiudicati a {f}.",
-    "en": "{name}: {n} awarded to {f}.",
+    "de": "{name} hat {n} an {f} vergeben.",
+    "fr": "{name} a attribué {n} à {f}.",
+    "it": "{name} ha aggiudicato {n} a {f}.",
+    "en": "{name} has awarded {n} to {f}.",
 }
 META["sector_desc_short"] = {
-    "de": "{n} an {f} in der Kategorie «{label}».",
-    "fr": "{n} attribués à {f} dans la catégorie « {label} ».",
-    "it": "{n} aggiudicati a {f} nella categoria «{label}».",
-    "en": "{n} awarded to {f} in the “{label}” category.",
+    "de": "In der Kategorie «{label}» gingen {n} an {f}.",
+    "fr": "Dans la catégorie « {label} », {n} ont été attribués à {f}.",
+    "it": "Nella categoria «{label}» {n} sono andati a {f}.",
+    "en": "In the “{label}” category, {n} went to {f}.",
 }
 META["canton_desc_short"] = {
-    "de": "{n} im Kanton {name} an {f} vergeben, publiziert auf simap.ch.",
-    "fr": "{n} dans le canton {of} attribués à {f}, publiés sur simap.ch.",
-    "it": "{n} nel Canton {name} aggiudicati a {f}, pubblicati su simap.ch.",
-    "en": "{n} awarded to {f} in the canton of {name}, published on simap.ch.",
+    "de": "Im Kanton {name} gingen {n} an {f}, laut simap.ch.",
+    "fr": "Dans le canton {of}, {n} ont été attribués à {f}, selon simap.ch.",
+    "it": "Nel Canton {name} {n} sono andati a {f}, secondo simap.ch.",
+    "en": "In the canton of {name}, {n} went to {f}, according to simap.ch.",
 }
 # one open tender: "classés par délai" / "nach Eingabefrist geordnet" said nothing about one
 # item, and the French plural participle disagreed with "1 appel d’offres"
@@ -2039,7 +1802,7 @@ IDX["sector_general"] = {
 # (6965: lot 15 of 15; 08.10.2026)
 T["lots"] = {"de": "Lose", "fr": "Lots", "it": "Lotti", "en": "Lots"}
 T["lot"] = {"de": "Los", "fr": "Lot", "it": "Lotto", "en": "Lot"}
-T["lot_name"] = {"de": "Bezeichnung", "fr": "Intitulé", "it": "Denominazione", "en": "Title"}
+T["lot_name"] = {"de": "Bezeichnung", "fr": "Intitulé", "it": "Titolo", "en": "Title"}
 T["project_number"] = {"de": "Projektnummer", "fr": "N° de projet", "it": "N. di progetto",
                        "en": "Project no."}
 # the texts that differ from lot to lot, each under the lots it belongs to
@@ -2098,13 +1861,13 @@ META["desc_won_n"] = {
 IDX["sum_no_joint"] = {
     "de": "ohne die {k} Aufträge an mehrere Firmen",
     "fr": "sans les {k} marchés attribués à plusieurs entreprises",
-    "it": "esclusi i {k} appalti aggiudicati a più aziende",
+    "it": "senza i {k} appalti andati a più aziende",
     "en": "excluding the {k} contracts awarded to several companies",
 }
 IDX["sum_no_joint_one"] = {
     "de": "ohne den Auftrag an mehrere Firmen",
     "fr": "sans le marché attribué à plusieurs entreprises",
-    "it": "escluso l'appalto aggiudicato a più aziende",
+    "it": "senza l’appalto andato a più aziende",
     "en": "excluding the contract awarded to several companies",
 }
 # A tender keeps its page for a while after its deadline: the links in alert e-mails and feeds
@@ -2114,14 +1877,14 @@ T["tender_expired"] = {"de": "Eingabefrist abgelaufen", "fr": "Délai de remise 
 # {when}: formato.deadline(); Italian without an article before the date ("il 08.10.2026" needs
 # "l’8"), as in mc_note_end
 META["expired_lead"] = {
-    "de": "Die Eingabefrist ist abgelaufen ({when}). Wird der Auftrag vergeben und auf simap.ch "
-          "publiziert, steht hier, wer ihn erhält.",
+    "de": "Die Eingabefrist ist abgelaufen ({when}). Wenn der Auftrag vergeben und auf simap.ch publiziert "
+          "wird, sehen Sie hier, wer ihn erhält.",
     "fr": "Le délai de remise des offres a expiré ({when}). Si le marché est attribué et publié sur "
           "simap.ch, vous verrez ici qui l’a remporté.",
-    "it": "Termine d’inoltro scaduto ({when}). Se l’appalto viene aggiudicato e pubblicato su simap.ch, "
-          "qui comparirà chi l’ha vinto.",
+    "it": "La scadenza è passata ({when}). Se l’appalto viene aggiudicato e pubblicato su simap.ch, qui "
+          "vedrai chi l’ha vinto.",
     "en": "The submission deadline has passed ({when}). If the contract is awarded and published on "
-          "simap.ch, you will see here who won it.",
+          "simap.ch, you’ll see here who won it.",
 }
 META["desc_deadline_passed"] = {
     "de": ", Eingabefrist abgelaufen ({date})",
@@ -2146,16 +1909,7 @@ META["due_today_bare"] = {"de": "läuft\u00a0heute\u00a0ab", "fr": "expire\u00a0
 # {days}: genera.EXPIRED_DAYS
 META["nf_title"] = {"de": "Seite nicht gefunden", "fr": "Page introuvable",
                     "it": "Pagina non trovata", "en": "Page not found"}
-META["nf_text"] = {
-    "de": "Diese Seite gibt es nicht oder nicht mehr. Ausschreibungen bleiben nach Ablauf der "
-          "Eingabefrist noch {days} Tage abrufbar; erfasst sind die Ausschreibungen seit dem {since}.",
-    "fr": "Cette page n’existe pas ou n’existe plus. Les appels d’offres restent consultables "
-          "{days} jours après l’expiration du délai de remise des offres ; le registre les recense depuis le {since}.",
-    "it": "Questa pagina non esiste o non esiste più. I bandi restano consultabili per {days} "
-          "giorni dopo la scadenza del termine d’inoltro; il registro li raccoglie dal {since}.",
-    "en": "This page does not exist, or no longer does. Tenders stay online for {days} days after "
-          "their submission deadline; the register has collected them since {since}.",
-}
+# (its text, "nf_text", is at the end of the file, in the 'strictly necessary' pass)
 # the breadcrumbs' first level, in the same words (T["home"], step 5)
 META["nf_home"] = {"de": "Startseite", "fr": "Accueil", "it": "Home", "en": "Home"}
 # shown by the page's script when the missing URL was a tender's (/de/auftrag/<id>/)
@@ -2205,12 +1959,7 @@ META["door_new"] = {"de": "{m} neue am {d}", "fr": "{m} nouveaux le {d}",
                     "it": "{m} nuovi il {d}", "en": "{m} new on {d}"}
 META["door_new_one"] = {"de": "1 neue am {d}", "fr": "1 nouveau le {d}",
                         "it": "1 nuovo il {d}", "en": "1 new on {d}"}
-META["door_open_sub"] = {
-    "de": "Nach Eingabefrist, Kanton und Branche – jede mit dem Link zur amtlichen Publikation.",
-    "fr": "Par délai, par canton et par secteur – chacun avec le lien vers la publication officielle.",
-    "it": "Per scadenza, cantone e settore – ognuno con il link alla pubblicazione ufficiale.",
-    "en": "By deadline, canton and sector – each with a link to the official publication.",
-}
+# (the open tenders' door line, "door_open_sub", is at the end of the file, in the 'strictly necessary' pass)
 META["door_companies_h"] = {"de": "Firma finden", "fr": "Trouver une entreprise",
                             "it": "Trova un’azienda", "en": "Find a company"}
 META["door_companies_sub"] = {
@@ -2232,28 +1981,29 @@ META["open_table_h2"] = {"de": "Offene Ausschreibungen nach Frist",
 # a canton or industry without an open tender keeps its page and its feed, and offers the alert
 META["empty_canton"] = {
     "de": "Zurzeit ist im Kanton {name} keine Ausschreibung offen.",
-    "fr": "Aucun appel d’offres n’est actuellement en cours dans le canton {of}.",
+    "fr": "Il n’y a pas d’appel d’offres en cours dans le canton {of} pour le moment.",
     "it": "Al momento nel Canton {name} non ci sono bandi aperti.",
     "en": "There are no open tenders in the canton of {name} at the moment.",
 }
 META["empty_sector"] = {
     "de": "Zurzeit ist in der Branche «{name}» keine Ausschreibung offen.",
-    "fr": "Aucun appel d’offres n’est actuellement en cours dans le secteur « {name} ».",
+    "fr": "Il n’y a pas d’appel d’offres en cours dans le secteur « {name} » pour le moment.",
     "it": "Al momento nel settore «{name}» non ci sono bandi aperti.",
     "en": "There are no open tenders in the “{name}” sector at the moment.",
 }
 META["empty_buyer"] = {
     "de": "Zurzeit hat dieser Auftraggeber keine offene Ausschreibung.",
-    "fr": "Cet acheteur public n’a actuellement aucun appel d’offres en cours.",
+    "fr": "Cet acheteur public n’a pas d’appel d’offres en cours pour le moment.",
     "it": "Al momento questo ente pubblico non ha bandi aperti.",
     "en": "This public buyer has no open tenders at the moment.",
 }
 # a tender page past its deadline: the hook above the alert
 META["alert_missed"] = {
-    "de": "Frist verpasst? Die nächsten Ausschreibungen dieser Art erhalten Sie gratis per E-Mail.",
-    "fr": "Délai manqué ? Recevez gratuitement par e-mail les prochains appels d’offres de ce type.",
-    "it": "Scadenza mancata? I prossimi bandi di questo tipo arrivano gratis via e-mail.",
-    "en": "Missed the deadline? Get the next tenders like this by email – free.",
+    "de": "Frist verpasst? Wir schicken Ihnen die nächsten Ausschreibungen dieser Art gratis per E-Mail.",
+    "fr": "Vous avez manqué le délai ? Nous vous envoyons gratuitement par e-mail les prochains appels "
+          "d’offres de ce type.",
+    "it": "Hai perso la scadenza? Ti mandiamo gratis via e-mail i prossimi bandi come questo.",
+    "en": "Missed the deadline? We’ll email you the next tenders like this – free.",
 }
 # the open tenders of the division a sector page belongs to
 IDX["open_in_sector"] = {
@@ -2300,16 +2050,7 @@ IDX["show_more"] = {"de": "{n} weitere anzeigen", "fr": "Afficher les {n} autres
                     "en": "Show {n} more"}
 IDX["similar_h"] = {"de": "Ähnliche vergebene Aufträge", "fr": "Marchés similaires déjà attribués",
                     "it": "Appalti simili già aggiudicati", "en": "Similar contracts awarded"}
-IDX["similar_note"] = {
-    "de": "Vergebene Aufträge der Branche «{sector}» im Kanton {name}: die mit dem ähnlichsten CPV-Code "
-          "zuerst, bei gleicher Ähnlichkeit die neuesten.",
-    "fr": "Marchés attribués du secteur « {sector} » dans le canton {of} : les codes CPV les plus "
-          "proches d’abord ; à égalité, les plus récents.",
-    "it": "Appalti aggiudicati del settore «{sector}» nel Canton {name}: prima i codici CPV più simili, a "
-          "parità di somiglianza i più recenti.",
-    "en": "Contracts awarded in the “{sector}” sector in the canton of {name}: closest CPV codes first, "
-          "and the newest first among equally close ones.",
-}
+# (the note under it, "similar_note", is at the end of the file, in the 'strictly necessary' pass)
 # CSV downloads (canton, buyer and company pages): one file per page, its awards newest first
 IDX["csv_link"] = {"de": "Daten als CSV", "fr": "Données en CSV", "it": "Dati in CSV", "en": "Data as CSV"}
 IDX["csv_meta"] = {"de": "{n} Zeilen, {size}", "fr": "{n} lignes, {size}", "it": "{n} righe, {size}",
@@ -2333,14 +2074,14 @@ UEBER: dict[str, dict] = {
     "de": {
         "title": "So funktioniert’s",
         "h1": "So funktioniert’s",
-        "lead": "Woher die Daten kommen, wie sie geordnet sind und was sie nicht zeigen – dazu die wichtigsten "
-                "Begriffe kurz erklärt.",
+        "lead": "Woher die Daten kommen, wie wir sie ordnen und was sie nicht zeigen. Dazu die wichtigsten Begriffe, "
+                "kurz erklärt.",
         "sections": [
             ("register", "Was dieses Register ist", [
-                "Öffentliche Aufträge Schweiz ordnet die vergebenen Aufträge und die Ausschreibungen, die Bund, "
-                "Kantone und Gemeinden auf simap.ch publizieren, nach Firmen, Auftraggebern, Kantonen und "
-                "Branchen. So lässt sich nachlesen, wer welche öffentlichen Aufträge gewonnen hat – eine "
-                "Frage, die simap.ch selbst nicht beantwortet.",
+                "Öffentliche Aufträge Schweiz sammelt die vergebenen Aufträge und die Ausschreibungen, die Bund, "
+                "Kantone und Gemeinden auf simap.ch publizieren, und ordnet sie nach Firmen, Auftraggebern, "
+                "Kantonen und Branchen. So sehen Sie, wer welche öffentlichen Aufträge gewonnen hat – eine Frage, "
+                "die simap.ch selbst nicht beantwortet.",
                 "Das Register ist ein privates, unabhängiges Projekt. Es ist keine amtliche Veröffentlichung "
                 "und steht in keiner Verbindung zu simap.ch oder zu einer Behörde. Massgebend sind "
                 "ausschliesslich die Publikationen auf simap.ch; jede Seite eines Auftrags und jede "
@@ -2351,10 +2092,10 @@ UEBER: dict[str, dict] = {
             ("begriffe", "Die wichtigsten Begriffe", [[
                 "Ausschreibung: Ein Auftraggeber sucht Angebote für einen Auftrag. Bis zur Eingabefrist können "
                 "Firmen ein Angebot einreichen.",
-                "Eingabefrist: Bis zu diesem Datum (oft mit Uhrzeit) muss ein Angebot eingereicht sein. "
+                "Eingabefrist: Bis zu diesem Datum, oft mit Uhrzeit, muss das Angebot eingereicht sein. "
                 "Massgebend sind die Angaben auf simap.ch und in den Unterlagen.",
-                "Zuschlag: der Entscheid, welche Firma den Auftrag erhält. Dieses Register spricht von "
-                "«vergebenen Aufträgen».",
+                "Zuschlag: der Entscheid, welche Firma den Auftrag erhält. Wir sprechen hier von «vergebenen "
+                "Aufträgen».",
                 "Auftraggeber: wer den Auftrag vergibt – Bund, Kanton, Gemeinde oder eine öffentliche "
                 "Einrichtung, etwa ein Spital oder ein Unternehmen der öffentlichen Hand.",
                 "Verfahren: wie ein Auftrag vergeben wird. Offenes Verfahren: Jede Firma kann ein Angebot "
@@ -2374,167 +2115,165 @@ UEBER: dict[str, dict] = {
                 "Angebotspreis: der Preis, den eine Firma in ihrem Angebot genannt hat. Bei einem Auftrag an "
                 "mehrere Firmen nennt simap.ch einen Preis je Firma.",
                 "Hinweis von simap.ch: Den Satz «Dies ist keine amtliche Veröffentlichung …» in der Fusszeile "
-                "schreibt simap.ch vor; er steht deshalb auf jeder Seite wörtlich und auf Deutsch.",
+                "schreibt simap.ch vor. Deshalb steht er auf jeder Seite wörtlich und auf Deutsch.",
             ]]),
             ("quelle", "Quelle und Nutzungsbedingungen", [
                 "Alle Daten stammen aus der Programmierschnittstelle (API) von simap.ch, der amtlichen "
-                "Plattform für öffentliche Aufträge in der Schweiz. Deren Nutzungsbedingungen "
-                "erlauben die Weiterverwendung, auch zu gewerblichen Zwecken, sofern die Daten inhaltlich "
-                "unverändert, getrennt von eigenen Auswertungen und mit dem vorgeschriebenen Hinweis "
-                "wiedergegeben werden. Dieser Hinweis steht in der Fusszeile jeder Seite; eigene Auswertungen sind "
-                "als solche gekennzeichnet.",
+                "Plattform für öffentliche Aufträge in der Schweiz. Ihre Nutzungsbedingungen erlauben die "
+                "Weiterverwendung, auch gewerblich, wenn die Daten inhaltlich unverändert bleiben, getrennt von "
+                "eigenen Auswertungen stehen und den vorgeschriebenen Hinweis tragen. Dieser Hinweis steht in "
+                "der Fusszeile jeder Seite; unsere eigenen Auswertungen sind als solche gekennzeichnet.",
                 "Titel und Beschreibungen erscheinen so, wie sie publiziert wurden, in der Sprache der "
-                "Publikation. Sie werden weder übersetzt noch umformuliert.",
-                "Lizenz: Das Register vergibt an den Daten keine eigene Lizenz; für ihre Weiterverwendung "
+                "Publikation. Wir übersetzen sie nicht und formulieren sie nicht um.",
+                "Lizenz: Das Register vergibt an den Daten keine eigene Lizenz. Für ihre Weiterverwendung "
                 "gelten die Nutzungsbedingungen von simap.ch ({terms}). Auf diese Bedingungen verweist auch "
                 "die Lizenzangabe in den strukturierten Daten dieser Seite (schema.org/Dataset).",
             ]),
-            ("aktualisierung", "Wann die Daten aktualisiert werden", [
-                "simap.ch gibt die Publikationen eines Tages ab 8 Uhr zur Weiterverbreitung frei. Das "
-                "Register holt sie in der Regel an jedem Werktag danach ab und ist meist am Vormittag "
-                "aktualisiert; an einzelnen Tagen später oder erst am Folgetag. Abgerufen werden jeweils die "
-                "vergebenen Aufträge des laufenden und des vorangehenden Monats – dort treffen auch "
-                "nachträgliche Berichtigungen ein – sowie die Ausschreibungen der letzten 75 Tage.",
+            ("aktualisierung", "Wann wir die Daten aktualisieren", [
+                "simap.ch gibt die Publikationen eines Tages ab 8 Uhr zur Weiterverbreitung frei. Wir holen sie "
+                "in der Regel an jedem Werktag danach ab. Meist ist das Register am Vormittag aktuell, an "
+                "einzelnen Tagen später oder erst am Folgetag. Jedes Mal holen wir die vergebenen Aufträge des "
+                "laufenden und des vorangehenden Monats – dort treffen auch nachträgliche Berichtigungen ein – "
+                "sowie die Ausschreibungen der letzten 75 Tage.",
                 "Das Datum in der Fusszeile jeder Seite («{stand}») ist das Datum der neuesten Publikation im "
                 "Register. Aktualisiert am {date}: {awards} vergebene Aufträge und {open} offene Ausschreibungen.",
             ]),
             ("abdeckung", "Was erfasst ist", [
                 "Das Archiv beginnt im {start}.{ramp}{incomplete}",
-                "Erfasst sind die vergebenen Aufträge, die auf simap.ch nach einem offenen Verfahren, einem "
-                "selektiven Verfahren oder einem Einladungsverfahren publiziert werden, sowie die Ausschreibungen "
-                "mit noch offener Eingabefrist. Freihändig vergebene Aufträge, die simap.ch in einzelnen Fällen "
-                "ebenfalls publiziert, sind nicht enthalten. Aufträge, die nicht auf simap.ch publiziert werden – "
-                "etwa kleinere Aufträge, die ohne Ausschreibung direkt vergeben werden dürfen –, fehlen hier wie "
-                "dort.",
+                "Erfasst sind die vergebenen Aufträge, die simap.ch nach einem offenen Verfahren, einem "
+                "selektiven Verfahren oder einem Einladungsverfahren publiziert, sowie die Ausschreibungen mit "
+                "noch offener Eingabefrist. Freihändig vergebene Aufträge, die simap.ch in einzelnen Fällen "
+                "ebenfalls publiziert, sind nicht enthalten. Aufträge, die nicht auf simap.ch publiziert werden "
+                "– etwa kleinere Aufträge, die ohne Ausschreibung direkt vergeben werden dürfen –, fehlen hier "
+                "wie dort.",
             ]),
-            ("kantone", "Wie Aufträge den Kantonen zugeordnet werden", [
-                "Massgebend ist der Kanton, den die Publikation als Ort der Leistung angibt (die Adresse des "
-                "Auftrags) – dieselbe Angabe, nach der simap.ch selbst filtert. Bei einem Projekt mit Losen "
-                "gilt der Kanton jedes Loses: Eine Ausschreibung mit Losen in mehreren Kantonen steht in der "
-                "Liste jedes dieser Kantone und trägt den Vermerk «{multi}»; ein vergebener Auftrag zählt nur "
-                "im Kanton seines Loses, damit keine Summe ihn doppelt zählt.",
-                "Nennt die Publikation weder für den Auftrag noch für die Lose einen Ort, steht der Kanton "
-                "des Auftraggebers, markiert mit «{fallback}». So erscheinen etwa Arbeiten an "
+            ("kantone", "Wie wir Aufträge den Kantonen zuordnen", [
+                "Massgebend ist der Kanton, den die Publikation als Ort der Leistung angibt, also die Adresse des "
+                "Auftrags – dieselbe Angabe, nach der simap.ch selbst filtert. Bei einem Projekt mit Losen gilt "
+                "der Kanton jedes Loses: Eine Ausschreibung mit Losen in mehreren Kantonen steht in der Liste "
+                "jedes dieser Kantone, mit dem Vermerk «{multi}». Ein vergebener Auftrag zählt nur im Kanton "
+                "seines Loses, damit keine Summe ihn doppelt zählt.",
+                "Nennt die Publikation weder für den Auftrag noch für die Lose einen Ort, nehmen wir den Kanton "
+                "des Auftraggebers und markieren ihn mit «{fallback}». So erscheinen etwa Arbeiten an "
                 "Nationalstrassen im Thurgau oder in St. Gallen, die die ASTRA-Filiale Winterthur ohne Ort "
-                "ausschreibt, unter Zürich. Andere Auftraggeber geben ihre eigene Adresse als Ort der "
-                "Leistung an; dann steht der Kanton ihres Sitzes, auch wenn die Arbeiten anderswo "
-                "stattfinden – das lässt sich aus den Daten nicht erkennen.",
-                "{nocant} Die Summe über alle Kantone und diese Aufträge ergibt die Gesamtzahl auf der "
-                "Startseite. «Ausschreibungen per E-Mail» verwendet dieselbe Zuordnung: Eine Ausschreibung "
-                "wird für jeden ihrer Kantone verschickt.",
+                "ausschreibt, unter Zürich. Andere Auftraggeber geben ihre eigene Adresse als Ort der Leistung "
+                "an. Dann steht der Kanton ihres Sitzes, auch wenn die Arbeiten anderswo stattfinden – das lässt "
+                "sich aus den Daten nicht erkennen.",
+                "{nocant} Alle Kantone zusammen und diese Aufträge ergeben die Gesamtzahl auf der Startseite. "
+                "«Ausschreibungen per E-Mail» ordnet gleich zu: Für Ihre Auswahl zählt jeder Kanton einer "
+                "Ausschreibung.",
             ]),
-            ("zusammenfuehrung", "Wie Firmen und Auftraggeber zusammengefasst werden", [
-                "Der Name einer Firma ist in den Publikationen nicht immer gleich geschrieben. "
-                "Schreibweisen, die sich nur in Gross- und Kleinschreibung, Umlauten, Akzenten oder "
-                "Satzzeichen unterscheiden («CSD INGENIEURE AG» und «CSD Ingenieure AG», «Bolliger & Co. AG» "
-                "und «Bolliger + Co. AG»), gelten als dieselbe Firma; angezeigt wird die häufigste "
-                "Schreibweise. Unterschiedlich benannte Einheiten, etwa Zweigniederlassungen, bleiben "
-                "getrennt. Ein Abgleich mit dem Handelsregister findet nicht statt.",
-                "Eine eigene Seite erhält eine Firma ab {min_c} Aufträgen, ein Auftraggeber ab "
-                "{min_b} und eine Kategorie (CPV-Code) ab {min_s}. Auftraggeber werden ebenfalls über ihren "
-                "Namen zusammengefasst, unabhängig von Leerzeichen, Bindestrichen, Anführungszeichen und "
-                "Klammern.",
+            ("zusammenfuehrung", "Wie wir Firmen und Auftraggeber zusammenfassen", [
+                "Der Name einer Firma ist in den Publikationen nicht immer gleich geschrieben. Schreibweisen, "
+                "die sich nur in Gross- und Kleinschreibung, Umlauten, Akzenten oder Satzzeichen unterscheiden "
+                "(«CSD INGENIEURE AG» und «CSD Ingenieure AG», «Bolliger & Co. AG» und «Bolliger + Co. AG»), "
+                "behandeln wir als dieselbe Firma und zeigen die häufigste Schreibweise. Unterschiedlich "
+                "benannte Einheiten, etwa Zweigniederlassungen, bleiben getrennt. Mit dem Handelsregister "
+                "gleichen wir die Namen nicht ab.",
+                "Eine eigene Seite erhält eine Firma ab {min_c} Aufträgen, ein Auftraggeber ab {min_b} und eine "
+                "Kategorie (CPV-Code) ab {min_s}. Auch Auftraggeber fassen wir über ihren Namen zusammen, "
+                "unabhängig von Leerzeichen, Bindestrichen, Anführungszeichen und Klammern.",
                 "Ein Auftrag an mehrere Firmen erscheint auf der Seite jeder genannten Firma.",
             ]),
             ("betraege", "Beträge, Lose und Summen", [
-                "Beträge werden so wiedergegeben, wie sie publiziert wurden. Die Seite eines Auftrags nennt "
-                "den genauen Betrag; Listen zeigen einen gerundeten Betrag, den genauen beim Darüberfahren "
-                "mit der Maus und für Screenreader.",
-                "Summen enthalten nur Aufträge in Franken an eine einzige Firma. Bei einem Auftrag "
-                "an mehrere Firmen nennt die Publikation einen Preis je Firma: Diese Preise "
-                "werden einzeln gezeigt, aber weder addiert noch einem Gesamtauftrag zugeschrieben – bei "
-                "Rahmenverträgen steht oft bei jeder Firma dieselbe Obergrenze. Beträge in Euro oder "
-                "anderen Währungen erscheinen mit ihrer Währung, nie in einer Spalte in Franken, und zählen "
-                "in keiner Summe.",
-                "Ein Betrag unter 1’000 CHF ist bei einem vergebenen Auftrag fast nie dessen Wert, sondern "
-                "ein Einheitspreis (etwa pro Stunde, Stück oder Kilometer): Er ist mit «{rate}» markiert "
-                "und zählt in keiner Summe und keinem Median. Dasselbe gilt für einen Betrag bis 5’000 CHF, "
-                "wenn die Publikation auf Personalverleih oder einen Tages- oder Stundensatz hinweist "
-                "(«LSE», «Personalverleih», «Tagessatz», «Regie» und Ähnliches).",
-                "simap.ch publiziert bei einem Projekt mit Losen jedes Los einzeln. Die Seite des "
-                "Projekts listet alle Lose; nennt simap für mehrere Lose derselben Firma denselben "
-                "Projektpreis, zählt er in Summen nur einmal.",
+                "Wir geben Beträge so wieder, wie sie publiziert wurden. Die Seite eines Auftrags nennt den "
+                "genauen Betrag. Listen zeigen einen gerundeten Betrag; den genauen sehen Sie, wenn Sie mit der "
+                "Maus darüberfahren, und Screenreader lesen ihn vor.",
+                "Summen enthalten nur Aufträge in Franken an eine einzige Firma. Bei einem Auftrag an mehrere "
+                "Firmen nennt die Publikation einen Preis je Firma. Diese Preise zeigen wir einzeln, aber wir "
+                "addieren sie nicht und schreiben sie keinem Gesamtauftrag zu – bei Rahmenverträgen steht oft "
+                "bei jeder Firma dieselbe Obergrenze. Beträge in Euro oder anderen Währungen erscheinen mit "
+                "ihrer Währung, nie in einer Spalte in Franken, und zählen in keiner Summe.",
+                "Ein Betrag unter 1’000 CHF ist bei einem vergebenen Auftrag fast nie dessen Wert, sondern ein "
+                "Einheitspreis (etwa pro Stunde, Stück oder Kilometer). Wir markieren ihn mit «{rate}» und "
+                "zählen ihn in keiner Summe und keinem Median. Dasselbe gilt für einen Betrag bis 5’000 CHF, "
+                "wenn die Publikation auf Personalverleih oder einen Tages- oder Stundensatz hinweist («LSE», "
+                "«Personalverleih», «Tagessatz», «Regie» und Ähnliches).",
+                "simap.ch publiziert bei einem Projekt mit Losen jedes Los einzeln. Die Seite des Projekts "
+                "listet alle Lose. Nennt simap für mehrere Lose derselben Firma denselben Projektpreis, zählt "
+                "er in Summen nur einmal.",
             ]),
             ("ausgeschlossen", "Was nicht enthalten ist", [[
                 "Abgebrochene Verfahren: simap.ch publiziert sie im selben Datenstrom wie die vergebenen "
                 "Aufträge; hier erscheinen sie nicht als vergebene Aufträge.",
                 "Berichtigungen: Wird eine Ausschreibung oder ein vergebener Auftrag berichtigt, gilt die "
-                "zuletzt publizierte Fassung; frühere Fassungen erscheinen nicht zusätzlich.",
-                "Abgelaufene Ausschreibungen: Nach Ablauf der Eingabefrist bleibt die Seite einer "
-                "Ausschreibung noch {days} Tage abrufbar, gekennzeichnet mit «{expired}». Wird der "
-                "Auftrag vorher vergeben und publiziert, steht unter derselben Adresse, wer ihn erhält. "
-                "Erfasst sind die Ausschreibungen seit dem {since}.",
-                "Ausschreibungen ohne lesbare Eingabefrist werden nicht als offen aufgeführt.",
+                "zuletzt publizierte Fassung. Frühere Fassungen zeigen wir nicht zusätzlich.",
+                "Abgelaufene Ausschreibungen: Nach Ablauf der Eingabefrist bleibt die Seite einer Ausschreibung "
+                "noch {days} Tage online, mit dem Vermerk «{expired}». Wird der Auftrag vorher vergeben und "
+                "publiziert, sehen Sie unter derselben Adresse, wer ihn erhält. Erfasst sind die "
+                "Ausschreibungen seit dem {since}.",
+                "Ausschreibungen ohne lesbare Eingabefrist führen wir nicht als offen auf.",
             ]]),
             ("cpv", "Branchen und Kategorien (CPV)", [
                 "Die Einteilung folgt dem CPV, dem EU-weit einheitlichen Vokabular für öffentliche Aufträge. "
                 "Eine Branche entspricht den ersten zwei Ziffern des Codes (z. B. 45, Bauarbeiten), eine "
                 "Kategorie dem genauen achtstelligen Code (z. B. 45233000). Die Bezeichnungen der Kategorien "
                 "stammen aus der amtlichen Fassung des CPV in der jeweiligen Sprache, auf Deutsch in Schweizer "
-                "Schreibweise (ss); die Namen der 45 Branchen sind eigene Kurzformen des Registers.",
+                "Schreibweise (ss). Die Namen der 45 Branchen sind eigene Kurzformen des Registers.",
                 "«{matched}» auf den Firmenseiten und «{similar}» auf den Ausschreibungsseiten beruhen "
                 "auf den gemeinsamen Ziffern der CPV-Codes: Ein allgemeiner Code wie 45000000 (Bauarbeiten) "
-                "allein genügt nicht. Für Firmen müssen mindestens die ersten vier Ziffern (ohne "
-                "Füllnullen) übereinstimmen; ähnliche vergebene Aufträge stammen aus derselben Branche und "
-                "demselben Kanton, die mit dem ähnlichsten Code zuerst.",
+                "allein genügt nicht. Für Firmen müssen mindestens die ersten vier Ziffern (ohne Füllnullen) "
+                "übereinstimmen. Ähnliche vergebene Aufträge stammen aus derselben Branche und demselben "
+                "Kanton, die mit dem ähnlichsten Code zuerst.",
             ]),
             ("daten", "Daten herunterladen und abonnieren", [[
                 "CSV: {csv_pages} bieten ihre vergebenen Aufträge als CSV-Datei an – UTF-8 mit BOM, Semikolon "
-                "als Trennzeichen, Beträge mit Punkt als Dezimalzeichen; eine Datei für alle vier "
+                "als Trennzeichen, Beträge mit Punkt als Dezimalzeichen. Eine Datei gilt für alle vier "
                 "Sprachversionen, mit englischen Spaltennamen ({cols}) und den Titeln in der Sprache der "
-                "Publikation. Bei Aufträgen an mehrere Firmen bleibt die Spalte «Amount» leer. "
-                "Zellen, die mit =, +, - oder @ beginnen, erhalten einen vorangestellten Apostroph, damit "
-                "Tabellenprogramme sie nicht als Formel ausführen. «Canton source» nennt die Herkunft des "
-                "Kantons (place: Ort der Leistung, lot: Los, buyer: Sitz des Auftraggebers), «Amount note» "
-                "markiert vermutliche Einheitspreise (probable unit rate).",
+                "Publikation. Bei Aufträgen an mehrere Firmen bleibt die Spalte «Amount» leer. Zellen, die mit "
+                "=, +, - oder @ beginnen, erhalten einen vorangestellten Apostroph, damit Tabellenprogramme sie "
+                "nicht als Formel ausführen. «Canton source» nennt die Herkunft des Kantons (place: Ort der "
+                "Leistung, lot: Los, buyer: Sitz des Auftraggebers), «Amount note» markiert vermutliche "
+                "Einheitspreise (probable unit rate).",
                 "Grafiken: Jede Grafik nennt ihre Quelle und verlinkt ihre Daten als CSV-Datei.",
                 "Kalender: Jede offene Ausschreibung bietet ihre Eingabefrist als Kalenderdatei (.ics) an.",
-                "RSS und E-Mail: Für jeden Kanton und jede Branche gibt es einen RSS-Feed; «Ausschreibungen "
-                "per E-Mail» schickt neue Ausschreibungen nach Kanton und Branche, gratis und ohne Konto.",
+                "RSS und E-Mail: Für jeden Kanton und jede Branche gibt es einen RSS-Feed. Mit «Ausschreibungen "
+                "per E-Mail» schicken wir Ihnen neue Ausschreibungen nach Kanton und Branche, gratis und ohne "
+                "Konto.",
             ]]),
             ("kontakt", "Kontakt und Fehlermeldungen", [
-                "Fehler, Fragen und Hinweise an {mail}; auf jeder Seite eines Auftrags und jeder Ausschreibung "
-                "öffnet «{report}» eine E-Mail mit der Publikationsnummer im Betreff. Das Register wird von "
-                "einer Privatperson in der Schweiz betrieben; die Angaben zum Betreiber stehen im Impressum.",
+                "Fehler, Fragen und Hinweise schicken Sie an {mail}. Auf jeder Seite eines Auftrags und jeder "
+                "Ausschreibung öffnet «{report}» eine E-Mail mit der Publikationsnummer im Betreff. Das Register "
+                "wird von einer Privatperson in der Schweiz betrieben; die Angaben zum Betreiber stehen im "
+                "Impressum.",
             ]),
         ],
         "csv_pages": "Die Kantons-, Auftraggeber- und Firmenseiten",
         "csv_pages_nocomp": "Die Kantons- und Auftraggeberseiten",
         "ramp": " Von {a} bis {b} ist nur ein Teil der vergebenen Aufträge erfasst; in den Monatsgrafiken sind "
                 "diese Monate schraffiert. Ab {full} enthält das Register die vergebenen Aufträge, die die "
-                "Schnittstelle von simap.ch beim Abruf für den jeweiligen Monat geliefert hat; ein Abgleich mit "
-                "amtlichen Gesamtzahlen findet nicht statt.",
+                "Schnittstelle von simap.ch beim Abruf für den jeweiligen Monat geliefert hat. Mit amtlichen "
+                "Gesamtzahlen gleichen wir sie nicht ab.",
         "incomplete": " Bei {n} Publikationen vergebener Aufträge ({months}) fehlten in den Daten der Schnittstelle "
-                      "der Titel und die Firma, die den Auftrag erhielt; sie sind in keiner Zahl und keiner Liste "
+                      "der Titel und die Firma, die den Auftrag erhielt. Sie sind in keiner Zahl und keiner Liste "
                       "enthalten.",
-        "nocant": "{n} nennen weder einen Ort noch einen Auftraggeber mit Kanton; sie zählen zu keinem "
-                  "Kanton, und die Kantonsübersicht führt sie gesondert auf.",
+        "nocant": "{n} nennen weder einen Ort noch einen Auftraggeber mit Kanton. Sie zählen zu keinem Kanton; "
+                  "die Kantonsübersicht führt sie gesondert auf.",
         "nocant_zero": "Zurzeit hat jeder vergebene Auftrag einen Kanton.",
         "alert_link": "Gratis abonnieren",
     },
     "fr": {
         "title": "Comment ça marche",
         "h1": "Comment ça marche",
-        "lead": "D’où viennent les données, comment elles sont classées et ce qu’elles ne montrent pas – avec "
-                "les principaux termes expliqués en bref.",
+        "lead": "D’où viennent les données, comment nous les classons et ce qu’elles ne montrent pas. Avec les "
+                "principaux termes, expliqués en bref.",
         "sections": [
             ("register", "Ce qu’est ce registre", [
-                "« Marchés publics suisses » classe par entreprise, par acheteur public, par canton et par "
-                "secteur les marchés attribués et les appels d’offres que la Confédération, les cantons et les "
-                "communes publient sur simap.ch. On peut ainsi savoir qui a remporté quels marchés publics – une "
-                "question à laquelle simap.ch ne répond pas lui-même.",
-                "Le registre est un projet privé et indépendant. Il ne s’agit pas d’une publication "
-                "officielle, et il n’a aucun lien avec simap.ch ni avec aucune autorité. Seules les "
-                "publications de simap.ch font foi ; chaque page de marché attribué et d’appel d’offres renvoie "
-                "à la publication officielle.",
+                "« Marchés publics suisses » rassemble les marchés attribués et les appels d’offres que la "
+                "Confédération, les cantons et les communes publient sur simap.ch, et les classe par entreprise, "
+                "par acheteur public, par canton et par secteur. Vous voyez ainsi qui a remporté quels marchés "
+                "publics – une question à laquelle simap.ch ne répond pas lui-même.",
+                "Le registre est un projet privé et indépendant. Ce n’est pas une publication officielle, et il "
+                "n’a aucun lien avec simap.ch ni avec aucune autorité. Seules les publications de simap.ch font "
+                "foi ; chaque page de marché attribué et d’appel d’offres renvoie à la publication officielle.",
             ]),
             ("begriffe", "Les termes principaux", [[
                 "Appel d’offres : un acheteur public demande des offres pour un marché. Les entreprises peuvent "
                 "remettre une offre jusqu’au délai de remise.",
-                "Délai de remise des offres : la date (souvent avec l’heure) à laquelle une offre doit avoir été "
+                "Délai de remise des offres : la date, souvent avec l’heure, à laquelle l’offre doit être "
                 "remise. Font foi les indications de simap.ch et des documents d’appel d’offres.",
-                "Adjudication : la décision qui désigne l’entreprise qui obtient le marché. Ce registre parle de "
-                "« marchés attribués ».",
+                "Adjudication : la décision qui désigne l’entreprise qui obtient le marché. Ici, nous parlons "
+                "de « marchés attribués ».",
                 "Acheteur public (adjudicateur) : l’entité qui attribue le marché – Confédération, canton, "
                 "commune ou établissement public, comme un hôpital ou une entreprise publique.",
                 "Procédure : la manière dont le marché est attribué. Procédure ouverte : toute entreprise peut "
@@ -2553,98 +2292,95 @@ UEBER: dict[str, dict] = {
                 "Prix de l’offre : le prix indiqué par une entreprise dans son offre. Pour un marché attribué à "
                 "plusieurs entreprises, simap.ch indique un prix par entreprise.",
                 "Mention de simap.ch : la phrase « Dies ist keine amtliche Veröffentlichung … » au bas de chaque "
-                "page est imposée par simap.ch ; elle y figure donc telle quelle, en allemand.",
+                "page est imposée par simap.ch. C’est pourquoi elle y figure telle quelle, en allemand.",
             ]]),
             ("quelle", "Source et conditions d’utilisation", [
                 "Toutes les données proviennent de l’interface de programmation (API) de simap.ch, la "
                 "plateforme officielle des marchés publics en Suisse. Ses conditions d’utilisation autorisent "
-                "la réutilisation, y compris à des fins commerciales, à condition que les données soient "
-                "reproduites sans modification de leur contenu, séparées de nos propres analyses et "
-                "accompagnées de la mention prescrite. Cette mention figure au bas de chaque page ; nos "
-                "propres analyses sont signalées comme telles.",
+                "la réutilisation, y compris à des fins commerciales, si les données restent inchangées dans "
+                "leur contenu, séparées de nos propres analyses et accompagnées de la mention prescrite. Cette "
+                "mention figure au bas de chaque page ; nos propres analyses sont signalées comme telles.",
                 "Les titres et les descriptions apparaissent tels qu’ils ont été publiés, dans la langue de "
-                "la publication. Ils ne sont ni traduits ni reformulés.",
-                "Licence : le registre n’accorde aucune licence propre sur les données ; leur réutilisation "
-                "est régie par les conditions d’utilisation de simap.ch ({terms}). C’est aussi à ces "
-                "conditions que renvoie l’indication de licence dans les données structurées de cette page "
-                "(schema.org/Dataset).",
+                "la publication. Nous ne les traduisons pas et ne les reformulons pas.",
+                "Licence : le registre n’accorde aucune licence propre sur les données. Leur réutilisation est "
+                "régie par les conditions d’utilisation de simap.ch ({terms}). L’indication de licence dans les "
+                "données structurées de cette page (schema.org/Dataset) renvoie aussi à ces conditions.",
             ]),
-            ("aktualisierung", "Quand les données sont mises à jour", [
-                "simap.ch autorise la diffusion des publications du jour à partir de 8 h. Le registre les "
-                "récupère en règle générale chaque jour ouvrable après cette heure et il est le plus souvent "
-                "à jour dans la matinée ; certains jours plus tard, ou le lendemain. Chaque mise à jour "
-                "reprend les marchés attribués du mois en cours et du mois précédent – c’est là qu’arrivent "
-                "aussi les rectifications – ainsi que les appels d’offres des 75 derniers jours.",
-                "La date indiquée au bas de chaque page (« {stand} ») est celle de la publication la plus "
-                "récente du registre. Mis à jour le {date} : {awards} marchés attribués et {open} "
-                "appels d’offres en cours.",
+            ("aktualisierung", "Quand nous mettons les données à jour", [
+                "simap.ch autorise la diffusion des publications du jour à partir de 8 h. Nous les récupérons en "
+                "règle générale chaque jour ouvrable après cette heure. Le registre est le plus souvent à jour "
+                "dans la matinée, certains jours plus tard ou le lendemain. Chaque mise à jour reprend les "
+                "marchés attribués du mois en cours et du mois précédent – c’est là qu’arrivent aussi les "
+                "rectifications – ainsi que les appels d’offres des 75 derniers jours.",
+                "La date au bas de chaque page (« {stand} ») est celle de la publication la plus récente du "
+                "registre. Mis à jour le {date} : {awards} marchés attribués et {open} appels d’offres en cours.",
             ]),
-            ("abdeckung", "Ce qui est repris", [
+            ("abdeckung", "Ce que contient le registre", [
                 "Les données commencent en {start}.{ramp}{incomplete}",
-                "Le registre reprend les marchés attribués publiés sur simap.ch à l’issue d’une procédure "
-                "ouverte, d’une procédure sélective ou d’une procédure sur invitation, ainsi que tous les "
-                "appels d’offres dont le délai de remise des offres court encore. Les marchés attribués de gré "
-                "à gré, que simap.ch publie aussi dans certains cas, n’y figurent pas. Les marchés qui ne sont "
-                "pas publiés sur simap.ch – par exemple les petits marchés qui peuvent être attribués "
-                "directement, sans appel d’offres – ne figurent ni ici ni sur simap.ch.",
+                "Le registre contient les marchés attribués que simap.ch publie à l’issue d’une procédure "
+                "ouverte, sélective ou sur invitation, ainsi que les appels d’offres dont le délai de remise des "
+                "offres court encore. Les marchés attribués de gré à gré, que simap.ch publie aussi dans certains "
+                "cas, n’y figurent pas. Les marchés qui ne sont pas publiés sur simap.ch – par exemple les petits "
+                "marchés qui peuvent être attribués directement, sans appel d’offres – ne figurent ni ici ni sur "
+                "simap.ch.",
             ]),
-            ("kantone", "Comment les marchés sont attribués aux cantons", [
-                "Ce qui compte est le canton que la publication indique comme lieu d’exécution (l’adresse "
-                "du marché) – la même indication que celle sur laquelle simap.ch filtre lui-même. Pour un "
-                "projet divisé en lots, c’est le canton de chaque lot qui compte : un appel d’offres dont les "
+            ("kantone", "Comment nous attribuons les marchés aux cantons", [
+                "Ce qui compte, c’est le canton que la publication indique comme lieu d’exécution, c’est-à-dire "
+                "l’adresse du marché – la même indication que celle sur laquelle simap.ch filtre lui-même. Pour "
+                "un projet divisé en lots, c’est le canton de chaque lot qui compte : un appel d’offres dont les "
                 "lots se situent dans plusieurs cantons figure dans la liste de chacun d’eux, avec la mention "
-                "« {multi} » ; un marché attribué n’est compté que dans le canton de son lot, afin qu’aucun "
-                "total ne le compte deux fois.",
-                "Si la publication n’indique de lieu ni pour le marché ni pour les lots, c’est le canton de "
-                "l’acheteur public qui figure, avec la mention « {fallback} ». Ainsi, des travaux sur les routes "
+                "« {multi} ». Un marché attribué n’est compté que dans le canton de son lot, afin qu’aucun total "
+                "ne le compte deux fois.",
+                "Si la publication n’indique de lieu ni pour le marché ni pour les lots, nous prenons le canton "
+                "de l’acheteur public, avec la mention « {fallback} ». Ainsi, des travaux sur les routes "
                 "nationales en Thurgovie ou à Saint-Gall que la filiale de l’OFROU à Winterthour met en "
                 "soumission sans lieu apparaissent sous Zurich. D’autres acheteurs publics indiquent leur propre "
                 "adresse comme lieu d’exécution ; c’est alors le canton de leur siège qui figure, même si les "
-                "travaux ont lieu ailleurs – les données ne permettent pas de le déceler.",
-                "{nocant} Le total de tous les cantons et de ces marchés correspond au nombre total "
-                "indiqué sur la page d’accueil. « Appels d’offres par e-mail » utilise la même attribution : un "
-                "appel d’offres est envoyé pour chacun de ses cantons.",
+                "travaux ont lieu ailleurs – les données ne permettent pas de le voir.",
+                "{nocant} Tous les cantons et ces marchés donnent ensemble le total de la page d’accueil. "
+                "« Appels d’offres par e-mail » attribue de la même manière : pour votre sélection, chaque "
+                "canton d’un appel d’offres compte.",
             ]),
-            ("zusammenfuehrung", "Comment les entreprises et les acheteurs publics sont regroupés", [
+            ("zusammenfuehrung", "Comment nous regroupons les entreprises et les acheteurs publics", [
                 "Une entreprise n’apparaît pas toujours sous la même graphie dans les publications. Les "
                 "graphies qui ne diffèrent que par les majuscules, les trémas, les accents ou la ponctuation "
                 "(« CSD INGENIEURE AG » et « CSD Ingenieure AG », « Bolliger & Co. AG » et « Bolliger + Co. "
-                "AG ») sont considérées comme une seule entreprise ; la graphie la plus fréquente est "
-                "affichée. Les unités portant des noms différents, comme les succursales, restent "
-                "distinctes. Aucun rapprochement avec le registre du commerce n’est effectué.",
+                "AG ») comptent pour une seule entreprise, affichée sous sa graphie la plus fréquente. Les unités "
+                "portant des noms différents, comme les succursales, restent distinctes. Nous ne faisons aucun "
+                "rapprochement avec le registre du commerce.",
                 "Une entreprise a sa propre page à partir de {min_c} marchés, un acheteur public à partir "
                 "de {min_b} et une catégorie (code CPV) à partir de {min_s}. Les acheteurs publics sont eux aussi "
-                "regroupés par leur nom, indépendamment des espaces, des traits d’union, des guillemets et "
+                "regroupés par leur nom, sans tenir compte des espaces, des traits d’union, des guillemets et "
                 "des parenthèses.",
                 "Un marché attribué à plusieurs entreprises figure sur la page de chacune d’elles.",
             ]),
             ("betraege", "Montants, lots et totaux", [
-                "Les montants sont repris tels qu’ils ont été publiés. La page d’un marché indique le "
-                "montant exact ; les listes affichent un montant arrondi, et le montant exact au survol de "
-                "la souris ainsi que pour les lecteurs d’écran.",
-                "Les totaux ne comprennent que les marchés en francs attribués à une seule "
-                "entreprise. Pour un marché attribué à plusieurs entreprises, la publication indique un prix "
-                "par entreprise : ces prix sont affichés séparément, mais ne sont ni additionnés ni "
-                "attribués à un marché global – dans les contrats-cadres, le même plafond figure souvent à "
-                "côté de chaque entreprise. Les montants en euros ou dans d’autres monnaies sont affichés "
-                "avec leur devise, jamais dans une colonne en francs, et n’entrent dans aucun total.",
+                "Nous reprenons les montants tels qu’ils ont été publiés. La page d’un marché indique le montant "
+                "exact. Les listes affichent un montant arrondi ; le montant exact apparaît au survol de la "
+                "souris et pour les lecteurs d’écran.",
+                "Les totaux ne comprennent que les marchés en francs attribués à une seule entreprise. Pour un "
+                "marché attribué à plusieurs entreprises, la publication indique un prix par entreprise : nous "
+                "affichons ces prix séparément, mais nous ne les additionnons pas et ne les attribuons pas à un "
+                "marché global – dans les contrats-cadres, le même plafond figure souvent à côté de chaque "
+                "entreprise. Les montants en euros ou dans d’autres monnaies sont affichés avec leur devise, "
+                "jamais dans une colonne en francs, et n’entrent dans aucun total.",
                 "Un montant inférieur à 1 000 CHF n’est presque jamais la valeur d’un marché mais un prix "
-                "unitaire (par heure, par pièce ou par kilomètre, par exemple) : il est signalé par « {rate} » "
-                "et n’entre dans aucun total ni aucune médiane. Il en va de même d’un montant jusqu’à "
+                "unitaire (par heure, par pièce ou par kilomètre, par exemple). Nous le signalons par « {rate} » "
+                "et il n’entre dans aucun total ni aucune médiane. Il en va de même d’un montant jusqu’à "
                 "5 000 CHF lorsque la publication parle de location de services ou d’un tarif journalier ou "
                 "horaire (« LSE », « location de services », « tarif journalier », etc.).",
-                "Pour un projet divisé en lots, simap.ch publie chaque lot séparément. La page "
-                "du projet liste tous les lots ; lorsque simap indique le même prix de projet pour plusieurs "
-                "lots attribués à la même entreprise, ce prix n’est compté qu’une fois dans les totaux.",
+                "Pour un projet divisé en lots, simap.ch publie chaque lot séparément. La page du projet liste "
+                "tous les lots. Lorsque simap indique le même prix de projet pour plusieurs lots attribués à la "
+                "même entreprise, ce prix n’est compté qu’une fois dans les totaux.",
             ]),
-            ("ausgeschlossen", "Ce qui n’est pas repris", [[
+            ("ausgeschlossen", "Ce que le registre ne contient pas", [[
                 "Procédures interrompues : simap.ch les publie dans le même flux que les marchés attribués ; "
                 "elles ne sont pas présentées ici comme des marchés attribués.",
                 "Rectifications : lorsqu’un appel d’offres ou un marché attribué est rectifié, seule la "
-                "dernière version publiée compte ; les versions antérieures n’apparaissent pas en plus.",
-                "Appels d’offres échus : après l’expiration du délai de remise des offres, la page d’un appel d’offres "
-                "reste consultable pendant {days} jours, avec la mention « {expired} ». Si le marché est "
-                "attribué et publié entre-temps, on voit à la même adresse qui l’a remporté. Le registre "
+                "dernière version publiée compte. Nous n’affichons pas en plus les versions antérieures.",
+                "Appels d’offres échus : après l’expiration du délai de remise des offres, la page d’un appel "
+                "d’offres reste en ligne pendant {days} jours, avec la mention « {expired} ». Si le marché est "
+                "attribué et publié entre-temps, vous voyez à la même adresse qui l’a remporté. Le registre "
                 "recense les appels d’offres depuis le {since}.",
                 "Les appels d’offres sans délai de remise lisible ne sont pas listés comme étant en cours.",
             ]]),
@@ -2652,32 +2388,32 @@ UEBER: dict[str, dict] = {
                 "La classification suit le CPV, le vocabulaire commun pour les marchés publics de l’UE. Un "
                 "secteur correspond aux deux premiers chiffres du code (p. ex. 45, travaux de construction), "
                 "une catégorie au code exact à huit chiffres (p. ex. 45233000). Les intitulés des catégories "
-                "proviennent de la version officielle du CPV dans chaque langue ; les noms des 45 secteurs "
-                "sont des formes abrégées propres au registre.",
+                "viennent de la version officielle du CPV dans chaque langue ; les noms des 45 secteurs sont "
+                "des formes abrégées propres au registre.",
                 "Les « {matched} » des pages d’entreprise et les « {similar} » des pages d’appel d’offres "
                 "reposent sur les chiffres communs des codes CPV : un code général comme 45000000 (travaux "
                 "de construction) ne suffit pas à lui seul. Pour les entreprises, au moins les quatre premiers "
-                "chiffres significatifs doivent coïncider ; les marchés similaires appartiennent au même "
-                "secteur et au même canton, les codes les plus proches d’abord.",
+                "chiffres significatifs doivent coïncider. Les marchés similaires appartiennent au même secteur "
+                "et au même canton, les codes les plus proches d’abord.",
             ]),
             ("daten", "Télécharger et s’abonner", [[
                 "CSV : {csv_pages} proposent leurs marchés attribués sous forme de fichier CSV – UTF-8 avec BOM, "
-                "point-virgule comme séparateur, montants avec un point décimal ; un seul fichier pour les "
-                "quatre versions linguistiques, avec des noms de colonnes en anglais ({cols}) et les titres "
-                "dans la langue de la publication. Pour les marchés attribués à plusieurs entreprises, la "
-                "colonne « Amount » reste vide. Les cellules qui commencent par =, +, - ou @ sont précédées "
-                "d’une apostrophe, afin que les tableurs ne les exécutent pas comme des formules. "
-                "« Canton source » indique l’origine du canton (place : lieu d’exécution, lot : lot, buyer : "
-                "siège de l’acheteur public), « Amount note » signale les prix probablement unitaires "
-                "(probable unit rate).",
+                "point-virgule comme séparateur, montants avec un point décimal. Un seul fichier sert aux quatre "
+                "versions linguistiques, avec des noms de colonnes en anglais ({cols}) et les titres dans la "
+                "langue de la publication. Pour les marchés attribués à plusieurs entreprises, la colonne "
+                "« Amount » reste vide. Les cellules qui commencent par =, +, - ou @ sont précédées d’une "
+                "apostrophe, pour que les tableurs ne les exécutent pas comme des formules. « Canton source » "
+                "indique l’origine du canton (place : lieu d’exécution, lot : lot, buyer : siège de l’acheteur "
+                "public), « Amount note » signale les prix probablement unitaires (probable unit rate).",
                 "Graphiques : chaque graphique indique sa source et renvoie à ses données en CSV.",
-                "Agenda : chaque appel d’offres en cours propose son délai de remise des offres sous forme de fichier "
+                "Agenda : chaque appel d’offres en cours propose son délai de remise sous forme de fichier "
                 "d’agenda (.ics).",
-                "RSS et e-mail : chaque canton et chaque secteur a son flux RSS ; « Appels d’offres par e-mail » "
-                "envoie les nouveaux appels d’offres par canton et par secteur, gratuitement et sans compte.",
+                "RSS et e-mail : chaque canton et chaque secteur a son flux RSS. Avec « Appels d’offres par "
+                "e-mail », nous vous envoyons les nouveaux appels d’offres par canton et par secteur, "
+                "gratuitement et sans compte.",
             ]]),
             ("kontakt", "Contact et signalement d’erreurs", [
-                "Erreurs, questions et remarques : {mail} ; sur chaque page de marché et d’appel "
+                "Erreurs, questions et remarques : écrivez à {mail}. Sur chaque page de marché et d’appel "
                 "d’offres, « {report} » ouvre un e-mail avec le numéro de publication en objet. Le registre "
                 "est exploité par un particulier en Suisse ; les informations sur l’exploitant figurent dans "
                 "les mentions légales.",
@@ -2686,12 +2422,12 @@ UEBER: dict[str, dict] = {
         "csv_pages": "les pages des cantons, des acheteurs publics et des entreprises",
         "csv_pages_nocomp": "les pages des cantons et des acheteurs publics",
         "ramp": " Entre {a} et {b}, seule une partie des marchés attribués a été relevée ; ces mois sont "
-                "hachurés dans les graphiques mensuels. À partir de {full}, le registre contient les "
-                "marchés attribués que l’interface de simap.ch a fournis pour chaque mois lors de leur relevé ; "
-                "aucune comparaison avec des totaux officiels n’est effectuée.",
+                "hachurés dans les graphiques mensuels. À partir de {full}, le registre contient les marchés "
+                "attribués que l’interface de simap.ch a fournis pour chaque mois lors de leur relevé. Nous ne "
+                "les comparons pas à des totaux officiels.",
         "incomplete": " {n} publications de marchés attribués de {months} sont arrivées par l’interface sans titre "
-                      "ni entreprise retenue ; elles ne figurent dans aucun chiffre ni aucune liste.",
-        "nocant": "{n} n’indiquent ni lieu ni acheteur public avec canton ; ils ne comptent dans aucun "
+                      "ni entreprise retenue : elles ne figurent dans aucun chiffre ni aucune liste.",
+        "nocant": "{n} n’indiquent ni lieu ni acheteur public avec canton : ils ne comptent dans aucun "
                   "canton, et l’aperçu des cantons les présente à part.",
         "nocant_zero": "Actuellement, chaque marché attribué a un canton.",
         "alert_link": "S’abonner gratuitement",
@@ -2699,32 +2435,32 @@ UEBER: dict[str, dict] = {
     "it": {
         "title": "Come funziona",
         "h1": "Come funziona",
-        "lead": "Da dove vengono i dati, come sono ordinati e che cosa non mostrano – con i termini principali "
-                "spiegati in breve.",
+        "lead": "Da dove vengono i dati, come li ordiniamo e cosa non mostrano. E i termini principali, spiegati in "
+                "breve.",
         "sections": [
             ("register", "Che cos’è questo registro", [
-                "Appalti pubblici svizzeri ordina per azienda, ente pubblico, cantone e settore gli appalti "
-                "aggiudicati e i bandi che Confederazione, Cantoni e Comuni pubblicano su simap.ch. Così si può "
-                "sapere chi ha vinto quali appalti pubblici – una domanda a cui simap.ch stesso non risponde.",
-                "Il registro è un progetto privato e indipendente. Non è una pubblicazione ufficiale e non "
-                "ha alcun legame con simap.ch né con alcuna autorità. Fanno fede esclusivamente le "
-                "pubblicazioni su simap.ch; ogni pagina di appalto e di bando rimanda alla "
-                "pubblicazione ufficiale.",
+                "Appalti pubblici svizzeri raccoglie gli appalti aggiudicati e i bandi che Confederazione, Cantoni "
+                "e Comuni pubblicano su simap.ch. Li ordiniamo per azienda, ente pubblico, cantone e settore. "
+                "Così puoi vedere chi ha vinto quali appalti pubblici: una domanda a cui simap.ch stesso non "
+                "risponde.",
+                "Il registro è un progetto privato e indipendente. Non è una pubblicazione ufficiale e non ha "
+                "legami né con simap.ch né con alcuna autorità. Fanno fede solo le pubblicazioni su simap.ch: "
+                "ogni pagina di appalto e di bando ha il link alla pubblicazione ufficiale.",
             ]),
             ("begriffe", "I termini principali", [[
                 "Bando: un ente pubblico chiede offerte per un appalto. Le aziende possono presentare un’offerta "
-                "fino al termine d’inoltro.",
-                "Termine d’inoltro: la data (spesso con l’ora) entro cui un’offerta deve essere presentata. Fanno "
-                "fede le indicazioni su simap.ch e nella documentazione del bando.",
-                "Aggiudicazione: la decisione su quale azienda ottiene l’appalto. In questo registro si parla di "
-                "«appalti aggiudicati».",
+                "fino alla scadenza.",
+                "Scadenza (termine d’inoltro): la data, spesso con l’ora, entro cui va presentata l’offerta. Fanno "
+                "fede le indicazioni su simap.ch e nei documenti del bando.",
+                "Aggiudicazione: la decisione su quale azienda ottiene l’appalto. Qui parliamo di «appalti "
+                "aggiudicati».",
                 "Ente pubblico (committente): chi assegna l’appalto – Confederazione, Cantone, Comune o un ente "
                 "o un’azienda pubblica, per esempio un ospedale.",
-                "Procedura: il modo in cui l’appalto viene assegnato. Procedura di pubblico concorso: ogni "
-                "azienda può presentare un’offerta. Procedura selettiva: prima le aziende si candidano, poi "
-                "quelle scelte presentano un’offerta. Procedura mediante invito: l’ente pubblico invita "
-                "direttamente alcune aziende a presentare un’offerta. Procedura per incarico diretto: l’ente "
-                "pubblico assegna l’appalto direttamente, senza bando.",
+                "Procedura: come viene assegnato l’appalto. Procedura di pubblico concorso: ogni azienda può "
+                "presentare un’offerta. Procedura selettiva: prima le aziende si candidano, poi quelle scelte "
+                "presentano un’offerta. Procedura mediante invito: l’ente pubblico invita direttamente alcune "
+                "aziende a presentare un’offerta. Procedura per incarico diretto: l’ente pubblico assegna "
+                "l’appalto direttamente, senza bando.",
                 "Lotto: una parte di un appalto più grande, aggiudicata separatamente – spesso ad aziende "
                 "diverse.",
                 "Codice CPV: il codice comune europeo per il tipo di prestazione. Le prime due cifre danno il "
@@ -2733,141 +2469,137 @@ UEBER: dict[str, dict] = {
                 "Tipo di appalto: appalto di lavori, di forniture o di servizi.",
                 "Soggetto ai trattati internazionali: l’appalto rientra negli accordi internazionali sugli "
                 "appalti pubblici, come quello dell’OMC.",
-                "Prezzo dell’offerta: il prezzo indicato da un’azienda nella sua offerta. Per un appalto "
+                "Prezzo dell’offerta: il prezzo che un’azienda indica nella sua offerta. Per un appalto "
                 "aggiudicato a più aziende, simap.ch indica un prezzo per azienda.",
                 "Avvertenza di simap.ch: la frase «Dies ist keine amtliche Veröffentlichung …» in fondo a ogni "
-                "pagina è prescritta da simap.ch; per questo compare alla lettera, in tedesco.",
+                "pagina la richiede simap.ch. Per questo la riportiamo alla lettera, in tedesco.",
             ]]),
             ("quelle", "Fonte e condizioni d’uso", [
-                "Tutti i dati provengono dall’interfaccia di programmazione (API) di simap.ch, la piattaforma "
-                "ufficiale degli appalti pubblici in Svizzera. Le sue condizioni d’uso consentono il "
-                "riutilizzo, anche a fini commerciali, a condizione che i dati siano riprodotti senza "
-                "modificarne il contenuto, separati dalle nostre analisi e accompagnati dall’avvertenza "
-                "prescritta. L’avvertenza figura in fondo a ogni pagina; le nostre analisi sono indicate "
-                "come tali.",
-                "Titoli e descrizioni compaiono così come sono stati pubblicati, nella lingua della "
-                "pubblicazione. Non vengono né tradotti né riformulati.",
-                "Licenza: il registro non concede alcuna licenza propria sui dati; il loro riutilizzo è "
-                "disciplinato dalle condizioni d’uso di simap.ch ({terms}). A queste condizioni rimanda "
-                "anche l’indicazione di licenza nei dati strutturati di questa pagina (schema.org/Dataset).",
+                "Tutti i dati vengono dall’interfaccia di programmazione (API) di simap.ch, la piattaforma "
+                "ufficiale degli appalti pubblici in Svizzera. Le sue condizioni d’uso permettono di riutilizzarli, "
+                "anche a fini commerciali, se i dati restano invariati nel contenuto, separati dalle nostre "
+                "analisi e accompagnati dall’avvertenza prescritta. L’avvertenza è in fondo a ogni pagina; le "
+                "nostre analisi sono indicate come tali.",
+                "Titoli e descrizioni compaiono come sono stati pubblicati, nella lingua della pubblicazione. "
+                "Non li traduciamo e non li riformuliamo.",
+                "Licenza: non concediamo nessuna licenza propria sui dati. Il loro riutilizzo è regolato dalle "
+                "condizioni d’uso di simap.ch ({terms}). A queste condizioni rimanda anche l’indicazione di "
+                "licenza nei dati strutturati di questa pagina (schema.org/Dataset).",
             ]),
-            ("aktualisierung", "Quando i dati vengono aggiornati", [
-                "simap.ch rende disponibili per la diffusione le pubblicazioni del giorno a partire dalle 8. "
-                "Il registro le riprende di norma ogni giorno feriale dopo quell’ora ed è per lo più "
-                "aggiornato in mattinata; alcuni giorni più tardi o il giorno dopo. A ogni aggiornamento il "
-                "registro riprende gli appalti aggiudicati del mese corrente e del mese precedente – dove "
-                "arrivano anche le rettifiche – e i bandi degli ultimi 75 giorni.",
-                "La data indicata in fondo a ogni pagina («{stand}») è quella della pubblicazione più recente "
-                "del registro. Aggiornato al {date}: {awards} appalti aggiudicati e {open} bandi aperti.",
+            ("aktualisierung", "Quando aggiorniamo i dati", [
+                "simap.ch permette di diffondere le pubblicazioni del giorno dalle 8. Noi le riprendiamo di norma "
+                "ogni giorno feriale, dopo quell’ora. Il registro è aggiornato di solito al mattino, certi giorni "
+                "più tardi o il giorno dopo. A ogni aggiornamento riprendiamo gli appalti aggiudicati del mese "
+                "corrente e di quello precedente – dove arrivano anche le rettifiche – e i bandi degli ultimi "
+                "75 giorni.",
+                "La data in fondo a ogni pagina («{stand}») è quella della pubblicazione più recente nel "
+                "registro. Aggiornato al {date}: {awards} appalti aggiudicati e {open} bandi aperti.",
             ]),
-            ("abdeckung", "Che cosa è incluso", [
+            ("abdeckung", "Cosa contiene il registro", [
                 "L’archivio parte da {start}.{ramp}{incomplete}",
-                "Il registro riprende gli appalti aggiudicati pubblicati su simap.ch al termine di una procedura di "
-                "pubblico concorso, di una procedura selettiva o di una procedura mediante invito, e tutti i "
-                "bandi con il termine d’inoltro ancora aperto. Gli appalti assegnati per incarico diretto, che "
-                "simap.ch pubblica in alcuni casi, non vi figurano. Gli appalti non pubblicati su simap.ch – per "
-                "esempio i piccoli appalti che possono essere assegnati direttamente, senza bando – non figurano "
-                "né qui né su simap.ch.",
+                "Il registro contiene gli appalti aggiudicati che simap.ch pubblica dopo una procedura di "
+                "pubblico concorso, una procedura selettiva o una procedura mediante invito, e i bandi con la "
+                "scadenza ancora aperta. Non contiene gli appalti assegnati per incarico diretto, che simap.ch "
+                "pubblica in alcuni casi. Gli appalti che non vengono pubblicati su simap.ch – per esempio i "
+                "piccoli appalti che si possono assegnare direttamente, senza bando – mancano qui come su "
+                "simap.ch.",
             ]),
-            ("kantone", "Come gli appalti vengono attribuiti ai cantoni", [
-                "Conta il cantone che la pubblicazione indica come luogo di esecuzione (l’indirizzo "
-                "dell’appalto) – la stessa indicazione su cui filtra simap.ch. Per un progetto suddiviso in "
-                "lotti conta il cantone di ciascun lotto: un bando con lotti in più cantoni figura "
-                "nell’elenco di ciascuno di essi, con l’indicazione «{multi}»; un appalto aggiudicato conta solo "
-                "nel cantone del suo lotto, affinché nessun totale lo conti due volte.",
-                "Se la pubblicazione non indica un luogo né per l’appalto né per i lotti, figura il cantone "
-                "dell’ente pubblico, con l’indicazione «{fallback}». Così, per esempio, i lavori sulle strade "
-                "nazionali in Turgovia o a San Gallo che la filiale USTRA di Winterthur mette a concorso "
-                "senza indicare il luogo compaiono sotto Zurigo. Altri enti pubblici indicano il proprio "
-                "indirizzo come luogo di esecuzione; figura allora il cantone della loro sede, anche se i "
-                "lavori si svolgono altrove – i dati non permettono di rilevarlo.",
-                "{nocant} La somma di tutti i cantoni e di questi appalti dà il numero totale della "
-                "pagina iniziale. «Bandi via e-mail» usa la stessa attribuzione: un bando viene inviato per "
-                "ciascuno dei suoi cantoni.",
+            ("kantone", "Come attribuiamo gli appalti ai cantoni", [
+                "Conta il cantone che la pubblicazione indica come luogo di esecuzione, cioè l’indirizzo "
+                "dell’appalto: la stessa indicazione che simap.ch usa per filtrare. In un progetto diviso in "
+                "lotti conta il cantone di ogni lotto. Un bando con lotti in più cantoni compare nell’elenco di "
+                "ognuno, con la nota «{multi}». Un appalto aggiudicato invece conta solo nel cantone del suo "
+                "lotto, così nessun totale lo conta due volte.",
+                "Se la pubblicazione non indica un luogo né per l’appalto né per i lotti, usiamo il cantone "
+                "dell’ente pubblico, con la nota «{fallback}». Per esempio, i lavori sulle strade nazionali in "
+                "Turgovia o a San Gallo che la filiale USTRA di Winterthur mette a concorso senza indicare il "
+                "luogo compaiono sotto Zurigo. Altri enti pubblici indicano come luogo di esecuzione il proprio "
+                "indirizzo: allora compare il cantone della loro sede, anche se i lavori si svolgono altrove. "
+                "Dai dati non si capisce.",
+                "{nocant} Con questi, la somma dei cantoni dà il totale della home. «Bandi via e-mail» usa la "
+                "stessa regola: per la tua scelta conta ogni cantone del bando.",
             ]),
-            ("zusammenfuehrung", "Come vengono raggruppati aziende ed enti pubblici", [
-                "Nelle pubblicazioni il nome di un’azienda non è sempre scritto allo stesso modo. Le grafie che "
+            ("zusammenfuehrung", "Come raggruppiamo aziende ed enti pubblici", [
+                "Nelle pubblicazioni il nome di un’azienda non è sempre scritto allo stesso modo. Se due grafie "
                 "differiscono solo per maiuscole, dieresi, accenti o punteggiatura («CSD INGENIEURE AG» e "
-                "«CSD Ingenieure AG», «Bolliger & Co. AG» e «Bolliger + Co. AG») sono considerate la stessa "
-                "azienda; viene mostrata la grafia più frequente. Le unità con nomi diversi, per esempio le "
-                "succursali, restano separate. Non viene effettuato alcun confronto con il registro di commercio.",
-                "Un’azienda ha una pagina propria a partire da {min_c} appalti, un ente pubblico da "
-                "{min_b} e una categoria (codice CPV) da {min_s}. Anche gli enti pubblici sono raggruppati per "
-                "nome, indipendentemente da spazi, trattini, virgolette e parentesi.",
-                "Un appalto aggiudicato a più aziende compare sulla pagina di ciascuna di esse.",
+                "«CSD Ingenieure AG», «Bolliger & Co. AG» e «Bolliger + Co. AG»), le trattiamo come la stessa "
+                "azienda e mostriamo la grafia più frequente. Le unità con nomi diversi, per esempio le "
+                "succursali, restano separate. Non facciamo confronti con il registro di commercio.",
+                "Un’azienda ha una pagina sua da {min_c} appalti in su, un ente pubblico da {min_b} e una categoria "
+                "(codice CPV) da {min_s}. Anche gli enti pubblici li raggruppiamo per nome, senza badare a spazi, "
+                "trattini, virgolette e parentesi.",
+                "Un appalto aggiudicato a più aziende compare sulla pagina di ognuna.",
             ]),
             ("betraege", "Importi, lotti e totali", [
-                "Gli importi sono riportati come sono stati pubblicati. La pagina di un appalto "
-                "indica l’importo esatto; gli elenchi mostrano un importo arrotondato e, al passaggio del mouse e "
-                "nei lettori di schermo, quello esatto.",
-                "I totali comprendono solo gli appalti in franchi aggiudicati a una sola azienda. Per "
-                "un appalto aggiudicato a più aziende la pubblicazione indica un prezzo per azienda: questi "
-                "prezzi sono mostrati singolarmente, ma non vengono sommati né attribuiti a un appalto "
-                "complessivo – nei contratti quadro accanto a ogni azienda compare spesso lo stesso tetto "
-                "massimo. Gli importi in euro o in altre valute sono mostrati con la loro valuta, mai in "
-                "una colonna in franchi, e non rientrano in alcun totale.",
-                "Un importo inferiore a 1’000 CHF non è quasi mai il valore di un appalto ma un prezzo "
-                "unitario (per ora, per pezzo o per chilometro, per esempio): è contrassegnato con «{rate}» "
-                "e non rientra in alcun totale né in alcuna mediana. Lo stesso vale per un importo fino a "
-                "5’000 CHF quando la pubblicazione parla di prestito di personale o di una tariffa giornaliera "
-                "od oraria («LSE», «tariffa giornaliera», «Regie» e simili).",
-                "Per un progetto suddiviso in lotti, simap.ch pubblica ogni lotto separatamente. La "
-                "pagina del progetto elenca tutti i lotti; se simap indica lo stesso prezzo di progetto per "
-                "più lotti della stessa azienda, nei totali conta una volta sola.",
+                "Riportiamo gli importi come sono stati pubblicati. La pagina di un appalto mostra l’importo "
+                "esatto. Gli elenchi mostrano un importo arrotondato: quello esatto lo vedi passando col mouse, "
+                "e lo leggono anche i lettori di schermo.",
+                "Nei totali contiamo solo gli appalti in franchi aggiudicati a una sola azienda. Per un appalto "
+                "aggiudicato a più aziende la pubblicazione indica un prezzo per azienda: mostriamo questi prezzi "
+                "uno per uno, ma non li sommiamo e non li attribuiamo a un appalto complessivo – nei contratti "
+                "quadro accanto a ogni azienda compare spesso lo stesso tetto massimo. Gli importi in euro o in "
+                "altre valute compaiono con la loro valuta, mai in una colonna in franchi, e non entrano in "
+                "nessun totale.",
+                "Un importo sotto i 1’000 CHF non è quasi mai il valore di un appalto, ma un prezzo unitario (per "
+                "ora, per pezzo o per chilometro, per esempio). Lo segnaliamo con «{rate}» e non lo contiamo in "
+                "nessun totale né in nessuna mediana. Lo stesso vale per un importo fino a 5’000 CHF, se la "
+                "pubblicazione parla di prestito di personale o di una tariffa giornaliera od oraria («LSE», "
+                "«tariffa giornaliera», «Regie» e simili).",
+                "Per un progetto diviso in lotti, simap.ch pubblica ogni lotto separatamente. La pagina del "
+                "progetto elenca tutti i lotti. Se simap indica lo stesso prezzo di progetto per più lotti della "
+                "stessa azienda, nei totali lo contiamo una volta sola.",
             ]),
-            ("ausgeschlossen", "Che cosa non è incluso", [[
-                "Procedure interrotte: simap.ch le pubblica nello stesso flusso degli appalti aggiudicati; qui "
-                "non compaiono come appalti aggiudicati.",
+            ("ausgeschlossen", "Cosa non trovi qui", [[
+                "Procedure interrotte: simap.ch le pubblica nello stesso flusso di dati degli appalti aggiudicati; "
+                "qui non compaiono come appalti aggiudicati.",
                 "Rettifiche: se un bando o un appalto aggiudicato viene rettificato, vale l’ultima versione "
-                "pubblicata; le versioni precedenti non compaiono in aggiunta.",
-                "Bandi scaduti: dopo la scadenza del termine d’inoltro la pagina di un bando resta "
-                "consultabile per {days} giorni, con la dicitura «{expired}». Se nel frattempo l’appalto viene "
-                "aggiudicato e pubblicato, allo stesso indirizzo compare chi l’ha vinto. Il registro raccoglie "
-                "i bandi dal {since}.",
-                "I bandi senza un termine d’inoltro leggibile non sono elencati come aperti.",
+                "pubblicata. Le versioni precedenti non le mostriamo.",
+                "Bandi scaduti: dopo la scadenza la pagina di un bando resta online per {days} giorni, con la "
+                "scritta «{expired}». Se nel frattempo l’appalto viene aggiudicato e pubblicato, allo stesso "
+                "indirizzo vedi chi l’ha vinto. Raccogliamo i bandi dal {since}.",
+                "I bandi senza una scadenza leggibile non li elenchiamo tra quelli aperti.",
             ]]),
             ("cpv", "Settori e categorie (CPV)", [
                 "La classificazione segue il CPV, il vocabolario comune europeo per gli appalti pubblici. "
                 "Un settore corrisponde alle prime due cifre del codice (p. es. 45, lavori di costruzione), una "
-                "categoria al codice esatto di otto cifre (p. es. 45233000). Le denominazioni delle categorie "
-                "provengono dalla versione ufficiale del CPV in ciascuna lingua; i nomi dei 45 settori sono "
-                "abbreviazioni proprie del registro.",
+                "categoria al codice esatto di otto cifre (p. es. 45233000). I nomi delle categorie vengono dalla "
+                "versione ufficiale del CPV in ogni lingua; i nomi dei 45 settori sono forme brevi scelte da noi.",
                 "I «{matched}» delle pagine delle aziende e gli «{similar}» delle pagine dei bandi si basano "
-                "sulle cifre in comune dei codici CPV: un codice generico come 45000000 (lavori di "
+                "sulle cifre che i codici CPV hanno in comune: un codice generico come 45000000 (lavori di "
                 "costruzione) da solo non basta. Per le aziende devono coincidere almeno le prime quattro cifre "
-                "significative; gli appalti simili appartengono allo stesso settore e allo stesso "
-                "cantone, a partire dai codici più vicini.",
+                "significative. Gli appalti simili sono dello stesso settore e dello stesso cantone, prima quelli "
+                "con il codice più vicino.",
             ]),
-            ("daten", "Scaricare i dati e iscriversi", [[
+            ("daten", "Scarica i dati e iscriviti", [[
                 "CSV: {csv_pages} offrono i loro appalti aggiudicati come file CSV – UTF-8 con BOM, punto e "
-                "virgola come separatore, importi con il punto come separatore decimale; un solo file per "
-                "le quattro versioni linguistiche, con i nomi delle colonne in inglese ({cols}) e i titoli "
-                "nella lingua della pubblicazione. Per gli appalti aggiudicati a più aziende la colonna «Amount» "
-                "resta vuota. Le celle che iniziano con =, +, - o @ sono precedute da un apostrofo, "
-                "affinché i fogli di calcolo non le eseguano come formule. «Canton source» indica l’origine "
-                "del cantone (place: luogo di esecuzione, lot: lotto, buyer: sede dell’ente pubblico), «Amount "
-                "note» segnala i probabili prezzi unitari (probable unit rate).",
-                "Grafici: ogni grafico indica la sua fonte e rimanda ai suoi dati in CSV.",
-                "Calendario: ogni bando aperto offre la sua scadenza come file di calendario (.ics).",
-                "RSS ed e-mail: ogni cantone e ogni settore ha il suo feed RSS; «Bandi via e-mail» invia i "
-                "nuovi bandi per cantone e settore, gratis e senza account.",
+                "virgola come separatore, importi con il punto come separatore decimale. C’è un solo file per le "
+                "quattro lingue, con i nomi delle colonne in inglese ({cols}) e i titoli nella lingua della "
+                "pubblicazione. Per gli appalti aggiudicati a più aziende la colonna «Amount» resta vuota. Le "
+                "celle che iniziano con =, +, - o @ hanno davanti un apostrofo, così i fogli di calcolo non le "
+                "eseguono come formule. «Canton source» dice da dove viene il cantone (place: luogo di "
+                "esecuzione, lot: lotto, buyer: sede dell’ente pubblico), «Amount note» segnala i probabili "
+                "prezzi unitari (probable unit rate).",
+                "Grafici: ogni grafico indica la sua fonte e ha il link ai suoi dati in CSV.",
+                "Calendario: per ogni bando aperto puoi scaricare la scadenza come file di calendario (.ics).",
+                "RSS ed e-mail: ogni cantone e ogni settore ha il suo feed RSS. Con «Bandi via e-mail» ti "
+                "mandiamo i nuovi bandi per cantone e settore, gratis e senza account.",
             ]]),
-            ("kontakt", "Contatto e segnalazione di errori", [
-                "Errori, domande e segnalazioni: {mail}; su ogni pagina di appalto e di bando "
+            ("kontakt", "Contatto e segnalazioni", [
+                "Per errori, domande e segnalazioni scrivi ad {mail}. Su ogni pagina di appalto e di bando, "
                 "«{report}» apre un’e-mail con il numero di pubblicazione nell’oggetto. Il registro è "
                 "gestito da un privato in Svizzera; i dati del gestore si trovano nelle note legali.",
             ]),
         ],
         "csv_pages": "le pagine dei cantoni, degli enti pubblici e delle aziende",
         "csv_pages_nocomp": "le pagine dei cantoni e degli enti pubblici",
-        "ramp": " Tra {a} e {b} è stata rilevata solo una parte degli appalti aggiudicati; nei grafici mensili "
+        "ramp": " Tra {a} e {b} abbiamo raccolto solo una parte degli appalti aggiudicati: nei grafici mensili "
                 "questi mesi sono tratteggiati. Da {full} il registro contiene gli appalti aggiudicati che "
-                "l’interfaccia di simap.ch ha fornito per ciascun mese al momento del rilevamento; non viene "
-                "effettuato alcun confronto con i totali ufficiali.",
+                "l’interfaccia di simap.ch ha fornito per ogni mese al momento della raccolta. Non li "
+                "confrontiamo con i totali ufficiali.",
         "incomplete": " {n} pubblicazioni di appalti aggiudicati di {months} sono arrivate dall’interfaccia senza "
-                      "titolo né azienda vincitrice; mancano da tutti i numeri e da tutti gli elenchi.",
-        "nocant": "{n} non indicano né un luogo né un ente pubblico con cantone; non contano in alcun "
-                  "cantone, e la panoramica dei cantoni li elenca a parte.",
+                      "titolo e senza azienda vincitrice: non compaiono in nessun numero e in nessun elenco.",
+        "nocant": "{n} non indicano né un luogo né un ente pubblico con cantone: non contano in nessun cantone e "
+                  "la pagina dei cantoni li elenca a parte.",
         "nocant_zero": "Al momento ogni appalto aggiudicato ha un cantone.",
         # the familiar imperative on buttons and controls (owner, 22.10.2026)
         "alert_link": "Iscriviti gratis",
@@ -2875,14 +2607,14 @@ UEBER: dict[str, dict] = {
     "en": {
         "title": "How it works",
         "h1": "How it works",
-        "lead": "Where the data comes from, how it is arranged and what it does not show – with the key terms "
-                "explained in brief.",
+        "lead": "Where the data comes from, how we arrange it and what it does not show – plus the key terms, "
+                "explained briefly.",
         "sections": [
             ("register", "What this register is", [
-                "Swiss Public Contracts takes the contracts awarded and the tenders that the Confederation, the "
-                "cantons and the communes publish on simap.ch and arranges them by company, public buyer, canton "
-                "and sector. That makes it possible to see who has won which public contracts – a question "
-                "simap.ch itself does not answer.",
+                "Swiss Public Contracts collects the contracts awarded and the tenders that the Confederation, the "
+                "cantons and the communes publish on simap.ch, and arranges them by company, public buyer, canton "
+                "and sector. That way you can see who has won which public contracts – a question simap.ch "
+                "itself does not answer.",
                 "The register is a private, independent project. It is not an official publication and has "
                 "no connection to simap.ch or to any authority. Only the publications on simap.ch are "
                 "authoritative; every contract and tender page links to the official publication.",
@@ -2890,10 +2622,9 @@ UEBER: dict[str, dict] = {
             ("begriffe", "Key terms", [[
                 "Tender: a public buyer asks for offers for a contract. Companies can submit an offer until the "
                 "submission deadline.",
-                "Submission deadline: the date (often with a time) by which an offer must be submitted. What "
+                "Submission deadline: the date, often with a time, by which the offer must be submitted. What "
                 "counts is the date on simap.ch and in the tender documents.",
-                "Award: the decision on which company gets the contract. This register speaks of “contracts "
-                "awarded”.",
+                "Award: the decision on which company gets the contract. Here we speak of “contracts awarded”.",
                 "Public buyer (contracting authority): whoever awards the contract – the Confederation, a canton, "
                 "a commune or a public body such as a hospital or a publicly owned company.",
                 "Procedure: how the contract is awarded. Open procedure: any company can submit an offer. "
@@ -2909,26 +2640,27 @@ UEBER: dict[str, dict] = {
                 "public procurement, such as the WTO’s.",
                 "Offer price: the price a company stated in its offer. For a contract awarded to several "
                 "companies, simap.ch gives one price per company.",
-                "simap.ch notice: the sentence “Dies ist keine amtliche Veröffentlichung …” at the foot of every "
-                "page is required by simap.ch, so it appears word for word, in German.",
+                "simap.ch notice: simap.ch requires the sentence “Dies ist keine amtliche Veröffentlichung …” at "
+                "the foot of every page, so it appears word for word, in German.",
             ]]),
             ("quelle", "Source and terms of use", [
                 "All data comes from the application programming interface (API) of simap.ch, the official "
-                "platform for public procurement in Switzerland. Its terms of use allow the data to be "
-                "reused, including commercially, provided it is reproduced without changes to its content, "
-                "kept separate from our own analysis and accompanied by the prescribed notice. That notice "
-                "is in the footer of every page; our own analysis is marked as such.",
+                "platform for public procurement in Switzerland. Its terms of use allow the data to be reused, "
+                "including commercially, provided it stays unchanged in content, is kept separate from our own "
+                "analysis and carries the prescribed notice. That notice is in the footer of every page; our "
+                "own analysis is marked as such.",
                 "Titles and descriptions appear as they were published, in the language of the publication. "
-                "They are neither translated nor reworded.",
+                "We neither translate nor reword them.",
                 "Licence: the register grants no licence of its own for the data; its reuse is governed by "
                 "simap.ch’s terms of use ({terms}). The licence field in this page’s structured data "
                 "(schema.org/Dataset) points to those terms.",
             ]),
-            ("aktualisierung", "When the data is updated", [
-                "simap.ch releases each day’s publications for redistribution from 8 am. The register "
-                "usually fetches them every day from Monday to Saturday after that and is mostly up to date by late morning; "
-                "on some days later, or the next day. Each run fetches the contracts awarded in the current and "
-                "the previous month – where corrections also arrive – and the tenders of the last 75 days.",
+            ("aktualisierung", "When we update the data", [
+                "simap.ch releases each day’s publications for redistribution from 8 am. We usually fetch them "
+                "every day from Monday to Saturday after that, and the register is mostly up to date by late "
+                "morning; on some days later, or the next day. Each run fetches the contracts awarded in the "
+                "current and the previous month – where corrections also arrive – and the tenders of the last "
+                "75 days.",
                 "The date in the footer of every page (“{stand}”) is the date of the newest publication in "
                 "the register. Updated {date}: {awards} contracts awarded and {open} open tenders.",
             ]),
@@ -2940,47 +2672,46 @@ UEBER: dict[str, dict] = {
                 "published on simap.ch – small contracts that may be awarded directly, without a tender, for "
                 "example – are missing here, just as they are on simap.ch.",
             ]),
-            ("kantone", "How contracts are assigned to cantons", [
+            ("kantone", "How we assign contracts to cantons", [
                 "What counts is the canton the publication gives as the place of performance (the "
                 "contract’s address) – the same field simap.ch itself filters on. For a project divided into "
                 "lots, each lot’s canton counts: a tender whose lots lie in several cantons is listed under "
-                "each of them, marked “{multi}”; a contract awarded counts only in the canton of its lot, so "
+                "each of them, marked “{multi}”. A contract awarded counts only in the canton of its lot, so "
                 "that no total counts it twice.",
-                "Where the publication gives no place for the contract or its lots, the public buyer’s canton "
-                "is shown, marked “{fallback}”. Works on national roads in Thurgau or "
-                "St. Gallen that FEDRO’s Winterthur branch puts out to tender without a place, for example, "
-                "appear under Zurich. Other public buyers give their own address as the place of performance; "
-                "their own canton is then shown even when the work takes place elsewhere – the data does "
-                "not reveal it.",
+                "Where the publication gives no place for the contract or its lots, we use the public buyer’s "
+                "canton, marked “{fallback}”. Works on national roads in Thurgau or St. Gallen that FEDRO’s "
+                "Winterthur branch puts out to tender without a place, for example, appear under Zurich. Other "
+                "public buyers give their own address as the place of performance; their own canton is then "
+                "shown even when the work takes place elsewhere – the data does not reveal it.",
                 "{nocant} All cantons together plus these contracts add up to the total on the home page. "
-                "Tenders by email uses the same assignment: a tender is sent for each of its cantons.",
+                "Tenders by email assigns them the same way: each of a tender’s cantons counts for your "
+                "selection.",
             ]),
-            ("zusammenfuehrung", "How companies and public buyers are matched", [
+            ("zusammenfuehrung", "How we match companies and public buyers", [
                 "A company is not always spelled the same way in the publications. Spellings that differ "
                 "only in capitalisation, umlauts, accents or punctuation (“CSD INGENIEURE AG” and “CSD "
-                "Ingenieure AG”, “Bolliger & Co. AG” and “Bolliger + Co. AG”) are treated as one company, "
-                "shown under its most frequent spelling. Units with different names, such as branches, stay "
-                "separate. There is no matching against the commercial register.",
+                "Ingenieure AG”, “Bolliger & Co. AG” and “Bolliger + Co. AG”) count as one company, shown under "
+                "its most frequent spelling. Units with different names, such as branches, stay separate. We "
+                "don’t match names against the commercial register.",
                 "A company gets its own page once it has {min_c} contracts, a public buyer once it has "
-                "{min_b}, and a category (CPV code) once it has {min_s}. Public buyers are also "
-                "matched by name, "
+                "{min_b}, and a category (CPV code) once it has {min_s}. We match public buyers by name too, "
                 "regardless of spaces, hyphens, quotation marks and brackets.",
                 "A contract awarded to several companies appears on the page of each of them.",
             ]),
             ("betraege", "Amounts, lots and totals", [
-                "Amounts are shown as published. A contract’s page gives the exact amount; lists show a "
+                "We show amounts as published. A contract’s page gives the exact amount; lists show a "
                 "rounded figure, with the exact amount on hover and for screen readers.",
                 "Totals include only contracts in Swiss francs awarded to a single company. For a contract "
-                "awarded to several companies the publication gives a price per company: these prices are shown "
-                "individually, but are never added up or attributed to an overall contract – in framework "
+                "awarded to several companies the publication gives a price per company: we show these prices "
+                "one by one, but never add them up or attribute them to an overall contract – in framework "
                 "agreements the same ceiling often appears next to every company. Amounts in euros or other "
                 "currencies are shown with their currency, never in a column of francs, and left out of "
                 "every total.",
                 "An amount under CHF 1,000 is almost never the value of a contract but a unit rate (per "
-                "hour, item or kilometre, for example): it is marked “{rate}” and left out of every total "
-                "and median. So is an amount of up to CHF 5,000 when the publication speaks of staff leasing "
-                "or a day or hourly rate (“LSE”, “Personalverleih”, “Tagessatz”, “tarif journalier” and the "
-                "like).",
+                "hour, item or kilometre, for example). We mark it “{rate}” and leave it out of every total "
+                "and median. The same goes for an amount of up to CHF 5,000 when the publication speaks of staff "
+                "leasing or a day or hourly rate (“LSE”, “Personalverleih”, “Tagessatz”, “tarif journalier” and "
+                "the like).",
                 "For a project divided into lots, simap.ch publishes each lot separately. The project’s page "
                 "lists every lot; where simap gives the same project price for several lots won by the same "
                 "company, totals count it once.",
@@ -2989,11 +2720,11 @@ UEBER: dict[str, dict] = {
                 "Cancelled procedures: simap.ch publishes them in the same feed as the contracts awarded; they "
                 "are not shown here as contracts awarded.",
                 "Corrections: when a tender or a contract awarded is corrected, the version published last "
-                "applies; earlier versions are not shown in addition.",
+                "applies. We don’t show earlier versions as well.",
                 "Expired tenders: after the submission deadline, a tender’s page stays online for {days} "
                 "days, marked “{expired}”. If the contract is awarded and published in the meantime, the same "
-                "address shows who won it. The register has collected tenders since {since}.",
-                "Tenders without a readable submission deadline are not listed as open.",
+                "address shows who won it. We have collected tenders since {since}.",
+                "We don’t list tenders without a readable submission deadline as open.",
             ]]),
             ("cpv", "Sectors and categories (CPV)", [
                 "The classification follows the CPV, the EU’s Common Procurement Vocabulary. A sector is "
@@ -3002,13 +2733,12 @@ UEBER: dict[str, dict] = {
                 "language; the names of the 45 sectors are the register’s own short forms.",
                 "“{matched}” on company pages and “{similar}” on tender pages are based on the digits that "
                 "CPV codes have in common: a general code such as 45000000 (construction work) is not enough "
-                "on its own. For companies at least the first four significant digits must match; similar "
-                "contracts are in "
-                "the same sector and the same canton, closest codes first.",
+                "on its own. For companies at least the first four significant digits must match. Similar "
+                "contracts are in the same sector and the same canton, closest codes first.",
             ]),
             ("daten", "Downloads and subscriptions", [[
                 "CSV: {csv_pages} offer their contracts awarded as a CSV file – UTF-8 with a BOM, semicolon as "
-                "the separator, amounts with a decimal point; one file for all four language versions, with "
+                "the separator, amounts with a decimal point. One file serves all four language versions, with "
                 "English column names ({cols}) and the titles in the language of the publication. For "
                 "contracts awarded to several companies the “Amount” column is left empty. Cells that begin with "
                 "=, +, - or @ get a leading apostrophe, so that spreadsheet programs do not run them as "
@@ -3017,20 +2747,20 @@ UEBER: dict[str, dict] = {
                 "rates.",
                 "Charts: every chart names its source and links to its data as a CSV file.",
                 "Calendar: every open tender offers its submission deadline as a calendar file (.ics).",
-                "RSS and email: every canton and every sector has its own RSS feed; Tenders by email sends "
-                "new tenders by canton and sector, free and without an account.",
+                "RSS and email: every canton and every sector has its own RSS feed. With Tenders by email we "
+                "send you new tenders by canton and sector, free and without an account.",
             ]]),
             ("kontakt", "Contact and error reports", [
-                "Errors, questions and suggestions: {mail}; on every contract and tender page, “{report}” "
-                "opens an email with the publication number in the subject line. The register is run by a "
-                "private individual in Switzerland; details of the operator are in the legal notice.",
+                "Errors, questions and suggestions: write to {mail}. On every contract and tender page, "
+                "“{report}” opens an email with the publication number in the subject line. The register is run "
+                "by a private individual in Switzerland; details of the operator are in the legal notice.",
             ]),
         ],
         "csv_pages": "Canton, public buyer and company pages",
         "csv_pages_nocomp": "Canton and public buyer pages",
         "ramp": " From {a} to {b} only part of the contracts awarded were captured; these months are striped in "
                 "the monthly charts. From {full} on, the register holds the contracts awarded that the simap.ch "
-                "interface returned for each month when they were fetched; there is no check against official "
+                "interface returned for each month when we fetched them. We don’t check them against official "
                 "totals.",
         "incomplete": " {n} publications of contracts awarded from {months} came through the interface without "
                       "a title or a winner; they are left out of every figure and list.",
@@ -3105,9 +2835,9 @@ IDX["fx_amount"] = {"de": "Betrag in Fremdwährung: {a}", "fr": "Montant en devi
                     "it": "Importo in valuta estera: {a}", "en": "Amount in a foreign currency: {a}"}
 # under a CHF total: the unit rates it leaves out (like the awards to several firms)
 IDX["sum_no_rates"] = {"de": "ohne {k} vermutliche Einheitspreise", "fr": "sans {k} prix probablement unitaires",
-                       "it": "esclusi {k} probabili prezzi unitari", "en": "excluding {k} probable unit rates"}
+                       "it": "senza {k} probabili prezzi unitari", "en": "excluding {k} probable unit rates"}
 IDX["sum_no_rates_one"] = {"de": "ohne einen vermutlichen Einheitspreis", "fr": "sans un prix probablement unitaire",
-                           "it": "escluso un probabile prezzo unitario", "en": "excluding one probable unit rate"}
+                           "it": "senza un probabile prezzo unitario", "en": "excluding one probable unit rate"}
 IDX["rates_note"] = {
     "de": "Nicht in den Summen und im Median enthalten sind {k} Beträge, die vermutlich Einheitspreise sind (unter "
           "1'000 CHF, oder bis 5'000 CHF mit einem Hinweis auf Personalverleih oder einen Tages- oder Stundensatz).",
@@ -3137,30 +2867,30 @@ IDX["rates_note_one"] = {
 IDX["with_firms"] = {"de": "mit {names}", "fr": "avec {names}", "it": "con {names}", "en": "with {names}"}
 IDX["and_more"] = {"de": "{k} weiteren", "fr": "{k} autres", "it": "altre {k}", "en": "{k} others"}
 # a chart's source and its data, under every chart
-IDX["chart_src"] = {"de": "Quelle: simap.ch, eigene Auswertung", "fr": "Source : simap.ch, analyse propre",
-                    "it": "Fonte: simap.ch, elaborazione propria", "en": "Source: simap.ch, our analysis"}
-IDX["chart_csv"] = {"de": "Daten als CSV", "fr": "Données en CSV", "it": "Dati in CSV", "en": "Data as CSV"}
+IDX["chart_src"] = {"de": "Quelle: simap.ch, eigene Auswertung", "fr": "Source : simap.ch, nos calculs",
+                    "it": "Fonte: simap.ch, calcoli nostri", "en": "Source: simap.ch, our analysis"}
+# (the link to its data, "chart_csv", is in fix round 1 below)
 # the open tenders hub
 IDX["multi_note"] = {
     "de": "Eine Ausschreibung mit Losen in mehreren Kantonen zählt in jedem dieser Kantone.",
     "fr": "Un appel d’offres dont les lots se situent dans plusieurs cantons compte dans chacun d’eux.",
-    "it": "Un bando con lotti in più cantoni conta in ciascuno di essi.",
+    "it": "Un bando con lotti in più cantoni conta in ognuno di questi cantoni.",
     "en": "A tender with lots in several cantons counts in each of them.",
 }
 IDX["nodl_note"] = {
-    "de": "{n} Ausschreibungen ohne lesbare Eingabefrist sind nicht aufgeführt.",
-    "fr": "{n} appels d’offres sans délai de remise lisible ne sont pas listés.",
-    "it": "{n} bandi senza un termine d’inoltro leggibile non sono elencati.",
-    "en": "{n} tenders without a readable submission deadline are not listed.",
+    "de": "{n} Ausschreibungen ohne lesbare Eingabefrist führen wir nicht auf.",
+    "fr": "Nous ne listons pas {n} appels d’offres dont le délai de remise est illisible.",
+    "it": "Non elenchiamo {n} bandi senza una scadenza leggibile.",
+    "en": "We don’t list {n} tenders without a readable submission deadline.",
 }
 # the canton overview: the awards that count in no canton, so that the cantons add up to the total
 IDX["nocant_lead"] = {
     "de": "{n} nennen weder einen Ort noch einen Auftraggeber mit Kanton. Alle Kantone zusammen und diese "
           "Aufträge ergeben die {total} der Startseite.",
-    "fr": "{n} n’indiquent ni lieu ni acheteur public avec canton. Avec ces marchés, la somme de tous les "
-          "cantons correspond aux {total} de la page d’accueil.",
-    "it": "{n} non indicano né un luogo né un ente pubblico con cantone. Sommando tutti i cantoni e questi "
-          "appalti si ottengono i {total} della pagina iniziale.",
+    "fr": "{n} n’indiquent ni lieu ni acheteur public avec canton. Tous les cantons et ces marchés donnent "
+          "ensemble les {total} de la page d’accueil.",
+    "it": "{n} non indicano né un luogo né un ente pubblico con cantone. Con questi, la somma dei cantoni dà i "
+          "{total} della home.",
     "en": "{n} name neither a place nor a public buyer with a canton. All cantons together and "
           "these contracts make up the {total} on the home page.",
 }
@@ -3189,8 +2919,8 @@ IDX["div_index_lead"] = {
     "fr": "Les {n} secteurs du CPV (les deux premiers chiffres du code) avec leurs appels d’offres en "
           "cours et leurs marchés attribués. Chaque secteur regroupe de nombreuses catégories détaillées "
           "(code exact à huit chiffres).",
-    "it": "I {n} settori del CPV (le prime due cifre del codice) con i loro bandi aperti e gli appalti "
-          "aggiudicati. Ogni settore comprende molte categorie specifiche (codice esatto di otto cifre).",
+    "it": "I {n} settori del CPV, cioè le prime due cifre del codice, con i loro bandi aperti e gli appalti "
+          "aggiudicati. Ogni settore raccoglie molte categorie (il codice esatto di otto cifre).",
     "en": "The {n} sectors of the CPV (the first two digits of the code) with their open tenders and "
           "contracts awarded. Each sector covers many specific categories (the exact eight-digit code).",
 }
@@ -3226,25 +2956,25 @@ META["div_lead"] = {
     "en": "{n} awarded to {f} in the “{name}” sector, published on simap.ch.",
 }
 META["div_desc"] = {
-    "de": "Branche «{name}» (CPV {code}): {n} an {f} – die Firmen und Auftraggeber mit den meisten "
-          "Aufträgen, nach Kanton.",
-    "fr": "Secteur « {name} » (CPV {code}) : {n} attribués à {f} – entreprises et acheteurs publics les plus "
-          "actifs, par canton.",
-    "it": "Settore «{name}» (CPV {code}): {n} aggiudicati a {f} – le aziende e gli enti pubblici più attivi, per "
+    "de": "Branche «{name}» (CPV {code}): {n} an {f}. Die Firmen und Auftraggeber mit den meisten Aufträgen, "
+          "nach Kanton.",
+    "fr": "Secteur « {name} » (CPV {code}) : {n} attribués à {f}. Les entreprises et les acheteurs publics les "
+          "plus actifs, par canton.",
+    "it": "Settore «{name}» (CPV {code}): {n} andati a {f}. Le aziende e gli enti pubblici più attivi, per "
           "cantone.",
-    "en": "The “{name}” sector (CPV {code}): {n} awarded to {f} – the companies and public buyers "
-          "with the most contracts, by canton.",
+    "en": "The “{name}” sector (CPV {code}): {n} awarded to {f}. The companies and public buyers with the most "
+          "contracts, by canton.",
 }
 META["div_desc_short"] = {
     "de": "Branche «{name}» (CPV {code}): {n} an {f}.",
     "fr": "Secteur « {name} » (CPV {code}) : {n} attribués à {f}.",
-    "it": "Settore «{name}» (CPV {code}): {n} aggiudicati a {f}.",
+    "it": "Settore «{name}» (CPV {code}): {n} andati a {f}.",
     "en": "The “{name}” sector (CPV {code}): {n} awarded to {f}.",
 }
 IDX["div_none"] = {
-    "de": "In dieser Branche ist noch kein vergebener Auftrag publiziert.",
+    "de": "In dieser Branche wurde noch kein vergebener Auftrag publiziert.",
     "fr": "Aucun marché attribué n’a encore été publié dans ce secteur.",
-    "it": "In questo settore non è ancora stato pubblicato alcun appalto aggiudicato.",
+    "it": "In questo settore non è ancora stato pubblicato nessun appalto aggiudicato.",
     "en": "No contract awarded in this sector has been published yet.",
 }
 IDX["div_buyers_h"] = {"de": "Auftraggeber", "fr": "Acheteurs publics", "it": "Enti pubblici",
@@ -3257,9 +2987,9 @@ IDX["mc_title_div"] = {"de": "Vergebene Aufträge pro Monat in dieser Branche",
                        "fr": "Marchés attribués chaque mois dans ce secteur",
                        "it": "Appalti aggiudicati ogni mese in questo settore",
                        "en": "Contracts awarded each month in this sector"}
-IDX["top_n"] = {"de": "die {k} mit den meisten Aufträgen", "fr": "les {k} ayant remporté le plus de marchés",
+IDX["top_n"] = {"de": "die {k} mit den meisten Aufträgen", "fr": "les {k} qui ont remporté le plus de marchés",
                 "it": "le {k} che hanno vinto più appalti", "en": "the {k} that won the most contracts"}
-IDX["top_n_b"] = {"de": "die {k} mit den meisten vergebenen Aufträgen", "fr": "les {k} ayant attribué le plus de marchés",
+IDX["top_n_b"] = {"de": "die {k} mit den meisten vergebenen Aufträgen", "fr": "les {k} qui ont attribué le plus de marchés",
                   "it": "i {k} che hanno aggiudicato più appalti", "en": "the {k} that awarded the most contracts"}
 IDX["of_division"] = {"de": "Branche «{name}»", "fr": "Secteur « {name} »", "it": "Settore «{name}»",
                       "en": "The “{name}” sector"}
@@ -3279,7 +3009,7 @@ IDX["by_division_awards"] = {"de": "Vergebene Aufträge nach Branche", "fr": "Ma
 IDX["all_divisions"] = {"de": "Alle Branchen", "fr": "Tous les secteurs", "it": "Tutti i settori",
                         "en": "All sectors"}
 IDX["to_divisions"] = {"de": "Die {n} Branchen im Überblick", "fr": "Les {n} secteurs en un coup d’œil",
-                       "it": "I {n} settori in sintesi", "en": "The {n} sectors at a glance"}
+                       "it": "I {n} settori a colpo d’occhio", "en": "The {n} sectors at a glance"}
 # the two pages Brevo sends people to: one language each (from the path, ?lang or the browser)
 META["abo_from"] = {
     "de": "Absender: auftragsregister.ch <{mail}>.",
@@ -3287,32 +3017,14 @@ META["abo_from"] = {
     "it": "Mittente: auftragsregister.ch <{mail}>.",
     "en": "Sender: auftragsregister.ch <{mail}>.",
 }
-META["abo_when"] = {
-    "de": "Die E-Mails kommen an Werktagen, an denen neue Ausschreibungen zu Ihrer Auswahl erschienen sind, "
-          "meist am Vormittag; an Tagen ohne solche Ausschreibungen kommt keine.",
-    "fr": "Les e-mails arrivent les jours ouvrables où de nouveaux appels d’offres correspondant à votre "
-          "sélection ont paru, le plus souvent dans la matinée ; les autres jours, aucun.",
-    "it": "Le e-mail arrivano nei giorni feriali in cui sono usciti nuovi bandi adatti alla scelta fatta, "
-          "per lo più in mattinata; negli altri giorni nessuna.",
-    "en": "The emails arrive on days when new tenders matching your selection have appeared (Monday to "
-          "Saturday), usually in the morning; on other days, none is sent.",
-}
+# (when the e-mails come, "abo_when", is at the end of the file, in the 'strictly necessary' pass)
 META["abo_spam"] = {
     "de": "Keine E-Mail erhalten? Bitte prüfen Sie Ihren Spam-Ordner.",
     "fr": "Rien reçu ? Vérifiez votre dossier de courrier indésirable.",
     "it": "E-mail non arrivata? Conviene controllare la cartella dello spam.",
     "en": "Nothing arrived? Please check your spam folder.",
 }
-META["abo_change"] = {
-    "de": "Auswahl ändern: Melden Sie sich über den Link am Ende jeder E-Mail ab und abonnieren Sie dann mit "
-          "der neuen Auswahl erneut.",
-    "fr": "Pour modifier votre sélection : désabonnez-vous par le lien au bas de chaque e-mail, puis "
-          "abonnez-vous à nouveau avec la nouvelle sélection.",
-    "it": "Per cambiare la scelta: cancellarsi con il link in fondo a ogni e-mail e iscriversi di nuovo con "
-          "la nuova scelta.",
-    "en": "To change your selection, unsubscribe with the link at the bottom of any email and subscribe again "
-          "with the new selection.",
-}
+# (how to change the selection, "abo_change", is at the end of the file)
 META["abo_lang_label"] = {"de": "Diese Seite in", "fr": "Cette page en", "it": "Questa pagina in",
                           "en": "This page in"}
 
@@ -3322,40 +3034,31 @@ META["abo_lang_label"] = {"de": "Diese Seite in", "fr": "Cette page en", "it": "
 # letter pages, the long lists cut to their first rows, the company finder on the home.
 T["search"] = {"de": "Suche", "fr": "Recherche", "it": "Ricerca", "en": "Search"}
 T["search_go"] = {"de": "Suchen", "fr": "Rechercher", "it": "Cerca", "en": "Search"}
-META["search_title"] = {"de": "Suche im Register", "fr": "Recherche dans le registre",
-                        "it": "Ricerca nel registro", "en": "Search the register"}
+META["search_title"] = {"de": "Im Register suchen", "fr": "Rechercher dans le registre",
+                        "it": "Cerca nel registro", "en": "Search the register"}
 META["search_desc"] = {
-    "de": "Firmen, Auftraggeber, offene Ausschreibungen, Branchen und Kantone im Register der "
-          "öffentlichen Aufträge der Schweiz suchen.",
-    "fr": "Rechercher entreprises, acheteurs publics, appels d’offres en cours, secteurs et cantons dans le "
-          "registre des marchés publics suisses.",
-    "it": "Ricerca di aziende, enti pubblici, bandi aperti, settori e cantoni nel registro degli appalti pubblici "
+    "de": "Suchen Sie Firmen, Auftraggeber, offene Ausschreibungen, Branchen und Kantone im Register der "
+          "öffentlichen Aufträge der Schweiz.",
+    "fr": "Cherchez des entreprises, des acheteurs publics, des appels d’offres en cours, des secteurs et des "
+          "cantons dans le registre des marchés publics suisses.",
+    "it": "Cerca aziende, enti pubblici, bandi aperti, settori e cantoni nel registro degli appalti pubblici "
           "svizzeri.",
     "en": "Search companies, public buyers, open tenders, sectors and cantons in the register "
           "of Swiss public contracts.",
 }
-META["search_lead"] = {
-    "de": "Firmen, Auftraggeber, offene Ausschreibungen, Branchen und Kantone – nach Name oder Thema, "
-          "auf Deutsch, Französisch, Italienisch oder Englisch: «Reinigung» findet auch «nettoyage».",
-    "fr": "Entreprises, acheteurs publics, appels d’offres en cours, secteurs et cantons – par nom ou par thème, "
-          "en français, en allemand, en italien ou en anglais : « nettoyage » trouve aussi « Reinigung ».",
-    "it": "Aziende, enti pubblici, bandi aperti, settori e cantoni – per nome o per tema, in italiano, tedesco, "
-          "francese o inglese: «pulizia» trova anche «Reinigung».",
-    "en": "Companies, public buyers, open tenders, sectors and cantons – by name or by topic, "
-          "in English, German, French or Italian: “cleaning” also finds “Reinigung” and “nettoyage”.",
-}
-META["search_label"] = {"de": "Suchbegriff", "fr": "Terme recherché", "it": "Termine di ricerca",
-                        "en": "Search term"}
+# (the search page's lead, "search_lead", is at the end of the file, in the 'strictly necessary' pass)
+# the field's label as a question, as one would ask it
+META["search_label"] = {"de": "Wonach suchen Sie?", "fr": "Que cherchez-vous ?", "it": "Cosa cerchi?",
+                        "en": "What are you looking for?"}
 META["search_nojs"] = {
     "de": "Die Suche braucht JavaScript. Ohne JavaScript führen diese Verzeichnisse zu jedem Eintrag "
           "des Registers:",
-    "fr": "La recherche nécessite JavaScript. Sans JavaScript, ces répertoires mènent à chaque entrée "
-          "du registre :",
-    "it": "La ricerca richiede JavaScript. Senza JavaScript, questi elenchi portano a ogni voce del "
-          "registro:",
+    "fr": "La recherche a besoin de JavaScript. Sans lui, ces répertoires vous mènent à chaque entrée du "
+          "registre :",
+    "it": "La ricerca ha bisogno di JavaScript. Senza, questi elenchi ti portano a ogni voce del registro:",
     "en": "Search needs JavaScript. Without it, these directories lead to every entry in the register:",
 }
-META["search_dirs"] = {"de": "Verzeichnisse", "fr": "Répertoires", "it": "Elenchi", "en": "Directories"}
+# (the directories' heading, "search_dirs", is at the end of the file)
 META["az_companies"] = {"de": "Firmen von A bis Z", "fr": "Entreprises de A à Z",
                         "it": "Aziende dalla A alla Z", "en": "Companies from A to Z"}
 META["az_buyers"] = {"de": "Auftraggeber von A bis Z", "fr": "Acheteurs publics de A à Z",
@@ -3409,10 +3112,10 @@ META["letter_buyers_desc_other"] = {
     "en": "{n} public buyers whose name starts with a figure or a sign, each with the contracts it awarded.",
 }
 META["letters_lead"] = {
-    "de": "Nach Anfangsbuchstabe; jeder Buchstabe hat seine eigene Seite.",
-    "fr": "Par initiale ; chaque lettre a sa propre page.",
-    "it": "Per iniziale; ogni lettera ha la sua pagina.",
-    "en": "By first letter; each letter has a page of its own.",
+    "de": "Wählen Sie einen Buchstaben – jeder hat eine eigene Seite.",
+    "fr": "Choisissez une lettre : chacune a sa propre page.",
+    "it": "Scegli una lettera: ognuna ha la sua pagina.",
+    "en": "Pick a letter – each one has a page of its own.",
 }
 META["letter_prev"] = {"de": "Vorheriger Buchstabe", "fr": "Lettre précédente", "it": "Lettera precedente",
                        "en": "Previous letter"}
@@ -3423,10 +3126,10 @@ META["letter_next"] = {"de": "Nächster Buchstabe", "fr": "Lettre suivante", "it
 IDX["show_all_n"] = {"de": "Alle {n} anzeigen", "fr": "Afficher les {n}", "it": "Mostra tutti i {n}",
                      "en": "Show all {n}"}
 IDX["first_n_note"] = {
-    "de": "Die {n} Ausschreibungen mit der nächsten Eingabefrist, von {total}.",
-    "fr": "Les {n} appels d’offres dont le délai est le plus proche, sur {total}.",
-    "it": "I {n} bandi con la scadenza più vicina, su {total}.",
-    "en": "The {n} tenders with the nearest deadlines, out of {total}.",
+    "de": "Die {n} Ausschreibungen, deren Frist zuerst abläuft – von {total}.",
+    "fr": "Les {n} appels d’offres qui expirent en premier, sur {total}.",
+    "it": "I {n} bandi che scadono prima, su {total}.",
+    "en": "The {n} tenders that close first, out of {total}.",
 }
 IDX["rest_note"] = {
     "de": "Die übrigen {n} stehen in den Listen der Kantone und Branchen.",
@@ -3437,10 +3140,10 @@ IDX["rest_note"] = {
 META["all_list_title"] = {"de": "{h} – vollständige Liste", "fr": "{h} – liste complète",
                           "it": "{h} – elenco completo", "en": "{h} – full list"}
 META["all_list_lead"] = {
-    "de": "Alle {n} offenen Ausschreibungen dieser Liste auf einer Seite, die nächste Eingabefrist zuerst.",
+    "de": "Alle {n} offenen Ausschreibungen dieser Liste auf einer Seite – die nächste Frist zuerst.",
     "fr": "Les {n} appels d’offres en cours de cette liste sur une seule page, le délai le plus proche "
-          "en premier.",
-    "it": "Tutti i {n} bandi aperti di questo elenco su una sola pagina, la scadenza più vicina per prima.",
+          "d’abord.",
+    "it": "Tutti i {n} bandi aperti di questo elenco in una sola pagina, dal più urgente.",
     "en": "All {n} open tenders in this list on one page, nearest deadline first.",
 }
 META["all_list_back"] = {"de": "Zur kurzen Liste", "fr": "Retour à la liste courte", "it": "Torna all’elenco breve",
@@ -3451,16 +3154,16 @@ META["finder_label"] = {"de": "Name der Firma", "fr": "Nom de l’entreprise", "
 META["finder_ph"] = {"de": "z. B. Implenia", "fr": "p. ex. Implenia", "it": "ad es. Implenia",
                      "en": "e.g. Implenia"}
 META["finder_sub"] = {
-    "de": "{n} Firmen mit mindestens einem Auftrag, {k} davon mit eigener Seite.",
-    "fr": "{n} entreprises ayant remporté au moins un marché, dont {k} avec leur propre page.",
-    "it": "{n} aziende con almeno un appalto vinto, di cui {k} con una pagina propria.",
-    "en": "{n} companies with at least one contract, {k} of them with a page of their own.",
+    "de": "{n} Firmen haben mindestens einen Auftrag gewonnen; {k} davon haben eine eigene Seite.",
+    "fr": "{n} entreprises ont remporté au moins un marché ; {k} ont leur propre page.",
+    "it": "{n} aziende hanno vinto almeno un appalto; {k} hanno una pagina propria.",
+    "en": "{n} companies have won at least one contract; {k} of them have a page of their own.",
 }
 META["finder_az"] = {"de": "Von A bis Z", "fr": "De A à Z", "it": "Dalla A alla Z", "en": "From A to Z"}
 # the alert form: the e-mail field's error, tied to the field (aria-describedby)
 META["abo_email_missing"] = {"de": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
-                             "fr": "Veuillez saisir votre adresse e-mail.",
-                             "it": "Manca l’indirizzo e-mail.",
+                             "fr": "Indiquez votre adresse e-mail.",
+                             "it": "Inserisci il tuo indirizzo e-mail.",
                              "en": "Please enter your email address."}
 META["abo_email_bad"] = {
     "de": "Diese E-Mail-Adresse ist nicht gültig. Beispiel: name@firma.ch",
@@ -3488,13 +3191,13 @@ JS: dict[str, dict[str, str]] = {
     "due_days": {"de": "noch {n} Tage", "fr": "encore {n} jours", "it": "ancora {n} giorni",
                  "en": "{n} days left"},
     "due_over": {"de": "abgelaufen", "fr": "expiré", "it": "scaduto", "en": "closed"},
-    "hidden_1": {"de": "1 inzwischen abgelaufene Ausschreibung ausgeblendet",
+    "hidden_1": {"de": "1 Ausschreibung ist inzwischen abgelaufen und ausgeblendet",
                  "fr": "1 appel d’offres expiré entre-temps n’est plus affiché",
-                 "it": "1 bando scaduto nel frattempo non è più mostrato",
+                 "it": "1 bando scaduto nel frattempo è nascosto",
                  "en": "1 tender has closed since and is hidden"},
-    "hidden_n": {"de": "{n} inzwischen abgelaufene Ausschreibungen ausgeblendet",
+    "hidden_n": {"de": "{n} Ausschreibungen sind inzwischen abgelaufen und ausgeblendet",
                  "fr": "{n} appels d’offres expirés entre-temps ne sont plus affichés",
-                 "it": "{n} bandi scaduti nel frattempo non sono più mostrati",
+                 "it": "{n} bandi scaduti nel frattempo sono nascosti",
                  "en": "{n} tenders have closed since and are hidden"},
     # the home's 'neu' badge while its day is today or yesterday on the reader's clock
     "new_today": {"de": "{m} neue heute", "fr": "{m} nouveaux aujourd’hui", "it": "{m} nuovi oggi",
@@ -3505,7 +3208,7 @@ JS: dict[str, dict[str, str]] = {
                  "en": "{m} new since yesterday"},
     "new_yday_1": {"de": "1 neue seit gestern", "fr": "1 nouveau depuis hier", "it": "1 nuovo da ieri",
                    "en": "1 new since yesterday"},
-    "top": {"de": "Nach oben", "fr": "Haut de page", "it": "Inizio pagina", "en": "Back to top"},
+    "top": {"de": "Nach oben", "fr": "Retour en haut", "it": "Torna su", "en": "Back to top"},
     # fix round 2: short enough for the field (the longer list was cut mid-word at 1280 and 390 px); '|' separates
     # shorter forms, and /stand.js shows the first that fits the field as the reader sees it
     "ph": {"de": "Firma, Auftraggeber, Thema\u00a0…|Firma, Auftraggeber\u00a0…|Firma, Thema\u00a0…",
@@ -3531,12 +3234,12 @@ JS: dict[str, dict[str, str]] = {
              "it": "Nessun risultato per «{q}».", "en": "No results for “{q}”."},
     "none_hint": {"de": "Versuchen Sie ein anderes Wort, einen Teil des Namens oder die Verzeichnisse unten.",
                   "fr": "Essayez un autre mot, une partie du nom ou les répertoires ci-dessous.",
-                  "it": "Altre possibilità: un’altra parola, una parte del nome o gli elenchi qui sotto.",
+                  "it": "Prova con un’altra parola, una parte del nome o gli elenchi qui sotto.",
                   "en": "Try another word, part of the name, or the directories below."},
     "n_res": {"de": "{n} Treffer", "fr": "{n} résultats", "it": "{n} risultati", "en": "{n} results"},
     "n_res_1": {"de": "1 Treffer", "fr": "1 résultat", "it": "1 risultato", "en": "1 result"},
     "n_sug": {"de": "{n} Vorschläge, mit den Pfeiltasten wählen", "fr": "{n} suggestions ; choisissez avec les flèches",
-              "it": "{n} suggerimenti; scelta con i tasti freccia", "en": "{n} suggestions; use the arrow keys to choose"},
+              "it": "{n} suggerimenti: scegli con i tasti freccia", "en": "{n} suggestions; use the arrow keys to choose"},
     "more": {"de": "{n} weitere anzeigen", "fr": "Afficher les {n} autres", "it": "Mostra gli altri {n}",
              "en": "Show {n} more"},
     "aw_1": {"de": "1 Auftrag", "fr": "1 marché", "it": "1 appalto", "en": "1 contract"},
@@ -3550,10 +3253,10 @@ JS: dict[str, dict[str, str]] = {
     "k_sec": {"de": "Kategorie", "fr": "Catégorie", "it": "Categoria", "en": "Category"},
     "until": {"de": "bis {d}", "fr": "jusqu’au {d}", "it": "entro il {d}", "en": "due {d}"},
     "loading": {"de": "Wird geladen\u00a0…", "fr": "Chargement …", "it": "Caricamento …", "en": "Loading …"},
-    "failed": {"de": "Die Daten konnten nicht geladen werden.", "fr": "Les données n’ont pas pu être chargées.",
-               "it": "Non è stato possibile caricare i dati.", "en": "The data could not be loaded."},
+    "failed": {"de": "Wir konnten die Daten nicht laden.", "fr": "Impossible de charger les données.",
+               "it": "Non siamo riusciti a caricare i dati.", "en": "We couldn’t load the data."},
     # the filters of the tender lists (liste.js)
-    "f_label": {"de": "Ausschreibungen filtern", "fr": "Filtrer les appels d’offres", "it": "Filtri dei bandi",
+    "f_label": {"de": "Ausschreibungen filtern", "fr": "Filtrer les appels d’offres", "it": "Filtra i bandi",
                 "en": "Filter tenders"},
     "f_q": {"de": "Titel oder Auftraggeber", "fr": "Titre ou acheteur public", "it": "Titolo o ente pubblico",
             "en": "Title or public buyer"},
@@ -3568,19 +3271,14 @@ JS: dict[str, dict[str, str]] = {
               "it": "Questa selezione via e-mail", "en": "This selection by email"},
     "f_count": {"de": "{n} von {m} offenen Ausschreibungen", "fr": "{n} sur {m} appels d’offres en cours",
                 "it": "{n} di {m} bandi aperti", "en": "{n} of {m} open tenders"},
-    "f_none": {"de": "Keine offene Ausschreibung entspricht dieser Auswahl.",
-               "fr": "Aucun appel d’offres en cours ne correspond à cette sélection.",
-               "it": "Nessun bando aperto corrisponde a questa selezione.",
-               "en": "No open tender matches this selection."},
+    "f_none": {"de": "Für diese Auswahl gibt es keine offene Ausschreibung.",
+               "fr": "Aucun appel d’offres en cours pour cette sélection.",
+               "it": "Nessun bando aperto per questa selezione.",
+               "en": "No open tenders for this selection."},
     "multi": {"de": "mehrere Kantone", "fr": "plusieurs cantons", "it": "più cantoni", "en": "several cantons"},
     # the alert form (abo.js)
     "sel": {"de": "({n} ausgewählt)", "fr": "(sélection : {n})", "it": "(selezionati: {n})", "en": "({n} selected)"},
-    "pv": {"de": "Zurzeit {open} · ≈ {w} neue pro Woche", "fr": "Actuellement {open} · ≈ {w} nouveaux par semaine",
-           "it": "Attualmente {open} · ≈ {w} nuovi alla settimana", "en": "Currently {open} · ≈ {w} new a week"},
-    "pv_lt": {"de": "Zurzeit {open} · weniger als eine neue pro Woche",
-              "fr": "Actuellement {open} · moins d’un nouveau par semaine",
-              "it": "Attualmente {open} · meno di un nuovo bando alla settimana",
-              "en": "Currently {open} · fewer than one new a week"},
+    # (the weekly estimate, "pv" and "pv_lt", is at the end of the file, in the 'strictly necessary' pass)
     "pv_note": {"de": "für die gewählten Kantone und Branchen, berechnet aus den letzten 8 Wochen",
                 "fr": "pour les cantons et secteurs choisis, d’après les 8 dernières semaines",
                 "it": "per i cantoni e i settori scelti, in base alle ultime 8 settimane",
@@ -3589,12 +3287,12 @@ JS: dict[str, dict[str, str]] = {
     "kb_h": {"de": "{div} im Kanton {name}", "fr": "{div} dans le canton {of}", "it": "{div} nel Canton {name}",
              "en": "{div} in the canton of {name}"},
     "kb_lead": {"de": "{n} an {f} (Daten dieses Registers).",
-                "fr": "{n} en faveur de {f} (données de ce registre).",
-                "it": "{n} a favore di {f} (dati di questo registro).",
+                "fr": "{n} pour {f} (données de ce registre).",
+                "it": "{n} a {f} (dati di questo registro).",
                 "en": "{n} to {f} (data from this register)."},
     "kb_f1": {"de": "1 Firma", "fr": "1 entreprise", "it": "1 azienda", "en": "1 company"},
     "kb_fn": {"de": "{n} Firmen", "fr": "{n} entreprises", "it": "{n} aziende", "en": "{n} companies"},
-    "kb_top": {"de": "Firmen mit den meisten Aufträgen", "fr": "Entreprises ayant remporté le plus de marchés",
+    "kb_top": {"de": "Firmen mit den meisten Aufträgen", "fr": "Entreprises qui ont remporté le plus de marchés",
                "it": "Aziende che hanno vinto più appalti", "en": "Companies that won the most contracts"},
     "kb_recent": {"de": "Die {k} neuesten von {n}", "fr": "Les {k} plus récents sur {n}",
                   "it": "I {k} più recenti su {n}", "en": "The {k} most recent of {n}"},
@@ -3608,10 +3306,12 @@ JS: dict[str, dict[str, str]] = {
                 "fr": "{k} des {f} entreprises ont remporté ici un seul marché.",
                 "it": "{k} delle {f} aziende hanno vinto qui un solo appalto.",
                 "en": "{k} of the {f} companies won exactly one contract here."},
-    "kb_hint": {"de": "Branche wählen: die Aufträge dieses Kantons und die Firmen mit den meisten davon.",
-                "fr": "Choisir un secteur : les marchés de ce canton et les entreprises qui en ont le plus.",
-                "it": "Scegli un settore: gli appalti di questo cantone e le aziende che ne hanno vinti di più.",
-                "en": "Pick a sector: this canton’s contracts and the companies that won the most of them."},
+    "kb_hint": {"de": "Wählen Sie eine Branche: Sie sehen die Aufträge dieses Kantons und die Firmen mit den "
+                      "meisten davon.",
+                "fr": "Choisissez un secteur pour voir les marchés de ce canton et les entreprises qui en ont "
+                      "remporté le plus.",
+                "it": "Scegli un settore: vedi gli appalti di questo cantone e le aziende che ne hanno vinti di più.",
+                "en": "Pick a sector to see this canton’s contracts and the companies that won the most of them."},
 }
 
 # ---------------------------------------------------------------- step 4: design A2 "Brass"
@@ -3663,7 +3363,7 @@ META["alarm_h2"] = {"de": "Neue Ausschreibungen per E-Mail erhalten",
 META["map_about"] = {
     "de": "Kartengrundlage der Startseite: swiss-maps © Interactive Things (BSD-3-Clause), Daten BFS/swisstopo.",
     "fr": "Fond de carte de la page d’accueil : swiss-maps © Interactive Things (BSD-3-Clause), données OFS/swisstopo.",
-    "it": "Base cartografica della pagina iniziale: swiss-maps © Interactive Things (BSD-3-Clause), dati UST/swisstopo.",
+    "it": "Base cartografica della home: swiss-maps © Interactive Things (BSD-3-Clause), dati UST/swisstopo.",
     "en": "Base map of the home page: swiss-maps © Interactive Things (BSD-3-Clause), data FSO/swisstopo.",
 }
 JS["map_rank"] = {"de": "Rang {r} von 26", "fr": "Rang {r} sur 26", "it": "Posizione {r} su 26",
@@ -3715,23 +3415,14 @@ META["door_buyers_h"] = {"de": "Auftraggeber finden", "fr": "Trouver un acheteur
 META["finder_ph_b"] = {"de": "z. B. Stadt Zürich", "fr": "p. ex. Ville de Genève", "it": "ad es. Città di Lugano",
                        "en": "e.g. City of Zurich"}
 META["finder_sub_b"] = {
-    "de": "{n} Auftraggeber mit mindestens einem vergebenen Auftrag, {k} davon mit eigener Seite.",
-    "fr": "{n} acheteurs publics ayant attribué au moins un marché, dont {k} avec leur propre page.",
-    "it": "{n} enti pubblici con almeno un appalto aggiudicato, di cui {k} con una pagina propria.",
-    "en": "{n} public buyers with at least one contract awarded, {k} of them with a page of their own.",
+    "de": "{n} Auftraggeber haben mindestens einen Auftrag vergeben; {k} davon haben eine eigene Seite.",
+    "fr": "{n} acheteurs publics ont attribué au moins un marché ; {k} ont leur propre page.",
+    "it": "{n} enti pubblici hanno aggiudicato almeno un appalto; {k} hanno una pagina propria.",
+    "en": "{n} public buyers have awarded at least one contract; {k} of them have a page of their own.",
 }
 META["az_other"] = {"de": "Andere", "fr": "Autres", "it": "Altri", "en": "Other"}
 META["nf_eyebrow"] = {"de": "Fehler 404", "fr": "Erreur 404", "it": "Errore 404", "en": "Error 404"}
-META["abo_resend"] = {
-    "de": "Keine E-Mail nach 15 Minuten? Prüfen Sie den Spam-Ordner. Ist sie auch dort nicht, melden Sie sich mit "
-          "derselben Adresse noch einmal an: Sie erhalten einen neuen Bestätigungslink.",
-    "fr": "Pas d’e-mail après 15 minutes ? Vérifiez votre dossier de courrier indésirable. S’il n’y est pas non "
-          "plus, inscrivez-vous à nouveau avec la même adresse : vous recevrez un nouveau lien de confirmation.",
-    "it": "Nessuna e-mail dopo 15 minuti? Conviene controllare la cartella dello spam. Se non c’è nemmeno lì, "
-          "basta iscriversi di nuovo con lo stesso indirizzo: arriverà un nuovo link di conferma.",
-    "en": "No email after 15 minutes? Check your spam folder. If it is not there either, sign up again with the "
-          "same address: you will get a new confirmation link.",
-}
+# (the check page's 'no e-mail?' line, "abo_resend", is at the end of the file, in the 'strictly necessary' pass)
 META["abo_recap_h"] = {"de": "So geht es weiter", "fr": "La suite", "it": "I prossimi passi", "en": "What happens next"}
 META["abo_step1"] = {"de": "Den Bestätigungslink in der E-Mail anklicken.",
                      "fr": "Cliquer sur le lien de confirmation de l’e-mail.",
@@ -3752,10 +3443,10 @@ META["abo_step3"] = {"de": "Abmelden können Sie sich jederzeit über den Link a
 META["abo_form_nojs"] = {
     "de": "Die Auswahl nach Kanton und Branche braucht JavaScript. Ohne JavaScript gilt das Abo für die ganze "
           "Schweiz und alle Branchen.",
-    "fr": "Le choix par canton et par secteur nécessite JavaScript. Sans JavaScript, l’abonnement couvre toute la "
+    "fr": "Pour choisir des cantons et des secteurs, il faut JavaScript. Sans lui, l’abonnement couvre toute la "
           "Suisse et tous les secteurs.",
-    "it": "La scelta per cantone e settore richiede JavaScript. Senza JavaScript l’iscrizione vale per tutta la "
-          "Svizzera e per tutti i settori.",
+    "it": "Per scegliere cantoni e settori serve JavaScript. Senza, ricevi i bandi di tutta la Svizzera e di tutti "
+          "i settori.",
     "en": "Choosing cantons and sectors needs JavaScript. Without it, the subscription covers all of Switzerland and "
           "every sector.",
 }
@@ -3764,10 +3455,10 @@ META["abo_bfilter"] = {"de": "Branche suchen", "fr": "Chercher un secteur", "it"
 META["abo_bfilter_ph"] = {"de": "z. B. Reinigung", "fr": "p. ex. nettoyage", "it": "ad es. pulizia",
                           "en": "e.g. cleaning"}
 IDX["cut_firms"] = {"de": "die {k} mit den meisten Aufträgen, von {n}",
-                    "fr": "les {k} ayant remporté le plus de marchés, sur {n}",
+                    "fr": "les {k} qui ont remporté le plus de marchés, sur {n}",
                     "it": "le {k} che hanno vinto più appalti, su {n}", "en": "the {k} that won the most contracts, of {n}"}
 IDX["cut_buyers"] = {"de": "die {k} mit den meisten vergebenen Aufträgen, von {n}",
-                     "fr": "les {k} ayant attribué le plus de marchés, sur {n}",
+                     "fr": "les {k} qui ont attribué le plus de marchés, sur {n}",
                      "it": "i {k} che hanno aggiudicato più appalti, su {n}",
                      "en": "the {k} that awarded the most contracts, of {n}"}
 IDX["cut_newest"] = {"de": "die {k} neuesten von {n}", "fr": "les {k} plus récents sur {n}",
@@ -3775,7 +3466,7 @@ IDX["cut_newest"] = {"de": "die {k} neuesten von {n}", "fr": "les {k} plus réce
 # the CSV links say what they download (fix round 1), in plain words since 22.10.2026
 IDX["csv_all_n"] = {"de": "Alle {n} Aufträge als CSV-Datei", "fr": "Les {n} marchés en fichier CSV",
                     "it": "Tutti i {n} appalti in un file CSV", "en": "All {n} contracts as a CSV file"}
-IDX["csv_canton"] = {"de": "Vergebene Aufträge Kanton {name} (CSV)", "fr": "Marchés attribués du canton {of} (CSV)",
+IDX["csv_canton"] = {"de": "Vergebene Aufträge im Kanton {name} (CSV)", "fr": "Marchés attribués du canton {of} (CSV)",
                      "it": "Appalti aggiudicati del Canton {name} (CSV)",
                      "en": "Contracts awarded in the canton of {name} (CSV)"}
 IDX["csv_buyer"] = {"de": "Vergebene Aufträge von {name} (CSV)", "fr": "Marchés attribués par {name} (CSV)",
@@ -3786,26 +3477,7 @@ IDX["csv_nocant"] = {"de": "Aufträge ohne Kanton (CSV)", "fr": "Marchés sans c
                      "it": "Appalti senza cantone (CSV)", "en": "Contracts without a canton (CSV)"}
 IDX["chart_csv"] = {"de": "Daten der Grafik (CSV)", "fr": "Données du graphique (CSV)", "it": "Dati del grafico (CSV)",
                     "en": "Chart data (CSV)"}
-IDX["fb_share"] = {
-    "de": "{k} der {n} ({p}) nennen keinen Ort; sie zählen hier, weil der Auftraggeber seinen Sitz im Kanton "
-          "{name} hat.",
-    "fr": "{k} des {n} ({p}) n’indiquent aucun lieu ; ils comptent ici parce que l’acheteur public a son siège "
-          "dans le canton {of}.",
-    "it": "{k} dei {n} ({p}) non indicano alcun luogo; contano qui perché l’ente pubblico ha sede nel Canton "
-          "{name}.",
-    "en": "{k} of the {n} ({p}) name no place; they count here because the public buyer is based in the "
-          "canton of {name}.",
-}
-IDX["fb_share_one"] = {
-    "de": "Ein Auftrag ({p}) nennt keinen Ort; er zählt hier, weil der Auftraggeber seinen Sitz im Kanton {name} "
-          "hat.",
-    "fr": "Un marché ({p}) n’indique aucun lieu ; il compte ici parce que l’acheteur public a son siège dans "
-          "le canton {of}.",
-    "it": "Un appalto ({p}) non indica alcun luogo; conta qui perché l’ente pubblico ha sede nel Canton "
-          "{name}.",
-    "en": "One contract ({p}) names no place; it counts here because the public buyer is based in the canton "
-          "of {name}.",
-}
+# (the canton page's buyer's-seat share, "fb_share" and "fb_share_one", is at the end of the file)
 IDX["div_once"] = {"de": "{k} der {f} Firmen haben in dieser Branche genau einen Auftrag erhalten.",
                    "fr": "{k} des {f} entreprises ont remporté un seul marché dans ce secteur.",
                    "it": "{k} delle {f} aziende hanno vinto un solo appalto in questo settore.",
@@ -3834,20 +3506,21 @@ JS["f_toggle"] = {"de": "Filter", "fr": "Filtres", "it": "Filtri", "en": "Filter
 JS["f_active"] = {"de": "({n} aktiv)", "fr": "({n} actifs)", "it": "({n} attivi)", "en": "({n} active)"}
 JS["f_active_1"] = {"de": "(1 aktiv)", "fr": "(1 actif)", "it": "(1 attivo)", "en": "(1 active)"}
 JS["f_sort"] = {"de": "Reihenfolge", "fr": "Ordre", "it": "Ordine", "en": "Order"}
-JS["f_sort_dl"] = {"de": "Nächste Eingabefrist zuerst", "fr": "Délai le plus proche d’abord",
+JS["f_sort_dl"] = {"de": "Nächste Frist zuerst", "fr": "Délai le plus proche d’abord",
                    "it": "Scadenza più vicina prima", "en": "Nearest deadline first"}
 JS["f_sort_new"] = {"de": "Neueste zuerst", "fr": "Les plus récents d’abord", "it": "Più recenti prima",
                     "en": "Newest first"}
 JS["f_new"] = {"de": "Nur neue vom {d}", "fr": "Seulement les nouveaux du {d}", "it": "Solo i nuovi del {d}",
                "en": "Only new on {d}"}
-JS["f_abo_kw"] = {"de": "Per E-Mail kommen Ausschreibungen nach Kanton und Branche; Stichwörter werden nicht übernommen.",
-                  "fr": "Par e-mail, le tri se fait par canton et par secteur ; les mots-clés ne sont pas repris.",
-                  "it": "Via e-mail arrivano i bandi per cantone e settore; le parole chiave non vengono riprese.",
-                  "en": "By email, tenders come by canton and sector; keywords are not carried over."}
-JS["f_first"] = {"de": "Die {k} mit der nächsten Eingabefrist, von {m} offenen Ausschreibungen",
-                 "fr": "Les {k} dont le délai est le plus proche, sur {m} appels d’offres en cours",
-                 "it": "I {k} con la scadenza più vicina, su {m} bandi aperti",
-                 "en": "The {k} with the nearest deadlines, of {m} open tenders"}
+JS["f_abo_kw"] = {"de": "Per E-Mail schicken wir Ausschreibungen nach Kanton und Branche – Stichwörter gelten nur hier.",
+                  "fr": "Par e-mail, nous envoyons les appels d’offres par canton et par secteur : les mots-clés ne "
+                        "servent qu’ici.",
+                  "it": "Via e-mail ti mandiamo i bandi per cantone e settore: le parole chiave valgono solo qui.",
+                  "en": "By email we send tenders by canton and sector – keywords only work here."}
+JS["f_first"] = {"de": "Die {k}, deren Frist zuerst abläuft, von {m} offenen Ausschreibungen",
+                 "fr": "Les {k} qui expirent en premier, sur {m} appels d’offres en cours",
+                 "it": "I {k} che scadono prima, su {m} bandi aperti",
+                 "en": "The {k} that close first, of {m} open tenders"}
 JS["z_h"] = {"de": "Vorschläge:", "fr": "Suggestions :", "it": "Suggerimenti:", "en": "Suggestions:"}
 # fix round 3: the divider before the matches of a part of a word, and the alert link's note when a keyword names a Branche
 JS["tier_w"] = {"de": "Weitere Treffer (Wortteil)", "fr": "Autres résultats (partie de mot)",
@@ -3855,48 +3528,51 @@ JS["tier_w"] = {"de": "Weitere Treffer (Wortteil)", "fr": "Autres résultats (pa
 # fix round 5: the same divider when no match is whole ('Weitere' with nothing above it), in the lists and the search
 JS["tier_a"] = {"de": "Treffer als Wortteil", "fr": "Résultats par partie de mot", "it": "Risultati per parte di parola",
                 "en": "Matches on part of a word"}
-JS["f_abo_kwb"] = {"de": "Per E-Mail: die Branche «{b}»; nach Stichwörtern wird nicht gefiltert.",
-                   "fr": "Par e-mail : le secteur « {b} » ; pas de filtre par mots-clés.",
-                   "it": "Via e-mail: il settore «{b}»; nessun filtro per parole chiave.",
-                   "en": "By email: the “{b}” sector; no keyword filter."}
+JS["f_abo_kwb"] = {"de": "Per E-Mail: die Branche «{b}», ohne Stichwörter.",
+                   "fr": "Par e-mail : le secteur « {b} », sans mots-clés.",
+                   "it": "Via e-mail: il settore «{b}», senza parole chiave.",
+                   "en": "By email: the “{b}” sector, without keywords."}
 JS["z_drop"] = {"de": "ohne «{t}»: {n}", "fr": "sans « {t} » : {n}", "it": "senza «{t}»: {n}",
                 "en": "without “{t}”: {n}"}
 JS["z_near"] = {"de": "{c}: {n}", "fr": "{c} : {n}", "it": "{c}: {n}", "en": "{c}: {n}"}
 # fix round 6: no result, the query with a word one letter away (the open tenders' words)
-JS["z_dym"] = {"de": "Meinten Sie «{q}»?", "fr": "Vouliez-vous dire « {q} » ?", "it": "Forse «{q}»?",
+JS["z_dym"] = {"de": "Meinten Sie «{q}»?", "fr": "Vouliez-vous dire « {q} » ?", "it": "Forse cercavi «{q}»?",
                "en": "Did you mean “{q}”?"}
 JS["z_abo"] = {"de": "Neue Ausschreibungen dieser Auswahl gratis per E-Mail",
                "fr": "Recevoir gratuitement par e-mail les nouveaux appels d’offres de cette sélection",
                "it": "Ricevi gratis via e-mail i nuovi bandi di questa selezione",
                "en": "Get new tenders for this selection by email – free"}
-JS["kb_fb"] = {"de": "{k} dieser Aufträge ({p}) nennen keinen Ort und zählen hier am Sitz des Auftraggebers.",
-               "fr": "{k} de ces marchés ({p}) n’indiquent aucun lieu et comptent ici au siège de "
-                     "l’acheteur public.",
-               "it": "{k} di questi appalti ({p}) non indicano alcun luogo e contano qui per la sede "
-                     "dell’ente pubblico.",
-               "en": "{k} of these contracts ({p}) name no place and count here at the public buyer’s seat."}
+JS["kb_fb"] = {"de": "{k} dieser Aufträge ({p}) nennen keinen Ort und zählen hier, weil der Auftraggeber hier seinen "
+                     "Sitz hat.",
+               "fr": "{k} de ces marchés ({p}) n’indiquent aucun lieu et comptent ici, où l’acheteur public a son "
+                     "siège.",
+               "it": "{k} di questi appalti ({p}) non indicano il luogo e contano qui, dove ha sede l’ente "
+                     "pubblico.",
+               "en": "{k} of these contracts ({p}) name no place and count here, where the public buyer is based."}
 JS["kb_fbx"] = {"de": "Ohne diese Aufträge", "fr": "Sans ces marchés", "it": "Senza questi appalti",
                 "en": "Without these contracts"}
-JS["sum_sel"] = {"de": "Sie abonnieren: {s}", "fr": "Vous vous abonnez à : {s}", "it": "Iscrizione a: {s}",
-                 "en": "You are subscribing to: {s}"}
+JS["sum_sel"] = {"de": "Sie abonnieren: {s}", "fr": "Vous vous abonnez à : {s}", "it": "Ti iscrivi a: {s}",
+                 "en": "You’re subscribing to: {s}"}
 JS["all_ch"] = {"de": "ganze Schweiz", "fr": "toute la Suisse", "it": "tutta la Svizzera", "en": "all of Switzerland"}
 JS["all_b"] = {"de": "alle Branchen", "fr": "tous les secteurs", "it": "tutti i settori", "en": "all sectors"}
 JS["bf_none"] = {"de": "Keine Branche passt zu «{q}».", "fr": "Aucun secteur ne correspond à « {q} ».",
-                 "it": "Nessun settore corrisponde a «{q}».", "en": "No sector matches “{q}”."}
+                 "it": "Nessun settore per «{q}».", "en": "No sector matches “{q}”."}
 
 
 # ---------------------------------------------------------------- fix round 2 (20.10.2026)
 # The copy audit of 15.10 (audit3/copy/fixes.md): the home's alarm band said the same thing three times and printed
 # its number twice; an expired tender's alert box made its promise twice; a company page without a CHF sum said
 # nothing about why; small counts at the start of a sentence, and the thresholds on the Über page, in words.
+# The owner's own wording for the Italian (23.10.2026): «Scegli cantoni e settori: ti mandiamo i nuovi bandi via
+# e-mail, di solito al mattino. Non serve registrarsi.» The e-mail goes out only on a day with matching new tenders.
 META["alarm_sub"] = {
-    "de": "Kantone und Branchen wählen – die passenden neuen Ausschreibungen kommen meist am Vormittag per "
-          "E-Mail. Ohne Konto.",
-    "fr": "Choisissez vos cantons et vos secteurs : les nouveaux appels d’offres correspondants arrivent par "
-          "e-mail, le plus souvent dans la matinée. Sans compte.",
-    "it": "Cantoni e settori a scelta: i nuovi bandi adatti arrivano via e-mail, per lo più in mattinata. "
-          "Senza account.",
-    "en": "Choose your cantons and sectors – matching new tenders arrive by email, usually in the morning. "
+    "de": "Wählen Sie Kantone und Branchen: Wir schicken Ihnen die neuen Ausschreibungen per E-Mail, meist am "
+          "Vormittag. Ein Konto brauchen Sie nicht.",
+    "fr": "Choisissez vos cantons et vos secteurs : nous vous envoyons les nouveaux appels d’offres par e-mail, "
+          "en général le matin. Pas besoin de compte.",
+    "it": "Scegli cantoni e settori: ti mandiamo i nuovi bandi via e-mail, di solito al mattino. Non serve "
+          "registrarsi.",
+    "en": "Choose your cantons and sectors, and we’ll email you the new tenders, usually in the morning. "
           "No account needed.",
 }
 # under the big number of the alarm band: the number is not said twice
@@ -3936,19 +3612,19 @@ AND = {"de": " und ", "fr": " et ", "it": " e ", "en": " and "}
 IDX["nocant_lead_one"] = {
     "de": "Ein Auftrag nennt weder einen Ort noch einen Auftraggeber mit Kanton. Alle Kantone zusammen und dieser "
           "Auftrag ergeben die {total} der Startseite.",
-    "fr": "Un marché n’indique ni lieu ni acheteur public avec canton. Avec lui, la somme de tous les cantons "
-          "correspond aux {total} de la page d’accueil.",
-    "it": "Un appalto non indica né un luogo né un ente pubblico con cantone. Sommando tutti i cantoni e questo "
-          "appalto si ottengono i {total} della pagina iniziale.",
+    "fr": "Un marché n’indique ni lieu ni acheteur public avec canton. Tous les cantons et ce marché donnent "
+          "ensemble les {total} de la page d’accueil.",
+    "it": "Un appalto non indica né un luogo né un ente pubblico con cantone. Con questo, la somma dei cantoni dà "
+          "i {total} della home.",
     "en": "One contract names neither a place nor a public buyer with a canton. All cantons together and this "
           "contract make up the {total} on the home page.",
 }
-for _l, _x in (("de", "Ein Auftrag nennt weder einen Ort noch einen Auftraggeber mit Kanton; er zählt zu keinem Kanton, "
-                      "und die Kantonsübersicht führt ihn gesondert auf."),
-               ("fr", "Un marché n’indique ni lieu ni acheteur public avec canton ; il ne compte dans aucun canton, "
+for _l, _x in (("de", "Ein Auftrag nennt weder einen Ort noch einen Auftraggeber mit Kanton. Er zählt zu keinem Kanton; "
+                      "die Kantonsübersicht führt ihn gesondert auf."),
+               ("fr", "Un marché n’indique ni lieu ni acheteur public avec canton : il ne compte dans aucun canton, "
                       "et l’aperçu des cantons le présente à part."),
-               ("it", "Un appalto non indica né un luogo né un ente pubblico con cantone; non conta in alcun "
-                      "cantone, e la panoramica dei cantoni lo elenca a parte."),
+               ("it", "Un appalto non indica né un luogo né un ente pubblico con cantone: non conta in nessun "
+                      "cantone e la pagina dei cantoni lo elenca a parte."),
                ("en", "One contract names neither a place nor a public buyer with a canton; it counts in no "
                       "canton, and the canton overview lists it separately.")):
     UEBER[_l]["nocant_one"] = _x
@@ -3972,29 +3648,35 @@ T["contact"] = {"de": "Kontakt", "fr": "Contact", "it": "Contatto", "en": "Conta
 # the home's one line of trust over the question: the source and the page's one date (it elides like the footer's line)
 META["home_source"] = {"de": "Daten von simap.ch · aktualisiert am {d}", "fr": "Données de simap.ch · mis à jour le {d}",
                        "it": "Dati di simap.ch · aggiornato al {d}", "en": "Data from simap.ch · updated {d}"}
-# the home's lead, one line (it was two paragraphs: who the site is for, then what it holds)
+# the home's lead, one line (it was two paragraphs: who the site is for, then what it holds). Natural-voice pass
+# (owner, 23.10.2026): it answers the question of the H1 right above it ('li' / 'sie' / 'les' / 'them' are its contracts)
 PROSE["lead"] = {
-    "de": "Die öffentlichen Aufträge seit August 2024, nach Firma geordnet – und die offenen Ausschreibungen.",
-    "fr": "Les marchés publics attribués depuis août 2024, entreprise par entreprise – et les appels d'offres en cours.",
-    "it": "Gli appalti pubblici aggiudicati da agosto 2024, azienda per azienda – e i bandi ancora aperti.",
-    "en": "Public contracts awarded since August 2024, company by company – and the tenders open now.",
+    "de": "Hier sehen Sie, wer sie seit August 2024 gewonnen hat – Firma für Firma. Dazu die offenen Ausschreibungen.",
+    "fr": "Découvrez qui les a remportés depuis août 2024, entreprise par entreprise – et trouvez les appels d'offres "
+          "en cours.",
+    "it": "Qui vedi chi li ha vinti da agosto 2024, azienda per azienda. E trovi i bandi ancora aperti.",
+    "en": "See who has won them since August 2024, company by company – and find the tenders open now.",
 }
-META["door_open_sub"] = {"de": "Nach Eingabefrist, Kanton und Branche.", "fr": "Par délai, canton et secteur.",
+META["door_open_sub"] = {"de": "Nach Frist, Kanton und Branche.", "fr": "Par délai, canton et secteur.",
                          "it": "Per scadenza, cantone e settore.", "en": "By deadline, canton and sector."}
 # the leads of the company, buyer, canton and Branche pages say what the page holds; their numbers are the figures'
-META["company_lead"] = {"de": "Gewonnene öffentliche Aufträge laut simap.ch{span}.",
-                        "fr": "Marchés publics remportés selon simap.ch{span}.",
-                        "it": "Appalti pubblici vinti secondo simap.ch{span}.",
-                        "en": "Public contracts won, according to simap.ch{span}."}
-META["buyer_lead"] = {"de": "Vergebene Aufträge dieses Auftraggebers laut simap.ch.",
-                      "fr": "Marchés attribués par cet acheteur public, selon simap.ch.",
-                      "it": "Appalti aggiudicati da questo ente pubblico secondo simap.ch.",
-                      "en": "Contracts awarded by this public buyer, according to simap.ch."}
+META["company_lead"] = {"de": "Hier finden Sie die öffentlichen Aufträge, die diese Firma gewonnen hat{span} – laut "
+                              "simap.ch.",
+                        "fr": "Voici les marchés publics remportés par cette entreprise{span}, selon simap.ch.",
+                        "it": "Qui trovi gli appalti pubblici vinti da questa azienda{span}, secondo simap.ch.",
+                        "en": "Here are the public contracts this company has won{span}, according to simap.ch."}
+META["buyer_lead"] = {"de": "Hier finden Sie die Aufträge, die dieser Auftraggeber vergeben hat – laut simap.ch.",
+                      "fr": "Voici les marchés attribués par cet acheteur public, selon simap.ch.",
+                      "it": "Qui trovi gli appalti aggiudicati da questo ente pubblico, secondo simap.ch.",
+                      "en": "Here are the contracts this public buyer has awarded, according to simap.ch."}
 META["canton_lead"] = {
-    "de": "Vergebene Aufträge für Arbeiten und Lieferungen im Kanton {name}{span}, laut simap.ch.",
-    "fr": "Marchés attribués pour des travaux et des fournitures dans le canton {of}{span}, selon simap.ch.",
-    "it": "Appalti aggiudicati per lavori e forniture nel Canton {name}{span}, secondo simap.ch.",
-    "en": "Contracts awarded for work and supplies in the canton of {name}{span}, according to simap.ch.",
+    "de": "Hier sehen Sie, wer im Kanton {name} Aufträge für Arbeiten und Lieferungen gewonnen hat{span} – laut "
+          "simap.ch.",
+    "fr": "Voici qui a remporté les marchés pour des travaux et des fournitures dans le canton {of}{span}, selon "
+          "simap.ch.",
+    "it": "Qui vedi chi ha vinto gli appalti per lavori e forniture nel Canton {name}{span}, secondo simap.ch.",
+    "en": "Here you can see who won contracts for work and supplies in the canton of {name}{span}, according to "
+          "simap.ch.",
 }
 META["canton_lead_one"] = dict(META["canton_lead"])
 IDX["fb_share"] = {
@@ -4009,10 +3691,10 @@ IDX["fb_share_one"] = {
     "it": "Un appalto ({p}) non indica il luogo e conta qui, dove l'ente pubblico ha sede.",
     "en": "One contract ({p}) names no place and counts here, where the public buyer is based.",
 }
-META["div_lead"] = {"de": "Vergebene Aufträge in dieser Branche, laut simap.ch.",
-                    "fr": "Marchés attribués dans ce secteur, selon simap.ch.",
-                    "it": "Appalti aggiudicati in questo settore, secondo simap.ch.",
-                    "en": "Contracts awarded in this sector, according to simap.ch."}
+META["div_lead"] = {"de": "Hier finden Sie die vergebenen Aufträge dieser Branche – laut simap.ch.",
+                    "fr": "Voici les marchés attribués dans ce secteur, selon simap.ch.",
+                    "it": "Qui trovi gli appalti aggiudicati in questo settore, secondo simap.ch.",
+                    "en": "Here are the contracts awarded in this sector, according to simap.ch."}
 # the sectors panel: what a sector is, the about page says ('Branchen und Kategorien (CPV)')
 IDX["div_lede_top"] = {"de": "Die häufigsten Branchen: {k} von {total}.", "fr": "Les secteurs les plus fréquents : {k} sur {total}.",
                        "it": "I settori più frequenti: {k} su {total}.", "en": "The most frequent sectors: {k} of {total}."}
@@ -4033,55 +3715,63 @@ IDX["mc_note_end_zero"] = {"de": "Laufender Monat ({m}): bisher kein vergebener 
                            "fr": "Mois en cours ({m}) : aucun marché attribué pour l'instant.",
                            "it": "Mese in corso ({m}): finora nessun appalto aggiudicato.",
                            "en": "Current month ({m}): no contracts awarded so far."}
-# the notes that change how a list or a total reads, short (what a CPV code or a unit rate is: the about page)
+# the notes that change how a list or a total reads, short (what a CPV code or a unit rate is: the about page); said by
+# the one who picked or counted (natural-voice pass, 23.10.2026)
 PROSE["matched_note"] = {
-    "de": "Offene Ausschreibungen mit gleichem oder verwandtem CPV-Code wie die bisherigen Aufträge.",
-    "fr": "Appels d'offres en cours au code CPV identique ou proche de celui des marchés déjà remportés.",
-    "it": "Bandi aperti con un codice CPV uguale o affine a quello degli appalti già vinti.",
-    "en": "Open tenders with the same or a related CPV code as the contracts already won.",
+    "de": "Wir wählen sie nach dem CPV-Code der bisherigen Aufträge aus: derselbe oder ein ähnlicher.",
+    "fr": "Nous les choisissons d'après le code CPV des marchés déjà remportés : le même ou un code proche.",
+    "it": "Li scegliamo in base al codice CPV degli appalti già vinti: lo stesso o uno simile.",
+    "en": "We pick them by the CPV code of the contracts already won: the same one or a related one.",
 }
 IDX["similar_note"] = {"de": "Branche «{sector}», Kanton {name}: die ähnlichsten zuerst.",
                        "fr": "Secteur « {sector} », canton {of} : les plus proches d'abord.",
                        "it": "Settore «{sector}», Canton {name}: prima i più simili.",
                        "en": "“{sector}” sector, canton of {name}: closest first."}
-IDX["joint_note"] = {"de": "Nicht in den Summen: die {k} Aufträge an mehrere Firmen.",
-                     "fr": "Les totaux n'incluent pas les {k} marchés attribués à plusieurs entreprises.",
-                     "it": "I totali non comprendono i {k} appalti aggiudicati a più aziende.",
+IDX["joint_note"] = {"de": "Die {k} Aufträge an mehrere Firmen rechnen wir nicht in die Summen ein.",
+                     "fr": "Nous ne comptons pas dans les totaux les {k} marchés attribués à plusieurs entreprises.",
+                     "it": "Nei totali non contiamo i {k} appalti andati a più aziende.",
                      "en": "Totals exclude the {k} contracts awarded to several companies."}
-IDX["joint_note_one"] = {"de": "Nicht in den Summen: der Auftrag an mehrere Firmen.",
-                         "fr": "Les totaux n'incluent pas le marché attribué à plusieurs entreprises.",
-                         "it": "I totali non comprendono l'appalto aggiudicato a più aziende.",
+IDX["joint_note_one"] = {"de": "Den Auftrag an mehrere Firmen rechnen wir nicht in die Summen ein.",
+                         "fr": "Nous ne comptons pas dans les totaux le marché attribué à plusieurs entreprises.",
+                         "it": "Nei totali non contiamo l'appalto andato a più aziende.",
                          "en": "Totals exclude the contract awarded to several companies."}
-IDX["rates_note"] = {"de": "Nicht in den Summen und im Median: {k} vermutliche Einheitspreise.",
-                     "fr": "Les totaux et la médiane n'incluent pas {k} prix unitaires probables.",
-                     "it": "I totali e la mediana non comprendono {k} probabili prezzi unitari.",
+IDX["rates_note"] = {"de": "{k} vermutliche Einheitspreise rechnen wir weder in die Summen noch in den Median ein.",
+                     "fr": "Nous ne comptons pas {k} prix probablement unitaires dans les totaux ni dans la médiane.",
+                     "it": "Nei totali e nella mediana non contiamo {k} probabili prezzi unitari.",
                      "en": "Totals and the median exclude {k} probable unit rates."}
-IDX["rates_note_one"] = {"de": "Nicht in den Summen und im Median: ein vermutlicher Einheitspreis.",
-                         "fr": "Les totaux et la médiane n'incluent pas un prix unitaire probable.",
-                         "it": "I totali e la mediana non comprendono un probabile prezzo unitario.",
+IDX["rates_note_one"] = {"de": "Einen vermutlichen Einheitspreis rechnen wir weder in die Summen noch in den Median ein.",
+                         "fr": "Nous ne comptons pas un prix probablement unitaire dans les totaux ni dans la médiane.",
+                         "it": "Nei totali e nella mediana non contiamo un probabile prezzo unitario.",
                          "en": "Totals and the median exclude one probable unit rate."}
 # the search page's directories, behind a 'more': its summary says what opens
 META["search_dirs"] = {"de": "Verzeichnisse von A bis Z", "fr": "Répertoires de A à Z", "it": "Elenchi dalla A alla Z",
                        "en": "Directories from A to Z"}
 META["search_lead"] = {
-    "de": "Firmen, Auftraggeber, Ausschreibungen, Branchen und Kantone. «Reinigung» findet auch «nettoyage».",
-    "fr": "Entreprises, acheteurs publics, appels d'offres, secteurs et cantons. « nettoyage » trouve aussi « Reinigung ».",
-    "it": "Aziende, enti pubblici, bandi, settori e cantoni. «pulizia» trova anche «Reinigung».",
-    "en": "Companies, public buyers, tenders, sectors and cantons. “cleaning” also finds “Reinigung”.",
+    "de": "Firmen, Auftraggeber, Ausschreibungen, Branchen und Kantone: Mit «Reinigung» finden Sie auch «nettoyage».",
+    "fr": "Entreprises, acheteurs publics, appels d'offres, secteurs et cantons : avec « nettoyage », vous trouvez aussi "
+          "« Reinigung ».",
+    "it": "Aziende, enti pubblici, bandi, settori e cantoni: se scrivi «pulizia», trovi anche «Reinigung».",
+    "en": "Companies, public buyers, tenders, sectors and cantons: type “cleaning” and you also find “Reinigung”.",
 }
-# the e-mail service: one line and a link over the form, two short lines of consent under the button
+# the e-mail service: one line and a link over the form, two short lines of consent under the button. The owner's
+# words for the Italian (23.10.2026): «Scegli cantoni e settori: ti mandiamo i nuovi bandi via e-mail.»
 META["abo_lead"] = {
-    "de": "Neue Ausschreibungen aus Ihren Kantonen und Branchen per E-Mail – gratis, ohne Konto.",
-    "fr": "Les nouveaux appels d'offres de vos cantons et secteurs par e-mail – gratuitement, sans compte.",
-    "it": "I nuovi bandi dei cantoni e dei settori scelti, via e-mail – gratis, senza account.",
-    "en": "New tenders from your cantons and sectors by email – free, no account needed.",
+    "de": "Wählen Sie Kantone und Branchen: Wir schicken Ihnen die neuen Ausschreibungen per E-Mail. Gratis und ohne "
+          "Konto.",
+    "fr": "Choisissez vos cantons et vos secteurs : nous vous envoyons les nouveaux appels d'offres par e-mail. C'est "
+          "gratuit, sans compte.",
+    "it": "Scegli cantoni e settori: ti mandiamo i nuovi bandi via e-mail. È gratis e non serve registrarsi.",
+    "en": "Choose your cantons and sectors, and we’ll email you the new tenders. Free, no account needed.",
 }
 META["abo_form_consent"] = {
-    "de": "Zuerst kommt eine E-Mail mit einem Bestätigungslink. Jede E-Mail enthält einen Abmeldelink. Versand über Brevo (EU).",
-    "fr": "Vous recevrez d'abord un e-mail avec un lien de confirmation. Chaque e-mail contient un lien de désabonnement. "
-          "Envoi par Brevo (UE).",
-    "it": "Prima arriva un'e-mail con un link di conferma. Ogni e-mail contiene il link per cancellarsi. Invio tramite Brevo (UE).",
-    "en": "First you get an email with a confirmation link. Every email has an unsubscribe link. Sent via Brevo (EU).",
+    "de": "Zuerst schicken wir Ihnen eine E-Mail mit einem Bestätigungslink. Jede E-Mail enthält einen Link zum Abmelden. "
+          "Der Versand läuft über Brevo (EU).",
+    "fr": "Nous vous envoyons d'abord un e-mail avec un lien de confirmation. Chaque e-mail contient un lien pour vous "
+          "désabonner. L'envoi passe par Brevo (UE).",
+    "it": "Prima ti mandiamo un'e-mail con un link di conferma. In ogni e-mail trovi il link per annullare l'iscrizione. "
+          "L'invio passa da Brevo (UE).",
+    "en": "First we send you an email with a confirmation link. Every email has an unsubscribe link. We send through "
+          "Brevo (EU).",
 }
 META["abo_rss_h2"] = {"de": "RSS-Feeds (ohne Anmeldung)", "fr": "Flux RSS (sans inscription)",
                       "it": "Feed RSS (senza iscrizione)", "en": "RSS feeds (no sign-up)"}
@@ -4096,25 +3786,27 @@ META["abo_resend"] = {
     "it": "Nessuna e-mail dopo 15 minuti? Controlla lo spam o iscriviti di nuovo.",
     "en": "No email after 15 minutes? Check your spam folder or sign up again.",
 }
-META["abo_ok"] = {"de": "Ihr Abo ist aktiv.", "fr": "Votre abonnement est actif.", "it": "L'iscrizione è attiva.",
+META["abo_ok"] = {"de": "Ihr Abo ist aktiv.", "fr": "Votre abonnement est actif.", "it": "La tua iscrizione è attiva.",
                   "en": "Your subscription is active."}
+# only on a day with matching new tenders, usually in the morning (the sender's facts)
 META["abo_when"] = {
-    "de": "Die E-Mails kommen an Werktagen mit passenden neuen Ausschreibungen, meist am Vormittag.",
-    "fr": "Les e-mails arrivent les jours ouvrables où paraissent de nouveaux appels d'offres correspondants, le plus "
-          "souvent le matin.",
-    "it": "Le e-mail arrivano nei giorni feriali con nuovi bandi adatti, per lo più in mattinata.",
-    "en": "Emails arrive on days with matching new tenders, usually in the morning.",
+    "de": "Wir schreiben Ihnen an Werktagen, an denen passende neue Ausschreibungen erscheinen – meist am Vormittag.",
+    "fr": "Nous vous écrivons les jours ouvrables où paraissent de nouveaux appels d'offres pour vous, en général le "
+          "matin.",
+    "it": "Ti scriviamo nei giorni feriali in cui escono nuovi bandi per te, di solito al mattino.",
+    "en": "We email you on days with new matching tenders, usually in the morning.",
 }
 META["abo_change"] = {
-    "de": "Auswahl ändern: über den Link am Ende einer E-Mail abmelden, dann neu abonnieren.",
-    "fr": "Pour changer de sélection : se désabonner par le lien au bas d'un e-mail, puis s'abonner à nouveau.",
-    "it": "Per cambiare la scelta: cancellarsi con il link in fondo a un'e-mail, poi iscriversi di nuovo.",
+    "de": "Auswahl ändern? Melden Sie sich über den Link am Ende einer E-Mail ab und abonnieren Sie dann neu.",
+    "fr": "Pour changer de sélection, désabonnez-vous avec le lien au bas d'un e-mail, puis abonnez-vous à nouveau.",
+    "it": "Vuoi cambiare cantoni o settori? Annulla l'iscrizione con il link in fondo a un'e-mail, poi iscriviti di "
+          "nuovo.",
     "en": "To change your selection, unsubscribe with the link at the bottom of an email, then subscribe again.",
 }
 META["nf_text"] = {
     "de": "Diese Seite gibt es nicht oder nicht mehr. Abgelaufene Ausschreibungen bleiben {days} Tage online.",
-    "fr": "Cette page n'existe pas ou n'existe plus. Les appels d'offres expirés restent en ligne {days} jours.",
-    "it": "Questa pagina non esiste o non esiste più. I bandi scaduti restano online {days} giorni.",
+    "fr": "Cette page n'existe pas, ou n'existe plus. Les appels d'offres expirés restent en ligne pendant {days} jours.",
+    "it": "Questa pagina non esiste, o non esiste più. I bandi scaduti restano online per {days} giorni.",
     "en": "This page does not exist, or no longer does. Expired tenders stay online for {days} days.",
 }
 # the footer's line on the language of the titles, moved to the about page (its source section already said the first

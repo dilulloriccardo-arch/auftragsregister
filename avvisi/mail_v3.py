@@ -90,7 +90,8 @@ FD = "font-family:Impact,'Arial Narrow',sans-serif"
 # service «Ausschreibungen per E-Mail» / «Appels d’offres par e-mail» / «Bandi via e-mail» / «Tenders by email»;
 # Eingabefrist / délai de remise des offres / termine d'inoltro / submission deadline next to a date;
 # Auftraggeber / acheteur public / ente pubblico / public buyer; Branche / secteur / settore / sector.
-# Italian: controls in the familiar imperative, the rest impersonal.
+# Natural-voice pass (owner, 23.10.2026): Italian «tu» throughout, as on the site («Scadenza» beside a date, the
+# site's label); the service speaks as «we» where it speaks.
 S = {
     "de": {
         "alert": "Ausschreibungen per E-Mail", "since": "Neu seit {d}",
@@ -107,8 +108,8 @@ S = {
                "diese Auswahl abonniert und bestätigt haben: {sel}.",
         "why0": "Sie erhalten diese E-Mail, weil Sie «Ausschreibungen per E-Mail» von auftragsregister.ch gratis "
                 "abonniert und bestätigt haben.",
-        "change": "Auswahl ändern: Melden Sie sich über «Abmelden» ab und abonnieren Sie dann auf der {a}Seite "
-                  "«Ausschreibungen per E-Mail»{z} mit der neuen Auswahl erneut.",
+        "change": "Auswahl ändern? Klicken Sie unten auf «Abmelden» und abonnieren Sie dann die neue Auswahl auf "
+                  "der {a}Seite «Ausschreibungen per E-Mail»{z}.",
         "unsub": "Abmelden", "privacy": "Datenschutz", "imprint": "Impressum",
         "source": "Quelle: simap.ch (amtliche Publikationen von Bund, Kantonen und Gemeinden)",
         "titles": "Titel erscheinen in der Sprache, in der sie publiziert wurden.", "asof": "Aktualisiert am {d}",
@@ -134,8 +135,8 @@ S = {
                "d’offres par e-mail\u202f» d’auftragsregister.ch pour cette sélection\u202f: {sel}.",
         "why0": "Vous recevez cet e-mail parce que vous avez confirmé votre abonnement gratuit à «\u202fAppels "
                 "d’offres par e-mail\u202f» d’auftragsregister.ch.",
-        "change": "Pour modifier votre sélection\u202f: désabonnez-vous par «\u202fSe désabonner\u202f», puis "
-                  "abonnez-vous à nouveau avec la nouvelle sélection sur la {a}page «\u202fAppels d’offres par "
+        "change": "Pour changer de sélection, cliquez sur «\u202fSe désabonner\u202f» ci-dessous, puis "
+                  "réabonnez-vous avec la nouvelle sélection sur la {a}page «\u202fAppels d’offres par "
                   "e-mail\u202f»{z}.",
         "unsub": "Se désabonner", "privacy": "Protection des données", "imprint": "Mentions légales",
         "source": "Source\u202f: simap.ch (publications officielles de la Confédération, des cantons et des communes)",
@@ -153,13 +154,13 @@ S = {
         "urgent": "{u} in scadenza nei prossimi 7 giorni", "next": "Prossima scadenza: {d}",
         "web": "Tutti i nuovi bandi sul sito",
         "more1": "{p} altro nuovo bando sul sito", "moren": "{p} altri nuovi bandi sul sito",
-        "dl": "Termine d’inoltro", "buyer": "Ente pubblico", "corr": "Rettifica", "open": "Apri il bando",
-        "why": "Questa e-mail arriva perché è stata confermata l’iscrizione gratuita a «Bandi via e-mail» di "
+        "dl": "Scadenza", "buyer": "Ente pubblico", "corr": "Rettifica", "open": "Apri il bando",
+        "why": "Ricevi questa e-mail perché hai confermato l’iscrizione gratuita a «Bandi via e-mail» di "
                "auftragsregister.ch per questa scelta: {sel}.",
-        "why0": "Questa e-mail arriva perché è stata confermata l’iscrizione gratuita a «Bandi via e-mail» di "
+        "why0": "Ricevi questa e-mail perché hai confermato l’iscrizione gratuita a «Bandi via e-mail» di "
                 "auftragsregister.ch.",
-        "change": "Per cambiare la scelta: annullare l’iscrizione con «Annulla l’iscrizione» e iscriversi di nuovo "
-                  "con la nuova scelta nella {a}pagina «Bandi via e-mail»{z}.",
+        "change": "Vuoi cambiare la scelta? Clicca «Annulla l’iscrizione» qui sotto, poi iscriviti di nuovo con la "
+                  "nuova scelta nella {a}pagina «Bandi via e-mail»{z}.",
         "unsub": "Annulla l’iscrizione", "privacy": "Protezione dei dati", "imprint": "Note legali",
         "source": "Fonte: simap.ch (pubblicazioni ufficiali della Confederazione, dei Cantoni e dei Comuni)",
         "titles": "I titoli compaiono nella lingua in cui sono stati pubblicati.", "asof": "Aggiornato al {d}",
@@ -181,8 +182,8 @@ S = {
                "from auftragsregister.ch for this selection: {sel}.",
         "why0": "You are receiving this email because you confirmed your free subscription to Tenders by email "
                 "from auftragsregister.ch.",
-        "change": "To change your selection, unsubscribe with “Unsubscribe” below and subscribe again with the "
-                  "new selection on the {a}Tenders by email page{z}.",
+        "change": "To change your selection, click “Unsubscribe” below, then subscribe again with the new "
+                  "selection on the {a}Tenders by email page{z}.",
         "unsub": "Unsubscribe", "privacy": "Privacy", "imprint": "Legal notice",
         "source": "Source: simap.ch (official publications of the Confederation, cantons and communes)",
         "titles": "Titles are shown in the language in which they were published.", "asof": "Updated {d}",
