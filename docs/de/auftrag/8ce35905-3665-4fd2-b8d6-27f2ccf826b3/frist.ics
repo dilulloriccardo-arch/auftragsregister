@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ce35905-3665-4fd2-b8d6-27f2ccf826b3-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261102T100000Z
+SUMMARY:Eingabefrist: Bau Werkleitungen und Strassenbau QP Bauertacher\, St
+ äfa
+DESCRIPTION:Auftraggeber: Gemeinde Stäfa\, Tiefbau\nEingabefrist: 02.11.20
+ 26\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8ce35
+ 905-3665-4fd2-b8d6-27f2ccf826b3/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/8ce35905-3665-4fd2-b8d6-27f2ccf826b3
+URL:https://auftragsregister.ch/de/auftrag/8ce35905-3665-4fd2-b8d6-27f2ccf8
+ 26b3/
+LOCATION:Stäfa
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bau Werkleitungen und Strassenbau QP Bauertacher\
+ , Stäfa
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

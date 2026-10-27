@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1f14fd3-7aee-4aae-8d83-09d18be811d7-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Scadenza: Rückbau Volta Nord Baufeld 4\, Sanierung Hotspots Öl\, 
+ BKP 113 Sanierung Altlasten (inkl. Entsorgung)
+DESCRIPTION:Ente pubblico: Bau- und Verkehrsdepartement des Kantons Basel-S
+ tadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nScade
+ nza: 17.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/e1f14fd3-7aee-4aae-8d83-09d18be811d7/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/e1f14fd3-7aee-4aae-8d83-09d18be811d7
+URL:https://auftragsregister.ch/it/auftrag/e1f14fd3-7aee-4aae-8d83-09d18be8
+ 11d7/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rückbau Volta Nord Baufeld 4\, Sanierung Hotspots Ö
+ l\, BKP 113 Sanierung Altlasten (inkl. Entsorgung)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

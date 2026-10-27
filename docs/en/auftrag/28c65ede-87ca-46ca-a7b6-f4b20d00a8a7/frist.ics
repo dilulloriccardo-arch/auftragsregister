@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28c65ede-87ca-46ca-a7b6-f4b20d00a8a7-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Submission deadline: Microsoft Power Apps and Power Automate Develo
+ pment and Support Services
+DESCRIPTION:Public buyer: Dienst für Informatikplanung\nSubmission deadlin
+ e: 27 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/28c65ede-87ca-46ca-a7b6-f4b20d00a8a7/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/28c65ede-87ca-46ca-a7b6-f4b20d00a8a7
+URL:https://auftragsregister.ch/en/auftrag/28c65ede-87ca-46ca-a7b6-f4b20d00
+ a8a7/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Microsoft Power Apps and Power Automate De
+ velopment and Support Services
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

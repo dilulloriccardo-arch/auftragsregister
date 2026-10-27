@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ad040c4-97ec-4b6e-86fe-25f4e1c4436d-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Eingabefrist: Herbstflor für die Friedhöfe am Hörnli und Wolfgot
+ tesacker 2028-2032
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 23.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/1ad040c4-97ec-4b6e-86fe-25f4e1c4436d/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/1ad040c4-97ec-4b6e-86fe-25f4e1c4436d
+URL:https://auftragsregister.ch/de/auftrag/1ad040c4-97ec-4b6e-86fe-25f4e1c4
+ 436d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Herbstflor für die Friedhöfe am Hörnli und Wol
+ fgottesacker 2028-2032
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

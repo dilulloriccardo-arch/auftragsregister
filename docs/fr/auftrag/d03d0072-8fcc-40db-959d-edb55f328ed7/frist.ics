@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d03d0072-8fcc-40db-959d-edb55f328ed7-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261119T103000Z
+SUMMARY:Délai de remise : Erneuerung Gas- und Wasserleitung Alte Landstr
+ asse\, Oberrieden
+DESCRIPTION:Acheteur public : Gemeinde Oberrieden\, Abteilung Tiefbau und
+  Umwelt\nDélai de remise : 19.11.2026\, 11 h 30\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/d03d0072-8fcc-40db-959d-edb55f
+ 328ed7/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /d03d0072-8fcc-40db-959d-edb55f328ed7
+URL:https://auftragsregister.ch/fr/auftrag/d03d0072-8fcc-40db-959d-edb55f32
+ 8ed7/
+LOCATION:Oberrieden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erneuerung Gas- und Wasserleitung Alte Lan
+ dstrasse\, Oberrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

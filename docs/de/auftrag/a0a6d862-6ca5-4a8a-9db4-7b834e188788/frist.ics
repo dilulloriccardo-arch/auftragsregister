@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0a6d862-6ca5-4a8a-9db4-7b834e188788-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261130T110000Z
+SUMMARY:Eingabefrist: MP 2026.03.839 - Acquisition d'une solution de géolo
+ calisation indoor/outdoor
+DESCRIPTION:Auftraggeber: Transports publics de la région lausannoise sa\n
+ Eingabefrist: 30.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/a0a6d862-6ca5-4a8a-9db4-7b834e188788/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/a0a6d862-6ca5-4a8a-9db4-7b834e1
+ 88788
+URL:https://auftragsregister.ch/de/auftrag/a0a6d862-6ca5-4a8a-9db4-7b834e18
+ 8788/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP 2026.03.839 - Acquisition d'une solution de g
+ éolocalisation indoor/outdoor
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

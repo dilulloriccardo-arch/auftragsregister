@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:59276d79-daa9-49ce-b416-b5352ca1d6f6-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Submission deadline: USZ Campus MITTE 1|2 / BKP 277.23 Systemwände
+  IPS\, IMC (OV)
+DESCRIPTION:Public buyer: Universitätsspital Zürich\nSubmission deadline:
+  23 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/59276d79-daa9-49ce-b416-b5352ca1d6f6/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/59276d79-daa9-49ce-b416-b5352ca1d6f6
+URL:https://auftragsregister.ch/en/auftrag/59276d79-daa9-49ce-b416-b5352ca1
+ d6f6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: USZ Campus MITTE 1|2 / BKP 277.23 Systemw
+ ände IPS\, IMC (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

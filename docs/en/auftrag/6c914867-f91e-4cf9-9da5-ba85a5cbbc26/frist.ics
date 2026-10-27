@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c914867-f91e-4cf9-9da5-ba85a5cbbc26-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Submission deadline: Schulhaus Kalktarren\, Sanierung Schulanlage: 
+ BKP 122.3 Schulraumprovisorium
+DESCRIPTION:Public buyer: Stadt Schlieren\, Bereich Liegenschaften\nSubmiss
+ ion deadline: 16 Nov 2026\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/6c914867-f91e-4cf9-9da5-ba85a5cbbc26/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/6c914867-f91e-4cf9-9da5-ba85a
+ 5cbbc26
+URL:https://auftragsregister.ch/en/auftrag/6c914867-f91e-4cf9-9da5-ba85a5cb
+ bc26/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schulhaus Kalktarren\, Sanierung Schulanla
+ ge: BKP 122.3 Schulraumprovisorium
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

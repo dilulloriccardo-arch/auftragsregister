@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cd1a006c-e842-4e70-8042-b2f02c3344e9-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T100000Z
+SUMMARY:Submission deadline: Contrat d'assurance d'indemnités journalière
+ s en cas de maladie - Comune di Balerna
+DESCRIPTION:Public buyer: Comune di Balerna\nSubmission deadline: 19 Nov 
+ 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/cd1a
+ 006c-e842-4e70-8042-b2f02c3344e9/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/cd1a006c-e842-4e70-8042-b2f02c3344e9
+URL:https://auftragsregister.ch/en/auftrag/cd1a006c-e842-4e70-8042-b2f02c33
+ 44e9/
+LOCATION:Balerna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Contrat d'assurance d'indemnités journali
+ ères en cas de maladie - Comune di Balerna
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

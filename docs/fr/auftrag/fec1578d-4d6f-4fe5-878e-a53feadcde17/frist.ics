@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fec1578d-4d6f-4fe5-878e-a53feadcde17-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261028T220000Z
+SUMMARY:Délai de remise : Stadt Chur\, Rahmenvertrag AV-Technik\, Audio-
+ Video Systemintegrator
+DESCRIPTION:Acheteur public : Stadt Chur\, Informatik\nDélai de remise
+  : 28.10.2026\, 23 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/fec1578d-4d6f-4fe5-878e-a53feadcde17/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/fec1578d-4d6f-4fe5-878e-a5
+ 3feadcde17
+URL:https://auftragsregister.ch/fr/auftrag/fec1578d-4d6f-4fe5-878e-a53feadc
+ de17/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Stadt Chur\, Rahmenvertrag AV-Technik\, Au
+ dio-Video Systemintegrator
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

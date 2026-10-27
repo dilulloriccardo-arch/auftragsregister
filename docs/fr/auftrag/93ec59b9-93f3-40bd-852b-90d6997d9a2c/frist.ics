@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:93ec59b9-93f3-40bd-852b-90d6997d9a2c-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261102T100000Z
+SUMMARY:Délai de remise : Rheinau\, Neubau Bushaltestellen Unterstadt & 
+ Klosterplatz
+DESCRIPTION:Acheteur public : Gemeinde Rheinau (Ingesa AG)\nDélai de rem
+ ise : 02.11.2026\, 11 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/93ec59b9-93f3-40bd-852b-90d6997d9a2c/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/93ec59b9-93f3-40bd-852b
+ -90d6997d9a2c
+URL:https://auftragsregister.ch/fr/auftrag/93ec59b9-93f3-40bd-852b-90d6997d
+ 9a2c/
+LOCATION:Rheinau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rheinau\, Neubau Bushaltestellen Unterstad
+ t & Klosterplatz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

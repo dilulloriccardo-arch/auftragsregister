@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7297b6f8-3651-46f7-bf99-cc824ea3f6e4-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Submission deadline: Schulhaus Langwiesen Erweiterung und Sanierung
+ \; BKP 214 Montagebau in Holz
+DESCRIPTION:Public buyer: Amt für Städtebau\nSubmission deadline: 4 Nov
+  2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/72
+ 97b6f8-3651-46f7-bf99-cc824ea3f6e4/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/7297b6f8-3651-46f7-bf99-cc824ea3f6e4
+URL:https://auftragsregister.ch/en/auftrag/7297b6f8-3651-46f7-bf99-cc824ea3
+ f6e4/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schulhaus Langwiesen Erweiterung und Sanie
+ rung\; BKP 214 Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

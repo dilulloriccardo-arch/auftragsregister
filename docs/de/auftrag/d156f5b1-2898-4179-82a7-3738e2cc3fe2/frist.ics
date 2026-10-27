@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d156f5b1-2898-4179-82a7-3738e2cc3fe2-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T150000Z
+SUMMARY:Eingabefrist: Concours 288 Licences software Mobile Iron
+DESCRIPTION:Auftraggeber: Centro sistemi informativi\nEingabefrist: 10.11.2
+ 026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d156
+ f5b1-2898-4179-82a7-3738e2cc3fe2/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/d156f5b1-2898-4179-82a7-3738e2cc3fe2
+URL:https://auftragsregister.ch/de/auftrag/d156f5b1-2898-4179-82a7-3738e2cc
+ 3fe2/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Concours 288 Licences software Mobile Iron
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

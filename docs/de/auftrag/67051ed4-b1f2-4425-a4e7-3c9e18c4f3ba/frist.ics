@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:67051ed4-b1f2-4425-a4e7-3c9e18c4f3ba-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T090000Z
+SUMMARY:Eingabefrist: Hittnau\, Ortsdurchfahrt Pfäffiker-/ Tösstalstrasse
+ \, Ingenieurdienstleistungen SIA-Phase 33-53\, GM/CS
+DESCRIPTION:Auftraggeber: Baudirektion Kanton Zürich\, Tiefbauamt\, Abt. P
+ rojektieren und Realisieren\nEingabefrist: 13.11.2026\, 10.00 Uhr\nIm Reg
+ ister: https://auftragsregister.ch/de/auftrag/67051ed4-b1f2-4425-a4e7-3c9e
+ 18c4f3ba/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/67
+ 051ed4-b1f2-4425-a4e7-3c9e18c4f3ba
+URL:https://auftragsregister.ch/de/auftrag/67051ed4-b1f2-4425-a4e7-3c9e18c4
+ f3ba/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Hittnau\, Ortsdurchfahrt Pfäffiker-/ Tösstalstr
+ asse\, Ingenieurdienstleistungen SIA-Phase 33-53\, GM/CS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

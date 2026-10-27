@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0a6d862-6ca5-4a8a-9db4-7b834e188788-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261130T110000Z
+SUMMARY:Scadenza: MP 2026.03.839 - Acquisition d'une solution de géolocali
+ sation indoor/outdoor
+DESCRIPTION:Ente pubblico: Transports publics de la région lausannoise sa\
+ nScadenza: 30.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/a0a6d862-6ca5-4a8a-9db4-7b834e188788/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/a0a6d862-6ca5-4a8a-9db4-7b834e18878
+ 8
+URL:https://auftragsregister.ch/it/auftrag/a0a6d862-6ca5-4a8a-9db4-7b834e18
+ 8788/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP 2026.03.839 - Acquisition d'une solution de géolo
+ calisation indoor/outdoor
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

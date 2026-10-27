@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2bfde0b-4478-44be-98b9-298cb49abdbb-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261105T225900Z
+SUMMARY:Eingabefrist: Optimierung der EDM Landschaft
+DESCRIPTION:Auftraggeber: AEW\nEingabefrist: 05.11.2026\, 23.59 Uhr\nIm Re
+ gister: https://auftragsregister.ch/de/auftrag/d2bfde0b-4478-44be-98b9-298
+ cb49abdbb/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/d
+ 2bfde0b-4478-44be-98b9-298cb49abdbb
+URL:https://auftragsregister.ch/de/auftrag/d2bfde0b-4478-44be-98b9-298cb49a
+ bdbb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Optimierung der EDM Landschaft
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

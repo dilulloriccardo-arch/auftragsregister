@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b801988-390a-4f80-a8e4-abbb89d4e7af-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20270129T150000Z
+SUMMARY:Submission deadline: Rail maintenance vehicle 20xx crane module
+DESCRIPTION:Public buyer: Regionalverkehr Bern-Solothurn AG\nSubmission dea
+ dline: 29 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch
+ /en/auftrag/4b801988-390a-4f80-a8e4-abbb89d4e7af/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/4b801988-390a-4f80-a8e4-abbb89d4e7af
+URL:https://auftragsregister.ch/en/auftrag/4b801988-390a-4f80-a8e4-abbb89d4
+ e7af/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rail maintenance vehicle 20xx crane module
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

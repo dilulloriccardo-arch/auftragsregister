@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa68f140-270c-4d1c-b9c5-6c00699b8007-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261103T150000Z
+SUMMARY:Scadenza: Restauration parascolaire (lot 1) et préscolaire (lot 2)
+DESCRIPTION:Ente pubblico: Commune d'Ecublens - Service de la cohésion soc
+ iale et du logement\nScadenza: 03.11.2026\, 16:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/fa68f140-270c-4d1c-b9c5-6c00699b8007/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/fa68f140-270c-4
+ d1c-b9c5-6c00699b8007
+URL:https://auftragsregister.ch/it/auftrag/fa68f140-270c-4d1c-b9c5-6c00699b
+ 8007/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Restauration parascolaire (lot 1) et préscolaire (lo
+ t 2)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

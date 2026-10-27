@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7272be9d-cc32-4133-9b33-158f488fdf28-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261123T090000Z
+SUMMARY:Scadenza: Cabines de lavage et de désinfection
+DESCRIPTION:Ente pubblico: CHUV - centrale d'achats et d'ingénierie biomé
+ dicale (CAIB)\nScadenza: 23.11.2026\, 10:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/7272be9d-cc32-4133-9b33-158f488fdf28/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/7272be9d-cc32-4133-9b
+ 33-158f488fdf28
+URL:https://auftragsregister.ch/it/auftrag/7272be9d-cc32-4133-9b33-158f488f
+ df28/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Cabines de lavage et de désinfection
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

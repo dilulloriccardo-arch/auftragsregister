@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1bb83e69-8075-439c-a62e-e5a0f33c36fc-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T140000Z
+SUMMARY:Délai de remise : EMS Castel Notre-Dame Martigny - CFC 273.1 Arm
+ oires murales - Chambres
+DESCRIPTION:Acheteur public : Fondation Castel Notre-Dame (quartal)\nDél
+ ai de remise : 16.11.2026\, 15 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/1bb83e69-8075-439c-a62e-e5a0f33c36fc/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/1bb83e69-8075-
+ 439c-a62e-e5a0f33c36fc
+URL:https://auftragsregister.ch/fr/auftrag/1bb83e69-8075-439c-a62e-e5a0f33c
+ 36fc/
+LOCATION:Martigny
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EMS Castel Notre-Dame Martigny - CFC 273.1
+  Armoires murales - Chambres
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

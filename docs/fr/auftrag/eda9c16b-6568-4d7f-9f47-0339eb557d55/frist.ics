@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eda9c16b-6568-4d7f-9f47-0339eb557d55-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261123T090000Z
+SUMMARY:Délai de remise : Réfection superstructure voie courante Martig
+ ny – Martigny Bourg [Km1+059 au Km2+806] sur 1694m Pont du Simplon [Km0+
+ 599 au Km0+870] sur 270m
+DESCRIPTION:Acheteur public : Achats - TMR SA\nDélai de remise : 23.11
+ .2026\, 10 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/eda9c16b-6568-4d7f-9f47-0339eb557d55/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/eda9c16b-6568-4d7f-9f47-0339eb557d55
+URL:https://auftragsregister.ch/fr/auftrag/eda9c16b-6568-4d7f-9f47-0339eb55
+ 7d55/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Réfection superstructure voie courante Ma
+ rtigny – Martigny Bourg [Km1+059 au Km2+806] sur 1694m Pont du Simplon [
+ Km0+599 au Km0+870] sur 270m
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7d362df2-b123-4b02-8e62-61a9526f0f63-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T153000Z
+SUMMARY:Délai de remise : Projekt Schinzenhof und Gemeindehaus "Erneueru
+ ng der technischen Anlagen\, Brandschutzertüchtigungen und Revitalisierun
+ g der Aussenerschliessung"\, BKP 212 Glasbausteinarbeiten HELIX
+DESCRIPTION:Acheteur public : Gemeinde Horgen\nDélai de remise : 30.11
+ .2026\, 16 h 30\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/7d362df2-b123-4b02-8e62-61a9526f0f63/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/7d362df2-b123-4b02-8e62-61a9526f0f63
+URL:https://auftragsregister.ch/fr/auftrag/7d362df2-b123-4b02-8e62-61a9526f
+ 0f63/
+LOCATION:Horgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projekt Schinzenhof und Gemeindehaus "Erne
+ uerung der technischen Anlagen\, Brandschutzertüchtigungen und Revitalisi
+ erung der Aussenerschliessung"\, BKP 212 Glasbausteinarbeiten HELIX
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

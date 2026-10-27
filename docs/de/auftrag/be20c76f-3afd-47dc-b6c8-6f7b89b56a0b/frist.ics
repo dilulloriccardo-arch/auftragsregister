@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be20c76f-3afd-47dc-b6c8-6f7b89b56a0b-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Eingabefrist: ASSISTANCE AUX PRESTATIONS GÉOMATIQUES Période 2027
+ –2029
+DESCRIPTION:Auftraggeber: Direction de l'information du territoire\nEingabe
+ frist: 16.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/be20c76f-3afd-47dc-b6c8-6f7b89b56a0b/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/be20c76f-3afd-47dc-b6c8-6f7b89b56a0b
+URL:https://auftragsregister.ch/de/auftrag/be20c76f-3afd-47dc-b6c8-6f7b89b5
+ 6a0b/
+LOCATION:Quai du Rhône
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ASSISTANCE AUX PRESTATIONS GÉOMATIQUES Période 
+ 2027–2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

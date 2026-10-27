@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6268ed0f-7a48-4cbb-bf89-193fad0ce9ce-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:3
+DTSTART:20261113T110000Z
+SUMMARY:Eingabefrist: Kantonales Personenregister für GERES-Community
+DESCRIPTION:Auftraggeber: GERES-Community\nEingabefrist: 13.11.2026\, 12.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/6268ed0f-7a48-4
+ cbb-bf89-193fad0ce9ce/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/6268ed0f-7a48-4cbb-bf89-193fad0ce9ce
+URL:https://auftragsregister.ch/de/auftrag/6268ed0f-7a48-4cbb-bf89-193fad0c
+ e9ce/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kantonales Personenregister für GERES-Community
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

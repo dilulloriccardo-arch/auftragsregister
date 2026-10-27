@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:444c5420-3e85-4768-bd8b-4d33fc285f44-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Délai de remise : Kantonsschule Willisau\, Naphthalinsanierung T
+ rakt a\, BKP 359 Laboreinrichtung
+DESCRIPTION:Acheteur public : Kanton Luzern\, Dienststelle Immobilien\nD
+ élai de remise : 17.11.2026\, 12 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/444c5420-3e85-4768-bd8b-4d33fc285f44/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/444c5420-3e
+ 85-4768-bd8b-4d33fc285f44
+URL:https://auftragsregister.ch/fr/auftrag/444c5420-3e85-4768-bd8b-4d33fc28
+ 5f44/
+LOCATION:Willisau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kantonsschule Willisau\, Naphthalinsanieru
+ ng Trakt a\, BKP 359 Laboreinrichtung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

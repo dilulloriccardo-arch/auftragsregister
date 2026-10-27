@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32a07903-329a-48fb-8434-e78b1a24e843-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Submission deadline: MP-220041\, N15-08/10 Instandsetzung BSA\, Los
+  31 TU Beschichtungs- und Malerarbeiten
+DESCRIPTION:Public buyer: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nSubmission deadline: 24 Nov 2026\, 23:59\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/32a07903-329a-48fb-8434-e78b1a24e843/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/32a07903-329a-48fb-
+ 8434-e78b1a24e843
+URL:https://auftragsregister.ch/en/auftrag/32a07903-329a-48fb-8434-e78b1a24
+ e843/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-220041\, N15-08/10 Instandsetzung BSA\,
+  Los 31 TU Beschichtungs- und Malerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:008cda3e-e842-4e9e-b02c-0b458ec1e1fc-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Eingabefrist: Acquisition d'un porte-outils diesel
+DESCRIPTION:Auftraggeber: Ville de Delémont (Hymexia Sàrl)\nEingabefrist:
+  13.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/008cda3e-e842-4e9e-b02c-0b458ec1e1fc/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/008cda3e-e842-4e9e-b02c-0b458ec1e1fc
+URL:https://auftragsregister.ch/de/auftrag/008cda3e-e842-4e9e-b02c-0b458ec1
+ e1fc/
+LOCATION:Delémont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Acquisition d'un porte-outils diesel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

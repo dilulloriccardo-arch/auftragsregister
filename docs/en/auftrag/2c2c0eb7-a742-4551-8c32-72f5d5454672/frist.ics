@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2c2c0eb7-a742-4551-8c32-72f5d5454672-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Submission deadline: Incubateur et compteur de colonies en temps r
+ éel
+DESCRIPTION:Public buyer: Services industriels de Genève (SIG) - Direction
+  Achats\nSubmission deadline: 8 Dec 2026\, 12:00\nIn the register: https
+ ://auftragsregister.ch/en/auftrag/2c2c0eb7-a742-4551-8c32-72f5d5454672/\nO
+ fficial publication: https://www.simap.ch/en/project-detail/2c2c0eb7-a742-
+ 4551-8c32-72f5d5454672
+URL:https://auftragsregister.ch/en/auftrag/2c2c0eb7-a742-4551-8c32-72f5d545
+ 4672/
+LOCATION:Le Lignon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Incubateur et compteur de colonies en temp
+ s réel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

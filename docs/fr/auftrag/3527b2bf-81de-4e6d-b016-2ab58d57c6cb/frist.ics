@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3527b2bf-81de-4e6d-b016-2ab58d57c6cb-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261116T153000Z
+SUMMARY:Délai de remise : UNI - Bastions Central _ CFC233.00 - Lustrerie
+  sur mesure
+DESCRIPTION:Acheteur public : Office Cantonale des Bâtiments (OCBA)\nDé
+ lai de remise : 16.11.2026\, 16 h 30\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/3527b2bf-81de-4e6d-b016-2ab58d57c6cb/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/3527b2bf-81de
+ -4e6d-b016-2ab58d57c6cb
+URL:https://auftragsregister.ch/fr/auftrag/3527b2bf-81de-4e6d-b016-2ab58d57
+ c6cb/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : UNI - Bastions Central _ CFC233.00 - Lustr
+ erie sur mesure
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

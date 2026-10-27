@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef4e2713-cf8f-47d4-b160-07765e84b8b5-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Submission deadline: Collège de la Plaine - Ouverte - 273.0 Portes
+  bois intérieures
+DESCRIPTION:Public buyer: Commune de Chavannes-près-Renens - Service Urban
+ isme-Bâtiments-Mobilité\nSubmission deadline: 8 Dec 2026\, 12:00\nIn t
+ he register: https://auftragsregister.ch/en/auftrag/ef4e2713-cf8f-47d4-b16
+ 0-07765e84b8b5/\nOfficial publication: https://www.simap.ch/en/project-det
+ ail/ef4e2713-cf8f-47d4-b160-07765e84b8b5
+URL:https://auftragsregister.ch/en/auftrag/ef4e2713-cf8f-47d4-b160-07765e84
+ b8b5/
+LOCATION:Chavannes-près-Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Collège de la Plaine - Ouverte - 273.0 Po
+ rtes bois intérieures
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

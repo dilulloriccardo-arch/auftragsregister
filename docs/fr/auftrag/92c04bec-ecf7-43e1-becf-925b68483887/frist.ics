@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92c04bec-ecf7-43e1-becf-925b68483887-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261202T100000Z
+SUMMARY:Délai de remise : Transports scolaires pour le cercle scolaire S
+ urpierre - Prévondavaux
+DESCRIPTION:Acheteur public : Commune de Surpierre\nDélai de remise : 
+ 02.12.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/92c04bec-ecf7-43e1-becf-925b68483887/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/92c04bec-ecf7-43e1-becf-925b68
+ 483887
+URL:https://auftragsregister.ch/fr/auftrag/92c04bec-ecf7-43e1-becf-925b6848
+ 3887/
+LOCATION:Communes de Surpierre et Prévondavaux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transports scolaires pour le cercle scolai
+ re Surpierre - Prévondavaux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

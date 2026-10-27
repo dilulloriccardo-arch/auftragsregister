@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12f25ad3-594a-4c5a-92cd-2336793eb579-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261120T080000Z
+SUMMARY:Submission deadline: Entsorgungspark Adliswil\; Baumeisterarbeiten 
+ 2. Teil
+DESCRIPTION:Public buyer: Stadt Adliswil Planung Werke\nSubmission deadline
+ : 20 Nov 2026\, 09:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/12f25ad3-594a-4c5a-92cd-2336793eb579/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/12f25ad3-594a-4c5a-92cd-2336793eb579
+URL:https://auftragsregister.ch/en/auftrag/12f25ad3-594a-4c5a-92cd-2336793e
+ b579/
+LOCATION:Adliswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Entsorgungspark Adliswil\; Baumeisterarbei
+ ten 2. Teil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

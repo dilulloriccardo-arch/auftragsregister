@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7dbda8ab-0599-43ab-a354-0639681236a3-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261206T225959Z
+SUMMARY:Submission deadline: Sissach - Chienbergtunnel / Projektverfasser G
+ esamtsanierung SIA Phasen 31 - 53
+DESCRIPTION:Public buyer: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nSubmission deadline: 6 Dec 2026\, 23:59\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/7dbda8ab-0599-43ab-a354-0639681236a3/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/7dbda8ab-0599-43ab-
+ a354-0639681236a3
+URL:https://auftragsregister.ch/en/auftrag/7dbda8ab-0599-43ab-a354-06396812
+ 36a3/
+LOCATION:Sissach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sissach - Chienbergtunnel / Projektverfass
+ er Gesamtsanierung SIA Phasen 31 - 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:259ef6b4-c313-44bd-a06b-7ca708a7ceed-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Submission deadline: CoolCity\, TP0 surveying services for the clie
+ nt/developer
+DESCRIPTION:Public buyer: Elektrizitätswerk der Stadt Zürich (ewz)\nSubmi
+ ssion deadline: 12 Nov 2026\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/259ef6b4-c313-44bd-a06b-7ca708a7ceed/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/259ef6b4-c313-44bd-a06b-7ca
+ 708a7ceed
+URL:https://auftragsregister.ch/en/auftrag/259ef6b4-c313-44bd-a06b-7ca708a7
+ ceed/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: CoolCity\, TP0 surveying services for the 
+ client/developer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

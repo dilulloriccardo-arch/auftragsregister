@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5d3ab28f-730a-4580-9918-68f1e9352e1a-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Submission deadline: Lagerhalle BOEN - Architekt
+DESCRIPTION:Public buyer: BLS AG - Finance & SCM - Strategische Beschaffung
+ \nSubmission deadline: 20 Nov 2026\, 23:59\nIn the register: https://auf
+ tragsregister.ch/en/auftrag/5d3ab28f-730a-4580-9918-68f1e9352e1a/\nOfficia
+ l publication: https://www.simap.ch/en/project-detail/5d3ab28f-730a-4580-9
+ 918-68f1e9352e1a
+URL:https://auftragsregister.ch/en/auftrag/5d3ab28f-730a-4580-9918-68f1e935
+ 2e1a/
+LOCATION:Bönigen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Lagerhalle BOEN - Architekt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea830907-0191-488c-a59e-aa98db1a0d15-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Submission deadline: CE4600008921 - RC 618-B-P & 601-B-P - Lucens &
+  Curtilles
+DESCRIPTION:Public buyer: Direction générale de la mobilité et des route
+ s - Division infrastructures\nSubmission deadline: 20 Nov 2026\, 11:00\n
+ In the register: https://auftragsregister.ch/en/auftrag/ea830907-0191-488c
+ -a59e-aa98db1a0d15/\nOfficial publication: https://www.simap.ch/en/project
+ -detail/ea830907-0191-488c-a59e-aa98db1a0d15
+URL:https://auftragsregister.ch/en/auftrag/ea830907-0191-488c-a59e-aa98db1a
+ 0d15/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: CE4600008921 - RC 618-B-P & 601-B-P - Luce
+ ns & Curtilles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

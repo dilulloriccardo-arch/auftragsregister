@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:33e48b2a-04d3-4017-9178-1c0d54f67a2d-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Submission deadline: Schulhaus Langwiesen Erweiterung und Sanierung
+ \; BKP 25 Sanitäranlagen
+DESCRIPTION:Public buyer: Amt für Städtebau\nSubmission deadline: 4 Nov
+  2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/33
+ e48b2a-04d3-4017-9178-1c0d54f67a2d/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/33e48b2a-04d3-4017-9178-1c0d54f67a2d
+URL:https://auftragsregister.ch/en/auftrag/33e48b2a-04d3-4017-9178-1c0d54f6
+ 7a2d/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schulhaus Langwiesen Erweiterung und Sanie
+ rung\; BKP 25 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

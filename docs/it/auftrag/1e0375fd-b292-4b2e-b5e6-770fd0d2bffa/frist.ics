@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1e0375fd-b292-4b2e-b5e6-770fd0d2bffa-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20270205T220000Z
+SUMMARY:Scadenza: KW Lötschen - Rehab Generatoren
+DESCRIPTION:Ente pubblico: enalpin AG\nScadenza: 05.02.2027\, 23:00\nNel re
+ gistro: https://auftragsregister.ch/it/auftrag/1e0375fd-b292-4b2e-b5e6-770
+ fd0d2bffa/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detai
+ l/1e0375fd-b292-4b2e-b5e6-770fd0d2bffa
+URL:https://auftragsregister.ch/it/auftrag/1e0375fd-b292-4b2e-b5e6-770fd0d2
+ bffa/
+LOCATION:Steg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: KW Lötschen - Rehab Generatoren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

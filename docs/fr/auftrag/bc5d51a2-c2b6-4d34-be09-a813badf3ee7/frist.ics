@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc5d51a2-c2b6-4d34-be09-a813badf3ee7-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Délai de remise : (26043) 704 Mandats de révision des comptes a
+ nnuels et d’audit informatique dans le domaine de l’AC 2027-2031
+DESCRIPTION:Acheteur public : Staatssekretariat für Wirtschaft SECO\nDé
+ lai de remise : 11.11.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/bc5d51a2-c2b6-4d34-be09-a813badf3ee7/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/bc5d51a2-c2b6
+ -4d34-be09-a813badf3ee7
+URL:https://auftragsregister.ch/fr/auftrag/bc5d51a2-c2b6-4d34-be09-a813badf
+ 3ee7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26043) 704 Mandats de révision des compt
+ es annuels et d’audit informatique dans le domaine de l’AC 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

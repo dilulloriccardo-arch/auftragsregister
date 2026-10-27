@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ded54e9-7147-4ceb-8ce1-ada28d3ab37e-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Eingabefrist: UT-NR SN 2027-2028
+DESCRIPTION:Auftraggeber: Ufficio delle commesse pubbliche e della programm
+ azione\nEingabefrist: 16.11.2026\, 11.00 Uhr\nIm Register: https://auftra
+ gsregister.ch/de/auftrag/1ded54e9-7147-4ceb-8ce1-ada28d3ab37e/\nAmtliche P
+ ublikation: https://www.simap.ch/de/project-detail/1ded54e9-7147-4ceb-8ce1
+ -ada28d3ab37e
+URL:https://auftragsregister.ch/de/auftrag/1ded54e9-7147-4ceb-8ce1-ada28d3a
+ b37e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: UT-NR SN 2027-2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

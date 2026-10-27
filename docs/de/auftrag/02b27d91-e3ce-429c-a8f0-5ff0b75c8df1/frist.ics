@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02b27d91-e3ce-429c-a8f0-5ff0b75c8df1-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261029T150000Z
+SUMMARY:Eingabefrist: 13043.10 / 170-01 Spezialtiefbauarbeiten\, Instandset
+ zung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontrolle O
+ berrieden
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Zürich\nEingabefrist: 29.10.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/02b27
+ d91-e3ce-429c-a8f0-5ff0b75c8df1/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/02b27d91-e3ce-429c-a8f0-5ff0b75c8df1
+URL:https://auftragsregister.ch/de/auftrag/02b27d91-e3ce-429c-a8f0-5ff0b75c
+ 8df1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 13043.10 / 170-01 Spezialtiefbauarbeiten\, Instan
+ dsetzung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontrol
+ le Oberrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f9b4dc2-7715-44ba-8534-fad100bf0a26-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261113T225900Z
+SUMMARY:Scadenza: MP-210057\, N03/76\, N13/32 Instandsetzung UEF\, Flums\, 
+ Mels\, Au\, N 13 32 Bau
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Filiale Winterth
+ ur\nScadenza: 13.11.2026\, 23:59\nNel registro: https://auftragsregister.c
+ h/it/auftrag/5f9b4dc2-7715-44ba-8534-fad100bf0a26/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/5f9b4dc2-7715-44ba-8534-fad100bf
+ 0a26
+URL:https://auftragsregister.ch/it/auftrag/5f9b4dc2-7715-44ba-8534-fad100bf
+ 0a26/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-210057\, N03/76\, N13/32 Instandsetzung UEF\, Flum
+ s\, Mels\, Au\, N 13 32 Bau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

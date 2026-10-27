@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:54561109-8072-4ef9-a35f-92d8b450e9d5-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Submission deadline: Fernwärme Flawil\, Wärmezentrale - BKP 241/2
+ 42/244/245 Heizungs- und Lüftungsanlagen
+DESCRIPTION:Public buyer: Technische Betriebe Flawil (TBF)\nSubmission dead
+ line: 13 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/
+ en/auftrag/54561109-8072-4ef9-a35f-92d8b450e9d5/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/54561109-8072-4ef9-a35f-92d8b450e9d5
+URL:https://auftragsregister.ch/en/auftrag/54561109-8072-4ef9-a35f-92d8b450
+ e9d5/
+LOCATION:Flawil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fernwärme Flawil\, Wärmezentrale - BKP 2
+ 41/242/244/245 Heizungs- und Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

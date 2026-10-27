@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72ce1aea-c312-4528-a7b2-56edb820c786-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261112T140000Z
+SUMMARY:Délai de remise : Construction du nouveau complexe hospitalier 2
+ \, phase 1\, SKP 273\, menuiserie – salle de mise en bière (niveau UG02
+ )
+DESCRIPTION:Acheteur public : Universitätsspital Basel\nDélai de remise
+  : 12.11.2026\, 15 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/72ce1aea-c312-4528-a7b2-56edb820c786/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/72ce1aea-c312-4528-a7b2-56
+ edb820c786
+URL:https://auftragsregister.ch/fr/auftrag/72ce1aea-c312-4528-a7b2-56edb820
+ c786/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction du nouveau complexe hospitali
+ er 2\, phase 1\, SKP 273\, menuiserie – salle de mise en bière (niveau 
+ UG02)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b609b776-88b9-4bed-8f08-de56133a4474-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261204T140000Z
+SUMMARY:Scadenza: CFF/SBB\, Ligne 410\, km 90.650-90.852\, Pieterlen | Stab
+ ilisation de talus/Böschungsstabilisierung
+DESCRIPTION:Ente pubblico: SBB CFF FFS Achats projets de construction Régi
+ on Ouest\nScadenza: 04.12.2026\, 15:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/b609b776-88b9-4bed-8f08-de56133a4474/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/b609b776-88b9-4bed-8f08-de
+ 56133a4474
+URL:https://auftragsregister.ch/it/auftrag/b609b776-88b9-4bed-8f08-de56133a
+ 4474/
+LOCATION:Pieterlen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: CFF/SBB\, Ligne 410\, km 90.650-90.852\, Pieterlen | 
+ Stabilisation de talus/Böschungsstabilisierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

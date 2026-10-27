@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd3f2a9c-ab0f-4923-b756-a8d8de4153ff-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261104T150000Z
+SUMMARY:Submission deadline: ZGSZ l 45518 l BKP 242 Heizungsanlagen
+DESCRIPTION:Public buyer: Hochbauamt\, Baubereich B\nSubmission deadline: 4
+  Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/bd3f2a9c-ab0f-4923-b756-a8d8de4153ff/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/bd3f2a9c-ab0f-4923-b756-a8d8de4153ff
+URL:https://auftragsregister.ch/en/auftrag/bd3f2a9c-ab0f-4923-b756-a8d8de41
+ 53ff/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ZGSZ l 45518 l BKP 242 Heizungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

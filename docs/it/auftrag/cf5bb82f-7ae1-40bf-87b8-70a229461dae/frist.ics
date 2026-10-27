@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf5bb82f-7ae1-40bf-87b8-70a229461dae-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T100000Z
+SUMMARY:Scadenza: Travaux de charpente et façade bois pour un poste élect
+ rique HT/MT
+DESCRIPTION:Ente pubblico: Gruyère Energie SA\nScadenza: 10.11.2026\, 11:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/cf5bb82f-7ae1-40bf
+ -87b8-70a229461dae/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/cf5bb82f-7ae1-40bf-87b8-70a229461dae
+URL:https://auftragsregister.ch/it/auftrag/cf5bb82f-7ae1-40bf-87b8-70a22946
+ 1dae/
+LOCATION:Bulle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Travaux de charpente et façade bois pour un poste é
+ lectrique HT/MT
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

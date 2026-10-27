@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:713b1a46-ffb1-48f6-864e-f35af3f05894-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Scadenza: EPFL ASB – AO 62 – PRESTATIONS GLOBALES - Blindages a
+ ctifs et passifs - CFC 289
+DESCRIPTION:Ente pubblico: EPFL - Domaine des Achats\nScadenza: 20.11.2026\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/713b1a46-ffb
+ 1-48f6-864e-f35af3f05894/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/713b1a46-ffb1-48f6-864e-f35af3f05894
+URL:https://auftragsregister.ch/it/auftrag/713b1a46-ffb1-48f6-864e-f35af3f0
+ 5894/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EPFL ASB – AO 62 – PRESTATIONS GLOBALES - Blindag
+ es actifs et passifs - CFC 289
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

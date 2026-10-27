@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0a5daf1-2b97-472a-943b-cd5ef3222564-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261117T140000Z
+SUMMARY:Eingabefrist: Schulraumerweiterung Kilchbühl Biel-Benken (Basel-La
+ nd)\, BKP 244 Lufttechnische Anlagen
+DESCRIPTION:Auftraggeber: Gemeindeverwaltung Biel-Benken\nEingabefrist: 17.
+ 11.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ e0a5daf1-2b97-472a-943b-cd5ef3222564/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/e0a5daf1-2b97-472a-943b-cd5ef3222564
+URL:https://auftragsregister.ch/de/auftrag/e0a5daf1-2b97-472a-943b-cd5ef322
+ 2564/
+LOCATION:Biel-Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulraumerweiterung Kilchbühl Biel-Benken (Base
+ l-Land)\, BKP 244 Lufttechnische Anlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6c43ea1-0b21-409f-9f9f-78c9347858ed-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Eingabefrist: Neubau Primaschulanlage und Sporthalle Ferrach\, 8630
+  Rüti ZH - 25 Sanitäranlagen
+DESCRIPTION:Auftraggeber: Gemeinde Rüti ZH\nEingabefrist: 16.11.2026\, 11.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a6c43ea1-0b21
+ -409f-9f9f-78c9347858ed/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/a6c43ea1-0b21-409f-9f9f-78c9347858ed
+URL:https://auftragsregister.ch/de/auftrag/a6c43ea1-0b21-409f-9f9f-78c93478
+ 58ed/
+LOCATION:Rüti
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Primaschulanlage und Sporthalle Ferrach\, 
+ 8630 Rüti ZH - 25 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

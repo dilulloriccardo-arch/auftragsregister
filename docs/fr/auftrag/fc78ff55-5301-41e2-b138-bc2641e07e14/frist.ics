@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fc78ff55-5301-41e2-b138-bc2641e07e14-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T150000Z
+SUMMARY:Délai de remise : GE VII Wartung + Unterhalt FB2 Beleuchtung
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Gebietseinheit VII\nDéla
+ i de remise : 07.12.2026\, 16 h 00\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/fc78ff55-5301-41e2-b138-bc2641e07e14/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/fc78ff55-5301-4
+ 1e2-b138-bc2641e07e14
+URL:https://auftragsregister.ch/fr/auftrag/fc78ff55-5301-41e2-b138-bc2641e0
+ 7e14/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : GE VII Wartung + Unterhalt FB2 Beleuchtung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

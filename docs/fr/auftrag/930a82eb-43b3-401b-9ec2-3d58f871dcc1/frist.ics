@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:930a82eb-43b3-401b-9ec2-3d58f871dcc1-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261028T225959Z
+SUMMARY:Délai de remise : Licences Veeam pour Switch Backup
+DESCRIPTION:Acheteur public : Switch\nDélai de remise : 28.10.2026\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/93
+ 0a82eb-43b3-401b-9ec2-3d58f871dcc1/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/930a82eb-43b3-401b-9ec2-3d58f871dcc1
+URL:https://auftragsregister.ch/fr/auftrag/930a82eb-43b3-401b-9ec2-3d58f871
+ dcc1/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Licences Veeam pour Switch Backup
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

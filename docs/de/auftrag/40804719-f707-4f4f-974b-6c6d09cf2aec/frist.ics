@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40804719-f707-4f4f-974b-6c6d09cf2aec-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:0
+DTSTART:20261104T100000Z
+SUMMARY:Eingabefrist: Rénovation complète des 3 tours Cité-jonction (M37
+ 3TI) mandat d'ingénieur électricien
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 04.11.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/40804719-f707-4f4f-974b-6c6d09cf2aec/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/40804719-f707-4f4f-974b-6c6d09cf
+ 2aec
+URL:https://auftragsregister.ch/de/auftrag/40804719-f707-4f4f-974b-6c6d09cf
+ 2aec/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rénovation complète des 3 tours Cité-jonction 
+ (M373TI) mandat d'ingénieur électricien
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

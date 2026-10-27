@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1762c7f5-cf5c-4958-9008-bb5fff178e27-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:2
+DTSTART:20261218T225900Z
+SUMMARY:Eingabefrist: MP-120093\, N2 Tunnel Belchen Zweite Instandsetzung (
+ BZI) / Los 102 Bau Röhre BAS
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA -Abteilung Strassen
+ infrastruktur-Ost - F3\nEingabefrist: 18.12.2026\, 23.59 Uhr\nIm Register
+ : https://auftragsregister.ch/de/auftrag/1762c7f5-cf5c-4958-9008-bb5fff178
+ e27/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/1762c7f
+ 5-cf5c-4958-9008-bb5fff178e27
+URL:https://auftragsregister.ch/de/auftrag/1762c7f5-cf5c-4958-9008-bb5fff17
+ 8e27/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-120093\, N2 Tunnel Belchen Zweite Instandsetzu
+ ng (BZI) / Los 102 Bau Röhre BAS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

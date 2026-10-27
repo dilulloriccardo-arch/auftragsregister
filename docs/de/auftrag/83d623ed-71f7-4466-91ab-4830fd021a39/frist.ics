@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83d623ed-71f7-4466-91ab-4830fd021a39-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Eingabefrist: Contrat-cadre - Réalisation\, entretien et dépannag
+ e des installations électriques
+DESCRIPTION:Auftraggeber: Hospice général\nEingabefrist: 16.11.2026\, 11.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/83d623ed-71f7
+ -4466-91ab-4830fd021a39/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/83d623ed-71f7-4466-91ab-4830fd021a39
+URL:https://auftragsregister.ch/de/auftrag/83d623ed-71f7-4466-91ab-4830fd02
+ 1a39/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Contrat-cadre - Réalisation\, entretien et dépa
+ nnage des installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:112e1a0c-55fc-4754-bc53-f9c1b2ddea6a-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Délai de remise : Acquisition de licences Microsoft
+DESCRIPTION:Acheteur public : Service cantonal de l'informatique / Kanton
+ ale Dienststelle für Informatik\nDélai de remise : 02.12.2026\, 12 h
+  00\nDans le registre : https://auftragsregister.ch/fr/auftrag/112e1a0
+ c-55fc-4754-bc53-f9c1b2ddea6a/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/112e1a0c-55fc-4754-bc53-f9c1b2ddea6a
+URL:https://auftragsregister.ch/fr/auftrag/112e1a0c-55fc-4754-bc53-f9c1b2dd
+ ea6a/
+LOCATION:Sitten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition de licences Microsoft
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

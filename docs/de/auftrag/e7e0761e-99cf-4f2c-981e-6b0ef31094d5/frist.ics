@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7e0761e-99cf-4f2c-981e-6b0ef31094d5-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Eingabefrist: Kollegium Brig - Sanierung Internat / BKP 283.2 Decke
+ nbekleidungen aus Gips (Südtrakt)
+DESCRIPTION:Auftraggeber: Departement für Finanzen und Energie\, Dienstste
+ lle für Immobilien und Bauliches Erbe\nEingabefrist: 11.11.2026\nIm Regis
+ ter: https://auftragsregister.ch/de/auftrag/e7e0761e-99cf-4f2c-981e-6b0ef3
+ 1094d5/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/e7e0
+ 761e-99cf-4f2c-981e-6b0ef31094d5
+URL:https://auftragsregister.ch/de/auftrag/e7e0761e-99cf-4f2c-981e-6b0ef310
+ 94d5/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kollegium Brig - Sanierung Internat / BKP 283.2 D
+ eckenbekleidungen aus Gips (Südtrakt)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

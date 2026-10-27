@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfcf3b7d-45ac-4533-b65f-69347d016e10-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261103T130000Z
+SUMMARY:Délai de remise : Concorso per l’aggiudicazione dei contratti 
+ di assicurazione indennità giornaliera collettiva in caso di malattia e i
+ nfortuni secondo la LAINF
+DESCRIPTION:Acheteur public : REGIONE TRE VALLI\nDélai de remise : 03.
+ 11.2026\, 14 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/cfcf3b7d-45ac-4533-b65f-69347d016e10/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/cfcf3b7d-45ac-4533-b65f-69347d016e
+ 10
+URL:https://auftragsregister.ch/fr/auftrag/cfcf3b7d-45ac-4533-b65f-69347d01
+ 6e10/
+LOCATION:Biasca
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Concorso per l’aggiudicazione dei contra
+ tti di assicurazione indennità giornaliera collettiva in caso di malattia
+  e infortuni secondo la LAINF
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

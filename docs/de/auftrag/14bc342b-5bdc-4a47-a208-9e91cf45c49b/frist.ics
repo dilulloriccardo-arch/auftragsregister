@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:14bc342b-5bdc-4a47-a208-9e91cf45c49b-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20261030T100000Z
+SUMMARY:Eingabefrist: Travaux de nettoyage\, balayage et viabilité hiverna
+ le hors-circulation du DPC\, et divers travaux d'entretien / maintenance s
+ ur le DPC | 2027-2029
+DESCRIPTION:Auftraggeber: DSM - DER - Service de la maintenance des routes 
+ cantonales (SMRC)\nEingabefrist: 30.10.2026\, 11.00 Uhr\nIm Register: htt
+ ps://auftragsregister.ch/de/auftrag/14bc342b-5bdc-4a47-a208-9e91cf45c49b/\
+ nAmtliche Publikation: https://www.simap.ch/de/project-detail/14bc342b-5bd
+ c-4a47-a208-9e91cf45c49b
+URL:https://auftragsregister.ch/de/auftrag/14bc342b-5bdc-4a47-a208-9e91cf45
+ c49b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Travaux de nettoyage\, balayage et viabilité hiv
+ ernale hors-circulation du DPC\, et divers travaux d'entretien / maintenan
+ ce sur le DPC | 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:578b49c7-2b75-44c2-9b98-a358ba69f972-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Submission deadline: Kopie SKP 244/245 Lüftungs- und Klimaanlagen
+DESCRIPTION:Public buyer: Insel Gruppe AG\nSubmission deadline: 30 Nov 20
+ 26\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/578b49
+ c7-2b75-44c2-9b98-a358ba69f972/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/578b49c7-2b75-44c2-9b98-a358ba69f972
+URL:https://auftragsregister.ch/en/auftrag/578b49c7-2b75-44c2-9b98-a358ba69
+ f972/
+LOCATION:Riggisberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kopie SKP 244/245 Lüftungs- und Klimaanla
+ gen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

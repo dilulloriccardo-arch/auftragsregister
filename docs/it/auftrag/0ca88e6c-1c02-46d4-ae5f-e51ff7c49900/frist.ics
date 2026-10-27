@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ca88e6c-1c02-46d4-ae5f-e51ff7c49900-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:0
+DTSTART:20261029T133000Z
+SUMMARY:Scadenza: Concorso per l’assegnazione del mandato di gestione par
+ ziale di parte del portafoglio assicurativo della Città di Lugano
+DESCRIPTION:Ente pubblico: Città di Lugano - Finanze\nScadenza: 29.10.2026
+ \, 14:30\nNel registro: https://auftragsregister.ch/it/auftrag/0ca88e6c-1c
+ 02-46d4-ae5f-e51ff7c49900/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/0ca88e6c-1c02-46d4-ae5f-e51ff7c49900
+URL:https://auftragsregister.ch/it/auftrag/0ca88e6c-1c02-46d4-ae5f-e51ff7c4
+ 9900/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso per l’assegnazione del mandato di gestione
+  parziale di parte del portafoglio assicurativo della Città di Lugano
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

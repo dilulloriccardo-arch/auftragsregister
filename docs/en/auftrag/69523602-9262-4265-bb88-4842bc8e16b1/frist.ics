@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69523602-9262-4265-bb88-4842bc8e16b1-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Submission deadline: Sanierung Enggisteinstrasse Worb
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Bern\nSubmission deadline:
+  13 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/69523602-9262-4265-bb88-4842bc8e16b1/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/69523602-9262-4265-bb88-4842bc8e16b1
+URL:https://auftragsregister.ch/en/auftrag/69523602-9262-4265-bb88-4842bc8e
+ 16b1/
+LOCATION:Worb
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Enggisteinstrasse Worb
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cbc0a165-0e78-48e2-ae76-fbd2bda2ed04-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:4
+DTSTART:20261222T150000Z
+SUMMARY:Submission deadline: Grimsel 4 Pumped-Storage Power Station\, Lot 1
+  for the reinforcement of the headwater channel and Lot 2 for the underwat
+ er gates
+DESCRIPTION:Public buyer: Kraftwerke Oberhasli AG\nSubmission deadline: 22
+  Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/cbc0a165-0e78-48e2-ae76-fbd2bda2ed04/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/cbc0a165-0e78-48e2-ae76-fbd2bda2ed04
+URL:https://auftragsregister.ch/en/auftrag/cbc0a165-0e78-48e2-ae76-fbd2bda2
+ ed04/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Grimsel 4 Pumped-Storage Power Station\, L
+ ot 1 for the reinforcement of the headwater channel and Lot 2 for the unde
+ rwater gates
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd75e9e7-b3cb-4f3e-9640-375e2dbcb859-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Eingabefrist: ZAA21 l 45405 l BKP 221.4-04 Fenster
+DESCRIPTION:Auftraggeber: Hochbauamt\, Baubereich B\nEingabefrist: 20.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/bd75e
+ 9e7-b3cb-4f3e-9640-375e2dbcb859/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/bd75e9e7-b3cb-4f3e-9640-375e2dbcb859
+URL:https://auftragsregister.ch/de/auftrag/bd75e9e7-b3cb-4f3e-9640-375e2dbc
+ b859/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ZAA21 l 45405 l BKP 221.4-04 Fenster
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

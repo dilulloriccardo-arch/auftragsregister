@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:686d938c-d0fa-4f25-8c8d-eb27b1e03ea5-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20261210T100000Z
+SUMMARY:Eingabefrist: Rénovation/Transformation du CID de Malley / AMEX
+DESCRIPTION:Auftraggeber: Ville de Lausanne - Service de la propreté urbai
+ ne (Architram)\nEingabefrist: 10.12.2026\, 11.00 Uhr\nIm Register: https:
+ //auftragsregister.ch/de/auftrag/686d938c-d0fa-4f25-8c8d-eb27b1e03ea5/\nAm
+ tliche Publikation: https://www.simap.ch/de/project-detail/686d938c-d0fa-4
+ f25-8c8d-eb27b1e03ea5
+URL:https://auftragsregister.ch/de/auftrag/686d938c-d0fa-4f25-8c8d-eb27b1e0
+ 3ea5/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rénovation/Transformation du CID de Malley / AME
+ X
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85365bf4-f616-489a-b6fd-1e9d6000ca37-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Délai de remise : Rénovation du Poste HT-MT de la Foretaille - 
+ Lot 21: Nettoyage phase 1 à 6
+DESCRIPTION:Acheteur public : Services industriels de Genève (SIG) - Dir
+ ection Achats\nDélai de remise : 16.11.2026\, 12 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/85365bf4-f616-489a-b6fd-1e
+ 9d6000ca37/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/85365bf4-f616-489a-b6fd-1e9d6000ca37
+URL:https://auftragsregister.ch/fr/auftrag/85365bf4-f616-489a-b6fd-1e9d6000
+ ca37/
+LOCATION:Bellevue
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation du Poste HT-MT de la Foretaill
+ e - Lot 21: Nettoyage phase 1 à 6
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

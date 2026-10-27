@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44e874d1-0d6b-425c-bdf6-a349931d5162-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Submission deadline: Fourniture de Monographies Imprimées @EPFL
+DESCRIPTION:Public buyer: EPFL - Service des Achats\nSubmission deadline: 9
+  Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/44e874d1-0d6b-425c-bdf6-a349931d5162/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/44e874d1-0d6b-425c-bdf6-a349931d5162
+URL:https://auftragsregister.ch/en/auftrag/44e874d1-0d6b-425c-bdf6-a349931d
+ 5162/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fourniture de Monographies Imprimées @EPF
+ L
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

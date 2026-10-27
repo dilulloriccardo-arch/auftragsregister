@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c24754eb-8848-465f-8602-1302c641029e-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261204T123000Z
+SUMMARY:Délai de remise : Construction d'une nouvelle salle de sport dou
+ ble avec locaux scolaires – Travaux de ferblanterie et de couverture (CF
+ C 222 et 224)
+DESCRIPTION:Acheteur public : Politische Gemeinde Gommiswald\nDélai de r
+ emise : 04.12.2026\, 13 h 30\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/c24754eb-8848-465f-8602-1302c641029e/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/c24754eb-8848-465f-86
+ 02-1302c641029e
+URL:https://auftragsregister.ch/fr/auftrag/c24754eb-8848-465f-8602-1302c641
+ 029e/
+LOCATION:Gommiswald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction d'une nouvelle salle de sport
+  double avec locaux scolaires – Travaux de ferblanterie et de couverture
+  (CFC 222 et 224)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

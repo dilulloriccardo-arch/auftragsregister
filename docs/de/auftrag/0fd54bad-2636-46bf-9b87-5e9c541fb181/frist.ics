@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0fd54bad-2636-46bf-9b87-5e9c541fb181-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Eingabefrist: SRIV Dürnten\, 738 Südumfahrung\, km 0.810 - 2.150\
+ , Kreisel Gartencenter - Kreisel Brüel\, Baumeisterarbeiten
+DESCRIPTION:Auftraggeber: Tiefbauamt\, Abt. Strasseninspektorat\nEingabefri
+ st: 09.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/0fd54bad-2636-46bf-9b87-5e9c541fb181/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/0fd54bad-2636-46bf-9b87-5e9c541fb181
+URL:https://auftragsregister.ch/de/auftrag/0fd54bad-2636-46bf-9b87-5e9c541f
+ b181/
+LOCATION:Dürnten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: SRIV Dürnten\, 738 Südumfahrung\, km 0.810 - 2.
+ 150\, Kreisel Gartencenter - Kreisel Brüel\, Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

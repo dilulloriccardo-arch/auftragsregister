@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b638f1f5-24a8-4c33-85e1-9c85315e1988-frist@auftragsregister.ch
+DTSTAMP:20260813T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Scadenza: NextGen Backup Software 2026
+DESCRIPTION:Ente pubblico: Stadt Zürich\, Organisation und Informatik (OIZ
+ )\nScadenza: 02.11.2026\, 12:00\nNel registro: https://auftragsregister.ch
+ /it/auftrag/b638f1f5-24a8-4c33-85e1-9c85315e1988/\nPubblicazione ufficiale
+ : https://www.simap.ch/it/project-detail/b638f1f5-24a8-4c33-85e1-9c85315e1
+ 988
+URL:https://auftragsregister.ch/it/auftrag/b638f1f5-24a8-4c33-85e1-9c85315e
+ 1988/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: NextGen Backup Software 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

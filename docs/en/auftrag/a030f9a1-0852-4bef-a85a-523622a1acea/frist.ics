@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a030f9a1-0852-4bef-a85a-523622a1acea-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Submission deadline: Serveurs SAP HANA et HCI
+DESCRIPTION:Public buyer: UNIL - Ci - Centrale d'achat informatique\nSubmis
+ sion deadline: 15 Dec 2026\, 12:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/a030f9a1-0852-4bef-a85a-523622a1acea/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/a030f9a1-0852-4bef-a85a-5236
+ 22a1acea
+URL:https://auftragsregister.ch/en/auftrag/a030f9a1-0852-4bef-a85a-523622a1
+ acea/
+LOCATION:lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Serveurs SAP HANA et HCI
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

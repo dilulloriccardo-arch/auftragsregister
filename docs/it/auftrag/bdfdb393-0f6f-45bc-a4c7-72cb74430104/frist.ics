@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bdfdb393-0f6f-45bc-a4c7-72cb74430104-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261117T080000Z
+SUMMARY:Scadenza: Luftbildbefliegungen Orthofoto Kanton Zürich 2027
+DESCRIPTION:Ente pubblico: Amt für Raumentwicklung\nScadenza: 17.11.2026\,
+  09:00\nNel registro: https://auftragsregister.ch/it/auftrag/bdfdb393-0f6f
+ -45bc-a4c7-72cb74430104/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/bdfdb393-0f6f-45bc-a4c7-72cb74430104
+URL:https://auftragsregister.ch/it/auftrag/bdfdb393-0f6f-45bc-a4c7-72cb7443
+ 0104/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Luftbildbefliegungen Orthofoto Kanton Zürich 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

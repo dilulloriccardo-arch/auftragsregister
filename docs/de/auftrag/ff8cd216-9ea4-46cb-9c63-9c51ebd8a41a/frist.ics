@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff8cd216-9ea4-46cb-9c63-9c51ebd8a41a-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261130T140000Z
+SUMMARY:Eingabefrist: Programm Knoten Bern\, AS25 Wankdorf Süd-Ostermundig
+ en - Gärtnerarbeiten
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Infrastruktur -
+  Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\nEingab
+ efrist: 30.11.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/ff8cd216-9ea4-46cb-9c63-9c51ebd8a41a/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/ff8cd216-9ea4-46cb-9c63-9c51ebd8a41a
+URL:https://auftragsregister.ch/de/auftrag/ff8cd216-9ea4-46cb-9c63-9c51ebd8
+ a41a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Programm Knoten Bern\, AS25 Wankdorf Süd-Ostermu
+ ndigen - Gärtnerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

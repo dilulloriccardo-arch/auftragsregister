@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da882530-be62-4bbc-b984-d56684a1ea67-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Délai de remise : Transformation de la STEP d’Oberseetal en st
+ ation de pompage – travaux de génie civil et aménagements extérieurs
+DESCRIPTION:Acheteur public : Gemeindeverband ARA Oberseetal\nDélai de r
+ emise : 02.12.2026\, 23 h 59\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/da882530-be62-4bbc-b984-d56684a1ea67/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/da882530-be62-4bbc-b9
+ 84-d56684a1ea67
+URL:https://auftragsregister.ch/fr/auftrag/da882530-be62-4bbc-b984-d56684a1
+ ea67/
+LOCATION:Inwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transformation de la STEP d’Oberseetal e
+ n station de pompage – travaux de génie civil et aménagements extérie
+ urs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

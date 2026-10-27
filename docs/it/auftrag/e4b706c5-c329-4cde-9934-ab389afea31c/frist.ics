@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4b706c5-c329-4cde-9934-ab389afea31c-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261119T100000Z
+SUMMARY:Scadenza: Einführung von 5 Zusatzleistungen über den Virtuellen S
+ chalter des Kantons Freiburg
+DESCRIPTION:Ente pubblico: Service de l'informatique et des télécommunica
+ tions (SITel)\nScadenza: 19.11.2026\, 11:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/e4b706c5-c329-4cde-9934-ab389afea31c/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/e4b706c5-c329-4cde-99
+ 34-ab389afea31c
+URL:https://auftragsregister.ch/it/auftrag/e4b706c5-c329-4cde-9934-ab389afe
+ a31c/
+LOCATION:Givisiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Einführung von 5 Zusatzleistungen über den Virtuell
+ en Schalter des Kantons Freiburg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

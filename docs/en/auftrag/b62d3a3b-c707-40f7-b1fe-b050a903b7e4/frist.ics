@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b62d3a3b-c707-40f7-b1fe-b050a903b7e4-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Submission deadline: Rahmenvertrag Elektro-/ ICT-Dienstleistungen
+DESCRIPTION:Public buyer: Asyl-Organisation Zürich (AOZ)\nSubmission deadl
+ ine: 23 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/b62d3a3b-c707-40f7-b1fe-b050a903b7e4/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/b62d3a3b-c707-40f7-b1fe-b050a903b7e4
+URL:https://auftragsregister.ch/en/auftrag/b62d3a3b-c707-40f7-b1fe-b050a903
+ b7e4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rahmenvertrag Elektro-/ ICT-Dienstleistung
+ en
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

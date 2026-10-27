@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6add8fa5-e70c-4c65-8d19-9040b7810c46-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Eingabefrist: Ferme de la Culture de Troinex - Lot 22400 Couverture
+  et fenêtre de toiture
+DESCRIPTION:Auftraggeber: Commune de Troinex (AAPA SA)\nEingabefrist: 02.11
+ .2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/6a
+ dd8fa5-e70c-4c65-8d19-9040b7810c46/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/6add8fa5-e70c-4c65-8d19-9040b7810c46
+URL:https://auftragsregister.ch/de/auftrag/6add8fa5-e70c-4c65-8d19-9040b781
+ 0c46/
+LOCATION:Troinex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ferme de la Culture de Troinex - Lot 22400 Couver
+ ture et fenêtre de toiture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea7c516f-c31e-4c1b-91d4-25ba770dc2ff-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Délai de remise : IMA ZV Kaserne Zürich\, Gesamtinstandsetzung/
+ Umnutzung l BKP 379-01 Laboreinrichtungen
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Zürich\, Baubereich C\nD
+ élai de remise : 16.11.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/ea7c516f-c31e-4c1b-91d4-25ba770dc2ff/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/ea7c516f-c3
+ 1e-4c1b-91d4-25ba770dc2ff
+URL:https://auftragsregister.ch/fr/auftrag/ea7c516f-c31e-4c1b-91d4-25ba770d
+ c2ff/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IMA ZV Kaserne Zürich\, Gesamtinstandsetz
+ ung/Umnutzung l BKP 379-01 Laboreinrichtungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

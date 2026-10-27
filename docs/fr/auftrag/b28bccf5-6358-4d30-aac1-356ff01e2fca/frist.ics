@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b28bccf5-6358-4d30-aac1-356ff01e2fca-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261110T130000Z
+SUMMARY:Délai de remise : BKP 250 Sanitärinstallationen weisses Schulha
+ us Schulanlage 3422 Alchenflüh
+DESCRIPTION:Acheteur public : Atelier GSW Partner AG\nDélai de remise 
+ : 10.11.2026\, 14 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/b28bccf5-6358-4d30-aac1-356ff01e2fca/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/b28bccf5-6358-4d30-aac1-356ff
+ 01e2fca
+URL:https://auftragsregister.ch/fr/auftrag/b28bccf5-6358-4d30-aac1-356ff01e
+ 2fca/
+LOCATION:Rüdtligen- Alchenflüh
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 250 Sanitärinstallationen weisses Sch
+ ulhaus Schulanlage 3422 Alchenflüh
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

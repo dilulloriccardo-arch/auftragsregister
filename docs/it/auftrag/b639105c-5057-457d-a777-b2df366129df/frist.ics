@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b639105c-5057-457d-a777-b2df366129df-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261103T150000Z
+SUMMARY:Scadenza: Öffentliche Submission Sachversicherung der Stadt Baden 
+ per 01.01.2027
+DESCRIPTION:Ente pubblico: Stadt Baden Finanzen\nScadenza: 03.11.2026\, 16:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/b639105c-5057-457
+ d-a777-b2df366129df/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/b639105c-5057-457d-a777-b2df366129df
+URL:https://auftragsregister.ch/it/auftrag/b639105c-5057-457d-a777-b2df3661
+ 29df/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Öffentliche Submission Sachversicherung der Stadt Ba
+ den per 01.01.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0dc9dbfe-38e4-45e0-997b-48c49689219a-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Délai de remise : Assainissement complet de la caserne d’Auenf
+ eld\, pl armes de Frauenfeld\, 3e étape\, CFC 906.1 Tables de rétablisse
+ ment (bâtiment de cantonnement UE)
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  06.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/0dc9dbfe-38e4-45e0-997b-48c49689219a/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/0dc9dbfe-38e4-45e0-997b-48c496
+ 89219a
+URL:https://auftragsregister.ch/fr/auftrag/0dc9dbfe-38e4-45e0-997b-48c49689
+ 219a/
+LOCATION:Frauenfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assainissement complet de la caserne d’A
+ uenfeld\, pl armes de Frauenfeld\, 3e étape\, CFC 906.1 Tables de rétabl
+ issement (bâtiment de cantonnement UE)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

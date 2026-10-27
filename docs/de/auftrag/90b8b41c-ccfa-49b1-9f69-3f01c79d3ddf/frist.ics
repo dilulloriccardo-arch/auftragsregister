@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90b8b41c-ccfa-49b1-9f69-3f01c79d3ddf-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T110011Z
+SUMMARY:Eingabefrist: Strategische & operative Beratung im Digital Marketin
+ g
+DESCRIPTION:Auftraggeber: Universitätsspital Zürich\nEingabefrist: 16.11.
+ 2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/90b
+ 8b41c-ccfa-49b1-9f69-3f01c79d3ddf/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/90b8b41c-ccfa-49b1-9f69-3f01c79d3ddf
+URL:https://auftragsregister.ch/de/auftrag/90b8b41c-ccfa-49b1-9f69-3f01c79d
+ 3ddf/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Strategische & operative Beratung im Digital Mark
+ eting
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

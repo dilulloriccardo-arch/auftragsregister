@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:971ffb4c-0abe-4f7c-8465-8169cfde97d4-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261203T154500Z
+SUMMARY:Eingabefrist: Flumenthal\; Zentralgefängnis Kanton Solothurn (ZGSO
+ ) – Neubau / BKP 272.2 Schlosserarbeiten
+DESCRIPTION:Auftraggeber: Kanton Solothurn\, Bau- und Justizdepartement\, H
+ ochbauamt\nEingabefrist: 03.12.2026\, 16.45 Uhr\nIm Register: https://auf
+ tragsregister.ch/de/auftrag/971ffb4c-0abe-4f7c-8465-8169cfde97d4/\nAmtlich
+ e Publikation: https://www.simap.ch/de/project-detail/971ffb4c-0abe-4f7c-8
+ 465-8169cfde97d4
+URL:https://auftragsregister.ch/de/auftrag/971ffb4c-0abe-4f7c-8465-8169cfde
+ 97d4/
+LOCATION:Flumenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Flumenthal\; Zentralgefängnis Kanton Solothurn (
+ ZGSO) – Neubau / BKP 272.2 Schlosserarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

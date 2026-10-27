@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:00599323-7cf8-47bf-b885-634ce1dc35f5-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Scadenza: Concorso aggiudicazione del servizio di ricezione\, tratt
+ amento e smaltimento rifiuti ingombranti combustibili non riciclabili (RIC
+ nr) del territorio della Città di Mendrisio 2027 - 2031
+DESCRIPTION:Ente pubblico: Comune di Mendrisio\nScadenza: 30.11.2026\, 16:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/00599323-7cf8-47bf
+ -b885-634ce1dc35f5/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/00599323-7cf8-47bf-b885-634ce1dc35f5
+URL:https://auftragsregister.ch/it/auftrag/00599323-7cf8-47bf-b885-634ce1dc
+ 35f5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso aggiudicazione del servizio di ricezione\, t
+ rattamento e smaltimento rifiuti ingombranti combustibili non riciclabili 
+ (RICnr) del territorio della Città di Mendrisio 2027 - 2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

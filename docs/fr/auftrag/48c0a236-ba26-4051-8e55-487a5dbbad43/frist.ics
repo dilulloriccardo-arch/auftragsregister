@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:48c0a236-ba26-4051-8e55-487a5dbbad43-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Délai de remise : Campus de Horw\, travaux de rénovation et d'a
+ grandissement\, CFC 171 : pieux
+DESCRIPTION:Acheteur public : Kanton Luzern\, Dienststelle Immobilien\nD
+ élai de remise : 02.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/48c0a236-ba26-4051-8e55-487a5dbbad43/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/48c0a236-ba
+ 26-4051-8e55-487a5dbbad43
+URL:https://auftragsregister.ch/fr/auftrag/48c0a236-ba26-4051-8e55-487a5dbb
+ ad43/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Campus de Horw\, travaux de rénovation et
+  d'agrandissement\, CFC 171 : pieux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

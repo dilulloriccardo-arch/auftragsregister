@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f9b4dc2-7715-44ba-8534-fad100bf0a26-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261113T225900Z
+SUMMARY:Eingabefrist: MP-210057\, N03/76\, N13/32 Instandsetzung UEF\, Flum
+ s\, Mels\, Au\, N 13 32 Bau
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nEingabefrist: 13.11.2026\, 23.59 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/5f9b4dc2-7715-44ba-8534-fad100bf0a26/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/5f9b4dc2-7715-44ba-8534-fad1
+ 00bf0a26
+URL:https://auftragsregister.ch/de/auftrag/5f9b4dc2-7715-44ba-8534-fad100bf
+ 0a26/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-210057\, N03/76\, N13/32 Instandsetzung UEF\, 
+ Flums\, Mels\, Au\, N 13 32 Bau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

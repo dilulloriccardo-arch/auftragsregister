@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0b64344d-2320-49e3-b652-ac9fcd44b24e-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:1
+DTSTART:20261117T130000Z
+SUMMARY:Scadenza: Ersatzbeschaffung Intensiv- und Transportrespiratoren
+DESCRIPTION:Ente pubblico: Stadtspital Zürich\, Departement Betrieb und In
+ formatik / Medizintechnik\nScadenza: 17.11.2026\, 14:00\nNel registro: htt
+ ps://auftragsregister.ch/it/auftrag/0b64344d-2320-49e3-b652-ac9fcd44b24e/\
+ nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/0b64344d-
+ 2320-49e3-b652-ac9fcd44b24e
+URL:https://auftragsregister.ch/it/auftrag/0b64344d-2320-49e3-b652-ac9fcd44
+ b24e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatzbeschaffung Intensiv- und Transportrespiratoren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

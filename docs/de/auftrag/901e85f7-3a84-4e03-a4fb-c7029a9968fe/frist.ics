@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:901e85f7-3a84-4e03-a4fb-c7029a9968fe-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261106T160000Z
+SUMMARY:Eingabefrist: Reinigungsdienstleistungen Kantonsschule Rychenberg W
+ interthur
+DESCRIPTION:Auftraggeber: Kanton Zürich\, Bildungsdirektion\, Mittelschul-
+  und Berufsbildungsamt\nEingabefrist: 06.11.2026\, 17.00 Uhr\nIm Register
+ : https://auftragsregister.ch/de/auftrag/901e85f7-3a84-4e03-a4fb-c7029a996
+ 8fe/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/901e85f
+ 7-3a84-4e03-a4fb-c7029a9968fe
+URL:https://auftragsregister.ch/de/auftrag/901e85f7-3a84-4e03-a4fb-c7029a99
+ 68fe/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Reinigungsdienstleistungen Kantonsschule Rychenbe
+ rg Winterthur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

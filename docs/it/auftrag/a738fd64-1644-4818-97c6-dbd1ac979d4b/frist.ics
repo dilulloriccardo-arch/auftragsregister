@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a738fd64-1644-4818-97c6-dbd1ac979d4b-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Scadenza: Vending machines campus EPFL
+DESCRIPTION:Ente pubblico: EPFL VPF ACHATS\nScadenza: 23.11.2026\, 12:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/a738fd64-1644-4818-97c
+ 6-dbd1ac979d4b/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/a738fd64-1644-4818-97c6-dbd1ac979d4b
+URL:https://auftragsregister.ch/it/auftrag/a738fd64-1644-4818-97c6-dbd1ac97
+ 9d4b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Vending machines campus EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

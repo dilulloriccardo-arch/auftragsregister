@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abb478ee-c65b-4c7f-82f8-839ee6bce1c3-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:1
+DTSTART:20261106T100000Z
+SUMMARY:Eingabefrist: Renouvellement de ligne de contact\, YVWB-BRI et VAL-
+ ESS\, Ligne ferroviaire à voie métrique Yverdon Ste Croix / Ingénieur +
+  monteur LC / Phases 51 à 53
+DESCRIPTION:Auftraggeber: TRAVYS SA\nEingabefrist: 06.11.2026\, 11.00 Uhr\
+ nIm Register: https://auftragsregister.ch/de/auftrag/abb478ee-c65b-4c7f-82
+ f8-839ee6bce1c3/\nAmtliche Publikation: https://www.simap.ch/de/project-de
+ tail/abb478ee-c65b-4c7f-82f8-839ee6bce1c3
+URL:https://auftragsregister.ch/de/auftrag/abb478ee-c65b-4c7f-82f8-839ee6bc
+ e1c3/
+LOCATION:Valeyres-sous-Montagny
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Renouvellement de ligne de contact\, YVWB-BRI et 
+ VAL-ESS\, Ligne ferroviaire à voie métrique Yverdon Ste Croix / Ingénie
+ ur + monteur LC / Phases 51 à 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7b7bdd1d-da2f-460d-a7cb-1b456bf1c8ff-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:1
+DTSTART:20261109T225900Z
+SUMMARY:Scadenza: N12.72 MP-160047 - Réf. Ponts Cucloz\, Denève\, Saumont
+  - Lot GC2 - Travaux de génie civil (ID 11895)
+DESCRIPTION:Ente pubblico: Office fédéral des routes OFROU\, Division Inf
+ rastructure routière Ouest\, filiale Estavayer-le-Lac\nScadenza: 09.11.20
+ 26\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/7b7bdd1d-
+ da2f-460d-a7cb-1b456bf1c8ff/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/7b7bdd1d-da2f-460d-a7cb-1b456bf1c8ff
+URL:https://auftragsregister.ch/it/auftrag/7b7bdd1d-da2f-460d-a7cb-1b456bf1
+ c8ff/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N12.72 MP-160047 - Réf. Ponts Cucloz\, Denève\, Sau
+ mont - Lot GC2 - Travaux de génie civil (ID 11895)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

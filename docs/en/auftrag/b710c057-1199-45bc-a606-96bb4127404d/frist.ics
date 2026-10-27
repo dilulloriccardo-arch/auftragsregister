@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b710c057-1199-45bc-a606-96bb4127404d-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T103000Z
+SUMMARY:Submission deadline: Collège principal de Pully - Lot 30 Ouvrages 
+ métalliques
+DESCRIPTION:Public buyer: Ville de Pully - Direction de l'urbanisme et de l
+ 'environnement - Itten+Brechbühl SA\nSubmission deadline: 7 Dec 2026\, 
+ 11:30\nIn the register: https://auftragsregister.ch/en/auftrag/b710c057-11
+ 99-45bc-a606-96bb4127404d/\nOfficial publication: https://www.simap.ch/en/
+ project-detail/b710c057-1199-45bc-a606-96bb4127404d
+URL:https://auftragsregister.ch/en/auftrag/b710c057-1199-45bc-a606-96bb4127
+ 404d/
+LOCATION:Pully
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Collège principal de Pully - Lot 30 Ouvra
+ ges métalliques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

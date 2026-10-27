@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a2bfa83f-599b-47bb-a6b7-60c5e15bf265-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261028T220000Z
+SUMMARY:Délai de remise : BKP 298.2 Économie de la construction\, armas
+ uisse Immobilier\, prestations de planification en économie de la constru
+ ction pour la région Centre
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  28.10.2026\, 23 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/a2bfa83f-599b-47bb-a6b7-60c5e15bf265/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/a2bfa83f-599b-47bb-a6b7-60c5e1
+ 5bf265
+URL:https://auftragsregister.ch/fr/auftrag/a2bfa83f-599b-47bb-a6b7-60c5e15b
+ f265/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 298.2 Économie de la construction\, a
+ rmasuisse Immobilier\, prestations de planification en économie de la con
+ struction pour la région Centre
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:39428833-8395-42d5-b583-fe613544148f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : Ausschreibung Schlüsseldienst / Schliessanlag
+ en / Zutrittssysteme – KAT.009
+DESCRIPTION:Acheteur public : ETHOS Immobilien GmbH\nDélai de remise :
+  09.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/39428833-8395-42d5-b583-fe613544148f/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/39428833-8395-42d5-b583-fe6135
+ 44148f
+URL:https://auftragsregister.ch/fr/auftrag/39428833-8395-42d5-b583-fe613544
+ 148f/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung Schlüsseldienst / Schliessa
+ nlagen / Zutrittssysteme – KAT.009
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

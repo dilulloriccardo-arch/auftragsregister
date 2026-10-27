@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:17c2113e-f88c-4f18-995f-0d8ad061c1e8-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:1
+DTSTART:20261120T220000Z
+SUMMARY:Scadenza: TR1360\, 380kV La Punt - Filisur - Sils i.D.\, Montagearb
+ eiten 2028 - 2029 (Leitungssanierung)
+DESCRIPTION:Ente pubblico: Swissgrid AG - Engineering & Construction\nScade
+ nza: 20.11.2026\, 23:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/17c2113e-f88c-4f18-995f-0d8ad061c1e8/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/17c2113e-f88c-4f18-995f-0d8ad061c1e8
+URL:https://auftragsregister.ch/it/auftrag/17c2113e-f88c-4f18-995f-0d8ad061
+ c1e8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: TR1360\, 380kV La Punt - Filisur - Sils i.D.\, Montag
+ earbeiten 2028 - 2029 (Leitungssanierung)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

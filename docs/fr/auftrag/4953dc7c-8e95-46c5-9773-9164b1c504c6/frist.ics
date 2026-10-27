@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4953dc7c-8e95-46c5-9773-9164b1c504c6-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261120T225500Z
+SUMMARY:Délai de remise : ZSB - installation de service à Schaffhausen 
+ - planificateur général pour les phases SIA 31 à 53
+DESCRIPTION:Acheteur public : SBB Immobilien Finanzen und Beschaffung\nD
+ élai de remise : 20.11.2026\, 23 h 55\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/4953dc7c-8e95-46c5-9773-9164b1c504c6/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/4953dc7c-8e
+ 95-46c5-9773-9164b1c504c6
+URL:https://auftragsregister.ch/fr/auftrag/4953dc7c-8e95-46c5-9773-9164b1c5
+ 04c6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ZSB - installation de service à Schaffhau
+ sen - planificateur général pour les phases SIA 31 à 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

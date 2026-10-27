@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8d8a6e1d-ec44-4b5c-8cbc-326f09fb0008-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Submission deadline: 2213 Neubau Alterswohnungen Sargans - Ausschre
+ ibung Fenster in Kunststoff
+DESCRIPTION:Public buyer: Ortsgemeinde Sargans (Architekten Zogg & Freuler)
+ \nSubmission deadline: 4 Dec 2026\, 12:00\nIn the register: https://auft
+ ragsregister.ch/en/auftrag/8d8a6e1d-ec44-4b5c-8cbc-326f09fb0008/\nOfficial
+  publication: https://www.simap.ch/en/project-detail/8d8a6e1d-ec44-4b5c-8c
+ bc-326f09fb0008
+URL:https://auftragsregister.ch/en/auftrag/8d8a6e1d-ec44-4b5c-8cbc-326f09fb
+ 0008/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 2213 Neubau Alterswohnungen Sargans - Auss
+ chreibung Fenster in Kunststoff
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

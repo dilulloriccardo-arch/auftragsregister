@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28c65ede-87ca-46ca-a7b6-f4b20d00a8a7-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Délai de remise : Dienstleistung für Microsoft Power Apps und P
+ ower Automate
+DESCRIPTION:Acheteur public : Dienst für Informatikplanung\nDélai de re
+ mise : 27.11.2026\, 16 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/28c65ede-87ca-46ca-a7b6-f4b20d00a8a7/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/28c65ede-87ca-46ca-a7b
+ 6-f4b20d00a8a7
+URL:https://auftragsregister.ch/fr/auftrag/28c65ede-87ca-46ca-a7b6-f4b20d00
+ a8a7/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Dienstleistung für Microsoft Power Apps u
+ nd Power Automate
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

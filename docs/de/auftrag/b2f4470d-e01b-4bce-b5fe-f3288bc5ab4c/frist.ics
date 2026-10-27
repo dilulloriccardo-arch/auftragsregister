@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2f4470d-e01b-4bce-b5fe-f3288bc5ab4c-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Eingabefrist: N05.60 MP-230028 - BSA Grandson - Areuse renouvelleme
+ nt - Travaux de génie civil pour le renouvellement des installations BSA 
+ sur la N05 entre Grandson et Vaumarcus (ID 12160)
+DESCRIPTION:Auftraggeber: Office fédéral des routes OFROU\, Division Infr
+ astructure routière Ouest\, filiale Estavayer-le-Lac\nEingabefrist: 23.11
+ .2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b2
+ f4470d-e01b-4bce-b5fe-f3288bc5ab4c/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/b2f4470d-e01b-4bce-b5fe-f3288bc5ab4c
+URL:https://auftragsregister.ch/de/auftrag/b2f4470d-e01b-4bce-b5fe-f3288bc5
+ ab4c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: N05.60 MP-230028 - BSA Grandson - Areuse renouvel
+ lement - Travaux de génie civil pour le renouvellement des installations 
+ BSA sur la N05 entre Grandson et Vaumarcus (ID 12160)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

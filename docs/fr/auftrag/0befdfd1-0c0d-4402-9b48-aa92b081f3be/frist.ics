@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0befdfd1-0c0d-4402-9b48-aa92b081f3be-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T083000Z
+SUMMARY:Délai de remise : Concorso per la fornitura di generi alimentari
+  01.01.2027 - 31.12.2027
+DESCRIPTION:Acheteur public : ECAM - Ente Case Anziani Mendrisiotto Franc
+ o Bassi\nDélai de remise : 23.11.2026\, 9 h 30\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/0befdfd1-0c0d-4402-9b48-aa92b081f
+ 3be/\nPublication officielle : https://www.simap.ch/fr/project-detail/0b
+ efdfd1-0c0d-4402-9b48-aa92b081f3be
+URL:https://auftragsregister.ch/fr/auftrag/0befdfd1-0c0d-4402-9b48-aa92b081
+ f3be/
+LOCATION:Mendrisio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Concorso per la fornitura di generi alimen
+ tari 01.01.2027 - 31.12.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

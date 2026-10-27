@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe967d3e-d5f7-411f-82e5-d45130ff6909-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261130T160000Z
+SUMMARY:Délai de remise : Commune de Volketswil - Appel d'offres pour le
+  nettoyage
+DESCRIPTION:Acheteur public : Gemeinde Volketswil (Drees & Sommer Schweiz
+  AG)\nDélai de remise : 30.11.2026\, 17 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/fe967d3e-d5f7-411f-82e5-d45130ff690
+ 9/\nPublication officielle : https://www.simap.ch/fr/project-detail/fe96
+ 7d3e-d5f7-411f-82e5-d45130ff6909
+URL:https://auftragsregister.ch/fr/auftrag/fe967d3e-d5f7-411f-82e5-d45130ff
+ 6909/
+LOCATION:Volketswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Commune de Volketswil - Appel d'offres pou
+ r le nettoyage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

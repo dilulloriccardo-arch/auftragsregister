@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa6a3c2a-a2ac-4073-b3b3-c9ffb0822dc0-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Scadenza: Rund um den OP\, BKP 225.4 Brandschutzbekleidungen
+DESCRIPTION:Ente pubblico: Hirslanden AG\, Corporate Office (Ghisleni Partn
+ er AG)\nScadenza: 28.10.2026\nNel registro: https://auftragsregister.ch/it
+ /auftrag/aa6a3c2a-a2ac-4073-b3b3-c9ffb0822dc0/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/aa6a3c2a-a2ac-4073-b3b3-c9ffb0822dc0
+URL:https://auftragsregister.ch/it/auftrag/aa6a3c2a-a2ac-4073-b3b3-c9ffb082
+ 2dc0/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rund um den OP\, BKP 225.4 Brandschutzbekleidungen
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

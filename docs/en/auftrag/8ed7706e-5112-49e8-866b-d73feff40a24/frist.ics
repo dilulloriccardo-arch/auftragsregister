@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ed7706e-5112-49e8-866b-d73feff40a24-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:1
+DTSTART:20261102T080000Z
+SUMMARY:Submission deadline: IWB\, Spezialtiefbauarbeiten Wanderstrasse
+DESCRIPTION:Public buyer: IWB Industrielle Werke Basel\nSubmission deadline
+ : 2 Nov 2026\, 09:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/8ed7706e-5112-49e8-866b-d73feff40a24/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/8ed7706e-5112-49e8-866b-d73feff40a24
+URL:https://auftragsregister.ch/en/auftrag/8ed7706e-5112-49e8-866b-d73feff4
+ 0a24/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: IWB\, Spezialtiefbauarbeiten Wanderstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

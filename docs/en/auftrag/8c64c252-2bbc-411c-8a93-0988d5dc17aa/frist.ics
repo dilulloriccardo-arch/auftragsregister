@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8c64c252-2bbc-411c-8a93-0988d5dc17aa-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261208T100000Z
+SUMMARY:Submission deadline: New Fire Station and Municipal Operations Buil
+ ding\, BKP 463 Landscaping Works
+DESCRIPTION:Public buyer: Stadt Illnau-Effretikon\, Abteilung Hochbau\nSubm
+ ission deadline: 8 Dec 2026\, 11:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/8c64c252-2bbc-411c-8a93-0988d5dc17aa/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/8c64c252-2bbc-411c-8a93-098
+ 8d5dc17aa
+URL:https://auftragsregister.ch/en/auftrag/8c64c252-2bbc-411c-8a93-0988d5dc
+ 17aa/
+LOCATION:Effretikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: New Fire Station and Municipal Operations 
+ Building\, BKP 463 Landscaping Works
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6af877c7-c8e9-46c9-a538-42a169b5c314-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Délai de remise : Rhäzüns - Rothenbrunnen\, km 32.172\, Erneue
+ rung Stützmauer 15-241
+DESCRIPTION:Acheteur public : Rhätische Bahn AG\nDélai de remise : 06
+ .11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/6af877c7-c8e9-46c9-a538-42a169b5c314/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/6af877c7-c8e9-46c9-a538-42a169b5c
+ 314
+URL:https://auftragsregister.ch/fr/auftrag/6af877c7-c8e9-46c9-a538-42a169b5
+ c314/
+LOCATION:Rhäzüns
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rhäzüns - Rothenbrunnen\, km 32.172\, Er
+ neuerung Stützmauer 15-241
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

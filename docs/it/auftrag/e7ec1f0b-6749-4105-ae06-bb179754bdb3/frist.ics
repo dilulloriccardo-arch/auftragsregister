@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7ec1f0b-6749-4105-ae06-bb179754bdb3-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Scadenza: Adobe ETLA 2027 - 2030
+DESCRIPTION:Ente pubblico: Amt für Informatik\nScadenza: 09.11.2026\nNel r
+ egistro: https://auftragsregister.ch/it/auftrag/e7ec1f0b-6749-4105-ae06-bb
+ 179754bdb3/\nPubblicazione ufficiale: https://www.simap.ch/it/project-deta
+ il/e7ec1f0b-6749-4105-ae06-bb179754bdb3
+URL:https://auftragsregister.ch/it/auftrag/e7ec1f0b-6749-4105-ae06-bb179754
+ bdb3/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Adobe ETLA 2027 - 2030
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

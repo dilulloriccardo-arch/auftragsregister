@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea830907-0191-488c-a59e-aa98db1a0d15-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Délai de remise : CE4600008921 - RC 618-B-P & 601-B-P - Lucens &
+  Curtilles
+DESCRIPTION:Acheteur public : Direction générale de la mobilité et des
+  routes - Division infrastructures\nDélai de remise : 20.11.2026\, 11
+  h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/ea8
+ 30907-0191-488c-a59e-aa98db1a0d15/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/ea830907-0191-488c-a59e-aa98db1a0d15
+URL:https://auftragsregister.ch/fr/auftrag/ea830907-0191-488c-a59e-aa98db1a
+ 0d15/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CE4600008921 - RC 618-B-P & 601-B-P - Luce
+ ns & Curtilles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d3c1028-2d69-49c1-8c32-109056674009-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:2
+DTSTART:20261201T140000Z
+SUMMARY:Délai de remise : Transport de bagages Haute-Engadine
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB Division Pr
+ oduktion Personenverkehr\nDélai de remise : 01.12.2026\, 15 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/3d3c1028-2d69-4
+ 9c1-8c32-109056674009/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/3d3c1028-2d69-49c1-8c32-109056674009
+URL:https://auftragsregister.ch/fr/auftrag/3d3c1028-2d69-49c1-8c32-10905667
+ 4009/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transport de bagages Haute-Engadine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

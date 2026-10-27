@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d09bc3c-51f1-4534-b9ae-aad1bc461c37-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Eingabefrist: Zukunft Bahnhof Bern\, Baustein 3b\, 211 Baumeisterar
+ beiten
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 24.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/0d09bc3c-51f1-4534-b9ae-aad1bc461c37/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/0d09bc3c-51f1-4534-b9ae-aad1bc461c37
+URL:https://auftragsregister.ch/de/auftrag/0d09bc3c-51f1-4534-b9ae-aad1bc46
+ 1c37/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Zukunft Bahnhof Bern\, Baustein 3b\, 211 Baumeist
+ erarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:94e283ac-de58-47f7-87c4-52be0aff6768-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : Ausschreibung Bodenlegerarbeiten – KAT.007
+DESCRIPTION:Acheteur public : ETHOS Immobilien GmbH\nDélai de remise :
+  09.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/94e283ac-de58-47f7-87c4-52be0aff6768/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/94e283ac-de58-47f7-87c4-52be0a
+ ff6768
+URL:https://auftragsregister.ch/fr/auftrag/94e283ac-de58-47f7-87c4-52be0aff
+ 6768/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung Bodenlegerarbeiten – KAT.0
+ 07
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

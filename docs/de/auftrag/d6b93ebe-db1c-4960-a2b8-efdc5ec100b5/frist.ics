@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6b93ebe-db1c-4960-a2b8-efdc5ec100b5-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261112T225900Z
+SUMMARY:Eingabefrist: Baumeisterarbeiten Deckbelagserneuerung Hauptstrasse 
+ Oberried
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 12.11.
+ 2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d6b
+ 93ebe-db1c-4960-a2b8-efdc5ec100b5/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/d6b93ebe-db1c-4960-a2b8-efdc5ec100b5
+URL:https://auftragsregister.ch/de/auftrag/d6b93ebe-db1c-4960-a2b8-efdc5ec1
+ 00b5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Baumeisterarbeiten Deckbelagserneuerung Hauptstra
+ sse Oberried
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

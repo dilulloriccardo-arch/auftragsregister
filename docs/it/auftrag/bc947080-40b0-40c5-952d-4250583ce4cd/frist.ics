@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc947080-40b0-40c5-952d-4250583ce4cd-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Scadenza: Avenue de la Paix (2372TI) Charpente métallique et ouvra
+ ge d'art
+DESCRIPTION:Ente pubblico: Unité soumissions - Département de l'aménagem
+ ent\, des constructions et de la mobilité (DACM) de la Ville de Genève\n
+ Scadenza: 09.12.2026\, 11:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/bc947080-40b0-40c5-952d-4250583ce4cd/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/bc947080-40b0-40c5-952d-4250583ce4cd
+URL:https://auftragsregister.ch/it/auftrag/bc947080-40b0-40c5-952d-4250583c
+ e4cd/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Avenue de la Paix (2372TI) Charpente métallique et o
+ uvrage d'art
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

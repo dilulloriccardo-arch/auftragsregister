@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2664f120-5fa4-40e0-a375-e729542612d8-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T190000Z
+SUMMARY:Délai de remise : LED Generalersatz Gebäude Römerrain\, BBZP\,
+  Pfäffikon SZ
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Schwyz\nDélai de remise
+  : 06.11.2026\, 20 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/2664f120-5fa4-40e0-a375-e729542612d8/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/2664f120-5fa4-40e0-a375-e7
+ 29542612d8
+URL:https://auftragsregister.ch/fr/auftrag/2664f120-5fa4-40e0-a375-e7295426
+ 12d8/
+LOCATION:Pfäffikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : LED Generalersatz Gebäude Römerrain\, BB
+ ZP\, Pfäffikon SZ
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

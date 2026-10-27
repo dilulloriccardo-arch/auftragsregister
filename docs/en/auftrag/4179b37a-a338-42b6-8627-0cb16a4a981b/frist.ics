@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4179b37a-a338-42b6-8627-0cb16a4a981b-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261116T225900Z
+SUMMARY:Submission deadline: Beschaffung eines Leistungsmoduls mit zugehör
+ igem Steuerungssystem im Hinblick auf den Aufbau einer Hochspannungsstromv
+ ersorgung
+DESCRIPTION:Public buyer: EPFL-Scientific Equipment\nSubmission deadline: 1
+ 6 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auft
+ rag/4179b37a-a338-42b6-8627-0cb16a4a981b/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/4179b37a-a338-42b6-8627-0cb16a4a981b
+URL:https://auftragsregister.ch/en/auftrag/4179b37a-a338-42b6-8627-0cb16a4a
+ 981b/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung eines Leistungsmoduls mit zuge
+ hörigem Steuerungssystem im Hinblick auf den Aufbau einer Hochspannungsst
+ romversorgung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

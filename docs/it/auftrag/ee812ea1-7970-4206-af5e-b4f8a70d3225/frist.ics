@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee812ea1-7970-4206-af5e-b4f8a70d3225-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T123000Z
+SUMMARY:Scadenza: TGSB SA - Travaux de renouvellement électromécanique (f
+ ourniture) - Chemins à câbles
+DESCRIPTION:Ente pubblico: Tunnel du Grand-Saint-Bernard\nScadenza: 01.12.2
+ 026\, 13:30\nNel registro: https://auftragsregister.ch/it/auftrag/ee812ea1
+ -7970-4206-af5e-b4f8a70d3225/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/ee812ea1-7970-4206-af5e-b4f8a70d3225
+URL:https://auftragsregister.ch/it/auftrag/ee812ea1-7970-4206-af5e-b4f8a70d
+ 3225/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: TGSB SA - Travaux de renouvellement électromécaniqu
+ e (fourniture) - Chemins à câbles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

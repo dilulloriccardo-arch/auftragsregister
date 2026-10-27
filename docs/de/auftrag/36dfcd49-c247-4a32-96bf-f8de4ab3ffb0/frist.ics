@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:36dfcd49-c247-4a32-96bf-f8de4ab3ffb0-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261030T110000Z
+SUMMARY:Eingabefrist: P-133 Ersatz Gasaufbereitung ARA Buholz
+DESCRIPTION:Auftraggeber: Hunziker Betatech AG\nEingabefrist: 30.10.2026\, 
+ 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/36dfcd49-c
+ 247-4a32-96bf-f8de4ab3ffb0/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/36dfcd49-c247-4a32-96bf-f8de4ab3ffb0
+URL:https://auftragsregister.ch/de/auftrag/36dfcd49-c247-4a32-96bf-f8de4ab3
+ ffb0/
+LOCATION:Emmen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: P-133 Ersatz Gasaufbereitung ARA Buholz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3750debe-7b5c-4edf-9d95-253bfef65ecb-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261207T225900Z
+SUMMARY:Eingabefrist: (26170) 735 Zivi-Ausbildungskurs Sicherheit im Auslan
+ deinsatz
+DESCRIPTION:Auftraggeber: Bundesamt für Zivildienst ZIVI\nEingabefrist: 07
+ .12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /3750debe-7b5c-4edf-9d95-253bfef65ecb/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/3750debe-7b5c-4edf-9d95-253bfef65ecb
+URL:https://auftragsregister.ch/de/auftrag/3750debe-7b5c-4edf-9d95-253bfef6
+ 5ecb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (26170) 735 Zivi-Ausbildungskurs Sicherheit im Au
+ slandeinsatz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

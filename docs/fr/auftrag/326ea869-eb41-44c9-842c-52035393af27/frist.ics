@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:326ea869-eb41-44c9-842c-52035393af27-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Délai de remise : 291_Appel d'offres pour l'acquisition et la pe
+ rsonnalisation d'une application de numérisation des processus informatiq
+ ues
+DESCRIPTION:Acheteur public : Centro sistemi informativi\nDélai de remis
+ e : 01.12.2026\, 16 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/326ea869-eb41-44c9-842c-52035393af27/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/326ea869-eb41-44c9-842c-5
+ 2035393af27
+URL:https://auftragsregister.ch/fr/auftrag/326ea869-eb41-44c9-842c-52035393
+ af27/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 291_Appel d'offres pour l'acquisition et l
+ a personnalisation d'une application de numérisation des processus inform
+ atiques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

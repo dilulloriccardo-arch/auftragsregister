@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45d54a70-cb99-4b03-838e-a070ad36cd32-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Eingabefrist: Integration und Inbetriebnahme der Produkte SAP Succe
+ ssFactors Employee Central (EC)\, SAP SuccessFactors Employee Central Payr
+ oll (ECP) und SAP Analytics Cloud (SAC)
+DESCRIPTION:Auftraggeber: Service de l'informatique et des télécommunicat
+ ions (SITel)\nEingabefrist: 20.11.2026\, 12.00 Uhr\nIm Register: https://
+ auftragsregister.ch/de/auftrag/45d54a70-cb99-4b03-838e-a070ad36cd32/\nAmtl
+ iche Publikation: https://www.simap.ch/de/project-detail/45d54a70-cb99-4b0
+ 3-838e-a070ad36cd32
+URL:https://auftragsregister.ch/de/auftrag/45d54a70-cb99-4b03-838e-a070ad36
+ cd32/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Integration und Inbetriebnahme der Produkte SAP S
+ uccessFactors Employee Central (EC)\, SAP SuccessFactors Employee Central 
+ Payroll (ECP) und SAP Analytics Cloud (SAC)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

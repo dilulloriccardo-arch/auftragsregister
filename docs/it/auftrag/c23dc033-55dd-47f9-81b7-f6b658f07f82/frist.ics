@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c23dc033-55dd-47f9-81b7-f6b658f07f82-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Scadenza: Schule Herrliberg: ICT Erneuerung
+DESCRIPTION:Ente pubblico: Schule Herrliberg / Gemeinsame Sekundarschule Er
+ lenbach Herrliberg (PUBLICS)\nScadenza: 16.11.2026\nNel registro: https://
+ auftragsregister.ch/it/auftrag/c23dc033-55dd-47f9-81b7-f6b658f07f82/\nPubb
+ licazione ufficiale: https://www.simap.ch/it/project-detail/c23dc033-55dd-
+ 47f9-81b7-f6b658f07f82
+URL:https://auftragsregister.ch/it/auftrag/c23dc033-55dd-47f9-81b7-f6b658f0
+ 7f82/
+LOCATION:Herrliberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schule Herrliberg: ICT Erneuerung
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

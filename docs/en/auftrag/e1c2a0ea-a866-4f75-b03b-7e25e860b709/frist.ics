@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1c2a0ea-a866-4f75-b03b-7e25e860b709-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Submission deadline: 10202 K 4 Kriens\, Zentrum (exkl.) bis Einmün
+ dung Südstrasse (exkl.)\, Lichtsignalanlagen 090\, 093\, 193\, 194
+DESCRIPTION:Public buyer: Kanton Luzern\, Dienststelle Verkehr und Infrastr
+ uktur (vif)\nSubmission deadline: 16 Nov 2026\, 16:00\nIn the register: 
+ https://auftragsregister.ch/en/auftrag/e1c2a0ea-a866-4f75-b03b-7e25e860b70
+ 9/\nOfficial publication: https://www.simap.ch/en/project-detail/e1c2a0ea-
+ a866-4f75-b03b-7e25e860b709
+URL:https://auftragsregister.ch/en/auftrag/e1c2a0ea-a866-4f75-b03b-7e25e860
+ b709/
+LOCATION:Kriens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 10202 K 4 Kriens\, Zentrum (exkl.) bis Ein
+ mündung Südstrasse (exkl.)\, Lichtsignalanlagen 090\, 093\, 193\, 194
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

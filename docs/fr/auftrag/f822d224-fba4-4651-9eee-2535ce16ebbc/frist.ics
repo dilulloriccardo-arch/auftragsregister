@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f822d224-fba4-4651-9eee-2535ce16ebbc-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Délai de remise : Relaunch du site web de la HEFP
+DESCRIPTION:Acheteur public : Eidgenössische Hochschule für Berufsbildu
+ ng EHB\nDélai de remise : 27.11.2026\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/f822d224-fba4-4651-9eee-2535ce16ebbc/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/f822d224-fba4-46
+ 51-9eee-2535ce16ebbc
+URL:https://auftragsregister.ch/fr/auftrag/f822d224-fba4-4651-9eee-2535ce16
+ ebbc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Relaunch du site web de la HEFP
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

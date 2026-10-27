@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a4f177e-dce5-4b4e-9ec3-35b8366876e6-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261117T150000Z
+SUMMARY:Eingabefrist: Neubau Fernwärme Ringleitung in Horgen\, von der KVA
+  bis Anschluss Einsiedlerstrasse
+DESCRIPTION:Auftraggeber: Werke Horgen - Fernwärmeversorgung\nEingabefrist
+ : 17.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/8a4f177e-dce5-4b4e-9ec3-35b8366876e6/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/8a4f177e-dce5-4b4e-9ec3-35b8366876e6
+URL:https://auftragsregister.ch/de/auftrag/8a4f177e-dce5-4b4e-9ec3-35b83668
+ 76e6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Fernwärme Ringleitung in Horgen\, von der
+  KVA bis Anschluss Einsiedlerstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d32ca01d-027a-4a5f-8c9d-87b969e85514-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261104T160000Z
+SUMMARY:Délai de remise : Parc de téléphones mobiles 2026/2027
+DESCRIPTION:Acheteur public : Police Cantonale Valaisanne / Kantonspolize
+ i Wallis\nDélai de remise : 04.11.2026\, 17 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/d32ca01d-027a-4a5f-8c9d-87b969
+ e85514/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /d32ca01d-027a-4a5f-8c9d-87b969e85514
+URL:https://auftragsregister.ch/fr/auftrag/d32ca01d-027a-4a5f-8c9d-87b969e8
+ 5514/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Parc de téléphones mobiles 2026/2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

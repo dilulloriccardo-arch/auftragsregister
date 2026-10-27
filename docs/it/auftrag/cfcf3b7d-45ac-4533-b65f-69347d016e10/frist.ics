@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfcf3b7d-45ac-4533-b65f-69347d016e10-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261103T130000Z
+SUMMARY:Scadenza: Concorso per l’aggiudicazione dei contratti di assicura
+ zione indennità giornaliera collettiva in caso di malattia e infortuni se
+ condo la LAINF
+DESCRIPTION:Ente pubblico: REGIONE TRE VALLI\nScadenza: 03.11.2026\, 14:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/cfcf3b7d-45ac-4533-b
+ 65f-69347d016e10/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/cfcf3b7d-45ac-4533-b65f-69347d016e10
+URL:https://auftragsregister.ch/it/auftrag/cfcf3b7d-45ac-4533-b65f-69347d01
+ 6e10/
+LOCATION:Biasca
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso per l’aggiudicazione dei contratti di assi
+ curazione indennità giornaliera collettiva in caso di malattia e infortun
+ i secondo la LAINF
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

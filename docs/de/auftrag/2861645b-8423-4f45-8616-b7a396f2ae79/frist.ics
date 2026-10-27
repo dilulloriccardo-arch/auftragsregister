@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2861645b-8423-4f45-8616-b7a396f2ae79-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Eingabefrist: API-Management-System
+DESCRIPTION:Auftraggeber: Stadt St.Gallen\, Stadtwerke\nEingabefrist: 30.11
+ .2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/28
+ 61645b-8423-4f45-8616-b7a396f2ae79/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/2861645b-8423-4f45-8616-b7a396f2ae79
+URL:https://auftragsregister.ch/de/auftrag/2861645b-8423-4f45-8616-b7a396f2
+ ae79/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: API-Management-System
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

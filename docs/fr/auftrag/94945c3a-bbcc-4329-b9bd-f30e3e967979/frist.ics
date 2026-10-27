@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:94945c3a-bbcc-4329-b9bd-f30e3e967979-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Délai de remise : MP-LEB 2026.09.262 OCP 2027 – Substitution p
+ ar bus
+DESCRIPTION:Acheteur public : Transports publics de la région lausannois
+ e sa\nDélai de remise : 13.11.2026\, 12 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/94945c3a-bbcc-4329-b9bd-f30e3e96797
+ 9/\nPublication officielle : https://www.simap.ch/fr/project-detail/9494
+ 5c3a-bbcc-4329-b9bd-f30e3e967979
+URL:https://auftragsregister.ch/fr/auftrag/94945c3a-bbcc-4329-b9bd-f30e3e96
+ 7979/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-LEB 2026.09.262 OCP 2027 – Substituti
+ on par bus
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

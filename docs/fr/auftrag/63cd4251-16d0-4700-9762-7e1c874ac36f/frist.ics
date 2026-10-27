@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:63cd4251-16d0-4700-9762-7e1c874ac36f-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Délai de remise : EBP-639_Raccords électrosoudables et raccords
+  à souder bout à bout
+DESCRIPTION:Acheteur public : Energie Wasser Bern\nDélai de remise : 2
+ 4.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/63cd4251-16d0-4700-9762-7e1c874ac36f/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/63cd4251-16d0-4700-9762-7e1c87
+ 4ac36f
+URL:https://auftragsregister.ch/fr/auftrag/63cd4251-16d0-4700-9762-7e1c874a
+ c36f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EBP-639_Raccords électrosoudables et racc
+ ords à souder bout à bout
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

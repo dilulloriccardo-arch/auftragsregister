@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45d54a70-cb99-4b03-838e-a070ad36cd32-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Délai de remise : Intégration et mise en service des produits S
+ AP SuccessFactors Employee Central (EC)\, SAP SuccessFactors Employee Cent
+ ral Payroll (ECP) et SAP Analytics Cloud (SAC)
+DESCRIPTION:Acheteur public : Service de l'informatique et des télécomm
+ unications (SITel)\nDélai de remise : 20.11.2026\, 12 h 00\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/45d54a70-cb99-4b03-83
+ 8e-a070ad36cd32/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/45d54a70-cb99-4b03-838e-a070ad36cd32
+URL:https://auftragsregister.ch/fr/auftrag/45d54a70-cb99-4b03-838e-a070ad36
+ cd32/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Intégration et mise en service des produi
+ ts SAP SuccessFactors Employee Central (EC)\, SAP SuccessFactors Employee 
+ Central Payroll (ECP) et SAP Analytics Cloud (SAC)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

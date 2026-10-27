@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83f85bf7-8633-4f46-9ce6-c8dff783b1ae-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:3
+DTSTART:20261116T110000Z
+SUMMARY:Délai de remise : Préservation et valorisation du site de l’A
+ mphithéâtre de Nyon
+DESCRIPTION:Acheteur public : Service d’architecture de la Ville de Nyo
+ n\nDélai de remise : 16.11.2026\, 12 h 00\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/83f85bf7-8633-4f46-9ce6-c8dff783b1ae/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/83f85bf
+ 7-8633-4f46-9ce6-c8dff783b1ae
+URL:https://auftragsregister.ch/fr/auftrag/83f85bf7-8633-4f46-9ce6-c8dff783
+ b1ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Préservation et valorisation du site de l
+ ’Amphithéâtre de Nyon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

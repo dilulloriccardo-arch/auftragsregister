@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db642053-654f-4d2f-ab83-dd2f193220ac-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261124T130000Z
+SUMMARY:Eingabefrist: 99.219 Aggiornamento pompe nutrizione enterale - Forn
+ itura pompe nutrizione enterale\, materiale di consumo e supporto dopo ven
+ dita
+DESCRIPTION:Auftraggeber: Ente Ospedaliero Cantonale - Area Infrastrutture 
+ e Operations - Servizio tecnologia medica\nEingabefrist: 24.11.2026\, 14.0
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/db642053-654f-
+ 4d2f-ab83-dd2f193220ac/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/db642053-654f-4d2f-ab83-dd2f193220ac
+URL:https://auftragsregister.ch/de/auftrag/db642053-654f-4d2f-ab83-dd2f1932
+ 20ac/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 99.219 Aggiornamento pompe nutrizione enterale - 
+ Fornitura pompe nutrizione enterale\, materiale di consumo e supporto dopo
+  vendita
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

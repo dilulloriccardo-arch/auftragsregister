@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ce35905-3665-4fd2-b8d6-27f2ccf826b3-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261102T100000Z
+SUMMARY:Submission deadline: Bau Werkleitungen und Strassenbau QP Bauertach
+ er\, Stäfa
+DESCRIPTION:Public buyer: Gemeinde Stäfa\, Tiefbau\nSubmission deadline: 2
+  Nov 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/8ce35905-3665-4fd2-b8d6-27f2ccf826b3/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/8ce35905-3665-4fd2-b8d6-27f2ccf826b3
+URL:https://auftragsregister.ch/en/auftrag/8ce35905-3665-4fd2-b8d6-27f2ccf8
+ 26b3/
+LOCATION:Stäfa
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bau Werkleitungen und Strassenbau QP Bauer
+ tacher\, Stäfa
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

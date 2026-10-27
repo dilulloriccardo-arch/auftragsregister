@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7483b12-414d-4fff-865d-d27523ed3cbf-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: STEP Eparse - lot VEN01 - installations de ventilation
+DESCRIPTION:Ente pubblico: L'Eparse - Association intercommunale pour l’
+ épuration des eaux de la zone de Payerne\nScadenza: 16.11.2026\, 16:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/e7483b12-414d-4fff-865
+ d-d27523ed3cbf/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/e7483b12-414d-4fff-865d-d27523ed3cbf
+URL:https://auftragsregister.ch/it/auftrag/e7483b12-414d-4fff-865d-d27523ed
+ 3cbf/
+LOCATION:Payerne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: STEP Eparse - lot VEN01 - installations de ventilatio
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f9f5ec91-6e7b-434d-b819-356472ccbe04-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:1
+DTSTART:20261108T225500Z
+SUMMARY:Submission deadline: Generalplaner Ausbau Standort Lenzburg
+DESCRIPTION:Public buyer: AEW Energie AG\nSubmission deadline: 8 Nov 2026
+ \, 23:55\nIn the register: https://auftragsregister.ch/en/auftrag/f9f5ec91
+ -6e7b-434d-b819-356472ccbe04/\nOfficial publication: https://www.simap.ch/
+ en/project-detail/f9f5ec91-6e7b-434d-b819-356472ccbe04
+URL:https://auftragsregister.ch/en/auftrag/f9f5ec91-6e7b-434d-b819-356472cc
+ be04/
+LOCATION:Lenzburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Generalplaner Ausbau Standort Lenzburg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

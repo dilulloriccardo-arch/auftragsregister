@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:36d0a202-6a7f-4508-b6be-08da4b8c495e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261124T150000Z
+SUMMARY:Eingabefrist: Zukunft Bahnhof Bern\, Bausteine 1\,2\,4\, 3a\, 3b\, 
+ Umweltbaubegleitung: 3'000 h externe Projektleitung
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 24.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/36d0a202-6a7f-4508-b6be-08da4b8c495e/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/36d0a202-6a7f-4508-b6be-08da4b8c495e
+URL:https://auftragsregister.ch/de/auftrag/36d0a202-6a7f-4508-b6be-08da4b8c
+ 495e/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Zukunft Bahnhof Bern\, Bausteine 1\,2\,4\, 3a\, 3
+ b\, Umweltbaubegleitung: 3'000 h externe Projektleitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:198abca2-219f-40a3-a3d9-7b14351a4187-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261130T090000Z
+SUMMARY:Scadenza: STEP D’AIRE – Projet PAC Lot 4.23 – Poste 18/10kV d
+ ’alimentation des PAC
+DESCRIPTION:Ente pubblico: Services industriels de Genève (SIG) - Directio
+ n Achats\nScadenza: 30.11.2026\, 10:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/198abca2-219f-40a3-a3d9-7b14351a4187/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/198abca2-219f-40a3-a3d9-7b
+ 14351a4187
+URL:https://auftragsregister.ch/it/auftrag/198abca2-219f-40a3-a3d9-7b14351a
+ 4187/
+LOCATION:Aïre (Vernier)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: STEP D’AIRE – Projet PAC Lot 4.23 – Poste 18/10
+ kV d’alimentation des PAC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

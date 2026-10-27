@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b1d29fc9-8f04-440f-b007-831da33c9268-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Submission deadline: AUDPA_Audit du patrimoine immobilier administr
+ atif de la Ville de Lancy - Architecte & Ingénieur protection incendie
+DESCRIPTION:Public buyer: Ville de Lancy (Service des Travaux et de l'Energ
+ ie)\nSubmission deadline: 7 Dec 2026\, 12:00\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/b1d29fc9-8f04-440f-b007-831da33c9268/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/b1d29fc9-8f04-440f
+ -b007-831da33c9268
+URL:https://auftragsregister.ch/en/auftrag/b1d29fc9-8f04-440f-b007-831da33c
+ 9268/
+LOCATION:Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AUDPA_Audit du patrimoine immobilier admin
+ istratif de la Ville de Lancy - Architecte & Ingénieur protection incendi
+ e
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

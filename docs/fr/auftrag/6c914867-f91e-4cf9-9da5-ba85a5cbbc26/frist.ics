@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c914867-f91e-4cf9-9da5-ba85a5cbbc26-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Délai de remise : École de Kalktarren\, rénovation du complexe
+  scolaire: CFC 122.3 Locaux scolaires provisoires
+DESCRIPTION:Acheteur public : Stadt Schlieren\, Bereich Liegenschaften\nD
+ élai de remise : 16.11.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/6c914867-f91e-4cf9-9da5-ba85a5cbbc26/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/6c914867-f9
+ 1e-4cf9-9da5-ba85a5cbbc26
+URL:https://auftragsregister.ch/fr/auftrag/6c914867-f91e-4cf9-9da5-ba85a5cb
+ bc26/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École de Kalktarren\, rénovation du comp
+ lexe scolaire: CFC 122.3 Locaux scolaires provisoires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

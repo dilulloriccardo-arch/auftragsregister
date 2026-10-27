@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:13e90063-f0fe-4d15-94e6-4178a0670788-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Eingabefrist: Verpflegungsleistungen für Sanadura
+DESCRIPTION:Auftraggeber: Sanadura\nEingabefrist: 09.11.2026\, 12.00 Uhr\n
+ Im Register: https://auftragsregister.ch/de/auftrag/13e90063-f0fe-4d15-94e
+ 6-4178a0670788/\nAmtliche Publikation: https://www.simap.ch/de/project-det
+ ail/13e90063-f0fe-4d15-94e6-4178a0670788
+URL:https://auftragsregister.ch/de/auftrag/13e90063-f0fe-4d15-94e6-4178a067
+ 0788/
+LOCATION:Samedan
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Verpflegungsleistungen für Sanadura
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

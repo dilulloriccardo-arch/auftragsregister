@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efa2a24b-7de7-493a-982e-3a28478b7832-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261118T160000Z
+SUMMARY:Scadenza: Neubau Gemeindehaus Münsingen - BKP 273/ 281.8
+DESCRIPTION:Ente pubblico: Gemeinde Münsingen\, Abteilung Bau\nScadenza: 1
+ 8.11.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/ef
+ a2a24b-7de7-493a-982e-3a28478b7832/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/efa2a24b-7de7-493a-982e-3a28478b7832
+URL:https://auftragsregister.ch/it/auftrag/efa2a24b-7de7-493a-982e-3a28478b
+ 7832/
+LOCATION:Münsingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Gemeindehaus Münsingen - BKP 273/ 281.8
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

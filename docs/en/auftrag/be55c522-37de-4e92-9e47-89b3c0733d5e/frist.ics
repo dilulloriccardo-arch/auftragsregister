@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be55c522-37de-4e92-9e47-89b3c0733d5e-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Submission deadline: Attribution de 52 postes externes pour l’OCS
+ IN (LSE 2026-04)
+DESCRIPTION:Public buyer: Office cantonal des systèmes d'information et du
+  numérique (OCSIN)\nSubmission deadline: 30 Nov 2026\, 12:00\nIn the re
+ gister: https://auftragsregister.ch/en/auftrag/be55c522-37de-4e92-9e47-89b
+ 3c0733d5e/\nOfficial publication: https://www.simap.ch/en/project-detail/b
+ e55c522-37de-4e92-9e47-89b3c0733d5e
+URL:https://auftragsregister.ch/en/auftrag/be55c522-37de-4e92-9e47-89b3c073
+ 3d5e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Attribution de 52 postes externes pour l
+ ’OCSIN (LSE 2026-04)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

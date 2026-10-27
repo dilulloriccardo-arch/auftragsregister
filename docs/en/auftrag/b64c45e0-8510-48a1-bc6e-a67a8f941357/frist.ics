@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b64c45e0-8510-48a1-bc6e-a67a8f941357-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:1
+DTSTART:20261116T225900Z
+SUMMARY:Submission deadline: Uniformabzeichen
+DESCRIPTION:Public buyer: Kantonspolizei Bern\nSubmission deadline: 16 Nov
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/b6
+ 4c45e0-8510-48a1-bc6e-a67a8f941357/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/b64c45e0-8510-48a1-bc6e-a67a8f941357
+URL:https://auftragsregister.ch/en/auftrag/b64c45e0-8510-48a1-bc6e-a67a8f94
+ 1357/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Uniformabzeichen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

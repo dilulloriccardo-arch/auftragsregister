@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41df4635-a53f-4819-83c2-a67d6c7a2fb3-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261204T110000Z
+SUMMARY:Scadenza: AO – tpg – création de 4 places de travail avec pass
+ erelles de service pour accès à la toiture des bus pour le site/dépôt 
+ tpg de la Jonction
+DESCRIPTION:Ente pubblico: Transport publics genevois (tpg)\nScadenza: 04.1
+ 2.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/41df4
+ 635-a53f-4819-83c2-a67d6c7a2fb3/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/41df4635-a53f-4819-83c2-a67d6c7a2fb3
+URL:https://auftragsregister.ch/it/auftrag/41df4635-a53f-4819-83c2-a67d6c7a
+ 2fb3/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AO – tpg – création de 4 places de travail avec 
+ passerelles de service pour accès à la toiture des bus pour le site/dép
+ ôt tpg de la Jonction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

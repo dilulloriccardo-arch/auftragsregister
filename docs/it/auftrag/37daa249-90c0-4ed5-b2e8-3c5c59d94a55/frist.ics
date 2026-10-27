@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:37daa249-90c0-4ed5-b2e8-3c5c59d94a55-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: BAV 22398 Wohnsiedlung Salzweg\, Ersatzneubau - BKP 228.3
+  Markisen / Rafflamellenstoren
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 16.11
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/37daa2
+ 49-90c0-4ed5-b2e8-3c5c59d94a55/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/37daa249-90c0-4ed5-b2e8-3c5c59d94a55
+URL:https://auftragsregister.ch/it/auftrag/37daa249-90c0-4ed5-b2e8-3c5c59d9
+ 4a55/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 22398 Wohnsiedlung Salzweg\, Ersatzneubau - BKP 2
+ 28.3 Markisen / Rafflamellenstoren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

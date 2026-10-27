@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:caf3e114-0b38-4ca8-b940-c44abefe7a0a-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261118T225900Z
+SUMMARY:Délai de remise : N02\, Secondo tubo San Gottardo  (2TG Röhre
+  Nord und Galleria di Airolo) und N02 Risanamento primo tubo San Gottardo 
+ (1TG Röhre Süd) Lot 7002 - UKV und RVt
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3 Zofingen\nDélai de remise : 18.11.2026\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/ca
+ f3e114-0b38-4ca8-b940-c44abefe7a0a/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/caf3e114-0b38-4ca8-b940-c44abefe7a0a
+URL:https://auftragsregister.ch/fr/auftrag/caf3e114-0b38-4ca8-b940-c44abefe
+ 7a0a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : N02\, Secondo tubo San Gottardo  (2TG R
+ öhre Nord und Galleria di Airolo) und N02 Risanamento primo tubo San Gott
+ ardo (1TG Röhre Süd) Lot 7002 - UKV und RVt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

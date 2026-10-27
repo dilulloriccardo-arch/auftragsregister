@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1904d773-3959-4b76-a24d-2e0c9dc5b795-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Délai de remise : Extension et transformation de la maison de re
+ traite Sonnegrund\, 9533 Kirchberg / BKP 273.1 Portes intérieures
+DESCRIPTION:Acheteur public : Politische Gemeinde Kirchberg\nDélai de re
+ mise : 13.11.2026\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/1904d773-3959-4b76-a24d-2e0c9dc5b795/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/1904d773-3959-4b76-a24d-2e0c9dc5b795
+URL:https://auftragsregister.ch/fr/auftrag/1904d773-3959-4b76-a24d-2e0c9dc5
+ b795/
+LOCATION:Kirchberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Extension et transformation de la maison d
+ e retraite Sonnegrund\, 9533 Kirchberg / BKP 273.1 Portes intérieures
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

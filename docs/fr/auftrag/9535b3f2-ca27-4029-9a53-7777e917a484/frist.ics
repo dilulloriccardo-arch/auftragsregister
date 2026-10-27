@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9535b3f2-ca27-4029-9a53-7777e917a484-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Délai de remise : Potenziamento opere esistenti (camera B7) e by
+ pass. Prestazioni da ingegnerie civile SIA41-53
+DESCRIPTION:Acheteur public : Comune di Lumino\nDélai de remise : 09.1
+ 1.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/9535b3f2-ca27-4029-9a53-7777e917a484/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/9535b3f2-ca27-4029-9a53-7777e917a48
+ 4
+URL:https://auftragsregister.ch/fr/auftrag/9535b3f2-ca27-4029-9a53-7777e917
+ a484/
+LOCATION:Lumino
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Potenziamento opere esistenti (camera B7) 
+ e bypass. Prestazioni da ingegnerie civile SIA41-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

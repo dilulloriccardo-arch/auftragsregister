@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72a4f415-6bd0-4245-abe9-55e115935d6f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Scadenza: Erweiterung Hebelschule\, BKP 261.0 Aufzugsanlagen
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Riehen\nScadenza: 20.11.2026\,
+  12:00\nNel registro: https://auftragsregister.ch/it/auftrag/72a4f415-6bd0
+ -4245-abe9-55e115935d6f/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/72a4f415-6bd0-4245-abe9-55e115935d6f
+URL:https://auftragsregister.ch/it/auftrag/72a4f415-6bd0-4245-abe9-55e11593
+ 5d6f/
+LOCATION:Riehen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erweiterung Hebelschule\, BKP 261.0 Aufzugsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

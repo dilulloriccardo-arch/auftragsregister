@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab03f175-e76c-4b87-890e-9f4b4fd4d3dc-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261214T130000Z
+SUMMARY:Submission deadline: ROKS TP7: Los Turbine
+DESCRIPTION:Public buyer: Engadiner Kraftwerke AG\nSubmission deadline: 14
+  Dec 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/ab03f175-e76c-4b87-890e-9f4b4fd4d3dc/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/ab03f175-e76c-4b87-890e-9f4b4fd4d3dc
+URL:https://auftragsregister.ch/en/auftrag/ab03f175-e76c-4b87-890e-9f4b4fd4
+ d3dc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ROKS TP7: Los Turbine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

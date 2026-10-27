@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ba1d2ed4-69a6-4006-937e-7447fa5807b7-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Scadenza: Gara d'appalto per prestazioni assicurative relative ad a
+ ssicurazioni collettive di indennità giornaliera nell'ambito LCA con este
+ nsione LAMAL e LAINF\, con adattamento al cliente
+DESCRIPTION:Ente pubblico: Gatti Legal (per Fondazione Casa Faro)\nScadenza
+ : 16.11.2026\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag
+ /ba1d2ed4-69a6-4006-937e-7447fa5807b7/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/ba1d2ed4-69a6-4006-937e-7447fa5807b7
+URL:https://auftragsregister.ch/it/auftrag/ba1d2ed4-69a6-4006-937e-7447fa58
+ 07b7/
+LOCATION:Riazzino
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gara d'appalto per prestazioni assicurative relative 
+ ad assicurazioni collettive di indennità giornaliera nell'ambito LCA con 
+ estensione LAMAL e LAINF\, con adattamento al cliente
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

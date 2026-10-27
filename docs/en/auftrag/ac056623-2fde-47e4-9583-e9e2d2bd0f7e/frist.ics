@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac056623-2fde-47e4-9583-e9e2d2bd0f7e-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261210T110000Z
+SUMMARY:Submission deadline: Instandsetzung Mürgstrasse\, 6370 Stans / Bau
+ auftrag
+DESCRIPTION:Public buyer: Gemeinde Stans\nSubmission deadline: 10 Dec 202
+ 6\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/ac05662
+ 3-2fde-47e4-9583-e9e2d2bd0f7e/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/ac056623-2fde-47e4-9583-e9e2d2bd0f7e
+URL:https://auftragsregister.ch/en/auftrag/ac056623-2fde-47e4-9583-e9e2d2bd
+ 0f7e/
+LOCATION:Stans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Instandsetzung Mürgstrasse\, 6370 Stans /
+  Bauauftrag
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c487e8bc-852f-4c30-afb0-8261047b6232-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Délai de remise : STEP de Worblental\, construction de la nouvel
+ le étape EMV\, travaux de couverture
+DESCRIPTION:Acheteur public : Gemeindeverband ARA Worblental\nDélai de r
+ emise : 04.12.2026\, 12 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/c487e8bc-852f-4c30-afb0-8261047b6232/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/c487e8bc-852f-4c30-af
+ b0-8261047b6232
+URL:https://auftragsregister.ch/fr/auftrag/c487e8bc-852f-4c30-afb0-8261047b
+ 6232/
+LOCATION:Worblaufen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : STEP de Worblental\, construction de la no
+ uvelle étape EMV\, travaux de couverture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

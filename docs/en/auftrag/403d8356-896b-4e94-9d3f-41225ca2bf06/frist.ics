@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:403d8356-896b-4e94-9d3f-41225ca2bf06-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Submission deadline: 10010 CCU _ Rejet d’eau industrielle - Condu
+ ites lacustres et terrestres _ Appel d'offres entreprise totale
+DESCRIPTION:Public buyer: UNIL - UNIBAT - Domaine énergie et infrastructur
+ es\nSubmission deadline: 15 Dec 2026\, 16:00\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/403d8356-896b-4e94-9d3f-41225ca2bf06/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/403d8356-896b-4e94
+ -9d3f-41225ca2bf06
+URL:https://auftragsregister.ch/en/auftrag/403d8356-896b-4e94-9d3f-41225ca2
+ bf06/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 10010 CCU _ Rejet d’eau industrielle - C
+ onduites lacustres et terrestres _ Appel d'offres entreprise totale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

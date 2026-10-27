@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:738bf9de-d4fe-4724-89f2-3bffb169e7b2-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261028T110000Z
+SUMMARY:Submission deadline: Serviceleistungen an Anlagen für die automati
+ sche Verkehrskontrolle 2027 - 2030
+DESCRIPTION:Public buyer: SID - Stadtpolizei (Stapo)\nSubmission deadline: 
+ 28 Oct 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/738bf9de-d4fe-4724-89f2-3bffb169e7b2/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/738bf9de-d4fe-4724-89f2-3bffb169e7b2
+URL:https://auftragsregister.ch/en/auftrag/738bf9de-d4fe-4724-89f2-3bffb169
+ e7b2/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Serviceleistungen an Anlagen für die auto
+ matische Verkehrskontrolle 2027 - 2030
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

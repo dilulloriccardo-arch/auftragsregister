@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1dcdfb57-32c9-499a-8492-126a52c7a9e5-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T160000Z
+SUMMARY:Délai de remise : Déplacement et remise à ciel ouvert du Töbe
+ libach – École de Malerva
+DESCRIPTION:Acheteur public : Politische Gemeinde Sargans\nDélai de remi
+ se : 09.11.2026\, 17 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/1dcdfb57-32c9-499a-8492-126a52c7a9e5/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/1dcdfb57-32c9-499a-8492-
+ 126a52c7a9e5
+URL:https://auftragsregister.ch/fr/auftrag/1dcdfb57-32c9-499a-8492-126a52c7
+ a9e5/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Déplacement et remise à ciel ouvert du T
+ öbelibach – École de Malerva
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

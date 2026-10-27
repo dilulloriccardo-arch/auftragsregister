@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:279a4d9e-8426-4bd4-9bce-404eee8b31be-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261119T110000Z
+SUMMARY:Eingabefrist: Projnum_B1 / Achat de prestations de numérisation de
+  collections patrimoniales sur supports "objets"
+DESCRIPTION:Auftraggeber: Centrale municipale d'achat et d'impression de la
+  Ville de Genève\nEingabefrist: 19.11.2026\, 12.00 Uhr\nIm Register: htt
+ ps://auftragsregister.ch/de/auftrag/279a4d9e-8426-4bd4-9bce-404eee8b31be/\
+ nAmtliche Publikation: https://www.simap.ch/de/project-detail/279a4d9e-842
+ 6-4bd4-9bce-404eee8b31be
+URL:https://auftragsregister.ch/de/auftrag/279a4d9e-8426-4bd4-9bce-404eee8b
+ 31be/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projnum_B1 / Achat de prestations de numérisatio
+ n de collections patrimoniales sur supports "objets"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

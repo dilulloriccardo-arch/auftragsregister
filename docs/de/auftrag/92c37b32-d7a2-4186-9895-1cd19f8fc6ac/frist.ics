@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92c37b32-d7a2-4186-9895-1cd19f8fc6ac-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Eingabefrist: 00870 Gewächshäuser ZOQ\, Ersatz Kälteanlage BKP24
+ 0/BKP246
+DESCRIPTION:Auftraggeber: Universität Zürich - Bauprojektmanagement\nEing
+ abefrist: 25.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/92c37b32-d7a2-4186-9895-1cd19f8fc6ac/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/92c37b32-d7a2-4186-9895-1cd19f8fc6a
+ c
+URL:https://auftragsregister.ch/de/auftrag/92c37b32-d7a2-4186-9895-1cd19f8f
+ c6ac/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 00870 Gewächshäuser ZOQ\, Ersatz Kälteanlage B
+ KP240/BKP246
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

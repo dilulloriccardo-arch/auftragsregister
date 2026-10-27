@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6190faa-e999-4271-9c79-e63fc86dffb8-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:1
+DTSTART:20261106T140000Z
+SUMMARY:Délai de remise : Concept de distribution et de recharge de la P
+ repaid Card des transports publics et du SwissPass
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB Division Pr
+ oduktion Personenverkehr\nDélai de remise : 06.11.2026\, 15 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/d6190faa-e999-4
+ 271-9c79-e63fc86dffb8/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/d6190faa-e999-4271-9c79-e63fc86dffb8
+URL:https://auftragsregister.ch/fr/auftrag/d6190faa-e999-4271-9c79-e63fc86d
+ ffb8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Concept de distribution et de recharge de 
+ la Prepaid Card des transports publics et du SwissPass
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

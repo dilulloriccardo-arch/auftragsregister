@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f93c53b2-3925-49f1-9c7e-05efc64515f4-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T225900Z
+SUMMARY:Submission deadline: N20.71 MP-180010 - NEB Contournement Le Locle 
+ - Mandataire (APR / DLT) lié aux dangers naturels Locle Ouest (ID 12092)
+DESCRIPTION:Public buyer: Office fédéral des routes OFROU\, Division Infr
+ astructure routière Ouest\, filiale Estavayer-le-Lac\nSubmission deadline
+ : 16 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/f93c53b2-3925-49f1-9c7e-05efc64515f4/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/f93c53b2-3925-49f1-9c7e-05efc64515f4
+URL:https://auftragsregister.ch/en/auftrag/f93c53b2-3925-49f1-9c7e-05efc645
+ 15f4/
+LOCATION:Estavayer-le-Lac
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: N20.71 MP-180010 - NEB Contournement Le Lo
+ cle - Mandataire (APR / DLT) lié aux dangers naturels Locle Ouest (ID 120
+ 92)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

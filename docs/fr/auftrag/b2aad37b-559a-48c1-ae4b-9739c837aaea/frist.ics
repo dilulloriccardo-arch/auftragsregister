@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2aad37b-559a-48c1-ae4b-9739c837aaea-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T130000Z
+SUMMARY:Délai de remise : Sanierung Fohrhölzlistrasse Niederrohrdorf
+DESCRIPTION:Acheteur public : Gemeinde Niederrohrdorf\nDélai de remise
+  : 06.11.2026\, 14 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/b2aad37b-559a-48c1-ae4b-9739c837aaea/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/b2aad37b-559a-48c1-ae4b-97
+ 39c837aaea
+URL:https://auftragsregister.ch/fr/auftrag/b2aad37b-559a-48c1-ae4b-9739c837
+ aaea/
+LOCATION:Niederrohrdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Fohrhölzlistrasse Niederrohrdor
+ f
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

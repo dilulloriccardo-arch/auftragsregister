@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2a6d0fa3-f9db-4498-8513-944f78ade60c-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Eingabefrist: BKP 221.0 Ersatz Fenster aus Holz / Kolinplatz 4\, 63
+ 00 Zug
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Stadt Zug\, Vertreten durch Fin
+ anzdepartement Abteilung Immobilien\nEingabefrist: 01.12.2026\, 16.00 Uhr
+ \nIm Register: https://auftragsregister.ch/de/auftrag/2a6d0fa3-f9db-4498-8
+ 513-944f78ade60c/\nAmtliche Publikation: https://www.simap.ch/de/project-d
+ etail/2a6d0fa3-f9db-4498-8513-944f78ade60c
+URL:https://auftragsregister.ch/de/auftrag/2a6d0fa3-f9db-4498-8513-944f78ad
+ e60c/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 221.0 Ersatz Fenster aus Holz / Kolinplatz 4\
+ , 6300 Zug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

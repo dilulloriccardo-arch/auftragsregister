@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7c77aa62-e10f-4617-ad92-2620c9996b8f-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261203T110000Z
+SUMMARY:Scadenza: Démolition et construction d'un EMS à Bex. Carrelages (
+ sols et murs).
+DESCRIPTION:Ente pubblico: Fondation des Maisons de Retraites du District d
+ 'Aigle. EMS Résidence Grande Fontaine (bureau d'architecte counson archit
+ ecte sarl).\nScadenza: 03.12.2026\, 12:00\nNel registro: https://auftragsr
+ egister.ch/it/auftrag/7c77aa62-e10f-4617-ad92-2620c9996b8f/\nPubblicazione
+  ufficiale: https://www.simap.ch/it/project-detail/7c77aa62-e10f-4617-ad92
+ -2620c9996b8f
+URL:https://auftragsregister.ch/it/auftrag/7c77aa62-e10f-4617-ad92-2620c999
+ 6b8f/
+LOCATION:Bex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Démolition et construction d'un EMS à Bex. Carrelag
+ es (sols et murs).
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

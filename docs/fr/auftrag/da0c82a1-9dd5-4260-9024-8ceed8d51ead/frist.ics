@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da0c82a1-9dd5-4260-9024-8ceed8d51ead-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:0
+DTSTART:20261112T225900Z
+SUMMARY:Délai de remise : MP-240065 Assainissement complet des centres d
+ 'entretien de Göschenen et d'Airolo\, maître d'œuvre général (GP) pou
+ r es phases MK - IBN
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3 Zofingen Filiale Zofingen\nDélai de remise
+  : 12.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/da0c82a1-9dd5-4260-9024-8ceed8d51ead/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/da0c82a1-9dd5-4260-9024-8c
+ eed8d51ead
+URL:https://auftragsregister.ch/fr/auftrag/da0c82a1-9dd5-4260-9024-8ceed8d5
+ 1ead/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-240065 Assainissement complet des centr
+ es d'entretien de Göschenen et d'Airolo\, maître d'œuvre général (GP)
+  pour es phases MK - IBN
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

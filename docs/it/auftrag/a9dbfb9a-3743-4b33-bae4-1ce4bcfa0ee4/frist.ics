@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a9dbfb9a-3743-4b33-bae4-1ce4bcfa0ee4-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Scadenza: Komplettsanierung Schwyzerstrasse Richterswil
+DESCRIPTION:Ente pubblico: Gemeinde Richterswil\, Abteilung Werke\nScadenza
+ : 06.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag
+ /a9dbfb9a-3743-4b33-bae4-1ce4bcfa0ee4/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/a9dbfb9a-3743-4b33-bae4-1ce4bcfa0ee4
+URL:https://auftragsregister.ch/it/auftrag/a9dbfb9a-3743-4b33-bae4-1ce4bcfa
+ 0ee4/
+LOCATION:Richterswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Komplettsanierung Schwyzerstrasse Richterswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

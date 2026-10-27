@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c6b9a2ce-b16e-4721-9e6e-e705560b8364-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:2
+DTSTART:20261109T140000Z
+SUMMARY:Scadenza: Torsionsstab\, Hebel
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB Division Produkt
+ ion Personenverkehr\nScadenza: 09.11.2026\, 15:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/c6b9a2ce-b16e-4721-9e6e-e705560b8364/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/c6b9a2ce-b16e-4
+ 721-9e6e-e705560b8364
+URL:https://auftragsregister.ch/it/auftrag/c6b9a2ce-b16e-4721-9e6e-e705560b
+ 8364/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Torsionsstab\, Hebel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ac70a2b-31b7-494e-a23f-7225dc414312-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Délai de remise : VEB Verdrängungen B10 / B - BKP 261 Aufzugsan
+ lagen (Gastro / Staff)
+DESCRIPTION:Acheteur public : Flughafen Zürich AG\nDélai de remise : 
+ 27.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/0ac70a2b-31b7-494e-a23f-7225dc414312/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/0ac70a2b-31b7-494e-a23f-7225dc
+ 414312
+URL:https://auftragsregister.ch/fr/auftrag/0ac70a2b-31b7-494e-a23f-7225dc41
+ 4312/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : VEB Verdrängungen B10 / B - BKP 261 Aufzu
+ gsanlagen (Gastro / Staff)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

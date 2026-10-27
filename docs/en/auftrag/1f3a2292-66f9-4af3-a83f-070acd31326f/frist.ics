@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1f3a2292-66f9-4af3-a83f-070acd31326f-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Submission deadline: Erweiterte Umgebungsgestaltung Sternmatt 2\, B
+ aar
+DESCRIPTION:Public buyer: Einwohnergemeinde Baar\, Planung / Bau - Hochbau\
+ nSubmission deadline: 6 Nov 2026\, 12:00\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/1f3a2292-66f9-4af3-a83f-070acd31326f/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/1f3a2292-66f9-4af3-a83
+ f-070acd31326f
+URL:https://auftragsregister.ch/en/auftrag/1f3a2292-66f9-4af3-a83f-070acd31
+ 326f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Erweiterte Umgebungsgestaltung Sternmatt 2
+ \, Baar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

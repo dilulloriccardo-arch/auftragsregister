@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1f3a2292-66f9-4af3-a83f-070acd31326f-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Scadenza: Erweiterte Umgebungsgestaltung Sternmatt 2\, Baar
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Baar\, Planung / Bau - Hochbau
+ \nScadenza: 06.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/
+ it/auftrag/1f3a2292-66f9-4af3-a83f-070acd31326f/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/1f3a2292-66f9-4af3-a83f-070acd3132
+ 6f
+URL:https://auftragsregister.ch/it/auftrag/1f3a2292-66f9-4af3-a83f-070acd31
+ 326f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erweiterte Umgebungsgestaltung Sternmatt 2\, Baar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ae327183-cf66-43ec-97b7-65b1797bab73-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Délai de remise : Refit Tango Acquisition et intégration de nou
+ veaux afficheurs extérieurs
+DESCRIPTION:Acheteur public : Baselland Transport AG\nDélai de remise 
+ : 08.01.2027\, 12 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/ae327183-cf66-43ec-97b7-65b1797bab73/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/ae327183-cf66-43ec-97b7-65b17
+ 97bab73
+URL:https://auftragsregister.ch/fr/auftrag/ae327183-cf66-43ec-97b7-65b1797b
+ ab73/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Refit Tango Acquisition et intégration de
+  nouveaux afficheurs extérieurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

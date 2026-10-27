@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:26bc61e9-08b5-4cb0-866c-a2fafae3278a-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261118T100000Z
+SUMMARY:Délai de remise : Sanierung Oberhausenstrasse und Ersatz Werklei
+ tungen inkl. barrierefreier Umbau Bushaltestellen
+DESCRIPTION:Acheteur public : Gemeinde Wettswil am Albis - Bau und Infras
+ truktur\nDélai de remise : 18.11.2026\, 11 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/26bc61e9-08b5-4cb0-866c-a2fafa
+ e3278a/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /26bc61e9-08b5-4cb0-866c-a2fafae3278a
+URL:https://auftragsregister.ch/fr/auftrag/26bc61e9-08b5-4cb0-866c-a2fafae3
+ 278a/
+LOCATION:Wettswil am Albis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Oberhausenstrasse und Ersatz Wer
+ kleitungen inkl. barrierefreier Umbau Bushaltestellen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

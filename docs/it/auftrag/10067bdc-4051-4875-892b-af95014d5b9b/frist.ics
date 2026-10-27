@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10067bdc-4051-4875-892b-af95014d5b9b-frist@auftragsregister.ch
+DTSTAMP:20260822T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Scadenza: ARA Thurau\, Tiefbauarbeiten Etappe West
+DESCRIPTION:Ente pubblico: Abwasserverband Thurau\nScadenza: 09.11.2026\, 1
+ 2:00\nNel registro: https://auftragsregister.ch/it/auftrag/10067bdc-4051-4
+ 875-892b-af95014d5b9b/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/10067bdc-4051-4875-892b-af95014d5b9b
+URL:https://auftragsregister.ch/it/auftrag/10067bdc-4051-4875-892b-af95014d
+ 5b9b/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ARA Thurau\, Tiefbauarbeiten Etappe West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

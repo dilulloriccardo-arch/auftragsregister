@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3697fec-210a-4187-b9e3-fc25bdbc5bcb-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T113000Z
+SUMMARY:Submission deadline: Elagage des lignes aériennes
+DESCRIPTION:Public buyer: Services industriels de Genève (SIG) - Direction
+  Achats\nSubmission deadline: 11 Nov 2026\, 12:30\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/e3697fec-210a-4187-b9e3-fc25bdbc5bcb/\n
+ Official publication: https://www.simap.ch/en/project-detail/e3697fec-210a
+ -4187-b9e3-fc25bdbc5bcb
+URL:https://auftragsregister.ch/en/auftrag/e3697fec-210a-4187-b9e3-fc25bdbc
+ 5bcb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Elagage des lignes aériennes
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

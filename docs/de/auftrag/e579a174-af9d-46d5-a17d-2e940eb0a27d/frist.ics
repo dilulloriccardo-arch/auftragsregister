@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e579a174-af9d-46d5-a17d-2e940eb0a27d-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261030T160000Z
+SUMMARY:Eingabefrist: Strassenraumgestaltung Obergass- Kirchgass\, Eschenba
+ ch
+DESCRIPTION:Auftraggeber: Gemeinde Eschenbach ( Brunner + Partner AG)\nEing
+ abefrist: 30.10.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/e579a174-af9d-46d5-a17d-2e940eb0a27d/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/e579a174-af9d-46d5-a17d-2e940eb0a27
+ d
+URL:https://auftragsregister.ch/de/auftrag/e579a174-af9d-46d5-a17d-2e940eb0
+ a27d/
+LOCATION:Eschenbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Strassenraumgestaltung Obergass- Kirchgass\, Esch
+ enbach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

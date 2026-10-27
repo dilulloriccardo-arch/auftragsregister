@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac05338b-2a16-4045-b84d-5e4ff7f83b2d-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Scadenza: Stazione di potabilizzazione Ai Ronchi - Rivestimenti in 
+ resina
+DESCRIPTION:Ente pubblico: Consorzio Acquedotto Regionale del Mendrisiotto 
+ (ARM)\nScadenza: 20.11.2026\, 11:00\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/ac05338b-2a16-4045-b84d-5e4ff7f83b2d/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/ac05338b-2a16-4045-b84d-5e4ff
+ 7f83b2d
+URL:https://auftragsregister.ch/it/auftrag/ac05338b-2a16-4045-b84d-5e4ff7f8
+ 3b2d/
+LOCATION:Riva San Vitale
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Stazione di potabilizzazione Ai Ronchi - Rivestimenti
+  in resina
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

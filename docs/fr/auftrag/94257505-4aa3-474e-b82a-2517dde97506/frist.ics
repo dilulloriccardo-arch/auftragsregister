@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:94257505-4aa3-474e-b82a-2517dde97506-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20270112T150000Z
+SUMMARY:Délai de remise : BKP 421 Jardinage
+DESCRIPTION:Acheteur public : Stiftung Alterswohnungen der Stadt Zürich 
+ - SAW (Fokus Baumanagement)\nDélai de remise : 12.01.2027\, 16 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/94257505-4aa
+ 3-474e-b82a-2517dde97506/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/94257505-4aa3-474e-b82a-2517dde97506
+URL:https://auftragsregister.ch/fr/auftrag/94257505-4aa3-474e-b82a-2517dde9
+ 7506/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 421 Jardinage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

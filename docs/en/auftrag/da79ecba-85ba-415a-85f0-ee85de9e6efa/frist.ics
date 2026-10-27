@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da79ecba-85ba-415a-85f0-ee85de9e6efa-frist@auftragsregister.ch
+DTSTAMP:20261025T000000Z
+SEQUENCE:1
+DTSTART:20261029T225900Z
+SUMMARY:Submission deadline: Mandat: Entwicklung\, Umsetzung und Einführun
+ g der Versorgungsregion Brugg (Alters- und Langzeitversorgung) – Pilotpr
+ ojekt
+DESCRIPTION:Public buyer: Brugg Regio\, Regionalplanungsverband Brugg\, Arb
+ eitsgruppe Gesundheit\nSubmission deadline: 29 Oct 2026\, 23:59\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/da79ecba-85ba-415a-85f0-e
+ e85de9e6efa/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /da79ecba-85ba-415a-85f0-ee85de9e6efa
+URL:https://auftragsregister.ch/en/auftrag/da79ecba-85ba-415a-85f0-ee85de9e
+ 6efa/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mandat: Entwicklung\, Umsetzung und Einfü
+ hrung der Versorgungsregion Brugg (Alters- und Langzeitversorgung) – Pil
+ otprojekt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

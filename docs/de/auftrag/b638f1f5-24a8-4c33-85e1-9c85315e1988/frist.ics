@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b638f1f5-24a8-4c33-85e1-9c85315e1988-frist@auftragsregister.ch
+DTSTAMP:20260813T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Eingabefrist: NextGen Backup Software 2026
+DESCRIPTION:Auftraggeber: Stadt Zürich\, Organisation und Informatik (OIZ)
+ \nEingabefrist: 02.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregi
+ ster.ch/de/auftrag/b638f1f5-24a8-4c33-85e1-9c85315e1988/\nAmtliche Publika
+ tion: https://www.simap.ch/de/project-detail/b638f1f5-24a8-4c33-85e1-9c853
+ 15e1988
+URL:https://auftragsregister.ch/de/auftrag/b638f1f5-24a8-4c33-85e1-9c85315e
+ 1988/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: NextGen Backup Software 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

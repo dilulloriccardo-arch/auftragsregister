@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4d31c5f9-1443-4932-8712-f7dc8192d466-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Eingabefrist: Rahmenvertrag Ersatz und Erneuerung Türschliesssyste
+ me Einwohnergemeinde Dottikon AG
+DESCRIPTION:Auftraggeber: Gemeindeverwaltung Dottikon\nEingabefrist: 09.11.
+ 2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/4d3
+ 1c5f9-1443-4932-8712-f7dc8192d466/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/4d31c5f9-1443-4932-8712-f7dc8192d466
+URL:https://auftragsregister.ch/de/auftrag/4d31c5f9-1443-4932-8712-f7dc8192
+ d466/
+LOCATION:Dottikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rahmenvertrag Ersatz und Erneuerung Türschliesss
+ ysteme Einwohnergemeinde Dottikon AG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

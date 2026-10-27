@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c91c3cc4-c93d-4197-869c-3e879158463e-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261125T123000Z
+SUMMARY:Eingabefrist: KH4\, ENE\, Etappe 2\, km 02.27 - 02.90\, Baumeister-
+  und Belagsarbeiten
+DESCRIPTION:Auftraggeber: Amt für Mobilität\nEingabefrist: 25.11.2026\, 1
+ 3.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c91c3cc4-c9
+ 3d-4197-869c-3e879158463e/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/c91c3cc4-c93d-4197-869c-3e879158463e
+URL:https://auftragsregister.ch/de/auftrag/c91c3cc4-c93d-4197-869c-3e879158
+ 463e/
+LOCATION:Ennetbürgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: KH4\, ENE\, Etappe 2\, km 02.27 - 02.90\, Baumeis
+ ter- und Belagsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

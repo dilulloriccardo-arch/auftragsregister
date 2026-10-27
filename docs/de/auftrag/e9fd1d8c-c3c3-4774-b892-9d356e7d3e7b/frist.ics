@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9fd1d8c-c3c3-4774-b892-9d356e7d3e7b-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261102T080000Z
+SUMMARY:Eingabefrist: IWB\, Wasserleitungsrohre (Guss) und Formstücke
+DESCRIPTION:Auftraggeber: IWB Industrielle Werke Basel\nEingabefrist: 02.11
+ .2026\, 9.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e9f
+ d1d8c-c3c3-4774-b892-9d356e7d3e7b/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/e9fd1d8c-c3c3-4774-b892-9d356e7d3e7b
+URL:https://auftragsregister.ch/de/auftrag/e9fd1d8c-c3c3-4774-b892-9d356e7d
+ 3e7b/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: IWB\, Wasserleitungsrohre (Guss) und Formstücke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5b3e71f-ba84-439d-9996-2c4b17a83189-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:1
+DTSTART:20261030T100000Z
+SUMMARY:Scadenza: Réfection des chemins AF
+DESCRIPTION:Ente pubblico: Commune de Sullens (Chevalier SA\, bureau d'ing
+ énieurs)\nScadenza: 30.10.2026\, 11:00\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/a5b3e71f-ba84-439d-9996-2c4b17a83189/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/a5b3e71f-ba84-439d-9996-2
+ c4b17a83189
+URL:https://auftragsregister.ch/it/auftrag/a5b3e71f-ba84-439d-9996-2c4b17a8
+ 3189/
+LOCATION:Sullens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Réfection des chemins AF
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

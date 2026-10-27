@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d1cc207-cfa8-47d2-8e98-54c110f8e7ff-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Submission deadline: Institut für Rechtsmedizin (IRM)\, Umbau Ersa
+ tzstandort\, BKP 272.2 Allgemeine Metallbauarbeiten
+DESCRIPTION:Public buyer: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nSubmis
+ sion deadline: 16 Nov 2026\, 12:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/0d1cc207-cfa8-47d2-8e98-54c110f8e7ff/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/0d1cc207-cfa8-47d2-8e98-54c1
+ 10f8e7ff
+URL:https://auftragsregister.ch/en/auftrag/0d1cc207-cfa8-47d2-8e98-54c110f8
+ e7ff/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Institut für Rechtsmedizin (IRM)\, Umbau 
+ Ersatzstandort\, BKP 272.2 Allgemeine Metallbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

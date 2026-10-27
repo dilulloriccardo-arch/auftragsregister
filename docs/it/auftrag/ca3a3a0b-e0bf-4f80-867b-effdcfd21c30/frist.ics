@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ca3a3a0b-e0bf-4f80-867b-effdcfd21c30-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261203T130000Z
+SUMMARY:Scadenza: 01.517 Nuova centrale del freddo - Isolazioni impianti
+DESCRIPTION:Ente pubblico: Ente Ospedaliero Cantonale - Area Infrastrutture
+  e Operations\nScadenza: 03.12.2026\, 14:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/ca3a3a0b-e0bf-4f80-867b-effdcfd21c30/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/ca3a3a0b-e0bf-4f80-86
+ 7b-effdcfd21c30
+URL:https://auftragsregister.ch/it/auftrag/ca3a3a0b-e0bf-4f80-867b-effdcfd2
+ 1c30/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 01.517 Nuova centrale del freddo - Isolazioni impiant
+ i
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

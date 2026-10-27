@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d156f5b1-2898-4179-82a7-3738e2cc3fe2-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T150000Z
+SUMMARY:Délai de remise : Concours 288 Licences software Mobile Iron
+DESCRIPTION:Acheteur public : Centro sistemi informativi\nDélai de remis
+ e : 10.11.2026\, 16 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/d156f5b1-2898-4179-82a7-3738e2cc3fe2/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/d156f5b1-2898-4179-82a7-3
+ 738e2cc3fe2
+URL:https://auftragsregister.ch/fr/auftrag/d156f5b1-2898-4179-82a7-3738e2cc
+ 3fe2/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Concours 288 Licences software Mobile Iron
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0befdfd1-0c0d-4402-9b48-aa92b081f3be-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T083000Z
+SUMMARY:Scadenza: Concorso per la fornitura di generi alimentari 01.01.2027
+  - 31.12.2027
+DESCRIPTION:Ente pubblico: ECAM - Ente Case Anziani Mendrisiotto Franco Bas
+ si\nScadenza: 23.11.2026\, 09:30\nNel registro: https://auftragsregister.c
+ h/it/auftrag/0befdfd1-0c0d-4402-9b48-aa92b081f3be/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/0befdfd1-0c0d-4402-9b48-aa92b081
+ f3be
+URL:https://auftragsregister.ch/it/auftrag/0befdfd1-0c0d-4402-9b48-aa92b081
+ f3be/
+LOCATION:Mendrisio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso per la fornitura di generi alimentari 01.01.
+ 2027 - 31.12.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

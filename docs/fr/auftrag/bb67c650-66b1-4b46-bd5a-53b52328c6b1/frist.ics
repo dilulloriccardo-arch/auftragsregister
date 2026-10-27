@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb67c650-66b1-4b46-bd5a-53b52328c6b1-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Délai de remise : v1172 Travaux de génie civil pour les conduit
+ es à longue distance enterrées
+DESCRIPTION:Acheteur public : DIB - Elektrizitätswerk der Stadt Zürich 
+ (ewz)\nDélai de remise : 12.11.2026\, 12 h 00\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/bb67c650-66b1-4b46-bd5a-53b52328c6
+ b1/\nPublication officielle : https://www.simap.ch/fr/project-detail/bb6
+ 7c650-66b1-4b46-bd5a-53b52328c6b1
+URL:https://auftragsregister.ch/fr/auftrag/bb67c650-66b1-4b46-bd5a-53b52328
+ c6b1/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : v1172 Travaux de génie civil pour les con
+ duites à longue distance enterrées
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f14965e-1e24-4e81-871c-74e43bb4d675-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Délai de remise : Renouvellement de voies YVWB-BRI Km1.435 à 2.
+ 040 inclus 2 PN - Prestations de construction GC - phases 52/53
+DESCRIPTION:Acheteur public : TRAVYS SA\nDélai de remise : 09.11.2026\
+ , 11 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag
+ /5f14965e-1e24-4e81-871c-74e43bb4d675/\nPublication officielle : https:/
+ /www.simap.ch/fr/project-detail/5f14965e-1e24-4e81-871c-74e43bb4d675
+URL:https://auftragsregister.ch/fr/auftrag/5f14965e-1e24-4e81-871c-74e43bb4
+ d675/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Renouvellement de voies YVWB-BRI Km1.435 
+ à 2.040 inclus 2 PN - Prestations de construction GC - phases 52/53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

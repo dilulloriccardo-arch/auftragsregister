@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:189737d4-8f58-4235-b38a-3d8c619a6f66-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Scadenza: Contrat cadre pour la founiture de divers matériels\, li
+ cences et prestations CISCO
+DESCRIPTION:Ente pubblico: Centrale d'achats et d'ingénierie biomédicale 
+ (CAIB)\nScadenza: 23.11.2026\nNel registro: https://auftragsregister.ch/it
+ /auftrag/189737d4-8f58-4235-b38a-3d8c619a6f66/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/189737d4-8f58-4235-b38a-3d8c619a6f66
+URL:https://auftragsregister.ch/it/auftrag/189737d4-8f58-4235-b38a-3d8c619a
+ 6f66/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Contrat cadre pour la founiture de divers matériels\
+ , licences et prestations CISCO
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

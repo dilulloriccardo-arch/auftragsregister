@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2db35a0f-8b7c-46fc-b9bc-9fdece6b90ae-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Délai de remise : Mise en conformité des arrêts de bus selon l
+ a loi LHand
+DESCRIPTION:Acheteur public : Service technique communal\nDélai de remis
+ e : 23.11.2026\, 11 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/2db35a0f-8b7c-46fc-b9bc-9fdece6b90ae/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/2db35a0f-8b7c-46fc-b9bc-9
+ fdece6b90ae
+URL:https://auftragsregister.ch/fr/auftrag/2db35a0f-8b7c-46fc-b9bc-9fdece6b
+ 90ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mise en conformité des arrêts de bus sel
+ on la loi LHand
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

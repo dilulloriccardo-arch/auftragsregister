@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:70c201b0-bc13-4c48-aceb-c2c289d6eeda-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Délai de remise : Neubau Primaschulanlage und Sporthalle Ferrach
+ \, 8630 Rüti ZH - 23 Installations électriques
+DESCRIPTION:Acheteur public : Gemeinde Rüti ZH\nDélai de remise : 16.
+ 11.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/70c201b0-bc13-4c48-aceb-c2c289d6eeda/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/70c201b0-bc13-4c48-aceb-c2c289d6ee
+ da
+URL:https://auftragsregister.ch/fr/auftrag/70c201b0-bc13-4c48-aceb-c2c289d6
+ eeda/
+LOCATION:Rüti ZH
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Primaschulanlage und Sporthalle Fer
+ rach\, 8630 Rüti ZH - 23 Installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

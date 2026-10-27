@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5e97f7e9-d6bf-421d-9a09-6fb258db8541-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261104T150000Z
+SUMMARY:Délai de remise : EDFR II: Site Bellechasse\, seconde étape de 
+ planification pénitentiaire
+DESCRIPTION:Acheteur public : Etat de Fribourg\, Service des bâtiments\n
+ Délai de remise : 04.11.2026\, 16 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/5e97f7e9-d6bf-421d-9a09-6fb258db8541/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/5e97f7e9-d
+ 6bf-421d-9a09-6fb258db8541
+URL:https://auftragsregister.ch/fr/auftrag/5e97f7e9-d6bf-421d-9a09-6fb258db
+ 8541/
+LOCATION:Sugiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EDFR II: Site Bellechasse\, seconde étape
+  de planification pénitentiaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

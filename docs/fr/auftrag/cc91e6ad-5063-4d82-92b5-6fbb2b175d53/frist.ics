@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc91e6ad-5063-4d82-92b5-6fbb2b175d53-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T080000Z
+SUMMARY:Délai de remise : IWB\, accord-cadre pour les arboristes-élague
+ urs
+DESCRIPTION:Acheteur public : IWB Industrielle Werke Basel\nDélai de rem
+ ise : 18.11.2026\, 9 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/cc91e6ad-5063-4d82-92b5-6fbb2b175d53/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/cc91e6ad-5063-4d82-92b5-
+ 6fbb2b175d53
+URL:https://auftragsregister.ch/fr/auftrag/cc91e6ad-5063-4d82-92b5-6fbb2b17
+ 5d53/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IWB\, accord-cadre pour les arboristes-él
+ agueurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

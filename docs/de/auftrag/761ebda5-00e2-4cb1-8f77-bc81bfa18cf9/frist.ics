@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:761ebda5-00e2-4cb1-8f77-bc81bfa18cf9-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261106T100000Z
+SUMMARY:Eingabefrist: CE4600008887 - RC 1 - Préverenges - Lonay - Morges
+DESCRIPTION:Auftraggeber: Direction générale de la mobilité et des route
+ s - Division infrastructures\nEingabefrist: 06.11.2026\, 11.00 Uhr\nIm Re
+ gister: https://auftragsregister.ch/de/auftrag/761ebda5-00e2-4cb1-8f77-bc8
+ 1bfa18cf9/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/7
+ 61ebda5-00e2-4cb1-8f77-bc81bfa18cf9
+URL:https://auftragsregister.ch/de/auftrag/761ebda5-00e2-4cb1-8f77-bc81bfa1
+ 8cf9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CE4600008887 - RC 1 - Préverenges - Lonay - Morg
+ es
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

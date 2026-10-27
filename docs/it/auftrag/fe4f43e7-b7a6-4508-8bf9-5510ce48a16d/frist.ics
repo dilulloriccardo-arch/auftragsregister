@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe4f43e7-b7a6-4508-8bf9-5510ce48a16d-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261111T133000Z
+SUMMARY:Scadenza: Concorso per la fornitura di sacchi per rifiuti per gli a
+ nni 2027 e 2028
+DESCRIPTION:Ente pubblico: Divisione spazi urbani\, Servizi tecnici\nScaden
+ za: 11.11.2026\, 14:30\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/fe4f43e7-b7a6-4508-8bf9-5510ce48a16d/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/fe4f43e7-b7a6-4508-8bf9-5510ce48a16d
+URL:https://auftragsregister.ch/it/auftrag/fe4f43e7-b7a6-4508-8bf9-5510ce48
+ a16d/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso per la fornitura di sacchi per rifiuti per g
+ li anni 2027 e 2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

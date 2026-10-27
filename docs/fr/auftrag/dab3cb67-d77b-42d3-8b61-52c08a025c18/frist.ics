@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dab3cb67-d77b-42d3-8b61-52c08a025c18-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261104T100000Z
+SUMMARY:Délai de remise : Sanierung Furtbachstrasse - Abschnitt Wüeri M
+ itte
+DESCRIPTION:Acheteur public : EFP AG\nDélai de remise : 04.11.2026\, 1
+ 1 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/da
+ b3cb67-d77b-42d3-8b61-52c08a025c18/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/dab3cb67-d77b-42d3-8b61-52c08a025c18
+URL:https://auftragsregister.ch/fr/auftrag/dab3cb67-d77b-42d3-8b61-52c08a02
+ 5c18/
+LOCATION:Buchs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Furtbachstrasse - Abschnitt Wüe
+ ri Mitte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

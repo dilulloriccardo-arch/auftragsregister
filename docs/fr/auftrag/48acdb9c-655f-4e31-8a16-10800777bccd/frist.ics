@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:48acdb9c-655f-4e31-8a16-10800777bccd-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261104T100000Z
+SUMMARY:Délai de remise : Sanierung Rainstrasse Etappe 2\, Oetwil an der
+  Limmat
+DESCRIPTION:Acheteur public : Landis AG\nDélai de remise : 04.11.2026\
+ , 11 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag
+ /48acdb9c-655f-4e31-8a16-10800777bccd/\nPublication officielle : https:/
+ /www.simap.ch/fr/project-detail/48acdb9c-655f-4e31-8a16-10800777bccd
+URL:https://auftragsregister.ch/fr/auftrag/48acdb9c-655f-4e31-8a16-10800777
+ bccd/
+LOCATION:Oetwil an der Limmat
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Rainstrasse Etappe 2\, Oetwil an
+  der Limmat
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

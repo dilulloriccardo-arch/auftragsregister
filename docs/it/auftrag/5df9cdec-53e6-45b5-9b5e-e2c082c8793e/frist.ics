@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5df9cdec-53e6-45b5-9b5e-e2c082c8793e-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Scadenza: Catering Tagesstrukturen Glarus Nord
+DESCRIPTION:Ente pubblico: Gemeinde Glarus Nord\nScadenza: 09.11.2026\, 12:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/5df9cdec-53e6-45b
+ 5-9b5e-e2c082c8793e/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/5df9cdec-53e6-45b5-9b5e-e2c082c8793e
+URL:https://auftragsregister.ch/it/auftrag/5df9cdec-53e6-45b5-9b5e-e2c082c8
+ 793e/
+LOCATION:Niederurnen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Catering Tagesstrukturen Glarus Nord
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

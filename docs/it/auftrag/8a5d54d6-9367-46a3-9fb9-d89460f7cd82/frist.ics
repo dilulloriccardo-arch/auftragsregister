@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a5d54d6-9367-46a3-9fb9-d89460f7cd82-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261126T153000Z
+SUMMARY:Scadenza: Mont-sur-Rolle. Démolition de la salle existante et cons
+ truction d'une nouvelle salle avec salles de classe
+DESCRIPTION:Ente pubblico: Commune de Mont-sur-Rolle - Ferrari Architectes\
+ nScadenza: 26.11.2026\, 16:30\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/8a5d54d6-9367-46a3-9fb9-d89460f7cd82/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/8a5d54d6-9367-46a3-9fb9-d89460f7cd8
+ 2
+URL:https://auftragsregister.ch/it/auftrag/8a5d54d6-9367-46a3-9fb9-d89460f7
+ cd82/
+LOCATION:Mont-sur-Rolle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mont-sur-Rolle. Démolition de la salle existante et 
+ construction d'une nouvelle salle avec salles de classe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

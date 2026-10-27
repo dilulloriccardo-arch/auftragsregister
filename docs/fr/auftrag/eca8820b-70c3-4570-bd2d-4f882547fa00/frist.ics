@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eca8820b-70c3-4570-bd2d-4f882547fa00-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261110T225800Z
+SUMMARY:Délai de remise : Ultra-high Resolution Electron-beam Lithograph
+ y System
+DESCRIPTION:Acheteur public : ETH Zürich - Abt. Procurement & Export Ser
+ vices\nDélai de remise : 10.11.2026\, 23 h 58\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/eca8820b-70c3-4570-bd2d-4f882547fa
+ 00/\nPublication officielle : https://www.simap.ch/fr/project-detail/eca
+ 8820b-70c3-4570-bd2d-4f882547fa00
+URL:https://auftragsregister.ch/fr/auftrag/eca8820b-70c3-4570-bd2d-4f882547
+ fa00/
+LOCATION:Rüschlikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ultra-high Resolution Electron-beam Lithog
+ raphy System
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:84fcab80-99c5-416f-842b-1cb639fd37b0-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Délai de remise : Livraison\, mise en service et migration de l
+ ’Oracle Database Appliance
+DESCRIPTION:Acheteur public : Amt für Informatik des Kantons Schwyz\nDé
+ lai de remise : 23.11.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/84fcab80-99c5-416f-842b-1cb639fd37b0/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/84fcab80-99c5
+ -416f-842b-1cb639fd37b0
+URL:https://auftragsregister.ch/fr/auftrag/84fcab80-99c5-416f-842b-1cb639fd
+ 37b0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Livraison\, mise en service et migration d
+ e l’Oracle Database Appliance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

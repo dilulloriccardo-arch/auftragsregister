@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a9bdbea-b404-41e0-a042-b047c8068834-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Submission deadline: Village School Campus\, Existing Building – 
+ BKP 211.5 Masonry and Concrete Works
+DESCRIPTION:Public buyer: ARGE GP SCD - c/o Rapp AG\nSubmission deadline: 2
+  Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/5a9bdbea-b404-41e0-a042-b047c8068834/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/5a9bdbea-b404-41e0-a042-b047c8068834
+URL:https://auftragsregister.ch/en/auftrag/5a9bdbea-b404-41e0-a042-b047c806
+ 8834/
+LOCATION:Binningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Village School Campus\, Existing Building 
+ – BKP 211.5 Masonry and Concrete Works
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

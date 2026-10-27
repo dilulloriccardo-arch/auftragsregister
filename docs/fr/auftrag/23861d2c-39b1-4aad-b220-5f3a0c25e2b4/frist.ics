@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23861d2c-39b1-4aad-b220-5f3a0c25e2b4-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261030T080000Z
+SUMMARY:Délai de remise : IWB\, Accumulateur FKW travaux de génie civil
+DESCRIPTION:Acheteur public : IWB Industrielle Werke Basel\nDélai de rem
+ ise : 30.10.2026\, 9 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/23861d2c-39b1-4aad-b220-5f3a0c25e2b4/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/23861d2c-39b1-4aad-b220-
+ 5f3a0c25e2b4
+URL:https://auftragsregister.ch/fr/auftrag/23861d2c-39b1-4aad-b220-5f3a0c25
+ e2b4/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IWB\, Accumulateur FKW travaux de génie c
+ ivil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

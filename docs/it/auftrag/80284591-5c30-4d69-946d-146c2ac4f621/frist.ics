@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:80284591-5c30-4d69-946d-146c2ac4f621-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: Sport- und Freizeitanlage Weyermannshaus\, Gesamtsanierun
+ g\, BKP 201 Baugrubenaushub
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 16.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/80284591-5c30-4d69-946d-146c2ac4f621/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/80284591-5c30-4d69-946d-146c2ac4f621
+URL:https://auftragsregister.ch/it/auftrag/80284591-5c30-4d69-946d-146c2ac4
+ f621/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sport- und Freizeitanlage Weyermannshaus\, Gesamtsani
+ erung\, BKP 201 Baugrubenaushub
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

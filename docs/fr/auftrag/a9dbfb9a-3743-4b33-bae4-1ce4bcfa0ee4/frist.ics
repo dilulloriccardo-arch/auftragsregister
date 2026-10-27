@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a9dbfb9a-3743-4b33-bae4-1ce4bcfa0ee4-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Délai de remise : Komplettsanierung Schwyzerstrasse Richterswil
+DESCRIPTION:Acheteur public : Gemeinde Richterswil\, Abteilung Werke\nDé
+ lai de remise : 06.11.2026\, 12 h 00\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/a9dbfb9a-3743-4b33-bae4-1ce4bcfa0ee4/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/a9dbfb9a-3743
+ -4b33-bae4-1ce4bcfa0ee4
+URL:https://auftragsregister.ch/fr/auftrag/a9dbfb9a-3743-4b33-bae4-1ce4bcfa
+ 0ee4/
+LOCATION:Richterswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Komplettsanierung Schwyzerstrasse Richters
+ wil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

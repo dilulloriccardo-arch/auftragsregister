@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4e175742-d4ec-4c9e-8e5b-6b0dd54ec2c8-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Délai de remise : Sanierung & Erweiterung Schulhaus Feldacker\, 
+ Mels / BKP 281.2 Bodenbeläge aus Linoleum
+DESCRIPTION:Acheteur public : Politische Gemeinde Mels\nDélai de remise
+  : 06.11.2026\nDans le registre : https://auftragsregister.ch/fr/auftr
+ ag/4e175742-d4ec-4c9e-8e5b-6b0dd54ec2c8/\nPublication officielle : https
+ ://www.simap.ch/fr/project-detail/4e175742-d4ec-4c9e-8e5b-6b0dd54ec2c8
+URL:https://auftragsregister.ch/fr/auftrag/4e175742-d4ec-4c9e-8e5b-6b0dd54e
+ c2c8/
+LOCATION:Mels
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung & Erweiterung Schulhaus Feldacke
+ r\, Mels / BKP 281.2 Bodenbeläge aus Linoleum
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

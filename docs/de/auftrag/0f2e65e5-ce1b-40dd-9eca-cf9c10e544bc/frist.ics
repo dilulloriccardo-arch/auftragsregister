@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0f2e65e5-ce1b-40dd-9eca-cf9c10e544bc-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261109T103000Z
+SUMMARY:Eingabefrist: Projet de construction du nouvel EMS à Charmey et de
+  rénovation / Transformations de l'EMS existant en appartement protégés
+  / CFC 221.8 Travaux de Portes automatiques
+DESCRIPTION:Auftraggeber: Réseau Santé et Social de la Gruyère (Joris Pa
+ squier Architectes SA)\nEingabefrist: 09.11.2026\, 11.30 Uhr\nIm Register
+ : https://auftragsregister.ch/de/auftrag/0f2e65e5-ce1b-40dd-9eca-cf9c10e54
+ 4bc/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/0f2e65e
+ 5-ce1b-40dd-9eca-cf9c10e544bc
+URL:https://auftragsregister.ch/de/auftrag/0f2e65e5-ce1b-40dd-9eca-cf9c10e5
+ 44bc/
+LOCATION:Charmey
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projet de construction du nouvel EMS à Charmey e
+ t de rénovation / Transformations de l'EMS existant en appartement proté
+ gés / CFC 221.8 Travaux de Portes automatiques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

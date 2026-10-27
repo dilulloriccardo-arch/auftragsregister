@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c43f7f8-f995-4650-a4d6-385f2634faa6-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261217T160000Z
+SUMMARY:Délai de remise : Sport- und Freizeitanlage Weyermannshaus\, Ges
+ amtsanierung\, BKP 211.1 Gerüstungen
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 17.12.2026\, 17 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/4c43f7f8-f995-4650-a4d6-385f2634faa6/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/4c43f7f8-f9
+ 95-4650-a4d6-385f2634faa6
+URL:https://auftragsregister.ch/fr/auftrag/4c43f7f8-f995-4650-a4d6-385f2634
+ faa6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sport- und Freizeitanlage Weyermannshaus\,
+  Gesamtsanierung\, BKP 211.1 Gerüstungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

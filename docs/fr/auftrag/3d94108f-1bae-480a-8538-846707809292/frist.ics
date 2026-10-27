@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d94108f-1bae-480a-8538-846707809292-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261113T140000Z
+SUMMARY:Délai de remise : FbE-C1E Bâle RB Gl F17-F31 Bâle RB / Ligne 5
+ 22
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Infrastru
+ ktur – Einkauf\, Supply Chain und Produktion\, Einkauf Bauprojekte Regio
+ n Mitte\nDélai de remise : 13.11.2026\, 15 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/3d94108f-1bae-480a-8538-846707
+ 809292/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /3d94108f-1bae-480a-8538-846707809292
+URL:https://auftragsregister.ch/fr/auftrag/3d94108f-1bae-480a-8538-84670780
+ 9292/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : FbE-C1E Bâle RB Gl F17-F31 Bâle RB / Lig
+ ne 522
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

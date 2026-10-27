@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c66ccc50-4a78-43d5-867b-da99be59ab4f-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Eingabefrist: IT-Dienstleistungen Digital Transformation Services &
+  AI Technical Solution & Operation Services
+DESCRIPTION:Auftraggeber: Zürcher Hochschule der Künste\, strategischer E
+ inkauf\nEingabefrist: 06.11.2026\, 23.59 Uhr\nIm Register: https://auftra
+ gsregister.ch/de/auftrag/c66ccc50-4a78-43d5-867b-da99be59ab4f/\nAmtliche P
+ ublikation: https://www.simap.ch/de/project-detail/c66ccc50-4a78-43d5-867b
+ -da99be59ab4f
+URL:https://auftragsregister.ch/de/auftrag/c66ccc50-4a78-43d5-867b-da99be59
+ ab4f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: IT-Dienstleistungen Digital Transformation Servic
+ es & AI Technical Solution & Operation Services
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

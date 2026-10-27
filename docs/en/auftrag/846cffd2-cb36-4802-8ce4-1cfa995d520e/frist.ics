@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:846cffd2-cb36-4802-8ce4-1cfa995d520e-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261103T100000Z
+SUMMARY:Submission deadline: Verlängerung der Varonis-Lizenzen im SaaS-Mod
+ ell
+DESCRIPTION:Public buyer: Service de l'informatique et des télécommunicat
+ ions (SITel)\nSubmission deadline: 3 Nov 2026\, 11:00\nIn the register: 
+ https://auftragsregister.ch/en/auftrag/846cffd2-cb36-4802-8ce4-1cfa995d520
+ e/\nOfficial publication: https://www.simap.ch/en/project-detail/846cffd2-
+ cb36-4802-8ce4-1cfa995d520e
+URL:https://auftragsregister.ch/en/auftrag/846cffd2-cb36-4802-8ce4-1cfa995d
+ 520e/
+LOCATION:Givisiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Verlängerung der Varonis-Lizenzen im SaaS
+ -Modell
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

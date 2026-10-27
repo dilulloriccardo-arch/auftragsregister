@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a4f177e-dce5-4b4e-9ec3-35b8366876e6-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261117T150000Z
+SUMMARY:Délai de remise : Construction d'une nouvelle boucle de chauffag
+ e urbain à Horgen\, de l'usine d'incinération des déchets jusqu'au racc
+ ordement de l'Einsiedlerstrasse
+DESCRIPTION:Acheteur public : Werke Horgen - Fernwärmeversorgung\nDélai
+  de remise : 17.11.2026\, 16 h 00\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/8a4f177e-dce5-4b4e-9ec3-35b8366876e6/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/8a4f177e-dce5-4b
+ 4e-9ec3-35b8366876e6
+URL:https://auftragsregister.ch/fr/auftrag/8a4f177e-dce5-4b4e-9ec3-35b83668
+ 76e6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction d'une nouvelle boucle de chau
+ ffage urbain à Horgen\, de l'usine d'incinération des déchets jusqu'au 
+ raccordement de l'Einsiedlerstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

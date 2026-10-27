@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57f03457-da99-4963-b5c6-05340e134419-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20270127T153000Z
+SUMMARY:Délai de remise : Alpenrhein: Steinlieferungen für Unterhalt "g
+ esetzter" Blockwurf Winter 2027/28
+DESCRIPTION:Acheteur public : Rheinunternehmen\nDélai de remise : 27.0
+ 1.2027\, 16 h 30\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/57f03457-da99-4963-b5c6-05340e134419/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/57f03457-da99-4963-b5c6-05340e13441
+ 9
+URL:https://auftragsregister.ch/fr/auftrag/57f03457-da99-4963-b5c6-05340e13
+ 4419/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Alpenrhein: Steinlieferungen für Unterhal
+ t "gesetzter" Blockwurf Winter 2027/28
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

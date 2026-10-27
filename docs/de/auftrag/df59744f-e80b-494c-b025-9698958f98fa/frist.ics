@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df59744f-e80b-494c-b025-9698958f98fa-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261030T150000Z
+SUMMARY:Eingabefrist: Instandsetzung Dorfstrasse Bristen\, Los 3 + 4
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Silenen\, Amsteg\, Bristen (A. 
+ Kälin AG)\nEingabefrist: 30.10.2026\, 16.00 Uhr\nIm Register: https://au
+ ftragsregister.ch/de/auftrag/df59744f-e80b-494c-b025-9698958f98fa/\nAmtlic
+ he Publikation: https://www.simap.ch/de/project-detail/df59744f-e80b-494c-
+ b025-9698958f98fa
+URL:https://auftragsregister.ch/de/auftrag/df59744f-e80b-494c-b025-9698958f
+ 98fa/
+LOCATION:Bristen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Instandsetzung Dorfstrasse Bristen\, Los 3 + 4
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

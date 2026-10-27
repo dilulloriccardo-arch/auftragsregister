@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fc679ef2-c122-47cb-a710-8ea3be4906a3-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T220000Z
+SUMMARY:Scadenza: Luterbach\, Zuchwilstrasse\, Bahnhof Luterbach-Attisholz\
+ , Neubau - Teilprojekt TP Nord\, Hauptlos Bauarbeiten Tiefbau Bahnhofplatz
+DESCRIPTION:Ente pubblico: Bau- und Justizdepartement des Kantons Solothurn
+ \nScadenza: 13.11.2026\, 23:00\nNel registro: https://auftragsregister.ch/
+ it/auftrag/fc679ef2-c122-47cb-a710-8ea3be4906a3/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/fc679ef2-c122-47cb-a710-8ea3be4906
+ a3
+URL:https://auftragsregister.ch/it/auftrag/fc679ef2-c122-47cb-a710-8ea3be49
+ 06a3/
+LOCATION:Luterbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Luterbach\, Zuchwilstrasse\, Bahnhof Luterbach-Attish
+ olz\, Neubau - Teilprojekt TP Nord\, Hauptlos Bauarbeiten Tiefbau Bahnhofp
+ latz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

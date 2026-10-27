@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:adb9ecf0-8773-42a6-9c4e-2af441ba5d56-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Submission deadline: USZ Campus MITTE 1|2 / BKP 271.14 Gipserarbeit
+ en Los 4 MIT1 Ebene F-J (OV)
+DESCRIPTION:Public buyer: Universitätsspital Zürich\nSubmission deadline:
+  2 Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/adb9ecf0-8773-42a6-9c4e-2af441ba5d56/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/adb9ecf0-8773-42a6-9c4e-2af441ba5d56
+URL:https://auftragsregister.ch/en/auftrag/adb9ecf0-8773-42a6-9c4e-2af441ba
+ 5d56/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: USZ Campus MITTE 1|2 / BKP 271.14 Gipserar
+ beiten Los 4 MIT1 Ebene F-J (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

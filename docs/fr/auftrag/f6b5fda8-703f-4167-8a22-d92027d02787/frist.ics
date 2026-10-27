@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f6b5fda8-703f-4167-8a22-d92027d02787-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261031T225900Z
+SUMMARY:Délai de remise : Travaux de maçonnerie à Urtenen et Schönbü
+ hl \; rénovation du BEFH de la Hindelbankstrasse \; passage piéton sur l
+ e Schützenweg
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 31.10.2026\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/f6b5fda8-703f-4167-8a22-d92027d02787/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/f6b5fda8-703f-4167-8a22-
+ d92027d02787
+URL:https://auftragsregister.ch/fr/auftrag/f6b5fda8-703f-4167-8a22-d92027d0
+ 2787/
+LOCATION:Urtenen-Schönbühl
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Travaux de maçonnerie à Urtenen et Schö
+ nbühl \; rénovation du BEFH de la Hindelbankstrasse \; passage piéton s
+ ur le Schützenweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

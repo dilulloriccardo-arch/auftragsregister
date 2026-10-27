@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86b7a2d9-6e4d-4476-ab91-3f9bccab0887-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:2
+DTSTART:20261204T140000Z
+SUMMARY:Submission deadline: APFZ Kommunikations- und Rechnerplattform für
+  Schienenfahrzeuge
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB Division Produkti
+ on Personenverkehr\nSubmission deadline: 4 Dec 2026\, 15:00\nIn the regi
+ ster: https://auftragsregister.ch/en/auftrag/86b7a2d9-6e4d-4476-ab91-3f9bc
+ cab0887/\nOfficial publication: https://www.simap.ch/en/project-detail/86b
+ 7a2d9-6e4d-4476-ab91-3f9bccab0887
+URL:https://auftragsregister.ch/en/auftrag/86b7a2d9-6e4d-4476-ab91-3f9bccab
+ 0887/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: APFZ Kommunikations- und Rechnerplattform 
+ für Schienenfahrzeuge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

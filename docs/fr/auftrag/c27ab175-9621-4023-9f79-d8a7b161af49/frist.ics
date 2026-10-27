@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c27ab175-9621-4023-9f79-d8a7b161af49-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : EBP 595 AFW Bümpliz Ost-Süd-Bienzgut Baume
+ ister
+DESCRIPTION:Acheteur public : Energie Wasser Bern\nDélai de remise : 3
+ 0.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/c27ab175-9621-4023-9f79-d8a7b161af49/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/c27ab175-9621-4023-9f79-d8a7b1
+ 61af49
+URL:https://auftragsregister.ch/fr/auftrag/c27ab175-9621-4023-9f79-d8a7b161
+ af49/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EBP 595 AFW Bümpliz Ost-Süd-Bienzgut B
+ aumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

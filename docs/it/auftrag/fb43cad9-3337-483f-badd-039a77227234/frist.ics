@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb43cad9-3337-483f-badd-039a77227234-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261127T090000Z
+SUMMARY:Scadenza: Fischingen\, H468.1\, Ersatzneubau Hauptstrasse\, Buhwile
+ rstrasse - Stägwis
+DESCRIPTION:Ente pubblico: Kanton Thurgau\, Kantonales Tiefbauamt\nScadenza
+ : 27.11.2026\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag
+ /fb43cad9-3337-483f-badd-039a77227234/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/fb43cad9-3337-483f-badd-039a77227234
+URL:https://auftragsregister.ch/it/auftrag/fb43cad9-3337-483f-badd-039a7722
+ 7234/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fischingen\, H468.1\, Ersatzneubau Hauptstrasse\, Buh
+ wilerstrasse - Stägwis
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

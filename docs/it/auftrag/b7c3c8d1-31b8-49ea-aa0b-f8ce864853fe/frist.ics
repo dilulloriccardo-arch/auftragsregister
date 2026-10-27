@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b7c3c8d1-31b8-49ea-aa0b-f8ce864853fe-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Scadenza: Rund um den OP\, BKP 277.21 Systemtrennwände aus Holz
+DESCRIPTION:Ente pubblico: Hirslanden AG\, Corporate Office (Ghisleni Partn
+ er AG)\nScadenza: 28.10.2026\nNel registro: https://auftragsregister.ch/it
+ /auftrag/b7c3c8d1-31b8-49ea-aa0b-f8ce864853fe/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/b7c3c8d1-31b8-49ea-aa0b-f8ce864853fe
+URL:https://auftragsregister.ch/it/auftrag/b7c3c8d1-31b8-49ea-aa0b-f8ce8648
+ 53fe/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rund um den OP\, BKP 277.21 Systemtrennwände aus Hol
+ z
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

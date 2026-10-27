@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b801988-390a-4f80-a8e4-abbb89d4e7af-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20270129T150000Z
+SUMMARY:Scadenza: Dienstwagen 20xx Kranmodul
+DESCRIPTION:Ente pubblico: Regionalverkehr Bern-Solothurn AG\nScadenza: 29.
+ 01.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/4b80
+ 1988-390a-4f80-a8e4-abbb89d4e7af/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/4b801988-390a-4f80-a8e4-abbb89d4e7af
+URL:https://auftragsregister.ch/it/auftrag/4b801988-390a-4f80-a8e4-abbb89d4
+ e7af/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Dienstwagen 20xx Kranmodul
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

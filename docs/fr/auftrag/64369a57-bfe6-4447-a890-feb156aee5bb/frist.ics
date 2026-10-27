@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:64369a57-bfe6-4447-a890-feb156aee5bb-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261117T120000Z
+SUMMARY:Délai de remise : Maintien en condition opérationnelle de la pl
+ ateforme Azure DevOps Server\, accompagnement CI/CD et expertise architect
+ urale
+DESCRIPTION:Acheteur public : Service de l'informatique et des télécomm
+ unications (SITel)\nDélai de remise : 17.11.2026\, 13 h 00\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/64369a57-bfe6-4447-a8
+ 90-feb156aee5bb/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/64369a57-bfe6-4447-a890-feb156aee5bb
+URL:https://auftragsregister.ch/fr/auftrag/64369a57-bfe6-4447-a890-feb156ae
+ e5bb/
+LOCATION:Givisiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Maintien en condition opérationnelle de l
+ a plateforme Azure DevOps Server\, accompagnement CI/CD et expertise archi
+ tecturale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

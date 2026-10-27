@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ab50406-3a2e-4c85-97c7-f5463a41f2a9-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T110000Z
+SUMMARY:Scadenza: MO-PR : 082 Bretigny-sur-Morrens 1 - 094 Morrens 5+1B
+DESCRIPTION:Ente pubblico: DGTL-Direction du cadastre et de la géoinformat
+ ion (DCG)\nScadenza: 18.11.2026\, 12:00\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/0ab50406-3a2e-4c85-97c7-f5463a41f2a9/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/0ab50406-3a2e-4c85-97c7-f
+ 5463a41f2a9
+URL:https://auftragsregister.ch/it/auftrag/0ab50406-3a2e-4c85-97c7-f5463a41
+ f2a9/
+LOCATION:Bretigny-sur-Morrens\, 1054 Morrens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MO-PR : 082 Bretigny-sur-Morrens 1 - 094 Morrens 5+1B
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

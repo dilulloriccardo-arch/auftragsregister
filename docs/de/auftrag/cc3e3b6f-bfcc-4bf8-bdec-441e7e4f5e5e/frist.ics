@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc3e3b6f-bfcc-4bf8-bdec-441e7e4f5e5e-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T160000Z
+SUMMARY:Eingabefrist: Einbau von Schienen und Gleisanlagen
+DESCRIPTION:Auftraggeber: Verkehrsbetriebe Zürich (VBZ)\nEingabefrist: 23.
+ 11.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ cc3e3b6f-bfcc-4bf8-bdec-441e7e4f5e5e/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/cc3e3b6f-bfcc-4bf8-bdec-441e7e4f5e5e
+URL:https://auftragsregister.ch/de/auftrag/cc3e3b6f-bfcc-4bf8-bdec-441e7e4f
+ 5e5e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Einbau von Schienen und Gleisanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

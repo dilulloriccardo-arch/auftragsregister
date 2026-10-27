@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:901e85f7-3a84-4e03-a4fb-c7029a9968fe-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261106T160000Z
+SUMMARY:Délai de remise : Services de nettoyage à l'école cantonale de
+  Rychenberg à Winterthur
+DESCRIPTION:Acheteur public : Kanton Zürich\, Bildungsdirektion\, Mittel
+ schul- und Berufsbildungsamt\nDélai de remise : 06.11.2026\, 17 h 0
+ 0\nDans le registre : https://auftragsregister.ch/fr/auftrag/901e85f7-3a
+ 84-4e03-a4fb-c7029a9968fe/\nPublication officielle : https://www.simap.c
+ h/fr/project-detail/901e85f7-3a84-4e03-a4fb-c7029a9968fe
+URL:https://auftragsregister.ch/fr/auftrag/901e85f7-3a84-4e03-a4fb-c7029a99
+ 68fe/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Services de nettoyage à l'école cantonal
+ e de Rychenberg à Winterthur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

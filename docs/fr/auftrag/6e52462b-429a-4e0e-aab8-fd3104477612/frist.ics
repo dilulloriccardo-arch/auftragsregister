@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e52462b-429a-4e0e-aab8-fd3104477612-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T103000Z
+SUMMARY:Délai de remise : P2025/206\, Musée du Léman. Appels d'offres 
+ ingénieur sanitaire
+DESCRIPTION:Acheteur public : Ville de Nyon - Service d'architecture\nDé
+ lai de remise : 07.12.2026\, 11 h 30\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/6e52462b-429a-4e0e-aab8-fd3104477612/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/6e52462b-429a
+ -4e0e-aab8-fd3104477612
+URL:https://auftragsregister.ch/fr/auftrag/6e52462b-429a-4e0e-aab8-fd310447
+ 7612/
+LOCATION:Nyon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : P2025/206\, Musée du Léman. Appels d'off
+ res ingénieur sanitaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8fea909b-39fa-486f-b5f9-12f2153e9ad5-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261029T110000Z
+SUMMARY:Délai de remise : BFGS II Schule Oberentfelden\, BKP 250 Sanitä
+ ranlagen
+DESCRIPTION:Acheteur public : Kanton Aargau - Departement Finanzen und Re
+ ssourcen - Immobilien Aargau\nDélai de remise : 29.10.2026\, 12 h 0
+ 0\nDans le registre : https://auftragsregister.ch/fr/auftrag/8fea909b-39
+ fa-486f-b5f9-12f2153e9ad5/\nPublication officielle : https://www.simap.c
+ h/fr/project-detail/8fea909b-39fa-486f-b5f9-12f2153e9ad5
+URL:https://auftragsregister.ch/fr/auftrag/8fea909b-39fa-486f-b5f9-12f2153e
+ 9ad5/
+LOCATION:Oberentfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BFGS II Schule Oberentfelden\, BKP 250 San
+ itäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

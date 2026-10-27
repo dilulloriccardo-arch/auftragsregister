@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed98d423-1e99-405f-94ad-4b9f5aaa2f70-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Scadenza: Inselspital: 140 SWAN Migration Gebäudeautomation
+DESCRIPTION:Ente pubblico: Insel Gruppe AG - Direktion Immobilien und Betri
+ eb\nScadenza: 20.11.2026\, 23:59\nNel registro: https://auftragsregister.c
+ h/it/auftrag/ed98d423-1e99-405f-94ad-4b9f5aaa2f70/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/ed98d423-1e99-405f-94ad-4b9f5aaa
+ 2f70
+URL:https://auftragsregister.ch/it/auftrag/ed98d423-1e99-405f-94ad-4b9f5aaa
+ 2f70/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Inselspital: 140 SWAN Migration Gebäudeautomation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

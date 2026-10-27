@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:423d1ee7-2df7-4b7c-949a-89cba01823cd-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Scadenza: Integrales Risikomanagement Strassen IRM-S
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 11.11.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/423d1ee7-2df7-4
+ b7c-949a-89cba01823cd/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/423d1ee7-2df7-4b7c-949a-89cba01823cd
+URL:https://auftragsregister.ch/it/auftrag/423d1ee7-2df7-4b7c-949a-89cba018
+ 23cd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Integrales Risikomanagement Strassen IRM-S
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

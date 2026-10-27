@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8e379626-aeec-4da4-948a-f04c5def4882-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261211T160000Z
+SUMMARY:Délai de remise : Restauration de la libre circulation des poiss
+ ons / Réfection des centrales électriques / Renouvellement de la concess
+ ion\, phases SIA 32 à 53
+DESCRIPTION:Acheteur public : Nordstrom GmbH (HYCON GmbH)\nDélai de remi
+ se : 11.12.2026\, 17 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/8e379626-aeec-4da4-948a-f04c5def4882/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/8e379626-aeec-4da4-948a-
+ f04c5def4882
+URL:https://auftragsregister.ch/fr/auftrag/8e379626-aeec-4da4-948a-f04c5def
+ 4882/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Restauration de la libre circulation des p
+ oissons / Réfection des centrales électriques / Renouvellement de la con
+ cession\, phases SIA 32 à 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

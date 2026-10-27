@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b0d7ee00-5461-4797-96fc-1af4c17119ea-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T225900Z
+SUMMARY:Délai de remise : Installation de filtration de l'arsenic
+DESCRIPTION:Acheteur public : Gemeinde St. Moritz\nDélai de remise : 1
+ 0.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/b0d7ee00-5461-4797-96fc-1af4c17119ea/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/b0d7ee00-5461-4797-96fc-1af4c1
+ 7119ea
+URL:https://auftragsregister.ch/fr/auftrag/b0d7ee00-5461-4797-96fc-1af4c171
+ 19ea/
+LOCATION:St. Moritz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Installation de filtration de l'arsenic
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

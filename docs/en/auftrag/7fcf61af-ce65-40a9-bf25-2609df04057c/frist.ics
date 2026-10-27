@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7fcf61af-ce65-40a9-bf25-2609df04057c-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261031T110000Z
+SUMMARY:Submission deadline: Beleuchtungssanierung Stiftung zuwebe\, Untere
+  Rainstrasse 31\, 6341 Baar
+DESCRIPTION:Public buyer: elmaplan ag\nSubmission deadline: 31 Oct 2026\,
+  12:00\nIn the register: https://auftragsregister.ch/en/auftrag/7fcf61af-c
+ e65-40a9-bf25-2609df04057c/\nOfficial publication: https://www.simap.ch/en
+ /project-detail/7fcf61af-ce65-40a9-bf25-2609df04057c
+URL:https://auftragsregister.ch/en/auftrag/7fcf61af-ce65-40a9-bf25-2609df04
+ 057c/
+LOCATION:Baar
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beleuchtungssanierung Stiftung zuwebe\, Un
+ tere Rainstrasse 31\, 6341 Baar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f8ff5ca0-66b9-4370-b9fc-685bc98defbb-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Submission deadline: Acquisition d'un chargeur télescopique élect
+ rique
+DESCRIPTION:Public buyer: Ville de Gland (Hymexia Sàrl)\nSubmission deadli
+ ne: 6 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/f8ff5ca0-66b9-4370-b9fc-685bc98defbb/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/f8ff5ca0-66b9-4370-b9fc-685bc98defbb
+URL:https://auftragsregister.ch/en/auftrag/f8ff5ca0-66b9-4370-b9fc-685bc98d
+ efbb/
+LOCATION:Gland
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Acquisition d'un chargeur télescopique é
+ lectrique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

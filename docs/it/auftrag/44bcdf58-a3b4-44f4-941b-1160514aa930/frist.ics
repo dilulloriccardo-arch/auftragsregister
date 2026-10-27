@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44bcdf58-a3b4-44f4-941b-1160514aa930-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Scadenza: Bau Nr. 08069 - Hornbach\, Abschnitt Bellerivestrasse bis
+  See
+DESCRIPTION:Ente pubblico: Tiefbauamt\, Abt. Realisierung\nScadenza: 26.11.
+ 2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/44bcdf5
+ 8-a3b4-44f4-941b-1160514aa930/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/44bcdf58-a3b4-44f4-941b-1160514aa930
+URL:https://auftragsregister.ch/it/auftrag/44bcdf58-a3b4-44f4-941b-1160514a
+ a930/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bau Nr. 08069 - Hornbach\, Abschnitt Bellerivestrasse
+  bis See
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

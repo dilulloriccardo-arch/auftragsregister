@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a769810a-01dc-49e3-a488-a560da0dc0bc-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Submission deadline: 281 03 Parquet and linoleum flooring
+DESCRIPTION:Public buyer: Vollenweider Baurealisation GmbH\nSubmission dead
+ line: 20 Nov 2026\, 15:00\nIn the register: https://auftragsregister.ch/
+ en/auftrag/a769810a-01dc-49e3-a488-a560da0dc0bc/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/a769810a-01dc-49e3-a488-a560da0dc0bc
+URL:https://auftragsregister.ch/en/auftrag/a769810a-01dc-49e3-a488-a560da0d
+ c0bc/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 281 03 Parquet and linoleum flooring
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

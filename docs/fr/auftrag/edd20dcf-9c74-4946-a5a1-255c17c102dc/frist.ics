@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edd20dcf-9c74-4946-a5a1-255c17c102dc-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Délai de remise : BKP 263.0 Installations de nettoyage des faça
+ des - Pont de nettoyage
+DESCRIPTION:Acheteur public : Flughafen Zürich AG - ELP\nDélai de remis
+ e : 24.11.2026\, 12 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/edd20dcf-9c74-4946-a5a1-255c17c102dc/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/edd20dcf-9c74-4946-a5a1-2
+ 55c17c102dc
+URL:https://auftragsregister.ch/fr/auftrag/edd20dcf-9c74-4946-a5a1-255c17c1
+ 02dc/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 263.0 Installations de nettoyage des f
+ açades - Pont de nettoyage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

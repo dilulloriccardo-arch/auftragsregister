@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ad08e233-9cde-43da-ba2a-da9181cc5a70-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261203T090000Z
+SUMMARY:Submission deadline: CDM123.0 - Fenêtres\, portes\, portes automat
+ iques en métal pour la Cité de la Musique de la commune de Lugano
+DESCRIPTION:Public buyer: Fondazione Conservatorio della Svizzera italiana\
+ nSubmission deadline: 3 Dec 2026\, 10:00\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/ad08e233-9cde-43da-ba2a-da9181cc5a70/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/ad08e233-9cde-43da-ba2
+ a-da9181cc5a70
+URL:https://auftragsregister.ch/en/auftrag/ad08e233-9cde-43da-ba2a-da9181cc
+ 5a70/
+LOCATION:Lugano-Besso
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: CDM123.0 - Fenêtres\, portes\, portes aut
+ omatiques en métal pour la Cité de la Musique de la commune de Lugano
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

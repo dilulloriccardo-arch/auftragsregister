@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e483df8d-4bea-4226-9339-d0d653d73126-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Eingabefrist: Umbau Hallen- und Freibad Talegg 8424 Embrach
+DESCRIPTION:Auftraggeber: Gemeinde Embrach\, Abteilung Bau (MINT Baumanagem
+ ent GmbH)\nEingabefrist: 24.11.2026\, 16.00 Uhr\nIm Register: https://auf
+ tragsregister.ch/de/auftrag/e483df8d-4bea-4226-9339-d0d653d73126/\nAmtlich
+ e Publikation: https://www.simap.ch/de/project-detail/e483df8d-4bea-4226-9
+ 339-d0d653d73126
+URL:https://auftragsregister.ch/de/auftrag/e483df8d-4bea-4226-9339-d0d653d7
+ 3126/
+LOCATION:Embrach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Umbau Hallen- und Freibad Talegg 8424 Embrach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

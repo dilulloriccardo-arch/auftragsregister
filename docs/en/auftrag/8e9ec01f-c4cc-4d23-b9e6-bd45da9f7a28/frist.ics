@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8e9ec01f-c4cc-4d23-b9e6-bd45da9f7a28-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Submission deadline: Hauterive/FR (Schweiz) – Ehemalige Deponie L
+ a Pila – Ausarbeitung des Sanierungsprojekts gemäss Altlasten-Verordnun
+ g (AltlV)
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Freiburg\nSubmission deadl
+ ine: 14 Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/8e9ec01f-c4cc-4d23-b9e6-bd45da9f7a28/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/8e9ec01f-c4cc-4d23-b9e6-bd45da9f7a28
+URL:https://auftragsregister.ch/en/auftrag/8e9ec01f-c4cc-4d23-b9e6-bd45da9f
+ 7a28/
+LOCATION:Freiburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Hauterive/FR (Schweiz) – Ehemalige Depon
+ ie La Pila – Ausarbeitung des Sanierungsprojekts gemäss Altlasten-Veror
+ dnung (AltlV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

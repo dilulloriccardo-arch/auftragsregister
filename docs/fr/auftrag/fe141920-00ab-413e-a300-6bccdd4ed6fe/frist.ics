@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe141920-00ab-413e-a300-6bccdd4ed6fe-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Délai de remise : BKP 285 Traitement des surfaces intérieures
+DESCRIPTION:Acheteur public : Stiftung Alterswohnungen der Stadt Zürich 
+ - SAW (Fokus Baumanagement)\nDélai de remise : 03.11.2026\, 12 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/fe141920-00a
+ b-413e-a300-6bccdd4ed6fe/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/fe141920-00ab-413e-a300-6bccdd4ed6fe
+URL:https://auftragsregister.ch/fr/auftrag/fe141920-00ab-413e-a300-6bccdd4e
+ d6fe/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 285 Traitement des surfaces intérieur
+ es
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

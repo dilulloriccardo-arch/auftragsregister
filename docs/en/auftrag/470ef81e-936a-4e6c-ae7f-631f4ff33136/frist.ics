@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:470ef81e-936a-4e6c-ae7f-631f4ff33136-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261118T140000Z
+SUMMARY:Submission deadline: Pratteln\, Sekundarschule Fröschmatt\, Erneue
+ rung Schulanlage / Gebäudeautomation
+DESCRIPTION:Public buyer: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nSubmission deadline: 18 Nov 2026\, 15:00\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/470ef81e-936a-4e6c-ae7f-631f4ff33136/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/470ef81e-936a-4e6c
+ -ae7f-631f4ff33136
+URL:https://auftragsregister.ch/en/auftrag/470ef81e-936a-4e6c-ae7f-631f4ff3
+ 3136/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Pratteln\, Sekundarschule Fröschmatt\, Er
+ neuerung Schulanlage / Gebäudeautomation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

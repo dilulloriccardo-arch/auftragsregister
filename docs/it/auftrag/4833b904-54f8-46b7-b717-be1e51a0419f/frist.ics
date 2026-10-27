@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4833b904-54f8-46b7-b717-be1e51a0419f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261030T225500Z
+SUMMARY:Scadenza: Ökologische Aufwertung Mühlbach Titt - Baumeisterarbeit
+ en
+DESCRIPTION:Ente pubblico: Stadt Chur\, Tiefbaudienste\nScadenza: 30.10.202
+ 6\, 23:55\nNel registro: https://auftragsregister.ch/it/auftrag/4833b904-5
+ 4f8-46b7-b717-be1e51a0419f/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/4833b904-54f8-46b7-b717-be1e51a0419f
+URL:https://auftragsregister.ch/it/auftrag/4833b904-54f8-46b7-b717-be1e51a0
+ 419f/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ökologische Aufwertung Mühlbach Titt - Baumeisterar
+ beiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

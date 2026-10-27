@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76067e5a-e329-4206-ab9e-961c7c9ad34e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T100000Z
+SUMMARY:Submission deadline: Prestations de revêtements de sols - CFC 281
+DESCRIPTION:Public buyer: Hospice général\nSubmission deadline: 1 Dec 2
+ 026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/76067
+ e5a-e329-4206-ab9e-961c7c9ad34e/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/76067e5a-e329-4206-ab9e-961c7c9ad34e
+URL:https://auftragsregister.ch/en/auftrag/76067e5a-e329-4206-ab9e-961c7c9a
+ d34e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Prestations de revêtements de sols - CFC 
+ 281
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

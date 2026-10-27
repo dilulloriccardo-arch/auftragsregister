@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8803ca4-87ee-48c2-ba19-037256c005e8-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Délai de remise : Fourniture\, montage et mise en service de sys
+ temès de câbles HT 220 kV au poste électrique de Laufenburg
+DESCRIPTION:Acheteur public : Swissgrid AG - Asset & Maintenance\nDélai 
+ de remise : 15.01.2027\, 23 h 59\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/d8803ca4-87ee-48c2-ba19-037256c005e8/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/d8803ca4-87ee-48c
+ 2-ba19-037256c005e8
+URL:https://auftragsregister.ch/fr/auftrag/d8803ca4-87ee-48c2-ba19-037256c0
+ 05e8/
+LOCATION:Laufenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture\, montage et mise en service de
+  systemès de câbles HT 220 kV au poste électrique de Laufenburg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

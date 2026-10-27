@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8e9ec01f-c4cc-4d23-b9e6-bd45da9f7a28-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Délai de remise : Hauterive/FR (Suisse) - Ancienne décharge de 
+ La Pila - Elaboration du projet d'assainissement selon l'OSites
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Freiburg\nDélai de 
+ remise : 14.12.2026\, 23 h 59\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/8e9ec01f-c4cc-4d23-b9e6-bd45da9f7a28/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/8e9ec01f-c4cc-4d23-b
+ 9e6-bd45da9f7a28
+URL:https://auftragsregister.ch/fr/auftrag/8e9ec01f-c4cc-4d23-b9e6-bd45da9f
+ 7a28/
+LOCATION:Freiburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Hauterive/FR (Suisse) - Ancienne décharge
+  de La Pila - Elaboration du projet d'assainissement selon l'OSites
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:013129cc-75a7-40e5-92be-fef9f713877b-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:1
+DTSTART:20261029T140000Z
+SUMMARY:Délai de remise : Composants mécaniques
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB Division Pr
+ oduktion Personenverkehr\nDélai de remise : 29.10.2026\, 15 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/013129cc-75a7-4
+ 0e5-92be-fef9f713877b/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/013129cc-75a7-40e5-92be-fef9f713877b
+URL:https://auftragsregister.ch/fr/auftrag/013129cc-75a7-40e5-92be-fef9f713
+ 877b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Composants mécaniques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

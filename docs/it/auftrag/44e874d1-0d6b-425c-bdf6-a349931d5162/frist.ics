@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44e874d1-0d6b-425c-bdf6-a349931d5162-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: Fourniture de Monographies Imprimées @EPFL
+DESCRIPTION:Ente pubblico: EPFL - Service des Achats\nScadenza: 09.11.2026\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/44e874d1-0d6
+ b-425c-bdf6-a349931d5162/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/44e874d1-0d6b-425c-bdf6-a349931d5162
+URL:https://auftragsregister.ch/it/auftrag/44e874d1-0d6b-425c-bdf6-a349931d
+ 5162/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fourniture de Monographies Imprimées @EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8571d6ca-838f-4199-9a0c-99ac5bf8d695-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261126T140000Z
+SUMMARY:Submission deadline: Ausschreibungsunterlagen "Mittagessen für die
+  Tagesstrukturen der Volksschule Emmen
+DESCRIPTION:Public buyer: Gemeinde Emmen\nSubmission deadline: 26 Nov 202
+ 6\, 15:00\nIn the register: https://auftragsregister.ch/en/auftrag/8571d6c
+ a-838f-4199-9a0c-99ac5bf8d695/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/8571d6ca-838f-4199-9a0c-99ac5bf8d695
+URL:https://auftragsregister.ch/en/auftrag/8571d6ca-838f-4199-9a0c-99ac5bf8
+ d695/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibungsunterlagen "Mittagessen für
+  die Tagesstrukturen der Volksschule Emmen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

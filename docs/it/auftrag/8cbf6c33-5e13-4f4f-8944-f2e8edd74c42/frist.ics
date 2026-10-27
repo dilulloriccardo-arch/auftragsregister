@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8cbf6c33-5e13-4f4f-8944-f2e8edd74c42-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261217T160000Z
+SUMMARY:Scadenza: Sport- und Freizeitanlage Weyermannshaus\, Gesamtsanierun
+ g\, BKP 214 Montagebau in Holz
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 17.12.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/8cbf6c33-5e13-4f4f-8944-f2e8edd74c42/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/8cbf6c33-5e13-4f4f-8944-f2e8edd74c42
+URL:https://auftragsregister.ch/it/auftrag/8cbf6c33-5e13-4f4f-8944-f2e8edd7
+ 4c42/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sport- und Freizeitanlage Weyermannshaus\, Gesamtsani
+ erung\, BKP 214 Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

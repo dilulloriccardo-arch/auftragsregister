@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bfc6ceff-9ba4-4017-94b3-3ff0e764fbf3-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261117T150000Z
+SUMMARY:Délai de remise : Agrandissement et rénovation de l'école du B
+ elvédère_CFC 215.2_Construction légère préfabriquée_Façade bois
+DESCRIPTION:Acheteur public : Commune de Chêne-Bougeries - Giorgis Rodri
+ guez Architectes SA\nDélai de remise : 17.11.2026\, 16 h 00\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/bfc6ceff-9ba4-4017-9
+ 4b3-3ff0e764fbf3/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/bfc6ceff-9ba4-4017-94b3-3ff0e764fbf3
+URL:https://auftragsregister.ch/fr/auftrag/bfc6ceff-9ba4-4017-94b3-3ff0e764
+ fbf3/
+LOCATION:Chêne-Bougeries
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Agrandissement et rénovation de l'école 
+ du Belvédère_CFC 215.2_Construction légère préfabriquée_Façade bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

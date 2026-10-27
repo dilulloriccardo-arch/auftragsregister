@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f488dfe7-38aa-4e5c-b87e-4d7872e11888-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261102T153000Z
+SUMMARY:Scadenza: UNI - Bastions Central _ CFC233.00 - Lustrerie sur mesure
+DESCRIPTION:Ente pubblico: Office Cantonale des Bâtiments (OCBA)\nScadenza
+ : 02.11.2026\, 16:30\nNel registro: https://auftragsregister.ch/it/auftrag
+ /f488dfe7-38aa-4e5c-b87e-4d7872e11888/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/f488dfe7-38aa-4e5c-b87e-4d7872e11888
+URL:https://auftragsregister.ch/it/auftrag/f488dfe7-38aa-4e5c-b87e-4d7872e1
+ 1888/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: UNI - Bastions Central _ CFC233.00 - Lustrerie sur me
+ sure
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

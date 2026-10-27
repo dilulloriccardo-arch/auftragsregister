@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f6b5fda8-703f-4167-8a22-d92027d02787-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261031T225900Z
+SUMMARY:Scadenza: Baumeisterarbeiten Urtenen Schönbühl Sanierung FGS Hind
+ elbankstrasse Trottoirüberfahrt Schützenweg
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 31.10.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/f6b5fda8-7
+ 03f-4167-8a22-d92027d02787/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/f6b5fda8-703f-4167-8a22-d92027d02787
+URL:https://auftragsregister.ch/it/auftrag/f6b5fda8-703f-4167-8a22-d92027d0
+ 2787/
+LOCATION:Urtenen-Schönbühl
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Baumeisterarbeiten Urtenen Schönbühl Sanierung FGS 
+ Hindelbankstrasse Trottoirüberfahrt Schützenweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

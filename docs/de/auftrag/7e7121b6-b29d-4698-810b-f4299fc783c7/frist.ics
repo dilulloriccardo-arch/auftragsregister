@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7e7121b6-b29d-4698-810b-f4299fc783c7-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261123T080000Z
+SUMMARY:Eingabefrist: IWB\, Tiefbauarbeiten Nauenstrasse United und Nauenst
+ rasse West
+DESCRIPTION:Auftraggeber: IWB Industrielle Werke Basel\nEingabefrist: 23.11
+ .2026\, 9.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/7e7
+ 121b6-b29d-4698-810b-f4299fc783c7/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/7e7121b6-b29d-4698-810b-f4299fc783c7
+URL:https://auftragsregister.ch/de/auftrag/7e7121b6-b29d-4698-810b-f4299fc7
+ 83c7/
+LOCATION:Basel-Stadt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: IWB\, Tiefbauarbeiten Nauenstrasse United und Nau
+ enstrasse West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f9bdd335-3623-4486-a165-1a646d35cf10-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261027T225900Z
+SUMMARY:Submission deadline: Centro Sanitario Bregaglia\, Umbau Casa Ganzon
+ i - BKP 230 Elektroanlagen
+DESCRIPTION:Public buyer: Centro Sanitario Bregaglia\nSubmission deadline: 
+ 27 Oct 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auf
+ trag/f9bdd335-3623-4486-a165-1a646d35cf10/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/f9bdd335-3623-4486-a165-1a646d35cf10
+URL:https://auftragsregister.ch/en/auftrag/f9bdd335-3623-4486-a165-1a646d35
+ cf10/
+LOCATION:Promontogno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Centro Sanitario Bregaglia\, Umbau Casa Ga
+ nzoni - BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

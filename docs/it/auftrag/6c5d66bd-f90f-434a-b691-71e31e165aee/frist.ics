@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c5d66bd-f90f-434a-b691-71e31e165aee-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Scadenza: ETH Zurigo\, LCA\, impianto fotovoltaico
+DESCRIPTION:Ente pubblico: ETH Zürich - REM / Abt. Procurement Services VP
+ IN\nScadenza: 02.12.2026\, 23:59\nNel registro: https://auftragsregister.c
+ h/it/auftrag/6c5d66bd-f90f-434a-b691-71e31e165aee/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/6c5d66bd-f90f-434a-b691-71e31e16
+ 5aee
+URL:https://auftragsregister.ch/it/auftrag/6c5d66bd-f90f-434a-b691-71e31e16
+ 5aee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ETH Zurigo\, LCA\, impianto fotovoltaico
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

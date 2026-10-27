@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fc6c2d0e-7572-4443-9273-88b2415f384f-frist@auftragsregister.ch
+DTSTAMP:20261018T000000Z
+SEQUENCE:1
+DTSTART:20261203T140000Z
+SUMMARY:Délai de remise : Birsfelden - Neue Ortsdurchfahrt / Information
+  & Kommunikation
+DESCRIPTION:Acheteur public : Zentrale Beschaffungsstelle Kanton Basel-La
+ ndschaft\nDélai de remise : 03.12.2026\, 15 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/fc6c2d0e-7572-4443-9273-88b241
+ 5f384f/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /fc6c2d0e-7572-4443-9273-88b2415f384f
+URL:https://auftragsregister.ch/fr/auftrag/fc6c2d0e-7572-4443-9273-88b2415f
+ 384f/
+LOCATION:Birsfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Birsfelden - Neue Ortsdurchfahrt / Informa
+ tion & Kommunikation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

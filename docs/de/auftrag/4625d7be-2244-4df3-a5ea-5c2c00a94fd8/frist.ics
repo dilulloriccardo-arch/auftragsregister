@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4625d7be-2244-4df3-a5ea-5c2c00a94fd8-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Eingabefrist: CSUM2 - Réalisation d'un bâtiment dans le prolongem
+ ent de la CSUM - Fenêtres en bois-métal
+DESCRIPTION:Auftraggeber: Commune de Laténa (mch-consultants)\nEingabefris
+ t: 04.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/au
+ ftrag/4625d7be-2244-4df3-a5ea-5c2c00a94fd8/\nAmtliche Publikation: https:/
+ /www.simap.ch/de/project-detail/4625d7be-2244-4df3-a5ea-5c2c00a94fd8
+URL:https://auftragsregister.ch/de/auftrag/4625d7be-2244-4df3-a5ea-5c2c00a9
+ 4fd8/
+LOCATION:Marin-Epagnier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CSUM2 - Réalisation d'un bâtiment dans le prolo
+ ngement de la CSUM - Fenêtres en bois-métal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

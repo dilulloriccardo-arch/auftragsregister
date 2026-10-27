@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c6b9a2ce-b16e-4721-9e6e-e705560b8364-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:2
+DTSTART:20261109T140000Z
+SUMMARY:Délai de remise : Barres de torsion et des leviers
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB Division Pr
+ oduktion Personenverkehr\nDélai de remise : 09.11.2026\, 15 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/c6b9a2ce-b16e-4
+ 721-9e6e-e705560b8364/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/c6b9a2ce-b16e-4721-9e6e-e705560b8364
+URL:https://auftragsregister.ch/fr/auftrag/c6b9a2ce-b16e-4721-9e6e-e705560b
+ 8364/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Barres de torsion et des leviers
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

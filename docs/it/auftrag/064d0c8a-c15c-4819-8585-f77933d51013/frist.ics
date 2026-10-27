@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:064d0c8a-c15c-4819-8585-f77933d51013-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20270223T225900Z
+SUMMARY:Scadenza: Erneuerung SA-Anlagen Untersax - Haspelgrube
+DESCRIPTION:Ente pubblico: Rhätische Bahn AG\nScadenza: 23.02.2027\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/064d0c8a-c15c-4819-
+ 8585-f77933d51013/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/064d0c8a-c15c-4819-8585-f77933d51013
+URL:https://auftragsregister.ch/it/auftrag/064d0c8a-c15c-4819-8585-f77933d5
+ 1013/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erneuerung SA-Anlagen Untersax - Haspelgrube
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

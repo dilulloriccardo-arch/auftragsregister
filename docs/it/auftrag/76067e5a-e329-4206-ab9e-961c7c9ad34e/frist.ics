@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76067e5a-e329-4206-ab9e-961c7c9ad34e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T100000Z
+SUMMARY:Scadenza: Prestations de revêtements de sols - CFC 281
+DESCRIPTION:Ente pubblico: Hospice général\nScadenza: 01.12.2026\, 11:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/76067e5a-e329-4206-a
+ b9e-961c7c9ad34e/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/76067e5a-e329-4206-ab9e-961c7c9ad34e
+URL:https://auftragsregister.ch/it/auftrag/76067e5a-e329-4206-ab9e-961c7c9a
+ d34e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Prestations de revêtements de sols - CFC 281
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

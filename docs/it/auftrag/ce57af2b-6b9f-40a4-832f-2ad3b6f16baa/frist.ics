@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce57af2b-6b9f-40a4-832f-2ad3b6f16baa-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261030T080000Z
+SUMMARY:Scadenza: IWB\, Waldmanagement Wasserproduktion
+DESCRIPTION:Ente pubblico: IWB Industrielle Werke Basel\nScadenza: 30.10.20
+ 26\, 09:00\nNel registro: https://auftragsregister.ch/it/auftrag/ce57af2b-
+ 6b9f-40a4-832f-2ad3b6f16baa/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/ce57af2b-6b9f-40a4-832f-2ad3b6f16baa
+URL:https://auftragsregister.ch/it/auftrag/ce57af2b-6b9f-40a4-832f-2ad3b6f1
+ 6baa/
+LOCATION:Basel-Stadt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: IWB\, Waldmanagement Wasserproduktion
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

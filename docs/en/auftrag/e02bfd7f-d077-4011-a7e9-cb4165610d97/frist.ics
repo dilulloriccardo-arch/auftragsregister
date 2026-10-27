@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e02bfd7f-d077-4011-a7e9-cb4165610d97-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T130000Z
+SUMMARY:Submission deadline: Umzug und Bau des Naturhistorischen Museums in
+  Freiburg_CFC 273.3 Innenausbau
+DESCRIPTION:Public buyer: Direktion für Raumentwicklung\, Infrastruktur\, 
+ Mobilität und Umwelt - (RIMU) - Hochbauamt\nSubmission deadline: 13 Nov
+  2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag/e0
+ 2bfd7f-d077-4011-a7e9-cb4165610d97/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/e02bfd7f-d077-4011-a7e9-cb4165610d97
+URL:https://auftragsregister.ch/en/auftrag/e02bfd7f-d077-4011-a7e9-cb416561
+ 0d97/
+LOCATION:Freiburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Umzug und Bau des Naturhistorischen Museum
+ s in Freiburg_CFC 273.3 Innenausbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f9c770bf-fd53-48af-a2f3-5c9b4f79c827-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261030T225900Z
+SUMMARY:Délai de remise : Kantonsstrasse Nr. 55\, Nesslau: Sanierung Br
+ ücke Luteren\, Ennetbühl
+DESCRIPTION:Acheteur public : Kanton St.Gallen\, Tiefbauamt\, Strassen- u
+ nd Kunstbauten\nDélai de remise : 30.10.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/f9c770bf-fd53-48af-a2f3-5
+ c9b4f79c827/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/f9c770bf-fd53-48af-a2f3-5c9b4f79c827
+URL:https://auftragsregister.ch/fr/auftrag/f9c770bf-fd53-48af-a2f3-5c9b4f79
+ c827/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kantonsstrasse Nr. 55\, Nesslau: Sanierung
+  Brücke Luteren\, Ennetbühl
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

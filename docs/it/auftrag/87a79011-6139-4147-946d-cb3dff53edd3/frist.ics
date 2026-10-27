@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87a79011-6139-4147-946d-cb3dff53edd3-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Scadenza: ZGSZ l 45799 l BKP273 Schreinerarbeiten
+DESCRIPTION:Ente pubblico: Hochbauamt\, Baubereich B\nScadenza: 25.11.2026\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/87a79011-613
+ 9-4147-946d-cb3dff53edd3/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/87a79011-6139-4147-946d-cb3dff53edd3
+URL:https://auftragsregister.ch/it/auftrag/87a79011-6139-4147-946d-cb3dff53
+ edd3/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ZGSZ l 45799 l BKP273 Schreinerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

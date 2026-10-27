@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86b7a2d9-6e4d-4476-ab91-3f9bccab0887-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:2
+DTSTART:20261204T140000Z
+SUMMARY:Scadenza: APFZ Kommunikations- und Rechnerplattform für Schienenfa
+ hrzeuge
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB Division Produkt
+ ion Personenverkehr\nScadenza: 04.12.2026\, 15:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/86b7a2d9-6e4d-4476-ab91-3f9bccab0887/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/86b7a2d9-6e4d-4
+ 476-ab91-3f9bccab0887
+URL:https://auftragsregister.ch/it/auftrag/86b7a2d9-6e4d-4476-ab91-3f9bccab
+ 0887/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: APFZ Kommunikations- und Rechnerplattform für Schien
+ enfahrzeuge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

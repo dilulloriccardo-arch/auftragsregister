@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:68110e4e-5d53-4b85-98eb-29d83db723b9-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261106T100000Z
+SUMMARY:Délai de remise : CE4600008886 - RC 1 - Denges - Préverenges
+DESCRIPTION:Acheteur public : Direction générale de la mobilité et des
+  routes - Division infrastructures\nDélai de remise : 06.11.2026\, 11
+  h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/681
+ 10e4e-5d53-4b85-98eb-29d83db723b9/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/68110e4e-5d53-4b85-98eb-29d83db723b9
+URL:https://auftragsregister.ch/fr/auftrag/68110e4e-5d53-4b85-98eb-29d83db7
+ 23b9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CE4600008886 - RC 1 - Denges - Préverenge
+ s
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

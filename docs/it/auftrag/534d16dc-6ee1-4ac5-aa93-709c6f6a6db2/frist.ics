@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:534d16dc-6ee1-4ac5-aa93-709c6f6a6db2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Scadenza: Baumeisterarbeiten Instandsetzung Obere Zwischengrabenbr
+ ücke\, Unterseen
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 11.11.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/534d16dc-6
+ ee1-4ac5-aa93-709c6f6a6db2/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/534d16dc-6ee1-4ac5-aa93-709c6f6a6db2
+URL:https://auftragsregister.ch/it/auftrag/534d16dc-6ee1-4ac5-aa93-709c6f6a
+ 6db2/
+LOCATION:Unterseen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Baumeisterarbeiten Instandsetzung Obere Zwischengrabe
+ nbrücke\, Unterseen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

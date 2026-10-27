@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4be476f3-a14f-460b-9cdb-10e0fa7d090f-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T090000Z
+SUMMARY:Scadenza: Ersatzbeschaffung Hubrettungsfahrzeug für die Feuerwehr 
+ Wettingen
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Wettingen\nScadenza: 30.11.202
+ 6\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/4be476f3-a
+ 14f-460b-9cdb-10e0fa7d090f/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/4be476f3-a14f-460b-9cdb-10e0fa7d090f
+URL:https://auftragsregister.ch/it/auftrag/4be476f3-a14f-460b-9cdb-10e0fa7d
+ 090f/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatzbeschaffung Hubrettungsfahrzeug für die Feuerw
+ ehr Wettingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

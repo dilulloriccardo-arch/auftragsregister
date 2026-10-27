@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2dfe5832-a898-4a66-88f3-d7b1ede59e62-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261030T110000Z
+SUMMARY:Délai de remise : MP 2026.08.864 Renouvellement des bancs moyenn
+ e tension (MT) du m1 (Lot 1\, Lot 2 et Lot 3)
+DESCRIPTION:Acheteur public : Transports publics de la région lausannois
+ e sa\nDélai de remise : 30.10.2026\, 12 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/2dfe5832-a898-4a66-88f3-d7b1ede59e6
+ 2/\nPublication officielle : https://www.simap.ch/fr/project-detail/2dfe
+ 5832-a898-4a66-88f3-d7b1ede59e62
+URL:https://auftragsregister.ch/fr/auftrag/2dfe5832-a898-4a66-88f3-d7b1ede5
+ 9e62/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP 2026.08.864 Renouvellement des bancs mo
+ yenne tension (MT) du m1 (Lot 1\, Lot 2 et Lot 3)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

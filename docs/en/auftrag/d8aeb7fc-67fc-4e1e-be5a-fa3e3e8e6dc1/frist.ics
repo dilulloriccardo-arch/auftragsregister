@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e6dc1-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T153000Z
+SUMMARY:Submission deadline: UNI - BASTIONS Central _ CFC373.00 - Sièges r
+ abattables
+DESCRIPTION:Public buyer: Office Cantonale des Bâtiments (OCBA) - Poolaile
+ s\nSubmission deadline: 23 Nov 2026\, 16:30\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e6dc1/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/d8aeb7fc-67fc-4e1e-
+ be5a-fa3e3e8e6dc1
+URL:https://auftragsregister.ch/en/auftrag/d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e
+ 6dc1/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: UNI - BASTIONS Central _ CFC373.00 - Sièg
+ es rabattables
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

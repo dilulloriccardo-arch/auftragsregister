@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b4d9a30-0ca1-4645-9f93-459b48fd3b8a-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261118T110000Z
+SUMMARY:Eingabefrist: RO 1033\, Areal Rosental\, Umbau Laborgebäude\, BKP 
+ 261 Aufzüge
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 18.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/6b4d9a30-0ca1-4645-9f93-459b48fd3b8a/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/6b4d9a30-0ca1-4645-9f93-459b48fd3b8a
+URL:https://auftragsregister.ch/de/auftrag/6b4d9a30-0ca1-4645-9f93-459b48fd
+ 3b8a/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: RO 1033\, Areal Rosental\, Umbau Laborgebäude\, 
+ BKP 261 Aufzüge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

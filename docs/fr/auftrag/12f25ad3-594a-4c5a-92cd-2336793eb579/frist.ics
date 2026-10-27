@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12f25ad3-594a-4c5a-92cd-2336793eb579-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261120T080000Z
+SUMMARY:Délai de remise : Entsorgungspark Adliswil\; Travaux de maçonne
+ rie\, 2e partie
+DESCRIPTION:Acheteur public : Stadt Adliswil Planung Werke\nDélai de rem
+ ise : 20.11.2026\, 9 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/12f25ad3-594a-4c5a-92cd-2336793eb579/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/12f25ad3-594a-4c5a-92cd-
+ 2336793eb579
+URL:https://auftragsregister.ch/fr/auftrag/12f25ad3-594a-4c5a-92cd-2336793e
+ b579/
+LOCATION:Adliswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Entsorgungspark Adliswil\; Travaux de maç
+ onnerie\, 2e partie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a10c7631-35e0-402d-b13b-a151f4888ba9-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261112T130000Z
+SUMMARY:Submission deadline: BKP 214 Holzbau Weisses Schulhaus Schulanlage 
+ 3422 Alchenflüh
+DESCRIPTION:Public buyer: Atelier GSW Partner AG\nSubmission deadline: 12 
+ Nov 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /a10c7631-35e0-402d-b13b-a151f4888ba9/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/a10c7631-35e0-402d-b13b-a151f4888ba9
+URL:https://auftragsregister.ch/en/auftrag/a10c7631-35e0-402d-b13b-a151f488
+ 8ba9/
+LOCATION:Rüdtligen- Alchenflüh
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 214 Holzbau Weisses Schulhaus Schulanl
+ age 3422 Alchenflüh
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

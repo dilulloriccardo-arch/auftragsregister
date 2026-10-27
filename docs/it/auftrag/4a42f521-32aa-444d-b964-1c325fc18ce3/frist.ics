@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4a42f521-32aa-444d-b964-1c325fc18ce3-frist@auftragsregister.ch
+DTSTAMP:20260815T000000Z
+SEQUENCE:2
+DTSTART:20270125T225900Z
+SUMMARY:Scadenza: LPT Bundle (Large Power Transformers)
+DESCRIPTION:Ente pubblico: Swissgrid AG - Asset & Maintenance\nScadenza: 25
+ .01.2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/4a4
+ 2f521-32aa-444d-b964-1c325fc18ce3/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/4a42f521-32aa-444d-b964-1c325fc18ce3
+URL:https://auftragsregister.ch/it/auftrag/4a42f521-32aa-444d-b964-1c325fc1
+ 8ce3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: LPT Bundle (Large Power Transformers)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

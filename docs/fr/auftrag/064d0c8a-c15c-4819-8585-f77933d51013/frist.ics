@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:064d0c8a-c15c-4819-8585-f77933d51013-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20270223T225900Z
+SUMMARY:Délai de remise : Erneuerung SA-Anlagen Untersax - Haspelgrube
+DESCRIPTION:Acheteur public : Rhätische Bahn AG\nDélai de remise : 23
+ .02.2027\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/064d0c8a-c15c-4819-8585-f77933d51013/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/064d0c8a-c15c-4819-8585-f77933d51
+ 013
+URL:https://auftragsregister.ch/fr/auftrag/064d0c8a-c15c-4819-8585-f77933d5
+ 1013/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erneuerung SA-Anlagen Untersax - Haspelgru
+ be
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

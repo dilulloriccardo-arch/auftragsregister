@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:29fbc567-4369-49cb-b5fa-2a72188dd59d-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Eingabefrist: Erweiterung Umbau Sonnegrund Haus für Betagte\, 9533
+  Kirchberg - BKP 281.4 Natursteinarbeiten
+DESCRIPTION:Auftraggeber: Politische Gemeinde Kirchberg\nEingabefrist: 13.1
+ 1.2026\nIm Register: https://auftragsregister.ch/de/auftrag/29fbc567-4369-
+ 49cb-b5fa-2a72188dd59d/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/29fbc567-4369-49cb-b5fa-2a72188dd59d
+URL:https://auftragsregister.ch/de/auftrag/29fbc567-4369-49cb-b5fa-2a72188d
+ d59d/
+LOCATION:Kirchberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Erweiterung Umbau Sonnegrund Haus für Betagte\, 
+ 9533 Kirchberg - BKP 281.4 Natursteinarbeiten
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

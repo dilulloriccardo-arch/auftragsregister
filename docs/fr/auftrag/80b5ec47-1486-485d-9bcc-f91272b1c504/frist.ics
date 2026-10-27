@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:80b5ec47-1486-485d-9bcc-f91272b1c504-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Délai de remise : BAV 57078 Gewächshaus Reckenholzstrasse 150\,
+  Instandsetzung - BKP 211 Baumeisterarbeiten
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 05.11.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/80b5ec47-1486-485d-9bcc-f91272b1c504/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/80b5ec47-1486-485d-9
+ bcc-f91272b1c504
+URL:https://auftragsregister.ch/fr/auftrag/80b5ec47-1486-485d-9bcc-f91272b1
+ c504/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 57078 Gewächshaus Reckenholzstrasse 1
+ 50\, Instandsetzung - BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

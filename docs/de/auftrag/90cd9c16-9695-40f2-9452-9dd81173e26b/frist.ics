@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90cd9c16-9695-40f2-9452-9dd81173e26b-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261217T110000Z
+SUMMARY:Eingabefrist: Betrieb "Housing First Plus"\, 24-h Betrieb stationä
+ res Wohnangebot für Personen mit sozialer oder psychosozialer Beeinträch
+ tigung und/oder Suchtproblematik mit minimaler Wohnkompetenz
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 17.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/90cd9c16-9695-40f2-9452-9dd81173e26b/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/90cd9c16-9695-40f2-9452-9dd81173e26b
+URL:https://auftragsregister.ch/de/auftrag/90cd9c16-9695-40f2-9452-9dd81173
+ e26b/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Betrieb "Housing First Plus"\, 24-h Betrieb stati
+ onäres Wohnangebot für Personen mit sozialer oder psychosozialer Beeintr
+ ächtigung und/oder Suchtproblematik mit minimaler Wohnkompetenz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

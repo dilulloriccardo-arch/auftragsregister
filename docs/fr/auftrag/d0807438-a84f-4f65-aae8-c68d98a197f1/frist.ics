@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0807438-a84f-4f65-aae8-c68d98a197f1-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261117T140000Z
+SUMMARY:Délai de remise : Nouvelle construction de l'école cantonale de
+  Stein - BKP 358 Cuisines professionnelles
+DESCRIPTION:Acheteur public : Kanton Aargau - Departement Finanzen und Re
+ sourcen - Immobilien Aargau\nDélai de remise : 17.11.2026\, 15 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/d0807438-a84
+ f-4f65-aae8-c68d98a197f1/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/d0807438-a84f-4f65-aae8-c68d98a197f1
+URL:https://auftragsregister.ch/fr/auftrag/d0807438-a84f-4f65-aae8-c68d98a1
+ 97f1/
+LOCATION:Stein (AG)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nouvelle construction de l'école cantonal
+ e de Stein - BKP 358 Cuisines professionnelles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

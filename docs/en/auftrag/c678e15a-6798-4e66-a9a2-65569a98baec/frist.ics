@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c678e15a-6798-4e66-a9a2-65569a98baec-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Submission deadline: Ersatz Aufgabe-Überwachung AKA WE
+DESCRIPTION:Public buyer: Die Schweizerische Post AG\nSubmission deadline: 
+ 6 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/c678e15a-6798-4e66-a9a2-65569a98baec/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/c678e15a-6798-4e66-a9a2-65569a98baec
+URL:https://auftragsregister.ch/en/auftrag/c678e15a-6798-4e66-a9a2-65569a98
+ baec/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatz Aufgabe-Überwachung AKA WE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

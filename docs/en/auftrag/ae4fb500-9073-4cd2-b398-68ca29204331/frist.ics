@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ae4fb500-9073-4cd2-b398-68ca29204331-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Submission deadline: FVV Brücke Au - Lustenau Elektroarbeiten
+DESCRIPTION:Public buyer: Politische Gemeinde Au\nSubmission deadline: 5 N
+ ov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/
+ ae4fb500-9073-4cd2-b398-68ca29204331/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/ae4fb500-9073-4cd2-b398-68ca29204331
+URL:https://auftragsregister.ch/en/auftrag/ae4fb500-9073-4cd2-b398-68ca2920
+ 4331/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: FVV Brücke Au - Lustenau Elektroarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

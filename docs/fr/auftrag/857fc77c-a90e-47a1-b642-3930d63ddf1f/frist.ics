@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:857fc77c-a90e-47a1-b642-3930d63ddf1f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261123T100000Z
+SUMMARY:Délai de remise : Remplacement et modernisation de 27 installati
+ ons de transport de personnes\, SLA maintenance
+DESCRIPTION:Acheteur public : Genève Aéroport\nDélai de remise : 23.
+ 11.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/857fc77c-a90e-47a1-b642-3930d63ddf1f/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/857fc77c-a90e-47a1-b642-3930d63ddf
+ 1f
+URL:https://auftragsregister.ch/fr/auftrag/857fc77c-a90e-47a1-b642-3930d63d
+ df1f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Remplacement et modernisation de 27 instal
+ lations de transport de personnes\, SLA maintenance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

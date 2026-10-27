@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f721094a-c1a0-49f3-8e9c-26e18daf50ba-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Submission deadline: Attribution des contrats d'assurance LAA\, d'a
+ ssurance complémentaire LAA et d'assurance indemnités journalières en c
+ as de maladie\, valables dès le 1er janvier 2027\, pour l'Istituto per an
+ ziani San Carlo
+DESCRIPTION:Public buyer: Istituto per anziani San Carlo\nSubmission deadli
+ ne: 9 Nov 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/f721094a-c1a0-49f3-8e9c-26e18daf50ba/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/f721094a-c1a0-49f3-8e9c-26e18daf50ba
+URL:https://auftragsregister.ch/en/auftrag/f721094a-c1a0-49f3-8e9c-26e18daf
+ 50ba/
+LOCATION:Locarno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Attribution des contrats d'assurance LAA\,
+  d'assurance complémentaire LAA et d'assurance indemnités journalières 
+ en cas de maladie\, valables dès le 1er janvier 2027\, pour l'Istituto pe
+ r anziani San Carlo
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

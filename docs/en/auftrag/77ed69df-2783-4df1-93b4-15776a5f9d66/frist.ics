@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:77ed69df-2783-4df1-93b4-15776a5f9d66-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Submission deadline: ETH Zürich\, Wartung und Inspektion Dachfläc
+ hen in Liegenschaften der ETH Zürich
+DESCRIPTION:Public buyer: ETH Zürich - Abt. Procurement Services VPIN\nSub
+ mission deadline: 27 Nov 2026\, 23:59\nIn the register: https://auftrags
+ register.ch/en/auftrag/77ed69df-2783-4df1-93b4-15776a5f9d66/\nOfficial pub
+ lication: https://www.simap.ch/en/project-detail/77ed69df-2783-4df1-93b4-1
+ 5776a5f9d66
+URL:https://auftragsregister.ch/en/auftrag/77ed69df-2783-4df1-93b4-15776a5f
+ 9d66/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ETH Zürich\, Wartung und Inspektion Dachf
+ lächen in Liegenschaften der ETH Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

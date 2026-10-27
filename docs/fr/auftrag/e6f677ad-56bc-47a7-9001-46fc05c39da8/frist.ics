@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6f677ad-56bc-47a7-9001-46fc05c39da8-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T100000Z
+SUMMARY:Délai de remise : Plans d’affectation cantonaux valant sanctio
+ n définitive (PACSD) Revitalisation lacustre – Valorisation des matéri
+ aux de la ligne directe Neuchâtel-Chaux-de-Fonds
+DESCRIPTION:Acheteur public : Département du développement territorial 
+ et de l'environnement - Service des ponts et chaussées - Office des cours
+  d'eau et dangers naturels\nDélai de remise : 13.11.2026\, 11 h 00\
+ nDans le registre : https://auftragsregister.ch/fr/auftrag/e6f677ad-56bc
+ -47a7-9001-46fc05c39da8/\nPublication officielle : https://www.simap.ch/
+ fr/project-detail/e6f677ad-56bc-47a7-9001-46fc05c39da8
+URL:https://auftragsregister.ch/fr/auftrag/e6f677ad-56bc-47a7-9001-46fc05c3
+ 9da8/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Plans d’affectation cantonaux valant san
+ ction définitive (PACSD) Revitalisation lacustre – Valorisation des mat
+ ériaux de la ligne directe Neuchâtel-Chaux-de-Fonds
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

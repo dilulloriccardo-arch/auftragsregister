@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ca385fe-a492-45f4-a6dd-24583e51a82c-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:1
+DTSTART:20261113T140000Z
+SUMMARY:Délai de remise : Fachhochschulzentrum Graubünden (FHZGR)\, Chu
+ r / BKP 273.33 Schreiner Wandbekleidungen
+DESCRIPTION:Acheteur public : Hochbauamt Graubünden\nDélai de remise 
+ : 13.11.2026\, 15 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/0ca385fe-a492-45f4-a6dd-24583e51a82c/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/0ca385fe-a492-45f4-a6dd-24583
+ e51a82c
+URL:https://auftragsregister.ch/fr/auftrag/0ca385fe-a492-45f4-a6dd-24583e51
+ a82c/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fachhochschulzentrum Graubünden (FHZGR)\,
+  Chur / BKP 273.33 Schreiner Wandbekleidungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

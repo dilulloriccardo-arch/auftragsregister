@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76067e5a-e329-4206-ab9e-961c7c9ad34e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T100000Z
+SUMMARY:Délai de remise : Prestations de revêtements de sols - CFC 281
+DESCRIPTION:Acheteur public : Hospice général\nDélai de remise : 01.
+ 12.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/76067e5a-e329-4206-ab9e-961c7c9ad34e/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/76067e5a-e329-4206-ab9e-961c7c9ad3
+ 4e
+URL:https://auftragsregister.ch/fr/auftrag/76067e5a-e329-4206-ab9e-961c7c9a
+ d34e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Prestations de revêtements de sols - CFC 
+ 281
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

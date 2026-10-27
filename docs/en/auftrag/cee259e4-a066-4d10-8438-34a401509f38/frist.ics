@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cee259e4-a066-4d10-8438-34a401509f38-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261111T150000Z
+SUMMARY:Submission deadline: Strassensanierung mit Neubau Gehweg Enggenhüt
+ tenstrasse
+DESCRIPTION:Public buyer: Kanton Appenzell I.Rh. Bau- und Umwelt Departemen
+ t Landesbauamt\nSubmission deadline: 11 Nov 2026\, 16:00\nIn the registe
+ r: https://auftragsregister.ch/en/auftrag/cee259e4-a066-4d10-8438-34a40150
+ 9f38/\nOfficial publication: https://www.simap.ch/en/project-detail/cee259
+ e4-a066-4d10-8438-34a401509f38
+URL:https://auftragsregister.ch/en/auftrag/cee259e4-a066-4d10-8438-34a40150
+ 9f38/
+LOCATION:Appenzell
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Strassensanierung mit Neubau Gehweg Enggen
+ hüttenstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

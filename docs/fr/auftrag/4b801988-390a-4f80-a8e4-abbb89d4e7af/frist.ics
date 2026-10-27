@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b801988-390a-4f80-a8e4-abbb89d4e7af-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20270129T150000Z
+SUMMARY:Délai de remise : Dienstwagen 20xx Kranmodul
+DESCRIPTION:Acheteur public : Regionalverkehr Bern-Solothurn AG\nDélai d
+ e remise : 29.01.2027\, 16 h 00\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/4b801988-390a-4f80-a8e4-abbb89d4e7af/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/4b801988-390a-4f80
+ -a8e4-abbb89d4e7af
+URL:https://auftragsregister.ch/fr/auftrag/4b801988-390a-4f80-a8e4-abbb89d4
+ e7af/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Dienstwagen 20xx Kranmodul
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

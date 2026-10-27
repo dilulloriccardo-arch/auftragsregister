@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:09c63c4d-c3e6-4bc1-86ee-cbb37a9eb070-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: Ausschreibung Fensterbauer / Fensterservice / Reparaturen
+  und Instandhaltung – KAT.020
+DESCRIPTION:Ente pubblico: ETHOS Immobilien GmbH\nScadenza: 09.11.2026\, 16
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/09c63c4d-c3e6-4b
+ c1-86ee-cbb37a9eb070/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/09c63c4d-c3e6-4bc1-86ee-cbb37a9eb070
+URL:https://auftragsregister.ch/it/auftrag/09c63c4d-c3e6-4bc1-86ee-cbb37a9e
+ b070/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung Fensterbauer / Fensterservice / Reparat
+ uren und Instandhaltung – KAT.020
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

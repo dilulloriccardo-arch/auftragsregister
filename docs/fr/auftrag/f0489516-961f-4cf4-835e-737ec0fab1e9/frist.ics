@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f0489516-961f-4cf4-835e-737ec0fab1e9-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Délai de remise : BAV 27600 WGH Freiestrasse 56\, 58\, Instandse
+ tzung - BKP 242 Heizungsanlagen inkl. BKP 248 Gebäudeautomation und BKP 2
+ 46 Kälteanlagen
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 12.11.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/f0489516-961f-4cf4-835e-737ec0fab1e9/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/f0489516-961f-4cf4-8
+ 35e-737ec0fab1e9
+URL:https://auftragsregister.ch/fr/auftrag/f0489516-961f-4cf4-835e-737ec0fa
+ b1e9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 27600 WGH Freiestrasse 56\, 58\, Insta
+ ndsetzung - BKP 242 Heizungsanlagen inkl. BKP 248 Gebäudeautomation und B
+ KP 246 Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

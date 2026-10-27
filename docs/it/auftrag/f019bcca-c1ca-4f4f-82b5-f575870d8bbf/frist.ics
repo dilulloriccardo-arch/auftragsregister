@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f019bcca-c1ca-4f4f-82b5-f575870d8bbf-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261117T123000Z
+SUMMARY:Scadenza: Neubau Kraftwerk Bächital\, Luchsingen
+DESCRIPTION:Ente pubblico: Technische Betriebe Glarus\nScadenza: 17.11.2026
+ \, 13:30\nNel registro: https://auftragsregister.ch/it/auftrag/f019bcca-c1
+ ca-4f4f-82b5-f575870d8bbf/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/f019bcca-c1ca-4f4f-82b5-f575870d8bbf
+URL:https://auftragsregister.ch/it/auftrag/f019bcca-c1ca-4f4f-82b5-f575870d
+ 8bbf/
+LOCATION:Luchsingen Glarus Süd
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Kraftwerk Bächital\, Luchsingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

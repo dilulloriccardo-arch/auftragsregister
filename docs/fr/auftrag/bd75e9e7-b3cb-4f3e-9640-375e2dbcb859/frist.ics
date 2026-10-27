@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd75e9e7-b3cb-4f3e-9640-375e2dbcb859-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Délai de remise : ZAA21 | 45405 | BKP 221.4-04 Fenêtres
+DESCRIPTION:Acheteur public : Hochbauamt\, Baubereich B\nDélai de remise
+  : 20.11.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/bd75e9e7-b3cb-4f3e-9640-375e2dbcb859/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/bd75e9e7-b3cb-4f3e-9640-37
+ 5e2dbcb859
+URL:https://auftragsregister.ch/fr/auftrag/bd75e9e7-b3cb-4f3e-9640-375e2dbc
+ b859/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ZAA21 | 45405 | BKP 221.4-04 Fenêtres
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

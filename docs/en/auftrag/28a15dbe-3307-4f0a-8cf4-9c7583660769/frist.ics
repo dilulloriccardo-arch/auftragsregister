@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28a15dbe-3307-4f0a-8cf4-9c7583660769-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T130000Z
+SUMMARY:Submission deadline: HUG_PRESTATIONS D’INTERPRÉTARIAT HUMAIN
+DESCRIPTION:Public buyer: CAIB (Centrale d’achats et d’ingénierie biom
+ édicale Vaud-Genève)\nSubmission deadline: 6 Nov 2026\, 14:00\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/28a15dbe-3307-4f0a-8cf4-9
+ c7583660769/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /28a15dbe-3307-4f0a-8cf4-9c7583660769
+URL:https://auftragsregister.ch/en/auftrag/28a15dbe-3307-4f0a-8cf4-9c758366
+ 0769/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: HUG_PRESTATIONS D’INTERPRÉTARIAT HUMAIN
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

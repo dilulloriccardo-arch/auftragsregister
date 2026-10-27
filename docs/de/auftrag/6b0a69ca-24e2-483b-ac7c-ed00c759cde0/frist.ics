@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b0a69ca-24e2-483b-ac7c-ed00c759cde0-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T080000Z
+SUMMARY:Eingabefrist: IWB\, Rahmenvertrag Verkehrswachen und Sicherheitswä
+ rter
+DESCRIPTION:Auftraggeber: IWB Industrielle Werke Basel\nEingabefrist: 18.11
+ .2026\, 9.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/6b0
+ a69ca-24e2-483b-ac7c-ed00c759cde0/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/6b0a69ca-24e2-483b-ac7c-ed00c759cde0
+URL:https://auftragsregister.ch/de/auftrag/6b0a69ca-24e2-483b-ac7c-ed00c759
+ cde0/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: IWB\, Rahmenvertrag Verkehrswachen und Sicherheit
+ swärter
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

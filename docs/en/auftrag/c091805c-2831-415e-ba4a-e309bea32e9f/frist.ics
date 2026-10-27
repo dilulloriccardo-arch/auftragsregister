@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c091805c-2831-415e-ba4a-e309bea32e9f-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T225900Z
+SUMMARY:Submission deadline: Ein gravimetrischer Hochdruck-Gas- und Dampfso
+ rptionsanalysator
+DESCRIPTION:Public buyer: EPFL-Scientific Equipment\nSubmission deadline: 1
+  Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/c091805c-2831-415e-ba4a-e309bea32e9f/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/c091805c-2831-415e-ba4a-e309bea32e9f
+URL:https://auftragsregister.ch/en/auftrag/c091805c-2831-415e-ba4a-e309bea3
+ 2e9f/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ein gravimetrischer Hochdruck-Gas- und Dam
+ pfsorptionsanalysator
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

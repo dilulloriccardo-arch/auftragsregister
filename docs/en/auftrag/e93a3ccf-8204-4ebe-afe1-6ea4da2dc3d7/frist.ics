@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e93a3ccf-8204-4ebe-afe1-6ea4da2dc3d7-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Submission deadline: Stockpiling of protective equipment and disinf
+ ectants
+DESCRIPTION:Public buyer: ZüriPharm AG\nSubmission deadline: 6 Nov 2026\
+ nIn the register: https://auftragsregister.ch/en/auftrag/e93a3ccf-8204-4eb
+ e-afe1-6ea4da2dc3d7/\nOfficial publication: https://www.simap.ch/en/projec
+ t-detail/e93a3ccf-8204-4ebe-afe1-6ea4da2dc3d7
+URL:https://auftragsregister.ch/en/auftrag/e93a3ccf-8204-4ebe-afe1-6ea4da2d
+ c3d7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Stockpiling of protective equipment and di
+ sinfectants
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

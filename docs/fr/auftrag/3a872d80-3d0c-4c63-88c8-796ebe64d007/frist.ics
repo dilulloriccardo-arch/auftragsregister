@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a872d80-3d0c-4c63-88c8-796ebe64d007-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261106T103000Z
+SUMMARY:Délai de remise : Hombrechtikon: Sanierung Alte Landstrasse
+DESCRIPTION:Acheteur public : Gemeinde Hombrechtikon\nDélai de remise 
+ : 06.11.2026\, 11 h 30\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/3a872d80-3d0c-4c63-88c8-796ebe64d007/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/3a872d80-3d0c-4c63-88c8-796eb
+ e64d007
+URL:https://auftragsregister.ch/fr/auftrag/3a872d80-3d0c-4c63-88c8-796ebe64
+ d007/
+LOCATION:Hombrechtikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Hombrechtikon: Sanierung Alte Landstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

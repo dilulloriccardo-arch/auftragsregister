@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:caf985b7-4997-42f5-915f-2470868f0ba1-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Eingabefrist: Bau Nrn. 21806 / 04100 - Spiser-\, Rautistrasse (Alts
+ tetter- bis Flurstrasse)
+DESCRIPTION:Auftraggeber: Tiefbauamt\, Abt. Realisierung\nEingabefrist: 05.
+ 11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ caf985b7-4997-42f5-915f-2470868f0ba1/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/caf985b7-4997-42f5-915f-2470868f0ba1
+URL:https://auftragsregister.ch/de/auftrag/caf985b7-4997-42f5-915f-2470868f
+ 0ba1/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bau Nrn. 21806 / 04100 - Spiser-\, Rautistrasse (
+ Altstetter- bis Flurstrasse)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

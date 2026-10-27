@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6af877c7-c8e9-46c9-a538-42a169b5c314-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Eingabefrist: Rhäzüns - Rothenbrunnen\, km 32.172\, Erneuerung St
+ ützmauer 15-241
+DESCRIPTION:Auftraggeber: Rhätische Bahn AG\nEingabefrist: 06.11.2026\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/6af877c7-c8e
+ 9-46c9-a538-42a169b5c314/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/6af877c7-c8e9-46c9-a538-42a169b5c314
+URL:https://auftragsregister.ch/de/auftrag/6af877c7-c8e9-46c9-a538-42a169b5
+ c314/
+LOCATION:Rhäzüns
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rhäzüns - Rothenbrunnen\, km 32.172\, Erneuerun
+ g Stützmauer 15-241
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

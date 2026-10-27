@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1b3702b-c481-40ce-b223-c3df7753bbc8-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Eingabefrist: Gare des Eaux-Vives (2350TI) menuiseries courantes\, 
+ cloisons sanitaires\, gardecorps
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 16.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/e1b3702b-c481-40ce-b223-c3df7753bbc8/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/e1b3702b-c481-40ce-b223-c3df7753
+ bbc8
+URL:https://auftragsregister.ch/de/auftrag/e1b3702b-c481-40ce-b223-c3df7753
+ bbc8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gare des Eaux-Vives (2350TI) menuiseries courante
+ s\, cloisons sanitaires\, gardecorps
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

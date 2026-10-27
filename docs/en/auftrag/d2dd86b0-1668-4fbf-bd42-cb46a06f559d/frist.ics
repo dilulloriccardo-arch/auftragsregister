@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2dd86b0-1668-4fbf-bd42-cb46a06f559d-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Submission deadline: Ersatzbeschaffung eines Loipenfahrzeugs für d
+ as Loipennetz Pontresina
+DESCRIPTION:Public buyer: Gemeinde Pontresina\nSubmission deadline: 16 Nov
+  2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/d2
+ dd86b0-1668-4fbf-bd42-cb46a06f559d/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/d2dd86b0-1668-4fbf-bd42-cb46a06f559d
+URL:https://auftragsregister.ch/en/auftrag/d2dd86b0-1668-4fbf-bd42-cb46a06f
+ 559d/
+LOCATION:Pontresina
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatzbeschaffung eines Loipenfahrzeugs f
+ ür das Loipennetz Pontresina
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4835305b-55b9-46fd-b2b0-bfd1a44be3df-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:2
+DTSTART:20261127T140000Z
+SUMMARY:Eingabefrist: Modernes elektrisches Prüflabor «Sala Prova» für 
+ das Instandhaltungszentrum Castione-Arbedo
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB Division Produkti
+ on Personenverkehr\nEingabefrist: 27.11.2026\, 15.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/4835305b-55b9-46fd-b2b0-bfd1a44be3df/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/4835305b-55
+ b9-46fd-b2b0-bfd1a44be3df
+URL:https://auftragsregister.ch/de/auftrag/4835305b-55b9-46fd-b2b0-bfd1a44b
+ e3df/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Modernes elektrisches Prüflabor «Sala Prova» f
+ ür das Instandhaltungszentrum Castione-Arbedo
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

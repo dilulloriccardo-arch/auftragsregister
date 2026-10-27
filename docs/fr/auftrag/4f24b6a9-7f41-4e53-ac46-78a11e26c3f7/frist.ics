@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4f24b6a9-7f41-4e53-ac46-78a11e26c3f7-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Délai de remise : FORUM UZH | BKP 272-02 Travaux de construction
+  métallique\, WG-13A Lanterneau
+DESCRIPTION:Acheteur public : Kanton Zürich Hochbauaumt\, Baubereich D\n
+ Délai de remise : 10.12.2026\, 16 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/4f24b6a9-7f41-4e53-ac46-78a11e26c3f7/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/4f24b6a9-7
+ f41-4e53-ac46-78a11e26c3f7
+URL:https://auftragsregister.ch/fr/auftrag/4f24b6a9-7f41-4e53-ac46-78a11e26
+ c3f7/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : FORUM UZH | BKP 272-02 Travaux de construc
+ tion métallique\, WG-13A Lanterneau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

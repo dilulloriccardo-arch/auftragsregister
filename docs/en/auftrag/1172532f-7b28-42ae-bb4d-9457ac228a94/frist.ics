@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1172532f-7b28-42ae-bb4d-9457ac228a94-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Submission deadline: Request for Proposals for Personal Insurance\,
+  Municipality of Domleschg\, January 1\, 2027
+DESCRIPTION:Public buyer: Gemeinde Domleschg (ASSEPRO Brokerage AG)\nSubmis
+ sion deadline: 9 Nov 2026\nIn the register: https://auftragsregister.ch/
+ en/auftrag/1172532f-7b28-42ae-bb4d-9457ac228a94/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/1172532f-7b28-42ae-bb4d-9457ac228a94
+URL:https://auftragsregister.ch/en/auftrag/1172532f-7b28-42ae-bb4d-9457ac22
+ 8a94/
+LOCATION:Tomils
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Request for Proposals for Personal Insuran
+ ce\, Municipality of Domleschg\, January 1\, 2027
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

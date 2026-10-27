@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83050b6f-a49a-4099-8720-8fc805b384da-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Délai de remise : Schulcampus Dorf\, Bestandsgebäude - BKP 250 
+ Sanitäranlagen
+DESCRIPTION:Acheteur public : ARGE GP SCD - c/o Rapp AG\nDélai de remise
+  : 02.11.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/83050b6f-a49a-4099-8720-8fc805b384da/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/83050b6f-a49a-4099-8720-8f
+ c805b384da
+URL:https://auftragsregister.ch/fr/auftrag/83050b6f-a49a-4099-8720-8fc805b3
+ 84da/
+LOCATION:Binningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Schulcampus Dorf\, Bestandsgebäude - BKP 
+ 250 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

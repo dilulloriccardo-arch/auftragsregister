@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5261b5f5-8647-448f-a624-f0077f9c1de0-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T153000Z
+SUMMARY:Délai de remise : Auberge de Sauvabelin - Démolition et reconst
+ ruction / CFC 358 Agencements de cuisine professionnelle
+DESCRIPTION:Acheteur public : Commune de Lausanne – Direction du logeme
+ nt\, de l'environnement et de l'architecture - Service d’architecture et
+  du logement\nDélai de remise : 10.11.2026\, 16 h 30\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/5261b5f5-8647-448f-a624-f00
+ 77f9c1de0/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/5261b5f5-8647-448f-a624-f0077f9c1de0
+URL:https://auftragsregister.ch/fr/auftrag/5261b5f5-8647-448f-a624-f0077f9c
+ 1de0/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Auberge de Sauvabelin - Démolition et rec
+ onstruction / CFC 358 Agencements de cuisine professionnelle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

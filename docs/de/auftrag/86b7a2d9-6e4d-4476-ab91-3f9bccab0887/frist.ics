@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86b7a2d9-6e4d-4476-ab91-3f9bccab0887-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:2
+DTSTART:20261204T140000Z
+SUMMARY:Eingabefrist: APFZ Kommunikations- und Rechnerplattform für Schien
+ enfahrzeuge
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB Division Produkti
+ on Personenverkehr\nEingabefrist: 04.12.2026\, 15.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/86b7a2d9-6e4d-4476-ab91-3f9bccab0887/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/86b7a2d9-6e
+ 4d-4476-ab91-3f9bccab0887
+URL:https://auftragsregister.ch/de/auftrag/86b7a2d9-6e4d-4476-ab91-3f9bccab
+ 0887/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: APFZ Kommunikations- und Rechnerplattform für Sc
+ hienenfahrzeuge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

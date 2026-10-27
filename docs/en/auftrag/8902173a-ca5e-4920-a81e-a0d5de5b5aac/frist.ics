@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8902173a-ca5e-4920-a81e-a0d5de5b5aac-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Submission deadline: Rénovation école du Bosson - Menuiserie
+DESCRIPTION:Public buyer: Ville d'Onex (Bureau d'architectes Burckhardt Arc
+ hitecture SA)\nSubmission deadline: 24 Nov 2026\, 12:00\nIn the register
+ : https://auftragsregister.ch/en/auftrag/8902173a-ca5e-4920-a81e-a0d5de5b5
+ aac/\nOfficial publication: https://www.simap.ch/en/project-detail/8902173
+ a-ca5e-4920-a81e-a0d5de5b5aac
+URL:https://auftragsregister.ch/en/auftrag/8902173a-ca5e-4920-a81e-a0d5de5b
+ 5aac/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rénovation école du Bosson - Menuiserie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

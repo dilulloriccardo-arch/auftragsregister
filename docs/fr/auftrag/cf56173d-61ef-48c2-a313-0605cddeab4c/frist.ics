@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf56173d-61ef-48c2-a313-0605cddeab4c-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261214T140000Z
+SUMMARY:Délai de remise : CFF : Remplacement du passage supérieur d’Y
+ vorne / Ligne 100 – km 37.319 / Yvorne
+DESCRIPTION:Acheteur public : SBB CFF FFS Achats projets de construction 
+ Région Ouest\nDélai de remise : 14.12.2026\, 15 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/cf56173d-61ef-48c2-a313-06
+ 05cddeab4c/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/cf56173d-61ef-48c2-a313-0605cddeab4c
+URL:https://auftragsregister.ch/fr/auftrag/cf56173d-61ef-48c2-a313-0605cdde
+ ab4c/
+LOCATION:Yvorne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFF : Remplacement du passage supérieur d
+ ’Yvorne / Ligne 100 – km 37.319 / Yvorne
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

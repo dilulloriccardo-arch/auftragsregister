@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b21f705-f5ea-4848-ba7a-b75ecf7db948-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261204T170000Z
+SUMMARY:Délai de remise : Services de restauration : exploitation des ca
+ ntines scolaires et du restaurant du personnel de l'administration cantona
+ le du canton de Schwytz.
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Schwyz\nDélai de remise
+  : 04.12.2026\, 18 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/3b21f705-f5ea-4848-ba7a-b75ecf7db948/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/3b21f705-f5ea-4848-ba7a-b7
+ 5ecf7db948
+URL:https://auftragsregister.ch/fr/auftrag/3b21f705-f5ea-4848-ba7a-b75ecf7d
+ b948/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Services de restauration : exploitation de
+ s cantines scolaires et du restaurant du personnel de l'administration can
+ tonale du canton de Schwytz.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

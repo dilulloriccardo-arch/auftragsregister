@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1936abd5-3927-48ca-9974-2722c9f460d9-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261119T170000Z
+SUMMARY:Eingabefrist: Ausbau und Erweiterung Altersheim St. Barbara in 3917
+  Kippel - BKP 400 Gärtnerarbeiten
+DESCRIPTION:Auftraggeber: APH St. Barbara\nEingabefrist: 19.11.2026\, 18.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/1936abd5-3927-4
+ 8ca-9974-2722c9f460d9/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/1936abd5-3927-48ca-9974-2722c9f460d9
+URL:https://auftragsregister.ch/de/auftrag/1936abd5-3927-48ca-9974-2722c9f4
+ 60d9/
+LOCATION:Kippel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ausbau und Erweiterung Altersheim St. Barbara in 
+ 3917 Kippel - BKP 400 Gärtnerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

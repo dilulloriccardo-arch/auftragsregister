@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2ab5376a-f453-4e51-9daa-88c263454e7c-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Eingabefrist: 963_283.4 Deckenbekleidungen in Holz\, Erweiterung SH
+  Loreto Zug
+DESCRIPTION:Auftraggeber: Baudepartement Stadt Zug\, Submission Hochbau\nEi
+ ngabefrist: 04.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister
+ .ch/de/auftrag/2ab5376a-f453-4e51-9daa-88c263454e7c/\nAmtliche Publikation
+ : https://www.simap.ch/de/project-detail/2ab5376a-f453-4e51-9daa-88c263454
+ e7c
+URL:https://auftragsregister.ch/de/auftrag/2ab5376a-f453-4e51-9daa-88c26345
+ 4e7c/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 963_283.4 Deckenbekleidungen in Holz\, Erweiterun
+ g SH Loreto Zug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

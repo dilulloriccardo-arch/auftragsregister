@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ca88e6c-1c02-46d4-ae5f-e51ff7c49900-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:0
+DTSTART:20261029T133000Z
+SUMMARY:Eingabefrist: Appel d’offres pour l'attribution du mandat de gest
+ ion partielle d’une partie du portefeuille d'assurances de la Ville de L
+ ugano
+DESCRIPTION:Auftraggeber: Città di Lugano - Finanze\nEingabefrist: 29.10.2
+ 026\, 14.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0ca8
+ 8e6c-1c02-46d4-ae5f-e51ff7c49900/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/0ca88e6c-1c02-46d4-ae5f-e51ff7c49900
+URL:https://auftragsregister.ch/de/auftrag/0ca88e6c-1c02-46d4-ae5f-e51ff7c4
+ 9900/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Appel d’offres pour l'attribution du mandat de 
+ gestion partielle d’une partie du portefeuille d'assurances de la Ville 
+ de Lugano
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

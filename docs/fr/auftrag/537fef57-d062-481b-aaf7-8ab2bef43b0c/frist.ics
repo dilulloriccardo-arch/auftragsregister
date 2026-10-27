@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:537fef57-d062-481b-aaf7-8ab2bef43b0c-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261112T225900Z
+SUMMARY:Délai de remise : MP-130008\, N02 Tunnel de Seelisberg\, 2e remi
+ se en état Lot 3.1 Ventilation du tunnel
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3 Zofingen\nDélai de remise : 12.11.2026\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/53
+ 7fef57-d062-481b-aaf7-8ab2bef43b0c/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/537fef57-d062-481b-aaf7-8ab2bef43b0c
+URL:https://auftragsregister.ch/fr/auftrag/537fef57-d062-481b-aaf7-8ab2bef4
+ 3b0c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-130008\, N02 Tunnel de Seelisberg\, 2e 
+ remise en état Lot 3.1 Ventilation du tunnel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

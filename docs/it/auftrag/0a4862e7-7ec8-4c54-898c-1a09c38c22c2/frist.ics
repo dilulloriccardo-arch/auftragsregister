@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a4862e7-7ec8-4c54-898c-1a09c38c22c2-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Scadenza: Neubau Geserhus\, Rebstein - 273.0 Innentüren aus Holz
+DESCRIPTION:Ente pubblico: Zweckverband Altersheim Geserhus der Gemeinde Re
+ bstein und Marbach\nScadenza: 13.11.2026\, 23:59\nNel registro: https://au
+ ftragsregister.ch/it/auftrag/0a4862e7-7ec8-4c54-898c-1a09c38c22c2/\nPubbli
+ cazione ufficiale: https://www.simap.ch/it/project-detail/0a4862e7-7ec8-4c
+ 54-898c-1a09c38c22c2
+URL:https://auftragsregister.ch/it/auftrag/0a4862e7-7ec8-4c54-898c-1a09c38c
+ 22c2/
+LOCATION:Rebstein
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Geserhus\, Rebstein - 273.0 Innentüren aus Ho
+ lz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

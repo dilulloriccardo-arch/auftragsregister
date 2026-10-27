@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a3c2ab7-2262-4b21-9c5d-a47bd16896df-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Submission deadline: Kantonsstrasse Nr. 24\, Steinach: Betriebs- un
+ d Gestaltungskonzept Hauptstrasse\, Dorfzentrum
+DESCRIPTION:Public buyer: Kanton St.Gallen\, Tiefbauamt\, Strassen- und Kun
+ stbauten\nSubmission deadline: 30 Nov 2026\, 23:59\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/6a3c2ab7-2262-4b21-9c5d-a47bd16896df/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/6a3c2ab7-226
+ 2-4b21-9c5d-a47bd16896df
+URL:https://auftragsregister.ch/en/auftrag/6a3c2ab7-2262-4b21-9c5d-a47bd168
+ 96df/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kantonsstrasse Nr. 24\, Steinach: Betriebs
+ - und Gestaltungskonzept Hauptstrasse\, Dorfzentrum
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

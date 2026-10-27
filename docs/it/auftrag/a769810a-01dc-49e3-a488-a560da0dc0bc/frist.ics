@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a769810a-01dc-49e3-a488-a560da0dc0bc-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Scadenza: 281 03 Bodenbeläge aus Parkett und Linoleum
+DESCRIPTION:Ente pubblico: Vollenweider Baurealisation GmbH\nScadenza: 20.1
+ 1.2026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/a7698
+ 10a-01dc-49e3-a488-a560da0dc0bc/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/a769810a-01dc-49e3-a488-a560da0dc0bc
+URL:https://auftragsregister.ch/it/auftrag/a769810a-01dc-49e3-a488-a560da0d
+ c0bc/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 281 03 Bodenbeläge aus Parkett und Linoleum
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6899d55b-529a-4987-ba7a-a7eb9159d7cc-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261124T100000Z
+SUMMARY:Délai de remise : Sanierung Häusern-Vordertoos\, Schönholzersw
+ ilen
+DESCRIPTION:Acheteur public : Politische Gemeinde Schönholzerswilen\nDé
+ lai de remise : 24.11.2026\, 11 h 00\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/6899d55b-529a-4987-ba7a-a7eb9159d7cc/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/6899d55b-529a
+ -4987-ba7a-a7eb9159d7cc
+URL:https://auftragsregister.ch/fr/auftrag/6899d55b-529a-4987-ba7a-a7eb9159
+ d7cc/
+LOCATION:Schönholzerswilen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Häusern-Vordertoos\, Schönholz
+ erswilen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

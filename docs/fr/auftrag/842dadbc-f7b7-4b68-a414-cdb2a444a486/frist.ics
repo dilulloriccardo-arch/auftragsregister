@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:842dadbc-f7b7-4b68-a414-cdb2a444a486-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:1
+DTSTART:20261109T100000Z
+SUMMARY:Délai de remise : Chef/fe de projet en location de services (LSE
+ ) - Modernisation du SI de Statistique Vaud
+DESCRIPTION:Acheteur public : Secrétariat général du DADN / Statistiqu
+ e Vaud (Loyco SA))\nDélai de remise : 09.11.2026\, 11 h 00\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/842dadbc-f7b7-4b68-a4
+ 14-cdb2a444a486/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/842dadbc-f7b7-4b68-a414-cdb2a444a486
+URL:https://auftragsregister.ch/fr/auftrag/842dadbc-f7b7-4b68-a414-cdb2a444
+ a486/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Chef/fe de projet en location de services 
+ (LSE) - Modernisation du SI de Statistique Vaud
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

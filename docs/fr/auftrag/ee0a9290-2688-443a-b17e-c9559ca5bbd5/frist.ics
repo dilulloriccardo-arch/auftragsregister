@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee0a9290-2688-443a-b17e-c9559ca5bbd5-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:1
+DTSTART:20261118T150000Z
+SUMMARY:Délai de remise : Procédure de sélection de mandataires « Bâ
+ timent provisoire et parking couvert pour la Police zougoise et remplaceme
+ nt du dépôt de sel » sur le site Hinterberg à Steinhausen
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Zug\nDélai de remise :
+  18.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/ee0a9290-2688-443a-b17e-c9559ca5bbd5/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/ee0a9290-2688-443a-b17e-c9559c
+ a5bbd5
+URL:https://auftragsregister.ch/fr/auftrag/ee0a9290-2688-443a-b17e-c9559ca5
+ bbd5/
+LOCATION:Steinhausen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Procédure de sélection de mandataires «
+  Bâtiment provisoire et parking couvert pour la Police zougoise et rempla
+ cement du dépôt de sel » sur le site Hinterberg à Steinhausen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

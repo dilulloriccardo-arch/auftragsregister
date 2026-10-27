@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4b706c5-c329-4cde-9934-ab389afea31c-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261119T100000Z
+SUMMARY:Submission deadline: Einführung von 5 Zusatzleistungen über den V
+ irtuellen Schalter des Kantons Freiburg
+DESCRIPTION:Public buyer: Service de l'informatique et des télécommunicat
+ ions (SITel)\nSubmission deadline: 19 Nov 2026\, 11:00\nIn the register:
+  https://auftragsregister.ch/en/auftrag/e4b706c5-c329-4cde-9934-ab389afea3
+ 1c/\nOfficial publication: https://www.simap.ch/en/project-detail/e4b706c5
+ -c329-4cde-9934-ab389afea31c
+URL:https://auftragsregister.ch/en/auftrag/e4b706c5-c329-4cde-9934-ab389afe
+ a31c/
+LOCATION:Givisiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Einführung von 5 Zusatzleistungen über d
+ en Virtuellen Schalter des Kantons Freiburg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

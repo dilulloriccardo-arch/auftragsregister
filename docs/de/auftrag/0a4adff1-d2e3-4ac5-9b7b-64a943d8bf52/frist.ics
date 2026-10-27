@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a4adff1-d2e3-4ac5-9b7b-64a943d8bf52-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261117T130000Z
+SUMMARY:Eingabefrist: 02.512 Masterplan OSG 2025/2026 - Tappa 3 - Opere da 
+ falegname in genere
+DESCRIPTION:Auftraggeber: Ente Ospedaliero Cantonale - Area Infrastrutture 
+ e Operations\nEingabefrist: 17.11.2026\, 14.00 Uhr\nIm Register: https://
+ auftragsregister.ch/de/auftrag/0a4adff1-d2e3-4ac5-9b7b-64a943d8bf52/\nAmtl
+ iche Publikation: https://www.simap.ch/de/project-detail/0a4adff1-d2e3-4ac
+ 5-9b7b-64a943d8bf52
+URL:https://auftragsregister.ch/de/auftrag/0a4adff1-d2e3-4ac5-9b7b-64a943d8
+ bf52/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 02.512 Masterplan OSG 2025/2026 - Tappa 3 - Opere
+  da falegname in genere
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

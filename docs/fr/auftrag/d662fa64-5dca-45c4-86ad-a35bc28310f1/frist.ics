@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d662fa64-5dca-45c4-86ad-a35bc28310f1-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T080000Z
+SUMMARY:Délai de remise : Kantonsschule Obwalden\, Sarnen Dachsanierung 
+ /Ausschreibung BKP 224.1 Flachdacharbeiten
+DESCRIPTION:Acheteur public : Kanton Obwalden\nDélai de remise : 23.11
+ .2026\, 9 h 00\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/d662fa64-5dca-45c4-86ad-a35bc28310f1/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/d662fa64-5dca-45c4-86ad-a35bc28310f1
+URL:https://auftragsregister.ch/fr/auftrag/d662fa64-5dca-45c4-86ad-a35bc283
+ 10f1/
+LOCATION:Sarnen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kantonsschule Obwalden\, Sarnen Dachsanier
+ ung /Ausschreibung BKP 224.1 Flachdacharbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

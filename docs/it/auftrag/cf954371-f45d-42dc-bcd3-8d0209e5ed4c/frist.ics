@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf954371-f45d-42dc-bcd3-8d0209e5ed4c-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T073000Z
+SUMMARY:Scadenza: Rahmenvertrag Verkehrsdienstleistungen
+DESCRIPTION:Ente pubblico: BERNMOBIL Städt. Verkehrsbetriebe Bern (SVB)\nS
+ cadenza: 01.12.2026\, 08:30\nNel registro: https://auftragsregister.ch/it/
+ auftrag/cf954371-f45d-42dc-bcd3-8d0209e5ed4c/\nPubblicazione ufficiale: ht
+ tps://www.simap.ch/it/project-detail/cf954371-f45d-42dc-bcd3-8d0209e5ed4c
+URL:https://auftragsregister.ch/it/auftrag/cf954371-f45d-42dc-bcd3-8d0209e5
+ ed4c/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenvertrag Verkehrsdienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

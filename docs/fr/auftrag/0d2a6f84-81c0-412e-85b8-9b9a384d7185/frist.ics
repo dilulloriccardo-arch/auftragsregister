@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d2a6f84-81c0-412e-85b8-9b9a384d7185-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Délai de remise : Gesamtprojekt St. Anna-Strasse - Bellerivehöh
+ e - Schlösslihalde
+DESCRIPTION:Acheteur public : Stadt Luzern\, Umwelt- und Mobilitätsdirek
+ tion\, Tiefbauamt\nDélai de remise : 24.11.2026\, 12 h 00\nDans le 
+ registre : https://auftragsregister.ch/fr/auftrag/0d2a6f84-81c0-412e-85b
+ 8-9b9a384d7185/\nPublication officielle : https://www.simap.ch/fr/projec
+ t-detail/0d2a6f84-81c0-412e-85b8-9b9a384d7185
+URL:https://auftragsregister.ch/fr/auftrag/0d2a6f84-81c0-412e-85b8-9b9a384d
+ 7185/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gesamtprojekt St. Anna-Strasse - Bellerive
+ höhe - Schlösslihalde
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

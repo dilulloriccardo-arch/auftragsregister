@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9adf130d-7c7e-4511-9ce2-f9587bbc761c-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Eingabefrist: N05.60 MP-230028 - BSA Grandson - Areuse renouvelleme
+ nt - Fourniture\, installation et mise en service du système de supervisi
+ on/gestion AR Onnens/Concise/Lance (ID 12064)
+DESCRIPTION:Auftraggeber: Office fédéral des routes OFROU\, Division Infr
+ astructure routière Ouest\, filiale Estavayer-le-Lac\nEingabefrist: 11.12
+ .2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9a
+ df130d-7c7e-4511-9ce2-f9587bbc761c/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/9adf130d-7c7e-4511-9ce2-f9587bbc761c
+URL:https://auftragsregister.ch/de/auftrag/9adf130d-7c7e-4511-9ce2-f9587bbc
+ 761c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: N05.60 MP-230028 - BSA Grandson - Areuse renouvel
+ lement - Fourniture\, installation et mise en service du système de super
+ vision/gestion AR Onnens/Concise/Lance (ID 12064)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

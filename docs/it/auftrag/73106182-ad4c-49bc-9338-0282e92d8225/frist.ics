@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:73106182-ad4c-49bc-9338-0282e92d8225-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Scadenza: KVA Linth - Linth 2025 - 213.05 Stahlbau und Fassade OL2
+DESCRIPTION:Ente pubblico: Zweckverband für die Kehrichtbeseitigung im Lin
+ thgebiet (KVA Linth)\nScadenza: 09.11.2026\nNel registro: https://auftrags
+ register.ch/it/auftrag/73106182-ad4c-49bc-9338-0282e92d8225/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/73106182-ad4c-49bc-933
+ 8-0282e92d8225
+URL:https://auftragsregister.ch/it/auftrag/73106182-ad4c-49bc-9338-0282e92d
+ 8225/
+LOCATION:Niederurnen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: KVA Linth - Linth 2025 - 213.05 Stahlbau und Fassade 
+ OL2
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

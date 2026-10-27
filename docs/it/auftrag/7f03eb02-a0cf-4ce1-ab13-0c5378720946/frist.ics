@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7f03eb02-a0cf-4ce1-ab13-0c5378720946-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Scadenza: MP-070054\, N01-54/55 UPlaNS St.Gallen West - St.Gallen O
+ st (Teil Signalisation): TP411\, Lieferung\, Montage\, Installation und An
+ schluss Signalisation Sicherheitseinrichtungen Tunnel
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Filiale Winterth
+ ur\nScadenza: 17.11.2026\, 23:59\nNel registro: https://auftragsregister.c
+ h/it/auftrag/7f03eb02-a0cf-4ce1-ab13-0c5378720946/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/7f03eb02-a0cf-4ce1-ab13-0c537872
+ 0946
+URL:https://auftragsregister.ch/it/auftrag/7f03eb02-a0cf-4ce1-ab13-0c537872
+ 0946/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-070054\, N01-54/55 UPlaNS St.Gallen West - St.Gall
+ en Ost (Teil Signalisation): TP411\, Lieferung\, Montage\, Installation un
+ d Anschluss Signalisation Sicherheitseinrichtungen Tunnel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

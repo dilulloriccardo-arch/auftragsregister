@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a74b943f-bbd5-429a-ba29-628cf8cc4b9c-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Délai de remise : FIPOI - CICG 2028 - Mandat de prestations d’
+ ingénieur sanitaire - CFC295
+DESCRIPTION:Acheteur public : FIPOI - Service immobilier\nDélai de remis
+ e : 16.11.2026\, 12 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/a74b943f-bbd5-429a-ba29-628cf8cc4b9c/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/a74b943f-bbd5-429a-ba29-6
+ 28cf8cc4b9c
+URL:https://auftragsregister.ch/fr/auftrag/a74b943f-bbd5-429a-ba29-628cf8cc
+ 4b9c/
+LOCATION:Geneve
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : FIPOI - CICG 2028 - Mandat de prestations 
+ d’ingénieur sanitaire - CFC295
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

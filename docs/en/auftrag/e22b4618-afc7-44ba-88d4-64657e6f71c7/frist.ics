@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e22b4618-afc7-44ba-88d4-64657e6f71c7-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261112T130000Z
+SUMMARY:Submission deadline: BKP 221.2 Fenster aus Kunststoff / Alu Weisses
+  Schulhaus Schulanlage 3422 Alchenflüh
+DESCRIPTION:Public buyer: Atelier GSW Partner AG\nSubmission deadline: 12 
+ Nov 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /e22b4618-afc7-44ba-88d4-64657e6f71c7/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/e22b4618-afc7-44ba-88d4-64657e6f71c7
+URL:https://auftragsregister.ch/en/auftrag/e22b4618-afc7-44ba-88d4-64657e6f
+ 71c7/
+LOCATION:Rüdtligen- Alchenflüh
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 221.2 Fenster aus Kunststoff / Alu Wei
+ sses Schulhaus Schulanlage 3422 Alchenflüh
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

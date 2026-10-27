@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:343d0b78-7688-4de6-a742-9f083898c3b2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261117T160000Z
+SUMMARY:Délai de remise : ESP Ausserholligen\, Gesamtleiter\, Ladenwandg
+ ut
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 17.11.2026\, 17 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/343d0b78-7688-4de6-a742-9f083898c3b2/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/343d0b78-76
+ 88-4de6-a742-9f083898c3b2
+URL:https://auftragsregister.ch/fr/auftrag/343d0b78-7688-4de6-a742-9f083898
+ c3b2/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ESP Ausserholligen\, Gesamtleiter\, Ladenw
+ andgut
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

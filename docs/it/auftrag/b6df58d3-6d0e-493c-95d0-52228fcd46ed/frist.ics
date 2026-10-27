@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b6df58d3-6d0e-493c-95d0-52228fcd46ed-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Scadenza: 789 NB Schulhaus- & 3-fach Kindergarten Malerva Sargans -
+  TO2 Schulhaus - BKP 224 Bedachungsarbeiten
+DESCRIPTION:Ente pubblico: Politische Gemeinde Sargans\nScadenza: 27.11.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/b6df58d3-6
+ d0e-493c-95d0-52228fcd46ed/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/b6df58d3-6d0e-493c-95d0-52228fcd46ed
+URL:https://auftragsregister.ch/it/auftrag/b6df58d3-6d0e-493c-95d0-52228fcd
+ 46ed/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 789 NB Schulhaus- & 3-fach Kindergarten Malerva Sarga
+ ns - TO2 Schulhaus - BKP 224 Bedachungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

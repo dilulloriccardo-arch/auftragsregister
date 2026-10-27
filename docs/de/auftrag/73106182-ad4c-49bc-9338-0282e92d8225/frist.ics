@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:73106182-ad4c-49bc-9338-0282e92d8225-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Eingabefrist: KVA Linth - Linth 2025 - 213.05 Stahlbau und Fassade 
+ OL2
+DESCRIPTION:Auftraggeber: Zweckverband für die Kehrichtbeseitigung im Lint
+ hgebiet (KVA Linth)\nEingabefrist: 09.11.2026\nIm Register: https://auftra
+ gsregister.ch/de/auftrag/73106182-ad4c-49bc-9338-0282e92d8225/\nAmtliche P
+ ublikation: https://www.simap.ch/de/project-detail/73106182-ad4c-49bc-9338
+ -0282e92d8225
+URL:https://auftragsregister.ch/de/auftrag/73106182-ad4c-49bc-9338-0282e92d
+ 8225/
+LOCATION:Niederurnen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: KVA Linth - Linth 2025 - 213.05 Stahlbau und Fass
+ ade OL2
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

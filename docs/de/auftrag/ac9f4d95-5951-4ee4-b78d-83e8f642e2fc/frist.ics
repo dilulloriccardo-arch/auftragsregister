@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac9f4d95-5951-4ee4-b78d-83e8f642e2fc-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Eingabefrist: Appel d’offre pour les services de sécurité priv
+ ée avec conducteur de chien aux Etablissements de détention fribourgeois
+ \, site Bellechasse
+DESCRIPTION:Auftraggeber: Etablissent de détention fribourgeois EDFR site 
+ Bellechasse\nEingabefrist: 16.11.2026\, 12.00 Uhr\nIm Register: https://a
+ uftragsregister.ch/de/auftrag/ac9f4d95-5951-4ee4-b78d-83e8f642e2fc/\nAmtli
+ che Publikation: https://www.simap.ch/de/project-detail/ac9f4d95-5951-4ee4
+ -b78d-83e8f642e2fc
+URL:https://auftragsregister.ch/de/auftrag/ac9f4d95-5951-4ee4-b78d-83e8f642
+ e2fc/
+LOCATION:1786 Sugiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Appel d’offre pour les services de sécurité p
+ rivée avec conducteur de chien aux Etablissements de détention fribourge
+ ois\, site Bellechasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

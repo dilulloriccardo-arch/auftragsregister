@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2ff610f-1189-4b76-a05f-98de74050a9f-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261127T140000Z
+SUMMARY:Submission deadline: Procurement of level crossing systems and conn
+ ection to the DSTW via the EULYNX framework agreement / call-off contract
+DESCRIPTION:Public buyer: Schweizerische Südostbahn AG\nSubmission deadlin
+ e: 27 Nov 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/d2ff610f-1189-4b76-a05f-98de74050a9f/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/d2ff610f-1189-4b76-a05f-98de74050a9f
+URL:https://auftragsregister.ch/en/auftrag/d2ff610f-1189-4b76-a05f-98de7405
+ 0a9f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Procurement of level crossing systems and 
+ connection to the DSTW via the EULYNX framework agreement / call-off contr
+ act
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

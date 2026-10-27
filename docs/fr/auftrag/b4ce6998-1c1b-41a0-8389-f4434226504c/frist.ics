@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4ce6998-1c1b-41a0-8389-f4434226504c-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261110T100000Z
+SUMMARY:Délai de remise : Copie Extension du groupe scolaire de Corsier 
+ - AO CFC 215.2 – Façade bois : panneaux\, montants et traverses
+DESCRIPTION:Acheteur public : FdMP réalisation sa\nDélai de remise : 
+ 10.11.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/b4ce6998-1c1b-41a0-8389-f4434226504c/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/b4ce6998-1c1b-41a0-8389-f44342
+ 26504c
+URL:https://auftragsregister.ch/fr/auftrag/b4ce6998-1c1b-41a0-8389-f4434226
+ 504c/
+LOCATION:Corsier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Copie Extension du groupe scolaire de Cors
+ ier - AO CFC 215.2 – Façade bois : panneaux\, montants et traverses
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

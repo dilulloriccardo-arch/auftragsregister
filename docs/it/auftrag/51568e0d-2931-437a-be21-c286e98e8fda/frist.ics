@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:51568e0d-2931-437a-be21-c286e98e8fda-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Scadenza: Gemeindezentrum Bremgarten b. Bern\, BKP 250 Sanitärinst
+ allationen
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Bremgarten b. Bern (maurer bau
+ leitung gmbh)\nScadenza: 27.11.2026\, 23:59\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/51568e0d-2931-437a-be21-c286e98e8fda/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/51568e0d-2931-437a-be
+ 21-c286e98e8fda
+URL:https://auftragsregister.ch/it/auftrag/51568e0d-2931-437a-be21-c286e98e
+ 8fda/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gemeindezentrum Bremgarten b. Bern\, BKP 250 Sanitär
+ installationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

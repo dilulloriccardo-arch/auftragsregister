@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b1bd13b4-ec34-4786-814e-1680a39e03c2-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261102T110000Z
+SUMMARY:Eingabefrist: Atlassian Cloud 2026
+DESCRIPTION:Auftraggeber: Stadt Zürich\, Organisation und Informatik (OIZ)
+ \nEingabefrist: 02.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregi
+ ster.ch/de/auftrag/b1bd13b4-ec34-4786-814e-1680a39e03c2/\nAmtliche Publika
+ tion: https://www.simap.ch/de/project-detail/b1bd13b4-ec34-4786-814e-1680a
+ 39e03c2
+URL:https://auftragsregister.ch/de/auftrag/b1bd13b4-ec34-4786-814e-1680a39e
+ 03c2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Atlassian Cloud 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

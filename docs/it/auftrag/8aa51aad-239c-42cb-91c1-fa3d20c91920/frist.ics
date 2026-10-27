@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8aa51aad-239c-42cb-91c1-fa3d20c91920-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Scadenza: Sekundarschulhaus Schulhausmodulbau
+DESCRIPTION:Ente pubblico: BBS Ingenieure AG\nScadenza: 02.11.2026\, 12:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/8aa51aad-239c-42cb-9
+ 1c1-fa3d20c91920/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/8aa51aad-239c-42cb-91c1-fa3d20c91920
+URL:https://auftragsregister.ch/it/auftrag/8aa51aad-239c-42cb-91c1-fa3d20c9
+ 1920/
+LOCATION:Fehraltorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sekundarschulhaus Schulhausmodulbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

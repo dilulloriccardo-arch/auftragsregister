@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8165ac4e-bd6b-4385-b1cf-24c034f9067e-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261119T140000Z
+SUMMARY:Eingabefrist: Gestion des déchets en Ville de Fribourg - Conteneur
+ s enterrés : ingénieurs civils (APR et DLT)
+DESCRIPTION:Auftraggeber: Ville de Fribourg - Service du génie civil\, de 
+ l'environnement et de l'énergie\nEingabefrist: 19.11.2026\, 15.00 Uhr\nI
+ m Register: https://auftragsregister.ch/de/auftrag/8165ac4e-bd6b-4385-b1cf
+ -24c034f9067e/\nAmtliche Publikation: https://www.simap.ch/de/project-deta
+ il/8165ac4e-bd6b-4385-b1cf-24c034f9067e
+URL:https://auftragsregister.ch/de/auftrag/8165ac4e-bd6b-4385-b1cf-24c034f9
+ 067e/
+LOCATION:Fribourg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gestion des déchets en Ville de Fribourg - Conte
+ neurs enterrés : ingénieurs civils (APR et DLT)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

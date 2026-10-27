@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ffb3b1b4-13da-42e6-bea6-ed5efba3d0cb-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+SUMMARY:Eingabefrist: STEP Echallens - CFC 253 - POMP02 - Pompes centrifuge
+ s
+DESCRIPTION:Auftraggeber: ASET / Association intercommunale STEP Echallens 
+ Talent (TRITON)\nEingabefrist: 30.11.2026\, 11.00 Uhr\nIm Register: https
+ ://auftragsregister.ch/de/auftrag/ffb3b1b4-13da-42e6-bea6-ed5efba3d0cb/\nA
+ mtliche Publikation: https://www.simap.ch/de/project-detail/ffb3b1b4-13da-
+ 42e6-bea6-ed5efba3d0cb
+URL:https://auftragsregister.ch/de/auftrag/ffb3b1b4-13da-42e6-bea6-ed5efba3
+ d0cb/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: STEP Echallens - CFC 253 - POMP02 - Pompes centri
+ fuges
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

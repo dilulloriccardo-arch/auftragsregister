@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b7eebade-7c51-4b81-851a-514ce4c74b05-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261113T140000Z
+SUMMARY:Scadenza: Pratteln - Erstaufnahmeunterkunft / Baumeisterarbeiten Ti
+ efbau
+DESCRIPTION:Ente pubblico: Zentrale Beschaffungsstelle Kanton Basel-Landsch
+ aft\nScadenza: 13.11.2026\, 15:00\nNel registro: https://auftragsregister.
+ ch/it/auftrag/b7eebade-7c51-4b81-851a-514ce4c74b05/\nPubblicazione ufficia
+ le: https://www.simap.ch/it/project-detail/b7eebade-7c51-4b81-851a-514ce4c
+ 74b05
+URL:https://auftragsregister.ch/it/auftrag/b7eebade-7c51-4b81-851a-514ce4c7
+ 4b05/
+LOCATION:Pratteln
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Pratteln - Erstaufnahmeunterkunft / Baumeisterarbeite
+ n Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

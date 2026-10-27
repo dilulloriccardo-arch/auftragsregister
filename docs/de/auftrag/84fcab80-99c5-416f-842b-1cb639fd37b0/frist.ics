@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:84fcab80-99c5-416f-842b-1cb639fd37b0-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Eingabefrist: Lieferung\, Inbetriebnahme und Migration Oracle Datab
+ ase Appliance
+DESCRIPTION:Auftraggeber: Amt für Informatik des Kantons Schwyz\nEingabefr
+ ist: 23.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/84fcab80-99c5-416f-842b-1cb639fd37b0/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/84fcab80-99c5-416f-842b-1cb639fd37b0
+URL:https://auftragsregister.ch/de/auftrag/84fcab80-99c5-416f-842b-1cb639fd
+ 37b0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Lieferung\, Inbetriebnahme und Migration Oracle D
+ atabase Appliance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

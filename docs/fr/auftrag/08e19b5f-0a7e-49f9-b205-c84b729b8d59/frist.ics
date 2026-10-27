@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:08e19b5f-0a7e-49f9-b205-c84b729b8d59-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261203T225900Z
+SUMMARY:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 224.1
+  Flachdächer
+DESCRIPTION:Acheteur public : Einwohnergemeinde Bremgarten b. Bern (maure
+ r bauleitung gmbh)\nDélai de remise : 03.12.2026\, 23 h 59\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/08e19b5f-0a7e-49f9-b2
+ 05-c84b729b8d59/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/08e19b5f-0a7e-49f9-b205-c84b729b8d59
+URL:https://auftragsregister.ch/fr/auftrag/08e19b5f-0a7e-49f9-b205-c84b729b
+ 8d59/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 2
+ 24.1 Flachdächer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

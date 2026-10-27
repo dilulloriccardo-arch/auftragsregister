@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c09d97a5-2639-4caf-a14b-89359af0d1b7-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Scadenza: 24-kV-MS-Schaltanlagen UW Grynau und UW Linthal
+DESCRIPTION:Ente pubblico: Axpo Grid AG\nScadenza: 04.12.2026\, 23:59\nNel 
+ registro: https://auftragsregister.ch/it/auftrag/c09d97a5-2639-4caf-a14b-8
+ 9359af0d1b7/\nPubblicazione ufficiale: https://www.simap.ch/it/project-det
+ ail/c09d97a5-2639-4caf-a14b-89359af0d1b7
+URL:https://auftragsregister.ch/it/auftrag/c09d97a5-2639-4caf-a14b-89359af0
+ d1b7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 24-kV-MS-Schaltanlagen UW Grynau und UW Linthal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

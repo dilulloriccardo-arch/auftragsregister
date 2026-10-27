@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa74c0be-c306-4210-9e06-61c58daa074d-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T170000Z
+SUMMARY:Submission deadline: Flurstrassen Albinen
+DESCRIPTION:Public buyer: Gemeinde Albinen (Zumofen + Glenz AG)\nSubmission
+  deadline: 20 Nov 2026\, 18:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/aa74c0be-c306-4210-9e06-61c58daa074d/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/aa74c0be-c306-4210-9e06-61c58daa
+ 074d
+URL:https://auftragsregister.ch/en/auftrag/aa74c0be-c306-4210-9e06-61c58daa
+ 074d/
+LOCATION:Albinen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Flurstrassen Albinen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:22d24e18-3119-4dab-96f0-040114f464f7-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:2
+DTSTART:20261102T110000Z
+SUMMARY:Submission deadline: Schweizerische Brandschutzvorschriften – Web
+ shop – Druck – Logistik
+DESCRIPTION:Public buyer: Vereinigung Kantonaler Feuerversicherungen (VKF)\
+ nSubmission deadline: 2 Nov 2026\, 12:00\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/22d24e18-3119-4dab-96f0-040114f464f7/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/22d24e18-3119-4dab-96f
+ 0-040114f464f7
+URL:https://auftragsregister.ch/en/auftrag/22d24e18-3119-4dab-96f0-040114f4
+ 64f7/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schweizerische Brandschutzvorschriften –
+  Webshop – Druck – Logistik
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

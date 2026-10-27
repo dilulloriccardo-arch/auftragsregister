@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:80b5ec47-1486-485d-9bcc-f91272b1c504-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Scadenza: BAV 57078 Gewächshaus Reckenholzstrasse 150\, Instandset
+ zung - BKP 211 Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 05.11
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/80b5ec
+ 47-1486-485d-9bcc-f91272b1c504/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/80b5ec47-1486-485d-9bcc-f91272b1c504
+URL:https://auftragsregister.ch/it/auftrag/80b5ec47-1486-485d-9bcc-f91272b1
+ c504/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 57078 Gewächshaus Reckenholzstrasse 150\, Instan
+ dsetzung - BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

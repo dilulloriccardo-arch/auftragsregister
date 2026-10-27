@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e32e16bf-b7d3-4e6c-9552-5ffd3ec5a8fa-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:2
+DTSTART:20261106T130000Z
+SUMMARY:Submission deadline: Fribourg\, barrage de la Maigrauge - Assainiss
+ ement de la dévalaison
+DESCRIPTION:Public buyer: Groupe E SA - Service Achat pour les Marchés pub
+ lics\nSubmission deadline: 6 Nov 2026\, 14:00\nIn the register: https://
+ auftragsregister.ch/en/auftrag/e32e16bf-b7d3-4e6c-9552-5ffd3ec5a8fa/\nOffi
+ cial publication: https://www.simap.ch/en/project-detail/e32e16bf-b7d3-4e6
+ c-9552-5ffd3ec5a8fa
+URL:https://auftragsregister.ch/en/auftrag/e32e16bf-b7d3-4e6c-9552-5ffd3ec5
+ a8fa/
+LOCATION:Fribourg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fribourg\, barrage de la Maigrauge - Assai
+ nissement de la dévalaison
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

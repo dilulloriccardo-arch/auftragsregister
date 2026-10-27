@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8821f187-eefb-440a-a6a5-89d8ba3d1bf8-frist@auftragsregister.ch
+DTSTAMP:20260821T000000Z
+SEQUENCE:0
+DTSTART:20270219T225900Z
+SUMMARY:Eingabefrist: NKM 5.3 – Los «Schotterreinigung»\, Fahrbahnerneu
+ erungen 2029-2033\, Rahmenvertrag GU\, Schweiz
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Infrastruktur -
+  Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\nEingab
+ efrist: 19.02.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/8821f187-eefb-440a-a6a5-89d8ba3d1bf8/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/8821f187-eefb-440a-a6a5-89d8ba3d1bf8
+URL:https://auftragsregister.ch/de/auftrag/8821f187-eefb-440a-a6a5-89d8ba3d
+ 1bf8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: NKM 5.3 – Los «Schotterreinigung»\, Fahrbahne
+ rneuerungen 2029-2033\, Rahmenvertrag GU\, Schweiz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

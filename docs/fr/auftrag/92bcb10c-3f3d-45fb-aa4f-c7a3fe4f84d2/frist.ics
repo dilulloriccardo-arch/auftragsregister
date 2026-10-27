@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92bcb10c-3f3d-45fb-aa4f-c7a3fe4f84d2-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Délai de remise : Bedarfseinschätzungsstelle für Menschen mit 
+ Behinderung
+DESCRIPTION:Acheteur public : Amt für Soziales\nDélai de remise : 13.
+ 11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/92bcb10c-3f3d-45fb-aa4f-c7a3fe4f84d2/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/92bcb10c-3f3d-45fb-aa4f-c7a3fe4f84
+ d2
+URL:https://auftragsregister.ch/fr/auftrag/92bcb10c-3f3d-45fb-aa4f-c7a3fe4f
+ 84d2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bedarfseinschätzungsstelle für Menschen 
+ mit Behinderung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

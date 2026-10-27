@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a836d1ea-342d-4ab0-87c2-9b27d54ad016-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261028T110000Z
+SUMMARY:Scadenza: Fahrzeugersatzbeschaffung Elektro-Geräteträger I
+DESCRIPTION:Ente pubblico: Stadt Uster\, Abteilung Bau\nScadenza: 28.10.202
+ 6\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/a836d1ea-3
+ 42d-4ab0-87c2-9b27d54ad016/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/a836d1ea-342d-4ab0-87c2-9b27d54ad016
+URL:https://auftragsregister.ch/it/auftrag/a836d1ea-342d-4ab0-87c2-9b27d54a
+ d016/
+LOCATION:Uster
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fahrzeugersatzbeschaffung Elektro-Geräteträger I
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

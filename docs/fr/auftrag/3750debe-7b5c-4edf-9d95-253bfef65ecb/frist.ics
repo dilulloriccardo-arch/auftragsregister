@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3750debe-7b5c-4edf-9d95-253bfef65ecb-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261207T225900Z
+SUMMARY:Délai de remise : (26170) 735 Cours de formation du CIVI « Séc
+ urité pendant les affectations à l’étranger »
+DESCRIPTION:Acheteur public : Bundesamt für Zivildienst ZIVI\nDélai de 
+ remise : 07.12.2026\, 23 h 59\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/3750debe-7b5c-4edf-9d95-253bfef65ecb/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/3750debe-7b5c-4edf-9
+ d95-253bfef65ecb
+URL:https://auftragsregister.ch/fr/auftrag/3750debe-7b5c-4edf-9d95-253bfef6
+ 5ecb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26170) 735 Cours de formation du CIVI « 
+ Sécurité pendant les affectations à l’étranger »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb8679e7-360d-40c3-b7dd-e4e58eb75b32-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:1
+DTSTART:20261127T110000Z
+SUMMARY:Délai de remise : Marché de licences informatiques Microsoft
+DESCRIPTION:Acheteur public : Centrale d'achats Etablissements Publics po
+ ur l'Intégration\nDélai de remise : 27.11.2026\, 12 h 00\nDans le 
+ registre : https://auftragsregister.ch/fr/auftrag/fb8679e7-360d-40c3-b7d
+ d-e4e58eb75b32/\nPublication officielle : https://www.simap.ch/fr/projec
+ t-detail/fb8679e7-360d-40c3-b7dd-e4e58eb75b32
+URL:https://auftragsregister.ch/fr/auftrag/fb8679e7-360d-40c3-b7dd-e4e58eb7
+ 5b32/
+LOCATION:Collonge - Bellerive
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Marché de licences informatiques Microsof
+ t
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

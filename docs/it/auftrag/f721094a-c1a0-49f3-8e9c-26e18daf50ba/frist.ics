@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f721094a-c1a0-49f3-8e9c-26e18daf50ba-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Scadenza: L'aggiudicazione dei contratti d'assicurazione LAINF\, Co
+ mplementare LAINF\, IPG malattia validi dal 01.01.2027 per l'Istituto per 
+ anziani San Carlo
+DESCRIPTION:Ente pubblico: Istituto per anziani San Carlo\nScadenza: 09.11.
+ 2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/f721094
+ a-c1a0-49f3-8e9c-26e18daf50ba/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/f721094a-c1a0-49f3-8e9c-26e18daf50ba
+URL:https://auftragsregister.ch/it/auftrag/f721094a-c1a0-49f3-8e9c-26e18daf
+ 50ba/
+LOCATION:Locarno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: L'aggiudicazione dei contratti d'assicurazione LAINF\
+ , Complementare LAINF\, IPG malattia validi dal 01.01.2027 per l'Istituto 
+ per anziani San Carlo
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

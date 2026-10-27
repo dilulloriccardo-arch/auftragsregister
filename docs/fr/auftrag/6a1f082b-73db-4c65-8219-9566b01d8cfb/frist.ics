@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a1f082b-73db-4c65-8219-9566b01d8cfb-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261105T110000Z
+SUMMARY:Délai de remise : Risiko - und Arbeitssicherheitsmanagement- Too
+ l
+DESCRIPTION:Acheteur public : Basler Verkehrs-Betriebe (BVB)\nDélai de r
+ emise : 05.11.2026\, 12 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/6a1f082b-73db-4c65-8219-9566b01d8cfb/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/6a1f082b-73db-4c65-82
+ 19-9566b01d8cfb
+URL:https://auftragsregister.ch/fr/auftrag/6a1f082b-73db-4c65-8219-9566b01d
+ 8cfb/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Risiko - und Arbeitssicherheitsmanagement-
+  Tool
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

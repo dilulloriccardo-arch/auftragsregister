@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f822d224-fba4-4651-9eee-2535ce16ebbc-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Scadenza: Relaunch EHB-Website
+DESCRIPTION:Ente pubblico: Eidgenössische Hochschule für Berufsbildung EH
+ B\nScadenza: 27.11.2026\nNel registro: https://auftragsregister.ch/it/auft
+ rag/f822d224-fba4-4651-9eee-2535ce16ebbc/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/f822d224-fba4-4651-9eee-2535ce16ebbc
+URL:https://auftragsregister.ch/it/auftrag/f822d224-fba4-4651-9eee-2535ce16
+ ebbc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Relaunch EHB-Website
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

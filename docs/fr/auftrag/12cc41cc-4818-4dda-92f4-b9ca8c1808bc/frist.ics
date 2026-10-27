@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12cc41cc-4818-4dda-92f4-b9ca8c1808bc-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261201T225800Z
+SUMMARY:Délai de remise : Neubau H07B- SKP 273095_Schiebetüren aus Holz
+  (AP04-01)
+DESCRIPTION:Acheteur public : Spitalanlagengesellschaft HOCH Health Ostsc
+ hweiz\nDélai de remise : 01.12.2026\, 23 h 58\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/12cc41cc-4818-4dda-92f4-b9ca8c1808
+ bc/\nPublication officielle : https://www.simap.ch/fr/project-detail/12c
+ c41cc-4818-4dda-92f4-b9ca8c1808bc
+URL:https://auftragsregister.ch/fr/auftrag/12cc41cc-4818-4dda-92f4-b9ca8c18
+ 08bc/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau H07B- SKP 273095_Schiebetüren aus 
+ Holz (AP04-01)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

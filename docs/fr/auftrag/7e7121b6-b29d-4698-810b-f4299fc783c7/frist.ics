@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7e7121b6-b29d-4698-810b-f4299fc783c7-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261123T080000Z
+SUMMARY:Délai de remise : IWB\, Tiefbauarbeiten Nauenstrasse United und 
+ Nauenstrasse West
+DESCRIPTION:Acheteur public : IWB Industrielle Werke Basel\nDélai de rem
+ ise : 23.11.2026\, 9 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/7e7121b6-b29d-4698-810b-f4299fc783c7/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/7e7121b6-b29d-4698-810b-
+ f4299fc783c7
+URL:https://auftragsregister.ch/fr/auftrag/7e7121b6-b29d-4698-810b-f4299fc7
+ 83c7/
+LOCATION:Basel-Stadt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IWB\, Tiefbauarbeiten Nauenstrasse United 
+ und Nauenstrasse West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

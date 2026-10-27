@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:368652b5-6b90-49b4-9465-d8c872b3c052-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Submission deadline: EPFL - AN CMi extension et P3 extension – Pr
+ estations de mandataires
+DESCRIPTION:Public buyer: EPFL - VPF - Achats\nSubmission deadline: 2 Dec
+  2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/36
+ 8652b5-6b90-49b4-9465-d8c872b3c052/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/368652b5-6b90-49b4-9465-d8c872b3c052
+URL:https://auftragsregister.ch/en/auftrag/368652b5-6b90-49b4-9465-d8c872b3
+ c052/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EPFL - AN CMi extension et P3 extension 
+ – Prestations de mandataires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

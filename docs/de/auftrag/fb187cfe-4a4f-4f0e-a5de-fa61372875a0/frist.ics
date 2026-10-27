@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb187cfe-4a4f-4f0e-a5de-fa61372875a0-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Eingabefrist: MP-100138\, N01/42\, Werkhof Wallisellen\, Neubau\, 6
+ 001 Umgebungsarbeiten
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nEingabefrist: 15.12.2026\, 23.59 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/fb187cfe-4a4f-4f0e-a5de-fa61372875a0/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/fb187cfe-4a4f-4f0e-a5de-fa61
+ 372875a0
+URL:https://auftragsregister.ch/de/auftrag/fb187cfe-4a4f-4f0e-a5de-fa613728
+ 75a0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-100138\, N01/42\, Werkhof Wallisellen\, Neubau
+ \, 6001 Umgebungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a62aeebd-2201-4e2d-944a-fddcfd3ffd1f-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Submission deadline: RC72 – Route du Nant-des-Crues Sécurisation
+  de l’infrastructure routière
+DESCRIPTION:Public buyer: Office cantonal du génie civil (OCGC) - Service 
+ des ouvrages d'art\nSubmission deadline: 9 Nov 2026\, 11:00\nIn the regi
+ ster: https://auftragsregister.ch/en/auftrag/a62aeebd-2201-4e2d-944a-fddcf
+ d3ffd1f/\nOfficial publication: https://www.simap.ch/en/project-detail/a62
+ aeebd-2201-4e2d-944a-fddcfd3ffd1f
+URL:https://auftragsregister.ch/en/auftrag/a62aeebd-2201-4e2d-944a-fddcfd3f
+ fd1f/
+LOCATION:Avully
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: RC72 – Route du Nant-des-Crues Sécurisa
+ tion de l’infrastructure routière
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

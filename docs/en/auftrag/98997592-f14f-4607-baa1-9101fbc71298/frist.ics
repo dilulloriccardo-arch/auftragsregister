@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:98997592-f14f-4607-baa1-9101fbc71298-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261102T103000Z
+SUMMARY:Submission deadline: Commune de Cressier - ruissellement centre vil
+ lage
+DESCRIPTION:Public buyer: Commune de Cressier FR\nSubmission deadline: 2 N
+ ov 2026\, 11:30\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 98997592-f14f-4607-baa1-9101fbc71298/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/98997592-f14f-4607-baa1-9101fbc71298
+URL:https://auftragsregister.ch/en/auftrag/98997592-f14f-4607-baa1-9101fbc7
+ 1298/
+LOCATION:Cressier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Commune de Cressier - ruissellement centre
+  village
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

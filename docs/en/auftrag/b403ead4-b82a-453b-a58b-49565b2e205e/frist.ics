@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b403ead4-b82a-453b-a58b-49565b2e205e-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261203T100000Z
+SUMMARY:Submission deadline: Refuse Collection Vehicle Fleet Expansion
+DESCRIPTION:Public buyer: Zweckverband Abfallverwertung Bazenheid\nSubmissi
+ on deadline: 3 Dec 2026\, 11:00\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/b403ead4-b82a-453b-a58b-49565b2e205e/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/b403ead4-b82a-453b-a58b-49565b2
+ e205e
+URL:https://auftragsregister.ch/en/auftrag/b403ead4-b82a-453b-a58b-49565b2e
+ 205e/
+LOCATION:Bazenheid
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Refuse Collection Vehicle Fleet Expansion
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2d6486a3-805a-4843-98ce-87b36ea4e6f5-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261106T100000Z
+SUMMARY:Délai de remise : Neubau Haus im Dorf\, 8182 Hochfelden\, BKP 23
+ 0 Elektroinstallationen
+DESCRIPTION:Acheteur public : Gemeinde Hochfelden (L3P Architekten AG)\nD
+ élai de remise : 06.11.2026\, 11 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/2d6486a3-805a-4843-98ce-87b36ea4e6f5/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/2d6486a3-80
+ 5a-4843-98ce-87b36ea4e6f5
+URL:https://auftragsregister.ch/fr/auftrag/2d6486a3-805a-4843-98ce-87b36ea4
+ e6f5/
+LOCATION:Hochfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Haus im Dorf\, 8182 Hochfelden\, BK
+ P 230 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

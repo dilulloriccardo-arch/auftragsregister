@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc5ed7d6-f886-440c-af42-53c8d188b848-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Submission deadline: New Construction of Herosé Senior Housing\, A
+ arau – BKP 250 Sanitary Installations
+DESCRIPTION:Public buyer: Einwohnergemeinde Aarau - Stadtbauamt\, Sektion H
+ ochbau\nSubmission deadline: 26 Nov 2026\, 16:00\nIn the register: https
+ ://auftragsregister.ch/en/auftrag/cc5ed7d6-f886-440c-af42-53c8d188b848/\nO
+ fficial publication: https://www.simap.ch/en/project-detail/cc5ed7d6-f886-
+ 440c-af42-53c8d188b848
+URL:https://auftragsregister.ch/en/auftrag/cc5ed7d6-f886-440c-af42-53c8d188
+ b848/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: New Construction of Herosé Senior Housing
+ \, Aarau – BKP 250 Sanitary Installations
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

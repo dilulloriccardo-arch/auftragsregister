@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8409db0-672c-4312-aedb-a151f854866a-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261103T090000Z
+SUMMARY:Scadenza: Umbau Reservoir Feumet - Tiefbauarbeiten Eggstrasse
+DESCRIPTION:Ente pubblico: Gemeinde Maur - Tiefbau\nScadenza: 03.11.2026\, 
+ 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/e8409db0-672c-
+ 4312-aedb-a151f854866a/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/e8409db0-672c-4312-aedb-a151f854866a
+URL:https://auftragsregister.ch/it/auftrag/e8409db0-672c-4312-aedb-a151f854
+ 866a/
+LOCATION:Maur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Umbau Reservoir Feumet - Tiefbauarbeiten Eggstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

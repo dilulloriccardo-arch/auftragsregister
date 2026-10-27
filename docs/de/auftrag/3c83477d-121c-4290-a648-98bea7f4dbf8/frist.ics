@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c83477d-121c-4290-a648-98bea7f4dbf8-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Eingabefrist: Ernen nouvelle sous-station\, Transformateurs 65/16.5
+  kV
+DESCRIPTION:Auftraggeber: FMV SA\nEingabefrist: 30.11.2026\, 23.59 Uhr\nIm
+  Register: https://auftragsregister.ch/de/auftrag/3c83477d-121c-4290-a648-
+ 98bea7f4dbf8/\nAmtliche Publikation: https://www.simap.ch/de/project-detai
+ l/3c83477d-121c-4290-a648-98bea7f4dbf8
+URL:https://auftragsregister.ch/de/auftrag/3c83477d-121c-4290-a648-98bea7f4
+ dbf8/
+LOCATION:Ernen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ernen nouvelle sous-station\, Transformateurs 65/
+ 16.5 kV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

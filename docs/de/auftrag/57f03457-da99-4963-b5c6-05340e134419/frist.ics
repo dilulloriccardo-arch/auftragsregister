@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57f03457-da99-4963-b5c6-05340e134419-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20270127T153000Z
+SUMMARY:Eingabefrist: Alpenrhein: Steinlieferungen für Unterhalt "gesetzte
+ r" Blockwurf Winter 2027/28
+DESCRIPTION:Auftraggeber: Rheinunternehmen\nEingabefrist: 27.01.2027\, 16.3
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/57f03457-da99-
+ 4963-b5c6-05340e134419/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/57f03457-da99-4963-b5c6-05340e134419
+URL:https://auftragsregister.ch/de/auftrag/57f03457-da99-4963-b5c6-05340e13
+ 4419/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Alpenrhein: Steinlieferungen für Unterhalt "gese
+ tzter" Blockwurf Winter 2027/28
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

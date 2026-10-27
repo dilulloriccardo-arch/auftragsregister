@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:58baab3d-b8ec-4f47-8b59-76fee03f99bb-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Scadenza: Prestations d’exploitation IT externalisées
+DESCRIPTION:Ente pubblico: Monthey Energies SA\nScadenza: 13.11.2026\, 23:5
+ 9\nNel registro: https://auftragsregister.ch/it/auftrag/58baab3d-b8ec-4f47
+ -8b59-76fee03f99bb/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/58baab3d-b8ec-4f47-8b59-76fee03f99bb
+URL:https://auftragsregister.ch/it/auftrag/58baab3d-b8ec-4f47-8b59-76fee03f
+ 99bb/
+LOCATION:Monthey
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Prestations d’exploitation IT externalisées
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

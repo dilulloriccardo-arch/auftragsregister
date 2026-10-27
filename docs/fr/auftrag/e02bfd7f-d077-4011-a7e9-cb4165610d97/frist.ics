@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e02bfd7f-d077-4011-a7e9-cb4165610d97-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T130000Z
+SUMMARY:Délai de remise : Délocalisation et construction du musée d'hi
+ stoire naturelle à Fribourg_CFC 273.3 Doublages intérieurs en bois
+DESCRIPTION:Acheteur public : Direktion für Raumentwicklung\, Infrastruk
+ tur\, Mobilität und Umwelt - (RIMU) - Hochbauamt\nDélai de remise : 13
+ .11.2026\, 14 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/e02bfd7f-d077-4011-a7e9-cb4165610d97/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/e02bfd7f-d077-4011-a7e9-cb4165610
+ d97
+URL:https://auftragsregister.ch/fr/auftrag/e02bfd7f-d077-4011-a7e9-cb416561
+ 0d97/
+LOCATION:Freiburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Délocalisation et construction du musée 
+ d'histoire naturelle à Fribourg_CFC 273.3 Doublages intérieurs en bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

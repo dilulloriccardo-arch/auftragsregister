@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:728d7356-bea6-454a-8795-f76103cf77c0-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261120T160000Z
+SUMMARY:Scadenza: Rénovation des Infrastructures du Théâtre Benno Besson
+  - Plâtrerie\, faux plafond en plâtre
+DESCRIPTION:Ente pubblico: Ville d'Yverdon-les-Bains - Service des bâtimen
+ ts (BAT)\nScadenza: 20.11.2026\, 17:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/728d7356-bea6-454a-8795-f76103cf77c0/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/728d7356-bea6-454a-8795-f7
+ 6103cf77c0
+URL:https://auftragsregister.ch/it/auftrag/728d7356-bea6-454a-8795-f76103cf
+ 77c0/
+LOCATION:Yverdon-les-Bains
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rénovation des Infrastructures du Théâtre Benno Be
+ sson - Plâtrerie\, faux plafond en plâtre
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

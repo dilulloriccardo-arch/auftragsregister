@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b1f0712c-fec7-4f6c-a2df-d007e84ddf02-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Scadenza: Schulhaus Langwiesen Erweiterung und Sanierung\; BKP 244 
+ Lufttechnische Anlagen
+DESCRIPTION:Ente pubblico: Amt für Städtebau\nScadenza: 04.11.2026\, 12:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/b1f0712c-fec7-4f6c
+ -a2df-d007e84ddf02/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/b1f0712c-fec7-4f6c-a2df-d007e84ddf02
+URL:https://auftragsregister.ch/it/auftrag/b1f0712c-fec7-4f6c-a2df-d007e84d
+ df02/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulhaus Langwiesen Erweiterung und Sanierung\; BKP 
+ 244 Lufttechnische Anlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

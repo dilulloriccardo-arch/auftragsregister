@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:181873d3-6a66-43dd-a959-966ef812cd39-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Eingabefrist: Wartung\, Support\, Betrieb und Weiterentwicklung Inn
+ oguide Kanton St.Gallen
+DESCRIPTION:Auftraggeber: Amt für Wirtschaft und Arbeit\nEingabefrist: 11.
+ 01.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ 181873d3-6a66-43dd-a959-966ef812cd39/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/181873d3-6a66-43dd-a959-966ef812cd39
+URL:https://auftragsregister.ch/de/auftrag/181873d3-6a66-43dd-a959-966ef812
+ cd39/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Wartung\, Support\, Betrieb und Weiterentwicklung
+  Innoguide Kanton St.Gallen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

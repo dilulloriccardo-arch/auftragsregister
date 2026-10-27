@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:05401cac-8511-4997-b069-1788ca73e66a-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261201T110000Z
+SUMMARY:Scadenza: Poste Vaucens - Appareillage 24 kV sous enveloppe métall
+ ique isolé à l’air et à structure débrochable
+DESCRIPTION:Ente pubblico: Gruyère Energie SA\nScadenza: 01.12.2026\, 12:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/05401cac-8511-4997
+ -b069-1788ca73e66a/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/05401cac-8511-4997-b069-1788ca73e66a
+URL:https://auftragsregister.ch/it/auftrag/05401cac-8511-4997-b069-1788ca73
+ e66a/
+LOCATION:Bulle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Poste Vaucens - Appareillage 24 kV sous enveloppe mé
+ tallique isolé à l’air et à structure débrochable
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

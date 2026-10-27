@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e868685d-f625-4248-9ea6-ee318ef7077c-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Délai de remise : Construction de la nouvelle gare routière
+DESCRIPTION:Acheteur public : Einwohnergemeinde Ettiswil\nDélai de remis
+ e : 23.11.2026\, 11 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/e868685d-f625-4248-9ea6-ee318ef7077c/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/e868685d-f625-4248-9ea6-e
+ e318ef7077c
+URL:https://auftragsregister.ch/fr/auftrag/e868685d-f625-4248-9ea6-ee318ef7
+ 077c/
+LOCATION:Ettiswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction de la nouvelle gare routière
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

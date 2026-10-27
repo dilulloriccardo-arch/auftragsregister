@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:390cdb30-9e68-4c25-bed9-8384e4a366cc-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:1
+DTSTART:20270112T225900Z
+SUMMARY:Délai de remise : (26163) 998 Partenaire technique WEB
+DESCRIPTION:Acheteur public : Eidgenössisches Nuklearsicherheitsinspekto
+ rat ENSI\nDélai de remise : 12.01.2027\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/390cdb30-9e68-4c25-bed9-8384e4
+ a366cc/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /390cdb30-9e68-4c25-bed9-8384e4a366cc
+URL:https://auftragsregister.ch/fr/auftrag/390cdb30-9e68-4c25-bed9-8384e4a3
+ 66cc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26163) 998 Partenaire technique WEB
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

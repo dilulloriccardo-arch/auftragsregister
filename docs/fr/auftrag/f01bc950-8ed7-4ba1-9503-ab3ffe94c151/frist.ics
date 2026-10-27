@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f01bc950-8ed7-4ba1-9503-ab3ffe94c151-frist@auftragsregister.ch
+DTSTAMP:20260927T000000Z
+SEQUENCE:0
+DTSTART:20261116T225600Z
+SUMMARY:Délai de remise : 65- und 16- kV Kabelleitungen Einführung der 
+ Kabelleitungen in das neue Unterwerk Ernen
+DESCRIPTION:Acheteur public : Valgrid SA\nDélai de remise : 16.11.2026
+ \, 23 h 56\nDans le registre : https://auftragsregister.ch/fr/auftra
+ g/f01bc950-8ed7-4ba1-9503-ab3ffe94c151/\nPublication officielle : https:
+ //www.simap.ch/fr/project-detail/f01bc950-8ed7-4ba1-9503-ab3ffe94c151
+URL:https://auftragsregister.ch/fr/auftrag/f01bc950-8ed7-4ba1-9503-ab3ffe94
+ c151/
+LOCATION:Ernen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 65- und 16- kV Kabelleitungen Einführung 
+ der Kabelleitungen in das neue Unterwerk Ernen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

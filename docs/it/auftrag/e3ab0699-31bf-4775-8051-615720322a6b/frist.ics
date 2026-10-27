@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3ab0699-31bf-4775-8051-615720322a6b-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Scadenza: 16.0249 - Langenthal\, Sanierung und Erweiterung Berufsfa
+ chschule: 250 Sanitär
+DESCRIPTION:Ente pubblico: Amt für Grundstücke und Gebäude des Kantons B
+ ern (AGG)\nScadenza: 09.11.2026\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/e3ab0699-31bf-4775-8051-615720322a6b/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/e3ab0699-31bf-4775-8051-6
+ 15720322a6b
+URL:https://auftragsregister.ch/it/auftrag/e3ab0699-31bf-4775-8051-61572032
+ 2a6b/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 16.0249 - Langenthal\, Sanierung und Erweiterung Beru
+ fsfachschule: 250 Sanitär
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

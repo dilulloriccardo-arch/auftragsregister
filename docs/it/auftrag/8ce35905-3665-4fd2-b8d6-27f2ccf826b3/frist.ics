@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ce35905-3665-4fd2-b8d6-27f2ccf826b3-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261102T100000Z
+SUMMARY:Scadenza: Bau Werkleitungen und Strassenbau QP Bauertacher\, Stäfa
+DESCRIPTION:Ente pubblico: Gemeinde Stäfa\, Tiefbau\nScadenza: 02.11.2026\
+ , 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/8ce35905-366
+ 5-4fd2-b8d6-27f2ccf826b3/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/8ce35905-3665-4fd2-b8d6-27f2ccf826b3
+URL:https://auftragsregister.ch/it/auftrag/8ce35905-3665-4fd2-b8d6-27f2ccf8
+ 26b3/
+LOCATION:Stäfa
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bau Werkleitungen und Strassenbau QP Bauertacher\, St
+ äfa
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:17823d9d-c2bb-4aa8-a679-0a53b8e8ceb6-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261106T080000Z
+SUMMARY:Délai de remise : LAA_PGM2026
+DESCRIPTION:Acheteur public : Fondation pour l'Aide et les Soins à domic
+ ile (Prévenir SA)\nDélai de remise : 06.11.2026\, 9 h 00\nDans le 
+ registre : https://auftragsregister.ch/fr/auftrag/17823d9d-c2bb-4aa8-a67
+ 9-0a53b8e8ceb6/\nPublication officielle : https://www.simap.ch/fr/projec
+ t-detail/17823d9d-c2bb-4aa8-a679-0a53b8e8ceb6
+URL:https://auftragsregister.ch/fr/auftrag/17823d9d-c2bb-4aa8-a679-0a53b8e8
+ ceb6/
+LOCATION:Delémont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : LAA_PGM2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

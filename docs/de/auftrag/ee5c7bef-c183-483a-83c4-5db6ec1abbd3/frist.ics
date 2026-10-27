@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee5c7bef-c183-483a-83c4-5db6ec1abbd3-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Eingabefrist: St. Moritz – Tirano\, Teilerneuerung Puntaltatunnel
+ \, km 33.786 – km 33.832\, Baumeisterarbeiten
+DESCRIPTION:Auftraggeber: Rhätische Bahn AG\nEingabefrist: 11.01.2027\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ee5c7bef-c18
+ 3-483a-83c4-5db6ec1abbd3/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/ee5c7bef-c183-483a-83c4-5db6ec1abbd3
+URL:https://auftragsregister.ch/de/auftrag/ee5c7bef-c183-483a-83c4-5db6ec1a
+ bbd3/
+LOCATION:Poschiavo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: St. Moritz – Tirano\, Teilerneuerung Puntaltatu
+ nnel\, km 33.786 – km 33.832\, Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

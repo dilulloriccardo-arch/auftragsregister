@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1786c969-4e91-406e-9b46-9881f4d8898e-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Eingabefrist: Revision Frontkupplungen Flirt 3 und Traverso 2027-20
+ 31
+DESCRIPTION:Auftraggeber: Schweizerische Südostbahn AG (SOB) F&S-LOG-E\nEi
+ ngabefrist: 20.11.2026\, 15.00 Uhr\nIm Register: https://auftragsregister
+ .ch/de/auftrag/1786c969-4e91-406e-9b46-9881f4d8898e/\nAmtliche Publikation
+ : https://www.simap.ch/de/project-detail/1786c969-4e91-406e-9b46-9881f4d88
+ 98e
+URL:https://auftragsregister.ch/de/auftrag/1786c969-4e91-406e-9b46-9881f4d8
+ 898e/
+LOCATION:Samstagern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Revision Frontkupplungen Flirt 3 und Traverso 202
+ 7-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

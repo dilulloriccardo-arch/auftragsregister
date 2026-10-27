@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02eb926c-5c80-4c61-a596-1319fd34ff5b-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261203T150000Z
+SUMMARY:Eingabefrist: MP-260009 N2 Rinforzo fondazioni Viadotto di Monte 
+ – Interventi Spalla Sud e Pila P2
+DESCRIPTION:Auftraggeber: Ufficio federale delle strade USTRA\, Divisione i
+ nfrastruttura stradale Est\nEingabefrist: 03.12.2026\, 16.00 Uhr\nIm Regi
+ ster: https://auftragsregister.ch/de/auftrag/02eb926c-5c80-4c61-a596-1319f
+ d34ff5b/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/02e
+ b926c-5c80-4c61-a596-1319fd34ff5b
+URL:https://auftragsregister.ch/de/auftrag/02eb926c-5c80-4c61-a596-1319fd34
+ ff5b/
+LOCATION:Osco (Faido)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-260009 N2 Rinforzo fondazioni Viadotto di Mont
+ e – Interventi Spalla Sud e Pila P2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

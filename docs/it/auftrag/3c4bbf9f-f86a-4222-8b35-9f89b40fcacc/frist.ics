@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c4bbf9f-f86a-4222-8b35-9f89b40fcacc-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Scadenza: 2040 Neubau Schulanlage Birchlen\, Dübendorf - 231.3 Sch
+ altgerätekombinationen
+DESCRIPTION:Ente pubblico: Primarschule Dübendorf\nScadenza: 04.12.2026\, 
+ 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/3c4bbf9f-f86a-
+ 4222-8b35-9f89b40fcacc/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/3c4bbf9f-f86a-4222-8b35-9f89b40fcacc
+URL:https://auftragsregister.ch/it/auftrag/3c4bbf9f-f86a-4222-8b35-9f89b40f
+ cacc/
+LOCATION:Dübendorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 2040 Neubau Schulanlage Birchlen\, Dübendorf - 231.3
+  Schaltgerätekombinationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

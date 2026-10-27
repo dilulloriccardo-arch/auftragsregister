@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2bae8e3-a79f-4b12-9038-1ad5fc431782-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261117T140000Z
+SUMMARY:Submission deadline: OF-26-08 Rollschlitten RV-C komplett
+DESCRIPTION:Public buyer: SBB CFF FFS Infra-Bahntechnik\nSubmission deadlin
+ e: 17 Nov 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/e2bae8e3-a79f-4b12-9038-1ad5fc431782/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/e2bae8e3-a79f-4b12-9038-1ad5fc431782
+URL:https://auftragsregister.ch/en/auftrag/e2bae8e3-a79f-4b12-9038-1ad5fc43
+ 1782/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: OF-26-08 Rollschlitten RV-C komplett
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

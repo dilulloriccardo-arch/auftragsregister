@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6301a0e6-502e-46b9-8216-ba547fad8f58-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Submission deadline: Filisur HS Laviner Cotschen SW 2027
+DESCRIPTION:Public buyer: Forst Albula\nSubmission deadline: 11 Nov 2026\
+ nIn the register: https://auftragsregister.ch/en/auftrag/6301a0e6-502e-46b
+ 9-8216-ba547fad8f58/\nOfficial publication: https://www.simap.ch/en/projec
+ t-detail/6301a0e6-502e-46b9-8216-ba547fad8f58
+URL:https://auftragsregister.ch/en/auftrag/6301a0e6-502e-46b9-8216-ba547fad
+ 8f58/
+LOCATION:7477 Filisur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Filisur HS Laviner Cotschen SW 2027
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6957cde8-c8d7-40db-8a9a-5526607c5034-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Submission deadline: MP-260016\, Hauptinspektionen Bau 2027-2029
+DESCRIPTION:Public buyer: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nSubmission deadline: 9 Nov 2026\, 23:59\nIn the register: https://auf
+ tragsregister.ch/en/auftrag/6957cde8-c8d7-40db-8a9a-5526607c5034/\nOfficia
+ l publication: https://www.simap.ch/en/project-detail/6957cde8-c8d7-40db-8
+ a9a-5526607c5034
+URL:https://auftragsregister.ch/en/auftrag/6957cde8-c8d7-40db-8a9a-5526607c
+ 5034/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-260016\, Hauptinspektionen Bau 2027-202
+ 9
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

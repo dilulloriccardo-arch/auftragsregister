@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2efafc90-f925-47e7-bcbe-32261659b68e-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261109T103000Z
+SUMMARY:Scadenza: Projet de requalification des aménagements extérieurs d
+ e la Cour du Collège de Chailly
+DESCRIPTION:Ente pubblico: Commune de Montreux - Service des domaines et b
+ âtiments\, sport\nScadenza: 09.11.2026\, 11:30\nNel registro: https://auf
+ tragsregister.ch/it/auftrag/2efafc90-f925-47e7-bcbe-32261659b68e/\nPubblic
+ azione ufficiale: https://www.simap.ch/it/project-detail/2efafc90-f925-47e
+ 7-bcbe-32261659b68e
+URL:https://auftragsregister.ch/it/auftrag/2efafc90-f925-47e7-bcbe-32261659
+ b68e/
+LOCATION:Chailly-Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Projet de requalification des aménagements extérieu
+ rs de la Cour du Collège de Chailly
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

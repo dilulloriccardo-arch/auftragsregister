@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0a2ec16-e599-4676-9e20-117ce989ef27-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Scadenza: VS Weissenbühl\, Neubau\, 379 Turnhallenausstattung
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 25.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/a0a2ec16-e599-4676-9e20-117ce989ef27/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/a0a2ec16-e599-4676-9e20-117ce989ef27
+URL:https://auftragsregister.ch/it/auftrag/a0a2ec16-e599-4676-9e20-117ce989
+ ef27/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: VS Weissenbühl\, Neubau\, 379 Turnhallenausstattung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62bdaa70-8363-4e63-b76c-3ef470c9e5ae-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Submission deadline: USZ Campus MITTE 1|2 / BKP 231.01 Mittelspannu
+ ngsanlagen\, Niederspannungshauptverteilungen (OV)
+DESCRIPTION:Public buyer: Universitätsspital Zürich\nSubmission deadline:
+  30 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/62bdaa70-8363-4e63-b76c-3ef470c9e5ae/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/62bdaa70-8363-4e63-b76c-3ef470c9e5ae
+URL:https://auftragsregister.ch/en/auftrag/62bdaa70-8363-4e63-b76c-3ef470c9
+ e5ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: USZ Campus MITTE 1|2 / BKP 231.01 Mittelsp
+ annungsanlagen\, Niederspannungshauptverteilungen (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

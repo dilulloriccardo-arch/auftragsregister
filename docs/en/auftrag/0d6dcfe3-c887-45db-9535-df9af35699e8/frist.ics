@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d6dcfe3-c887-45db-9535-df9af35699e8-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Submission deadline: Maintenance des portes automatiques
+DESCRIPTION:Public buyer: Genève Aéroport\nSubmission deadline: 9 Nov 2
+ 026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/0d6dc
+ fe3-c887-45db-9535-df9af35699e8/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/0d6dcfe3-c887-45db-9535-df9af35699e8
+URL:https://auftragsregister.ch/en/auftrag/0d6dcfe3-c887-45db-9535-df9af356
+ 99e8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Maintenance des portes automatiques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

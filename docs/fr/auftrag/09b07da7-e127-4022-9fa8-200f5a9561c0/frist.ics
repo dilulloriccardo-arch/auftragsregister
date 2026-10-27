@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:09b07da7-e127-4022-9fa8-200f5a9561c0-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261028T130000Z
+SUMMARY:Délai de remise : Erweiterung Schulanlage Eselriet\, BKP 271 Gip
+ serarbeiten
+DESCRIPTION:Acheteur public : Stadt Illnau-Effretikon\, Abteilung Hochbau
+ \nDélai de remise : 28.10.2026\, 14 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/09b07da7-e127-4022-9fa8-200f5a9561c0/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/09b07da7
+ -e127-4022-9fa8-200f5a9561c0
+URL:https://auftragsregister.ch/fr/auftrag/09b07da7-e127-4022-9fa8-200f5a95
+ 61c0/
+LOCATION:Effretikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erweiterung Schulanlage Eselriet\, BKP 271
+  Gipserarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

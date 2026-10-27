@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9de61cec-8c91-447b-94aa-5e70099a9ab6-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261124T110000Z
+SUMMARY:Eingabefrist: FIS Innenanzeigen
+DESCRIPTION:Auftraggeber: Schweizerische Post AG\nEingabefrist: 24.11.2026\
+ , 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9de61cec
+ -8c91-447b-94aa-5e70099a9ab6/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/9de61cec-8c91-447b-94aa-5e70099a9ab6
+URL:https://auftragsregister.ch/de/auftrag/9de61cec-8c91-447b-94aa-5e70099a
+ 9ab6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: FIS Innenanzeigen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

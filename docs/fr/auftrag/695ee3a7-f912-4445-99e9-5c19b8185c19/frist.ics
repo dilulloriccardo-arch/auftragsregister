@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:695ee3a7-f912-4445-99e9-5c19b8185c19-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:1
+DTSTART:20270108T140000Z
+SUMMARY:Délai de remise : Diesel SN EN 590\, diesel alternatif SN EN 159
+ 40\, mazout
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Konzernei
+ nkauf Verbrauchsgüter\nDélai de remise : 08.01.2027\, 15 h 00\nDan
+ s le registre : https://auftragsregister.ch/fr/auftrag/695ee3a7-f912-444
+ 5-99e9-5c19b8185c19/\nPublication officielle : https://www.simap.ch/fr/p
+ roject-detail/695ee3a7-f912-4445-99e9-5c19b8185c19
+URL:https://auftragsregister.ch/fr/auftrag/695ee3a7-f912-4445-99e9-5c19b818
+ 5c19/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Diesel SN EN 590\, diesel alternatif SN EN
+  15940\, mazout
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b8a90a09-2407-41c6-890d-7bab8d80ee76-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261117T140000Z
+SUMMARY:Délai de remise : Agrandissement scolaire de Kilchbühl\, Biel-B
+ enken BL\, CFC 242 Installations de chauffage et de refroidissement
+DESCRIPTION:Acheteur public : Gemeindeverwaltung Biel-Benken\nDélai de r
+ emise : 17.11.2026\, 15 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/b8a90a09-2407-41c6-890d-7bab8d80ee76/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/b8a90a09-2407-41c6-89
+ 0d-7bab8d80ee76
+URL:https://auftragsregister.ch/fr/auftrag/b8a90a09-2407-41c6-890d-7bab8d80
+ ee76/
+LOCATION:Biel-Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Agrandissement scolaire de Kilchbühl\, Bi
+ el-Benken BL\, CFC 242 Installations de chauffage et de refroidissement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

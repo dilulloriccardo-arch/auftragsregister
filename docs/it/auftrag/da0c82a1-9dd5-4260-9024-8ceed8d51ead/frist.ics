@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da0c82a1-9dd5-4260-9024-8ceed8d51ead-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:0
+DTSTART:20261112T225900Z
+SUMMARY:Scadenza: MP-240065 Risanamento integrale dei centri di manutenzion
+ e di Göschenen e Airolo\, progettista generale (GP) fase MK – IBN
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA -Abteilung Strasse
+ ninfrastruktur-Ost - F3 Zofingen Filiale Zofingen\nScadenza: 12.11.2026\, 
+ 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/da0c82a1-9dd5-
+ 4260-9024-8ceed8d51ead/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/da0c82a1-9dd5-4260-9024-8ceed8d51ead
+URL:https://auftragsregister.ch/it/auftrag/da0c82a1-9dd5-4260-9024-8ceed8d5
+ 1ead/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-240065 Risanamento integrale dei centri di manuten
+ zione di Göschenen e Airolo\, progettista generale (GP) fase MK – IBN
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bf4d9aaa-3ae4-421b-9bbf-df3ed9024859-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261204T090000Z
+SUMMARY:Délai de remise : Fourniture de véhicules légers pour l'Etat d
+ e Vaud
+DESCRIPTION:Acheteur public : DGMR\, Div. Entretien\, Centre cantonal d
+ ’entretien des véhicules\nDélai de remise : 04.12.2026\, 10 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/bf4d9aaa-3ae
+ 4-421b-9bbf-df3ed9024859/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/bf4d9aaa-3ae4-421b-9bbf-df3ed9024859
+URL:https://auftragsregister.ch/fr/auftrag/bf4d9aaa-3ae4-421b-9bbf-df3ed902
+ 4859/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture de véhicules légers pour l'Et
+ at de Vaud
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

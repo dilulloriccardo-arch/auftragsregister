@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2a0aeae5-bcd9-48f0-b037-b84372d7d967-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261110T160000Z
+SUMMARY:Délai de remise : LIFT pilot project for drone-based postal deli
+ very in the Maldives
+DESCRIPTION:Acheteur public : Union postale universelle\nDélai de remise
+  : 10.11.2026\, 17 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/2a0aeae5-bcd9-48f0-b037-b84372d7d967/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/2a0aeae5-bcd9-48f0-b037-b8
+ 4372d7d967
+URL:https://auftragsregister.ch/fr/auftrag/2a0aeae5-bcd9-48f0-b037-b84372d7
+ d967/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : LIFT pilot project for drone-based postal 
+ delivery in the Maldives
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

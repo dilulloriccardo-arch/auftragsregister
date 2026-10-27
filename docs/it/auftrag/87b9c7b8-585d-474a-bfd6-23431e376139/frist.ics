@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87b9c7b8-585d-474a-bfd6-23431e376139-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Scadenza: Planerleistungen Instandsetzung Obere Chlempigrabenbrück
+ e
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 02.11.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/87b9c7b8-5
+ 85d-474a-bfd6-23431e376139/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/87b9c7b8-585d-474a-bfd6-23431e376139
+URL:https://auftragsregister.ch/it/auftrag/87b9c7b8-585d-474a-bfd6-23431e37
+ 6139/
+LOCATION:Unterseen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Planerleistungen Instandsetzung Obere Chlempigrabenbr
+ ücke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

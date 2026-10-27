@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:015a2b15-f420-4af4-b25d-d9c351839494-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Scadenza: Démolition et construction d'un EMS à Bex. Faux-plafond
+ s spéciaux.
+DESCRIPTION:Ente pubblico: Fondation des Maisons de Retraites du District d
+ 'Aigle. EMS Résidence Grande Fontaine (bureau d'architecte counson archit
+ ecte sarl).\nScadenza: 16.11.2026\, 12:00\nNel registro: https://auftragsr
+ egister.ch/it/auftrag/015a2b15-f420-4af4-b25d-d9c351839494/\nPubblicazione
+  ufficiale: https://www.simap.ch/it/project-detail/015a2b15-f420-4af4-b25d
+ -d9c351839494
+URL:https://auftragsregister.ch/it/auftrag/015a2b15-f420-4af4-b25d-d9c35183
+ 9494/
+LOCATION:Bex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Démolition et construction d'un EMS à Bex. Faux-pla
+ fonds spéciaux.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

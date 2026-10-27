@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:70f82a1c-bf49-42c8-8449-3be56da724a3-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Eingabefrist: Rénovation centre scolaire du Mail - 12910- École p
+ rovisoire -Travaux préparatoires
+DESCRIPTION:Auftraggeber: éorén - École obligatoire région Neuchâtel (
+ AAPA SA)\nEingabefrist: 02.12.2026\, 16.00 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/70f82a1c-bf49-42c8-8449-3be56da724a3/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/70f82a1c-bf49-42c8-84
+ 49-3be56da724a3
+URL:https://auftragsregister.ch/de/auftrag/70f82a1c-bf49-42c8-8449-3be56da7
+ 24a3/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rénovation centre scolaire du Mail - 12910- Éco
+ le provisoire -Travaux préparatoires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

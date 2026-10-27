@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:faf0f2ab-4892-40f9-8e92-40eed6ce5ed0-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261117T224600Z
+SUMMARY:Submission deadline: EBP-668 Teilerneuerung HS-Leitung UW Holligen 
+ – UW Forsthaus
+DESCRIPTION:Public buyer: Energie Wasser Bern\nSubmission deadline: 17 Nov
+  2026\, 23:46\nIn the register: https://auftragsregister.ch/en/auftrag/fa
+ f0f2ab-4892-40f9-8e92-40eed6ce5ed0/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/faf0f2ab-4892-40f9-8e92-40eed6ce5ed0
+URL:https://auftragsregister.ch/en/auftrag/faf0f2ab-4892-40f9-8e92-40eed6ce
+ 5ed0/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EBP-668 Teilerneuerung HS-Leitung UW Holli
+ gen – UW Forsthaus
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

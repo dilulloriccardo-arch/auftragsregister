@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f29a0477-7ef9-4468-986a-7571f7c0e813-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261125T225900Z
+SUMMARY:Délai de remise : A / 392 / Ausbau Wägitalstrasse\, Abschnitt R
+ empen\, Vorderthal\; km 4.680 - km 5.100
+DESCRIPTION:Acheteur public : Tiefbauamt Kanton Schwyz\nDélai de remise
+  : 25.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/f29a0477-7ef9-4468-986a-7571f7c0e813/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/f29a0477-7ef9-4468-986a-75
+ 71f7c0e813
+URL:https://auftragsregister.ch/fr/auftrag/f29a0477-7ef9-4468-986a-7571f7c0
+ e813/
+LOCATION:Vorderthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : A / 392 / Ausbau Wägitalstrasse\, Abschni
+ tt Rempen\, Vorderthal\; km 4.680 - km 5.100
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

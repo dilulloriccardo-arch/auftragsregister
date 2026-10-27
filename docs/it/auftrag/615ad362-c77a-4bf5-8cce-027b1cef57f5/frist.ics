@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:615ad362-c77a-4bf5-8cce-027b1cef57f5-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Scadenza: Extension du groupe scolaire de Corsier - AO CFC 228.3 - 
+ Stores en toile
+DESCRIPTION:Ente pubblico: FdMP réalisation sa\nScadenza: 16.11.2026\, 11:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/615ad362-c77a-4bf
+ 5-8cce-027b1cef57f5/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/615ad362-c77a-4bf5-8cce-027b1cef57f5
+URL:https://auftragsregister.ch/it/auftrag/615ad362-c77a-4bf5-8cce-027b1cef
+ 57f5/
+LOCATION:Corsier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Extension du groupe scolaire de Corsier - AO CFC 228.
+ 3 - Stores en toile
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

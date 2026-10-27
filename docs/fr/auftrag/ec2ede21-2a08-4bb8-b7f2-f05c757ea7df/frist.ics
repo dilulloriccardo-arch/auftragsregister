@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec2ede21-2a08-4bb8-b7f2-f05c757ea7df-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261103T150000Z
+SUMMARY:Délai de remise : NOUVELLE ÉCOLE DE MARLY CITÉ AVEC SALLE POLY
+ VALENTE ET PARKING SOUTERRAIN\, CFC 242\, INSTALLATIONS DE CHAUFFAGE
+DESCRIPTION:Acheteur public : Commune de Marly\nDélai de remise : 03.1
+ 1.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/ec2ede21-2a08-4bb8-b7f2-f05c757ea7df/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/ec2ede21-2a08-4bb8-b7f2-f05c757ea7d
+ f
+URL:https://auftragsregister.ch/fr/auftrag/ec2ede21-2a08-4bb8-b7f2-f05c757e
+ a7df/
+LOCATION:Marly
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : NOUVELLE ÉCOLE DE MARLY CITÉ AVEC SALLE 
+ POLYVALENTE ET PARKING SOUTERRAIN\, CFC 242\, INSTALLATIONS DE CHAUFFAGE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

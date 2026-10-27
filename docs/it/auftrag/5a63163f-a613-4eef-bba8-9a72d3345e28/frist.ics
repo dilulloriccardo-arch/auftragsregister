@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a63163f-a613-4eef-bba8-9a72d3345e28-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Scadenza: Sanierung\, St. Ursussteig - Baden
+DESCRIPTION:Ente pubblico: Stadt Baden\, Bau\nScadenza: 13.11.2026\, 12:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/5a63163f-a613-4eef-b
+ ba8-9a72d3345e28/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/5a63163f-a613-4eef-bba8-9a72d3345e28
+URL:https://auftragsregister.ch/it/auftrag/5a63163f-a613-4eef-bba8-9a72d334
+ 5e28/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung\, St. Ursussteig - Baden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

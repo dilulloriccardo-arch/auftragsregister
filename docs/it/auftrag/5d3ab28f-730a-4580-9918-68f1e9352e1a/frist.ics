@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5d3ab28f-730a-4580-9918-68f1e9352e1a-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Scadenza: Lagerhalle BOEN - Architekt
+DESCRIPTION:Ente pubblico: BLS AG - Finance & SCM - Strategische Beschaffun
+ g\nScadenza: 20.11.2026\, 23:59\nNel registro: https://auftragsregister.ch
+ /it/auftrag/5d3ab28f-730a-4580-9918-68f1e9352e1a/\nPubblicazione ufficiale
+ : https://www.simap.ch/it/project-detail/5d3ab28f-730a-4580-9918-68f1e9352
+ e1a
+URL:https://auftragsregister.ch/it/auftrag/5d3ab28f-730a-4580-9918-68f1e935
+ 2e1a/
+LOCATION:Bönigen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Lagerhalle BOEN - Architekt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

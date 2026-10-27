@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e579a174-af9d-46d5-a17d-2e940eb0a27d-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261030T160000Z
+SUMMARY:Délai de remise : Strassenraumgestaltung Obergass- Kirchgass\, E
+ schenbach
+DESCRIPTION:Acheteur public : Gemeinde Eschenbach ( Brunner + Partner AG)
+ \nDélai de remise : 30.10.2026\, 17 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/e579a174-af9d-46d5-a17d-2e940eb0a27d/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/e579a174
+ -af9d-46d5-a17d-2e940eb0a27d
+URL:https://auftragsregister.ch/fr/auftrag/e579a174-af9d-46d5-a17d-2e940eb0
+ a27d/
+LOCATION:Eschenbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Strassenraumgestaltung Obergass- Kirchgass
+ \, Eschenbach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

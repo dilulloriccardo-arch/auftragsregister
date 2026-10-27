@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b7915bed-dc17-4f66-b622-509503930e5a-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:Submission deadline: Gemeinde Lyss (Ortsteil Busswil)\, Kanalisatio
+ nsvergrösserung
+DESCRIPTION:Public buyer: Christen + Partner Ingenieure und Planer AG\nSubm
+ ission deadline: 24 Nov 2026\nIn the register: https://auftragsregister.
+ ch/en/auftrag/b7915bed-dc17-4f66-b622-509503930e5a/\nOfficial publication:
+  https://www.simap.ch/en/project-detail/b7915bed-dc17-4f66-b622-509503930e
+ 5a
+URL:https://auftragsregister.ch/en/auftrag/b7915bed-dc17-4f66-b622-50950393
+ 0e5a/
+LOCATION:Lyss (Ortsteil Busswil)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gemeinde Lyss (Ortsteil Busswil)\, Kanalis
+ ationsvergrösserung
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

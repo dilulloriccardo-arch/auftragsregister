@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ad040c4-97ec-4b6e-86fe-25f4e1c4436d-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Submission deadline: Herbstflor für die Friedhöfe am Hörnli und 
+ Wolfgottesacker 2028-2032
+DESCRIPTION:Public buyer: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nSubmis
+ sion deadline: 23 Nov 2026\, 12:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/1ad040c4-97ec-4b6e-86fe-25f4e1c4436d/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/1ad040c4-97ec-4b6e-86fe-25f4
+ e1c4436d
+URL:https://auftragsregister.ch/en/auftrag/1ad040c4-97ec-4b6e-86fe-25f4e1c4
+ 436d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Herbstflor für die Friedhöfe am Hörnli 
+ und Wolfgottesacker 2028-2032
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

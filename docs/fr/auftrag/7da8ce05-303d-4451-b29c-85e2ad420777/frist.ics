@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7da8ce05-303d-4451-b29c-85e2ad420777-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261118T100000Z
+SUMMARY:Délai de remise : Projet d'extension de l'Unithèque. Appel d'of
+ fres lot 128 serrurerie
+DESCRIPTION:Acheteur public : COPIL des constructions universitaires p/a 
+ DEIEP - Direction générale des Immeubles et du Patrimoine (DGIP)\nDélai
+  de remise : 18.11.2026\, 11 h 00\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/7da8ce05-303d-4451-b29c-85e2ad420777/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/7da8ce05-303d-44
+ 51-b29c-85e2ad420777
+URL:https://auftragsregister.ch/fr/auftrag/7da8ce05-303d-4451-b29c-85e2ad42
+ 0777/
+LOCATION:Ecublens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet d'extension de l'Unithèque. Appel 
+ d'offres lot 128 serrurerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

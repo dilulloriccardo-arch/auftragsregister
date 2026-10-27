@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f063ad75-f8ac-49bc-8b3f-111da8d56445-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: Hochwasserschutz Dorf Alpthal - Vormassnahmen
+DESCRIPTION:Ente pubblico: Bezirk Schwyz - Abteilung Umwelt\nScadenza: 16.1
+ 1.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/f063a
+ d75-f8ac-49bc-8b3f-111da8d56445/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/f063ad75-f8ac-49bc-8b3f-111da8d56445
+URL:https://auftragsregister.ch/it/auftrag/f063ad75-f8ac-49bc-8b3f-111da8d5
+ 6445/
+LOCATION:Alpthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Hochwasserschutz Dorf Alpthal - Vormassnahmen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

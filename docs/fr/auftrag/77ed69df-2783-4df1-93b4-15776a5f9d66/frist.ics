@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:77ed69df-2783-4df1-93b4-15776a5f9d66-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Délai de remise : ETH Zurich\, entretien et inspection des toitu
+ res des bâtiments de l'ETH Zurich
+DESCRIPTION:Acheteur public : ETH Zürich - Abt. Procurement Services VPI
+ N\nDélai de remise : 27.11.2026\, 23 h 59\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/77ed69df-2783-4df1-93b4-15776a5f9d66/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/77ed69d
+ f-2783-4df1-93b4-15776a5f9d66
+URL:https://auftragsregister.ch/fr/auftrag/77ed69df-2783-4df1-93b4-15776a5f
+ 9d66/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ETH Zurich\, entretien et inspection des t
+ oitures des bâtiments de l'ETH Zurich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

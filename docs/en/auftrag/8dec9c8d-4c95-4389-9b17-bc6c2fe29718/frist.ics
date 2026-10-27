@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8dec9c8d-4c95-4389-9b17-bc6c2fe29718-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T150000Z
+SUMMARY:Submission deadline: Kantonsstrasse KH3. Gemeinde Ennetmoos\; Ausba
+ u / Umgestaltung\; Abschnitt Grenze NW/OW – St.Jakob (km 0.00 bis 1.00)
+DESCRIPTION:Public buyer: Amt für Mobilität\nSubmission deadline: 10 Nov
+  2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/8d
+ ec9c8d-4c95-4389-9b17-bc6c2fe29718/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/8dec9c8d-4c95-4389-9b17-bc6c2fe29718
+URL:https://auftragsregister.ch/en/auftrag/8dec9c8d-4c95-4389-9b17-bc6c2fe2
+ 9718/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kantonsstrasse KH3. Gemeinde Ennetmoos\; A
+ usbau / Umgestaltung\; Abschnitt Grenze NW/OW – St.Jakob (km 0.00 bis 1.
+ 00)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

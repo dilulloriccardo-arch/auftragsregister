@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a93e4e56-b024-493a-a3dc-8eb23701acd7-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Scadenza: 294 Concorso per la fornitura di licenze e servizi di sup
+ porto software nell'ambito programma Fortinet Enterprise Agreement (EA)
+DESCRIPTION:Ente pubblico: Centro sistemi informativi\nScadenza: 01.12.2026
+ \, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/a93e4e56-b0
+ 24-493a-a3dc-8eb23701acd7/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/a93e4e56-b024-493a-a3dc-8eb23701acd7
+URL:https://auftragsregister.ch/it/auftrag/a93e4e56-b024-493a-a3dc-8eb23701
+ acd7/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 294 Concorso per la fornitura di licenze e servizi di
+  supporto software nell'ambito programma Fortinet Enterprise Agreement (EA
+ )
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

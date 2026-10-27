@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90565c59-853c-44dd-be49-e254f4fde41e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261204T225900Z
+SUMMARY:Eingabefrist: 20-kV-Tauchkern-Erdschlusslöschspulen
+DESCRIPTION:Auftraggeber: Repower AG\nEingabefrist: 04.12.2026\, 23.59 Uhr
+ \nIm Register: https://auftragsregister.ch/de/auftrag/90565c59-853c-44dd-b
+ e49-e254f4fde41e/\nAmtliche Publikation: https://www.simap.ch/de/project-d
+ etail/90565c59-853c-44dd-be49-e254f4fde41e
+URL:https://auftragsregister.ch/de/auftrag/90565c59-853c-44dd-be49-e254f4fd
+ e41e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 20-kV-Tauchkern-Erdschlusslöschspulen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

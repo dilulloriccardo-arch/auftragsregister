@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:98bb7c1e-5bdf-4d5e-9511-a87a33dcf7a9-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261119T110000Z
+SUMMARY:Scadenza: Pôle de développement économique du Crêt-du-Locle - a
+ ttribution du mandat portant sur l’élaboration d’un plan d’affectat
+ ion cantonal (PAC) par un groupement de mandataires
+DESCRIPTION:Ente pubblico: Service de l'Economie (pilote de la procédure :
+  Gensollen & Partenaires Sàrl)\nScadenza: 19.11.2026\, 12:00\nNel registr
+ o: https://auftragsregister.ch/it/auftrag/98bb7c1e-5bdf-4d5e-9511-a87a33dc
+ f7a9/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/98b
+ b7c1e-5bdf-4d5e-9511-a87a33dcf7a9
+URL:https://auftragsregister.ch/it/auftrag/98bb7c1e-5bdf-4d5e-9511-a87a33dc
+ f7a9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Pôle de développement économique du Crêt-du-Locle
+  - attribution du mandat portant sur l’élaboration d’un plan d’affe
+ ctation cantonal (PAC) par un groupement de mandataires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

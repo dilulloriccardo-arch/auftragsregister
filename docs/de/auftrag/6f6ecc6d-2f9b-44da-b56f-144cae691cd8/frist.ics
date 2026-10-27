@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6f6ecc6d-2f9b-44da-b56f-144cae691cd8-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Eingabefrist: Neubau Haus 07B - SKP 272 Glasschiebetüren mit Metal
+ lrahmen (AP06)
+DESCRIPTION:Auftraggeber: Spitalanlagengesellschaft HOCH Health Ostschweiz\
+ nEingabefrist: 17.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregis
+ ter.ch/de/auftrag/6f6ecc6d-2f9b-44da-b56f-144cae691cd8/\nAmtliche Publikat
+ ion: https://www.simap.ch/de/project-detail/6f6ecc6d-2f9b-44da-b56f-144cae
+ 691cd8
+URL:https://auftragsregister.ch/de/auftrag/6f6ecc6d-2f9b-44da-b56f-144cae69
+ 1cd8/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Haus 07B - SKP 272 Glasschiebetüren mit M
+ etallrahmen (AP06)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

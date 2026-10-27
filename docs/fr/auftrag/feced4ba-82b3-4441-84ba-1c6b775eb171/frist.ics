@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:feced4ba-82b3-4441-84ba-1c6b775eb171-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261127T125900Z
+SUMMARY:Délai de remise : Systèmes de chromatographie liquide à ultra-
+ haute performance couplés à des spectromètres de masse à triple quadri
+ pôle – 3 appareils
+DESCRIPTION:Acheteur public : Zentrale Beschaffungsstelle Kanton Basel-La
+ ndschaft\nDélai de remise : 27.11.2026\, 13 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/feced4ba-82b3-4441-84ba-1c6b77
+ 5eb171/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /feced4ba-82b3-4441-84ba-1c6b775eb171
+URL:https://auftragsregister.ch/fr/auftrag/feced4ba-82b3-4441-84ba-1c6b775e
+ b171/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Systèmes de chromatographie liquide à ul
+ tra-haute performance couplés à des spectromètres de masse à triple qu
+ adripôle – 3 appareils
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

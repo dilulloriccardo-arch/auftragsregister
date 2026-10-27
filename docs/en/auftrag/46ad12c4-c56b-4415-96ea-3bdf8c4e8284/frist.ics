@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46ad12c4-c56b-4415-96ea-3bdf8c4e8284-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Submission deadline: Rund um den OP\, BKP 277.22 OP Systemtrennwän
+ de
+DESCRIPTION:Public buyer: Hirslanden AG\, Corporate Office (Ghisleni Partne
+ r AG)\nSubmission deadline: 2 Nov 2026\nIn the register: https://auftrag
+ sregister.ch/en/auftrag/46ad12c4-c56b-4415-96ea-3bdf8c4e8284/\nOfficial pu
+ blication: https://www.simap.ch/en/project-detail/46ad12c4-c56b-4415-96ea-
+ 3bdf8c4e8284
+URL:https://auftragsregister.ch/en/auftrag/46ad12c4-c56b-4415-96ea-3bdf8c4e
+ 8284/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rund um den OP\, BKP 277.22 OP Systemtrenn
+ wände
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0602fc5c-259e-4302-99d6-c3822fc9fefa-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Eingabefrist: ewzWHH/BGH\, Etappe 2\, BKP 90 Ausstattung Möbel
+DESCRIPTION:Auftraggeber: Elektrizitätswerk der Stadt Zürich (ewz)\nEinga
+ befrist: 30.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch
+ /de/auftrag/0602fc5c-259e-4302-99d6-c3822fc9fefa/\nAmtliche Publikation: h
+ ttps://www.simap.ch/de/project-detail/0602fc5c-259e-4302-99d6-c3822fc9fefa
+URL:https://auftragsregister.ch/de/auftrag/0602fc5c-259e-4302-99d6-c3822fc9
+ fefa/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ewzWHH/BGH\, Etappe 2\, BKP 90 Ausstattung Möbel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83339ae9-7a2d-4dbd-9148-af34a20be225-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261113T110000Z
+SUMMARY:Délai de remise : Poste de Vaucens à CH-1630 Bulle – Fournitu
+ re d’une installation GIS 72\,5 kV sans SF₆
+DESCRIPTION:Acheteur public : Groupe E SA\nDélai de remise : 13.11.202
+ 6\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/auftr
+ ag/83339ae9-7a2d-4dbd-9148-af34a20be225/\nPublication officielle : https
+ ://www.simap.ch/fr/project-detail/83339ae9-7a2d-4dbd-9148-af34a20be225
+URL:https://auftragsregister.ch/fr/auftrag/83339ae9-7a2d-4dbd-9148-af34a20b
+ e225/
+LOCATION:Bulle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Poste de Vaucens à CH-1630 Bulle – Four
+ niture d’une installation GIS 72\,5 kV sans SF₆
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

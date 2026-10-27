@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:52a0257b-5fba-4657-b106-787d99c2b85a-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Submission deadline: Kantonsstrasse Nr. 114\, Buchs: Brücke Giesse
+ n
+DESCRIPTION:Public buyer: Kanton St.Gallen\, Tiefbauamt\, Strassen- und Kun
+ stbauten\nSubmission deadline: 20 Nov 2026\, 23:59\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/52a0257b-5fba-4657-b106-787d99c2b85a/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/52a0257b-5fb
+ a-4657-b106-787d99c2b85a
+URL:https://auftragsregister.ch/en/auftrag/52a0257b-5fba-4657-b106-787d99c2
+ b85a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kantonsstrasse Nr. 114\, Buchs: Brücke Gi
+ essen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

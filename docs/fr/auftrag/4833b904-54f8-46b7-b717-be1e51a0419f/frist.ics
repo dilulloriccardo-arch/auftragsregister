@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4833b904-54f8-46b7-b717-be1e51a0419f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261030T225500Z
+SUMMARY:Délai de remise : Ökologische Aufwertung Mühlbach Titt - Baume
+ isterarbeiten
+DESCRIPTION:Acheteur public : Stadt Chur\, Tiefbaudienste\nDélai de remi
+ se : 30.10.2026\, 23 h 55\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/4833b904-54f8-46b7-b717-be1e51a0419f/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/4833b904-54f8-46b7-b717-
+ be1e51a0419f
+URL:https://auftragsregister.ch/fr/auftrag/4833b904-54f8-46b7-b717-be1e51a0
+ 419f/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ökologische Aufwertung Mühlbach Titt - B
+ aumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

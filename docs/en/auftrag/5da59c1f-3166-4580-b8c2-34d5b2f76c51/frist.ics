@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5da59c1f-3166-4580-b8c2-34d5b2f76c51-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Submission deadline: BAV 27600 Wohn- und Geschäftshaus Freiestrass
+ e 56\, 58\, Instandsetzung - BKP 214 Montagebau in Holz
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 12 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/5da59c1f-3166-4580-b8c2-34d5b2f76c51/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/5da59c1f-3166-4580-b8c2-34d5b2f76c51
+URL:https://auftragsregister.ch/en/auftrag/5da59c1f-3166-4580-b8c2-34d5b2f7
+ 6c51/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 27600 Wohn- und Geschäftshaus Freiest
+ rasse 56\, 58\, Instandsetzung - BKP 214 Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

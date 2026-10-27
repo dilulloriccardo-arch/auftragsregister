@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28a15dbe-3307-4f0a-8cf4-9c7583660769-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T130000Z
+SUMMARY:Délai de remise : HUG_PRESTATIONS D’INTERPRÉTARIAT HUMAIN
+DESCRIPTION:Acheteur public : CAIB (Centrale d’achats et d’ingénieri
+ e biomédicale Vaud-Genève)\nDélai de remise : 06.11.2026\, 14 h 0
+ 0\nDans le registre : https://auftragsregister.ch/fr/auftrag/28a15dbe-33
+ 07-4f0a-8cf4-9c7583660769/\nPublication officielle : https://www.simap.c
+ h/fr/project-detail/28a15dbe-3307-4f0a-8cf4-9c7583660769
+URL:https://auftragsregister.ch/fr/auftrag/28a15dbe-3307-4f0a-8cf4-9c758366
+ 0769/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : HUG_PRESTATIONS D’INTERPRÉTARIAT HUMAIN
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

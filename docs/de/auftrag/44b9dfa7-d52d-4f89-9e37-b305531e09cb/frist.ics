@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44b9dfa7-d52d-4f89-9e37-b305531e09cb-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Eingabefrist: Campus Horw\, Realisierung Erneuerung und Erweiterung
+  BKP 112 Rückbau
+DESCRIPTION:Auftraggeber: Kanton Luzern\, Dienststelle Immobilien\nEingabef
+ rist: 09.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/44b9dfa7-d52d-4f89-9e37-b305531e09cb/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/44b9dfa7-d52d-4f89-9e37-b305531e09cb
+URL:https://auftragsregister.ch/de/auftrag/44b9dfa7-d52d-4f89-9e37-b305531e
+ 09cb/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Campus Horw\, Realisierung Erneuerung und Erweite
+ rung BKP 112 Rückbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

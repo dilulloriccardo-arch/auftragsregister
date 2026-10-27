@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f1646086-b28c-449c-acde-ee5a20fb5288-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:2
+DTSTART:20261106T150000Z
+SUMMARY:Délai de remise : JVA PÖW I 12782.10 I Eingangszone\, Parkierun
+ g Neu- und Umbau I BKP 221.6-21 Sicherheitstüren u. -fenster\, Metallfass
+ ade
+DESCRIPTION:Acheteur public : Hochbauamt\, Baubereich B\nDélai de remise
+  : 06.11.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/f1646086-b28c-449c-acde-ee5a20fb5288/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/f1646086-b28c-449c-acde-ee
+ 5a20fb5288
+URL:https://auftragsregister.ch/fr/auftrag/f1646086-b28c-449c-acde-ee5a20fb
+ 5288/
+LOCATION:Regensdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : JVA PÖW I 12782.10 I Eingangszone\, Parki
+ erung Neu- und Umbau I BKP 221.6-21 Sicherheitstüren u. -fenster\, Metall
+ fassade
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

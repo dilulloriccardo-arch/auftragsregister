@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:52c2d672-3bff-4117-b9ed-fbba814a8a7f-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Submission deadline: EBP-594 AFW_Hallerstrasse_Rohrleitungsbau
+DESCRIPTION:Public buyer: Energie Wasser Bern\nSubmission deadline: 2 Nov
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/52
+ c2d672-3bff-4117-b9ed-fbba814a8a7f/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/52c2d672-3bff-4117-b9ed-fbba814a8a7f
+URL:https://auftragsregister.ch/en/auftrag/52c2d672-3bff-4117-b9ed-fbba814a
+ 8a7f/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EBP-594 AFW_Hallerstrasse_Rohrleitungsbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

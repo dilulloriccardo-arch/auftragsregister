@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:159874ab-c93f-4a75-b54b-ee4332bdae73-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T070000Z
+SUMMARY:Submission deadline: SELRS Netz Würzenbach Los 1\, Planerleistunge
+ n Tiefbau
+DESCRIPTION:Public buyer: ewl Rohrnetz AG\nSubmission deadline: 23 Nov 20
+ 26\, 08:00\nIn the register: https://auftragsregister.ch/en/auftrag/159874
+ ab-c93f-4a75-b54b-ee4332bdae73/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/159874ab-c93f-4a75-b54b-ee4332bdae73
+URL:https://auftragsregister.ch/en/auftrag/159874ab-c93f-4a75-b54b-ee4332bd
+ ae73/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: SELRS Netz Würzenbach Los 1\, Planerleist
+ ungen Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

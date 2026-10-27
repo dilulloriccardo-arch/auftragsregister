@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac056623-2fde-47e4-9583-e9e2d2bd0f7e-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261210T110000Z
+SUMMARY:Délai de remise : Instandsetzung Mürgstrasse\, 6370 Stans / Bau
+ auftrag
+DESCRIPTION:Acheteur public : Gemeinde Stans\nDélai de remise : 10.12.
+ 2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/ac056623-2fde-47e4-9583-e9e2d2bd0f7e/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/ac056623-2fde-47e4-9583-e9e2d2bd0f7e
+URL:https://auftragsregister.ch/fr/auftrag/ac056623-2fde-47e4-9583-e9e2d2bd
+ 0f7e/
+LOCATION:Stans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Instandsetzung Mürgstrasse\, 6370 Stans /
+  Bauauftrag
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

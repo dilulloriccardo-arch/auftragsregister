@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b245d65-800b-4a7d-940d-223d8fc9aac3-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Scadenza: USZ Campus MITTE 1|2 / BKP 283.14 Deckenbekleidungen aus 
+ Gips - Los 4 (OV)
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 14.12.202
+ 6\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/4b245d65-8
+ 00b-4a7d-940d-223d8fc9aac3/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/4b245d65-800b-4a7d-940d-223d8fc9aac3
+URL:https://auftragsregister.ch/it/auftrag/4b245d65-800b-4a7d-940d-223d8fc9
+ aac3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: USZ Campus MITTE 1|2 / BKP 283.14 Deckenbekleidungen 
+ aus Gips - Los 4 (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

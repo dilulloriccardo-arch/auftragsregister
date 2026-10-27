@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6da4fc98-7dbf-44d6-aafb-d6a3b6547193-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261030T110000Z
+SUMMARY:Délai de remise : Contrat de chiffre d'affaires d'assurance cons
+ truction de l'Office du bâtiment du canton de Zurich et de l'Université 
+ de Zurich
+DESCRIPTION:Acheteur public : Generalsekretariat der Finanzdirektion des 
+ Kantons Zürich\nDélai de remise : 30.10.2026\, 12 h 00\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/6da4fc98-7dbf-44d6-aafb-
+ d6a3b6547193/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/6da4fc98-7dbf-44d6-aafb-d6a3b6547193
+URL:https://auftragsregister.ch/fr/auftrag/6da4fc98-7dbf-44d6-aafb-d6a3b654
+ 7193/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat de chiffre d'affaires d'assurance 
+ construction de l'Office du bâtiment du canton de Zurich et de l'Universi
+ té de Zurich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

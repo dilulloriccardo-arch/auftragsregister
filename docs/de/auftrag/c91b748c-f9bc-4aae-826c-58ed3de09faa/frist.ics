@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c91b748c-f9bc-4aae-826c-58ed3de09faa-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T090000Z
+SUMMARY:Eingabefrist: Anlagen für Pulveraktivkohle
+DESCRIPTION:Auftraggeber: Zweckverband ARA Rorguet\nEingabefrist: 11.11.202
+ 6\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c91b74
+ 8c-f9bc-4aae-826c-58ed3de09faa/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/c91b748c-f9bc-4aae-826c-58ed3de09faa
+URL:https://auftragsregister.ch/de/auftrag/c91b748c-f9bc-4aae-826c-58ed3de0
+ 9faa/
+LOCATION:Meilen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Anlagen für Pulveraktivkohle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

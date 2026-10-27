@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95d631c0-fe02-4f2c-be3e-07bccd0bc6e8-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Scadenza: AO SI FM BATIMENTS II 2026
+DESCRIPTION:Ente pubblico: Service de conseil et de soutien pour les march
+ és publics de l'Université de Genève\nScadenza: 17.11.2026\, 12:00\nNel
+  registro: https://auftragsregister.ch/it/auftrag/95d631c0-fe02-4f2c-be3e-
+ 07bccd0bc6e8/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/95d631c0-fe02-4f2c-be3e-07bccd0bc6e8
+URL:https://auftragsregister.ch/it/auftrag/95d631c0-fe02-4f2c-be3e-07bccd0b
+ c6e8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AO SI FM BATIMENTS II 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

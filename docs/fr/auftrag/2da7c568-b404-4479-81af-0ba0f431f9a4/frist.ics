@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2da7c568-b404-4479-81af-0ba0f431f9a4-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Délai de remise : Sanierung Wohn- und Geschäftshaus\, Rössliga
+ sse 32 / Wendelinsgasse 21
+DESCRIPTION:Acheteur public : Einwohnergemeinde Riehen\nDélai de remise
+  : 21.12.2026\, 12 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/2da7c568-b404-4479-81af-0ba0f431f9a4/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/2da7c568-b404-4479-81af-0b
+ a0f431f9a4
+URL:https://auftragsregister.ch/fr/auftrag/2da7c568-b404-4479-81af-0ba0f431
+ f9a4/
+LOCATION:Riehen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Wohn- und Geschäftshaus\, Röss
+ ligasse 32 / Wendelinsgasse 21
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

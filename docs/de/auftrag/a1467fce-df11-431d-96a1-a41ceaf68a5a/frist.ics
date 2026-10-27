@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a1467fce-df11-431d-96a1-a41ceaf68a5a-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T225944Z
+SUMMARY:Eingabefrist: AS_2026_072 IAM Dienstleistungen
+DESCRIPTION:Auftraggeber: Fachhochschule Nordwestschweiz FHNW\nEingabefrist
+ : 13.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/a1467fce-df11-431d-96a1-a41ceaf68a5a/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/a1467fce-df11-431d-96a1-a41ceaf68a5a
+URL:https://auftragsregister.ch/de/auftrag/a1467fce-df11-431d-96a1-a41ceaf6
+ 8a5a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AS_2026_072 IAM Dienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

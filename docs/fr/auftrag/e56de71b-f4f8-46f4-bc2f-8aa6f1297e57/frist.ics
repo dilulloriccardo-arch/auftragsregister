@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e56de71b-f4f8-46f4-bc2f-8aa6f1297e57-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:1
+DTSTART:20261104T225900Z
+SUMMARY:Délai de remise : Enlèvement des véhicules
+DESCRIPTION:Acheteur public : Kantonspolizei Bern\nDélai de remise : 0
+ 4.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/e56de71b-f4f8-46f4-bc2f-8aa6f1297e57/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/e56de71b-f4f8-46f4-bc2f-8aa6f1
+ 297e57
+URL:https://auftragsregister.ch/fr/auftrag/e56de71b-f4f8-46f4-bc2f-8aa6f129
+ 7e57/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Enlèvement des véhicules
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

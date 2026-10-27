@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c27ab175-9621-4023-9f79-d8a7b161af49-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Submission deadline: EBP 595 AFW Bümpliz Ost-Süd-Bienzgut Baume
+ ister
+DESCRIPTION:Public buyer: Energie Wasser Bern\nSubmission deadline: 30 Nov
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/c2
+ 7ab175-9621-4023-9f79-d8a7b161af49/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/c27ab175-9621-4023-9f79-d8a7b161af49
+URL:https://auftragsregister.ch/en/auftrag/c27ab175-9621-4023-9f79-d8a7b161
+ af49/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EBP 595 AFW Bümpliz Ost-Süd-Bienzgut B
+ aumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

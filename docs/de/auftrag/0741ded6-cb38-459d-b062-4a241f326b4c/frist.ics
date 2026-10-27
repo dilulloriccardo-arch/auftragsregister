@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0741ded6-cb38-459d-b062-4a241f326b4c-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261120T160000Z
+SUMMARY:Eingabefrist: Rénovation des Infrastructures du Théâtre Benno Be
+ sson - Travaux de l’entreprise de maçonnerie et démolitions
+DESCRIPTION:Auftraggeber: Ville d'Yverdon-les-Bains - Service des bâtiment
+ s (BAT)\nEingabefrist: 20.11.2026\, 17.00 Uhr\nIm Register: https://auftr
+ agsregister.ch/de/auftrag/0741ded6-cb38-459d-b062-4a241f326b4c/\nAmtliche 
+ Publikation: https://www.simap.ch/de/project-detail/0741ded6-cb38-459d-b06
+ 2-4a241f326b4c
+URL:https://auftragsregister.ch/de/auftrag/0741ded6-cb38-459d-b062-4a241f32
+ 6b4c/
+LOCATION:Yverdon-les-Bains
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rénovation des Infrastructures du Théâtre Benn
+ o Besson - Travaux de l’entreprise de maçonnerie et démolitions
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

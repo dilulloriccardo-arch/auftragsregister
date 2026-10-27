@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:470ef81e-936a-4e6c-ae7f-631f4ff33136-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261118T140000Z
+SUMMARY:Délai de remise : Pratteln\, école secondaire Fröschmatt\, ré
+ novation du complexe scolaire / automatisation du bâtiment
+DESCRIPTION:Acheteur public : Zentrale Beschaffungsstelle Kanton Basel-La
+ ndschaft\nDélai de remise : 18.11.2026\, 15 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/470ef81e-936a-4e6c-ae7f-631f4f
+ f33136/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /470ef81e-936a-4e6c-ae7f-631f4ff33136
+URL:https://auftragsregister.ch/fr/auftrag/470ef81e-936a-4e6c-ae7f-631f4ff3
+ 3136/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Pratteln\, école secondaire Fröschmatt\,
+  rénovation du complexe scolaire / automatisation du bâtiment
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

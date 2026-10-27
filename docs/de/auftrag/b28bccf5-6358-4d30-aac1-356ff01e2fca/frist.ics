@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b28bccf5-6358-4d30-aac1-356ff01e2fca-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261110T130000Z
+SUMMARY:Eingabefrist: BKP 250 Sanitärinstallationen weisses Schulhaus Schu
+ lanlage 3422 Alchenflüh
+DESCRIPTION:Auftraggeber: Atelier GSW Partner AG\nEingabefrist: 10.11.2026\
+ , 14.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b28bccf5
+ -6358-4d30-aac1-356ff01e2fca/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/b28bccf5-6358-4d30-aac1-356ff01e2fca
+URL:https://auftragsregister.ch/de/auftrag/b28bccf5-6358-4d30-aac1-356ff01e
+ 2fca/
+LOCATION:Rüdtligen- Alchenflüh
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 250 Sanitärinstallationen weisses Schulhaus 
+ Schulanlage 3422 Alchenflüh
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

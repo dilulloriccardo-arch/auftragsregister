@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:939e79da-3347-4e41-9318-4ab4bc85f475-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Submission deadline: Huberstrasse 18/20\, Gesamtsanierung\, BKP 226
+ .2 verputzte Wäremdämmung
+DESCRIPTION:Public buyer: Fachstelle Beschaffungswesen Stadt Bern\nSubmissi
+ on deadline: 16 Nov 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/939e79da-3347-4e41-9318-4ab4bc85f475/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/939e79da-3347-4e41-9318-4ab4bc
+ 85f475
+URL:https://auftragsregister.ch/en/auftrag/939e79da-3347-4e41-9318-4ab4bc85
+ f475/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Huberstrasse 18/20\, Gesamtsanierung\, BKP
+  226.2 verputzte Wäremdämmung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61cb49dd-cc37-4f32-b9b0-a917a307443b-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Délai de remise : Ertüchtigung Kantonsarchäologie Brugg - Hono
+ rarsubmission Generalplanerteam
+DESCRIPTION:Acheteur public : Immobilien Aargau\nDélai de remise : 24.
+ 11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/61cb49dd-cc37-4f32-b9b0-a917a307443b/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/61cb49dd-cc37-4f32-b9b0-a917a30744
+ 3b
+URL:https://auftragsregister.ch/fr/auftrag/61cb49dd-cc37-4f32-b9b0-a917a307
+ 443b/
+LOCATION:Brugg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ertüchtigung Kantonsarchäologie Brugg - 
+ Honorarsubmission Generalplanerteam
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

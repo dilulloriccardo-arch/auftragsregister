@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f70f2de7-f4ba-4eaf-bd56-e4193e1e6956-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261030T150000Z
+SUMMARY:Délai de remise : Neumotorisierung mit Antriebserneuerung sowie 
+ weiteren Leistungen
+DESCRIPTION:Acheteur public : Schweizerische Schifffahrtsgesellschaft URh
+ \nDélai de remise : 30.10.2026\, 16 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/f70f2de7-f4ba-4eaf-bd56-e4193e1e6956/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/f70f2de7
+ -f4ba-4eaf-bd56-e4193e1e6956
+URL:https://auftragsregister.ch/fr/auftrag/f70f2de7-f4ba-4eaf-bd56-e4193e1e
+ 6956/
+LOCATION:Langwiesen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neumotorisierung mit Antriebserneuerung so
+ wie weiteren Leistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

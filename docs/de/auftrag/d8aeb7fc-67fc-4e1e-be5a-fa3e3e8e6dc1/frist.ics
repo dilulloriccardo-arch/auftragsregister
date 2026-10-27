@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e6dc1-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T153000Z
+SUMMARY:Eingabefrist: UNI - BASTIONS Central _ CFC373.00 - Sièges rabattab
+ les
+DESCRIPTION:Auftraggeber: Office Cantonale des Bâtiments (OCBA) - Poolaile
+ s\nEingabefrist: 23.11.2026\, 16.30 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e6dc1/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/d8aeb7fc-67fc-4e1e-be5a-fa3e
+ 3e8e6dc1
+URL:https://auftragsregister.ch/de/auftrag/d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e
+ 6dc1/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: UNI - BASTIONS Central _ CFC373.00 - Sièges raba
+ ttables
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

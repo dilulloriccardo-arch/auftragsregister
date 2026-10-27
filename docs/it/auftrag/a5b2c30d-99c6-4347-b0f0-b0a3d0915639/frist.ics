@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5b2c30d-99c6-4347-b0f0-b0a3d0915639-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Scadenza: 750.00 Umbrailstrasse Felssicherung Las Votas\, Baumeiste
+ rarbeiten
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 05.11.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/a5b2c30d-99c6-4
+ 347-b0f0-b0a3d0915639/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/a5b2c30d-99c6-4347-b0f0-b0a3d0915639
+URL:https://auftragsregister.ch/it/auftrag/a5b2c30d-99c6-4347-b0f0-b0a3d091
+ 5639/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 750.00 Umbrailstrasse Felssicherung Las Votas\, Baume
+ isterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d76021b8-934b-4c49-958c-e9fb825215ca-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261124T160000Z
+SUMMARY:Délai de remise : Anlage Schützenmatte\, Bern Bollwerk\, Umgest
+ altung Schützenmatte\, Gesamtprojektleitung (GPL)
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 24.11.2026\, 17 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/d76021b8-934b-4c49-958c-e9fb825215ca/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/d76021b8-93
+ 4b-4c49-958c-e9fb825215ca
+URL:https://auftragsregister.ch/fr/auftrag/d76021b8-934b-4c49-958c-e9fb8252
+ 15ca/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Anlage Schützenmatte\, Bern Bollwerk\, Um
+ gestaltung Schützenmatte\, Gesamtprojektleitung (GPL)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

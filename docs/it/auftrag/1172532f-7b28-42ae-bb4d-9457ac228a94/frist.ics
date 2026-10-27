@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1172532f-7b28-42ae-bb4d-9457ac228a94-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Scadenza: Ausschreibung Personenversicherungen Gemeinde Domleschg 0
+ 1.01.2027
+DESCRIPTION:Ente pubblico: Gemeinde Domleschg (ASSEPRO Brokerage AG)\nScade
+ nza: 09.11.2026\nNel registro: https://auftragsregister.ch/it/auftrag/1172
+ 532f-7b28-42ae-bb4d-9457ac228a94/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/1172532f-7b28-42ae-bb4d-9457ac228a94
+URL:https://auftragsregister.ch/it/auftrag/1172532f-7b28-42ae-bb4d-9457ac22
+ 8a94/
+LOCATION:Tomils
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung Personenversicherungen Gemeinde Domlesc
+ hg 01.01.2027
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

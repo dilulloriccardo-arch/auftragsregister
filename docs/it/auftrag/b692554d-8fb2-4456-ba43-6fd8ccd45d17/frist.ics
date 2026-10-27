@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b692554d-8fb2-4456-ba43-6fd8ccd45d17-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261218T160000Z
+SUMMARY:Scadenza: Pikettfahrzeuge 5 Stück Feuerwehr Stadt Luzern
+DESCRIPTION:Ente pubblico: Stadt Luzern\, Sozial- und Sicherheitsdirektion\
+ , Feuerwehr\nScadenza: 18.12.2026\, 17:00\nNel registro: https://auftragsr
+ egister.ch/it/auftrag/b692554d-8fb2-4456-ba43-6fd8ccd45d17/\nPubblicazione
+  ufficiale: https://www.simap.ch/it/project-detail/b692554d-8fb2-4456-ba43
+ -6fd8ccd45d17
+URL:https://auftragsregister.ch/it/auftrag/b692554d-8fb2-4456-ba43-6fd8ccd4
+ 5d17/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Pikettfahrzeuge 5 Stück Feuerwehr Stadt Luzern
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

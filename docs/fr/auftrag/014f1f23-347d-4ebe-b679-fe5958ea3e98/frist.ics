@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:014f1f23-347d-4ebe-b679-fe5958ea3e98-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Délai de remise : Complexe scolaire Campus Signau – Appel d'of
+ fres BKP 421 Travaux de paysagisme
+DESCRIPTION:Acheteur public : Einwohnergemeinde Signau (Itten+Brechbühl)
+ \nDélai de remise : 06.11.2026\, 16 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/014f1f23-347d-4ebe-b679-fe5958ea3e98/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/014f1f23
+ -347d-4ebe-b679-fe5958ea3e98
+URL:https://auftragsregister.ch/fr/auftrag/014f1f23-347d-4ebe-b679-fe5958ea
+ 3e98/
+LOCATION:Signau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Complexe scolaire Campus Signau – Appel 
+ d'offres BKP 421 Travaux de paysagisme
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

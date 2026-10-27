@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1d1573e3-40e1-4829-a364-432d172eb852-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Délai de remise : 789 NB Schulhaus- & 3-fach Kindergarten Malerv
+ a Sargans - TO2 Schulhaus - BKP 221.3 Pfosten-Riegel-Fassade
+DESCRIPTION:Acheteur public : Politische Gemeinde Sargans\nDélai de remi
+ se : 06.11.2026\, 12 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/1d1573e3-40e1-4829-a364-432d172eb852/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/1d1573e3-40e1-4829-a364-
+ 432d172eb852
+URL:https://auftragsregister.ch/fr/auftrag/1d1573e3-40e1-4829-a364-432d172e
+ b852/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 789 NB Schulhaus- & 3-fach Kindergarten Ma
+ lerva Sargans - TO2 Schulhaus - BKP 221.3 Pfosten-Riegel-Fassade
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

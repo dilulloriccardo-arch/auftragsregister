@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:304b5a3a-b313-4f02-90f6-f49177ac04a4-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Scadenza: Appel d'offres public pour le renouvellement des licences
+  BMC Control M avec maintenance et support
+DESCRIPTION:Ente pubblico: Centrale commune d'achats (CCA)\nScadenza: 02.12
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/304b5a
+ 3a-b313-4f02-90f6-f49177ac04a4/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/304b5a3a-b313-4f02-90f6-f49177ac04a4
+URL:https://auftragsregister.ch/it/auftrag/304b5a3a-b313-4f02-90f6-f49177ac
+ 04a4/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Appel d'offres public pour le renouvellement des lice
+ nces BMC Control M avec maintenance et support
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

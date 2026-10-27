@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d662fa64-5dca-45c4-86ad-a35bc28310f1-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T080000Z
+SUMMARY:Submission deadline: Kantonsschule Obwalden\, Sarnen Dachsanierung 
+ /Ausschreibung BKP 224.1 Flachdacharbeiten
+DESCRIPTION:Public buyer: Kanton Obwalden\nSubmission deadline: 23 Nov 20
+ 26\, 09:00\nIn the register: https://auftragsregister.ch/en/auftrag/d662fa
+ 64-5dca-45c4-86ad-a35bc28310f1/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/d662fa64-5dca-45c4-86ad-a35bc28310f1
+URL:https://auftragsregister.ch/en/auftrag/d662fa64-5dca-45c4-86ad-a35bc283
+ 10f1/
+LOCATION:Sarnen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kantonsschule Obwalden\, Sarnen Dachsanier
+ ung /Ausschreibung BKP 224.1 Flachdacharbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

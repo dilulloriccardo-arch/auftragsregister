@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a93e4e56-b024-493a-a3dc-8eb23701acd7-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Submission deadline: 294 Appel d'offres pour la fourniture de licen
+ ces et de services de support logiciel dans le cadre du programme Fortinet
+  Enterprise Agreement (EA)
+DESCRIPTION:Public buyer: Centro sistemi informativi\nSubmission deadline: 
+ 1 Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/a93e4e56-b024-493a-a3dc-8eb23701acd7/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/a93e4e56-b024-493a-a3dc-8eb23701acd7
+URL:https://auftragsregister.ch/en/auftrag/a93e4e56-b024-493a-a3dc-8eb23701
+ acd7/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 294 Appel d'offres pour la fourniture de l
+ icences et de services de support logiciel dans le cadre du programme Fort
+ inet Enterprise Agreement (EA)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

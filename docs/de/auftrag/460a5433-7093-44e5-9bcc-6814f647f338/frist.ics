@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:460a5433-7093-44e5-9bcc-6814f647f338-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T170000Z
+SUMMARY:Eingabefrist: Neubau Wohnsiedlung Promulins\, 7530 Samedan
+DESCRIPTION:Auftraggeber: Bürgergemeinde Samedan (Alder Clavuot Nunzi Arch
+ itekten GmbH ETH SIA)\nEingabefrist: 02.11.2026\, 18.00 Uhr\nIm Register:
+  https://auftragsregister.ch/de/auftrag/460a5433-7093-44e5-9bcc-6814f647f3
+ 38/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/460a5433
+ -7093-44e5-9bcc-6814f647f338
+URL:https://auftragsregister.ch/de/auftrag/460a5433-7093-44e5-9bcc-6814f647
+ f338/
+LOCATION:Samedan
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Wohnsiedlung Promulins\, 7530 Samedan
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

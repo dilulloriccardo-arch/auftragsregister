@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b75e932a-4cff-4096-9fe9-df2c00ed3a1a-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261028T070000Z
+SUMMARY:Délai de remise : Sanierung mechanische Reinigung ARA Thunersee 
+ - Grobrechen\, Feinrechen\, Rechengutpressen\, Förderschnecken\, Schlamms
+ iebung
+DESCRIPTION:Acheteur public : Gemeindeverband ARA Thunersee\nDélai de re
+ mise : 28.10.2026\, 8 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/b75e932a-4cff-4096-9fe9-df2c00ed3a1a/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/b75e932a-4cff-4096-9fe9
+ -df2c00ed3a1a
+URL:https://auftragsregister.ch/fr/auftrag/b75e932a-4cff-4096-9fe9-df2c00ed
+ 3a1a/
+LOCATION:Uetendorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung mechanische Reinigung ARA Thuner
+ see - Grobrechen\, Feinrechen\, Rechengutpressen\, Förderschnecken\, Schl
+ ammsiebung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

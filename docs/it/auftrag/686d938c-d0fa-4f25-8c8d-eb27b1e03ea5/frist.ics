@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:686d938c-d0fa-4f25-8c8d-eb27b1e03ea5-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20261210T100000Z
+SUMMARY:Scadenza: Rénovation/Transformation du CID de Malley / AMEX
+DESCRIPTION:Ente pubblico: Ville de Lausanne - Service de la propreté urba
+ ine (Architram)\nScadenza: 10.12.2026\, 11:00\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/686d938c-d0fa-4f25-8c8d-eb27b1e03ea5/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/686d938c-d0fa-4f25-
+ 8c8d-eb27b1e03ea5
+URL:https://auftragsregister.ch/it/auftrag/686d938c-d0fa-4f25-8c8d-eb27b1e0
+ 3ea5/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rénovation/Transformation du CID de Malley / AMEX
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

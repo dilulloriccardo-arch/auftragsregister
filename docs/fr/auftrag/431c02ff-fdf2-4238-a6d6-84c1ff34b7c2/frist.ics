@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:431c02ff-fdf2-4238-a6d6-84c1ff34b7c2-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20270114T225900Z
+SUMMARY:Délai de remise : MP-130008 N02 SBT\, 2nd réfection – DT EES+
+ construction partie I
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3 Zofingen\nDélai de remise : 14.01.2027\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/43
+ 1c02ff-fdf2-4238-a6d6-84c1ff34b7c2/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/431c02ff-fdf2-4238-a6d6-84c1ff34b7c2
+URL:https://auftragsregister.ch/fr/auftrag/431c02ff-fdf2-4238-a6d6-84c1ff34
+ b7c2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-130008 N02 SBT\, 2nd réfection – DT 
+ EES+construction partie I
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

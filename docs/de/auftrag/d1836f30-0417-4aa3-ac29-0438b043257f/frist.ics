@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d1836f30-0417-4aa3-ac29-0438b043257f-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Eingabefrist: Engineering Leistungen ECM
+DESCRIPTION:Auftraggeber: Basler Verkehrs-Betriebe (BVB)\nEingabefrist: 02.
+ 12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ d1836f30-0417-4aa3-ac29-0438b043257f/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/d1836f30-0417-4aa3-ac29-0438b043257f
+URL:https://auftragsregister.ch/de/auftrag/d1836f30-0417-4aa3-ac29-0438b043
+ 257f/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Engineering Leistungen ECM
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

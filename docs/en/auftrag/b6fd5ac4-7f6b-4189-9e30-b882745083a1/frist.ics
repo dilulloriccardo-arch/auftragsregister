@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b6fd5ac4-7f6b-4189-9e30-b882745083a1-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261030T160000Z
+SUMMARY:Submission deadline: Acquiring and Processing of TWINT Payments for
+  the Digital Sales Channels of the Zurich Transport Network (ZVV)
+DESCRIPTION:Public buyer: Zürcher Verkehrsverbund\nSubmission deadline: 30
+  Oct 2026\, 17:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/b6fd5ac4-7f6b-4189-9e30-b882745083a1/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/b6fd5ac4-7f6b-4189-9e30-b882745083a1
+URL:https://auftragsregister.ch/en/auftrag/b6fd5ac4-7f6b-4189-9e30-b8827450
+ 83a1/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Acquiring and Processing of TWINT Payments
+  for the Digital Sales Channels of the Zurich Transport Network (ZVV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

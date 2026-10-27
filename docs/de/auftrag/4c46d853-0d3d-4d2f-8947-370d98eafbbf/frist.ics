@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c46d853-0d3d-4d2f-8947-370d98eafbbf-frist@auftragsregister.ch
+DTSTAMP:20260818T000000Z
+SEQUENCE:0
+DTSTART:20261030T160000Z
+SUMMARY:Eingabefrist: Abwasserverband Thurau
+DESCRIPTION:Auftraggeber: Abwasserverband Thurau (Verlingue AG)\nEingabefri
+ st: 30.10.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/4c46d853-0d3d-4d2f-8947-370d98eafbbf/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/4c46d853-0d3d-4d2f-8947-370d98eafbbf
+URL:https://auftragsregister.ch/de/auftrag/4c46d853-0d3d-4d2f-8947-370d98ea
+ fbbf/
+LOCATION:Niederuzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Abwasserverband Thurau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

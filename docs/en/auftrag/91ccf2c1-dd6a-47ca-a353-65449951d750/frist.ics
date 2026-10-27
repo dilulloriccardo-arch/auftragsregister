@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:91ccf2c1-dd6a-47ca-a353-65449951d750-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Submission deadline: Zurzach (Rümikon) – Mellikon AO\, K131\; Au
+ sbau kantonale Veloroute und Belagssanierung K131 (Knoten Chessel)
+DESCRIPTION:Public buyer: Abteilung Tiefbau (ATB)\nSubmission deadline: 6 
+ Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag
+ /91ccf2c1-dd6a-47ca-a353-65449951d750/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/91ccf2c1-dd6a-47ca-a353-65449951d750
+URL:https://auftragsregister.ch/en/auftrag/91ccf2c1-dd6a-47ca-a353-65449951
+ d750/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Zurzach (Rümikon) – Mellikon AO\, K131\
+ ; Ausbau kantonale Veloroute und Belagssanierung K131 (Knoten Chessel)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

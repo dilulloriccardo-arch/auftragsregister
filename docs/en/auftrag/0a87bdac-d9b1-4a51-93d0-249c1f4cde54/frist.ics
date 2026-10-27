@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a87bdac-d9b1-4a51-93d0-249c1f4cde54-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261110T110000Z
+SUMMARY:Submission deadline: EV Enge\, civil engineering contractor for uti
+ lity conduits and building service connections.
+DESCRIPTION:Public buyer: Elektrizitätswerk der Stadt Zürich (ewz)\nSubmi
+ ssion deadline: 10 Nov 2026\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/0a87bdac-d9b1-4a51-93d0-249c1f4cde54/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/0a87bdac-d9b1-4a51-93d0-249
+ c1f4cde54
+URL:https://auftragsregister.ch/en/auftrag/0a87bdac-d9b1-4a51-93d0-249c1f4c
+ de54/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EV Enge\, civil engineering contractor for
+  utility conduits and building service connections.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

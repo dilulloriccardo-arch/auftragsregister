@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2bfde0b-4478-44be-98b9-298cb49abdbb-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261105T225900Z
+SUMMARY:Délai de remise : Optimisation de l’environnement EDM
+DESCRIPTION:Acheteur public : AEW\nDélai de remise : 05.11.2026\, 23
+  h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/d2b
+ fde0b-4478-44be-98b9-298cb49abdbb/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/d2bfde0b-4478-44be-98b9-298cb49abdbb
+URL:https://auftragsregister.ch/fr/auftrag/d2bfde0b-4478-44be-98b9-298cb49a
+ bdbb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Optimisation de l’environnement EDM
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

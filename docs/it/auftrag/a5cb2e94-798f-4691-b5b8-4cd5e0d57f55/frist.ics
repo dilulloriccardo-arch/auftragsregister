@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5cb2e94-798f-4691-b5b8-4cd5e0d57f55-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: K 10 Escholzmatt-Marbach\, Ausbau RVA
+DESCRIPTION:Ente pubblico: Verkehr und Infrastruktur (vif)\, Planung Strass
+ en\nScadenza: 09.11.2026\, 16:00\nNel registro: https://auftragsregister.c
+ h/it/auftrag/a5cb2e94-798f-4691-b5b8-4cd5e0d57f55/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/a5cb2e94-798f-4691-b5b8-4cd5e0d5
+ 7f55
+URL:https://auftragsregister.ch/it/auftrag/a5cb2e94-798f-4691-b5b8-4cd5e0d5
+ 7f55/
+LOCATION:Kriens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: K 10 Escholzmatt-Marbach\, Ausbau RVA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:47a33e10-4ea5-4884-a912-da8521df2a98-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261208T140000Z
+SUMMARY:Eingabefrist: HUG - Mat4 - CFC 221.1 Fenêtres en bois-métal
+DESCRIPTION:Auftraggeber: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nEingabefrist: 08.12.2026\, 15.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/47a33e10-4ea5-4884-a912-da8521df2a98/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/47a33e10-4e
+ a5-4884-a912-da8521df2a98
+URL:https://auftragsregister.ch/de/auftrag/47a33e10-4ea5-4884-a912-da8521df
+ 2a98/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: HUG - Mat4 - CFC 221.1 Fenêtres en bois-métal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

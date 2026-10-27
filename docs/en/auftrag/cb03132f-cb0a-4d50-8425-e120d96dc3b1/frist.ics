@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb03132f-cb0a-4d50-8425-e120d96dc3b1-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261113T225900Z
+SUMMARY:Submission deadline: Planung und Projektierung SIA 32-53 im Kettene
+ rsatzprogramm
+DESCRIPTION:Public buyer: Swissgrid AG - Engineering & Construction\nSubmis
+ sion deadline: 13 Nov 2026\, 23:59\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/cb03132f-cb0a-4d50-8425-e120d96dc3b1/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/cb03132f-cb0a-4d50-8425-e120
+ d96dc3b1
+URL:https://auftragsregister.ch/en/auftrag/cb03132f-cb0a-4d50-8425-e120d96d
+ c3b1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Planung und Projektierung SIA 32-53 im Ket
+ tenersatzprogramm
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

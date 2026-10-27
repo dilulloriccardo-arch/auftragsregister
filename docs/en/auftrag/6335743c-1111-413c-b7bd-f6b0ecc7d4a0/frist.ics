@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6335743c-1111-413c-b7bd-f6b0ecc7d4a0-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261203T150000Z
+SUMMARY:Submission deadline: Klinik im Hasel - BKP 230 Elektroanlagen
+DESCRIPTION:Public buyer: Von Effinger Stiftung (HSSP AG)\nSubmission deadl
+ ine: 3 Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/6335743c-1111-413c-b7bd-f6b0ecc7d4a0/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/6335743c-1111-413c-b7bd-f6b0ecc7d4a0
+URL:https://auftragsregister.ch/en/auftrag/6335743c-1111-413c-b7bd-f6b0ecc7
+ d4a0/
+LOCATION:Gontenschwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Klinik im Hasel - BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

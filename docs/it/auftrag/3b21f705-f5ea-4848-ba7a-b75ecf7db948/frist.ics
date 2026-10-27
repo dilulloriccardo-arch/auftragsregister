@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b21f705-f5ea-4848-ba7a-b75ecf7db948-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261204T170000Z
+SUMMARY:Scadenza: Gastronomie- und Verpflegungsdienstleistungen: Betrieb Me
+ nsas Schulstandorte und Personalrestaurant Kantonale Verwaltung Kanton Sch
+ wyz
+DESCRIPTION:Ente pubblico: Hochbauamt Kanton Schwyz\nScadenza: 04.12.2026\,
+  18:00\nNel registro: https://auftragsregister.ch/it/auftrag/3b21f705-f5ea
+ -4848-ba7a-b75ecf7db948/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/3b21f705-f5ea-4848-ba7a-b75ecf7db948
+URL:https://auftragsregister.ch/it/auftrag/3b21f705-f5ea-4848-ba7a-b75ecf7d
+ b948/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gastronomie- und Verpflegungsdienstleistungen: Betrie
+ b Mensas Schulstandorte und Personalrestaurant Kantonale Verwaltung Kanton
+  Schwyz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

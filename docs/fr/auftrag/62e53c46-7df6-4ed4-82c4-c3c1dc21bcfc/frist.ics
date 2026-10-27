@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62e53c46-7df6-4ed4-82c4-c3c1dc21bcfc-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261106T103000Z
+SUMMARY:Délai de remise : Hombrechtikon: Werkleitungserschliessungen Sei
+ tenstrassen zu Wisentalstrasse (Blumenbergstrasse\, Blumenbergweg\, Birken
+ rain\, Chleeacherweg\, Schöpfbrunnenweg\, Lärchenweg)
+DESCRIPTION:Acheteur public : Gemeinde Hombrechtikon\nDélai de remise 
+ : 06.11.2026\, 11 h 30\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/62e53c46-7df6-4ed4-82c4-c3c1dc21bcfc/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/62e53c46-7df6-4ed4-82c4-c3c1d
+ c21bcfc
+URL:https://auftragsregister.ch/fr/auftrag/62e53c46-7df6-4ed4-82c4-c3c1dc21
+ bcfc/
+LOCATION:Hombrechtikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Hombrechtikon: Werkleitungserschliessungen
+  Seitenstrassen zu Wisentalstrasse (Blumenbergstrasse\, Blumenbergweg\, Bi
+ rkenrain\, Chleeacherweg\, Schöpfbrunnenweg\, Lärchenweg)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

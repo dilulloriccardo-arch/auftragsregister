@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8e4e3e4-3635-4e78-8411-81ad28601869-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Submission deadline: Procurement of a Weed Control System
+DESCRIPTION:Public buyer: Rhätische Bahn AG\nSubmission deadline: 9 Dec 
+ 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/c8e4
+ e3e4-3635-4e78-8411-81ad28601869/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/c8e4e3e4-3635-4e78-8411-81ad28601869
+URL:https://auftragsregister.ch/en/auftrag/c8e4e3e4-3635-4e78-8411-81ad2860
+ 1869/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Procurement of a Weed Control System
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

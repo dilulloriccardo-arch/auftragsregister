@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e93a3ccf-8204-4ebe-afe1-6ea4da2dc3d7-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Eingabefrist: Vorratshaltung von Schutzmaterial und Desinfektionsmi
+ tteln
+DESCRIPTION:Auftraggeber: ZüriPharm AG\nEingabefrist: 06.11.2026\nIm Regis
+ ter: https://auftragsregister.ch/de/auftrag/e93a3ccf-8204-4ebe-afe1-6ea4da
+ 2dc3d7/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/e93a
+ 3ccf-8204-4ebe-afe1-6ea4da2dc3d7
+URL:https://auftragsregister.ch/de/auftrag/e93a3ccf-8204-4ebe-afe1-6ea4da2d
+ c3d7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Vorratshaltung von Schutzmaterial und Desinfektio
+ nsmitteln
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

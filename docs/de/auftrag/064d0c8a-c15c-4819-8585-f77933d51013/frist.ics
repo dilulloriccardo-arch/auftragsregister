@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:064d0c8a-c15c-4819-8585-f77933d51013-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20270223T225900Z
+SUMMARY:Eingabefrist: Erneuerung SA-Anlagen Untersax - Haspelgrube
+DESCRIPTION:Auftraggeber: Rhätische Bahn AG\nEingabefrist: 23.02.2027\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/064d0c8a-c15
+ c-4819-8585-f77933d51013/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/064d0c8a-c15c-4819-8585-f77933d51013
+URL:https://auftragsregister.ch/de/auftrag/064d0c8a-c15c-4819-8585-f77933d5
+ 1013/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Erneuerung SA-Anlagen Untersax - Haspelgrube
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

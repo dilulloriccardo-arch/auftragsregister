@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:161b67d9-ad71-4974-90f0-c6d7fe5218cf-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261028T110000Z
+SUMMARY:Eingabefrist: Erachfeldstrasse\, Fliederweg\, Kanalisations-\, Werk
+ leitungs- und Strassenbau
+DESCRIPTION:Auftraggeber: Umwelt und Infrastruktur Stadt Bülach\nEingabefr
+ ist: 28.10.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/161b67d9-ad71-4974-90f0-c6d7fe5218cf/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/161b67d9-ad71-4974-90f0-c6d7fe5218cf
+URL:https://auftragsregister.ch/de/auftrag/161b67d9-ad71-4974-90f0-c6d7fe52
+ 18cf/
+LOCATION:Bülach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Erachfeldstrasse\, Fliederweg\, Kanalisations-\, 
+ Werkleitungs- und Strassenbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

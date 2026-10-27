@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d5892553-8e03-4181-8519-d3ec933d74f1-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261130T090000Z
+SUMMARY:Délai de remise : Tunnel de lavage à bande pour batteries de cu
+ isine\, bacs GN et ustensiles
+DESCRIPTION:Acheteur public : CHUV - centrale d'achats et d'ingénierie b
+ iomédicale (CAIB)\nDélai de remise : 30.11.2026\, 10 h 00\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/d5892553-8e03-4181-85
+ 19-d3ec933d74f1/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/d5892553-8e03-4181-8519-d3ec933d74f1
+URL:https://auftragsregister.ch/fr/auftrag/d5892553-8e03-4181-8519-d3ec933d
+ 74f1/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Tunnel de lavage à bande pour batteries d
+ e cuisine\, bacs GN et ustensiles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

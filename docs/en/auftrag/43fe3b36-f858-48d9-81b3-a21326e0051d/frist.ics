@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:43fe3b36-f858-48d9-81b3-a21326e0051d-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Submission deadline: Übernahme und Verwertung von Kleinmetall aus 
+ der Stadt Zürich
+DESCRIPTION:Public buyer: TED - Entsorgung + Recycling Zürich (ERZ) Hagenh
+ olzstrasse 110\, Zürich\nSubmission deadline: 24 Nov 2026\, 16:00\nIn t
+ he register: https://auftragsregister.ch/en/auftrag/43fe3b36-f858-48d9-81b
+ 3-a21326e0051d/\nOfficial publication: https://www.simap.ch/en/project-det
+ ail/43fe3b36-f858-48d9-81b3-a21326e0051d
+URL:https://auftragsregister.ch/en/auftrag/43fe3b36-f858-48d9-81b3-a21326e0
+ 051d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Übernahme und Verwertung von Kleinmetall 
+ aus der Stadt Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

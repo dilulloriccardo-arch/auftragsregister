@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c23dc033-55dd-47f9-81b7-f6b658f07f82-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Délai de remise : École de Herrliberg : renouvellement de l’i
+ nfrastructure TIC
+DESCRIPTION:Acheteur public : Schule Herrliberg / Gemeinsame Sekundarschu
+ le Erlenbach Herrliberg (PUBLICS)\nDélai de remise : 16.11.2026\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/c23dc033-55dd-47f9-8
+ 1b7-f6b658f07f82/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/c23dc033-55dd-47f9-81b7-f6b658f07f82
+URL:https://auftragsregister.ch/fr/auftrag/c23dc033-55dd-47f9-81b7-f6b658f0
+ 7f82/
+LOCATION:Herrliberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École de Herrliberg : renouvellement de l
+ ’infrastructure TIC
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

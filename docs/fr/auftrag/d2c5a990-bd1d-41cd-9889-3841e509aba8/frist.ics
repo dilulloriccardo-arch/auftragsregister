@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2c5a990-bd1d-41cd-9889-3841e509aba8-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Délai de remise : Transformation du Centre sportif La Ruayre : R
+ énovation du bâtiment 1722b buvette - Démolition du bâtiment 1722a\, c
+ onstruction d'un nouveau bâtiment - Réaménagements des terrains de foot
+ ball\, ajout d'un terrain synthétique et d'un terrain junior.
+DESCRIPTION:Acheteur public : Commune de Crissier (Widmer Architectes SA)
+ \nDélai de remise : 03.11.2026\, 12 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/d2c5a990-bd1d-41cd-9889-3841e509aba8/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/d2c5a990
+ -bd1d-41cd-9889-3841e509aba8
+URL:https://auftragsregister.ch/fr/auftrag/d2c5a990-bd1d-41cd-9889-3841e509
+ aba8/
+LOCATION:Crissier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transformation du Centre sportif La Ruayre
+  : Rénovation du bâtiment 1722b buvette - Démolition du bâtiment 1722a
+ \, construction d'un nouveau bâtiment - Réaménagements des terrains de 
+ football\, ajout d'un terrain synthétique et d'un terrain junior.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

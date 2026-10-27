@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f84362b3-f822-4535-9661-0b5e6207499c-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Scadenza: Camion électrique
+DESCRIPTION:Ente pubblico: envevi\nScadenza: 12.11.2026\, 12:00\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/f84362b3-f822-4535-9661-0b5e620
+ 7499c/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/f8
+ 4362b3-f822-4535-9661-0b5e6207499c
+URL:https://auftragsregister.ch/it/auftrag/f84362b3-f822-4535-9661-0b5e6207
+ 499c/
+LOCATION:Uvrier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Camion électrique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

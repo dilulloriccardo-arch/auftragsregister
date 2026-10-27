@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c6d5977d-c2dc-4c78-a246-1913b3727af8-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Eingabefrist: Klinik im Hasel - BKP 211 Baumeisterarbeiten
+DESCRIPTION:Auftraggeber: Von Effinger Stiftung (HSSP AG)\nEingabefrist: 24
+ .11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /c6d5977d-c2dc-4c78-a246-1913b3727af8/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/c6d5977d-c2dc-4c78-a246-1913b3727af8
+URL:https://auftragsregister.ch/de/auftrag/c6d5977d-c2dc-4c78-a246-1913b372
+ 7af8/
+LOCATION:Gontenschwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Klinik im Hasel - BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

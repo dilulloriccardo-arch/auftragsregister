@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:292b21b6-f36d-4b25-abe7-4814d0e4a3e4-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Scadenza: MP-250014\, Beckenried Ischenstollen Drainagesystem\, Ers
+ atz Drainagefilter Bauleistungen
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA -Abteilung Strasse
+ ninfrastruktur-Ost - F3 Zofingen\nScadenza: 30.11.2026\, 23:59\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/292b21b6-f36d-4b25-abe7-4814d0e
+ 4a3e4/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/29
+ 2b21b6-f36d-4b25-abe7-4814d0e4a3e4
+URL:https://auftragsregister.ch/it/auftrag/292b21b6-f36d-4b25-abe7-4814d0e4
+ a3e4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-250014\, Beckenried Ischenstollen Drainagesystem\,
+  Ersatz Drainagefilter Bauleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

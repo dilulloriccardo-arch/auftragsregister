@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4d31c5f9-1443-4932-8712-f7dc8192d466-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: Rahmenvertrag Ersatz und Erneuerung Türschliesssysteme E
+ inwohnergemeinde Dottikon AG
+DESCRIPTION:Ente pubblico: Gemeindeverwaltung Dottikon\nScadenza: 09.11.202
+ 6\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/4d31c5f9-1
+ 443-4932-8712-f7dc8192d466/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/4d31c5f9-1443-4932-8712-f7dc8192d466
+URL:https://auftragsregister.ch/it/auftrag/4d31c5f9-1443-4932-8712-f7dc8192
+ d466/
+LOCATION:Dottikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenvertrag Ersatz und Erneuerung Türschliesssyste
+ me Einwohnergemeinde Dottikon AG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

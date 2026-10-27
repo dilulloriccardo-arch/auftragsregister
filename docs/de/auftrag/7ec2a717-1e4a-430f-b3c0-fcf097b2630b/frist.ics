@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ec2a717-1e4a-430f-b3c0-fcf097b2630b-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:1
+DTSTART:20261123T080000Z
+SUMMARY:Eingabefrist: Rahmenvertrag Oberbauinstandsetzungsleistungen im Fac
+ hlos 1\, in Gleisen und Weichen auf Schweizer Gebiet\, der DB InfraGO AG\,
+  für die GJ 2028ff. Region Südwest\, Netzb. Basel_PD Freiburg (FBU).
+DESCRIPTION:Auftraggeber: Deutsche Bahn AG\, Beschaffung Infrastruktur (FE.
+ EI)\nEingabefrist: 23.11.2026\, 9.00 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/7ec2a717-1e4a-430f-b3c0-fcf097b2630b/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/7ec2a717-1e4a-430f-b3c0-fcf
+ 097b2630b
+URL:https://auftragsregister.ch/de/auftrag/7ec2a717-1e4a-430f-b3c0-fcf097b2
+ 630b/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rahmenvertrag Oberbauinstandsetzungsleistungen im
+  Fachlos 1\, in Gleisen und Weichen auf Schweizer Gebiet\, der DB InfraGO 
+ AG\, für die GJ 2028ff. Region Südwest\, Netzb. Basel_PD Freiburg (FBU).
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

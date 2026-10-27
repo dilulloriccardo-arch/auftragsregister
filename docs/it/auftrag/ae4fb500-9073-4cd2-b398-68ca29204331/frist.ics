@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ae4fb500-9073-4cd2-b398-68ca29204331-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Scadenza: FVV Brücke Au - Lustenau Elektroarbeiten
+DESCRIPTION:Ente pubblico: Politische Gemeinde Au\nScadenza: 05.11.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/ae4fb500-9073-4
+ cd2-b398-68ca29204331/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/ae4fb500-9073-4cd2-b398-68ca29204331
+URL:https://auftragsregister.ch/it/auftrag/ae4fb500-9073-4cd2-b398-68ca2920
+ 4331/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: FVV Brücke Au - Lustenau Elektroarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

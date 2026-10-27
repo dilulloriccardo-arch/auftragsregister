@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:940f26f7-bb2a-48bf-849b-2fe5a23e5de6-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261029T150000Z
+SUMMARY:Scadenza: Nuova scuola elementare Magliaso - Opere da sottofondi
+DESCRIPTION:Ente pubblico: Comune di Magliaso\nScadenza: 29.10.2026\, 16:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/940f26f7-bb2a-48bf-
+ 849b-2fe5a23e5de6/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/940f26f7-bb2a-48bf-849b-2fe5a23e5de6
+URL:https://auftragsregister.ch/it/auftrag/940f26f7-bb2a-48bf-849b-2fe5a23e
+ 5de6/
+LOCATION:Magliaso
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Nuova scuola elementare Magliaso - Opere da sottofond
+ i
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

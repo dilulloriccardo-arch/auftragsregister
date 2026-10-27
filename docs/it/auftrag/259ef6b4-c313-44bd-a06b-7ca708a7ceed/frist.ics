@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:259ef6b4-c313-44bd-a06b-7ca708a7ceed-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Scadenza: CoolCity\, TP0 Vermessungsdienstleistungen Bauherrschaft
+DESCRIPTION:Ente pubblico: Elektrizitätswerk der Stadt Zürich (ewz)\nScad
+ enza: 12.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/259ef6b4-c313-44bd-a06b-7ca708a7ceed/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/259ef6b4-c313-44bd-a06b-7ca708a7ceed
+URL:https://auftragsregister.ch/it/auftrag/259ef6b4-c313-44bd-a06b-7ca708a7
+ ceed/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: CoolCity\, TP0 Vermessungsdienstleistungen Bauherrsch
+ aft
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c12f4c8-6fca-4e70-a1ef-217b57e7b001-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : BAV 60500 SRZ Wache Süd\, Neubau - CFC 215.2 
+ Façades
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 09.11.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/3c12f4c8-6fca-4e70-a1ef-217b57e7b001/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/3c12f4c8-6fca-4e70-a
+ 1ef-217b57e7b001
+URL:https://auftragsregister.ch/fr/auftrag/3c12f4c8-6fca-4e70-a1ef-217b57e7
+ b001/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 60500 SRZ Wache Süd\, Neubau - CFC 21
+ 5.2 Façades
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

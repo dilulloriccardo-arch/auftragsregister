@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:694611dc-789e-4ebc-ba74-9a2773212969-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261115T225900Z
+SUMMARY:Délai de remise : BKS-2245: Réalisation de l'enquête suisse su
+ r la population active (ESPA) 2028-2032\, sans complétude des vagues 2028
+ -2029\, avec complétude des vagues 2033-2034
+DESCRIPTION:Acheteur public : Bundesamt für Statistik\nDélai de remise
+  : 15.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/694611dc-789e-4ebc-ba74-9a2773212969/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/694611dc-789e-4ebc-ba74-9a
+ 2773212969
+URL:https://auftragsregister.ch/fr/auftrag/694611dc-789e-4ebc-ba74-9a277321
+ 2969/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKS-2245: Réalisation de l'enquête suiss
+ e sur la population active (ESPA) 2028-2032\, sans complétude des vagues 
+ 2028-2029\, avec complétude des vagues 2033-2034
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

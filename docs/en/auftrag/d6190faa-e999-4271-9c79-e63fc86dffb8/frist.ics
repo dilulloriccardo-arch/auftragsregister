@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6190faa-e999-4271-9c79-e63fc86dffb8-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:1
+DTSTART:20261106T140000Z
+SUMMARY:Submission deadline: Distributions- und Ladekonzept Prepaid Card Ö
+ V und SwissPass
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB Division Produkti
+ on Personenverkehr\nSubmission deadline: 6 Nov 2026\, 15:00\nIn the regi
+ ster: https://auftragsregister.ch/en/auftrag/d6190faa-e999-4271-9c79-e63fc
+ 86dffb8/\nOfficial publication: https://www.simap.ch/en/project-detail/d61
+ 90faa-e999-4271-9c79-e63fc86dffb8
+URL:https://auftragsregister.ch/en/auftrag/d6190faa-e999-4271-9c79-e63fc86d
+ ffb8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Distributions- und Ladekonzept Prepaid Car
+ d ÖV und SwissPass
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

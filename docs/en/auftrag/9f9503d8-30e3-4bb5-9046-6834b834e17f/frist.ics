@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9f9503d8-30e3-4bb5-9046-6834b834e17f-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261104T100000Z
+SUMMARY:Submission deadline: Bâtiment d'art contemporain (2255TI-bis-1) ou
+ vrages métalliques préconfectionnés
+DESCRIPTION:Public buyer: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nS
+ ubmission deadline: 4 Nov 2026\, 11:00\nIn the register: https://auftrag
+ sregister.ch/en/auftrag/9f9503d8-30e3-4bb5-9046-6834b834e17f/\nOfficial pu
+ blication: https://www.simap.ch/en/project-detail/9f9503d8-30e3-4bb5-9046-
+ 6834b834e17f
+URL:https://auftragsregister.ch/en/auftrag/9f9503d8-30e3-4bb5-9046-6834b834
+ e17f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bâtiment d'art contemporain (2255TI-bis-1
+ ) ouvrages métalliques préconfectionnés
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

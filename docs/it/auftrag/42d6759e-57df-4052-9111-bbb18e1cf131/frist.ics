@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:42d6759e-57df-4052-9111-bbb18e1cf131-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261110T090000Z
+SUMMARY:Scadenza: Sanierung Schlatterstrasse\, Russikon
+DESCRIPTION:Ente pubblico: Gemeindeverwaltung Russikon\, Abteilung Bau\nSca
+ denza: 10.11.2026\, 10:00\nNel registro: https://auftragsregister.ch/it/au
+ ftrag/42d6759e-57df-4052-9111-bbb18e1cf131/\nPubblicazione ufficiale: http
+ s://www.simap.ch/it/project-detail/42d6759e-57df-4052-9111-bbb18e1cf131
+URL:https://auftragsregister.ch/it/auftrag/42d6759e-57df-4052-9111-bbb18e1c
+ f131/
+LOCATION:Russikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Schlatterstrasse\, Russikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

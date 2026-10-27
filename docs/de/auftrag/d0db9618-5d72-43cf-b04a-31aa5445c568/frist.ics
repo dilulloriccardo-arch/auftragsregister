@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0db9618-5d72-43cf-b04a-31aa5445c568-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261118T100000Z
+SUMMARY:Eingabefrist: Ecole du Mervelet (2370TI) Stores en lamelles
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 18.11.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/d0db9618-5d72-43cf-b04a-31aa5445c568/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/d0db9618-5d72-43cf-b04a-31aa5445
+ c568
+URL:https://auftragsregister.ch/de/auftrag/d0db9618-5d72-43cf-b04a-31aa5445
+ c568/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ecole du Mervelet (2370TI) Stores en lamelles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

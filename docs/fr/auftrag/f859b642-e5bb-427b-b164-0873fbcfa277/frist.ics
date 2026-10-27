@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f859b642-e5bb-427b-b164-0873fbcfa277-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261112T100000Z
+SUMMARY:Délai de remise : Acquisition des licences de virtualisation et 
+ projet de migration pour la République et Canton du Jura
+DESCRIPTION:Acheteur public : DFNS - Service de l'informatique\nDélai de
+  remise : 12.11.2026\, 11 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/f859b642-e5bb-427b-b164-0873fbcfa277/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/f859b642-e5bb-427b-
+ b164-0873fbcfa277
+URL:https://auftragsregister.ch/fr/auftrag/f859b642-e5bb-427b-b164-0873fbcf
+ a277/
+LOCATION:Delémont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition des licences de virtualisation
+  et projet de migration pour la République et Canton du Jura
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

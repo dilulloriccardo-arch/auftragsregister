@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfcf3b7d-45ac-4533-b65f-69347d016e10-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261103T130000Z
+SUMMARY:Eingabefrist: Concorso per l’aggiudicazione dei contratti di assi
+ curazione indennità giornaliera collettiva in caso di malattia e infortun
+ i secondo la LAINF
+DESCRIPTION:Auftraggeber: REGIONE TRE VALLI\nEingabefrist: 03.11.2026\, 14.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/cfcf3b7d-45ac
+ -4533-b65f-69347d016e10/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/cfcf3b7d-45ac-4533-b65f-69347d016e10
+URL:https://auftragsregister.ch/de/auftrag/cfcf3b7d-45ac-4533-b65f-69347d01
+ 6e10/
+LOCATION:Biasca
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Concorso per l’aggiudicazione dei contratti di 
+ assicurazione indennità giornaliera collettiva in caso di malattia e info
+ rtuni secondo la LAINF
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

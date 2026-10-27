@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d15bc0c2-0037-464a-923d-80c684e7b4f7-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T090000Z
+SUMMARY:Délai de remise : Commune de Cham - Assurances de personnes au 1
+ er janvier 2027
+DESCRIPTION:Acheteur public : Einwohnergemeinde Cham\nDélai de remise 
+ : 18.11.2026\, 10 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/d15bc0c2-0037-464a-923d-80c684e7b4f7/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/d15bc0c2-0037-464a-923d-80c68
+ 4e7b4f7
+URL:https://auftragsregister.ch/fr/auftrag/d15bc0c2-0037-464a-923d-80c684e7
+ b4f7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Commune de Cham - Assurances de personnes 
+ au 1er janvier 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

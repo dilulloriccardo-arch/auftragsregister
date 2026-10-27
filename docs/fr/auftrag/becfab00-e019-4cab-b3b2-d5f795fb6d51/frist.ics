@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:becfab00-e019-4cab-b3b2-d5f795fb6d51-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Délai de remise : Services de nettoyage de l'école cantonale de
+  Zurich Nord
+DESCRIPTION:Acheteur public : Kanton Zürich\, Bildungsdirektion\, Mittel
+ schul- und Berufsbildungsamt\nDélai de remise : 02.12.2026\, 12 h 0
+ 0\nDans le registre : https://auftragsregister.ch/fr/auftrag/becfab00-e0
+ 19-4cab-b3b2-d5f795fb6d51/\nPublication officielle : https://www.simap.c
+ h/fr/project-detail/becfab00-e019-4cab-b3b2-d5f795fb6d51
+URL:https://auftragsregister.ch/fr/auftrag/becfab00-e019-4cab-b3b2-d5f795fb
+ 6d51/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Services de nettoyage de l'école cantonal
+ e de Zurich Nord
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

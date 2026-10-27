@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a0936d8-617b-4ce5-971b-da8615dbae6f-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Scadenza: VE 31.09 Réfection de voie métrique « Finhaut-Châtela
+ rd / KM 15.372 au KM 16.184 - KM 16.413 au KM 17.030 et KM 17.682 au 17.76
+ 6 : 1513m"
+DESCRIPTION:Ente pubblico: Achats - TMR SA\nScadenza: 16.11.2026\, 10:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/9a0936d8-617b-4ce5-971
+ b-da8615dbae6f/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/9a0936d8-617b-4ce5-971b-da8615dbae6f
+URL:https://auftragsregister.ch/it/auftrag/9a0936d8-617b-4ce5-971b-da8615db
+ ae6f/
+LOCATION:Finhaut
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: VE 31.09 Réfection de voie métrique « Finhaut-Châ
+ telard / KM 15.372 au KM 16.184 - KM 16.413 au KM 17.030 et KM 17.682 au 1
+ 7.766 : 1513m"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

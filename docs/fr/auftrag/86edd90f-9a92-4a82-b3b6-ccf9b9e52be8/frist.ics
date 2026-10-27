@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86edd90f-9a92-4a82-b3b6-ccf9b9e52be8-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Délai de remise : École de Langwiesen : extension et rénovatio
+ n \; CFC 201 : travaux d'excavation
+DESCRIPTION:Acheteur public : Amt für Städtebau\nDélai de remise : 0
+ 4.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/86edd90f-9a92-4a82-b3b6-ccf9b9e52be8/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/86edd90f-9a92-4a82-b3b6-ccf9b9
+ e52be8
+URL:https://auftragsregister.ch/fr/auftrag/86edd90f-9a92-4a82-b3b6-ccf9b9e5
+ 2be8/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École de Langwiesen : extension et rénov
+ ation \; CFC 201 : travaux d'excavation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

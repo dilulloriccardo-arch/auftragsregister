@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:08e19b5f-0a7e-49f9-b205-c84b729b8d59-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261203T225900Z
+SUMMARY:Scadenza: Gemeindezentrum Bremgarten b. Bern\, BKP 224.1 Flachdäch
+ er
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Bremgarten b. Bern (maurer bau
+ leitung gmbh)\nScadenza: 03.12.2026\, 23:59\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/08e19b5f-0a7e-49f9-b205-c84b729b8d59/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/08e19b5f-0a7e-49f9-b2
+ 05-c84b729b8d59
+URL:https://auftragsregister.ch/it/auftrag/08e19b5f-0a7e-49f9-b205-c84b729b
+ 8d59/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gemeindezentrum Bremgarten b. Bern\, BKP 224.1 Flachd
+ ächer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

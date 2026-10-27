@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:24f469fb-5d36-436f-b5c0-711f1e4dc8ac-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Submission deadline: Articulated wheeled excavator with mowing boom
+DESCRIPTION:Public buyer: Rheinunternehmen\nSubmission deadline: 6 Nov 20
+ 26\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/24f469
+ fb-5d36-436f-b5c0-711f1e4dc8ac/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/24f469fb-5d36-436f-b5c0-711f1e4dc8ac
+URL:https://auftragsregister.ch/en/auftrag/24f469fb-5d36-436f-b5c0-711f1e4d
+ c8ac/
+LOCATION:Widnau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Articulated wheeled excavator with mowing 
+ boom
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

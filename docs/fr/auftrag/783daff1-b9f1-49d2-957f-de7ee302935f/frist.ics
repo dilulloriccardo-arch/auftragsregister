@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:783daff1-b9f1-49d2-957f-de7ee302935f-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Délai de remise : Steffisburg/Thun\; Lieferung von VRS-T/BLS Dru
+ ckrohren\, Formstücken und Armaturen in DN400
+DESCRIPTION:Acheteur public : Waret AG\nDélai de remise : 02.11.2026\,
+  23 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/
+ 783daff1-b9f1-49d2-957f-de7ee302935f/\nPublication officielle : https://
+ www.simap.ch/fr/project-detail/783daff1-b9f1-49d2-957f-de7ee302935f
+URL:https://auftragsregister.ch/fr/auftrag/783daff1-b9f1-49d2-957f-de7ee302
+ 935f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Steffisburg/Thun\; Lieferung von VRS-T/BLS
+  Druckrohren\, Formstücken und Armaturen in DN400
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

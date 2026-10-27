@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b801988-390a-4f80-a8e4-abbb89d4e7af-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20270129T150000Z
+SUMMARY:Eingabefrist: Dienstwagen 20xx Kranmodul
+DESCRIPTION:Auftraggeber: Regionalverkehr Bern-Solothurn AG\nEingabefrist: 
+ 29.01.2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/4b801988-390a-4f80-a8e4-abbb89d4e7af/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/4b801988-390a-4f80-a8e4-abbb89d4e7af
+URL:https://auftragsregister.ch/de/auftrag/4b801988-390a-4f80-a8e4-abbb89d4
+ e7af/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Dienstwagen 20xx Kranmodul
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

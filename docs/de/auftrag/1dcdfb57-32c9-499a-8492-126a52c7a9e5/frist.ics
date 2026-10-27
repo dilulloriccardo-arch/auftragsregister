@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1dcdfb57-32c9-499a-8492-126a52c7a9e5-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T160000Z
+SUMMARY:Eingabefrist: Bachverlegung und Bachoffenlegung Töbelibach - Schul
+ haus Malerva
+DESCRIPTION:Auftraggeber: Politische Gemeinde Sargans\nEingabefrist: 09.11.
+ 2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/1dc
+ dfb57-32c9-499a-8492-126a52c7a9e5/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/1dcdfb57-32c9-499a-8492-126a52c7a9e5
+URL:https://auftragsregister.ch/de/auftrag/1dcdfb57-32c9-499a-8492-126a52c7
+ a9e5/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bachverlegung und Bachoffenlegung Töbelibach - S
+ chulhaus Malerva
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

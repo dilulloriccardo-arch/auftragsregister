@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1addd275-24e0-44aa-855d-94f4aee6d56e-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261123T160000Z
+SUMMARY:Eingabefrist: Gesamtsanierung Gerechtigkeitsgasse 40\, Postgasse 31
+  + 33 und Gerechtigkeitsgasse 42\, Postgasse 35 - BKP 272 Metallbauarbeite
+ n
+DESCRIPTION:Auftraggeber: Burgergemeinde Bern\nEingabefrist: 23.11.2026\, 1
+ 7.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/1addd275-24
+ e0-44aa-855d-94f4aee6d56e/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/1addd275-24e0-44aa-855d-94f4aee6d56e
+URL:https://auftragsregister.ch/de/auftrag/1addd275-24e0-44aa-855d-94f4aee6
+ d56e/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamtsanierung Gerechtigkeitsgasse 40\, Postgass
+ e 31 + 33 und Gerechtigkeitsgasse 42\, Postgasse 35 - BKP 272 Metallbauarb
+ eiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

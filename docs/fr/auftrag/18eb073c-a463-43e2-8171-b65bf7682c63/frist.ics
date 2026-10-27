@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18eb073c-a463-43e2-8171-b65bf7682c63-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Délai de remise : Location de moyens de traction ferroviaires
+DESCRIPTION:Acheteur public : BLS AG - Finance & SCM - Strategische Besch
+ affung\nDélai de remise : 14.12.2026\, 23 h 59\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/18eb073c-a463-43e2-8171-b65bf7682
+ c63/\nPublication officielle : https://www.simap.ch/fr/project-detail/18
+ eb073c-a463-43e2-8171-b65bf7682c63
+URL:https://auftragsregister.ch/fr/auftrag/18eb073c-a463-43e2-8171-b65bf768
+ 2c63/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Location de moyens de traction ferroviaire
+ s
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

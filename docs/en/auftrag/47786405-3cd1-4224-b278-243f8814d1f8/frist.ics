@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:47786405-3cd1-4224-b278-243f8814d1f8-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261110T140000Z
+SUMMARY:Submission deadline: Fachhochschulzentrum Graubünden (FHZGR)\, Chu
+ r / BKP 235.82 ZUKO
+DESCRIPTION:Public buyer: Hochbauamt Graubünden\nSubmission deadline: 10 
+ Nov 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /47786405-3cd1-4224-b278-243f8814d1f8/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/47786405-3cd1-4224-b278-243f8814d1f8
+URL:https://auftragsregister.ch/en/auftrag/47786405-3cd1-4224-b278-243f8814
+ d1f8/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fachhochschulzentrum Graubünden (FHZGR)\,
+  Chur / BKP 235.82 ZUKO
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c3e9e44c-c76a-4457-b1d1-61adea51c551-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261111T090000Z
+SUMMARY:Eingabefrist: ARA Zimmerberg - BKP 650\, Gasinstallationen
+DESCRIPTION:Auftraggeber: Zweckverband ARA Zimmerberg\nEingabefrist: 11.11.
+ 2026\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c3e
+ 9e44c-c76a-4457-b1d1-61adea51c551/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/c3e9e44c-c76a-4457-b1d1-61adea51c551
+URL:https://auftragsregister.ch/de/auftrag/c3e9e44c-c76a-4457-b1d1-61adea51
+ c551/
+LOCATION:Thalwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ARA Zimmerberg - BKP 650\, Gasinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

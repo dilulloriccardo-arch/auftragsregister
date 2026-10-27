@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e6dc1-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T153000Z
+SUMMARY:Délai de remise : UNI - BASTIONS Central _ CFC373.00 - Sièges r
+ abattables
+DESCRIPTION:Acheteur public : Office Cantonale des Bâtiments (OCBA) - Po
+ olailes\nDélai de remise : 23.11.2026\, 16 h 30\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/d8aeb7fc-67fc-4e1e-be5a-fa3e3e
+ 8e6dc1/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e6dc1
+URL:https://auftragsregister.ch/fr/auftrag/d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e
+ 6dc1/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : UNI - BASTIONS Central _ CFC373.00 - Sièg
+ es rabattables
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

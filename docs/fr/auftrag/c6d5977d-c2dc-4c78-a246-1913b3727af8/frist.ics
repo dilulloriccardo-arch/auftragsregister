@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c6d5977d-c2dc-4c78-a246-1913b3727af8-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Délai de remise : Klinik im Hasel - CPC 211 Travaux de maçonner
+ ie
+DESCRIPTION:Acheteur public : Von Effinger Stiftung (HSSP AG)\nDélai de 
+ remise : 24.11.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/c6d5977d-c2dc-4c78-a246-1913b3727af8/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/c6d5977d-c2dc-4c78-a
+ 246-1913b3727af8
+URL:https://auftragsregister.ch/fr/auftrag/c6d5977d-c2dc-4c78-a246-1913b372
+ 7af8/
+LOCATION:Gontenschwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Klinik im Hasel - CPC 211 Travaux de maço
+ nnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

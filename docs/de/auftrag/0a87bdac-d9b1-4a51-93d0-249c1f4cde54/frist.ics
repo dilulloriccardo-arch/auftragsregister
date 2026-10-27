@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a87bdac-d9b1-4a51-93d0-249c1f4cde54-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261110T110000Z
+SUMMARY:Eingabefrist: EV Enge\, Unternehmer Tiefbau für Fernleitungen und 
+ Hausanschlüsse
+DESCRIPTION:Auftraggeber: Elektrizitätswerk der Stadt Zürich (ewz)\nEinga
+ befrist: 10.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch
+ /de/auftrag/0a87bdac-d9b1-4a51-93d0-249c1f4cde54/\nAmtliche Publikation: h
+ ttps://www.simap.ch/de/project-detail/0a87bdac-d9b1-4a51-93d0-249c1f4cde54
+URL:https://auftragsregister.ch/de/auftrag/0a87bdac-d9b1-4a51-93d0-249c1f4c
+ de54/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: EV Enge\, Unternehmer Tiefbau für Fernleitungen 
+ und Hausanschlüsse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

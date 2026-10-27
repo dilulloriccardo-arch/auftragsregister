@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:939e79da-3347-4e41-9318-4ab4bc85f475-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: Huberstrasse 18/20\, Gesamtsanierung\, BKP 226.2 verputzt
+ e Wäremdämmung
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 16.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/939e79da-3347-4e41-9318-4ab4bc85f475/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/939e79da-3347-4e41-9318-4ab4bc85f475
+URL:https://auftragsregister.ch/it/auftrag/939e79da-3347-4e41-9318-4ab4bc85
+ f475/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Huberstrasse 18/20\, Gesamtsanierung\, BKP 226.2 verp
+ utzte Wäremdämmung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57aae4e4-bac2-4fa6-bda5-86cb96bf49d7-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261118T130000Z
+SUMMARY:Délai de remise : Ablösung GIS Gemeindewerke Pfäffikon ZH
+DESCRIPTION:Acheteur public : Gemeindewerke Pfäffikon\nDélai de remise
+  : 18.11.2026\, 14 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/57aae4e4-bac2-4fa6-bda5-86cb96bf49d7/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/57aae4e4-bac2-4fa6-bda5-86
+ cb96bf49d7
+URL:https://auftragsregister.ch/fr/auftrag/57aae4e4-bac2-4fa6-bda5-86cb96bf
+ 49d7/
+LOCATION:Pfäffikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ablösung GIS Gemeindewerke Pfäffikon ZH
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

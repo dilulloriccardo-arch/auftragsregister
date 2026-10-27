@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7bfc02c3-b5ac-49e2-89f8-568ec55ba86d-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261111T090000Z
+SUMMARY:Scadenza: Montes-lits et ascenseur pour la Clinique Joli-Mont
+DESCRIPTION:Ente pubblico: Centrale d'achats et d'ingénierie biomédicale 
+ Vaud-Genève (CAIB)\nScadenza: 11.11.2026\, 10:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/7bfc02c3-b5ac-49e2-89f8-568ec55ba86d/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/7bfc02c3-b5ac-4
+ 9e2-89f8-568ec55ba86d
+URL:https://auftragsregister.ch/it/auftrag/7bfc02c3-b5ac-49e2-89f8-568ec55b
+ a86d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Montes-lits et ascenseur pour la Clinique Joli-Mont
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

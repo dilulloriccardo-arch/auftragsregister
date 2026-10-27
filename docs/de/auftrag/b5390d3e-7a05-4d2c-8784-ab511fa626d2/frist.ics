@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b5390d3e-7a05-4d2c-8784-ab511fa626d2-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T103000Z
+SUMMARY:Eingabefrist: Ville de Vernier - Requalification du Chemin du Coin-
+ de-Terre et mise en séparatif des réseaux d’assainissement du secteur 
+ élargi à l’avenue de Crozet - Renouvellement de réseaux SIG
+DESCRIPTION:Auftraggeber: Ville de Vernier - Service de l'aménagement\nEin
+ gabefrist: 20.11.2026\, 11.30 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/b5390d3e-7a05-4d2c-8784-ab511fa626d2/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/b5390d3e-7a05-4d2c-8784-ab511fa626
+ d2
+URL:https://auftragsregister.ch/de/auftrag/b5390d3e-7a05-4d2c-8784-ab511fa6
+ 26d2/
+LOCATION:Châtelaine
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ville de Vernier - Requalification du Chemin du C
+ oin-de-Terre et mise en séparatif des réseaux d’assainissement du sect
+ eur élargi à l’avenue de Crozet - Renouvellement de réseaux SIG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

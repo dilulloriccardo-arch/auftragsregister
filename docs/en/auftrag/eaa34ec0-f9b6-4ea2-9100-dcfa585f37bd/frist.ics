@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eaa34ec0-f9b6-4ea2-9100-dcfa585f37bd-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Submission deadline: BHV Bauherrenvertretung\, Bauherrenunterstütz
+ ung
+DESCRIPTION:Public buyer: DIB - Elektrizitätswerk der Stadt Zürich (ewz)\
+ nSubmission deadline: 12 Nov 2026\, 12:00\nIn the register: https://auft
+ ragsregister.ch/en/auftrag/eaa34ec0-f9b6-4ea2-9100-dcfa585f37bd/\nOfficial
+  publication: https://www.simap.ch/en/project-detail/eaa34ec0-f9b6-4ea2-91
+ 00-dcfa585f37bd
+URL:https://auftragsregister.ch/en/auftrag/eaa34ec0-f9b6-4ea2-9100-dcfa585f
+ 37bd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BHV Bauherrenvertretung\, Bauherrenunterst
+ ützung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

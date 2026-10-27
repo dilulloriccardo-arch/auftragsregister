@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cd0c40ad-9f4f-4620-809c-3439019e6f52-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261112T160000Z
+SUMMARY:Délai de remise : Soudage\, meulage et mesure du réseau ferrovi
+ aire
+DESCRIPTION:Acheteur public : Verkehrsbetriebe Zürich (VBZ)\nDélai de r
+ emise : 12.11.2026\, 17 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/cd0c40ad-9f4f-4620-809c-3439019e6f52/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/cd0c40ad-9f4f-4620-80
+ 9c-3439019e6f52
+URL:https://auftragsregister.ch/fr/auftrag/cd0c40ad-9f4f-4620-809c-3439019e
+ 6f52/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Soudage\, meulage et mesure du réseau fer
+ roviaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

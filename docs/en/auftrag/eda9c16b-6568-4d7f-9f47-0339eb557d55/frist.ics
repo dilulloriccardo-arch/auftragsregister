@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eda9c16b-6568-4d7f-9f47-0339eb557d55-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261123T090000Z
+SUMMARY:Submission deadline: Réfection superstructure voie courante Martig
+ ny – Martigny Bourg [Km1+059 au Km2+806] sur 1694m Pont du Simplon [Km0+
+ 599 au Km0+870] sur 270m
+DESCRIPTION:Public buyer: Achats - TMR SA\nSubmission deadline: 23 Nov 20
+ 26\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag/eda9c1
+ 6b-6568-4d7f-9f47-0339eb557d55/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/eda9c16b-6568-4d7f-9f47-0339eb557d55
+URL:https://auftragsregister.ch/en/auftrag/eda9c16b-6568-4d7f-9f47-0339eb55
+ 7d55/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Réfection superstructure voie courante Ma
+ rtigny – Martigny Bourg [Km1+059 au Km2+806] sur 1694m Pont du Simplon [
+ Km0+599 au Km0+870] sur 270m
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

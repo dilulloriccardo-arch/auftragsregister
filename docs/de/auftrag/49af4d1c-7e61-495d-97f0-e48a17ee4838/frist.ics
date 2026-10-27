@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49af4d1c-7e61-495d-97f0-e48a17ee4838-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T090000Z
+SUMMARY:Eingabefrist: Alésage du tunnel MOB de Montreux
+DESCRIPTION:Auftraggeber: Compagnie du Chemin de fer Montreux Oberland bern
+ ois SA - Infrastructure Projets\nEingabefrist: 04.11.2026\, 10.00 Uhr\nIm
+  Register: https://auftragsregister.ch/de/auftrag/49af4d1c-7e61-495d-97f0-
+ e48a17ee4838/\nAmtliche Publikation: https://www.simap.ch/de/project-detai
+ l/49af4d1c-7e61-495d-97f0-e48a17ee4838
+URL:https://auftragsregister.ch/de/auftrag/49af4d1c-7e61-495d-97f0-e48a17ee
+ 4838/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Alésage du tunnel MOB de Montreux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

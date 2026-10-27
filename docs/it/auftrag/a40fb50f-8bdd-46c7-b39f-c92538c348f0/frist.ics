@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a40fb50f-8bdd-46c7-b39f-c92538c348f0-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261106T153000Z
+SUMMARY:Scadenza: Installations éléctriques - Rénovation du bâtiment PI
+ CTO Avenue Ernest-Pictet 28-30
+DESCRIPTION:Ente pubblico: Etat de Genève\, Département du territoire - D
+ T\, Office Cantonal des bâtiments (OCBA)\nScadenza: 06.11.2026\, 16:30\nN
+ el registro: https://auftragsregister.ch/it/auftrag/a40fb50f-8bdd-46c7-b39
+ f-c92538c348f0/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/a40fb50f-8bdd-46c7-b39f-c92538c348f0
+URL:https://auftragsregister.ch/it/auftrag/a40fb50f-8bdd-46c7-b39f-c92538c3
+ 48f0/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Installations éléctriques - Rénovation du bâtimen
+ t PICTO Avenue Ernest-Pictet 28-30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

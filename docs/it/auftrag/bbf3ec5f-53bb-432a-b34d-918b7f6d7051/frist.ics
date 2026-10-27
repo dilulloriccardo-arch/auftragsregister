@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbf3ec5f-53bb-432a-b34d-918b7f6d7051-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270107T150000Z
+SUMMARY:Scadenza: 26-447 SiPe Rottenverstärkung Sicherheitspersonal
+DESCRIPTION:Ente pubblico: SBB AG Infrastruktur / Einkauf\, Supply Chain un
+ d Produktion\nScadenza: 07.01.2027\, 16:00\nNel registro: https://auftrags
+ register.ch/it/auftrag/bbf3ec5f-53bb-432a-b34d-918b7f6d7051/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/bbf3ec5f-53bb-432a-b34
+ d-918b7f6d7051
+URL:https://auftragsregister.ch/it/auftrag/bbf3ec5f-53bb-432a-b34d-918b7f6d
+ 7051/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 26-447 SiPe Rottenverstärkung Sicherheitspersonal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

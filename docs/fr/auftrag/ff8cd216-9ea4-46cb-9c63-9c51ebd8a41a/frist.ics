@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff8cd216-9ea4-46cb-9c63-9c51ebd8a41a-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261130T140000Z
+SUMMARY:Délai de remise : Programm Knoten Bern\, AS25 Entflechtung Wankd
+ orf (WKD)\, Gärtnerarbeiten
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Infrastru
+ ktur - Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\n
+ Délai de remise : 30.11.2026\, 15 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/ff8cd216-9ea4-46cb-9c63-9c51ebd8a41a/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/ff8cd216-9
+ ea4-46cb-9c63-9c51ebd8a41a
+URL:https://auftragsregister.ch/fr/auftrag/ff8cd216-9ea4-46cb-9c63-9c51ebd8
+ a41a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Programm Knoten Bern\, AS25 Entflechtung W
+ ankdorf (WKD)\, Gärtnerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

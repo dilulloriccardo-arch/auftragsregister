@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46da9531-a7d7-4b32-948d-6d992a4cfe54-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261201T170000Z
+SUMMARY:Délai de remise : Seewasserwerk Riet II\, Los 7: Heizung\, Lüft
+ ung\, Klima\, Sanitär
+DESCRIPTION:Acheteur public : RWSG Regionale Wasserversorgung St. Gallen 
+ AG\nDélai de remise : 01.12.2026\, 18 h 00\nDans le registre : ht
+ tps://auftragsregister.ch/fr/auftrag/46da9531-a7d7-4b32-948d-6d992a4cfe54/
+ \nPublication officielle : https://www.simap.ch/fr/project-detail/46da95
+ 31-a7d7-4b32-948d-6d992a4cfe54
+URL:https://auftragsregister.ch/fr/auftrag/46da9531-a7d7-4b32-948d-6d992a4c
+ fe54/
+LOCATION:Goldach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Seewasserwerk Riet II\, Los 7: Heizung\, L
+ üftung\, Klima\, Sanitär
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

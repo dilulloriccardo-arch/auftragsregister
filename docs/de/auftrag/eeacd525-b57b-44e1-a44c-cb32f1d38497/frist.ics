@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eeacd525-b57b-44e1-a44c-cb32f1d38497-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Eingabefrist: Renforcement conduites GeniLac – Secteur P47
+DESCRIPTION:Auftraggeber: Services Industriels de Genève (SIG) - Direction
+  Achats\nEingabefrist: 23.11.2026\, 16.00 Uhr\nIm Register: https://auftr
+ agsregister.ch/de/auftrag/eeacd525-b57b-44e1-a44c-cb32f1d38497/\nAmtliche 
+ Publikation: https://www.simap.ch/de/project-detail/eeacd525-b57b-44e1-a44
+ c-cb32f1d38497
+URL:https://auftragsregister.ch/de/auftrag/eeacd525-b57b-44e1-a44c-cb32f1d3
+ 8497/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Renforcement conduites GeniLac – Secteur P47
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

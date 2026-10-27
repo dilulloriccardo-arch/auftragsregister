@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7b7bdd1d-da2f-460d-a7cb-1b456bf1c8ff-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:1
+DTSTART:20261109T225900Z
+SUMMARY:Submission deadline: N12.72 MP-160047 - Réf. Ponts Cucloz\, Denèv
+ e\, Saumont - Lot GC2 - Travaux de génie civil (ID 11895)
+DESCRIPTION:Public buyer: Office fédéral des routes OFROU\, Division Infr
+ astructure routière Ouest\, filiale Estavayer-le-Lac\nSubmission deadline
+ : 9 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/7b7bdd1d-da2f-460d-a7cb-1b456bf1c8ff/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/7b7bdd1d-da2f-460d-a7cb-1b456bf1c8ff
+URL:https://auftragsregister.ch/en/auftrag/7b7bdd1d-da2f-460d-a7cb-1b456bf1
+ c8ff/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: N12.72 MP-160047 - Réf. Ponts Cucloz\, De
+ nève\, Saumont - Lot GC2 - Travaux de génie civil (ID 11895)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

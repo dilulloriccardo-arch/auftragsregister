@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:38b52c01-34e6-4c8b-9311-7c4bcc0798a8-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Scadenza: FPO Chamoson - LOT 271.000 Plâtrerie - peinture
+DESCRIPTION:Ente pubblico: Foyer Pierre Olivier (Pragma Partenaires SA)\nSc
+ adenza: 06.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/a
+ uftrag/38b52c01-34e6-4c8b-9311-7c4bcc0798a8/\nPubblicazione ufficiale: htt
+ ps://www.simap.ch/it/project-detail/38b52c01-34e6-4c8b-9311-7c4bcc0798a8
+URL:https://auftragsregister.ch/it/auftrag/38b52c01-34e6-4c8b-9311-7c4bcc07
+ 98a8/
+LOCATION:Chamoson
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: FPO Chamoson - LOT 271.000 Plâtrerie - peinture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

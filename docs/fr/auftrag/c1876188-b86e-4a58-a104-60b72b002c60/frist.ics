@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c1876188-b86e-4a58-a104-60b72b002c60-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Délai de remise : BKP 250 Sanitäranlagen
+DESCRIPTION:Acheteur public : Baureag Architekten AG\nDélai de remise 
+ : 25.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/c1876188-b86e-4a58-a104-60b72b002c60/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/c1876188-b86e-4a58-a104-60b72
+ b002c60
+URL:https://auftragsregister.ch/fr/auftrag/c1876188-b86e-4a58-a104-60b72b00
+ 2c60/
+LOCATION:Birrwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 250 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

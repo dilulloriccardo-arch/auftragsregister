@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8575e40d-cf50-4efd-bd34-3f96e742a8d3-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T100000Z
+SUMMARY:Eingabefrist: 0241.301-51 - Comune di Lugano - Sistemazione area St
+ azione FFS – Comparto Besso - Installations CVCS
+DESCRIPTION:Auftraggeber: Ufficio delle commesse pubbliche e della programm
+ azione\nEingabefrist: 04.11.2026\, 11.00 Uhr\nIm Register: https://auftra
+ gsregister.ch/de/auftrag/8575e40d-cf50-4efd-bd34-3f96e742a8d3/\nAmtliche P
+ ublikation: https://www.simap.ch/de/project-detail/8575e40d-cf50-4efd-bd34
+ -3f96e742a8d3
+URL:https://auftragsregister.ch/de/auftrag/8575e40d-cf50-4efd-bd34-3f96e742
+ a8d3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 0241.301-51 - Comune di Lugano - Sistemazione are
+ a Stazione FFS – Comparto Besso - Installations CVCS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

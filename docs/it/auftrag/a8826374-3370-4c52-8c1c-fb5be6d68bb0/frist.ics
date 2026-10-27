@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a8826374-3370-4c52-8c1c-fb5be6d68bb0-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Scadenza: USZ Campus MITTE 1|2 / BKP 277.30 Reinraum (OV)
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 23.11.202
+ 6\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/a8826374-3
+ 370-4c52-8c1c-fb5be6d68bb0/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/a8826374-3370-4c52-8c1c-fb5be6d68bb0
+URL:https://auftragsregister.ch/it/auftrag/a8826374-3370-4c52-8c1c-fb5be6d6
+ 8bb0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: USZ Campus MITTE 1|2 / BKP 277.30 Reinraum (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

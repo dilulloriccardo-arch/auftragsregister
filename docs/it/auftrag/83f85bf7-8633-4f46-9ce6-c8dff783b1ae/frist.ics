@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83f85bf7-8633-4f46-9ce6-c8dff783b1ae-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:3
+DTSTART:20261116T110000Z
+SUMMARY:Scadenza: Préservation et valorisation du site de l’Amphithéât
+ re de Nyon
+DESCRIPTION:Ente pubblico: Service d’architecture de la Ville de Nyon\nSc
+ adenza: 16.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/a
+ uftrag/83f85bf7-8633-4f46-9ce6-c8dff783b1ae/\nPubblicazione ufficiale: htt
+ ps://www.simap.ch/it/project-detail/83f85bf7-8633-4f46-9ce6-c8dff783b1ae
+URL:https://auftragsregister.ch/it/auftrag/83f85bf7-8633-4f46-9ce6-c8dff783
+ b1ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Préservation et valorisation du site de l’Amphith
+ éâtre de Nyon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

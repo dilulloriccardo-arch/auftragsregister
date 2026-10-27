@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2db96e7a-5b0f-468e-a277-a95223bc98b4-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Délai de remise : Beschaffung Patientenportal
+DESCRIPTION:Acheteur public : Universitätsklinik Balgrist\nDélai de rem
+ ise : 20.11.2026\, 12 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/2db96e7a-5b0f-468e-a277-a95223bc98b4/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/2db96e7a-5b0f-468e-a277
+ -a95223bc98b4
+URL:https://auftragsregister.ch/fr/auftrag/2db96e7a-5b0f-468e-a277-a95223bc
+ 98b4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Beschaffung Patientenportal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

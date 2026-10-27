@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2939a91-bf47-4304-afc1-1b55c5d21984-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261119T150000Z
+SUMMARY:Scadenza: Beschaffung vier mobiler OP-Tische
+DESCRIPTION:Ente pubblico: Spital Davos AG\nScadenza: 19.11.2026\, 16:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/b2939a91-bf47-4304-afc
+ 1-1b55c5d21984/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/b2939a91-bf47-4304-afc1-1b55c5d21984
+URL:https://auftragsregister.ch/it/auftrag/b2939a91-bf47-4304-afc1-1b55c5d2
+ 1984/
+LOCATION:Davos Platz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung vier mobiler OP-Tische
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

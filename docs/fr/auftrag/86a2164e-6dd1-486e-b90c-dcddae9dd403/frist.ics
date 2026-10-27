@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86a2164e-6dd1-486e-b90c-dcddae9dd403-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:1
+DTSTART:20261104T110000Z
+SUMMARY:Délai de remise : Appel d'offres public pour des assurances resp
+ onsabilité civile professionnelle et de choses & biens
+DESCRIPTION:Acheteur public : HES-SO Genève - Service juridique\nDélai 
+ de remise : 04.11.2026\, 12 h 00\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/86a2164e-6dd1-486e-b90c-dcddae9dd403/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/86a2164e-6dd1-486
+ e-b90c-dcddae9dd403
+URL:https://auftragsregister.ch/fr/auftrag/86a2164e-6dd1-486e-b90c-dcddae9d
+ d403/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offres public pour des assurances 
+ responsabilité civile professionnelle et de choses & biens
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

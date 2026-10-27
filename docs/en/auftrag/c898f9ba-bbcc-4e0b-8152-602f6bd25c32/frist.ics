@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c898f9ba-bbcc-4e0b-8152-602f6bd25c32-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T225900Z
+SUMMARY:Submission deadline: (26232) 341 Nationale Referenzlaboratorien NRL
+  nach Lebensmittelgesetz LMG für die Periode 2027 – 2031
+DESCRIPTION:Public buyer: Bundesamt für Lebensmittelsicherheit und Veterin
+ ärwesen BLV\nSubmission deadline: 16 Nov 2026\, 23:59\nIn the register:
+  https://auftragsregister.ch/en/auftrag/c898f9ba-bbcc-4e0b-8152-602f6bd25c
+ 32/\nOfficial publication: https://www.simap.ch/en/project-detail/c898f9ba
+ -bbcc-4e0b-8152-602f6bd25c32
+URL:https://auftragsregister.ch/en/auftrag/c898f9ba-bbcc-4e0b-8152-602f6bd2
+ 5c32/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (26232) 341 Nationale Referenzlaboratorien
+  NRL nach Lebensmittelgesetz LMG für die Periode 2027 – 2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

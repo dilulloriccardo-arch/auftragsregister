@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4ca3e0e3-49f2-4d75-94cc-69eecb2b908c-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Eingabefrist: Sternenfeld Abbruch Gewerbebauten - BKP 11 Räumungen
+ \, Terrainvorbereitungen
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 02.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/4ca3e0e3-49f2-4d75-94cc-69eecb2b908c/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/4ca3e0e3-49f2-4d75-94cc-69eecb2b908c
+URL:https://auftragsregister.ch/de/auftrag/4ca3e0e3-49f2-4d75-94cc-69eecb2b
+ 908c/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sternenfeld Abbruch Gewerbebauten - BKP 11 Räumu
+ ngen\, Terrainvorbereitungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

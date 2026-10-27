@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49df9d47-0d41-4d9c-8789-26d443748ea4-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261207T100000Z
+SUMMARY:Scadenza: Remplacement de la conduite d’arrosage depuis l’Asse 
+ jusqu’à la zone industrielle du Bucleis\, Territoires de Nyon et Duilli
+ er
+DESCRIPTION:Ente pubblico: Syndicat d'Arrosage de Nyon et Environs SANE (Bo
+ vard & Fritsché SA)\nScadenza: 07.12.2026\, 11:00\nNel registro: https://
+ auftragsregister.ch/it/auftrag/49df9d47-0d41-4d9c-8789-26d443748ea4/\nPubb
+ licazione ufficiale: https://www.simap.ch/it/project-detail/49df9d47-0d41-
+ 4d9c-8789-26d443748ea4
+URL:https://auftragsregister.ch/it/auftrag/49df9d47-0d41-4d9c-8789-26d44374
+ 8ea4/
+LOCATION:Nyon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Remplacement de la conduite d’arrosage depuis l’A
+ sse jusqu’à la zone industrielle du Bucleis\, Territoires de Nyon et Du
+ illier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

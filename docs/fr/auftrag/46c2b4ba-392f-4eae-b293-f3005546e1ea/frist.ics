@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46c2b4ba-392f-4eae-b293-f3005546e1ea-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261108T225900Z
+SUMMARY:Délai de remise : Mandat Marktbearbeitung OSTWIND 2027-2029
+DESCRIPTION:Acheteur public : Genossenschaft Tarifverbund OSTWIND\nDélai
+  de remise : 08.11.2026\, 23 h 59\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/46c2b4ba-392f-4eae-b293-f3005546e1ea/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/46c2b4ba-392f-4e
+ ae-b293-f3005546e1ea
+URL:https://auftragsregister.ch/fr/auftrag/46c2b4ba-392f-4eae-b293-f3005546
+ e1ea/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mandat Marktbearbeitung OSTWIND 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

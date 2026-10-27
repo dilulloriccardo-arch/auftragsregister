@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c208afe-6af3-4faf-9695-f9a327efb2fd-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261110T110000Z
+SUMMARY:Délai de remise : Réfection des collecteurs secondaires - Rues 
+ de la Calle et du Bois Carrien et Avenue du Gros-Chêne à Onex
+DESCRIPTION:Acheteur public : Ville d'Onex - Service aménagement\nDélai
+  de remise : 10.11.2026\, 12 h 00\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/6c208afe-6af3-4faf-9695-f9a327efb2fd/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/6c208afe-6af3-4f
+ af-9695-f9a327efb2fd
+URL:https://auftragsregister.ch/fr/auftrag/6c208afe-6af3-4faf-9695-f9a327ef
+ b2fd/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Réfection des collecteurs secondaires - R
+ ues de la Calle et du Bois Carrien et Avenue du Gros-Chêne à Onex
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8e379626-aeec-4da4-948a-f04c5def4882-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261211T160000Z
+SUMMARY:Eingabefrist: Sanierung Fischgängigkeit / Sanierung Kraftwerke / E
+ rneuerung Konzession\, SIA Phasen 32-53
+DESCRIPTION:Auftraggeber: Nordstrom GmbH (HYCON GmbH)\nEingabefrist: 11.12.
+ 2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8e3
+ 79626-aeec-4da4-948a-f04c5def4882/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/8e379626-aeec-4da4-948a-f04c5def4882
+URL:https://auftragsregister.ch/de/auftrag/8e379626-aeec-4da4-948a-f04c5def
+ 4882/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Fischgängigkeit / Sanierung Kraftwerke
+  / Erneuerung Konzession\, SIA Phasen 32-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:861b6b73-01e9-4e9e-b5cd-1ad9b1653773-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Délai de remise : BAV 60500 SRZ Wache Süd\, Neubau - CFC 281.0 
+ Chapes et CFC 281.5 Dallages en pierre artificielle
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 02.11.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/861b6b73-01e9-4e9e-b5cd-1ad9b1653773/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/861b6b73-01e9-4e9e-b
+ 5cd-1ad9b1653773
+URL:https://auftragsregister.ch/fr/auftrag/861b6b73-01e9-4e9e-b5cd-1ad9b165
+ 3773/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 60500 SRZ Wache Süd\, Neubau - CFC 28
+ 1.0 Chapes et CFC 281.5 Dallages en pierre artificielle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5ceaff7-7715-4247-8568-be23d4b6441f-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: Bestattungsdienstleistungen
+DESCRIPTION:Ente pubblico: Stadt St.Gallen\, Bestattungsamt/Zivilstandsamt\
+ nScadenza: 09.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/e5ceaff7-7715-4247-8568-be23d4b6441f/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/e5ceaff7-7715-4247-8568-be23d4b6441
+ f
+URL:https://auftragsregister.ch/it/auftrag/e5ceaff7-7715-4247-8568-be23d4b6
+ 441f/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bestattungsdienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

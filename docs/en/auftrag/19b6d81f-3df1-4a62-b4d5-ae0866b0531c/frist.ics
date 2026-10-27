@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:19b6d81f-3df1-4a62-b4d5-ae0866b0531c-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T150000Z
+SUMMARY:Submission deadline: Commune de Villars-sur-Glâne - Rte du Fort-St
+ -Jacques - Mise en séparatif et renouvellement conduite d'eau potable
+DESCRIPTION:Public buyer: Commune de Villars-sur-Glâne ( Emch+Berger AG )\
+ nSubmission deadline: 10 Nov 2026\, 16:00\nIn the register: https://auft
+ ragsregister.ch/en/auftrag/19b6d81f-3df1-4a62-b4d5-ae0866b0531c/\nOfficial
+  publication: https://www.simap.ch/en/project-detail/19b6d81f-3df1-4a62-b4
+ d5-ae0866b0531c
+URL:https://auftragsregister.ch/en/auftrag/19b6d81f-3df1-4a62-b4d5-ae0866b0
+ 531c/
+LOCATION:Villars-sur-glâne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Commune de Villars-sur-Glâne - Rte du For
+ t-St-Jacques - Mise en séparatif et renouvellement conduite d'eau potable
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

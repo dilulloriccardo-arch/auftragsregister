@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1172532f-7b28-42ae-bb4d-9457ac228a94-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Délai de remise : Ausschreibung Personenversicherungen Gemeinde 
+ Domleschg 01.01.2027
+DESCRIPTION:Acheteur public : Gemeinde Domleschg (ASSEPRO Brokerage AG)\n
+ Délai de remise : 09.11.2026\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/1172532f-7b28-42ae-bb4d-9457ac228a94/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/1172532f-7b28-42ae-bb4d-
+ 9457ac228a94
+URL:https://auftragsregister.ch/fr/auftrag/1172532f-7b28-42ae-bb4d-9457ac22
+ 8a94/
+LOCATION:Tomils
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung Personenversicherungen Gemei
+ nde Domleschg 01.01.2027
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

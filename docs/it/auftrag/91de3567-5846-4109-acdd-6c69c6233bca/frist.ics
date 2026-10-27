@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:91de3567-5846-4109-acdd-6c69c6233bca-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261106T160000Z
+SUMMARY:Scadenza: Heizungsersatz Wohnsiedlung Riedtli\, 8006 Zürich
+DESCRIPTION:Ente pubblico: Liegenschaften Stadt Zürich (LSZ)\nScadenza: 06
+ .11.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/91d
+ e3567-5846-4109-acdd-6c69c6233bca/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/91de3567-5846-4109-acdd-6c69c6233bca
+URL:https://auftragsregister.ch/it/auftrag/91de3567-5846-4109-acdd-6c69c623
+ 3bca/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Heizungsersatz Wohnsiedlung Riedtli\, 8006 Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

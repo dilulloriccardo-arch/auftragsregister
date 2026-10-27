@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87e00b69-2793-4170-9f4c-78a6e0ddc79e-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Scadenza: Acquisition d'une balayeuse électrique pour trottoirs
+DESCRIPTION:Ente pubblico: Ville de Gland (Hymexia Sàrl)\nScadenza: 06.11.
+ 2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/87e00b6
+ 9-2793-4170-9f4c-78a6e0ddc79e/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/87e00b69-2793-4170-9f4c-78a6e0ddc79e
+URL:https://auftragsregister.ch/it/auftrag/87e00b69-2793-4170-9f4c-78a6e0dd
+ c79e/
+LOCATION:Gland
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Acquisition d'une balayeuse électrique pour trottoir
+ s
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

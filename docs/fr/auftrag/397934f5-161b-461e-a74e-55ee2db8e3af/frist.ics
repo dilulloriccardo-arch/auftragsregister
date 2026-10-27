@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:397934f5-161b-461e-a74e-55ee2db8e3af-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261124T100000Z
+SUMMARY:Délai de remise : REMISE EN ETAT DU RESEAU D'ASSAINISSEMENT / RE
+ FECTION DE CHAUSSEE
+DESCRIPTION:Acheteur public : Ville d'Onex (iDTech Sàrl)\nDélai de remi
+ se : 24.11.2026\, 11 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/397934f5-161b-461e-a74e-55ee2db8e3af/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/397934f5-161b-461e-a74e-
+ 55ee2db8e3af
+URL:https://auftragsregister.ch/fr/auftrag/397934f5-161b-461e-a74e-55ee2db8
+ e3af/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : REMISE EN ETAT DU RESEAU D'ASSAINISSEMENT 
+ / REFECTION DE CHAUSSEE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

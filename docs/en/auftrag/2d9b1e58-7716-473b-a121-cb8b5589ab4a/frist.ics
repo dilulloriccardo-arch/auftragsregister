@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2d9b1e58-7716-473b-a121-cb8b5589ab4a-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261109T225900Z
+SUMMARY:Submission deadline: Client-Hardware
+DESCRIPTION:Public buyer: Switch\nSubmission deadline: 9 Nov 2026\, 23:59
+ \nIn the register: https://auftragsregister.ch/en/auftrag/2d9b1e58-7716-47
+ 3b-a121-cb8b5589ab4a/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/2d9b1e58-7716-473b-a121-cb8b5589ab4a
+URL:https://auftragsregister.ch/en/auftrag/2d9b1e58-7716-473b-a121-cb8b5589
+ ab4a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Client-Hardware
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

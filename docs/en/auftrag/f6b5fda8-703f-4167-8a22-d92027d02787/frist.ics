@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f6b5fda8-703f-4167-8a22-d92027d02787-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261031T225900Z
+SUMMARY:Submission deadline: Baumeisterarbeiten Urtenen Schönbühl Sanieru
+ ng FGS Hindelbankstrasse Trottoirüberfahrt Schützenweg
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Bern\nSubmission deadline:
+  31 Oct 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/f6b5fda8-703f-4167-8a22-d92027d02787/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/f6b5fda8-703f-4167-8a22-d92027d02787
+URL:https://auftragsregister.ch/en/auftrag/f6b5fda8-703f-4167-8a22-d92027d0
+ 2787/
+LOCATION:Urtenen-Schönbühl
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Baumeisterarbeiten Urtenen Schönbühl San
+ ierung FGS Hindelbankstrasse Trottoirüberfahrt Schützenweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

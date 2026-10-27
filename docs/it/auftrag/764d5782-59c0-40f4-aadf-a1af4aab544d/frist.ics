@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:764d5782-59c0-40f4-aadf-a1af4aab544d-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Scadenza: Bauherrenunterstützung und Projektmanagement Office BHU/
+ PMO für das Projekt "Sirius3 – Zentrales Aus- und Weiterbildungszentrum
+  für Feuerwehr\, Zivilschutz und Kantonspolizei
+DESCRIPTION:Ente pubblico: Gebäudeversicherung Bern (GVB)\nScadenza: 02.11
+ .2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/764d57
+ 82-59c0-40f4-aadf-a1af4aab544d/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/764d5782-59c0-40f4-aadf-a1af4aab544d
+URL:https://auftragsregister.ch/it/auftrag/764d5782-59c0-40f4-aadf-a1af4aab
+ 544d/
+LOCATION:Ittigen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bauherrenunterstützung und Projektmanagement Office 
+ BHU/PMO für das Projekt "Sirius3 – Zentrales Aus- und Weiterbildungszen
+ trum für Feuerwehr\, Zivilschutz und Kantonspolizei
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

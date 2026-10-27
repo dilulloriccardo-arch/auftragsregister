@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab744ea5-82f4-441b-a17f-47547fb7dbf2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : SKP 230 Elektroanlagen RIGG 1. UG und 2. UG S
+ ÜD IS Haustechnik
+DESCRIPTION:Acheteur public : Insel Gruppe AG\nDélai de remise : 30.11
+ .2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/ab744ea5-82f4-441b-a17f-47547fb7dbf2/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/ab744ea5-82f4-441b-a17f-47547fb7dbf2
+URL:https://auftragsregister.ch/fr/auftrag/ab744ea5-82f4-441b-a17f-47547fb7
+ dbf2/
+LOCATION:Riggisberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : SKP 230 Elektroanlagen RIGG 1. UG und 2. U
+ G SÜD IS Haustechnik
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

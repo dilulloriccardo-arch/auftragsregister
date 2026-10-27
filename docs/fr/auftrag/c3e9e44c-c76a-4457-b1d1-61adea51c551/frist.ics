@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c3e9e44c-c76a-4457-b1d1-61adea51c551-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261111T090000Z
+SUMMARY:Délai de remise : STEP de Zimmerberg - CFC 650\, installations d
+ e gaz
+DESCRIPTION:Acheteur public : Zweckverband ARA Zimmerberg\nDélai de remi
+ se : 11.11.2026\, 10 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/c3e9e44c-c76a-4457-b1d1-61adea51c551/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/c3e9e44c-c76a-4457-b1d1-
+ 61adea51c551
+URL:https://auftragsregister.ch/fr/auftrag/c3e9e44c-c76a-4457-b1d1-61adea51
+ c551/
+LOCATION:Thalwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : STEP de Zimmerberg - CFC 650\, installatio
+ ns de gaz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

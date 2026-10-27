@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e81859c-7b0f-4cb5-b0ee-986fee4db612-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261202T103000Z
+SUMMARY:Eingabefrist: Neubau Schul-\, Sport- und Freizeitanlage Maihof I BK
+ P 259 I Sprinkleranlage
+DESCRIPTION:Auftraggeber: Gemeinde Feusisberg\nEingabefrist: 02.12.2026\, 1
+ 1.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/6e81859c-7b
+ 0f-4cb5-b0ee-986fee4db612/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/6e81859c-7b0f-4cb5-b0ee-986fee4db612
+URL:https://auftragsregister.ch/de/auftrag/6e81859c-7b0f-4cb5-b0ee-986fee4d
+ b612/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Schul-\, Sport- und Freizeitanlage Maihof 
+ I BKP 259 I Sprinkleranlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

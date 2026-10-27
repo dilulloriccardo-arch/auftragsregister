@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0bc7748c-33da-4913-a14c-5790fb180776-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Eingabefrist: Prestations d’appui stratégique et méthodologique
+ \, d’accompagnement organisationnel et de réalisation de projets pour l
+ a mise en œuvre de la stratégie cantonale de la géoinformation - pério
+ de 2027-2029
+DESCRIPTION:Auftraggeber: Direction de l'information du territoire\nEingabe
+ frist: 16.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/0bc7748c-33da-4913-a14c-5790fb180776/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/0bc7748c-33da-4913-a14c-5790fb180776
+URL:https://auftragsregister.ch/de/auftrag/0bc7748c-33da-4913-a14c-5790fb18
+ 0776/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Prestations d’appui stratégique et méthodolog
+ ique\, d’accompagnement organisationnel et de réalisation de projets po
+ ur la mise en œuvre de la stratégie cantonale de la géoinformation - p
+ ériode 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2dcba10b-5b7f-47b9-94e7-e2b56294afb4-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20270205T140000Z
+SUMMARY:Délai de remise : HUG - Pôle Thérapeutique Opéra - Entrepr
+ ise Totale
+DESCRIPTION:Acheteur public : Centrale d'achats et d'ingénierie biomédi
+ cale Vaud-Genève (CAIB)\nDélai de remise : 05.02.2027\, 15 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/2dcba10b-5b7f-4
+ 7b9-94e7-e2b56294afb4/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/2dcba10b-5b7f-47b9-94e7-e2b56294afb4
+URL:https://auftragsregister.ch/fr/auftrag/2dcba10b-5b7f-47b9-94e7-e2b56294
+ afb4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : HUG - Pôle Thérapeutique Opéra - Ent
+ reprise Totale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

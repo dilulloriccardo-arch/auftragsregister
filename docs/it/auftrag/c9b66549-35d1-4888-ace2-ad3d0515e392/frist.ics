@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9b66549-35d1-4888-ace2-ad3d0515e392-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261028T100000Z
+SUMMARY:Scadenza: Lausanne 30-32 (2338) Rénovations des installations éle
+ ctriques
+DESCRIPTION:Ente pubblico: Unité soumissions - Département de l'aménagem
+ ent\, des constructions et de la mobilité (DACM) de la Ville de Genève\n
+ Scadenza: 28.10.2026\, 11:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/c9b66549-35d1-4888-ace2-ad3d0515e392/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/c9b66549-35d1-4888-ace2-ad3d0515e392
+URL:https://auftragsregister.ch/it/auftrag/c9b66549-35d1-4888-ace2-ad3d0515
+ e392/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Lausanne 30-32 (2338) Rénovations des installations 
+ électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

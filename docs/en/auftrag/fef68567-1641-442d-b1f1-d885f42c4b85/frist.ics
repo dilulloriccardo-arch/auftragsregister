@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fef68567-1641-442d-b1f1-d885f42c4b85-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Submission deadline: **Schlosstal Clinic – Tender for General Pla
+ nning Services for the Complete Renovation of the Production Kitchen**
+DESCRIPTION:Public buyer: Integrierte Psychiatrie Winterthur\nSubmission de
+ adline: 17 Nov 2026\, 12:00\nIn the register: https://auftragsregister.c
+ h/en/auftrag/fef68567-1641-442d-b1f1-d885f42c4b85/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/fef68567-1641-442d-b1f1-d885f42c4b8
+ 5
+URL:https://auftragsregister.ch/en/auftrag/fef68567-1641-442d-b1f1-d885f42c
+ 4b85/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: **Schlosstal Clinic – Tender for General
+  Planning Services for the Complete Renovation of the Production Kitchen**
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

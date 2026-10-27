@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7c9aa152-477c-43ed-be42-854d98ef8253-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Submission deadline: Schulraumerweiterung Primarschule Metzerlen-Ma
+ riastein\, Neubau Holzmodulbau als Generalunternehmerleistung
+DESCRIPTION:Public buyer: Einwohnergemeinde Metzerlen-Mariastein\nSubmissio
+ n deadline: 13 Nov 2026\, 12:00\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/7c9aa152-477c-43ed-be42-854d98ef8253/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/7c9aa152-477c-43ed-be42-854d98e
+ f8253
+URL:https://auftragsregister.ch/en/auftrag/7c9aa152-477c-43ed-be42-854d98ef
+ 8253/
+LOCATION:Metzerlen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schulraumerweiterung Primarschule Metzerle
+ n-Mariastein\, Neubau Holzmodulbau als Generalunternehmerleistung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

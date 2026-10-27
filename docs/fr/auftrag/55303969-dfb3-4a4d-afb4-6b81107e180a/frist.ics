@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:55303969-dfb3-4a4d-afb4-6b81107e180a-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261204T123000Z
+SUMMARY:Délai de remise : Construction d'une nouvelle salle de sport dou
+ ble avec locaux scolaires – Fenêtres en bois-métal (CFC 221.1)
+DESCRIPTION:Acheteur public : Politische Gemeinde Gommiswald\nDélai de r
+ emise : 04.12.2026\, 13 h 30\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/55303969-dfb3-4a4d-afb4-6b81107e180a/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/55303969-dfb3-4a4d-af
+ b4-6b81107e180a
+URL:https://auftragsregister.ch/fr/auftrag/55303969-dfb3-4a4d-afb4-6b81107e
+ 180a/
+LOCATION:Gommiswald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction d'une nouvelle salle de sport
+  double avec locaux scolaires – Fenêtres en bois-métal (CFC 221.1)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

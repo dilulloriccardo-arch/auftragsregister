@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf1c8d91-725c-4afb-8263-14d3f4225c65-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Submission deadline: Projekt Mitholz: Räumung ehemaliges Munitions
+ lager\, Testanlage Materialbewirtschaftung
+DESCRIPTION:Public buyer: armasuisse Immobilien\nSubmission deadline: 7 De
+ c 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/c
+ f1c8d91-725c-4afb-8263-14d3f4225c65/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/cf1c8d91-725c-4afb-8263-14d3f4225c65
+URL:https://auftragsregister.ch/en/auftrag/cf1c8d91-725c-4afb-8263-14d3f422
+ 5c65/
+LOCATION:Mitholz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Projekt Mitholz: Räumung ehemaliges Munit
+ ionslager\, Testanlage Materialbewirtschaftung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8a64e9c-30b9-42f6-afea-984280cf117e-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261126T225900Z
+SUMMARY:Scadenza: 748 Valserstrasse Hohe Brücke Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 26.11.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/e8a64e9c-30b9-4
+ 2f6-afea-984280cf117e/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/e8a64e9c-30b9-42f6-afea-984280cf117e
+URL:https://auftragsregister.ch/it/auftrag/e8a64e9c-30b9-42f6-afea-984280cf
+ 117e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 748 Valserstrasse Hohe Brücke Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

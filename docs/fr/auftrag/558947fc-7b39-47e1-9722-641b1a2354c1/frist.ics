@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:558947fc-7b39-47e1-9722-641b1a2354c1-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Délai de remise : BKP 378 Bühnentechnik
+DESCRIPTION:Acheteur public : Baureag Architekten AG\nDélai de remise 
+ : 25.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/558947fc-7b39-47e1-9722-641b1a2354c1/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/558947fc-7b39-47e1-9722-641b1
+ a2354c1
+URL:https://auftragsregister.ch/fr/auftrag/558947fc-7b39-47e1-9722-641b1a23
+ 54c1/
+LOCATION:Birrwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 378 Bühnentechnik
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

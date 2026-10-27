@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:866e449e-627f-417b-8994-4f00ec7e8c9e-frist@auftragsregister.ch
+DTSTAMP:20260904T000000Z
+SEQUENCE:0
+DTSTART:20261030T150000Z
+SUMMARY:Eingabefrist: MP-150045 N13 Gesamtsanierung Werkhof Thusis – Sani
+ erung Verwaltungsgebäude – Generalplaner
+DESCRIPTION:Auftraggeber: Ufficio federale delle strade USTRA\, divisione i
+ nfrastruttura stradale Est\nEingabefrist: 30.10.2026\, 16.00 Uhr\nIm Regi
+ ster: https://auftragsregister.ch/de/auftrag/866e449e-627f-417b-8994-4f00e
+ c7e8c9e/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/866
+ e449e-627f-417b-8994-4f00ec7e8c9e
+URL:https://auftragsregister.ch/de/auftrag/866e449e-627f-417b-8994-4f00ec7e
+ 8c9e/
+LOCATION:Thusis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-150045 N13 Gesamtsanierung Werkhof Thusis – 
+ Sanierung Verwaltungsgebäude – Generalplaner
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

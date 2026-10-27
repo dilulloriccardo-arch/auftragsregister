@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f4cfb91c-3320-4c3f-ba10-4824371653fc-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261030T100000Z
+SUMMARY:Délai de remise : Sanierung Bahnstrasse - Tiefbauarbeiten
+DESCRIPTION:Acheteur public : Gemeinde Regensdorf\nDélai de remise : 3
+ 0.10.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/f4cfb91c-3320-4c3f-ba10-4824371653fc/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/f4cfb91c-3320-4c3f-ba10-482437
+ 1653fc
+URL:https://auftragsregister.ch/fr/auftrag/f4cfb91c-3320-4c3f-ba10-48243716
+ 53fc/
+LOCATION:Regensdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Bahnstrasse - Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

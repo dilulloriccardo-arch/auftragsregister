@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b245d65-800b-4a7d-940d-223d8fc9aac3-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Eingabefrist: USZ Campus MITTE 1|2 / BKP 283.14 Deckenbekleidungen 
+ aus Gips - Los 4 (OV)
+DESCRIPTION:Auftraggeber: Universitätsspital Zürich\nEingabefrist: 14.12.
+ 2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/4b2
+ 45d65-800b-4a7d-940d-223d8fc9aac3/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/4b245d65-800b-4a7d-940d-223d8fc9aac3
+URL:https://auftragsregister.ch/de/auftrag/4b245d65-800b-4a7d-940d-223d8fc9
+ aac3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: USZ Campus MITTE 1|2 / BKP 283.14 Deckenbekleidun
+ gen aus Gips - Los 4 (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

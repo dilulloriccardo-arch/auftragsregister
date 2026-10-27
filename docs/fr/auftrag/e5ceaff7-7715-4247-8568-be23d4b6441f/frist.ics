@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5ceaff7-7715-4247-8568-be23d4b6441f-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : Services funéraires
+DESCRIPTION:Acheteur public : Stadt St.Gallen\, Bestattungsamt/Zivilstand
+ samt\nDélai de remise : 09.11.2026\, 16 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/e5ceaff7-7715-4247-8568-be23d4b6441
+ f/\nPublication officielle : https://www.simap.ch/fr/project-detail/e5ce
+ aff7-7715-4247-8568-be23d4b6441f
+URL:https://auftragsregister.ch/fr/auftrag/e5ceaff7-7715-4247-8568-be23d4b6
+ 441f/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Services funéraires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

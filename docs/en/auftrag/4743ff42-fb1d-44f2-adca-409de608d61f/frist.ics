@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4743ff42-fb1d-44f2-adca-409de608d61f-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261028T160000Z
+SUMMARY:Submission deadline: Sanierung Bodensee-Arena Leistungsofferte Trag
+ werksplanung Massiv- und Holzbau
+DESCRIPTION:Public buyer: Stadt Kreuzlingen\nSubmission deadline: 28 Oct 
+ 2026\, 17:00\nIn the register: https://auftragsregister.ch/en/auftrag/4743
+ ff42-fb1d-44f2-adca-409de608d61f/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/4743ff42-fb1d-44f2-adca-409de608d61f
+URL:https://auftragsregister.ch/en/auftrag/4743ff42-fb1d-44f2-adca-409de608
+ d61f/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Bodensee-Arena Leistungsofferte 
+ Tragwerksplanung Massiv- und Holzbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

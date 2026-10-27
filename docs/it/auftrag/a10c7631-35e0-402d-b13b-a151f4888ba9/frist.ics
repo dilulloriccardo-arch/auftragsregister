@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a10c7631-35e0-402d-b13b-a151f4888ba9-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261112T130000Z
+SUMMARY:Scadenza: BKP 214 Holzbau Weisses Schulhaus Schulanlage 3422 Alchen
+ flüh
+DESCRIPTION:Ente pubblico: Atelier GSW Partner AG\nScadenza: 12.11.2026\, 1
+ 4:00\nNel registro: https://auftragsregister.ch/it/auftrag/a10c7631-35e0-4
+ 02d-b13b-a151f4888ba9/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/a10c7631-35e0-402d-b13b-a151f4888ba9
+URL:https://auftragsregister.ch/it/auftrag/a10c7631-35e0-402d-b13b-a151f488
+ 8ba9/
+LOCATION:Rüdtligen- Alchenflüh
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 214 Holzbau Weisses Schulhaus Schulanlage 3422 Al
+ chenflüh
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

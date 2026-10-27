@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:82e74666-d522-449b-9c2e-316eededef46-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Scadenza: Mandat pour l’accompagnement du maître d’ouvrage (AM
+ O)
+DESCRIPTION:Ente pubblico: Hôpital du Jura Infrastructures SA\nScadenza: 0
+ 4.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/82
+ e74666-d522-449b-9c2e-316eededef46/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/82e74666-d522-449b-9c2e-316eededef46
+URL:https://auftragsregister.ch/it/auftrag/82e74666-d522-449b-9c2e-316eeded
+ ef46/
+LOCATION:Delémont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mandat pour l’accompagnement du maître d’ouvrage
+  (AMO)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

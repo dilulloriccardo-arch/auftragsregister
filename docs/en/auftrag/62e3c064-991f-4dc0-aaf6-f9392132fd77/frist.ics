@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62e3c064-991f-4dc0-aaf6-f9392132fd77-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Submission deadline: Werkleitungs- und Oberbausanierung Hardstrasse
+  - Ahornweg
+DESCRIPTION:Public buyer: Einwohnergemeinde Wettingen. Abteilung Bau und Pl
+ anung\nSubmission deadline: 20 Nov 2026\, 11:00\nIn the register: https:
+ //auftragsregister.ch/en/auftrag/62e3c064-991f-4dc0-aaf6-f9392132fd77/\nOf
+ ficial publication: https://www.simap.ch/en/project-detail/62e3c064-991f-4
+ dc0-aaf6-f9392132fd77
+URL:https://auftragsregister.ch/en/auftrag/62e3c064-991f-4dc0-aaf6-f9392132
+ fd77/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Werkleitungs- und Oberbausanierung Hardstr
+ asse - Ahornweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81690f20-ffa3-495e-a7a1-38a1b1a5710d-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261105T140000Z
+SUMMARY:Délai de remise : Plantahof: Trakt A – Verwaltungsgebäude\, e
+ nergetische Sanierung Erweiterung West\, 7302 Landquart / BKP 222\, 224 Sp
+ engler- und Bedachungsarbeiten
+DESCRIPTION:Acheteur public : Hochbauamt Graubünden\nDélai de remise 
+ : 05.11.2026\, 15 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/81690f20-ffa3-495e-a7a1-38a1b1a5710d/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/81690f20-ffa3-495e-a7a1-38a1b
+ 1a5710d
+URL:https://auftragsregister.ch/fr/auftrag/81690f20-ffa3-495e-a7a1-38a1b1a5
+ 710d/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Plantahof: Trakt A – Verwaltungsgebäude
+ \, energetische Sanierung Erweiterung West\, 7302 Landquart / BKP 222\, 22
+ 4 Spengler- und Bedachungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

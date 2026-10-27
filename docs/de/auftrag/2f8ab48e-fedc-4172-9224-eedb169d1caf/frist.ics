@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2f8ab48e-fedc-4172-9224-eedb169d1caf-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261116T110026Z
+SUMMARY:Eingabefrist: Server Hardware
+DESCRIPTION:Auftraggeber: Schweizer Paraplegiker Zentrum\nEingabefrist: 16.
+ 11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ 2f8ab48e-fedc-4172-9224-eedb169d1caf/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/2f8ab48e-fedc-4172-9224-eedb169d1caf
+URL:https://auftragsregister.ch/de/auftrag/2f8ab48e-fedc-4172-9224-eedb169d
+ 1caf/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Server Hardware
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

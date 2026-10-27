@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2d51194-fdde-453b-9e90-a94d02a9f552-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T160000Z
+SUMMARY:Submission deadline: Gesamtsanierung Schulanlage Pestalozzi Stans\,
+  BKP 240 Heizungs- und Kälteanlagen
+DESCRIPTION:Public buyer: Politische Gemeinde Stans\nSubmission deadline: 1
+ 8 Nov 2026\, 17:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/b2d51194-fdde-453b-9e90-a94d02a9f552/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/b2d51194-fdde-453b-9e90-a94d02a9f552
+URL:https://auftragsregister.ch/en/auftrag/b2d51194-fdde-453b-9e90-a94d02a9
+ f552/
+LOCATION:Stans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gesamtsanierung Schulanlage Pestalozzi Sta
+ ns\, BKP 240 Heizungs- und Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

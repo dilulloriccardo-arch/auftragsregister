@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:31c40b26-5b42-4892-8004-2b7b183376ea-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Délai de remise : MP-150016\, N02\, EP Arsenal – Hergiswil\, y
+  compris extension sud\, lot ARHE BSA-2.03 Fourniture d’éclairage
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3\nDélai de remise : 23.11.2026\, 23 h 5
+ 9\nDans le registre : https://auftragsregister.ch/fr/auftrag/31c40b26-5b
+ 42-4892-8004-2b7b183376ea/\nPublication officielle : https://www.simap.c
+ h/fr/project-detail/31c40b26-5b42-4892-8004-2b7b183376ea
+URL:https://auftragsregister.ch/fr/auftrag/31c40b26-5b42-4892-8004-2b7b1833
+ 76ea/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-150016\, N02\, EP Arsenal – Hergiswil
+ \, y compris extension sud\, lot ARHE BSA-2.03 Fourniture d’éclairage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

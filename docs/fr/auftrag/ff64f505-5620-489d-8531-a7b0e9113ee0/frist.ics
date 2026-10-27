@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff64f505-5620-489d-8531-a7b0e9113ee0-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261126T100000Z
+SUMMARY:Délai de remise : La Sarraz - "Route de la Bruyère" : Mise en s
+ éparatif\, équipements et aménagements routiers
+DESCRIPTION:Acheteur public : Commune de La Sarraz (DTP SA Bureau d'étud
+ es)\nDélai de remise : 26.11.2026\, 11 h 00\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/ff64f505-5620-489d-8531-a7b0e9113ee0
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/ff64f
+ 505-5620-489d-8531-a7b0e9113ee0
+URL:https://auftragsregister.ch/fr/auftrag/ff64f505-5620-489d-8531-a7b0e911
+ 3ee0/
+LOCATION:La Sarraz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : La Sarraz - "Route de la Bruyère" : Mise 
+ en séparatif\, équipements et aménagements routiers
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

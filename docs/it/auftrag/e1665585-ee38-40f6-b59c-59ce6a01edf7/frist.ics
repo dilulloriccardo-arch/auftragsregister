@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1665585-ee38-40f6-b59c-59ce6a01edf7-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:1
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Scadenza: BKP 250 Sanitäranlagen - APB-000274-30 Thun\, Polygon\, 
+ Sanierung Gebäudehülle Haustechnik
+DESCRIPTION:Ente pubblico: armasuisse Immobilien\nScadenza: 31.10.2026\nNel
+  registro: https://auftragsregister.ch/it/auftrag/e1665585-ee38-40f6-b59c-
+ 59ce6a01edf7/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/e1665585-ee38-40f6-b59c-59ce6a01edf7
+URL:https://auftragsregister.ch/it/auftrag/e1665585-ee38-40f6-b59c-59ce6a01
+ edf7/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 250 Sanitäranlagen - APB-000274-30 Thun\, Polygo
+ n\, Sanierung Gebäudehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

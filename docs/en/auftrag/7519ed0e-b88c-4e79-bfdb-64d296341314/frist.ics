@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7519ed0e-b88c-4e79-bfdb-64d296341314-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Submission deadline: Transports scolaires
+DESCRIPTION:Public buyer: Commune de Val-de-Ruz\nSubmission deadline: 9 No
+ v 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/7
+ 519ed0e-b88c-4e79-bfdb-64d296341314/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/7519ed0e-b88c-4e79-bfdb-64d296341314
+URL:https://auftragsregister.ch/en/auftrag/7519ed0e-b88c-4e79-bfdb-64d29634
+ 1314/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Transports scolaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

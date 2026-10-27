@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fef68567-1641-442d-b1f1-d885f42c4b85-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Eingabefrist: Klinik Schlosstal – Ausschreibung von Generalplaner
+ leistungen für die Gesamterneuerung der Produktionsküche
+DESCRIPTION:Auftraggeber: Integrierte Psychiatrie Winterthur\nEingabefrist:
+  17.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/fef68567-1641-442d-b1f1-d885f42c4b85/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/fef68567-1641-442d-b1f1-d885f42c4b85
+URL:https://auftragsregister.ch/de/auftrag/fef68567-1641-442d-b1f1-d885f42c
+ 4b85/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Klinik Schlosstal – Ausschreibung von Generalpl
+ anerleistungen für die Gesamterneuerung der Produktionsküche
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

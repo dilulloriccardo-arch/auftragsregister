@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9002bb88-477d-49cc-97ff-0ea9f040eb0c-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261103T090000Z
+SUMMARY:Eingabefrist: Umbau Reservoir Feumet - Rohrleitungsbau
+DESCRIPTION:Auftraggeber: Gemeinde Maur - Tiefbau\nEingabefrist: 03.11.2026
+ \, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9002bb8
+ 8-477d-49cc-97ff-0ea9f040eb0c/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/9002bb88-477d-49cc-97ff-0ea9f040eb0c
+URL:https://auftragsregister.ch/de/auftrag/9002bb88-477d-49cc-97ff-0ea9f040
+ eb0c/
+LOCATION:Maur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Umbau Reservoir Feumet - Rohrleitungsbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

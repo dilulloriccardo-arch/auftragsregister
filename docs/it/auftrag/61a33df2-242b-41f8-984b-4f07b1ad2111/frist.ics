@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61a33df2-242b-41f8-984b-4f07b1ad2111-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Scadenza: MP-260000 Gesamterneuerung Osttangente Basel / Bauherrenu
+ nterstützung Erhaltungskonzept
+DESCRIPTION:Ente pubblico: Eidgenössisches Departement für Umwelt\, Verke
+ hr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung 
+ Strasseninfrastruktur-Ost - F3\nScadenza: 09.11.2026\, 23:59\nNel registro
+ : https://auftragsregister.ch/it/auftrag/61a33df2-242b-41f8-984b-4f07b1ad2
+ 111/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/61a3
+ 3df2-242b-41f8-984b-4f07b1ad2111
+URL:https://auftragsregister.ch/it/auftrag/61a33df2-242b-41f8-984b-4f07b1ad
+ 2111/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-260000 Gesamterneuerung Osttangente Basel / Bauher
+ renunterstützung Erhaltungskonzept
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

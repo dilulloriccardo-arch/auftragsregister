@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0926077b-3b13-4422-b64b-016a35769eeb-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: Ausschreibung Elektroinstallationen / Elektrikerarbeiten 
+ / Reparaturen und Instandhaltung – KAT.004
+DESCRIPTION:Ente pubblico: ETHOS Immobilien GmbH\nScadenza: 09.11.2026\, 16
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/0926077b-3b13-44
+ 22-b64b-016a35769eeb/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/0926077b-3b13-4422-b64b-016a35769eeb
+URL:https://auftragsregister.ch/it/auftrag/0926077b-3b13-4422-b64b-016a3576
+ 9eeb/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung Elektroinstallationen / Elektrikerarbei
+ ten / Reparaturen und Instandhaltung – KAT.004
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

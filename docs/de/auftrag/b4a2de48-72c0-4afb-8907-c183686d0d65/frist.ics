@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4a2de48-72c0-4afb-8907-c183686d0d65-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Eingabefrist: Regenüberlaufbecken\, Weyermannshaus\, 211 Baumeiste
+ rarbeiten\, TP1: Regenbecken und Stöckackerstrasse
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 15.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/b4a2de48-72c0-4afb-8907-c183686d0d65/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/b4a2de48-72c0-4afb-8907-c183686d0d65
+URL:https://auftragsregister.ch/de/auftrag/b4a2de48-72c0-4afb-8907-c183686d
+ 0d65/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Regenüberlaufbecken\, Weyermannshaus\, 211 Baume
+ isterarbeiten\, TP1: Regenbecken und Stöckackerstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

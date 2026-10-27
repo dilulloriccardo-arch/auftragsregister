@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:adf646da-b897-4b98-ba65-5b759e3fc8d2-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261127T100000Z
+SUMMARY:Délai de remise : Chemin des Rochettes - Réfection infrastructu
+ res - Travaux de génie civil
+DESCRIPTION:Acheteur public : Commune de Laténa\nDélai de remise : 27
+ .11.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/adf646da-b897-4b98-ba65-5b759e3fc8d2/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/adf646da-b897-4b98-ba65-5b759e3fc
+ 8d2
+URL:https://auftragsregister.ch/fr/auftrag/adf646da-b897-4b98-ba65-5b759e3f
+ c8d2/
+LOCATION:Saint-Blaise
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Chemin des Rochettes - Réfection infrastr
+ uctures - Travaux de génie civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

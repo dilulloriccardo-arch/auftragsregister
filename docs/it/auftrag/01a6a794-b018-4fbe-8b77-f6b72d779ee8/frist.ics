@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:01a6a794-b018-4fbe-8b77-f6b72d779ee8-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261119T225900Z
+SUMMARY:Scadenza: Gymnasium Neufeld - Beschaffung Displays Schänzlihalde
+DESCRIPTION:Ente pubblico: Gymnasium Neufeld (reflecta ag)\nScadenza: 19.11
+ .2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/01a6a7
+ 94-b018-4fbe-8b77-f6b72d779ee8/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/01a6a794-b018-4fbe-8b77-f6b72d779ee8
+URL:https://auftragsregister.ch/it/auftrag/01a6a794-b018-4fbe-8b77-f6b72d77
+ 9ee8/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gymnasium Neufeld - Beschaffung Displays Schänzlihal
+ de
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

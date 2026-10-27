@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:21b91ff5-ee59-44a7-af86-b5439b97e734-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Délai de remise : Assurance de biens (bâtiments et équipements
+  d'exploitation) de la commune de Zollikon
+DESCRIPTION:Acheteur public : Gemeinde Zollikon (Walser Consulting AG)\nD
+ élai de remise : 02.11.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/21b91ff5-ee59-44a7-af86-b5439b97e734/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/21b91ff5-ee
+ 59-44a7-af86-b5439b97e734
+URL:https://auftragsregister.ch/fr/auftrag/21b91ff5-ee59-44a7-af86-b5439b97
+ e734/
+LOCATION:Rüschlikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assurance de biens (bâtiments et équipem
+ ents d'exploitation) de la commune de Zollikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

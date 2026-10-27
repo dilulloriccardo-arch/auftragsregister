@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:397934f5-161b-461e-a74e-55ee2db8e3af-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261124T100000Z
+SUMMARY:Eingabefrist: REMISE EN ETAT DU RESEAU D'ASSAINISSEMENT / REFECTION
+  DE CHAUSSEE
+DESCRIPTION:Auftraggeber: Ville d'Onex (iDTech Sàrl)\nEingabefrist: 24.11.
+ 2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/397
+ 934f5-161b-461e-a74e-55ee2db8e3af/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/397934f5-161b-461e-a74e-55ee2db8e3af
+URL:https://auftragsregister.ch/de/auftrag/397934f5-161b-461e-a74e-55ee2db8
+ e3af/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: REMISE EN ETAT DU RESEAU D'ASSAINISSEMENT / REFEC
+ TION DE CHAUSSEE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

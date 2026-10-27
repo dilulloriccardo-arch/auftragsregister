@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:70103df2-9767-4d3d-aeb4-4a8a067dcf32-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261202T100000Z
+SUMMARY:Délai de remise : Construction de mobilier de la gamme de bancs 
+ "Ville de Genève" (2364TI) Construction métallique et menuiserie
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 02.12.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/70103df2-9767-4d3d-aeb4-4a8a067dcf3
+ 2/\nPublication officielle : https://www.simap.ch/fr/project-detail/7010
+ 3df2-9767-4d3d-aeb4-4a8a067dcf32
+URL:https://auftragsregister.ch/fr/auftrag/70103df2-9767-4d3d-aeb4-4a8a067d
+ cf32/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction de mobilier de la gamme de ba
+ ncs "Ville de Genève" (2364TI) Construction métallique et menuiserie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

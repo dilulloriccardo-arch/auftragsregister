@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6cf4f129-ad32-4306-9647-229393485b50-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261123T083000Z
+SUMMARY:Scadenza: Sagendorfstrasse\, Emmetten\, Renovation best. Entwässer
+ ungssystem
+DESCRIPTION:Ente pubblico: Politische Gemeinde Emmetten\nScadenza: 23.11.20
+ 26\, 09:30\nNel registro: https://auftragsregister.ch/it/auftrag/6cf4f129-
+ ad32-4306-9647-229393485b50/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/6cf4f129-ad32-4306-9647-229393485b50
+URL:https://auftragsregister.ch/it/auftrag/6cf4f129-ad32-4306-9647-22939348
+ 5b50/
+LOCATION:Emmetten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sagendorfstrasse\, Emmetten\, Renovation best. Entwä
+ sserungssystem
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

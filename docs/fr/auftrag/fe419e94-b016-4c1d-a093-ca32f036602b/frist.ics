@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe419e94-b016-4c1d-a093-ca32f036602b-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Délai de remise : Baumeisterarbeiten Viehtriebweg Ober Bödmeren
+ -Oberalp-Chammli und Bewirtschaftungsweg Wannelen - Nideralp\, Unterschäc
+ hen
+DESCRIPTION:Acheteur public : Einfache Gesellschaft Schattige Stäfel (Ha
+ nspeter Berger)\nDélai de remise : 02.11.2026\, 12 h 00\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/fe419e94-b016-4c1d-a093-
+ ca32f036602b/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/fe419e94-b016-4c1d-a093-ca32f036602b
+URL:https://auftragsregister.ch/fr/auftrag/fe419e94-b016-4c1d-a093-ca32f036
+ 602b/
+LOCATION:Unterschächen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Baumeisterarbeiten Viehtriebweg Ober Bödm
+ eren-Oberalp-Chammli und Bewirtschaftungsweg Wannelen - Nideralp\, Untersc
+ hächen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4578500-02f5-4bc3-9f17-9b783a2733a7-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261124T130000Z
+SUMMARY:Délai de remise : KS 4774 - Kreuzlingen\, Ausbau Bushof
+DESCRIPTION:Acheteur public : Stadt Kreuzlingen\, Bauverwaltung (Planimpu
+ ls AG)\nDélai de remise : 24.11.2026\, 14 h 00\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/e4578500-02f5-4bc3-9f17-9b783a273
+ 3a7/\nPublication officielle : https://www.simap.ch/fr/project-detail/e4
+ 578500-02f5-4bc3-9f17-9b783a2733a7
+URL:https://auftragsregister.ch/fr/auftrag/e4578500-02f5-4bc3-9f17-9b783a27
+ 33a7/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : KS 4774 - Kreuzlingen\, Ausbau Bushof
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76dd7c54-7973-48e7-ae87-2376675acb99-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:0
+DTSTART:20261102T130000Z
+SUMMARY:Délai de remise : Umfahrung Cham–Hünenberg (UCH)\, Bodenaufwe
+ rtung
+DESCRIPTION:Acheteur public : Tiefbauamt Kanton Zug\nDélai de remise :
+  02.11.2026\, 14 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/76dd7c54-7973-48e7-ae87-2376675acb99/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/76dd7c54-7973-48e7-ae87-237667
+ 5acb99
+URL:https://auftragsregister.ch/fr/auftrag/76dd7c54-7973-48e7-ae87-2376675a
+ cb99/
+LOCATION:Cham
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Umfahrung Cham–Hünenberg (UCH)\, Bodena
+ ufwertung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

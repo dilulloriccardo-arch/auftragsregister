@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:230816bf-95da-4b06-9920-2d018f835477-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Submission deadline: AS_2026_013 Rahmenvertrag zur Beschaffung der 
+ FH-Card Medien
+DESCRIPTION:Public buyer: Fachhochschule Nordwestschweiz FHNW\nSubmission d
+ eadline: 20 Nov 2026\, 16:00\nIn the register: https://auftragsregister.
+ ch/en/auftrag/230816bf-95da-4b06-9920-2d018f835477/\nOfficial publication:
+  https://www.simap.ch/en/project-detail/230816bf-95da-4b06-9920-2d018f8354
+ 77
+URL:https://auftragsregister.ch/en/auftrag/230816bf-95da-4b06-9920-2d018f83
+ 5477/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AS_2026_013 Rahmenvertrag zur Beschaffung 
+ der FH-Card Medien
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

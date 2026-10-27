@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fd2295fd-04bf-47b8-8ae7-1387c0fe5c3e-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261208T180000Z
+SUMMARY:Scadenza: Phishing Plattform
+DESCRIPTION:Ente pubblico: Kanton Zürich Finanzdirektion Amt für Informat
+ ik\nScadenza: 08.12.2026\, 19:00\nNel registro: https://auftragsregister.c
+ h/it/auftrag/fd2295fd-04bf-47b8-8ae7-1387c0fe5c3e/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/fd2295fd-04bf-47b8-8ae7-1387c0fe
+ 5c3e
+URL:https://auftragsregister.ch/it/auftrag/fd2295fd-04bf-47b8-8ae7-1387c0fe
+ 5c3e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Phishing Plattform
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

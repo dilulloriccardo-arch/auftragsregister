@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:04fafc46-c7bc-415a-8b24-2ec426524ffb-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261105T153000Z
+SUMMARY:Eingabefrist: ESII MEYRIN - LOT 38 AMENAGEMENT PAYSAGER
+DESCRIPTION:Auftraggeber: Office Cantonal des bâtiments (OCBA) - Studio Mi
+ nt SARL\nEingabefrist: 05.11.2026\, 16.30 Uhr\nIm Register: https://auftr
+ agsregister.ch/de/auftrag/04fafc46-c7bc-415a-8b24-2ec426524ffb/\nAmtliche 
+ Publikation: https://www.simap.ch/de/project-detail/04fafc46-c7bc-415a-8b2
+ 4-2ec426524ffb
+URL:https://auftragsregister.ch/de/auftrag/04fafc46-c7bc-415a-8b24-2ec42652
+ 4ffb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ESII MEYRIN - LOT 38 AMENAGEMENT PAYSAGER
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

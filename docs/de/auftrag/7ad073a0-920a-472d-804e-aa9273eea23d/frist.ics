@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ad073a0-920a-472d-804e-aa9273eea23d-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Eingabefrist: BKP 221.1 Fenster
+DESCRIPTION:Auftraggeber: Gemeinde Pontresina\nEingabefrist: 16.11.2026\, 1
+ 2.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/7ad073a0-92
+ 0a-472d-804e-aa9273eea23d/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/7ad073a0-920a-472d-804e-aa9273eea23d
+URL:https://auftragsregister.ch/de/auftrag/7ad073a0-920a-472d-804e-aa9273ee
+ a23d/
+LOCATION:Pontresina
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 221.1 Fenster
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

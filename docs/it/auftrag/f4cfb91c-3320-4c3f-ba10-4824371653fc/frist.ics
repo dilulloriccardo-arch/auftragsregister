@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f4cfb91c-3320-4c3f-ba10-4824371653fc-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261030T100000Z
+SUMMARY:Scadenza: Sanierung Bahnstrasse - Tiefbauarbeiten
+DESCRIPTION:Ente pubblico: Gemeinde Regensdorf\nScadenza: 30.10.2026\, 11:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/f4cfb91c-3320-4c3f
+ -ba10-4824371653fc/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/f4cfb91c-3320-4c3f-ba10-4824371653fc
+URL:https://auftragsregister.ch/it/auftrag/f4cfb91c-3320-4c3f-ba10-48243716
+ 53fc/
+LOCATION:Regensdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Bahnstrasse - Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

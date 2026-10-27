@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6457f783-693b-4d4d-81b1-1922fd3ac5eb-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: Sanierung Mehrzweckhalle und Gemeindehaus\, 8916 Jonen / 
+ BKP 221.4 Fenster aus Metall
+DESCRIPTION:Ente pubblico: Gemeinde Jonen (Batimo AG)\nScadenza: 16.11.2026
+ \, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/6457f783-69
+ 3b-4d4d-81b1-1922fd3ac5eb/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/6457f783-693b-4d4d-81b1-1922fd3ac5eb
+URL:https://auftragsregister.ch/it/auftrag/6457f783-693b-4d4d-81b1-1922fd3a
+ c5eb/
+LOCATION:Jonen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Mehrzweckhalle und Gemeindehaus\, 8916 Jone
+ n / BKP 221.4 Fenster aus Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

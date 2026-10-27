@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78f956a8-e586-4823-8b44-fb999fbc5b2e-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Scadenza: CSUM2 - Réalisation d’un bâtiment dans le prolongemen
+ t de la CSUM - Ferblanterie et Etanchéité
+DESCRIPTION:Ente pubblico: Commune de Laténa (mch-consultants)\nScadenza: 
+ 04.12.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/7
+ 8f956a8-e586-4823-8b44-fb999fbc5b2e/\nPubblicazione ufficiale: https://www
+ .simap.ch/it/project-detail/78f956a8-e586-4823-8b44-fb999fbc5b2e
+URL:https://auftragsregister.ch/it/auftrag/78f956a8-e586-4823-8b44-fb999fbc
+ 5b2e/
+LOCATION:Marin-Epagnier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: CSUM2 - Réalisation d’un bâtiment dans le prolong
+ ement de la CSUM - Ferblanterie et Etanchéité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

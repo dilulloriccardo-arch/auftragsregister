@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:faa46d9c-ce6a-4c02-bed5-dd43765ffd3d-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Délai de remise : Assicurazione All Risks stabili\, beni mobili 
+ e assicurazioni tecniche - Comune di Stabio e Azienda comunale di Stabio (
+ AMS)
+DESCRIPTION:Acheteur public : Comune di Stabio\nDélai de remise : 16.1
+ 1.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/faa46d9c-ce6a-4c02-bed5-dd43765ffd3d/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/faa46d9c-ce6a-4c02-bed5-dd43765ffd3
+ d
+URL:https://auftragsregister.ch/fr/auftrag/faa46d9c-ce6a-4c02-bed5-dd43765f
+ fd3d/
+LOCATION:Stabio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assicurazione All Risks stabili\, beni mob
+ ili e assicurazioni tecniche - Comune di Stabio e Azienda comunale di Stab
+ io (AMS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

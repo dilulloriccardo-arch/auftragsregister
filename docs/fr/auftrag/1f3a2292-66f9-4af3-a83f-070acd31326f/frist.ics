@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1f3a2292-66f9-4af3-a83f-070acd31326f-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Délai de remise : Erweiterte Umgebungsgestaltung Sternmatt 2\, B
+ aar
+DESCRIPTION:Acheteur public : Einwohnergemeinde Baar\, Planung / Bau - Ho
+ chbau\nDélai de remise : 06.11.2026\, 12 h 00\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/1f3a2292-66f9-4af3-a83f-070acd3132
+ 6f/\nPublication officielle : https://www.simap.ch/fr/project-detail/1f3
+ a2292-66f9-4af3-a83f-070acd31326f
+URL:https://auftragsregister.ch/fr/auftrag/1f3a2292-66f9-4af3-a83f-070acd31
+ 326f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erweiterte Umgebungsgestaltung Sternmatt 2
+ \, Baar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

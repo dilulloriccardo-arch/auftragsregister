@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efa3fb95-29c8-47da-8ee4-f4fe034d01bd-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Submission deadline: Transportation of Green Waste Containers for t
+ he Sarneraatal Region
+DESCRIPTION:Public buyer: Entsorgungszweckverband Obwalden\nSubmission dead
+ line: 9 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/efa3fb95-29c8-47da-8ee4-f4fe034d01bd/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/efa3fb95-29c8-47da-8ee4-f4fe034d01bd
+URL:https://auftragsregister.ch/en/auftrag/efa3fb95-29c8-47da-8ee4-f4fe034d
+ 01bd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Transportation of Green Waste Containers f
+ or the Sarneraatal Region
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

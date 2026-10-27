@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a1467fce-df11-431d-96a1-a41ceaf68a5a-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T225944Z
+SUMMARY:Scadenza: AS_2026_072 IAM Dienstleistungen
+DESCRIPTION:Ente pubblico: Fachhochschule Nordwestschweiz FHNW\nScadenza: 1
+ 3.11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/a1
+ 467fce-df11-431d-96a1-a41ceaf68a5a/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/a1467fce-df11-431d-96a1-a41ceaf68a5a
+URL:https://auftragsregister.ch/it/auftrag/a1467fce-df11-431d-96a1-a41ceaf6
+ 8a5a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AS_2026_072 IAM Dienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

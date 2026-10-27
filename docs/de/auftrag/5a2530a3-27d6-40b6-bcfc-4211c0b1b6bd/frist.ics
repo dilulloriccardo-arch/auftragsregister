@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a2530a3-27d6-40b6-bcfc-4211c0b1b6bd-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Eingabefrist: Cimetière de Confignon
+DESCRIPTION:Auftraggeber: Pôle aménagement et technique\nEingabefrist: 07
+ .12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /5a2530a3-27d6-40b6-bcfc-4211c0b1b6bd/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/5a2530a3-27d6-40b6-bcfc-4211c0b1b6bd
+URL:https://auftragsregister.ch/de/auftrag/5a2530a3-27d6-40b6-bcfc-4211c0b1
+ b6bd/
+LOCATION:Confignon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Cimetière de Confignon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

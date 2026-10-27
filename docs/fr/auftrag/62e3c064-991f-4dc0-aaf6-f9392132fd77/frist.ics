@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62e3c064-991f-4dc0-aaf6-f9392132fd77-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Délai de remise : Werkleitungs- und Oberbausanierung Hardstrasse
+  - Ahornweg
+DESCRIPTION:Acheteur public : Einwohnergemeinde Wettingen. Abteilung Bau 
+ und Planung\nDélai de remise : 20.11.2026\, 11 h 00\nDans le regist
+ re : https://auftragsregister.ch/fr/auftrag/62e3c064-991f-4dc0-aaf6-f939
+ 2132fd77/\nPublication officielle : https://www.simap.ch/fr/project-deta
+ il/62e3c064-991f-4dc0-aaf6-f9392132fd77
+URL:https://auftragsregister.ch/fr/auftrag/62e3c064-991f-4dc0-aaf6-f9392132
+ fd77/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Werkleitungs- und Oberbausanierung Hardstr
+ asse - Ahornweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

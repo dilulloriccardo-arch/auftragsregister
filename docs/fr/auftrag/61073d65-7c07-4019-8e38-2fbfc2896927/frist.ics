@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61073d65-7c07-4019-8e38-2fbfc2896927-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20261106T130000Z
+SUMMARY:Délai de remise : Actions à performance énergétique (APE) pou
+ r les bâtiments de la cité hospitalière du CHUV - Travaux de mise à ni
+ veau des installations de traitement d’air BH10\, MAT01\, BH FASOL\, BU1
+ 9 - CFC 236
+DESCRIPTION:Acheteur public : CHUV - Constructions ingénierie technique 
+ et sécurité (CIT-S)\nDélai de remise : 06.11.2026\, 14 h 00\nDans
+  le registre : https://auftragsregister.ch/fr/auftrag/61073d65-7c07-4019
+ -8e38-2fbfc2896927/\nPublication officielle : https://www.simap.ch/fr/pr
+ oject-detail/61073d65-7c07-4019-8e38-2fbfc2896927
+URL:https://auftragsregister.ch/fr/auftrag/61073d65-7c07-4019-8e38-2fbfc289
+ 6927/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Actions à performance énergétique (APE)
+  pour les bâtiments de la cité hospitalière du CHUV - Travaux de mise 
+ à niveau des installations de traitement d’air BH10\, MAT01\, BH FASOL\
+ , BU19 - CFC 236
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

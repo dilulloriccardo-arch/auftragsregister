@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:21b91ff5-ee59-44a7-af86-b5439b97e734-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Scadenza: Sachversicherung (Gebäude\, betriebliche Einrichtungen/W
+ aren) der Gemeinde Zollikon
+DESCRIPTION:Ente pubblico: Gemeinde Zollikon (Walser Consulting AG)\nScaden
+ za: 02.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/21b91ff5-ee59-44a7-af86-b5439b97e734/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/21b91ff5-ee59-44a7-af86-b5439b97e734
+URL:https://auftragsregister.ch/it/auftrag/21b91ff5-ee59-44a7-af86-b5439b97
+ e734/
+LOCATION:Rüschlikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sachversicherung (Gebäude\, betriebliche Einrichtung
+ en/Waren) der Gemeinde Zollikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c27ab175-9621-4023-9f79-d8a7b161af49-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Eingabefrist: EBP 595 AFW Bümpliz Ost-Süd-Bienzgut Baumeister
+DESCRIPTION:Auftraggeber: Energie Wasser Bern\nEingabefrist: 30.11.2026\, 2
+ 3.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c27ab175-96
+ 21-4023-9f79-d8a7b161af49/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/c27ab175-9621-4023-9f79-d8a7b161af49
+URL:https://auftragsregister.ch/de/auftrag/c27ab175-9621-4023-9f79-d8a7b161
+ af49/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: EBP 595 AFW Bümpliz Ost-Süd-Bienzgut Baumeist
+ er
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

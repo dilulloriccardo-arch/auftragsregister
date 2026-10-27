@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:189737d4-8f58-4235-b38a-3d8c619a6f66-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Délai de remise : Contrat cadre pour la founiture de divers mat
+ ériels\, licences et prestations CISCO
+DESCRIPTION:Acheteur public : Centrale d'achats et d'ingénierie biomédi
+ cale (CAIB)\nDélai de remise : 23.11.2026\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/189737d4-8f58-4235-b38a-3d8c619a6f66/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/189737d4-8f
+ 58-4235-b38a-3d8c619a6f66
+URL:https://auftragsregister.ch/fr/auftrag/189737d4-8f58-4235-b38a-3d8c619a
+ 6f66/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat cadre pour la founiture de divers 
+ matériels\, licences et prestations CISCO
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

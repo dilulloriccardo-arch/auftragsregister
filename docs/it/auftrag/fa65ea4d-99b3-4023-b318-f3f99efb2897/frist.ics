@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa65ea4d-99b3-4023-b318-f3f99efb2897-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261119T150000Z
+SUMMARY:Scadenza: 10013 Neubau LUKS Wolhusen\, B3.03 SKP 246.0 Kälteanlage
+ n
+DESCRIPTION:Ente pubblico: LUKS Immobilien AG\nScadenza: 19.11.2026\, 16:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/fa65ea4d-99b3-4023-
+ b318-f3f99efb2897/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/fa65ea4d-99b3-4023-b318-f3f99efb2897
+URL:https://auftragsregister.ch/it/auftrag/fa65ea4d-99b3-4023-b318-f3f99efb
+ 2897/
+LOCATION:Wolhusen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 10013 Neubau LUKS Wolhusen\, B3.03 SKP 246.0 Kältean
+ lagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

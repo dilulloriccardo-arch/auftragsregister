@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee4031db-cc35-4ee4-b176-2e062c3520e2-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261118T180000Z
+SUMMARY:Scadenza: Brückenbauarbeiten\, 9043 Trogen AR
+DESCRIPTION:Ente pubblico: Kanton Appenzell Ausserrhoden\nScadenza: 18.11.2
+ 026\, 19:00\nNel registro: https://auftragsregister.ch/it/auftrag/ee4031db
+ -cc35-4ee4-b176-2e062c3520e2/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/ee4031db-cc35-4ee4-b176-2e062c3520e2
+URL:https://auftragsregister.ch/it/auftrag/ee4031db-cc35-4ee4-b176-2e062c35
+ 20e2/
+LOCATION:Trogen AR
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Brückenbauarbeiten\, 9043 Trogen AR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

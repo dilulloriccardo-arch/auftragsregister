@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe967d3e-d5f7-411f-82e5-d45130ff6909-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261130T160000Z
+SUMMARY:Eingabefrist: Politische Gemeinde Volketswil - Submission Reinigung
+DESCRIPTION:Auftraggeber: Gemeinde Volketswil (Drees & Sommer Schweiz AG)\n
+ Eingabefrist: 30.11.2026\, 17.00 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/fe967d3e-d5f7-411f-82e5-d45130ff6909/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/fe967d3e-d5f7-411f-82e5-d45130f
+ f6909
+URL:https://auftragsregister.ch/de/auftrag/fe967d3e-d5f7-411f-82e5-d45130ff
+ 6909/
+LOCATION:Volketswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Politische Gemeinde Volketswil - Submission Reini
+ gung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

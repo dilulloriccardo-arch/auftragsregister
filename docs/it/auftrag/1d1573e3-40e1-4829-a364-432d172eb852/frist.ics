@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1d1573e3-40e1-4829-a364-432d172eb852-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Scadenza: 789 NB Schulhaus- & 3-fach Kindergarten Malerva Sargans -
+  TO2 Schulhaus - BKP 221.3 Pfosten-Riegel-Fassade
+DESCRIPTION:Ente pubblico: Politische Gemeinde Sargans\nScadenza: 06.11.202
+ 6\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/1d1573e3-4
+ 0e1-4829-a364-432d172eb852/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/1d1573e3-40e1-4829-a364-432d172eb852
+URL:https://auftragsregister.ch/it/auftrag/1d1573e3-40e1-4829-a364-432d172e
+ b852/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 789 NB Schulhaus- & 3-fach Kindergarten Malerva Sarga
+ ns - TO2 Schulhaus - BKP 221.3 Pfosten-Riegel-Fassade
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

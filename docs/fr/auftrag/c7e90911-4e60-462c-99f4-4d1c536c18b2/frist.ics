@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c7e90911-4e60-462c-99f4-4d1c536c18b2-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Délai de remise : MP-210026 NEB N13 Viabilità Bellinzona Sud - 
+ Riazzino\, Lot 402\, travaux de construction métallique\, secteur ouest
+DESCRIPTION:Acheteur public : Ufficio federale delle strade USTRA\, divis
+ ione infrastruttura stradale Est\nDélai de remise : 05.11.2026\, 16 h
+  00\nDans le registre : https://auftragsregister.ch/fr/auftrag/c7e9091
+ 1-4e60-462c-99f4-4d1c536c18b2/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/c7e90911-4e60-462c-99f4-4d1c536c18b2
+URL:https://auftragsregister.ch/fr/auftrag/c7e90911-4e60-462c-99f4-4d1c536c
+ 18b2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-210026 NEB N13 Viabilità Bellinzona Su
+ d - Riazzino\, Lot 402\, travaux de construction métallique\, secteur oue
+ st
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

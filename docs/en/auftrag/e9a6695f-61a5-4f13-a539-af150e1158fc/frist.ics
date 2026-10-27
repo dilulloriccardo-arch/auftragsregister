@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9a6695f-61a5-4f13-a539-af150e1158fc-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261028T070000Z
+SUMMARY:Submission deadline: Sanierung mechanische Reinigung ARA Thunersee 
+ - Sandfangräumer\, Belüftung Sandfang\, Sandaustrag\, Sandwäscher\, Abd
+ eckung
+DESCRIPTION:Public buyer: Gemeindeverband ARA Thunersee\nSubmission deadlin
+ e: 28 Oct 2026\, 08:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/e9a6695f-61a5-4f13-a539-af150e1158fc/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/e9a6695f-61a5-4f13-a539-af150e1158fc
+URL:https://auftragsregister.ch/en/auftrag/e9a6695f-61a5-4f13-a539-af150e11
+ 58fc/
+LOCATION:Uetendorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung mechanische Reinigung ARA Thuner
+ see - Sandfangräumer\, Belüftung Sandfang\, Sandaustrag\, Sandwäscher\,
+  Abdeckung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

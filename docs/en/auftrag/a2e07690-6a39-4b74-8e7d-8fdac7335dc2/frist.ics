@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a2e07690-6a39-4b74-8e7d-8fdac7335dc2-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Submission deadline: MP-180002\, Erhaltungsmassnahmen Osttangente B
+ asel / Baumeister Abschnitt 2
+DESCRIPTION:Public buyer: Eidgenössisches Departement für Umwelt\, Verkeh
+ r\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung S
+ trasseninfrastruktur-Ost - F3\nSubmission deadline: 17 Dec 2026\, 23:59\
+ nIn the register: https://auftragsregister.ch/en/auftrag/a2e07690-6a39-4b7
+ 4-8e7d-8fdac7335dc2/\nOfficial publication: https://www.simap.ch/en/projec
+ t-detail/a2e07690-6a39-4b74-8e7d-8fdac7335dc2
+URL:https://auftragsregister.ch/en/auftrag/a2e07690-6a39-4b74-8e7d-8fdac733
+ 5dc2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-180002\, Erhaltungsmassnahmen Osttangen
+ te Basel / Baumeister Abschnitt 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

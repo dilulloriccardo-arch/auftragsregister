@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c3aca94-7b7f-4299-b574-312bbd3b6d34-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Scadenza: Rénovation centre scolaire du Mail - 23000 - Installatio
+ ns électriques
+DESCRIPTION:Ente pubblico: éorén - École obligatoire région Neuchâtel 
+ (AAPA SA)\nScadenza: 27.11.2026\, 16:00\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/6c3aca94-7b7f-4299-b574-312bbd3b6d34/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/6c3aca94-7b7f-4299-b574-3
+ 12bbd3b6d34
+URL:https://auftragsregister.ch/it/auftrag/6c3aca94-7b7f-4299-b574-312bbd3b
+ 6d34/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rénovation centre scolaire du Mail - 23000 - Install
+ ations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

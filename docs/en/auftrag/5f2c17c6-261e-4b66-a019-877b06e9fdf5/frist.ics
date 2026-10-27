@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f2c17c6-261e-4b66-a019-877b06e9fdf5-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261028T160000Z
+SUMMARY:Submission deadline: Basel Music Academy – Campus 2040\, Section 
+ A (Buildings 2\, 4 and 7) – BKP 222–224: Tinsmithing and roofing works
+DESCRIPTION:Public buyer: Musik-Akademie Basel (ARGE GP MAB Campus 2040)\nS
+ ubmission deadline: 28 Oct 2026\, 17:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/5f2c17c6-261e-4b66-a019-877b06e9fdf5/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/5f2c17c6-261e-4b66-a019
+ -877b06e9fdf5
+URL:https://auftragsregister.ch/en/auftrag/5f2c17c6-261e-4b66-a019-877b06e9
+ fdf5/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Basel Music Academy – Campus 2040\, Sect
+ ion A (Buildings 2\, 4 and 7) – BKP 222–224: Tinsmithing and roofing w
+ orks
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

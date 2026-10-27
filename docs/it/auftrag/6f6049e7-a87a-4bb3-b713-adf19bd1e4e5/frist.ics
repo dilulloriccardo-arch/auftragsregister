@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6f6049e7-a87a-4bb3-b713-adf19bd1e4e5-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Scadenza: MP-090088\, EM AS Neuenhof - AS Dietikon Deckbelag / Baum
+ eister
+DESCRIPTION:Ente pubblico: Eidgenössisches Departement für Umwelt\, Verke
+ hr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung 
+ Strasseninfrastruktur-Ost - F3\nScadenza: 15.12.2026\, 23:59\nNel registro
+ : https://auftragsregister.ch/it/auftrag/6f6049e7-a87a-4bb3-b713-adf19bd1e
+ 4e5/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/6f60
+ 49e7-a87a-4bb3-b713-adf19bd1e4e5
+URL:https://auftragsregister.ch/it/auftrag/6f6049e7-a87a-4bb3-b713-adf19bd1
+ e4e5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-090088\, EM AS Neuenhof - AS Dietikon Deckbelag / 
+ Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

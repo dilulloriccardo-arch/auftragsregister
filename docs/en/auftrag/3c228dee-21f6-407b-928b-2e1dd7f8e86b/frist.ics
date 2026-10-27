@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c228dee-21f6-407b-928b-2e1dd7f8e86b-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Submission deadline: Replacement throttle valve 3601 - as part of t
+ he Refurbishment of the Handeck 3 – Rotlaui drive water system
+DESCRIPTION:Public buyer: Kraftwerke Oberhasli AG\nSubmission deadline: 20
+  Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/3c228dee-21f6-407b-928b-2e1dd7f8e86b/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/3c228dee-21f6-407b-928b-2e1dd7f8e86b
+URL:https://auftragsregister.ch/en/auftrag/3c228dee-21f6-407b-928b-2e1dd7f8
+ e86b/
+LOCATION:Guttannen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Replacement throttle valve 3601 - as part 
+ of the Refurbishment of the Handeck 3 – Rotlaui drive water system
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:05eef7f7-f48e-4bbb-84f0-e17d3d12c00c-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261119T103000Z
+SUMMARY:Délai de remise : Mise en œuvre et gestion des activités assur
+ antielles de la Caisse Santé Genève
+DESCRIPTION:Acheteur public : Département de la santé et des mobilités
+  (DSM) - Secrétariat général\nDélai de remise : 19.11.2026\, 11 h
+  30\nDans le registre : https://auftragsregister.ch/fr/auftrag/05eef7f
+ 7-f48e-4bbb-84f0-e17d3d12c00c/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/05eef7f7-f48e-4bbb-84f0-e17d3d12c00c
+URL:https://auftragsregister.ch/fr/auftrag/05eef7f7-f48e-4bbb-84f0-e17d3d12
+ c00c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mise en œuvre et gestion des activités a
+ ssurantielles de la Caisse Santé Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

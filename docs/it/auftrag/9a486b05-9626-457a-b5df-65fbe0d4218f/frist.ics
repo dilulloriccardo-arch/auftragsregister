@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a486b05-9626-457a-b5df-65fbe0d4218f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261106T153000Z
+SUMMARY:Scadenza: Transformation d’un terrain de football naturel en synt
+ hétique
+DESCRIPTION:Ente pubblico: Commune de Veyrier\nScadenza: 06.11.2026\, 16:30
+ \nNel registro: https://auftragsregister.ch/it/auftrag/9a486b05-9626-457a-
+ b5df-65fbe0d4218f/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/9a486b05-9626-457a-b5df-65fbe0d4218f
+URL:https://auftragsregister.ch/it/auftrag/9a486b05-9626-457a-b5df-65fbe0d4
+ 218f/
+LOCATION:Veyrier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Transformation d’un terrain de football naturel en 
+ synthétique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

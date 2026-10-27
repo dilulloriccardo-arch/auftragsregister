@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44bcdf58-a3b4-44f4-941b-1160514aa930-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Eingabefrist: Bau Nr. 08069 - Hornbach\, Abschnitt Bellerivestrasse
+  bis See
+DESCRIPTION:Auftraggeber: Tiefbauamt\, Abt. Realisierung\nEingabefrist: 26.
+ 11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ 44bcdf58-a3b4-44f4-941b-1160514aa930/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/44bcdf58-a3b4-44f4-941b-1160514aa930
+URL:https://auftragsregister.ch/de/auftrag/44bcdf58-a3b4-44f4-941b-1160514a
+ a930/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bau Nr. 08069 - Hornbach\, Abschnitt Bellerivestr
+ asse bis See
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cd523fd0-cb83-441e-8fe5-58d7d144096d-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Scadenza: Herstellung\, Lieferung\, Montage und Prüfung von zwei t
+ emporären HS-Kabelanlagen im Unterwerk Leibstadt 380 kV
+DESCRIPTION:Ente pubblico: Swissgrid AG - Asset & Maintenance\nScadenza: 17
+ .11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/cd5
+ 23fd0-cb83-441e-8fe5-58d7d144096d/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/cd523fd0-cb83-441e-8fe5-58d7d144096d
+URL:https://auftragsregister.ch/it/auftrag/cd523fd0-cb83-441e-8fe5-58d7d144
+ 096d/
+LOCATION:Leibstadt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Herstellung\, Lieferung\, Montage und Prüfung von zw
+ ei temporären HS-Kabelanlagen im Unterwerk Leibstadt 380 kV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10067bdc-4051-4875-892b-af95014d5b9b-frist@auftragsregister.ch
+DTSTAMP:20260822T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Délai de remise : Station d’épuration des eaux usées de la r
+ égion Wil-Uzwil\, travaux de génie civil – étape Ouest
+DESCRIPTION:Acheteur public : Abwasserverband Thurau\nDélai de remise 
+ : 09.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/10067bdc-4051-4875-892b-af95014d5b9b/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/10067bdc-4051-4875-892b-af950
+ 14d5b9b
+URL:https://auftragsregister.ch/fr/auftrag/10067bdc-4051-4875-892b-af95014d
+ 5b9b/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Station d’épuration des eaux usées de 
+ la région Wil-Uzwil\, travaux de génie civil – étape Ouest
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

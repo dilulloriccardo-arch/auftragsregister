@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e768d6ce-cb3a-4ff6-8090-8933743fe6b3-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261028T110000Z
+SUMMARY:Délai de remise : Représentation du maître d'ouvrage pour l'É
+ cole secondaire de Rümlang-Oberglatt
+DESCRIPTION:Acheteur public : Sekundarschule Rümlang-Oberglatt (Federas 
+ Beratung AG)\nDélai de remise : 28.10.2026\, 12 h 00\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/e768d6ce-cb3a-4ff6-8090-893
+ 3743fe6b3/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/e768d6ce-cb3a-4ff6-8090-8933743fe6b3
+URL:https://auftragsregister.ch/fr/auftrag/e768d6ce-cb3a-4ff6-8090-8933743f
+ e6b3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Représentation du maître d'ouvrage pour 
+ l'École secondaire de Rümlang-Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

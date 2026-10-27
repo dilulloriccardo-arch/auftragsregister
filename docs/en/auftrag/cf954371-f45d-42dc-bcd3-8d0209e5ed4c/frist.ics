@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf954371-f45d-42dc-bcd3-8d0209e5ed4c-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T073000Z
+SUMMARY:Submission deadline: Rahmenvertrag Verkehrsdienstleistungen
+DESCRIPTION:Public buyer: BERNMOBIL Städt. Verkehrsbetriebe Bern (SVB)\nSu
+ bmission deadline: 1 Dec 2026\, 08:30\nIn the register: https://auftrags
+ register.ch/en/auftrag/cf954371-f45d-42dc-bcd3-8d0209e5ed4c/\nOfficial pub
+ lication: https://www.simap.ch/en/project-detail/cf954371-f45d-42dc-bcd3-8
+ d0209e5ed4c
+URL:https://auftragsregister.ch/en/auftrag/cf954371-f45d-42dc-bcd3-8d0209e5
+ ed4c/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rahmenvertrag Verkehrsdienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

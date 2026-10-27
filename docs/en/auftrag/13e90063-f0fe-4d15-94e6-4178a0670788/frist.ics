@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:13e90063-f0fe-4d15-94e6-4178a0670788-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Submission deadline: Catering Services for Sanadura
+DESCRIPTION:Public buyer: Sanadura\nSubmission deadline: 9 Nov 2026\, 12:
+ 00\nIn the register: https://auftragsregister.ch/en/auftrag/13e90063-f0fe-
+ 4d15-94e6-4178a0670788/\nOfficial publication: https://www.simap.ch/en/pro
+ ject-detail/13e90063-f0fe-4d15-94e6-4178a0670788
+URL:https://auftragsregister.ch/en/auftrag/13e90063-f0fe-4d15-94e6-4178a067
+ 0788/
+LOCATION:Samedan
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Catering Services for Sanadura
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

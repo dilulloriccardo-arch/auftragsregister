@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9e06265d-806b-4a49-b7cc-f5143d0769a6-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Scadenza: Kläranlage ARA Gruebensteg - Ausbau ARA Rüti und Verbin
+ dungsleitung ARA Weidli
+DESCRIPTION:Ente pubblico: Gemeinde Rüti ZH\nScadenza: 16.12.2026\, 23:59\
+ nNel registro: https://auftragsregister.ch/it/auftrag/9e06265d-806b-4a49-b
+ 7cc-f5143d0769a6/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/9e06265d-806b-4a49-b7cc-f5143d0769a6
+URL:https://auftragsregister.ch/it/auftrag/9e06265d-806b-4a49-b7cc-f5143d07
+ 69a6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kläranlage ARA Gruebensteg - Ausbau ARA Rüti und Ve
+ rbindungsleitung ARA Weidli
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

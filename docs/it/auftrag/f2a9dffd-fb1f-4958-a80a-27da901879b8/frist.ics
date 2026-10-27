@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f2a9dffd-fb1f-4958-a80a-27da901879b8-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: Huberstrasse 18/20\, Gesamtsanierung\, BKP 211 Baumeister
+ arbeiten
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 16.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/f2a9dffd-fb1f-4958-a80a-27da901879b8/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/f2a9dffd-fb1f-4958-a80a-27da901879b8
+URL:https://auftragsregister.ch/it/auftrag/f2a9dffd-fb1f-4958-a80a-27da9018
+ 79b8/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Huberstrasse 18/20\, Gesamtsanierung\, BKP 211 Baumei
+ sterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

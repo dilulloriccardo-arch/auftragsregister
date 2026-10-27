@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:710a4695-bd76-4b1f-af03-6a127f657ffc-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261106T160000Z
+SUMMARY:Scadenza: Fassade Sanierung\, Ueberlandstr. 194 / 196\, 8051 Züric
+ h
+DESCRIPTION:Ente pubblico: Liegenschaften Stadt Zürich (LSZ)\nScadenza: 06
+ .11.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/710
+ a4695-bd76-4b1f-af03-6a127f657ffc/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/710a4695-bd76-4b1f-af03-6a127f657ffc
+URL:https://auftragsregister.ch/it/auftrag/710a4695-bd76-4b1f-af03-6a127f65
+ 7ffc/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fassade Sanierung\, Ueberlandstr. 194 / 196\, 8051 Z
+ ürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

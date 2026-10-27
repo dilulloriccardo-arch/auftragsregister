@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:26f2238a-f46f-486a-b031-d232df156e87-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Eingabefrist: St. Moritz – Tirano: Galleria Lunga\, km 25.177\, T
+ eilerneuerung / Ingenieurleistungen (Projektverfasser und Bauleitung)
+DESCRIPTION:Auftraggeber: Rhätische Bahn AG\nEingabefrist: 07.12.2026\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/26f2238a-f46
+ f-486a-b031-d232df156e87/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/26f2238a-f46f-486a-b031-d232df156e87
+URL:https://auftragsregister.ch/de/auftrag/26f2238a-f46f-486a-b031-d232df15
+ 6e87/
+LOCATION:Poschiavo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: St. Moritz – Tirano: Galleria Lunga\, km 25.177
+ \, Teilerneuerung / Ingenieurleistungen (Projektverfasser und Bauleitung)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

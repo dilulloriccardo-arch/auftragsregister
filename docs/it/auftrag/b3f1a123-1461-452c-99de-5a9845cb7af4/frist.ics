@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3f1a123-1461-452c-99de-5a9845cb7af4-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Scadenza: N01.20 MP-260003 - EP Weyermannshaus - Wankdorf - Projekt
+ verfasser Umwelt (ID 12210)
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Abteilung Strass
+ eninfrastruktur West - Filiale Thun\nScadenza: 02.11.2026\, 23:59\nNel reg
+ istro: https://auftragsregister.ch/it/auftrag/b3f1a123-1461-452c-99de-5a98
+ 45cb7af4/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail
+ /b3f1a123-1461-452c-99de-5a9845cb7af4
+URL:https://auftragsregister.ch/it/auftrag/b3f1a123-1461-452c-99de-5a9845cb
+ 7af4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N01.20 MP-260003 - EP Weyermannshaus - Wankdorf - Pro
+ jektverfasser Umwelt (ID 12210)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

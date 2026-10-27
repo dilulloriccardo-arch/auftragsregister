@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b708d92b-365a-4ed7-b96a-da4cc5296362-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Scadenza: Réhabilitation du chemin de Mancy - Mandat d'ingénieur 
+ civil (SIA 103/112 - 31 à 53) en équipe pluridisciplinaire
+DESCRIPTION:Ente pubblico: Commune de Collonge-Bellerive - Service des rout
+ es et de l'entretien des sites\nScadenza: 23.11.2026\, 11:00\nNel registro
+ : https://auftragsregister.ch/it/auftrag/b708d92b-365a-4ed7-b96a-da4cc5296
+ 362/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/b708
+ d92b-365a-4ed7-b96a-da4cc5296362
+URL:https://auftragsregister.ch/it/auftrag/b708d92b-365a-4ed7-b96a-da4cc529
+ 6362/
+LOCATION:Collonge-Bellerive
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Réhabilitation du chemin de Mancy - Mandat d'ingéni
+ eur civil (SIA 103/112 - 31 à 53) en équipe pluridisciplinaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

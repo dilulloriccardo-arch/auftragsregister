@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc68d0df-7307-42b1-8426-6f21e4888787-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261207T225900Z
+SUMMARY:Scadenza: (26166) 735 Zivi-Ausbildungskurs Betreuung und Begleitung
+  von Menschen
+DESCRIPTION:Ente pubblico: Bundesamt für Zivildienst ZIVI\nScadenza: 07.12
+ .2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/bc68d0
+ df-7307-42b1-8426-6f21e4888787/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/bc68d0df-7307-42b1-8426-6f21e4888787
+URL:https://auftragsregister.ch/it/auftrag/bc68d0df-7307-42b1-8426-6f21e488
+ 8787/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (26166) 735 Zivi-Ausbildungskurs Betreuung und Beglei
+ tung von Menschen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

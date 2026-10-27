@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b0d84484-621e-478d-93a6-49ef501c1dc3-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261105T110000Z
+SUMMARY:Eingabefrist: P+R Grand Saconnex - Lot 12.1 Ouvrages métalliques c
+ ourants
+DESCRIPTION:Auftraggeber: Fondation des Parkings - Service des achats\nEing
+ abefrist: 05.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/b0d84484-621e-478d-93a6-49ef501c1dc3/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/b0d84484-621e-478d-93a6-49ef501c1dc
+ 3
+URL:https://auftragsregister.ch/de/auftrag/b0d84484-621e-478d-93a6-49ef501c
+ 1dc3/
+LOCATION:Voie-des-Traz 6\, 1218 Le Grand-Saconnex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: P+R Grand Saconnex - Lot 12.1 Ouvrages métalliqu
+ es courants
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

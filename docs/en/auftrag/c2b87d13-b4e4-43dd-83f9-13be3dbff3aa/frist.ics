@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c2b87d13-b4e4-43dd-83f9-13be3dbff3aa-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T100000Z
+SUMMARY:Submission deadline: Commune de Chêne-Bougeries - Sécurité et su
+ rveillance du territoire\, des espaces publics\, des bâtiments publics et
+  équipements publics
+DESCRIPTION:Public buyer: Commune de Chêne-Bougeries (BM Avocats\, Me Oliv
+ ier Adler)\nSubmission deadline: 1 Dec 2026\, 11:00\nIn the register: ht
+ tps://auftragsregister.ch/en/auftrag/c2b87d13-b4e4-43dd-83f9-13be3dbff3aa/
+ \nOfficial publication: https://www.simap.ch/en/project-detail/c2b87d13-b4
+ e4-43dd-83f9-13be3dbff3aa
+URL:https://auftragsregister.ch/en/auftrag/c2b87d13-b4e4-43dd-83f9-13be3dbf
+ f3aa/
+LOCATION:Chêne-Bougeries
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Commune de Chêne-Bougeries - Sécurité e
+ t surveillance du territoire\, des espaces publics\, des bâtiments public
+ s et équipements publics
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

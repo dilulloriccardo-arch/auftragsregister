@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a6fa471-8dd2-4589-a3e6-d096dfaec55f-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261102T100000Z
+SUMMARY:Eingabefrist: Projet EMS de 51 lits complétés de la transformatio
+ n du bâtiment existant en 21 appartements protégés à Charmey
+DESCRIPTION:Auftraggeber: Réseau Santé et Social de la Gruyère (RSSG)\nE
+ ingabefrist: 02.11.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/8a6fa471-8dd2-4589-a3e6-d096dfaec55f/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/8a6fa471-8dd2-4589-a3e6-d096dfae
+ c55f
+URL:https://auftragsregister.ch/de/auftrag/8a6fa471-8dd2-4589-a3e6-d096dfae
+ c55f/
+LOCATION:Charmey
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projet EMS de 51 lits complétés de la transform
+ ation du bâtiment existant en 21 appartements protégés à Charmey
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

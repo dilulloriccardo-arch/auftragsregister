@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c27d0ad6-0c42-470e-96d3-62a661c0b9ae-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:1
+DTSTART:20261028T090000Z
+SUMMARY:Eingabefrist: Solutions automatisées de lavage et de désinfection
+  aux HUG et à l’HDL
+DESCRIPTION:Auftraggeber: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nEingabefrist: 28.10.2026\, 10.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/c27d0ad6-0c42-470e-96d3-62a661c0b9ae/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/c27d0ad6-0c
+ 42-470e-96d3-62a661c0b9ae
+URL:https://auftragsregister.ch/de/auftrag/c27d0ad6-0c42-470e-96d3-62a661c0
+ b9ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Solutions automatisées de lavage et de désinfec
+ tion aux HUG et à l’HDL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

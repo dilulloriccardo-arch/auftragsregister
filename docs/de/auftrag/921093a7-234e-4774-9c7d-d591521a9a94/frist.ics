@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:921093a7-234e-4774-9c7d-d591521a9a94-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:2
+DTSTART:20261028T140000Z
+SUMMARY:Eingabefrist: Morges–Perroy - neue Doppelspur: Kampagne zur geolo
+ gischen und hydrogeologischen Erkundung
+DESCRIPTION:Auftraggeber: SBB CFF FFS Achats projets de construction Régio
+ n Ouest\nEingabefrist: 28.10.2026\, 15.00 Uhr\nIm Register: https://auftr
+ agsregister.ch/de/auftrag/921093a7-234e-4774-9c7d-d591521a9a94/\nAmtliche 
+ Publikation: https://www.simap.ch/de/project-detail/921093a7-234e-4774-9c7
+ d-d591521a9a94
+URL:https://auftragsregister.ch/de/auftrag/921093a7-234e-4774-9c7d-d591521a
+ 9a94/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Morges–Perroy - neue Doppelspur: Kampagne zur g
+ eologischen und hydrogeologischen Erkundung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

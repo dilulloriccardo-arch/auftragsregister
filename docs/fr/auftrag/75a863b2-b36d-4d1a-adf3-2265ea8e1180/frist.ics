@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:75a863b2-b36d-4d1a-adf3-2265ea8e1180-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261102T100000Z
+SUMMARY:Délai de remise : Centre sportif du Platy - Rénovation des vest
+ iaires de la salle de gym triple
+DESCRIPTION:Acheteur public : Commune Villars-sur-Glâne - Services techn
+ iques\nDélai de remise : 02.11.2026\, 11 h 00\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/75a863b2-b36d-4d1a-adf3-2265ea8e11
+ 80/\nPublication officielle : https://www.simap.ch/fr/project-detail/75a
+ 863b2-b36d-4d1a-adf3-2265ea8e1180
+URL:https://auftragsregister.ch/fr/auftrag/75a863b2-b36d-4d1a-adf3-2265ea8e
+ 1180/
+LOCATION:Villars-sur-Glâne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Centre sportif du Platy - Rénovation des 
+ vestiaires de la salle de gym triple
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

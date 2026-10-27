@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ade9b93e-c4d2-41fb-b376-021d5a671f44-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:1
+DTSTART:20261117T225900Z
+SUMMARY:Scadenza: Cadenazzo - Centro di manutenzione
+DESCRIPTION:Ente pubblico: Ferrovie Federali Svizzere FFS SA - Immobili - F
+ inanze e Acquisti\nScadenza: 17.11.2026\, 23:59\nNel registro: https://auf
+ tragsregister.ch/it/auftrag/ade9b93e-c4d2-41fb-b376-021d5a671f44/\nPubblic
+ azione ufficiale: https://www.simap.ch/it/project-detail/ade9b93e-c4d2-41f
+ b-b376-021d5a671f44
+URL:https://auftragsregister.ch/it/auftrag/ade9b93e-c4d2-41fb-b376-021d5a67
+ 1f44/
+LOCATION:Cadenazzo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Cadenazzo - Centro di manutenzione
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

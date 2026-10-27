@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:52a0257b-5fba-4657-b106-787d99c2b85a-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Eingabefrist: Kantonsstrasse Nr. 114\, Buchs: Brücke Giessen
+DESCRIPTION:Auftraggeber: Kanton St.Gallen\, Tiefbauamt\, Strassen- und Kun
+ stbauten\nEingabefrist: 20.11.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/52a0257b-5fba-4657-b106-787d99c2b85a/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/52a0257b-5fba-4657-b1
+ 06-787d99c2b85a
+URL:https://auftragsregister.ch/de/auftrag/52a0257b-5fba-4657-b106-787d99c2
+ b85a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kantonsstrasse Nr. 114\, Buchs: Brücke Giessen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

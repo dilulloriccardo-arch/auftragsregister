@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57aae4e4-bac2-4fa6-bda5-86cb96bf49d7-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261118T130000Z
+SUMMARY:Submission deadline: Replacement of the GIS system at Gemeindewerke
+  Pfäffikon ZH. (Systems and services such as GeoDataServices and staff co
+ ver arrangements)
+DESCRIPTION:Public buyer: Gemeindewerke Pfäffikon\nSubmission deadline: 18
+  Nov 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/57aae4e4-bac2-4fa6-bda5-86cb96bf49d7/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/57aae4e4-bac2-4fa6-bda5-86cb96bf49d7
+URL:https://auftragsregister.ch/en/auftrag/57aae4e4-bac2-4fa6-bda5-86cb96bf
+ 49d7/
+LOCATION:Pfäffikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Replacement of the GIS system at Gemeindew
+ erke Pfäffikon ZH. (Systems and services such as GeoDataServices and staf
+ f cover arrangements)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

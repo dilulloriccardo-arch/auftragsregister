@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3ee6f434-e4d2-4e00-b021-5ad987e4fa23-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : Marché de restauration
+DESCRIPTION:Acheteur public : Pôle Seniors Saconnay\nDélai de remise 
+ : 09.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/3ee6f434-e4d2-4e00-b021-5ad987e4fa23/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/3ee6f434-e4d2-4e00-b021-5ad98
+ 7e4fa23
+URL:https://auftragsregister.ch/fr/auftrag/3ee6f434-e4d2-4e00-b021-5ad987e4
+ fa23/
+LOCATION:Grand-Saconnex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Marché de restauration
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

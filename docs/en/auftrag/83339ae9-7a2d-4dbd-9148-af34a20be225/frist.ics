@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83339ae9-7a2d-4dbd-9148-af34a20be225-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261113T110000Z
+SUMMARY:Submission deadline: Poste de Vaucens à CH-1630 Bulle – Fournitu
+ re d’une installation GIS 72\,5 kV sans SF₆
+DESCRIPTION:Public buyer: Groupe E SA\nSubmission deadline: 13 Nov 2026\,
+  12:00\nIn the register: https://auftragsregister.ch/en/auftrag/83339ae9-7
+ a2d-4dbd-9148-af34a20be225/\nOfficial publication: https://www.simap.ch/en
+ /project-detail/83339ae9-7a2d-4dbd-9148-af34a20be225
+URL:https://auftragsregister.ch/en/auftrag/83339ae9-7a2d-4dbd-9148-af34a20b
+ e225/
+LOCATION:Bulle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Poste de Vaucens à CH-1630 Bulle – Four
+ niture d’une installation GIS 72\,5 kV sans SF₆
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

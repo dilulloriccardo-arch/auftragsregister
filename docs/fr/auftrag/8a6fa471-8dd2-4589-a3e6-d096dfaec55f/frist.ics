@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a6fa471-8dd2-4589-a3e6-d096dfaec55f-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261102T100000Z
+SUMMARY:Délai de remise : Projet EMS de 51 lits complétés de la transf
+ ormation du bâtiment existant en 21 appartements protégés à Charmey
+DESCRIPTION:Acheteur public : Réseau Santé et Social de la Gruyère (RS
+ SG)\nDélai de remise : 02.11.2026\, 11 h 00\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/8a6fa471-8dd2-4589-a3e6-d096dfaec55f
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/8a6fa
+ 471-8dd2-4589-a3e6-d096dfaec55f
+URL:https://auftragsregister.ch/fr/auftrag/8a6fa471-8dd2-4589-a3e6-d096dfae
+ c55f/
+LOCATION:Charmey
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet EMS de 51 lits complétés de la tr
+ ansformation du bâtiment existant en 21 appartements protégés à Charme
+ y
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

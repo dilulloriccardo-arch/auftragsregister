@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dbfcea35-c45f-42da-b6d9-d845ff8183d8-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Délai de remise : BKP 281 Revêtements de sol et muraux en dalle
+ s - Thun\, Polygon\, Rénovation de l'enveloppe du bâtiment et des instal
+ lations techniques du bâtiment
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  19.11.2026\nDans le registre : https://auftragsregister.ch/fr/auftrag/d
+ bfcea35-c45f-42da-b6d9-d845ff8183d8/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/dbfcea35-c45f-42da-b6d9-d845ff8183d8
+URL:https://auftragsregister.ch/fr/auftrag/dbfcea35-c45f-42da-b6d9-d845ff81
+ 83d8/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 281 Revêtements de sol et muraux en d
+ alles - Thun\, Polygon\, Rénovation de l'enveloppe du bâtiment et des in
+ stallations techniques du bâtiment
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

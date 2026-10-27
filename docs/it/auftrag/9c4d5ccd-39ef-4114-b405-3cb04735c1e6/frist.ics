@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9c4d5ccd-39ef-4114-b405-3cb04735c1e6-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261119T103000Z
+SUMMARY:Scadenza: Mise en œuvre et gestion du Réseau Santé Genève
+DESCRIPTION:Ente pubblico: Etat de Genève - Département de la santé et d
+ es mobilités\, Secrétariat général\nScadenza: 19.11.2026\, 11:30\nNel 
+ registro: https://auftragsregister.ch/it/auftrag/9c4d5ccd-39ef-4114-b405-3
+ cb04735c1e6/\nPubblicazione ufficiale: https://www.simap.ch/it/project-det
+ ail/9c4d5ccd-39ef-4114-b405-3cb04735c1e6
+URL:https://auftragsregister.ch/it/auftrag/9c4d5ccd-39ef-4114-b405-3cb04735
+ c1e6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mise en œuvre et gestion du Réseau Santé Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

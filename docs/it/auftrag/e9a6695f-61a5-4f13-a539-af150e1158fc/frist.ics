@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9a6695f-61a5-4f13-a539-af150e1158fc-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261028T070000Z
+SUMMARY:Scadenza: Sanierung mechanische Reinigung ARA Thunersee - Sandfangr
+ äumer\, Belüftung Sandfang\, Sandaustrag\, Sandwäscher\, Abdeckung
+DESCRIPTION:Ente pubblico: Gemeindeverband ARA Thunersee\nScadenza: 28.10.2
+ 026\, 08:00\nNel registro: https://auftragsregister.ch/it/auftrag/e9a6695f
+ -61a5-4f13-a539-af150e1158fc/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/e9a6695f-61a5-4f13-a539-af150e1158fc
+URL:https://auftragsregister.ch/it/auftrag/e9a6695f-61a5-4f13-a539-af150e11
+ 58fc/
+LOCATION:Uetendorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung mechanische Reinigung ARA Thunersee - Sandf
+ angräumer\, Belüftung Sandfang\, Sandaustrag\, Sandwäscher\, Abdeckung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69b121a8-b0a5-487a-9c76-b559b0eacd13-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261123T083000Z
+SUMMARY:Scadenza: Sagendorfstrasse\, Emmetten\, Baumeister- und Belagsarbei
+ ten
+DESCRIPTION:Ente pubblico: Politische Gemeinde Emmetten\nScadenza: 23.11.20
+ 26\, 09:30\nNel registro: https://auftragsregister.ch/it/auftrag/69b121a8-
+ b0a5-487a-9c76-b559b0eacd13/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/69b121a8-b0a5-487a-9c76-b559b0eacd13
+URL:https://auftragsregister.ch/it/auftrag/69b121a8-b0a5-487a-9c76-b559b0ea
+ cd13/
+LOCATION:Emmetten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sagendorfstrasse\, Emmetten\, Baumeister- und Belagsa
+ rbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

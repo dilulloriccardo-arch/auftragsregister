@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3e065f7-8614-415b-9520-ba9a57780a13-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Eingabefrist: Krankentaggeldversicherungen
+DESCRIPTION:Auftraggeber: Gemeinde Fällanden\nEingabefrist: 10.11.2026\nIm
+  Register: https://auftragsregister.ch/de/auftrag/b3e065f7-8614-415b-9520-
+ ba9a57780a13/\nAmtliche Publikation: https://www.simap.ch/de/project-detai
+ l/b3e065f7-8614-415b-9520-ba9a57780a13
+URL:https://auftragsregister.ch/de/auftrag/b3e065f7-8614-415b-9520-ba9a5778
+ 0a13/
+LOCATION:Fällanden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Krankentaggeldversicherungen
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

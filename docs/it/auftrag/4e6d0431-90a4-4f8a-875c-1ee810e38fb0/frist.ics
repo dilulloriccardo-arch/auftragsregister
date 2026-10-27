@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4e6d0431-90a4-4f8a-875c-1ee810e38fb0-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261207T150000Z
+SUMMARY:Scadenza: Mitarbeiter Gebietsreinigung / Subm. Nr.: 2026-34
+DESCRIPTION:Ente pubblico: TED - Entsorgung + Recycling Zürich (ERZ) Hagen
+ holzstrasse 110\, Zürich\nScadenza: 07.12.2026\, 16:00\nNel registro: htt
+ ps://auftragsregister.ch/it/auftrag/4e6d0431-90a4-4f8a-875c-1ee810e38fb0/\
+ nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/4e6d0431-
+ 90a4-4f8a-875c-1ee810e38fb0
+URL:https://auftragsregister.ch/it/auftrag/4e6d0431-90a4-4f8a-875c-1ee810e3
+ 8fb0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mitarbeiter Gebietsreinigung / Subm. Nr.: 2026-34
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

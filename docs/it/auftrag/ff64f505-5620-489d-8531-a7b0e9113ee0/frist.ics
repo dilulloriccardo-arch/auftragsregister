@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff64f505-5620-489d-8531-a7b0e9113ee0-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261126T100000Z
+SUMMARY:Scadenza: La Sarraz - "Route de la Bruyère" : Mise en séparatif\,
+  équipements et aménagements routiers
+DESCRIPTION:Ente pubblico: Commune de La Sarraz (DTP SA Bureau d'études)\n
+ Scadenza: 26.11.2026\, 11:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/ff64f505-5620-489d-8531-a7b0e9113ee0/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/ff64f505-5620-489d-8531-a7b0e9113ee0
+URL:https://auftragsregister.ch/it/auftrag/ff64f505-5620-489d-8531-a7b0e911
+ 3ee0/
+LOCATION:La Sarraz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: La Sarraz - "Route de la Bruyère" : Mise en séparat
+ if\, équipements et aménagements routiers
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

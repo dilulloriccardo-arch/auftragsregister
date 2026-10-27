@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a20f99b5-dc89-4c64-89b7-62b7c7b49a51-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Submission deadline: BKP 230 Elektroanlagen
+DESCRIPTION:Public buyer: Volksschulgemeinde Fischingen\nSubmission deadlin
+ e: 16 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/a20f99b5-dc89-4c64-89b7-62b7c7b49a51/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/a20f99b5-dc89-4c64-89b7-62b7c7b49a51
+URL:https://auftragsregister.ch/en/auftrag/a20f99b5-dc89-4c64-89b7-62b7c7b4
+ 9a51/
+LOCATION:Oberwangen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b70b22bc-ffcb-4130-a61f-e3c256887609-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Submission deadline: Sanierung Talacherstrasse "Ost"
+DESCRIPTION:Public buyer: Landis AG\nSubmission deadline: 20 Nov 2026\, 1
+ 1:00\nIn the register: https://auftragsregister.ch/en/auftrag/b70b22bc-ffc
+ b-4130-a61f-e3c256887609/\nOfficial publication: https://www.simap.ch/en/p
+ roject-detail/b70b22bc-ffcb-4130-a61f-e3c256887609
+URL:https://auftragsregister.ch/en/auftrag/b70b22bc-ffcb-4130-a61f-e3c25688
+ 7609/
+LOCATION:Unterengstringen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Talacherstrasse "Ost"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28107b05-62cf-4cf6-9314-4beb224ec8af-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Submission deadline: 297_Groupe scolaire des Grands Esserts_CFC 281
+ .6 Carrelage et faïences
+DESCRIPTION:Public buyer: Commune de Veyrier (Esposito + Javet arch.)\nSubm
+ ission deadline: 3 Nov 2026\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/28107b05-62cf-4cf6-9314-4beb224ec8af/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/28107b05-62cf-4cf6-9314-4be
+ b224ec8af
+URL:https://auftragsregister.ch/en/auftrag/28107b05-62cf-4cf6-9314-4beb224e
+ c8af/
+LOCATION:Veyrier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 297_Groupe scolaire des Grands Esserts_CFC
+  281.6 Carrelage et faïences
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

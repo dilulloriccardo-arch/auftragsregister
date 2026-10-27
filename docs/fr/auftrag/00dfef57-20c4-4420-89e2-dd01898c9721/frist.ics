@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:00dfef57-20c4-4420-89e2-dd01898c9721-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Délai de remise : Transport scolaire de l'école primaire de Dü
+ bendorf
+DESCRIPTION:Acheteur public : Primarschule Dübendorf (Federas Beratung A
+ G)\nDélai de remise : 12.11.2026\, 12 h 00\nDans le registre : ht
+ tps://auftragsregister.ch/fr/auftrag/00dfef57-20c4-4420-89e2-dd01898c9721/
+ \nPublication officielle : https://www.simap.ch/fr/project-detail/00dfef
+ 57-20c4-4420-89e2-dd01898c9721
+URL:https://auftragsregister.ch/fr/auftrag/00dfef57-20c4-4420-89e2-dd01898c
+ 9721/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transport scolaire de l'école primaire de
+  Dübendorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

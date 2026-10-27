@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e81859c-7b0f-4cb5-b0ee-986fee4db612-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261202T103000Z
+SUMMARY:Submission deadline: Neubau Schul-\, Sport- und Freizeitanlage Maih
+ of I BKP 259 I Sprinkleranlage
+DESCRIPTION:Public buyer: Gemeinde Feusisberg\nSubmission deadline: 2 Dec
+  2026\, 11:30\nIn the register: https://auftragsregister.ch/en/auftrag/6e
+ 81859c-7b0f-4cb5-b0ee-986fee4db612/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/6e81859c-7b0f-4cb5-b0ee-986fee4db612
+URL:https://auftragsregister.ch/en/auftrag/6e81859c-7b0f-4cb5-b0ee-986fee4d
+ b612/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Schul-\, Sport- und Freizeitanlage 
+ Maihof I BKP 259 I Sprinkleranlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7978d3c6-8f31-4c44-a7d7-0e0cbc27110f-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:1
+DTSTART:20261111T103000Z
+SUMMARY:Eingabefrist: Requalification de la place Vignettaz-Daler à Fribou
+ rg - Travaux paysagiste
+DESCRIPTION:Auftraggeber: Service du génie civil\, de l’environnement et
+  de l’énergie (GCEE)\, Secteur Ponts et Chaussées (PC)\nEingabefrist: 
+ 11.11.2026\, 11.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/7978d3c6-8f31-4c44-a7d7-0e0cbc27110f/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/7978d3c6-8f31-4c44-a7d7-0e0cbc27110f
+URL:https://auftragsregister.ch/de/auftrag/7978d3c6-8f31-4c44-a7d7-0e0cbc27
+ 110f/
+LOCATION:Fribourg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Requalification de la place Vignettaz-Daler à Fr
+ ibourg - Travaux paysagiste
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

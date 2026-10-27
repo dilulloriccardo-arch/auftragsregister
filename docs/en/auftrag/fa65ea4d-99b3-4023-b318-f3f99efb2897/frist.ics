@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa65ea4d-99b3-4023-b318-f3f99efb2897-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261119T150000Z
+SUMMARY:Submission deadline: 10013 Neubau LUKS Wolhusen\, B3.03 SKP 246.0 K
+ älteanlagen
+DESCRIPTION:Public buyer: LUKS Immobilien AG\nSubmission deadline: 19 Nov
+  2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/fa
+ 65ea4d-99b3-4023-b318-f3f99efb2897/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/fa65ea4d-99b3-4023-b318-f3f99efb2897
+URL:https://auftragsregister.ch/en/auftrag/fa65ea4d-99b3-4023-b318-f3f99efb
+ 2897/
+LOCATION:Wolhusen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 10013 Neubau LUKS Wolhusen\, B3.03 SKP 246
+ .0 Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

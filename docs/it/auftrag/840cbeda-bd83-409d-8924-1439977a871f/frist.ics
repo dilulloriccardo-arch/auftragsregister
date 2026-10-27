@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:840cbeda-bd83-409d-8924-1439977a871f-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261103T100000Z
+SUMMARY:Scadenza: Seeuferanlagen Rüschlikon - Pflegearbeiten
+DESCRIPTION:Ente pubblico: Zwischenraum Landschaftsarchitektur GmbH\nScaden
+ za: 03.11.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/840cbeda-bd83-409d-8924-1439977a871f/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/840cbeda-bd83-409d-8924-1439977a871f
+URL:https://auftragsregister.ch/it/auftrag/840cbeda-bd83-409d-8924-1439977a
+ 871f/
+LOCATION:Rüschlikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Seeuferanlagen Rüschlikon - Pflegearbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

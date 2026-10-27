@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb72e463-2c20-4a74-8f5b-05c479e5d978-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261106T153000Z
+SUMMARY:Délai de remise : Installations chauffage-ventilation - Rénovat
+ ion du bâtiment PICTO Avenue Ernest-Pictet 28-30
+DESCRIPTION:Acheteur public : Etat de Genève\, Département du territoir
+ e - DT\, Office Cantonal des bâtiments (OCBA)\nDélai de remise : 06.11
+ .2026\, 16 h 30\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/fb72e463-2c20-4a74-8f5b-05c479e5d978/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/fb72e463-2c20-4a74-8f5b-05c479e5d978
+URL:https://auftragsregister.ch/fr/auftrag/fb72e463-2c20-4a74-8f5b-05c479e5
+ d978/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Installations chauffage-ventilation - Rén
+ ovation du bâtiment PICTO Avenue Ernest-Pictet 28-30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

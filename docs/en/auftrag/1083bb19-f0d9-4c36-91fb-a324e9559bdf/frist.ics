@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1083bb19-f0d9-4c36-91fb-a324e9559bdf-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261028T150000Z
+SUMMARY:Submission deadline: BLS/AED Ausbildungen
+DESCRIPTION:Public buyer: armasuisse Ressourcen und Support CC WTO\nSubmiss
+ ion deadline: 28 Oct 2026\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/1083bb19-f0d9-4c36-91fb-a324e9559bdf/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/1083bb19-f0d9-4c36-91fb-a324e
+ 9559bdf
+URL:https://auftragsregister.ch/en/auftrag/1083bb19-f0d9-4c36-91fb-a324e955
+ 9bdf/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BLS/AED Ausbildungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

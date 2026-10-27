@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7731cca4-2f73-4577-b24e-a11b2d7b50f6-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+SUMMARY:Scadenza: STEP Echallens - CFC 237 - INST02 - Mesures de débits
+DESCRIPTION:Ente pubblico: ASET / Association intercommunale STEP Echallens
+  Talent (TRITON)\nScadenza: 30.11.2026\, 11:00\nNel registro: https://auft
+ ragsregister.ch/it/auftrag/7731cca4-2f73-4577-b24e-a11b2d7b50f6/\nPubblica
+ zione ufficiale: https://www.simap.ch/it/project-detail/7731cca4-2f73-4577
+ -b24e-a11b2d7b50f6
+URL:https://auftragsregister.ch/it/auftrag/7731cca4-2f73-4577-b24e-a11b2d7b
+ 50f6/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: STEP Echallens - CFC 237 - INST02 - Mesures de débit
+ s
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

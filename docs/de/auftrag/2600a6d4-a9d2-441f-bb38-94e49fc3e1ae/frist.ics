@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2600a6d4-a9d2-441f-bb38-94e49fc3e1ae-frist@auftragsregister.ch
+DTSTAMP:20260907T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Eingabefrist: Projet d’assainissement du tronçon T2 en aval de l
+ ’usine du Châtelot : Maîtrise d’œuvre et études techniques (MOE)
+DESCRIPTION:Auftraggeber: Société des Forces Motrices du Châtelot\nEinga
+ befrist: 04.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch
+ /de/auftrag/2600a6d4-a9d2-441f-bb38-94e49fc3e1ae/\nAmtliche Publikation: h
+ ttps://www.simap.ch/de/project-detail/2600a6d4-a9d2-441f-bb38-94e49fc3e1ae
+URL:https://auftragsregister.ch/de/auftrag/2600a6d4-a9d2-441f-bb38-94e49fc3
+ e1ae/
+LOCATION:Les Planchettes
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projet d’assainissement du tronçon T2 en aval 
+ de l’usine du Châtelot : Maîtrise d’œuvre et études techniques (MO
+ E)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

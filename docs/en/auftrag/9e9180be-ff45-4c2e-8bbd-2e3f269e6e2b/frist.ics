@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9e9180be-ff45-4c2e-8bbd-2e3f269e6e2b-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Submission deadline: Gesamtsanierung Kaserne Auenfeld\, Wpl Frauenf
+ eld\, 3. Etappe\, BKP 273.1 Effektenschränke\, (Unterkunftsgebäude UE)
+DESCRIPTION:Public buyer: armasuisse Immobilien\nSubmission deadline: 6 No
+ v 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/9
+ e9180be-ff45-4c2e-8bbd-2e3f269e6e2b/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/9e9180be-ff45-4c2e-8bbd-2e3f269e6e2b
+URL:https://auftragsregister.ch/en/auftrag/9e9180be-ff45-4c2e-8bbd-2e3f269e
+ 6e2b/
+LOCATION:Frauenfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gesamtsanierung Kaserne Auenfeld\, Wpl Fra
+ uenfeld\, 3. Etappe\, BKP 273.1 Effektenschränke\, (Unterkunftsgebäude U
+ E)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

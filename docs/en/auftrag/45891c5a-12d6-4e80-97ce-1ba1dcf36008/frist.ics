@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45891c5a-12d6-4e80-97ce-1ba1dcf36008-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261104T225900Z
+SUMMARY:Submission deadline: MP-210082 Road-Map VM-CH SM GHGW F3 A2 A4 A8 
+ – Los 524 GMA UR
+DESCRIPTION:Public buyer: Bundesamt für Strassen ASTRA -Abteilung Strassen
+ infrastruktur-Ost - F3 Zofingen\nSubmission deadline: 4 Nov 2026\, 23:59
+ \nIn the register: https://auftragsregister.ch/en/auftrag/45891c5a-12d6-4e
+ 80-97ce-1ba1dcf36008/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/45891c5a-12d6-4e80-97ce-1ba1dcf36008
+URL:https://auftragsregister.ch/en/auftrag/45891c5a-12d6-4e80-97ce-1ba1dcf3
+ 6008/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-210082 Road-Map VM-CH SM GHGW F3 A2 A4 
+ A8 – Los 524 GMA UR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

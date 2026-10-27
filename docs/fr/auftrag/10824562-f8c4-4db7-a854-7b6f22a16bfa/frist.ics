@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10824562-f8c4-4db7-a854-7b6f22a16bfa-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261106T100000Z
+SUMMARY:Délai de remise : Construction d'un nouveau réservoir d'eau pot
+ able
+DESCRIPTION:Acheteur public : Gruppenwasserversorgung Furttal (Ingenieurb
+ üro Gujer AG)\nDélai de remise : 06.11.2026\, 11 h 00\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/10824562-f8c4-4db7-a854-7
+ b6f22a16bfa/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/10824562-f8c4-4db7-a854-7b6f22a16bfa
+URL:https://auftragsregister.ch/fr/auftrag/10824562-f8c4-4db7-a854-7b6f22a1
+ 6bfa/
+LOCATION:Watt (Regensdorf)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction d'un nouveau réservoir d'eau
+  potable
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

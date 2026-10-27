@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0b64344d-2320-49e3-b652-ac9fcd44b24e-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:1
+DTSTART:20261117T130000Z
+SUMMARY:Submission deadline: Ersatzbeschaffung Intensiv- und Transportrespi
+ ratoren
+DESCRIPTION:Public buyer: Stadtspital Zürich\, Departement Betrieb und Inf
+ ormatik / Medizintechnik\nSubmission deadline: 17 Nov 2026\, 14:00\nIn t
+ he register: https://auftragsregister.ch/en/auftrag/0b64344d-2320-49e3-b65
+ 2-ac9fcd44b24e/\nOfficial publication: https://www.simap.ch/en/project-det
+ ail/0b64344d-2320-49e3-b652-ac9fcd44b24e
+URL:https://auftragsregister.ch/en/auftrag/0b64344d-2320-49e3-b652-ac9fcd44
+ b24e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatzbeschaffung Intensiv- und Transportr
+ espiratoren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

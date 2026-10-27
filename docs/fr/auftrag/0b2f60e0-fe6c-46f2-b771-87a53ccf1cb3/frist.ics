@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0b2f60e0-fe6c-46f2-b771-87a53ccf1cb3-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:1
+DTSTART:20261208T130000Z
+SUMMARY:Délai de remise : Amélioration globale (GM) Nusshof BL / Travau
+ x d'ingénierie\, d'arpentage et de planification
+DESCRIPTION:Acheteur public : Einwohnergemeinde Nusshof\nDélai de remise
+  : 08.12.2026\, 14 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/0b2f60e0-fe6c-46f2-b771-87a53ccf1cb3/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/0b2f60e0-fe6c-46f2-b771-87
+ a53ccf1cb3
+URL:https://auftragsregister.ch/fr/auftrag/0b2f60e0-fe6c-46f2-b771-87a53ccf
+ 1cb3/
+LOCATION:Nusshof
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Amélioration globale (GM) Nusshof BL / Tr
+ avaux d'ingénierie\, d'arpentage et de planification
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

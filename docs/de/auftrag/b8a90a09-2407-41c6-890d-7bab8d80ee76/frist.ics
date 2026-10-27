@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b8a90a09-2407-41c6-890d-7bab8d80ee76-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261117T140000Z
+SUMMARY:Eingabefrist: Schulraumerweiterung Kilchbühl Biel-Benken (Basel-La
+ nd)\, BKP 242 Heizungsanlagen & Kälte
+DESCRIPTION:Auftraggeber: Gemeindeverwaltung Biel-Benken\nEingabefrist: 17.
+ 11.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ b8a90a09-2407-41c6-890d-7bab8d80ee76/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/b8a90a09-2407-41c6-890d-7bab8d80ee76
+URL:https://auftragsregister.ch/de/auftrag/b8a90a09-2407-41c6-890d-7bab8d80
+ ee76/
+LOCATION:Biel-Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulraumerweiterung Kilchbühl Biel-Benken (Base
+ l-Land)\, BKP 242 Heizungsanlagen & Kälte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

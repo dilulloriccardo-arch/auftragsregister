@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12cc41cc-4818-4dda-92f4-b9ca8c1808bc-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261201T225800Z
+SUMMARY:Submission deadline: Neubau H07B- SKP 273095_Schiebetüren aus Holz
+  (AP04-01)
+DESCRIPTION:Public buyer: Spitalanlagengesellschaft HOCH Health Ostschweiz\
+ nSubmission deadline: 1 Dec 2026\, 23:58\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/12cc41cc-4818-4dda-92f4-b9ca8c1808bc/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/12cc41cc-4818-4dda-92f
+ 4-b9ca8c1808bc
+URL:https://auftragsregister.ch/en/auftrag/12cc41cc-4818-4dda-92f4-b9ca8c18
+ 08bc/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau H07B- SKP 273095_Schiebetüren aus 
+ Holz (AP04-01)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

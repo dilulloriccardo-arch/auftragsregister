@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2d4fcec-f545-44ac-9ebc-eb0156e53144-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:1
+DTSTART:20261208T100000Z
+SUMMARY:Délai de remise : Prestations de maintenance des espaces verts d
+ e l'Hospice général
+DESCRIPTION:Acheteur public : Hospice général\nDélai de remise : 08.
+ 12.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/d2d4fcec-f545-44ac-9ebc-eb0156e53144/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/d2d4fcec-f545-44ac-9ebc-eb0156e531
+ 44
+URL:https://auftragsregister.ch/fr/auftrag/d2d4fcec-f545-44ac-9ebc-eb0156e5
+ 3144/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Prestations de maintenance des espaces ver
+ ts de l'Hospice général
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

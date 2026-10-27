@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cd523fd0-cb83-441e-8fe5-58d7d144096d-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Délai de remise : Fourniture\, montage et mise en service de deu
+ x installations temporaires de câbles haute tension (HT) au poste électr
+ ique de Leibstadt 380 kV.
+DESCRIPTION:Acheteur public : Swissgrid AG - Asset & Maintenance\nDélai 
+ de remise : 17.11.2026\, 23 h 59\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/cd523fd0-cb83-441e-8fe5-58d7d144096d/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/cd523fd0-cb83-441
+ e-8fe5-58d7d144096d
+URL:https://auftragsregister.ch/fr/auftrag/cd523fd0-cb83-441e-8fe5-58d7d144
+ 096d/
+LOCATION:Leibstadt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture\, montage et mise en service de
+  deux installations temporaires de câbles haute tension (HT) au poste él
+ ectrique de Leibstadt 380 kV.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0d0bffd-203a-4fec-80a5-5678ab808a43-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Submission deadline: Reinigungspapier
+DESCRIPTION:Public buyer: armasuisse Ressourcen und Support CC WTO\nSubmiss
+ ion deadline: 23 Nov 2026\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/d0d0bffd-203a-4fec-80a5-5678ab808a43/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/d0d0bffd-203a-4fec-80a5-5678a
+ b808a43
+URL:https://auftragsregister.ch/en/auftrag/d0d0bffd-203a-4fec-80a5-5678ab80
+ 8a43/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Reinigungspapier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

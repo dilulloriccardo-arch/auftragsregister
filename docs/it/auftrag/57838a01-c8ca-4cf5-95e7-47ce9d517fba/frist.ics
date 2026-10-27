@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57838a01-c8ca-4cf5-95e7-47ce9d517fba-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Scadenza: Marché des Soupes CAIB
+DESCRIPTION:Ente pubblico: Centrale d'achats et d’ingénierie biomédical
+ e des hôpitaux universitaires Vaud-Genève (CAIB) Rue Gabrielle Perret-Ge
+ ntil 4 CH-1211 Genève 14\nScadenza: 02.11.2026\, 16:00\nNel registro: htt
+ ps://auftragsregister.ch/it/auftrag/57838a01-c8ca-4cf5-95e7-47ce9d517fba/\
+ nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/57838a01-
+ c8ca-4cf5-95e7-47ce9d517fba
+URL:https://auftragsregister.ch/it/auftrag/57838a01-c8ca-4cf5-95e7-47ce9d51
+ 7fba/
+LOCATION:GENÈVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Marché des Soupes CAIB
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

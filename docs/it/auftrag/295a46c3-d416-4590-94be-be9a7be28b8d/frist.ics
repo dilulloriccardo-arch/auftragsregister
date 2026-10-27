@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:295a46c3-d416-4590-94be-be9a7be28b8d-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Scadenza: MP-070078 N02 EP18 Balerna\, Lotto 110\, risanamento pont
+ i valico commerciale Brogeda
+DESCRIPTION:Ente pubblico: Ufficio federale delle strade USTRA\, divisione 
+ infrastruttura stradale Est\nScadenza: 20.11.2026\, 16:00\nNel registro: h
+ ttps://auftragsregister.ch/it/auftrag/295a46c3-d416-4590-94be-be9a7be28b8d
+ /\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/295a46c
+ 3-d416-4590-94be-be9a7be28b8d
+URL:https://auftragsregister.ch/it/auftrag/295a46c3-d416-4590-94be-be9a7be2
+ 8b8d/
+LOCATION:Chiasso
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-070078 N02 EP18 Balerna\, Lotto 110\, risanamento 
+ ponti valico commerciale Brogeda
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:74edb7dd-2e88-4bce-b7d0-6c3a50b45828-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Submission deadline: Kollegium Brig - Sanierung Internat / BKP 285.
+ 1 Innere Malerarbeiten (Südtrakt)
+DESCRIPTION:Public buyer: Departement für Finanzen und Energie\, Dienstste
+ lle für Immobilien und Bauliches Erbe\nSubmission deadline: 11 Nov 2026
+ \nIn the register: https://auftragsregister.ch/en/auftrag/74edb7dd-2e88-4b
+ ce-b7d0-6c3a50b45828/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/74edb7dd-2e88-4bce-b7d0-6c3a50b45828
+URL:https://auftragsregister.ch/en/auftrag/74edb7dd-2e88-4bce-b7d0-6c3a50b4
+ 5828/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kollegium Brig - Sanierung Internat / BKP 
+ 285.1 Innere Malerarbeiten (Südtrakt)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

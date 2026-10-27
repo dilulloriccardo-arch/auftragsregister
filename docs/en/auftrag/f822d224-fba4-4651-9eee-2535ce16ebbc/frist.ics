@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f822d224-fba4-4651-9eee-2535ce16ebbc-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Submission deadline: Relaunch EHB-Website
+DESCRIPTION:Public buyer: Eidgenössische Hochschule für Berufsbildung EHB
+ \nSubmission deadline: 27 Nov 2026\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/f822d224-fba4-4651-9eee-2535ce16ebbc/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/f822d224-fba4-4651-9eee-2535
+ ce16ebbc
+URL:https://auftragsregister.ch/en/auftrag/f822d224-fba4-4651-9eee-2535ce16
+ ebbc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Relaunch EHB-Website
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40dacbe3-1a8c-44cb-822c-76d6afaa1591-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Délai de remise : Acquisition de véhicules de service
+DESCRIPTION:Acheteur public : Basler Verkehrs-Betriebe (BVB)\nDélai de r
+ emise : 04.12.2026\, 12 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/40dacbe3-1a8c-44cb-822c-76d6afaa1591/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/40dacbe3-1a8c-44cb-82
+ 2c-76d6afaa1591
+URL:https://auftragsregister.ch/fr/auftrag/40dacbe3-1a8c-44cb-822c-76d6afaa
+ 1591/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition de véhicules de service
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

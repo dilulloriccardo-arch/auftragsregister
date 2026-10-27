@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f1a6d17-450a-427e-8696-6cdba3fd8411-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T153000Z
+SUMMARY:Scadenza: Révision du cadastre des sites pollués par l’intégra
+ tion des substances per- et polyfluoroalkylées (PFAS) et gestion des site
+ s pollués / Location de services
+DESCRIPTION:Ente pubblico: Office Cantonal de l'Environnement (OCEV)\nScade
+ nza: 25.11.2026\, 16:30\nNel registro: https://auftragsregister.ch/it/auft
+ rag/5f1a6d17-450a-427e-8696-6cdba3fd8411/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/5f1a6d17-450a-427e-8696-6cdba3fd8411
+URL:https://auftragsregister.ch/it/auftrag/5f1a6d17-450a-427e-8696-6cdba3fd
+ 8411/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Révision du cadastre des sites pollués par l’int
+ égration des substances per- et polyfluoroalkylées (PFAS) et gestion des
+  sites pollués / Location de services
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

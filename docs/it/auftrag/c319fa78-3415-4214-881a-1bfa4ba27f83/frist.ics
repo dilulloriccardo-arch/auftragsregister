@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c319fa78-3415-4214-881a-1bfa4ba27f83-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261116T080000Z
+SUMMARY:Scadenza: IWB\, Pikettdienst Schweissarbeiten Fernwärmenetz
+DESCRIPTION:Ente pubblico: IWB Industrielle Werke Basel\nScadenza: 16.11.20
+ 26\, 09:00\nNel registro: https://auftragsregister.ch/it/auftrag/c319fa78-
+ 3415-4214-881a-1bfa4ba27f83/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/c319fa78-3415-4214-881a-1bfa4ba27f83
+URL:https://auftragsregister.ch/it/auftrag/c319fa78-3415-4214-881a-1bfa4ba2
+ 7f83/
+LOCATION:Basel-Stadt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: IWB\, Pikettdienst Schweissarbeiten Fernwärmenetz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

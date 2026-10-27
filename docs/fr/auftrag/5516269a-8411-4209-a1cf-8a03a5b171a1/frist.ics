@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5516269a-8411-4209-a1cf-8a03a5b171a1-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261214T140000Z
+SUMMARY:Délai de remise : Intégration des systèmes des installations p
+ ilotes VIS (système d’inspection visuelle) et ZDS (système de détecti
+ on de train) et achat des radars
+DESCRIPTION:Acheteur public : SBB CFF FFS Infra-ESP-EIT-BST\nDélai de re
+ mise : 14.12.2026\, 15 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/5516269a-8411-4209-a1cf-8a03a5b171a1/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/5516269a-8411-4209-a1c
+ f-8a03a5b171a1
+URL:https://auftragsregister.ch/fr/auftrag/5516269a-8411-4209-a1cf-8a03a5b1
+ 71a1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Intégration des systèmes des installatio
+ ns pilotes VIS (système d’inspection visuelle) et ZDS (système de dét
+ ection de train) et achat des radars
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

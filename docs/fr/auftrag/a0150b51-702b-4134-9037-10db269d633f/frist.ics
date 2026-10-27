@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0150b51-702b-4134-9037-10db269d633f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Délai de remise : Zumikon\, A52\, ÜF Tobelmülistrasse\, Instan
+ dsetzung\, Baumeisterarbeiten Kd/CS
+DESCRIPTION:Acheteur public : Baudirektion Kanton Zürich\, Tiefbauamt\, 
+ Abt. Projektieren und Realisieren\nDélai de remise : 16.11.2026\, 10 
+ h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/a0150b
+ 51-702b-4134-9037-10db269d633f/\nPublication officielle : https://www.si
+ map.ch/fr/project-detail/a0150b51-702b-4134-9037-10db269d633f
+URL:https://auftragsregister.ch/fr/auftrag/a0150b51-702b-4134-9037-10db269d
+ 633f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Zumikon\, A52\, ÜF Tobelmülistrasse\, In
+ standsetzung\, Baumeisterarbeiten Kd/CS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:041ec6a5-05c6-49ba-ab79-d2b297388a9d-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261106T153000Z
+SUMMARY:Submission deadline: Installations sanitaires - Rénovation du bât
+ iment PICTO Avenue Ernest-Pictet 28-30
+DESCRIPTION:Public buyer: Etat de Genève\, Département du territoire - DT
+ \, Office Cantonal des bâtiments (OCBA)\nSubmission deadline: 6 Nov 202
+ 6\, 16:30\nIn the register: https://auftragsregister.ch/en/auftrag/041ec6a
+ 5-05c6-49ba-ab79-d2b297388a9d/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/041ec6a5-05c6-49ba-ab79-d2b297388a9d
+URL:https://auftragsregister.ch/en/auftrag/041ec6a5-05c6-49ba-ab79-d2b29738
+ 8a9d/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Installations sanitaires - Rénovation du 
+ bâtiment PICTO Avenue Ernest-Pictet 28-30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4dc0eed6-b4d8-46bd-9e8e-16450a139152-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Eingabefrist: Gesuchsbearbeitung 2027-29 Luzerner Innovationsbeitra
+ g (LIB)
+DESCRIPTION:Auftraggeber: Dienststelle Raum und Wirtschaft (rawi)\nEingabef
+ rist: 12.11.2026\nIm Register: https://auftragsregister.ch/de/auftrag/4dc0
+ eed6-b4d8-46bd-9e8e-16450a139152/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/4dc0eed6-b4d8-46bd-9e8e-16450a139152
+URL:https://auftragsregister.ch/de/auftrag/4dc0eed6-b4d8-46bd-9e8e-16450a13
+ 9152/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesuchsbearbeitung 2027-29 Luzerner Innovationsbe
+ itrag (LIB)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

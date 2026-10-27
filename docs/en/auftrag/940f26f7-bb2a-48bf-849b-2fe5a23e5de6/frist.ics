@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:940f26f7-bb2a-48bf-849b-2fe5a23e5de6-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261029T150000Z
+SUMMARY:Submission deadline: Nuova scuola elementare Magliaso - Opere da so
+ ttofondi
+DESCRIPTION:Public buyer: Comune di Magliaso\nSubmission deadline: 29 Oct
+  2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/94
+ 0f26f7-bb2a-48bf-849b-2fe5a23e5de6/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/940f26f7-bb2a-48bf-849b-2fe5a23e5de6
+URL:https://auftragsregister.ch/en/auftrag/940f26f7-bb2a-48bf-849b-2fe5a23e
+ 5de6/
+LOCATION:Magliaso
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Nuova scuola elementare Magliaso - Opere d
+ a sottofondi
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

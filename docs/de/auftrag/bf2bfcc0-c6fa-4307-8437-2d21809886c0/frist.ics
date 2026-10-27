@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bf2bfcc0-c6fa-4307-8437-2d21809886c0-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Eingabefrist: Modernisation de l'infrastructure Wi-Fi
+DESCRIPTION:Auftraggeber: Hospice général\nEingabefrist: 23.11.2026\, 11.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/bf2bfcc0-c6fa
+ -4307-8437-2d21809886c0/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/bf2bfcc0-c6fa-4307-8437-2d21809886c0
+URL:https://auftragsregister.ch/de/auftrag/bf2bfcc0-c6fa-4307-8437-2d218098
+ 86c0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Modernisation de l'infrastructure Wi-Fi
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

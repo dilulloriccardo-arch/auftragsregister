@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d5892553-8e03-4181-8519-d3ec933d74f1-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261130T090000Z
+SUMMARY:Scadenza: Tunnel de lavage à bande pour batteries de cuisine\, bac
+ s GN et ustensiles
+DESCRIPTION:Ente pubblico: CHUV - centrale d'achats et d'ingénierie biomé
+ dicale (CAIB)\nScadenza: 30.11.2026\, 10:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/d5892553-8e03-4181-8519-d3ec933d74f1/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/d5892553-8e03-4181-85
+ 19-d3ec933d74f1
+URL:https://auftragsregister.ch/it/auftrag/d5892553-8e03-4181-8519-d3ec933d
+ 74f1/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Tunnel de lavage à bande pour batteries de cuisine\,
+  bacs GN et ustensiles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

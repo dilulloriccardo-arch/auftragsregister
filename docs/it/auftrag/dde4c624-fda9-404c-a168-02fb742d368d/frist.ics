@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dde4c624-fda9-404c-a168-02fb742d368d-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T140000Z
+SUMMARY:Scadenza: Beschaffung Wertpapier für Fahrkarten
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB\, Konzerneinkauf
+  Dienstleistungen\nScadenza: 19.11.2026\, 15:00\nNel registro: https://auf
+ tragsregister.ch/it/auftrag/dde4c624-fda9-404c-a168-02fb742d368d/\nPubblic
+ azione ufficiale: https://www.simap.ch/it/project-detail/dde4c624-fda9-404
+ c-a168-02fb742d368d
+URL:https://auftragsregister.ch/it/auftrag/dde4c624-fda9-404c-a168-02fb742d
+ 368d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung Wertpapier für Fahrkarten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:67b282e7-003f-4cb8-920a-ec469a4799f1-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Submission deadline: IMA ZV Kaserne Zürich\, Gesamtinstandsetzung/
+ Umnutzung l BKP 275-01 Schliessanlage
+DESCRIPTION:Public buyer: Hochbauamt Kanton Zürich\, Baubereich C\nSubmiss
+ ion deadline: 16 Nov 2026\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/67b282e7-003f-4cb8-920a-ec469a4799f1/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/67b282e7-003f-4cb8-920a-ec469
+ a4799f1
+URL:https://auftragsregister.ch/en/auftrag/67b282e7-003f-4cb8-920a-ec469a47
+ 99f1/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: IMA ZV Kaserne Zürich\, Gesamtinstandsetz
+ ung/Umnutzung l BKP 275-01 Schliessanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0723e2c7-c5b3-431b-befe-0dd2c81fff98-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Submission deadline: BKP 271 Gipserarbeiten
+DESCRIPTION:Public buyer: Gemeinde Ebikon (Jung Meyerhans AG)\nSubmission d
+ eadline: 2 Dec 2026\, 12:00\nIn the register: https://auftragsregister.c
+ h/en/auftrag/0723e2c7-c5b3-431b-befe-0dd2c81fff98/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/0723e2c7-c5b3-431b-befe-0dd2c81fff9
+ 8
+URL:https://auftragsregister.ch/en/auftrag/0723e2c7-c5b3-431b-befe-0dd2c81f
+ ff98/
+LOCATION:Ebikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 271 Gipserarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

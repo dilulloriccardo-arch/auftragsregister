@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4ecd12ec-4cba-4844-9fbb-de7e8c2209b1-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261109T160000Z
+SUMMARY:Délai de remise : BKP 273.0 Innentüren
+DESCRIPTION:Acheteur public : Regionales Pflegezentrum Baden\nDélai de r
+ emise : 09.11.2026\, 17 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/4ecd12ec-4cba-4844-9fbb-de7e8c2209b1/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/4ecd12ec-4cba-4844-9f
+ bb-de7e8c2209b1
+URL:https://auftragsregister.ch/fr/auftrag/4ecd12ec-4cba-4844-9fbb-de7e8c22
+ 09b1/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 273.0 Innentüren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

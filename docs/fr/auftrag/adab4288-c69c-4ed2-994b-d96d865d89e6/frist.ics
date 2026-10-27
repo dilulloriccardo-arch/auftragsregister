@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:adab4288-c69c-4ed2-994b-d96d865d89e6-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261113T140000Z
+SUMMARY:Délai de remise : Fachhochschulzentrum Graubünden (FHZGR)\, Chu
+ r / BKP 335 Appareils à faible courant Équipement audiovisuel
+DESCRIPTION:Acheteur public : Hochbauamt Graubünden\nDélai de remise 
+ : 13.11.2026\, 15 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/adab4288-c69c-4ed2-994b-d96d865d89e6/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/adab4288-c69c-4ed2-994b-d96d8
+ 65d89e6
+URL:https://auftragsregister.ch/fr/auftrag/adab4288-c69c-4ed2-994b-d96d865d
+ 89e6/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fachhochschulzentrum Graubünden (FHZGR)\,
+  Chur / BKP 335 Appareils à faible courant Équipement audiovisuel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2590a85e-e946-4b8e-9d65-4cb0472c9894-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261124T140000Z
+SUMMARY:Délai de remise : Extension des locaux scolaires de Kilchbühl 
+ à Biel-Benken (Bâle-Campagne)\, CFC 211\, travaux d’entreprise de maç
+ onnerie
+DESCRIPTION:Acheteur public : Gemeindeverwaltung Biel-Benken\nDélai de r
+ emise : 24.11.2026\, 15 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/2590a85e-e946-4b8e-9d65-4cb0472c9894/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/2590a85e-e946-4b8e-9d
+ 65-4cb0472c9894
+URL:https://auftragsregister.ch/fr/auftrag/2590a85e-e946-4b8e-9d65-4cb0472c
+ 9894/
+LOCATION:Biel-Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Extension des locaux scolaires de Kilchbü
+ hl à Biel-Benken (Bâle-Campagne)\, CFC 211\, travaux d’entreprise de m
+ açonnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0edc5ce1-11ce-4886-9161-e746875a26a5-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261206T225900Z
+SUMMARY:Eingabefrist: Bahnersatzverkehr für Totalsperren im Jahr 2027
+DESCRIPTION:Auftraggeber: Rhätische Bahn AG\nEingabefrist: 06.12.2026\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0edc5ce1-11c
+ e-4886-9161-e746875a26a5/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/0edc5ce1-11ce-4886-9161-e746875a26a5
+URL:https://auftragsregister.ch/de/auftrag/0edc5ce1-11ce-4886-9161-e746875a
+ 26a5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bahnersatzverkehr für Totalsperren im Jahr 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

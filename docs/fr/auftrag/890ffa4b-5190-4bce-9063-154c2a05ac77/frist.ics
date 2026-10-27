@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:890ffa4b-5190-4bce-9063-154c2a05ac77-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261113T210000Z
+SUMMARY:Délai de remise : VSZK - Appel d'offres BKP 235 Contrôle d'acc
+ ès
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Schwyz\nDélai de remise
+  : 13.11.2026\, 22 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/890ffa4b-5190-4bce-9063-154c2a05ac77/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/890ffa4b-5190-4bce-9063-15
+ 4c2a05ac77
+URL:https://auftragsregister.ch/fr/auftrag/890ffa4b-5190-4bce-9063-154c2a05
+ ac77/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : VSZK - Appel d'offres BKP 235 Contrôle d'
+ accès
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

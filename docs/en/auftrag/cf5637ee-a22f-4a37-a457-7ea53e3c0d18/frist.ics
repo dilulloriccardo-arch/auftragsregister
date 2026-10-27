@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf5637ee-a22f-4a37-a457-7ea53e3c0d18-frist@auftragsregister.ch
+DTSTAMP:20260820T000000Z
+SEQUENCE:1
+DTSTART:20261214T225900Z
+SUMMARY:Submission deadline: (26067) 420 Interkulturelles Dolmetschen für 
+ Asylsuchende
+DESCRIPTION:Public buyer: Staatssekretariat für Migration\nSubmission dead
+ line: 14 Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/
+ en/auftrag/cf5637ee-a22f-4a37-a457-7ea53e3c0d18/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/cf5637ee-a22f-4a37-a457-7ea53e3c0d18
+URL:https://auftragsregister.ch/en/auftrag/cf5637ee-a22f-4a37-a457-7ea53e3c
+ 0d18/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (26067) 420 Interkulturelles Dolmetschen f
+ ür Asylsuchende
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9fb5ee9a-8772-4b4e-a280-5483c839e975-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261210T153000Z
+SUMMARY:Délai de remise : Extension de la Haute Ecole de Santé de Genè
+ ve
+DESCRIPTION:Acheteur public : Etat de Genève\, Département du Territoir
+ e - DT\, Office cantonal des bâtiments\nDélai de remise : 10.12.2026\,
+  16 h 30\nDans le registre : https://auftragsregister.ch/fr/auftrag/
+ 9fb5ee9a-8772-4b4e-a280-5483c839e975/\nPublication officielle : https://
+ www.simap.ch/fr/project-detail/9fb5ee9a-8772-4b4e-a280-5483c839e975
+URL:https://auftragsregister.ch/fr/auftrag/9fb5ee9a-8772-4b4e-a280-5483c839
+ e975/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Extension de la Haute Ecole de Santé de G
+ enève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

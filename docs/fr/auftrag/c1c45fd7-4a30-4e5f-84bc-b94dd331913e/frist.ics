@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c1c45fd7-4a30-4e5f-84bc-b94dd331913e-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Délai de remise : Sanierung Mehrzweckhalle und Gemeindehaus\, 89
+ 16 Jonen / BKP 244 Lüftungsanlagen
+DESCRIPTION:Acheteur public : Gemeinde Jonen (Batimo AG)\nDélai de remis
+ e : 16.11.2026\, 16 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/c1c45fd7-4a30-4e5f-84bc-b94dd331913e/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/c1c45fd7-4a30-4e5f-84bc-b
+ 94dd331913e
+URL:https://auftragsregister.ch/fr/auftrag/c1c45fd7-4a30-4e5f-84bc-b94dd331
+ 913e/
+LOCATION:Jonen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Mehrzweckhalle und Gemeindehaus\
+ , 8916 Jonen / BKP 244 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

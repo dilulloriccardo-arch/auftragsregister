@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7cf1d41a-357d-445a-ac8a-4300123339d7-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T225900Z
+SUMMARY:Eingabefrist: EBP-663 Sanierung Dampfleitung EZF arabern EMSR
+DESCRIPTION:Auftraggeber: Energie Wasser Bern\nEingabefrist: 25.11.2026\, 2
+ 3.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/7cf1d41a-35
+ 7d-445a-ac8a-4300123339d7/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/7cf1d41a-357d-445a-ac8a-4300123339d7
+URL:https://auftragsregister.ch/de/auftrag/7cf1d41a-357d-445a-ac8a-43001233
+ 39d7/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: EBP-663 Sanierung Dampfleitung EZF arabern EMSR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

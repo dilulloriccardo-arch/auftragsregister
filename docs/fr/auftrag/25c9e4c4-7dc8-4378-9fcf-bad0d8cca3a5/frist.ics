@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25c9e4c4-7dc8-4378-9fcf-bad0d8cca3a5-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Délai de remise : Neubau Schule Wiesental\, BKP 282.5 Wandbeklei
+ dungen aus Holz 2. Etappe
+DESCRIPTION:Acheteur public : Einwohnergemeinde Baar\nDélai de remise 
+ : 09.11.2026\, 11 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/25c9e4c4-7dc8-4378-9fcf-bad0d8cca3a5/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/25c9e4c4-7dc8-4378-9fcf-bad0d
+ 8cca3a5
+URL:https://auftragsregister.ch/fr/auftrag/25c9e4c4-7dc8-4378-9fcf-bad0d8cc
+ a3a5/
+LOCATION:Baar
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Schule Wiesental\, BKP 282.5 Wandbe
+ kleidungen aus Holz 2. Etappe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

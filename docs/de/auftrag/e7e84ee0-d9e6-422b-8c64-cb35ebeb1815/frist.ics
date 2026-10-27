@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7e84ee0-d9e6-422b-8c64-cb35ebeb1815-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270107T150000Z
+SUMMARY:Eingabefrist: 26-417-SA Rottenverstärkung Sicherungsanlagen
+DESCRIPTION:Auftraggeber: SBB CFF FFS Infra-Bahntechnik\nEingabefrist: 07.0
+ 1.2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e
+ 7e84ee0-d9e6-422b-8c64-cb35ebeb1815/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/e7e84ee0-d9e6-422b-8c64-cb35ebeb1815
+URL:https://auftragsregister.ch/de/auftrag/e7e84ee0-d9e6-422b-8c64-cb35ebeb
+ 1815/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 26-417-SA Rottenverstärkung Sicherungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

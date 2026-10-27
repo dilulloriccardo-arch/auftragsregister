@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df9e0152-3b03-4f9e-af3f-4992b8ab5191-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Submission deadline: 723.20 Ladirerstrasse Grüneck Baumeisterarbei
+ ten
+DESCRIPTION:Public buyer: Tiefbauamt Graubünden\nSubmission deadline: 5 N
+ ov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/
+ df9e0152-3b03-4f9e-af3f-4992b8ab5191/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/df9e0152-3b03-4f9e-af3f-4992b8ab5191
+URL:https://auftragsregister.ch/en/auftrag/df9e0152-3b03-4f9e-af3f-4992b8ab
+ 5191/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 723.20 Ladirerstrasse Grüneck Baumeistera
+ rbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

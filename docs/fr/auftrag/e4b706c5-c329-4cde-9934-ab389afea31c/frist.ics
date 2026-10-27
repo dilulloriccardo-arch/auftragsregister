@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4b706c5-c329-4cde-9934-ab389afea31c-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261119T100000Z
+SUMMARY:Délai de remise : Mise en place de 5 prestations additionnelles 
+ via le Guichet Virtuel de l'Etat de Fribourg
+DESCRIPTION:Acheteur public : Service de l'informatique et des télécomm
+ unications (SITel)\nDélai de remise : 19.11.2026\, 11 h 00\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/e4b706c5-c329-4cde-99
+ 34-ab389afea31c/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/e4b706c5-c329-4cde-9934-ab389afea31c
+URL:https://auftragsregister.ch/fr/auftrag/e4b706c5-c329-4cde-9934-ab389afe
+ a31c/
+LOCATION:Givisiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mise en place de 5 prestations additionnel
+ les via le Guichet Virtuel de l'Etat de Fribourg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

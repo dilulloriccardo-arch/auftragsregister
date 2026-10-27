@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a836d1ea-342d-4ab0-87c2-9b27d54ad016-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261028T110000Z
+SUMMARY:Eingabefrist: Fahrzeugersatzbeschaffung Elektro-Geräteträger I
+DESCRIPTION:Auftraggeber: Stadt Uster\, Abteilung Bau\nEingabefrist: 28.10.
+ 2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a83
+ 6d1ea-342d-4ab0-87c2-9b27d54ad016/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/a836d1ea-342d-4ab0-87c2-9b27d54ad016
+URL:https://auftragsregister.ch/de/auftrag/a836d1ea-342d-4ab0-87c2-9b27d54a
+ d016/
+LOCATION:Uster
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fahrzeugersatzbeschaffung Elektro-Geräteträger 
+ I
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

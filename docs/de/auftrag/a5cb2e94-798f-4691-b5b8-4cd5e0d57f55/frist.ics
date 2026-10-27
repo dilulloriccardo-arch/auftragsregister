@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5cb2e94-798f-4691-b5b8-4cd5e0d57f55-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Eingabefrist: K 10 Escholzmatt-Marbach\, Ausbau RVA
+DESCRIPTION:Auftraggeber: Verkehr und Infrastruktur (vif)\, Planung Strasse
+ n\nEingabefrist: 09.11.2026\, 16.00 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/a5cb2e94-798f-4691-b5b8-4cd5e0d57f55/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/a5cb2e94-798f-4691-b5b8-4cd5
+ e0d57f55
+URL:https://auftragsregister.ch/de/auftrag/a5cb2e94-798f-4691-b5b8-4cd5e0d5
+ 7f55/
+LOCATION:Kriens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: K 10 Escholzmatt-Marbach\, Ausbau RVA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

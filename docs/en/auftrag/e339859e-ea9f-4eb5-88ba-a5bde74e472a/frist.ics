@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e339859e-ea9f-4eb5-88ba-a5bde74e472a-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Submission deadline: ARA Eglisau\, Ausbau ARA 2030\, V-601 External
+  works and utility trenching works
+DESCRIPTION:Public buyer: Gemeinde Eglisau\nSubmission deadline: 23 Nov 2
+ 026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/e3398
+ 59e-ea9f-4eb5-88ba-a5bde74e472a/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/e339859e-ea9f-4eb5-88ba-a5bde74e472a
+URL:https://auftragsregister.ch/en/auftrag/e339859e-ea9f-4eb5-88ba-a5bde74e
+ 472a/
+LOCATION:Eglisau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ARA Eglisau\, Ausbau ARA 2030\, V-601 Exte
+ rnal works and utility trenching works
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d32ca01d-027a-4a5f-8c9d-87b969e85514-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261104T160000Z
+SUMMARY:Eingabefrist: Parc de téléphones mobiles 2026/2027
+DESCRIPTION:Auftraggeber: Police Cantonale Valaisanne / Kantonspolizei Wall
+ is\nEingabefrist: 04.11.2026\, 17.00 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/d32ca01d-027a-4a5f-8c9d-87b969e85514/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/d32ca01d-027a-4a5f-8c9d-87b
+ 969e85514
+URL:https://auftragsregister.ch/de/auftrag/d32ca01d-027a-4a5f-8c9d-87b969e8
+ 5514/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Parc de téléphones mobiles 2026/2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

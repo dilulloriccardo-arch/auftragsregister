@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cbc0a165-0e78-48e2-ae76-fbd2bda2ed04-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:4
+DTSTART:20261222T150000Z
+SUMMARY:Délai de remise : Pumpspeicherwerk Grimsel 4\, Los Panzerung Tri
+ ebwasserweg und Los UW-Schützen
+DESCRIPTION:Acheteur public : Kraftwerke Oberhasli AG\nDélai de remise
+  : 22.12.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/cbc0a165-0e78-48e2-ae76-fbd2bda2ed04/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/cbc0a165-0e78-48e2-ae76-fb
+ d2bda2ed04
+URL:https://auftragsregister.ch/fr/auftrag/cbc0a165-0e78-48e2-ae76-fbd2bda2
+ ed04/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Pumpspeicherwerk Grimsel 4\, Los Panzerung
+  Triebwasserweg und Los UW-Schützen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

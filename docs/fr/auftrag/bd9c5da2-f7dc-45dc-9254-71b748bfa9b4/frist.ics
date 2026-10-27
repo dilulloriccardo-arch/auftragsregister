@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd9c5da2-f7dc-45dc-9254-71b748bfa9b4-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Délai de remise : Reseller Public Cloud
+DESCRIPTION:Acheteur public : Swissgrid AG\nDélai de remise : 11.11.20
+ 26\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr/auft
+ rag/bd9c5da2-f7dc-45dc-9254-71b748bfa9b4/\nPublication officielle : http
+ s://www.simap.ch/fr/project-detail/bd9c5da2-f7dc-45dc-9254-71b748bfa9b4
+URL:https://auftragsregister.ch/fr/auftrag/bd9c5da2-f7dc-45dc-9254-71b748bf
+ a9b4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Reseller Public Cloud
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

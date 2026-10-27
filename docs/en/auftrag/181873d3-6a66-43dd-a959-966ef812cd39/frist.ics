@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:181873d3-6a66-43dd-a959-966ef812cd39-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Submission deadline: Innoguide
+DESCRIPTION:Public buyer: Amt für Wirtschaft und Arbeit\nSubmission deadli
+ ne: 11 Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch/en
+ /auftrag/181873d3-6a66-43dd-a959-966ef812cd39/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/181873d3-6a66-43dd-a959-966ef812cd39
+URL:https://auftragsregister.ch/en/auftrag/181873d3-6a66-43dd-a959-966ef812
+ cd39/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Innoguide
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b644430a-d915-480d-bb32-2204c3d3b263-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261030T225900Z
+SUMMARY:Délai de remise : Wärmeverbund II – Zubringerleitung Los 3\, 
+ 4\, 6 und 7
+DESCRIPTION:Acheteur public : Stadt Laufenburg\nDélai de remise : 30.1
+ 0.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/b644430a-d915-480d-bb32-2204c3d3b263/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/b644430a-d915-480d-bb32-2204c3d3b26
+ 3
+URL:https://auftragsregister.ch/fr/auftrag/b644430a-d915-480d-bb32-2204c3d3
+ b263/
+LOCATION:Laufenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wärmeverbund II – Zubringerleitung Los 
+ 3\, 4\, 6 und 7
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

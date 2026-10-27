@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:73f650af-3881-4335-8852-fd69d0cd18aa-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261208T120000Z
+SUMMARY:Délai de remise : arabern - P2602 Ersatz Grobrechen - Submission
+ spaket M01 - Grobrechen
+DESCRIPTION:Acheteur public : ara region bern ag\nDélai de remise : 08
+ .12.2026\, 13 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/73f650af-3881-4335-8852-fd69d0cd18aa/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/73f650af-3881-4335-8852-fd69d0cd1
+ 8aa
+URL:https://auftragsregister.ch/fr/auftrag/73f650af-3881-4335-8852-fd69d0cd
+ 18aa/
+LOCATION:Herrenschwanden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : arabern - P2602 Ersatz Grobrechen - Submis
+ sionspaket M01 - Grobrechen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

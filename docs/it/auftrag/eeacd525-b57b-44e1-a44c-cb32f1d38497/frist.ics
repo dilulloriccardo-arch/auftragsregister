@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eeacd525-b57b-44e1-a44c-cb32f1d38497-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Scadenza: Renforcement conduites GeniLac – Secteur P47
+DESCRIPTION:Ente pubblico: Services Industriels de Genève (SIG) - Directio
+ n Achats\nScadenza: 23.11.2026\, 16:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/eeacd525-b57b-44e1-a44c-cb32f1d38497/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/eeacd525-b57b-44e1-a44c-cb
+ 32f1d38497
+URL:https://auftragsregister.ch/it/auftrag/eeacd525-b57b-44e1-a44c-cb32f1d3
+ 8497/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Renforcement conduites GeniLac – Secteur P47
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:966326ee-454c-4de0-83a6-bd094b43ca69-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Eingabefrist: PAC Ouchy - monte-charge
+DESCRIPTION:Auftraggeber: Ville de Lausanne – SIL – Service patrimoine 
+ (PAT)\nEingabefrist: 13.11.2026\, 12.00 Uhr\nIm Register: https://auftrag
+ sregister.ch/de/auftrag/966326ee-454c-4de0-83a6-bd094b43ca69/\nAmtliche Pu
+ blikation: https://www.simap.ch/de/project-detail/966326ee-454c-4de0-83a6-
+ bd094b43ca69
+URL:https://auftragsregister.ch/de/auftrag/966326ee-454c-4de0-83a6-bd094b43
+ ca69/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: PAC Ouchy - monte-charge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

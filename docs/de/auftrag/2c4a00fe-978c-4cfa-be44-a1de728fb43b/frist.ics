@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2c4a00fe-978c-4cfa-be44-a1de728fb43b-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Eingabefrist: Appel d’offre public pour la réalisation des deux 
+ premières vagues du cinquième échantillon du Panel suisse de ménages (
+ PSM) et de l’étude sur l’emploi du temps STRATUS
+DESCRIPTION:Auftraggeber: FORS - Swiss Centre of Expertise in the Social Sc
+ iences\nEingabefrist: 20.11.2026\, 12.00 Uhr\nIm Register: https://auftra
+ gsregister.ch/de/auftrag/2c4a00fe-978c-4cfa-be44-a1de728fb43b/\nAmtliche P
+ ublikation: https://www.simap.ch/de/project-detail/2c4a00fe-978c-4cfa-be44
+ -a1de728fb43b
+URL:https://auftragsregister.ch/de/auftrag/2c4a00fe-978c-4cfa-be44-a1de728f
+ b43b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Appel d’offre public pour la réalisation des d
+ eux premières vagues du cinquième échantillon du Panel suisse de ménag
+ es (PSM) et de l’étude sur l’emploi du temps STRATUS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

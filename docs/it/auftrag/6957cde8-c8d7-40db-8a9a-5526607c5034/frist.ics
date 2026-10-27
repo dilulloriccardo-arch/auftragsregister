@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6957cde8-c8d7-40db-8a9a-5526607c5034-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Scadenza: MP-260016\, Hauptinspektionen Bau 2027-2029
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Filiale Winterth
+ ur\nScadenza: 09.11.2026\, 23:59\nNel registro: https://auftragsregister.c
+ h/it/auftrag/6957cde8-c8d7-40db-8a9a-5526607c5034/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/6957cde8-c8d7-40db-8a9a-5526607c
+ 5034
+URL:https://auftragsregister.ch/it/auftrag/6957cde8-c8d7-40db-8a9a-5526607c
+ 5034/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-260016\, Hauptinspektionen Bau 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

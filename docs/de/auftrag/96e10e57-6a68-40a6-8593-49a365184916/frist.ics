@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:96e10e57-6a68-40a6-8593-49a365184916-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261203T110000Z
+SUMMARY:Eingabefrist: tpg – Transformation et rénovation du CMB - LOT N
+ °15 – Installations CVC – (CFC 242 – 244 - 144)
+DESCRIPTION:Auftraggeber: Transport publics genevois (tpg)\nEingabefrist: 0
+ 3.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/96e10e57-6a68-40a6-8593-49a365184916/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/96e10e57-6a68-40a6-8593-49a365184916
+URL:https://auftragsregister.ch/de/auftrag/96e10e57-6a68-40a6-8593-49a36518
+ 4916/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: tpg – Transformation et rénovation du CMB - LO
+ T N°15 – Installations CVC – (CFC 242 – 244 - 144)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

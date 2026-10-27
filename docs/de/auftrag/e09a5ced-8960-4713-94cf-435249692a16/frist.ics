@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e09a5ced-8960-4713-94cf-435249692a16-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:2
+DTSTART:20261116T070000Z
+SUMMARY:Eingabefrist: Rahmenvertrag fachliche Begleitung Klimaforum
+DESCRIPTION:Auftraggeber: GUD - Umwelt- und Gesundheitsschutz (UGZ)\nEingab
+ efrist: 16.11.2026\, 8.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/e09a5ced-8960-4713-94cf-435249692a16/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/e09a5ced-8960-4713-94cf-435249692a16
+URL:https://auftragsregister.ch/de/auftrag/e09a5ced-8960-4713-94cf-43524969
+ 2a16/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rahmenvertrag fachliche Begleitung Klimaforum
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

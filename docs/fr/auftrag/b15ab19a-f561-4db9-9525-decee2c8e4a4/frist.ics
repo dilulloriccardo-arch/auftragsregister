@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b15ab19a-f561-4db9-9525-decee2c8e4a4-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T103000Z
+SUMMARY:Délai de remise : P2025/206\, Musée du Léman. Appels d'offres 
+ ingénieur chauffage/ventilation
+DESCRIPTION:Acheteur public : Ville de Nyon - Service d'architecture\nDé
+ lai de remise : 07.12.2026\, 11 h 30\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/b15ab19a-f561-4db9-9525-decee2c8e4a4/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/b15ab19a-f561
+ -4db9-9525-decee2c8e4a4
+URL:https://auftragsregister.ch/fr/auftrag/b15ab19a-f561-4db9-9525-decee2c8
+ e4a4/
+LOCATION:Nyon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : P2025/206\, Musée du Léman. Appels d'off
+ res ingénieur chauffage/ventilation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

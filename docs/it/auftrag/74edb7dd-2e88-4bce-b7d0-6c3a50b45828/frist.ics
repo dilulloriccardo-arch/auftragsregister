@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:74edb7dd-2e88-4bce-b7d0-6c3a50b45828-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Scadenza: Kollegium Brig - Sanierung Internat / BKP 285.1 Innere Ma
+ lerarbeiten (Südtrakt)
+DESCRIPTION:Ente pubblico: Departement für Finanzen und Energie\, Dienstst
+ elle für Immobilien und Bauliches Erbe\nScadenza: 11.11.2026\nNel registr
+ o: https://auftragsregister.ch/it/auftrag/74edb7dd-2e88-4bce-b7d0-6c3a50b4
+ 5828/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/74e
+ db7dd-2e88-4bce-b7d0-6c3a50b45828
+URL:https://auftragsregister.ch/it/auftrag/74edb7dd-2e88-4bce-b7d0-6c3a50b4
+ 5828/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kollegium Brig - Sanierung Internat / BKP 285.1 Inner
+ e Malerarbeiten (Südtrakt)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

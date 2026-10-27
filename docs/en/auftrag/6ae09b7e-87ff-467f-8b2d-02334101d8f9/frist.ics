@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6ae09b7e-87ff-467f-8b2d-02334101d8f9-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Submission deadline: Kirchgemeindehaus Enge\, Instandsetzung Gebäu
+ de mit Bistrobetrieb BKP 244 Lüftungsanlagen
+DESCRIPTION:Public buyer: Reformierte Kirchgemeinde Zürich\nSubmission dea
+ dline: 25 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch
+ /en/auftrag/6ae09b7e-87ff-467f-8b2d-02334101d8f9/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/6ae09b7e-87ff-467f-8b2d-02334101d8f9
+URL:https://auftragsregister.ch/en/auftrag/6ae09b7e-87ff-467f-8b2d-02334101
+ d8f9/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kirchgemeindehaus Enge\, Instandsetzung Ge
+ bäude mit Bistrobetrieb BKP 244 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

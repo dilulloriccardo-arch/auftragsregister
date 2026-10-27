@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46da9531-a7d7-4b32-948d-6d992a4cfe54-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261201T170000Z
+SUMMARY:Eingabefrist: Seewasserwerk Riet II\, Los 7: Heizung\, Lüftung\, K
+ lima\, Sanitär
+DESCRIPTION:Auftraggeber: RWSG Regionale Wasserversorgung St. Gallen AG\nEi
+ ngabefrist: 01.12.2026\, 18.00 Uhr\nIm Register: https://auftragsregister
+ .ch/de/auftrag/46da9531-a7d7-4b32-948d-6d992a4cfe54/\nAmtliche Publikation
+ : https://www.simap.ch/de/project-detail/46da9531-a7d7-4b32-948d-6d992a4cf
+ e54
+URL:https://auftragsregister.ch/de/auftrag/46da9531-a7d7-4b32-948d-6d992a4c
+ fe54/
+LOCATION:Goldach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Seewasserwerk Riet II\, Los 7: Heizung\, Lüftung
+ \, Klima\, Sanitär
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

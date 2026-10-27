@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23204d9e-2526-40c9-8921-d14aca60e35a-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261113T103000Z
+SUMMARY:Submission deadline: Beleuchtungsersatz und Umrüstung auf LED\, KU
+ SPO und VGG Volketswil
+DESCRIPTION:Public buyer: Gemeinde Volketswil\nSubmission deadline: 13 Nov
+  2026\, 11:30\nIn the register: https://auftragsregister.ch/en/auftrag/23
+ 204d9e-2526-40c9-8921-d14aca60e35a/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/23204d9e-2526-40c9-8921-d14aca60e35a
+URL:https://auftragsregister.ch/en/auftrag/23204d9e-2526-40c9-8921-d14aca60
+ e35a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beleuchtungsersatz und Umrüstung auf LED\
+ , KUSPO und VGG Volketswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

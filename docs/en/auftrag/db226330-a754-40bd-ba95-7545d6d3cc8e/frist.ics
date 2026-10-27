@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db226330-a754-40bd-ba95-7545d6d3cc8e-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261113T225900Z
+SUMMARY:Submission deadline: framework agreement for the manufacture\, test
+ ing an delivery of 123kV gas-insulated circuit breakers (SF6-free)
+DESCRIPTION:Public buyer: Axpo Grid AG\nSubmission deadline: 13 Nov 2026\
+ , 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/db226330-
+ a754-40bd-ba95-7545d6d3cc8e/\nOfficial publication: https://www.simap.ch/e
+ n/project-detail/db226330-a754-40bd-ba95-7545d6d3cc8e
+URL:https://auftragsregister.ch/en/auftrag/db226330-a754-40bd-ba95-7545d6d3
+ cc8e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: framework agreement for the manufacture\, 
+ testing an delivery of 123kV gas-insulated circuit breakers (SF6-free)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

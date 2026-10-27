@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7bfc02c3-b5ac-49e2-89f8-568ec55ba86d-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261111T090000Z
+SUMMARY:Eingabefrist: Montes-lits et ascenseur pour la Clinique Joli-Mont
+DESCRIPTION:Auftraggeber: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nEingabefrist: 11.11.2026\, 10.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/7bfc02c3-b5ac-49e2-89f8-568ec55ba86d/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/7bfc02c3-b5
+ ac-49e2-89f8-568ec55ba86d
+URL:https://auftragsregister.ch/de/auftrag/7bfc02c3-b5ac-49e2-89f8-568ec55b
+ a86d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Montes-lits et ascenseur pour la Clinique Joli-Mo
+ nt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

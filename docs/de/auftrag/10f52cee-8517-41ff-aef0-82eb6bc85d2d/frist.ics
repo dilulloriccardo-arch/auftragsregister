@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10f52cee-8517-41ff-aef0-82eb6bc85d2d-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Eingabefrist: MP-260035\, F4 EP\, GIS Datenbank Entwässerung
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nEingabefrist: 11.11.2026\, 23.59 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/10f52cee-8517-41ff-aef0-82eb6bc85d2d/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/10f52cee-8517-41ff-aef0-82eb
+ 6bc85d2d
+URL:https://auftragsregister.ch/de/auftrag/10f52cee-8517-41ff-aef0-82eb6bc8
+ 5d2d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-260035\, F4 EP\, GIS Datenbank Entwässerung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

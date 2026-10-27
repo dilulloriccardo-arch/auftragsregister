@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ae493921-2e9d-4edf-ac9e-db27c0ee5087-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:1
+DTSTART:20270427T215900Z
+SUMMARY:Scadenza: 18.0321_Bern\, Bremgartenstrasse 131-137\, Gymnasium Neuf
+ eld\, Instandstellung und Ersatzneubau\, BKP 275 Schliessanlagen TP 1-2
+DESCRIPTION:Ente pubblico: Amt für Grundstücke und Gebäude des Kantons B
+ ern (AGG)\nScadenza: 27.04.2027\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/ae493921-2e9d-4edf-ac9e-db27c0ee5087/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/ae493921-2e9d-4edf-ac9e-d
+ b27c0ee5087
+URL:https://auftragsregister.ch/it/auftrag/ae493921-2e9d-4edf-ac9e-db27c0ee
+ 5087/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 18.0321_Bern\, Bremgartenstrasse 131-137\, Gymnasium 
+ Neufeld\, Instandstellung und Ersatzneubau\, BKP 275 Schliessanlagen TP 1-
+ 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

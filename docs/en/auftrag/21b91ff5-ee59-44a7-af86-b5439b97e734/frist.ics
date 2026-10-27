@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:21b91ff5-ee59-44a7-af86-b5439b97e734-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Submission deadline: Sachversicherung (Gebäude\, betriebliche Einr
+ ichtungen/Waren) der Gemeinde Zollikon
+DESCRIPTION:Public buyer: Gemeinde Zollikon (Walser Consulting AG)\nSubmiss
+ ion deadline: 2 Nov 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/21b91ff5-ee59-44a7-af86-b5439b97e734/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/21b91ff5-ee59-44a7-af86-b5439b
+ 97e734
+URL:https://auftragsregister.ch/en/auftrag/21b91ff5-ee59-44a7-af86-b5439b97
+ e734/
+LOCATION:Rüschlikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sachversicherung (Gebäude\, betriebliche 
+ Einrichtungen/Waren) der Gemeinde Zollikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

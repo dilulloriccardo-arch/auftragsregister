@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f62388ce-62f6-4d9e-955d-640af403ee05-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261203T225900Z
+SUMMARY:Délai de remise : Ersatzbeschaffung von ICT-Endgeräten der Prim
+ arschule Dübendorf
+DESCRIPTION:Acheteur public : Primarschule Dübendorf\nDélai de remise
+  : 03.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/f62388ce-62f6-4d9e-955d-640af403ee05/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/f62388ce-62f6-4d9e-955d-64
+ 0af403ee05
+URL:https://auftragsregister.ch/fr/auftrag/f62388ce-62f6-4d9e-955d-640af403
+ ee05/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatzbeschaffung von ICT-Endgeräten der 
+ Primarschule Dübendorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

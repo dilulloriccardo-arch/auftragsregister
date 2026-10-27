@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ed7706e-5112-49e8-866b-d73feff40a24-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:1
+DTSTART:20261102T080000Z
+SUMMARY:Eingabefrist: IWB\, Spezialtiefbauarbeiten Wanderstrasse
+DESCRIPTION:Auftraggeber: IWB Industrielle Werke Basel\nEingabefrist: 02.11
+ .2026\, 9.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8ed
+ 7706e-5112-49e8-866b-d73feff40a24/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/8ed7706e-5112-49e8-866b-d73feff40a24
+URL:https://auftragsregister.ch/de/auftrag/8ed7706e-5112-49e8-866b-d73feff4
+ 0a24/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: IWB\, Spezialtiefbauarbeiten Wanderstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

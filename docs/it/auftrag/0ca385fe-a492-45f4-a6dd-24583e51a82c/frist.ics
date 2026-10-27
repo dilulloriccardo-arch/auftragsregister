@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ca385fe-a492-45f4-a6dd-24583e51a82c-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:1
+DTSTART:20261113T140000Z
+SUMMARY:Scadenza: Fachhochschulzentrum Graubünden (FHZGR)\, Chur / BKP 273
+ .33 Schreiner Wandbekleidungen
+DESCRIPTION:Ente pubblico: Hochbauamt Graubünden\nScadenza: 13.11.2026\, 1
+ 5:00\nNel registro: https://auftragsregister.ch/it/auftrag/0ca385fe-a492-4
+ 5f4-a6dd-24583e51a82c/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/0ca385fe-a492-45f4-a6dd-24583e51a82c
+URL:https://auftragsregister.ch/it/auftrag/0ca385fe-a492-45f4-a6dd-24583e51
+ a82c/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fachhochschulzentrum Graubünden (FHZGR)\, Chur / BKP
+  273.33 Schreiner Wandbekleidungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

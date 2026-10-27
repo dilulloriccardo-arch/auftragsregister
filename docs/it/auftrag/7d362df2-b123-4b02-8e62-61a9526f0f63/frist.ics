@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7d362df2-b123-4b02-8e62-61a9526f0f63-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T153000Z
+SUMMARY:Scadenza: Projekt Schinzenhof und Gemeindehaus "Erneuerung der tech
+ nischen Anlagen\, Brandschutzertüchtigungen und Revitalisierung der Ausse
+ nerschliessung"\, BKP 212 Glasbausteinarbeiten HELIX
+DESCRIPTION:Ente pubblico: Gemeinde Horgen\nScadenza: 30.11.2026\, 16:30\nN
+ el registro: https://auftragsregister.ch/it/auftrag/7d362df2-b123-4b02-8e6
+ 2-61a9526f0f63/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/7d362df2-b123-4b02-8e62-61a9526f0f63
+URL:https://auftragsregister.ch/it/auftrag/7d362df2-b123-4b02-8e62-61a9526f
+ 0f63/
+LOCATION:Horgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Projekt Schinzenhof und Gemeindehaus "Erneuerung der 
+ technischen Anlagen\, Brandschutzertüchtigungen und Revitalisierung der A
+ ussenerschliessung"\, BKP 212 Glasbausteinarbeiten HELIX
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

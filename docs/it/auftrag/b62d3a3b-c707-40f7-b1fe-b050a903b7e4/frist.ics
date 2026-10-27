@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b62d3a3b-c707-40f7-b1fe-b050a903b7e4-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Scadenza: Rahmenvertrag Elektro-/ ICT-Dienstleistungen
+DESCRIPTION:Ente pubblico: Asyl-Organisation Zürich (AOZ)\nScadenza: 23.11
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/b62d3a
+ 3b-c707-40f7-b1fe-b050a903b7e4/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/b62d3a3b-c707-40f7-b1fe-b050a903b7e4
+URL:https://auftragsregister.ch/it/auftrag/b62d3a3b-c707-40f7-b1fe-b050a903
+ b7e4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenvertrag Elektro-/ ICT-Dienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

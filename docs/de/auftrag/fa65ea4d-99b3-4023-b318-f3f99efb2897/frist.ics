@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa65ea4d-99b3-4023-b318-f3f99efb2897-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261119T150000Z
+SUMMARY:Eingabefrist: 10013 Neubau LUKS Wolhusen\, B3.03 SKP 246.0 Kältean
+ lagen
+DESCRIPTION:Auftraggeber: LUKS Immobilien AG\nEingabefrist: 19.11.2026\, 16
+ .00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/fa65ea4d-99b
+ 3-4023-b318-f3f99efb2897/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/fa65ea4d-99b3-4023-b318-f3f99efb2897
+URL:https://auftragsregister.ch/de/auftrag/fa65ea4d-99b3-4023-b318-f3f99efb
+ 2897/
+LOCATION:Wolhusen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 10013 Neubau LUKS Wolhusen\, B3.03 SKP 246.0 Käl
+ teanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

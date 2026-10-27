@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dcacc43a-a461-4369-99c3-0d3771201d38-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Eingabefrist: Weiterentwicklung der Clarity-Plattform
+DESCRIPTION:Auftraggeber: Service de l'informatique et des télécommunicat
+ ions (SITel)\nEingabefrist: 04.11.2026\, 12.00 Uhr\nIm Register: https://
+ auftragsregister.ch/de/auftrag/dcacc43a-a461-4369-99c3-0d3771201d38/\nAmtl
+ iche Publikation: https://www.simap.ch/de/project-detail/dcacc43a-a461-436
+ 9-99c3-0d3771201d38
+URL:https://auftragsregister.ch/de/auftrag/dcacc43a-a461-4369-99c3-0d377120
+ 1d38/
+LOCATION:Givisiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Weiterentwicklung der Clarity-Plattform
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

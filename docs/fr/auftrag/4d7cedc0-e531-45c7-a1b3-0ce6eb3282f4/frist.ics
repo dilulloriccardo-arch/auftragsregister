@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4d7cedc0-e531-45c7-a1b3-0ce6eb3282f4-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Délai de remise : MOB-Projekt Ersatz Sicherungsanlagen Zweisimme
+ n-Lenk (SA ZL) - Ausschreibung Los 101 Tiefbauarbeiten
+DESCRIPTION:Acheteur public : Compagnie du Chemin de fer Montreux Oberlan
+ d bernois SA - Infrastructure Projets\nDélai de remise : 15.12.2026\, 1
+ 2 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/4d
+ 7cedc0-e531-45c7-a1b3-0ce6eb3282f4/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/4d7cedc0-e531-45c7-a1b3-0ce6eb3282f4
+URL:https://auftragsregister.ch/fr/auftrag/4d7cedc0-e531-45c7-a1b3-0ce6eb32
+ 82f4/
+LOCATION:Zweisimmen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MOB-Projekt Ersatz Sicherungsanlagen Zweis
+ immen-Lenk (SA ZL) - Ausschreibung Los 101 Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

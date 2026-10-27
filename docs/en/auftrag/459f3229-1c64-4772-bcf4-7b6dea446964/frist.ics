@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:459f3229-1c64-4772-bcf4-7b6dea446964-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:1
+DTSTART:20261120T140000Z
+SUMMARY:Submission deadline: SBB\, Programm Léman 2030 – Vollständige E
+ rneuerung der Mandement-Linie (RIM)\, Los C – Erhaltung der Infrastruktu
+ r Satigny – Vernier-Meyrin Cargo\, Bauarbeiten GC 2027
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB\, Infrastruktur 
+ – Einkauf\, Supply Chain und Produktion\, Einkauf Bauprojekte Region Wes
+ t\nSubmission deadline: 20 Nov 2026\, 15:00\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/459f3229-1c64-4772-bcf4-7b6dea446964/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/459f3229-1c64-4772-
+ bcf4-7b6dea446964
+URL:https://auftragsregister.ch/en/auftrag/459f3229-1c64-4772-bcf4-7b6dea44
+ 6964/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: SBB\, Programm Léman 2030 – Vollständi
+ ge Erneuerung der Mandement-Linie (RIM)\, Los C – Erhaltung der Infrastr
+ uktur Satigny – Vernier-Meyrin Cargo\, Bauarbeiten GC 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

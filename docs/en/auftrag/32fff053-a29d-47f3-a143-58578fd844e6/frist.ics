@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32fff053-a29d-47f3-a143-58578fd844e6-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261029T110000Z
+SUMMARY:Submission deadline: BFGS II Schule Oberentfelden\, BKP 230 Elektro
+ anlagen
+DESCRIPTION:Public buyer: Kanton Aargau - Departement Finanzen und Ressourc
+ en - Immobilien Aargau\nSubmission deadline: 29 Oct 2026\, 12:00\nIn the
+  register: https://auftragsregister.ch/en/auftrag/32fff053-a29d-47f3-a143-
+ 58578fd844e6/\nOfficial publication: https://www.simap.ch/en/project-detai
+ l/32fff053-a29d-47f3-a143-58578fd844e6
+URL:https://auftragsregister.ch/en/auftrag/32fff053-a29d-47f3-a143-58578fd8
+ 44e6/
+LOCATION:Oberentfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BFGS II Schule Oberentfelden\, BKP 230 Ele
+ ktroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

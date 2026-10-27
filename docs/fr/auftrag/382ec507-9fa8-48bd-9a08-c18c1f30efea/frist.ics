@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:382ec507-9fa8-48bd-9a08-c18c1f30efea-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261117T103000Z
+SUMMARY:Délai de remise : AO : Vulgarisation protection des troupeaux / 
+ DGAV
+DESCRIPTION:Acheteur public : Département de l'agriculture\, de la durab
+ ilité et du climat et du numérique (DADN) - Direction générale de l'ag
+ riculture\, de la viticulture et des affaires vétérinaires (DGAV) - DAGR
+ I\nDélai de remise : 17.11.2026\, 11 h 30\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/382ec507-9fa8-48bd-9a08-c18c1f30efea/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/382ec50
+ 7-9fa8-48bd-9a08-c18c1f30efea
+URL:https://auftragsregister.ch/fr/auftrag/382ec507-9fa8-48bd-9a08-c18c1f30
+ efea/
+LOCATION:Canton de Vaud
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AO : Vulgarisation protection des troupeau
+ x / DGAV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

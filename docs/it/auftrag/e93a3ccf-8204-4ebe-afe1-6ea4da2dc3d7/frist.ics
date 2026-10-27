@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e93a3ccf-8204-4ebe-afe1-6ea4da2dc3d7-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Scadenza: Vorratshaltung von Schutzmaterial und Desinfektionsmittel
+ n
+DESCRIPTION:Ente pubblico: ZüriPharm AG\nScadenza: 06.11.2026\nNel registr
+ o: https://auftragsregister.ch/it/auftrag/e93a3ccf-8204-4ebe-afe1-6ea4da2d
+ c3d7/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/e93
+ a3ccf-8204-4ebe-afe1-6ea4da2dc3d7
+URL:https://auftragsregister.ch/it/auftrag/e93a3ccf-8204-4ebe-afe1-6ea4da2d
+ c3d7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Vorratshaltung von Schutzmaterial und Desinfektionsmi
+ tteln
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

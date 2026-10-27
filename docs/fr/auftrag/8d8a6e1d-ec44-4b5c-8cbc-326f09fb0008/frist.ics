@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8d8a6e1d-ec44-4b5c-8cbc-326f09fb0008-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Délai de remise : Construction de logements pour personnes âgé
+ es à Sargans – Fenêtres en PVC
+DESCRIPTION:Acheteur public : Ortsgemeinde Sargans (Architekten Zogg & Fr
+ euler)\nDélai de remise : 04.12.2026\, 12 h 00\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/8d8a6e1d-ec44-4b5c-8cbc-326f09fb0
+ 008/\nPublication officielle : https://www.simap.ch/fr/project-detail/8d
+ 8a6e1d-ec44-4b5c-8cbc-326f09fb0008
+URL:https://auftragsregister.ch/fr/auftrag/8d8a6e1d-ec44-4b5c-8cbc-326f09fb
+ 0008/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction de logements pour personnes 
+ âgées à Sargans – Fenêtres en PVC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:39057944-3db7-4f90-a60a-b9dac202a956-frist@auftragsregister.ch
+DTSTAMP:20260904T000000Z
+SEQUENCE:1
+DTSTART:20261109T225900Z
+SUMMARY:Eingabefrist: SZU neues Datennetz: Aufbau und Betrieb Datennetz
+DESCRIPTION:Auftraggeber: Sihltal Zürich Uetliberg Bahn SZU AG\nEingabefri
+ st: 09.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/39057944-3db7-4f90-a60a-b9dac202a956/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/39057944-3db7-4f90-a60a-b9dac202a956
+URL:https://auftragsregister.ch/de/auftrag/39057944-3db7-4f90-a60a-b9dac202
+ a956/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: SZU neues Datennetz: Aufbau und Betrieb Datennetz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

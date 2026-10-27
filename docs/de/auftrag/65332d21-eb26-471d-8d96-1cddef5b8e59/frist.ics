@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:65332d21-eb26-471d-8d96-1cddef5b8e59-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T090000Z
+SUMMARY:Eingabefrist: Birmensdorf\, 242-009\, Lehnenviadukt\, Schwandenstra
+ sse\, Bauleistungen\, Md/ta
+DESCRIPTION:Auftraggeber: Baudirektion Kanton Zürich\, Tiefbauamt\, Abt. P
+ rojektieren und Realisieren\nEingabefrist: 19.11.2026\, 10.00 Uhr\nIm Reg
+ ister: https://auftragsregister.ch/de/auftrag/65332d21-eb26-471d-8d96-1cdd
+ ef5b8e59/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/65
+ 332d21-eb26-471d-8d96-1cddef5b8e59
+URL:https://auftragsregister.ch/de/auftrag/65332d21-eb26-471d-8d96-1cddef5b
+ 8e59/
+LOCATION:Birmensdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Birmensdorf\, 242-009\, Lehnenviadukt\, Schwanden
+ strasse\, Bauleistungen\, Md/ta
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

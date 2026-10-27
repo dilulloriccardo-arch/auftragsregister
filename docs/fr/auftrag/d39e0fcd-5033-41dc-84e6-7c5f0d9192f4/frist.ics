@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d39e0fcd-5033-41dc-84e6-7c5f0d9192f4-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261110T225900Z
+SUMMARY:Délai de remise : Prestations d’expertise en intelligence arti
+ ficielle
+DESCRIPTION:Acheteur public : Informatik und Logistik\nDélai de remise
+  : 10.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/d39e0fcd-5033-41dc-84e6-7c5f0d9192f4/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/d39e0fcd-5033-41dc-84e6-7c
+ 5f0d9192f4
+URL:https://auftragsregister.ch/fr/auftrag/d39e0fcd-5033-41dc-84e6-7c5f0d91
+ 92f4/
+LOCATION:Biel/Bienne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Prestations d’expertise en intelligence 
+ artificielle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

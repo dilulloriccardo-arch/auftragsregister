@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa74c0be-c306-4210-9e06-61c58daa074d-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T170000Z
+SUMMARY:Scadenza: Flurstrassen Albinen
+DESCRIPTION:Ente pubblico: Gemeinde Albinen (Zumofen + Glenz AG)\nScadenza:
+  20.11.2026\, 18:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ aa74c0be-c306-4210-9e06-61c58daa074d/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/aa74c0be-c306-4210-9e06-61c58daa074d
+URL:https://auftragsregister.ch/it/auftrag/aa74c0be-c306-4210-9e06-61c58daa
+ 074d/
+LOCATION:Albinen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Flurstrassen Albinen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

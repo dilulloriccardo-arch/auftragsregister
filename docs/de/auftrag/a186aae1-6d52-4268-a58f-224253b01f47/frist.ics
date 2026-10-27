@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a186aae1-6d52-4268-a58f-224253b01f47-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Eingabefrist: Ersatzbeschaffung Beatmungsgeräte Intensivstation
+DESCRIPTION:Auftraggeber: Universitäts-Kinderspital Zürich\nEingabefrist:
+  23.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/a186aae1-6d52-4268-a58f-224253b01f47/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/a186aae1-6d52-4268-a58f-224253b01f47
+URL:https://auftragsregister.ch/de/auftrag/a186aae1-6d52-4268-a58f-224253b0
+ 1f47/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatzbeschaffung Beatmungsgeräte Intensivstatio
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

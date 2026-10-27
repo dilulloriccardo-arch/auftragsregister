@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:460a5433-7093-44e5-9bcc-6814f647f338-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T170000Z
+SUMMARY:Délai de remise : Neubau Wohnsiedlung Promulins\, 7530 Samedan
+DESCRIPTION:Acheteur public : Bürgergemeinde Samedan (Alder Clavuot Nunz
+ i Architekten GmbH ETH SIA)\nDélai de remise : 02.11.2026\, 18 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/460a5433-709
+ 3-44e5-9bcc-6814f647f338/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/460a5433-7093-44e5-9bcc-6814f647f338
+URL:https://auftragsregister.ch/fr/auftrag/460a5433-7093-44e5-9bcc-6814f647
+ f338/
+LOCATION:Samedan
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Wohnsiedlung Promulins\, 7530 Samed
+ an
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

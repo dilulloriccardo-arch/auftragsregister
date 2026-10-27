@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ff3b135-b803-4e6c-8d77-138ad9e2ed6a-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20261126T100000Z
+SUMMARY:Scadenza: Rénovation/Transformation du CID de Malley / Installatio
+ ns Sanitaires
+DESCRIPTION:Ente pubblico: Ville de Lausanne - Service de la propreté urba
+ ine (Architram)\nScadenza: 26.11.2026\, 11:00\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/7ff3b135-b803-4e6c-8d77-138ad9e2ed6a/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/7ff3b135-b803-4e6c-
+ 8d77-138ad9e2ed6a
+URL:https://auftragsregister.ch/it/auftrag/7ff3b135-b803-4e6c-8d77-138ad9e2
+ ed6a/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rénovation/Transformation du CID de Malley / Install
+ ations Sanitaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

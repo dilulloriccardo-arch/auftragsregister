@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a4862e7-7ec8-4c54-898c-1a09c38c22c2-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Eingabefrist: Neubau Geserhus\, Rebstein - 273.0 Innentüren aus Ho
+ lz
+DESCRIPTION:Auftraggeber: Zweckverband Altersheim Geserhus der Gemeinde Reb
+ stein und Marbach\nEingabefrist: 13.11.2026\, 23.59 Uhr\nIm Register: htt
+ ps://auftragsregister.ch/de/auftrag/0a4862e7-7ec8-4c54-898c-1a09c38c22c2/\
+ nAmtliche Publikation: https://www.simap.ch/de/project-detail/0a4862e7-7ec
+ 8-4c54-898c-1a09c38c22c2
+URL:https://auftragsregister.ch/de/auftrag/0a4862e7-7ec8-4c54-898c-1a09c38c
+ 22c2/
+LOCATION:Rebstein
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Geserhus\, Rebstein - 273.0 Innentüren au
+ s Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

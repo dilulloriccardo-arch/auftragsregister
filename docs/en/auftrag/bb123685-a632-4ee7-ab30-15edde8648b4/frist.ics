@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb123685-a632-4ee7-ab30-15edde8648b4-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T160000Z
+SUMMARY:Submission deadline: BKP 222 / 224 – Metalwork and Roofing Works
+DESCRIPTION:Public buyer: Stadt Wädenswil\, Immobilien\, Projekt Neubau Ga
+ rtenhäuser GB\, Büelenstrasse 5+7\nSubmission deadline: 19 Nov 2026\, 
+ 17:00\nIn the register: https://auftragsregister.ch/en/auftrag/bb123685-a6
+ 32-4ee7-ab30-15edde8648b4/\nOfficial publication: https://www.simap.ch/en/
+ project-detail/bb123685-a632-4ee7-ab30-15edde8648b4
+URL:https://auftragsregister.ch/en/auftrag/bb123685-a632-4ee7-ab30-15edde86
+ 48b4/
+LOCATION:Wädenswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 222 / 224 – Metalwork and Roofing Wo
+ rks
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

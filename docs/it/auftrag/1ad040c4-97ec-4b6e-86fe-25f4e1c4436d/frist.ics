@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ad040c4-97ec-4b6e-86fe-25f4e1c4436d-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Scadenza: Herbstflor für die Friedhöfe am Hörnli und Wolfgottesa
+ cker 2028-2032
+DESCRIPTION:Ente pubblico: Bau- und Verkehrsdepartement des Kantons Basel-S
+ tadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nScade
+ nza: 23.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/1ad040c4-97ec-4b6e-86fe-25f4e1c4436d/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/1ad040c4-97ec-4b6e-86fe-25f4e1c4436d
+URL:https://auftragsregister.ch/it/auftrag/1ad040c4-97ec-4b6e-86fe-25f4e1c4
+ 436d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Herbstflor für die Friedhöfe am Hörnli und Wolfgot
+ tesacker 2028-2032
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

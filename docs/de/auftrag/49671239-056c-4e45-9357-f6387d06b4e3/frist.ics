@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49671239-056c-4e45-9357-f6387d06b4e3-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261207T140000Z
+SUMMARY:Eingabefrist: SBB: Neuchâtel–La Chaux-de-Fonds – Projekt Ligne
+  Directe – Kampagne zur weiteren Aufklärung
+DESCRIPTION:Auftraggeber: SBB CFF FFS Achats projets de construction Régio
+ n Ouest\nEingabefrist: 07.12.2026\, 15.00 Uhr\nIm Register: https://auftr
+ agsregister.ch/de/auftrag/49671239-056c-4e45-9357-f6387d06b4e3/\nAmtliche 
+ Publikation: https://www.simap.ch/de/project-detail/49671239-056c-4e45-935
+ 7-f6387d06b4e3
+URL:https://auftragsregister.ch/de/auftrag/49671239-056c-4e45-9357-f6387d06
+ b4e3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: SBB: Neuchâtel–La Chaux-de-Fonds – Projekt L
+ igne Directe – Kampagne zur weiteren Aufklärung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

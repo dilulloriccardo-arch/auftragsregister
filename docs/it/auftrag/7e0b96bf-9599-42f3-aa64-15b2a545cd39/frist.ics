@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7e0b96bf-9599-42f3-aa64-15b2a545cd39-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261120T160000Z
+SUMMARY:Scadenza: Neubau Gemeindehaus Münsingen - Fenster und Aussentüren
+  in Holz
+DESCRIPTION:Ente pubblico: Gemeinde Münsingen\, Abteilung Bau\nScadenza: 2
+ 0.11.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/7e
+ 0b96bf-9599-42f3-aa64-15b2a545cd39/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/7e0b96bf-9599-42f3-aa64-15b2a545cd39
+URL:https://auftragsregister.ch/it/auftrag/7e0b96bf-9599-42f3-aa64-15b2a545
+ cd39/
+LOCATION:Münsingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Gemeindehaus Münsingen - Fenster und Aussent
+ üren in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

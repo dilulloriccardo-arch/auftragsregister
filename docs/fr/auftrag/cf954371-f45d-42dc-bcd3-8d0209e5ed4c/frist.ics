@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf954371-f45d-42dc-bcd3-8d0209e5ed4c-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T073000Z
+SUMMARY:Délai de remise : Rahmenvertrag Verkehrsdienstleistungen
+DESCRIPTION:Acheteur public : BERNMOBIL Städt. Verkehrsbetriebe Bern (SV
+ B)\nDélai de remise : 01.12.2026\, 8 h 30\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/cf954371-f45d-42dc-bcd3-8d0209e5ed4c/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/cf95437
+ 1-f45d-42dc-bcd3-8d0209e5ed4c
+URL:https://auftragsregister.ch/fr/auftrag/cf954371-f45d-42dc-bcd3-8d0209e5
+ ed4c/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rahmenvertrag Verkehrsdienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

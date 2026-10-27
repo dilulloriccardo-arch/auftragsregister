@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:94257505-4aa3-474e-b82a-2517dde97506-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20270112T150000Z
+SUMMARY:Submission deadline: BKP 421 Gärtnerarbeiten
+DESCRIPTION:Public buyer: Stiftung Alterswohnungen der Stadt Zürich - SAW 
+ (Fokus Baumanagement)\nSubmission deadline: 12 Jan 2027\, 16:00\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/94257505-4aa3-474e-b82a-2
+ 517dde97506/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /94257505-4aa3-474e-b82a-2517dde97506
+URL:https://auftragsregister.ch/en/auftrag/94257505-4aa3-474e-b82a-2517dde9
+ 7506/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 421 Gärtnerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

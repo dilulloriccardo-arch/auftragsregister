@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7731cca4-2f73-4577-b24e-a11b2d7b50f6-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+SUMMARY:Délai de remise : STEP Echallens - CFC 237 - INST02 - Mesures de
+  débits
+DESCRIPTION:Acheteur public : ASET / Association intercommunale STEP Echa
+ llens Talent (TRITON)\nDélai de remise : 30.11.2026\, 11 h 00\nDans
+  le registre : https://auftragsregister.ch/fr/auftrag/7731cca4-2f73-4577
+ -b24e-a11b2d7b50f6/\nPublication officielle : https://www.simap.ch/fr/pr
+ oject-detail/7731cca4-2f73-4577-b24e-a11b2d7b50f6
+URL:https://auftragsregister.ch/fr/auftrag/7731cca4-2f73-4577-b24e-a11b2d7b
+ 50f6/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : STEP Echallens - CFC 237 - INST02 - Mesure
+ s de débits
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

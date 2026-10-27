@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea57c50e-28a7-47f6-8642-6de9f8fa48fb-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: STEP Eparse - Lot EL03 - Automation\, contrôle commande 
+ et Supervision
+DESCRIPTION:Ente pubblico: L'Eparse - Association intercommunale pour l’
+ épuration des eaux de la zone de Payerne - CFA Ingénieurs Conseils SA\nS
+ cadenza: 16.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/
+ auftrag/ea57c50e-28a7-47f6-8642-6de9f8fa48fb/\nPubblicazione ufficiale: ht
+ tps://www.simap.ch/it/project-detail/ea57c50e-28a7-47f6-8642-6de9f8fa48fb
+URL:https://auftragsregister.ch/it/auftrag/ea57c50e-28a7-47f6-8642-6de9f8fa
+ 48fb/
+LOCATION:Payerne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: STEP Eparse - Lot EL03 - Automation\, contrôle comma
+ nde et Supervision
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

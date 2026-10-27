@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3430b1ed-fceb-4458-9638-a7b10763c6aa-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Scadenza: EBP-593 AFW_Hallerstrasse_Baumeister
+DESCRIPTION:Ente pubblico: Energie Wasser Bern\nScadenza: 02.11.2026\, 23:5
+ 9\nNel registro: https://auftragsregister.ch/it/auftrag/3430b1ed-fceb-4458
+ -9638-a7b10763c6aa/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/3430b1ed-fceb-4458-9638-a7b10763c6aa
+URL:https://auftragsregister.ch/it/auftrag/3430b1ed-fceb-4458-9638-a7b10763
+ c6aa/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EBP-593 AFW_Hallerstrasse_Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

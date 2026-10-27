@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6f5e518-c005-41cb-a7bb-a4d12db3dcbe-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261106T140000Z
+SUMMARY:Délai de remise : Werkleitungs- und Oberbausanierung Neu-\, Feld
+ -\, Alpen- und Austrasse
+DESCRIPTION:Acheteur public : Einwohnergemeinde Wettingen\nDélai de remi
+ se : 06.11.2026\, 15 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/e6f5e518-c005-41cb-a7bb-a4d12db3dcbe/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/e6f5e518-c005-41cb-a7bb-
+ a4d12db3dcbe
+URL:https://auftragsregister.ch/fr/auftrag/e6f5e518-c005-41cb-a7bb-a4d12db3
+ dcbe/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Werkleitungs- und Oberbausanierung Neu-\, 
+ Feld-\, Alpen- und Austrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

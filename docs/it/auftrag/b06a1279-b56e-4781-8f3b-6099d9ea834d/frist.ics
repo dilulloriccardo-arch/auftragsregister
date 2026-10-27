@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b06a1279-b56e-4781-8f3b-6099d9ea834d-frist@auftragsregister.ch
+DTSTAMP:20260902T000000Z
+SEQUENCE:0
+DTSTART:20261030T110000Z
+SUMMARY:Scadenza: PROJET DE CONSTRUCTIONS SCOLAIRES MODULAIRES sur les site
+ s de Forel et Savigny
+DESCRIPTION:Ente pubblico: ASIJ (F-Partenaires SA)\nScadenza: 30.10.2026\, 
+ 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/b06a1279-b56e-
+ 4781-8f3b-6099d9ea834d/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/b06a1279-b56e-4781-8f3b-6099d9ea834d
+URL:https://auftragsregister.ch/it/auftrag/b06a1279-b56e-4781-8f3b-6099d9ea
+ 834d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: PROJET DE CONSTRUCTIONS SCOLAIRES MODULAIRES sur les 
+ sites de Forel et Savigny
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

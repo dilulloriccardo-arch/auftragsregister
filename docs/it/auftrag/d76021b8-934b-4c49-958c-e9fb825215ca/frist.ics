@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d76021b8-934b-4c49-958c-e9fb825215ca-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261124T160000Z
+SUMMARY:Scadenza: Anlage Schützenmatte\, Bern Bollwerk\, Umgestaltung Sch
+ ützenmatte\, Gesamtprojektleitung (GPL)
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 24.11.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/d76021b8-934b-4c49-958c-e9fb825215ca/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/d76021b8-934b-4c49-958c-e9fb825215ca
+URL:https://auftragsregister.ch/it/auftrag/d76021b8-934b-4c49-958c-e9fb8252
+ 15ca/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Anlage Schützenmatte\, Bern Bollwerk\, Umgestaltung 
+ Schützenmatte\, Gesamtprojektleitung (GPL)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

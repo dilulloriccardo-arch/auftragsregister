@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:162e7dff-c20b-4119-9653-04a150e3379d-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261105T154500Z
+SUMMARY:Délai de remise : Flumenthal\, Etablissement pénitentiaire cent
+ ral\, Canton de Soleure (ZGSO) – Nouvelle construction / CFC 221.6 Porta
+ ils et portes coulissantes en Métal
+DESCRIPTION:Acheteur public : Kanton Solothurn\, Bau- und Justizdeparteme
+ nt\, Hochbauamt\nDélai de remise : 05.11.2026\, 16 h 45\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/162e7dff-c20b-4119-9653-
+ 04a150e3379d/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/162e7dff-c20b-4119-9653-04a150e3379d
+URL:https://auftragsregister.ch/fr/auftrag/162e7dff-c20b-4119-9653-04a150e3
+ 379d/
+LOCATION:Flumenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Flumenthal\, Etablissement pénitentiaire 
+ central\, Canton de Soleure (ZGSO) – Nouvelle construction / CFC 221.6 P
+ ortails et portes coulissantes en Métal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

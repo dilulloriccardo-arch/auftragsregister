@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:70103df2-9767-4d3d-aeb4-4a8a067dcf32-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261202T100000Z
+SUMMARY:Eingabefrist: Construction de mobilier de la gamme de bancs "Ville 
+ de Genève" (2364TI) Construction métallique et menuiserie
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 02.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/70103df2-9767-4d3d-aeb4-4a8a067dcf32/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/70103df2-9767-4d3d-aeb4-4a8a067d
+ cf32
+URL:https://auftragsregister.ch/de/auftrag/70103df2-9767-4d3d-aeb4-4a8a067d
+ cf32/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Construction de mobilier de la gamme de bancs "Vi
+ lle de Genève" (2364TI) Construction métallique et menuiserie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

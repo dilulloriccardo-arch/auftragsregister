@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd30a5ba-926d-41de-a47a-8832f5cc390f-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Eingabefrist: AO 2024-017 Boulevard Helvétique
+DESCRIPTION:Auftraggeber: Services industriels de Genève (SIG) - Direction
+  Achats\nEingabefrist: 02.11.2026\, 12.00 Uhr\nIm Register: https://auftr
+ agsregister.ch/de/auftrag/dd30a5ba-926d-41de-a47a-8832f5cc390f/\nAmtliche 
+ Publikation: https://www.simap.ch/de/project-detail/dd30a5ba-926d-41de-a47
+ a-8832f5cc390f
+URL:https://auftragsregister.ch/de/auftrag/dd30a5ba-926d-41de-a47a-8832f5cc
+ 390f/
+LOCATION:Genève (Ville)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AO 2024-017 Boulevard Helvétique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

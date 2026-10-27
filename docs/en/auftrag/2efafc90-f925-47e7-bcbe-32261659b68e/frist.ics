@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2efafc90-f925-47e7-bcbe-32261659b68e-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261109T103000Z
+SUMMARY:Submission deadline: Projet de requalification des aménagements ex
+ térieurs de la Cour du Collège de Chailly
+DESCRIPTION:Public buyer: Commune de Montreux - Service des domaines et bâ
+ timents\, sport\nSubmission deadline: 9 Nov 2026\, 11:30\nIn the registe
+ r: https://auftragsregister.ch/en/auftrag/2efafc90-f925-47e7-bcbe-32261659
+ b68e/\nOfficial publication: https://www.simap.ch/en/project-detail/2efafc
+ 90-f925-47e7-bcbe-32261659b68e
+URL:https://auftragsregister.ch/en/auftrag/2efafc90-f925-47e7-bcbe-32261659
+ b68e/
+LOCATION:Chailly-Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Projet de requalification des aménagement
+ s extérieurs de la Cour du Collège de Chailly
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

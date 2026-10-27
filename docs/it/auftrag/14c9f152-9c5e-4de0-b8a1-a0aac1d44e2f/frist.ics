@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:14c9f152-9c5e-4de0-b8a1-a0aac1d44e2f-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261107T110000Z
+SUMMARY:Scadenza: Hochauflösendes Massenspektrometer
+DESCRIPTION:Ente pubblico: Universität Basel\nScadenza: 07.11.2026\, 12:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/14c9f152-9c5e-4de0-
+ b8a1-a0aac1d44e2f/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/14c9f152-9c5e-4de0-b8a1-a0aac1d44e2f
+URL:https://auftragsregister.ch/it/auftrag/14c9f152-9c5e-4de0-b8a1-a0aac1d4
+ 4e2f/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Hochauflösendes Massenspektrometer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

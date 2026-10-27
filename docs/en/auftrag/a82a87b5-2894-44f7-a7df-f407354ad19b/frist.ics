@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a82a87b5-2894-44f7-a7df-f407354ad19b-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261029T090000Z
+SUMMARY:Submission deadline: Weiningen / Unterengstringen\, Überlandstrass
+ e / Neue + Alte Niederholzstrasse\, Neubau LSA 204 und LSA 328\, MS/gs
+DESCRIPTION:Public buyer: Baudirektion Kanton Zürich\, Tiefbauamt\, Abt. P
+ rojektieren und Realisieren\nSubmission deadline: 29 Oct 2026\, 10:00\nI
+ n the register: https://auftragsregister.ch/en/auftrag/a82a87b5-2894-44f7-
+ a7df-f407354ad19b/\nOfficial publication: https://www.simap.ch/en/project-
+ detail/a82a87b5-2894-44f7-a7df-f407354ad19b
+URL:https://auftragsregister.ch/en/auftrag/a82a87b5-2894-44f7-a7df-f407354a
+ d19b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Weiningen / Unterengstringen\, Überlandst
+ rasse / Neue + Alte Niederholzstrasse\, Neubau LSA 204 und LSA 328\, MS/gs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

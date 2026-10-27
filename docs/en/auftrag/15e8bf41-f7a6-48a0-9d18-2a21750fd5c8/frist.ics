@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:15e8bf41-f7a6-48a0-9d18-2a21750fd5c8-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261112T130000Z
+SUMMARY:Submission deadline: BKP 224 Flachdach-\, Blitzschutz- und Spengler
+ arbeiten Weisses Schulhaus Schulanlage 3422 Alchenflüh
+DESCRIPTION:Public buyer: Atelier GSW Partner AG\nSubmission deadline: 12 
+ Nov 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /15e8bf41-f7a6-48a0-9d18-2a21750fd5c8/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/15e8bf41-f7a6-48a0-9d18-2a21750fd5c8
+URL:https://auftragsregister.ch/en/auftrag/15e8bf41-f7a6-48a0-9d18-2a21750f
+ d5c8/
+LOCATION:Rüdtligen- Alchenflüh
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 224 Flachdach-\, Blitzschutz- und Spen
+ glerarbeiten Weisses Schulhaus Schulanlage 3422 Alchenflüh
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe196b30-6bdd-4341-bb76-ed8bf992477a-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Délai de remise : Neugestaltung Bahnhof-/ Kappeli-/ Grünaustras
+ se
+DESCRIPTION:Acheteur public : Stadt Buchs\, Bau und Infrastruktur\nDélai
+  de remise : 13.11.2026\, 23 h 59\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/fe196b30-6bdd-4341-bb76-ed8bf992477a/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/fe196b30-6bdd-43
+ 41-bb76-ed8bf992477a
+URL:https://auftragsregister.ch/fr/auftrag/fe196b30-6bdd-4341-bb76-ed8bf992
+ 477a/
+LOCATION:Buchs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neugestaltung Bahnhof-/ Kappeli-/ Grünaus
+ trasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

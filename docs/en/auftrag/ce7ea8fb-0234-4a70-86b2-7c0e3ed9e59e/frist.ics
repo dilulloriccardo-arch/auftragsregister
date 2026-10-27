@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce7ea8fb-0234-4a70-86b2-7c0e3ed9e59e-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Submission deadline: FVV Brücke Au - Lustenau Stahlbau
+DESCRIPTION:Public buyer: Politische Gemeinde Au\nSubmission deadline: 5 N
+ ov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/
+ ce7ea8fb-0234-4a70-86b2-7c0e3ed9e59e/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/ce7ea8fb-0234-4a70-86b2-7c0e3ed9e59e
+URL:https://auftragsregister.ch/en/auftrag/ce7ea8fb-0234-4a70-86b2-7c0e3ed9
+ e59e/
+LOCATION:Au
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: FVV Brücke Au - Lustenau Stahlbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

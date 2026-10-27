@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:38b52c01-34e6-4c8b-9311-7c4bcc0798a8-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Délai de remise : FPO Chamoson - LOT 271.000 Plâtrerie - peintu
+ re
+DESCRIPTION:Acheteur public : Foyer Pierre Olivier (Pragma Partenaires SA
+ )\nDélai de remise : 06.11.2026\, 12 h 00\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/38b52c01-34e6-4c8b-9311-7c4bcc0798a8/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/38b52c0
+ 1-34e6-4c8b-9311-7c4bcc0798a8
+URL:https://auftragsregister.ch/fr/auftrag/38b52c01-34e6-4c8b-9311-7c4bcc07
+ 98a8/
+LOCATION:Chamoson
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : FPO Chamoson - LOT 271.000 Plâtrerie - pe
+ inture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

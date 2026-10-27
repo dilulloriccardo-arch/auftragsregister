@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db5d8de3-0399-44a9-a57e-43c6d10d5f45-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T100000Z
+SUMMARY:Eingabefrist: Haute Ecole Pedagogique_00'697_Lot 147 Installations 
+ frigorifiques
+DESCRIPTION:Auftraggeber: Etat de Vaud - DEIEP - DGIP\,\nEingabefrist: 12.1
+ 1.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d
+ b5d8de3-0399-44a9-a57e-43c6d10d5f45/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/db5d8de3-0399-44a9-a57e-43c6d10d5f45
+URL:https://auftragsregister.ch/de/auftrag/db5d8de3-0399-44a9-a57e-43c6d10d
+ 5f45/
+LOCATION:Chavannes-près-Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Haute Ecole Pedagogique_00'697_Lot 147 Installati
+ ons frigorifiques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

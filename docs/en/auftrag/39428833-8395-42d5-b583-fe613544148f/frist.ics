@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:39428833-8395-42d5-b583-fe613544148f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Submission deadline: Ausschreibung Schlüsseldienst / Schliessanlag
+ en / Zutrittssysteme – KAT.009
+DESCRIPTION:Public buyer: ETHOS Immobilien GmbH\nSubmission deadline: 9 No
+ v 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/3
+ 9428833-8395-42d5-b583-fe613544148f/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/39428833-8395-42d5-b583-fe613544148f
+URL:https://auftragsregister.ch/en/auftrag/39428833-8395-42d5-b583-fe613544
+ 148f/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibung Schlüsseldienst / Schliessa
+ nlagen / Zutrittssysteme – KAT.009
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

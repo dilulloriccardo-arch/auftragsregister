@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c6b9a2ce-b16e-4721-9e6e-e705560b8364-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:2
+DTSTART:20261109T140000Z
+SUMMARY:Eingabefrist: Torsionsstab\, Hebel
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB Division Produkti
+ on Personenverkehr\nEingabefrist: 09.11.2026\, 15.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/c6b9a2ce-b16e-4721-9e6e-e705560b8364/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/c6b9a2ce-b1
+ 6e-4721-9e6e-e705560b8364
+URL:https://auftragsregister.ch/de/auftrag/c6b9a2ce-b16e-4721-9e6e-e705560b
+ 8364/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Torsionsstab\, Hebel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

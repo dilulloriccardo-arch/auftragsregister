@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2ff610f-1189-4b76-a05f-98de74050a9f-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261127T140000Z
+SUMMARY:Délai de remise : Beschaffung Bahnübergangsanlagen und Anbindun
+ g an das DSTW über EULYNX Rahmenvertrag / Abrufvertrag
+DESCRIPTION:Acheteur public : Schweizerische Südostbahn AG\nDélai de re
+ mise : 27.11.2026\, 15 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/d2ff610f-1189-4b76-a05f-98de74050a9f/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/d2ff610f-1189-4b76-a05
+ f-98de74050a9f
+URL:https://auftragsregister.ch/fr/auftrag/d2ff610f-1189-4b76-a05f-98de7405
+ 0a9f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Beschaffung Bahnübergangsanlagen und Anbi
+ ndung an das DSTW über EULYNX Rahmenvertrag / Abrufvertrag
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

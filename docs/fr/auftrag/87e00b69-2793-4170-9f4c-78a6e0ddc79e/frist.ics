@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87e00b69-2793-4170-9f4c-78a6e0ddc79e-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Délai de remise : Acquisition d'une balayeuse électrique pour t
+ rottoirs
+DESCRIPTION:Acheteur public : Ville de Gland (Hymexia Sàrl)\nDélai de r
+ emise : 06.11.2026\, 12 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/87e00b69-2793-4170-9f4c-78a6e0ddc79e/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/87e00b69-2793-4170-9f
+ 4c-78a6e0ddc79e
+URL:https://auftragsregister.ch/fr/auftrag/87e00b69-2793-4170-9f4c-78a6e0dd
+ c79e/
+LOCATION:Gland
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition d'une balayeuse électrique po
+ ur trottoirs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

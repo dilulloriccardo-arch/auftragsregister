@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f11caff6-22b0-4ee6-96dd-c17ce25f6bc4-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Eingabefrist: K 35 Doppleschwand\, Spittel bis Dorfende (Ortstafel)
+DESCRIPTION:Auftraggeber: Verkehr und Infrastruktur (vif)\, zentras\, Betri
+ eb Strassen\nEingabefrist: 07.12.2026\, 23.59 Uhr\nIm Register: https://a
+ uftragsregister.ch/de/auftrag/f11caff6-22b0-4ee6-96dd-c17ce25f6bc4/\nAmtli
+ che Publikation: https://www.simap.ch/de/project-detail/f11caff6-22b0-4ee6
+ -96dd-c17ce25f6bc4
+URL:https://auftragsregister.ch/de/auftrag/f11caff6-22b0-4ee6-96dd-c17ce25f
+ 6bc4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: K 35 Doppleschwand\, Spittel bis Dorfende (Ortsta
+ fel)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

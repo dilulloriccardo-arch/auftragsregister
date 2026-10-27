@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7e7121b6-b29d-4698-810b-f4299fc783c7-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261123T080000Z
+SUMMARY:Scadenza: IWB\, Tiefbauarbeiten Nauenstrasse United und Nauenstrass
+ e West
+DESCRIPTION:Ente pubblico: IWB Industrielle Werke Basel\nScadenza: 23.11.20
+ 26\, 09:00\nNel registro: https://auftragsregister.ch/it/auftrag/7e7121b6-
+ b29d-4698-810b-f4299fc783c7/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/7e7121b6-b29d-4698-810b-f4299fc783c7
+URL:https://auftragsregister.ch/it/auftrag/7e7121b6-b29d-4698-810b-f4299fc7
+ 83c7/
+LOCATION:Basel-Stadt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: IWB\, Tiefbauarbeiten Nauenstrasse United und Nauenst
+ rasse West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

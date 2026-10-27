@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0926077b-3b13-4422-b64b-016a35769eeb-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : Ausschreibung Elektroinstallationen / Elektrik
+ erarbeiten / Reparaturen und Instandhaltung – KAT.004
+DESCRIPTION:Acheteur public : ETHOS Immobilien GmbH\nDélai de remise :
+  09.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/0926077b-3b13-4422-b64b-016a35769eeb/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/0926077b-3b13-4422-b64b-016a35
+ 769eeb
+URL:https://auftragsregister.ch/fr/auftrag/0926077b-3b13-4422-b64b-016a3576
+ 9eeb/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung Elektroinstallationen / Elek
+ trikerarbeiten / Reparaturen und Instandhaltung – KAT.004
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

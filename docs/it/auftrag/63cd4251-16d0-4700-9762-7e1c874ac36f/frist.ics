@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:63cd4251-16d0-4700-9762-7e1c874ac36f-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Scadenza: EBP-639_Elektroschweiss- und Stumpfschweissformteile
+DESCRIPTION:Ente pubblico: Energie Wasser Bern\nScadenza: 24.11.2026\, 23:5
+ 9\nNel registro: https://auftragsregister.ch/it/auftrag/63cd4251-16d0-4700
+ -9762-7e1c874ac36f/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/63cd4251-16d0-4700-9762-7e1c874ac36f
+URL:https://auftragsregister.ch/it/auftrag/63cd4251-16d0-4700-9762-7e1c874a
+ c36f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EBP-639_Elektroschweiss- und Stumpfschweissformteile
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

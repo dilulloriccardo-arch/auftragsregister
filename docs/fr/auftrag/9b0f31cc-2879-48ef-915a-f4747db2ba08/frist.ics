@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9b0f31cc-2879-48ef-915a-f4747db2ba08-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261105T110000Z
+SUMMARY:Délai de remise : Livraison d'infrastructure de recharge
+DESCRIPTION:Acheteur public : Aare Seeland mobil AG\nDélai de remise :
+  05.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/9b0f31cc-2879-48ef-915a-f4747db2ba08/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/9b0f31cc-2879-48ef-915a-f4747d
+ b2ba08
+URL:https://auftragsregister.ch/fr/auftrag/9b0f31cc-2879-48ef-915a-f4747db2
+ ba08/
+LOCATION:Herzogenbuchsee
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Livraison d'infrastructure de recharge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

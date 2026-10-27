@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:36d0a202-6a7f-4508-b6be-08da4b8c495e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261124T150000Z
+SUMMARY:Délai de remise : Zukunft Bahnhof Bern\, Baustein 3b und Baustei
+ n 1\,2\,4\, Umweltbaubegleitung: 3'000 h externe Projektleitung
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 24.11.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/36d0a202-6a7f-4508-b6be-08da4b8c495e/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/36d0a202-6a
+ 7f-4508-b6be-08da4b8c495e
+URL:https://auftragsregister.ch/fr/auftrag/36d0a202-6a7f-4508-b6be-08da4b8c
+ 495e/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Zukunft Bahnhof Bern\, Baustein 3b und Bau
+ stein 1\,2\,4\, Umweltbaubegleitung: 3'000 h externe Projektleitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

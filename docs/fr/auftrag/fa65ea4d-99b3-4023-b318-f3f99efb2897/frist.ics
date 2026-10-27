@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa65ea4d-99b3-4023-b318-f3f99efb2897-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261119T150000Z
+SUMMARY:Délai de remise : 10013 Neubau LUKS Wolhusen\, B3.03 SKP 246.0 K
+ älteanlagen
+DESCRIPTION:Acheteur public : LUKS Immobilien AG\nDélai de remise : 19
+ .11.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/fa65ea4d-99b3-4023-b318-f3f99efb2897/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/fa65ea4d-99b3-4023-b318-f3f99efb2
+ 897
+URL:https://auftragsregister.ch/fr/auftrag/fa65ea4d-99b3-4023-b318-f3f99efb
+ 2897/
+LOCATION:Wolhusen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 10013 Neubau LUKS Wolhusen\, B3.03 SKP 246
+ .0 Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

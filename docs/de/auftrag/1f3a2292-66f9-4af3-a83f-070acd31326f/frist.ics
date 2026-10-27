@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1f3a2292-66f9-4af3-a83f-070acd31326f-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Eingabefrist: Erweiterte Umgebungsgestaltung Sternmatt 2\, Baar
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Baar\, Planung / Bau - Hochbau\
+ nEingabefrist: 06.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregis
+ ter.ch/de/auftrag/1f3a2292-66f9-4af3-a83f-070acd31326f/\nAmtliche Publikat
+ ion: https://www.simap.ch/de/project-detail/1f3a2292-66f9-4af3-a83f-070acd
+ 31326f
+URL:https://auftragsregister.ch/de/auftrag/1f3a2292-66f9-4af3-a83f-070acd31
+ 326f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Erweiterte Umgebungsgestaltung Sternmatt 2\, Baar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

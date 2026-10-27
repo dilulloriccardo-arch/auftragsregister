@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:250d7d7f-830b-44b0-b248-d32856b024d7-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261113T100000Z
+SUMMARY:Délai de remise : Capitolato quadro LEA 2027-2029 per opere da i
+ mpresario costruttore e pavimentazione
+DESCRIPTION:Acheteur public : Locarnese Ente Acqua (LEA)\nDélai de remis
+ e : 13.11.2026\, 11 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/250d7d7f-830b-44b0-b248-d32856b024d7/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/250d7d7f-830b-44b0-b248-d
+ 32856b024d7
+URL:https://auftragsregister.ch/fr/auftrag/250d7d7f-830b-44b0-b248-d32856b0
+ 24d7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Capitolato quadro LEA 2027-2029 per opere 
+ da impresario costruttore e pavimentazione
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

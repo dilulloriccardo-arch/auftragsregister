@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:054b234f-ee32-464c-b01e-752f7124a17e-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Eingabefrist: N8 / Lungern Nord – Giswil Süd: Baulos 19b Löschw
+ asserversorgung Tunnel Kaiserstuhl
+DESCRIPTION:Auftraggeber: Bau- und Raumentwicklungsdepartement Obwalden\, T
+ iefbauamt\nEingabefrist: 12.11.2026\, 16.00 Uhr\nIm Register: https://auf
+ tragsregister.ch/de/auftrag/054b234f-ee32-464c-b01e-752f7124a17e/\nAmtlich
+ e Publikation: https://www.simap.ch/de/project-detail/054b234f-ee32-464c-b
+ 01e-752f7124a17e
+URL:https://auftragsregister.ch/de/auftrag/054b234f-ee32-464c-b01e-752f7124
+ a17e/
+LOCATION:Lungern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: N8 / Lungern Nord – Giswil Süd: Baulos 19b Lö
+ schwasserversorgung Tunnel Kaiserstuhl
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

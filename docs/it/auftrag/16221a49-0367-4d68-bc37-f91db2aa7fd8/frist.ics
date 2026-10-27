@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16221a49-0367-4d68-bc37-f91db2aa7fd8-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Scadenza: Lieferung von medizinischen Gasen an die Sanität Basel
+DESCRIPTION:Ente pubblico: Bau- und Verkehrsdepartement des Kantons Basel-S
+ tadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nScade
+ nza: 02.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/16221a49-0367-4d68-bc37-f91db2aa7fd8/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/16221a49-0367-4d68-bc37-f91db2aa7fd8
+URL:https://auftragsregister.ch/it/auftrag/16221a49-0367-4d68-bc37-f91db2aa
+ 7fd8/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Lieferung von medizinischen Gasen an die Sanität Bas
+ el
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

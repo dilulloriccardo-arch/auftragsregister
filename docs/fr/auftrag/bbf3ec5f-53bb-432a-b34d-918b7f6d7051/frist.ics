@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbf3ec5f-53bb-432a-b34d-918b7f6d7051-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270107T150000Z
+SUMMARY:Délai de remise : 26-447 SiPe Rottenverstärkung Sicherheitspers
+ onal
+DESCRIPTION:Acheteur public : SBB AG Infrastruktur / Einkauf\, Supply Cha
+ in und Produktion\nDélai de remise : 07.01.2027\, 16 h 00\nDans le 
+ registre : https://auftragsregister.ch/fr/auftrag/bbf3ec5f-53bb-432a-b34
+ d-918b7f6d7051/\nPublication officielle : https://www.simap.ch/fr/projec
+ t-detail/bbf3ec5f-53bb-432a-b34d-918b7f6d7051
+URL:https://auftragsregister.ch/fr/auftrag/bbf3ec5f-53bb-432a-b34d-918b7f6d
+ 7051/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 26-447 SiPe Rottenverstärkung Sicherheits
+ personal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa712ce5-7b03-4398-b09d-d5833f9dd8b6-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:1
+DTSTART:20261118T225900Z
+SUMMARY:Délai de remise : MP-150016 N02 EP Arsenal – Hergiswil\, y com
+ pris extension sud ENT lot 2 : remise en état du tunnel de Schlund\, du t
+ unnel de Spier ainsi que du tracé et du pont circulaire de Schlund
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3 Zofingen\nDélai de remise : 18.11.2026\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/aa
+ 712ce5-7b03-4398-b09d-d5833f9dd8b6/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/aa712ce5-7b03-4398-b09d-d5833f9dd8b6
+URL:https://auftragsregister.ch/fr/auftrag/aa712ce5-7b03-4398-b09d-d5833f9d
+ d8b6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-150016 N02 EP Arsenal – Hergiswil\, y
+  compris extension sud ENT lot 2 : remise en état du tunnel de Schlund\, 
+ du tunnel de Spier ainsi que du tracé et du pont circulaire de Schlund
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

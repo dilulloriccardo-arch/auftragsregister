@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5198c1b1-0e3d-40ff-ad46-a0d7cba3a488-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261117T103000Z
+SUMMARY:Délai de remise : AO : Plan climat économie alpestre / DGAV
+DESCRIPTION:Acheteur public : Département de l'agriculture\, de la durab
+ ilité et du climat et du numérique - Direction générale de l'agricultu
+ re\, de la viticulture et des affaires vétérinaires - DAGRI\nDélai de r
+ emise : 17.11.2026\, 11 h 30\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/5198c1b1-0e3d-40ff-ad46-a0d7cba3a488/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/5198c1b1-0e3d-40ff-ad
+ 46-a0d7cba3a488
+URL:https://auftragsregister.ch/fr/auftrag/5198c1b1-0e3d-40ff-ad46-a0d7cba3
+ a488/
+LOCATION:Canton de Vaud
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AO : Plan climat économie alpestre / DGAV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

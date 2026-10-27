@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:857fc77c-a90e-47a1-b642-3930d63ddf1f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261123T100000Z
+SUMMARY:Eingabefrist: Remplacement et modernisation de 27 installations de 
+ transport de personnes\, SLA maintenance
+DESCRIPTION:Auftraggeber: Genève Aéroport\nEingabefrist: 23.11.2026\, 11.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/857fc77c-a90e
+ -47a1-b642-3930d63ddf1f/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/857fc77c-a90e-47a1-b642-3930d63ddf1f
+URL:https://auftragsregister.ch/de/auftrag/857fc77c-a90e-47a1-b642-3930d63d
+ df1f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Remplacement et modernisation de 27 installations
+  de transport de personnes\, SLA maintenance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

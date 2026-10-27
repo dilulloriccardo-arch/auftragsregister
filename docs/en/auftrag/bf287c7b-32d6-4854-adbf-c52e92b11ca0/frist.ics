@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bf287c7b-32d6-4854-adbf-c52e92b11ca0-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:1
+DTSTART:20261109T153000Z
+SUMMARY:Submission deadline: Campus Battelle\, rénovation énergétique de
+ s bâtiments A et D - Mandat d'ingénieur civil
+DESCRIPTION:Public buyer: Office cantonal des bâtiments (OCBA)\nSubmission
+  deadline: 9 Nov 2026\, 16:30\nIn the register: https://auftragsregister
+ .ch/en/auftrag/bf287c7b-32d6-4854-adbf-c52e92b11ca0/\nOfficial publication
+ : https://www.simap.ch/en/project-detail/bf287c7b-32d6-4854-adbf-c52e92b11
+ ca0
+URL:https://auftragsregister.ch/en/auftrag/bf287c7b-32d6-4854-adbf-c52e92b1
+ 1ca0/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Campus Battelle\, rénovation énergétiqu
+ e des bâtiments A et D - Mandat d'ingénieur civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

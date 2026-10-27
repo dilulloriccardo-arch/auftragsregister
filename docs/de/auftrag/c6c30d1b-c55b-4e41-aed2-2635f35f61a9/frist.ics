@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c6c30d1b-c55b-4e41-aed2-2635f35f61a9-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T110000Z
+SUMMARY:Eingabefrist: Parking BUTINI - Remplacement du système de ventilat
+ ion
+DESCRIPTION:Auftraggeber: Fondation des Parkings - Service des achats\nEing
+ abefrist: 18.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/c6c30d1b-c55b-4e41-aed2-2635f35f61a9/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/c6c30d1b-c55b-4e41-aed2-2635f35f61a
+ 9
+URL:https://auftragsregister.ch/de/auftrag/c6c30d1b-c55b-4e41-aed2-2635f35f
+ 61a9/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Parking BUTINI - Remplacement du système de vent
+ ilation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

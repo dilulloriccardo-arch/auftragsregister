@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4a85208c-e533-4d5e-b142-bfcb1712e599-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261103T100000Z
+SUMMARY:Scadenza: 595 Gymnase du Chablais CFC 221.6\,272.2\, Ouvrages méta
+ lliques courants et portes extérieures en métal
+DESCRIPTION:Ente pubblico: Direction générale des immeubles et du patrimo
+ ine – DGIP<\nScadenza: 03.11.2026\, 11:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/4a85208c-e533-4d5e-b142-bfcb1712e599/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/4a85208c-e533-4d5e-b1
+ 42-bfcb1712e599
+URL:https://auftragsregister.ch/it/auftrag/4a85208c-e533-4d5e-b142-bfcb1712
+ e599/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 595 Gymnase du Chablais CFC 221.6\,272.2\, Ouvrages m
+ étalliques courants et portes extérieures en métal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

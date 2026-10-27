@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7cf1d41a-357d-445a-ac8a-4300123339d7-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T225900Z
+SUMMARY:Délai de remise : EBP-663 Sanierung Dampfleitung EZF arabern EMS
+ R
+DESCRIPTION:Acheteur public : Energie Wasser Bern\nDélai de remise : 2
+ 5.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/7cf1d41a-357d-445a-ac8a-4300123339d7/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/7cf1d41a-357d-445a-ac8a-430012
+ 3339d7
+URL:https://auftragsregister.ch/fr/auftrag/7cf1d41a-357d-445a-ac8a-43001233
+ 39d7/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EBP-663 Sanierung Dampfleitung EZF arabern
+  EMSR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

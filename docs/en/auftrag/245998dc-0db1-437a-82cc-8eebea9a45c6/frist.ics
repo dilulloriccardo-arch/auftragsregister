@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:245998dc-0db1-437a-82cc-8eebea9a45c6-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Submission deadline: Einwohnergemeinde Hünenberg - Krankentaggeldv
+ ersicherung per 01.01.2027
+DESCRIPTION:Public buyer: Einwohnergemeinde Hünenberg\nSubmission deadline
+ : 16 Nov 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/245998dc-0db1-437a-82cc-8eebea9a45c6/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/245998dc-0db1-437a-82cc-8eebea9a45c6
+URL:https://auftragsregister.ch/en/auftrag/245998dc-0db1-437a-82cc-8eebea9a
+ 45c6/
+LOCATION:Hünenberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Einwohnergemeinde Hünenberg - Krankentagg
+ eldversicherung per 01.01.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6367597-dca0-45d7-9f54-7fbd10ded84b-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Eingabefrist: Schulhaus Langwiesen Erweiterung und Sanierung\; BKP 
+ 242 Erdsonden
+DESCRIPTION:Auftraggeber: Amt für Städtebau\nEingabefrist: 04.11.2026\, 1
+ 2.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d6367597-dc
+ a0-45d7-9f54-7fbd10ded84b/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/d6367597-dca0-45d7-9f54-7fbd10ded84b
+URL:https://auftragsregister.ch/de/auftrag/d6367597-dca0-45d7-9f54-7fbd10de
+ d84b/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulhaus Langwiesen Erweiterung und Sanierung\; 
+ BKP 242 Erdsonden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

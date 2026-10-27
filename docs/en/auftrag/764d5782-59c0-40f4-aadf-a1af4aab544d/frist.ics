@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:764d5782-59c0-40f4-aadf-a1af4aab544d-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Submission deadline: Bauherrenunterstützung und Projektmanagement 
+ Office BHU/PMO für das Projekt "Sirius3 – Zentrales Aus- und Weiterbild
+ ungszentrum für Feuerwehr\, Zivilschutz und Kantonspolizei
+DESCRIPTION:Public buyer: Gebäudeversicherung Bern (GVB)\nSubmission deadl
+ ine: 2 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en
+ /auftrag/764d5782-59c0-40f4-aadf-a1af4aab544d/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/764d5782-59c0-40f4-aadf-a1af4aab544d
+URL:https://auftragsregister.ch/en/auftrag/764d5782-59c0-40f4-aadf-a1af4aab
+ 544d/
+LOCATION:Ittigen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bauherrenunterstützung und Projektmanagem
+ ent Office BHU/PMO für das Projekt "Sirius3 – Zentrales Aus- und Weiter
+ bildungszentrum für Feuerwehr\, Zivilschutz und Kantonspolizei
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

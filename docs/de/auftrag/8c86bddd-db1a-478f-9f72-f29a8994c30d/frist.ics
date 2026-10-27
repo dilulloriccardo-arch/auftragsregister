@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8c86bddd-db1a-478f-9f72-f29a8994c30d-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Eingabefrist: Beschaffung infra. Dienstleistungen Biel-Seeland/Bern
+ er Jura
+DESCRIPTION:Auftraggeber: Zentrale Beschaffungsstelle Facility Management &
+ Mobiliar (ZBS FM&M)\nEingabefrist: 09.11.2026\, 23.59 Uhr\nIm Register: h
+ ttps://auftragsregister.ch/de/auftrag/8c86bddd-db1a-478f-9f72-f29a8994c30d
+ /\nAmtliche Publikation: https://www.simap.ch/de/project-detail/8c86bddd-d
+ b1a-478f-9f72-f29a8994c30d
+URL:https://auftragsregister.ch/de/auftrag/8c86bddd-db1a-478f-9f72-f29a8994
+ c30d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung infra. Dienstleistungen Biel-Seeland/
+ Berner Jura
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

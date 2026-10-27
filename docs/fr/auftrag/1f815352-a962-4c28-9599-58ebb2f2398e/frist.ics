@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1f815352-a962-4c28-9599-58ebb2f2398e-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Délai de remise : 13043.10 / 242-01 Heizungs- und Kälteanlagen\
+ , Instandsetzung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrt
+ skontrolle Oberrieden
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Zürich\nDélai de remise
+  : 20.11.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/1f815352-a962-4c28-9599-58ebb2f2398e/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/1f815352-a962-4c28-9599-58
+ ebb2f2398e
+URL:https://auftragsregister.ch/fr/auftrag/1f815352-a962-4c28-9599-58ebb2f2
+ 398e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 13043.10 / 242-01 Heizungs- und Kälteanla
+ gen\, Instandsetzung & Erweiterung Betriebsgebäude Seepolizei und Schifff
+ ahrtskontrolle Oberrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

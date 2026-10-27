@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:349a6d01-f4da-40c4-8b24-13c81a307073-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20261029T090000Z
+SUMMARY:Délai de remise : Sanierung Lauligstrasse
+DESCRIPTION:Acheteur public : Bauamt Stadt Weinfelden\nDélai de remise
+  : 29.10.2026\, 10 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/349a6d01-f4da-40c4-8b24-13c81a307073/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/349a6d01-f4da-40c4-8b24-13
+ c81a307073
+URL:https://auftragsregister.ch/fr/auftrag/349a6d01-f4da-40c4-8b24-13c81a30
+ 7073/
+LOCATION:Weinfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Lauligstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

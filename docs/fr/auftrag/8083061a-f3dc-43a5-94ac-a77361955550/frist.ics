@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8083061a-f3dc-43a5-94ac-a77361955550-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261029T130000Z
+SUMMARY:Délai de remise : 02.512 Masterplan OSG 2025/2026 - Tappa 3 - Co
+ struzione a secco
+DESCRIPTION:Acheteur public : Ente Ospedaliero Cantonale - Area Infrastru
+ tture e Operations\nDélai de remise : 29.10.2026\, 14 h 00\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/8083061a-f3dc-43a5-94
+ ac-a77361955550/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/8083061a-f3dc-43a5-94ac-a77361955550
+URL:https://auftragsregister.ch/fr/auftrag/8083061a-f3dc-43a5-94ac-a7736195
+ 5550/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 02.512 Masterplan OSG 2025/2026 - Tappa 3 
+ - Costruzione a secco
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

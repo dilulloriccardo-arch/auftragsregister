@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45891c5a-12d6-4e80-97ce-1ba1dcf36008-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261104T225900Z
+SUMMARY:Délai de remise : MP-210082 Road-Map VM-CH SM GHGW F3 A2 A4 A8 
+ – Los 524 GMA UR
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3 Zofingen\nDélai de remise : 04.11.2026\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/45
+ 891c5a-12d6-4e80-97ce-1ba1dcf36008/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/45891c5a-12d6-4e80-97ce-1ba1dcf36008
+URL:https://auftragsregister.ch/fr/auftrag/45891c5a-12d6-4e80-97ce-1ba1dcf3
+ 6008/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-210082 Road-Map VM-CH SM GHGW F3 A2 A4 
+ A8 – Los 524 GMA UR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

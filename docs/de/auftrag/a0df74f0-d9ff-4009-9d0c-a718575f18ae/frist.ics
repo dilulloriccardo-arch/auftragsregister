@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0df74f0-d9ff-4009-9d0c-a718575f18ae-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Eingabefrist: Projet d'extension du collège de Montreux-Est
+DESCRIPTION:Auftraggeber: Commune de Montreux\, Service des domaines et bâ
+ timents\, sport (EMCO Partenaires SA)\nEingabefrist: 09.11.2026\, 12.00 U
+ hr\nIm Register: https://auftragsregister.ch/de/auftrag/a0df74f0-d9ff-4009
+ -9d0c-a718575f18ae/\nAmtliche Publikation: https://www.simap.ch/de/project
+ -detail/a0df74f0-d9ff-4009-9d0c-a718575f18ae
+URL:https://auftragsregister.ch/de/auftrag/a0df74f0-d9ff-4009-9d0c-a718575f
+ 18ae/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projet d'extension du collège de Montreux-Est
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

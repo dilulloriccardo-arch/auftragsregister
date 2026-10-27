@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fcac7c40-f658-444b-81e6-17723c2862cc-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Scadenza: Sanierung Murzlenstrasse\, Niederweningen
+DESCRIPTION:Ente pubblico: Ingenieurbüro Gujer AG\nScadenza: 09.11.2026\, 
+ 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/fcac7c40-f658-
+ 444b-81e6-17723c2862cc/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/fcac7c40-f658-444b-81e6-17723c2862cc
+URL:https://auftragsregister.ch/it/auftrag/fcac7c40-f658-444b-81e6-17723c28
+ 62cc/
+LOCATION:Niederweningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Murzlenstrasse\, Niederweningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

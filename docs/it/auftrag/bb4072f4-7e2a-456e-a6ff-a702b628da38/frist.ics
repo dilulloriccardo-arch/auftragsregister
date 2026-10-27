@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb4072f4-7e2a-456e-a6ff-a702b628da38-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261124T130000Z
+SUMMARY:Scadenza: CONCORSO PER LA FORNITURA DI TRAVERSE IN ACCIAIO PERIODO 
+ 2027-2028
+DESCRIPTION:Ente pubblico: Società per le Ferrovie Autolinee Regionali Tic
+ inesi (FART SA)\nScadenza: 24.11.2026\, 14:00\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/bb4072f4-7e2a-456e-a6ff-a702b628da38/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/bb4072f4-7e2a-456e-
+ a6ff-a702b628da38
+URL:https://auftragsregister.ch/it/auftrag/bb4072f4-7e2a-456e-a6ff-a702b628
+ da38/
+LOCATION:Tegna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: CONCORSO PER LA FORNITURA DI TRAVERSE IN ACCIAIO PERI
+ ODO 2027-2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa7d8926-25a3-4461-901d-ec0d1cf58708-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:1
+DTSTART:20261124T153000Z
+SUMMARY:Délai de remise : CFC564.1 Contrôle périodiques 2027 - 2031
+DESCRIPTION:Acheteur public : Office cantonal des bâtiments (OCBA)\nDél
+ ai de remise : 24.11.2026\, 16 h 30\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/fa7d8926-25a3-4461-901d-ec0d1cf58708/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/fa7d8926-25a3-
+ 4461-901d-ec0d1cf58708
+URL:https://auftragsregister.ch/fr/auftrag/fa7d8926-25a3-4461-901d-ec0d1cf5
+ 8708/
+LOCATION:Les Acacias
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFC564.1 Contrôle périodiques 2027 - 203
+ 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

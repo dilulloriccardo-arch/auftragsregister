@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7246641c-f083-48c9-b9f9-f29c34ac0987-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Submission deadline: 297_Groupe scolaire des Grands Esserts_CFC 273
+ .3_Doublages/plafonds salles de sport et aula
+DESCRIPTION:Public buyer: Commune de Veyrier (Esposito + Javet arch.)\nSubm
+ ission deadline: 3 Nov 2026\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/7246641c-f083-48c9-b9f9-f29c34ac0987/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/7246641c-f083-48c9-b9f9-f29
+ c34ac0987
+URL:https://auftragsregister.ch/en/auftrag/7246641c-f083-48c9-b9f9-f29c34ac
+ 0987/
+LOCATION:Veryer
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 297_Groupe scolaire des Grands Esserts_CFC
+  273.3_Doublages/plafonds salles de sport et aula
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

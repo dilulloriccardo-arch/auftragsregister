@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f3557cf6-ef40-4bcb-971e-cc9beb6b0aeb-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Submission deadline: Trinkwasserkraftwerk Feschel
+DESCRIPTION:Public buyer: Gemeinde Guttet-Feschel (SRP Ingenieur AG)\nSubmi
+ ssion deadline: 18 Dec 2026\, 23:59\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/f3557cf6-ef40-4bcb-971e-cc9beb6b0aeb/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/f3557cf6-ef40-4bcb-971e-cc9
+ beb6b0aeb
+URL:https://auftragsregister.ch/en/auftrag/f3557cf6-ef40-4bcb-971e-cc9beb6b
+ 0aeb/
+LOCATION:Guttet-Feschel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Trinkwasserkraftwerk Feschel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

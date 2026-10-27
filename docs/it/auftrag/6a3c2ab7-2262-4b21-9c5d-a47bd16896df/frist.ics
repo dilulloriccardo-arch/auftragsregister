@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a3c2ab7-2262-4b21-9c5d-a47bd16896df-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Scadenza: Kantonsstrasse Nr. 24\, Steinach: Betriebs- und Gestaltun
+ gskonzept Hauptstrasse\, Dorfzentrum
+DESCRIPTION:Ente pubblico: Kanton St.Gallen\, Tiefbauamt\, Strassen- und Ku
+ nstbauten\nScadenza: 30.11.2026\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/6a3c2ab7-2262-4b21-9c5d-a47bd16896df/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/6a3c2ab7-2262-4b21-9c5d-a
+ 47bd16896df
+URL:https://auftragsregister.ch/it/auftrag/6a3c2ab7-2262-4b21-9c5d-a47bd168
+ 96df/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kantonsstrasse Nr. 24\, Steinach: Betriebs- und Gesta
+ ltungskonzept Hauptstrasse\, Dorfzentrum
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

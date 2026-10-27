@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fd2295fd-04bf-47b8-8ae7-1387c0fe5c3e-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261208T180000Z
+SUMMARY:Délai de remise : Phishing Plattform
+DESCRIPTION:Acheteur public : Kanton Zürich Finanzdirektion Amt für Inf
+ ormatik\nDélai de remise : 08.12.2026\, 19 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/fd2295fd-04bf-47b8-8ae7-1387c0
+ fe5c3e/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /fd2295fd-04bf-47b8-8ae7-1387c0fe5c3e
+URL:https://auftragsregister.ch/fr/auftrag/fd2295fd-04bf-47b8-8ae7-1387c0fe
+ 5c3e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Phishing Plattform
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

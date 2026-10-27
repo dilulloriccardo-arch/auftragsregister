@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f10ab60c-7797-4030-9140-1035c7e80538-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Délai de remise : BKP 261 - Monte-charge - Thoune\, Polygon\, r
+ énovation de l'enveloppe du bâtiment et des installations techniques du 
+ bâtiment
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  19.11.2026\nDans le registre : https://auftragsregister.ch/fr/auftrag/f
+ 10ab60c-7797-4030-9140-1035c7e80538/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/f10ab60c-7797-4030-9140-1035c7e80538
+URL:https://auftragsregister.ch/fr/auftrag/f10ab60c-7797-4030-9140-1035c7e8
+ 0538/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 261 - Monte-charge - Thoune\, Polygon\
+ , rénovation de l'enveloppe du bâtiment et des installations techniques 
+ du bâtiment
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

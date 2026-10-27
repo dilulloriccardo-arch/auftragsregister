@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2785137e-342d-4cdb-b8b2-9859a8ffd141-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Submission deadline: Assistant IA Cantonal
+DESCRIPTION:Public buyer: Etat de Neuchâtel SIEN\nSubmission deadline: 3 
+ Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /2785137e-342d-4cdb-b8b2-9859a8ffd141/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/2785137e-342d-4cdb-b8b2-9859a8ffd141
+URL:https://auftragsregister.ch/en/auftrag/2785137e-342d-4cdb-b8b2-9859a8ff
+ d141/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Assistant IA Cantonal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

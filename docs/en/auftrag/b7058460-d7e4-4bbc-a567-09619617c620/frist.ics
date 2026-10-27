@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b7058460-d7e4-4bbc-a567-09619617c620-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261109T090000Z
+SUMMARY:Submission deadline: Sanierung Ebmatingerstrasse - Waltikon
+DESCRIPTION:Public buyer: Gemeinde Zumikon Abteilung Tiefbau\nSubmission de
+ adline: 9 Nov 2026\, 10:00\nIn the register: https://auftragsregister.ch
+ /en/auftrag/b7058460-d7e4-4bbc-a567-09619617c620/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/b7058460-d7e4-4bbc-a567-09619617c620
+URL:https://auftragsregister.ch/en/auftrag/b7058460-d7e4-4bbc-a567-09619617
+ c620/
+LOCATION:Zumikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Ebmatingerstrasse - Waltikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

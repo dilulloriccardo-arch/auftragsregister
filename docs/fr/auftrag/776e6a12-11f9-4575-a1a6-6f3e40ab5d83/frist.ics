@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:776e6a12-11f9-4575-a1a6-6f3e40ab5d83-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261028T100000Z
+SUMMARY:Délai de remise : Kultur- und Begegnungszentrum Uster im Zeughau
+ s\, BKP 421 «Gärtnerarbeiten»
+DESCRIPTION:Acheteur public : Stadt Uster\, Baumanagement\nDélai de remi
+ se : 28.10.2026\, 11 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/776e6a12-11f9-4575-a1a6-6f3e40ab5d83/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/776e6a12-11f9-4575-a1a6-
+ 6f3e40ab5d83
+URL:https://auftragsregister.ch/fr/auftrag/776e6a12-11f9-4575-a1a6-6f3e40ab
+ 5d83/
+LOCATION:Uster
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kultur- und Begegnungszentrum Uster im Zeu
+ ghaus\, BKP 421 «Gärtnerarbeiten»
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

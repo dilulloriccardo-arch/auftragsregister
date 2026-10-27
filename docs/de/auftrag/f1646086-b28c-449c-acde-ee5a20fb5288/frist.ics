@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f1646086-b28c-449c-acde-ee5a20fb5288-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:2
+DTSTART:20261106T150000Z
+SUMMARY:Eingabefrist: JVA PÖW I 12782.10 I Eingangszone\, Parkierung Neu- 
+ und Umbau I BKP 221.6-21 Sicherheitstüren u. -fenster\, Metallfassade
+DESCRIPTION:Auftraggeber: Hochbauamt\, Baubereich B\nEingabefrist: 06.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/f1646
+ 086-b28c-449c-acde-ee5a20fb5288/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/f1646086-b28c-449c-acde-ee5a20fb5288
+URL:https://auftragsregister.ch/de/auftrag/f1646086-b28c-449c-acde-ee5a20fb
+ 5288/
+LOCATION:Regensdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: JVA PÖW I 12782.10 I Eingangszone\, Parkierung N
+ eu- und Umbau I BKP 221.6-21 Sicherheitstüren u. -fenster\, Metallfassade
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

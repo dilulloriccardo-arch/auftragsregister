@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25c9e4c4-7dc8-4378-9fcf-bad0d8cca3a5-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Scadenza: Neubau Schule Wiesental\, BKP 282.5 Wandbekleidungen aus 
+ Holz 2. Etappe
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Baar\nScadenza: 09.11.2026\, 1
+ 1:00\nNel registro: https://auftragsregister.ch/it/auftrag/25c9e4c4-7dc8-4
+ 378-9fcf-bad0d8cca3a5/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/25c9e4c4-7dc8-4378-9fcf-bad0d8cca3a5
+URL:https://auftragsregister.ch/it/auftrag/25c9e4c4-7dc8-4378-9fcf-bad0d8cc
+ a3a5/
+LOCATION:Baar
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Schule Wiesental\, BKP 282.5 Wandbekleidungen 
+ aus Holz 2. Etappe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

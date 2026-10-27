@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c6fa6a5-5ba0-44a5-ab6c-8deabfea6b3b-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Eingabefrist: Generalplaner SIA 32-53 für UW Regensdorf
+DESCRIPTION:Auftraggeber: Swissgrid AG - Engineering & Construction\nEingab
+ efrist: 06.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/4c6fa6a5-5ba0-44a5-ab6c-8deabfea6b3b/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/4c6fa6a5-5ba0-44a5-ab6c-8deabfea6b3b
+URL:https://auftragsregister.ch/de/auftrag/4c6fa6a5-5ba0-44a5-ab6c-8deabfea
+ 6b3b/
+LOCATION:Regensdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Generalplaner SIA 32-53 für UW Regensdorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

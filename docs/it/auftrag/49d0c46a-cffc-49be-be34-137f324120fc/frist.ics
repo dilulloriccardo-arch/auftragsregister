@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49d0c46a-cffc-49be-be34-137f324120fc-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261111T130000Z
+SUMMARY:Scadenza: Nieder- und Mittelspannungskabel
+DESCRIPTION:Ente pubblico: CKW AG\nScadenza: 11.11.2026\, 14:00\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/49d0c46a-cffc-49be-be34-137f324
+ 120fc/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/49
+ d0c46a-cffc-49be-be34-137f324120fc
+URL:https://auftragsregister.ch/it/auftrag/49d0c46a-cffc-49be-be34-137f3241
+ 20fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Nieder- und Mittelspannungskabel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

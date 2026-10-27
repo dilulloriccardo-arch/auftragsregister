@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6f28ada2-14b6-46fd-a865-3601a28ce79b-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Scadenza: Reinigung Abdeckung Spitzenlast / Subm. Nr.: 2026-18
+DESCRIPTION:Ente pubblico: TED - Entsorgung + Recycling Zürich (ERZ) Hagen
+ holzstrasse 110\, Zürich\nScadenza: 05.11.2026\, 16:00\nNel registro: htt
+ ps://auftragsregister.ch/it/auftrag/6f28ada2-14b6-46fd-a865-3601a28ce79b/\
+ nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/6f28ada2-
+ 14b6-46fd-a865-3601a28ce79b
+URL:https://auftragsregister.ch/it/auftrag/6f28ada2-14b6-46fd-a865-3601a28c
+ e79b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Reinigung Abdeckung Spitzenlast / Subm. Nr.: 2026-18
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

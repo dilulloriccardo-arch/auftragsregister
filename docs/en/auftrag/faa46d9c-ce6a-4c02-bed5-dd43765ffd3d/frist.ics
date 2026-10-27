@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:faa46d9c-ce6a-4c02-bed5-dd43765ffd3d-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Submission deadline: Assicurazione All Risks stabili\, beni mobili 
+ e assicurazioni tecniche - Comune di Stabio e Azienda comunale di Stabio (
+ AMS)
+DESCRIPTION:Public buyer: Comune di Stabio\nSubmission deadline: 16 Nov 2
+ 026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/faa46
+ d9c-ce6a-4c02-bed5-dd43765ffd3d/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/faa46d9c-ce6a-4c02-bed5-dd43765ffd3d
+URL:https://auftragsregister.ch/en/auftrag/faa46d9c-ce6a-4c02-bed5-dd43765f
+ fd3d/
+LOCATION:Stabio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Assicurazione All Risks stabili\, beni mob
+ ili e assicurazioni tecniche - Comune di Stabio e Azienda comunale di Stab
+ io (AMS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

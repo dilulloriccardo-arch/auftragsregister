@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:68771af6-2608-42a6-9272-9b7ab39f9db1-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Délai de remise : Périmètre d’évolution 07\, Université de
+  Berne\, Centre de recherche pour la médecine – CFC 271 Plâtrerie
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 06.11.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/68771af6-2608-42a6-9272-9
+ b7ab39f9db1/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/68771af6-2608-42a6-9272-9b7ab39f9db1
+URL:https://auftragsregister.ch/fr/auftrag/68771af6-2608-42a6-9272-9b7ab39f
+ 9db1/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Périmètre d’évolution 07\, Universit
+ é de Berne\, Centre de recherche pour la médecine – CFC 271 Plâtrerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

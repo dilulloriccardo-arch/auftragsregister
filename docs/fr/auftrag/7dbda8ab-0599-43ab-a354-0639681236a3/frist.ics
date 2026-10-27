@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7dbda8ab-0599-43ab-a354-0639681236a3-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261206T225959Z
+SUMMARY:Délai de remise : Sissach - Tunnel du Chienberg / Responsable du
+  projet de rénovation complète\, phases SIA 31 à 53
+DESCRIPTION:Acheteur public : Zentrale Beschaffungsstelle Kanton Basel-La
+ ndschaft\nDélai de remise : 06.12.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/7dbda8ab-0599-43ab-a354-063968
+ 1236a3/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /7dbda8ab-0599-43ab-a354-0639681236a3
+URL:https://auftragsregister.ch/fr/auftrag/7dbda8ab-0599-43ab-a354-06396812
+ 36a3/
+LOCATION:Sissach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sissach - Tunnel du Chienberg / Responsabl
+ e du projet de rénovation complète\, phases SIA 31 à 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

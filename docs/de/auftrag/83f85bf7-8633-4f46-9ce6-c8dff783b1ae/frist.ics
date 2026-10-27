@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83f85bf7-8633-4f46-9ce6-c8dff783b1ae-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:3
+DTSTART:20261116T110000Z
+SUMMARY:Eingabefrist: Préservation et valorisation du site de l’Amphith
+ éâtre de Nyon
+DESCRIPTION:Auftraggeber: Service d’architecture de la Ville de Nyon\nEin
+ gabefrist: 16.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/83f85bf7-8633-4f46-9ce6-c8dff783b1ae/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/83f85bf7-8633-4f46-9ce6-c8dff783b1
+ ae
+URL:https://auftragsregister.ch/de/auftrag/83f85bf7-8633-4f46-9ce6-c8dff783
+ b1ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Préservation et valorisation du site de l’Amph
+ ithéâtre de Nyon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f9f5ec91-6e7b-434d-b819-356472ccbe04-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:1
+DTSTART:20261108T225500Z
+SUMMARY:Délai de remise : Planificateur général pour l'extension du si
+ te de Lenzburg AG
+DESCRIPTION:Acheteur public : AEW Energie AG\nDélai de remise : 08.11.
+ 2026\, 23 h 55\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/f9f5ec91-6e7b-434d-b819-356472ccbe04/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/f9f5ec91-6e7b-434d-b819-356472ccbe04
+URL:https://auftragsregister.ch/fr/auftrag/f9f5ec91-6e7b-434d-b819-356472cc
+ be04/
+LOCATION:Lenzburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Planificateur général pour l'extension d
+ u site de Lenzburg AG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

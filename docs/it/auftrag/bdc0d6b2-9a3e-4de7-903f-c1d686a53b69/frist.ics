@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bdc0d6b2-9a3e-4de7-903f-c1d686a53b69-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261118T160000Z
+SUMMARY:Scadenza: Traversée Village de Le Vaud - Travaux Génie Civil
+DESCRIPTION:Ente pubblico: Commune de Le Vaud\nScadenza: 18.11.2026\, 17:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/bdc0d6b2-9a3e-4de7-
+ 903f-c1d686a53b69/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/bdc0d6b2-9a3e-4de7-903f-c1d686a53b69
+URL:https://auftragsregister.ch/it/auftrag/bdc0d6b2-9a3e-4de7-903f-c1d686a5
+ 3b69/
+LOCATION:Le vaud
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Traversée Village de Le Vaud - Travaux Génie Civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

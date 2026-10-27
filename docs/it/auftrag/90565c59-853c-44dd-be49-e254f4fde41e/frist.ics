@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90565c59-853c-44dd-be49-e254f4fde41e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261204T225900Z
+SUMMARY:Scadenza: 20-kV-Tauchkern-Erdschlusslöschspulen
+DESCRIPTION:Ente pubblico: Repower AG\nScadenza: 04.12.2026\, 23:59\nNel re
+ gistro: https://auftragsregister.ch/it/auftrag/90565c59-853c-44dd-be49-e25
+ 4f4fde41e/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detai
+ l/90565c59-853c-44dd-be49-e254f4fde41e
+URL:https://auftragsregister.ch/it/auftrag/90565c59-853c-44dd-be49-e254f4fd
+ e41e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 20-kV-Tauchkern-Erdschlusslöschspulen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

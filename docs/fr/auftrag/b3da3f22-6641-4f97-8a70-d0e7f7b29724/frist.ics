@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3da3f22-6641-4f97-8a70-d0e7f7b29724-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Délai de remise : Commune de Steinhausen - Assurances accidents 
+ au 1er janvier 2027
+DESCRIPTION:Acheteur public : Einwohnergemeinde Steinhausen\nDélai de re
+ mise : 16.11.2026\, 10 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/b3da3f22-6641-4f97-8a70-d0e7f7b29724/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/b3da3f22-6641-4f97-8a7
+ 0-d0e7f7b29724
+URL:https://auftragsregister.ch/fr/auftrag/b3da3f22-6641-4f97-8a70-d0e7f7b2
+ 9724/
+LOCATION:Steinhausen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Commune de Steinhausen - Assurances accide
+ nts au 1er janvier 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

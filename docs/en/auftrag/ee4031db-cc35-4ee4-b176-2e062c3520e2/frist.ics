@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee4031db-cc35-4ee4-b176-2e062c3520e2-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261118T180000Z
+SUMMARY:Submission deadline: Brückenbauarbeiten\, 9043 Trogen AR
+DESCRIPTION:Public buyer: Kanton Appenzell Ausserrhoden\nSubmission deadlin
+ e: 18 Nov 2026\, 19:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/ee4031db-cc35-4ee4-b176-2e062c3520e2/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/ee4031db-cc35-4ee4-b176-2e062c3520e2
+URL:https://auftragsregister.ch/en/auftrag/ee4031db-cc35-4ee4-b176-2e062c35
+ 20e2/
+LOCATION:Trogen AR
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Brückenbauarbeiten\, 9043 Trogen AR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

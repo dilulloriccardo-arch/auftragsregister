@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:64cd07e7-93f4-4d9b-9baf-aa6cfb726971-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261203T154500Z
+SUMMARY:Submission deadline: Flumenthal\; Zentralgefängnis Kanton Solothur
+ n (ZGSO) – Neubau / BKP 413.31 Ordnungszaun mit Türen und Tore
+DESCRIPTION:Public buyer: Kanton Solothurn\, Bau- und Justizdepartement\, H
+ ochbauamt\nSubmission deadline: 3 Dec 2026\, 16:45\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/64cd07e7-93f4-4d9b-9baf-aa6cfb726971/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/64cd07e7-93f
+ 4-4d9b-9baf-aa6cfb726971
+URL:https://auftragsregister.ch/en/auftrag/64cd07e7-93f4-4d9b-9baf-aa6cfb72
+ 6971/
+LOCATION:Flumenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Flumenthal\; Zentralgefängnis Kanton Solo
+ thurn (ZGSO) – Neubau / BKP 413.31 Ordnungszaun mit Türen und Tore
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

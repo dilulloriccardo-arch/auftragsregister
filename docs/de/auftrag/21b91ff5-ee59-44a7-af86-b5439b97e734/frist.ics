@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:21b91ff5-ee59-44a7-af86-b5439b97e734-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Eingabefrist: Sachversicherung (Gebäude\, betriebliche Einrichtung
+ en/Waren) der Gemeinde Zollikon
+DESCRIPTION:Auftraggeber: Gemeinde Zollikon (Walser Consulting AG)\nEingabe
+ frist: 02.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/21b91ff5-ee59-44a7-af86-b5439b97e734/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/21b91ff5-ee59-44a7-af86-b5439b97e734
+URL:https://auftragsregister.ch/de/auftrag/21b91ff5-ee59-44a7-af86-b5439b97
+ e734/
+LOCATION:Rüschlikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sachversicherung (Gebäude\, betriebliche Einrich
+ tungen/Waren) der Gemeinde Zollikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

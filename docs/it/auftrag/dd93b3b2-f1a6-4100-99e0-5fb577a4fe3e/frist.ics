@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd93b3b2-f1a6-4100-99e0-5fb577a4fe3e-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261210T130000Z
+SUMMARY:Scadenza: Fornitura di un servizio Security Operation Center (SOC) 
+ e Security Information and Event Management (SIEM)
+DESCRIPTION:Ente pubblico: Ente Ospedaliero Cantonale - Area Evoluzione Dig
+ itale e Tecnologia\nScadenza: 10.12.2026\, 14:00\nNel registro: https://au
+ ftragsregister.ch/it/auftrag/dd93b3b2-f1a6-4100-99e0-5fb577a4fe3e/\nPubbli
+ cazione ufficiale: https://www.simap.ch/it/project-detail/dd93b3b2-f1a6-41
+ 00-99e0-5fb577a4fe3e
+URL:https://auftragsregister.ch/it/auftrag/dd93b3b2-f1a6-4100-99e0-5fb577a4
+ fe3e/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fornitura di un servizio Security Operation Center (S
+ OC) e Security Information and Event Management (SIEM)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

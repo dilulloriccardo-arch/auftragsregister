@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62bdaa70-8363-4e63-b76c-3ef470c9e5ae-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Scadenza: USZ Campus MITTE 1|2 / BKP 231.01 Mittelspannungsanlagen\
+ , Niederspannungshauptverteilungen (OV)
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 30.11.202
+ 6\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/62bdaa70-8
+ 363-4e63-b76c-3ef470c9e5ae/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/62bdaa70-8363-4e63-b76c-3ef470c9e5ae
+URL:https://auftragsregister.ch/it/auftrag/62bdaa70-8363-4e63-b76c-3ef470c9
+ e5ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: USZ Campus MITTE 1|2 / BKP 231.01 Mittelspannungsanla
+ gen\, Niederspannungshauptverteilungen (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

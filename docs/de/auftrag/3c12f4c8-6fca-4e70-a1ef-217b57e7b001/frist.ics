@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c12f4c8-6fca-4e70-a1ef-217b57e7b001-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Eingabefrist: BAV 60500 SRZ Wache Süd\, Neubau - BKP 215.2 Fassade
+ nbau
+DESCRIPTION:Auftraggeber: HBD - Amt für Hochbauten (AHB)\nEingabefrist: 09
+ .11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /3c12f4c8-6fca-4e70-a1ef-217b57e7b001/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/3c12f4c8-6fca-4e70-a1ef-217b57e7b001
+URL:https://auftragsregister.ch/de/auftrag/3c12f4c8-6fca-4e70-a1ef-217b57e7
+ b001/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BAV 60500 SRZ Wache Süd\, Neubau - BKP 215.2 Fas
+ sadenbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

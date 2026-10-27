@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8074b94-5b98-46cc-bd60-7f55d422fe5a-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Eingabefrist: Rénovation école du Bosson - Faux-plafonds
+DESCRIPTION:Auftraggeber: Ville d'Onex (Bureau d'architectes Burckhardt Arc
+ hitecture SA)\nEingabefrist: 30.11.2026\, 12.00 Uhr\nIm Register: https:/
+ /auftragsregister.ch/de/auftrag/d8074b94-5b98-46cc-bd60-7f55d422fe5a/\nAmt
+ liche Publikation: https://www.simap.ch/de/project-detail/d8074b94-5b98-46
+ cc-bd60-7f55d422fe5a
+URL:https://auftragsregister.ch/de/auftrag/d8074b94-5b98-46cc-bd60-7f55d422
+ fe5a/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rénovation école du Bosson - Faux-plafonds
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

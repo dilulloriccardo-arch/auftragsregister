@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:31eed44a-7f64-44f9-8512-d83178c55d46-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261111T150000Z
+SUMMARY:Submission deadline: MP-230042 NEB N13 Pavimentazione Magadino-Asco
+ na\, Lot 001\, laboratoire du maître d'ouvrage
+DESCRIPTION:Public buyer: Ufficio federale delle strade USTRA\, divisione i
+ nfrastruttura stradale Est\nSubmission deadline: 11 Nov 2026\, 16:00\nIn
+  the register: https://auftragsregister.ch/en/auftrag/31eed44a-7f64-44f9-8
+ 512-d83178c55d46/\nOfficial publication: https://www.simap.ch/en/project-d
+ etail/31eed44a-7f64-44f9-8512-d83178c55d46
+URL:https://auftragsregister.ch/en/auftrag/31eed44a-7f64-44f9-8512-d83178c5
+ 5d46/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-230042 NEB N13 Pavimentazione Magadino-
+ Ascona\, Lot 001\, laboratoire du maître d'ouvrage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

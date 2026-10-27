@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6aa4af4c-a5a2-47b1-8f5e-8526127ca901-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Submission deadline: Justizvollzugsanstalt Lenzburg\, Geb. 5* Stern
+  - BKP 231/232 Starkstromanlagen / Starkstrominstallationen
+DESCRIPTION:Public buyer: Immobilien Aargau\nSubmission deadline: 17 Nov 
+ 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/6aa4
+ af4c-a5a2-47b1-8f5e-8526127ca901/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/6aa4af4c-a5a2-47b1-8f5e-8526127ca901
+URL:https://auftragsregister.ch/en/auftrag/6aa4af4c-a5a2-47b1-8f5e-8526127c
+ a901/
+LOCATION:Lenzburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Justizvollzugsanstalt Lenzburg\, Geb. 5* S
+ tern - BKP 231/232 Starkstromanlagen / Starkstrominstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

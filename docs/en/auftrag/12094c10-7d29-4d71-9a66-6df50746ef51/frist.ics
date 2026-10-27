@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12094c10-7d29-4d71-9a66-6df50746ef51-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Submission deadline: Rénovation centre scolaire du Mail - 22410 - 
+ Toiture plate & étanchéité
+DESCRIPTION:Public buyer: éorén - École obligatoire région Neuchâtel (
+ AAPA SA)\nSubmission deadline: 2 Dec 2026\, 16:00\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/12094c10-7d29-4d71-9a66-6df50746ef51/\n
+ Official publication: https://www.simap.ch/en/project-detail/12094c10-7d29
+ -4d71-9a66-6df50746ef51
+URL:https://auftragsregister.ch/en/auftrag/12094c10-7d29-4d71-9a66-6df50746
+ ef51/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rénovation centre scolaire du Mail - 2241
+ 0 - Toiture plate & étanchéité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

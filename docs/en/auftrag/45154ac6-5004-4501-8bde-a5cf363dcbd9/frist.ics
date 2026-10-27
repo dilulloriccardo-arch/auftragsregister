@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45154ac6-5004-4501-8bde-a5cf363dcbd9-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261104T225900Z
+SUMMARY:Submission deadline: (b26055-6) Bern\, Monbijoustrasse 40\, Gesamts
+ anierung / BKP 25
+DESCRIPTION:Public buyer: Bundesamt für Bauten und Logistik BBL\nSubmissio
+ n deadline: 4 Nov 2026\, 23:59\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/45154ac6-5004-4501-8bde-a5cf363dcbd9/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/45154ac6-5004-4501-8bde-a5cf363d
+ cbd9
+URL:https://auftragsregister.ch/en/auftrag/45154ac6-5004-4501-8bde-a5cf363d
+ cbd9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (b26055-6) Bern\, Monbijoustrasse 40\, Ges
+ amtsanierung / BKP 25
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

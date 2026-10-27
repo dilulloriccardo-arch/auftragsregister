@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f4cfb91c-3320-4c3f-ba10-4824371653fc-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261030T100000Z
+SUMMARY:Eingabefrist: Sanierung Bahnstrasse - Tiefbauarbeiten
+DESCRIPTION:Auftraggeber: Gemeinde Regensdorf\nEingabefrist: 30.10.2026\, 1
+ 1.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/f4cfb91c-33
+ 20-4c3f-ba10-4824371653fc/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/f4cfb91c-3320-4c3f-ba10-4824371653fc
+URL:https://auftragsregister.ch/de/auftrag/f4cfb91c-3320-4c3f-ba10-48243716
+ 53fc/
+LOCATION:Regensdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Bahnstrasse - Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

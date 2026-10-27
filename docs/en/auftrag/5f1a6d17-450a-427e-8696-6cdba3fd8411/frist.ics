@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f1a6d17-450a-427e-8696-6cdba3fd8411-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T153000Z
+SUMMARY:Submission deadline: Révision du cadastre des sites pollués par l
+ ’intégration des substances per- et polyfluoroalkylées (PFAS) et gesti
+ on des sites pollués / Location de services
+DESCRIPTION:Public buyer: Office Cantonal de l'Environnement (OCEV)\nSubmis
+ sion deadline: 25 Nov 2026\, 16:30\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/5f1a6d17-450a-427e-8696-6cdba3fd8411/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/5f1a6d17-450a-427e-8696-6cdb
+ a3fd8411
+URL:https://auftragsregister.ch/en/auftrag/5f1a6d17-450a-427e-8696-6cdba3fd
+ 8411/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Révision du cadastre des sites pollués p
+ ar l’intégration des substances per- et polyfluoroalkylées (PFAS) et g
+ estion des sites pollués / Location de services
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:26177c1e-e1f1-44eb-b975-21d2e61b4c4f-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Scadenza: Renouvellement de voie Vuitebœuf - Baulmes (ligne Yverdo
+ n - Ste-Croix)\, km 9.980-11.006 - Prestations de construction GC - Phases
+  52/53
+DESCRIPTION:Ente pubblico: TRAVYS SA\nScadenza: 09.12.2026\, 11:00\nNel reg
+ istro: https://auftragsregister.ch/it/auftrag/26177c1e-e1f1-44eb-b975-21d2
+ e61b4c4f/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail
+ /26177c1e-e1f1-44eb-b975-21d2e61b4c4f
+URL:https://auftragsregister.ch/it/auftrag/26177c1e-e1f1-44eb-b975-21d2e61b
+ 4c4f/
+LOCATION:Baulmes
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Renouvellement de voie Vuitebœuf - Baulmes (ligne Yv
+ erdon - Ste-Croix)\, km 9.980-11.006 - Prestations de construction GC - Ph
+ ases 52/53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

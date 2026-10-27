@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e139b094-2908-4d14-b1df-09c9cc313968-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:1
+DTSTART:20261112T150000Z
+SUMMARY:Eingabefrist: Stadt Chur - Planungs- und Umzugsleistungen für Bür
+ oarbeitswelten
+DESCRIPTION:Auftraggeber: Stadt Chur - Immobilien und Bewirtschaftung\, Fac
+ ility Services\nEingabefrist: 12.11.2026\, 16.00 Uhr\nIm Register: https:
+ //auftragsregister.ch/de/auftrag/e139b094-2908-4d14-b1df-09c9cc313968/\nAm
+ tliche Publikation: https://www.simap.ch/de/project-detail/e139b094-2908-4
+ d14-b1df-09c9cc313968
+URL:https://auftragsregister.ch/de/auftrag/e139b094-2908-4d14-b1df-09c9cc31
+ 3968/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Stadt Chur - Planungs- und Umzugsleistungen für 
+ Büroarbeitswelten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7e57eed2-bc1a-4cf2-8705-20f11a1cd75a-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T103000Z
+SUMMARY:Délai de remise : ICT-Betrieb und ICT-Ausrüstung der Primarstuf
+ e Birsfelden
+DESCRIPTION:Acheteur public : Einwohnergemeinde Birsfelden\nDélai de rem
+ ise : 01.12.2026\, 11 h 30\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/7e57eed2-bc1a-4cf2-8705-20f11a1cd75a/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/7e57eed2-bc1a-4cf2-8705
+ -20f11a1cd75a
+URL:https://auftragsregister.ch/fr/auftrag/7e57eed2-bc1a-4cf2-8705-20f11a1c
+ d75a/
+LOCATION:Hauptstrasse 77
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ICT-Betrieb und ICT-Ausrüstung der Primar
+ stufe Birsfelden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

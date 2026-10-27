@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:33e48b2a-04d3-4017-9178-1c0d54f67a2d-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Délai de remise : École de Langwiesen : extension et rénovatio
+ n \; CFC 25 Installations sanitaires
+DESCRIPTION:Acheteur public : Amt für Städtebau\nDélai de remise : 0
+ 4.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/33e48b2a-04d3-4017-9178-1c0d54f67a2d/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/33e48b2a-04d3-4017-9178-1c0d54
+ f67a2d
+URL:https://auftragsregister.ch/fr/auftrag/33e48b2a-04d3-4017-9178-1c0d54f6
+ 7a2d/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École de Langwiesen : extension et rénov
+ ation \; CFC 25 Installations sanitaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

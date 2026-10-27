@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:08821cd8-36e0-42dd-94a3-faf308a12576-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261117T103000Z
+SUMMARY:Submission deadline: STEP ORBE BETELEC - Fourniture et pose de pann
+ eaux photovoltaïques
+DESCRIPTION:Public buyer: Commune d'Orbe - Services techniques\nSubmission 
+ deadline: 17 Nov 2026\, 11:30\nIn the register: https://auftragsregister
+ .ch/en/auftrag/08821cd8-36e0-42dd-94a3-faf308a12576/\nOfficial publication
+ : https://www.simap.ch/en/project-detail/08821cd8-36e0-42dd-94a3-faf308a12
+ 576
+URL:https://auftragsregister.ch/en/auftrag/08821cd8-36e0-42dd-94a3-faf308a1
+ 2576/
+LOCATION:Chemin des Pâquerets 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: STEP ORBE BETELEC - Fourniture et pose de 
+ panneaux photovoltaïques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a872d80-3d0c-4c63-88c8-796ebe64d007-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261106T103000Z
+SUMMARY:Scadenza: Hombrechtikon: Sanierung Alte Landstrasse
+DESCRIPTION:Ente pubblico: Gemeinde Hombrechtikon\nScadenza: 06.11.2026\, 1
+ 1:30\nNel registro: https://auftragsregister.ch/it/auftrag/3a872d80-3d0c-4
+ c63-88c8-796ebe64d007/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/3a872d80-3d0c-4c63-88c8-796ebe64d007
+URL:https://auftragsregister.ch/it/auftrag/3a872d80-3d0c-4c63-88c8-796ebe64
+ d007/
+LOCATION:Hombrechtikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Hombrechtikon: Sanierung Alte Landstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

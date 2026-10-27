@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf5f0895-7803-4f76-8aaa-60acce6b7641-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261204T080000Z
+SUMMARY:Eingabefrist: H19.1 Furkastrasse\, Realp\, Lochbergbach bis Husmatt
+ \, Strassensanierung
+DESCRIPTION:Auftraggeber: Amt für Tiefbau Uri\nEingabefrist: 04.12.2026\, 
+ 9.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/cf5f0895-78
+ 03-4f76-8aaa-60acce6b7641/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/cf5f0895-7803-4f76-8aaa-60acce6b7641
+URL:https://auftragsregister.ch/de/auftrag/cf5f0895-7803-4f76-8aaa-60acce6b
+ 7641/
+LOCATION:Realp
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: H19.1 Furkastrasse\, Realp\, Lochbergbach bis Hus
+ matt\, Strassensanierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ca88e6c-1c02-46d4-ae5f-e51ff7c49900-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:0
+DTSTART:20261029T133000Z
+SUMMARY:Délai de remise : Appel d’offres pour l'attribution du mandat 
+ de gestion partielle d’une partie du portefeuille d'assurances de la Vil
+ le de Lugano
+DESCRIPTION:Acheteur public : Città di Lugano - Finanze\nDélai de remis
+ e : 29.10.2026\, 14 h 30\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/0ca88e6c-1c02-46d4-ae5f-e51ff7c49900/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/0ca88e6c-1c02-46d4-ae5f-e
+ 51ff7c49900
+URL:https://auftragsregister.ch/fr/auftrag/0ca88e6c-1c02-46d4-ae5f-e51ff7c4
+ 9900/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d’offres pour l'attribution du man
+ dat de gestion partielle d’une partie du portefeuille d'assurances de la
+  Ville de Lugano
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

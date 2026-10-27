@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d263dd4d-de0b-48a5-91e7-8889640b001a-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Délai de remise : FES du district de Meilen et KESB du district 
+ de Meilen : Acquisition d’équipements informatiques (postes de travail\
+ , serveurs et infrastructure réseau WAN et WLAN\, y compris maintenance e
+ t exploitation).
+DESCRIPTION:Acheteur public : FES Bezirk Meilen und KESB Bezirk Meilen (P
+ UBLICS)\nDélai de remise : 09.11.2026\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/d263dd4d-de0b-48a5-91e7-8889640b001a/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/d263dd4d-de0b-4
+ 8a5-91e7-8889640b001a
+URL:https://auftragsregister.ch/fr/auftrag/d263dd4d-de0b-48a5-91e7-8889640b
+ 001a/
+LOCATION:Uetikon am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : FES du district de Meilen et KESB du distr
+ ict de Meilen : Acquisition d’équipements informatiques (postes de trav
+ ail\, serveurs et infrastructure réseau WAN et WLAN\, y compris maintenan
+ ce et exploitation).
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

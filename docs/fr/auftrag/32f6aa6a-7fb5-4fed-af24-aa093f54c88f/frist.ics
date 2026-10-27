@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32f6aa6a-7fb5-4fed-af24-aa093f54c88f-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T100000Z
+SUMMARY:Délai de remise : RES Ibig\, travaux de pose de canalisations d'
+ eau potable
+DESCRIPTION:Acheteur public : Gruppenwasserversorgung Furttal (Ingenieurb
+ üro Gujer AG)\nDélai de remise : 06.11.2026\, 11 h 00\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/32f6aa6a-7fb5-4fed-af24-a
+ a093f54c88f/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/32f6aa6a-7fb5-4fed-af24-aa093f54c88f
+URL:https://auftragsregister.ch/fr/auftrag/32f6aa6a-7fb5-4fed-af24-aa093f54
+ c88f/
+LOCATION:Watt (Regensdorf)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : RES Ibig\, travaux de pose de canalisation
+ s d'eau potable
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

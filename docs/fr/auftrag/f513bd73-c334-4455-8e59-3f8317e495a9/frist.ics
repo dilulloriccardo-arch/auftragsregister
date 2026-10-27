@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f513bd73-c334-4455-8e59-3f8317e495a9-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261125T100000Z
+SUMMARY:Délai de remise : Solution fiscale intégrée pour les personnes
+  morales et les personnes physiques : mise en œuvre\, maintenance et assi
+ stance
+DESCRIPTION:Acheteur public : République et Canton du Jura - Service des
+  contributions\nDélai de remise : 25.11.2026\, 11 h 00\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/f513bd73-c334-4455-8e59-3
+ f8317e495a9/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/f513bd73-c334-4455-8e59-3f8317e495a9
+URL:https://auftragsregister.ch/fr/auftrag/f513bd73-c334-4455-8e59-3f8317e4
+ 95a9/
+LOCATION:Delémont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Solution fiscale intégrée pour les perso
+ nnes morales et les personnes physiques : mise en œuvre\, maintenance et 
+ assistance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

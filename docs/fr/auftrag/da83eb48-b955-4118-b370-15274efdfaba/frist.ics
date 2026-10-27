@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da83eb48-b955-4118-b370-15274efdfaba-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261208T140000Z
+SUMMARY:Délai de remise : Mise en conformité des quais et renouvellemen
+ t LC - Gare de Villeneuve
+DESCRIPTION:Acheteur public : Chemins de fer fédéraux suisses CFF\, Inf
+ rastructure – Achats\, Supply Chain et production\, Achats projets de co
+ nstruction Région Ouest\nDélai de remise : 08.12.2026\, 15 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/da83eb48-b955-4
+ 118-b370-15274efdfaba/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/da83eb48-b955-4118-b370-15274efdfaba
+URL:https://auftragsregister.ch/fr/auftrag/da83eb48-b955-4118-b370-15274efd
+ faba/
+LOCATION:Villeneuve
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mise en conformité des quais et renouvell
+ ement LC - Gare de Villeneuve
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

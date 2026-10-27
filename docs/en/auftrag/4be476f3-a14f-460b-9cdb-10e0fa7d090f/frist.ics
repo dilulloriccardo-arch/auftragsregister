@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4be476f3-a14f-460b-9cdb-10e0fa7d090f-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T090000Z
+SUMMARY:Submission deadline: Ersatzbeschaffung Hubrettungsfahrzeug für die
+  Feuerwehr Wettingen
+DESCRIPTION:Public buyer: Einwohnergemeinde Wettingen\nSubmission deadline:
+  30 Nov 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/4be476f3-a14f-460b-9cdb-10e0fa7d090f/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/4be476f3-a14f-460b-9cdb-10e0fa7d090f
+URL:https://auftragsregister.ch/en/auftrag/4be476f3-a14f-460b-9cdb-10e0fa7d
+ 090f/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatzbeschaffung Hubrettungsfahrzeug für
+  die Feuerwehr Wettingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

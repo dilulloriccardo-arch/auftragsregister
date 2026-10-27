@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe196b30-6bdd-4341-bb76-ed8bf992477a-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Eingabefrist: Neugestaltung Bahnhof-/ Kappeli-/ Grünaustrasse
+DESCRIPTION:Auftraggeber: Stadt Buchs\, Bau und Infrastruktur\nEingabefrist
+ : 13.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/fe196b30-6bdd-4341-bb76-ed8bf992477a/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/fe196b30-6bdd-4341-bb76-ed8bf992477a
+URL:https://auftragsregister.ch/de/auftrag/fe196b30-6bdd-4341-bb76-ed8bf992
+ 477a/
+LOCATION:Buchs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neugestaltung Bahnhof-/ Kappeli-/ Grünaustrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

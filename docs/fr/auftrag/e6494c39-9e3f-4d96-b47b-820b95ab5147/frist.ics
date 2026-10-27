@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6494c39-9e3f-4d96-b47b-820b95ab5147-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261106T100000Z
+SUMMARY:Délai de remise : 2314 – Ville de La Chaux-de-Fonds - STEP - R
+ econstruction de la dalle du canal d'amenée
+DESCRIPTION:Acheteur public : Ville de La Chaux-de-Fonds - Service techni
+ que( Mauler SA)\nDélai de remise : 06.11.2026\, 11 h 00\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/e6494c39-9e3f-4d96-b47b-
+ 820b95ab5147/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/e6494c39-9e3f-4d96-b47b-820b95ab5147
+URL:https://auftragsregister.ch/fr/auftrag/e6494c39-9e3f-4d96-b47b-820b95ab
+ 5147/
+LOCATION:La Chaux-de-Fonds
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 2314 – Ville de La Chaux-de-Fonds - STEP
+  - Reconstruction de la dalle du canal d'amenée
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

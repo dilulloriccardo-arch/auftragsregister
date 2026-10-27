@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07683015-9d16-49e9-9d81-0a61abc391fc-frist@auftragsregister.ch
+DTSTAMP:20260903T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Délai de remise : Recherche d'une gestion d'affaires pour les in
+ stances judiciaires du Canton du Jura
+DESCRIPTION:Acheteur public : DFNS - Service de l'informatique\nDélai de
+  remise : 06.11.2026\, 12 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/07683015-9d16-49e9-9d81-0a61abc391fc/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/07683015-9d16-49e9-
+ 9d81-0a61abc391fc
+URL:https://auftragsregister.ch/fr/auftrag/07683015-9d16-49e9-9d81-0a61abc3
+ 91fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Recherche d'une gestion d'affaires pour le
+ s instances judiciaires du Canton du Jura
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

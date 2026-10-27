@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d99e7345-847e-4c88-90f2-8f46815c4774-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261201T100000Z
+SUMMARY:Submission deadline: Gesamtleistungssubmission Systembau schulergä
+ nzende Betreuung\, Flurlingen
+DESCRIPTION:Public buyer: Gemeinde Flurlingen (Landis AG)\nSubmission deadl
+ ine: 1 Dec 2026\, 11:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/d99e7345-847e-4c88-90f2-8f46815c4774/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/d99e7345-847e-4c88-90f2-8f46815c4774
+URL:https://auftragsregister.ch/en/auftrag/d99e7345-847e-4c88-90f2-8f46815c
+ 4774/
+LOCATION:Flurlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gesamtleistungssubmission Systembau schule
+ rgänzende Betreuung\, Flurlingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

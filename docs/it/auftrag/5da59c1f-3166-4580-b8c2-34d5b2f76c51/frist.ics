@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5da59c1f-3166-4580-b8c2-34d5b2f76c51-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Scadenza: BAV 27600 Wohn- und Geschäftshaus Freiestrasse 56\, 58\,
+  Instandsetzung - BKP 214 Montagebau in Holz
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 12.11
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/5da59c
+ 1f-3166-4580-b8c2-34d5b2f76c51/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/5da59c1f-3166-4580-b8c2-34d5b2f76c51
+URL:https://auftragsregister.ch/it/auftrag/5da59c1f-3166-4580-b8c2-34d5b2f7
+ 6c51/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 27600 Wohn- und Geschäftshaus Freiestrasse 56\, 
+ 58\, Instandsetzung - BKP 214 Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

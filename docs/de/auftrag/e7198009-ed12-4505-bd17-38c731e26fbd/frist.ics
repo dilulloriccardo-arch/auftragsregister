@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7198009-ed12-4505-bd17-38c731e26fbd-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261102T225900Z
+SUMMARY:Eingabefrist: ADRESS 2.0 – Instrument für resonante unelastische
+  Röntgenstreuung
+DESCRIPTION:Auftraggeber: Paul Scherrer Institut (PSI)\nEingabefrist: 02.11
+ .2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e7
+ 198009-ed12-4505-bd17-38c731e26fbd/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/e7198009-ed12-4505-bd17-38c731e26fbd
+URL:https://auftragsregister.ch/de/auftrag/e7198009-ed12-4505-bd17-38c731e2
+ 6fbd/
+LOCATION:Villigen PSI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ADRESS 2.0 – Instrument für resonante unelasti
+ sche Röntgenstreuung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6b0fc11-78bb-48c0-a5a1-f13df3478c6d-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Délai de remise : Modernisierung "Kirchzelg"\, St. Bernhardstras
+ se 38\, 5430 Wettingen / BKP 214.3 Montagebau in Holz
+DESCRIPTION:Acheteur public : arwo Stiftung\nDélai de remise : 18.11.2
+ 026\nDans le registre : https://auftragsregister.ch/fr/auftrag/a6b0fc11-
+ 78bb-48c0-a5a1-f13df3478c6d/\nPublication officielle : https://www.simap
+ .ch/fr/project-detail/a6b0fc11-78bb-48c0-a5a1-f13df3478c6d
+URL:https://auftragsregister.ch/fr/auftrag/a6b0fc11-78bb-48c0-a5a1-f13df347
+ 8c6d/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Modernisierung "Kirchzelg"\, St. Bernhards
+ trasse 38\, 5430 Wettingen / BKP 214.3 Montagebau in Holz
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

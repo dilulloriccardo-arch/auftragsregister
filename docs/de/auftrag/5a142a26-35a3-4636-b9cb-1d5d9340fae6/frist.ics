@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a142a26-35a3-4636-b9cb-1d5d9340fae6-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Eingabefrist: Balexert – Travaux CVC phase 2
+DESCRIPTION:Auftraggeber: Services Industriels de Genève (SIG) Direction P
+ rojets Industriels et Solutions Digitales\nEingabefrist: 20.11.2026\, 12.0
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5a142a26-35a3-
+ 4636-b9cb-1d5d9340fae6/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/5a142a26-35a3-4636-b9cb-1d5d9340fae6
+URL:https://auftragsregister.ch/de/auftrag/5a142a26-35a3-4636-b9cb-1d5d9340
+ fae6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Balexert – Travaux CVC phase 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:22d24e18-3119-4dab-96f0-040114f464f7-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:2
+DTSTART:20261102T110000Z
+SUMMARY:Délai de remise : Schweizerische Brandschutzvorschriften – Web
+ shop – Druck – Logistik
+DESCRIPTION:Acheteur public : Vereinigung Kantonaler Feuerversicherungen 
+ (VKF)\nDélai de remise : 02.11.2026\, 12 h 00\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/22d24e18-3119-4dab-96f0-040114f464
+ f7/\nPublication officielle : https://www.simap.ch/fr/project-detail/22d
+ 24e18-3119-4dab-96f0-040114f464f7
+URL:https://auftragsregister.ch/fr/auftrag/22d24e18-3119-4dab-96f0-040114f4
+ 64f7/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Schweizerische Brandschutzvorschriften –
+  Webshop – Druck – Logistik
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

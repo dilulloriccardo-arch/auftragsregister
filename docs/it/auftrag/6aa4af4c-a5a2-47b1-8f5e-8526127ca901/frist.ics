@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6aa4af4c-a5a2-47b1-8f5e-8526127ca901-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Scadenza: Justizvollzugsanstalt Lenzburg\, Geb. 5* Stern - BKP 231/
+ 232 Starkstromanlagen / Starkstrominstallationen
+DESCRIPTION:Ente pubblico: Immobilien Aargau\nScadenza: 17.11.2026\, 12:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/6aa4af4c-a5a2-47b1-8
+ f5e-8526127ca901/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/6aa4af4c-a5a2-47b1-8f5e-8526127ca901
+URL:https://auftragsregister.ch/it/auftrag/6aa4af4c-a5a2-47b1-8f5e-8526127c
+ a901/
+LOCATION:Lenzburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Justizvollzugsanstalt Lenzburg\, Geb. 5* Stern - BKP 
+ 231/232 Starkstromanlagen / Starkstrominstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

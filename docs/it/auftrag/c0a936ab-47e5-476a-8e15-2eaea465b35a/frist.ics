@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c0a936ab-47e5-476a-8e15-2eaea465b35a-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T150000Z
+SUMMARY:Scadenza: GE VII Wartung + Unterhalt FB8 HLK Zentralen
+DESCRIPTION:Ente pubblico: Tiefbauamt\, Abt. Gebietseinheit VII\nScadenza: 
+ 07.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/c
+ 0a936ab-47e5-476a-8e15-2eaea465b35a/\nPubblicazione ufficiale: https://www
+ .simap.ch/it/project-detail/c0a936ab-47e5-476a-8e15-2eaea465b35a
+URL:https://auftragsregister.ch/it/auftrag/c0a936ab-47e5-476a-8e15-2eaea465
+ b35a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: GE VII Wartung + Unterhalt FB8 HLK Zentralen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

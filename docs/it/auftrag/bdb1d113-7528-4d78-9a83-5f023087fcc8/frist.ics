@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bdb1d113-7528-4d78-9a83-5f023087fcc8-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261117T140000Z
+SUMMARY:Scadenza: Schulraumerweiterung Kilchbühl Biel-Benken (Basel-Land)\
+ , BKP 250 Sanitäranlagen
+DESCRIPTION:Ente pubblico: Gemeindeverwaltung Biel-Benken\nScadenza: 17.11.
+ 2026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/bdb1d11
+ 3-7528-4d78-9a83-5f023087fcc8/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/bdb1d113-7528-4d78-9a83-5f023087fcc8
+URL:https://auftragsregister.ch/it/auftrag/bdb1d113-7528-4d78-9a83-5f023087
+ fcc8/
+LOCATION:Biel-Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulraumerweiterung Kilchbühl Biel-Benken (Basel-La
+ nd)\, BKP 250 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

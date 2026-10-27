@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4a42f521-32aa-444d-b964-1c325fc18ce3-frist@auftragsregister.ch
+DTSTAMP:20260815T000000Z
+SEQUENCE:2
+DTSTART:20270125T225900Z
+SUMMARY:Eingabefrist: LPT Bundle (Large Power Transformers)
+DESCRIPTION:Auftraggeber: Swissgrid AG - Asset & Maintenance\nEingabefrist:
+  25.01.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/4a42f521-32aa-444d-b964-1c325fc18ce3/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/4a42f521-32aa-444d-b964-1c325fc18ce3
+URL:https://auftragsregister.ch/de/auftrag/4a42f521-32aa-444d-b964-1c325fc1
+ 8ce3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: LPT Bundle (Large Power Transformers)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

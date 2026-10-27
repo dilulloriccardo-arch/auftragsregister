@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:146cd761-753e-4938-87fe-00a2fce93ac0-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261217T160000Z
+SUMMARY:Eingabefrist: Sport- und Freizeitanlage Weyermannshaus\, Gesamtsani
+ erung\, BKP 211 Baumeisterarbeiten
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 17.12.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/146cd761-753e-4938-87fe-00a2fce93ac0/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/146cd761-753e-4938-87fe-00a2fce93ac0
+URL:https://auftragsregister.ch/de/auftrag/146cd761-753e-4938-87fe-00a2fce9
+ 3ac0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sport- und Freizeitanlage Weyermannshaus\, Gesamt
+ sanierung\, BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

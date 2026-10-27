@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:82197a33-b813-46cd-bfd5-3bfb4fa8a12c-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Scadenza: HR-Dienstleistungen\, Projekt 5171
+DESCRIPTION:Ente pubblico: FINMA Beschaffungs- und Vertragsmanagement BVM\n
+ Scadenza: 23.11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it
+ /auftrag/82197a33-b813-46cd-bfd5-3bfb4fa8a12c/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/82197a33-b813-46cd-bfd5-3bfb4fa8a12c
+URL:https://auftragsregister.ch/it/auftrag/82197a33-b813-46cd-bfd5-3bfb4fa8
+ a12c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: HR-Dienstleistungen\, Projekt 5171
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

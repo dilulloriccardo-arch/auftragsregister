@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2939a91-bf47-4304-afc1-1b55c5d21984-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261119T150000Z
+SUMMARY:Eingabefrist: Beschaffung vier mobiler OP-Tische
+DESCRIPTION:Auftraggeber: Spital Davos AG\nEingabefrist: 19.11.2026\, 16.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b2939a91-bf47-4
+ 304-afc1-1b55c5d21984/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/b2939a91-bf47-4304-afc1-1b55c5d21984
+URL:https://auftragsregister.ch/de/auftrag/b2939a91-bf47-4304-afc1-1b55c5d2
+ 1984/
+LOCATION:Davos Platz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung vier mobiler OP-Tische
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

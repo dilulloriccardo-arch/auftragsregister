@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3239a64-ff48-4e93-9ed7-6132a4f1b255-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Submission deadline: Erklärvideos für die Abstimmungsinformatione
+ n der Stadt Zürich
+DESCRIPTION:Public buyer: Stadtkanzlei Zürich\nSubmission deadline: 26 No
+ v 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/d
+ 3239a64-ff48-4e93-9ed7-6132a4f1b255/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/d3239a64-ff48-4e93-9ed7-6132a4f1b255
+URL:https://auftragsregister.ch/en/auftrag/d3239a64-ff48-4e93-9ed7-6132a4f1
+ b255/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Erklärvideos für die Abstimmungsinformat
+ ionen der Stadt Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

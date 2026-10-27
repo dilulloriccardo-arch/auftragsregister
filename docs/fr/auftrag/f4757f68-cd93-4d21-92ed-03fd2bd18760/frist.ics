@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f4757f68-cd93-4d21-92ed-03fd2bd18760-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261103T160000Z
+SUMMARY:Délai de remise : Ausbau Fernwärmenetz Stadt Bern: Aufwertungsm
+ assnahmen im Strassenraum\, BKP 211 Baumeisterarbeiten (Fellerstrasse)
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 03.11.2026\, 17 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/f4757f68-cd93-4d21-92ed-03fd2bd18760/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/f4757f68-cd
+ 93-4d21-92ed-03fd2bd18760
+URL:https://auftragsregister.ch/fr/auftrag/f4757f68-cd93-4d21-92ed-03fd2bd1
+ 8760/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausbau Fernwärmenetz Stadt Bern: Aufwertu
+ ngsmassnahmen im Strassenraum\, BKP 211 Baumeisterarbeiten (Fellerstrasse)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

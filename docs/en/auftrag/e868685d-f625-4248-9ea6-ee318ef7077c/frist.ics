@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e868685d-f625-4248-9ea6-ee318ef7077c-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Submission deadline: Neubau Bushof Ettiswil LU
+DESCRIPTION:Public buyer: Einwohnergemeinde Ettiswil\nSubmission deadline: 
+ 23 Nov 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/e868685d-f625-4248-9ea6-ee318ef7077c/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/e868685d-f625-4248-9ea6-ee318ef7077c
+URL:https://auftragsregister.ch/en/auftrag/e868685d-f625-4248-9ea6-ee318ef7
+ 077c/
+LOCATION:Ettiswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Bushof Ettiswil LU
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

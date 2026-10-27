@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:180d340d-1986-4459-bcc5-d88271d26908-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261103T100000Z
+SUMMARY:Submission deadline: Assistance à Maitrise d’Ouvrage pour la ré
+ novation de l'immeuble administratif de Montbrillant
+DESCRIPTION:Public buyer: FIPOI\nSubmission deadline: 3 Nov 2026\, 11:00\
+ nIn the register: https://auftragsregister.ch/en/auftrag/180d340d-1986-445
+ 9-bcc5-d88271d26908/\nOfficial publication: https://www.simap.ch/en/projec
+ t-detail/180d340d-1986-4459-bcc5-d88271d26908
+URL:https://auftragsregister.ch/en/auftrag/180d340d-1986-4459-bcc5-d88271d2
+ 6908/
+LOCATION:Rue de Montbrillant\, 94
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Assistance à Maitrise d’Ouvrage pour la
+  rénovation de l'immeuble administratif de Montbrillant
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

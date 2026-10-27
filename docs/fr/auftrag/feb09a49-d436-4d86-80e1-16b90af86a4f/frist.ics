@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:feb09a49-d436-4d86-80e1-16b90af86a4f-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20270129T150000Z
+SUMMARY:Délai de remise : Schulraumerweiterung Aesch - Planerwahlverfahr
+ en (Generalplaner)
+DESCRIPTION:Acheteur public : Gemeinde Maur (Brandenberger + Ruosch AG)\n
+ Délai de remise : 29.01.2027\, 16 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/feb09a49-d436-4d86-80e1-16b90af86a4f/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/feb09a49-d
+ 436-4d86-80e1-16b90af86a4f
+URL:https://auftragsregister.ch/fr/auftrag/feb09a49-d436-4d86-80e1-16b90af8
+ 6a4f/
+LOCATION:Maur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Schulraumerweiterung Aesch - Planerwahlver
+ fahren (Generalplaner)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

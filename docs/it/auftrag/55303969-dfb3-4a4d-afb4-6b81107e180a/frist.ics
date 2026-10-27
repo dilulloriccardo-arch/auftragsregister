@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:55303969-dfb3-4a4d-afb4-6b81107e180a-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261204T123000Z
+SUMMARY:Scadenza: Neubau Doppelturnhalle mit Schulräumlichkeiten - Fenster
+  aus Holz-Metall (BKP221.1)
+DESCRIPTION:Ente pubblico: Politische Gemeinde Gommiswald\nScadenza: 04.12.
+ 2026\, 13:30\nNel registro: https://auftragsregister.ch/it/auftrag/5530396
+ 9-dfb3-4a4d-afb4-6b81107e180a/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/55303969-dfb3-4a4d-afb4-6b81107e180a
+URL:https://auftragsregister.ch/it/auftrag/55303969-dfb3-4a4d-afb4-6b81107e
+ 180a/
+LOCATION:Gommiswald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Doppelturnhalle mit Schulräumlichkeiten - Fen
+ ster aus Holz-Metall (BKP221.1)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

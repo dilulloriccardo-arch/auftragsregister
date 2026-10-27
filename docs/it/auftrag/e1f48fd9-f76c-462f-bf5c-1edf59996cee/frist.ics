@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1f48fd9-f76c-462f-bf5c-1edf59996cee-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T224500Z
+SUMMARY:Scadenza: EBP-665 Rahmenvertrag BHU
+DESCRIPTION:Ente pubblico: Energie Wasser Bern\nScadenza: 18.11.2026\, 23:4
+ 5\nNel registro: https://auftragsregister.ch/it/auftrag/e1f48fd9-f76c-462f
+ -bf5c-1edf59996cee/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/e1f48fd9-f76c-462f-bf5c-1edf59996cee
+URL:https://auftragsregister.ch/it/auftrag/e1f48fd9-f76c-462f-bf5c-1edf5999
+ 6cee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EBP-665 Rahmenvertrag BHU
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

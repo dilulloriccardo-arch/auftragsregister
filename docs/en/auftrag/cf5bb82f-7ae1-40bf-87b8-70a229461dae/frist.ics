@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf5bb82f-7ae1-40bf-87b8-70a229461dae-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T100000Z
+SUMMARY:Submission deadline: Travaux de charpente et façade bois pour un p
+ oste électrique HT/MT
+DESCRIPTION:Public buyer: Gruyère Energie SA\nSubmission deadline: 10 Nov
+  2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/cf
+ 5bb82f-7ae1-40bf-87b8-70a229461dae/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/cf5bb82f-7ae1-40bf-87b8-70a229461dae
+URL:https://auftragsregister.ch/en/auftrag/cf5bb82f-7ae1-40bf-87b8-70a22946
+ 1dae/
+LOCATION:Bulle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Travaux de charpente et façade bois pour 
+ un poste électrique HT/MT
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

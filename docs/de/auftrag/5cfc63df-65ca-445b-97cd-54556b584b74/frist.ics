@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5cfc63df-65ca-445b-97cd-54556b584b74-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Eingabefrist: Sanierung und Neubau Lidostrasse - Baumeisterarbeiten
+DESCRIPTION:Auftraggeber: Tiefbauamt der Stadt Luzern\nEingabefrist: 16.11.
+ 2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5cf
+ c63df-65ca-445b-97cd-54556b584b74/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/5cfc63df-65ca-445b-97cd-54556b584b74
+URL:https://auftragsregister.ch/de/auftrag/5cfc63df-65ca-445b-97cd-54556b58
+ 4b74/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung und Neubau Lidostrasse - Baumeisterarbe
+ iten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

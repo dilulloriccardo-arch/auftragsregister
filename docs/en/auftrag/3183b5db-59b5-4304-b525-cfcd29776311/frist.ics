@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3183b5db-59b5-4304-b525-cfcd29776311-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T160000Z
+SUMMARY:Submission deadline: Gesamtsanierung Schulanlage Pestalozzi Stans\,
+  BKP 244 Lüftungsanlagen
+DESCRIPTION:Public buyer: Politische Gemeinde Stans\nSubmission deadline: 1
+ 8 Nov 2026\, 17:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/3183b5db-59b5-4304-b525-cfcd29776311/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/3183b5db-59b5-4304-b525-cfcd29776311
+URL:https://auftragsregister.ch/en/auftrag/3183b5db-59b5-4304-b525-cfcd2977
+ 6311/
+LOCATION:Stans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gesamtsanierung Schulanlage Pestalozzi Sta
+ ns\, BKP 244 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

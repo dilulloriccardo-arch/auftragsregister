@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3dd59ad5-afad-4a8e-97de-55632a0e24a3-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Scadenza: Systèmes de contrôle d’accès@EPFL
+DESCRIPTION:Ente pubblico: EPFL - Domaine des Achats\nScadenza: 17.11.2026\
+ , 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/3dd59ad5-afa
+ d-4a8e-97de-55632a0e24a3/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/3dd59ad5-afad-4a8e-97de-55632a0e24a3
+URL:https://auftragsregister.ch/it/auftrag/3dd59ad5-afad-4a8e-97de-55632a0e
+ 24a3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Systèmes de contrôle d’accès@EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

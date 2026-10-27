@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:80162285-7b75-4262-9229-5a4d36d965f7-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T140000Z
+SUMMARY:Submission deadline: EMS Castel Notre-Dame Martigny - CFC 228.2 Sto
+ res à lamelles
+DESCRIPTION:Public buyer: Fondation Castel Notre-Dame (quartal)\nSubmission
+  deadline: 16 Nov 2026\, 15:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/80162285-7b75-4262-9229-5a4d36d965f7/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/80162285-7b75-4262-9229-5a4d36d9
+ 65f7
+URL:https://auftragsregister.ch/en/auftrag/80162285-7b75-4262-9229-5a4d36d9
+ 65f7/
+LOCATION:Martigny
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EMS Castel Notre-Dame Martigny - CFC 228.2
+  Stores à lamelles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

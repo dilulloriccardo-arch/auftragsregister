@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:de2d7e38-754f-4783-b00c-8bab909286fa-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:0
+DTSTART:20261029T160000Z
+SUMMARY:Submission deadline: AO Lot EM04 - Valorisation du biogaz STEP EBBV
+DESCRIPTION:Public buyer: Association Intercommunale pour l’épuration de
+ s eaux usées de la région Basse-Broye / Vully (EBBV) (groupement StaRRE 
+ AgriCo)\nSubmission deadline: 29 Oct 2026\, 17:00\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/de2d7e38-754f-4783-b00c-8bab909286fa/\n
+ Official publication: https://www.simap.ch/en/project-detail/de2d7e38-754f
+ -4783-b00c-8bab909286fa
+URL:https://auftragsregister.ch/en/auftrag/de2d7e38-754f-4783-b00c-8bab9092
+ 86fa/
+LOCATION:St-Aubin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AO Lot EM04 - Valorisation du biogaz STEP 
+ EBBV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

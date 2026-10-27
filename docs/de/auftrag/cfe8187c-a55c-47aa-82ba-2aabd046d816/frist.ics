@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfe8187c-a55c-47aa-82ba-2aabd046d816-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261104T225900Z
+SUMMARY:Eingabefrist: MP-180038\, SABA Bewangerbach\, Frauenfeld\, Baumeist
+ er
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nEingabefrist: 04.11.2026\, 23.59 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/cfe8187c-a55c-47aa-82ba-2aabd046d816/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/cfe8187c-a55c-47aa-82ba-2aab
+ d046d816
+URL:https://auftragsregister.ch/de/auftrag/cfe8187c-a55c-47aa-82ba-2aabd046
+ d816/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-180038\, SABA Bewangerbach\, Frauenfeld\, Baum
+ eister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

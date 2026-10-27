@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:597b5ce2-e02f-4eb2-b63a-3e0116bb6537-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Délai de remise : AUH-SAN\, rénovation du bâtiment administrat
+ if de HKW à Aubrugg\, BKP 248 Automatisation des bâtiments
+DESCRIPTION:Acheteur public : Elektrizitätswerk der Stadt Zürich (ewz)\
+ nDélai de remise : 23.11.2026\, 16 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/597b5ce2-e02f-4eb2-b63a-3e0116bb6537/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/597b5ce2-
+ e02f-4eb2-b63a-3e0116bb6537
+URL:https://auftragsregister.ch/fr/auftrag/597b5ce2-e02f-4eb2-b63a-3e0116bb
+ 6537/
+LOCATION:Wallisellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AUH-SAN\, rénovation du bâtiment adminis
+ tratif de HKW à Aubrugg\, BKP 248 Automatisation des bâtiments
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

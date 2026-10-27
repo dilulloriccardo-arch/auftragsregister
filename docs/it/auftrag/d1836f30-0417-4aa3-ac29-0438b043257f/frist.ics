@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d1836f30-0417-4aa3-ac29-0438b043257f-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Scadenza: Engineering Leistungen ECM
+DESCRIPTION:Ente pubblico: Basler Verkehrs-Betriebe (BVB)\nScadenza: 02.12.
+ 2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/d1836f3
+ 0-0417-4aa3-ac29-0438b043257f/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/d1836f30-0417-4aa3-ac29-0438b043257f
+URL:https://auftragsregister.ch/it/auftrag/d1836f30-0417-4aa3-ac29-0438b043
+ 257f/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Engineering Leistungen ECM
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6335743c-1111-413c-b7bd-f6b0ecc7d4a0-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261203T150000Z
+SUMMARY:Délai de remise : Klinik im Hasel - BKP 230 Installations élect
+ riques
+DESCRIPTION:Acheteur public : Von Effinger Stiftung (HSSP AG)\nDélai de 
+ remise : 03.12.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/6335743c-1111-413c-b7bd-f6b0ecc7d4a0/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/6335743c-1111-413c-b
+ 7bd-f6b0ecc7d4a0
+URL:https://auftragsregister.ch/fr/auftrag/6335743c-1111-413c-b7bd-f6b0ecc7
+ d4a0/
+LOCATION:Gontenschwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Klinik im Hasel - BKP 230 Installations é
+ lectriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

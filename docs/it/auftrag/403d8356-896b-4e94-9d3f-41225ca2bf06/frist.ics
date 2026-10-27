@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:403d8356-896b-4e94-9d3f-41225ca2bf06-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Scadenza: 10010 CCU _ Rejet d’eau industrielle - Conduites lacust
+ res et terrestres _ Appel d'offres entreprise totale
+DESCRIPTION:Ente pubblico: UNIL - UNIBAT - Domaine énergie et infrastructu
+ res\nScadenza: 15.12.2026\, 16:00\nNel registro: https://auftragsregister.
+ ch/it/auftrag/403d8356-896b-4e94-9d3f-41225ca2bf06/\nPubblicazione ufficia
+ le: https://www.simap.ch/it/project-detail/403d8356-896b-4e94-9d3f-41225ca
+ 2bf06
+URL:https://auftragsregister.ch/it/auftrag/403d8356-896b-4e94-9d3f-41225ca2
+ bf06/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 10010 CCU _ Rejet d’eau industrielle - Conduites la
+ custres et terrestres _ Appel d'offres entreprise totale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

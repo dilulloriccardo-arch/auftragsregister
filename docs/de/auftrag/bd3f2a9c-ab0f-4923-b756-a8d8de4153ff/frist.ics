@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd3f2a9c-ab0f-4923-b756-a8d8de4153ff-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261104T150000Z
+SUMMARY:Eingabefrist: ZGSZ l 45518 l BKP 242 Heizungsanlagen
+DESCRIPTION:Auftraggeber: Hochbauamt\, Baubereich B\nEingabefrist: 04.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/bd3f2
+ a9c-ab0f-4923-b756-a8d8de4153ff/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/bd3f2a9c-ab0f-4923-b756-a8d8de4153ff
+URL:https://auftragsregister.ch/de/auftrag/bd3f2a9c-ab0f-4923-b756-a8d8de41
+ 53ff/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ZGSZ l 45518 l BKP 242 Heizungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

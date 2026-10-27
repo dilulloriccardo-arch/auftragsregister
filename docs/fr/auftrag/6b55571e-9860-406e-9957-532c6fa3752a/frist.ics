@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b55571e-9860-406e-9957-532c6fa3752a-frist@auftragsregister.ch
+DTSTAMP:20260824T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Délai de remise : MehrSpur Zürich – Winterthur (VoiePlus Zuri
+ ch - Winterthur)\, Sites de valorisation avec Raccordement ferroviaire\, p
+ artie de projet 246
+DESCRIPTION:Acheteur public : SBB CFF FFS Einkauf Bauprojekte Region Ost\
+ nDélai de remise : 20.11.2026\, 15 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/6b55571e-9860-406e-9957-532c6fa3752a/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/6b55571e-
+ 9860-406e-9957-532c6fa3752a
+URL:https://auftragsregister.ch/fr/auftrag/6b55571e-9860-406e-9957-532c6fa3
+ 752a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MehrSpur Zürich – Winterthur (VoiePlus 
+ Zurich - Winterthur)\, Sites de valorisation avec Raccordement ferroviaire
+ \, partie de projet 246
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

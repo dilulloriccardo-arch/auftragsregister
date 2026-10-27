@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81690f20-ffa3-495e-a7a1-38a1b1a5710d-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261105T140000Z
+SUMMARY:Eingabefrist: Plantahof: Trakt A – Verwaltungsgebäude\, energeti
+ sche Sanierung Erweiterung West\, 7302 Landquart / BKP 222\, 224 Spengler-
+  und Bedachungsarbeiten
+DESCRIPTION:Auftraggeber: Hochbauamt Graubünden\nEingabefrist: 05.11.2026\
+ , 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/81690f20
+ -ffa3-495e-a7a1-38a1b1a5710d/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/81690f20-ffa3-495e-a7a1-38a1b1a5710d
+URL:https://auftragsregister.ch/de/auftrag/81690f20-ffa3-495e-a7a1-38a1b1a5
+ 710d/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Plantahof: Trakt A – Verwaltungsgebäude\, ener
+ getische Sanierung Erweiterung West\, 7302 Landquart / BKP 222\, 224 Speng
+ ler- und Bedachungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

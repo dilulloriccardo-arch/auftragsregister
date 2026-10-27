@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71ada165-2294-4971-a36e-a781398be474-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Scadenza: Bau und Ausrüstung eines Tanklöschfahrzeugs
+DESCRIPTION:Ente pubblico: Politische Gemeinde Mönchaltorf\nScadenza: 14.1
+ 2.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/71ada
+ 165-2294-4971-a36e-a781398be474/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/71ada165-2294-4971-a36e-a781398be474
+URL:https://auftragsregister.ch/it/auftrag/71ada165-2294-4971-a36e-a781398b
+ e474/
+LOCATION:Mönchaltorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bau und Ausrüstung eines Tanklöschfahrzeugs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e50c64d0-124a-4479-83bb-3c1dc42a132e-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261208T150000Z
+SUMMARY:Eingabefrist: FORUM UZH | BKP 281-01 Fugenlose Bodenbeläge\, WG18
+DESCRIPTION:Auftraggeber: Kanton Zürich Hochbauaumt\, Baubereich D\nEingab
+ efrist: 08.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/e50c64d0-124a-4479-83bb-3c1dc42a132e/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/e50c64d0-124a-4479-83bb-3c1dc42a132e
+URL:https://auftragsregister.ch/de/auftrag/e50c64d0-124a-4479-83bb-3c1dc42a
+ 132e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: FORUM UZH | BKP 281-01 Fugenlose Bodenbeläge\, W
+ G18
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

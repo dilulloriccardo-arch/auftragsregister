@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:292b21b6-f36d-4b25-abe7-4814d0e4a3e4-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : MP-250014\, Système de drainage de Beckenried
+  Ischenstollen\, remplacement du filtre de drainage Travaux de constructio
+ n
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3 Zofingen\nDélai de remise : 30.11.2026\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/29
+ 2b21b6-f36d-4b25-abe7-4814d0e4a3e4/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/292b21b6-f36d-4b25-abe7-4814d0e4a3e4
+URL:https://auftragsregister.ch/fr/auftrag/292b21b6-f36d-4b25-abe7-4814d0e4
+ a3e4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-250014\, Système de drainage de Becken
+ ried Ischenstollen\, remplacement du filtre de drainage Travaux de constru
+ ction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

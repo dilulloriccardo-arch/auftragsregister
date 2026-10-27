@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e7204ba-616e-494b-9427-1dc26134d272-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Scadenza: 271 01 Gipserarbeiten - Nassputze
+DESCRIPTION:Ente pubblico: Vollenweider Baurealisation GmbH\nScadenza: 20.1
+ 1.2026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/3e720
+ 4ba-616e-494b-9427-1dc26134d272/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/3e7204ba-616e-494b-9427-1dc26134d272
+URL:https://auftragsregister.ch/it/auftrag/3e7204ba-616e-494b-9427-1dc26134
+ d272/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 271 01 Gipserarbeiten - Nassputze
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

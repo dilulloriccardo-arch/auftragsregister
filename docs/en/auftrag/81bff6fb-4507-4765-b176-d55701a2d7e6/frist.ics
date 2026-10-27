@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81bff6fb-4507-4765-b176-d55701a2d7e6-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T140000Z
+SUMMARY:Submission deadline: BKP 400 Gärtnerarbeiten / Neubau Schulhaus B
+ ärenmatt\, Ruswil
+DESCRIPTION:Public buyer: Gemeinde Ruswil\nSubmission deadline: 11 Nov 20
+ 26\, 15:00\nIn the register: https://auftragsregister.ch/en/auftrag/81bff6
+ fb-4507-4765-b176-d55701a2d7e6/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/81bff6fb-4507-4765-b176-d55701a2d7e6
+URL:https://auftragsregister.ch/en/auftrag/81bff6fb-4507-4765-b176-d55701a2
+ d7e6/
+LOCATION:Ruswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 400 Gärtnerarbeiten / Neubau Schulhau
+ s Bärenmatt\, Ruswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

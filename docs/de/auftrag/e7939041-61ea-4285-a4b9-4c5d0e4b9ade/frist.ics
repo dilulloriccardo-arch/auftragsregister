@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7939041-61ea-4285-a4b9-4c5d0e4b9ade-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261207T225900Z
+SUMMARY:Eingabefrist: (26168) 735 Zivi-Ausbildungskurs Erste Hilfe
+DESCRIPTION:Auftraggeber: Bundesamt für Zivildienst ZIVI\nEingabefrist: 07
+ .12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /e7939041-61ea-4285-a4b9-4c5d0e4b9ade/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/e7939041-61ea-4285-a4b9-4c5d0e4b9ade
+URL:https://auftragsregister.ch/de/auftrag/e7939041-61ea-4285-a4b9-4c5d0e4b
+ 9ade/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (26168) 735 Zivi-Ausbildungskurs Erste Hilfe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

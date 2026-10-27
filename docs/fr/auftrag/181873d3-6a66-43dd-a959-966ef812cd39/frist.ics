@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:181873d3-6a66-43dd-a959-966ef812cd39-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Délai de remise : Wartung\, Support\, Betrieb und Weiterentwickl
+ ung Innoguide Kanton St.Gallen
+DESCRIPTION:Acheteur public : Amt für Wirtschaft und Arbeit\nDélai de r
+ emise : 11.01.2027\, 23 h 59\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/181873d3-6a66-43dd-a959-966ef812cd39/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/181873d3-6a66-43dd-a9
+ 59-966ef812cd39
+URL:https://auftragsregister.ch/fr/auftrag/181873d3-6a66-43dd-a959-966ef812
+ cd39/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wartung\, Support\, Betrieb und Weiterentw
+ icklung Innoguide Kanton St.Gallen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:47607fae-c2b9-4635-8a72-257c008121dc-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T100000Z
+SUMMARY:Submission deadline: Sportzentrum Verbier – CFC 333 Architekturbe
+ leuchtung
+DESCRIPTION:Public buyer: Quartal Sàrl\nSubmission deadline: 24 Nov 2026
+ \, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/47607fae
+ -c2b9-4635-8a72-257c008121dc/\nOfficial publication: https://www.simap.ch/
+ en/project-detail/47607fae-c2b9-4635-8a72-257c008121dc
+URL:https://auftragsregister.ch/en/auftrag/47607fae-c2b9-4635-8a72-257c0081
+ 21dc/
+LOCATION:Verbier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sportzentrum Verbier – CFC 333 Architekt
+ urbeleuchtung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

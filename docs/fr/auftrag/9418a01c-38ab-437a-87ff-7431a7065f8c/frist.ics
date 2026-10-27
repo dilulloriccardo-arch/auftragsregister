@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9418a01c-38ab-437a-87ff-7431a7065f8c-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261208T150000Z
+SUMMARY:Délai de remise : FORUM UZH | BKP 285.1 Travaux de peinture int
+ érieure\, WG12-B
+DESCRIPTION:Acheteur public : Kanton Zürich Hochbauaumt\, Baubereich D\n
+ Délai de remise : 08.12.2026\, 16 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/9418a01c-38ab-437a-87ff-7431a7065f8c/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/9418a01c-3
+ 8ab-437a-87ff-7431a7065f8c
+URL:https://auftragsregister.ch/fr/auftrag/9418a01c-38ab-437a-87ff-7431a706
+ 5f8c/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : FORUM UZH | BKP 285.1 Travaux de peinture 
+ intérieure\, WG12-B
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff8365a8-63d4-418a-bb8d-d3a86fcd377d-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Délai de remise : Nouveau Dépôt et Atelier bus à Aigle - Plan
+ ification générale SIA 31 à 33 et optionnel SIA 41 à 53
+DESCRIPTION:Acheteur public : Transports Publics du Chablais SA\nDélai d
+ e remise : 02.12.2026\, 12 h 00\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/ff8365a8-63d4-418a-bb8d-d3a86fcd377d/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/ff8365a8-63d4-418a
+ -bb8d-d3a86fcd377d
+URL:https://auftragsregister.ch/fr/auftrag/ff8365a8-63d4-418a-bb8d-d3a86fcd
+ 377d/
+LOCATION:Aigle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nouveau Dépôt et Atelier bus à Aigle - 
+ Planification générale SIA 31 à 33 et optionnel SIA 41 à 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

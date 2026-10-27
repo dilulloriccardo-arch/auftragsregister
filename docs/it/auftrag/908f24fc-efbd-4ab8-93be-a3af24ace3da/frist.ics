@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:908f24fc-efbd-4ab8-93be-a3af24ace3da-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261105T130000Z
+SUMMARY:Scadenza: Concorso per la fornitura di un applicativo informatico p
+ er la pianificazione e gestione di agende\, appuntamenti ambulatoriali e s
+ ale operatorie
+DESCRIPTION:Ente pubblico: Ente Ospedaliero Cantonale - Area Evoluzione Dig
+ itale e Tecnologia\nScadenza: 05.11.2026\, 14:00\nNel registro: https://au
+ ftragsregister.ch/it/auftrag/908f24fc-efbd-4ab8-93be-a3af24ace3da/\nPubbli
+ cazione ufficiale: https://www.simap.ch/it/project-detail/908f24fc-efbd-4a
+ b8-93be-a3af24ace3da
+URL:https://auftragsregister.ch/it/auftrag/908f24fc-efbd-4ab8-93be-a3af24ac
+ e3da/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso per la fornitura di un applicativo informati
+ co per la pianificazione e gestione di agende\, appuntamenti ambulatoriali
+  e sale operatorie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

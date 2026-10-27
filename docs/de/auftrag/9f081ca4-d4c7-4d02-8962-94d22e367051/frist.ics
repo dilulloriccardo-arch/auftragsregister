@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9f081ca4-d4c7-4d02-8962-94d22e367051-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261101T225900Z
+SUMMARY:Eingabefrist: Sammlung & Verwertung Grüngut aus Haushaltungen in d
+ er Gemeinde Kriegstetten
+DESCRIPTION:Auftraggeber: Gemeinde Kriegstetten\, Technische Betriebe HOeK 
+ (Swiss Recycle)\nEingabefrist: 01.11.2026\, 23.59 Uhr\nIm Register: https
+ ://auftragsregister.ch/de/auftrag/9f081ca4-d4c7-4d02-8962-94d22e367051/\nA
+ mtliche Publikation: https://www.simap.ch/de/project-detail/9f081ca4-d4c7-
+ 4d02-8962-94d22e367051
+URL:https://auftragsregister.ch/de/auftrag/9f081ca4-d4c7-4d02-8962-94d22e36
+ 7051/
+LOCATION:Kriegstetten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sammlung & Verwertung Grüngut aus Haushaltungen 
+ in der Gemeinde Kriegstetten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

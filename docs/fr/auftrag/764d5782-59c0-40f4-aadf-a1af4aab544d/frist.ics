@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:764d5782-59c0-40f4-aadf-a1af4aab544d-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Délai de remise : Bureau d'appui au maître d'ouvrage et bureau 
+ de gestion de projet (AMO/PMO) pour le projet "Sirius 3 - Centre de format
+ ion commun pour le service du feu\, la protection civile et la police"
+DESCRIPTION:Acheteur public : Gebäudeversicherung Bern (GVB)\nDélai de 
+ remise : 02.11.2026\, 23 h 59\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/764d5782-59c0-40f4-aadf-a1af4aab544d/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/764d5782-59c0-40f4-a
+ adf-a1af4aab544d
+URL:https://auftragsregister.ch/fr/auftrag/764d5782-59c0-40f4-aadf-a1af4aab
+ 544d/
+LOCATION:Ittigen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bureau d'appui au maître d'ouvrage et bur
+ eau de gestion de projet (AMO/PMO) pour le projet "Sirius 3 - Centre de fo
+ rmation commun pour le service du feu\, la protection civile et la police"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

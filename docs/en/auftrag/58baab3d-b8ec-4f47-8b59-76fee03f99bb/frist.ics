@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:58baab3d-b8ec-4f47-8b59-76fee03f99bb-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Submission deadline: Prestations d’exploitation IT externalisées
+DESCRIPTION:Public buyer: Monthey Energies SA\nSubmission deadline: 13 Nov
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/58
+ baab3d-b8ec-4f47-8b59-76fee03f99bb/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/58baab3d-b8ec-4f47-8b59-76fee03f99bb
+URL:https://auftragsregister.ch/en/auftrag/58baab3d-b8ec-4f47-8b59-76fee03f
+ 99bb/
+LOCATION:Monthey
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Prestations d’exploitation IT externalis
+ ées
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8288f08b-4a4e-4322-86af-9f79a7357583-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Scadenza: Kirchgemeindehaus Enge\, Instandsetzung Gebäude mit Bist
+ robetrieb BKP 230 Elektroinstallationen
+DESCRIPTION:Ente pubblico: Reformierte Kirchgemeinde Zürich\nScadenza: 25.
+ 11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/8288
+ f08b-4a4e-4322-86af-9f79a7357583/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/8288f08b-4a4e-4322-86af-9f79a7357583
+URL:https://auftragsregister.ch/it/auftrag/8288f08b-4a4e-4322-86af-9f79a735
+ 7583/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kirchgemeindehaus Enge\, Instandsetzung Gebäude mit 
+ Bistrobetrieb BKP 230 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

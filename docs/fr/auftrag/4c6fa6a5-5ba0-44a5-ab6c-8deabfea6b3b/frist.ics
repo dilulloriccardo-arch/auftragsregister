@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c6fa6a5-5ba0-44a5-ab6c-8deabfea6b3b-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Délai de remise : Planificateur général SIA 32-53 pour la sous
+ -station de Regensdorf
+DESCRIPTION:Acheteur public : Swissgrid AG - Engineering & Construction\n
+ Délai de remise : 06.11.2026\, 23 h 59\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/4c6fa6a5-5ba0-44a5-ab6c-8deabfea6b3b/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/4c6fa6a5-5
+ ba0-44a5-ab6c-8deabfea6b3b
+URL:https://auftragsregister.ch/fr/auftrag/4c6fa6a5-5ba0-44a5-ab6c-8deabfea
+ 6b3b/
+LOCATION:Regensdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Planificateur général SIA 32-53 pour la 
+ sous-station de Regensdorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

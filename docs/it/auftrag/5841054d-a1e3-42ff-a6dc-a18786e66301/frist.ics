@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5841054d-a1e3-42ff-a6dc-a18786e66301-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Scadenza: Spitalbetten
+DESCRIPTION:Ente pubblico: Kantonsspital Baselland\, Zentrale Vergabestelle
+ \nScadenza: 02.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/
+ it/auftrag/5841054d-a1e3-42ff-a6dc-a18786e66301/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/5841054d-a1e3-42ff-a6dc-a18786e663
+ 01
+URL:https://auftragsregister.ch/it/auftrag/5841054d-a1e3-42ff-a6dc-a18786e6
+ 6301/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Spitalbetten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

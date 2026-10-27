@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9ff8e149-90f3-4055-8f52-486a7508b4fd-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T090000Z
+SUMMARY:Délai de remise : Fourniture de tenues de protection contre l'in
+ cendie (veste et pantalon de protection) pour le service d'incendie Untere
+ s Rheintal.
+DESCRIPTION:Acheteur public : Zweckverband Feuerwehr Unteres Rheintal\nD
+ élai de remise : 02.11.2026\, 10 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/9ff8e149-90f3-4055-8f52-486a7508b4fd/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/9ff8e149-90
+ f3-4055-8f52-486a7508b4fd
+URL:https://auftragsregister.ch/fr/auftrag/9ff8e149-90f3-4055-8f52-486a7508
+ b4fd/
+LOCATION:Heerbrugg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture de tenues de protection contre 
+ l'incendie (veste et pantalon de protection) pour le service d'incendie Un
+ teres Rheintal.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

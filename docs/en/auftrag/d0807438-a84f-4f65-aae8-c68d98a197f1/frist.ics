@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0807438-a84f-4f65-aae8-c68d98a197f1-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261117T140000Z
+SUMMARY:Submission deadline: Neubau Kantonsschule Stein - BKP 358 Gastrokü
+ chen
+DESCRIPTION:Public buyer: Kanton Aargau - Departement Finanzen und Resource
+ n - Immobilien Aargau\nSubmission deadline: 17 Nov 2026\, 15:00\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/d0807438-a84f-4f65-aae8-c
+ 68d98a197f1/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /d0807438-a84f-4f65-aae8-c68d98a197f1
+URL:https://auftragsregister.ch/en/auftrag/d0807438-a84f-4f65-aae8-c68d98a1
+ 97f1/
+LOCATION:Stein (AG)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Kantonsschule Stein - BKP 358 Gastr
+ oküchen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

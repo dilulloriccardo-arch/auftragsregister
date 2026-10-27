@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc68d0df-7307-42b1-8426-6f21e4888787-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261207T225900Z
+SUMMARY:Submission deadline: (26166) 735 Zivi-Ausbildungskurs Betreuung und
+  Begleitung von Menschen
+DESCRIPTION:Public buyer: Bundesamt für Zivildienst ZIVI\nSubmission deadl
+ ine: 7 Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en
+ /auftrag/bc68d0df-7307-42b1-8426-6f21e4888787/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/bc68d0df-7307-42b1-8426-6f21e4888787
+URL:https://auftragsregister.ch/en/auftrag/bc68d0df-7307-42b1-8426-6f21e488
+ 8787/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (26166) 735 Zivi-Ausbildungskurs Betreuung
+  und Begleitung von Menschen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

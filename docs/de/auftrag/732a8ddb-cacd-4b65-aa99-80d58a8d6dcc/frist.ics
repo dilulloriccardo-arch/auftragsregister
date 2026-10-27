@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:732a8ddb-cacd-4b65-aa99-80d58a8d6dcc-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261102T225900Z
+SUMMARY:Eingabefrist: RV Server\, Zubehör und Zusatzservices
+DESCRIPTION:Auftraggeber: Kantonspolizei Bern\nEingabefrist: 02.11.2026\, 2
+ 3.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/732a8ddb-ca
+ cd-4b65-aa99-80d58a8d6dcc/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/732a8ddb-cacd-4b65-aa99-80d58a8d6dcc
+URL:https://auftragsregister.ch/de/auftrag/732a8ddb-cacd-4b65-aa99-80d58a8d
+ 6dcc/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: RV Server\, Zubehör und Zusatzservices
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

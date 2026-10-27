@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28a15dbe-3307-4f0a-8cf4-9c7583660769-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T130000Z
+SUMMARY:Scadenza: HUG_PRESTATIONS D’INTERPRÉTARIAT HUMAIN
+DESCRIPTION:Ente pubblico: CAIB (Centrale d’achats et d’ingénierie bio
+ médicale Vaud-Genève)\nScadenza: 06.11.2026\, 14:00\nNel registro: https
+ ://auftragsregister.ch/it/auftrag/28a15dbe-3307-4f0a-8cf4-9c7583660769/\nP
+ ubblicazione ufficiale: https://www.simap.ch/it/project-detail/28a15dbe-33
+ 07-4f0a-8cf4-9c7583660769
+URL:https://auftragsregister.ch/it/auftrag/28a15dbe-3307-4f0a-8cf4-9c758366
+ 0769/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: HUG_PRESTATIONS D’INTERPRÉTARIAT HUMAIN
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ca595bef-c002-4eee-9de1-763049852cab-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Submission deadline: Rénovation centre scolaire du Mail - 25700 - 
+ Installation d'extinction d'incendie
+DESCRIPTION:Public buyer: éorén - École obligatoire région Neuchâtel (
+ AAPA SA)\nSubmission deadline: 6 Nov 2026\, 16:00\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/ca595bef-c002-4eee-9de1-763049852cab/\n
+ Official publication: https://www.simap.ch/en/project-detail/ca595bef-c002
+ -4eee-9de1-763049852cab
+URL:https://auftragsregister.ch/en/auftrag/ca595bef-c002-4eee-9de1-76304985
+ 2cab/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rénovation centre scolaire du Mail - 2570
+ 0 - Installation d'extinction d'incendie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

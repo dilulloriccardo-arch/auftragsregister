@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5e97f7e9-d6bf-421d-9a09-6fb258db8541-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261104T150000Z
+SUMMARY:Scadenza: EDFR II: Site Bellechasse\, seconde étape de planificati
+ on pénitentiaire
+DESCRIPTION:Ente pubblico: Etat de Fribourg\, Service des bâtiments\nScade
+ nza: 04.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/5e97f7e9-d6bf-421d-9a09-6fb258db8541/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/5e97f7e9-d6bf-421d-9a09-6fb258db8541
+URL:https://auftragsregister.ch/it/auftrag/5e97f7e9-d6bf-421d-9a09-6fb258db
+ 8541/
+LOCATION:Sugiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EDFR II: Site Bellechasse\, seconde étape de planifi
+ cation pénitentiaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

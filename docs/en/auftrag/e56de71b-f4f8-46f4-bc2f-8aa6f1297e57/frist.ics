@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e56de71b-f4f8-46f4-bc2f-8aa6f1297e57-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:1
+DTSTART:20261104T225900Z
+SUMMARY:Submission deadline: Verstellen von Fahrzeugen
+DESCRIPTION:Public buyer: Kantonspolizei Bern\nSubmission deadline: 4 Nov
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/e5
+ 6de71b-f4f8-46f4-bc2f-8aa6f1297e57/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/e56de71b-f4f8-46f4-bc2f-8aa6f1297e57
+URL:https://auftragsregister.ch/en/auftrag/e56de71b-f4f8-46f4-bc2f-8aa6f129
+ 7e57/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Verstellen von Fahrzeugen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

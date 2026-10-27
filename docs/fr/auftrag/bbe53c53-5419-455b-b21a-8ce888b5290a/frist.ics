@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbe53c53-5419-455b-b21a-8ce888b5290a-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Délai de remise : BKP 214.4 Äussere Bekleidungen Fassade
+DESCRIPTION:Acheteur public : Baureag Architekten AG\nDélai de remise 
+ : 25.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/bbe53c53-5419-455b-b21a-8ce888b5290a/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/bbe53c53-5419-455b-b21a-8ce88
+ 8b5290a
+URL:https://auftragsregister.ch/fr/auftrag/bbe53c53-5419-455b-b21a-8ce888b5
+ 290a/
+LOCATION:Birrwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 214.4 Äussere Bekleidungen Fassade
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

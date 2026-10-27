@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6910973f-4a51-4076-a7a0-fc7e6ff2016f-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Scadenza: 282 01 keramische Wand- und Bodenplatten
+DESCRIPTION:Ente pubblico: Vollenweider Baurealisation GmbH\nScadenza: 20.1
+ 1.2026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/69109
+ 73f-4a51-4076-a7a0-fc7e6ff2016f/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/6910973f-4a51-4076-a7a0-fc7e6ff2016f
+URL:https://auftragsregister.ch/it/auftrag/6910973f-4a51-4076-a7a0-fc7e6ff2
+ 016f/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 282 01 keramische Wand- und Bodenplatten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

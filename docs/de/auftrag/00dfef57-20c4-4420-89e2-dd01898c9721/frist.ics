@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:00dfef57-20c4-4420-89e2-dd01898c9721-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Eingabefrist: Schultransporte Primarschule Dübendorf
+DESCRIPTION:Auftraggeber: Primarschule Dübendorf (Federas Beratung AG)\nEi
+ ngabefrist: 12.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister
+ .ch/de/auftrag/00dfef57-20c4-4420-89e2-dd01898c9721/\nAmtliche Publikation
+ : https://www.simap.ch/de/project-detail/00dfef57-20c4-4420-89e2-dd01898c9
+ 721
+URL:https://auftragsregister.ch/de/auftrag/00dfef57-20c4-4420-89e2-dd01898c
+ 9721/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schultransporte Primarschule Dübendorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

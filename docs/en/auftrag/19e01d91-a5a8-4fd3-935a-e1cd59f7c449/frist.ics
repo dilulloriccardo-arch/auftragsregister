@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:19e01d91-a5a8-4fd3-935a-e1cd59f7c449-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Submission deadline: Ausschreibung Heizung\, Sanitär\, Wannenbesch
+ ichtungen und Spezialarbeiten Sanitär – KAT.003
+DESCRIPTION:Public buyer: ETHOS Immobilien GmbH\nSubmission deadline: 9 No
+ v 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/1
+ 9e01d91-a5a8-4fd3-935a-e1cd59f7c449/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/19e01d91-a5a8-4fd3-935a-e1cd59f7c449
+URL:https://auftragsregister.ch/en/auftrag/19e01d91-a5a8-4fd3-935a-e1cd59f7
+ c449/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibung Heizung\, Sanitär\, Wannenb
+ eschichtungen und Spezialarbeiten Sanitär – KAT.003
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

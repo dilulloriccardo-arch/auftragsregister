@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1f48fd9-f76c-462f-bf5c-1edf59996cee-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T224500Z
+SUMMARY:Submission deadline: EBP-665 Rahmenvertrag BHU
+DESCRIPTION:Public buyer: Energie Wasser Bern\nSubmission deadline: 18 Nov
+  2026\, 23:45\nIn the register: https://auftragsregister.ch/en/auftrag/e1
+ f48fd9-f76c-462f-bf5c-1edf59996cee/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/e1f48fd9-f76c-462f-bf5c-1edf59996cee
+URL:https://auftragsregister.ch/en/auftrag/e1f48fd9-f76c-462f-bf5c-1edf5999
+ 6cee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EBP-665 Rahmenvertrag BHU
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

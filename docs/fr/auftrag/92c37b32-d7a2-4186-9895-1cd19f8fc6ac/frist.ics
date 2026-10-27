@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92c37b32-d7a2-4186-9895-1cd19f8fc6ac-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Délai de remise : 00870 Gewächshäuser ZOQ\, Ersatz Kälteanlag
+ e BKP240/BKP246
+DESCRIPTION:Acheteur public : Universität Zürich - Bauprojektmanagement
+ \nDélai de remise : 25.11.2026\, 12 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/92c37b32-d7a2-4186-9895-1cd19f8fc6ac/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/92c37b32
+ -d7a2-4186-9895-1cd19f8fc6ac
+URL:https://auftragsregister.ch/fr/auftrag/92c37b32-d7a2-4186-9895-1cd19f8f
+ c6ac/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 00870 Gewächshäuser ZOQ\, Ersatz Kältea
+ nlage BKP240/BKP246
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72d598df-6d13-48b9-98f8-ba930f27e34b-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Eingabefrist: KUE BZZ I 13216 I BKP 597-19 Projektübergeordnete Gl
+ eis- und Baugrubenüberwachung
+DESCRIPTION:Auftraggeber: Hochbauamt\, Baubereich B\nEingabefrist: 02.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/72d59
+ 8df-6d13-48b9-98f8-ba930f27e34b/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/72d598df-6d13-48b9-98f8-ba930f27e34b
+URL:https://auftragsregister.ch/de/auftrag/72d598df-6d13-48b9-98f8-ba930f27
+ e34b/
+LOCATION:Uetikon am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: KUE BZZ I 13216 I BKP 597-19 Projektübergeordnet
+ e Gleis- und Baugrubenüberwachung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5d3d611-dd22-4630-b2ef-48e3e9f36ad6-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Submission deadline: Procurement\, Installation\, Commissioning\, T
+ raining\, and Maintenance of an Automated Pre-Analytical Solution
+DESCRIPTION:Public buyer: Solothurner Spitäler AG\nSubmission deadline: 1
+  Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/a5d3d611-dd22-4630-b2ef-48e3e9f36ad6/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/a5d3d611-dd22-4630-b2ef-48e3e9f36ad6
+URL:https://auftragsregister.ch/en/auftrag/a5d3d611-dd22-4630-b2ef-48e3e9f3
+ 6ad6/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Procurement\, Installation\, Commissioning
+ \, Training\, and Maintenance of an Automated Pre-Analytical Solution
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

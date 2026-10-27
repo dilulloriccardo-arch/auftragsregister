@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5181b882-e4f5-49b4-8edf-509ea273bc56-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261102T225600Z
+SUMMARY:Délai de remise : Neubau Werkhof und Sammelstelle
+DESCRIPTION:Acheteur public : Gemeinde Ueberstorf\nDélai de remise : 0
+ 2.11.2026\, 23 h 56\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/5181b882-e4f5-49b4-8edf-509ea273bc56/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/5181b882-e4f5-49b4-8edf-509ea2
+ 73bc56
+URL:https://auftragsregister.ch/fr/auftrag/5181b882-e4f5-49b4-8edf-509ea273
+ bc56/
+LOCATION:Ueberstorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Werkhof und Sammelstelle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

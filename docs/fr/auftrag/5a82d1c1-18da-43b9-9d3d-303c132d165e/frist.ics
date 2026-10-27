@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a82d1c1-18da-43b9-9d3d-303c132d165e-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : Quartierergänzung Volta Ost\, Integrales Faci
+ lity Management
+DESCRIPTION:Acheteur public : Bau- und Verkehrsdepartement des Kantons Ba
+ sel-Stadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\n
+ Délai de remise : 30.11.2026\, 12 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/5a82d1c1-18da-43b9-9d3d-303c132d165e/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/5a82d1c1-1
+ 8da-43b9-9d3d-303c132d165e
+URL:https://auftragsregister.ch/fr/auftrag/5a82d1c1-18da-43b9-9d3d-303c132d
+ 165e/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Quartierergänzung Volta Ost\, Integrales 
+ Facility Management
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2a582ced-9383-4a6d-9261-65292d4cbabf-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Submission deadline: Rosental Mitte - Ersatz ELT\, Innenausbau Ener
+ gieleitungstunnel - BKP 23 Elektroarbeiten
+DESCRIPTION:Public buyer: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nSubmis
+ sion deadline: 23 Nov 2026\, 12:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/2a582ced-9383-4a6d-9261-65292d4cbabf/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/2a582ced-9383-4a6d-9261-6529
+ 2d4cbabf
+URL:https://auftragsregister.ch/en/auftrag/2a582ced-9383-4a6d-9261-65292d4c
+ babf/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rosental Mitte - Ersatz ELT\, Innenausbau 
+ Energieleitungstunnel - BKP 23 Elektroarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

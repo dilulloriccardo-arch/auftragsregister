@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d3c1028-2d69-49c1-8c32-109056674009-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:2
+DTSTART:20261201T140000Z
+SUMMARY:Eingabefrist: Gepäcktransporte Oberengadin
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB Division Produkti
+ on Personenverkehr\nEingabefrist: 01.12.2026\, 15.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/3d3c1028-2d69-49c1-8c32-109056674009/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/3d3c1028-2d
+ 69-49c1-8c32-109056674009
+URL:https://auftragsregister.ch/de/auftrag/3d3c1028-2d69-49c1-8c32-10905667
+ 4009/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gepäcktransporte Oberengadin
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

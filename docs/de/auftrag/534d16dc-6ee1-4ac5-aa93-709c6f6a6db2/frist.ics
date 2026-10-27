@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:534d16dc-6ee1-4ac5-aa93-709c6f6a6db2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Eingabefrist: Baumeisterarbeiten Instandsetzung Obere Zwischengrabe
+ nbrücke\, Unterseen
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 11.11.
+ 2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/534
+ d16dc-6ee1-4ac5-aa93-709c6f6a6db2/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/534d16dc-6ee1-4ac5-aa93-709c6f6a6db2
+URL:https://auftragsregister.ch/de/auftrag/534d16dc-6ee1-4ac5-aa93-709c6f6a
+ 6db2/
+LOCATION:Unterseen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Baumeisterarbeiten Instandsetzung Obere Zwischeng
+ rabenbrücke\, Unterseen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

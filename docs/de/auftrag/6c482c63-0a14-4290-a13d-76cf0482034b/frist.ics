@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c482c63-0a14-4290-a13d-76cf0482034b-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Eingabefrist: Horizontal field magnet with ultra-wide beam access f
+ or intensity mapping neutron experiments
+DESCRIPTION:Auftraggeber: Paul Scherrer Institut (PSI)\nEingabefrist: 22.12
+ .2026\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/6c
+ 482c63-0a14-4290-a13d-76cf0482034b/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/6c482c63-0a14-4290-a13d-76cf0482034b
+URL:https://auftragsregister.ch/de/auftrag/6c482c63-0a14-4290-a13d-76cf0482
+ 034b/
+LOCATION:Villigen PSI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Horizontal field magnet with ultra-wide beam acce
+ ss for intensity mapping neutron experiments
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

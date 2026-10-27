@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9de61cec-8c91-447b-94aa-5e70099a9ab6-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261124T110000Z
+SUMMARY:Scadenza: FIS Innenanzeigen
+DESCRIPTION:Ente pubblico: Schweizerische Post AG\nScadenza: 24.11.2026\, 1
+ 2:00\nNel registro: https://auftragsregister.ch/it/auftrag/9de61cec-8c91-4
+ 47b-94aa-5e70099a9ab6/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/9de61cec-8c91-447b-94aa-5e70099a9ab6
+URL:https://auftragsregister.ch/it/auftrag/9de61cec-8c91-447b-94aa-5e70099a
+ 9ab6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: FIS Innenanzeigen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

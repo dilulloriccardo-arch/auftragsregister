@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c482c63-0a14-4290-a13d-76cf0482034b-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Délai de remise : Aimant à champ horizontal et accès au faisce
+ au ultra-large pour expériences de cartographie d'intensité des neutrons
+DESCRIPTION:Acheteur public : Paul Scherrer Institut (PSI)\nDélai de rem
+ ise : 22.12.2026\, 10 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/6c482c63-0a14-4290-a13d-76cf0482034b/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/6c482c63-0a14-4290-a13d
+ -76cf0482034b
+URL:https://auftragsregister.ch/fr/auftrag/6c482c63-0a14-4290-a13d-76cf0482
+ 034b/
+LOCATION:Villigen PSI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Aimant à champ horizontal et accès au fa
+ isceau ultra-large pour expériences de cartographie d'intensité des neut
+ rons
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3be6ac78-b06e-4f5c-b9e3-b245e6f745cc-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261109T090000Z
+SUMMARY:Délai de remise : Sanierung Weid - Chapfstrasse
+DESCRIPTION:Acheteur public : Gemeinde Zumikon Abteilung Tiefbau\nDélai 
+ de remise : 09.11.2026\, 10 h 00\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/3be6ac78-b06e-4f5c-b9e3-b245e6f745cc/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/3be6ac78-b06e-4f5
+ c-b9e3-b245e6f745cc
+URL:https://auftragsregister.ch/fr/auftrag/3be6ac78-b06e-4f5c-b9e3-b245e6f7
+ 45cc/
+LOCATION:Zumikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Weid - Chapfstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

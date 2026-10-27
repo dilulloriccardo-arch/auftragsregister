@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc5d51a2-c2b6-4d34-be09-a813badf3ee7-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Submission deadline: (26043) 704 Revisionsmandate Abschluss- und IT
+ -Prüfung ALV 2027-2031
+DESCRIPTION:Public buyer: Staatssekretariat für Wirtschaft SECO\nSubmissio
+ n deadline: 11 Nov 2026\, 23:59\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/bc5d51a2-c2b6-4d34-be09-a813badf3ee7/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/bc5d51a2-c2b6-4d34-be09-a813bad
+ f3ee7
+URL:https://auftragsregister.ch/en/auftrag/bc5d51a2-c2b6-4d34-be09-a813badf
+ 3ee7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (26043) 704 Revisionsmandate Abschluss- un
+ d IT-Prüfung ALV 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc91e6ad-5063-4d82-92b5-6fbb2b175d53-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T080000Z
+SUMMARY:Submission deadline: IWB\, Rahmenvertrag Baumpfleger
+DESCRIPTION:Public buyer: IWB Industrielle Werke Basel\nSubmission deadline
+ : 18 Nov 2026\, 09:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/cc91e6ad-5063-4d82-92b5-6fbb2b175d53/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/cc91e6ad-5063-4d82-92b5-6fbb2b175d53
+URL:https://auftragsregister.ch/en/auftrag/cc91e6ad-5063-4d82-92b5-6fbb2b17
+ 5d53/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: IWB\, Rahmenvertrag Baumpfleger
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

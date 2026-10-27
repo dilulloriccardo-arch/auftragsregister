@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ba6ab44e-5918-4d9c-b693-1a736f628544-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Eingabefrist: Schulcampus Dorf\, Bestandsgebäude - BKP 230 Elektro
+ anlagen
+DESCRIPTION:Auftraggeber: ARGE GP SCD - c/o Rapp AG\nEingabefrist: 02.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ba6ab
+ 44e-5918-4d9c-b693-1a736f628544/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/ba6ab44e-5918-4d9c-b693-1a736f628544
+URL:https://auftragsregister.ch/de/auftrag/ba6ab44e-5918-4d9c-b693-1a736f62
+ 8544/
+LOCATION:Binningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulcampus Dorf\, Bestandsgebäude - BKP 230 Ele
+ ktroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

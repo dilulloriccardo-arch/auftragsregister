@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0404067e-8526-4145-b4f1-4454f18aba7a-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Délai de remise : Wohnsiedlung Heidi Abel_BKP 215.2 Fassadenbekl
+ eidung
+DESCRIPTION:Acheteur public : Stiftung Alterswohnen der Stadt Zürich (SA
+ W) (Güntensperger Baumanagement AG)\nDélai de remise : 01.12.2026\, 16
+  h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/040
+ 4067e-8526-4145-b4f1-4454f18aba7a/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/0404067e-8526-4145-b4f1-4454f18aba7a
+URL:https://auftragsregister.ch/fr/auftrag/0404067e-8526-4145-b4f1-4454f18a
+ ba7a/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wohnsiedlung Heidi Abel_BKP 215.2 Fassaden
+ bekleidung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

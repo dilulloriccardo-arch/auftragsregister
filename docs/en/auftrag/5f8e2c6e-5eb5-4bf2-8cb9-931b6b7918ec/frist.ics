@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f8e2c6e-5eb5-4bf2-8cb9-931b6b7918ec-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Submission deadline: Neubau Reservoir Tschäni - Baumeisterarbeiten
+DESCRIPTION:Public buyer: Gemeinde Trubschachen\nSubmission deadline: 16 N
+ ov 2026\nIn the register: https://auftragsregister.ch/en/auftrag/5f8e2c6e
+ -5eb5-4bf2-8cb9-931b6b7918ec/\nOfficial publication: https://www.simap.ch/
+ en/project-detail/5f8e2c6e-5eb5-4bf2-8cb9-931b6b7918ec
+URL:https://auftragsregister.ch/en/auftrag/5f8e2c6e-5eb5-4bf2-8cb9-931b6b79
+ 18ec/
+LOCATION:Trubschachen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Reservoir Tschäni - Baumeisterarbe
+ iten
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

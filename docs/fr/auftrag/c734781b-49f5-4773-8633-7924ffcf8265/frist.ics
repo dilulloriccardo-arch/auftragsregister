@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c734781b-49f5-4773-8633-7924ffcf8265-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Délai de remise : SRB 6000 / RC 6 / Courrendlin / Aménagement d
+ e la traversée / Lot 1 / Assainissement des déversoirs d'orage
+DESCRIPTION:Acheteur public : Service des infrastructures (SIN) - Section
+  des constructions routières (SCR)\nDélai de remise : 27.11.2026\nDans
+  le registre : https://auftragsregister.ch/fr/auftrag/c734781b-49f5-4773
+ -8633-7924ffcf8265/\nPublication officielle : https://www.simap.ch/fr/pr
+ oject-detail/c734781b-49f5-4773-8633-7924ffcf8265
+URL:https://auftragsregister.ch/fr/auftrag/c734781b-49f5-4773-8633-7924ffcf
+ 8265/
+LOCATION:Courrendlin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : SRB 6000 / RC 6 / Courrendlin / Aménageme
+ nt de la traversée / Lot 1 / Assainissement des déversoirs d'orage
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

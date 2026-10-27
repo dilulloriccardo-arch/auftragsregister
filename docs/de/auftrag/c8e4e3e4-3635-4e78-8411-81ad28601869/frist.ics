@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8e4e3e4-3635-4e78-8411-81ad28601869-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Eingabefrist: Beschaffung: System zur Unkrautvernichtung
+DESCRIPTION:Auftraggeber: Rhätische Bahn AG\nEingabefrist: 09.12.2026\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c8e4e3e4-363
+ 5-4e78-8411-81ad28601869/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/c8e4e3e4-3635-4e78-8411-81ad28601869
+URL:https://auftragsregister.ch/de/auftrag/c8e4e3e4-3635-4e78-8411-81ad2860
+ 1869/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung: System zur Unkrautvernichtung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

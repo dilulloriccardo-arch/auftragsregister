@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8e1a7203-62e2-4a1d-9a0e-a440740f6e6e-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Délai de remise : Wartung Strahlventilatoren GE VII
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Gebietseinheit VII\nDéla
+ i de remise : 27.11.2026\, 16 h 00\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/8e1a7203-62e2-4a1d-9a0e-a440740f6e6e/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/8e1a7203-62e2-4
+ a1d-9a0e-a440740f6e6e
+URL:https://auftragsregister.ch/fr/auftrag/8e1a7203-62e2-4a1d-9a0e-a440740f
+ 6e6e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wartung Strahlventilatoren GE VII
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

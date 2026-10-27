@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:742f0f09-cc5c-422d-a96b-cfb4e86ba28a-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: Landverkauf Wiesengarten
+DESCRIPTION:Ente pubblico: Gemeinde Affeltrangen\nScadenza: 09.11.2026\, 16
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/742f0f09-cc5c-42
+ 2d-a96b-cfb4e86ba28a/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/742f0f09-cc5c-422d-a96b-cfb4e86ba28a
+URL:https://auftragsregister.ch/it/auftrag/742f0f09-cc5c-422d-a96b-cfb4e86b
+ a28a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Landverkauf Wiesengarten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

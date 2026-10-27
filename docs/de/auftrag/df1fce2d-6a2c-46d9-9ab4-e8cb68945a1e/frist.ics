@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df1fce2d-6a2c-46d9-9ab4-e8cb68945a1e-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261126T070000Z
+SUMMARY:Eingabefrist: 082_227.1 Äussere Malerarbeiten\, Gebäudehüllensan
+ ierung G-G-Strasse 22 - 30
+DESCRIPTION:Auftraggeber: Baudepartement Stadt Zug\, Abteilung Hochbau\nEin
+ gabefrist: 26.11.2026\, 8.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/df1fce2d-6a2c-46d9-9ab4-e8cb68945a1e/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/df1fce2d-6a2c-46d9-9ab4-e8cb68945a1
+ e
+URL:https://auftragsregister.ch/de/auftrag/df1fce2d-6a2c-46d9-9ab4-e8cb6894
+ 5a1e/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 082_227.1 Äussere Malerarbeiten\, Gebäudehülle
+ nsanierung G-G-Strasse 22 - 30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

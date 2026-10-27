@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72c32ab1-ab0e-46ab-b10f-7dd8e3b00b35-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261213T225900Z
+SUMMARY:Submission deadline: Abgasabsauganlage Thermische Fahrzeuge Halle W
+ est
+DESCRIPTION:Public buyer: Rhätische Bahn AG\nSubmission deadline: 13 Dec
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/72
+ c32ab1-ab0e-46ab-b10f-7dd8e3b00b35/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/72c32ab1-ab0e-46ab-b10f-7dd8e3b00b35
+URL:https://auftragsregister.ch/en/auftrag/72c32ab1-ab0e-46ab-b10f-7dd8e3b0
+ 0b35/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Abgasabsauganlage Thermische Fahrzeuge Hal
+ le West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57e9e32b-365e-426c-998b-5314ec04cfd6-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261203T150000Z
+SUMMARY:Eingabefrist: Agrandissement et rénovation de l'école du Belvéd
+ ère_CFC 410/420_Aménagements extérieurs
+DESCRIPTION:Auftraggeber: Commune de Chêne-Bougeries - Giorgis Rodriguez A
+ rchitectes SA\nEingabefrist: 03.12.2026\, 16.00 Uhr\nIm Register: https:/
+ /auftragsregister.ch/de/auftrag/57e9e32b-365e-426c-998b-5314ec04cfd6/\nAmt
+ liche Publikation: https://www.simap.ch/de/project-detail/57e9e32b-365e-42
+ 6c-998b-5314ec04cfd6
+URL:https://auftragsregister.ch/de/auftrag/57e9e32b-365e-426c-998b-5314ec04
+ cfd6/
+LOCATION:Chêne-Bougeries
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Agrandissement et rénovation de l'école du Belv
+ édère_CFC 410/420_Aménagements extérieurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

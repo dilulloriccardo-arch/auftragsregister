@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0090772d-4590-46c3-9802-f18ee0e77164-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Submission deadline: PSI PV Systems Contracting – Phase 2
+DESCRIPTION:Public buyer: Paul Scherrer Institut\nSubmission deadline: 5 N
+ ov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 0090772d-4590-46c3-9802-f18ee0e77164/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/0090772d-4590-46c3-9802-f18ee0e77164
+URL:https://auftragsregister.ch/en/auftrag/0090772d-4590-46c3-9802-f18ee0e7
+ 7164/
+LOCATION:Villigen PSI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: PSI PV Systems Contracting – Phase 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

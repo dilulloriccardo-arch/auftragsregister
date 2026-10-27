@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:39428833-8395-42d5-b583-fe613544148f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: Ausschreibung Schlüsseldienst / Schliessanlagen / Zutrit
+ tssysteme – KAT.009
+DESCRIPTION:Ente pubblico: ETHOS Immobilien GmbH\nScadenza: 09.11.2026\, 16
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/39428833-8395-42
+ d5-b583-fe613544148f/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/39428833-8395-42d5-b583-fe613544148f
+URL:https://auftragsregister.ch/it/auftrag/39428833-8395-42d5-b583-fe613544
+ 148f/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung Schlüsseldienst / Schliessanlagen / Zu
+ trittssysteme – KAT.009
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

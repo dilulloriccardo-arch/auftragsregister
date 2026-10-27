@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92377e30-103b-43d7-b596-1595d8391ce4-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T140000Z
+SUMMARY:Eingabefrist: Externe Projektleitungsteams für die Dienststelle Ve
+ rkehr und Infrastruktur (vif) Kanton Luzern
+DESCRIPTION:Auftraggeber: Verkehr und Infrastruktur (vif)\, Planung Strasse
+ n\nEingabefrist: 27.11.2026\, 15.00 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/92377e30-103b-43d7-b596-1595d8391ce4/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/92377e30-103b-43d7-b596-1595
+ d8391ce4
+URL:https://auftragsregister.ch/de/auftrag/92377e30-103b-43d7-b596-1595d839
+ 1ce4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Externe Projektleitungsteams für die Dienststell
+ e Verkehr und Infrastruktur (vif) Kanton Luzern
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

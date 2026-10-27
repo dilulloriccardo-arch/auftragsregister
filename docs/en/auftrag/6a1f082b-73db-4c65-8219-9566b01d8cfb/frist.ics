@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a1f082b-73db-4c65-8219-9566b01d8cfb-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261105T110000Z
+SUMMARY:Submission deadline: Risiko - und Arbeitssicherheitsmanagement- Too
+ l
+DESCRIPTION:Public buyer: Basler Verkehrs-Betriebe (BVB)\nSubmission deadli
+ ne: 5 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/6a1f082b-73db-4c65-8219-9566b01d8cfb/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/6a1f082b-73db-4c65-8219-9566b01d8cfb
+URL:https://auftragsregister.ch/en/auftrag/6a1f082b-73db-4c65-8219-9566b01d
+ 8cfb/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Risiko - und Arbeitssicherheitsmanagement-
+  Tool
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd3f2a9c-ab0f-4923-b756-a8d8de4153ff-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261104T150000Z
+SUMMARY:Délai de remise : ZGSZ l 45518 l BKP 242 Heizungsanlagen
+DESCRIPTION:Acheteur public : Hochbauamt\, Baubereich B\nDélai de remise
+  : 04.11.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/bd3f2a9c-ab0f-4923-b756-a8d8de4153ff/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/bd3f2a9c-ab0f-4923-b756-a8
+ d8de4153ff
+URL:https://auftragsregister.ch/fr/auftrag/bd3f2a9c-ab0f-4923-b756-a8d8de41
+ 53ff/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ZGSZ l 45518 l BKP 242 Heizungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

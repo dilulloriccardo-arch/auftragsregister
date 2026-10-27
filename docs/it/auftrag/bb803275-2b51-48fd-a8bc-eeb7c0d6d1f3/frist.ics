@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb803275-2b51-48fd-a8bc-eeb7c0d6d1f3-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261102T140000Z
+SUMMARY:Scadenza: Prestations événementielles pour l'organisation de la f
+ ête du personnel des HUG
+DESCRIPTION:Ente pubblico: Centrale d'achats et d’ingénierie biomédical
+ e des hôpitaux universitaires Vaud-Genève (CAIB)\nScadenza: 02.11.2026\,
+  15:00\nNel registro: https://auftragsregister.ch/it/auftrag/bb803275-2b51
+ -48fd-a8bc-eeb7c0d6d1f3/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/bb803275-2b51-48fd-a8bc-eeb7c0d6d1f3
+URL:https://auftragsregister.ch/it/auftrag/bb803275-2b51-48fd-a8bc-eeb7c0d6
+ d1f3/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Prestations événementielles pour l'organisation de 
+ la fête du personnel des HUG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

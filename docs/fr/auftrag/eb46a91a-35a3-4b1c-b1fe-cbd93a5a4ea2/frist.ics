@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb46a91a-35a3-4b1c-b1fe-cbd93a5a4ea2-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:1
+DTSTART:20261110T110000Z
+SUMMARY:Délai de remise : Hauterive/FR\, Suisse / Protection anti-corros
+ ion conduite forcée
+DESCRIPTION:Acheteur public : Groupe E SA - Service achat pour les March
+ és publics\nDélai de remise : 10.11.2026\, 12 h 00\nDans le regist
+ re : https://auftragsregister.ch/fr/auftrag/eb46a91a-35a3-4b1c-b1fe-cbd9
+ 3a5a4ea2/\nPublication officielle : https://www.simap.ch/fr/project-deta
+ il/eb46a91a-35a3-4b1c-b1fe-cbd93a5a4ea2
+URL:https://auftragsregister.ch/fr/auftrag/eb46a91a-35a3-4b1c-b1fe-cbd93a5a
+ 4ea2/
+LOCATION:Rossens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Hauterive/FR\, Suisse / Protection anti-co
+ rrosion conduite forcée
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:537fef57-d062-481b-aaf7-8ab2bef43b0c-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261112T225900Z
+SUMMARY:Submission deadline: MP-130008 N02 Seelisbergtunnel\, 2. Instandset
+ zung Los 3.1 Tunnellüftung
+DESCRIPTION:Public buyer: Bundesamt für Strassen ASTRA -Abteilung Strassen
+ infrastruktur-Ost - F3 Zofingen\nSubmission deadline: 12 Nov 2026\, 23:5
+ 9\nIn the register: https://auftragsregister.ch/en/auftrag/537fef57-d062-4
+ 81b-aaf7-8ab2bef43b0c/\nOfficial publication: https://www.simap.ch/en/proj
+ ect-detail/537fef57-d062-481b-aaf7-8ab2bef43b0c
+URL:https://auftragsregister.ch/en/auftrag/537fef57-d062-481b-aaf7-8ab2bef4
+ 3b0c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-130008 N02 Seelisbergtunnel\, 2. Instan
+ dsetzung Los 3.1 Tunnellüftung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

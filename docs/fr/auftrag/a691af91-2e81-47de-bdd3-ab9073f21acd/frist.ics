@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a691af91-2e81-47de-bdd3-ab9073f21acd-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Délai de remise : IMA FV Pestalozzistrasse 55/57\, Instandsetzun
+ g mit Umnutzung / BKP 250 Sanitäranlagen
+DESCRIPTION:Acheteur public : Kanton Zürich Hochbauaumt\, Baubereich D\n
+ Délai de remise : 06.11.2026\, 16 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/a691af91-2e81-47de-bdd3-ab9073f21acd/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/a691af91-2
+ e81-47de-bdd3-ab9073f21acd
+URL:https://auftragsregister.ch/fr/auftrag/a691af91-2e81-47de-bdd3-ab9073f2
+ 1acd/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IMA FV Pestalozzistrasse 55/57\, Instandse
+ tzung mit Umnutzung / BKP 250 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

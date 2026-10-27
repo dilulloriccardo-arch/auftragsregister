@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:076f843e-2d9b-4eb9-9f8c-7e6e61d50921-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261029T150000Z
+SUMMARY:Submission deadline: Gestion d'un portefeuille d'assurance maladie 
+ pour requérants d'asile
+DESCRIPTION:Public buyer: Direction générale de la cohésion sociale - DG
+ CS\nSubmission deadline: 29 Oct 2026\, 16:00\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/076f843e-2d9b-4eb9-9f8c-7e6e61d50921/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/076f843e-2d9b-4eb9
+ -9f8c-7e6e61d50921
+URL:https://auftragsregister.ch/en/auftrag/076f843e-2d9b-4eb9-9f8c-7e6e61d5
+ 0921/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gestion d'un portefeuille d'assurance mala
+ die pour requérants d'asile
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

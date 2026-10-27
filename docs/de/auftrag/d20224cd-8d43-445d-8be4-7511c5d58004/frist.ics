@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d20224cd-8d43-445d-8be4-7511c5d58004-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T150000Z
+SUMMARY:Eingabefrist: ZGSZ l 46044 l BKP230 Elektroanlagen
+DESCRIPTION:Auftraggeber: Hochbauamt\, Baubereich B\nEingabefrist: 11.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d2022
+ 4cd-8d43-445d-8be4-7511c5d58004/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/d20224cd-8d43-445d-8be4-7511c5d58004
+URL:https://auftragsregister.ch/de/auftrag/d20224cd-8d43-445d-8be4-7511c5d5
+ 8004/
+LOCATION:Embrach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ZGSZ l 46044 l BKP230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

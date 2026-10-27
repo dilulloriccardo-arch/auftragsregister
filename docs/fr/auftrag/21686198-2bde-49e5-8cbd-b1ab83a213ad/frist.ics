@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:21686198-2bde-49e5-8cbd-b1ab83a213ad-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Délai de remise : BKP 230 Elektroanlagen\, Mieterausbau Baarerst
+ rasse 57-59\, Zug
+DESCRIPTION:Acheteur public : Hochbauamt des Kantons Zug\nDélai de remis
+ e : 06.11.2026\, 16 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/21686198-2bde-49e5-8cbd-b1ab83a213ad/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/21686198-2bde-49e5-8cbd-b
+ 1ab83a213ad
+URL:https://auftragsregister.ch/fr/auftrag/21686198-2bde-49e5-8cbd-b1ab83a2
+ 13ad/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 230 Elektroanlagen\, Mieterausbau Baar
+ erstrasse 57-59\, Zug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

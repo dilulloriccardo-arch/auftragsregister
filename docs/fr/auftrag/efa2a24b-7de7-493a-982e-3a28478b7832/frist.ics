@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efa2a24b-7de7-493a-982e-3a28478b7832-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261118T160000Z
+SUMMARY:Délai de remise : Neubau Gemeindehaus Münsingen - CFC 273/ 281.
+ 8
+DESCRIPTION:Acheteur public : Gemeinde Münsingen\, Abteilung Bau\nDélai
+  de remise : 18.11.2026\, 17 h 00\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/efa2a24b-7de7-493a-982e-3a28478b7832/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/efa2a24b-7de7-49
+ 3a-982e-3a28478b7832
+URL:https://auftragsregister.ch/fr/auftrag/efa2a24b-7de7-493a-982e-3a28478b
+ 7832/
+LOCATION:Münsingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Gemeindehaus Münsingen - CFC 273/ 
+ 281.8
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

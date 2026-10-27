@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:caf985b7-4997-42f5-915f-2470868f0ba1-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Délai de remise : Bau Nrn. 21806 / 04100 - Spiser-\, Rautistrass
+ e (Altstetter- bis Flurstrasse)
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Realisierung\nDélai de r
+ emise : 05.11.2026\, 16 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/caf985b7-4997-42f5-915f-2470868f0ba1/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/caf985b7-4997-42f5-91
+ 5f-2470868f0ba1
+URL:https://auftragsregister.ch/fr/auftrag/caf985b7-4997-42f5-915f-2470868f
+ 0ba1/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bau Nrn. 21806 / 04100 - Spiser-\, Rautist
+ rasse (Altstetter- bis Flurstrasse)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

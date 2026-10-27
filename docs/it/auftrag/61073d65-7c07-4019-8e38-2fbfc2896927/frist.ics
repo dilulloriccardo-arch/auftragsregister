@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61073d65-7c07-4019-8e38-2fbfc2896927-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20261106T130000Z
+SUMMARY:Scadenza: Actions à performance énergétique (APE) pour les bâti
+ ments de la cité hospitalière du CHUV - Travaux de mise à niveau des in
+ stallations de traitement d’air BH10\, MAT01\, BH FASOL\, BU19 - CFC 236
+DESCRIPTION:Ente pubblico: CHUV - Constructions ingénierie technique et s
+ écurité (CIT-S)\nScadenza: 06.11.2026\, 14:00\nNel registro: https://auf
+ tragsregister.ch/it/auftrag/61073d65-7c07-4019-8e38-2fbfc2896927/\nPubblic
+ azione ufficiale: https://www.simap.ch/it/project-detail/61073d65-7c07-401
+ 9-8e38-2fbfc2896927
+URL:https://auftragsregister.ch/it/auftrag/61073d65-7c07-4019-8e38-2fbfc289
+ 6927/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Actions à performance énergétique (APE) pour les b
+ âtiments de la cité hospitalière du CHUV - Travaux de mise à niveau de
+ s installations de traitement d’air BH10\, MAT01\, BH FASOL\, BU19 - CFC
+  236
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

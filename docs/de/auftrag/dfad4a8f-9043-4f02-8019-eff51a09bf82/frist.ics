@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dfad4a8f-9043-4f02-8019-eff51a09bf82-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261103T225900Z
+SUMMARY:Eingabefrist: Gesamtsanierung Kaserne Auenfeld\, Wpl Frauenfeld\, 4
+ . Etappe\, BKP 224.9 Bedachungs- und Spenglerarbeiten\, (Wachtgebäude WG)
+DESCRIPTION:Auftraggeber: armasuisse Immobilien\nEingabefrist: 03.11.2026\,
+  23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/dfad4a8f-
+ 9043-4f02-8019-eff51a09bf82/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/dfad4a8f-9043-4f02-8019-eff51a09bf82
+URL:https://auftragsregister.ch/de/auftrag/dfad4a8f-9043-4f02-8019-eff51a09
+ bf82/
+LOCATION:Frauenfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamtsanierung Kaserne Auenfeld\, Wpl Frauenfeld
+ \, 4. Etappe\, BKP 224.9 Bedachungs- und Spenglerarbeiten\, (Wachtgebäude
+  WG)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

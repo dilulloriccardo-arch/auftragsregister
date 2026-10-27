@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:593397bc-2cc8-4d5f-ae10-b7100b12ada4-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261027T225900Z
+SUMMARY:Eingabefrist: BSB Projekt - Baumeister
+DESCRIPTION:Auftraggeber: BLS AG - Finance & SCM - Strategische Beschaffung
+ \nEingabefrist: 27.10.2026\, 23.59 Uhr\nIm Register: https://auftragsregi
+ ster.ch/de/auftrag/593397bc-2cc8-4d5f-ae10-b7100b12ada4/\nAmtliche Publika
+ tion: https://www.simap.ch/de/project-detail/593397bc-2cc8-4d5f-ae10-b7100
+ b12ada4
+URL:https://auftragsregister.ch/de/auftrag/593397bc-2cc8-4d5f-ae10-b7100b12
+ ada4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BSB Projekt - Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

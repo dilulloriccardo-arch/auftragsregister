@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9e3d1aae-b89a-478a-902d-13764f21b413-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261111T130000Z
+SUMMARY:Délai de remise : Fourniture de tableaux de distribution BT pour
+  cabines de transformation MT/BT.
+DESCRIPTION:Acheteur public : Società Elettrica Sopracenerina SA (SES)\n
+ Délai de remise : 11.11.2026\, 14 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/9e3d1aae-b89a-478a-902d-13764f21b413/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/9e3d1aae-b
+ 89a-478a-902d-13764f21b413
+URL:https://auftragsregister.ch/fr/auftrag/9e3d1aae-b89a-478a-902d-13764f21
+ b413/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture de tableaux de distribution BT 
+ pour cabines de transformation MT/BT.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

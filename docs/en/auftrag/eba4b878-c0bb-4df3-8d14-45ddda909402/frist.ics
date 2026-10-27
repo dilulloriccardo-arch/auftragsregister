@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eba4b878-c0bb-4df3-8d14-45ddda909402-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Submission deadline: MP 2025.11.814 - Frigos connectés
+DESCRIPTION:Public buyer: Transports publics de la région lausannoise sa\n
+ Submission deadline: 9 Nov 2026\, 12:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/eba4b878-c0bb-4df3-8d14-45ddda909402/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/eba4b878-c0bb-4df3-8d14
+ -45ddda909402
+URL:https://auftragsregister.ch/en/auftrag/eba4b878-c0bb-4df3-8d14-45ddda90
+ 9402/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP 2025.11.814 - Frigos connectés
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

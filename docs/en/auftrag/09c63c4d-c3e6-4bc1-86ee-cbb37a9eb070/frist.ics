@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:09c63c4d-c3e6-4bc1-86ee-cbb37a9eb070-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Submission deadline: Ausschreibung Fensterbauer / Fensterservice / 
+ Reparaturen und Instandhaltung – KAT.020
+DESCRIPTION:Public buyer: ETHOS Immobilien GmbH\nSubmission deadline: 9 No
+ v 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/0
+ 9c63c4d-c3e6-4bc1-86ee-cbb37a9eb070/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/09c63c4d-c3e6-4bc1-86ee-cbb37a9eb070
+URL:https://auftragsregister.ch/en/auftrag/09c63c4d-c3e6-4bc1-86ee-cbb37a9e
+ b070/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibung Fensterbauer / Fensterservic
+ e / Reparaturen und Instandhaltung – KAT.020
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

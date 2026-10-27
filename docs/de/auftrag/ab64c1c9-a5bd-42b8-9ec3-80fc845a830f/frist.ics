@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab64c1c9-a5bd-42b8-9ec3-80fc845a830f-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Eingabefrist: Gesamtsanierung St. Josefsgasse 7a\, 4500 Solothurn -
+  Betreutes Wohnen im Alter
+DESCRIPTION:Auftraggeber: Stadt Solothurn\, Bau und Umwelt I Hochbau\nEinga
+ befrist: 20.11.2026\nIm Register: https://auftragsregister.ch/de/auftrag/a
+ b64c1c9-a5bd-42b8-9ec3-80fc845a830f/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/ab64c1c9-a5bd-42b8-9ec3-80fc845a830f
+URL:https://auftragsregister.ch/de/auftrag/ab64c1c9-a5bd-42b8-9ec3-80fc845a
+ 830f/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamtsanierung St. Josefsgasse 7a\, 4500 Solothu
+ rn - Betreutes Wohnen im Alter
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

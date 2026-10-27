@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46f9cebb-d09c-4c3a-9ea0-af0de647374d-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261028T100000Z
+SUMMARY:Eingabefrist: Sanierung Reckenwinkel\, Oberglatt
+DESCRIPTION:Auftraggeber: Landis AG\nEingabefrist: 28.10.2026\, 11.00 Uhr\
+ nIm Register: https://auftragsregister.ch/de/auftrag/46f9cebb-d09c-4c3a-9e
+ a0-af0de647374d/\nAmtliche Publikation: https://www.simap.ch/de/project-de
+ tail/46f9cebb-d09c-4c3a-9ea0-af0de647374d
+URL:https://auftragsregister.ch/de/auftrag/46f9cebb-d09c-4c3a-9ea0-af0de647
+ 374d/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Reckenwinkel\, Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

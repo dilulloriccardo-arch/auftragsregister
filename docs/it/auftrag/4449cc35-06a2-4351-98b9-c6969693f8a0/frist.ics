@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4449cc35-06a2-4351-98b9-c6969693f8a0-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261125T100000Z
+SUMMARY:Scadenza: Collège Bahyse II+III - Blonay-St-Légier / Mobilier sco
+ laire
+DESCRIPTION:Ente pubblico: Commune de Blonay-St-Légier (Consortium FLBG)\n
+ Scadenza: 25.11.2026\, 11:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/4449cc35-06a2-4351-98b9-c6969693f8a0/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/4449cc35-06a2-4351-98b9-c6969693f8a0
+URL:https://auftragsregister.ch/it/auftrag/4449cc35-06a2-4351-98b9-c6969693
+ f8a0/
+LOCATION:Blonay
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Collège Bahyse II+III - Blonay-St-Légier / Mobilier
+  scolaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

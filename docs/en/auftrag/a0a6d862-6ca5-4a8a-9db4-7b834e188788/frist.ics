@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0a6d862-6ca5-4a8a-9db4-7b834e188788-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261130T110000Z
+SUMMARY:Submission deadline: MP 2026.03.839 - Acquisition d'une solution de
+  géolocalisation indoor/outdoor
+DESCRIPTION:Public buyer: Transports publics de la région lausannoise sa\n
+ Submission deadline: 30 Nov 2026\, 12:00\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/a0a6d862-6ca5-4a8a-9db4-7b834e188788/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/a0a6d862-6ca5-4a8a-9db
+ 4-7b834e188788
+URL:https://auftragsregister.ch/en/auftrag/a0a6d862-6ca5-4a8a-9db4-7b834e18
+ 8788/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP 2026.03.839 - Acquisition d'une solutio
+ n de géolocalisation indoor/outdoor
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45d54a70-cb99-4b03-838e-a070ad36cd32-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Scadenza: Integration und Inbetriebnahme der Produkte SAP SuccessFa
+ ctors Employee Central (EC)\, SAP SuccessFactors Employee Central Payroll 
+ (ECP) und SAP Analytics Cloud (SAC)
+DESCRIPTION:Ente pubblico: Service de l'informatique et des télécommunica
+ tions (SITel)\nScadenza: 20.11.2026\, 12:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/45d54a70-cb99-4b03-838e-a070ad36cd32/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/45d54a70-cb99-4b03-83
+ 8e-a070ad36cd32
+URL:https://auftragsregister.ch/it/auftrag/45d54a70-cb99-4b03-838e-a070ad36
+ cd32/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Integration und Inbetriebnahme der Produkte SAP Succe
+ ssFactors Employee Central (EC)\, SAP SuccessFactors Employee Central Payr
+ oll (ECP) und SAP Analytics Cloud (SAC)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

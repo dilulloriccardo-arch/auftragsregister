@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a95f223-c2fd-4078-bcd7-1a2b182f3184-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20270427T100000Z
+SUMMARY:Submission deadline: Technologiepartnerschaft bildgebende Verfahren
+DESCRIPTION:Public buyer: Spitalzentrum Biel AG\nSubmission deadline: 27 A
+ pr 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 0a95f223-c2fd-4078-bcd7-1a2b182f3184/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/0a95f223-c2fd-4078-bcd7-1a2b182f3184
+URL:https://auftragsregister.ch/en/auftrag/0a95f223-c2fd-4078-bcd7-1a2b182f
+ 3184/
+LOCATION:Biel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Technologiepartnerschaft bildgebende Verfa
+ hren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

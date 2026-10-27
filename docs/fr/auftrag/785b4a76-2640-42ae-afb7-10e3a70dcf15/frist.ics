@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:785b4a76-2640-42ae-afb7-10e3a70dcf15-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Délai de remise : 22075\, 22668\, 22041 - Regensdorfer-\, Franke
+ ntaler-\, Geering- und Rütihofstrasse
+DESCRIPTION:Acheteur public : Stadt Zürich\, Tiefbauamt\, Werterhaltung\
+ nDélai de remise : 12.11.2026\, 16 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/785b4a76-2640-42ae-afb7-10e3a70dcf15/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/785b4a76-
+ 2640-42ae-afb7-10e3a70dcf15
+URL:https://auftragsregister.ch/fr/auftrag/785b4a76-2640-42ae-afb7-10e3a70d
+ cf15/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 22075\, 22668\, 22041 - Regensdorfer-\, Fr
+ ankentaler-\, Geering- und Rütihofstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

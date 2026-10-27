@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eaa34ec0-f9b6-4ea2-9100-dcfa585f37bd-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Délai de remise : BHV : représentation du maître d'ouvrage\, a
+ ssistance au maître d'ouvrage
+DESCRIPTION:Acheteur public : DIB - Elektrizitätswerk der Stadt Zürich 
+ (ewz)\nDélai de remise : 12.11.2026\, 12 h 00\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/eaa34ec0-f9b6-4ea2-9100-dcfa585f37
+ bd/\nPublication officielle : https://www.simap.ch/fr/project-detail/eaa
+ 34ec0-f9b6-4ea2-9100-dcfa585f37bd
+URL:https://auftragsregister.ch/fr/auftrag/eaa34ec0-f9b6-4ea2-9100-dcfa585f
+ 37bd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BHV : représentation du maître d'ouvrage
+ \, assistance au maître d'ouvrage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

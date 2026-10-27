@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f7d9b8ca-3c74-43bd-a816-20c0461ee9d7-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261211T225500Z
+SUMMARY:Submission deadline: Tanklöschfahrzeug (TLF) für die Feuerwehr Sc
+ hönenwerd
+DESCRIPTION:Public buyer: Feuerwehr Schönenwerd\nSubmission deadline: 11 
+ Dec 2026\, 23:55\nIn the register: https://auftragsregister.ch/en/auftrag
+ /f7d9b8ca-3c74-43bd-a816-20c0461ee9d7/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/f7d9b8ca-3c74-43bd-a816-20c0461ee9d7
+URL:https://auftragsregister.ch/en/auftrag/f7d9b8ca-3c74-43bd-a816-20c0461e
+ e9d7/
+LOCATION:Schönenwerd
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tanklöschfahrzeug (TLF) für die Feuerweh
+ r Schönenwerd
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

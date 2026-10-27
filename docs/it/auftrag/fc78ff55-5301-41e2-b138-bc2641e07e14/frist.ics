@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fc78ff55-5301-41e2-b138-bc2641e07e14-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T150000Z
+SUMMARY:Scadenza: GE VII Wartung + Unterhalt FB2 Beleuchtung
+DESCRIPTION:Ente pubblico: Tiefbauamt\, Abt. Gebietseinheit VII\nScadenza: 
+ 07.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/f
+ c78ff55-5301-41e2-b138-bc2641e07e14/\nPubblicazione ufficiale: https://www
+ .simap.ch/it/project-detail/fc78ff55-5301-41e2-b138-bc2641e07e14
+URL:https://auftragsregister.ch/it/auftrag/fc78ff55-5301-41e2-b138-bc2641e0
+ 7e14/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: GE VII Wartung + Unterhalt FB2 Beleuchtung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

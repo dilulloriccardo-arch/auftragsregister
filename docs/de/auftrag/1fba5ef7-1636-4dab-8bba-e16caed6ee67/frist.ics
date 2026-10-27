@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1fba5ef7-1636-4dab-8bba-e16caed6ee67-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261125T100000Z
+SUMMARY:Eingabefrist: Rénovation complète des trois tours de la Cité-Jon
+ ction (M374TI) mandat d'ingénieur-e sanitaire
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 25.11.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/1fba5ef7-1636-4dab-8bba-e16caed6ee67/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/1fba5ef7-1636-4dab-8bba-e16caed6
+ ee67
+URL:https://auftragsregister.ch/de/auftrag/1fba5ef7-1636-4dab-8bba-e16caed6
+ ee67/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rénovation complète des trois tours de la Cité
+ -Jonction (M374TI) mandat d'ingénieur-e sanitaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

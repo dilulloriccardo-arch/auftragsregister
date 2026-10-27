@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4e8fff2-a78e-47a2-95fa-60490dd725a5-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : F6\, hall d'expédition\, contrat de gestion d
+ 'une installation photovoltaïque
+DESCRIPTION:Acheteur public : Flughafen Zürich AG - Zentraler Einkauf\nD
+ élai de remise : 30.11.2026\, 12 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/e4e8fff2-a78e-47a2-95fa-60490dd725a5/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/e4e8fff2-a7
+ 8e-47a2-95fa-60490dd725a5
+URL:https://auftragsregister.ch/fr/auftrag/e4e8fff2-a78e-47a2-95fa-60490dd7
+ 25a5/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : F6\, hall d'expédition\, contrat de gesti
+ on d'une installation photovoltaïque
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

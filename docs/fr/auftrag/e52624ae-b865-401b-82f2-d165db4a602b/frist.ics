@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e52624ae-b865-401b-82f2-d165db4a602b-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T140000Z
+SUMMARY:Délai de remise : Acquisition d’appareils de charge d’accumu
+ lateurs multifonctionnels (APCA multi)
+DESCRIPTION:Acheteur public : Bundesamt für Rüstung armasuisse\nDélai 
+ de remise : 24.11.2026\, 15 h 00\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/e52624ae-b865-401b-82f2-d165db4a602b/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/e52624ae-b865-401
+ b-82f2-d165db4a602b
+URL:https://auftragsregister.ch/fr/auftrag/e52624ae-b865-401b-82f2-d165db4a
+ 602b/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition d’appareils de charge d’ac
+ cumulateurs multifonctionnels (APCA multi)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

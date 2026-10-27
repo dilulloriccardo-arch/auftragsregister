@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df9e0152-3b03-4f9e-af3f-4992b8ab5191-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Délai de remise : 723.20 Ladirerstrasse Grüneck Baumeisterarbei
+ ten
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 05.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/df9e0152-3b03-4f9e-af3f-4992b8ab5191/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/df9e0152-3b03-4f9e-af3f-4992b
+ 8ab5191
+URL:https://auftragsregister.ch/fr/auftrag/df9e0152-3b03-4f9e-af3f-4992b8ab
+ 5191/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 723.20 Ladirerstrasse Grüneck Baumeistera
+ rbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

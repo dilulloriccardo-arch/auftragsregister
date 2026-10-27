@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32a07903-329a-48fb-8434-e78b1a24e843-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Scadenza: MP-220041\, N15-08/10 Instandsetzung BSA\, Los 31 TU Besc
+ hichtungs- und Malerarbeiten
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Filiale Winterth
+ ur\nScadenza: 24.11.2026\, 23:59\nNel registro: https://auftragsregister.c
+ h/it/auftrag/32a07903-329a-48fb-8434-e78b1a24e843/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/32a07903-329a-48fb-8434-e78b1a24
+ e843
+URL:https://auftragsregister.ch/it/auftrag/32a07903-329a-48fb-8434-e78b1a24
+ e843/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-220041\, N15-08/10 Instandsetzung BSA\, Los 31 TU 
+ Beschichtungs- und Malerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

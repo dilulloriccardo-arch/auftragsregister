@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:840cbeda-bd83-409d-8924-1439977a871f-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261103T100000Z
+SUMMARY:Délai de remise : Seeuferanlagen Rüschlikon - Pflegearbeiten
+DESCRIPTION:Acheteur public : Zwischenraum Landschaftsarchitektur GmbH\nD
+ élai de remise : 03.11.2026\, 11 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/840cbeda-bd83-409d-8924-1439977a871f/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/840cbeda-bd
+ 83-409d-8924-1439977a871f
+URL:https://auftragsregister.ch/fr/auftrag/840cbeda-bd83-409d-8924-1439977a
+ 871f/
+LOCATION:Rüschlikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Seeuferanlagen Rüschlikon - Pflegearbeite
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

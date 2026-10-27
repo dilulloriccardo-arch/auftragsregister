@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f9b4dc2-7715-44ba-8534-fad100bf0a26-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261113T225900Z
+SUMMARY:Délai de remise : Deutsch Français Projekttitel Titre du projet
+  MP-210057\, N03/76\, N13/32 Instandsetzung UEF\, Flums\, Mels\, Au\, N 13
+  32 Bau MP-210057\, N03/76\, N13/32\, Remise en état du pont route/UEF\, 
+ Flums\, Mels Au\, N 13 32 Construction
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA - Filiale Win
+ terthur\nDélai de remise : 13.11.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/5f9b4dc2-7715-44ba-8534-fad100
+ bf0a26/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /5f9b4dc2-7715-44ba-8534-fad100bf0a26
+URL:https://auftragsregister.ch/fr/auftrag/5f9b4dc2-7715-44ba-8534-fad100bf
+ 0a26/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Deutsch Français Projekttitel Titre du pr
+ ojet MP-210057\, N03/76\, N13/32 Instandsetzung UEF\, Flums\, Mels\, Au\, 
+ N 13 32 Bau MP-210057\, N03/76\, N13/32\, Remise en état du pont route/UE
+ F\, Flums\, Mels Au\, N 13 32 Construction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

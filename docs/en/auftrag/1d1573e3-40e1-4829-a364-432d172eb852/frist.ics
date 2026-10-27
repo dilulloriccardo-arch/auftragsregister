@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1d1573e3-40e1-4829-a364-432d172eb852-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Submission deadline: 789 NB School Building & Triple Kindergarten M
+ alerva Sargans - TO2 School Building - BKP 221.3 Stick Curtain Wall
+DESCRIPTION:Public buyer: Politische Gemeinde Sargans\nSubmission deadline:
+  6 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/1d1573e3-40e1-4829-a364-432d172eb852/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/1d1573e3-40e1-4829-a364-432d172eb852
+URL:https://auftragsregister.ch/en/auftrag/1d1573e3-40e1-4829-a364-432d172e
+ b852/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 789 NB School Building & Triple Kindergart
+ en Malerva Sargans - TO2 School Building - BKP 221.3 Stick Curtain Wall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

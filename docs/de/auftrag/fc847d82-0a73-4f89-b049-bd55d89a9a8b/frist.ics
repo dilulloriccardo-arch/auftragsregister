@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fc847d82-0a73-4f89-b049-bd55d89a9a8b-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Eingabefrist: Peist - Langwies\, km 17.400\, Schwergewichtsmauer Pa
+ lätsch
+DESCRIPTION:Auftraggeber: Rhätische Bahn AG\nEingabefrist: 13.11.2026\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/fc847d82-0a7
+ 3-4f89-b049-bd55d89a9a8b/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/fc847d82-0a73-4f89-b049-bd55d89a9a8b
+URL:https://auftragsregister.ch/de/auftrag/fc847d82-0a73-4f89-b049-bd55d89a
+ 9a8b/
+LOCATION:Arosa
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Peist - Langwies\, km 17.400\, Schwergewichtsmaue
+ r Palätsch
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

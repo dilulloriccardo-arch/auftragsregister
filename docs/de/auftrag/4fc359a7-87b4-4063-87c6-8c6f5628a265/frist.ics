@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4fc359a7-87b4-4063-87c6-8c6f5628a265-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261103T160000Z
+SUMMARY:Eingabefrist: Musik-Akademie Basel – Campus 2040\, Bereich A (Hau
+ s 2\, 4 und 7) - BKP 211 Baumeisterarbeiten
+DESCRIPTION:Auftraggeber: Musik-Akademie Basel (ARGE GP MAB Campus 2040)\nE
+ ingabefrist: 03.11.2026\, 17.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/4fc359a7-87b4-4063-87c6-8c6f5628a265/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/4fc359a7-87b4-4063-87c6-8c6f5628
+ a265
+URL:https://auftragsregister.ch/de/auftrag/4fc359a7-87b4-4063-87c6-8c6f5628
+ a265/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Musik-Akademie Basel – Campus 2040\, Bereich A 
+ (Haus 2\, 4 und 7) - BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

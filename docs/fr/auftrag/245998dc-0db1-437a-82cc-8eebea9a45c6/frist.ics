@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:245998dc-0db1-437a-82cc-8eebea9a45c6-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Délai de remise : Commune de Hünenberg - Assurance indemnités 
+ journalières en cas de maladie à compter du 1er janvier 2027
+DESCRIPTION:Acheteur public : Einwohnergemeinde Hünenberg\nDélai de rem
+ ise : 16.11.2026\, 10 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/245998dc-0db1-437a-82cc-8eebea9a45c6/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/245998dc-0db1-437a-82cc
+ -8eebea9a45c6
+URL:https://auftragsregister.ch/fr/auftrag/245998dc-0db1-437a-82cc-8eebea9a
+ 45c6/
+LOCATION:Hünenberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Commune de Hünenberg - Assurance indemnit
+ és journalières en cas de maladie à compter du 1er janvier 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

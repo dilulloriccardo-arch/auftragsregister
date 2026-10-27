@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a349ea01-f77a-4f90-8216-f087233ba3a8-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261030T110000Z
+SUMMARY:Scadenza: Aggiudicazione del contratto di Assicurazione collettiva 
+ d'indennità giornaliera in caso di malattia
+DESCRIPTION:Ente pubblico: Fondazione Opera Charitas\nScadenza: 30.10.2026\
+ , 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/a349ea01-f77
+ a-4f90-8216-f087233ba3a8/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/a349ea01-f77a-4f90-8216-f087233ba3a8
+URL:https://auftragsregister.ch/it/auftrag/a349ea01-f77a-4f90-8216-f087233b
+ a3a8/
+LOCATION:Sonvico
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Aggiudicazione del contratto di Assicurazione collett
+ iva d'indennità giornaliera in caso di malattia
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

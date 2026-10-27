@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b0cf9d89-d9bb-404f-89e9-412d0298fea8-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Submission deadline: Carolina - Zernez\, Raschitschtunnel\, km 116.
+ 58 und Röventunnel\, km 117.57\; Erneuerung - Projektverfasser
+DESCRIPTION:Public buyer: Rhätische Bahn AG\nSubmission deadline: 4 Dec 
+ 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/b0cf
+ 9d89-d9bb-404f-89e9-412d0298fea8/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/b0cf9d89-d9bb-404f-89e9-412d0298fea8
+URL:https://auftragsregister.ch/en/auftrag/b0cf9d89-d9bb-404f-89e9-412d0298
+ fea8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Carolina - Zernez\, Raschitschtunnel\, km 
+ 116.58 und Röventunnel\, km 117.57\; Erneuerung - Projektverfasser
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

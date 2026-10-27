@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2071a973-eb5a-40b9-97f0-1832df7d4563-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : BVD - Primarschulhaus Christoph Merian\, Sanie
+ rung und Erweiterung\, BKP 276 Innere Abschlüsse Vorhänge
+DESCRIPTION:Acheteur public : Bau- und Verkehrsdepartement des Kantons Ba
+ sel-Stadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\n
+ Délai de remise : 30.11.2026\, 12 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/2071a973-eb5a-40b9-97f0-1832df7d4563/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/2071a973-e
+ b5a-40b9-97f0-1832df7d4563
+URL:https://auftragsregister.ch/fr/auftrag/2071a973-eb5a-40b9-97f0-1832df7d
+ 4563/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BVD - Primarschulhaus Christoph Merian\, S
+ anierung und Erweiterung\, BKP 276 Innere Abschlüsse Vorhänge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

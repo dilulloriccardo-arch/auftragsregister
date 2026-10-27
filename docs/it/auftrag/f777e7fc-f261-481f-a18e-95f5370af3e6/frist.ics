@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f777e7fc-f261-481f-a18e-95f5370af3e6-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Scadenza: USZ Campus MITTE 1|2 / BKP 272.16 Türen Paket 6 MIT1 Kor
+ ridortüren (OV)
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 15.12.202
+ 6\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/f777e7fc-f
+ 261-481f-a18e-95f5370af3e6/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/f777e7fc-f261-481f-a18e-95f5370af3e6
+URL:https://auftragsregister.ch/it/auftrag/f777e7fc-f261-481f-a18e-95f5370a
+ f3e6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: USZ Campus MITTE 1|2 / BKP 272.16 Türen Paket 6 MIT1
+  Korridortüren (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

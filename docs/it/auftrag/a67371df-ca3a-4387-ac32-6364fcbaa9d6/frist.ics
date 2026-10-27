@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a67371df-ca3a-4387-ac32-6364fcbaa9d6-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Scadenza: AIS Integrator Bundle 2026-2
+DESCRIPTION:Ente pubblico: Swissgrid AG - Asset & Maintenance\nScadenza: 10
+ .12.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/a67
+ 371df-ca3a-4387-ac32-6364fcbaa9d6/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/a67371df-ca3a-4387-ac32-6364fcbaa9d6
+URL:https://auftragsregister.ch/it/auftrag/a67371df-ca3a-4387-ac32-6364fcba
+ a9d6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AIS Integrator Bundle 2026-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

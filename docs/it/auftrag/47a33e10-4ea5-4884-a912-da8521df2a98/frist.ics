@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:47a33e10-4ea5-4884-a912-da8521df2a98-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261208T140000Z
+SUMMARY:Scadenza: HUG - Mat4 - CFC 221.1 Fenêtres en bois-métal
+DESCRIPTION:Ente pubblico: Centrale d'achats et d'ingénierie biomédicale 
+ Vaud-Genève (CAIB)\nScadenza: 08.12.2026\, 15:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/47a33e10-4ea5-4884-a912-da8521df2a98/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/47a33e10-4ea5-4
+ 884-a912-da8521df2a98
+URL:https://auftragsregister.ch/it/auftrag/47a33e10-4ea5-4884-a912-da8521df
+ 2a98/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: HUG - Mat4 - CFC 221.1 Fenêtres en bois-métal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:783daff1-b9f1-49d2-957f-de7ee302935f-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Submission deadline: Steffisburg/Thun\; Delivery of VRS-T/BLS press
+ ure pipes\, fittings\, and valves in DN400
+DESCRIPTION:Public buyer: Waret AG\nSubmission deadline: 2 Nov 2026\, 23:
+ 59\nIn the register: https://auftragsregister.ch/en/auftrag/783daff1-b9f1-
+ 49d2-957f-de7ee302935f/\nOfficial publication: https://www.simap.ch/en/pro
+ ject-detail/783daff1-b9f1-49d2-957f-de7ee302935f
+URL:https://auftragsregister.ch/en/auftrag/783daff1-b9f1-49d2-957f-de7ee302
+ 935f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Steffisburg/Thun\; Delivery of VRS-T/BLS p
+ ressure pipes\, fittings\, and valves in DN400
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

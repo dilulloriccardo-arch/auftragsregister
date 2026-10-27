@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da882530-be62-4bbc-b984-d56684a1ea67-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Eingabefrist: Umbau ARA Oberseetal zu Pumpwerk - Baumeisterarbeiten
+  u. Tiefbau
+DESCRIPTION:Auftraggeber: Gemeindeverband ARA Oberseetal\nEingabefrist: 02.
+ 12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ da882530-be62-4bbc-b984-d56684a1ea67/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/da882530-be62-4bbc-b984-d56684a1ea67
+URL:https://auftragsregister.ch/de/auftrag/da882530-be62-4bbc-b984-d56684a1
+ ea67/
+LOCATION:Inwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Umbau ARA Oberseetal zu Pumpwerk - Baumeisterarbe
+ iten u. Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

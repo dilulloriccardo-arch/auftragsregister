@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:710a4695-bd76-4b1f-af03-6a127f657ffc-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261106T160000Z
+SUMMARY:Eingabefrist: Fassade Sanierung\, Ueberlandstr. 194 / 196\, 8051 Z
+ ürich
+DESCRIPTION:Auftraggeber: Liegenschaften Stadt Zürich (LSZ)\nEingabefrist:
+  06.11.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/710a4695-bd76-4b1f-af03-6a127f657ffc/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/710a4695-bd76-4b1f-af03-6a127f657ffc
+URL:https://auftragsregister.ch/de/auftrag/710a4695-bd76-4b1f-af03-6a127f65
+ 7ffc/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fassade Sanierung\, Ueberlandstr. 194 / 196\, 805
+ 1 Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

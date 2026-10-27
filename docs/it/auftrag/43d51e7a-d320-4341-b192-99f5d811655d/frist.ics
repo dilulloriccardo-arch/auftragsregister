@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:43d51e7a-d320-4341-b192-99f5d811655d-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T130000Z
+SUMMARY:Scadenza: 57.103 Ampliamento piastra tecnica e logistica - Opere da
+  impresario costruttore
+DESCRIPTION:Ente pubblico: Ente Ospedaliero Cantonale - Area Infrastrutture
+  e Operations\nScadenza: 01.12.2026\, 14:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/43d51e7a-d320-4341-b192-99f5d811655d/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/43d51e7a-d320-4341-b1
+ 92-99f5d811655d
+URL:https://auftragsregister.ch/it/auftrag/43d51e7a-d320-4341-b192-99f5d811
+ 655d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 57.103 Ampliamento piastra tecnica e logistica - Oper
+ e da impresario costruttore
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

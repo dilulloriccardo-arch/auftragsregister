@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d93b552e-f948-42a0-a80c-99650fc1d195-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261110T224500Z
+SUMMARY:Submission deadline: EBP-643_Fernwärme-Armaturen
+DESCRIPTION:Public buyer: Energie Wasser Bern\nSubmission deadline: 10 Nov
+  2026\, 23:45\nIn the register: https://auftragsregister.ch/en/auftrag/d9
+ 3b552e-f948-42a0-a80c-99650fc1d195/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/d93b552e-f948-42a0-a80c-99650fc1d195
+URL:https://auftragsregister.ch/en/auftrag/d93b552e-f948-42a0-a80c-99650fc1
+ d195/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EBP-643_Fernwärme-Armaturen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

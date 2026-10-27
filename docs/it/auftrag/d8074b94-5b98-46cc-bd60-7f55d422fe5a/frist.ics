@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8074b94-5b98-46cc-bd60-7f55d422fe5a-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Scadenza: Rénovation école du Bosson - Faux-plafonds
+DESCRIPTION:Ente pubblico: Ville d'Onex (Bureau d'architectes Burckhardt Ar
+ chitecture SA)\nScadenza: 30.11.2026\, 12:00\nNel registro: https://auftra
+ gsregister.ch/it/auftrag/d8074b94-5b98-46cc-bd60-7f55d422fe5a/\nPubblicazi
+ one ufficiale: https://www.simap.ch/it/project-detail/d8074b94-5b98-46cc-b
+ d60-7f55d422fe5a
+URL:https://auftragsregister.ch/it/auftrag/d8074b94-5b98-46cc-bd60-7f55d422
+ fe5a/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rénovation école du Bosson - Faux-plafonds
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

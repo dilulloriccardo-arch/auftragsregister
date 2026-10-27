@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0abd40c3-6d46-408d-89d8-b6cbda9c15f4-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Délai de remise : ETH Zurich\, EKZ Infiltration d'eau\, Dilafuge
+ n\, BKP 225 Joints spéciaux
+DESCRIPTION:Acheteur public : ETH Zürich - Abt. Procurement Services VPI
+ N\nDélai de remise : 10.12.2026\, 23 h 59\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/0abd40c3-6d46-408d-89d8-b6cbda9c15f4/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/0abd40c
+ 3-6d46-408d-89d8-b6cbda9c15f4
+URL:https://auftragsregister.ch/fr/auftrag/0abd40c3-6d46-408d-89d8-b6cbda9c
+ 15f4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ETH Zurich\, EKZ Infiltration d'eau\, Dila
+ fugen\, BKP 225 Joints spéciaux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

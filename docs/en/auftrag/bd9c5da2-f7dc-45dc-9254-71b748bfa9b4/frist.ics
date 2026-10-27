@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd9c5da2-f7dc-45dc-9254-71b748bfa9b4-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Submission deadline: Reseller Public Cloud
+DESCRIPTION:Public buyer: Swissgrid AG\nSubmission deadline: 11 Nov 2026\
+ , 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/bd9c5da2-
+ f7dc-45dc-9254-71b748bfa9b4/\nOfficial publication: https://www.simap.ch/e
+ n/project-detail/bd9c5da2-f7dc-45dc-9254-71b748bfa9b4
+URL:https://auftragsregister.ch/en/auftrag/bd9c5da2-f7dc-45dc-9254-71b748bf
+ a9b4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Reseller Public Cloud
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

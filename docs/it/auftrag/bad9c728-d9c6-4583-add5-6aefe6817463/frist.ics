@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bad9c728-d9c6-4583-add5-6aefe6817463-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:1
+DTSTART:20261028T225900Z
+SUMMARY:Scadenza: (b26021) Integrale Betreiberleistungen Ausbildungszentrum
+  Kaserne Bernrain
+DESCRIPTION:Ente pubblico: Bundesamt für Bauten und Logistik BBL\nScadenza
+ : 28.10.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag
+ /bad9c728-d9c6-4583-add5-6aefe6817463/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/bad9c728-d9c6-4583-add5-6aefe6817463
+URL:https://auftragsregister.ch/it/auftrag/bad9c728-d9c6-4583-add5-6aefe681
+ 7463/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (b26021) Integrale Betreiberleistungen Ausbildungszen
+ trum Kaserne Bernrain
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

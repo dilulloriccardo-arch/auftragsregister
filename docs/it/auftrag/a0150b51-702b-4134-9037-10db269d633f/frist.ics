@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0150b51-702b-4134-9037-10db269d633f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Scadenza: Zumikon\, A52\, ÜF Tobelmülistrasse\, Instandsetzung\, 
+ Baumeisterarbeiten Kd/CS
+DESCRIPTION:Ente pubblico: Baudirektion Kanton Zürich\, Tiefbauamt\, Abt. 
+ Projektieren und Realisieren\nScadenza: 16.11.2026\, 10:00\nNel registro: 
+ https://auftragsregister.ch/it/auftrag/a0150b51-702b-4134-9037-10db269d633
+ f/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/a0150b
+ 51-702b-4134-9037-10db269d633f
+URL:https://auftragsregister.ch/it/auftrag/a0150b51-702b-4134-9037-10db269d
+ 633f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Zumikon\, A52\, ÜF Tobelmülistrasse\, Instandsetzun
+ g\, Baumeisterarbeiten Kd/CS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76067e5a-e329-4206-ab9e-961c7c9ad34e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T100000Z
+SUMMARY:Eingabefrist: Prestations de revêtements de sols - CFC 281
+DESCRIPTION:Auftraggeber: Hospice général\nEingabefrist: 01.12.2026\, 11.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/76067e5a-e329
+ -4206-ab9e-961c7c9ad34e/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/76067e5a-e329-4206-ab9e-961c7c9ad34e
+URL:https://auftragsregister.ch/de/auftrag/76067e5a-e329-4206-ab9e-961c7c9a
+ d34e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Prestations de revêtements de sols - CFC 281
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

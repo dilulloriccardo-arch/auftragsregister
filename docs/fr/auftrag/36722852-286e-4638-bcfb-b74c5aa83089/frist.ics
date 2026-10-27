@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:36722852-286e-4638-bcfb-b74c5aa83089-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20261116T100000Z
+SUMMARY:Délai de remise : Rénovation/Transformation du CID de Malley / 
+ Portes rapides et Rideaux coupe-feu
+DESCRIPTION:Acheteur public : Ville de Lausanne - Service de la propreté
+  urbaine (Architram)\nDélai de remise : 16.11.2026\, 11 h 00\nDans 
+ le registre : https://auftragsregister.ch/fr/auftrag/36722852-286e-4638-
+ bcfb-b74c5aa83089/\nPublication officielle : https://www.simap.ch/fr/pro
+ ject-detail/36722852-286e-4638-bcfb-b74c5aa83089
+URL:https://auftragsregister.ch/fr/auftrag/36722852-286e-4638-bcfb-b74c5aa8
+ 3089/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation/Transformation du CID de Malle
+ y / Portes rapides et Rideaux coupe-feu
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

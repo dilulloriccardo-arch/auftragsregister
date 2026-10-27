@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95e086df-fdc5-46d3-b9d2-5e3bb75cf5d8-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Délai de remise : Beschaffung eines cryo-konfokalen Fluoreszenzm
+ ikroskops
+DESCRIPTION:Acheteur public : Institut für Biochemie und Molekulare Medi
+ zin\nDélai de remise : 02.11.2026\, 23 h 59\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/95e086df-fdc5-46d3-b9d2-5e3bb75cf5d8
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/95e08
+ 6df-fdc5-46d3-b9d2-5e3bb75cf5d8
+URL:https://auftragsregister.ch/fr/auftrag/95e086df-fdc5-46d3-b9d2-5e3bb75c
+ f5d8/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Beschaffung eines cryo-konfokalen Fluoresz
+ enzmikroskops
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

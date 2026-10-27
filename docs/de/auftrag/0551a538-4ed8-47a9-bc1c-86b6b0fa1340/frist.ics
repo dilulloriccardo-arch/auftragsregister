@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0551a538-4ed8-47a9-bc1c-86b6b0fa1340-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:1
+DTSTART:20261204T110000Z
+SUMMARY:Eingabefrist: Acquisition de bus hybrides diesel et services associ
+ és
+DESCRIPTION:Auftraggeber: tpg\nEingabefrist: 04.12.2026\, 12.00 Uhr\nIm Re
+ gister: https://auftragsregister.ch/de/auftrag/0551a538-4ed8-47a9-bc1c-86b
+ 6b0fa1340/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/0
+ 551a538-4ed8-47a9-bc1c-86b6b0fa1340
+URL:https://auftragsregister.ch/de/auftrag/0551a538-4ed8-47a9-bc1c-86b6b0fa
+ 1340/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Acquisition de bus hybrides diesel et services as
+ sociés
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

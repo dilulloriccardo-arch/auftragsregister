@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02e6cd74-1724-4024-b5ec-a0a8305c0a8f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T150000Z
+SUMMARY:Délai de remise : Mobilier EPFL 2027-2031
+DESCRIPTION:Acheteur public : EPFL - VPF Achats\nDélai de remise : 13.
+ 11.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/02e6cd74-1724-4024-b5ec-a0a8305c0a8f/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/02e6cd74-1724-4024-b5ec-a0a8305c0a
+ 8f
+URL:https://auftragsregister.ch/fr/auftrag/02e6cd74-1724-4024-b5ec-a0a8305c
+ 0a8f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mobilier EPFL 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

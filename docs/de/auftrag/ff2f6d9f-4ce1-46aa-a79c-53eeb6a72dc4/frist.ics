@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff2f6d9f-4ce1-46aa-a79c-53eeb6a72dc4-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261104T070000Z
+SUMMARY:Eingabefrist: 082_222/224 Spengler- und Flachdacharbeiten\, Gebäud
+ ehüllensanierung G-G-Strasse 22 - 30
+DESCRIPTION:Auftraggeber: Baudepartement Stadt Zug\, Abteilung Hochbau\nEin
+ gabefrist: 04.11.2026\, 8.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/ff2f6d9f-4ce1-46aa-a79c-53eeb6a72dc4/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/ff2f6d9f-4ce1-46aa-a79c-53eeb6a72dc
+ 4
+URL:https://auftragsregister.ch/de/auftrag/ff2f6d9f-4ce1-46aa-a79c-53eeb6a7
+ 2dc4/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 082_222/224 Spengler- und Flachdacharbeiten\, Geb
+ äudehüllensanierung G-G-Strasse 22 - 30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

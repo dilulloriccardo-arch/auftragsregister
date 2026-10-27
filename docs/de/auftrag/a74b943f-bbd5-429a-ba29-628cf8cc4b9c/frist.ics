@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a74b943f-bbd5-429a-ba29-628cf8cc4b9c-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Eingabefrist: FIPOI - CICG 2028 - Mandat de prestations d’ingéni
+ eur sanitaire - CFC295
+DESCRIPTION:Auftraggeber: FIPOI - Service immobilier\nEingabefrist: 16.11.2
+ 026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a74b
+ 943f-bbd5-429a-ba29-628cf8cc4b9c/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/a74b943f-bbd5-429a-ba29-628cf8cc4b9c
+URL:https://auftragsregister.ch/de/auftrag/a74b943f-bbd5-429a-ba29-628cf8cc
+ 4b9c/
+LOCATION:Geneve
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: FIPOI - CICG 2028 - Mandat de prestations d’ing
+ énieur sanitaire - CFC295
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

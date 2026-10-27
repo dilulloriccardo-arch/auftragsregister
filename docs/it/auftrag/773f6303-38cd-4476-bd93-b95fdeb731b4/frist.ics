@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:773f6303-38cd-4476-bd93-b95fdeb731b4-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Scadenza: Schüler- und Schülerinnentransport ZSHKK
+DESCRIPTION:Ente pubblico: Zentrum für Sozial- und Heilpädagogik Landorf 
+ Köniz-Schlössli Kehrsatz\nScadenza: 09.11.2026\, 23:59\nNel registro: ht
+ tps://auftragsregister.ch/it/auftrag/773f6303-38cd-4476-bd93-b95fdeb731b4/
+ \nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/773f6303
+ -38cd-4476-bd93-b95fdeb731b4
+URL:https://auftragsregister.ch/it/auftrag/773f6303-38cd-4476-bd93-b95fdeb7
+ 31b4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schüler- und Schülerinnentransport ZSHKK
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

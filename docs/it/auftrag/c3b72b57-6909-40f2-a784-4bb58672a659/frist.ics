@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c3b72b57-6909-40f2-a784-4bb58672a659-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261111T150000Z
+SUMMARY:Scadenza: MP-210026 NEB N13 Viabilità Bellinzona Sud-Riazzino\, Lo
+ tto 401\, opere da impresario costruttore\, comparto ovest
+DESCRIPTION:Ente pubblico: Ufficio federale delle strade USTRA\, divisione 
+ infrastruttura stradale Est\nScadenza: 11.11.2026\, 16:00\nNel registro: h
+ ttps://auftragsregister.ch/it/auftrag/c3b72b57-6909-40f2-a784-4bb58672a659
+ /\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/c3b72b5
+ 7-6909-40f2-a784-4bb58672a659
+URL:https://auftragsregister.ch/it/auftrag/c3b72b57-6909-40f2-a784-4bb58672
+ a659/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-210026 NEB N13 Viabilità Bellinzona Sud-Riazzino\
+ , Lotto 401\, opere da impresario costruttore\, comparto ovest
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

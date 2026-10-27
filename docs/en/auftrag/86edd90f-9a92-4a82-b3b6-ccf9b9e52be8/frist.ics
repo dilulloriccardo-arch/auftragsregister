@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86edd90f-9a92-4a82-b3b6-ccf9b9e52be8-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Submission deadline: Schulhaus Langwiesen Erweiterung und Sanierung
+ \; BKP 201 Aushub
+DESCRIPTION:Public buyer: Amt für Städtebau\nSubmission deadline: 4 Nov
+  2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/86
+ edd90f-9a92-4a82-b3b6-ccf9b9e52be8/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/86edd90f-9a92-4a82-b3b6-ccf9b9e52be8
+URL:https://auftragsregister.ch/en/auftrag/86edd90f-9a92-4a82-b3b6-ccf9b9e5
+ 2be8/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schulhaus Langwiesen Erweiterung und Sanie
+ rung\; BKP 201 Aushub
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

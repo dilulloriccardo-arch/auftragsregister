@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0fcb7ac-26f0-4af1-bb0e-259901c283e6-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Scadenza: MP-070078 N02 EP18 Balerna\, Lotto 202\, lavori prelimina
+ ri da impresario costruttore
+DESCRIPTION:Ente pubblico: Ufficio federale delle strade USTRA\, divisione 
+ infrastruttura stradale Est\nScadenza: 09.12.2026\, 16:00\nNel registro: h
+ ttps://auftragsregister.ch/it/auftrag/d0fcb7ac-26f0-4af1-bb0e-259901c283e6
+ /\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/d0fcb7a
+ c-26f0-4af1-bb0e-259901c283e6
+URL:https://auftragsregister.ch/it/auftrag/d0fcb7ac-26f0-4af1-bb0e-259901c2
+ 83e6/
+LOCATION:Balerna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-070078 N02 EP18 Balerna\, Lotto 202\, lavori preli
+ minari da impresario costruttore
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

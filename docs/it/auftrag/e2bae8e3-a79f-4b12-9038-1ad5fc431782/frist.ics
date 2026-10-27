@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2bae8e3-a79f-4b12-9038-1ad5fc431782-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261117T140000Z
+SUMMARY:Scadenza: OF-26-08 Rollschlitten RV-C komplett
+DESCRIPTION:Ente pubblico: SBB CFF FFS Infra-Bahntechnik\nScadenza: 17.11.2
+ 026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/e2bae8e3
+ -a79f-4b12-9038-1ad5fc431782/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/e2bae8e3-a79f-4b12-9038-1ad5fc431782
+URL:https://auftragsregister.ch/it/auftrag/e2bae8e3-a79f-4b12-9038-1ad5fc43
+ 1782/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: OF-26-08 Rollschlitten RV-C komplett
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

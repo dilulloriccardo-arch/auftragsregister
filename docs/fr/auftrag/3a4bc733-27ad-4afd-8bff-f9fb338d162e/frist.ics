@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a4bc733-27ad-4afd-8bff-f9fb338d162e-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261102T153000Z
+SUMMARY:Délai de remise : Fourniture et pose d’un pavillon scolaire pr
+ ovisoire
+DESCRIPTION:Acheteur public : Centre Educatif et Pédagogique (CEP)\nDél
+ ai de remise : 02.11.2026\, 16 h 30\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/3a4bc733-27ad-4afd-8bff-f9fb338d162e/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/3a4bc733-27ad-
+ 4afd-8bff-f9fb338d162e
+URL:https://auftragsregister.ch/fr/auftrag/3a4bc733-27ad-4afd-8bff-f9fb338d
+ 162e/
+LOCATION:Estavayer-le-Lac
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture et pose d’un pavillon scolair
+ e provisoire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

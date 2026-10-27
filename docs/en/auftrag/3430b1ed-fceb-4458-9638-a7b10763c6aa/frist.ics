@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3430b1ed-fceb-4458-9638-a7b10763c6aa-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Submission deadline: EBP-593 AFW_Hallerstrasse_Baumeister
+DESCRIPTION:Public buyer: Energie Wasser Bern\nSubmission deadline: 2 Nov
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/34
+ 30b1ed-fceb-4458-9638-a7b10763c6aa/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/3430b1ed-fceb-4458-9638-a7b10763c6aa
+URL:https://auftragsregister.ch/en/auftrag/3430b1ed-fceb-4458-9638-a7b10763
+ c6aa/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EBP-593 AFW_Hallerstrasse_Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

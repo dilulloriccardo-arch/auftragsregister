@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76dd7c54-7973-48e7-ae87-2376675acb99-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:0
+DTSTART:20261102T130000Z
+SUMMARY:Submission deadline: Umfahrung Cham–Hünenberg (UCH)\, Bodenaufwe
+ rtung
+DESCRIPTION:Public buyer: Tiefbauamt Kanton Zug\nSubmission deadline: 2 No
+ v 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag/7
+ 6dd7c54-7973-48e7-ae87-2376675acb99/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/76dd7c54-7973-48e7-ae87-2376675acb99
+URL:https://auftragsregister.ch/en/auftrag/76dd7c54-7973-48e7-ae87-2376675a
+ cb99/
+LOCATION:Cham
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Umfahrung Cham–Hünenberg (UCH)\, Bodena
+ ufwertung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b969a1b2-ddc2-473b-9ccb-9b30a2321b87-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T090000Z
+SUMMARY:Eingabefrist: Fourniture d'équipements pour une infrastructure Wi-
+ Fi basée sur la technologie Cisco
+DESCRIPTION:Auftraggeber: Università della Svizzera italiana\nEingabefrist
+ : 23.11.2026\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/b969a1b2-ddc2-473b-9ccb-9b30a2321b87/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/b969a1b2-ddc2-473b-9ccb-9b30a2321b87
+URL:https://auftragsregister.ch/de/auftrag/b969a1b2-ddc2-473b-9ccb-9b30a232
+ 1b87/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fourniture d'équipements pour une infrastructure
+  Wi-Fi basée sur la technologie Cisco
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

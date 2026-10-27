@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:638d110d-39c7-4be3-9eb4-7d7c0dec207f-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:1
+DTSTART:20261030T225900Z
+SUMMARY:Eingabefrist: Führung der neuen Geschäftsstelle der Vereinigung S
+ chweizerischer Stadtgärtnereien und Gartenbauämter (VSSG)
+DESCRIPTION:Auftraggeber: Vereinigung Schweizerischer Stadtgärtnereien und
+  Gartenbauämter (VSSG)\nEingabefrist: 30.10.2026\, 23.59 Uhr\nIm Registe
+ r: https://auftragsregister.ch/de/auftrag/638d110d-39c7-4be3-9eb4-7d7c0dec
+ 207f/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/638d11
+ 0d-39c7-4be3-9eb4-7d7c0dec207f
+URL:https://auftragsregister.ch/de/auftrag/638d110d-39c7-4be3-9eb4-7d7c0dec
+ 207f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Führung der neuen Geschäftsstelle der Vereinigu
+ ng Schweizerischer Stadtgärtnereien und Gartenbauämter (VSSG)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

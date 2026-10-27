@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a7ce1b1-fb88-4bff-8cc6-fa8f4226f330-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Scadenza: Entrauchung Check-in 3
+DESCRIPTION:Ente pubblico: Flughafen Zürich AG - PMO\nScadenza: 14.12.2026
+ \, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/0a7ce1b1-fb
+ 88-4bff-8cc6-fa8f4226f330/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/0a7ce1b1-fb88-4bff-8cc6-fa8f4226f330
+URL:https://auftragsregister.ch/it/auftrag/0a7ce1b1-fb88-4bff-8cc6-fa8f4226
+ f330/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Entrauchung Check-in 3
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

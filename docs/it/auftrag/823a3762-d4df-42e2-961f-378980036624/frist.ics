@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:823a3762-d4df-42e2-961f-378980036624-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: Ausschreibung Malerarbeiten / Oberflächenunterhalt / Ins
+ tandstellung – KAT.001
+DESCRIPTION:Ente pubblico: ETHOS Immobilien GmbH\nScadenza: 09.11.2026\, 16
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/823a3762-d4df-42
+ e2-961f-378980036624/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/823a3762-d4df-42e2-961f-378980036624
+URL:https://auftragsregister.ch/it/auftrag/823a3762-d4df-42e2-961f-37898003
+ 6624/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung Malerarbeiten / Oberflächenunterhalt /
+  Instandstellung – KAT.001
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

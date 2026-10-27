@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c53ae316-7a0f-4203-997b-f54152e846de-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: PWA-B2\, B3 (Selektiv) Ausschreibung Elektro\, BKP 232 Ni
+ ederspannungsinstallationen
+DESCRIPTION:Ente pubblico: Flughafen Zürich AG - Terminal Development\nSca
+ denza: 16.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/au
+ ftrag/c53ae316-7a0f-4203-997b-f54152e846de/\nPubblicazione ufficiale: http
+ s://www.simap.ch/it/project-detail/c53ae316-7a0f-4203-997b-f54152e846de
+URL:https://auftragsregister.ch/it/auftrag/c53ae316-7a0f-4203-997b-f54152e8
+ 46de/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: PWA-B2\, B3 (Selektiv) Ausschreibung Elektro\, BKP 23
+ 2 Niederspannungsinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

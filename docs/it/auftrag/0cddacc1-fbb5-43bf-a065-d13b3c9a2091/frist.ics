@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0cddacc1-fbb5-43bf-a065-d13b3c9a2091-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261103T225900Z
+SUMMARY:Scadenza: Prestations d’agents de sécurité – Dispositifs mult
+ isites / UAAJ/sécurité auditions « Le Constellation »
+DESCRIPTION:Ente pubblico: Police Cantonale Valaisanne / Kantonspolizei Wal
+ lis\nScadenza: 03.11.2026\, 23:59\nNel registro: https://auftragsregister.
+ ch/it/auftrag/0cddacc1-fbb5-43bf-a065-d13b3c9a2091/\nPubblicazione ufficia
+ le: https://www.simap.ch/it/project-detail/0cddacc1-fbb5-43bf-a065-d13b3c9
+ a2091
+URL:https://auftragsregister.ch/it/auftrag/0cddacc1-fbb5-43bf-a065-d13b3c9a
+ 2091/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Prestations d’agents de sécurité – Dispositifs 
+ multisites / UAAJ/sécurité auditions « Le Constellation »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

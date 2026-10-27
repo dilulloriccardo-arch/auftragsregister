@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a81a1390-7135-4d2a-aa3a-94e14008f972-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261120T225500Z
+SUMMARY:Délai de remise : Entreprise de correction fluviale (ECF) de la 
+ Grande Eau - Traversée d'Aigle
+DESCRIPTION:Acheteur public : Direction générale de l'environnement - D
+ GE-EAU\nDélai de remise : 20.11.2026\, 23 h 55\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/a81a1390-7135-4d2a-aa3a-94e14008f
+ 972/\nPublication officielle : https://www.simap.ch/fr/project-detail/a8
+ 1a1390-7135-4d2a-aa3a-94e14008f972
+URL:https://auftragsregister.ch/fr/auftrag/a81a1390-7135-4d2a-aa3a-94e14008
+ f972/
+LOCATION:Aigle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Entreprise de correction fluviale (ECF) de
+  la Grande Eau - Traversée d'Aigle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

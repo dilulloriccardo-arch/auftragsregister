@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:22ff4a81-a11b-48a1-9d2d-1870ed673217-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261106T225500Z
+SUMMARY:Eingabefrist: Ökologische Aufwertung Untertorer Mühlbach\, Abschn
+ itt Tittwiesenstrasse - Giacomettiweg
+DESCRIPTION:Auftraggeber: Stadt Chur\, Tiefbaudienste\nEingabefrist: 06.11.
+ 2026\, 23.55 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/22f
+ f4a81-a11b-48a1-9d2d-1870ed673217/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/22ff4a81-a11b-48a1-9d2d-1870ed673217
+URL:https://auftragsregister.ch/de/auftrag/22ff4a81-a11b-48a1-9d2d-1870ed67
+ 3217/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ökologische Aufwertung Untertorer Mühlbach\, Ab
+ schnitt Tittwiesenstrasse - Giacomettiweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4ecd12ec-4cba-4844-9fbb-de7e8c2209b1-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261109T160000Z
+SUMMARY:Scadenza: BKP 273.0 Innentüren
+DESCRIPTION:Ente pubblico: Regionales Pflegezentrum Baden\nScadenza: 09.11.
+ 2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/4ecd12e
+ c-4cba-4844-9fbb-de7e8c2209b1/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/4ecd12ec-4cba-4844-9fbb-de7e8c2209b1
+URL:https://auftragsregister.ch/it/auftrag/4ecd12ec-4cba-4844-9fbb-de7e8c22
+ 09b1/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 273.0 Innentüren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

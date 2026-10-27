@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a74b943f-bbd5-429a-ba29-628cf8cc4b9c-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Scadenza: FIPOI - CICG 2028 - Mandat de prestations d’ingénieur 
+ sanitaire - CFC295
+DESCRIPTION:Ente pubblico: FIPOI - Service immobilier\nScadenza: 16.11.2026
+ \, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/a74b943f-bb
+ d5-429a-ba29-628cf8cc4b9c/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/a74b943f-bbd5-429a-ba29-628cf8cc4b9c
+URL:https://auftragsregister.ch/it/auftrag/a74b943f-bbd5-429a-ba29-628cf8cc
+ 4b9c/
+LOCATION:Geneve
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: FIPOI - CICG 2028 - Mandat de prestations d’ingéni
+ eur sanitaire - CFC295
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

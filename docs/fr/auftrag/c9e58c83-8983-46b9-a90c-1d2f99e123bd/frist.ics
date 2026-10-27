@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9e58c83-8983-46b9-a90c-1d2f99e123bd-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261202T153000Z
+SUMMARY:Délai de remise : Etablissement d'un plan directeur de zone indu
+ strielle et artisanale sur la zone industrielle de Plan-les-Ouates
+DESCRIPTION:Acheteur public : Commune de Plan-les-Ouates | République et
+  Canton de Genève | Fondation pour les terrains industriels de Genève\nD
+ élai de remise : 02.12.2026\, 16 h 30\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/c9e58c83-8983-46b9-a90c-1d2f99e123bd/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/c9e58c83-89
+ 83-46b9-a90c-1d2f99e123bd
+URL:https://auftragsregister.ch/fr/auftrag/c9e58c83-8983-46b9-a90c-1d2f99e1
+ 23bd/
+LOCATION:Plan-les-Ouates
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Etablissement d'un plan directeur de zone 
+ industrielle et artisanale sur la zone industrielle de Plan-les-Ouates
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

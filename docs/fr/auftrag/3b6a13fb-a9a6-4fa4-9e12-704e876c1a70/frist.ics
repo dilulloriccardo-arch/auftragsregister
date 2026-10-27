@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b6a13fb-a9a6-4fa4-9e12-704e876c1a70-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261103T225900Z
+SUMMARY:Délai de remise : Haus 07B / SKP 225.4 Brandabschottungen
+DESCRIPTION:Acheteur public : Spitalanlagengesellschaft HOCH Health Ostsc
+ hweiz\nDélai de remise : 03.11.2026\, 23 h 59\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/3b6a13fb-a9a6-4fa4-9e12-704e876c1a
+ 70/\nPublication officielle : https://www.simap.ch/fr/project-detail/3b6
+ a13fb-a9a6-4fa4-9e12-704e876c1a70
+URL:https://auftragsregister.ch/fr/auftrag/3b6a13fb-a9a6-4fa4-9e12-704e876c
+ 1a70/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Haus 07B / SKP 225.4 Brandabschottungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

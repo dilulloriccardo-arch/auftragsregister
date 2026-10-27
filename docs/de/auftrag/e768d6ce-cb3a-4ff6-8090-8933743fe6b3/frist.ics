@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e768d6ce-cb3a-4ff6-8090-8933743fe6b3-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261028T110000Z
+SUMMARY:Eingabefrist: Bauherrenvertretung Sekundarschule Rümlang-Oberglatt
+DESCRIPTION:Auftraggeber: Sekundarschule Rümlang-Oberglatt (Federas Beratu
+ ng AG)\nEingabefrist: 28.10.2026\, 12.00 Uhr\nIm Register: https://auftra
+ gsregister.ch/de/auftrag/e768d6ce-cb3a-4ff6-8090-8933743fe6b3/\nAmtliche P
+ ublikation: https://www.simap.ch/de/project-detail/e768d6ce-cb3a-4ff6-8090
+ -8933743fe6b3
+URL:https://auftragsregister.ch/de/auftrag/e768d6ce-cb3a-4ff6-8090-8933743f
+ e6b3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bauherrenvertretung Sekundarschule Rümlang-Oberg
+ latt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

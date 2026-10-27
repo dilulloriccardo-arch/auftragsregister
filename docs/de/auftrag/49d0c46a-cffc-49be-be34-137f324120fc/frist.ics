@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49d0c46a-cffc-49be-be34-137f324120fc-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261111T130000Z
+SUMMARY:Eingabefrist: Nieder- und Mittelspannungskabel
+DESCRIPTION:Auftraggeber: CKW AG\nEingabefrist: 11.11.2026\, 14.00 Uhr\nIm
+  Register: https://auftragsregister.ch/de/auftrag/49d0c46a-cffc-49be-be34-
+ 137f324120fc/\nAmtliche Publikation: https://www.simap.ch/de/project-detai
+ l/49d0c46a-cffc-49be-be34-137f324120fc
+URL:https://auftragsregister.ch/de/auftrag/49d0c46a-cffc-49be-be34-137f3241
+ 20fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Nieder- und Mittelspannungskabel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

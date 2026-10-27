@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9ff8e149-90f3-4055-8f52-486a7508b4fd-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T090000Z
+SUMMARY:Submission deadline: Lieferung einer Brandschutzbekleidung (Brandsc
+ hutzjacke und Brandschutzhose) für die Feuerwehr Unteres Rheintal
+DESCRIPTION:Public buyer: Zweckverband Feuerwehr Unteres Rheintal\nSubmissi
+ on deadline: 2 Nov 2026\, 10:00\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/9ff8e149-90f3-4055-8f52-486a7508b4fd/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/9ff8e149-90f3-4055-8f52-486a750
+ 8b4fd
+URL:https://auftragsregister.ch/en/auftrag/9ff8e149-90f3-4055-8f52-486a7508
+ b4fd/
+LOCATION:Heerbrugg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Lieferung einer Brandschutzbekleidung (Bra
+ ndschutzjacke und Brandschutzhose) für die Feuerwehr Unteres Rheintal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

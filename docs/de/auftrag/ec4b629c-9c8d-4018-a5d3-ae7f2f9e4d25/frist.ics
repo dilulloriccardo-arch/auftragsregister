@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec4b629c-9c8d-4018-a5d3-ae7f2f9e4d25-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Eingabefrist: AO Storage S3 DISTIC 2026
+DESCRIPTION:Auftraggeber: Service de conseil et de soutien pour les marché
+ s publics de l'Université de Genève\nEingabefrist: 06.11.2026\, 12.00 U
+ hr\nIm Register: https://auftragsregister.ch/de/auftrag/ec4b629c-9c8d-4018
+ -a5d3-ae7f2f9e4d25/\nAmtliche Publikation: https://www.simap.ch/de/project
+ -detail/ec4b629c-9c8d-4018-a5d3-ae7f2f9e4d25
+URL:https://auftragsregister.ch/de/auftrag/ec4b629c-9c8d-4018-a5d3-ae7f2f9e
+ 4d25/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AO Storage S3 DISTIC 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

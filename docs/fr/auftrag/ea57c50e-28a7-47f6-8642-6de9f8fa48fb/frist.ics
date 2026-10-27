@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea57c50e-28a7-47f6-8642-6de9f8fa48fb-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Délai de remise : STEP Eparse - Lot EL03 - Automation\, contrôl
+ e commande et Supervision
+DESCRIPTION:Acheteur public : L'Eparse - Association intercommunale pour 
+ l’épuration des eaux de la zone de Payerne - CFA Ingénieurs Conseils S
+ A\nDélai de remise : 16.11.2026\, 16 h 00\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/ea57c50e-28a7-47f6-8642-6de9f8fa48fb/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/ea57c50
+ e-28a7-47f6-8642-6de9f8fa48fb
+URL:https://auftragsregister.ch/fr/auftrag/ea57c50e-28a7-47f6-8642-6de9f8fa
+ 48fb/
+LOCATION:Payerne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : STEP Eparse - Lot EL03 - Automation\, cont
+ rôle commande et Supervision
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

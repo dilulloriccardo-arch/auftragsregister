@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0b2f60e0-fe6c-46f2-b771-87a53ccf1cb3-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:1
+DTSTART:20261208T130000Z
+SUMMARY:Eingabefrist: Gesamtmelioration (GM) Nusshof BL / Ingenieur-\, Verm
+ essungs- und Planungsarbeiten
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Nusshof\nEingabefrist: 08.12.20
+ 26\, 14.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0b2f6
+ 0e0-fe6c-46f2-b771-87a53ccf1cb3/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/0b2f60e0-fe6c-46f2-b771-87a53ccf1cb3
+URL:https://auftragsregister.ch/de/auftrag/0b2f60e0-fe6c-46f2-b771-87a53ccf
+ 1cb3/
+LOCATION:Nusshof
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamtmelioration (GM) Nusshof BL / Ingenieur-\, 
+ Vermessungs- und Planungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

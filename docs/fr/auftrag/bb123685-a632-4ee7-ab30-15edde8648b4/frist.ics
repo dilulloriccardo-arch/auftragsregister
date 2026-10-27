@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb123685-a632-4ee7-ab30-15edde8648b4-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T160000Z
+SUMMARY:Délai de remise : BKP 222 / 224 Spengler- und Bedachungsarbeiten
+DESCRIPTION:Acheteur public : Stadt Wädenswil\, Immobilien\, Projekt Neu
+ bau Gartenhäuser GB\, Büelenstrasse 5+7\nDélai de remise : 19.11.2026
+ \, 17 h 00\nDans le registre : https://auftragsregister.ch/fr/auftra
+ g/bb123685-a632-4ee7-ab30-15edde8648b4/\nPublication officielle : https:
+ //www.simap.ch/fr/project-detail/bb123685-a632-4ee7-ab30-15edde8648b4
+URL:https://auftragsregister.ch/fr/auftrag/bb123685-a632-4ee7-ab30-15edde86
+ 48b4/
+LOCATION:Wädenswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 222 / 224 Spengler- und Bedachungsarbe
+ iten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

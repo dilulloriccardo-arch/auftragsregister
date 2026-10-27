@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a4862e7-7ec8-4c54-898c-1a09c38c22c2-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Submission deadline: Geserhus new build\, Rebstein - 273.0 Interior
+  wooden Doors
+DESCRIPTION:Public buyer: Zweckverband Altersheim Geserhus der Gemeinde Reb
+ stein und Marbach\nSubmission deadline: 13 Nov 2026\, 23:59\nIn the regi
+ ster: https://auftragsregister.ch/en/auftrag/0a4862e7-7ec8-4c54-898c-1a09c
+ 38c22c2/\nOfficial publication: https://www.simap.ch/en/project-detail/0a4
+ 862e7-7ec8-4c54-898c-1a09c38c22c2
+URL:https://auftragsregister.ch/en/auftrag/0a4862e7-7ec8-4c54-898c-1a09c38c
+ 22c2/
+LOCATION:Rebstein
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Geserhus new build\, Rebstein - 273.0 Inte
+ rior wooden Doors
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

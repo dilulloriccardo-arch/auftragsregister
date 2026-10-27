@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ca3a3a0b-e0bf-4f80-867b-effdcfd21c30-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261203T130000Z
+SUMMARY:Eingabefrist: 01.517 Nuova centrale del freddo - Isolazioni impiant
+ i
+DESCRIPTION:Auftraggeber: Ente Ospedaliero Cantonale - Area Infrastrutture 
+ e Operations\nEingabefrist: 03.12.2026\, 14.00 Uhr\nIm Register: https://
+ auftragsregister.ch/de/auftrag/ca3a3a0b-e0bf-4f80-867b-effdcfd21c30/\nAmtl
+ iche Publikation: https://www.simap.ch/de/project-detail/ca3a3a0b-e0bf-4f8
+ 0-867b-effdcfd21c30
+URL:https://auftragsregister.ch/de/auftrag/ca3a3a0b-e0bf-4f80-867b-effdcfd2
+ 1c30/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 01.517 Nuova centrale del freddo - Isolazioni imp
+ ianti
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

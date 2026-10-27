@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edd20dcf-9c74-4946-a5a1-255c17c102dc-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Submission deadline: BKP 263.0 Fassadenreinigungsanlagen - Reinigun
+ gsbrücke
+DESCRIPTION:Public buyer: Flughafen Zürich AG - ELP\nSubmission deadline: 
+ 24 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/edd20dcf-9c74-4946-a5a1-255c17c102dc/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/edd20dcf-9c74-4946-a5a1-255c17c102dc
+URL:https://auftragsregister.ch/en/auftrag/edd20dcf-9c74-4946-a5a1-255c17c1
+ 02dc/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 263.0 Fassadenreinigungsanlagen - Rein
+ igungsbrücke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

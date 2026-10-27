@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4e6d0431-90a4-4f8a-875c-1ee810e38fb0-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261207T150000Z
+SUMMARY:Submission deadline: Mitarbeiter Gebietsreinigung / Subm. Nr.: 2026
+ -34
+DESCRIPTION:Public buyer: TED - Entsorgung + Recycling Zürich (ERZ) Hagenh
+ olzstrasse 110\, Zürich\nSubmission deadline: 7 Dec 2026\, 16:00\nIn th
+ e register: https://auftragsregister.ch/en/auftrag/4e6d0431-90a4-4f8a-875c
+ -1ee810e38fb0/\nOfficial publication: https://www.simap.ch/en/project-deta
+ il/4e6d0431-90a4-4f8a-875c-1ee810e38fb0
+URL:https://auftragsregister.ch/en/auftrag/4e6d0431-90a4-4f8a-875c-1ee810e3
+ 8fb0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mitarbeiter Gebietsreinigung / Subm. Nr.: 
+ 2026-34
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

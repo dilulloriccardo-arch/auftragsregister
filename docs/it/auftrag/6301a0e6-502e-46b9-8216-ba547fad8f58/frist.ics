@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6301a0e6-502e-46b9-8216-ba547fad8f58-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Scadenza: Filisur HS Laviner Cotschen SW 2027
+DESCRIPTION:Ente pubblico: Forst Albula\nScadenza: 11.11.2026\nNel registro
+ : https://auftragsregister.ch/it/auftrag/6301a0e6-502e-46b9-8216-ba547fad8
+ f58/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/6301
+ a0e6-502e-46b9-8216-ba547fad8f58
+URL:https://auftragsregister.ch/it/auftrag/6301a0e6-502e-46b9-8216-ba547fad
+ 8f58/
+LOCATION:7477 Filisur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Filisur HS Laviner Cotschen SW 2027
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

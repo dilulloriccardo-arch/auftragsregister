@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60e1a1b1-eaec-4da5-b6a5-070cb79c428e-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261118T225900Z
+SUMMARY:Scadenza: Tiefbau- und Wasserbauarbeiten\, Chlebbach\, 9100 Herisau
+  (W-282)
+DESCRIPTION:Ente pubblico: Appenzell Ausserrhoden\nScadenza: 18.11.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/60e1a1b1-eaec-4
+ da5-b6a5-070cb79c428e/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/60e1a1b1-eaec-4da5-b6a5-070cb79c428e
+URL:https://auftragsregister.ch/it/auftrag/60e1a1b1-eaec-4da5-b6a5-070cb79c
+ 428e/
+LOCATION:Herisau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Tiefbau- und Wasserbauarbeiten\, Chlebbach\, 9100 Her
+ isau (W-282)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

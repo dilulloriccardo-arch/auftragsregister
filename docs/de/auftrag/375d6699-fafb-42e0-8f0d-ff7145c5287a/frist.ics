@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:375d6699-fafb-42e0-8f0d-ff7145c5287a-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T100000Z
+SUMMARY:Eingabefrist: Haute Ecole Pedagogique_00'697_Lot 146 Hotte de venti
+ lation de cuisine professionnelle
+DESCRIPTION:Auftraggeber: Etat de Vaud - DEIEP - DGIP\,\nEingabefrist: 12.1
+ 1.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3
+ 75d6699-fafb-42e0-8f0d-ff7145c5287a/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/375d6699-fafb-42e0-8f0d-ff7145c5287a
+URL:https://auftragsregister.ch/de/auftrag/375d6699-fafb-42e0-8f0d-ff7145c5
+ 287a/
+LOCATION:Chavannes-près-Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Haute Ecole Pedagogique_00'697_Lot 146 Hotte de v
+ entilation de cuisine professionnelle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

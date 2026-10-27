@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16fee67d-11ee-4550-bd8f-a43ef8582e0d-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261112T225900Z
+SUMMARY:Submission deadline: Ein Plasma-Ätzsystem (Reactive Ion Etching\, 
+ RIE) für das Center of MicroNanoTechnology
+DESCRIPTION:Public buyer: EPFL-Scientific Equipment\nSubmission deadline: 1
+ 2 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auft
+ rag/16fee67d-11ee-4550-bd8f-a43ef8582e0d/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/16fee67d-11ee-4550-bd8f-a43ef8582e0d
+URL:https://auftragsregister.ch/en/auftrag/16fee67d-11ee-4550-bd8f-a43ef858
+ 2e0d/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ein Plasma-Ätzsystem (Reactive Ion Etchin
+ g\, RIE) für das Center of MicroNanoTechnology
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

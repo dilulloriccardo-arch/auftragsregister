@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0bc7748c-33da-4913-a14c-5790fb180776-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Délai de remise : Prestations d’appui stratégique et méthodo
+ logique\, d’accompagnement organisationnel et de réalisation de projets
+  pour la mise en œuvre de la stratégie cantonale de la géoinformation -
+  période 2027-2029
+DESCRIPTION:Acheteur public : Direction de l'information du territoire\nD
+ élai de remise : 16.11.2026\, 12 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/0bc7748c-33da-4913-a14c-5790fb180776/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/0bc7748c-33
+ da-4913-a14c-5790fb180776
+URL:https://auftragsregister.ch/fr/auftrag/0bc7748c-33da-4913-a14c-5790fb18
+ 0776/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Prestations d’appui stratégique et mét
+ hodologique\, d’accompagnement organisationnel et de réalisation de pro
+ jets pour la mise en œuvre de la stratégie cantonale de la géoinformati
+ on - période 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

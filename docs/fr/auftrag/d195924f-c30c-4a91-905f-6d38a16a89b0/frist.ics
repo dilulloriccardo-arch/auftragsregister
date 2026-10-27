@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d195924f-c30c-4a91-905f-6d38a16a89b0-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261111T110000Z
+SUMMARY:Délai de remise : École de Langwiesen : extension et rénovatio
+ n \; CFC 370 Installations sportives
+DESCRIPTION:Acheteur public : Amt für Städtebau\nDélai de remise : 1
+ 1.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/d195924f-c30c-4a91-905f-6d38a16a89b0/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/d195924f-c30c-4a91-905f-6d38a1
+ 6a89b0
+URL:https://auftragsregister.ch/fr/auftrag/d195924f-c30c-4a91-905f-6d38a16a
+ 89b0/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École de Langwiesen : extension et rénov
+ ation \; CFC 370 Installations sportives
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

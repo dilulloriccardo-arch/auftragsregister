@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a0936d8-617b-4ce5-971b-da8615dbae6f-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Submission deadline: VE 31.09 Réfection de voie métrique « Finha
+ ut-Châtelard / KM 15.372 au KM 16.184 - KM 16.413 au KM 17.030 et KM 17.6
+ 82 au 17.766 : 1513m"
+DESCRIPTION:Public buyer: Achats - TMR SA\nSubmission deadline: 16 Nov 20
+ 26\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag/9a0936
+ d8-617b-4ce5-971b-da8615dbae6f/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/9a0936d8-617b-4ce5-971b-da8615dbae6f
+URL:https://auftragsregister.ch/en/auftrag/9a0936d8-617b-4ce5-971b-da8615db
+ ae6f/
+LOCATION:Finhaut
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: VE 31.09 Réfection de voie métrique « F
+ inhaut-Châtelard / KM 15.372 au KM 16.184 - KM 16.413 au KM 17.030 et KM 
+ 17.682 au 17.766 : 1513m"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

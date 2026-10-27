@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ded54e9-7147-4ceb-8ce1-ada28d3ab37e-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Scadenza: UT-NR SN 2027-2028
+DESCRIPTION:Ente pubblico: Ufficio delle commesse pubbliche e della program
+ mazione\nScadenza: 16.11.2026\, 11:00\nNel registro: https://auftragsregis
+ ter.ch/it/auftrag/1ded54e9-7147-4ceb-8ce1-ada28d3ab37e/\nPubblicazione uff
+ iciale: https://www.simap.ch/it/project-detail/1ded54e9-7147-4ceb-8ce1-ada
+ 28d3ab37e
+URL:https://auftragsregister.ch/it/auftrag/1ded54e9-7147-4ceb-8ce1-ada28d3a
+ b37e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: UT-NR SN 2027-2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7e0761e-99cf-4f2c-981e-6b0ef31094d5-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Submission deadline: Kollegium Brig - Sanierung Internat / BKP 283.
+ 2 Deckenbekleidungen aus Gips (Südtrakt)
+DESCRIPTION:Public buyer: Departement für Finanzen und Energie\, Dienstste
+ lle für Immobilien und Bauliches Erbe\nSubmission deadline: 11 Nov 2026
+ \nIn the register: https://auftragsregister.ch/en/auftrag/e7e0761e-99cf-4f
+ 2c-981e-6b0ef31094d5/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/e7e0761e-99cf-4f2c-981e-6b0ef31094d5
+URL:https://auftragsregister.ch/en/auftrag/e7e0761e-99cf-4f2c-981e-6b0ef310
+ 94d5/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kollegium Brig - Sanierung Internat / BKP 
+ 283.2 Deckenbekleidungen aus Gips (Südtrakt)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

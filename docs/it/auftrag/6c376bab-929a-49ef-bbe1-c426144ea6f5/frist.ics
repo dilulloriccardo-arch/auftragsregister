@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c376bab-929a-49ef-bbe1-c426144ea6f5-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T150000Z
+SUMMARY:Scadenza: Beschaffung von Kanal TV-Inspektionsfahrzeug
+DESCRIPTION:Ente pubblico: TED - Entsorgung + Recycling Zürich (ERZ) Bänd
+ listrasse 108\, 8010 Zürich\nScadenza: 19.11.2026\, 16:00\nNel registro: 
+ https://auftragsregister.ch/it/auftrag/6c376bab-929a-49ef-bbe1-c426144ea6f
+ 5/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/6c376b
+ ab-929a-49ef-bbe1-c426144ea6f5
+URL:https://auftragsregister.ch/it/auftrag/6c376bab-929a-49ef-bbe1-c426144e
+ a6f5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung von Kanal TV-Inspektionsfahrzeug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

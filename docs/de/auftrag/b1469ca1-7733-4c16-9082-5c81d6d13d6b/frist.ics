@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b1469ca1-7733-4c16-9082-5c81d6d13d6b-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Eingabefrist: MP-240051\, NEB EM Lausen - Sissach / Projektverfasse
+ r Bau und BSA inkl. Gesamtleitung
+DESCRIPTION:Auftraggeber: Eidgenössisches Departement für Umwelt\, Verkeh
+ r\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung S
+ trasseninfrastruktur-Ost - F3\nEingabefrist: 23.11.2026\, 23.59 Uhr\nIm R
+ egister: https://auftragsregister.ch/de/auftrag/b1469ca1-7733-4c16-9082-5c
+ 81d6d13d6b/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/
+ b1469ca1-7733-4c16-9082-5c81d6d13d6b
+URL:https://auftragsregister.ch/de/auftrag/b1469ca1-7733-4c16-9082-5c81d6d1
+ 3d6b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-240051\, NEB EM Lausen - Sissach / Projektverf
+ asser Bau und BSA inkl. Gesamtleitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

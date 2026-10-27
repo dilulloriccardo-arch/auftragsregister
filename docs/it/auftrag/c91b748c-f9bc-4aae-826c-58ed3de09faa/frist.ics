@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c91b748c-f9bc-4aae-826c-58ed3de09faa-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T090000Z
+SUMMARY:Scadenza: Anlagen für Pulveraktivkohle
+DESCRIPTION:Ente pubblico: Zweckverband ARA Rorguet\nScadenza: 11.11.2026\,
+  10:00\nNel registro: https://auftragsregister.ch/it/auftrag/c91b748c-f9bc
+ -4aae-826c-58ed3de09faa/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/c91b748c-f9bc-4aae-826c-58ed3de09faa
+URL:https://auftragsregister.ch/it/auftrag/c91b748c-f9bc-4aae-826c-58ed3de0
+ 9faa/
+LOCATION:Meilen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Anlagen für Pulveraktivkohle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

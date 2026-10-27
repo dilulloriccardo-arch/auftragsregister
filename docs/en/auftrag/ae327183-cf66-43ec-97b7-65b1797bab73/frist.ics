@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ae327183-cf66-43ec-97b7-65b1797bab73-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Submission deadline: Refit Tango Beschaffung und Integration neuer 
+ Aussenanzeigen
+DESCRIPTION:Public buyer: Baselland Transport AG\nSubmission deadline: 8 J
+ an 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/
+ ae327183-cf66-43ec-97b7-65b1797bab73/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/ae327183-cf66-43ec-97b7-65b1797bab73
+URL:https://auftragsregister.ch/en/auftrag/ae327183-cf66-43ec-97b7-65b1797b
+ ab73/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Refit Tango Beschaffung und Integration ne
+ uer Aussenanzeigen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

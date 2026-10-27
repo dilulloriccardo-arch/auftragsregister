@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78edceb0-2526-4246-9542-7782fa22ffef-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Scadenza: USZ Campus MITTE 1|2 / BKP 273.19 Türen Paket 9 Brandsch
+ utztüren aus Holz (OV)
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 15.12.202
+ 6\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/78edceb0-2
+ 526-4246-9542-7782fa22ffef/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/78edceb0-2526-4246-9542-7782fa22ffef
+URL:https://auftragsregister.ch/it/auftrag/78edceb0-2526-4246-9542-7782fa22
+ ffef/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: USZ Campus MITTE 1|2 / BKP 273.19 Türen Paket 9 Bran
+ dschutztüren aus Holz (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

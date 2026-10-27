@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cd523fd0-cb83-441e-8fe5-58d7d144096d-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Submission deadline: Herstellung\, Lieferung\, Montage und Prüfung
+  von zwei temporären HS-Kabelanlagen im Unterwerk Leibstadt 380 kV
+DESCRIPTION:Public buyer: Swissgrid AG - Asset & Maintenance\nSubmission de
+ adline: 17 Nov 2026\, 23:59\nIn the register: https://auftragsregister.c
+ h/en/auftrag/cd523fd0-cb83-441e-8fe5-58d7d144096d/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/cd523fd0-cb83-441e-8fe5-58d7d144096
+ d
+URL:https://auftragsregister.ch/en/auftrag/cd523fd0-cb83-441e-8fe5-58d7d144
+ 096d/
+LOCATION:Leibstadt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Herstellung\, Lieferung\, Montage und Prü
+ fung von zwei temporären HS-Kabelanlagen im Unterwerk Leibstadt 380 kV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

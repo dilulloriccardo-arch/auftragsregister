@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57f03457-da99-4963-b5c6-05340e134419-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20270127T153000Z
+SUMMARY:Submission deadline: Alpine Rhine: Stone deliveries for the mainten
+ ance of the placed rock revetment\, Winter 2027/28
+DESCRIPTION:Public buyer: Rheinunternehmen\nSubmission deadline: 27 Jan 2
+ 027\, 16:30\nIn the register: https://auftragsregister.ch/en/auftrag/57f03
+ 457-da99-4963-b5c6-05340e134419/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/57f03457-da99-4963-b5c6-05340e134419
+URL:https://auftragsregister.ch/en/auftrag/57f03457-da99-4963-b5c6-05340e13
+ 4419/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Alpine Rhine: Stone deliveries for the mai
+ ntenance of the placed rock revetment\, Winter 2027/28
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

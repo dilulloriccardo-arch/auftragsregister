@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f5ffbc6b-000a-4879-9e8f-facae2396b27-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Eingabefrist: BKP 211.1 Gerüstarbeiten - Thun\, Polygon\, Sanierun
+ g Gebäudehülle Haustechnik
+DESCRIPTION:Auftraggeber: armasuisse Immobilien\nEingabefrist: 19.11.2026\n
+ Im Register: https://auftragsregister.ch/de/auftrag/f5ffbc6b-000a-4879-9e8
+ f-facae2396b27/\nAmtliche Publikation: https://www.simap.ch/de/project-det
+ ail/f5ffbc6b-000a-4879-9e8f-facae2396b27
+URL:https://auftragsregister.ch/de/auftrag/f5ffbc6b-000a-4879-9e8f-facae239
+ 6b27/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 211.1 Gerüstarbeiten - Thun\, Polygon\, Sani
+ erung Gebäudehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

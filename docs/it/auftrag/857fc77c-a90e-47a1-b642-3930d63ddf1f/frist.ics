@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:857fc77c-a90e-47a1-b642-3930d63ddf1f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261123T100000Z
+SUMMARY:Scadenza: Remplacement et modernisation de 27 installations de tran
+ sport de personnes\, SLA maintenance
+DESCRIPTION:Ente pubblico: Genève Aéroport\nScadenza: 23.11.2026\, 11:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/857fc77c-a90e-47a1-b
+ 642-3930d63ddf1f/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/857fc77c-a90e-47a1-b642-3930d63ddf1f
+URL:https://auftragsregister.ch/it/auftrag/857fc77c-a90e-47a1-b642-3930d63d
+ df1f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Remplacement et modernisation de 27 installations de 
+ transport de personnes\, SLA maintenance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

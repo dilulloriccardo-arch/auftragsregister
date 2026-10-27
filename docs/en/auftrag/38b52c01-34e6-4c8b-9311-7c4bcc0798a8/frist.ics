@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:38b52c01-34e6-4c8b-9311-7c4bcc0798a8-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Submission deadline: FPO Chamoson - LOT 271.000 Plâtrerie - peintu
+ re
+DESCRIPTION:Public buyer: Foyer Pierre Olivier (Pragma Partenaires SA)\nSub
+ mission deadline: 6 Nov 2026\, 12:00\nIn the register: https://auftragsr
+ egister.ch/en/auftrag/38b52c01-34e6-4c8b-9311-7c4bcc0798a8/\nOfficial publ
+ ication: https://www.simap.ch/en/project-detail/38b52c01-34e6-4c8b-9311-7c
+ 4bcc0798a8
+URL:https://auftragsregister.ch/en/auftrag/38b52c01-34e6-4c8b-9311-7c4bcc07
+ 98a8/
+LOCATION:Chamoson
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: FPO Chamoson - LOT 271.000 Plâtrerie - pe
+ inture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

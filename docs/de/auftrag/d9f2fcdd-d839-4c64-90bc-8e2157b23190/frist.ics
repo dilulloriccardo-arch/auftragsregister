@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d9f2fcdd-d839-4c64-90bc-8e2157b23190-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Eingabefrist: HIE Instandsetzung Restauration Hirschengraben 56\, B
+ KP 232-01 Elektro
+DESCRIPTION:Auftraggeber: Kanton Zürich Hochbauaumt\, Baubereich D\nEingab
+ efrist: 20.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/d9f2fcdd-d839-4c64-90bc-8e2157b23190/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/d9f2fcdd-d839-4c64-90bc-8e2157b23190
+URL:https://auftragsregister.ch/de/auftrag/d9f2fcdd-d839-4c64-90bc-8e2157b2
+ 3190/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: HIE Instandsetzung Restauration Hirschengraben 56
+ \, BKP 232-01 Elektro
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

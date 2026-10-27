@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f50fc950-8d62-4dcc-a278-5576e8ec65fd-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Délai de remise : Acquisition de cabines de distribution électr
+ ique et de fondations
+DESCRIPTION:Acheteur public : Stadtwerk Winterthur\nDélai de remise : 
+ 09.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/f50fc950-8d62-4dcc-a278-5576e8ec65fd/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/f50fc950-8d62-4dcc-a278-5576e8
+ ec65fd
+URL:https://auftragsregister.ch/fr/auftrag/f50fc950-8d62-4dcc-a278-5576e8ec
+ 65fd/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition de cabines de distribution él
+ ectrique et de fondations
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

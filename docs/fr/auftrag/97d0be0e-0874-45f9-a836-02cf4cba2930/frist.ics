@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:97d0be0e-0874-45f9-a836-02cf4cba2930-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:2
+DTSTART:20261120T100000Z
+SUMMARY:Délai de remise : Transports publics VMCV SA à Clarens - Infras
+ tructures de recharges au dépôt de Clarens
+DESCRIPTION:Acheteur public : Transports publics VMCV SA\nDélai de remis
+ e : 20.11.2026\, 11 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/97d0be0e-0874-45f9-a836-02cf4cba2930/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/97d0be0e-0874-45f9-a836-0
+ 2cf4cba2930
+URL:https://auftragsregister.ch/fr/auftrag/97d0be0e-0874-45f9-a836-02cf4cba
+ 2930/
+LOCATION:Clarens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transports publics VMCV SA à Clarens - In
+ frastructures de recharges au dépôt de Clarens
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

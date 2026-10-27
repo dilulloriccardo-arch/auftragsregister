@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:adb9ecf0-8773-42a6-9c4e-2af441ba5d56-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Délai de remise : USZ Campus MITTE 1|2 / CVC 271.14 Plâtrerie (
+ Pack 4 MIT1 niveau F-J)
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 02.12.2026\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/adb9ecf0-8773-42a6-9c4e-2af441ba5d56/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/adb9ecf0-8773-42a6-9c4e-
+ 2af441ba5d56
+URL:https://auftragsregister.ch/fr/auftrag/adb9ecf0-8773-42a6-9c4e-2af441ba
+ 5d56/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : USZ Campus MITTE 1|2 / CVC 271.14 Plâtrer
+ ie (Pack 4 MIT1 niveau F-J)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

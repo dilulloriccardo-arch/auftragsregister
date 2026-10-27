@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe196b30-6bdd-4341-bb76-ed8bf992477a-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Scadenza: Neugestaltung Bahnhof-/ Kappeli-/ Grünaustrasse
+DESCRIPTION:Ente pubblico: Stadt Buchs\, Bau und Infrastruktur\nScadenza: 1
+ 3.11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/fe
+ 196b30-6bdd-4341-bb76-ed8bf992477a/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/fe196b30-6bdd-4341-bb76-ed8bf992477a
+URL:https://auftragsregister.ch/it/auftrag/fe196b30-6bdd-4341-bb76-ed8bf992
+ 477a/
+LOCATION:Buchs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neugestaltung Bahnhof-/ Kappeli-/ Grünaustrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1db1461a-da26-464f-956d-eaea463cf9f0-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Eingabefrist: Ersatz Stoffstoren durch Lamellenstoren\, Schulanlage
+  Grentschel
+DESCRIPTION:Auftraggeber: Gemeinde Lyss\, Bau + Planung\nEingabefrist: 02.1
+ 1.2026\nIm Register: https://auftragsregister.ch/de/auftrag/1db1461a-da26-
+ 464f-956d-eaea463cf9f0/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/1db1461a-da26-464f-956d-eaea463cf9f0
+URL:https://auftragsregister.ch/de/auftrag/1db1461a-da26-464f-956d-eaea463c
+ f9f0/
+LOCATION:Lyss
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatz Stoffstoren durch Lamellenstoren\, Schulan
+ lage Grentschel
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

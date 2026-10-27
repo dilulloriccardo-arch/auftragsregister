@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7de56710-17bf-46e1-acf4-0ef8b68579f9-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Submission deadline: Kälteschutzjacke 2026
+DESCRIPTION:Public buyer: SID - Stadtpolizei (Stapo)\nSubmission deadline: 
+ 30 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/7de56710-17bf-46e1-acf4-0ef8b68579f9/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/7de56710-17bf-46e1-acf4-0ef8b68579f9
+URL:https://auftragsregister.ch/en/auftrag/7de56710-17bf-46e1-acf4-0ef8b685
+ 79f9/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kälteschutzjacke 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

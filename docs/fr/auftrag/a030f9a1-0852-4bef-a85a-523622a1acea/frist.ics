@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a030f9a1-0852-4bef-a85a-523622a1acea-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Délai de remise : Serveurs SAP HANA et HCI
+DESCRIPTION:Acheteur public : UNIL - Ci - Centrale d'achat informatique\n
+ Délai de remise : 15.12.2026\, 12 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/a030f9a1-0852-4bef-a85a-523622a1acea/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/a030f9a1-0
+ 852-4bef-a85a-523622a1acea
+URL:https://auftragsregister.ch/fr/auftrag/a030f9a1-0852-4bef-a85a-523622a1
+ acea/
+LOCATION:lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Serveurs SAP HANA et HCI
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

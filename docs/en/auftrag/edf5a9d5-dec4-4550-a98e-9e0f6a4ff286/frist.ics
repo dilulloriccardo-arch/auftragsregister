@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edf5a9d5-dec4-4550-a98e-9e0f6a4ff286-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261110T150000Z
+SUMMARY:Submission deadline: Neubau "WPZ Schüpfheim" - 282.4 Wand- und Bod
+ enbeläge aus Platten
+DESCRIPTION:Public buyer: Lehmann AG Baumanagement\nSubmission deadline: 10
+  Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/edf5a9d5-dec4-4550-a98e-9e0f6a4ff286/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/edf5a9d5-dec4-4550-a98e-9e0f6a4ff286
+URL:https://auftragsregister.ch/en/auftrag/edf5a9d5-dec4-4550-a98e-9e0f6a4f
+ f286/
+LOCATION:Schüpfheim
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau "WPZ Schüpfheim" - 282.4 Wand- und
+  Bodenbeläge aus Platten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

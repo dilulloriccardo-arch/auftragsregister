@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:daa412d7-23ea-4693-b888-773c30629e72-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Scadenza: LSE sécurité SI 2027-2031
+DESCRIPTION:Ente pubblico: Transport publics genevois (tpg)\nScadenza: 11.1
+ 2.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/daa41
+ 2d7-23ea-4693-b888-773c30629e72/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/daa412d7-23ea-4693-b888-773c30629e72
+URL:https://auftragsregister.ch/it/auftrag/daa412d7-23ea-4693-b888-773c3062
+ 9e72/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: LSE sécurité SI 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

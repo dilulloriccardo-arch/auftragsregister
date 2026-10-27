@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:199837a3-ad9d-4a74-be1e-4d8e635b977b-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Eingabefrist: Parkhaus Saanendorf - Instandsetzungsarbeiten
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Saanen\nEingabefrist: 02.12.202
+ 6\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/199837
+ a3-ad9d-4a74-be1e-4d8e635b977b/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/199837a3-ad9d-4a74-be1e-4d8e635b977b
+URL:https://auftragsregister.ch/de/auftrag/199837a3-ad9d-4a74-be1e-4d8e635b
+ 977b/
+LOCATION:Saanen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Parkhaus Saanendorf - Instandsetzungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

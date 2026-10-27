@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:639c1baa-e48e-4d10-80b5-87d52757e82f-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261113T110000Z
+SUMMARY:Submission deadline: Hochwasserschutz Dorf Alpthal - Vormassnahmen
+DESCRIPTION:Public buyer: Bezirk Schwyz - Abteilung Umwelt\nSubmission dead
+ line: 13 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/
+ en/auftrag/639c1baa-e48e-4d10-80b5-87d52757e82f/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/639c1baa-e48e-4d10-80b5-87d52757e82f
+URL:https://auftragsregister.ch/en/auftrag/639c1baa-e48e-4d10-80b5-87d52757
+ e82f/
+LOCATION:Alpthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Hochwasserschutz Dorf Alpthal - Vormassnah
+ men
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

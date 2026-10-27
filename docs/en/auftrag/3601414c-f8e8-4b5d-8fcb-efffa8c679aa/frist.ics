@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3601414c-f8e8-4b5d-8fcb-efffa8c679aa-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:1
+DTSTART:20261123T153000Z
+SUMMARY:Submission deadline: Logement ouvrier Budé – Rénovation énerg
+ étique
+DESCRIPTION:Public buyer: Office cantonal des bâtiments (OCBA)\nSubmission
+  deadline: 23 Nov 2026\, 16:30\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/3601414c-f8e8-4b5d-8fcb-efffa8c679aa/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/3601414c-f8e8-4b5d-8fcb-efffa8c6
+ 79aa
+URL:https://auftragsregister.ch/en/auftrag/3601414c-f8e8-4b5d-8fcb-efffa8c6
+ 79aa/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Logement ouvrier Budé – Rénovation én
+ ergétique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

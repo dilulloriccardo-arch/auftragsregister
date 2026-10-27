@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6f5e518-c005-41cb-a7bb-a4d12db3dcbe-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261106T140000Z
+SUMMARY:Scadenza: Werkleitungs- und Oberbausanierung Neu-\, Feld-\, Alpen- 
+ und Austrasse
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Wettingen\nScadenza: 06.11.202
+ 6\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/e6f5e518-c
+ 005-41cb-a7bb-a4d12db3dcbe/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/e6f5e518-c005-41cb-a7bb-a4d12db3dcbe
+URL:https://auftragsregister.ch/it/auftrag/e6f5e518-c005-41cb-a7bb-a4d12db3
+ dcbe/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Werkleitungs- und Oberbausanierung Neu-\, Feld-\, Alp
+ en- und Austrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

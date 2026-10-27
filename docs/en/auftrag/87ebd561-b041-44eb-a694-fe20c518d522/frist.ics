@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87ebd561-b041-44eb-a694-fe20c518d522-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Submission deadline: USZ Campus MITTE 1|2 / BKP 277.30 Reinraum II 
+ (OV)
+DESCRIPTION:Public buyer: Universitätsspital Zürich\nSubmission deadline:
+  23 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/87ebd561-b041-44eb-a694-fe20c518d522/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/87ebd561-b041-44eb-a694-fe20c518d522
+URL:https://auftragsregister.ch/en/auftrag/87ebd561-b041-44eb-a694-fe20c518
+ d522/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: USZ Campus MITTE 1|2 / BKP 277.30 Reinraum
+  II (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

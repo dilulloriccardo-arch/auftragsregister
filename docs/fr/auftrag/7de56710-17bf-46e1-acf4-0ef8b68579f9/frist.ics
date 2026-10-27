@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7de56710-17bf-46e1-acf4-0ef8b68579f9-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : Veste de protection contre le froid 2026
+DESCRIPTION:Acheteur public : SID - Stadtpolizei (Stapo)\nDélai de remis
+ e : 30.11.2026\, 12 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/7de56710-17bf-46e1-acf4-0ef8b68579f9/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/7de56710-17bf-46e1-acf4-0
+ ef8b68579f9
+URL:https://auftragsregister.ch/fr/auftrag/7de56710-17bf-46e1-acf4-0ef8b685
+ 79f9/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Veste de protection contre le froid 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da0c82a1-9dd5-4260-9024-8ceed8d51ead-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:0
+DTSTART:20261112T225900Z
+SUMMARY:Submission deadline: MP-240065 Werkhöfe Göschenen & Airolo Gesamt
+ sanierung\, Generalplaner GP Phase MK - IBN
+DESCRIPTION:Public buyer: Bundesamt für Strassen ASTRA -Abteilung Strassen
+ infrastruktur-Ost - F3 Zofingen Filiale Zofingen\nSubmission deadline: 12
+  Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/da0c82a1-9dd5-4260-9024-8ceed8d51ead/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/da0c82a1-9dd5-4260-9024-8ceed8d51ead
+URL:https://auftragsregister.ch/en/auftrag/da0c82a1-9dd5-4260-9024-8ceed8d5
+ 1ead/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-240065 Werkhöfe Göschenen & Airolo Ge
+ samtsanierung\, Generalplaner GP Phase MK - IBN
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

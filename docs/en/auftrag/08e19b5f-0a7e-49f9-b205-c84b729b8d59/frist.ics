@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:08e19b5f-0a7e-49f9-b205-c84b729b8d59-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261203T225900Z
+SUMMARY:Submission deadline: Gemeindezentrum Bremgarten b. Bern\, BKP 224.1
+  Flachdächer
+DESCRIPTION:Public buyer: Einwohnergemeinde Bremgarten b. Bern (maurer baul
+ eitung gmbh)\nSubmission deadline: 3 Dec 2026\, 23:59\nIn the register: 
+ https://auftragsregister.ch/en/auftrag/08e19b5f-0a7e-49f9-b205-c84b729b8d5
+ 9/\nOfficial publication: https://www.simap.ch/en/project-detail/08e19b5f-
+ 0a7e-49f9-b205-c84b729b8d59
+URL:https://auftragsregister.ch/en/auftrag/08e19b5f-0a7e-49f9-b205-c84b729b
+ 8d59/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gemeindezentrum Bremgarten b. Bern\, BKP 2
+ 24.1 Flachdächer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

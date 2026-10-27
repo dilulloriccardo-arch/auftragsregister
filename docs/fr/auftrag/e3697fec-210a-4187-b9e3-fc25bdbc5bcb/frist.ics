@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3697fec-210a-4187-b9e3-fc25bdbc5bcb-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T113000Z
+SUMMARY:Délai de remise : Elagage des lignes aériennes
+DESCRIPTION:Acheteur public : Services industriels de Genève (SIG) - Dir
+ ection Achats\nDélai de remise : 11.11.2026\, 12 h 30\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/e3697fec-210a-4187-b9e3-fc
+ 25bdbc5bcb/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/e3697fec-210a-4187-b9e3-fc25bdbc5bcb
+URL:https://auftragsregister.ch/fr/auftrag/e3697fec-210a-4187-b9e3-fc25bdbc
+ 5bcb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Elagage des lignes aériennes
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

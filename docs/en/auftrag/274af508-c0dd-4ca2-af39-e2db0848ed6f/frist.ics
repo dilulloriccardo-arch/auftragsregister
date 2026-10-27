@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:274af508-c0dd-4ca2-af39-e2db0848ed6f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261106T093000Z
+SUMMARY:Submission deadline: Construction du centre sportif d’Aumont – 
+ Installation sportive
+DESCRIPTION:Public buyer: Commune Les Montets\nSubmission deadline: 6 Nov
+  2026\, 10:30\nIn the register: https://auftragsregister.ch/en/auftrag/27
+ 4af508-c0dd-4ca2-af39-e2db0848ed6f/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/274af508-c0dd-4ca2-af39-e2db0848ed6f
+URL:https://auftragsregister.ch/en/auftrag/274af508-c0dd-4ca2-af39-e2db0848
+ ed6f/
+LOCATION:Aumont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Construction du centre sportif d’Aumont 
+ – Installation sportive
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

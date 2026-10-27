@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d76b78e1-2098-43e2-9893-69d55cfffdc4-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Scadenza: Neubau Primaschulanlage und Sporthalle Ferrach\, 8630 Rü
+ ti ZH - 214 Gesamtleistung Holzbau mit Gebäudehülle
+DESCRIPTION:Ente pubblico: Gemeinde Rüti ZH\nScadenza: 16.12.2026\, 11:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/d76b78e1-2098-43e2-9
+ 893-69d55cfffdc4/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/d76b78e1-2098-43e2-9893-69d55cfffdc4
+URL:https://auftragsregister.ch/it/auftrag/d76b78e1-2098-43e2-9893-69d55cff
+ fdc4/
+LOCATION:Rüti ZH
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Primaschulanlage und Sporthalle Ferrach\, 8630
+  Rüti ZH - 214 Gesamtleistung Holzbau mit Gebäudehülle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

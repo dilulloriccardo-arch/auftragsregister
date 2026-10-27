@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cbd6cc80-5792-4a2c-88f1-ec6b22ce3201-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:1
+DTSTART:20261122T225900Z
+SUMMARY:Délai de remise : BKS-2319 Réalisation de l'Enquête sur les fa
+ milles et les générations 2028 et de l’Enquête sur la langue\, la rel
+ igion et la culture 2029.
+DESCRIPTION:Acheteur public : Bundesamt für Statistik\nDélai de remise
+  : 22.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/cbd6cc80-5792-4a2c-88f1-ec6b22ce3201/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/cbd6cc80-5792-4a2c-88f1-ec
+ 6b22ce3201
+URL:https://auftragsregister.ch/fr/auftrag/cbd6cc80-5792-4a2c-88f1-ec6b22ce
+ 3201/
+LOCATION:Neuenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKS-2319 Réalisation de l'Enquête sur le
+ s familles et les générations 2028 et de l’Enquête sur la langue\, la
+  religion et la culture 2029.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

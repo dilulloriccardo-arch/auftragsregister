@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1fba5ef7-1636-4dab-8bba-e16caed6ee67-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261125T100000Z
+SUMMARY:Délai de remise : Rénovation complète des trois tours de la Ci
+ té-Jonction (M374TI) mandat d'ingénieur-e sanitaire
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 25.11.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/1fba5ef7-1636-4dab-8bba-e16caed6ee6
+ 7/\nPublication officielle : https://www.simap.ch/fr/project-detail/1fba
+ 5ef7-1636-4dab-8bba-e16caed6ee67
+URL:https://auftragsregister.ch/fr/auftrag/1fba5ef7-1636-4dab-8bba-e16caed6
+ ee67/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation complète des trois tours de l
+ a Cité-Jonction (M374TI) mandat d'ingénieur-e sanitaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

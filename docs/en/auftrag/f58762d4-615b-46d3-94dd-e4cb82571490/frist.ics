@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f58762d4-615b-46d3-94dd-e4cb82571490-frist@auftragsregister.ch
+DTSTAMP:20260907T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Submission deadline: KZO l Leuchtenersatz l BKP 232-02 Elektroanlag
+ en
+DESCRIPTION:Public buyer: Hochbauamt Kanton Zürich\nSubmission deadline: 6
+  Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/f58762d4-615b-46d3-94dd-e4cb82571490/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/f58762d4-615b-46d3-94dd-e4cb82571490
+URL:https://auftragsregister.ch/en/auftrag/f58762d4-615b-46d3-94dd-e4cb8257
+ 1490/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: KZO l Leuchtenersatz l BKP 232-02 Elektroa
+ nlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

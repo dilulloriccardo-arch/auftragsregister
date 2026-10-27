@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:498b7658-54f8-445f-8c0d-3435ca3f9948-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261129T150000Z
+SUMMARY:Scadenza: Foodtrucks campus EPFL
+DESCRIPTION:Ente pubblico: EPFL VPF ACHATS\nScadenza: 29.11.2026\, 16:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/498b7658-54f8-445f-8c0
+ d-3435ca3f9948/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/498b7658-54f8-445f-8c0d-3435ca3f9948
+URL:https://auftragsregister.ch/it/auftrag/498b7658-54f8-445f-8c0d-3435ca3f
+ 9948/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Foodtrucks campus EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

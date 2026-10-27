@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:957049d7-a19e-4a68-83e3-eb4b13784f2c-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261030T110000Z
+SUMMARY:Eingabefrist: Beschaffung Blutkulturautomaten-System
+DESCRIPTION:Auftraggeber: Zentrum für Labormedizin\nEingabefrist: 30.10.20
+ 26\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/95704
+ 9d7-a19e-4a68-83e3-eb4b13784f2c/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/957049d7-a19e-4a68-83e3-eb4b13784f2c
+URL:https://auftragsregister.ch/de/auftrag/957049d7-a19e-4a68-83e3-eb4b1378
+ 4f2c/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung Blutkulturautomaten-System
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

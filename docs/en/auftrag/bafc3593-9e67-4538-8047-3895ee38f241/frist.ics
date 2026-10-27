@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bafc3593-9e67-4538-8047-3895ee38f241-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261109T090000Z
+SUMMARY:Submission deadline: Fond Mobile de la piscine du Martinet – Roll
+ e
+DESCRIPTION:Public buyer: Enfance et Jeunesse ENJEU - Association Intercomm
+ unale de Rolle et Environs (bureau d'ingénieurs-conseils Energestion SA)\
+ nSubmission deadline: 9 Nov 2026\, 10:00\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/bafc3593-9e67-4538-8047-3895ee38f241/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/bafc3593-9e67-4538-804
+ 7-3895ee38f241
+URL:https://auftragsregister.ch/en/auftrag/bafc3593-9e67-4538-8047-3895ee38
+ f241/
+LOCATION:Rolle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fond Mobile de la piscine du Martinet – 
+ Rolle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

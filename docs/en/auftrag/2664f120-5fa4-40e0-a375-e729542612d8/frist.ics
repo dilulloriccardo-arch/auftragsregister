@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2664f120-5fa4-40e0-a375-e729542612d8-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T190000Z
+SUMMARY:Submission deadline: LED Generalersatz Gebäude Römerrain\, BBZP\,
+  Pfäffikon SZ
+DESCRIPTION:Public buyer: Hochbauamt Kanton Schwyz\nSubmission deadline: 6
+  Nov 2026\, 20:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/2664f120-5fa4-40e0-a375-e729542612d8/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/2664f120-5fa4-40e0-a375-e729542612d8
+URL:https://auftragsregister.ch/en/auftrag/2664f120-5fa4-40e0-a375-e7295426
+ 12d8/
+LOCATION:Pfäffikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: LED Generalersatz Gebäude Römerrain\, BB
+ ZP\, Pfäffikon SZ
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

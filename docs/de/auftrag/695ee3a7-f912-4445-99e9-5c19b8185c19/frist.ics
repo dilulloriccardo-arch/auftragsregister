@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:695ee3a7-f912-4445-99e9-5c19b8185c19-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:1
+DTSTART:20270108T140000Z
+SUMMARY:Eingabefrist: Diesel SN EN590\, alternativer Diesel SN EN 15940\, H
+ eizöl
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Konzerneinkauf 
+ Verbrauchsgüter\nEingabefrist: 08.01.2027\, 15.00 Uhr\nIm Register: http
+ s://auftragsregister.ch/de/auftrag/695ee3a7-f912-4445-99e9-5c19b8185c19/\n
+ Amtliche Publikation: https://www.simap.ch/de/project-detail/695ee3a7-f912
+ -4445-99e9-5c19b8185c19
+URL:https://auftragsregister.ch/de/auftrag/695ee3a7-f912-4445-99e9-5c19b818
+ 5c19/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Diesel SN EN590\, alternativer Diesel SN EN 15940
+ \, Heizöl
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46f9cebb-d09c-4c3a-9ea0-af0de647374d-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261028T100000Z
+SUMMARY:Submission deadline: Sanierung Reckenwinkel\, Oberglatt
+DESCRIPTION:Public buyer: Landis AG\nSubmission deadline: 28 Oct 2026\, 1
+ 1:00\nIn the register: https://auftragsregister.ch/en/auftrag/46f9cebb-d09
+ c-4c3a-9ea0-af0de647374d/\nOfficial publication: https://www.simap.ch/en/p
+ roject-detail/46f9cebb-d09c-4c3a-9ea0-af0de647374d
+URL:https://auftragsregister.ch/en/auftrag/46f9cebb-d09c-4c3a-9ea0-af0de647
+ 374d/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Reckenwinkel\, Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

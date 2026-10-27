@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:80abeb17-cff4-428f-84bf-b2521903a1c9-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T160000Z
+SUMMARY:Eingabefrist: Mandat de monteur électricien AOO_2026_188_ELECSTA
+DESCRIPTION:Auftraggeber: Service achats de l'IMAD\nEingabefrist: 07.12.202
+ 6\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/80abeb
+ 17-cff4-428f-84bf-b2521903a1c9/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/80abeb17-cff4-428f-84bf-b2521903a1c9
+URL:https://auftragsregister.ch/de/auftrag/80abeb17-cff4-428f-84bf-b2521903
+ a1c9/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Mandat de monteur électricien AOO_2026_188_ELECS
+ TA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

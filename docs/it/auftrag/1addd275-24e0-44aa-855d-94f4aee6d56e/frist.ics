@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1addd275-24e0-44aa-855d-94f4aee6d56e-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261123T160000Z
+SUMMARY:Scadenza: Gesamtsanierung Gerechtigkeitsgasse 40\, Postgasse 31 + 3
+ 3 und Gerechtigkeitsgasse 42\, Postgasse 35 - BKP 272 Metallbauarbeiten
+DESCRIPTION:Ente pubblico: Burgergemeinde Bern\nScadenza: 23.11.2026\, 17:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/1addd275-24e0-44aa
+ -855d-94f4aee6d56e/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/1addd275-24e0-44aa-855d-94f4aee6d56e
+URL:https://auftragsregister.ch/it/auftrag/1addd275-24e0-44aa-855d-94f4aee6
+ d56e/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gesamtsanierung Gerechtigkeitsgasse 40\, Postgasse 31
+  + 33 und Gerechtigkeitsgasse 42\, Postgasse 35 - BKP 272 Metallbauarbeite
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

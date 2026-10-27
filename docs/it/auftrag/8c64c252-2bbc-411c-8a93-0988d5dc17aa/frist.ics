@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8c64c252-2bbc-411c-8a93-0988d5dc17aa-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261208T100000Z
+SUMMARY:Scadenza: Neubau Feuerwehr- und Werkgebäude\, BKP 463 Umgebungsarb
+ eiten (Gärtner)
+DESCRIPTION:Ente pubblico: Stadt Illnau-Effretikon\, Abteilung Hochbau\nSca
+ denza: 08.12.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/au
+ ftrag/8c64c252-2bbc-411c-8a93-0988d5dc17aa/\nPubblicazione ufficiale: http
+ s://www.simap.ch/it/project-detail/8c64c252-2bbc-411c-8a93-0988d5dc17aa
+URL:https://auftragsregister.ch/it/auftrag/8c64c252-2bbc-411c-8a93-0988d5dc
+ 17aa/
+LOCATION:Effretikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Feuerwehr- und Werkgebäude\, BKP 463 Umgebung
+ sarbeiten (Gärtner)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

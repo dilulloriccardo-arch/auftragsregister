@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:368652b5-6b90-49b4-9465-d8c872b3c052-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Scadenza: EPFL - AN CMi extension et P3 extension – Prestations d
+ e mandataires
+DESCRIPTION:Ente pubblico: EPFL - VPF - Achats\nScadenza: 02.12.2026\, 16:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/368652b5-6b90-49b4
+ -9465-d8c872b3c052/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/368652b5-6b90-49b4-9465-d8c872b3c052
+URL:https://auftragsregister.ch/it/auftrag/368652b5-6b90-49b4-9465-d8c872b3
+ c052/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EPFL - AN CMi extension et P3 extension – Prestatio
+ ns de mandataires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

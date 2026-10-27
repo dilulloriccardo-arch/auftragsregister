@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aff6ace3-735e-4de4-a908-b7100114c24c-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:0
+DTSTART:20261111T150054Z
+SUMMARY:Délai de remise : Mandat de courtier en assurance
+DESCRIPTION:Acheteur public : Verein Versicherungspool Rheintal c/o Gemei
+ nde Widnau\nDélai de remise : 11.11.2026\, 16 h 00\nDans le registr
+ e : https://auftragsregister.ch/fr/auftrag/aff6ace3-735e-4de4-a908-b7100
+ 114c24c/\nPublication officielle : https://www.simap.ch/fr/project-detai
+ l/aff6ace3-735e-4de4-a908-b7100114c24c
+URL:https://auftragsregister.ch/fr/auftrag/aff6ace3-735e-4de4-a908-b7100114
+ c24c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mandat de courtier en assurance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

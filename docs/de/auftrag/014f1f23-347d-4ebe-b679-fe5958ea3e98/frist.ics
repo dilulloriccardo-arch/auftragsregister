@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:014f1f23-347d-4ebe-b679-fe5958ea3e98-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Eingabefrist: Schulhaus Campus Signau - Submission BKP 421 Gärtner
+ arbeiten
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Signau (Itten+Brechbühl)\nEing
+ abefrist: 06.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/014f1f23-347d-4ebe-b679-fe5958ea3e98/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/014f1f23-347d-4ebe-b679-fe5958ea3e9
+ 8
+URL:https://auftragsregister.ch/de/auftrag/014f1f23-347d-4ebe-b679-fe5958ea
+ 3e98/
+LOCATION:Signau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulhaus Campus Signau - Submission BKP 421 Gär
+ tnerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

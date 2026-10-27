@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6391c3f1-ffb1-4514-82af-9a9528df0c4b-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Eingabefrist: 283.4 Deckenbekleidung aus Holzwerkstoffen
+DESCRIPTION:Auftraggeber: Gemeinde Richterswil / Abteilung Liegenschaften\n
+ Eingabefrist: 07.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/6391c3f1-ffb1-4514-82af-9a9528df0c4b/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/6391c3f1-ffb1-4514-82af-9a9528d
+ f0c4b
+URL:https://auftragsregister.ch/de/auftrag/6391c3f1-ffb1-4514-82af-9a9528df
+ 0c4b/
+LOCATION:Richterswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 283.4 Deckenbekleidung aus Holzwerkstoffen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

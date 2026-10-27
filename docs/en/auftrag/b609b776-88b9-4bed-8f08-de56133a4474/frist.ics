@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b609b776-88b9-4bed-8f08-de56133a4474-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261204T140000Z
+SUMMARY:Submission deadline: CFF/SBB\, Ligne 410\, km 90.650-90.852\, Piete
+ rlen | Stabilisation de talus/Böschungsstabilisierung
+DESCRIPTION:Public buyer: SBB CFF FFS Achats projets de construction Régio
+ n Ouest\nSubmission deadline: 4 Dec 2026\, 15:00\nIn the register: https
+ ://auftragsregister.ch/en/auftrag/b609b776-88b9-4bed-8f08-de56133a4474/\nO
+ fficial publication: https://www.simap.ch/en/project-detail/b609b776-88b9-
+ 4bed-8f08-de56133a4474
+URL:https://auftragsregister.ch/en/auftrag/b609b776-88b9-4bed-8f08-de56133a
+ 4474/
+LOCATION:Pieterlen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: CFF/SBB\, Ligne 410\, km 90.650-90.852\, P
+ ieterlen | Stabilisation de talus/Böschungsstabilisierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

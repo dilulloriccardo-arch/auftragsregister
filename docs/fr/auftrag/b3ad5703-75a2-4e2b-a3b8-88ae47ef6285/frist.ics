@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3ad5703-75a2-4e2b-a3b8-88ae47ef6285-frist@auftragsregister.ch
+DTSTAMP:20260901T000000Z
+SEQUENCE:0
+DTSTART:20261027T225900Z
+SUMMARY:Délai de remise : 18.0321 Berne\, Bremgartenstrasse 131-137\, gy
+ mnase de Neufeld\, rénovation et construction de remplacement\, CFC 235 S
+ ystèmes de détection d’incendie SP 1-2
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 27.10.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/b3ad5703-75a2-4e2b-a3b8-8
+ 8ae47ef6285/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/b3ad5703-75a2-4e2b-a3b8-88ae47ef6285
+URL:https://auftragsregister.ch/fr/auftrag/b3ad5703-75a2-4e2b-a3b8-88ae47ef
+ 6285/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 18.0321 Berne\, Bremgartenstrasse 131-137\
+ , gymnase de Neufeld\, rénovation et construction de remplacement\, CFC 2
+ 35 Systèmes de détection d’incendie SP 1-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

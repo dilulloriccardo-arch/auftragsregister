@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:de779452-8cb5-4117-a846-53296708beaf-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:1
+DTSTART:20261104T100000Z
+SUMMARY:Eingabefrist: Rues de la Faucille\, Jean-Jacques De-Sellon et de la
+  Sibérie (2363) Travaux d'assainissement et de réfections de chaussée
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 04.11.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/de779452-8cb5-4117-a846-53296708beaf/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/de779452-8cb5-4117-a846-53296708
+ beaf
+URL:https://auftragsregister.ch/de/auftrag/de779452-8cb5-4117-a846-53296708
+ beaf/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rues de la Faucille\, Jean-Jacques De-Sellon et d
+ e la Sibérie (2363) Travaux d'assainissement et de réfections de chauss
+ ée
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

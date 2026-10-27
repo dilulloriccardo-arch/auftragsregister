@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a95896cf-5755-438c-92da-e982e2936ea8-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261201T225900Z
+SUMMARY:Submission deadline: Services for ArcGIS Geoplatforms
+DESCRIPTION:Public buyer: ETH Zürich - Abt. Procurement Services VPIN\nSub
+ mission deadline: 1 Dec 2026\, 23:59\nIn the register: https://auftragsr
+ egister.ch/en/auftrag/a95896cf-5755-438c-92da-e982e2936ea8/\nOfficial publ
+ ication: https://www.simap.ch/en/project-detail/a95896cf-5755-438c-92da-e9
+ 82e2936ea8
+URL:https://auftragsregister.ch/en/auftrag/a95896cf-5755-438c-92da-e982e293
+ 6ea8/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Services for ArcGIS Geoplatforms
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

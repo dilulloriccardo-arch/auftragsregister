@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a3c2ab7-2262-4b21-9c5d-a47bd16896df-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : Kantonsstrasse Nr. 24\, Steinach: Betriebs- un
+ d Gestaltungskonzept Hauptstrasse\, Dorfzentrum
+DESCRIPTION:Acheteur public : Kanton St.Gallen\, Tiefbauamt\, Strassen- u
+ nd Kunstbauten\nDélai de remise : 30.11.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/6a3c2ab7-2262-4b21-9c5d-a
+ 47bd16896df/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/6a3c2ab7-2262-4b21-9c5d-a47bd16896df
+URL:https://auftragsregister.ch/fr/auftrag/6a3c2ab7-2262-4b21-9c5d-a47bd168
+ 96df/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kantonsstrasse Nr. 24\, Steinach: Betriebs
+ - und Gestaltungskonzept Hauptstrasse\, Dorfzentrum
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

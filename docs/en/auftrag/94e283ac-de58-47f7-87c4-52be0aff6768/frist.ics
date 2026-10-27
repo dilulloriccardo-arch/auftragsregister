@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:94e283ac-de58-47f7-87c4-52be0aff6768-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Submission deadline: Ausschreibung Bodenlegerarbeiten – KAT.007
+DESCRIPTION:Public buyer: ETHOS Immobilien GmbH\nSubmission deadline: 9 No
+ v 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/9
+ 4e283ac-de58-47f7-87c4-52be0aff6768/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/94e283ac-de58-47f7-87c4-52be0aff6768
+URL:https://auftragsregister.ch/en/auftrag/94e283ac-de58-47f7-87c4-52be0aff
+ 6768/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibung Bodenlegerarbeiten – KAT.0
+ 07
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:82197a33-b813-46cd-bfd5-3bfb4fa8a12c-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Eingabefrist: HR-Dienstleistungen\, Projekt 5171
+DESCRIPTION:Auftraggeber: FINMA Beschaffungs- und Vertragsmanagement BVM\nE
+ ingabefrist: 23.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/82197a33-b813-46cd-bfd5-3bfb4fa8a12c/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/82197a33-b813-46cd-bfd5-3bfb4fa8
+ a12c
+URL:https://auftragsregister.ch/de/auftrag/82197a33-b813-46cd-bfd5-3bfb4fa8
+ a12c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: HR-Dienstleistungen\, Projekt 5171
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

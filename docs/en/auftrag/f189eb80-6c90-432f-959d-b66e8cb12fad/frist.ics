@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f189eb80-6c90-432f-959d-b66e8cb12fad-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261030T110000Z
+SUMMARY:Submission deadline: 963_272.2 Allgemeine Metallbauarbeiten\, Erwei
+ terung SH Loreto\, Zug
+DESCRIPTION:Public buyer: Baudepartement Stadt Zug\, Submission Hochbau\nSu
+ bmission deadline: 30 Oct 2026\, 12:00\nIn the register: https://auftrag
+ sregister.ch/en/auftrag/f189eb80-6c90-432f-959d-b66e8cb12fad/\nOfficial pu
+ blication: https://www.simap.ch/en/project-detail/f189eb80-6c90-432f-959d-
+ b66e8cb12fad
+URL:https://auftragsregister.ch/en/auftrag/f189eb80-6c90-432f-959d-b66e8cb1
+ 2fad/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 963_272.2 Allgemeine Metallbauarbeiten\, E
+ rweiterung SH Loreto\, Zug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

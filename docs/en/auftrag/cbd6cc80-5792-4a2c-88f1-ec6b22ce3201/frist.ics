@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cbd6cc80-5792-4a2c-88f1-ec6b22ce3201-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:1
+DTSTART:20261122T225900Z
+SUMMARY:Submission deadline: BKS-2319 Durchführung der Erhebung zu Familie
+ n und Generationen 2028 und der Erhebung zur Sprache\, Religion und Kultur
+  2029.
+DESCRIPTION:Public buyer: Bundesamt für Statistik\nSubmission deadline: 22
+  Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/cbd6cc80-5792-4a2c-88f1-ec6b22ce3201/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/cbd6cc80-5792-4a2c-88f1-ec6b22ce3201
+URL:https://auftragsregister.ch/en/auftrag/cbd6cc80-5792-4a2c-88f1-ec6b22ce
+ 3201/
+LOCATION:Neuenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKS-2319 Durchführung der Erhebung zu Fam
+ ilien und Generationen 2028 und der Erhebung zur Sprache\, Religion und Ku
+ ltur 2029.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5b03ac0a-8c74-4f66-aedb-50603839b1ba-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Eingabefrist: N00.F2 MP-260006 - F2 Trassee / Umwelt Wallis - Unter
+ haltsmarkierung Wallis 2027 - 2032 (ID 12225)
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA - Abteilung Strasse
+ ninfrastruktur West - Filiale Thun\nEingabefrist: 07.12.2026\, 23.59 Uhr\
+ nIm Register: https://auftragsregister.ch/de/auftrag/5b03ac0a-8c74-4f66-ae
+ db-50603839b1ba/\nAmtliche Publikation: https://www.simap.ch/de/project-de
+ tail/5b03ac0a-8c74-4f66-aedb-50603839b1ba
+URL:https://auftragsregister.ch/de/auftrag/5b03ac0a-8c74-4f66-aedb-50603839
+ b1ba/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: N00.F2 MP-260006 - F2 Trassee / Umwelt Wallis - U
+ nterhaltsmarkierung Wallis 2027 - 2032 (ID 12225)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

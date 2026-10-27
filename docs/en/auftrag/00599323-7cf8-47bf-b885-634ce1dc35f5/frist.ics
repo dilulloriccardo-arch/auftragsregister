@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:00599323-7cf8-47bf-b885-634ce1dc35f5-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Submission deadline: Appel d’offres pour l'attribution du service
+  de réception\, de traitement et d'élimination des déchets encombrants 
+ combustibles non recyclables sur le territoire de la ville de Mendrisio po
+ ur la période 2027-2031
+DESCRIPTION:Public buyer: Comune di Mendrisio\nSubmission deadline: 30 Nov
+  2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/00
+ 599323-7cf8-47bf-b885-634ce1dc35f5/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/00599323-7cf8-47bf-b885-634ce1dc35f5
+URL:https://auftragsregister.ch/en/auftrag/00599323-7cf8-47bf-b885-634ce1dc
+ 35f5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Appel d’offres pour l'attribution du ser
+ vice de réception\, de traitement et d'élimination des déchets encombra
+ nts combustibles non recyclables sur le territoire de la ville de Mendrisi
+ o pour la période 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1c27cf07-8077-432e-8e8b-6f42cdca3a5c-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: Huberstrasse 18/20\, Gesamtsanierung\, BKP 230 Elektroanl
+ agen
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 16.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/1c27cf07-8077-432e-8e8b-6f42cdca3a5c/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/1c27cf07-8077-432e-8e8b-6f42cdca3a5c
+URL:https://auftragsregister.ch/it/auftrag/1c27cf07-8077-432e-8e8b-6f42cdca
+ 3a5c/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Huberstrasse 18/20\, Gesamtsanierung\, BKP 230 Elektr
+ oanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

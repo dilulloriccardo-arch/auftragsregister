@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9866656-7b1b-4dc9-a031-63819a98aaeb-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:1
+DTSTART:20261105T225500Z
+SUMMARY:Submission deadline: Elektroinstallationen Hauptsitz AEW
+DESCRIPTION:Public buyer: AEW Energie AG\nSubmission deadline: 5 Nov 2026
+ \, 23:55\nIn the register: https://auftragsregister.ch/en/auftrag/e9866656
+ -7b1b-4dc9-a031-63819a98aaeb/\nOfficial publication: https://www.simap.ch/
+ en/project-detail/e9866656-7b1b-4dc9-a031-63819a98aaeb
+URL:https://auftragsregister.ch/en/auftrag/e9866656-7b1b-4dc9-a031-63819a98
+ aaeb/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Elektroinstallationen Hauptsitz AEW
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

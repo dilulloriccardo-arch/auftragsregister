@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46f9cebb-d09c-4c3a-9ea0-af0de647374d-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261028T100000Z
+SUMMARY:Délai de remise : Sanierung Reckenwinkel\, Oberglatt
+DESCRIPTION:Acheteur public : Landis AG\nDélai de remise : 28.10.2026\
+ , 11 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag
+ /46f9cebb-d09c-4c3a-9ea0-af0de647374d/\nPublication officielle : https:/
+ /www.simap.ch/fr/project-detail/46f9cebb-d09c-4c3a-9ea0-af0de647374d
+URL:https://auftragsregister.ch/fr/auftrag/46f9cebb-d09c-4c3a-9ea0-af0de647
+ 374d/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Reckenwinkel\, Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

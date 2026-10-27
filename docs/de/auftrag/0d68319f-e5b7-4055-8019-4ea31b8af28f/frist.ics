@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d68319f-e5b7-4055-8019-4ea31b8af28f-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Eingabefrist: 19175 - Obere Waidstrasse (Waidbadstrasse 45 bis Ober
+ e Waidstrasse 44)
+DESCRIPTION:Auftraggeber: Stadt Zürich Tiefbauamt Werterhatlung\nEingabefr
+ ist: 05.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/0d68319f-e5b7-4055-8019-4ea31b8af28f/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/0d68319f-e5b7-4055-8019-4ea31b8af28f
+URL:https://auftragsregister.ch/de/auftrag/0d68319f-e5b7-4055-8019-4ea31b8a
+ f28f/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 19175 - Obere Waidstrasse (Waidbadstrasse 45 bis 
+ Obere Waidstrasse 44)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5df9cdec-53e6-45b5-9b5e-e2c082c8793e-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Eingabefrist: Catering Tagesstrukturen Glarus Nord
+DESCRIPTION:Auftraggeber: Gemeinde Glarus Nord\nEingabefrist: 09.11.2026\, 
+ 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5df9cdec-5
+ 3e6-45b5-9b5e-e2c082c8793e/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/5df9cdec-53e6-45b5-9b5e-e2c082c8793e
+URL:https://auftragsregister.ch/de/auftrag/5df9cdec-53e6-45b5-9b5e-e2c082c8
+ 793e/
+LOCATION:Niederurnen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Catering Tagesstrukturen Glarus Nord
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

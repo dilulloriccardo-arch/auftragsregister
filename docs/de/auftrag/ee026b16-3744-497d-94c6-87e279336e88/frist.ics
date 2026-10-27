@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee026b16-3744-497d-94c6-87e279336e88-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20270119T140000Z
+SUMMARY:Eingabefrist: 16.7Hz\, 15kV Innenraumschaltanlage Unterwerk Zolliko
+ fen
+DESCRIPTION:Auftraggeber: SBB CFF FFS Infra-Energie\nEingabefrist: 19.01.20
+ 27\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ee026
+ b16-3744-497d-94c6-87e279336e88/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/ee026b16-3744-497d-94c6-87e279336e88
+URL:https://auftragsregister.ch/de/auftrag/ee026b16-3744-497d-94c6-87e27933
+ 6e88/
+LOCATION:Zollikofen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 16.7Hz\, 15kV Innenraumschaltanlage Unterwerk Zol
+ likofen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

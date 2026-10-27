@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:326ea869-eb41-44c9-842c-52035393af27-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Scadenza: 291_Concorso per l’acquisizione e la personalizzazione 
+ di un applicativo per la digitalizzazione dei processi IT
+DESCRIPTION:Ente pubblico: Centro sistemi informativi\nScadenza: 01.12.2026
+ \, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/326ea869-eb
+ 41-44c9-842c-52035393af27/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/326ea869-eb41-44c9-842c-52035393af27
+URL:https://auftragsregister.ch/it/auftrag/326ea869-eb41-44c9-842c-52035393
+ af27/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 291_Concorso per l’acquisizione e la personalizzazi
+ one di un applicativo per la digitalizzazione dei processi IT
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fc1a1e66-03a7-45d4-b983-00a753341fc9-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T130000Z
+SUMMARY:Submission deadline: 57.103 Ampliamento piastra tecnica e logistica
+  - Impianti di ventilazione
+DESCRIPTION:Public buyer: Ente Ospedaliero Cantonale - Area Infrastrutture 
+ e Operations\nSubmission deadline: 1 Dec 2026\, 14:00\nIn the register: 
+ https://auftragsregister.ch/en/auftrag/fc1a1e66-03a7-45d4-b983-00a753341fc
+ 9/\nOfficial publication: https://www.simap.ch/en/project-detail/fc1a1e66-
+ 03a7-45d4-b983-00a753341fc9
+URL:https://auftragsregister.ch/en/auftrag/fc1a1e66-03a7-45d4-b983-00a75334
+ 1fc9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 57.103 Ampliamento piastra tecnica e logis
+ tica - Impianti di ventilazione
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87a04af4-c842-4a2a-b98b-4b483ba3cb67-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261030T160000Z
+SUMMARY:Eingabefrist: Gemeindehaus Bubikon - Sanierung und betriebliche Opt
+ imierung
+DESCRIPTION:Auftraggeber: Gemeinde Bubikon - Abteilung Liegenschaften\nEing
+ abefrist: 30.10.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/87a04af4-c842-4a2a-b98b-4b483ba3cb67/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/87a04af4-c842-4a2a-b98b-4b483ba3cb6
+ 7
+URL:https://auftragsregister.ch/de/auftrag/87a04af4-c842-4a2a-b98b-4b483ba3
+ cb67/
+LOCATION:Bubikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gemeindehaus Bubikon - Sanierung und betriebliche
+  Optimierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

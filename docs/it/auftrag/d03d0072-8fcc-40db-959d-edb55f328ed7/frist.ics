@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d03d0072-8fcc-40db-959d-edb55f328ed7-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261119T103000Z
+SUMMARY:Scadenza: Erneuerung Gas- und Wasserleitung Alte Landstrasse\, Ober
+ rieden
+DESCRIPTION:Ente pubblico: Gemeinde Oberrieden\, Abteilung Tiefbau und Umwe
+ lt\nScadenza: 19.11.2026\, 11:30\nNel registro: https://auftragsregister.c
+ h/it/auftrag/d03d0072-8fcc-40db-959d-edb55f328ed7/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/d03d0072-8fcc-40db-959d-edb55f32
+ 8ed7
+URL:https://auftragsregister.ch/it/auftrag/d03d0072-8fcc-40db-959d-edb55f32
+ 8ed7/
+LOCATION:Oberrieden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erneuerung Gas- und Wasserleitung Alte Landstrasse\, 
+ Oberrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7939041-61ea-4285-a4b9-4c5d0e4b9ade-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261207T225900Z
+SUMMARY:Scadenza: (26168) 735 Zivi-Ausbildungskurs Erste Hilfe
+DESCRIPTION:Ente pubblico: Bundesamt für Zivildienst ZIVI\nScadenza: 07.12
+ .2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/e79390
+ 41-61ea-4285-a4b9-4c5d0e4b9ade/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/e7939041-61ea-4285-a4b9-4c5d0e4b9ade
+URL:https://auftragsregister.ch/it/auftrag/e7939041-61ea-4285-a4b9-4c5d0e4b
+ 9ade/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (26168) 735 Zivi-Ausbildungskurs Erste Hilfe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

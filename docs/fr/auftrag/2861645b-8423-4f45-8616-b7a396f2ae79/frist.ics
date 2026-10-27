@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2861645b-8423-4f45-8616-b7a396f2ae79-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : API-Management-System
+DESCRIPTION:Acheteur public : Stadt St.Gallen\, Stadtwerke\nDélai de rem
+ ise : 30.11.2026\, 12 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/2861645b-8423-4f45-8616-b7a396f2ae79/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/2861645b-8423-4f45-8616
+ -b7a396f2ae79
+URL:https://auftragsregister.ch/fr/auftrag/2861645b-8423-4f45-8616-b7a396f2
+ ae79/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : API-Management-System
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

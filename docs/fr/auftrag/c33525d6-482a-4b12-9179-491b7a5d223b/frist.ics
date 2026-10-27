@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c33525d6-482a-4b12-9179-491b7a5d223b-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Délai de remise : MP-090070 EP VZ Wiggertal – Aarau Ost\, réa
+ lisation d'inspections par caméra des canalisations
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3 Zofingen\nDélai de remise : 06.11.2026\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/c3
+ 3525d6-482a-4b12-9179-491b7a5d223b/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/c33525d6-482a-4b12-9179-491b7a5d223b
+URL:https://auftragsregister.ch/fr/auftrag/c33525d6-482a-4b12-9179-491b7a5d
+ 223b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-090070 EP VZ Wiggertal – Aarau Ost\, 
+ réalisation d'inspections par caméra des canalisations
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

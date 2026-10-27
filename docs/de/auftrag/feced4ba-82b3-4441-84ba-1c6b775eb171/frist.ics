@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:feced4ba-82b3-4441-84ba-1c6b775eb171-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261127T125900Z
+SUMMARY:Eingabefrist: Ultra-Hochleistungs-Flüssigchromatographie Geräte g
+ ekoppelt mit Triple Quadrupol Massenspektrometer - 3 Geräte
+DESCRIPTION:Auftraggeber: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nEingabefrist: 27.11.2026\, 13.59 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/feced4ba-82b3-4441-84ba-1c6b775eb171/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/feced4ba-82b3-4441-84ba-1c6
+ b775eb171
+URL:https://auftragsregister.ch/de/auftrag/feced4ba-82b3-4441-84ba-1c6b775e
+ b171/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ultra-Hochleistungs-Flüssigchromatographie Gerä
+ te gekoppelt mit Triple Quadrupol Massenspektrometer - 3 Geräte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

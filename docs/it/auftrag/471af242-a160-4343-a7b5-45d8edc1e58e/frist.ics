@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:471af242-a160-4343-a7b5-45d8edc1e58e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Scadenza: M-Files - Renouvellement des licences et des prestations 
+ de développement de la plateforme
+DESCRIPTION:Ente pubblico: DFNS - Service de l'informatique\nScadenza: 04.1
+ 2.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/471af
+ 242-a160-4343-a7b5-45d8edc1e58e/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/471af242-a160-4343-a7b5-45d8edc1e58e
+URL:https://auftragsregister.ch/it/auftrag/471af242-a160-4343-a7b5-45d8edc1
+ e58e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: M-Files - Renouvellement des licences et des prestati
+ ons de développement de la plateforme
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

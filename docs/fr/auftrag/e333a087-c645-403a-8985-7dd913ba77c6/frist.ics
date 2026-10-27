@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e333a087-c645-403a-8985-7dd913ba77c6-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:1
+DTSTART:20261127T225900Z
+SUMMARY:Délai de remise : N09.48 MP-160035 - Ant.Villars-Ste-Croix-Venne
+ s - Lot 4 - Réfection des revêtements (ID 10979)
+DESCRIPTION:Acheteur public : Office fédéral des routes OFROU\, Divisio
+ n Infrastructure routière Ouest\, filiale Estavayer-le-Lac\nDélai de rem
+ ise : 27.11.2026\, 23 h 59\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/e333a087-c645-403a-8985-7dd913ba77c6/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/e333a087-c645-403a-8985
+ -7dd913ba77c6
+URL:https://auftragsregister.ch/fr/auftrag/e333a087-c645-403a-8985-7dd913ba
+ 77c6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : N09.48 MP-160035 - Ant.Villars-Ste-Croix-V
+ ennes - Lot 4 - Réfection des revêtements (ID 10979)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

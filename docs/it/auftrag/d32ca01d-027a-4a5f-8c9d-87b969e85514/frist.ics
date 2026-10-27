@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d32ca01d-027a-4a5f-8c9d-87b969e85514-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261104T160000Z
+SUMMARY:Scadenza: Parc de téléphones mobiles 2026/2027
+DESCRIPTION:Ente pubblico: Police Cantonale Valaisanne / Kantonspolizei Wal
+ lis\nScadenza: 04.11.2026\, 17:00\nNel registro: https://auftragsregister.
+ ch/it/auftrag/d32ca01d-027a-4a5f-8c9d-87b969e85514/\nPubblicazione ufficia
+ le: https://www.simap.ch/it/project-detail/d32ca01d-027a-4a5f-8c9d-87b969e
+ 85514
+URL:https://auftragsregister.ch/it/auftrag/d32ca01d-027a-4a5f-8c9d-87b969e8
+ 5514/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Parc de téléphones mobiles 2026/2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

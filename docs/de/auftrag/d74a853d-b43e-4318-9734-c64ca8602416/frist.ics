@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d74a853d-b43e-4318-9734-c64ca8602416-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Eingabefrist: Bern\, Bremgartenstrasse 131-137\, Gymnasium Neufeld\
+ , Instandstellung und Ersatzneubau\, BKP 113 Sanierung Altlasten TP 1-2
+DESCRIPTION:Auftraggeber: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nEingabefrist: 23.11.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/d74a853d-b43e-4318-9734-c64ca8602416/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/d74a853d-b43e-4318-97
+ 34-c64ca8602416
+URL:https://auftragsregister.ch/de/auftrag/d74a853d-b43e-4318-9734-c64ca860
+ 2416/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bern\, Bremgartenstrasse 131-137\, Gymnasium Neuf
+ eld\, Instandstellung und Ersatzneubau\, BKP 113 Sanierung Altlasten TP 1-
+ 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

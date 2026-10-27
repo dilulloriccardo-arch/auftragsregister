@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ba6a12a-0bc2-4080-95a3-00091b46370c-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261201T110000Z
+SUMMARY:Délai de remise : Berufliche Integrationsbegleitung (BIG)
+DESCRIPTION:Acheteur public : Amt für Wirtschaft und Arbeit\, Abteilung 
+ LAM\nDélai de remise : 01.12.2026\, 12 h 00\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/7ba6a12a-0bc2-4080-95a3-00091b46370c
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/7ba6a
+ 12a-0bc2-4080-95a3-00091b46370c
+URL:https://auftragsregister.ch/fr/auftrag/7ba6a12a-0bc2-4080-95a3-00091b46
+ 370c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Berufliche Integrationsbegleitung (BIG)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

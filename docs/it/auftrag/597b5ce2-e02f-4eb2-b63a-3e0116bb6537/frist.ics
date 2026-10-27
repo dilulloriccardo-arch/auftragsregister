@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:597b5ce2-e02f-4eb2-b63a-3e0116bb6537-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Scadenza: AUH-SAN\, Sanierung Dienstgebäude HKW Aubrugg\, BKP 248 
+ Gebäudeautomation
+DESCRIPTION:Ente pubblico: Elektrizitätswerk der Stadt Zürich (ewz)\nScad
+ enza: 23.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/597b5ce2-e02f-4eb2-b63a-3e0116bb6537/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/597b5ce2-e02f-4eb2-b63a-3e0116bb6537
+URL:https://auftragsregister.ch/it/auftrag/597b5ce2-e02f-4eb2-b63a-3e0116bb
+ 6537/
+LOCATION:Wallisellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AUH-SAN\, Sanierung Dienstgebäude HKW Aubrugg\, BKP 
+ 248 Gebäudeautomation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

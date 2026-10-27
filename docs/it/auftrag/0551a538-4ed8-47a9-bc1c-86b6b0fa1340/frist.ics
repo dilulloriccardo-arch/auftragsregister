@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0551a538-4ed8-47a9-bc1c-86b6b0fa1340-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:1
+DTSTART:20261204T110000Z
+SUMMARY:Scadenza: Acquisition de bus hybrides diesel et services associés
+DESCRIPTION:Ente pubblico: tpg\nScadenza: 04.12.2026\, 12:00\nNel registro:
+  https://auftragsregister.ch/it/auftrag/0551a538-4ed8-47a9-bc1c-86b6b0fa13
+ 40/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/0551a
+ 538-4ed8-47a9-bc1c-86b6b0fa1340
+URL:https://auftragsregister.ch/it/auftrag/0551a538-4ed8-47a9-bc1c-86b6b0fa
+ 1340/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Acquisition de bus hybrides diesel et services associ
+ és
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3239a64-ff48-4e93-9ed7-6132a4f1b255-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Eingabefrist: Erklärvideos für die Abstimmungsinformationen der S
+ tadt Zürich
+DESCRIPTION:Auftraggeber: Stadtkanzlei Zürich\nEingabefrist: 26.11.2026\, 
+ 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d3239a64-f
+ f48-4e93-9ed7-6132a4f1b255/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/d3239a64-ff48-4e93-9ed7-6132a4f1b255
+URL:https://auftragsregister.ch/de/auftrag/d3239a64-ff48-4e93-9ed7-6132a4f1
+ b255/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Erklärvideos für die Abstimmungsinformationen d
+ er Stadt Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

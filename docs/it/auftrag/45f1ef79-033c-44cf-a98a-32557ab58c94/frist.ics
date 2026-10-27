@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45f1ef79-033c-44cf-a98a-32557ab58c94-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261112T143000Z
+SUMMARY:Scadenza: AERA - Transports des eaux usées d’Ollon à la STEP r
+ égionale - Travaux de béton armé et maçonnerie
+DESCRIPTION:Ente pubblico: ASSOCIATION INTERCOMMUNALE POUR L’EPURATION DE
+ S EAUX USEES DE LA REGION D’AIGLE AERA\nScadenza: 12.11.2026\, 15:30\nNe
+ l registro: https://auftragsregister.ch/it/auftrag/45f1ef79-033c-44cf-a98a
+ -32557ab58c94/\nPubblicazione ufficiale: https://www.simap.ch/it/project-d
+ etail/45f1ef79-033c-44cf-a98a-32557ab58c94
+URL:https://auftragsregister.ch/it/auftrag/45f1ef79-033c-44cf-a98a-32557ab5
+ 8c94/
+LOCATION:Aigle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AERA - Transports des eaux usées d’Ollon à la STE
+ P régionale - Travaux de béton armé et maçonnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

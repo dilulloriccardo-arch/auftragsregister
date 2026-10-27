@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20c3e11d-99d4-41ed-b1c6-32ef97628b69-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:1
+DTSTART:20261030T110000Z
+SUMMARY:Scadenza: Sanierung und Umnutzung Kapuzinerkloster zur Musikschule
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Olten Direktion Bau (Verfahren
+ sbegleitung: MET Architects GmbH)\nScadenza: 30.10.2026\, 12:00\nNel regis
+ tro: https://auftragsregister.ch/it/auftrag/20c3e11d-99d4-41ed-b1c6-32ef97
+ 628b69/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/2
+ 0c3e11d-99d4-41ed-b1c6-32ef97628b69
+URL:https://auftragsregister.ch/it/auftrag/20c3e11d-99d4-41ed-b1c6-32ef9762
+ 8b69/
+LOCATION:Olten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung und Umnutzung Kapuzinerkloster zur Musiksch
+ ule
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

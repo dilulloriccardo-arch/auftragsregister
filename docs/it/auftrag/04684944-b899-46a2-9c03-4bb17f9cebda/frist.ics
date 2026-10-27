@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:04684944-b899-46a2-9c03-4bb17f9cebda-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261208T225900Z
+SUMMARY:Scadenza: N08.52 MP-080293 - EP Spiez - Interlaken West - PV Umwelt
+ \, inkl. UBB - Phase MP/DP - Inb./Abschluss (ID 12081)
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Abteilung Strass
+ eninfrastruktur West - Filiale Thun\nScadenza: 08.12.2026\, 23:59\nNel reg
+ istro: https://auftragsregister.ch/it/auftrag/04684944-b899-46a2-9c03-4bb1
+ 7f9cebda/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail
+ /04684944-b899-46a2-9c03-4bb17f9cebda
+URL:https://auftragsregister.ch/it/auftrag/04684944-b899-46a2-9c03-4bb17f9c
+ ebda/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N08.52 MP-080293 - EP Spiez - Interlaken West - PV Um
+ welt\, inkl. UBB - Phase MP/DP - Inb./Abschluss (ID 12081)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

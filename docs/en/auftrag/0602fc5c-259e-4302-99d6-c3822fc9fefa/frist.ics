@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0602fc5c-259e-4302-99d6-c3822fc9fefa-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Submission deadline: ewzWHH/BGH\, Etappe 2\, BKP 90 Ausstattung Mö
+ bel
+DESCRIPTION:Public buyer: Elektrizitätswerk der Stadt Zürich (ewz)\nSubmi
+ ssion deadline: 30 Nov 2026\, 16:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/0602fc5c-259e-4302-99d6-c3822fc9fefa/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/0602fc5c-259e-4302-99d6-c38
+ 22fc9fefa
+URL:https://auftragsregister.ch/en/auftrag/0602fc5c-259e-4302-99d6-c3822fc9
+ fefa/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ewzWHH/BGH\, Etappe 2\, BKP 90 Ausstattung
+  Möbel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

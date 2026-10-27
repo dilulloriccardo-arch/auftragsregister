@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60b6a154-571e-4031-bccb-25936877f5c9-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Eingabefrist: UtiLourds_A1 / Achat de 2 véhicules de transport et 
+ de 2 fourgons atelier pour les besoins des services de la Ville de Genève
+DESCRIPTION:Auftraggeber: Centrale municipale d'achat et d'impression de la
+  Ville de Genève\nEingabefrist: 30.11.2026\, 12.00 Uhr\nIm Register: htt
+ ps://auftragsregister.ch/de/auftrag/60b6a154-571e-4031-bccb-25936877f5c9/\
+ nAmtliche Publikation: https://www.simap.ch/de/project-detail/60b6a154-571
+ e-4031-bccb-25936877f5c9
+URL:https://auftragsregister.ch/de/auftrag/60b6a154-571e-4031-bccb-25936877
+ f5c9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: UtiLourds_A1 / Achat de 2 véhicules de transport
+  et de 2 fourgons atelier pour les besoins des services de la Ville de Gen
+ ève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

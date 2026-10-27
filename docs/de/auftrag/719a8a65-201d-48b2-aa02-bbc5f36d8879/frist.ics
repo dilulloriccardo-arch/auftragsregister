@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:719a8a65-201d-48b2-aa02-bbc5f36d8879-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T153000Z
+SUMMARY:Eingabefrist: RENOVATION TECHNIQUE CVSER LULLIER (Centre Horticole)
+  secteur Nord - Lot 244 - Installations de ventilation
+DESCRIPTION:Auftraggeber: Office cantonal des bâtiments (OCBA)\nEingabefri
+ st: 09.11.2026\, 16.30 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/719a8a65-201d-48b2-aa02-bbc5f36d8879/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/719a8a65-201d-48b2-aa02-bbc5f36d8879
+URL:https://auftragsregister.ch/de/auftrag/719a8a65-201d-48b2-aa02-bbc5f36d
+ 8879/
+LOCATION:Centre Horticole Lullier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: RENOVATION TECHNIQUE CVSER LULLIER (Centre Hortic
+ ole) secteur Nord - Lot 244 - Installations de ventilation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

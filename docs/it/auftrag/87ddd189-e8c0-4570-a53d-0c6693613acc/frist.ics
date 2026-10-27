@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87ddd189-e8c0-4570-a53d-0c6693613acc-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T190000Z
+SUMMARY:Scadenza: LED Generalersatz Gebäude Berufsbildungszentrum Pfäffik
+ on BBZP
+DESCRIPTION:Ente pubblico: Hochbauamt Kanton Schwyz\nScadenza: 06.11.2026\,
+  20:00\nNel registro: https://auftragsregister.ch/it/auftrag/87ddd189-e8c0
+ -4570-a53d-0c6693613acc/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/87ddd189-e8c0-4570-a53d-0c6693613acc
+URL:https://auftragsregister.ch/it/auftrag/87ddd189-e8c0-4570-a53d-0c669361
+ 3acc/
+LOCATION:Pfäffikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: LED Generalersatz Gebäude Berufsbildungszentrum Pfä
+ ffikon BBZP
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

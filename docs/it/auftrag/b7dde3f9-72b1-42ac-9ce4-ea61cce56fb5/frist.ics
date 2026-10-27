@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b7dde3f9-72b1-42ac-9ce4-ea61cce56fb5-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T110000Z
+SUMMARY:Scadenza: MP 2025.09.795 - Support niveau 1 Service Desk
+DESCRIPTION:Ente pubblico: Transports publics de la région lausannoise sa\
+ nScadenza: 19.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/b7dde3f9-72b1-42ac-9ce4-ea61cce56fb5/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/b7dde3f9-72b1-42ac-9ce4-ea61cce56fb
+ 5
+URL:https://auftragsregister.ch/it/auftrag/b7dde3f9-72b1-42ac-9ce4-ea61cce5
+ 6fb5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP 2025.09.795 - Support niveau 1 Service Desk
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

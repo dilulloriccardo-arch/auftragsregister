@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49af4d1c-7e61-495d-97f0-e48a17ee4838-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T090000Z
+SUMMARY:Délai de remise : Alésage du tunnel MOB de Montreux
+DESCRIPTION:Acheteur public : Compagnie du Chemin de fer Montreux Oberlan
+ d bernois SA - Infrastructure Projets\nDélai de remise : 04.11.2026\, 1
+ 0 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/49
+ af4d1c-7e61-495d-97f0-e48a17ee4838/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/49af4d1c-7e61-495d-97f0-e48a17ee4838
+URL:https://auftragsregister.ch/fr/auftrag/49af4d1c-7e61-495d-97f0-e48a17ee
+ 4838/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Alésage du tunnel MOB de Montreux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

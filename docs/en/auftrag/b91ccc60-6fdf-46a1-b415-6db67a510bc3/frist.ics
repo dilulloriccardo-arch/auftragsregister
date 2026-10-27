@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b91ccc60-6fdf-46a1-b415-6db67a510bc3-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Submission deadline: Cure con Cuore Sagl - Assicurazione collettiva
+  d'indennità giornaliera in caso di malattia Assicurazione obbligatoria c
+ ontro gli infortuni secondo LAINF Assicurazione complementare alla LAINF
+DESCRIPTION:Public buyer: Cure con Cuore Sagl\nSubmission deadline: 29 Oct
+  2026\nIn the register: https://auftragsregister.ch/en/auftrag/b91ccc60-6
+ fdf-46a1-b415-6db67a510bc3/\nOfficial publication: https://www.simap.ch/en
+ /project-detail/b91ccc60-6fdf-46a1-b415-6db67a510bc3
+URL:https://auftragsregister.ch/en/auftrag/b91ccc60-6fdf-46a1-b415-6db67a51
+ 0bc3/
+LOCATION:Ascona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Cure con Cuore Sagl - Assicurazione collet
+ tiva d'indennità giornaliera in caso di malattia Assicurazione obbligator
+ ia contro gli infortuni secondo LAINF Assicurazione complementare alla LAI
+ NF
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

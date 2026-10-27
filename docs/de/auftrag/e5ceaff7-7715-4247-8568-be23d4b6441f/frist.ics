@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5ceaff7-7715-4247-8568-be23d4b6441f-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Eingabefrist: Bestattungsdienstleistungen
+DESCRIPTION:Auftraggeber: Stadt St.Gallen\, Bestattungsamt/Zivilstandsamt\n
+ Eingabefrist: 09.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/e5ceaff7-7715-4247-8568-be23d4b6441f/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/e5ceaff7-7715-4247-8568-be23d4b
+ 6441f
+URL:https://auftragsregister.ch/de/auftrag/e5ceaff7-7715-4247-8568-be23d4b6
+ 441f/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bestattungsdienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

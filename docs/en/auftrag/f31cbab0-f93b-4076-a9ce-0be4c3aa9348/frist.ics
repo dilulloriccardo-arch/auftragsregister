@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f31cbab0-f93b-4076-a9ce-0be4c3aa9348-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Submission deadline: St. Moritz – Tirano\, Puntaltatunnel\, km 33
+ .787\, Erneuerung (Projektverfasser und Bauleiter)
+DESCRIPTION:Public buyer: Rhätische Bahn AG\nSubmission deadline: 30 Nov
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/f3
+ 1cbab0-f93b-4076-a9ce-0be4c3aa9348/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/f31cbab0-f93b-4076-a9ce-0be4c3aa9348
+URL:https://auftragsregister.ch/en/auftrag/f31cbab0-f93b-4076-a9ce-0be4c3aa
+ 9348/
+LOCATION:Poschiavo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: St. Moritz – Tirano\, Puntaltatunnel\, k
+ m 33.787\, Erneuerung (Projektverfasser und Bauleiter)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

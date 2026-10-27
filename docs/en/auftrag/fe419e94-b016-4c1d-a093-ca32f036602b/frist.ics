@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe419e94-b016-4c1d-a093-ca32f036602b-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Submission deadline: Baumeisterarbeiten Viehtriebweg Ober Bödmeren
+ -Oberalp-Chammli und Bewirtschaftungsweg Wannelen - Nideralp\, Unterschäc
+ hen
+DESCRIPTION:Public buyer: Einfache Gesellschaft Schattige Stäfel (Hanspete
+ r Berger)\nSubmission deadline: 2 Nov 2026\, 12:00\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/fe419e94-b016-4c1d-a093-ca32f036602b/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/fe419e94-b01
+ 6-4c1d-a093-ca32f036602b
+URL:https://auftragsregister.ch/en/auftrag/fe419e94-b016-4c1d-a093-ca32f036
+ 602b/
+LOCATION:Unterschächen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Baumeisterarbeiten Viehtriebweg Ober Bödm
+ eren-Oberalp-Chammli und Bewirtschaftungsweg Wannelen - Nideralp\, Untersc
+ hächen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

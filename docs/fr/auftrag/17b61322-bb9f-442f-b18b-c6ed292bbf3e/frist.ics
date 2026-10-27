@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:17b61322-bb9f-442f-b18b-c6ed292bbf3e-frist@auftragsregister.ch
+DTSTAMP:20260912T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Délai de remise : ARA Worblental\, élimination des micropolluan
+ ts\, travaux de charpente métallique
+DESCRIPTION:Acheteur public : Gemeindeverband ARA Worblental\nDélai de r
+ emise : 04.12.2026\, 12 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/17b61322-bb9f-442f-b18b-c6ed292bbf3e/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/17b61322-bb9f-442f-b1
+ 8b-c6ed292bbf3e
+URL:https://auftragsregister.ch/fr/auftrag/17b61322-bb9f-442f-b18b-c6ed292b
+ bf3e/
+LOCATION:Worblaufen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ARA Worblental\, élimination des micropol
+ luants\, travaux de charpente métallique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

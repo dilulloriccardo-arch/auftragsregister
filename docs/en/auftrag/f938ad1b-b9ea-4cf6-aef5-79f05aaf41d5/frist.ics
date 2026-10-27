@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f938ad1b-b9ea-4cf6-aef5-79f05aaf41d5-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20270224T100000Z
+SUMMARY:Submission deadline: APPEL D’OFFRES « CONCEPTION CONSTRUCTION »
+  EN ENTREPRISE TOTALE (ET)
+DESCRIPTION:Public buyer: Commune d'Autigny (FRevaz Consult Sàrl)\nSubmiss
+ ion deadline: 24 Feb 2027\, 11:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/f938ad1b-b9ea-4cf6-aef5-79f05aaf41d5/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/f938ad1b-b9ea-4cf6-aef5-79f05
+ aaf41d5
+URL:https://auftragsregister.ch/en/auftrag/f938ad1b-b9ea-4cf6-aef5-79f05aaf
+ 41d5/
+LOCATION:Autigny
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: APPEL D’OFFRES « CONCEPTION CONSTRUCTIO
+ N » EN ENTREPRISE TOTALE (ET)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

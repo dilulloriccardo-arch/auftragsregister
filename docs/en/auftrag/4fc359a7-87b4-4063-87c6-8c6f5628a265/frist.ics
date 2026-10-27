@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4fc359a7-87b4-4063-87c6-8c6f5628a265-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261103T160000Z
+SUMMARY:Submission deadline: Basel Music Academy – Campus 2040\, Area A (
+ Buildings 2\, 4 and 7) – BKP 211 Construction works
+DESCRIPTION:Public buyer: Musik-Akademie Basel (ARGE GP MAB Campus 2040)\nS
+ ubmission deadline: 3 Nov 2026\, 17:00\nIn the register: https://auftrag
+ sregister.ch/en/auftrag/4fc359a7-87b4-4063-87c6-8c6f5628a265/\nOfficial pu
+ blication: https://www.simap.ch/en/project-detail/4fc359a7-87b4-4063-87c6-
+ 8c6f5628a265
+URL:https://auftragsregister.ch/en/auftrag/4fc359a7-87b4-4063-87c6-8c6f5628
+ a265/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Basel Music Academy – Campus 2040\, Area
+  A (Buildings 2\, 4 and 7) – BKP 211 Construction works
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

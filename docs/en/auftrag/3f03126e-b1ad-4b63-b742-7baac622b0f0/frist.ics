@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3f03126e-b1ad-4b63-b742-7baac622b0f0-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Submission deadline: Produktion und Warmanlieferung von Mahlzeiten 
+ und Menü-Komponenten für die Tagesstrukturen der Primarstufe Basel-Stadt
+DESCRIPTION:Public buyer: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nSubmis
+ sion deadline: 4 Nov 2026\, 12:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/3f03126e-b1ad-4b63-b742-7baac622b0f0/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/3f03126e-b1ad-4b63-b742-7baac
+ 622b0f0
+URL:https://auftragsregister.ch/en/auftrag/3f03126e-b1ad-4b63-b742-7baac622
+ b0f0/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Produktion und Warmanlieferung von Mahlzei
+ ten und Menü-Komponenten für die Tagesstrukturen der Primarstufe Basel-S
+ tadt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

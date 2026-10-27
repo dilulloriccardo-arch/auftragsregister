@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee026b16-3744-497d-94c6-87e279336e88-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20270119T140000Z
+SUMMARY:Délai de remise : Installation de couplage intérieure 16\,7 Hz\
+ , 15 kV\, sous-station de Zollikofen
+DESCRIPTION:Acheteur public : SBB CFF FFS Infra-Energie\nDélai de remise
+  : 19.01.2027\, 15 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/ee026b16-3744-497d-94c6-87e279336e88/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/ee026b16-3744-497d-94c6-87
+ e279336e88
+URL:https://auftragsregister.ch/fr/auftrag/ee026b16-3744-497d-94c6-87e27933
+ 6e88/
+LOCATION:Zollikofen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Installation de couplage intérieure 16\,7
+  Hz\, 15 kV\, sous-station de Zollikofen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

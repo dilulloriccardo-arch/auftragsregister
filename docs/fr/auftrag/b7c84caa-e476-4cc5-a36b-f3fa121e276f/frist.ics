@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b7c84caa-e476-4cc5-a36b-f3fa121e276f-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : Sanierung Bergackerstrasse / Schluecht\, Cham
+DESCRIPTION:Acheteur public : Einwohnergemeinde Cham\nDélai de remise 
+ : 23.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/b7c84caa-e476-4cc5-a36b-f3fa121e276f/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/b7c84caa-e476-4cc5-a36b-f3fa1
+ 21e276f
+URL:https://auftragsregister.ch/fr/auftrag/b7c84caa-e476-4cc5-a36b-f3fa121e
+ 276f/
+LOCATION:Cham
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Bergackerstrasse / Schluecht\, C
+ ham
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

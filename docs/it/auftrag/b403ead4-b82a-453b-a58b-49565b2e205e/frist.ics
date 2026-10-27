@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b403ead4-b82a-453b-a58b-49565b2e205e-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261203T100000Z
+SUMMARY:Scadenza: Erweiterung Kehrichtfahrzeugflotte
+DESCRIPTION:Ente pubblico: Zweckverband Abfallverwertung Bazenheid\nScadenz
+ a: 03.12.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/b403ead4-b82a-453b-a58b-49565b2e205e/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/b403ead4-b82a-453b-a58b-49565b2e205e
+URL:https://auftragsregister.ch/it/auftrag/b403ead4-b82a-453b-a58b-49565b2e
+ 205e/
+LOCATION:Bazenheid
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erweiterung Kehrichtfahrzeugflotte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

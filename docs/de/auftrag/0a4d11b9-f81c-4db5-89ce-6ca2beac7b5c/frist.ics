@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a4d11b9-f81c-4db5-89ce-6ca2beac7b5c-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261111T110000Z
+SUMMARY:Eingabefrist: Schulhaus Langwiesen Erweiterung und Sanierung\; BKP 
+ 231 Elektroanlagen und 233 Leuchten
+DESCRIPTION:Auftraggeber: Amt für Städtebau\nEingabefrist: 11.11.2026\, 1
+ 2.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0a4d11b9-f8
+ 1c-4db5-89ce-6ca2beac7b5c/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/0a4d11b9-f81c-4db5-89ce-6ca2beac7b5c
+URL:https://auftragsregister.ch/de/auftrag/0a4d11b9-f81c-4db5-89ce-6ca2beac
+ 7b5c/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulhaus Langwiesen Erweiterung und Sanierung\; 
+ BKP 231 Elektroanlagen und 233 Leuchten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

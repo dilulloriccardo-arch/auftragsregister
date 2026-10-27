@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:162e7dff-c20b-4119-9653-04a150e3379d-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261105T154500Z
+SUMMARY:Eingabefrist: Flumenthal\; Zentralgefängnis Kanton Solothurn (ZGSO
+ ) - Neubau / BKP 221.6 Tore aus Metall
+DESCRIPTION:Auftraggeber: Kanton Solothurn\, Bau- und Justizdepartement\, H
+ ochbauamt\nEingabefrist: 05.11.2026\, 16.45 Uhr\nIm Register: https://auf
+ tragsregister.ch/de/auftrag/162e7dff-c20b-4119-9653-04a150e3379d/\nAmtlich
+ e Publikation: https://www.simap.ch/de/project-detail/162e7dff-c20b-4119-9
+ 653-04a150e3379d
+URL:https://auftragsregister.ch/de/auftrag/162e7dff-c20b-4119-9653-04a150e3
+ 379d/
+LOCATION:Flumenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Flumenthal\; Zentralgefängnis Kanton Solothurn (
+ ZGSO) - Neubau / BKP 221.6 Tore aus Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

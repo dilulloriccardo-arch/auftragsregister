@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d5daa77b-31e4-4fed-8089-d056e1f45ea3-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261106T180000Z
+SUMMARY:Délai de remise : Approvisionnement en conduites réseaux CAD
+DESCRIPTION:Acheteur public : OIKEN SA Achats & Logistique\nDélai de rem
+ ise : 06.11.2026\, 19 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/d5daa77b-31e4-4fed-8089-d056e1f45ea3/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/d5daa77b-31e4-4fed-8089
+ -d056e1f45ea3
+URL:https://auftragsregister.ch/fr/auftrag/d5daa77b-31e4-4fed-8089-d056e1f4
+ 5ea3/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Approvisionnement en conduites réseaux CA
+ D
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

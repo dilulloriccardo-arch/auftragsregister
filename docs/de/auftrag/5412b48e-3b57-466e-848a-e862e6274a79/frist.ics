@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5412b48e-3b57-466e-848a-e862e6274a79-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Eingabefrist: Neubau Doppelkindergarten\, Arbon - BKP 214 Montageba
+ u in Holz
+DESCRIPTION:Auftraggeber: Primarschulgemeinde Arbon\nEingabefrist: 02.11.20
+ 26\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5412b
+ 48e-3b57-466e-848a-e862e6274a79/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/5412b48e-3b57-466e-848a-e862e6274a79
+URL:https://auftragsregister.ch/de/auftrag/5412b48e-3b57-466e-848a-e862e627
+ 4a79/
+LOCATION:Arbon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Doppelkindergarten\, Arbon - BKP 214 Monta
+ gebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

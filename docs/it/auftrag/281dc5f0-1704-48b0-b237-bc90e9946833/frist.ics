@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:281dc5f0-1704-48b0-b237-bc90e9946833-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261029T153000Z
+SUMMARY:Scadenza: HEPIA - Rue de la Prairie 4 - Assainissement et rénovati
+ on des sous-stations de distribution de chauffage B-C-D-I
+DESCRIPTION:Ente pubblico: Etat de Genève\, Département du territoire - D
+ T\, Office cantonal des bâtiments\nScadenza: 29.10.2026\, 16:30\nNel regi
+ stro: https://auftragsregister.ch/it/auftrag/281dc5f0-1704-48b0-b237-bc90e
+ 9946833/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/
+ 281dc5f0-1704-48b0-b237-bc90e9946833
+URL:https://auftragsregister.ch/it/auftrag/281dc5f0-1704-48b0-b237-bc90e994
+ 6833/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: HEPIA - Rue de la Prairie 4 - Assainissement et réno
+ vation des sous-stations de distribution de chauffage B-C-D-I
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

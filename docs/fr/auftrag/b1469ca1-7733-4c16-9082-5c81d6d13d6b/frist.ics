@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b1469ca1-7733-4c16-9082-5c81d6d13d6b-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Délai de remise : MP-240051\, EM Lausen - Sissach / élaboration
+  du projet de construction et EES\, y compris la direction générale
+DESCRIPTION:Acheteur public : Eidgenössisches Departement für Umwelt\, 
+ Verkehr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abtei
+ lung Strasseninfrastruktur-Ost - F3\nDélai de remise : 23.11.2026\, 23
+  h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/b14
+ 69ca1-7733-4c16-9082-5c81d6d13d6b/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/b1469ca1-7733-4c16-9082-5c81d6d13d6b
+URL:https://auftragsregister.ch/fr/auftrag/b1469ca1-7733-4c16-9082-5c81d6d1
+ 3d6b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-240051\, EM Lausen - Sissach / élabora
+ tion du projet de construction et EES\, y compris la direction générale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

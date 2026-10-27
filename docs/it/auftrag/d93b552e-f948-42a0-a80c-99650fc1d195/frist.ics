@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d93b552e-f948-42a0-a80c-99650fc1d195-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261110T224500Z
+SUMMARY:Scadenza: EBP-643_Fernwärme-Armaturen
+DESCRIPTION:Ente pubblico: Energie Wasser Bern\nScadenza: 10.11.2026\, 23:4
+ 5\nNel registro: https://auftragsregister.ch/it/auftrag/d93b552e-f948-42a0
+ -a80c-99650fc1d195/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/d93b552e-f948-42a0-a80c-99650fc1d195
+URL:https://auftragsregister.ch/it/auftrag/d93b552e-f948-42a0-a80c-99650fc1
+ d195/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EBP-643_Fernwärme-Armaturen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3e44fbd-b371-4d22-9caf-c24b05684e25-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Délai de remise : Travaux de construction - Sous-station Handeck
+DESCRIPTION:Acheteur public : Swissgrid AG - Engineering & Construction\n
+ Délai de remise : 17.11.2026\, 23 h 59\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/e3e44fbd-b371-4d22-9caf-c24b05684e25/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/e3e44fbd-b
+ 371-4d22-9caf-c24b05684e25
+URL:https://auftragsregister.ch/fr/auftrag/e3e44fbd-b371-4d22-9caf-c24b0568
+ 4e25/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Travaux de construction - Sous-station Han
+ deck
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

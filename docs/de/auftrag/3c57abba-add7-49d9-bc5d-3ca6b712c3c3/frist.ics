@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c57abba-add7-49d9-bc5d-3ca6b712c3c3-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261113T100000Z
+SUMMARY:Eingabefrist: Sanierung und Gestaltung Nägelimoosstrasse
+DESCRIPTION:Auftraggeber: Stadt Kloten\nEingabefrist: 13.11.2026\, 11.00 U
+ hr\nIm Register: https://auftragsregister.ch/de/auftrag/3c57abba-add7-49d9
+ -bc5d-3ca6b712c3c3/\nAmtliche Publikation: https://www.simap.ch/de/project
+ -detail/3c57abba-add7-49d9-bc5d-3ca6b712c3c3
+URL:https://auftragsregister.ch/de/auftrag/3c57abba-add7-49d9-bc5d-3ca6b712
+ c3c3/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung und Gestaltung Nägelimoosstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

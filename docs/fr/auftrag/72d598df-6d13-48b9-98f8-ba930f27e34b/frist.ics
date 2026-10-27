@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72d598df-6d13-48b9-98f8-ba930f27e34b-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Délai de remise : KUE BZZ I 13216 I BKP 597-19 Surveillance gén
+ érale des voies et des fouilles à l’échelle du projet
+DESCRIPTION:Acheteur public : Hochbauamt\, Baubereich B\nDélai de remise
+  : 02.11.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/72d598df-6d13-48b9-98f8-ba930f27e34b/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/72d598df-6d13-48b9-98f8-ba
+ 930f27e34b
+URL:https://auftragsregister.ch/fr/auftrag/72d598df-6d13-48b9-98f8-ba930f27
+ e34b/
+LOCATION:Uetikon am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : KUE BZZ I 13216 I BKP 597-19 Surveillance 
+ générale des voies et des fouilles à l’échelle du projet
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

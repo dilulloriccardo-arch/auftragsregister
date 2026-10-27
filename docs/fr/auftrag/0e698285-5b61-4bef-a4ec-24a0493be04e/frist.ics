@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e698285-5b61-4bef-a4ec-24a0493be04e-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261108T225900Z
+SUMMARY:Délai de remise : Montagebau in Holz
+DESCRIPTION:Acheteur public : Gemeindeverwaltung Horw\nDélai de remise
+  : 08.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/0e698285-5b61-4bef-a4ec-24a0493be04e/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/0e698285-5b61-4bef-a4ec-24
+ a0493be04e
+URL:https://auftragsregister.ch/fr/auftrag/0e698285-5b61-4bef-a4ec-24a0493b
+ e04e/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

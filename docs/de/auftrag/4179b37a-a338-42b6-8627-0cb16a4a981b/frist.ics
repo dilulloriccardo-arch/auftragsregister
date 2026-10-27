@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4179b37a-a338-42b6-8627-0cb16a4a981b-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261116T225900Z
+SUMMARY:Eingabefrist: Beschaffung eines Leistungsmoduls mit zugehörigem St
+ euerungssystem im Hinblick auf den Aufbau einer Hochspannungsstromversorgu
+ ng
+DESCRIPTION:Auftraggeber: EPFL-Scientific Equipment\nEingabefrist: 16.11.20
+ 26\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/4179b
+ 37a-a338-42b6-8627-0cb16a4a981b/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/4179b37a-a338-42b6-8627-0cb16a4a981b
+URL:https://auftragsregister.ch/de/auftrag/4179b37a-a338-42b6-8627-0cb16a4a
+ 981b/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung eines Leistungsmoduls mit zugehörige
+ m Steuerungssystem im Hinblick auf den Aufbau einer Hochspannungsstromvers
+ orgung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:349a6d01-f4da-40c4-8b24-13c81a307073-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20261029T090000Z
+SUMMARY:Submission deadline: Sanierung Lauligstrasse
+DESCRIPTION:Public buyer: Bauamt Stadt Weinfelden\nSubmission deadline: 29
+  Oct 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/349a6d01-f4da-40c4-8b24-13c81a307073/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/349a6d01-f4da-40c4-8b24-13c81a307073
+URL:https://auftragsregister.ch/en/auftrag/349a6d01-f4da-40c4-8b24-13c81a30
+ 7073/
+LOCATION:Weinfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Lauligstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

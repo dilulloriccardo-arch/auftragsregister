@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4a830db8-b7e8-4e45-943f-d81f37a2a31b-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261116T153000Z
+SUMMARY:Délai de remise : Centre Aquatique de la Fontenette - Ville de C
+ arouge - CFC 281.60 Carrelage et faïence
+DESCRIPTION:Acheteur public : Ville de Carouge - Service des bâtiments\n
+ Délai de remise : 16.11.2026\, 16 h 30\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/4a830db8-b7e8-4e45-943f-d81f37a2a31b/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/4a830db8-b
+ 7e8-4e45-943f-d81f37a2a31b
+URL:https://auftragsregister.ch/fr/auftrag/4a830db8-b7e8-4e45-943f-d81f37a2
+ a31b/
+LOCATION:Carouge
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Centre Aquatique de la Fontenette - Ville 
+ de Carouge - CFC 281.60 Carrelage et faïence
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

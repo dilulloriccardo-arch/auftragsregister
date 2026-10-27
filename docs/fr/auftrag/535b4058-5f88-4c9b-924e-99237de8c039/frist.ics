@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:535b4058-5f88-4c9b-924e-99237de8c039-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T103000Z
+SUMMARY:Délai de remise : Collège principal de Pully - Lot 31 Faux-plaf
+ onds en bois
+DESCRIPTION:Acheteur public : Ville de Pully - Direction de l'urbanisme e
+ t de l'environnement - Itten+Brechbühl SA\nDélai de remise : 07.12.202
+ 6\, 11 h 30\nDans le registre : https://auftragsregister.ch/fr/auftr
+ ag/535b4058-5f88-4c9b-924e-99237de8c039/\nPublication officielle : https
+ ://www.simap.ch/fr/project-detail/535b4058-5f88-4c9b-924e-99237de8c039
+URL:https://auftragsregister.ch/fr/auftrag/535b4058-5f88-4c9b-924e-99237de8
+ c039/
+LOCATION:Pully
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Collège principal de Pully - Lot 31 Faux-
+ plafonds en bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

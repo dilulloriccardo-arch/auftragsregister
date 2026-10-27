@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbe53c53-5419-455b-b21a-8ce888b5290a-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Submission deadline: BKP 214.4 Äussere Bekleidungen Fassade
+DESCRIPTION:Public buyer: Baureag Architekten AG\nSubmission deadline: 25 
+ Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /bbe53c53-5419-455b-b21a-8ce888b5290a/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/bbe53c53-5419-455b-b21a-8ce888b5290a
+URL:https://auftragsregister.ch/en/auftrag/bbe53c53-5419-455b-b21a-8ce888b5
+ 290a/
+LOCATION:Birrwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 214.4 Äussere Bekleidungen Fassade
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

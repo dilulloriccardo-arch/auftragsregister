@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efba8a59-542f-45ec-8061-71091cf1289d-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : Appel d'offres pour la collecte des déchets m
+ énagers (DM)
+DESCRIPTION:Acheteur public : Municipio di Stabio\nDélai de remise : 0
+ 9.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/efba8a59-542f-45ec-8061-71091cf1289d/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/efba8a59-542f-45ec-8061-71091c
+ f1289d
+URL:https://auftragsregister.ch/fr/auftrag/efba8a59-542f-45ec-8061-71091cf1
+ 289d/
+LOCATION:Stabio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offres pour la collecte des déche
+ ts ménagers (DM)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce7ea8fb-0234-4a70-86b2-7c0e3ed9e59e-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Scadenza: FVV Brücke Au - Lustenau Stahlbau
+DESCRIPTION:Ente pubblico: Politische Gemeinde Au\nScadenza: 05.11.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/ce7ea8fb-0234-4
+ a70-86b2-7c0e3ed9e59e/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/ce7ea8fb-0234-4a70-86b2-7c0e3ed9e59e
+URL:https://auftragsregister.ch/it/auftrag/ce7ea8fb-0234-4a70-86b2-7c0e3ed9
+ e59e/
+LOCATION:Au
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: FVV Brücke Au - Lustenau Stahlbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

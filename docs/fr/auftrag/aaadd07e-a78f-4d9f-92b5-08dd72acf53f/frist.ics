@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aaadd07e-a78f-4d9f-92b5-08dd72acf53f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Délai de remise : 09/591 Bergdietikon\, Sanierung Raistrasse / S
+ teinackerstrasse
+DESCRIPTION:Acheteur public : Gemeinde Bergdietikon\nDélai de remise :
+  06.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/aaadd07e-a78f-4d9f-92b5-08dd72acf53f/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/aaadd07e-a78f-4d9f-92b5-08dd72
+ acf53f
+URL:https://auftragsregister.ch/fr/auftrag/aaadd07e-a78f-4d9f-92b5-08dd72ac
+ f53f/
+LOCATION:Bergdietikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 09/591 Bergdietikon\, Sanierung Raistrasse
+  / Steinackerstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

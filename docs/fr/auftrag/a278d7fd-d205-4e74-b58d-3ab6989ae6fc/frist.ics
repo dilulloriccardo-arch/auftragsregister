@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a278d7fd-d205-4e74-b58d-3ab6989ae6fc-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Délai de remise : Kantonsschule Baden\, Gebäude 1 - BKP 23 Elek
+ troanlagen (Leuchten- & Lampenumbauten)
+DESCRIPTION:Acheteur public : Immobilien Aargau\nDélai de remise : 09.
+ 11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/a278d7fd-d205-4e74-b58d-3ab6989ae6fc/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/a278d7fd-d205-4e74-b58d-3ab6989ae6
+ fc
+URL:https://auftragsregister.ch/fr/auftrag/a278d7fd-d205-4e74-b58d-3ab6989a
+ e6fc/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kantonsschule Baden\, Gebäude 1 - BKP 23 
+ Elektroanlagen (Leuchten- & Lampenumbauten)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

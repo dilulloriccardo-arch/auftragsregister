@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ded54e9-7147-4ceb-8ce1-ada28d3ab37e-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Délai de remise : UT-NR SN 2027-2028
+DESCRIPTION:Acheteur public : Ufficio delle commesse pubbliche e della pr
+ ogrammazione\nDélai de remise : 16.11.2026\, 11 h 00\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/1ded54e9-7147-4ceb-8ce1-ada
+ 28d3ab37e/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/1ded54e9-7147-4ceb-8ce1-ada28d3ab37e
+URL:https://auftragsregister.ch/fr/auftrag/1ded54e9-7147-4ceb-8ce1-ada28d3a
+ b37e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : UT-NR SN 2027-2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

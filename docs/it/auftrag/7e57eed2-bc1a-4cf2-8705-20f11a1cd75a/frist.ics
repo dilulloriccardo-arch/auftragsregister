@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7e57eed2-bc1a-4cf2-8705-20f11a1cd75a-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T103000Z
+SUMMARY:Scadenza: ICT-Betrieb und ICT-Ausrüstung der Primarstufe Birsfelde
+ n
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Birsfelden\nScadenza: 01.12.20
+ 26\, 11:30\nNel registro: https://auftragsregister.ch/it/auftrag/7e57eed2-
+ bc1a-4cf2-8705-20f11a1cd75a/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/7e57eed2-bc1a-4cf2-8705-20f11a1cd75a
+URL:https://auftragsregister.ch/it/auftrag/7e57eed2-bc1a-4cf2-8705-20f11a1c
+ d75a/
+LOCATION:Hauptstrasse 77
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ICT-Betrieb und ICT-Ausrüstung der Primarstufe Birsf
+ elden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

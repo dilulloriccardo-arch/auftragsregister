@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:960be01b-263a-41d1-9767-d353fc9fe29c-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261207T225900Z
+SUMMARY:Submission deadline: (26169) 735 Zivi-Ausbildungskurse «Arbeitssic
+ herheit und Maschinenkunde» sowie «Sicherer Umgang mit der Motorsäge»
+DESCRIPTION:Public buyer: Bundesamt für Zivildienst ZIVI\nSubmission deadl
+ ine: 7 Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en
+ /auftrag/960be01b-263a-41d1-9767-d353fc9fe29c/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/960be01b-263a-41d1-9767-d353fc9fe29c
+URL:https://auftragsregister.ch/en/auftrag/960be01b-263a-41d1-9767-d353fc9f
+ e29c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (26169) 735 Zivi-Ausbildungskurse «Arbeit
+ ssicherheit und Maschinenkunde» sowie «Sicherer Umgang mit der Motorsäg
+ e»
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

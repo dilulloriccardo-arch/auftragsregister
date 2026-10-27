@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efa3fb95-29c8-47da-8ee4-f4fe034d01bd-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Scadenza: Transport Grüngut Sarneraatal
+DESCRIPTION:Ente pubblico: Entsorgungszweckverband Obwalden\nScadenza: 09.1
+ 1.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/efa3f
+ b95-29c8-47da-8ee4-f4fe034d01bd/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/efa3fb95-29c8-47da-8ee4-f4fe034d01bd
+URL:https://auftragsregister.ch/it/auftrag/efa3fb95-29c8-47da-8ee4-f4fe034d
+ 01bd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Transport Grüngut Sarneraatal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

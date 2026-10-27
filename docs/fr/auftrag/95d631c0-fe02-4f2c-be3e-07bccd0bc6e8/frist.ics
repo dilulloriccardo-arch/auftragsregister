@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95d631c0-fe02-4f2c-be3e-07bccd0bc6e8-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Délai de remise : AO SI FM BATIMENTS II 2026
+DESCRIPTION:Acheteur public : Service de conseil et de soutien pour les m
+ archés publics de l'Université de Genève\nDélai de remise : 17.11.20
+ 26\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/auft
+ rag/95d631c0-fe02-4f2c-be3e-07bccd0bc6e8/\nPublication officielle : http
+ s://www.simap.ch/fr/project-detail/95d631c0-fe02-4f2c-be3e-07bccd0bc6e8
+URL:https://auftragsregister.ch/fr/auftrag/95d631c0-fe02-4f2c-be3e-07bccd0b
+ c6e8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AO SI FM BATIMENTS II 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

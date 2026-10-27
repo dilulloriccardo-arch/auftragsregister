@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6cfa606-7fb3-47d4-8176-2301f9ab5197-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261126T140000Z
+SUMMARY:Scadenza: HUG - Renovation de la Maternité – CFC 228.20 Stores 
+ à lamelles
+DESCRIPTION:Ente pubblico: Centrale d'achats et d'ingénierie biomédicale 
+ Vaud-Genève (CAIB)\nScadenza: 26.11.2026\, 15:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/a6cfa606-7fb3-47d4-8176-2301f9ab5197/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/a6cfa606-7fb3-4
+ 7d4-8176-2301f9ab5197
+URL:https://auftragsregister.ch/it/auftrag/a6cfa606-7fb3-47d4-8176-2301f9ab
+ 5197/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: HUG - Renovation de la Maternité – CFC 228.20 Stor
+ es à lamelles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

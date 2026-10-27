@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edf5a9d5-dec4-4550-a98e-9e0f6a4ff286-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261110T150000Z
+SUMMARY:Délai de remise : Neubau "WPZ Schüpfheim" - 282.4 Wand- und Bod
+ enbeläge aus Platten
+DESCRIPTION:Acheteur public : Lehmann AG Baumanagement\nDélai de remise
+  : 10.11.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/edf5a9d5-dec4-4550-a98e-9e0f6a4ff286/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/edf5a9d5-dec4-4550-a98e-9e
+ 0f6a4ff286
+URL:https://auftragsregister.ch/fr/auftrag/edf5a9d5-dec4-4550-a98e-9e0f6a4f
+ f286/
+LOCATION:Schüpfheim
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau "WPZ Schüpfheim" - 282.4 Wand- und
+  Bodenbeläge aus Platten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

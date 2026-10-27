@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3ab0699-31bf-4775-8051-615720322a6b-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Eingabefrist: 16.0249 - Langenthal\, Sanierung und Erweiterung Beru
+ fsfachschule: 250 Sanitär
+DESCRIPTION:Auftraggeber: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nEingabefrist: 09.11.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/e3ab0699-31bf-4775-8051-615720322a6b/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/e3ab0699-31bf-4775-80
+ 51-615720322a6b
+URL:https://auftragsregister.ch/de/auftrag/e3ab0699-31bf-4775-8051-61572032
+ 2a6b/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 16.0249 - Langenthal\, Sanierung und Erweiterung 
+ Berufsfachschule: 250 Sanitär
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

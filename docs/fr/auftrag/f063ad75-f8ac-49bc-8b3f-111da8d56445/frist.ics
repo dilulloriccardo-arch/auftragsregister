@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f063ad75-f8ac-49bc-8b3f-111da8d56445-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Délai de remise : Hochwasserschutz Dorf Alpthal - Vormassnahmen
+DESCRIPTION:Acheteur public : Bezirk Schwyz - Abteilung Umwelt\nDélai de
+  remise : 16.11.2026\, 16 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/f063ad75-f8ac-49bc-8b3f-111da8d56445/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/f063ad75-f8ac-49bc-
+ 8b3f-111da8d56445
+URL:https://auftragsregister.ch/fr/auftrag/f063ad75-f8ac-49bc-8b3f-111da8d5
+ 6445/
+LOCATION:Alpthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Hochwasserschutz Dorf Alpthal - Vormassnah
+ men
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

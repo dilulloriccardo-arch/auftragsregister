@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ae493921-2e9d-4edf-ac9e-db27c0ee5087-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:1
+DTSTART:20270427T215900Z
+SUMMARY:Délai de remise : 18.0321 Berne\, Bremgartenstrasse 131-137\, gy
+ mnase de Neufeld\, rénovation et construction de remplacement\, CFC 275 S
+ ystèmes de verrouillage SP 1-2
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 27.04.2027\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/ae493921-2e9d-4edf-ac9e-d
+ b27c0ee5087/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/ae493921-2e9d-4edf-ac9e-db27c0ee5087
+URL:https://auftragsregister.ch/fr/auftrag/ae493921-2e9d-4edf-ac9e-db27c0ee
+ 5087/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 18.0321 Berne\, Bremgartenstrasse 131-137\
+ , gymnase de Neufeld\, rénovation et construction de remplacement\, CFC 2
+ 75 Systèmes de verrouillage SP 1-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

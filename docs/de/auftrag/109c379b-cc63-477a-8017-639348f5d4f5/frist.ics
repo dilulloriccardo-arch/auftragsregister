@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:109c379b-cc63-477a-8017-639348f5d4f5-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Eingabefrist: Schulcampus Dorf - BKP 200 Spezialtiefbau_Etappe II
+DESCRIPTION:Auftraggeber: ARGE GP SCD - c/o Rapp AG\nEingabefrist: 02.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/109c3
+ 79b-cc63-477a-8017-639348f5d4f5/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/109c379b-cc63-477a-8017-639348f5d4f5
+URL:https://auftragsregister.ch/de/auftrag/109c379b-cc63-477a-8017-639348f5
+ d4f5/
+LOCATION:Binningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulcampus Dorf - BKP 200 Spezialtiefbau_Etappe 
+ II
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90ac50ba-681f-452d-b59a-7493621b00f8-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:1
+DTSTART:20261120T225900Z
+SUMMARY:Délai de remise : NKM - Planificateur général (GP) pour les tr
+ avaux de renouvellement de voie 2029-2033 - Contrat-cadre\, Suisse
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Infrastru
+ ktur - Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\n
+ Délai de remise : 20.11.2026\, 23 h 59\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/90ac50ba-681f-452d-b59a-7493621b00f8/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/90ac50ba-6
+ 81f-452d-b59a-7493621b00f8
+URL:https://auftragsregister.ch/fr/auftrag/90ac50ba-681f-452d-b59a-7493621b
+ 00f8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : NKM - Planificateur général (GP) pour le
+ s travaux de renouvellement de voie 2029-2033 - Contrat-cadre\, Suisse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

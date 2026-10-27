@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eca8820b-70c3-4570-bd2d-4f882547fa00-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261110T225800Z
+SUMMARY:Submission deadline: Ultra-high Resolution Electron-beam Lithograph
+ y System
+DESCRIPTION:Public buyer: ETH Zürich - Abt. Procurement & Export Services\
+ nSubmission deadline: 10 Nov 2026\, 23:58\nIn the register: https://auft
+ ragsregister.ch/en/auftrag/eca8820b-70c3-4570-bd2d-4f882547fa00/\nOfficial
+  publication: https://www.simap.ch/en/project-detail/eca8820b-70c3-4570-bd
+ 2d-4f882547fa00
+URL:https://auftragsregister.ch/en/auftrag/eca8820b-70c3-4570-bd2d-4f882547
+ fa00/
+LOCATION:Rüschlikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ultra-high Resolution Electron-beam Lithog
+ raphy System
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

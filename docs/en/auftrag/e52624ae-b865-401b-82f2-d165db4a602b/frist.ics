@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e52624ae-b865-401b-82f2-d165db4a602b-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T140000Z
+SUMMARY:Submission deadline: Multifunktions-Akkuladegerät zu Funksystem SE
+ -139
+DESCRIPTION:Public buyer: Bundesamt für Rüstung armasuisse\nSubmission de
+ adline: 24 Nov 2026\, 15:00\nIn the register: https://auftragsregister.c
+ h/en/auftrag/e52624ae-b865-401b-82f2-d165db4a602b/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/e52624ae-b865-401b-82f2-d165db4a602
+ b
+URL:https://auftragsregister.ch/en/auftrag/e52624ae-b865-401b-82f2-d165db4a
+ 602b/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Multifunktions-Akkuladegerät zu Funksyste
+ m SE-139
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

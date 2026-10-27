@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3ecd2c2e-c931-40d8-82f9-3c06cd723856-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261102T103000Z
+SUMMARY:Délai de remise : Appel d’offres pour la fourniture des licenc
+ es et du support de la solution Abacus
+DESCRIPTION:Acheteur public : Ville de Lausanne – LEA - Service d’org
+ anisation et d’informatique (SOI)\nDélai de remise : 02.11.2026\, 11
+  h 30\nDans le registre : https://auftragsregister.ch/fr/auftrag/3ec
+ d2c2e-c931-40d8-82f9-3c06cd723856/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/3ecd2c2e-c931-40d8-82f9-3c06cd723856
+URL:https://auftragsregister.ch/fr/auftrag/3ecd2c2e-c931-40d8-82f9-3c06cd72
+ 3856/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d’offres pour la fourniture des li
+ cences et du support de la solution Abacus
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

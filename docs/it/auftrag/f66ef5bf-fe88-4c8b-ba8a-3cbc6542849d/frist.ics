@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f66ef5bf-fe88-4c8b-ba8a-3cbc6542849d-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:1
+DTSTART:20261201T130000Z
+SUMMARY:Scadenza: Verkehrszukunft Region Thun\, Arbeitspaket 3: stadträuml
+ iche\, verkehrliche\, bautechnische und umweltplanerische Machbarkeitsstud
+ ie von zwei Tunnelvarianten
+DESCRIPTION:Ente pubblico: Entwicklungsraum Thun\nScadenza: 01.12.2026\, 14
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/f66ef5bf-fe88-4c
+ 8b-ba8a-3cbc6542849d/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/f66ef5bf-fe88-4c8b-ba8a-3cbc6542849d
+URL:https://auftragsregister.ch/it/auftrag/f66ef5bf-fe88-4c8b-ba8a-3cbc6542
+ 849d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Verkehrszukunft Region Thun\, Arbeitspaket 3: stadtr
+ äumliche\, verkehrliche\, bautechnische und umweltplanerische Machbarkeit
+ sstudie von zwei Tunnelvarianten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

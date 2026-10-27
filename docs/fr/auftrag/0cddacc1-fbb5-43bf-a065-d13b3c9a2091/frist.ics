@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0cddacc1-fbb5-43bf-a065-d13b3c9a2091-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261103T225900Z
+SUMMARY:Délai de remise : Prestations d’agents de sécurité – Dispo
+ sitifs multisites / UAAJ/sécurité auditions « Le Constellation »
+DESCRIPTION:Acheteur public : Police Cantonale Valaisanne / Kantonspolize
+ i Wallis\nDélai de remise : 03.11.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/0cddacc1-fbb5-43bf-a065-d13b3c
+ 9a2091/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /0cddacc1-fbb5-43bf-a065-d13b3c9a2091
+URL:https://auftragsregister.ch/fr/auftrag/0cddacc1-fbb5-43bf-a065-d13b3c9a
+ 2091/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Prestations d’agents de sécurité – D
+ ispositifs multisites / UAAJ/sécurité auditions « Le Constellation »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

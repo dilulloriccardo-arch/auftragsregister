@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:730fcaa5-6b5c-4e62-a4b6-bf6e28bdecbb-frist@auftragsregister.ch
+DTSTAMP:20260826T000000Z
+SEQUENCE:0
+DTSTART:20261027T225900Z
+SUMMARY:Submission deadline: Audio/Video-Planung und Projektmanagement
+DESCRIPTION:Public buyer: ETH Zürich - Abt. Informatikdienste\nSubmission 
+ deadline: 27 Oct 2026\, 23:59\nIn the register: https://auftragsregister
+ .ch/en/auftrag/730fcaa5-6b5c-4e62-a4b6-bf6e28bdecbb/\nOfficial publication
+ : https://www.simap.ch/en/project-detail/730fcaa5-6b5c-4e62-a4b6-bf6e28bde
+ cbb
+URL:https://auftragsregister.ch/en/auftrag/730fcaa5-6b5c-4e62-a4b6-bf6e28bd
+ ecbb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Audio/Video-Planung und Projektmanagement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:84fcab80-99c5-416f-842b-1cb639fd37b0-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Scadenza: Lieferung\, Inbetriebnahme und Migration Oracle Database 
+ Appliance
+DESCRIPTION:Ente pubblico: Amt für Informatik des Kantons Schwyz\nScadenza
+ : 23.11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag
+ /84fcab80-99c5-416f-842b-1cb639fd37b0/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/84fcab80-99c5-416f-842b-1cb639fd37b0
+URL:https://auftragsregister.ch/it/auftrag/84fcab80-99c5-416f-842b-1cb639fd
+ 37b0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Lieferung\, Inbetriebnahme und Migration Oracle Datab
+ ase Appliance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

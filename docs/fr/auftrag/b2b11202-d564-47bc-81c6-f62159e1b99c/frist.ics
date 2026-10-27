@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2b11202-d564-47bc-81c6-f62159e1b99c-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261124T170000Z
+SUMMARY:Délai de remise : BKP 281.2 Revetements de sol en matière synth
+ étiques
+DESCRIPTION:Acheteur public : Stiftung Alterswohnungen der Stadt Zürich 
+ - SAW (Fokus Baumanagement)\nDélai de remise : 24.11.2026\, 18 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/b2b11202-d56
+ 4-47bc-81c6-f62159e1b99c/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/b2b11202-d564-47bc-81c6-f62159e1b99c
+URL:https://auftragsregister.ch/fr/auftrag/b2b11202-d564-47bc-81c6-f62159e1
+ b99c/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 281.2 Revetements de sol en matière s
+ ynthétiques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

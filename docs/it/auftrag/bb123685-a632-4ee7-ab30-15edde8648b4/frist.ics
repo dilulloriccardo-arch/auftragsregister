@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb123685-a632-4ee7-ab30-15edde8648b4-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T160000Z
+SUMMARY:Scadenza: BKP 222 / 224 Spengler- und Bedachungsarbeiten
+DESCRIPTION:Ente pubblico: Stadt Wädenswil\, Immobilien\, Projekt Neubau G
+ artenhäuser GB\, Büelenstrasse 5+7\nScadenza: 19.11.2026\, 17:00\nNel re
+ gistro: https://auftragsregister.ch/it/auftrag/bb123685-a632-4ee7-ab30-15e
+ dde8648b4/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detai
+ l/bb123685-a632-4ee7-ab30-15edde8648b4
+URL:https://auftragsregister.ch/it/auftrag/bb123685-a632-4ee7-ab30-15edde86
+ 48b4/
+LOCATION:Wädenswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 222 / 224 Spengler- und Bedachungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

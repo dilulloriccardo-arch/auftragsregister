@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5dd49fdb-dd32-4d1b-b87a-04f59f93d5c3-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270107T150000Z
+SUMMARY:Scadenza: 26-417 FL KB Rottenverstärkung Fahrleitung und Kabel
+DESCRIPTION:Ente pubblico: SBB Infrastruktur AG / Einkauf\, Supply Chain un
+ d Produktion\nScadenza: 07.01.2027\, 16:00\nNel registro: https://auftrags
+ register.ch/it/auftrag/5dd49fdb-dd32-4d1b-b87a-04f59f93d5c3/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/5dd49fdb-dd32-4d1b-b87
+ a-04f59f93d5c3
+URL:https://auftragsregister.ch/it/auftrag/5dd49fdb-dd32-4d1b-b87a-04f59f93
+ d5c3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 26-417 FL KB Rottenverstärkung Fahrleitung und Kabel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

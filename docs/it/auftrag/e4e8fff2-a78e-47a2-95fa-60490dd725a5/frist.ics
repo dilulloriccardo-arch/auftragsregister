@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4e8fff2-a78e-47a2-95fa-60490dd725a5-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Scadenza: F6\, Speditionshalle\, Contracting PV-Anlage
+DESCRIPTION:Ente pubblico: Flughafen Zürich AG - Zentraler Einkauf\nScaden
+ za: 30.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/e4e8fff2-a78e-47a2-95fa-60490dd725a5/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/e4e8fff2-a78e-47a2-95fa-60490dd725a5
+URL:https://auftragsregister.ch/it/auftrag/e4e8fff2-a78e-47a2-95fa-60490dd7
+ 25a5/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: F6\, Speditionshalle\, Contracting PV-Anlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

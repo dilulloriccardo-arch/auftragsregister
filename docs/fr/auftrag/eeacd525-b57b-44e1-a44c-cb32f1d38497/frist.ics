@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eeacd525-b57b-44e1-a44c-cb32f1d38497-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Délai de remise : Renforcement conduites GeniLac – Secteur P47
+DESCRIPTION:Acheteur public : Services Industriels de Genève (SIG) - Dir
+ ection Achats\nDélai de remise : 23.11.2026\, 16 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/eeacd525-b57b-44e1-a44c-cb
+ 32f1d38497/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/eeacd525-b57b-44e1-a44c-cb32f1d38497
+URL:https://auftragsregister.ch/fr/auftrag/eeacd525-b57b-44e1-a44c-cb32f1d3
+ 8497/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Renforcement conduites GeniLac – Secteur
+  P47
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

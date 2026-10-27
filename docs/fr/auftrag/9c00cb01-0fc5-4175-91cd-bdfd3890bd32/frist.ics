@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9c00cb01-0fc5-4175-91cd-bdfd3890bd32-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T220000Z
+SUMMARY:Délai de remise : Nacelle élévatrice électrique de 26 m
+DESCRIPTION:Acheteur public : Gemeinde Köniz\, Abteilung Verkehr und Unt
+ erhalt\nDélai de remise : 30.11.2026\, 23 h 00\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/9c00cb01-0fc5-4175-91cd-bdfd3890b
+ d32/\nPublication officielle : https://www.simap.ch/fr/project-detail/9c
+ 00cb01-0fc5-4175-91cd-bdfd3890bd32
+URL:https://auftragsregister.ch/fr/auftrag/9c00cb01-0fc5-4175-91cd-bdfd3890
+ bd32/
+LOCATION:Köniz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nacelle élévatrice électrique de 26 m
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd30a5ba-926d-41de-a47a-8832f5cc390f-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Délai de remise : AO 2024-017 Boulevard Helvétique
+DESCRIPTION:Acheteur public : Services industriels de Genève (SIG) - Dir
+ ection Achats\nDélai de remise : 02.11.2026\, 12 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/dd30a5ba-926d-41de-a47a-88
+ 32f5cc390f/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/dd30a5ba-926d-41de-a47a-8832f5cc390f
+URL:https://auftragsregister.ch/fr/auftrag/dd30a5ba-926d-41de-a47a-8832f5cc
+ 390f/
+LOCATION:Genève (Ville)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AO 2024-017 Boulevard Helvétique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bcf9aae8-b4bc-4860-9a4b-3c8f8c0d5462-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Scadenza: Wohnsiedlung Altwiesen\, 8051 Zürich
+DESCRIPTION:Ente pubblico: Stiftung Einfach Wohnen (SEW)\nScadenza: 23.11.2
+ 026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/bcf9aae8
+ -b4bc-4860-9a4b-3c8f8c0d5462/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/bcf9aae8-b4bc-4860-9a4b-3c8f8c0d5462
+URL:https://auftragsregister.ch/it/auftrag/bcf9aae8-b4bc-4860-9a4b-3c8f8c0d
+ 5462/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wohnsiedlung Altwiesen\, 8051 Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81f0f829-2861-42df-9d73-76c1837fc6ae-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261116T140000Z
+SUMMARY:Eingabefrist: Rahmenvertrag als Assistent des Bauherrn\, Region Wes
+ t
+DESCRIPTION:Auftraggeber: armasuisse Immobilien\nEingabefrist: 16.11.2026\,
+  15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/81f0f829-
+ 2861-42df-9d73-76c1837fc6ae/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/81f0f829-2861-42df-9d73-76c1837fc6ae
+URL:https://auftragsregister.ch/de/auftrag/81f0f829-2861-42df-9d73-76c1837f
+ c6ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rahmenvertrag als Assistent des Bauherrn\, Region
+  West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

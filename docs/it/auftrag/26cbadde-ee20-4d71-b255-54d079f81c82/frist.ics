@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:26cbadde-ee20-4d71-b255-54d079f81c82-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Scadenza: 26118 - Opere da falegname – facciate ventilate in legn
+ o occorrenti al rinnovo e risanamento della scuola media e palestra di Acq
+ uarossa
+DESCRIPTION:Ente pubblico: Sezione della logistica - Servizio appalti\nScad
+ enza: 05.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/26cbadde-ee20-4d71-b255-54d079f81c82/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/26cbadde-ee20-4d71-b255-54d079f81c82
+URL:https://auftragsregister.ch/it/auftrag/26cbadde-ee20-4d71-b255-54d079f8
+ 1c82/
+LOCATION:Acquarossa
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 26118 - Opere da falegname – facciate ventilate in 
+ legno occorrenti al rinnovo e risanamento della scuola media e palestra di
+  Acquarossa
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

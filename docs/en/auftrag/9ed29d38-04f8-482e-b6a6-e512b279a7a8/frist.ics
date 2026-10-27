@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9ed29d38-04f8-482e-b6a6-e512b279a7a8-frist@auftragsregister.ch
+DTSTAMP:20260901T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Submission deadline: Secondo tubo San Gottardo (1TG Röhre Nord und
+  Galleria di Airolo) und N2 Risanamento primo tubo San Gottardo (1TG Röhr
+ e Süd) BSA-Los 0004 - Sanitäranlagen BSA
+DESCRIPTION:Public buyer: Bundesamt für Strassen ASTRA -Abteilung Strassen
+ infrastruktur-Ost - F3 Zofingen\nSubmission deadline: 2 Nov 2026\, 23:59
+ \nIn the register: https://auftragsregister.ch/en/auftrag/9ed29d38-04f8-48
+ 2e-b6a6-e512b279a7a8/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/9ed29d38-04f8-482e-b6a6-e512b279a7a8
+URL:https://auftragsregister.ch/en/auftrag/9ed29d38-04f8-482e-b6a6-e512b279
+ a7a8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Secondo tubo San Gottardo (1TG Röhre Nord
+  und Galleria di Airolo) und N2 Risanamento primo tubo San Gottardo (1TG R
+ öhre Süd) BSA-Los 0004 - Sanitäranlagen BSA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

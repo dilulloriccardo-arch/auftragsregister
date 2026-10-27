@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa712ce5-7b03-4398-b09d-d5833f9dd8b6-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:1
+DTSTART:20261118T225900Z
+SUMMARY:Scadenza: MP-150016 N02 EP Arsenal – Hergiswil inkl. Ergänzung S
+ üd UN Los 2: Instandsetzung Tunnel Schlund und Tunnel Spier sowie Trassee
+  und Kreiselbrücke Schlund
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA -Abteilung Strasse
+ ninfrastruktur-Ost - F3 Zofingen\nScadenza: 18.11.2026\, 23:59\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/aa712ce5-7b03-4398-b09d-d5833f9
+ dd8b6/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/aa
+ 712ce5-7b03-4398-b09d-d5833f9dd8b6
+URL:https://auftragsregister.ch/it/auftrag/aa712ce5-7b03-4398-b09d-d5833f9d
+ d8b6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-150016 N02 EP Arsenal – Hergiswil inkl. Ergänzu
+ ng Süd UN Los 2: Instandsetzung Tunnel Schlund und Tunnel Spier sowie Tra
+ ssee und Kreiselbrücke Schlund
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

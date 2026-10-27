@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f777e7fc-f261-481f-a18e-95f5370af3e6-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Eingabefrist: USZ Campus MITTE 1|2 / BKP 272.16 Türen Paket 6 MIT1
+  Korridortüren (OV)
+DESCRIPTION:Auftraggeber: Universitätsspital Zürich\nEingabefrist: 15.12.
+ 2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/f77
+ 7e7fc-f261-481f-a18e-95f5370af3e6/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/f777e7fc-f261-481f-a18e-95f5370af3e6
+URL:https://auftragsregister.ch/de/auftrag/f777e7fc-f261-481f-a18e-95f5370a
+ f3e6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: USZ Campus MITTE 1|2 / BKP 272.16 Türen Paket 6 
+ MIT1 Korridortüren (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

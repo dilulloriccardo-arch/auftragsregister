@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:35537642-bd80-4d23-ab35-5729ccf864dc-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261113T140000Z
+SUMMARY:Délai de remise : 4099 BKP 122 Provisorium\, Schulraumprovisoriu
+ m Campus BBZ Weinfelden
+DESCRIPTION:Acheteur public : Kantonales Hochbauamt Thurgau\nDélai de re
+ mise : 13.11.2026\, 15 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/35537642-bd80-4d23-ab35-5729ccf864dc/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/35537642-bd80-4d23-ab3
+ 5-5729ccf864dc
+URL:https://auftragsregister.ch/fr/auftrag/35537642-bd80-4d23-ab35-5729ccf8
+ 64dc/
+LOCATION:Weinfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 4099 BKP 122 Provisorium\, Schulraumprovis
+ orium Campus BBZ Weinfelden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

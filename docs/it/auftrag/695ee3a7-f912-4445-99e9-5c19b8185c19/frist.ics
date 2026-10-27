@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:695ee3a7-f912-4445-99e9-5c19b8185c19-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:1
+DTSTART:20270108T140000Z
+SUMMARY:Scadenza: Diesel SN EN590\, alternativer Diesel SN EN 15940\, Heiz
+ öl
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB\, Konzerneinkauf
+  Verbrauchsgüter\nScadenza: 08.01.2027\, 15:00\nNel registro: https://auf
+ tragsregister.ch/it/auftrag/695ee3a7-f912-4445-99e9-5c19b8185c19/\nPubblic
+ azione ufficiale: https://www.simap.ch/it/project-detail/695ee3a7-f912-444
+ 5-99e9-5c19b8185c19
+URL:https://auftragsregister.ch/it/auftrag/695ee3a7-f912-4445-99e9-5c19b818
+ 5c19/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Diesel SN EN590\, alternativer Diesel SN EN 15940\, H
+ eizöl
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

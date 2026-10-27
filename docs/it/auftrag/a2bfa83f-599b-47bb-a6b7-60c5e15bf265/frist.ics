@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a2bfa83f-599b-47bb-a6b7-60c5e15bf265-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261028T220000Z
+SUMMARY:Scadenza: BKP 298.2 Bauökonomie\, armasuisse Immobilien\, Planerle
+ istungen Bauökonomie Region Mitte
+DESCRIPTION:Ente pubblico: armasuisse Immobilien\nScadenza: 28.10.2026\, 23
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/a2bfa83f-599b-47
+ bb-a6b7-60c5e15bf265/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/a2bfa83f-599b-47bb-a6b7-60c5e15bf265
+URL:https://auftragsregister.ch/it/auftrag/a2bfa83f-599b-47bb-a6b7-60c5e15b
+ f265/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 298.2 Bauökonomie\, armasuisse Immobilien\, Plan
+ erleistungen Bauökonomie Region Mitte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

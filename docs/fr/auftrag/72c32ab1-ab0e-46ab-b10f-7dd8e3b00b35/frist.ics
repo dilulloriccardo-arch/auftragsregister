@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72c32ab1-ab0e-46ab-b10f-7dd8e3b00b35-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261213T225900Z
+SUMMARY:Délai de remise : Abgasabsauganlage Thermische Fahrzeuge Halle W
+ est
+DESCRIPTION:Acheteur public : Rhätische Bahn AG\nDélai de remise : 13
+ .12.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/72c32ab1-ab0e-46ab-b10f-7dd8e3b00b35/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/72c32ab1-ab0e-46ab-b10f-7dd8e3b00
+ b35
+URL:https://auftragsregister.ch/fr/auftrag/72c32ab1-ab0e-46ab-b10f-7dd8e3b0
+ 0b35/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Abgasabsauganlage Thermische Fahrzeuge Hal
+ le West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

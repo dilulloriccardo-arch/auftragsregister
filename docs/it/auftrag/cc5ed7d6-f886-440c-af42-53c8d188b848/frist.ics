@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc5ed7d6-f886-440c-af42-53c8d188b848-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Scadenza: Neubau Seniorenwohnungen Herosé\, Aarau - BKP 250 Sanit
+ äranlagen
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Aarau - Stadtbauamt\, Sektion 
+ Hochbau\nScadenza: 26.11.2026\, 16:00\nNel registro: https://auftragsregis
+ ter.ch/it/auftrag/cc5ed7d6-f886-440c-af42-53c8d188b848/\nPubblicazione uff
+ iciale: https://www.simap.ch/it/project-detail/cc5ed7d6-f886-440c-af42-53c
+ 8d188b848
+URL:https://auftragsregister.ch/it/auftrag/cc5ed7d6-f886-440c-af42-53c8d188
+ b848/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Seniorenwohnungen Herosé\, Aarau - BKP 250 Sa
+ nitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

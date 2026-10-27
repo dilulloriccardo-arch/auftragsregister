@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fc679ef2-c122-47cb-a710-8ea3be4906a3-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T220000Z
+SUMMARY:Submission deadline: Luterbach\, Zuchwilstrasse\, Bahnhof Luterbach
+ -Attisholz\, Neubau - Teilprojekt TP Nord\, Hauptlos Bauarbeiten Tiefbau B
+ ahnhofplatz
+DESCRIPTION:Public buyer: Bau- und Justizdepartement des Kantons Solothurn\
+ nSubmission deadline: 13 Nov 2026\, 23:00\nIn the register: https://auft
+ ragsregister.ch/en/auftrag/fc679ef2-c122-47cb-a710-8ea3be4906a3/\nOfficial
+  publication: https://www.simap.ch/en/project-detail/fc679ef2-c122-47cb-a7
+ 10-8ea3be4906a3
+URL:https://auftragsregister.ch/en/auftrag/fc679ef2-c122-47cb-a710-8ea3be49
+ 06a3/
+LOCATION:Luterbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Luterbach\, Zuchwilstrasse\, Bahnhof Luter
+ bach-Attisholz\, Neubau - Teilprojekt TP Nord\, Hauptlos Bauarbeiten Tiefb
+ au Bahnhofplatz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

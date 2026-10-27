@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee4031db-cc35-4ee4-b176-2e062c3520e2-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261118T180000Z
+SUMMARY:Délai de remise : Brückenbauarbeiten\, 9043 Trogen AR
+DESCRIPTION:Acheteur public : Kanton Appenzell Ausserrhoden\nDélai de re
+ mise : 18.11.2026\, 19 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/ee4031db-cc35-4ee4-b176-2e062c3520e2/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/ee4031db-cc35-4ee4-b17
+ 6-2e062c3520e2
+URL:https://auftragsregister.ch/fr/auftrag/ee4031db-cc35-4ee4-b176-2e062c35
+ 20e2/
+LOCATION:Trogen AR
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Brückenbauarbeiten\, 9043 Trogen AR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

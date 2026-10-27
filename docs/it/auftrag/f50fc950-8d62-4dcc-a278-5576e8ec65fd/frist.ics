@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f50fc950-8d62-4dcc-a278-5576e8ec65fd-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Scadenza: Beschaffung Kabelverteilkabinen und Fundamente
+DESCRIPTION:Ente pubblico: Stadtwerk Winterthur\nScadenza: 09.11.2026\, 12:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/f50fc950-8d62-4dc
+ c-a278-5576e8ec65fd/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/f50fc950-8d62-4dcc-a278-5576e8ec65fd
+URL:https://auftragsregister.ch/it/auftrag/f50fc950-8d62-4dcc-a278-5576e8ec
+ 65fd/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung Kabelverteilkabinen und Fundamente
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

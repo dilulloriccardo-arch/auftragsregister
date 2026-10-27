@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e32e16bf-b7d3-4e6c-9552-5ffd3ec5a8fa-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:2
+DTSTART:20261106T130000Z
+SUMMARY:Délai de remise : Fribourg\, barrage de la Maigrauge - Assainiss
+ ement de la dévalaison
+DESCRIPTION:Acheteur public : Groupe E SA - Service Achat pour les March
+ és publics\nDélai de remise : 06.11.2026\, 14 h 00\nDans le regist
+ re : https://auftragsregister.ch/fr/auftrag/e32e16bf-b7d3-4e6c-9552-5ffd
+ 3ec5a8fa/\nPublication officielle : https://www.simap.ch/fr/project-deta
+ il/e32e16bf-b7d3-4e6c-9552-5ffd3ec5a8fa
+URL:https://auftragsregister.ch/fr/auftrag/e32e16bf-b7d3-4e6c-9552-5ffd3ec5
+ a8fa/
+LOCATION:Fribourg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fribourg\, barrage de la Maigrauge - Assai
+ nissement de la dévalaison
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

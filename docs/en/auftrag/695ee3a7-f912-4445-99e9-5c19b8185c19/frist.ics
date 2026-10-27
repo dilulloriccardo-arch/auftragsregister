@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:695ee3a7-f912-4445-99e9-5c19b8185c19-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:1
+DTSTART:20270108T140000Z
+SUMMARY:Submission deadline: Diesel SN EN590\, alternativer Diesel SN EN 15
+ 940\, Heizöl
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB\, Konzerneinkauf 
+ Verbrauchsgüter\nSubmission deadline: 8 Jan 2027\, 15:00\nIn the regist
+ er: https://auftragsregister.ch/en/auftrag/695ee3a7-f912-4445-99e9-5c19b81
+ 85c19/\nOfficial publication: https://www.simap.ch/en/project-detail/695ee
+ 3a7-f912-4445-99e9-5c19b8185c19
+URL:https://auftragsregister.ch/en/auftrag/695ee3a7-f912-4445-99e9-5c19b818
+ 5c19/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Diesel SN EN590\, alternativer Diesel SN E
+ N 15940\, Heizöl
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

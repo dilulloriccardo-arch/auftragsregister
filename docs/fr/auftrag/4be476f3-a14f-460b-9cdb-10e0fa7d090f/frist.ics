@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4be476f3-a14f-460b-9cdb-10e0fa7d090f-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T090000Z
+SUMMARY:Délai de remise : Remplacement d'un véhicule de sauvetage aéri
+ en pour les pompiers de Wettingen
+DESCRIPTION:Acheteur public : Einwohnergemeinde Wettingen\nDélai de remi
+ se : 30.11.2026\, 10 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/4be476f3-a14f-460b-9cdb-10e0fa7d090f/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/4be476f3-a14f-460b-9cdb-
+ 10e0fa7d090f
+URL:https://auftragsregister.ch/fr/auftrag/4be476f3-a14f-460b-9cdb-10e0fa7d
+ 090f/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Remplacement d'un véhicule de sauvetage a
+ érien pour les pompiers de Wettingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

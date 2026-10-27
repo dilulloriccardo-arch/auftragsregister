@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2bae8e3-a79f-4b12-9038-1ad5fc431782-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261117T140000Z
+SUMMARY:Délai de remise : OF-26-08 chariot roulant RV-C complet
+DESCRIPTION:Acheteur public : SBB CFF FFS Infra-Bahntechnik\nDélai de re
+ mise : 17.11.2026\, 15 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/e2bae8e3-a79f-4b12-9038-1ad5fc431782/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/e2bae8e3-a79f-4b12-903
+ 8-1ad5fc431782
+URL:https://auftragsregister.ch/fr/auftrag/e2bae8e3-a79f-4b12-9038-1ad5fc43
+ 1782/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : OF-26-08 chariot roulant RV-C complet
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4e8fff2-a78e-47a2-95fa-60490dd725a5-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Submission deadline: F6\, Speditionshalle\, Contracting PV-Anlage
+DESCRIPTION:Public buyer: Flughafen Zürich AG - Zentraler Einkauf\nSubmiss
+ ion deadline: 30 Nov 2026\, 12:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/e4e8fff2-a78e-47a2-95fa-60490dd725a5/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/e4e8fff2-a78e-47a2-95fa-60490
+ dd725a5
+URL:https://auftragsregister.ch/en/auftrag/e4e8fff2-a78e-47a2-95fa-60490dd7
+ 25a5/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: F6\, Speditionshalle\, Contracting PV-Anla
+ ge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

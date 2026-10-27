@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9418a01c-38ab-437a-87ff-7431a7065f8c-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261208T150000Z
+SUMMARY:Eingabefrist: FORUM UZH | BKP 285.1 innere Malerarbeiten\, WG12-B
+DESCRIPTION:Auftraggeber: Kanton Zürich Hochbauaumt\, Baubereich D\nEingab
+ efrist: 08.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/9418a01c-38ab-437a-87ff-7431a7065f8c/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/9418a01c-38ab-437a-87ff-7431a7065f8c
+URL:https://auftragsregister.ch/de/auftrag/9418a01c-38ab-437a-87ff-7431a706
+ 5f8c/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: FORUM UZH | BKP 285.1 innere Malerarbeiten\, WG12
+ -B
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

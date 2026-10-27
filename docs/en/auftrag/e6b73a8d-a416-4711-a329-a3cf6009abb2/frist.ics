@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6b73a8d-a416-4711-a329-a3cf6009abb2-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261203T225900Z
+SUMMARY:Submission deadline: N01.06 MP-160030 - Jct Gland réaménagement -
+  Travaux de génie civil JCT Gland yc PS (ID 12062)
+DESCRIPTION:Public buyer: Office fédéral des routes OFROU\, Division Infr
+ astructure routière Ouest\, filiale Estavayer-le-Lac\nSubmission deadline
+ : 3 Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/e6b73a8d-a416-4711-a329-a3cf6009abb2/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/e6b73a8d-a416-4711-a329-a3cf6009abb2
+URL:https://auftragsregister.ch/en/auftrag/e6b73a8d-a416-4711-a329-a3cf6009
+ abb2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: N01.06 MP-160030 - Jct Gland réaménageme
+ nt - Travaux de génie civil JCT Gland yc PS (ID 12062)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

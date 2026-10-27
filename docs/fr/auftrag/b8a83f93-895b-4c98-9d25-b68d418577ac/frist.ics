@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b8a83f93-895b-4c98-9d25-b68d418577ac-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Délai de remise : BAV 27600 Wohn- und Geschäftshaus Freiestrass
+ e 56\, 58\, Instandsetzung - BKP 211 Baumeisterarbeiten
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 12.11.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/b8a83f93-895b-4c98-9d25-b68d418577ac/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/b8a83f93-895b-4c98-9
+ d25-b68d418577ac
+URL:https://auftragsregister.ch/fr/auftrag/b8a83f93-895b-4c98-9d25-b68d4185
+ 77ac/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 27600 Wohn- und Geschäftshaus Freiest
+ rasse 56\, 58\, Instandsetzung - BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

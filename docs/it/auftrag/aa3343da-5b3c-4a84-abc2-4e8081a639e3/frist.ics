@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa3343da-5b3c-4a84-abc2-4e8081a639e3-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Scadenza: (25002) 609 Swiss Government Cloud
+DESCRIPTION:Ente pubblico: Bundesamt für Bauten und Logistik BBL\nScadenza
+ : 18.12.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag
+ /aa3343da-5b3c-4a84-abc2-4e8081a639e3/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/aa3343da-5b3c-4a84-abc2-4e8081a639e3
+URL:https://auftragsregister.ch/it/auftrag/aa3343da-5b3c-4a84-abc2-4e8081a6
+ 39e3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (25002) 609 Swiss Government Cloud
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

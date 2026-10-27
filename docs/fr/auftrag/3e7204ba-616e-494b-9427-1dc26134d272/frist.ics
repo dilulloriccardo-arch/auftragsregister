@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e7204ba-616e-494b-9427-1dc26134d272-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Délai de remise : 271 01 Gipserarbeiten - Nassputze
+DESCRIPTION:Acheteur public : Vollenweider Baurealisation GmbH\nDélai de
+  remise : 20.11.2026\, 15 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/3e7204ba-616e-494b-9427-1dc26134d272/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/3e7204ba-616e-494b-
+ 9427-1dc26134d272
+URL:https://auftragsregister.ch/fr/auftrag/3e7204ba-616e-494b-9427-1dc26134
+ d272/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 271 01 Gipserarbeiten - Nassputze
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

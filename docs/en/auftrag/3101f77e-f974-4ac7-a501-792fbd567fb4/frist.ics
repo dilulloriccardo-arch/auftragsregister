@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3101f77e-f974-4ac7-a501-792fbd567fb4-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Submission deadline: Wohnen am Stadtpark: BKP 282.4 Wall Tiling
+DESCRIPTION:Public buyer: Stadt Schlieren\, Bereich Liegenschaften\nSubmiss
+ ion deadline: 4 Dec 2026\, 12:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/3101f77e-f974-4ac7-a501-792fbd567fb4/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/3101f77e-f974-4ac7-a501-792fbd
+ 567fb4
+URL:https://auftragsregister.ch/en/auftrag/3101f77e-f974-4ac7-a501-792fbd56
+ 7fb4/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wohnen am Stadtpark: BKP 282.4 Wall Tiling
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

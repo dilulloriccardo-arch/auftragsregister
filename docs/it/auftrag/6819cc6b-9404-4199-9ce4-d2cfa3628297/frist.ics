@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6819cc6b-9404-4199-9ce4-d2cfa3628297-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Scadenza: Sanierung Rietstrasse\, Abschnitt Rötlistrasse bis Riets
+ porthalle\, Benken
+DESCRIPTION:Ente pubblico: Politische Gemeinde Benken\nScadenza: 16.11.2026
+ \, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/6819cc6b-94
+ 04-4199-9ce4-d2cfa3628297/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/6819cc6b-9404-4199-9ce4-d2cfa3628297
+URL:https://auftragsregister.ch/it/auftrag/6819cc6b-9404-4199-9ce4-d2cfa362
+ 8297/
+LOCATION:Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Rietstrasse\, Abschnitt Rötlistrasse bis R
+ ietsporthalle\, Benken
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

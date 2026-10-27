@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:907b05a3-83a5-4403-bac9-f75ba6892936-frist@auftragsregister.ch
+DTSTAMP:20260819T000000Z
+SEQUENCE:0
+DTSTART:20261118T225900Z
+SUMMARY:Délai de remise : Projet Mitholz : échantillonnage et mesures d
+ ans des eaux souterraines et des eaux de surface 2027-2037
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  18.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/907b05a3-83a5-4403-bac9-f75ba6892936/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/907b05a3-83a5-4403-bac9-f75ba6
+ 892936
+URL:https://auftragsregister.ch/fr/auftrag/907b05a3-83a5-4403-bac9-f75ba689
+ 2936/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet Mitholz : échantillonnage et mesur
+ es dans des eaux souterraines et des eaux de surface 2027-2037
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

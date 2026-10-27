@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6d14dcc-6cc9-4c0a-b15c-3f64a8f1c31f-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 244 L
+ üftungsinstallationen
+DESCRIPTION:Acheteur public : Einwohnergemeinde Bremgarten b. Bern (maure
+ r bauleitung gmbh)\nDélai de remise : 27.11.2026\, 23 h 59\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/d6d14dcc-6cc9-4c0a-b1
+ 5c-3f64a8f1c31f/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/d6d14dcc-6cc9-4c0a-b15c-3f64a8f1c31f
+URL:https://auftragsregister.ch/fr/auftrag/d6d14dcc-6cc9-4c0a-b15c-3f64a8f1
+ c31f/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 2
+ 44 Lüftungsinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

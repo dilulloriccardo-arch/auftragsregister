@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:36722852-286e-4638-bcfb-b74c5aa83089-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20261116T100000Z
+SUMMARY:Scadenza: Rénovation/Transformation du CID de Malley / Portes rapi
+ des et Rideaux coupe-feu
+DESCRIPTION:Ente pubblico: Ville de Lausanne - Service de la propreté urba
+ ine (Architram)\nScadenza: 16.11.2026\, 11:00\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/36722852-286e-4638-bcfb-b74c5aa83089/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/36722852-286e-4638-
+ bcfb-b74c5aa83089
+URL:https://auftragsregister.ch/it/auftrag/36722852-286e-4638-bcfb-b74c5aa8
+ 3089/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rénovation/Transformation du CID de Malley / Portes 
+ rapides et Rideaux coupe-feu
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

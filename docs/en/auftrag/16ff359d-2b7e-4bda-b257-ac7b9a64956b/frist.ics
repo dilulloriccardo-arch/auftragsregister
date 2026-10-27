@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16ff359d-2b7e-4bda-b257-ac7b9a64956b-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261117T100000Z
+SUMMARY:Submission deadline: Fourniture\, installation/désinstallation et 
+ stockage des décorations festives de Noël 2027 - 2029
+DESCRIPTION:Public buyer: Genève Aéroport\nSubmission deadline: 17 Nov 
+ 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/16ff
+ 359d-2b7e-4bda-b257-ac7b9a64956b/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/16ff359d-2b7e-4bda-b257-ac7b9a64956b
+URL:https://auftragsregister.ch/en/auftrag/16ff359d-2b7e-4bda-b257-ac7b9a64
+ 956b/
+LOCATION:GENEVE 15
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fourniture\, installation/désinstallation
+  et stockage des décorations festives de Noël 2027 - 2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

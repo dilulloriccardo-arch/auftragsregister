@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0090772d-4590-46c3-9802-f18ee0e77164-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Délai de remise : PSI PV-Anlagen Contracting Etappe 2
+DESCRIPTION:Acheteur public : Paul Scherrer Institut\nDélai de remise 
+ : 05.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/0090772d-4590-46c3-9802-f18ee0e77164/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/0090772d-4590-46c3-9802-f18ee
+ 0e77164
+URL:https://auftragsregister.ch/fr/auftrag/0090772d-4590-46c3-9802-f18ee0e7
+ 7164/
+LOCATION:Villigen PSI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : PSI PV-Anlagen Contracting Etappe 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

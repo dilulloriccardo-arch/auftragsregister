@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90565c59-853c-44dd-be49-e254f4fde41e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261204T225900Z
+SUMMARY:Délai de remise : Bobines d'extinction de défaut à la terre à
+  noyau immergé de 20 kV
+DESCRIPTION:Acheteur public : Repower AG\nDélai de remise : 04.12.2026
+ \, 23 h 59\nDans le registre : https://auftragsregister.ch/fr/auftra
+ g/90565c59-853c-44dd-be49-e254f4fde41e/\nPublication officielle : https:
+ //www.simap.ch/fr/project-detail/90565c59-853c-44dd-be49-e254f4fde41e
+URL:https://auftragsregister.ch/fr/auftrag/90565c59-853c-44dd-be49-e254f4fd
+ e41e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bobines d'extinction de défaut à la terr
+ e à noyau immergé de 20 kV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

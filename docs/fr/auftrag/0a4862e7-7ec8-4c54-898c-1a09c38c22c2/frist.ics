@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a4862e7-7ec8-4c54-898c-1a09c38c22c2-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Délai de remise : Neubau Geserhus\, Rebstein - 273.0 Innentüren
+  aus Holz
+DESCRIPTION:Acheteur public : Zweckverband Altersheim Geserhus der Gemein
+ de Rebstein und Marbach\nDélai de remise : 13.11.2026\, 23 h 59\nDa
+ ns le registre : https://auftragsregister.ch/fr/auftrag/0a4862e7-7ec8-4c
+ 54-898c-1a09c38c22c2/\nPublication officielle : https://www.simap.ch/fr/
+ project-detail/0a4862e7-7ec8-4c54-898c-1a09c38c22c2
+URL:https://auftragsregister.ch/fr/auftrag/0a4862e7-7ec8-4c54-898c-1a09c38c
+ 22c2/
+LOCATION:Rebstein
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Geserhus\, Rebstein - 273.0 Innent
+ üren aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

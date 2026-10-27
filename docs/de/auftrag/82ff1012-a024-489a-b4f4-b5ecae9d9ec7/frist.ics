@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:82ff1012-a024-489a-b4f4-b5ecae9d9ec7-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Eingabefrist: 10180 Schulerweiterung Sonnenhof Fischingen - BKP 221
+ .1 Fenster aus Holz- Metall
+DESCRIPTION:Auftraggeber: Volksschulgemeinde Fischingen\nEingabefrist: 16.1
+ 1.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8
+ 2ff1012-a024-489a-b4f4-b5ecae9d9ec7/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/82ff1012-a024-489a-b4f4-b5ecae9d9ec7
+URL:https://auftragsregister.ch/de/auftrag/82ff1012-a024-489a-b4f4-b5ecae9d
+ 9ec7/
+LOCATION:Oberwangen TG
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 10180 Schulerweiterung Sonnenhof Fischingen - BKP
+  221.1 Fenster aus Holz- Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

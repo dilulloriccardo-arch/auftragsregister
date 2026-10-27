@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:01a6a794-b018-4fbe-8b77-f6b72d779ee8-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261119T225900Z
+SUMMARY:Submission deadline: Gymnasium Neufeld - Beschaffung Displays Schä
+ nzlihalde
+DESCRIPTION:Public buyer: Gymnasium Neufeld (reflecta ag)\nSubmission deadl
+ ine: 19 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/01a6a794-b018-4fbe-8b77-f6b72d779ee8/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/01a6a794-b018-4fbe-8b77-f6b72d779ee8
+URL:https://auftragsregister.ch/en/auftrag/01a6a794-b018-4fbe-8b77-f6b72d77
+ 9ee8/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gymnasium Neufeld - Beschaffung Displays S
+ chänzlihalde
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

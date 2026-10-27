@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be6461f9-2e4a-4b26-ae54-9e5bf8d1a39e-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261028T133000Z
+SUMMARY:Délai de remise : DSUS _ Nouveau siège de la Division des espac
+ es urbains de Lugano – Travaux de carrelage
+DESCRIPTION:Acheteur public : Città di Lugano - Edilizia pubblica\nDéla
+ i de remise : 28.10.2026\, 14 h 30\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/be6461f9-2e4a-4b26-ae54-9e5bf8d1a39e/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/be6461f9-2e4a-4
+ b26-ae54-9e5bf8d1a39e
+URL:https://auftragsregister.ch/fr/auftrag/be6461f9-2e4a-4b26-ae54-9e5bf8d1
+ a39e/
+LOCATION:Lugano-Cadro
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : DSUS _ Nouveau siège de la Division des e
+ spaces urbains de Lugano – Travaux de carrelage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

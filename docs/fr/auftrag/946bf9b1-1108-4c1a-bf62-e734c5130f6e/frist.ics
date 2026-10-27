@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:946bf9b1-1108-4c1a-bf62-e734c5130f6e-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T130000Z
+SUMMARY:Délai de remise : Maintenance de la solution UKG Employee File M
+ anagement - fourniture de licences et connecteur UKG/SAP SuccessFactors
+DESCRIPTION:Acheteur public : Services industriels de Genève (SIG) - Dir
+ ection Achats\nDélai de remise : 16.11.2026\, 14 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/946bf9b1-1108-4c1a-bf62-e7
+ 34c5130f6e/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/946bf9b1-1108-4c1a-bf62-e734c5130f6e
+URL:https://auftragsregister.ch/fr/auftrag/946bf9b1-1108-4c1a-bf62-e734c513
+ 0f6e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Maintenance de la solution UKG Employee Fi
+ le Management - fourniture de licences et connecteur UKG/SAP SuccessFactor
+ s
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

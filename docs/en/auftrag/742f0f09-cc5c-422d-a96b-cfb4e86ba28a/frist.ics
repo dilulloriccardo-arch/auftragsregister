@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:742f0f09-cc5c-422d-a96b-cfb4e86ba28a-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Submission deadline: Landverkauf Wiesengarten
+DESCRIPTION:Public buyer: Gemeinde Affeltrangen\nSubmission deadline: 9 No
+ v 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/7
+ 42f0f09-cc5c-422d-a96b-cfb4e86ba28a/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/742f0f09-cc5c-422d-a96b-cfb4e86ba28a
+URL:https://auftragsregister.ch/en/auftrag/742f0f09-cc5c-422d-a96b-cfb4e86b
+ a28a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Landverkauf Wiesengarten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

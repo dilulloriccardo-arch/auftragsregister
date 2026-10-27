@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea830907-0191-488c-a59e-aa98db1a0d15-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Eingabefrist: CE4600008921 - RC 618-B-P & 601-B-P - Lucens & Curtil
+ les
+DESCRIPTION:Auftraggeber: Direction générale de la mobilité et des route
+ s - Division infrastructures\nEingabefrist: 20.11.2026\, 11.00 Uhr\nIm Re
+ gister: https://auftragsregister.ch/de/auftrag/ea830907-0191-488c-a59e-aa9
+ 8db1a0d15/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/e
+ a830907-0191-488c-a59e-aa98db1a0d15
+URL:https://auftragsregister.ch/de/auftrag/ea830907-0191-488c-a59e-aa98db1a
+ 0d15/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CE4600008921 - RC 618-B-P & 601-B-P - Lucens & Cu
+ rtilles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

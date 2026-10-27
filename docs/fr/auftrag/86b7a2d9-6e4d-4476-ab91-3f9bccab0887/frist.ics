@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86b7a2d9-6e4d-4476-ab91-3f9bccab0887-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:2
+DTSTART:20261204T140000Z
+SUMMARY:Délai de remise : APFZ Plateforme de calcul et de communication 
+ pour les véhicules sur rails
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB Division Pr
+ oduktion Personenverkehr\nDélai de remise : 04.12.2026\, 15 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/86b7a2d9-6e4d-4
+ 476-ab91-3f9bccab0887/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/86b7a2d9-6e4d-4476-ab91-3f9bccab0887
+URL:https://auftragsregister.ch/fr/auftrag/86b7a2d9-6e4d-4476-ab91-3f9bccab
+ 0887/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : APFZ Plateforme de calcul et de communicat
+ ion pour les véhicules sur rails
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

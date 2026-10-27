@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a12bedff-3b09-473e-a62d-0eab1afc4d71-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:1
+DTSTART:20261117T150000Z
+SUMMARY:Délai de remise : 284 Appel d'offres pour l'acquisition et la pe
+ rsonnalisation d'un nouveau service de gestion des procédures d'exécutio
+ n
+DESCRIPTION:Acheteur public : Centro sistemi informativi\nDélai de remis
+ e : 17.11.2026\, 16 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/a12bedff-3b09-473e-a62d-0eab1afc4d71/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/a12bedff-3b09-473e-a62d-0
+ eab1afc4d71
+URL:https://auftragsregister.ch/fr/auftrag/a12bedff-3b09-473e-a62d-0eab1afc
+ 4d71/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 284 Appel d'offres pour l'acquisition et l
+ a personnalisation d'un nouveau service de gestion des procédures d'exéc
+ ution
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

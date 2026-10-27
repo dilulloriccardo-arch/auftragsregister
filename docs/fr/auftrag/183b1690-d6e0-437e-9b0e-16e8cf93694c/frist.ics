@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:183b1690-d6e0-437e-9b0e-16e8cf93694c-frist@auftragsregister.ch
+DTSTAMP:20260907T000000Z
+SEQUENCE:0
+DTSTART:20261030T225900Z
+SUMMARY:Délai de remise : Travaux de gros œuvre - Sous-station Botteren
+ s
+DESCRIPTION:Acheteur public : Swissgrid AG - Engineering & Construction\n
+ Délai de remise : 30.10.2026\, 23 h 59\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/183b1690-d6e0-437e-9b0e-16e8cf93694c/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/183b1690-d
+ 6e0-437e-9b0e-16e8cf93694c
+URL:https://auftragsregister.ch/fr/auftrag/183b1690-d6e0-437e-9b0e-16e8cf93
+ 694c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Travaux de gros œuvre - Sous-station Bott
+ erens
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0edc5ce1-11ce-4886-9161-e746875a26a5-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261206T225900Z
+SUMMARY:Délai de remise : Bahnersatzverkehr für Totalsperren im Jahr 20
+ 27
+DESCRIPTION:Acheteur public : Rhätische Bahn AG\nDélai de remise : 06
+ .12.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/0edc5ce1-11ce-4886-9161-e746875a26a5/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/0edc5ce1-11ce-4886-9161-e746875a2
+ 6a5
+URL:https://auftragsregister.ch/fr/auftrag/0edc5ce1-11ce-4886-9161-e746875a
+ 26a5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bahnersatzverkehr für Totalsperren im Jah
+ r 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

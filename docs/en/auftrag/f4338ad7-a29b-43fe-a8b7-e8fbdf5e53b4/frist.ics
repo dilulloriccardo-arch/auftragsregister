@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f4338ad7-a29b-43fe-a8b7-e8fbdf5e53b4-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261029T110000Z
+SUMMARY:Submission deadline: Sanierung Wuhrstrasse\, Belags- und Baumeister
+ arbeiten
+DESCRIPTION:Public buyer: Gemeinde Landquart\nSubmission deadline: 29 Oct
+  2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/f4
+ 338ad7-a29b-43fe-a8b7-e8fbdf5e53b4/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/f4338ad7-a29b-43fe-a8b7-e8fbdf5e53b4
+URL:https://auftragsregister.ch/en/auftrag/f4338ad7-a29b-43fe-a8b7-e8fbdf5e
+ 53b4/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Wuhrstrasse\, Belags- und Baumei
+ sterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

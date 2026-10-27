@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:63cd4251-16d0-4700-9762-7e1c874ac36f-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Submission deadline: EBP-639_Elektroschweiss- und Stumpfschweissfor
+ mteile
+DESCRIPTION:Public buyer: Energie Wasser Bern\nSubmission deadline: 24 Nov
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/63
+ cd4251-16d0-4700-9762-7e1c874ac36f/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/63cd4251-16d0-4700-9762-7e1c874ac36f
+URL:https://auftragsregister.ch/en/auftrag/63cd4251-16d0-4700-9762-7e1c874a
+ c36f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EBP-639_Elektroschweiss- und Stumpfschweis
+ sformteile
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6f6ecc6d-2f9b-44da-b56f-144cae691cd8-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Submission deadline: 272093 Glass sliding doors with metal frame 07
+ B (AP06)
+DESCRIPTION:Public buyer: Spitalanlagengesellschaft HOCH Health Ostschweiz\
+ nSubmission deadline: 17 Nov 2026\, 23:59\nIn the register: https://auft
+ ragsregister.ch/en/auftrag/6f6ecc6d-2f9b-44da-b56f-144cae691cd8/\nOfficial
+  publication: https://www.simap.ch/en/project-detail/6f6ecc6d-2f9b-44da-b5
+ 6f-144cae691cd8
+URL:https://auftragsregister.ch/en/auftrag/6f6ecc6d-2f9b-44da-b56f-144cae69
+ 1cd8/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 272093 Glass sliding doors with metal fram
+ e 07B (AP06)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:feb09a49-d436-4d86-80e1-16b90af86a4f-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20270129T150000Z
+SUMMARY:Submission deadline: Schulraumerweiterung Aesch - Planerwahlverfahr
+ en (Generalplaner)
+DESCRIPTION:Public buyer: Gemeinde Maur (Brandenberger + Ruosch AG)\nSubmis
+ sion deadline: 29 Jan 2027\, 16:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/feb09a49-d436-4d86-80e1-16b90af86a4f/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/feb09a49-d436-4d86-80e1-16b9
+ 0af86a4f
+URL:https://auftragsregister.ch/en/auftrag/feb09a49-d436-4d86-80e1-16b90af8
+ 6a4f/
+LOCATION:Maur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schulraumerweiterung Aesch - Planerwahlver
+ fahren (Generalplaner)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

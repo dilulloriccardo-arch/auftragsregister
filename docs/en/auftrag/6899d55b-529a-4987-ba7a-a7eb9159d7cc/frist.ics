@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6899d55b-529a-4987-ba7a-a7eb9159d7cc-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261124T100000Z
+SUMMARY:Submission deadline: Sanierung Häusern-Vordertoos\, Schönholzersw
+ ilen
+DESCRIPTION:Public buyer: Politische Gemeinde Schönholzerswilen\nSubmissio
+ n deadline: 24 Nov 2026\, 11:00\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/6899d55b-529a-4987-ba7a-a7eb9159d7cc/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/6899d55b-529a-4987-ba7a-a7eb915
+ 9d7cc
+URL:https://auftragsregister.ch/en/auftrag/6899d55b-529a-4987-ba7a-a7eb9159
+ d7cc/
+LOCATION:Schönholzerswilen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Häusern-Vordertoos\, Schönholz
+ erswilen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

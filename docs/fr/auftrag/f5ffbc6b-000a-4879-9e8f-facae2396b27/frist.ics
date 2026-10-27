@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f5ffbc6b-000a-4879-9e8f-facae2396b27-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Délai de remise : BKP 211.1 Travaux d'échafaudage - Thoune\, Po
+ lygon\, rénovation de l'enveloppe du bâtiment et des installations techn
+ iques
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  19.11.2026\nDans le registre : https://auftragsregister.ch/fr/auftrag/f
+ 5ffbc6b-000a-4879-9e8f-facae2396b27/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/f5ffbc6b-000a-4879-9e8f-facae2396b27
+URL:https://auftragsregister.ch/fr/auftrag/f5ffbc6b-000a-4879-9e8f-facae239
+ 6b27/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 211.1 Travaux d'échafaudage - Thoune\
+ , Polygon\, rénovation de l'enveloppe du bâtiment et des installations t
+ echniques
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

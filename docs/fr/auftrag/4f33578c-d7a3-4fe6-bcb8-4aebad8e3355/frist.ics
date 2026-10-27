@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4f33578c-d7a3-4fe6-bcb8-4aebad8e3355-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261110T110000Z
+SUMMARY:Délai de remise : YPERIA - OIKEN - Lot 421.000 Aménagements ext
+ érieurs - Travaux de paysagisme
+DESCRIPTION:Acheteur public : OIKEN SA (Pragma Partenaires SA)\nDélai de
+  remise : 10.11.2026\, 12 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/4f33578c-d7a3-4fe6-bcb8-4aebad8e3355/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/4f33578c-d7a3-4fe6-
+ bcb8-4aebad8e3355
+URL:https://auftragsregister.ch/fr/auftrag/4f33578c-d7a3-4fe6-bcb8-4aebad8e
+ 3355/
+LOCATION:Sierre
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : YPERIA - OIKEN - Lot 421.000 Aménagements
+  extérieurs - Travaux de paysagisme
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2785137e-342d-4cdb-b8b2-9859a8ffd141-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Délai de remise : Assistant IA Cantonal
+DESCRIPTION:Acheteur public : Etat de Neuchâtel SIEN\nDélai de remise
+  : 03.11.2026\, 12 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/2785137e-342d-4cdb-b8b2-9859a8ffd141/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/2785137e-342d-4cdb-b8b2-98
+ 59a8ffd141
+URL:https://auftragsregister.ch/fr/auftrag/2785137e-342d-4cdb-b8b2-9859a8ff
+ d141/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assistant IA Cantonal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

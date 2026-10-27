@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e188a08d-9129-4fa4-bcca-a3af17e7046c-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Délai de remise : 13043.10 / 244-01 Lüftungsanlagen\, Instandse
+ tzung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontrolle 
+ Oberrieden
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Zürich\nDélai de remise
+  : 20.11.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/e188a08d-9129-4fa4-bcca-a3af17e7046c/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/e188a08d-9129-4fa4-bcca-a3
+ af17e7046c
+URL:https://auftragsregister.ch/fr/auftrag/e188a08d-9129-4fa4-bcca-a3af17e7
+ 046c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 13043.10 / 244-01 Lüftungsanlagen\, Insta
+ ndsetzung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontro
+ lle Oberrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

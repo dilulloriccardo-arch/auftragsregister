@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7c70a721-fd73-4731-8d18-1b7fe261c3a4-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:2
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : H8 / Troisième Altmatt Nord vers Biberbrugg /
+  Terrain de construction Nord / Travaux de construction
+DESCRIPTION:Acheteur public : Tiefbauamt Kanton Schwyz\nDélai de remise
+  : 30.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/7c70a721-fd73-4731-8d18-1b7fe261c3a4/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/7c70a721-fd73-4731-8d18-1b
+ 7fe261c3a4
+URL:https://auftragsregister.ch/fr/auftrag/7c70a721-fd73-4731-8d18-1b7fe261
+ c3a4/
+LOCATION:Bennau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : H8 / Troisième Altmatt Nord vers Biberbru
+ gg / Terrain de construction Nord / Travaux de construction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

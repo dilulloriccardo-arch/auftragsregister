@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:996c5938-54b6-460d-8c38-b47a4d2af451-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261202T100000Z
+SUMMARY:Submission deadline: Fourniture de mobilier de la gamme de bancs "V
+ ille de Genève" (2364TIBis) fourniture de mobilier de la gamme de bancs "
+ Ville de Genève"
+DESCRIPTION:Public buyer: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nS
+ ubmission deadline: 2 Dec 2026\, 11:00\nIn the register: https://auftrag
+ sregister.ch/en/auftrag/996c5938-54b6-460d-8c38-b47a4d2af451/\nOfficial pu
+ blication: https://www.simap.ch/en/project-detail/996c5938-54b6-460d-8c38-
+ b47a4d2af451
+URL:https://auftragsregister.ch/en/auftrag/996c5938-54b6-460d-8c38-b47a4d2a
+ f451/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fourniture de mobilier de la gamme de banc
+ s "Ville de Genève" (2364TIBis) fourniture de mobilier de la gamme de ban
+ cs "Ville de Genève"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

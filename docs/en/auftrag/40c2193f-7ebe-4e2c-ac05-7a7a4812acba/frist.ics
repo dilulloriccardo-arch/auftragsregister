@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40c2193f-7ebe-4e2c-ac05-7a7a4812acba-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:0
+DTSTART:20261028T100000Z
+SUMMARY:Submission deadline: Schaffung Ersatzräume für schulergänzende B
+ etreuung
+DESCRIPTION:Public buyer: Gemeinde Lindau\nSubmission deadline: 28 Oct 20
+ 26\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/40c219
+ 3f-7ebe-4e2c-ac05-7a7a4812acba/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/40c2193f-7ebe-4e2c-ac05-7a7a4812acba
+URL:https://auftragsregister.ch/en/auftrag/40c2193f-7ebe-4e2c-ac05-7a7a4812
+ acba/
+LOCATION:Winterberg ZH
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schaffung Ersatzräume für schulergänzen
+ de Betreuung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b638f1f5-24a8-4c33-85e1-9c85315e1988-frist@auftragsregister.ch
+DTSTAMP:20260813T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Submission deadline: NextGen Backup Software 2026
+DESCRIPTION:Public buyer: Stadt Zürich\, Organisation und Informatik (OIZ)
+ \nSubmission deadline: 2 Nov 2026\, 12:00\nIn the register: https://auft
+ ragsregister.ch/en/auftrag/b638f1f5-24a8-4c33-85e1-9c85315e1988/\nOfficial
+  publication: https://www.simap.ch/en/project-detail/b638f1f5-24a8-4c33-85
+ e1-9c85315e1988
+URL:https://auftragsregister.ch/en/auftrag/b638f1f5-24a8-4c33-85e1-9c85315e
+ 1988/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: NextGen Backup Software 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

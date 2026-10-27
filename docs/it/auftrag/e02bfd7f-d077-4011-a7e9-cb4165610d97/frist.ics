@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e02bfd7f-d077-4011-a7e9-cb4165610d97-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T130000Z
+SUMMARY:Scadenza: Umzug und Bau des Naturhistorischen Museums in Freiburg_C
+ FC 273.3 Innenausbau
+DESCRIPTION:Ente pubblico: Direktion für Raumentwicklung\, Infrastruktur\,
+  Mobilität und Umwelt - (RIMU) - Hochbauamt\nScadenza: 13.11.2026\, 14:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/e02bfd7f-d077-4011-
+ a7e9-cb4165610d97/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/e02bfd7f-d077-4011-a7e9-cb4165610d97
+URL:https://auftragsregister.ch/it/auftrag/e02bfd7f-d077-4011-a7e9-cb416561
+ 0d97/
+LOCATION:Freiburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Umzug und Bau des Naturhistorischen Museums in Freibu
+ rg_CFC 273.3 Innenausbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

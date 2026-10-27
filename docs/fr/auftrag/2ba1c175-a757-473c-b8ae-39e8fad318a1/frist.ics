@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2ba1c175-a757-473c-b8ae-39e8fad318a1-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Délai de remise : MP-160010\, N01/42\, échangeur Zurich-Nord 
+ – échangeur Zurich-Est – échangeur Brüttisellen
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA - Filiale Win
+ terthur\nDélai de remise : 09.11.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/2ba1c175-a757-473c-b8ae-39e8fa
+ d318a1/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /2ba1c175-a757-473c-b8ae-39e8fad318a1
+URL:https://auftragsregister.ch/fr/auftrag/2ba1c175-a757-473c-b8ae-39e8fad3
+ 18a1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-160010\, N01/42\, échangeur Zurich-Nor
+ d – échangeur Zurich-Est – échangeur Brüttisellen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f9755974-7f35-46d0-a1d1-8196951db90c-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261203T090000Z
+SUMMARY:Délai de remise : CDM124.0 - Isolation et revêtements de façad
+ e pour la Cité de la Musique de la commune de Lugano
+DESCRIPTION:Acheteur public : Fondazione Conservatorio della Svizzera ita
+ liana\nDélai de remise : 03.12.2026\, 10 h 00\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/f9755974-7f35-46d0-a1d1-8196951db9
+ 0c/\nPublication officielle : https://www.simap.ch/fr/project-detail/f97
+ 55974-7f35-46d0-a1d1-8196951db90c
+URL:https://auftragsregister.ch/fr/auftrag/f9755974-7f35-46d0-a1d1-8196951d
+ b90c/
+LOCATION:Lugano-Besso
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CDM124.0 - Isolation et revêtements de fa
+ çade pour la Cité de la Musique de la commune de Lugano
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

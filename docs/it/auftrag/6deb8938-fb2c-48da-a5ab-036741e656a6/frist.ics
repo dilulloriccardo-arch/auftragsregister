@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6deb8938-fb2c-48da-a5ab-036741e656a6-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261123T090000Z
+SUMMARY:Scadenza: AMB/2026/11 - Collegamento Gnosca-Preonzo-Claro Fase 2
+DESCRIPTION:Ente pubblico: Azienda Multiservizi Bellinzona (AMB)\nScadenza:
+  23.11.2026\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 6deb8938-fb2c-48da-a5ab-036741e656a6/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/6deb8938-fb2c-48da-a5ab-036741e656a6
+URL:https://auftragsregister.ch/it/auftrag/6deb8938-fb2c-48da-a5ab-036741e6
+ 56a6/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AMB/2026/11 - Collegamento Gnosca-Preonzo-Claro Fase 
+ 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

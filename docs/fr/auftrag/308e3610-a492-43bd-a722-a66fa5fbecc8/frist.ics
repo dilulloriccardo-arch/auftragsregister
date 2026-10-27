@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:308e3610-a492-43bd-a722-a66fa5fbecc8-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Délai de remise : Mandat d’assistance à la maîtrise d’ouvr
+ age (AMO)
+DESCRIPTION:Acheteur public : Etat de Genève - Département du territoir
+ e (DT) - Office de l'urbanisme\nDélai de remise : 09.11.2026\, 11 h
+  00\nDans le registre : https://auftragsregister.ch/fr/auftrag/308e361
+ 0-a492-43bd-a722-a66fa5fbecc8/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/308e3610-a492-43bd-a722-a66fa5fbecc8
+URL:https://auftragsregister.ch/fr/auftrag/308e3610-a492-43bd-a722-a66fa5fb
+ ecc8/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mandat d’assistance à la maîtrise d’
+ ouvrage (AMO)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

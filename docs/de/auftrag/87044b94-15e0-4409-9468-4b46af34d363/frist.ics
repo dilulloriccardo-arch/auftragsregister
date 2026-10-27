@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87044b94-15e0-4409-9468-4b46af34d363-frist@auftragsregister.ch
+DTSTAMP:20260828T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Eingabefrist: Lieferung eines Tanklöschfahrzeugs (Kat. 3) für die
+  Feuerwehr Bad Ragaz
+DESCRIPTION:Auftraggeber: Politische Gemeinde Bad Ragaz\nEingabefrist: 29.1
+ 1.2026\nIm Register: https://auftragsregister.ch/de/auftrag/87044b94-15e0-
+ 4409-9468-4b46af34d363/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/87044b94-15e0-4409-9468-4b46af34d363
+URL:https://auftragsregister.ch/de/auftrag/87044b94-15e0-4409-9468-4b46af34
+ d363/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Lieferung eines Tanklöschfahrzeugs (Kat. 3) für
+  die Feuerwehr Bad Ragaz
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

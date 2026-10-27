@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f11caff6-22b0-4ee6-96dd-c17ce25f6bc4-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Scadenza: K 35 Doppleschwand\, Spittel bis Dorfende (Ortstafel)
+DESCRIPTION:Ente pubblico: Verkehr und Infrastruktur (vif)\, zentras\, Betr
+ ieb Strassen\nScadenza: 07.12.2026\, 23:59\nNel registro: https://auftrags
+ register.ch/it/auftrag/f11caff6-22b0-4ee6-96dd-c17ce25f6bc4/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/f11caff6-22b0-4ee6-96d
+ d-c17ce25f6bc4
+URL:https://auftragsregister.ch/it/auftrag/f11caff6-22b0-4ee6-96dd-c17ce25f
+ 6bc4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: K 35 Doppleschwand\, Spittel bis Dorfende (Ortstafel)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

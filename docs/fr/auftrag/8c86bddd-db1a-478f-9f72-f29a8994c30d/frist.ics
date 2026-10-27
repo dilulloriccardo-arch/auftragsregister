@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8c86bddd-db1a-478f-9f72-f29a8994c30d-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Délai de remise : Acquisition de prestations infrastructurelles 
+ – Bienne-Seeland / Jura bernois
+DESCRIPTION:Acheteur public : Zentrale Beschaffungsstelle Facility Manage
+ ment &Mobiliar (ZBS FM&M)\nDélai de remise : 09.11.2026\, 23 h 59\n
+ Dans le registre : https://auftragsregister.ch/fr/auftrag/8c86bddd-db1a-
+ 478f-9f72-f29a8994c30d/\nPublication officielle : https://www.simap.ch/f
+ r/project-detail/8c86bddd-db1a-478f-9f72-f29a8994c30d
+URL:https://auftragsregister.ch/fr/auftrag/8c86bddd-db1a-478f-9f72-f29a8994
+ c30d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition de prestations infrastructurel
+ les – Bienne-Seeland / Jura bernois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

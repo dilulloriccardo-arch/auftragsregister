@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25f91831-3387-453d-95a4-0a02510a3632-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261119T140000Z
+SUMMARY:Submission deadline: Münchenstein - Emil Frey-Strasse / Baumeister
+ arbeiten Tiefbau
+DESCRIPTION:Public buyer: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nSubmission deadline: 19 Nov 2026\, 15:00\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/25f91831-3387-453d-95a4-0a02510a3632/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/25f91831-3387-453d
+ -95a4-0a02510a3632
+URL:https://auftragsregister.ch/en/auftrag/25f91831-3387-453d-95a4-0a02510a
+ 3632/
+LOCATION:Münchenstein
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Münchenstein - Emil Frey-Strasse / Baumei
+ sterarbeiten Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81f572f0-8d43-49ef-a40f-b403e6da016e-frist@auftragsregister.ch
+DTSTAMP:20260821T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Submission deadline: NKM 5.1 – Los «All-inclusive»\, Fahrbahner
+ neuerungen 2029-2033\, Rahmenvertrag GU\, Schweiz
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB\, Infrastruktur -
+  Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\nSubmis
+ sion deadline: 27 Nov 2026\, 23:59\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/81f572f0-8d43-49ef-a40f-b403e6da016e/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/81f572f0-8d43-49ef-a40f-b403
+ e6da016e
+URL:https://auftragsregister.ch/en/auftrag/81f572f0-8d43-49ef-a40f-b403e6da
+ 016e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: NKM 5.1 – Los «All-inclusive»\, Fahrba
+ hnerneuerungen 2029-2033\, Rahmenvertrag GU\, Schweiz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

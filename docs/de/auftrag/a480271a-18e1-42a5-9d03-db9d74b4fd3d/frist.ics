@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a480271a-18e1-42a5-9d03-db9d74b4fd3d-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Eingabefrist: Réfection installation électrique - Château de St-
+ Maurice - CFC 23 installation électrique
+DESCRIPTION:Auftraggeber: Service immobilier et patrimoine - Gérance et en
+ tretien d'immeuble (GEI)\nEingabefrist: 13.11.2026\nIm Register: https://a
+ uftragsregister.ch/de/auftrag/a480271a-18e1-42a5-9d03-db9d74b4fd3d/\nAmtli
+ che Publikation: https://www.simap.ch/de/project-detail/a480271a-18e1-42a5
+ -9d03-db9d74b4fd3d
+URL:https://auftragsregister.ch/de/auftrag/a480271a-18e1-42a5-9d03-db9d74b4
+ fd3d/
+LOCATION:St-Maurice
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Réfection installation électrique - Château de
+  St-Maurice - CFC 23 installation électrique
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

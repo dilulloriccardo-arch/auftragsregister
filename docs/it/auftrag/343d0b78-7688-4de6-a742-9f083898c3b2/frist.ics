@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:343d0b78-7688-4de6-a742-9f083898c3b2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261117T160000Z
+SUMMARY:Scadenza: ESP Ausserholligen\, Gesamtleiter\, Ladenwandgut
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 17.11.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/343d0b78-7688-4de6-a742-9f083898c3b2/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/343d0b78-7688-4de6-a742-9f083898c3b2
+URL:https://auftragsregister.ch/it/auftrag/343d0b78-7688-4de6-a742-9f083898
+ c3b2/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ESP Ausserholligen\, Gesamtleiter\, Ladenwandgut
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

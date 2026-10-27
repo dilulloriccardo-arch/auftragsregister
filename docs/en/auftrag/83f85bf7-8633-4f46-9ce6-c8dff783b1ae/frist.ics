@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83f85bf7-8633-4f46-9ce6-c8dff783b1ae-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:3
+DTSTART:20261116T110000Z
+SUMMARY:Submission deadline: Préservation et valorisation du site de l’A
+ mphithéâtre de Nyon
+DESCRIPTION:Public buyer: Service d’architecture de la Ville de Nyon\nSub
+ mission deadline: 16 Nov 2026\, 12:00\nIn the register: https://auftrags
+ register.ch/en/auftrag/83f85bf7-8633-4f46-9ce6-c8dff783b1ae/\nOfficial pub
+ lication: https://www.simap.ch/en/project-detail/83f85bf7-8633-4f46-9ce6-c
+ 8dff783b1ae
+URL:https://auftragsregister.ch/en/auftrag/83f85bf7-8633-4f46-9ce6-c8dff783
+ b1ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Préservation et valorisation du site de l
+ ’Amphithéâtre de Nyon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc5ed7d6-f886-440c-af42-53c8d188b848-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Eingabefrist: Neubau Seniorenwohnungen Herosé\, Aarau - BKP 250 Sa
+ nitäranlagen
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Aarau - Stadtbauamt\, Sektion H
+ ochbau\nEingabefrist: 26.11.2026\, 16.00 Uhr\nIm Register: https://auftra
+ gsregister.ch/de/auftrag/cc5ed7d6-f886-440c-af42-53c8d188b848/\nAmtliche P
+ ublikation: https://www.simap.ch/de/project-detail/cc5ed7d6-f886-440c-af42
+ -53c8d188b848
+URL:https://auftragsregister.ch/de/auftrag/cc5ed7d6-f886-440c-af42-53c8d188
+ b848/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Seniorenwohnungen Herosé\, Aarau - BKP 25
+ 0 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

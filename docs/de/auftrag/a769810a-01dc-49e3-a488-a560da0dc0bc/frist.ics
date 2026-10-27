@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a769810a-01dc-49e3-a488-a560da0dc0bc-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Eingabefrist: 281 03 Bodenbeläge aus Parkett und Linoleum
+DESCRIPTION:Auftraggeber: Vollenweider Baurealisation GmbH\nEingabefrist: 2
+ 0.11.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/a769810a-01dc-49e3-a488-a560da0dc0bc/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/a769810a-01dc-49e3-a488-a560da0dc0bc
+URL:https://auftragsregister.ch/de/auftrag/a769810a-01dc-49e3-a488-a560da0d
+ c0bc/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 281 03 Bodenbeläge aus Parkett und Linoleum
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

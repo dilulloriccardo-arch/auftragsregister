@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6f28ada2-14b6-46fd-a865-3601a28ce79b-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Eingabefrist: Reinigung Abdeckung Spitzenlast / Subm. Nr.: 2026-18
+DESCRIPTION:Auftraggeber: TED - Entsorgung + Recycling Zürich (ERZ) Hagenh
+ olzstrasse 110\, Zürich\nEingabefrist: 05.11.2026\, 16.00 Uhr\nIm Regist
+ er: https://auftragsregister.ch/de/auftrag/6f28ada2-14b6-46fd-a865-3601a28
+ ce79b/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/6f28a
+ da2-14b6-46fd-a865-3601a28ce79b
+URL:https://auftragsregister.ch/de/auftrag/6f28ada2-14b6-46fd-a865-3601a28c
+ e79b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Reinigung Abdeckung Spitzenlast / Subm. Nr.: 2026
+ -18
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

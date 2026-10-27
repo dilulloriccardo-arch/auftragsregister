@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7a6307a1-f6e4-49a0-9255-60d947f8bb69-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Submission deadline: Modernisierung "Kirchzelg"\, St. Bernhardstras
+ se 38\, 5430 Wettingen / BKP 221.4 Fenster und Türen aus Metall
+DESCRIPTION:Public buyer: arwo Stiftung\nSubmission deadline: 16 Nov 2026
+ \nIn the register: https://auftragsregister.ch/en/auftrag/7a6307a1-f6e4-49
+ a0-9255-60d947f8bb69/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/7a6307a1-f6e4-49a0-9255-60d947f8bb69
+URL:https://auftragsregister.ch/en/auftrag/7a6307a1-f6e4-49a0-9255-60d947f8
+ bb69/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Modernisierung "Kirchzelg"\, St. Bernhards
+ trasse 38\, 5430 Wettingen / BKP 221.4 Fenster und Türen aus Metall
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

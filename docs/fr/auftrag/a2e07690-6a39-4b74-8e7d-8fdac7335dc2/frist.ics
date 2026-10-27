@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a2e07690-6a39-4b74-8e7d-8fdac7335dc2-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Délai de remise : MP-180002\, Mesures de maintenance de la tange
+ nte Est de Bâle / Travaux de génie civil\, tronçon 2
+DESCRIPTION:Acheteur public : Eidgenössisches Departement für Umwelt\, 
+ Verkehr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abtei
+ lung Strasseninfrastruktur-Ost - F3\nDélai de remise : 17.12.2026\, 23
+  h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/a2e
+ 07690-6a39-4b74-8e7d-8fdac7335dc2/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/a2e07690-6a39-4b74-8e7d-8fdac7335dc2
+URL:https://auftragsregister.ch/fr/auftrag/a2e07690-6a39-4b74-8e7d-8fdac733
+ 5dc2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-180002\, Mesures de maintenance de la t
+ angente Est de Bâle / Travaux de génie civil\, tronçon 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

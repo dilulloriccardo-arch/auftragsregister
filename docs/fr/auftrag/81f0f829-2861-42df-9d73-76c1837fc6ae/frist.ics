@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81f0f829-2861-42df-9d73-76c1837fc6ae-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261116T140000Z
+SUMMARY:Délai de remise : Contrat cadres Assistant à Maîtrise d’Ouvr
+ ages région ouest
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  16.11.2026\, 15 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/81f0f829-2861-42df-9d73-76c1837fc6ae/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/81f0f829-2861-42df-9d73-76c183
+ 7fc6ae
+URL:https://auftragsregister.ch/fr/auftrag/81f0f829-2861-42df-9d73-76c1837f
+ c6ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat cadres Assistant à Maîtrise d’
+ Ouvrages région ouest
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

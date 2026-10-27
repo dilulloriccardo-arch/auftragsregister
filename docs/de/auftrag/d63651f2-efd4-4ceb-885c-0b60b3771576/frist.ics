@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d63651f2-efd4-4ceb-885c-0b60b3771576-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T190000Z
+SUMMARY:Eingabefrist: LED Generalersatz Gebäude Kollegium Schwyz
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Schwyz\nEingabefrist: 06.11.202
+ 6\, 20.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d63651
+ f2-efd4-4ceb-885c-0b60b3771576/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/d63651f2-efd4-4ceb-885c-0b60b3771576
+URL:https://auftragsregister.ch/de/auftrag/d63651f2-efd4-4ceb-885c-0b60b377
+ 1576/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: LED Generalersatz Gebäude Kollegium Schwyz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

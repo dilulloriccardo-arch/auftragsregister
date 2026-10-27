@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:98b86be9-b646-40ec-994c-dfee990c407a-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Scadenza: Röntgen-CT-System für die Analyse von Gesteins- und Bod
+ enproben
+DESCRIPTION:Ente pubblico: ETH Zürich - Abt. Procurement & Export Services
+ \nScadenza: 25.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/
+ it/auftrag/98b86be9-b646-40ec-994c-dfee990c407a/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/98b86be9-b646-40ec-994c-dfee990c40
+ 7a
+URL:https://auftragsregister.ch/it/auftrag/98b86be9-b646-40ec-994c-dfee990c
+ 407a/
+LOCATION:Zürich ETH Hönggerberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Röntgen-CT-System für die Analyse von Gesteins- und
+  Bodenproben
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

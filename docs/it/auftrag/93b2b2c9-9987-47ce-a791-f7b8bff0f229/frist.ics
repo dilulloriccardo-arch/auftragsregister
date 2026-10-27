@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:93b2b2c9-9987-47ce-a791-f7b8bff0f229-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:1
+DTSTART:20261111T110000Z
+SUMMARY:Scadenza: Rasterelektronenmikroskop zur Bildgebung und quantitative
+ n Analyse an geologischen Proben
+DESCRIPTION:Ente pubblico: ETH Zürich - Abt. Procurement & Export Services
+ \nScadenza: 11.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/
+ it/auftrag/93b2b2c9-9987-47ce-a791-f7b8bff0f229/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/93b2b2c9-9987-47ce-a791-f7b8bff0f2
+ 29
+URL:https://auftragsregister.ch/it/auftrag/93b2b2c9-9987-47ce-a791-f7b8bff0
+ f229/
+LOCATION:Zürich ETH Zentrum
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rasterelektronenmikroskop zur Bildgebung und quantita
+ tiven Analyse an geologischen Proben
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fdfe3852-07bb-42d0-85b3-3cfb000d1526-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Délai de remise : Cryogenic Probe Station
+DESCRIPTION:Acheteur public : Universität Basel\nDélai de remise : 06
+ .11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/fdfe3852-07bb-42d0-85b3-3cfb000d1526/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/fdfe3852-07bb-42d0-85b3-3cfb000d1
+ 526
+URL:https://auftragsregister.ch/fr/auftrag/fdfe3852-07bb-42d0-85b3-3cfb000d
+ 1526/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Cryogenic Probe Station
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

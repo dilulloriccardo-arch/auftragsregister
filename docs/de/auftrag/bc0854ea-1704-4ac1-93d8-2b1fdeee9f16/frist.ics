@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc0854ea-1704-4ac1-93d8-2b1fdeee9f16-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Eingabefrist: Kirchgemeindehaus Enge\, Instandsetzung Gebäude mit 
+ Bistrobetrieb BKP 242 Heizungsanlagen
+DESCRIPTION:Auftraggeber: Reformierte Kirchgemeinde Zürich\nEingabefrist: 
+ 25.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/bc0854ea-1704-4ac1-93d8-2b1fdeee9f16/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/bc0854ea-1704-4ac1-93d8-2b1fdeee9f16
+URL:https://auftragsregister.ch/de/auftrag/bc0854ea-1704-4ac1-93d8-2b1fdeee
+ 9f16/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kirchgemeindehaus Enge\, Instandsetzung Gebäude 
+ mit Bistrobetrieb BKP 242 Heizungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

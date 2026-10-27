@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dc51eef1-f9d8-4cce-bfbe-8c2f99766b9e-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261110T140000Z
+SUMMARY:Délai de remise : Construction du nouveau complexe hospitalier 2
+ \, phase 1\, SKP 723\, bras de distribution suspendus
+DESCRIPTION:Acheteur public : Universitätsspital Basel\nDélai de remise
+  : 10.11.2026\, 15 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/dc51eef1-f9d8-4cce-bfbe-8c2f99766b9e/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/dc51eef1-f9d8-4cce-bfbe-8c
+ 2f99766b9e
+URL:https://auftragsregister.ch/fr/auftrag/dc51eef1-f9d8-4cce-bfbe-8c2f9976
+ 6b9e/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction du nouveau complexe hospitali
+ er 2\, phase 1\, SKP 723\, bras de distribution suspendus
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:43fe3b36-f858-48d9-81b3-a21326e0051d-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Scadenza: Übernahme und Verwertung von Kleinmetall aus der Stadt Z
+ ürich
+DESCRIPTION:Ente pubblico: TED - Entsorgung + Recycling Zürich (ERZ) Hagen
+ holzstrasse 110\, Zürich\nScadenza: 24.11.2026\, 16:00\nNel registro: htt
+ ps://auftragsregister.ch/it/auftrag/43fe3b36-f858-48d9-81b3-a21326e0051d/\
+ nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/43fe3b36-
+ f858-48d9-81b3-a21326e0051d
+URL:https://auftragsregister.ch/it/auftrag/43fe3b36-f858-48d9-81b3-a21326e0
+ 051d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Übernahme und Verwertung von Kleinmetall aus der Sta
+ dt Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

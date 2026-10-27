@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16fee67d-11ee-4550-bd8f-a43ef8582e0d-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261112T225900Z
+SUMMARY:Délai de remise : Un équipement plasma de gravure ionique réac
+ tive de métaux pour le Centre de MicroNanoTechnologie
+DESCRIPTION:Acheteur public : EPFL-Scientific Equipment\nDélai de remise
+  : 12.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/16fee67d-11ee-4550-bd8f-a43ef8582e0d/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/16fee67d-11ee-4550-bd8f-a4
+ 3ef8582e0d
+URL:https://auftragsregister.ch/fr/auftrag/16fee67d-11ee-4550-bd8f-a43ef858
+ 2e0d/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Un équipement plasma de gravure ionique r
+ éactive de métaux pour le Centre de MicroNanoTechnologie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

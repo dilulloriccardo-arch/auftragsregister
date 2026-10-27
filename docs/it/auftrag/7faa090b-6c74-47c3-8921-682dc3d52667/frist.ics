@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7faa090b-6c74-47c3-8921-682dc3d52667-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Scadenza: Sicherheitsdienstleistungen für das Justiz- und Sicherhe
+ itsdepartement Basel-Stadt
+DESCRIPTION:Ente pubblico: Bau- und Verkehrsdepartement des Kantons Basel-S
+ tadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nScade
+ nza: 23.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/7faa090b-6c74-47c3-8921-682dc3d52667/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/7faa090b-6c74-47c3-8921-682dc3d52667
+URL:https://auftragsregister.ch/it/auftrag/7faa090b-6c74-47c3-8921-682dc3d5
+ 2667/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sicherheitsdienstleistungen für das Justiz- und Sich
+ erheitsdepartement Basel-Stadt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

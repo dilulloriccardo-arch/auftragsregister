@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a8c4a747-3f51-46d2-b2de-d1a058f9923e-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261211T140000Z
+SUMMARY:Délai de remise : 7504 BKP 369.3 Installation de sel et de saumu
+ re\, centre d'entretien du service des travaux publics d'Amriswil
+DESCRIPTION:Acheteur public : Kantonales Hochbauamt Thurgau\nDélai de re
+ mise : 11.12.2026\, 15 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/a8c4a747-3f51-46d2-b2de-d1a058f9923e/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/a8c4a747-3f51-46d2-b2d
+ e-d1a058f9923e
+URL:https://auftragsregister.ch/fr/auftrag/a8c4a747-3f51-46d2-b2de-d1a058f9
+ 923e/
+LOCATION:Amriswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 7504 BKP 369.3 Installation de sel et de s
+ aumure\, centre d'entretien du service des travaux publics d'Amriswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

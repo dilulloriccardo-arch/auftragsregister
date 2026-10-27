@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aac83e51-b535-46de-aeec-9b2a6663a43b-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261030T110000Z
+SUMMARY:Scadenza: Chirurgieroboter
+DESCRIPTION:Ente pubblico: Spital Limmattal\nScadenza: 30.10.2026\, 12:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/aac83e51-b535-46de-ae
+ ec-9b2a6663a43b/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/aac83e51-b535-46de-aeec-9b2a6663a43b
+URL:https://auftragsregister.ch/it/auftrag/aac83e51-b535-46de-aeec-9b2a6663
+ a43b/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Chirurgieroboter
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8671d73-3c71-4420-a314-30aacb942a4e-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Eingabefrist: Neubau Energiezentrale Cluster 4 | BKP 242
+DESCRIPTION:Auftraggeber: Kanton Zürich Hochbauaumt\, Baubereich D\nEingab
+ efrist: 30.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/d8671d73-3c71-4420-a314-30aacb942a4e/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/d8671d73-3c71-4420-a314-30aacb942a4e
+URL:https://auftragsregister.ch/de/auftrag/d8671d73-3c71-4420-a314-30aacb94
+ 2a4e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Energiezentrale Cluster 4 | BKP 242
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

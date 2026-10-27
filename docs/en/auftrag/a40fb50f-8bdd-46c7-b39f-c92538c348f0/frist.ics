@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a40fb50f-8bdd-46c7-b39f-c92538c348f0-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261106T153000Z
+SUMMARY:Submission deadline: Installations éléctriques - Rénovation du b
+ âtiment PICTO Avenue Ernest-Pictet 28-30
+DESCRIPTION:Public buyer: Etat de Genève\, Département du territoire - DT
+ \, Office Cantonal des bâtiments (OCBA)\nSubmission deadline: 6 Nov 202
+ 6\, 16:30\nIn the register: https://auftragsregister.ch/en/auftrag/a40fb50
+ f-8bdd-46c7-b39f-c92538c348f0/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/a40fb50f-8bdd-46c7-b39f-c92538c348f0
+URL:https://auftragsregister.ch/en/auftrag/a40fb50f-8bdd-46c7-b39f-c92538c3
+ 48f0/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Installations éléctriques - Rénovation 
+ du bâtiment PICTO Avenue Ernest-Pictet 28-30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

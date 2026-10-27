@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfe8187c-a55c-47aa-82ba-2aabd046d816-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261104T225900Z
+SUMMARY:Scadenza: MP-180038\, SABA Bewangerbach\, Frauenfeld\, Baumeister
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Filiale Winterth
+ ur\nScadenza: 04.11.2026\, 23:59\nNel registro: https://auftragsregister.c
+ h/it/auftrag/cfe8187c-a55c-47aa-82ba-2aabd046d816/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/cfe8187c-a55c-47aa-82ba-2aabd046
+ d816
+URL:https://auftragsregister.ch/it/auftrag/cfe8187c-a55c-47aa-82ba-2aabd046
+ d816/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-180038\, SABA Bewangerbach\, Frauenfeld\, Baumeist
+ er
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

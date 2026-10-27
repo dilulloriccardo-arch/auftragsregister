@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87c45c4f-77fa-4088-9db9-62c62e8ac120-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261102T103000Z
+SUMMARY:Eingabefrist: Groupe scolaire des Grands Esserts - Aménagements ex
+ térieurs
+DESCRIPTION:Auftraggeber: Commune de Veyrier - Service Aménagement-Constru
+ ction-Infrastructures (zssa)\nEingabefrist: 02.11.2026\, 11.30 Uhr\nIm Re
+ gister: https://auftragsregister.ch/de/auftrag/87c45c4f-77fa-4088-9db9-62c
+ 62e8ac120/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/8
+ 7c45c4f-77fa-4088-9db9-62c62e8ac120
+URL:https://auftragsregister.ch/de/auftrag/87c45c4f-77fa-4088-9db9-62c62e8a
+ c120/
+LOCATION:veyrier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Groupe scolaire des Grands Esserts - Aménagement
+ s extérieurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

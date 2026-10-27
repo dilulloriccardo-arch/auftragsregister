@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c21f5bbe-0edd-4227-b3a3-e1c29eb22dc3-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Eingabefrist: 22128 Hardbrücke\, Widerlager Rosengarten
+DESCRIPTION:Auftraggeber: Tiefbauamt Stadt Zürich\, Kunstbauten + Objektmg
+ t.\nEingabefrist: 23.11.2026\, 16.00 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/c21f5bbe-0edd-4227-b3a3-e1c29eb22dc3/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/c21f5bbe-0edd-4227-b3a3-e1c
+ 29eb22dc3
+URL:https://auftragsregister.ch/de/auftrag/c21f5bbe-0edd-4227-b3a3-e1c29eb2
+ 2dc3/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 22128 Hardbrücke\, Widerlager Rosengarten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2d9b1e58-7716-473b-a121-cb8b5589ab4a-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261109T225900Z
+SUMMARY:Eingabefrist: Client-Hardware
+DESCRIPTION:Auftraggeber: Switch\nEingabefrist: 09.11.2026\, 23.59 Uhr\nIm
+  Register: https://auftragsregister.ch/de/auftrag/2d9b1e58-7716-473b-a121-
+ cb8b5589ab4a/\nAmtliche Publikation: https://www.simap.ch/de/project-detai
+ l/2d9b1e58-7716-473b-a121-cb8b5589ab4a
+URL:https://auftragsregister.ch/de/auftrag/2d9b1e58-7716-473b-a121-cb8b5589
+ ab4a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Client-Hardware
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

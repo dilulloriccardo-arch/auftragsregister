@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:17c2113e-f88c-4f18-995f-0d8ad061c1e8-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:1
+DTSTART:20261120T220000Z
+SUMMARY:Délai de remise : TR1360\, 380kV La Punt - Filisur - Sils i.D.\,
+  travaux de montage 2028 - 2029 (assainissement de la ligne aérienne)
+DESCRIPTION:Acheteur public : Swissgrid AG - Engineering & Construction\n
+ Délai de remise : 20.11.2026\, 23 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/17c2113e-f88c-4f18-995f-0d8ad061c1e8/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/17c2113e-f
+ 88c-4f18-995f-0d8ad061c1e8
+URL:https://auftragsregister.ch/fr/auftrag/17c2113e-f88c-4f18-995f-0d8ad061
+ c1e8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : TR1360\, 380kV La Punt - Filisur - Sils i.
+ D.\, travaux de montage 2028 - 2029 (assainissement de la ligne aérienne)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

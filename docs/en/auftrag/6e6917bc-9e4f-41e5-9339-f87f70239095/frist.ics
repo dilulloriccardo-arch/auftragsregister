@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e6917bc-9e4f-41e5-9339-f87f70239095-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261202T103000Z
+SUMMARY:Submission deadline: Neubau Schul-\, Sport- und Freizeitanlage Maih
+ of I BKP 171 / BKP 201 / BKP 211
+DESCRIPTION:Public buyer: Gemeinde Feusisberg\nSubmission deadline: 2 Dec
+  2026\, 11:30\nIn the register: https://auftragsregister.ch/en/auftrag/6e
+ 6917bc-9e4f-41e5-9339-f87f70239095/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/6e6917bc-9e4f-41e5-9339-f87f70239095
+URL:https://auftragsregister.ch/en/auftrag/6e6917bc-9e4f-41e5-9339-f87f7023
+ 9095/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Schul-\, Sport- und Freizeitanlage 
+ Maihof I BKP 171 / BKP 201 / BKP 211
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

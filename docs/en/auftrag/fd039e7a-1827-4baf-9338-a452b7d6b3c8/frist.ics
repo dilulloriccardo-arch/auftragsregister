@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fd039e7a-1827-4baf-9338-a452b7d6b3c8-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261029T150000Z
+SUMMARY:Submission deadline: 13043.10 / 211-01 Baumeisterarbeiten\, Instand
+ setzung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontroll
+ e Oberrieden
+DESCRIPTION:Public buyer: Hochbauamt Kanton Zürich\nSubmission deadline: 2
+ 9 Oct 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/fd039e7a-1827-4baf-9338-a452b7d6b3c8/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/fd039e7a-1827-4baf-9338-a452b7d6b3c8
+URL:https://auftragsregister.ch/en/auftrag/fd039e7a-1827-4baf-9338-a452b7d6
+ b3c8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 13043.10 / 211-01 Baumeisterarbeiten\, Ins
+ tandsetzung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskont
+ rolle Oberrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

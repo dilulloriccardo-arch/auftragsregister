@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cd1db22f-4824-47fd-a643-d47a43c6af63-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261208T150000Z
+SUMMARY:Délai de remise : Erweiterung Alterszentrum Bärenmatt: BKP 250 
+ Sanitäranlagen
+DESCRIPTION:Acheteur public : HSSP AG\nDélai de remise : 08.12.2026\, 
+ 16 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/c
+ d1db22f-4824-47fd-a643-d47a43c6af63/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/cd1db22f-4824-47fd-a643-d47a43c6af63
+URL:https://auftragsregister.ch/fr/auftrag/cd1db22f-4824-47fd-a643-d47a43c6
+ af63/
+LOCATION:Bremgarten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erweiterung Alterszentrum Bärenmatt: BKP 
+ 250 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

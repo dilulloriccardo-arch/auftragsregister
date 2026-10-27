@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bdc0d6b2-9a3e-4de7-903f-c1d686a53b69-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261118T160000Z
+SUMMARY:Délai de remise : Traversée Village de Le Vaud - Travaux Génie
+  Civil
+DESCRIPTION:Acheteur public : Commune de Le Vaud\nDélai de remise : 18
+ .11.2026\, 17 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/bdc0d6b2-9a3e-4de7-903f-c1d686a53b69/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/bdc0d6b2-9a3e-4de7-903f-c1d686a53
+ b69
+URL:https://auftragsregister.ch/fr/auftrag/bdc0d6b2-9a3e-4de7-903f-c1d686a5
+ 3b69/
+LOCATION:Le vaud
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Traversée Village de Le Vaud - Travaux G
+ énie Civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3f17d2b7-1de3-4b42-a222-a79188c34828-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261113T150000Z
+SUMMARY:Délai de remise : IMA FV Pestalozzistrasse 55/57\, Instandsetzun
+ g mit Umnutzung | BKP 230 Elektroanlagen
+DESCRIPTION:Acheteur public : Kanton Zürich Hochbauaumt\, Baubereich D\n
+ Délai de remise : 13.11.2026\, 16 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/3f17d2b7-1de3-4b42-a222-a79188c34828/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/3f17d2b7-1
+ de3-4b42-a222-a79188c34828
+URL:https://auftragsregister.ch/fr/auftrag/3f17d2b7-1de3-4b42-a222-a79188c3
+ 4828/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IMA FV Pestalozzistrasse 55/57\, Instandse
+ tzung mit Umnutzung | BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

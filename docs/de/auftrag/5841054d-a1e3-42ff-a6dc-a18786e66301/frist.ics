@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5841054d-a1e3-42ff-a6dc-a18786e66301-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Eingabefrist: Spitalbetten
+DESCRIPTION:Auftraggeber: Kantonsspital Baselland\, Zentrale Vergabestelle\
+ nEingabefrist: 02.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregis
+ ter.ch/de/auftrag/5841054d-a1e3-42ff-a6dc-a18786e66301/\nAmtliche Publikat
+ ion: https://www.simap.ch/de/project-detail/5841054d-a1e3-42ff-a6dc-a18786
+ e66301
+URL:https://auftragsregister.ch/de/auftrag/5841054d-a1e3-42ff-a6dc-a18786e6
+ 6301/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Spitalbetten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

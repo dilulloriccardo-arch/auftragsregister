@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:31eed44a-7f64-44f9-8512-d83178c55d46-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261111T150000Z
+SUMMARY:Scadenza: MP-230042 NEB N13 Pavimentazione Magadino-Ascona\, Lotto 
+ 001\, laboratorio del committente
+DESCRIPTION:Ente pubblico: Ufficio federale delle strade USTRA\, divisione 
+ infrastruttura stradale Est\nScadenza: 11.11.2026\, 16:00\nNel registro: h
+ ttps://auftragsregister.ch/it/auftrag/31eed44a-7f64-44f9-8512-d83178c55d46
+ /\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/31eed44
+ a-7f64-44f9-8512-d83178c55d46
+URL:https://auftragsregister.ch/it/auftrag/31eed44a-7f64-44f9-8512-d83178c5
+ 5d46/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-230042 NEB N13 Pavimentazione Magadino-Ascona\, Lo
+ tto 001\, laboratorio del committente
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

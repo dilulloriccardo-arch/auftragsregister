@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d99e7345-847e-4c88-90f2-8f46815c4774-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261201T100000Z
+SUMMARY:Scadenza: Gesamtleistungssubmission Systembau schulergänzende Betr
+ euung\, Flurlingen
+DESCRIPTION:Ente pubblico: Gemeinde Flurlingen (Landis AG)\nScadenza: 01.12
+ .2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/d99e73
+ 45-847e-4c88-90f2-8f46815c4774/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/d99e7345-847e-4c88-90f2-8f46815c4774
+URL:https://auftragsregister.ch/it/auftrag/d99e7345-847e-4c88-90f2-8f46815c
+ 4774/
+LOCATION:Flurlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gesamtleistungssubmission Systembau schulergänzende 
+ Betreuung\, Flurlingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

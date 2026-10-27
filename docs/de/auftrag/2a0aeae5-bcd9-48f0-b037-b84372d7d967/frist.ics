@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2a0aeae5-bcd9-48f0-b037-b84372d7d967-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261110T160000Z
+SUMMARY:Eingabefrist: LIFT pilot project for drone-based postal delivery in
+  the Maldives
+DESCRIPTION:Auftraggeber: Union postale universelle\nEingabefrist: 10.11.20
+ 26\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2a0ae
+ ae5-bcd9-48f0-b037-b84372d7d967/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/2a0aeae5-bcd9-48f0-b037-b84372d7d967
+URL:https://auftragsregister.ch/de/auftrag/2a0aeae5-bcd9-48f0-b037-b84372d7
+ d967/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: LIFT pilot project for drone-based postal deliver
+ y in the Maldives
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8c64c252-2bbc-411c-8a93-0988d5dc17aa-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261208T100000Z
+SUMMARY:Délai de remise : Neubau Feuerwehr- und Werkgebäude\, BKP 463 U
+ mgebungsarbeiten (Gärtner)
+DESCRIPTION:Acheteur public : Stadt Illnau-Effretikon\, Abteilung Hochbau
+ \nDélai de remise : 08.12.2026\, 11 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/8c64c252-2bbc-411c-8a93-0988d5dc17aa/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/8c64c252
+ -2bbc-411c-8a93-0988d5dc17aa
+URL:https://auftragsregister.ch/fr/auftrag/8c64c252-2bbc-411c-8a93-0988d5dc
+ 17aa/
+LOCATION:Effretikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Feuerwehr- und Werkgebäude\, BKP 4
+ 63 Umgebungsarbeiten (Gärtner)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

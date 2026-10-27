@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d9e640a-b0cb-41ea-a127-1d1b6463d10d-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270107T150000Z
+SUMMARY:Eingabefrist: 26-417-FB Rottenverstärkung Fahrbahn
+DESCRIPTION:Auftraggeber: SBB CFF FFS Infra-Bahntechnik\nEingabefrist: 07.0
+ 1.2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0
+ d9e640a-b0cb-41ea-a127-1d1b6463d10d/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/0d9e640a-b0cb-41ea-a127-1d1b6463d10d
+URL:https://auftragsregister.ch/de/auftrag/0d9e640a-b0cb-41ea-a127-1d1b6463
+ d10d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 26-417-FB Rottenverstärkung Fahrbahn
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

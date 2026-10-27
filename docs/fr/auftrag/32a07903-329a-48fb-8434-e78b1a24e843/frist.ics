@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32a07903-329a-48fb-8434-e78b1a24e843-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Délai de remise : MP-220041\, N15-08/10 Remise en état EES\, lo
+ t 31 TU Travaux de revêtement et de peinture
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA - Filiale Win
+ terthur\nDélai de remise : 24.11.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/32a07903-329a-48fb-8434-e78b1a
+ 24e843/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /32a07903-329a-48fb-8434-e78b1a24e843
+URL:https://auftragsregister.ch/fr/auftrag/32a07903-329a-48fb-8434-e78b1a24
+ e843/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-220041\, N15-08/10 Remise en état EES\
+ , lot 31 TU Travaux de revêtement et de peinture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

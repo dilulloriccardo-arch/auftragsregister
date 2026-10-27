@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5c0e1174-157c-4216-a184-02bcb6d97ea4-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261110T150000Z
+SUMMARY:Submission deadline: Zukunft Bahnhof Bern\, Bausteine 1\, 2\, 3a\, 
+ 3b\, 4\, 292 Bauingenieurleistung\, Oberbauleitung: 12'500 h externe Proje
+ ktleitung
+DESCRIPTION:Public buyer: Fachstelle Beschaffungswesen Stadt Bern\nSubmissi
+ on deadline: 10 Nov 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/5c0e1174-157c-4216-a184-02bcb6d97ea4/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/5c0e1174-157c-4216-a184-02bcb6
+ d97ea4
+URL:https://auftragsregister.ch/en/auftrag/5c0e1174-157c-4216-a184-02bcb6d9
+ 7ea4/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Zukunft Bahnhof Bern\, Bausteine 1\, 2\, 3
+ a\, 3b\, 4\, 292 Bauingenieurleistung\, Oberbauleitung: 12'500 h externe P
+ rojektleitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9476523a-1a70-494e-8e2d-4f6a0a0d96b1-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261201T110000Z
+SUMMARY:Scadenza: Stabe Stebe B
+DESCRIPTION:Ente pubblico: Amt für Wirtschaft und Arbeit\, Abteilung LAM\n
+ Scadenza: 01.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/9476523a-1a70-494e-8e2d-4f6a0a0d96b1/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/9476523a-1a70-494e-8e2d-4f6a0a0d96b1
+URL:https://auftragsregister.ch/it/auftrag/9476523a-1a70-494e-8e2d-4f6a0a0d
+ 96b1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Stabe Stebe B
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

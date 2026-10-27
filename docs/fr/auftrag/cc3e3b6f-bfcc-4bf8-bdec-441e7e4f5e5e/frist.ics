@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc3e3b6f-bfcc-4bf8-bdec-441e7e4f5e5e-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T160000Z
+SUMMARY:Délai de remise : Installation de rails et de voies ferrées
+DESCRIPTION:Acheteur public : Verkehrsbetriebe Zürich (VBZ)\nDélai de r
+ emise : 23.11.2026\, 17 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/cc3e3b6f-bfcc-4bf8-bdec-441e7e4f5e5e/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/cc3e3b6f-bfcc-4bf8-bd
+ ec-441e7e4f5e5e
+URL:https://auftragsregister.ch/fr/auftrag/cc3e3b6f-bfcc-4bf8-bdec-441e7e4f
+ 5e5e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Installation de rails et de voies ferrées
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

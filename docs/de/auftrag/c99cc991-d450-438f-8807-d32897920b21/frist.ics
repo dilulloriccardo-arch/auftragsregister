@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c99cc991-d450-438f-8807-d32897920b21-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261109T130000Z
+SUMMARY:Eingabefrist: Appel d'offres pour l'attribution de contrats-cadres 
+ relatifs à la fourniture de denrées alimentaires pour la période 2027-2
+ 029 au profit de la Fondation « Casa per Anziani » de Giubiasco
+DESCRIPTION:Auftraggeber: Fondazione Casa per Anziani di GIubiasco\nEingabe
+ frist: 09.11.2026\, 14.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/c99cc991-d450-438f-8807-d32897920b21/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/c99cc991-d450-438f-8807-d32897920b21
+URL:https://auftragsregister.ch/de/auftrag/c99cc991-d450-438f-8807-d3289792
+ 0b21/
+LOCATION:Giubiasco
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Appel d'offres pour l'attribution de contrats-cad
+ res relatifs à la fourniture de denrées alimentaires pour la période 20
+ 27-2029 au profit de la Fondation « Casa per Anziani » de Giubiasco
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

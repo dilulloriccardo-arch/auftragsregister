@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92377e30-103b-43d7-b596-1595d8391ce4-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T140000Z
+SUMMARY:Délai de remise : Équipes externes de gestion de projet pour le
+  Service des transports et des infrastructures (vif) du canton de Lucerne
+DESCRIPTION:Acheteur public : Verkehr und Infrastruktur (vif)\, Planung S
+ trassen\nDélai de remise : 27.11.2026\, 15 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/92377e30-103b-43d7-b596-1595d8
+ 391ce4/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /92377e30-103b-43d7-b596-1595d8391ce4
+URL:https://auftragsregister.ch/fr/auftrag/92377e30-103b-43d7-b596-1595d839
+ 1ce4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Équipes externes de gestion de projet pou
+ r le Service des transports et des infrastructures (vif) du canton de Luce
+ rne
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

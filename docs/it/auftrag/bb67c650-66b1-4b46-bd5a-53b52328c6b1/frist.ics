@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb67c650-66b1-4b46-bd5a-53b52328c6b1-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Scadenza: v1172 Tiefbauarbeiten für erdverlegte Fernleitungen
+DESCRIPTION:Ente pubblico: DIB - Elektrizitätswerk der Stadt Zürich (ewz)
+ \nScadenza: 12.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/
+ it/auftrag/bb67c650-66b1-4b46-bd5a-53b52328c6b1/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/bb67c650-66b1-4b46-bd5a-53b52328c6
+ b1
+URL:https://auftragsregister.ch/it/auftrag/bb67c650-66b1-4b46-bd5a-53b52328
+ c6b1/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: v1172 Tiefbauarbeiten für erdverlegte Fernleitungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

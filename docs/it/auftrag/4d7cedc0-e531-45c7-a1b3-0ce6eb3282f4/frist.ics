@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4d7cedc0-e531-45c7-a1b3-0ce6eb3282f4-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Scadenza: MOB-Projekt Ersatz Sicherungsanlagen Zweisimmen-Lenk (SA 
+ ZL) - Ausschreibung Los 101 Tiefbauarbeiten
+DESCRIPTION:Ente pubblico: Compagnie du Chemin de fer Montreux Oberland ber
+ nois SA - Infrastructure Projets\nScadenza: 15.12.2026\, 12:00\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/4d7cedc0-e531-45c7-a1b3-0ce6eb3
+ 282f4/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/4d
+ 7cedc0-e531-45c7-a1b3-0ce6eb3282f4
+URL:https://auftragsregister.ch/it/auftrag/4d7cedc0-e531-45c7-a1b3-0ce6eb32
+ 82f4/
+LOCATION:Zweisimmen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MOB-Projekt Ersatz Sicherungsanlagen Zweisimmen-Lenk 
+ (SA ZL) - Ausschreibung Los 101 Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

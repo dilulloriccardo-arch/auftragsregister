@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2ae6a0d6-f851-48b9-a6ba-965085eb082c-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Submission deadline: GM Sumvitg: Baumeisterarbeiten 2027–2029
+DESCRIPTION:Public buyer: Ingenieurbüro Deplazes\nSubmission deadline: 20
+  Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/2ae6a0d6-f851-48b9-a6ba-965085eb082c/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/2ae6a0d6-f851-48b9-a6ba-965085eb082c
+URL:https://auftragsregister.ch/en/auftrag/2ae6a0d6-f851-48b9-a6ba-965085eb
+ 082c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: GM Sumvitg: Baumeisterarbeiten 2027–2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

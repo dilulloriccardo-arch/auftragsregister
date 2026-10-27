@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:93a996b1-fce7-468e-8d26-52248d00137d-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Délai de remise : 16.0249 - Langenthal\, rénovation et extensio
+ n de l’école professionnelle : 211 Entreprise de maçonnerie
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 02.12.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/93a996b1-fce7-468e-8d26-5
+ 2248d00137d/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/93a996b1-fce7-468e-8d26-52248d00137d
+URL:https://auftragsregister.ch/fr/auftrag/93a996b1-fce7-468e-8d26-52248d00
+ 137d/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 16.0249 - Langenthal\, rénovation et exte
+ nsion de l’école professionnelle : 211 Entreprise de maçonnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

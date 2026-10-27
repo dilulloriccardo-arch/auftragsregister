@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6af877c7-c8e9-46c9-a538-42a169b5c314-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Scadenza: Rhäzüns - Rothenbrunnen\, km 32.172\, Erneuerung Stütz
+ mauer 15-241
+DESCRIPTION:Ente pubblico: Rhätische Bahn AG\nScadenza: 06.11.2026\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/6af877c7-c8e9-46c9-
+ a538-42a169b5c314/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/6af877c7-c8e9-46c9-a538-42a169b5c314
+URL:https://auftragsregister.ch/it/auftrag/6af877c7-c8e9-46c9-a538-42a169b5
+ c314/
+LOCATION:Rhäzüns
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rhäzüns - Rothenbrunnen\, km 32.172\, Erneuerung St
+ ützmauer 15-241
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

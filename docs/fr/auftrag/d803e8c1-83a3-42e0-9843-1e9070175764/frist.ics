@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d803e8c1-83a3-42e0-9843-1e9070175764-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261111T150000Z
+SUMMARY:Délai de remise : 23119 Schanzengraben Ersatzmassnahmen
+DESCRIPTION:Acheteur public : Tiefbauamt Stadt Zürich\, Kunstbauten + Ob
+ jektmgt.\nDélai de remise : 11.11.2026\, 16 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/d803e8c1-83a3-42e0-9843-1e9070
+ 175764/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /d803e8c1-83a3-42e0-9843-1e9070175764
+URL:https://auftragsregister.ch/fr/auftrag/d803e8c1-83a3-42e0-9843-1e907017
+ 5764/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 23119 Schanzengraben Ersatzmassnahmen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aeaee652-36dc-4046-89a0-c6894b7f2f44-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Scadenza: BKP 244 Lufttechnische Anlagen
+DESCRIPTION:Ente pubblico: Baureag Architekten AG\nScadenza: 25.11.2026\, 1
+ 6:00\nNel registro: https://auftragsregister.ch/it/auftrag/aeaee652-36dc-4
+ 046-89a0-c6894b7f2f44/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/aeaee652-36dc-4046-89a0-c6894b7f2f44
+URL:https://auftragsregister.ch/it/auftrag/aeaee652-36dc-4046-89a0-c6894b7f
+ 2f44/
+LOCATION:Birrwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 244 Lufttechnische Anlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

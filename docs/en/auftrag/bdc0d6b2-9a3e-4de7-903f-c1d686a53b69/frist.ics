@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bdc0d6b2-9a3e-4de7-903f-c1d686a53b69-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261118T160000Z
+SUMMARY:Submission deadline: Traversée Village de Le Vaud - Travaux Génie
+  Civil
+DESCRIPTION:Public buyer: Commune de Le Vaud\nSubmission deadline: 18 Nov
+  2026\, 17:00\nIn the register: https://auftragsregister.ch/en/auftrag/bd
+ c0d6b2-9a3e-4de7-903f-c1d686a53b69/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/bdc0d6b2-9a3e-4de7-903f-c1d686a53b69
+URL:https://auftragsregister.ch/en/auftrag/bdc0d6b2-9a3e-4de7-903f-c1d686a5
+ 3b69/
+LOCATION:Le vaud
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Traversée Village de Le Vaud - Travaux G
+ énie Civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

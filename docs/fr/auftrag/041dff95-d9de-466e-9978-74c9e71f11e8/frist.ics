@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:041dff95-d9de-466e-9978-74c9e71f11e8-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Délai de remise : EPFL - Entreprise Totale - Assainissement et b
+ ouclage d'un réseau d'eaux industrielles\, y.c. création d'une station d
+ e découplage hydraulique au bord du lac contre la lutte de la propagation
+  des Moules Quagga
+DESCRIPTION:Acheteur public : EPFL VPF ACHATS\nDélai de remise : 11.01
+ .2027\, 16 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/041dff95-d9de-466e-9978-74c9e71f11e8/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/041dff95-d9de-466e-9978-74c9e71f11e8
+URL:https://auftragsregister.ch/fr/auftrag/041dff95-d9de-466e-9978-74c9e71f
+ 11e8/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EPFL - Entreprise Totale - Assainissement 
+ et bouclage d'un réseau d'eaux industrielles\, y.c. création d'une stati
+ on de découplage hydraulique au bord du lac contre la lutte de la propaga
+ tion des Moules Quagga
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce496a53-5f41-4be2-a97d-f0ee13ab0a17-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : V1297 Zürich\, Erweiterung EZ Bullingerstr. 3
+ 9\; Baumeisterarbeiten
+DESCRIPTION:Acheteur public : Elektrizitätswerk der Stadt Zürich (ewz)\
+ nDélai de remise : 30.11.2026\, 12 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/ce496a53-5f41-4be2-a97d-f0ee13ab0a17/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/ce496a53-
+ 5f41-4be2-a97d-f0ee13ab0a17
+URL:https://auftragsregister.ch/fr/auftrag/ce496a53-5f41-4be2-a97d-f0ee13ab
+ 0a17/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : V1297 Zürich\, Erweiterung EZ Bullingerst
+ r. 39\; Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

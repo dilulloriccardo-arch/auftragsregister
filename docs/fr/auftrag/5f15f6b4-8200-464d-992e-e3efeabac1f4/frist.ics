@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f15f6b4-8200-464d-992e-e3efeabac1f4-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:1
+DTSTART:20261102T225900Z
+SUMMARY:Délai de remise : AMÉNAGEMENT DES ESPACES EXTÉRIEURS PUBLICS -
+  Quartier de Surville
+DESCRIPTION:Acheteur public : Ville de Lancy (Techdata SA)\nDélai de rem
+ ise : 02.11.2026\, 23 h 59\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/5f15f6b4-8200-464d-992e-e3efeabac1f4/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/5f15f6b4-8200-464d-992e
+ -e3efeabac1f4
+URL:https://auftragsregister.ch/fr/auftrag/5f15f6b4-8200-464d-992e-e3efeaba
+ c1f4/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AMÉNAGEMENT DES ESPACES EXTÉRIEURS PUBLI
+ CS - Quartier de Surville
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

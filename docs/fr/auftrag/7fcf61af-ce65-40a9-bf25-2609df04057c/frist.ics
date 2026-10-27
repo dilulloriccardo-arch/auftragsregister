@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7fcf61af-ce65-40a9-bf25-2609df04057c-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261031T110000Z
+SUMMARY:Délai de remise : Beleuchtungssanierung Stiftung zuwebe\, Untere
+  Rainstrasse 31\, 6341 Baar
+DESCRIPTION:Acheteur public : elmaplan ag\nDélai de remise : 31.10.202
+ 6\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/auftr
+ ag/7fcf61af-ce65-40a9-bf25-2609df04057c/\nPublication officielle : https
+ ://www.simap.ch/fr/project-detail/7fcf61af-ce65-40a9-bf25-2609df04057c
+URL:https://auftragsregister.ch/fr/auftrag/7fcf61af-ce65-40a9-bf25-2609df04
+ 057c/
+LOCATION:Baar
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Beleuchtungssanierung Stiftung zuwebe\, Un
+ tere Rainstrasse 31\, 6341 Baar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

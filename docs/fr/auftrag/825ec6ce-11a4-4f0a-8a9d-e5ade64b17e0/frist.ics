@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:825ec6ce-11a4-4f0a-8a9d-e5ade64b17e0-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Délai de remise : Concours pour la fourniture de deux carburants
+  d’aviation pour Lugano Airport pour la période 2027–2030
+DESCRIPTION:Acheteur public : Città di Lugano - Finanze\nDélai de remis
+ e : 16.11.2026\, 10 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/825ec6ce-11a4-4f0a-8a9d-e5ade64b17e0/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/825ec6ce-11a4-4f0a-8a9d-e
+ 5ade64b17e0
+URL:https://auftragsregister.ch/fr/auftrag/825ec6ce-11a4-4f0a-8a9d-e5ade64b
+ 17e0/
+LOCATION:Agno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Concours pour la fourniture de deux carbur
+ ants d’aviation pour Lugano Airport pour la période 2027–2030
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

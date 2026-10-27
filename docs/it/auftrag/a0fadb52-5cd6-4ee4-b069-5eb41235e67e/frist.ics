@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0fadb52-5cd6-4ee4-b069-5eb41235e67e-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261113T080000Z
+SUMMARY:Scadenza: IWB\, Migration AC450 nach AC800M Node 22\, 32\, 41\, 42 
+ und 51
+DESCRIPTION:Ente pubblico: IWB Industrielle Werke Basel\nScadenza: 13.11.20
+ 26\, 09:00\nNel registro: https://auftragsregister.ch/it/auftrag/a0fadb52-
+ 5cd6-4ee4-b069-5eb41235e67e/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/a0fadb52-5cd6-4ee4-b069-5eb41235e67e
+URL:https://auftragsregister.ch/it/auftrag/a0fadb52-5cd6-4ee4-b069-5eb41235
+ e67e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: IWB\, Migration AC450 nach AC800M Node 22\, 32\, 41\,
+  42 und 51
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed7b16c0-0096-4196-9208-03d4cb2a0b84-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261113T160000Z
+SUMMARY:Scadenza: Ersatzneubau Reservoir Verschlinis - Baumeister
+DESCRIPTION:Ente pubblico: Elektro- und Wasserkorporation Wartau\nScadenza:
+  13.11.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ ed7b16c0-0096-4196-9208-03d4cb2a0b84/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/ed7b16c0-0096-4196-9208-03d4cb2a0b84
+URL:https://auftragsregister.ch/it/auftrag/ed7b16c0-0096-4196-9208-03d4cb2a
+ 0b84/
+LOCATION:Fontnas
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatzneubau Reservoir Verschlinis - Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

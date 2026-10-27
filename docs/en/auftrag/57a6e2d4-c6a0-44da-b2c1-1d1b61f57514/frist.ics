@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57a6e2d4-c6a0-44da-b2c1-1d1b61f57514-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Submission deadline: Réaménagement du Parc Alice Sauvin - Nyon
+DESCRIPTION:Public buyer: Ville de Nyon - Service de l'environnement\nSubmi
+ ssion deadline: 30 Nov 2026\, 16:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/57a6e2d4-c6a0-44da-b2c1-1d1b61f57514/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/57a6e2d4-c6a0-44da-b2c1-1d1
+ b61f57514
+URL:https://auftragsregister.ch/en/auftrag/57a6e2d4-c6a0-44da-b2c1-1d1b61f5
+ 7514/
+LOCATION:Parc Alice Sauvin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Réaménagement du Parc Alice Sauvin - Nyo
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

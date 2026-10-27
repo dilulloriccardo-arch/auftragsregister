@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7c70a721-fd73-4731-8d18-1b7fe261c3a4-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:2
+DTSTART:20261130T225900Z
+SUMMARY:Eingabefrist: H8 / Dritte Altmatt Nord bis Biberbrugg / Baulos Nord
+  / Baumeisterarbeiten
+DESCRIPTION:Auftraggeber: Tiefbauamt Kanton Schwyz\nEingabefrist: 30.11.202
+ 6\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/7c70a7
+ 21-fd73-4731-8d18-1b7fe261c3a4/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/7c70a721-fd73-4731-8d18-1b7fe261c3a4
+URL:https://auftragsregister.ch/de/auftrag/7c70a721-fd73-4731-8d18-1b7fe261
+ c3a4/
+LOCATION:Bennau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: H8 / Dritte Altmatt Nord bis Biberbrugg / Baulos 
+ Nord / Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

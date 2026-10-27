@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fd29d44f-faa3-42fb-8ff6-10d265e817ee-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T103000Z
+SUMMARY:Submission deadline: LOT2135 REVETEMENTS EXTERIEURS METALLIQUES_COM
+ PLEXE SCOLAIRE ET SPORTIF « CHEZ LE MAITRE »\, AU CHENIT.
+DESCRIPTION:Public buyer: Greffe Municipale – Commune du Chenit (Pragma P
+ artenaires SA succursale Yverdon)\nSubmission deadline: 16 Nov 2026\, 11
+ :30\nIn the register: https://auftragsregister.ch/en/auftrag/fd29d44f-faa3
+ -42fb-8ff6-10d265e817ee/\nOfficial publication: https://www.simap.ch/en/pr
+ oject-detail/fd29d44f-faa3-42fb-8ff6-10d265e817ee
+URL:https://auftragsregister.ch/en/auftrag/fd29d44f-faa3-42fb-8ff6-10d265e8
+ 17ee/
+LOCATION:Le Sentier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: LOT2135 REVETEMENTS EXTERIEURS METALLIQUES
+ _COMPLEXE SCOLAIRE ET SPORTIF « CHEZ LE MAITRE »\, AU CHENIT.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

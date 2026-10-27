@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f019bcca-c1ca-4f4f-82b5-f575870d8bbf-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261117T123000Z
+SUMMARY:Délai de remise : Neubau Kraftwerk Bächital\, Luchsingen
+DESCRIPTION:Acheteur public : Technische Betriebe Glarus\nDélai de remis
+ e : 17.11.2026\, 13 h 30\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/f019bcca-c1ca-4f4f-82b5-f575870d8bbf/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/f019bcca-c1ca-4f4f-82b5-f
+ 575870d8bbf
+URL:https://auftragsregister.ch/fr/auftrag/f019bcca-c1ca-4f4f-82b5-f575870d
+ 8bbf/
+LOCATION:Luchsingen Glarus Süd
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Kraftwerk Bächital\, Luchsingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

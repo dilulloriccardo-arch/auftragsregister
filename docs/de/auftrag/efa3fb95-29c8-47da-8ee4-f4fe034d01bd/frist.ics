@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efa3fb95-29c8-47da-8ee4-f4fe034d01bd-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Eingabefrist: Transport Grüngut Sarneraatal
+DESCRIPTION:Auftraggeber: Entsorgungszweckverband Obwalden\nEingabefrist: 0
+ 9.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/efa3fb95-29c8-47da-8ee4-f4fe034d01bd/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/efa3fb95-29c8-47da-8ee4-f4fe034d01bd
+URL:https://auftragsregister.ch/de/auftrag/efa3fb95-29c8-47da-8ee4-f4fe034d
+ 01bd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Transport Grüngut Sarneraatal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

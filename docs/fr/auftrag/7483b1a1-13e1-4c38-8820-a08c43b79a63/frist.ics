@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7483b1a1-13e1-4c38-8820-a08c43b79a63-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Délai de remise : Oeschgen IO/AO\, K292/K465
+DESCRIPTION:Acheteur public : Abteilung Tiefbau (ATB)\nDélai de remise
+  : 04.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/7483b1a1-13e1-4c38-8820-a08c43b79a63/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/7483b1a1-13e1-4c38-8820-a0
+ 8c43b79a63
+URL:https://auftragsregister.ch/fr/auftrag/7483b1a1-13e1-4c38-8820-a08c43b7
+ 9a63/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Oeschgen IO/AO\, K292/K465
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

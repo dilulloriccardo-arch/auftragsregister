@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:11cd357a-52bd-4694-ae0f-b19f84954b29-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Submission deadline: Contrat d'assurance d'indemnités journalière
+ s en cas de maladie - Comune di Stabio
+DESCRIPTION:Public buyer: Comune di Stabio\nSubmission deadline: 16 Nov 2
+ 026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/11cd3
+ 57a-52bd-4694-ae0f-b19f84954b29/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/11cd357a-52bd-4694-ae0f-b19f84954b29
+URL:https://auftragsregister.ch/en/auftrag/11cd357a-52bd-4694-ae0f-b19f8495
+ 4b29/
+LOCATION:Stabio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Contrat d'assurance d'indemnités journali
+ ères en cas de maladie - Comune di Stabio
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

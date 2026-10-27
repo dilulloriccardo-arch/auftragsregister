@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:297d677a-2aa8-4e6f-960f-e9eda8630e0a-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261117T160000Z
+SUMMARY:Eingabefrist: Präqualifikation Planerleistungen Generalplanung Are
+ alentwicklung Hüslimatt Etappe 1
+DESCRIPTION:Auftraggeber: BLT Baselland Transport AG\nEingabefrist: 17.11.2
+ 026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/297d
+ 677a-2aa8-4e6f-960f-e9eda8630e0a/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/297d677a-2aa8-4e6f-960f-e9eda8630e0a
+URL:https://auftragsregister.ch/de/auftrag/297d677a-2aa8-4e6f-960f-e9eda863
+ 0e0a/
+LOCATION:Oberwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Präqualifikation Planerleistungen Generalplanung
+  Arealentwicklung Hüslimatt Etappe 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

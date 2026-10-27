@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0551a538-4ed8-47a9-bc1c-86b6b0fa1340-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:1
+DTSTART:20261204T110000Z
+SUMMARY:Délai de remise : Acquisition de bus hybrides diesel et services
+  associés
+DESCRIPTION:Acheteur public : tpg\nDélai de remise : 04.12.2026\, 12
+  h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/055
+ 1a538-4ed8-47a9-bc1c-86b6b0fa1340/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/0551a538-4ed8-47a9-bc1c-86b6b0fa1340
+URL:https://auftragsregister.ch/fr/auftrag/0551a538-4ed8-47a9-bc1c-86b6b0fa
+ 1340/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition de bus hybrides diesel et serv
+ ices associés
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

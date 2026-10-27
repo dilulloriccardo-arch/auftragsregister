@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3c93aa0-1bae-4bda-b90b-c227c9c43af6-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Scadenza: Gesamtsanierung Kaserne Auenfeld\, Wpl Frauenfeld\, 3. Et
+ appe\, BKP 271.1 Trockenbauarbeiten inkl. Nassputze\, (Unterkunftsgebäude
+  UE)
+DESCRIPTION:Ente pubblico: armasuisse Immobilien\nScadenza: 06.11.2026\, 23
+ :59\nNel registro: https://auftragsregister.ch/it/auftrag/d3c93aa0-1bae-4b
+ da-b90b-c227c9c43af6/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/d3c93aa0-1bae-4bda-b90b-c227c9c43af6
+URL:https://auftragsregister.ch/it/auftrag/d3c93aa0-1bae-4bda-b90b-c227c9c4
+ 3af6/
+LOCATION:Frauenfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gesamtsanierung Kaserne Auenfeld\, Wpl Frauenfeld\, 3
+ . Etappe\, BKP 271.1 Trockenbauarbeiten inkl. Nassputze\, (Unterkunftsgeb
+ äude UE)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

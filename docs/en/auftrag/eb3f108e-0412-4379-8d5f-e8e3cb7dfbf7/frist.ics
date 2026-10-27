@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb3f108e-0412-4379-8d5f-e8e3cb7dfbf7-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Submission deadline: IRM 1.5 T à technologie « low helium »
+DESCRIPTION:Public buyer: Hôpital du Valais - Service Achats\nSubmission d
+ eadline: 13 Nov 2026\, 23:59\nIn the register: https://auftragsregister.
+ ch/en/auftrag/eb3f108e-0412-4379-8d5f-e8e3cb7dfbf7/\nOfficial publication:
+  https://www.simap.ch/en/project-detail/eb3f108e-0412-4379-8d5f-e8e3cb7dfb
+ f7
+URL:https://auftragsregister.ch/en/auftrag/eb3f108e-0412-4379-8d5f-e8e3cb7d
+ fbf7/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: IRM 1.5 T à technologie « low helium »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

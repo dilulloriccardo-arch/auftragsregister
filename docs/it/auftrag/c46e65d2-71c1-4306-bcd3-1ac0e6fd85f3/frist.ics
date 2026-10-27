@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c46e65d2-71c1-4306-bcd3-1ac0e6fd85f3-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Scadenza: MP-LEB 2026.03.244 Echallens – Voie de rebroussement Tr
+ avaux de génie civil
+DESCRIPTION:Ente pubblico: Transports publics de la région lausannoise sa\
+ nScadenza: 04.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/c46e65d2-71c1-4306-bcd3-1ac0e6fd85f3/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/c46e65d2-71c1-4306-bcd3-1ac0e6fd85f
+ 3
+URL:https://auftragsregister.ch/it/auftrag/c46e65d2-71c1-4306-bcd3-1ac0e6fd
+ 85f3/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-LEB 2026.03.244 Echallens – Voie de rebroussemen
+ t Travaux de génie civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

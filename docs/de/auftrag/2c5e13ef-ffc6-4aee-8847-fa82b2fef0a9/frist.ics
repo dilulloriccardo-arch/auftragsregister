@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2c5e13ef-ffc6-4aee-8847-fa82b2fef0a9-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Eingabefrist: 13.0457 Langenthal\, Sanierung Gymo - BKP 274 Innere 
+ Spezialverglasungen
+DESCRIPTION:Auftraggeber: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nEingabefrist: 09.11.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/2c5e13ef-ffc6-4aee-8847-fa82b2fef0a9/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/2c5e13ef-ffc6-4aee-88
+ 47-fa82b2fef0a9
+URL:https://auftragsregister.ch/de/auftrag/2c5e13ef-ffc6-4aee-8847-fa82b2fe
+ f0a9/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 13.0457 Langenthal\, Sanierung Gymo - BKP 274 Inn
+ ere Spezialverglasungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

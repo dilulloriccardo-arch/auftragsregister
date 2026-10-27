@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b64c45e0-8510-48a1-bc6e-a67a8f941357-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:1
+DTSTART:20261116T225900Z
+SUMMARY:Délai de remise : Insignes de police
+DESCRIPTION:Acheteur public : Kantonspolizei Bern\nDélai de remise : 1
+ 6.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/b64c45e0-8510-48a1-bc6e-a67a8f941357/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/b64c45e0-8510-48a1-bc6e-a67a8f
+ 941357
+URL:https://auftragsregister.ch/fr/auftrag/b64c45e0-8510-48a1-bc6e-a67a8f94
+ 1357/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Insignes de police
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

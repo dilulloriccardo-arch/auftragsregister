@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a738fd64-1644-4818-97c6-dbd1ac979d4b-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : Vending machines campus EPFL
+DESCRIPTION:Acheteur public : EPFL VPF ACHATS\nDélai de remise : 23.11
+ .2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/a738fd64-1644-4818-97c6-dbd1ac979d4b/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/a738fd64-1644-4818-97c6-dbd1ac979d4b
+URL:https://auftragsregister.ch/fr/auftrag/a738fd64-1644-4818-97c6-dbd1ac97
+ 9d4b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Vending machines campus EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

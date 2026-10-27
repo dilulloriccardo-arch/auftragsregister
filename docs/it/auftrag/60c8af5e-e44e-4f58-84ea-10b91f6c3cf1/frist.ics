@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60c8af5e-e44e-4f58-84ea-10b91f6c3cf1-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Scadenza: UW Leibstadt - Baumeister GU
+DESCRIPTION:Ente pubblico: Swissgrid AG - Engineering & Construction\nScade
+ nza: 20.11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auft
+ rag/60c8af5e-e44e-4f58-84ea-10b91f6c3cf1/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/60c8af5e-e44e-4f58-84ea-10b91f6c3cf1
+URL:https://auftragsregister.ch/it/auftrag/60c8af5e-e44e-4f58-84ea-10b91f6c
+ 3cf1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: UW Leibstadt - Baumeister GU
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

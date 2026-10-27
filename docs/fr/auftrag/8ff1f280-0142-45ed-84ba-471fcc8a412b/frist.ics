@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ff1f280-0142-45ed-84ba-471fcc8a412b-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Délai de remise : MP-160010\, N01/42\, 46 échang. ZH-Nord – 
+ échang. ZH-Est – échang. Brüttisellen
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA - Filiale Win
+ terthur\nDélai de remise : 15.12.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/8ff1f280-0142-45ed-84ba-471fcc
+ 8a412b/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /8ff1f280-0142-45ed-84ba-471fcc8a412b
+URL:https://auftragsregister.ch/fr/auftrag/8ff1f280-0142-45ed-84ba-471fcc8a
+ 412b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-160010\, N01/42\, 46 échang. ZH-Nord 
+ – échang. ZH-Est – échang. Brüttisellen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

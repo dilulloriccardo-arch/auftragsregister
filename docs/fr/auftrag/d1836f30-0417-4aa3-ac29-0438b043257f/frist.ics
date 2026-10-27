@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d1836f30-0417-4aa3-ac29-0438b043257f-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Délai de remise : Les services d'ingénierie ECM
+DESCRIPTION:Acheteur public : Basler Verkehrs-Betriebe (BVB)\nDélai de r
+ emise : 02.12.2026\, 12 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/d1836f30-0417-4aa3-ac29-0438b043257f/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/d1836f30-0417-4aa3-ac
+ 29-0438b043257f
+URL:https://auftragsregister.ch/fr/auftrag/d1836f30-0417-4aa3-ac29-0438b043
+ 257f/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Les services d'ingénierie ECM
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3697fec-210a-4187-b9e3-fc25bdbc5bcb-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T113000Z
+SUMMARY:Scadenza: Elagage des lignes aériennes
+DESCRIPTION:Ente pubblico: Services industriels de Genève (SIG) - Directio
+ n Achats\nScadenza: 11.11.2026\, 12:30\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/e3697fec-210a-4187-b9e3-fc25bdbc5bcb/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/e3697fec-210a-4187-b9e3-fc
+ 25bdbc5bcb
+URL:https://auftragsregister.ch/it/auftrag/e3697fec-210a-4187-b9e3-fc25bdbc
+ 5bcb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Elagage des lignes aériennes
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

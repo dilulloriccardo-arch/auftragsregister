@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:279a4d9e-8426-4bd4-9bce-404eee8b31be-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261119T110000Z
+SUMMARY:Scadenza: Projnum_B1 / Achat de prestations de numérisation de col
+ lections patrimoniales sur supports "objets"
+DESCRIPTION:Ente pubblico: Centrale municipale d'achat et d'impression de l
+ a Ville de Genève\nScadenza: 19.11.2026\, 12:00\nNel registro: https://au
+ ftragsregister.ch/it/auftrag/279a4d9e-8426-4bd4-9bce-404eee8b31be/\nPubbli
+ cazione ufficiale: https://www.simap.ch/it/project-detail/279a4d9e-8426-4b
+ d4-9bce-404eee8b31be
+URL:https://auftragsregister.ch/it/auftrag/279a4d9e-8426-4bd4-9bce-404eee8b
+ 31be/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Projnum_B1 / Achat de prestations de numérisation de
+  collections patrimoniales sur supports "objets"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

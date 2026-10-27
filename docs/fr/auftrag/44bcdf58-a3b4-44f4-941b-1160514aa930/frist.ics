@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44bcdf58-a3b4-44f4-941b-1160514aa930-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Délai de remise : Projet de construction n° 08069 – Hornbach\
+ , tronçon entre la Bellerivestrasse et le lac
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Realisierung\nDélai de r
+ emise : 26.11.2026\, 16 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/44bcdf58-a3b4-44f4-941b-1160514aa930/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/44bcdf58-a3b4-44f4-94
+ 1b-1160514aa930
+URL:https://auftragsregister.ch/fr/auftrag/44bcdf58-a3b4-44f4-941b-1160514a
+ a930/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet de construction n° 08069 – Hornb
+ ach\, tronçon entre la Bellerivestrasse et le lac
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

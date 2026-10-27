@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e44a8096-29c1-4c40-aae7-38cc7194bb6b-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261119T100000Z
+SUMMARY:Submission deadline: Nouveau site scolaire de Champs d'Aullie au Mo
+ nt-sur-Lausanne - CFC 272.2 Serrurerie
+DESCRIPTION:Public buyer: Commune du Mont-sur-Lausanne (quartal)\nSubmissio
+ n deadline: 19 Nov 2026\, 11:00\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/e44a8096-29c1-4c40-aae7-38cc7194bb6b/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/e44a8096-29c1-4c40-aae7-38cc719
+ 4bb6b
+URL:https://auftragsregister.ch/en/auftrag/e44a8096-29c1-4c40-aae7-38cc7194
+ bb6b/
+LOCATION:Le Mont-sur-Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Nouveau site scolaire de Champs d'Aullie a
+ u Mont-sur-Lausanne - CFC 272.2 Serrurerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

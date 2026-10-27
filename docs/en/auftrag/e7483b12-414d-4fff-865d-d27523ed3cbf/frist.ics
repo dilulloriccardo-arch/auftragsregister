@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7483b12-414d-4fff-865d-d27523ed3cbf-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Submission deadline: STEP Eparse - lot VEN01 - installations de ven
+ tilation
+DESCRIPTION:Public buyer: L'Eparse - Association intercommunale pour l’é
+ puration des eaux de la zone de Payerne\nSubmission deadline: 16 Nov 202
+ 6\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/e7483b1
+ 2-414d-4fff-865d-d27523ed3cbf/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/e7483b12-414d-4fff-865d-d27523ed3cbf
+URL:https://auftragsregister.ch/en/auftrag/e7483b12-414d-4fff-865d-d27523ed
+ 3cbf/
+LOCATION:Payerne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: STEP Eparse - lot VEN01 - installations de
+  ventilation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

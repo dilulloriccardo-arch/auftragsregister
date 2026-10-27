@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6268ed0f-7a48-4cbb-bf89-193fad0ce9ce-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:3
+DTSTART:20261113T110000Z
+SUMMARY:Scadenza: Kantonales Personenregister für GERES-Community
+DESCRIPTION:Ente pubblico: GERES-Community\nScadenza: 13.11.2026\, 12:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/6268ed0f-7a48-4cbb-bf8
+ 9-193fad0ce9ce/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/6268ed0f-7a48-4cbb-bf89-193fad0ce9ce
+URL:https://auftragsregister.ch/it/auftrag/6268ed0f-7a48-4cbb-bf89-193fad0c
+ e9ce/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kantonales Personenregister für GERES-Community
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

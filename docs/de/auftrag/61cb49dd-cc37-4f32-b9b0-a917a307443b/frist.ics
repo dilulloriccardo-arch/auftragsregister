@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61cb49dd-cc37-4f32-b9b0-a917a307443b-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Eingabefrist: Ertüchtigung Kantonsarchäologie Brugg - Honorarsubm
+ ission Generalplanerteam
+DESCRIPTION:Auftraggeber: Immobilien Aargau\nEingabefrist: 24.11.2026\, 12.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/61cb49dd-cc37
+ -4f32-b9b0-a917a307443b/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/61cb49dd-cc37-4f32-b9b0-a917a307443b
+URL:https://auftragsregister.ch/de/auftrag/61cb49dd-cc37-4f32-b9b0-a917a307
+ 443b/
+LOCATION:Brugg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ertüchtigung Kantonsarchäologie Brugg - Honorar
+ submission Generalplanerteam
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

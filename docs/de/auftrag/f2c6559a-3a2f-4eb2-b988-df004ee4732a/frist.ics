@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f2c6559a-3a2f-4eb2-b988-df004ee4732a-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261110T225900Z
+SUMMARY:Eingabefrist: Plattform für schriftliche Anwalts- und Notariatspr
+ üfungen
+DESCRIPTION:Auftraggeber: Kantonsgericht Luzern\nEingabefrist: 10.11.2026\,
+  23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/f2c6559a-
+ 3a2f-4eb2-b988-df004ee4732a/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/f2c6559a-3a2f-4eb2-b988-df004ee4732a
+URL:https://auftragsregister.ch/de/auftrag/f2c6559a-3a2f-4eb2-b988-df004ee4
+ 732a/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Plattform für schriftliche Anwalts- und Notariat
+ sprüfungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

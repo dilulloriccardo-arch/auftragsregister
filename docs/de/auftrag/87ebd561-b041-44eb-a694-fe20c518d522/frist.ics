@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87ebd561-b041-44eb-a694-fe20c518d522-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Eingabefrist: USZ Campus MITTE 1|2 / BKP 277.30 Reinraum II (OV)
+DESCRIPTION:Auftraggeber: Universitätsspital Zürich\nEingabefrist: 23.11.
+ 2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/87e
+ bd561-b041-44eb-a694-fe20c518d522/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/87ebd561-b041-44eb-a694-fe20c518d522
+URL:https://auftragsregister.ch/de/auftrag/87ebd561-b041-44eb-a694-fe20c518
+ d522/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: USZ Campus MITTE 1|2 / BKP 277.30 Reinraum II (OV
+ )
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

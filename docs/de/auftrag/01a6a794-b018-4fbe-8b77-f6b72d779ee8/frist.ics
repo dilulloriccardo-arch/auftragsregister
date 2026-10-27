@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:01a6a794-b018-4fbe-8b77-f6b72d779ee8-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261119T225900Z
+SUMMARY:Eingabefrist: Gymnasium Neufeld - Beschaffung Displays Schänzlihal
+ de
+DESCRIPTION:Auftraggeber: Gymnasium Neufeld (reflecta ag)\nEingabefrist: 19
+ .11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /01a6a794-b018-4fbe-8b77-f6b72d779ee8/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/01a6a794-b018-4fbe-8b77-f6b72d779ee8
+URL:https://auftragsregister.ch/de/auftrag/01a6a794-b018-4fbe-8b77-f6b72d77
+ 9ee8/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gymnasium Neufeld - Beschaffung Displays Schänzl
+ ihalde
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

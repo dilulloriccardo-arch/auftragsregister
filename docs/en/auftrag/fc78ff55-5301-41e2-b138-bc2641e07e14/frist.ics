@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fc78ff55-5301-41e2-b138-bc2641e07e14-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T150000Z
+SUMMARY:Submission deadline: GE VII Maintenance + Upkeep FB2 Lighting
+DESCRIPTION:Public buyer: Tiefbauamt\, Abt. Gebietseinheit VII\nSubmission 
+ deadline: 7 Dec 2026\, 16:00\nIn the register: https://auftragsregister.
+ ch/en/auftrag/fc78ff55-5301-41e2-b138-bc2641e07e14/\nOfficial publication:
+  https://www.simap.ch/en/project-detail/fc78ff55-5301-41e2-b138-bc2641e07e
+ 14
+URL:https://auftragsregister.ch/en/auftrag/fc78ff55-5301-41e2-b138-bc2641e0
+ 7e14/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: GE VII Maintenance + Upkeep FB2 Lighting
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

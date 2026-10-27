@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9ed29d38-04f8-482e-b6a6-e512b279a7a8-frist@auftragsregister.ch
+DTSTAMP:20260901T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Scadenza: Secondo tubo San Gottardo (1TG Röhre Nord und Galleria d
+ i Airolo) und N2 Risanamento primo tubo San Gottardo (1TG Röhre Süd) BSA
+ -Los 0004 - Sanitäranlagen BSA
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA -Abteilung Strasse
+ ninfrastruktur-Ost - F3 Zofingen\nScadenza: 02.11.2026\, 23:59\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/9ed29d38-04f8-482e-b6a6-e512b27
+ 9a7a8/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/9e
+ d29d38-04f8-482e-b6a6-e512b279a7a8
+URL:https://auftragsregister.ch/it/auftrag/9ed29d38-04f8-482e-b6a6-e512b279
+ a7a8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Secondo tubo San Gottardo (1TG Röhre Nord und Galler
+ ia di Airolo) und N2 Risanamento primo tubo San Gottardo (1TG Röhre Süd)
+  BSA-Los 0004 - Sanitäranlagen BSA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

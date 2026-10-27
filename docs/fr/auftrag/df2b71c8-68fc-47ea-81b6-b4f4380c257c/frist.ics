@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df2b71c8-68fc-47ea-81b6-b4f4380c257c-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Délai de remise : Sanierung Korrosionsschutz Triebwasser Handeck
+  3 – Rotlaui
+DESCRIPTION:Acheteur public : Kraftwerke Oberhasli AG\nDélai de remise
+  : 09.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/df2b71c8-68fc-47ea-81b6-b4f4380c257c/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/df2b71c8-68fc-47ea-81b6-b4
+ f4380c257c
+URL:https://auftragsregister.ch/fr/auftrag/df2b71c8-68fc-47ea-81b6-b4f4380c
+ 257c/
+LOCATION:Guttannen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Korrosionsschutz Triebwasser Han
+ deck 3 – Rotlaui
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

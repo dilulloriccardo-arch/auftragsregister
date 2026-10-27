@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41df4635-a53f-4819-83c2-a67d6c7a2fb3-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261204T110000Z
+SUMMARY:Délai de remise : AO – tpg – création de 4 places de travai
+ l avec passerelles de service pour accès à la toiture des bus pour le si
+ te/dépôt tpg de la Jonction
+DESCRIPTION:Acheteur public : Transport publics genevois (tpg)\nDélai de
+  remise : 04.12.2026\, 12 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/41df4635-a53f-4819-83c2-a67d6c7a2fb3/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/41df4635-a53f-4819-
+ 83c2-a67d6c7a2fb3
+URL:https://auftragsregister.ch/fr/auftrag/41df4635-a53f-4819-83c2-a67d6c7a
+ 2fb3/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AO – tpg – création de 4 places de tr
+ avail avec passerelles de service pour accès à la toiture des bus pour l
+ e site/dépôt tpg de la Jonction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

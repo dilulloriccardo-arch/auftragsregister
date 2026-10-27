@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:012be017-398e-4b0b-bdb8-157709566212-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261123T153000Z
+SUMMARY:Eingabefrist: Projekt Schinzenhof und Gemeindehaus "Erneuerung der 
+ technischen Anlagen\, Brandschutzertüchtigungen und Revitalisierung der A
+ ussenerschliessung"\, BKP 213 Montagebau in Stahl und Geländer HELIX
+DESCRIPTION:Auftraggeber: Gemeinde Horgen\nEingabefrist: 23.11.2026\, 16.30
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/012be017-398e-4
+ b0b-bdb8-157709566212/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/012be017-398e-4b0b-bdb8-157709566212
+URL:https://auftragsregister.ch/de/auftrag/012be017-398e-4b0b-bdb8-15770956
+ 6212/
+LOCATION:Horgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projekt Schinzenhof und Gemeindehaus "Erneuerung 
+ der technischen Anlagen\, Brandschutzertüchtigungen und Revitalisierung d
+ er Aussenerschliessung"\, BKP 213 Montagebau in Stahl und Geländer HELIX
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

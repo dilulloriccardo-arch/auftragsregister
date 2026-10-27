@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:798a2c6b-be23-4517-9cf3-eeb0819bd31d-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Eingabefrist: Zukunft Bahnhof Bern\, Baustein 3b\, 561 Bewachung/Si
+ cherheitsdienst
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 24.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/798a2c6b-be23-4517-9cf3-eeb0819bd31d/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/798a2c6b-be23-4517-9cf3-eeb0819bd31d
+URL:https://auftragsregister.ch/de/auftrag/798a2c6b-be23-4517-9cf3-eeb0819b
+ d31d/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Zukunft Bahnhof Bern\, Baustein 3b\, 561 Bewachun
+ g/Sicherheitsdienst
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

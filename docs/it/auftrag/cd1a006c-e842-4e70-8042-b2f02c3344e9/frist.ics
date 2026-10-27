@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cd1a006c-e842-4e70-8042-b2f02c3344e9-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T100000Z
+SUMMARY:Scadenza: Assicurazione malattia collettiva perdita di guadagno per
+  il Comune di Balerna
+DESCRIPTION:Ente pubblico: Comune di Balerna\nScadenza: 19.11.2026\, 11:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/cd1a006c-e842-4e70-8
+ 042-b2f02c3344e9/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/cd1a006c-e842-4e70-8042-b2f02c3344e9
+URL:https://auftragsregister.ch/it/auftrag/cd1a006c-e842-4e70-8042-b2f02c33
+ 44e9/
+LOCATION:Balerna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Assicurazione malattia collettiva perdita di guadagno
+  per il Comune di Balerna
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

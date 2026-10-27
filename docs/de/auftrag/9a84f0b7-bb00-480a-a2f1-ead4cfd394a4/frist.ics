@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a84f0b7-bb00-480a-a2f1-ead4cfd394a4-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261106T100000Z
+SUMMARY:Eingabefrist: STEP de l'Eparse - Lot AR01 - Toitures plates
+DESCRIPTION:Auftraggeber: L'Eparse - Association intercommunale pour l’é
+ puration des eaux de la zone de Payerne - Brülhart Ducret SA\nEingabefris
+ t: 06.11.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/au
+ ftrag/9a84f0b7-bb00-480a-a2f1-ead4cfd394a4/\nAmtliche Publikation: https:/
+ /www.simap.ch/de/project-detail/9a84f0b7-bb00-480a-a2f1-ead4cfd394a4
+URL:https://auftragsregister.ch/de/auftrag/9a84f0b7-bb00-480a-a2f1-ead4cfd3
+ 94a4/
+LOCATION:Payerne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: STEP de l'Eparse - Lot AR01 - Toitures plates
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

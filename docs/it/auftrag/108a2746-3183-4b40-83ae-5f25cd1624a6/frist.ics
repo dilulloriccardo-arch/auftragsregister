@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:108a2746-3183-4b40-83ae-5f25cd1624a6-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Scadenza: 963_273.1 Wandschränke und Allg. Schreinerarbeiten\, SH 
+ Loreto\, Zug
+DESCRIPTION:Ente pubblico: Baudepartement Stadt Zug\, Submission Hochbau\nS
+ cadenza: 03.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/
+ auftrag/108a2746-3183-4b40-83ae-5f25cd1624a6/\nPubblicazione ufficiale: ht
+ tps://www.simap.ch/it/project-detail/108a2746-3183-4b40-83ae-5f25cd1624a6
+URL:https://auftragsregister.ch/it/auftrag/108a2746-3183-4b40-83ae-5f25cd16
+ 24a6/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 963_273.1 Wandschränke und Allg. Schreinerarbeiten\,
+  SH Loreto\, Zug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

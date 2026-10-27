@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:855fb998-e08e-4136-aea2-76980921f562-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261214T160000Z
+SUMMARY:Délai de remise : SPATZ Plastique renforcé de fibres de verre +
+  peinture
+DESCRIPTION:Acheteur public : zb Zentralbahn AG\, Bereich Produktion und 
+ Rollmaterial\nDélai de remise : 14.12.2026\, 17 h 00\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/855fb998-e08e-4136-aea2-769
+ 80921f562/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/855fb998-e08e-4136-aea2-76980921f562
+URL:https://auftragsregister.ch/fr/auftrag/855fb998-e08e-4136-aea2-76980921
+ f562/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : SPATZ Plastique renforcé de fibres de ver
+ re + peinture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

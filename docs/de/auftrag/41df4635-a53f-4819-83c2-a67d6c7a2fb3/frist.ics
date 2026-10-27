@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41df4635-a53f-4819-83c2-a67d6c7a2fb3-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261204T110000Z
+SUMMARY:Eingabefrist: AO – tpg – création de 4 places de travail avec 
+ passerelles de service pour accès à la toiture des bus pour le site/dép
+ ôt tpg de la Jonction
+DESCRIPTION:Auftraggeber: Transport publics genevois (tpg)\nEingabefrist: 0
+ 4.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/41df4635-a53f-4819-83c2-a67d6c7a2fb3/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/41df4635-a53f-4819-83c2-a67d6c7a2fb3
+URL:https://auftragsregister.ch/de/auftrag/41df4635-a53f-4819-83c2-a67d6c7a
+ 2fb3/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AO – tpg – création de 4 places de travail a
+ vec passerelles de service pour accès à la toiture des bus pour le site/
+ dépôt tpg de la Jonction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

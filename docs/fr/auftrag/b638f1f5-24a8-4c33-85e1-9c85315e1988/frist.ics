@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b638f1f5-24a8-4c33-85e1-9c85315e1988-frist@auftragsregister.ch
+DTSTAMP:20260813T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Délai de remise : NextGen Backup Software 2026
+DESCRIPTION:Acheteur public : Stadt Zürich\, Organisation und Informatik
+  (OIZ)\nDélai de remise : 02.11.2026\, 12 h 00\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/b638f1f5-24a8-4c33-85e1-9c85315e1
+ 988/\nPublication officielle : https://www.simap.ch/fr/project-detail/b6
+ 38f1f5-24a8-4c33-85e1-9c85315e1988
+URL:https://auftragsregister.ch/fr/auftrag/b638f1f5-24a8-4c33-85e1-9c85315e
+ 1988/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : NextGen Backup Software 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

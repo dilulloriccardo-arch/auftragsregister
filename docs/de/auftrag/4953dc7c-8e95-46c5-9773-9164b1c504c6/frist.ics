@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4953dc7c-8e95-46c5-9773-9164b1c504c6-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261120T225500Z
+SUMMARY:Eingabefrist: Serviceanlage ZSB Schaffhausen - Generalplaner für d
+ ie SIA Phasen 31 - 53
+DESCRIPTION:Auftraggeber: SBB Immobilien Finanzen und Beschaffung\nEingabef
+ rist: 20.11.2026\, 23.55 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/4953dc7c-8e95-46c5-9773-9164b1c504c6/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/4953dc7c-8e95-46c5-9773-9164b1c504c6
+URL:https://auftragsregister.ch/de/auftrag/4953dc7c-8e95-46c5-9773-9164b1c5
+ 04c6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Serviceanlage ZSB Schaffhausen - Generalplaner f
+ ür die SIA Phasen 31 - 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6755de87-3a48-461a-bb15-8659b5a697ac-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261118T225500Z
+SUMMARY:Délai de remise : Modernisation de l'intranet destiné aux tribu
+ naux et aux études notariales
+DESCRIPTION:Acheteur public : Obergericht des Kantons Zürich\nDélai de 
+ remise : 18.11.2026\, 23 h 55\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/6755de87-3a48-461a-bb15-8659b5a697ac/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/6755de87-3a48-461a-b
+ b15-8659b5a697ac
+URL:https://auftragsregister.ch/fr/auftrag/6755de87-3a48-461a-bb15-8659b5a6
+ 97ac/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Modernisation de l'intranet destiné aux t
+ ribunaux et aux études notariales
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

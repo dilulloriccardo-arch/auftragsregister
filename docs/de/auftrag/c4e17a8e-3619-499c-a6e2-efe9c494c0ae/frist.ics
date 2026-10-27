@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c4e17a8e-3619-499c-a6e2-efe9c494c0ae-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261208T104500Z
+SUMMARY:Eingabefrist: GC 01B Installation de chantier - Step de la Saunerie
+  - Colombier
+DESCRIPTION:Auftraggeber: Syndicat intercommunal pour la Step de la Sauneri
+ e\nEingabefrist: 08.12.2026\, 11.45 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/c4e17a8e-3619-499c-a6e2-efe9c494c0ae/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/c4e17a8e-3619-499c-a6e2-efe9
+ c494c0ae
+URL:https://auftragsregister.ch/de/auftrag/c4e17a8e-3619-499c-a6e2-efe9c494
+ c0ae/
+LOCATION:Colombier NE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: GC 01B Installation de chantier - Step de la Saun
+ erie - Colombier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

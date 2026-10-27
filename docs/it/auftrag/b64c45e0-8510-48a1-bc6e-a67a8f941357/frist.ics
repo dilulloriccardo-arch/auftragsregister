@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b64c45e0-8510-48a1-bc6e-a67a8f941357-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:1
+DTSTART:20261116T225900Z
+SUMMARY:Scadenza: Uniformabzeichen
+DESCRIPTION:Ente pubblico: Kantonspolizei Bern\nScadenza: 16.11.2026\, 23:5
+ 9\nNel registro: https://auftragsregister.ch/it/auftrag/b64c45e0-8510-48a1
+ -bc6e-a67a8f941357/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/b64c45e0-8510-48a1-bc6e-a67a8f941357
+URL:https://auftragsregister.ch/it/auftrag/b64c45e0-8510-48a1-bc6e-a67a8f94
+ 1357/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Uniformabzeichen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c1876188-b86e-4a58-a104-60b72b002c60-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Eingabefrist: BKP 250 Sanitäranlagen
+DESCRIPTION:Auftraggeber: Baureag Architekten AG\nEingabefrist: 25.11.2026\
+ , 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c1876188
+ -b86e-4a58-a104-60b72b002c60/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/c1876188-b86e-4a58-a104-60b72b002c60
+URL:https://auftragsregister.ch/de/auftrag/c1876188-b86e-4a58-a104-60b72b00
+ 2c60/
+LOCATION:Birrwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 250 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

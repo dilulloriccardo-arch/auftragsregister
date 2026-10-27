@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e53115c-e00d-41c7-835d-e199e40cd645-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Délai de remise : LC-MS avec préconcentration des échantillons
+  en ligne ou hors ligne
+DESCRIPTION:Acheteur public : Bundesamt für Rüstung armasuisse\nDélai 
+ de remise : 24.11.2026\, 23 h 59\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/3e53115c-e00d-41c7-835d-e199e40cd645/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/3e53115c-e00d-41c
+ 7-835d-e199e40cd645
+URL:https://auftragsregister.ch/fr/auftrag/3e53115c-e00d-41c7-835d-e199e40c
+ d645/
+LOCATION:Posieux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : LC-MS avec préconcentration des échantil
+ lons en ligne ou hors ligne
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

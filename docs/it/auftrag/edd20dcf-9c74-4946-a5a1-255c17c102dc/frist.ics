@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edd20dcf-9c74-4946-a5a1-255c17c102dc-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Scadenza: BKP 263.0 Fassadenreinigungsanlagen - Reinigungsbrücke
+DESCRIPTION:Ente pubblico: Flughafen Zürich AG - ELP\nScadenza: 24.11.2026
+ \, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/edd20dcf-9c
+ 74-4946-a5a1-255c17c102dc/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/edd20dcf-9c74-4946-a5a1-255c17c102dc
+URL:https://auftragsregister.ch/it/auftrag/edd20dcf-9c74-4946-a5a1-255c17c1
+ 02dc/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 263.0 Fassadenreinigungsanlagen - Reinigungsbrüc
+ ke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

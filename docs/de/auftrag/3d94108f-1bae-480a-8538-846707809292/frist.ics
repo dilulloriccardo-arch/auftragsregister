@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d94108f-1bae-480a-8538-846707809292-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261113T140000Z
+SUMMARY:Eingabefrist: FbE-C1E Basel RB Gl F17-F31 Basel RB / Linie 522
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Infrastruktur 
+ – Einkauf\, Supply Chain und Produktion\, Einkauf Bauprojekte Region Mit
+ te\nEingabefrist: 13.11.2026\, 15.00 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/3d94108f-1bae-480a-8538-846707809292/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/3d94108f-1bae-480a-8538-846
+ 707809292
+URL:https://auftragsregister.ch/de/auftrag/3d94108f-1bae-480a-8538-84670780
+ 9292/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: FbE-C1E Basel RB Gl F17-F31 Basel RB / Linie 522
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

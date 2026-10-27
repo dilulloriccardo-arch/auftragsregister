@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8671d73-3c71-4420-a314-30aacb942a4e-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Délai de remise : Construction de la centrale énergétique – 
+ Cluster 4 | BKP 242-03
+DESCRIPTION:Acheteur public : Kanton Zürich Hochbauaumt\, Baubereich D\n
+ Délai de remise : 30.11.2026\, 16 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/d8671d73-3c71-4420-a314-30aacb942a4e/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/d8671d73-3
+ c71-4420-a314-30aacb942a4e
+URL:https://auftragsregister.ch/fr/auftrag/d8671d73-3c71-4420-a314-30aacb94
+ 2a4e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction de la centrale énergétique 
+ – Cluster 4 | BKP 242-03
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

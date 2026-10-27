@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c28ff4c4-b1fa-441b-a6c5-b90209fd4e86-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Submission deadline: Erneuerung Infrastruktur Autoverlad Furka- Rea
+ lp
+DESCRIPTION:Public buyer: Beschaffungsstelle Matterhorn Gotthard Bahn\nSubm
+ ission deadline: 24 Nov 2026\, 23:59\nIn the register: https://auftragsr
+ egister.ch/en/auftrag/c28ff4c4-b1fa-441b-a6c5-b90209fd4e86/\nOfficial publ
+ ication: https://www.simap.ch/en/project-detail/c28ff4c4-b1fa-441b-a6c5-b9
+ 0209fd4e86
+URL:https://auftragsregister.ch/en/auftrag/c28ff4c4-b1fa-441b-a6c5-b90209fd
+ 4e86/
+LOCATION:Realp
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Erneuerung Infrastruktur Autoverlad Furka-
+  Realp
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

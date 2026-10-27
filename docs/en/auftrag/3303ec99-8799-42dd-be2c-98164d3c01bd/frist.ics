@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3303ec99-8799-42dd-be2c-98164d3c01bd-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Submission deadline: UW Riet - Baumeister (AIS)
+DESCRIPTION:Public buyer: Swissgrid AG - Engineering & Construction\nSubmis
+ sion deadline: 17 Nov 2026\, 23:59\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/3303ec99-8799-42dd-be2c-98164d3c01bd/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/3303ec99-8799-42dd-be2c-9816
+ 4d3c01bd
+URL:https://auftragsregister.ch/en/auftrag/3303ec99-8799-42dd-be2c-98164d3c
+ 01bd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: UW Riet - Baumeister (AIS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

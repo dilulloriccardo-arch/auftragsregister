@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b62d9416-fe3a-4b73-8c06-648005c9c2df-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261126T140000Z
+SUMMARY:Eingabefrist: Neubau PV-Anlage inkl. Batterie und Ladestationen\, H
+ afenstrasse 4\, Birsfelden
+DESCRIPTION:Auftraggeber: Schweizerische Rheinhäfen\nEingabefrist: 26.11.2
+ 026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b62d
+ 9416-fe3a-4b73-8c06-648005c9c2df/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/b62d9416-fe3a-4b73-8c06-648005c9c2df
+URL:https://auftragsregister.ch/de/auftrag/b62d9416-fe3a-4b73-8c06-648005c9
+ c2df/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau PV-Anlage inkl. Batterie und Ladestationen
+ \, Hafenstrasse 4\, Birsfelden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

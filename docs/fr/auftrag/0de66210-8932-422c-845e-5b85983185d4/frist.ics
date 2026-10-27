@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0de66210-8932-422c-845e-5b85983185d4-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:1
+DTSTART:20261207T080000Z
+SUMMARY:Délai de remise : Rahmenvertrag Oberbauinstandsetzungsleistungen
+  im Fachlos 1\, in Gleisen und Weichen auf Schweizer Gebiet\, der DB Infra
+ GO AG\, für die GJ 2028ff. Region Südwest\, Netzb. Singen_PD Freiburg (F
+ BU).
+DESCRIPTION:Acheteur public : Deutsche Bahn AG\, Beschaffung Infrastruktu
+ r\, Region Südwest (FE.EI)\nDélai de remise : 07.12.2026\, 9 h 00\
+ nDans le registre : https://auftragsregister.ch/fr/auftrag/0de66210-8932
+ -422c-845e-5b85983185d4/\nPublication officielle : https://www.simap.ch/
+ fr/project-detail/0de66210-8932-422c-845e-5b85983185d4
+URL:https://auftragsregister.ch/fr/auftrag/0de66210-8932-422c-845e-5b859831
+ 85d4/
+LOCATION:Schaffhausen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rahmenvertrag Oberbauinstandsetzungsleistu
+ ngen im Fachlos 1\, in Gleisen und Weichen auf Schweizer Gebiet\, der DB I
+ nfraGO AG\, für die GJ 2028ff. Region Südwest\, Netzb. Singen_PD Freibur
+ g (FBU).
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

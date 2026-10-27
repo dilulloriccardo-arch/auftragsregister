@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40068443-6a11-4a78-a264-56fea52c2ed7-frist@auftragsregister.ch
+DTSTAMP:20260913T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Scadenza: Mandat d’architecte\, direction générale du projet et
+  pool de mandataires pour la rénovation énergétique des bâtiments du C
+ ollège du Cherrat
+DESCRIPTION:Ente pubblico: Commune de Saint-Prex (ABA PARTENAIRES SA)\nScad
+ enza: 13.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/40068443-6a11-4a78-a264-56fea52c2ed7/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/40068443-6a11-4a78-a264-56fea52c2ed7
+URL:https://auftragsregister.ch/it/auftrag/40068443-6a11-4a78-a264-56fea52c
+ 2ed7/
+LOCATION:Saint-Prex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mandat d’architecte\, direction générale du proje
+ t et pool de mandataires pour la rénovation énergétique des bâtiments 
+ du Collège du Cherrat
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

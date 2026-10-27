@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:460a5433-7093-44e5-9bcc-6814f647f338-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T170000Z
+SUMMARY:Submission deadline: New Construction of the Promulins Residential 
+ Development\, 7530 Samedan
+DESCRIPTION:Public buyer: Bürgergemeinde Samedan (Alder Clavuot Nunzi Arch
+ itekten GmbH ETH SIA)\nSubmission deadline: 2 Nov 2026\, 18:00\nIn the r
+ egister: https://auftragsregister.ch/en/auftrag/460a5433-7093-44e5-9bcc-68
+ 14f647f338/\nOfficial publication: https://www.simap.ch/en/project-detail/
+ 460a5433-7093-44e5-9bcc-6814f647f338
+URL:https://auftragsregister.ch/en/auftrag/460a5433-7093-44e5-9bcc-6814f647
+ f338/
+LOCATION:Samedan
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: New Construction of the Promulins Resident
+ ial Development\, 7530 Samedan
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

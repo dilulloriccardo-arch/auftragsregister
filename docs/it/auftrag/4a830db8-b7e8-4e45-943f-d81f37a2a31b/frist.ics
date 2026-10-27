@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4a830db8-b7e8-4e45-943f-d81f37a2a31b-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261116T153000Z
+SUMMARY:Scadenza: Centre Aquatique de la Fontenette - Ville de Carouge - CF
+ C 281.60 Carrelage et faïence
+DESCRIPTION:Ente pubblico: Ville de Carouge - Service des bâtiments\nScade
+ nza: 16.11.2026\, 16:30\nNel registro: https://auftragsregister.ch/it/auft
+ rag/4a830db8-b7e8-4e45-943f-d81f37a2a31b/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/4a830db8-b7e8-4e45-943f-d81f37a2a31b
+URL:https://auftragsregister.ch/it/auftrag/4a830db8-b7e8-4e45-943f-d81f37a2
+ a31b/
+LOCATION:Carouge
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Centre Aquatique de la Fontenette - Ville de Carouge 
+ - CFC 281.60 Carrelage et faïence
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

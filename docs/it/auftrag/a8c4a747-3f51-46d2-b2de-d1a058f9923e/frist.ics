@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a8c4a747-3f51-46d2-b2de-d1a058f9923e-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261211T140000Z
+SUMMARY:Scadenza: 7504 BKP 369.3 Salz- und Soleanlage\, Werkhof Tiefbauamt 
+ Amriswil
+DESCRIPTION:Ente pubblico: Kantonales Hochbauamt Thurgau\nScadenza: 11.12.2
+ 026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/a8c4a747
+ -3f51-46d2-b2de-d1a058f9923e/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/a8c4a747-3f51-46d2-b2de-d1a058f9923e
+URL:https://auftragsregister.ch/it/auftrag/a8c4a747-3f51-46d2-b2de-d1a058f9
+ 923e/
+LOCATION:Amriswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 7504 BKP 369.3 Salz- und Soleanlage\, Werkhof Tiefbau
+ amt Amriswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

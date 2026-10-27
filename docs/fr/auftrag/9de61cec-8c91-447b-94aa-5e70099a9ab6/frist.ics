@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9de61cec-8c91-447b-94aa-5e70099a9ab6-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261124T110000Z
+SUMMARY:Délai de remise : FIS Innenanzeigen
+DESCRIPTION:Acheteur public : Schweizerische Post AG\nDélai de remise 
+ : 24.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/9de61cec-8c91-447b-94aa-5e70099a9ab6/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/9de61cec-8c91-447b-94aa-5e700
+ 99a9ab6
+URL:https://auftragsregister.ch/fr/auftrag/9de61cec-8c91-447b-94aa-5e70099a
+ 9ab6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : FIS Innenanzeigen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

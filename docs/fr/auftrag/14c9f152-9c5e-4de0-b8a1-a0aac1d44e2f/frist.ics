@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:14c9f152-9c5e-4de0-b8a1-a0aac1d44e2f-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261107T110000Z
+SUMMARY:Délai de remise : Hochauflösendes Massenspektrometer
+DESCRIPTION:Acheteur public : Universität Basel\nDélai de remise : 07
+ .11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/14c9f152-9c5e-4de0-b8a1-a0aac1d44e2f/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/14c9f152-9c5e-4de0-b8a1-a0aac1d44
+ e2f
+URL:https://auftragsregister.ch/fr/auftrag/14c9f152-9c5e-4de0-b8a1-a0aac1d4
+ 4e2f/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Hochauflösendes Massenspektrometer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

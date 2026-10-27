@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6f4757ea-e718-4032-abb8-821e233acdf6-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261103T225900Z
+SUMMARY:Délai de remise : Haus 07B / SKP 271.1 / Spezielle Gipserarbeite
+ n 07B inkl. Innenfesnter aus Metall
+DESCRIPTION:Acheteur public : Spitalanlagengesellschaft HOCH Health Ostsc
+ hweiz\nDélai de remise : 03.11.2026\, 23 h 59\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/6f4757ea-e718-4032-abb8-821e233acd
+ f6/\nPublication officielle : https://www.simap.ch/fr/project-detail/6f4
+ 757ea-e718-4032-abb8-821e233acdf6
+URL:https://auftragsregister.ch/fr/auftrag/6f4757ea-e718-4032-abb8-821e233a
+ cdf6/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Haus 07B / SKP 271.1 / Spezielle Gipserarb
+ eiten 07B inkl. Innenfesnter aus Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

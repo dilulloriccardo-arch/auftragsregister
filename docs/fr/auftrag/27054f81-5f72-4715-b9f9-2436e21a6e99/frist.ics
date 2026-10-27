@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:27054f81-5f72-4715-b9f9-2436e21a6e99-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261028T110000Z
+SUMMARY:Délai de remise : RO 1033\, Areal Rosental\, Umbau Laborgebäude
+ \, BKP 215 Fassadenbau
+DESCRIPTION:Acheteur public : Bau- und Verkehrsdepartement des Kantons Ba
+ sel-Stadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\n
+ Délai de remise : 28.10.2026\, 12 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/27054f81-5f72-4715-b9f9-2436e21a6e99/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/27054f81-5
+ f72-4715-b9f9-2436e21a6e99
+URL:https://auftragsregister.ch/fr/auftrag/27054f81-5f72-4715-b9f9-2436e21a
+ 6e99/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : RO 1033\, Areal Rosental\, Umbau Laborgeb
+ äude\, BKP 215 Fassadenbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

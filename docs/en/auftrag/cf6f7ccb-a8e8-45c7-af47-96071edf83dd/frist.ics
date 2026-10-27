@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf6f7ccb-a8e8-45c7-af47-96071edf83dd-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261105T100000Z
+SUMMARY:Submission deadline: Plateforme de Data Lakehouse institutionnelle 
+ pour les HUG
+DESCRIPTION:Public buyer: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nSubmission deadline: 5 Nov 2026\, 11:00\nIn the regi
+ ster: https://auftragsregister.ch/en/auftrag/cf6f7ccb-a8e8-45c7-af47-96071
+ edf83dd/\nOfficial publication: https://www.simap.ch/en/project-detail/cf6
+ f7ccb-a8e8-45c7-af47-96071edf83dd
+URL:https://auftragsregister.ch/en/auftrag/cf6f7ccb-a8e8-45c7-af47-96071edf
+ 83dd/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Plateforme de Data Lakehouse institutionne
+ lle pour les HUG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

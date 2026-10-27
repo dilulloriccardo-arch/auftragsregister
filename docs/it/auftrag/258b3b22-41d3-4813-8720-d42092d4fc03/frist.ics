@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:258b3b22-41d3-4813-8720-d42092d4fc03-frist@auftragsregister.ch
+DTSTAMP:20260901T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Scadenza: N20.71 MP-180010 - NEB Contournement Le Locle - BAMO ET D
+ GT pour phases 41-53 (ID 12001)
+DESCRIPTION:Ente pubblico: Office fédéral des routes OFROU\, Division Inf
+ rastructure routière Ouest\, filiale Estavayer-le-Lac\nScadenza: 24.11.20
+ 26\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/258b3b22-
+ 41d3-4813-8720-d42092d4fc03/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/258b3b22-41d3-4813-8720-d42092d4fc03
+URL:https://auftragsregister.ch/it/auftrag/258b3b22-41d3-4813-8720-d42092d4
+ fc03/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N20.71 MP-180010 - NEB Contournement Le Locle - BAMO 
+ ET DGT pour phases 41-53 (ID 12001)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

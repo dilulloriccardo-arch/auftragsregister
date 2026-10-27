@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6819cc6b-9404-4199-9ce4-d2cfa3628297-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Submission deadline: Sanierung Rietstrasse\, Abschnitt Rötlistrass
+ e bis Rietsporthalle\, Benken
+DESCRIPTION:Public buyer: Politische Gemeinde Benken\nSubmission deadline: 
+ 16 Nov 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/6819cc6b-9404-4199-9ce4-d2cfa3628297/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/6819cc6b-9404-4199-9ce4-d2cfa3628297
+URL:https://auftragsregister.ch/en/auftrag/6819cc6b-9404-4199-9ce4-d2cfa362
+ 8297/
+LOCATION:Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Rietstrasse\, Abschnitt Rötlist
+ rasse bis Rietsporthalle\, Benken
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

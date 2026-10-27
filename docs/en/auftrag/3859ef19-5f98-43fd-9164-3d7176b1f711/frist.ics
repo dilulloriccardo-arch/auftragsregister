@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3859ef19-5f98-43fd-9164-3d7176b1f711-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261210T140000Z
+SUMMARY:Submission deadline: Ersatzbeschaffung Einsatzleitfahrzeug
+DESCRIPTION:Public buyer: Feuerwehr Einsiedeln\nSubmission deadline: 10 De
+ c 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/auftrag/3
+ 859ef19-5f98-43fd-9164-3d7176b1f711/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/3859ef19-5f98-43fd-9164-3d7176b1f711
+URL:https://auftragsregister.ch/en/auftrag/3859ef19-5f98-43fd-9164-3d7176b1
+ f711/
+LOCATION:Einsiedeln
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatzbeschaffung Einsatzleitfahrzeug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

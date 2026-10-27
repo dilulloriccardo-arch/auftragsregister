@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b0d84484-621e-478d-93a6-49ef501c1dc3-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261105T110000Z
+SUMMARY:Submission deadline: P+R Grand Saconnex - Lot 12.1 Ouvrages métall
+ iques courants
+DESCRIPTION:Public buyer: Fondation des Parkings - Service des achats\nSubm
+ ission deadline: 5 Nov 2026\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/b0d84484-621e-478d-93a6-49ef501c1dc3/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/b0d84484-621e-478d-93a6-49e
+ f501c1dc3
+URL:https://auftragsregister.ch/en/auftrag/b0d84484-621e-478d-93a6-49ef501c
+ 1dc3/
+LOCATION:Voie-des-Traz 6\, 1218 Le Grand-Saconnex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: P+R Grand Saconnex - Lot 12.1 Ouvrages mé
+ talliques courants
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

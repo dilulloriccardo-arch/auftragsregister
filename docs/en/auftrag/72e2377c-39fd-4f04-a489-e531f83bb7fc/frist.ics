@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72e2377c-39fd-4f04-a489-e531f83bb7fc-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T130000Z
+SUMMARY:Submission deadline: 57.103 Ampliamento piastra tecnica e logistica
+  - Opere da installatore elettricista
+DESCRIPTION:Public buyer: Ente Ospedaliero Cantonale - Area Infrastrutture 
+ e Operations\nSubmission deadline: 1 Dec 2026\, 14:00\nIn the register: 
+ https://auftragsregister.ch/en/auftrag/72e2377c-39fd-4f04-a489-e531f83bb7f
+ c/\nOfficial publication: https://www.simap.ch/en/project-detail/72e2377c-
+ 39fd-4f04-a489-e531f83bb7fc
+URL:https://auftragsregister.ch/en/auftrag/72e2377c-39fd-4f04-a489-e531f83b
+ b7fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 57.103 Ampliamento piastra tecnica e logis
+ tica - Opere da installatore elettricista
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

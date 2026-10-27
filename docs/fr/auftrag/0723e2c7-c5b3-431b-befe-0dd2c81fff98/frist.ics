@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0723e2c7-c5b3-431b-befe-0dd2c81fff98-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Délai de remise : CFC 271 Travaux de plâtrerie
+DESCRIPTION:Acheteur public : Gemeinde Ebikon (Jung Meyerhans AG)\nDélai
+  de remise : 02.12.2026\, 12 h 00\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/0723e2c7-c5b3-431b-befe-0dd2c81fff98/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/0723e2c7-c5b3-43
+ 1b-befe-0dd2c81fff98
+URL:https://auftragsregister.ch/fr/auftrag/0723e2c7-c5b3-431b-befe-0dd2c81f
+ ff98/
+LOCATION:Ebikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFC 271 Travaux de plâtrerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

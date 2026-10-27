@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25c9e4c4-7dc8-4378-9fcf-bad0d8cca3a5-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Submission deadline: New Construction of Wiesental School\, BKP 282
+ .5 Timber Wall Cladding\, 2nd Stage
+DESCRIPTION:Public buyer: Einwohnergemeinde Baar\nSubmission deadline: 9 N
+ ov 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 25c9e4c4-7dc8-4378-9fcf-bad0d8cca3a5/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/25c9e4c4-7dc8-4378-9fcf-bad0d8cca3a5
+URL:https://auftragsregister.ch/en/auftrag/25c9e4c4-7dc8-4378-9fcf-bad0d8cc
+ a3a5/
+LOCATION:Baar
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: New Construction of Wiesental School\, BKP
+  282.5 Timber Wall Cladding\, 2nd Stage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

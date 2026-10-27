@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e862d39-fba9-4a7c-8925-d0d2f87015a2-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261120T160000Z
+SUMMARY:Délai de remise : Ersatzbeschaffung Forst- und Kommunalschlepper
+DESCRIPTION:Acheteur public : Gemeinde Davos Forstbetrieb\nDélai de remi
+ se : 20.11.2026\, 17 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/0e862d39-fba9-4a7c-8925-d0d2f87015a2/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/0e862d39-fba9-4a7c-8925-
+ d0d2f87015a2
+URL:https://auftragsregister.ch/fr/auftrag/0e862d39-fba9-4a7c-8925-d0d2f870
+ 15a2/
+LOCATION:Davos Platz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatzbeschaffung Forst- und Kommunalschle
+ pper
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

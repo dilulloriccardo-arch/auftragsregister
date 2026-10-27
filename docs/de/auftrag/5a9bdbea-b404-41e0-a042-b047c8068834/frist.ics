@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a9bdbea-b404-41e0-a042-b047c8068834-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Eingabefrist: Schulcampus Dorf\, Bestandsgebäude - BKP 211.5 Baume
+ isterarbeiten
+DESCRIPTION:Auftraggeber: ARGE GP SCD - c/o Rapp AG\nEingabefrist: 02.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5a9bd
+ bea-b404-41e0-a042-b047c8068834/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/5a9bdbea-b404-41e0-a042-b047c8068834
+URL:https://auftragsregister.ch/de/auftrag/5a9bdbea-b404-41e0-a042-b047c806
+ 8834/
+LOCATION:Binningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulcampus Dorf\, Bestandsgebäude - BKP 211.5 B
+ aumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

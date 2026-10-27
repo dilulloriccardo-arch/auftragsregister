@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:14c9f152-9c5e-4de0-b8a1-a0aac1d44e2f-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261107T110000Z
+SUMMARY:Submission deadline: High-resolution mass spectrometer
+DESCRIPTION:Public buyer: Universität Basel\nSubmission deadline: 7 Nov 
+ 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/14c9
+ f152-9c5e-4de0-b8a1-a0aac1d44e2f/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/14c9f152-9c5e-4de0-b8a1-a0aac1d44e2f
+URL:https://auftragsregister.ch/en/auftrag/14c9f152-9c5e-4de0-b8a1-a0aac1d4
+ 4e2f/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: High-resolution mass spectrometer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

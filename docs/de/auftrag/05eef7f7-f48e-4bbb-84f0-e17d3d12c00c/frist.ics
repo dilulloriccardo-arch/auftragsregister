@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:05eef7f7-f48e-4bbb-84f0-e17d3d12c00c-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261119T103000Z
+SUMMARY:Eingabefrist: Mise en œuvre et gestion des activités assurantiell
+ es de la Caisse Santé Genève
+DESCRIPTION:Auftraggeber: Département de la santé et des mobilités (DSM)
+  - Secrétariat général\nEingabefrist: 19.11.2026\, 11.30 Uhr\nIm Regis
+ ter: https://auftragsregister.ch/de/auftrag/05eef7f7-f48e-4bbb-84f0-e17d3d
+ 12c00c/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/05ee
+ f7f7-f48e-4bbb-84f0-e17d3d12c00c
+URL:https://auftragsregister.ch/de/auftrag/05eef7f7-f48e-4bbb-84f0-e17d3d12
+ c00c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Mise en œuvre et gestion des activités assurant
+ ielles de la Caisse Santé Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

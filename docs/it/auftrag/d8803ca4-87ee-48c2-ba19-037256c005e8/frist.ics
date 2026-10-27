@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8803ca4-87ee-48c2-ba19-037256c005e8-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Scadenza: Herstellung\, Lieferung\, Montage und Prüfung 220 kV HS-
+ Kabelanlage im UW Laufenburg
+DESCRIPTION:Ente pubblico: Swissgrid AG - Asset & Maintenance\nScadenza: 15
+ .01.2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/d88
+ 03ca4-87ee-48c2-ba19-037256c005e8/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/d8803ca4-87ee-48c2-ba19-037256c005e8
+URL:https://auftragsregister.ch/it/auftrag/d8803ca4-87ee-48c2-ba19-037256c0
+ 05e8/
+LOCATION:Laufenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Herstellung\, Lieferung\, Montage und Prüfung 220 kV
+  HS-Kabelanlage im UW Laufenburg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

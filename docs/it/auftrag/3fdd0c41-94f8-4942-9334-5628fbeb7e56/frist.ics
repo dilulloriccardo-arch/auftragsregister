@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3fdd0c41-94f8-4942-9334-5628fbeb7e56-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Scadenza: Infrastruktur Areal Liebegg\, Gränichen - Generalplanerl
+ eistung
+DESCRIPTION:Ente pubblico: Kanton Aargau Departement Finanzen und Ressource
+ n Immobilien Aargau\nScadenza: 09.11.2026\nNel registro: https://auftragsr
+ egister.ch/it/auftrag/3fdd0c41-94f8-4942-9334-5628fbeb7e56/\nPubblicazione
+  ufficiale: https://www.simap.ch/it/project-detail/3fdd0c41-94f8-4942-9334
+ -5628fbeb7e56
+URL:https://auftragsregister.ch/it/auftrag/3fdd0c41-94f8-4942-9334-5628fbeb
+ 7e56/
+LOCATION:Gränichen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Infrastruktur Areal Liebegg\, Gränichen - Generalpla
+ nerleistung
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

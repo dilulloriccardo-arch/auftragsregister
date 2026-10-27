@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62bdaa70-8363-4e63-b76c-3ef470c9e5ae-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Délai de remise : USZ Campus MITTE 1|2 / CVC 231.01 Installation
+ s moyenne tension\, tableaux généraux basse tension
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 30.11.2026\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/62bdaa70-8363-4e63-b76c-3ef470c9e5ae/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/62bdaa70-8363-4e63-b76c-
+ 3ef470c9e5ae
+URL:https://auftragsregister.ch/fr/auftrag/62bdaa70-8363-4e63-b76c-3ef470c9
+ e5ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : USZ Campus MITTE 1|2 / CVC 231.01 Installa
+ tions moyenne tension\, tableaux généraux basse tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

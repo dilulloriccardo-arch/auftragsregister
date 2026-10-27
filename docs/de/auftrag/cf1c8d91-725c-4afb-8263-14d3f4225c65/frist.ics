@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf1c8d91-725c-4afb-8263-14d3f4225c65-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Eingabefrist: Projekt Mitholz: Räumung ehemaliges Munitionslager\,
+  Testanlage Materialbewirtschaftung
+DESCRIPTION:Auftraggeber: armasuisse Immobilien\nEingabefrist: 07.12.2026\,
+  23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/cf1c8d91-
+ 725c-4afb-8263-14d3f4225c65/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/cf1c8d91-725c-4afb-8263-14d3f4225c65
+URL:https://auftragsregister.ch/de/auftrag/cf1c8d91-725c-4afb-8263-14d3f422
+ 5c65/
+LOCATION:Mitholz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projekt Mitholz: Räumung ehemaliges Munitionslag
+ er\, Testanlage Materialbewirtschaftung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

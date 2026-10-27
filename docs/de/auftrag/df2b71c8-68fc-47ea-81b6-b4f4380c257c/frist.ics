@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df2b71c8-68fc-47ea-81b6-b4f4380c257c-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Eingabefrist: Sanierung Korrosionsschutz Triebwasser Handeck 3 – 
+ Rotlaui
+DESCRIPTION:Auftraggeber: Kraftwerke Oberhasli AG\nEingabefrist: 09.12.2026
+ \, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/df2b71c
+ 8-68fc-47ea-81b6-b4f4380c257c/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/df2b71c8-68fc-47ea-81b6-b4f4380c257c
+URL:https://auftragsregister.ch/de/auftrag/df2b71c8-68fc-47ea-81b6-b4f4380c
+ 257c/
+LOCATION:Guttannen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Korrosionsschutz Triebwasser Handeck 3 
+ – Rotlaui
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

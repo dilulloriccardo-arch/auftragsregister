@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb826f64-812b-4776-bd50-4ac3fa4b556e-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261109T225900Z
+SUMMARY:Scadenza: 16.0249 - Langenthal\, Sanierung und Erweiterung Berufsfa
+ chschule: 230 Elektroinstallationen
+DESCRIPTION:Ente pubblico: Amt für Grundstücke und Gebäude des Kantons B
+ ern (AGG)\nScadenza: 09.11.2026\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/fb826f64-812b-4776-bd50-4ac3fa4b556e/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/fb826f64-812b-4776-bd50-4
+ ac3fa4b556e
+URL:https://auftragsregister.ch/it/auftrag/fb826f64-812b-4776-bd50-4ac3fa4b
+ 556e/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 16.0249 - Langenthal\, Sanierung und Erweiterung Beru
+ fsfachschule: 230 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

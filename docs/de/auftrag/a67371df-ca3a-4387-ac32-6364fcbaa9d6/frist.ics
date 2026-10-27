@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a67371df-ca3a-4387-ac32-6364fcbaa9d6-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Eingabefrist: AIS Integrator Bundle 2026-2
+DESCRIPTION:Auftraggeber: Swissgrid AG - Asset & Maintenance\nEingabefrist:
+  10.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/a67371df-ca3a-4387-ac32-6364fcbaa9d6/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/a67371df-ca3a-4387-ac32-6364fcbaa9d6
+URL:https://auftragsregister.ch/de/auftrag/a67371df-ca3a-4387-ac32-6364fcba
+ a9d6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AIS Integrator Bundle 2026-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

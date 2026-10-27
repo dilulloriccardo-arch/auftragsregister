@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eaa34ec0-f9b6-4ea2-9100-dcfa585f37bd-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Scadenza: BHV Bauherrenvertretung\, Bauherrenunterstützung
+DESCRIPTION:Ente pubblico: DIB - Elektrizitätswerk der Stadt Zürich (ewz)
+ \nScadenza: 12.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/
+ it/auftrag/eaa34ec0-f9b6-4ea2-9100-dcfa585f37bd/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/eaa34ec0-f9b6-4ea2-9100-dcfa585f37
+ bd
+URL:https://auftragsregister.ch/it/auftrag/eaa34ec0-f9b6-4ea2-9100-dcfa585f
+ 37bd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BHV Bauherrenvertretung\, Bauherrenunterstützung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

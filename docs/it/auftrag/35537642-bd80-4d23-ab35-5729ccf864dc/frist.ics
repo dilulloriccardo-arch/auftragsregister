@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:35537642-bd80-4d23-ab35-5729ccf864dc-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261113T140000Z
+SUMMARY:Scadenza: 4099 BKP 122 Provisorium\, Schulraumprovisorium Campus BB
+ Z Weinfelden
+DESCRIPTION:Ente pubblico: Kantonales Hochbauamt Thurgau\nScadenza: 13.11.2
+ 026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/35537642
+ -bd80-4d23-ab35-5729ccf864dc/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/35537642-bd80-4d23-ab35-5729ccf864dc
+URL:https://auftragsregister.ch/it/auftrag/35537642-bd80-4d23-ab35-5729ccf8
+ 64dc/
+LOCATION:Weinfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 4099 BKP 122 Provisorium\, Schulraumprovisorium Campu
+ s BBZ Weinfelden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

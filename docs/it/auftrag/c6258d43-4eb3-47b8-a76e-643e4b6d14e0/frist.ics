@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c6258d43-4eb3-47b8-a76e-643e4b6d14e0-frist@auftragsregister.ch
+DTSTAMP:20260905T000000Z
+SEQUENCE:0
+DTSTART:20261109T130000Z
+SUMMARY:Scadenza: Remplacement des vannes cylindriques des unités 1\, 2 et
+  3
+DESCRIPTION:Ente pubblico: Groupe E SA - Service Achat pour les Marchés pu
+ blics\nScadenza: 09.11.2026\, 14:00\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/c6258d43-4eb3-47b8-a76e-643e4b6d14e0/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/c6258d43-4eb3-47b8-a76e-643e4
+ b6d14e0
+URL:https://auftragsregister.ch/it/auftrag/c6258d43-4eb3-47b8-a76e-643e4b6d
+ 14e0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Remplacement des vannes cylindriques des unités 1\, 
+ 2 et 3
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

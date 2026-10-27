@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:39428833-8395-42d5-b583-fe613544148f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Eingabefrist: Ausschreibung Schlüsseldienst / Schliessanlagen / Zu
+ trittssysteme – KAT.009
+DESCRIPTION:Auftraggeber: ETHOS Immobilien GmbH\nEingabefrist: 09.11.2026\,
+  16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/39428833-
+ 8395-42d5-b583-fe613544148f/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/39428833-8395-42d5-b583-fe613544148f
+URL:https://auftragsregister.ch/de/auftrag/39428833-8395-42d5-b583-fe613544
+ 148f/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ausschreibung Schlüsseldienst / Schliessanlagen 
+ / Zutrittssysteme – KAT.009
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

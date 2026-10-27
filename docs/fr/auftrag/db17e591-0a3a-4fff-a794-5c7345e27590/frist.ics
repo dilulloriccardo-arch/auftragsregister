@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db17e591-0a3a-4fff-a794-5c7345e27590-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : EBP-597 AFW Schwabguet Baumeister
+DESCRIPTION:Acheteur public : Energie Wasser Bern\nDélai de remise : 3
+ 0.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/db17e591-0a3a-4fff-a794-5c7345e27590/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/db17e591-0a3a-4fff-a794-5c7345
+ e27590
+URL:https://auftragsregister.ch/fr/auftrag/db17e591-0a3a-4fff-a794-5c7345e2
+ 7590/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EBP-597 AFW Schwabguet Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

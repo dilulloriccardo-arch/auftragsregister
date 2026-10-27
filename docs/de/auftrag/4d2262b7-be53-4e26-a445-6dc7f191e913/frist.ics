@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4d2262b7-be53-4e26-a445-6dc7f191e913-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261202T133000Z
+SUMMARY:Eingabefrist: Rifacimento pavimentazione in via Loco e Via Ligaino 
+ a Lugano-Pregassona - Opere di pavimentazione
+DESCRIPTION:Auftraggeber: Città di Lugano - Spazi urbani\nEingabefrist: 02
+ .12.2026\, 14.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /4d2262b7-be53-4e26-a445-6dc7f191e913/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/4d2262b7-be53-4e26-a445-6dc7f191e913
+URL:https://auftragsregister.ch/de/auftrag/4d2262b7-be53-4e26-a445-6dc7f191
+ e913/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rifacimento pavimentazione in via Loco e Via Liga
+ ino a Lugano-Pregassona - Opere di pavimentazione
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

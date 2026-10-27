@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46c2b4ba-392f-4eae-b293-f3005546e1ea-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261108T225900Z
+SUMMARY:Submission deadline: OSTWIND Market Development 2027–2029
+DESCRIPTION:Public buyer: Genossenschaft Tarifverbund OSTWIND\nSubmission d
+ eadline: 8 Nov 2026\, 23:59\nIn the register: https://auftragsregister.c
+ h/en/auftrag/46c2b4ba-392f-4eae-b293-f3005546e1ea/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/46c2b4ba-392f-4eae-b293-f3005546e1e
+ a
+URL:https://auftragsregister.ch/en/auftrag/46c2b4ba-392f-4eae-b293-f3005546
+ e1ea/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: OSTWIND Market Development 2027–2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

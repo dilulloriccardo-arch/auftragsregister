@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87bece6e-c4e2-4654-8819-234fdc1a417b-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T110024Z
+SUMMARY:Scadenza: Sicherheitsdienstleistungen
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 23.11.202
+ 6\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/87bece6e-c
+ 4e2-4654-8819-234fdc1a417b/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/87bece6e-c4e2-4654-8819-234fdc1a417b
+URL:https://auftragsregister.ch/it/auftrag/87bece6e-c4e2-4654-8819-234fdc1a
+ 417b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sicherheitsdienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

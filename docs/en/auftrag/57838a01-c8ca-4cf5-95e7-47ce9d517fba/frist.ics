@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57838a01-c8ca-4cf5-95e7-47ce9d517fba-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Submission deadline: Marché des Soupes CAIB
+DESCRIPTION:Public buyer: Centrale d'achats et d’ingénierie biomédicale
+  des hôpitaux universitaires Vaud-Genève (CAIB) Rue Gabrielle Perret-Gen
+ til 4 CH-1211 Genève 14\nSubmission deadline: 2 Nov 2026\, 16:00\nIn th
+ e register: https://auftragsregister.ch/en/auftrag/57838a01-c8ca-4cf5-95e7
+ -47ce9d517fba/\nOfficial publication: https://www.simap.ch/en/project-deta
+ il/57838a01-c8ca-4cf5-95e7-47ce9d517fba
+URL:https://auftragsregister.ch/en/auftrag/57838a01-c8ca-4cf5-95e7-47ce9d51
+ 7fba/
+LOCATION:GENÈVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Marché des Soupes CAIB
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

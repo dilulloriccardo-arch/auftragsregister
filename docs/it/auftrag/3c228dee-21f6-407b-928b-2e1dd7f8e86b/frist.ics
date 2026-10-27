@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c228dee-21f6-407b-928b-2e1dd7f8e86b-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Scadenza: Ersatz Drosselklappe 3601 - Sanierung Triebwasser Handeck
+  3 – Rotlaui
+DESCRIPTION:Ente pubblico: Kraftwerke Oberhasli AG\nScadenza: 20.11.2026\, 
+ 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/3c228dee-21f6-
+ 407b-928b-2e1dd7f8e86b/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/3c228dee-21f6-407b-928b-2e1dd7f8e86b
+URL:https://auftragsregister.ch/it/auftrag/3c228dee-21f6-407b-928b-2e1dd7f8
+ e86b/
+LOCATION:Guttannen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatz Drosselklappe 3601 - Sanierung Triebwasser Han
+ deck 3 – Rotlaui
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5cfc63df-65ca-445b-97cd-54556b584b74-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Submission deadline: Sanierung und Neubau Lidostrasse - Baumeistera
+ rbeiten
+DESCRIPTION:Public buyer: Tiefbauamt der Stadt Luzern\nSubmission deadline:
+  16 Nov 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/5cfc63df-65ca-445b-97cd-54556b584b74/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/5cfc63df-65ca-445b-97cd-54556b584b74
+URL:https://auftragsregister.ch/en/auftrag/5cfc63df-65ca-445b-97cd-54556b58
+ 4b74/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung und Neubau Lidostrasse - Baumeis
+ terarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

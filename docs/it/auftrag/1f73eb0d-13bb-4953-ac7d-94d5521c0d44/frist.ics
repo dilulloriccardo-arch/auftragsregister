@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1f73eb0d-13bb-4953-ac7d-94d5521c0d44-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261119T225900Z
+SUMMARY:Scadenza: Davos Monstein - Wiesen\, km 62.533 - 62.681\, Erneuerung
+  talseitige Stützbauwerke 11-230/231/233
+DESCRIPTION:Ente pubblico: Rhätische Bahn AG\nScadenza: 19.11.2026\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/1f73eb0d-13bb-4953-
+ ac7d-94d5521c0d44/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/1f73eb0d-13bb-4953-ac7d-94d5521c0d44
+URL:https://auftragsregister.ch/it/auftrag/1f73eb0d-13bb-4953-ac7d-94d5521c
+ 0d44/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Davos Monstein - Wiesen\, km 62.533 - 62.681\, Erneue
+ rung talseitige Stützbauwerke 11-230/231/233
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

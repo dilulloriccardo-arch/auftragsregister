@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:17b61322-bb9f-442f-b18b-c6ed292bbf3e-frist@auftragsregister.ch
+DTSTAMP:20260912T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Submission deadline: ARA Worblental\, Neubau EMV-Stufe\, Metallbaua
+ rbeiten
+DESCRIPTION:Public buyer: Gemeindeverband ARA Worblental\nSubmission deadli
+ ne: 4 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/17b61322-bb9f-442f-b18b-c6ed292bbf3e/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/17b61322-bb9f-442f-b18b-c6ed292bbf3e
+URL:https://auftragsregister.ch/en/auftrag/17b61322-bb9f-442f-b18b-c6ed292b
+ bf3e/
+LOCATION:Worblaufen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ARA Worblental\, Neubau EMV-Stufe\, Metall
+ bauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c26552ac-0a99-465b-ba1e-50e107a55fa2-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Scadenza: Strassenkreisinspektorat Gossau: Zwei Lieferwagen (Kat C1
+ ) inkl. Winterdienstausrüstung
+DESCRIPTION:Ente pubblico: Kanton St.Gallen\, Tiefbauamt\, Strassenkreisins
+ pektorat Gossau\nScadenza: 11.11.2026\, 23:59\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/c26552ac-0a99-465b-ba1e-50e107a55fa2/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/c26552ac-0a99-465b-
+ ba1e-50e107a55fa2
+URL:https://auftragsregister.ch/it/auftrag/c26552ac-0a99-465b-ba1e-50e107a5
+ 5fa2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Strassenkreisinspektorat Gossau: Zwei Lieferwagen (Ka
+ t C1) inkl. Winterdienstausrüstung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

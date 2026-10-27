@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1fe0aa8f-0b87-49e9-98e4-e6c23d1bbd3d-frist@auftragsregister.ch
+DTSTAMP:20260912T000000Z
+SEQUENCE:2
+DTSTART:20270115T150000Z
+SUMMARY:Eingabefrist: 6 piece regulating transformers 40MVA ONAN (50MVA ONA
+ F) 110//10/20kV
+DESCRIPTION:Auftraggeber: Stadt St.Gallen\, Stadtwerke\nEingabefrist: 15.01
+ .2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/1f
+ e0aa8f-0b87-49e9-98e4-e6c23d1bbd3d/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/1fe0aa8f-0b87-49e9-98e4-e6c23d1bbd3d
+URL:https://auftragsregister.ch/de/auftrag/1fe0aa8f-0b87-49e9-98e4-e6c23d1b
+ bd3d/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 6 piece regulating transformers 40MVA ONAN (50MVA
+  ONAF) 110//10/20kV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

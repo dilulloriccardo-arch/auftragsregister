@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:760899fd-7084-45b0-b0d7-07206450253c-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T225600Z
+SUMMARY:Délai de remise : EBP-596 AFW_Bümpliz Ost-Süd-Bienzgut Rohrbau
+ er
+DESCRIPTION:Acheteur public : Energie Wasser Bern\nDélai de remise : 0
+ 2.11.2026\, 23 h 56\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/760899fd-7084-45b0-b0d7-07206450253c/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/760899fd-7084-45b0-b0d7-072064
+ 50253c
+URL:https://auftragsregister.ch/fr/auftrag/760899fd-7084-45b0-b0d7-07206450
+ 253c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EBP-596 AFW_Bümpliz Ost-Süd-Bienzgut Roh
+ rbauer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

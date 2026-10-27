@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7e84ee0-d9e6-422b-8c64-cb35ebeb1815-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270107T150000Z
+SUMMARY:Délai de remise : 26-417-SA Renfort d’équipe Installations de
+  sécurité
+DESCRIPTION:Acheteur public : SBB CFF FFS Infra-Bahntechnik\nDélai de re
+ mise : 07.01.2027\, 16 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/e7e84ee0-d9e6-422b-8c64-cb35ebeb1815/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/e7e84ee0-d9e6-422b-8c6
+ 4-cb35ebeb1815
+URL:https://auftragsregister.ch/fr/auftrag/e7e84ee0-d9e6-422b-8c64-cb35ebeb
+ 1815/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 26-417-SA Renfort d’équipe Installation
+ s de sécurité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

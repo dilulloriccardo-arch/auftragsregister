@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a872d80-3d0c-4c63-88c8-796ebe64d007-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261106T103000Z
+SUMMARY:Submission deadline: Hombrechtikon: Sanierung Alte Landstrasse
+DESCRIPTION:Public buyer: Gemeinde Hombrechtikon\nSubmission deadline: 6 N
+ ov 2026\, 11:30\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 3a872d80-3d0c-4c63-88c8-796ebe64d007/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/3a872d80-3d0c-4c63-88c8-796ebe64d007
+URL:https://auftragsregister.ch/en/auftrag/3a872d80-3d0c-4c63-88c8-796ebe64
+ d007/
+LOCATION:Hombrechtikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Hombrechtikon: Sanierung Alte Landstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

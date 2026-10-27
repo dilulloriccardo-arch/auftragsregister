@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12cc41cc-4818-4dda-92f4-b9ca8c1808bc-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261201T225800Z
+SUMMARY:Scadenza: Neubau H07B- SKP 273095_Schiebetüren aus Holz (AP04-01)
+DESCRIPTION:Ente pubblico: Spitalanlagengesellschaft HOCH Health Ostschweiz
+ \nScadenza: 01.12.2026\, 23:58\nNel registro: https://auftragsregister.ch/
+ it/auftrag/12cc41cc-4818-4dda-92f4-b9ca8c1808bc/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/12cc41cc-4818-4dda-92f4-b9ca8c1808
+ bc
+URL:https://auftragsregister.ch/it/auftrag/12cc41cc-4818-4dda-92f4-b9ca8c18
+ 08bc/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau H07B- SKP 273095_Schiebetüren aus Holz (AP04-
+ 01)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

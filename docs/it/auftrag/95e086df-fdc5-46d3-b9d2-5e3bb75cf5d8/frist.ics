@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95e086df-fdc5-46d3-b9d2-5e3bb75cf5d8-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Scadenza: Beschaffung eines cryo-konfokalen Fluoreszenzmikroskops
+DESCRIPTION:Ente pubblico: Institut für Biochemie und Molekulare Medizin\n
+ Scadenza: 02.11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it
+ /auftrag/95e086df-fdc5-46d3-b9d2-5e3bb75cf5d8/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/95e086df-fdc5-46d3-b9d2-5e3bb75cf5d8
+URL:https://auftragsregister.ch/it/auftrag/95e086df-fdc5-46d3-b9d2-5e3bb75c
+ f5d8/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung eines cryo-konfokalen Fluoreszenzmikrosko
+ ps
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

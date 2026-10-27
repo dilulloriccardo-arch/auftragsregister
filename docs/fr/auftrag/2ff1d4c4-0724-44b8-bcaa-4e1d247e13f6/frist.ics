@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2ff1d4c4-0724-44b8-bcaa-4e1d247e13f6-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261104T225900Z
+SUMMARY:Délai de remise : Un système de pulvérisation cathodique dédi
+ é à la déposition de couches minces supraconductrices de haute qualité
+DESCRIPTION:Acheteur public : EPFL-Scientific Equipment\nDélai de remise
+  : 04.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/2ff1d4c4-0724-44b8-bcaa-4e1d247e13f6/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/2ff1d4c4-0724-44b8-bcaa-4e
+ 1d247e13f6
+URL:https://auftragsregister.ch/fr/auftrag/2ff1d4c4-0724-44b8-bcaa-4e1d247e
+ 13f6/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Un système de pulvérisation cathodique d
+ édié à la déposition de couches minces supraconductrices de haute qual
+ ité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

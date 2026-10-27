@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2d51194-fdde-453b-9e90-a94d02a9f552-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T160000Z
+SUMMARY:Délai de remise : Gesamtsanierung Schulanlage Pestalozzi Stans\,
+  BKP 240 Heizungs- und Kälteanlagen
+DESCRIPTION:Acheteur public : Politische Gemeinde Stans\nDélai de remise
+  : 18.11.2026\, 17 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/b2d51194-fdde-453b-9e90-a94d02a9f552/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/b2d51194-fdde-453b-9e90-a9
+ 4d02a9f552
+URL:https://auftragsregister.ch/fr/auftrag/b2d51194-fdde-453b-9e90-a94d02a9
+ f552/
+LOCATION:Stans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gesamtsanierung Schulanlage Pestalozzi Sta
+ ns\, BKP 240 Heizungs- und Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

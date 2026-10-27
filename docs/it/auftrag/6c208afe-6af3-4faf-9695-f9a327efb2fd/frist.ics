@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c208afe-6af3-4faf-9695-f9a327efb2fd-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261110T110000Z
+SUMMARY:Scadenza: Réfection des collecteurs secondaires - Rues de la Calle
+  et du Bois Carrien et Avenue du Gros-Chêne à Onex
+DESCRIPTION:Ente pubblico: Ville d'Onex - Service aménagement\nScadenza: 1
+ 0.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/6c
+ 208afe-6af3-4faf-9695-f9a327efb2fd/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/6c208afe-6af3-4faf-9695-f9a327efb2fd
+URL:https://auftragsregister.ch/it/auftrag/6c208afe-6af3-4faf-9695-f9a327ef
+ b2fd/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Réfection des collecteurs secondaires - Rues de la C
+ alle et du Bois Carrien et Avenue du Gros-Chêne à Onex
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

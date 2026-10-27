@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5d879e74-d7a3-487e-b43a-49e56a449866-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261203T130000Z
+SUMMARY:Scadenza: 01.517 Nuova centrale del freddo - Opere di riscaldamento
+ \, raffreddamento\, ventilazione e sanitario
+DESCRIPTION:Ente pubblico: Ente Ospedaliero Cantonale - Area Infrastrutture
+  e Operations\nScadenza: 03.12.2026\, 14:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/5d879e74-d7a3-487e-b43a-49e56a449866/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/5d879e74-d7a3-487e-b4
+ 3a-49e56a449866
+URL:https://auftragsregister.ch/it/auftrag/5d879e74-d7a3-487e-b43a-49e56a44
+ 9866/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 01.517 Nuova centrale del freddo - Opere di riscaldam
+ ento\, raffreddamento\, ventilazione e sanitario
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

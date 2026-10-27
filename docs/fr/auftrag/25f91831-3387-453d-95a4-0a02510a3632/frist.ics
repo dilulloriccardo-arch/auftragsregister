@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25f91831-3387-453d-95a4-0a02510a3632-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261119T140000Z
+SUMMARY:Délai de remise : Münchenstein - Emil Frey-Strasse / Baumeister
+ arbeiten Tiefbau
+DESCRIPTION:Acheteur public : Zentrale Beschaffungsstelle Kanton Basel-La
+ ndschaft\nDélai de remise : 19.11.2026\, 15 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/25f91831-3387-453d-95a4-0a0251
+ 0a3632/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /25f91831-3387-453d-95a4-0a02510a3632
+URL:https://auftragsregister.ch/fr/auftrag/25f91831-3387-453d-95a4-0a02510a
+ 3632/
+LOCATION:Münchenstein
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Münchenstein - Emil Frey-Strasse / Baumei
+ sterarbeiten Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

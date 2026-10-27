@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ad88939-e292-4aab-ae73-48e4df729fc6-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Scadenza: Extension du collège de Villars-Sainte-Croix - CFC 201.1
+ /211.4/211.5 - Terrassements/Canalisations/Béton
+DESCRIPTION:Ente pubblico: Commune de Villars-Sainte-Croix (Atelier Cube)\n
+ Scadenza: 24.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/1ad88939-e292-4aab-ae73-48e4df729fc6/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/1ad88939-e292-4aab-ae73-48e4df729fc6
+URL:https://auftragsregister.ch/it/auftrag/1ad88939-e292-4aab-ae73-48e4df72
+ 9fc6/
+LOCATION:Villars-Sainte-Croix
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Extension du collège de Villars-Sainte-Croix - CFC 2
+ 01.1/211.4/211.5 - Terrassements/Canalisations/Béton
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

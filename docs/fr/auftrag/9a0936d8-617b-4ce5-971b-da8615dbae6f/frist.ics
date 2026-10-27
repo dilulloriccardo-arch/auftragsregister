@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a0936d8-617b-4ce5-971b-da8615dbae6f-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Délai de remise : VE 31.09 Réfection de voie métrique « Finha
+ ut-Châtelard / KM 15.372 au KM 16.184 - KM 16.413 au KM 17.030 et KM 17.6
+ 82 au 17.766 : 1513m"
+DESCRIPTION:Acheteur public : Achats - TMR SA\nDélai de remise : 16.11
+ .2026\, 10 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/9a0936d8-617b-4ce5-971b-da8615dbae6f/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/9a0936d8-617b-4ce5-971b-da8615dbae6f
+URL:https://auftragsregister.ch/fr/auftrag/9a0936d8-617b-4ce5-971b-da8615db
+ ae6f/
+LOCATION:Finhaut
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : VE 31.09 Réfection de voie métrique « F
+ inhaut-Châtelard / KM 15.372 au KM 16.184 - KM 16.413 au KM 17.030 et KM 
+ 17.682 au 17.766 : 1513m"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

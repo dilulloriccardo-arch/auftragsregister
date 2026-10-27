@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:189737d4-8f58-4235-b38a-3d8c619a6f66-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Eingabefrist: Contrat cadre pour la founiture de divers matériels\
+ , licences et prestations CISCO
+DESCRIPTION:Auftraggeber: Centrale d'achats et d'ingénierie biomédicale (
+ CAIB)\nEingabefrist: 23.11.2026\nIm Register: https://auftragsregister.ch/
+ de/auftrag/189737d4-8f58-4235-b38a-3d8c619a6f66/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/189737d4-8f58-4235-b38a-3d8c619a6f66
+URL:https://auftragsregister.ch/de/auftrag/189737d4-8f58-4235-b38a-3d8c619a
+ 6f66/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Contrat cadre pour la founiture de divers matéri
+ els\, licences et prestations CISCO
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a81a1390-7135-4d2a-aa3a-94e14008f972-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261120T225500Z
+SUMMARY:Submission deadline: Entreprise de correction fluviale (ECF) de la 
+ Grande Eau - Traversée d'Aigle
+DESCRIPTION:Public buyer: Direction générale de l'environnement - DGE-EAU
+ \nSubmission deadline: 20 Nov 2026\, 23:55\nIn the register: https://auf
+ tragsregister.ch/en/auftrag/a81a1390-7135-4d2a-aa3a-94e14008f972/\nOfficia
+ l publication: https://www.simap.ch/en/project-detail/a81a1390-7135-4d2a-a
+ a3a-94e14008f972
+URL:https://auftragsregister.ch/en/auftrag/a81a1390-7135-4d2a-aa3a-94e14008
+ f972/
+LOCATION:Aigle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Entreprise de correction fluviale (ECF) de
+  la Grande Eau - Traversée d'Aigle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

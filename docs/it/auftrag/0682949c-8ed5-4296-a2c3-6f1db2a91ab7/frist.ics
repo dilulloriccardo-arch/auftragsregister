@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0682949c-8ed5-4296-a2c3-6f1db2a91ab7-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261110T160000Z
+SUMMARY:Scadenza: LIFT pilot project for drone-based postal delivery in Bhu
+ tan
+DESCRIPTION:Ente pubblico: Union postale universelle\nScadenza: 10.11.2026\
+ , 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/0682949c-8ed
+ 5-4296-a2c3-6f1db2a91ab7/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/0682949c-8ed5-4296-a2c3-6f1db2a91ab7
+URL:https://auftragsregister.ch/it/auftrag/0682949c-8ed5-4296-a2c3-6f1db2a9
+ 1ab7/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: LIFT pilot project for drone-based postal delivery in
+  Bhutan
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

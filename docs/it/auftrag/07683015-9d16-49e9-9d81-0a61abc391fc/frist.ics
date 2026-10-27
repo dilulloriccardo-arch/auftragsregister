@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07683015-9d16-49e9-9d81-0a61abc391fc-frist@auftragsregister.ch
+DTSTAMP:20260903T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Scadenza: Recherche d'une gestion d'affaires pour les instances jud
+ iciaires du Canton du Jura
+DESCRIPTION:Ente pubblico: DFNS - Service de l'informatique\nScadenza: 06.1
+ 1.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/07683
+ 015-9d16-49e9-9d81-0a61abc391fc/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/07683015-9d16-49e9-9d81-0a61abc391fc
+URL:https://auftragsregister.ch/it/auftrag/07683015-9d16-49e9-9d81-0a61abc3
+ 91fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Recherche d'une gestion d'affaires pour les instances
+  judiciaires du Canton du Jura
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

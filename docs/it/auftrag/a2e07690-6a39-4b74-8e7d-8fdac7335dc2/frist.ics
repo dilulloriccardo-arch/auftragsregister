@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a2e07690-6a39-4b74-8e7d-8fdac7335dc2-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Scadenza: MP-180002\, Erhaltungsmassnahmen Osttangente Basel / Baum
+ eister Abschnitt 2
+DESCRIPTION:Ente pubblico: Eidgenössisches Departement für Umwelt\, Verke
+ hr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung 
+ Strasseninfrastruktur-Ost - F3\nScadenza: 17.12.2026\, 23:59\nNel registro
+ : https://auftragsregister.ch/it/auftrag/a2e07690-6a39-4b74-8e7d-8fdac7335
+ dc2/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/a2e0
+ 7690-6a39-4b74-8e7d-8fdac7335dc2
+URL:https://auftragsregister.ch/it/auftrag/a2e07690-6a39-4b74-8e7d-8fdac733
+ 5dc2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-180002\, Erhaltungsmassnahmen Osttangente Basel / 
+ Baumeister Abschnitt 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ae327183-cf66-43ec-97b7-65b1797bab73-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Eingabefrist: Refit Tango Beschaffung und Integration neuer Aussena
+ nzeigen
+DESCRIPTION:Auftraggeber: Baselland Transport AG\nEingabefrist: 08.01.2027\
+ , 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ae327183
+ -cf66-43ec-97b7-65b1797bab73/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/ae327183-cf66-43ec-97b7-65b1797bab73
+URL:https://auftragsregister.ch/de/auftrag/ae327183-cf66-43ec-97b7-65b1797b
+ ab73/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Refit Tango Beschaffung und Integration neuer Aus
+ senanzeigen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

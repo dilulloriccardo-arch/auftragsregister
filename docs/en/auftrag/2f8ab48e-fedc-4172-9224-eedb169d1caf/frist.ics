@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2f8ab48e-fedc-4172-9224-eedb169d1caf-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261116T110026Z
+SUMMARY:Submission deadline: Server Hardware
+DESCRIPTION:Public buyer: Schweizer Paraplegiker Zentrum\nSubmission deadli
+ ne: 16 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/2f8ab48e-fedc-4172-9224-eedb169d1caf/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/2f8ab48e-fedc-4172-9224-eedb169d1caf
+URL:https://auftragsregister.ch/en/auftrag/2f8ab48e-fedc-4172-9224-eedb169d
+ 1caf/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Server Hardware
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4e48d54-2507-42a6-8de9-36f92d220665-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261111T110000Z
+SUMMARY:Délai de remise : Flachdachsanierung und Einbau einer PV-Anlage\
+ , Hirschgässlein 19 und 21\, Aeschengraben 20\, 4051 Basel
+DESCRIPTION:Acheteur public : Aedificura AG\, c/o Gebäudeversicherung Ba
+ sel-Stadt\nDélai de remise : 11.11.2026\, 12 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/b4e48d54-2507-42a6-8de9-36f92d
+ 220665/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /b4e48d54-2507-42a6-8de9-36f92d220665
+URL:https://auftragsregister.ch/fr/auftrag/b4e48d54-2507-42a6-8de9-36f92d22
+ 0665/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Flachdachsanierung und Einbau einer PV-Anl
+ age\, Hirschgässlein 19 und 21\, Aeschengraben 20\, 4051 Basel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

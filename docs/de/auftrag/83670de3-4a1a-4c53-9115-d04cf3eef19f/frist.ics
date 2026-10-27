@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83670de3-4a1a-4c53-9115-d04cf3eef19f-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:1
+DTSTART:20261214T170000Z
+SUMMARY:Eingabefrist: Beschaffung Ersatz Lüfterwagen Simplontunnel
+DESCRIPTION:Auftraggeber: Infrastruktur Flottenprojekte (I-ESP-FFM-FPJ)\nEi
+ ngabefrist: 14.12.2026\, 18.00 Uhr\nIm Register: https://auftragsregister
+ .ch/de/auftrag/83670de3-4a1a-4c53-9115-d04cf3eef19f/\nAmtliche Publikation
+ : https://www.simap.ch/de/project-detail/83670de3-4a1a-4c53-9115-d04cf3eef
+ 19f
+URL:https://auftragsregister.ch/de/auftrag/83670de3-4a1a-4c53-9115-d04cf3ee
+ f19f/
+LOCATION:Brig\, Tunnelstrasse 180
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung Ersatz Lüfterwagen Simplontunnel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

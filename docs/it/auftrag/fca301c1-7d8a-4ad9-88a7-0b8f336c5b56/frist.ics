@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fca301c1-7d8a-4ad9-88a7-0b8f336c5b56-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Scadenza: 297_Groupe scolaire des Grands Esserts_CFC 272 Serrurerie
+ /Portes salle de gym
+DESCRIPTION:Ente pubblico: Commune de Veyrier (Esposito + Javet arch.)\nSca
+ denza: 03.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/au
+ ftrag/fca301c1-7d8a-4ad9-88a7-0b8f336c5b56/\nPubblicazione ufficiale: http
+ s://www.simap.ch/it/project-detail/fca301c1-7d8a-4ad9-88a7-0b8f336c5b56
+URL:https://auftragsregister.ch/it/auftrag/fca301c1-7d8a-4ad9-88a7-0b8f336c
+ 5b56/
+LOCATION:Veyrier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 297_Groupe scolaire des Grands Esserts_CFC 272 Serrur
+ erie/Portes salle de gym
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

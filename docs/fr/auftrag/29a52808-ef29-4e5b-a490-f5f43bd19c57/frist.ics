@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:29a52808-ef29-4e5b-a490-f5f43bd19c57-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261112T130000Z
+SUMMARY:Délai de remise : BKP 230 Elektroinstallationen Weisses Schulhau
+ s Schulanlage 3422 Alchenflüh
+DESCRIPTION:Acheteur public : Atelier GSW Partner AG\nDélai de remise 
+ : 12.11.2026\, 14 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/29a52808-ef29-4e5b-a490-f5f43bd19c57/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/29a52808-ef29-4e5b-a490-f5f43
+ bd19c57
+URL:https://auftragsregister.ch/fr/auftrag/29a52808-ef29-4e5b-a490-f5f43bd1
+ 9c57/
+LOCATION:Rüdtligen- Alchenflüh
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 230 Elektroinstallationen Weisses Schu
+ lhaus Schulanlage 3422 Alchenflüh
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

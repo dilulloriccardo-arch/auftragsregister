@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f367bc18-6519-467d-b3dd-f37c344e0ee7-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261211T150000Z
+SUMMARY:Délai de remise : Sanierung Lempigenstrasse\, Wasen i.E.
+DESCRIPTION:Acheteur public : Gemeinde Sumiswald\nDélai de remise : 11
+ .12.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/f367bc18-6519-467d-b3dd-f37c344e0ee7/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/f367bc18-6519-467d-b3dd-f37c344e0
+ ee7
+URL:https://auftragsregister.ch/fr/auftrag/f367bc18-6519-467d-b3dd-f37c344e
+ 0ee7/
+LOCATION:Sumiswald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Lempigenstrasse\, Wasen i.E.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

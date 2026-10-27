@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7e0761e-99cf-4f2c-981e-6b0ef31094d5-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Délai de remise : Collège de Brique - Rénovation de l'internat
+  / CFC 283.2 Faux-plafonds en plâtre (tract sud)
+DESCRIPTION:Acheteur public : Departement für Finanzen und Energie\, Die
+ nststelle für Immobilien und Bauliches Erbe\nDélai de remise : 11.11.2
+ 026\nDans le registre : https://auftragsregister.ch/fr/auftrag/e7e0761e-
+ 99cf-4f2c-981e-6b0ef31094d5/\nPublication officielle : https://www.simap
+ .ch/fr/project-detail/e7e0761e-99cf-4f2c-981e-6b0ef31094d5
+URL:https://auftragsregister.ch/fr/auftrag/e7e0761e-99cf-4f2c-981e-6b0ef310
+ 94d5/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Collège de Brique - Rénovation de l'inte
+ rnat / CFC 283.2 Faux-plafonds en plâtre (tract sud)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

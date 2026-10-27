@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61d14e18-df2f-49a3-af47-799d5bd2731c-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Scadenza: Extension du dépôt Perrelet - Crépissage de façades
+DESCRIPTION:Ente pubblico: Transports publics de la région lausannoise SA 
+ - Ferrari Architectes\nScadenza: 07.12.2026\, 12:00\nNel registro: https:/
+ /auftragsregister.ch/it/auftrag/61d14e18-df2f-49a3-af47-799d5bd2731c/\nPub
+ blicazione ufficiale: https://www.simap.ch/it/project-detail/61d14e18-df2f
+ -49a3-af47-799d5bd2731c
+URL:https://auftragsregister.ch/it/auftrag/61d14e18-df2f-49a3-af47-799d5bd2
+ 731c/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Extension du dépôt Perrelet - Crépissage de façad
+ es
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

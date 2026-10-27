@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6819cc6b-9404-4199-9ce4-d2cfa3628297-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Délai de remise : Sanierung Rietstrasse\, Abschnitt Rötlistrass
+ e bis Rietsporthalle\, Benken
+DESCRIPTION:Acheteur public : Politische Gemeinde Benken\nDélai de remis
+ e : 16.11.2026\, 10 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/6819cc6b-9404-4199-9ce4-d2cfa3628297/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/6819cc6b-9404-4199-9ce4-d
+ 2cfa3628297
+URL:https://auftragsregister.ch/fr/auftrag/6819cc6b-9404-4199-9ce4-d2cfa362
+ 8297/
+LOCATION:Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Rietstrasse\, Abschnitt Rötlist
+ rasse bis Rietsporthalle\, Benken
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

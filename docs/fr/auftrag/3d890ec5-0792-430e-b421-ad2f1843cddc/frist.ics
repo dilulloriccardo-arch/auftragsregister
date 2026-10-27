@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d890ec5-0792-430e-b421-ad2f1843cddc-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : DSP AdServer Marketing
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Informati
+ k Einkauf\nDélai de remise : 30.11.2026\, 12 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/3d890ec5-0792-430e-b421-ad2f18
+ 43cddc/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /3d890ec5-0792-430e-b421-ad2f1843cddc
+URL:https://auftragsregister.ch/fr/auftrag/3d890ec5-0792-430e-b421-ad2f1843
+ cddc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : DSP AdServer Marketing
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

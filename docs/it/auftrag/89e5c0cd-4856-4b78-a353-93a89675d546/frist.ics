@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:89e5c0cd-4856-4b78-a353-93a89675d546-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Scadenza: Avenue de la Paix (2371TI) Génie civil\, ouvrage d'art\,
+  travaux hydraulique et chaussée et réseaux
+DESCRIPTION:Ente pubblico: Unité soumissions - Département de l'aménagem
+ ent\, des constructions et de la mobilité (DACM) de la Ville de Genève\n
+ Scadenza: 09.12.2026\, 11:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/89e5c0cd-4856-4b78-a353-93a89675d546/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/89e5c0cd-4856-4b78-a353-93a89675d546
+URL:https://auftragsregister.ch/it/auftrag/89e5c0cd-4856-4b78-a353-93a89675
+ d546/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Avenue de la Paix (2371TI) Génie civil\, ouvrage d'a
+ rt\, travaux hydraulique et chaussée et réseaux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

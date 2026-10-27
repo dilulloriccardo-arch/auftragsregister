@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:26cbadde-ee20-4d71-b255-54d079f81c82-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Submission deadline: 26118 - Travaux de menuiserie – façades ven
+ tilées en bois nécessaires à la rénovation et à la réhabilitation du
+  collège et du gymnase Acquarossa
+DESCRIPTION:Public buyer: Sezione della logistica - Servizio appalti\nSubmi
+ ssion deadline: 5 Nov 2026\, 16:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/26cbadde-ee20-4d71-b255-54d079f81c82/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/26cbadde-ee20-4d71-b255-54d0
+ 79f81c82
+URL:https://auftragsregister.ch/en/auftrag/26cbadde-ee20-4d71-b255-54d079f8
+ 1c82/
+LOCATION:Acquarossa
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 26118 - Travaux de menuiserie – façades
+  ventilées en bois nécessaires à la rénovation et à la réhabilitatio
+ n du collège et du gymnase Acquarossa
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

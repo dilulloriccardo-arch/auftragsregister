@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:732a8ddb-cacd-4b65-aa99-80d58a8d6dcc-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261102T225900Z
+SUMMARY:Scadenza: RV Server\, Zubehör und Zusatzservices
+DESCRIPTION:Ente pubblico: Kantonspolizei Bern\nScadenza: 02.11.2026\, 23:5
+ 9\nNel registro: https://auftragsregister.ch/it/auftrag/732a8ddb-cacd-4b65
+ -aa99-80d58a8d6dcc/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/732a8ddb-cacd-4b65-aa99-80d58a8d6dcc
+URL:https://auftragsregister.ch/it/auftrag/732a8ddb-cacd-4b65-aa99-80d58a8d
+ 6dcc/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: RV Server\, Zubehör und Zusatzservices
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

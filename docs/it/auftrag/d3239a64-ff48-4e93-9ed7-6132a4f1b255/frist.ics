@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3239a64-ff48-4e93-9ed7-6132a4f1b255-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Scadenza: Erklärvideos für die Abstimmungsinformationen der Stadt
+  Zürich
+DESCRIPTION:Ente pubblico: Stadtkanzlei Zürich\nScadenza: 26.11.2026\, 16:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/d3239a64-ff48-4e9
+ 3-9ed7-6132a4f1b255/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/d3239a64-ff48-4e93-9ed7-6132a4f1b255
+URL:https://auftragsregister.ch/it/auftrag/d3239a64-ff48-4e93-9ed7-6132a4f1
+ b255/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erklärvideos für die Abstimmungsinformationen der S
+ tadt Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

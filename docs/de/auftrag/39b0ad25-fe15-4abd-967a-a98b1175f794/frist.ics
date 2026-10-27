@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:39b0ad25-fe15-4abd-967a-a98b1175f794-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261110T100000Z
+SUMMARY:Eingabefrist: Extension du groupe scolaire de Corsier - AO CFC 221 
+ - Fenêtres et portes extérieures en bois
+DESCRIPTION:Auftraggeber: FdMP réalisation sa\nEingabefrist: 10.11.2026\, 
+ 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/39b0ad25-f
+ e15-4abd-967a-a98b1175f794/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/39b0ad25-fe15-4abd-967a-a98b1175f794
+URL:https://auftragsregister.ch/de/auftrag/39b0ad25-fe15-4abd-967a-a98b1175
+ f794/
+LOCATION:Corsier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Extension du groupe scolaire de Corsier - AO CFC 
+ 221 - Fenêtres et portes extérieures en bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

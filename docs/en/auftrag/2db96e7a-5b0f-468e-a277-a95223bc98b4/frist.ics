@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2db96e7a-5b0f-468e-a277-a95223bc98b4-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Submission deadline: Beschaffung Patientenportal
+DESCRIPTION:Public buyer: Universitätsklinik Balgrist\nSubmission deadline
+ : 20 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/2db96e7a-5b0f-468e-a277-a95223bc98b4/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/2db96e7a-5b0f-468e-a277-a95223bc98b4
+URL:https://auftragsregister.ch/en/auftrag/2db96e7a-5b0f-468e-a277-a95223bc
+ 98b4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung Patientenportal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

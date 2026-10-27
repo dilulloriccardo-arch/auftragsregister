@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d144bf51-86dc-4516-b0f3-0bf4cf1d48cb-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:1
+DTSTART:20261125T150000Z
+SUMMARY:Délai de remise : Manchons SMU\, SMU DN500 avec bagues\, SMU-R e
+ t SMU-S pour le réseau du gaz
+DESCRIPTION:Acheteur public : Ville de Lausanne – FIM - Service achat e
+ t logistique Ville (SALV)\nDélai de remise : 25.11.2026\, 16 h 00\n
+ Dans le registre : https://auftragsregister.ch/fr/auftrag/d144bf51-86dc-
+ 4516-b0f3-0bf4cf1d48cb/\nPublication officielle : https://www.simap.ch/f
+ r/project-detail/d144bf51-86dc-4516-b0f3-0bf4cf1d48cb
+URL:https://auftragsregister.ch/fr/auftrag/d144bf51-86dc-4516-b0f3-0bf4cf1d
+ 48cb/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Manchons SMU\, SMU DN500 avec bagues\, SMU
+ -R et SMU-S pour le réseau du gaz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

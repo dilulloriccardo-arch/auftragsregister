@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72c32ab1-ab0e-46ab-b10f-7dd8e3b00b35-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261213T225900Z
+SUMMARY:Eingabefrist: Abgasabsauganlage Thermische Fahrzeuge Halle West
+DESCRIPTION:Auftraggeber: Rhätische Bahn AG\nEingabefrist: 13.12.2026\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/72c32ab1-ab0
+ e-46ab-b10f-7dd8e3b00b35/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/72c32ab1-ab0e-46ab-b10f-7dd8e3b00b35
+URL:https://auftragsregister.ch/de/auftrag/72c32ab1-ab0e-46ab-b10f-7dd8e3b0
+ 0b35/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Abgasabsauganlage Thermische Fahrzeuge Halle West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

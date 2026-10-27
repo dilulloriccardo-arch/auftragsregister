@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aaadd07e-a78f-4d9f-92b5-08dd72acf53f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Eingabefrist: 09/591 Bergdietikon\, Sanierung Raistrasse / Steinack
+ erstrasse
+DESCRIPTION:Auftraggeber: Gemeinde Bergdietikon\nEingabefrist: 06.11.2026\,
+  23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/aaadd07e-
+ a78f-4d9f-92b5-08dd72acf53f/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/aaadd07e-a78f-4d9f-92b5-08dd72acf53f
+URL:https://auftragsregister.ch/de/auftrag/aaadd07e-a78f-4d9f-92b5-08dd72ac
+ f53f/
+LOCATION:Bergdietikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 09/591 Bergdietikon\, Sanierung Raistrasse / Stei
+ nackerstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

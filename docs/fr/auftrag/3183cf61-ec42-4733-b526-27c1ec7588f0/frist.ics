@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3183cf61-ec42-4733-b526-27c1ec7588f0-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T150000Z
+SUMMARY:Délai de remise : BAV 80926 Schulanlage Entlisberg\, Erweiterung
+  - CFC 212.2 Eléments préfabriqués en béton
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 11.11.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/3183cf61-ec42-4733-b526-27c1ec7588f0/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/3183cf61-ec42-4733-b
+ 526-27c1ec7588f0
+URL:https://auftragsregister.ch/fr/auftrag/3183cf61-ec42-4733-b526-27c1ec75
+ 88f0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 80926 Schulanlage Entlisberg\, Erweite
+ rung - CFC 212.2 Eléments préfabriqués en béton
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

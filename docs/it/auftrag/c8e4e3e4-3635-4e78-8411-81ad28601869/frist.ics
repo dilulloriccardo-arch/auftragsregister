@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8e4e3e4-3635-4e78-8411-81ad28601869-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Scadenza: Beschaffung: System zur Unkrautvernichtung
+DESCRIPTION:Ente pubblico: Rhätische Bahn AG\nScadenza: 09.12.2026\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/c8e4e3e4-3635-4e78-
+ 8411-81ad28601869/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/c8e4e3e4-3635-4e78-8411-81ad28601869
+URL:https://auftragsregister.ch/it/auftrag/c8e4e3e4-3635-4e78-8411-81ad2860
+ 1869/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung: System zur Unkrautvernichtung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8083061a-f3dc-43a5-94ac-a77361955550-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261029T130000Z
+SUMMARY:Scadenza: 02.512 Masterplan OSG 2025/2026 - Tappa 3 - Costruzione a
+  secco
+DESCRIPTION:Ente pubblico: Ente Ospedaliero Cantonale - Area Infrastrutture
+  e Operations\nScadenza: 29.10.2026\, 14:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/8083061a-f3dc-43a5-94ac-a77361955550/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/8083061a-f3dc-43a5-94
+ ac-a77361955550
+URL:https://auftragsregister.ch/it/auftrag/8083061a-f3dc-43a5-94ac-a7736195
+ 5550/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 02.512 Masterplan OSG 2025/2026 - Tappa 3 - Costruzio
+ ne a secco
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

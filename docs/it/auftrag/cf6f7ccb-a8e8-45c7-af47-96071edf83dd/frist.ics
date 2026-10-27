@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf6f7ccb-a8e8-45c7-af47-96071edf83dd-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261105T100000Z
+SUMMARY:Scadenza: Plateforme de Data Lakehouse institutionnelle pour les HU
+ G
+DESCRIPTION:Ente pubblico: Centrale d'achats et d'ingénierie biomédicale 
+ Vaud-Genève (CAIB)\nScadenza: 05.11.2026\, 11:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/cf6f7ccb-a8e8-45c7-af47-96071edf83dd/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/cf6f7ccb-a8e8-4
+ 5c7-af47-96071edf83dd
+URL:https://auftragsregister.ch/it/auftrag/cf6f7ccb-a8e8-45c7-af47-96071edf
+ 83dd/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Plateforme de Data Lakehouse institutionnelle pour le
+ s HUG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

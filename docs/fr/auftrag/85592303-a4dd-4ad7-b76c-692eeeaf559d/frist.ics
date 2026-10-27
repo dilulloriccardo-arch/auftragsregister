@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85592303-a4dd-4ad7-b76c-692eeeaf559d-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261117T103000Z
+SUMMARY:Délai de remise : AO : Vulgarisation alpestre / DGAV
+DESCRIPTION:Acheteur public : Département de l'agriculture\, de la durab
+ ilité et du climat et du numérique - Direction générale de l'agricultu
+ re\, de la viticulture et des affaires vétérinaires - DAGRI\nDélai de r
+ emise : 17.11.2026\, 11 h 30\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/85592303-a4dd-4ad7-b76c-692eeeaf559d/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/85592303-a4dd-4ad7-b7
+ 6c-692eeeaf559d
+URL:https://auftragsregister.ch/fr/auftrag/85592303-a4dd-4ad7-b76c-692eeeaf
+ 559d/
+LOCATION:Canton de Vaud
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AO : Vulgarisation alpestre / DGAV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

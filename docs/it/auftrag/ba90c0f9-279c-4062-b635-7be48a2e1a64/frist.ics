@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ba90c0f9-279c-4062-b635-7be48a2e1a64-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Scadenza: Progetto selvicolturale nel bosco di protezione del Comun
+ e di Manno\, tappa prioritaria Boschetti-Ronchetti: Opere da impresario fo
+ restale
+DESCRIPTION:Ente pubblico: Comune di Manno\nScadenza: 16.11.2026\, 11:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/ba90c0f9-279c-4062-b63
+ 5-7be48a2e1a64/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/ba90c0f9-279c-4062-b635-7be48a2e1a64
+URL:https://auftragsregister.ch/it/auftrag/ba90c0f9-279c-4062-b635-7be48a2e
+ 1a64/
+LOCATION:Manno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Progetto selvicolturale nel bosco di protezione del C
+ omune di Manno\, tappa prioritaria Boschetti-Ronchetti: Opere da impresari
+ o forestale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

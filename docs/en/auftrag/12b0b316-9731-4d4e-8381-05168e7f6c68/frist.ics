@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12b0b316-9731-4d4e-8381-05168e7f6c68-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261203T110000Z
+SUMMARY:Submission deadline: Projnum_C1 / Prestations de numérisation de c
+ ollections patrimoniales audiovisuelles
+DESCRIPTION:Public buyer: Centrale municipale d'achat et d'impression de la
+  Ville de Genève\nSubmission deadline: 3 Dec 2026\, 12:00\nIn the regis
+ ter: https://auftragsregister.ch/en/auftrag/12b0b316-9731-4d4e-8381-05168e
+ 7f6c68/\nOfficial publication: https://www.simap.ch/en/project-detail/12b0
+ b316-9731-4d4e-8381-05168e7f6c68
+URL:https://auftragsregister.ch/en/auftrag/12b0b316-9731-4d4e-8381-05168e7f
+ 6c68/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Projnum_C1 / Prestations de numérisation 
+ de collections patrimoniales audiovisuelles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

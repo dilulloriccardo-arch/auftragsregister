@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2ba1c175-a757-473c-b8ae-39e8fad318a1-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Scadenza: MP-160010\, N01/42\, 46 Verzw. ZH-Nord – Verzw. ZH-Ost 
+ – Verzw. Brüttisellen
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Filiale Winterth
+ ur\nScadenza: 09.11.2026\, 23:59\nNel registro: https://auftragsregister.c
+ h/it/auftrag/2ba1c175-a757-473c-b8ae-39e8fad318a1/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/2ba1c175-a757-473c-b8ae-39e8fad3
+ 18a1
+URL:https://auftragsregister.ch/it/auftrag/2ba1c175-a757-473c-b8ae-39e8fad3
+ 18a1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-160010\, N01/42\, 46 Verzw. ZH-Nord – Verzw. ZH-
+ Ost – Verzw. Brüttisellen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

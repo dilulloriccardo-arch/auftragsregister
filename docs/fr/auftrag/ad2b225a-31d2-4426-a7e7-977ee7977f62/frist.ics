@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ad2b225a-31d2-4426-a7e7-977ee7977f62-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Délai de remise : BVB - Ligne 127 – Gare de Bex\, Mise en conf
+ ormité LHand - Ingénieur civil – Phases SIA 41 – 53
+DESCRIPTION:Acheteur public : Transports publics du Chablais SA\nDélai d
+ e remise : 04.11.2026\, 12 h 00\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/ad2b225a-31d2-4426-a7e7-977ee7977f62/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/ad2b225a-31d2-4426
+ -a7e7-977ee7977f62
+URL:https://auftragsregister.ch/fr/auftrag/ad2b225a-31d2-4426-a7e7-977ee797
+ 7f62/
+LOCATION:Bex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BVB - Ligne 127 – Gare de Bex\, Mise en 
+ conformité LHand - Ingénieur civil – Phases SIA 41 – 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

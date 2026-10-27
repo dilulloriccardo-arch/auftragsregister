@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4743ff42-fb1d-44f2-adca-409de608d61f-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261028T160000Z
+SUMMARY:Délai de remise : Rénovation de la Bodensee-Arena – Devis pou
+ r la conception de la structure porteuse (construction en béton et en boi
+ s)
+DESCRIPTION:Acheteur public : Stadt Kreuzlingen\nDélai de remise : 28.
+ 10.2026\, 17 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/4743ff42-fb1d-44f2-adca-409de608d61f/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/4743ff42-fb1d-44f2-adca-409de608d6
+ 1f
+URL:https://auftragsregister.ch/fr/auftrag/4743ff42-fb1d-44f2-adca-409de608
+ d61f/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation de la Bodensee-Arena – Devis
+  pour la conception de la structure porteuse (construction en béton et en
+  bois)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edd20dcf-9c74-4946-a5a1-255c17c102dc-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Eingabefrist: BKP 263.0 Fassadenreinigungsanlagen - Reinigungsbrüc
+ ke
+DESCRIPTION:Auftraggeber: Flughafen Zürich AG - ELP\nEingabefrist: 24.11.2
+ 026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/edd2
+ 0dcf-9c74-4946-a5a1-255c17c102dc/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/edd20dcf-9c74-4946-a5a1-255c17c102dc
+URL:https://auftragsregister.ch/de/auftrag/edd20dcf-9c74-4946-a5a1-255c17c1
+ 02dc/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 263.0 Fassadenreinigungsanlagen - Reinigungsb
+ rücke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

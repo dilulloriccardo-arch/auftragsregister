@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:39057944-3db7-4f90-a60a-b9dac202a956-frist@auftragsregister.ch
+DTSTAMP:20260904T000000Z
+SEQUENCE:1
+DTSTART:20261109T225900Z
+SUMMARY:Délai de remise : SZU : nouveau réseau informatique : mise en p
+ lace et exploitation du réseau informatique
+DESCRIPTION:Acheteur public : Sihltal Zürich Uetliberg Bahn SZU AG\nDél
+ ai de remise : 09.11.2026\, 23 h 59\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/39057944-3db7-4f90-a60a-b9dac202a956/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/39057944-3db7-
+ 4f90-a60a-b9dac202a956
+URL:https://auftragsregister.ch/fr/auftrag/39057944-3db7-4f90-a60a-b9dac202
+ a956/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : SZU : nouveau réseau informatique : mise 
+ en place et exploitation du réseau informatique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

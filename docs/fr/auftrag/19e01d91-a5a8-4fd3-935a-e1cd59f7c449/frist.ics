@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:19e01d91-a5a8-4fd3-935a-e1cd59f7c449-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : Ausschreibung Heizung\, Sanitär\, Wannenbesch
+ ichtungen und Spezialarbeiten Sanitär – KAT.003
+DESCRIPTION:Acheteur public : ETHOS Immobilien GmbH\nDélai de remise :
+  09.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/19e01d91-a5a8-4fd3-935a-e1cd59f7c449/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/19e01d91-a5a8-4fd3-935a-e1cd59
+ f7c449
+URL:https://auftragsregister.ch/fr/auftrag/19e01d91-a5a8-4fd3-935a-e1cd59f7
+ c449/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung Heizung\, Sanitär\, Wannenb
+ eschichtungen und Spezialarbeiten Sanitär – KAT.003
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

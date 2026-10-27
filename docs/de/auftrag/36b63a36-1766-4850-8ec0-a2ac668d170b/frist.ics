@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:36b63a36-1766-4850-8ec0-a2ac668d170b-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Eingabefrist: Ressources Cheffes ou chefs de projet et Business Ana
+ lyst
+DESCRIPTION:Auftraggeber: Ville de Lausanne – LEA - Service d’organisat
+ ion et d’informatique (SOI)\nEingabefrist: 02.11.2026\, 16.00 Uhr\nIm R
+ egister: https://auftragsregister.ch/de/auftrag/36b63a36-1766-4850-8ec0-a2
+ ac668d170b/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/
+ 36b63a36-1766-4850-8ec0-a2ac668d170b
+URL:https://auftragsregister.ch/de/auftrag/36b63a36-1766-4850-8ec0-a2ac668d
+ 170b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ressources Cheffes ou chefs de projet et Business
+  Analyst
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

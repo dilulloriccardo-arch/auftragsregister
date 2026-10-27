@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f859b642-e5bb-427b-b164-0873fbcfa277-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261112T100000Z
+SUMMARY:Scadenza: Acquisition des licences de virtualisation et projet de m
+ igration pour la République et Canton du Jura
+DESCRIPTION:Ente pubblico: DFNS - Service de l'informatique\nScadenza: 12.1
+ 1.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/f859b
+ 642-e5bb-427b-b164-0873fbcfa277/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/f859b642-e5bb-427b-b164-0873fbcfa277
+URL:https://auftragsregister.ch/it/auftrag/f859b642-e5bb-427b-b164-0873fbcf
+ a277/
+LOCATION:Delémont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Acquisition des licences de virtualisation et projet 
+ de migration pour la République et Canton du Jura
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

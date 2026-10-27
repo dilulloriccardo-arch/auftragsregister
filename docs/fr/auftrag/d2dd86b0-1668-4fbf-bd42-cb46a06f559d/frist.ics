@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2dd86b0-1668-4fbf-bd42-cb46a06f559d-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Délai de remise : Remplacement d’un véhicule de damage pour l
+ e réseau de pistes de ski de fond de Pontresina
+DESCRIPTION:Acheteur public : Gemeinde Pontresina\nDélai de remise : 1
+ 6.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/d2dd86b0-1668-4fbf-bd42-cb46a06f559d/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/d2dd86b0-1668-4fbf-bd42-cb46a0
+ 6f559d
+URL:https://auftragsregister.ch/fr/auftrag/d2dd86b0-1668-4fbf-bd42-cb46a06f
+ 559d/
+LOCATION:Pontresina
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Remplacement d’un véhicule de damage po
+ ur le réseau de pistes de ski de fond de Pontresina
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

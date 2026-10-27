@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:65e6d607-1235-497d-9218-721c0909f5c9-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:1
+DTSTART:20261029T110000Z
+SUMMARY:Eingabefrist: Nettovest_A3 / Prestations de nettoyage des vestiaire
+ s et espaces attenants aux bassins de piscine
+DESCRIPTION:Auftraggeber: Centrale municipale d'achat et d'impression de la
+  Ville de Genève\nEingabefrist: 29.10.2026\, 12.00 Uhr\nIm Register: htt
+ ps://auftragsregister.ch/de/auftrag/65e6d607-1235-497d-9218-721c0909f5c9/\
+ nAmtliche Publikation: https://www.simap.ch/de/project-detail/65e6d607-123
+ 5-497d-9218-721c0909f5c9
+URL:https://auftragsregister.ch/de/auftrag/65e6d607-1235-497d-9218-721c0909
+ f5c9/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Nettovest_A3 / Prestations de nettoyage des vesti
+ aires et espaces attenants aux bassins de piscine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

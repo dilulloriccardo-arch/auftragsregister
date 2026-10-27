@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:303c21db-4c65-4b3d-bb85-9615b78ef0b4-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261029T110000Z
+SUMMARY:Eingabefrist: BFGS II Schule Oberentfelden\, BKP 244 Lufttechnische
+  Anlagen
+DESCRIPTION:Auftraggeber: Kanton Aargau - Departement Finanzen und Ressourc
+ en - Immobilien Aargau\nEingabefrist: 29.10.2026\, 12.00 Uhr\nIm Register
+ : https://auftragsregister.ch/de/auftrag/303c21db-4c65-4b3d-bb85-9615b78ef
+ 0b4/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/303c21d
+ b-4c65-4b3d-bb85-9615b78ef0b4
+URL:https://auftragsregister.ch/de/auftrag/303c21db-4c65-4b3d-bb85-9615b78e
+ f0b4/
+LOCATION:Oberentfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BFGS II Schule Oberentfelden\, BKP 244 Lufttechni
+ sche Anlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

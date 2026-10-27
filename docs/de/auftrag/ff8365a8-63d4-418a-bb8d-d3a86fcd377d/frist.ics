@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff8365a8-63d4-418a-bb8d-d3a86fcd377d-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Eingabefrist: Nouveau Dépôt et Atelier bus à Aigle - Planificati
+ on générale SIA 31 à 33 et optionnel SIA 41 à 53
+DESCRIPTION:Auftraggeber: Transports Publics du Chablais SA\nEingabefrist: 
+ 02.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/ff8365a8-63d4-418a-bb8d-d3a86fcd377d/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/ff8365a8-63d4-418a-bb8d-d3a86fcd377d
+URL:https://auftragsregister.ch/de/auftrag/ff8365a8-63d4-418a-bb8d-d3a86fcd
+ 377d/
+LOCATION:Aigle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Nouveau Dépôt et Atelier bus à Aigle - Planifi
+ cation générale SIA 31 à 33 et optionnel SIA 41 à 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

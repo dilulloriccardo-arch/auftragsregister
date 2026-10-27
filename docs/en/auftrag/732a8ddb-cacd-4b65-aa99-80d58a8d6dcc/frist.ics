@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:732a8ddb-cacd-4b65-aa99-80d58a8d6dcc-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261102T225900Z
+SUMMARY:Submission deadline: RV Server\, Zubehör und Zusatzservices
+DESCRIPTION:Public buyer: Kantonspolizei Bern\nSubmission deadline: 2 Nov
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/73
+ 2a8ddb-cacd-4b65-aa99-80d58a8d6dcc/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/732a8ddb-cacd-4b65-aa99-80d58a8d6dcc
+URL:https://auftragsregister.ch/en/auftrag/732a8ddb-cacd-4b65-aa99-80d58a8d
+ 6dcc/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: RV Server\, Zubehör und Zusatzservices
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

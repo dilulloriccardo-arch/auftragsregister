@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c599ee69-6b65-44c0-984c-806954fc3af2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Scadenza: MVR-N - Centre de maintenance matériel roulant à Montre
+ ux - Travaux de tirage de câbles et basse tension
+DESCRIPTION:Ente pubblico: Transports Montreux-Vevey-Riviera SA\nScadenza: 
+ 13.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/c
+ 599ee69-6b65-44c0-984c-806954fc3af2/\nPubblicazione ufficiale: https://www
+ .simap.ch/it/project-detail/c599ee69-6b65-44c0-984c-806954fc3af2
+URL:https://auftragsregister.ch/it/auftrag/c599ee69-6b65-44c0-984c-806954fc
+ 3af2/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MVR-N - Centre de maintenance matériel roulant à Mo
+ ntreux - Travaux de tirage de câbles et basse tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

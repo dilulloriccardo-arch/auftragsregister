@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a349ea01-f77a-4f90-8216-f087233ba3a8-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261030T110000Z
+SUMMARY:Délai de remise : Aggiudicazione del contratto di Assicurazione 
+ collettiva d'indennità giornaliera in caso di malattia
+DESCRIPTION:Acheteur public : Fondazione Opera Charitas\nDélai de remise
+  : 30.10.2026\, 12 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/a349ea01-f77a-4f90-8216-f087233ba3a8/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/a349ea01-f77a-4f90-8216-f0
+ 87233ba3a8
+URL:https://auftragsregister.ch/fr/auftrag/a349ea01-f77a-4f90-8216-f087233b
+ a3a8/
+LOCATION:Sonvico
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Aggiudicazione del contratto di Assicurazi
+ one collettiva d'indennità giornaliera in caso di malattia
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

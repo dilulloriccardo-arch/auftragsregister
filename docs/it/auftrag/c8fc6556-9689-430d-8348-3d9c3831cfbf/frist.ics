@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8fc6556-9689-430d-8348-3d9c3831cfbf-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Scadenza: Sanierung Neu- und Ausbau Stiegstrasse und Stiegweg - Ing
+ enieurleistung
+DESCRIPTION:Ente pubblico: Stadt Adliswil Planung Werke\nScadenza: 07.01.20
+ 27\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/c8fc6556-
+ 9689-430d-8348-3d9c3831cfbf/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/c8fc6556-9689-430d-8348-3d9c3831cfbf
+URL:https://auftragsregister.ch/it/auftrag/c8fc6556-9689-430d-8348-3d9c3831
+ cfbf/
+LOCATION:Adliswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Neu- und Ausbau Stiegstrasse und Stiegweg -
+  Ingenieurleistung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

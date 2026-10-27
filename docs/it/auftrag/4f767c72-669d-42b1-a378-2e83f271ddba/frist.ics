@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4f767c72-669d-42b1-a378-2e83f271ddba-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261110T110000Z
+SUMMARY:Scadenza: Früchtekorb
+DESCRIPTION:Ente pubblico: Basler Verkehrs-Betriebe (BVB)\nScadenza: 10.11.
+ 2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/4f767c7
+ 2-669d-42b1-a378-2e83f271ddba/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/4f767c72-669d-42b1-a378-2e83f271ddba
+URL:https://auftragsregister.ch/it/auftrag/4f767c72-669d-42b1-a378-2e83f271
+ ddba/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Früchtekorb
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

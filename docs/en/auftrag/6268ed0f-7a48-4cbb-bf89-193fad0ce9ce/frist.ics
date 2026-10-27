@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6268ed0f-7a48-4cbb-bf89-193fad0ce9ce-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:3
+DTSTART:20261113T110000Z
+SUMMARY:Submission deadline: Kantonales Personenregister für GERES-Communi
+ ty
+DESCRIPTION:Public buyer: GERES-Community\nSubmission deadline: 13 Nov 20
+ 26\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/6268ed
+ 0f-7a48-4cbb-bf89-193fad0ce9ce/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/6268ed0f-7a48-4cbb-bf89-193fad0ce9ce
+URL:https://auftragsregister.ch/en/auftrag/6268ed0f-7a48-4cbb-bf89-193fad0c
+ e9ce/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kantonales Personenregister für GERES-Com
+ munity
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

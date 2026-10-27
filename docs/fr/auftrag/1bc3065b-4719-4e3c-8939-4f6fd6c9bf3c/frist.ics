@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1bc3065b-4719-4e3c-8939-4f6fd6c9bf3c-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261104T100000Z
+SUMMARY:Délai de remise : Bâtiment d'art contemporain (2255TI-bis-2) ou
+ vrages métalliques édicule et casiers
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 04.11.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/1bc3065b-4719-4e3c-8939-4f6fd6c9bf3
+ c/\nPublication officielle : https://www.simap.ch/fr/project-detail/1bc3
+ 065b-4719-4e3c-8939-4f6fd6c9bf3c
+URL:https://auftragsregister.ch/fr/auftrag/1bc3065b-4719-4e3c-8939-4f6fd6c9
+ bf3c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bâtiment d'art contemporain (2255TI-bis-2
+ ) ouvrages métalliques édicule et casiers
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

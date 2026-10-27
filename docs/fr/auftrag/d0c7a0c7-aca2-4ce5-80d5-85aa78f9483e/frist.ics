@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0c7a0c7-aca2-4ce5-80d5-85aa78f9483e-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20261030T100000Z
+SUMMARY:Délai de remise : Rénovation/Transformation du CID de Malley / 
+ Station de lavage
+DESCRIPTION:Acheteur public : Ville de Lausanne - Service de la propreté
+  urbaine (Architram)\nDélai de remise : 30.10.2026\, 11 h 00\nDans 
+ le registre : https://auftragsregister.ch/fr/auftrag/d0c7a0c7-aca2-4ce5-
+ 80d5-85aa78f9483e/\nPublication officielle : https://www.simap.ch/fr/pro
+ ject-detail/d0c7a0c7-aca2-4ce5-80d5-85aa78f9483e
+URL:https://auftragsregister.ch/fr/auftrag/d0c7a0c7-aca2-4ce5-80d5-85aa78f9
+ 483e/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation/Transformation du CID de Malle
+ y / Station de lavage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

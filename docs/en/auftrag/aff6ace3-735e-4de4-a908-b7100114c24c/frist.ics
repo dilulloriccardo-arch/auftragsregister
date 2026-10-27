@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aff6ace3-735e-4de4-a908-b7100114c24c-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:0
+DTSTART:20261111T150054Z
+SUMMARY:Submission deadline: Mandat Versicherungsbroker
+DESCRIPTION:Public buyer: Verein Versicherungspool Rheintal c/o Gemeinde Wi
+ dnau\nSubmission deadline: 11 Nov 2026\, 16:00\nIn the register: https:/
+ /auftragsregister.ch/en/auftrag/aff6ace3-735e-4de4-a908-b7100114c24c/\nOff
+ icial publication: https://www.simap.ch/en/project-detail/aff6ace3-735e-4d
+ e4-a908-b7100114c24c
+URL:https://auftragsregister.ch/en/auftrag/aff6ace3-735e-4de4-a908-b7100114
+ c24c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mandat Versicherungsbroker
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

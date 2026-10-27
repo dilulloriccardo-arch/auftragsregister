@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a2530a3-27d6-40b6-bcfc-4211c0b1b6bd-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Scadenza: Cimetière de Confignon
+DESCRIPTION:Ente pubblico: Pôle aménagement et technique\nScadenza: 07.12
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/5a2530
+ a3-27d6-40b6-bcfc-4211c0b1b6bd/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/5a2530a3-27d6-40b6-bcfc-4211c0b1b6bd
+URL:https://auftragsregister.ch/it/auftrag/5a2530a3-27d6-40b6-bcfc-4211c0b1
+ b6bd/
+LOCATION:Confignon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Cimetière de Confignon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8d8a6e1d-ec44-4b5c-8cbc-326f09fb0008-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Eingabefrist: 2213 Neubau Alterswohnungen Sargans - Ausschreibung F
+ enster in Kunststoff
+DESCRIPTION:Auftraggeber: Ortsgemeinde Sargans (Architekten Zogg & Freuler)
+ \nEingabefrist: 04.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregi
+ ster.ch/de/auftrag/8d8a6e1d-ec44-4b5c-8cbc-326f09fb0008/\nAmtliche Publika
+ tion: https://www.simap.ch/de/project-detail/8d8a6e1d-ec44-4b5c-8cbc-326f0
+ 9fb0008
+URL:https://auftragsregister.ch/de/auftrag/8d8a6e1d-ec44-4b5c-8cbc-326f09fb
+ 0008/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 2213 Neubau Alterswohnungen Sargans - Ausschreibu
+ ng Fenster in Kunststoff
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

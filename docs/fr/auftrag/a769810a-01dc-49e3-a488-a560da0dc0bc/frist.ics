@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a769810a-01dc-49e3-a488-a560da0dc0bc-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Délai de remise : 281 03 Bodenbeläge aus Parkett und Linoleum
+DESCRIPTION:Acheteur public : Vollenweider Baurealisation GmbH\nDélai de
+  remise : 20.11.2026\, 15 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/a769810a-01dc-49e3-a488-a560da0dc0bc/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/a769810a-01dc-49e3-
+ a488-a560da0dc0bc
+URL:https://auftragsregister.ch/fr/auftrag/a769810a-01dc-49e3-a488-a560da0d
+ c0bc/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 281 03 Bodenbeläge aus Parkett und Linole
+ um
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

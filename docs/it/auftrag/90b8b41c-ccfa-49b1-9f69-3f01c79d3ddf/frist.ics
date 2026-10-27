@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90b8b41c-ccfa-49b1-9f69-3f01c79d3ddf-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T110011Z
+SUMMARY:Scadenza: Strategische & operative Beratung im Digital Marketing
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 16.11.202
+ 6\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/90b8b41c-c
+ cfa-49b1-9f69-3f01c79d3ddf/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/90b8b41c-ccfa-49b1-9f69-3f01c79d3ddf
+URL:https://auftragsregister.ch/it/auftrag/90b8b41c-ccfa-49b1-9f69-3f01c79d
+ 3ddf/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Strategische & operative Beratung im Digital Marketin
+ g
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

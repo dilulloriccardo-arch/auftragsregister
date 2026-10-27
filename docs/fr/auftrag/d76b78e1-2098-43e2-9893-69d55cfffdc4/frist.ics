@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d76b78e1-2098-43e2-9893-69d55cfffdc4-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Délai de remise : Construction du nouveau groupe scolaire primai
+ re et de la salle de sport Ferrach\, 8630 Rüti ZH - 214 Prestation global
+ e de construction en bois avec enveloppe du bâtiment
+DESCRIPTION:Acheteur public : Gemeinde Rüti ZH\nDélai de remise : 16.
+ 12.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/d76b78e1-2098-43e2-9893-69d55cfffdc4/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/d76b78e1-2098-43e2-9893-69d55cfffd
+ c4
+URL:https://auftragsregister.ch/fr/auftrag/d76b78e1-2098-43e2-9893-69d55cff
+ fdc4/
+LOCATION:Rüti ZH
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction du nouveau groupe scolaire pr
+ imaire et de la salle de sport Ferrach\, 8630 Rüti ZH - 214 Prestation gl
+ obale de construction en bois avec enveloppe du bâtiment
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

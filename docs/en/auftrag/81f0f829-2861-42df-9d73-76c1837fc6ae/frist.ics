@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81f0f829-2861-42df-9d73-76c1837fc6ae-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261116T140000Z
+SUMMARY:Submission deadline: Rahmenvertrag als Assistent des Bauherrn\, Reg
+ ion West
+DESCRIPTION:Public buyer: armasuisse Immobilien\nSubmission deadline: 16 N
+ ov 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 81f0f829-2861-42df-9d73-76c1837fc6ae/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/81f0f829-2861-42df-9d73-76c1837fc6ae
+URL:https://auftragsregister.ch/en/auftrag/81f0f829-2861-42df-9d73-76c1837f
+ c6ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rahmenvertrag als Assistent des Bauherrn\,
+  Region West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

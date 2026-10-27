@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8781067a-389f-4eea-adcb-8693067ce792-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T090000Z
+SUMMARY:Délai de remise : Concorso per l’aggiudicazione dei contratti 
+ di assicurazione indennità giornaliera collettiva in caso di malattia e c
+ omplementare alla LAINF (CLAINF)
+DESCRIPTION:Acheteur public : Fondazione Casa Anziani Regionale San Donat
+ o\nDélai de remise : 19.11.2026\, 10 h 00\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/8781067a-389f-4eea-adcb-8693067ce792/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/8781067
+ a-389f-4eea-adcb-8693067ce792
+URL:https://auftragsregister.ch/fr/auftrag/8781067a-389f-4eea-adcb-8693067c
+ e792/
+LOCATION:Intragna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Concorso per l’aggiudicazione dei contra
+ tti di assicurazione indennità giornaliera collettiva in caso di malattia
+  e complementare alla LAINF (CLAINF)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

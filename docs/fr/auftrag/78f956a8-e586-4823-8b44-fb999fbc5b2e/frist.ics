@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78f956a8-e586-4823-8b44-fb999fbc5b2e-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Délai de remise : CSUM2 - Réalisation d’un bâtiment dans le 
+ prolongement de la CSUM - Ferblanterie et Etanchéité
+DESCRIPTION:Acheteur public : Commune de Laténa (mch-consultants)\nDéla
+ i de remise : 04.12.2026\, 23 h 59\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/78f956a8-e586-4823-8b44-fb999fbc5b2e/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/78f956a8-e586-4
+ 823-8b44-fb999fbc5b2e
+URL:https://auftragsregister.ch/fr/auftrag/78f956a8-e586-4823-8b44-fb999fbc
+ 5b2e/
+LOCATION:Marin-Epagnier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CSUM2 - Réalisation d’un bâtiment dans
+  le prolongement de la CSUM - Ferblanterie et Etanchéité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

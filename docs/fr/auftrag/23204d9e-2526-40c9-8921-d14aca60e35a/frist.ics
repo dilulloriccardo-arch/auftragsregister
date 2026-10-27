@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23204d9e-2526-40c9-8921-d14aca60e35a-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261113T103000Z
+SUMMARY:Délai de remise : Beleuchtungsersatz und Umrüstung auf LED\, KU
+ SPO und VGG Volketswil
+DESCRIPTION:Acheteur public : Gemeinde Volketswil\nDélai de remise : 1
+ 3.11.2026\, 11 h 30\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/23204d9e-2526-40c9-8921-d14aca60e35a/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/23204d9e-2526-40c9-8921-d14aca
+ 60e35a
+URL:https://auftragsregister.ch/fr/auftrag/23204d9e-2526-40c9-8921-d14aca60
+ e35a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Beleuchtungsersatz und Umrüstung auf LED\
+ , KUSPO und VGG Volketswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

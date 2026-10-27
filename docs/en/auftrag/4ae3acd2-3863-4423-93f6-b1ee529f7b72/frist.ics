@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4ae3acd2-3863-4423-93f6-b1ee529f7b72-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Submission deadline: KZO l Leuchtenersatz l BKP 233-01 Leuchten
+DESCRIPTION:Public buyer: Hochbauamt\, Baubereich B\nSubmission deadline: 6
+  Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/4ae3acd2-3863-4423-93f6-b1ee529f7b72/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/4ae3acd2-3863-4423-93f6-b1ee529f7b72
+URL:https://auftragsregister.ch/en/auftrag/4ae3acd2-3863-4423-93f6-b1ee529f
+ 7b72/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: KZO l Leuchtenersatz l BKP 233-01 Leuchten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

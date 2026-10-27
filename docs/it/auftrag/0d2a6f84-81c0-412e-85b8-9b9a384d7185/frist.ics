@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d2a6f84-81c0-412e-85b8-9b9a384d7185-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Scadenza: Gesamtprojekt St. Anna-Strasse - Bellerivehöhe - Schlös
+ slihalde
+DESCRIPTION:Ente pubblico: Stadt Luzern\, Umwelt- und Mobilitätsdirektion\
+ , Tiefbauamt\nScadenza: 24.11.2026\, 12:00\nNel registro: https://auftrags
+ register.ch/it/auftrag/0d2a6f84-81c0-412e-85b8-9b9a384d7185/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/0d2a6f84-81c0-412e-85b
+ 8-9b9a384d7185
+URL:https://auftragsregister.ch/it/auftrag/0d2a6f84-81c0-412e-85b8-9b9a384d
+ 7185/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gesamtprojekt St. Anna-Strasse - Bellerivehöhe - Sch
+ lösslihalde
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

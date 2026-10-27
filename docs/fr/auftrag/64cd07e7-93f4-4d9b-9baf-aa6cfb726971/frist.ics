@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:64cd07e7-93f4-4d9b-9baf-aa6cfb726971-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261203T154500Z
+SUMMARY:Délai de remise : Flumenthal\, Etablissement pénitentiaire cent
+ ral\, Canton de Soleure (ZGSO) – Nouvelle construction / CFC 413.31 Clô
+ ture avec portes er portails
+DESCRIPTION:Acheteur public : Kanton Solothurn\, Bau- und Justizdeparteme
+ nt\, Hochbauamt\nDélai de remise : 03.12.2026\, 16 h 45\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/64cd07e7-93f4-4d9b-9baf-
+ aa6cfb726971/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/64cd07e7-93f4-4d9b-9baf-aa6cfb726971
+URL:https://auftragsregister.ch/fr/auftrag/64cd07e7-93f4-4d9b-9baf-aa6cfb72
+ 6971/
+LOCATION:Flumenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Flumenthal\, Etablissement pénitentiaire 
+ central\, Canton de Soleure (ZGSO) – Nouvelle construction / CFC 413.31 
+ Clôture avec portes er portails
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

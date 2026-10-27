@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:97d6d3f6-8502-4eaf-81a6-71307e3669e9-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261202T103000Z
+SUMMARY:Délai de remise : Neubau Schul-\, Sport- und Freizeitanlage Maih
+ of I BKP 250
+DESCRIPTION:Acheteur public : Gemeinde Feusisberg\nDélai de remise : 0
+ 2.12.2026\, 11 h 30\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/97d6d3f6-8502-4eaf-81a6-71307e3669e9/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/97d6d3f6-8502-4eaf-81a6-71307e
+ 3669e9
+URL:https://auftragsregister.ch/fr/auftrag/97d6d3f6-8502-4eaf-81a6-71307e36
+ 69e9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Schul-\, Sport- und Freizeitanlage 
+ Maihof I BKP 250
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

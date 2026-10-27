@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69b121a8-b0a5-487a-9c76-b559b0eacd13-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261123T083000Z
+SUMMARY:Submission deadline: Sagendorfstrasse\, Emmetten\, Baumeister- und 
+ Belagsarbeiten
+DESCRIPTION:Public buyer: Politische Gemeinde Emmetten\nSubmission deadline
+ : 23 Nov 2026\, 09:30\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/69b121a8-b0a5-487a-9c76-b559b0eacd13/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/69b121a8-b0a5-487a-9c76-b559b0eacd13
+URL:https://auftragsregister.ch/en/auftrag/69b121a8-b0a5-487a-9c76-b559b0ea
+ cd13/
+LOCATION:Emmetten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sagendorfstrasse\, Emmetten\, Baumeister- 
+ und Belagsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

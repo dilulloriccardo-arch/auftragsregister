@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4540c545-0716-4cbf-bb05-b59d0aa4ea9b-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T225901Z
+SUMMARY:Eingabefrist: AS_2026_001 Dienstleistungspartnerin für die USV- un
+ d Kühlanlagen der FHNW Datacenter-Infrastrukturen
+DESCRIPTION:Auftraggeber: Fachhochschule Nordwestschweiz FHNW\nEingabefrist
+ : 27.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/4540c545-0716-4cbf-bb05-b59d0aa4ea9b/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/4540c545-0716-4cbf-bb05-b59d0aa4ea9b
+URL:https://auftragsregister.ch/de/auftrag/4540c545-0716-4cbf-bb05-b59d0aa4
+ ea9b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AS_2026_001 Dienstleistungspartnerin für die USV
+ - und Kühlanlagen der FHNW Datacenter-Infrastrukturen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

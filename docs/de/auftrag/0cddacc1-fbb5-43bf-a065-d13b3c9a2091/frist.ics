@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0cddacc1-fbb5-43bf-a065-d13b3c9a2091-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261103T225900Z
+SUMMARY:Eingabefrist: Prestations d’agents de sécurité – Dispositifs 
+ multisites / UAAJ/sécurité auditions « Le Constellation »
+DESCRIPTION:Auftraggeber: Police Cantonale Valaisanne / Kantonspolizei Wall
+ is\nEingabefrist: 03.11.2026\, 23.59 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/0cddacc1-fbb5-43bf-a065-d13b3c9a2091/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/0cddacc1-fbb5-43bf-a065-d13
+ b3c9a2091
+URL:https://auftragsregister.ch/de/auftrag/0cddacc1-fbb5-43bf-a065-d13b3c9a
+ 2091/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Prestations d’agents de sécurité – Disposit
+ ifs multisites / UAAJ/sécurité auditions « Le Constellation »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bafc3593-9e67-4538-8047-3895ee38f241-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261109T090000Z
+SUMMARY:Eingabefrist: Fond Mobile de la piscine du Martinet – Rolle
+DESCRIPTION:Auftraggeber: Enfance et Jeunesse ENJEU - Association Intercomm
+ unale de Rolle et Environs (bureau d'ingénieurs-conseils Energestion SA)\
+ nEingabefrist: 09.11.2026\, 10.00 Uhr\nIm Register: https://auftragsregis
+ ter.ch/de/auftrag/bafc3593-9e67-4538-8047-3895ee38f241/\nAmtliche Publikat
+ ion: https://www.simap.ch/de/project-detail/bafc3593-9e67-4538-8047-3895ee
+ 38f241
+URL:https://auftragsregister.ch/de/auftrag/bafc3593-9e67-4538-8047-3895ee38
+ f241/
+LOCATION:Rolle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fond Mobile de la piscine du Martinet – Rolle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

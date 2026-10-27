@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f0d7335f-c7a3-4f40-b6da-0ba2a18c58f7-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:3
+DTSTART:20261102T225900Z
+SUMMARY:Eingabefrist: Projektverfasser Bahnhof Marin Epagnier
+DESCRIPTION:Auftraggeber: BLS AG - Finance & SCM - Strategische Beschaffung
+ \nEingabefrist: 02.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregi
+ ster.ch/de/auftrag/f0d7335f-c7a3-4f40-b6da-0ba2a18c58f7/\nAmtliche Publika
+ tion: https://www.simap.ch/de/project-detail/f0d7335f-c7a3-4f40-b6da-0ba2a
+ 18c58f7
+URL:https://auftragsregister.ch/de/auftrag/f0d7335f-c7a3-4f40-b6da-0ba2a18c
+ 58f7/
+LOCATION:Marin-Epagnier / Neuenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projektverfasser Bahnhof Marin Epagnier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

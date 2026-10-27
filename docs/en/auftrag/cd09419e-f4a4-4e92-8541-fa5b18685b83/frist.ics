@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cd09419e-f4a4-4e92-8541-fa5b18685b83-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Submission deadline: Gesamtsanierung Kaserne Auenfeld\, Wpl Frauenf
+ eld\, 3. Etappe\, BKP 281.0 Unterlagsböden und Hartbetonbeläge\, (Unterk
+ unftsgebäude UE)
+DESCRIPTION:Public buyer: armasuisse Immobilien\nSubmission deadline: 6 No
+ v 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/c
+ d09419e-f4a4-4e92-8541-fa5b18685b83/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/cd09419e-f4a4-4e92-8541-fa5b18685b83
+URL:https://auftragsregister.ch/en/auftrag/cd09419e-f4a4-4e92-8541-fa5b1868
+ 5b83/
+LOCATION:Frauenfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gesamtsanierung Kaserne Auenfeld\, Wpl Fra
+ uenfeld\, 3. Etappe\, BKP 281.0 Unterlagsböden und Hartbetonbeläge\, (Un
+ terkunftsgebäude UE)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

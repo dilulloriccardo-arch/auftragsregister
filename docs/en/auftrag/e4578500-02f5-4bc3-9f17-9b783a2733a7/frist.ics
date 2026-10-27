@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4578500-02f5-4bc3-9f17-9b783a2733a7-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261124T130000Z
+SUMMARY:Submission deadline: KS 4774 - Kreuzlingen\, Ausbau Bushof
+DESCRIPTION:Public buyer: Stadt Kreuzlingen\, Bauverwaltung (Planimpuls AG)
+ \nSubmission deadline: 24 Nov 2026\, 14:00\nIn the register: https://auf
+ tragsregister.ch/en/auftrag/e4578500-02f5-4bc3-9f17-9b783a2733a7/\nOfficia
+ l publication: https://www.simap.ch/en/project-detail/e4578500-02f5-4bc3-9
+ f17-9b783a2733a7
+URL:https://auftragsregister.ch/en/auftrag/e4578500-02f5-4bc3-9f17-9b783a27
+ 33a7/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: KS 4774 - Kreuzlingen\, Ausbau Bushof
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

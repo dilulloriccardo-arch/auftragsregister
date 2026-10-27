@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ac70a2b-31b7-494e-a23f-7225dc414312-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Eingabefrist: VEB Verdrängungen B10 / B - BKP 261 Aufzugsanlagen (
+ Gastro / Staff)
+DESCRIPTION:Auftraggeber: Flughafen Zürich AG\nEingabefrist: 27.11.2026\, 
+ 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0ac70a2b-3
+ 1b7-494e-a23f-7225dc414312/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/0ac70a2b-31b7-494e-a23f-7225dc414312
+URL:https://auftragsregister.ch/de/auftrag/0ac70a2b-31b7-494e-a23f-7225dc41
+ 4312/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: VEB Verdrängungen B10 / B - BKP 261 Aufzugsanlag
+ en (Gastro / Staff)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

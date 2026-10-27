@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76dd7c54-7973-48e7-ae87-2376675acb99-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:0
+DTSTART:20261102T130000Z
+SUMMARY:Scadenza: Umfahrung Cham–Hünenberg (UCH)\, Bodenaufwertung
+DESCRIPTION:Ente pubblico: Tiefbauamt Kanton Zug\nScadenza: 02.11.2026\, 14
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/76dd7c54-7973-48
+ e7-ae87-2376675acb99/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/76dd7c54-7973-48e7-ae87-2376675acb99
+URL:https://auftragsregister.ch/it/auftrag/76dd7c54-7973-48e7-ae87-2376675a
+ cb99/
+LOCATION:Cham
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Umfahrung Cham–Hünenberg (UCH)\, Bodenaufwertung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

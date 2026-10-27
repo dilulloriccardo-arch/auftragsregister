@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ad2b225a-31d2-4426-a7e7-977ee7977f62-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Scadenza: BVB - Ligne 127 – Gare de Bex\, Mise en conformité LHa
+ nd - Ingénieur civil – Phases SIA 41 – 53
+DESCRIPTION:Ente pubblico: Transports publics du Chablais SA\nScadenza: 04.
+ 11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/ad2b
+ 225a-31d2-4426-a7e7-977ee7977f62/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/ad2b225a-31d2-4426-a7e7-977ee7977f62
+URL:https://auftragsregister.ch/it/auftrag/ad2b225a-31d2-4426-a7e7-977ee797
+ 7f62/
+LOCATION:Bex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BVB - Ligne 127 – Gare de Bex\, Mise en conformité
+  LHand - Ingénieur civil – Phases SIA 41 – 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

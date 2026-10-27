@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3e44fbd-b371-4d22-9caf-c24b05684e25-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Submission deadline: Baumeisterarbeiten - Unterwerk Handeck
+DESCRIPTION:Public buyer: Swissgrid AG - Engineering & Construction\nSubmis
+ sion deadline: 17 Nov 2026\, 23:59\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/e3e44fbd-b371-4d22-9caf-c24b05684e25/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/e3e44fbd-b371-4d22-9caf-c24b
+ 05684e25
+URL:https://auftragsregister.ch/en/auftrag/e3e44fbd-b371-4d22-9caf-c24b0568
+ 4e25/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Baumeisterarbeiten - Unterwerk Handeck
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a480271a-18e1-42a5-9d03-db9d74b4fd3d-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Submission deadline: Réfection installation électrique - Château
+  de St-Maurice - CFC 23 installation électrique
+DESCRIPTION:Public buyer: Service immobilier et patrimoine - Gérance et en
+ tretien d'immeuble (GEI)\nSubmission deadline: 13 Nov 2026\nIn the regis
+ ter: https://auftragsregister.ch/en/auftrag/a480271a-18e1-42a5-9d03-db9d74
+ b4fd3d/\nOfficial publication: https://www.simap.ch/en/project-detail/a480
+ 271a-18e1-42a5-9d03-db9d74b4fd3d
+URL:https://auftragsregister.ch/en/auftrag/a480271a-18e1-42a5-9d03-db9d74b4
+ fd3d/
+LOCATION:St-Maurice
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Réfection installation électrique - Châ
+ teau de St-Maurice - CFC 23 installation électrique
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

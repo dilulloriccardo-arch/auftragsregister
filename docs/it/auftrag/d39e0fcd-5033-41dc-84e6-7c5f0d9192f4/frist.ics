@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d39e0fcd-5033-41dc-84e6-7c5f0d9192f4-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261110T225900Z
+SUMMARY:Scadenza: KI-Expertendienstleistungen
+DESCRIPTION:Ente pubblico: Informatik und Logistik\nScadenza: 10.11.2026\, 
+ 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/d39e0fcd-5033-
+ 41dc-84e6-7c5f0d9192f4/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/d39e0fcd-5033-41dc-84e6-7c5f0d9192f4
+URL:https://auftragsregister.ch/it/auftrag/d39e0fcd-5033-41dc-84e6-7c5f0d91
+ 92f4/
+LOCATION:Biel/Bienne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: KI-Expertendienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

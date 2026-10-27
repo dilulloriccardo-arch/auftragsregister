@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:48c0a236-ba26-4051-8e55-487a5dbbad43-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Eingabefrist: Campus Horw\, Realisierung Erneuerung und Erweiterung
+ \, BKP 171 Pfähle
+DESCRIPTION:Auftraggeber: Kanton Luzern\, Dienststelle Immobilien\nEingabef
+ rist: 02.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/48c0a236-ba26-4051-8e55-487a5dbbad43/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/48c0a236-ba26-4051-8e55-487a5dbbad43
+URL:https://auftragsregister.ch/de/auftrag/48c0a236-ba26-4051-8e55-487a5dbb
+ ad43/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Campus Horw\, Realisierung Erneuerung und Erweite
+ rung\, BKP 171 Pfähle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

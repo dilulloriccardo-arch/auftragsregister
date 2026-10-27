@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6b93ebe-db1c-4960-a2b8-efdc5ec100b5-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261112T225900Z
+SUMMARY:Scadenza: Baumeisterarbeiten Deckbelagserneuerung Hauptstrasse Ober
+ ried
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 12.11.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/d6b93ebe-d
+ b1c-4960-a2b8-efdc5ec100b5/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/d6b93ebe-db1c-4960-a2b8-efdc5ec100b5
+URL:https://auftragsregister.ch/it/auftrag/d6b93ebe-db1c-4960-a2b8-efdc5ec1
+ 00b5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Baumeisterarbeiten Deckbelagserneuerung Hauptstrasse 
+ Oberried
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

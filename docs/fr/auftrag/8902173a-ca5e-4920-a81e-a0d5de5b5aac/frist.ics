@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8902173a-ca5e-4920-a81e-a0d5de5b5aac-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Délai de remise : Rénovation école du Bosson - Menuiserie
+DESCRIPTION:Acheteur public : Ville d'Onex (Bureau d'architectes Burckhar
+ dt Architecture SA)\nDélai de remise : 24.11.2026\, 12 h 00\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/8902173a-ca5e-4920-a
+ 81e-a0d5de5b5aac/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/8902173a-ca5e-4920-a81e-a0d5de5b5aac
+URL:https://auftragsregister.ch/fr/auftrag/8902173a-ca5e-4920-a81e-a0d5de5b
+ 5aac/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation école du Bosson - Menuiserie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

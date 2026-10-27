@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86edd90f-9a92-4a82-b3b6-ccf9b9e52be8-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Scadenza: Schulhaus Langwiesen Erweiterung und Sanierung\; BKP 201 
+ Aushub
+DESCRIPTION:Ente pubblico: Amt für Städtebau\nScadenza: 04.11.2026\, 12:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/86edd90f-9a92-4a82
+ -b3b6-ccf9b9e52be8/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/86edd90f-9a92-4a82-b3b6-ccf9b9e52be8
+URL:https://auftragsregister.ch/it/auftrag/86edd90f-9a92-4a82-b3b6-ccf9b9e5
+ 2be8/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulhaus Langwiesen Erweiterung und Sanierung\; BKP 
+ 201 Aushub
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

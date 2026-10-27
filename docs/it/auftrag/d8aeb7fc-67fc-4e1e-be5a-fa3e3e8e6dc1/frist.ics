@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e6dc1-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T153000Z
+SUMMARY:Scadenza: UNI - BASTIONS Central _ CFC373.00 - Sièges rabattables
+DESCRIPTION:Ente pubblico: Office Cantonale des Bâtiments (OCBA) - Poolail
+ es\nScadenza: 23.11.2026\, 16:30\nNel registro: https://auftragsregister.c
+ h/it/auftrag/d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e6dc1/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e
+ 6dc1
+URL:https://auftragsregister.ch/it/auftrag/d8aeb7fc-67fc-4e1e-be5a-fa3e3e8e
+ 6dc1/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: UNI - BASTIONS Central _ CFC373.00 - Sièges rabattab
+ les
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

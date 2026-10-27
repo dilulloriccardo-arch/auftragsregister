@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49af4d1c-7e61-495d-97f0-e48a17ee4838-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T090000Z
+SUMMARY:Scadenza: Alésage du tunnel MOB de Montreux
+DESCRIPTION:Ente pubblico: Compagnie du Chemin de fer Montreux Oberland ber
+ nois SA - Infrastructure Projets\nScadenza: 04.11.2026\, 10:00\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/49af4d1c-7e61-495d-97f0-e48a17e
+ e4838/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/49
+ af4d1c-7e61-495d-97f0-e48a17ee4838
+URL:https://auftragsregister.ch/it/auftrag/49af4d1c-7e61-495d-97f0-e48a17ee
+ 4838/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Alésage du tunnel MOB de Montreux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

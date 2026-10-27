@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:907b05a3-83a5-4403-bac9-f75ba6892936-frist@auftragsregister.ch
+DTSTAMP:20260819T000000Z
+SEQUENCE:0
+DTSTART:20261118T225900Z
+SUMMARY:Eingabefrist: Projekt Mitholz: Probenahme und Messungen an Grundwas
+ ser und Oberflächengewässern 2027-2037
+DESCRIPTION:Auftraggeber: armasuisse Immobilien\nEingabefrist: 18.11.2026\,
+  23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/907b05a3-
+ 83a5-4403-bac9-f75ba6892936/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/907b05a3-83a5-4403-bac9-f75ba6892936
+URL:https://auftragsregister.ch/de/auftrag/907b05a3-83a5-4403-bac9-f75ba689
+ 2936/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projekt Mitholz: Probenahme und Messungen an Grun
+ dwasser und Oberflächengewässern 2027-2037
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

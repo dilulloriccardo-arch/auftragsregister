@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8575e40d-cf50-4efd-bd34-3f96e742a8d3-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T100000Z
+SUMMARY:Délai de remise : 0241.301-51 - Comune di Lugano - Sistemazione 
+ area Stazione FFS – Comparto Besso - Installations CVCS
+DESCRIPTION:Acheteur public : Ufficio delle commesse pubbliche e della pr
+ ogrammazione\nDélai de remise : 04.11.2026\, 11 h 00\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/8575e40d-cf50-4efd-bd34-3f9
+ 6e742a8d3/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/8575e40d-cf50-4efd-bd34-3f96e742a8d3
+URL:https://auftragsregister.ch/fr/auftrag/8575e40d-cf50-4efd-bd34-3f96e742
+ a8d3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 0241.301-51 - Comune di Lugano - Sistemazi
+ one area Stazione FFS – Comparto Besso - Installations CVCS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2d9b1e58-7716-473b-a121-cb8b5589ab4a-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261109T225900Z
+SUMMARY:Délai de remise : Client-Hardware
+DESCRIPTION:Acheteur public : Switch\nDélai de remise : 09.11.2026\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/2d
+ 9b1e58-7716-473b-a121-cb8b5589ab4a/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/2d9b1e58-7716-473b-a121-cb8b5589ab4a
+URL:https://auftragsregister.ch/fr/auftrag/2d9b1e58-7716-473b-a121-cb8b5589
+ ab4a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Client-Hardware
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

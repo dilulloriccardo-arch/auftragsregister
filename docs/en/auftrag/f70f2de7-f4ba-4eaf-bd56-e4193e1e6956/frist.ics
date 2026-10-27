@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f70f2de7-f4ba-4eaf-bd56-e4193e1e6956-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261030T150000Z
+SUMMARY:Submission deadline: Engine and propulsion systems replacement with
+  shaft system upgrade and other services
+DESCRIPTION:Public buyer: Schweizerische Schifffahrtsgesellschaft URh\nSubm
+ ission deadline: 30 Oct 2026\, 16:00\nIn the register: https://auftragsr
+ egister.ch/en/auftrag/f70f2de7-f4ba-4eaf-bd56-e4193e1e6956/\nOfficial publ
+ ication: https://www.simap.ch/en/project-detail/f70f2de7-f4ba-4eaf-bd56-e4
+ 193e1e6956
+URL:https://auftragsregister.ch/en/auftrag/f70f2de7-f4ba-4eaf-bd56-e4193e1e
+ 6956/
+LOCATION:Langwiesen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Engine and propulsion systems replacement 
+ with shaft system upgrade and other services
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

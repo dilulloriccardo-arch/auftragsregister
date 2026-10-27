@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c599ee69-6b65-44c0-984c-806954fc3af2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Délai de remise : MVR-N - Centre de maintenance matériel roulan
+ t à Montreux - Travaux de tirage de câbles et basse tension
+DESCRIPTION:Acheteur public : Transports Montreux-Vevey-Riviera SA\nDéla
+ i de remise : 13.11.2026\, 12 h 00\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/c599ee69-6b65-44c0-984c-806954fc3af2/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/c599ee69-6b65-4
+ 4c0-984c-806954fc3af2
+URL:https://auftragsregister.ch/fr/auftrag/c599ee69-6b65-44c0-984c-806954fc
+ 3af2/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MVR-N - Centre de maintenance matériel ro
+ ulant à Montreux - Travaux de tirage de câbles et basse tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

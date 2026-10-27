@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ba6a12a-0bc2-4080-95a3-00091b46370c-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261201T110000Z
+SUMMARY:Scadenza: Berufliche Integrationsbegleitung (BIG)
+DESCRIPTION:Ente pubblico: Amt für Wirtschaft und Arbeit\, Abteilung LAM\n
+ Scadenza: 01.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/7ba6a12a-0bc2-4080-95a3-00091b46370c/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/7ba6a12a-0bc2-4080-95a3-00091b46370c
+URL:https://auftragsregister.ch/it/auftrag/7ba6a12a-0bc2-4080-95a3-00091b46
+ 370c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Berufliche Integrationsbegleitung (BIG)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

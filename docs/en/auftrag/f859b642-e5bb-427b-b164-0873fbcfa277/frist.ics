@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f859b642-e5bb-427b-b164-0873fbcfa277-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261112T100000Z
+SUMMARY:Submission deadline: Acquisition des licences de virtualisation et 
+ projet de migration pour la République et Canton du Jura
+DESCRIPTION:Public buyer: DFNS - Service de l'informatique\nSubmission dead
+ line: 12 Nov 2026\, 11:00\nIn the register: https://auftragsregister.ch/
+ en/auftrag/f859b642-e5bb-427b-b164-0873fbcfa277/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/f859b642-e5bb-427b-b164-0873fbcfa277
+URL:https://auftragsregister.ch/en/auftrag/f859b642-e5bb-427b-b164-0873fbcf
+ a277/
+LOCATION:Delémont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Acquisition des licences de virtualisation
+  et projet de migration pour la République et Canton du Jura
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a5d54d6-9367-46a3-9fb9-d89460f7cd82-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261126T153000Z
+SUMMARY:Délai de remise : Mont-sur-Rolle. Démolition de la salle exista
+ nte et construction d'une nouvelle salle avec salles de classe
+DESCRIPTION:Acheteur public : Commune de Mont-sur-Rolle - Ferrari Archite
+ ctes\nDélai de remise : 26.11.2026\, 16 h 30\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/8a5d54d6-9367-46a3-9fb9-d89460f7cd8
+ 2/\nPublication officielle : https://www.simap.ch/fr/project-detail/8a5d
+ 54d6-9367-46a3-9fb9-d89460f7cd82
+URL:https://auftragsregister.ch/fr/auftrag/8a5d54d6-9367-46a3-9fb9-d89460f7
+ cd82/
+LOCATION:Mont-sur-Rolle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mont-sur-Rolle. Démolition de la salle ex
+ istante et construction d'une nouvelle salle avec salles de classe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

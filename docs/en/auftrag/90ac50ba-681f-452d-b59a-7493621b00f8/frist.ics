@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90ac50ba-681f-452d-b59a-7493621b00f8-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:1
+DTSTART:20261120T225900Z
+SUMMARY:Submission deadline: NKM – Generalplaner (GP) Fahrbahnerneuerunge
+ n 2029-2033 Rahmenvertrag\, Schweiz
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB\, Infrastruktur -
+  Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\nSubmis
+ sion deadline: 20 Nov 2026\, 23:59\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/90ac50ba-681f-452d-b59a-7493621b00f8/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/90ac50ba-681f-452d-b59a-7493
+ 621b00f8
+URL:https://auftragsregister.ch/en/auftrag/90ac50ba-681f-452d-b59a-7493621b
+ 00f8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: NKM – Generalplaner (GP) Fahrbahnerneuer
+ ungen 2029-2033 Rahmenvertrag\, Schweiz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

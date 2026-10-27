@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c0afbe29-982f-44d0-bb46-2affb123a502-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261126T225900Z
+SUMMARY:Délai de remise : Assainissement et réfection des ponts des Cro
+ isettes 1 et 4 & des demi-ponts des Croisettes 2\, 3\, 5\, 6 et 7\, sur la
+  RC no 40 Sierre - Vissoie - Ayer - Zinal\, sur le territoire de la commun
+ e d'Anniviers
+DESCRIPTION:Acheteur public : Département de la mobilité\, du territoir
+ e et de l'environnement\nDélai de remise : 26.11.2026\, 23 h 59\nDa
+ ns le registre : https://auftragsregister.ch/fr/auftrag/c0afbe29-982f-44
+ d0-bb46-2affb123a502/\nPublication officielle : https://www.simap.ch/fr/
+ project-detail/c0afbe29-982f-44d0-bb46-2affb123a502
+URL:https://auftragsregister.ch/fr/auftrag/c0afbe29-982f-44d0-bb46-2affb123
+ a502/
+LOCATION:Vissoie
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assainissement et réfection des ponts des
+  Croisettes 1 et 4 & des demi-ponts des Croisettes 2\, 3\, 5\, 6 et 7\, su
+ r la RC no 40 Sierre - Vissoie - Ayer - Zinal\, sur le territoire de la co
+ mmune d'Anniviers
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

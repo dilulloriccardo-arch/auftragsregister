@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2149108a-d6c4-4f7d-9b92-9832ea5bff2b-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261103T100000Z
+SUMMARY:Scadenza: RC 513 C-P : Payerne - Grandcour (PEL)
+DESCRIPTION:Ente pubblico: Direction générale de la mobilité et des rout
+ es - division Entretien\nScadenza: 03.11.2026\, 11:00\nNel registro: https
+ ://auftragsregister.ch/it/auftrag/2149108a-d6c4-4f7d-9b92-9832ea5bff2b/\nP
+ ubblicazione ufficiale: https://www.simap.ch/it/project-detail/2149108a-d6
+ c4-4f7d-9b92-9832ea5bff2b
+URL:https://auftragsregister.ch/it/auftrag/2149108a-d6c4-4f7d-9b92-9832ea5b
+ ff2b/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: RC 513 C-P : Payerne - Grandcour (PEL)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

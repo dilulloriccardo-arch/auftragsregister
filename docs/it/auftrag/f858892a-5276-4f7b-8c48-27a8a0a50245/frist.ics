@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f858892a-5276-4f7b-8c48-27a8a0a50245-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Scadenza: Beschaffung Statische Fahrgastinformation
+DESCRIPTION:Ente pubblico: Verkehrsbetriebe Biel\nScadenza: 04.12.2026\, 23
+ :59\nNel registro: https://auftragsregister.ch/it/auftrag/f858892a-5276-4f
+ 7b-8c48-27a8a0a50245/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/f858892a-5276-4f7b-8c48-27a8a0a50245
+URL:https://auftragsregister.ch/it/auftrag/f858892a-5276-4f7b-8c48-27a8a0a5
+ 0245/
+LOCATION:Biel/Bienne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung Statische Fahrgastinformation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

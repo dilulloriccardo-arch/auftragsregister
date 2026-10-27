@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:de0d381e-7b94-4da7-87a3-49f401cc1053-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261209T133000Z
+SUMMARY:Scadenza: DSUS-Nuova sede DSU al Piano Stampa-Costruzioni in acciai
+ o: pensilina per stazione di rifornimento
+DESCRIPTION:Ente pubblico: Edilizia Pubblica\nScadenza: 09.12.2026\, 14:30\
+ nNel registro: https://auftragsregister.ch/it/auftrag/de0d381e-7b94-4da7-8
+ 7a3-49f401cc1053/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/de0d381e-7b94-4da7-87a3-49f401cc1053
+URL:https://auftragsregister.ch/it/auftrag/de0d381e-7b94-4da7-87a3-49f401cc
+ 1053/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: DSUS-Nuova sede DSU al Piano Stampa-Costruzioni in ac
+ ciaio: pensilina per stazione di rifornimento
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

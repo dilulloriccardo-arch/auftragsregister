@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8b590fe4-96c1-4e01-b4e6-8e4e8dabaafc-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Délai de remise : Exploitation de la restauration de l'ECA
+DESCRIPTION:Acheteur public : Etablissement d'Assurance contre l'incendie
+  et les éléments naturels du canton de Vaud (ECA)\nDélai de remise : 
+ 08.01.2027\, 12 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/8b590fe4-96c1-4e01-b4e6-8e4e8dabaafc/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/8b590fe4-96c1-4e01-b4e6-8e4e8d
+ abaafc
+URL:https://auftragsregister.ch/fr/auftrag/8b590fe4-96c1-4e01-b4e6-8e4e8dab
+ aafc/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Exploitation de la restauration de l'ECA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

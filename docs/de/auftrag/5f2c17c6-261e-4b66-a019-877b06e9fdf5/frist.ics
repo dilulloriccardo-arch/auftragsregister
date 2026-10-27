@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f2c17c6-261e-4b66-a019-877b06e9fdf5-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261028T160000Z
+SUMMARY:Eingabefrist: Musik-Akademie Basel – Campus 2040\, Bereich A (Hau
+ s 2\, 4 und 7) - BKP 222-224 Spengler- und Bedachungsarbeiten
+DESCRIPTION:Auftraggeber: Musik-Akademie Basel (ARGE GP MAB Campus 2040)\nE
+ ingabefrist: 28.10.2026\, 17.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/5f2c17c6-261e-4b66-a019-877b06e9fdf5/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/5f2c17c6-261e-4b66-a019-877b06e9
+ fdf5
+URL:https://auftragsregister.ch/de/auftrag/5f2c17c6-261e-4b66-a019-877b06e9
+ fdf5/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Musik-Akademie Basel – Campus 2040\, Bereich A 
+ (Haus 2\, 4 und 7) - BKP 222-224 Spengler- und Bedachungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

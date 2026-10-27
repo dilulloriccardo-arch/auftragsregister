@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c5d66bd-f90f-434a-b691-71e31e165aee-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Délai de remise : ETH Zurich\, LCA\, installation photovoltaïqu
+ e
+DESCRIPTION:Acheteur public : ETH Zürich - REM / Abt. Procurement Servic
+ es VPIN\nDélai de remise : 02.12.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/6c5d66bd-f90f-434a-b691-71e31e
+ 165aee/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /6c5d66bd-f90f-434a-b691-71e31e165aee
+URL:https://auftragsregister.ch/fr/auftrag/6c5d66bd-f90f-434a-b691-71e31e16
+ 5aee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ETH Zurich\, LCA\, installation photovolta
+ ïque
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

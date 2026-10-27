@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:accd2e12-b3f9-453c-89ad-606baca9cdcb-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261106T080000Z
+SUMMARY:Eingabefrist: IWB\, FW Tiefbauarbeiten Zürcherstrasse MP3292
+DESCRIPTION:Auftraggeber: IWB Industrielle Werke Basel\nEingabefrist: 06.11
+ .2026\, 9.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/acc
+ d2e12-b3f9-453c-89ad-606baca9cdcb/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/accd2e12-b3f9-453c-89ad-606baca9cdcb
+URL:https://auftragsregister.ch/de/auftrag/accd2e12-b3f9-453c-89ad-606baca9
+ cdcb/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: IWB\, FW Tiefbauarbeiten Zürcherstrasse MP3292
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

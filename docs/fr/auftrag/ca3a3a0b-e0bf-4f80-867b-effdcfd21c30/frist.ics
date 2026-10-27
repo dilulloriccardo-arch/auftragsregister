@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ca3a3a0b-e0bf-4f80-867b-effdcfd21c30-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261203T130000Z
+SUMMARY:Délai de remise : 01.517 Nuova centrale del freddo - Isolazioni 
+ impianti
+DESCRIPTION:Acheteur public : Ente Ospedaliero Cantonale - Area Infrastru
+ tture e Operations\nDélai de remise : 03.12.2026\, 14 h 00\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/ca3a3a0b-e0bf-4f80-86
+ 7b-effdcfd21c30/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/ca3a3a0b-e0bf-4f80-867b-effdcfd21c30
+URL:https://auftragsregister.ch/fr/auftrag/ca3a3a0b-e0bf-4f80-867b-effdcfd2
+ 1c30/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 01.517 Nuova centrale del freddo - Isolazi
+ oni impianti
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

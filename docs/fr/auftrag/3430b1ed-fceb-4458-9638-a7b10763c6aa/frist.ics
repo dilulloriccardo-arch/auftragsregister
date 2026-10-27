@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3430b1ed-fceb-4458-9638-a7b10763c6aa-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Délai de remise : EBP-593 AFW_Hallerstrasse_Baumeister
+DESCRIPTION:Acheteur public : Energie Wasser Bern\nDélai de remise : 0
+ 2.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/3430b1ed-fceb-4458-9638-a7b10763c6aa/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/3430b1ed-fceb-4458-9638-a7b107
+ 63c6aa
+URL:https://auftragsregister.ch/fr/auftrag/3430b1ed-fceb-4458-9638-a7b10763
+ c6aa/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EBP-593 AFW_Hallerstrasse_Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

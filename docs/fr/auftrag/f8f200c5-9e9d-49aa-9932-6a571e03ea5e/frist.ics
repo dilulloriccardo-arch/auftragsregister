@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f8f200c5-9e9d-49aa-9932-6a571e03ea5e-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : Ausschreibung Küchenbauer (ohne Geräte) – 
+ KAT.006
+DESCRIPTION:Acheteur public : ETHOS Immobilien GmbH\nDélai de remise :
+  09.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/f8f200c5-9e9d-49aa-9932-6a571e03ea5e/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/f8f200c5-9e9d-49aa-9932-6a571e
+ 03ea5e
+URL:https://auftragsregister.ch/fr/auftrag/f8f200c5-9e9d-49aa-9932-6a571e03
+ ea5e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung Küchenbauer (ohne Geräte) 
+ – KAT.006
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

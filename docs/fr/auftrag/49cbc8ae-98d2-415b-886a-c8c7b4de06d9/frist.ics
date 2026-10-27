@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49cbc8ae-98d2-415b-886a-c8c7b4de06d9-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261130T140000Z
+SUMMARY:Délai de remise : 4805 BKP 211 Baumeisterarbeiten / Napoleonmuse
+ um Arenenberg\, Salenstein Gästehaus\, Sanierung Gästehaus exkl. Umgebun
+ gsgestaltung
+DESCRIPTION:Acheteur public : Kantonales Hochbauamt Thurgau\nDélai de re
+ mise : 30.11.2026\, 15 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/49cbc8ae-98d2-415b-886a-c8c7b4de06d9/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/49cbc8ae-98d2-415b-886
+ a-c8c7b4de06d9
+URL:https://auftragsregister.ch/fr/auftrag/49cbc8ae-98d2-415b-886a-c8c7b4de
+ 06d9/
+LOCATION:Salenstein
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 4805 BKP 211 Baumeisterarbeiten / Napoleon
+ museum Arenenberg\, Salenstein Gästehaus\, Sanierung Gästehaus exkl. Umg
+ ebungsgestaltung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

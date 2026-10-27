@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dde4c624-fda9-404c-a168-02fb742d368d-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T140000Z
+SUMMARY:Eingabefrist: Beschaffung Wertpapier für Fahrkarten
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Konzerneinkauf 
+ Dienstleistungen\nEingabefrist: 19.11.2026\, 15.00 Uhr\nIm Register: http
+ s://auftragsregister.ch/de/auftrag/dde4c624-fda9-404c-a168-02fb742d368d/\n
+ Amtliche Publikation: https://www.simap.ch/de/project-detail/dde4c624-fda9
+ -404c-a168-02fb742d368d
+URL:https://auftragsregister.ch/de/auftrag/dde4c624-fda9-404c-a168-02fb742d
+ 368d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung Wertpapier für Fahrkarten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

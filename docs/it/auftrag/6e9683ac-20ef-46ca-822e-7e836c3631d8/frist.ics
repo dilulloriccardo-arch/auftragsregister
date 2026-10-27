@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e9683ac-20ef-46ca-822e-7e836c3631d8-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261204T100000Z
+SUMMARY:Scadenza: Samsung Mobile Devices
+DESCRIPTION:Ente pubblico: HOCH Health Ostschweiz\, Departement IT\nScadenz
+ a: 04.12.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/6e9683ac-20ef-46ca-822e-7e836c3631d8/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/6e9683ac-20ef-46ca-822e-7e836c3631d8
+URL:https://auftragsregister.ch/it/auftrag/6e9683ac-20ef-46ca-822e-7e836c36
+ 31d8/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Samsung Mobile Devices
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

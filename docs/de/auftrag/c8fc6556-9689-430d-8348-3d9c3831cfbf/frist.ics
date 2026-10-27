@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8fc6556-9689-430d-8348-3d9c3831cfbf-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Eingabefrist: Sanierung Neu- und Ausbau Stiegstrasse und Stiegweg -
+  Ingenieurleistung
+DESCRIPTION:Auftraggeber: Stadt Adliswil Planung Werke\nEingabefrist: 07.01
+ .2027\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c8
+ fc6556-9689-430d-8348-3d9c3831cfbf/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/c8fc6556-9689-430d-8348-3d9c3831cfbf
+URL:https://auftragsregister.ch/de/auftrag/c8fc6556-9689-430d-8348-3d9c3831
+ cfbf/
+LOCATION:Adliswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Neu- und Ausbau Stiegstrasse und Stiegw
+ eg - Ingenieurleistung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

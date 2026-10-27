@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b1accb6d-be3d-4e81-a62a-7091ceea5a74-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Scadenza: 512.96 Ecole du Bourg - CFC261 ascenseur - phase R-réali
+ sation
+DESCRIPTION:Ente pubblico: Service Urbanisme & architecture\nScadenza: 09.1
+ 1.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/b1acc
+ b6d-be3d-4e81-a62a-7091ceea5a74/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/b1accb6d-be3d-4e81-a62a-7091ceea5a74
+URL:https://auftragsregister.ch/it/auftrag/b1accb6d-be3d-4e81-a62a-7091ceea
+ 5a74/
+LOCATION:Fribourg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 512.96 Ecole du Bourg - CFC261 ascenseur - phase R-r
+ éalisation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed2650bd-55af-44c3-8c5a-b0947d1b949b-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261030T110000Z
+SUMMARY:Délai de remise : Praille-Acacias-Vernets (PAV) - Secteur Acacia
+ s 2 - Mandat pluridisciplinaire de maîtrise d’œuvre urbaine
+DESCRIPTION:Acheteur public : Direction Praille-Acacias Vernets (DPAV) (I
+ rbis Consulting SA)\nDélai de remise : 30.10.2026\, 12 h 00\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/ed2650bd-55af-44c3-8
+ c5a-b0947d1b949b/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/ed2650bd-55af-44c3-8c5a-b0947d1b949b
+URL:https://auftragsregister.ch/fr/auftrag/ed2650bd-55af-44c3-8c5a-b0947d1b
+ 949b/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Praille-Acacias-Vernets (PAV) - Secteur Ac
+ acias 2 - Mandat pluridisciplinaire de maîtrise d’œuvre urbaine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

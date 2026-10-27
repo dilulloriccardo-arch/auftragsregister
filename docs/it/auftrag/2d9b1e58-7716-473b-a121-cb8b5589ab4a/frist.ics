@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2d9b1e58-7716-473b-a121-cb8b5589ab4a-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261109T225900Z
+SUMMARY:Scadenza: Client-Hardware
+DESCRIPTION:Ente pubblico: Switch\nScadenza: 09.11.2026\, 23:59\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/2d9b1e58-7716-473b-a121-cb8b558
+ 9ab4a/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/2d
+ 9b1e58-7716-473b-a121-cb8b5589ab4a
+URL:https://auftragsregister.ch/it/auftrag/2d9b1e58-7716-473b-a121-cb8b5589
+ ab4a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Client-Hardware
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

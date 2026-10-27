@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49d0c46a-cffc-49be-be34-137f324120fc-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261111T130000Z
+SUMMARY:Délai de remise : Nieder- und Mittelspannungskabel
+DESCRIPTION:Acheteur public : CKW AG\nDélai de remise : 11.11.2026\, 1
+ 4 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/49
+ d0c46a-cffc-49be-be34-137f324120fc/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/49d0c46a-cffc-49be-be34-137f324120fc
+URL:https://auftragsregister.ch/fr/auftrag/49d0c46a-cffc-49be-be34-137f3241
+ 20fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nieder- und Mittelspannungskabel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

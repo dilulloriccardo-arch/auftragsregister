@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:08dfcbf7-019a-4e51-be47-e64fadca0644-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T100000Z
+SUMMARY:Délai de remise : Autonomie électrique – Lot 2 Extension phot
+ ovoltaïque
+DESCRIPTION:Acheteur public : DGIP-DID-Direction de l’ingénierie et de
+  la durabilité\nDélai de remise : 12.11.2026\, 11 h 00\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/08dfcbf7-019a-4e51-be47-
+ e64fadca0644/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/08dfcbf7-019a-4e51-be47-e64fadca0644
+URL:https://auftragsregister.ch/fr/auftrag/08dfcbf7-019a-4e51-be47-e64fadca
+ 0644/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Autonomie électrique – Lot 2 Extension 
+ photovoltaïque
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

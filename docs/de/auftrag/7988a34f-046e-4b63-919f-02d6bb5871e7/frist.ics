@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7988a34f-046e-4b63-919f-02d6bb5871e7-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Eingabefrist: MP-200051 N13 EP16 Landquart-Grenze GR/SG PUN - Bauhe
+ rrenvermessung
+DESCRIPTION:Auftraggeber: Ufficio federale delle strade USTRA\, divisione i
+ nfrastruttura stradale Est\nEingabefrist: 23.11.2026\, 16.00 Uhr\nIm Regi
+ ster: https://auftragsregister.ch/de/auftrag/7988a34f-046e-4b63-919f-02d6b
+ b5871e7/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/798
+ 8a34f-046e-4b63-919f-02d6bb5871e7
+URL:https://auftragsregister.ch/de/auftrag/7988a34f-046e-4b63-919f-02d6bb58
+ 71e7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-200051 N13 EP16 Landquart-Grenze GR/SG PUN - B
+ auherrenvermessung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

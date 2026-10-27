@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf8f4333-368e-4092-9669-c72d9a22e379-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261028T100000Z
+SUMMARY:Délai de remise : Immeubles Grottes 6/6bis et Amis 5/7 (2360TI) 
+ revêtements coupe-feu
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 28.10.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/cf8f4333-368e-4092-9669-c72d9a22e37
+ 9/\nPublication officielle : https://www.simap.ch/fr/project-detail/cf8f
+ 4333-368e-4092-9669-c72d9a22e379
+URL:https://auftragsregister.ch/fr/auftrag/cf8f4333-368e-4092-9669-c72d9a22
+ e379/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Immeubles Grottes 6/6bis et Amis 5/7 (2360
+ TI) revêtements coupe-feu
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

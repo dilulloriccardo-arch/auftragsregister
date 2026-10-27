@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e53115c-e00d-41c7-835d-e199e40cd645-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Eingabefrist: LC-MS mit on-/offline Probenanreicherung
+DESCRIPTION:Auftraggeber: Bundesamt für Rüstung armasuisse\nEingabefrist:
+  24.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/3e53115c-e00d-41c7-835d-e199e40cd645/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/3e53115c-e00d-41c7-835d-e199e40cd645
+URL:https://auftragsregister.ch/de/auftrag/3e53115c-e00d-41c7-835d-e199e40c
+ d645/
+LOCATION:Posieux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: LC-MS mit on-/offline Probenanreicherung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

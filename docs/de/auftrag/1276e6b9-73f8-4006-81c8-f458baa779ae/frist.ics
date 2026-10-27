@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1276e6b9-73f8-4006-81c8-f458baa779ae-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261110T225900Z
+SUMMARY:Eingabefrist: N20.73 MP-230032 - NEB Réf. Ins - Murten - APR Géom
+ ètre (ID 12174)
+DESCRIPTION:Auftraggeber: Office fédéral des routes OFROU\, Division Infr
+ astructure routière Ouest\, filiale Estavayer-le-Lac\nEingabefrist: 10.11
+ .2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/12
+ 76e6b9-73f8-4006-81c8-f458baa779ae/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/1276e6b9-73f8-4006-81c8-f458baa779ae
+URL:https://auftragsregister.ch/de/auftrag/1276e6b9-73f8-4006-81c8-f458baa7
+ 79ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: N20.73 MP-230032 - NEB Réf. Ins - Murten - APR G
+ éomètre (ID 12174)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

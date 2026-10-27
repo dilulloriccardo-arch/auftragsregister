@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eda9c16b-6568-4d7f-9f47-0339eb557d55-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261123T090000Z
+SUMMARY:Eingabefrist: Réfection superstructure voie courante Martigny – 
+ Martigny Bourg [Km1+059 au Km2+806] sur 1694m Pont du Simplon [Km0+599 au 
+ Km0+870] sur 270m
+DESCRIPTION:Auftraggeber: Achats - TMR SA\nEingabefrist: 23.11.2026\, 10.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/eda9c16b-6568-4
+ d7f-9f47-0339eb557d55/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/eda9c16b-6568-4d7f-9f47-0339eb557d55
+URL:https://auftragsregister.ch/de/auftrag/eda9c16b-6568-4d7f-9f47-0339eb55
+ 7d55/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Réfection superstructure voie courante Martigny 
+ – Martigny Bourg [Km1+059 au Km2+806] sur 1694m Pont du Simplon [Km0+599
+  au Km0+870] sur 270m
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

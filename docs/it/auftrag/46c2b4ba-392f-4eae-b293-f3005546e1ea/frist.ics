@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46c2b4ba-392f-4eae-b293-f3005546e1ea-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261108T225900Z
+SUMMARY:Scadenza: Mandat Marktbearbeitung OSTWIND 2027-2029
+DESCRIPTION:Ente pubblico: Genossenschaft Tarifverbund OSTWIND\nScadenza: 0
+ 8.11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/46
+ c2b4ba-392f-4eae-b293-f3005546e1ea/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/46c2b4ba-392f-4eae-b293-f3005546e1ea
+URL:https://auftragsregister.ch/it/auftrag/46c2b4ba-392f-4eae-b293-f3005546
+ e1ea/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mandat Marktbearbeitung OSTWIND 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

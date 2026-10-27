@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4dc0eed6-b4d8-46bd-9e8e-16450a139152-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Scadenza: Gesuchsbearbeitung 2027-29 Luzerner Innovationsbeitrag (L
+ IB)
+DESCRIPTION:Ente pubblico: Dienststelle Raum und Wirtschaft (rawi)\nScadenz
+ a: 12.11.2026\nNel registro: https://auftragsregister.ch/it/auftrag/4dc0ee
+ d6-b4d8-46bd-9e8e-16450a139152/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/4dc0eed6-b4d8-46bd-9e8e-16450a139152
+URL:https://auftragsregister.ch/it/auftrag/4dc0eed6-b4d8-46bd-9e8e-16450a13
+ 9152/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gesuchsbearbeitung 2027-29 Luzerner Innovationsbeitra
+ g (LIB)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

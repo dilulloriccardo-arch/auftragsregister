@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c678e15a-6798-4e66-a9a2-65569a98baec-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Eingabefrist: Ersatz Aufgabe-Überwachung AKA WE
+DESCRIPTION:Auftraggeber: Die Schweizerische Post AG\nEingabefrist: 06.11.2
+ 026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c678
+ e15a-6798-4e66-a9a2-65569a98baec/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/c678e15a-6798-4e66-a9a2-65569a98baec
+URL:https://auftragsregister.ch/de/auftrag/c678e15a-6798-4e66-a9a2-65569a98
+ baec/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatz Aufgabe-Überwachung AKA WE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

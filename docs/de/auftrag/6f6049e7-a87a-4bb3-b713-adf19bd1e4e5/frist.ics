@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6f6049e7-a87a-4bb3-b713-adf19bd1e4e5-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Eingabefrist: MP-090088\, EM AS Neuenhof - AS Dietikon Deckbelag / 
+ Baumeister
+DESCRIPTION:Auftraggeber: Eidgenössisches Departement für Umwelt\, Verkeh
+ r\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung S
+ trasseninfrastruktur-Ost - F3\nEingabefrist: 15.12.2026\, 23.59 Uhr\nIm R
+ egister: https://auftragsregister.ch/de/auftrag/6f6049e7-a87a-4bb3-b713-ad
+ f19bd1e4e5/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/
+ 6f6049e7-a87a-4bb3-b713-adf19bd1e4e5
+URL:https://auftragsregister.ch/de/auftrag/6f6049e7-a87a-4bb3-b713-adf19bd1
+ e4e5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-090088\, EM AS Neuenhof - AS Dietikon Deckbela
+ g / Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

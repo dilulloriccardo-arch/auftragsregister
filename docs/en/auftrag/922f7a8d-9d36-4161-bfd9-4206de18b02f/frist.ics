@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:922f7a8d-9d36-4161-bfd9-4206de18b02f-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Submission deadline: Campus Horw\, Realisierung Erneuerung und Erwe
+ iterung BKP 453 Werkleitungen
+DESCRIPTION:Public buyer: Kanton Luzern\, Dienststelle Immobilien\nSubmissi
+ on deadline: 9 Dec 2026\, 23:59\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/922f7a8d-9d36-4161-bfd9-4206de18b02f/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/922f7a8d-9d36-4161-bfd9-4206de1
+ 8b02f
+URL:https://auftragsregister.ch/en/auftrag/922f7a8d-9d36-4161-bfd9-4206de18
+ b02f/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Campus Horw\, Realisierung Erneuerung und 
+ Erweiterung BKP 453 Werkleitungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

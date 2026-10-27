@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71b8b279-52b6-478a-807b-4a9454d92584-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:2
+DTSTART:20261123T140000Z
+SUMMARY:Délai de remise : 25-490 Plateformes de travail et de levage\, a
+ vec ou sans opérateur
+DESCRIPTION:Acheteur public : SBB CFF FFS Infra-Bahntechnik\nDélai de re
+ mise : 23.11.2026\, 15 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/71b8b279-52b6-478a-807b-4a9454d92584/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/71b8b279-52b6-478a-807
+ b-4a9454d92584
+URL:https://auftragsregister.ch/fr/auftrag/71b8b279-52b6-478a-807b-4a9454d9
+ 2584/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 25-490 Plateformes de travail et de levage
+ \, avec ou sans opérateur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

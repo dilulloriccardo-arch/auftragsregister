@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b37a1f42-6fb6-4d20-84f9-9a29480459b0-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261123T130000Z
+SUMMARY:Délai de remise : K2 Gotthardstasse\, Gurtnellen\, Belagssanieru
+ ng Breitental
+DESCRIPTION:Acheteur public : Amt für Tiefbau Uri\nDélai de remise : 
+ 23.11.2026\, 14 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/b37a1f42-6fb6-4d20-84f9-9a29480459b0/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/b37a1f42-6fb6-4d20-84f9-9a2948
+ 0459b0
+URL:https://auftragsregister.ch/fr/auftrag/b37a1f42-6fb6-4d20-84f9-9a294804
+ 59b0/
+LOCATION:Gurtnellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : K2 Gotthardstasse\, Gurtnellen\, Belagssan
+ ierung Breitental
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

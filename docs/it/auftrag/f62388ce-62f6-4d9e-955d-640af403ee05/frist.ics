@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f62388ce-62f6-4d9e-955d-640af403ee05-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261203T225900Z
+SUMMARY:Scadenza: Ersatzbeschaffung von ICT-Endgeräten der Primarschule D
+ übendorf
+DESCRIPTION:Ente pubblico: Primarschule Dübendorf\nScadenza: 03.12.2026\, 
+ 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/f62388ce-62f6-
+ 4d9e-955d-640af403ee05/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/f62388ce-62f6-4d9e-955d-640af403ee05
+URL:https://auftragsregister.ch/it/auftrag/f62388ce-62f6-4d9e-955d-640af403
+ ee05/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatzbeschaffung von ICT-Endgeräten der Primarschul
+ e Dübendorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

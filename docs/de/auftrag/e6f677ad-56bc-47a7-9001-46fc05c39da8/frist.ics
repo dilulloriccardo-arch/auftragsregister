@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6f677ad-56bc-47a7-9001-46fc05c39da8-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T100000Z
+SUMMARY:Eingabefrist: Plans d’affectation cantonaux valant sanction défi
+ nitive (PACSD) Revitalisation lacustre – Valorisation des matériaux de 
+ la ligne directe Neuchâtel-Chaux-de-Fonds
+DESCRIPTION:Auftraggeber: Département du développement territorial et de 
+ l'environnement - Service des ponts et chaussées - Office des cours d'eau
+  et dangers naturels\nEingabefrist: 13.11.2026\, 11.00 Uhr\nIm Register: 
+ https://auftragsregister.ch/de/auftrag/e6f677ad-56bc-47a7-9001-46fc05c39da
+ 8/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/e6f677ad-
+ 56bc-47a7-9001-46fc05c39da8
+URL:https://auftragsregister.ch/de/auftrag/e6f677ad-56bc-47a7-9001-46fc05c3
+ 9da8/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Plans d’affectation cantonaux valant sanction d
+ éfinitive (PACSD) Revitalisation lacustre – Valorisation des matériaux
+  de la ligne directe Neuchâtel-Chaux-de-Fonds
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

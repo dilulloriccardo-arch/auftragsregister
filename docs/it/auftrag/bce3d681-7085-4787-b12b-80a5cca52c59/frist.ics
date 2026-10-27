@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bce3d681-7085-4787-b12b-80a5cca52c59-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261030T110000Z
+SUMMARY:Scadenza: Gleisanlage Glattalbahn - Beschaffung Zweiblockschwellen 
+ für OBE GTB1 und GTB2A
+DESCRIPTION:Ente pubblico: VBG Verkehrsbetriebe Glattal AG\nScadenza: 30.10
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/bce3d6
+ 81-7085-4787-b12b-80a5cca52c59/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/bce3d681-7085-4787-b12b-80a5cca52c59
+URL:https://auftragsregister.ch/it/auftrag/bce3d681-7085-4787-b12b-80a5cca5
+ 2c59/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gleisanlage Glattalbahn - Beschaffung Zweiblockschwel
+ len für OBE GTB1 und GTB2A
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

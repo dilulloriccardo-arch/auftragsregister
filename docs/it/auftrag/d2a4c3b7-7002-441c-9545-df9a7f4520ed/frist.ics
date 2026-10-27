@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2a4c3b7-7002-441c-9545-df9a7f4520ed-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261203T090000Z
+SUMMARY:Scadenza: Concorso per l’aggiudicazione dei contratti di assicura
+ zione Cose e Tecniche All Risks
+DESCRIPTION:Ente pubblico: Comune di Ascona\nScadenza: 03.12.2026\, 10:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/d2a4c3b7-7002-441c-95
+ 45-df9a7f4520ed/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/d2a4c3b7-7002-441c-9545-df9a7f4520ed
+URL:https://auftragsregister.ch/it/auftrag/d2a4c3b7-7002-441c-9545-df9a7f45
+ 20ed/
+LOCATION:Ascona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso per l’aggiudicazione dei contratti di assi
+ curazione Cose e Tecniche All Risks
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

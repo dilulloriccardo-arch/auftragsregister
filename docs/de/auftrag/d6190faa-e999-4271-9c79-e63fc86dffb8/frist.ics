@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6190faa-e999-4271-9c79-e63fc86dffb8-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:1
+DTSTART:20261106T140000Z
+SUMMARY:Eingabefrist: Distributions- und Ladekonzept Prepaid Card ÖV und S
+ wissPass
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB Division Produkti
+ on Personenverkehr\nEingabefrist: 06.11.2026\, 15.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/d6190faa-e999-4271-9c79-e63fc86dffb8/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/d6190faa-e9
+ 99-4271-9c79-e63fc86dffb8
+URL:https://auftragsregister.ch/de/auftrag/d6190faa-e999-4271-9c79-e63fc86d
+ ffb8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Distributions- und Ladekonzept Prepaid Card ÖV u
+ nd SwissPass
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

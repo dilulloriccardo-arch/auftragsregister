@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ecf37fd-77b1-4568-9902-a743b58a6f0c-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261028T110000Z
+SUMMARY:Submission deadline: Gemeindepublikation Fällanden
+DESCRIPTION:Public buyer: Gemeindeverwaltung Fällanden\nSubmission deadlin
+ e: 28 Oct 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/0ecf37fd-77b1-4568-9902-a743b58a6f0c/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/0ecf37fd-77b1-4568-9902-a743b58a6f0c
+URL:https://auftragsregister.ch/en/auftrag/0ecf37fd-77b1-4568-9902-a743b58a
+ 6f0c/
+LOCATION:Fällanden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gemeindepublikation Fällanden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

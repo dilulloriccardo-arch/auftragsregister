@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bdfdb393-0f6f-45bc-a4c7-72cb74430104-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261117T080000Z
+SUMMARY:Eingabefrist: Luftbildbefliegungen Orthofoto Kanton Zürich 2027
+DESCRIPTION:Auftraggeber: Amt für Raumentwicklung\nEingabefrist: 17.11.202
+ 6\, 9.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/bdfdb39
+ 3-0f6f-45bc-a4c7-72cb74430104/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/bdfdb393-0f6f-45bc-a4c7-72cb74430104
+URL:https://auftragsregister.ch/de/auftrag/bdfdb393-0f6f-45bc-a4c7-72cb7443
+ 0104/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Luftbildbefliegungen Orthofoto Kanton Zürich 202
+ 7
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:97d6d3f6-8502-4eaf-81a6-71307e3669e9-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261202T103000Z
+SUMMARY:Scadenza: Neubau Schul-\, Sport- und Freizeitanlage Maihof I BKP 25
+ 0
+DESCRIPTION:Ente pubblico: Gemeinde Feusisberg\nScadenza: 02.12.2026\, 11:3
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/97d6d3f6-8502-4eaf
+ -81a6-71307e3669e9/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/97d6d3f6-8502-4eaf-81a6-71307e3669e9
+URL:https://auftragsregister.ch/it/auftrag/97d6d3f6-8502-4eaf-81a6-71307e36
+ 69e9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Schul-\, Sport- und Freizeitanlage Maihof I BK
+ P 250
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

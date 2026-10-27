@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a2736d2-1e00-4723-828e-da81ef4dedb6-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261201T110000Z
+SUMMARY:Délai de remise : 297_Groupe scolaire des Grands Esserts_CFC 283
+ .4 Plafonds en bois et dérivés du bois
+DESCRIPTION:Acheteur public : Commune de Veyrier (Esposito + Javet arch.)
+ \nDélai de remise : 01.12.2026\, 12 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/6a2736d2-1e00-4723-828e-da81ef4dedb6/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/6a2736d2
+ -1e00-4723-828e-da81ef4dedb6
+URL:https://auftragsregister.ch/fr/auftrag/6a2736d2-1e00-4723-828e-da81ef4d
+ edb6/
+LOCATION:Veyrier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 297_Groupe scolaire des Grands Esserts_CFC
+  283.4 Plafonds en bois et dérivés du bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

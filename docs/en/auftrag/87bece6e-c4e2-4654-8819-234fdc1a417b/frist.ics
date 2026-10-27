@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87bece6e-c4e2-4654-8819-234fdc1a417b-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T110024Z
+SUMMARY:Submission deadline: Sicherheitsdienstleistungen
+DESCRIPTION:Public buyer: Universitätsspital Zürich\nSubmission deadline:
+  23 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/87bece6e-c4e2-4654-8819-234fdc1a417b/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/87bece6e-c4e2-4654-8819-234fdc1a417b
+URL:https://auftragsregister.ch/en/auftrag/87bece6e-c4e2-4654-8819-234fdc1a
+ 417b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sicherheitsdienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

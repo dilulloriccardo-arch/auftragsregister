@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7e0b96bf-9599-42f3-aa64-15b2a545cd39-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261120T160000Z
+SUMMARY:Eingabefrist: Neubau Gemeindehaus Münsingen - Fenster und Aussent
+ üren in Holz
+DESCRIPTION:Auftraggeber: Gemeinde Münsingen\, Abteilung Bau\nEingabefrist
+ : 20.11.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/7e0b96bf-9599-42f3-aa64-15b2a545cd39/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/7e0b96bf-9599-42f3-aa64-15b2a545cd39
+URL:https://auftragsregister.ch/de/auftrag/7e0b96bf-9599-42f3-aa64-15b2a545
+ cd39/
+LOCATION:Münsingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Gemeindehaus Münsingen - Fenster und Auss
+ entüren in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

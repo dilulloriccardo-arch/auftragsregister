@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3859ef19-5f98-43fd-9164-3d7176b1f711-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261210T140000Z
+SUMMARY:Délai de remise : Ersatzbeschaffung Einsatzleitfahrzeug
+DESCRIPTION:Acheteur public : Feuerwehr Einsiedeln\nDélai de remise : 
+ 10.12.2026\, 15 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/3859ef19-5f98-43fd-9164-3d7176b1f711/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/3859ef19-5f98-43fd-9164-3d7176
+ b1f711
+URL:https://auftragsregister.ch/fr/auftrag/3859ef19-5f98-43fd-9164-3d7176b1
+ f711/
+LOCATION:Einsiedeln
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatzbeschaffung Einsatzleitfahrzeug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

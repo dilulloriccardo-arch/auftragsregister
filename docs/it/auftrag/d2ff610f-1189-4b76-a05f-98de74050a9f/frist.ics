@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2ff610f-1189-4b76-a05f-98de74050a9f-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261127T140000Z
+SUMMARY:Scadenza: Beschaffung Bahnübergangsanlagen und Anbindung an das DS
+ TW über EULYNX Rahmenvertrag / Abrufvertrag
+DESCRIPTION:Ente pubblico: Schweizerische Südostbahn AG\nScadenza: 27.11.2
+ 026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/d2ff610f
+ -1189-4b76-a05f-98de74050a9f/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/d2ff610f-1189-4b76-a05f-98de74050a9f
+URL:https://auftragsregister.ch/it/auftrag/d2ff610f-1189-4b76-a05f-98de7405
+ 0a9f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung Bahnübergangsanlagen und Anbindung an da
+ s DSTW über EULYNX Rahmenvertrag / Abrufvertrag
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

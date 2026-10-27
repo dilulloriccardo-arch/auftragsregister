@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:de0d381e-7b94-4da7-87a3-49f401cc1053-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261209T133000Z
+SUMMARY:Submission deadline: DSUS- Nouveau siège de la Voirie de la ville 
+ de Lugano - construction en acier – auvent de la station d'essence
+DESCRIPTION:Public buyer: Edilizia Pubblica\nSubmission deadline: 9 Dec 2
+ 026\, 14:30\nIn the register: https://auftragsregister.ch/en/auftrag/de0d3
+ 81e-7b94-4da7-87a3-49f401cc1053/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/de0d381e-7b94-4da7-87a3-49f401cc1053
+URL:https://auftragsregister.ch/en/auftrag/de0d381e-7b94-4da7-87a3-49f401cc
+ 1053/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: DSUS- Nouveau siège de la Voirie de la vi
+ lle de Lugano - construction en acier – auvent de la station d'essence
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

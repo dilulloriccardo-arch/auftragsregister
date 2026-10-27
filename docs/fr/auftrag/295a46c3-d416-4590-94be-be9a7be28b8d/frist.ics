@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:295a46c3-d416-4590-94be-be9a7be28b8d-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Délai de remise : MP-070078 N02 EP18 Balerna\, Lot 110\, assaini
+ ssement des ponts de la douane commerciale
+DESCRIPTION:Acheteur public : Ufficio federale delle strade USTRA\, divis
+ ione infrastruttura stradale Est\nDélai de remise : 20.11.2026\, 16 h
+  00\nDans le registre : https://auftragsregister.ch/fr/auftrag/295a46c
+ 3-d416-4590-94be-be9a7be28b8d/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/295a46c3-d416-4590-94be-be9a7be28b8d
+URL:https://auftragsregister.ch/fr/auftrag/295a46c3-d416-4590-94be-be9a7be2
+ 8b8d/
+LOCATION:Chiasso
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-070078 N02 EP18 Balerna\, Lot 110\, ass
+ ainissement des ponts de la douane commerciale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

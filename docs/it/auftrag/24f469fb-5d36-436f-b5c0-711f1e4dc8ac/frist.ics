@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:24f469fb-5d36-436f-b5c0-711f1e4dc8ac-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Scadenza: Mobilbagger knickgelenkt mit Mähausleger
+DESCRIPTION:Ente pubblico: Rheinunternehmen\nScadenza: 06.11.2026\, 16:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/24f469fb-5d36-436f-b5
+ c0-711f1e4dc8ac/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/24f469fb-5d36-436f-b5c0-711f1e4dc8ac
+URL:https://auftragsregister.ch/it/auftrag/24f469fb-5d36-436f-b5c0-711f1e4d
+ c8ac/
+LOCATION:Widnau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mobilbagger knickgelenkt mit Mähausleger
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:91ccf2c1-dd6a-47ca-a353-65449951d750-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Délai de remise : Zurzach (Rümikon) – Mellikon AO\, K131\; ex
+ tension de la route cyclable cantonale et rénovation du revêtement K131 
+ (nœud de Chessel)
+DESCRIPTION:Acheteur public : Abteilung Tiefbau (ATB)\nDélai de remise
+  : 06.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/91ccf2c1-dd6a-47ca-a353-65449951d750/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/91ccf2c1-dd6a-47ca-a353-65
+ 449951d750
+URL:https://auftragsregister.ch/fr/auftrag/91ccf2c1-dd6a-47ca-a353-65449951
+ d750/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Zurzach (Rümikon) – Mellikon AO\, K131\
+ ; extension de la route cyclable cantonale et rénovation du revêtement K
+ 131 (nœud de Chessel)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

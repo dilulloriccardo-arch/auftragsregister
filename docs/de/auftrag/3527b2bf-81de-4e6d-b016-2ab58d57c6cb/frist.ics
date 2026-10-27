@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3527b2bf-81de-4e6d-b016-2ab58d57c6cb-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261116T153000Z
+SUMMARY:Eingabefrist: UNI - Bastions Central _ CFC233.00 - Lustrerie sur me
+ sure
+DESCRIPTION:Auftraggeber: Office Cantonale des Bâtiments (OCBA)\nEingabefr
+ ist: 16.11.2026\, 16.30 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/3527b2bf-81de-4e6d-b016-2ab58d57c6cb/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/3527b2bf-81de-4e6d-b016-2ab58d57c6cb
+URL:https://auftragsregister.ch/de/auftrag/3527b2bf-81de-4e6d-b016-2ab58d57
+ c6cb/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: UNI - Bastions Central _ CFC233.00 - Lustrerie su
+ r mesure
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

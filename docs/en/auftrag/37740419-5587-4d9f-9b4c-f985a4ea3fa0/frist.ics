@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:37740419-5587-4d9f-9b4c-f985a4ea3fa0-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Submission deadline: Gemeindezentrum Bremgarten b. Bern\, BKP 230 E
+ lektroinstallationen
+DESCRIPTION:Public buyer: Einwohnergemeinde Bremgarten b. Bern (maurer baul
+ eitung gmbh)\nSubmission deadline: 27 Nov 2026\, 23:59\nIn the register:
+  https://auftragsregister.ch/en/auftrag/37740419-5587-4d9f-9b4c-f985a4ea3f
+ a0/\nOfficial publication: https://www.simap.ch/en/project-detail/37740419
+ -5587-4d9f-9b4c-f985a4ea3fa0
+URL:https://auftragsregister.ch/en/auftrag/37740419-5587-4d9f-9b4c-f985a4ea
+ 3fa0/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gemeindezentrum Bremgarten b. Bern\, BKP 2
+ 30 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

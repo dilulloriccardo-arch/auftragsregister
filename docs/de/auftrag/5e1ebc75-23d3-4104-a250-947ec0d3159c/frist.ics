@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5e1ebc75-23d3-4104-a250-947ec0d3159c-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:1
+DTSTART:20261116T110000Z
+SUMMARY:Eingabefrist: Contrat-cadre de prestations d'architecte
+DESCRIPTION:Auftraggeber: Cougar Management SA\nEingabefrist: 16.11.2026\, 
+ 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5e1ebc75-2
+ 3d3-4104-a250-947ec0d3159c/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/5e1ebc75-23d3-4104-a250-947ec0d3159c
+URL:https://auftragsregister.ch/de/auftrag/5e1ebc75-23d3-4104-a250-947ec0d3
+ 159c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Contrat-cadre de prestations d'architecte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

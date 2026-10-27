@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dc51eef1-f9d8-4cce-bfbe-8c2f99766b9e-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261110T140000Z
+SUMMARY:Eingabefrist: Neubau Klinikum 2\, Phase 1\, SKP 723\, Deckenpendel
+DESCRIPTION:Auftraggeber: Universitätsspital Basel\nEingabefrist: 10.11.20
+ 26\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/dc51e
+ ef1-f9d8-4cce-bfbe-8c2f99766b9e/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/dc51eef1-f9d8-4cce-bfbe-8c2f99766b9e
+URL:https://auftragsregister.ch/de/auftrag/dc51eef1-f9d8-4cce-bfbe-8c2f9976
+ 6b9e/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Klinikum 2\, Phase 1\, SKP 723\, Deckenpen
+ del
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

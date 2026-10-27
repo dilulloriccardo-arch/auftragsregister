@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:73d32495-1903-4f7b-babc-e73f61c98b1e-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Eingabefrist: Heizungs-Installationen Fernheizwerk Winterthur
+DESCRIPTION:Auftraggeber: Stadtwerk Winterthur\nEingabefrist: 02.11.2026\, 
+ 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/73d32495-1
+ 903-4f7b-babc-e73f61c98b1e/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/73d32495-1903-4f7b-babc-e73f61c98b1e
+URL:https://auftragsregister.ch/de/auftrag/73d32495-1903-4f7b-babc-e73f61c9
+ 8b1e/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Heizungs-Installationen Fernheizwerk Winterthur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

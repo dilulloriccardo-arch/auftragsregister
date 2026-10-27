@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8d3feef-e6a0-46d2-9ed7-fe307471f537-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Délai de remise : LOS 2 Generator Hilfssysteme Kraftwerk Pradell
+ a
+DESCRIPTION:Acheteur public : Engadiner Kraftwerke AG\nDélai de remise
+  : 18.11.2026\nDans le registre : https://auftragsregister.ch/fr/auftr
+ ag/e8d3feef-e6a0-46d2-9ed7-fe307471f537/\nPublication officielle : https
+ ://www.simap.ch/fr/project-detail/e8d3feef-e6a0-46d2-9ed7-fe307471f537
+URL:https://auftragsregister.ch/fr/auftrag/e8d3feef-e6a0-46d2-9ed7-fe307471
+ f537/
+LOCATION:Pradella
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : LOS 2 Generator Hilfssysteme Kraftwerk Pra
+ della
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

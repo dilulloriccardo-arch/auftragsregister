@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb826f64-812b-4776-bd50-4ac3fa4b556e-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261109T225900Z
+SUMMARY:Submission deadline: 16.0249 - Langenthal\, Sanierung und Erweiteru
+ ng Berufsfachschule: 230 Elektroinstallationen
+DESCRIPTION:Public buyer: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nSubmission deadline: 9 Nov 2026\, 23:59\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/fb826f64-812b-4776-bd50-4ac3fa4b556e/\n
+ Official publication: https://www.simap.ch/en/project-detail/fb826f64-812b
+ -4776-bd50-4ac3fa4b556e
+URL:https://auftragsregister.ch/en/auftrag/fb826f64-812b-4776-bd50-4ac3fa4b
+ 556e/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 16.0249 - Langenthal\, Sanierung und Erwei
+ terung Berufsfachschule: 230 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

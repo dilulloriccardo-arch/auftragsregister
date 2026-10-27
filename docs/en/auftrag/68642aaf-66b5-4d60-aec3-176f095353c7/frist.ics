@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:68642aaf-66b5-4d60-aec3-176f095353c7-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Submission deadline: Réalisation d’une plateforme informatique d
+ e visualisation et partage d’indicateurs et données territoriales pour 
+ le Grand Genève
+DESCRIPTION:Public buyer: Direction du Projet d'Agglomération Grand Genèv
+ e\nSubmission deadline: 12 Nov 2026\, 12:00\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/68642aaf-66b5-4d60-aec3-176f095353c7/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/68642aaf-66b5-4d60-
+ aec3-176f095353c7
+URL:https://auftragsregister.ch/en/auftrag/68642aaf-66b5-4d60-aec3-176f0953
+ 53c7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Réalisation d’une plateforme informatiq
+ ue de visualisation et partage d’indicateurs et données territoriales p
+ our le Grand Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

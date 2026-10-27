@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0a2ec16-e599-4676-9e20-117ce989ef27-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Délai de remise : VS Weissenbühl\, Neubau BKP 379 Turnhallenaus
+ stattung
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 25.11.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/a0a2ec16-e599-4676-9e20-117ce989ef27/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/a0a2ec16-e5
+ 99-4676-9e20-117ce989ef27
+URL:https://auftragsregister.ch/fr/auftrag/a0a2ec16-e599-4676-9e20-117ce989
+ ef27/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : VS Weissenbühl\, Neubau BKP 379 Turnhalle
+ nausstattung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

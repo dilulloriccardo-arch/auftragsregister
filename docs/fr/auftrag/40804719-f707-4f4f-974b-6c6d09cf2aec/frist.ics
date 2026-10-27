@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40804719-f707-4f4f-974b-6c6d09cf2aec-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:0
+DTSTART:20261104T100000Z
+SUMMARY:Délai de remise : Rénovation complète des 3 tours Cité-joncti
+ on (M373TI) mandat d'ingénieur électricien
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 04.11.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/40804719-f707-4f4f-974b-6c6d09cf2ae
+ c/\nPublication officielle : https://www.simap.ch/fr/project-detail/4080
+ 4719-f707-4f4f-974b-6c6d09cf2aec
+URL:https://auftragsregister.ch/fr/auftrag/40804719-f707-4f4f-974b-6c6d09cf
+ 2aec/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation complète des 3 tours Cité-jo
+ nction (M373TI) mandat d'ingénieur électricien
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

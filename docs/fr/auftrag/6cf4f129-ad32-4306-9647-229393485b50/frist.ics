@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6cf4f129-ad32-4306-9647-229393485b50-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261123T083000Z
+SUMMARY:Délai de remise : Sagendorfstrasse\, Emmetten\, Renovation best.
+  Entwässerungssystem
+DESCRIPTION:Acheteur public : Politische Gemeinde Emmetten\nDélai de rem
+ ise : 23.11.2026\, 9 h 30\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/6cf4f129-ad32-4306-9647-229393485b50/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/6cf4f129-ad32-4306-9647-
+ 229393485b50
+URL:https://auftragsregister.ch/fr/auftrag/6cf4f129-ad32-4306-9647-22939348
+ 5b50/
+LOCATION:Emmetten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sagendorfstrasse\, Emmetten\, Renovation b
+ est. Entwässerungssystem
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

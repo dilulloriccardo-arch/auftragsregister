@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa3343da-5b3c-4a84-abc2-4e8081a639e3-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Délai de remise : (25002) 609 Swiss Government Cloud
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 18.12.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/aa3343da-5b3c-4a84-abc2-4e8081a639e3/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/aa3343da-5b3c
+ -4a84-abc2-4e8081a639e3
+URL:https://auftragsregister.ch/fr/auftrag/aa3343da-5b3c-4a84-abc2-4e8081a6
+ 39e3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (25002) 609 Swiss Government Cloud
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

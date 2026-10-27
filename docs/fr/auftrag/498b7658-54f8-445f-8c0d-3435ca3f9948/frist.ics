@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:498b7658-54f8-445f-8c0d-3435ca3f9948-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261129T150000Z
+SUMMARY:Délai de remise : Foodtrucks campus EPFL
+DESCRIPTION:Acheteur public : EPFL VPF ACHATS\nDélai de remise : 29.11
+ .2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/498b7658-54f8-445f-8c0d-3435ca3f9948/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/498b7658-54f8-445f-8c0d-3435ca3f9948
+URL:https://auftragsregister.ch/fr/auftrag/498b7658-54f8-445f-8c0d-3435ca3f
+ 9948/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Foodtrucks campus EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

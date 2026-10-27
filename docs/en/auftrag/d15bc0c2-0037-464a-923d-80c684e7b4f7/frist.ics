@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d15bc0c2-0037-464a-923d-80c684e7b4f7-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T090000Z
+SUMMARY:Submission deadline: Einwohnergemeinde Cham - Personenversicherunge
+ n per 01.01.2027
+DESCRIPTION:Public buyer: Einwohnergemeinde Cham\nSubmission deadline: 18 
+ Nov 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /d15bc0c2-0037-464a-923d-80c684e7b4f7/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/d15bc0c2-0037-464a-923d-80c684e7b4f7
+URL:https://auftragsregister.ch/en/auftrag/d15bc0c2-0037-464a-923d-80c684e7
+ b4f7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Einwohnergemeinde Cham - Personenversicher
+ ungen per 01.01.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

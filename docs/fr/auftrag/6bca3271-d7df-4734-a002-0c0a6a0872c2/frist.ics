@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6bca3271-d7df-4734-a002-0c0a6a0872c2-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261111T100000Z
+SUMMARY:Délai de remise : Rénovation de l'enveloppe et des installation
+ s techniques du Centre funéraire de Saint-Georges (2366TI) Ouvrages méta
+ lliques
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 11.11.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/6bca3271-d7df-4734-a002-0c0a6a0872c
+ 2/\nPublication officielle : https://www.simap.ch/fr/project-detail/6bca
+ 3271-d7df-4734-a002-0c0a6a0872c2
+URL:https://auftragsregister.ch/fr/auftrag/6bca3271-d7df-4734-a002-0c0a6a08
+ 72c2/
+LOCATION:Petit-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation de l'enveloppe et des installa
+ tions techniques du Centre funéraire de Saint-Georges (2366TI) Ouvrages m
+ étalliques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fd53429f-d3ed-44dd-923c-60d0f1f9779a-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Eingabefrist: Ausschreibung Baumeister und Abdichtung Instandsetzun
+ g und Instandhaltung - Baumeister – KAT.012
+DESCRIPTION:Auftraggeber: ETHOS Immobilien GmbH\nEingabefrist: 09.11.2026\,
+  16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/fd53429f-
+ d3ed-44dd-923c-60d0f1f9779a/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/fd53429f-d3ed-44dd-923c-60d0f1f9779a
+URL:https://auftragsregister.ch/de/auftrag/fd53429f-d3ed-44dd-923c-60d0f1f9
+ 779a/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ausschreibung Baumeister und Abdichtung Instandse
+ tzung und Instandhaltung - Baumeister – KAT.012
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

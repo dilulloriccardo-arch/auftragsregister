@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e53a3393-d821-432e-9c60-97b9729f4c34-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Délai de remise : Funiculaire de Chaumont - Remplacement du véh
+ icule et de la commande
+DESCRIPTION:Acheteur public : Transports Publics Neuchâtelois SA\nDélai
+  de remise : 27.11.2026\, 12 h 00\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/e53a3393-d821-432e-9c60-97b9729f4c34/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/e53a3393-d821-43
+ 2e-9c60-97b9729f4c34
+URL:https://auftragsregister.ch/fr/auftrag/e53a3393-d821-432e-9c60-97b9729f
+ 4c34/
+LOCATION:Chaumont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Funiculaire de Chaumont - Remplacement du 
+ véhicule et de la commande
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

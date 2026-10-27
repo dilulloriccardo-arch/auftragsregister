@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af90dd5e-1faf-4c49-8949-26e6ec0c3b1d-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Délai de remise : ContaiSIS_A1 / Acquisition de containers de pr
+ ogression au feu pour l’école du GSIS
+DESCRIPTION:Acheteur public : Centrale municipale d'achat et d'impression
+  de la Ville de Genève\nDélai de remise : 02.11.2026\, 12 h 00\nDa
+ ns le registre : https://auftragsregister.ch/fr/auftrag/af90dd5e-1faf-4c
+ 49-8949-26e6ec0c3b1d/\nPublication officielle : https://www.simap.ch/fr/
+ project-detail/af90dd5e-1faf-4c49-8949-26e6ec0c3b1d
+URL:https://auftragsregister.ch/fr/auftrag/af90dd5e-1faf-4c49-8949-26e6ec0c
+ 3b1d/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ContaiSIS_A1 / Acquisition de containers d
+ e progression au feu pour l’école du GSIS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

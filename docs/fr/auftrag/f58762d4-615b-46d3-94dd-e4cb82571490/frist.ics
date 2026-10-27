@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f58762d4-615b-46d3-94dd-e4cb82571490-frist@auftragsregister.ch
+DTSTAMP:20260907T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Délai de remise : KZO l Leuchtenersatz l BKP 232-02 Elektroanlag
+ en
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Zürich\nDélai de remise
+  : 06.11.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/f58762d4-615b-46d3-94dd-e4cb82571490/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/f58762d4-615b-46d3-94dd-e4
+ cb82571490
+URL:https://auftragsregister.ch/fr/auftrag/f58762d4-615b-46d3-94dd-e4cb8257
+ 1490/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : KZO l Leuchtenersatz l BKP 232-02 Elektroa
+ nlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

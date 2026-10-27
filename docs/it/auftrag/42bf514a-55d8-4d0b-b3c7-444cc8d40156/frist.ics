@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:42bf514a-55d8-4d0b-b3c7-444cc8d40156-frist@auftragsregister.ch
+DTSTAMP:20261025T000000Z
+SEQUENCE:0
+DTSTART:20270115T100000Z
+SUMMARY:Scadenza: Pächterried Provisorium 2027 (Modulbau\, Container)\, Re
+ gensdorf
+DESCRIPTION:Ente pubblico: Gemeinde Regensdorf (Landis AG)\nScadenza: 15.01
+ .2027\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/42bf51
+ 4a-55d8-4d0b-b3c7-444cc8d40156/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/42bf514a-55d8-4d0b-b3c7-444cc8d40156
+URL:https://auftragsregister.ch/it/auftrag/42bf514a-55d8-4d0b-b3c7-444cc8d4
+ 0156/
+LOCATION:Regensdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Pächterried Provisorium 2027 (Modulbau\, Container)\
+ , Regensdorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

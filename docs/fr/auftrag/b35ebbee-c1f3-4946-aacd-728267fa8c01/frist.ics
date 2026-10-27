@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b35ebbee-c1f3-4946-aacd-728267fa8c01-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:1
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Délai de remise : BKP 243 Installations de chauffage - APB-00027
+ 4-30 Thun\, Polygon\, Rénovation de l'enveloppe du bâtiment et des insta
+ llations techniques du bâtiment
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  31.10.2026\nDans le registre : https://auftragsregister.ch/fr/auftrag/b
+ 35ebbee-c1f3-4946-aacd-728267fa8c01/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/b35ebbee-c1f3-4946-aacd-728267fa8c01
+URL:https://auftragsregister.ch/fr/auftrag/b35ebbee-c1f3-4946-aacd-728267fa
+ 8c01/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 243 Installations de chauffage - APB-0
+ 00274-30 Thun\, Polygon\, Rénovation de l'enveloppe du bâtiment et des i
+ nstallations techniques du bâtiment
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49d0c46a-cffc-49be-be34-137f324120fc-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261111T130000Z
+SUMMARY:Submission deadline: Low-voltage and medium-voltage cables
+DESCRIPTION:Public buyer: CKW AG\nSubmission deadline: 11 Nov 2026\, 14:0
+ 0\nIn the register: https://auftragsregister.ch/en/auftrag/49d0c46a-cffc-4
+ 9be-be34-137f324120fc/\nOfficial publication: https://www.simap.ch/en/proj
+ ect-detail/49d0c46a-cffc-49be-be34-137f324120fc
+URL:https://auftragsregister.ch/en/auftrag/49d0c46a-cffc-49be-be34-137f3241
+ 20fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Low-voltage and medium-voltage cables
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

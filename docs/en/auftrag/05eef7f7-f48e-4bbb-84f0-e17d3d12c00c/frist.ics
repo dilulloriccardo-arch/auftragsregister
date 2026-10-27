@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:05eef7f7-f48e-4bbb-84f0-e17d3d12c00c-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261119T103000Z
+SUMMARY:Submission deadline: Mise en œuvre et gestion des activités assur
+ antielles de la Caisse Santé Genève
+DESCRIPTION:Public buyer: Département de la santé et des mobilités (DSM)
+  - Secrétariat général\nSubmission deadline: 19 Nov 2026\, 11:30\nIn 
+ the register: https://auftragsregister.ch/en/auftrag/05eef7f7-f48e-4bbb-84
+ f0-e17d3d12c00c/\nOfficial publication: https://www.simap.ch/en/project-de
+ tail/05eef7f7-f48e-4bbb-84f0-e17d3d12c00c
+URL:https://auftragsregister.ch/en/auftrag/05eef7f7-f48e-4bbb-84f0-e17d3d12
+ c00c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mise en œuvre et gestion des activités a
+ ssurantielles de la Caisse Santé Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

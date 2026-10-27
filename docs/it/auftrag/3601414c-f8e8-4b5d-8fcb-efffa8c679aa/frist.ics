@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3601414c-f8e8-4b5d-8fcb-efffa8c679aa-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:1
+DTSTART:20261123T153000Z
+SUMMARY:Scadenza: Logement ouvrier Budé – Rénovation énergétique
+DESCRIPTION:Ente pubblico: Office cantonal des bâtiments (OCBA)\nScadenza:
+  23.11.2026\, 16:30\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 3601414c-f8e8-4b5d-8fcb-efffa8c679aa/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/3601414c-f8e8-4b5d-8fcb-efffa8c679aa
+URL:https://auftragsregister.ch/it/auftrag/3601414c-f8e8-4b5d-8fcb-efffa8c6
+ 79aa/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Logement ouvrier Budé – Rénovation énergétique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:890ffa4b-5190-4bce-9063-154c2a05ac77-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261113T210000Z
+SUMMARY:Submission deadline: VSZK - Ausschreibung BKP 235 Zutrittskontrolle
+DESCRIPTION:Public buyer: Hochbauamt Kanton Schwyz\nSubmission deadline: 13
+  Nov 2026\, 22:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/890ffa4b-5190-4bce-9063-154c2a05ac77/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/890ffa4b-5190-4bce-9063-154c2a05ac77
+URL:https://auftragsregister.ch/en/auftrag/890ffa4b-5190-4bce-9063-154c2a05
+ ac77/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: VSZK - Ausschreibung BKP 235 Zutrittskontr
+ olle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

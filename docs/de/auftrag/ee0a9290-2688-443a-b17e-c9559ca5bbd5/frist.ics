@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee0a9290-2688-443a-b17e-c9559ca5bbd5-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:1
+DTSTART:20261118T150000Z
+SUMMARY:Eingabefrist: Planerwahlverfahren «Provisorium und Parkhaus für d
+ ie Zuger Polizei sowie Ersatz Salzlager» auf dem Areal Hinterberg in Stei
+ nhausen
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Zug\nEingabefrist: 18.11.2026\,
+  16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ee0a9290-
+ 2688-443a-b17e-c9559ca5bbd5/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/ee0a9290-2688-443a-b17e-c9559ca5bbd5
+URL:https://auftragsregister.ch/de/auftrag/ee0a9290-2688-443a-b17e-c9559ca5
+ bbd5/
+LOCATION:Steinhausen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Planerwahlverfahren «Provisorium und Parkhaus f
+ ür die Zuger Polizei sowie Ersatz Salzlager» auf dem Areal Hinterberg in
+  Steinhausen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95d631c0-fe02-4f2c-be3e-07bccd0bc6e8-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Submission deadline: AO SI FM BATIMENTS II 2026
+DESCRIPTION:Public buyer: Service de conseil et de soutien pour les marché
+ s publics de l'Université de Genève\nSubmission deadline: 17 Nov 2026\
+ , 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/95d631c0-
+ fe02-4f2c-be3e-07bccd0bc6e8/\nOfficial publication: https://www.simap.ch/e
+ n/project-detail/95d631c0-fe02-4f2c-be3e-07bccd0bc6e8
+URL:https://auftragsregister.ch/en/auftrag/95d631c0-fe02-4f2c-be3e-07bccd0b
+ c6e8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AO SI FM BATIMENTS II 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

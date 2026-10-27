@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f15f6b4-8200-464d-992e-e3efeabac1f4-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:1
+DTSTART:20261102T225900Z
+SUMMARY:Submission deadline: AMÉNAGEMENT DES ESPACES EXTÉRIEURS PUBLICS -
+  Quartier de Surville
+DESCRIPTION:Public buyer: Ville de Lancy (Techdata SA)\nSubmission deadline
+ : 2 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/5f15f6b4-8200-464d-992e-e3efeabac1f4/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/5f15f6b4-8200-464d-992e-e3efeabac1f4
+URL:https://auftragsregister.ch/en/auftrag/5f15f6b4-8200-464d-992e-e3efeaba
+ c1f4/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AMÉNAGEMENT DES ESPACES EXTÉRIEURS PUBLI
+ CS - Quartier de Surville
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

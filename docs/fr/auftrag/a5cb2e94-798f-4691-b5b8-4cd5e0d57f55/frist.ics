@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5cb2e94-798f-4691-b5b8-4cd5e0d57f55-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : K 10 Escholzmatt-Marbach\, Ausbau RVA
+DESCRIPTION:Acheteur public : Verkehr und Infrastruktur (vif)\, Planung S
+ trassen\nDélai de remise : 09.11.2026\, 16 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/a5cb2e94-798f-4691-b5b8-4cd5e0
+ d57f55/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /a5cb2e94-798f-4691-b5b8-4cd5e0d57f55
+URL:https://auftragsregister.ch/fr/auftrag/a5cb2e94-798f-4691-b5b8-4cd5e0d5
+ 7f55/
+LOCATION:Kriens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : K 10 Escholzmatt-Marbach\, Ausbau RVA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

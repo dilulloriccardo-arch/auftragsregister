@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:694611dc-789e-4ebc-ba74-9a2773212969-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261115T225900Z
+SUMMARY:Submission deadline: BKS-2245: Durchführung der Schweizerischen Ar
+ beitskräfteerhebung (SAKE) 2028–2032\, ohne Wellenkomplettierung 2028 
+ – 2029\, mit Wellenkomplettierung 2033 – 2034
+DESCRIPTION:Public buyer: Bundesamt für Statistik\nSubmission deadline: 15
+  Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/694611dc-789e-4ebc-ba74-9a2773212969/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/694611dc-789e-4ebc-ba74-9a2773212969
+URL:https://auftragsregister.ch/en/auftrag/694611dc-789e-4ebc-ba74-9a277321
+ 2969/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKS-2245: Durchführung der Schweizerische
+ n Arbeitskräfteerhebung (SAKE) 2028–2032\, ohne Wellenkomplettierung 20
+ 28 – 2029\, mit Wellenkomplettierung 2033 – 2034
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

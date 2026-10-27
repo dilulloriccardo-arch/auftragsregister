@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f964ba2b-7b49-454e-9f07-b8cecebf82f2-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261118T090000Z
+SUMMARY:Eingabefrist: Bauma/Sternenberg: Aufhebung KLARA Matt und KLARA Lac
+ hen
+DESCRIPTION:Auftraggeber: Wasserversorgung\nEingabefrist: 18.11.2026\, 10.0
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/f964ba2b-7b49-
+ 454e-9f07-b8cecebf82f2/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/f964ba2b-7b49-454e-9f07-b8cecebf82f2
+URL:https://auftragsregister.ch/de/auftrag/f964ba2b-7b49-454e-9f07-b8cecebf
+ 82f2/
+LOCATION:Sternenberg / Bauma
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bauma/Sternenberg: Aufhebung KLARA Matt und KLARA
+  Lachen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

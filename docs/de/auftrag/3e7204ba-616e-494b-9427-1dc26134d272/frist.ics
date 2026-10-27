@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e7204ba-616e-494b-9427-1dc26134d272-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Eingabefrist: 271 01 Gipserarbeiten - Nassputze
+DESCRIPTION:Auftraggeber: Vollenweider Baurealisation GmbH\nEingabefrist: 2
+ 0.11.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/3e7204ba-616e-494b-9427-1dc26134d272/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/3e7204ba-616e-494b-9427-1dc26134d272
+URL:https://auftragsregister.ch/de/auftrag/3e7204ba-616e-494b-9427-1dc26134
+ d272/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 271 01 Gipserarbeiten - Nassputze
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed2650bd-55af-44c3-8c5a-b0947d1b949b-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261030T110000Z
+SUMMARY:Eingabefrist: Praille-Acacias-Vernets (PAV) - Secteur Acacias 2 - M
+ andat pluridisciplinaire de maîtrise d’œuvre urbaine
+DESCRIPTION:Auftraggeber: Direction Praille-Acacias Vernets (DPAV) (Irbis C
+ onsulting SA)\nEingabefrist: 30.10.2026\, 12.00 Uhr\nIm Register: https:/
+ /auftragsregister.ch/de/auftrag/ed2650bd-55af-44c3-8c5a-b0947d1b949b/\nAmt
+ liche Publikation: https://www.simap.ch/de/project-detail/ed2650bd-55af-44
+ c3-8c5a-b0947d1b949b
+URL:https://auftragsregister.ch/de/auftrag/ed2650bd-55af-44c3-8c5a-b0947d1b
+ 949b/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Praille-Acacias-Vernets (PAV) - Secteur Acacias 2
+  - Mandat pluridisciplinaire de maîtrise d’œuvre urbaine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

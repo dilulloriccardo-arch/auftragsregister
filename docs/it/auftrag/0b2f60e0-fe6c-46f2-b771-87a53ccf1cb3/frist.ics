@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0b2f60e0-fe6c-46f2-b771-87a53ccf1cb3-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:1
+DTSTART:20261208T130000Z
+SUMMARY:Scadenza: Gesamtmelioration (GM) Nusshof BL / Ingenieur-\, Vermessu
+ ngs- und Planungsarbeiten
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Nusshof\nScadenza: 08.12.2026\
+ , 14:00\nNel registro: https://auftragsregister.ch/it/auftrag/0b2f60e0-fe6
+ c-46f2-b771-87a53ccf1cb3/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/0b2f60e0-fe6c-46f2-b771-87a53ccf1cb3
+URL:https://auftragsregister.ch/it/auftrag/0b2f60e0-fe6c-46f2-b771-87a53ccf
+ 1cb3/
+LOCATION:Nusshof
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gesamtmelioration (GM) Nusshof BL / Ingenieur-\, Verm
+ essungs- und Planungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

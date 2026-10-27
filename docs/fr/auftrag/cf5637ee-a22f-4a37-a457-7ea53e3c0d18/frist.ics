@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf5637ee-a22f-4a37-a457-7ea53e3c0d18-frist@auftragsregister.ch
+DTSTAMP:20260820T000000Z
+SEQUENCE:1
+DTSTART:20261214T225900Z
+SUMMARY:Délai de remise : (26067) 420 Interprétariat communautaire pour
+  les requérants d'asile
+DESCRIPTION:Acheteur public : Staatssekretariat für Migration\nDélai de
+  remise : 14.12.2026\, 23 h 59\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/cf5637ee-a22f-4a37-a457-7ea53e3c0d18/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/cf5637ee-a22f-4a37-
+ a457-7ea53e3c0d18
+URL:https://auftragsregister.ch/fr/auftrag/cf5637ee-a22f-4a37-a457-7ea53e3c
+ 0d18/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26067) 420 Interprétariat communautaire 
+ pour les requérants d'asile
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

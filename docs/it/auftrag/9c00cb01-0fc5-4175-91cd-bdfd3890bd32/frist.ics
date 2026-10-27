@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9c00cb01-0fc5-4175-91cd-bdfd3890bd32-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T220000Z
+SUMMARY:Scadenza: E-Hubarbeitsbühne 26m
+DESCRIPTION:Ente pubblico: Gemeinde Köniz\, Abteilung Verkehr und Unterhal
+ t\nScadenza: 30.11.2026\, 23:00\nNel registro: https://auftragsregister.ch
+ /it/auftrag/9c00cb01-0fc5-4175-91cd-bdfd3890bd32/\nPubblicazione ufficiale
+ : https://www.simap.ch/it/project-detail/9c00cb01-0fc5-4175-91cd-bdfd3890b
+ d32
+URL:https://auftragsregister.ch/it/auftrag/9c00cb01-0fc5-4175-91cd-bdfd3890
+ bd32/
+LOCATION:Köniz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: E-Hubarbeitsbühne 26m
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c91b748c-f9bc-4aae-826c-58ed3de09faa-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T090000Z
+SUMMARY:Submission deadline: Equipment for powdered activated carbon
+DESCRIPTION:Public buyer: Zweckverband ARA Rorguet\nSubmission deadline: 11
+  Nov 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/c91b748c-f9bc-4aae-826c-58ed3de09faa/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/c91b748c-f9bc-4aae-826c-58ed3de09faa
+URL:https://auftragsregister.ch/en/auftrag/c91b748c-f9bc-4aae-826c-58ed3de0
+ 9faa/
+LOCATION:Meilen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Equipment for powdered activated carbon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

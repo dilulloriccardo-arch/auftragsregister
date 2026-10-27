@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5aa771e1-bd27-456a-a6b0-074a8f0cb4d2-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Submission deadline: BKP 211 Baumeister + BKP 112\, 114 Rückbau - 
+ Thun\, Polygon\, Sanierung Gebäudehülle Haustechnik
+DESCRIPTION:Public buyer: armasuisse Immobilien\nSubmission deadline: 19 N
+ ov 2026\nIn the register: https://auftragsregister.ch/en/auftrag/5aa771e1
+ -bd27-456a-a6b0-074a8f0cb4d2/\nOfficial publication: https://www.simap.ch/
+ en/project-detail/5aa771e1-bd27-456a-a6b0-074a8f0cb4d2
+URL:https://auftragsregister.ch/en/auftrag/5aa771e1-bd27-456a-a6b0-074a8f0c
+ b4d2/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 211 Baumeister + BKP 112\, 114 Rückba
+ u - Thun\, Polygon\, Sanierung Gebäudehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

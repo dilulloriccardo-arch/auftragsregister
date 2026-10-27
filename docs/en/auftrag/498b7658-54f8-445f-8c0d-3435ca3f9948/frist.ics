@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:498b7658-54f8-445f-8c0d-3435ca3f9948-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261129T150000Z
+SUMMARY:Submission deadline: Foodtrucks campus EPFL
+DESCRIPTION:Public buyer: EPFL VPF ACHATS\nSubmission deadline: 29 Nov 20
+ 26\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/498b76
+ 58-54f8-445f-8c0d-3435ca3f9948/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/498b7658-54f8-445f-8c0d-3435ca3f9948
+URL:https://auftragsregister.ch/en/auftrag/498b7658-54f8-445f-8c0d-3435ca3f
+ 9948/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Foodtrucks campus EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

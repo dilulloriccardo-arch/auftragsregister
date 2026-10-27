@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:47a33e10-4ea5-4884-a912-da8521df2a98-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261208T140000Z
+SUMMARY:Délai de remise : HUG - Mat4 - CFC 221.1 Fenêtres en bois-méta
+ l
+DESCRIPTION:Acheteur public : Centrale d'achats et d'ingénierie biomédi
+ cale Vaud-Genève (CAIB)\nDélai de remise : 08.12.2026\, 15 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/47a33e10-4ea5-4
+ 884-a912-da8521df2a98/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/47a33e10-4ea5-4884-a912-da8521df2a98
+URL:https://auftragsregister.ch/fr/auftrag/47a33e10-4ea5-4884-a912-da8521df
+ 2a98/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : HUG - Mat4 - CFC 221.1 Fenêtres en bois-m
+ étal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

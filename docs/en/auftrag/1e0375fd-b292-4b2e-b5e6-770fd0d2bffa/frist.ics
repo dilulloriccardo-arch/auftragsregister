@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1e0375fd-b292-4b2e-b5e6-770fd0d2bffa-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20270205T220000Z
+SUMMARY:Submission deadline: KW Lötschen - Rehab Generatoren
+DESCRIPTION:Public buyer: enalpin AG\nSubmission deadline: 5 Feb 2027\, 2
+ 3:00\nIn the register: https://auftragsregister.ch/en/auftrag/1e0375fd-b29
+ 2-4b2e-b5e6-770fd0d2bffa/\nOfficial publication: https://www.simap.ch/en/p
+ roject-detail/1e0375fd-b292-4b2e-b5e6-770fd0d2bffa
+URL:https://auftragsregister.ch/en/auftrag/1e0375fd-b292-4b2e-b5e6-770fd0d2
+ bffa/
+LOCATION:Steg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: KW Lötschen - Rehab Generatoren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

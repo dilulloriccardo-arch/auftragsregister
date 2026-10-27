@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dde4c624-fda9-404c-a168-02fb742d368d-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T140000Z
+SUMMARY:Délai de remise : Achat de papier-valeur pour billets
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Konzernei
+ nkauf Dienstleistungen\nDélai de remise : 19.11.2026\, 15 h 00\nDan
+ s le registre : https://auftragsregister.ch/fr/auftrag/dde4c624-fda9-404
+ c-a168-02fb742d368d/\nPublication officielle : https://www.simap.ch/fr/p
+ roject-detail/dde4c624-fda9-404c-a168-02fb742d368d
+URL:https://auftragsregister.ch/fr/auftrag/dde4c624-fda9-404c-a168-02fb742d
+ 368d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Achat de papier-valeur pour billets
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

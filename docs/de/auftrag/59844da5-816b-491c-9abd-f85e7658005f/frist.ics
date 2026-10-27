@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:59844da5-816b-491c-9abd-f85e7658005f-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Eingabefrist: KBZSG\, Kreuzbleicheweg 4\, 9000 St.Gallen\, Erneueru
+ ng Beleuchtung - BKP 232 Starkstrominstallationen
+DESCRIPTION:Auftraggeber: Kanton St.Gallen\, Bau- und Umweltdepartement\, H
+ ochbauamt\nEingabefrist: 02.11.2026\, 23.59 Uhr\nIm Register: https://auf
+ tragsregister.ch/de/auftrag/59844da5-816b-491c-9abd-f85e7658005f/\nAmtlich
+ e Publikation: https://www.simap.ch/de/project-detail/59844da5-816b-491c-9
+ abd-f85e7658005f
+URL:https://auftragsregister.ch/de/auftrag/59844da5-816b-491c-9abd-f85e7658
+ 005f/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: KBZSG\, Kreuzbleicheweg 4\, 9000 St.Gallen\, Erne
+ uerung Beleuchtung - BKP 232 Starkstrominstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ba1d2ed4-69a6-4006-937e-7447fa5807b7-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Délai de remise : Appel d'offres pour préstations d'assurance r
+ élatives à des assurances collectives indemnités journalières en domai
+ ne LCA avec éxténsion LAMAL et LAINF\, adaptées au CCT du client.
+DESCRIPTION:Acheteur public : Gatti Legal (per Fondazione Casa Faro)\nDé
+ lai de remise : 16.11.2026\, 10 h 00\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/ba1d2ed4-69a6-4006-937e-7447fa5807b7/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/ba1d2ed4-69a6
+ -4006-937e-7447fa5807b7
+URL:https://auftragsregister.ch/fr/auftrag/ba1d2ed4-69a6-4006-937e-7447fa58
+ 07b7/
+LOCATION:Riazzino
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offres pour préstations d'assuran
+ ce rélatives à des assurances collectives indemnités journalières en d
+ omaine LCA avec éxténsion LAMAL et LAINF\, adaptées au CCT du client.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

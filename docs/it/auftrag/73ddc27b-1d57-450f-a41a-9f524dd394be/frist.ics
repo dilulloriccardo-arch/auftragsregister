@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:73ddc27b-1d57-450f-a41a-9f524dd394be-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261127T100000Z
+SUMMARY:Scadenza: BHNS Veyrier - DD1 & DD2 - mandat d’ingénieur civil
+DESCRIPTION:Ente pubblico: OCGC - DPC - Service des Infrastructures Transpo
+ rts Publics\nScadenza: 27.11.2026\, 11:00\nNel registro: https://auftragsr
+ egister.ch/it/auftrag/73ddc27b-1d57-450f-a41a-9f524dd394be/\nPubblicazione
+  ufficiale: https://www.simap.ch/it/project-detail/73ddc27b-1d57-450f-a41a
+ -9f524dd394be
+URL:https://auftragsregister.ch/it/auftrag/73ddc27b-1d57-450f-a41a-9f524dd3
+ 94be/
+LOCATION:VEYRIER / CAROUGE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BHNS Veyrier - DD1 & DD2 - mandat d’ingénieur civi
+ l
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

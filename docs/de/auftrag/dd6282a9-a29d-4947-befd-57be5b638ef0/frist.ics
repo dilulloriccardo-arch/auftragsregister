@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd6282a9-a29d-4947-befd-57be5b638ef0-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261112T130000Z
+SUMMARY:Eingabefrist: BKP 283.4 Wand- und Deckenverkleidungen in Holz Weiss
+ es Schulhaus Schulanlage 3422 Alchenflüh
+DESCRIPTION:Auftraggeber: Atelier GSW Partner AG\nEingabefrist: 12.11.2026\
+ , 14.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/dd6282a9
+ -a29d-4947-befd-57be5b638ef0/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/dd6282a9-a29d-4947-befd-57be5b638ef0
+URL:https://auftragsregister.ch/de/auftrag/dd6282a9-a29d-4947-befd-57be5b63
+ 8ef0/
+LOCATION:Rüdtligen- Alchenflüh
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 283.4 Wand- und Deckenverkleidungen in Holz W
+ eisses Schulhaus Schulanlage 3422 Alchenflüh
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

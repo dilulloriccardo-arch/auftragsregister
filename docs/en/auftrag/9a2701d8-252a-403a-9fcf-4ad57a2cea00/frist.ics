@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a2701d8-252a-403a-9fcf-4ad57a2cea00-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T080000Z
+SUMMARY:Submission deadline: IWB\, Lieferung von Weissfeinkalk ungelöscht 
+ (CaO)
+DESCRIPTION:Public buyer: IWB Industrielle Werke Basel\nSubmission deadline
+ : 11 Nov 2026\, 09:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/9a2701d8-252a-403a-9fcf-4ad57a2cea00/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/9a2701d8-252a-403a-9fcf-4ad57a2cea00
+URL:https://auftragsregister.ch/en/auftrag/9a2701d8-252a-403a-9fcf-4ad57a2c
+ ea00/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: IWB\, Lieferung von Weissfeinkalk ungelös
+ cht (CaO)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

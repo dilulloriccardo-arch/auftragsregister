@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efba8a59-542f-45ec-8061-71091cf1289d-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: Concorso raccolta dei rifiuti solidi urbani (RSU)
+DESCRIPTION:Ente pubblico: Municipio di Stabio\nScadenza: 09.11.2026\, 16:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/efba8a59-542f-45ec
+ -8061-71091cf1289d/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/efba8a59-542f-45ec-8061-71091cf1289d
+URL:https://auftragsregister.ch/it/auftrag/efba8a59-542f-45ec-8061-71091cf1
+ 289d/
+LOCATION:Stabio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso raccolta dei rifiuti solidi urbani (RSU)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

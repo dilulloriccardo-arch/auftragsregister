@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:578b49c7-2b75-44c2-9b98-a358ba69f972-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : Kopie SKP 244/245 Lüftungs- und Klimaanlagen
+DESCRIPTION:Acheteur public : Insel Gruppe AG\nDélai de remise : 30.11
+ .2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/578b49c7-2b75-44c2-9b98-a358ba69f972/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/578b49c7-2b75-44c2-9b98-a358ba69f972
+URL:https://auftragsregister.ch/fr/auftrag/578b49c7-2b75-44c2-9b98-a358ba69
+ f972/
+LOCATION:Riggisberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kopie SKP 244/245 Lüftungs- und Klimaanla
+ gen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

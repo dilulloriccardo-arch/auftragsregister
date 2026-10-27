@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab03f175-e76c-4b87-890e-9f4b4fd4d3dc-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261214T130000Z
+SUMMARY:Scadenza: ROKS TP7: Los Turbine
+DESCRIPTION:Ente pubblico: Engadiner Kraftwerke AG\nScadenza: 14.12.2026\, 
+ 14:00\nNel registro: https://auftragsregister.ch/it/auftrag/ab03f175-e76c-
+ 4b87-890e-9f4b4fd4d3dc/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/ab03f175-e76c-4b87-890e-9f4b4fd4d3dc
+URL:https://auftragsregister.ch/it/auftrag/ab03f175-e76c-4b87-890e-9f4b4fd4
+ d3dc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ROKS TP7: Los Turbine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

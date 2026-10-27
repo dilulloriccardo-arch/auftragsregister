@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f97b1f3f-be1b-4af0-b038-0df9331fec12-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261028T160000Z
+SUMMARY:Délai de remise : SVGER l 14041 l BKP 213.2 Montagebau in Stahl
+DESCRIPTION:Acheteur public : Hochbauamt\, Baubereich B\nDélai de remise
+  : 28.10.2026\, 17 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/f97b1f3f-be1b-4af0-b038-0df9331fec12/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/f97b1f3f-be1b-4af0-b038-0d
+ f9331fec12
+URL:https://auftragsregister.ch/fr/auftrag/f97b1f3f-be1b-4af0-b038-0df9331f
+ ec12/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : SVGER l 14041 l BKP 213.2 Montagebau in St
+ ahl
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

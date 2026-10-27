@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62465267-7f95-4d7c-a8ab-07465eb32d2b-frist@auftragsregister.ch
+DTSTAMP:20260817T000000Z
+SEQUENCE:0
+DTSTART:20270125T160000Z
+SUMMARY:Submission deadline: Areal "Tschuopis" in Littau Luzern: Abgabe im 
+ Baurecht an gemeinnützige Wohnbauträger
+DESCRIPTION:Public buyer: Stadt Luzern\, Immobilien\nSubmission deadline: 2
+ 5 Jan 2027\, 17:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/62465267-7f95-4d7c-a8ab-07465eb32d2b/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/62465267-7f95-4d7c-a8ab-07465eb32d2b
+URL:https://auftragsregister.ch/en/auftrag/62465267-7f95-4d7c-a8ab-07465eb3
+ 2d2b/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Areal "Tschuopis" in Littau Luzern: Abgabe
+  im Baurecht an gemeinnützige Wohnbauträger
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

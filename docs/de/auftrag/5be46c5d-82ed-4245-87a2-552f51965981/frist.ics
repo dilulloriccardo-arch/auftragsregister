@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5be46c5d-82ed-4245-87a2-552f51965981-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Eingabefrist: ITAM - Remplacement Discovery
+DESCRIPTION:Auftraggeber: Etat de Vaud\, DGNSI - Direction générale du nu
+ mérique et des systèmes d'information\nEingabefrist: 27.11.2026\, 12.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5be46c5d-82ed-4
+ 245-87a2-552f51965981/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/5be46c5d-82ed-4245-87a2-552f51965981
+URL:https://auftragsregister.ch/de/auftrag/5be46c5d-82ed-4245-87a2-552f5196
+ 5981/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ITAM - Remplacement Discovery
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

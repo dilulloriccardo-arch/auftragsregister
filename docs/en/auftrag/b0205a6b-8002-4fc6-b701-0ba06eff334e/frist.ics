@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b0205a6b-8002-4fc6-b701-0ba06eff334e-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Submission deadline: ZAB - Tiefgarage - Elektroinstallationen
+DESCRIPTION:Public buyer: ZAB Zweckverband Abfallverwertung Bazenheid\nSubm
+ ission deadline: 23 Nov 2026\, 12:00\nIn the register: https://auftragsr
+ egister.ch/en/auftrag/b0205a6b-8002-4fc6-b701-0ba06eff334e/\nOfficial publ
+ ication: https://www.simap.ch/en/project-detail/b0205a6b-8002-4fc6-b701-0b
+ a06eff334e
+URL:https://auftragsregister.ch/en/auftrag/b0205a6b-8002-4fc6-b701-0ba06eff
+ 334e/
+LOCATION:Bazenheid
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ZAB - Tiefgarage - Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

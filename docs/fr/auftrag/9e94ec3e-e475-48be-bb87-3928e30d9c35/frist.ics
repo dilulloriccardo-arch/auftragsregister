@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9e94ec3e-e475-48be-bb87-3928e30d9c35-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : Assicurazione collettiva d'indennità giornali
+ era in caso di malattia
+DESCRIPTION:Acheteur public : Sanimed Sagl\nDélai de remise : 30.11.20
+ 26\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/auft
+ rag/9e94ec3e-e475-48be-bb87-3928e30d9c35/\nPublication officielle : http
+ s://www.simap.ch/fr/project-detail/9e94ec3e-e475-48be-bb87-3928e30d9c35
+URL:https://auftragsregister.ch/fr/auftrag/9e94ec3e-e475-48be-bb87-3928e30d
+ 9c35/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assicurazione collettiva d'indennità gior
+ naliera in caso di malattia
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

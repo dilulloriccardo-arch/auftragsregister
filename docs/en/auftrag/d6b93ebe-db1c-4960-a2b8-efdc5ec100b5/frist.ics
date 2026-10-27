@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6b93ebe-db1c-4960-a2b8-efdc5ec100b5-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261112T225900Z
+SUMMARY:Submission deadline: Baumeisterarbeiten Deckbelagserneuerung Haupts
+ trasse Oberried
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Bern\nSubmission deadline:
+  12 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/d6b93ebe-db1c-4960-a2b8-efdc5ec100b5/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/d6b93ebe-db1c-4960-a2b8-efdc5ec100b5
+URL:https://auftragsregister.ch/en/auftrag/d6b93ebe-db1c-4960-a2b8-efdc5ec1
+ 00b5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Baumeisterarbeiten Deckbelagserneuerung Ha
+ uptstrasse Oberried
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

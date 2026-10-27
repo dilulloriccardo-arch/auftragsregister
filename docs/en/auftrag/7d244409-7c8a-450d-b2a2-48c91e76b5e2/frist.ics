@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7d244409-7c8a-450d-b2a2-48c91e76b5e2-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T090000Z
+SUMMARY:Submission deadline: Travaux de génie civil pour les interventions
+  d'urgence SIG sur le canton de Genève
+DESCRIPTION:Public buyer: Services industriels de Genève (SIG) - Direction
+  Achats\nSubmission deadline: 1 Dec 2026\, 10:00\nIn the register: https
+ ://auftragsregister.ch/en/auftrag/7d244409-7c8a-450d-b2a2-48c91e76b5e2/\nO
+ fficial publication: https://www.simap.ch/en/project-detail/7d244409-7c8a-
+ 450d-b2a2-48c91e76b5e2
+URL:https://auftragsregister.ch/en/auftrag/7d244409-7c8a-450d-b2a2-48c91e76
+ b5e2/
+LOCATION:genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Travaux de génie civil pour les intervent
+ ions d'urgence SIG sur le canton de Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

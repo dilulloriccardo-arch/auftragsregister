@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f84362b3-f822-4535-9661-0b5e6207499c-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Délai de remise : Camion électrique
+DESCRIPTION:Acheteur public : envevi\nDélai de remise : 12.11.2026\, 1
+ 2 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/f8
+ 4362b3-f822-4535-9661-0b5e6207499c/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/f84362b3-f822-4535-9661-0b5e6207499c
+URL:https://auftragsregister.ch/fr/auftrag/f84362b3-f822-4535-9661-0b5e6207
+ 499c/
+LOCATION:Uvrier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Camion électrique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

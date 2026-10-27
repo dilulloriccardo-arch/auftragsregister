@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4508015b-0dd5-42d2-927b-2f6240afc989-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Eingabefrist: SRIV Volketswil\, 760 Kindhauserstrasse\, km 0.030-0.
+ 395\, Chappelikreisel bis Ifangkreisel\, Tiefbauarbeiten
+DESCRIPTION:Auftraggeber: Tiefbauamt\, Abt. Strasseninspektorat\nEingabefri
+ st: 09.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/4508015b-0dd5-42d2-927b-2f6240afc989/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/4508015b-0dd5-42d2-927b-2f6240afc989
+URL:https://auftragsregister.ch/de/auftrag/4508015b-0dd5-42d2-927b-2f6240af
+ c989/
+LOCATION:Volketswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: SRIV Volketswil\, 760 Kindhauserstrasse\, km 0.03
+ 0-0.395\, Chappelikreisel bis Ifangkreisel\, Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

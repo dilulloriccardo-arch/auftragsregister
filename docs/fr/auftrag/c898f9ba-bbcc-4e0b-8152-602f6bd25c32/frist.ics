@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c898f9ba-bbcc-4e0b-8152-602f6bd25c32-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T225900Z
+SUMMARY:Délai de remise : (26232) 341 Laboratoires nationaux de référe
+ nce (LNR) relevant de la loi sur les denrées alimentaires (LDAl) désign
+ és pour la période 2027 à 2031
+DESCRIPTION:Acheteur public : Bundesamt für Lebensmittelsicherheit und V
+ eterinärwesen BLV\nDélai de remise : 16.11.2026\, 23 h 59\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/c898f9ba-bbcc-4e0b-81
+ 52-602f6bd25c32/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/c898f9ba-bbcc-4e0b-8152-602f6bd25c32
+URL:https://auftragsregister.ch/fr/auftrag/c898f9ba-bbcc-4e0b-8152-602f6bd2
+ 5c32/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26232) 341 Laboratoires nationaux de réf
+ érence (LNR) relevant de la loi sur les denrées alimentaires (LDAl) dés
+ ignés pour la période 2027 à 2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

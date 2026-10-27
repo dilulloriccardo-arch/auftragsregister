@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7e0761e-99cf-4f2c-981e-6b0ef31094d5-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Scadenza: Kollegium Brig - Sanierung Internat / BKP 283.2 Deckenbek
+ leidungen aus Gips (Südtrakt)
+DESCRIPTION:Ente pubblico: Departement für Finanzen und Energie\, Dienstst
+ elle für Immobilien und Bauliches Erbe\nScadenza: 11.11.2026\nNel registr
+ o: https://auftragsregister.ch/it/auftrag/e7e0761e-99cf-4f2c-981e-6b0ef310
+ 94d5/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/e7e
+ 0761e-99cf-4f2c-981e-6b0ef31094d5
+URL:https://auftragsregister.ch/it/auftrag/e7e0761e-99cf-4f2c-981e-6b0ef310
+ 94d5/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kollegium Brig - Sanierung Internat / BKP 283.2 Decke
+ nbekleidungen aus Gips (Südtrakt)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

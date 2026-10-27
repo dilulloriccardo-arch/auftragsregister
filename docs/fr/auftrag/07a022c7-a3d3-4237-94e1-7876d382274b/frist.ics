@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07a022c7-a3d3-4237-94e1-7876d382274b-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Délai de remise : Modernisierung "Kirchzelg"\, St. Bernhardstras
+ se 38\, 5430 Wettingen / BKP 230 Elektroanlagen
+DESCRIPTION:Acheteur public : arwo Stiftung\nDélai de remise : 16.11.2
+ 026\nDans le registre : https://auftragsregister.ch/fr/auftrag/07a022c7-
+ a3d3-4237-94e1-7876d382274b/\nPublication officielle : https://www.simap
+ .ch/fr/project-detail/07a022c7-a3d3-4237-94e1-7876d382274b
+URL:https://auftragsregister.ch/fr/auftrag/07a022c7-a3d3-4237-94e1-7876d382
+ 274b/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Modernisierung "Kirchzelg"\, St. Bernhards
+ trasse 38\, 5430 Wettingen / BKP 230 Elektroanlagen
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

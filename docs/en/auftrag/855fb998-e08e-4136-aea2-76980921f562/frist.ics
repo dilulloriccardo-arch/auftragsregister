@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:855fb998-e08e-4136-aea2-76980921f562-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261214T160000Z
+SUMMARY:Submission deadline: SPATZ GFK + Lackierung
+DESCRIPTION:Public buyer: zb Zentralbahn AG\, Bereich Produktion und Rollma
+ terial\nSubmission deadline: 14 Dec 2026\, 17:00\nIn the register: https
+ ://auftragsregister.ch/en/auftrag/855fb998-e08e-4136-aea2-76980921f562/\nO
+ fficial publication: https://www.simap.ch/en/project-detail/855fb998-e08e-
+ 4136-aea2-76980921f562
+URL:https://auftragsregister.ch/en/auftrag/855fb998-e08e-4136-aea2-76980921
+ f562/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: SPATZ GFK + Lackierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

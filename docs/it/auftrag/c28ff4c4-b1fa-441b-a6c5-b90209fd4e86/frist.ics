@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c28ff4c4-b1fa-441b-a6c5-b90209fd4e86-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Scadenza: Rinnovo dell'infrastruttura per il trasporto auto Furka-R
+ ealp
+DESCRIPTION:Ente pubblico: Beschaffungsstelle Matterhorn Gotthard Bahn\nSca
+ denza: 24.11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/au
+ ftrag/c28ff4c4-b1fa-441b-a6c5-b90209fd4e86/\nPubblicazione ufficiale: http
+ s://www.simap.ch/it/project-detail/c28ff4c4-b1fa-441b-a6c5-b90209fd4e86
+URL:https://auftragsregister.ch/it/auftrag/c28ff4c4-b1fa-441b-a6c5-b90209fd
+ 4e86/
+LOCATION:Realp
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rinnovo dell'infrastruttura per il trasporto auto Fur
+ ka-Realp
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

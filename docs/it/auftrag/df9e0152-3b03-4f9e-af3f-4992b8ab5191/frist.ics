@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df9e0152-3b03-4f9e-af3f-4992b8ab5191-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Scadenza: 723.20 Ladirerstrasse Grüneck Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 05.11.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/df9e0152-3b03-4
+ f9e-af3f-4992b8ab5191/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/df9e0152-3b03-4f9e-af3f-4992b8ab5191
+URL:https://auftragsregister.ch/it/auftrag/df9e0152-3b03-4f9e-af3f-4992b8ab
+ 5191/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 723.20 Ladirerstrasse Grüneck Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

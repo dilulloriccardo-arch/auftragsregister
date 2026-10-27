@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab1b7385-d84f-46bc-86da-ba1ee3c539f8-frist@auftragsregister.ch
+DTSTAMP:20260904T000000Z
+SEQUENCE:0
+DTSTART:20261030T225900Z
+SUMMARY:Scadenza: Untervaz\, Weiche 51\, Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: Rhätische Bahn AG\nScadenza: 30.10.2026\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/ab1b7385-d84f-46bc-
+ 86da-ba1ee3c539f8/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/ab1b7385-d84f-46bc-86da-ba1ee3c539f8
+URL:https://auftragsregister.ch/it/auftrag/ab1b7385-d84f-46bc-86da-ba1ee3c5
+ 39f8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Untervaz\, Weiche 51\, Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

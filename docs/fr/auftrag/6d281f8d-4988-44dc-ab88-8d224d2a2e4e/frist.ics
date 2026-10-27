@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d281f8d-4988-44dc-ab88-8d224d2a2e4e-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:1
+DTSTART:20261027T225900Z
+SUMMARY:Délai de remise : (26160) 750 L'innovation dans le secteur priv
+ é suisse
+DESCRIPTION:Acheteur public : Staatssekretariat für Bildung\, Forschung 
+ und Innovation SBFI\nDélai de remise : 27.10.2026\, 23 h 59\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/6d281f8d-4988-44dc-a
+ b88-8d224d2a2e4e/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/6d281f8d-4988-44dc-ab88-8d224d2a2e4e
+URL:https://auftragsregister.ch/fr/auftrag/6d281f8d-4988-44dc-ab88-8d224d2a
+ 2e4e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26160) 750 L'innovation dans le secteur p
+ rivé suisse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

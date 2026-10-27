@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:73ddc27b-1d57-450f-a41a-9f524dd394be-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261127T100000Z
+SUMMARY:Délai de remise : BHNS Veyrier - DD1 & DD2 - mandat d’ingénie
+ ur civil
+DESCRIPTION:Acheteur public : OCGC - DPC - Service des Infrastructures Tr
+ ansports Publics\nDélai de remise : 27.11.2026\, 11 h 00\nDans le r
+ egistre : https://auftragsregister.ch/fr/auftrag/73ddc27b-1d57-450f-a41a
+ -9f524dd394be/\nPublication officielle : https://www.simap.ch/fr/project
+ -detail/73ddc27b-1d57-450f-a41a-9f524dd394be
+URL:https://auftragsregister.ch/fr/auftrag/73ddc27b-1d57-450f-a41a-9f524dd3
+ 94be/
+LOCATION:VEYRIER / CAROUGE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BHNS Veyrier - DD1 & DD2 - mandat d’ing
+ énieur civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

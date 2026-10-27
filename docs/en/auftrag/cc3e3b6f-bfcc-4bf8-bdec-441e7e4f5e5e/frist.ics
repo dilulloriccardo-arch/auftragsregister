@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc3e3b6f-bfcc-4bf8-bdec-441e7e4f5e5e-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T160000Z
+SUMMARY:Submission deadline: Einbau von Schienen und Gleisanlagen
+DESCRIPTION:Public buyer: Verkehrsbetriebe Zürich (VBZ)\nSubmission deadli
+ ne: 23 Nov 2026\, 17:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/cc3e3b6f-bfcc-4bf8-bdec-441e7e4f5e5e/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/cc3e3b6f-bfcc-4bf8-bdec-441e7e4f5e5e
+URL:https://auftragsregister.ch/en/auftrag/cc3e3b6f-bfcc-4bf8-bdec-441e7e4f
+ 5e5e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Einbau von Schienen und Gleisanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

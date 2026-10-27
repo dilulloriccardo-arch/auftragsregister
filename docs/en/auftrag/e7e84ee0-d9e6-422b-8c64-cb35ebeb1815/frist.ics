@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7e84ee0-d9e6-422b-8c64-cb35ebeb1815-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270107T150000Z
+SUMMARY:Submission deadline: 26-417-SA Rottenverstärkung Sicherungsanlagen
+DESCRIPTION:Public buyer: SBB CFF FFS Infra-Bahntechnik\nSubmission deadlin
+ e: 7 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/e7e84ee0-d9e6-422b-8c64-cb35ebeb1815/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/e7e84ee0-d9e6-422b-8c64-cb35ebeb1815
+URL:https://auftragsregister.ch/en/auftrag/e7e84ee0-d9e6-422b-8c64-cb35ebeb
+ 1815/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 26-417-SA Rottenverstärkung Sicherungsanl
+ agen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

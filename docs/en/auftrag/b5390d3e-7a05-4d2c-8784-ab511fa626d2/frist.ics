@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b5390d3e-7a05-4d2c-8784-ab511fa626d2-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T103000Z
+SUMMARY:Submission deadline: Ville de Vernier - Requalification du Chemin d
+ u Coin-de-Terre et mise en séparatif des réseaux d’assainissement du s
+ ecteur élargi à l’avenue de Crozet - Renouvellement de réseaux SIG
+DESCRIPTION:Public buyer: Ville de Vernier - Service de l'aménagement\nSub
+ mission deadline: 20 Nov 2026\, 11:30\nIn the register: https://auftrags
+ register.ch/en/auftrag/b5390d3e-7a05-4d2c-8784-ab511fa626d2/\nOfficial pub
+ lication: https://www.simap.ch/en/project-detail/b5390d3e-7a05-4d2c-8784-a
+ b511fa626d2
+URL:https://auftragsregister.ch/en/auftrag/b5390d3e-7a05-4d2c-8784-ab511fa6
+ 26d2/
+LOCATION:Châtelaine
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ville de Vernier - Requalification du Chem
+ in du Coin-de-Terre et mise en séparatif des réseaux d’assainissement 
+ du secteur élargi à l’avenue de Crozet - Renouvellement de réseaux SI
+ G
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

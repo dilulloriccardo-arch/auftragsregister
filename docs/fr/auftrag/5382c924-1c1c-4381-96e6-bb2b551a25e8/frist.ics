@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5382c924-1c1c-4381-96e6-bb2b551a25e8-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T130000Z
+SUMMARY:Délai de remise : Produktionsmaschinen zur Herstellung von Fahrz
+ eug-Kontrollschilder
+DESCRIPTION:Acheteur public : Strassenverkehrsamt des Kantons Zürich\nD
+ élai de remise : 24.11.2026\, 14 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/5382c924-1c1c-4381-96e6-bb2b551a25e8/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/5382c924-1c
+ 1c-4381-96e6-bb2b551a25e8
+URL:https://auftragsregister.ch/fr/auftrag/5382c924-1c1c-4381-96e6-bb2b551a
+ 25e8/
+LOCATION:Regensdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Produktionsmaschinen zur Herstellung von F
+ ahrzeug-Kontrollschilder
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

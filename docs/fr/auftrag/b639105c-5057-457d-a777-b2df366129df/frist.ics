@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b639105c-5057-457d-a777-b2df366129df-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261103T150000Z
+SUMMARY:Délai de remise : Öffentliche Submission Sachversicherung der S
+ tadt Baden per 01.01.2027
+DESCRIPTION:Acheteur public : Stadt Baden Finanzen\nDélai de remise : 
+ 03.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/b639105c-5057-457d-a777-b2df366129df/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/b639105c-5057-457d-a777-b2df36
+ 6129df
+URL:https://auftragsregister.ch/fr/auftrag/b639105c-5057-457d-a777-b2df3661
+ 29df/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Öffentliche Submission Sachversicherung d
+ er Stadt Baden per 01.01.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

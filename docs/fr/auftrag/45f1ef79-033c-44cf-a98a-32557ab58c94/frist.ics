@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45f1ef79-033c-44cf-a98a-32557ab58c94-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261112T143000Z
+SUMMARY:Délai de remise : AERA - Transports des eaux usées d’Ollon à
+  la STEP régionale - Travaux de béton armé et maçonnerie
+DESCRIPTION:Acheteur public : ASSOCIATION INTERCOMMUNALE POUR L’EPURATI
+ ON DES EAUX USEES DE LA REGION D’AIGLE AERA\nDélai de remise : 12.11.
+ 2026\, 15 h 30\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/45f1ef79-033c-44cf-a98a-32557ab58c94/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/45f1ef79-033c-44cf-a98a-32557ab58c94
+URL:https://auftragsregister.ch/fr/auftrag/45f1ef79-033c-44cf-a98a-32557ab5
+ 8c94/
+LOCATION:Aigle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AERA - Transports des eaux usées d’Ollo
+ n à la STEP régionale - Travaux de béton armé et maçonnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

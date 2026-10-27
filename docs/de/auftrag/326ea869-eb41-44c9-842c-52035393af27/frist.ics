@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:326ea869-eb41-44c9-842c-52035393af27-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Eingabefrist: 291_Appel d'offres pour l'acquisition et la personnal
+ isation d'une application de numérisation des processus informatiques
+DESCRIPTION:Auftraggeber: Centro sistemi informativi\nEingabefrist: 01.12.2
+ 026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/326e
+ a869-eb41-44c9-842c-52035393af27/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/326ea869-eb41-44c9-842c-52035393af27
+URL:https://auftragsregister.ch/de/auftrag/326ea869-eb41-44c9-842c-52035393
+ af27/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 291_Appel d'offres pour l'acquisition et la perso
+ nnalisation d'une application de numérisation des processus informatiques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

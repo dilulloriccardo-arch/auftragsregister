@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:940d3e76-1ac1-4aad-a3fc-4abf93581297-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Eingabefrist: REGENERATION DU GROUPE SCOLAIRE EN SAUVY - INGENIEUR 
+ ELECTRICIEN - PHASES SIA 31 - 53
+DESCRIPTION:Auftraggeber: Ville de Lancy (architech sa)\nEingabefrist: 09.1
+ 1.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9
+ 40d3e76-1ac1-4aad-a3fc-4abf93581297/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/940d3e76-1ac1-4aad-a3fc-4abf93581297
+URL:https://auftragsregister.ch/de/auftrag/940d3e76-1ac1-4aad-a3fc-4abf9358
+ 1297/
+LOCATION:Av. du Curé Baud 40
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: REGENERATION DU GROUPE SCOLAIRE EN SAUVY - INGENI
+ EUR ELECTRICIEN - PHASES SIA 31 - 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

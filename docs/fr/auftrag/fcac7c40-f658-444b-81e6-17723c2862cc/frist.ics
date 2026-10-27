@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fcac7c40-f658-444b-81e6-17723c2862cc-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Délai de remise : Sanierung Murzlenstrasse\, Niederweningen
+DESCRIPTION:Acheteur public : Ingenieurbüro Gujer AG\nDélai de remise
+  : 09.11.2026\, 11 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/fcac7c40-f658-444b-81e6-17723c2862cc/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/fcac7c40-f658-444b-81e6-17
+ 723c2862cc
+URL:https://auftragsregister.ch/fr/auftrag/fcac7c40-f658-444b-81e6-17723c28
+ 62cc/
+LOCATION:Niederweningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Murzlenstrasse\, Niederweningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

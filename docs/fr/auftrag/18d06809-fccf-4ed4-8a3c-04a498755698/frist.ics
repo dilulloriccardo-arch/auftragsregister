@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18d06809-fccf-4ed4-8a3c-04a498755698-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Délai de remise : Berne\, Bremgartenstrasse 131-137\, gymnase de
+  Neufeld\, rénovation et construction de remplacement\, CFC 248 Système 
+ de domotique\, SP 1-2
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 23.11.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/18d06809-fccf-4ed4-8a3c-0
+ 4a498755698/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/18d06809-fccf-4ed4-8a3c-04a498755698
+URL:https://auftragsregister.ch/fr/auftrag/18d06809-fccf-4ed4-8a3c-04a49875
+ 5698/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Berne\, Bremgartenstrasse 131-137\, gymnas
+ e de Neufeld\, rénovation et construction de remplacement\, CFC 248 Syst
+ ème de domotique\, SP 1-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

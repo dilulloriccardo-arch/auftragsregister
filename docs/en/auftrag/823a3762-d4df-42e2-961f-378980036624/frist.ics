@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:823a3762-d4df-42e2-961f-378980036624-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Submission deadline: Ausschreibung Malerarbeiten / Oberflächenunte
+ rhalt / Instandstellung – KAT.001
+DESCRIPTION:Public buyer: ETHOS Immobilien GmbH\nSubmission deadline: 9 No
+ v 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/8
+ 23a3762-d4df-42e2-961f-378980036624/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/823a3762-d4df-42e2-961f-378980036624
+URL:https://auftragsregister.ch/en/auftrag/823a3762-d4df-42e2-961f-37898003
+ 6624/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibung Malerarbeiten / Oberflächen
+ unterhalt / Instandstellung – KAT.001
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

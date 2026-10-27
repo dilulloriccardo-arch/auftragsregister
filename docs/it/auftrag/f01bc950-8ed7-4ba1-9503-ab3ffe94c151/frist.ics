@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f01bc950-8ed7-4ba1-9503-ab3ffe94c151-frist@auftragsregister.ch
+DTSTAMP:20260927T000000Z
+SEQUENCE:0
+DTSTART:20261116T225600Z
+SUMMARY:Scadenza: 65- und 16- kV Kabelleitungen Einführung der Kabelleitun
+ gen in das neue Unterwerk Ernen
+DESCRIPTION:Ente pubblico: Valgrid SA\nScadenza: 16.11.2026\, 23:56\nNel re
+ gistro: https://auftragsregister.ch/it/auftrag/f01bc950-8ed7-4ba1-9503-ab3
+ ffe94c151/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detai
+ l/f01bc950-8ed7-4ba1-9503-ab3ffe94c151
+URL:https://auftragsregister.ch/it/auftrag/f01bc950-8ed7-4ba1-9503-ab3ffe94
+ c151/
+LOCATION:Ernen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 65- und 16- kV Kabelleitungen Einführung der Kabelle
+ itungen in das neue Unterwerk Ernen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

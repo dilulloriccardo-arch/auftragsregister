@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d281f8d-4988-44dc-ab88-8d224d2a2e4e-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:1
+DTSTART:20261027T225900Z
+SUMMARY:Eingabefrist: (26160) 750 Innovation in der Schweizer Privatwirtsch
+ aft
+DESCRIPTION:Auftraggeber: Staatssekretariat für Bildung\, Forschung und In
+ novation SBFI\nEingabefrist: 27.10.2026\, 23.59 Uhr\nIm Register: https:/
+ /auftragsregister.ch/de/auftrag/6d281f8d-4988-44dc-ab88-8d224d2a2e4e/\nAmt
+ liche Publikation: https://www.simap.ch/de/project-detail/6d281f8d-4988-44
+ dc-ab88-8d224d2a2e4e
+URL:https://auftragsregister.ch/de/auftrag/6d281f8d-4988-44dc-ab88-8d224d2a
+ 2e4e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (26160) 750 Innovation in der Schweizer Privatwir
+ tschaft
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

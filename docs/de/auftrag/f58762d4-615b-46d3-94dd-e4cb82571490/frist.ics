@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f58762d4-615b-46d3-94dd-e4cb82571490-frist@auftragsregister.ch
+DTSTAMP:20260907T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Eingabefrist: KZO l Leuchtenersatz l BKP 232-02 Elektroanlagen
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Zürich\nEingabefrist: 06.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/f5876
+ 2d4-615b-46d3-94dd-e4cb82571490/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/f58762d4-615b-46d3-94dd-e4cb82571490
+URL:https://auftragsregister.ch/de/auftrag/f58762d4-615b-46d3-94dd-e4cb8257
+ 1490/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: KZO l Leuchtenersatz l BKP 232-02 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

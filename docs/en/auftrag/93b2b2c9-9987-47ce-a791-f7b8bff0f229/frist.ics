@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:93b2b2c9-9987-47ce-a791-f7b8bff0f229-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:1
+DTSTART:20261111T110000Z
+SUMMARY:Submission deadline: Scanning electron microscope for imaging and q
+ uantitative analysis in geological samples
+DESCRIPTION:Public buyer: ETH Zürich - Abt. Procurement & Export Services\
+ nSubmission deadline: 11 Nov 2026\, 12:00\nIn the register: https://auft
+ ragsregister.ch/en/auftrag/93b2b2c9-9987-47ce-a791-f7b8bff0f229/\nOfficial
+  publication: https://www.simap.ch/en/project-detail/93b2b2c9-9987-47ce-a7
+ 91-f7b8bff0f229
+URL:https://auftragsregister.ch/en/auftrag/93b2b2c9-9987-47ce-a791-f7b8bff0
+ f229/
+LOCATION:Zürich ETH Zentrum
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Scanning electron microscope for imaging a
+ nd quantitative analysis in geological samples
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

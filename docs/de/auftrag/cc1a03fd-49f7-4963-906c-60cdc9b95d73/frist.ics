@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc1a03fd-49f7-4963-906c-60cdc9b95d73-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Eingabefrist: ZGSZ l 45799 l BKP240 Heizungsanlagen
+DESCRIPTION:Auftraggeber: Hochbauamt\, Baubereich B\nEingabefrist: 25.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/cc1a0
+ 3fd-49f7-4963-906c-60cdc9b95d73/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/cc1a03fd-49f7-4963-906c-60cdc9b95d73
+URL:https://auftragsregister.ch/de/auftrag/cc1a03fd-49f7-4963-906c-60cdc9b9
+ 5d73/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ZGSZ l 45799 l BKP240 Heizungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

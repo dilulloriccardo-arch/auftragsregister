@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bf287c7b-32d6-4854-adbf-c52e92b11ca0-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:1
+DTSTART:20261109T153000Z
+SUMMARY:Scadenza: Campus Battelle\, rénovation énergétique des bâtiment
+ s A et D - Mandat d'ingénieur civil
+DESCRIPTION:Ente pubblico: Office cantonal des bâtiments (OCBA)\nScadenza:
+  09.11.2026\, 16:30\nNel registro: https://auftragsregister.ch/it/auftrag/
+ bf287c7b-32d6-4854-adbf-c52e92b11ca0/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/bf287c7b-32d6-4854-adbf-c52e92b11ca0
+URL:https://auftragsregister.ch/it/auftrag/bf287c7b-32d6-4854-adbf-c52e92b1
+ 1ca0/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Campus Battelle\, rénovation énergétique des bâti
+ ments A et D - Mandat d'ingénieur civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bfc6ceff-9ba4-4017-94b3-3ff0e764fbf3-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261117T150000Z
+SUMMARY:Scadenza: Agrandissement et rénovation de l'école du Belvédère_
+ CFC 215.2_Construction légère préfabriquée_Façade bois
+DESCRIPTION:Ente pubblico: Commune de Chêne-Bougeries - Giorgis Rodriguez 
+ Architectes SA\nScadenza: 17.11.2026\, 16:00\nNel registro: https://auftra
+ gsregister.ch/it/auftrag/bfc6ceff-9ba4-4017-94b3-3ff0e764fbf3/\nPubblicazi
+ one ufficiale: https://www.simap.ch/it/project-detail/bfc6ceff-9ba4-4017-9
+ 4b3-3ff0e764fbf3
+URL:https://auftragsregister.ch/it/auftrag/bfc6ceff-9ba4-4017-94b3-3ff0e764
+ fbf3/
+LOCATION:Chêne-Bougeries
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Agrandissement et rénovation de l'école du Belvéd
+ ère_CFC 215.2_Construction légère préfabriquée_Façade bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

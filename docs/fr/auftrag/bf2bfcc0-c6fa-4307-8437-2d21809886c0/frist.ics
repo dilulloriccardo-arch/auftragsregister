@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bf2bfcc0-c6fa-4307-8437-2d21809886c0-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Délai de remise : Modernisation de l'infrastructure Wi-Fi
+DESCRIPTION:Acheteur public : Hospice général\nDélai de remise : 23.
+ 11.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/bf2bfcc0-c6fa-4307-8437-2d21809886c0/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/bf2bfcc0-c6fa-4307-8437-2d21809886
+ c0
+URL:https://auftragsregister.ch/fr/auftrag/bf2bfcc0-c6fa-4307-8437-2d218098
+ 86c0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Modernisation de l'infrastructure Wi-Fi
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

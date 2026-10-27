@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3601414c-f8e8-4b5d-8fcb-efffa8c679aa-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:1
+DTSTART:20261123T153000Z
+SUMMARY:Délai de remise : Logement ouvrier Budé – Rénovation énerg
+ étique
+DESCRIPTION:Acheteur public : Office cantonal des bâtiments (OCBA)\nDél
+ ai de remise : 23.11.2026\, 16 h 30\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/3601414c-f8e8-4b5d-8fcb-efffa8c679aa/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/3601414c-f8e8-
+ 4b5d-8fcb-efffa8c679aa
+URL:https://auftragsregister.ch/fr/auftrag/3601414c-f8e8-4b5d-8fcb-efffa8c6
+ 79aa/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Logement ouvrier Budé – Rénovation én
+ ergétique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

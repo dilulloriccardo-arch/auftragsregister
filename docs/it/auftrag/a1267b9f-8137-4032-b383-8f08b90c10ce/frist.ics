@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a1267b9f-8137-4032-b383-8f08b90c10ce-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:1
+DTSTART:20261127T225900Z
+SUMMARY:Scadenza: MP-130008\, N02 Seelisbergtunnel\, 2. Instandsetzung Los 
+ 1.1 MS Energieversorgung
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA -Abteilung Strasse
+ ninfrastruktur-Ost - F3 Zofingen\nScadenza: 27.11.2026\, 23:59\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/a1267b9f-8137-4032-b383-8f08b90
+ c10ce/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/a1
+ 267b9f-8137-4032-b383-8f08b90c10ce
+URL:https://auftragsregister.ch/it/auftrag/a1267b9f-8137-4032-b383-8f08b90c
+ 10ce/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-130008\, N02 Seelisbergtunnel\, 2. Instandsetzung 
+ Los 1.1 MS Energieversorgung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

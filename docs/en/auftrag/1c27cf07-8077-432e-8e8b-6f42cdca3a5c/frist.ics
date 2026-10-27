@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1c27cf07-8077-432e-8e8b-6f42cdca3a5c-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Submission deadline: Huberstrasse 18/20\, Gesamtsanierung\, BKP 230
+  Elektroanlagen
+DESCRIPTION:Public buyer: Fachstelle Beschaffungswesen Stadt Bern\nSubmissi
+ on deadline: 16 Nov 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/1c27cf07-8077-432e-8e8b-6f42cdca3a5c/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/1c27cf07-8077-432e-8e8b-6f42cd
+ ca3a5c
+URL:https://auftragsregister.ch/en/auftrag/1c27cf07-8077-432e-8e8b-6f42cdca
+ 3a5c/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Huberstrasse 18/20\, Gesamtsanierung\, BKP
+  230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

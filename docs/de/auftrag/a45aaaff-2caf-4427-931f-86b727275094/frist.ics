@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a45aaaff-2caf-4427-931f-86b727275094-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261116T105900Z
+SUMMARY:Eingabefrist: STEP de Noës - EM003 - Préparation et valorisation 
+ du biogaz par CCF
+DESCRIPTION:Auftraggeber: RWB Valais SA\nEingabefrist: 16.11.2026\, 11.59 
+ Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a45aaaff-2caf-442
+ 7-931f-86b727275094/\nAmtliche Publikation: https://www.simap.ch/de/projec
+ t-detail/a45aaaff-2caf-4427-931f-86b727275094
+URL:https://auftragsregister.ch/de/auftrag/a45aaaff-2caf-4427-931f-86b72727
+ 5094/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: STEP de Noës - EM003 - Préparation et valorisat
+ ion du biogaz par CCF
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e862d39-fba9-4a7c-8925-d0d2f87015a2-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261120T160000Z
+SUMMARY:Scadenza: Ersatzbeschaffung Forst- und Kommunalschlepper
+DESCRIPTION:Ente pubblico: Gemeinde Davos Forstbetrieb\nScadenza: 20.11.202
+ 6\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/0e862d39-f
+ ba9-4a7c-8925-d0d2f87015a2/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/0e862d39-fba9-4a7c-8925-d0d2f87015a2
+URL:https://auftragsregister.ch/it/auftrag/0e862d39-fba9-4a7c-8925-d0d2f870
+ 15a2/
+LOCATION:Davos Platz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatzbeschaffung Forst- und Kommunalschlepper
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:964264f7-be2a-44f5-afc5-a3d1cc7ad93b-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261109T140000Z
+SUMMARY:Eingabefrist: Réfection de la route cantonale en traversée de loc
+ alité (RC 509-B-P)
+DESCRIPTION:Auftraggeber: Commune de Villarzel (CFA Ingénieurs Conseils SA
+ )\nEingabefrist: 09.11.2026\, 15.00 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/964264f7-be2a-44f5-afc5-a3d1cc7ad93b/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/964264f7-be2a-44f5-afc5-a3d1
+ cc7ad93b
+URL:https://auftragsregister.ch/de/auftrag/964264f7-be2a-44f5-afc5-a3d1cc7a
+ d93b/
+LOCATION:Sédeilles
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Réfection de la route cantonale en traversée de
+  localité (RC 509-B-P)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

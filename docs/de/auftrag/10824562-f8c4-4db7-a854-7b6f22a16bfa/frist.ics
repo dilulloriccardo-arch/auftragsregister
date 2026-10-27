@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10824562-f8c4-4db7-a854-7b6f22a16bfa-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261106T100000Z
+SUMMARY:Eingabefrist: Ersatzneubau Reservoir Ibig
+DESCRIPTION:Auftraggeber: Gruppenwasserversorgung Furttal (Ingenieurbüro G
+ ujer AG)\nEingabefrist: 06.11.2026\, 11.00 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/10824562-f8c4-4db7-a854-7b6f22a16bfa/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/10824562-f8c4-4db7-a8
+ 54-7b6f22a16bfa
+URL:https://auftragsregister.ch/de/auftrag/10824562-f8c4-4db7-a854-7b6f22a1
+ 6bfa/
+LOCATION:Watt (Regensdorf)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatzneubau Reservoir Ibig
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25c267e9-ee19-4e6a-ac39-b9328db9b766-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Scadenza: Modernisierung "Kirchzelg"\, St. Bernhardstrasse 38\, 543
+ 0 Wettingen / BKP 221.1 Fenster aus Holz-Metall
+DESCRIPTION:Ente pubblico: arwo Stiftung\nScadenza: 16.11.2026\nNel registr
+ o: https://auftragsregister.ch/it/auftrag/25c267e9-ee19-4e6a-ac39-b9328db9
+ b766/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/25c
+ 267e9-ee19-4e6a-ac39-b9328db9b766
+URL:https://auftragsregister.ch/it/auftrag/25c267e9-ee19-4e6a-ac39-b9328db9
+ b766/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Modernisierung "Kirchzelg"\, St. Bernhardstrasse 38\,
+  5430 Wettingen / BKP 221.1 Fenster aus Holz-Metall
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

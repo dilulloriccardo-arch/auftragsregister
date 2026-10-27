@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:823a3762-d4df-42e2-961f-378980036624-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : Ausschreibung Malerarbeiten / Oberflächenunte
+ rhalt / Instandstellung – KAT.001
+DESCRIPTION:Acheteur public : ETHOS Immobilien GmbH\nDélai de remise :
+  09.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/823a3762-d4df-42e2-961f-378980036624/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/823a3762-d4df-42e2-961f-378980
+ 036624
+URL:https://auftragsregister.ch/fr/auftrag/823a3762-d4df-42e2-961f-37898003
+ 6624/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung Malerarbeiten / Oberflächen
+ unterhalt / Instandstellung – KAT.001
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

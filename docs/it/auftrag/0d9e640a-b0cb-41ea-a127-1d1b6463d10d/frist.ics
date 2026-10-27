@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d9e640a-b0cb-41ea-a127-1d1b6463d10d-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270107T150000Z
+SUMMARY:Scadenza: 26-417-FB Rinforzo squadra binario
+DESCRIPTION:Ente pubblico: SBB CFF FFS Infra-Bahntechnik\nScadenza: 07.01.2
+ 027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/0d9e640a
+ -b0cb-41ea-a127-1d1b6463d10d/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/0d9e640a-b0cb-41ea-a127-1d1b6463d10d
+URL:https://auftragsregister.ch/it/auftrag/0d9e640a-b0cb-41ea-a127-1d1b6463
+ d10d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 26-417-FB Rinforzo squadra binario
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

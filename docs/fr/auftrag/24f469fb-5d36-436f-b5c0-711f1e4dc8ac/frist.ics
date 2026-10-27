@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:24f469fb-5d36-436f-b5c0-711f1e4dc8ac-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Délai de remise : Mobilbagger knickgelenkt mit Mähausleger
+DESCRIPTION:Acheteur public : Rheinunternehmen\nDélai de remise : 06.1
+ 1.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/24f469fb-5d36-436f-b5c0-711f1e4dc8ac/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/24f469fb-5d36-436f-b5c0-711f1e4dc8a
+ c
+URL:https://auftragsregister.ch/fr/auftrag/24f469fb-5d36-436f-b5c0-711f1e4d
+ c8ac/
+LOCATION:Widnau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mobilbagger knickgelenkt mit Mähausleger
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

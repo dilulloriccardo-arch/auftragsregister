@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9b0f31cc-2879-48ef-915a-f4747db2ba08-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261105T110000Z
+SUMMARY:Submission deadline: Lieferung Ladeinfrastruktur
+DESCRIPTION:Public buyer: Aare Seeland mobil AG\nSubmission deadline: 5 No
+ v 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/9
+ b0f31cc-2879-48ef-915a-f4747db2ba08/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/9b0f31cc-2879-48ef-915a-f4747db2ba08
+URL:https://auftragsregister.ch/en/auftrag/9b0f31cc-2879-48ef-915a-f4747db2
+ ba08/
+LOCATION:Herzogenbuchsee
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Lieferung Ladeinfrastruktur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

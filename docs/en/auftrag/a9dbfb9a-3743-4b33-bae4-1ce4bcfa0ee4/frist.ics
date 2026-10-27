@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a9dbfb9a-3743-4b33-bae4-1ce4bcfa0ee4-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Submission deadline: Komplettsanierung Schwyzerstrasse Richterswil
+DESCRIPTION:Public buyer: Gemeinde Richterswil\, Abteilung Werke\nSubmissio
+ n deadline: 6 Nov 2026\, 12:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/a9dbfb9a-3743-4b33-bae4-1ce4bcfa0ee4/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/a9dbfb9a-3743-4b33-bae4-1ce4bcfa
+ 0ee4
+URL:https://auftragsregister.ch/en/auftrag/a9dbfb9a-3743-4b33-bae4-1ce4bcfa
+ 0ee4/
+LOCATION:Richterswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Komplettsanierung Schwyzerstrasse Richters
+ wil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

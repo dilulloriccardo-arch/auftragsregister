@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c57abba-add7-49d9-bc5d-3ca6b712c3c3-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261113T100000Z
+SUMMARY:Délai de remise : Sanierung und Gestaltung Nägelimoosstrasse
+DESCRIPTION:Acheteur public : Stadt Kloten\nDélai de remise : 13.11.20
+ 26\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr/auft
+ rag/3c57abba-add7-49d9-bc5d-3ca6b712c3c3/\nPublication officielle : http
+ s://www.simap.ch/fr/project-detail/3c57abba-add7-49d9-bc5d-3ca6b712c3c3
+URL:https://auftragsregister.ch/fr/auftrag/3c57abba-add7-49d9-bc5d-3ca6b712
+ c3c3/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung und Gestaltung Nägelimoosstrass
+ e
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

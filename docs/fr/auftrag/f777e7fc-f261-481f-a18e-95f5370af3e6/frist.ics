@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f777e7fc-f261-481f-a18e-95f5370af3e6-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Délai de remise : USZ Campus MITTE 1|2 / CVC 272.16 Portes - paq
+ uet 6 MIT (Portes de couloir)
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 15.12.2026\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/f777e7fc-f261-481f-a18e-95f5370af3e6/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/f777e7fc-f261-481f-a18e-
+ 95f5370af3e6
+URL:https://auftragsregister.ch/fr/auftrag/f777e7fc-f261-481f-a18e-95f5370a
+ f3e6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : USZ Campus MITTE 1|2 / CVC 272.16 Portes -
+  paquet 6 MIT (Portes de couloir)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:70e1a409-bacb-41df-9c8f-4e0f9490b076-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Délai de remise : Appel d'offres pour des postes de transformati
+ on
+DESCRIPTION:Acheteur public : Strategischer Einkauf EBL\, Öffentliche Be
+ schaffung\nDélai de remise : 02.11.2026\, 12 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/70e1a409-bacb-41df-9c8f-4e0f94
+ 90b076/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /70e1a409-bacb-41df-9c8f-4e0f9490b076
+URL:https://auftragsregister.ch/fr/auftrag/70e1a409-bacb-41df-9c8f-4e0f9490
+ b076/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offres pour des postes de transfor
+ mation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

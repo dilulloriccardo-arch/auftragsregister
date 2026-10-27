@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2d31029f-7df8-438c-aa2e-b8f1ef9c8390-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Scadenza: 00836 Gebäude KOL\, Ersatz Kälteanlage BKP240/BKP246
+DESCRIPTION:Ente pubblico: Universität Zürich - Bauprojektmanagement\nSca
+ denza: 25.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/au
+ ftrag/2d31029f-7df8-438c-aa2e-b8f1ef9c8390/\nPubblicazione ufficiale: http
+ s://www.simap.ch/it/project-detail/2d31029f-7df8-438c-aa2e-b8f1ef9c8390
+URL:https://auftragsregister.ch/it/auftrag/2d31029f-7df8-438c-aa2e-b8f1ef9c
+ 8390/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 00836 Gebäude KOL\, Ersatz Kälteanlage BKP240/BKP24
+ 6
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efa3fb95-29c8-47da-8ee4-f4fe034d01bd-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Délai de remise : Transport Grüngut Sarneraatal
+DESCRIPTION:Acheteur public : Entsorgungszweckverband Obwalden\nDélai de
+  remise : 09.11.2026\, 23 h 59\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/efa3fb95-29c8-47da-8ee4-f4fe034d01bd/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/efa3fb95-29c8-47da-
+ 8ee4-f4fe034d01bd
+URL:https://auftragsregister.ch/fr/auftrag/efa3fb95-29c8-47da-8ee4-f4fe034d
+ 01bd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transport Grüngut Sarneraatal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

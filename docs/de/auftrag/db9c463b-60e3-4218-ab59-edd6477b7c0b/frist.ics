@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db9c463b-60e3-4218-ab59-edd6477b7c0b-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T100000Z
+SUMMARY:Eingabefrist: Haute Ecole Pedagogique_00'697_Lot 145 Agencement de 
+ cuisine professionnelle
+DESCRIPTION:Auftraggeber: Etat de Vaud - DEIEP - DGIP\,\nEingabefrist: 12.1
+ 1.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d
+ b9c463b-60e3-4218-ab59-edd6477b7c0b/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/db9c463b-60e3-4218-ab59-edd6477b7c0b
+URL:https://auftragsregister.ch/de/auftrag/db9c463b-60e3-4218-ab59-edd6477b
+ 7c0b/
+LOCATION:Chavannes-près-Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Haute Ecole Pedagogique_00'697_Lot 145 Agencement
+  de cuisine professionnelle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

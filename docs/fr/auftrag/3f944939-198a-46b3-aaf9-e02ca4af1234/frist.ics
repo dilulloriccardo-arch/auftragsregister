@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3f944939-198a-46b3-aaf9-e02ca4af1234-frist@auftragsregister.ch
+DTSTAMP:20260826T000000Z
+SEQUENCE:0
+DTSTART:20261030T225900Z
+SUMMARY:Délai de remise : 11351 / 11352 K 36\, Flühli\, Erneuerung Risc
+ hlibrücken
+DESCRIPTION:Acheteur public : Verkehr und Infrastruktur (vif)\, Realisier
+ ung\nDélai de remise : 30.10.2026\, 23 h 59\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/3f944939-198a-46b3-aaf9-e02ca4af1234
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/3f944
+ 939-198a-46b3-aaf9-e02ca4af1234
+URL:https://auftragsregister.ch/fr/auftrag/3f944939-198a-46b3-aaf9-e02ca4af
+ 1234/
+LOCATION:Sörenberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 11351 / 11352 K 36\, Flühli\, Erneuerung 
+ Rischlibrücken
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

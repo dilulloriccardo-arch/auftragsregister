@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e81859c-7b0f-4cb5-b0ee-986fee4db612-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261202T103000Z
+SUMMARY:Scadenza: Neubau Schul-\, Sport- und Freizeitanlage Maihof I BKP 25
+ 9 I Sprinkleranlage
+DESCRIPTION:Ente pubblico: Gemeinde Feusisberg\nScadenza: 02.12.2026\, 11:3
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/6e81859c-7b0f-4cb5
+ -b0ee-986fee4db612/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/6e81859c-7b0f-4cb5-b0ee-986fee4db612
+URL:https://auftragsregister.ch/it/auftrag/6e81859c-7b0f-4cb5-b0ee-986fee4d
+ b612/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Schul-\, Sport- und Freizeitanlage Maihof I BK
+ P 259 I Sprinkleranlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

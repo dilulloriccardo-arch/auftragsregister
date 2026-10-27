@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e139b094-2908-4d14-b1df-09c9cc313968-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:1
+DTSTART:20261112T150000Z
+SUMMARY:Scadenza: Stadt Chur - Planungs- und Umzugsleistungen für Büroarb
+ eitswelten
+DESCRIPTION:Ente pubblico: Stadt Chur - Immobilien und Bewirtschaftung\, Fa
+ cility Services\nScadenza: 12.11.2026\, 16:00\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/e139b094-2908-4d14-b1df-09c9cc313968/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/e139b094-2908-4d14-
+ b1df-09c9cc313968
+URL:https://auftragsregister.ch/it/auftrag/e139b094-2908-4d14-b1df-09c9cc31
+ 3968/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Stadt Chur - Planungs- und Umzugsleistungen für Bür
+ oarbeitswelten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

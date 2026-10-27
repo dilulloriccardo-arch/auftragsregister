@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9fb5ee9a-8772-4b4e-a280-5483c839e975-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261210T153000Z
+SUMMARY:Eingabefrist: Extension de la Haute Ecole de Santé de Genève
+DESCRIPTION:Auftraggeber: Etat de Genève\, Département du Territoire - DT
+ \, Office cantonal des bâtiments\nEingabefrist: 10.12.2026\, 16.30 Uhr\n
+ Im Register: https://auftragsregister.ch/de/auftrag/9fb5ee9a-8772-4b4e-a28
+ 0-5483c839e975/\nAmtliche Publikation: https://www.simap.ch/de/project-det
+ ail/9fb5ee9a-8772-4b4e-a280-5483c839e975
+URL:https://auftragsregister.ch/de/auftrag/9fb5ee9a-8772-4b4e-a280-5483c839
+ e975/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Extension de la Haute Ecole de Santé de Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:441d2914-162b-412d-a680-c990fd2e905f-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Délai de remise : 281.0 Revêtements en béton dur décoratif
+DESCRIPTION:Acheteur public : Gemeinde Richterswil / Abteilung Liegenscha
+ ften\nDélai de remise : 07.12.2026\, 12 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/441d2914-162b-412d-a680-c990fd2e905
+ f/\nPublication officielle : https://www.simap.ch/fr/project-detail/441d
+ 2914-162b-412d-a680-c990fd2e905f
+URL:https://auftragsregister.ch/fr/auftrag/441d2914-162b-412d-a680-c990fd2e
+ 905f/
+LOCATION:Richterswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 281.0 Revêtements en béton dur décorati
+ f
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

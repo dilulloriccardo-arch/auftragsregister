@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce7ea8fb-0234-4a70-86b2-7c0e3ed9e59e-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Délai de remise : Pont pour piétons et cyclistes Au - Lustenau\
+ , travaux de construction métallique
+DESCRIPTION:Acheteur public : Politische Gemeinde Au\nDélai de remise 
+ : 05.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/ce7ea8fb-0234-4a70-86b2-7c0e3ed9e59e/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/ce7ea8fb-0234-4a70-86b2-7c0e3
+ ed9e59e
+URL:https://auftragsregister.ch/fr/auftrag/ce7ea8fb-0234-4a70-86b2-7c0e3ed9
+ e59e/
+LOCATION:Au
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Pont pour piétons et cyclistes Au - Luste
+ nau\, travaux de construction métallique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

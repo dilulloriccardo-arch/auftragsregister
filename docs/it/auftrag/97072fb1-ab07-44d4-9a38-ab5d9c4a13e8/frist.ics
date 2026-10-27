@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:97072fb1-ab07-44d4-9a38-ab5d9c4a13e8-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261118T100000Z
+SUMMARY:Scadenza: Restauration et extension de la Bibliothèque de Genève 
+ (M370TI) Mandat d'ingénieur spécialiste géotechnicien
+DESCRIPTION:Ente pubblico: Unité soumissions - Département de l'aménagem
+ ent\, des constructions et de la mobilité (DACM) de la Ville de Genève\n
+ Scadenza: 18.11.2026\, 11:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/97072fb1-ab07-44d4-9a38-ab5d9c4a13e8/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/97072fb1-ab07-44d4-9a38-ab5d9c4a13e8
+URL:https://auftragsregister.ch/it/auftrag/97072fb1-ab07-44d4-9a38-ab5d9c4a
+ 13e8/
+LOCATION:Promenade des Bastions 8
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Restauration et extension de la Bibliothèque de Gen
+ ève (M370TI) Mandat d'ingénieur spécialiste géotechnicien
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

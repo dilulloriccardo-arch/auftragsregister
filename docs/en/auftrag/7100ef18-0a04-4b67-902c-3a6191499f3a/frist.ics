@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7100ef18-0a04-4b67-902c-3a6191499f3a-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Submission deadline: Zürcherstrasse\, 5400 Baden\, Bauliche Massna
+ hmen Velostrasse und Umbau Bushaltestellen nach BehiG
+DESCRIPTION:Public buyer: Stadt Baden\, Abteilung Bau\nSubmission deadline:
+  20 Nov 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/7100ef18-0a04-4b67-902c-3a6191499f3a/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/7100ef18-0a04-4b67-902c-3a6191499f3a
+URL:https://auftragsregister.ch/en/auftrag/7100ef18-0a04-4b67-902c-3a619149
+ 9f3a/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Zürcherstrasse\, 5400 Baden\, Bauliche Ma
+ ssnahmen Velostrasse und Umbau Bushaltestellen nach BehiG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

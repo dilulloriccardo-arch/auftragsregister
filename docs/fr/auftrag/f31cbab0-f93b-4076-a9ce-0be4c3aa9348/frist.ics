@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f31cbab0-f93b-4076-a9ce-0be4c3aa9348-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : St. Moritz – Tirano\, Puntaltatunnel\, km 33
+ .787\, Erneuerung (Projektverfasser und Bauleiter)
+DESCRIPTION:Acheteur public : Rhätische Bahn AG\nDélai de remise : 30
+ .11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/f31cbab0-f93b-4076-a9ce-0be4c3aa9348/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/f31cbab0-f93b-4076-a9ce-0be4c3aa9
+ 348
+URL:https://auftragsregister.ch/fr/auftrag/f31cbab0-f93b-4076-a9ce-0be4c3aa
+ 9348/
+LOCATION:Poschiavo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : St. Moritz – Tirano\, Puntaltatunnel\, k
+ m 33.787\, Erneuerung (Projektverfasser und Bauleiter)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

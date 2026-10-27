@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2785137e-342d-4cdb-b8b2-9859a8ffd141-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Scadenza: Assistant IA Cantonal
+DESCRIPTION:Ente pubblico: Etat de Neuchâtel SIEN\nScadenza: 03.11.2026\, 
+ 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/2785137e-342d-
+ 4cdb-b8b2-9859a8ffd141/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/2785137e-342d-4cdb-b8b2-9859a8ffd141
+URL:https://auftragsregister.ch/it/auftrag/2785137e-342d-4cdb-b8b2-9859a8ff
+ d141/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Assistant IA Cantonal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

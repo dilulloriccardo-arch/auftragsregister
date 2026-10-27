@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2db35a0f-8b7c-46fc-b9bc-9fdece6b90ae-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Submission deadline: Mise en conformité des arrêts de bus selon l
+ a loi LHand
+DESCRIPTION:Public buyer: Service technique communal\nSubmission deadline: 
+ 23 Nov 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/2db35a0f-8b7c-46fc-b9bc-9fdece6b90ae/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/2db35a0f-8b7c-46fc-b9bc-9fdece6b90ae
+URL:https://auftragsregister.ch/en/auftrag/2db35a0f-8b7c-46fc-b9bc-9fdece6b
+ 90ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mise en conformité des arrêts de bus sel
+ on la loi LHand
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

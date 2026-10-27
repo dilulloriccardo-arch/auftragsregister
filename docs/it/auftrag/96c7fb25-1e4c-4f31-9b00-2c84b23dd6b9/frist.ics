@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:96c7fb25-1e4c-4f31-9b00-2c84b23dd6b9-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Scadenza: K-07 Melchtalerstrasse: Instandsetzung Blattibachbrücke
+DESCRIPTION:Ente pubblico: Bau- und Raumentwicklungsdepartement Obwalden\, 
+ Tiefbauamt\nScadenza: 26.11.2026\, 16:00\nNel registro: https://auftragsre
+ gister.ch/it/auftrag/96c7fb25-1e4c-4f31-9b00-2c84b23dd6b9/\nPubblicazione 
+ ufficiale: https://www.simap.ch/it/project-detail/96c7fb25-1e4c-4f31-9b00-
+ 2c84b23dd6b9
+URL:https://auftragsregister.ch/it/auftrag/96c7fb25-1e4c-4f31-9b00-2c84b23d
+ d6b9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: K-07 Melchtalerstrasse: Instandsetzung Blattibachbrü
+ cke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

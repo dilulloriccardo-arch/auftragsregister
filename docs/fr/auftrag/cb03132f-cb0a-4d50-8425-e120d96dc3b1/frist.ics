@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb03132f-cb0a-4d50-8425-e120d96dc3b1-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261113T225900Z
+SUMMARY:Délai de remise : Planification et conception SIA 32-53 du progr
+ amme de remplacement des chaînes
+DESCRIPTION:Acheteur public : Swissgrid AG - Engineering & Construction\n
+ Délai de remise : 13.11.2026\, 23 h 59\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/cb03132f-cb0a-4d50-8425-e120d96dc3b1/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/cb03132f-c
+ b0a-4d50-8425-e120d96dc3b1
+URL:https://auftragsregister.ch/fr/auftrag/cb03132f-cb0a-4d50-8425-e120d96d
+ c3b1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Planification et conception SIA 32-53 du p
+ rogramme de remplacement des chaînes
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

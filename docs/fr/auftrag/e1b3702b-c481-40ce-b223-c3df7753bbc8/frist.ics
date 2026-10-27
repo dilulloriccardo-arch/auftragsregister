@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1b3702b-c481-40ce-b223-c3df7753bbc8-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Délai de remise : Gare des Eaux-Vives (2350TI) menuiseries coura
+ ntes\, cloisons sanitaires\, gardecorps
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 16.12.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/e1b3702b-c481-40ce-b223-c3df7753bbc
+ 8/\nPublication officielle : https://www.simap.ch/fr/project-detail/e1b3
+ 702b-c481-40ce-b223-c3df7753bbc8
+URL:https://auftragsregister.ch/fr/auftrag/e1b3702b-c481-40ce-b223-c3df7753
+ bbc8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gare des Eaux-Vives (2350TI) menuiseries c
+ ourantes\, cloisons sanitaires\, gardecorps
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

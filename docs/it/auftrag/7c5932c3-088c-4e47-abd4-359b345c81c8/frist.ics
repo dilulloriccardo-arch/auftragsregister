@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7c5932c3-088c-4e47-abd4-359b345c81c8-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261203T150000Z
+SUMMARY:Scadenza: MP-110078 N13 RG Centro manutenzione S. Bernardino\, Mess
+ a a nuovo degli edifici esistenti e ampliamento / Parte II - Impianto foto
+ voltaico sui tetti
+DESCRIPTION:Ente pubblico: Ufficio federale delle strade USTRA\, Divisione 
+ infrastruttura stradale Est\nScadenza: 03.12.2026\, 16:00\nNel registro: h
+ ttps://auftragsregister.ch/it/auftrag/7c5932c3-088c-4e47-abd4-359b345c81c8
+ /\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/7c5932c
+ 3-088c-4e47-abd4-359b345c81c8
+URL:https://auftragsregister.ch/it/auftrag/7c5932c3-088c-4e47-abd4-359b345c
+ 81c8/
+LOCATION:Mesocco
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-110078 N13 RG Centro manutenzione S. Bernardino\, 
+ Messa a nuovo degli edifici esistenti e ampliamento / Parte II - Impianto 
+ fotovoltaico sui tetti
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

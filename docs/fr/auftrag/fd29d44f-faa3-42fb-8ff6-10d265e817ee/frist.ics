@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fd29d44f-faa3-42fb-8ff6-10d265e817ee-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T103000Z
+SUMMARY:Délai de remise : LOT2135 REVETEMENTS EXTERIEURS METALLIQUES_COM
+ PLEXE SCOLAIRE ET SPORTIF « CHEZ LE MAITRE »\, AU CHENIT.
+DESCRIPTION:Acheteur public : Greffe Municipale – Commune du Chenit (Pr
+ agma Partenaires SA succursale Yverdon)\nDélai de remise : 16.11.2026\,
+  11 h 30\nDans le registre : https://auftragsregister.ch/fr/auftrag/
+ fd29d44f-faa3-42fb-8ff6-10d265e817ee/\nPublication officielle : https://
+ www.simap.ch/fr/project-detail/fd29d44f-faa3-42fb-8ff6-10d265e817ee
+URL:https://auftragsregister.ch/fr/auftrag/fd29d44f-faa3-42fb-8ff6-10d265e8
+ 17ee/
+LOCATION:Le Sentier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : LOT2135 REVETEMENTS EXTERIEURS METALLIQUES
+ _COMPLEXE SCOLAIRE ET SPORTIF « CHEZ LE MAITRE »\, AU CHENIT.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

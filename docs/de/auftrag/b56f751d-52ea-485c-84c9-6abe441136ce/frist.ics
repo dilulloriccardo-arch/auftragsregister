@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b56f751d-52ea-485c-84c9-6abe441136ce-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:1
+DTSTART:20261029T150000Z
+SUMMARY:Eingabefrist: 10013 Neubau LUKS Wolhusen\, B 3.18 SKP 231.5 PV Anla
+ ge
+DESCRIPTION:Auftraggeber: LUKS Immobilien AG\nEingabefrist: 29.10.2026\, 16
+ .00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b56f751d-52e
+ a-485c-84c9-6abe441136ce/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/b56f751d-52ea-485c-84c9-6abe441136ce
+URL:https://auftragsregister.ch/de/auftrag/b56f751d-52ea-485c-84c9-6abe4411
+ 36ce/
+LOCATION:Wolhusen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 10013 Neubau LUKS Wolhusen\, B 3.18 SKP 231.5 PV 
+ Anlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eca8820b-70c3-4570-bd2d-4f882547fa00-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261110T225800Z
+SUMMARY:Eingabefrist: Ultra-high Resolution Electron-beam Lithography Syste
+ m
+DESCRIPTION:Auftraggeber: ETH Zürich - Abt. Procurement & Export Services\
+ nEingabefrist: 10.11.2026\, 23.58 Uhr\nIm Register: https://auftragsregis
+ ter.ch/de/auftrag/eca8820b-70c3-4570-bd2d-4f882547fa00/\nAmtliche Publikat
+ ion: https://www.simap.ch/de/project-detail/eca8820b-70c3-4570-bd2d-4f8825
+ 47fa00
+URL:https://auftragsregister.ch/de/auftrag/eca8820b-70c3-4570-bd2d-4f882547
+ fa00/
+LOCATION:Rüschlikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ultra-high Resolution Electron-beam Lithography S
+ ystem
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

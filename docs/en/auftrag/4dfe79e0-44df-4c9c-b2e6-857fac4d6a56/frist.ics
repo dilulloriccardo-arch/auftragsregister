@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4dfe79e0-44df-4c9c-b2e6-857fac4d6a56-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T190000Z
+SUMMARY:Submission deadline: LED Generalersatz Gebäude Berufsbildungszentr
+ um Goldau
+DESCRIPTION:Public buyer: Hochbauamt Kanton Schwyz\nSubmission deadline: 6
+  Nov 2026\, 20:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/4dfe79e0-44df-4c9c-b2e6-857fac4d6a56/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/4dfe79e0-44df-4c9c-b2e6-857fac4d6a56
+URL:https://auftragsregister.ch/en/auftrag/4dfe79e0-44df-4c9c-b2e6-857fac4d
+ 6a56/
+LOCATION:Goldau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: LED Generalersatz Gebäude Berufsbildungsz
+ entrum Goldau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

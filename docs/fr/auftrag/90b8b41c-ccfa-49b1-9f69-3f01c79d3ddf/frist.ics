@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90b8b41c-ccfa-49b1-9f69-3f01c79d3ddf-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T110011Z
+SUMMARY:Délai de remise : Conseil stratégique et opérationnel en marke
+ ting numérique
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 16.11.2026\, 12 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/90b8b41c-ccfa-49b1-9f69-3f01c79d3ddf/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/90b8b41c-ccfa-49b1-9f69-
+ 3f01c79d3ddf
+URL:https://auftragsregister.ch/fr/auftrag/90b8b41c-ccfa-49b1-9f69-3f01c79d
+ 3ddf/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Conseil stratégique et opérationnel en m
+ arketing numérique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

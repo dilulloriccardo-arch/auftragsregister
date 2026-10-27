@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb8d6c52-12bc-4f46-b680-1d9c9cb45111-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Eingabefrist: Sanierung Reservoir Fontaunetta\, Löschwasserbecken 
+ Pardi\, Baumeisterarbeiten Disentis/Mustér
+DESCRIPTION:Auftraggeber: Corporaziun d'aua Spina da Vin\nEingabefrist: 13.
+ 11.2026\nIm Register: https://auftragsregister.ch/de/auftrag/cb8d6c52-12bc
+ -4f46-b680-1d9c9cb45111/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/cb8d6c52-12bc-4f46-b680-1d9c9cb45111
+URL:https://auftragsregister.ch/de/auftrag/cb8d6c52-12bc-4f46-b680-1d9c9cb4
+ 5111/
+LOCATION:Disentis/Mustér
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Reservoir Fontaunetta\, Löschwasserbec
+ ken Pardi\, Baumeisterarbeiten Disentis/Mustér
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

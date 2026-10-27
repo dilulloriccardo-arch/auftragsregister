@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a74ad9a9-d1f7-4b0d-9b67-3cadf88bedb7-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261204T150000Z
+SUMMARY:Eingabefrist: transN - L222 - La Chaux-de-Fonds - Les Ponts-de-Mart
+ el – Etudes et travaux GC infrastructures à câbles (Entreprise Totale)
+DESCRIPTION:Auftraggeber: transports publics neuchâtelois SA\nEingabefrist
+ : 04.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/a74ad9a9-d1f7-4b0d-9b67-3cadf88bedb7/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/a74ad9a9-d1f7-4b0d-9b67-3cadf88bedb7
+URL:https://auftragsregister.ch/de/auftrag/a74ad9a9-d1f7-4b0d-9b67-3cadf88b
+ edb7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: transN - L222 - La Chaux-de-Fonds - Les Ponts-de-
+ Martel – Etudes et travaux GC infrastructures à câbles (Entreprise Tot
+ ale)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

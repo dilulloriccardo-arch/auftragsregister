@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6f4757ea-e718-4032-abb8-821e233acdf6-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261103T225900Z
+SUMMARY:Submission deadline: House 07B / SKP 271.1 / Special plastering wor
+ k 07B including metal interer windows
+DESCRIPTION:Public buyer: Spitalanlagengesellschaft HOCH Health Ostschweiz\
+ nSubmission deadline: 3 Nov 2026\, 23:59\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/6f4757ea-e718-4032-abb8-821e233acdf6/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/6f4757ea-e718-4032-abb
+ 8-821e233acdf6
+URL:https://auftragsregister.ch/en/auftrag/6f4757ea-e718-4032-abb8-821e233a
+ cdf6/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: House 07B / SKP 271.1 / Special plastering
+  work 07B including metal interer windows
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

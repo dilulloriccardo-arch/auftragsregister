@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2da7c568-b404-4479-81af-0ba0f431f9a4-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Submission deadline: Sanierung Wohn- und Geschäftshaus\, Rössliga
+ sse 32 / Wendelinsgasse 21
+DESCRIPTION:Public buyer: Einwohnergemeinde Riehen\nSubmission deadline: 21
+  Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/2da7c568-b404-4479-81af-0ba0f431f9a4/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/2da7c568-b404-4479-81af-0ba0f431f9a4
+URL:https://auftragsregister.ch/en/auftrag/2da7c568-b404-4479-81af-0ba0f431
+ f9a4/
+LOCATION:Riehen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Wohn- und Geschäftshaus\, Röss
+ ligasse 32 / Wendelinsgasse 21
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

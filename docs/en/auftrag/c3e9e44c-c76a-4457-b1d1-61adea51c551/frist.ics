@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c3e9e44c-c76a-4457-b1d1-61adea51c551-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261111T090000Z
+SUMMARY:Submission deadline: ARA Zimmerberg - BKP 650\, Gasinstallationen
+DESCRIPTION:Public buyer: Zweckverband ARA Zimmerberg\nSubmission deadline:
+  11 Nov 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/c3e9e44c-c76a-4457-b1d1-61adea51c551/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/c3e9e44c-c76a-4457-b1d1-61adea51c551
+URL:https://auftragsregister.ch/en/auftrag/c3e9e44c-c76a-4457-b1d1-61adea51
+ c551/
+LOCATION:Thalwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ARA Zimmerberg - BKP 650\, Gasinstallation
+ en
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

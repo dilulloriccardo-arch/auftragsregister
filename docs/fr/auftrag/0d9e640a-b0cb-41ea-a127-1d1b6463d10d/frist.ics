@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d9e640a-b0cb-41ea-a127-1d1b6463d10d-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270107T150000Z
+SUMMARY:Délai de remise : 26-417-FB Renfort d’équipe Voie ferrée
+DESCRIPTION:Acheteur public : SBB CFF FFS Infra-Bahntechnik\nDélai de re
+ mise : 07.01.2027\, 16 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/0d9e640a-b0cb-41ea-a127-1d1b6463d10d/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/0d9e640a-b0cb-41ea-a12
+ 7-1d1b6463d10d
+URL:https://auftragsregister.ch/fr/auftrag/0d9e640a-b0cb-41ea-a127-1d1b6463
+ d10d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 26-417-FB Renfort d’équipe Voie ferrée
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

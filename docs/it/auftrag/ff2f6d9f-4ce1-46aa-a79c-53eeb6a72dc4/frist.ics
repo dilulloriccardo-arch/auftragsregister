@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff2f6d9f-4ce1-46aa-a79c-53eeb6a72dc4-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261104T070000Z
+SUMMARY:Scadenza: 082_222/224 Spengler- und Flachdacharbeiten\, Gebäudehü
+ llensanierung G-G-Strasse 22 - 30
+DESCRIPTION:Ente pubblico: Baudepartement Stadt Zug\, Abteilung Hochbau\nSc
+ adenza: 04.11.2026\, 08:00\nNel registro: https://auftragsregister.ch/it/a
+ uftrag/ff2f6d9f-4ce1-46aa-a79c-53eeb6a72dc4/\nPubblicazione ufficiale: htt
+ ps://www.simap.ch/it/project-detail/ff2f6d9f-4ce1-46aa-a79c-53eeb6a72dc4
+URL:https://auftragsregister.ch/it/auftrag/ff2f6d9f-4ce1-46aa-a79c-53eeb6a7
+ 2dc4/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 082_222/224 Spengler- und Flachdacharbeiten\, Gebäud
+ ehüllensanierung G-G-Strasse 22 - 30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

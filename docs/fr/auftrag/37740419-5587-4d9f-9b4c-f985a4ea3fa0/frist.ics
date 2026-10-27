@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:37740419-5587-4d9f-9b4c-f985a4ea3fa0-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 230 E
+ lektroinstallationen
+DESCRIPTION:Acheteur public : Einwohnergemeinde Bremgarten b. Bern (maure
+ r bauleitung gmbh)\nDélai de remise : 27.11.2026\, 23 h 59\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/37740419-5587-4d9f-9b
+ 4c-f985a4ea3fa0/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/37740419-5587-4d9f-9b4c-f985a4ea3fa0
+URL:https://auftragsregister.ch/fr/auftrag/37740419-5587-4d9f-9b4c-f985a4ea
+ 3fa0/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 2
+ 30 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

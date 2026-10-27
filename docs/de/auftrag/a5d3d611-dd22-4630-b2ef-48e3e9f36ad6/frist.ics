@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5d3d611-dd22-4630-b2ef-48e3e9f36ad6-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Eingabefrist: Beschaffung\, Installation\, Inbetriebnahme\, Schulun
+ g und Wartung einer automatisierten Präanalytik-Lösung
+DESCRIPTION:Auftraggeber: Solothurner Spitäler AG\nEingabefrist: 01.12.202
+ 6\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a5d3d6
+ 11-dd22-4630-b2ef-48e3e9f36ad6/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/a5d3d611-dd22-4630-b2ef-48e3e9f36ad6
+URL:https://auftragsregister.ch/de/auftrag/a5d3d611-dd22-4630-b2ef-48e3e9f3
+ 6ad6/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung\, Installation\, Inbetriebnahme\, Sch
+ ulung und Wartung einer automatisierten Präanalytik-Lösung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

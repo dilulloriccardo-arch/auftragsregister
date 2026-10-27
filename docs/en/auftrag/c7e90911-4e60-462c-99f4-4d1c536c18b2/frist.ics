@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c7e90911-4e60-462c-99f4-4d1c536c18b2-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Submission deadline: MP-210026 NEB N13 Viabilità Bellinzona Sud - 
+ Riazzino\, Lot 402\, travaux de construction métallique\, secteur ouest
+DESCRIPTION:Public buyer: Ufficio federale delle strade USTRA\, divisione i
+ nfrastruttura stradale Est\nSubmission deadline: 5 Nov 2026\, 16:00\nIn 
+ the register: https://auftragsregister.ch/en/auftrag/c7e90911-4e60-462c-99
+ f4-4d1c536c18b2/\nOfficial publication: https://www.simap.ch/en/project-de
+ tail/c7e90911-4e60-462c-99f4-4d1c536c18b2
+URL:https://auftragsregister.ch/en/auftrag/c7e90911-4e60-462c-99f4-4d1c536c
+ 18b2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-210026 NEB N13 Viabilità Bellinzona Su
+ d - Riazzino\, Lot 402\, travaux de construction métallique\, secteur oue
+ st
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

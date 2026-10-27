@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b62d3a3b-c707-40f7-b1fe-b050a903b7e4-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : Rahmenvertrag Elektro-/ ICT-Dienstleistungen
+DESCRIPTION:Acheteur public : Asyl-Organisation Zürich (AOZ)\nDélai de 
+ remise : 23.11.2026\, 12 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/b62d3a3b-c707-40f7-b1fe-b050a903b7e4/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/b62d3a3b-c707-40f7-b
+ 1fe-b050a903b7e4
+URL:https://auftragsregister.ch/fr/auftrag/b62d3a3b-c707-40f7-b1fe-b050a903
+ b7e4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rahmenvertrag Elektro-/ ICT-Dienstleistung
+ en
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ab50406-3a2e-4c85-97c7-f5463a41f2a9-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T110000Z
+SUMMARY:Submission deadline: MO-PR : 082 Bretigny-sur-Morrens 1 - 094 Morre
+ ns 5+1B
+DESCRIPTION:Public buyer: DGTL-Direction du cadastre et de la géoinformati
+ on (DCG)\nSubmission deadline: 18 Nov 2026\, 12:00\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/0ab50406-3a2e-4c85-97c7-f5463a41f2a9/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/0ab50406-3a2
+ e-4c85-97c7-f5463a41f2a9
+URL:https://auftragsregister.ch/en/auftrag/0ab50406-3a2e-4c85-97c7-f5463a41
+ f2a9/
+LOCATION:Bretigny-sur-Morrens\, 1054 Morrens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MO-PR : 082 Bretigny-sur-Morrens 1 - 094 M
+ orrens 5+1B
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

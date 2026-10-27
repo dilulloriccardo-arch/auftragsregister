@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:245998dc-0db1-437a-82cc-8eebea9a45c6-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Eingabefrist: Einwohnergemeinde Hünenberg - Krankentaggeldversiche
+ rung per 01.01.2027
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Hünenberg\nEingabefrist: 16.11
+ .2026\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/24
+ 5998dc-0db1-437a-82cc-8eebea9a45c6/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/245998dc-0db1-437a-82cc-8eebea9a45c6
+URL:https://auftragsregister.ch/de/auftrag/245998dc-0db1-437a-82cc-8eebea9a
+ 45c6/
+LOCATION:Hünenberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Einwohnergemeinde Hünenberg - Krankentaggeldvers
+ icherung per 01.01.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

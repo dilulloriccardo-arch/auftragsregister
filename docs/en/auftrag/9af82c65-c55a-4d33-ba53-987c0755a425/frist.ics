@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9af82c65-c55a-4d33-ba53-987c0755a425-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Submission deadline: Ersatzbeschaffung IWBs Schulanlage Erlen Sek u
+ nd Hübeli PS
+DESCRIPTION:Public buyer: Gemeinde Emmen\, Bildung und Kultur\nSubmission d
+ eadline: 23 Nov 2026\, 11:00\nIn the register: https://auftragsregister.
+ ch/en/auftrag/9af82c65-c55a-4d33-ba53-987c0755a425/\nOfficial publication:
+  https://www.simap.ch/en/project-detail/9af82c65-c55a-4d33-ba53-987c0755a4
+ 25
+URL:https://auftragsregister.ch/en/auftrag/9af82c65-c55a-4d33-ba53-987c0755
+ a425/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatzbeschaffung IWBs Schulanlage Erlen S
+ ek und Hübeli PS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

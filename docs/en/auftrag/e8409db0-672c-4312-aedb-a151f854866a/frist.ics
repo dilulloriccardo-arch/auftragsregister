@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8409db0-672c-4312-aedb-a151f854866a-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261103T090000Z
+SUMMARY:Submission deadline: Umbau Reservoir Feumet - Tiefbauarbeiten Eggst
+ rasse
+DESCRIPTION:Public buyer: Gemeinde Maur - Tiefbau\nSubmission deadline: 3 
+ Nov 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /e8409db0-672c-4312-aedb-a151f854866a/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/e8409db0-672c-4312-aedb-a151f854866a
+URL:https://auftragsregister.ch/en/auftrag/e8409db0-672c-4312-aedb-a151f854
+ 866a/
+LOCATION:Maur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Umbau Reservoir Feumet - Tiefbauarbeiten E
+ ggstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

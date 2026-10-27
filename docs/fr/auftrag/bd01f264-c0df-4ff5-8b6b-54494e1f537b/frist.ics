@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd01f264-c0df-4ff5-8b6b-54494e1f537b-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261029T150000Z
+SUMMARY:Délai de remise : Linge de toilette
+DESCRIPTION:Acheteur public : Centrale d'achats et d'ingénierie biomédi
+ cale Vaud-Genève (CAIB)\nDélai de remise : 29.10.2026\, 16 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/bd01f264-c0df-4
+ ff5-8b6b-54494e1f537b/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/bd01f264-c0df-4ff5-8b6b-54494e1f537b
+URL:https://auftragsregister.ch/fr/auftrag/bd01f264-c0df-4ff5-8b6b-54494e1f
+ 537b/
+LOCATION:Thônex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Linge de toilette
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

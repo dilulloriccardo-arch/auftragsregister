@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4835305b-55b9-46fd-b2b0-bfd1a44be3df-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:2
+DTSTART:20261127T140000Z
+SUMMARY:Délai de remise : Modernes elektrisches Prüflabor «Sala Prova
+ » für das Instandhaltungszentrum Castione-Arbedo
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB Division Pr
+ oduktion Personenverkehr\nDélai de remise : 27.11.2026\, 15 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/4835305b-55b9-4
+ 6fd-b2b0-bfd1a44be3df/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/4835305b-55b9-46fd-b2b0-bfd1a44be3df
+URL:https://auftragsregister.ch/fr/auftrag/4835305b-55b9-46fd-b2b0-bfd1a44b
+ e3df/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Modernes elektrisches Prüflabor «Sala Pr
+ ova» für das Instandhaltungszentrum Castione-Arbedo
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

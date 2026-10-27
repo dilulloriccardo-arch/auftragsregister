@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ad08e233-9cde-43da-ba2a-da9181cc5a70-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261203T090000Z
+SUMMARY:Scadenza: CDM123.0 - Finestre\, porte\, porte automatiche in metall
+ o per la Città della Musica nel comune di Lugano
+DESCRIPTION:Ente pubblico: Fondazione Conservatorio della Svizzera italiana
+ \nScadenza: 03.12.2026\, 10:00\nNel registro: https://auftragsregister.ch/
+ it/auftrag/ad08e233-9cde-43da-ba2a-da9181cc5a70/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/ad08e233-9cde-43da-ba2a-da9181cc5a
+ 70
+URL:https://auftragsregister.ch/it/auftrag/ad08e233-9cde-43da-ba2a-da9181cc
+ 5a70/
+LOCATION:Lugano-Besso
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: CDM123.0 - Finestre\, porte\, porte automatiche in me
+ tallo per la Città della Musica nel comune di Lugano
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

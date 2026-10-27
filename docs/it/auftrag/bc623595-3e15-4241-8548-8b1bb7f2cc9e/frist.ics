@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc623595-3e15-4241-8548-8b1bb7f2cc9e-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T100000Z
+SUMMARY:Scadenza: RES Ibig\, Tiefbauarbeiten
+DESCRIPTION:Ente pubblico: Gruppenwasserversorgung Furttal (Ingenieurbüro 
+ Gujer AG)\nScadenza: 06.11.2026\, 11:00\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/bc623595-3e15-4241-8548-8b1bb7f2cc9e/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/bc623595-3e15-4241-8548-8
+ b1bb7f2cc9e
+URL:https://auftragsregister.ch/it/auftrag/bc623595-3e15-4241-8548-8b1bb7f2
+ cc9e/
+LOCATION:Watt (Regensdorf)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: RES Ibig\, Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

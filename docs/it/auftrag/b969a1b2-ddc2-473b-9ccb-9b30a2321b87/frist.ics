@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b969a1b2-ddc2-473b-9ccb-9b30a2321b87-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T090000Z
+SUMMARY:Scadenza: Fornitura di apparecchiature per l'infrastruttura Wi-Fi b
+ asata su tecnologia Cisco
+DESCRIPTION:Ente pubblico: Università della Svizzera italiana\nScadenza: 2
+ 3.11.2026\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/b9
+ 69a1b2-ddc2-473b-9ccb-9b30a2321b87/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/b969a1b2-ddc2-473b-9ccb-9b30a2321b87
+URL:https://auftragsregister.ch/it/auftrag/b969a1b2-ddc2-473b-9ccb-9b30a232
+ 1b87/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fornitura di apparecchiature per l'infrastruttura Wi-
+ Fi basata su tecnologia Cisco
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

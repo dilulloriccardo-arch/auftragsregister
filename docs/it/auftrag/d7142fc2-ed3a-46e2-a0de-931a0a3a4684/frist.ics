@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d7142fc2-ed3a-46e2-a0de-931a0a3a4684-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:1
+DTSTART:20261222T103000Z
+SUMMARY:Scadenza: RETROFIT DES CELLULES 6.4 kV DE JOULE PAR DE NOUVELLES CE
+ LLULES 24 KV SANS SF6
+DESCRIPTION:Ente pubblico: SIE S.A.\, Service intercommunal des Energies\nS
+ cadenza: 22.12.2026\, 11:30\nNel registro: https://auftragsregister.ch/it/
+ auftrag/d7142fc2-ed3a-46e2-a0de-931a0a3a4684/\nPubblicazione ufficiale: ht
+ tps://www.simap.ch/it/project-detail/d7142fc2-ed3a-46e2-a0de-931a0a3a4684
+URL:https://auftragsregister.ch/it/auftrag/d7142fc2-ed3a-46e2-a0de-931a0a3a
+ 4684/
+LOCATION:Chemin du Bocher 5\, Ecublens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: RETROFIT DES CELLULES 6.4 kV DE JOULE PAR DE NOUVELLE
+ S CELLULES 24 KV SANS SF6
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

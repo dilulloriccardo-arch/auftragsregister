@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:936ebadd-0953-4368-8b7a-22de37dd8b80-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Délai de remise : KBZSG\, Kreuzbleicheweg 4\, 9000 St.Gallen\, E
+ rneuerung Beleuchtung - BKP 233.2 Lieferung Spezialleuchten (Umrüstsätze
+ -LED)
+DESCRIPTION:Acheteur public : Kanton St.Gallen\, Bau- und Umweltdeparteme
+ nt\, Hochbauamt\nDélai de remise : 02.11.2026\, 23 h 59\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/936ebadd-0953-4368-8b7a-
+ 22de37dd8b80/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/936ebadd-0953-4368-8b7a-22de37dd8b80
+URL:https://auftragsregister.ch/fr/auftrag/936ebadd-0953-4368-8b7a-22de37dd
+ 8b80/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : KBZSG\, Kreuzbleicheweg 4\, 9000 St.Gallen
+ \, Erneuerung Beleuchtung - BKP 233.2 Lieferung Spezialleuchten (Umrüsts
+ ätze-LED)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

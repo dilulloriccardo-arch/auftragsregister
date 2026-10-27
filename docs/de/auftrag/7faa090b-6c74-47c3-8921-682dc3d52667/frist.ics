@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7faa090b-6c74-47c3-8921-682dc3d52667-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Eingabefrist: Sicherheitsdienstleistungen für das Justiz- und Sich
+ erheitsdepartement Basel-Stadt
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 23.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/7faa090b-6c74-47c3-8921-682dc3d52667/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/7faa090b-6c74-47c3-8921-682dc3d52667
+URL:https://auftragsregister.ch/de/auftrag/7faa090b-6c74-47c3-8921-682dc3d5
+ 2667/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sicherheitsdienstleistungen für das Justiz- und 
+ Sicherheitsdepartement Basel-Stadt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

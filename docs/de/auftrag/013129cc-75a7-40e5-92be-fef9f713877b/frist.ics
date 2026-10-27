@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:013129cc-75a7-40e5-92be-fef9f713877b-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:1
+DTSTART:20261029T140000Z
+SUMMARY:Eingabefrist: Mechanische Bauteile
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB Division Produkti
+ on Personenverkehr\nEingabefrist: 29.10.2026\, 15.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/013129cc-75a7-40e5-92be-fef9f713877b/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/013129cc-75
+ a7-40e5-92be-fef9f713877b
+URL:https://auftragsregister.ch/de/auftrag/013129cc-75a7-40e5-92be-fef9f713
+ 877b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Mechanische Bauteile
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

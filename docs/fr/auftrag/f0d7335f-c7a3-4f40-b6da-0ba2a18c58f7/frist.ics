@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f0d7335f-c7a3-4f40-b6da-0ba2a18c58f7-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:3
+DTSTART:20261102T225900Z
+SUMMARY:Délai de remise : Projektverfasser Bahnhof Marin Epagnier
+DESCRIPTION:Acheteur public : BLS AG - Finance & SCM - Strategische Besch
+ affung\nDélai de remise : 02.11.2026\, 23 h 59\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/f0d7335f-c7a3-4f40-b6da-0ba2a18c5
+ 8f7/\nPublication officielle : https://www.simap.ch/fr/project-detail/f0
+ d7335f-c7a3-4f40-b6da-0ba2a18c58f7
+URL:https://auftragsregister.ch/fr/auftrag/f0d7335f-c7a3-4f40-b6da-0ba2a18c
+ 58f7/
+LOCATION:Marin-Epagnier / Neuenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projektverfasser Bahnhof Marin Epagnier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

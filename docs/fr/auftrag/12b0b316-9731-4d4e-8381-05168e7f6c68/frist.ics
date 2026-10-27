@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12b0b316-9731-4d4e-8381-05168e7f6c68-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261203T110000Z
+SUMMARY:Délai de remise : Projnum_C1 / Prestations de numérisation de c
+ ollections patrimoniales audiovisuelles
+DESCRIPTION:Acheteur public : Centrale municipale d'achat et d'impression
+  de la Ville de Genève\nDélai de remise : 03.12.2026\, 12 h 00\nDa
+ ns le registre : https://auftragsregister.ch/fr/auftrag/12b0b316-9731-4d
+ 4e-8381-05168e7f6c68/\nPublication officielle : https://www.simap.ch/fr/
+ project-detail/12b0b316-9731-4d4e-8381-05168e7f6c68
+URL:https://auftragsregister.ch/fr/auftrag/12b0b316-9731-4d4e-8381-05168e7f
+ 6c68/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projnum_C1 / Prestations de numérisation 
+ de collections patrimoniales audiovisuelles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

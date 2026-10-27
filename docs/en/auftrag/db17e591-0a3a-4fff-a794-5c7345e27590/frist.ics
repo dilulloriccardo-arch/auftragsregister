@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db17e591-0a3a-4fff-a794-5c7345e27590-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Submission deadline: EBP-597 AFW Schwabguet Baumeister
+DESCRIPTION:Public buyer: Energie Wasser Bern\nSubmission deadline: 30 Nov
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/db
+ 17e591-0a3a-4fff-a794-5c7345e27590/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/db17e591-0a3a-4fff-a794-5c7345e27590
+URL:https://auftragsregister.ch/en/auftrag/db17e591-0a3a-4fff-a794-5c7345e2
+ 7590/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EBP-597 AFW Schwabguet Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

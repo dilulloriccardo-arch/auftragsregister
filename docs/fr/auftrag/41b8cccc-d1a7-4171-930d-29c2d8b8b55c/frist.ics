@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41b8cccc-d1a7-4171-930d-29c2d8b8b55c-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Délai de remise : Neubau Seniorenwohnungen Herosé\, Aarau - BKP
+  214 Montagebau in Holz
+DESCRIPTION:Acheteur public : Einwohnergemeinde Aarau - Stadtbauamt\, Sek
+ tion Hochbau\nDélai de remise : 26.11.2026\, 16 h 00\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/41b8cccc-d1a7-4171-930d-29c
+ 2d8b8b55c/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/41b8cccc-d1a7-4171-930d-29c2d8b8b55c
+URL:https://auftragsregister.ch/fr/auftrag/41b8cccc-d1a7-4171-930d-29c2d8b8
+ b55c/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Seniorenwohnungen Herosé\, Aarau -
+  BKP 214 Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

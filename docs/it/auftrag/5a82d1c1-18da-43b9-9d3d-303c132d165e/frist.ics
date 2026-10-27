@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a82d1c1-18da-43b9-9d3d-303c132d165e-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Scadenza: Quartierergänzung Volta Ost\, Integrales Facility Manage
+ ment
+DESCRIPTION:Ente pubblico: Bau- und Verkehrsdepartement des Kantons Basel-S
+ tadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nScade
+ nza: 30.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/5a82d1c1-18da-43b9-9d3d-303c132d165e/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/5a82d1c1-18da-43b9-9d3d-303c132d165e
+URL:https://auftragsregister.ch/it/auftrag/5a82d1c1-18da-43b9-9d3d-303c132d
+ 165e/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Quartierergänzung Volta Ost\, Integrales Facility Ma
+ nagement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

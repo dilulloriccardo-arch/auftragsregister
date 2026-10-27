@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b692554d-8fb2-4456-ba43-6fd8ccd45d17-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261218T160000Z
+SUMMARY:Délai de remise : 5 véhicules d'intervention des pompiers de la
+  ville de Lucerne
+DESCRIPTION:Acheteur public : Stadt Luzern\, Sozial- und Sicherheitsdirek
+ tion\, Feuerwehr\nDélai de remise : 18.12.2026\, 17 h 00\nDans le r
+ egistre : https://auftragsregister.ch/fr/auftrag/b692554d-8fb2-4456-ba43
+ -6fd8ccd45d17/\nPublication officielle : https://www.simap.ch/fr/project
+ -detail/b692554d-8fb2-4456-ba43-6fd8ccd45d17
+URL:https://auftragsregister.ch/fr/auftrag/b692554d-8fb2-4456-ba43-6fd8ccd4
+ 5d17/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 5 véhicules d'intervention des pompiers d
+ e la ville de Lucerne
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

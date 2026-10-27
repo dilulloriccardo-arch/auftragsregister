@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8fc6556-9689-430d-8348-3d9c3831cfbf-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Délai de remise : Prestations d’ingénieur pour l’assainisse
+ ment\, le réaménagement et l’extension de la Stiegstrasse et du Stiegw
+ eg
+DESCRIPTION:Acheteur public : Stadt Adliswil Planung Werke\nDélai de rem
+ ise : 07.01.2027\, 11 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/c8fc6556-9689-430d-8348-3d9c3831cfbf/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/c8fc6556-9689-430d-8348
+ -3d9c3831cfbf
+URL:https://auftragsregister.ch/fr/auftrag/c8fc6556-9689-430d-8348-3d9c3831
+ cfbf/
+LOCATION:Adliswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Prestations d’ingénieur pour l’assain
+ issement\, le réaménagement et l’extension de la Stiegstrasse et du St
+ iegweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

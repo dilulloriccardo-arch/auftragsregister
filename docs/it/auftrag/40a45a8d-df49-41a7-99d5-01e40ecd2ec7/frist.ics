@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40a45a8d-df49-41a7-99d5-01e40ecd2ec7-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T225900Z
+SUMMARY:Scadenza: (b26055-9) Bern\, Monbijoustrasse 40\, Gesamtsanierung / 
+ BKP 222
+DESCRIPTION:Ente pubblico: Bundesamt für Bauten und Logistik BBL\nScadenza
+ : 16.11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag
+ /40a45a8d-df49-41a7-99d5-01e40ecd2ec7/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/40a45a8d-df49-41a7-99d5-01e40ecd2ec7
+URL:https://auftragsregister.ch/it/auftrag/40a45a8d-df49-41a7-99d5-01e40ecd
+ 2ec7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (b26055-9) Bern\, Monbijoustrasse 40\, Gesamtsanierun
+ g / BKP 222
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

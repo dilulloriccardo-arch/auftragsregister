@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57f03457-da99-4963-b5c6-05340e134419-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20270127T153000Z
+SUMMARY:Scadenza: Alpenrhein: Steinlieferungen für Unterhalt "gesetzter" B
+ lockwurf Winter 2027/28
+DESCRIPTION:Ente pubblico: Rheinunternehmen\nScadenza: 27.01.2027\, 16:30\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/57f03457-da99-4963-b5
+ c6-05340e134419/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/57f03457-da99-4963-b5c6-05340e134419
+URL:https://auftragsregister.ch/it/auftrag/57f03457-da99-4963-b5c6-05340e13
+ 4419/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Alpenrhein: Steinlieferungen für Unterhalt "gesetzte
+ r" Blockwurf Winter 2027/28
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

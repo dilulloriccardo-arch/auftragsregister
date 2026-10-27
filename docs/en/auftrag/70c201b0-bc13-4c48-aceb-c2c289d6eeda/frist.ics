@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:70c201b0-bc13-4c48-aceb-c2c289d6eeda-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Submission deadline: Neubau Primaschulanlage und Sporthalle Ferrach
+ \, 8630 Rüti ZH - 23 Elektroanlagen
+DESCRIPTION:Public buyer: Gemeinde Rüti ZH\nSubmission deadline: 16 Nov 
+ 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/70c2
+ 01b0-bc13-4c48-aceb-c2c289d6eeda/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/70c201b0-bc13-4c48-aceb-c2c289d6eeda
+URL:https://auftragsregister.ch/en/auftrag/70c201b0-bc13-4c48-aceb-c2c289d6
+ eeda/
+LOCATION:Rüti ZH
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Primaschulanlage und Sporthalle Fer
+ rach\, 8630 Rüti ZH - 23 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

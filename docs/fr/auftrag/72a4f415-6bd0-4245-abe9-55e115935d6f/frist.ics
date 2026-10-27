@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72a4f415-6bd0-4245-abe9-55e115935d6f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Délai de remise : Agrandissement Hebelschule\, BKP 261.0 Ascense
+ urs.
+DESCRIPTION:Acheteur public : Einwohnergemeinde Riehen\nDélai de remise
+  : 20.11.2026\, 12 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/72a4f415-6bd0-4245-abe9-55e115935d6f/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/72a4f415-6bd0-4245-abe9-55
+ e115935d6f
+URL:https://auftragsregister.ch/fr/auftrag/72a4f415-6bd0-4245-abe9-55e11593
+ 5d6f/
+LOCATION:Riehen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Agrandissement Hebelschule\, BKP 261.0 Asc
+ enseurs.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

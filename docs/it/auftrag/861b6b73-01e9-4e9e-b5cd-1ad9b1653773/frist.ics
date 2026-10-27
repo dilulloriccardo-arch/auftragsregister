@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:861b6b73-01e9-4e9e-b5cd-1ad9b1653773-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Scadenza: BAV 60500 SRZ Wache Süd\, Neubau - BKP 281.0 Unterlagsb
+ öden und BKP 281.5 Bodenbeläge aus Kunststein
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 02.11
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/861b6b
+ 73-01e9-4e9e-b5cd-1ad9b1653773/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/861b6b73-01e9-4e9e-b5cd-1ad9b1653773
+URL:https://auftragsregister.ch/it/auftrag/861b6b73-01e9-4e9e-b5cd-1ad9b165
+ 3773/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 60500 SRZ Wache Süd\, Neubau - BKP 281.0 Unterla
+ gsböden und BKP 281.5 Bodenbeläge aus Kunststein
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

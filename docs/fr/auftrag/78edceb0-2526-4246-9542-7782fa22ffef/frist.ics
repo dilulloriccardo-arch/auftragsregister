@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78edceb0-2526-4246-9542-7782fa22ffef-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Délai de remise : USZ Campus MITTE 1|2 / CVC 273.19 Portes - paq
+ uet 9 (Portes coupe-feu en bois)
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 15.12.2026\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/78edceb0-2526-4246-9542-7782fa22ffef/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/78edceb0-2526-4246-9542-
+ 7782fa22ffef
+URL:https://auftragsregister.ch/fr/auftrag/78edceb0-2526-4246-9542-7782fa22
+ ffef/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : USZ Campus MITTE 1|2 / CVC 273.19 Portes -
+  paquet 9 (Portes coupe-feu en bois)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

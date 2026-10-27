@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c23dc033-55dd-47f9-81b7-f6b658f07f82-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Submission deadline: Schule Herrliberg: ICT Erneuerung
+DESCRIPTION:Public buyer: Schule Herrliberg / Gemeinsame Sekundarschule Erl
+ enbach Herrliberg (PUBLICS)\nSubmission deadline: 16 Nov 2026\nIn the re
+ gister: https://auftragsregister.ch/en/auftrag/c23dc033-55dd-47f9-81b7-f6b
+ 658f07f82/\nOfficial publication: https://www.simap.ch/en/project-detail/c
+ 23dc033-55dd-47f9-81b7-f6b658f07f82
+URL:https://auftragsregister.ch/en/auftrag/c23dc033-55dd-47f9-81b7-f6b658f0
+ 7f82/
+LOCATION:Herrliberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schule Herrliberg: ICT Erneuerung
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f937dd13-ae83-4a71-b2bb-c674dedbeacb-frist@auftragsregister.ch
+DTSTAMP:20260904T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Scadenza: EPFL - Contrat-cadre - Fourniture de papier d’impressio
+ n (2027-2030)
+DESCRIPTION:Ente pubblico: EPFL VPF ACHATS\nScadenza: 02.11.2026\, 16:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/f937dd13-ae83-4a71-b2b
+ b-c674dedbeacb/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/f937dd13-ae83-4a71-b2bb-c674dedbeacb
+URL:https://auftragsregister.ch/it/auftrag/f937dd13-ae83-4a71-b2bb-c674dedb
+ eacb/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EPFL - Contrat-cadre - Fourniture de papier d’impre
+ ssion (2027-2030)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

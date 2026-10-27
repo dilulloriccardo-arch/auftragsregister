@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:012be017-398e-4b0b-bdb8-157709566212-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261123T153000Z
+SUMMARY:Submission deadline: Projekt Schinzenhof und Gemeindehaus "Erneueru
+ ng der technischen Anlagen\, Brandschutzertüchtigungen und Revitalisierun
+ g der Aussenerschliessung"\, BKP 213 Montagebau in Stahl und Geländer HEL
+ IX
+DESCRIPTION:Public buyer: Gemeinde Horgen\nSubmission deadline: 23 Nov 20
+ 26\, 16:30\nIn the register: https://auftragsregister.ch/en/auftrag/012be0
+ 17-398e-4b0b-bdb8-157709566212/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/012be017-398e-4b0b-bdb8-157709566212
+URL:https://auftragsregister.ch/en/auftrag/012be017-398e-4b0b-bdb8-15770956
+ 6212/
+LOCATION:Horgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Projekt Schinzenhof und Gemeindehaus "Erne
+ uerung der technischen Anlagen\, Brandschutzertüchtigungen und Revitalisi
+ erung der Aussenerschliessung"\, BKP 213 Montagebau in Stahl und Geländer
+  HELIX
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

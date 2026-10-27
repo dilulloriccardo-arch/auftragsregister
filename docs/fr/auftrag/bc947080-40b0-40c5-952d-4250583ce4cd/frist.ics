@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc947080-40b0-40c5-952d-4250583ce4cd-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Délai de remise : Avenue de la Paix (2372TI) Charpente métalliq
+ ue et ouvrage d'art
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 09.12.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/bc947080-40b0-40c5-952d-4250583ce4c
+ d/\nPublication officielle : https://www.simap.ch/fr/project-detail/bc94
+ 7080-40b0-40c5-952d-4250583ce4cd
+URL:https://auftragsregister.ch/fr/auftrag/bc947080-40b0-40c5-952d-4250583c
+ e4cd/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Avenue de la Paix (2372TI) Charpente méta
+ llique et ouvrage d'art
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

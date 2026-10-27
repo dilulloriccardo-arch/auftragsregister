@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:73d27b76-0c65-495e-ad76-8b2e8f6de93b-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T163000Z
+SUMMARY:Eingabefrist: Projet de transformation et d’agrandissement de l
+ ’école existante
+DESCRIPTION:Auftraggeber: Commune de Remaufens\nEingabefrist: 23.11.2026\, 
+ 17.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/73d27b76-0
+ c65-495e-ad76-8b2e8f6de93b/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/73d27b76-0c65-495e-ad76-8b2e8f6de93b
+URL:https://auftragsregister.ch/de/auftrag/73d27b76-0c65-495e-ad76-8b2e8f6d
+ e93b/
+LOCATION:Remaufens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projet de transformation et d’agrandissement de
+  l’école existante
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

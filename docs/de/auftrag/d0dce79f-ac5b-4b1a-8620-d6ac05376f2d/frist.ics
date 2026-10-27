@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0dce79f-ac5b-4b1a-8620-d6ac05376f2d-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Eingabefrist: Klinik im Hasel - BKP 214 Montagebau in Holz
+DESCRIPTION:Auftraggeber: Von Effinger Stiftung (HSSP AG)\nEingabefrist: 24
+ .11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /d0dce79f-ac5b-4b1a-8620-d6ac05376f2d/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/d0dce79f-ac5b-4b1a-8620-d6ac05376f2d
+URL:https://auftragsregister.ch/de/auftrag/d0dce79f-ac5b-4b1a-8620-d6ac0537
+ 6f2d/
+LOCATION:Gontenschwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Klinik im Hasel - BKP 214 Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

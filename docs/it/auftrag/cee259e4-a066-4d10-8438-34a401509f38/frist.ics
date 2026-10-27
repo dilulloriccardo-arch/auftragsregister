@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cee259e4-a066-4d10-8438-34a401509f38-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261111T150000Z
+SUMMARY:Scadenza: Strassensanierung mit Neubau Gehweg Enggenhüttenstrasse
+DESCRIPTION:Ente pubblico: Kanton Appenzell I.Rh. Bau- und Umwelt Departeme
+ nt Landesbauamt\nScadenza: 11.11.2026\, 16:00\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/cee259e4-a066-4d10-8438-34a401509f38/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/cee259e4-a066-4d10-
+ 8438-34a401509f38
+URL:https://auftragsregister.ch/it/auftrag/cee259e4-a066-4d10-8438-34a40150
+ 9f38/
+LOCATION:Appenzell
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Strassensanierung mit Neubau Gehweg Enggenhüttenstra
+ sse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

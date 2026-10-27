@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd30a5ba-926d-41de-a47a-8832f5cc390f-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Scadenza: AO 2024-017 Boulevard Helvétique
+DESCRIPTION:Ente pubblico: Services industriels de Genève (SIG) - Directio
+ n Achats\nScadenza: 02.11.2026\, 12:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/dd30a5ba-926d-41de-a47a-8832f5cc390f/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/dd30a5ba-926d-41de-a47a-88
+ 32f5cc390f
+URL:https://auftragsregister.ch/it/auftrag/dd30a5ba-926d-41de-a47a-8832f5cc
+ 390f/
+LOCATION:Genève (Ville)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AO 2024-017 Boulevard Helvétique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

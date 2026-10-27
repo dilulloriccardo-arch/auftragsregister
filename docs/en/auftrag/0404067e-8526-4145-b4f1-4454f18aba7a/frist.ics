@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0404067e-8526-4145-b4f1-4454f18aba7a-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Submission deadline: Heidi Abel residential complex_BKP 215.2 facad
+ e cladding
+DESCRIPTION:Public buyer: Stiftung Alterswohnen der Stadt Zürich (SAW) (G
+ üntensperger Baumanagement AG)\nSubmission deadline: 1 Dec 2026\, 16:00
+ \nIn the register: https://auftragsregister.ch/en/auftrag/0404067e-8526-41
+ 45-b4f1-4454f18aba7a/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/0404067e-8526-4145-b4f1-4454f18aba7a
+URL:https://auftragsregister.ch/en/auftrag/0404067e-8526-4145-b4f1-4454f18a
+ ba7a/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Heidi Abel residential complex_BKP 215.2 f
+ acade cladding
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

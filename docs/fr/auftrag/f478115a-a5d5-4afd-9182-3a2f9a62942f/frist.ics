@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f478115a-a5d5-4afd-9182-3a2f9a62942f-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Délai de remise : Remplacement de l'éclairage de 14 terrains et
+  places de sport à Neuchâtel
+DESCRIPTION:Acheteur public : Ville de Neuchâtel\nDélai de remise : 0
+ 6.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/f478115a-a5d5-4afd-9182-3a2f9a62942f/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/f478115a-a5d5-4afd-9182-3a2f9a
+ 62942f
+URL:https://auftragsregister.ch/fr/auftrag/f478115a-a5d5-4afd-9182-3a2f9a62
+ 942f/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Remplacement de l'éclairage de 14 terrain
+ s et places de sport à Neuchâtel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

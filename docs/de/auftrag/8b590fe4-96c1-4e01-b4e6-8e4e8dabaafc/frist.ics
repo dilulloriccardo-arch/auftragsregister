@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8b590fe4-96c1-4e01-b4e6-8e4e8dabaafc-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Eingabefrist: Exploitation de la restauration de l'ECA
+DESCRIPTION:Auftraggeber: Etablissement d'Assurance contre l'incendie et le
+ s éléments naturels du canton de Vaud (ECA)\nEingabefrist: 08.01.2027\, 
+ 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8b590fe4-9
+ 6c1-4e01-b4e6-8e4e8dabaafc/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/8b590fe4-96c1-4e01-b4e6-8e4e8dabaafc
+URL:https://auftragsregister.ch/de/auftrag/8b590fe4-96c1-4e01-b4e6-8e4e8dab
+ aafc/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Exploitation de la restauration de l'ECA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:343d0b78-7688-4de6-a742-9f083898c3b2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261117T160000Z
+SUMMARY:Eingabefrist: ESP Ausserholligen\, Gesamtleiter\, Ladenwandgut
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 17.11.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/343d0b78-7688-4de6-a742-9f083898c3b2/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/343d0b78-7688-4de6-a742-9f083898c3b2
+URL:https://auftragsregister.ch/de/auftrag/343d0b78-7688-4de6-a742-9f083898
+ c3b2/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ESP Ausserholligen\, Gesamtleiter\, Ladenwandgut
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

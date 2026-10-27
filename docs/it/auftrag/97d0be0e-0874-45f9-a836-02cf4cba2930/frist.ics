@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:97d0be0e-0874-45f9-a836-02cf4cba2930-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:2
+DTSTART:20261120T100000Z
+SUMMARY:Scadenza: Transports publics VMCV SA à Clarens - Infrastructures d
+ e recharges au dépôt de Clarens
+DESCRIPTION:Ente pubblico: Transports publics VMCV SA\nScadenza: 20.11.2026
+ \, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/97d0be0e-08
+ 74-45f9-a836-02cf4cba2930/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/97d0be0e-0874-45f9-a836-02cf4cba2930
+URL:https://auftragsregister.ch/it/auftrag/97d0be0e-0874-45f9-a836-02cf4cba
+ 2930/
+LOCATION:Clarens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Transports publics VMCV SA à Clarens - Infrastructur
+ es de recharges au dépôt de Clarens
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

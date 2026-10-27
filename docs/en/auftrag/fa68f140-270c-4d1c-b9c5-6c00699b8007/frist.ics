@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa68f140-270c-4d1c-b9c5-6c00699b8007-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261103T150000Z
+SUMMARY:Submission deadline: Restauration parascolaire (lot 1) et préscola
+ ire (lot 2)
+DESCRIPTION:Public buyer: Commune d'Ecublens - Service de la cohésion soci
+ ale et du logement\nSubmission deadline: 3 Nov 2026\, 16:00\nIn the regi
+ ster: https://auftragsregister.ch/en/auftrag/fa68f140-270c-4d1c-b9c5-6c006
+ 99b8007/\nOfficial publication: https://www.simap.ch/en/project-detail/fa6
+ 8f140-270c-4d1c-b9c5-6c00699b8007
+URL:https://auftragsregister.ch/en/auftrag/fa68f140-270c-4d1c-b9c5-6c00699b
+ 8007/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Restauration parascolaire (lot 1) et prés
+ colaire (lot 2)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

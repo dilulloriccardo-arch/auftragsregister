@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab64c1c9-a5bd-42b8-9ec3-80fc845a830f-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Submission deadline: Gesamtsanierung St. Josefsgasse 7a\, 4500 Solo
+ thurn - Betreutes Wohnen im Alter
+DESCRIPTION:Public buyer: Stadt Solothurn\, Bau und Umwelt I Hochbau\nSubmi
+ ssion deadline: 20 Nov 2026\nIn the register: https://auftragsregister.c
+ h/en/auftrag/ab64c1c9-a5bd-42b8-9ec3-80fc845a830f/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/ab64c1c9-a5bd-42b8-9ec3-80fc845a830
+ f
+URL:https://auftragsregister.ch/en/auftrag/ab64c1c9-a5bd-42b8-9ec3-80fc845a
+ 830f/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gesamtsanierung St. Josefsgasse 7a\, 4500 
+ Solothurn - Betreutes Wohnen im Alter
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

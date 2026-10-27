@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df7bd12a-a409-46a4-9ebc-8be24e8d02eb-frist@auftragsregister.ch
+DTSTAMP:20260825T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: AUH-SAN\, Sanierung Dienstgebäude HKW Aubrugg\, BKP 215 
+ Fassade / Gebäudehülle
+DESCRIPTION:Ente pubblico: Elektrizitätswerk der Stadt Zürich (ewz)\nScad
+ enza: 09.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/df7bd12a-a409-46a4-9ebc-8be24e8d02eb/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/df7bd12a-a409-46a4-9ebc-8be24e8d02eb
+URL:https://auftragsregister.ch/it/auftrag/df7bd12a-a409-46a4-9ebc-8be24e8d
+ 02eb/
+LOCATION:Wallisellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AUH-SAN\, Sanierung Dienstgebäude HKW Aubrugg\, BKP 
+ 215 Fassade / Gebäudehülle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

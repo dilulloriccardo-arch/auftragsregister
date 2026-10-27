@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bf75971b-91cc-401c-bc18-031c4721374f-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261208T100000Z
+SUMMARY:Submission deadline: Travaux de renouvellement des enrobés bitumin
+ eux routier 2027
+DESCRIPTION:Public buyer: OCGC - DER - Service de l'entretien du patrimoine
+  des routes cantonales\nSubmission deadline: 8 Dec 2026\, 11:00\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/bf75971b-91cc-401c-bc18-0
+ 31c4721374f/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /bf75971b-91cc-401c-bc18-031c4721374f
+URL:https://auftragsregister.ch/en/auftrag/bf75971b-91cc-401c-bc18-031c4721
+ 374f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Travaux de renouvellement des enrobés bit
+ umineux routier 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

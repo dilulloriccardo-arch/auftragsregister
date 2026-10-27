@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45d616d8-7eb2-4c4a-8f29-52d557ed931f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Submission deadline: Stadt Chur - Büromobiliar
+DESCRIPTION:Public buyer: Stadt Chur - Immobilien und Bewirtschaftung\, Fac
+ ility Services\nSubmission deadline: 12 Nov 2026\, 16:00\nIn the registe
+ r: https://auftragsregister.ch/en/auftrag/45d616d8-7eb2-4c4a-8f29-52d557ed
+ 931f/\nOfficial publication: https://www.simap.ch/en/project-detail/45d616
+ d8-7eb2-4c4a-8f29-52d557ed931f
+URL:https://auftragsregister.ch/en/auftrag/45d616d8-7eb2-4c4a-8f29-52d557ed
+ 931f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Stadt Chur - Büromobiliar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

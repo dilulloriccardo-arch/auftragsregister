@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40068443-6a11-4a78-a264-56fea52c2ed7-frist@auftragsregister.ch
+DTSTAMP:20260913T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Submission deadline: Mandat d’architecte\, direction générale d
+ u projet et pool de mandataires pour la rénovation énergétique des bât
+ iments du Collège du Cherrat
+DESCRIPTION:Public buyer: Commune de Saint-Prex (ABA PARTENAIRES SA)\nSubmi
+ ssion deadline: 13 Nov 2026\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/40068443-6a11-4a78-a264-56fea52c2ed7/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/40068443-6a11-4a78-a264-56f
+ ea52c2ed7
+URL:https://auftragsregister.ch/en/auftrag/40068443-6a11-4a78-a264-56fea52c
+ 2ed7/
+LOCATION:Saint-Prex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mandat d’architecte\, direction généra
+ le du projet et pool de mandataires pour la rénovation énergétique des 
+ bâtiments du Collège du Cherrat
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

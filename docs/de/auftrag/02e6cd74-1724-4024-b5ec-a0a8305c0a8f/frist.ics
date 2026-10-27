@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02e6cd74-1724-4024-b5ec-a0a8305c0a8f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T150000Z
+SUMMARY:Eingabefrist: Mobilier EPFL 2027-2031
+DESCRIPTION:Auftraggeber: EPFL - VPF Achats\nEingabefrist: 13.11.2026\, 16.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/02e6cd74-1724
+ -4024-b5ec-a0a8305c0a8f/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/02e6cd74-1724-4024-b5ec-a0a8305c0a8f
+URL:https://auftragsregister.ch/de/auftrag/02e6cd74-1724-4024-b5ec-a0a8305c
+ 0a8f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Mobilier EPFL 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

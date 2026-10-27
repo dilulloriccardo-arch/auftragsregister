@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bf9f620c-ae05-4abe-af57-ffd489d451e8-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261124T140000Z
+SUMMARY:Eingabefrist: Schulraumerweiterung Kilchbühl Biel-Benken (Basel-La
+ nd)\, BKP 230 Elektroanlagen inkl. Gebäudeautomation
+DESCRIPTION:Auftraggeber: Gemeindeverwaltung Biel-Benken\nEingabefrist: 24.
+ 11.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ bf9f620c-ae05-4abe-af57-ffd489d451e8/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/bf9f620c-ae05-4abe-af57-ffd489d451e8
+URL:https://auftragsregister.ch/de/auftrag/bf9f620c-ae05-4abe-af57-ffd489d4
+ 51e8/
+LOCATION:Biel-Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulraumerweiterung Kilchbühl Biel-Benken (Base
+ l-Land)\, BKP 230 Elektroanlagen inkl. Gebäudeautomation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:36b63a36-1766-4850-8ec0-a2ac668d170b-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Délai de remise : Ressources Cheffes ou chefs de projet et Busin
+ ess Analyst
+DESCRIPTION:Acheteur public : Ville de Lausanne – LEA - Service d’org
+ anisation et d’informatique (SOI)\nDélai de remise : 02.11.2026\, 16
+  h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/36b
+ 63a36-1766-4850-8ec0-a2ac668d170b/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/36b63a36-1766-4850-8ec0-a2ac668d170b
+URL:https://auftragsregister.ch/fr/auftrag/36b63a36-1766-4850-8ec0-a2ac668d
+ 170b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ressources Cheffes ou chefs de projet et B
+ usiness Analyst
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

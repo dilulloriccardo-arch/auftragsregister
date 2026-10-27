@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5261b5f5-8647-448f-a624-f0077f9c1de0-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T153000Z
+SUMMARY:Scadenza: Auberge de Sauvabelin - Démolition et reconstruction / C
+ FC 358 Agencements de cuisine professionnelle
+DESCRIPTION:Ente pubblico: Commune de Lausanne – Direction du logement\, 
+ de l'environnement et de l'architecture - Service d’architecture et du l
+ ogement\nScadenza: 10.11.2026\, 16:30\nNel registro: https://auftragsregis
+ ter.ch/it/auftrag/5261b5f5-8647-448f-a624-f0077f9c1de0/\nPubblicazione uff
+ iciale: https://www.simap.ch/it/project-detail/5261b5f5-8647-448f-a624-f00
+ 77f9c1de0
+URL:https://auftragsregister.ch/it/auftrag/5261b5f5-8647-448f-a624-f0077f9c
+ 1de0/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Auberge de Sauvabelin - Démolition et reconstruction
+  / CFC 358 Agencements de cuisine professionnelle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

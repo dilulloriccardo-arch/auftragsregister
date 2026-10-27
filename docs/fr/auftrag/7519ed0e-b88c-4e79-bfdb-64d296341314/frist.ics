@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7519ed0e-b88c-4e79-bfdb-64d296341314-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Délai de remise : Transports scolaires
+DESCRIPTION:Acheteur public : Commune de Val-de-Ruz\nDélai de remise :
+  09.11.2026\, 11 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/7519ed0e-b88c-4e79-bfdb-64d296341314/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/7519ed0e-b88c-4e79-bfdb-64d296
+ 341314
+URL:https://auftragsregister.ch/fr/auftrag/7519ed0e-b88c-4e79-bfdb-64d29634
+ 1314/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transports scolaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

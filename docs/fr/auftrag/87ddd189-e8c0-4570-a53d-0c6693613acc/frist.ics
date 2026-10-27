@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87ddd189-e8c0-4570-a53d-0c6693613acc-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T190000Z
+SUMMARY:Délai de remise : LED Generalersatz Gebäude Berufsbildungszentr
+ um Pfäffikon BBZP
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Schwyz\nDélai de remise
+  : 06.11.2026\, 20 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/87ddd189-e8c0-4570-a53d-0c6693613acc/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/87ddd189-e8c0-4570-a53d-0c
+ 6693613acc
+URL:https://auftragsregister.ch/fr/auftrag/87ddd189-e8c0-4570-a53d-0c669361
+ 3acc/
+LOCATION:Pfäffikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : LED Generalersatz Gebäude Berufsbildungsz
+ entrum Pfäffikon BBZP
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

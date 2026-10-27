@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:406dcea6-86cf-4852-9bf8-f717ffea8906-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261111T080000Z
+SUMMARY:Délai de remise : IWB\, TBA\, Tiefbauarbeiten Hirzbodenweg Süd 
+ MP3418
+DESCRIPTION:Acheteur public : IWB Industrielle Werke Basel\nDélai de rem
+ ise : 11.11.2026\, 9 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/406dcea6-86cf-4852-9bf8-f717ffea8906/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/406dcea6-86cf-4852-9bf8-
+ f717ffea8906
+URL:https://auftragsregister.ch/fr/auftrag/406dcea6-86cf-4852-9bf8-f717ffea
+ 8906/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IWB\, TBA\, Tiefbauarbeiten Hirzbodenweg S
+ üd MP3418
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

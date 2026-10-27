@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2c5e13ef-ffc6-4aee-8847-fa82b2fef0a9-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Délai de remise : 13.0457 Langenthal\, rénovation du gymnase 
+ – CFC 274 Vitrages intérieurs spéciaux
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 09.11.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/2c5e13ef-ffc6-4aee-8847-f
+ a82b2fef0a9/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/2c5e13ef-ffc6-4aee-8847-fa82b2fef0a9
+URL:https://auftragsregister.ch/fr/auftrag/2c5e13ef-ffc6-4aee-8847-fa82b2fe
+ f0a9/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 13.0457 Langenthal\, rénovation du gymnas
+ e – CFC 274 Vitrages intérieurs spéciaux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

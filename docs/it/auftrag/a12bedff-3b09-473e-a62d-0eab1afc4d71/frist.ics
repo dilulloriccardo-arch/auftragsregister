@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a12bedff-3b09-473e-a62d-0eab1afc4d71-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:1
+DTSTART:20261117T150000Z
+SUMMARY:Scadenza: 284 Concorso per l'acquisizione e la personalizzazione di
+  un nuovo servizio per la gestione delle procedure esecutive
+DESCRIPTION:Ente pubblico: Centro sistemi informativi\nScadenza: 17.11.2026
+ \, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/a12bedff-3b
+ 09-473e-a62d-0eab1afc4d71/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/a12bedff-3b09-473e-a62d-0eab1afc4d71
+URL:https://auftragsregister.ch/it/auftrag/a12bedff-3b09-473e-a62d-0eab1afc
+ 4d71/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 284 Concorso per l'acquisizione e la personalizzazion
+ e di un nuovo servizio per la gestione delle procedure esecutive
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

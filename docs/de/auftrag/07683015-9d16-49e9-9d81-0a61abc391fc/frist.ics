@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07683015-9d16-49e9-9d81-0a61abc391fc-frist@auftragsregister.ch
+DTSTAMP:20260903T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Eingabefrist: Recherche d'une gestion d'affaires pour les instances
+  judiciaires du Canton du Jura
+DESCRIPTION:Auftraggeber: DFNS - Service de l'informatique\nEingabefrist: 0
+ 6.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/07683015-9d16-49e9-9d81-0a61abc391fc/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/07683015-9d16-49e9-9d81-0a61abc391fc
+URL:https://auftragsregister.ch/de/auftrag/07683015-9d16-49e9-9d81-0a61abc3
+ 91fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Recherche d'une gestion d'affaires pour les insta
+ nces judiciaires du Canton du Jura
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:304b5a3a-b313-4f02-90f6-f49177ac04a4-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Eingabefrist: Appel d'offres public pour le renouvellement des lice
+ nces BMC Control M avec maintenance et support
+DESCRIPTION:Auftraggeber: Centrale commune d'achats (CCA)\nEingabefrist: 02
+ .12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /304b5a3a-b313-4f02-90f6-f49177ac04a4/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/304b5a3a-b313-4f02-90f6-f49177ac04a4
+URL:https://auftragsregister.ch/de/auftrag/304b5a3a-b313-4f02-90f6-f49177ac
+ 04a4/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Appel d'offres public pour le renouvellement des 
+ licences BMC Control M avec maintenance et support
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

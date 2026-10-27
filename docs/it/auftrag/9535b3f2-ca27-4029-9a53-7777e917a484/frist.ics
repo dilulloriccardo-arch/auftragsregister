@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9535b3f2-ca27-4029-9a53-7777e917a484-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Scadenza: Potenziamento opere esistenti (camera B7) e bypass. Prest
+ azioni da ingegnerie civile SIA41-53
+DESCRIPTION:Ente pubblico: Comune di Lumino\nScadenza: 09.11.2026\, 12:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/9535b3f2-ca27-4029-9a
+ 53-7777e917a484/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/9535b3f2-ca27-4029-9a53-7777e917a484
+URL:https://auftragsregister.ch/it/auftrag/9535b3f2-ca27-4029-9a53-7777e917
+ a484/
+LOCATION:Lumino
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Potenziamento opere esistenti (camera B7) e bypass. P
+ restazioni da ingegnerie civile SIA41-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

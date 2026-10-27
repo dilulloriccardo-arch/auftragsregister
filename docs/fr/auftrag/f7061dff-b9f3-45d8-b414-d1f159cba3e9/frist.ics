@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f7061dff-b9f3-45d8-b414-d1f159cba3e9-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261113T210000Z
+SUMMARY:Délai de remise : VSZK - Tender BKP 235 Équipement de sécurit
+ é
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Schwyz\nDélai de remise
+  : 13.11.2026\, 22 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/f7061dff-b9f3-45d8-b414-d1f159cba3e9/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/f7061dff-b9f3-45d8-b414-d1
+ f159cba3e9
+URL:https://auftragsregister.ch/fr/auftrag/f7061dff-b9f3-45d8-b414-d1f159cb
+ a3e9/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : VSZK - Tender BKP 235 Équipement de sécu
+ rité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

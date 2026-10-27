@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c376bab-929a-49ef-bbe1-c426144ea6f5-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T150000Z
+SUMMARY:Submission deadline: Beschaffung von Kanal TV-Inspektionsfahrzeug
+DESCRIPTION:Public buyer: TED - Entsorgung + Recycling Zürich (ERZ) Bändl
+ istrasse 108\, 8010 Zürich\nSubmission deadline: 19 Nov 2026\, 16:00\nI
+ n the register: https://auftragsregister.ch/en/auftrag/6c376bab-929a-49ef-
+ bbe1-c426144ea6f5/\nOfficial publication: https://www.simap.ch/en/project-
+ detail/6c376bab-929a-49ef-bbe1-c426144ea6f5
+URL:https://auftragsregister.ch/en/auftrag/6c376bab-929a-49ef-bbe1-c426144e
+ a6f5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung von Kanal TV-Inspektionsfahrze
+ ug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

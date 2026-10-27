@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f508640-0117-4a8f-a1e8-b8053a67abbc-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Délai de remise : MP-250021 N2 EP01 Mendrisio – Melano\, Conce
+ ption et maîtrise d'œuvre d'installations d'exploitation et de sécurit
+ é
+DESCRIPTION:Acheteur public : Ufficio federale delle strade USTRA\, divis
+ ione infrastruttura stradale Est\nDélai de remise : 20.11.2026\, 16 h
+  00\nDans le registre : https://auftragsregister.ch/fr/auftrag/5f50864
+ 0-0117-4a8f-a1e8-b8053a67abbc/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/5f508640-0117-4a8f-a1e8-b8053a67abbc
+URL:https://auftragsregister.ch/fr/auftrag/5f508640-0117-4a8f-a1e8-b8053a67
+ abbc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-250021 N2 EP01 Mendrisio – Melano\, C
+ onception et maîtrise d'œuvre d'installations d'exploitation et de sécu
+ rité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

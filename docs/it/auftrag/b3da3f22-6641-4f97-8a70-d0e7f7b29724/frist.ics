@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3da3f22-6641-4f97-8a70-d0e7f7b29724-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Scadenza: Einwohnergemeinde Steinhausen - Unfallversicherungen per 
+ 01.01.2027
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Steinhausen\nScadenza: 16.11.2
+ 026\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/b3da3f22
+ -6641-4f97-8a70-d0e7f7b29724/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/b3da3f22-6641-4f97-8a70-d0e7f7b29724
+URL:https://auftragsregister.ch/it/auftrag/b3da3f22-6641-4f97-8a70-d0e7f7b2
+ 9724/
+LOCATION:Steinhausen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Einwohnergemeinde Steinhausen - Unfallversicherungen 
+ per 01.01.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

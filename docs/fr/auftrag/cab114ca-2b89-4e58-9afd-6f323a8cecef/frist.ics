@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cab114ca-2b89-4e58-9afd-6f323a8cecef-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261111T133000Z
+SUMMARY:Délai de remise : Concorso per le opere di pulizia di aree e fon
+ di comunali per gli anni 2027 e 2028
+DESCRIPTION:Acheteur public : Divisione spazi urbani\, Servizi tecnici\nD
+ élai de remise : 11.11.2026\, 14 h 30\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/cab114ca-2b89-4e58-9afd-6f323a8cecef/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/cab114ca-2b
+ 89-4e58-9afd-6f323a8cecef
+URL:https://auftragsregister.ch/fr/auftrag/cab114ca-2b89-4e58-9afd-6f323a8c
+ ecef/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Concorso per le opere di pulizia di aree e
+  fondi comunali per gli anni 2027 e 2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

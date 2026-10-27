@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b37a1f42-6fb6-4d20-84f9-9a29480459b0-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261123T130000Z
+SUMMARY:Eingabefrist: K2 Gotthardstasse\, Gurtnellen\, Belagssanierung Brei
+ tental
+DESCRIPTION:Auftraggeber: Amt für Tiefbau Uri\nEingabefrist: 23.11.2026\, 
+ 14.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b37a1f42-6
+ fb6-4d20-84f9-9a29480459b0/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/b37a1f42-6fb6-4d20-84f9-9a29480459b0
+URL:https://auftragsregister.ch/de/auftrag/b37a1f42-6fb6-4d20-84f9-9a294804
+ 59b0/
+LOCATION:Gurtnellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: K2 Gotthardstasse\, Gurtnellen\, Belagssanierung 
+ Breitental
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

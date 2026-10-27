@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e53115c-e00d-41c7-835d-e199e40cd645-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Submission deadline: LC-MS with on/offline sample preconcentration
+DESCRIPTION:Public buyer: Bundesamt für Rüstung armasuisse\nSubmission de
+ adline: 24 Nov 2026\, 23:59\nIn the register: https://auftragsregister.c
+ h/en/auftrag/3e53115c-e00d-41c7-835d-e199e40cd645/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/3e53115c-e00d-41c7-835d-e199e40cd64
+ 5
+URL:https://auftragsregister.ch/en/auftrag/3e53115c-e00d-41c7-835d-e199e40c
+ d645/
+LOCATION:Posieux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: LC-MS with on/offline sample preconcentrat
+ ion
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

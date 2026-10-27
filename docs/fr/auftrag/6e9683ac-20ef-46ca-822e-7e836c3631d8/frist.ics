@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e9683ac-20ef-46ca-822e-7e836c3631d8-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261204T100000Z
+SUMMARY:Délai de remise : Samsung Mobile Devices
+DESCRIPTION:Acheteur public : HOCH Health Ostschweiz\, Departement IT\nD
+ élai de remise : 04.12.2026\, 11 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/6e9683ac-20ef-46ca-822e-7e836c3631d8/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/6e9683ac-20
+ ef-46ca-822e-7e836c3631d8
+URL:https://auftragsregister.ch/fr/auftrag/6e9683ac-20ef-46ca-822e-7e836c36
+ 31d8/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Samsung Mobile Devices
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

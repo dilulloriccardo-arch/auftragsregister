@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0368bfd0-8397-487f-a639-6057f29c2017-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261110T100000Z
+SUMMARY:Scadenza: Fornitura di generi alimentari 01.01.2027 - 31.12.2027
+DESCRIPTION:Ente pubblico: Fondazione Parco San Rocco\nScadenza: 10.11.2026
+ \, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/0368bfd0-83
+ 97-487f-a639-6057f29c2017/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/0368bfd0-8397-487f-a639-6057f29c2017
+URL:https://auftragsregister.ch/it/auftrag/0368bfd0-8397-487f-a639-6057f29c
+ 2017/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fornitura di generi alimentari 01.01.2027 - 31.12.202
+ 7
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

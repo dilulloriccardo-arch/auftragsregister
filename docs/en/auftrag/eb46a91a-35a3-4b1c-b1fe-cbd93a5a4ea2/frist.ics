@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb46a91a-35a3-4b1c-b1fe-cbd93a5a4ea2-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:1
+DTSTART:20261110T110000Z
+SUMMARY:Submission deadline: Hauterive/FR\, Suisse / Protection anti-corros
+ ion conduite forcée
+DESCRIPTION:Public buyer: Groupe E SA - Service achat pour les Marchés pub
+ lics\nSubmission deadline: 10 Nov 2026\, 12:00\nIn the register: https:/
+ /auftragsregister.ch/en/auftrag/eb46a91a-35a3-4b1c-b1fe-cbd93a5a4ea2/\nOff
+ icial publication: https://www.simap.ch/en/project-detail/eb46a91a-35a3-4b
+ 1c-b1fe-cbd93a5a4ea2
+URL:https://auftragsregister.ch/en/auftrag/eb46a91a-35a3-4b1c-b1fe-cbd93a5a
+ 4ea2/
+LOCATION:Rossens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Hauterive/FR\, Suisse / Protection anti-co
+ rrosion conduite forcée
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

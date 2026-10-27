@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e53a3393-d821-432e-9c60-97b9729f4c34-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Scadenza: Funiculaire de Chaumont - Remplacement du véhicule et de
+  la commande
+DESCRIPTION:Ente pubblico: Transports Publics Neuchâtelois SA\nScadenza: 2
+ 7.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/e5
+ 3a3393-d821-432e-9c60-97b9729f4c34/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/e53a3393-d821-432e-9c60-97b9729f4c34
+URL:https://auftragsregister.ch/it/auftrag/e53a3393-d821-432e-9c60-97b9729f
+ 4c34/
+LOCATION:Chaumont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Funiculaire de Chaumont - Remplacement du véhicule e
+ t de la commande
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

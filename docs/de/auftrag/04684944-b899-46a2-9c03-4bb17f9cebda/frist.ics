@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:04684944-b899-46a2-9c03-4bb17f9cebda-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261208T225900Z
+SUMMARY:Eingabefrist: N08.52 MP-080293 - EP Spiez - Interlaken West - PV Um
+ welt\, inkl. UBB - Phase MP/DP - Inb./Abschluss (ID 12081)
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA - Abteilung Strasse
+ ninfrastruktur West - Filiale Thun\nEingabefrist: 08.12.2026\, 23.59 Uhr\
+ nIm Register: https://auftragsregister.ch/de/auftrag/04684944-b899-46a2-9c
+ 03-4bb17f9cebda/\nAmtliche Publikation: https://www.simap.ch/de/project-de
+ tail/04684944-b899-46a2-9c03-4bb17f9cebda
+URL:https://auftragsregister.ch/de/auftrag/04684944-b899-46a2-9c03-4bb17f9c
+ ebda/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: N08.52 MP-080293 - EP Spiez - Interlaken West - P
+ V Umwelt\, inkl. UBB - Phase MP/DP - Inb./Abschluss (ID 12081)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

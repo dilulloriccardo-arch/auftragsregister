@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:63cd4251-16d0-4700-9762-7e1c874ac36f-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Eingabefrist: EBP-639_Elektroschweiss- und Stumpfschweissformteile
+DESCRIPTION:Auftraggeber: Energie Wasser Bern\nEingabefrist: 24.11.2026\, 2
+ 3.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/63cd4251-16
+ d0-4700-9762-7e1c874ac36f/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/63cd4251-16d0-4700-9762-7e1c874ac36f
+URL:https://auftragsregister.ch/de/auftrag/63cd4251-16d0-4700-9762-7e1c874a
+ c36f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: EBP-639_Elektroschweiss- und Stumpfschweissformte
+ ile
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

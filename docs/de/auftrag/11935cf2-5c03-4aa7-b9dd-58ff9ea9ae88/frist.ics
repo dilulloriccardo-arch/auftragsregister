@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:11935cf2-5c03-4aa7-b9dd-58ff9ea9ae88-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261118T110000Z
+SUMMARY:Eingabefrist: MP 3342 Benkenstrasse - Entsorgung PAK-Material
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 18.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/11935cf2-5c03-4aa7-b9dd-58ff9ea9ae88/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/11935cf2-5c03-4aa7-b9dd-58ff9ea9ae88
+URL:https://auftragsregister.ch/de/auftrag/11935cf2-5c03-4aa7-b9dd-58ff9ea9
+ ae88/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP 3342 Benkenstrasse - Entsorgung PAK-Material
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

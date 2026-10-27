@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a142a26-35a3-4636-b9cb-1d5d9340fae6-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Scadenza: Balexert – Travaux CVC phase 2
+DESCRIPTION:Ente pubblico: Services Industriels de Genève (SIG) Direction 
+ Projets Industriels et Solutions Digitales\nScadenza: 20.11.2026\, 12:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/5a142a26-35a3-4636-b9
+ cb-1d5d9340fae6/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/5a142a26-35a3-4636-b9cb-1d5d9340fae6
+URL:https://auftragsregister.ch/it/auftrag/5a142a26-35a3-4636-b9cb-1d5d9340
+ fae6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Balexert – Travaux CVC phase 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f66ef5bf-fe88-4c8b-ba8a-3cbc6542849d-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:1
+DTSTART:20261201T130000Z
+SUMMARY:Délai de remise : Avenir de la circulation dans la région de Th
+ oune\, paquet de travail 3 : étude de faisabilité urbaine\, de circulati
+ on\, technique et environnementale de deux variantes de tunnel
+DESCRIPTION:Acheteur public : Entwicklungsraum Thun\nDélai de remise :
+  01.12.2026\, 14 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/f66ef5bf-fe88-4c8b-ba8a-3cbc6542849d/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/f66ef5bf-fe88-4c8b-ba8a-3cbc65
+ 42849d
+URL:https://auftragsregister.ch/fr/auftrag/f66ef5bf-fe88-4c8b-ba8a-3cbc6542
+ 849d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Avenir de la circulation dans la région d
+ e Thoune\, paquet de travail 3 : étude de faisabilité urbaine\, de circu
+ lation\, technique et environnementale de deux variantes de tunnel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

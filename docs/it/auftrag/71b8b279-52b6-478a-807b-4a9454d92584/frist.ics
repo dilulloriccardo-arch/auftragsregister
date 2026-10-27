@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71b8b279-52b6-478a-807b-4a9454d92584-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:2
+DTSTART:20261123T140000Z
+SUMMARY:Scadenza: 25-490 Arbeits- und Hebebühnen bedient und unbedient
+DESCRIPTION:Ente pubblico: SBB CFF FFS Infra-Bahntechnik\nScadenza: 23.11.2
+ 026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/71b8b279
+ -52b6-478a-807b-4a9454d92584/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/71b8b279-52b6-478a-807b-4a9454d92584
+URL:https://auftragsregister.ch/it/auftrag/71b8b279-52b6-478a-807b-4a9454d9
+ 2584/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 25-490 Arbeits- und Hebebühnen bedient und unbedient
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

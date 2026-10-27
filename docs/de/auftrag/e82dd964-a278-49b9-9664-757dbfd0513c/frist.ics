@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e82dd964-a278-49b9-9664-757dbfd0513c-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261029T150000Z
+SUMMARY:Eingabefrist: MP-250034 N2 Svincolo di Sigirino\, prestations d’a
+ uteur de projet route cantonale et passage souterrain pour piste cyclable
+DESCRIPTION:Auftraggeber: Ufficio federale delle strade USTRA\, divisione i
+ nfrastruttura stradale Est\nEingabefrist: 29.10.2026\, 16.00 Uhr\nIm Regi
+ ster: https://auftragsregister.ch/de/auftrag/e82dd964-a278-49b9-9664-757db
+ fd0513c/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/e82
+ dd964-a278-49b9-9664-757dbfd0513c
+URL:https://auftragsregister.ch/de/auftrag/e82dd964-a278-49b9-9664-757dbfd0
+ 513c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-250034 N2 Svincolo di Sigirino\, prestations d
+ ’auteur de projet route cantonale et passage souterrain pour piste cycla
+ ble
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

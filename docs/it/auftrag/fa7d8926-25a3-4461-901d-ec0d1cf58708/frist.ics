@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa7d8926-25a3-4461-901d-ec0d1cf58708-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:1
+DTSTART:20261124T153000Z
+SUMMARY:Scadenza: CFC564.1 Contrôle périodiques 2027 - 2031
+DESCRIPTION:Ente pubblico: Office cantonal des bâtiments (OCBA)\nScadenza:
+  24.11.2026\, 16:30\nNel registro: https://auftragsregister.ch/it/auftrag/
+ fa7d8926-25a3-4461-901d-ec0d1cf58708/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/fa7d8926-25a3-4461-901d-ec0d1cf58708
+URL:https://auftragsregister.ch/it/auftrag/fa7d8926-25a3-4461-901d-ec0d1cf5
+ 8708/
+LOCATION:Les Acacias
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: CFC564.1 Contrôle périodiques 2027 - 2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

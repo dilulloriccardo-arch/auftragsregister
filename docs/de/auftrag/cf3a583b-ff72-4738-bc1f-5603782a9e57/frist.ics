@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf3a583b-ff72-4738-bc1f-5603782a9e57-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Eingabefrist: MP-210029\, N11/60 TBUB Instandsetzung BSA – VoMa/U
+ eMa3 MUELS Tiefbau
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nEingabefrist: 16.12.2026\, 23.59 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/cf3a583b-ff72-4738-bc1f-5603782a9e57/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/cf3a583b-ff72-4738-bc1f-5603
+ 782a9e57
+URL:https://auftragsregister.ch/de/auftrag/cf3a583b-ff72-4738-bc1f-5603782a
+ 9e57/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-210029\, N11/60 TBUB Instandsetzung BSA – Vo
+ Ma/UeMa3 MUELS Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

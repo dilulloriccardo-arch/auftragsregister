@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7441e87-eee7-40c8-a676-860389e4fd03-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Scadenza: AIS Leistungsschalter Laufenburg
+DESCRIPTION:Ente pubblico: Swissgrid AG - Asset & Maintenance\nScadenza: 29
+ .01.2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/e74
+ 41e87-eee7-40c8-a676-860389e4fd03/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/e7441e87-eee7-40c8-a676-860389e4fd03
+URL:https://auftragsregister.ch/it/auftrag/e7441e87-eee7-40c8-a676-860389e4
+ fd03/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AIS Leistungsschalter Laufenburg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0abd40c3-6d46-408d-89d8-b6cbda9c15f4-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Eingabefrist: ETH Zürich\, EKZ Wassereintritt\, Dilafugen\, BKP 22
+ 5 Spezielle Abdichtungen
+DESCRIPTION:Auftraggeber: ETH Zürich - Abt. Procurement Services VPIN\nEin
+ gabefrist: 10.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/0abd40c3-6d46-408d-89d8-b6cbda9c15f4/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/0abd40c3-6d46-408d-89d8-b6cbda9c15
+ f4
+URL:https://auftragsregister.ch/de/auftrag/0abd40c3-6d46-408d-89d8-b6cbda9c
+ 15f4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ETH Zürich\, EKZ Wassereintritt\, Dilafugen\, BK
+ P 225 Spezielle Abdichtungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

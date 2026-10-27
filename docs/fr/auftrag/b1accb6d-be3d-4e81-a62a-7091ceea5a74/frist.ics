@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b1accb6d-be3d-4e81-a62a-7091ceea5a74-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Délai de remise : 512.96 Ecole du Bourg - CFC261 ascenseur - pha
+ se R-réalisation
+DESCRIPTION:Acheteur public : Service Urbanisme & architecture\nDélai de
+  remise : 09.11.2026\, 11 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/b1accb6d-be3d-4e81-a62a-7091ceea5a74/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/b1accb6d-be3d-4e81-
+ a62a-7091ceea5a74
+URL:https://auftragsregister.ch/fr/auftrag/b1accb6d-be3d-4e81-a62a-7091ceea
+ 5a74/
+LOCATION:Fribourg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 512.96 Ecole du Bourg - CFC261 ascenseur -
+  phase R-réalisation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

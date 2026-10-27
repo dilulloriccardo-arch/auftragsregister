@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7519ed0e-b88c-4e79-bfdb-64d296341314-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Scadenza: Transports scolaires
+DESCRIPTION:Ente pubblico: Commune de Val-de-Ruz\nScadenza: 09.11.2026\, 11
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/7519ed0e-b88c-4e
+ 79-bfdb-64d296341314/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/7519ed0e-b88c-4e79-bfdb-64d296341314
+URL:https://auftragsregister.ch/it/auftrag/7519ed0e-b88c-4e79-bfdb-64d29634
+ 1314/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Transports scolaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

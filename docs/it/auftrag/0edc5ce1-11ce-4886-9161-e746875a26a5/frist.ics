@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0edc5ce1-11ce-4886-9161-e746875a26a5-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261206T225900Z
+SUMMARY:Scadenza: Bahnersatzverkehr für Totalsperren im Jahr 2027
+DESCRIPTION:Ente pubblico: Rhätische Bahn AG\nScadenza: 06.12.2026\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/0edc5ce1-11ce-4886-
+ 9161-e746875a26a5/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/0edc5ce1-11ce-4886-9161-e746875a26a5
+URL:https://auftragsregister.ch/it/auftrag/0edc5ce1-11ce-4886-9161-e746875a
+ 26a5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bahnersatzverkehr für Totalsperren im Jahr 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

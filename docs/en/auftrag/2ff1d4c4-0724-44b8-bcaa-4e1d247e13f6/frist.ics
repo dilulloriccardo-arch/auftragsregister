@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2ff1d4c4-0724-44b8-bcaa-4e1d247e13f6-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261104T225900Z
+SUMMARY:Submission deadline: Eine Sputter-Abscheidungsanlage\, speziell fü
+ r die Herstellung von qualitativ hochwertigen supraleitenden Dünnschichte
+ n
+DESCRIPTION:Public buyer: EPFL-Scientific Equipment\nSubmission deadline: 4
+  Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/2ff1d4c4-0724-44b8-bcaa-4e1d247e13f6/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/2ff1d4c4-0724-44b8-bcaa-4e1d247e13f6
+URL:https://auftragsregister.ch/en/auftrag/2ff1d4c4-0724-44b8-bcaa-4e1d247e
+ 13f6/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Eine Sputter-Abscheidungsanlage\, speziell
+  für die Herstellung von qualitativ hochwertigen supraleitenden Dünnschi
+ chten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

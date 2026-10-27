@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4dfe79e0-44df-4c9c-b2e6-857fac4d6a56-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T190000Z
+SUMMARY:Eingabefrist: LED Generalersatz Gebäude Berufsbildungszentrum Gold
+ au
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Schwyz\nEingabefrist: 06.11.202
+ 6\, 20.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/4dfe79
+ e0-44df-4c9c-b2e6-857fac4d6a56/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/4dfe79e0-44df-4c9c-b2e6-857fac4d6a56
+URL:https://auftragsregister.ch/de/auftrag/4dfe79e0-44df-4c9c-b2e6-857fac4d
+ 6a56/
+LOCATION:Goldau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: LED Generalersatz Gebäude Berufsbildungszentrum 
+ Goldau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

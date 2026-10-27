@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b21f705-f5ea-4848-ba7a-b75ecf7db948-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261204T170000Z
+SUMMARY:Eingabefrist: Gastronomie- und Verpflegungsdienstleistungen: Betrie
+ b Mensas Schulstandorte und Personalrestaurant Kantonale Verwaltung Kanton
+  Schwyz
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Schwyz\nEingabefrist: 04.12.202
+ 6\, 18.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3b21f7
+ 05-f5ea-4848-ba7a-b75ecf7db948/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/3b21f705-f5ea-4848-ba7a-b75ecf7db948
+URL:https://auftragsregister.ch/de/auftrag/3b21f705-f5ea-4848-ba7a-b75ecf7d
+ b948/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gastronomie- und Verpflegungsdienstleistungen: Be
+ trieb Mensas Schulstandorte und Personalrestaurant Kantonale Verwaltung Ka
+ nton Schwyz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

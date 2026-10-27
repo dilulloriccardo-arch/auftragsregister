@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:22974af0-6398-40c1-a45c-8a8294ebe56c-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261109T103000Z
+SUMMARY:Délai de remise : Projet de construction du nouvel EMS à Charme
+ y et de rénovation / Transformations de l'EMS existant en appartement pro
+ tégés / CFC 221.1 Travaux de Fenêtres et porte-fenêtres en bois métal
+DESCRIPTION:Acheteur public : Réseau Santé et Social de la Gruyère (Jo
+ ris Pasquier Architectes SA)\nDélai de remise : 09.11.2026\, 11 h 3
+ 0\nDans le registre : https://auftragsregister.ch/fr/auftrag/22974af0-63
+ 98-40c1-a45c-8a8294ebe56c/\nPublication officielle : https://www.simap.c
+ h/fr/project-detail/22974af0-6398-40c1-a45c-8a8294ebe56c
+URL:https://auftragsregister.ch/fr/auftrag/22974af0-6398-40c1-a45c-8a8294eb
+ e56c/
+LOCATION:Charmey
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet de construction du nouvel EMS à Ch
+ armey et de rénovation / Transformations de l'EMS existant en appartement
+  protégés / CFC 221.1 Travaux de Fenêtres et porte-fenêtres en bois m
+ étal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

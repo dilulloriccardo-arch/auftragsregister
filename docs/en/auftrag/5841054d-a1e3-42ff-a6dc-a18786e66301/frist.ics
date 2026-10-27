@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5841054d-a1e3-42ff-a6dc-a18786e66301-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Submission deadline: Spitalbetten
+DESCRIPTION:Public buyer: Kantonsspital Baselland\, Zentrale Vergabestelle\
+ nSubmission deadline: 2 Nov 2026\, 12:00\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/5841054d-a1e3-42ff-a6dc-a18786e66301/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/5841054d-a1e3-42ff-a6d
+ c-a18786e66301
+URL:https://auftragsregister.ch/en/auftrag/5841054d-a1e3-42ff-a6dc-a18786e6
+ 6301/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Spitalbetten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b8824c2-4ed5-4e0a-8bdb-b87eb56cb940-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T170000Z
+SUMMARY:Scadenza: Ersatz Schliessanlagen Gemeinde Kaiseraugst
+DESCRIPTION:Ente pubblico: Gemeinde Kaiseraugst\nScadenza: 02.11.2026\, 18:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/6b8824c2-4ed5-4e0
+ a-8bdb-b87eb56cb940/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/6b8824c2-4ed5-4e0a-8bdb-b87eb56cb940
+URL:https://auftragsregister.ch/it/auftrag/6b8824c2-4ed5-4e0a-8bdb-b87eb56c
+ b940/
+LOCATION:Kaiseraugst
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatz Schliessanlagen Gemeinde Kaiseraugst
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

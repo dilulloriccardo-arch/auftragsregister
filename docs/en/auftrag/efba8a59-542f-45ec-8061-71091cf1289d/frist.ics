@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efba8a59-542f-45ec-8061-71091cf1289d-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Submission deadline: Appel d'offres pour la collecte des déchets m
+ énagers (DM)
+DESCRIPTION:Public buyer: Municipio di Stabio\nSubmission deadline: 9 Nov
+  2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/ef
+ ba8a59-542f-45ec-8061-71091cf1289d/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/efba8a59-542f-45ec-8061-71091cf1289d
+URL:https://auftragsregister.ch/en/auftrag/efba8a59-542f-45ec-8061-71091cf1
+ 289d/
+LOCATION:Stabio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Appel d'offres pour la collecte des déche
+ ts ménagers (DM)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

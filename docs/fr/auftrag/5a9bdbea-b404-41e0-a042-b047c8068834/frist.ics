@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a9bdbea-b404-41e0-a042-b047c8068834-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Délai de remise : Schulcampus Dorf\, Bestandsgebäude - BKP 211.
+ 5 Baumeisterarbeiten
+DESCRIPTION:Acheteur public : ARGE GP SCD - c/o Rapp AG\nDélai de remise
+  : 02.11.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/5a9bdbea-b404-41e0-a042-b047c8068834/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/5a9bdbea-b404-41e0-a042-b0
+ 47c8068834
+URL:https://auftragsregister.ch/fr/auftrag/5a9bdbea-b404-41e0-a042-b047c806
+ 8834/
+LOCATION:Binningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Schulcampus Dorf\, Bestandsgebäude - BKP 
+ 211.5 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

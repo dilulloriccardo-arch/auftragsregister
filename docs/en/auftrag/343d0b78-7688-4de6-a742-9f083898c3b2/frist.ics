@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:343d0b78-7688-4de6-a742-9f083898c3b2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261117T160000Z
+SUMMARY:Submission deadline: ESP Ausserholligen\, Gesamtleiter\, Ladenwandg
+ ut
+DESCRIPTION:Public buyer: Fachstelle Beschaffungswesen Stadt Bern\nSubmissi
+ on deadline: 17 Nov 2026\, 17:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/343d0b78-7688-4de6-a742-9f083898c3b2/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/343d0b78-7688-4de6-a742-9f0838
+ 98c3b2
+URL:https://auftragsregister.ch/en/auftrag/343d0b78-7688-4de6-a742-9f083898
+ c3b2/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ESP Ausserholligen\, Gesamtleiter\, Ladenw
+ andgut
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

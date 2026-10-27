@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:704ff4ec-985b-4d6b-ba51-bb14fc18d181-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261106T225500Z
+SUMMARY:Scadenza: Giacomettistrasse\, Aspermontstrasse - Wiesentalstrasse
+DESCRIPTION:Ente pubblico: Stadt Chur - Tiefbaudienste\nScadenza: 06.11.202
+ 6\, 23:55\nNel registro: https://auftragsregister.ch/it/auftrag/704ff4ec-9
+ 85b-4d6b-ba51-bb14fc18d181/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/704ff4ec-985b-4d6b-ba51-bb14fc18d181
+URL:https://auftragsregister.ch/it/auftrag/704ff4ec-985b-4d6b-ba51-bb14fc18
+ d181/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Giacomettistrasse\, Aspermontstrasse - Wiesentalstras
+ se
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

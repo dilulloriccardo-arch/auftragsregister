@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd93b3b2-f1a6-4100-99e0-5fb577a4fe3e-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261210T130000Z
+SUMMARY:Submission deadline: Prestation d'un service de centre d'opération
+ s de sécurité (SOC) et de gestion des informations et des événements d
+ e sécurité (SIEM)
+DESCRIPTION:Public buyer: Ente Ospedaliero Cantonale - Area Evoluzione Digi
+ tale e Tecnologia\nSubmission deadline: 10 Dec 2026\, 14:00\nIn the regi
+ ster: https://auftragsregister.ch/en/auftrag/dd93b3b2-f1a6-4100-99e0-5fb57
+ 7a4fe3e/\nOfficial publication: https://www.simap.ch/en/project-detail/dd9
+ 3b3b2-f1a6-4100-99e0-5fb577a4fe3e
+URL:https://auftragsregister.ch/en/auftrag/dd93b3b2-f1a6-4100-99e0-5fb577a4
+ fe3e/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Prestation d'un service de centre d'opéra
+ tions de sécurité (SOC) et de gestion des informations et des événemen
+ ts de sécurité (SIEM)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

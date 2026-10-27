@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fef68567-1641-442d-b1f1-d885f42c4b85-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Scadenza: Klinik Schlosstal – Ausschreibung von Generalplanerleis
+ tungen für die Gesamterneuerung der Produktionsküche
+DESCRIPTION:Ente pubblico: Integrierte Psychiatrie Winterthur\nScadenza: 17
+ .11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/fef
+ 68567-1641-442d-b1f1-d885f42c4b85/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/fef68567-1641-442d-b1f1-d885f42c4b85
+URL:https://auftragsregister.ch/it/auftrag/fef68567-1641-442d-b1f1-d885f42c
+ 4b85/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Klinik Schlosstal – Ausschreibung von Generalplaner
+ leistungen für die Gesamterneuerung der Produktionsküche
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

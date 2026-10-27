@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab1b7385-d84f-46bc-86da-ba1ee3c539f8-frist@auftragsregister.ch
+DTSTAMP:20260904T000000Z
+SEQUENCE:0
+DTSTART:20261030T225900Z
+SUMMARY:Délai de remise : Untervaz\, Weiche 51\, Baumeisterarbeiten
+DESCRIPTION:Acheteur public : Rhätische Bahn AG\nDélai de remise : 30
+ .10.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/ab1b7385-d84f-46bc-86da-ba1ee3c539f8/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/ab1b7385-d84f-46bc-86da-ba1ee3c53
+ 9f8
+URL:https://auftragsregister.ch/fr/auftrag/ab1b7385-d84f-46bc-86da-ba1ee3c5
+ 39f8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Untervaz\, Weiche 51\, Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

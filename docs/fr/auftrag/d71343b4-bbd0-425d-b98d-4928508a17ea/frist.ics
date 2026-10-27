@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d71343b4-bbd0-425d-b98d-4928508a17ea-frist@auftragsregister.ch
+DTSTAMP:20260907T000000Z
+SEQUENCE:1
+DTSTART:20261113T110000Z
+SUMMARY:Délai de remise : MP PRm2-m3 MA 2026 009 - Mandataire Système (
+ MA SYS) et Assistance à maîtrise d’ouvrage Système (AMO SYS)
+DESCRIPTION:Acheteur public : Transports publics de la région lausannois
+ e sa\nDélai de remise : 13.11.2026\, 12 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/d71343b4-bbd0-425d-b98d-4928508a17e
+ a/\nPublication officielle : https://www.simap.ch/fr/project-detail/d713
+ 43b4-bbd0-425d-b98d-4928508a17ea
+URL:https://auftragsregister.ch/fr/auftrag/d71343b4-bbd0-425d-b98d-4928508a
+ 17ea/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP PRm2-m3 MA 2026 009 - Mandataire Systè
+ me (MA SYS) et Assistance à maîtrise d’ouvrage Système (AMO SYS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

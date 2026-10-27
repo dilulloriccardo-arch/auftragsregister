@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:de0d381e-7b94-4da7-87a3-49f401cc1053-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261209T133000Z
+SUMMARY:Délai de remise : DSUS- Nouveau siège de la Voirie de la ville 
+ de Lugano - construction en acier – auvent de la station d'essence
+DESCRIPTION:Acheteur public : Edilizia Pubblica\nDélai de remise : 09.
+ 12.2026\, 14 h 30\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/de0d381e-7b94-4da7-87a3-49f401cc1053/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/de0d381e-7b94-4da7-87a3-49f401cc10
+ 53
+URL:https://auftragsregister.ch/fr/auftrag/de0d381e-7b94-4da7-87a3-49f401cc
+ 1053/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : DSUS- Nouveau siège de la Voirie de la vi
+ lle de Lugano - construction en acier – auvent de la station d'essence
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

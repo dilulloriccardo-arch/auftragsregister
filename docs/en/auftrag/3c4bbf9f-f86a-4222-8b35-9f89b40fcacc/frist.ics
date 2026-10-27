@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c4bbf9f-f86a-4222-8b35-9f89b40fcacc-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Submission deadline: Schaltgerätekombinationen 2040 New Constructi
+ on of Birchlen School Complex\, Dübendorf – 231.3 Switchgear Assemblies
+DESCRIPTION:Public buyer: Primarschule Dübendorf\nSubmission deadline: 4 
+ Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /3c4bbf9f-f86a-4222-8b35-9f89b40fcacc/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/3c4bbf9f-f86a-4222-8b35-9f89b40fcacc
+URL:https://auftragsregister.ch/en/auftrag/3c4bbf9f-f86a-4222-8b35-9f89b40f
+ cacc/
+LOCATION:Dübendorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schaltgerätekombinationen 2040 New Constr
+ uction of Birchlen School Complex\, Dübendorf – 231.3 Switchgear Assemb
+ lies
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

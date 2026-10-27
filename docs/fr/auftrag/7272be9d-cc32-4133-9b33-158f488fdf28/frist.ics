@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7272be9d-cc32-4133-9b33-158f488fdf28-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261123T090000Z
+SUMMARY:Délai de remise : Cabines de lavage et de désinfection
+DESCRIPTION:Acheteur public : CHUV - centrale d'achats et d'ingénierie b
+ iomédicale (CAIB)\nDélai de remise : 23.11.2026\, 10 h 00\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/7272be9d-cc32-4133-9b
+ 33-158f488fdf28/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/7272be9d-cc32-4133-9b33-158f488fdf28
+URL:https://auftragsregister.ch/fr/auftrag/7272be9d-cc32-4133-9b33-158f488f
+ df28/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Cabines de lavage et de désinfection
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

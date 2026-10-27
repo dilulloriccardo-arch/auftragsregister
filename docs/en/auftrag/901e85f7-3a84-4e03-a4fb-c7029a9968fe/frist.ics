@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:901e85f7-3a84-4e03-a4fb-c7029a9968fe-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261106T160000Z
+SUMMARY:Submission deadline: Reinigungsdienstleistungen Kantonsschule Ryche
+ nberg Winterthur
+DESCRIPTION:Public buyer: Kanton Zürich\, Bildungsdirektion\, Mittelschul-
+  und Berufsbildungsamt\nSubmission deadline: 6 Nov 2026\, 17:00\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/901e85f7-3a84-4e03-a4fb-c
+ 7029a9968fe/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /901e85f7-3a84-4e03-a4fb-c7029a9968fe
+URL:https://auftragsregister.ch/en/auftrag/901e85f7-3a84-4e03-a4fb-c7029a99
+ 68fe/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Reinigungsdienstleistungen Kantonsschule R
+ ychenberg Winterthur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

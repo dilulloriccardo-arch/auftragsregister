@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a486b05-9626-457a-b5df-65fbe0d4218f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261106T153000Z
+SUMMARY:Délai de remise : Transformation d’un terrain de football natu
+ rel en synthétique
+DESCRIPTION:Acheteur public : Commune de Veyrier\nDélai de remise : 06
+ .11.2026\, 16 h 30\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/9a486b05-9626-457a-b5df-65fbe0d4218f/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/9a486b05-9626-457a-b5df-65fbe0d42
+ 18f
+URL:https://auftragsregister.ch/fr/auftrag/9a486b05-9626-457a-b5df-65fbe0d4
+ 218f/
+LOCATION:Veyrier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transformation d’un terrain de football 
+ naturel en synthétique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

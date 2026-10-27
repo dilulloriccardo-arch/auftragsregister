@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a486b05-9626-457a-b5df-65fbe0d4218f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261106T153000Z
+SUMMARY:Submission deadline: Transformation d’un terrain de football natu
+ rel en synthétique
+DESCRIPTION:Public buyer: Commune de Veyrier\nSubmission deadline: 6 Nov 
+ 2026\, 16:30\nIn the register: https://auftragsregister.ch/en/auftrag/9a48
+ 6b05-9626-457a-b5df-65fbe0d4218f/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/9a486b05-9626-457a-b5df-65fbe0d4218f
+URL:https://auftragsregister.ch/en/auftrag/9a486b05-9626-457a-b5df-65fbe0d4
+ 218f/
+LOCATION:Veyrier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Transformation d’un terrain de football 
+ naturel en synthétique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

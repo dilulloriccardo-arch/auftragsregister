@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a95896cf-5755-438c-92da-e982e2936ea8-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261201T225900Z
+SUMMARY:Eingabefrist: Dienstleistungen für ArcGIS-Geoplattformen
+DESCRIPTION:Auftraggeber: ETH Zürich - Abt. Procurement Services VPIN\nEin
+ gabefrist: 01.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/a95896cf-5755-438c-92da-e982e2936ea8/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/a95896cf-5755-438c-92da-e982e2936e
+ a8
+URL:https://auftragsregister.ch/de/auftrag/a95896cf-5755-438c-92da-e982e293
+ 6ea8/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Dienstleistungen für ArcGIS-Geoplattformen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

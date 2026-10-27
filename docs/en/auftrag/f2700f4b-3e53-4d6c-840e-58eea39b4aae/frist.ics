@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f2700f4b-3e53-4d6c-840e-58eea39b4aae-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261105T153000Z
+SUMMARY:Submission deadline: Mehrzweckgebäude Bollwies\, Bollwiesstrasse 4
+ \, 8645 Jona - BKP 242 Heizungsersatz
+DESCRIPTION:Public buyer: Stadt Rapperswil-Jona\; Ressort Bau und Liegensch
+ aften\; Fachbereich Infrastruktur\nSubmission deadline: 5 Nov 2026\, 16:
+ 30\nIn the register: https://auftragsregister.ch/en/auftrag/f2700f4b-3e53-
+ 4d6c-840e-58eea39b4aae/\nOfficial publication: https://www.simap.ch/en/pro
+ ject-detail/f2700f4b-3e53-4d6c-840e-58eea39b4aae
+URL:https://auftragsregister.ch/en/auftrag/f2700f4b-3e53-4d6c-840e-58eea39b
+ 4aae/
+LOCATION:Jona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mehrzweckgebäude Bollwies\, Bollwiesstras
+ se 4\, 8645 Jona - BKP 242 Heizungsersatz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

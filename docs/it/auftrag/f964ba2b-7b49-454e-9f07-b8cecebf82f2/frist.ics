@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f964ba2b-7b49-454e-9f07-b8cecebf82f2-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261118T090000Z
+SUMMARY:Scadenza: Bauma/Sternenberg: Aufhebung KLARA Matt und KLARA Lachen
+DESCRIPTION:Ente pubblico: Wasserversorgung\nScadenza: 18.11.2026\, 10:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/f964ba2b-7b49-454e-9f
+ 07-b8cecebf82f2/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/f964ba2b-7b49-454e-9f07-b8cecebf82f2
+URL:https://auftragsregister.ch/it/auftrag/f964ba2b-7b49-454e-9f07-b8cecebf
+ 82f2/
+LOCATION:Sternenberg / Bauma
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bauma/Sternenberg: Aufhebung KLARA Matt und KLARA Lac
+ hen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

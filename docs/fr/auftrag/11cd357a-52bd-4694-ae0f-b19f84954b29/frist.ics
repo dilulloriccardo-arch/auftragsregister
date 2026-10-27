@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:11cd357a-52bd-4694-ae0f-b19f84954b29-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Délai de remise : Contrat d'assurance d'indemnités journalière
+ s en cas de maladie - Comune di Stabio
+DESCRIPTION:Acheteur public : Comune di Stabio\nDélai de remise : 16.1
+ 1.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/11cd357a-52bd-4694-ae0f-b19f84954b29/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/11cd357a-52bd-4694-ae0f-b19f84954b2
+ 9
+URL:https://auftragsregister.ch/fr/auftrag/11cd357a-52bd-4694-ae0f-b19f8495
+ 4b29/
+LOCATION:Stabio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat d'assurance d'indemnités journali
+ ères en cas de maladie - Comune di Stabio
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

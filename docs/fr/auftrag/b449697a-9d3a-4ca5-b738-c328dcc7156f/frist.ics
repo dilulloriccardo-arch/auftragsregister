@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b449697a-9d3a-4ca5-b738-c328dcc7156f-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261113T093000Z
+SUMMARY:Délai de remise : Chemin du Marais
+DESCRIPTION:Acheteur public : Ribi SA\nDélai de remise : 13.11.2026\, 
+ 10 h 30\nDans le registre : https://auftragsregister.ch/fr/auftrag/b
+ 449697a-9d3a-4ca5-b738-c328dcc7156f/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/b449697a-9d3a-4ca5-b738-c328dcc7156f
+URL:https://auftragsregister.ch/fr/auftrag/b449697a-9d3a-4ca5-b738-c328dcc7
+ 156f/
+LOCATION:Treyvaux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Chemin du Marais
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

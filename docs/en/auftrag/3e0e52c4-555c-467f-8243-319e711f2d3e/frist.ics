@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e0e52c4-555c-467f-8243-319e711f2d3e-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261208T150000Z
+SUMMARY:Submission deadline: Erweiterung Alterszentrum Bärenmatt: BKP 240 
+ Heizungsanlagen
+DESCRIPTION:Public buyer: HSSP AG\nSubmission deadline: 8 Dec 2026\, 16:0
+ 0\nIn the register: https://auftragsregister.ch/en/auftrag/3e0e52c4-555c-4
+ 67f-8243-319e711f2d3e/\nOfficial publication: https://www.simap.ch/en/proj
+ ect-detail/3e0e52c4-555c-467f-8243-319e711f2d3e
+URL:https://auftragsregister.ch/en/auftrag/3e0e52c4-555c-467f-8243-319e711f
+ 2d3e/
+LOCATION:Bremgarten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Erweiterung Alterszentrum Bärenmatt: BKP 
+ 240 Heizungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

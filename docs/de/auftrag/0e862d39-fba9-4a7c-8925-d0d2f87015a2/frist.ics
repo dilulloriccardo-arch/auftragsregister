@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e862d39-fba9-4a7c-8925-d0d2f87015a2-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261120T160000Z
+SUMMARY:Eingabefrist: Ersatzbeschaffung Forst- und Kommunalschlepper
+DESCRIPTION:Auftraggeber: Gemeinde Davos Forstbetrieb\nEingabefrist: 20.11.
+ 2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0e8
+ 62d39-fba9-4a7c-8925-d0d2f87015a2/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/0e862d39-fba9-4a7c-8925-d0d2f87015a2
+URL:https://auftragsregister.ch/de/auftrag/0e862d39-fba9-4a7c-8925-d0d2f870
+ 15a2/
+LOCATION:Davos Platz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatzbeschaffung Forst- und Kommunalschlepper
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

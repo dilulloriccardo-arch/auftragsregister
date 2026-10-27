@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0602fc5c-259e-4302-99d6-c3822fc9fefa-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Délai de remise : ewzWHH/BGH\, phase 2\, BKP 90 : mobilier
+DESCRIPTION:Acheteur public : Elektrizitätswerk der Stadt Zürich (ewz)\
+ nDélai de remise : 30.11.2026\, 16 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/0602fc5c-259e-4302-99d6-c3822fc9fefa/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/0602fc5c-
+ 259e-4302-99d6-c3822fc9fefa
+URL:https://auftragsregister.ch/fr/auftrag/0602fc5c-259e-4302-99d6-c3822fc9
+ fefa/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ewzWHH/BGH\, phase 2\, BKP 90 : mobilier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d39e0fcd-5033-41dc-84e6-7c5f0d9192f4-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261110T225900Z
+SUMMARY:Eingabefrist: KI-Expertendienstleistungen
+DESCRIPTION:Auftraggeber: Informatik und Logistik\nEingabefrist: 10.11.2026
+ \, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d39e0fc
+ d-5033-41dc-84e6-7c5f0d9192f4/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/d39e0fcd-5033-41dc-84e6-7c5f0d9192f4
+URL:https://auftragsregister.ch/de/auftrag/d39e0fcd-5033-41dc-84e6-7c5f0d91
+ 92f4/
+LOCATION:Biel/Bienne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: KI-Expertendienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

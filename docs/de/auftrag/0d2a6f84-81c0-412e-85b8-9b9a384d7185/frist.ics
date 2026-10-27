@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d2a6f84-81c0-412e-85b8-9b9a384d7185-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Eingabefrist: Gesamtprojekt St. Anna-Strasse - Bellerivehöhe - Sch
+ lösslihalde
+DESCRIPTION:Auftraggeber: Stadt Luzern\, Umwelt- und Mobilitätsdirektion\,
+  Tiefbauamt\nEingabefrist: 24.11.2026\, 12.00 Uhr\nIm Register: https://a
+ uftragsregister.ch/de/auftrag/0d2a6f84-81c0-412e-85b8-9b9a384d7185/\nAmtli
+ che Publikation: https://www.simap.ch/de/project-detail/0d2a6f84-81c0-412e
+ -85b8-9b9a384d7185
+URL:https://auftragsregister.ch/de/auftrag/0d2a6f84-81c0-412e-85b8-9b9a384d
+ 7185/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamtprojekt St. Anna-Strasse - Bellerivehöhe -
+  Schlösslihalde
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

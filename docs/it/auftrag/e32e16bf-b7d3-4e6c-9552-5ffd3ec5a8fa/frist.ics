@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e32e16bf-b7d3-4e6c-9552-5ffd3ec5a8fa-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:2
+DTSTART:20261106T130000Z
+SUMMARY:Scadenza: Fribourg\, barrage de la Maigrauge - Assainissement de la
+  dévalaison
+DESCRIPTION:Ente pubblico: Groupe E SA - Service Achat pour les Marchés pu
+ blics\nScadenza: 06.11.2026\, 14:00\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/e32e16bf-b7d3-4e6c-9552-5ffd3ec5a8fa/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/e32e16bf-b7d3-4e6c-9552-5ffd3
+ ec5a8fa
+URL:https://auftragsregister.ch/it/auftrag/e32e16bf-b7d3-4e6c-9552-5ffd3ec5
+ a8fa/
+LOCATION:Fribourg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fribourg\, barrage de la Maigrauge - Assainissement d
+ e la dévalaison
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b0a69ca-24e2-483b-ac7c-ed00c759cde0-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T080000Z
+SUMMARY:Délai de remise : IWB\, accord-cadre pour les services de survei
+ llance de la circulation et les agents de sécurité
+DESCRIPTION:Acheteur public : IWB Industrielle Werke Basel\nDélai de rem
+ ise : 18.11.2026\, 9 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/6b0a69ca-24e2-483b-ac7c-ed00c759cde0/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/6b0a69ca-24e2-483b-ac7c-
+ ed00c759cde0
+URL:https://auftragsregister.ch/fr/auftrag/6b0a69ca-24e2-483b-ac7c-ed00c759
+ cde0/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IWB\, accord-cadre pour les services de su
+ rveillance de la circulation et les agents de sécurité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4dfe79e0-44df-4c9c-b2e6-857fac4d6a56-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T190000Z
+SUMMARY:Délai de remise : LED Generalersatz Gebäude Berufsbildungszentr
+ um Goldau
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Schwyz\nDélai de remise
+  : 06.11.2026\, 20 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/4dfe79e0-44df-4c9c-b2e6-857fac4d6a56/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/4dfe79e0-44df-4c9c-b2e6-85
+ 7fac4d6a56
+URL:https://auftragsregister.ch/fr/auftrag/4dfe79e0-44df-4c9c-b2e6-857fac4d
+ 6a56/
+LOCATION:Goldau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : LED Generalersatz Gebäude Berufsbildungsz
+ entrum Goldau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

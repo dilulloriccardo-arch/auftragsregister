@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0a6d862-6ca5-4a8a-9db4-7b834e188788-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : MP 2026.03.839 - Acquisition d'une solution de
+  géolocalisation indoor/outdoor
+DESCRIPTION:Acheteur public : Transports publics de la région lausannois
+ e sa\nDélai de remise : 30.11.2026\, 12 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/a0a6d862-6ca5-4a8a-9db4-7b834e18878
+ 8/\nPublication officielle : https://www.simap.ch/fr/project-detail/a0a6
+ d862-6ca5-4a8a-9db4-7b834e188788
+URL:https://auftragsregister.ch/fr/auftrag/a0a6d862-6ca5-4a8a-9db4-7b834e18
+ 8788/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP 2026.03.839 - Acquisition d'une solutio
+ n de géolocalisation indoor/outdoor
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

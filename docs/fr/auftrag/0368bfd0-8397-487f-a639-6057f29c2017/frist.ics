@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0368bfd0-8397-487f-a639-6057f29c2017-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261110T100000Z
+SUMMARY:Délai de remise : Fornitura di generi alimentari 01.01.2027 - 31
+ .12.2027
+DESCRIPTION:Acheteur public : Fondazione Parco San Rocco\nDélai de remis
+ e : 10.11.2026\, 11 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/0368bfd0-8397-487f-a639-6057f29c2017/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/0368bfd0-8397-487f-a639-6
+ 057f29c2017
+URL:https://auftragsregister.ch/fr/auftrag/0368bfd0-8397-487f-a639-6057f29c
+ 2017/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fornitura di generi alimentari 01.01.2027 
+ - 31.12.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

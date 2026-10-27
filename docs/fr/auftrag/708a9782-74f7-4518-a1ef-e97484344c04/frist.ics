@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:708a9782-74f7-4518-a1ef-e97484344c04-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Délai de remise : (26035) 620 Produits de nettoyage et d’hygi
+ ène
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 14.12.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/708a9782-74f7-4518-a1ef-e97484344c04/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/708a9782-74f7
+ -4518-a1ef-e97484344c04
+URL:https://auftragsregister.ch/fr/auftrag/708a9782-74f7-4518-a1ef-e9748434
+ 4c04/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26035) 620 Produits de nettoyage et d’h
+ ygiène
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

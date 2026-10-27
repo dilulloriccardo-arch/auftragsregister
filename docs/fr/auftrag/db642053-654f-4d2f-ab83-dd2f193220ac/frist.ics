@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db642053-654f-4d2f-ab83-dd2f193220ac-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261124T130000Z
+SUMMARY:Délai de remise : 99.219 Aggiornamento pompe nutrizione enterale
+  - Fornitura pompe nutrizione enterale\, materiale di consumo e supporto d
+ opo vendita
+DESCRIPTION:Acheteur public : Ente Ospedaliero Cantonale - Area Infrastru
+ tture e Operations - Servizio tecnologia medica\nDélai de remise : 24.1
+ 1.2026\, 14 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/db642053-654f-4d2f-ab83-dd2f193220ac/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/db642053-654f-4d2f-ab83-dd2f193220a
+ c
+URL:https://auftragsregister.ch/fr/auftrag/db642053-654f-4d2f-ab83-dd2f1932
+ 20ac/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 99.219 Aggiornamento pompe nutrizione ente
+ rale - Fornitura pompe nutrizione enterale\, materiale di consumo e suppor
+ to dopo vendita
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

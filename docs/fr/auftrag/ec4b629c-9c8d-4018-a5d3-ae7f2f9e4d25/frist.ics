@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec4b629c-9c8d-4018-a5d3-ae7f2f9e4d25-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Délai de remise : AO Storage S3 DISTIC 2026
+DESCRIPTION:Acheteur public : Service de conseil et de soutien pour les m
+ archés publics de l'Université de Genève\nDélai de remise : 06.11.20
+ 26\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/auft
+ rag/ec4b629c-9c8d-4018-a5d3-ae7f2f9e4d25/\nPublication officielle : http
+ s://www.simap.ch/fr/project-detail/ec4b629c-9c8d-4018-a5d3-ae7f2f9e4d25
+URL:https://auftragsregister.ch/fr/auftrag/ec4b629c-9c8d-4018-a5d3-ae7f2f9e
+ 4d25/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AO Storage S3 DISTIC 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

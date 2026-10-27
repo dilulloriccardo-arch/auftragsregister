@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ae493921-2e9d-4edf-ac9e-db27c0ee5087-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:1
+DTSTART:20270427T215900Z
+SUMMARY:Submission deadline: 18.0321_Bern\, Bremgartenstrasse 131-137\, Gym
+ nasium Neufeld\, Instandstellung und Ersatzneubau\, BKP 275 Schliessanlage
+ n TP 1-2
+DESCRIPTION:Public buyer: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nSubmission deadline: 27 Apr 2027\, 23:59\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/ae493921-2e9d-4edf-ac9e-db27c0ee5087/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/ae493921-2e9
+ d-4edf-ac9e-db27c0ee5087
+URL:https://auftragsregister.ch/en/auftrag/ae493921-2e9d-4edf-ac9e-db27c0ee
+ 5087/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 18.0321_Bern\, Bremgartenstrasse 131-137\,
+  Gymnasium Neufeld\, Instandstellung und Ersatzneubau\, BKP 275 Schliessan
+ lagen TP 1-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

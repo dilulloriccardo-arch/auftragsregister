@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:80abeb17-cff4-428f-84bf-b2521903a1c9-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T160000Z
+SUMMARY:Délai de remise : Mandat de monteur électricien AOO_2026_188_EL
+ ECSTA
+DESCRIPTION:Acheteur public : Service achats de l'IMAD\nDélai de remise
+  : 07.12.2026\, 17 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/80abeb17-cff4-428f-84bf-b2521903a1c9/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/80abeb17-cff4-428f-84bf-b2
+ 521903a1c9
+URL:https://auftragsregister.ch/fr/auftrag/80abeb17-cff4-428f-84bf-b2521903
+ a1c9/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mandat de monteur électricien AOO_2026_18
+ 8_ELECSTA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b55571e-9860-406e-9957-532c6fa3752a-frist@auftragsregister.ch
+DTSTAMP:20260824T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Scadenza: MehrSpur Zürich – Winterthur\, Verwertungsstellen mit 
+ Bahnanschluss\, Projektteil 246
+DESCRIPTION:Ente pubblico: SBB CFF FFS Einkauf Bauprojekte Region Ost\nScad
+ enza: 20.11.2026\, 15:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/6b55571e-9860-406e-9957-532c6fa3752a/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/6b55571e-9860-406e-9957-532c6fa3752a
+URL:https://auftragsregister.ch/it/auftrag/6b55571e-9860-406e-9957-532c6fa3
+ 752a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MehrSpur Zürich – Winterthur\, Verwertungsstellen 
+ mit Bahnanschluss\, Projektteil 246
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

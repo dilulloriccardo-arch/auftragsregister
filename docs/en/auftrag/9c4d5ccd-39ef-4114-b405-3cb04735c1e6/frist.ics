@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9c4d5ccd-39ef-4114-b405-3cb04735c1e6-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261119T103000Z
+SUMMARY:Submission deadline: Mise en œuvre et gestion du Réseau Santé Ge
+ nève
+DESCRIPTION:Public buyer: Etat de Genève - Département de la santé et de
+ s mobilités\, Secrétariat général\nSubmission deadline: 19 Nov 2026\
+ , 11:30\nIn the register: https://auftragsregister.ch/en/auftrag/9c4d5ccd-
+ 39ef-4114-b405-3cb04735c1e6/\nOfficial publication: https://www.simap.ch/e
+ n/project-detail/9c4d5ccd-39ef-4114-b405-3cb04735c1e6
+URL:https://auftragsregister.ch/en/auftrag/9c4d5ccd-39ef-4114-b405-3cb04735
+ c1e6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mise en œuvre et gestion du Réseau Sant
+ é Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

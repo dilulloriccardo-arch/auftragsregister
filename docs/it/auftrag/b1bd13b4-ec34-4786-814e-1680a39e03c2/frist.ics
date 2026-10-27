@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b1bd13b4-ec34-4786-814e-1680a39e03c2-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261102T110000Z
+SUMMARY:Scadenza: Atlassian Cloud 2026
+DESCRIPTION:Ente pubblico: Stadt Zürich\, Organisation und Informatik (OIZ
+ )\nScadenza: 02.11.2026\, 12:00\nNel registro: https://auftragsregister.ch
+ /it/auftrag/b1bd13b4-ec34-4786-814e-1680a39e03c2/\nPubblicazione ufficiale
+ : https://www.simap.ch/it/project-detail/b1bd13b4-ec34-4786-814e-1680a39e0
+ 3c2
+URL:https://auftragsregister.ch/it/auftrag/b1bd13b4-ec34-4786-814e-1680a39e
+ 03c2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Atlassian Cloud 2026
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

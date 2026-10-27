@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:785b4a76-2640-42ae-afb7-10e3a70dcf15-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Eingabefrist: 22075\, 22668\, 22041 - Regensdorfer-\, Frankentaler-
+ \, Geering- und Rütihofstrasse
+DESCRIPTION:Auftraggeber: Stadt Zürich\, Tiefbauamt\, Werterhaltung\nEinga
+ befrist: 12.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch
+ /de/auftrag/785b4a76-2640-42ae-afb7-10e3a70dcf15/\nAmtliche Publikation: h
+ ttps://www.simap.ch/de/project-detail/785b4a76-2640-42ae-afb7-10e3a70dcf15
+URL:https://auftragsregister.ch/de/auftrag/785b4a76-2640-42ae-afb7-10e3a70d
+ cf15/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 22075\, 22668\, 22041 - Regensdorfer-\, Frankenta
+ ler-\, Geering- und Rütihofstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

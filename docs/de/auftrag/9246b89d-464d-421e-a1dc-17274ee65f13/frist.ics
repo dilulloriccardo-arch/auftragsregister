@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9246b89d-464d-421e-a1dc-17274ee65f13-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261106T140000Z
+SUMMARY:Eingabefrist: 1301 BKP 122 Wohnprovisorium\, Pädagogische Maturit
+ ätsschule Kreuzlingen\, Teilinnensanierung Klostergebäude
+DESCRIPTION:Auftraggeber: Kantonales Hochbauamt Thurgau\nEingabefrist: 06.1
+ 1.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9
+ 246b89d-464d-421e-a1dc-17274ee65f13/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/9246b89d-464d-421e-a1dc-17274ee65f13
+URL:https://auftragsregister.ch/de/auftrag/9246b89d-464d-421e-a1dc-17274ee6
+ 5f13/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 1301 BKP 122 Wohnprovisorium\, Pädagogische Matu
+ ritätsschule Kreuzlingen\, Teilinnensanierung Klostergebäude
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

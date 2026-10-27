@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0090772d-4590-46c3-9802-f18ee0e77164-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Scadenza: PSI PV-Anlagen Contracting Etappe 2
+DESCRIPTION:Ente pubblico: Paul Scherrer Institut\nScadenza: 05.11.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/0090772d-4590-4
+ 6c3-9802-f18ee0e77164/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/0090772d-4590-46c3-9802-f18ee0e77164
+URL:https://auftragsregister.ch/it/auftrag/0090772d-4590-46c3-9802-f18ee0e7
+ 7164/
+LOCATION:Villigen PSI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: PSI PV-Anlagen Contracting Etappe 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

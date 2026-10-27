@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9f037bc6-6b4b-4e4d-b802-210d9a07e372-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Scadenza: Thur3: Abschnitt Bürglen - Kradolf-Schönenberg\, Sanier
+ ung Fischgängigkeit Schwellen und Mündungen kmTG 32.310 bis 35.900
+DESCRIPTION:Ente pubblico: Amt für Umwelt Kanton Thurgau\nScadenza: 24.11.
+ 2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/9f037bc
+ 6-6b4b-4e4d-b802-210d9a07e372/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/9f037bc6-6b4b-4e4d-b802-210d9a07e372
+URL:https://auftragsregister.ch/it/auftrag/9f037bc6-6b4b-4e4d-b802-210d9a07
+ e372/
+LOCATION:Frauenfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Thur3: Abschnitt Bürglen - Kradolf-Schönenberg\, Sa
+ nierung Fischgängigkeit Schwellen und Mündungen kmTG 32.310 bis 35.900
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

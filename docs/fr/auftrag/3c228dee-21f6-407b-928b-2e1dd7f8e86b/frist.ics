@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c228dee-21f6-407b-928b-2e1dd7f8e86b-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Délai de remise : Ersatz Drosselklappe 3601 - Sanierung Triebwas
+ ser Handeck 3 – Rotlaui
+DESCRIPTION:Acheteur public : Kraftwerke Oberhasli AG\nDélai de remise
+  : 20.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/3c228dee-21f6-407b-928b-2e1dd7f8e86b/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/3c228dee-21f6-407b-928b-2e
+ 1dd7f8e86b
+URL:https://auftragsregister.ch/fr/auftrag/3c228dee-21f6-407b-928b-2e1dd7f8
+ e86b/
+LOCATION:Guttannen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatz Drosselklappe 3601 - Sanierung Trie
+ bwasser Handeck 3 – Rotlaui
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

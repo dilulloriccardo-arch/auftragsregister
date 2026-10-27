@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2d34509-8f20-48a2-9230-6fe0a515f238-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Scadenza: 2916.102-1 - Comune di Morbio Inferiore - SC S106.6 - Com
+ pletamento del marciapiede e messa in sicurezza (PAM1) - Opere di sottostr
+ uttura
+DESCRIPTION:Ente pubblico: Ufficio delle commesse pubbliche e della program
+ mazione\nScadenza: 23.11.2026\, 11:00\nNel registro: https://auftragsregis
+ ter.ch/it/auftrag/b2d34509-8f20-48a2-9230-6fe0a515f238/\nPubblicazione uff
+ iciale: https://www.simap.ch/it/project-detail/b2d34509-8f20-48a2-9230-6fe
+ 0a515f238
+URL:https://auftragsregister.ch/it/auftrag/b2d34509-8f20-48a2-9230-6fe0a515
+ f238/
+LOCATION:Morbio Inferiore
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 2916.102-1 - Comune di Morbio Inferiore - SC S106.6 -
+  Completamento del marciapiede e messa in sicurezza (PAM1) - Opere di sott
+ ostruttura
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

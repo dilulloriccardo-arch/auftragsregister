@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28c65ede-87ca-46ca-a7b6-f4b20d00a8a7-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Eingabefrist: Dienstleistung für Microsoft Power Apps und Power Au
+ tomate
+DESCRIPTION:Auftraggeber: Dienst für Informatikplanung\nEingabefrist: 27.1
+ 1.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2
+ 8c65ede-87ca-46ca-a7b6-f4b20d00a8a7/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/28c65ede-87ca-46ca-a7b6-f4b20d00a8a7
+URL:https://auftragsregister.ch/de/auftrag/28c65ede-87ca-46ca-a7b6-f4b20d00
+ a8a7/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Dienstleistung für Microsoft Power Apps und Powe
+ r Automate
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

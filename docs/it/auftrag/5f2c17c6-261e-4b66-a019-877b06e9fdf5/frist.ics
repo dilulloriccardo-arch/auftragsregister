@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f2c17c6-261e-4b66-a019-877b06e9fdf5-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261028T160000Z
+SUMMARY:Scadenza: Musik-Akademie Basel – Campus 2040\, Bereich A (Haus 2\
+ , 4 und 7) - BKP 222-224 Spengler- und Bedachungsarbeiten
+DESCRIPTION:Ente pubblico: Musik-Akademie Basel (ARGE GP MAB Campus 2040)\n
+ Scadenza: 28.10.2026\, 17:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/5f2c17c6-261e-4b66-a019-877b06e9fdf5/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/5f2c17c6-261e-4b66-a019-877b06e9fdf5
+URL:https://auftragsregister.ch/it/auftrag/5f2c17c6-261e-4b66-a019-877b06e9
+ fdf5/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Musik-Akademie Basel – Campus 2040\, Bereich A (Hau
+ s 2\, 4 und 7) - BKP 222-224 Spengler- und Bedachungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

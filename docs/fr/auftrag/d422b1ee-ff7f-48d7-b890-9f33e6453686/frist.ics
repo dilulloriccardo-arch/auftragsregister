@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d422b1ee-ff7f-48d7-b890-9f33e6453686-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261113T110000Z
+SUMMARY:Délai de remise : Contrat-cadre multi-adjudicataires d’acquisi
+ tion d’équipements IT
+DESCRIPTION:Acheteur public : Fédération des Hôpitaux Vaudois Informat
+ ique (eraneos)\nDélai de remise : 13.11.2026\, 12 h 00\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/d422b1ee-ff7f-48d7-b890-9
+ f33e6453686/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/d422b1ee-ff7f-48d7-b890-9f33e6453686
+URL:https://auftragsregister.ch/fr/auftrag/d422b1ee-ff7f-48d7-b890-9f33e645
+ 3686/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat-cadre multi-adjudicataires d’acq
+ uisition d’équipements IT
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

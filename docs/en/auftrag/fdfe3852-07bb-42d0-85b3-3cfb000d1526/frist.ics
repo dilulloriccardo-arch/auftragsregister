@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fdfe3852-07bb-42d0-85b3-3cfb000d1526-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Submission deadline: Cryogenic Probe Station for Measurements below
+  500 mK
+DESCRIPTION:Public buyer: Universität Basel\nSubmission deadline: 6 Nov 
+ 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/fdfe
+ 3852-07bb-42d0-85b3-3cfb000d1526/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/fdfe3852-07bb-42d0-85b3-3cfb000d1526
+URL:https://auftragsregister.ch/en/auftrag/fdfe3852-07bb-42d0-85b3-3cfb000d
+ 1526/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Cryogenic Probe Station for Measurements b
+ elow 500 mK
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

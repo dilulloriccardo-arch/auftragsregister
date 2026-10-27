@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8821f187-eefb-440a-a6a5-89d8ba3d1bf8-frist@auftragsregister.ch
+DTSTAMP:20260821T000000Z
+SEQUENCE:0
+DTSTART:20270219T225900Z
+SUMMARY:Délai de remise : NKM 5.3 – Lot « Criblage du ballast »\, Re
+ nouvellement de la voie ferrée 2029-2033\, Contrat-cadre EG/ET\, Suisse
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Infrastru
+ ktur - Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\n
+ Délai de remise : 19.02.2027\, 23 h 59\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/8821f187-eefb-440a-a6a5-89d8ba3d1bf8/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/8821f187-e
+ efb-440a-a6a5-89d8ba3d1bf8
+URL:https://auftragsregister.ch/fr/auftrag/8821f187-eefb-440a-a6a5-89d8ba3d
+ 1bf8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : NKM 5.3 – Lot « Criblage du ballast »\
+ , Renouvellement de la voie ferrée 2029-2033\, Contrat-cadre EG/ET\, Suis
+ se
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

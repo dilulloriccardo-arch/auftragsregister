@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5aa771e1-bd27-456a-a6b0-074a8f0cb4d2-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Délai de remise : CPC 211 Travaux de construction + CPC 112\, 11
+ 4 Démolition - Thoune\, Polygon\, rénovation de l'enveloppe du bâtiment
+  et des installations techniques
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  19.11.2026\nDans le registre : https://auftragsregister.ch/fr/auftrag/5
+ aa771e1-bd27-456a-a6b0-074a8f0cb4d2/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/5aa771e1-bd27-456a-a6b0-074a8f0cb4d2
+URL:https://auftragsregister.ch/fr/auftrag/5aa771e1-bd27-456a-a6b0-074a8f0c
+ b4d2/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CPC 211 Travaux de construction + CPC 112\
+ , 114 Démolition - Thoune\, Polygon\, rénovation de l'enveloppe du bâti
+ ment et des installations techniques
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

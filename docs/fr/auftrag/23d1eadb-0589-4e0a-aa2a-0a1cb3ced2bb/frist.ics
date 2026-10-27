@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23d1eadb-0589-4e0a-aa2a-0a1cb3ced2bb-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Délai de remise : Neubau Heizzentrale Muzäll - 8213 SH-Neunkirc
+ h
+DESCRIPTION:Acheteur public : Gemeinde Neunkirch - WSP AG Bauingenieure\n
+ Délai de remise : 12.11.2026\, 12 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/23d1eadb-0589-4e0a-aa2a-0a1cb3ced2bb/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/23d1eadb-0
+ 589-4e0a-aa2a-0a1cb3ced2bb
+URL:https://auftragsregister.ch/fr/auftrag/23d1eadb-0589-4e0a-aa2a-0a1cb3ce
+ d2bb/
+LOCATION:Neunkirch
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Heizzentrale Muzäll - 8213 SH-Neun
+ kirch
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

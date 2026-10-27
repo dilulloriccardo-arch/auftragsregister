@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5be46c5d-82ed-4245-87a2-552f51965981-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Délai de remise : ITAM - Remplacement Discovery
+DESCRIPTION:Acheteur public : Etat de Vaud\, DGNSI - Direction générale
+  du numérique et des systèmes d'information\nDélai de remise : 27.11.
+ 2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/5be46c5d-82ed-4245-87a2-552f51965981/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/5be46c5d-82ed-4245-87a2-552f51965981
+URL:https://auftragsregister.ch/fr/auftrag/5be46c5d-82ed-4245-87a2-552f5196
+ 5981/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ITAM - Remplacement Discovery
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1dcdfb57-32c9-499a-8492-126a52c7a9e5-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T160000Z
+SUMMARY:Scadenza: Bachverlegung und Bachoffenlegung Töbelibach - Schulhaus
+  Malerva
+DESCRIPTION:Ente pubblico: Politische Gemeinde Sargans\nScadenza: 09.11.202
+ 6\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/1dcdfb57-3
+ 2c9-499a-8492-126a52c7a9e5/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/1dcdfb57-32c9-499a-8492-126a52c7a9e5
+URL:https://auftragsregister.ch/it/auftrag/1dcdfb57-32c9-499a-8492-126a52c7
+ a9e5/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bachverlegung und Bachoffenlegung Töbelibach - Schul
+ haus Malerva
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

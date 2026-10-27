@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6694cc70-9e7d-4af5-8f98-13e0271a797d-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Eingabefrist: AO - TPG - Organisation\, animation et évaluation d
+ ’un exercice de crise cyber sur table pour des systèmes critiques
+DESCRIPTION:Auftraggeber: Transport publics genevois (tpg)\nEingabefrist: 3
+ 0.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/6694cc70-9e7d-4af5-8f98-13e0271a797d/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/6694cc70-9e7d-4af5-8f98-13e0271a797d
+URL:https://auftragsregister.ch/de/auftrag/6694cc70-9e7d-4af5-8f98-13e0271a
+ 797d/
+LOCATION:Grand-lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AO - TPG - Organisation\, animation et évaluatio
+ n d’un exercice de crise cyber sur table pour des systèmes critiques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

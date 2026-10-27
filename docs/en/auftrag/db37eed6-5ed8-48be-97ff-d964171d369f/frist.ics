@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db37eed6-5ed8-48be-97ff-d964171d369f-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261105T153000Z
+SUMMARY:Submission deadline: HEPIA - Rue de la Prairie 4 - Assainissement e
+ t rénovation des sous-stations de distribution de chauffage B-C-D-I
+DESCRIPTION:Public buyer: Office Cantonal des bâtiments (OCBA) - JDR ENERG
+ IES\nSubmission deadline: 5 Nov 2026\, 16:30\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/db37eed6-5ed8-48be-97ff-d964171d369f/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/db37eed6-5ed8-48be
+ -97ff-d964171d369f
+URL:https://auftragsregister.ch/en/auftrag/db37eed6-5ed8-48be-97ff-d964171d
+ 369f/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: HEPIA - Rue de la Prairie 4 - Assainisseme
+ nt et rénovation des sous-stations de distribution de chauffage B-C-D-I
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

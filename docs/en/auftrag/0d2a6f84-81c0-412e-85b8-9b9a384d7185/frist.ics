@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d2a6f84-81c0-412e-85b8-9b9a384d7185-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Submission deadline: Overall Project St. Anna-Strasse - Belleriveh
+ öhe - Schlösslihalde
+DESCRIPTION:Public buyer: Stadt Luzern\, Umwelt- und Mobilitätsdirektion\,
+  Tiefbauamt\nSubmission deadline: 24 Nov 2026\, 12:00\nIn the register: 
+ https://auftragsregister.ch/en/auftrag/0d2a6f84-81c0-412e-85b8-9b9a384d718
+ 5/\nOfficial publication: https://www.simap.ch/en/project-detail/0d2a6f84-
+ 81c0-412e-85b8-9b9a384d7185
+URL:https://auftragsregister.ch/en/auftrag/0d2a6f84-81c0-412e-85b8-9b9a384d
+ 7185/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Overall Project St. Anna-Strasse - Belleri
+ vehöhe - Schlösslihalde
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

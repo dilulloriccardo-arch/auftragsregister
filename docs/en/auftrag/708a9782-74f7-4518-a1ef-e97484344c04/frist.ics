@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:708a9782-74f7-4518-a1ef-e97484344c04-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Submission deadline: (26035) 620 Reinigungs- und Hygieneprodukte
+DESCRIPTION:Public buyer: Bundesamt für Bauten und Logistik BBL\nSubmissio
+ n deadline: 14 Dec 2026\, 23:59\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/708a9782-74f7-4518-a1ef-e97484344c04/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/708a9782-74f7-4518-a1ef-e974843
+ 44c04
+URL:https://auftragsregister.ch/en/auftrag/708a9782-74f7-4518-a1ef-e9748434
+ 4c04/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (26035) 620 Reinigungs- und Hygieneprodukt
+ e
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

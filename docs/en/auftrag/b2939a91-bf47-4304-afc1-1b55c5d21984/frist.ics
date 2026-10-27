@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2939a91-bf47-4304-afc1-1b55c5d21984-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261119T150000Z
+SUMMARY:Submission deadline: Procurement of four mobile operating tables
+DESCRIPTION:Public buyer: Spital Davos AG\nSubmission deadline: 19 Nov 20
+ 26\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/b2939a
+ 91-bf47-4304-afc1-1b55c5d21984/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/b2939a91-bf47-4304-afc1-1b55c5d21984
+URL:https://auftragsregister.ch/en/auftrag/b2939a91-bf47-4304-afc1-1b55c5d2
+ 1984/
+LOCATION:Davos Platz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Procurement of four mobile operating table
+ s
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

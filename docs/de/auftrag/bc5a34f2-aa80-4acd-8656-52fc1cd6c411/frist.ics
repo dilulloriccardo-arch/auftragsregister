@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc5a34f2-aa80-4acd-8656-52fc1cd6c411-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261126T123000Z
+SUMMARY:Eingabefrist: TGSB SA - Travaux de renouvellement électromécaniqu
+ e (installation électrique) liés au renouvellement de l'éclairage de tr
+ aversée
+DESCRIPTION:Auftraggeber: Tunnel du Grand-Saint-Bernard\nEingabefrist: 26.1
+ 1.2026\, 13.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b
+ c5a34f2-aa80-4acd-8656-52fc1cd6c411/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/bc5a34f2-aa80-4acd-8656-52fc1cd6c411
+URL:https://auftragsregister.ch/de/auftrag/bc5a34f2-aa80-4acd-8656-52fc1cd6
+ c411/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: TGSB SA - Travaux de renouvellement électroméca
+ nique (installation électrique) liés au renouvellement de l'éclairage d
+ e traversée
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

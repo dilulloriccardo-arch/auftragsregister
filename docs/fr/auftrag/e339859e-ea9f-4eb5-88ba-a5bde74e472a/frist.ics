@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e339859e-ea9f-4eb5-88ba-a5bde74e472a-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : ARA Eglisau\, Ausbau ARA 2030\, V-601 Umgebung
+ s- und Werkleitungsgrabarbeiten
+DESCRIPTION:Acheteur public : Gemeinde Eglisau\nDélai de remise : 23.1
+ 1.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/e339859e-ea9f-4eb5-88ba-a5bde74e472a/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/e339859e-ea9f-4eb5-88ba-a5bde74e472
+ a
+URL:https://auftragsregister.ch/fr/auftrag/e339859e-ea9f-4eb5-88ba-a5bde74e
+ 472a/
+LOCATION:Eglisau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ARA Eglisau\, Ausbau ARA 2030\, V-601 Umge
+ bungs- und Werkleitungsgrabarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

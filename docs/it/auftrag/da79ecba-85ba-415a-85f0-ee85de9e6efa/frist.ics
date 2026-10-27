@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da79ecba-85ba-415a-85f0-ee85de9e6efa-frist@auftragsregister.ch
+DTSTAMP:20261025T000000Z
+SEQUENCE:1
+DTSTART:20261029T225900Z
+SUMMARY:Scadenza: Mandat: Entwicklung\, Umsetzung und Einführung der Verso
+ rgungsregion Brugg (Alters- und Langzeitversorgung) – Pilotprojekt
+DESCRIPTION:Ente pubblico: Brugg Regio\, Regionalplanungsverband Brugg\, Ar
+ beitsgruppe Gesundheit\nScadenza: 29.10.2026\, 23:59\nNel registro: https:
+ //auftragsregister.ch/it/auftrag/da79ecba-85ba-415a-85f0-ee85de9e6efa/\nPu
+ bblicazione ufficiale: https://www.simap.ch/it/project-detail/da79ecba-85b
+ a-415a-85f0-ee85de9e6efa
+URL:https://auftragsregister.ch/it/auftrag/da79ecba-85ba-415a-85f0-ee85de9e
+ 6efa/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mandat: Entwicklung\, Umsetzung und Einführung der V
+ ersorgungsregion Brugg (Alters- und Langzeitversorgung) – Pilotprojekt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

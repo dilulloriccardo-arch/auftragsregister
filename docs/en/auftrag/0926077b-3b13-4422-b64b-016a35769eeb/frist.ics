@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0926077b-3b13-4422-b64b-016a35769eeb-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Submission deadline: Ausschreibung Elektroinstallationen / Elektrik
+ erarbeiten / Reparaturen und Instandhaltung – KAT.004
+DESCRIPTION:Public buyer: ETHOS Immobilien GmbH\nSubmission deadline: 9 No
+ v 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/0
+ 926077b-3b13-4422-b64b-016a35769eeb/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/0926077b-3b13-4422-b64b-016a35769eeb
+URL:https://auftragsregister.ch/en/auftrag/0926077b-3b13-4422-b64b-016a3576
+ 9eeb/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibung Elektroinstallationen / Elek
+ trikerarbeiten / Reparaturen und Instandhaltung – KAT.004
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

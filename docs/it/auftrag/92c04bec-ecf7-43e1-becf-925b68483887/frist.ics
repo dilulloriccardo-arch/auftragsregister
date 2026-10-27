@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92c04bec-ecf7-43e1-becf-925b68483887-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261202T100000Z
+SUMMARY:Scadenza: Transports scolaires pour le cercle scolaire Surpierre - 
+ Prévondavaux
+DESCRIPTION:Ente pubblico: Commune de Surpierre\nScadenza: 02.12.2026\, 11:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/92c04bec-ecf7-43e
+ 1-becf-925b68483887/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/92c04bec-ecf7-43e1-becf-925b68483887
+URL:https://auftragsregister.ch/it/auftrag/92c04bec-ecf7-43e1-becf-925b6848
+ 3887/
+LOCATION:Communes de Surpierre et Prévondavaux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Transports scolaires pour le cercle scolaire Surpierr
+ e - Prévondavaux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

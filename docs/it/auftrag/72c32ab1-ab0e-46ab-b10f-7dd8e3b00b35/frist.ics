@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72c32ab1-ab0e-46ab-b10f-7dd8e3b00b35-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261213T225900Z
+SUMMARY:Scadenza: Abgasabsauganlage Thermische Fahrzeuge Halle West
+DESCRIPTION:Ente pubblico: Rhätische Bahn AG\nScadenza: 13.12.2026\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/72c32ab1-ab0e-46ab-
+ b10f-7dd8e3b00b35/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/72c32ab1-ab0e-46ab-b10f-7dd8e3b00b35
+URL:https://auftragsregister.ch/it/auftrag/72c32ab1-ab0e-46ab-b10f-7dd8e3b0
+ 0b35/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Abgasabsauganlage Thermische Fahrzeuge Halle West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

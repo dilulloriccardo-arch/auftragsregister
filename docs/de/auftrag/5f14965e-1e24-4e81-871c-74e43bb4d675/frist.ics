@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f14965e-1e24-4e81-871c-74e43bb4d675-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Eingabefrist: Renouvellement de voies YVWB-BRI Km1.435 à 2.040 inc
+ lus 2 PN - Prestations de construction GC - phases 52/53
+DESCRIPTION:Auftraggeber: TRAVYS SA\nEingabefrist: 09.11.2026\, 11.00 Uhr\
+ nIm Register: https://auftragsregister.ch/de/auftrag/5f14965e-1e24-4e81-87
+ 1c-74e43bb4d675/\nAmtliche Publikation: https://www.simap.ch/de/project-de
+ tail/5f14965e-1e24-4e81-871c-74e43bb4d675
+URL:https://auftragsregister.ch/de/auftrag/5f14965e-1e24-4e81-871c-74e43bb4
+ d675/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Renouvellement de voies YVWB-BRI Km1.435 à 2.040
+  inclus 2 PN - Prestations de construction GC - phases 52/53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

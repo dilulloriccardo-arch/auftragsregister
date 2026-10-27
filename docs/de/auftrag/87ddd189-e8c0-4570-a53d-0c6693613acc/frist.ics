@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87ddd189-e8c0-4570-a53d-0c6693613acc-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T190000Z
+SUMMARY:Eingabefrist: LED Generalersatz Gebäude Berufsbildungszentrum Pfä
+ ffikon BBZP
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Schwyz\nEingabefrist: 06.11.202
+ 6\, 20.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/87ddd1
+ 89-e8c0-4570-a53d-0c6693613acc/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/87ddd189-e8c0-4570-a53d-0c6693613acc
+URL:https://auftragsregister.ch/de/auftrag/87ddd189-e8c0-4570-a53d-0c669361
+ 3acc/
+LOCATION:Pfäffikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: LED Generalersatz Gebäude Berufsbildungszentrum 
+ Pfäffikon BBZP
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

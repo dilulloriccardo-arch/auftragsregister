@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fdfe3852-07bb-42d0-85b3-3cfb000d1526-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Eingabefrist: Cryogenic Probe Station
+DESCRIPTION:Auftraggeber: Universität Basel\nEingabefrist: 06.11.2026\, 12
+ .00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/fdfe3852-07b
+ b-42d0-85b3-3cfb000d1526/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/fdfe3852-07bb-42d0-85b3-3cfb000d1526
+URL:https://auftragsregister.ch/de/auftrag/fdfe3852-07bb-42d0-85b3-3cfb000d
+ 1526/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Cryogenic Probe Station
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

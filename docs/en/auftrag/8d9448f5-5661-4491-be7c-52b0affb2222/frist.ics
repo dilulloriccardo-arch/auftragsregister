@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8d9448f5-5661-4491-be7c-52b0affb2222-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261111T130000Z
+SUMMARY:Submission deadline: Integrales Infrastrukturprojekt Robert-Durrer-
+ Strasse I Projektingenieur
+DESCRIPTION:Public buyer: Gemeinde Stans\, Bauamt\nSubmission deadline: 11
+  Nov 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/8d9448f5-5661-4491-be7c-52b0affb2222/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/8d9448f5-5661-4491-be7c-52b0affb2222
+URL:https://auftragsregister.ch/en/auftrag/8d9448f5-5661-4491-be7c-52b0affb
+ 2222/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Integrales Infrastrukturprojekt Robert-Dur
+ rer-Strasse I Projektingenieur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

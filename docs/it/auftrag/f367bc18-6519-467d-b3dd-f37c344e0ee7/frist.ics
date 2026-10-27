@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f367bc18-6519-467d-b3dd-f37c344e0ee7-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261211T150000Z
+SUMMARY:Scadenza: Sanierung Lempigenstrasse\, Wasen i.E.
+DESCRIPTION:Ente pubblico: Gemeinde Sumiswald\nScadenza: 11.12.2026\, 16:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/f367bc18-6519-467d-
+ b3dd-f37c344e0ee7/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/f367bc18-6519-467d-b3dd-f37c344e0ee7
+URL:https://auftragsregister.ch/it/auftrag/f367bc18-6519-467d-b3dd-f37c344e
+ 0ee7/
+LOCATION:Sumiswald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Lempigenstrasse\, Wasen i.E.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc7fcb21-2135-45a9-bf6a-cef357923dba-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:2
+DTSTART:20261030T225900Z
+SUMMARY:Délai de remise : Revision Pneumatikkomponenten Be510
+DESCRIPTION:Acheteur public : Sihltal Zürich Uetliberg Bahn SZU AG\nDél
+ ai de remise : 30.10.2026\, 23 h 59\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/bc7fcb21-2135-45a9-bf6a-cef357923dba/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/bc7fcb21-2135-
+ 45a9-bf6a-cef357923dba
+URL:https://auftragsregister.ch/fr/auftrag/bc7fcb21-2135-45a9-bf6a-cef35792
+ 3dba/
+LOCATION:Sihltal Zürich Uetliberg Bahn SZU AG (Abteilung Rollmaterial)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Revision Pneumatikkomponenten Be510
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

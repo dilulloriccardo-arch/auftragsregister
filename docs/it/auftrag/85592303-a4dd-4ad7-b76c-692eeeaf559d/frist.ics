@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85592303-a4dd-4ad7-b76c-692eeeaf559d-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261117T103000Z
+SUMMARY:Scadenza: AO : Vulgarisation alpestre / DGAV
+DESCRIPTION:Ente pubblico: Département de l'agriculture\, de la durabilit
+ é et du climat et du numérique - Direction générale de l'agriculture\,
+  de la viticulture et des affaires vétérinaires - DAGRI\nScadenza: 17.11
+ .2026\, 11:30\nNel registro: https://auftragsregister.ch/it/auftrag/855923
+ 03-a4dd-4ad7-b76c-692eeeaf559d/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/85592303-a4dd-4ad7-b76c-692eeeaf559d
+URL:https://auftragsregister.ch/it/auftrag/85592303-a4dd-4ad7-b76c-692eeeaf
+ 559d/
+LOCATION:Canton de Vaud
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AO : Vulgarisation alpestre / DGAV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b705e0a-5cbe-4675-95e7-a372a58fbdee-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261208T150000Z
+SUMMARY:Scadenza: Aktualisierung und Weiterentwicklung der nationalen Risik
+ oanalyse «Katastrophen und Notlagen Schweiz 2030 & 2035» KNS
+DESCRIPTION:Ente pubblico: armasuisse Ressourcen und Support CC WTO\nScaden
+ za: 08.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/4b705e0a-5cbe-4675-95e7-a372a58fbdee/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/4b705e0a-5cbe-4675-95e7-a372a58fbdee
+URL:https://auftragsregister.ch/it/auftrag/4b705e0a-5cbe-4675-95e7-a372a58f
+ bdee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Aktualisierung und Weiterentwicklung der nationalen R
+ isikoanalyse «Katastrophen und Notlagen Schweiz 2030 & 2035» KNS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ffefb8ed-4754-4207-a18a-6485c80229ec-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Délai de remise : École de Langwiesen : extension et rénovatio
+ n \; CFC 242 Installations de chauffage
+DESCRIPTION:Acheteur public : Amt für Städtebau\nDélai de remise : 0
+ 4.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/ffefb8ed-4754-4207-a18a-6485c80229ec/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/ffefb8ed-4754-4207-a18a-6485c8
+ 0229ec
+URL:https://auftragsregister.ch/fr/auftrag/ffefb8ed-4754-4207-a18a-6485c802
+ 29ec/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École de Langwiesen : extension et rénov
+ ation \; CFC 242 Installations de chauffage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

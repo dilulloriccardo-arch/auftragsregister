@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81f572f0-8d43-49ef-a40f-b403e6da016e-frist@auftragsregister.ch
+DTSTAMP:20260821T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Scadenza: NKM 5.1 – Los «All-inclusive»\, Fahrbahnerneuerungen 
+ 2029-2033\, Rahmenvertrag GU\, Schweiz
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB\, Infrastruktur 
+ - Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\nScade
+ nza: 27.11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auft
+ rag/81f572f0-8d43-49ef-a40f-b403e6da016e/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/81f572f0-8d43-49ef-a40f-b403e6da016e
+URL:https://auftragsregister.ch/it/auftrag/81f572f0-8d43-49ef-a40f-b403e6da
+ 016e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: NKM 5.1 – Los «All-inclusive»\, Fahrbahnerneuerun
+ gen 2029-2033\, Rahmenvertrag GU\, Schweiz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

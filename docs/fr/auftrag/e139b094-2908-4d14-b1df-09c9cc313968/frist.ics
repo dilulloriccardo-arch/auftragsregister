@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e139b094-2908-4d14-b1df-09c9cc313968-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:1
+DTSTART:20261112T150000Z
+SUMMARY:Délai de remise : Stadt Chur - Prestations de planification et d
+ e déménagement pour les environnements de travail de bureau
+DESCRIPTION:Acheteur public : Stadt Chur - Immobilien und Bewirtschaftung
+ \, Facility Services\nDélai de remise : 12.11.2026\, 16 h 00\nDans 
+ le registre : https://auftragsregister.ch/fr/auftrag/e139b094-2908-4d14-
+ b1df-09c9cc313968/\nPublication officielle : https://www.simap.ch/fr/pro
+ ject-detail/e139b094-2908-4d14-b1df-09c9cc313968
+URL:https://auftragsregister.ch/fr/auftrag/e139b094-2908-4d14-b1df-09c9cc31
+ 3968/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Stadt Chur - Prestations de planification 
+ et de déménagement pour les environnements de travail de bureau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b1accb6d-be3d-4e81-a62a-7091ceea5a74-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Eingabefrist: 512.96 Ecole du Bourg - CFC261 ascenseur - phase R-r
+ éalisation
+DESCRIPTION:Auftraggeber: Service Urbanisme & architecture\nEingabefrist: 0
+ 9.11.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/b1accb6d-be3d-4e81-a62a-7091ceea5a74/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/b1accb6d-be3d-4e81-a62a-7091ceea5a74
+URL:https://auftragsregister.ch/de/auftrag/b1accb6d-be3d-4e81-a62a-7091ceea
+ 5a74/
+LOCATION:Fribourg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 512.96 Ecole du Bourg - CFC261 ascenseur - phase 
+ R-réalisation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

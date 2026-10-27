@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02f7fdab-b8f4-4d98-a343-183f259bb17b-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:3
+DTSTART:20261102T140000Z
+SUMMARY:Délai de remise : Cascade de Barberine\, Rénovation majeure– 
+ Appel d’offres Lot 401 Génératrice G3 et Lot 402 Turbine Pelton avec v
+ anne sphérique et conduite de distribution
+DESCRIPTION:Acheteur public : SBB CFF FFS Infra-Energie\nDélai de remise
+  : 02.11.2026\, 15 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/02f7fdab-b8f4-4d98-a343-183f259bb17b/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/02f7fdab-b8f4-4d98-a343-18
+ 3f259bb17b
+URL:https://auftragsregister.ch/fr/auftrag/02f7fdab-b8f4-4d98-a343-183f259b
+ b17b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Cascade de Barberine\, Rénovation majeure
+ – Appel d’offres Lot 401 Génératrice G3 et Lot 402 Turbine Pelton av
+ ec vanne sphérique et conduite de distribution
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e53115c-e00d-41c7-835d-e199e40cd645-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Scadenza: LC-MS mit on-/offline Probenanreicherung
+DESCRIPTION:Ente pubblico: Bundesamt für Rüstung armasuisse\nScadenza: 24
+ .11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/3e5
+ 3115c-e00d-41c7-835d-e199e40cd645/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/3e53115c-e00d-41c7-835d-e199e40cd645
+URL:https://auftragsregister.ch/it/auftrag/3e53115c-e00d-41c7-835d-e199e40c
+ d645/
+LOCATION:Posieux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: LC-MS mit on-/offline Probenanreicherung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

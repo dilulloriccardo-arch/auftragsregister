@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d5daa77b-31e4-4fed-8089-d056e1f45ea3-frist@auftragsregister.ch
+DTSTAMP:20260916T000000Z
+SEQUENCE:0
+DTSTART:20261106T180000Z
+SUMMARY:Eingabefrist: Approvisionnement en conduites réseaux CAD
+DESCRIPTION:Auftraggeber: OIKEN SA Achats & Logistique\nEingabefrist: 06.11
+ .2026\, 19.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d5
+ daa77b-31e4-4fed-8089-d056e1f45ea3/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/d5daa77b-31e4-4fed-8089-d056e1f45ea3
+URL:https://auftragsregister.ch/de/auftrag/d5daa77b-31e4-4fed-8089-d056e1f4
+ 5ea3/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Approvisionnement en conduites réseaux CAD
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

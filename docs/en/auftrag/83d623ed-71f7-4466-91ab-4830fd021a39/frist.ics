@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83d623ed-71f7-4466-91ab-4830fd021a39-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Submission deadline: Contrat-cadre - Réalisation\, entretien et d
+ épannage des installations électriques
+DESCRIPTION:Public buyer: Hospice général\nSubmission deadline: 16 Nov 
+ 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/83d6
+ 23ed-71f7-4466-91ab-4830fd021a39/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/83d623ed-71f7-4466-91ab-4830fd021a39
+URL:https://auftragsregister.ch/en/auftrag/83d623ed-71f7-4466-91ab-4830fd02
+ 1a39/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Contrat-cadre - Réalisation\, entretien e
+ t dépannage des installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

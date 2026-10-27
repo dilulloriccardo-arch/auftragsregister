@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1762c7f5-cf5c-4958-9008-bb5fff178e27-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:2
+DTSTART:20261218T225900Z
+SUMMARY:Délai de remise : MP-120093\, N2 2e réfection du tunnel du Belc
+ hen (BZI) / Lot 102 construction du tube BAS
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3\nDélai de remise : 18.12.2026\, 23 h 5
+ 9\nDans le registre : https://auftragsregister.ch/fr/auftrag/1762c7f5-cf
+ 5c-4958-9008-bb5fff178e27/\nPublication officielle : https://www.simap.c
+ h/fr/project-detail/1762c7f5-cf5c-4958-9008-bb5fff178e27
+URL:https://auftragsregister.ch/fr/auftrag/1762c7f5-cf5c-4958-9008-bb5fff17
+ 8e27/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-120093\, N2 2e réfection du tunnel du 
+ Belchen (BZI) / Lot 102 construction du tube BAS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02f7fdab-b8f4-4d98-a343-183f259bb17b-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:3
+DTSTART:20261102T140000Z
+SUMMARY:Eingabefrist: Kaskade Barberine\, Erhebliche Erneuerung - Ausschrei
+ bung Los 401 Generator G3 & Los 402 Peltonturbine mit Kugelschiebern und V
+ erteilleitung
+DESCRIPTION:Auftraggeber: SBB CFF FFS Infra-Energie\nEingabefrist: 02.11.20
+ 26\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/02f7f
+ dab-b8f4-4d98-a343-183f259bb17b/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/02f7fdab-b8f4-4d98-a343-183f259bb17b
+URL:https://auftragsregister.ch/de/auftrag/02f7fdab-b8f4-4d98-a343-183f259b
+ b17b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kaskade Barberine\, Erhebliche Erneuerung - Aussc
+ hreibung Los 401 Generator G3 & Los 402 Peltonturbine mit Kugelschiebern u
+ nd Verteilleitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

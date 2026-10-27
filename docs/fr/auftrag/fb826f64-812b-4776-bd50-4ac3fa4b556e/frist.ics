@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb826f64-812b-4776-bd50-4ac3fa4b556e-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261109T225900Z
+SUMMARY:Délai de remise : 16.0249 - Langenthal\, rénovation et extensio
+ n de l’école professionnelle : 230 Installations électriques
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 09.11.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/fb826f64-812b-4776-bd50-4
+ ac3fa4b556e/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/fb826f64-812b-4776-bd50-4ac3fa4b556e
+URL:https://auftragsregister.ch/fr/auftrag/fb826f64-812b-4776-bd50-4ac3fa4b
+ 556e/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 16.0249 - Langenthal\, rénovation et exte
+ nsion de l’école professionnelle : 230 Installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

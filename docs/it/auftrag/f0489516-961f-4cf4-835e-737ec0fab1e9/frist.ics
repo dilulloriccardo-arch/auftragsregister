@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f0489516-961f-4cf4-835e-737ec0fab1e9-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Scadenza: BAV 27600 WGH Freiestrasse 56\, 58\, Instandsetzung - BKP
+  242 Heizungsanlagen inkl. BKP 248 Gebäudeautomation und BKP 246 Kältean
+ lagen
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 12.11
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/f04895
+ 16-961f-4cf4-835e-737ec0fab1e9/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/f0489516-961f-4cf4-835e-737ec0fab1e9
+URL:https://auftragsregister.ch/it/auftrag/f0489516-961f-4cf4-835e-737ec0fa
+ b1e9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 27600 WGH Freiestrasse 56\, 58\, Instandsetzung -
+  BKP 242 Heizungsanlagen inkl. BKP 248 Gebäudeautomation und BKP 246 Käl
+ teanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

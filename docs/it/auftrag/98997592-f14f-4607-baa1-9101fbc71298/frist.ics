@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:98997592-f14f-4607-baa1-9101fbc71298-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261102T103000Z
+SUMMARY:Scadenza: Commune de Cressier - ruissellement centre village
+DESCRIPTION:Ente pubblico: Commune de Cressier FR\nScadenza: 02.11.2026\, 1
+ 1:30\nNel registro: https://auftragsregister.ch/it/auftrag/98997592-f14f-4
+ 607-baa1-9101fbc71298/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/98997592-f14f-4607-baa1-9101fbc71298
+URL:https://auftragsregister.ch/it/auftrag/98997592-f14f-4607-baa1-9101fbc7
+ 1298/
+LOCATION:Cressier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Commune de Cressier - ruissellement centre village
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

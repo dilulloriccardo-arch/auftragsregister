@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6910973f-4a51-4076-a7a0-fc7e6ff2016f-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T140000Z
+SUMMARY:Délai de remise : 282 01 keramische Wand- und Bodenplatten
+DESCRIPTION:Acheteur public : Vollenweider Baurealisation GmbH\nDélai de
+  remise : 20.11.2026\, 15 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/6910973f-4a51-4076-a7a0-fc7e6ff2016f/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/6910973f-4a51-4076-
+ a7a0-fc7e6ff2016f
+URL:https://auftragsregister.ch/fr/auftrag/6910973f-4a51-4076-a7a0-fc7e6ff2
+ 016f/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 282 01 keramische Wand- und Bodenplatten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

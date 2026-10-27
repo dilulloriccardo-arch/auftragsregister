@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:43753fef-1c44-42cf-95fd-55f67a9334d3-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Eingabefrist: Waisenhausstrasse + Länggasse\, WL + KE Kanalisation
+  GEP 42 + 45
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Thun\nEingabefrist: 13.11.2026\
+ , 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/43753fef
+ -1c44-42cf-95fd-55f67a9334d3/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/43753fef-1c44-42cf-95fd-55f67a9334d3
+URL:https://auftragsregister.ch/de/auftrag/43753fef-1c44-42cf-95fd-55f67a93
+ 34d3/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Waisenhausstrasse + Länggasse\, WL + KE Kanalisa
+ tion GEP 42 + 45
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

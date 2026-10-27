@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c482c63-0a14-4290-a13d-76cf0482034b-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Submission deadline: Magnet mit horizontaler Feldausrichtung und ex
+ trem breitem Strahlzugang für Neutronenstreuexperimente
+DESCRIPTION:Public buyer: Paul Scherrer Institut (PSI)\nSubmission deadline
+ : 22 Dec 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/6c482c63-0a14-4290-a13d-76cf0482034b/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/6c482c63-0a14-4290-a13d-76cf0482034b
+URL:https://auftragsregister.ch/en/auftrag/6c482c63-0a14-4290-a13d-76cf0482
+ 034b/
+LOCATION:Villigen PSI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Magnet mit horizontaler Feldausrichtung un
+ d extrem breitem Strahlzugang für Neutronenstreuexperimente
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

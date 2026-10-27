@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:704ff4ec-985b-4d6b-ba51-bb14fc18d181-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261106T225500Z
+SUMMARY:Submission deadline: Giacomettistrasse\, Aspermontstrasse - Wiesent
+ alstrasse
+DESCRIPTION:Public buyer: Stadt Chur - Tiefbaudienste\nSubmission deadline:
+  6 Nov 2026\, 23:55\nIn the register: https://auftragsregister.ch/en/auf
+ trag/704ff4ec-985b-4d6b-ba51-bb14fc18d181/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/704ff4ec-985b-4d6b-ba51-bb14fc18d181
+URL:https://auftragsregister.ch/en/auftrag/704ff4ec-985b-4d6b-ba51-bb14fc18
+ d181/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Giacomettistrasse\, Aspermontstrasse - Wie
+ sentalstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

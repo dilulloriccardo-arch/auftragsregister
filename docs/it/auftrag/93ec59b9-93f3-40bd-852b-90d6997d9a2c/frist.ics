@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:93ec59b9-93f3-40bd-852b-90d6997d9a2c-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261102T100000Z
+SUMMARY:Scadenza: Rheinau\, Neubau Bushaltestellen Unterstadt & Klosterplat
+ z
+DESCRIPTION:Ente pubblico: Gemeinde Rheinau (Ingesa AG)\nScadenza: 02.11.20
+ 26\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/93ec59b9-
+ 93f3-40bd-852b-90d6997d9a2c/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/93ec59b9-93f3-40bd-852b-90d6997d9a2c
+URL:https://auftragsregister.ch/it/auftrag/93ec59b9-93f3-40bd-852b-90d6997d
+ 9a2c/
+LOCATION:Rheinau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rheinau\, Neubau Bushaltestellen Unterstadt & Kloster
+ platz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

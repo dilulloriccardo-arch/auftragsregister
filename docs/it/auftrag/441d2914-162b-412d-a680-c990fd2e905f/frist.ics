@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:441d2914-162b-412d-a680-c990fd2e905f-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Scadenza: 281.0 Decor-Hartbetonbeläge
+DESCRIPTION:Ente pubblico: Gemeinde Richterswil / Abteilung Liegenschaften\
+ nScadenza: 07.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/441d2914-162b-412d-a680-c990fd2e905f/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/441d2914-162b-412d-a680-c990fd2e905
+ f
+URL:https://auftragsregister.ch/it/auftrag/441d2914-162b-412d-a680-c990fd2e
+ 905f/
+LOCATION:Richterswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 281.0 Decor-Hartbetonbeläge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:396041a2-a89b-4587-9d07-8f8361b01b0f-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261119T140000Z
+SUMMARY:Scadenza: Schulraumerweiterung Biel-Benken BL\, BKP 214 Holzbau
+DESCRIPTION:Ente pubblico: Gemeindeverwaltung Biel-Benken\nScadenza: 19.11.
+ 2026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/396041a
+ 2-a89b-4587-9d07-8f8361b01b0f/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/396041a2-a89b-4587-9d07-8f8361b01b0f
+URL:https://auftragsregister.ch/it/auftrag/396041a2-a89b-4587-9d07-8f8361b0
+ 1b0f/
+LOCATION:Biel-Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulraumerweiterung Biel-Benken BL\, BKP 214 Holzbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

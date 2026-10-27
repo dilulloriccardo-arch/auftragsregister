@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44b9dfa7-d52d-4f89-9e37-b305531e09cb-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Délai de remise : Campus de Horw\, réalisation des travaux de r
+ énovation et d'agrandissement (CFC 112 : démantèlement)
+DESCRIPTION:Acheteur public : Kanton Luzern\, Dienststelle Immobilien\nD
+ élai de remise : 09.12.2026\, 23 h 59\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/44b9dfa7-d52d-4f89-9e37-b305531e09cb/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/44b9dfa7-d5
+ 2d-4f89-9e37-b305531e09cb
+URL:https://auftragsregister.ch/fr/auftrag/44b9dfa7-d52d-4f89-9e37-b305531e
+ 09cb/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Campus de Horw\, réalisation des travaux 
+ de rénovation et d'agrandissement (CFC 112 : démantèlement)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

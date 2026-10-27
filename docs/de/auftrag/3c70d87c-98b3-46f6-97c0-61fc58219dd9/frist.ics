@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c70d87c-98b3-46f6-97c0-61fc58219dd9-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261030T220000Z
+SUMMARY:Eingabefrist: Wärme- und Kälteverbund Opfikon\, BKP248 Gebäudeau
+ tomation
+DESCRIPTION:Auftraggeber: Energie Opfikon AG\nEingabefrist: 30.10.2026\, 23
+ .00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3c70d87c-98b
+ 3-46f6-97c0-61fc58219dd9/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/3c70d87c-98b3-46f6-97c0-61fc58219dd9
+URL:https://auftragsregister.ch/de/auftrag/3c70d87c-98b3-46f6-97c0-61fc5821
+ 9dd9/
+LOCATION:Glattbrugg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Wärme- und Kälteverbund Opfikon\, BKP248 Gebäu
+ deautomation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce1a1bfe-ed19-4ef1-a6fe-2be6bdb2a126-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Délai de remise : Neubau Seniorenwohnungen Herosé\, Aarau - BKP
+  230 Elektroanlagen
+DESCRIPTION:Acheteur public : Einwohnergemeinde Aarau - Stadtbauamt\, Sek
+ tion Hochbau\nDélai de remise : 26.11.2026\, 16 h 00\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/ce1a1bfe-ed19-4ef1-a6fe-2be
+ 6bdb2a126/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/ce1a1bfe-ed19-4ef1-a6fe-2be6bdb2a126
+URL:https://auftragsregister.ch/fr/auftrag/ce1a1bfe-ed19-4ef1-a6fe-2be6bdb2
+ a126/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Seniorenwohnungen Herosé\, Aarau -
+  BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

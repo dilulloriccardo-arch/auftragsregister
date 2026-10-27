@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9ffe164b-6776-4ebc-8a5f-342379c5a22a-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20270119T090000Z
+SUMMARY:Submission deadline: STEP D’AIRE Poste 18 kV avec contrôle comma
+ nde et protections
+DESCRIPTION:Public buyer: Services industriels de Genève (SIG) - Direction
+  Achats\nSubmission deadline: 19 Jan 2027\, 10:00\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/9ffe164b-6776-4ebc-8a5f-342379c5a22a/\n
+ Official publication: https://www.simap.ch/en/project-detail/9ffe164b-6776
+ -4ebc-8a5f-342379c5a22a
+URL:https://auftragsregister.ch/en/auftrag/9ffe164b-6776-4ebc-8a5f-342379c5
+ a22a/
+LOCATION:Aire (Vernier\, GE)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: STEP D’AIRE Poste 18 kV avec contrôle c
+ ommande et protections
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

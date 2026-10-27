@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd9c5da2-f7dc-45dc-9254-71b748bfa9b4-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Scadenza: Reseller Public Cloud
+DESCRIPTION:Ente pubblico: Swissgrid AG\nScadenza: 11.11.2026\, 23:59\nNel 
+ registro: https://auftragsregister.ch/it/auftrag/bd9c5da2-f7dc-45dc-9254-7
+ 1b748bfa9b4/\nPubblicazione ufficiale: https://www.simap.ch/it/project-det
+ ail/bd9c5da2-f7dc-45dc-9254-71b748bfa9b4
+URL:https://auftragsregister.ch/it/auftrag/bd9c5da2-f7dc-45dc-9254-71b748bf
+ a9b4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Reseller Public Cloud
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:63c202e4-7901-4681-b22b-c600cd3b04ae-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+SUMMARY:Submission deadline: STEP Echallens - CFC 237 - INST01 - Mesures de
+  niveaux
+DESCRIPTION:Public buyer: ASET / Association intercommunale STEP Echallens 
+ Talent (TRITON)\nSubmission deadline: 30 Nov 2026\, 11:00\nIn the regist
+ er: https://auftragsregister.ch/en/auftrag/63c202e4-7901-4681-b22b-c600cd3
+ b04ae/\nOfficial publication: https://www.simap.ch/en/project-detail/63c20
+ 2e4-7901-4681-b22b-c600cd3b04ae
+URL:https://auftragsregister.ch/en/auftrag/63c202e4-7901-4681-b22b-c600cd3b
+ 04ae/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: STEP Echallens - CFC 237 - INST01 - Mesure
+ s de niveaux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

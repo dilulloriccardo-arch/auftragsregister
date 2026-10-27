@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3fc1b1cd-7f64-46ef-948c-e5eefd332df5-frist@auftragsregister.ch
+DTSTAMP:20260902T000000Z
+SEQUENCE:0
+DTSTART:20261028T100000Z
+SUMMARY:Délai de remise : CP4600008939- RC 286 - Bavois - Assainissement
+  et renforcement du viaduc de Bavois
+DESCRIPTION:Acheteur public : Direction générale de la mobilité et des
+  routes - Division infrastructures\nDélai de remise : 28.10.2026\, 11
+  h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/3fc
+ 1b1cd-7f64-46ef-948c-e5eefd332df5/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/3fc1b1cd-7f64-46ef-948c-e5eefd332df5
+URL:https://auftragsregister.ch/fr/auftrag/3fc1b1cd-7f64-46ef-948c-e5eefd33
+ 2df5/
+LOCATION:Bavois
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CP4600008939- RC 286 - Bavois - Assainisse
+ ment et renforcement du viaduc de Bavois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

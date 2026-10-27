@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fc6c2d0e-7572-4443-9273-88b2415f384f-frist@auftragsregister.ch
+DTSTAMP:20261018T000000Z
+SEQUENCE:1
+DTSTART:20261203T140000Z
+SUMMARY:Eingabefrist: Birsfelden - Neue Ortsdurchfahrt / Information & Komm
+ unikation
+DESCRIPTION:Auftraggeber: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nEingabefrist: 03.12.2026\, 15.00 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/fc6c2d0e-7572-4443-9273-88b2415f384f/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/fc6c2d0e-7572-4443-9273-88b
+ 2415f384f
+URL:https://auftragsregister.ch/de/auftrag/fc6c2d0e-7572-4443-9273-88b2415f
+ 384f/
+LOCATION:Birsfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Birsfelden - Neue Ortsdurchfahrt / Information & 
+ Kommunikation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

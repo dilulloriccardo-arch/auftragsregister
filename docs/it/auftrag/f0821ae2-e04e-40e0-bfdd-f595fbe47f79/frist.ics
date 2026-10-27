@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f0821ae2-e04e-40e0-bfdd-f595fbe47f79-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:1
+DTSTART:20261028T160000Z
+SUMMARY:Scadenza: Renouvellement du parc des imprimantes multifonctions de 
+ la Ville de Pully et de ses partenaires
+DESCRIPTION:Ente pubblico: Ville de Pully - Service des Systèmes d'informa
+ tion\nScadenza: 28.10.2026\, 17:00\nNel registro: https://auftragsregister
+ .ch/it/auftrag/f0821ae2-e04e-40e0-bfdd-f595fbe47f79/\nPubblicazione uffici
+ ale: https://www.simap.ch/it/project-detail/f0821ae2-e04e-40e0-bfdd-f595fb
+ e47f79
+URL:https://auftragsregister.ch/it/auftrag/f0821ae2-e04e-40e0-bfdd-f595fbe4
+ 7f79/
+LOCATION:Pully
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Renouvellement du parc des imprimantes multifonctions
+  de la Ville de Pully et de ses partenaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

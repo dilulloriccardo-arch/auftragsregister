@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:459f3229-1c64-4772-bcf4-7b6dea446964-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:1
+DTSTART:20261120T140000Z
+SUMMARY:Délai de remise : CFF\, Programme Léman 2030 – Renouvellement
+  intégral de la ligne du Mandement (RIM) Lot C – Maintien de la substan
+ ce Satigny – Vernier-Meyrin Cargo\, travaux GC 2027
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Infrastru
+ ktur – Einkauf\, Supply Chain und Produktion\, Einkauf Bauprojekte Regio
+ n West\nDélai de remise : 20.11.2026\, 15 h 00\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/459f3229-1c64-4772-bcf4-7b6dea446
+ 964/\nPublication officielle : https://www.simap.ch/fr/project-detail/45
+ 9f3229-1c64-4772-bcf4-7b6dea446964
+URL:https://auftragsregister.ch/fr/auftrag/459f3229-1c64-4772-bcf4-7b6dea44
+ 6964/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFF\, Programme Léman 2030 – Renouvelle
+ ment intégral de la ligne du Mandement (RIM) Lot C – Maintien de la sub
+ stance Satigny – Vernier-Meyrin Cargo\, travaux GC 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f589be44-4c1f-426d-8d46-6a93aefaec25-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261117T100000Z
+SUMMARY:Délai de remise : Intégration de la solution SAP Analytics Clou
+ d for Planning et SAP Datasphere pour la République et Canton de Neuchât
+ el
+DESCRIPTION:Acheteur public : Service Financier (SFIN) de la République 
+ et Canton de Neuchâtel\nDélai de remise : 17.11.2026\, 11 h 00\nDa
+ ns le registre : https://auftragsregister.ch/fr/auftrag/f589be44-4c1f-42
+ 6d-8d46-6a93aefaec25/\nPublication officielle : https://www.simap.ch/fr/
+ project-detail/f589be44-4c1f-426d-8d46-6a93aefaec25
+URL:https://auftragsregister.ch/fr/auftrag/f589be44-4c1f-426d-8d46-6a93aefa
+ ec25/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Intégration de la solution SAP Analytics 
+ Cloud for Planning et SAP Datasphere pour la République et Canton de Neuc
+ hâtel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

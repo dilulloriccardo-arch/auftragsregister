@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a142a26-35a3-4636-b9cb-1d5d9340fae6-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Délai de remise : Balexert – Travaux CVC phase 2
+DESCRIPTION:Acheteur public : Services Industriels de Genève (SIG) Direc
+ tion Projets Industriels et Solutions Digitales\nDélai de remise : 20.1
+ 1.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/5a142a26-35a3-4636-b9cb-1d5d9340fae6/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/5a142a26-35a3-4636-b9cb-1d5d9340fae
+ 6
+URL:https://auftragsregister.ch/fr/auftrag/5a142a26-35a3-4636-b9cb-1d5d9340
+ fae6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Balexert – Travaux CVC phase 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

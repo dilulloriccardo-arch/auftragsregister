@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8d9448f5-5661-4491-be7c-52b0affb2222-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261111T130000Z
+SUMMARY:Scadenza: Integrales Infrastrukturprojekt Robert-Durrer-Strasse I P
+ rojektingenieur
+DESCRIPTION:Ente pubblico: Gemeinde Stans\, Bauamt\nScadenza: 11.11.2026\, 
+ 14:00\nNel registro: https://auftragsregister.ch/it/auftrag/8d9448f5-5661-
+ 4491-be7c-52b0affb2222/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/8d9448f5-5661-4491-be7c-52b0affb2222
+URL:https://auftragsregister.ch/it/auftrag/8d9448f5-5661-4491-be7c-52b0affb
+ 2222/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Integrales Infrastrukturprojekt Robert-Durrer-Strasse
+  I Projektingenieur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

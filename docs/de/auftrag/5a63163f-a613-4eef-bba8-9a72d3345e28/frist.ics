@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a63163f-a613-4eef-bba8-9a72d3345e28-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Eingabefrist: Sanierung\, St. Ursussteig - Baden
+DESCRIPTION:Auftraggeber: Stadt Baden\, Bau\nEingabefrist: 13.11.2026\, 12.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5a63163f-a613
+ -4eef-bba8-9a72d3345e28/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/5a63163f-a613-4eef-bba8-9a72d3345e28
+URL:https://auftragsregister.ch/de/auftrag/5a63163f-a613-4eef-bba8-9a72d334
+ 5e28/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung\, St. Ursussteig - Baden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

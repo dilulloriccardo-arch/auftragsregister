@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a329be6-a9a9-43af-89f8-82ae17ab8576-frist@auftragsregister.ch
+DTSTAMP:20260820T000000Z
+SEQUENCE:0
+DTSTART:20261029T150000Z
+SUMMARY:Submission deadline: Rete Tram-Treno del Luganese (RTTL) - Étape p
+ rioritaire – Lot 102 : Tranchée du portail ouest
+DESCRIPTION:Public buyer: Rete Tram-Treno del Luganese SA (RTTL SA)\nSubmis
+ sion deadline: 29 Oct 2026\, 16:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/3a329be6-a9a9-43af-89f8-82ae17ab8576/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/3a329be6-a9a9-43af-89f8-82ae
+ 17ab8576
+URL:https://auftragsregister.ch/en/auftrag/3a329be6-a9a9-43af-89f8-82ae17ab
+ 8576/
+LOCATION:Lugano e Bioggio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rete Tram-Treno del Luganese (RTTL) - Éta
+ pe prioritaire – Lot 102 : Tranchée du portail ouest
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

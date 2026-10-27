@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d507b1c-6bd1-4be4-85ca-661d78722cf4-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Délai de remise : Bau Nr. 22657 - Friesenbergstrasse Haltestelle
+  Höfliweg
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Realisierung\nDélai de r
+ emise : 12.11.2026\, 16 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/6d507b1c-6bd1-4be4-85ca-661d78722cf4/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/6d507b1c-6bd1-4be4-85
+ ca-661d78722cf4
+URL:https://auftragsregister.ch/fr/auftrag/6d507b1c-6bd1-4be4-85ca-661d7872
+ 2cf4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bau Nr. 22657 - Friesenbergstrasse Haltest
+ elle Höfliweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

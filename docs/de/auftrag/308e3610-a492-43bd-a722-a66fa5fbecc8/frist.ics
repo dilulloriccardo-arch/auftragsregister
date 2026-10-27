@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:308e3610-a492-43bd-a722-a66fa5fbecc8-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Eingabefrist: Mandat d’assistance à la maîtrise d’ouvrage (AM
+ O)
+DESCRIPTION:Auftraggeber: Etat de Genève - Département du territoire (DT)
+  - Office de l'urbanisme\nEingabefrist: 09.11.2026\, 11.00 Uhr\nIm Regist
+ er: https://auftragsregister.ch/de/auftrag/308e3610-a492-43bd-a722-a66fa5f
+ becc8/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/308e3
+ 610-a492-43bd-a722-a66fa5fbecc8
+URL:https://auftragsregister.ch/de/auftrag/308e3610-a492-43bd-a722-a66fa5fb
+ ecc8/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Mandat d’assistance à la maîtrise d’ouvrage
+  (AMO)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

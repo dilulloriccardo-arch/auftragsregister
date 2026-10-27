@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:21686198-2bde-49e5-8cbd-b1ab83a213ad-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Submission deadline: BKP 230 Elektroanlagen\, Mieterausbau Baarerst
+ rasse 57-59\, Zug
+DESCRIPTION:Public buyer: Hochbauamt des Kantons Zug\nSubmission deadline: 
+ 6 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/21686198-2bde-49e5-8cbd-b1ab83a213ad/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/21686198-2bde-49e5-8cbd-b1ab83a213ad
+URL:https://auftragsregister.ch/en/auftrag/21686198-2bde-49e5-8cbd-b1ab83a2
+ 13ad/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 230 Elektroanlagen\, Mieterausbau Baar
+ erstrasse 57-59\, Zug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

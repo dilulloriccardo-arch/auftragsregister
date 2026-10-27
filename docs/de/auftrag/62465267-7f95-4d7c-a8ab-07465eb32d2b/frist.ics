@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62465267-7f95-4d7c-a8ab-07465eb32d2b-frist@auftragsregister.ch
+DTSTAMP:20260817T000000Z
+SEQUENCE:0
+DTSTART:20270125T160000Z
+SUMMARY:Eingabefrist: Areal "Tschuopis" in Littau Luzern: Abgabe im Baurech
+ t an gemeinnützige Wohnbauträger
+DESCRIPTION:Auftraggeber: Stadt Luzern\, Immobilien\nEingabefrist: 25.01.20
+ 27\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/62465
+ 267-7f95-4d7c-a8ab-07465eb32d2b/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/62465267-7f95-4d7c-a8ab-07465eb32d2b
+URL:https://auftragsregister.ch/de/auftrag/62465267-7f95-4d7c-a8ab-07465eb3
+ 2d2b/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Areal "Tschuopis" in Littau Luzern: Abgabe im Bau
+ recht an gemeinnützige Wohnbauträger
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

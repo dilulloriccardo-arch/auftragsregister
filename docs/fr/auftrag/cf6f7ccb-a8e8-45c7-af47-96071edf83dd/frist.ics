@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf6f7ccb-a8e8-45c7-af47-96071edf83dd-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261105T100000Z
+SUMMARY:Délai de remise : Plateforme de Data Lakehouse institutionnelle 
+ pour les HUG
+DESCRIPTION:Acheteur public : Centrale d'achats et d'ingénierie biomédi
+ cale Vaud-Genève (CAIB)\nDélai de remise : 05.11.2026\, 11 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/cf6f7ccb-a8e8-4
+ 5c7-af47-96071edf83dd/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/cf6f7ccb-a8e8-45c7-af47-96071edf83dd
+URL:https://auftragsregister.ch/fr/auftrag/cf6f7ccb-a8e8-45c7-af47-96071edf
+ 83dd/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Plateforme de Data Lakehouse institutionne
+ lle pour les HUG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2db35a0f-8b7c-46fc-b9bc-9fdece6b90ae-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Eingabefrist: Mise en conformité des arrêts de bus selon la loi L
+ Hand
+DESCRIPTION:Auftraggeber: Service technique communal\nEingabefrist: 23.11.2
+ 026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2db3
+ 5a0f-8b7c-46fc-b9bc-9fdece6b90ae/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/2db35a0f-8b7c-46fc-b9bc-9fdece6b90ae
+URL:https://auftragsregister.ch/de/auftrag/2db35a0f-8b7c-46fc-b9bc-9fdece6b
+ 90ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Mise en conformité des arrêts de bus selon la l
+ oi LHand
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

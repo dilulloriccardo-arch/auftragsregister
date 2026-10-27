@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3fdd0c41-94f8-4942-9334-5628fbeb7e56-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Délai de remise : Zone d'infrastructures Liebegg\, Gränichen - 
+ Services de planification générale
+DESCRIPTION:Acheteur public : Kanton Aargau Departement Finanzen und Ress
+ ourcen Immobilien Aargau\nDélai de remise : 09.11.2026\nDans le registr
+ e : https://auftragsregister.ch/fr/auftrag/3fdd0c41-94f8-4942-9334-5628f
+ beb7e56/\nPublication officielle : https://www.simap.ch/fr/project-detai
+ l/3fdd0c41-94f8-4942-9334-5628fbeb7e56
+URL:https://auftragsregister.ch/fr/auftrag/3fdd0c41-94f8-4942-9334-5628fbeb
+ 7e56/
+LOCATION:Gränichen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Zone d'infrastructures Liebegg\, Gräniche
+ n - Services de planification générale
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

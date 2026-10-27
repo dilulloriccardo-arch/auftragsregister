@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:431c02ff-fdf2-4238-a6d6-84c1ff34b7c2-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20270114T225900Z
+SUMMARY:Submission deadline: MP-130008 N02 SBT\, 2. Instandsetzung - BL BSA
+ +Bau Teil I
+DESCRIPTION:Public buyer: Bundesamt für Strassen ASTRA -Abteilung Strassen
+ infrastruktur-Ost - F3 Zofingen\nSubmission deadline: 14 Jan 2027\, 23:5
+ 9\nIn the register: https://auftragsregister.ch/en/auftrag/431c02ff-fdf2-4
+ 238-a6d6-84c1ff34b7c2/\nOfficial publication: https://www.simap.ch/en/proj
+ ect-detail/431c02ff-fdf2-4238-a6d6-84c1ff34b7c2
+URL:https://auftragsregister.ch/en/auftrag/431c02ff-fdf2-4238-a6d6-84c1ff34
+ b7c2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-130008 N02 SBT\, 2. Instandsetzung - BL
+  BSA+Bau Teil I
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

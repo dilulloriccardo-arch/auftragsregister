@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a95896cf-5755-438c-92da-e982e2936ea8-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261201T225900Z
+SUMMARY:Scadenza: Servizi per le piattaforme geografiche ArcGIS
+DESCRIPTION:Ente pubblico: ETH Zürich - Abt. Procurement Services VPIN\nSc
+ adenza: 01.12.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/a
+ uftrag/a95896cf-5755-438c-92da-e982e2936ea8/\nPubblicazione ufficiale: htt
+ ps://www.simap.ch/it/project-detail/a95896cf-5755-438c-92da-e982e2936ea8
+URL:https://auftragsregister.ch/it/auftrag/a95896cf-5755-438c-92da-e982e293
+ 6ea8/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Servizi per le piattaforme geografiche ArcGIS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

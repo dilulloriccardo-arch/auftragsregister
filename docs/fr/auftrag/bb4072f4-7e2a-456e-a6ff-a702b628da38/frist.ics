@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb4072f4-7e2a-456e-a6ff-a702b628da38-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261124T130000Z
+SUMMARY:Délai de remise : CONCORSO PER LA FORNITURA DI TRAVERSE IN ACCIA
+ IO PERIODO 2027-2028
+DESCRIPTION:Acheteur public : Società per le Ferrovie Autolinee Regional
+ i Ticinesi (FART SA)\nDélai de remise : 24.11.2026\, 14 h 00\nDans 
+ le registre : https://auftragsregister.ch/fr/auftrag/bb4072f4-7e2a-456e-
+ a6ff-a702b628da38/\nPublication officielle : https://www.simap.ch/fr/pro
+ ject-detail/bb4072f4-7e2a-456e-a6ff-a702b628da38
+URL:https://auftragsregister.ch/fr/auftrag/bb4072f4-7e2a-456e-a6ff-a702b628
+ da38/
+LOCATION:Tegna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CONCORSO PER LA FORNITURA DI TRAVERSE IN A
+ CCIAIO PERIODO 2027-2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

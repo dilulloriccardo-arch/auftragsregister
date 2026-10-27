@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57c6b8b4-ed43-42c5-a3b5-76adfffc6082-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261111T100000Z
+SUMMARY:Eingabefrist: Ozonung (Ozongenerator\, Begasungsinstallationen\, Re
+ stozonvernichter)
+DESCRIPTION:Auftraggeber: Zweckverband ARA Rorguet\nEingabefrist: 11.11.202
+ 6\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/57c6b8
+ b4-ed43-42c5-a3b5-76adfffc6082/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/57c6b8b4-ed43-42c5-a3b5-76adfffc6082
+URL:https://auftragsregister.ch/de/auftrag/57c6b8b4-ed43-42c5-a3b5-76adfffc
+ 6082/
+LOCATION:Meilen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ozonung (Ozongenerator\, Begasungsinstallationen\
+ , Restozonvernichter)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5b1b8139-9223-46fa-9bc5-b1b3da21196a-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Scadenza: BAV 60878 Anlauf- und Beratungsstelle SEB\, Bäckerstrass
+ e 7\, Instandsetzung\, Generalplanungsleistungen (unter Vorbehalt der Kred
+ itgenehmigung)
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 17.11
+ .2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/5b1b81
+ 39-9223-46fa-9bc5-b1b3da21196a/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/5b1b8139-9223-46fa-9bc5-b1b3da21196a
+URL:https://auftragsregister.ch/it/auftrag/5b1b8139-9223-46fa-9bc5-b1b3da21
+ 196a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 60878 Anlauf- und Beratungsstelle SEB\, Bäckerst
+ rasse 7\, Instandsetzung\, Generalplanungsleistungen (unter Vorbehalt der 
+ Kreditgenehmigung)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

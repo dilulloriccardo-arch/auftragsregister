@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:04a3afba-39ac-4b75-8747-eb6c641bccb4-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261111T130000Z
+SUMMARY:Eingabefrist: Concorso per lavori da Sottofondi e pavimenti cementi
+ zi per l'edificazione del nuovo stabile PRAGMA presso il Centro di Formazi
+ one Professionale SSIC a Gordola (CFP)
+DESCRIPTION:Auftraggeber: Società Svizzera Impresari Costruttori - Sezione
+  Ticino (SSIC-TI)\nEingabefrist: 11.11.2026\, 14.00 Uhr\nIm Register: htt
+ ps://auftragsregister.ch/de/auftrag/04a3afba-39ac-4b75-8747-eb6c641bccb4/\
+ nAmtliche Publikation: https://www.simap.ch/de/project-detail/04a3afba-39a
+ c-4b75-8747-eb6c641bccb4
+URL:https://auftragsregister.ch/de/auftrag/04a3afba-39ac-4b75-8747-eb6c641b
+ ccb4/
+LOCATION:Gordola
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Concorso per lavori da Sottofondi e pavimenti cem
+ entizi per l'edificazione del nuovo stabile PRAGMA presso il Centro di For
+ mazione Professionale SSIC a Gordola (CFP)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

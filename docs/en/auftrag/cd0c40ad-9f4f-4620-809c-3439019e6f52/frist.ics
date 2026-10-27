@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cd0c40ad-9f4f-4620-809c-3439019e6f52-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261112T160000Z
+SUMMARY:Submission deadline: Schweissen\, Schleifen und Messen Gleisnetz
+DESCRIPTION:Public buyer: Verkehrsbetriebe Zürich (VBZ)\nSubmission deadli
+ ne: 12 Nov 2026\, 17:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/cd0c40ad-9f4f-4620-809c-3439019e6f52/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/cd0c40ad-9f4f-4620-809c-3439019e6f52
+URL:https://auftragsregister.ch/en/auftrag/cd0c40ad-9f4f-4620-809c-3439019e
+ 6f52/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schweissen\, Schleifen und Messen Gleisnet
+ z
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

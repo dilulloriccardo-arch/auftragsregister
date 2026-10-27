@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92275808-024d-4e18-a363-909b6756316c-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Submission deadline: temporary heating solution\, Dammstrasse 25\, 
+ Zug
+DESCRIPTION:Public buyer: Einwohnergemeinde Zug\, Finanzdepartement/Abteilu
+ ng Immobilien\nSubmission deadline: 16 Nov 2026\, 16:00\nIn the register
+ : https://auftragsregister.ch/en/auftrag/92275808-024d-4e18-a363-909b67563
+ 16c/\nOfficial publication: https://www.simap.ch/en/project-detail/9227580
+ 8-024d-4e18-a363-909b6756316c
+URL:https://auftragsregister.ch/en/auftrag/92275808-024d-4e18-a363-909b6756
+ 316c/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: temporary heating solution\, Dammstrasse 2
+ 5\, Zug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f9f5384-707d-4e14-aa56-674017e6f87a-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261028T150000Z
+SUMMARY:Scadenza: BAV 22478 Wohnsiedlung Luchswiese\, Ersatzneubau - BKP 27
+ 3.3 Allgemeine Schreinerarbeiten
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 28.10
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/5f9f53
+ 84-707d-4e14-aa56-674017e6f87a/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/5f9f5384-707d-4e14-aa56-674017e6f87a
+URL:https://auftragsregister.ch/it/auftrag/5f9f5384-707d-4e14-aa56-674017e6
+ f87a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 22478 Wohnsiedlung Luchswiese\, Ersatzneubau - BK
+ P 273.3 Allgemeine Schreinerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

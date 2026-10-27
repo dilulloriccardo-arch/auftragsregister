@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e598a789-e6af-412d-974b-58bfaa7dd5e9-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Submission deadline: 13043.10 / 250-01 Sanitäranlagen\, Instandset
+ zung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontrolle O
+ berrieden
+DESCRIPTION:Public buyer: Hochbauamt Kanton Zürich\nSubmission deadline: 2
+ 0 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/e598a789-e6af-412d-974b-58bfaa7dd5e9/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/e598a789-e6af-412d-974b-58bfaa7dd5e9
+URL:https://auftragsregister.ch/en/auftrag/e598a789-e6af-412d-974b-58bfaa7d
+ d5e9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 13043.10 / 250-01 Sanitäranlagen\, Instan
+ dsetzung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontrol
+ le Oberrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:42bf514a-55d8-4d0b-b3c7-444cc8d40156-frist@auftragsregister.ch
+DTSTAMP:20261025T000000Z
+SEQUENCE:0
+DTSTART:20270115T100000Z
+SUMMARY:Submission deadline: Pächterried Provisorium 2027 (Modulbau\, Cont
+ ainer)\, Regensdorf
+DESCRIPTION:Public buyer: Gemeinde Regensdorf (Landis AG)\nSubmission deadl
+ ine: 15 Jan 2027\, 11:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/42bf514a-55d8-4d0b-b3c7-444cc8d40156/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/42bf514a-55d8-4d0b-b3c7-444cc8d40156
+URL:https://auftragsregister.ch/en/auftrag/42bf514a-55d8-4d0b-b3c7-444cc8d4
+ 0156/
+LOCATION:Regensdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Pächterried Provisorium 2027 (Modulbau\, 
+ Container)\, Regensdorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d421f039-db62-43b4-b75b-da91d224d279-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Scadenza: Regionaler Rahmenvertrag Brandschutzbekleidung Werdenberg
+DESCRIPTION:Ente pubblico: Zweckverband Feuerwehr Werdenberg Süd\, Feuerwe
+ hr Grabs\, Feuerwehr Gams und Feuerwehr Sennwald (Werdenberger Feuerwehrve
+ rband)\nScadenza: 23.11.2026\, 12:00\nNel registro: https://auftragsregist
+ er.ch/it/auftrag/d421f039-db62-43b4-b75b-da91d224d279/\nPubblicazione uffi
+ ciale: https://www.simap.ch/it/project-detail/d421f039-db62-43b4-b75b-da91
+ d224d279
+URL:https://auftragsregister.ch/it/auftrag/d421f039-db62-43b4-b75b-da91d224
+ d279/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Regionaler Rahmenvertrag Brandschutzbekleidung Werden
+ berg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

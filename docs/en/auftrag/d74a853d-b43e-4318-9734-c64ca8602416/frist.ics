@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d74a853d-b43e-4318-9734-c64ca8602416-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Submission deadline: Bern\, Bremgartenstrasse 131-137\, Gymnasium N
+ eufeld\, Instandstellung und Ersatzneubau\, BKP 113 Sanierung Altlasten TP
+  1-2
+DESCRIPTION:Public buyer: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nSubmission deadline: 23 Nov 2026\, 23:59\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/d74a853d-b43e-4318-9734-c64ca8602416/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/d74a853d-b43
+ e-4318-9734-c64ca8602416
+URL:https://auftragsregister.ch/en/auftrag/d74a853d-b43e-4318-9734-c64ca860
+ 2416/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bern\, Bremgartenstrasse 131-137\, Gymnasi
+ um Neufeld\, Instandstellung und Ersatzneubau\, BKP 113 Sanierung Altlaste
+ n TP 1-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

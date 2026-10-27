@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f513bd73-c334-4455-8e59-3f8317e495a9-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261125T100000Z
+SUMMARY:Eingabefrist: Solution fiscale intégrée pour les personnes morale
+ s et les personnes physiques : mise en œuvre\, maintenance et assistance
+DESCRIPTION:Auftraggeber: République et Canton du Jura - Service des contr
+ ibutions\nEingabefrist: 25.11.2026\, 11.00 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/f513bd73-c334-4455-8e59-3f8317e495a9/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/f513bd73-c334-4455-8e
+ 59-3f8317e495a9
+URL:https://auftragsregister.ch/de/auftrag/f513bd73-c334-4455-8e59-3f8317e4
+ 95a9/
+LOCATION:Delémont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Solution fiscale intégrée pour les personnes mo
+ rales et les personnes physiques : mise en œuvre\, maintenance et assista
+ nce
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

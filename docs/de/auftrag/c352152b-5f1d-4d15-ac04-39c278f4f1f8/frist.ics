@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c352152b-5f1d-4d15-ac04-39c278f4f1f8-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T100000Z
+SUMMARY:Eingabefrist: Sportzentrum Verbier - CFC 281.4 Innenverkleidungen a
+ us Stein
+DESCRIPTION:Auftraggeber: Quartal Sàrl\nEingabefrist: 18.11.2026\, 11.00 
+ Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c352152b-5f1d-4d1
+ 5-ac04-39c278f4f1f8/\nAmtliche Publikation: https://www.simap.ch/de/projec
+ t-detail/c352152b-5f1d-4d15-ac04-39c278f4f1f8
+URL:https://auftragsregister.ch/de/auftrag/c352152b-5f1d-4d15-ac04-39c278f4
+ f1f8/
+LOCATION:Verbier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sportzentrum Verbier - CFC 281.4 Innenverkleidung
+ en aus Stein
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

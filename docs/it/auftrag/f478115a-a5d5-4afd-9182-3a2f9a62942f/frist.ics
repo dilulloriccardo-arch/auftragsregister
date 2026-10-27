@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f478115a-a5d5-4afd-9182-3a2f9a62942f-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Scadenza: Remplacement de l'éclairage de 14 terrains et places de 
+ sport à Neuchâtel
+DESCRIPTION:Ente pubblico: Ville de Neuchâtel\nScadenza: 06.11.2026\, 12:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/f478115a-a5d5-4afd
+ -9182-3a2f9a62942f/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/f478115a-a5d5-4afd-9182-3a2f9a62942f
+URL:https://auftragsregister.ch/it/auftrag/f478115a-a5d5-4afd-9182-3a2f9a62
+ 942f/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Remplacement de l'éclairage de 14 terrains et places
+  de sport à Neuchâtel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

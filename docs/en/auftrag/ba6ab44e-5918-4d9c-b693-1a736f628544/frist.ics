@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ba6ab44e-5918-4d9c-b693-1a736f628544-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Submission deadline: Village School Campus\, Existing Building – 
+ BKP 230 Electrical Systems
+DESCRIPTION:Public buyer: ARGE GP SCD - c/o Rapp AG\nSubmission deadline: 2
+  Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/ba6ab44e-5918-4d9c-b693-1a736f628544/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/ba6ab44e-5918-4d9c-b693-1a736f628544
+URL:https://auftragsregister.ch/en/auftrag/ba6ab44e-5918-4d9c-b693-1a736f62
+ 8544/
+LOCATION:Binningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Village School Campus\, Existing Building 
+ – BKP 230 Electrical Systems
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

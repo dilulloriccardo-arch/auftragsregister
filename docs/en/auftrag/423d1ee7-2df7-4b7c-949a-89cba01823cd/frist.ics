@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:423d1ee7-2df7-4b7c-949a-89cba01823cd-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Submission deadline: Integrales Risikomanagement Strassen IRM-S
+DESCRIPTION:Public buyer: Tiefbauamt Graubünden\nSubmission deadline: 11 
+ Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag
+ /423d1ee7-2df7-4b7c-949a-89cba01823cd/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/423d1ee7-2df7-4b7c-949a-89cba01823cd
+URL:https://auftragsregister.ch/en/auftrag/423d1ee7-2df7-4b7c-949a-89cba018
+ 23cd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Integrales Risikomanagement Strassen IRM-S
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

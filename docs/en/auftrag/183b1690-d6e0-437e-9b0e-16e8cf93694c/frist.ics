@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:183b1690-d6e0-437e-9b0e-16e8cf93694c-frist@auftragsregister.ch
+DTSTAMP:20260907T000000Z
+SEQUENCE:0
+DTSTART:20261030T225900Z
+SUMMARY:Submission deadline: Baumeisterarbeiten - Unterwerk Botterens
+DESCRIPTION:Public buyer: Swissgrid AG - Engineering & Construction\nSubmis
+ sion deadline: 30 Oct 2026\, 23:59\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/183b1690-d6e0-437e-9b0e-16e8cf93694c/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/183b1690-d6e0-437e-9b0e-16e8
+ cf93694c
+URL:https://auftragsregister.ch/en/auftrag/183b1690-d6e0-437e-9b0e-16e8cf93
+ 694c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Baumeisterarbeiten - Unterwerk Botterens
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

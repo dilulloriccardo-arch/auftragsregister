@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6755de87-3a48-461a-bb15-8659b5a697ac-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261118T225500Z
+SUMMARY:Scadenza: Erneuerung Intranet für die Gerichte und Notariate
+DESCRIPTION:Ente pubblico: Obergericht des Kantons Zürich\nScadenza: 18.11
+ .2026\, 23:55\nNel registro: https://auftragsregister.ch/it/auftrag/6755de
+ 87-3a48-461a-bb15-8659b5a697ac/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/6755de87-3a48-461a-bb15-8659b5a697ac
+URL:https://auftragsregister.ch/it/auftrag/6755de87-3a48-461a-bb15-8659b5a6
+ 97ac/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erneuerung Intranet für die Gerichte und Notariate
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

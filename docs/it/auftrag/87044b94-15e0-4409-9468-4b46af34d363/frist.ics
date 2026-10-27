@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87044b94-15e0-4409-9468-4b46af34d363-frist@auftragsregister.ch
+DTSTAMP:20260828T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Scadenza: Lieferung eines Tanklöschfahrzeugs (Kat. 3) für die Feu
+ erwehr Bad Ragaz
+DESCRIPTION:Ente pubblico: Politische Gemeinde Bad Ragaz\nScadenza: 29.11.2
+ 026\nNel registro: https://auftragsregister.ch/it/auftrag/87044b94-15e0-44
+ 09-9468-4b46af34d363/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/87044b94-15e0-4409-9468-4b46af34d363
+URL:https://auftragsregister.ch/it/auftrag/87044b94-15e0-4409-9468-4b46af34
+ d363/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Lieferung eines Tanklöschfahrzeugs (Kat. 3) für die
+  Feuerwehr Bad Ragaz
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

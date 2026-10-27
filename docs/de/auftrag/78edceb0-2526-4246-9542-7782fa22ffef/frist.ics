@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78edceb0-2526-4246-9542-7782fa22ffef-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Eingabefrist: USZ Campus MITTE 1|2 / BKP 273.19 Türen Paket 9 Bran
+ dschutztüren aus Holz (OV)
+DESCRIPTION:Auftraggeber: Universitätsspital Zürich\nEingabefrist: 15.12.
+ 2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/78e
+ dceb0-2526-4246-9542-7782fa22ffef/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/78edceb0-2526-4246-9542-7782fa22ffef
+URL:https://auftragsregister.ch/de/auftrag/78edceb0-2526-4246-9542-7782fa22
+ ffef/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: USZ Campus MITTE 1|2 / BKP 273.19 Türen Paket 9 
+ Brandschutztüren aus Holz (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

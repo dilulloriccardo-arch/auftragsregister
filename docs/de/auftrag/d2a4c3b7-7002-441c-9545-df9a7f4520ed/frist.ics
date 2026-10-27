@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2a4c3b7-7002-441c-9545-df9a7f4520ed-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261203T090000Z
+SUMMARY:Eingabefrist: Appel d'offres pour l'attribution des contrats d'assu
+ rance « Biens et risques techniques tous risques »
+DESCRIPTION:Auftraggeber: Comune di Ascona\nEingabefrist: 03.12.2026\, 10.0
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d2a4c3b7-7002-
+ 441c-9545-df9a7f4520ed/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/d2a4c3b7-7002-441c-9545-df9a7f4520ed
+URL:https://auftragsregister.ch/de/auftrag/d2a4c3b7-7002-441c-9545-df9a7f45
+ 20ed/
+LOCATION:Ascona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Appel d'offres pour l'attribution des contrats d'
+ assurance « Biens et risques techniques tous risques »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

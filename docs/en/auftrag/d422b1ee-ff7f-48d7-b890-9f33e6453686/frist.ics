@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d422b1ee-ff7f-48d7-b890-9f33e6453686-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261113T110000Z
+SUMMARY:Submission deadline: Contrat-cadre multi-adjudicataires d’acquisi
+ tion d’équipements IT
+DESCRIPTION:Public buyer: Fédération des Hôpitaux Vaudois Informatique (
+ eraneos)\nSubmission deadline: 13 Nov 2026\, 12:00\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/d422b1ee-ff7f-48d7-b890-9f33e6453686/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/d422b1ee-ff7
+ f-48d7-b890-9f33e6453686
+URL:https://auftragsregister.ch/en/auftrag/d422b1ee-ff7f-48d7-b890-9f33e645
+ 3686/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Contrat-cadre multi-adjudicataires d’acq
+ uisition d’équipements IT
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

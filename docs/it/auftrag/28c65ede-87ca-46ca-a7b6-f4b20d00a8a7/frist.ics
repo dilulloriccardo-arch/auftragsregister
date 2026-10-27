@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28c65ede-87ca-46ca-a7b6-f4b20d00a8a7-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Scadenza: Dienstleistung für Microsoft Power Apps und Power Automa
+ te
+DESCRIPTION:Ente pubblico: Dienst für Informatikplanung\nScadenza: 27.11.2
+ 026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/28c65ede
+ -87ca-46ca-a7b6-f4b20d00a8a7/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/28c65ede-87ca-46ca-a7b6-f4b20d00a8a7
+URL:https://auftragsregister.ch/it/auftrag/28c65ede-87ca-46ca-a7b6-f4b20d00
+ a8a7/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Dienstleistung für Microsoft Power Apps und Power Au
+ tomate
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

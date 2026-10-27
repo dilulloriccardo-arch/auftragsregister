@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3eb82405-1d9e-4872-9468-a665559ebe58-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Eingabefrist: Ecole de Puplinge\, AO-CFC273 : Travaux de menuiserie
+  (armoires\, portes et menuiserie courante)
+DESCRIPTION:Auftraggeber: Commune de Puplinge\nEingabefrist: 03.11.2026\, 1
+ 2.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3eb82405-1d
+ 9e-4872-9468-a665559ebe58/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/3eb82405-1d9e-4872-9468-a665559ebe58
+URL:https://auftragsregister.ch/de/auftrag/3eb82405-1d9e-4872-9468-a665559e
+ be58/
+LOCATION:Puplinge
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ecole de Puplinge\, AO-CFC273 : Travaux de menuis
+ erie (armoires\, portes et menuiserie courante)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bdc0d6b2-9a3e-4de7-903f-c1d686a53b69-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261118T160000Z
+SUMMARY:Eingabefrist: Traversée Village de Le Vaud - Travaux Génie Civil
+DESCRIPTION:Auftraggeber: Commune de Le Vaud\nEingabefrist: 18.11.2026\, 17
+ .00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/bdc0d6b2-9a3
+ e-4de7-903f-c1d686a53b69/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/bdc0d6b2-9a3e-4de7-903f-c1d686a53b69
+URL:https://auftragsregister.ch/de/auftrag/bdc0d6b2-9a3e-4de7-903f-c1d686a5
+ 3b69/
+LOCATION:Le vaud
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Traversée Village de Le Vaud - Travaux Génie Ci
+ vil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

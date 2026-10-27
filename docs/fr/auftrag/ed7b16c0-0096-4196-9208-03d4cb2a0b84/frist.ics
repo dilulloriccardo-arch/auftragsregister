@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed7b16c0-0096-4196-9208-03d4cb2a0b84-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261113T160000Z
+SUMMARY:Délai de remise : Ersatzneubau Reservoir Verschlinis - Baumeiste
+ r
+DESCRIPTION:Acheteur public : Elektro- und Wasserkorporation Wartau\nDél
+ ai de remise : 13.11.2026\, 17 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/ed7b16c0-0096-4196-9208-03d4cb2a0b84/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/ed7b16c0-0096-
+ 4196-9208-03d4cb2a0b84
+URL:https://auftragsregister.ch/fr/auftrag/ed7b16c0-0096-4196-9208-03d4cb2a
+ 0b84/
+LOCATION:Fontnas
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatzneubau Reservoir Verschlinis - Baume
+ ister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

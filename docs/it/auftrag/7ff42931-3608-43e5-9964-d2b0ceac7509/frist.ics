@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ff42931-3608-43e5-9964-d2b0ceac7509-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:0
+DTSTART:20261029T225900Z
+SUMMARY:Scadenza: N02\, Secondo tubo San Gottardo (2TG Röhre Nord und Gall
+ eria di Airolo) und N02 Risanamento primo tubo San Gottardo (1TG Röhre S
+ üd) Lotto 8306 BMA edifici
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA -Abteilung Strasse
+ ninfrastruktur-Ost - F3 Zofingen\nScadenza: 29.10.2026\, 23:59\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/7ff42931-3608-43e5-9964-d2b0cea
+ c7509/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/7f
+ f42931-3608-43e5-9964-d2b0ceac7509
+URL:https://auftragsregister.ch/it/auftrag/7ff42931-3608-43e5-9964-d2b0ceac
+ 7509/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N02\, Secondo tubo San Gottardo (2TG Röhre Nord und 
+ Galleria di Airolo) und N02 Risanamento primo tubo San Gottardo (1TG Röhr
+ e Süd) Lotto 8306 BMA edifici
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

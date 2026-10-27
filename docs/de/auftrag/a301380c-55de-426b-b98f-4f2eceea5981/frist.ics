@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a301380c-55de-426b-b98f-4f2eceea5981-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Eingabefrist: Kantonsschule Willisau\, Naphthalinsanierung Trakt a\
+ , BKP 344 Lüftungsanlage Chemielabor
+DESCRIPTION:Auftraggeber: Kanton Luzern\, Dienststelle Immobilien\nEingabef
+ rist: 17.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/a301380c-55de-426b-b98f-4f2eceea5981/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/a301380c-55de-426b-b98f-4f2eceea5981
+URL:https://auftragsregister.ch/de/auftrag/a301380c-55de-426b-b98f-4f2eceea
+ 5981/
+LOCATION:Willisau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kantonsschule Willisau\, Naphthalinsanierung Trak
+ t a\, BKP 344 Lüftungsanlage Chemielabor
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

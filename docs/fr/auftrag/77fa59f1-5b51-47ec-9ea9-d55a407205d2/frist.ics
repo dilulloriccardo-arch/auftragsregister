@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:77fa59f1-5b51-47ec-9ea9-d55a407205d2-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : Ausschreibung Instandhaltung\, Instandsetzung 
+ - Haushaltgeräte / Geräteservice – KAT.017
+DESCRIPTION:Acheteur public : ETHOS Immobilien GmbH\nDélai de remise :
+  09.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/77fa59f1-5b51-47ec-9ea9-d55a407205d2/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/77fa59f1-5b51-47ec-9ea9-d55a40
+ 7205d2
+URL:https://auftragsregister.ch/fr/auftrag/77fa59f1-5b51-47ec-9ea9-d55a4072
+ 05d2/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung Instandhaltung\, Instandsetz
+ ung - Haushaltgeräte / Geräteservice – KAT.017
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

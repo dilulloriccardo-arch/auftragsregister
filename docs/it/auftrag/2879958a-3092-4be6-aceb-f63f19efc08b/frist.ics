@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2879958a-3092-4be6-aceb-f63f19efc08b-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Scadenza: Rénovation école du Bosson - Automatismes du bâtiment
+DESCRIPTION:Ente pubblico: Ville d'Onex (Bureau d'architectes Burckhardt Ar
+ chitecture SA)\nScadenza: 16.11.2026\, 12:00\nNel registro: https://auftra
+ gsregister.ch/it/auftrag/2879958a-3092-4be6-aceb-f63f19efc08b/\nPubblicazi
+ one ufficiale: https://www.simap.ch/it/project-detail/2879958a-3092-4be6-a
+ ceb-f63f19efc08b
+URL:https://auftragsregister.ch/it/auftrag/2879958a-3092-4be6-aceb-f63f19ef
+ c08b/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rénovation école du Bosson - Automatismes du bâtim
+ ent
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

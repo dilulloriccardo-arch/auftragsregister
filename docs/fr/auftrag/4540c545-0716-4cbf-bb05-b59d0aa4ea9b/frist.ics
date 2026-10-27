@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4540c545-0716-4cbf-bb05-b59d0aa4ea9b-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T225901Z
+SUMMARY:Délai de remise : AS_2026_001 Partenaire de services pour les sy
+ stèmes UPS et de refroidissement des infrastructures du centre de donnée
+ s de la FHNW
+DESCRIPTION:Acheteur public : Fachhochschule Nordwestschweiz FHNW\nDélai
+  de remise : 27.11.2026\, 23 h 59\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/4540c545-0716-4cbf-bb05-b59d0aa4ea9b/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/4540c545-0716-4c
+ bf-bb05-b59d0aa4ea9b
+URL:https://auftragsregister.ch/fr/auftrag/4540c545-0716-4cbf-bb05-b59d0aa4
+ ea9b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AS_2026_001 Partenaire de services pour le
+ s systèmes UPS et de refroidissement des infrastructures du centre de don
+ nées de la FHNW
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

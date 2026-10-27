@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf1c8d91-725c-4afb-8263-14d3f4225c65-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Scadenza: Projekt Mitholz: Räumung ehemaliges Munitionslager\, Tes
+ tanlage Materialbewirtschaftung
+DESCRIPTION:Ente pubblico: armasuisse Immobilien\nScadenza: 07.12.2026\, 23
+ :59\nNel registro: https://auftragsregister.ch/it/auftrag/cf1c8d91-725c-4a
+ fb-8263-14d3f4225c65/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/cf1c8d91-725c-4afb-8263-14d3f4225c65
+URL:https://auftragsregister.ch/it/auftrag/cf1c8d91-725c-4afb-8263-14d3f422
+ 5c65/
+LOCATION:Mitholz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Projekt Mitholz: Räumung ehemaliges Munitionslager\,
+  Testanlage Materialbewirtschaftung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

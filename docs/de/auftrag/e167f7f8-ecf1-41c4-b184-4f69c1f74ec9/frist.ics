@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e167f7f8-ecf1-41c4-b184-4f69c1f74ec9-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Eingabefrist: VN 22.40 – Assainissement du pont du Simplon
+DESCRIPTION:Auftraggeber: Achats - TMR SA\nEingabefrist: 27.11.2026\, 12.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e167f7f8-ecf1-4
+ 1c4-b184-4f69c1f74ec9/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/e167f7f8-ecf1-41c4-b184-4f69c1f74ec9
+URL:https://auftragsregister.ch/de/auftrag/e167f7f8-ecf1-41c4-b184-4f69c1f7
+ 4ec9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: VN 22.40 – Assainissement du pont du Simplon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

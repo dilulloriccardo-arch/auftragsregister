@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc68d0df-7307-42b1-8426-6f21e4888787-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261207T225900Z
+SUMMARY:Eingabefrist: (26166) 735 Zivi-Ausbildungskurs Betreuung und Beglei
+ tung von Menschen
+DESCRIPTION:Auftraggeber: Bundesamt für Zivildienst ZIVI\nEingabefrist: 07
+ .12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /bc68d0df-7307-42b1-8426-6f21e4888787/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/bc68d0df-7307-42b1-8426-6f21e4888787
+URL:https://auftragsregister.ch/de/auftrag/bc68d0df-7307-42b1-8426-6f21e488
+ 8787/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (26166) 735 Zivi-Ausbildungskurs Betreuung und Be
+ gleitung von Menschen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

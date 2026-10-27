@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff77016f-ec4e-4113-8cbe-da5ebf8ad05a-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Eingabefrist: Verkehrssanierung Burgdorf-Oberburg-Hasle "Emmentalw
+ ärts"\, Bauherrenunterstützung BHU
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 16.12.
+ 2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ff7
+ 7016f-ec4e-4113-8cbe-da5ebf8ad05a/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/ff77016f-ec4e-4113-8cbe-da5ebf8ad05a
+URL:https://auftragsregister.ch/de/auftrag/ff77016f-ec4e-4113-8cbe-da5ebf8a
+ d05a/
+LOCATION:Burgdorf\, Hasle b Burgdorf\, Lyssach\, Oberburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Verkehrssanierung Burgdorf-Oberburg-Hasle "Emment
+ alwärts"\, Bauherrenunterstützung BHU
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

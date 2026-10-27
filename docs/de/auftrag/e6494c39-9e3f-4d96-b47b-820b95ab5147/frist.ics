@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6494c39-9e3f-4d96-b47b-820b95ab5147-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261106T100000Z
+SUMMARY:Eingabefrist: 2314 – Ville de La Chaux-de-Fonds - STEP - Reconstr
+ uction de la dalle du canal d'amenée
+DESCRIPTION:Auftraggeber: Ville de La Chaux-de-Fonds - Service technique( M
+ auler SA)\nEingabefrist: 06.11.2026\, 11.00 Uhr\nIm Register: https://auf
+ tragsregister.ch/de/auftrag/e6494c39-9e3f-4d96-b47b-820b95ab5147/\nAmtlich
+ e Publikation: https://www.simap.ch/de/project-detail/e6494c39-9e3f-4d96-b
+ 47b-820b95ab5147
+URL:https://auftragsregister.ch/de/auftrag/e6494c39-9e3f-4d96-b47b-820b95ab
+ 5147/
+LOCATION:La Chaux-de-Fonds
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 2314 – Ville de La Chaux-de-Fonds - STEP - Reco
+ nstruction de la dalle du canal d'amenée
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

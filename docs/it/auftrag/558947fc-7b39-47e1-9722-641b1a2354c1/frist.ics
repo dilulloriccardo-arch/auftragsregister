@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:558947fc-7b39-47e1-9722-641b1a2354c1-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Scadenza: BKP 378 Bühnentechnik
+DESCRIPTION:Ente pubblico: Baureag Architekten AG\nScadenza: 25.11.2026\, 1
+ 6:00\nNel registro: https://auftragsregister.ch/it/auftrag/558947fc-7b39-4
+ 7e1-9722-641b1a2354c1/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/558947fc-7b39-47e1-9722-641b1a2354c1
+URL:https://auftragsregister.ch/it/auftrag/558947fc-7b39-47e1-9722-641b1a23
+ 54c1/
+LOCATION:Birrwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 378 Bühnentechnik
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

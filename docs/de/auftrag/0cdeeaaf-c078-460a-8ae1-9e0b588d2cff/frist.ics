@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0cdeeaaf-c078-460a-8ae1-9e0b588d2cff-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Eingabefrist: H29 Lawinengalerie val Urezza\, Ingenieurarbeiten
+DESCRIPTION:Auftraggeber: Tiefbauamt Graubünden\nEingabefrist: 20.11.2026\
+ , 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0cdeeaaf
+ -c078-460a-8ae1-9e0b588d2cff/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/0cdeeaaf-c078-460a-8ae1-9e0b588d2cff
+URL:https://auftragsregister.ch/de/auftrag/0cdeeaaf-c078-460a-8ae1-9e0b588d
+ 2cff/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: H29 Lawinengalerie val Urezza\, Ingenieurarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

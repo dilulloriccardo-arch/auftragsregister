@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0fadb52-5cd6-4ee4-b069-5eb41235e67e-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261113T080000Z
+SUMMARY:Délai de remise : IWB\, Migration AC450 nach AC800M Node 22\, 32
+ \, 41\, 42 und 51
+DESCRIPTION:Acheteur public : IWB Industrielle Werke Basel\nDélai de rem
+ ise : 13.11.2026\, 9 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/a0fadb52-5cd6-4ee4-b069-5eb41235e67e/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/a0fadb52-5cd6-4ee4-b069-
+ 5eb41235e67e
+URL:https://auftragsregister.ch/fr/auftrag/a0fadb52-5cd6-4ee4-b069-5eb41235
+ e67e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IWB\, Migration AC450 nach AC800M Node 22\
+ , 32\, 41\, 42 und 51
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

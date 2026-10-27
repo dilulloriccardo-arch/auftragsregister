@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a836d1ea-342d-4ab0-87c2-9b27d54ad016-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261028T110000Z
+SUMMARY:Délai de remise : Fahrzeugersatzbeschaffung Elektro-Geräteträg
+ er I
+DESCRIPTION:Acheteur public : Stadt Uster\, Abteilung Bau\nDélai de remi
+ se : 28.10.2026\, 12 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/a836d1ea-342d-4ab0-87c2-9b27d54ad016/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/a836d1ea-342d-4ab0-87c2-
+ 9b27d54ad016
+URL:https://auftragsregister.ch/fr/auftrag/a836d1ea-342d-4ab0-87c2-9b27d54a
+ d016/
+LOCATION:Uster
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fahrzeugersatzbeschaffung Elektro-Gerätet
+ räger I
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

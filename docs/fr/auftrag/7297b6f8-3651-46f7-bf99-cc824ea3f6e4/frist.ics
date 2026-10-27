@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7297b6f8-3651-46f7-bf99-cc824ea3f6e4-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Délai de remise : École de Langwiesen : extension et rénovatio
+ n \; CFC 214 Construction en bois préfabriquée
+DESCRIPTION:Acheteur public : Amt für Städtebau\nDélai de remise : 0
+ 4.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/7297b6f8-3651-46f7-bf99-cc824ea3f6e4/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/7297b6f8-3651-46f7-bf99-cc824e
+ a3f6e4
+URL:https://auftragsregister.ch/fr/auftrag/7297b6f8-3651-46f7-bf99-cc824ea3
+ f6e4/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École de Langwiesen : extension et rénov
+ ation \; CFC 214 Construction en bois préfabriquée
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

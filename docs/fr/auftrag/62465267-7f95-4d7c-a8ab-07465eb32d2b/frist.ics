@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62465267-7f95-4d7c-a8ab-07465eb32d2b-frist@auftragsregister.ch
+DTSTAMP:20260817T000000Z
+SEQUENCE:0
+DTSTART:20270125T160000Z
+SUMMARY:Délai de remise : Areal "Tschuopis" in Littau Luzern: Abgabe im 
+ Baurecht an gemeinnützige Wohnbauträger
+DESCRIPTION:Acheteur public : Stadt Luzern\, Immobilien\nDélai de remise
+  : 25.01.2027\, 17 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/62465267-7f95-4d7c-a8ab-07465eb32d2b/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/62465267-7f95-4d7c-a8ab-07
+ 465eb32d2b
+URL:https://auftragsregister.ch/fr/auftrag/62465267-7f95-4d7c-a8ab-07465eb3
+ 2d2b/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Areal "Tschuopis" in Littau Luzern: Abgabe
+  im Baurecht an gemeinnützige Wohnbauträger
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

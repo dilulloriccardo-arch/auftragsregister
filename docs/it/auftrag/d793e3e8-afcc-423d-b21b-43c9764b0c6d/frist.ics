@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d793e3e8-afcc-423d-b21b-43c9764b0c6d-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:1
+DTSTART:20261106T120000Z
+SUMMARY:Scadenza: Dienstweg Etappe 2\, Auhafen Muttenz inkl. Gleisquerung
+DESCRIPTION:Ente pubblico: CSD Ingenieure AG\nScadenza: 06.11.2026\, 13:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/d793e3e8-afcc-423d-b
+ 21b-43c9764b0c6d/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/d793e3e8-afcc-423d-b21b-43c9764b0c6d
+URL:https://auftragsregister.ch/it/auftrag/d793e3e8-afcc-423d-b21b-43c9764b
+ 0c6d/
+LOCATION:Muttenz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Dienstweg Etappe 2\, Auhafen Muttenz inkl. Gleisqueru
+ ng
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

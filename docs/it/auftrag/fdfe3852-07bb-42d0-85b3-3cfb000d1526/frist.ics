@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fdfe3852-07bb-42d0-85b3-3cfb000d1526-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Scadenza: Cryogenic Probe Station
+DESCRIPTION:Ente pubblico: Universität Basel\nScadenza: 06.11.2026\, 12:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/fdfe3852-07bb-42d0-
+ 85b3-3cfb000d1526/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/fdfe3852-07bb-42d0-85b3-3cfb000d1526
+URL:https://auftragsregister.ch/it/auftrag/fdfe3852-07bb-42d0-85b3-3cfb000d
+ 1526/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Cryogenic Probe Station
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

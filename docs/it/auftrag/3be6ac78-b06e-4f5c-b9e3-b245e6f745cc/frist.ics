@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3be6ac78-b06e-4f5c-b9e3-b245e6f745cc-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261109T090000Z
+SUMMARY:Scadenza: Sanierung Weid - Chapfstrasse
+DESCRIPTION:Ente pubblico: Gemeinde Zumikon Abteilung Tiefbau\nScadenza: 09
+ .11.2026\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/3be
+ 6ac78-b06e-4f5c-b9e3-b245e6f745cc/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/3be6ac78-b06e-4f5c-b9e3-b245e6f745cc
+URL:https://auftragsregister.ch/it/auftrag/3be6ac78-b06e-4f5c-b9e3-b245e6f7
+ 45cc/
+LOCATION:Zumikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Weid - Chapfstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

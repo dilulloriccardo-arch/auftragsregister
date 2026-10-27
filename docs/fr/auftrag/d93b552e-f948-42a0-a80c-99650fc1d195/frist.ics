@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d93b552e-f948-42a0-a80c-99650fc1d195-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261110T224500Z
+SUMMARY:Délai de remise : EBP-643_Robinetterie de chauffage à distance
+DESCRIPTION:Acheteur public : Energie Wasser Bern\nDélai de remise : 1
+ 0.11.2026\, 23 h 45\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/d93b552e-f948-42a0-a80c-99650fc1d195/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/d93b552e-f948-42a0-a80c-99650f
+ c1d195
+URL:https://auftragsregister.ch/fr/auftrag/d93b552e-f948-42a0-a80c-99650fc1
+ d195/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EBP-643_Robinetterie de chauffage à dista
+ nce
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:14c9f152-9c5e-4de0-b8a1-a0aac1d44e2f-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261107T110000Z
+SUMMARY:Eingabefrist: Hochauflösendes Massenspektrometer
+DESCRIPTION:Auftraggeber: Universität Basel\nEingabefrist: 07.11.2026\, 12
+ .00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/14c9f152-9c5
+ e-4de0-b8a1-a0aac1d44e2f/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/14c9f152-9c5e-4de0-b8a1-a0aac1d44e2f
+URL:https://auftragsregister.ch/de/auftrag/14c9f152-9c5e-4de0-b8a1-a0aac1d4
+ 4e2f/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Hochauflösendes Massenspektrometer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

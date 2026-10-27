@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3f17d2b7-1de3-4b42-a222-a79188c34828-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261113T150000Z
+SUMMARY:Scadenza: IMA FV Pestalozzistrasse 55/57\, Instandsetzung mit Umnut
+ zung | BKP 230 Elektroanlagen
+DESCRIPTION:Ente pubblico: Kanton Zürich Hochbauaumt\, Baubereich D\nScade
+ nza: 13.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/3f17d2b7-1de3-4b42-a222-a79188c34828/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/3f17d2b7-1de3-4b42-a222-a79188c34828
+URL:https://auftragsregister.ch/it/auftrag/3f17d2b7-1de3-4b42-a222-a79188c3
+ 4828/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: IMA FV Pestalozzistrasse 55/57\, Instandsetzung mit U
+ mnutzung | BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

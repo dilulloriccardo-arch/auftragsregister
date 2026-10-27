@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0244f307-10c7-41c7-8aa8-e8827f793dc6-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Scadenza: Fil Bleu Glatt - Teilprojekt Fil Bleu Nord: Revitalisieru
+ ng\, Verbesserung Hochwasserschutz\, Fuss- und Veloweg\, Freiraumgestaltun
+ g mit Erholungsräumen
+DESCRIPTION:Ente pubblico: AWEL / Abteilung Wasserbau\nScadenza: 16.11.2026
+ \, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/0244f307-10
+ c7-41c7-8aa8-e8827f793dc6/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/0244f307-10c7-41c7-8aa8-e8827f793dc6
+URL:https://auftragsregister.ch/it/auftrag/0244f307-10c7-41c7-8aa8-e8827f79
+ 3dc6/
+LOCATION:Opfikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fil Bleu Glatt - Teilprojekt Fil Bleu Nord: Revitalis
+ ierung\, Verbesserung Hochwasserschutz\, Fuss- und Veloweg\, Freiraumgesta
+ ltung mit Erholungsräumen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

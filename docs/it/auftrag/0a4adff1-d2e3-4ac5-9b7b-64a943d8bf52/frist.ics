@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a4adff1-d2e3-4ac5-9b7b-64a943d8bf52-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261117T130000Z
+SUMMARY:Scadenza: 02.512 Masterplan OSG 2025/2026 - Tappa 3 - Opere da fale
+ gname in genere
+DESCRIPTION:Ente pubblico: Ente Ospedaliero Cantonale - Area Infrastrutture
+  e Operations\nScadenza: 17.11.2026\, 14:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/0a4adff1-d2e3-4ac5-9b7b-64a943d8bf52/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/0a4adff1-d2e3-4ac5-9b
+ 7b-64a943d8bf52
+URL:https://auftragsregister.ch/it/auftrag/0a4adff1-d2e3-4ac5-9b7b-64a943d8
+ bf52/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 02.512 Masterplan OSG 2025/2026 - Tappa 3 - Opere da 
+ falegname in genere
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

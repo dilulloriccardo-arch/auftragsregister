@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f2c6559a-3a2f-4eb2-b988-df004ee4732a-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261110T225900Z
+SUMMARY:Délai de remise : Plateforme dédiée aux épreuves écrites des
+  examens d'avocat et de notaire
+DESCRIPTION:Acheteur public : Kantonsgericht Luzern\nDélai de remise :
+  10.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/f2c6559a-3a2f-4eb2-b988-df004ee4732a/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/f2c6559a-3a2f-4eb2-b988-df004e
+ e4732a
+URL:https://auftragsregister.ch/fr/auftrag/f2c6559a-3a2f-4eb2-b988-df004ee4
+ 732a/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Plateforme dédiée aux épreuves écrites
+  des examens d'avocat et de notaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

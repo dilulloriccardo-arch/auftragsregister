@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f721094a-c1a0-49f3-8e9c-26e18daf50ba-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Eingabefrist: Attribution des contrats d'assurance LAA\, d'assuranc
+ e complémentaire LAA et d'assurance indemnités journalières en cas de m
+ aladie\, valables dès le 1er janvier 2027\, pour l'Istituto per anziani S
+ an Carlo
+DESCRIPTION:Auftraggeber: Istituto per anziani San Carlo\nEingabefrist: 09.
+ 11.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ f721094a-c1a0-49f3-8e9c-26e18daf50ba/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/f721094a-c1a0-49f3-8e9c-26e18daf50ba
+URL:https://auftragsregister.ch/de/auftrag/f721094a-c1a0-49f3-8e9c-26e18daf
+ 50ba/
+LOCATION:Locarno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Attribution des contrats d'assurance LAA\, d'assu
+ rance complémentaire LAA et d'assurance indemnités journalières en cas 
+ de maladie\, valables dès le 1er janvier 2027\, pour l'Istituto per anzia
+ ni San Carlo
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

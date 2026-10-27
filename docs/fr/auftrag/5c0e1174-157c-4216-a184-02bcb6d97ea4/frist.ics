@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5c0e1174-157c-4216-a184-02bcb6d97ea4-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261110T150000Z
+SUMMARY:Délai de remise : Zukunft Bahnhof Bern\, Bausteine 1\, 2\, 3a & 
+ 3b\, 4\, 292 Bauingenieurleistung\, Oberbauleitung: 12'500 h externe Proje
+ ktleitung
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 10.11.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/5c0e1174-157c-4216-a184-02bcb6d97ea4/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/5c0e1174-15
+ 7c-4216-a184-02bcb6d97ea4
+URL:https://auftragsregister.ch/fr/auftrag/5c0e1174-157c-4216-a184-02bcb6d9
+ 7ea4/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Zukunft Bahnhof Bern\, Bausteine 1\, 2\, 3
+ a & 3b\, 4\, 292 Bauingenieurleistung\, Oberbauleitung: 12'500 h externe P
+ rojektleitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

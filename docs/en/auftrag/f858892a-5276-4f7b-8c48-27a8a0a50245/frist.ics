@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f858892a-5276-4f7b-8c48-27a8a0a50245-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Submission deadline: Beschaffung Statische Fahrgastinformation
+DESCRIPTION:Public buyer: Verkehrsbetriebe Biel\nSubmission deadline: 4 De
+ c 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/f
+ 858892a-5276-4f7b-8c48-27a8a0a50245/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/f858892a-5276-4f7b-8c48-27a8a0a50245
+URL:https://auftragsregister.ch/en/auftrag/f858892a-5276-4f7b-8c48-27a8a0a5
+ 0245/
+LOCATION:Biel/Bienne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung Statische Fahrgastinformation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

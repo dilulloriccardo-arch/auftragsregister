@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62e3c064-991f-4dc0-aaf6-f9392132fd77-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Eingabefrist: Werkleitungs- und Oberbausanierung Hardstrasse - Ahor
+ nweg
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Wettingen. Abteilung Bau und Pl
+ anung\nEingabefrist: 20.11.2026\, 11.00 Uhr\nIm Register: https://auftrag
+ sregister.ch/de/auftrag/62e3c064-991f-4dc0-aaf6-f9392132fd77/\nAmtliche Pu
+ blikation: https://www.simap.ch/de/project-detail/62e3c064-991f-4dc0-aaf6-
+ f9392132fd77
+URL:https://auftragsregister.ch/de/auftrag/62e3c064-991f-4dc0-aaf6-f9392132
+ fd77/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Werkleitungs- und Oberbausanierung Hardstrasse - 
+ Ahornweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

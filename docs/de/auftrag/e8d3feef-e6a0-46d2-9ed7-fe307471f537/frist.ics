@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8d3feef-e6a0-46d2-9ed7-fe307471f537-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Eingabefrist: LOS 2 Generator Hilfssysteme Kraftwerk Pradella
+DESCRIPTION:Auftraggeber: Engadiner Kraftwerke AG\nEingabefrist: 18.11.2026
+ \nIm Register: https://auftragsregister.ch/de/auftrag/e8d3feef-e6a0-46d2-9
+ ed7-fe307471f537/\nAmtliche Publikation: https://www.simap.ch/de/project-d
+ etail/e8d3feef-e6a0-46d2-9ed7-fe307471f537
+URL:https://auftragsregister.ch/de/auftrag/e8d3feef-e6a0-46d2-9ed7-fe307471
+ f537/
+LOCATION:Pradella
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: LOS 2 Generator Hilfssysteme Kraftwerk Pradella
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

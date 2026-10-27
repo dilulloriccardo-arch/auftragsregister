@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b692554d-8fb2-4456-ba43-6fd8ccd45d17-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261218T160000Z
+SUMMARY:Submission deadline: 5 emergency vehicle\, Lucerne City Fire Depart
+ ment
+DESCRIPTION:Public buyer: Stadt Luzern\, Sozial- und Sicherheitsdirektion\,
+  Feuerwehr\nSubmission deadline: 18 Dec 2026\, 17:00\nIn the register: h
+ ttps://auftragsregister.ch/en/auftrag/b692554d-8fb2-4456-ba43-6fd8ccd45d17
+ /\nOfficial publication: https://www.simap.ch/en/project-detail/b692554d-8
+ fb2-4456-ba43-6fd8ccd45d17
+URL:https://auftragsregister.ch/en/auftrag/b692554d-8fb2-4456-ba43-6fd8ccd4
+ 5d17/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 5 emergency vehicle\, Lucerne City Fire De
+ partment
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8781067a-389f-4eea-adcb-8693067ce792-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261119T090000Z
+SUMMARY:Eingabefrist: Concorso per l’aggiudicazione dei contratti di assi
+ curazione indennità giornaliera collettiva in caso di malattia e compleme
+ ntare alla LAINF (CLAINF)
+DESCRIPTION:Auftraggeber: Fondazione Casa Anziani Regionale San Donato\nEin
+ gabefrist: 19.11.2026\, 10.00 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/8781067a-389f-4eea-adcb-8693067ce792/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/8781067a-389f-4eea-adcb-8693067ce7
+ 92
+URL:https://auftragsregister.ch/de/auftrag/8781067a-389f-4eea-adcb-8693067c
+ e792/
+LOCATION:Intragna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Concorso per l’aggiudicazione dei contratti di 
+ assicurazione indennità giornaliera collettiva in caso di malattia e comp
+ lementare alla LAINF (CLAINF)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

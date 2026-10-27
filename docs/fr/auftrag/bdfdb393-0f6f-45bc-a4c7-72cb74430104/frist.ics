@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bdfdb393-0f6f-45bc-a4c7-72cb74430104-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261117T080000Z
+SUMMARY:Délai de remise : Campagnes de prises de vue aériennes pour l'o
+ rthophoto du canton de Zurich 2027
+DESCRIPTION:Acheteur public : Amt für Raumentwicklung\nDélai de remise
+  : 17.11.2026\, 9 h 00\nDans le registre : https://auftragsregiste
+ r.ch/fr/auftrag/bdfdb393-0f6f-45bc-a4c7-72cb74430104/\nPublication officie
+ lle : https://www.simap.ch/fr/project-detail/bdfdb393-0f6f-45bc-a4c7-72c
+ b74430104
+URL:https://auftragsregister.ch/fr/auftrag/bdfdb393-0f6f-45bc-a4c7-72cb7443
+ 0104/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Campagnes de prises de vue aériennes pour
+  l'orthophoto du canton de Zurich 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

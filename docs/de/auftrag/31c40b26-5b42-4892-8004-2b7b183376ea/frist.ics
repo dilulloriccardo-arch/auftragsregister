@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:31c40b26-5b42-4892-8004-2b7b183376ea-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Eingabefrist: MP-150016\, N02\, EP Arsenal - Hergiswil\, inkl. Erg
+ änzung Süd / Los ARHE BSA-2.03 Lieferung Beleuchtung
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA -Abteilung Strassen
+ infrastruktur-Ost - F3\nEingabefrist: 23.11.2026\, 23.59 Uhr\nIm Register
+ : https://auftragsregister.ch/de/auftrag/31c40b26-5b42-4892-8004-2b7b18337
+ 6ea/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/31c40b2
+ 6-5b42-4892-8004-2b7b183376ea
+URL:https://auftragsregister.ch/de/auftrag/31c40b26-5b42-4892-8004-2b7b1833
+ 76ea/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-150016\, N02\, EP Arsenal - Hergiswil\, inkl. 
+ Ergänzung Süd / Los ARHE BSA-2.03 Lieferung Beleuchtung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

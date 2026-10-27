@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e666a48e-ec74-47f0-a6ea-e5204cdeb774-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:3
+DTSTART:20261201T225900Z
+SUMMARY:Délai de remise : 150 kV Leitung Fuhren - Innertkirchen // 150 k
+ V Leitung Hopflauenen - Innertkirchen
+DESCRIPTION:Acheteur public : Kraftwerke Oberhasli AG\nDélai de remise
+  : 01.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/e666a48e-ec74-47f0-a6ea-e5204cdeb774/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/e666a48e-ec74-47f0-a6ea-e5
+ 204cdeb774
+URL:https://auftragsregister.ch/fr/auftrag/e666a48e-ec74-47f0-a6ea-e5204cde
+ b774/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 150 kV Leitung Fuhren - Innertkirchen // 1
+ 50 kV Leitung Hopflauenen - Innertkirchen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

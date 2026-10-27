@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:238f4da1-5e84-4dcf-a86b-6e9cec4bcffe-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Submission deadline: Montagearbeiten Talacherstrasse "Ost"
+DESCRIPTION:Public buyer: Landis AG\nSubmission deadline: 20 Nov 2026\, 1
+ 1:00\nIn the register: https://auftragsregister.ch/en/auftrag/238f4da1-5e8
+ 4-4dcf-a86b-6e9cec4bcffe/\nOfficial publication: https://www.simap.ch/en/p
+ roject-detail/238f4da1-5e84-4dcf-a86b-6e9cec4bcffe
+URL:https://auftragsregister.ch/en/auftrag/238f4da1-5e84-4dcf-a86b-6e9cec4b
+ cffe/
+LOCATION:Unterengstringen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Montagearbeiten Talacherstrasse "Ost"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

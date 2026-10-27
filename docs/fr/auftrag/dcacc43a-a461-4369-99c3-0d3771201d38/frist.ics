@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dcacc43a-a461-4369-99c3-0d3771201d38-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Délai de remise : Évolution de la plateforme Clarity
+DESCRIPTION:Acheteur public : Service de l'informatique et des télécomm
+ unications (SITel)\nDélai de remise : 04.11.2026\, 12 h 00\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/dcacc43a-a461-4369-99
+ c3-0d3771201d38/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/dcacc43a-a461-4369-99c3-0d3771201d38
+URL:https://auftragsregister.ch/fr/auftrag/dcacc43a-a461-4369-99c3-0d377120
+ 1d38/
+LOCATION:Givisiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Évolution de la plateforme Clarity
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

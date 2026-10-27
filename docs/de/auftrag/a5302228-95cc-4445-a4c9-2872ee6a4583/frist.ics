@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5302228-95cc-4445-a4c9-2872ee6a4583-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Eingabefrist: BKP 211 Baumeisterarbeiten (Umbau KF1)
+DESCRIPTION:Auftraggeber: HSSP AG\nEingabefrist: 16.11.2026\, 16.00 Uhr\nI
+ m Register: https://auftragsregister.ch/de/auftrag/a5302228-95cc-4445-a4c9
+ -2872ee6a4583/\nAmtliche Publikation: https://www.simap.ch/de/project-deta
+ il/a5302228-95cc-4445-a4c9-2872ee6a4583
+URL:https://auftragsregister.ch/de/auftrag/a5302228-95cc-4445-a4c9-2872ee6a
+ 4583/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 211 Baumeisterarbeiten (Umbau KF1)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

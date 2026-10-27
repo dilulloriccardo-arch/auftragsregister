@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c49a7004-8349-46f8-8a64-003dc1565e62-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Eingabefrist: Location de service de personnel IT Contrat cadre mul
+ ti-adjudicataires 12 lots
+DESCRIPTION:Auftraggeber: Etablissement d'assurance contre l'incendie et le
+ s éléments naturels du canton de Vaud (ECA)\nEingabefrist: 11.11.2026\, 
+ 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c49a7004-8
+ 349-46f8-8a64-003dc1565e62/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/c49a7004-8349-46f8-8a64-003dc1565e62
+URL:https://auftragsregister.ch/de/auftrag/c49a7004-8349-46f8-8a64-003dc156
+ 5e62/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Location de service de personnel IT Contrat cadre
+  multi-adjudicataires 12 lots
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a186aae1-6d52-4268-a58f-224253b01f47-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Scadenza: Ersatzbeschaffung Beatmungsgeräte Intensivstation
+DESCRIPTION:Ente pubblico: Universitäts-Kinderspital Zürich\nScadenza: 23
+ .11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/a18
+ 6aae1-6d52-4268-a58f-224253b01f47/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/a186aae1-6d52-4268-a58f-224253b01f47
+URL:https://auftragsregister.ch/it/auftrag/a186aae1-6d52-4268-a58f-224253b0
+ 1f47/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatzbeschaffung Beatmungsgeräte Intensivstation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

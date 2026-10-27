@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7ec1f0b-6749-4105-ae06-bb179754bdb3-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Délai de remise : Adobe ETLA 2027 - 2030
+DESCRIPTION:Acheteur public : Amt für Informatik\nDélai de remise : 0
+ 9.11.2026\nDans le registre : https://auftragsregister.ch/fr/auftrag/e7e
+ c1f0b-6749-4105-ae06-bb179754bdb3/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/e7ec1f0b-6749-4105-ae06-bb179754bdb3
+URL:https://auftragsregister.ch/fr/auftrag/e7ec1f0b-6749-4105-ae06-bb179754
+ bdb3/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Adobe ETLA 2027 - 2030
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

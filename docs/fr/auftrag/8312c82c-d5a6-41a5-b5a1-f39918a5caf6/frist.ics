@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8312c82c-d5a6-41a5-b5a1-f39918a5caf6-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Délai de remise : USZ Campus MITTE 1|2 / CVC 283.12 Plaf. susp. 
+ panneaux métal - paquet 3
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 10.12.2026\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/8312c82c-d5a6-41a5-b5a1-f39918a5caf6/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/8312c82c-d5a6-41a5-b5a1-
+ f39918a5caf6
+URL:https://auftragsregister.ch/fr/auftrag/8312c82c-d5a6-41a5-b5a1-f39918a5
+ caf6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : USZ Campus MITTE 1|2 / CVC 283.12 Plaf. su
+ sp. panneaux métal - paquet 3
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

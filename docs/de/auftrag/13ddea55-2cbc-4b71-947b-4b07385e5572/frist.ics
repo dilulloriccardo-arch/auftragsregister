@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:13ddea55-2cbc-4b71-947b-4b07385e5572-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Eingabefrist: Appel d'offres public pour la mise en valeur et la cr
+ éation de contenu éditorial pour le portail Santé Genève (SaGE)
+DESCRIPTION:Auftraggeber: Centrale commune d'achats (CCA)\nEingabefrist: 25
+ .11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /13ddea55-2cbc-4b71-947b-4b07385e5572/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/13ddea55-2cbc-4b71-947b-4b07385e5572
+URL:https://auftragsregister.ch/de/auftrag/13ddea55-2cbc-4b71-947b-4b07385e
+ 5572/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Appel d'offres public pour la mise en valeur et l
+ a création de contenu éditorial pour le portail Santé Genève (SaGE)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49df9d47-0d41-4d9c-8789-26d443748ea4-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261207T100000Z
+SUMMARY:Eingabefrist: Remplacement de la conduite d’arrosage depuis l’A
+ sse jusqu’à la zone industrielle du Bucleis\, Territoires de Nyon et Du
+ illier
+DESCRIPTION:Auftraggeber: Syndicat d'Arrosage de Nyon et Environs SANE (Bov
+ ard & Fritsché SA)\nEingabefrist: 07.12.2026\, 11.00 Uhr\nIm Register: h
+ ttps://auftragsregister.ch/de/auftrag/49df9d47-0d41-4d9c-8789-26d443748ea4
+ /\nAmtliche Publikation: https://www.simap.ch/de/project-detail/49df9d47-0
+ d41-4d9c-8789-26d443748ea4
+URL:https://auftragsregister.ch/de/auftrag/49df9d47-0d41-4d9c-8789-26d44374
+ 8ea4/
+LOCATION:Nyon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Remplacement de la conduite d’arrosage depuis l
+ ’Asse jusqu’à la zone industrielle du Bucleis\, Territoires de Nyon e
+ t Duillier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

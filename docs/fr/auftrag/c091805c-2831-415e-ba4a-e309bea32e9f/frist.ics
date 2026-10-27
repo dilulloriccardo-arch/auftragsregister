@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c091805c-2831-415e-ba4a-e309bea32e9f-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T225900Z
+SUMMARY:Délai de remise : Un analyseur de sorption gravimétrique de gaz
+  et de vapeur à haute pression
+DESCRIPTION:Acheteur public : EPFL-Scientific Equipment\nDélai de remise
+  : 01.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/c091805c-2831-415e-ba4a-e309bea32e9f/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/c091805c-2831-415e-ba4a-e3
+ 09bea32e9f
+URL:https://auftragsregister.ch/fr/auftrag/c091805c-2831-415e-ba4a-e309bea3
+ 2e9f/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Un analyseur de sorption gravimétrique de
+  gaz et de vapeur à haute pression
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

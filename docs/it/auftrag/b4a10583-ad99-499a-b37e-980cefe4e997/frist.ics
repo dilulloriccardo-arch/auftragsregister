@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4a10583-ad99-499a-b37e-980cefe4e997-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261203T110000Z
+SUMMARY:Scadenza: XUND Mieterausbau Standort Suurstoffi 45\, Rotkreuz - BKP
+  277.1 Schiebe- und Faltwände
+DESCRIPTION:Ente pubblico: Stiftung Berufsbildung Gesundheit Zentralschweiz
+ \, c/o XUND Bildung Gesundheit Zentralschweiz\nScadenza: 03.12.2026\, 12:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/b4a10583-ad99-499a
+ -b37e-980cefe4e997/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/b4a10583-ad99-499a-b37e-980cefe4e997
+URL:https://auftragsregister.ch/it/auftrag/b4a10583-ad99-499a-b37e-980cefe4
+ e997/
+LOCATION:Risch-Rotkreuz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: XUND Mieterausbau Standort Suurstoffi 45\, Rotkreuz -
+  BKP 277.1 Schiebe- und Faltwände
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

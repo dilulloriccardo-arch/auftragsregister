@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7441e87-eee7-40c8-a676-860389e4fd03-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Eingabefrist: AIS Leistungsschalter Laufenburg
+DESCRIPTION:Auftraggeber: Swissgrid AG - Asset & Maintenance\nEingabefrist:
+  29.01.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/e7441e87-eee7-40c8-a676-860389e4fd03/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/e7441e87-eee7-40c8-a676-860389e4fd03
+URL:https://auftragsregister.ch/de/auftrag/e7441e87-eee7-40c8-a676-860389e4
+ fd03/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AIS Leistungsschalter Laufenburg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

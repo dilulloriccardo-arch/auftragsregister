@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0fadb52-5cd6-4ee4-b069-5eb41235e67e-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261113T080000Z
+SUMMARY:Submission deadline: IWB\, Migration from AC450 to AC800M\, Nodes 2
+ 2\, 32\, 41\, 42\, and 51
+DESCRIPTION:Public buyer: IWB Industrielle Werke Basel\nSubmission deadline
+ : 13 Nov 2026\, 09:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/a0fadb52-5cd6-4ee4-b069-5eb41235e67e/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/a0fadb52-5cd6-4ee4-b069-5eb41235e67e
+URL:https://auftragsregister.ch/en/auftrag/a0fadb52-5cd6-4ee4-b069-5eb41235
+ e67e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: IWB\, Migration from AC450 to AC800M\, Nod
+ es 22\, 32\, 41\, 42\, and 51
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

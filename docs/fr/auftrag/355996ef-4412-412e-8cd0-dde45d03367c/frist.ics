@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:355996ef-4412-412e-8cd0-dde45d03367c-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261106T153000Z
+SUMMARY:Délai de remise : Gros oeuvre et maçonnerie - Rénovation du b
+ âtiment PICTO Avenue Ernest-Pictet 28-30
+DESCRIPTION:Acheteur public : Etat de Genève\, Département du territoir
+ e - DT\, Office Cantonal des bâtiments (OCBA)\nDélai de remise : 06.11
+ .2026\, 16 h 30\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/355996ef-4412-412e-8cd0-dde45d03367c/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/355996ef-4412-412e-8cd0-dde45d03367c
+URL:https://auftragsregister.ch/fr/auftrag/355996ef-4412-412e-8cd0-dde45d03
+ 367c/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gros oeuvre et maçonnerie - Rénovation d
+ u bâtiment PICTO Avenue Ernest-Pictet 28-30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

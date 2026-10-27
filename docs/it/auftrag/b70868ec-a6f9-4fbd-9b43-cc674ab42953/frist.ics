@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b70868ec-a6f9-4fbd-9b43-cc674ab42953-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Scadenza: BAV 27591 Winkelwiese 10+12\, IS Villa + Gartenhaus - BKP
+  230 Elektroanlagen gesamt
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 05.11
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/b70868
+ ec-a6f9-4fbd-9b43-cc674ab42953/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/b70868ec-a6f9-4fbd-9b43-cc674ab42953
+URL:https://auftragsregister.ch/it/auftrag/b70868ec-a6f9-4fbd-9b43-cc674ab4
+ 2953/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 27591 Winkelwiese 10+12\, IS Villa + Gartenhaus -
+  BKP 230 Elektroanlagen gesamt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

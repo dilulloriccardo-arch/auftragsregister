@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2095d85-3636-4ebe-bec5-2219b7e00326-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Délai de remise : N21.12 MP-190074 - NEB Les Toules court terme 
+ - Assainissement et renforcement de 4 ponts/demi-ponts (ID 12132)
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA - Abteilung S
+ trasseninfrastruktur West - Filiale Thun\nDélai de remise : 20.11.2026\
+ , 23 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag
+ /e2095d85-3636-4ebe-bec5-2219b7e00326/\nPublication officielle : https:/
+ /www.simap.ch/fr/project-detail/e2095d85-3636-4ebe-bec5-2219b7e00326
+URL:https://auftragsregister.ch/fr/auftrag/e2095d85-3636-4ebe-bec5-2219b7e0
+ 0326/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : N21.12 MP-190074 - NEB Les Toules court te
+ rme - Assainissement et renforcement de 4 ponts/demi-ponts (ID 12132)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e339859e-ea9f-4eb5-88ba-a5bde74e472a-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Scadenza: ARA Eglisau\, Ausbau ARA 2030\, V-601 Umgebungs- und Werk
+ leitungsgrabarbeiten
+DESCRIPTION:Ente pubblico: Gemeinde Eglisau\nScadenza: 23.11.2026\, 12:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/e339859e-ea9f-4eb5-88
+ ba-a5bde74e472a/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/e339859e-ea9f-4eb5-88ba-a5bde74e472a
+URL:https://auftragsregister.ch/it/auftrag/e339859e-ea9f-4eb5-88ba-a5bde74e
+ 472a/
+LOCATION:Eglisau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ARA Eglisau\, Ausbau ARA 2030\, V-601 Umgebungs- und 
+ Werkleitungsgrabarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

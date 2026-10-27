@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5bd5b589-cc79-48bf-bf8e-86ac115691a4-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T130000Z
+SUMMARY:Eingabefrist: HUG_PRESTATIONS DE CODAGE MÉDICAL
+DESCRIPTION:Auftraggeber: CAIB (Centrale d’achats et d’ingénierie biom
+ édicale Vaud-Genève)\nEingabefrist: 06.11.2026\, 14.00 Uhr\nIm Register
+ : https://auftragsregister.ch/de/auftrag/5bd5b589-cc79-48bf-bf8e-86ac11569
+ 1a4/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/5bd5b58
+ 9-cc79-48bf-bf8e-86ac115691a4
+URL:https://auftragsregister.ch/de/auftrag/5bd5b589-cc79-48bf-bf8e-86ac1156
+ 91a4/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: HUG_PRESTATIONS DE CODAGE MÉDICAL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

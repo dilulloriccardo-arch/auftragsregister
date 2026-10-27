@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5841054d-a1e3-42ff-a6dc-a18786e66301-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Délai de remise : Achat de lits d'hôpital
+DESCRIPTION:Acheteur public : Kantonsspital Baselland\, Zentrale Vergabes
+ telle\nDélai de remise : 02.11.2026\, 12 h 00\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/5841054d-a1e3-42ff-a6dc-a18786e663
+ 01/\nPublication officielle : https://www.simap.ch/fr/project-detail/584
+ 1054d-a1e3-42ff-a6dc-a18786e66301
+URL:https://auftragsregister.ch/fr/auftrag/5841054d-a1e3-42ff-a6dc-a18786e6
+ 6301/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Achat de lits d'hôpital
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

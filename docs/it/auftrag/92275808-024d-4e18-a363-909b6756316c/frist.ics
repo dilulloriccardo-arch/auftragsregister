@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92275808-024d-4e18-a363-909b6756316c-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: Wärmeprovisorium\, Dammstrasse 25\, Zug
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Zug\, Finanzdepartement/Abteil
+ ung Immobilien\nScadenza: 16.11.2026\, 16:00\nNel registro: https://auftra
+ gsregister.ch/it/auftrag/92275808-024d-4e18-a363-909b6756316c/\nPubblicazi
+ one ufficiale: https://www.simap.ch/it/project-detail/92275808-024d-4e18-a
+ 363-909b6756316c
+URL:https://auftragsregister.ch/it/auftrag/92275808-024d-4e18-a363-909b6756
+ 316c/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wärmeprovisorium\, Dammstrasse 25\, Zug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d507b1c-6bd1-4be4-85ca-661d78722cf4-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Scadenza: Bau Nr. 22657 - Friesenbergstrasse Haltestelle Höfliweg
+DESCRIPTION:Ente pubblico: Tiefbauamt\, Abt. Realisierung\nScadenza: 12.11.
+ 2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/6d507b1
+ c-6bd1-4be4-85ca-661d78722cf4/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/6d507b1c-6bd1-4be4-85ca-661d78722cf4
+URL:https://auftragsregister.ch/it/auftrag/6d507b1c-6bd1-4be4-85ca-661d7872
+ 2cf4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bau Nr. 22657 - Friesenbergstrasse Haltestelle Höfli
+ weg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e51becb4-5955-432c-911f-407f8a12d04a-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:1
+DTSTART:20261030T150000Z
+SUMMARY:Eingabefrist: IMA FV Pestalozzistrasse 55/57\, Instandsetzung mit U
+ mnutzung / BKP 112 Rückbau
+DESCRIPTION:Auftraggeber: Kanton Zürich Hochbauaumt\, Baubereich D\nEingab
+ efrist: 30.10.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/e51becb4-5955-432c-911f-407f8a12d04a/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/e51becb4-5955-432c-911f-407f8a12d04a
+URL:https://auftragsregister.ch/de/auftrag/e51becb4-5955-432c-911f-407f8a12
+ d04a/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: IMA FV Pestalozzistrasse 55/57\, Instandsetzung m
+ it Umnutzung / BKP 112 Rückbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95e086df-fdc5-46d3-b9d2-5e3bb75cf5d8-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Eingabefrist: Beschaffung eines cryo-konfokalen Fluoreszenzmikrosko
+ ps
+DESCRIPTION:Auftraggeber: Institut für Biochemie und Molekulare Medizin\nE
+ ingabefrist: 02.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/95e086df-fdc5-46d3-b9d2-5e3bb75cf5d8/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/95e086df-fdc5-46d3-b9d2-5e3bb75c
+ f5d8
+URL:https://auftragsregister.ch/de/auftrag/95e086df-fdc5-46d3-b9d2-5e3bb75c
+ f5d8/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung eines cryo-konfokalen Fluoreszenzmikr
+ oskops
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

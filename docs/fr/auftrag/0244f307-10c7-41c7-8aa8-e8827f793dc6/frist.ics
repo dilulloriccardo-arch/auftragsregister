@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0244f307-10c7-41c7-8aa8-e8827f793dc6-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Délai de remise : Fil Bleu Glatt - Fil Bleu Nord: Revitalisation
+ \, amélioration de la protection contre les crues\, cheminement piéton e
+ t piste cyclable\, aménagement des espaces libres avec zones de détente 
+ et de loisirs.
+DESCRIPTION:Acheteur public : AWEL / Abteilung Wasserbau\nDélai de remis
+ e : 16.11.2026\, 11 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/0244f307-10c7-41c7-8aa8-e8827f793dc6/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/0244f307-10c7-41c7-8aa8-e
+ 8827f793dc6
+URL:https://auftragsregister.ch/fr/auftrag/0244f307-10c7-41c7-8aa8-e8827f79
+ 3dc6/
+LOCATION:Opfikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fil Bleu Glatt - Fil Bleu Nord: Revitalisa
+ tion\, amélioration de la protection contre les crues\, cheminement piét
+ on et piste cyclable\, aménagement des espaces libres avec zones de déte
+ nte et de loisirs.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

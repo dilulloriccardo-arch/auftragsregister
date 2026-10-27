@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9ffe5d59-1b1f-42af-9c5d-c81d9df3ce46-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261029T150000Z
+SUMMARY:Scadenza: BAV 80720 Schulanlage Tüffenwies\, Neubau - BKP 277.2 Fe
+ ststehende Elementwände
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 29.10
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/9ffe5d
+ 59-1b1f-42af-9c5d-c81d9df3ce46/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/9ffe5d59-1b1f-42af-9c5d-c81d9df3ce46
+URL:https://auftragsregister.ch/it/auftrag/9ffe5d59-1b1f-42af-9c5d-c81d9df3
+ ce46/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 80720 Schulanlage Tüffenwies\, Neubau - BKP 277.
+ 2 Feststehende Elementwände
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

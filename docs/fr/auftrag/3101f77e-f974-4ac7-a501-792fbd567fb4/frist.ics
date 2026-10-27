@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3101f77e-f974-4ac7-a501-792fbd567fb4-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Délai de remise : Wohnen am Stadtpark: BKP 282.4 Wandbeläge aus
+  Platten
+DESCRIPTION:Acheteur public : Stadt Schlieren\, Bereich Liegenschaften\nD
+ élai de remise : 04.12.2026\, 12 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/3101f77e-f974-4ac7-a501-792fbd567fb4/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/3101f77e-f9
+ 74-4ac7-a501-792fbd567fb4
+URL:https://auftragsregister.ch/fr/auftrag/3101f77e-f974-4ac7-a501-792fbd56
+ 7fb4/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wohnen am Stadtpark: BKP 282.4 Wandbeläge
+  aus Platten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

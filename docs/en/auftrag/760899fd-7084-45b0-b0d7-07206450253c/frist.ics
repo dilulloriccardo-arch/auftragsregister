@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:760899fd-7084-45b0-b0d7-07206450253c-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T225600Z
+SUMMARY:Submission deadline: EBP-596 AFW_Bümpliz Ost-Süd-Bienzgut Rohrbau
+ er
+DESCRIPTION:Public buyer: Energie Wasser Bern\nSubmission deadline: 2 Nov
+  2026\, 23:56\nIn the register: https://auftragsregister.ch/en/auftrag/76
+ 0899fd-7084-45b0-b0d7-07206450253c/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/760899fd-7084-45b0-b0d7-07206450253c
+URL:https://auftragsregister.ch/en/auftrag/760899fd-7084-45b0-b0d7-07206450
+ 253c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EBP-596 AFW_Bümpliz Ost-Süd-Bienzgut Roh
+ rbauer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

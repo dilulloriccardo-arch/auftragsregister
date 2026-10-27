@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a52ccc78-d044-40e1-9e96-ad70147f2d5a-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T143000Z
+SUMMARY:Eingabefrist: Construction d'un bâtiment d'accueil parascolaire (U
+ APE\, bibliothèque et ludothèque) pour le complexe scolaire Les Voiles d
+ u Léman à Préverenges
+DESCRIPTION:Auftraggeber: Commune de Préverenges\nEingabefrist: 01.12.2026
+ \, 15.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a52ccc7
+ 8-d044-40e1-9e96-ad70147f2d5a/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/a52ccc78-d044-40e1-9e96-ad70147f2d5a
+URL:https://auftragsregister.ch/de/auftrag/a52ccc78-d044-40e1-9e96-ad70147f
+ 2d5a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Construction d'un bâtiment d'accueil parascolair
+ e (UAPE\, bibliothèque et ludothèque) pour le complexe scolaire Les Voil
+ es du Léman à Préverenges
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

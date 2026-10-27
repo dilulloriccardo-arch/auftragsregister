@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9f9503d8-30e3-4bb5-9046-6834b834e17f-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261104T100000Z
+SUMMARY:Eingabefrist: Bâtiment d'art contemporain (2255TI-bis-1) ouvrages 
+ métalliques préconfectionnés
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 04.11.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/9f9503d8-30e3-4bb5-9046-6834b834e17f/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/9f9503d8-30e3-4bb5-9046-6834b834
+ e17f
+URL:https://auftragsregister.ch/de/auftrag/9f9503d8-30e3-4bb5-9046-6834b834
+ e17f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bâtiment d'art contemporain (2255TI-bis-1) ouvra
+ ges métalliques préconfectionnés
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

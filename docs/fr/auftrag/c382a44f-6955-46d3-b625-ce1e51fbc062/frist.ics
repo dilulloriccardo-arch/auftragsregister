@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c382a44f-6955-46d3-b625-ce1e51fbc062-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Délai de remise : Kantonale Dateninfrastruktur (KDI) – Geoport
+ al Basel-Stadt\, Entwicklung und Betrieb sowie Wartung und Support eines G
+ eoportals
+DESCRIPTION:Acheteur public : Bau- und Verkehrsdepartement des Kantons Ba
+ sel-Stadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\n
+ Délai de remise : 25.11.2026\, 12 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/c382a44f-6955-46d3-b625-ce1e51fbc062/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/c382a44f-6
+ 955-46d3-b625-ce1e51fbc062
+URL:https://auftragsregister.ch/fr/auftrag/c382a44f-6955-46d3-b625-ce1e51fb
+ c062/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kantonale Dateninfrastruktur (KDI) – Geo
+ portal Basel-Stadt\, Entwicklung und Betrieb sowie Wartung und Support ein
+ es Geoportals
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

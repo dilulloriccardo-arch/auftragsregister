@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7d244409-7c8a-450d-b2a2-48c91e76b5e2-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T090000Z
+SUMMARY:Délai de remise : Travaux de génie civil pour les interventions
+  d'urgence SIG sur le canton de Genève
+DESCRIPTION:Acheteur public : Services industriels de Genève (SIG) - Dir
+ ection Achats\nDélai de remise : 01.12.2026\, 10 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/7d244409-7c8a-450d-b2a2-48
+ c91e76b5e2/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/7d244409-7c8a-450d-b2a2-48c91e76b5e2
+URL:https://auftragsregister.ch/fr/auftrag/7d244409-7c8a-450d-b2a2-48c91e76
+ b5e2/
+LOCATION:genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Travaux de génie civil pour les intervent
+ ions d'urgence SIG sur le canton de Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

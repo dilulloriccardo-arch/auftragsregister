@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2b11202-d564-47bc-81c6-f62159e1b99c-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261124T170000Z
+SUMMARY:Submission deadline: BKP 281.2 Bodenbeläge aus Linoleum
+DESCRIPTION:Public buyer: Stiftung Alterswohnungen der Stadt Zürich - SAW 
+ (Fokus Baumanagement)\nSubmission deadline: 24 Nov 2026\, 18:00\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/b2b11202-d564-47bc-81c6-f
+ 62159e1b99c/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /b2b11202-d564-47bc-81c6-f62159e1b99c
+URL:https://auftragsregister.ch/en/auftrag/b2b11202-d564-47bc-81c6-f62159e1
+ b99c/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 281.2 Bodenbeläge aus Linoleum
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

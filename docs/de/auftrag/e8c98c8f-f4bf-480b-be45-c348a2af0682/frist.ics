@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8c98c8f-f4bf-480b-be45-c348a2af0682-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T153000Z
+SUMMARY:Eingabefrist: PROJET DE CONSTRUCTION D’UN « CENTRE ÉDUCATIF ET 
+ PÉDAGOGIQUE »
+DESCRIPTION:Auftraggeber: Centre Educatif et Pédagogique (CEP)\nEingabefri
+ st: 02.11.2026\, 16.30 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/e8c98c8f-f4bf-480b-be45-c348a2af0682/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/e8c98c8f-f4bf-480b-be45-c348a2af0682
+URL:https://auftragsregister.ch/de/auftrag/e8c98c8f-f4bf-480b-be45-c348a2af
+ 0682/
+LOCATION:Estavayer-le-Lac
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: PROJET DE CONSTRUCTION D’UN « CENTRE ÉDUCATIF
+  ET PÉDAGOGIQUE »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

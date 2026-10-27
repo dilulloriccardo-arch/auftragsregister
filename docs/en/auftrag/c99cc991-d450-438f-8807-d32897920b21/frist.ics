@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c99cc991-d450-438f-8807-d32897920b21-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261109T130000Z
+SUMMARY:Submission deadline: Tender for the award of framework contracts fo
+ r the supply of foodstuffs for the two-year period 2027–2029 for the Giu
+ biasco Care Home Foundation
+DESCRIPTION:Public buyer: Fondazione Casa per Anziani di GIubiasco\nSubmiss
+ ion deadline: 9 Nov 2026\, 14:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/c99cc991-d450-438f-8807-d32897920b21/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/c99cc991-d450-438f-8807-d32897
+ 920b21
+URL:https://auftragsregister.ch/en/auftrag/c99cc991-d450-438f-8807-d3289792
+ 0b21/
+LOCATION:Giubiasco
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tender for the award of framework contract
+ s for the supply of foodstuffs for the two-year period 2027–2029 for the
+  Giubiasco Care Home Foundation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

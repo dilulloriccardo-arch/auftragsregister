@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:accd2e12-b3f9-453c-89ad-606baca9cdcb-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261106T080000Z
+SUMMARY:Délai de remise : IWB\, FW Tiefbauarbeiten Zürcherstrasse MP329
+ 2
+DESCRIPTION:Acheteur public : IWB Industrielle Werke Basel\nDélai de rem
+ ise : 06.11.2026\, 9 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/accd2e12-b3f9-453c-89ad-606baca9cdcb/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/accd2e12-b3f9-453c-89ad-
+ 606baca9cdcb
+URL:https://auftragsregister.ch/fr/auftrag/accd2e12-b3f9-453c-89ad-606baca9
+ cdcb/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IWB\, FW Tiefbauarbeiten Zürcherstrasse M
+ P3292
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16221a49-0367-4d68-bc37-f91db2aa7fd8-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Submission deadline: Lieferung von medizinischen Gasen an die Sanit
+ ät Basel
+DESCRIPTION:Public buyer: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nSubmis
+ sion deadline: 2 Nov 2026\, 12:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/16221a49-0367-4d68-bc37-f91db2aa7fd8/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/16221a49-0367-4d68-bc37-f91db
+ 2aa7fd8
+URL:https://auftragsregister.ch/en/auftrag/16221a49-0367-4d68-bc37-f91db2aa
+ 7fd8/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Lieferung von medizinischen Gasen an die S
+ anität Basel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:449d547c-5ad0-41e3-9a1f-b91071771e5e-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Délai de remise : BAV 80756 SPA Juchhof 3\, Ersatzneubau Gardero
+ bengebäude - CFC 222 Ferblanterie
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 05.11.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/449d547c-5ad0-41e3-9a1f-b91071771e5e/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/449d547c-5ad0-41e3-9
+ a1f-b91071771e5e
+URL:https://auftragsregister.ch/fr/auftrag/449d547c-5ad0-41e3-9a1f-b9107177
+ 1e5e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 80756 SPA Juchhof 3\, Ersatzneubau Gar
+ derobengebäude - CFC 222 Ferblanterie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ebcc35e1-ca78-426c-b5c3-4d64ffe9b27e-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Scadenza: MP-150016\, N02\, EP Arsenal - Hergiswil\, inkl. Ergänzu
+ ng Süd / Los ARHE BSA-6.06 Notruftelefon
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA -Abteilung Strasse
+ ninfrastruktur-Ost - F3\nScadenza: 23.11.2026\, 23:59\nNel registro: https
+ ://auftragsregister.ch/it/auftrag/ebcc35e1-ca78-426c-b5c3-4d64ffe9b27e/\nP
+ ubblicazione ufficiale: https://www.simap.ch/it/project-detail/ebcc35e1-ca
+ 78-426c-b5c3-4d64ffe9b27e
+URL:https://auftragsregister.ch/it/auftrag/ebcc35e1-ca78-426c-b5c3-4d64ffe9
+ b27e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-150016\, N02\, EP Arsenal - Hergiswil\, inkl. Erg
+ änzung Süd / Los ARHE BSA-6.06 Notruftelefon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

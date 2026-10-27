@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee026b16-3744-497d-94c6-87e279336e88-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20270119T140000Z
+SUMMARY:Scadenza: 16.7Hz\, 15kV Innenraumschaltanlage Unterwerk Zollikofen
+DESCRIPTION:Ente pubblico: SBB CFF FFS Infra-Energie\nScadenza: 19.01.2027\
+ , 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/ee026b16-374
+ 4-497d-94c6-87e279336e88/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/ee026b16-3744-497d-94c6-87e279336e88
+URL:https://auftragsregister.ch/it/auftrag/ee026b16-3744-497d-94c6-87e27933
+ 6e88/
+LOCATION:Zollikofen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 16.7Hz\, 15kV Innenraumschaltanlage Unterwerk Zolliko
+ fen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

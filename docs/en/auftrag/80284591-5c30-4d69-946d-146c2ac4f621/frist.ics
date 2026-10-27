@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:80284591-5c30-4d69-946d-146c2ac4f621-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Submission deadline: Sport- und Freizeitanlage Weyermannshaus\, Ges
+ amtsanierung\, BKP 201 Baugrubenaushub
+DESCRIPTION:Public buyer: Fachstelle Beschaffungswesen Stadt Bern\nSubmissi
+ on deadline: 16 Nov 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/80284591-5c30-4d69-946d-146c2ac4f621/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/80284591-5c30-4d69-946d-146c2a
+ c4f621
+URL:https://auftragsregister.ch/en/auftrag/80284591-5c30-4d69-946d-146c2ac4
+ f621/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sport- und Freizeitanlage Weyermannshaus\,
+  Gesamtsanierung\, BKP 201 Baugrubenaushub
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

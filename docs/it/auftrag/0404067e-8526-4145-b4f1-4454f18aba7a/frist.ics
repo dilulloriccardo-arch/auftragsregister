@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0404067e-8526-4145-b4f1-4454f18aba7a-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Scadenza: Wohnsiedlung Heidi Abel_BKP 215.2 Fassadenbekleidung
+DESCRIPTION:Ente pubblico: Stiftung Alterswohnen der Stadt Zürich (SAW) (G
+ üntensperger Baumanagement AG)\nScadenza: 01.12.2026\, 16:00\nNel registr
+ o: https://auftragsregister.ch/it/auftrag/0404067e-8526-4145-b4f1-4454f18a
+ ba7a/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/040
+ 4067e-8526-4145-b4f1-4454f18aba7a
+URL:https://auftragsregister.ch/it/auftrag/0404067e-8526-4145-b4f1-4454f18a
+ ba7a/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wohnsiedlung Heidi Abel_BKP 215.2 Fassadenbekleidung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

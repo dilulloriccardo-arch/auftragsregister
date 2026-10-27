@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:998503c8-4d1d-44f0-bb88-8a1f2790e50c-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Scadenza: Sanierung Alpenstrasse\, Abschnitt Dietlikon- bis Bürgli
+ strasse\, Dübendorf
+DESCRIPTION:Ente pubblico: Stadt Dübendorf\, Abteilung Tiefbau\nScadenza: 
+ 13.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/9
+ 98503c8-4d1d-44f0-bb88-8a1f2790e50c/\nPubblicazione ufficiale: https://www
+ .simap.ch/it/project-detail/998503c8-4d1d-44f0-bb88-8a1f2790e50c
+URL:https://auftragsregister.ch/it/auftrag/998503c8-4d1d-44f0-bb88-8a1f2790
+ e50c/
+LOCATION:Dübendorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Alpenstrasse\, Abschnitt Dietlikon- bis Bü
+ rglistrasse\, Dübendorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

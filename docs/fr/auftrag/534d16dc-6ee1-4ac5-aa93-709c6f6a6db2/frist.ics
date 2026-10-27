@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:534d16dc-6ee1-4ac5-aa93-709c6f6a6db2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Délai de remise : Travaux gros-oeuvre rénovation Obere Zwischen
+ grabenbrücke\, Unterseen
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 11.11.2026\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/534d16dc-6ee1-4ac5-aa93-709c6f6a6db2/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/534d16dc-6ee1-4ac5-aa93-
+ 709c6f6a6db2
+URL:https://auftragsregister.ch/fr/auftrag/534d16dc-6ee1-4ac5-aa93-709c6f6a
+ 6db2/
+LOCATION:Unterseen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Travaux gros-oeuvre rénovation Obere Zwis
+ chengrabenbrücke\, Unterseen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:396041a2-a89b-4587-9d07-8f8361b01b0f-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261119T140000Z
+SUMMARY:Délai de remise : Extension des locaux scolaires de Biel-Benken 
+ BL
+DESCRIPTION:Acheteur public : Gemeindeverwaltung Biel-Benken\nDélai de r
+ emise : 19.11.2026\, 15 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/396041a2-a89b-4587-9d07-8f8361b01b0f/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/396041a2-a89b-4587-9d
+ 07-8f8361b01b0f
+URL:https://auftragsregister.ch/fr/auftrag/396041a2-a89b-4587-9d07-8f8361b0
+ 1b0f/
+LOCATION:Biel-Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Extension des locaux scolaires de Biel-Ben
+ ken BL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

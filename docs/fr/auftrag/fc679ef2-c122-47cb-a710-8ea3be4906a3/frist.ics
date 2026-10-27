@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fc679ef2-c122-47cb-a710-8ea3be4906a3-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T220000Z
+SUMMARY:Délai de remise : Luterbach\, Zuchwilstrasse\, Bahnhof Luterbach
+ -Attisholz\, Neubau - Teilprojekt TP Nord\, Hauptlos Bauarbeiten Tiefbau B
+ ahnhofplatz
+DESCRIPTION:Acheteur public : Bau- und Justizdepartement des Kantons Solo
+ thurn\nDélai de remise : 13.11.2026\, 23 h 00\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/fc679ef2-c122-47cb-a710-8ea3be4906
+ a3/\nPublication officielle : https://www.simap.ch/fr/project-detail/fc6
+ 79ef2-c122-47cb-a710-8ea3be4906a3
+URL:https://auftragsregister.ch/fr/auftrag/fc679ef2-c122-47cb-a710-8ea3be49
+ 06a3/
+LOCATION:Luterbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Luterbach\, Zuchwilstrasse\, Bahnhof Luter
+ bach-Attisholz\, Neubau - Teilprojekt TP Nord\, Hauptlos Bauarbeiten Tiefb
+ au Bahnhofplatz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

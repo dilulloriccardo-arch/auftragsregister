@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d535c50b-405e-4fdb-a5d1-546143fc1486-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261201T225900Z
+SUMMARY:Délai de remise : Neubau Haus 07B - SKP 273096 Brandschutztore a
+ us Holz (AP04-02)
+DESCRIPTION:Acheteur public : Spitalanlagengesellschaft HOCH Health Ostsc
+ hweiz\nDélai de remise : 01.12.2026\, 23 h 59\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/d535c50b-405e-4fdb-a5d1-546143fc14
+ 86/\nPublication officielle : https://www.simap.ch/fr/project-detail/d53
+ 5c50b-405e-4fdb-a5d1-546143fc1486
+URL:https://auftragsregister.ch/fr/auftrag/d535c50b-405e-4fdb-a5d1-546143fc
+ 1486/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Haus 07B - SKP 273096 Brandschutzto
+ re aus Holz (AP04-02)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

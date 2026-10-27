@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f7d9b8ca-3c74-43bd-a816-20c0461ee9d7-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261211T225500Z
+SUMMARY:Délai de remise : Véhicule de lutte contre les incendies de cha
+ rs (TLF) pour la brigade de pompiers de Schönenwerd
+DESCRIPTION:Acheteur public : Feuerwehr Schönenwerd\nDélai de remise 
+ : 11.12.2026\, 23 h 55\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/f7d9b8ca-3c74-43bd-a816-20c0461ee9d7/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/f7d9b8ca-3c74-43bd-a816-20c04
+ 61ee9d7
+URL:https://auftragsregister.ch/fr/auftrag/f7d9b8ca-3c74-43bd-a816-20c0461e
+ e9d7/
+LOCATION:Schönenwerd
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Véhicule de lutte contre les incendies de
+  chars (TLF) pour la brigade de pompiers de Schönenwerd
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

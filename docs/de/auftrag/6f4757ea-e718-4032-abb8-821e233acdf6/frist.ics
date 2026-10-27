@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6f4757ea-e718-4032-abb8-821e233acdf6-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261103T225900Z
+SUMMARY:Eingabefrist: Haus 07B / SKP 271.1 / Spezielle Gipserarbeiten 07B i
+ nkl. Innenfesnter aus Metall
+DESCRIPTION:Auftraggeber: Spitalanlagengesellschaft HOCH Health Ostschweiz\
+ nEingabefrist: 03.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregis
+ ter.ch/de/auftrag/6f4757ea-e718-4032-abb8-821e233acdf6/\nAmtliche Publikat
+ ion: https://www.simap.ch/de/project-detail/6f4757ea-e718-4032-abb8-821e23
+ 3acdf6
+URL:https://auftragsregister.ch/de/auftrag/6f4757ea-e718-4032-abb8-821e233a
+ cdf6/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Haus 07B / SKP 271.1 / Spezielle Gipserarbeiten 0
+ 7B inkl. Innenfesnter aus Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6cedcac8-b0ab-49ae-9f7a-bc82f1bfd660-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Submission deadline: 18.0321_Gymnasium Neufeld_Ersatzneubau_BKP 283
+ _Deckenbekleidungen TP1-2
+DESCRIPTION:Public buyer: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nSubmission deadline: 7 Dec 2026\, 23:59\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/6cedcac8-b0ab-49ae-9f7a-bc82f1bfd660/\n
+ Official publication: https://www.simap.ch/en/project-detail/6cedcac8-b0ab
+ -49ae-9f7a-bc82f1bfd660
+URL:https://auftragsregister.ch/en/auftrag/6cedcac8-b0ab-49ae-9f7a-bc82f1bf
+ d660/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 18.0321_Gymnasium Neufeld_Ersatzneubau_BKP
+  283_Deckenbekleidungen TP1-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

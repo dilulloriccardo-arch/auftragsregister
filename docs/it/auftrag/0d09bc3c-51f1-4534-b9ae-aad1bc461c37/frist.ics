@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d09bc3c-51f1-4534-b9ae-aad1bc461c37-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Scadenza: Zukunft Bahnhof Bern\, Baustein 3b\, 211 Baumeisterarbeit
+ en
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 24.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/0d09bc3c-51f1-4534-b9ae-aad1bc461c37/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/0d09bc3c-51f1-4534-b9ae-aad1bc461c37
+URL:https://auftragsregister.ch/it/auftrag/0d09bc3c-51f1-4534-b9ae-aad1bc46
+ 1c37/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Zukunft Bahnhof Bern\, Baustein 3b\, 211 Baumeisterar
+ beiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

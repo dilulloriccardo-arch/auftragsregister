@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2c4a00fe-978c-4cfa-be44-a1de728fb43b-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Scadenza: Appel d’offre public pour la réalisation des deux prem
+ ières vagues du cinquième échantillon du Panel suisse de ménages (PSM)
+  et de l’étude sur l’emploi du temps STRATUS
+DESCRIPTION:Ente pubblico: FORS - Swiss Centre of Expertise in the Social S
+ ciences\nScadenza: 20.11.2026\, 12:00\nNel registro: https://auftragsregis
+ ter.ch/it/auftrag/2c4a00fe-978c-4cfa-be44-a1de728fb43b/\nPubblicazione uff
+ iciale: https://www.simap.ch/it/project-detail/2c4a00fe-978c-4cfa-be44-a1d
+ e728fb43b
+URL:https://auftragsregister.ch/it/auftrag/2c4a00fe-978c-4cfa-be44-a1de728f
+ b43b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Appel d’offre public pour la réalisation des deux 
+ premières vagues du cinquième échantillon du Panel suisse de ménages (
+ PSM) et de l’étude sur l’emploi du temps STRATUS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

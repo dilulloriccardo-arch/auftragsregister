@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:feb09a49-d436-4d86-80e1-16b90af86a4f-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20270129T150000Z
+SUMMARY:Scadenza: Schulraumerweiterung Aesch - Planerwahlverfahren (General
+ planer)
+DESCRIPTION:Ente pubblico: Gemeinde Maur (Brandenberger + Ruosch AG)\nScade
+ nza: 29.01.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/feb09a49-d436-4d86-80e1-16b90af86a4f/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/feb09a49-d436-4d86-80e1-16b90af86a4f
+URL:https://auftragsregister.ch/it/auftrag/feb09a49-d436-4d86-80e1-16b90af8
+ 6a4f/
+LOCATION:Maur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulraumerweiterung Aesch - Planerwahlverfahren (Gen
+ eralplaner)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

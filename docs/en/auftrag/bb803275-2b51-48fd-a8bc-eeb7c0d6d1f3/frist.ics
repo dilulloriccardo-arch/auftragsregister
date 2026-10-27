@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb803275-2b51-48fd-a8bc-eeb7c0d6d1f3-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261102T140000Z
+SUMMARY:Submission deadline: Prestations événementielles pour l'organisat
+ ion de la fête du personnel des HUG
+DESCRIPTION:Public buyer: Centrale d'achats et d’ingénierie biomédicale
+  des hôpitaux universitaires Vaud-Genève (CAIB)\nSubmission deadline: 2
+  Nov 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/bb803275-2b51-48fd-a8bc-eeb7c0d6d1f3/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/bb803275-2b51-48fd-a8bc-eeb7c0d6d1f3
+URL:https://auftragsregister.ch/en/auftrag/bb803275-2b51-48fd-a8bc-eeb7c0d6
+ d1f3/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Prestations événementielles pour l'organ
+ isation de la fête du personnel des HUG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

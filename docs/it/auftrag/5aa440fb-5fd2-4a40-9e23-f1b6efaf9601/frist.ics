@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5aa440fb-5fd2-4a40-9e23-f1b6efaf9601-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261106T100000Z
+SUMMARY:Scadenza: Neubau Haus im Dorf\, 8182 Hochfelden\, BKP 214 Holzbau
+DESCRIPTION:Ente pubblico: Gemeinde Hochfelden (L3P Architekten AG)\nScaden
+ za: 06.11.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/5aa440fb-5fd2-4a40-9e23-f1b6efaf9601/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/5aa440fb-5fd2-4a40-9e23-f1b6efaf9601
+URL:https://auftragsregister.ch/it/auftrag/5aa440fb-5fd2-4a40-9e23-f1b6efaf
+ 9601/
+LOCATION:Hochfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Haus im Dorf\, 8182 Hochfelden\, BKP 214 Holzb
+ au
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

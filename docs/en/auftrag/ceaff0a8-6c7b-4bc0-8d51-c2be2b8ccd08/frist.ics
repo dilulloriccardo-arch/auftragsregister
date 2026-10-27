@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ceaff0a8-6c7b-4bc0-8d51-c2be2b8ccd08-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:1
+DTSTART:20261119T150000Z
+SUMMARY:Submission deadline: tpg – Transformation et rénovation du CMB -
+  LOT N°1 – DEMOLITIONS \; INSTALLATIONS DE CHANTIER \; MACONNERIE – (
+ CFC 211.1\, 114\, 135\, 141.1\, 211.6)
+DESCRIPTION:Public buyer: Transport publics genevois (tpg)\nSubmission dead
+ line: 19 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/
+ en/auftrag/ceaff0a8-6c7b-4bc0-8d51-c2be2b8ccd08/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/ceaff0a8-6c7b-4bc0-8d51-c2be2b8ccd08
+URL:https://auftragsregister.ch/en/auftrag/ceaff0a8-6c7b-4bc0-8d51-c2be2b8c
+ cd08/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: tpg – Transformation et rénovation du C
+ MB - LOT N°1 – DEMOLITIONS \; INSTALLATIONS DE CHANTIER \; MACONNERIE 
+ – (CFC 211.1\, 114\, 135\, 141.1\, 211.6)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

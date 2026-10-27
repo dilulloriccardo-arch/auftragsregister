@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f4c3d67e-77a9-45c2-a322-00ebe71db542-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261117T100000Z
+SUMMARY:Délai de remise : Acquisition d'une salle de radio fluoroscopie
+DESCRIPTION:Acheteur public : Réseau Santé Balcon du Jura.vd (Centrale 
+ d'achat et d'ingénierie biomédicale (CAIB))\nDélai de remise : 17.11.
+ 2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/f4c3d67e-77a9-45c2-a322-00ebe71db542/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/f4c3d67e-77a9-45c2-a322-00ebe71db542
+URL:https://auftragsregister.ch/fr/auftrag/f4c3d67e-77a9-45c2-a322-00ebe71d
+ b542/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition d'une salle de radio fluorosco
+ pie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6d14dcc-6cc9-4c0a-b15c-3f64a8f1c31f-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Submission deadline: Gemeindezentrum Bremgarten b. Bern\, BKP 244 L
+ üftungsinstallationen
+DESCRIPTION:Public buyer: Einwohnergemeinde Bremgarten b. Bern (maurer baul
+ eitung gmbh)\nSubmission deadline: 27 Nov 2026\, 23:59\nIn the register:
+  https://auftragsregister.ch/en/auftrag/d6d14dcc-6cc9-4c0a-b15c-3f64a8f1c3
+ 1f/\nOfficial publication: https://www.simap.ch/en/project-detail/d6d14dcc
+ -6cc9-4c0a-b15c-3f64a8f1c31f
+URL:https://auftragsregister.ch/en/auftrag/d6d14dcc-6cc9-4c0a-b15c-3f64a8f1
+ c31f/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gemeindezentrum Bremgarten b. Bern\, BKP 2
+ 44 Lüftungsinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

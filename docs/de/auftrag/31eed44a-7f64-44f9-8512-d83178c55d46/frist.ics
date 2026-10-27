@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:31eed44a-7f64-44f9-8512-d83178c55d46-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261111T150000Z
+SUMMARY:Eingabefrist: MP-230042 NEB N13 Pavimentazione Magadino-Ascona\, Lo
+ t 001\, laboratoire du maître d'ouvrage
+DESCRIPTION:Auftraggeber: Ufficio federale delle strade USTRA\, divisione i
+ nfrastruttura stradale Est\nEingabefrist: 11.11.2026\, 16.00 Uhr\nIm Regi
+ ster: https://auftragsregister.ch/de/auftrag/31eed44a-7f64-44f9-8512-d8317
+ 8c55d46/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/31e
+ ed44a-7f64-44f9-8512-d83178c55d46
+URL:https://auftragsregister.ch/de/auftrag/31eed44a-7f64-44f9-8512-d83178c5
+ 5d46/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-230042 NEB N13 Pavimentazione Magadino-Ascona\
+ , Lot 001\, laboratoire du maître d'ouvrage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

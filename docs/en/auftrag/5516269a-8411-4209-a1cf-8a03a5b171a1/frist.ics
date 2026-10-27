@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5516269a-8411-4209-a1cf-8a03a5b171a1-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261214T140000Z
+SUMMARY:Submission deadline: Systemintegration der Pilotanlage VIS (Visual 
+ Inspection System) und ZDS (Zugdetektionssystem) und Kauf der Blitzer
+DESCRIPTION:Public buyer: SBB CFF FFS Infra-ESP-EIT-BST\nSubmission deadlin
+ e: 14 Dec 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/5516269a-8411-4209-a1cf-8a03a5b171a1/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/5516269a-8411-4209-a1cf-8a03a5b171a1
+URL:https://auftragsregister.ch/en/auftrag/5516269a-8411-4209-a1cf-8a03a5b1
+ 71a1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Systemintegration der Pilotanlage VIS (Vis
+ ual Inspection System) und ZDS (Zugdetektionssystem) und Kauf der Blitzer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

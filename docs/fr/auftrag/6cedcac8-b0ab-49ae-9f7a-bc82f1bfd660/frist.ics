@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6cedcac8-b0ab-49ae-9f7a-bc82f1bfd660-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Délai de remise : 18.0321_Gymnase de Neufeld_Construction de rem
+ placement_CFC 283 Faux-plafonds SP1-2
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 07.12.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/6cedcac8-b0ab-49ae-9f7a-b
+ c82f1bfd660/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/6cedcac8-b0ab-49ae-9f7a-bc82f1bfd660
+URL:https://auftragsregister.ch/fr/auftrag/6cedcac8-b0ab-49ae-9f7a-bc82f1bf
+ d660/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 18.0321_Gymnase de Neufeld_Construction de
+  remplacement_CFC 283 Faux-plafonds SP1-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d4eb7b5-3558-4308-9f18-d5dbadb9caee-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261029T150000Z
+SUMMARY:Submission deadline: IMA ZV Kaserne Zürich\, Gesamtinstandsetzung/
+ Umnutzung l BKP 272-03 Metallbauarbeiten (neu)
+DESCRIPTION:Public buyer: Hochbauamt Kanton Zürich\, Baubereich C\nSubmiss
+ ion deadline: 29 Oct 2026\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/6d4eb7b5-3558-4308-9f18-d5dbadb9caee/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/6d4eb7b5-3558-4308-9f18-d5dba
+ db9caee
+URL:https://auftragsregister.ch/en/auftrag/6d4eb7b5-3558-4308-9f18-d5dbadb9
+ caee/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: IMA ZV Kaserne Zürich\, Gesamtinstandsetz
+ ung/Umnutzung l BKP 272-03 Metallbauarbeiten (neu)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

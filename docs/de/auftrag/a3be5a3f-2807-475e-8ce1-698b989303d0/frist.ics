@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a3be5a3f-2807-475e-8ce1-698b989303d0-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261104T150000Z
+SUMMARY:Eingabefrist: ZGSZ l 45518 l BKP 250-01 Sanitäranlagen
+DESCRIPTION:Auftraggeber: Hochbauamt\, Baubereich B\nEingabefrist: 04.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a3be5
+ a3f-2807-475e-8ce1-698b989303d0/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/a3be5a3f-2807-475e-8ce1-698b989303d0
+URL:https://auftragsregister.ch/de/auftrag/a3be5a3f-2807-475e-8ce1-698b9893
+ 03d0/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ZGSZ l 45518 l BKP 250-01 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

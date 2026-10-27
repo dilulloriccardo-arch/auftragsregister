@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d156f5b1-2898-4179-82a7-3738e2cc3fe2-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T150000Z
+SUMMARY:Scadenza: Concorso 288 - Licenze software Mobile Iron
+DESCRIPTION:Ente pubblico: Centro sistemi informativi\nScadenza: 10.11.2026
+ \, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/d156f5b1-28
+ 98-4179-82a7-3738e2cc3fe2/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/d156f5b1-2898-4179-82a7-3738e2cc3fe2
+URL:https://auftragsregister.ch/it/auftrag/d156f5b1-2898-4179-82a7-3738e2cc
+ 3fe2/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso 288 - Licenze software Mobile Iron
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

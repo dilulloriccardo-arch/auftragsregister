@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dbfcea35-c45f-42da-b6d9-d845ff8183d8-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Scadenza: BKP 281 Boden- und Wandbeläge aus Platten - Thun\, Polyg
+ on\, Sanierung Gebäudehülle Haustechnik
+DESCRIPTION:Ente pubblico: armasuisse Immobilien\nScadenza: 19.11.2026\nNel
+  registro: https://auftragsregister.ch/it/auftrag/dbfcea35-c45f-42da-b6d9-
+ d845ff8183d8/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/dbfcea35-c45f-42da-b6d9-d845ff8183d8
+URL:https://auftragsregister.ch/it/auftrag/dbfcea35-c45f-42da-b6d9-d845ff81
+ 83d8/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 281 Boden- und Wandbeläge aus Platten - Thun\, P
+ olygon\, Sanierung Gebäudehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

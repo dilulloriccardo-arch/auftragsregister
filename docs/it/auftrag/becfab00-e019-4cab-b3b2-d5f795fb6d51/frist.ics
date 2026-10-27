@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:becfab00-e019-4cab-b3b2-d5f795fb6d51-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Scadenza: Reinigungsdienstleistungen Kantonsschule Zürich Nord
+DESCRIPTION:Ente pubblico: Kanton Zürich\, Bildungsdirektion\, Mittelschul
+ - und Berufsbildungsamt\nScadenza: 02.12.2026\, 12:00\nNel registro: https
+ ://auftragsregister.ch/it/auftrag/becfab00-e019-4cab-b3b2-d5f795fb6d51/\nP
+ ubblicazione ufficiale: https://www.simap.ch/it/project-detail/becfab00-e0
+ 19-4cab-b3b2-d5f795fb6d51
+URL:https://auftragsregister.ch/it/auftrag/becfab00-e019-4cab-b3b2-d5f795fb
+ 6d51/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Reinigungsdienstleistungen Kantonsschule Zürich Nord
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

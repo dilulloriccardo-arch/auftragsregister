@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0befdfd1-0c0d-4402-9b48-aa92b081f3be-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T083000Z
+SUMMARY:Eingabefrist: Concorso per la fornitura di generi alimentari 01.01.
+ 2027 - 31.12.2027
+DESCRIPTION:Auftraggeber: ECAM - Ente Case Anziani Mendrisiotto Franco Bass
+ i\nEingabefrist: 23.11.2026\, 9.30 Uhr\nIm Register: https://auftragsregi
+ ster.ch/de/auftrag/0befdfd1-0c0d-4402-9b48-aa92b081f3be/\nAmtliche Publika
+ tion: https://www.simap.ch/de/project-detail/0befdfd1-0c0d-4402-9b48-aa92b
+ 081f3be
+URL:https://auftragsregister.ch/de/auftrag/0befdfd1-0c0d-4402-9b48-aa92b081
+ f3be/
+LOCATION:Mendrisio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Concorso per la fornitura di generi alimentari 01
+ .01.2027 - 31.12.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

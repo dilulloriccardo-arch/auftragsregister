@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:199f9376-3900-4ab6-ad49-fd925e8c2ad4-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261027T225900Z
+SUMMARY:Scadenza: Centro Sanitario Bregaglia\, Umbau Casa Ganzoni - BKP 244
+  Lüftungsanlage
+DESCRIPTION:Ente pubblico: Centro Sanitario Bregaglia\nScadenza: 27.10.2026
+ \, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/199f9376-39
+ 00-4ab6-ad49-fd925e8c2ad4/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/199f9376-3900-4ab6-ad49-fd925e8c2ad4
+URL:https://auftragsregister.ch/it/auftrag/199f9376-3900-4ab6-ad49-fd925e8c
+ 2ad4/
+LOCATION:Promotogno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Centro Sanitario Bregaglia\, Umbau Casa Ganzoni - BKP
+  244 Lüftungsanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

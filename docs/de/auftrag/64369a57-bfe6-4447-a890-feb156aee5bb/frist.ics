@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:64369a57-bfe6-4447-a890-feb156aee5bb-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261117T120000Z
+SUMMARY:Eingabefrist: Betriebserhaltung der Azure DevOps Server-Plattform\,
+  CI/CD-Beratung und Architektur-Expertise
+DESCRIPTION:Auftraggeber: Service de l'informatique et des télécommunicat
+ ions (SITel)\nEingabefrist: 17.11.2026\, 13.00 Uhr\nIm Register: https://
+ auftragsregister.ch/de/auftrag/64369a57-bfe6-4447-a890-feb156aee5bb/\nAmtl
+ iche Publikation: https://www.simap.ch/de/project-detail/64369a57-bfe6-444
+ 7-a890-feb156aee5bb
+URL:https://auftragsregister.ch/de/auftrag/64369a57-bfe6-4447-a890-feb156ae
+ e5bb/
+LOCATION:Givisiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Betriebserhaltung der Azure DevOps Server-Plattfo
+ rm\, CI/CD-Beratung und Architektur-Expertise
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

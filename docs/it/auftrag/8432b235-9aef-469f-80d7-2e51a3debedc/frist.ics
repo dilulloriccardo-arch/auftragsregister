@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8432b235-9aef-469f-80d7-2e51a3debedc-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Scadenza: Neubau Seniorenwohnungen Herosé\, Aarau - BKP 211.2 Baum
+ eisterarbeiten
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Aarau - Stadtbauamt\, Sektion 
+ Hochbau\nScadenza: 26.11.2026\, 16:00\nNel registro: https://auftragsregis
+ ter.ch/it/auftrag/8432b235-9aef-469f-80d7-2e51a3debedc/\nPubblicazione uff
+ iciale: https://www.simap.ch/it/project-detail/8432b235-9aef-469f-80d7-2e5
+ 1a3debedc
+URL:https://auftragsregister.ch/it/auftrag/8432b235-9aef-469f-80d7-2e51a3de
+ bedc/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Seniorenwohnungen Herosé\, Aarau - BKP 211.2 
+ Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c09d97a5-2639-4caf-a14b-89359af0d1b7-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Submission deadline: 24-kV-Medium-Voltage Switchgear UW Grynau and 
+ UW Linthal
+DESCRIPTION:Public buyer: Axpo Grid AG\nSubmission deadline: 4 Dec 2026\,
+  23:59\nIn the register: https://auftragsregister.ch/en/auftrag/c09d97a5-2
+ 639-4caf-a14b-89359af0d1b7/\nOfficial publication: https://www.simap.ch/en
+ /project-detail/c09d97a5-2639-4caf-a14b-89359af0d1b7
+URL:https://auftragsregister.ch/en/auftrag/c09d97a5-2639-4caf-a14b-89359af0
+ d1b7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 24-kV-Medium-Voltage Switchgear UW Grynau 
+ and UW Linthal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

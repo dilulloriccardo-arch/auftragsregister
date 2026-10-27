@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dcac171f-b2c6-4e65-9839-829aa6e85a35-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261106T140000Z
+SUMMARY:Délai de remise : 1301 BKP 271.1 Gipserarbeiten Trockenbau\, Pä
+ dagogische Maturitätsschule Kreuzlingen\, Teilinnensanierung Klostergebä
+ ude
+DESCRIPTION:Acheteur public : Kantonales Hochbauamt Thurgau\nDélai de re
+ mise : 06.11.2026\, 15 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/dcac171f-b2c6-4e65-9839-829aa6e85a35/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/dcac171f-b2c6-4e65-983
+ 9-829aa6e85a35
+URL:https://auftragsregister.ch/fr/auftrag/dcac171f-b2c6-4e65-9839-829aa6e8
+ 5a35/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 1301 BKP 271.1 Gipserarbeiten Trockenbau\,
+  Pädagogische Maturitätsschule Kreuzlingen\, Teilinnensanierung Klosterg
+ ebäude
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

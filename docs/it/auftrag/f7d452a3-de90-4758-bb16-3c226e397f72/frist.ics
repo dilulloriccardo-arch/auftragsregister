@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f7d452a3-de90-4758-bb16-3c226e397f72-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261120T160000Z
+SUMMARY:Scadenza: Rénovation des Infrastructures du Théâtre Benno Besson
+  - Electricité
+DESCRIPTION:Ente pubblico: Ville d'Yverdon-les-Bains - Service des bâtimen
+ ts\nScadenza: 20.11.2026\, 17:00\nNel registro: https://auftragsregister.c
+ h/it/auftrag/f7d452a3-de90-4758-bb16-3c226e397f72/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/f7d452a3-de90-4758-bb16-3c226e39
+ 7f72
+URL:https://auftragsregister.ch/it/auftrag/f7d452a3-de90-4758-bb16-3c226e39
+ 7f72/
+LOCATION:Yverdon-les-Bains
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rénovation des Infrastructures du Théâtre Benno Be
+ sson - Electricité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

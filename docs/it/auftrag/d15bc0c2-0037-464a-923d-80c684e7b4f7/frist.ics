@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d15bc0c2-0037-464a-923d-80c684e7b4f7-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261118T090000Z
+SUMMARY:Scadenza: Einwohnergemeinde Cham - Personenversicherungen per 01.01
+ .2027
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Cham\nScadenza: 18.11.2026\, 1
+ 0:00\nNel registro: https://auftragsregister.ch/it/auftrag/d15bc0c2-0037-4
+ 64a-923d-80c684e7b4f7/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/d15bc0c2-0037-464a-923d-80c684e7b4f7
+URL:https://auftragsregister.ch/it/auftrag/d15bc0c2-0037-464a-923d-80c684e7
+ b4f7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Einwohnergemeinde Cham - Personenversicherungen per 0
+ 1.01.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

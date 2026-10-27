@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:54a65873-42a9-40cf-ae60-01e6ea00286c-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Eingabefrist: Kommunikationsdienstleistungen im Bereich Klimaschutz
+DESCRIPTION:Auftraggeber: GUD - Umwelt- und Gesundheitsschutz (UGZ)\nEingab
+ efrist: 23.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/54a65873-42a9-40cf-ae60-01e6ea00286c/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/54a65873-42a9-40cf-ae60-01e6ea00286c
+URL:https://auftragsregister.ch/de/auftrag/54a65873-42a9-40cf-ae60-01e6ea00
+ 286c/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kommunikationsdienstleistungen im Bereich Klimasc
+ hutz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

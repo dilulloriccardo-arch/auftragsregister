@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:26177c1e-e1f1-44eb-b975-21d2e61b4c4f-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Délai de remise : Renouvellement de voie Vuitebœuf - Baulmes (l
+ igne Yverdon - Ste-Croix)\, km 9.980-11.006 - Prestations de construction 
+ GC - Phases 52/53
+DESCRIPTION:Acheteur public : TRAVYS SA\nDélai de remise : 09.12.2026\
+ , 11 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag
+ /26177c1e-e1f1-44eb-b975-21d2e61b4c4f/\nPublication officielle : https:/
+ /www.simap.ch/fr/project-detail/26177c1e-e1f1-44eb-b975-21d2e61b4c4f
+URL:https://auftragsregister.ch/fr/auftrag/26177c1e-e1f1-44eb-b975-21d2e61b
+ 4c4f/
+LOCATION:Baulmes
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Renouvellement de voie Vuitebœuf - Baulme
+ s (ligne Yverdon - Ste-Croix)\, km 9.980-11.006 - Prestations de construct
+ ion GC - Phases 52/53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

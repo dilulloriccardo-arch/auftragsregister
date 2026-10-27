@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c678e15a-6798-4e66-a9a2-65569a98baec-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261106T110000Z
+SUMMARY:Scadenza: Ersatz Aufgabe-Überwachung AKA WE
+DESCRIPTION:Ente pubblico: Die Schweizerische Post AG\nScadenza: 06.11.2026
+ \, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/c678e15a-67
+ 98-4e66-a9a2-65569a98baec/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/c678e15a-6798-4e66-a9a2-65569a98baec
+URL:https://auftragsregister.ch/it/auftrag/c678e15a-6798-4e66-a9a2-65569a98
+ baec/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatz Aufgabe-Überwachung AKA WE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

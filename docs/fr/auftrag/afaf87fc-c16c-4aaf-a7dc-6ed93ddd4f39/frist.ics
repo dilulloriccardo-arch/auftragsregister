@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:afaf87fc-c16c-4aaf-a7dc-6ed93ddd4f39-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261030T070000Z
+SUMMARY:Délai de remise : Gaserschliessung AXPO Kompogas und Wauwiler Ch
+ ampignons\, Baumeisterarbeiten
+DESCRIPTION:Acheteur public : ewl Rohrnetz AG\nDélai de remise : 30.10
+ .2026\, 8 h 00\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/afaf87fc-c16c-4aaf-a7dc-6ed93ddd4f39/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/afaf87fc-c16c-4aaf-a7dc-6ed93ddd4f39
+URL:https://auftragsregister.ch/fr/auftrag/afaf87fc-c16c-4aaf-a7dc-6ed93ddd
+ 4f39/
+LOCATION:Wauwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gaserschliessung AXPO Kompogas und Wauwile
+ r Champignons\, Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:960be01b-263a-41d1-9767-d353fc9fe29c-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261207T225900Z
+SUMMARY:Délai de remise : (26169) 735 Cours de formation du CIVI « Séc
+ urité au travail et connaissance des machines » et « Maniement sûr de 
+ la tronçonneuse »
+DESCRIPTION:Acheteur public : Bundesamt für Zivildienst ZIVI\nDélai de 
+ remise : 07.12.2026\, 23 h 59\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/960be01b-263a-41d1-9767-d353fc9fe29c/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/960be01b-263a-41d1-9
+ 767-d353fc9fe29c
+URL:https://auftragsregister.ch/fr/auftrag/960be01b-263a-41d1-9767-d353fc9f
+ e29c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26169) 735 Cours de formation du CIVI « 
+ Sécurité au travail et connaissance des machines » et « Maniement sûr
+  de la tronçonneuse »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

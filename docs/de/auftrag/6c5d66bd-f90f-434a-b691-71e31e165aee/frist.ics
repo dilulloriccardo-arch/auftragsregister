@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c5d66bd-f90f-434a-b691-71e31e165aee-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Eingabefrist: ETH Zürich\, LCA\, Photovoltaikanlage
+DESCRIPTION:Auftraggeber: ETH Zürich - REM / Abt. Procurement Services VPI
+ N\nEingabefrist: 02.12.2026\, 23.59 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/6c5d66bd-f90f-434a-b691-71e31e165aee/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/6c5d66bd-f90f-434a-b691-71e3
+ 1e165aee
+URL:https://auftragsregister.ch/de/auftrag/6c5d66bd-f90f-434a-b691-71e31e16
+ 5aee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ETH Zürich\, LCA\, Photovoltaikanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

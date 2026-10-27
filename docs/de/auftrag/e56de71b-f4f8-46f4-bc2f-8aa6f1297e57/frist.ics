@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e56de71b-f4f8-46f4-bc2f-8aa6f1297e57-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:1
+DTSTART:20261104T225900Z
+SUMMARY:Eingabefrist: Verstellen von Fahrzeugen
+DESCRIPTION:Auftraggeber: Kantonspolizei Bern\nEingabefrist: 04.11.2026\, 2
+ 3.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e56de71b-f4
+ f8-46f4-bc2f-8aa6f1297e57/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/e56de71b-f4f8-46f4-bc2f-8aa6f1297e57
+URL:https://auftragsregister.ch/de/auftrag/e56de71b-f4f8-46f4-bc2f-8aa6f129
+ 7e57/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Verstellen von Fahrzeugen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

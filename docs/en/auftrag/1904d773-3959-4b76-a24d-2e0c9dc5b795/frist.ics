@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1904d773-3959-4b76-a24d-2e0c9dc5b795-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Submission deadline: Erweiterung Umbau Sonnegrund Haus für Betagte
+ \, 9533 Kirchberg / BKP 273.1 Innentüren
+DESCRIPTION:Public buyer: Politische Gemeinde Kirchberg\nSubmission deadlin
+ e: 13 Nov 2026\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 1904d773-3959-4b76-a24d-2e0c9dc5b795/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/1904d773-3959-4b76-a24d-2e0c9dc5b795
+URL:https://auftragsregister.ch/en/auftrag/1904d773-3959-4b76-a24d-2e0c9dc5
+ b795/
+LOCATION:Kirchberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Erweiterung Umbau Sonnegrund Haus für Bet
+ agte\, 9533 Kirchberg / BKP 273.1 Innentüren
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

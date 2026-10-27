@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:946bf9b1-1108-4c1a-bf62-e734c5130f6e-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T130000Z
+SUMMARY:Scadenza: Maintenance de la solution UKG Employee File Management -
+  fourniture de licences et connecteur UKG/SAP SuccessFactors
+DESCRIPTION:Ente pubblico: Services industriels de Genève (SIG) - Directio
+ n Achats\nScadenza: 16.11.2026\, 14:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/946bf9b1-1108-4c1a-bf62-e734c5130f6e/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/946bf9b1-1108-4c1a-bf62-e7
+ 34c5130f6e
+URL:https://auftragsregister.ch/it/auftrag/946bf9b1-1108-4c1a-bf62-e734c513
+ 0f6e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Maintenance de la solution UKG Employee File Manageme
+ nt - fourniture de licences et connecteur UKG/SAP SuccessFactors
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

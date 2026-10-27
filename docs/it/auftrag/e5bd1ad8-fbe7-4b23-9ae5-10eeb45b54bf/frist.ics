@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5bd1ad8-fbe7-4b23-9ae5-10eeb45b54bf-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Scadenza: Drehstrom-Verteiltransformatoren 1000kVA NISV + 250kVA NI
+ SV /Strahlungsarm
+DESCRIPTION:Ente pubblico: Strategischer Einkauf EBL\, Öffentliche Beschaf
+ fung\nScadenza: 02.11.2026\, 12:00\nNel registro: https://auftragsregister
+ .ch/it/auftrag/e5bd1ad8-fbe7-4b23-9ae5-10eeb45b54bf/\nPubblicazione uffici
+ ale: https://www.simap.ch/it/project-detail/e5bd1ad8-fbe7-4b23-9ae5-10eeb4
+ 5b54bf
+URL:https://auftragsregister.ch/it/auftrag/e5bd1ad8-fbe7-4b23-9ae5-10eeb45b
+ 54bf/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Drehstrom-Verteiltransformatoren 1000kVA NISV + 250kV
+ A NISV /Strahlungsarm
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b0d7ee00-5461-4797-96fc-1af4c17119ea-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T225900Z
+SUMMARY:Submission deadline: Arsenfiltrationsanlage
+DESCRIPTION:Public buyer: Gemeinde St. Moritz\nSubmission deadline: 10 Nov
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/b0
+ d7ee00-5461-4797-96fc-1af4c17119ea/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/b0d7ee00-5461-4797-96fc-1af4c17119ea
+URL:https://auftragsregister.ch/en/auftrag/b0d7ee00-5461-4797-96fc-1af4c171
+ 19ea/
+LOCATION:St. Moritz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Arsenfiltrationsanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

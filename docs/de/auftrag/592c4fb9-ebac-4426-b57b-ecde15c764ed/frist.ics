@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:592c4fb9-ebac-4426-b57b-ecde15c764ed-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261116T133000Z
+SUMMARY:Eingabefrist: Concorso per la fornitura di generi alimentari 2027
+DESCRIPTION:Auftraggeber: ECAB - Ente Casa Anziani Biasca\nEingabefrist: 16
+ .11.2026\, 14.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /592c4fb9-ebac-4426-b57b-ecde15c764ed/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/592c4fb9-ebac-4426-b57b-ecde15c764ed
+URL:https://auftragsregister.ch/de/auftrag/592c4fb9-ebac-4426-b57b-ecde15c7
+ 64ed/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Concorso per la fornitura di generi alimentari 20
+ 27
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

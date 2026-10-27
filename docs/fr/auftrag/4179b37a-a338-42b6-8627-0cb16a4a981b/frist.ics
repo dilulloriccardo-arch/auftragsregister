@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4179b37a-a338-42b6-8627-0cb16a4a981b-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261116T225900Z
+SUMMARY:Délai de remise : Acquisition d'un module de puissance doté d'u
+ n système de commande associé en vue de la mise en place d'une alimentat
+ ion haute tension
+DESCRIPTION:Acheteur public : EPFL-Scientific Equipment\nDélai de remise
+  : 16.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/4179b37a-a338-42b6-8627-0cb16a4a981b/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/4179b37a-a338-42b6-8627-0c
+ b16a4a981b
+URL:https://auftragsregister.ch/fr/auftrag/4179b37a-a338-42b6-8627-0cb16a4a
+ 981b/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition d'un module de puissance doté
+  d'un système de commande associé en vue de la mise en place d'une alime
+ ntation haute tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

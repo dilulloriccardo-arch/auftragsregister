@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:012be017-398e-4b0b-bdb8-157709566212-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261123T153000Z
+SUMMARY:Délai de remise : Projet Schinzenhof et maison communale « Rén
+ ovation des installations techniques\, mise en conformité avec les normes
+  de sécurité incendie et réaménagement des voies d'accès extérieures
+  »\, CFC 213 Construction métallique et garde-corps HELIX
+DESCRIPTION:Acheteur public : Gemeinde Horgen\nDélai de remise : 23.11
+ .2026\, 16 h 30\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/012be017-398e-4b0b-bdb8-157709566212/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/012be017-398e-4b0b-bdb8-157709566212
+URL:https://auftragsregister.ch/fr/auftrag/012be017-398e-4b0b-bdb8-15770956
+ 6212/
+LOCATION:Horgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet Schinzenhof et maison communale « 
+ Rénovation des installations techniques\, mise en conformité avec les no
+ rmes de sécurité incendie et réaménagement des voies d'accès extérie
+ ures »\, CFC 213 Construction métallique et garde-corps HELIX
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

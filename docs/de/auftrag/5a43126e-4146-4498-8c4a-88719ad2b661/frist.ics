@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a43126e-4146-4498-8c4a-88719ad2b661-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261105T225900Z
+SUMMARY:Eingabefrist: FVV Brücke Au - Lustenau Baumeisterarbeiten
+DESCRIPTION:Auftraggeber: Politische Gemeinde Au\nEingabefrist: 05.11.2026\
+ , 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5a43126e
+ -4146-4498-8c4a-88719ad2b661/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/5a43126e-4146-4498-8c4a-88719ad2b661
+URL:https://auftragsregister.ch/de/auftrag/5a43126e-4146-4498-8c4a-88719ad2
+ b661/
+LOCATION:Au
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: FVV Brücke Au - Lustenau Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

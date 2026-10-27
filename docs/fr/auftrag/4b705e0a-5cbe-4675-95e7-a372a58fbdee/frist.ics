@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b705e0a-5cbe-4675-95e7-a372a58fbdee-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261208T150000Z
+SUMMARY:Délai de remise : Mise à jour et développement de l'analyse na
+ tionale des risques « Catastrophes et situations d'urgence en Suisse 2030
+  & 2035 » (KNS)
+DESCRIPTION:Acheteur public : armasuisse Ressourcen und Support CC WTO\nD
+ élai de remise : 08.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/4b705e0a-5cbe-4675-95e7-a372a58fbdee/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/4b705e0a-5c
+ be-4675-95e7-a372a58fbdee
+URL:https://auftragsregister.ch/fr/auftrag/4b705e0a-5cbe-4675-95e7-a372a58f
+ bdee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mise à jour et développement de l'analys
+ e nationale des risques « Catastrophes et situations d'urgence en Suisse 
+ 2030 & 2035 » (KNS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a186aae1-6d52-4268-a58f-224253b01f47-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Délai de remise : Ersatzbeschaffung Beatmungsgeräte Intensivsta
+ tion
+DESCRIPTION:Acheteur public : Universitäts-Kinderspital Zürich\nDélai 
+ de remise : 23.11.2026\, 16 h 00\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/a186aae1-6d52-4268-a58f-224253b01f47/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/a186aae1-6d52-426
+ 8-a58f-224253b01f47
+URL:https://auftragsregister.ch/fr/auftrag/a186aae1-6d52-4268-a58f-224253b0
+ 1f47/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatzbeschaffung Beatmungsgeräte Intensi
+ vstation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

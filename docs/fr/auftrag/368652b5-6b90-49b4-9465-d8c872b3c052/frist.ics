@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:368652b5-6b90-49b4-9465-d8c872b3c052-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Délai de remise : EPFL - AN CMi extension et P3 extension – Pr
+ estations de mandataires
+DESCRIPTION:Acheteur public : EPFL - VPF - Achats\nDélai de remise : 0
+ 2.12.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/368652b5-6b90-49b4-9465-d8c872b3c052/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/368652b5-6b90-49b4-9465-d8c872
+ b3c052
+URL:https://auftragsregister.ch/fr/auftrag/368652b5-6b90-49b4-9465-d8c872b3
+ c052/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EPFL - AN CMi extension et P3 extension 
+ – Prestations de mandataires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

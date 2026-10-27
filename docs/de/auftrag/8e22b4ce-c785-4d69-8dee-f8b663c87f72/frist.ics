@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8e22b4ce-c785-4d69-8dee-f8b663c87f72-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261201T110000Z
+SUMMARY:Eingabefrist: Lot 18 : Gestion des eaux claires et des eaux usées
+DESCRIPTION:Auftraggeber: Achats - TMR SA\nEingabefrist: 01.12.2026\, 12.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8e22b4ce-c785-4
+ d69-8dee-f8b663c87f72/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/8e22b4ce-c785-4d69-8dee-f8b663c87f72
+URL:https://auftragsregister.ch/de/auftrag/8e22b4ce-c785-4d69-8dee-f8b663c8
+ 7f72/
+LOCATION:Martigny
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Lot 18 : Gestion des eaux claires et des eaux us
+ ées
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

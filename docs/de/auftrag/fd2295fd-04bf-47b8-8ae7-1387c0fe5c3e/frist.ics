@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fd2295fd-04bf-47b8-8ae7-1387c0fe5c3e-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261208T180000Z
+SUMMARY:Eingabefrist: Phishing Plattform
+DESCRIPTION:Auftraggeber: Kanton Zürich Finanzdirektion Amt für Informati
+ k\nEingabefrist: 08.12.2026\, 19.00 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/fd2295fd-04bf-47b8-8ae7-1387c0fe5c3e/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/fd2295fd-04bf-47b8-8ae7-1387
+ c0fe5c3e
+URL:https://auftragsregister.ch/de/auftrag/fd2295fd-04bf-47b8-8ae7-1387c0fe
+ 5c3e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Phishing Plattform
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

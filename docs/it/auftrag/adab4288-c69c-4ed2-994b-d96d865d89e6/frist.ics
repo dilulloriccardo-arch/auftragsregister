@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:adab4288-c69c-4ed2-994b-d96d865d89e6-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261113T140000Z
+SUMMARY:Scadenza: Fachhochschulzentrum Graubünden (FHZGR)\, Chur / BKP 335
+  Schwachstromapparate AV-Ausstattung
+DESCRIPTION:Ente pubblico: Hochbauamt Graubünden\nScadenza: 13.11.2026\, 1
+ 5:00\nNel registro: https://auftragsregister.ch/it/auftrag/adab4288-c69c-4
+ ed2-994b-d96d865d89e6/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/adab4288-c69c-4ed2-994b-d96d865d89e6
+URL:https://auftragsregister.ch/it/auftrag/adab4288-c69c-4ed2-994b-d96d865d
+ 89e6/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fachhochschulzentrum Graubünden (FHZGR)\, Chur / BKP
+  335 Schwachstromapparate AV-Ausstattung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

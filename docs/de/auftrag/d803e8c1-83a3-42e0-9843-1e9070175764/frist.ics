@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d803e8c1-83a3-42e0-9843-1e9070175764-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261111T150000Z
+SUMMARY:Eingabefrist: 23119 Schanzengraben Ersatzmassnahmen
+DESCRIPTION:Auftraggeber: Tiefbauamt Stadt Zürich\, Kunstbauten + Objektmg
+ t.\nEingabefrist: 11.11.2026\, 16.00 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/d803e8c1-83a3-42e0-9843-1e9070175764/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/d803e8c1-83a3-42e0-9843-1e9
+ 070175764
+URL:https://auftragsregister.ch/de/auftrag/d803e8c1-83a3-42e0-9843-1e907017
+ 5764/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 23119 Schanzengraben Ersatzmassnahmen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

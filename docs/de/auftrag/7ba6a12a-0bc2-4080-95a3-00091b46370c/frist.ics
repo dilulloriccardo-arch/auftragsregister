@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ba6a12a-0bc2-4080-95a3-00091b46370c-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261201T110000Z
+SUMMARY:Eingabefrist: Berufliche Integrationsbegleitung (BIG)
+DESCRIPTION:Auftraggeber: Amt für Wirtschaft und Arbeit\, Abteilung LAM\nE
+ ingabefrist: 01.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/7ba6a12a-0bc2-4080-95a3-00091b46370c/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/7ba6a12a-0bc2-4080-95a3-00091b46
+ 370c
+URL:https://auftragsregister.ch/de/auftrag/7ba6a12a-0bc2-4080-95a3-00091b46
+ 370c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Berufliche Integrationsbegleitung (BIG)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

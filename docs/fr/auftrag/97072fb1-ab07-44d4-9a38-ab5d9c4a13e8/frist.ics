@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:97072fb1-ab07-44d4-9a38-ab5d9c4a13e8-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261118T100000Z
+SUMMARY:Délai de remise : Restauration et extension de la Bibliothèque 
+ de Genève (M370TI) Mandat d'ingénieur spécialiste géotechnicien
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 18.11.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/97072fb1-ab07-44d4-9a38-ab5d9c4a13e
+ 8/\nPublication officielle : https://www.simap.ch/fr/project-detail/9707
+ 2fb1-ab07-44d4-9a38-ab5d9c4a13e8
+URL:https://auftragsregister.ch/fr/auftrag/97072fb1-ab07-44d4-9a38-ab5d9c4a
+ 13e8/
+LOCATION:Promenade des Bastions 8
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Restauration et extension de la Bibliothè
+ que de Genève (M370TI) Mandat d'ingénieur spécialiste géotechnicien
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

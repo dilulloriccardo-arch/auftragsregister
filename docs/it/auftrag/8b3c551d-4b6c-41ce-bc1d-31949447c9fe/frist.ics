@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8b3c551d-4b6c-41ce-bc1d-31949447c9fe-frist@auftragsregister.ch
+DTSTAMP:20260909T000000Z
+SEQUENCE:0
+DTSTART:20261030T110000Z
+SUMMARY:Scadenza: MVR-N - Point de croisement à Crêt-d'y-Bau\, renouvelle
+ ment de la halte et de la sous-station - Travaux de génie civil\, voie fe
+ rrée\, basse tension et second œuvre
+DESCRIPTION:Ente pubblico: Transports Montreux-Vevey-Riviera SA\nScadenza: 
+ 30.10.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/8
+ b3c551d-4b6c-41ce-bc1d-31949447c9fe/\nPubblicazione ufficiale: https://www
+ .simap.ch/it/project-detail/8b3c551d-4b6c-41ce-bc1d-31949447c9fe
+URL:https://auftragsregister.ch/it/auftrag/8b3c551d-4b6c-41ce-bc1d-31949447
+ c9fe/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MVR-N - Point de croisement à Crêt-d'y-Bau\, renouv
+ ellement de la halte et de la sous-station - Travaux de génie civil\, voi
+ e ferrée\, basse tension et second œuvre
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

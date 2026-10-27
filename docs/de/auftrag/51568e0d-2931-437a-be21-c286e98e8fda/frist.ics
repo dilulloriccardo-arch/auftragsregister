@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:51568e0d-2931-437a-be21-c286e98e8fda-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Eingabefrist: Gemeindezentrum Bremgarten b. Bern\, BKP 250 Sanitär
+ installationen
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Bremgarten b. Bern (maurer baul
+ eitung gmbh)\nEingabefrist: 27.11.2026\, 23.59 Uhr\nIm Register: https://
+ auftragsregister.ch/de/auftrag/51568e0d-2931-437a-be21-c286e98e8fda/\nAmtl
+ iche Publikation: https://www.simap.ch/de/project-detail/51568e0d-2931-437
+ a-be21-c286e98e8fda
+URL:https://auftragsregister.ch/de/auftrag/51568e0d-2931-437a-be21-c286e98e
+ 8fda/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gemeindezentrum Bremgarten b. Bern\, BKP 250 Sani
+ tärinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

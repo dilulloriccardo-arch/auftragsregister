@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a74ad9a9-d1f7-4b0d-9b67-3cadf88bedb7-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261204T150000Z
+SUMMARY:Submission deadline: transN - L222 - La Chaux-de-Fonds - Les Ponts-
+ de-Martel – Etudes et travaux GC infrastructures à câbles (Entreprise 
+ Totale)
+DESCRIPTION:Public buyer: transports publics neuchâtelois SA\nSubmission d
+ eadline: 4 Dec 2026\, 16:00\nIn the register: https://auftragsregister.c
+ h/en/auftrag/a74ad9a9-d1f7-4b0d-9b67-3cadf88bedb7/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/a74ad9a9-d1f7-4b0d-9b67-3cadf88bedb
+ 7
+URL:https://auftragsregister.ch/en/auftrag/a74ad9a9-d1f7-4b0d-9b67-3cadf88b
+ edb7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: transN - L222 - La Chaux-de-Fonds - Les Po
+ nts-de-Martel – Etudes et travaux GC infrastructures à câbles (Entrepr
+ ise Totale)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

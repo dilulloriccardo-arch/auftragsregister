@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db226330-a754-40bd-ba95-7545d6d3cc8e-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261113T225900Z
+SUMMARY:Scadenza: Rahmenvertrag für Herstellung\, Prüfung und Lieferung v
+ on Gasisolierter Leistungsschalter 123 kV
+DESCRIPTION:Ente pubblico: Axpo Grid AG\nScadenza: 13.11.2026\, 23:59\nNel 
+ registro: https://auftragsregister.ch/it/auftrag/db226330-a754-40bd-ba95-7
+ 545d6d3cc8e/\nPubblicazione ufficiale: https://www.simap.ch/it/project-det
+ ail/db226330-a754-40bd-ba95-7545d6d3cc8e
+URL:https://auftragsregister.ch/it/auftrag/db226330-a754-40bd-ba95-7545d6d3
+ cc8e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenvertrag für Herstellung\, Prüfung und Lieferu
+ ng von Gasisolierter Leistungsschalter 123 kV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

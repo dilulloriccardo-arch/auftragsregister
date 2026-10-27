@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:471af242-a160-4343-a7b5-45d8edc1e58e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Eingabefrist: M-Files - Renouvellement des licences et des prestati
+ ons de développement de la plateforme
+DESCRIPTION:Auftraggeber: DFNS - Service de l'informatique\nEingabefrist: 0
+ 4.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/471af242-a160-4343-a7b5-45d8edc1e58e/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/471af242-a160-4343-a7b5-45d8edc1e58e
+URL:https://auftragsregister.ch/de/auftrag/471af242-a160-4343-a7b5-45d8edc1
+ e58e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: M-Files - Renouvellement des licences et des pres
+ tations de développement de la plateforme
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

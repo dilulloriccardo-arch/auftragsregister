@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2dcba10b-5b7f-47b9-94e7-e2b56294afb4-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20270205T140000Z
+SUMMARY:Submission deadline: HUG - Pôle Thérapeutique Opéra - Entrepr
+ ise Totale
+DESCRIPTION:Public buyer: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nSubmission deadline: 5 Feb 2027\, 15:00\nIn the regi
+ ster: https://auftragsregister.ch/en/auftrag/2dcba10b-5b7f-47b9-94e7-e2b56
+ 294afb4/\nOfficial publication: https://www.simap.ch/en/project-detail/2dc
+ ba10b-5b7f-47b9-94e7-e2b56294afb4
+URL:https://auftragsregister.ch/en/auftrag/2dcba10b-5b7f-47b9-94e7-e2b56294
+ afb4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: HUG - Pôle Thérapeutique Opéra - Ent
+ reprise Totale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

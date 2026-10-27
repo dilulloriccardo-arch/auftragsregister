@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8571d6ca-838f-4199-9a0c-99ac5bf8d695-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261126T140000Z
+SUMMARY:Scadenza: Ausschreibungsunterlagen "Mittagessen für die Tagesstruk
+ turen der Volksschule Emmen
+DESCRIPTION:Ente pubblico: Gemeinde Emmen\nScadenza: 26.11.2026\, 15:00\nNe
+ l registro: https://auftragsregister.ch/it/auftrag/8571d6ca-838f-4199-9a0c
+ -99ac5bf8d695/\nPubblicazione ufficiale: https://www.simap.ch/it/project-d
+ etail/8571d6ca-838f-4199-9a0c-99ac5bf8d695
+URL:https://auftragsregister.ch/it/auftrag/8571d6ca-838f-4199-9a0c-99ac5bf8
+ d695/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibungsunterlagen "Mittagessen für die Tagess
+ trukturen der Volksschule Emmen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

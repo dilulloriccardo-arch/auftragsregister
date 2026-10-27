@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71ada165-2294-4971-a36e-a781398be474-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Submission deadline: Bau und Ausrüstung eines Tanklöschfahrzeugs
+DESCRIPTION:Public buyer: Politische Gemeinde Mönchaltorf\nSubmission dead
+ line: 14 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/
+ en/auftrag/71ada165-2294-4971-a36e-a781398be474/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/71ada165-2294-4971-a36e-a781398be474
+URL:https://auftragsregister.ch/en/auftrag/71ada165-2294-4971-a36e-a781398b
+ e474/
+LOCATION:Mönchaltorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bau und Ausrüstung eines Tanklöschfahrze
+ ugs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

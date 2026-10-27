@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6adca218-6d8b-4977-8029-e404b09dc7b5-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261110T110000Z
+SUMMARY:Submission deadline: Renfort équipes SAP@EPFL
+DESCRIPTION:Public buyer: EPFL - Domaine des Achats\nSubmission deadline: 1
+ 0 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/6adca218-6d8b-4977-8029-e404b09dc7b5/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/6adca218-6d8b-4977-8029-e404b09dc7b5
+URL:https://auftragsregister.ch/en/auftrag/6adca218-6d8b-4977-8029-e404b09d
+ c7b5/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Renfort équipes SAP@EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

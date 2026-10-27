@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:11cd357a-52bd-4694-ae0f-b19f84954b29-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Scadenza: Assicurazione malattia collettiva perdita di guadagno - C
+ omune di Stabio
+DESCRIPTION:Ente pubblico: Comune di Stabio\nScadenza: 16.11.2026\, 11:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/11cd357a-52bd-4694-ae
+ 0f-b19f84954b29/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/11cd357a-52bd-4694-ae0f-b19f84954b29
+URL:https://auftragsregister.ch/it/auftrag/11cd357a-52bd-4694-ae0f-b19f8495
+ 4b29/
+LOCATION:Stabio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Assicurazione malattia collettiva perdita di guadagno
+  - Comune di Stabio
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

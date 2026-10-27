@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2590a85e-e946-4b8e-9d65-4cb0472c9894-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261124T140000Z
+SUMMARY:Submission deadline: Schulraumerweiterung Kilchbühl Biel-Benken (B
+ asel-Land)\, BKP 211 Baumeisterarbeiten
+DESCRIPTION:Public buyer: Gemeindeverwaltung Biel-Benken\nSubmission deadli
+ ne: 24 Nov 2026\, 15:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/2590a85e-e946-4b8e-9d65-4cb0472c9894/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/2590a85e-e946-4b8e-9d65-4cb0472c9894
+URL:https://auftragsregister.ch/en/auftrag/2590a85e-e946-4b8e-9d65-4cb0472c
+ 9894/
+LOCATION:Biel-Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schulraumerweiterung Kilchbühl Biel-Benke
+ n (Basel-Land)\, BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

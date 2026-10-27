@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5bd1ad8-fbe7-4b23-9ae5-10eeb45b54bf-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Submission deadline: Drehstrom-Verteiltransformatoren 1000kVA NISV 
+ + 250kVA NISV /Strahlungsarm
+DESCRIPTION:Public buyer: Strategischer Einkauf EBL\, Öffentliche Beschaff
+ ung\nSubmission deadline: 2 Nov 2026\, 12:00\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/e5bd1ad8-fbe7-4b23-9ae5-10eeb45b54bf/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/e5bd1ad8-fbe7-4b23
+ -9ae5-10eeb45b54bf
+URL:https://auftragsregister.ch/en/auftrag/e5bd1ad8-fbe7-4b23-9ae5-10eeb45b
+ 54bf/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Drehstrom-Verteiltransformatoren 1000kVA N
+ ISV + 250kVA NISV /Strahlungsarm
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

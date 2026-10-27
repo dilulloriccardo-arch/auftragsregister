@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7fcf61af-ce65-40a9-bf25-2609df04057c-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261031T110000Z
+SUMMARY:Scadenza: Beleuchtungssanierung Stiftung zuwebe\, Untere Rainstrass
+ e 31\, 6341 Baar
+DESCRIPTION:Ente pubblico: elmaplan ag\nScadenza: 31.10.2026\, 12:00\nNel r
+ egistro: https://auftragsregister.ch/it/auftrag/7fcf61af-ce65-40a9-bf25-26
+ 09df04057c/\nPubblicazione ufficiale: https://www.simap.ch/it/project-deta
+ il/7fcf61af-ce65-40a9-bf25-2609df04057c
+URL:https://auftragsregister.ch/it/auftrag/7fcf61af-ce65-40a9-bf25-2609df04
+ 057c/
+LOCATION:Baar
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beleuchtungssanierung Stiftung zuwebe\, Untere Rainst
+ rasse 31\, 6341 Baar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

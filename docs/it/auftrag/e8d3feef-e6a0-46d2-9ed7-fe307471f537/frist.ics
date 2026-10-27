@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8d3feef-e6a0-46d2-9ed7-fe307471f537-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Scadenza: LOS 2 Generator Hilfssysteme Kraftwerk Pradella
+DESCRIPTION:Ente pubblico: Engadiner Kraftwerke AG\nScadenza: 18.11.2026\nN
+ el registro: https://auftragsregister.ch/it/auftrag/e8d3feef-e6a0-46d2-9ed
+ 7-fe307471f537/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/e8d3feef-e6a0-46d2-9ed7-fe307471f537
+URL:https://auftragsregister.ch/it/auftrag/e8d3feef-e6a0-46d2-9ed7-fe307471
+ f537/
+LOCATION:Pradella
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: LOS 2 Generator Hilfssysteme Kraftwerk Pradella
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

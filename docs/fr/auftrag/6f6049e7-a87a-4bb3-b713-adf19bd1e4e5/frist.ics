@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6f6049e7-a87a-4bb3-b713-adf19bd1e4e5-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Délai de remise : MP-090088\, EM AS Neuenhof - jonction de Dieti
+ kon revêtement / entrepreneur-construction
+DESCRIPTION:Acheteur public : Eidgenössisches Departement für Umwelt\, 
+ Verkehr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abtei
+ lung Strasseninfrastruktur-Ost - F3\nDélai de remise : 15.12.2026\, 23
+  h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/6f6
+ 049e7-a87a-4bb3-b713-adf19bd1e4e5/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/6f6049e7-a87a-4bb3-b713-adf19bd1e4e5
+URL:https://auftragsregister.ch/fr/auftrag/6f6049e7-a87a-4bb3-b713-adf19bd1
+ e4e5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-090088\, EM AS Neuenhof - jonction de D
+ ietikon revêtement / entrepreneur-construction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

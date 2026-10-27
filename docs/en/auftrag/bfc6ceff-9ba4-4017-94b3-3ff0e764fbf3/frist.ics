@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bfc6ceff-9ba4-4017-94b3-3ff0e764fbf3-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261117T150000Z
+SUMMARY:Submission deadline: Agrandissement et rénovation de l'école du B
+ elvédère_CFC 215.2_Construction légère préfabriquée_Façade bois
+DESCRIPTION:Public buyer: Commune de Chêne-Bougeries - Giorgis Rodriguez A
+ rchitectes SA\nSubmission deadline: 17 Nov 2026\, 16:00\nIn the register
+ : https://auftragsregister.ch/en/auftrag/bfc6ceff-9ba4-4017-94b3-3ff0e764f
+ bf3/\nOfficial publication: https://www.simap.ch/en/project-detail/bfc6cef
+ f-9ba4-4017-94b3-3ff0e764fbf3
+URL:https://auftragsregister.ch/en/auftrag/bfc6ceff-9ba4-4017-94b3-3ff0e764
+ fbf3/
+LOCATION:Chêne-Bougeries
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Agrandissement et rénovation de l'école 
+ du Belvédère_CFC 215.2_Construction légère préfabriquée_Façade bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

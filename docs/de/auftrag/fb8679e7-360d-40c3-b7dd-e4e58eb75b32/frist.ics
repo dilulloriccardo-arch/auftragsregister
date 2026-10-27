@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb8679e7-360d-40c3-b7dd-e4e58eb75b32-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:1
+DTSTART:20261127T110000Z
+SUMMARY:Eingabefrist: Marché de licences informatiques Microsoft
+DESCRIPTION:Auftraggeber: Centrale d'achats Etablissements Publics pour l'I
+ ntégration\nEingabefrist: 27.11.2026\, 12.00 Uhr\nIm Register: https://a
+ uftragsregister.ch/de/auftrag/fb8679e7-360d-40c3-b7dd-e4e58eb75b32/\nAmtli
+ che Publikation: https://www.simap.ch/de/project-detail/fb8679e7-360d-40c3
+ -b7dd-e4e58eb75b32
+URL:https://auftragsregister.ch/de/auftrag/fb8679e7-360d-40c3-b7dd-e4e58eb7
+ 5b32/
+LOCATION:Collonge - Bellerive
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Marché de licences informatiques Microsoft
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

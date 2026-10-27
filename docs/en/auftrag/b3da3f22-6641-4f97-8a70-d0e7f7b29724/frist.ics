@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3da3f22-6641-4f97-8a70-d0e7f7b29724-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T090000Z
+SUMMARY:Submission deadline: Einwohnergemeinde Steinhausen - Unfallversiche
+ rungen per 01.01.2027
+DESCRIPTION:Public buyer: Einwohnergemeinde Steinhausen\nSubmission deadlin
+ e: 16 Nov 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/b3da3f22-6641-4f97-8a70-d0e7f7b29724/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/b3da3f22-6641-4f97-8a70-d0e7f7b29724
+URL:https://auftragsregister.ch/en/auftrag/b3da3f22-6641-4f97-8a70-d0e7f7b2
+ 9724/
+LOCATION:Steinhausen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Einwohnergemeinde Steinhausen - Unfallvers
+ icherungen per 01.01.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

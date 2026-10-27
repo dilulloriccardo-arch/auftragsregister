@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb3f108e-0412-4379-8d5f-e8e3cb7dfbf7-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Délai de remise : IRM 1.5 T à technologie « low helium »
+DESCRIPTION:Acheteur public : Hôpital du Valais - Service Achats\nDélai
+  de remise : 13.11.2026\, 23 h 59\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/eb3f108e-0412-4379-8d5f-e8e3cb7dfbf7/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/eb3f108e-0412-43
+ 79-8d5f-e8e3cb7dfbf7
+URL:https://auftragsregister.ch/fr/auftrag/eb3f108e-0412-4379-8d5f-e8e3cb7d
+ fbf7/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IRM 1.5 T à technologie « low helium »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

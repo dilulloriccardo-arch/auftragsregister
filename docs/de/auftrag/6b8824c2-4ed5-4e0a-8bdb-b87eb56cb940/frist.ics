@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b8824c2-4ed5-4e0a-8bdb-b87eb56cb940-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T170000Z
+SUMMARY:Eingabefrist: Ersatz Schliessanlagen Gemeinde Kaiseraugst
+DESCRIPTION:Auftraggeber: Gemeinde Kaiseraugst\nEingabefrist: 02.11.2026\, 
+ 18.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/6b8824c2-4
+ ed5-4e0a-8bdb-b87eb56cb940/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/6b8824c2-4ed5-4e0a-8bdb-b87eb56cb940
+URL:https://auftragsregister.ch/de/auftrag/6b8824c2-4ed5-4e0a-8bdb-b87eb56c
+ b940/
+LOCATION:Kaiseraugst
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatz Schliessanlagen Gemeinde Kaiseraugst
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

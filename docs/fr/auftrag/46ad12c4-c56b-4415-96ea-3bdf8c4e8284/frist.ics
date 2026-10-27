@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46ad12c4-c56b-4415-96ea-3bdf8c4e8284-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Délai de remise : Rund um den OP\, BKP 277.22 OP Systemtrennwän
+ de
+DESCRIPTION:Acheteur public : Hirslanden AG\, Corporate Office (Ghisleni 
+ Partner AG)\nDélai de remise : 02.11.2026\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/46ad12c4-c56b-4415-96ea-3bdf8c4e8284/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/46ad12c4-c5
+ 6b-4415-96ea-3bdf8c4e8284
+URL:https://auftragsregister.ch/fr/auftrag/46ad12c4-c56b-4415-96ea-3bdf8c4e
+ 8284/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rund um den OP\, BKP 277.22 OP Systemtrenn
+ wände
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c599ee69-6b65-44c0-984c-806954fc3af2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Eingabefrist: MVR-N - Centre de maintenance matériel roulant à Mo
+ ntreux - Travaux de tirage de câbles et basse tension
+DESCRIPTION:Auftraggeber: Transports Montreux-Vevey-Riviera SA\nEingabefris
+ t: 13.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/au
+ ftrag/c599ee69-6b65-44c0-984c-806954fc3af2/\nAmtliche Publikation: https:/
+ /www.simap.ch/de/project-detail/c599ee69-6b65-44c0-984c-806954fc3af2
+URL:https://auftragsregister.ch/de/auftrag/c599ee69-6b65-44c0-984c-806954fc
+ 3af2/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MVR-N - Centre de maintenance matériel roulant 
+ à Montreux - Travaux de tirage de câbles et basse tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

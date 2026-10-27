@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e666a48e-ec74-47f0-a6ea-e5204cdeb774-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:3
+DTSTART:20261201T225900Z
+SUMMARY:Scadenza: 150 kV Leitung Fuhren - Innertkirchen // 150 kV Leitung H
+ opflauenen - Innertkirchen
+DESCRIPTION:Ente pubblico: Kraftwerke Oberhasli AG\nScadenza: 01.12.2026\, 
+ 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/e666a48e-ec74-
+ 47f0-a6ea-e5204cdeb774/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/e666a48e-ec74-47f0-a6ea-e5204cdeb774
+URL:https://auftragsregister.ch/it/auftrag/e666a48e-ec74-47f0-a6ea-e5204cde
+ b774/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 150 kV Leitung Fuhren - Innertkirchen // 150 kV Leitu
+ ng Hopflauenen - Innertkirchen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

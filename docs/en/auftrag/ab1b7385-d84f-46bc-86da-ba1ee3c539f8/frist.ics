@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab1b7385-d84f-46bc-86da-ba1ee3c539f8-frist@auftragsregister.ch
+DTSTAMP:20260904T000000Z
+SEQUENCE:0
+DTSTART:20261030T225900Z
+SUMMARY:Submission deadline: Untervaz\, Weiche 51\, Baumeisterarbeiten
+DESCRIPTION:Public buyer: Rhätische Bahn AG\nSubmission deadline: 30 Oct
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/ab
+ 1b7385-d84f-46bc-86da-ba1ee3c539f8/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/ab1b7385-d84f-46bc-86da-ba1ee3c539f8
+URL:https://auftragsregister.ch/en/auftrag/ab1b7385-d84f-46bc-86da-ba1ee3c5
+ 39f8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Untervaz\, Weiche 51\, Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

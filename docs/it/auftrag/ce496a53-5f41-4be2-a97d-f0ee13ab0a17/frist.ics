@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce496a53-5f41-4be2-a97d-f0ee13ab0a17-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Scadenza: V1297 Zürich\, Erweiterung EZ Bullingerstr. 39\; Baumeis
+ terarbeiten
+DESCRIPTION:Ente pubblico: Elektrizitätswerk der Stadt Zürich (ewz)\nScad
+ enza: 30.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/ce496a53-5f41-4be2-a97d-f0ee13ab0a17/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/ce496a53-5f41-4be2-a97d-f0ee13ab0a17
+URL:https://auftragsregister.ch/it/auftrag/ce496a53-5f41-4be2-a97d-f0ee13ab
+ 0a17/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: V1297 Zürich\, Erweiterung EZ Bullingerstr. 39\; Bau
+ meisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

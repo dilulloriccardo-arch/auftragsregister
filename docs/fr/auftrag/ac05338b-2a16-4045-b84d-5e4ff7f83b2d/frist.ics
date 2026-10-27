@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac05338b-2a16-4045-b84d-5e4ff7f83b2d-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Délai de remise : Station de conditionnement d’eaux du lac "Ai
+  Ronchi" - Revêtements en résine
+DESCRIPTION:Acheteur public : Consorzio Acquedotto Regionale del Mendrisi
+ otto (ARM)\nDélai de remise : 20.11.2026\, 11 h 00\nDans le registr
+ e : https://auftragsregister.ch/fr/auftrag/ac05338b-2a16-4045-b84d-5e4ff
+ 7f83b2d/\nPublication officielle : https://www.simap.ch/fr/project-detai
+ l/ac05338b-2a16-4045-b84d-5e4ff7f83b2d
+URL:https://auftragsregister.ch/fr/auftrag/ac05338b-2a16-4045-b84d-5e4ff7f8
+ 3b2d/
+LOCATION:Riva San Vitale
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Station de conditionnement d’eaux du lac
+  "Ai Ronchi" - Revêtements en résine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

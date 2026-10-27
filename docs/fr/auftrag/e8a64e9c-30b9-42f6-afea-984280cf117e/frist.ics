@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8a64e9c-30b9-42f6-afea-984280cf117e-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261126T225900Z
+SUMMARY:Délai de remise : 748 Valserstrasse\, Hohe Brücke – Travaux d
+ e maçonnerie
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 26.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/e8a64e9c-30b9-42f6-afea-984280cf117e/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/e8a64e9c-30b9-42f6-afea-98428
+ 0cf117e
+URL:https://auftragsregister.ch/fr/auftrag/e8a64e9c-30b9-42f6-afea-984280cf
+ 117e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 748 Valserstrasse\, Hohe Brücke – Trava
+ ux de maçonnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

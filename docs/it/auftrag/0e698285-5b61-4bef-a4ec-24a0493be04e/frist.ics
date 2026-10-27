@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e698285-5b61-4bef-a4ec-24a0493be04e-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261108T225900Z
+SUMMARY:Scadenza: Montagebau in Holz
+DESCRIPTION:Ente pubblico: Gemeindeverwaltung Horw\nScadenza: 08.11.2026\, 
+ 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/0e698285-5b61-
+ 4bef-a4ec-24a0493be04e/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/0e698285-5b61-4bef-a4ec-24a0493be04e
+URL:https://auftragsregister.ch/it/auftrag/0e698285-5b61-4bef-a4ec-24a0493b
+ e04e/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

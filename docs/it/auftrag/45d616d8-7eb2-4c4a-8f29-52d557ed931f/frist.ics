@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45d616d8-7eb2-4c4a-8f29-52d557ed931f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T150000Z
+SUMMARY:Scadenza: Stadt Chur - Büromobiliar
+DESCRIPTION:Ente pubblico: Stadt Chur - Immobilien und Bewirtschaftung\, Fa
+ cility Services\nScadenza: 12.11.2026\, 16:00\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/45d616d8-7eb2-4c4a-8f29-52d557ed931f/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/45d616d8-7eb2-4c4a-
+ 8f29-52d557ed931f
+URL:https://auftragsregister.ch/it/auftrag/45d616d8-7eb2-4c4a-8f29-52d557ed
+ 931f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Stadt Chur - Büromobiliar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd01f264-c0df-4ff5-8b6b-54494e1f537b-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261029T150000Z
+SUMMARY:Scadenza: Linge de toilette
+DESCRIPTION:Ente pubblico: Centrale d'achats et d'ingénierie biomédicale 
+ Vaud-Genève (CAIB)\nScadenza: 29.10.2026\, 16:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/bd01f264-c0df-4ff5-8b6b-54494e1f537b/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/bd01f264-c0df-4
+ ff5-8b6b-54494e1f537b
+URL:https://auftragsregister.ch/it/auftrag/bd01f264-c0df-4ff5-8b6b-54494e1f
+ 537b/
+LOCATION:Thônex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Linge de toilette
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

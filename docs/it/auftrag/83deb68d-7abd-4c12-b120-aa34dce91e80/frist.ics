@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83deb68d-7abd-4c12-b120-aa34dce91e80-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Scadenza: USZ Campus MITTE 1|2 / BKP 283.12 Deckenbekleidungen aus 
+ Metall - Paket 2 (OV)
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 24.11.202
+ 6\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/83deb68d-7
+ abd-4c12-b120-aa34dce91e80/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/83deb68d-7abd-4c12-b120-aa34dce91e80
+URL:https://auftragsregister.ch/it/auftrag/83deb68d-7abd-4c12-b120-aa34dce9
+ 1e80/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: USZ Campus MITTE 1|2 / BKP 283.12 Deckenbekleidungen 
+ aus Metall - Paket 2 (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

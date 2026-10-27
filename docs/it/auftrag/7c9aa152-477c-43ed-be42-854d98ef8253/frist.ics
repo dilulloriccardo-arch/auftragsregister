@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7c9aa152-477c-43ed-be42-854d98ef8253-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Scadenza: Schulraumerweiterung Primarschule Metzerlen-Mariastein\, 
+ Neubau Holzmodulbau als Generalunternehmerleistung
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Metzerlen-Mariastein\nScadenza
+ : 13.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag
+ /7c9aa152-477c-43ed-be42-854d98ef8253/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/7c9aa152-477c-43ed-be42-854d98ef8253
+URL:https://auftragsregister.ch/it/auftrag/7c9aa152-477c-43ed-be42-854d98ef
+ 8253/
+LOCATION:Metzerlen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulraumerweiterung Primarschule Metzerlen-Mariastei
+ n\, Neubau Holzmodulbau als Generalunternehmerleistung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

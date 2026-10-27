@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f4c3d67e-77a9-45c2-a322-00ebe71db542-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261117T100000Z
+SUMMARY:Eingabefrist: Acquisition d'une salle de radio fluoroscopie
+DESCRIPTION:Auftraggeber: Réseau Santé Balcon du Jura.vd (Centrale d'acha
+ t et d'ingénierie biomédicale (CAIB))\nEingabefrist: 17.11.2026\, 11.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/f4c3d67e-77a9-4
+ 5c2-a322-00ebe71db542/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/f4c3d67e-77a9-45c2-a322-00ebe71db542
+URL:https://auftragsregister.ch/de/auftrag/f4c3d67e-77a9-45c2-a322-00ebe71d
+ b542/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Acquisition d'une salle de radio fluoroscopie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

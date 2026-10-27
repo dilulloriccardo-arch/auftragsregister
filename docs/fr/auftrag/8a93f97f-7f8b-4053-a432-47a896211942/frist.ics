@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a93f97f-7f8b-4053-a432-47a896211942-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261202T100000Z
+SUMMARY:Délai de remise : Gare des Eaux-Vives - Lot BC (2367TI) Garde-co
+ rps\, serrurerie éléments divers
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 02.12.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/8a93f97f-7f8b-4053-a432-47a89621194
+ 2/\nPublication officielle : https://www.simap.ch/fr/project-detail/8a93
+ f97f-7f8b-4053-a432-47a896211942
+URL:https://auftragsregister.ch/fr/auftrag/8a93f97f-7f8b-4053-a432-47a89621
+ 1942/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gare des Eaux-Vives - Lot BC (2367TI) Gard
+ e-corps\, serrurerie éléments divers
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

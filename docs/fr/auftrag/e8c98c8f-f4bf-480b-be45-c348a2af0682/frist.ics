@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8c98c8f-f4bf-480b-be45-c348a2af0682-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T153000Z
+SUMMARY:Délai de remise : PROJET DE CONSTRUCTION D’UN « CENTRE ÉDUCA
+ TIF ET PÉDAGOGIQUE »
+DESCRIPTION:Acheteur public : Centre Educatif et Pédagogique (CEP)\nDél
+ ai de remise : 02.11.2026\, 16 h 30\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/e8c98c8f-f4bf-480b-be45-c348a2af0682/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/e8c98c8f-f4bf-
+ 480b-be45-c348a2af0682
+URL:https://auftragsregister.ch/fr/auftrag/e8c98c8f-f4bf-480b-be45-c348a2af
+ 0682/
+LOCATION:Estavayer-le-Lac
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : PROJET DE CONSTRUCTION D’UN « CENTRE É
+ DUCATIF ET PÉDAGOGIQUE »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

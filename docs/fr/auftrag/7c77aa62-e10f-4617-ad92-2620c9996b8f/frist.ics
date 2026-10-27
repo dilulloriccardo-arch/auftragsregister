@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7c77aa62-e10f-4617-ad92-2620c9996b8f-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261203T110000Z
+SUMMARY:Délai de remise : Démolition et construction d'un EMS à Bex. C
+ arrelages (sols et murs).
+DESCRIPTION:Acheteur public : Fondation des Maisons de Retraites du Distr
+ ict d'Aigle. EMS Résidence Grande Fontaine (bureau d'architecte counson a
+ rchitecte sarl).\nDélai de remise : 03.12.2026\, 12 h 00\nDans le r
+ egistre : https://auftragsregister.ch/fr/auftrag/7c77aa62-e10f-4617-ad92
+ -2620c9996b8f/\nPublication officielle : https://www.simap.ch/fr/project
+ -detail/7c77aa62-e10f-4617-ad92-2620c9996b8f
+URL:https://auftragsregister.ch/fr/auftrag/7c77aa62-e10f-4617-ad92-2620c999
+ 6b8f/
+LOCATION:Bex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Démolition et construction d'un EMS à Be
+ x. Carrelages (sols et murs).
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

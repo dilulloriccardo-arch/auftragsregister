@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e61b91e4-5bc1-4a45-8f79-e968210b4fa7-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Submission deadline: Medienbeobachtung Stadt Winterthur
+DESCRIPTION:Public buyer: Stadtkanzlei\nSubmission deadline: 16 Nov 2026\
+ , 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/e61b91e4-
+ 5bc1-4a45-8f79-e968210b4fa7/\nOfficial publication: https://www.simap.ch/e
+ n/project-detail/e61b91e4-5bc1-4a45-8f79-e968210b4fa7
+URL:https://auftragsregister.ch/en/auftrag/e61b91e4-5bc1-4a45-8f79-e968210b
+ 4fa7/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Medienbeobachtung Stadt Winterthur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

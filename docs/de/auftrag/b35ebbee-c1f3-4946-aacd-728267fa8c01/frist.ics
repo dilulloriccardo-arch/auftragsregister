@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b35ebbee-c1f3-4946-aacd-728267fa8c01-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:1
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Eingabefrist: BKP 243 Heizungsanlagen - APB-000274-30 Thun\, Polygo
+ n\, Sanierung Gebäudehülle Haustechnik
+DESCRIPTION:Auftraggeber: armasuisse Immobilien\nEingabefrist: 31.10.2026\n
+ Im Register: https://auftragsregister.ch/de/auftrag/b35ebbee-c1f3-4946-aac
+ d-728267fa8c01/\nAmtliche Publikation: https://www.simap.ch/de/project-det
+ ail/b35ebbee-c1f3-4946-aacd-728267fa8c01
+URL:https://auftragsregister.ch/de/auftrag/b35ebbee-c1f3-4946-aacd-728267fa
+ 8c01/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 243 Heizungsanlagen - APB-000274-30 Thun\, Po
+ lygon\, Sanierung Gebäudehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

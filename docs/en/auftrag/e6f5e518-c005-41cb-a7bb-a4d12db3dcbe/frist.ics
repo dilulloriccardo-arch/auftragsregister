@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6f5e518-c005-41cb-a7bb-a4d12db3dcbe-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261106T140000Z
+SUMMARY:Submission deadline: Werkleitungs- und Oberbausanierung Neu-\, Feld
+ -\, Alpen- und Austrasse
+DESCRIPTION:Public buyer: Einwohnergemeinde Wettingen\nSubmission deadline:
+  6 Nov 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/e6f5e518-c005-41cb-a7bb-a4d12db3dcbe/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/e6f5e518-c005-41cb-a7bb-a4d12db3dcbe
+URL:https://auftragsregister.ch/en/auftrag/e6f5e518-c005-41cb-a7bb-a4d12db3
+ dcbe/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Werkleitungs- und Oberbausanierung Neu-\, 
+ Feld-\, Alpen- und Austrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

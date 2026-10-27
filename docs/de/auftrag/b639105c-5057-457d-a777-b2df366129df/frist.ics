@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b639105c-5057-457d-a777-b2df366129df-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261103T150000Z
+SUMMARY:Eingabefrist: Öffentliche Submission Sachversicherung der Stadt Ba
+ den per 01.01.2027
+DESCRIPTION:Auftraggeber: Stadt Baden Finanzen\nEingabefrist: 03.11.2026\, 
+ 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b639105c-5
+ 057-457d-a777-b2df366129df/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/b639105c-5057-457d-a777-b2df366129df
+URL:https://auftragsregister.ch/de/auftrag/b639105c-5057-457d-a777-b2df3661
+ 29df/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Öffentliche Submission Sachversicherung der Stad
+ t Baden per 01.01.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

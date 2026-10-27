@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6ae09b7e-87ff-467f-8b2d-02334101d8f9-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Scadenza: Kirchgemeindehaus Enge\, Instandsetzung Gebäude mit Bist
+ robetrieb BKP 244 Lüftungsanlagen
+DESCRIPTION:Ente pubblico: Reformierte Kirchgemeinde Zürich\nScadenza: 25.
+ 11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/6ae0
+ 9b7e-87ff-467f-8b2d-02334101d8f9/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/6ae09b7e-87ff-467f-8b2d-02334101d8f9
+URL:https://auftragsregister.ch/it/auftrag/6ae09b7e-87ff-467f-8b2d-02334101
+ d8f9/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kirchgemeindehaus Enge\, Instandsetzung Gebäude mit 
+ Bistrobetrieb BKP 244 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

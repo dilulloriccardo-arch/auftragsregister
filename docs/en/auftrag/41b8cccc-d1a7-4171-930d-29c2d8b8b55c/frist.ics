@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41b8cccc-d1a7-4171-930d-29c2d8b8b55c-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Submission deadline: New Construction of Herosé Senior Housing\, A
+ arau – BKP 214 Timber Assembly Construction
+DESCRIPTION:Public buyer: Einwohnergemeinde Aarau - Stadtbauamt\, Sektion H
+ ochbau\nSubmission deadline: 26 Nov 2026\, 16:00\nIn the register: https
+ ://auftragsregister.ch/en/auftrag/41b8cccc-d1a7-4171-930d-29c2d8b8b55c/\nO
+ fficial publication: https://www.simap.ch/en/project-detail/41b8cccc-d1a7-
+ 4171-930d-29c2d8b8b55c
+URL:https://auftragsregister.ch/en/auftrag/41b8cccc-d1a7-4171-930d-29c2d8b8
+ b55c/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: New Construction of Herosé Senior Housing
+ \, Aarau – BKP 214 Timber Assembly Construction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

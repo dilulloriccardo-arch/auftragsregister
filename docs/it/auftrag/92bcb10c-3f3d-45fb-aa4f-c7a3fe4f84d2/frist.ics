@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92bcb10c-3f3d-45fb-aa4f-c7a3fe4f84d2-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Scadenza: Bedarfseinschätzungsstelle für Menschen mit Behinderung
+DESCRIPTION:Ente pubblico: Amt für Soziales\nScadenza: 13.11.2026\, 23:59\
+ nNel registro: https://auftragsregister.ch/it/auftrag/92bcb10c-3f3d-45fb-a
+ a4f-c7a3fe4f84d2/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/92bcb10c-3f3d-45fb-aa4f-c7a3fe4f84d2
+URL:https://auftragsregister.ch/it/auftrag/92bcb10c-3f3d-45fb-aa4f-c7a3fe4f
+ 84d2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bedarfseinschätzungsstelle für Menschen mit Behinde
+ rung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

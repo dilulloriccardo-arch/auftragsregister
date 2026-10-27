@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe141920-00ab-413e-a300-6bccdd4ed6fe-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Scadenza: BKP 285 Inn. Malerarbeiten
+DESCRIPTION:Ente pubblico: Stiftung Alterswohnungen der Stadt Zürich - SAW
+  (Fokus Baumanagement)\nScadenza: 03.11.2026\, 12:00\nNel registro: https:
+ //auftragsregister.ch/it/auftrag/fe141920-00ab-413e-a300-6bccdd4ed6fe/\nPu
+ bblicazione ufficiale: https://www.simap.ch/it/project-detail/fe141920-00a
+ b-413e-a300-6bccdd4ed6fe
+URL:https://auftragsregister.ch/it/auftrag/fe141920-00ab-413e-a300-6bccdd4e
+ d6fe/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 285 Inn. Malerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

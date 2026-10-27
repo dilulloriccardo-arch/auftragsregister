@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:59295da9-3997-458d-8a7c-e16a07be30d2-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261030T225900Z
+SUMMARY:Eingabefrist: (b26065-1) Sanierung und Nutzungsoptimierung Jubiläu
+ mshalle Magglingen / BKP 421
+DESCRIPTION:Auftraggeber: Bundesamt für Bauten und Logistik BBL\nEingabefr
+ ist: 30.10.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/59295da9-3997-458d-8a7c-e16a07be30d2/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/59295da9-3997-458d-8a7c-e16a07be30d2
+URL:https://auftragsregister.ch/de/auftrag/59295da9-3997-458d-8a7c-e16a07be
+ 30d2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (b26065-1) Sanierung und Nutzungsoptimierung Jubi
+ läumshalle Magglingen / BKP 421
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

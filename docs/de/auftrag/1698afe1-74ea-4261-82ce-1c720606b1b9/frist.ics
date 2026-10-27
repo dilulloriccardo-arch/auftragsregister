@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1698afe1-74ea-4261-82ce-1c720606b1b9-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261125T140000Z
+SUMMARY:Eingabefrist: Adaptation de la gare de Le Muids - Installations él
+ ectriques BT
+DESCRIPTION:Auftraggeber: Compagnie du chemin de fer Nyon-St-Cergue-Morez S
+ A\nEingabefrist: 25.11.2026\, 15.00 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/1698afe1-74ea-4261-82ce-1c720606b1b9/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/1698afe1-74ea-4261-82ce-1c72
+ 0606b1b9
+URL:https://auftragsregister.ch/de/auftrag/1698afe1-74ea-4261-82ce-1c720606
+ b1b9/
+LOCATION:Arzier - Le Muids
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Adaptation de la gare de Le Muids - Installations
+  électriques BT
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

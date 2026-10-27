@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5d3d611-dd22-4630-b2ef-48e3e9f36ad6-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Scadenza: Beschaffung\, Installation\, Inbetriebnahme\, Schulung un
+ d Wartung einer automatisierten Präanalytik-Lösung
+DESCRIPTION:Ente pubblico: Solothurner Spitäler AG\nScadenza: 01.12.2026\,
+  16:00\nNel registro: https://auftragsregister.ch/it/auftrag/a5d3d611-dd22
+ -4630-b2ef-48e3e9f36ad6/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/a5d3d611-dd22-4630-b2ef-48e3e9f36ad6
+URL:https://auftragsregister.ch/it/auftrag/a5d3d611-dd22-4630-b2ef-48e3e9f3
+ 6ad6/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung\, Installation\, Inbetriebnahme\, Schulun
+ g und Wartung einer automatisierten Präanalytik-Lösung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

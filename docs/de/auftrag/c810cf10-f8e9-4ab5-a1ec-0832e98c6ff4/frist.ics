@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c810cf10-f8e9-4ab5-a1ec-0832e98c6ff4-frist@auftragsregister.ch
+DTSTAMP:20260920T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Eingabefrist: MF Energie: Smart Meter Rollout
+DESCRIPTION:Auftraggeber: Murg Flums Energie\nEingabefrist: 13.11.2026\nIm 
+ Register: https://auftragsregister.ch/de/auftrag/c810cf10-f8e9-4ab5-a1ec-0
+ 832e98c6ff4/\nAmtliche Publikation: https://www.simap.ch/de/project-detail
+ /c810cf10-f8e9-4ab5-a1ec-0832e98c6ff4
+URL:https://auftragsregister.ch/de/auftrag/c810cf10-f8e9-4ab5-a1ec-0832e98c
+ 6ff4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MF Energie: Smart Meter Rollout
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

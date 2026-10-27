@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ec2a717-1e4a-430f-b3c0-fcf097b2630b-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:1
+DTSTART:20261123T080000Z
+SUMMARY:Délai de remise : Rahmenvertrag Oberbauinstandsetzungsleistungen
+  im Fachlos 1\, in Gleisen und Weichen auf Schweizer Gebiet\, der DB Infra
+ GO AG\, für die GJ 2028ff. Region Südwest\, Netzb. Basel_PD Freiburg (FB
+ U).
+DESCRIPTION:Acheteur public : Deutsche Bahn AG\, Beschaffung Infrastruktu
+ r (FE.EI)\nDélai de remise : 23.11.2026\, 9 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/7ec2a717-1e4a-430f-b3c0-fcf097
+ b2630b/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /7ec2a717-1e4a-430f-b3c0-fcf097b2630b
+URL:https://auftragsregister.ch/fr/auftrag/7ec2a717-1e4a-430f-b3c0-fcf097b2
+ 630b/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rahmenvertrag Oberbauinstandsetzungsleistu
+ ngen im Fachlos 1\, in Gleisen und Weichen auf Schweizer Gebiet\, der DB I
+ nfraGO AG\, für die GJ 2028ff. Region Südwest\, Netzb. Basel_PD Freiburg
+  (FBU).
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

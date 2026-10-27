@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0db9618-5d72-43cf-b04a-31aa5445c568-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261118T100000Z
+SUMMARY:Délai de remise : Ecole du Mervelet (2370TI) Stores en lamelles
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 18.11.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/d0db9618-5d72-43cf-b04a-31aa5445c56
+ 8/\nPublication officielle : https://www.simap.ch/fr/project-detail/d0db
+ 9618-5d72-43cf-b04a-31aa5445c568
+URL:https://auftragsregister.ch/fr/auftrag/d0db9618-5d72-43cf-b04a-31aa5445
+ c568/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ecole du Mervelet (2370TI) Stores en lamel
+ les
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

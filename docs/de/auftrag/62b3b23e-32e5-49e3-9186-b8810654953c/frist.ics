@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62b3b23e-32e5-49e3-9186-b8810654953c-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:Eingabefrist: BKP 237 Gebäudeautomation - APB-000274-30 Thun\, Pol
+ ygon\, Sanierung Gebäudehülle Haustechnik
+DESCRIPTION:Auftraggeber: armasuisse Immobilien\nEingabefrist: 31.10.2026\n
+ Im Register: https://auftragsregister.ch/de/auftrag/62b3b23e-32e5-49e3-918
+ 6-b8810654953c/\nAmtliche Publikation: https://www.simap.ch/de/project-det
+ ail/62b3b23e-32e5-49e3-9186-b8810654953c
+URL:https://auftragsregister.ch/de/auftrag/62b3b23e-32e5-49e3-9186-b8810654
+ 953c/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 237 Gebäudeautomation - APB-000274-30 Thun\,
+  Polygon\, Sanierung Gebäudehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

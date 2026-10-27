@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb8679e7-360d-40c3-b7dd-e4e58eb75b32-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:1
+DTSTART:20261127T110000Z
+SUMMARY:Scadenza: Marché de licences informatiques Microsoft
+DESCRIPTION:Ente pubblico: Centrale d'achats Etablissements Publics pour l'
+ Intégration\nScadenza: 27.11.2026\, 12:00\nNel registro: https://auftrags
+ register.ch/it/auftrag/fb8679e7-360d-40c3-b7dd-e4e58eb75b32/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/fb8679e7-360d-40c3-b7d
+ d-e4e58eb75b32
+URL:https://auftragsregister.ch/it/auftrag/fb8679e7-360d-40c3-b7dd-e4e58eb7
+ 5b32/
+LOCATION:Collonge - Bellerive
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Marché de licences informatiques Microsoft
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

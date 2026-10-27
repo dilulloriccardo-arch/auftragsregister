@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff77016f-ec4e-4113-8cbe-da5ebf8ad05a-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Délai de remise : Projet global Burgdorf – Oberburg – Hasle\
+ , APPUI AU MAÎTRE D’OUVRAGE
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 16.12.2026\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/ff77016f-ec4e-4113-8cbe-da5ebf8ad05a/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/ff77016f-ec4e-4113-8cbe-
+ da5ebf8ad05a
+URL:https://auftragsregister.ch/fr/auftrag/ff77016f-ec4e-4113-8cbe-da5ebf8a
+ d05a/
+LOCATION:Burgdorf\, Hasle b Burgdorf\, Lyssach\, Oberburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet global Burgdorf – Oberburg – Ha
+ sle\, APPUI AU MAÎTRE D’OUVRAGE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

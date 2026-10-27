@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57838a01-c8ca-4cf5-95e7-47ce9d517fba-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Délai de remise : Marché des Soupes CAIB
+DESCRIPTION:Acheteur public : Centrale d'achats et d’ingénierie biomé
+ dicale des hôpitaux universitaires Vaud-Genève (CAIB) Rue Gabrielle Perr
+ et-Gentil 4 CH-1211 Genève 14\nDélai de remise : 02.11.2026\, 16 h
+  00\nDans le registre : https://auftragsregister.ch/fr/auftrag/57838a0
+ 1-c8ca-4cf5-95e7-47ce9d517fba/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/57838a01-c8ca-4cf5-95e7-47ce9d517fba
+URL:https://auftragsregister.ch/fr/auftrag/57838a01-c8ca-4cf5-95e7-47ce9d51
+ 7fba/
+LOCATION:GENÈVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Marché des Soupes CAIB
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

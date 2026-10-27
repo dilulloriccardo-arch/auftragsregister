@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b62d9416-fe3a-4b73-8c06-648005c9c2df-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261126T140000Z
+SUMMARY:Scadenza: Neubau PV-Anlage inkl. Batterie und Ladestationen\, Hafen
+ strasse 4\, Birsfelden
+DESCRIPTION:Ente pubblico: Schweizerische Rheinhäfen\nScadenza: 26.11.2026
+ \, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/b62d9416-fe
+ 3a-4b73-8c06-648005c9c2df/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/b62d9416-fe3a-4b73-8c06-648005c9c2df
+URL:https://auftragsregister.ch/it/auftrag/b62d9416-fe3a-4b73-8c06-648005c9
+ c2df/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau PV-Anlage inkl. Batterie und Ladestationen\, H
+ afenstrasse 4\, Birsfelden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

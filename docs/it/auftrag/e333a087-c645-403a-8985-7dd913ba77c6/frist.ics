@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e333a087-c645-403a-8985-7dd913ba77c6-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:1
+DTSTART:20261127T225900Z
+SUMMARY:Scadenza: N09.48 MP-160035 - Ant.Villars-Ste-Croix-Vennes - Lot 4 -
+  Réfection des revêtements (ID 10979)
+DESCRIPTION:Ente pubblico: Office fédéral des routes OFROU\, Division Inf
+ rastructure routière Ouest\, filiale Estavayer-le-Lac\nScadenza: 27.11.20
+ 26\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/e333a087-
+ c645-403a-8985-7dd913ba77c6/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/e333a087-c645-403a-8985-7dd913ba77c6
+URL:https://auftragsregister.ch/it/auftrag/e333a087-c645-403a-8985-7dd913ba
+ 77c6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N09.48 MP-160035 - Ant.Villars-Ste-Croix-Vennes - Lot
+  4 - Réfection des revêtements (ID 10979)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

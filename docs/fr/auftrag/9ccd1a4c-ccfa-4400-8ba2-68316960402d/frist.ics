@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9ccd1a4c-ccfa-4400-8ba2-68316960402d-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261118T153000Z
+SUMMARY:Délai de remise : BAL / Rénovation de 2 terrains de football et
+  d’un mini-pitch pour le Servette FC
+DESCRIPTION:Acheteur public : Office cantonal des Bâtiments - OCBA\nDél
+ ai de remise : 18.11.2026\, 16 h 30\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/9ccd1a4c-ccfa-4400-8ba2-68316960402d/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/9ccd1a4c-ccfa-
+ 4400-8ba2-68316960402d
+URL:https://auftragsregister.ch/fr/auftrag/9ccd1a4c-ccfa-4400-8ba2-68316960
+ 402d/
+LOCATION:Vernier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAL / Rénovation de 2 terrains de footbal
+ l et d’un mini-pitch pour le Servette FC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

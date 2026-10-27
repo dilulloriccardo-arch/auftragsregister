@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85a9ccb9-a28e-4666-9614-97638f79550c-frist@auftragsregister.ch
+DTSTAMP:20260814T000000Z
+SEQUENCE:0
+DTSTART:20261119T100000Z
+SUMMARY:Scadenza: Rinnovo dispositivo di comando Funivia Ronco 􀂱 Pinezzo
+  􀂱 Tenciarolo TI 􀂱 BO - 1
+DESCRIPTION:Ente pubblico: Patriziato di Bodio\nScadenza: 19.11.2026\, 11:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/85a9ccb9-a28e-4666
+ -9614-97638f79550c/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/85a9ccb9-a28e-4666-9614-97638f79550c
+URL:https://auftragsregister.ch/it/auftrag/85a9ccb9-a28e-4666-9614-97638f79
+ 550c/
+LOCATION:Bodio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rinnovo dispositivo di comando Funivia Ronco 􀂱 Pin
+ ezzo 􀂱 Tenciarolo TI 􀂱 BO - 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7cf1d41a-357d-445a-ac8a-4300123339d7-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T225900Z
+SUMMARY:Scadenza: EBP-663 Sanierung Dampfleitung EZF arabern EMSR
+DESCRIPTION:Ente pubblico: Energie Wasser Bern\nScadenza: 25.11.2026\, 23:5
+ 9\nNel registro: https://auftragsregister.ch/it/auftrag/7cf1d41a-357d-445a
+ -ac8a-4300123339d7/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/7cf1d41a-357d-445a-ac8a-4300123339d7
+URL:https://auftragsregister.ch/it/auftrag/7cf1d41a-357d-445a-ac8a-43001233
+ 39d7/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EBP-663 Sanierung Dampfleitung EZF arabern EMSR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

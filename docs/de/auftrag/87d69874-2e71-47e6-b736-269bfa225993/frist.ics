@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87d69874-2e71-47e6-b736-269bfa225993-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Eingabefrist: MP-220041\, N15-08/10 Instandsetzung BSA\, Los 08 MÜ
+ LS
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nEingabefrist: 23.11.2026\, 23.59 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/87d69874-2e71-47e6-b736-269bfa225993/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/87d69874-2e71-47e6-b736-269b
+ fa225993
+URL:https://auftragsregister.ch/de/auftrag/87d69874-2e71-47e6-b736-269bfa22
+ 5993/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-220041\, N15-08/10 Instandsetzung BSA\, Los 08
+  MÜLS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

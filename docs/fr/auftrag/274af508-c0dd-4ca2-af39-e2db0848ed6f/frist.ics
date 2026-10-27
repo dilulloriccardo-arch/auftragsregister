@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:274af508-c0dd-4ca2-af39-e2db0848ed6f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261106T093000Z
+SUMMARY:Délai de remise : Construction du centre sportif d’Aumont – 
+ Installation sportive
+DESCRIPTION:Acheteur public : Commune Les Montets\nDélai de remise : 0
+ 6.11.2026\, 10 h 30\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/274af508-c0dd-4ca2-af39-e2db0848ed6f/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/274af508-c0dd-4ca2-af39-e2db08
+ 48ed6f
+URL:https://auftragsregister.ch/fr/auftrag/274af508-c0dd-4ca2-af39-e2db0848
+ ed6f/
+LOCATION:Aumont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction du centre sportif d’Aumont 
+ – Installation sportive
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

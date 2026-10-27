@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a95f223-c2fd-4078-bcd7-1a2b182f3184-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20270427T100000Z
+SUMMARY:Eingabefrist: Technologiepartnerschaft bildgebende Verfahren
+DESCRIPTION:Auftraggeber: Spitalzentrum Biel AG\nEingabefrist: 27.04.2027\,
+  12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0a95f223-
+ c2fd-4078-bcd7-1a2b182f3184/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/0a95f223-c2fd-4078-bcd7-1a2b182f3184
+URL:https://auftragsregister.ch/de/auftrag/0a95f223-c2fd-4078-bcd7-1a2b182f
+ 3184/
+LOCATION:Biel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Technologiepartnerschaft bildgebende Verfahren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

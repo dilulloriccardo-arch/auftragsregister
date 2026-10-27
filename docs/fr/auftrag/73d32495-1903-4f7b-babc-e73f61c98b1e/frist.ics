@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:73d32495-1903-4f7b-babc-e73f61c98b1e-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Délai de remise : Heizungs-Installationen Fernheizwerk Winterthu
+ r
+DESCRIPTION:Acheteur public : Stadtwerk Winterthur\nDélai de remise : 
+ 02.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/73d32495-1903-4f7b-babc-e73f61c98b1e/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/73d32495-1903-4f7b-babc-e73f61
+ c98b1e
+URL:https://auftragsregister.ch/fr/auftrag/73d32495-1903-4f7b-babc-e73f61c9
+ 8b1e/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Heizungs-Installationen Fernheizwerk Winte
+ rthur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

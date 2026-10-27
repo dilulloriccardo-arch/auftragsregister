@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d7afbf4a-2e77-4bbf-8928-cead7a5e5a4a-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261104T225900Z
+SUMMARY:Scadenza: MP-210082\, Road-Map VM-CH SM GHGW F3 A2 A4 A14 – Los 9
+ 21 Baumeister UR
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA -Abteilung Strasse
+ ninfrastruktur-Ost - F3 Zofingen\nScadenza: 04.11.2026\, 23:59\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/d7afbf4a-2e77-4bbf-8928-cead7a5
+ e5a4a/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/d7
+ afbf4a-2e77-4bbf-8928-cead7a5e5a4a
+URL:https://auftragsregister.ch/it/auftrag/d7afbf4a-2e77-4bbf-8928-cead7a5e
+ 5a4a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-210082\, Road-Map VM-CH SM GHGW F3 A2 A4 A14 – L
+ os 921 Baumeister UR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

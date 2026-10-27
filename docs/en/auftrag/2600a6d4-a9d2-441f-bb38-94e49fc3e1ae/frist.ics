@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2600a6d4-a9d2-441f-bb38-94e49fc3e1ae-frist@auftragsregister.ch
+DTSTAMP:20260907T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Submission deadline: Projet d’assainissement du tronçon T2 en av
+ al de l’usine du Châtelot : Maîtrise d’œuvre et études techniques 
+ (MOE)
+DESCRIPTION:Public buyer: Société des Forces Motrices du Châtelot\nSubmi
+ ssion deadline: 4 Nov 2026\, 12:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/2600a6d4-a9d2-441f-bb38-94e49fc3e1ae/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/2600a6d4-a9d2-441f-bb38-94e4
+ 9fc3e1ae
+URL:https://auftragsregister.ch/en/auftrag/2600a6d4-a9d2-441f-bb38-94e49fc3
+ e1ae/
+LOCATION:Les Planchettes
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Projet d’assainissement du tronçon T2 e
+ n aval de l’usine du Châtelot : Maîtrise d’œuvre et études techniq
+ ues (MOE)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

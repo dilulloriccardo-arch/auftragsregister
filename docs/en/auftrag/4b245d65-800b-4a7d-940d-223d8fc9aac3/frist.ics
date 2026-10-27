@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b245d65-800b-4a7d-940d-223d8fc9aac3-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Submission deadline: USZ Campus MITTE 1|2 / BKP 283.14 Deckenbeklei
+ dungen aus Gips - Los 4 (OV)
+DESCRIPTION:Public buyer: Universitätsspital Zürich\nSubmission deadline:
+  14 Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/4b245d65-800b-4a7d-940d-223d8fc9aac3/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/4b245d65-800b-4a7d-940d-223d8fc9aac3
+URL:https://auftragsregister.ch/en/auftrag/4b245d65-800b-4a7d-940d-223d8fc9
+ aac3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: USZ Campus MITTE 1|2 / BKP 283.14 Deckenbe
+ kleidungen aus Gips - Los 4 (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d6dcfe3-c887-45db-9535-df9af35699e8-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261109T100000Z
+SUMMARY:Scadenza: Maintenance des portes automatiques
+DESCRIPTION:Ente pubblico: Genève Aéroport\nScadenza: 09.11.2026\, 11:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/0d6dcfe3-c887-45db-9
+ 535-df9af35699e8/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/0d6dcfe3-c887-45db-9535-df9af35699e8
+URL:https://auftragsregister.ch/it/auftrag/0d6dcfe3-c887-45db-9535-df9af356
+ 99e8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Maintenance des portes automatiques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

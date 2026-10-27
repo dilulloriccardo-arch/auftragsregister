@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a4236d2c-d27e-4845-a8d6-c6fb6eac82b9-frist@auftragsregister.ch
+DTSTAMP:20260901T000000Z
+SEQUENCE:0
+DTSTART:20261030T130000Z
+SUMMARY:Eingabefrist: Offerta per contratto di previdenza professionale ai 
+ sensi LPP
+DESCRIPTION:Auftraggeber: MFA con Te Sagl\nEingabefrist: 30.10.2026\, 14.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a4236d2c-d27e-4
+ 845-a8d6-c6fb6eac82b9/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/a4236d2c-d27e-4845-a8d6-c6fb6eac82b9
+URL:https://auftragsregister.ch/de/auftrag/a4236d2c-d27e-4845-a8d6-c6fb6eac
+ 82b9/
+LOCATION:Vacallo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Offerta per contratto di previdenza professionale
+  ai sensi LPP
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

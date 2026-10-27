@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c091805c-2831-415e-ba4a-e309bea32e9f-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T225900Z
+SUMMARY:Scadenza: Ein gravimetrischer Hochdruck-Gas- und Dampfsorptionsanal
+ ysator
+DESCRIPTION:Ente pubblico: EPFL-Scientific Equipment\nScadenza: 01.12.2026\
+ , 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/c091805c-283
+ 1-415e-ba4a-e309bea32e9f/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/c091805c-2831-415e-ba4a-e309bea32e9f
+URL:https://auftragsregister.ch/it/auftrag/c091805c-2831-415e-ba4a-e309bea3
+ 2e9f/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ein gravimetrischer Hochdruck-Gas- und Dampfsorptions
+ analysator
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

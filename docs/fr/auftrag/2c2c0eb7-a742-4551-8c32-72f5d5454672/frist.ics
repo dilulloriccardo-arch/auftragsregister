@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2c2c0eb7-a742-4551-8c32-72f5d5454672-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Délai de remise : Incubateur et compteur de colonies en temps r
+ éel
+DESCRIPTION:Acheteur public : Services industriels de Genève (SIG) - Dir
+ ection Achats\nDélai de remise : 08.12.2026\, 12 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/2c2c0eb7-a742-4551-8c32-72
+ f5d5454672/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/2c2c0eb7-a742-4551-8c32-72f5d5454672
+URL:https://auftragsregister.ch/fr/auftrag/2c2c0eb7-a742-4551-8c32-72f5d545
+ 4672/
+LOCATION:Le Lignon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Incubateur et compteur de colonies en temp
+ s réel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

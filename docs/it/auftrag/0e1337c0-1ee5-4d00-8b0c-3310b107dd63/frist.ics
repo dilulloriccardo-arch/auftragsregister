@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e1337c0-1ee5-4d00-8b0c-3310b107dd63-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Scadenza: SRB 8114 & 3110 / Route communale et itinéraire cyclable
+  / Courtételle - Châtillon / Assainissement de la chaussée et aménagem
+ ent d'une piste cyclable
+DESCRIPTION:Ente pubblico: Service des infrastructures (SIN) - Section des 
+ constructions routières (SCR)\nScadenza: 27.11.2026\nNel registro: https:
+ //auftragsregister.ch/it/auftrag/0e1337c0-1ee5-4d00-8b0c-3310b107dd63/\nPu
+ bblicazione ufficiale: https://www.simap.ch/it/project-detail/0e1337c0-1ee
+ 5-4d00-8b0c-3310b107dd63
+URL:https://auftragsregister.ch/it/auftrag/0e1337c0-1ee5-4d00-8b0c-3310b107
+ dd63/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: SRB 8114 & 3110 / Route communale et itinéraire cycl
+ able / Courtételle - Châtillon / Assainissement de la chaussée et amén
+ agement d'une piste cyclable
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

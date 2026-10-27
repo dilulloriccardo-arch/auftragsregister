@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dab3cb67-d77b-42d3-8b61-52c08a025c18-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261104T100000Z
+SUMMARY:Eingabefrist: Sanierung Furtbachstrasse - Abschnitt Wüeri Mitte
+DESCRIPTION:Auftraggeber: EFP AG\nEingabefrist: 04.11.2026\, 11.00 Uhr\nIm
+  Register: https://auftragsregister.ch/de/auftrag/dab3cb67-d77b-42d3-8b61-
+ 52c08a025c18/\nAmtliche Publikation: https://www.simap.ch/de/project-detai
+ l/dab3cb67-d77b-42d3-8b61-52c08a025c18
+URL:https://auftragsregister.ch/de/auftrag/dab3cb67-d77b-42d3-8b61-52c08a02
+ 5c18/
+LOCATION:Buchs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Furtbachstrasse - Abschnitt Wüeri Mitt
+ e
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

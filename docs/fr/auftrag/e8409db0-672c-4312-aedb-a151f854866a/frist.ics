@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8409db0-672c-4312-aedb-a151f854866a-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261103T090000Z
+SUMMARY:Délai de remise : Umbau Reservoir Feumet - Tiefbauarbeiten Eggst
+ rasse
+DESCRIPTION:Acheteur public : Gemeinde Maur - Tiefbau\nDélai de remise
+  : 03.11.2026\, 10 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/e8409db0-672c-4312-aedb-a151f854866a/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/e8409db0-672c-4312-aedb-a1
+ 51f854866a
+URL:https://auftragsregister.ch/fr/auftrag/e8409db0-672c-4312-aedb-a151f854
+ 866a/
+LOCATION:Maur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Umbau Reservoir Feumet - Tiefbauarbeiten E
+ ggstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

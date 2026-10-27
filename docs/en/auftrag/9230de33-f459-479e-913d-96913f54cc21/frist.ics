@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9230de33-f459-479e-913d-96913f54cc21-frist@auftragsregister.ch
+DTSTAMP:20260821T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Submission deadline: NKM 5.2 – Los «Schotterersatz/UBS»\, Fahrb
+ ahnerneuerungen 2029-2033\, Rahmenvertrag GU\, Schweiz
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB\, Infrastruktur -
+  Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\nSubmis
+ sion deadline: 15 Jan 2027\, 23:59\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/9230de33-f459-479e-913d-96913f54cc21/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/9230de33-f459-479e-913d-9691
+ 3f54cc21
+URL:https://auftragsregister.ch/en/auftrag/9230de33-f459-479e-913d-96913f54
+ cc21/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: NKM 5.2 – Los «Schotterersatz/UBS»\, F
+ ahrbahnerneuerungen 2029-2033\, Rahmenvertrag GU\, Schweiz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

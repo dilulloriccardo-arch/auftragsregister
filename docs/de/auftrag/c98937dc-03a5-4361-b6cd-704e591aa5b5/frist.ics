@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c98937dc-03a5-4361-b6cd-704e591aa5b5-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART:20261104T225900Z
+SUMMARY:Eingabefrist: MP-210082 Road-Map VM-CH SM GHGW F3 A2 A4 A8 – Los 
+ 721 Elektroinstallation UR
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA -Abteilung Strassen
+ infrastruktur-Ost - F3 Zofingen\nEingabefrist: 04.11.2026\, 23.59 Uhr\nIm
+  Register: https://auftragsregister.ch/de/auftrag/c98937dc-03a5-4361-b6cd-
+ 704e591aa5b5/\nAmtliche Publikation: https://www.simap.ch/de/project-detai
+ l/c98937dc-03a5-4361-b6cd-704e591aa5b5
+URL:https://auftragsregister.ch/de/auftrag/c98937dc-03a5-4361-b6cd-704e591a
+ a5b5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-210082 Road-Map VM-CH SM GHGW F3 A2 A4 A8 – 
+ Los 721 Elektroinstallation UR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

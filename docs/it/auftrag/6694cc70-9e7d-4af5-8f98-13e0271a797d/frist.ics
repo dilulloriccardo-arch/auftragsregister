@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6694cc70-9e7d-4af5-8f98-13e0271a797d-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Scadenza: AO - TPG - Organisation\, animation et évaluation d’un
+  exercice de crise cyber sur table pour des systèmes critiques
+DESCRIPTION:Ente pubblico: Transport publics genevois (tpg)\nScadenza: 30.1
+ 1.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/6694c
+ c70-9e7d-4af5-8f98-13e0271a797d/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/6694cc70-9e7d-4af5-8f98-13e0271a797d
+URL:https://auftragsregister.ch/it/auftrag/6694cc70-9e7d-4af5-8f98-13e0271a
+ 797d/
+LOCATION:Grand-lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AO - TPG - Organisation\, animation et évaluation d
+ ’un exercice de crise cyber sur table pour des systèmes critiques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

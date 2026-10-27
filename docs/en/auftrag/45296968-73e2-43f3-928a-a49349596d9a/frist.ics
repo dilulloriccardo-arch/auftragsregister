@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45296968-73e2-43f3-928a-a49349596d9a-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T103000Z
+SUMMARY:Submission deadline: Affaire n°20-094\, Cery Bâtiment de laborato
+ ires\, site de Cery nord à Prilly\, CFC n° 255\, travaux calorifugeage
+DESCRIPTION:Public buyer: CHUV-Construction Ingénierie Technique et Sécur
+ ité (CIT-S) - Diserens Maurel Architectes\nSubmission deadline: 20 Nov 
+ 2026\, 11:30\nIn the register: https://auftragsregister.ch/en/auftrag/4529
+ 6968-73e2-43f3-928a-a49349596d9a/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/45296968-73e2-43f3-928a-a49349596d9a
+URL:https://auftragsregister.ch/en/auftrag/45296968-73e2-43f3-928a-a4934959
+ 6d9a/
+LOCATION:Prilly
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Affaire n°20-094\, Cery Bâtiment de labo
+ ratoires\, site de Cery nord à Prilly\, CFC n° 255\, travaux calorifugea
+ ge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

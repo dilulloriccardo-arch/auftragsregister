@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bf75971b-91cc-401c-bc18-031c4721374f-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261208T100000Z
+SUMMARY:Délai de remise : Travaux de renouvellement des enrobés bitumin
+ eux routier 2027
+DESCRIPTION:Acheteur public : OCGC - DER - Service de l'entretien du patr
+ imoine des routes cantonales\nDélai de remise : 08.12.2026\, 11 h 0
+ 0\nDans le registre : https://auftragsregister.ch/fr/auftrag/bf75971b-91
+ cc-401c-bc18-031c4721374f/\nPublication officielle : https://www.simap.c
+ h/fr/project-detail/bf75971b-91cc-401c-bc18-031c4721374f
+URL:https://auftragsregister.ch/fr/auftrag/bf75971b-91cc-401c-bc18-031c4721
+ 374f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Travaux de renouvellement des enrobés bit
+ umineux routier 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

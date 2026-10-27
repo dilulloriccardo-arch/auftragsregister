@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7198009-ed12-4505-bd17-38c731e26fbd-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261102T225900Z
+SUMMARY:Submission deadline: ADRESS 2.0 Resonant Inelastic X-Ray Scattering
+  instrument
+DESCRIPTION:Public buyer: Paul Scherrer Institut (PSI)\nSubmission deadline
+ : 2 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/e7198009-ed12-4505-bd17-38c731e26fbd/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/e7198009-ed12-4505-bd17-38c731e26fbd
+URL:https://auftragsregister.ch/en/auftrag/e7198009-ed12-4505-bd17-38c731e2
+ 6fbd/
+LOCATION:Villigen PSI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ADRESS 2.0 Resonant Inelastic X-Ray Scatte
+ ring instrument
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

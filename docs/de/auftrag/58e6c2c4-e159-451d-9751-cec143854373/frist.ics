@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:58e6c2c4-e159-451d-9751-cec143854373-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261118T140000Z
+SUMMARY:Eingabefrist: Muttenz - BBZ / GSM (BKP 230)
+DESCRIPTION:Auftraggeber: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nEingabefrist: 18.11.2026\, 15.00 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/58e6c2c4-e159-451d-9751-cec143854373/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/58e6c2c4-e159-451d-9751-cec
+ 143854373
+URL:https://auftragsregister.ch/de/auftrag/58e6c2c4-e159-451d-9751-cec14385
+ 4373/
+LOCATION:Muttenz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Muttenz - BBZ / GSM (BKP 230)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

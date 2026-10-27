@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a6647fa-3e21-4cc8-8944-510d33c2d639-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261110T100000Z
+SUMMARY:Eingabefrist: Fornitura di frutta e verdura 01.01.2027 - 31.12.2027
+DESCRIPTION:Auftraggeber: Fondazione Parco San Rocco\nEingabefrist: 10.11.2
+ 026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8a66
+ 47fa-3e21-4cc8-8944-510d33c2d639/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/8a6647fa-3e21-4cc8-8944-510d33c2d639
+URL:https://auftragsregister.ch/de/auftrag/8a6647fa-3e21-4cc8-8944-510d33c2
+ d639/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fornitura di frutta e verdura 01.01.2027 - 31.12.
+ 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

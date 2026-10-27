@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8d9448f5-5661-4491-be7c-52b0affb2222-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261111T130000Z
+SUMMARY:Délai de remise : Projet d'infrastructure intégré Robert-Durre
+ r-Strasse I Ingénieur de projet
+DESCRIPTION:Acheteur public : Gemeinde Stans\, Bauamt\nDélai de remise
+  : 11.11.2026\, 14 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/8d9448f5-5661-4491-be7c-52b0affb2222/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/8d9448f5-5661-4491-be7c-52
+ b0affb2222
+URL:https://auftragsregister.ch/fr/auftrag/8d9448f5-5661-4491-be7c-52b0affb
+ 2222/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet d'infrastructure intégré Robert-D
+ urrer-Strasse I Ingénieur de projet
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:00599323-7cf8-47bf-b885-634ce1dc35f5-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Délai de remise : Appel d’offres pour l'attribution du service
+  de réception\, de traitement et d'élimination des déchets encombrants 
+ combustibles non recyclables sur le territoire de la ville de Mendrisio po
+ ur la période 2027-2031
+DESCRIPTION:Acheteur public : Comune di Mendrisio\nDélai de remise : 3
+ 0.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/00599323-7cf8-47bf-b885-634ce1dc35f5/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/00599323-7cf8-47bf-b885-634ce1
+ dc35f5
+URL:https://auftragsregister.ch/fr/auftrag/00599323-7cf8-47bf-b885-634ce1dc
+ 35f5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d’offres pour l'attribution du ser
+ vice de réception\, de traitement et d'élimination des déchets encombra
+ nts combustibles non recyclables sur le territoire de la ville de Mendrisi
+ o pour la période 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

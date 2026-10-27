@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a1f082b-73db-4c65-8219-9566b01d8cfb-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261105T110000Z
+SUMMARY:Eingabefrist: Risiko - und Arbeitssicherheitsmanagement- Tool
+DESCRIPTION:Auftraggeber: Basler Verkehrs-Betriebe (BVB)\nEingabefrist: 05.
+ 11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ 6a1f082b-73db-4c65-8219-9566b01d8cfb/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/6a1f082b-73db-4c65-8219-9566b01d8cfb
+URL:https://auftragsregister.ch/de/auftrag/6a1f082b-73db-4c65-8219-9566b01d
+ 8cfb/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Risiko - und Arbeitssicherheitsmanagement- Tool
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

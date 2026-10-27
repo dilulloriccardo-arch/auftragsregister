@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ded54e9-7147-4ceb-8ce1-ada28d3ab37e-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Submission deadline: UT-NR SN 2027-2028
+DESCRIPTION:Public buyer: Ufficio delle commesse pubbliche e della programm
+ azione\nSubmission deadline: 16 Nov 2026\, 11:00\nIn the register: https
+ ://auftragsregister.ch/en/auftrag/1ded54e9-7147-4ceb-8ce1-ada28d3ab37e/\nO
+ fficial publication: https://www.simap.ch/en/project-detail/1ded54e9-7147-
+ 4ceb-8ce1-ada28d3ab37e
+URL:https://auftragsregister.ch/en/auftrag/1ded54e9-7147-4ceb-8ce1-ada28d3a
+ b37e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: UT-NR SN 2027-2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

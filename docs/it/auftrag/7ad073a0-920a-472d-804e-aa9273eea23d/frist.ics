@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ad073a0-920a-472d-804e-aa9273eea23d-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Scadenza: BKP 221.1 Fenster
+DESCRIPTION:Ente pubblico: Gemeinde Pontresina\nScadenza: 16.11.2026\, 12:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/7ad073a0-920a-472d
+ -804e-aa9273eea23d/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/7ad073a0-920a-472d-804e-aa9273eea23d
+URL:https://auftragsregister.ch/it/auftrag/7ad073a0-920a-472d-804e-aa9273ee
+ a23d/
+LOCATION:Pontresina
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 221.1 Fenster
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

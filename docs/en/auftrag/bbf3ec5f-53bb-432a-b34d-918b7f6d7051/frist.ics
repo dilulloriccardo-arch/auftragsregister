@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbf3ec5f-53bb-432a-b34d-918b7f6d7051-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270107T150000Z
+SUMMARY:Submission deadline: 26-447 SiPe Rottenverstärkung Sicherheitspers
+ onal
+DESCRIPTION:Public buyer: SBB AG Infrastruktur / Einkauf\, Supply Chain und
+  Produktion\nSubmission deadline: 7 Jan 2027\, 16:00\nIn the register: h
+ ttps://auftragsregister.ch/en/auftrag/bbf3ec5f-53bb-432a-b34d-918b7f6d7051
+ /\nOfficial publication: https://www.simap.ch/en/project-detail/bbf3ec5f-5
+ 3bb-432a-b34d-918b7f6d7051
+URL:https://auftragsregister.ch/en/auftrag/bbf3ec5f-53bb-432a-b34d-918b7f6d
+ 7051/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 26-447 SiPe Rottenverstärkung Sicherheits
+ personal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:478d320d-51c2-454b-893a-07a7ba0fc091-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261028T225900Z
+SUMMARY:Submission deadline: Aufstockung Werkstattgebäude Glattwerk AG
+DESCRIPTION:Public buyer: Bennet Bill GmbH\nSubmission deadline: 28 Oct 2
+ 026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/478d3
+ 20d-51c2-454b-893a-07a7ba0fc091/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/478d320d-51c2-454b-893a-07a7ba0fc091
+URL:https://auftragsregister.ch/en/auftrag/478d320d-51c2-454b-893a-07a7ba0f
+ c091/
+LOCATION:Dübendorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Aufstockung Werkstattgebäude Glattwerk AG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

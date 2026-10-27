@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9e06265d-806b-4a49-b7cc-f5143d0769a6-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Eingabefrist: Kläranlage ARA Gruebensteg - Ausbau ARA Rüti und Ve
+ rbindungsleitung ARA Weidli
+DESCRIPTION:Auftraggeber: Gemeinde Rüti ZH\nEingabefrist: 16.12.2026\, 23.
+ 59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9e06265d-806b
+ -4a49-b7cc-f5143d0769a6/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/9e06265d-806b-4a49-b7cc-f5143d0769a6
+URL:https://auftragsregister.ch/de/auftrag/9e06265d-806b-4a49-b7cc-f5143d07
+ 69a6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kläranlage ARA Gruebensteg - Ausbau ARA Rüti un
+ d Verbindungsleitung ARA Weidli
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

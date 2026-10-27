@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a738fd64-1644-4818-97c6-dbd1ac979d4b-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Eingabefrist: Vending machines campus EPFL
+DESCRIPTION:Auftraggeber: EPFL VPF ACHATS\nEingabefrist: 23.11.2026\, 12.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a738fd64-1644-4
+ 818-97c6-dbd1ac979d4b/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/a738fd64-1644-4818-97c6-dbd1ac979d4b
+URL:https://auftragsregister.ch/de/auftrag/a738fd64-1644-4818-97c6-dbd1ac97
+ 9d4b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Vending machines campus EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

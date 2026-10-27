@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87b1738d-ce51-4953-84bc-854edfef304e-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261111T100000Z
+SUMMARY:Eingabefrist: Piscine de l'école des Pâquis (2377) installation d
+ e traitement d'eau
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 11.11.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/87b1738d-ce51-4953-84bc-854edfef304e/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/87b1738d-ce51-4953-84bc-854edfef
+ 304e
+URL:https://auftragsregister.ch/de/auftrag/87b1738d-ce51-4953-84bc-854edfef
+ 304e/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Piscine de l'école des Pâquis (2377) installati
+ on de traitement d'eau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

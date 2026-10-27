@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f0821ae2-e04e-40e0-bfdd-f595fbe47f79-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:1
+DTSTART:20261028T160000Z
+SUMMARY:Submission deadline: Renouvellement du parc des imprimantes multifo
+ nctions de la Ville de Pully et de ses partenaires
+DESCRIPTION:Public buyer: Ville de Pully - Service des Systèmes d'informat
+ ion\nSubmission deadline: 28 Oct 2026\, 17:00\nIn the register: https://
+ auftragsregister.ch/en/auftrag/f0821ae2-e04e-40e0-bfdd-f595fbe47f79/\nOffi
+ cial publication: https://www.simap.ch/en/project-detail/f0821ae2-e04e-40e
+ 0-bfdd-f595fbe47f79
+URL:https://auftragsregister.ch/en/auftrag/f0821ae2-e04e-40e0-bfdd-f595fbe4
+ 7f79/
+LOCATION:Pully
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Renouvellement du parc des imprimantes mul
+ tifonctions de la Ville de Pully et de ses partenaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4dcfc2ec-87d4-4cbe-a4d0-13474b46706f-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Submission deadline: Modernisierung "Kirchzelg"\, St. Bernhardstras
+ se 38\, 5430 Wettingen / BKP 248 Dämmungen HLS
+DESCRIPTION:Public buyer: arwo Stiftung\nSubmission deadline: 16 Nov 2026
+ \nIn the register: https://auftragsregister.ch/en/auftrag/4dcfc2ec-87d4-4c
+ be-a4d0-13474b46706f/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/4dcfc2ec-87d4-4cbe-a4d0-13474b46706f
+URL:https://auftragsregister.ch/en/auftrag/4dcfc2ec-87d4-4cbe-a4d0-13474b46
+ 706f/
+LOCATION:Wettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Modernisierung "Kirchzelg"\, St. Bernhards
+ trasse 38\, 5430 Wettingen / BKP 248 Dämmungen HLS
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8575e40d-cf50-4efd-bd34-3f96e742a8d3-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T100000Z
+SUMMARY:Scadenza: 0241.301-51 - Comune di Lugano - Sistemazione area Stazio
+ ne FFS Lugano - Comparto Besso - Opere da impianti RVCS
+DESCRIPTION:Ente pubblico: Ufficio delle commesse pubbliche e della program
+ mazione\nScadenza: 04.11.2026\, 11:00\nNel registro: https://auftragsregis
+ ter.ch/it/auftrag/8575e40d-cf50-4efd-bd34-3f96e742a8d3/\nPubblicazione uff
+ iciale: https://www.simap.ch/it/project-detail/8575e40d-cf50-4efd-bd34-3f9
+ 6e742a8d3
+URL:https://auftragsregister.ch/it/auftrag/8575e40d-cf50-4efd-bd34-3f96e742
+ a8d3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 0241.301-51 - Comune di Lugano - Sistemazione area St
+ azione FFS Lugano - Comparto Besso - Opere da impianti RVCS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

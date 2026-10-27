@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:adb9ecf0-8773-42a6-9c4e-2af441ba5d56-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Scadenza: USZ Campus MITTE 1|2 / BKP 271.14 Gipserarbeiten Los 4 MI
+ T1 Ebene F-J (OV)
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 02.12.202
+ 6\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/adb9ecf0-8
+ 773-42a6-9c4e-2af441ba5d56/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/adb9ecf0-8773-42a6-9c4e-2af441ba5d56
+URL:https://auftragsregister.ch/it/auftrag/adb9ecf0-8773-42a6-9c4e-2af441ba
+ 5d56/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: USZ Campus MITTE 1|2 / BKP 271.14 Gipserarbeiten Los 
+ 4 MIT1 Ebene F-J (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

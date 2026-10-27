@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f508640-0117-4a8f-a1e8-b8053a67abbc-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Scadenza: MP-250021 N2 EP01 Mendrisio – Melano\, Progettista e di
+ rezione lavori per impianti di esercizio e sicurezza
+DESCRIPTION:Ente pubblico: Ufficio federale delle strade USTRA\, divisione 
+ infrastruttura stradale Est\nScadenza: 20.11.2026\, 16:00\nNel registro: h
+ ttps://auftragsregister.ch/it/auftrag/5f508640-0117-4a8f-a1e8-b8053a67abbc
+ /\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/5f50864
+ 0-0117-4a8f-a1e8-b8053a67abbc
+URL:https://auftragsregister.ch/it/auftrag/5f508640-0117-4a8f-a1e8-b8053a67
+ abbc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-250021 N2 EP01 Mendrisio – Melano\, Progettista 
+ e direzione lavori per impianti di esercizio e sicurezza
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

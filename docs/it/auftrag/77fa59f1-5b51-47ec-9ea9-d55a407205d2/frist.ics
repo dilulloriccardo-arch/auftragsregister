@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:77fa59f1-5b51-47ec-9ea9-d55a407205d2-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: Ausschreibung Instandhaltung\, Instandsetzung - Haushaltg
+ eräte / Geräteservice – KAT.017
+DESCRIPTION:Ente pubblico: ETHOS Immobilien GmbH\nScadenza: 09.11.2026\, 16
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/77fa59f1-5b51-47
+ ec-9ea9-d55a407205d2/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/77fa59f1-5b51-47ec-9ea9-d55a407205d2
+URL:https://auftragsregister.ch/it/auftrag/77fa59f1-5b51-47ec-9ea9-d55a4072
+ 05d2/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung Instandhaltung\, Instandsetzung - Haush
+ altgeräte / Geräteservice – KAT.017
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

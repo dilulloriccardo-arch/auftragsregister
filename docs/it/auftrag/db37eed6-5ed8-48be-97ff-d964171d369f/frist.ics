@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db37eed6-5ed8-48be-97ff-d964171d369f-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261105T153000Z
+SUMMARY:Scadenza: HEPIA - Rue de la Prairie 4 - Assainissement et rénovati
+ on des sous-stations de distribution de chauffage B-C-D-I
+DESCRIPTION:Ente pubblico: Office Cantonal des bâtiments (OCBA) - JDR ENER
+ GIES\nScadenza: 05.11.2026\, 16:30\nNel registro: https://auftragsregister
+ .ch/it/auftrag/db37eed6-5ed8-48be-97ff-d964171d369f/\nPubblicazione uffici
+ ale: https://www.simap.ch/it/project-detail/db37eed6-5ed8-48be-97ff-d96417
+ 1d369f
+URL:https://auftragsregister.ch/it/auftrag/db37eed6-5ed8-48be-97ff-d964171d
+ 369f/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: HEPIA - Rue de la Prairie 4 - Assainissement et réno
+ vation des sous-stations de distribution de chauffage B-C-D-I
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c1c45fd7-4a30-4e5f-84bc-b94dd331913e-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Scadenza: Sanierung Mehrzweckhalle und Gemeindehaus\, 8916 Jonen / 
+ BKP 244 Lüftungsanlagen
+DESCRIPTION:Ente pubblico: Gemeinde Jonen (Batimo AG)\nScadenza: 16.11.2026
+ \, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/c1c45fd7-4a
+ 30-4e5f-84bc-b94dd331913e/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/c1c45fd7-4a30-4e5f-84bc-b94dd331913e
+URL:https://auftragsregister.ch/it/auftrag/c1c45fd7-4a30-4e5f-84bc-b94dd331
+ 913e/
+LOCATION:Jonen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Mehrzweckhalle und Gemeindehaus\, 8916 Jone
+ n / BKP 244 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

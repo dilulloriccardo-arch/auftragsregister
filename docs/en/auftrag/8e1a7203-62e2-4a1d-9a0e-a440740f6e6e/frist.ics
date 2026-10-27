@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8e1a7203-62e2-4a1d-9a0e-a440740f6e6e-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Submission deadline: Maintenance of GE VII Jet Fans
+DESCRIPTION:Public buyer: Tiefbauamt\, Abt. Gebietseinheit VII\nSubmission 
+ deadline: 27 Nov 2026\, 16:00\nIn the register: https://auftragsregister
+ .ch/en/auftrag/8e1a7203-62e2-4a1d-9a0e-a440740f6e6e/\nOfficial publication
+ : https://www.simap.ch/en/project-detail/8e1a7203-62e2-4a1d-9a0e-a440740f6
+ e6e
+URL:https://auftragsregister.ch/en/auftrag/8e1a7203-62e2-4a1d-9a0e-a440740f
+ 6e6e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Maintenance of GE VII Jet Fans
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

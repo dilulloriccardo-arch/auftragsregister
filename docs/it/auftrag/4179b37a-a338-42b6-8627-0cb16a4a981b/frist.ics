@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4179b37a-a338-42b6-8627-0cb16a4a981b-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261116T225900Z
+SUMMARY:Scadenza: Beschaffung eines Leistungsmoduls mit zugehörigem Steuer
+ ungssystem im Hinblick auf den Aufbau einer Hochspannungsstromversorgung
+DESCRIPTION:Ente pubblico: EPFL-Scientific Equipment\nScadenza: 16.11.2026\
+ , 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/4179b37a-a33
+ 8-42b6-8627-0cb16a4a981b/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/4179b37a-a338-42b6-8627-0cb16a4a981b
+URL:https://auftragsregister.ch/it/auftrag/4179b37a-a338-42b6-8627-0cb16a4a
+ 981b/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung eines Leistungsmoduls mit zugehörigem St
+ euerungssystem im Hinblick auf den Aufbau einer Hochspannungsstromversorgu
+ ng
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

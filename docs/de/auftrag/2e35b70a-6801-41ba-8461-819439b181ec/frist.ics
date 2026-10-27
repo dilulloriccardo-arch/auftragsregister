@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2e35b70a-6801-41ba-8461-819439b181ec-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Eingabefrist: Entwicklung Adlerzone Wigoltingen
+DESCRIPTION:Auftraggeber: BBS Ingenieure AG\nEingabefrist: 13.11.2026\, 12.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2e35b70a-6801
+ -41ba-8461-819439b181ec/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/2e35b70a-6801-41ba-8461-819439b181ec
+URL:https://auftragsregister.ch/de/auftrag/2e35b70a-6801-41ba-8461-819439b1
+ 81ec/
+LOCATION:Wigoltingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Entwicklung Adlerzone Wigoltingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:773f6303-38cd-4476-bd93-b95fdeb731b4-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261109T225900Z
+SUMMARY:Submission deadline: Schüler- und Schülerinnentransport ZSHKK
+DESCRIPTION:Public buyer: Zentrum für Sozial- und Heilpädagogik Landorf K
+ öniz-Schlössli Kehrsatz\nSubmission deadline: 9 Nov 2026\, 23:59\nIn t
+ he register: https://auftragsregister.ch/en/auftrag/773f6303-38cd-4476-bd9
+ 3-b95fdeb731b4/\nOfficial publication: https://www.simap.ch/en/project-det
+ ail/773f6303-38cd-4476-bd93-b95fdeb731b4
+URL:https://auftragsregister.ch/en/auftrag/773f6303-38cd-4476-bd93-b95fdeb7
+ 31b4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schüler- und Schülerinnentransport ZSHKK
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf1c8d91-725c-4afb-8263-14d3f4225c65-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Délai de remise : Projet Mitholz: l’ancien dépôt de munition
+ s\, Installation d'essai pour la gestion des matériaux
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  07.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/cf1c8d91-725c-4afb-8263-14d3f4225c65/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/cf1c8d91-725c-4afb-8263-14d3f4
+ 225c65
+URL:https://auftragsregister.ch/fr/auftrag/cf1c8d91-725c-4afb-8263-14d3f422
+ 5c65/
+LOCATION:Mitholz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet Mitholz: l’ancien dépôt de muni
+ tions\, Installation d'essai pour la gestion des matériaux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

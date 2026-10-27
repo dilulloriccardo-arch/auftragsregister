@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:423d1ee7-2df7-4b7c-949a-89cba01823cd-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Délai de remise : Gestion intégrale des risques pour les routes
+  IRM-S
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 11.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/423d1ee7-2df7-4b7c-949a-89cba01823cd/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/423d1ee7-2df7-4b7c-949a-89cba
+ 01823cd
+URL:https://auftragsregister.ch/fr/auftrag/423d1ee7-2df7-4b7c-949a-89cba018
+ 23cd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gestion intégrale des risques pour les ro
+ utes IRM-S
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

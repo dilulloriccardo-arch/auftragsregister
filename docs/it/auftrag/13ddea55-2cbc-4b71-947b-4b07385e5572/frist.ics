@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:13ddea55-2cbc-4b71-947b-4b07385e5572-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Scadenza: Appel d'offres public pour la mise en valeur et la créat
+ ion de contenu éditorial pour le portail Santé Genève (SaGE)
+DESCRIPTION:Ente pubblico: Centrale commune d'achats (CCA)\nScadenza: 25.11
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/13ddea
+ 55-2cbc-4b71-947b-4b07385e5572/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/13ddea55-2cbc-4b71-947b-4b07385e5572
+URL:https://auftragsregister.ch/it/auftrag/13ddea55-2cbc-4b71-947b-4b07385e
+ 5572/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Appel d'offres public pour la mise en valeur et la cr
+ éation de contenu éditorial pour le portail Santé Genève (SaGE)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

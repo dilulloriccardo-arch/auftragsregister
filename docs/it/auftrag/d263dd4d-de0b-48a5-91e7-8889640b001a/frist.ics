@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d263dd4d-de0b-48a5-91e7-8889640b001a-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Scadenza: FES Bezirk Meilen und KESB Bezirk Meilen: IT Beschaffung 
+ Clients\, Server und Netzwerk (WAN und WLAN inkl. Wartung und Betrieb)
+DESCRIPTION:Ente pubblico: FES Bezirk Meilen und KESB Bezirk Meilen (PUBLIC
+ S)\nScadenza: 09.11.2026\nNel registro: https://auftragsregister.ch/it/auf
+ trag/d263dd4d-de0b-48a5-91e7-8889640b001a/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/d263dd4d-de0b-48a5-91e7-8889640b001a
+URL:https://auftragsregister.ch/it/auftrag/d263dd4d-de0b-48a5-91e7-8889640b
+ 001a/
+LOCATION:Uetikon am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: FES Bezirk Meilen und KESB Bezirk Meilen: IT Beschaff
+ ung Clients\, Server und Netzwerk (WAN und WLAN inkl. Wartung und Betrieb)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

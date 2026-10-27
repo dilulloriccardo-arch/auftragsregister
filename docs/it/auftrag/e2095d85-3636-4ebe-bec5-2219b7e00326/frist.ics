@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2095d85-3636-4ebe-bec5-2219b7e00326-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Scadenza: N21.12 MP-190074 - NEB Les Toules court terme - Assainiss
+ ement et renforcement de 4 ponts/demi-ponts (ID 12132)
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Abteilung Strass
+ eninfrastruktur West - Filiale Thun\nScadenza: 20.11.2026\, 23:59\nNel reg
+ istro: https://auftragsregister.ch/it/auftrag/e2095d85-3636-4ebe-bec5-2219
+ b7e00326/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail
+ /e2095d85-3636-4ebe-bec5-2219b7e00326
+URL:https://auftragsregister.ch/it/auftrag/e2095d85-3636-4ebe-bec5-2219b7e0
+ 0326/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N21.12 MP-190074 - NEB Les Toules court terme - Assai
+ nissement et renforcement de 4 ponts/demi-ponts (ID 12132)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

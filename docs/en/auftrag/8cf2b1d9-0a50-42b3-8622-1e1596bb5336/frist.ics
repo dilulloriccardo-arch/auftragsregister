@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8cf2b1d9-0a50-42b3-8622-1e1596bb5336-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Submission deadline: Sanierung Mehrzweckhalle und Gemeindehaus\, 89
+ 16 Jonen / BKP 211 Baumeisterarbeiten
+DESCRIPTION:Public buyer: Gemeinde Jonen (Batimo AG)\nSubmission deadline: 
+ 23 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/8cf2b1d9-0a50-42b3-8622-1e1596bb5336/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/8cf2b1d9-0a50-42b3-8622-1e1596bb5336
+URL:https://auftragsregister.ch/en/auftrag/8cf2b1d9-0a50-42b3-8622-1e1596bb
+ 5336/
+LOCATION:Jonen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Mehrzweckhalle und Gemeindehaus\
+ , 8916 Jonen / BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

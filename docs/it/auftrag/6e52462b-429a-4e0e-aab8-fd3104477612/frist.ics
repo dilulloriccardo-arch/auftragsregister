@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e52462b-429a-4e0e-aab8-fd3104477612-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T103000Z
+SUMMARY:Scadenza: P2025/206\, Musée du Léman. Appels d'offres ingénieur 
+ sanitaire
+DESCRIPTION:Ente pubblico: Ville de Nyon - Service d'architecture\nScadenza
+ : 07.12.2026\, 11:30\nNel registro: https://auftragsregister.ch/it/auftrag
+ /6e52462b-429a-4e0e-aab8-fd3104477612/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/6e52462b-429a-4e0e-aab8-fd3104477612
+URL:https://auftragsregister.ch/it/auftrag/6e52462b-429a-4e0e-aab8-fd310447
+ 7612/
+LOCATION:Nyon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: P2025/206\, Musée du Léman. Appels d'offres ingéni
+ eur sanitaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

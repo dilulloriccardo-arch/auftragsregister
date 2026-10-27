@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf3a583b-ff72-4738-bc1f-5603782a9e57-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Délai de remise : MP-210029\, N11/60 TBUB Remise en état EES 
+ – VoMa/UeMa3 MUELS génie civil
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA - Filiale Win
+ terthur\nDélai de remise : 16.12.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/cf3a583b-ff72-4738-bc1f-560378
+ 2a9e57/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /cf3a583b-ff72-4738-bc1f-5603782a9e57
+URL:https://auftragsregister.ch/fr/auftrag/cf3a583b-ff72-4738-bc1f-5603782a
+ 9e57/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-210029\, N11/60 TBUB Remise en état EE
+ S – VoMa/UeMa3 MUELS génie civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cbc0a165-0e78-48e2-ae76-fbd2bda2ed04-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:4
+DTSTART:20261222T150000Z
+SUMMARY:Eingabefrist: Pumpspeicherwerk Grimsel 4\, Los Panzerung Triebwasse
+ rweg und Los UW-Schützen
+DESCRIPTION:Auftraggeber: Kraftwerke Oberhasli AG\nEingabefrist: 22.12.2026
+ \, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/cbc0a16
+ 5-0e78-48e2-ae76-fbd2bda2ed04/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/cbc0a165-0e78-48e2-ae76-fbd2bda2ed04
+URL:https://auftragsregister.ch/de/auftrag/cbc0a165-0e78-48e2-ae76-fbd2bda2
+ ed04/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Pumpspeicherwerk Grimsel 4\, Los Panzerung Triebw
+ asserweg und Los UW-Schützen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

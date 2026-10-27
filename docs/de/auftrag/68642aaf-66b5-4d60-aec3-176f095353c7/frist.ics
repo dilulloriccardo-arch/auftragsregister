@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:68642aaf-66b5-4d60-aec3-176f095353c7-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Eingabefrist: Réalisation d’une plateforme informatique de visua
+ lisation et partage d’indicateurs et données territoriales pour le Gran
+ d Genève
+DESCRIPTION:Auftraggeber: Direction du Projet d'Agglomération Grand Genèv
+ e\nEingabefrist: 12.11.2026\, 12.00 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/68642aaf-66b5-4d60-aec3-176f095353c7/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/68642aaf-66b5-4d60-aec3-176f
+ 095353c7
+URL:https://auftragsregister.ch/de/auftrag/68642aaf-66b5-4d60-aec3-176f0953
+ 53c7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Réalisation d’une plateforme informatique de v
+ isualisation et partage d’indicateurs et données territoriales pour le 
+ Grand Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

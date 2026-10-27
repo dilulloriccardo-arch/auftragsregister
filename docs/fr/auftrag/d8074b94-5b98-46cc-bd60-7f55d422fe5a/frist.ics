@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8074b94-5b98-46cc-bd60-7f55d422fe5a-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : Rénovation école du Bosson - Faux-plafonds
+DESCRIPTION:Acheteur public : Ville d'Onex (Bureau d'architectes Burckhar
+ dt Architecture SA)\nDélai de remise : 30.11.2026\, 12 h 00\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/d8074b94-5b98-46cc-b
+ d60-7f55d422fe5a/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/d8074b94-5b98-46cc-bd60-7f55d422fe5a
+URL:https://auftragsregister.ch/fr/auftrag/d8074b94-5b98-46cc-bd60-7f55d422
+ fe5a/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation école du Bosson - Faux-plafon
+ ds
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:159874ab-c93f-4a75-b54b-ee4332bdae73-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T070000Z
+SUMMARY:Délai de remise : SELRS Netz Würzenbach Los 1\, Planerleistunge
+ n Tiefbau
+DESCRIPTION:Acheteur public : ewl Rohrnetz AG\nDélai de remise : 23.11
+ .2026\, 8 h 00\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/159874ab-c93f-4a75-b54b-ee4332bdae73/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/159874ab-c93f-4a75-b54b-ee4332bdae73
+URL:https://auftragsregister.ch/fr/auftrag/159874ab-c93f-4a75-b54b-ee4332bd
+ ae73/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : SELRS Netz Würzenbach Los 1\, Planerleist
+ ungen Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

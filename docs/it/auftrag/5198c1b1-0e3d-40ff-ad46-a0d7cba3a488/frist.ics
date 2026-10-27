@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5198c1b1-0e3d-40ff-ad46-a0d7cba3a488-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261117T103000Z
+SUMMARY:Scadenza: AO : Plan climat économie alpestre / DGAV
+DESCRIPTION:Ente pubblico: Département de l'agriculture\, de la durabilit
+ é et du climat et du numérique - Direction générale de l'agriculture\,
+  de la viticulture et des affaires vétérinaires - DAGRI\nScadenza: 17.11
+ .2026\, 11:30\nNel registro: https://auftragsregister.ch/it/auftrag/5198c1
+ b1-0e3d-40ff-ad46-a0d7cba3a488/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/5198c1b1-0e3d-40ff-ad46-a0d7cba3a488
+URL:https://auftragsregister.ch/it/auftrag/5198c1b1-0e3d-40ff-ad46-a0d7cba3
+ a488/
+LOCATION:Canton de Vaud
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AO : Plan climat économie alpestre / DGAV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

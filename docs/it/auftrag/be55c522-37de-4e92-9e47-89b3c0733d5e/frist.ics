@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be55c522-37de-4e92-9e47-89b3c0733d5e-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Scadenza: Attribution de 52 postes externes pour l’OCSIN (LSE 202
+ 6-04)
+DESCRIPTION:Ente pubblico: Office cantonal des systèmes d'information et d
+ u numérique (OCSIN)\nScadenza: 30.11.2026\, 12:00\nNel registro: https://
+ auftragsregister.ch/it/auftrag/be55c522-37de-4e92-9e47-89b3c0733d5e/\nPubb
+ licazione ufficiale: https://www.simap.ch/it/project-detail/be55c522-37de-
+ 4e92-9e47-89b3c0733d5e
+URL:https://auftragsregister.ch/it/auftrag/be55c522-37de-4e92-9e47-89b3c073
+ 3d5e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Attribution de 52 postes externes pour l’OCSIN (LSE
+  2026-04)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

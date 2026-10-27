@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4dfb923c-8ace-465f-b852-b277795f0c68-frist@auftragsregister.ch
+DTSTAMP:20260911T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261103
+DTEND;VALUE=DATE:20261104
+SUMMARY:Submission deadline: Demande d'offres pour les assurances de person
+ nes LAA/ LAA complémentaire / maladie perte de gain / courte durée
+DESCRIPTION:Public buyer: IMAD (Qualibroker Swiss Risk & Care)\nSubmission 
+ deadline: 3 Nov 2026\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/4dfb923c-8ace-465f-b852-b277795f0c68/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/4dfb923c-8ace-465f-b852-b277795f0c68
+URL:https://auftragsregister.ch/en/auftrag/4dfb923c-8ace-465f-b852-b277795f
+ 0c68/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Demande d'offres pour les assurances de pe
+ rsonnes LAA/ LAA complémentaire / maladie perte de gain / courte durée
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

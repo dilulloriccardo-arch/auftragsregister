@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9c4d5ccd-39ef-4114-b405-3cb04735c1e6-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261119T103000Z
+SUMMARY:Délai de remise : Mise en œuvre et gestion du Réseau Santé Ge
+ nève
+DESCRIPTION:Acheteur public : Etat de Genève - Département de la santé
+  et des mobilités\, Secrétariat général\nDélai de remise : 19.11.20
+ 26\, 11 h 30\nDans le registre : https://auftragsregister.ch/fr/auft
+ rag/9c4d5ccd-39ef-4114-b405-3cb04735c1e6/\nPublication officielle : http
+ s://www.simap.ch/fr/project-detail/9c4d5ccd-39ef-4114-b405-3cb04735c1e6
+URL:https://auftragsregister.ch/fr/auftrag/9c4d5ccd-39ef-4114-b405-3cb04735
+ c1e6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mise en œuvre et gestion du Réseau Sant
+ é Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

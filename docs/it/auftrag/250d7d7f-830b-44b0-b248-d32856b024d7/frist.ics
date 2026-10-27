@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:250d7d7f-830b-44b0-b248-d32856b024d7-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261113T100000Z
+SUMMARY:Scadenza: Capitolato quadro LEA 2027-2029 per opere da impresario c
+ ostruttore e pavimentazione
+DESCRIPTION:Ente pubblico: Locarnese Ente Acqua (LEA)\nScadenza: 13.11.2026
+ \, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/250d7d7f-83
+ 0b-44b0-b248-d32856b024d7/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/250d7d7f-830b-44b0-b248-d32856b024d7
+URL:https://auftragsregister.ch/it/auftrag/250d7d7f-830b-44b0-b248-d32856b0
+ 24d7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Capitolato quadro LEA 2027-2029 per opere da impresar
+ io costruttore e pavimentazione
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

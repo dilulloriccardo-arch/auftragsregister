@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0de66210-8932-422c-845e-5b85983185d4-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:1
+DTSTART:20261207T080000Z
+SUMMARY:Scadenza: Rahmenvertrag Oberbauinstandsetzungsleistungen im Fachlos
+  1\, in Gleisen und Weichen auf Schweizer Gebiet\, der DB InfraGO AG\, fü
+ r die GJ 2028ff. Region Südwest\, Netzb. Singen_PD Freiburg (FBU).
+DESCRIPTION:Ente pubblico: Deutsche Bahn AG\, Beschaffung Infrastruktur\, R
+ egion Südwest (FE.EI)\nScadenza: 07.12.2026\, 09:00\nNel registro: https:
+ //auftragsregister.ch/it/auftrag/0de66210-8932-422c-845e-5b85983185d4/\nPu
+ bblicazione ufficiale: https://www.simap.ch/it/project-detail/0de66210-893
+ 2-422c-845e-5b85983185d4
+URL:https://auftragsregister.ch/it/auftrag/0de66210-8932-422c-845e-5b859831
+ 85d4/
+LOCATION:Schaffhausen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenvertrag Oberbauinstandsetzungsleistungen im Fac
+ hlos 1\, in Gleisen und Weichen auf Schweizer Gebiet\, der DB InfraGO AG\,
+  für die GJ 2028ff. Region Südwest\, Netzb. Singen_PD Freiburg (FBU).
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

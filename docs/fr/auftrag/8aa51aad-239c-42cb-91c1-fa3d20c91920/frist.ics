@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8aa51aad-239c-42cb-91c1-fa3d20c91920-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Délai de remise : Sekundarschulhaus Schulhausmodulbau
+DESCRIPTION:Acheteur public : BBS Ingenieure AG\nDélai de remise : 02.
+ 11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/8aa51aad-239c-42cb-91c1-fa3d20c91920/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/8aa51aad-239c-42cb-91c1-fa3d20c919
+ 20
+URL:https://auftragsregister.ch/fr/auftrag/8aa51aad-239c-42cb-91c1-fa3d20c9
+ 1920/
+LOCATION:Fehraltorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sekundarschulhaus Schulhausmodulbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

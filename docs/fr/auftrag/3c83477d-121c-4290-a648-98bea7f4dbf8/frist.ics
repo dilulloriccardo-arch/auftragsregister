@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c83477d-121c-4290-a648-98bea7f4dbf8-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : Ernen nouvelle sous-station\, Transformateurs 
+ 65/16.5 kV
+DESCRIPTION:Acheteur public : FMV SA\nDélai de remise : 30.11.2026\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/3c
+ 83477d-121c-4290-a648-98bea7f4dbf8/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/3c83477d-121c-4290-a648-98bea7f4dbf8
+URL:https://auftragsregister.ch/fr/auftrag/3c83477d-121c-4290-a648-98bea7f4
+ dbf8/
+LOCATION:Ernen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ernen nouvelle sous-station\, Transformate
+ urs 65/16.5 kV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

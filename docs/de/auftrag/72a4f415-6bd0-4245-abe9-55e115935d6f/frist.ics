@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72a4f415-6bd0-4245-abe9-55e115935d6f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Eingabefrist: Erweiterung Hebelschule\, BKP 261.0 Aufzugsanlagen
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Riehen\nEingabefrist: 20.11.202
+ 6\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/72a4f4
+ 15-6bd0-4245-abe9-55e115935d6f/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/72a4f415-6bd0-4245-abe9-55e115935d6f
+URL:https://auftragsregister.ch/de/auftrag/72a4f415-6bd0-4245-abe9-55e11593
+ 5d6f/
+LOCATION:Riehen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Erweiterung Hebelschule\, BKP 261.0 Aufzugsanlage
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

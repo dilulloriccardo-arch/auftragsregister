@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5bd1ad8-fbe7-4b23-9ae5-10eeb45b54bf-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Délai de remise : Transformateurs de distribution triphasés 1 0
+ 00 kVA + 250 kVA à faibles émissions
+DESCRIPTION:Acheteur public : Strategischer Einkauf EBL\, Öffentliche Be
+ schaffung\nDélai de remise : 02.11.2026\, 12 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/e5bd1ad8-fbe7-4b23-9ae5-10eeb4
+ 5b54bf/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /e5bd1ad8-fbe7-4b23-9ae5-10eeb45b54bf
+URL:https://auftragsregister.ch/fr/auftrag/e5bd1ad8-fbe7-4b23-9ae5-10eeb45b
+ 54bf/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transformateurs de distribution triphasés
+  1 000 kVA + 250 kVA à faibles émissions
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ea200aa-2e44-4ec7-bc92-96b01384d19e-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Submission deadline: Wischmaschine
+DESCRIPTION:Public buyer: Amt für Betrieb Nationalstrassen\nSubmission dea
+ dline: 20 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch
+ /en/auftrag/1ea200aa-2e44-4ec7-bc92-96b01384d19e/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/1ea200aa-2e44-4ec7-bc92-96b01384d19e
+URL:https://auftragsregister.ch/en/auftrag/1ea200aa-2e44-4ec7-bc92-96b01384
+ d19e/
+LOCATION:Flüelen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wischmaschine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

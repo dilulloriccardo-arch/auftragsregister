@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ade9b93e-c4d2-41fb-b376-021d5a671f44-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:1
+DTSTART:20261117T225900Z
+SUMMARY:Submission deadline: Cadenazzo - Centro di manutenzione
+DESCRIPTION:Public buyer: Ferrovie Federali Svizzere FFS SA - Immobili - Fi
+ nanze e Acquisti\nSubmission deadline: 17 Nov 2026\, 23:59\nIn the regis
+ ter: https://auftragsregister.ch/en/auftrag/ade9b93e-c4d2-41fb-b376-021d5a
+ 671f44/\nOfficial publication: https://www.simap.ch/en/project-detail/ade9
+ b93e-c4d2-41fb-b376-021d5a671f44
+URL:https://auftragsregister.ch/en/auftrag/ade9b93e-c4d2-41fb-b376-021d5a67
+ 1f44/
+LOCATION:Cadenazzo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Cadenazzo - Centro di manutenzione
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

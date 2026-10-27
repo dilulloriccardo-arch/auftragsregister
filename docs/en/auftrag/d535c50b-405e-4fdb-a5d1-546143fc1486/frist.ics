@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d535c50b-405e-4fdb-a5d1-546143fc1486-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261201T225900Z
+SUMMARY:Submission deadline: Neubau Haus 07B - SKP 273096 Brandschutztore a
+ us Holz (AP04-02)
+DESCRIPTION:Public buyer: Spitalanlagengesellschaft HOCH Health Ostschweiz\
+ nSubmission deadline: 1 Dec 2026\, 23:59\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/d535c50b-405e-4fdb-a5d1-546143fc1486/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/d535c50b-405e-4fdb-a5d
+ 1-546143fc1486
+URL:https://auftragsregister.ch/en/auftrag/d535c50b-405e-4fdb-a5d1-546143fc
+ 1486/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Haus 07B - SKP 273096 Brandschutzto
+ re aus Holz (AP04-02)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

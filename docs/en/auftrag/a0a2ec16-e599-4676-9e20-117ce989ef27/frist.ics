@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a0a2ec16-e599-4676-9e20-117ce989ef27-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Submission deadline: VS Weissenbühl\, Neubau\, 379 Turnhallenausst
+ attung
+DESCRIPTION:Public buyer: Fachstelle Beschaffungswesen Stadt Bern\nSubmissi
+ on deadline: 25 Nov 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/a0a2ec16-e599-4676-9e20-117ce989ef27/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/a0a2ec16-e599-4676-9e20-117ce9
+ 89ef27
+URL:https://auftragsregister.ch/en/auftrag/a0a2ec16-e599-4676-9e20-117ce989
+ ef27/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: VS Weissenbühl\, Neubau\, 379 Turnhallena
+ usstattung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

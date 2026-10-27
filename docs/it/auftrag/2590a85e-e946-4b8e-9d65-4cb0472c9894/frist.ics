@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2590a85e-e946-4b8e-9d65-4cb0472c9894-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261124T140000Z
+SUMMARY:Scadenza: Schulraumerweiterung Kilchbühl Biel-Benken (Basel-Land)\
+ , BKP 211 Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: Gemeindeverwaltung Biel-Benken\nScadenza: 24.11.
+ 2026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/2590a85
+ e-e946-4b8e-9d65-4cb0472c9894/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/2590a85e-e946-4b8e-9d65-4cb0472c9894
+URL:https://auftragsregister.ch/it/auftrag/2590a85e-e946-4b8e-9d65-4cb0472c
+ 9894/
+LOCATION:Biel-Benken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulraumerweiterung Kilchbühl Biel-Benken (Basel-La
+ nd)\, BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

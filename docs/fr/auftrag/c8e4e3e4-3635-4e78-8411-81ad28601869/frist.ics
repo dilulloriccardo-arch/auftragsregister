@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8e4e3e4-3635-4e78-8411-81ad28601869-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Délai de remise : Beschaffung: System zur Unkrautvernichtung
+DESCRIPTION:Acheteur public : Rhätische Bahn AG\nDélai de remise : 09
+ .12.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/c8e4e3e4-3635-4e78-8411-81ad28601869/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/c8e4e3e4-3635-4e78-8411-81ad28601
+ 869
+URL:https://auftragsregister.ch/fr/auftrag/c8e4e3e4-3635-4e78-8411-81ad2860
+ 1869/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Beschaffung: System zur Unkrautvernichtung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

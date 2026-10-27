@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:908f24fc-efbd-4ab8-93be-a3af24ace3da-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261105T130000Z
+SUMMARY:Délai de remise : Appel d’offres pour la fourniture d’une ap
+ plication informatique destinée à la planification et à la gestion des 
+ agendas\, des rendez-vous ambulatoires et des salles d’opération
+DESCRIPTION:Acheteur public : Ente Ospedaliero Cantonale - Area Evoluzion
+ e Digitale e Tecnologia\nDélai de remise : 05.11.2026\, 14 h 00\nDa
+ ns le registre : https://auftragsregister.ch/fr/auftrag/908f24fc-efbd-4a
+ b8-93be-a3af24ace3da/\nPublication officielle : https://www.simap.ch/fr/
+ project-detail/908f24fc-efbd-4ab8-93be-a3af24ace3da
+URL:https://auftragsregister.ch/fr/auftrag/908f24fc-efbd-4ab8-93be-a3af24ac
+ e3da/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d’offres pour la fourniture d’un
+ e application informatique destinée à la planification et à la gestion 
+ des agendas\, des rendez-vous ambulatoires et des salles d’opération
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

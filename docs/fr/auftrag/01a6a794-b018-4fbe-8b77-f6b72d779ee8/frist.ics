@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:01a6a794-b018-4fbe-8b77-f6b72d779ee8-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261119T225900Z
+SUMMARY:Délai de remise : Gymnasium Neufeld - Beschaffung Displays Schä
+ nzlihalde
+DESCRIPTION:Acheteur public : Gymnasium Neufeld (reflecta ag)\nDélai de 
+ remise : 19.11.2026\, 23 h 59\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/01a6a794-b018-4fbe-8b77-f6b72d779ee8/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/01a6a794-b018-4fbe-8
+ b77-f6b72d779ee8
+URL:https://auftragsregister.ch/fr/auftrag/01a6a794-b018-4fbe-8b77-f6b72d77
+ 9ee8/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gymnasium Neufeld - Beschaffung Displays S
+ chänzlihalde
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

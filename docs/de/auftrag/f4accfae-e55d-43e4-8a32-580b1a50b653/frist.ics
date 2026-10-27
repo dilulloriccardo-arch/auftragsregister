@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f4accfae-e55d-43e4-8a32-580b1a50b653-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261208T150000Z
+SUMMARY:Eingabefrist: Erweiterung Alterszentrum Bärenmatt: BKP 244 Lüftun
+ gsanlagen
+DESCRIPTION:Auftraggeber: HSSP AG\nEingabefrist: 08.12.2026\, 16.00 Uhr\nI
+ m Register: https://auftragsregister.ch/de/auftrag/f4accfae-e55d-43e4-8a32
+ -580b1a50b653/\nAmtliche Publikation: https://www.simap.ch/de/project-deta
+ il/f4accfae-e55d-43e4-8a32-580b1a50b653
+URL:https://auftragsregister.ch/de/auftrag/f4accfae-e55d-43e4-8a32-580b1a50
+ b653/
+LOCATION:Bremgarten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Erweiterung Alterszentrum Bärenmatt: BKP 244 Lü
+ ftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

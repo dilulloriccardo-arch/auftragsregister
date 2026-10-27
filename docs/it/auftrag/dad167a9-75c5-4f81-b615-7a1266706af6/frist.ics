@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dad167a9-75c5-4f81-b615-7a1266706af6-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Scadenza: AQUANOVO-Juristische Unterstützung
+DESCRIPTION:Ente pubblico: DIB - Wasserversorgung (WVZ)\nScadenza: 06.11.20
+ 26\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/dad167a9-
+ 75c5-4f81-b615-7a1266706af6/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/dad167a9-75c5-4f81-b615-7a1266706af6
+URL:https://auftragsregister.ch/it/auftrag/dad167a9-75c5-4f81-b615-7a126670
+ 6af6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AQUANOVO-Juristische Unterstützung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

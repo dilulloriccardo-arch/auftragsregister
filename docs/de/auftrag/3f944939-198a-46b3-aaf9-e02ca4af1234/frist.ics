@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3f944939-198a-46b3-aaf9-e02ca4af1234-frist@auftragsregister.ch
+DTSTAMP:20260826T000000Z
+SEQUENCE:0
+DTSTART:20261030T225900Z
+SUMMARY:Eingabefrist: 11351 / 11352 K 36\, Flühli\, Erneuerung Rischlibrü
+ cken
+DESCRIPTION:Auftraggeber: Verkehr und Infrastruktur (vif)\, Realisierung\nE
+ ingabefrist: 30.10.2026\, 23.59 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/3f944939-198a-46b3-aaf9-e02ca4af1234/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/3f944939-198a-46b3-aaf9-e02ca4af
+ 1234
+URL:https://auftragsregister.ch/de/auftrag/3f944939-198a-46b3-aaf9-e02ca4af
+ 1234/
+LOCATION:Sörenberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 11351 / 11352 K 36\, Flühli\, Erneuerung Rischli
+ brücken
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

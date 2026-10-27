@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0244f307-10c7-41c7-8aa8-e8827f793dc6-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Submission deadline: Fil Bleu Glatt - Teilprojekt Fil Bleu Nord: Re
+ vitalisierung\, Verbesserung Hochwasserschutz\, Fuss- und Veloweg\, Freira
+ umgestaltung mit Erholungsräumen
+DESCRIPTION:Public buyer: AWEL / Abteilung Wasserbau\nSubmission deadline: 
+ 16 Nov 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/0244f307-10c7-41c7-8aa8-e8827f793dc6/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/0244f307-10c7-41c7-8aa8-e8827f793dc6
+URL:https://auftragsregister.ch/en/auftrag/0244f307-10c7-41c7-8aa8-e8827f79
+ 3dc6/
+LOCATION:Opfikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fil Bleu Glatt - Teilprojekt Fil Bleu Nord
+ : Revitalisierung\, Verbesserung Hochwasserschutz\, Fuss- und Veloweg\, Fr
+ eiraumgestaltung mit Erholungsräumen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8288f08b-4a4e-4322-86af-9f79a7357583-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Délai de remise : Kirchgemeindehaus Enge\, Instandsetzung Gebäu
+ de mit Bistrobetrieb BKP 230 Elektroinstallationen
+DESCRIPTION:Acheteur public : Reformierte Kirchgemeinde Zürich\nDélai d
+ e remise : 25.11.2026\, 12 h 00\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/8288f08b-4a4e-4322-86af-9f79a7357583/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/8288f08b-4a4e-4322
+ -86af-9f79a7357583
+URL:https://auftragsregister.ch/fr/auftrag/8288f08b-4a4e-4322-86af-9f79a735
+ 7583/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kirchgemeindehaus Enge\, Instandsetzung Ge
+ bäude mit Bistrobetrieb BKP 230 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

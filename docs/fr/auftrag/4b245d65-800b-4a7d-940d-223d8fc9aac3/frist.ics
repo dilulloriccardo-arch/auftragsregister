@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b245d65-800b-4a7d-940d-223d8fc9aac3-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Délai de remise : USZ Campus MITTE 1|2 / CVC 283.14 Revêtement 
+ de plafond en plâtre – Lot 4
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 14.12.2026\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/4b245d65-800b-4a7d-940d-223d8fc9aac3/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/4b245d65-800b-4a7d-940d-
+ 223d8fc9aac3
+URL:https://auftragsregister.ch/fr/auftrag/4b245d65-800b-4a7d-940d-223d8fc9
+ aac3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : USZ Campus MITTE 1|2 / CVC 283.14 Revêtem
+ ent de plafond en plâtre – Lot 4
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

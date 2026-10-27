@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5dd49fdb-dd32-4d1b-b87a-04f59f93d5c3-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20270107T150000Z
+SUMMARY:Eingabefrist: 26-417 FL KB Rottenverstärkung Fahrleitung und Kabel
+DESCRIPTION:Auftraggeber: SBB Infrastruktur AG / Einkauf\, Supply Chain und
+  Produktion\nEingabefrist: 07.01.2027\, 16.00 Uhr\nIm Register: https://a
+ uftragsregister.ch/de/auftrag/5dd49fdb-dd32-4d1b-b87a-04f59f93d5c3/\nAmtli
+ che Publikation: https://www.simap.ch/de/project-detail/5dd49fdb-dd32-4d1b
+ -b87a-04f59f93d5c3
+URL:https://auftragsregister.ch/de/auftrag/5dd49fdb-dd32-4d1b-b87a-04f59f93
+ d5c3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 26-417 FL KB Rottenverstärkung Fahrleitung und K
+ abel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

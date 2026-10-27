@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:593397bc-2cc8-4d5f-ae10-b7100b12ada4-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261027T225900Z
+SUMMARY:Scadenza: BSB Projekt - Baumeister
+DESCRIPTION:Ente pubblico: BLS AG - Finance & SCM - Strategische Beschaffun
+ g\nScadenza: 27.10.2026\, 23:59\nNel registro: https://auftragsregister.ch
+ /it/auftrag/593397bc-2cc8-4d5f-ae10-b7100b12ada4/\nPubblicazione ufficiale
+ : https://www.simap.ch/it/project-detail/593397bc-2cc8-4d5f-ae10-b7100b12a
+ da4
+URL:https://auftragsregister.ch/it/auftrag/593397bc-2cc8-4d5f-ae10-b7100b12
+ ada4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BSB Projekt - Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

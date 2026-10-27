@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:84219411-8eee-4fbb-b015-1dd2cb6116bd-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:2
+DTSTART:20261125T160000Z
+SUMMARY:Submission deadline: Fachapplikation Arbeitsmarktvollzug
+DESCRIPTION:Public buyer: Amt für Informatik und Organisation\nSubmission 
+ deadline: 25 Nov 2026\, 17:00\nIn the register: https://auftragsregister
+ .ch/en/auftrag/84219411-8eee-4fbb-b015-1dd2cb6116bd/\nOfficial publication
+ : https://www.simap.ch/en/project-detail/84219411-8eee-4fbb-b015-1dd2cb611
+ 6bd
+URL:https://auftragsregister.ch/en/auftrag/84219411-8eee-4fbb-b015-1dd2cb61
+ 16bd/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fachapplikation Arbeitsmarktvollzug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

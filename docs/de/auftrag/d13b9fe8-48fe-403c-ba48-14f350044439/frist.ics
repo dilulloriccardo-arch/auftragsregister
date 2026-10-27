@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d13b9fe8-48fe-403c-ba48-14f350044439-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T140000Z
+SUMMARY:Eingabefrist: UNIVERS_Nouveau bâtiment pour l'université de Neuch
+ âtel _ Espace Tilo-Frey\, Neuchâtel _ Travaux d'étanchéité\, couvertu
+ re_ CFC 224
+DESCRIPTION:Auftraggeber: Service des bâtiments de l'Etat de Neuchâtel\nE
+ ingabefrist: 13.11.2026\, 15.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/d13b9fe8-48fe-403c-ba48-14f350044439/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/d13b9fe8-48fe-403c-ba48-14f35004
+ 4439
+URL:https://auftragsregister.ch/de/auftrag/d13b9fe8-48fe-403c-ba48-14f35004
+ 4439/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: UNIVERS_Nouveau bâtiment pour l'université de N
+ euchâtel _ Espace Tilo-Frey\, Neuchâtel _ Travaux d'étanchéité\, couv
+ erture_ CFC 224
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

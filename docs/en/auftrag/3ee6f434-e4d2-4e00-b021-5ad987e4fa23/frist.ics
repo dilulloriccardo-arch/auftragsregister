@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3ee6f434-e4d2-4e00-b021-5ad987e4fa23-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Submission deadline: Marché de restauration
+DESCRIPTION:Public buyer: Pôle Seniors Saconnay\nSubmission deadline: 9 N
+ ov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 3ee6f434-e4d2-4e00-b021-5ad987e4fa23/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/3ee6f434-e4d2-4e00-b021-5ad987e4fa23
+URL:https://auftragsregister.ch/en/auftrag/3ee6f434-e4d2-4e00-b021-5ad987e4
+ fa23/
+LOCATION:Grand-Saconnex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Marché de restauration
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

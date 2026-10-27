@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10067bdc-4051-4875-892b-af95014d5b9b-frist@auftragsregister.ch
+DTSTAMP:20260822T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Eingabefrist: ARA Thurau\, Tiefbauarbeiten Etappe West
+DESCRIPTION:Auftraggeber: Abwasserverband Thurau\nEingabefrist: 09.11.2026\
+ , 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/10067bdc
+ -4051-4875-892b-af95014d5b9b/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/10067bdc-4051-4875-892b-af95014d5b9b
+URL:https://auftragsregister.ch/de/auftrag/10067bdc-4051-4875-892b-af95014d
+ 5b9b/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ARA Thurau\, Tiefbauarbeiten Etappe West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

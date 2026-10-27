@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:946bf9b1-1108-4c1a-bf62-e734c5130f6e-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261116T130000Z
+SUMMARY:Eingabefrist: Maintenance de la solution UKG Employee File Manageme
+ nt - fourniture de licences et connecteur UKG/SAP SuccessFactors
+DESCRIPTION:Auftraggeber: Services industriels de Genève (SIG) - Direction
+  Achats\nEingabefrist: 16.11.2026\, 14.00 Uhr\nIm Register: https://auftr
+ agsregister.ch/de/auftrag/946bf9b1-1108-4c1a-bf62-e734c5130f6e/\nAmtliche 
+ Publikation: https://www.simap.ch/de/project-detail/946bf9b1-1108-4c1a-bf6
+ 2-e734c5130f6e
+URL:https://auftragsregister.ch/de/auftrag/946bf9b1-1108-4c1a-bf62-e734c513
+ 0f6e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Maintenance de la solution UKG Employee File Mana
+ gement - fourniture de licences et connecteur UKG/SAP SuccessFactors
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

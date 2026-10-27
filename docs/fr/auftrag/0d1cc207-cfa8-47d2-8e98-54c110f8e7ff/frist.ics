@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d1cc207-cfa8-47d2-8e98-54c110f8e7ff-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Délai de remise : Institut für Rechtsmedizin (IRM)\, Umbau Ersa
+ tzstandort\, BKP 272.2 Allgemeine Metallbauarbeiten
+DESCRIPTION:Acheteur public : Bau- und Verkehrsdepartement des Kantons Ba
+ sel-Stadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\n
+ Délai de remise : 16.11.2026\, 12 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/0d1cc207-cfa8-47d2-8e98-54c110f8e7ff/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/0d1cc207-c
+ fa8-47d2-8e98-54c110f8e7ff
+URL:https://auftragsregister.ch/fr/auftrag/0d1cc207-cfa8-47d2-8e98-54c110f8
+ e7ff/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Institut für Rechtsmedizin (IRM)\, Umbau 
+ Ersatzstandort\, BKP 272.2 Allgemeine Metallbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

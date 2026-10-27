@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78df4445-d639-4f13-b10f-19d24d6d816f-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261119T140000Z
+SUMMARY:Submission deadline: HUG - Coeur de BS26 - Mandataire Général SIA
+  31-53
+DESCRIPTION:Public buyer: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nSubmission deadline: 19 Nov 2026\, 15:00\nIn the reg
+ ister: https://auftragsregister.ch/en/auftrag/78df4445-d639-4f13-b10f-19d2
+ 4d6d816f/\nOfficial publication: https://www.simap.ch/en/project-detail/78
+ df4445-d639-4f13-b10f-19d24d6d816f
+URL:https://auftragsregister.ch/en/auftrag/78df4445-d639-4f13-b10f-19d24d6d
+ 816f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: HUG - Coeur de BS26 - Mandataire Général
+  SIA 31-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

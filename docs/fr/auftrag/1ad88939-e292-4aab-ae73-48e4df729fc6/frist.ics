@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ad88939-e292-4aab-ae73-48e4df729fc6-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261124T110000Z
+SUMMARY:Délai de remise : Extension du collège de Villars-Sainte-Croix 
+ - CFC 201.1/211.4/211.5 - Terrassements/Canalisations/Béton
+DESCRIPTION:Acheteur public : Commune de Villars-Sainte-Croix (Atelier Cu
+ be)\nDélai de remise : 24.11.2026\, 12 h 00\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/1ad88939-e292-4aab-ae73-48e4df729fc6
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/1ad88
+ 939-e292-4aab-ae73-48e4df729fc6
+URL:https://auftragsregister.ch/fr/auftrag/1ad88939-e292-4aab-ae73-48e4df72
+ 9fc6/
+LOCATION:Villars-Sainte-Croix
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Extension du collège de Villars-Sainte-Cr
+ oix - CFC 201.1/211.4/211.5 - Terrassements/Canalisations/Béton
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

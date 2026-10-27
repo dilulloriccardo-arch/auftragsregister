@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee812ea1-7970-4206-af5e-b4f8a70d3225-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261201T123000Z
+SUMMARY:Délai de remise : TGSB SA - Travaux de renouvellement électrom
+ écanique (fourniture) - Chemins à câbles
+DESCRIPTION:Acheteur public : Tunnel du Grand-Saint-Bernard\nDélai de re
+ mise : 01.12.2026\, 13 h 30\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/ee812ea1-7970-4206-af5e-b4f8a70d3225/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/ee812ea1-7970-4206-af5
+ e-b4f8a70d3225
+URL:https://auftragsregister.ch/fr/auftrag/ee812ea1-7970-4206-af5e-b4f8a70d
+ 3225/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : TGSB SA - Travaux de renouvellement élect
+ romécanique (fourniture) - Chemins à câbles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

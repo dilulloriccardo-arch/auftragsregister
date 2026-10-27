@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:04fafc46-c7bc-415a-8b24-2ec426524ffb-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261105T153000Z
+SUMMARY:Délai de remise : ESII MEYRIN - LOT 38 AMENAGEMENT PAYSAGER
+DESCRIPTION:Acheteur public : Office Cantonal des bâtiments (OCBA) - Stu
+ dio Mint SARL\nDélai de remise : 05.11.2026\, 16 h 30\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/04fafc46-c7bc-415a-8b24-2e
+ c426524ffb/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/04fafc46-c7bc-415a-8b24-2ec426524ffb
+URL:https://auftragsregister.ch/fr/auftrag/04fafc46-c7bc-415a-8b24-2ec42652
+ 4ffb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ESII MEYRIN - LOT 38 AMENAGEMENT PAYSAGER
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

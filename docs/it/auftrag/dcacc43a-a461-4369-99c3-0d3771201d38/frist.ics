@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dcacc43a-a461-4369-99c3-0d3771201d38-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Scadenza: Weiterentwicklung der Clarity-Plattform
+DESCRIPTION:Ente pubblico: Service de l'informatique et des télécommunica
+ tions (SITel)\nScadenza: 04.11.2026\, 12:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/dcacc43a-a461-4369-99c3-0d3771201d38/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/dcacc43a-a461-4369-99
+ c3-0d3771201d38
+URL:https://auftragsregister.ch/it/auftrag/dcacc43a-a461-4369-99c3-0d377120
+ 1d38/
+LOCATION:Givisiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Weiterentwicklung der Clarity-Plattform
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:798a2c6b-be23-4517-9cf3-eeb0819bd31d-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Délai de remise : Zukunft Bahnhof Bern\, Baustein 3b\, 561 Bewac
+ hung/Sicherheitsdienst
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 24.11.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/798a2c6b-be23-4517-9cf3-eeb0819bd31d/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/798a2c6b-be
+ 23-4517-9cf3-eeb0819bd31d
+URL:https://auftragsregister.ch/fr/auftrag/798a2c6b-be23-4517-9cf3-eeb0819b
+ d31d/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Zukunft Bahnhof Bern\, Baustein 3b\, 561 B
+ ewachung/Sicherheitsdienst
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

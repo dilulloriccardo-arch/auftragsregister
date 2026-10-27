@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:704ff4ec-985b-4d6b-ba51-bb14fc18d181-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261106T225500Z
+SUMMARY:Eingabefrist: Giacomettistrasse\, Aspermontstrasse - Wiesentalstras
+ se
+DESCRIPTION:Auftraggeber: Stadt Chur - Tiefbaudienste\nEingabefrist: 06.11.
+ 2026\, 23.55 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/704
+ ff4ec-985b-4d6b-ba51-bb14fc18d181/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/704ff4ec-985b-4d6b-ba51-bb14fc18d181
+URL:https://auftragsregister.ch/de/auftrag/704ff4ec-985b-4d6b-ba51-bb14fc18
+ d181/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Giacomettistrasse\, Aspermontstrasse - Wiesentals
+ trasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

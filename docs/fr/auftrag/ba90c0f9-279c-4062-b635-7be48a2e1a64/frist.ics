@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ba90c0f9-279c-4062-b635-7be48a2e1a64-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Délai de remise : Progetto selvicolturale nel bosco di protezion
+ e del Comune di Manno\, tappa prioritaria Boschetti-Ronchetti: Opere da im
+ presario forestale
+DESCRIPTION:Acheteur public : Comune di Manno\nDélai de remise : 16.11
+ .2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/ba90c0f9-279c-4062-b635-7be48a2e1a64/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/ba90c0f9-279c-4062-b635-7be48a2e1a64
+URL:https://auftragsregister.ch/fr/auftrag/ba90c0f9-279c-4062-b635-7be48a2e
+ 1a64/
+LOCATION:Manno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Progetto selvicolturale nel bosco di prote
+ zione del Comune di Manno\, tappa prioritaria Boschetti-Ronchetti: Opere d
+ a impresario forestale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

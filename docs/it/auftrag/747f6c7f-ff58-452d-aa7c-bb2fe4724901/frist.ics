@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:747f6c7f-ff58-452d-aa7c-bb2fe4724901-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261119T225900Z
+SUMMARY:Scadenza: (26072) 201 IAM-Kernlösung IT-EDA
+DESCRIPTION:Ente pubblico: Bundesamt für Bauten und Logistik BBL\nScadenza
+ : 19.11.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag
+ /747f6c7f-ff58-452d-aa7c-bb2fe4724901/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/747f6c7f-ff58-452d-aa7c-bb2fe4724901
+URL:https://auftragsregister.ch/it/auftrag/747f6c7f-ff58-452d-aa7c-bb2fe472
+ 4901/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (26072) 201 IAM-Kernlösung IT-EDA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

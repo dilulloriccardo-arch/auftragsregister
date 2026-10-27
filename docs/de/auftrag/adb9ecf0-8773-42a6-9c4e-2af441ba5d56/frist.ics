@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:adb9ecf0-8773-42a6-9c4e-2af441ba5d56-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Eingabefrist: USZ Campus MITTE 1|2 / BKP 271.14 Gipserarbeiten Los 
+ 4 MIT1 Ebene F-J (OV)
+DESCRIPTION:Auftraggeber: Universitätsspital Zürich\nEingabefrist: 02.12.
+ 2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/adb
+ 9ecf0-8773-42a6-9c4e-2af441ba5d56/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/adb9ecf0-8773-42a6-9c4e-2af441ba5d56
+URL:https://auftragsregister.ch/de/auftrag/adb9ecf0-8773-42a6-9c4e-2af441ba
+ 5d56/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: USZ Campus MITTE 1|2 / BKP 271.14 Gipserarbeiten 
+ Los 4 MIT1 Ebene F-J (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

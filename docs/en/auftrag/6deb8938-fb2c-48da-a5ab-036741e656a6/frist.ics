@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6deb8938-fb2c-48da-a5ab-036741e656a6-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261123T090000Z
+SUMMARY:Submission deadline: AMB/2026/11 - Collegamento Gnosca-Preonzo-Clar
+ o Fase 2
+DESCRIPTION:Public buyer: Azienda Multiservizi Bellinzona (AMB)\nSubmission
+  deadline: 23 Nov 2026\, 10:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/6deb8938-fb2c-48da-a5ab-036741e656a6/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/6deb8938-fb2c-48da-a5ab-036741e6
+ 56a6
+URL:https://auftragsregister.ch/en/auftrag/6deb8938-fb2c-48da-a5ab-036741e6
+ 56a6/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AMB/2026/11 - Collegamento Gnosca-Preonzo-
+ Claro Fase 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

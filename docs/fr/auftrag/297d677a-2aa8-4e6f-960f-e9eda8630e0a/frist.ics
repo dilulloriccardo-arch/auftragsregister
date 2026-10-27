@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:297d677a-2aa8-4e6f-960f-e9eda8630e0a-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261117T160000Z
+SUMMARY:Délai de remise : Préqualification prestations de planification
+  planification générale développement du site Hüslimatt étape 1
+DESCRIPTION:Acheteur public : BLT Baselland Transport AG\nDélai de remis
+ e : 17.11.2026\, 17 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/297d677a-2aa8-4e6f-960f-e9eda8630e0a/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/297d677a-2aa8-4e6f-960f-e
+ 9eda8630e0a
+URL:https://auftragsregister.ch/fr/auftrag/297d677a-2aa8-4e6f-960f-e9eda863
+ 0e0a/
+LOCATION:Oberwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Préqualification prestations de planifica
+ tion planification générale développement du site Hüslimatt étape 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

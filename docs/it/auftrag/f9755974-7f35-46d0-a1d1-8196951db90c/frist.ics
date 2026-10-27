@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f9755974-7f35-46d0-a1d1-8196951db90c-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261203T090000Z
+SUMMARY:Scadenza: CDM124.0 - Isolamenti e rivestimenti di facciata per la C
+ ittà della Musica nel comune di Lugano
+DESCRIPTION:Ente pubblico: Fondazione Conservatorio della Svizzera italiana
+ \nScadenza: 03.12.2026\, 10:00\nNel registro: https://auftragsregister.ch/
+ it/auftrag/f9755974-7f35-46d0-a1d1-8196951db90c/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/f9755974-7f35-46d0-a1d1-8196951db9
+ 0c
+URL:https://auftragsregister.ch/it/auftrag/f9755974-7f35-46d0-a1d1-8196951d
+ b90c/
+LOCATION:Lugano-Besso
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: CDM124.0 - Isolamenti e rivestimenti di facciata per 
+ la Città della Musica nel comune di Lugano
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

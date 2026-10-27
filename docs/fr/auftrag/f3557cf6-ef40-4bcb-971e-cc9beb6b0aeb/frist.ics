@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f3557cf6-ef40-4bcb-971e-cc9beb6b0aeb-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Délai de remise : Trinkwasserkraftwerk Feschel
+DESCRIPTION:Acheteur public : Gemeinde Guttet-Feschel (SRP Ingenieur AG)\
+ nDélai de remise : 18.12.2026\, 23 h 59\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/f3557cf6-ef40-4bcb-971e-cc9beb6b0aeb/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/f3557cf6-
+ ef40-4bcb-971e-cc9beb6b0aeb
+URL:https://auftragsregister.ch/fr/auftrag/f3557cf6-ef40-4bcb-971e-cc9beb6b
+ 0aeb/
+LOCATION:Guttet-Feschel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Trinkwasserkraftwerk Feschel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

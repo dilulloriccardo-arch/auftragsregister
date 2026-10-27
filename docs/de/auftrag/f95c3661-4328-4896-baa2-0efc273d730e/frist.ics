@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f95c3661-4328-4896-baa2-0efc273d730e-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Eingabefrist: Conception\, fourniture\, montage et maintenance de d
+ eux éoliennes à Charrat
+DESCRIPTION:Auftraggeber: ValEole SA\nEingabefrist: 15.12.2026\, 16.00 Uhr
+ \nIm Register: https://auftragsregister.ch/de/auftrag/f95c3661-4328-4896-b
+ aa2-0efc273d730e/\nAmtliche Publikation: https://www.simap.ch/de/project-d
+ etail/f95c3661-4328-4896-baa2-0efc273d730e
+URL:https://auftragsregister.ch/de/auftrag/f95c3661-4328-4896-baa2-0efc273d
+ 730e/
+LOCATION:Charrat
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Conception\, fourniture\, montage et maintenance 
+ de deux éoliennes à Charrat
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

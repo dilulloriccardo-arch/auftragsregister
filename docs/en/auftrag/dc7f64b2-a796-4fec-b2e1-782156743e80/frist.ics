@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dc7f64b2-a796-4fec-b2e1-782156743e80-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261211T140000Z
+SUMMARY:Submission deadline: Neubeschaffung Catering Tagesschule Münchenbu
+ chsee
+DESCRIPTION:Public buyer: Gemeindeverwaltung Münchenbuchsee\, Bildung\nSub
+ mission deadline: 11 Dec 2026\, 15:00\nIn the register: https://auftrags
+ register.ch/en/auftrag/dc7f64b2-a796-4fec-b2e1-782156743e80/\nOfficial pub
+ lication: https://www.simap.ch/en/project-detail/dc7f64b2-a796-4fec-b2e1-7
+ 82156743e80
+URL:https://auftragsregister.ch/en/auftrag/dc7f64b2-a796-4fec-b2e1-78215674
+ 3e80/
+LOCATION:Münchenbuchsee
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubeschaffung Catering Tagesschule Münch
+ enbuchsee
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

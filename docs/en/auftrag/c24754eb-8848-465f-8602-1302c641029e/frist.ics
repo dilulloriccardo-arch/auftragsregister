@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c24754eb-8848-465f-8602-1302c641029e-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261204T123000Z
+SUMMARY:Submission deadline: Neubau Doppelturnhalle mit Schulräumlichkeite
+ n - Spengler und Bedachung (BKP222 und 224)
+DESCRIPTION:Public buyer: Politische Gemeinde Gommiswald\nSubmission deadli
+ ne: 4 Dec 2026\, 13:30\nIn the register: https://auftragsregister.ch/en/
+ auftrag/c24754eb-8848-465f-8602-1302c641029e/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/c24754eb-8848-465f-8602-1302c641029e
+URL:https://auftragsregister.ch/en/auftrag/c24754eb-8848-465f-8602-1302c641
+ 029e/
+LOCATION:Gommiswald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Doppelturnhalle mit Schulräumlichk
+ eiten - Spengler und Bedachung (BKP222 und 224)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

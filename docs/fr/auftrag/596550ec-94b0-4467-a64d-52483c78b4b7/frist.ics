@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:596550ec-94b0-4467-a64d-52483c78b4b7-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Délai de remise : Projet d'extension du collège de Montreux-Est
+  : CFC 258 Cuisines
+DESCRIPTION:Acheteur public : Commune de Montreux\, Service des domaines 
+ et bâtiments\, sport (EMCO Partenaires SA)\nDélai de remise : 02.12.20
+ 26\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/auft
+ rag/596550ec-94b0-4467-a64d-52483c78b4b7/\nPublication officielle : http
+ s://www.simap.ch/fr/project-detail/596550ec-94b0-4467-a64d-52483c78b4b7
+URL:https://auftragsregister.ch/fr/auftrag/596550ec-94b0-4467-a64d-52483c78
+ b4b7/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet d'extension du collège de Montreux
+ -Est : CFC 258 Cuisines
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

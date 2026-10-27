@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b8824c2-4ed5-4e0a-8bdb-b87eb56cb940-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T170000Z
+SUMMARY:Délai de remise : Ersatz Schliessanlagen Gemeinde Kaiseraugst
+DESCRIPTION:Acheteur public : Gemeinde Kaiseraugst\nDélai de remise : 
+ 02.11.2026\, 18 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/6b8824c2-4ed5-4e0a-8bdb-b87eb56cb940/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/6b8824c2-4ed5-4e0a-8bdb-b87eb5
+ 6cb940
+URL:https://auftragsregister.ch/fr/auftrag/6b8824c2-4ed5-4e0a-8bdb-b87eb56c
+ b940/
+LOCATION:Kaiseraugst
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatz Schliessanlagen Gemeinde Kaiseraugs
+ t
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

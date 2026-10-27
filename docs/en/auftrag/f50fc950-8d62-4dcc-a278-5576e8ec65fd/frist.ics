@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f50fc950-8d62-4dcc-a278-5576e8ec65fd-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Submission deadline: Beschaffung Kabelverteilkabinen und Fundamente
+DESCRIPTION:Public buyer: Stadtwerk Winterthur\nSubmission deadline: 9 Nov
+  2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/f5
+ 0fc950-8d62-4dcc-a278-5576e8ec65fd/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/f50fc950-8d62-4dcc-a278-5576e8ec65fd
+URL:https://auftragsregister.ch/en/auftrag/f50fc950-8d62-4dcc-a278-5576e8ec
+ 65fd/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung Kabelverteilkabinen und Fundam
+ ente
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

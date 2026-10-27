@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:615ad362-c77a-4bf5-8cce-027b1cef57f5-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261116T100000Z
+SUMMARY:Délai de remise : Extension du groupe scolaire de Corsier - AO C
+ FC 228.3 - Stores en toile
+DESCRIPTION:Acheteur public : FdMP réalisation sa\nDélai de remise : 
+ 16.11.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/615ad362-c77a-4bf5-8cce-027b1cef57f5/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/615ad362-c77a-4bf5-8cce-027b1c
+ ef57f5
+URL:https://auftragsregister.ch/fr/auftrag/615ad362-c77a-4bf5-8cce-027b1cef
+ 57f5/
+LOCATION:Corsier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Extension du groupe scolaire de Corsier - 
+ AO CFC 228.3 - Stores en toile
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

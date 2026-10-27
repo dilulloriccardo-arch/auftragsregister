@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8e1a7203-62e2-4a1d-9a0e-a440740f6e6e-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Scadenza: Wartung Strahlventilatoren GE VII
+DESCRIPTION:Ente pubblico: Tiefbauamt\, Abt. Gebietseinheit VII\nScadenza: 
+ 27.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/8
+ e1a7203-62e2-4a1d-9a0e-a440740f6e6e/\nPubblicazione ufficiale: https://www
+ .simap.ch/it/project-detail/8e1a7203-62e2-4a1d-9a0e-a440740f6e6e
+URL:https://auftragsregister.ch/it/auftrag/8e1a7203-62e2-4a1d-9a0e-a440740f
+ 6e6e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wartung Strahlventilatoren GE VII
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

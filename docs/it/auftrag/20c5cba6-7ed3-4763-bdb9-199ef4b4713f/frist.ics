@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20c5cba6-7ed3-4763-bdb9-199ef4b4713f-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261028T090000Z
+SUMMARY:Scadenza: Instandstellung Klingellochweg
+DESCRIPTION:Ente pubblico: Gemeinde Lupsingen\nScadenza: 28.10.2026\, 10:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/20c5cba6-7ed3-4763-
+ bdb9-199ef4b4713f/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/20c5cba6-7ed3-4763-bdb9-199ef4b4713f
+URL:https://auftragsregister.ch/it/auftrag/20c5cba6-7ed3-4763-bdb9-199ef4b4
+ 713f/
+LOCATION:Lupsingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Instandstellung Klingellochweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

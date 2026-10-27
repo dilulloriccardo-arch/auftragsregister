@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f11caff6-22b0-4ee6-96dd-c17ce25f6bc4-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Délai de remise : K 35 Doppleschwand\, Spittel bis Dorfende (Ort
+ stafel)
+DESCRIPTION:Acheteur public : Verkehr und Infrastruktur (vif)\, zentras\,
+  Betrieb Strassen\nDélai de remise : 07.12.2026\, 23 h 59\nDans le 
+ registre : https://auftragsregister.ch/fr/auftrag/f11caff6-22b0-4ee6-96d
+ d-c17ce25f6bc4/\nPublication officielle : https://www.simap.ch/fr/projec
+ t-detail/f11caff6-22b0-4ee6-96dd-c17ce25f6bc4
+URL:https://auftragsregister.ch/fr/auftrag/f11caff6-22b0-4ee6-96dd-c17ce25f
+ 6bc4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : K 35 Doppleschwand\, Spittel bis Dorfende 
+ (Ortstafel)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

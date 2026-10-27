@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5c90658f-ad4f-45dd-b214-63905c02a4b1-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Eingabefrist: MP 2026.08.865 – Renouvellement des installations d
+ e lavage de Perrelet et de la Borde
+DESCRIPTION:Auftraggeber: Transports publics de la région lausannoise sa\n
+ Eingabefrist: 11.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/5c90658f-ad4f-45dd-b214-63905c02a4b1/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/5c90658f-ad4f-45dd-b214-63905c0
+ 2a4b1
+URL:https://auftragsregister.ch/de/auftrag/5c90658f-ad4f-45dd-b214-63905c02
+ a4b1/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP 2026.08.865 – Renouvellement des installatio
+ ns de lavage de Perrelet et de la Borde
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

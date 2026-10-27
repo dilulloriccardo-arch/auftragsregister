@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23861d2c-39b1-4aad-b220-5f3a0c25e2b4-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261030T080000Z
+SUMMARY:Scadenza: IWB\, Speicher FKW Baumeister
+DESCRIPTION:Ente pubblico: IWB Industrielle Werke Basel\nScadenza: 30.10.20
+ 26\, 09:00\nNel registro: https://auftragsregister.ch/it/auftrag/23861d2c-
+ 39b1-4aad-b220-5f3a0c25e2b4/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/23861d2c-39b1-4aad-b220-5f3a0c25e2b4
+URL:https://auftragsregister.ch/it/auftrag/23861d2c-39b1-4aad-b220-5f3a0c25
+ e2b4/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: IWB\, Speicher FKW Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

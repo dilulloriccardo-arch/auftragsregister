@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c21f5bbe-0edd-4227-b3a3-e1c29eb22dc3-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Scadenza: 22128 Hardbrücke\, Widerlager Rosengarten
+DESCRIPTION:Ente pubblico: Tiefbauamt Stadt Zürich\, Kunstbauten + Objektm
+ gt.\nScadenza: 23.11.2026\, 16:00\nNel registro: https://auftragsregister.
+ ch/it/auftrag/c21f5bbe-0edd-4227-b3a3-e1c29eb22dc3/\nPubblicazione ufficia
+ le: https://www.simap.ch/it/project-detail/c21f5bbe-0edd-4227-b3a3-e1c29eb
+ 22dc3
+URL:https://auftragsregister.ch/it/auftrag/c21f5bbe-0edd-4227-b3a3-e1c29eb2
+ 2dc3/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 22128 Hardbrücke\, Widerlager Rosengarten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

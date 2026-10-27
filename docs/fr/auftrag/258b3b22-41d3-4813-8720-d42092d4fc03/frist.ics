@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:258b3b22-41d3-4813-8720-d42092d4fc03-frist@auftragsregister.ch
+DTSTAMP:20260901T000000Z
+SEQUENCE:0
+DTSTART:20261124T225900Z
+SUMMARY:Délai de remise : N20.71 MP-180010 - NEB Contournement Le Locle 
+ - BAMO ET DGT pour phases 41-53 (ID 12001)
+DESCRIPTION:Acheteur public : Office fédéral des routes OFROU\, Divisio
+ n Infrastructure routière Ouest\, filiale Estavayer-le-Lac\nDélai de rem
+ ise : 24.11.2026\, 23 h 59\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/258b3b22-41d3-4813-8720-d42092d4fc03/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/258b3b22-41d3-4813-8720
+ -d42092d4fc03
+URL:https://auftragsregister.ch/fr/auftrag/258b3b22-41d3-4813-8720-d42092d4
+ fc03/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : N20.71 MP-180010 - NEB Contournement Le Lo
+ cle - BAMO ET DGT pour phases 41-53 (ID 12001)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

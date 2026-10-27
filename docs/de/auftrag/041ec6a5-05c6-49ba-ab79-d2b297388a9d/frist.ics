@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:041ec6a5-05c6-49ba-ab79-d2b297388a9d-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261106T153000Z
+SUMMARY:Eingabefrist: Installations sanitaires - Rénovation du bâtiment P
+ ICTO Avenue Ernest-Pictet 28-30
+DESCRIPTION:Auftraggeber: Etat de Genève\, Département du territoire - DT
+ \, Office Cantonal des bâtiments (OCBA)\nEingabefrist: 06.11.2026\, 16.30
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/041ec6a5-05c6-4
+ 9ba-ab79-d2b297388a9d/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/041ec6a5-05c6-49ba-ab79-d2b297388a9d
+URL:https://auftragsregister.ch/de/auftrag/041ec6a5-05c6-49ba-ab79-d2b29738
+ 8a9d/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Installations sanitaires - Rénovation du bâtime
+ nt PICTO Avenue Ernest-Pictet 28-30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

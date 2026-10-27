@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:390cdb30-9e68-4c25-bed9-8384e4a366cc-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:1
+DTSTART:20270112T225900Z
+SUMMARY:Scadenza: (26163) 998 Technikpartner WEB
+DESCRIPTION:Ente pubblico: Eidgenössisches Nuklearsicherheitsinspektorat E
+ NSI\nScadenza: 12.01.2027\, 23:59\nNel registro: https://auftragsregister.
+ ch/it/auftrag/390cdb30-9e68-4c25-bed9-8384e4a366cc/\nPubblicazione ufficia
+ le: https://www.simap.ch/it/project-detail/390cdb30-9e68-4c25-bed9-8384e4a
+ 366cc
+URL:https://auftragsregister.ch/it/auftrag/390cdb30-9e68-4c25-bed9-8384e4a3
+ 66cc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (26163) 998 Technikpartner WEB
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

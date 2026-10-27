@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:98bb7c1e-5bdf-4d5e-9511-a87a33dcf7a9-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261119T110000Z
+SUMMARY:Submission deadline: Pôle de développement économique du Crêt-d
+ u-Locle - attribution du mandat portant sur l’élaboration d’un plan d
+ ’affectation cantonal (PAC) par un groupement de mandataires
+DESCRIPTION:Public buyer: Service de l'Economie (pilote de la procédure : 
+ Gensollen & Partenaires Sàrl)\nSubmission deadline: 19 Nov 2026\, 12:00
+ \nIn the register: https://auftragsregister.ch/en/auftrag/98bb7c1e-5bdf-4d
+ 5e-9511-a87a33dcf7a9/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/98bb7c1e-5bdf-4d5e-9511-a87a33dcf7a9
+URL:https://auftragsregister.ch/en/auftrag/98bb7c1e-5bdf-4d5e-9511-a87a33dc
+ f7a9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Pôle de développement économique du Cr
+ êt-du-Locle - attribution du mandat portant sur l’élaboration d’un p
+ lan d’affectation cantonal (PAC) par un groupement de mandataires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

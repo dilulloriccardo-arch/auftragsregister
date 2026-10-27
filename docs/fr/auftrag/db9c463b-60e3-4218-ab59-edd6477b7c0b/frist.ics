@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db9c463b-60e3-4218-ab59-edd6477b7c0b-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T100000Z
+SUMMARY:Délai de remise : Haute Ecole Pedagogique_00'697_Lot 145 Agencem
+ ent de cuisine professionnelle
+DESCRIPTION:Acheteur public : Etat de Vaud - DEIEP - DGIP\,\nDélai de re
+ mise : 12.11.2026\, 11 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/db9c463b-60e3-4218-ab59-edd6477b7c0b/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/db9c463b-60e3-4218-ab5
+ 9-edd6477b7c0b
+URL:https://auftragsregister.ch/fr/auftrag/db9c463b-60e3-4218-ab59-edd6477b
+ 7c0b/
+LOCATION:Chavannes-près-Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Haute Ecole Pedagogique_00'697_Lot 145 Age
+ ncement de cuisine professionnelle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

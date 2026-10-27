@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a0a82af-c9fd-4d4c-9f8f-d076e9049a9e-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261103T150000Z
+SUMMARY:Eingabefrist: BAV 22398 Wohnsiedlung Salzweg\, Ersatzneubau - BKP 2
+ 73.0 Stahlzargentüren aus Holz
+DESCRIPTION:Auftraggeber: HBD - Amt für Hochbauten (AHB)\nEingabefrist: 03
+ .11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /8a0a82af-c9fd-4d4c-9f8f-d076e9049a9e/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/8a0a82af-c9fd-4d4c-9f8f-d076e9049a9e
+URL:https://auftragsregister.ch/de/auftrag/8a0a82af-c9fd-4d4c-9f8f-d076e904
+ 9a9e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BAV 22398 Wohnsiedlung Salzweg\, Ersatzneubau - B
+ KP 273.0 Stahlzargentüren aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

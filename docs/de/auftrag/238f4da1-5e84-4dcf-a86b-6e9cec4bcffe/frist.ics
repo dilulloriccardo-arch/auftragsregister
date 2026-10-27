@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:238f4da1-5e84-4dcf-a86b-6e9cec4bcffe-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Eingabefrist: Montagearbeiten Talacherstrasse "Ost"
+DESCRIPTION:Auftraggeber: Landis AG\nEingabefrist: 20.11.2026\, 11.00 Uhr\
+ nIm Register: https://auftragsregister.ch/de/auftrag/238f4da1-5e84-4dcf-a8
+ 6b-6e9cec4bcffe/\nAmtliche Publikation: https://www.simap.ch/de/project-de
+ tail/238f4da1-5e84-4dcf-a86b-6e9cec4bcffe
+URL:https://auftragsregister.ch/de/auftrag/238f4da1-5e84-4dcf-a86b-6e9cec4b
+ cffe/
+LOCATION:Unterengstringen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Montagearbeiten Talacherstrasse "Ost"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

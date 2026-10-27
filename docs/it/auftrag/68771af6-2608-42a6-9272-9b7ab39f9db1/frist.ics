@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:68771af6-2608-42a6-9272-9b7ab39f9db1-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Scadenza: 16.0227 BB07 Forschungszentrum Medizin Universität Bern 
+ - BKP 271 Gipserarbeiten
+DESCRIPTION:Ente pubblico: Amt für Grundstücke und Gebäude des Kantons B
+ ern (AGG)\nScadenza: 06.11.2026\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/68771af6-2608-42a6-9272-9b7ab39f9db1/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/68771af6-2608-42a6-9272-9
+ b7ab39f9db1
+URL:https://auftragsregister.ch/it/auftrag/68771af6-2608-42a6-9272-9b7ab39f
+ 9db1/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 16.0227 BB07 Forschungszentrum Medizin Universität B
+ ern - BKP 271 Gipserarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

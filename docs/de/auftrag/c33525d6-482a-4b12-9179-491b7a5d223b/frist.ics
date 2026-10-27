@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c33525d6-482a-4b12-9179-491b7a5d223b-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Eingabefrist: MP-090070 EP VZ Wiggertal – Aarau Ost\, Kanal-TV Au
+ fnahmen
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA -Abteilung Strassen
+ infrastruktur-Ost - F3 Zofingen\nEingabefrist: 06.11.2026\, 23.59 Uhr\nIm
+  Register: https://auftragsregister.ch/de/auftrag/c33525d6-482a-4b12-9179-
+ 491b7a5d223b/\nAmtliche Publikation: https://www.simap.ch/de/project-detai
+ l/c33525d6-482a-4b12-9179-491b7a5d223b
+URL:https://auftragsregister.ch/de/auftrag/c33525d6-482a-4b12-9179-491b7a5d
+ 223b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-090070 EP VZ Wiggertal – Aarau Ost\, Kanal-T
+ V Aufnahmen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

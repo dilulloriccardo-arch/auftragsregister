@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83050b6f-a49a-4099-8720-8fc805b384da-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Scadenza: Schulcampus Dorf\, Bestandsgebäude - BKP 250 Sanitäranl
+ agen
+DESCRIPTION:Ente pubblico: ARGE GP SCD - c/o Rapp AG\nScadenza: 02.11.2026\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/83050b6f-a49
+ a-4099-8720-8fc805b384da/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/83050b6f-a49a-4099-8720-8fc805b384da
+URL:https://auftragsregister.ch/it/auftrag/83050b6f-a49a-4099-8720-8fc805b3
+ 84da/
+LOCATION:Binningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulcampus Dorf\, Bestandsgebäude - BKP 250 Sanitä
+ ranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

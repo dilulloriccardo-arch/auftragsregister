@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:55ec6445-40d7-4b51-bf76-3b8d3dcd1a3e-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T103000Z
+SUMMARY:Eingabefrist: P2025/206\, Musée du Léman. Appels d'offres ingéni
+ eur électricien
+DESCRIPTION:Auftraggeber: Ville de Nyon - Service d'architecture\nEingabefr
+ ist: 07.12.2026\, 11.30 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/55ec6445-40d7-4b51-bf76-3b8d3dcd1a3e/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/55ec6445-40d7-4b51-bf76-3b8d3dcd1a3e
+URL:https://auftragsregister.ch/de/auftrag/55ec6445-40d7-4b51-bf76-3b8d3dcd
+ 1a3e/
+LOCATION:Nyon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: P2025/206\, Musée du Léman. Appels d'offres ing
+ énieur électricien
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

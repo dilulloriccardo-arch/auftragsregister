@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87a79011-6139-4147-946d-cb3dff53edd3-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T150000Z
+SUMMARY:Délai de remise : ZGSZ l 45799 l BKP273 Schreinerarbeiten
+DESCRIPTION:Acheteur public : Hochbauamt\, Baubereich B\nDélai de remise
+  : 25.11.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/87a79011-6139-4147-946d-cb3dff53edd3/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/87a79011-6139-4147-946d-cb
+ 3dff53edd3
+URL:https://auftragsregister.ch/fr/auftrag/87a79011-6139-4147-946d-cb3dff53
+ edd3/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ZGSZ l 45799 l BKP273 Schreinerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

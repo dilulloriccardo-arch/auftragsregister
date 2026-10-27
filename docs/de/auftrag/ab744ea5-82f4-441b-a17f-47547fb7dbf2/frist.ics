@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab744ea5-82f4-441b-a17f-47547fb7dbf2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Eingabefrist: SKP 230 Elektroanlagen RIGG 1. UG und 2. UG SÜD IS H
+ austechnik
+DESCRIPTION:Auftraggeber: Insel Gruppe AG\nEingabefrist: 30.11.2026\, 23.59
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ab744ea5-82f4-4
+ 41b-a17f-47547fb7dbf2/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/ab744ea5-82f4-441b-a17f-47547fb7dbf2
+URL:https://auftragsregister.ch/de/auftrag/ab744ea5-82f4-441b-a17f-47547fb7
+ dbf2/
+LOCATION:Riggisberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: SKP 230 Elektroanlagen RIGG 1. UG und 2. UG SÜD 
+ IS Haustechnik
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

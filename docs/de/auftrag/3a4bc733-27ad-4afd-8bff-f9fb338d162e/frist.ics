@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a4bc733-27ad-4afd-8bff-f9fb338d162e-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261102T153000Z
+SUMMARY:Eingabefrist: Fourniture et pose d’un pavillon scolaire provisoir
+ e
+DESCRIPTION:Auftraggeber: Centre Educatif et Pédagogique (CEP)\nEingabefri
+ st: 02.11.2026\, 16.30 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/3a4bc733-27ad-4afd-8bff-f9fb338d162e/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/3a4bc733-27ad-4afd-8bff-f9fb338d162e
+URL:https://auftragsregister.ch/de/auftrag/3a4bc733-27ad-4afd-8bff-f9fb338d
+ 162e/
+LOCATION:Estavayer-le-Lac
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fourniture et pose d’un pavillon scolaire provi
+ soire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

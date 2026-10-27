@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:921093a7-234e-4774-9c7d-d591521a9a94-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:2
+DTSTART:20261028T140000Z
+SUMMARY:Délai de remise : Morges-Perroy – nouvelle double voie : campa
+ gne de reconnaissances géologiques et hydrogéologiques
+DESCRIPTION:Acheteur public : SBB CFF FFS Achats projets de construction 
+ Région Ouest\nDélai de remise : 28.10.2026\, 15 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/921093a7-234e-4774-9c7d-d5
+ 91521a9a94/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/921093a7-234e-4774-9c7d-d591521a9a94
+URL:https://auftragsregister.ch/fr/auftrag/921093a7-234e-4774-9c7d-d591521a
+ 9a94/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Morges-Perroy – nouvelle double voie : c
+ ampagne de reconnaissances géologiques et hydrogéologiques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81af6679-6646-4fec-b4c8-04bd6b6a4f53-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Eingabefrist: EDFR II: Site Bellechasse\, seconde étape de planifi
+ cation pénitentiaire
+DESCRIPTION:Auftraggeber: Etat de Fribourg\, Service des bâtiments\nEingab
+ efrist: 02.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/81af6679-6646-4fec-b4c8-04bd6b6a4f53/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/81af6679-6646-4fec-b4c8-04bd6b6a4f53
+URL:https://auftragsregister.ch/de/auftrag/81af6679-6646-4fec-b4c8-04bd6b6a
+ 4f53/
+LOCATION:Sugiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: EDFR II: Site Bellechasse\, seconde étape de pla
+ nification pénitentiaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

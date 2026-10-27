@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f7061dff-b9f3-45d8-b414-d1f159cba3e9-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261113T210000Z
+SUMMARY:Submission deadline: VSZK - Ausschreibung BKP 235 Sicherheitseinric
+ htungen
+DESCRIPTION:Public buyer: Hochbauamt Kanton Schwyz\nSubmission deadline: 13
+  Nov 2026\, 22:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/f7061dff-b9f3-45d8-b414-d1f159cba3e9/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/f7061dff-b9f3-45d8-b414-d1f159cba3e9
+URL:https://auftragsregister.ch/en/auftrag/f7061dff-b9f3-45d8-b414-d1f159cb
+ a3e9/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: VSZK - Ausschreibung BKP 235 Sicherheitsei
+ nrichtungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

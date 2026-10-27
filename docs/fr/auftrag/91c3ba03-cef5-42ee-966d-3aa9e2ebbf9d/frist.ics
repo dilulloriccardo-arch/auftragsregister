@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:91c3ba03-cef5-42ee-966d-3aa9e2ebbf9d-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261117T210000Z
+SUMMARY:Délai de remise : VSZK - Appel d'offres BKP 211.1 Échafaudage
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Schwyz\nDélai de remise
+  : 17.11.2026\, 22 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/91c3ba03-cef5-42ee-966d-3aa9e2ebbf9d/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/91c3ba03-cef5-42ee-966d-3a
+ a9e2ebbf9d
+URL:https://auftragsregister.ch/fr/auftrag/91c3ba03-cef5-42ee-966d-3aa9e2eb
+ bf9d/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : VSZK - Appel d'offres BKP 211.1 Échafauda
+ ge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

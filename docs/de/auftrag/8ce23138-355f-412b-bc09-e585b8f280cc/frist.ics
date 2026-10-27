@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ce23138-355f-412b-bc09-e585b8f280cc-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261028T225900Z
+SUMMARY:Eingabefrist: Dienstleister Infrastruktur Telekom (Phase 1)
+DESCRIPTION:Auftraggeber: Swissgrid AG\nEingabefrist: 28.10.2026\, 23.59 U
+ hr\nIm Register: https://auftragsregister.ch/de/auftrag/8ce23138-355f-412b
+ -bc09-e585b8f280cc/\nAmtliche Publikation: https://www.simap.ch/de/project
+ -detail/8ce23138-355f-412b-bc09-e585b8f280cc
+URL:https://auftragsregister.ch/de/auftrag/8ce23138-355f-412b-bc09-e585b8f2
+ 80cc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Dienstleister Infrastruktur Telekom (Phase 1)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

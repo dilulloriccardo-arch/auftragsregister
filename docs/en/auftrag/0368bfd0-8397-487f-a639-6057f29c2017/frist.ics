@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0368bfd0-8397-487f-a639-6057f29c2017-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261110T100000Z
+SUMMARY:Submission deadline: Fornitura di generi alimentari 01.01.2027 - 31
+ .12.2027
+DESCRIPTION:Public buyer: Fondazione Parco San Rocco\nSubmission deadline: 
+ 10 Nov 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/0368bfd0-8397-487f-a639-6057f29c2017/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/0368bfd0-8397-487f-a639-6057f29c2017
+URL:https://auftragsregister.ch/en/auftrag/0368bfd0-8397-487f-a639-6057f29c
+ 2017/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fornitura di generi alimentari 01.01.2027 
+ - 31.12.2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

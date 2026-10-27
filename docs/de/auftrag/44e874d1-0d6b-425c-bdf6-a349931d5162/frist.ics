@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44e874d1-0d6b-425c-bdf6-a349931d5162-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Eingabefrist: Fourniture de Monographies Imprimées @EPFL
+DESCRIPTION:Auftraggeber: EPFL - Service des Achats\nEingabefrist: 09.11.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/44e87
+ 4d1-0d6b-425c-bdf6-a349931d5162/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/44e874d1-0d6b-425c-bdf6-a349931d5162
+URL:https://auftragsregister.ch/de/auftrag/44e874d1-0d6b-425c-bdf6-a349931d
+ 5162/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fourniture de Monographies Imprimées @EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

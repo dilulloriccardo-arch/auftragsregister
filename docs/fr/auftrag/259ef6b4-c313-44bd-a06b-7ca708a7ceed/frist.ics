@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:259ef6b4-c313-44bd-a06b-7ca708a7ceed-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Délai de remise : CoolCity\, TP0 Vermessungsdienstleistungen Bau
+ herrschaft
+DESCRIPTION:Acheteur public : Elektrizitätswerk der Stadt Zürich (ewz)\
+ nDélai de remise : 12.11.2026\, 12 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/259ef6b4-c313-44bd-a06b-7ca708a7ceed/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/259ef6b4-
+ c313-44bd-a06b-7ca708a7ceed
+URL:https://auftragsregister.ch/fr/auftrag/259ef6b4-c313-44bd-a06b-7ca708a7
+ ceed/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CoolCity\, TP0 Vermessungsdienstleistungen
+  Bauherrschaft
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

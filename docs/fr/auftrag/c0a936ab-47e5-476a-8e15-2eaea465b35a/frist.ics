@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c0a936ab-47e5-476a-8e15-2eaea465b35a-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T150000Z
+SUMMARY:Délai de remise : GE VII Wartung + Unterhalt FB8 HLK Zentralen
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Gebietseinheit VII\nDéla
+ i de remise : 07.12.2026\, 16 h 00\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/c0a936ab-47e5-476a-8e15-2eaea465b35a/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/c0a936ab-47e5-4
+ 76a-8e15-2eaea465b35a
+URL:https://auftragsregister.ch/fr/auftrag/c0a936ab-47e5-476a-8e15-2eaea465
+ b35a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : GE VII Wartung + Unterhalt FB8 HLK Zentral
+ en
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

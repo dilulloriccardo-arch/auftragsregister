@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:747f6c7f-ff58-452d-aa7c-bb2fe4724901-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261119T225900Z
+SUMMARY:Délai de remise : (26072) 201 Solution IAM pour Informatique DFA
+ E
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 19.11.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/747f6c7f-ff58-452d-aa7c-bb2fe4724901/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/747f6c7f-ff58
+ -452d-aa7c-bb2fe4724901
+URL:https://auftragsregister.ch/fr/auftrag/747f6c7f-ff58-452d-aa7c-bb2fe472
+ 4901/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26072) 201 Solution IAM pour Informatique
+  DFAE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

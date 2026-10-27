@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf5bb82f-7ae1-40bf-87b8-70a229461dae-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T100000Z
+SUMMARY:Eingabefrist: Travaux de charpente et façade bois pour un poste é
+ lectrique HT/MT
+DESCRIPTION:Auftraggeber: Gruyère Energie SA\nEingabefrist: 10.11.2026\, 1
+ 1.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/cf5bb82f-7a
+ e1-40bf-87b8-70a229461dae/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/cf5bb82f-7ae1-40bf-87b8-70a229461dae
+URL:https://auftragsregister.ch/de/auftrag/cf5bb82f-7ae1-40bf-87b8-70a22946
+ 1dae/
+LOCATION:Bulle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Travaux de charpente et façade bois pour un post
+ e électrique HT/MT
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

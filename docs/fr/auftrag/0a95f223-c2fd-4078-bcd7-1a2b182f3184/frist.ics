@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a95f223-c2fd-4078-bcd7-1a2b182f3184-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20270427T100000Z
+SUMMARY:Délai de remise : Partenariat technologique dans le domaine de l
+ 'imagerie médicale
+DESCRIPTION:Acheteur public : Spitalzentrum Biel AG\nDélai de remise :
+  27.04.2027\, 12 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/0a95f223-c2fd-4078-bcd7-1a2b182f3184/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/0a95f223-c2fd-4078-bcd7-1a2b18
+ 2f3184
+URL:https://auftragsregister.ch/fr/auftrag/0a95f223-c2fd-4078-bcd7-1a2b182f
+ 3184/
+LOCATION:Biel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Partenariat technologique dans le domaine 
+ de l'imagerie médicale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

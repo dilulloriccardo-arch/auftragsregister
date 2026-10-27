@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5b1b8139-9223-46fa-9bc5-b1b3da21196a-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Délai de remise : BAV 60878 Centre d'accueil et de conseil SEB\,
+  Bäckerstrasse 7\, travaux de remise en état\, prestations de planificat
+ ion générale (sous réserve de l'octroi du crédit)
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 17.11.2026\, 23 h 59\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/5b1b8139-9223-46fa-9bc5-b1b3da21196a/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/5b1b8139-9223-46fa-9
+ bc5-b1b3da21196a
+URL:https://auftragsregister.ch/fr/auftrag/5b1b8139-9223-46fa-9bc5-b1b3da21
+ 196a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 60878 Centre d'accueil et de conseil S
+ EB\, Bäckerstrasse 7\, travaux de remise en état\, prestations de planif
+ ication générale (sous réserve de l'octroi du crédit)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

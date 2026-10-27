@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a549f9a-5cd8-4edd-9c1b-a872bdfe822b-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261202T133000Z
+SUMMARY:Délai de remise : Sostituzione infrastrutture in via Loco e Via 
+ Ligaino a Lugano-Pregassona - Opere da impresario costruttore
+DESCRIPTION:Acheteur public : Città di Lugano - Spazi urbani\nDélai de 
+ remise : 02.12.2026\, 14 h 30\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/6a549f9a-5cd8-4edd-9c1b-a872bdfe822b/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/6a549f9a-5cd8-4edd-9
+ c1b-a872bdfe822b
+URL:https://auftragsregister.ch/fr/auftrag/6a549f9a-5cd8-4edd-9c1b-a872bdfe
+ 822b/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sostituzione infrastrutture in via Loco e 
+ Via Ligaino a Lugano-Pregassona - Opere da impresario costruttore
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

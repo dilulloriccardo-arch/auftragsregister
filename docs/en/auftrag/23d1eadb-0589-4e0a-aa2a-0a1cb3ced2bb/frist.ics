@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23d1eadb-0589-4e0a-aa2a-0a1cb3ced2bb-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261112T110000Z
+SUMMARY:Submission deadline: Neubau Heizzentrale Muzäll - 8213 SH-Neunkirc
+ h
+DESCRIPTION:Public buyer: Gemeinde Neunkirch - WSP AG Bauingenieure\nSubmis
+ sion deadline: 12 Nov 2026\, 12:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/23d1eadb-0589-4e0a-aa2a-0a1cb3ced2bb/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/23d1eadb-0589-4e0a-aa2a-0a1c
+ b3ced2bb
+URL:https://auftragsregister.ch/en/auftrag/23d1eadb-0589-4e0a-aa2a-0a1cb3ce
+ d2bb/
+LOCATION:Neunkirch
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Heizzentrale Muzäll - 8213 SH-Neun
+ kirch
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

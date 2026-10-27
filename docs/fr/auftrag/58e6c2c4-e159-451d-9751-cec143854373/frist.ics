@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:58e6c2c4-e159-451d-9751-cec143854373-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261118T140000Z
+SUMMARY:Délai de remise : Muttenz - BBZ / GSM (BKP 230)
+DESCRIPTION:Acheteur public : Zentrale Beschaffungsstelle Kanton Basel-La
+ ndschaft\nDélai de remise : 18.11.2026\, 15 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/58e6c2c4-e159-451d-9751-cec143
+ 854373/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /58e6c2c4-e159-451d-9751-cec143854373
+URL:https://auftragsregister.ch/fr/auftrag/58e6c2c4-e159-451d-9751-cec14385
+ 4373/
+LOCATION:Muttenz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Muttenz - BBZ / GSM (BKP 230)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

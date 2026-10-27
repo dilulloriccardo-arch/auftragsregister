@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3af7647-227a-4590-9aa3-29f93c8999ee-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Scadenza: BKP 272.2 NRWA (Natürliche Rauch- und Wärmeabzugsanlage
+ n)
+DESCRIPTION:Ente pubblico: Flughafen Zürich AG - ELP\nScadenza: 16.11.2026
+ \, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/d3af7647-22
+ 7a-4590-9aa3-29f93c8999ee/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/d3af7647-227a-4590-9aa3-29f93c8999ee
+URL:https://auftragsregister.ch/it/auftrag/d3af7647-227a-4590-9aa3-29f93c89
+ 99ee/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 272.2 NRWA (Natürliche Rauch- und Wärmeabzugsan
+ lagen)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

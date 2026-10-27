@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f01bc950-8ed7-4ba1-9503-ab3ffe94c151-frist@auftragsregister.ch
+DTSTAMP:20260927T000000Z
+SEQUENCE:0
+DTSTART:20261116T225600Z
+SUMMARY:Eingabefrist: 65- und 16- kV Kabelleitungen Einführung der Kabelle
+ itungen in das neue Unterwerk Ernen
+DESCRIPTION:Auftraggeber: Valgrid SA\nEingabefrist: 16.11.2026\, 23.56 Uhr
+ \nIm Register: https://auftragsregister.ch/de/auftrag/f01bc950-8ed7-4ba1-9
+ 503-ab3ffe94c151/\nAmtliche Publikation: https://www.simap.ch/de/project-d
+ etail/f01bc950-8ed7-4ba1-9503-ab3ffe94c151
+URL:https://auftragsregister.ch/de/auftrag/f01bc950-8ed7-4ba1-9503-ab3ffe94
+ c151/
+LOCATION:Ernen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 65- und 16- kV Kabelleitungen Einführung der Kab
+ elleitungen in das neue Unterwerk Ernen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

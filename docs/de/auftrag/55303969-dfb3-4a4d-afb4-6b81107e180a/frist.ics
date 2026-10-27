@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:55303969-dfb3-4a4d-afb4-6b81107e180a-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261204T123000Z
+SUMMARY:Eingabefrist: Neubau Doppelturnhalle mit Schulräumlichkeiten - Fen
+ ster aus Holz-Metall (BKP221.1)
+DESCRIPTION:Auftraggeber: Politische Gemeinde Gommiswald\nEingabefrist: 04.
+ 12.2026\, 13.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ 55303969-dfb3-4a4d-afb4-6b81107e180a/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/55303969-dfb3-4a4d-afb4-6b81107e180a
+URL:https://auftragsregister.ch/de/auftrag/55303969-dfb3-4a4d-afb4-6b81107e
+ 180a/
+LOCATION:Gommiswald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Doppelturnhalle mit Schulräumlichkeiten -
+  Fenster aus Holz-Metall (BKP221.1)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

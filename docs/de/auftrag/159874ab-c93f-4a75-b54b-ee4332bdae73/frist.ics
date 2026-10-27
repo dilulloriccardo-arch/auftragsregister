@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:159874ab-c93f-4a75-b54b-ee4332bdae73-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261123T070000Z
+SUMMARY:Eingabefrist: SELRS Netz Würzenbach Los 1\, Planerleistungen Tiefb
+ au
+DESCRIPTION:Auftraggeber: ewl Rohrnetz AG\nEingabefrist: 23.11.2026\, 8.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/159874ab-c93f-4
+ a75-b54b-ee4332bdae73/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/159874ab-c93f-4a75-b54b-ee4332bdae73
+URL:https://auftragsregister.ch/de/auftrag/159874ab-c93f-4a75-b54b-ee4332bd
+ ae73/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: SELRS Netz Würzenbach Los 1\, Planerleistungen T
+ iefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

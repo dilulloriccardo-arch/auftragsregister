@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2c2c0eb7-a742-4551-8c32-72f5d5454672-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Scadenza: Incubateur et compteur de colonies en temps réel
+DESCRIPTION:Ente pubblico: Services industriels de Genève (SIG) - Directio
+ n Achats\nScadenza: 08.12.2026\, 12:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/2c2c0eb7-a742-4551-8c32-72f5d5454672/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/2c2c0eb7-a742-4551-8c32-72
+ f5d5454672
+URL:https://auftragsregister.ch/it/auftrag/2c2c0eb7-a742-4551-8c32-72f5d545
+ 4672/
+LOCATION:Le Lignon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Incubateur et compteur de colonies en temps réel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a95896cf-5755-438c-92da-e982e2936ea8-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261201T225900Z
+SUMMARY:Délai de remise : Services pour les plateformes géographiques A
+ rcGIS
+DESCRIPTION:Acheteur public : ETH Zürich - Abt. Procurement Services VPI
+ N\nDélai de remise : 01.12.2026\, 23 h 59\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/a95896cf-5755-438c-92da-e982e2936ea8/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/a95896c
+ f-5755-438c-92da-e982e2936ea8
+URL:https://auftragsregister.ch/fr/auftrag/a95896cf-5755-438c-92da-e982e293
+ 6ea8/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Services pour les plateformes géographiqu
+ es ArcGIS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

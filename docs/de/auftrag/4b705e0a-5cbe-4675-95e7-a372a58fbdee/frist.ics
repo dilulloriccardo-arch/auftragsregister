@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b705e0a-5cbe-4675-95e7-a372a58fbdee-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261208T150000Z
+SUMMARY:Eingabefrist: Aktualisierung und Weiterentwicklung der nationalen R
+ isikoanalyse «Katastrophen und Notlagen Schweiz 2030 & 2035» KNS
+DESCRIPTION:Auftraggeber: armasuisse Ressourcen und Support CC WTO\nEingabe
+ frist: 08.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/4b705e0a-5cbe-4675-95e7-a372a58fbdee/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/4b705e0a-5cbe-4675-95e7-a372a58fbdee
+URL:https://auftragsregister.ch/de/auftrag/4b705e0a-5cbe-4675-95e7-a372a58f
+ bdee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Aktualisierung und Weiterentwicklung der national
+ en Risikoanalyse «Katastrophen und Notlagen Schweiz 2030 & 2035» KNS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

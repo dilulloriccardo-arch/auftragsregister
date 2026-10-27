@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:89e5c0cd-4856-4b78-a353-93a89675d546-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Délai de remise : Avenue de la Paix (2371TI) Génie civil\, ouvr
+ age d'art\, travaux hydraulique et chaussée et réseaux
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 09.12.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/89e5c0cd-4856-4b78-a353-93a89675d54
+ 6/\nPublication officielle : https://www.simap.ch/fr/project-detail/89e5
+ c0cd-4856-4b78-a353-93a89675d546
+URL:https://auftragsregister.ch/fr/auftrag/89e5c0cd-4856-4b78-a353-93a89675
+ d546/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Avenue de la Paix (2371TI) Génie civil\, 
+ ouvrage d'art\, travaux hydraulique et chaussée et réseaux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

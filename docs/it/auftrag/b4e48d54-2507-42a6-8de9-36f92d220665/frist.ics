@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4e48d54-2507-42a6-8de9-36f92d220665-frist@auftragsregister.ch
+DTSTAMP:20261017T000000Z
+SEQUENCE:0
+DTSTART:20261111T110000Z
+SUMMARY:Scadenza: Flachdachsanierung und Einbau einer PV-Anlage\, Hirschgä
+ sslein 19 und 21\, Aeschengraben 20\, 4051 Basel
+DESCRIPTION:Ente pubblico: Aedificura AG\, c/o Gebäudeversicherung Basel-S
+ tadt\nScadenza: 11.11.2026\, 12:00\nNel registro: https://auftragsregister
+ .ch/it/auftrag/b4e48d54-2507-42a6-8de9-36f92d220665/\nPubblicazione uffici
+ ale: https://www.simap.ch/it/project-detail/b4e48d54-2507-42a6-8de9-36f92d
+ 220665
+URL:https://auftragsregister.ch/it/auftrag/b4e48d54-2507-42a6-8de9-36f92d22
+ 0665/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Flachdachsanierung und Einbau einer PV-Anlage\, Hirsc
+ hgässlein 19 und 21\, Aeschengraben 20\, 4051 Basel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

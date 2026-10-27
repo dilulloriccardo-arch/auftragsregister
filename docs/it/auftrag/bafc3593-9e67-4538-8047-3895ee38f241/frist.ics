@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bafc3593-9e67-4538-8047-3895ee38f241-frist@auftragsregister.ch
+DTSTAMP:20261010T000000Z
+SEQUENCE:0
+DTSTART:20261109T090000Z
+SUMMARY:Scadenza: Fond Mobile de la piscine du Martinet – Rolle
+DESCRIPTION:Ente pubblico: Enfance et Jeunesse ENJEU - Association Intercom
+ munale de Rolle et Environs (bureau d'ingénieurs-conseils Energestion SA)
+ \nScadenza: 09.11.2026\, 10:00\nNel registro: https://auftragsregister.ch/
+ it/auftrag/bafc3593-9e67-4538-8047-3895ee38f241/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/bafc3593-9e67-4538-8047-3895ee38f2
+ 41
+URL:https://auftragsregister.ch/it/auftrag/bafc3593-9e67-4538-8047-3895ee38
+ f241/
+LOCATION:Rolle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fond Mobile de la piscine du Martinet – Rolle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

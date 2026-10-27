@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf56173d-61ef-48c2-a313-0605cddeab4c-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261214T140000Z
+SUMMARY:Eingabefrist: SBB: Ersatz der Überführung Yvorne / Linie 100 – 
+ km 37.319 / Yvorne
+DESCRIPTION:Auftraggeber: SBB CFF FFS Achats projets de construction Régio
+ n Ouest\nEingabefrist: 14.12.2026\, 15.00 Uhr\nIm Register: https://auftr
+ agsregister.ch/de/auftrag/cf56173d-61ef-48c2-a313-0605cddeab4c/\nAmtliche 
+ Publikation: https://www.simap.ch/de/project-detail/cf56173d-61ef-48c2-a31
+ 3-0605cddeab4c
+URL:https://auftragsregister.ch/de/auftrag/cf56173d-61ef-48c2-a313-0605cdde
+ ab4c/
+LOCATION:Yvorne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: SBB: Ersatz der Überführung Yvorne / Linie 100 
+ – km 37.319 / Yvorne
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

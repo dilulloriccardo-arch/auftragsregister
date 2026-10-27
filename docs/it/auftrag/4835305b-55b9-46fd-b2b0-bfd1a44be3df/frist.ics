@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4835305b-55b9-46fd-b2b0-bfd1a44be3df-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:2
+DTSTART:20261127T140000Z
+SUMMARY:Scadenza: Moderno laboratorio di prova elettrica «Sala Prova» per
+  il Centro Manutenzione di Castione-Arbedo
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB Division Produkt
+ ion Personenverkehr\nScadenza: 27.11.2026\, 15:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/4835305b-55b9-46fd-b2b0-bfd1a44be3df/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/4835305b-55b9-4
+ 6fd-b2b0-bfd1a44be3df
+URL:https://auftragsregister.ch/it/auftrag/4835305b-55b9-46fd-b2b0-bfd1a44b
+ e3df/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Moderno laboratorio di prova elettrica «Sala Prova»
+  per il Centro Manutenzione di Castione-Arbedo
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

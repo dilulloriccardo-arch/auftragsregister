@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b64c45e0-8510-48a1-bc6e-a67a8f941357-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:1
+DTSTART:20261116T225900Z
+SUMMARY:Eingabefrist: Uniformabzeichen
+DESCRIPTION:Auftraggeber: Kantonspolizei Bern\nEingabefrist: 16.11.2026\, 2
+ 3.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b64c45e0-85
+ 10-48a1-bc6e-a67a8f941357/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/b64c45e0-8510-48a1-bc6e-a67a8f941357
+URL:https://auftragsregister.ch/de/auftrag/b64c45e0-8510-48a1-bc6e-a67a8f94
+ 1357/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Uniformabzeichen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

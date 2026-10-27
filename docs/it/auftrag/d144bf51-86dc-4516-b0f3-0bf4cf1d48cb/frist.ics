@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d144bf51-86dc-4516-b0f3-0bf4cf1d48cb-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:1
+DTSTART:20261125T150000Z
+SUMMARY:Scadenza: Manchons SMU\, SMU DN500 avec bagues\, SMU-R et SMU-S pou
+ r le réseau du gaz
+DESCRIPTION:Ente pubblico: Ville de Lausanne – FIM - Service achat et log
+ istique Ville (SALV)\nScadenza: 25.11.2026\, 16:00\nNel registro: https://
+ auftragsregister.ch/it/auftrag/d144bf51-86dc-4516-b0f3-0bf4cf1d48cb/\nPubb
+ licazione ufficiale: https://www.simap.ch/it/project-detail/d144bf51-86dc-
+ 4516-b0f3-0bf4cf1d48cb
+URL:https://auftragsregister.ch/it/auftrag/d144bf51-86dc-4516-b0f3-0bf4cf1d
+ 48cb/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Manchons SMU\, SMU DN500 avec bagues\, SMU-R et SMU-S
+  pour le réseau du gaz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

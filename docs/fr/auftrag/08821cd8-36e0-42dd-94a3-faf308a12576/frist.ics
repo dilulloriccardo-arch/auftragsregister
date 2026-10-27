@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:08821cd8-36e0-42dd-94a3-faf308a12576-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261117T103000Z
+SUMMARY:Délai de remise : STEP ORBE BETELEC - Fourniture et pose de pann
+ eaux photovoltaïques
+DESCRIPTION:Acheteur public : Commune d'Orbe - Services techniques\nDéla
+ i de remise : 17.11.2026\, 11 h 30\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/08821cd8-36e0-42dd-94a3-faf308a12576/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/08821cd8-36e0-4
+ 2dd-94a3-faf308a12576
+URL:https://auftragsregister.ch/fr/auftrag/08821cd8-36e0-42dd-94a3-faf308a1
+ 2576/
+LOCATION:Chemin des Pâquerets 3
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : STEP ORBE BETELEC - Fourniture et pose de 
+ panneaux photovoltaïques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

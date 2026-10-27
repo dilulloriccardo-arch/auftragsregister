@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9476523a-1a70-494e-8e2d-4f6a0a0d96b1-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261201T110000Z
+SUMMARY:Délai de remise : Stabe Stebe B
+DESCRIPTION:Acheteur public : Amt für Wirtschaft und Arbeit\, Abteilung 
+ LAM\nDélai de remise : 01.12.2026\, 12 h 00\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/9476523a-1a70-494e-8e2d-4f6a0a0d96b1
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/94765
+ 23a-1a70-494e-8e2d-4f6a0a0d96b1
+URL:https://auftragsregister.ch/fr/auftrag/9476523a-1a70-494e-8e2d-4f6a0a0d
+ 96b1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Stabe Stebe B
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

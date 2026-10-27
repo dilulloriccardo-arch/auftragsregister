@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2785137e-342d-4cdb-b8b2-9859a8ffd141-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261103T110000Z
+SUMMARY:Eingabefrist: Assistant IA Cantonal
+DESCRIPTION:Auftraggeber: Etat de Neuchâtel SIEN\nEingabefrist: 03.11.2026
+ \, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2785137
+ e-342d-4cdb-b8b2-9859a8ffd141/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/2785137e-342d-4cdb-b8b2-9859a8ffd141
+URL:https://auftragsregister.ch/de/auftrag/2785137e-342d-4cdb-b8b2-9859a8ff
+ d141/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Assistant IA Cantonal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

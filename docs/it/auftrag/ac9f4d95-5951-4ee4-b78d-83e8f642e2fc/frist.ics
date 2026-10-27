@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac9f4d95-5951-4ee4-b78d-83e8f642e2fc-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Scadenza: Appel d’offre pour les services de sécurité privée a
+ vec conducteur de chien aux Etablissements de détention fribourgeois\, si
+ te Bellechasse
+DESCRIPTION:Ente pubblico: Etablissent de détention fribourgeois EDFR site
+  Bellechasse\nScadenza: 16.11.2026\, 12:00\nNel registro: https://auftrags
+ register.ch/it/auftrag/ac9f4d95-5951-4ee4-b78d-83e8f642e2fc/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/ac9f4d95-5951-4ee4-b78
+ d-83e8f642e2fc
+URL:https://auftragsregister.ch/it/auftrag/ac9f4d95-5951-4ee4-b78d-83e8f642
+ e2fc/
+LOCATION:1786 Sugiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Appel d’offre pour les services de sécurité priv
+ ée avec conducteur de chien aux Etablissements de détention fribourgeois
+ \, site Bellechasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

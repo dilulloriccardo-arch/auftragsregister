@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1fe0aa8f-0b87-49e9-98e4-e6c23d1bbd3d-frist@auftragsregister.ch
+DTSTAMP:20260912T000000Z
+SEQUENCE:2
+DTSTART:20270115T150000Z
+SUMMARY:Scadenza: 6 piece regulating transformers 40MVA ONAN (50MVA ONAF) 1
+ 10//10/20kV
+DESCRIPTION:Ente pubblico: Stadt St.Gallen\, Stadtwerke\nScadenza: 15.01.20
+ 27\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/1fe0aa8f-
+ 0b87-49e9-98e4-e6c23d1bbd3d/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/1fe0aa8f-0b87-49e9-98e4-e6c23d1bbd3d
+URL:https://auftragsregister.ch/it/auftrag/1fe0aa8f-0b87-49e9-98e4-e6c23d1b
+ bd3d/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 6 piece regulating transformers 40MVA ONAN (50MVA ONA
+ F) 110//10/20kV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

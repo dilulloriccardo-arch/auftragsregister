@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0dce79f-ac5b-4b1a-8620-d6ac05376f2d-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Scadenza: Klinik im Hasel - BKP 214 Montagebau in Holz
+DESCRIPTION:Ente pubblico: Von Effinger Stiftung (HSSP AG)\nScadenza: 24.11
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/d0dce7
+ 9f-ac5b-4b1a-8620-d6ac05376f2d/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/d0dce79f-ac5b-4b1a-8620-d6ac05376f2d
+URL:https://auftragsregister.ch/it/auftrag/d0dce79f-ac5b-4b1a-8620-d6ac0537
+ 6f2d/
+LOCATION:Gontenschwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Klinik im Hasel - BKP 214 Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

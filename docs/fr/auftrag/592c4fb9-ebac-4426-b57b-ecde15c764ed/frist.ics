@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:592c4fb9-ebac-4426-b57b-ecde15c764ed-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261116T133000Z
+SUMMARY:Délai de remise : Concorso per la fornitura di generi alimentari
+  2027
+DESCRIPTION:Acheteur public : ECAB - Ente Casa Anziani Biasca\nDélai de 
+ remise : 16.11.2026\, 14 h 30\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/592c4fb9-ebac-4426-b57b-ecde15c764ed/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/592c4fb9-ebac-4426-b
+ 57b-ecde15c764ed
+URL:https://auftragsregister.ch/fr/auftrag/592c4fb9-ebac-4426-b57b-ecde15c7
+ 64ed/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Concorso per la fornitura di generi alimen
+ tari 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

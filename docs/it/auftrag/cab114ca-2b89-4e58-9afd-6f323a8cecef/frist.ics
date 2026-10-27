@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cab114ca-2b89-4e58-9afd-6f323a8cecef-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261111T133000Z
+SUMMARY:Scadenza: Concorso per le opere di pulizia di aree e fondi comunali
+  per gli anni 2027 e 2028
+DESCRIPTION:Ente pubblico: Divisione spazi urbani\, Servizi tecnici\nScaden
+ za: 11.11.2026\, 14:30\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/cab114ca-2b89-4e58-9afd-6f323a8cecef/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/cab114ca-2b89-4e58-9afd-6f323a8cecef
+URL:https://auftragsregister.ch/it/auftrag/cab114ca-2b89-4e58-9afd-6f323a8c
+ ecef/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso per le opere di pulizia di aree e fondi comu
+ nali per gli anni 2027 e 2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

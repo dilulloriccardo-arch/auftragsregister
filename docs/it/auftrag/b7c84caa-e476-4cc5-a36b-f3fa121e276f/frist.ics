@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b7c84caa-e476-4cc5-a36b-f3fa121e276f-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Scadenza: Sanierung Bergackerstrasse / Schluecht\, Cham
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Cham\nScadenza: 23.11.2026\, 1
+ 2:00\nNel registro: https://auftragsregister.ch/it/auftrag/b7c84caa-e476-4
+ cc5-a36b-f3fa121e276f/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/b7c84caa-e476-4cc5-a36b-f3fa121e276f
+URL:https://auftragsregister.ch/it/auftrag/b7c84caa-e476-4cc5-a36b-f3fa121e
+ 276f/
+LOCATION:Cham
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Bergackerstrasse / Schluecht\, Cham
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

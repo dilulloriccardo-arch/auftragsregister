@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:98b86be9-b646-40ec-994c-dfee990c407a-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Eingabefrist: Röntgen-CT-System für die Analyse von Gesteins- und
+  Bodenproben
+DESCRIPTION:Auftraggeber: ETH Zürich - Abt. Procurement & Export Services\
+ nEingabefrist: 25.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregis
+ ter.ch/de/auftrag/98b86be9-b646-40ec-994c-dfee990c407a/\nAmtliche Publikat
+ ion: https://www.simap.ch/de/project-detail/98b86be9-b646-40ec-994c-dfee99
+ 0c407a
+URL:https://auftragsregister.ch/de/auftrag/98b86be9-b646-40ec-994c-dfee990c
+ 407a/
+LOCATION:Zürich ETH Hönggerberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Röntgen-CT-System für die Analyse von Gesteins-
+  und Bodenproben
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

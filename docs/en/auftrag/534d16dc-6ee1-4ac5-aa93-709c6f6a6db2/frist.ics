@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:534d16dc-6ee1-4ac5-aa93-709c6f6a6db2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Submission deadline: Baumeisterarbeiten Instandsetzung Obere Zwisch
+ engrabenbrücke\, Unterseen
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Bern\nSubmission deadline:
+  11 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/534d16dc-6ee1-4ac5-aa93-709c6f6a6db2/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/534d16dc-6ee1-4ac5-aa93-709c6f6a6db2
+URL:https://auftragsregister.ch/en/auftrag/534d16dc-6ee1-4ac5-aa93-709c6f6a
+ 6db2/
+LOCATION:Unterseen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Baumeisterarbeiten Instandsetzung Obere Zw
+ ischengrabenbrücke\, Unterseen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

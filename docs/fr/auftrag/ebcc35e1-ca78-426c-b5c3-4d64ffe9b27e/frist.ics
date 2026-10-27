@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ebcc35e1-ca78-426c-b5c3-4d64ffe9b27e-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Délai de remise : MP-150016\, N02\, EP Arsenal – Hergiswil\, y
+  compris extension sud / lot ARHE BSA-6.06 Téléphone de secours
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3\nDélai de remise : 23.11.2026\, 23 h 5
+ 9\nDans le registre : https://auftragsregister.ch/fr/auftrag/ebcc35e1-ca
+ 78-426c-b5c3-4d64ffe9b27e/\nPublication officielle : https://www.simap.c
+ h/fr/project-detail/ebcc35e1-ca78-426c-b5c3-4d64ffe9b27e
+URL:https://auftragsregister.ch/fr/auftrag/ebcc35e1-ca78-426c-b5c3-4d64ffe9
+ b27e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-150016\, N02\, EP Arsenal – Hergiswil
+ \, y compris extension sud / lot ARHE BSA-6.06 Téléphone de secours
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

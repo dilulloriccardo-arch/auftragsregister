@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a52ccc78-d044-40e1-9e96-ad70147f2d5a-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T143000Z
+SUMMARY:Submission deadline: Construction d'un bâtiment d'accueil parascol
+ aire (UAPE\, bibliothèque et ludothèque) pour le complexe scolaire Les V
+ oiles du Léman à Préverenges
+DESCRIPTION:Public buyer: Commune de Préverenges\nSubmission deadline: 1 
+ Dec 2026\, 15:30\nIn the register: https://auftragsregister.ch/en/auftrag
+ /a52ccc78-d044-40e1-9e96-ad70147f2d5a/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/a52ccc78-d044-40e1-9e96-ad70147f2d5a
+URL:https://auftragsregister.ch/en/auftrag/a52ccc78-d044-40e1-9e96-ad70147f
+ 2d5a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Construction d'un bâtiment d'accueil para
+ scolaire (UAPE\, bibliothèque et ludothèque) pour le complexe scolaire L
+ es Voiles du Léman à Préverenges
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

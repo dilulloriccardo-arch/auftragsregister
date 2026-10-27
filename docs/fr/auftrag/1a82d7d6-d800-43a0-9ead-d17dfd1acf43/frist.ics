@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1a82d7d6-d800-43a0-9ead-d17dfd1acf43-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261117T150000Z
+SUMMARY:Délai de remise : Concours pour la fourniture d'un système de t
+ ranscription et de traduction
+DESCRIPTION:Acheteur public : Centro sistemi informativi\nDélai de remis
+ e : 17.11.2026\, 16 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/1a82d7d6-d800-43a0-9ead-d17dfd1acf43/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/1a82d7d6-d800-43a0-9ead-d
+ 17dfd1acf43
+URL:https://auftragsregister.ch/fr/auftrag/1a82d7d6-d800-43a0-9ead-d17dfd1a
+ cf43/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Concours pour la fourniture d'un système 
+ de transcription et de traduction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

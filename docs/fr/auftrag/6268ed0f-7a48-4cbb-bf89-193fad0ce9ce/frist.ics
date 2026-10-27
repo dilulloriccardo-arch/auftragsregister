@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6268ed0f-7a48-4cbb-bf89-193fad0ce9ce-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:3
+DTSTART:20261113T110000Z
+SUMMARY:Délai de remise : Registre cantonal des personnes pour la commun
+ auté GERES
+DESCRIPTION:Acheteur public : GERES-Community\nDélai de remise : 13.11
+ .2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/6268ed0f-7a48-4cbb-bf89-193fad0ce9ce/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/6268ed0f-7a48-4cbb-bf89-193fad0ce9ce
+URL:https://auftragsregister.ch/fr/auftrag/6268ed0f-7a48-4cbb-bf89-193fad0c
+ e9ce/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Registre cantonal des personnes pour la co
+ mmunauté GERES
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e09a5ced-8960-4713-94cf-435249692a16-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:2
+DTSTART:20261116T070000Z
+SUMMARY:Submission deadline: Framework agreement for expert support for the
+  Climate Forum
+DESCRIPTION:Public buyer: GUD - Umwelt- und Gesundheitsschutz (UGZ)\nSubmis
+ sion deadline: 16 Nov 2026\, 08:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/e09a5ced-8960-4713-94cf-435249692a16/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/e09a5ced-8960-4713-94cf-4352
+ 49692a16
+URL:https://auftragsregister.ch/en/auftrag/e09a5ced-8960-4713-94cf-43524969
+ 2a16/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Framework agreement for expert support for
+  the Climate Forum
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

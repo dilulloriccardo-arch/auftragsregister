@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:daa412d7-23ea-4693-b888-773c30629e72-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Submission deadline: LSE sécurité SI 2027-2031
+DESCRIPTION:Public buyer: Transport publics genevois (tpg)\nSubmission dead
+ line: 11 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/
+ en/auftrag/daa412d7-23ea-4693-b888-773c30629e72/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/daa412d7-23ea-4693-b888-773c30629e72
+URL:https://auftragsregister.ch/en/auftrag/daa412d7-23ea-4693-b888-773c3062
+ 9e72/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: LSE sécurité SI 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

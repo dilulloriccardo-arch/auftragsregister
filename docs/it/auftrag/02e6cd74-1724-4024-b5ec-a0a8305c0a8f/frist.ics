@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02e6cd74-1724-4024-b5ec-a0a8305c0a8f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T150000Z
+SUMMARY:Scadenza: Mobilier EPFL 2027-2031
+DESCRIPTION:Ente pubblico: EPFL - VPF Achats\nScadenza: 13.11.2026\, 16:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/02e6cd74-1724-4024-b
+ 5ec-a0a8305c0a8f/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/02e6cd74-1724-4024-b5ec-a0a8305c0a8f
+URL:https://auftragsregister.ch/it/auftrag/02e6cd74-1724-4024-b5ec-a0a8305c
+ 0a8f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mobilier EPFL 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

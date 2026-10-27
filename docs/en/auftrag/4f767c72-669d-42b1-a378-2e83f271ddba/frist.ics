@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4f767c72-669d-42b1-a378-2e83f271ddba-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261110T110000Z
+SUMMARY:Submission deadline: Früchtekorb
+DESCRIPTION:Public buyer: Basler Verkehrs-Betriebe (BVB)\nSubmission deadli
+ ne: 10 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/4f767c72-669d-42b1-a378-2e83f271ddba/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/4f767c72-669d-42b1-a378-2e83f271ddba
+URL:https://auftragsregister.ch/en/auftrag/4f767c72-669d-42b1-a378-2e83f271
+ ddba/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Früchtekorb
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfd31cdf-948c-4dd9-b54e-1bd6385d8e4e-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART:20261116T080000Z
+SUMMARY:Eingabefrist: IWB\, TBA Tiefbauarbeiten Eulerstrasse
+DESCRIPTION:Auftraggeber: IWB Industrielle Werke Basel\nEingabefrist: 16.11
+ .2026\, 9.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/cfd
+ 31cdf-948c-4dd9-b54e-1bd6385d8e4e/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/cfd31cdf-948c-4dd9-b54e-1bd6385d8e4e
+URL:https://auftragsregister.ch/de/auftrag/cfd31cdf-948c-4dd9-b54e-1bd6385d
+ 8e4e/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: IWB\, TBA Tiefbauarbeiten Eulerstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

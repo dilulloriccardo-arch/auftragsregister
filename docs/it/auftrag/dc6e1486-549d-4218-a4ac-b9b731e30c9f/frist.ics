@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dc6e1486-549d-4218-a4ac-b9b731e30c9f-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261125T100000Z
+SUMMARY:Scadenza: Ecole du Mervelet (2365TI) Charpente métallique
+DESCRIPTION:Ente pubblico: Unité soumissions - Département de l'aménagem
+ ent\, des constructions et de la mobilité (DACM) de la Ville de Genève\n
+ Scadenza: 25.11.2026\, 11:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/dc6e1486-549d-4218-a4ac-b9b731e30c9f/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/dc6e1486-549d-4218-a4ac-b9b731e30c9f
+URL:https://auftragsregister.ch/it/auftrag/dc6e1486-549d-4218-a4ac-b9b731e3
+ 0c9f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ecole du Mervelet (2365TI) Charpente métallique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

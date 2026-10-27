@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a7f1ab22-574c-4481-acc5-397f82b6a23d-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261208T225900Z
+SUMMARY:Eingabefrist: Nachfolgelösung BISSO KLV
+DESCRIPTION:Auftraggeber: Amt für Informatik und Organisation\nEingabefris
+ t: 08.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/au
+ ftrag/a7f1ab22-574c-4481-acc5-397f82b6a23d/\nAmtliche Publikation: https:/
+ /www.simap.ch/de/project-detail/a7f1ab22-574c-4481-acc5-397f82b6a23d
+URL:https://auftragsregister.ch/de/auftrag/a7f1ab22-574c-4481-acc5-397f82b6
+ a23d/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Nachfolgelösung BISSO KLV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

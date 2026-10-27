@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f8f200c5-9e9d-49aa-9932-6a571e03ea5e-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Submission deadline: Ausschreibung Küchenbauer (ohne Geräte) – 
+ KAT.006
+DESCRIPTION:Public buyer: ETHOS Immobilien GmbH\nSubmission deadline: 9 No
+ v 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/f
+ 8f200c5-9e9d-49aa-9932-6a571e03ea5e/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/f8f200c5-9e9d-49aa-9932-6a571e03ea5e
+URL:https://auftragsregister.ch/en/auftrag/f8f200c5-9e9d-49aa-9932-6a571e03
+ ea5e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibung Küchenbauer (ohne Geräte) 
+ – KAT.006
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

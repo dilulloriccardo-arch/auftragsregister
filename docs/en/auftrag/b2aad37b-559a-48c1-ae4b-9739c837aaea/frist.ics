@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2aad37b-559a-48c1-ae4b-9739c837aaea-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T130000Z
+SUMMARY:Submission deadline: Sanierung Fohrhölzlistrasse Niederrohrdorf
+DESCRIPTION:Public buyer: Gemeinde Niederrohrdorf\nSubmission deadline: 6 
+ Nov 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /b2aad37b-559a-48c1-ae4b-9739c837aaea/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/b2aad37b-559a-48c1-ae4b-9739c837aaea
+URL:https://auftragsregister.ch/en/auftrag/b2aad37b-559a-48c1-ae4b-9739c837
+ aaea/
+LOCATION:Niederrohrdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Fohrhölzlistrasse Niederrohrdor
+ f
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

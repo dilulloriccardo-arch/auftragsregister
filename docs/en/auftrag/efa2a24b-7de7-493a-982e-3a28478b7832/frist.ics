@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efa2a24b-7de7-493a-982e-3a28478b7832-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261118T160000Z
+SUMMARY:Submission deadline: Neubau Gemeindehaus Münsingen - BKP 273/ 281.
+ 8
+DESCRIPTION:Public buyer: Gemeinde Münsingen\, Abteilung Bau\nSubmission d
+ eadline: 18 Nov 2026\, 17:00\nIn the register: https://auftragsregister.
+ ch/en/auftrag/efa2a24b-7de7-493a-982e-3a28478b7832/\nOfficial publication:
+  https://www.simap.ch/en/project-detail/efa2a24b-7de7-493a-982e-3a28478b78
+ 32
+URL:https://auftragsregister.ch/en/auftrag/efa2a24b-7de7-493a-982e-3a28478b
+ 7832/
+LOCATION:Münsingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Gemeindehaus Münsingen - BKP 273/ 
+ 281.8
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

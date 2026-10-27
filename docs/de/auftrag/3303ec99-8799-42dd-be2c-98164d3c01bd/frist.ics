@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3303ec99-8799-42dd-be2c-98164d3c01bd-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Eingabefrist: UW Riet - Baumeister (AIS)
+DESCRIPTION:Auftraggeber: Swissgrid AG - Engineering & Construction\nEingab
+ efrist: 17.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/3303ec99-8799-42dd-be2c-98164d3c01bd/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/3303ec99-8799-42dd-be2c-98164d3c01bd
+URL:https://auftragsregister.ch/de/auftrag/3303ec99-8799-42dd-be2c-98164d3c
+ 01bd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: UW Riet - Baumeister (AIS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

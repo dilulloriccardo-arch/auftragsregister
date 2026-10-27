@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:747f6c7f-ff58-452d-aa7c-bb2fe4724901-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261119T225900Z
+SUMMARY:Eingabefrist: (26072) 201 IAM-Kernlösung IT-EDA
+DESCRIPTION:Auftraggeber: Bundesamt für Bauten und Logistik BBL\nEingabefr
+ ist: 19.11.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/747f6c7f-ff58-452d-aa7c-bb2fe4724901/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/747f6c7f-ff58-452d-aa7c-bb2fe4724901
+URL:https://auftragsregister.ch/de/auftrag/747f6c7f-ff58-452d-aa7c-bb2fe472
+ 4901/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (26072) 201 IAM-Kernlösung IT-EDA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

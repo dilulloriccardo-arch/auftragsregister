@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3af7647-227a-4590-9aa3-29f93c8999ee-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Submission deadline: BKP 272.2 NRWA (Natürliche Rauch- und Wärmea
+ bzugsanlagen)
+DESCRIPTION:Public buyer: Flughafen Zürich AG - ELP\nSubmission deadline: 
+ 16 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/d3af7647-227a-4590-9aa3-29f93c8999ee/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/d3af7647-227a-4590-9aa3-29f93c8999ee
+URL:https://auftragsregister.ch/en/auftrag/d3af7647-227a-4590-9aa3-29f93c89
+ 99ee/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 272.2 NRWA (Natürliche Rauch- und Wä
+ rmeabzugsanlagen)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cef5497a-ed46-4d25-8cd9-0c3d4fc66d4a-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261207T153000Z
+SUMMARY:Délai de remise : Campus Battelle\, rénovation énergétique de
+ s bâtiments A-D et C-F - Mandat d'ingénieur Sanitaire
+DESCRIPTION:Acheteur public : Office cantonal des bâtiments (OCBA)\nDél
+ ai de remise : 07.12.2026\, 16 h 30\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/cef5497a-ed46-4d25-8cd9-0c3d4fc66d4a/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/cef5497a-ed46-
+ 4d25-8cd9-0c3d4fc66d4a
+URL:https://auftragsregister.ch/fr/auftrag/cef5497a-ed46-4d25-8cd9-0c3d4fc6
+ 6d4a/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Campus Battelle\, rénovation énergétiqu
+ e des bâtiments A-D et C-F - Mandat d'ingénieur Sanitaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

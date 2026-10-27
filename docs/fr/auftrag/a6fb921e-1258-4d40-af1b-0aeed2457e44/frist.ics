@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6fb921e-1258-4d40-af1b-0aeed2457e44-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Délai de remise : Neubau Seniorenwohnungen Herosé\, Aarau - BKP
+  201 Abbruch- und Baugrubenaushub inkl. Werkleitungen
+DESCRIPTION:Acheteur public : Einwohnergemeinde Aarau - Stadtbauamt\, Sek
+ tion Hochbau\nDélai de remise : 26.11.2026\, 16 h 00\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/a6fb921e-1258-4d40-af1b-0ae
+ ed2457e44/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/a6fb921e-1258-4d40-af1b-0aeed2457e44
+URL:https://auftragsregister.ch/fr/auftrag/a6fb921e-1258-4d40-af1b-0aeed245
+ 7e44/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Seniorenwohnungen Herosé\, Aarau -
+  BKP 201 Abbruch- und Baugrubenaushub inkl. Werkleitungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

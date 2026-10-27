@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8dec9c8d-4c95-4389-9b17-bc6c2fe29718-frist@auftragsregister.ch
+DTSTAMP:20260929T000000Z
+SEQUENCE:0
+DTSTART:20261110T150000Z
+SUMMARY:Scadenza: Kantonsstrasse KH3. Gemeinde Ennetmoos\; Ausbau / Umgesta
+ ltung\; Abschnitt Grenze NW/OW – St.Jakob (km 0.00 bis 1.00)
+DESCRIPTION:Ente pubblico: Amt für Mobilität\nScadenza: 10.11.2026\, 16:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/8dec9c8d-4c95-4389
+ -9b17-bc6c2fe29718/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/8dec9c8d-4c95-4389-9b17-bc6c2fe29718
+URL:https://auftragsregister.ch/it/auftrag/8dec9c8d-4c95-4389-9b17-bc6c2fe2
+ 9718/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kantonsstrasse KH3. Gemeinde Ennetmoos\; Ausbau / Umg
+ estaltung\; Abschnitt Grenze NW/OW – St.Jakob (km 0.00 bis 1.00)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

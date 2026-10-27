@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2525795e-8632-4996-b2af-30b62dc03654-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Eingabefrist: Gesamtsanierung Kaserne Auenfeld\, Wpl Frauenfeld\, 3
+ . Etappe\, BKP 282.5 Wandbekleidungen aus Holz\, (Unterkunftsgebäude UE)
+DESCRIPTION:Auftraggeber: armasuisse Immobilien\nEingabefrist: 06.11.2026\,
+  23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2525795e-
+ 8632-4996-b2af-30b62dc03654/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/2525795e-8632-4996-b2af-30b62dc03654
+URL:https://auftragsregister.ch/de/auftrag/2525795e-8632-4996-b2af-30b62dc0
+ 3654/
+LOCATION:Frauenfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamtsanierung Kaserne Auenfeld\, Wpl Frauenfeld
+ \, 3. Etappe\, BKP 282.5 Wandbekleidungen aus Holz\, (Unterkunftsgebäude 
+ UE)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

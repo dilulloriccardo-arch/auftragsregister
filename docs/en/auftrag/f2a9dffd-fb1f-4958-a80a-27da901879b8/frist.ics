@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f2a9dffd-fb1f-4958-a80a-27da901879b8-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261116T150000Z
+SUMMARY:Submission deadline: Huberstrasse 18/20\, Gesamtsanierung\, BKP 211
+  Baumeisterarbeiten
+DESCRIPTION:Public buyer: Fachstelle Beschaffungswesen Stadt Bern\nSubmissi
+ on deadline: 16 Nov 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/f2a9dffd-fb1f-4958-a80a-27da901879b8/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/f2a9dffd-fb1f-4958-a80a-27da90
+ 1879b8
+URL:https://auftragsregister.ch/en/auftrag/f2a9dffd-fb1f-4958-a80a-27da9018
+ 79b8/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Huberstrasse 18/20\, Gesamtsanierung\, BKP
+  211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

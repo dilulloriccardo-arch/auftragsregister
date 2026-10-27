@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e996490d-ac3d-4d99-8956-5eac9e1a40ab-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Submission deadline: LOS 1 Hydraulische Steuerung und Verteilleitun
+ g Hilfssysteme Kraftwerk Pradella
+DESCRIPTION:Public buyer: Engadiner Kraftwerke AG\nSubmission deadline: 18
+  Nov 2026\nIn the register: https://auftragsregister.ch/en/auftrag/e9964
+ 90d-ac3d-4d99-8956-5eac9e1a40ab/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/e996490d-ac3d-4d99-8956-5eac9e1a40ab
+URL:https://auftragsregister.ch/en/auftrag/e996490d-ac3d-4d99-8956-5eac9e1a
+ 40ab/
+LOCATION:Pradella
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: LOS 1 Hydraulische Steuerung und Verteille
+ itung Hilfssysteme Kraftwerk Pradella
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

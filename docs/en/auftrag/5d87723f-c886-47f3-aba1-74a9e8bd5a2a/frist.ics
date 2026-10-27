@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5d87723f-c886-47f3-aba1-74a9e8bd5a2a-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Submission deadline: IT-Dienstleistungen\, Support Microsoft Azure 
+ Umgebung\, 3 Jahre\, ohne Option auf Verlängerung
+DESCRIPTION:Public buyer: Fachstelle Beschaffungswesen Stadt Bern\nSubmissi
+ on deadline: 5 Nov 2026\, 16:00\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/5d87723f-c886-47f3-aba1-74a9e8bd5a2a/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/5d87723f-c886-47f3-aba1-74a9e8b
+ d5a2a
+URL:https://auftragsregister.ch/en/auftrag/5d87723f-c886-47f3-aba1-74a9e8bd
+ 5a2a/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: IT-Dienstleistungen\, Support Microsoft Az
+ ure Umgebung\, 3 Jahre\, ohne Option auf Verlängerung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

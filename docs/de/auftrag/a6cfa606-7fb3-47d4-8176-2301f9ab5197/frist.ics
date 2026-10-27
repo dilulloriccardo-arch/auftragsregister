@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6cfa606-7fb3-47d4-8176-2301f9ab5197-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261126T140000Z
+SUMMARY:Eingabefrist: HUG - Renovation de la Maternité – CFC 228.20 Stor
+ es à lamelles
+DESCRIPTION:Auftraggeber: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nEingabefrist: 26.11.2026\, 15.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/a6cfa606-7fb3-47d4-8176-2301f9ab5197/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/a6cfa606-7f
+ b3-47d4-8176-2301f9ab5197
+URL:https://auftragsregister.ch/de/auftrag/a6cfa606-7fb3-47d4-8176-2301f9ab
+ 5197/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: HUG - Renovation de la Maternité – CFC 228.20 
+ Stores à lamelles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

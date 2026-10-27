@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:73d32495-1903-4f7b-babc-e73f61c98b1e-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Scadenza: Heizungs-Installationen Fernheizwerk Winterthur
+DESCRIPTION:Ente pubblico: Stadtwerk Winterthur\nScadenza: 02.11.2026\, 12:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/73d32495-1903-4f7
+ b-babc-e73f61c98b1e/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/73d32495-1903-4f7b-babc-e73f61c98b1e
+URL:https://auftragsregister.ch/it/auftrag/73d32495-1903-4f7b-babc-e73f61c9
+ 8b1e/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Heizungs-Installationen Fernheizwerk Winterthur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

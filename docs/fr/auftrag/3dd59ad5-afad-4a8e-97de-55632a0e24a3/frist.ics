@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3dd59ad5-afad-4a8e-97de-55632a0e24a3-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Délai de remise : Systèmes de contrôle d’accès@EPFL
+DESCRIPTION:Acheteur public : EPFL - Domaine des Achats\nDélai de remise
+  : 17.11.2026\, 12 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/3dd59ad5-afad-4a8e-97de-55632a0e24a3/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/3dd59ad5-afad-4a8e-97de-55
+ 632a0e24a3
+URL:https://auftragsregister.ch/fr/auftrag/3dd59ad5-afad-4a8e-97de-55632a0e
+ 24a3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Systèmes de contrôle d’accès@EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

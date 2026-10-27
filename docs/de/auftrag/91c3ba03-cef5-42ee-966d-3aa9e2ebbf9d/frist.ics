@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:91c3ba03-cef5-42ee-966d-3aa9e2ebbf9d-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261117T210000Z
+SUMMARY:Eingabefrist: VSZK - Ausschreibung BKP 211.1 Gerüste
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Schwyz\nEingabefrist: 17.11.202
+ 6\, 22.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/91c3ba
+ 03-cef5-42ee-966d-3aa9e2ebbf9d/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/91c3ba03-cef5-42ee-966d-3aa9e2ebbf9d
+URL:https://auftragsregister.ch/de/auftrag/91c3ba03-cef5-42ee-966d-3aa9e2eb
+ bf9d/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: VSZK - Ausschreibung BKP 211.1 Gerüste
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

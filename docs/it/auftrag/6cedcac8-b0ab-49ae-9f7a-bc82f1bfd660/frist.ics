@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6cedcac8-b0ab-49ae-9f7a-bc82f1bfd660-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Scadenza: 18.0321_Gymnasium Neufeld_Ersatzneubau_BKP 283_Deckenbekl
+ eidungen TP1-2
+DESCRIPTION:Ente pubblico: Amt für Grundstücke und Gebäude des Kantons B
+ ern (AGG)\nScadenza: 07.12.2026\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/6cedcac8-b0ab-49ae-9f7a-bc82f1bfd660/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/6cedcac8-b0ab-49ae-9f7a-b
+ c82f1bfd660
+URL:https://auftragsregister.ch/it/auftrag/6cedcac8-b0ab-49ae-9f7a-bc82f1bf
+ d660/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 18.0321_Gymnasium Neufeld_Ersatzneubau_BKP 283_Decken
+ bekleidungen TP1-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

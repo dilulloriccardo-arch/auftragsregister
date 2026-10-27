@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af90dd5e-1faf-4c49-8949-26e6ec0c3b1d-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Scadenza: ContaiSIS_A1 / Acquisition de containers de progression a
+ u feu pour l’école du GSIS
+DESCRIPTION:Ente pubblico: Centrale municipale d'achat et d'impression de l
+ a Ville de Genève\nScadenza: 02.11.2026\, 12:00\nNel registro: https://au
+ ftragsregister.ch/it/auftrag/af90dd5e-1faf-4c49-8949-26e6ec0c3b1d/\nPubbli
+ cazione ufficiale: https://www.simap.ch/it/project-detail/af90dd5e-1faf-4c
+ 49-8949-26e6ec0c3b1d
+URL:https://auftragsregister.ch/it/auftrag/af90dd5e-1faf-4c49-8949-26e6ec0c
+ 3b1d/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ContaiSIS_A1 / Acquisition de containers de progressi
+ on au feu pour l’école du GSIS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

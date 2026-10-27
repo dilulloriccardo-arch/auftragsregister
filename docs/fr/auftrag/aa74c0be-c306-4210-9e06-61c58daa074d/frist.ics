@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa74c0be-c306-4210-9e06-61c58daa074d-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261120T170000Z
+SUMMARY:Délai de remise : Flurstrassen Albinen
+DESCRIPTION:Acheteur public : Gemeinde Albinen (Zumofen + Glenz AG)\nDél
+ ai de remise : 20.11.2026\, 18 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/aa74c0be-c306-4210-9e06-61c58daa074d/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/aa74c0be-c306-
+ 4210-9e06-61c58daa074d
+URL:https://auftragsregister.ch/fr/auftrag/aa74c0be-c306-4210-9e06-61c58daa
+ 074d/
+LOCATION:Albinen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Flurstrassen Albinen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fc1a1e66-03a7-45d4-b983-00a753341fc9-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261201T130000Z
+SUMMARY:Délai de remise : 57.103 Ampliamento piastra tecnica e logistica
+  - Impianti di ventilazione
+DESCRIPTION:Acheteur public : Ente Ospedaliero Cantonale - Area Infrastru
+ tture e Operations\nDélai de remise : 01.12.2026\, 14 h 00\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/fc1a1e66-03a7-45d4-b9
+ 83-00a753341fc9/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/fc1a1e66-03a7-45d4-b983-00a753341fc9
+URL:https://auftragsregister.ch/fr/auftrag/fc1a1e66-03a7-45d4-b983-00a75334
+ 1fc9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 57.103 Ampliamento piastra tecnica e logis
+ tica - Impianti di ventilazione
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

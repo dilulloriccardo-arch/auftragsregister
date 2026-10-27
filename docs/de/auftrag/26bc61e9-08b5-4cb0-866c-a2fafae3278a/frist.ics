@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:26bc61e9-08b5-4cb0-866c-a2fafae3278a-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261118T100000Z
+SUMMARY:Eingabefrist: Sanierung Oberhausenstrasse und Ersatz Werkleitungen 
+ inkl. barrierefreier Umbau Bushaltestellen
+DESCRIPTION:Auftraggeber: Gemeinde Wettswil am Albis - Bau und Infrastruktu
+ r\nEingabefrist: 18.11.2026\, 11.00 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/26bc61e9-08b5-4cb0-866c-a2fafae3278a/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/26bc61e9-08b5-4cb0-866c-a2fa
+ fae3278a
+URL:https://auftragsregister.ch/de/auftrag/26bc61e9-08b5-4cb0-866c-a2fafae3
+ 278a/
+LOCATION:Wettswil am Albis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Oberhausenstrasse und Ersatz Werkleitun
+ gen inkl. barrierefreier Umbau Bushaltestellen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

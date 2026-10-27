@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9ff8e149-90f3-4055-8f52-486a7508b4fd-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T090000Z
+SUMMARY:Eingabefrist: Lieferung einer Brandschutzbekleidung (Brandschutzjac
+ ke und Brandschutzhose) für die Feuerwehr Unteres Rheintal
+DESCRIPTION:Auftraggeber: Zweckverband Feuerwehr Unteres Rheintal\nEingabef
+ rist: 02.11.2026\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/9ff8e149-90f3-4055-8f52-486a7508b4fd/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/9ff8e149-90f3-4055-8f52-486a7508b4fd
+URL:https://auftragsregister.ch/de/auftrag/9ff8e149-90f3-4055-8f52-486a7508
+ b4fd/
+LOCATION:Heerbrugg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Lieferung einer Brandschutzbekleidung (Brandschut
+ zjacke und Brandschutzhose) für die Feuerwehr Unteres Rheintal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

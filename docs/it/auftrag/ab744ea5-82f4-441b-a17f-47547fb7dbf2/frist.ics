@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab744ea5-82f4-441b-a17f-47547fb7dbf2-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Scadenza: SKP 230 Elektroanlagen RIGG 1. UG und 2. UG SÜD IS Haust
+ echnik
+DESCRIPTION:Ente pubblico: Insel Gruppe AG\nScadenza: 30.11.2026\, 23:59\nN
+ el registro: https://auftragsregister.ch/it/auftrag/ab744ea5-82f4-441b-a17
+ f-47547fb7dbf2/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/ab744ea5-82f4-441b-a17f-47547fb7dbf2
+URL:https://auftragsregister.ch/it/auftrag/ab744ea5-82f4-441b-a17f-47547fb7
+ dbf2/
+LOCATION:Riggisberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: SKP 230 Elektroanlagen RIGG 1. UG und 2. UG SÜD IS H
+ austechnik
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

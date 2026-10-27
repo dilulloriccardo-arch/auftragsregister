@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bf75971b-91cc-401c-bc18-031c4721374f-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:1
+DTSTART:20261208T100000Z
+SUMMARY:Scadenza: Travaux de renouvellement des enrobés bitumineux routier
+  2027
+DESCRIPTION:Ente pubblico: OCGC - DER - Service de l'entretien du patrimoin
+ e des routes cantonales\nScadenza: 08.12.2026\, 11:00\nNel registro: https
+ ://auftragsregister.ch/it/auftrag/bf75971b-91cc-401c-bc18-031c4721374f/\nP
+ ubblicazione ufficiale: https://www.simap.ch/it/project-detail/bf75971b-91
+ cc-401c-bc18-031c4721374f
+URL:https://auftragsregister.ch/it/auftrag/bf75971b-91cc-401c-bc18-031c4721
+ 374f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Travaux de renouvellement des enrobés bitumineux rou
+ tier 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

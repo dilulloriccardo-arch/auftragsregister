@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2dcba10b-5b7f-47b9-94e7-e2b56294afb4-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:1
+DTSTART:20270205T140000Z
+SUMMARY:Scadenza: HUG - Pôle Thérapeutique Opéra - Entreprise Totale
+DESCRIPTION:Ente pubblico: Centrale d'achats et d'ingénierie biomédicale 
+ Vaud-Genève (CAIB)\nScadenza: 05.02.2027\, 15:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/2dcba10b-5b7f-47b9-94e7-e2b56294afb4/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/2dcba10b-5b7f-4
+ 7b9-94e7-e2b56294afb4
+URL:https://auftragsregister.ch/it/auftrag/2dcba10b-5b7f-47b9-94e7-e2b56294
+ afb4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: HUG - Pôle Thérapeutique Opéra - Entreprise Tot
+ ale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

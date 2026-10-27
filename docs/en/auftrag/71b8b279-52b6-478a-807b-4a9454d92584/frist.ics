@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71b8b279-52b6-478a-807b-4a9454d92584-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:2
+DTSTART:20261123T140000Z
+SUMMARY:Submission deadline: 25-490 Arbeits- und Hebebühnen bedient und un
+ bedient
+DESCRIPTION:Public buyer: SBB CFF FFS Infra-Bahntechnik\nSubmission deadlin
+ e: 23 Nov 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/71b8b279-52b6-478a-807b-4a9454d92584/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/71b8b279-52b6-478a-807b-4a9454d92584
+URL:https://auftragsregister.ch/en/auftrag/71b8b279-52b6-478a-807b-4a9454d9
+ 2584/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 25-490 Arbeits- und Hebebühnen bedient un
+ d unbedient
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

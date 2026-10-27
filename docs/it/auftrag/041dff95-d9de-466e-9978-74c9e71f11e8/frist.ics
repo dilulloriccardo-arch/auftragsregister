@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:041dff95-d9de-466e-9978-74c9e71f11e8-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Scadenza: EPFL - Entreprise Totale - Assainissement et bouclage d'u
+ n réseau d'eaux industrielles\, y.c. création d'une station de découpla
+ ge hydraulique au bord du lac contre la lutte de la propagation des Moules
+  Quagga
+DESCRIPTION:Ente pubblico: EPFL VPF ACHATS\nScadenza: 11.01.2027\, 16:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/041dff95-d9de-466e-997
+ 8-74c9e71f11e8/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/041dff95-d9de-466e-9978-74c9e71f11e8
+URL:https://auftragsregister.ch/it/auftrag/041dff95-d9de-466e-9978-74c9e71f
+ 11e8/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EPFL - Entreprise Totale - Assainissement et bouclage
+  d'un réseau d'eaux industrielles\, y.c. création d'une station de déco
+ uplage hydraulique au bord du lac contre la lutte de la propagation des Mo
+ ules Quagga
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

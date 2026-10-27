@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6adca218-6d8b-4977-8029-e404b09dc7b5-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261110T110000Z
+SUMMARY:Eingabefrist: Renfort équipes SAP@EPFL
+DESCRIPTION:Auftraggeber: EPFL - Domaine des Achats\nEingabefrist: 10.11.20
+ 26\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/6adca
+ 218-6d8b-4977-8029-e404b09dc7b5/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/6adca218-6d8b-4977-8029-e404b09dc7b5
+URL:https://auftragsregister.ch/de/auftrag/6adca218-6d8b-4977-8029-e404b09d
+ c7b5/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Renfort équipes SAP@EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

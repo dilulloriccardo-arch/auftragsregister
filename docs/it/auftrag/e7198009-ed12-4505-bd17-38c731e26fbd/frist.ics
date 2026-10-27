@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7198009-ed12-4505-bd17-38c731e26fbd-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261102T225900Z
+SUMMARY:Scadenza: ADRESS 2.0 – Instrument für resonante unelastische Rö
+ ntgenstreuung
+DESCRIPTION:Ente pubblico: Paul Scherrer Institut (PSI)\nScadenza: 02.11.20
+ 26\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/e7198009-
+ ed12-4505-bd17-38c731e26fbd/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/e7198009-ed12-4505-bd17-38c731e26fbd
+URL:https://auftragsregister.ch/it/auftrag/e7198009-ed12-4505-bd17-38c731e2
+ 6fbd/
+LOCATION:Villigen PSI
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ADRESS 2.0 – Instrument für resonante unelastische
+  Röntgenstreuung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

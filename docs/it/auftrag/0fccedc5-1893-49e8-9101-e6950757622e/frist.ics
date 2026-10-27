@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0fccedc5-1893-49e8-9101-e6950757622e-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261116T153000Z
+SUMMARY:Scadenza: Ecole Secondaire Noëlla Rouget à Meyrin\, construction 
+ d'un groupe scolaire et de salles omnisport - Lot 40 - revêtement coupe-f
+ eu
+DESCRIPTION:Ente pubblico: Etat de Genève\, Département du Territoire - D
+ T\, Office Cantonal des Bâtiments\nScadenza: 16.11.2026\, 16:30\nNel regi
+ stro: https://auftragsregister.ch/it/auftrag/0fccedc5-1893-49e8-9101-e6950
+ 757622e/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/
+ 0fccedc5-1893-49e8-9101-e6950757622e
+URL:https://auftragsregister.ch/it/auftrag/0fccedc5-1893-49e8-9101-e6950757
+ 622e/
+LOCATION:Meyrin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ecole Secondaire Noëlla Rouget à Meyrin\, construct
+ ion d'un groupe scolaire et de salles omnisport - Lot 40 - revêtement cou
+ pe-feu
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

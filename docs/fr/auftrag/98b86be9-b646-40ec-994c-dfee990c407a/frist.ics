@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:98b86be9-b646-40ec-994c-dfee990c407a-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Délai de remise : Système de tomographie par rayons X pour l'an
+ alyse d'échantillons de roches et de sols
+DESCRIPTION:Acheteur public : ETH Zürich - Abt. Procurement & Export Ser
+ vices\nDélai de remise : 25.11.2026\, 12 h 00\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/98b86be9-b646-40ec-994c-dfee990c40
+ 7a/\nPublication officielle : https://www.simap.ch/fr/project-detail/98b
+ 86be9-b646-40ec-994c-dfee990c407a
+URL:https://auftragsregister.ch/fr/auftrag/98b86be9-b646-40ec-994c-dfee990c
+ 407a/
+LOCATION:Zürich ETH Hönggerberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Système de tomographie par rayons X pour 
+ l'analyse d'échantillons de roches et de sols
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

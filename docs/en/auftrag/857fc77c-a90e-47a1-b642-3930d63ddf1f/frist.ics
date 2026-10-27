@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:857fc77c-a90e-47a1-b642-3930d63ddf1f-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261123T100000Z
+SUMMARY:Submission deadline: Remplacement et modernisation de 27 installati
+ ons de transport de personnes\, SLA maintenance
+DESCRIPTION:Public buyer: Genève Aéroport\nSubmission deadline: 23 Nov 
+ 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/857f
+ c77c-a90e-47a1-b642-3930d63ddf1f/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/857fc77c-a90e-47a1-b642-3930d63ddf1f
+URL:https://auftragsregister.ch/en/auftrag/857fc77c-a90e-47a1-b642-3930d63d
+ df1f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Remplacement et modernisation de 27 instal
+ lations de transport de personnes\, SLA maintenance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

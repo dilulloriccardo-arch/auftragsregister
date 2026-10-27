@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dad167a9-75c5-4f81-b615-7a1266706af6-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261106T225900Z
+SUMMARY:Submission deadline: AQUANOVO-Juristische Unterstützung
+DESCRIPTION:Public buyer: DIB - Wasserversorgung (WVZ)\nSubmission deadline
+ : 6 Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/dad167a9-75c5-4f81-b615-7a1266706af6/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/dad167a9-75c5-4f81-b615-7a1266706af6
+URL:https://auftragsregister.ch/en/auftrag/dad167a9-75c5-4f81-b615-7a126670
+ 6af6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AQUANOVO-Juristische Unterstützung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

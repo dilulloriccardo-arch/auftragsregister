@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a81a1390-7135-4d2a-aa3a-94e14008f972-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261120T225500Z
+SUMMARY:Scadenza: Entreprise de correction fluviale (ECF) de la Grande Eau 
+ - Traversée d'Aigle
+DESCRIPTION:Ente pubblico: Direction générale de l'environnement - DGE-EA
+ U\nScadenza: 20.11.2026\, 23:55\nNel registro: https://auftragsregister.ch
+ /it/auftrag/a81a1390-7135-4d2a-aa3a-94e14008f972/\nPubblicazione ufficiale
+ : https://www.simap.ch/it/project-detail/a81a1390-7135-4d2a-aa3a-94e14008f
+ 972
+URL:https://auftragsregister.ch/it/auftrag/a81a1390-7135-4d2a-aa3a-94e14008
+ f972/
+LOCATION:Aigle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Entreprise de correction fluviale (ECF) de la Grande 
+ Eau - Traversée d'Aigle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

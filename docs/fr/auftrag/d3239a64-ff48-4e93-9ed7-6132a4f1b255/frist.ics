@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3239a64-ff48-4e93-9ed7-6132a4f1b255-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Délai de remise : Vidéos explicatives sur les informations rela
+ tives au vote de la ville de Zurich
+DESCRIPTION:Acheteur public : Stadtkanzlei Zürich\nDélai de remise : 
+ 26.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/d3239a64-ff48-4e93-9ed7-6132a4f1b255/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/d3239a64-ff48-4e93-9ed7-6132a4
+ f1b255
+URL:https://auftragsregister.ch/fr/auftrag/d3239a64-ff48-4e93-9ed7-6132a4f1
+ b255/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Vidéos explicatives sur les informations 
+ relatives au vote de la ville de Zurich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

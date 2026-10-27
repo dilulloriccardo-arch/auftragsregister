@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:52a0257b-5fba-4657-b106-787d99c2b85a-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261120T225900Z
+SUMMARY:Délai de remise : Kantonsstrasse Nr. 114\, Buchs: Brücke Giesse
+ n
+DESCRIPTION:Acheteur public : Kanton St.Gallen\, Tiefbauamt\, Strassen- u
+ nd Kunstbauten\nDélai de remise : 20.11.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/52a0257b-5fba-4657-b106-7
+ 87d99c2b85a/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/52a0257b-5fba-4657-b106-787d99c2b85a
+URL:https://auftragsregister.ch/fr/auftrag/52a0257b-5fba-4657-b106-787d99c2
+ b85a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kantonsstrasse Nr. 114\, Buchs: Brücke Gi
+ essen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

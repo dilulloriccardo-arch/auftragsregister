@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db17e591-0a3a-4fff-a794-5c7345e27590-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Scadenza: EBP-597 AFW Schwabguet Baumeister
+DESCRIPTION:Ente pubblico: Energie Wasser Bern\nScadenza: 30.11.2026\, 23:5
+ 9\nNel registro: https://auftragsregister.ch/it/auftrag/db17e591-0a3a-4fff
+ -a794-5c7345e27590/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/db17e591-0a3a-4fff-a794-5c7345e27590
+URL:https://auftragsregister.ch/it/auftrag/db17e591-0a3a-4fff-a794-5c7345e2
+ 7590/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EBP-597 AFW Schwabguet Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

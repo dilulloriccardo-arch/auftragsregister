@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c21f5bbe-0edd-4227-b3a3-e1c29eb22dc3-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Délai de remise : 22128 Hardbrücke\, Widerlager Rosengarten
+DESCRIPTION:Acheteur public : Tiefbauamt Stadt Zürich\, Kunstbauten + Ob
+ jektmgt.\nDélai de remise : 23.11.2026\, 16 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/c21f5bbe-0edd-4227-b3a3-e1c29e
+ b22dc3/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /c21f5bbe-0edd-4227-b3a3-e1c29eb22dc3
+URL:https://auftragsregister.ch/fr/auftrag/c21f5bbe-0edd-4227-b3a3-e1c29eb2
+ 2dc3/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 22128 Hardbrücke\, Widerlager Rosengarten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

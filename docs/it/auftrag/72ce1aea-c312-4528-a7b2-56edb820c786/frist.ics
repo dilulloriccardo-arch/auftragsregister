@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72ce1aea-c312-4528-a7b2-56edb820c786-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261112T140000Z
+SUMMARY:Scadenza: Neubau Klinikum 2\, Phase 1\, SKP 273\, Schreinerarbeiten
+ -Aufbahrung UG02
+DESCRIPTION:Ente pubblico: Universitätsspital Basel\nScadenza: 12.11.2026\
+ , 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/72ce1aea-c31
+ 2-4528-a7b2-56edb820c786/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/72ce1aea-c312-4528-a7b2-56edb820c786
+URL:https://auftragsregister.ch/it/auftrag/72ce1aea-c312-4528-a7b2-56edb820
+ c786/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Klinikum 2\, Phase 1\, SKP 273\, Schreinerarbe
+ iten-Aufbahrung UG02
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

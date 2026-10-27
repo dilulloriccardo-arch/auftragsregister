@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c4bbf9f-f86a-4222-8b35-9f89b40fcacc-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Délai de remise : 2040 Neubau Schulanlage Birchlen\, Dübendorf 
+ - 231.3 Schaltgerätekombinationen
+DESCRIPTION:Acheteur public : Primarschule Dübendorf\nDélai de remise
+  : 04.12.2026\, 12 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/3c4bbf9f-f86a-4222-8b35-9f89b40fcacc/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/3c4bbf9f-f86a-4222-8b35-9f
+ 89b40fcacc
+URL:https://auftragsregister.ch/fr/auftrag/3c4bbf9f-f86a-4222-8b35-9f89b40f
+ cacc/
+LOCATION:Dübendorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 2040 Neubau Schulanlage Birchlen\, Dübend
+ orf - 231.3 Schaltgerätekombinationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

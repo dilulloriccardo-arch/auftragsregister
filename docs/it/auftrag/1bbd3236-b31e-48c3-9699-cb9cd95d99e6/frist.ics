@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1bbd3236-b31e-48c3-9699-cb9cd95d99e6-frist@auftragsregister.ch
+DTSTAMP:20260919T000000Z
+SEQUENCE:0
+DTSTART:20261029T225600Z
+SUMMARY:Scadenza: EBP-613 Rahmenvertrag Baumeisterarbeiten für Hoch- und T
+ iefbau bei Trafostationen
+DESCRIPTION:Ente pubblico: Energie Wasser Bern\nScadenza: 29.10.2026\, 23:5
+ 6\nNel registro: https://auftragsregister.ch/it/auftrag/1bbd3236-b31e-48c3
+ -9699-cb9cd95d99e6/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/1bbd3236-b31e-48c3-9699-cb9cd95d99e6
+URL:https://auftragsregister.ch/it/auftrag/1bbd3236-b31e-48c3-9699-cb9cd95d
+ 99e6/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EBP-613 Rahmenvertrag Baumeisterarbeiten für Hoch- u
+ nd Tiefbau bei Trafostationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:846cffd2-cb36-4802-8ce4-1cfa995d520e-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261103T100000Z
+SUMMARY:Scadenza: Verlängerung der Varonis-Lizenzen im SaaS-Modell
+DESCRIPTION:Ente pubblico: Service de l'informatique et des télécommunica
+ tions (SITel)\nScadenza: 03.11.2026\, 11:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/846cffd2-cb36-4802-8ce4-1cfa995d520e/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/846cffd2-cb36-4802-8c
+ e4-1cfa995d520e
+URL:https://auftragsregister.ch/it/auftrag/846cffd2-cb36-4802-8ce4-1cfa995d
+ 520e/
+LOCATION:Givisiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Verlängerung der Varonis-Lizenzen im SaaS-Modell
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

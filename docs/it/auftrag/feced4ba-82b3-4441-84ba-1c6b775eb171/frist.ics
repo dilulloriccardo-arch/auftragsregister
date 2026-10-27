@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:feced4ba-82b3-4441-84ba-1c6b775eb171-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261127T125900Z
+SUMMARY:Scadenza: Ultra-Hochleistungs-Flüssigchromatographie Geräte gekop
+ pelt mit Triple Quadrupol Massenspektrometer - 3 Geräte
+DESCRIPTION:Ente pubblico: Zentrale Beschaffungsstelle Kanton Basel-Landsch
+ aft\nScadenza: 27.11.2026\, 13:59\nNel registro: https://auftragsregister.
+ ch/it/auftrag/feced4ba-82b3-4441-84ba-1c6b775eb171/\nPubblicazione ufficia
+ le: https://www.simap.ch/it/project-detail/feced4ba-82b3-4441-84ba-1c6b775
+ eb171
+URL:https://auftragsregister.ch/it/auftrag/feced4ba-82b3-4441-84ba-1c6b775e
+ b171/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ultra-Hochleistungs-Flüssigchromatographie Geräte g
+ ekoppelt mit Triple Quadrupol Massenspektrometer - 3 Geräte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

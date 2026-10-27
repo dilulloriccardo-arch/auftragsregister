@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7c5932c3-088c-4e47-abd4-359b345c81c8-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261203T150000Z
+SUMMARY:Submission deadline: MP-110078 N13 RG Werkhof S. Bernardino\, Erneu
+ erung und Erweiterung bestehender Gebäude / Teil II - Photovoltaikanlage 
+ auf Dachflächen
+DESCRIPTION:Public buyer: Ufficio federale delle strade USTRA\, Divisione i
+ nfrastruttura stradale Est\nSubmission deadline: 3 Dec 2026\, 16:00\nIn 
+ the register: https://auftragsregister.ch/en/auftrag/7c5932c3-088c-4e47-ab
+ d4-359b345c81c8/\nOfficial publication: https://www.simap.ch/en/project-de
+ tail/7c5932c3-088c-4e47-abd4-359b345c81c8
+URL:https://auftragsregister.ch/en/auftrag/7c5932c3-088c-4e47-abd4-359b345c
+ 81c8/
+LOCATION:Mesocco
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-110078 N13 RG Werkhof S. Bernardino\, E
+ rneuerung und Erweiterung bestehender Gebäude / Teil II - Photovoltaikanl
+ age auf Dachflächen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

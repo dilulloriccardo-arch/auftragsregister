@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b7eebade-7c51-4b81-851a-514ce4c74b05-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261113T140000Z
+SUMMARY:Eingabefrist: Pratteln - Erstaufnahmeunterkunft / Baumeisterarbeite
+ n Tiefbau
+DESCRIPTION:Auftraggeber: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nEingabefrist: 13.11.2026\, 15.00 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/b7eebade-7c51-4b81-851a-514ce4c74b05/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/b7eebade-7c51-4b81-851a-514
+ ce4c74b05
+URL:https://auftragsregister.ch/de/auftrag/b7eebade-7c51-4b81-851a-514ce4c7
+ 4b05/
+LOCATION:Pratteln
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Pratteln - Erstaufnahmeunterkunft / Baumeisterarb
+ eiten Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

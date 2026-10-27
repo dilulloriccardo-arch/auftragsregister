@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3303ec99-8799-42dd-be2c-98164d3c01bd-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261117T225900Z
+SUMMARY:Délai de remise : SS Riet - génie-civil (AIS)
+DESCRIPTION:Acheteur public : Swissgrid AG - Engineering & Construction\n
+ Délai de remise : 17.11.2026\, 23 h 59\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/3303ec99-8799-42dd-be2c-98164d3c01bd/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/3303ec99-8
+ 799-42dd-be2c-98164d3c01bd
+URL:https://auftragsregister.ch/fr/auftrag/3303ec99-8799-42dd-be2c-98164d3c
+ 01bd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : SS Riet - génie-civil (AIS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

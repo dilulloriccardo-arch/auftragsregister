@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b6935702-ab84-4378-93c1-bc8033d0480a-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:1
+DTSTART:20261105T110000Z
+SUMMARY:Délai de remise : MP-LEB. 2026.03.243 Echallens – Voie de rebr
+ oussement Travaux Ligne de Contact
+DESCRIPTION:Acheteur public : Transports publics de la région lausannois
+ e sa\nDélai de remise : 05.11.2026\, 12 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/b6935702-ab84-4378-93c1-bc8033d0480
+ a/\nPublication officielle : https://www.simap.ch/fr/project-detail/b693
+ 5702-ab84-4378-93c1-bc8033d0480a
+URL:https://auftragsregister.ch/fr/auftrag/b6935702-ab84-4378-93c1-bc8033d0
+ 480a/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-LEB. 2026.03.243 Echallens – Voie de 
+ rebroussement Travaux Ligne de Contact
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

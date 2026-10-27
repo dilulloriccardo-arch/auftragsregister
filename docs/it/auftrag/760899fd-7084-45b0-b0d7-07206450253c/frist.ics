@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:760899fd-7084-45b0-b0d7-07206450253c-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T225600Z
+SUMMARY:Scadenza: EBP-596 AFW_Bümpliz Ost-Süd-Bienzgut Rohrbauer
+DESCRIPTION:Ente pubblico: Energie Wasser Bern\nScadenza: 02.11.2026\, 23:5
+ 6\nNel registro: https://auftragsregister.ch/it/auftrag/760899fd-7084-45b0
+ -b0d7-07206450253c/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/760899fd-7084-45b0-b0d7-07206450253c
+URL:https://auftragsregister.ch/it/auftrag/760899fd-7084-45b0-b0d7-07206450
+ 253c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EBP-596 AFW_Bümpliz Ost-Süd-Bienzgut Rohrbauer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

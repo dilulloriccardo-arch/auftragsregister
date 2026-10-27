@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5b3e71f-ba84-439d-9996-2c4b17a83189-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:1
+DTSTART:20261030T100000Z
+SUMMARY:Délai de remise : Réfection des chemins AF
+DESCRIPTION:Acheteur public : Commune de Sullens (Chevalier SA\, bureau d
+ 'ingénieurs)\nDélai de remise : 30.10.2026\, 11 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/a5b3e71f-ba84-439d-9996-2c
+ 4b17a83189/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/a5b3e71f-ba84-439d-9996-2c4b17a83189
+URL:https://auftragsregister.ch/fr/auftrag/a5b3e71f-ba84-439d-9996-2c4b17a8
+ 3189/
+LOCATION:Sullens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Réfection des chemins AF
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

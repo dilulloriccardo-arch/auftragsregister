@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5181b882-e4f5-49b4-8edf-509ea273bc56-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261102T225600Z
+SUMMARY:Scadenza: Neubau Werkhof und Sammelstelle
+DESCRIPTION:Ente pubblico: Gemeinde Ueberstorf\nScadenza: 02.11.2026\, 23:5
+ 6\nNel registro: https://auftragsregister.ch/it/auftrag/5181b882-e4f5-49b4
+ -8edf-509ea273bc56/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/5181b882-e4f5-49b4-8edf-509ea273bc56
+URL:https://auftragsregister.ch/it/auftrag/5181b882-e4f5-49b4-8edf-509ea273
+ bc56/
+LOCATION:Ueberstorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Werkhof und Sammelstelle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

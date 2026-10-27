@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85865aae-32ab-482b-bb28-d6d2b0653835-frist@auftragsregister.ch
+DTSTAMP:20261006T000000Z
+SEQUENCE:0
+DTSTART:20261028T225900Z
+SUMMARY:Submission deadline: Ersatzneubau und Sanierung Bergschule Avrona -
+  BKP 271.0 Innere Kalkputze
+DESCRIPTION:Public buyer: Stiftung Bergschule Avrona\nSubmission deadline: 
+ 28 Oct 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auf
+ trag/85865aae-32ab-482b-bb28-d6d2b0653835/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/85865aae-32ab-482b-bb28-d6d2b0653835
+URL:https://auftragsregister.ch/en/auftrag/85865aae-32ab-482b-bb28-d6d2b065
+ 3835/
+LOCATION:Tarasp
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatzneubau und Sanierung Bergschule Avro
+ na - BKP 271.0 Innere Kalkputze
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

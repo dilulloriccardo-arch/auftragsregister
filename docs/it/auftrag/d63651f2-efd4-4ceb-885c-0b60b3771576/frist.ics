@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d63651f2-efd4-4ceb-885c-0b60b3771576-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART:20261106T190000Z
+SUMMARY:Scadenza: LED Generalersatz Gebäude Kollegium Schwyz
+DESCRIPTION:Ente pubblico: Hochbauamt Kanton Schwyz\nScadenza: 06.11.2026\,
+  20:00\nNel registro: https://auftragsregister.ch/it/auftrag/d63651f2-efd4
+ -4ceb-885c-0b60b3771576/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/d63651f2-efd4-4ceb-885c-0b60b3771576
+URL:https://auftragsregister.ch/it/auftrag/d63651f2-efd4-4ceb-885c-0b60b377
+ 1576/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: LED Generalersatz Gebäude Kollegium Schwyz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

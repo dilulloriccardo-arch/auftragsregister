@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8a64e9c-30b9-42f6-afea-984280cf117e-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261126T225900Z
+SUMMARY:Eingabefrist: 748 Valserstrasse Hohe Brücke Baumeisterarbeiten
+DESCRIPTION:Auftraggeber: Tiefbauamt Graubünden\nEingabefrist: 26.11.2026\
+ , 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e8a64e9c
+ -30b9-42f6-afea-984280cf117e/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/e8a64e9c-30b9-42f6-afea-984280cf117e
+URL:https://auftragsregister.ch/de/auftrag/e8a64e9c-30b9-42f6-afea-984280cf
+ 117e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 748 Valserstrasse Hohe Brücke Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

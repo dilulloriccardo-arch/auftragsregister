@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6d14dcc-6cc9-4c0a-b15c-3f64a8f1c31f-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Scadenza: Gemeindezentrum Bremgarten b. Bern\, BKP 244 Lüftungsins
+ tallationen
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Bremgarten b. Bern (maurer bau
+ leitung gmbh)\nScadenza: 27.11.2026\, 23:59\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/d6d14dcc-6cc9-4c0a-b15c-3f64a8f1c31f/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/d6d14dcc-6cc9-4c0a-b1
+ 5c-3f64a8f1c31f
+URL:https://auftragsregister.ch/it/auftrag/d6d14dcc-6cc9-4c0a-b15c-3f64a8f1
+ c31f/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gemeindezentrum Bremgarten b. Bern\, BKP 244 Lüftung
+ sinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

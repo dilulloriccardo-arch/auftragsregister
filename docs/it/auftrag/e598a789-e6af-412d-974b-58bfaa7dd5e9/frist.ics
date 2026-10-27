@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e598a789-e6af-412d-974b-58bfaa7dd5e9-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Scadenza: 13043.10 / 250-01 Sanitäranlagen\, Instandsetzung & Erwe
+ iterung Betriebsgebäude Seepolizei und Schifffahrtskontrolle Oberrieden
+DESCRIPTION:Ente pubblico: Hochbauamt Kanton Zürich\nScadenza: 20.11.2026\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/e598a789-e6a
+ f-412d-974b-58bfaa7dd5e9/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/e598a789-e6af-412d-974b-58bfaa7dd5e9
+URL:https://auftragsregister.ch/it/auftrag/e598a789-e6af-412d-974b-58bfaa7d
+ d5e9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 13043.10 / 250-01 Sanitäranlagen\, Instandsetzung & 
+ Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontrolle Oberried
+ en
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16b67315-61e1-4227-ace1-bb8310c630a8-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261119T140000Z
+SUMMARY:Scadenza: Ersatzneubau RES Lölimoos\, Rohrleitungen VA (Rohre inne
+ n)
+DESCRIPTION:Ente pubblico: Stadt Schlieren\, Abteilung Werke\, Versorgung u
+ nd Anlagen\nScadenza: 19.11.2026\, 15:00\nNel registro: https://auftragsre
+ gister.ch/it/auftrag/16b67315-61e1-4227-ace1-bb8310c630a8/\nPubblicazione 
+ ufficiale: https://www.simap.ch/it/project-detail/16b67315-61e1-4227-ace1-
+ bb8310c630a8
+URL:https://auftragsregister.ch/it/auftrag/16b67315-61e1-4227-ace1-bb8310c6
+ 30a8/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatzneubau RES Lölimoos\, Rohrleitungen VA (Rohre 
+ innen)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

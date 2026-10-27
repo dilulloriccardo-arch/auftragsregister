@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d09bc3c-51f1-4534-b9ae-aad1bc461c37-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Délai de remise : Zukunft Bahnhof Bern\, Baustein 3b\, 211 Baume
+ isterarbeiten
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 24.11.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/0d09bc3c-51f1-4534-b9ae-aad1bc461c37/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/0d09bc3c-51
+ f1-4534-b9ae-aad1bc461c37
+URL:https://auftragsregister.ch/fr/auftrag/0d09bc3c-51f1-4534-b9ae-aad1bc46
+ 1c37/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Zukunft Bahnhof Bern\, Baustein 3b\, 211 B
+ aumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

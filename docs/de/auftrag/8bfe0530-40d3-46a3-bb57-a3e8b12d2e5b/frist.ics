@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8bfe0530-40d3-46a3-bb57-a3e8b12d2e5b-frist@auftragsregister.ch
+DTSTAMP:20260904T000000Z
+SEQUENCE:0
+DTSTART:20261027T225900Z
+SUMMARY:Eingabefrist: IT-Infrastruktur für Digitale Forensik und Cyberermi
+ ttlung
+DESCRIPTION:Auftraggeber: Kanton Zug\, handelnd durch die Sicherheitsdirekt
+ ion\nEingabefrist: 27.10.2026\, 23.59 Uhr\nIm Register: https://auftragsr
+ egister.ch/de/auftrag/8bfe0530-40d3-46a3-bb57-a3e8b12d2e5b/\nAmtliche Publ
+ ikation: https://www.simap.ch/de/project-detail/8bfe0530-40d3-46a3-bb57-a3
+ e8b12d2e5b
+URL:https://auftragsregister.ch/de/auftrag/8bfe0530-40d3-46a3-bb57-a3e8b12d
+ 2e5b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: IT-Infrastruktur für Digitale Forensik und Cyber
+ ermittlung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

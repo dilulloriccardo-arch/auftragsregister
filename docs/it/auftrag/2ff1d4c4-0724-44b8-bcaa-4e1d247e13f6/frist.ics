@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2ff1d4c4-0724-44b8-bcaa-4e1d247e13f6-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261104T225900Z
+SUMMARY:Scadenza: Eine Sputter-Abscheidungsanlage\, speziell für die Herst
+ ellung von qualitativ hochwertigen supraleitenden Dünnschichten
+DESCRIPTION:Ente pubblico: EPFL-Scientific Equipment\nScadenza: 04.11.2026\
+ , 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/2ff1d4c4-072
+ 4-44b8-bcaa-4e1d247e13f6/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/2ff1d4c4-0724-44b8-bcaa-4e1d247e13f6
+URL:https://auftragsregister.ch/it/auftrag/2ff1d4c4-0724-44b8-bcaa-4e1d247e
+ 13f6/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Eine Sputter-Abscheidungsanlage\, speziell für die H
+ erstellung von qualitativ hochwertigen supraleitenden Dünnschichten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

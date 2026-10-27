@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a67371df-ca3a-4387-ac32-6364fcbaa9d6-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Délai de remise : AIS Integrator Bundle 2026-2
+DESCRIPTION:Acheteur public : Swissgrid AG - Asset & Maintenance\nDélai 
+ de remise : 10.12.2026\, 23 h 59\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/a67371df-ca3a-4387-ac32-6364fcbaa9d6/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/a67371df-ca3a-438
+ 7-ac32-6364fcbaa9d6
+URL:https://auftragsregister.ch/fr/auftrag/a67371df-ca3a-4387-ac32-6364fcba
+ a9d6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AIS Integrator Bundle 2026-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

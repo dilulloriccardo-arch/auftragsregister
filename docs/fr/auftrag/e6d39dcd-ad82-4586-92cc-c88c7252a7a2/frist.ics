@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e6d39dcd-ad82-4586-92cc-c88c7252a7a2-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20270128T150000Z
+SUMMARY:Délai de remise : Beschaffung Kranmodul WAB
+DESCRIPTION:Acheteur public : Wengernalpbahn AG\nDélai de remise : 28.
+ 01.2027\, 16 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/e6d39dcd-ad82-4586-92cc-c88c7252a7a2/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/e6d39dcd-ad82-4586-92cc-c88c7252a7
+ a2
+URL:https://auftragsregister.ch/fr/auftrag/e6d39dcd-ad82-4586-92cc-c88c7252
+ a7a2/
+LOCATION:Lauterbrunnen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Beschaffung Kranmodul WAB
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:066382ef-b0ee-43d7-b66e-8ec2a5356a28-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : Ausschreibung Bedachungen und Spenglerarbeiten
+  / Instandhaltung\, Instandsetzung – KAT.010
+DESCRIPTION:Acheteur public : ETHOS Immobilien GmbH\nDélai de remise :
+  09.11.2026\, 16 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/066382ef-b0ee-43d7-b66e-8ec2a5356a28/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/066382ef-b0ee-43d7-b66e-8ec2a5
+ 356a28
+URL:https://auftragsregister.ch/fr/auftrag/066382ef-b0ee-43d7-b66e-8ec2a535
+ 6a28/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung Bedachungen und Spenglerarbe
+ iten / Instandhaltung\, Instandsetzung – KAT.010
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

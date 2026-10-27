@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ffb3b1b4-13da-42e6-bea6-ed5efba3d0cb-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+SUMMARY:Scadenza: STEP Echallens - CFC 253 - POMP02 - Pompes centrifuges
+DESCRIPTION:Ente pubblico: ASET / Association intercommunale STEP Echallens
+  Talent (TRITON)\nScadenza: 30.11.2026\, 11:00\nNel registro: https://auft
+ ragsregister.ch/it/auftrag/ffb3b1b4-13da-42e6-bea6-ed5efba3d0cb/\nPubblica
+ zione ufficiale: https://www.simap.ch/it/project-detail/ffb3b1b4-13da-42e6
+ -bea6-ed5efba3d0cb
+URL:https://auftragsregister.ch/it/auftrag/ffb3b1b4-13da-42e6-bea6-ed5efba3
+ d0cb/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: STEP Echallens - CFC 253 - POMP02 - Pompes centrifuge
+ s
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

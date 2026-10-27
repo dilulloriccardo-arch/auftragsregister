@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1658eeba-c636-46d0-bd59-38b4ca94cf71-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20270112T225900Z
+SUMMARY:Submission deadline: LEUnet4
+DESCRIPTION:Public buyer: Kanton Zürich Finanzdirektion Amt für Informati
+ k\nSubmission deadline: 12 Jan 2027\, 23:59\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/1658eeba-c636-46d0-bd59-38b4ca94cf71/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/1658eeba-c636-46d0-
+ bd59-38b4ca94cf71
+URL:https://auftragsregister.ch/en/auftrag/1658eeba-c636-46d0-bd59-38b4ca94
+ cf71/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: LEUnet4
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

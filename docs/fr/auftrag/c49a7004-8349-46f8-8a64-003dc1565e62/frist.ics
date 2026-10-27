@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c49a7004-8349-46f8-8a64-003dc1565e62-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261111T225900Z
+SUMMARY:Délai de remise : Location de service de personnel IT Contrat ca
+ dre multi-adjudicataires 12 lots
+DESCRIPTION:Acheteur public : Etablissement d'assurance contre l'incendie
+  et les éléments naturels du canton de Vaud (ECA)\nDélai de remise : 
+ 11.11.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/c49a7004-8349-46f8-8a64-003dc1565e62/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/c49a7004-8349-46f8-8a64-003dc1
+ 565e62
+URL:https://auftragsregister.ch/fr/auftrag/c49a7004-8349-46f8-8a64-003dc156
+ 5e62/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Location de service de personnel IT Contra
+ t cadre multi-adjudicataires 12 lots
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

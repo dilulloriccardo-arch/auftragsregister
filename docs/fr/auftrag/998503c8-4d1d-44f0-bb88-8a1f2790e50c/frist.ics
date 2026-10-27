@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:998503c8-4d1d-44f0-bb88-8a1f2790e50c-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261113T110000Z
+SUMMARY:Délai de remise : Sanierung Alpenstrasse\, Abschnitt Dietlikon- 
+ bis Bürglistrasse\, Dübendorf
+DESCRIPTION:Acheteur public : Stadt Dübendorf\, Abteilung Tiefbau\nDéla
+ i de remise : 13.11.2026\, 12 h 00\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/998503c8-4d1d-44f0-bb88-8a1f2790e50c/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/998503c8-4d1d-4
+ 4f0-bb88-8a1f2790e50c
+URL:https://auftragsregister.ch/fr/auftrag/998503c8-4d1d-44f0-bb88-8a1f2790
+ e50c/
+LOCATION:Dübendorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Alpenstrasse\, Abschnitt Dietlik
+ on- bis Bürglistrasse\, Dübendorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

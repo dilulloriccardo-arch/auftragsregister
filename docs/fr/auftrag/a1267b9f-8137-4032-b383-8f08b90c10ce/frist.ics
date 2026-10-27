@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a1267b9f-8137-4032-b383-8f08b90c10ce-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:1
+DTSTART:20261127T225900Z
+SUMMARY:Délai de remise : MP-130008\, N02 tunnel du Seelisberg\, 2. remi
+ se en état Lot 1.1 Approvisionnement en énergie de moyenne tension
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3 Zofingen\nDélai de remise : 27.11.2026\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/a1
+ 267b9f-8137-4032-b383-8f08b90c10ce/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/a1267b9f-8137-4032-b383-8f08b90c10ce
+URL:https://auftragsregister.ch/fr/auftrag/a1267b9f-8137-4032-b383-8f08b90c
+ 10ce/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-130008\, N02 tunnel du Seelisberg\, 2. 
+ remise en état Lot 1.1 Approvisionnement en énergie de moyenne tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

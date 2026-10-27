@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4ca3e0e3-49f2-4d75-94cc-69eecb2b908c-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Scadenza: Sternenfeld Abbruch Gewerbebauten - BKP 11 Räumungen\, T
+ errainvorbereitungen
+DESCRIPTION:Ente pubblico: Bau- und Verkehrsdepartement des Kantons Basel-S
+ tadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nScade
+ nza: 02.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/4ca3e0e3-49f2-4d75-94cc-69eecb2b908c/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/4ca3e0e3-49f2-4d75-94cc-69eecb2b908c
+URL:https://auftragsregister.ch/it/auftrag/4ca3e0e3-49f2-4d75-94cc-69eecb2b
+ 908c/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sternenfeld Abbruch Gewerbebauten - BKP 11 Räumungen
+ \, Terrainvorbereitungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

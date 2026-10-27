@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b449697a-9d3a-4ca5-b738-c328dcc7156f-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:1
+DTSTART:20261113T093000Z
+SUMMARY:Scadenza: Chemin du Marais
+DESCRIPTION:Ente pubblico: Ribi SA\nScadenza: 13.11.2026\, 10:30\nNel regis
+ tro: https://auftragsregister.ch/it/auftrag/b449697a-9d3a-4ca5-b738-c328dc
+ c7156f/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/b
+ 449697a-9d3a-4ca5-b738-c328dcc7156f
+URL:https://auftragsregister.ch/it/auftrag/b449697a-9d3a-4ca5-b738-c328dcc7
+ 156f/
+LOCATION:Treyvaux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Chemin du Marais
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

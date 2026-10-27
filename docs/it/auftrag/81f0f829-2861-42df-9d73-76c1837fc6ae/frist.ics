@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81f0f829-2861-42df-9d73-76c1837fc6ae-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:1
+DTSTART:20261116T140000Z
+SUMMARY:Scadenza: Rahmenvertrag als Assistent des Bauherrn\, Region West
+DESCRIPTION:Ente pubblico: armasuisse Immobilien\nScadenza: 16.11.2026\, 15
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/81f0f829-2861-42
+ df-9d73-76c1837fc6ae/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/81f0f829-2861-42df-9d73-76c1837fc6ae
+URL:https://auftragsregister.ch/it/auftrag/81f0f829-2861-42df-9d73-76c1837f
+ c6ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenvertrag als Assistent des Bauherrn\, Region Wes
+ t
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

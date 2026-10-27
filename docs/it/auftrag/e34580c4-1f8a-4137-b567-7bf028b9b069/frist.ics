@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e34580c4-1f8a-4137-b567-7bf028b9b069-frist@auftragsregister.ch
+DTSTAMP:20261020T000000Z
+SEQUENCE:0
+DTSTART:20261126T225900Z
+SUMMARY:Scadenza: Gestion des eaux de chaussée et réfection du revêtemen
+ t entre Pramagnon et Grône\, sur la RC no 44 Sion - Bramois - Chippis - S
+ ierre\, sur le territoire de la commune de Grône
+DESCRIPTION:Ente pubblico: Département de la mobilité\, du territoire et 
+ de l'environnement\nScadenza: 26.11.2026\, 23:59\nNel registro: https://au
+ ftragsregister.ch/it/auftrag/e34580c4-1f8a-4137-b567-7bf028b9b069/\nPubbli
+ cazione ufficiale: https://www.simap.ch/it/project-detail/e34580c4-1f8a-41
+ 37-b567-7bf028b9b069
+URL:https://auftragsregister.ch/it/auftrag/e34580c4-1f8a-4137-b567-7bf028b9
+ b069/
+LOCATION:Grône
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gestion des eaux de chaussée et réfection du revêt
+ ement entre Pramagnon et Grône\, sur la RC no 44 Sion - Bramois - Chippis
+  - Sierre\, sur le territoire de la commune de Grône
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

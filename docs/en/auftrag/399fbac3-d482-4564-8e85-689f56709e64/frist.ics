@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:399fbac3-d482-4564-8e85-689f56709e64-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:1
+DTSTART:20261203T140000Z
+SUMMARY:Submission deadline: Erdgas
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB\, Konzerneinkauf 
+ Verbrauchsgüter\nSubmission deadline: 3 Dec 2026\, 15:00\nIn the regist
+ er: https://auftragsregister.ch/en/auftrag/399fbac3-d482-4564-8e85-689f567
+ 09e64/\nOfficial publication: https://www.simap.ch/en/project-detail/399fb
+ ac3-d482-4564-8e85-689f56709e64
+URL:https://auftragsregister.ch/en/auftrag/399fbac3-d482-4564-8e85-689f5670
+ 9e64/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Erdgas
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af90dd5e-1faf-4c49-8949-26e6ec0c3b1d-frist@auftragsregister.ch
+DTSTAMP:20260914T000000Z
+SEQUENCE:0
+DTSTART:20261102T110000Z
+SUMMARY:Submission deadline: ContaiSIS_A1 / Acquisition de containers de pr
+ ogression au feu pour l’école du GSIS
+DESCRIPTION:Public buyer: Centrale municipale d'achat et d'impression de la
+  Ville de Genève\nSubmission deadline: 2 Nov 2026\, 12:00\nIn the regis
+ ter: https://auftragsregister.ch/en/auftrag/af90dd5e-1faf-4c49-8949-26e6ec
+ 0c3b1d/\nOfficial publication: https://www.simap.ch/en/project-detail/af90
+ dd5e-1faf-4c49-8949-26e6ec0c3b1d
+URL:https://auftragsregister.ch/en/auftrag/af90dd5e-1faf-4c49-8949-26e6ec0c
+ 3b1d/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ContaiSIS_A1 / Acquisition de containers d
+ e progression au feu pour l’école du GSIS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

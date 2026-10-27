@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe6f952f-662f-4e3e-a6a3-4fcef204eeb2-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261204T150000Z
+SUMMARY:Submission deadline: KKN l Leuchtenersatz l BKP 232-01 Elektroanlag
+ en
+DESCRIPTION:Public buyer: Hochbauamt Kanton Zürich\, Baubereich B\nSubmiss
+ ion deadline: 4 Dec 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/fe6f952f-662f-4e3e-a6a3-4fcef204eeb2/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/fe6f952f-662f-4e3e-a6a3-4fcef2
+ 04eeb2
+URL:https://auftragsregister.ch/en/auftrag/fe6f952f-662f-4e3e-a6a3-4fcef204
+ eeb2/
+LOCATION:Küsnacht
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: KKN l Leuchtenersatz l BKP 232-01 Elektroa
+ nlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

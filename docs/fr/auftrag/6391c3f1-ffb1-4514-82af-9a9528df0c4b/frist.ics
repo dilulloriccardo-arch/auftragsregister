@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6391c3f1-ffb1-4514-82af-9a9528df0c4b-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Délai de remise : 283.4 Faux-plafonds en bois\, dérives du bois
+DESCRIPTION:Acheteur public : Gemeinde Richterswil / Abteilung Liegenscha
+ ften\nDélai de remise : 07.12.2026\, 12 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/6391c3f1-ffb1-4514-82af-9a9528df0c4
+ b/\nPublication officielle : https://www.simap.ch/fr/project-detail/6391
+ c3f1-ffb1-4514-82af-9a9528df0c4b
+URL:https://auftragsregister.ch/fr/auftrag/6391c3f1-ffb1-4514-82af-9a9528df
+ 0c4b/
+LOCATION:Richterswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 283.4 Faux-plafonds en bois\, dérives du 
+ bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

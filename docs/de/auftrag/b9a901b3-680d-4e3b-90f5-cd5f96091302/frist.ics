@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b9a901b3-680d-4e3b-90f5-cd5f96091302-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261118T100000Z
+SUMMARY:Eingabefrist: Ecole du Mervelet (2369TI) Stores en toile
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 18.11.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/b9a901b3-680d-4e3b-90f5-cd5f96091302/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/b9a901b3-680d-4e3b-90f5-cd5f9609
+ 1302
+URL:https://auftragsregister.ch/de/auftrag/b9a901b3-680d-4e3b-90f5-cd5f9609
+ 1302/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ecole du Mervelet (2369TI) Stores en toile
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

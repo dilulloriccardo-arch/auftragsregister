@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d9420b3-18f7-4060-9e39-1b934c6eb318-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:0
+DTSTART:20261103T160000Z
+SUMMARY:Scadenza: Musik-Akademie Basel – Campus 2040\, Bereich A (Haus 2\
+ , 4 und 7) - BKP 221 Fenster + Aussentüren
+DESCRIPTION:Ente pubblico: Musik-Akademie Basel (ARGE GP MAB Campus 2040)\n
+ Scadenza: 03.11.2026\, 17:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/0d9420b3-18f7-4060-9e39-1b934c6eb318/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/0d9420b3-18f7-4060-9e39-1b934c6eb318
+URL:https://auftragsregister.ch/it/auftrag/0d9420b3-18f7-4060-9e39-1b934c6e
+ b318/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Musik-Akademie Basel – Campus 2040\, Bereich A (Hau
+ s 2\, 4 und 7) - BKP 221 Fenster + Aussentüren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a2bfa83f-599b-47bb-a6b7-60c5e15bf265-frist@auftragsregister.ch
+DTSTAMP:20260908T000000Z
+SEQUENCE:0
+DTSTART:20261028T220000Z
+SUMMARY:Eingabefrist: BKP 298.2 Bauökonomie\, armasuisse Immobilien\, Plan
+ erleistungen Bauökonomie Region Mitte
+DESCRIPTION:Auftraggeber: armasuisse Immobilien\nEingabefrist: 28.10.2026\,
+  23.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a2bfa83f-
+ 599b-47bb-a6b7-60c5e15bf265/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/a2bfa83f-599b-47bb-a6b7-60c5e15bf265
+URL:https://auftragsregister.ch/de/auftrag/a2bfa83f-599b-47bb-a6b7-60c5e15b
+ f265/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 298.2 Bauökonomie\, armasuisse Immobilien\, 
+ Planerleistungen Bauökonomie Region Mitte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

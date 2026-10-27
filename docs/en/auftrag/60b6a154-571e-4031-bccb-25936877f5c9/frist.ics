@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60b6a154-571e-4031-bccb-25936877f5c9-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Submission deadline: UtiLourds_A1 / Achat de 2 véhicules de transp
+ ort et de 2 fourgons atelier pour les besoins des services de la Ville de 
+ Genève
+DESCRIPTION:Public buyer: Centrale municipale d'achat et d'impression de la
+  Ville de Genève\nSubmission deadline: 30 Nov 2026\, 12:00\nIn the regi
+ ster: https://auftragsregister.ch/en/auftrag/60b6a154-571e-4031-bccb-25936
+ 877f5c9/\nOfficial publication: https://www.simap.ch/en/project-detail/60b
+ 6a154-571e-4031-bccb-25936877f5c9
+URL:https://auftragsregister.ch/en/auftrag/60b6a154-571e-4031-bccb-25936877
+ f5c9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: UtiLourds_A1 / Achat de 2 véhicules de tr
+ ansport et de 2 fourgons atelier pour les besoins des services de la Ville
+  de Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

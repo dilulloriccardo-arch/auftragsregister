@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72ce1aea-c312-4528-a7b2-56edb820c786-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:1
+DTSTART:20261112T140000Z
+SUMMARY:Submission deadline: Neubau Klinikum 2\, Phase 1\, SKP 273\, Schrei
+ nerarbeiten-Aufbahrung UG02
+DESCRIPTION:Public buyer: Universitätsspital Basel\nSubmission deadline: 1
+ 2 Nov 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/72ce1aea-c312-4528-a7b2-56edb820c786/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/72ce1aea-c312-4528-a7b2-56edb820c786
+URL:https://auftragsregister.ch/en/auftrag/72ce1aea-c312-4528-a7b2-56edb820
+ c786/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Klinikum 2\, Phase 1\, SKP 273\, Sc
+ hreinerarbeiten-Aufbahrung UG02
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

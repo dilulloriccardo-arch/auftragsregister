@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:783daff1-b9f1-49d2-957f-de7ee302935f-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Scadenza: Steffisburg/Thun\; Lieferung von VRS-T/BLS Druckrohren\, 
+ Formstücken und Armaturen in DN400
+DESCRIPTION:Ente pubblico: Waret AG\nScadenza: 02.11.2026\, 23:59\nNel regi
+ stro: https://auftragsregister.ch/it/auftrag/783daff1-b9f1-49d2-957f-de7ee
+ 302935f/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/
+ 783daff1-b9f1-49d2-957f-de7ee302935f
+URL:https://auftragsregister.ch/it/auftrag/783daff1-b9f1-49d2-957f-de7ee302
+ 935f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Steffisburg/Thun\; Lieferung von VRS-T/BLS Druckrohre
+ n\, Formstücken und Armaturen in DN400
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

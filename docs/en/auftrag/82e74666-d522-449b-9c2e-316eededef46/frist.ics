@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:82e74666-d522-449b-9c2e-316eededef46-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:0
+DTSTART:20261104T110000Z
+SUMMARY:Submission deadline: Mandat pour l’accompagnement du maître d’
+ ouvrage (AMO)
+DESCRIPTION:Public buyer: Hôpital du Jura Infrastructures SA\nSubmission d
+ eadline: 4 Nov 2026\, 12:00\nIn the register: https://auftragsregister.c
+ h/en/auftrag/82e74666-d522-449b-9c2e-316eededef46/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/82e74666-d522-449b-9c2e-316eededef4
+ 6
+URL:https://auftragsregister.ch/en/auftrag/82e74666-d522-449b-9c2e-316eeded
+ ef46/
+LOCATION:Delémont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mandat pour l’accompagnement du maître 
+ d’ouvrage (AMO)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

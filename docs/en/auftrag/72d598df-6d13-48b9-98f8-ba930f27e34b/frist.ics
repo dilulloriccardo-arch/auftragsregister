@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72d598df-6d13-48b9-98f8-ba930f27e34b-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T150000Z
+SUMMARY:Submission deadline: KUE BZZ I 13216 I BKP 597-19 Projektübergeord
+ nete Gleis- und Baugrubenüberwachung
+DESCRIPTION:Public buyer: Hochbauamt\, Baubereich B\nSubmission deadline: 2
+  Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/72d598df-6d13-48b9-98f8-ba930f27e34b/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/72d598df-6d13-48b9-98f8-ba930f27e34b
+URL:https://auftragsregister.ch/en/auftrag/72d598df-6d13-48b9-98f8-ba930f27
+ e34b/
+LOCATION:Uetikon am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: KUE BZZ I 13216 I BKP 597-19 Projektüberg
+ eordnete Gleis- und Baugrubenüberwachung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a8826374-3370-4c52-8c1c-fb5be6d68bb0-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Délai de remise : USZ Campus MITTE 1|2 / BKP 277.30 Reinraum (OV
+ )
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 23.11.2026\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/a8826374-3370-4c52-8c1c-fb5be6d68bb0/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/a8826374-3370-4c52-8c1c-
+ fb5be6d68bb0
+URL:https://auftragsregister.ch/fr/auftrag/a8826374-3370-4c52-8c1c-fb5be6d6
+ 8bb0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : USZ Campus MITTE 1|2 / BKP 277.30 Reinraum
+  (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

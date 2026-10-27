@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ed2ad53-ff52-4c36-b17f-a5f2fb43ecd8-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:1
+DTSTART:20261111T225900Z
+SUMMARY:Délai de remise : Erweiterung Betriebsgebäude AEW Energie AG Rh
+ einfelden
+DESCRIPTION:Acheteur public : AEW Energie AG\nDélai de remise : 11.11.
+ 2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/7ed2ad53-ff52-4c36-b17f-a5f2fb43ecd8/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/7ed2ad53-ff52-4c36-b17f-a5f2fb43ecd8
+URL:https://auftragsregister.ch/fr/auftrag/7ed2ad53-ff52-4c36-b17f-a5f2fb43
+ ecd8/
+LOCATION:Rheinfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erweiterung Betriebsgebäude AEW Energie A
+ G Rheinfelden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5181b882-e4f5-49b4-8edf-509ea273bc56-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261102T225600Z
+SUMMARY:Submission deadline: Neubau Werkhof und Sammelstelle
+DESCRIPTION:Public buyer: Gemeinde Ueberstorf\nSubmission deadline: 2 Nov
+  2026\, 23:56\nIn the register: https://auftragsregister.ch/en/auftrag/51
+ 81b882-e4f5-49b4-8edf-509ea273bc56/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/5181b882-e4f5-49b4-8edf-509ea273bc56
+URL:https://auftragsregister.ch/en/auftrag/5181b882-e4f5-49b4-8edf-509ea273
+ bc56/
+LOCATION:Ueberstorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Werkhof und Sammelstelle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

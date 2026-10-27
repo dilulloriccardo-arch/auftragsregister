@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:accd2e12-b3f9-453c-89ad-606baca9cdcb-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261106T080000Z
+SUMMARY:Scadenza: IWB\, FW Tiefbauarbeiten Zürcherstrasse MP3292
+DESCRIPTION:Ente pubblico: IWB Industrielle Werke Basel\nScadenza: 06.11.20
+ 26\, 09:00\nNel registro: https://auftragsregister.ch/it/auftrag/accd2e12-
+ b3f9-453c-89ad-606baca9cdcb/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/accd2e12-b3f9-453c-89ad-606baca9cdcb
+URL:https://auftragsregister.ch/it/auftrag/accd2e12-b3f9-453c-89ad-606baca9
+ cdcb/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: IWB\, FW Tiefbauarbeiten Zürcherstrasse MP3292
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

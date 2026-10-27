@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da83eb48-b955-4118-b370-15274efdfaba-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261208T140000Z
+SUMMARY:Scadenza: Ertüchtigung der Perrons und Erneuerung der FL – Bahnh
+ of Villeneuve
+DESCRIPTION:Ente pubblico: Chemins de fer fédéraux suisses CFF\, Infrastr
+ ucture – Achats\, Supply Chain et production\, Achats projets de constru
+ ction Région Ouest\nScadenza: 08.12.2026\, 15:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/da83eb48-b955-4118-b370-15274efdfaba/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/da83eb48-b955-4
+ 118-b370-15274efdfaba
+URL:https://auftragsregister.ch/it/auftrag/da83eb48-b955-4118-b370-15274efd
+ faba/
+LOCATION:Villeneuve
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ertüchtigung der Perrons und Erneuerung der FL – B
+ ahnhof Villeneuve
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

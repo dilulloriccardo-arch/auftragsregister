@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab03f175-e76c-4b87-890e-9f4b4fd4d3dc-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART:20261214T130000Z
+SUMMARY:Délai de remise : ROKS TP7 : Lot Turbine
+DESCRIPTION:Acheteur public : Engadiner Kraftwerke AG\nDélai de remise
+  : 14.12.2026\, 14 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/ab03f175-e76c-4b87-890e-9f4b4fd4d3dc/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/ab03f175-e76c-4b87-890e-9f
+ 4b4fd4d3dc
+URL:https://auftragsregister.ch/fr/auftrag/ab03f175-e76c-4b87-890e-9f4b4fd4
+ d3dc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ROKS TP7 : Lot Turbine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

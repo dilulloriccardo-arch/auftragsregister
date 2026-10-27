@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:21686198-2bde-49e5-8cbd-b1ab83a213ad-frist@auftragsregister.ch
+DTSTAMP:20260928T000000Z
+SEQUENCE:0
+DTSTART:20261106T150000Z
+SUMMARY:Scadenza: BKP 230 Elektroanlagen\, Mieterausbau Baarerstrasse 57-59
+ \, Zug
+DESCRIPTION:Ente pubblico: Hochbauamt des Kantons Zug\nScadenza: 06.11.2026
+ \, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/21686198-2b
+ de-49e5-8cbd-b1ab83a213ad/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/21686198-2bde-49e5-8cbd-b1ab83a213ad
+URL:https://auftragsregister.ch/it/auftrag/21686198-2bde-49e5-8cbd-b1ab83a2
+ 13ad/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 230 Elektroanlagen\, Mieterausbau Baarerstrasse 5
+ 7-59\, Zug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

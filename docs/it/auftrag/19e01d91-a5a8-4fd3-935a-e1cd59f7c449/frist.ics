@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:19e01d91-a5a8-4fd3-935a-e1cd59f7c449-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:1
+DTSTART:20261109T150000Z
+SUMMARY:Scadenza: Ausschreibung Heizung\, Sanitär\, Wannenbeschichtungen u
+ nd Spezialarbeiten Sanitär – KAT.003
+DESCRIPTION:Ente pubblico: ETHOS Immobilien GmbH\nScadenza: 09.11.2026\, 16
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/19e01d91-a5a8-4f
+ d3-935a-e1cd59f7c449/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/19e01d91-a5a8-4fd3-935a-e1cd59f7c449
+URL:https://auftragsregister.ch/it/auftrag/19e01d91-a5a8-4fd3-935a-e1cd59f7
+ c449/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung Heizung\, Sanitär\, Wannenbeschichtung
+ en und Spezialarbeiten Sanitär – KAT.003
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a3be5a3f-2807-475e-8ce1-698b989303d0-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261104T150000Z
+SUMMARY:Scadenza: ZGSZ l 45518 l BKP 250-01 Sanitäranlagen
+DESCRIPTION:Ente pubblico: Hochbauamt\, Baubereich B\nScadenza: 04.11.2026\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/a3be5a3f-280
+ 7-475e-8ce1-698b989303d0/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/a3be5a3f-2807-475e-8ce1-698b989303d0
+URL:https://auftragsregister.ch/it/auftrag/a3be5a3f-2807-475e-8ce1-698b9893
+ 03d0/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ZGSZ l 45518 l BKP 250-01 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da882530-be62-4bbc-b984-d56684a1ea67-frist@auftragsregister.ch
+DTSTAMP:20261023T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Scadenza: Umbau ARA Oberseetal zu Pumpwerk - Baumeisterarbeiten u. 
+ Tiefbau
+DESCRIPTION:Ente pubblico: Gemeindeverband ARA Oberseetal\nScadenza: 02.12.
+ 2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/da88253
+ 0-be62-4bbc-b984-d56684a1ea67/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/da882530-be62-4bbc-b984-d56684a1ea67
+URL:https://auftragsregister.ch/it/auftrag/da882530-be62-4bbc-b984-d56684a1
+ ea67/
+LOCATION:Inwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Umbau ARA Oberseetal zu Pumpwerk - Baumeisterarbeiten
+  u. Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

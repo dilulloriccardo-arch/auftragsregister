@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95e086df-fdc5-46d3-b9d2-5e3bb75cf5d8-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261102T225900Z
+SUMMARY:Submission deadline: Procurement of a cryo-confocal fluorescence mi
+ croscope
+DESCRIPTION:Public buyer: Institut für Biochemie und Molekulare Medizin\nS
+ ubmission deadline: 2 Nov 2026\, 23:59\nIn the register: https://auftrag
+ sregister.ch/en/auftrag/95e086df-fdc5-46d3-b9d2-5e3bb75cf5d8/\nOfficial pu
+ blication: https://www.simap.ch/en/project-detail/95e086df-fdc5-46d3-b9d2-
+ 5e3bb75cf5d8
+URL:https://auftragsregister.ch/en/auftrag/95e086df-fdc5-46d3-b9d2-5e3bb75c
+ f5d8/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Procurement of a cryo-confocal fluorescenc
+ e microscope
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

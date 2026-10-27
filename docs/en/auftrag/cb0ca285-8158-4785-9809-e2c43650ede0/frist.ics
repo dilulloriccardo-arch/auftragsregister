@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb0ca285-8158-4785-9809-e2c43650ede0-frist@auftragsregister.ch
+DTSTAMP:20261024T000000Z
+SEQUENCE:0
+DTSTART:20261120T160000Z
+SUMMARY:Submission deadline: Rénovation des Infrastructures du Théâtre B
+ enno Besson - Machinerie et serrurerie scénographie
+DESCRIPTION:Public buyer: Ville d'Yverdon-les-Bains - Service des bâtiment
+ s (BAT)\nSubmission deadline: 20 Nov 2026\, 17:00\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/cb0ca285-8158-4785-9809-e2c43650ede0/\n
+ Official publication: https://www.simap.ch/en/project-detail/cb0ca285-8158
+ -4785-9809-e2c43650ede0
+URL:https://auftragsregister.ch/en/auftrag/cb0ca285-8158-4785-9809-e2c43650
+ ede0/
+LOCATION:Yverdon-les-Bains
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rénovation des Infrastructures du Théât
+ re Benno Besson - Machinerie et serrurerie scénographie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b8bd80a-6057-46af-8f5f-f678433fb629-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261110T110000Z
+SUMMARY:Délai de remise : PV-Anlage Wohnsiedlung Salzweg
+DESCRIPTION:Acheteur public : Elektrizitätswerk der Stadt Zürich (ewz)\
+ nDélai de remise : 10.11.2026\, 12 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/3b8bd80a-6057-46af-8f5f-f678433fb629/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/3b8bd80a-
+ 6057-46af-8f5f-f678433fb629
+URL:https://auftragsregister.ch/fr/auftrag/3b8bd80a-6057-46af-8f5f-f678433f
+ b629/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : PV-Anlage Wohnsiedlung Salzweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

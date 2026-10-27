@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cbd6cc80-5792-4a2c-88f1-ec6b22ce3201-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:1
+DTSTART:20261122T225900Z
+SUMMARY:Scadenza: BKS-2319 Durchführung der Erhebung zu Familien und Gener
+ ationen 2028 und der Erhebung zur Sprache\, Religion und Kultur 2029.
+DESCRIPTION:Ente pubblico: Bundesamt für Statistik\nScadenza: 22.11.2026\,
+  23:59\nNel registro: https://auftragsregister.ch/it/auftrag/cbd6cc80-5792
+ -4a2c-88f1-ec6b22ce3201/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/cbd6cc80-5792-4a2c-88f1-ec6b22ce3201
+URL:https://auftragsregister.ch/it/auftrag/cbd6cc80-5792-4a2c-88f1-ec6b22ce
+ 3201/
+LOCATION:Neuenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKS-2319 Durchführung der Erhebung zu Familien und G
+ enerationen 2028 und der Erhebung zur Sprache\, Religion und Kultur 2029.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

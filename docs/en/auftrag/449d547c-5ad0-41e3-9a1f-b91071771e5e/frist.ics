@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:449d547c-5ad0-41e3-9a1f-b91071771e5e-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261105T150000Z
+SUMMARY:Submission deadline: BAV 80756 SPA Juchhof 3\, Ersatzneubau Gardero
+ bengebäude - BKP 222 Spenglerarbeiten
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 5 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/449d547c-5ad0-41e3-9a1f-b91071771e5e/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/449d547c-5ad0-41e3-9a1f-b91071771e5e
+URL:https://auftragsregister.ch/en/auftrag/449d547c-5ad0-41e3-9a1f-b9107177
+ 1e5e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 80756 SPA Juchhof 3\, Ersatzneubau Gar
+ derobengebäude - BKP 222 Spenglerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

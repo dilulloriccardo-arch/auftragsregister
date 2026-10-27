@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:54561109-8072-4ef9-a35f-92d8b450e9d5-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261113T225900Z
+SUMMARY:Délai de remise : Fernwärme Flawil\, Wärmezentrale - BKP 241/2
+ 42/244/245 Heizungs- und Lüftungsanlagen
+DESCRIPTION:Acheteur public : Technische Betriebe Flawil (TBF)\nDélai de
+  remise : 13.11.2026\, 23 h 59\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/54561109-8072-4ef9-a35f-92d8b450e9d5/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/54561109-8072-4ef9-
+ a35f-92d8b450e9d5
+URL:https://auftragsregister.ch/fr/auftrag/54561109-8072-4ef9-a35f-92d8b450
+ e9d5/
+LOCATION:Flawil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fernwärme Flawil\, Wärmezentrale - BKP 2
+ 41/242/244/245 Heizungs- und Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

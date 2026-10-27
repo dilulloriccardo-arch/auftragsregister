@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d700db96-f055-407f-9996-6e0d60fab6d4-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Submission deadline: Alterssiedlung Tannenbach Instandstellung
+DESCRIPTION:Public buyer: Gemeinde Horgen\nSubmission deadline: 16 Nov 20
+ 26\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/d700db
+ 96-f055-407f-9996-6e0d60fab6d4/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/d700db96-f055-407f-9996-6e0d60fab6d4
+URL:https://auftragsregister.ch/en/auftrag/d700db96-f055-407f-9996-6e0d60fa
+ b6d4/
+LOCATION:Horgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Alterssiedlung Tannenbach Instandstellung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

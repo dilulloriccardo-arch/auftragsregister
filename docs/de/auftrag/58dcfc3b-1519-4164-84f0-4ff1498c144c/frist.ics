@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:58dcfc3b-1519-4164-84f0-4ff1498c144c-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261203T100000Z
+SUMMARY:Eingabefrist: Rénovation / Transformation du CID de Malley / Ascen
+ seur\, monte-charge et travelators
+DESCRIPTION:Auftraggeber: Ville de Lausanne\, Direction des finances et de 
+ la mobilité\, Service de la propreté urbaine (Architram)\nEingabefrist: 
+ 03.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/58dcfc3b-1519-4164-84f0-4ff1498c144c/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/58dcfc3b-1519-4164-84f0-4ff1498c144c
+URL:https://auftragsregister.ch/de/auftrag/58dcfc3b-1519-4164-84f0-4ff1498c
+ 144c/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rénovation / Transformation du CID de Malley / A
+ scenseur\, monte-charge et travelators
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

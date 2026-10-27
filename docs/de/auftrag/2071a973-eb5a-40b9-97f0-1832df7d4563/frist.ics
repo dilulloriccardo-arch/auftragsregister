@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2071a973-eb5a-40b9-97f0-1832df7d4563-frist@auftragsregister.ch
+DTSTAMP:20261021T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Eingabefrist: BVD - Primarschulhaus Christoph Merian\, Sanierung un
+ d Erweiterung\, BKP 276 Innere Abschlüsse Vorhänge
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 30.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/2071a973-eb5a-40b9-97f0-1832df7d4563/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/2071a973-eb5a-40b9-97f0-1832df7d4563
+URL:https://auftragsregister.ch/de/auftrag/2071a973-eb5a-40b9-97f0-1832df7d
+ 4563/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BVD - Primarschulhaus Christoph Merian\, Sanierun
+ g und Erweiterung\, BKP 276 Innere Abschlüsse Vorhänge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

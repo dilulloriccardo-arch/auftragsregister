@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0fcb7ac-26f0-4af1-bb0e-259901c283e6-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Submission deadline: MP-070078 N02 EP18 Balerna\, Lot 202\, travaux
+  préparatoires en tant qu'entrepreneur en bâtiment
+DESCRIPTION:Public buyer: Ufficio federale delle strade USTRA\, divisione i
+ nfrastruttura stradale Est\nSubmission deadline: 9 Dec 2026\, 16:00\nIn 
+ the register: https://auftragsregister.ch/en/auftrag/d0fcb7ac-26f0-4af1-bb
+ 0e-259901c283e6/\nOfficial publication: https://www.simap.ch/en/project-de
+ tail/d0fcb7ac-26f0-4af1-bb0e-259901c283e6
+URL:https://auftragsregister.ch/en/auftrag/d0fcb7ac-26f0-4af1-bb0e-259901c2
+ 83e6/
+LOCATION:Balerna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-070078 N02 EP18 Balerna\, Lot 202\, tra
+ vaux préparatoires en tant qu'entrepreneur en bâtiment
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

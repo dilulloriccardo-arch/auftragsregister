@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fd82bc8c-2e17-4ba3-80e7-cd2d0b59e85b-frist@auftragsregister.ch
+DTSTAMP:20261015T000000Z
+SEQUENCE:0
+DTSTART:20261120T110000Z
+SUMMARY:Submission deadline: Kraftwerk Waldhalde Fachplanung und technische
+  Begleitung der Revision ausgewählter elektromechanischer Teile
+DESCRIPTION:Public buyer: Elektrizitätswerke des Kantons Zürich\nSubmissi
+ on deadline: 20 Nov 2026\, 12:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/fd82bc8c-2e17-4ba3-80e7-cd2d0b59e85b/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/fd82bc8c-2e17-4ba3-80e7-cd2d0b
+ 59e85b
+URL:https://auftragsregister.ch/en/auftrag/fd82bc8c-2e17-4ba3-80e7-cd2d0b59
+ e85b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kraftwerk Waldhalde Fachplanung und techni
+ sche Begleitung der Revision ausgewählter elektromechanischer Teile
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

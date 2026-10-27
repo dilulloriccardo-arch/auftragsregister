@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12f25ad3-594a-4c5a-92cd-2336793eb579-frist@auftragsregister.ch
+DTSTAMP:20261026T000000Z
+SEQUENCE:0
+DTSTART:20261120T080000Z
+SUMMARY:Eingabefrist: Entsorgungspark Adliswil\; Baumeisterarbeiten 2. Teil
+DESCRIPTION:Auftraggeber: Stadt Adliswil Planung Werke\nEingabefrist: 20.11
+ .2026\, 9.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/12f
+ 25ad3-594a-4c5a-92cd-2336793eb579/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/12f25ad3-594a-4c5a-92cd-2336793eb579
+URL:https://auftragsregister.ch/de/auftrag/12f25ad3-594a-4c5a-92cd-2336793e
+ b579/
+LOCATION:Adliswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Entsorgungspark Adliswil\; Baumeisterarbeiten 2. 
+ Teil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

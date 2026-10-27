@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9ccd1a4c-ccfa-4400-8ba2-68316960402d-frist@auftragsregister.ch
+DTSTAMP:20261014T000000Z
+SEQUENCE:0
+DTSTART:20261118T153000Z
+SUMMARY:Submission deadline: BAL / Rénovation de 2 terrains de football et
+  d’un mini-pitch pour le Servette FC
+DESCRIPTION:Public buyer: Office cantonal des Bâtiments - OCBA\nSubmission
+  deadline: 18 Nov 2026\, 16:30\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/9ccd1a4c-ccfa-4400-8ba2-68316960402d/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/9ccd1a4c-ccfa-4400-8ba2-68316960
+ 402d
+URL:https://auftragsregister.ch/en/auftrag/9ccd1a4c-ccfa-4400-8ba2-68316960
+ 402d/
+LOCATION:Vernier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAL / Rénovation de 2 terrains de footbal
+ l et d’un mini-pitch pour le Servette FC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

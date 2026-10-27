@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d29cbe89-ca62-412f-8233-5fb81278a51e-frist@auftragsregister.ch
+DTSTAMP:20260922T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Eingabefrist: Bergün HS God Ars SW 2027\, Holzerei
+DESCRIPTION:Auftraggeber: Forst Albula\nEingabefrist: 30.10.2026\nIm Regist
+ er: https://auftragsregister.ch/de/auftrag/d29cbe89-ca62-412f-8233-5fb8127
+ 8a51e/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/d29cb
+ e89-ca62-412f-8233-5fb81278a51e
+URL:https://auftragsregister.ch/de/auftrag/d29cbe89-ca62-412f-8233-5fb81278
+ a51e/
+LOCATION:Bergün/ Bravuogn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bergün HS God Ars SW 2027\, Holzerei
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

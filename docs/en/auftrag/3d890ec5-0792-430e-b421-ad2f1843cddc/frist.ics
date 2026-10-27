@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d890ec5-0792-430e-b421-ad2f1843cddc-frist@auftragsregister.ch
+DTSTAMP:20261019T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Submission deadline: DSP AdServer Marketing
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB\, Informatik Eink
+ auf\nSubmission deadline: 30 Nov 2026\, 12:00\nIn the register: https://
+ auftragsregister.ch/en/auftrag/3d890ec5-0792-430e-b421-ad2f1843cddc/\nOffi
+ cial publication: https://www.simap.ch/en/project-detail/3d890ec5-0792-430
+ e-b421-ad2f1843cddc
+URL:https://auftragsregister.ch/en/auftrag/3d890ec5-0792-430e-b421-ad2f1843
+ cddc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: DSP AdServer Marketing
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

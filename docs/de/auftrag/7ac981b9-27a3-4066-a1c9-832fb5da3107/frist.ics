@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ac981b9-27a3-4066-a1c9-832fb5da3107-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART:20261112T225900Z
+SUMMARY:Eingabefrist: 13.0435_Bern\, Schänzlihalde 31\, Gesamtsanierung\, 
+ BKP 287 Baureinigung
+DESCRIPTION:Auftraggeber: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nEingabefrist: 12.11.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/7ac981b9-27a3-4066-a1c9-832fb5da3107/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/7ac981b9-27a3-4066-a1
+ c9-832fb5da3107
+URL:https://auftragsregister.ch/de/auftrag/7ac981b9-27a3-4066-a1c9-832fb5da
+ 3107/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 13.0435_Bern\, Schänzlihalde 31\, Gesamtsanierun
+ g\, BKP 287 Baureinigung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

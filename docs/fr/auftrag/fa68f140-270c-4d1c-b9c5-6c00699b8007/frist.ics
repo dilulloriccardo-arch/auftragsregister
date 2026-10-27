@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa68f140-270c-4d1c-b9c5-6c00699b8007-frist@auftragsregister.ch
+DTSTAMP:20260915T000000Z
+SEQUENCE:0
+DTSTART:20261103T150000Z
+SUMMARY:Délai de remise : Restauration parascolaire (lot 1) et préscola
+ ire (lot 2)
+DESCRIPTION:Acheteur public : Commune d'Ecublens - Service de la cohésio
+ n sociale et du logement\nDélai de remise : 03.11.2026\, 16 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/fa68f140-270c-4
+ d1c-b9c5-6c00699b8007/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/fa68f140-270c-4d1c-b9c5-6c00699b8007
+URL:https://auftragsregister.ch/fr/auftrag/fa68f140-270c-4d1c-b9c5-6c00699b
+ 8007/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Restauration parascolaire (lot 1) et prés
+ colaire (lot 2)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4833b904-54f8-46b7-b717-be1e51a0419f-frist@auftragsregister.ch
+DTSTAMP:20261009T000000Z
+SEQUENCE:0
+DTSTART:20261030T225500Z
+SUMMARY:Eingabefrist: Ökologische Aufwertung Mühlbach Titt - Baumeisterar
+ beiten
+DESCRIPTION:Auftraggeber: Stadt Chur\, Tiefbaudienste\nEingabefrist: 30.10.
+ 2026\, 23.55 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/483
+ 3b904-54f8-46b7-b717-be1e51a0419f/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/4833b904-54f8-46b7-b717-be1e51a0419f
+URL:https://auftragsregister.ch/de/auftrag/4833b904-54f8-46b7-b717-be1e51a0
+ 419f/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ökologische Aufwertung Mühlbach Titt - Baumeist
+ erarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

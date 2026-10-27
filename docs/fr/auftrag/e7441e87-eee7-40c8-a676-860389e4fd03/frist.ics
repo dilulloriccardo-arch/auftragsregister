@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7441e87-eee7-40c8-a676-860389e4fd03-frist@auftragsregister.ch
+DTSTAMP:20261027T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Délai de remise : Disjoncteur AIS de Laufenburg
+DESCRIPTION:Acheteur public : Swissgrid AG - Asset & Maintenance\nDélai 
+ de remise : 29.01.2027\, 23 h 59\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/e7441e87-eee7-40c8-a676-860389e4fd03/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/e7441e87-eee7-40c
+ 8-a676-860389e4fd03
+URL:https://auftragsregister.ch/fr/auftrag/e7441e87-eee7-40c8-a676-860389e4
+ fd03/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Disjoncteur AIS de Laufenburg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

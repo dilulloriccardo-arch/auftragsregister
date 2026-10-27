@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0bc7748c-33da-4913-a14c-5790fb180776-frist@auftragsregister.ch
+DTSTAMP:20261005T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Scadenza: Prestations d’appui stratégique et méthodologique\, d
+ ’accompagnement organisationnel et de réalisation de projets pour la mi
+ se en œuvre de la stratégie cantonale de la géoinformation - période 2
+ 027-2029
+DESCRIPTION:Ente pubblico: Direction de l'information du territoire\nScaden
+ za: 16.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/0bc7748c-33da-4913-a14c-5790fb180776/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/0bc7748c-33da-4913-a14c-5790fb180776
+URL:https://auftragsregister.ch/it/auftrag/0bc7748c-33da-4913-a14c-5790fb18
+ 0776/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Prestations d’appui stratégique et méthodologique
+ \, d’accompagnement organisationnel et de réalisation de projets pour l
+ a mise en œuvre de la stratégie cantonale de la géoinformation - pério
+ de 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fd039e7a-1827-4baf-9338-a452b7d6b3c8-frist@auftragsregister.ch
+DTSTAMP:20260917T000000Z
+SEQUENCE:0
+DTSTART:20261029T150000Z
+SUMMARY:Eingabefrist: 13043.10 / 211-01 Baumeisterarbeiten\, Instandsetzung
+  & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontrolle Oberr
+ ieden
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Zürich\nEingabefrist: 29.10.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/fd039
+ e7a-1827-4baf-9338-a452b7d6b3c8/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/fd039e7a-1827-4baf-9338-a452b7d6b3c8
+URL:https://auftragsregister.ch/de/auftrag/fd039e7a-1827-4baf-9338-a452b7d6
+ b3c8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 13043.10 / 211-01 Baumeisterarbeiten\, Instandset
+ zung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontrolle O
+ berrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

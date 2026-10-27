@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e61b91e4-5bc1-4a45-8f79-e968210b4fa7-frist@auftragsregister.ch
+DTSTAMP:20261003T000000Z
+SEQUENCE:0
+DTSTART:20261116T110000Z
+SUMMARY:Délai de remise : Veille médiatique de la ville de Winterthour
+DESCRIPTION:Acheteur public : Stadtkanzlei\nDélai de remise : 16.11.20
+ 26\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/auft
+ rag/e61b91e4-5bc1-4a45-8f79-e968210b4fa7/\nPublication officielle : http
+ s://www.simap.ch/fr/project-detail/e61b91e4-5bc1-4a45-8f79-e968210b4fa7
+URL:https://auftragsregister.ch/fr/auftrag/e61b91e4-5bc1-4a45-8f79-e968210b
+ 4fa7/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Veille médiatique de la ville de Winterth
+ our
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

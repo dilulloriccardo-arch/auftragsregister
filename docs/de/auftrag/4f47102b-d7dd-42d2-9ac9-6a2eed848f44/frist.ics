@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4f47102b-d7dd-42d2-9ac9-6a2eed848f44-frist@auftragsregister.ch
+DTSTAMP:20260923T000000Z
+SEQUENCE:0
+DTSTART:20261028T100000Z
+SUMMARY:Eingabefrist: Collecteur principal Bezanson-Hugues (2359) Démoliti
+ ons\, canalisations\, béton et béton armé
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 28.10.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/4f47102b-d7dd-42d2-9ac9-6a2eed848f44/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/4f47102b-d7dd-42d2-9ac9-6a2eed84
+ 8f44
+URL:https://auftragsregister.ch/de/auftrag/4f47102b-d7dd-42d2-9ac9-6a2eed84
+ 8f44/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Collecteur principal Bezanson-Hugues (2359) Démo
+ litions\, canalisations\, béton et béton armé
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

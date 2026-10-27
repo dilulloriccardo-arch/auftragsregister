@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:180d340d-1986-4459-bcc5-d88271d26908-frist@auftragsregister.ch
+DTSTAMP:20260918T000000Z
+SEQUENCE:0
+DTSTART:20261103T100000Z
+SUMMARY:Scadenza: Assistance à Maitrise d’Ouvrage pour la rénovation de
+  l'immeuble administratif de Montbrillant
+DESCRIPTION:Ente pubblico: FIPOI\nScadenza: 03.11.2026\, 11:00\nNel registr
+ o: https://auftragsregister.ch/it/auftrag/180d340d-1986-4459-bcc5-d88271d2
+ 6908/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/180
+ d340d-1986-4459-bcc5-d88271d26908
+URL:https://auftragsregister.ch/it/auftrag/180d340d-1986-4459-bcc5-d88271d2
+ 6908/
+LOCATION:Rue de Montbrillant\, 94
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Assistance à Maitrise d’Ouvrage pour la rénovatio
+ n de l'immeuble administratif de Montbrillant
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:955f6992-0ff6-47be-b577-1ac58c787510-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261202T224500Z
+SUMMARY:Submission deadline: Betreiben der Gastronomie am Obergericht
+DESCRIPTION:Public buyer: Obergericht des Kantons Zürich\nSubmission deadl
+ ine: 2 Dec 2026\, 23:45\nIn the register: https://auftragsregister.ch/en
+ /auftrag/955f6992-0ff6-47be-b577-1ac58c787510/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/955f6992-0ff6-47be-b577-1ac58c787510
+URL:https://auftragsregister.ch/en/auftrag/955f6992-0ff6-47be-b577-1ac58c78
+ 7510/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Betreiben der Gastronomie am Obergericht
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

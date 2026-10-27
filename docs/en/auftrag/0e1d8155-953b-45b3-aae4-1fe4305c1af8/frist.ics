@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e1d8155-953b-45b3-aae4-1fe4305c1af8-frist@auftragsregister.ch
+DTSTAMP:20261002T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:Submission deadline: Marché de service pour des prestations d'arch
+ itecte (CFC 291)
+DESCRIPTION:Public buyer: Commune de Neyruz (Page Arch.)\nSubmission deadli
+ ne: 11 Jan 2027\nIn the register: https://auftragsregister.ch/en/auftrag
+ /0e1d8155-953b-45b3-aae4-1fe4305c1af8/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/0e1d8155-953b-45b3-aae4-1fe4305c1af8
+URL:https://auftragsregister.ch/en/auftrag/0e1d8155-953b-45b3-aae4-1fe4305c
+ 1af8/
+LOCATION:Neyruz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Marché de service pour des prestations d'
+ architecte (CFC 291)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

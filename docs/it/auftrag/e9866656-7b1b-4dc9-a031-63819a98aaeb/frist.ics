@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9866656-7b1b-4dc9-a031-63819a98aaeb-frist@auftragsregister.ch
+DTSTAMP:20260924T000000Z
+SEQUENCE:1
+DTSTART:20261105T225500Z
+SUMMARY:Scadenza: Elektroinstallationen Hauptsitz AEW
+DESCRIPTION:Ente pubblico: AEW Energie AG\nScadenza: 05.11.2026\, 23:55\nNe
+ l registro: https://auftragsregister.ch/it/auftrag/e9866656-7b1b-4dc9-a031
+ -63819a98aaeb/\nPubblicazione ufficiale: https://www.simap.ch/it/project-d
+ etail/e9866656-7b1b-4dc9-a031-63819a98aaeb
+URL:https://auftragsregister.ch/it/auftrag/e9866656-7b1b-4dc9-a031-63819a98
+ aaeb/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Elektroinstallationen Hauptsitz AEW
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

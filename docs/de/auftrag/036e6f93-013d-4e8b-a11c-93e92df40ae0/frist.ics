@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:036e6f93-013d-4e8b-a11c-93e92df40ae0-frist@auftragsregister.ch
+DTSTAMP:20261007T000000Z
+SEQUENCE:0
+DTSTART:20261108T225500Z
+SUMMARY:Eingabefrist: Beschaffung leichter Brandschutzhelm mit Zubehör
+DESCRIPTION:Auftraggeber: SID - Schutz & Rettung (SRZ)\nEingabefrist: 08.11
+ .2026\, 23.55 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/03
+ 6e6f93-013d-4e8b-a11c-93e92df40ae0/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/036e6f93-013d-4e8b-a11c-93e92df40ae0
+URL:https://auftragsregister.ch/de/auftrag/036e6f93-013d-4e8b-a11c-93e92df4
+ 0ae0/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung leichter Brandschutzhelm mit Zubehör
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

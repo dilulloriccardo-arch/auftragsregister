@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2d9fddb-050e-44c2-8aac-1a14920e4a87-frist@auftragsregister.ch
+DTSTAMP:20261022T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Scadenza: Sanierung & Erweiterung Schulhaus Feldacker\, Mels / BKP 
+ 283.4 Deckenbekleidungen aus Holzwollplatten
+DESCRIPTION:Ente pubblico: Politische Gemeinde Mels\nScadenza: 16.11.2026\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/d2d9fddb-050e-44c2-8a
+ ac-1a14920e4a87/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/d2d9fddb-050e-44c2-8aac-1a14920e4a87
+URL:https://auftragsregister.ch/it/auftrag/d2d9fddb-050e-44c2-8aac-1a14920e
+ 4a87/
+LOCATION:Mels
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung & Erweiterung Schulhaus Feldacker\, Mels / 
+ BKP 283.4 Deckenbekleidungen aus Holzwollplatten
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

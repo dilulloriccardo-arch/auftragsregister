@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:390cdb30-9e68-4c25-bed9-8384e4a366cc-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:1
+DTSTART:20270112T225900Z
+SUMMARY:Submission deadline: (26163) 998 Technikpartner WEB
+DESCRIPTION:Public buyer: Eidgenössisches Nuklearsicherheitsinspektorat EN
+ SI\nSubmission deadline: 12 Jan 2027\, 23:59\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/390cdb30-9e68-4c25-bed9-8384e4a366cc/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/390cdb30-9e68-4c25
+ -bed9-8384e4a366cc
+URL:https://auftragsregister.ch/en/auftrag/390cdb30-9e68-4c25-bed9-8384e4a3
+ 66cc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (26163) 998 Technikpartner WEB
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

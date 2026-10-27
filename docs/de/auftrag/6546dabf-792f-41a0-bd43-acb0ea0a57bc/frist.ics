@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6546dabf-792f-41a0-bd43-acb0ea0a57bc-frist@auftragsregister.ch
+DTSTAMP:20260930T000000Z
+SEQUENCE:0
+DTSTART:20261106T140000Z
+SUMMARY:Eingabefrist: 1301 BKP 283.2 Deckenbekleidungen aus Gips\, Pädagog
+ ische Maturitätsschule Kreuzlingen\, Teilinnensanierung Klostergebäude
+DESCRIPTION:Auftraggeber: Kantonales Hochbauamt Thurgau\nEingabefrist: 06.1
+ 1.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/6
+ 546dabf-792f-41a0-bd43-acb0ea0a57bc/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/6546dabf-792f-41a0-bd43-acb0ea0a57bc
+URL:https://auftragsregister.ch/de/auftrag/6546dabf-792f-41a0-bd43-acb0ea0a
+ 57bc/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 1301 BKP 283.2 Deckenbekleidungen aus Gips\, Päd
+ agogische Maturitätsschule Kreuzlingen\, Teilinnensanierung Klostergebäu
+ de
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

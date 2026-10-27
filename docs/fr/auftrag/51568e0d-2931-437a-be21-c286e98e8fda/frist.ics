@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:51568e0d-2931-437a-be21-c286e98e8fda-frist@auftragsregister.ch
+DTSTAMP:20261016T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 250 S
+ anitärinstallationen
+DESCRIPTION:Acheteur public : Einwohnergemeinde Bremgarten b. Bern (maure
+ r bauleitung gmbh)\nDélai de remise : 27.11.2026\, 23 h 59\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/51568e0d-2931-437a-be
+ 21-c286e98e8fda/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/51568e0d-2931-437a-be21-c286e98e8fda
+URL:https://auftragsregister.ch/fr/auftrag/51568e0d-2931-437a-be21-c286e98e
+ 8fda/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 2
+ 50 Sanitärinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

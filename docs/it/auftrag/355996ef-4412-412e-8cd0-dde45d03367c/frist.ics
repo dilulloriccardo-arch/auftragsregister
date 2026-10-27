@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:355996ef-4412-412e-8cd0-dde45d03367c-frist@auftragsregister.ch
+DTSTAMP:20261012T000000Z
+SEQUENCE:0
+DTSTART:20261106T153000Z
+SUMMARY:Scadenza: Gros oeuvre et maçonnerie - Rénovation du bâtiment PIC
+ TO Avenue Ernest-Pictet 28-30
+DESCRIPTION:Ente pubblico: Etat de Genève\, Département du territoire - D
+ T\, Office Cantonal des bâtiments (OCBA)\nScadenza: 06.11.2026\, 16:30\nN
+ el registro: https://auftragsregister.ch/it/auftrag/355996ef-4412-412e-8cd
+ 0-dde45d03367c/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/355996ef-4412-412e-8cd0-dde45d03367c
+URL:https://auftragsregister.ch/it/auftrag/355996ef-4412-412e-8cd0-dde45d03
+ 367c/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gros oeuvre et maçonnerie - Rénovation du bâtiment
+  PICTO Avenue Ernest-Pictet 28-30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

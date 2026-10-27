@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d202891a-28f6-4c44-8f3c-b336afb32a9a-frist@auftragsregister.ch
+DTSTAMP:20260910T000000Z
+SEQUENCE:0
+DTSTART:20261028T110000Z
+SUMMARY:Délai de remise : Ersatzbeschaffung Tanklöschfahrzeug "Barro 2"
+DESCRIPTION:Acheteur public : Feuerwehr Baar\nDélai de remise : 28.10.
+ 2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/d202891a-28f6-4c44-8f3c-b336afb32a9a/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/d202891a-28f6-4c44-8f3c-b336afb32a9a
+URL:https://auftragsregister.ch/fr/auftrag/d202891a-28f6-4c44-8f3c-b336afb3
+ 2a9a/
+LOCATION:Baar
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatzbeschaffung Tanklöschfahrzeug "Barr
+ o 2"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

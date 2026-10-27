@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a278d7fd-d205-4e74-b58d-3ab6989ae6fc-frist@auftragsregister.ch
+DTSTAMP:20261013T000000Z
+SEQUENCE:0
+DTSTART:20261109T110000Z
+SUMMARY:Scadenza: Kantonsschule Baden\, Gebäude 1 - BKP 23 Elektroanlagen 
+ (Leuchten- & Lampenumbauten)
+DESCRIPTION:Ente pubblico: Immobilien Aargau\nScadenza: 09.11.2026\, 12:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/a278d7fd-d205-4e74-b
+ 58d-3ab6989ae6fc/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/a278d7fd-d205-4e74-b58d-3ab6989ae6fc
+URL:https://auftragsregister.ch/it/auftrag/a278d7fd-d205-4e74-b58d-3ab6989a
+ e6fc/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kantonsschule Baden\, Gebäude 1 - BKP 23 Elektroanla
+ gen (Leuchten- & Lampenumbauten)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

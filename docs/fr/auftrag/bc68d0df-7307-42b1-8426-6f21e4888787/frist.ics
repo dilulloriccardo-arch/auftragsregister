@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc68d0df-7307-42b1-8426-6f21e4888787-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261207T225900Z
+SUMMARY:Délai de remise : (26166) 735 Cours de formation du CIVI Prise e
+ n charge et accompagnement
+DESCRIPTION:Acheteur public : Bundesamt für Zivildienst ZIVI\nDélai de 
+ remise : 07.12.2026\, 23 h 59\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/bc68d0df-7307-42b1-8426-6f21e4888787/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/bc68d0df-7307-42b1-8
+ 426-6f21e4888787
+URL:https://auftragsregister.ch/fr/auftrag/bc68d0df-7307-42b1-8426-6f21e488
+ 8787/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26166) 735 Cours de formation du CIVI Pri
+ se en charge et accompagnement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

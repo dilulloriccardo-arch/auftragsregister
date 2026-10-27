@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e93a3ccf-8204-4ebe-afe1-6ea4da2dc3d7-frist@auftragsregister.ch
+DTSTAMP:20260926T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Délai de remise : Vorratshaltung von Schutzmaterial und Desinfek
+ tionsmitteln
+DESCRIPTION:Acheteur public : ZüriPharm AG\nDélai de remise : 06.11.2
+ 026\nDans le registre : https://auftragsregister.ch/fr/auftrag/e93a3ccf-
+ 8204-4ebe-afe1-6ea4da2dc3d7/\nPublication officielle : https://www.simap
+ .ch/fr/project-detail/e93a3ccf-8204-4ebe-afe1-6ea4da2dc3d7
+URL:https://auftragsregister.ch/fr/auftrag/e93a3ccf-8204-4ebe-afe1-6ea4da2d
+ c3d7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Vorratshaltung von Schutzmaterial und Desi
+ nfektionsmitteln
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

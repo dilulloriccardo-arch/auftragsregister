@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f10ab60c-7797-4030-9140-1035c7e80538-frist@auftragsregister.ch
+DTSTAMP:20261008T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Scadenza: BKP 261 - Lastenaufzug - Thun\, Polygon\, Sanierung Gebä
+ udehülle Haustechnik
+DESCRIPTION:Ente pubblico: armasuisse Immobilien\nScadenza: 19.11.2026\nNel
+  registro: https://auftragsregister.ch/it/auftrag/f10ab60c-7797-4030-9140-
+ 1035c7e80538/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/f10ab60c-7797-4030-9140-1035c7e80538
+URL:https://auftragsregister.ch/it/auftrag/f10ab60c-7797-4030-9140-1035c7e8
+ 0538/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 261 - Lastenaufzug - Thun\, Polygon\, Sanierung G
+ ebäudehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

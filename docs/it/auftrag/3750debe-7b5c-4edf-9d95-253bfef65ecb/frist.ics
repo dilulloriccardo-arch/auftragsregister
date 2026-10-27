@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3750debe-7b5c-4edf-9d95-253bfef65ecb-frist@auftragsregister.ch
+DTSTAMP:20261001T000000Z
+SEQUENCE:1
+DTSTART:20261207T225900Z
+SUMMARY:Scadenza: (26170) 735 Zivi-Ausbildungskurs Sicherheit im Auslandein
+ satz
+DESCRIPTION:Ente pubblico: Bundesamt für Zivildienst ZIVI\nScadenza: 07.12
+ .2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/3750de
+ be-7b5c-4edf-9d95-253bfef65ecb/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/3750debe-7b5c-4edf-9d95-253bfef65ecb
+URL:https://auftragsregister.ch/it/auftrag/3750debe-7b5c-4edf-9d95-253bfef6
+ 5ecb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (26170) 735 Zivi-Ausbildungskurs Sicherheit im Auslan
+ deinsatz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df7bd12a-a409-46a4-9ebc-8be24e8d02eb-frist@auftragsregister.ch
+DTSTAMP:20260825T000000Z
+SEQUENCE:0
+DTSTART:20261109T150000Z
+SUMMARY:Délai de remise : AUH-SAN\, Rénovation du bâtiment administrat
+ if de HKW à Aubrugg\, CPC 215 Façade / Enveloppe du bâtiment
+DESCRIPTION:Acheteur public : Elektrizitätswerk der Stadt Zürich (ewz)\
+ nDélai de remise : 09.11.2026\, 16 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/df7bd12a-a409-46a4-9ebc-8be24e8d02eb/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/df7bd12a-
+ a409-46a4-9ebc-8be24e8d02eb
+URL:https://auftragsregister.ch/fr/auftrag/df7bd12a-a409-46a4-9ebc-8be24e8d
+ 02eb/
+LOCATION:Wallisellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AUH-SAN\, Rénovation du bâtiment adminis
+ tratif de HKW à Aubrugg\, CPC 215 Façade / Enveloppe du bâtiment
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

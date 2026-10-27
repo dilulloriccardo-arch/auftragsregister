@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9b66549-35d1-4888-ace2-ad3d0515e392-frist@auftragsregister.ch
+DTSTAMP:20260925T000000Z
+SEQUENCE:0
+DTSTART:20261028T100000Z
+SUMMARY:Submission deadline: Lausanne 30-32 (2338) Rénovations des install
+ ations électriques
+DESCRIPTION:Public buyer: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nS
+ ubmission deadline: 28 Oct 2026\, 11:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/c9b66549-35d1-4888-ace2-ad3d0515e392/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/c9b66549-35d1-4888-ace2
+ -ad3d0515e392
+URL:https://auftragsregister.ch/en/auftrag/c9b66549-35d1-4888-ace2-ad3d0515
+ e392/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Lausanne 30-32 (2338) Rénovations des ins
+ tallations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

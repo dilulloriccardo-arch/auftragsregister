@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:530fb986-47f6-40d9-b731-8b0dcec2c636-frist@auftragsregister.ch
+DTSTAMP:20260921T000000Z
+SEQUENCE:0
+DTSTART:20261102T103000Z
+SUMMARY:Eingabefrist: Amélioration du passage inférieur de l'Avenue du Mo
+ nt-Blanc en faveur des mobilités douces
+DESCRIPTION:Auftraggeber: Ville de Gland - Service des Infrastructures et d
+ e l'Environnement\nEingabefrist: 02.11.2026\, 11.30 Uhr\nIm Register: htt
+ ps://auftragsregister.ch/de/auftrag/530fb986-47f6-40d9-b731-8b0dcec2c636/\
+ nAmtliche Publikation: https://www.simap.ch/de/project-detail/530fb986-47f
+ 6-40d9-b731-8b0dcec2c636
+URL:https://auftragsregister.ch/de/auftrag/530fb986-47f6-40d9-b731-8b0dcec2
+ c636/
+LOCATION:Gland
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Amélioration du passage inférieur de l'Avenue d
+ u Mont-Blanc en faveur des mobilités douces
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

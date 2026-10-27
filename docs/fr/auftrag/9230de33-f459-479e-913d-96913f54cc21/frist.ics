@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9230de33-f459-479e-913d-96913f54cc21-frist@auftragsregister.ch
+DTSTAMP:20260821T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Délai de remise : NKM 5.2 – Lot « Remplacement du ballast/UBS
+  »\, Renouvellement de la voie ferrée 2029-2033\, Contrat-cadre EG/ET\, 
+ Suisse
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Infrastru
+ ktur - Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\n
+ Délai de remise : 15.01.2027\, 23 h 59\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/9230de33-f459-479e-913d-96913f54cc21/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/9230de33-f
+ 459-479e-913d-96913f54cc21
+URL:https://auftragsregister.ch/fr/auftrag/9230de33-f459-479e-913d-96913f54
+ cc21/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : NKM 5.2 – Lot « Remplacement du ballast
+ /UBS »\, Renouvellement de la voie ferrée 2029-2033\, Contrat-cadre EG/E
+ T\, Suisse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
