@@ -107,13 +107,24 @@ def _value(v) -> str:
     return f"{_q(v, '0.01'):.2f}"
 
 
+def sr_exact(v, cur: str, shown: str) -> str:
+    """The exact amount for screen readers wherever the visible figure is rounded: the title tooltip
+    is all a mouse user needs, and screen readers do not read it (accessibility audit, 13.10.2026).
+    Nothing when the rounded figure already is the exact one."""
+    ex = exact(v, cur)
+    if not ex or _exact_num(v) == shown:
+        return ""
+    return f'<span class="sr"> ({html.escape(ex)})</span>'
+
+
 def money_data(v, cur: str = "CHF") -> str:
     """A rounded amount in running text or a list (HTML), with the exact figure on hover:
     '<data value="331000000.00" title="331’042’118.20 CHF">331 Mio. CHF</data>'."""
     m = money(v, cur)
     if not m:
         return ""
-    return f'<data value="{_value(v)}" title="{html.escape(exact(v, cur))}">{html.escape(m)}</data>'
+    return (f'<data value="{_value(v)}" title="{html.escape(exact(v, cur))}">{html.escape(m)}'
+            f'{sr_exact(v, cur, amount(v))}</data>')
 
 
 def _exact_num(v) -> str:
@@ -151,7 +162,52 @@ def cell(v, cur: str = "CHF", empty_sr: str = "") -> str:
         return "–" + (f'<span class="sr"> {html.escape(empty_sr)}</span>' if empty_sr else "")
     txt = amount(v) if cur == "CHF" else money(v, cur)
     return (f'<data value="{_value(v)}" title="{html.escape(exact(v, cur))}">'
-            f"{html.escape(txt)}</data>")
+            f"{html.escape(txt)}{sr_exact(v, cur, amount(v))}</data>")
+
+
+# A money COLUMN (design step 2, 14.10.2026): one unit per column, stated once in its header. The home's
+# company table read "175 Mio.", "1 Mrd." and "34,2 Mio." one under the other, the company pages
+# "450’000" under "1,2 Mio.": a reader compared lengths of strings, not amounts. unit_for() picks the
+# column's unit from its own values, column_cell() prints every CHF figure in it; the exact amount stays
+# in the tooltip and, wherever the figure is rounded, in the visually hidden text.
+def unit_for(values) -> str:
+    """'k' (thousands, whole numbers) or 'm' (millions, one decimal): millions when the median amount of
+    the column is a million or more, else thousands, so most rows read without a fraction."""
+    vs = sorted(float(v) for v in values if v)
+    if not vs:
+        return "k"
+    h = len(vs) // 2
+    mid = vs[h] if len(vs) % 2 else (vs[h - 1] + vs[h]) / 2
+    return "m" if mid >= 1_000_000 else "k"
+
+
+def scaled(v, unit: str) -> str:
+    """A CHF amount in its column's unit: '450', '1’235' (thousands) or '0,5', '175,0', '1’000,0'
+    (millions, one decimal); a figure that would round to nothing reads '< 1' / '< 0,1', never 0."""
+    v = float(v)
+    if unit == "m":
+        d = _q(v / 1e6, "0.1")
+        if d == 0:
+            return "<" + NBSP + "0" + DEC[LANG] + "1"
+        return _group(int(d)) + DEC[LANG] + f"{d:.1f}".split(".")[1]
+    d = _q(v / 1e3, "1")
+    return "<" + NBSP + "1" if d == 0 else _group(int(d))
+
+
+def column_cell(v, unit: str, cur: str = "CHF", empty_sr: str = "") -> str:
+    """Table cell content (HTML) in a money column: the figure in the column's unit (scaled), the exact
+    amount in the tooltip, and for screen readers too when the figure is rounded. A foreign currency
+    keeps its own rounded amount and code ('1,2 Mio. EUR'): it is not in the column's unit, and says so.
+    Missing: '–' + the reason, visually hidden."""
+    if v is None or not v:
+        return "–" + (f'<span class="sr"> {html.escape(empty_sr)}</span>' if empty_sr else "")
+    ex = html.escape(exact(v, cur))
+    if cur != "CHF":
+        return f'<data value="{_value(v)}" title="{ex}">{html.escape(money(v, cur))}{sr_exact(v, cur, amount(v))}</data>'
+    q = _q(v, "0.01")
+    back = _q(v / 1e6, "0.1") * 1_000_000 if unit == "m" else _q(v / 1e3, "1") * 1000
+    sr = f'<span class="sr"> ({ex})</span>' if q != back else ""
+    return f'<data value="{_value(v)}" title="{ex}">{html.escape(scaled(v, unit))}{sr}</data>'
 
 
 def exact_cell(v, cur: str = "CHF", empty_sr: str = "") -> str:
@@ -164,17 +220,53 @@ def exact_cell(v, cur: str = "CHF", empty_sr: str = "") -> str:
     return f'<data value="{_value(v)}">{html.escape(txt)}</data>'
 
 
+def amount3(v) -> str:
+    """A tile's amount, rounded to three significant digits: '1,01 Mrd.', '12,3 Mio.', '506’000', a zero
+    fraction dropped ('1 Mrd.' is exactly 1,00). The Implenia page read '1 Mrd.' beside the home's
+    '1’005,3' (Mio. CHF) for the same sum (step 3a, 14.10.2026). Below 1’000 as amount()."""
+    if v is None or not v:
+        return ""
+    v = float(v)
+    if v < 999.5:
+        return amount(v)
+    d = Decimal(str(v))
+    r = d.quantize(Decimal(1).scaleb(d.adjusted() - 2), rounding=ROUND_HALF_UP)
+    mn, bn = UNITS[LANG]
+    sep = "" if LANG == "en" else NBSP
+    if r < 1_000_000:
+        return _group(int(r))
+    x, unit = (r / Decimal(1_000_000_000), bn) if r >= 1_000_000_000 else (r / Decimal(1_000_000), mn)
+    s = f"{x:f}"
+    if "." in s:
+        s = s.rstrip("0").rstrip(".")
+    whole, _dot, frac = s.partition(".")
+    return _group(int(whole)) + (DEC[LANG] + frac if frac else "") + sep + unit
+
+
 def tile(v, cur: str = "CHF") -> str:
-    """KPI tile value (HTML): number big, currency small. '<span class="n">992 Mio.</span> <small>CHF</small>'
+    """KPI tile value (HTML): number big, unit and currency small. '<span class="n">992</span> <small>Mio. CHF</small>'
     / '<small>CHF </small><span class="n">992m</span>'. The number and its unit never break; on a
-    narrow tile the currency moves to the next line as a whole word (an ordinary space before it)."""
-    a = amount(v)
+    narrow tile the currency moves to the next line as a whole word (an ordinary space before it).
+    Three significant digits (amount3) since step 3a."""
+    a = amount3(v)
     if not a:
         return ""
     t = f'<data value="{_value(v)}" title="{html.escape(exact(v, cur))}">'
+    sr = sr_exact(v, cur, a)
     if LANG == "en":
-        return t + f'<small>{cur}{NBSP}</small><span class="n">{html.escape(a)}</span></data>'
-    return t + f'<span class="n">{html.escape(a)}</span> <small>{cur}</small></data>'
+        return t + f'<small>{cur}{NBSP}</small><span class="n">{html.escape(a)}</span>{sr}</data>'
+    # fix round 3: one format on every tile, the home's: the figure big, its unit and the currency small ('32,5' over
+    # 'Mrd. CHF'; the canton pages read '8,76 Mrd.' big and 'CHF' small)
+    num, _sp, unit = a.partition(NBSP)
+    return t + f'<span class="n">{html.escape(num)}</span> <small>{html.escape(unit + NBSP if unit else "")}{cur}</small>{sr}</data>'
+
+
+def size(n: int) -> str:
+    """A file size beside a download link: '312 KB', '1,2 MB'; French '312 ko', '1,2 Mo'."""
+    kb, mb = ("ko", "Mo") if LANG == "fr" else ("KB", "MB")
+    if n >= 999_500:
+        return _dec1(_q(n / 1e6, "0.1")) + NBSP + mb
+    return _group(max(1, int(_q(n / 1e3, "1")))) + NBSP + kb
 
 
 def pct(x: float) -> str:

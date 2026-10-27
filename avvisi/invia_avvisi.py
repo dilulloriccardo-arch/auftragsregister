@@ -6,13 +6,16 @@ la lista iscritti (API), si inviano le e-mail (API transazionale) e si cancellan
 Quando gira: chiamato da aggiorna.py subito dopo una pubblicazione verificata, piu' un giro di riserva via
 launchd (ch.auftragsregister.avvisi, 12:30). Legge SOLO dati/gare_pubblicate.json, la copia che aggiorna.py
 scrive quando le pagine sono davvero su GitHub, e prima di inviare aspetta che GitHub Pages le serva: un link
-in una e-mail non punta mai a una pagina che non esiste ancora. Due giri lo stesso giorno sono innocui.
+in una e-mail non punta mai a una pagina che non esiste ancora. Due giri lo stesso giorno sono innocui: ogni
+iscritto riceve al massimo UNA e-mail al giorno (giorno svizzero, 21.10.2026); i bandi trovati dopo la sua e-mail
+del giorno (pagine arrivate tardi, nightly rilanciato) restano non segnati e partono con l'e-mail di domani.
 
 Prerequisiti (una volta, dall'utente): account Brevo gratuito; attributi contatto KANTON / BRANCHE / SPRACHE;
 lista "Avvisi bandi" (id 3) con double opt-in; API key in ~/.brevo_api_key (contacts + transactional).
 
 Stato: avvisi/stato.json (MAI nel repo pubblico: contiene indirizzi; .gitignore copre avvisi/stato.json*) =
-per contatto {"floor", "last", "sent": {id pubblicazione | "P:"+id progetto: data}, "gone"}. Un bando e' nuovo
+per contatto {"floor", "last", "sent": {id pubblicazione | "P:"+id progetto: data}, "gone", "mailed": giorno
+svizzero dell'ultima e-mail di avviso, assente negli stati di prima del 21.10.2026}. Un bando e' nuovo
 se ne' la pubblicazione ne' il progetto sono gia' stati inviati a quel contatto, e' pubblicato da non piu' di
 LOOKBACK_DAYS rispetto al dato piu' recente, non e' scaduto, ha la sua pagina sul sito e corrisponde ai
 filtri. Giorni saltati, nightly falliti, bandi indicizzati in ritardo e invii falliti non fanno perdere nulla,
@@ -29,9 +32,15 @@ nuovo di ieri" scartava proprio quelli, quindi quasi nessun bando sarebbe mai ar
 iscritto vero.
 """
 from __future__ import annotations
-import datetime, fcntl, html, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
+import datetime, fcntl, json, os, pathlib, re, sys, time, urllib.error, urllib.parse, urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+# i cantoni di un bando: lo stesso modulo che usa il sito per le sue liste (kantone.py, nella radice)
+sys.path.insert(0, str(ROOT))
+from kantone import cantons_of  # noqa: E402
+# il modello dell'e-mail (v3, design A2 "Brass", 20.10.2026), accanto a questo file; legge lingue e kantone
+sys.path.insert(0, str(ROOT / "avvisi"))
+import mail_v3  # noqa: E402
 KEYFILE = pathlib.Path.home() / ".brevo_api_key"
 STATE = ROOT / "avvisi" / "stato.json"
 LOG = ROOT / "avvisi" / "avvisi.log"
@@ -40,7 +49,8 @@ DATA = ROOT / "dati" / "gare_pubblicate.json"   # scritto da aggiorna.py solo do
 DOCS = ROOT / "docs"
 SITE = "https://auftragsregister.ch"
 SENDER = {"name": "auftragsregister.ch", "email": "abo@auftragsregister.ch"}
-MAX_PER_MAIL = 100   # righe per e-mail; oltre si mandano piu' e-mail (100 righe ~45 KB, sotto il taglio di Gmail)
+MAX_PER_MAIL = 40    # UNA e-mail al giorno per iscritto, mai piu' (21.10.2026): al massimo 40 bandi in schede, i piu'
+                     # urgenti; gli altri contati ("+ 23 weitere ...") col pulsante verso la lista del sito. ~81 KB
 LOOKBACK_DAYS = 14   # un bando pubblicato fino a 14 giorni prima del dato piu' recente conta ancora come nuovo
 KEEP_SENT_DAYS = 45  # gli id inviati si ricordano 45 giorni
 LIVE_WAIT_S = 480    # attesa massima perche' GitHub Pages serva le pagine appena pubblicate
@@ -170,87 +180,46 @@ def _picks(raw, trim: int = 0) -> set:
     return out or {"ALLE"}
 
 
+def matches(kantone_scelti: set, branche_scelte: set, tender: dict) -> bool:
+    """Pura: il bando corrisponde alle scelte? Cantone: uno qualsiasi dei cantoni sotto cui il sito elenca il
+    bando (kantone.cantons_of: indirizzo dell'ordine + cantoni dei lotti, altrimenti la sede del committente),
+    cosi' l'e-mail e le liste del sito usano lo stesso insieme (passo 3a, 14.10.2026: un bando con i lotti in
+    GE, NE, VD e VS arrivava solo a chi aveva scelto VD, il cantone della sede). Settore: prime due cifre CPV."""
+    ok_k = bool(kantone_scelti & WILDCARD) or bool(set(cantons_of(tender)[0]) & kantone_scelti)
+    ok_b = bool(branche_scelte & WILDCARD) or str(tender.get("cpvCode") or "")[:2] in branche_scelte
+    return ok_k and ok_b
+
+
 def wants(contact: dict, tender: dict) -> bool:
     a = contact.get("attributes", {}) or {}
-    kant = _picks(a.get("KANTON"))
-    bran = _picks(a.get("BRANCHE"), trim=2)
-    ok_k = bool(kant & WILDCARD) or str(tender.get("canton") or "").upper() in kant
-    ok_b = bool(bran & WILDCARD) or str(tender.get("cpvCode") or "")[:2] in bran
-    return ok_k and ok_b
+    return matches(_picks(a.get("KANTON")), _picks(a.get("BRANCHE"), trim=2), tender)
 
 def lang_of(contact: dict) -> str:
     l = str((contact.get("attributes", {}) or {}).get("SPRACHE") or "de").lower()[:2]
     return l if l in ("de", "fr", "it", "en") else "de"
 
-CORR = {"de": "Berichtigung", "fr": "rectificatif", "it": "rettifica", "en": "correction"}
-# (oggetto singolare, oggetto plurale, riga singolare, riga plurale, etichetta scadenza, disiscrizione, luogo)
-T = {
-    "de": ("Neue Ausschreibung für Sie", "Neue Ausschreibungen für Sie", "1 neue Ausschreibung seit {since}",
-           "{n} neue Ausschreibungen seit {since}", "Eingabefrist", "Abmelden", "Ort"),
-    "fr": ("Nouvel appel d'offres pour vous", "Nouveaux appels d'offres pour vous",
-           "1 nouvel appel d'offres depuis le {since}", "{n} nouveaux appels d'offres depuis le {since}",
-           "Délai de remise", "Se désabonner", "Lieu"),
-    "it": ("Nuovo bando per voi", "Nuovi bandi per voi", "1 nuovo bando dal {since}", "{n} nuovi bandi dal {since}",
-           "Termine d'inoltro", "Cancellarsi", "Luogo"),
-    "en": ("New tender for you", "New tenders for you", "1 new tender since {since}", "{n} new tenders since {since}",
-           "Deadline", "Unsubscribe", "Place"),
-}
-_MON = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+def order(rows: list) -> list:
+    """L'ordine dell'e-mail (21.10.2026): prima i piu' urgenti, cioe' la Eingabefrist piu' vicina (giorno, poi ora;
+    senza scadenza in fondo), a parita' di scadenza i piu' nuovi. Le schede sono le prime MAX_PER_MAIL."""
+    def frist(t):
+        raw = str(t.get("offerDeadline") or "").strip()
+        d = mail_v3.iso_day(raw)        # anche 15.12.2026, che come stringa finiva prima di ogni data ISO
+        return (d or "9999-12-31", raw[11:16] if d and raw[10:11] == "T" else "")
+    return sorted(sorted(rows, key=pub_day, reverse=True), key=frist)
 
 
-def fmt_day(iso, lang: str) -> str:
-    """24.09.2026 (de/fr/it, uso svizzero) o 24 Sep 2026 (en); vuoto se non e' una data."""
-    d = str(iso or "")[:10]
-    if not _DAY.match(d):
-        return ""
-    y, m, g = d.split("-")
-    return f"{int(g)} {_MON[int(m) - 1]} {y}" if lang == "en" else f"{g}.{m}.{y}"
-
-
-def fmt_deadline(iso, lang: str) -> str:
-    """La scadenza con l'ora, che per chi consegna un'offerta conta: 20.10.2026, 12:00."""
-    raw = str(iso or "")
-    out = fmt_day(raw, lang)
-    hm = raw[11:16]
-    if out and len(hm) == 5 and hm[2] == ":" and hm != "00:00":
-        out += f", {hm}"
-    return out
-
-FOOT = {"de": ("Quelle", "Datenschutz"), "fr": ("Source", "Protection des données"),
-        "it": ("Fonte", "Protezione dei dati"), "en": ("Source", "Privacy")}
-# simap's API terms (§5) require this sentence, verbatim and in German, wherever its data is passed
-# on: the site's footer always carried it, the e-mails did not (pricing study, 13.10.2026)
-SIMAP_NOTICE = ("Dies ist keine amtliche Veröffentlichung. Massgebend sind die auf der Plattform "
-                "www.simap.ch veröffentlichten Daten.")
-
-
-
-def mail_html(lang: str, rows: list, since: str, total: int = 0, part: int = 1, parts: int = 1):
-    """Mostra TUTTE le righe ricevute: e' il chiamante che divide in parti da MAX_PER_MAIL."""
-    subj1, subjn, head1, headn, dl, foot, place = T[lang]
-    total = total or len(rows)
-    items = []
-    for t in rows:
-        url = f"{SITE}/{lang}/auftrag/{t.get('projectId')}/"
-        bits = [html.escape(str(t.get("buyerName") or ""))]
-        if t.get("canton"):
-            bits.append(f'{place} {html.escape(str(t.get("canton")))}')
-        dline = fmt_deadline(t.get("offerDeadline"), lang)
-        if dline:
-            bits.append(f"{dl} {html.escape(dline)}")
-        if t.get("corrected"):
-            bits.append(CORR[lang])
-        items.append(f'<li style="margin:0 0 10px"><a href="{url}">{html.escape(str(t.get("title") or ""))}</a><br>'
-                     f'<span style="color:#555">{" · ".join(b for b in bits if b)}</span></li>')
-    tag = f" ({part}/{parts})" if parts > 1 else ""
-    head = (head1 if total == 1 else headn).format(n=total, since=fmt_day(since, lang) or since)
-    body = (f'<p>{head}{tag}</p><ul style="padding-left:18px">{"".join(items)}</ul>'
-            f'<p style="color:#777;font-size:12px">auftragsregister.ch — {FOOT[lang][0]}: simap.ch · '
-            f'<a href="{{{{ unsubscribe }}}}" style="color:#777">{foot}</a> · '
-            f'<a href="{SITE}/{lang}/datenschutz/" style="color:#777">{FOOT[lang][1]}</a></p>'
-            f'<p style="color:#777;font-size:11px">{SIMAP_NOTICE}</p>')
-    subject = subj1 if total == 1 else f"{subjn} ({total})"
-    return subject + tag, body
+def message(email: str, contact: dict, lang: str, rows: list, since: str, today: str) -> dict:
+    """L'UNICA e-mail del giorno per un iscritto, pronta per Brevo: modello v3 (mail_v3.py), i primi MAX_PER_MAIL
+    bandi in ordine di urgenza come schede, gli altri contati in una riga col pulsante verso la lista del sito.
+    Mai divisa: se 40 schede portassero l'HTML oltre i 100 KB (titoli lunghissimi) ne mostra meno e conta il
+    resto. Pro spento. Pura: non invia nulla, non tocca lo stato."""
+    rows = order(rows)
+    n = mail_v3.fit(lang, rows, since, contact, today, cap=MAX_PER_MAIL)
+    subject, body = mail_v3.render(lang, rows, since, contact, today, cap=n, pro=False)
+    return {"sender": SENDER, "to": [{"email": email, "contactPixelTrackingConsent": False}],
+            "subject": subject, "htmlContent": body,
+            "textContent": mail_v3.render_text(lang, rows, since, contact, today, cap=n, pro=False)}
 
 
 def pub_day(t) -> str:
@@ -288,22 +257,33 @@ def day(iso: str, delta: int = 0) -> str:
     return (datetime.date.fromisoformat(iso) + datetime.timedelta(days=delta)).isoformat()
 
 
+def oggi_ch() -> str:
+    """Il giorno di "una e-mail al giorno": la data in Svizzera, anche se il Mac fosse su un altro fuso."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.datetime.now(ZoneInfo("Europe/Zurich")).date().isoformat()
+    except Exception:          # niente banca dati dei fusi: la data locale (il Mac e' a Zurigo)
+        return datetime.date.today().isoformat()
+
+
 def contact_state(raw, hw: str) -> dict:
-    """Lo stato di un contatto, anche dal vecchio formato (una data) o da una voce rovinata."""
+    """Lo stato di un contatto, anche dal vecchio formato (una data) o da una voce rovinata. "mailed" (il giorno
+    svizzero dell'ultima e-mail) manca negli stati di prima del 21.10.2026 o e' rovinato: None, nessuna e-mail oggi."""
     try:
         if isinstance(raw, dict) and raw.get("floor"):
             floor = str(raw["floor"])[:10]; day(floor)
             sent = raw.get("sent") if isinstance(raw.get("sent"), dict) else {}
             sent = {str(k): str(v)[:10] for k, v in sent.items() if _DAY.match(str(v)[:10])}
             last = str(raw.get("last"))[:10] if raw.get("last") else None
+            mailed = str(raw.get("mailed") or "")[:10]
             return {"floor": floor, "last": last if last and _DAY.match(last) else None,
-                    "sent": sent, "gone": raw.get("gone")}
+                    "sent": sent, "gone": raw.get("gone"), "mailed": mailed if _DAY.match(mailed) else None}
         if isinstance(raw, str) and _DAY.match(raw[:10]):
             d = day(raw[:10], -1)   # il vecchio formato salvava "oggi" su dati di ieri
-            return {"floor": d, "last": d, "sent": {}, "gone": None}
+            return {"floor": d, "last": d, "sent": {}, "gone": None, "mailed": None}
     except (ValueError, TypeError):
         pass
-    return {"floor": hw, "last": None, "sent": {}, "gone": None}   # nuovo: parte dal giorno piu' recente
+    return {"floor": hw, "last": None, "sent": {}, "gone": None, "mailed": None}   # nuovo: dal giorno piu' recente
 
 
 def select(contact: dict, rows_all: list, st: dict, hw: str, today: str, lang: str) -> list:
@@ -387,6 +367,38 @@ def only_live(plan: list) -> list:
                 keep.append(t)
         out.append((email, c, st, lang, keep))
     return out
+
+
+def deliver(plan: list, work: dict, hw: str, today: str, oggi: str) -> tuple:
+    """L'invio: per ogni iscritto UNA e-mail al giorno (oggi = giorno svizzero, oggi_ch()), mai di piu'. Chi l'ha gia'
+    ricevuta oggi (secondo giro, pagine arrivate tardi, nightly rilanciato) aspetta: nulla segnato, "last" fermo
+    all'ultima e-mail, e domani i suoi bandi partono insieme ai nuovi (al massimo 40 schede piu' "+ N").
+    Ritorna (inviati, senza novita', errori, rinviati a domani)."""
+    sent = skipped = failed = later = 0
+    for email, c, st, lang, rows in plan:
+        try:
+            if rows and st.get("mailed") == oggi:
+                later += 1
+            else:
+                if rows:
+                    since = st["last"] or day(st["floor"], -1)
+                    api("POST", "/smtp/email", message(email, c, lang, rows, since, today))   # una sola e-mail
+                    for t in rows:   # segnato solo cio' che e' davvero partito: le schede E i bandi contati nel "+ N"
+                        for k in keys_of(t):   # (annunciati e sul sito: domani non tornano come "nuovi")
+                            st["sent"][k] = pub_day(t)
+                    st["mailed"] = oggi
+                    save_state(work)
+                    sent += 1
+                else:
+                    skipped += 1
+                st["last"] = hw
+        except Exception as e:
+            failed += 1
+            detail = e.read().decode(errors="replace")[:160] if isinstance(e, urllib.error.HTTPError) else str(e)[:160]
+            say(f"errore invio a {mask(email)}: {type(e).__name__} {detail}")   # riprovato al prossimo giro
+        keep = day(hw, -KEEP_SENT_DAYS)
+        st["sent"] = {k: d for k, d in st["sent"].items() if d >= keep}
+    return sent, skipped, failed, later
 
 
 def main() -> int:
@@ -500,33 +512,10 @@ def main() -> int:
         say("il sito non serve ancora le pagine nuove: invio rimandato al prossimo giro"); return 0
     plan = only_live(plan)
 
-    sent = skipped = failed = 0
-    for email, c, st, lang, rows in plan:
-        try:
-            if rows:
-                since = st["last"] or day(st["floor"], -1)
-                parts = [rows[i:i + MAX_PER_MAIL] for i in range(0, len(rows), MAX_PER_MAIL)]
-                for n, part in enumerate(parts, 1):
-                    subj, body = mail_html(lang, part, since, len(rows), n, len(parts))
-                    api("POST", "/smtp/email", {"sender": SENDER,
-                                                "to": [{"email": email, "contactPixelTrackingConsent": False}],
-                                                "subject": subj, "htmlContent": body})
-                    for t in part:           # segnato solo cio' che e' davvero partito
-                        for k in keys_of(t):
-                            st["sent"][k] = pub_day(t)
-                    save_state(work)
-                sent += 1
-            else:
-                skipped += 1
-            st["last"] = hw
-        except Exception as e:
-            failed += 1
-            detail = e.read().decode(errors="replace")[:160] if isinstance(e, urllib.error.HTTPError) else str(e)[:160]
-            say(f"errore invio a {mask(email)}: {type(e).__name__} {detail}")   # riprovato al prossimo giro
-        keep = day(hw, -KEEP_SENT_DAYS)
-        st["sent"] = {k: d for k, d in st["sent"].items() if d >= keep}
+    sent, skipped, failed, later = deliver(plan, work, hw, today, oggi_ch())
     save_state(work)
     say(f"inviati {sent}, senza novita' {skipped}, errori {failed}, dati fino al {hw}"
+        + (f", rinviati a domani {later} (e-mail di oggi gia' partita)" if later else "")
         + (f", dati cancellati per {gone_now} disiscritti" if gone_now else ""))
     return 0
 

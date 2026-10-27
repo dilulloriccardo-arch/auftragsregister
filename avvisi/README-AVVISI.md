@@ -1,4 +1,4 @@
-# Avvisi bandi — come funziona (attivo dal 18.9.2026, riscritto il 24.9.2026)
+# Avvisi bandi — come funziona (attivo dal 18.9.2026, riscritto il 24.9.2026, e-mail v3 dal 21.10.2026)
 
 Tutto automatico, gratis (Brevo piano Free: 300 e-mail/giorno). Nessun passo manuale per le iscrizioni.
 
@@ -15,8 +15,12 @@ Tutto automatico, gratis (Brevo piano Free: 300 e-mail/giorno). Nessun passo man
    `dati/gare_pubblicate.json` (la copia che il nightly scrive quando le pagine sono su GitHub), aspetta che GitHub Pages
    serva le pagine e manda a ogni contatto della lista 3 i bandi che non ha ancora ricevuto (per pubblicazione e per
    progetto: le rettifiche non si riannunciano), pubblicati da non piu' di 14 giorni, non scaduti, con la loro pagina sul
-   sito, che corrispondono a cantone/settore. Piu' di 100 bandi = piu' e-mail da 100. Nessuna novita' = nessuna e-mail.
-   Due giri lo stesso giorno sono innocui. Stato per contatto in `avvisi/stato.json` (mai nel repo: `.gitignore`).
+   sito, che corrispondono a cantone/settore. **Una sola e-mail al giorno per iscritto**, mai divisa in parti (vedi
+   «L'e-mail» qui sotto). Nessuna novita' = nessuna e-mail. Due giri lo stesso giorno sono innocui: chi ha gia' ricevuto
+   l'e-mail del giorno (giorno svizzero) non ne riceve una seconda; i bandi trovati dopo (pagine arrivate tardi, nightly
+   rilanciato) restano non segnati e partono con l'e-mail del giorno dopo. Un invio fallito non conta: si riprova al giro
+   dopo, anche lo stesso giorno. Stato per contatto in `avvisi/stato.json` (mai nel repo: `.gitignore`), con `mailed` =
+   giorno dell'ultima e-mail (gli stati scritti prima del 21.10.2026 non ce l'hanno e valgono "nessuna e-mail oggi").
 4. **Disiscrizione**: link in fondo a ogni e-mail (tag Brevo `{{ unsubscribe }}` → blocco transazionale di Brevo). Al giro
    dopo lo script toglie il contatto dalla lista 3, ne svuota KANTON/BRANCHE/SPRACHE e cancella il suo stato locale.
    **Il contatto e il blocco restano a Brevo**: cancellarlo farebbe perdere il blocco, e sbloccare chi si e' disiscritto
@@ -26,9 +30,28 @@ Tutto automatico, gratis (Brevo piano Free: 300 e-mail/giorno). Nessun passo man
    Se un disiscritto risulta modificato dopo il blocco (forse si e' reiscritto) il log lo segnala: decidere a mano entro 7
    giorni se sbloccarlo in Brevo (solo se la nuova iscrizione e' confermata).
 
+## L'e-mail (modello v3, dal 21.10.2026)
+- Modello: `avvisi/mail_v3.py`, design A2 «Brass» approvato il 20.10.2026 (banda nera con il numero dei nuovi bandi e la
+  scelta, schede bianche, pulsante ottone), nella lingua dell'iscritto (SPRACHE). HTML e testo semplice (`textContent`).
+- **Al massimo 40 schede**: i bandi con la Eingabefrist piu' vicina, a parita' i piu' nuovi. Oggetto e banda contano tutti
+  i nuovi bandi, anche quelli senza scheda ("63 neue Ausschreibungen im Kanton Zürich").
+- **Oltre 40**: sotto le schede la riga «+ 23 weitere neue Ausschreibungen auf der Website» (fr «+ 23 autres nouveaux
+  appels d’offres sur le site», it «+ 23 altri nuovi bandi sul sito», en «+ 23 more new tenders on the website») e il
+  pulsante verso la lista del sito filtrata per la scelta: `/{lingua}/ausschreibungen/?k=ZH&b=45&sort=neu` (piu' nuovi
+  prima). La lista filtra un solo cantone e una sola branca: con piu' cantoni o piu' branche resta il filtro possibile.
+  Anche i bandi contati nel «+ N» sono segnati come inviati: annunciati e sul sito, il giorno dopo non tornano.
+- Peso: sotto i 100 KB (40 schede reali: 78-82 KB). Solo con titoli lunghissimi l'e-mail mostra meno schede e conta il
+  resto nel «+ N». Gmail taglia oltre i 102 KB (e nasconde il link di disiscrizione): se Brevo allunga i link per il
+  conteggio dei clic, impostare `PER_LINK` in `mail_v3.py` (byte in piu' per link).
+- Pro: spazio spento (`pro=False`), nessun link a `/pro/`.
+- In fondo: «Abmelden» (`{{ unsubscribe }}`, l'unico tag Brevo), Datenschutz, Impressum, fonte simap.ch e la nota di
+  simap obbligatoria, testuale e in tedesco.
+
 ## Dove guardare
 - Iscritti: Brevo → Contatti → Liste → "Avvisi bandi" (oppure API: `GET /v3/contacts/lists/3/contacts`).
 - Invii: Brevo → Transazionale → Log; log locale `avvisi/avvisi.log` (indirizzi mascherati) e in `aggiorna.log` la riga `avvisi:`.
+  La riga finale di ogni giro: `inviati N, senza novita' N, errori N, dati fino al …`, piu' `rinviati a domani N` se
+  qualcuno aveva gia' ricevuto l'e-mail del giorno.
 - Chiave API: `~/.brevo_api_key` (600). Se manca, lo script salta l'invio senza errori.
 - Modelli e-mail (id 1 double opt-in, 3 conferma finale, 4 disiscrizione): modificabili via API `PUT /v3/smtp/templates/{id}`.
 

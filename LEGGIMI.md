@@ -20,6 +20,7 @@ A 50-150 €/mese bastano 20-40 clienti per CHF 2.000 al mese.
 ## Come si usa
 
     python3 genera.py       # ricostruisce docs/ dai dati in dati/
+    GENERA_TODAY=2026-10-16 python3 genera.py   # idem, come se fosse quel giorno (08:20): per i test
     python3 controlla.py    # link rotti, titoli, description — esce 1 se trova qualcosa
     python3 aggiorna.py     # scarica il nuovo e ricostruisce (è il lavoro notturno)
     ./pubblica.sh           # pubblica su Netlify (i controlli bloccano se falliscono)
@@ -32,6 +33,8 @@ Guardare il sito in locale:
 ## I file
 
     genera.py      il generatore: legge dati/, scrive docs/
+    js/            gli script delle pagine (scadenze dall'orologio del lettore, ricerca, filtri,
+                   avvisi, cantone × branca); genera.py li copia in docs/ con le parole e i dati
     controlla.py   controllo qualità prima della pubblicazione
     aggiorna.py    aggiornamento notturno (mese corrente + precedente + gare aperte)
     pull_storico.py raccolta iniziale dello storico, un mese per volta
@@ -39,6 +42,10 @@ Guardare il sito in locale:
     docs/           il sito generato (si rigenera da zero ogni volta)
     dominio.txt    l'origine canonica, es. https://auftragsregister.ch
     design/        le quattro schermate del progetto grafico
+    fonts/         Instrument Sans e League Gothic (sottoinsiemi woff2, licenze OFL accanto): look A2 "Brass"
+    js/home.js     il movimento della home e la mappa a punti (solo sulle quattro home)
+    reticolo.json  la mappa a punti della Svizzera (confini ufficiali 2026), generata una volta da
+                   reticolo.py; i conteggi per cantone li aggiunge genera.py a ogni build
 
 ## Stato al 29 agosto 2026
 

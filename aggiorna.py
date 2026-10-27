@@ -15,6 +15,7 @@ import http.client
 import json
 import os
 import pathlib
+import re
 import shutil
 import socket
 import subprocess
@@ -315,16 +316,20 @@ def main() -> int:
         lines = (ROOT / "dominio.txt").read_text().strip().splitlines()
         site = lines[0].strip().rstrip("/")
         base = lines[1].strip().rstrip("/") if len(lines) > 1 else ""
+        # Only the changed pages the sitemap lists (step 3a, 14.10.2026): the sitemap is the one list
+        # of indexable pages genera.py writes, so a noindex page — an award, a tender, the abo pages, an
+        # empty tender list — is never submitted, whatever its path. (Path rules let the empty lists
+        # through, and would miss any new noindex page.)
+        in_sitemap = set()
+        for sm in (ROOT / "docs").glob("sitemap-*.xml"):
+            in_sitemap.update(re.findall(r"<loc>([^<]+)</loc>", sm.read_text(encoding="utf-8")))
         urls = []
         for line in st.splitlines():
             f = line[3:].strip().strip('"')
             if f.startswith("docs/") and f.endswith("index.html"):
-                rel = f[len("docs"):-len("index.html")]
-                # award/tender detail pages and the abo pages are noindex: submitting them only
-                # filled the 10'000 cap before the pages that can rank (08.10.2026)
-                if "/auftrag/" in rel or "/abo/" in rel:
-                    continue
-                urls.append(f"{site}{base}{rel}")
+                u = f"{site}{base}{f[len('docs'):-len('index.html')]}"
+                if u in in_sitemap:
+                    urls.append(u)
         if urls:
             r = subprocess.run([sys.executable, str(ROOT / "indexnow.py")],
                                input="\n".join(urls[:10000]), text=True,
