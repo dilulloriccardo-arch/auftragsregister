@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ddb6d87b-ad05-41ae-a3c0-fe295ddc4b6c-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261223T090000Z
+SUMMARY:Submission deadline: L10 – Passerelle Brüglinger Ebene & Neubau 
+ Tramhaltestelle Freilager
+DESCRIPTION:Public buyer: Baselland Transport AG\nSubmission deadline: 23 
+ Dec 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /ddb6d87b-ad05-41ae-a3c0-fe295ddc4b6c/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/ddb6d87b-ad05-41ae-a3c0-fe295ddc4b6c
+URL:https://auftragsregister.ch/en/auftrag/ddb6d87b-ad05-41ae-a3c0-fe295ddc
+ 4b6c/
+LOCATION:Münchenstein
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: L10 – Passerelle Brüglinger Ebene & Neu
+ bau Tramhaltestelle Freilager
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

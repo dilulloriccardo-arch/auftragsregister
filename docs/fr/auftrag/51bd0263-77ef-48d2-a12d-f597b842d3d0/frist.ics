@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:51bd0263-77ef-48d2-a12d-f597b842d3d0-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : MP 1960\; Allschwilerplatz
+DESCRIPTION:Acheteur public : Bau- und Verkehrsdepartement des Kantons Ba
+ sel-Stadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\n
+ Délai de remise : 23.11.2026\, 12 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/51bd0263-77ef-48d2-a12d-f597b842d3d0/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/51bd0263-7
+ 7ef-48d2-a12d-f597b842d3d0
+URL:https://auftragsregister.ch/fr/auftrag/51bd0263-77ef-48d2-a12d-f597b842
+ d3d0/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP 1960\; Allschwilerplatz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

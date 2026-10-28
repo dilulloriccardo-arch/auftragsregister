@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:34d6cf73-2e92-4a71-b35b-cf8c9cad1529-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Scadenza: Schulprovisorium Gönhard\, Aarau
+DESCRIPTION:Ente pubblico: Einwohnergemeinde der Stadt Aarau\, Stadtbauamt\
+ nScadenza: 10.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/34d6cf73-2e92-4a71-b35b-cf8c9cad1529/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/34d6cf73-2e92-4a71-b35b-cf8c9cad152
+ 9
+URL:https://auftragsregister.ch/it/auftrag/34d6cf73-2e92-4a71-b35b-cf8c9cad
+ 1529/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulprovisorium Gönhard\, Aarau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

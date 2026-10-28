@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abce7765-f2b9-4464-afe7-e317ed1234ae-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261208T225900Z
+SUMMARY:Scadenza: Neubau Haus 07B / SKP 241 / Erdwärmesonden
+DESCRIPTION:Ente pubblico: Spitalanlagengesellschaft HOCH Health Ostschweiz
+ \nScadenza: 08.12.2026\, 23:59\nNel registro: https://auftragsregister.ch/
+ it/auftrag/abce7765-f2b9-4464-afe7-e317ed1234ae/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/abce7765-f2b9-4464-afe7-e317ed1234
+ ae
+URL:https://auftragsregister.ch/it/auftrag/abce7765-f2b9-4464-afe7-e317ed12
+ 34ae/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Haus 07B / SKP 241 / Erdwärmesonden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

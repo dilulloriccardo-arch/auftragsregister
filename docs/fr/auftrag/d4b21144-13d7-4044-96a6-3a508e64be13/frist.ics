@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d4b21144-13d7-4044-96a6-3a508e64be13-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Délai de remise : Erneuerung Schulhausstrasse\, Schattdorf
+DESCRIPTION:Acheteur public : Gemeinde Schattdorf\nDélai de remise : 0
+ 1.12.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/d4b21144-13d7-4044-96a6-3a508e64be13/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/d4b21144-13d7-4044-96a6-3a508e
+ 64be13
+URL:https://auftragsregister.ch/fr/auftrag/d4b21144-13d7-4044-96a6-3a508e64
+ be13/
+LOCATION:Schattdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erneuerung Schulhausstrasse\, Schattdorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

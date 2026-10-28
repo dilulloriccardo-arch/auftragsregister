@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9881508-22a8-4262-a74f-bf85c24a644d-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Submission deadline: Fernwärmeversorgung Ostermundigen
+DESCRIPTION:Public buyer: Tiefbau Ostermundigen\nSubmission deadline: 27 N
+ ov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/
+ e9881508-22a8-4262-a74f-bf85c24a644d/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/e9881508-22a8-4262-a74f-bf85c24a644d
+URL:https://auftragsregister.ch/en/auftrag/e9881508-22a8-4262-a74f-bf85c24a
+ 644d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fernwärmeversorgung Ostermundigen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7744e41f-925c-4a8e-b57b-d2aff617e24d-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20270111T225800Z
+SUMMARY:Scadenza: AS25 Lugano-Melide\, binari di giro corsa Parte 2: FASE 1
+  + FASE 2 - Opere da impresario costruttore
+DESCRIPTION:Ente pubblico: Infrastruttura - Progetti di ampliamento e rinno
+ vo - Gestione del progetto - regione sud\nScadenza: 11.01.2027\, 23:58\nNe
+ l registro: https://auftragsregister.ch/it/auftrag/7744e41f-925c-4a8e-b57b
+ -d2aff617e24d/\nPubblicazione ufficiale: https://www.simap.ch/it/project-d
+ etail/7744e41f-925c-4a8e-b57b-d2aff617e24d
+URL:https://auftragsregister.ch/it/auftrag/7744e41f-925c-4a8e-b57b-d2aff617
+ e24d/
+LOCATION:Melide
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AS25 Lugano-Melide\, binari di giro corsa Parte 2: FA
+ SE 1 + FASE 2 - Opere da impresario costruttore
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa4608f2-10b2-4006-98d3-201489ad55c7-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261208T160000Z
+SUMMARY:Scadenza: Umsetzung GEP Massnahmen\, Kanalisationssanierung + Reini
+ gung\, Stadtteil 2 / Schlauchliner nicht begehbar Richtungsänderungen
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 08.12.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/aa4608f2-10b2-4006-98d3-201489ad55c7/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/aa4608f2-10b2-4006-98d3-201489ad55c7
+URL:https://auftragsregister.ch/it/auftrag/aa4608f2-10b2-4006-98d3-201489ad
+ 55c7/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Umsetzung GEP Massnahmen\, Kanalisationssanierung + R
+ einigung\, Stadtteil 2 / Schlauchliner nicht begehbar Richtungsänderungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

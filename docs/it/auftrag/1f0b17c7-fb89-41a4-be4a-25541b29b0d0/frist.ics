@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1f0b17c7-fb89-41a4-be4a-25541b29b0d0-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261111T090000Z
+SUMMARY:Scadenza: QUARTET 2 - Aménagement intérieur pour trois hautes éc
+ oles HES-SO à Genève - CFC 283.4 - Panneaux acoustiques - HETS-HEAD
+DESCRIPTION:Ente pubblico: Service immobilier HES-SO Genève (Itten+Brechbu
+ ̈hl SA)\nScadenza: 11.11.2026\, 10:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/1f0b17c7-fb89-41a4-be4a-25541b29b0d0/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/1f0b17c7-fb89-41a4-be4a-25
+ 541b29b0d0
+URL:https://auftragsregister.ch/it/auftrag/1f0b17c7-fb89-41a4-be4a-25541b29
+ b0d0/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: QUARTET 2 - Aménagement intérieur pour trois hautes
+  écoles HES-SO à Genève - CFC 283.4 - Panneaux acoustiques - HETS-HEAD
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

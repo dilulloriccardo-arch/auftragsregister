@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8e46d626-a1c9-41d2-9b7f-b6fb3d7e9d3c-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Délai de remise : Construction d’un nouvel ESE (Établissement
+  Socio-Éducatif) à Echichens - CFC 242 INSTALLATION CHAUFFAGE
+DESCRIPTION:Acheteur public : Fondation Cité Radieuse (quartal)\nDélai 
+ de remise : 02.12.2026\, 23 h 59\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/8e46d626-a1c9-41d2-9b7f-b6fb3d7e9d3c/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/8e46d626-a1c9-41d
+ 2-9b7f-b6fb3d7e9d3c
+URL:https://auftragsregister.ch/fr/auftrag/8e46d626-a1c9-41d2-9b7f-b6fb3d7e
+ 9d3c/
+LOCATION:Echichens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction d’un nouvel ESE (Établisse
+ ment Socio-Éducatif) à Echichens - CFC 242 INSTALLATION CHAUFFAGE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

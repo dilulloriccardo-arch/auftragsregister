@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:900335ff-3ded-48a7-a453-1b42de64691c-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Eingabefrist: Schule Moosmatt Luzern\, Gesamtsanierung und Erweiter
+ ung\, BKP 216 Natur- und Kunststeinarbeiten
+DESCRIPTION:Auftraggeber: Stadt Luzern\, Baudirektion\, Immobilien\nEingabe
+ frist: 07.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/900335ff-3ded-48a7-a453-1b42de64691c/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/900335ff-3ded-48a7-a453-1b42de64691c
+URL:https://auftragsregister.ch/de/auftrag/900335ff-3ded-48a7-a453-1b42de64
+ 691c/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schule Moosmatt Luzern\, Gesamtsanierung und Erwe
+ iterung\, BKP 216 Natur- und Kunststeinarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d78c18f9-e07e-4428-887c-a57253b869ae-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20270106T170000Z
+SUMMARY:Submission deadline: Mountainbike-Trails am Horneggli\, Gemeinde Sa
+ anen
+DESCRIPTION:Public buyer: Gstaad Saanenland Tourismus (Bike Plan AG)\nSubmi
+ ssion deadline: 6 Jan 2027\, 18:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/d78c18f9-e07e-4428-887c-a57253b869ae/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/d78c18f9-e07e-4428-887c-a572
+ 53b869ae
+URL:https://auftragsregister.ch/en/auftrag/d78c18f9-e07e-4428-887c-a57253b8
+ 69ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mountainbike-Trails am Horneggli\, Gemeind
+ e Saanen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

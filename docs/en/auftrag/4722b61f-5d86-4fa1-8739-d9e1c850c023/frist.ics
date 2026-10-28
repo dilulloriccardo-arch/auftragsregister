@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4722b61f-5d86-4fa1-8739-d9e1c850c023-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Submission deadline: Submission Mobile Endgeräte
+DESCRIPTION:Public buyer: Psychiatrische Universitätsklinik Zürich\nSubmi
+ ssion deadline: 2 Dec 2026\, 12:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/4722b61f-5d86-4fa1-8739-d9e1c850c023/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/4722b61f-5d86-4fa1-8739-d9e1
+ c850c023
+URL:https://auftragsregister.ch/en/auftrag/4722b61f-5d86-4fa1-8739-d9e1c850
+ c023/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Submission Mobile Endgeräte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:382f7770-4e8d-4857-88a8-f5459c2d11e7-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:1
+DTSTART:20270107T225900Z
+SUMMARY:Scadenza: (26200) 104 ARC-27
+DESCRIPTION:Ente pubblico: Bundesamt für Bauten und Logistik BBL\nScadenza
+ : 07.01.2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag
+ /382f7770-4e8d-4857-88a8-f5459c2d11e7/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/382f7770-4e8d-4857-88a8-f5459c2d11e7
+URL:https://auftragsregister.ch/it/auftrag/382f7770-4e8d-4857-88a8-f5459c2d
+ 11e7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (26200) 104 ARC-27
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

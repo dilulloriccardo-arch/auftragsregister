@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bfdeea9f-48ef-4464-93d6-56181c01e5c5-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261111T090000Z
+SUMMARY:Scadenza: Copie QUARTET 2 - Aménagement intérieur pour trois haut
+ es écoles HES-SO à Genève - CFC 281.3 - Revêtements de sols - HETS-HEA
+ D
+DESCRIPTION:Ente pubblico: Service immobilier HES-SO Genève (Itten+Brechbu
+ ̈hl SA)\nScadenza: 11.11.2026\, 10:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/bfdeea9f-48ef-4464-93d6-56181c01e5c5/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/bfdeea9f-48ef-4464-93d6-56
+ 181c01e5c5
+URL:https://auftragsregister.ch/it/auftrag/bfdeea9f-48ef-4464-93d6-56181c01
+ e5c5/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Copie QUARTET 2 - Aménagement intérieur pour trois 
+ hautes écoles HES-SO à Genève - CFC 281.3 - Revêtements de sols - HETS
+ -HEAD
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

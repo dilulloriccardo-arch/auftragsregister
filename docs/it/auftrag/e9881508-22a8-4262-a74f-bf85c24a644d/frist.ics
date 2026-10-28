@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9881508-22a8-4262-a74f-bf85c24a644d-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Scadenza: Fernwärmeversorgung Ostermundigen
+DESCRIPTION:Ente pubblico: Tiefbau Ostermundigen\nScadenza: 27.11.2026\, 12
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/e9881508-22a8-42
+ 62-a74f-bf85c24a644d/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/e9881508-22a8-4262-a74f-bf85c24a644d
+URL:https://auftragsregister.ch/it/auftrag/e9881508-22a8-4262-a74f-bf85c24a
+ 644d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fernwärmeversorgung Ostermundigen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

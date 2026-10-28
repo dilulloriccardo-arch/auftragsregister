@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4722b61f-5d86-4fa1-8739-d9e1c850c023-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Délai de remise : Submission Mobile Endgeräte
+DESCRIPTION:Acheteur public : Psychiatrische Universitätsklinik Zürich\
+ nDélai de remise : 02.12.2026\, 12 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/4722b61f-5d86-4fa1-8739-d9e1c850c023/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/4722b61f-
+ 5d86-4fa1-8739-d9e1c850c023
+URL:https://auftragsregister.ch/fr/auftrag/4722b61f-5d86-4fa1-8739-d9e1c850
+ c023/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Submission Mobile Endgeräte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

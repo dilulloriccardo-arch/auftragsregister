@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce423d04-f5ca-4a10-947a-df92349c74ae-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Eingabefrist: (26007) 810 HydroSys – Entwicklung\, Wartung und Su
+ pport
+DESCRIPTION:Auftraggeber: Bundesamt für Bauten und Logistik BBL\nEingabefr
+ ist: 07.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/ce423d04-f5ca-4a10-947a-df92349c74ae/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/ce423d04-f5ca-4a10-947a-df92349c74ae
+URL:https://auftragsregister.ch/de/auftrag/ce423d04-f5ca-4a10-947a-df92349c
+ 74ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (26007) 810 HydroSys – Entwicklung\, Wartung un
+ d Support
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

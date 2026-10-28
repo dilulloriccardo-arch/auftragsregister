@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2c7ab87-4484-48b7-bcce-10b48a8e4b81-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261218T080000Z
+SUMMARY:Eingabefrist: Begleitete Patiententransporte (S4)
+DESCRIPTION:Auftraggeber: Felix Platter-Spital\nEingabefrist: 18.12.2026\, 
+ 9.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b2c7ab87-44
+ 84-48b7-bcce-10b48a8e4b81/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/b2c7ab87-4484-48b7-bcce-10b48a8e4b81
+URL:https://auftragsregister.ch/de/auftrag/b2c7ab87-4484-48b7-bcce-10b48a8e
+ 4b81/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Begleitete Patiententransporte (S4)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

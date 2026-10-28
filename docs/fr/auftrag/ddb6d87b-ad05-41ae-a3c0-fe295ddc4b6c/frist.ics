@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ddb6d87b-ad05-41ae-a3c0-fe295ddc4b6c-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261223T090000Z
+SUMMARY:Délai de remise : L10 – Construction du pont / de la passerell
+ e de la Brüglinger Ebene et construction de la nouvelle station de tram F
+ reilager
+DESCRIPTION:Acheteur public : Baselland Transport AG\nDélai de remise 
+ : 23.12.2026\, 10 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/ddb6d87b-ad05-41ae-a3c0-fe295ddc4b6c/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/ddb6d87b-ad05-41ae-a3c0-fe295
+ ddc4b6c
+URL:https://auftragsregister.ch/fr/auftrag/ddb6d87b-ad05-41ae-a3c0-fe295ddc
+ 4b6c/
+LOCATION:Münchenstein
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : L10 – Construction du pont / de la passe
+ relle de la Brüglinger Ebene et construction de la nouvelle station de tr
+ am Freilager
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

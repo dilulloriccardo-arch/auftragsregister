@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abce7765-f2b9-4464-afe7-e317ed1234ae-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261208T225900Z
+SUMMARY:Délai de remise : Neubau Haus 07B / SKP 241 / Erdwärmesonden
+DESCRIPTION:Acheteur public : Spitalanlagengesellschaft HOCH Health Ostsc
+ hweiz\nDélai de remise : 08.12.2026\, 23 h 59\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/abce7765-f2b9-4464-afe7-e317ed1234
+ ae/\nPublication officielle : https://www.simap.ch/fr/project-detail/abc
+ e7765-f2b9-4464-afe7-e317ed1234ae
+URL:https://auftragsregister.ch/fr/auftrag/abce7765-f2b9-4464-afe7-e317ed12
+ 34ae/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Haus 07B / SKP 241 / Erdwärmesonde
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

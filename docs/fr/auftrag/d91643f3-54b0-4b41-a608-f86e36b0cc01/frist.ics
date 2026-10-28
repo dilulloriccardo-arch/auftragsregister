@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d91643f3-54b0-4b41-a608-f86e36b0cc01-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Délai de remise : Les Bayards/NE – Construction d’un nouveau
+  poste haute tension
+DESCRIPTION:Acheteur public : Groupe E SA - Service Achat pour les March
+ és publics\nDélai de remise : 25.11.2026\, 12 h 00\nDans le regist
+ re : https://auftragsregister.ch/fr/auftrag/d91643f3-54b0-4b41-a608-f86e
+ 36b0cc01/\nPublication officielle : https://www.simap.ch/fr/project-deta
+ il/d91643f3-54b0-4b41-a608-f86e36b0cc01
+URL:https://auftragsregister.ch/fr/auftrag/d91643f3-54b0-4b41-a608-f86e36b0
+ cc01/
+LOCATION:Les Bayards
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Les Bayards/NE – Construction d’un nou
+ veau poste haute tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

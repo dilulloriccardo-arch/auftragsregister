@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:51bd0263-77ef-48d2-a12d-f597b842d3d0-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Eingabefrist: MP 1960\; Allschwilerplatz
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 23.11.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/51bd0263-77ef-48d2-a12d-f597b842d3d0/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/51bd0263-77ef-48d2-a12d-f597b842d3d0
+URL:https://auftragsregister.ch/de/auftrag/51bd0263-77ef-48d2-a12d-f597b842
+ d3d0/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP 1960\; Allschwilerplatz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

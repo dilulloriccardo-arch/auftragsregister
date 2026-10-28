@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:199fb4ab-befa-4f0e-8c6e-698f51aac663-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261125T140000Z
+SUMMARY:Eingabefrist: 271 01 Gipserarbeiten - Trockenbau
+DESCRIPTION:Auftraggeber: Vollenweider Baurealisation GmbH\nEingabefrist: 2
+ 5.11.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/199fb4ab-befa-4f0e-8c6e-698f51aac663/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/199fb4ab-befa-4f0e-8c6e-698f51aac663
+URL:https://auftragsregister.ch/de/auftrag/199fb4ab-befa-4f0e-8c6e-698f51aa
+ c663/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 271 01 Gipserarbeiten - Trockenbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81c27a65-3c5a-47d7-ab02-4d78657ed91d-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Scadenza: EPFL ASB – AO N°3 – TRI DES DECHETS – MISE EN PLAC
+ E DE BENNE
+DESCRIPTION:Ente pubblico: EPFL VPF ACHATS\nScadenza: 14.12.2026\, 16:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/81c27a65-3c5a-47d7-ab0
+ 2-4d78657ed91d/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/81c27a65-3c5a-47d7-ab02-4d78657ed91d
+URL:https://auftragsregister.ch/it/auftrag/81c27a65-3c5a-47d7-ab02-4d78657e
+ d91d/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EPFL ASB – AO N°3 – TRI DES DECHETS – MISE EN 
+ PLACE DE BENNE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bfdeea9f-48ef-4464-93d6-56181c01e5c5-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261111T090000Z
+SUMMARY:Délai de remise : Copie QUARTET 2 - Aménagement intérieur pour
+  trois hautes écoles HES-SO à Genève - CFC 281.3 - Revêtements de sols
+  - HETS-HEAD
+DESCRIPTION:Acheteur public : Service immobilier HES-SO Genève (Itten+Br
+ echbühl SA)\nDélai de remise : 11.11.2026\, 10 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/bfdeea9f-48ef-4464-93d6-56
+ 181c01e5c5/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/bfdeea9f-48ef-4464-93d6-56181c01e5c5
+URL:https://auftragsregister.ch/fr/auftrag/bfdeea9f-48ef-4464-93d6-56181c01
+ e5c5/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Copie QUARTET 2 - Aménagement intérieur 
+ pour trois hautes écoles HES-SO à Genève - CFC 281.3 - Revêtements de 
+ sols - HETS-HEAD
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

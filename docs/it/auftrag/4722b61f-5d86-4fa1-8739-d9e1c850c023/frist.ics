@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4722b61f-5d86-4fa1-8739-d9e1c850c023-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Scadenza: Submission Mobile Endgeräte
+DESCRIPTION:Ente pubblico: Psychiatrische Universitätsklinik Zürich\nScad
+ enza: 02.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/4722b61f-5d86-4fa1-8739-d9e1c850c023/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/4722b61f-5d86-4fa1-8739-d9e1c850c023
+URL:https://auftragsregister.ch/it/auftrag/4722b61f-5d86-4fa1-8739-d9e1c850
+ c023/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Submission Mobile Endgeräte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:900335ff-3ded-48a7-a453-1b42de64691c-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Délai de remise : École Moosmatt Lucerne\, rénovation complèt
+ e et agrandissement\, BKP 216 Travaux en pierre naturelle et artificielle
+DESCRIPTION:Acheteur public : Stadt Luzern\, Baudirektion\, Immobilien\nD
+ élai de remise : 07.12.2026\, 12 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/900335ff-3ded-48a7-a453-1b42de64691c/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/900335ff-3d
+ ed-48a7-a453-1b42de64691c
+URL:https://auftragsregister.ch/fr/auftrag/900335ff-3ded-48a7-a453-1b42de64
+ 691c/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École Moosmatt Lucerne\, rénovation comp
+ lète et agrandissement\, BKP 216 Travaux en pierre naturelle et artificie
+ lle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c786538c-4e19-463a-9fc1-df5bbe9cbff3-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Submission deadline: Ersatzbeschaffung Pionierfahrzeug Feuerwehr
+DESCRIPTION:Public buyer: Gemeinde Wangen SZ\, Feuerwehr Wangen SZ\nSubmiss
+ ion deadline: 9 Dec 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/c786538c-4e19-463a-9fc1-df5bbe9cbff3/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/c786538c-4e19-463a-9fc1-df5bbe
+ 9cbff3
+URL:https://auftragsregister.ch/en/auftrag/c786538c-4e19-463a-9fc1-df5bbe9c
+ bff3/
+LOCATION:Wangen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatzbeschaffung Pionierfahrzeug Feuerweh
+ r
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

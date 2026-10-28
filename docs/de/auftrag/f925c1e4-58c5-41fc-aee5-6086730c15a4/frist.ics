@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f925c1e4-58c5-41fc-aee5-6086730c15a4-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Eingabefrist: CU-Areal Neubau Werkleitungen\, Entsorgung
+DESCRIPTION:Auftraggeber: Gemeinde Uetikon am See\nEingabefrist: 23.11.2026
+ \, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/f925c1e
+ 4-58c5-41fc-aee5-6086730c15a4/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/f925c1e4-58c5-41fc-aee5-6086730c15a4
+URL:https://auftragsregister.ch/de/auftrag/f925c1e4-58c5-41fc-aee5-6086730c
+ 15a4/
+LOCATION:Uetikon am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CU-Areal Neubau Werkleitungen\, Entsorgung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

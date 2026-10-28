@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d91643f3-54b0-4b41-a608-f86e36b0cc01-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Submission deadline: Les Bayards/NE – Construction d’un nouveau
+  poste haute tension
+DESCRIPTION:Public buyer: Groupe E SA - Service Achat pour les Marchés pub
+ lics\nSubmission deadline: 25 Nov 2026\, 12:00\nIn the register: https:/
+ /auftragsregister.ch/en/auftrag/d91643f3-54b0-4b41-a608-f86e36b0cc01/\nOff
+ icial publication: https://www.simap.ch/en/project-detail/d91643f3-54b0-4b
+ 41-a608-f86e36b0cc01
+URL:https://auftragsregister.ch/en/auftrag/d91643f3-54b0-4b41-a608-f86e36b0
+ cc01/
+LOCATION:Les Bayards
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Les Bayards/NE – Construction d’un nou
+ veau poste haute tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

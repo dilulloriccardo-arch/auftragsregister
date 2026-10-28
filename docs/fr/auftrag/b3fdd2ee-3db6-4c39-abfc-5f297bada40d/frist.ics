@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3fdd2ee-3db6-4c39-abfc-5f297bada40d-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Délai de remise : Acquisition d'un camion-citerne feux de forêt
+ s moyen
+DESCRIPTION:Acheteur public : ECAP - Etablissement Cantonal d'Assurance e
+ t de Prévention (Hymexia Sàrl)\nDélai de remise : 15.12.2026\, 12 h
+  00\nDans le registre : https://auftragsregister.ch/fr/auftrag/b3fdd2e
+ e-3db6-4c39-abfc-5f297bada40d/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/b3fdd2ee-3db6-4c39-abfc-5f297bada40d
+URL:https://auftragsregister.ch/fr/auftrag/b3fdd2ee-3db6-4c39-abfc-5f297bad
+ a40d/
+LOCATION:Fontainemelon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition d'un camion-citerne feux de fo
+ rêts moyen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

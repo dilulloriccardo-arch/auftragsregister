@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d91643f3-54b0-4b41-a608-f86e36b0cc01-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261125T110000Z
+SUMMARY:Scadenza: Les Bayards/NE – Construction d’un nouveau poste haut
+ e tension
+DESCRIPTION:Ente pubblico: Groupe E SA - Service Achat pour les Marchés pu
+ blics\nScadenza: 25.11.2026\, 12:00\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/d91643f3-54b0-4b41-a608-f86e36b0cc01/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/d91643f3-54b0-4b41-a608-f86e3
+ 6b0cc01
+URL:https://auftragsregister.ch/it/auftrag/d91643f3-54b0-4b41-a608-f86e36b0
+ cc01/
+LOCATION:Les Bayards
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Les Bayards/NE – Construction d’un nouveau poste 
+ haute tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:199fb4ab-befa-4f0e-8c6e-698f51aac663-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261125T140000Z
+SUMMARY:Délai de remise : 271 01 Gipserarbeiten - Trockenbau
+DESCRIPTION:Acheteur public : Vollenweider Baurealisation GmbH\nDélai de
+  remise : 25.11.2026\, 15 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/199fb4ab-befa-4f0e-8c6e-698f51aac663/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/199fb4ab-befa-4f0e-
+ 8c6e-698f51aac663
+URL:https://auftragsregister.ch/fr/auftrag/199fb4ab-befa-4f0e-8c6e-698f51aa
+ c663/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 271 01 Gipserarbeiten - Trockenbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

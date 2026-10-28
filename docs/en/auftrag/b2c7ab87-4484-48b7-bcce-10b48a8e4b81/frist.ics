@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2c7ab87-4484-48b7-bcce-10b48a8e4b81-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261218T080000Z
+SUMMARY:Submission deadline: Non-emergency patient transport services
+DESCRIPTION:Public buyer: Felix Platter-Spital\nSubmission deadline: 18 De
+ c 2026\, 09:00\nIn the register: https://auftragsregister.ch/en/auftrag/b
+ 2c7ab87-4484-48b7-bcce-10b48a8e4b81/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/b2c7ab87-4484-48b7-bcce-10b48a8e4b81
+URL:https://auftragsregister.ch/en/auftrag/b2c7ab87-4484-48b7-bcce-10b48a8e
+ 4b81/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Non-emergency patient transport services
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

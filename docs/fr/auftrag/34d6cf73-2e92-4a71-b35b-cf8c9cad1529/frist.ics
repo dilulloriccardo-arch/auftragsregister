@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:34d6cf73-2e92-4a71-b35b-cf8c9cad1529-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Délai de remise : Schulprovisorium Gönhard\, Aarau
+DESCRIPTION:Acheteur public : Einwohnergemeinde der Stadt Aarau\, Stadtba
+ uamt\nDélai de remise : 10.12.2026\, 16 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/34d6cf73-2e92-4a71-b35b-cf8c9cad152
+ 9/\nPublication officielle : https://www.simap.ch/fr/project-detail/34d6
+ cf73-2e92-4a71-b35b-cf8c9cad1529
+URL:https://auftragsregister.ch/fr/auftrag/34d6cf73-2e92-4a71-b35b-cf8c9cad
+ 1529/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Schulprovisorium Gönhard\, Aarau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

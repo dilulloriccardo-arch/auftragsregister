@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87dc913c-0987-492b-93d0-cfad2c483e25-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261207T090000Z
+SUMMARY:Délai de remise : Complexe scolaire de Rothus - CFC 900.1 Mobili
+ er scolaire\, pédagogique et administratif
+DESCRIPTION:Acheteur public : Confirm AG\nDélai de remise : 07.12.2026
+ \, 10 h 00\nDans le registre : https://auftragsregister.ch/fr/auftra
+ g/87dc913c-0987-492b-93d0-cfad2c483e25/\nPublication officielle : https:
+ //www.simap.ch/fr/project-detail/87dc913c-0987-492b-93d0-cfad2c483e25
+URL:https://auftragsregister.ch/fr/auftrag/87dc913c-0987-492b-93d0-cfad2c48
+ 3e25/
+LOCATION:Bollingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Complexe scolaire de Rothus - CFC 900.1 Mo
+ bilier scolaire\, pédagogique et administratif
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

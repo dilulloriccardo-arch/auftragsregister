@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:530bc54b-eb31-457d-bc86-6d4c698debc5-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Eingabefrist: CU-Areal Neubau Werkleitungen\, Baumeisterarbeiten
+DESCRIPTION:Auftraggeber: Gemeinde Uetikon am See\nEingabefrist: 23.11.2026
+ \, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/530bc54
+ b-eb31-457d-bc86-6d4c698debc5/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/530bc54b-eb31-457d-bc86-6d4c698debc5
+URL:https://auftragsregister.ch/de/auftrag/530bc54b-eb31-457d-bc86-6d4c698d
+ ebc5/
+LOCATION:Uetikon am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CU-Areal Neubau Werkleitungen\, Baumeisterarbeite
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

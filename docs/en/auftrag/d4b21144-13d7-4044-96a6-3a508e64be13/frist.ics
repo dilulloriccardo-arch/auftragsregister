@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d4b21144-13d7-4044-96a6-3a508e64be13-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261201T150000Z
+SUMMARY:Submission deadline: Erneuerung Schulhausstrasse\, Schattdorf
+DESCRIPTION:Public buyer: Gemeinde Schattdorf\nSubmission deadline: 1 Dec
+  2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/d4
+ b21144-13d7-4044-96a6-3a508e64be13/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/d4b21144-13d7-4044-96a6-3a508e64be13
+URL:https://auftragsregister.ch/en/auftrag/d4b21144-13d7-4044-96a6-3a508e64
+ be13/
+LOCATION:Schattdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Erneuerung Schulhausstrasse\, Schattdorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

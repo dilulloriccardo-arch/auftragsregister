@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d890c7fe-d96d-4879-b5bd-a2a0763b50b4-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Délai de remise : (b26045-11) Rümlang\, Heuelstrasse 100\, CFA 
+ Rümlang / CFC 244
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 09.12.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/d890c7fe-d96d-4879-b5bd-a2a0763b50b4/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/d890c7fe-d96d
+ -4879-b5bd-a2a0763b50b4
+URL:https://auftragsregister.ch/fr/auftrag/d890c7fe-d96d-4879-b5bd-a2a0763b
+ 50b4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (b26045-11) Rümlang\, Heuelstrasse 100\, 
+ CFA Rümlang / CFC 244
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

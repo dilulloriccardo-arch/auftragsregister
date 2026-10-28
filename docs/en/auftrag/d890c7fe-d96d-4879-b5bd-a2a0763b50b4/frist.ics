@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d890c7fe-d96d-4879-b5bd-a2a0763b50b4-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Submission deadline: (b26045-11) Rümlang\, Heuelstrasse 100\, BAZ 
+ Rümlang / BKP 244
+DESCRIPTION:Public buyer: Bundesamt für Bauten und Logistik BBL\nSubmissio
+ n deadline: 9 Dec 2026\, 23:59\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/d890c7fe-d96d-4879-b5bd-a2a0763b50b4/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/d890c7fe-d96d-4879-b5bd-a2a0763b
+ 50b4
+URL:https://auftragsregister.ch/en/auftrag/d890c7fe-d96d-4879-b5bd-a2a0763b
+ 50b4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (b26045-11) Rümlang\, Heuelstrasse 100\, 
+ BAZ Rümlang / BKP 244
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

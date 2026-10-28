@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:382f7770-4e8d-4857-88a8-f5459c2d11e7-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:1
+DTSTART:20270107T225900Z
+SUMMARY:Submission deadline: (26200) 104 ARC-27
+DESCRIPTION:Public buyer: Bundesamt für Bauten und Logistik BBL\nSubmissio
+ n deadline: 7 Jan 2027\, 23:59\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/382f7770-4e8d-4857-88a8-f5459c2d11e7/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/382f7770-4e8d-4857-88a8-f5459c2d
+ 11e7
+URL:https://auftragsregister.ch/en/auftrag/382f7770-4e8d-4857-88a8-f5459c2d
+ 11e7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (26200) 104 ARC-27
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

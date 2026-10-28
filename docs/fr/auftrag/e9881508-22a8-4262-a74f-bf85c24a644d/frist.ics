@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9881508-22a8-4262-a74f-bf85c24a644d-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Délai de remise : Fourniture de chauffage urbain Ostermundigen
+DESCRIPTION:Acheteur public : Tiefbau Ostermundigen\nDélai de remise :
+  27.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/e9881508-22a8-4262-a74f-bf85c24a644d/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/e9881508-22a8-4262-a74f-bf85c2
+ 4a644d
+URL:https://auftragsregister.ch/fr/auftrag/e9881508-22a8-4262-a74f-bf85c24a
+ 644d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture de chauffage urbain Ostermundig
+ en
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

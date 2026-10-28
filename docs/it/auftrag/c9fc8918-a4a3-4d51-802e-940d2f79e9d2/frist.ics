@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9fc8918-a4a3-4d51-802e-940d2f79e9d2-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Scadenza: Kantonsschule Baden\, Erweiterung und Ersatz Provisorien 
+ - BKP 273.3 Allgemeine Schreinerarbeiten
+DESCRIPTION:Ente pubblico: Kanton Aargau - Departement Finanzen und Ressour
+ cen - Immobilien Aargau\nScadenza: 08.12.2026\, 12:00\nNel registro: https
+ ://auftragsregister.ch/it/auftrag/c9fc8918-a4a3-4d51-802e-940d2f79e9d2/\nP
+ ubblicazione ufficiale: https://www.simap.ch/it/project-detail/c9fc8918-a4
+ a3-4d51-802e-940d2f79e9d2
+URL:https://auftragsregister.ch/it/auftrag/c9fc8918-a4a3-4d51-802e-940d2f79
+ e9d2/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kantonsschule Baden\, Erweiterung und Ersatz Provisor
+ ien - BKP 273.3 Allgemeine Schreinerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

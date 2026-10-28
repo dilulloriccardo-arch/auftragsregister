@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce1c13d2-0966-4b96-bf24-e69c4495160e-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261218T110000Z
+SUMMARY:Eingabefrist: Appel d'offres public pour une solution de portfolio 
+ numérique pour l'enseignement secondaire II
+DESCRIPTION:Auftraggeber: Centrale commune d'achats (CCA)\nEingabefrist: 18
+ .12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /ce1c13d2-0966-4b96-bf24-e69c4495160e/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/ce1c13d2-0966-4b96-bf24-e69c4495160e
+URL:https://auftragsregister.ch/de/auftrag/ce1c13d2-0966-4b96-bf24-e69c4495
+ 160e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Appel d'offres public pour une solution de portfo
+ lio numérique pour l'enseignement secondaire II
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

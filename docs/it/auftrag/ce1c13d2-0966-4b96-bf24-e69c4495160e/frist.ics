@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce1c13d2-0966-4b96-bf24-e69c4495160e-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261218T110000Z
+SUMMARY:Scadenza: Appel d'offres public pour une solution de portfolio num
+ érique pour l'enseignement secondaire II
+DESCRIPTION:Ente pubblico: Centrale commune d'achats (CCA)\nScadenza: 18.12
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/ce1c13
+ d2-0966-4b96-bf24-e69c4495160e/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/ce1c13d2-0966-4b96-bf24-e69c4495160e
+URL:https://auftragsregister.ch/it/auftrag/ce1c13d2-0966-4b96-bf24-e69c4495
+ 160e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Appel d'offres public pour une solution de portfolio 
+ numérique pour l'enseignement secondaire II
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

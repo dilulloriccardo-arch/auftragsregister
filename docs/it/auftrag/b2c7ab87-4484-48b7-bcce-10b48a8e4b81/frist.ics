@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2c7ab87-4484-48b7-bcce-10b48a8e4b81-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261218T080000Z
+SUMMARY:Scadenza: Begleitete Patiententransporte (S4)
+DESCRIPTION:Ente pubblico: Felix Platter-Spital\nScadenza: 18.12.2026\, 09:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/b2c7ab87-4484-48b
+ 7-bcce-10b48a8e4b81/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/b2c7ab87-4484-48b7-bcce-10b48a8e4b81
+URL:https://auftragsregister.ch/it/auftrag/b2c7ab87-4484-48b7-bcce-10b48a8e
+ 4b81/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Begleitete Patiententransporte (S4)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

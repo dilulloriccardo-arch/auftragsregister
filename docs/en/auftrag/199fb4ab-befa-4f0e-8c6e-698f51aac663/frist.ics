@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:199fb4ab-befa-4f0e-8c6e-698f51aac663-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261125T140000Z
+SUMMARY:Submission deadline: 271 01 Plastering Work – Drywall Constructio
+ n
+DESCRIPTION:Public buyer: Vollenweider Baurealisation GmbH\nSubmission dead
+ line: 25 Nov 2026\, 15:00\nIn the register: https://auftragsregister.ch/
+ en/auftrag/199fb4ab-befa-4f0e-8c6e-698f51aac663/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/199fb4ab-befa-4f0e-8c6e-698f51aac663
+URL:https://auftragsregister.ch/en/auftrag/199fb4ab-befa-4f0e-8c6e-698f51aa
+ c663/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 271 01 Plastering Work – Drywall Constru
+ ction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

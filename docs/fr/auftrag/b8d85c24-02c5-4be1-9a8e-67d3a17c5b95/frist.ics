@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b8d85c24-02c5-4be1-9a8e-67d3a17c5b95-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Délai de remise : Construction d’un nouvel ESE (Établissement
+  Socio-Éducatif) à Echichens - CFC 112 DEFRICHAGE - DEMOLITION
+DESCRIPTION:Acheteur public : Fondation Cité Radieuse (quartal)\nDélai 
+ de remise : 02.12.2026\, 23 h 59\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/b8d85c24-02c5-4be1-9a8e-67d3a17c5b95/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/b8d85c24-02c5-4be
+ 1-9a8e-67d3a17c5b95
+URL:https://auftragsregister.ch/fr/auftrag/b8d85c24-02c5-4be1-9a8e-67d3a17c
+ 5b95/
+LOCATION:Echichens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction d’un nouvel ESE (Établisse
+ ment Socio-Éducatif) à Echichens - CFC 112 DEFRICHAGE - DEMOLITION
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

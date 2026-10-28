@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3fdd2ee-3db6-4c39-abfc-5f297bada40d-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Eingabefrist: Acquisition d'un camion-citerne feux de forêts moyen
+DESCRIPTION:Auftraggeber: ECAP - Etablissement Cantonal d'Assurance et de P
+ révention (Hymexia Sàrl)\nEingabefrist: 15.12.2026\, 12.00 Uhr\nIm Regi
+ ster: https://auftragsregister.ch/de/auftrag/b3fdd2ee-3db6-4c39-abfc-5f297
+ bada40d/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/b3f
+ dd2ee-3db6-4c39-abfc-5f297bada40d
+URL:https://auftragsregister.ch/de/auftrag/b3fdd2ee-3db6-4c39-abfc-5f297bad
+ a40d/
+LOCATION:Fontainemelon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Acquisition d'un camion-citerne feux de forêts m
+ oyen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

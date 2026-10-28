@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87dc913c-0987-492b-93d0-cfad2c483e25-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261207T090000Z
+SUMMARY:Eingabefrist: Schulanlage Rothus - BKP 900.1 Schul-\, Unterrichts- 
+ und Verwaltungsmobiliar
+DESCRIPTION:Auftraggeber: Confirm AG\nEingabefrist: 07.12.2026\, 10.00 Uhr
+ \nIm Register: https://auftragsregister.ch/de/auftrag/87dc913c-0987-492b-9
+ 3d0-cfad2c483e25/\nAmtliche Publikation: https://www.simap.ch/de/project-d
+ etail/87dc913c-0987-492b-93d0-cfad2c483e25
+URL:https://auftragsregister.ch/de/auftrag/87dc913c-0987-492b-93d0-cfad2c48
+ 3e25/
+LOCATION:Bollingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulanlage Rothus - BKP 900.1 Schul-\, Unterrich
+ ts- und Verwaltungsmobiliar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

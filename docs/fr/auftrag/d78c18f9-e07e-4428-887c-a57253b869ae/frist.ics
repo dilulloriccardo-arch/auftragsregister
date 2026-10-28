@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d78c18f9-e07e-4428-887c-a57253b869ae-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20270106T170000Z
+SUMMARY:Délai de remise : Mountainbike-Trails am Horneggli\, Gemeinde Sa
+ anen
+DESCRIPTION:Acheteur public : Gstaad Saanenland Tourismus (Bike Plan AG)\
+ nDélai de remise : 06.01.2027\, 18 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/d78c18f9-e07e-4428-887c-a57253b869ae/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/d78c18f9-
+ e07e-4428-887c-a57253b869ae
+URL:https://auftragsregister.ch/fr/auftrag/d78c18f9-e07e-4428-887c-a57253b8
+ 69ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mountainbike-Trails am Horneggli\, Gemeind
+ e Saanen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

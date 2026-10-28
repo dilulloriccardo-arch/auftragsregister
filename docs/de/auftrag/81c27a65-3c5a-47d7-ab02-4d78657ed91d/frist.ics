@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81c27a65-3c5a-47d7-ab02-4d78657ed91d-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Eingabefrist: EPFL ASB – AO N°3 – TRI DES DECHETS – MISE EN 
+ PLACE DE BENNE
+DESCRIPTION:Auftraggeber: EPFL VPF ACHATS\nEingabefrist: 14.12.2026\, 16.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/81c27a65-3c5a-4
+ 7d7-ab02-4d78657ed91d/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/81c27a65-3c5a-47d7-ab02-4d78657ed91d
+URL:https://auftragsregister.ch/de/auftrag/81c27a65-3c5a-47d7-ab02-4d78657e
+ d91d/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: EPFL ASB – AO N°3 – TRI DES DECHETS – MISE
+  EN PLACE DE BENNE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

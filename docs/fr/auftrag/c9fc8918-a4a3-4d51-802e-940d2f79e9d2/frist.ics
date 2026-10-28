@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9fc8918-a4a3-4d51-802e-940d2f79e9d2-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Délai de remise : École cantonale de Baden\, extension et rempl
+ acement de bâtiments temporaires - CFC 273 Menuiserie
+DESCRIPTION:Acheteur public : Kanton Aargau - Departement Finanzen und Re
+ ssourcen - Immobilien Aargau\nDélai de remise : 08.12.2026\, 12 h 0
+ 0\nDans le registre : https://auftragsregister.ch/fr/auftrag/c9fc8918-a4
+ a3-4d51-802e-940d2f79e9d2/\nPublication officielle : https://www.simap.c
+ h/fr/project-detail/c9fc8918-a4a3-4d51-802e-940d2f79e9d2
+URL:https://auftragsregister.ch/fr/auftrag/c9fc8918-a4a3-4d51-802e-940d2f79
+ e9d2/
+LOCATION:Baden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École cantonale de Baden\, extension et r
+ emplacement de bâtiments temporaires - CFC 273 Menuiserie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

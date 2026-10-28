@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:87dc913c-0987-492b-93d0-cfad2c483e25-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261207T090000Z
+SUMMARY:Scadenza: Complesso scolastico Rothus - BKP 900.1 Arredi scolastici
+ \, didattici e amministrativi
+DESCRIPTION:Ente pubblico: Confirm AG\nScadenza: 07.12.2026\, 10:00\nNel re
+ gistro: https://auftragsregister.ch/it/auftrag/87dc913c-0987-492b-93d0-cfa
+ d2c483e25/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detai
+ l/87dc913c-0987-492b-93d0-cfad2c483e25
+URL:https://auftragsregister.ch/it/auftrag/87dc913c-0987-492b-93d0-cfad2c48
+ 3e25/
+LOCATION:Bollingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Complesso scolastico Rothus - BKP 900.1 Arredi scolas
+ tici\, didattici e amministrativi
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

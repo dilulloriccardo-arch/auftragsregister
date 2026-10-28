@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce1c13d2-0966-4b96-bf24-e69c4495160e-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261218T110000Z
+SUMMARY:Délai de remise : Appel d'offres public pour une solution de por
+ tfolio numérique pour l'enseignement secondaire II
+DESCRIPTION:Acheteur public : Centrale commune d'achats (CCA)\nDélai de 
+ remise : 18.12.2026\, 12 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/ce1c13d2-0966-4b96-bf24-e69c4495160e/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/ce1c13d2-0966-4b96-b
+ f24-e69c4495160e
+URL:https://auftragsregister.ch/fr/auftrag/ce1c13d2-0966-4b96-bf24-e69c4495
+ 160e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offres public pour une solution de
+  portfolio numérique pour l'enseignement secondaire II
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

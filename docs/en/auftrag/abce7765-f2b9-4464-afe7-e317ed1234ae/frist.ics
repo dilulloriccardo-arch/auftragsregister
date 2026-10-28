@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abce7765-f2b9-4464-afe7-e317ed1234ae-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261208T225900Z
+SUMMARY:Submission deadline: New Building 07B / Cost Group 241 / Geothermal
+  Boreholes
+DESCRIPTION:Public buyer: Spitalanlagengesellschaft HOCH Health Ostschweiz\
+ nSubmission deadline: 8 Dec 2026\, 23:59\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/abce7765-f2b9-4464-afe7-e317ed1234ae/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/abce7765-f2b9-4464-afe
+ 7-e317ed1234ae
+URL:https://auftragsregister.ch/en/auftrag/abce7765-f2b9-4464-afe7-e317ed12
+ 34ae/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: New Building 07B / Cost Group 241 / Geothe
+ rmal Boreholes
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

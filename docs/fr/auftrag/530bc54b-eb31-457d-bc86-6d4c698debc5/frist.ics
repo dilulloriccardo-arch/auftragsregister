@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:530bc54b-eb31-457d-bc86-6d4c698debc5-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Délai de remise : CU-Areal Neubau Werkleitungen\, Baumeisterarbe
+ iten
+DESCRIPTION:Acheteur public : Gemeinde Uetikon am See\nDélai de remise
+  : 23.11.2026\, 11 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/530bc54b-eb31-457d-bc86-6d4c698debc5/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/530bc54b-eb31-457d-bc86-6d
+ 4c698debc5
+URL:https://auftragsregister.ch/fr/auftrag/530bc54b-eb31-457d-bc86-6d4c698d
+ ebc5/
+LOCATION:Uetikon am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CU-Areal Neubau Werkleitungen\, Baumeister
+ arbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

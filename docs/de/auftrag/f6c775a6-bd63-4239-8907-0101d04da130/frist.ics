@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f6c775a6-bd63-4239-8907-0101d04da130-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Eingabefrist: Construction d’un nouvel ESE (Établissement Socio-
+ Éducatif) à Echichens - CFC 23 INSTALLATIONS ELECTRIQUES
+DESCRIPTION:Auftraggeber: Fondation Cité Radieuse (quartal)\nEingabefrist:
+  02.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/f6c775a6-bd63-4239-8907-0101d04da130/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/f6c775a6-bd63-4239-8907-0101d04da130
+URL:https://auftragsregister.ch/de/auftrag/f6c775a6-bd63-4239-8907-0101d04d
+ a130/
+LOCATION:Echichens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Construction d’un nouvel ESE (Établissement So
+ cio-Éducatif) à Echichens - CFC 23 INSTALLATIONS ELECTRIQUES
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

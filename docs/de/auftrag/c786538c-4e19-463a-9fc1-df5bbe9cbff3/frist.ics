@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c786538c-4e19-463a-9fc1-df5bbe9cbff3-frist@auftragsregister.ch
+DTSTAMP:20261028T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Eingabefrist: Ersatzbeschaffung Pionierfahrzeug Feuerwehr
+DESCRIPTION:Auftraggeber: Gemeinde Wangen SZ\, Feuerwehr Wangen SZ\nEingabe
+ frist: 09.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/c786538c-4e19-463a-9fc1-df5bbe9cbff3/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/c786538c-4e19-463a-9fc1-df5bbe9cbff3
+URL:https://auftragsregister.ch/de/auftrag/c786538c-4e19-463a-9fc1-df5bbe9c
+ bff3/
+LOCATION:Wangen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatzbeschaffung Pionierfahrzeug Feuerwehr
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
