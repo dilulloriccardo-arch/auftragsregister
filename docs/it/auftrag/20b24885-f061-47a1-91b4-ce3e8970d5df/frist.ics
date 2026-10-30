@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20b24885-f061-47a1-91b4-ce3e8970d5df-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261209T130000Z
+SUMMARY:Scadenza: BKP 211 Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: Stiftung focus jugend\nScadenza: 09.12.2026\, 14
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/20b24885-f061-47
+ a1-91b4-ce3e8970d5df/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/20b24885-f061-47a1-91b4-ce3e8970d5df
+URL:https://auftragsregister.ch/it/auftrag/20b24885-f061-47a1-91b4-ce3e8970
+ d5df/
+LOCATION:Kriegstetten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

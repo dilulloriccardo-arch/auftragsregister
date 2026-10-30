@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7b124bdd-d3e6-4570-9b01-d4295069656c-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Eingabefrist: Wasserversorgung Landquart\, Stations- und Kreuzwiese
+ nstrasse Igis
+DESCRIPTION:Auftraggeber: Industrielle Betriebe Landquart (IBL)\nEingabefri
+ st: 20.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/7b124bdd-d3e6-4570-9b01-d4295069656c/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/7b124bdd-d3e6-4570-9b01-d4295069656c
+URL:https://auftragsregister.ch/de/auftrag/7b124bdd-d3e6-4570-9b01-d4295069
+ 656c/
+LOCATION:Igis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Wasserversorgung Landquart\, Stations- und Kreuzw
+ iesenstrasse Igis
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

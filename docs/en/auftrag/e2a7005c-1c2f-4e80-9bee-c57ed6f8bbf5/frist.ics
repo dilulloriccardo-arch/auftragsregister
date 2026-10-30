@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2a7005c-1c2f-4e80-9bee-c57ed6f8bbf5-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261201T130000Z
+SUMMARY:Submission deadline: Zell\, Ausbau Güterstrassen Etappe 2027
+DESCRIPTION:Public buyer: Strassengenossenschaft Zell-Bründlen Bodenberg\n
+ Submission deadline: 1 Dec 2026\, 14:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/e2a7005c-1c2f-4e80-9bee-c57ed6f8bbf5/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/e2a7005c-1c2f-4e80-9bee
+ -c57ed6f8bbf5
+URL:https://auftragsregister.ch/en/auftrag/e2a7005c-1c2f-4e80-9bee-c57ed6f8
+ bbf5/
+LOCATION:Zell
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Zell\, Ausbau Güterstrassen Etappe 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

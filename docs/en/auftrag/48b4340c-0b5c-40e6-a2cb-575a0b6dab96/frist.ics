@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:48b4340c-0b5c-40e6-a2cb-575a0b6dab96-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Submission deadline: Schulhaus Langwiesen Erweiterung und Sanierung
+ \; BKP 421 Gärtnerarbeiten
+DESCRIPTION:Public buyer: Amt für Städtebau\nSubmission deadline: 9 Dec
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/48
+ b4340c-0b5c-40e6-a2cb-575a0b6dab96/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/48b4340c-0b5c-40e6-a2cb-575a0b6dab96
+URL:https://auftragsregister.ch/en/auftrag/48b4340c-0b5c-40e6-a2cb-575a0b6d
+ ab96/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schulhaus Langwiesen Erweiterung und Sanie
+ rung\; BKP 421 Gärtnerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

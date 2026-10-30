@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78b72630-a626-4674-9497-8bf57a28a3ba-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Scadenza: Wärmeverbund Zollikon / Tief- und Strassenbauarbeiten / 
+ Los 4.3
+DESCRIPTION:Ente pubblico: Werke am Zürichsee AG\nScadenza: 20.11.2026\, 1
+ 1:00\nNel registro: https://auftragsregister.ch/it/auftrag/78b72630-a626-4
+ 674-9497-8bf57a28a3ba/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/78b72630-a626-4674-9497-8bf57a28a3ba
+URL:https://auftragsregister.ch/it/auftrag/78b72630-a626-4674-9497-8bf57a28
+ a3ba/
+LOCATION:Zollikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wärmeverbund Zollikon / Tief- und Strassenbauarbeite
+ n / Los 4.3
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

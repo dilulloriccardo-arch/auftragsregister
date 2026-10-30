@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18dfa063-cb83-419d-b9af-e08917a791dd-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Scadenza: Contact Center as a Service (CCaaS)
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB\, Informatik Ein
+ kauf\nScadenza: 23.11.2026\, 12:00\nNel registro: https://auftragsregister
+ .ch/it/auftrag/18dfa063-cb83-419d-b9af-e08917a791dd/\nPubblicazione uffici
+ ale: https://www.simap.ch/it/project-detail/18dfa063-cb83-419d-b9af-e08917
+ a791dd
+URL:https://auftragsregister.ch/it/auftrag/18dfa063-cb83-419d-b9af-e08917a7
+ 91dd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Contact Center as a Service (CCaaS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

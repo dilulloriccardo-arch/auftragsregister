@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd1ab707-d7e3-4f4b-8eaa-e8db9ae75d0b-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Scadenza: Generalplaner-Submission Phasen 4 & 5\, Neubau Oberstufen
+  Campus Gränichen
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Gränichen AG\nScadenza: 16.12
+ .2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/dd1ab7
+ 07-d7e3-4f4b-8eaa-e8db9ae75d0b/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/dd1ab707-d7e3-4f4b-8eaa-e8db9ae75d0b
+URL:https://auftragsregister.ch/it/auftrag/dd1ab707-d7e3-4f4b-8eaa-e8db9ae7
+ 5d0b/
+LOCATION:Gränichen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Generalplaner-Submission Phasen 4 & 5\, Neubau Oberst
+ ufen Campus Gränichen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

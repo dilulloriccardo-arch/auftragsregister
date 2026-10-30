@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6d1ec27-ff83-4177-b61a-6a8d6a4929c0-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261208T160000Z
+SUMMARY:Délai de remise : Planificateur général de l’aménagement lo
+ cataire du dépôt de bus de Spreitenbach
+DESCRIPTION:Acheteur public : Verkehrsbetriebe Zürich (VBZ)\nDélai de r
+ emise : 08.12.2026\, 17 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/a6d1ec27-ff83-4177-b61a-6a8d6a4929c0/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/a6d1ec27-ff83-4177-b6
+ 1a-6a8d6a4929c0
+URL:https://auftragsregister.ch/fr/auftrag/a6d1ec27-ff83-4177-b61a-6a8d6a49
+ 29c0/
+LOCATION:Spreitenbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Planificateur général de l’aménagemen
+ t locataire du dépôt de bus de Spreitenbach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

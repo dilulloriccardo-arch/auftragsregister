@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a23680d-3b29-42ee-a9bb-a08778823a44-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261120T130000Z
+SUMMARY:Scadenza: Sportanlage Moos\, Kunstrasensanierung
+DESCRIPTION:Ente pubblico: Gemeindeverwaltung Wettswil\, Abteilung Präsidi
+ ales\nScadenza: 20.11.2026\, 14:00\nNel registro: https://auftragsregister
+ .ch/it/auftrag/0a23680d-3b29-42ee-a9bb-a08778823a44/\nPubblicazione uffici
+ ale: https://www.simap.ch/it/project-detail/0a23680d-3b29-42ee-a9bb-a08778
+ 823a44
+URL:https://auftragsregister.ch/it/auftrag/0a23680d-3b29-42ee-a9bb-a0877882
+ 3a44/
+LOCATION:Wettswil a.A.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sportanlage Moos\, Kunstrasensanierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

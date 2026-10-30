@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02afc1f1-5954-4d83-ba68-2be4fd835cbc-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Scadenza: 747.20 Obersaxenstrasse Schulhaus - Tobel Baumeisterarbei
+ ten
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 11.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/02afc1f1-5954-4
+ d83-ba68-2be4fd835cbc/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/02afc1f1-5954-4d83-ba68-2be4fd835cbc
+URL:https://auftragsregister.ch/it/auftrag/02afc1f1-5954-4d83-ba68-2be4fd83
+ 5cbc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 747.20 Obersaxenstrasse Schulhaus - Tobel Baumeistera
+ rbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

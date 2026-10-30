@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:119ed682-356b-44cb-bfd4-304b2ad11785-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Scadenza: Beschaffung und Vorabbereitstellung von Chromebooks und C
+ hrometablets für die Schulen Zollikofen
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Zollikofen\nScadenza: 08.12.20
+ 26\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/119ed682-
+ 356b-44cb-bfd4-304b2ad11785/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/119ed682-356b-44cb-bfd4-304b2ad11785
+URL:https://auftragsregister.ch/it/auftrag/119ed682-356b-44cb-bfd4-304b2ad1
+ 1785/
+LOCATION:Zollikofen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung und Vorabbereitstellung von Chromebooks u
+ nd Chrometablets für die Schulen Zollikofen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

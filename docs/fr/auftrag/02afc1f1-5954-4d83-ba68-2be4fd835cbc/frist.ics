@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02afc1f1-5954-4d83-ba68-2be4fd835cbc-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Délai de remise : 747.20 Obersaxenstrasse École - Tobel travaux
+  de maçonnerie
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 11.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/02afc1f1-5954-4d83-ba68-2be4fd835cbc/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/02afc1f1-5954-4d83-ba68-2be4f
+ d835cbc
+URL:https://auftragsregister.ch/fr/auftrag/02afc1f1-5954-4d83-ba68-2be4fd83
+ 5cbc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 747.20 Obersaxenstrasse École - Tobel tra
+ vaux de maçonnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

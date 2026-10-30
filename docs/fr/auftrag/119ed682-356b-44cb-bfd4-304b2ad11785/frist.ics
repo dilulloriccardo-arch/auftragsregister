@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:119ed682-356b-44cb-bfd4-304b2ad11785-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Délai de remise : Acquisition et préconfiguration de Chromebook
+ s et de tablettes Chrome pour les écoles de Zollikofen
+DESCRIPTION:Acheteur public : Einwohnergemeinde Zollikofen\nDélai de rem
+ ise : 08.12.2026\, 12 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/119ed682-356b-44cb-bfd4-304b2ad11785/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/119ed682-356b-44cb-bfd4
+ -304b2ad11785
+URL:https://auftragsregister.ch/fr/auftrag/119ed682-356b-44cb-bfd4-304b2ad1
+ 1785/
+LOCATION:Zollikofen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition et préconfiguration de Chrome
+ books et de tablettes Chrome pour les écoles de Zollikofen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

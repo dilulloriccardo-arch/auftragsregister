@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7a746d80-b3d6-489a-8939-fe4c34a07c7d-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261209T130000Z
+SUMMARY:Scadenza: BKP 214 Montagebau in Holz
+DESCRIPTION:Ente pubblico: Stiftung focus jugend\nScadenza: 09.12.2026\, 14
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/7a746d80-b3d6-48
+ 9a-8939-fe4c34a07c7d/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/7a746d80-b3d6-489a-8939-fe4c34a07c7d
+URL:https://auftragsregister.ch/it/auftrag/7a746d80-b3d6-489a-8939-fe4c34a0
+ 7c7d/
+LOCATION:Kriegstetten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 214 Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1fa4f4d8-c685-4c41-8478-98a6d991e040-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261210T110000Z
+SUMMARY:Délai de remise : Vergabe der Architektur-\, Gesamtleitungs- und
+  Bauleitungsleistungen für das Projekt F&L MRT-Zentrum Lengg
+DESCRIPTION:Acheteur public : Psychiatrische Universitätsklinik Zürich\
+ nDélai de remise : 10.12.2026\, 12 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/1fa4f4d8-c685-4c41-8478-98a6d991e040/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/1fa4f4d8-
+ c685-4c41-8478-98a6d991e040
+URL:https://auftragsregister.ch/fr/auftrag/1fa4f4d8-c685-4c41-8478-98a6d991
+ e040/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Vergabe der Architektur-\, Gesamtleitungs-
+  und Bauleitungsleistungen für das Projekt F&L MRT-Zentrum Lengg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

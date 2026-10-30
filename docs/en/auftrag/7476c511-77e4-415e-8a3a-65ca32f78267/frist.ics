@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7476c511-77e4-415e-8a3a-65ca32f78267-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Submission deadline: Sanierung Heferenstrasse
+DESCRIPTION:Public buyer: Gemeinde Wald ZH\, Abteilung Infrastruktur\nSubmi
+ ssion deadline: 30 Nov 2026\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/7476c511-77e4-415e-8a3a-65ca32f78267/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/7476c511-77e4-415e-8a3a-65c
+ a32f78267
+URL:https://auftragsregister.ch/en/auftrag/7476c511-77e4-415e-8a3a-65ca32f7
+ 8267/
+LOCATION:Wald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Heferenstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

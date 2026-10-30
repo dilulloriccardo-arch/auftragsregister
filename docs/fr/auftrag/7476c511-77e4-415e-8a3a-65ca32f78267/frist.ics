@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7476c511-77e4-415e-8a3a-65ca32f78267-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : Sanierung Heferenstrasse
+DESCRIPTION:Acheteur public : Gemeinde Wald ZH\, Abteilung Infrastruktur\
+ nDélai de remise : 30.11.2026\, 12 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/7476c511-77e4-415e-8a3a-65ca32f78267/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/7476c511-
+ 77e4-415e-8a3a-65ca32f78267
+URL:https://auftragsregister.ch/fr/auftrag/7476c511-77e4-415e-8a3a-65ca32f7
+ 8267/
+LOCATION:Wald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Heferenstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

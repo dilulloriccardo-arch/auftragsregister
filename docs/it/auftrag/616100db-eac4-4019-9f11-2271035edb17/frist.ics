@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:616100db-eac4-4019-9f11-2271035edb17-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261209T090000Z
+SUMMARY:Scadenza: Fornitura e messa in servizio di storage All‑Flash
+DESCRIPTION:Ente pubblico: Università della Svizzera italiana\nScadenza: 0
+ 9.12.2026\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/61
+ 6100db-eac4-4019-9f11-2271035edb17/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/616100db-eac4-4019-9f11-2271035edb17
+URL:https://auftragsregister.ch/it/auftrag/616100db-eac4-4019-9f11-2271035e
+ db17/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fornitura e messa in servizio di storage All‑Flash
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

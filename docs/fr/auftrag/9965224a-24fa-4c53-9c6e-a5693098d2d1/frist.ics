@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9965224a-24fa-4c53-9c6e-a5693098d2d1-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Délai de remise : Extension du dépôt Perrelet - Dispositifs de
+  levage
+DESCRIPTION:Acheteur public : Transports publics de la région lausannois
+ e SA - Ferrari Architectes\nDélai de remise : 11.12.2026\, 12 h 00\
+ nDans le registre : https://auftragsregister.ch/fr/auftrag/9965224a-24fa
+ -4c53-9c6e-a5693098d2d1/\nPublication officielle : https://www.simap.ch/
+ fr/project-detail/9965224a-24fa-4c53-9c6e-a5693098d2d1
+URL:https://auftragsregister.ch/fr/auftrag/9965224a-24fa-4c53-9c6e-a5693098
+ d2d1/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Extension du dépôt Perrelet - Dispositif
+ s de levage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f7719c69-d38d-4515-b8e2-15e754fc808f-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261118T080000Z
+SUMMARY:Submission deadline: BKP 359 Desinfektionsanlage Freibad Seebach
+DESCRIPTION:Public buyer: HBD - Immobilien Stadt Zürich (IMMO)\nSubmission
+  deadline: 18 Nov 2026\, 09:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/f7719c69-d38d-4515-b8e2-15e754fc808f/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/f7719c69-d38d-4515-b8e2-15e754fc
+ 808f
+URL:https://auftragsregister.ch/en/auftrag/f7719c69-d38d-4515-b8e2-15e754fc
+ 808f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 359 Desinfektionsanlage Freibad Seebac
+ h
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

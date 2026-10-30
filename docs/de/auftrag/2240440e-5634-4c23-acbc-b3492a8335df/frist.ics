@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2240440e-5634-4c23-acbc-b3492a8335df-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261201T130000Z
+SUMMARY:Eingabefrist: Fornitura e manutenzione di veicoli commerciali legge
+ ri BEV
+DESCRIPTION:Auftraggeber: Aziende Industriali di Lugano (AIL) SA\nEingabefr
+ ist: 01.12.2026\, 14.00 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/2240440e-5634-4c23-acbc-b3492a8335df/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/2240440e-5634-4c23-acbc-b3492a8335df
+URL:https://auftragsregister.ch/de/auftrag/2240440e-5634-4c23-acbc-b3492a83
+ 35df/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fornitura e manutenzione di veicoli commerciali l
+ eggeri BEV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

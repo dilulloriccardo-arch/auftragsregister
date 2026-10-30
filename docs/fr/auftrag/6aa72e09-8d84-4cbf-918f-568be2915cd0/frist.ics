@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6aa72e09-8d84-4cbf-918f-568be2915cd0-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Délai de remise : 26130 - Fourniture de 6 tours à commande num
+ érique (CNC) destinés au Centre professionnel technique de Bellinzone
+DESCRIPTION:Acheteur public : Sezione della logistica - Servizio appalti\
+ nDélai de remise : 10.12.2026\, 16 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/6aa72e09-8d84-4cbf-918f-568be2915cd0/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/6aa72e09-
+ 8d84-4cbf-918f-568be2915cd0
+URL:https://auftragsregister.ch/fr/auftrag/6aa72e09-8d84-4cbf-918f-568be291
+ 5cd0/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 26130 - Fourniture de 6 tours à commande 
+ numérique (CNC) destinés au Centre professionnel technique de Bellinzone
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

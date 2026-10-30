@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd1ab707-d7e3-4f4b-8eaa-e8db9ae75d0b-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Délai de remise : Soumission des Plans d'aménagement généraux
+ \, Phases 4 et 5
+DESCRIPTION:Acheteur public : Einwohnergemeinde Gränichen AG\nDélai de 
+ remise : 16.12.2026\, 11 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/dd1ab707-d7e3-4f4b-8eaa-e8db9ae75d0b/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/dd1ab707-d7e3-4f4b-8
+ eaa-e8db9ae75d0b
+URL:https://auftragsregister.ch/fr/auftrag/dd1ab707-d7e3-4f4b-8eaa-e8db9ae7
+ 5d0b/
+LOCATION:Gränichen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Soumission des Plans d'aménagement géné
+ raux\, Phases 4 et 5
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

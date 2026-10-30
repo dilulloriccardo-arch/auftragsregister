@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18dfa063-cb83-419d-b9af-e08917a791dd-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : Contact Center as a Service (CCaaS)
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Informati
+ k Einkauf\nDélai de remise : 23.11.2026\, 12 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/18dfa063-cb83-419d-b9af-e08917
+ a791dd/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /18dfa063-cb83-419d-b9af-e08917a791dd
+URL:https://auftragsregister.ch/fr/auftrag/18dfa063-cb83-419d-b9af-e08917a7
+ 91dd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contact Center as a Service (CCaaS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

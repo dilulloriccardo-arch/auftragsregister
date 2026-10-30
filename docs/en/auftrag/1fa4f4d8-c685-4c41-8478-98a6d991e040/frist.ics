@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1fa4f4d8-c685-4c41-8478-98a6d991e040-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261210T110000Z
+SUMMARY:Submission deadline: Award of architectural\, overall project manag
+ ement\, and construction management services for the F&L MRI Center Lengg 
+ project
+DESCRIPTION:Public buyer: Psychiatrische Universitätsklinik Zürich\nSubmi
+ ssion deadline: 10 Dec 2026\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/1fa4f4d8-c685-4c41-8478-98a6d991e040/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/1fa4f4d8-c685-4c41-8478-98a
+ 6d991e040
+URL:https://auftragsregister.ch/en/auftrag/1fa4f4d8-c685-4c41-8478-98a6d991
+ e040/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Award of architectural\, overall project m
+ anagement\, and construction management services for the F&L MRI Center Le
+ ngg project
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

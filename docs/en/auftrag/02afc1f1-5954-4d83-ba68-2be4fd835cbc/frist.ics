@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02afc1f1-5954-4d83-ba68-2be4fd835cbc-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Submission deadline: 747.20 Obersaxenstrasse Schulhaus - Tobel Baum
+ eisterarbeiten
+DESCRIPTION:Public buyer: Tiefbauamt Graubünden\nSubmission deadline: 11 
+ Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag
+ /02afc1f1-5954-4d83-ba68-2be4fd835cbc/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/02afc1f1-5954-4d83-ba68-2be4fd835cbc
+URL:https://auftragsregister.ch/en/auftrag/02afc1f1-5954-4d83-ba68-2be4fd83
+ 5cbc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 747.20 Obersaxenstrasse Schulhaus - Tobel 
+ Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

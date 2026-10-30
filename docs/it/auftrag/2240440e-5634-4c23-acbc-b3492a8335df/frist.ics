@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2240440e-5634-4c23-acbc-b3492a8335df-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261201T130000Z
+SUMMARY:Scadenza: Fornitura e manutenzione di veicoli commerciali leggeri B
+ EV
+DESCRIPTION:Ente pubblico: Aziende Industriali di Lugano (AIL) SA\nScadenza
+ : 01.12.2026\, 14:00\nNel registro: https://auftragsregister.ch/it/auftrag
+ /2240440e-5634-4c23-acbc-b3492a8335df/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/2240440e-5634-4c23-acbc-b3492a8335df
+URL:https://auftragsregister.ch/it/auftrag/2240440e-5634-4c23-acbc-b3492a83
+ 35df/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fornitura e manutenzione di veicoli commerciali legge
+ ri BEV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

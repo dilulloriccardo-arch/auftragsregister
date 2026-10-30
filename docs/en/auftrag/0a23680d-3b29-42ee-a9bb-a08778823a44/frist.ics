@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a23680d-3b29-42ee-a9bb-a08778823a44-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261120T130000Z
+SUMMARY:Submission deadline: Sportanlage Moos\, Kunstrasensanierung
+DESCRIPTION:Public buyer: Gemeindeverwaltung Wettswil\, Abteilung Präsidia
+ les\nSubmission deadline: 20 Nov 2026\, 14:00\nIn the register: https://
+ auftragsregister.ch/en/auftrag/0a23680d-3b29-42ee-a9bb-a08778823a44/\nOffi
+ cial publication: https://www.simap.ch/en/project-detail/0a23680d-3b29-42e
+ e-a9bb-a08778823a44
+URL:https://auftragsregister.ch/en/auftrag/0a23680d-3b29-42ee-a9bb-a0877882
+ 3a44/
+LOCATION:Wettswil a.A.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sportanlage Moos\, Kunstrasensanierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

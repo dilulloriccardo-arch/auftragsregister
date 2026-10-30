@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:989b645c-44d1-4474-8b8f-cdde0021a642-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261222T225900Z
+SUMMARY:Eingabefrist: N16.14 MP-080191 - Upn.Tavannes-Bözingenfeld - APR G
+ C phase MP jusqu'à la mise en service - Phases 32 à 53 (Auteur de projet
+  avec DLT) (ID 12015)
+DESCRIPTION:Auftraggeber: Office fédéral des routes OFROU\, Division Infr
+ astructure routière Ouest\, filiale Estavayer-le-Lac\nEingabefrist: 22.12
+ .2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/98
+ 9b645c-44d1-4474-8b8f-cdde0021a642/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/989b645c-44d1-4474-8b8f-cdde0021a642
+URL:https://auftragsregister.ch/de/auftrag/989b645c-44d1-4474-8b8f-cdde0021
+ a642/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: N16.14 MP-080191 - Upn.Tavannes-Bözingenfeld - A
+ PR GC phase MP jusqu'à la mise en service - Phases 32 à 53 (Auteur de pr
+ ojet avec DLT) (ID 12015)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

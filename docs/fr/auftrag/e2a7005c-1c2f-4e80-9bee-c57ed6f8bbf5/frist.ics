@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2a7005c-1c2f-4e80-9bee-c57ed6f8bbf5-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261201T130000Z
+SUMMARY:Délai de remise : Zell\, Ausbau Güterstrassen Etappe 2027
+DESCRIPTION:Acheteur public : Strassengenossenschaft Zell-Bründlen Boden
+ berg\nDélai de remise : 01.12.2026\, 14 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/e2a7005c-1c2f-4e80-9bee-c57ed6f8bbf
+ 5/\nPublication officielle : https://www.simap.ch/fr/project-detail/e2a7
+ 005c-1c2f-4e80-9bee-c57ed6f8bbf5
+URL:https://auftragsregister.ch/fr/auftrag/e2a7005c-1c2f-4e80-9bee-c57ed6f8
+ bbf5/
+LOCATION:Zell
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Zell\, Ausbau Güterstrassen Etappe 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

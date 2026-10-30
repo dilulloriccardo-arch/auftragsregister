@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20b24885-f061-47a1-91b4-ce3e8970d5df-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261209T130000Z
+SUMMARY:Délai de remise : BKP 211 Baumeisterarbeiten
+DESCRIPTION:Acheteur public : Stiftung focus jugend\nDélai de remise :
+  09.12.2026\, 14 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/20b24885-f061-47a1-91b4-ce3e8970d5df/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/20b24885-f061-47a1-91b4-ce3e89
+ 70d5df
+URL:https://auftragsregister.ch/fr/auftrag/20b24885-f061-47a1-91b4-ce3e8970
+ d5df/
+LOCATION:Kriegstetten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

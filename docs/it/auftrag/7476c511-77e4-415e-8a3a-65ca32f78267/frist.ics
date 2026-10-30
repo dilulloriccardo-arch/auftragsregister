@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7476c511-77e4-415e-8a3a-65ca32f78267-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Scadenza: Sanierung Heferenstrasse
+DESCRIPTION:Ente pubblico: Gemeinde Wald ZH\, Abteilung Infrastruktur\nScad
+ enza: 30.11.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/7476c511-77e4-415e-8a3a-65ca32f78267/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/7476c511-77e4-415e-8a3a-65ca32f78267
+URL:https://auftragsregister.ch/it/auftrag/7476c511-77e4-415e-8a3a-65ca32f7
+ 8267/
+LOCATION:Wald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Heferenstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9e673fcb-cc93-4df3-92c9-e3f55c48cafd-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20270118T225900Z
+SUMMARY:Délai de remise : (b26057-2) Affoltern a. A.\, Lindenmoosstrasse
+ \, étape 2\, extension du Centre des collections du MNS / CFC 201
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 18.01.2027\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/9e673fcb-cc93-4df3-92c9-e3f55c48cafd/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/9e673fcb-cc93
+ -4df3-92c9-e3f55c48cafd
+URL:https://auftragsregister.ch/fr/auftrag/9e673fcb-cc93-4df3-92c9-e3f55c48
+ cafd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (b26057-2) Affoltern a. A.\, Lindenmoosstr
+ asse\, étape 2\, extension du Centre des collections du MNS / CFC 201
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

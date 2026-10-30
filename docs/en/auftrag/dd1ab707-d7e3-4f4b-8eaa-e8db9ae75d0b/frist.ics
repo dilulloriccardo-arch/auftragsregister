@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd1ab707-d7e3-4f4b-8eaa-e8db9ae75d0b-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Submission deadline: Generalplaner-Submission Phasen 4 & 5\, Neubau
+  Oberstufen Campus Gränichen
+DESCRIPTION:Public buyer: Einwohnergemeinde Gränichen AG\nSubmission deadl
+ ine: 16 Dec 2026\, 11:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/dd1ab707-d7e3-4f4b-8eaa-e8db9ae75d0b/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/dd1ab707-d7e3-4f4b-8eaa-e8db9ae75d0b
+URL:https://auftragsregister.ch/en/auftrag/dd1ab707-d7e3-4f4b-8eaa-e8db9ae7
+ 5d0b/
+LOCATION:Gränichen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Generalplaner-Submission Phasen 4 & 5\, Ne
+ ubau Oberstufen Campus Gränichen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

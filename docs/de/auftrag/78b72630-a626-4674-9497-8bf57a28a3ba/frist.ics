@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78b72630-a626-4674-9497-8bf57a28a3ba-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Eingabefrist: Wärmeverbund Zollikon / Tief- und Strassenbauarbeite
+ n / Los 4.3
+DESCRIPTION:Auftraggeber: Werke am Zürichsee AG\nEingabefrist: 20.11.2026\
+ , 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/78b72630
+ -a626-4674-9497-8bf57a28a3ba/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/78b72630-a626-4674-9497-8bf57a28a3ba
+URL:https://auftragsregister.ch/de/auftrag/78b72630-a626-4674-9497-8bf57a28
+ a3ba/
+LOCATION:Zollikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Wärmeverbund Zollikon / Tief- und Strassenbauarb
+ eiten / Los 4.3
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

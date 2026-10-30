@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83bf7160-0504-44b3-8cc2-e004033edc9b-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261117T110000Z
+SUMMARY:Délai de remise : Erneuerung und Erweiterung der Snow License Ma
+ nager – Lizenzen von Flexera für 2027-2029
+DESCRIPTION:Acheteur public : Universität Bern\, Informatikdienste\nDél
+ ai de remise : 17.11.2026\, 12 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/83bf7160-0504-44b3-8cc2-e004033edc9b/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/83bf7160-0504-
+ 44b3-8cc2-e004033edc9b
+URL:https://auftragsregister.ch/fr/auftrag/83bf7160-0504-44b3-8cc2-e004033e
+ dc9b/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erneuerung und Erweiterung der Snow Licens
+ e Manager – Lizenzen von Flexera für 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:616100db-eac4-4019-9f11-2271035edb17-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261209T090000Z
+SUMMARY:Submission deadline: Fourniture et mise en service d'un système de
+  stockage All‑Flash
+DESCRIPTION:Public buyer: Università della Svizzera italiana\nSubmission d
+ eadline: 9 Dec 2026\, 10:00\nIn the register: https://auftragsregister.c
+ h/en/auftrag/616100db-eac4-4019-9f11-2271035edb17/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/616100db-eac4-4019-9f11-2271035edb1
+ 7
+URL:https://auftragsregister.ch/en/auftrag/616100db-eac4-4019-9f11-2271035e
+ db17/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fourniture et mise en service d'un systèm
+ e de stockage All‑Flash
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

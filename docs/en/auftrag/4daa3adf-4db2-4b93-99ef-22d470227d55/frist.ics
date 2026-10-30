@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4daa3adf-4db2-4b93-99ef-22d470227d55-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:1
+DTSTART:20261209T100000Z
+SUMMARY:Submission deadline: Espaces publics de Rive (2368TI) Travaux de g
+ énie civil\, conduite GéniLac et réseaux SIG\, renouvellement des infra
+ structures TPG\, signalisation lumineuse OCT
+DESCRIPTION:Public buyer: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nS
+ ubmission deadline: 9 Dec 2026\, 11:00\nIn the register: https://auftrag
+ sregister.ch/en/auftrag/4daa3adf-4db2-4b93-99ef-22d470227d55/\nOfficial pu
+ blication: https://www.simap.ch/en/project-detail/4daa3adf-4db2-4b93-99ef-
+ 22d470227d55
+URL:https://auftragsregister.ch/en/auftrag/4daa3adf-4db2-4b93-99ef-22d47022
+ 7d55/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Espaces publics de Rive (2368TI) Travaux d
+ e génie civil\, conduite GéniLac et réseaux SIG\, renouvellement des in
+ frastructures TPG\, signalisation lumineuse OCT
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

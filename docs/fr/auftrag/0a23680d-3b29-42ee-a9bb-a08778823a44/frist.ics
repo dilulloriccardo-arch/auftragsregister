@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a23680d-3b29-42ee-a9bb-a08778823a44-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261120T130000Z
+SUMMARY:Délai de remise : Sportanlage Moos\, Kunstrasensanierung
+DESCRIPTION:Acheteur public : Gemeindeverwaltung Wettswil\, Abteilung Pr
+ äsidiales\nDélai de remise : 20.11.2026\, 14 h 00\nDans le registr
+ e : https://auftragsregister.ch/fr/auftrag/0a23680d-3b29-42ee-a9bb-a0877
+ 8823a44/\nPublication officielle : https://www.simap.ch/fr/project-detai
+ l/0a23680d-3b29-42ee-a9bb-a08778823a44
+URL:https://auftragsregister.ch/fr/auftrag/0a23680d-3b29-42ee-a9bb-a0877882
+ 3a44/
+LOCATION:Wettswil a.A.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sportanlage Moos\, Kunstrasensanierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

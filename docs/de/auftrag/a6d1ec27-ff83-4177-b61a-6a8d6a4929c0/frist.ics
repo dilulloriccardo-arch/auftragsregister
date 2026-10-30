@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6d1ec27-ff83-4177-b61a-6a8d6a4929c0-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261208T160000Z
+SUMMARY:Eingabefrist: Gesamtplaner Mieterausbau Busgarage Spreitenbach
+DESCRIPTION:Auftraggeber: Verkehrsbetriebe Zürich (VBZ)\nEingabefrist: 08.
+ 12.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ a6d1ec27-ff83-4177-b61a-6a8d6a4929c0/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/a6d1ec27-ff83-4177-b61a-6a8d6a4929c0
+URL:https://auftragsregister.ch/de/auftrag/a6d1ec27-ff83-4177-b61a-6a8d6a49
+ 29c0/
+LOCATION:Spreitenbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamtplaner Mieterausbau Busgarage Spreitenbach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

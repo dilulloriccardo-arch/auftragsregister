@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2240440e-5634-4c23-acbc-b3492a8335df-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261201T130000Z
+SUMMARY:Délai de remise : Fornitura e manutenzione di veicoli commercial
+ i leggeri BEV
+DESCRIPTION:Acheteur public : Aziende Industriali di Lugano (AIL) SA\nDé
+ lai de remise : 01.12.2026\, 14 h 00\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/2240440e-5634-4c23-acbc-b3492a8335df/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/2240440e-5634
+ -4c23-acbc-b3492a8335df
+URL:https://auftragsregister.ch/fr/auftrag/2240440e-5634-4c23-acbc-b3492a83
+ 35df/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fornitura e manutenzione di veicoli commer
+ ciali leggeri BEV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

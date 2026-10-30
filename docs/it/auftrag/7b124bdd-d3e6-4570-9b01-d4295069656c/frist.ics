@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7b124bdd-d3e6-4570-9b01-d4295069656c-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Scadenza: Wasserversorgung Landquart\, Stations- und Kreuzwiesenstr
+ asse Igis
+DESCRIPTION:Ente pubblico: Industrielle Betriebe Landquart (IBL)\nScadenza:
+  20.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 7b124bdd-d3e6-4570-9b01-d4295069656c/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/7b124bdd-d3e6-4570-9b01-d4295069656c
+URL:https://auftragsregister.ch/it/auftrag/7b124bdd-d3e6-4570-9b01-d4295069
+ 656c/
+LOCATION:Igis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wasserversorgung Landquart\, Stations- und Kreuzwiese
+ nstrasse Igis
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

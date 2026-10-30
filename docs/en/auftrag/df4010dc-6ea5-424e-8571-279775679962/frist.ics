@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df4010dc-6ea5-424e-8571-279775679962-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261126T090000Z
+SUMMARY:Submission deadline: Sanierung 300 m Schiessanlage Birwinken – En
+ tsorgung/Verwertung und Transport
+DESCRIPTION:Public buyer: Gemeinde Birwinken - Strassenbau und Werke\nSubmi
+ ssion deadline: 26 Nov 2026\, 10:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/df4010dc-6ea5-424e-8571-279775679962/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/df4010dc-6ea5-424e-8571-279
+ 775679962
+URL:https://auftragsregister.ch/en/auftrag/df4010dc-6ea5-424e-8571-27977567
+ 9962/
+LOCATION:Birwinken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung 300 m Schiessanlage Birwinken 
+ – Entsorgung/Verwertung und Transport
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

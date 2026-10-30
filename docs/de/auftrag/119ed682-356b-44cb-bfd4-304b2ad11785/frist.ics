@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:119ed682-356b-44cb-bfd4-304b2ad11785-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Eingabefrist: Beschaffung und Vorabbereitstellung von Chromebooks u
+ nd Chrometablets für die Schulen Zollikofen
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Zollikofen\nEingabefrist: 08.12
+ .2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/11
+ 9ed682-356b-44cb-bfd4-304b2ad11785/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/119ed682-356b-44cb-bfd4-304b2ad11785
+URL:https://auftragsregister.ch/de/auftrag/119ed682-356b-44cb-bfd4-304b2ad1
+ 1785/
+LOCATION:Zollikofen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung und Vorabbereitstellung von Chromeboo
+ ks und Chrometablets für die Schulen Zollikofen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

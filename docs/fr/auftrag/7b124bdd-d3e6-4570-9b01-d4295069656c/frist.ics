@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7b124bdd-d3e6-4570-9b01-d4295069656c-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261120T150000Z
+SUMMARY:Délai de remise : Wasserversorgung Landquart\, Stations- und Kre
+ uzwiesenstrasse Igis
+DESCRIPTION:Acheteur public : Industrielle Betriebe Landquart (IBL)\nDél
+ ai de remise : 20.11.2026\, 16 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/7b124bdd-d3e6-4570-9b01-d4295069656c/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/7b124bdd-d3e6-
+ 4570-9b01-d4295069656c
+URL:https://auftragsregister.ch/fr/auftrag/7b124bdd-d3e6-4570-9b01-d4295069
+ 656c/
+LOCATION:Igis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wasserversorgung Landquart\, Stations- und
+  Kreuzwiesenstrasse Igis
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

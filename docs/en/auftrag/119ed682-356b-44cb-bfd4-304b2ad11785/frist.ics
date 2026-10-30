@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:119ed682-356b-44cb-bfd4-304b2ad11785-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Submission deadline: Procurement and pre-deployment of Chromebooks 
+ and Chrome tablets for Zollikofen schools
+DESCRIPTION:Public buyer: Einwohnergemeinde Zollikofen\nSubmission deadline
+ : 8 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/119ed682-356b-44cb-bfd4-304b2ad11785/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/119ed682-356b-44cb-bfd4-304b2ad11785
+URL:https://auftragsregister.ch/en/auftrag/119ed682-356b-44cb-bfd4-304b2ad1
+ 1785/
+LOCATION:Zollikofen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Procurement and pre-deployment of Chromebo
+ oks and Chrome tablets for Zollikofen schools
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

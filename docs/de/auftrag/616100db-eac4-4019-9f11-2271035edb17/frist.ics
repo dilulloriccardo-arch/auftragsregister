@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:616100db-eac4-4019-9f11-2271035edb17-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261209T090000Z
+SUMMARY:Eingabefrist: Fourniture et mise en service d'un système de stocka
+ ge All‑Flash
+DESCRIPTION:Auftraggeber: Università della Svizzera italiana\nEingabefrist
+ : 09.12.2026\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/616100db-eac4-4019-9f11-2271035edb17/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/616100db-eac4-4019-9f11-2271035edb17
+URL:https://auftragsregister.ch/de/auftrag/616100db-eac4-4019-9f11-2271035e
+ db17/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fourniture et mise en service d'un système de st
+ ockage All‑Flash
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

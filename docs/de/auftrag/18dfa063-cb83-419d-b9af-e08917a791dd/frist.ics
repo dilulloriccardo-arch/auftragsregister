@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18dfa063-cb83-419d-b9af-e08917a791dd-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Eingabefrist: Contact Center as a Service (CCaaS)
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Informatik Eink
+ auf\nEingabefrist: 23.11.2026\, 12.00 Uhr\nIm Register: https://auftragsr
+ egister.ch/de/auftrag/18dfa063-cb83-419d-b9af-e08917a791dd/\nAmtliche Publ
+ ikation: https://www.simap.ch/de/project-detail/18dfa063-cb83-419d-b9af-e0
+ 8917a791dd
+URL:https://auftragsregister.ch/de/auftrag/18dfa063-cb83-419d-b9af-e08917a7
+ 91dd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Contact Center as a Service (CCaaS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:58a1ac6b-8686-4fd7-b434-e31bba4675b6-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261126T110000Z
+SUMMARY:Submission deadline: Winkel- und Trittliwiese\, Instandsetzung Umge
+ bung und Gartenanlage
+DESCRIPTION:Public buyer: TED - Grün Stadt Zürich (GSZ)\nSubmission deadl
+ ine: 26 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/58a1ac6b-8686-4fd7-b434-e31bba4675b6/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/58a1ac6b-8686-4fd7-b434-e31bba4675b6
+URL:https://auftragsregister.ch/en/auftrag/58a1ac6b-8686-4fd7-b434-e31bba46
+ 75b6/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Winkel- und Trittliwiese\, Instandsetzung 
+ Umgebung und Gartenanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

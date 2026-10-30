@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7a746d80-b3d6-489a-8939-fe4c34a07c7d-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261209T130000Z
+SUMMARY:Submission deadline: BKP 214 Timber assembly works
+DESCRIPTION:Public buyer: Stiftung focus jugend\nSubmission deadline: 9 De
+ c 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag/7
+ a746d80-b3d6-489a-8939-fe4c34a07c7d/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/7a746d80-b3d6-489a-8939-fe4c34a07c7d
+URL:https://auftragsregister.ch/en/auftrag/7a746d80-b3d6-489a-8939-fe4c34a0
+ 7c7d/
+LOCATION:Kriegstetten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 214 Timber assembly works
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

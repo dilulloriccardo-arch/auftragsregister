@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df4010dc-6ea5-424e-8571-279775679962-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261126T090000Z
+SUMMARY:Délai de remise : Assainissement du stand de tir à 300 m de Bir
+ winken – Valorisation\, élimination et transport des matériaux contami
+ nés
+DESCRIPTION:Acheteur public : Gemeinde Birwinken - Strassenbau und Werke\
+ nDélai de remise : 26.11.2026\, 10 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/df4010dc-6ea5-424e-8571-279775679962/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/df4010dc-
+ 6ea5-424e-8571-279775679962
+URL:https://auftragsregister.ch/fr/auftrag/df4010dc-6ea5-424e-8571-27977567
+ 9962/
+LOCATION:Birwinken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assainissement du stand de tir à 300 m de
+  Birwinken – Valorisation\, élimination et transport des matériaux con
+ taminés
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

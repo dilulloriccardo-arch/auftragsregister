@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20b24885-f061-47a1-91b4-ce3e8970d5df-frist@auftragsregister.ch
+DTSTAMP:20261029T000000Z
+SEQUENCE:0
+DTSTART:20261209T130000Z
+SUMMARY:Submission deadline: BKP 211 Masonry works
+DESCRIPTION:Public buyer: Stiftung focus jugend\nSubmission deadline: 9 De
+ c 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag/2
+ 0b24885-f061-47a1-91b4-ce3e8970d5df/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/20b24885-f061-47a1-91b4-ce3e8970d5df
+URL:https://auftragsregister.ch/en/auftrag/20b24885-f061-47a1-91b4-ce3e8970
+ d5df/
+LOCATION:Kriegstetten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 211 Masonry works
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
