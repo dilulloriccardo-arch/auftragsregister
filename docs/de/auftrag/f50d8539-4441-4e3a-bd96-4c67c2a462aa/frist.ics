@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f50d8539-4441-4e3a-bd96-4c67c2a462aa-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Eingabefrist: Ausschreibung – Gebäudereinigung Stadt Opfikon –
+  Stadthaus und Feuerwehr/Werkhofgebäude
+DESCRIPTION:Auftraggeber: Stadt Opfikon (FMCW)\nEingabefrist: 10.12.2026\, 
+ 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/f50d8539-4
+ 441-4e3a-bd96-4c67c2a462aa/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/f50d8539-4441-4e3a-bd96-4c67c2a462aa
+URL:https://auftragsregister.ch/de/auftrag/f50d8539-4441-4e3a-bd96-4c67c2a4
+ 62aa/
+LOCATION:Glattbrugg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ausschreibung – Gebäudereinigung Stadt Opfikon
+  – Stadthaus und Feuerwehr/Werkhofgebäude
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

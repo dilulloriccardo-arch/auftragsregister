@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:77bb9875-f7fb-48fd-a921-c7bab138b704-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Délai de remise : (26260) 316 Analyses forensiques de données e
+ n vue d’exiger le remboursement des coûts de tests COVID-19 facturés 
+ à tort
+DESCRIPTION:Acheteur public : Bundesamt für Gesundheit BAG\nDélai de re
+ mise : 23.12.2026\, 23 h 59\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/77bb9875-f7fb-48fd-a921-c7bab138b704/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/77bb9875-f7fb-48fd-a92
+ 1-c7bab138b704
+URL:https://auftragsregister.ch/fr/auftrag/77bb9875-f7fb-48fd-a921-c7bab138
+ b704/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26260) 316 Analyses forensiques de donné
+ es en vue d’exiger le remboursement des coûts de tests COVID-19 factur
+ és à tort
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

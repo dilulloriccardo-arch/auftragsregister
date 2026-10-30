@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:54d731f1-c607-42e0-ab7e-08d5f64c41df-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261203T100000Z
+SUMMARY:Scadenza: Stazione di pompaggio Pobbia - Opere da idraulico
+DESCRIPTION:Ente pubblico: Consorzio Acquedotto Regionale del Mendrisiotto 
+ (ARM)\nScadenza: 03.12.2026\, 11:00\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/54d731f1-c607-42e0-ab7e-08d5f64c41df/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/54d731f1-c607-42e0-ab7e-08d5f
+ 64c41df
+URL:https://auftragsregister.ch/it/auftrag/54d731f1-c607-42e0-ab7e-08d5f64c
+ 41df/
+LOCATION:Novazzano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Stazione di pompaggio Pobbia - Opere da idraulico
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

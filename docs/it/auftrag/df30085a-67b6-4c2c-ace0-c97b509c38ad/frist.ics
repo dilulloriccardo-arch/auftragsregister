@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df30085a-67b6-4c2c-ace0-c97b509c38ad-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Scadenza: BAV 80746 Schulanlage Triemli\, In der Ey\, Ersatzneubau 
+ - BKP 273.0 Innentüren aus Holz
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 14.12
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/df3008
+ 5a-67b6-4c2c-ace0-c97b509c38ad/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/df30085a-67b6-4c2c-ace0-c97b509c38ad
+URL:https://auftragsregister.ch/it/auftrag/df30085a-67b6-4c2c-ace0-c97b509c
+ 38ad/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 80746 Schulanlage Triemli\, In der Ey\, Ersatzneu
+ bau - BKP 273.0 Innentüren aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

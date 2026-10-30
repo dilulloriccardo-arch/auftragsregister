@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7093b6f1-2359-4bad-880f-f071c5b0b989-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Submission deadline: Tittwiesenpark
+DESCRIPTION:Public buyer: Stadt Chur\, Hochbaudienste\, Freiraumplanung\nSu
+ bmission deadline: 27 Nov 2026\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/7093b6f1-2359-4bad-880f-f071c5b0b989/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/7093b6f1-2359-4bad-880f-f071c5b0
+ b989
+URL:https://auftragsregister.ch/en/auftrag/7093b6f1-2359-4bad-880f-f071c5b0
+ b989/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tittwiesenpark
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

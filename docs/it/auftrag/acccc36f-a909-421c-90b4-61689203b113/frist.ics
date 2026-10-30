@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:acccc36f-a909-421c-90b4-61689203b113-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Scadenza: Ampliamento dello storage Dell PowerScale e contratto qua
+ dro per licenze e supporto
+DESCRIPTION:Ente pubblico: Università della Svizzera italiana\nScadenza: 0
+ 9.12.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/ac
+ ccc36f-a909-421c-90b4-61689203b113/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/acccc36f-a909-421c-90b4-61689203b113
+URL:https://auftragsregister.ch/it/auftrag/acccc36f-a909-421c-90b4-61689203
+ b113/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ampliamento dello storage Dell PowerScale e contratto
+  quadro per licenze e supporto
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

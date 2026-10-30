@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df47454d-a99c-4fb4-83cc-e7e652dd653e-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+SUMMARY:Délai de remise : ACR: trasporto di fanghi e liquidi con autocar
+ ro cisterna da Bioggio all'ICTR di Giubiasco
+DESCRIPTION:Acheteur public : Azienda Cantonale dei Rifiuti\nDélai de re
+ mise : 30.11.2026\, 11 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/df47454d-a99c-4fb4-83cc-e7e652dd653e/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/df47454d-a99c-4fb4-83c
+ c-e7e652dd653e
+URL:https://auftragsregister.ch/fr/auftrag/df47454d-a99c-4fb4-83cc-e7e652dd
+ 653e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ACR: trasporto di fanghi e liquidi con aut
+ ocarro cisterna da Bioggio all'ICTR di Giubiasco
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

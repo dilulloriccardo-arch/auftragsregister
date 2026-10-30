@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ad92f96-5266-4742-a509-1f3e19c14b99-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20270112T225900Z
+SUMMARY:Délai de remise : AO2027 - Assistance de 1er niveau (N1)
+DESCRIPTION:Acheteur public : Office cantonal des systèmes d'information
+  et du numérique (OCSIN)\nDélai de remise : 12.01.2027\, 23 h 59\n
+ Dans le registre : https://auftragsregister.ch/fr/auftrag/8ad92f96-5266-
+ 4742-a509-1f3e19c14b99/\nPublication officielle : https://www.simap.ch/f
+ r/project-detail/8ad92f96-5266-4742-a509-1f3e19c14b99
+URL:https://auftragsregister.ch/fr/auftrag/8ad92f96-5266-4742-a509-1f3e19c1
+ 4b99/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AO2027 - Assistance de 1er niveau (N1)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

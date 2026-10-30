@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5cbbd72a-a9f2-4c15-9774-5f7b22c93819-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Délai de remise : ARA Thurau\, Automatisierungs- und Prozessleit
+ system
+DESCRIPTION:Acheteur public : Abwasserverband Thurau\nDélai de remise 
+ : 02.12.2026\, 12 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/5cbbd72a-a9f2-4c15-9774-5f7b22c93819/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/5cbbd72a-a9f2-4c15-9774-5f7b2
+ 2c93819
+URL:https://auftragsregister.ch/fr/auftrag/5cbbd72a-a9f2-4c15-9774-5f7b22c9
+ 3819/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ARA Thurau\, Automatisierungs- und Prozess
+ leitsystem
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

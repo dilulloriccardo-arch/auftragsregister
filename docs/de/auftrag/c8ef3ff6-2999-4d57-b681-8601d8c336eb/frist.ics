@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8ef3ff6-2999-4d57-b681-8601d8c336eb-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T090000Z
+SUMMARY:Eingabefrist: Submission Schülertransporte Heilpädagogische Schul
+ e Wetzikon
+DESCRIPTION:Auftraggeber: Heilpädagogische Schule Wetzikon\nEingabefrist: 
+ 10.12.2026\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/c8ef3ff6-2999-4d57-b681-8601d8c336eb/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/c8ef3ff6-2999-4d57-b681-8601d8c336eb
+URL:https://auftragsregister.ch/de/auftrag/c8ef3ff6-2999-4d57-b681-8601d8c3
+ 36eb/
+LOCATION:Wetzikon ZH
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Submission Schülertransporte Heilpädagogische S
+ chule Wetzikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

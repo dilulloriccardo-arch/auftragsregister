@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:96517644-ce83-423f-bd48-95ad5de8f16f-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Eingabefrist: Böztal (Hornussen) IO/AO\, K482\; Belagssanierung
+DESCRIPTION:Auftraggeber: Abteilung Tiefbau (ATB)\nEingabefrist: 11.12.2026
+ \, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9651764
+ 4-ce83-423f-bd48-95ad5de8f16f/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/96517644-ce83-423f-bd48-95ad5de8f16f
+URL:https://auftragsregister.ch/de/auftrag/96517644-ce83-423f-bd48-95ad5de8
+ f16f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Böztal (Hornussen) IO/AO\, K482\; Belagssanierun
+ g
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

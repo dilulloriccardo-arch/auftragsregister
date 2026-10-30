@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc360487-3781-434d-af18-86d52316017c-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261214T140000Z
+SUMMARY:Eingabefrist: AS25 Münsingen\, Wendegleis Elektro- und Solarplanun
+ g Münsingen 1154885
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Infrastruktur -
+  Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\nEingab
+ efrist: 14.12.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/bc360487-3781-434d-af18-86d52316017c/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/bc360487-3781-434d-af18-86d52316017c
+URL:https://auftragsregister.ch/de/auftrag/bc360487-3781-434d-af18-86d52316
+ 017c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AS25 Münsingen\, Wendegleis Elektro- und Solarpl
+ anung Münsingen 1154885
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

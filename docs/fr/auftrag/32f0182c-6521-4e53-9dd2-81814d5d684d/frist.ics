@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32f0182c-6521-4e53-9dd2-81814d5d684d-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Délai de remise : SZO Spital Wallis - SKP 225 joints et isolatio
+ ns spécifiques TP1+TP7\, travaux de transformation et d'extension sous-so
+ l/rez-de-chaussée
+DESCRIPTION:Acheteur public : Hôpital du Valais - Spital Wallis\nDélai 
+ de remise : 09.12.2026\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/32f0182c-6521-4e53-9dd2-81814d5d684d/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/32f0182c-6521-4e53-9dd2-81814d
+ 5d684d
+URL:https://auftragsregister.ch/fr/auftrag/32f0182c-6521-4e53-9dd2-81814d5d
+ 684d/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : SZO Spital Wallis - SKP 225 joints et isol
+ ations spécifiques TP1+TP7\, travaux de transformation et d'extension sou
+ s-sol/rez-de-chaussée
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

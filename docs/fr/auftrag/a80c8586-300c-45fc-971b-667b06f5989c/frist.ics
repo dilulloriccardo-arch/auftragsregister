@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a80c8586-300c-45fc-971b-667b06f5989c-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Délai de remise : RO 1033\, Areal Rosental\, Umbau Laborgebäude
+ \, BKP 244 Lüftungsanlagen
+DESCRIPTION:Acheteur public : Bau- und Verkehrsdepartement des Kantons Ba
+ sel-Stadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\n
+ Délai de remise : 09.12.2026\, 12 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/a80c8586-300c-45fc-971b-667b06f5989c/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/a80c8586-3
+ 00c-45fc-971b-667b06f5989c
+URL:https://auftragsregister.ch/fr/auftrag/a80c8586-300c-45fc-971b-667b06f5
+ 989c/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : RO 1033\, Areal Rosental\, Umbau Laborgeb
+ äude\, BKP 244 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

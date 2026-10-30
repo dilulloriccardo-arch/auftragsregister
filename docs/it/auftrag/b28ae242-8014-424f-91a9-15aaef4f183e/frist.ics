@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b28ae242-8014-424f-91a9-15aaef4f183e-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Scadenza: (b26049) Tenero\, CST5 piscine\, nuovo edificio sostituti
+ vo / CCC 233.2
+DESCRIPTION:Ente pubblico: Ufficio federale delle costruzioni e della logis
+ tica UFCL\nScadenza: 10.12.2026\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/b28ae242-8014-424f-91a9-15aaef4f183e/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/b28ae242-8014-424f-91a9-1
+ 5aaef4f183e
+URL:https://auftragsregister.ch/it/auftrag/b28ae242-8014-424f-91a9-15aaef4f
+ 183e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (b26049) Tenero\, CST5 piscine\, nuovo edificio sosti
+ tutivo / CCC 233.2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

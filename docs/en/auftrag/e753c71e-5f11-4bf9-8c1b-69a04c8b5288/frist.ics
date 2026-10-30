@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e753c71e-5f11-4bf9-8c1b-69a04c8b5288-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T150000Z
+SUMMARY:Submission deadline: Dienstleistung Fahrschule TBA ZH
+DESCRIPTION:Public buyer: Tiefbauamt\, Abt. Stab\nSubmission deadline: 11 
+ Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /e753c71e-5f11-4bf9-8c1b-69a04c8b5288/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/e753c71e-5f11-4bf9-8c1b-69a04c8b5288
+URL:https://auftragsregister.ch/en/auftrag/e753c71e-5f11-4bf9-8c1b-69a04c8b
+ 5288/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Dienstleistung Fahrschule TBA ZH
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

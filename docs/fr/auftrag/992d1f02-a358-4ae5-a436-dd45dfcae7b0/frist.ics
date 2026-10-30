@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:992d1f02-a358-4ae5-a436-dd45dfcae7b0-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261126T110000Z
+SUMMARY:Délai de remise : Elektroinstallationen
+DESCRIPTION:Acheteur public : Gemeinde Flawil\nDélai de remise : 26.11
+ .2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/992d1f02-a358-4ae5-a436-dd45dfcae7b0/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/992d1f02-a358-4ae5-a436-dd45dfcae7b0
+URL:https://auftragsregister.ch/fr/auftrag/992d1f02-a358-4ae5-a436-dd45dfca
+ e7b0/
+LOCATION:Flawil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

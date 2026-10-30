@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aec2f207-fb38-43c0-ab97-25edf86fb3cd-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Submission deadline: BAV 80746 Schulanlage Triemli\, In der Ey\, Er
+ satzneubau - BKP 271 Gipserarbeiten (Innenputz und abgehängte Decken)
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 14 Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/aec2f207-fb38-43c0-ab97-25edf86fb3cd/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/aec2f207-fb38-43c0-ab97-25edf86fb3cd
+URL:https://auftragsregister.ch/en/auftrag/aec2f207-fb38-43c0-ab97-25edf86f
+ b3cd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 80746 Schulanlage Triemli\, In der Ey\
+ , Ersatzneubau - BKP 271 Gipserarbeiten (Innenputz und abgehängte Decken)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

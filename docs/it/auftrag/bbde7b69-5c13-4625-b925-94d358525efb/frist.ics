@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbde7b69-5c13-4625-b925-94d358525efb-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T225959Z
+SUMMARY:Scadenza: Gemeinde Oetwil am See\, Beschaffung ICT-Betrieb und Infr
+ astruktur
+DESCRIPTION:Ente pubblico: Gemeinde Oetwil am See\nScadenza: 11.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/bbde7b69-5c13-4
+ 625-b925-94d358525efb/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/bbde7b69-5c13-4625-b925-94d358525efb
+URL:https://auftragsregister.ch/it/auftrag/bbde7b69-5c13-4625-b925-94d35852
+ 5efb/
+LOCATION:Oetwil am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gemeinde Oetwil am See\, Beschaffung ICT-Betrieb und 
+ Infrastruktur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

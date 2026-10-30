@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:73082dca-a699-488a-8f6e-a7b3ffd2ddb1-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Eingabefrist: Lösung Smart Prison Justizvollzug Luzern
+DESCRIPTION:Auftraggeber: Kanton Luzern\, Dienststelle Militär\, Zivilschu
+ tz und Justizvollzug\nEingabefrist: 11.12.2026\, 12.00 Uhr\nIm Register: 
+ https://auftragsregister.ch/de/auftrag/73082dca-a699-488a-8f6e-a7b3ffd2ddb
+ 1/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/73082dca-
+ a699-488a-8f6e-a7b3ffd2ddb1
+URL:https://auftragsregister.ch/de/auftrag/73082dca-a699-488a-8f6e-a7b3ffd2
+ ddb1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Lösung Smart Prison Justizvollzug Luzern
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

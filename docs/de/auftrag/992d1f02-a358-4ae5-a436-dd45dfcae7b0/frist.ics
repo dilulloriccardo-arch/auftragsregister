@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:992d1f02-a358-4ae5-a436-dd45dfcae7b0-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261126T110000Z
+SUMMARY:Eingabefrist: Elektroinstallationen
+DESCRIPTION:Auftraggeber: Gemeinde Flawil\nEingabefrist: 26.11.2026\, 12.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/992d1f02-a358-4
+ ae5-a436-dd45dfcae7b0/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/992d1f02-a358-4ae5-a436-dd45dfcae7b0
+URL:https://auftragsregister.ch/de/auftrag/992d1f02-a358-4ae5-a436-dd45dfca
+ e7b0/
+LOCATION:Flawil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

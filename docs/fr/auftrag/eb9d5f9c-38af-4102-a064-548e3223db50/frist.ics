@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb9d5f9c-38af-4102-a064-548e3223db50-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Délai de remise : 297_Groupe scolaire des Grands Esserts_CFC 213
+ .2_Charpente métallique
+DESCRIPTION:Acheteur public : Commune de Veyrier (Esposito + Javet arch.)
+ \nDélai de remise : 09.12.2026\, 12 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/eb9d5f9c-38af-4102-a064-548e3223db50/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/eb9d5f9c
+ -38af-4102-a064-548e3223db50
+URL:https://auftragsregister.ch/fr/auftrag/eb9d5f9c-38af-4102-a064-548e3223
+ db50/
+LOCATION:Veyrier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 297_Groupe scolaire des Grands Esserts_CFC
+  213.2_Charpente métallique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

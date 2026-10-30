@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6fd0a3b1-b56e-4d82-bad2-7e727d76f6e2-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261124T160000Z
+SUMMARY:Scadenza: Sanierung Bodensee-Arena Leistungsofferte Elektroplanung
+DESCRIPTION:Ente pubblico: Stadt Kreuzlingen\nScadenza: 24.11.2026\, 17:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/6fd0a3b1-b56e-4d82-b
+ ad2-7e727d76f6e2/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/6fd0a3b1-b56e-4d82-bad2-7e727d76f6e2
+URL:https://auftragsregister.ch/it/auftrag/6fd0a3b1-b56e-4d82-bad2-7e727d76
+ f6e2/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Bodensee-Arena Leistungsofferte Elektroplan
+ ung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

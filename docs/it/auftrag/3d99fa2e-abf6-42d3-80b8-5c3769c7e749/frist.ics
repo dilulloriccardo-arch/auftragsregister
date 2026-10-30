@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d99fa2e-abf6-42d3-80b8-5c3769c7e749-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T220000Z
+SUMMARY:Scadenza: Bauherrenvertretung (BHV)\, Gesamtprojektleitung (GPL) un
+ d Oberbauleitung (OBL) für die schweizweite Lärmsanierung der mil Flpl M
+ eiringen\, Emmen und Payerne
+DESCRIPTION:Ente pubblico: armasuisse Immobilien\nScadenza: 11.12.2026\, 23
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/3d99fa2e-abf6-42
+ d3-80b8-5c3769c7e749/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/3d99fa2e-abf6-42d3-80b8-5c3769c7e749
+URL:https://auftragsregister.ch/it/auftrag/3d99fa2e-abf6-42d3-80b8-5c3769c7
+ e749/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bauherrenvertretung (BHV)\, Gesamtprojektleitung (GPL
+ ) und Oberbauleitung (OBL) für die schweizweite Lärmsanierung der mil Fl
+ pl Meiringen\, Emmen und Payerne
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

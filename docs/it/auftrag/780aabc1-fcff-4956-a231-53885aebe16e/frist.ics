@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:780aabc1-fcff-4956-a231-53885aebe16e-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Scadenza: Terrain de rugby Grand Pré à Blonay - Saint-Légier - R
+ énovation et agrandissement du terrain de sport en gazon naturel
+DESCRIPTION:Ente pubblico: Service de l'urbanisme et des travaux\nScadenza:
+  20.11.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 780aabc1-fcff-4956-a231-53885aebe16e/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/780aabc1-fcff-4956-a231-53885aebe16e
+URL:https://auftragsregister.ch/it/auftrag/780aabc1-fcff-4956-a231-53885aeb
+ e16e/
+LOCATION:Blonay
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Terrain de rugby Grand Pré à Blonay - Saint-Légier
+  - Rénovation et agrandissement du terrain de sport en gazon naturel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

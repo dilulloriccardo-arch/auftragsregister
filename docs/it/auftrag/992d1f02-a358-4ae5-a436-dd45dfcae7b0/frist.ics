@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:992d1f02-a358-4ae5-a436-dd45dfcae7b0-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261126T110000Z
+SUMMARY:Scadenza: Elektroinstallationen
+DESCRIPTION:Ente pubblico: Gemeinde Flawil\nScadenza: 26.11.2026\, 12:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/992d1f02-a358-4ae5-a43
+ 6-dd45dfcae7b0/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/992d1f02-a358-4ae5-a436-dd45dfcae7b0
+URL:https://auftragsregister.ch/it/auftrag/992d1f02-a358-4ae5-a436-dd45dfca
+ e7b0/
+LOCATION:Flawil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

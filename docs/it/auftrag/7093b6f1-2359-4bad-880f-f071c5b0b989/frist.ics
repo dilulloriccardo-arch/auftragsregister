@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7093b6f1-2359-4bad-880f-f071c5b0b989-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Scadenza: Tittwiesenpark
+DESCRIPTION:Ente pubblico: Stadt Chur\, Hochbaudienste\, Freiraumplanung\nS
+ cadenza: 27.11.2026\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 7093b6f1-2359-4bad-880f-f071c5b0b989/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/7093b6f1-2359-4bad-880f-f071c5b0b989
+URL:https://auftragsregister.ch/it/auftrag/7093b6f1-2359-4bad-880f-f071c5b0
+ b989/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Tittwiesenpark
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

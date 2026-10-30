@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e753c71e-5f11-4bf9-8c1b-69a04c8b5288-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T150000Z
+SUMMARY:Délai de remise : Acquisition de services de formation à la con
+ duite Contexte : Le Service des travaux publics du canton de Zurich (Tiefb
+ auamt des Kantons Zürich)\, ci-après dénommé « TBA ZH » ou « pouvoi
+ r adjudicateur »\, emploie environ 500 collaborateurs. La majeure
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Stab\nDélai de remise 
+ : 11.12.2026\, 16 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/e753c71e-5f11-4bf9-8c1b-69a04c8b5288/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/e753c71e-5f11-4bf9-8c1b-69a04
+ c8b5288
+URL:https://auftragsregister.ch/fr/auftrag/e753c71e-5f11-4bf9-8c1b-69a04c8b
+ 5288/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition de services de formation à la
+  conduite Contexte : Le Service des travaux publics du canton de Zurich (T
+ iefbauamt des Kantons Zürich)\, ci-après dénommé « TBA ZH » ou « po
+ uvoir adjudicateur »\, emploie environ 500 collaborateurs. La majeure
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

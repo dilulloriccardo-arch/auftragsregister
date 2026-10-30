@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0058abfd-8eda-4073-bfdc-3304b141631f-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Eingabefrist: Zeiningen – Möhlin AO\, K292\, Belagssanierung
+DESCRIPTION:Auftraggeber: Abteilung Tiefbau (ATB)\nEingabefrist: 11.12.2026
+ \, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0058abf
+ d-8eda-4073-bfdc-3304b141631f/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/0058abfd-8eda-4073-bfdc-3304b141631f
+URL:https://auftragsregister.ch/de/auftrag/0058abfd-8eda-4073-bfdc-3304b141
+ 631f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Zeiningen – Möhlin AO\, K292\, Belagssanierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

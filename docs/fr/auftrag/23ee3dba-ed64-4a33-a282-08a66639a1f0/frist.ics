@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23ee3dba-ed64-4a33-a282-08a66639a1f0-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261212T225900Z
+SUMMARY:Délai de remise : Baumeisterarbeiten Erneuerung Lehnenbrücke Su
+ nnhalte 4\, Frutigen
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 12.12.2026\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/23ee3dba-ed64-4a33-a282-08a66639a1f0/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/23ee3dba-ed64-4a33-a282-
+ 08a66639a1f0
+URL:https://auftragsregister.ch/fr/auftrag/23ee3dba-ed64-4a33-a282-08a66639
+ a1f0/
+LOCATION:Frutigen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Baumeisterarbeiten Erneuerung Lehnenbrück
+ e Sunnhalte 4\, Frutigen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

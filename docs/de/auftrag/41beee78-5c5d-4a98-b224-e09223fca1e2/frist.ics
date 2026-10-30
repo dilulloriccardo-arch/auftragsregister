@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41beee78-5c5d-4a98-b224-e09223fca1e2-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Eingabefrist: Sanierung Industriestrasse\, Neuheim
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Neuheim / Abteilung Bau und Pla
+ nung\nEingabefrist: 27.11.2026\, 12.00 Uhr\nIm Register: https://auftrags
+ register.ch/de/auftrag/41beee78-5c5d-4a98-b224-e09223fca1e2/\nAmtliche Pub
+ likation: https://www.simap.ch/de/project-detail/41beee78-5c5d-4a98-b224-e
+ 09223fca1e2
+URL:https://auftragsregister.ch/de/auftrag/41beee78-5c5d-4a98-b224-e09223fc
+ a1e2/
+LOCATION:Neuheim
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Industriestrasse\, Neuheim
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

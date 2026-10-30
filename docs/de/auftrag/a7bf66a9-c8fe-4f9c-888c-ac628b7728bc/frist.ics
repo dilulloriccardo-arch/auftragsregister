@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a7bf66a9-c8fe-4f9c-888c-ac628b7728bc-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Eingabefrist: Bau Nr. 14125 - Badener- und Dennlerstrasse\, Abschni
+ tt Badenerstrasse 526 bis 542\, Dennlerstrasse 1 bis 52\, Cyklamenweg 1 bi
+ s 14
+DESCRIPTION:Auftraggeber: Tiefbauamt\, Abt. Realisierung\nEingabefrist: 02.
+ 12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ a7bf66a9-c8fe-4f9c-888c-ac628b7728bc/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/a7bf66a9-c8fe-4f9c-888c-ac628b7728bc
+URL:https://auftragsregister.ch/de/auftrag/a7bf66a9-c8fe-4f9c-888c-ac628b77
+ 28bc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bau Nr. 14125 - Badener- und Dennlerstrasse\, Abs
+ chnitt Badenerstrasse 526 bis 542\, Dennlerstrasse 1 bis 52\, Cyklamenweg 
+ 1 bis 14
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

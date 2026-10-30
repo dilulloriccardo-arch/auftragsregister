@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0c10aff3-3c64-4c8f-af36-3aaa629a1b16-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T140000Z
+SUMMARY:Submission deadline: Neubau Klinikum 2\, Phase 1\, SKP 811\, OP- un
+ d Untersuchungsleuchten
+DESCRIPTION:Public buyer: Universitätsspital Basel\nSubmission deadline: 1
+ 0 Dec 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/0c10aff3-3c64-4c8f-af36-3aaa629a1b16/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/0c10aff3-3c64-4c8f-af36-3aaa629a1b16
+URL:https://auftragsregister.ch/en/auftrag/0c10aff3-3c64-4c8f-af36-3aaa629a
+ 1b16/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Klinikum 2\, Phase 1\, SKP 811\, OP
+ - und Untersuchungsleuchten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

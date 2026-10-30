@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c048e23d-a0f9-42a5-8b07-664bc662597b-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Eingabefrist: (b26055-11) Bern\, Monbijoustrasse 40\, Gesamtsanieru
+ ng / BKP 228
+DESCRIPTION:Auftraggeber: Bundesamt für Bauten und Logistik BBL\nEingabefr
+ ist: 10.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/c048e23d-a0f9-42a5-8b07-664bc662597b/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/c048e23d-a0f9-42a5-8b07-664bc662597b
+URL:https://auftragsregister.ch/de/auftrag/c048e23d-a0f9-42a5-8b07-664bc662
+ 597b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (b26055-11) Bern\, Monbijoustrasse 40\, Gesamtsan
+ ierung / BKP 228
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

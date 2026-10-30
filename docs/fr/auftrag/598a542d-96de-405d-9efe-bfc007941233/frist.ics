@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:598a542d-96de-405d-9efe-bfc007941233-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261127T103000Z
+SUMMARY:Délai de remise : Entretien du réseau routier communal 2027-202
+ 8
+DESCRIPTION:Acheteur public : Commune de La Grande Béroche - Service Tec
+ hnique\nDélai de remise : 27.11.2026\, 11 h 30\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/598a542d-96de-405d-9efe-bfc007941
+ 233/\nPublication officielle : https://www.simap.ch/fr/project-detail/59
+ 8a542d-96de-405d-9efe-bfc007941233
+URL:https://auftragsregister.ch/fr/auftrag/598a542d-96de-405d-9efe-bfc00794
+ 1233/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Entretien du réseau routier communal 2027
+ -2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

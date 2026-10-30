@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a899418-353b-4e54-8669-d42fb5d81b7a-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Scadenza: Transports scolaires
+DESCRIPTION:Ente pubblico: Commune de Gibloux\nScadenza: 09.12.2026\, 11:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/5a899418-353b-4e54-
+ 8669-d42fb5d81b7a/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/5a899418-353b-4e54-8669-d42fb5d81b7a
+URL:https://auftragsregister.ch/it/auftrag/5a899418-353b-4e54-8669-d42fb5d8
+ 1b7a/
+LOCATION:Farvagny
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Transports scolaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

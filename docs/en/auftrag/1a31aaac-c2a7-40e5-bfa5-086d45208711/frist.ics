@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1a31aaac-c2a7-40e5-bfa5-086d45208711-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Submission deadline: 16.0249 - Langenthal\, Sanierung und Erweiteru
+ ng Berufsfachschule: 244 Lüftungsanlagen
+DESCRIPTION:Public buyer: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nSubmission deadline: 9 Dec 2026\, 23:59\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/1a31aaac-c2a7-40e5-bfa5-086d45208711/\n
+ Official publication: https://www.simap.ch/en/project-detail/1a31aaac-c2a7
+ -40e5-bfa5-086d45208711
+URL:https://auftragsregister.ch/en/auftrag/1a31aaac-c2a7-40e5-bfa5-086d4520
+ 8711/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 16.0249 - Langenthal\, Sanierung und Erwei
+ terung Berufsfachschule: 244 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

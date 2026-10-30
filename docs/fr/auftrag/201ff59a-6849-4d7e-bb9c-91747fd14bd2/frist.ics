@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:201ff59a-6849-4d7e-bb9c-91747fd14bd2-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261214T130000Z
+SUMMARY:Délai de remise : MVR_Substitution du trafic ferroviaire par bus
+  Montreux - Haut-de-Caux 2027
+DESCRIPTION:Acheteur public : Transports MONTREUX-VEVEY-RIVIERA SA\nDéla
+ i de remise : 14.12.2026\, 14 h 00\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/201ff59a-6849-4d7e-bb9c-91747fd14bd2/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/201ff59a-6849-4
+ d7e-bb9c-91747fd14bd2
+URL:https://auftragsregister.ch/fr/auftrag/201ff59a-6849-4d7e-bb9c-91747fd1
+ 4bd2/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MVR_Substitution du trafic ferroviaire par
+  bus Montreux - Haut-de-Caux 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

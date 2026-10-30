@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f1f463b-ab1f-4c25-97a1-67f89cad8bf5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261126T110000Z
+SUMMARY:Scadenza: Fenster in Holz
+DESCRIPTION:Ente pubblico: Gemeinde Flawil\nScadenza: 26.11.2026\, 12:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/5f1f463b-ab1f-4c25-97a
+ 1-67f89cad8bf5/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/5f1f463b-ab1f-4c25-97a1-67f89cad8bf5
+URL:https://auftragsregister.ch/it/auftrag/5f1f463b-ab1f-4c25-97a1-67f89cad
+ 8bf5/
+LOCATION:Flawil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fenster in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

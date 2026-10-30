@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:282b2b32-b202-4f5d-b38d-70184a0e3450-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20270115T110000Z
+SUMMARY:Submission deadline: ARA Thurau\, Trafostationen BKP 231.11
+DESCRIPTION:Public buyer: Abwasserverband Thurau\nSubmission deadline: 15 
+ Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /282b2b32-b202-4f5d-b38d-70184a0e3450/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/282b2b32-b202-4f5d-b38d-70184a0e3450
+URL:https://auftragsregister.ch/en/auftrag/282b2b32-b202-4f5d-b38d-70184a0e
+ 3450/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ARA Thurau\, Trafostationen BKP 231.11
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:780aabc1-fcff-4956-a231-53885aebe16e-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261120T100000Z
+SUMMARY:Délai de remise : Terrain de rugby Grand Pré à Blonay - Saint-
+ Légier - Rénovation et agrandissement du terrain de sport en gazon natur
+ el
+DESCRIPTION:Acheteur public : Service de l'urbanisme et des travaux\nDél
+ ai de remise : 20.11.2026\, 11 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/780aabc1-fcff-4956-a231-53885aebe16e/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/780aabc1-fcff-
+ 4956-a231-53885aebe16e
+URL:https://auftragsregister.ch/fr/auftrag/780aabc1-fcff-4956-a231-53885aeb
+ e16e/
+LOCATION:Blonay
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Terrain de rugby Grand Pré à Blonay - Sa
+ int-Légier - Rénovation et agrandissement du terrain de sport en gazon n
+ aturel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

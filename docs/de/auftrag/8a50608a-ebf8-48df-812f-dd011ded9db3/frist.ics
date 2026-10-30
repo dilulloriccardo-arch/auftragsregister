@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a50608a-ebf8-48df-812f-dd011ded9db3-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261124T160000Z
+SUMMARY:Eingabefrist: Sanierung Bodensee-Arena Leistungsofferte HLKS inkl. 
+ Gebäudeautomation und Fachkoordination
+DESCRIPTION:Auftraggeber: Stadt Kreuzlingen\nEingabefrist: 24.11.2026\, 17.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8a50608a-ebf8
+ -48df-812f-dd011ded9db3/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/8a50608a-ebf8-48df-812f-dd011ded9db3
+URL:https://auftragsregister.ch/de/auftrag/8a50608a-ebf8-48df-812f-dd011ded
+ 9db3/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Bodensee-Arena Leistungsofferte HLKS in
+ kl. Gebäudeautomation und Fachkoordination
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

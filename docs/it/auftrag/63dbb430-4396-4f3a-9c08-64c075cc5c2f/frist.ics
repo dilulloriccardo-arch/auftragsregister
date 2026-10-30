@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:63dbb430-4396-4f3a-9c08-64c075cc5c2f-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Scadenza: Ein markierungsfreies quantitatives 3D-Bildgebungssystem 
+ für lebende Zellen
+DESCRIPTION:Ente pubblico: EPFL-Scientific Equipment\nScadenza: 09.12.2026\
+ , 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/63dbb430-439
+ 6-4f3a-9c08-64c075cc5c2f/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/63dbb430-4396-4f3a-9c08-64c075cc5c2f
+URL:https://auftragsregister.ch/it/auftrag/63dbb430-4396-4f3a-9c08-64c075cc
+ 5c2f/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ein markierungsfreies quantitatives 3D-Bildgebungssys
+ tem für lebende Zellen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

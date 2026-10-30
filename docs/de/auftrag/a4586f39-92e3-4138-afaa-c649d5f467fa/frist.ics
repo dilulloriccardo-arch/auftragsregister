@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a4586f39-92e3-4138-afaa-c649d5f467fa-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T160000Z
+SUMMARY:Eingabefrist: Lieferung von Holz (Los 1 und Los 2)
+DESCRIPTION:Auftraggeber: HBD - Immobilien Stadt Zürich (IMMO)\nEingabefri
+ st: 09.12.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/a4586f39-92e3-4138-afaa-c649d5f467fa/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/a4586f39-92e3-4138-afaa-c649d5f467fa
+URL:https://auftragsregister.ch/de/auftrag/a4586f39-92e3-4138-afaa-c649d5f4
+ 67fa/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Lieferung von Holz (Los 1 und Los 2)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2977862d-7b4f-442f-903a-c54ae7bcfd47-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Délai de remise : Hôpital du Valais (SZO) - SKP 224 : travaux d
+ e couverture TP1\, transformation et extension sous-sol/rez-de-chaussée
+DESCRIPTION:Acheteur public : Hôpital du Valais - Spital Wallis\nDélai 
+ de remise : 09.12.2026\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/2977862d-7b4f-442f-903a-c54ae7bcfd47/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/2977862d-7b4f-442f-903a-c54ae7
+ bcfd47
+URL:https://auftragsregister.ch/fr/auftrag/2977862d-7b4f-442f-903a-c54ae7bc
+ fd47/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Hôpital du Valais (SZO) - SKP 224 : trava
+ ux de couverture TP1\, transformation et extension sous-sol/rez-de-chauss
+ ée
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

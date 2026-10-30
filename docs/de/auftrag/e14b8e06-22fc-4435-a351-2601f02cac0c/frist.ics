@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e14b8e06-22fc-4435-a351-2601f02cac0c-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Eingabefrist: Kanal-/Schachtreinigung 2027-2028 Kanton Zürich\, St
+ rassenregion I - IV
+DESCRIPTION:Auftraggeber: Tiefbauamt\, Abt. Strasseninspektorat\nEingabefri
+ st: 11.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/e14b8e06-22fc-4435-a351-2601f02cac0c/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/e14b8e06-22fc-4435-a351-2601f02cac0c
+URL:https://auftragsregister.ch/de/auftrag/e14b8e06-22fc-4435-a351-2601f02c
+ ac0c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kanal-/Schachtreinigung 2027-2028 Kanton Zürich\
+ , Strassenregion I - IV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

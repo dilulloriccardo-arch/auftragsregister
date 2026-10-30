@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc5a44d1-90e2-4754-b492-dd59c178415b-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261215T090000Z
+SUMMARY:Délai de remise : Services de nettoyage pour les immeubles de bu
+ reaux de la SVA de Bâle-Campagne
+DESCRIPTION:Acheteur public : SVA Basel-Landschaft\nDélai de remise : 
+ 15.12.2026\, 10 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/cc5a44d1-90e2-4754-b492-dd59c178415b/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/cc5a44d1-90e2-4754-b492-dd59c1
+ 78415b
+URL:https://auftragsregister.ch/fr/auftrag/cc5a44d1-90e2-4754-b492-dd59c178
+ 415b/
+LOCATION:Binningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Services de nettoyage pour les immeubles d
+ e bureaux de la SVA de Bâle-Campagne
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

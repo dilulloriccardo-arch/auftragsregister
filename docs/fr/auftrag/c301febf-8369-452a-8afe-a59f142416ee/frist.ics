@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c301febf-8369-452a-8afe-a59f142416ee-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261203T150000Z
+SUMMARY:Délai de remise : BAV 80753 Schulanlage Saatlen\, Ersatzneubau -
+  CFC 461 Travaux de terrassement et de fondations
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 03.12.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/c301febf-8369-452a-8afe-a59f142416ee/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/c301febf-8369-452a-8
+ afe-a59f142416ee
+URL:https://auftragsregister.ch/fr/auftrag/c301febf-8369-452a-8afe-a59f1424
+ 16ee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 80753 Schulanlage Saatlen\, Ersatzneub
+ au - CFC 461 Travaux de terrassement et de fondations
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

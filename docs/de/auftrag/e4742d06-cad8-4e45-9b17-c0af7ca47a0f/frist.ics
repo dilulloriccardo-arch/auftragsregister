@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4742d06-cad8-4e45-9b17-c0af7ca47a0f-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Eingabefrist: COSAHL - Réalisation d'un nouveau cycle d'orientatio
+ n avec salle de sport triple\, à Givisiez.
+DESCRIPTION:Auftraggeber: COSAHL - Association du cycle d'orientation de la
+  Sarine-Campagne et du Haut-Lac français\nEingabefrist: 09.12.2026\, 12.0
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e4742d06-cad8-
+ 4e45-9b17-c0af7ca47a0f/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/e4742d06-cad8-4e45-9b17-c0af7ca47a0f
+URL:https://auftragsregister.ch/de/auftrag/e4742d06-cad8-4e45-9b17-c0af7ca4
+ 7a0f/
+LOCATION:Givisiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: COSAHL - Réalisation d'un nouveau cycle d'orient
+ ation avec salle de sport triple\, à Givisiez.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

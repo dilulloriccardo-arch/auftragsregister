@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a50608a-ebf8-48df-812f-dd011ded9db3-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261124T160000Z
+SUMMARY:Scadenza: Sanierung Bodensee-Arena Leistungsofferte HLKS inkl. Geb
+ äudeautomation und Fachkoordination
+DESCRIPTION:Ente pubblico: Stadt Kreuzlingen\nScadenza: 24.11.2026\, 17:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/8a50608a-ebf8-48df-8
+ 12f-dd011ded9db3/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/8a50608a-ebf8-48df-812f-dd011ded9db3
+URL:https://auftragsregister.ch/it/auftrag/8a50608a-ebf8-48df-812f-dd011ded
+ 9db3/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Bodensee-Arena Leistungsofferte HLKS inkl. 
+ Gebäudeautomation und Fachkoordination
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

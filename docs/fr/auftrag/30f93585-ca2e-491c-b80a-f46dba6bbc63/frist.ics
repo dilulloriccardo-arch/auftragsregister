@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:30f93585-ca2e-491c-b80a-f46dba6bbc63-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Délai de remise : Rénovation et agrandissement du complexe scol
+ aire Wolfsmatt\, Dietikon - CFC 421.1 Travaux d'horticulture pour l'école
+  maternelle
+DESCRIPTION:Acheteur public : Stadt Dietikon\, Hochbauabteilung\nDélai d
+ e remise : 16.12.2026\, 11 h 00\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/30f93585-ca2e-491c-b80a-f46dba6bbc63/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/30f93585-ca2e-491c
+ -b80a-f46dba6bbc63
+URL:https://auftragsregister.ch/fr/auftrag/30f93585-ca2e-491c-b80a-f46dba6b
+ bc63/
+LOCATION:Dietikon\, Schöneggstrasse 70
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation et agrandissement du complexe 
+ scolaire Wolfsmatt\, Dietikon - CFC 421.1 Travaux d'horticulture pour l'é
+ cole maternelle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

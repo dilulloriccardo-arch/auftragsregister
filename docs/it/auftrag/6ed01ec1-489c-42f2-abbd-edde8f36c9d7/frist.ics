@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6ed01ec1-489c-42f2-abbd-edde8f36c9d7-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20270106T120000Z
+SUMMARY:Scadenza: Contrat cadre sur le parc ventilateurs de l'HFR
+DESCRIPTION:Ente pubblico: HFR | hôpital fribourgeois - freiburger spital\
+ nScadenza: 06.01.2027\, 13:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/6ed01ec1-489c-42f2-abbd-edde8f36c9d7/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/6ed01ec1-489c-42f2-abbd-edde8f36c9d
+ 7
+URL:https://auftragsregister.ch/it/auftrag/6ed01ec1-489c-42f2-abbd-edde8f36
+ c9d7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Contrat cadre sur le parc ventilateurs de l'HFR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b70a4b4f-aaf8-4bfb-8b73-99525ba8fec7-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T160000Z
+SUMMARY:Délai de remise : VS Weissenbühl\, Neubau\, BKP 233 Beleuchtung
+ /Lieferung Innenleuchten
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 09.12.2026\, 17 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/b70a4b4f-aaf8-4bfb-8b73-99525ba8fec7/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/b70a4b4f-aa
+ f8-4bfb-8b73-99525ba8fec7
+URL:https://auftragsregister.ch/fr/auftrag/b70a4b4f-aaf8-4bfb-8b73-99525ba8
+ fec7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : VS Weissenbühl\, Neubau\, BKP 233 Beleuch
+ tung/Lieferung Innenleuchten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

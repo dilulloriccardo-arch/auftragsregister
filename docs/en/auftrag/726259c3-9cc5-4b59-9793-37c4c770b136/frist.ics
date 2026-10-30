@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:726259c3-9cc5-4b59-9793-37c4c770b136-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Submission deadline: ARA Thurau\, Ausrüstung Biologie
+DESCRIPTION:Public buyer: Abwasserverband Thurau\nSubmission deadline: 29 
+ Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /726259c3-9cc5-4b59-9793-37c4c770b136/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/726259c3-9cc5-4b59-9793-37c4c770b136
+URL:https://auftragsregister.ch/en/auftrag/726259c3-9cc5-4b59-9793-37c4c770
+ b136/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ARA Thurau\, Ausrüstung Biologie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

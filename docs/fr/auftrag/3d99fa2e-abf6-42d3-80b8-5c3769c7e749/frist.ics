@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d99fa2e-abf6-42d3-80b8-5c3769c7e749-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T220000Z
+SUMMARY:Délai de remise : Représentation du maître d’ouvrage (RMO)\,
+  direction générale de projet (DGP) et direction supérieure des travaux
+  (DST) pour l’assainissement acoustique\, des aérodromes militaires de 
+ Meiringen\, Emmen et Payerne.
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  11.12.2026\, 23 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/3d99fa2e-abf6-42d3-80b8-5c3769c7e749/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/3d99fa2e-abf6-42d3-80b8-5c3769
+ c7e749
+URL:https://auftragsregister.ch/fr/auftrag/3d99fa2e-abf6-42d3-80b8-5c3769c7
+ e749/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Représentation du maître d’ouvrage (RM
+ O)\, direction générale de projet (DGP) et direction supérieure des tra
+ vaux (DST) pour l’assainissement acoustique\, des aérodromes militaires
+  de Meiringen\, Emmen et Payerne.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

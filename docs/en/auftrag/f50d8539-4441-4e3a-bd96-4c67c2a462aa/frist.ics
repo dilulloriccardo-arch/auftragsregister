@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f50d8539-4441-4e3a-bd96-4c67c2a462aa-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Submission deadline: Ausschreibung – Gebäudereinigung Stadt Opfi
+ kon – Stadthaus und Feuerwehr/Werkhofgebäude
+DESCRIPTION:Public buyer: Stadt Opfikon (FMCW)\nSubmission deadline: 10 De
+ c 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/f
+ 50d8539-4441-4e3a-bd96-4c67c2a462aa/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/f50d8539-4441-4e3a-bd96-4c67c2a462aa
+URL:https://auftragsregister.ch/en/auftrag/f50d8539-4441-4e3a-bd96-4c67c2a4
+ 62aa/
+LOCATION:Glattbrugg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibung – Gebäudereinigung Stadt 
+ Opfikon – Stadthaus und Feuerwehr/Werkhofgebäude
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

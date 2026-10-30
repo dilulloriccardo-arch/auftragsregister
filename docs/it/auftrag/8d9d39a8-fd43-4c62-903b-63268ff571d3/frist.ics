@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8d9d39a8-fd43-4c62-903b-63268ff571d3-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261119T150000Z
+SUMMARY:Scadenza: Bau Nr. 10585 - Hirzenbachweg
+DESCRIPTION:Ente pubblico: Tiefbauamt\, Abt. Realisierung\nScadenza: 19.11.
+ 2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/8d9d39a
+ 8-fd43-4c62-903b-63268ff571d3/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/8d9d39a8-fd43-4c62-903b-63268ff571d3
+URL:https://auftragsregister.ch/it/auftrag/8d9d39a8-fd43-4c62-903b-63268ff5
+ 71d3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bau Nr. 10585 - Hirzenbachweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d4726522-19c2-430e-a1c7-0d541f9aef9d-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Délai de remise : BAV 82156 Freibad Letzigraben\, Umbau Restaura
+ nt - BKP 230 Elektroanlagen
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 24.11.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/d4726522-19c2-430e-a1c7-0d541f9aef9d/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/d4726522-19c2-430e-a
+ 1c7-0d541f9aef9d
+URL:https://auftragsregister.ch/fr/auftrag/d4726522-19c2-430e-a1c7-0d541f9a
+ ef9d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 82156 Freibad Letzigraben\, Umbau Rest
+ aurant - BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da520ac2-7963-4373-b516-aa0999fa3d0b-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261119T150000Z
+SUMMARY:Scadenza: BAV 83298 ZM-Langmatt II\, Verschiebung und Erweiterung -
+  BKP 211 Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 19.11
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/da520a
+ c2-7963-4373-b516-aa0999fa3d0b/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/da520ac2-7963-4373-b516-aa0999fa3d0b
+URL:https://auftragsregister.ch/it/auftrag/da520ac2-7963-4373-b516-aa0999fa
+ 3d0b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 83298 ZM-Langmatt II\, Verschiebung und Erweiteru
+ ng - BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

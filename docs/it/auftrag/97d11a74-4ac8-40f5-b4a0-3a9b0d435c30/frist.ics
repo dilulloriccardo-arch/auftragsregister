@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:97d11a74-4ac8-40f5-b4a0-3a9b0d435c30-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Scadenza: N02\, Secondo tubo San Gottardo (2TG Röhre Nord und Gall
+ eria di Airolo) und N02 Risanamento primo tubo San Gottardo (1TG Röhre S
+ üd) Lotto 1001 – Notstromversorgungi
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA -Abteilung Strasse
+ ninfrastruktur-Ost - F3 Zofingen\nScadenza: 09.12.2026\, 23:59\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/97d11a74-4ac8-40f5-b4a0-3a9b0d4
+ 35c30/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/97
+ d11a74-4ac8-40f5-b4a0-3a9b0d435c30
+URL:https://auftragsregister.ch/it/auftrag/97d11a74-4ac8-40f5-b4a0-3a9b0d43
+ 5c30/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N02\, Secondo tubo San Gottardo (2TG Röhre Nord und 
+ Galleria di Airolo) und N02 Risanamento primo tubo San Gottardo (1TG Röhr
+ e Süd) Lotto 1001 – Notstromversorgungi
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

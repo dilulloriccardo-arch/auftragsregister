@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a4586f39-92e3-4138-afaa-c649d5f467fa-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T160000Z
+SUMMARY:Scadenza: Lieferung von Holz (Los 1 und Los 2)
+DESCRIPTION:Ente pubblico: HBD - Immobilien Stadt Zürich (IMMO)\nScadenza:
+  09.12.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ a4586f39-92e3-4138-afaa-c649d5f467fa/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/a4586f39-92e3-4138-afaa-c649d5f467fa
+URL:https://auftragsregister.ch/it/auftrag/a4586f39-92e3-4138-afaa-c649d5f4
+ 67fa/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Lieferung von Holz (Los 1 und Los 2)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

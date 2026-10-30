@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b34cbad0-1c72-40a7-95ac-b9205b08fdc5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261206T225900Z
+SUMMARY:Eingabefrist: 211 Baumeisterarbeiten Instandstellung Trakte A\,C un
+ d D
+DESCRIPTION:Auftraggeber: Stadt Wetzikon Immobilien\nEingabefrist: 06.12.20
+ 26\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b34cb
+ ad0-1c72-40a7-95ac-b9205b08fdc5/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/b34cbad0-1c72-40a7-95ac-b9205b08fdc5
+URL:https://auftragsregister.ch/de/auftrag/b34cbad0-1c72-40a7-95ac-b9205b08
+ fdc5/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 211 Baumeisterarbeiten Instandstellung Trakte A\,
+ C und D
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

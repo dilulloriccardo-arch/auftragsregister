@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f464520c-d61c-4e93-b591-4d9bc4e29124-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Délai de remise : Rénovation école du Bosson - Sols sportifs
+DESCRIPTION:Acheteur public : Ville d'Onex (Bureau d'architectes Burckhar
+ dt Architecture SA)\nDélai de remise : 09.12.2026\, 12 h 00\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/f464520c-d61c-4e93-b
+ 591-4d9bc4e29124/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/f464520c-d61c-4e93-b591-4d9bc4e29124
+URL:https://auftragsregister.ch/fr/auftrag/f464520c-d61c-4e93-b591-4d9bc4e2
+ 9124/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation école du Bosson - Sols sporti
+ fs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

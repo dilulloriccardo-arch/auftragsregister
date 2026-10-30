@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6ed01ec1-489c-42f2-abbd-edde8f36c9d7-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20270106T120000Z
+SUMMARY:Eingabefrist: Contrat cadre sur le parc ventilateurs de l'HFR
+DESCRIPTION:Auftraggeber: HFR | hôpital fribourgeois - freiburger spital\n
+ Eingabefrist: 06.01.2027\, 13.00 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/6ed01ec1-489c-42f2-abbd-edde8f36c9d7/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/6ed01ec1-489c-42f2-abbd-edde8f3
+ 6c9d7
+URL:https://auftragsregister.ch/de/auftrag/6ed01ec1-489c-42f2-abbd-edde8f36
+ c9d7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Contrat cadre sur le parc ventilateurs de l'HFR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

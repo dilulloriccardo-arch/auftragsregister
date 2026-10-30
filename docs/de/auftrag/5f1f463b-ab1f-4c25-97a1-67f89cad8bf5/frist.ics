@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f1f463b-ab1f-4c25-97a1-67f89cad8bf5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261126T110000Z
+SUMMARY:Eingabefrist: Fenster in Holz
+DESCRIPTION:Auftraggeber: Gemeinde Flawil\nEingabefrist: 26.11.2026\, 12.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5f1f463b-ab1f-4
+ c25-97a1-67f89cad8bf5/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/5f1f463b-ab1f-4c25-97a1-67f89cad8bf5
+URL:https://auftragsregister.ch/de/auftrag/5f1f463b-ab1f-4c25-97a1-67f89cad
+ 8bf5/
+LOCATION:Flawil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fenster in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b34cbad0-1c72-40a7-95ac-b9205b08fdc5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261206T225900Z
+SUMMARY:Délai de remise : 211 Baumeisterarbeiten Instandstellung Trakte 
+ A\,C und D
+DESCRIPTION:Acheteur public : Stadt Wetzikon Immobilien\nDélai de remise
+  : 06.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/b34cbad0-1c72-40a7-95ac-b9205b08fdc5/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/b34cbad0-1c72-40a7-95ac-b9
+ 205b08fdc5
+URL:https://auftragsregister.ch/fr/auftrag/b34cbad0-1c72-40a7-95ac-b9205b08
+ fdc5/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 211 Baumeisterarbeiten Instandstellung Tra
+ kte A\,C und D
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

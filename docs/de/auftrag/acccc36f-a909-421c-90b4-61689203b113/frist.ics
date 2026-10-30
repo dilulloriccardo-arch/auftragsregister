@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:acccc36f-a909-421c-90b4-61689203b113-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Eingabefrist: Extension du système de stockage Dell PowerScale et 
+ contrat-cadre pour les licences et l'assistance
+DESCRIPTION:Auftraggeber: Università della Svizzera italiana\nEingabefrist
+ : 09.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/acccc36f-a909-421c-90b4-61689203b113/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/acccc36f-a909-421c-90b4-61689203b113
+URL:https://auftragsregister.ch/de/auftrag/acccc36f-a909-421c-90b4-61689203
+ b113/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Extension du système de stockage Dell PowerScale
+  et contrat-cadre pour les licences et l'assistance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

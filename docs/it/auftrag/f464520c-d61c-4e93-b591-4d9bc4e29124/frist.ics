@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f464520c-d61c-4e93-b591-4d9bc4e29124-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Scadenza: Rénovation école du Bosson - Sols sportifs
+DESCRIPTION:Ente pubblico: Ville d'Onex (Bureau d'architectes Burckhardt Ar
+ chitecture SA)\nScadenza: 09.12.2026\, 12:00\nNel registro: https://auftra
+ gsregister.ch/it/auftrag/f464520c-d61c-4e93-b591-4d9bc4e29124/\nPubblicazi
+ one ufficiale: https://www.simap.ch/it/project-detail/f464520c-d61c-4e93-b
+ 591-4d9bc4e29124
+URL:https://auftragsregister.ch/it/auftrag/f464520c-d61c-4e93-b591-4d9bc4e2
+ 9124/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rénovation école du Bosson - Sols sportifs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

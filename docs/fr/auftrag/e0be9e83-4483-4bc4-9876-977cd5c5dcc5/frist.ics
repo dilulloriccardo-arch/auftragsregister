@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0be9e83-4483-4bc4-9876-977cd5c5dcc5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261216T160000Z
+SUMMARY:Délai de remise : MUA Medizinisches Universalarchiv
+DESCRIPTION:Acheteur public : Kantonsspital Glarus AG\nDélai de remise
+  : 16.12.2026\, 17 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/e0be9e83-4483-4bc4-9876-977cd5c5dcc5/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/e0be9e83-4483-4bc4-9876-97
+ 7cd5c5dcc5
+URL:https://auftragsregister.ch/fr/auftrag/e0be9e83-4483-4bc4-9876-977cd5c5
+ dcc5/
+LOCATION:Glarus
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MUA Medizinisches Universalarchiv
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

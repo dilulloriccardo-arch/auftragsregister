@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:96517644-ce83-423f-bd48-95ad5de8f16f-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Submission deadline: Böztal (Hornussen) IO/AO\, K482\; Belagssanie
+ rung
+DESCRIPTION:Public buyer: Abteilung Tiefbau (ATB)\nSubmission deadline: 11
+  Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/96517644-ce83-423f-bd48-95ad5de8f16f/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/96517644-ce83-423f-bd48-95ad5de8f16f
+URL:https://auftragsregister.ch/en/auftrag/96517644-ce83-423f-bd48-95ad5de8
+ f16f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Böztal (Hornussen) IO/AO\, K482\; Belagss
+ anierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

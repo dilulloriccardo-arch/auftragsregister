@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1cf07104-b398-4ae4-bae4-0e591b4357a8-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261204T100000Z
+SUMMARY:Délai de remise : Sistemazione Via Campagne\, Via Gerbione e Via
+  al Giardino - OPERE DI DA IMPRESARIO COSTRUTTORE
+DESCRIPTION:Acheteur public : Comune di Tenero-Contra\nDélai de remise
+  : 04.12.2026\, 11 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/1cf07104-b398-4ae4-bae4-0e591b4357a8/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/1cf07104-b398-4ae4-bae4-0e
+ 591b4357a8
+URL:https://auftragsregister.ch/fr/auftrag/1cf07104-b398-4ae4-bae4-0e591b43
+ 57a8/
+LOCATION:Tenero-Contra
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sistemazione Via Campagne\, Via Gerbione e
+  Via al Giardino - OPERE DI DA IMPRESARIO COSTRUTTORE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

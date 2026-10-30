@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41beee78-5c5d-4a98-b224-e09223fca1e2-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Délai de remise : Sanierung Industriestrasse\, Neuheim
+DESCRIPTION:Acheteur public : Einwohnergemeinde Neuheim / Abteilung Bau u
+ nd Planung\nDélai de remise : 27.11.2026\, 12 h 00\nDans le registr
+ e : https://auftragsregister.ch/fr/auftrag/41beee78-5c5d-4a98-b224-e0922
+ 3fca1e2/\nPublication officielle : https://www.simap.ch/fr/project-detai
+ l/41beee78-5c5d-4a98-b224-e09223fca1e2
+URL:https://auftragsregister.ch/fr/auftrag/41beee78-5c5d-4a98-b224-e09223fc
+ a1e2/
+LOCATION:Neuheim
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Industriestrasse\, Neuheim
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

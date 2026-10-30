@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8d9d39a8-fd43-4c62-903b-63268ff571d3-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261119T150000Z
+SUMMARY:Délai de remise : Bau Nr. 10585 - Hirzenbachweg
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Realisierung\nDélai de r
+ emise : 19.11.2026\, 16 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/8d9d39a8-fd43-4c62-903b-63268ff571d3/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/8d9d39a8-fd43-4c62-90
+ 3b-63268ff571d3
+URL:https://auftragsregister.ch/fr/auftrag/8d9d39a8-fd43-4c62-903b-63268ff5
+ 71d3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bau Nr. 10585 - Hirzenbachweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

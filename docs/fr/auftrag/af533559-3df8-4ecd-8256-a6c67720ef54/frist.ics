@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af533559-3df8-4ecd-8256-a6c67720ef54-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Délai de remise : BAV 80926 SA Entlisberg\, Erweiterung - CFC 22
+ 4.0 Travaux de couverture
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 09.12.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/af533559-3df8-4ecd-8256-a6c67720ef54/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/af533559-3df8-4ecd-8
+ 256-a6c67720ef54
+URL:https://auftragsregister.ch/fr/auftrag/af533559-3df8-4ecd-8256-a6c67720
+ ef54/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 80926 SA Entlisberg\, Erweiterung - CF
+ C 224.0 Travaux de couverture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

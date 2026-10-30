@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6632874e-95ae-4189-ace8-a44d5801a0b2-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261204T100000Z
+SUMMARY:Submission deadline: Sistemazione delle Vie del centro a Tenero - R
+ iassetto di Via Campagne e Via al Giardino - OPERE DI PAVIMENTAZIONE
+DESCRIPTION:Public buyer: Comune di Tenero-Contra\nSubmission deadline: 4 
+ Dec 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /6632874e-95ae-4189-ace8-a44d5801a0b2/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/6632874e-95ae-4189-ace8-a44d5801a0b2
+URL:https://auftragsregister.ch/en/auftrag/6632874e-95ae-4189-ace8-a44d5801
+ a0b2/
+LOCATION:Tenero
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sistemazione delle Vie del centro a Tenero
+  - Riassetto di Via Campagne e Via al Giardino - OPERE DI PAVIMENTAZIONE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

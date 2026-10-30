@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a3236d91-6ae9-47e5-995a-162f063b8189-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T110000Z
+SUMMARY:Scadenza: Acquisition de licence Qualtrics et du support associé
+DESCRIPTION:Ente pubblico: Transport publics genevois (tpg)\nScadenza: 10.1
+ 2.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/a3236
+ d91-6ae9-47e5-995a-162f063b8189/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/a3236d91-6ae9-47e5-995a-162f063b8189
+URL:https://auftragsregister.ch/it/auftrag/a3236d91-6ae9-47e5-995a-162f063b
+ 8189/
+LOCATION:Grand Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Acquisition de licence Qualtrics et du support associ
+ é
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2246637a-2f13-46b4-bd0f-c85e564aa2ce-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Scadenza: MP-080093 Pianificazione della conservazione EP F5\, esec
+ uzione ispezioni principali BAU+BSA gallerie lungo la N02\, N13 e NEB N13 
+ in Ticino e Mesolcina\, 2027-2031
+DESCRIPTION:Ente pubblico: Ufficio federale delle strade USTRA\, Divisione 
+ infrastruttura stradale Est\nScadenza: 09.12.2026\, 16:00\nNel registro: h
+ ttps://auftragsregister.ch/it/auftrag/2246637a-2f13-46b4-bd0f-c85e564aa2ce
+ /\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/2246637
+ a-2f13-46b4-bd0f-c85e564aa2ce
+URL:https://auftragsregister.ch/it/auftrag/2246637a-2f13-46b4-bd0f-c85e564a
+ a2ce/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-080093 Pianificazione della conservazione EP F5\, 
+ esecuzione ispezioni principali BAU+BSA gallerie lungo la N02\, N13 e NEB 
+ N13 in Ticino e Mesolcina\, 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

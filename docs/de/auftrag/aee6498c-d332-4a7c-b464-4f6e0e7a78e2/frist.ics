@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aee6498c-d332-4a7c-b464-4f6e0e7a78e2-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Eingabefrist: Bau Nr. 15110 - Wasserwerkstrasse\, Abschnitt Röhren
+ weg bis Dammstrasse
+DESCRIPTION:Auftraggeber: Tiefbauamt\, Abt. Realisierung\nEingabefrist: 10.
+ 12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ aee6498c-d332-4a7c-b464-4f6e0e7a78e2/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/aee6498c-d332-4a7c-b464-4f6e0e7a78e2
+URL:https://auftragsregister.ch/de/auftrag/aee6498c-d332-4a7c-b464-4f6e0e7a
+ 78e2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bau Nr. 15110 - Wasserwerkstrasse\, Abschnitt Rö
+ hrenweg bis Dammstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

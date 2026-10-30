@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:96517644-ce83-423f-bd48-95ad5de8f16f-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Scadenza: Böztal (Hornussen) IO/AO\, K482\; Belagssanierung
+DESCRIPTION:Ente pubblico: Abteilung Tiefbau (ATB)\nScadenza: 11.12.2026\, 
+ 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/96517644-ce83-
+ 423f-bd48-95ad5de8f16f/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/96517644-ce83-423f-bd48-95ad5de8f16f
+URL:https://auftragsregister.ch/it/auftrag/96517644-ce83-423f-bd48-95ad5de8
+ f16f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Böztal (Hornussen) IO/AO\, K482\; Belagssanierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:acccc36f-a909-421c-90b4-61689203b113-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Délai de remise : Extension du système de stockage Dell PowerSc
+ ale et contrat-cadre pour les licences et l'assistance
+DESCRIPTION:Acheteur public : Università della Svizzera italiana\nDélai
+  de remise : 09.12.2026\, 11 h 00\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/acccc36f-a909-421c-90b4-61689203b113/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/acccc36f-a909-42
+ 1c-90b4-61689203b113
+URL:https://auftragsregister.ch/fr/auftrag/acccc36f-a909-421c-90b4-61689203
+ b113/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Extension du système de stockage Dell Pow
+ erScale et contrat-cadre pour les licences et l'assistance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

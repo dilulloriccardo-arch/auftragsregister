@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2f331ad1-4247-445b-be6b-2e2b5b4e4d21-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Eingabefrist: ARA Thurau\, Baumeister Hochbau West
+DESCRIPTION:Auftraggeber: Abwasserverband Thurau\nEingabefrist: 29.01.2027\
+ , 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2f331ad1
+ -4247-445b-be6b-2e2b5b4e4d21/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/2f331ad1-4247-445b-be6b-2e2b5b4e4d21
+URL:https://auftragsregister.ch/de/auftrag/2f331ad1-4247-445b-be6b-2e2b5b4e
+ 4d21/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ARA Thurau\, Baumeister Hochbau West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

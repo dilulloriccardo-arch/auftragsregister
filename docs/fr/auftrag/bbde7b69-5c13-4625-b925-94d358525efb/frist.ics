@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbde7b69-5c13-4625-b925-94d358525efb-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T225959Z
+SUMMARY:Délai de remise : Gemeinde Oetwil am See\, Beschaffung ICT-Betri
+ eb und Infrastruktur
+DESCRIPTION:Acheteur public : Gemeinde Oetwil am See\nDélai de remise 
+ : 11.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/bbde7b69-5c13-4625-b925-94d358525efb/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/bbde7b69-5c13-4625-b925-94d35
+ 8525efb
+URL:https://auftragsregister.ch/fr/auftrag/bbde7b69-5c13-4625-b925-94d35852
+ 5efb/
+LOCATION:Oetwil am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gemeinde Oetwil am See\, Beschaffung ICT-B
+ etrieb und Infrastruktur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

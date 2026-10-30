@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6fd0a3b1-b56e-4d82-bad2-7e727d76f6e2-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261124T160000Z
+SUMMARY:Délai de remise : Rénovation de la Bodensee-Arena : offre de pr
+ estations pour la conception électrique
+DESCRIPTION:Acheteur public : Stadt Kreuzlingen\nDélai de remise : 24.
+ 11.2026\, 17 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/6fd0a3b1-b56e-4d82-bad2-7e727d76f6e2/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/6fd0a3b1-b56e-4d82-bad2-7e727d76f6
+ e2
+URL:https://auftragsregister.ch/fr/auftrag/6fd0a3b1-b56e-4d82-bad2-7e727d76
+ f6e2/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation de la Bodensee-Arena : offre d
+ e prestations pour la conception électrique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

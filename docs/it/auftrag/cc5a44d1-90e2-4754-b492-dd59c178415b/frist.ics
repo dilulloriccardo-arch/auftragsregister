@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc5a44d1-90e2-4754-b492-dd59c178415b-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261215T090000Z
+SUMMARY:Scadenza: Reinigungsleistungen für die Bürogebäude der SVA Basel
+ -Landschaft
+DESCRIPTION:Ente pubblico: SVA Basel-Landschaft\nScadenza: 15.12.2026\, 10:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/cc5a44d1-90e2-475
+ 4-b492-dd59c178415b/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/cc5a44d1-90e2-4754-b492-dd59c178415b
+URL:https://auftragsregister.ch/it/auftrag/cc5a44d1-90e2-4754-b492-dd59c178
+ 415b/
+LOCATION:Binningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Reinigungsleistungen für die Bürogebäude der SVA B
+ asel-Landschaft
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

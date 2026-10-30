@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b34cbad0-1c72-40a7-95ac-b9205b08fdc5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261206T225900Z
+SUMMARY:Scadenza: 211 Baumeisterarbeiten Instandstellung Trakte A\,C und D
+DESCRIPTION:Ente pubblico: Stadt Wetzikon Immobilien\nScadenza: 06.12.2026\
+ , 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/b34cbad0-1c7
+ 2-40a7-95ac-b9205b08fdc5/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/b34cbad0-1c72-40a7-95ac-b9205b08fdc5
+URL:https://auftragsregister.ch/it/auftrag/b34cbad0-1c72-40a7-95ac-b9205b08
+ fdc5/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 211 Baumeisterarbeiten Instandstellung Trakte A\,C un
+ d D
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

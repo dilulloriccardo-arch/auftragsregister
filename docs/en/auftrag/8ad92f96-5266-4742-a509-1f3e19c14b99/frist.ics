@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ad92f96-5266-4742-a509-1f3e19c14b99-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20270112T225900Z
+SUMMARY:Submission deadline: AO2027 - Assistance de 1er niveau (N1)
+DESCRIPTION:Public buyer: Office cantonal des systèmes d'information et du
+  numérique (OCSIN)\nSubmission deadline: 12 Jan 2027\, 23:59\nIn the re
+ gister: https://auftragsregister.ch/en/auftrag/8ad92f96-5266-4742-a509-1f3
+ e19c14b99/\nOfficial publication: https://www.simap.ch/en/project-detail/8
+ ad92f96-5266-4742-a509-1f3e19c14b99
+URL:https://auftragsregister.ch/en/auftrag/8ad92f96-5266-4742-a509-1f3e19c1
+ 4b99/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AO2027 - Assistance de 1er niveau (N1)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

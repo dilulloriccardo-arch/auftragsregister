@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3494e22-80c8-4458-87c0-52f68d6c97c5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Eingabefrist: 16.0249 - Langenthal\, Sanierung und Erweiterung Beru
+ fsfachschule: 135 Schulprovisorien
+DESCRIPTION:Auftraggeber: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nEingabefrist: 09.12.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/e3494e22-80c8-4458-87c0-52f68d6c97c5/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/e3494e22-80c8-4458-87
+ c0-52f68d6c97c5
+URL:https://auftragsregister.ch/de/auftrag/e3494e22-80c8-4458-87c0-52f68d6c
+ 97c5/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 16.0249 - Langenthal\, Sanierung und Erweiterung 
+ Berufsfachschule: 135 Schulprovisorien
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

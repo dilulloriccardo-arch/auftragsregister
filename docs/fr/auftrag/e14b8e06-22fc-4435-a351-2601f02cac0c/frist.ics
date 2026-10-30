@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e14b8e06-22fc-4435-a351-2601f02cac0c-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Délai de remise : Nettoyage des canalisations et des regards 202
+ 7-2028\, canton de Zurich\, régions routières I à IV
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Strasseninspektorat\nDél
+ ai de remise : 11.12.2026\, 12 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/e14b8e06-22fc-4435-a351-2601f02cac0c/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/e14b8e06-22fc-
+ 4435-a351-2601f02cac0c
+URL:https://auftragsregister.ch/fr/auftrag/e14b8e06-22fc-4435-a351-2601f02c
+ ac0c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nettoyage des canalisations et des regards
+  2027-2028\, canton de Zurich\, régions routières I à IV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

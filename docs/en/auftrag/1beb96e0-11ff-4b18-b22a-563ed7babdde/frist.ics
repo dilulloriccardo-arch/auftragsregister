@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1beb96e0-11ff-4b18-b22a-563ed7babdde-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Submission deadline: 16.0249 - Langenthal\, Sanierung und Erweiteru
+ ng Berufsfachschule: 242 Heizungs- und Kälteanlagen
+DESCRIPTION:Public buyer: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nSubmission deadline: 9 Dec 2026\, 23:59\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/1beb96e0-11ff-4b18-b22a-563ed7babdde/\n
+ Official publication: https://www.simap.ch/en/project-detail/1beb96e0-11ff
+ -4b18-b22a-563ed7babdde
+URL:https://auftragsregister.ch/en/auftrag/1beb96e0-11ff-4b18-b22a-563ed7ba
+ bdde/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 16.0249 - Langenthal\, Sanierung und Erwei
+ terung Berufsfachschule: 242 Heizungs- und Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

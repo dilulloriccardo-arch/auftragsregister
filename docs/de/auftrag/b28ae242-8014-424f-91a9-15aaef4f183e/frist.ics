@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b28ae242-8014-424f-91a9-15aaef4f183e-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Eingabefrist: (b26049) Tenero\, CST5 piscines\, nouveau bâtiment d
+ e remplacement / CFC 233.2
+DESCRIPTION:Auftraggeber: Ufficio federale delle costruzioni e della logist
+ ica UFCL\nEingabefrist: 10.12.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/b28ae242-8014-424f-91a9-15aaef4f183e/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/b28ae242-8014-424f-91
+ a9-15aaef4f183e
+URL:https://auftragsregister.ch/de/auftrag/b28ae242-8014-424f-91a9-15aaef4f
+ 183e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (b26049) Tenero\, CST5 piscines\, nouveau bâtime
+ nt de remplacement / CFC 233.2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

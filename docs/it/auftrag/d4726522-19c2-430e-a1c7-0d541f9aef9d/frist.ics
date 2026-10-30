@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d4726522-19c2-430e-a1c7-0d541f9aef9d-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Scadenza: BAV 82156 Freibad Letzigraben\, Umbau Restaurant - BKP 23
+ 0 Elektroanlagen
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 24.11
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/d47265
+ 22-19c2-430e-a1c7-0d541f9aef9d/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/d4726522-19c2-430e-a1c7-0d541f9aef9d
+URL:https://auftragsregister.ch/it/auftrag/d4726522-19c2-430e-a1c7-0d541f9a
+ ef9d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 82156 Freibad Letzigraben\, Umbau Restaurant - BK
+ P 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

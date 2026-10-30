@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1beb96e0-11ff-4b18-b22a-563ed7babdde-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Scadenza: 16.0249 - Langenthal\, Sanierung und Erweiterung Berufsfa
+ chschule: 242 Heizungs- und Kälteanlagen
+DESCRIPTION:Ente pubblico: Amt für Grundstücke und Gebäude des Kantons B
+ ern (AGG)\nScadenza: 09.12.2026\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/1beb96e0-11ff-4b18-b22a-563ed7babdde/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/1beb96e0-11ff-4b18-b22a-5
+ 63ed7babdde
+URL:https://auftragsregister.ch/it/auftrag/1beb96e0-11ff-4b18-b22a-563ed7ba
+ bdde/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 16.0249 - Langenthal\, Sanierung und Erweiterung Beru
+ fsfachschule: 242 Heizungs- und Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

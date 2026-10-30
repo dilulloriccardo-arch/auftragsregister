@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3494e22-80c8-4458-87c0-52f68d6c97c5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Submission deadline: 16.0249 - Langenthal\, Sanierung und Erweiteru
+ ng Berufsfachschule: 135 Schulprovisorien
+DESCRIPTION:Public buyer: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nSubmission deadline: 9 Dec 2026\, 23:59\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/e3494e22-80c8-4458-87c0-52f68d6c97c5/\n
+ Official publication: https://www.simap.ch/en/project-detail/e3494e22-80c8
+ -4458-87c0-52f68d6c97c5
+URL:https://auftragsregister.ch/en/auftrag/e3494e22-80c8-4458-87c0-52f68d6c
+ 97c5/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 16.0249 - Langenthal\, Sanierung und Erwei
+ terung Berufsfachschule: 135 Schulprovisorien
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

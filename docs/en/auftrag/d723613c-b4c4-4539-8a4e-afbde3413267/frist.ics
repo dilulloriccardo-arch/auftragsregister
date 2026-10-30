@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d723613c-b4c4-4539-8a4e-afbde3413267-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T153100Z
+SUMMARY:Submission deadline: Automatisation du comptage énergétique - App
+ el d'offres Mandataires
+DESCRIPTION:Public buyer: DGIP-DID-Direction de l’ingénierie et de la du
+ rabilité\nSubmission deadline: 10 Dec 2026\, 16:31\nIn the register: ht
+ tps://auftragsregister.ch/en/auftrag/d723613c-b4c4-4539-8a4e-afbde3413267/
+ \nOfficial publication: https://www.simap.ch/en/project-detail/d723613c-b4
+ c4-4539-8a4e-afbde3413267
+URL:https://auftragsregister.ch/en/auftrag/d723613c-b4c4-4539-8a4e-afbde341
+ 3267/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Automatisation du comptage énergétique -
+  Appel d'offres Mandataires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

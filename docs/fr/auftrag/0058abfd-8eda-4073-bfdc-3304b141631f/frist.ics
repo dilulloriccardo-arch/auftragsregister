@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0058abfd-8eda-4073-bfdc-3304b141631f-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Délai de remise : Zeiningen – Möhlin AO\, K292\, Belagssanier
+ ung
+DESCRIPTION:Acheteur public : Abteilung Tiefbau (ATB)\nDélai de remise
+  : 11.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/0058abfd-8eda-4073-bfdc-3304b141631f/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/0058abfd-8eda-4073-bfdc-33
+ 04b141631f
+URL:https://auftragsregister.ch/fr/auftrag/0058abfd-8eda-4073-bfdc-3304b141
+ 631f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Zeiningen – Möhlin AO\, K292\, Belagssa
+ nierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

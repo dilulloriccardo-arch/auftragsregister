@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b28ae242-8014-424f-91a9-15aaef4f183e-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Délai de remise : (b26049) Tenero\, CST5 piscines\, nouveau bât
+ iment de remplacement / CFC 233.2
+DESCRIPTION:Acheteur public : Ufficio federale delle costruzioni e della 
+ logistica UFCL\nDélai de remise : 10.12.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/b28ae242-8014-424f-91a9-1
+ 5aaef4f183e/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/b28ae242-8014-424f-91a9-15aaef4f183e
+URL:https://auftragsregister.ch/fr/auftrag/b28ae242-8014-424f-91a9-15aaef4f
+ 183e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (b26049) Tenero\, CST5 piscines\, nouveau 
+ bâtiment de remplacement / CFC 233.2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

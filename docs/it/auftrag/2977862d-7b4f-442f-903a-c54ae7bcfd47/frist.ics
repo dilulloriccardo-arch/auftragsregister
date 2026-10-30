@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2977862d-7b4f-442f-903a-c54ae7bcfd47-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Scadenza: SZO Spital Wallis - SKP 224 Bedachungsarbeiten TP1\, Umba
+ u & Erweiterungsbau UG/EG
+DESCRIPTION:Ente pubblico: Hôpital du Valais - Spital Wallis\nScadenza: 09
+ .12.2026\nNel registro: https://auftragsregister.ch/it/auftrag/2977862d-7b
+ 4f-442f-903a-c54ae7bcfd47/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/2977862d-7b4f-442f-903a-c54ae7bcfd47
+URL:https://auftragsregister.ch/it/auftrag/2977862d-7b4f-442f-903a-c54ae7bc
+ fd47/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: SZO Spital Wallis - SKP 224 Bedachungsarbeiten TP1\, 
+ Umbau & Erweiterungsbau UG/EG
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

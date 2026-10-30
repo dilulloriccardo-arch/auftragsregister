@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41beee78-5c5d-4a98-b224-e09223fca1e2-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Scadenza: Sanierung Industriestrasse\, Neuheim
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Neuheim / Abteilung Bau und Pl
+ anung\nScadenza: 27.11.2026\, 12:00\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/41beee78-5c5d-4a98-b224-e09223fca1e2/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/41beee78-5c5d-4a98-b224-e0922
+ 3fca1e2
+URL:https://auftragsregister.ch/it/auftrag/41beee78-5c5d-4a98-b224-e09223fc
+ a1e2/
+LOCATION:Neuheim
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Industriestrasse\, Neuheim
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da520ac2-7963-4373-b516-aa0999fa3d0b-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261119T150000Z
+SUMMARY:Délai de remise : BAV 83298 ZM-Langmatt II\, Verschiebung und Er
+ weiterung - BKP 211 Baumeisterarbeiten
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 19.11.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/da520ac2-7963-4373-b516-aa0999fa3d0b/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/da520ac2-7963-4373-b
+ 516-aa0999fa3d0b
+URL:https://auftragsregister.ch/fr/auftrag/da520ac2-7963-4373-b516-aa0999fa
+ 3d0b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 83298 ZM-Langmatt II\, Verschiebung un
+ d Erweiterung - BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

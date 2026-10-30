@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5cbbd72a-a9f2-4c15-9774-5f7b22c93819-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Eingabefrist: ARA Thurau\, Automatisierungs- und Prozessleitsystem
+DESCRIPTION:Auftraggeber: Abwasserverband Thurau\nEingabefrist: 02.12.2026\
+ , 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5cbbd72a
+ -a9f2-4c15-9774-5f7b22c93819/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/5cbbd72a-a9f2-4c15-9774-5f7b22c93819
+URL:https://auftragsregister.ch/de/auftrag/5cbbd72a-a9f2-4c15-9774-5f7b22c9
+ 3819/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ARA Thurau\, Automatisierungs- und Prozessleitsys
+ tem
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

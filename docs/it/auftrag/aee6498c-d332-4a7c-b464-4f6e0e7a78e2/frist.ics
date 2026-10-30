@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aee6498c-d332-4a7c-b464-4f6e0e7a78e2-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Scadenza: Bau Nr. 15110 - Wasserwerkstrasse\, Abschnitt Röhrenweg 
+ bis Dammstrasse
+DESCRIPTION:Ente pubblico: Tiefbauamt\, Abt. Realisierung\nScadenza: 10.12.
+ 2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/aee6498
+ c-d332-4a7c-b464-4f6e0e7a78e2/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/aee6498c-d332-4a7c-b464-4f6e0e7a78e2
+URL:https://auftragsregister.ch/it/auftrag/aee6498c-d332-4a7c-b464-4f6e0e7a
+ 78e2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bau Nr. 15110 - Wasserwerkstrasse\, Abschnitt Röhren
+ weg bis Dammstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

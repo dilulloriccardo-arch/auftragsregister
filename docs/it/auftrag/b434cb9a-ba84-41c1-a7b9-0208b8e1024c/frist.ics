@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b434cb9a-ba84-41c1-a7b9-0208b8e1024c-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Scadenza: BAV 60738 Regionalwache Industrie\, Anpassung Sicherheits
+ standard - BKP 230 Elektroanlagen gesamt
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 26.11
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/b434cb
+ 9a-ba84-41c1-a7b9-0208b8e1024c/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/b434cb9a-ba84-41c1-a7b9-0208b8e1024c
+URL:https://auftragsregister.ch/it/auftrag/b434cb9a-ba84-41c1-a7b9-0208b8e1
+ 024c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 60738 Regionalwache Industrie\, Anpassung Sicherh
+ eitsstandard - BKP 230 Elektroanlagen gesamt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

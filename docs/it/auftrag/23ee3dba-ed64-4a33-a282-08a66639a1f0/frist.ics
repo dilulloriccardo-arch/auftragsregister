@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23ee3dba-ed64-4a33-a282-08a66639a1f0-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261212T225900Z
+SUMMARY:Scadenza: Baumeisterarbeiten Erneuerung Lehnenbrücke Sunnhalte 4\,
+  Frutigen
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 12.12.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/23ee3dba-e
+ d64-4a33-a282-08a66639a1f0/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/23ee3dba-ed64-4a33-a282-08a66639a1f0
+URL:https://auftragsregister.ch/it/auftrag/23ee3dba-ed64-4a33-a282-08a66639
+ a1f0/
+LOCATION:Frutigen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Baumeisterarbeiten Erneuerung Lehnenbrücke Sunnhalte
+  4\, Frutigen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

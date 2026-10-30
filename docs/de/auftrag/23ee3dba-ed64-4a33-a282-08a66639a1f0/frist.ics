@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23ee3dba-ed64-4a33-a282-08a66639a1f0-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261212T225900Z
+SUMMARY:Eingabefrist: Baumeisterarbeiten Erneuerung Lehnenbrücke Sunnhalte
+  4\, Frutigen
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 12.12.
+ 2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/23e
+ e3dba-ed64-4a33-a282-08a66639a1f0/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/23ee3dba-ed64-4a33-a282-08a66639a1f0
+URL:https://auftragsregister.ch/de/auftrag/23ee3dba-ed64-4a33-a282-08a66639
+ a1f0/
+LOCATION:Frutigen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Baumeisterarbeiten Erneuerung Lehnenbrücke Sunnh
+ alte 4\, Frutigen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

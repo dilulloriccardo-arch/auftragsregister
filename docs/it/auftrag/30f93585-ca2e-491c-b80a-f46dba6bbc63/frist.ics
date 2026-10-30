@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:30f93585-ca2e-491c-b80a-f46dba6bbc63-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Scadenza: Sanierung und Erweiterung Schulanlage Wolfsmatt\, Dietiko
+ n - BKP 421.1 Gärtnerarbeiten KiGa
+DESCRIPTION:Ente pubblico: Stadt Dietikon\, Hochbauabteilung\nScadenza: 16.
+ 12.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/30f9
+ 3585-ca2e-491c-b80a-f46dba6bbc63/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/30f93585-ca2e-491c-b80a-f46dba6bbc63
+URL:https://auftragsregister.ch/it/auftrag/30f93585-ca2e-491c-b80a-f46dba6b
+ bc63/
+LOCATION:Dietikon\, Schöneggstrasse 70
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung und Erweiterung Schulanlage Wolfsmatt\, Die
+ tikon - BKP 421.1 Gärtnerarbeiten KiGa
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

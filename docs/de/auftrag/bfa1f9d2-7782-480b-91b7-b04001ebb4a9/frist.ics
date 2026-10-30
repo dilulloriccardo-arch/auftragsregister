@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bfa1f9d2-7782-480b-91b7-b04001ebb4a9-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Eingabefrist: 10180 Schulerweriterung Sonnenhof Fischingen - BKP 24
+ 2 / 243 Heizungs- Kälteanlagen
+DESCRIPTION:Auftraggeber: Volksschulgemeinde Fischingen\nEingabefrist: 23.1
+ 1.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b
+ fa1f9d2-7782-480b-91b7-b04001ebb4a9/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/bfa1f9d2-7782-480b-91b7-b04001ebb4a9
+URL:https://auftragsregister.ch/de/auftrag/bfa1f9d2-7782-480b-91b7-b04001eb
+ b4a9/
+LOCATION:Oberwangen TG
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 10180 Schulerweriterung Sonnenhof Fischingen - BK
+ P 242 / 243 Heizungs- Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

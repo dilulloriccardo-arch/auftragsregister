@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:907bb793-555e-4a0d-9a71-c1c802e384f6-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T160000Z
+SUMMARY:Eingabefrist: Contrats-cadres de prestations archéologiques 2027-2
+ 031 (+1) - Lot 1 : Archéologie sédimentaire - Lot 2 : Archéologie du b
+ âti
+DESCRIPTION:Auftraggeber: DGIP-DAC-Direction de l'archéologie cantonale\nE
+ ingabefrist: 11.12.2026\, 17.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/907bb793-555e-4a0d-9a71-c1c802e384f6/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/907bb793-555e-4a0d-9a71-c1c802e3
+ 84f6
+URL:https://auftragsregister.ch/de/auftrag/907bb793-555e-4a0d-9a71-c1c802e3
+ 84f6/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Contrats-cadres de prestations archéologiques 20
+ 27-2031 (+1) - Lot 1 : Archéologie sédimentaire - Lot 2 : Archéologie d
+ u bâti
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:54d731f1-c607-42e0-ab7e-08d5f64c41df-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261203T100000Z
+SUMMARY:Délai de remise : Stazione di pompaggio Pobbia - Opere da idraul
+ ico
+DESCRIPTION:Acheteur public : Consorzio Acquedotto Regionale del Mendrisi
+ otto (ARM)\nDélai de remise : 03.12.2026\, 11 h 00\nDans le registr
+ e : https://auftragsregister.ch/fr/auftrag/54d731f1-c607-42e0-ab7e-08d5f
+ 64c41df/\nPublication officielle : https://www.simap.ch/fr/project-detai
+ l/54d731f1-c607-42e0-ab7e-08d5f64c41df
+URL:https://auftragsregister.ch/fr/auftrag/54d731f1-c607-42e0-ab7e-08d5f64c
+ 41df/
+LOCATION:Novazzano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Stazione di pompaggio Pobbia - Opere da id
+ raulico
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

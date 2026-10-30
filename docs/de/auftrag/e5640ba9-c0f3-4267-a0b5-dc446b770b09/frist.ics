@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5640ba9-c0f3-4267-a0b5-dc446b770b09-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T160000Z
+SUMMARY:Eingabefrist: Ingenieurleistungen inkl. Bauleitung\, SIA 41-53\, Au
+ sbau Seewenweg\, 4146 Hochwald SO
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Hochwald\nEingabefrist: 11.12.2
+ 026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e564
+ 0ba9-c0f3-4267-a0b5-dc446b770b09/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/e5640ba9-c0f3-4267-a0b5-dc446b770b09
+URL:https://auftragsregister.ch/de/auftrag/e5640ba9-c0f3-4267-a0b5-dc446b77
+ 0b09/
+LOCATION:Hochwald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ingenieurleistungen inkl. Bauleitung\, SIA 41-53\
+ , Ausbau Seewenweg\, 4146 Hochwald SO
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

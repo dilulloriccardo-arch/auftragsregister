@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5640ba9-c0f3-4267-a0b5-dc446b770b09-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T160000Z
+SUMMARY:Délai de remise : Ingenieurleistungen inkl. Bauleitung\, SIA 41-
+ 53\, Ausbau Seewenweg\, 4146 Hochwald SO
+DESCRIPTION:Acheteur public : Einwohnergemeinde Hochwald\nDélai de remis
+ e : 11.12.2026\, 17 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/e5640ba9-c0f3-4267-a0b5-dc446b770b09/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/e5640ba9-c0f3-4267-a0b5-d
+ c446b770b09
+URL:https://auftragsregister.ch/fr/auftrag/e5640ba9-c0f3-4267-a0b5-dc446b77
+ 0b09/
+LOCATION:Hochwald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ingenieurleistungen inkl. Bauleitung\, SIA
+  41-53\, Ausbau Seewenweg\, 4146 Hochwald SO
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

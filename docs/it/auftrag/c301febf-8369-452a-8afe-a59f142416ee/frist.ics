@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c301febf-8369-452a-8afe-a59f142416ee-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261203T150000Z
+SUMMARY:Scadenza: BAV 80753 Schulanlage Saatlen\, Ersatzneubau - BKP 461 Er
+ d- und Unterbau
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 03.12
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/c301fe
+ bf-8369-452a-8afe-a59f142416ee/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/c301febf-8369-452a-8afe-a59f142416ee
+URL:https://auftragsregister.ch/it/auftrag/c301febf-8369-452a-8afe-a59f1424
+ 16ee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 80753 Schulanlage Saatlen\, Ersatzneubau - BKP 46
+ 1 Erd- und Unterbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

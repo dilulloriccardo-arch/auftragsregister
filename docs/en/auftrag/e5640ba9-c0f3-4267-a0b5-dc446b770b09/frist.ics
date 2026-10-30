@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5640ba9-c0f3-4267-a0b5-dc446b770b09-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T160000Z
+SUMMARY:Submission deadline: Engineering services\, including construction 
+ supervision (SIA 41–53)\, for the development of Seewenweg\, 4146 Hochwa
+ ld SO
+DESCRIPTION:Public buyer: Einwohnergemeinde Hochwald\nSubmission deadline: 
+ 11 Dec 2026\, 17:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/e5640ba9-c0f3-4267-a0b5-dc446b770b09/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/e5640ba9-c0f3-4267-a0b5-dc446b770b09
+URL:https://auftragsregister.ch/en/auftrag/e5640ba9-c0f3-4267-a0b5-dc446b77
+ 0b09/
+LOCATION:Hochwald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Engineering services\, including construct
+ ion supervision (SIA 41–53)\, for the development of Seewenweg\, 4146 Ho
+ chwald SO
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

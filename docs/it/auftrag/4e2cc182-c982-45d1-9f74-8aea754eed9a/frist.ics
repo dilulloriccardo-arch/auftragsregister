@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4e2cc182-c982-45d1-9f74-8aea754eed9a-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261129T130000Z
+SUMMARY:Scadenza: BKP 273.3 Allgemeine Schreinerarbeiten | Aufstockung Turn
+ hallen TBS5\, Weinfelden
+DESCRIPTION:Ente pubblico: Sekundarschulgemeinde Weinfelden (MLR Baumanagem
+ ent GmbH)\nScadenza: 29.11.2026\, 14:00\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/4e2cc182-c982-45d1-9f74-8aea754eed9a/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/4e2cc182-c982-45d1-9f74-8
+ aea754eed9a
+URL:https://auftragsregister.ch/it/auftrag/4e2cc182-c982-45d1-9f74-8aea754e
+ ed9a/
+LOCATION:Weinfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 273.3 Allgemeine Schreinerarbeiten | Aufstockung 
+ Turnhallen TBS5\, Weinfelden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

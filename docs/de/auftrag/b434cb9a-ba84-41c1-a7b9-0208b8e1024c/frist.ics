@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b434cb9a-ba84-41c1-a7b9-0208b8e1024c-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Eingabefrist: BAV 60738 Regionalwache Industrie\, Anpassung Sicherh
+ eitsstandard - BKP 230 Elektroanlagen gesamt
+DESCRIPTION:Auftraggeber: HBD - Amt für Hochbauten (AHB)\nEingabefrist: 26
+ .11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /b434cb9a-ba84-41c1-a7b9-0208b8e1024c/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/b434cb9a-ba84-41c1-a7b9-0208b8e1024c
+URL:https://auftragsregister.ch/de/auftrag/b434cb9a-ba84-41c1-a7b9-0208b8e1
+ 024c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BAV 60738 Regionalwache Industrie\, Anpassung Sic
+ herheitsstandard - BKP 230 Elektroanlagen gesamt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b0ba1ceb-c0e7-4d8b-bafc-70ef45a4cdee-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Délai de remise : MP-080093 (Lot 1) / MP-180022 (Lot 2) Planific
+ ation de l’entretien EP F5\, Inspections principales BAU + BSA des tunne
+ ls et galeries des routes nationales N13\, N28 et N29\, Grisons\, 2027–2
+ 031
+DESCRIPTION:Acheteur public : Ufficio federale delle strade USTRA\, Divis
+ ione infrastruttura stradale Est\nDélai de remise : 09.12.2026\, 16 h
+  00\nDans le registre : https://auftragsregister.ch/fr/auftrag/b0ba1ce
+ b-c0e7-4d8b-bafc-70ef45a4cdee/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/b0ba1ceb-c0e7-4d8b-bafc-70ef45a4cdee
+URL:https://auftragsregister.ch/fr/auftrag/b0ba1ceb-c0e7-4d8b-bafc-70ef45a4
+ cdee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-080093 (Lot 1) / MP-180022 (Lot 2) Plan
+ ification de l’entretien EP F5\, Inspections principales BAU + BSA des t
+ unnels et galeries des routes nationales N13\, N28 et N29\, Grisons\, 2027
+ –2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

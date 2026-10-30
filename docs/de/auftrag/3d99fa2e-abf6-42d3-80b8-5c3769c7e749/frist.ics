@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d99fa2e-abf6-42d3-80b8-5c3769c7e749-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T220000Z
+SUMMARY:Eingabefrist: Bauherrenvertretung (BHV)\, Gesamtprojektleitung (GPL
+ ) und Oberbauleitung (OBL) für die schweizweite Lärmsanierung der mil Fl
+ pl Meiringen\, Emmen und Payerne
+DESCRIPTION:Auftraggeber: armasuisse Immobilien\nEingabefrist: 11.12.2026\,
+  23.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3d99fa2e-
+ abf6-42d3-80b8-5c3769c7e749/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/3d99fa2e-abf6-42d3-80b8-5c3769c7e749
+URL:https://auftragsregister.ch/de/auftrag/3d99fa2e-abf6-42d3-80b8-5c3769c7
+ e749/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bauherrenvertretung (BHV)\, Gesamtprojektleitung 
+ (GPL) und Oberbauleitung (OBL) für die schweizweite Lärmsanierung der mi
+ l Flpl Meiringen\, Emmen und Payerne
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

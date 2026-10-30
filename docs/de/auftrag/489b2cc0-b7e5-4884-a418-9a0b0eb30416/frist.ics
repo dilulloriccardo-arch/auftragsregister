@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:489b2cc0-b7e5-4884-a418-9a0b0eb30416-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261123T160000Z
+SUMMARY:Eingabefrist: BAV 57078 Reckenholzstrasse 150\, Instandsetzung - BK
+ P 222 Spengler- und Bedachungsarbeiten
+DESCRIPTION:Auftraggeber: HBD - Amt für Hochbauten (AHB)\nEingabefrist: 23
+ .11.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /489b2cc0-b7e5-4884-a418-9a0b0eb30416/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/489b2cc0-b7e5-4884-a418-9a0b0eb30416
+URL:https://auftragsregister.ch/de/auftrag/489b2cc0-b7e5-4884-a418-9a0b0eb3
+ 0416/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BAV 57078 Reckenholzstrasse 150\, Instandsetzung 
+ - BKP 222 Spengler- und Bedachungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:30f93585-ca2e-491c-b80a-f46dba6bbc63-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Eingabefrist: Sanierung und Erweiterung Schulanlage Wolfsmatt\, Die
+ tikon - BKP 421.1 Gärtnerarbeiten KiGa
+DESCRIPTION:Auftraggeber: Stadt Dietikon\, Hochbauabteilung\nEingabefrist: 
+ 16.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/30f93585-ca2e-491c-b80a-f46dba6bbc63/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/30f93585-ca2e-491c-b80a-f46dba6bbc63
+URL:https://auftragsregister.ch/de/auftrag/30f93585-ca2e-491c-b80a-f46dba6b
+ bc63/
+LOCATION:Dietikon\, Schöneggstrasse 70
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung und Erweiterung Schulanlage Wolfsmatt\,
+  Dietikon - BKP 421.1 Gärtnerarbeiten KiGa
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

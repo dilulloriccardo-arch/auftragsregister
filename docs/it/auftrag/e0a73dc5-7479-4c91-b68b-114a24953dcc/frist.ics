@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0a73dc5-7479-4c91-b68b-114a24953dcc-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T090000Z
+SUMMARY:Scadenza: Effretikon\, Gerstenriet-/ Lindauerstrasse\, Fachplanung 
+ und Gesamtkoordination SIA Phasen 41–53\, Am/gs
+DESCRIPTION:Ente pubblico: Baudirektion Kanton Zürich\, Tiefbauamt\, Abt. 
+ Projektieren und Realisieren\nScadenza: 11.12.2026\, 10:00\nNel registro: 
+ https://auftragsregister.ch/it/auftrag/e0a73dc5-7479-4c91-b68b-114a24953dc
+ c/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/e0a73d
+ c5-7479-4c91-b68b-114a24953dcc
+URL:https://auftragsregister.ch/it/auftrag/e0a73dc5-7479-4c91-b68b-114a2495
+ 3dcc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Effretikon\, Gerstenriet-/ Lindauerstrasse\, Fachplan
+ ung und Gesamtkoordination SIA Phasen 41–53\, Am/gs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

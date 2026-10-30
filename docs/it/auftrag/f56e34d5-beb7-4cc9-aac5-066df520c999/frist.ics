@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f56e34d5-beb7-4cc9-aac5-066df520c999-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Scadenza: ARA Thurau: Rechen\, Rechengutpressen\, Förderer
+DESCRIPTION:Ente pubblico: Abwasserverband Thurau\nScadenza: 29.01.2027\, 1
+ 2:00\nNel registro: https://auftragsregister.ch/it/auftrag/f56e34d5-beb7-4
+ cc9-aac5-066df520c999/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/f56e34d5-beb7-4cc9-aac5-066df520c999
+URL:https://auftragsregister.ch/it/auftrag/f56e34d5-beb7-4cc9-aac5-066df520
+ c999/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ARA Thurau: Rechen\, Rechengutpressen\, Förderer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

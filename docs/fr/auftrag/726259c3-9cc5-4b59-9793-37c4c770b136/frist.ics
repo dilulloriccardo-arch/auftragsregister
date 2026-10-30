@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:726259c3-9cc5-4b59-9793-37c4c770b136-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Délai de remise : STEP Thurau\, équipements du traitement biolo
+ gique
+DESCRIPTION:Acheteur public : Abwasserverband Thurau\nDélai de remise 
+ : 29.01.2027\, 12 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/726259c3-9cc5-4b59-9793-37c4c770b136/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/726259c3-9cc5-4b59-9793-37c4c
+ 770b136
+URL:https://auftragsregister.ch/fr/auftrag/726259c3-9cc5-4b59-9793-37c4c770
+ b136/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : STEP Thurau\, équipements du traitement b
+ iologique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

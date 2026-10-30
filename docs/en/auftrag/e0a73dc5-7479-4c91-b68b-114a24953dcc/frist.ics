@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0a73dc5-7479-4c91-b68b-114a24953dcc-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T090000Z
+SUMMARY:Submission deadline: Effretikon\, Gerstenriet-/ Lindauerstrasse\, F
+ achplanung und Gesamtkoordination SIA Phasen 41–53\, Am/gs
+DESCRIPTION:Public buyer: Baudirektion Kanton Zürich\, Tiefbauamt\, Abt. P
+ rojektieren und Realisieren\nSubmission deadline: 11 Dec 2026\, 10:00\nI
+ n the register: https://auftragsregister.ch/en/auftrag/e0a73dc5-7479-4c91-
+ b68b-114a24953dcc/\nOfficial publication: https://www.simap.ch/en/project-
+ detail/e0a73dc5-7479-4c91-b68b-114a24953dcc
+URL:https://auftragsregister.ch/en/auftrag/e0a73dc5-7479-4c91-b68b-114a2495
+ 3dcc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Effretikon\, Gerstenriet-/ Lindauerstrasse
+ \, Fachplanung und Gesamtkoordination SIA Phasen 41–53\, Am/gs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

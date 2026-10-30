@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d4726522-19c2-430e-a1c7-0d541f9aef9d-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261124T150000Z
+SUMMARY:Submission deadline: BAV 82156 Freibad Letzigraben\, Umbau Restaura
+ nt - BKP 230 Elektroanlagen
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 24 Nov 2026\, 16:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/d4726522-19c2-430e-a1c7-0d541f9aef9d/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/d4726522-19c2-430e-a1c7-0d541f9aef9d
+URL:https://auftragsregister.ch/en/auftrag/d4726522-19c2-430e-a1c7-0d541f9a
+ ef9d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 82156 Freibad Letzigraben\, Umbau Rest
+ aurant - BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

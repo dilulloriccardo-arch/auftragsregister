@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0be9e83-4483-4bc4-9876-977cd5c5dcc5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261216T160000Z
+SUMMARY:Submission deadline: MUA Medizinisches Universalarchiv
+DESCRIPTION:Public buyer: Kantonsspital Glarus AG\nSubmission deadline: 16
+  Dec 2026\, 17:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/e0be9e83-4483-4bc4-9876-977cd5c5dcc5/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/e0be9e83-4483-4bc4-9876-977cd5c5dcc5
+URL:https://auftragsregister.ch/en/auftrag/e0be9e83-4483-4bc4-9876-977cd5c5
+ dcc5/
+LOCATION:Glarus
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MUA Medizinisches Universalarchiv
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

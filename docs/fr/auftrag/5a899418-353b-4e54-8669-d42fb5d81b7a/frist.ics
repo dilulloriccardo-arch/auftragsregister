@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5a899418-353b-4e54-8669-d42fb5d81b7a-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Délai de remise : Transports scolaires
+DESCRIPTION:Acheteur public : Commune de Gibloux\nDélai de remise : 09
+ .12.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/5a899418-353b-4e54-8669-d42fb5d81b7a/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/5a899418-353b-4e54-8669-d42fb5d81
+ b7a
+URL:https://auftragsregister.ch/fr/auftrag/5a899418-353b-4e54-8669-d42fb5d8
+ 1b7a/
+LOCATION:Farvagny
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transports scolaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

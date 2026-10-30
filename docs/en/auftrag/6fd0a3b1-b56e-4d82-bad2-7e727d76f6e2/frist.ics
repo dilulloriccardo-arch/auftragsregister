@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6fd0a3b1-b56e-4d82-bad2-7e727d76f6e2-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261124T160000Z
+SUMMARY:Submission deadline: Sanierung Bodensee-Arena Leistungsofferte Elek
+ troplanung
+DESCRIPTION:Public buyer: Stadt Kreuzlingen\nSubmission deadline: 24 Nov 
+ 2026\, 17:00\nIn the register: https://auftragsregister.ch/en/auftrag/6fd0
+ a3b1-b56e-4d82-bad2-7e727d76f6e2/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/6fd0a3b1-b56e-4d82-bad2-7e727d76f6e2
+URL:https://auftragsregister.ch/en/auftrag/6fd0a3b1-b56e-4d82-bad2-7e727d76
+ f6e2/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Bodensee-Arena Leistungsofferte 
+ Elektroplanung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0a73dc5-7479-4c91-b68b-114a24953dcc-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T090000Z
+SUMMARY:Délai de remise : Effretikon\, Gerstenriet-/ Lindauerstrasse\, p
+ lanification technique et coordination générale\, phases SIA 41 à 53
+DESCRIPTION:Acheteur public : Baudirektion Kanton Zürich\, Tiefbauamt\, 
+ Abt. Projektieren und Realisieren\nDélai de remise : 11.12.2026\, 10 
+ h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/e0a73d
+ c5-7479-4c91-b68b-114a24953dcc/\nPublication officielle : https://www.si
+ map.ch/fr/project-detail/e0a73dc5-7479-4c91-b68b-114a24953dcc
+URL:https://auftragsregister.ch/fr/auftrag/e0a73dc5-7479-4c91-b68b-114a2495
+ 3dcc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Effretikon\, Gerstenriet-/ Lindauerstrasse
+ \, planification technique et coordination générale\, phases SIA 41 à 5
+ 3
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

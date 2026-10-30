@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a7bf66a9-c8fe-4f9c-888c-ac628b7728bc-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Submission deadline: Bau Nr. 14125 - Badener- und Dennlerstrasse\, 
+ Abschnitt Badenerstrasse 526 bis 542\, Dennlerstrasse 1 bis 52\, Cyklamenw
+ eg 1 bis 14
+DESCRIPTION:Public buyer: Tiefbauamt\, Abt. Realisierung\nSubmission deadli
+ ne: 2 Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/a7bf66a9-c8fe-4f9c-888c-ac628b7728bc/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/a7bf66a9-c8fe-4f9c-888c-ac628b7728bc
+URL:https://auftragsregister.ch/en/auftrag/a7bf66a9-c8fe-4f9c-888c-ac628b77
+ 28bc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bau Nr. 14125 - Badener- und Dennlerstrass
+ e\, Abschnitt Badenerstrasse 526 bis 542\, Dennlerstrasse 1 bis 52\, Cykla
+ menweg 1 bis 14
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

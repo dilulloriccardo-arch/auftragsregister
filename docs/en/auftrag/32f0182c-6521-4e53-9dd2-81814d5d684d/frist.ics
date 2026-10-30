@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32f0182c-6521-4e53-9dd2-81814d5d684d-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Submission deadline: SZO Spital Wallis - SKP 225 Spezielle Dichtung
+ en und Dämmungen TP1+TP7\, Umbau & Erweiterungsbau UG/EG
+DESCRIPTION:Public buyer: Hôpital du Valais - Spital Wallis\nSubmission de
+ adline: 9 Dec 2026\nIn the register: https://auftragsregister.ch/en/auft
+ rag/32f0182c-6521-4e53-9dd2-81814d5d684d/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/32f0182c-6521-4e53-9dd2-81814d5d684d
+URL:https://auftragsregister.ch/en/auftrag/32f0182c-6521-4e53-9dd2-81814d5d
+ 684d/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: SZO Spital Wallis - SKP 225 Spezielle Dich
+ tungen und Dämmungen TP1+TP7\, Umbau & Erweiterungsbau UG/EG
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

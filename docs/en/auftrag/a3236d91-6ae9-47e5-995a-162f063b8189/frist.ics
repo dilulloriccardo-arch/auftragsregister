@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a3236d91-6ae9-47e5-995a-162f063b8189-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T110000Z
+SUMMARY:Submission deadline: Acquisition de licence Qualtrics et du support
+  associé
+DESCRIPTION:Public buyer: Transport publics genevois (tpg)\nSubmission dead
+ line: 10 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/
+ en/auftrag/a3236d91-6ae9-47e5-995a-162f063b8189/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/a3236d91-6ae9-47e5-995a-162f063b8189
+URL:https://auftragsregister.ch/en/auftrag/a3236d91-6ae9-47e5-995a-162f063b
+ 8189/
+LOCATION:Grand Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Acquisition de licence Qualtrics et du sup
+ port associé
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

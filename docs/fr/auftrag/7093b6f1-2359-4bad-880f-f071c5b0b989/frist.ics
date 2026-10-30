@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7093b6f1-2359-4bad-880f-f071c5b0b989-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Délai de remise : Tittwiesenpark
+DESCRIPTION:Acheteur public : Stadt Chur\, Hochbaudienste\, Freiraumplanu
+ ng\nDélai de remise : 27.11.2026\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/7093b6f1-2359-4bad-880f-f071c5b0b989/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/7093b6f1-2359-4bad-8
+ 80f-f071c5b0b989
+URL:https://auftragsregister.ch/fr/auftrag/7093b6f1-2359-4bad-880f-f071c5b0
+ b989/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Tittwiesenpark
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

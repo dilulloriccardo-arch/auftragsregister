@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a4586f39-92e3-4138-afaa-c649d5f467fa-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T160000Z
+SUMMARY:Délai de remise : Livraison de bois (lots 1 et 2)
+DESCRIPTION:Acheteur public : HBD - Immobilien Stadt Zürich (IMMO)\nDél
+ ai de remise : 09.12.2026\, 17 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/a4586f39-92e3-4138-afaa-c649d5f467fa/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/a4586f39-92e3-
+ 4138-afaa-c649d5f467fa
+URL:https://auftragsregister.ch/fr/auftrag/a4586f39-92e3-4138-afaa-c649d5f4
+ 67fa/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Livraison de bois (lots 1 et 2)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

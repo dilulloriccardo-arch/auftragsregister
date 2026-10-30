@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b0ba1ceb-c0e7-4d8b-bafc-70ef45a4cdee-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Submission deadline: MP-080093 (Los 1) / MP-180022 (Los 2) Erhaltun
+ gsplanung EP F5\, Hauptinspektionen BAU + BSA Tunnel und Galerien N13\, N2
+ 8\, N29 Graubünden\, 2027-2031
+DESCRIPTION:Public buyer: Ufficio federale delle strade USTRA\, Divisione i
+ nfrastruttura stradale Est\nSubmission deadline: 9 Dec 2026\, 16:00\nIn 
+ the register: https://auftragsregister.ch/en/auftrag/b0ba1ceb-c0e7-4d8b-ba
+ fc-70ef45a4cdee/\nOfficial publication: https://www.simap.ch/en/project-de
+ tail/b0ba1ceb-c0e7-4d8b-bafc-70ef45a4cdee
+URL:https://auftragsregister.ch/en/auftrag/b0ba1ceb-c0e7-4d8b-bafc-70ef45a4
+ cdee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-080093 (Los 1) / MP-180022 (Los 2) Erha
+ ltungsplanung EP F5\, Hauptinspektionen BAU + BSA Tunnel und Galerien N13\
+ , N28\, N29 Graubünden\, 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

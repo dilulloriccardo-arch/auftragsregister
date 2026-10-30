@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc5a44d1-90e2-4754-b492-dd59c178415b-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261215T090000Z
+SUMMARY:Eingabefrist: Reinigungsleistungen für die Bürogebäude der SVA B
+ asel-Landschaft
+DESCRIPTION:Auftraggeber: SVA Basel-Landschaft\nEingabefrist: 15.12.2026\, 
+ 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/cc5a44d1-9
+ 0e2-4754-b492-dd59c178415b/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/cc5a44d1-90e2-4754-b492-dd59c178415b
+URL:https://auftragsregister.ch/de/auftrag/cc5a44d1-90e2-4754-b492-dd59c178
+ 415b/
+LOCATION:Binningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Reinigungsleistungen für die Bürogebäude der S
+ VA Basel-Landschaft
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

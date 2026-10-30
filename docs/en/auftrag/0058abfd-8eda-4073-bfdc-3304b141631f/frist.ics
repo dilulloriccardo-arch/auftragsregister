@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0058abfd-8eda-4073-bfdc-3304b141631f-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Submission deadline: Zeiningen – Möhlin AO\, K292\, Belagssanier
+ ung
+DESCRIPTION:Public buyer: Abteilung Tiefbau (ATB)\nSubmission deadline: 11
+  Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/0058abfd-8eda-4073-bfdc-3304b141631f/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/0058abfd-8eda-4073-bfdc-3304b141631f
+URL:https://auftragsregister.ch/en/auftrag/0058abfd-8eda-4073-bfdc-3304b141
+ 631f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Zeiningen – Möhlin AO\, K292\, Belagssa
+ nierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

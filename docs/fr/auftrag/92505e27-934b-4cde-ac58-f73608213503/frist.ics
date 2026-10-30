@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92505e27-934b-4cde-ac58-f73608213503-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T140000Z
+SUMMARY:Délai de remise : Construction du nouveau centre hospitalier 2\,
+  phase 1\, SKP 224\, travaux de toiture-terrasse
+DESCRIPTION:Acheteur public : Universitätsspital Basel\nDélai de remise
+  : 10.12.2026\, 15 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/92505e27-934b-4cde-ac58-f73608213503/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/92505e27-934b-4cde-ac58-f7
+ 3608213503
+URL:https://auftragsregister.ch/fr/auftrag/92505e27-934b-4cde-ac58-f7360821
+ 3503/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction du nouveau centre hospitalier
+  2\, phase 1\, SKP 224\, travaux de toiture-terrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

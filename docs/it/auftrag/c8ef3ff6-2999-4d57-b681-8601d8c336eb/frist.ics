@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8ef3ff6-2999-4d57-b681-8601d8c336eb-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T090000Z
+SUMMARY:Scadenza: Submission Schülertransporte Heilpädagogische Schule We
+ tzikon
+DESCRIPTION:Ente pubblico: Heilpädagogische Schule Wetzikon\nScadenza: 10.
+ 12.2026\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/c8ef
+ 3ff6-2999-4d57-b681-8601d8c336eb/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/c8ef3ff6-2999-4d57-b681-8601d8c336eb
+URL:https://auftragsregister.ch/it/auftrag/c8ef3ff6-2999-4d57-b681-8601d8c3
+ 36eb/
+LOCATION:Wetzikon ZH
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Submission Schülertransporte Heilpädagogische Schul
+ e Wetzikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

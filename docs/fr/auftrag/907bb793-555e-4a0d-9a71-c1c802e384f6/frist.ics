@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:907bb793-555e-4a0d-9a71-c1c802e384f6-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T160000Z
+SUMMARY:Délai de remise : Contrats-cadres de prestations archéologiques
+  2027-2031 (+1) - Lot 1 : Archéologie sédimentaire - Lot 2 : Archéologi
+ e du bâti
+DESCRIPTION:Acheteur public : DGIP-DAC-Direction de l'archéologie canton
+ ale\nDélai de remise : 11.12.2026\, 17 h 00\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/907bb793-555e-4a0d-9a71-c1c802e384f6
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/907bb
+ 793-555e-4a0d-9a71-c1c802e384f6
+URL:https://auftragsregister.ch/fr/auftrag/907bb793-555e-4a0d-9a71-c1c802e3
+ 84f6/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrats-cadres de prestations archéologi
+ ques 2027-2031 (+1) - Lot 1 : Archéologie sédimentaire - Lot 2 : Archéo
+ logie du bâti
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e14b8e06-22fc-4435-a351-2601f02cac0c-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Scadenza: Kanal-/Schachtreinigung 2027-2028 Kanton Zürich\, Strass
+ enregion I - IV
+DESCRIPTION:Ente pubblico: Tiefbauamt\, Abt. Strasseninspektorat\nScadenza:
+  11.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ e14b8e06-22fc-4435-a351-2601f02cac0c/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/e14b8e06-22fc-4435-a351-2601f02cac0c
+URL:https://auftragsregister.ch/it/auftrag/e14b8e06-22fc-4435-a351-2601f02c
+ ac0c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kanal-/Schachtreinigung 2027-2028 Kanton Zürich\, St
+ rassenregion I - IV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

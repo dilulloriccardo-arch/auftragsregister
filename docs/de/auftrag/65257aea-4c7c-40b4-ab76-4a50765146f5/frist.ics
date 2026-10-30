@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:65257aea-4c7c-40b4-ab76-4a50765146f5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Eingabefrist: (b26063) Centre sportif national de la jeunesse de Te
+ nero – travaux préparatoires\, 5e étape / CFC 112\, 113
+DESCRIPTION:Auftraggeber: Ufficio federale delle costruzioni e della logist
+ ica UFCL\nEingabefrist: 11.12.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/65257aea-4c7c-40b4-ab76-4a50765146f5/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/65257aea-4c7c-40b4-ab
+ 76-4a50765146f5
+URL:https://auftragsregister.ch/de/auftrag/65257aea-4c7c-40b4-ab76-4a507651
+ 46f5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (b26063) Centre sportif national de la jeunesse d
+ e Tenero – travaux préparatoires\, 5e étape / CFC 112\, 113
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92505e27-934b-4cde-ac58-f73608213503-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T140000Z
+SUMMARY:Scadenza: Neubau Klinikum 2\, Phase 1\, SKP 224\, Flachdacharbeiten
+DESCRIPTION:Ente pubblico: Universitätsspital Basel\nScadenza: 10.12.2026\
+ , 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/92505e27-934
+ b-4cde-ac58-f73608213503/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/92505e27-934b-4cde-ac58-f73608213503
+URL:https://auftragsregister.ch/it/auftrag/92505e27-934b-4cde-ac58-f7360821
+ 3503/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Klinikum 2\, Phase 1\, SKP 224\, Flachdacharbe
+ iten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f464520c-d61c-4e93-b591-4d9bc4e29124-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Submission deadline: Rénovation école du Bosson - Sols sportifs
+DESCRIPTION:Public buyer: Ville d'Onex (Bureau d'architectes Burckhardt Arc
+ hitecture SA)\nSubmission deadline: 9 Dec 2026\, 12:00\nIn the register:
+  https://auftragsregister.ch/en/auftrag/f464520c-d61c-4e93-b591-4d9bc4e291
+ 24/\nOfficial publication: https://www.simap.ch/en/project-detail/f464520c
+ -d61c-4e93-b591-4d9bc4e29124
+URL:https://auftragsregister.ch/en/auftrag/f464520c-d61c-4e93-b591-4d9bc4e2
+ 9124/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rénovation école du Bosson - Sols sporti
+ fs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

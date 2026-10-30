@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a80c8586-300c-45fc-971b-667b06f5989c-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Scadenza: RO 1033\, Areal Rosental\, Umbau Laborgebäude\, BKP 244 
+ Lüftungsanlagen
+DESCRIPTION:Ente pubblico: Bau- und Verkehrsdepartement des Kantons Basel-S
+ tadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nScade
+ nza: 09.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/a80c8586-300c-45fc-971b-667b06f5989c/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/a80c8586-300c-45fc-971b-667b06f5989c
+URL:https://auftragsregister.ch/it/auftrag/a80c8586-300c-45fc-971b-667b06f5
+ 989c/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: RO 1033\, Areal Rosental\, Umbau Laborgebäude\, BKP 
+ 244 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

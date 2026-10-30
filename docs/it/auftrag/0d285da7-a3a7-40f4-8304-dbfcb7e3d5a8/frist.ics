@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0d285da7-a3a7-40f4-8304-dbfcb7e3d5a8-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261218T140000Z
+SUMMARY:Scadenza: Ingenieurleistungen Projekt Heubach-Hochwasserentlastung 
+ inkl. Infrastruktur (Kanalisation\, Bushaltestelle\, Integration Fernwärm
+ e\, Strassenbau)
+DESCRIPTION:Ente pubblico: Gemeinde Horgen\nScadenza: 18.12.2026\, 15:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/0d285da7-a3a7-40f4-830
+ 4-dbfcb7e3d5a8/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/0d285da7-a3a7-40f4-8304-dbfcb7e3d5a8
+URL:https://auftragsregister.ch/it/auftrag/0d285da7-a3a7-40f4-8304-dbfcb7e3
+ d5a8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ingenieurleistungen Projekt Heubach-Hochwasserentlast
+ ung inkl. Infrastruktur (Kanalisation\, Bushaltestelle\, Integration Fernw
+ ärme\, Strassenbau)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

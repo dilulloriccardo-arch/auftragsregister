@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a7bf66a9-c8fe-4f9c-888c-ac628b7728bc-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Délai de remise : Bau Nr. 14125 - Badener- et Dennlerstrasse\, t
+ ronçon Badenerstrasse 526 jusqu'à 542\, Dennlerstrasse 1 jusqu'à 52\, C
+ yklamenweg 1 jusqu'à 14
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Realisierung\nDélai de r
+ emise : 02.12.2026\, 16 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/a7bf66a9-c8fe-4f9c-888c-ac628b7728bc/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/a7bf66a9-c8fe-4f9c-88
+ 8c-ac628b7728bc
+URL:https://auftragsregister.ch/fr/auftrag/a7bf66a9-c8fe-4f9c-888c-ac628b77
+ 28bc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bau Nr. 14125 - Badener- et Dennlerstrasse
+ \, tronçon Badenerstrasse 526 jusqu'à 542\, Dennlerstrasse 1 jusqu'à 52
+ \, Cyklamenweg 1 jusqu'à 14
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

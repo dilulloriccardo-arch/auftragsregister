@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f1f463b-ab1f-4c25-97a1-67f89cad8bf5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261126T110000Z
+SUMMARY:Délai de remise : Fenster in Holz
+DESCRIPTION:Acheteur public : Gemeinde Flawil\nDélai de remise : 26.11
+ .2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/5f1f463b-ab1f-4c25-97a1-67f89cad8bf5/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/5f1f463b-ab1f-4c25-97a1-67f89cad8bf5
+URL:https://auftragsregister.ch/fr/auftrag/5f1f463b-ab1f-4c25-97a1-67f89cad
+ 8bf5/
+LOCATION:Flawil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fenster in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

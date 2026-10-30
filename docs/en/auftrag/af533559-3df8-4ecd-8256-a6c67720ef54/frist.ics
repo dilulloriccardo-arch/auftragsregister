@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af533559-3df8-4ecd-8256-a6c67720ef54-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Submission deadline: BAV 80926 Schulanlage Entlisberg\, Erweiterung
+  - BKP 224.0 Bedachungsarbeiten
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 9 Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/af533559-3df8-4ecd-8256-a6c67720ef54/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/af533559-3df8-4ecd-8256-a6c67720ef54
+URL:https://auftragsregister.ch/en/auftrag/af533559-3df8-4ecd-8256-a6c67720
+ ef54/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 80926 Schulanlage Entlisberg\, Erweite
+ rung - BKP 224.0 Bedachungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

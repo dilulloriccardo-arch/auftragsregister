@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cdcee893-6433-4cb5-bc26-c88764b09d85-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Scadenza: BAV 80746 Schulanlage Triemli\, In der Ey\, Ersatzneubau 
+ - BKP 271 Gipserarbeiten (Trockenbau)
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 14.12
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/cdcee8
+ 93-6433-4cb5-bc26-c88764b09d85/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/cdcee893-6433-4cb5-bc26-c88764b09d85
+URL:https://auftragsregister.ch/it/auftrag/cdcee893-6433-4cb5-bc26-c88764b0
+ 9d85/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 80746 Schulanlage Triemli\, In der Ey\, Ersatzneu
+ bau - BKP 271 Gipserarbeiten (Trockenbau)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

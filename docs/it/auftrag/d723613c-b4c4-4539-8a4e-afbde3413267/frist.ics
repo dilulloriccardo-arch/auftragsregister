@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d723613c-b4c4-4539-8a4e-afbde3413267-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T153100Z
+SUMMARY:Scadenza: Automatisation du comptage énergétique - Appel d'offres
+  Mandataires
+DESCRIPTION:Ente pubblico: DGIP-DID-Direction de l’ingénierie et de la d
+ urabilité\nScadenza: 10.12.2026\, 16:31\nNel registro: https://auftragsre
+ gister.ch/it/auftrag/d723613c-b4c4-4539-8a4e-afbde3413267/\nPubblicazione 
+ ufficiale: https://www.simap.ch/it/project-detail/d723613c-b4c4-4539-8a4e-
+ afbde3413267
+URL:https://auftragsregister.ch/it/auftrag/d723613c-b4c4-4539-8a4e-afbde341
+ 3267/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Automatisation du comptage énergétique - Appel d'of
+ fres Mandataires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

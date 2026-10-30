@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1a31aaac-c2a7-40e5-bfa5-086d45208711-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Eingabefrist: 16.0249 - Langenthal\, Sanierung und Erweiterung Beru
+ fsfachschule: 244 Lüftungsanlagen
+DESCRIPTION:Auftraggeber: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nEingabefrist: 09.12.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/1a31aaac-c2a7-40e5-bfa5-086d45208711/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/1a31aaac-c2a7-40e5-bf
+ a5-086d45208711
+URL:https://auftragsregister.ch/de/auftrag/1a31aaac-c2a7-40e5-bfa5-086d4520
+ 8711/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 16.0249 - Langenthal\, Sanierung und Erweiterung 
+ Berufsfachschule: 244 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

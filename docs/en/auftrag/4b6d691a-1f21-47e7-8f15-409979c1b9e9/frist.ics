@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b6d691a-1f21-47e7-8f15-409979c1b9e9-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Submission deadline: RO 1033\, Areal Rosental\, Umbau Laborgebäude
+ \, BKP 230 Elektroanlagen
+DESCRIPTION:Public buyer: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nSubmis
+ sion deadline: 9 Dec 2026\, 12:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/4b6d691a-1f21-47e7-8f15-409979c1b9e9/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/4b6d691a-1f21-47e7-8f15-40997
+ 9c1b9e9
+URL:https://auftragsregister.ch/en/auftrag/4b6d691a-1f21-47e7-8f15-409979c1
+ b9e9/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: RO 1033\, Areal Rosental\, Umbau Laborgeb
+ äude\, BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

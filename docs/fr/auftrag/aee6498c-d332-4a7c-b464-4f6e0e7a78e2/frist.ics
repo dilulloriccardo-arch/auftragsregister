@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aee6498c-d332-4a7c-b464-4f6e0e7a78e2-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Délai de remise : Projet n° 15110 – Wasserwerkstrasse\, tron
+ çon entre Röhrenweg et Dammstrasse
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Realisierung\nDélai de r
+ emise : 10.12.2026\, 16 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/aee6498c-d332-4a7c-b464-4f6e0e7a78e2/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/aee6498c-d332-4a7c-b4
+ 64-4f6e0e7a78e2
+URL:https://auftragsregister.ch/fr/auftrag/aee6498c-d332-4a7c-b464-4f6e0e7a
+ 78e2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet n° 15110 – Wasserwerkstrasse\, t
+ ronçon entre Röhrenweg et Dammstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

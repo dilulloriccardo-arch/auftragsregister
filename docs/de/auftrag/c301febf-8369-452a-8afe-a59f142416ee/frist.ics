@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c301febf-8369-452a-8afe-a59f142416ee-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261203T150000Z
+SUMMARY:Eingabefrist: BAV 80753 Schulanlage Saatlen\, Ersatzneubau - BKP 46
+ 1 Erd- und Unterbau
+DESCRIPTION:Auftraggeber: HBD - Amt für Hochbauten (AHB)\nEingabefrist: 03
+ .12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /c301febf-8369-452a-8afe-a59f142416ee/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/c301febf-8369-452a-8afe-a59f142416ee
+URL:https://auftragsregister.ch/de/auftrag/c301febf-8369-452a-8afe-a59f1424
+ 16ee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BAV 80753 Schulanlage Saatlen\, Ersatzneubau - BK
+ P 461 Erd- und Unterbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2246637a-2f13-46b4-bd0f-c85e564aa2ce-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Submission deadline: MP-080093 – Planification de l’entretien E
+ P F5: inspections principales BAU+BSA des tunnels et galeries des routes n
+ ationales N02\, N13 et NEB N13\, Tessin et Mesolcina\, 2027-2031
+DESCRIPTION:Public buyer: Ufficio federale delle strade USTRA\, Divisione i
+ nfrastruttura stradale Est\nSubmission deadline: 9 Dec 2026\, 16:00\nIn 
+ the register: https://auftragsregister.ch/en/auftrag/2246637a-2f13-46b4-bd
+ 0f-c85e564aa2ce/\nOfficial publication: https://www.simap.ch/en/project-de
+ tail/2246637a-2f13-46b4-bd0f-c85e564aa2ce
+URL:https://auftragsregister.ch/en/auftrag/2246637a-2f13-46b4-bd0f-c85e564a
+ a2ce/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-080093 – Planification de l’entreti
+ en EP F5: inspections principales BAU+BSA des tunnels et galeries des rout
+ es nationales N02\, N13 et NEB N13\, Tessin et Mesolcina\, 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:598a542d-96de-405d-9efe-bfc007941233-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261127T103000Z
+SUMMARY:Submission deadline: Entretien du réseau routier communal 2027-202
+ 8
+DESCRIPTION:Public buyer: Commune de La Grande Béroche - Service Technique
+ \nSubmission deadline: 27 Nov 2026\, 11:30\nIn the register: https://auf
+ tragsregister.ch/en/auftrag/598a542d-96de-405d-9efe-bfc007941233/\nOfficia
+ l publication: https://www.simap.ch/en/project-detail/598a542d-96de-405d-9
+ efe-bfc007941233
+URL:https://auftragsregister.ch/en/auftrag/598a542d-96de-405d-9efe-bfc00794
+ 1233/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Entretien du réseau routier communal 2027
+ -2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

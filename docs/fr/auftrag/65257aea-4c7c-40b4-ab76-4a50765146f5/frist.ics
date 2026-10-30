@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:65257aea-4c7c-40b4-ab76-4a50765146f5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Délai de remise : (b26063) Centre sportif national de la jeuness
+ e de Tenero – travaux préparatoires\, 5e étape / CFC 112\, 113
+DESCRIPTION:Acheteur public : Ufficio federale delle costruzioni e della 
+ logistica UFCL\nDélai de remise : 11.12.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/65257aea-4c7c-40b4-ab76-4
+ a50765146f5/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/65257aea-4c7c-40b4-ab76-4a50765146f5
+URL:https://auftragsregister.ch/fr/auftrag/65257aea-4c7c-40b4-ab76-4a507651
+ 46f5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (b26063) Centre sportif national de la jeu
+ nesse de Tenero – travaux préparatoires\, 5e étape / CFC 112\, 113
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

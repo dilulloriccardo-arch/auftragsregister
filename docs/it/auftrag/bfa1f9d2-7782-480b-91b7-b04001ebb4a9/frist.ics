@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bfa1f9d2-7782-480b-91b7-b04001ebb4a9-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261123T150000Z
+SUMMARY:Scadenza: 10180 Schulerweriterung Sonnenhof Fischingen - BKP 242 / 
+ 243 Heizungs- Kälteanlagen
+DESCRIPTION:Ente pubblico: Volksschulgemeinde Fischingen\nScadenza: 23.11.2
+ 026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/bfa1f9d2
+ -7782-480b-91b7-b04001ebb4a9/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/bfa1f9d2-7782-480b-91b7-b04001ebb4a9
+URL:https://auftragsregister.ch/it/auftrag/bfa1f9d2-7782-480b-91b7-b04001eb
+ b4a9/
+LOCATION:Oberwangen TG
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 10180 Schulerweriterung Sonnenhof Fischingen - BKP 24
+ 2 / 243 Heizungs- Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

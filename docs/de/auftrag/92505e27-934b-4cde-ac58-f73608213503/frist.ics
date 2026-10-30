@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92505e27-934b-4cde-ac58-f73608213503-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T140000Z
+SUMMARY:Eingabefrist: Neubau Klinikum 2\, Phase 1\, SKP 224\, Flachdacharbe
+ iten
+DESCRIPTION:Auftraggeber: Universitätsspital Basel\nEingabefrist: 10.12.20
+ 26\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/92505
+ e27-934b-4cde-ac58-f73608213503/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/92505e27-934b-4cde-ac58-f73608213503
+URL:https://auftragsregister.ch/de/auftrag/92505e27-934b-4cde-ac58-f7360821
+ 3503/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Klinikum 2\, Phase 1\, SKP 224\, Flachdach
+ arbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

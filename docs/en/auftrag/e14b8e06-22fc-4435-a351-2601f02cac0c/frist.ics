@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e14b8e06-22fc-4435-a351-2601f02cac0c-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Submission deadline: Kanal-/Schachtreinigung 2027-2028 Kanton Züri
+ ch\, Strassenregion I - IV
+DESCRIPTION:Public buyer: Tiefbauamt\, Abt. Strasseninspektorat\nSubmission
+  deadline: 11 Dec 2026\, 12:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/e14b8e06-22fc-4435-a351-2601f02cac0c/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/e14b8e06-22fc-4435-a351-2601f02c
+ ac0c
+URL:https://auftragsregister.ch/en/auftrag/e14b8e06-22fc-4435-a351-2601f02c
+ ac0c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kanal-/Schachtreinigung 2027-2028 Kanton Z
+ ürich\, Strassenregion I - IV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

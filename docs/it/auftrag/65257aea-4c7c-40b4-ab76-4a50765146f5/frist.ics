@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:65257aea-4c7c-40b4-ab76-4a50765146f5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Scadenza: (b26063) Centro sportivo nazionale CST Tenero\, lavori pr
+ eliminari 5a tappa / CCC 112\, 113
+DESCRIPTION:Ente pubblico: Ufficio federale delle costruzioni e della logis
+ tica UFCL\nScadenza: 11.12.2026\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/65257aea-4c7c-40b4-ab76-4a50765146f5/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/65257aea-4c7c-40b4-ab76-4
+ a50765146f5
+URL:https://auftragsregister.ch/it/auftrag/65257aea-4c7c-40b4-ab76-4a507651
+ 46f5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (b26063) Centro sportivo nazionale CST Tenero\, lavor
+ i preliminari 5a tappa / CCC 112\, 113
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

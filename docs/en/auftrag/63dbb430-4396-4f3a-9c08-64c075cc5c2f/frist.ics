@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:63dbb430-4396-4f3a-9c08-64c075cc5c2f-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Submission deadline: Ein markierungsfreies quantitatives 3D-Bildgeb
+ ungssystem für lebende Zellen
+DESCRIPTION:Public buyer: EPFL-Scientific Equipment\nSubmission deadline: 9
+  Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/63dbb430-4396-4f3a-9c08-64c075cc5c2f/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/63dbb430-4396-4f3a-9c08-64c075cc5c2f
+URL:https://auftragsregister.ch/en/auftrag/63dbb430-4396-4f3a-9c08-64c075cc
+ 5c2f/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ein markierungsfreies quantitatives 3D-Bil
+ dgebungssystem für lebende Zellen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

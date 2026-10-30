@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6ed01ec1-489c-42f2-abbd-edde8f36c9d7-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20270106T120000Z
+SUMMARY:Submission deadline: Contrat cadre sur le parc ventilateurs de l'HF
+ R
+DESCRIPTION:Public buyer: HFR | hôpital fribourgeois - freiburger spital\n
+ Submission deadline: 6 Jan 2027\, 13:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/6ed01ec1-489c-42f2-abbd-edde8f36c9d7/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/6ed01ec1-489c-42f2-abbd
+ -edde8f36c9d7
+URL:https://auftragsregister.ch/en/auftrag/6ed01ec1-489c-42f2-abbd-edde8f36
+ c9d7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Contrat cadre sur le parc ventilateurs de 
+ l'HFR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

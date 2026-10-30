@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b434cb9a-ba84-41c1-a7b9-0208b8e1024c-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Délai de remise : BAV 60738 Regionalwache Industrie\, Anpassung 
+ Sicherheitsstandard - BKP 230 Elektroanlagen gesamt
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 26.11.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/b434cb9a-ba84-41c1-a7b9-0208b8e1024c/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/b434cb9a-ba84-41c1-a
+ 7b9-0208b8e1024c
+URL:https://auftragsregister.ch/fr/auftrag/b434cb9a-ba84-41c1-a7b9-0208b8e1
+ 024c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 60738 Regionalwache Industrie\, Anpass
+ ung Sicherheitsstandard - BKP 230 Elektroanlagen gesamt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

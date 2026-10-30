@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2cad9eee-b47b-42cd-bab0-15be7226603f-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Eingabefrist: RO 1033\, Areal Rosental\, Umbau Laborgebäude\, BKP 
+ 242/246 Heizungs- und Kälteanlagen
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 09.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/2cad9eee-b47b-42cd-bab0-15be7226603f/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/2cad9eee-b47b-42cd-bab0-15be7226603f
+URL:https://auftragsregister.ch/de/auftrag/2cad9eee-b47b-42cd-bab0-15be7226
+ 603f/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: RO 1033\, Areal Rosental\, Umbau Laborgebäude\, 
+ BKP 242/246 Heizungs- und Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

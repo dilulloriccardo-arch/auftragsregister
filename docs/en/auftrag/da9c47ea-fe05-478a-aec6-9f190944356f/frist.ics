@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da9c47ea-fe05-478a-aec6-9f190944356f-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Submission deadline: Sanierung Hallenbad Langnau am Albis
+DESCRIPTION:Public buyer: BBS Ingenieure AG\nSubmission deadline: 16 Dec 
+ 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/da9c
+ 47ea-fe05-478a-aec6-9f190944356f/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/da9c47ea-fe05-478a-aec6-9f190944356f
+URL:https://auftragsregister.ch/en/auftrag/da9c47ea-fe05-478a-aec6-9f190944
+ 356f/
+LOCATION:Langnau am Albis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Hallenbad Langnau am Albis
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

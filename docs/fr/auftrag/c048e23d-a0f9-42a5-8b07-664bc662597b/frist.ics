@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c048e23d-a0f9-42a5-8b07-664bc662597b-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Délai de remise : (b26055-11) Berne\, Monbijoustr. 40\, rénovat
+ ion totale / CFC 228
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 10.12.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/c048e23d-a0f9-42a5-8b07-664bc662597b/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/c048e23d-a0f9
+ -42a5-8b07-664bc662597b
+URL:https://auftragsregister.ch/fr/auftrag/c048e23d-a0f9-42a5-8b07-664bc662
+ 597b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (b26055-11) Berne\, Monbijoustr. 40\, rén
+ ovation totale / CFC 228
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

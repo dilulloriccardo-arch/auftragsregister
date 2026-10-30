@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:77bb9875-f7fb-48fd-a921-c7bab138b704-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Eingabefrist: (26260) 316 Forensische Datenanalysen zwecks Rückfor
+ derung zu Unrecht in Rechnung gestellter Covid-Testkosten
+DESCRIPTION:Auftraggeber: Bundesamt für Gesundheit BAG\nEingabefrist: 23.1
+ 2.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/7
+ 7bb9875-f7fb-48fd-a921-c7bab138b704/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/77bb9875-f7fb-48fd-a921-c7bab138b704
+URL:https://auftragsregister.ch/de/auftrag/77bb9875-f7fb-48fd-a921-c7bab138
+ b704/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (26260) 316 Forensische Datenanalysen zwecks Rüc
+ kforderung zu Unrecht in Rechnung gestellter Covid-Testkosten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

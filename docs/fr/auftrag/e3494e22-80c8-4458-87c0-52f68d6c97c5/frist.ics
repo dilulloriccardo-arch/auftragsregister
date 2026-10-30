@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3494e22-80c8-4458-87c0-52f68d6c97c5-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261209T225900Z
+SUMMARY:Délai de remise : 16.0249 - Langenthal\, rénovation et extensio
+ n de l’école professionnelle: CFC 135 Locaux scolaires provisoires
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 09.12.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/e3494e22-80c8-4458-87c0-5
+ 2f68d6c97c5/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/e3494e22-80c8-4458-87c0-52f68d6c97c5
+URL:https://auftragsregister.ch/fr/auftrag/e3494e22-80c8-4458-87c0-52f68d6c
+ 97c5/
+LOCATION:Langenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 16.0249 - Langenthal\, rénovation et exte
+ nsion de l’école professionnelle: CFC 135 Locaux scolaires provisoires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

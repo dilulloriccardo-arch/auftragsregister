@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aec2f207-fb38-43c0-ab97-25edf86fb3cd-frist@auftragsregister.ch
+DTSTAMP:20261030T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Délai de remise : BAV 80746 Schulanlage Triemli\, In der Ey\, Er
+ satzneubau - CFC 271 Plâtrerie
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 14.12.2026\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/aec2f207-fb38-43c0-ab97-25edf86fb3cd/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/aec2f207-fb38-43c0-a
+ b97-25edf86fb3cd
+URL:https://auftragsregister.ch/fr/auftrag/aec2f207-fb38-43c0-ab97-25edf86f
+ b3cd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 80746 Schulanlage Triemli\, In der Ey\
+ , Ersatzneubau - CFC 271 Plâtrerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
