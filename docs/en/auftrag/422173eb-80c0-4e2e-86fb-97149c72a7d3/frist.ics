@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:422173eb-80c0-4e2e-86fb-97149c72a7d3-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Submission deadline: AO 2023-139 Pictet-de-Rochemont
+DESCRIPTION:Public buyer: Services industriels de Genève (SIG) - Direction
+  Achats\nSubmission deadline: 14 Dec 2026\, 12:00\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/422173eb-80c0-4e2e-86fb-97149c72a7d3/\n
+ Official publication: https://www.simap.ch/en/project-detail/422173eb-80c0
+ -4e2e-86fb-97149c72a7d3
+URL:https://auftragsregister.ch/en/auftrag/422173eb-80c0-4e2e-86fb-97149c72
+ a7d3/
+LOCATION:Genève (Ville)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AO 2023-139 Pictet-de-Rochemont
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

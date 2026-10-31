@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2902051-90f7-4a83-93ca-0c8034b3f66a-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:Submission deadline: Erweiterung Schule Champagne - BKP 421 Gärtne
+ rarbeiten
+DESCRIPTION:Public buyer: Stadt Biel\, Abteilung Hochbau\nSubmission deadli
+ ne: 8 Jan 2027\nIn the register: https://auftragsregister.ch/en/auftrag/
+ d2902051-90f7-4a83-93ca-0c8034b3f66a/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/d2902051-90f7-4a83-93ca-0c8034b3f66a
+URL:https://auftragsregister.ch/en/auftrag/d2902051-90f7-4a83-93ca-0c8034b3
+ f66a/
+LOCATION:Biel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Erweiterung Schule Champagne - BKP 421 Gä
+ rtnerarbeiten
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

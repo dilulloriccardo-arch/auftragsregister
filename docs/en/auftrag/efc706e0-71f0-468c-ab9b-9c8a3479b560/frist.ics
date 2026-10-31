@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:efc706e0-71f0-468c-ab9b-9c8a3479b560-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261217T140000Z
+SUMMARY:Submission deadline: AO pour les appareils de réfrigérations\, co
+ ngélations de la santé 27-31
+DESCRIPTION:Public buyer: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nSubmission deadline: 17 Dec 2026\, 15:00\nIn the reg
+ ister: https://auftragsregister.ch/en/auftrag/efc706e0-71f0-468c-ab9b-9c8a
+ 3479b560/\nOfficial publication: https://www.simap.ch/en/project-detail/ef
+ c706e0-71f0-468c-ab9b-9c8a3479b560
+URL:https://auftragsregister.ch/en/auftrag/efc706e0-71f0-468c-ab9b-9c8a3479
+ b560/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AO pour les appareils de réfrigérations\
+ , congélations de la santé 27-31
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

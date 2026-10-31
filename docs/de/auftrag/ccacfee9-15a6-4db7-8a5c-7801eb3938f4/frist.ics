@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ccacfee9-15a6-4db7-8a5c-7801eb3938f4-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20270205T150000Z
+SUMMARY:Eingabefrist: Erneuerung der Korrosionsschutz des Siphons von Zmutt
+DESCRIPTION:Auftraggeber: HYDRO Exploitation SA\nEingabefrist: 05.02.2027\,
+  16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ccacfee9-
+ 15a6-4db7-8a5c-7801eb3938f4/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/ccacfee9-15a6-4db7-8a5c-7801eb3938f4
+URL:https://auftragsregister.ch/de/auftrag/ccacfee9-15a6-4db7-8a5c-7801eb39
+ 38f4/
+LOCATION:Zermatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Erneuerung der Korrosionsschutz des Siphons von Z
+ mutt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

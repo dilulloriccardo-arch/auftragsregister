@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1d97de41-28cf-499d-9a1a-f028921748f5-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261210T090000Z
+SUMMARY:Submission deadline: Mittenza für Muttenz – Kulturhaus Umnutzung
+  und Sanierung I BKP 216 Natursteinarbeiten
+DESCRIPTION:Public buyer: Gemeinde Muttenz\nSubmission deadline: 10 Dec 2
+ 026\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag/1d97d
+ e41-28cf-499d-9a1a-f028921748f5/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/1d97de41-28cf-499d-9a1a-f028921748f5
+URL:https://auftragsregister.ch/en/auftrag/1d97de41-28cf-499d-9a1a-f0289217
+ 48f5/
+LOCATION:Muttenz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mittenza für Muttenz – Kulturhaus Umnut
+ zung und Sanierung I BKP 216 Natursteinarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

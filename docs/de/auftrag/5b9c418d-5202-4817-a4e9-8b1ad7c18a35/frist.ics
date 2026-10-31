@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5b9c418d-5202-4817-a4e9-8b1ad7c18a35-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Eingabefrist: JSD - ICT-Dienstleistungen
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 16.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/5b9c418d-5202-4817-a4e9-8b1ad7c18a35/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/5b9c418d-5202-4817-a4e9-8b1ad7c18a35
+URL:https://auftragsregister.ch/de/auftrag/5b9c418d-5202-4817-a4e9-8b1ad7c1
+ 8a35/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: JSD - ICT-Dienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8132b1ce-d153-4f3f-aaed-234e197be236-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Délai de remise : Rénovation centre scolaire du Mail - 27100 - 
+ Isolation et plâtrerie fine
+DESCRIPTION:Acheteur public : éorén - École obligatoire région Neuch
+ âtel (AAPA SA)\nDélai de remise : 10.12.2026\, 16 h 00\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/8132b1ce-d153-4f3f-aaed-
+ 234e197be236/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/8132b1ce-d153-4f3f-aaed-234e197be236
+URL:https://auftragsregister.ch/fr/auftrag/8132b1ce-d153-4f3f-aaed-234e197b
+ e236/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation centre scolaire du Mail - 2710
+ 0 - Isolation et plâtrerie fine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

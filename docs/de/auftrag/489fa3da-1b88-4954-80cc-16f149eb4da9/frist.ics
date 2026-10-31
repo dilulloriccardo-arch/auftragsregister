@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:489fa3da-1b88-4954-80cc-16f149eb4da9-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261127T100000Z
+SUMMARY:Eingabefrist: Neubau Reservoir Grüt mit Druckerhöhungsanlage\, WV
+  Truttikon-Ossingen
+DESCRIPTION:Auftraggeber: Politische Gemeinde Truttikon\nEingabefrist: 27.1
+ 1.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/4
+ 89fa3da-1b88-4954-80cc-16f149eb4da9/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/489fa3da-1b88-4954-80cc-16f149eb4da9
+URL:https://auftragsregister.ch/de/auftrag/489fa3da-1b88-4954-80cc-16f149eb
+ 4da9/
+LOCATION:Truttikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Reservoir Grüt mit Druckerhöhungsanlage\
+ , WV Truttikon-Ossingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

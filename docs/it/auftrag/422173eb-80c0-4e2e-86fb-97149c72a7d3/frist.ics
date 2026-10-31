@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:422173eb-80c0-4e2e-86fb-97149c72a7d3-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Scadenza: AO 2023-139 Pictet-de-Rochemont
+DESCRIPTION:Ente pubblico: Services industriels de Genève (SIG) - Directio
+ n Achats\nScadenza: 14.12.2026\, 12:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/422173eb-80c0-4e2e-86fb-97149c72a7d3/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/422173eb-80c0-4e2e-86fb-97
+ 149c72a7d3
+URL:https://auftragsregister.ch/it/auftrag/422173eb-80c0-4e2e-86fb-97149c72
+ a7d3/
+LOCATION:Genève (Ville)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AO 2023-139 Pictet-de-Rochemont
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

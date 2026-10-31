@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:920fd404-49d6-4599-bd92-d92475041903-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Scadenza: Prozesskoordinationsstelle Neubau NMB/StABS\, Prozesskoor
+ dinationsstelle Einzug\, Inbetriebnahme\, Betriebsübergang und Mängelman
+ agement
+DESCRIPTION:Ente pubblico: Bau- und Verkehrsdepartement des Kantons Basel-S
+ tadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nScade
+ nza: 14.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/920fd404-49d6-4599-bd92-d92475041903/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/920fd404-49d6-4599-bd92-d92475041903
+URL:https://auftragsregister.ch/it/auftrag/920fd404-49d6-4599-bd92-d9247504
+ 1903/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Prozesskoordinationsstelle Neubau NMB/StABS\, Prozess
+ koordinationsstelle Einzug\, Inbetriebnahme\, Betriebsübergang und Mänge
+ lmanagement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:de8941d2-6ca4-4e07-96ef-bc9c5b95c0ee-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20270118T110000Z
+SUMMARY:Délai de remise : ARA Jungholz - travaux de construction métall
+ ique
+DESCRIPTION:Acheteur public : Stadt Uster\, ARA Jungholz (Hunziker Betate
+ ch AG)\nDélai de remise : 18.01.2027\, 12 h 00\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/de8941d2-6ca4-4e07-96ef-bc9c5b95c
+ 0ee/\nPublication officielle : https://www.simap.ch/fr/project-detail/de
+ 8941d2-6ca4-4e07-96ef-bc9c5b95c0ee
+URL:https://auftragsregister.ch/fr/auftrag/de8941d2-6ca4-4e07-96ef-bc9c5b95
+ c0ee/
+LOCATION:Uster
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ARA Jungholz - travaux de construction mé
+ tallique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:018fc17a-2c84-4b5d-a356-a187e71e3823-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Submission deadline: AUH-SAN\, Sanierung Dienstgebäude HKW Aubrugg
+ \, BKP 272.0 Innentüren aus Metall
+DESCRIPTION:Public buyer: Elektrizitätswerk der Stadt Zürich (ewz)\nSubmi
+ ssion deadline: 25 Jan 2027\, 16:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/018fc17a-2c84-4b5d-a356-a187e71e3823/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/018fc17a-2c84-4b5d-a356-a18
+ 7e71e3823
+URL:https://auftragsregister.ch/en/auftrag/018fc17a-2c84-4b5d-a356-a187e71e
+ 3823/
+LOCATION:Wallisellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AUH-SAN\, Sanierung Dienstgebäude HKW Aub
+ rugg\, BKP 272.0 Innentüren aus Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

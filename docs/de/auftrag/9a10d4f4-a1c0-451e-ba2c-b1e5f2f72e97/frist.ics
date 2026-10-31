@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a10d4f4-a1c0-451e-ba2c-b1e5f2f72e97-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Eingabefrist: 963_901.1 Schulmobiliar und Ausstattung\, Erweiterung
+  SH Loreto Zug
+DESCRIPTION:Auftraggeber: Baudepartement Stadt Zug\, Submission Hochbau\nEi
+ ngabefrist: 16.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister
+ .ch/de/auftrag/9a10d4f4-a1c0-451e-ba2c-b1e5f2f72e97/\nAmtliche Publikation
+ : https://www.simap.ch/de/project-detail/9a10d4f4-a1c0-451e-ba2c-b1e5f2f72
+ e97
+URL:https://auftragsregister.ch/de/auftrag/9a10d4f4-a1c0-451e-ba2c-b1e5f2f7
+ 2e97/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 963_901.1 Schulmobiliar und Ausstattung\, Erweite
+ rung SH Loreto Zug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

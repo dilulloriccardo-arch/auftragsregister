@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5b9c418d-5202-4817-a4e9-8b1ad7c18a35-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Scadenza: JSD - ICT-Dienstleistungen
+DESCRIPTION:Ente pubblico: Bau- und Verkehrsdepartement des Kantons Basel-S
+ tadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nScade
+ nza: 16.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/5b9c418d-5202-4817-a4e9-8b1ad7c18a35/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/5b9c418d-5202-4817-a4e9-8b1ad7c18a35
+URL:https://auftragsregister.ch/it/auftrag/5b9c418d-5202-4817-a4e9-8b1ad7c1
+ 8a35/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: JSD - ICT-Dienstleistungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

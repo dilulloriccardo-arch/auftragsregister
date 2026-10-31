@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1fba8540-a420-4608-a16b-3bde1ac8198a-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261127T103000Z
+SUMMARY:Délai de remise : Sportanlage Grünfeld\; Neubau Kunstrasenfeld 
+ 4\; neue Ausschreibung\; Umgebungsarbeiten Tiefbau
+DESCRIPTION:Acheteur public : Stadt Rapperswil-Jona\; Bau\, Liegenschafte
+ n\nDélai de remise : 27.11.2026\, 11 h 30\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/1fba8540-a420-4608-a16b-3bde1ac8198a/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/1fba854
+ 0-a420-4608-a16b-3bde1ac8198a
+URL:https://auftragsregister.ch/fr/auftrag/1fba8540-a420-4608-a16b-3bde1ac8
+ 198a/
+LOCATION:Rapperswil-Jona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sportanlage Grünfeld\; Neubau Kunstrasenf
+ eld 4\; neue Ausschreibung\; Umgebungsarbeiten Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

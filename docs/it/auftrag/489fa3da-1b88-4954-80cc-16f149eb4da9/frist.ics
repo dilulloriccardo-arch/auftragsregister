@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:489fa3da-1b88-4954-80cc-16f149eb4da9-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261127T100000Z
+SUMMARY:Scadenza: Neubau Reservoir Grüt mit Druckerhöhungsanlage\, WV Tru
+ ttikon-Ossingen
+DESCRIPTION:Ente pubblico: Politische Gemeinde Truttikon\nScadenza: 27.11.2
+ 026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/489fa3da
+ -1b88-4954-80cc-16f149eb4da9/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/489fa3da-1b88-4954-80cc-16f149eb4da9
+URL:https://auftragsregister.ch/it/auftrag/489fa3da-1b88-4954-80cc-16f149eb
+ 4da9/
+LOCATION:Truttikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Reservoir Grüt mit Druckerhöhungsanlage\, WV
+  Truttikon-Ossingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

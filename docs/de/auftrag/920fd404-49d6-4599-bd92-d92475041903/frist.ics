@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:920fd404-49d6-4599-bd92-d92475041903-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: Prozesskoordinationsstelle Neubau NMB/StABS\, Prozess
+ koordinationsstelle Einzug\, Inbetriebnahme\, Betriebsübergang und Mänge
+ lmanagement
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 14.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/920fd404-49d6-4599-bd92-d92475041903/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/920fd404-49d6-4599-bd92-d92475041903
+URL:https://auftragsregister.ch/de/auftrag/920fd404-49d6-4599-bd92-d9247504
+ 1903/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Prozesskoordinationsstelle Neubau NMB/StABS\, Pro
+ zesskoordinationsstelle Einzug\, Inbetriebnahme\, Betriebsübergang und M
+ ängelmanagement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

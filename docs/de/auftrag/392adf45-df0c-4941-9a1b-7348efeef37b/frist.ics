@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:392adf45-df0c-4941-9a1b-7348efeef37b-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:1
+DTSTART:20261211T225900Z
+SUMMARY:Eingabefrist: HWS Lamm-/Schwanderbach: Baumeistersubmission Hauptlo
+ s Sperrensanierung
+DESCRIPTION:Auftraggeber: Schwellenkorporation Brienz\nEingabefrist: 11.12.
+ 2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/392
+ adf45-df0c-4941-9a1b-7348efeef37b/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/392adf45-df0c-4941-9a1b-7348efeef37b
+URL:https://auftragsregister.ch/de/auftrag/392adf45-df0c-4941-9a1b-7348efee
+ f37b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: HWS Lamm-/Schwanderbach: Baumeistersubmission Hau
+ ptlos Sperrensanierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

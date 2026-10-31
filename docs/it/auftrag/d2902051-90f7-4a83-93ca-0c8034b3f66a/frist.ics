@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2902051-90f7-4a83-93ca-0c8034b3f66a-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:Scadenza: Erweiterung Schule Champagne - BKP 421 Gärtnerarbeiten
+DESCRIPTION:Ente pubblico: Stadt Biel\, Abteilung Hochbau\nScadenza: 08.01.
+ 2027\nNel registro: https://auftragsregister.ch/it/auftrag/d2902051-90f7-4
+ a83-93ca-0c8034b3f66a/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/d2902051-90f7-4a83-93ca-0c8034b3f66a
+URL:https://auftragsregister.ch/it/auftrag/d2902051-90f7-4a83-93ca-0c8034b3
+ f66a/
+LOCATION:Biel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erweiterung Schule Champagne - BKP 421 Gärtnerarbeit
+ en
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

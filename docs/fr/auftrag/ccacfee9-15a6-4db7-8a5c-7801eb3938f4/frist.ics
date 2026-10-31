@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ccacfee9-15a6-4db7-8a5c-7801eb3938f4-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20270205T150000Z
+SUMMARY:Délai de remise : Erneuerung der Korrosionsschutz des Siphons vo
+ n Zmutt
+DESCRIPTION:Acheteur public : HYDRO Exploitation SA\nDélai de remise :
+  05.02.2027\, 16 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/ccacfee9-15a6-4db7-8a5c-7801eb3938f4/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/ccacfee9-15a6-4db7-8a5c-7801eb
+ 3938f4
+URL:https://auftragsregister.ch/fr/auftrag/ccacfee9-15a6-4db7-8a5c-7801eb39
+ 38f4/
+LOCATION:Zermatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erneuerung der Korrosionsschutz des Siphon
+ s von Zmutt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

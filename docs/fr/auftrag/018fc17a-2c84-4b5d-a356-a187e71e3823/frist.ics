@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:018fc17a-2c84-4b5d-a356-a187e71e3823-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Délai de remise : AUH-SAN\, rénovation du bâtiment administrat
+ if HKW d'Aubrugg\, CPC 272.0 Portes intérieures métalliques
+DESCRIPTION:Acheteur public : Elektrizitätswerk der Stadt Zürich (ewz)\
+ nDélai de remise : 25.01.2027\, 16 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/018fc17a-2c84-4b5d-a356-a187e71e3823/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/018fc17a-
+ 2c84-4b5d-a356-a187e71e3823
+URL:https://auftragsregister.ch/fr/auftrag/018fc17a-2c84-4b5d-a356-a187e71e
+ 3823/
+LOCATION:Wallisellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AUH-SAN\, rénovation du bâtiment adminis
+ tratif HKW d'Aubrugg\, CPC 272.0 Portes intérieures métalliques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

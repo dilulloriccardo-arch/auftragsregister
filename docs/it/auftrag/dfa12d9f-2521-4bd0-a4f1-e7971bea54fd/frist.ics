@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dfa12d9f-2521-4bd0-a4f1-e7971bea54fd-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261123T100000Z
+SUMMARY:Scadenza: Erweiterung Fernwärme Schlösslistrasse\, Ennetbaden - B
+ aumeisterarbeiten
+DESCRIPTION:Ente pubblico: Regionalwerke AG Baden\nScadenza: 23.11.2026\, 1
+ 1:00\nNel registro: https://auftragsregister.ch/it/auftrag/dfa12d9f-2521-4
+ bd0-a4f1-e7971bea54fd/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/dfa12d9f-2521-4bd0-a4f1-e7971bea54fd
+URL:https://auftragsregister.ch/it/auftrag/dfa12d9f-2521-4bd0-a4f1-e7971bea
+ 54fd/
+LOCATION:Ennetbaden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erweiterung Fernwärme Schlösslistrasse\, Ennetbaden
+  - Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:489fa3da-1b88-4954-80cc-16f149eb4da9-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261127T100000Z
+SUMMARY:Submission deadline: Neubau Reservoir Grüt mit Druckerhöhungsanla
+ ge\, WV Truttikon-Ossingen
+DESCRIPTION:Public buyer: Politische Gemeinde Truttikon\nSubmission deadlin
+ e: 27 Nov 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/489fa3da-1b88-4954-80cc-16f149eb4da9/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/489fa3da-1b88-4954-80cc-16f149eb4da9
+URL:https://auftragsregister.ch/en/auftrag/489fa3da-1b88-4954-80cc-16f149eb
+ 4da9/
+LOCATION:Truttikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Reservoir Grüt mit Druckerhöhungs
+ anlage\, WV Truttikon-Ossingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

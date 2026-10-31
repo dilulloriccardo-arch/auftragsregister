@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f31052cf-ea65-497e-80b7-2e91a481f45b-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261211T150000Z
+SUMMARY:Délai de remise : Fourniture des gants d' examen
+DESCRIPTION:Acheteur public : Centrale d'achats et d'ingénierie biomédi
+ cale Vaud-Genève (CAIB)\nDélai de remise : 11.12.2026\, 16 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/f31052cf-ea65-4
+ 97e-80b7-2e91a481f45b/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/f31052cf-ea65-497e-80b7-2e91a481f45b
+URL:https://auftragsregister.ch/fr/auftrag/f31052cf-ea65-497e-80b7-2e91a481
+ f45b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture des gants d' examen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

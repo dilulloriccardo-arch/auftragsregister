@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:392adf45-df0c-4941-9a1b-7348efeef37b-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:1
+DTSTART:20261211T225900Z
+SUMMARY:Scadenza: HWS Lamm-/Schwanderbach: Baumeistersubmission Hauptlos Sp
+ errensanierung
+DESCRIPTION:Ente pubblico: Schwellenkorporation Brienz\nScadenza: 11.12.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/392adf45-d
+ f0c-4941-9a1b-7348efeef37b/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/392adf45-df0c-4941-9a1b-7348efeef37b
+URL:https://auftragsregister.ch/it/auftrag/392adf45-df0c-4941-9a1b-7348efee
+ f37b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: HWS Lamm-/Schwanderbach: Baumeistersubmission Hauptlo
+ s Sperrensanierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

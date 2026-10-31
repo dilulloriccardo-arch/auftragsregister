@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6bc7f8d2-bb8c-44a2-83d2-37242031f620-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261210T090000Z
+SUMMARY:Scadenza: Mittenza für Muttenz – Kulturhaus Umnutzung und Sanier
+ ung I BKP 221.3 Fenster aus Stahl
+DESCRIPTION:Ente pubblico: Gemeinde Muttenz\nScadenza: 10.12.2026\, 10:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/6bc7f8d2-bb8c-44a2-83
+ d2-37242031f620/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/6bc7f8d2-bb8c-44a2-83d2-37242031f620
+URL:https://auftragsregister.ch/it/auftrag/6bc7f8d2-bb8c-44a2-83d2-37242031
+ f620/
+LOCATION:Muttenz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mittenza für Muttenz – Kulturhaus Umnutzung und Sa
+ nierung I BKP 221.3 Fenster aus Stahl
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

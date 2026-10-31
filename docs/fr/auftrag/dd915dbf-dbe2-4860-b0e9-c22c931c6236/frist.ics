@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd915dbf-dbe2-4860-b0e9-c22c931c6236-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261129T130000Z
+SUMMARY:Délai de remise : BKP 281.5 Kunststein und Plattenbeläge | Aufs
+ tockung Turnhallen TBS5\, Weinfelden
+DESCRIPTION:Acheteur public : Sekundarschulgemeinde Weinfelden (MLR Bauma
+ nagement GmbH)\nDélai de remise : 29.11.2026\, 14 h 00\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/dd915dbf-dbe2-4860-b0e9-c
+ 22c931c6236/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/dd915dbf-dbe2-4860-b0e9-c22c931c6236
+URL:https://auftragsregister.ch/fr/auftrag/dd915dbf-dbe2-4860-b0e9-c22c931c
+ 6236/
+LOCATION:Weinfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 281.5 Kunststein und Plattenbeläge | 
+ Aufstockung Turnhallen TBS5\, Weinfelden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

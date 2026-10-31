@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f31052cf-ea65-497e-80b7-2e91a481f45b-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261211T150000Z
+SUMMARY:Eingabefrist: Fourniture des gants d' examen
+DESCRIPTION:Auftraggeber: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nEingabefrist: 11.12.2026\, 16.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/f31052cf-ea65-497e-80b7-2e91a481f45b/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/f31052cf-ea
+ 65-497e-80b7-2e91a481f45b
+URL:https://auftragsregister.ch/de/auftrag/f31052cf-ea65-497e-80b7-2e91a481
+ f45b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fourniture des gants d' examen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

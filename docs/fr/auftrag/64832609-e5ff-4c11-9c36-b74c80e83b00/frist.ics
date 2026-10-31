@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:64832609-e5ff-4c11-9c36-b74c80e83b00-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Délai de remise : 183_Galetas_Reconstruction d'un magasin de ven
+ te de seconde main_CFC240
+DESCRIPTION:Acheteur public : Centre Social Protestant Vaud (Sylvain Care
+ ra Architectes)\nDélai de remise : 09.12.2026\, 11 h 00\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/64832609-e5ff-4c11-9c36-
+ b74c80e83b00/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/64832609-e5ff-4c11-9c36-b74c80e83b00
+URL:https://auftragsregister.ch/fr/auftrag/64832609-e5ff-4c11-9c36-b74c80e8
+ 3b00/
+LOCATION:Le Mont-sur-Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 183_Galetas_Reconstruction d'un magasin de
+  vente de seconde main_CFC240
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

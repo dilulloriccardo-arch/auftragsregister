@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd915dbf-dbe2-4860-b0e9-c22c931c6236-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261129T130000Z
+SUMMARY:Eingabefrist: BKP 281.5 Kunststein und Plattenbeläge | Aufstockung
+  Turnhallen TBS5\, Weinfelden
+DESCRIPTION:Auftraggeber: Sekundarschulgemeinde Weinfelden (MLR Baumanageme
+ nt GmbH)\nEingabefrist: 29.11.2026\, 14.00 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/dd915dbf-dbe2-4860-b0e9-c22c931c6236/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/dd915dbf-dbe2-4860-b0
+ e9-c22c931c6236
+URL:https://auftragsregister.ch/de/auftrag/dd915dbf-dbe2-4860-b0e9-c22c931c
+ 6236/
+LOCATION:Weinfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 281.5 Kunststein und Plattenbeläge | Aufstoc
+ kung Turnhallen TBS5\, Weinfelden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

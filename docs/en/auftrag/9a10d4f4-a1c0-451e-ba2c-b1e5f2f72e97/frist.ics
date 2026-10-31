@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a10d4f4-a1c0-451e-ba2c-b1e5f2f72e97-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Submission deadline: 963_901.1 Schulmobiliar und Ausstattung\, Erwe
+ iterung SH Loreto Zug
+DESCRIPTION:Public buyer: Baudepartement Stadt Zug\, Submission Hochbau\nSu
+ bmission deadline: 16 Dec 2026\, 12:00\nIn the register: https://auftrag
+ sregister.ch/en/auftrag/9a10d4f4-a1c0-451e-ba2c-b1e5f2f72e97/\nOfficial pu
+ blication: https://www.simap.ch/en/project-detail/9a10d4f4-a1c0-451e-ba2c-
+ b1e5f2f72e97
+URL:https://auftragsregister.ch/en/auftrag/9a10d4f4-a1c0-451e-ba2c-b1e5f2f7
+ 2e97/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 963_901.1 Schulmobiliar und Ausstattung\, 
+ Erweiterung SH Loreto Zug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6bc7f8d2-bb8c-44a2-83d2-37242031f620-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261210T090000Z
+SUMMARY:Délai de remise : Mittenza für Muttenz - maison de la culture R
+ éaménagement et rénovation I BKP 221.3 Fenêtres en acier
+DESCRIPTION:Acheteur public : Gemeinde Muttenz\nDélai de remise : 10.1
+ 2.2026\, 10 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/6bc7f8d2-bb8c-44a2-83d2-37242031f620/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/6bc7f8d2-bb8c-44a2-83d2-37242031f62
+ 0
+URL:https://auftragsregister.ch/fr/auftrag/6bc7f8d2-bb8c-44a2-83d2-37242031
+ f620/
+LOCATION:Muttenz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mittenza für Muttenz - maison de la cultu
+ re Réaménagement et rénovation I BKP 221.3 Fenêtres en acier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

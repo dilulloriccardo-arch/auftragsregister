@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:de8941d2-6ca4-4e07-96ef-bc9c5b95c0ee-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20270118T110000Z
+SUMMARY:Submission deadline: ARA Jungholz - Metallbauarbeiten
+DESCRIPTION:Public buyer: Stadt Uster\, ARA Jungholz (Hunziker Betatech AG)
+ \nSubmission deadline: 18 Jan 2027\, 12:00\nIn the register: https://auf
+ tragsregister.ch/en/auftrag/de8941d2-6ca4-4e07-96ef-bc9c5b95c0ee/\nOfficia
+ l publication: https://www.simap.ch/en/project-detail/de8941d2-6ca4-4e07-9
+ 6ef-bc9c5b95c0ee
+URL:https://auftragsregister.ch/en/auftrag/de8941d2-6ca4-4e07-96ef-bc9c5b95
+ c0ee/
+LOCATION:Uster
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ARA Jungholz - Metallbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

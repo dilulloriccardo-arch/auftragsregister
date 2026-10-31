@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f31052cf-ea65-497e-80b7-2e91a481f45b-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261211T150000Z
+SUMMARY:Scadenza: Fourniture des gants d' examen
+DESCRIPTION:Ente pubblico: Centrale d'achats et d'ingénierie biomédicale 
+ Vaud-Genève (CAIB)\nScadenza: 11.12.2026\, 16:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/f31052cf-ea65-497e-80b7-2e91a481f45b/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/f31052cf-ea65-4
+ 97e-80b7-2e91a481f45b
+URL:https://auftragsregister.ch/it/auftrag/f31052cf-ea65-497e-80b7-2e91a481
+ f45b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fourniture des gants d' examen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

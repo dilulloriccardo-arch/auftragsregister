@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:422173eb-80c0-4e2e-86fb-97149c72a7d3-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Délai de remise : AO 2023-139 Pictet-de-Rochemont
+DESCRIPTION:Acheteur public : Services industriels de Genève (SIG) - Dir
+ ection Achats\nDélai de remise : 14.12.2026\, 12 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/422173eb-80c0-4e2e-86fb-97
+ 149c72a7d3/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/422173eb-80c0-4e2e-86fb-97149c72a7d3
+URL:https://auftragsregister.ch/fr/auftrag/422173eb-80c0-4e2e-86fb-97149c72
+ a7d3/
+LOCATION:Genève (Ville)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AO 2023-139 Pictet-de-Rochemont
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

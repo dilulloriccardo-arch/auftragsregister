@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1f14c373-e9de-4a3c-8002-09f33bd56f60-frist@auftragsregister.ch
+DTSTAMP:20261031T000000Z
+SEQUENCE:0
+DTSTART:20261127T103000Z
+SUMMARY:Scadenza: Sportanlage Grünfeld\; Neubau Kunstrasenfeld 4\; neue Au
+ sschreibung\; Kunstrasen
+DESCRIPTION:Ente pubblico: Stadt Rapperswil-Jona\; Bau\, Liegenschaften\nSc
+ adenza: 27.11.2026\, 11:30\nNel registro: https://auftragsregister.ch/it/a
+ uftrag/1f14c373-e9de-4a3c-8002-09f33bd56f60/\nPubblicazione ufficiale: htt
+ ps://www.simap.ch/it/project-detail/1f14c373-e9de-4a3c-8002-09f33bd56f60
+URL:https://auftragsregister.ch/it/auftrag/1f14c373-e9de-4a3c-8002-09f33bd5
+ 6f60/
+LOCATION:Rapperswil-Jona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sportanlage Grünfeld\; Neubau Kunstrasenfeld 4\; neu
+ e Ausschreibung\; Kunstrasen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
