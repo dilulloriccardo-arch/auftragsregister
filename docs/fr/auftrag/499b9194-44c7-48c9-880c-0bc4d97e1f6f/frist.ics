@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:499b9194-44c7-48c9-880c-0bc4d97e1f6f-frist@auftragsregister.ch
+DTSTAMP:20261101T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Délai de remise : Fourniture d'une nouvelle ambulance type C cai
+ sson
+DESCRIPTION:Acheteur public : Organisation Cantonale Valaisanne des Secou
+ rs - Kantonale Walliser Rettungsorganisation\nDélai de remise : 18.12.2
+ 026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr/auf
+ trag/499b9194-44c7-48c9-880c-0bc4d97e1f6f/\nPublication officielle : htt
+ ps://www.simap.ch/fr/project-detail/499b9194-44c7-48c9-880c-0bc4d97e1f6f
+URL:https://auftragsregister.ch/fr/auftrag/499b9194-44c7-48c9-880c-0bc4d97e
+ 1f6f/
+LOCATION:Monthey
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture d'une nouvelle ambulance type C
+  caisson
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:499b9194-44c7-48c9-880c-0bc4d97e1f6f-frist@auftragsregister.ch
+DTSTAMP:20261101T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Eingabefrist: Fourniture d'une nouvelle ambulance type C caisson
+DESCRIPTION:Auftraggeber: Organisation Cantonale Valaisanne des Secours - K
+ antonale Walliser Rettungsorganisation\nEingabefrist: 18.12.2026\, 11.00 
+ Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/499b9194-44c7-48c
+ 9-880c-0bc4d97e1f6f/\nAmtliche Publikation: https://www.simap.ch/de/projec
+ t-detail/499b9194-44c7-48c9-880c-0bc4d97e1f6f
+URL:https://auftragsregister.ch/de/auftrag/499b9194-44c7-48c9-880c-0bc4d97e
+ 1f6f/
+LOCATION:Monthey
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fourniture d'une nouvelle ambulance type C caisso
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

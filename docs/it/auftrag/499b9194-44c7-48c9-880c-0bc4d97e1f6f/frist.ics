@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:499b9194-44c7-48c9-880c-0bc4d97e1f6f-frist@auftragsregister.ch
+DTSTAMP:20261101T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Scadenza: Fourniture d'une nouvelle ambulance type C caisson
+DESCRIPTION:Ente pubblico: Organisation Cantonale Valaisanne des Secours - 
+ Kantonale Walliser Rettungsorganisation\nScadenza: 18.12.2026\, 11:00\nNel
+  registro: https://auftragsregister.ch/it/auftrag/499b9194-44c7-48c9-880c-
+ 0bc4d97e1f6f/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/499b9194-44c7-48c9-880c-0bc4d97e1f6f
+URL:https://auftragsregister.ch/it/auftrag/499b9194-44c7-48c9-880c-0bc4d97e
+ 1f6f/
+LOCATION:Monthey
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fourniture d'une nouvelle ambulance type C caisson
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
