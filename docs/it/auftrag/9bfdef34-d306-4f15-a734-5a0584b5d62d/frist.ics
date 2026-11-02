@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9bfdef34-d306-4f15-a734-5a0584b5d62d-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Scadenza: 13.0455 Biel\, Berner Fachhochschule BFH\, Neubau Campus 
+ _ BKP 231 PV-Anlage
+DESCRIPTION:Ente pubblico: Amt für Grundstücke und Gebäude des Kantons B
+ ern (AGG)\nScadenza: 04.12.2026\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/9bfdef34-d306-4f15-a734-5a0584b5d62d/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/9bfdef34-d306-4f15-a734-5
+ a0584b5d62d
+URL:https://auftragsregister.ch/it/auftrag/9bfdef34-d306-4f15-a734-5a0584b5
+ d62d/
+LOCATION:Biel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 13.0455 Biel\, Berner Fachhochschule BFH\, Neubau Cam
+ pus _ BKP 231 PV-Anlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

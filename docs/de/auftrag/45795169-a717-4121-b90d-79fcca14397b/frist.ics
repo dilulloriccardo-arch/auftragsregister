@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45795169-a717-4121-b90d-79fcca14397b-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T225900Z
+SUMMARY:Eingabefrist: Übergangs-Mietlösung im Linthpark in Uznach - BKP 2
+ 81.2 Bodenbeläge aus Kunststoffen\, Textilien und dgl.
+DESCRIPTION:Auftraggeber: Kanton St.Gallen\, Bau- und Umweltdepartement\, H
+ ochbauamt\nEingabefrist: 23.11.2026\, 23.59 Uhr\nIm Register: https://auf
+ tragsregister.ch/de/auftrag/45795169-a717-4121-b90d-79fcca14397b/\nAmtlich
+ e Publikation: https://www.simap.ch/de/project-detail/45795169-a717-4121-b
+ 90d-79fcca14397b
+URL:https://auftragsregister.ch/de/auftrag/45795169-a717-4121-b90d-79fcca14
+ 397b/
+LOCATION:Uznach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Übergangs-Mietlösung im Linthpark in Uznach - B
+ KP 281.2 Bodenbeläge aus Kunststoffen\, Textilien und dgl.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

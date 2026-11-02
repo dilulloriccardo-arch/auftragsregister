@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dfefc6f2-cf85-4ad0-8c93-8318d092a909-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Eingabefrist: Wärmezentrale WN Leukerbad - BKP 248 Gebäudeautomat
+ ion
+DESCRIPTION:Auftraggeber: IMION AG\nEingabefrist: 30.11.2026\, 23.59 Uhr\n
+ Im Register: https://auftragsregister.ch/de/auftrag/dfefc6f2-cf85-4ad0-8c9
+ 3-8318d092a909/\nAmtliche Publikation: https://www.simap.ch/de/project-det
+ ail/dfefc6f2-cf85-4ad0-8c93-8318d092a909
+URL:https://auftragsregister.ch/de/auftrag/dfefc6f2-cf85-4ad0-8c93-8318d092
+ a909/
+LOCATION:Leukerbad
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Wärmezentrale WN Leukerbad - BKP 248 Gebäudeaut
+ omation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

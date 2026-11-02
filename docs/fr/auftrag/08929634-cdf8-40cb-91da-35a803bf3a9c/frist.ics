@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:08929634-cdf8-40cb-91da-35a803bf3a9c-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261201T225900Z
+SUMMARY:Délai de remise : Q26.0163_CFC370_Installations de laboratoire_B
+ erne_Sidlerstrasse 5\, « FSP Neuberufung\, Prof. Dr. Heidt »
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 01.12.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/08929634-cdf8-40cb-91da-3
+ 5a803bf3a9c/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/08929634-cdf8-40cb-91da-35a803bf3a9c
+URL:https://auftragsregister.ch/fr/auftrag/08929634-cdf8-40cb-91da-35a803bf
+ 3a9c/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Q26.0163_CFC370_Installations de laboratoi
+ re_Berne_Sidlerstrasse 5\, « FSP Neuberufung\, Prof. Dr. Heidt »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

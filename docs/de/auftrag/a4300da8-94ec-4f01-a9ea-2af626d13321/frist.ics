@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a4300da8-94ec-4f01-a9ea-2af626d13321-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270115T123000Z
+SUMMARY:Eingabefrist: Wasserbauprojekt Sarneraa Alpnach II\, Submission Pla
+ nerleistungen SIA-Phasen 32 - 33
+DESCRIPTION:Auftraggeber: Amt für Wald und Landschaft\nEingabefrist: 15.01
+ .2027\, 13.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a4
+ 300da8-94ec-4f01-a9ea-2af626d13321/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/a4300da8-94ec-4f01-a9ea-2af626d13321
+URL:https://auftragsregister.ch/de/auftrag/a4300da8-94ec-4f01-a9ea-2af626d1
+ 3321/
+LOCATION:Sarnen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Wasserbauprojekt Sarneraa Alpnach II\, Submission
+  Planerleistungen SIA-Phasen 32 - 33
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

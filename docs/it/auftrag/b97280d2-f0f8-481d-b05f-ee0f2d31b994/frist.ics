@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b97280d2-f0f8-481d-b05f-ee0f2d31b994-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270111T070000Z
+SUMMARY:Scadenza: ACQUISITION D’UNE MACHINE FORESTIÈRE
+DESCRIPTION:Ente pubblico: Commune de Val de Bagnes\nScadenza: 11.01.2027\,
+  08:00\nNel registro: https://auftragsregister.ch/it/auftrag/b97280d2-f0f8
+ -481d-b05f-ee0f2d31b994/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/b97280d2-f0f8-481d-b05f-ee0f2d31b994
+URL:https://auftragsregister.ch/it/auftrag/b97280d2-f0f8-481d-b05f-ee0f2d31
+ b994/
+LOCATION:Le Châble
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ACQUISITION D’UNE MACHINE FORESTIÈRE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

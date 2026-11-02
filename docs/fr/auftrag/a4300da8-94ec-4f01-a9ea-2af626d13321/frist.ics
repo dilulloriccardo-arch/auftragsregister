@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a4300da8-94ec-4f01-a9ea-2af626d13321-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270115T123000Z
+SUMMARY:Délai de remise : Wasserbauprojekt Sarneraa Alpnach II\, Submiss
+ ion Planerleistungen SIA-Phasen 32 - 33
+DESCRIPTION:Acheteur public : Amt für Wald und Landschaft\nDélai de rem
+ ise : 15.01.2027\, 13 h 30\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/a4300da8-94ec-4f01-a9ea-2af626d13321/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/a4300da8-94ec-4f01-a9ea
+ -2af626d13321
+URL:https://auftragsregister.ch/fr/auftrag/a4300da8-94ec-4f01-a9ea-2af626d1
+ 3321/
+LOCATION:Sarnen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wasserbauprojekt Sarneraa Alpnach II\, Sub
+ mission Planerleistungen SIA-Phasen 32 - 33
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

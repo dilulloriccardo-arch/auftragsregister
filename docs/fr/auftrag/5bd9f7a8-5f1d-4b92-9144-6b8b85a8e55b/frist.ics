@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5bd9f7a8-5f1d-4b92-9144-6b8b85a8e55b-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270110T225900Z
+SUMMARY:Délai de remise : Fournitures de bureau
+DESCRIPTION:Acheteur public : Staatskanzlei - Kompetenzzentrum für Publi
+ kationsmedien (Drucksachen)\nDélai de remise : 10.01.2027\, 23 h 59
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/5bd9f7a8-5f1
+ d-4b92-9144-6b8b85a8e55b/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/5bd9f7a8-5f1d-4b92-9144-6b8b85a8e55b
+URL:https://auftragsregister.ch/fr/auftrag/5bd9f7a8-5f1d-4b92-9144-6b8b85a8
+ e55b/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fournitures de bureau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

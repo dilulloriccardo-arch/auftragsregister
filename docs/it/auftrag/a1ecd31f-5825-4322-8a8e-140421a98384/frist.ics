@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a1ecd31f-5825-4322-8a8e-140421a98384-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Scadenza: TriManif_A1 / prestations liées aux tri\, collecte et é
+ vacuation des déchets lors des manifestations organisées par la Ville de
+  Genève
+DESCRIPTION:Ente pubblico: Centrale municipale d'achat et d'impression de l
+ a Ville de Genève\nScadenza: 11.01.2027\, 12:00\nNel registro: https://au
+ ftragsregister.ch/it/auftrag/a1ecd31f-5825-4322-8a8e-140421a98384/\nPubbli
+ cazione ufficiale: https://www.simap.ch/it/project-detail/a1ecd31f-5825-43
+ 22-8a8e-140421a98384
+URL:https://auftragsregister.ch/it/auftrag/a1ecd31f-5825-4322-8a8e-140421a9
+ 8384/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: TriManif_A1 / prestations liées aux tri\, collecte e
+ t évacuation des déchets lors des manifestations organisées par la Vill
+ e de Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

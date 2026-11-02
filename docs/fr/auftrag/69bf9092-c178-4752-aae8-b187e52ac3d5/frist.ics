@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69bf9092-c178-4752-aae8-b187e52ac3d5-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270104T150000Z
+SUMMARY:Délai de remise : Véhicules pionniers des sapeurs-pompiers
+DESCRIPTION:Acheteur public : Gebäudeversicherung Kanton Zürich\nDélai
+  de remise : 04.01.2027\, 16 h 00\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/69bf9092-c178-4752-aae8-b187e52ac3d5/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/69bf9092-c178-47
+ 52-aae8-b187e52ac3d5
+URL:https://auftragsregister.ch/fr/auftrag/69bf9092-c178-4752-aae8-b187e52a
+ c3d5/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Véhicules pionniers des sapeurs-pompiers
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

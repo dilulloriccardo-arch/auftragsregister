@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9576a34-6d16-4da1-a84a-6f82ba9015f1-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T130000Z
+SUMMARY:Eingabefrist: Véhicules de transport
+DESCRIPTION:Auftraggeber: Fondazione Don Guanella\nEingabefrist: 14.12.2026
+ \, 14.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e9576a3
+ 4-6d16-4da1-a84a-6f82ba9015f1/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/e9576a34-6d16-4da1-a84a-6f82ba9015f1
+URL:https://auftragsregister.ch/de/auftrag/e9576a34-6d16-4da1-a84a-6f82ba90
+ 15f1/
+LOCATION:Riva San Vitale
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Véhicules de transport
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

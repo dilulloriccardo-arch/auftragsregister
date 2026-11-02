@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:118b2f5f-96cb-4de1-93c1-801d316f86de-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261202T090000Z
+SUMMARY:Eingabefrist: Stadthaus Modernisierung UKV-Verkabelung
+DESCRIPTION:Auftraggeber: Stadt Luzern Immobilien Objektmanagement (Elektro
+ plan AG)\nEingabefrist: 02.12.2026\, 10.00 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/118b2f5f-96cb-4de1-93c1-801d316f86de/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/118b2f5f-96cb-4de1-93
+ c1-801d316f86de
+URL:https://auftragsregister.ch/de/auftrag/118b2f5f-96cb-4de1-93c1-801d316f
+ 86de/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Stadthaus Modernisierung UKV-Verkabelung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

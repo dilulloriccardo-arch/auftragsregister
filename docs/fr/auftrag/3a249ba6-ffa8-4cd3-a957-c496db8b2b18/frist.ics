@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a249ba6-ffa8-4cd3-a957-c496db8b2b18-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Délai de remise : Berne\, Bremgartenstrasse 131-137\, gymnase de
+  Neufeld\, rénovation et construction de remplacement\, CFC 902 Installat
+ ions sportives SP 1 -2
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 11.01.2027\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/3a249ba6-ffa8-4cd3-a957-c
+ 496db8b2b18/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/3a249ba6-ffa8-4cd3-a957-c496db8b2b18
+URL:https://auftragsregister.ch/fr/auftrag/3a249ba6-ffa8-4cd3-a957-c496db8b
+ 2b18/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Berne\, Bremgartenstrasse 131-137\, gymnas
+ e de Neufeld\, rénovation et construction de remplacement\, CFC 902 Insta
+ llations sportives SP 1 -2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

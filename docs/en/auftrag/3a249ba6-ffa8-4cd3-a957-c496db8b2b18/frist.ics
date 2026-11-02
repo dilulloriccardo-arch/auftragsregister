@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a249ba6-ffa8-4cd3-a957-c496db8b2b18-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Submission deadline: Bern\, Bremgartenstrasse 131-137\, Gymnasium N
+ eufeld\, Instandstellung und Ersatzneubau\, BKP 902 Sporteinrichtungen TP1
+  - 2
+DESCRIPTION:Public buyer: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nSubmission deadline: 11 Jan 2027\, 23:59\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/3a249ba6-ffa8-4cd3-a957-c496db8b2b18/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/3a249ba6-ffa
+ 8-4cd3-a957-c496db8b2b18
+URL:https://auftragsregister.ch/en/auftrag/3a249ba6-ffa8-4cd3-a957-c496db8b
+ 2b18/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bern\, Bremgartenstrasse 131-137\, Gymnasi
+ um Neufeld\, Instandstellung und Ersatzneubau\, BKP 902 Sporteinrichtungen
+  TP1 - 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

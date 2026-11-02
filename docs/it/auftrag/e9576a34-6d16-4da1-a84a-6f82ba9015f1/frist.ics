@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9576a34-6d16-4da1-a84a-6f82ba9015f1-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T130000Z
+SUMMARY:Scadenza: Fornitura di un veicolo per il traporto utenti della nost
+ ra Fondazione
+DESCRIPTION:Ente pubblico: Fondazione Don Guanella\nScadenza: 14.12.2026\, 
+ 14:00\nNel registro: https://auftragsregister.ch/it/auftrag/e9576a34-6d16-
+ 4da1-a84a-6f82ba9015f1/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/e9576a34-6d16-4da1-a84a-6f82ba9015f1
+URL:https://auftragsregister.ch/it/auftrag/e9576a34-6d16-4da1-a84a-6f82ba90
+ 15f1/
+LOCATION:Riva San Vitale
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fornitura di un veicolo per il traporto utenti della 
+ nostra Fondazione
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

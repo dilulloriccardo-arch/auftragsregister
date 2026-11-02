@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2da19f9a-9087-48b6-81d1-eca1a27230fc-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Scadenza: Layout und Druck Mitteilungsblatt "Gmeindsblatt"
+DESCRIPTION:Ente pubblico: Gemeinde Kirchberg\nScadenza: 15.12.2026\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/2da19f9a-9087-48b6-
+ 81d1-eca1a27230fc/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/2da19f9a-9087-48b6-81d1-eca1a27230fc
+URL:https://auftragsregister.ch/it/auftrag/2da19f9a-9087-48b6-81d1-eca1a272
+ 30fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Layout und Druck Mitteilungsblatt "Gmeindsblatt"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

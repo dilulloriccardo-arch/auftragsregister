@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d22023e6-b43d-4904-b1b3-b32d6e69f6c6-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Eingabefrist: Brandschutztüren & Fixverglasung
+DESCRIPTION:Auftraggeber: Gemeinde Pontresina\nEingabefrist: 23.11.2026\, 1
+ 2.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d22023e6-b4
+ 3d-4904-b1b3-b32d6e69f6c6/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/d22023e6-b43d-4904-b1b3-b32d6e69f6c6
+URL:https://auftragsregister.ch/de/auftrag/d22023e6-b43d-4904-b1b3-b32d6e69
+ f6c6/
+LOCATION:Pontresina
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Brandschutztüren & Fixverglasung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

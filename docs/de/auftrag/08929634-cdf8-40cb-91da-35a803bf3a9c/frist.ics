@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:08929634-cdf8-40cb-91da-35a803bf3a9c-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261201T225900Z
+SUMMARY:Eingabefrist: Q26.0163_BKP370_Laboreinrichtungen_Bern_Sidlerstrasse
+  5_FSP Neuberufung\, Prof. Dr.Heidt
+DESCRIPTION:Auftraggeber: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nEingabefrist: 01.12.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/08929634-cdf8-40cb-91da-35a803bf3a9c/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/08929634-cdf8-40cb-91
+ da-35a803bf3a9c
+URL:https://auftragsregister.ch/de/auftrag/08929634-cdf8-40cb-91da-35a803bf
+ 3a9c/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Q26.0163_BKP370_Laboreinrichtungen_Bern_Sidlerstr
+ asse 5_FSP Neuberufung\, Prof. Dr.Heidt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

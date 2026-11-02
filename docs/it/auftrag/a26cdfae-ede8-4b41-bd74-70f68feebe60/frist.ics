@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a26cdfae-ede8-4b41-bd74-70f68feebe60-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261127T160000Z
+SUMMARY:Scadenza: Réfection Route du Téléphérique à Vercorin - Aménag
+ ement d'un arrêt de bus avec place de rebroussement\, d'un trottoir et d'
+ un mur de soutènement
+DESCRIPTION:Ente pubblico: Commune de Chalais\nScadenza: 27.11.2026\, 17:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/a26cdfae-ede8-4b41-
+ bd74-70f68feebe60/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/a26cdfae-ede8-4b41-bd74-70f68feebe60
+URL:https://auftragsregister.ch/it/auftrag/a26cdfae-ede8-4b41-bd74-70f68fee
+ be60/
+LOCATION:Vercorin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Réfection Route du Téléphérique à Vercorin - Am
+ énagement d'un arrêt de bus avec place de rebroussement\, d'un trottoir 
+ et d'un mur de soutènement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

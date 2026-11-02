@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4f5dbaf6-64f2-4f4f-9e58-aa387ff5cd92-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261203T153000Z
+SUMMARY:Scadenza: Cycle d’orientation de la Golette Réaménagement et v
+ égétalisation des espaces extérieurs
+DESCRIPTION:Ente pubblico: Office Cantonal des bâtiments (OCBA)\nScadenza:
+  03.12.2026\, 16:30\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 4f5dbaf6-64f2-4f4f-9e58-aa387ff5cd92/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/4f5dbaf6-64f2-4f4f-9e58-aa387ff5cd92
+URL:https://auftragsregister.ch/it/auftrag/4f5dbaf6-64f2-4f4f-9e58-aa387ff5
+ cd92/
+LOCATION:Meyrin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Cycle d’orientation de la Golette Réaménagement e
+ t végétalisation des espaces extérieurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e71cb416-380b-4052-b4da-4b890744dcbb-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+SUMMARY:Eingabefrist: Contrat-cadre revêtements de sols
+DESCRIPTION:Auftraggeber: Genève Aéroport\nEingabefrist: 30.11.2026\, 11.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e71cb416-380b
+ -4052-b4da-4b890744dcbb/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/e71cb416-380b-4052-b4da-4b890744dcbb
+URL:https://auftragsregister.ch/de/auftrag/e71cb416-380b-4052-b4da-4b890744
+ dcbb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Contrat-cadre revêtements de sols
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

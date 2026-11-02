@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a26cdfae-ede8-4b41-bd74-70f68feebe60-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261127T160000Z
+SUMMARY:Submission deadline: Réfection Route du Téléphérique à Vercori
+ n - Aménagement d'un arrêt de bus avec place de rebroussement\, d'un tro
+ ttoir et d'un mur de soutènement
+DESCRIPTION:Public buyer: Commune de Chalais\nSubmission deadline: 27 Nov
+  2026\, 17:00\nIn the register: https://auftragsregister.ch/en/auftrag/a2
+ 6cdfae-ede8-4b41-bd74-70f68feebe60/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/a26cdfae-ede8-4b41-bd74-70f68feebe60
+URL:https://auftragsregister.ch/en/auftrag/a26cdfae-ede8-4b41-bd74-70f68fee
+ be60/
+LOCATION:Vercorin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Réfection Route du Téléphérique à Ver
+ corin - Aménagement d'un arrêt de bus avec place de rebroussement\, d'un
+  trottoir et d'un mur de soutènement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

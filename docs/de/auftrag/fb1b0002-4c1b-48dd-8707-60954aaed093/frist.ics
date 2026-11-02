@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb1b0002-4c1b-48dd-8707-60954aaed093-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Eingabefrist: Lieferung und Montage von zwei Notstromdieselanlagen 
+ für Standorte Dietikon und Thalwil
+DESCRIPTION:Auftraggeber: Elektrizitätswerke des Kantons Zürich\nEingabef
+ rist: 11.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/fb1b0002-4c1b-48dd-8707-60954aaed093/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/fb1b0002-4c1b-48dd-8707-60954aaed093
+URL:https://auftragsregister.ch/de/auftrag/fb1b0002-4c1b-48dd-8707-60954aae
+ d093/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Lieferung und Montage von zwei Notstromdieselanla
+ gen für Standorte Dietikon und Thalwil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

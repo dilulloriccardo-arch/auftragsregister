@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5bd9f7a8-5f1d-4b92-9144-6b8b85a8e55b-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270110T225900Z
+SUMMARY:Submission deadline: Büromaterial
+DESCRIPTION:Public buyer: Staatskanzlei - Kompetenzzentrum für Publikation
+ smedien (Drucksachen)\nSubmission deadline: 10 Jan 2027\, 23:59\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/5bd9f7a8-5f1d-4b92-9144-6
+ b8b85a8e55b/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /5bd9f7a8-5f1d-4b92-9144-6b8b85a8e55b
+URL:https://auftragsregister.ch/en/auftrag/5bd9f7a8-5f1d-4b92-9144-6b8b85a8
+ e55b/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Büromaterial
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

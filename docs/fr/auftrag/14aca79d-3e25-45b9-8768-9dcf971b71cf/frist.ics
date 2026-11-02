@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:14aca79d-3e25-45b9-8768-9dcf971b71cf-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Délai de remise : CSE - Centre Scolaire de Erde / Conthey - CFC 
+ 283 faux-plafond en plâtre
+DESCRIPTION:Acheteur public : Commune de Conthey\nDélai de remise : 14
+ .12.2026\nDans le registre : https://auftragsregister.ch/fr/auftrag/14ac
+ a79d-3e25-45b9-8768-9dcf971b71cf/\nPublication officielle : https://www.
+ simap.ch/fr/project-detail/14aca79d-3e25-45b9-8768-9dcf971b71cf
+URL:https://auftragsregister.ch/fr/auftrag/14aca79d-3e25-45b9-8768-9dcf971b
+ 71cf/
+LOCATION:Erde
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CSE - Centre Scolaire de Erde / Conthey - 
+ CFC 283 faux-plafond en plâtre
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

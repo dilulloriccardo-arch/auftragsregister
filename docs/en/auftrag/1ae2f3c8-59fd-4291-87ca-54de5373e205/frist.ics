@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ae2f3c8-59fd-4291-87ca-54de5373e205-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261204T100000Z
+SUMMARY:Submission deadline: Réfection de la Route de la Roche - Commune d
+ e Savigny
+DESCRIPTION:Public buyer: Commune de Savigny (Stralia SA)\nSubmission deadl
+ ine: 4 Dec 2026\, 11:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/1ae2f3c8-59fd-4291-87ca-54de5373e205/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/1ae2f3c8-59fd-4291-87ca-54de5373e205
+URL:https://auftragsregister.ch/en/auftrag/1ae2f3c8-59fd-4291-87ca-54de5373
+ e205/
+LOCATION:Route de la Roche
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Réfection de la Route de la Roche - Commu
+ ne de Savigny
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

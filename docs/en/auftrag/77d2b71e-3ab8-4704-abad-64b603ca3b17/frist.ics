@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:77d2b71e-3ab8-4704-abad-64b603ca3b17-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Submission deadline: 00893 Gebäude ZOD/ZOT/ZOU/ZOA\, Heizungsersat
+ z Verbund Süd BKP 240
+DESCRIPTION:Public buyer: Universität Zürich - Bauprojektmanagement\nSubm
+ ission deadline: 2 Dec 2026\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/77d2b71e-3ab8-4704-abad-64b603ca3b17/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/77d2b71e-3ab8-4704-abad-64b
+ 603ca3b17
+URL:https://auftragsregister.ch/en/auftrag/77d2b71e-3ab8-4704-abad-64b603ca
+ 3b17/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 00893 Gebäude ZOD/ZOT/ZOU/ZOA\, Heizungse
+ rsatz Verbund Süd BKP 240
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

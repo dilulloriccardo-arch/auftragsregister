@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9bfdef34-d306-4f15-a734-5a0584b5d62d-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Délai de remise : 13.0455 Bienne\, Haute école spécialisée be
+ rnoise (BFH)\, construction du nouveau campus_CFC 231 Installations photov
+ oltaïques
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 04.12.2026\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/9bfdef34-d306-4f15-a734-5
+ a0584b5d62d/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/9bfdef34-d306-4f15-a734-5a0584b5d62d
+URL:https://auftragsregister.ch/fr/auftrag/9bfdef34-d306-4f15-a734-5a0584b5
+ d62d/
+LOCATION:Biel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 13.0455 Bienne\, Haute école spécialisé
+ e bernoise (BFH)\, construction du nouveau campus_CFC 231 Installations ph
+ otovoltaïques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

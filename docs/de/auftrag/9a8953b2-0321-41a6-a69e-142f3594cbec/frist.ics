@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a8953b2-0321-41a6-a69e-142f3594cbec-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Eingabefrist: Inhouse- und Tunnelrepeateranlagen
+DESCRIPTION:Auftraggeber: Kantonspolizei Bern\nEingabefrist: 15.12.2026\, 2
+ 3.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9a8953b2-03
+ 21-41a6-a69e-142f3594cbec/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/9a8953b2-0321-41a6-a69e-142f3594cbec
+URL:https://auftragsregister.ch/de/auftrag/9a8953b2-0321-41a6-a69e-142f3594
+ cbec/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Inhouse- und Tunnelrepeateranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

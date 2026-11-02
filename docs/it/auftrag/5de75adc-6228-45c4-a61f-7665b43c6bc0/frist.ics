@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5de75adc-6228-45c4-a61f-7665b43c6bc0-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261126T130000Z
+SUMMARY:Scadenza: BKP 112 Abbruch- und Aushubarbeiten Weisses Schulhaus Sch
+ ulanlage 3422 Alchenflüh
+DESCRIPTION:Ente pubblico: Atelier GSW Partner AG\nScadenza: 26.11.2026\, 1
+ 4:00\nNel registro: https://auftragsregister.ch/it/auftrag/5de75adc-6228-4
+ 5c4-a61f-7665b43c6bc0/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/5de75adc-6228-45c4-a61f-7665b43c6bc0
+URL:https://auftragsregister.ch/it/auftrag/5de75adc-6228-45c4-a61f-7665b43c
+ 6bc0/
+LOCATION:Rüdtligen- Alchenflüh
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 112 Abbruch- und Aushubarbeiten Weisses Schulhaus
+  Schulanlage 3422 Alchenflüh
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

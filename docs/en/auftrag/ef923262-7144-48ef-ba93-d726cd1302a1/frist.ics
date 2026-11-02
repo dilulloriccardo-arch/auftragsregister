@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef923262-7144-48ef-ba93-d726cd1302a1-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Submission deadline: 2219 Sanierung Zivilschutz-Kommandoposten - BK
+ P 244 Lüftungsanlagen
+DESCRIPTION:Public buyer: SID - Schutz & Rettung (SRZ) (STAUFFACHER AEMISEG
+ GER architekten gmbh)\nSubmission deadline: 23 Nov 2026\, 12:00\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/ef923262-7144-48ef-ba93-d
+ 726cd1302a1/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /ef923262-7144-48ef-ba93-d726cd1302a1
+URL:https://auftragsregister.ch/en/auftrag/ef923262-7144-48ef-ba93-d726cd13
+ 02a1/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 2219 Sanierung Zivilschutz-Kommandoposten 
+ - BKP 244 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:77d2b71e-3ab8-4704-abad-64b603ca3b17-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Scadenza: 00893 Gebäude ZOD/ZOT/ZOU/ZOA\, Heizungsersatz Verbund S
+ üd BKP 240
+DESCRIPTION:Ente pubblico: Universität Zürich - Bauprojektmanagement\nSca
+ denza: 02.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/au
+ ftrag/77d2b71e-3ab8-4704-abad-64b603ca3b17/\nPubblicazione ufficiale: http
+ s://www.simap.ch/it/project-detail/77d2b71e-3ab8-4704-abad-64b603ca3b17
+URL:https://auftragsregister.ch/it/auftrag/77d2b71e-3ab8-4704-abad-64b603ca
+ 3b17/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 00893 Gebäude ZOD/ZOT/ZOU/ZOA\, Heizungsersatz Verbu
+ nd Süd BKP 240
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

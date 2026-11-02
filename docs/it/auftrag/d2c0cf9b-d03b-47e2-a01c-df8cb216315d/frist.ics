@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2c0cf9b-d03b-47e2-a01c-df8cb216315d-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Scadenza: Türen aus Holz
+DESCRIPTION:Ente pubblico: Gemeinde Pontresina\nScadenza: 23.11.2026\, 12:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/d2c0cf9b-d03b-47e2
+ -a01c-df8cb216315d/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/d2c0cf9b-d03b-47e2-a01c-df8cb216315d
+URL:https://auftragsregister.ch/it/auftrag/d2c0cf9b-d03b-47e2-a01c-df8cb216
+ 315d/
+LOCATION:Pontresina
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Türen aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edbfe667-44a9-444e-a965-dae58b9d306a-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Délai de remise : BKP231.2 Schaltgerätekombinationen- Beringen\
+ , Syntegon Packaging Systems – Etappe 2 (PV)
+DESCRIPTION:Acheteur public : Elektrizitätswerk des Kanton Schaffhausens
+  AG\nDélai de remise : 14.12.2026\, 12 h 00\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/edbfe667-44a9-444e-a965-dae58b9d306a
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/edbfe
+ 667-44a9-444e-a965-dae58b9d306a
+URL:https://auftragsregister.ch/fr/auftrag/edbfe667-44a9-444e-a965-dae58b9d
+ 306a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP231.2 Schaltgerätekombinationen- Berin
+ gen\, Syntegon Packaging Systems – Etappe 2 (PV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

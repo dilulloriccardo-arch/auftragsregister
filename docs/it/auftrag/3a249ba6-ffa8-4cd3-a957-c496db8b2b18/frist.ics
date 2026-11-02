@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a249ba6-ffa8-4cd3-a957-c496db8b2b18-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Scadenza: Bern\, Bremgartenstrasse 131-137\, Gymnasium Neufeld\, In
+ standstellung und Ersatzneubau\, BKP 902 Sporteinrichtungen TP1 - 2
+DESCRIPTION:Ente pubblico: Amt für Grundstücke und Gebäude des Kantons B
+ ern (AGG)\nScadenza: 11.01.2027\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/3a249ba6-ffa8-4cd3-a957-c496db8b2b18/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/3a249ba6-ffa8-4cd3-a957-c
+ 496db8b2b18
+URL:https://auftragsregister.ch/it/auftrag/3a249ba6-ffa8-4cd3-a957-c496db8b
+ 2b18/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bern\, Bremgartenstrasse 131-137\, Gymnasium Neufeld\
+ , Instandstellung und Ersatzneubau\, BKP 902 Sporteinrichtungen TP1 - 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

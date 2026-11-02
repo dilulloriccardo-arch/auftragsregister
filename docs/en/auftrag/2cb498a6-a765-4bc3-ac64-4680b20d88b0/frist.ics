@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2cb498a6-a765-4bc3-ac64-4680b20d88b0-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261207T090000Z
+SUMMARY:Submission deadline: Thundorf\, K27 Sanierung Hauptstrasse\, Obstga
+ rtenstrasse bis Aufhofen
+DESCRIPTION:Public buyer: Kantonales Tiefbauamt Thurgau\nSubmission deadlin
+ e: 7 Dec 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/2cb498a6-a765-4bc3-ac64-4680b20d88b0/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/2cb498a6-a765-4bc3-ac64-4680b20d88b0
+URL:https://auftragsregister.ch/en/auftrag/2cb498a6-a765-4bc3-ac64-4680b20d
+ 88b0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Thundorf\, K27 Sanierung Hauptstrasse\, Ob
+ stgartenstrasse bis Aufhofen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

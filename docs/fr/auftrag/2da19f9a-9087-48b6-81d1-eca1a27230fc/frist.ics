@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2da19f9a-9087-48b6-81d1-eca1a27230fc-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Délai de remise : Layout und Druck Mitteilungsblatt "Gmeindsblat
+ t"
+DESCRIPTION:Acheteur public : Gemeinde Kirchberg\nDélai de remise : 15
+ .12.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/2da19f9a-9087-48b6-81d1-eca1a27230fc/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/2da19f9a-9087-48b6-81d1-eca1a2723
+ 0fc
+URL:https://auftragsregister.ch/fr/auftrag/2da19f9a-9087-48b6-81d1-eca1a272
+ 30fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Layout und Druck Mitteilungsblatt "Gmeinds
+ blatt"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

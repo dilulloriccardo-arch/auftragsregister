@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fae5cdaf-b882-426a-98ad-190ca2d85089-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270108T150000Z
+SUMMARY:Submission deadline: Client Representation & Project Management for
+  the New SZU Headquarters and the New Maintenance Facility
+DESCRIPTION:Public buyer: Sihltal Zürich Uetliberg Bahn SZU AG\nSubmission
+  deadline: 8 Jan 2027\, 16:00\nIn the register: https://auftragsregister
+ .ch/en/auftrag/fae5cdaf-b882-426a-98ad-190ca2d85089/\nOfficial publication
+ : https://www.simap.ch/en/project-detail/fae5cdaf-b882-426a-98ad-190ca2d85
+ 089
+URL:https://auftragsregister.ch/en/auftrag/fae5cdaf-b882-426a-98ad-190ca2d8
+ 5089/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Client Representation & Project Management
+  for the New SZU Headquarters and the New Maintenance Facility
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

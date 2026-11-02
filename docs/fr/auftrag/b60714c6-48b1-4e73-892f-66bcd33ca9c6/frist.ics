@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b60714c6-48b1-4e73-892f-66bcd33ca9c6-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : Metalltüren
+DESCRIPTION:Acheteur public : Gemeinde Pontresina\nDélai de remise : 2
+ 3.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/b60714c6-48b1-4e73-892f-66bcd33ca9c6/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/b60714c6-48b1-4e73-892f-66bcd3
+ 3ca9c6
+URL:https://auftragsregister.ch/fr/auftrag/b60714c6-48b1-4e73-892f-66bcd33c
+ a9c6/
+LOCATION:Pontresina
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Metalltüren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

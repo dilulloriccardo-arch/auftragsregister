@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0f30b5e6-e66a-4d7a-88e7-9aaf28171cb6-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Submission deadline: Projet Extension Hôpital de Sion - Eclairage 
+ opératoire
+DESCRIPTION:Public buyer: Hôpital du Valais - Projets stratégiques\nSubmi
+ ssion deadline: 9 Dec 2026\, 12:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/0f30b5e6-e66a-4d7a-88e7-9aaf28171cb6/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/0f30b5e6-e66a-4d7a-88e7-9aaf
+ 28171cb6
+URL:https://auftragsregister.ch/en/auftrag/0f30b5e6-e66a-4d7a-88e7-9aaf2817
+ 1cb6/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Projet Extension Hôpital de Sion - Eclair
+ age opératoire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a8953b2-0321-41a6-a69e-142f3594cbec-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Délai de remise : Installation de répéteurs intérieurs et pou
+ r tunnels
+DESCRIPTION:Acheteur public : Kantonspolizei Bern\nDélai de remise : 1
+ 5.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/9a8953b2-0321-41a6-a69e-142f3594cbec/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/9a8953b2-0321-41a6-a69e-142f35
+ 94cbec
+URL:https://auftragsregister.ch/fr/auftrag/9a8953b2-0321-41a6-a69e-142f3594
+ cbec/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Installation de répéteurs intérieurs et
+  pour tunnels
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

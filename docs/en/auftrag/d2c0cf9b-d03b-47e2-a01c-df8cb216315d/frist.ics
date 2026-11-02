@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2c0cf9b-d03b-47e2-a01c-df8cb216315d-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Submission deadline: Türen aus Holz
+DESCRIPTION:Public buyer: Gemeinde Pontresina\nSubmission deadline: 23 Nov
+  2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/d2
+ c0cf9b-d03b-47e2-a01c-df8cb216315d/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/d2c0cf9b-d03b-47e2-a01c-df8cb216315d
+URL:https://auftragsregister.ch/en/auftrag/d2c0cf9b-d03b-47e2-a01c-df8cb216
+ 315d/
+LOCATION:Pontresina
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Türen aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

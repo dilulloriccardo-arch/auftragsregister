@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a866085b-d6f1-4f8b-8099-afaa94a92af5-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Eingabefrist: (b26054-5) Umbau und Sanierung Verwaltungsgebäude Bu
+ ndesgasse 32\, Bern / BKP 25
+DESCRIPTION:Auftraggeber: Bundesamt für Bauten und Logistik BBL\nEingabefr
+ ist: 14.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/a866085b-d6f1-4f8b-8099-afaa94a92af5/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/a866085b-d6f1-4f8b-8099-afaa94a92af5
+URL:https://auftragsregister.ch/de/auftrag/a866085b-d6f1-4f8b-8099-afaa94a9
+ 2af5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (b26054-5) Umbau und Sanierung Verwaltungsgebäud
+ e Bundesgasse 32\, Bern / BKP 25
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

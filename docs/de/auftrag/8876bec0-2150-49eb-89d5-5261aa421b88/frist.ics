@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8876bec0-2150-49eb-89d5-5261aa421b88-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T153000Z
+SUMMARY:Eingabefrist: Ecole Secondaire Noëlla Rouget à Meyrin\, construct
+ ion d'un groupe scolaire et de salles omnisport - Lot 44 - plafonds pannea
+ ux bois et dérivés du bois
+DESCRIPTION:Auftraggeber: Etat de Genève\, Département du Territoire - DT
+ \, Office Cantonal des Bâtiments\nEingabefrist: 14.12.2026\, 16.30 Uhr\n
+ Im Register: https://auftragsregister.ch/de/auftrag/8876bec0-2150-49eb-89d
+ 5-5261aa421b88/\nAmtliche Publikation: https://www.simap.ch/de/project-det
+ ail/8876bec0-2150-49eb-89d5-5261aa421b88
+URL:https://auftragsregister.ch/de/auftrag/8876bec0-2150-49eb-89d5-5261aa42
+ 1b88/
+LOCATION:Meyrin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ecole Secondaire Noëlla Rouget à Meyrin\, const
+ ruction d'un groupe scolaire et de salles omnisport - Lot 44 - plafonds pa
+ nneaux bois et dérivés du bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

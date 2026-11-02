@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cee0e925-0385-4328-8b8b-963b0edecf16-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:1
+DTSTART:20270210T110000Z
+SUMMARY:Eingabefrist: Elektro-Niederflurbusse
+DESCRIPTION:Auftraggeber: Die Schweizerische Post AG\nEingabefrist: 10.02.2
+ 027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/cee0
+ e925-0385-4328-8b8b-963b0edecf16/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/cee0e925-0385-4328-8b8b-963b0edecf16
+URL:https://auftragsregister.ch/de/auftrag/cee0e925-0385-4328-8b8b-963b0ede
+ cf16/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Elektro-Niederflurbusse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

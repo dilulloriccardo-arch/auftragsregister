@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e37077bd-e1b7-4dbc-8284-ed3efcaef4bb-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Délai de remise : Berne\, Bremgartenstrasse 131-137\, gymnase de
+  Neufeld\, rénovation et construction de remplacement\, CFC 245 Installat
+ ions mécaniques d’extraction de fumée et de chaleur (IMEFC)\, SP 2
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 11.01.2027\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/e37077bd-e1b7-4dbc-8284-e
+ d3efcaef4bb/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/e37077bd-e1b7-4dbc-8284-ed3efcaef4bb
+URL:https://auftragsregister.ch/fr/auftrag/e37077bd-e1b7-4dbc-8284-ed3efcae
+ f4bb/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Berne\, Bremgartenstrasse 131-137\, gymnas
+ e de Neufeld\, rénovation et construction de remplacement\, CFC 245 Insta
+ llations mécaniques d’extraction de fumée et de chaleur (IMEFC)\, SP 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

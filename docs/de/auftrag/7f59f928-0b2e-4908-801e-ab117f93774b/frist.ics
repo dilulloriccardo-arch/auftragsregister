@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7f59f928-0b2e-4908-801e-ab117f93774b-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Eingabefrist: BKP 421 Gärtnerarbeit
+DESCRIPTION:Auftraggeber: brügger architekten ag\nEingabefrist: 27.11.2026
+ \, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/7f59f92
+ 8-0b2e-4908-801e-ab117f93774b/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/7f59f928-0b2e-4908-801e-ab117f93774b
+URL:https://auftragsregister.ch/de/auftrag/7f59f928-0b2e-4908-801e-ab117f93
+ 774b/
+LOCATION:Kirchdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 421 Gärtnerarbeit
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

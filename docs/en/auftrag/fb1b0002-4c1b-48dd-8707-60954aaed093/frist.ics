@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb1b0002-4c1b-48dd-8707-60954aaed093-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Submission deadline: Lieferung und Montage von zwei Notstromdiesela
+ nlagen für Standorte Dietikon und Thalwil
+DESCRIPTION:Public buyer: Elektrizitätswerke des Kantons Zürich\nSubmissi
+ on deadline: 11 Dec 2026\, 12:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/fb1b0002-4c1b-48dd-8707-60954aaed093/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/fb1b0002-4c1b-48dd-8707-60954a
+ aed093
+URL:https://auftragsregister.ch/en/auftrag/fb1b0002-4c1b-48dd-8707-60954aae
+ d093/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Lieferung und Montage von zwei Notstromdie
+ selanlagen für Standorte Dietikon und Thalwil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

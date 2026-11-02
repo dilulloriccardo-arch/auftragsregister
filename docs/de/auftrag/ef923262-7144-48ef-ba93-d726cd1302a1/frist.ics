@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef923262-7144-48ef-ba93-d726cd1302a1-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Eingabefrist: 2219 Sanierung Zivilschutz-Kommandoposten - BKP 244 L
+ üftungsanlagen
+DESCRIPTION:Auftraggeber: SID - Schutz & Rettung (SRZ) (STAUFFACHER AEMISEG
+ GER architekten gmbh)\nEingabefrist: 23.11.2026\, 12.00 Uhr\nIm Register:
+  https://auftragsregister.ch/de/auftrag/ef923262-7144-48ef-ba93-d726cd1302
+ a1/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/ef923262
+ -7144-48ef-ba93-d726cd1302a1
+URL:https://auftragsregister.ch/de/auftrag/ef923262-7144-48ef-ba93-d726cd13
+ 02a1/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 2219 Sanierung Zivilschutz-Kommandoposten - BKP 2
+ 44 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

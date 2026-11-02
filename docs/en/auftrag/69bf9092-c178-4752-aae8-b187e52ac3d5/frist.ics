@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69bf9092-c178-4752-aae8-b187e52ac3d5-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270104T150000Z
+SUMMARY:Submission deadline: Feuerwehr Pionierfahrzeuge
+DESCRIPTION:Public buyer: Gebäudeversicherung Kanton Zürich\nSubmission d
+ eadline: 4 Jan 2027\, 16:00\nIn the register: https://auftragsregister.c
+ h/en/auftrag/69bf9092-c178-4752-aae8-b187e52ac3d5/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/69bf9092-c178-4752-aae8-b187e52ac3d
+ 5
+URL:https://auftragsregister.ch/en/auftrag/69bf9092-c178-4752-aae8-b187e52a
+ c3d5/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Feuerwehr Pionierfahrzeuge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

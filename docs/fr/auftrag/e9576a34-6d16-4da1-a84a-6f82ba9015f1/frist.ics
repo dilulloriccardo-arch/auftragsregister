@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9576a34-6d16-4da1-a84a-6f82ba9015f1-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T130000Z
+SUMMARY:Délai de remise : Véhicules de transport
+DESCRIPTION:Acheteur public : Fondazione Don Guanella\nDélai de remise
+  : 14.12.2026\, 14 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/e9576a34-6d16-4da1-a84a-6f82ba9015f1/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/e9576a34-6d16-4da1-a84a-6f
+ 82ba9015f1
+URL:https://auftragsregister.ch/fr/auftrag/e9576a34-6d16-4da1-a84a-6f82ba90
+ 15f1/
+LOCATION:Riva San Vitale
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Véhicules de transport
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

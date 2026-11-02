@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2c0cf9b-d03b-47e2-a01c-df8cb216315d-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : Türen aus Holz
+DESCRIPTION:Acheteur public : Gemeinde Pontresina\nDélai de remise : 2
+ 3.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/d2c0cf9b-d03b-47e2-a01c-df8cb216315d/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/d2c0cf9b-d03b-47e2-a01c-df8cb2
+ 16315d
+URL:https://auftragsregister.ch/fr/auftrag/d2c0cf9b-d03b-47e2-a01c-df8cb216
+ 315d/
+LOCATION:Pontresina
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Türen aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

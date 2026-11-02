@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3944543-e7d6-41b6-ba03-f21015fb9524-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Eingabefrist: Réalisation d’un passage pour piéton à la bretel
+ le d’entrée d’autoroute de la jonction de Meyrin
+DESCRIPTION:Auftraggeber: SIERA - Service Intercantonal d'Entretien du Rés
+ eau Autoroutier\nEingabefrist: 16.12.2026\, 12.00 Uhr\nIm Register: https
+ ://auftragsregister.ch/de/auftrag/d3944543-e7d6-41b6-ba03-f21015fb9524/\nA
+ mtliche Publikation: https://www.simap.ch/de/project-detail/d3944543-e7d6-
+ 41b6-ba03-f21015fb9524
+URL:https://auftragsregister.ch/de/auftrag/d3944543-e7d6-41b6-ba03-f21015fb
+ 9524/
+LOCATION:Meyrin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Réalisation d’un passage pour piéton à la br
+ etelle d’entrée d’autoroute de la jonction de Meyrin
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

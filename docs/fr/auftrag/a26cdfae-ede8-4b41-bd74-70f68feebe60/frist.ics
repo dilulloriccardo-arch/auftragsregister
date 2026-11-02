@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a26cdfae-ede8-4b41-bd74-70f68feebe60-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261127T160000Z
+SUMMARY:Délai de remise : Réfection Route du Téléphérique à Vercori
+ n - Aménagement d'un arrêt de bus avec place de rebroussement\, d'un tro
+ ttoir et d'un mur de soutènement
+DESCRIPTION:Acheteur public : Commune de Chalais\nDélai de remise : 27
+ .11.2026\, 17 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/a26cdfae-ede8-4b41-bd74-70f68feebe60/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/a26cdfae-ede8-4b41-bd74-70f68feeb
+ e60
+URL:https://auftragsregister.ch/fr/auftrag/a26cdfae-ede8-4b41-bd74-70f68fee
+ be60/
+LOCATION:Vercorin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Réfection Route du Téléphérique à Ver
+ corin - Aménagement d'un arrêt de bus avec place de rebroussement\, d'un
+  trottoir et d'un mur de soutènement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

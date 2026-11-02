@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fae5cdaf-b882-426a-98ad-190ca2d85089-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270108T150000Z
+SUMMARY:Eingabefrist: Bauherrenvertretung & Projektsteuerung neuer Hauptsit
+ z SZU / neue Instandhaltungsanlage
+DESCRIPTION:Auftraggeber: Sihltal Zürich Uetliberg Bahn SZU AG\nEingabefri
+ st: 08.01.2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/fae5cdaf-b882-426a-98ad-190ca2d85089/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/fae5cdaf-b882-426a-98ad-190ca2d85089
+URL:https://auftragsregister.ch/de/auftrag/fae5cdaf-b882-426a-98ad-190ca2d8
+ 5089/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bauherrenvertretung & Projektsteuerung neuer Haup
+ tsitz SZU / neue Instandhaltungsanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

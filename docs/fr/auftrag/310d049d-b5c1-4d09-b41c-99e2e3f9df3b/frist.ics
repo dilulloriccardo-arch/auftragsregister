@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:310d049d-b5c1-4d09-b41c-99e2e3f9df3b-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T170000Z
+SUMMARY:Délai de remise : Neubau Wohnsiedlung Promulins\, 7530 Samedan -
+  BKP 23 Elektroanlagen
+DESCRIPTION:Acheteur public : Bürgergemeinde Samedan (Alder Clavuot Nunz
+ i Architekten GmbH ETH SIA)\nDélai de remise : 14.12.2026\, 18 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/310d049d-b5c
+ 1-4d09-b41c-99e2e3f9df3b/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/310d049d-b5c1-4d09-b41c-99e2e3f9df3b
+URL:https://auftragsregister.ch/fr/auftrag/310d049d-b5c1-4d09-b41c-99e2e3f9
+ df3b/
+LOCATION:Samedan
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Wohnsiedlung Promulins\, 7530 Samed
+ an - BKP 23 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

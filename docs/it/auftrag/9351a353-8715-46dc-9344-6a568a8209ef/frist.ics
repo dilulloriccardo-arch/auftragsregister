@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9351a353-8715-46dc-9344-6a568a8209ef-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Scadenza: Hochwasserschutz Holzgraben Abschnitt Bäjiweg-DL Kantons
+ strasse\, Glis – Gesamtausschreibung Bauarbeiten
+DESCRIPTION:Ente pubblico: Stadtgemeinde Brig-Glis (Tilex AG)\nScadenza: 11
+ .01.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/935
+ 1a353-8715-46dc-9344-6a568a8209ef/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/9351a353-8715-46dc-9344-6a568a8209ef
+URL:https://auftragsregister.ch/it/auftrag/9351a353-8715-46dc-9344-6a568a82
+ 09ef/
+LOCATION:Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Hochwasserschutz Holzgraben Abschnitt Bäjiweg-DL Kan
+ tonsstrasse\, Glis – Gesamtausschreibung Bauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

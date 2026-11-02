@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85cfcb4c-49ef-4fcb-b786-0357491ebe51-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Scadenza: Werk- und Belagsreparaturen 2027\, Region Osten
+DESCRIPTION:Ente pubblico: Verkehr und Infrastruktur (vif)\, zentras\, Betr
+ ieb Strassen\nScadenza: 10.12.2026\, 23:59\nNel registro: https://auftrags
+ register.ch/it/auftrag/85cfcb4c-49ef-4fcb-b786-0357491ebe51/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/85cfcb4c-49ef-4fcb-b78
+ 6-0357491ebe51
+URL:https://auftragsregister.ch/it/auftrag/85cfcb4c-49ef-4fcb-b786-0357491e
+ be51/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Werk- und Belagsreparaturen 2027\, Region Osten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

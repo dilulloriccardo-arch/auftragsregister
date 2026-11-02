@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2b767a33-f02c-4805-859b-4d02234eaf6f-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270108T150000Z
+SUMMARY:Eingabefrist: FORUM UZH | BKP 286-1 Bauheizung WG24
+DESCRIPTION:Auftraggeber: Kanton Zürich Hochbauaumt\, Baubereich D\nEingab
+ efrist: 08.01.2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/2b767a33-f02c-4805-859b-4d02234eaf6f/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/2b767a33-f02c-4805-859b-4d02234eaf6f
+URL:https://auftragsregister.ch/de/auftrag/2b767a33-f02c-4805-859b-4d02234e
+ af6f/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: FORUM UZH | BKP 286-1 Bauheizung WG24
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

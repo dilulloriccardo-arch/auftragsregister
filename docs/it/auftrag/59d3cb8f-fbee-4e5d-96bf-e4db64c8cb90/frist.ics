@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:59d3cb8f-fbee-4e5d-96bf-e4db64c8cb90-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261130T170000Z
+SUMMARY:Scadenza: Neubau Wohnsiedlung Promulins\, 7530 Samedan - BKP 242 He
+ izungsanlagen
+DESCRIPTION:Ente pubblico: Bürgergemeinde Samedan (Alder Clavuot Nunzi Arc
+ hitekten GmbH ETH SIA)\nScadenza: 30.11.2026\, 18:00\nNel registro: https:
+ //auftragsregister.ch/it/auftrag/59d3cb8f-fbee-4e5d-96bf-e4db64c8cb90/\nPu
+ bblicazione ufficiale: https://www.simap.ch/it/project-detail/59d3cb8f-fbe
+ e-4e5d-96bf-e4db64c8cb90
+URL:https://auftragsregister.ch/it/auftrag/59d3cb8f-fbee-4e5d-96bf-e4db64c8
+ cb90/
+LOCATION:Samedan
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Wohnsiedlung Promulins\, 7530 Samedan - BKP 24
+ 2 Heizungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

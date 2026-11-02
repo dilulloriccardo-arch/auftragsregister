@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edbfe667-44a9-444e-a965-dae58b9d306a-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: BKP231.2 Schaltgerätekombinationen- Beringen\, Synte
+ gon Packaging Systems – Etappe 2 (PV)
+DESCRIPTION:Auftraggeber: Elektrizitätswerk des Kanton Schaffhausens AG\nE
+ ingabefrist: 14.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/edbfe667-44a9-444e-a965-dae58b9d306a/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/edbfe667-44a9-444e-a965-dae58b9d
+ 306a
+URL:https://auftragsregister.ch/de/auftrag/edbfe667-44a9-444e-a965-dae58b9d
+ 306a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP231.2 Schaltgerätekombinationen- Beringen\, S
+ yntegon Packaging Systems – Etappe 2 (PV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d082b0b-ede2-4dee-83ab-200831e8e4ea-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: BKP 232.37 Stromschienen - Beringen\, Syntegon Packag
+ ing Systems – Etappe 2 (PV)
+DESCRIPTION:Auftraggeber: Elektrizitätswerk des Kanton Schaffhausens AG\nE
+ ingabefrist: 14.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/3d082b0b-ede2-4dee-83ab-200831e8e4ea/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/3d082b0b-ede2-4dee-83ab-200831e8
+ e4ea
+URL:https://auftragsregister.ch/de/auftrag/3d082b0b-ede2-4dee-83ab-200831e8
+ e4ea/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 232.37 Stromschienen - Beringen\, Syntegon Pa
+ ckaging Systems – Etappe 2 (PV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

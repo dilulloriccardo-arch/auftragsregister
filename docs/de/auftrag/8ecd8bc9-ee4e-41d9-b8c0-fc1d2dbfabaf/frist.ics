@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ecd8bc9-ee4e-41d9-b8c0-fc1d2dbfabaf-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Eingabefrist: USV Erneuerung UW Steghof und UW Fluhgrund
+DESCRIPTION:Auftraggeber: ewl Kabelnetz AG\nEingabefrist: 30.11.2026\, 16.0
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8ecd8bc9-ee4e-
+ 41d9-b8c0-fc1d2dbfabaf/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/8ecd8bc9-ee4e-41d9-b8c0-fc1d2dbfabaf
+URL:https://auftragsregister.ch/de/auftrag/8ecd8bc9-ee4e-41d9-b8c0-fc1d2dbf
+ abaf/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: USV Erneuerung UW Steghof und UW Fluhgrund
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

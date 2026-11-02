@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a866085b-d6f1-4f8b-8099-afaa94a92af5-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Délai de remise : (b26054-5) Transformation et rénovation du b
+ âtiment administratif sis Bundesgasse 32 à Berne / CFC 25
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 14.12.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/a866085b-d6f1-4f8b-8099-afaa94a92af5/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/a866085b-d6f1
+ -4f8b-8099-afaa94a92af5
+URL:https://auftragsregister.ch/fr/auftrag/a866085b-d6f1-4f8b-8099-afaa94a9
+ 2af5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (b26054-5) Transformation et rénovation d
+ u bâtiment administratif sis Bundesgasse 32 à Berne / CFC 25
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

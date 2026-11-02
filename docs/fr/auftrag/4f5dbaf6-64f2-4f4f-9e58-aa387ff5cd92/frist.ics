@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4f5dbaf6-64f2-4f4f-9e58-aa387ff5cd92-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261203T153000Z
+SUMMARY:Délai de remise : Cycle d’orientation de la Golette Réaménag
+ ement et végétalisation des espaces extérieurs
+DESCRIPTION:Acheteur public : Office Cantonal des bâtiments (OCBA)\nDél
+ ai de remise : 03.12.2026\, 16 h 30\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/4f5dbaf6-64f2-4f4f-9e58-aa387ff5cd92/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/4f5dbaf6-64f2-
+ 4f4f-9e58-aa387ff5cd92
+URL:https://auftragsregister.ch/fr/auftrag/4f5dbaf6-64f2-4f4f-9e58-aa387ff5
+ cd92/
+LOCATION:Meyrin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Cycle d’orientation de la Golette Réam
+ énagement et végétalisation des espaces extérieurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

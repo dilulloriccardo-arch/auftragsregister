@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:552409c0-e9bd-489e-a691-026e6bf15440-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Submission deadline: Mandat Wald
+DESCRIPTION:Public buyer: Waldregion Pilatus Nord\nSubmission deadline: 23
+  Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/552409c0-e9bd-489e-a691-026e6bf15440/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/552409c0-e9bd-489e-a691-026e6bf15440
+URL:https://auftragsregister.ch/en/auftrag/552409c0-e9bd-489e-a691-026e6bf1
+ 5440/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mandat Wald
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

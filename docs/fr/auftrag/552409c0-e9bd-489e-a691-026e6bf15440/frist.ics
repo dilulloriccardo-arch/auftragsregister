@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:552409c0-e9bd-489e-a691-026e6bf15440-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : Mandat Wald
+DESCRIPTION:Acheteur public : Waldregion Pilatus Nord\nDélai de remise
+  : 23.11.2026\, 12 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/552409c0-e9bd-489e-a691-026e6bf15440/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/552409c0-e9bd-489e-a691-02
+ 6e6bf15440
+URL:https://auftragsregister.ch/fr/auftrag/552409c0-e9bd-489e-a691-026e6bf1
+ 5440/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mandat Wald
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

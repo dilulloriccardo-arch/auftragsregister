@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fae5cdaf-b882-426a-98ad-190ca2d85089-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270108T150000Z
+SUMMARY:Délai de remise : Représentation du maître d’ouvrage et gest
+ ion de projet pour le nouveau siège principal de la SZU et la nouvelle in
+ stallation de maintenance
+DESCRIPTION:Acheteur public : Sihltal Zürich Uetliberg Bahn SZU AG\nDél
+ ai de remise : 08.01.2027\, 16 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/fae5cdaf-b882-426a-98ad-190ca2d85089/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/fae5cdaf-b882-
+ 426a-98ad-190ca2d85089
+URL:https://auftragsregister.ch/fr/auftrag/fae5cdaf-b882-426a-98ad-190ca2d8
+ 5089/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Représentation du maître d’ouvrage et 
+ gestion de projet pour le nouveau siège principal de la SZU et la nouvell
+ e installation de maintenance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a249ba6-ffa8-4cd3-a957-c496db8b2b18-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Eingabefrist: Bern\, Bremgartenstrasse 131-137\, Gymnasium Neufeld\
+ , Instandstellung und Ersatzneubau\, BKP 902 Sporteinrichtungen TP1 - 2
+DESCRIPTION:Auftraggeber: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nEingabefrist: 11.01.2027\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/3a249ba6-ffa8-4cd3-a957-c496db8b2b18/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/3a249ba6-ffa8-4cd3-a9
+ 57-c496db8b2b18
+URL:https://auftragsregister.ch/de/auftrag/3a249ba6-ffa8-4cd3-a957-c496db8b
+ 2b18/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bern\, Bremgartenstrasse 131-137\, Gymnasium Neuf
+ eld\, Instandstellung und Ersatzneubau\, BKP 902 Sporteinrichtungen TP1 - 
+ 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

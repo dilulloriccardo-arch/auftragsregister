@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d082b0b-ede2-4dee-83ab-200831e8e4ea-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Scadenza: BKP 232.37 Stromschienen - Beringen\, Syntegon Packaging 
+ Systems – Etappe 2 (PV)
+DESCRIPTION:Ente pubblico: Elektrizitätswerk des Kanton Schaffhausens AG\n
+ Scadenza: 14.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/3d082b0b-ede2-4dee-83ab-200831e8e4ea/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/3d082b0b-ede2-4dee-83ab-200831e8e4ea
+URL:https://auftragsregister.ch/it/auftrag/3d082b0b-ede2-4dee-83ab-200831e8
+ e4ea/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 232.37 Stromschienen - Beringen\, Syntegon Packag
+ ing Systems – Etappe 2 (PV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9bfdef34-d306-4f15-a734-5a0584b5d62d-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Eingabefrist: 13.0455 Biel\, Berner Fachhochschule BFH\, Neubau Cam
+ pus _ BKP 231 PV-Anlage
+DESCRIPTION:Auftraggeber: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nEingabefrist: 04.12.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/9bfdef34-d306-4f15-a734-5a0584b5d62d/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/9bfdef34-d306-4f15-a7
+ 34-5a0584b5d62d
+URL:https://auftragsregister.ch/de/auftrag/9bfdef34-d306-4f15-a734-5a0584b5
+ d62d/
+LOCATION:Biel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 13.0455 Biel\, Berner Fachhochschule BFH\, Neubau
+  Campus _ BKP 231 PV-Anlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

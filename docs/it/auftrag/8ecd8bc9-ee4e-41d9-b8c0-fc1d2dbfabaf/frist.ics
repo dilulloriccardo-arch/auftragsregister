@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ecd8bc9-ee4e-41d9-b8c0-fc1d2dbfabaf-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Scadenza: USV Erneuerung UW Steghof und UW Fluhgrund
+DESCRIPTION:Ente pubblico: ewl Kabelnetz AG\nScadenza: 30.11.2026\, 16:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/8ecd8bc9-ee4e-41d9-b8
+ c0-fc1d2dbfabaf/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/8ecd8bc9-ee4e-41d9-b8c0-fc1d2dbfabaf
+URL:https://auftragsregister.ch/it/auftrag/8ecd8bc9-ee4e-41d9-b8c0-fc1d2dbf
+ abaf/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: USV Erneuerung UW Steghof und UW Fluhgrund
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

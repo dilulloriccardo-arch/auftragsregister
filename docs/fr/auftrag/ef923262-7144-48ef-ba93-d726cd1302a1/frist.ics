@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef923262-7144-48ef-ba93-d726cd1302a1-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : 2219 Sanierung Zivilschutz-Kommandoposten - BK
+ P 244 Lüftungsanlagen
+DESCRIPTION:Acheteur public : SID - Schutz & Rettung (SRZ) (STAUFFACHER A
+ EMISEGGER architekten gmbh)\nDélai de remise : 23.11.2026\, 12 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/ef923262-714
+ 4-48ef-ba93-d726cd1302a1/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/ef923262-7144-48ef-ba93-d726cd1302a1
+URL:https://auftragsregister.ch/fr/auftrag/ef923262-7144-48ef-ba93-d726cd13
+ 02a1/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 2219 Sanierung Zivilschutz-Kommandoposten 
+ - BKP 244 Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

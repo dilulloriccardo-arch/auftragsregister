@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1b4d0d31-1e17-4223-93af-c252912b6e4a-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Scadenza: 2219 Sanierung Zivilschutz-Kommandoposten - BKP 230 Elekt
+ roarbeiten
+DESCRIPTION:Ente pubblico: SID - Schutz & Rettung (SRZ) (STAUFFACHER AEMISE
+ GGER architekten gmbh)\nScadenza: 23.11.2026\, 12:00\nNel registro: https:
+ //auftragsregister.ch/it/auftrag/1b4d0d31-1e17-4223-93af-c252912b6e4a/\nPu
+ bblicazione ufficiale: https://www.simap.ch/it/project-detail/1b4d0d31-1e1
+ 7-4223-93af-c252912b6e4a
+URL:https://auftragsregister.ch/it/auftrag/1b4d0d31-1e17-4223-93af-c252912b
+ 6e4a/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 2219 Sanierung Zivilschutz-Kommandoposten - BKP 230 E
+ lektroarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

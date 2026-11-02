@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1b4d0d31-1e17-4223-93af-c252912b6e4a-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : 2219 Sanierung Zivilschutz-Kommandoposten - BK
+ P 230 Elektroarbeiten
+DESCRIPTION:Acheteur public : SID - Schutz & Rettung (SRZ) (STAUFFACHER A
+ EMISEGGER architekten gmbh)\nDélai de remise : 23.11.2026\, 12 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/1b4d0d31-1e1
+ 7-4223-93af-c252912b6e4a/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/1b4d0d31-1e17-4223-93af-c252912b6e4a
+URL:https://auftragsregister.ch/fr/auftrag/1b4d0d31-1e17-4223-93af-c252912b
+ 6e4a/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 2219 Sanierung Zivilschutz-Kommandoposten 
+ - BKP 230 Elektroarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

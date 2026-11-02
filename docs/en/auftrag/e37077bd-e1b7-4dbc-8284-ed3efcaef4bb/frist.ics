@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e37077bd-e1b7-4dbc-8284-ed3efcaef4bb-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Submission deadline: Bern\, Bremgartenstrasse 131-137\, Gymnasium N
+ eufeld\, Instandstellung und Ersatzneubau\, BKP245 Maschinelle Rauch- und 
+ Wärmeabzugsanlagen TP2
+DESCRIPTION:Public buyer: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nSubmission deadline: 11 Jan 2027\, 23:59\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/e37077bd-e1b7-4dbc-8284-ed3efcaef4bb/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/e37077bd-e1b
+ 7-4dbc-8284-ed3efcaef4bb
+URL:https://auftragsregister.ch/en/auftrag/e37077bd-e1b7-4dbc-8284-ed3efcae
+ f4bb/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bern\, Bremgartenstrasse 131-137\, Gymnasi
+ um Neufeld\, Instandstellung und Ersatzneubau\, BKP245 Maschinelle Rauch- 
+ und Wärmeabzugsanlagen TP2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

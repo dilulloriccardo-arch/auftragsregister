@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62414dc4-7884-4778-89d1-b7f5ba79a928-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Scadenza: Renforcement des alimentations électriques de traction\,
+  Belmont - Sendy Sollard
+DESCRIPTION:Ente pubblico: Compagnie du Chemin de fer Montreux Oberland ber
+ nois SA - Infrastructure Projets\nScadenza: 14.12.2026\nNel registro: http
+ s://auftragsregister.ch/it/auftrag/62414dc4-7884-4778-89d1-b7f5ba79a928/\n
+ Pubblicazione ufficiale: https://www.simap.ch/it/project-detail/62414dc4-7
+ 884-4778-89d1-b7f5ba79a928
+URL:https://auftragsregister.ch/it/auftrag/62414dc4-7884-4778-89d1-b7f5ba79
+ a928/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Renforcement des alimentations électriques de tracti
+ on\, Belmont - Sendy Sollard
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

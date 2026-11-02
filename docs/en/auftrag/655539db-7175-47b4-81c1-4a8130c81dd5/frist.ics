@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:655539db-7175-47b4-81c1-4a8130c81dd5-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Submission deadline: BKP231.51 Photovoltaikanlagen - Beringen\, Syn
+ tegon Packaging Systems – Etappe 2 (PV)
+DESCRIPTION:Public buyer: Elektrizitätswerk des Kanton Schaffhausens AG\nS
+ ubmission deadline: 14 Dec 2026\, 12:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/655539db-7175-47b4-81c1-4a8130c81dd5/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/655539db-7175-47b4-81c1
+ -4a8130c81dd5
+URL:https://auftragsregister.ch/en/auftrag/655539db-7175-47b4-81c1-4a8130c8
+ 1dd5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP231.51 Photovoltaikanlagen - Beringen\,
+  Syntegon Packaging Systems – Etappe 2 (PV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

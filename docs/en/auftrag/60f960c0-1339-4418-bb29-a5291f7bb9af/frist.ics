@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60f960c0-1339-4418-bb29-a5291f7bb9af-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Submission deadline: Stadt Solothurn\, Sanierung Allmendstrasse Ost
+ \, Gibelinstrasse bis Zurmattenstrasse
+DESCRIPTION:Public buyer: Stadt Solothurn\, Stadtbauamt\, Abteilung Tiefbau
+ \nSubmission deadline: 30 Nov 2026\, 16:00\nIn the register: https://auf
+ tragsregister.ch/en/auftrag/60f960c0-1339-4418-bb29-a5291f7bb9af/\nOfficia
+ l publication: https://www.simap.ch/en/project-detail/60f960c0-1339-4418-b
+ b29-a5291f7bb9af
+URL:https://auftragsregister.ch/en/auftrag/60f960c0-1339-4418-bb29-a5291f7b
+ b9af/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Stadt Solothurn\, Sanierung Allmendstrasse
+  Ost\, Gibelinstrasse bis Zurmattenstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c7ff84e4-4265-4cea-a555-d8c7741e3a8c-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261215T100000Z
+SUMMARY:Délai de remise : Commune de Losone (Tessin) – Ouvrages de pro
+ tection et d’aménagement hydraulique de la rivière Melezza
+DESCRIPTION:Acheteur public : Comune di Losone\nDélai de remise : 15.1
+ 2.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/c7ff84e4-4265-4cea-a555-d8c7741e3a8c/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/c7ff84e4-4265-4cea-a555-d8c7741e3a8
+ c
+URL:https://auftragsregister.ch/fr/auftrag/c7ff84e4-4265-4cea-a555-d8c7741e
+ 3a8c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Commune de Losone (Tessin) – Ouvrages de
+  protection et d’aménagement hydraulique de la rivière Melezza
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cee0e925-0385-4328-8b8b-963b0edecf16-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:1
+DTSTART:20270210T110000Z
+SUMMARY:Submission deadline: Elektro-Niederflurbusse
+DESCRIPTION:Public buyer: Die Schweizerische Post AG\nSubmission deadline: 
+ 10 Feb 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/cee0e925-0385-4328-8b8b-963b0edecf16/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/cee0e925-0385-4328-8b8b-963b0edecf16
+URL:https://auftragsregister.ch/en/auftrag/cee0e925-0385-4328-8b8b-963b0ede
+ cf16/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Elektro-Niederflurbusse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

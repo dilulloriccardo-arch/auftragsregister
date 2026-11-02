@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e71cb416-380b-4052-b4da-4b890744dcbb-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+SUMMARY:Délai de remise : Contrat-cadre revêtements de sols
+DESCRIPTION:Acheteur public : Genève Aéroport\nDélai de remise : 30.
+ 11.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/e71cb416-380b-4052-b4da-4b890744dcbb/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/e71cb416-380b-4052-b4da-4b890744dc
+ bb
+URL:https://auftragsregister.ch/fr/auftrag/e71cb416-380b-4052-b4da-4b890744
+ dcbb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat-cadre revêtements de sols
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

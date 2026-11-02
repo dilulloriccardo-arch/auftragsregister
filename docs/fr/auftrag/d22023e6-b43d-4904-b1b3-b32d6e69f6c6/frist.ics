@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d22023e6-b43d-4904-b1b3-b32d6e69f6c6-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Délai de remise : Brandschutztüren & Fixverglasung
+DESCRIPTION:Acheteur public : Gemeinde Pontresina\nDélai de remise : 2
+ 3.11.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/d22023e6-b43d-4904-b1b3-b32d6e69f6c6/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/d22023e6-b43d-4904-b1b3-b32d6e
+ 69f6c6
+URL:https://auftragsregister.ch/fr/auftrag/d22023e6-b43d-4904-b1b3-b32d6e69
+ f6c6/
+LOCATION:Pontresina
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Brandschutztüren & Fixverglasung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b60714c6-48b1-4e73-892f-66bcd33ca9c6-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Eingabefrist: Metalltüren
+DESCRIPTION:Auftraggeber: Gemeinde Pontresina\nEingabefrist: 23.11.2026\, 1
+ 2.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b60714c6-48
+ b1-4e73-892f-66bcd33ca9c6/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/b60714c6-48b1-4e73-892f-66bcd33ca9c6
+URL:https://auftragsregister.ch/de/auftrag/b60714c6-48b1-4e73-892f-66bcd33c
+ a9c6/
+LOCATION:Pontresina
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Metalltüren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

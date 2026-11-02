@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b97280d2-f0f8-481d-b05f-ee0f2d31b994-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270111T070000Z
+SUMMARY:Délai de remise : ACQUISITION D’UNE MACHINE FORESTIÈRE
+DESCRIPTION:Acheteur public : Commune de Val de Bagnes\nDélai de remise
+  : 11.01.2027\, 8 h 00\nDans le registre : https://auftragsregiste
+ r.ch/fr/auftrag/b97280d2-f0f8-481d-b05f-ee0f2d31b994/\nPublication officie
+ lle : https://www.simap.ch/fr/project-detail/b97280d2-f0f8-481d-b05f-ee0
+ f2d31b994
+URL:https://auftragsregister.ch/fr/auftrag/b97280d2-f0f8-481d-b05f-ee0f2d31
+ b994/
+LOCATION:Le Châble
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ACQUISITION D’UNE MACHINE FORESTIÈRE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

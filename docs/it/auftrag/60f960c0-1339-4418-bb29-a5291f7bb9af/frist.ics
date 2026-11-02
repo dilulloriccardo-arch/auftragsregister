@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60f960c0-1339-4418-bb29-a5291f7bb9af-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261130T150000Z
+SUMMARY:Scadenza: Stadt Solothurn\, Sanierung Allmendstrasse Ost\, Gibelins
+ trasse bis Zurmattenstrasse
+DESCRIPTION:Ente pubblico: Stadt Solothurn\, Stadtbauamt\, Abteilung Tiefba
+ u\nScadenza: 30.11.2026\, 16:00\nNel registro: https://auftragsregister.ch
+ /it/auftrag/60f960c0-1339-4418-bb29-a5291f7bb9af/\nPubblicazione ufficiale
+ : https://www.simap.ch/it/project-detail/60f960c0-1339-4418-bb29-a5291f7bb
+ 9af
+URL:https://auftragsregister.ch/it/auftrag/60f960c0-1339-4418-bb29-a5291f7b
+ b9af/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Stadt Solothurn\, Sanierung Allmendstrasse Ost\, Gibe
+ linstrasse bis Zurmattenstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

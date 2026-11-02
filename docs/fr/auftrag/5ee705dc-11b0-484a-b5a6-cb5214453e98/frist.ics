@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5ee705dc-11b0-484a-b5a6-cb5214453e98-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270128T140000Z
+SUMMARY:Délai de remise : Contrat-cadre pour installations de couplage 1
+ 32 kV isolées au gaz (GIS) 16\,7 Hz pour les sous-stations de Thoune\, Pu
+ idoux\, Cornaux et Muttenz
+DESCRIPTION:Acheteur public : SBB CFF FFS Infra-Energie\nDélai de remise
+  : 28.01.2027\, 15 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/5ee705dc-11b0-484a-b5a6-cb5214453e98/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/5ee705dc-11b0-484a-b5a6-cb
+ 5214453e98
+URL:https://auftragsregister.ch/fr/auftrag/5ee705dc-11b0-484a-b5a6-cb521445
+ 3e98/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat-cadre pour installations de coupla
+ ge 132 kV isolées au gaz (GIS) 16\,7 Hz pour les sous-stations de Thoune\
+ , Puidoux\, Cornaux et Muttenz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

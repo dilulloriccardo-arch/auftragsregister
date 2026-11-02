@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1b4d0d31-1e17-4223-93af-c252912b6e4a-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261123T110000Z
+SUMMARY:Submission deadline: 2219 Sanierung Zivilschutz-Kommandoposten - BK
+ P 230 Elektroarbeiten
+DESCRIPTION:Public buyer: SID - Schutz & Rettung (SRZ) (STAUFFACHER AEMISEG
+ GER architekten gmbh)\nSubmission deadline: 23 Nov 2026\, 12:00\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/1b4d0d31-1e17-4223-93af-c
+ 252912b6e4a/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /1b4d0d31-1e17-4223-93af-c252912b6e4a
+URL:https://auftragsregister.ch/en/auftrag/1b4d0d31-1e17-4223-93af-c252912b
+ 6e4a/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 2219 Sanierung Zivilschutz-Kommandoposten 
+ - BKP 230 Elektroarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

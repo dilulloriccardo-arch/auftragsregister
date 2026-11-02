@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5ee705dc-11b0-484a-b5a6-cb5214453e98-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270128T140000Z
+SUMMARY:Submission deadline: Rahmenvertrag gasisolierte 132-kV-Schaltanlage
+ n (GIS) 16\,7 Hz für die Unterwerke Thun\, Puidoux\, Cornaux und Muttenz
+DESCRIPTION:Public buyer: SBB CFF FFS Infra-Energie\nSubmission deadline: 2
+ 8 Jan 2027\, 15:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/5ee705dc-11b0-484a-b5a6-cb5214453e98/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/5ee705dc-11b0-484a-b5a6-cb5214453e98
+URL:https://auftragsregister.ch/en/auftrag/5ee705dc-11b0-484a-b5a6-cb521445
+ 3e98/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rahmenvertrag gasisolierte 132-kV-Schaltan
+ lagen (GIS) 16\,7 Hz für die Unterwerke Thun\, Puidoux\, Cornaux und Mutt
+ enz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c7ff84e4-4265-4cea-a555-d8c7741e3a8c-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261215T100000Z
+SUMMARY:Scadenza: Comune di Losone - Opere di premunizione e sistemazione i
+ draulica del fiume Melezza
+DESCRIPTION:Ente pubblico: Comune di Losone\nScadenza: 15.12.2026\, 11:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/c7ff84e4-4265-4cea-a5
+ 55-d8c7741e3a8c/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/c7ff84e4-4265-4cea-a555-d8c7741e3a8c
+URL:https://auftragsregister.ch/it/auftrag/c7ff84e4-4265-4cea-a555-d8c7741e
+ 3a8c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Comune di Losone - Opere di premunizione e sistemazio
+ ne idraulica del fiume Melezza
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

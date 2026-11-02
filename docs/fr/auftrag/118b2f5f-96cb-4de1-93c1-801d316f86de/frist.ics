@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:118b2f5f-96cb-4de1-93c1-801d316f86de-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261202T090000Z
+SUMMARY:Délai de remise : Stadthaus Modernisierung UKV-Verkabelung
+DESCRIPTION:Acheteur public : Stadt Luzern Immobilien Objektmanagement (E
+ lektroplan AG)\nDélai de remise : 02.12.2026\, 10 h 00\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/118b2f5f-96cb-4de1-93c1-8
+ 01d316f86de/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/118b2f5f-96cb-4de1-93c1-801d316f86de
+URL:https://auftragsregister.ch/fr/auftrag/118b2f5f-96cb-4de1-93c1-801d316f
+ 86de/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Stadthaus Modernisierung UKV-Verkabelung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

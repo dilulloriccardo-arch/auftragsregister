@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2da19f9a-9087-48b6-81d1-eca1a27230fc-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Submission deadline: Layout und Druck Mitteilungsblatt "Gmeindsblat
+ t"
+DESCRIPTION:Public buyer: Gemeinde Kirchberg\nSubmission deadline: 15 Dec
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/2d
+ a19f9a-9087-48b6-81d1-eca1a27230fc/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/2da19f9a-9087-48b6-81d1-eca1a27230fc
+URL:https://auftragsregister.ch/en/auftrag/2da19f9a-9087-48b6-81d1-eca1a272
+ 30fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Layout und Druck Mitteilungsblatt "Gmeinds
+ blatt"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

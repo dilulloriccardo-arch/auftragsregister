@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9a8953b2-0321-41a6-a69e-142f3594cbec-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Submission deadline: Inhouse- und Tunnelrepeateranlagen
+DESCRIPTION:Public buyer: Kantonspolizei Bern\nSubmission deadline: 15 Dec
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/9a
+ 8953b2-0321-41a6-a69e-142f3594cbec/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/9a8953b2-0321-41a6-a69e-142f3594cbec
+URL:https://auftragsregister.ch/en/auftrag/9a8953b2-0321-41a6-a69e-142f3594
+ cbec/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Inhouse- und Tunnelrepeateranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

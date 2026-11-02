@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dfefc6f2-cf85-4ad0-8c93-8318d092a909-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : Wärmezentrale WN Leukerbad - BKP 248 Gebäude
+ automation
+DESCRIPTION:Acheteur public : IMION AG\nDélai de remise : 30.11.2026\,
+  23 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/
+ dfefc6f2-cf85-4ad0-8c93-8318d092a909/\nPublication officielle : https://
+ www.simap.ch/fr/project-detail/dfefc6f2-cf85-4ad0-8c93-8318d092a909
+URL:https://auftragsregister.ch/fr/auftrag/dfefc6f2-cf85-4ad0-8c93-8318d092
+ a909/
+LOCATION:Leukerbad
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wärmezentrale WN Leukerbad - BKP 248 Geb
+ äudeautomation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

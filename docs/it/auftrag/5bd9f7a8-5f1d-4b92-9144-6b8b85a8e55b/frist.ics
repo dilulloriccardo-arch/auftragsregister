@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5bd9f7a8-5f1d-4b92-9144-6b8b85a8e55b-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20270110T225900Z
+SUMMARY:Scadenza: Büromaterial
+DESCRIPTION:Ente pubblico: Staatskanzlei - Kompetenzzentrum für Publikatio
+ nsmedien (Drucksachen)\nScadenza: 10.01.2027\, 23:59\nNel registro: https:
+ //auftragsregister.ch/it/auftrag/5bd9f7a8-5f1d-4b92-9144-6b8b85a8e55b/\nPu
+ bblicazione ufficiale: https://www.simap.ch/it/project-detail/5bd9f7a8-5f1
+ d-4b92-9144-6b8b85a8e55b
+URL:https://auftragsregister.ch/it/auftrag/5bd9f7a8-5f1d-4b92-9144-6b8b85a8
+ e55b/
+LOCATION:Solothurn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Büromaterial
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:019fa006-fc62-490a-aff2-0953586d664e-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: BKP232 Starkstrominstallationen - Beringen\, Syntegon
+  Packaging Systems – Etappe 2 (PV)
+DESCRIPTION:Auftraggeber: Elektrizitätswerk des Kanton Schaffhausens AG\nE
+ ingabefrist: 14.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/019fa006-fc62-490a-aff2-0953586d664e/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/019fa006-fc62-490a-aff2-0953586d
+ 664e
+URL:https://auftragsregister.ch/de/auftrag/019fa006-fc62-490a-aff2-0953586d
+ 664e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP232 Starkstrominstallationen - Beringen\, Synt
+ egon Packaging Systems – Etappe 2 (PV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

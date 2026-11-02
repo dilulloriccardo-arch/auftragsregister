@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85cfcb4c-49ef-4fcb-b786-0357491ebe51-frist@auftragsregister.ch
+DTSTAMP:20261102T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Délai de remise : Werk- und Belagsreparaturen 2027\, Region Oste
+ n
+DESCRIPTION:Acheteur public : Verkehr und Infrastruktur (vif)\, zentras\,
+  Betrieb Strassen\nDélai de remise : 10.12.2026\, 23 h 59\nDans le 
+ registre : https://auftragsregister.ch/fr/auftrag/85cfcb4c-49ef-4fcb-b78
+ 6-0357491ebe51/\nPublication officielle : https://www.simap.ch/fr/projec
+ t-detail/85cfcb4c-49ef-4fcb-b786-0357491ebe51
+URL:https://auftragsregister.ch/fr/auftrag/85cfcb4c-49ef-4fcb-b786-0357491e
+ be51/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Werk- und Belagsreparaturen 2027\, Region 
+ Osten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
