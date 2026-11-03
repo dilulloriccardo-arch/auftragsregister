@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abff5184-d8e3-4292-b9fd-79e7ae98c2fc-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Submission deadline: Acacias 11 – Lot CVC
+DESCRIPTION:Public buyer: Services Industriels de Genève (SIG) Direction P
+ rojets Industriels et Solutions Digitales\nSubmission deadline: 30 Nov 2
+ 026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/abff5
+ 184-d8e3-4292-b9fd-79e7ae98c2fc/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/abff5184-d8e3-4292-b9fd-79e7ae98c2fc
+URL:https://auftragsregister.ch/en/auftrag/abff5184-d8e3-4292-b9fd-79e7ae98
+ c2fc/
+LOCATION:Route des Acacias 11
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Acacias 11 – Lot CVC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ea73f03-241b-438f-982a-54bfff11fa6f-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261203T140000Z
+SUMMARY:Submission deadline: Kirchgemeindehaus Wipkingen BKP 225 Spezielle 
+ Dichtungen und Dämmungen
+DESCRIPTION:Public buyer: Vollenweider Baurealisation GmbH\nSubmission dead
+ line: 3 Dec 2026\, 15:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/7ea73f03-241b-438f-982a-54bfff11fa6f/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/7ea73f03-241b-438f-982a-54bfff11fa6f
+URL:https://auftragsregister.ch/en/auftrag/7ea73f03-241b-438f-982a-54bfff11
+ fa6f/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kirchgemeindehaus Wipkingen BKP 225 Spezie
+ lle Dichtungen und Dämmungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:489d08ba-4f6a-4f11-bee4-53da3bb88ed5-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261130T133000Z
+SUMMARY:Délai de remise : Rückbau ARA Hornussen
+DESCRIPTION:Acheteur public : Gemeinde Böztal\nDélai de remise : 30.1
+ 1.2026\, 14 h 30\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/489d08ba-4f6a-4f11-bee4-53da3bb88ed5/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/489d08ba-4f6a-4f11-bee4-53da3bb88ed
+ 5
+URL:https://auftragsregister.ch/fr/auftrag/489d08ba-4f6a-4f11-bee4-53da3bb8
+ 8ed5/
+LOCATION:Hornussen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rückbau ARA Hornussen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

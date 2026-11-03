@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f6e8ea02-88cf-4320-96ad-97fad836dbe4-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Eingabefrist: Restaurierung und Umbau der Gebäude der Domaine des 
+ Faverges\, Vignobles de l'Etat de Fribourg
+DESCRIPTION:Auftraggeber: Etat de Fribourg - DIME - Service des bâtiments 
+ SBat\nEingabefrist: 15.12.2026\, 16.00 Uhr\nIm Register: https://auftrags
+ register.ch/de/auftrag/f6e8ea02-88cf-4320-96ad-97fad836dbe4/\nAmtliche Pub
+ likation: https://www.simap.ch/de/project-detail/f6e8ea02-88cf-4320-96ad-9
+ 7fad836dbe4
+URL:https://auftragsregister.ch/de/auftrag/f6e8ea02-88cf-4320-96ad-97fad836
+ dbe4/
+LOCATION:Saint-Saphorin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Restaurierung und Umbau der Gebäude der Domaine 
+ des Faverges\, Vignobles de l'Etat de Fribourg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

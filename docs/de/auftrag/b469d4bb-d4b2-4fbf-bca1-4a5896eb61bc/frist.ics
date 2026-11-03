@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b469d4bb-d4b2-4fbf-bca1-4a5896eb61bc-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261213T225900Z
+SUMMARY:Eingabefrist: ÖREB-Katasterbearbeitung 2028–2033
+DESCRIPTION:Auftraggeber: Amt für Raumentwicklung\nEingabefrist: 13.12.202
+ 6\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b469d4
+ bb-d4b2-4fbf-bca1-4a5896eb61bc/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/b469d4bb-d4b2-4fbf-bca1-4a5896eb61bc
+URL:https://auftragsregister.ch/de/auftrag/b469d4bb-d4b2-4fbf-bca1-4a5896eb
+ 61bc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ÖREB-Katasterbearbeitung 2028–2033
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

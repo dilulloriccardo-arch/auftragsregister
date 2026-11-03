@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a7b6723-3bdf-4679-b441-5ba17146dd26-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261202T100000Z
+SUMMARY:Scadenza: Grand-Champ - CFC 4 - Lot aménagements extérieurs
+DESCRIPTION:Ente pubblico: Ville de Gland - Service des bâtiments et de l'
+ Urbanisme\nScadenza: 02.12.2026\, 11:00\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/6a7b6723-3bdf-4679-b441-5ba17146dd26/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/6a7b6723-3bdf-4679-b441-5
+ ba17146dd26
+URL:https://auftragsregister.ch/it/auftrag/6a7b6723-3bdf-4679-b441-5ba17146
+ dd26/
+LOCATION:Gland
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Grand-Champ - CFC 4 - Lot aménagements extérieurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

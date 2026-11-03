@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4add305d-4f08-4e3e-b323-64f047ac7ce9-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261127T160000Z
+SUMMARY:Scadenza: Construction d’une bulle de tennis saisonnière
+DESCRIPTION:Ente pubblico: Commune de Plan-les-Ouates (Sportfloor Ingénier
+ ie SA)\nScadenza: 27.11.2026\, 17:00\nNel registro: https://auftragsregist
+ er.ch/it/auftrag/4add305d-4f08-4e3e-b323-64f047ac7ce9/\nPubblicazione uffi
+ ciale: https://www.simap.ch/it/project-detail/4add305d-4f08-4e3e-b323-64f0
+ 47ac7ce9
+URL:https://auftragsregister.ch/it/auftrag/4add305d-4f08-4e3e-b323-64f047ac
+ 7ce9/
+LOCATION:Plan-les-Ouates
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Construction d’une bulle de tennis saisonnière
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

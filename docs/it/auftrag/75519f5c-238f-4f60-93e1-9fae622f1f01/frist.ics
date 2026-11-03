@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:75519f5c-238f-4f60-93e1-9fae622f1f01-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Scadenza: Schulraumprovisorium OS Schöntal\, Uzwil\; BKP 213.2 Con
+ tainermodule
+DESCRIPTION:Ente pubblico: Gemeinde Uzwil\nScadenza: 04.12.2026\, 12:00\nNe
+ l registro: https://auftragsregister.ch/it/auftrag/75519f5c-238f-4f60-93e1
+ -9fae622f1f01/\nPubblicazione ufficiale: https://www.simap.ch/it/project-d
+ etail/75519f5c-238f-4f60-93e1-9fae622f1f01
+URL:https://auftragsregister.ch/it/auftrag/75519f5c-238f-4f60-93e1-9fae622f
+ 1f01/
+LOCATION:Niederuzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulraumprovisorium OS Schöntal\, Uzwil\; BKP 213.2
+  Containermodule
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

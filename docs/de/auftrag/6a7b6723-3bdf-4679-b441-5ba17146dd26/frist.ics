@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a7b6723-3bdf-4679-b441-5ba17146dd26-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261202T100000Z
+SUMMARY:Eingabefrist: Grand-Champ - CFC 4 - Lot aménagements extérieurs
+DESCRIPTION:Auftraggeber: Ville de Gland - Service des bâtiments et de l'U
+ rbanisme\nEingabefrist: 02.12.2026\, 11.00 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/6a7b6723-3bdf-4679-b441-5ba17146dd26/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/6a7b6723-3bdf-4679-b4
+ 41-5ba17146dd26
+URL:https://auftragsregister.ch/de/auftrag/6a7b6723-3bdf-4679-b441-5ba17146
+ dd26/
+LOCATION:Gland
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Grand-Champ - CFC 4 - Lot aménagements extérieu
+ rs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

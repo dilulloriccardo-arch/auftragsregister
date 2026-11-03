@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b7953d89-f634-4bd1-90c7-d94cede0895e-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Eingabefrist: Generalplanersubmission Neubau Tiefgarage Mitte (Schl
+ üechti)\, Weiningen
+DESCRIPTION:Auftraggeber: Gemeinde Weiningen\nEingabefrist: 18.12.2026\, 11
+ .00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b7953d89-f63
+ 4-4bd1-90c7-d94cede0895e/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/b7953d89-f634-4bd1-90c7-d94cede0895e
+URL:https://auftragsregister.ch/de/auftrag/b7953d89-f634-4bd1-90c7-d94cede0
+ 895e/
+LOCATION:Weiningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Generalplanersubmission Neubau Tiefgarage Mitte (
+ Schlüechti)\, Weiningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

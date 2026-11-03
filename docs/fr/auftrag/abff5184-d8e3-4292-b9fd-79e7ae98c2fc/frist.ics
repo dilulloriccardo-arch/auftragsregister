@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abff5184-d8e3-4292-b9fd-79e7ae98c2fc-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : Acacias 11 – Lot CVC
+DESCRIPTION:Acheteur public : Services Industriels de Genève (SIG) Direc
+ tion Projets Industriels et Solutions Digitales\nDélai de remise : 30.1
+ 1.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/abff5184-d8e3-4292-b9fd-79e7ae98c2fc/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/abff5184-d8e3-4292-b9fd-79e7ae98c2f
+ c
+URL:https://auftragsregister.ch/fr/auftrag/abff5184-d8e3-4292-b9fd-79e7ae98
+ c2fc/
+LOCATION:Route des Acacias 11
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acacias 11 – Lot CVC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

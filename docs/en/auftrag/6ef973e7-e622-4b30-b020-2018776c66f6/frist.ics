@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6ef973e7-e622-4b30-b020-2018776c66f6-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Submission deadline: Sanierung Kälte-/Eisbahntechnik inkl. Erweite
+ rung Technikgebäude
+DESCRIPTION:Public buyer: KuBa Freizeitcenter AG\nSubmission deadline: 2 D
+ ec 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 6ef973e7-e622-4b30-b020-2018776c66f6/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/6ef973e7-e622-4b30-b020-2018776c66f6
+URL:https://auftragsregister.ch/en/auftrag/6ef973e7-e622-4b30-b020-2018776c
+ 66f6/
+LOCATION:Rheinfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Kälte-/Eisbahntechnik inkl. Erw
+ eiterung Technikgebäude
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

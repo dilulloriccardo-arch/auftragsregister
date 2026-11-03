@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7de43257-eb30-4446-81ab-ec2d8ba6b0e4-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Scadenza: Lieferung Forstschlepper mit Anbaugeräten für das Waldr
+ evier Nord von Grün Stadt Zürich
+DESCRIPTION:Ente pubblico: TED - Grün Stadt Zürich (GSZ)\nScadenza: 30.11
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/7de432
+ 57-eb30-4446-81ab-ec2d8ba6b0e4/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/7de43257-eb30-4446-81ab-ec2d8ba6b0e4
+URL:https://auftragsregister.ch/it/auftrag/7de43257-eb30-4446-81ab-ec2d8ba6
+ b0e4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Lieferung Forstschlepper mit Anbaugeräten für das W
+ aldrevier Nord von Grün Stadt Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

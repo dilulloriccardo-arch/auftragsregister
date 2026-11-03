@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a07d209c-2c2d-42eb-8dc8-7eb7e177177e-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261203T140000Z
+SUMMARY:Scadenza: Kirchgemeindehaus Wipkingen BKP 281 Bodenbeläge aus Lino
+ leum und Schmutzschleusen
+DESCRIPTION:Ente pubblico: Vollenweider Baurealisation GmbH\nScadenza: 03.1
+ 2.2026\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/a07d2
+ 09c-2c2d-42eb-8dc8-7eb7e177177e/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/a07d209c-2c2d-42eb-8dc8-7eb7e177177e
+URL:https://auftragsregister.ch/it/auftrag/a07d209c-2c2d-42eb-8dc8-7eb7e177
+ 177e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kirchgemeindehaus Wipkingen BKP 281 Bodenbeläge aus 
+ Linoleum und Schmutzschleusen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

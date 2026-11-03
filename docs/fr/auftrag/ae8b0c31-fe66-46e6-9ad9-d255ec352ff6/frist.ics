@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ae8b0c31-fe66-46e6-9ad9-d255ec352ff6-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261203T090000Z
+SUMMARY:Délai de remise : Conversion du système SAP ECC vers SAP S4HANA
+  Private Cloud
+DESCRIPTION:Acheteur public : HYDRO Exploitation SA\nDélai de remise :
+  03.12.2026\, 10 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/ae8b0c31-fe66-46e6-9ad9-d255ec352ff6/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/ae8b0c31-fe66-46e6-9ad9-d255ec
+ 352ff6
+URL:https://auftragsregister.ch/fr/auftrag/ae8b0c31-fe66-46e6-9ad9-d255ec35
+ 2ff6/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Conversion du système SAP ECC vers SAP S4
+ HANA Private Cloud
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

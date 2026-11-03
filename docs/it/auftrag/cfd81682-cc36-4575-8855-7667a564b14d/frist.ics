@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfd81682-cc36-4575-8855-7667a564b14d-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Scadenza: Übersetzungen Deutsch\, Französisch und Englisch ins It
+ alienische 2026
+DESCRIPTION:Ente pubblico: Swissmedic\nScadenza: 14.12.2026\nNel registro: 
+ https://auftragsregister.ch/it/auftrag/cfd81682-cc36-4575-8855-7667a564b14
+ d/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/cfd816
+ 82-cc36-4575-8855-7667a564b14d
+URL:https://auftragsregister.ch/it/auftrag/cfd81682-cc36-4575-8855-7667a564
+ b14d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Übersetzungen Deutsch\, Französisch und Englisch in
+ s Italienische 2026
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d1e4fdf0-9675-4ceb-a0de-23e1473fb296-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Délai de remise : Côtes Saint-Maire à Paudex\, bâtiment D1 - 
+ Lot 1.2.2 - Installations de chauffage
+DESCRIPTION:Acheteur public : Commune de Paudex (Nicolas de Courten archi
+ tectes)\nDélai de remise : 14.12.2026\, 12 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/d1e4fdf0-9675-4ceb-a0de-23e147
+ 3fb296/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /d1e4fdf0-9675-4ceb-a0de-23e1473fb296
+URL:https://auftragsregister.ch/fr/auftrag/d1e4fdf0-9675-4ceb-a0de-23e1473f
+ b296/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Côtes Saint-Maire à Paudex\, bâtiment D
+ 1 - Lot 1.2.2 - Installations de chauffage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

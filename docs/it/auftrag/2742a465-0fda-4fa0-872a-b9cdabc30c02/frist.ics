@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2742a465-0fda-4fa0-872a-b9cdabc30c02-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261203T150000Z
+SUMMARY:Scadenza: Projet de mise en place d’un CLM (PKI)
+DESCRIPTION:Ente pubblico: Service Achat pour les marchés publics\nScadenz
+ a: 03.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/2742a465-0fda-4fa0-872a-b9cdabc30c02/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/2742a465-0fda-4fa0-872a-b9cdabc30c02
+URL:https://auftragsregister.ch/it/auftrag/2742a465-0fda-4fa0-872a-b9cdabc3
+ 0c02/
+LOCATION:Granges-Paccot
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Projet de mise en place d’un CLM (PKI)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

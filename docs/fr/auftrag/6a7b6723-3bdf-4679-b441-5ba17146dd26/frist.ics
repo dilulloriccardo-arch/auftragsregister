@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a7b6723-3bdf-4679-b441-5ba17146dd26-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261202T100000Z
+SUMMARY:Délai de remise : Grand-Champ - CFC 4 - Lot aménagements extér
+ ieurs
+DESCRIPTION:Acheteur public : Ville de Gland - Service des bâtiments et 
+ de l'Urbanisme\nDélai de remise : 02.12.2026\, 11 h 00\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/6a7b6723-3bdf-4679-b441-5
+ ba17146dd26/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/6a7b6723-3bdf-4679-b441-5ba17146dd26
+URL:https://auftragsregister.ch/fr/auftrag/6a7b6723-3bdf-4679-b441-5ba17146
+ dd26/
+LOCATION:Gland
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Grand-Champ - CFC 4 - Lot aménagements ex
+ térieurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8c274f98-bc3a-4105-ada5-5da1a25e6da5-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Eingabefrist: Construction de l'EPSM Chanella à Rossinière - CFC 
+ 23 INSTALLATIONS ELECTRIQUES
+DESCRIPTION:Auftraggeber: Fondation Cogest'ems (quartal)\nEingabefrist: 07.
+ 12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ 8c274f98-bc3a-4105-ada5-5da1a25e6da5/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/8c274f98-bc3a-4105-ada5-5da1a25e6da5
+URL:https://auftragsregister.ch/de/auftrag/8c274f98-bc3a-4105-ada5-5da1a25e
+ 6da5/
+LOCATION:Rossinière
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Construction de l'EPSM Chanella à Rossinière - 
+ CFC 23 INSTALLATIONS ELECTRIQUES
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

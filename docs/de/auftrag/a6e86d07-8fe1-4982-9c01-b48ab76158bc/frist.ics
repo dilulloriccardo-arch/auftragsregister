@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6e86d07-8fe1-4982-9c01-b48ab76158bc-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:1
+DTSTART:20261217T140000Z
+SUMMARY:Eingabefrist: 25-431 Technische Arbeitsstellenwarnung
+DESCRIPTION:Auftraggeber: SBB CFF FFS Infra-Bahntechnik\nEingabefrist: 17.1
+ 2.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a
+ 6e86d07-8fe1-4982-9c01-b48ab76158bc/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/a6e86d07-8fe1-4982-9c01-b48ab76158bc
+URL:https://auftragsregister.ch/de/auftrag/a6e86d07-8fe1-4982-9c01-b48ab761
+ 58bc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 25-431 Technische Arbeitsstellenwarnung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

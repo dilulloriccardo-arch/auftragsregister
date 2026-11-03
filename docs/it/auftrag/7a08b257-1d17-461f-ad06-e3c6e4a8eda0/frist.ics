@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7a08b257-1d17-461f-ad06-e3c6e4a8eda0-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261203T110000Z
+SUMMARY:Scadenza: Mobilfunk Dienstleistungen (Mobile-Abo 2027)
+DESCRIPTION:Ente pubblico: IT Services Zug AG\nScadenza: 03.12.2026\, 12:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/7a08b257-1d17-461f-
+ ad06-e3c6e4a8eda0/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/7a08b257-1d17-461f-ad06-e3c6e4a8eda0
+URL:https://auftragsregister.ch/it/auftrag/7a08b257-1d17-461f-ad06-e3c6e4a8
+ eda0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mobilfunk Dienstleistungen (Mobile-Abo 2027)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

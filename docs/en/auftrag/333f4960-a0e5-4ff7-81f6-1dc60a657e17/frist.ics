@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:333f4960-a0e5-4ff7-81f6-1dc60a657e17-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261214T103000Z
+SUMMARY:Submission deadline: BKP 228.3 Awnings\, Competence Center for Heal
+ th and Care\, Bahnhofstr.\, 6215 Beromünster
+DESCRIPTION:Public buyer: Pflegewohnheim Bärgmättli AG (christian müller
+  baumanagement ag)\nSubmission deadline: 14 Dec 2026\, 11:30\nIn the reg
+ ister: https://auftragsregister.ch/en/auftrag/333f4960-a0e5-4ff7-81f6-1dc6
+ 0a657e17/\nOfficial publication: https://www.simap.ch/en/project-detail/33
+ 3f4960-a0e5-4ff7-81f6-1dc60a657e17
+URL:https://auftragsregister.ch/en/auftrag/333f4960-a0e5-4ff7-81f6-1dc60a65
+ 7e17/
+LOCATION:Beromünster
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 228.3 Awnings\, Competence Center for 
+ Health and Care\, Bahnhofstr.\, 6215 Beromünster
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

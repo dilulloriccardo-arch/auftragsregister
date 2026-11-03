@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8949da5-b32b-4946-a784-c522de89cb0b-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Scadenza: Rahmenvertrag Smart Meter 2027 – 2032
+DESCRIPTION:Ente pubblico: St. Gallisch Appenzellische Kraftwerke AG (SAK)\
+ nScadenza: 04.01.2027\, 12:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/c8949da5-b32b-4946-a784-c522de89cb0b/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/c8949da5-b32b-4946-a784-c522de89cb0
+ b
+URL:https://auftragsregister.ch/it/auftrag/c8949da5-b32b-4946-a784-c522de89
+ cb0b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenvertrag Smart Meter 2027 – 2032
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

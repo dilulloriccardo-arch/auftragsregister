@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b7953d89-f634-4bd1-90c7-d94cede0895e-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Délai de remise : Generalplanersubmission Neubau Tiefgarage Mitt
+ e (Schlüechti)\, Weiningen
+DESCRIPTION:Acheteur public : Gemeinde Weiningen\nDélai de remise : 18
+ .12.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/b7953d89-f634-4bd1-90c7-d94cede0895e/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/b7953d89-f634-4bd1-90c7-d94cede08
+ 95e
+URL:https://auftragsregister.ch/fr/auftrag/b7953d89-f634-4bd1-90c7-d94cede0
+ 895e/
+LOCATION:Weiningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Generalplanersubmission Neubau Tiefgarage 
+ Mitte (Schlüechti)\, Weiningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

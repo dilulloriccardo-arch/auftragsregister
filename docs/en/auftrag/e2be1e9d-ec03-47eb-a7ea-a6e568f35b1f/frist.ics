@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2be1e9d-ec03-47eb-a7ea-a6e568f35b1f-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Submission deadline: Projet d’agglomération de 6e génération C
+ oude du Rhône (PA6)
+DESCRIPTION:Public buyer: Antenne Région Valais romand\nSubmission deadlin
+ e: 22 Dec 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/e2be1e9d-ec03-47eb-a7ea-a6e568f35b1f/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/e2be1e9d-ec03-47eb-a7ea-a6e568f35b1f
+URL:https://auftragsregister.ch/en/auftrag/e2be1e9d-ec03-47eb-a7ea-a6e568f3
+ 5b1f/
+LOCATION:Martigny
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Projet d’agglomération de 6e générati
+ on Coude du Rhône (PA6)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

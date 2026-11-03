@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a99f5428-f9f6-46fa-81b1-0c9395d3f79b-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20270115T100000Z
+SUMMARY:Scadenza: Fachlösung für Stipendien- und Studiendarlehensgesuche
+DESCRIPTION:Ente pubblico: Kanton St.Gallen\, Bildungsdepartement\nScadenza
+ : 15.01.2027\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag
+ /a99f5428-f9f6-46fa-81b1-0c9395d3f79b/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/a99f5428-f9f6-46fa-81b1-0c9395d3f79b
+URL:https://auftragsregister.ch/it/auftrag/a99f5428-f9f6-46fa-81b1-0c9395d3
+ f79b/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fachlösung für Stipendien- und Studiendarlehensgesu
+ che
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

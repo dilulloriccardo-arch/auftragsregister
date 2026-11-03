@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4add305d-4f08-4e3e-b323-64f047ac7ce9-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261127T160000Z
+SUMMARY:Submission deadline: Construction d’une bulle de tennis saisonni
+ ère
+DESCRIPTION:Public buyer: Commune de Plan-les-Ouates (Sportfloor Ingénieri
+ e SA)\nSubmission deadline: 27 Nov 2026\, 17:00\nIn the register: https:
+ //auftragsregister.ch/en/auftrag/4add305d-4f08-4e3e-b323-64f047ac7ce9/\nOf
+ ficial publication: https://www.simap.ch/en/project-detail/4add305d-4f08-4
+ e3e-b323-64f047ac7ce9
+URL:https://auftragsregister.ch/en/auftrag/4add305d-4f08-4e3e-b323-64f047ac
+ 7ce9/
+LOCATION:Plan-les-Ouates
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Construction d’une bulle de tennis saiso
+ nnière
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

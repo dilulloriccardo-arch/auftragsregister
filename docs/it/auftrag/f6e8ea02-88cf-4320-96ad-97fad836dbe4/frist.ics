@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f6e8ea02-88cf-4320-96ad-97fad836dbe4-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Scadenza: Restaurierung und Umbau der Gebäude der Domaine des Fave
+ rges\, Vignobles de l'Etat de Fribourg
+DESCRIPTION:Ente pubblico: Etat de Fribourg - DIME - Service des bâtiments
+  SBat\nScadenza: 15.12.2026\, 16:00\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/f6e8ea02-88cf-4320-96ad-97fad836dbe4/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/f6e8ea02-88cf-4320-96ad-97fad
+ 836dbe4
+URL:https://auftragsregister.ch/it/auftrag/f6e8ea02-88cf-4320-96ad-97fad836
+ dbe4/
+LOCATION:Saint-Saphorin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Restaurierung und Umbau der Gebäude der Domaine des 
+ Faverges\, Vignobles de l'Etat de Fribourg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

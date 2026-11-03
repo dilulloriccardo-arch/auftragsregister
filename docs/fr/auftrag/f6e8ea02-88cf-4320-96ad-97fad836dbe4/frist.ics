@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f6e8ea02-88cf-4320-96ad-97fad836dbe4-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Délai de remise : Restaurierung und Umbau der Gebäude der Domai
+ ne des Faverges\, Vignobles de l'Etat de Fribourg
+DESCRIPTION:Acheteur public : Etat de Fribourg - DIME - Service des bâti
+ ments SBat\nDélai de remise : 15.12.2026\, 16 h 00\nDans le registr
+ e : https://auftragsregister.ch/fr/auftrag/f6e8ea02-88cf-4320-96ad-97fad
+ 836dbe4/\nPublication officielle : https://www.simap.ch/fr/project-detai
+ l/f6e8ea02-88cf-4320-96ad-97fad836dbe4
+URL:https://auftragsregister.ch/fr/auftrag/f6e8ea02-88cf-4320-96ad-97fad836
+ dbe4/
+LOCATION:Saint-Saphorin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Restaurierung und Umbau der Gebäude der D
+ omaine des Faverges\, Vignobles de l'Etat de Fribourg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

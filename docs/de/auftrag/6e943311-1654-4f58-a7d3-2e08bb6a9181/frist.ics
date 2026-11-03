@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e943311-1654-4f58-a7d3-2e08bb6a9181-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:1
+DTSTART:20261126T090000Z
+SUMMARY:Eingabefrist: Climatiseurs mobiles
+DESCRIPTION:Auftraggeber: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nEingabefrist: 26.11.2026\, 10.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/6e943311-1654-4f58-a7d3-2e08bb6a9181/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/6e943311-16
+ 54-4f58-a7d3-2e08bb6a9181
+URL:https://auftragsregister.ch/de/auftrag/6e943311-1654-4f58-a7d3-2e08bb6a
+ 9181/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Climatiseurs mobiles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

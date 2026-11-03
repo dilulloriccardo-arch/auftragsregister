@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1dedc866-a9a0-44b6-9787-b520cae44831-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Scadenza: Construction de l'EPSM Chanella à Rossinière - CFC 201 
+ TERRASSEMENT - TS
+DESCRIPTION:Ente pubblico: Fondation Cogest'ems (quartal)\nScadenza: 07.12.
+ 2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/1dedc86
+ 6-a9a0-44b6-9787-b520cae44831/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/1dedc866-a9a0-44b6-9787-b520cae44831
+URL:https://auftragsregister.ch/it/auftrag/1dedc866-a9a0-44b6-9787-b520cae4
+ 4831/
+LOCATION:Rossinière
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Construction de l'EPSM Chanella à Rossinière - CFC 
+ 201 TERRASSEMENT - TS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

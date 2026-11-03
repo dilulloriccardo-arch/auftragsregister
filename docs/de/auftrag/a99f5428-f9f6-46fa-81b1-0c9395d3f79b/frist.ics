@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a99f5428-f9f6-46fa-81b1-0c9395d3f79b-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20270115T100000Z
+SUMMARY:Eingabefrist: Fachlösung für Stipendien- und Studiendarlehensgesu
+ che
+DESCRIPTION:Auftraggeber: Kanton St.Gallen\, Bildungsdepartement\nEingabefr
+ ist: 15.01.2027\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/a99f5428-f9f6-46fa-81b1-0c9395d3f79b/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/a99f5428-f9f6-46fa-81b1-0c9395d3f79b
+URL:https://auftragsregister.ch/de/auftrag/a99f5428-f9f6-46fa-81b1-0c9395d3
+ f79b/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fachlösung für Stipendien- und Studiendarlehens
+ gesuche
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

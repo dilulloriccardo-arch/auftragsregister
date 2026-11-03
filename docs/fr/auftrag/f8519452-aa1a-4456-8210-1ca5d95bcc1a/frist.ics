@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f8519452-aa1a-4456-8210-1ca5d95bcc1a-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Délai de remise : Rénovation école du Bosson - Lustrerie
+DESCRIPTION:Acheteur public : Ville d'Onex (Bureau d'architectes Burckhar
+ dt Architecture SA)\nDélai de remise : 15.12.2026\, 12 h 00\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/f8519452-aa1a-4456-8
+ 210-1ca5d95bcc1a/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/f8519452-aa1a-4456-8210-1ca5d95bcc1a
+URL:https://auftragsregister.ch/fr/auftrag/f8519452-aa1a-4456-8210-1ca5d95b
+ cc1a/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation école du Bosson - Lustrerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

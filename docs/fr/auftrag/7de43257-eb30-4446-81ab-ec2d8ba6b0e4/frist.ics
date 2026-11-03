@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7de43257-eb30-4446-81ab-ec2d8ba6b0e4-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Délai de remise : Livraison d'un tracteur forestier pour Grün S
+ tadt Zürich (GSZ)
+DESCRIPTION:Acheteur public : TED - Grün Stadt Zürich (GSZ)\nDélai de 
+ remise : 30.11.2026\, 12 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/7de43257-eb30-4446-81ab-ec2d8ba6b0e4/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/7de43257-eb30-4446-8
+ 1ab-ec2d8ba6b0e4
+URL:https://auftragsregister.ch/fr/auftrag/7de43257-eb30-4446-81ab-ec2d8ba6
+ b0e4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Livraison d'un tracteur forestier pour Gr
+ ün Stadt Zürich (GSZ)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

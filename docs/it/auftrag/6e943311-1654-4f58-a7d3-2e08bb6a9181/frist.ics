@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e943311-1654-4f58-a7d3-2e08bb6a9181-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:1
+DTSTART:20261126T090000Z
+SUMMARY:Scadenza: Climatiseurs mobiles
+DESCRIPTION:Ente pubblico: Centrale d'achats et d'ingénierie biomédicale 
+ Vaud-Genève (CAIB)\nScadenza: 26.11.2026\, 10:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/6e943311-1654-4f58-a7d3-2e08bb6a9181/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/6e943311-1654-4
+ f58-a7d3-2e08bb6a9181
+URL:https://auftragsregister.ch/it/auftrag/6e943311-1654-4f58-a7d3-2e08bb6a
+ 9181/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Climatiseurs mobiles
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

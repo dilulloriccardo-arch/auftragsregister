@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:24e90c5a-fd8b-4aaa-9992-7c0d26a87ed9-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261210T090000Z
+SUMMARY:Délai de remise : AMB/2026/07 - Fornitura nuovo software GIS
+DESCRIPTION:Acheteur public : Azienda Multiservizi Bellinzona (AMB)\nDél
+ ai de remise : 10.12.2026\, 10 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/24e90c5a-fd8b-4aaa-9992-7c0d26a87ed9/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/24e90c5a-fd8b-
+ 4aaa-9992-7c0d26a87ed9
+URL:https://auftragsregister.ch/fr/auftrag/24e90c5a-fd8b-4aaa-9992-7c0d26a8
+ 7ed9/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AMB/2026/07 - Fornitura nuovo software GIS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

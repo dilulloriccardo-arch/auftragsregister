@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:89a9ea1a-9ead-4e80-972c-4fca4a3d41ba-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261214T103000Z
+SUMMARY:Délai de remise : « Acquisition des livrets et étuis scolaires
+  officiels »
+DESCRIPTION:Acheteur public : Direction des achats et de la logistique (D
+ AL)\nDélai de remise : 14.12.2026\, 11 h 30\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/89a9ea1a-9ead-4e80-972c-4fca4a3d41ba
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/89a9e
+ a1a-9ead-4e80-972c-4fca4a3d41ba
+URL:https://auftragsregister.ch/fr/auftrag/89a9ea1a-9ead-4e80-972c-4fca4a3d
+ 41ba/
+LOCATION:Le Mont-sur-Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : « Acquisition des livrets et étuis scola
+ ires officiels »
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

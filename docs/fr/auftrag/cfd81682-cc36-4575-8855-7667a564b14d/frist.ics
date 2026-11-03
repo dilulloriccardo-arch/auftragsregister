@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfd81682-cc36-4575-8855-7667a564b14d-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Délai de remise : Traductions de l'allemand\, du français et de
+  l'anglais vers l'italien en 2026
+DESCRIPTION:Acheteur public : Swissmedic\nDélai de remise : 14.12.2026
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/cfd81682-cc3
+ 6-4575-8855-7667a564b14d/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/cfd81682-cc36-4575-8855-7667a564b14d
+URL:https://auftragsregister.ch/fr/auftrag/cfd81682-cc36-4575-8855-7667a564
+ b14d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Traductions de l'allemand\, du français e
+ t de l'anglais vers l'italien en 2026
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

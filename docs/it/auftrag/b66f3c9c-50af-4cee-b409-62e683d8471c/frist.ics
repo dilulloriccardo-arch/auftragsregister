@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b66f3c9c-50af-4cee-b409-62e683d8471c-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261214T130000Z
+SUMMARY:Scadenza: Concorso per la fornitura di Trasformatori di distribuzio
+ ne TRIFASE in olio da aprile.2027 a marzo.2029
+DESCRIPTION:Ente pubblico: Enertì SA\nScadenza: 14.12.2026\, 14:00\nNel re
+ gistro: https://auftragsregister.ch/it/auftrag/b66f3c9c-50af-4cee-b409-62e
+ 683d8471c/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detai
+ l/b66f3c9c-50af-4cee-b409-62e683d8471c
+URL:https://auftragsregister.ch/it/auftrag/b66f3c9c-50af-4cee-b409-62e683d8
+ 471c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso per la fornitura di Trasformatori di distrib
+ uzione TRIFASE in olio da aprile.2027 a marzo.2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

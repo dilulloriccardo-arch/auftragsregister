@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfd81682-cc36-4575-8855-7667a564b14d-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Eingabefrist: Übersetzungen Deutsch\, Französisch und Englisch in
+ s Italienische 2026
+DESCRIPTION:Auftraggeber: Swissmedic\nEingabefrist: 14.12.2026\nIm Register
+ : https://auftragsregister.ch/de/auftrag/cfd81682-cc36-4575-8855-7667a564b
+ 14d/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/cfd8168
+ 2-cc36-4575-8855-7667a564b14d
+URL:https://auftragsregister.ch/de/auftrag/cfd81682-cc36-4575-8855-7667a564
+ b14d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Übersetzungen Deutsch\, Französisch und Englisc
+ h ins Italienische 2026
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

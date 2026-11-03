@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a07d209c-2c2d-42eb-8dc8-7eb7e177177e-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261203T140000Z
+SUMMARY:Submission deadline: Kirchgemeindehaus Wipkingen BKP 281 Bodenbelä
+ ge aus Linoleum und Schmutzschleusen
+DESCRIPTION:Public buyer: Vollenweider Baurealisation GmbH\nSubmission dead
+ line: 3 Dec 2026\, 15:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/a07d209c-2c2d-42eb-8dc8-7eb7e177177e/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/a07d209c-2c2d-42eb-8dc8-7eb7e177177e
+URL:https://auftragsregister.ch/en/auftrag/a07d209c-2c2d-42eb-8dc8-7eb7e177
+ 177e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kirchgemeindehaus Wipkingen BKP 281 Bodenb
+ eläge aus Linoleum und Schmutzschleusen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

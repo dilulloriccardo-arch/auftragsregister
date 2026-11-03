@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1560eeab-728a-4f94-8840-537f284a52ed-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Submission deadline: Construction de l'EPSM Chanella à Rossinière
+  - CFC 112 DEFRICHAGE - DEMOLITION
+DESCRIPTION:Public buyer: Fondation Cogest'ems (quartal)\nSubmission deadli
+ ne: 7 Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/
+ auftrag/1560eeab-728a-4f94-8840-537f284a52ed/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/1560eeab-728a-4f94-8840-537f284a52ed
+URL:https://auftragsregister.ch/en/auftrag/1560eeab-728a-4f94-8840-537f284a
+ 52ed/
+LOCATION:Rossinière
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Construction de l'EPSM Chanella à Rossini
+ ère - CFC 112 DEFRICHAGE - DEMOLITION
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

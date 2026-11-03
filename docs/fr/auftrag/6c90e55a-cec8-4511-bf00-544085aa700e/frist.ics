@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c90e55a-cec8-4511-bf00-544085aa700e-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Délai de remise : Construction d’un nouvel ESE (Établissement
+  Socio-Éducatif) à Echichens - CFC 211.5 MACONNERIE - BETON ARME
+DESCRIPTION:Acheteur public : Fondation Cité Radieuse (quartal)\nDélai 
+ de remise : 07.12.2026\, 23 h 59\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/6c90e55a-cec8-4511-bf00-544085aa700e/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/6c90e55a-cec8-451
+ 1-bf00-544085aa700e
+URL:https://auftragsregister.ch/fr/auftrag/6c90e55a-cec8-4511-bf00-544085aa
+ 700e/
+LOCATION:Echichens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction d’un nouvel ESE (Établisse
+ ment Socio-Éducatif) à Echichens - CFC 211.5 MACONNERIE - BETON ARME
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

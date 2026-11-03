@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dc594582-8fc4-43a0-95a4-f74b8d996a63-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Délai de remise : Construction de l'EPSM Chanella à Rossinière
+  - CFC 242 INSTALLATIONS CHAUFFAGE
+DESCRIPTION:Acheteur public : Fondation Cogest'ems (quartal)\nDélai de r
+ emise : 07.12.2026\, 23 h 59\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/dc594582-8fc4-43a0-95a4-f74b8d996a63/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/dc594582-8fc4-43a0-95
+ a4-f74b8d996a63
+URL:https://auftragsregister.ch/fr/auftrag/dc594582-8fc4-43a0-95a4-f74b8d99
+ 6a63/
+LOCATION:Rossinière
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction de l'EPSM Chanella à Rossini
+ ère - CFC 242 INSTALLATIONS CHAUFFAGE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

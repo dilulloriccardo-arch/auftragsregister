@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0738923f-be85-49bc-b36e-6c334a6154ed-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Scadenza: Rénovation/Transformation du CID de Malley / Charpente m
+ étal
+DESCRIPTION:Ente pubblico: Ville de Lausanne - Service de la propreté urba
+ ine (Architram)\nScadenza: 18.12.2026\, 11:00\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/0738923f-be85-49bc-b36e-6c334a6154ed/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/0738923f-be85-49bc-
+ b36e-6c334a6154ed
+URL:https://auftragsregister.ch/it/auftrag/0738923f-be85-49bc-b36e-6c334a61
+ 54ed/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rénovation/Transformation du CID de Malley / Charpen
+ te métal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

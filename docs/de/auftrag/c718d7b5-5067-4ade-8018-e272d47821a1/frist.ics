@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c718d7b5-5067-4ade-8018-e272d47821a1-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261123T160000Z
+SUMMARY:Eingabefrist: Hochwasserschutz Riedbach\, Regensberg
+DESCRIPTION:Auftraggeber: Gemeinde Regensberg (Müller Ingenieure AG)\nEing
+ abefrist: 23.11.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/c718d7b5-5067-4ade-8018-e272d47821a1/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/c718d7b5-5067-4ade-8018-e272d47821a
+ 1
+URL:https://auftragsregister.ch/de/auftrag/c718d7b5-5067-4ade-8018-e272d478
+ 21a1/
+LOCATION:Regensberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Hochwasserschutz Riedbach\, Regensberg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2be1e9d-ec03-47eb-a7ea-a6e568f35b1f-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Eingabefrist: Projet d’agglomération de 6e génération Coude du
+  Rhône (PA6)
+DESCRIPTION:Auftraggeber: Antenne Région Valais romand\nEingabefrist: 22.1
+ 2.2026\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e
+ 2be1e9d-ec03-47eb-a7ea-a6e568f35b1f/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/e2be1e9d-ec03-47eb-a7ea-a6e568f35b1f
+URL:https://auftragsregister.ch/de/auftrag/e2be1e9d-ec03-47eb-a7ea-a6e568f3
+ 5b1f/
+LOCATION:Martigny
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projet d’agglomération de 6e génération Coud
+ e du Rhône (PA6)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

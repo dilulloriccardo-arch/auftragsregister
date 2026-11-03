@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7de43257-eb30-4446-81ab-ec2d8ba6b0e4-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261130T110000Z
+SUMMARY:Submission deadline: Lieferung Forstschlepper mit Anbaugeräten fü
+ r das Waldrevier Nord von Grün Stadt Zürich
+DESCRIPTION:Public buyer: TED - Grün Stadt Zürich (GSZ)\nSubmission deadl
+ ine: 30 Nov 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/7de43257-eb30-4446-81ab-ec2d8ba6b0e4/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/7de43257-eb30-4446-81ab-ec2d8ba6b0e4
+URL:https://auftragsregister.ch/en/auftrag/7de43257-eb30-4446-81ab-ec2d8ba6
+ b0e4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Lieferung Forstschlepper mit Anbaugeräten
+  für das Waldrevier Nord von Grün Stadt Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

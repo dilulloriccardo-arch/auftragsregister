@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b469d4bb-d4b2-4fbf-bca1-4a5896eb61bc-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261213T225900Z
+SUMMARY:Délai de remise : ÖREB-Katasterbearbeitung 2028–2033
+DESCRIPTION:Acheteur public : Amt für Raumentwicklung\nDélai de remise
+  : 13.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/b469d4bb-d4b2-4fbf-bca1-4a5896eb61bc/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/b469d4bb-d4b2-4fbf-bca1-4a
+ 5896eb61bc
+URL:https://auftragsregister.ch/fr/auftrag/b469d4bb-d4b2-4fbf-bca1-4a5896eb
+ 61bc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ÖREB-Katasterbearbeitung 2028–2033
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

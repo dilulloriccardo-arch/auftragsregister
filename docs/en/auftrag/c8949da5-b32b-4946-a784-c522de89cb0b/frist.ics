@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8949da5-b32b-4946-a784-c522de89cb0b-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Submission deadline: Rahmenvertrag Smart Meter 2027 – 2032
+DESCRIPTION:Public buyer: St. Gallisch Appenzellische Kraftwerke AG (SAK)\n
+ Submission deadline: 4 Jan 2027\, 12:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/c8949da5-b32b-4946-a784-c522de89cb0b/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/c8949da5-b32b-4946-a784
+ -c522de89cb0b
+URL:https://auftragsregister.ch/en/auftrag/c8949da5-b32b-4946-a784-c522de89
+ cb0b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rahmenvertrag Smart Meter 2027 – 2032
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

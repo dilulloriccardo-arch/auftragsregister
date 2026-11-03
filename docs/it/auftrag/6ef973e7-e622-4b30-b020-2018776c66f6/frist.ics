@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6ef973e7-e622-4b30-b020-2018776c66f6-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Scadenza: Sanierung Kälte-/Eisbahntechnik inkl. Erweiterung Techni
+ kgebäude
+DESCRIPTION:Ente pubblico: KuBa Freizeitcenter AG\nScadenza: 02.12.2026\, 1
+ 2:00\nNel registro: https://auftragsregister.ch/it/auftrag/6ef973e7-e622-4
+ b30-b020-2018776c66f6/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/6ef973e7-e622-4b30-b020-2018776c66f6
+URL:https://auftragsregister.ch/it/auftrag/6ef973e7-e622-4b30-b020-2018776c
+ 66f6/
+LOCATION:Rheinfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Kälte-/Eisbahntechnik inkl. Erweiterung Te
+ chnikgebäude
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:21a4c26d-b11e-4f26-94bd-9483e21ca6ef-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261208T150000Z
+SUMMARY:Eingabefrist: DAO Service de blanchisserie SISP
+DESCRIPTION:Auftraggeber: Ville de Lausanne - Service de l'inclusion et des
+  actions sociales de proximité (SISP)\nEingabefrist: 08.12.2026\, 16.00 
+ Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/21a4c26d-b11e-4f2
+ 6-94bd-9483e21ca6ef/\nAmtliche Publikation: https://www.simap.ch/de/projec
+ t-detail/21a4c26d-b11e-4f26-94bd-9483e21ca6ef
+URL:https://auftragsregister.ch/de/auftrag/21a4c26d-b11e-4f26-94bd-9483e21c
+ a6ef/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: DAO Service de blanchisserie SISP
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

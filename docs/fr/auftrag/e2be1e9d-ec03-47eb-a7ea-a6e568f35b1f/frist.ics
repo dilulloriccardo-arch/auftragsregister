@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2be1e9d-ec03-47eb-a7ea-a6e568f35b1f-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Délai de remise : Projet d’agglomération de 6e génération C
+ oude du Rhône (PA6)
+DESCRIPTION:Acheteur public : Antenne Région Valais romand\nDélai de re
+ mise : 22.12.2026\, 10 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/e2be1e9d-ec03-47eb-a7ea-a6e568f35b1f/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/e2be1e9d-ec03-47eb-a7e
+ a-a6e568f35b1f
+URL:https://auftragsregister.ch/fr/auftrag/e2be1e9d-ec03-47eb-a7ea-a6e568f3
+ 5b1f/
+LOCATION:Martigny
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Projet d’agglomération de 6e générati
+ on Coude du Rhône (PA6)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

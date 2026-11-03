@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4add305d-4f08-4e3e-b323-64f047ac7ce9-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261127T160000Z
+SUMMARY:Délai de remise : Construction d’une bulle de tennis saisonni
+ ère
+DESCRIPTION:Acheteur public : Commune de Plan-les-Ouates (Sportfloor Ing
+ énierie SA)\nDélai de remise : 27.11.2026\, 17 h 00\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/4add305d-4f08-4e3e-b323-64f
+ 047ac7ce9/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/4add305d-4f08-4e3e-b323-64f047ac7ce9
+URL:https://auftragsregister.ch/fr/auftrag/4add305d-4f08-4e3e-b323-64f047ac
+ 7ce9/
+LOCATION:Plan-les-Ouates
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction d’une bulle de tennis saiso
+ nnière
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

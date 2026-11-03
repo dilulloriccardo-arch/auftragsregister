@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ae8b0c31-fe66-46e6-9ad9-d255ec352ff6-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261203T090000Z
+SUMMARY:Eingabefrist: Conversion du système SAP ECC vers SAP S4HANA Privat
+ e Cloud
+DESCRIPTION:Auftraggeber: HYDRO Exploitation SA\nEingabefrist: 03.12.2026\,
+  10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ae8b0c31-
+ fe66-46e6-9ad9-d255ec352ff6/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/ae8b0c31-fe66-46e6-9ad9-d255ec352ff6
+URL:https://auftragsregister.ch/de/auftrag/ae8b0c31-fe66-46e6-9ad9-d255ec35
+ 2ff6/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Conversion du système SAP ECC vers SAP S4HANA Pr
+ ivate Cloud
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

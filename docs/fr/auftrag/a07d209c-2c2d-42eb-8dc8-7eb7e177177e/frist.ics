@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a07d209c-2c2d-42eb-8dc8-7eb7e177177e-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261203T140000Z
+SUMMARY:Délai de remise : Kirchgemeindehaus Wipkingen CFC 281
+DESCRIPTION:Acheteur public : Vollenweider Baurealisation GmbH\nDélai de
+  remise : 03.12.2026\, 15 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/a07d209c-2c2d-42eb-8dc8-7eb7e177177e/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/a07d209c-2c2d-42eb-
+ 8dc8-7eb7e177177e
+URL:https://auftragsregister.ch/fr/auftrag/a07d209c-2c2d-42eb-8dc8-7eb7e177
+ 177e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kirchgemeindehaus Wipkingen CFC 281
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

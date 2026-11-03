@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ae8b0c31-fe66-46e6-9ad9-d255ec352ff6-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART:20261203T090000Z
+SUMMARY:Scadenza: Conversion du système SAP ECC vers SAP S4HANA Private Cl
+ oud
+DESCRIPTION:Ente pubblico: HYDRO Exploitation SA\nScadenza: 03.12.2026\, 10
+ :00\nNel registro: https://auftragsregister.ch/it/auftrag/ae8b0c31-fe66-46
+ e6-9ad9-d255ec352ff6/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/ae8b0c31-fe66-46e6-9ad9-d255ec352ff6
+URL:https://auftragsregister.ch/it/auftrag/ae8b0c31-fe66-46e6-9ad9-d255ec35
+ 2ff6/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Conversion du système SAP ECC vers SAP S4HANA Privat
+ e Cloud
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

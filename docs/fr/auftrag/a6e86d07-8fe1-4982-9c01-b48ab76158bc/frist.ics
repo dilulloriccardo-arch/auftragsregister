@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6e86d07-8fe1-4982-9c01-b48ab76158bc-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:1
+DTSTART:20261217T140000Z
+SUMMARY:Délai de remise : 25-431 Avertissement technique pour chantiers
+DESCRIPTION:Acheteur public : SBB CFF FFS Infra-Bahntechnik\nDélai de re
+ mise : 17.12.2026\, 15 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/a6e86d07-8fe1-4982-9c01-b48ab76158bc/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/a6e86d07-8fe1-4982-9c0
+ 1-b48ab76158bc
+URL:https://auftragsregister.ch/fr/auftrag/a6e86d07-8fe1-4982-9c01-b48ab761
+ 58bc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 25-431 Avertissement technique pour chanti
+ ers
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

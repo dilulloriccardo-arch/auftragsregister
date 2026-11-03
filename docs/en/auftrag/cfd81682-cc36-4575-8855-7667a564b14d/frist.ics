@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfd81682-cc36-4575-8855-7667a564b14d-frist@auftragsregister.ch
+DTSTAMP:20261103T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Submission deadline: Übersetzungen Deutsch\, Französisch und Engl
+ isch ins Italienische 2026
+DESCRIPTION:Public buyer: Swissmedic\nSubmission deadline: 14 Dec 2026\nI
+ n the register: https://auftragsregister.ch/en/auftrag/cfd81682-cc36-4575-
+ 8855-7667a564b14d/\nOfficial publication: https://www.simap.ch/en/project-
+ detail/cfd81682-cc36-4575-8855-7667a564b14d
+URL:https://auftragsregister.ch/en/auftrag/cfd81682-cc36-4575-8855-7667a564
+ b14d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Übersetzungen Deutsch\, Französisch und 
+ Englisch ins Italienische 2026
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
