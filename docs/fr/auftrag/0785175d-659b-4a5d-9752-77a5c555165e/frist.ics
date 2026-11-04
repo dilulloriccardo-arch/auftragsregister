@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0785175d-659b-4a5d-9752-77a5c555165e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Délai de remise : Relevé périodique des données du trafic 202
+ 7-2029
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 04.12.2026\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/0785175d-659b-4a5d-9752-77a5c555165e/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/0785175d-659b-4a5d-9752-
+ 77a5c555165e
+URL:https://auftragsregister.ch/fr/auftrag/0785175d-659b-4a5d-9752-77a5c555
+ 165e/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Relevé périodique des données du trafic
+  2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

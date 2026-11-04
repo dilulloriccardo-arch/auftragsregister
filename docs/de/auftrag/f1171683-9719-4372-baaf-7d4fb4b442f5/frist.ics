@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f1171683-9719-4372-baaf-7d4fb4b442f5-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Eingabefrist: Copie Copie Projet d'extension du collège de Montreu
+ x-Est : CFC 224.1 Etanchéité
+DESCRIPTION:Auftraggeber: Commune de Montreux\, Service des domaines et bâ
+ timents\, sport (EMCO Partenaires SA)\nEingabefrist: 15.12.2026\, 12.00 U
+ hr\nIm Register: https://auftragsregister.ch/de/auftrag/f1171683-9719-4372
+ -baaf-7d4fb4b442f5/\nAmtliche Publikation: https://www.simap.ch/de/project
+ -detail/f1171683-9719-4372-baaf-7d4fb4b442f5
+URL:https://auftragsregister.ch/de/auftrag/f1171683-9719-4372-baaf-7d4fb4b4
+ 42f5/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Copie Copie Projet d'extension du collège de Mon
+ treux-Est : CFC 224.1 Etanchéité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

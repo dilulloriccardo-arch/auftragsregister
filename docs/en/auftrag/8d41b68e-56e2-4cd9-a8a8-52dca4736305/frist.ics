@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8d41b68e-56e2-4cd9-a8a8-52dca4736305-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Submission deadline: Tender BKP 215 Scaffolding
+DESCRIPTION:Public buyer: Wohnen und Pflege Peteracker AG\nSubmission deadl
+ ine: 16 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/8d41b68e-56e2-4cd9-a8a8-52dca4736305/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/8d41b68e-56e2-4cd9-a8a8-52dca4736305
+URL:https://auftragsregister.ch/en/auftrag/8d41b68e-56e2-4cd9-a8a8-52dca473
+ 6305/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tender BKP 215 Scaffolding
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

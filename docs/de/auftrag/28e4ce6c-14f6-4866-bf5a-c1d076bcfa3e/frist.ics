@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28e4ce6c-14f6-4866-bf5a-c1d076bcfa3e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:1
+DTSTART:20270113T150000Z
+SUMMARY:Eingabefrist: Campus Horw\, Realisierung Erneuerung und Erweiterung
+  BKP 261 Aufzüge
+DESCRIPTION:Auftraggeber: Kanton Luzern\, Dienststelle Immobilien\nEingabef
+ rist: 13.01.2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/28e4ce6c-14f6-4866-bf5a-c1d076bcfa3e/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/28e4ce6c-14f6-4866-bf5a-c1d076bcfa3e
+URL:https://auftragsregister.ch/de/auftrag/28e4ce6c-14f6-4866-bf5a-c1d076bc
+ fa3e/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Campus Horw\, Realisierung Erneuerung und Erweite
+ rung BKP 261 Aufzüge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1d452644-3863-4bbb-b1ea-98f8d6f9d204-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Submission deadline: Schulraumplanung Sarmenstorf\, 5614 Sarmenstor
+ f / BKP 421 Gartenbauarbeiten
+DESCRIPTION:Public buyer: Gemeinde Sarmenstorf\nSubmission deadline: 4 Dec
+  2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/1d
+ 452644-3863-4bbb-b1ea-98f8d6f9d204/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/1d452644-3863-4bbb-b1ea-98f8d6f9d204
+URL:https://auftragsregister.ch/en/auftrag/1d452644-3863-4bbb-b1ea-98f8d6f9
+ d204/
+LOCATION:Sarmenstorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schulraumplanung Sarmenstorf\, 5614 Sarmen
+ storf / BKP 421 Gartenbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

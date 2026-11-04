@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e80f560a-ad6d-4214-90f1-0d55003aa2c7-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270119T100000Z
+SUMMARY:Submission deadline: Rénovation Grand Hangar (GH) - Planificateur 
+ Général
+DESCRIPTION:Public buyer: Genève Aéroport\nSubmission deadline: 19 Jan 
+ 2027\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/e80f
+ 560a-ad6d-4214-90f1-0d55003aa2c7/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/e80f560a-ad6d-4214-90f1-0d55003aa2c7
+URL:https://auftragsregister.ch/en/auftrag/e80f560a-ad6d-4214-90f1-0d55003a
+ a2c7/
+LOCATION:GENEVE 15
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rénovation Grand Hangar (GH) - Planificat
+ eur Général
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

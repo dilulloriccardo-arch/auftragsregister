@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f3599b36-ddc1-4882-ad50-f3e27d54d627-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Submission deadline: Rénovation école du Bosson - Portes intérie
+ ures en métal
+DESCRIPTION:Public buyer: Ville d'Onex (Bureau d'architectes Burckhardt Arc
+ hitecture SA)\nSubmission deadline: 16 Dec 2026\nIn the register: https:
+ //auftragsregister.ch/en/auftrag/f3599b36-ddc1-4882-ad50-f3e27d54d627/\nOf
+ ficial publication: https://www.simap.ch/en/project-detail/f3599b36-ddc1-4
+ 882-ad50-f3e27d54d627
+URL:https://auftragsregister.ch/en/auftrag/f3599b36-ddc1-4882-ad50-f3e27d54
+ d627/
+LOCATION:Onex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rénovation école du Bosson - Portes int
+ érieures en métal
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

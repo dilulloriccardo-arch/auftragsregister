@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7061f6ce-d554-4b53-9765-fb4e4ecd2aaf-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261204T150000Z
+SUMMARY:Eingabefrist: Huberstrasse 18/20\, Gesamtsanierung\, BKP 250 Sanit
+ äranlagen
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 04.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/7061f6ce-d554-4b53-9765-fb4e4ecd2aaf/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/7061f6ce-d554-4b53-9765-fb4e4ecd2aaf
+URL:https://auftragsregister.ch/de/auftrag/7061f6ce-d554-4b53-9765-fb4e4ecd
+ 2aaf/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Huberstrasse 18/20\, Gesamtsanierung\, BKP 250 Sa
+ nitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

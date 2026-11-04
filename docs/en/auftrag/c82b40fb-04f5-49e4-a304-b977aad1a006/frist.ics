@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c82b40fb-04f5-49e4-a304-b977aad1a006-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Submission deadline: Tender BKP 211 Masonry and Concrete Works
+DESCRIPTION:Public buyer: Wohnen und Pflege Peteracker AG\nSubmission deadl
+ ine: 16 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/c82b40fb-04f5-49e4-a304-b977aad1a006/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/c82b40fb-04f5-49e4-a304-b977aad1a006
+URL:https://auftragsregister.ch/en/auftrag/c82b40fb-04f5-49e4-a304-b977aad1
+ a006/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tender BKP 211 Masonry and Concrete Works
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

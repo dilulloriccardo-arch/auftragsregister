@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a05a73de-4017-46af-a9f7-ace02d1c1262-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Submission deadline: Copie Projet d'extension du collège de Montre
+ ux-Est : CFC 281.6 Carrelages
+DESCRIPTION:Public buyer: Commune de Montreux\, Service des domaines et bâ
+ timents\, sport (EMCO Partenaires SA)\nSubmission deadline: 15 Dec 2026\
+ , 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/a05a73de-
+ 4017-46af-a9f7-ace02d1c1262/\nOfficial publication: https://www.simap.ch/e
+ n/project-detail/a05a73de-4017-46af-a9f7-ace02d1c1262
+URL:https://auftragsregister.ch/en/auftrag/a05a73de-4017-46af-a9f7-ace02d1c
+ 1262/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Copie Projet d'extension du collège de Mo
+ ntreux-Est : CFC 281.6 Carrelages
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

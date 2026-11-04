@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0698e470-f74e-44dd-8595-df891070e610-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Eingabefrist: BKP 273.0 Innentüren aus Holz
+DESCRIPTION:Auftraggeber: Schulgemeinde Kreuzlingen\nEingabefrist: 11.12.20
+ 26\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0698e
+ 470-f74e-44dd-8595-df891070e610/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/0698e470-f74e-44dd-8595-df891070e610
+URL:https://auftragsregister.ch/de/auftrag/0698e470-f74e-44dd-8595-df891070
+ e610/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 273.0 Innentüren aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

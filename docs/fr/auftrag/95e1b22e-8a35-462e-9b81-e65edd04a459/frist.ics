@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95e1b22e-8a35-462e-9b81-e65edd04a459-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Délai de remise : Gare des Eaux-Vives (2378TI) revêtement de pa
+ rois en bois salle de sports et salle de musique
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 16.12.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/95e1b22e-8a35-462e-9b81-e65edd04a45
+ 9/\nPublication officielle : https://www.simap.ch/fr/project-detail/95e1
+ b22e-8a35-462e-9b81-e65edd04a459
+URL:https://auftragsregister.ch/fr/auftrag/95e1b22e-8a35-462e-9b81-e65edd04
+ a459/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gare des Eaux-Vives (2378TI) revêtement d
+ e parois en bois salle de sports et salle de musique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

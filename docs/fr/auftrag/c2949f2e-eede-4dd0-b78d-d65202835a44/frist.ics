@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c2949f2e-eede-4dd0-b78d-d65202835a44-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261217T160000Z
+SUMMARY:Délai de remise : Rahmenverträge Schliessanlagen der städtisch
+ en Schulanlagen
+DESCRIPTION:Acheteur public : HBD - Immobilien Stadt Zürich (IMMO)\nDél
+ ai de remise : 17.12.2026\, 17 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/c2949f2e-eede-4dd0-b78d-d65202835a44/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/c2949f2e-eede-
+ 4dd0-b78d-d65202835a44
+URL:https://auftragsregister.ch/fr/auftrag/c2949f2e-eede-4dd0-b78d-d6520283
+ 5a44/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rahmenverträge Schliessanlagen der städt
+ ischen Schulanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

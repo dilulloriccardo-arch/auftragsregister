@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9dc6d31d-d31e-44df-a651-abe6f2ab269e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Délai de remise : Ausschreibung BKP 240 Heizung
+DESCRIPTION:Acheteur public : Wohnen und Pflege Peteracker AG\nDélai de 
+ remise : 16.12.2026\, 12 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/9dc6d31d-d31e-44df-a651-abe6f2ab269e/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/9dc6d31d-d31e-44df-a
+ 651-abe6f2ab269e
+URL:https://auftragsregister.ch/fr/auftrag/9dc6d31d-d31e-44df-a651-abe6f2ab
+ 269e/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung BKP 240 Heizung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

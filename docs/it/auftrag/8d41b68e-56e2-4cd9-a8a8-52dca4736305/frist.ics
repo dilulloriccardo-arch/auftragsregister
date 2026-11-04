@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8d41b68e-56e2-4cd9-a8a8-52dca4736305-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Scadenza: Ausschreibung BKP 215 Gerüstung
+DESCRIPTION:Ente pubblico: Wohnen und Pflege Peteracker AG\nScadenza: 16.12
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/8d41b6
+ 8e-56e2-4cd9-a8a8-52dca4736305/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/8d41b68e-56e2-4cd9-a8a8-52dca4736305
+URL:https://auftragsregister.ch/it/auftrag/8d41b68e-56e2-4cd9-a8a8-52dca473
+ 6305/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung BKP 215 Gerüstung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

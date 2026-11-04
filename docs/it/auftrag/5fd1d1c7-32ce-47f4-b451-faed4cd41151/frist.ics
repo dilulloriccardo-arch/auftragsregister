@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5fd1d1c7-32ce-47f4-b451-faed4cd41151-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261218T110000Z
+SUMMARY:Scadenza: Transports scolaires
+DESCRIPTION:Ente pubblico: Commune de Lutry (Hymexia Sàrl)\nScadenza: 18.1
+ 2.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/5fd1d
+ 1c7-32ce-47f4-b451-faed4cd41151/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/5fd1d1c7-32ce-47f4-b451-faed4cd41151
+URL:https://auftragsregister.ch/it/auftrag/5fd1d1c7-32ce-47f4-b451-faed4cd4
+ 1151/
+LOCATION:Lutry
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Transports scolaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

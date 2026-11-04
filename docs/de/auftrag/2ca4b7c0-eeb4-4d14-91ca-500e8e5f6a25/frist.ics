@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2ca4b7c0-eeb4-4d14-91ca-500e8e5f6a25-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270118T225900Z
+SUMMARY:Eingabefrist: ERP-Lösung Identitas AG
+DESCRIPTION:Auftraggeber: Identitas AG\nEingabefrist: 18.01.2027\, 23.59 U
+ hr\nIm Register: https://auftragsregister.ch/de/auftrag/2ca4b7c0-eeb4-4d14
+ -91ca-500e8e5f6a25/\nAmtliche Publikation: https://www.simap.ch/de/project
+ -detail/2ca4b7c0-eeb4-4d14-91ca-500e8e5f6a25
+URL:https://auftragsregister.ch/de/auftrag/2ca4b7c0-eeb4-4d14-91ca-500e8e5f
+ 6a25/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ERP-Lösung Identitas AG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

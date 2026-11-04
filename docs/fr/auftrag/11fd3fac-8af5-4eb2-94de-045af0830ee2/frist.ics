@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:11fd3fac-8af5-4eb2-94de-045af0830ee2-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Délai de remise : BKP 273.1 Wandschränke
+DESCRIPTION:Acheteur public : Schulgemeinde Kreuzlingen\nDélai de remise
+  : 11.12.2026\, 12 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/11fd3fac-8af5-4eb2-94de-045af0830ee2/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/11fd3fac-8af5-4eb2-94de-04
+ 5af0830ee2
+URL:https://auftragsregister.ch/fr/auftrag/11fd3fac-8af5-4eb2-94de-045af083
+ 0ee2/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 273.1 Wandschränke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

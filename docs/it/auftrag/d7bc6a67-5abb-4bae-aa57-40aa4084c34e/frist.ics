@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d7bc6a67-5abb-4bae-aa57-40aa4084c34e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Scadenza: Schulanlage Zelgli\, Neubau\, BKP 214 Montagebau in Holz
+DESCRIPTION:Ente pubblico: Stadt Schlieren\, Bereich Liegenschaften\nScaden
+ za: 14.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/d7bc6a67-5abb-4bae-aa57-40aa4084c34e/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/d7bc6a67-5abb-4bae-aa57-40aa4084c34e
+URL:https://auftragsregister.ch/it/auftrag/d7bc6a67-5abb-4bae-aa57-40aa4084
+ c34e/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulanlage Zelgli\, Neubau\, BKP 214 Montagebau in H
+ olz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

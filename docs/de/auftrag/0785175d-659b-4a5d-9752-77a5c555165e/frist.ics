@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0785175d-659b-4a5d-9752-77a5c555165e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Eingabefrist: Periodische Verkehrsdatenerhebung 2027-2029
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 04.12.
+ 2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/078
+ 5175d-659b-4a5d-9752-77a5c555165e/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/0785175d-659b-4a5d-9752-77a5c555165e
+URL:https://auftragsregister.ch/de/auftrag/0785175d-659b-4a5d-9752-77a5c555
+ 165e/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Periodische Verkehrsdatenerhebung 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

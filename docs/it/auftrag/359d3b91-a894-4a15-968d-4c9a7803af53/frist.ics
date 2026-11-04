@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:359d3b91-a894-4a15-968d-4c9a7803af53-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Scadenza: Côtes Saint-Maire à Paudex\, bâtiment D1 - Lot 1.1.1 -
+  Travaux préparatoires\, démolition\, travaux spéciaux\, terrassement
+DESCRIPTION:Ente pubblico: Commune de Paudex (Nicolas de Courten architecte
+ s)\nScadenza: 14.12.2026\, 12:00\nNel registro: https://auftragsregister.c
+ h/it/auftrag/359d3b91-a894-4a15-968d-4c9a7803af53/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/359d3b91-a894-4a15-968d-4c9a7803
+ af53
+URL:https://auftragsregister.ch/it/auftrag/359d3b91-a894-4a15-968d-4c9a7803
+ af53/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Côtes Saint-Maire à Paudex\, bâtiment D1 - Lot 1.1
+ .1 - Travaux préparatoires\, démolition\, travaux spéciaux\, terrasseme
+ nt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d7bc6a67-5abb-4bae-aa57-40aa4084c34e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Eingabefrist: Schulanlage Zelgli\, Neubau\, BKP 214 Montagebau in H
+ olz
+DESCRIPTION:Auftraggeber: Stadt Schlieren\, Bereich Liegenschaften\nEingabe
+ frist: 14.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/d7bc6a67-5abb-4bae-aa57-40aa4084c34e/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/d7bc6a67-5abb-4bae-aa57-40aa4084c34e
+URL:https://auftragsregister.ch/de/auftrag/d7bc6a67-5abb-4bae-aa57-40aa4084
+ c34e/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulanlage Zelgli\, Neubau\, BKP 214 Montagebau 
+ in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

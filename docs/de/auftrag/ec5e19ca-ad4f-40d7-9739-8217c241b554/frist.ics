@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ec5e19ca-ad4f-40d7-9739-8217c241b554-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Eingabefrist: Werk- und Belagsreparaturen 2027\, Region Westen
+DESCRIPTION:Auftraggeber: Verkehr und Infrastruktur (vif)\, zentras\, Betri
+ eb Strassen\nEingabefrist: 10.12.2026\, 23.59 Uhr\nIm Register: https://a
+ uftragsregister.ch/de/auftrag/ec5e19ca-ad4f-40d7-9739-8217c241b554/\nAmtli
+ che Publikation: https://www.simap.ch/de/project-detail/ec5e19ca-ad4f-40d7
+ -9739-8217c241b554
+URL:https://auftragsregister.ch/de/auftrag/ec5e19ca-ad4f-40d7-9739-8217c241
+ b554/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Werk- und Belagsreparaturen 2027\, Region Westen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

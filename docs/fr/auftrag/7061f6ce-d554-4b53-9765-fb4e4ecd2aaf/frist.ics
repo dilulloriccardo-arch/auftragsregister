@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7061f6ce-d554-4b53-9765-fb4e4ecd2aaf-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261204T150000Z
+SUMMARY:Délai de remise : Huberstrasse 18/20\, Gesamtsanierung\, BKP 250
+  Sanitäranlagen
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 04.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/7061f6ce-d554-4b53-9765-fb4e4ecd2aaf/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/7061f6ce-d5
+ 54-4b53-9765-fb4e4ecd2aaf
+URL:https://auftragsregister.ch/fr/auftrag/7061f6ce-d554-4b53-9765-fb4e4ecd
+ 2aaf/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Huberstrasse 18/20\, Gesamtsanierung\, BKP
+  250 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

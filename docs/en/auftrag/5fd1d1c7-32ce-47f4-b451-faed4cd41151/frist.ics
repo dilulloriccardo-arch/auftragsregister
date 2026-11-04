@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5fd1d1c7-32ce-47f4-b451-faed4cd41151-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261218T110000Z
+SUMMARY:Submission deadline: Transports scolaires
+DESCRIPTION:Public buyer: Commune de Lutry (Hymexia Sàrl)\nSubmission dead
+ line: 18 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/
+ en/auftrag/5fd1d1c7-32ce-47f4-b451-faed4cd41151/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/5fd1d1c7-32ce-47f4-b451-faed4cd41151
+URL:https://auftragsregister.ch/en/auftrag/5fd1d1c7-32ce-47f4-b451-faed4cd4
+ 1151/
+LOCATION:Lutry
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Transports scolaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

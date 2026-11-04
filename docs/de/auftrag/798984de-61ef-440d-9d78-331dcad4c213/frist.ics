@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:798984de-61ef-440d-9d78-331dcad4c213-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+SUMMARY:Eingabefrist: Rénovation des escaliers hélicoïdaux du viaduc des
+  Grandes-Communes
+DESCRIPTION:Auftraggeber: Ville de Lancy (Service des Travaux et de l'Energ
+ ie)\nEingabefrist: 30.11.2026\, 11.00 Uhr\nIm Register: https://auftragsr
+ egister.ch/de/auftrag/798984de-61ef-440d-9d78-331dcad4c213/\nAmtliche Publ
+ ikation: https://www.simap.ch/de/project-detail/798984de-61ef-440d-9d78-33
+ 1dcad4c213
+URL:https://auftragsregister.ch/de/auftrag/798984de-61ef-440d-9d78-331dcad4
+ c213/
+LOCATION:Petit-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rénovation des escaliers hélicoïdaux du viaduc
+  des Grandes-Communes
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

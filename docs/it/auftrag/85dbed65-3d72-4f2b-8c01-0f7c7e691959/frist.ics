@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85dbed65-3d72-4f2b-8c01-0f7c7e691959-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Scadenza: Appel d'offres public pour le renouvellement des licences
+  Informatica
+DESCRIPTION:Ente pubblico: Centrale commune d'achats (CCA)\nScadenza: 21.12
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/85dbed
+ 65-3d72-4f2b-8c01-0f7c7e691959/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/85dbed65-3d72-4f2b-8c01-0f7c7e691959
+URL:https://auftragsregister.ch/it/auftrag/85dbed65-3d72-4f2b-8c01-0f7c7e69
+ 1959/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Appel d'offres public pour le renouvellement des lice
+ nces Informatica
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

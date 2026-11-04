@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2885016a-2278-45ea-9874-afad97a9d9d3-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261215T160000Z
+SUMMARY:Eingabefrist: SP Steigerhubel\, Steigerhubelstrasse 55b\, Rasenplä
+ tze\, BKP 496.5 Landschaftsarchitektur
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 15.12.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/2885016a-2278-45ea-9874-afad97a9d9d3/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/2885016a-2278-45ea-9874-afad97a9d9d3
+URL:https://auftragsregister.ch/de/auftrag/2885016a-2278-45ea-9874-afad97a9
+ d9d3/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: SP Steigerhubel\, Steigerhubelstrasse 55b\, Rasen
+ plätze\, BKP 496.5 Landschaftsarchitektur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6325d7f1-0433-40ce-aa77-00639fb5ac2e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Scadenza: 00783 Gebäude BOT\, Ersatz Gewächshaus P4\, Ausschreibu
+ ng Heizung+Kälte
+DESCRIPTION:Ente pubblico: Universität Zürich - Bauprojektmanagement\nSca
+ denza: 07.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/au
+ ftrag/6325d7f1-0433-40ce-aa77-00639fb5ac2e/\nPubblicazione ufficiale: http
+ s://www.simap.ch/it/project-detail/6325d7f1-0433-40ce-aa77-00639fb5ac2e
+URL:https://auftragsregister.ch/it/auftrag/6325d7f1-0433-40ce-aa77-00639fb5
+ ac2e/
+LOCATION:Zollikerstrasse 105
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 00783 Gebäude BOT\, Ersatz Gewächshaus P4\, Ausschr
+ eibung Heizung+Kälte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

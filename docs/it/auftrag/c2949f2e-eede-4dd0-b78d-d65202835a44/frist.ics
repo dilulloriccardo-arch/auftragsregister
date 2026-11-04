@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c2949f2e-eede-4dd0-b78d-d65202835a44-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261217T160000Z
+SUMMARY:Scadenza: Rahmenverträge Schliessanlagen der städtischen Schulanl
+ agen
+DESCRIPTION:Ente pubblico: HBD - Immobilien Stadt Zürich (IMMO)\nScadenza:
+  17.12.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ c2949f2e-eede-4dd0-b78d-d65202835a44/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/c2949f2e-eede-4dd0-b78d-d65202835a44
+URL:https://auftragsregister.ch/it/auftrag/c2949f2e-eede-4dd0-b78d-d6520283
+ 5a44/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenverträge Schliessanlagen der städtischen Schu
+ lanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

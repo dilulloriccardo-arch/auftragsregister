@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8d41b68e-56e2-4cd9-a8a8-52dca4736305-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Délai de remise : Ausschreibung BKP 215 Gerüstung
+DESCRIPTION:Acheteur public : Wohnen und Pflege Peteracker AG\nDélai de 
+ remise : 16.12.2026\, 12 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/8d41b68e-56e2-4cd9-a8a8-52dca4736305/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/8d41b68e-56e2-4cd9-a
+ 8a8-52dca4736305
+URL:https://auftragsregister.ch/fr/auftrag/8d41b68e-56e2-4cd9-a8a8-52dca473
+ 6305/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung BKP 215 Gerüstung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

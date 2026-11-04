@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c66a73bb-3ea3-4774-b078-27af439651a4-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Scadenza: Neubau Vierfach-Kindergarten Bannfeld - BKP 230 Elektroan
+ lagen
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Olten Direktion Bau\nScadenza:
+  14.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ c66a73bb-3ea3-4774-b078-27af439651a4/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/c66a73bb-3ea3-4774-b078-27af439651a4
+URL:https://auftragsregister.ch/it/auftrag/c66a73bb-3ea3-4774-b078-27af4396
+ 51a4/
+LOCATION:Olten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Vierfach-Kindergarten Bannfeld - BKP 230 Elekt
+ roanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

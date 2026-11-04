@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85c55e83-fd09-4b74-a45f-195195164f78-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270212T150000Z
+SUMMARY:Scadenza: Ersatzbeschaffung Schulverwaltungsplattform\, BKP 700 Sof
+ tware
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 12.02.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/85c55e83-fd09-4b74-a45f-195195164f78/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/85c55e83-fd09-4b74-a45f-195195164f78
+URL:https://auftragsregister.ch/it/auftrag/85c55e83-fd09-4b74-a45f-19519516
+ 4f78/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatzbeschaffung Schulverwaltungsplattform\, BKP 700
+  Software
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

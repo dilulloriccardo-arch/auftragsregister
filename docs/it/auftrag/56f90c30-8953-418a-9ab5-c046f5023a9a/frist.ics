@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:56f90c30-8953-418a-9ab5-c046f5023a9a-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Scadenza: Eine Reihe von individuellen und manuellen Stationen zum 
+ Gravieren von Metallen und Oxiden
+DESCRIPTION:Ente pubblico: EPFL-Scientific Equipment\nScadenza: 14.12.2026\
+ , 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/56f90c30-895
+ 3-418a-9ab5-c046f5023a9a/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/56f90c30-8953-418a-9ab5-c046f5023a9a
+URL:https://auftragsregister.ch/it/auftrag/56f90c30-8953-418a-9ab5-c046f502
+ 3a9a/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Eine Reihe von individuellen und manuellen Stationen 
+ zum Gravieren von Metallen und Oxiden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

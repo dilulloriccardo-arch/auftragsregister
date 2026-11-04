@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28e4ce6c-14f6-4866-bf5a-c1d076bcfa3e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:1
+DTSTART:20270113T150000Z
+SUMMARY:Délai de remise : Campus de Horw\, réalisation des travaux de r
+ énovation et d'extension (CPC 261) : ascenseurs
+DESCRIPTION:Acheteur public : Kanton Luzern\, Dienststelle Immobilien\nD
+ élai de remise : 13.01.2027\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/28e4ce6c-14f6-4866-bf5a-c1d076bcfa3e/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/28e4ce6c-14
+ f6-4866-bf5a-c1d076bcfa3e
+URL:https://auftragsregister.ch/fr/auftrag/28e4ce6c-14f6-4866-bf5a-c1d076bc
+ fa3e/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Campus de Horw\, réalisation des travaux 
+ de rénovation et d'extension (CPC 261) : ascenseurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

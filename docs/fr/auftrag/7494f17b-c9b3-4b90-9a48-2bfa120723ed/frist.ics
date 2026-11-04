@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7494f17b-c9b3-4b90-9a48-2bfa120723ed-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T160000Z
+SUMMARY:Délai de remise : Sozial- und Asylsozialdienst\, Sicherheitsdien
+ st\, BKP 561 Bewachung/Sicherheitsdienst
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 14.12.2026\, 17 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/7494f17b-c9b3-4b90-9a48-2bfa120723ed/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/7494f17b-c9
+ b3-4b90-9a48-2bfa120723ed
+URL:https://auftragsregister.ch/fr/auftrag/7494f17b-c9b3-4b90-9a48-2bfa1207
+ 23ed/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sozial- und Asylsozialdienst\, Sicherheits
+ dienst\, BKP 561 Bewachung/Sicherheitsdienst
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

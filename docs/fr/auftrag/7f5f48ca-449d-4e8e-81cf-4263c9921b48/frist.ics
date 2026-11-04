@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7f5f48ca-449d-4e8e-81cf-4263c9921b48-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Délai de remise : Agrandissement de la STEP Reuss-Schachen : ven
+ tilation
+DESCRIPTION:Acheteur public : Abwasserverband Reuss-Schachen\nDélai de r
+ emise : 13.01.2027\, 12 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/7f5f48ca-449d-4e8e-81cf-4263c9921b48/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/7f5f48ca-449d-4e8e-81
+ cf-4263c9921b48
+URL:https://auftragsregister.ch/fr/auftrag/7f5f48ca-449d-4e8e-81cf-4263c992
+ 1b48/
+LOCATION:Merenschwand
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Agrandissement de la STEP Reuss-Schachen :
+  ventilation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

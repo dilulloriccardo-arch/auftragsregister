@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f80a4229-c0c2-4608-a635-f95a11eebd14-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Eingabefrist: Spül- und Saug-Lastwagen 10x4 mit 40t Gesamtgewicht 
+ Beleg 30
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 14.12.
+ 2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/f80
+ a4229-c0c2-4608-a635-f95a11eebd14/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/f80a4229-c0c2-4608-a635-f95a11eebd14
+URL:https://auftragsregister.ch/de/auftrag/f80a4229-c0c2-4608-a635-f95a11ee
+ bd14/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Spül- und Saug-Lastwagen 10x4 mit 40t Gesamtgewi
+ cht Beleg 30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

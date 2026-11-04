@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:56f90c30-8953-418a-9ab5-c046f5023a9a-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Délai de remise : Un lot de stations individuelles et manuelles 
+ pour la gravure de métaux et d’oxides
+DESCRIPTION:Acheteur public : EPFL-Scientific Equipment\nDélai de remise
+  : 14.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/56f90c30-8953-418a-9ab5-c046f5023a9a/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/56f90c30-8953-418a-9ab5-c0
+ 46f5023a9a
+URL:https://auftragsregister.ch/fr/auftrag/56f90c30-8953-418a-9ab5-c046f502
+ 3a9a/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Un lot de stations individuelles et manuel
+ les pour la gravure de métaux et d’oxides
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

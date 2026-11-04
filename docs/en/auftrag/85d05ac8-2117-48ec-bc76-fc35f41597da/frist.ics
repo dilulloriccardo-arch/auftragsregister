@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85d05ac8-2117-48ec-bc76-fc35f41597da-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Submission deadline: Wohnbauten Zelgstrasse 18/20/22\, Gesamtsanier
+ ung und Aufwertung Wohnbauten\, BKP 240 Wärmeerzeugung und Verteilung
+DESCRIPTION:Public buyer: Fachstelle Beschaffungswesen Stadt Bern\nSubmissi
+ on deadline: 27 Nov 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/85d05ac8-2117-48ec-bc76-fc35f41597da/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/85d05ac8-2117-48ec-bc76-fc35f4
+ 1597da
+URL:https://auftragsregister.ch/en/auftrag/85d05ac8-2117-48ec-bc76-fc35f415
+ 97da/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wohnbauten Zelgstrasse 18/20/22\, Gesamtsa
+ nierung und Aufwertung Wohnbauten\, BKP 240 Wärmeerzeugung und Verteilung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

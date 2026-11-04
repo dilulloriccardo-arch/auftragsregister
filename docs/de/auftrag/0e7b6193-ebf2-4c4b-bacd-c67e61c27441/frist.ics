@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e7b6193-ebf2-4c4b-bacd-c67e61c27441-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Eingabefrist: Wohnbauten Zelgstrasse 18/20/22\, Gesamtsanierung und
+  Aufwertung Wohnbauten\, BKP 230 Elektroinstallationen
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 27.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/0e7b6193-ebf2-4c4b-bacd-c67e61c27441/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/0e7b6193-ebf2-4c4b-bacd-c67e61c27441
+URL:https://auftragsregister.ch/de/auftrag/0e7b6193-ebf2-4c4b-bacd-c67e61c2
+ 7441/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Wohnbauten Zelgstrasse 18/20/22\, Gesamtsanierung
+  und Aufwertung Wohnbauten\, BKP 230 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

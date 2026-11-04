@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f80a4229-c0c2-4608-a635-f95a11eebd14-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Scadenza: Spül- und Saug-Lastwagen 10x4 mit 40t Gesamtgewicht Bele
+ g 30
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 14.12.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/f80a4229-c
+ 0c2-4608-a635-f95a11eebd14/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/f80a4229-c0c2-4608-a635-f95a11eebd14
+URL:https://auftragsregister.ch/it/auftrag/f80a4229-c0c2-4608-a635-f95a11ee
+ bd14/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Spül- und Saug-Lastwagen 10x4 mit 40t Gesamtgewicht 
+ Beleg 30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

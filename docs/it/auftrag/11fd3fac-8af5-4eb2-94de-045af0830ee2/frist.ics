@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:11fd3fac-8af5-4eb2-94de-045af0830ee2-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Scadenza: BKP 273.1 Wandschränke
+DESCRIPTION:Ente pubblico: Schulgemeinde Kreuzlingen\nScadenza: 11.12.2026\
+ , 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/11fd3fac-8af
+ 5-4eb2-94de-045af0830ee2/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/11fd3fac-8af5-4eb2-94de-045af0830ee2
+URL:https://auftragsregister.ch/it/auftrag/11fd3fac-8af5-4eb2-94de-045af083
+ 0ee2/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 273.1 Wandschränke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

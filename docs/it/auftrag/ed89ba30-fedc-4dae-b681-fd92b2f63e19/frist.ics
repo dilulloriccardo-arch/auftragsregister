@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed89ba30-fedc-4dae-b681-fd92b2f63e19-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270131T225900Z
+SUMMARY:Scadenza: KESB-Applikation für die Stadt Zürich
+DESCRIPTION:Ente pubblico: SD - Support Sozialdepartement (SDS)\nScadenza: 
+ 31.01.2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/e
+ d89ba30-fedc-4dae-b681-fd92b2f63e19/\nPubblicazione ufficiale: https://www
+ .simap.ch/it/project-detail/ed89ba30-fedc-4dae-b681-fd92b2f63e19
+URL:https://auftragsregister.ch/it/auftrag/ed89ba30-fedc-4dae-b681-fd92b2f6
+ 3e19/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: KESB-Applikation für die Stadt Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

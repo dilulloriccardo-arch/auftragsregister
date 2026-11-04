@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:199e56fc-08c0-472e-888b-0614ee2e143c-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Scadenza: BKP 273.3 Allgemeine Schreinerarbeiten
+DESCRIPTION:Ente pubblico: Schulgemeinde Kreuzlingen\nScadenza: 11.12.2026\
+ , 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/199e56fc-08c
+ 0-472e-888b-0614ee2e143c/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/199e56fc-08c0-472e-888b-0614ee2e143c
+URL:https://auftragsregister.ch/it/auftrag/199e56fc-08c0-472e-888b-0614ee2e
+ 143c/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 273.3 Allgemeine Schreinerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d82b76dd-ab8a-4962-9c1f-b0bb6e7739f5-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Submission deadline: Tender BKP 214 Timber Construction
+DESCRIPTION:Public buyer: Wohnen und Pflege Peteracker AG\nSubmission deadl
+ ine: 16 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/d82b76dd-ab8a-4962-9c1f-b0bb6e7739f5/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/d82b76dd-ab8a-4962-9c1f-b0bb6e7739f5
+URL:https://auftragsregister.ch/en/auftrag/d82b76dd-ab8a-4962-9c1f-b0bb6e77
+ 39f5/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tender BKP 214 Timber Construction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

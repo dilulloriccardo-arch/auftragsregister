@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7494f17b-c9b3-4b90-9a48-2bfa120723ed-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T160000Z
+SUMMARY:Eingabefrist: Sozial- und Asylsozialdienst\, Sicherheitsdienst\, BK
+ P 561 Bewachung/Sicherheitsdienst
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 14.12.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/7494f17b-c9b3-4b90-9a48-2bfa120723ed/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/7494f17b-c9b3-4b90-9a48-2bfa120723ed
+URL:https://auftragsregister.ch/de/auftrag/7494f17b-c9b3-4b90-9a48-2bfa1207
+ 23ed/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sozial- und Asylsozialdienst\, Sicherheitsdienst\
+ , BKP 561 Bewachung/Sicherheitsdienst
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

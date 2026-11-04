@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85d05ac8-2117-48ec-bc76-fc35f41597da-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Délai de remise : Wohnbauten Zelgstrasse 18/20/22\, Gesamtsanier
+ ung und Aufwertung Wohnbauten\, BKP 240 Wärmeerzeugung und Verteilung
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 27.11.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/85d05ac8-2117-48ec-bc76-fc35f41597da/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/85d05ac8-21
+ 17-48ec-bc76-fc35f41597da
+URL:https://auftragsregister.ch/fr/auftrag/85d05ac8-2117-48ec-bc76-fc35f415
+ 97da/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wohnbauten Zelgstrasse 18/20/22\, Gesamtsa
+ nierung und Aufwertung Wohnbauten\, BKP 240 Wärmeerzeugung und Verteilung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

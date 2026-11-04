@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0eb36fd-eb1b-4023-8ed9-b01690029658-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270108T225900Z
+SUMMARY:Délai de remise : Service de conseil environnemental mobile 2027
+ -2029 pour le canton de Lucerne
+DESCRIPTION:Acheteur public : Dienststelle Umwelt und Energie\, Kanton Lu
+ zern\nDélai de remise : 08.01.2027\, 23 h 59\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/d0eb36fd-eb1b-4023-8ed9-b0169002965
+ 8/\nPublication officielle : https://www.simap.ch/fr/project-detail/d0eb
+ 36fd-eb1b-4023-8ed9-b01690029658
+URL:https://auftragsregister.ch/fr/auftrag/d0eb36fd-eb1b-4023-8ed9-b0169002
+ 9658/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Service de conseil environnemental mobile 
+ 2027-2029 pour le canton de Lucerne
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

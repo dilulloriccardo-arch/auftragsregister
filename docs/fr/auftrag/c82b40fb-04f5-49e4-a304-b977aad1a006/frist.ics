@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c82b40fb-04f5-49e4-a304-b977aad1a006-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Délai de remise : Ausschreibung BKP 211 Baumeisterarbeiten
+DESCRIPTION:Acheteur public : Wohnen und Pflege Peteracker AG\nDélai de 
+ remise : 16.12.2026\, 12 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/c82b40fb-04f5-49e4-a304-b977aad1a006/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/c82b40fb-04f5-49e4-a
+ 304-b977aad1a006
+URL:https://auftragsregister.ch/fr/auftrag/c82b40fb-04f5-49e4-a304-b977aad1
+ a006/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

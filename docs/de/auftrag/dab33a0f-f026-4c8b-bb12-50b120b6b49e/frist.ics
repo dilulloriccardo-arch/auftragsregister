@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dab33a0f-f026-4c8b-bb12-50b120b6b49e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270105T160000Z
+SUMMARY:Eingabefrist: Gesamtleitung Mittelfristmassnahmen\, Thunstrasse Wes
+ t/Ost
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 05.01.2027\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/dab33a0f-f026-4c8b-bb12-50b120b6b49e/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/dab33a0f-f026-4c8b-bb12-50b120b6b49e
+URL:https://auftragsregister.ch/de/auftrag/dab33a0f-f026-4c8b-bb12-50b120b6
+ b49e/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamtleitung Mittelfristmassnahmen\, Thunstrasse
+  West/Ost
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

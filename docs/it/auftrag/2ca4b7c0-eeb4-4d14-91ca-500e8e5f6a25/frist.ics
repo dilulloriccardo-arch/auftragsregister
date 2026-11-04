@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2ca4b7c0-eeb4-4d14-91ca-500e8e5f6a25-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270118T225900Z
+SUMMARY:Scadenza: ERP-Lösung Identitas AG
+DESCRIPTION:Ente pubblico: Identitas AG\nScadenza: 18.01.2027\, 23:59\nNel 
+ registro: https://auftragsregister.ch/it/auftrag/2ca4b7c0-eeb4-4d14-91ca-5
+ 00e8e5f6a25/\nPubblicazione ufficiale: https://www.simap.ch/it/project-det
+ ail/2ca4b7c0-eeb4-4d14-91ca-500e8e5f6a25
+URL:https://auftragsregister.ch/it/auftrag/2ca4b7c0-eeb4-4d14-91ca-500e8e5f
+ 6a25/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ERP-Lösung Identitas AG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

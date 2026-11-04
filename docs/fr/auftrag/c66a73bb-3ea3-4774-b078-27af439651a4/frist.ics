@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c66a73bb-3ea3-4774-b078-27af439651a4-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Délai de remise : Neubau Vierfach-Kindergarten Bannfeld - BKP 23
+ 0 Elektroanlagen
+DESCRIPTION:Acheteur public : Einwohnergemeinde Olten Direktion Bau\nDél
+ ai de remise : 14.12.2026\, 16 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/c66a73bb-3ea3-4774-b078-27af439651a4/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/c66a73bb-3ea3-
+ 4774-b078-27af439651a4
+URL:https://auftragsregister.ch/fr/auftrag/c66a73bb-3ea3-4774-b078-27af4396
+ 51a4/
+LOCATION:Olten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Vierfach-Kindergarten Bannfeld - BK
+ P 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

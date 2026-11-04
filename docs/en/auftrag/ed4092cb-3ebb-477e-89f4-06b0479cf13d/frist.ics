@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed4092cb-3ebb-477e-89f4-06b0479cf13d-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Submission deadline: Tender BKP 244 Ventilation Systems
+DESCRIPTION:Public buyer: Wohnen und Pflege Peteracker AG\nSubmission deadl
+ ine: 16 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/ed4092cb-3ebb-477e-89f4-06b0479cf13d/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/ed4092cb-3ebb-477e-89f4-06b0479cf13d
+URL:https://auftragsregister.ch/en/auftrag/ed4092cb-3ebb-477e-89f4-06b0479c
+ f13d/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tender BKP 244 Ventilation Systems
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

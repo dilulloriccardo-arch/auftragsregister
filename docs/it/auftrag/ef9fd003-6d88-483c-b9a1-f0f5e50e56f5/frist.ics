@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef9fd003-6d88-483c-b9a1-f0f5e50e56f5-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Scadenza: Ausschreibung BKP 201 Baugrubenaushub
+DESCRIPTION:Ente pubblico: Wohnen und Pflege Peteracker AG\nScadenza: 16.12
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/ef9fd0
+ 03-6d88-483c-b9a1-f0f5e50e56f5/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/ef9fd003-6d88-483c-b9a1-f0f5e50e56f5
+URL:https://auftragsregister.ch/it/auftrag/ef9fd003-6d88-483c-b9a1-f0f5e50e
+ 56f5/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung BKP 201 Baugrubenaushub
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

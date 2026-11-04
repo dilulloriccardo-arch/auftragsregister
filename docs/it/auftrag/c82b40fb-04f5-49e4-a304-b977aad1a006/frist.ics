@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c82b40fb-04f5-49e4-a304-b977aad1a006-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Scadenza: Ausschreibung BKP 211 Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: Wohnen und Pflege Peteracker AG\nScadenza: 16.12
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/c82b40
+ fb-04f5-49e4-a304-b977aad1a006/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/c82b40fb-04f5-49e4-a304-b977aad1a006
+URL:https://auftragsregister.ch/it/auftrag/c82b40fb-04f5-49e4-a304-b977aad1
+ a006/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

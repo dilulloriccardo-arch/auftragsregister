@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:922f58e0-a6e4-4c9b-9619-e46f6c3a8999-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261204T130000Z
+SUMMARY:Eingabefrist: Baumeisterarbeiten Sanierung Rüti\, Schwanden
+DESCRIPTION:Auftraggeber: Gemeinde Glarus Süd\, Departement Tiefbau und We
+ rke\nEingabefrist: 04.12.2026\, 14.00 Uhr\nIm Register: https://auftragsr
+ egister.ch/de/auftrag/922f58e0-a6e4-4c9b-9619-e46f6c3a8999/\nAmtliche Publ
+ ikation: https://www.simap.ch/de/project-detail/922f58e0-a6e4-4c9b-9619-e4
+ 6f6c3a8999
+URL:https://auftragsregister.ch/de/auftrag/922f58e0-a6e4-4c9b-9619-e46f6c3a
+ 8999/
+LOCATION:Schwanden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Baumeisterarbeiten Sanierung Rüti\, Schwanden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

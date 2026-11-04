@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:199e56fc-08c0-472e-888b-0614ee2e143c-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Eingabefrist: BKP 273.3 Allgemeine Schreinerarbeiten
+DESCRIPTION:Auftraggeber: Schulgemeinde Kreuzlingen\nEingabefrist: 11.12.20
+ 26\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/199e5
+ 6fc-08c0-472e-888b-0614ee2e143c/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/199e56fc-08c0-472e-888b-0614ee2e143c
+URL:https://auftragsregister.ch/de/auftrag/199e56fc-08c0-472e-888b-0614ee2e
+ 143c/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 273.3 Allgemeine Schreinerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef9fd003-6d88-483c-b9a1-f0f5e50e56f5-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Submission deadline: Tender BKP 201 Excavation
+DESCRIPTION:Public buyer: Wohnen und Pflege Peteracker AG\nSubmission deadl
+ ine: 16 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/ef9fd003-6d88-483c-b9a1-f0f5e50e56f5/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/ef9fd003-6d88-483c-b9a1-f0f5e50e56f5
+URL:https://auftragsregister.ch/en/auftrag/ef9fd003-6d88-483c-b9a1-f0f5e50e
+ 56f5/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tender BKP 201 Excavation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

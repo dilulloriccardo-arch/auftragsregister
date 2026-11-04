@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e029e9b9-b328-4dbe-8c4d-bdf6b98a6b26-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Submission deadline: Wohnbauten Zelgstrasse 18/20/22\, Gesamtsanier
+ ung und Aufwertung Wohnbauten\, BKP 211 Baumeisterarbeiten
+DESCRIPTION:Public buyer: Fachstelle Beschaffungswesen Stadt Bern\nSubmissi
+ on deadline: 27 Nov 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/e029e9b9-b328-4dbe-8c4d-bdf6b98a6b26/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/e029e9b9-b328-4dbe-8c4d-bdf6b9
+ 8a6b26
+URL:https://auftragsregister.ch/en/auftrag/e029e9b9-b328-4dbe-8c4d-bdf6b98a
+ 6b26/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wohnbauten Zelgstrasse 18/20/22\, Gesamtsa
+ nierung und Aufwertung Wohnbauten\, BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

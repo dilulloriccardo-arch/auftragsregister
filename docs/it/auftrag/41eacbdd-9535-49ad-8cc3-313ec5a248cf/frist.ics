@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41eacbdd-9535-49ad-8cc3-313ec5a248cf-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270218T225900Z
+SUMMARY:Scadenza: GIS Container Verbois
+DESCRIPTION:Ente pubblico: Swissgrid AG - Asset & Maintenance\nScadenza: 18
+ .02.2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/41e
+ acbdd-9535-49ad-8cc3-313ec5a248cf/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/41eacbdd-9535-49ad-8cc3-313ec5a248cf
+URL:https://auftragsregister.ch/it/auftrag/41eacbdd-9535-49ad-8cc3-313ec5a2
+ 48cf/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: GIS Container Verbois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

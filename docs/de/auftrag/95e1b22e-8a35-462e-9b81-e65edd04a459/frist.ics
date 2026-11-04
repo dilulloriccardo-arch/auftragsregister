@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95e1b22e-8a35-462e-9b81-e65edd04a459-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Eingabefrist: Gare des Eaux-Vives (2378TI) revêtement de parois en
+  bois salle de sports et salle de musique
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 16.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/95e1b22e-8a35-462e-9b81-e65edd04a459/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/95e1b22e-8a35-462e-9b81-e65edd04
+ a459
+URL:https://auftragsregister.ch/de/auftrag/95e1b22e-8a35-462e-9b81-e65edd04
+ a459/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gare des Eaux-Vives (2378TI) revêtement de paroi
+ s en bois salle de sports et salle de musique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

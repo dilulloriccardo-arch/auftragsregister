@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85c55e83-fd09-4b74-a45f-195195164f78-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270212T150000Z
+SUMMARY:Submission deadline: Ersatzbeschaffung Schulverwaltungsplattform\, 
+ BKP 700 Software
+DESCRIPTION:Public buyer: Fachstelle Beschaffungswesen Stadt Bern\nSubmissi
+ on deadline: 12 Feb 2027\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/85c55e83-fd09-4b74-a45f-195195164f78/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/85c55e83-fd09-4b74-a45f-195195
+ 164f78
+URL:https://auftragsregister.ch/en/auftrag/85c55e83-fd09-4b74-a45f-19519516
+ 4f78/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatzbeschaffung Schulverwaltungsplattfor
+ m\, BKP 700 Software
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

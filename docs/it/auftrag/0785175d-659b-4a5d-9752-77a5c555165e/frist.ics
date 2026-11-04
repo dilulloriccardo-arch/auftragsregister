@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0785175d-659b-4a5d-9752-77a5c555165e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Scadenza: Periodische Verkehrsdatenerhebung 2027-2029
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 04.12.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/0785175d-6
+ 59b-4a5d-9752-77a5c555165e/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/0785175d-659b-4a5d-9752-77a5c555165e
+URL:https://auftragsregister.ch/it/auftrag/0785175d-659b-4a5d-9752-77a5c555
+ 165e/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Periodische Verkehrsdatenerhebung 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

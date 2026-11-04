@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:359d3b91-a894-4a15-968d-4c9a7803af53-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Délai de remise : Côtes Saint-Maire à Paudex\, bâtiment D1 - 
+ Lot 1.1.1 - Travaux préparatoires\, démolition\, travaux spéciaux\, ter
+ rassement
+DESCRIPTION:Acheteur public : Commune de Paudex (Nicolas de Courten archi
+ tectes)\nDélai de remise : 14.12.2026\, 12 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/359d3b91-a894-4a15-968d-4c9a78
+ 03af53/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /359d3b91-a894-4a15-968d-4c9a7803af53
+URL:https://auftragsregister.ch/fr/auftrag/359d3b91-a894-4a15-968d-4c9a7803
+ af53/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Côtes Saint-Maire à Paudex\, bâtiment D
+ 1 - Lot 1.1.1 - Travaux préparatoires\, démolition\, travaux spéciaux\,
+  terrassement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

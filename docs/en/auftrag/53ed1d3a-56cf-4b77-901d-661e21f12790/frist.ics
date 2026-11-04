@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:53ed1d3a-56cf-4b77-901d-661e21f12790-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Submission deadline: Ausbau ARA Reuss-Schachen: Heizung
+DESCRIPTION:Public buyer: Abwasserverband Reuss-Schachen\nSubmission deadli
+ ne: 13 Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/53ed1d3a-56cf-4b77-901d-661e21f12790/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/53ed1d3a-56cf-4b77-901d-661e21f12790
+URL:https://auftragsregister.ch/en/auftrag/53ed1d3a-56cf-4b77-901d-661e21f1
+ 2790/
+LOCATION:Merenschwand
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausbau ARA Reuss-Schachen: Heizung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

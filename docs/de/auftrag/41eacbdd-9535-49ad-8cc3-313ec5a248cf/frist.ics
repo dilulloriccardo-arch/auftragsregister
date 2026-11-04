@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41eacbdd-9535-49ad-8cc3-313ec5a248cf-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270218T225900Z
+SUMMARY:Eingabefrist: GIS Container Verbois
+DESCRIPTION:Auftraggeber: Swissgrid AG - Asset & Maintenance\nEingabefrist:
+  18.02.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/41eacbdd-9535-49ad-8cc3-313ec5a248cf/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/41eacbdd-9535-49ad-8cc3-313ec5a248cf
+URL:https://auftragsregister.ch/de/auftrag/41eacbdd-9535-49ad-8cc3-313ec5a2
+ 48cf/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: GIS Container Verbois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

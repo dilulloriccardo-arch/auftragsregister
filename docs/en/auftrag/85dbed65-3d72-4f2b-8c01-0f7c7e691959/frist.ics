@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85dbed65-3d72-4f2b-8c01-0f7c7e691959-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Submission deadline: Appel d'offres public pour le renouvellement d
+ es licences Informatica
+DESCRIPTION:Public buyer: Centrale commune d'achats (CCA)\nSubmission deadl
+ ine: 21 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/85dbed65-3d72-4f2b-8c01-0f7c7e691959/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/85dbed65-3d72-4f2b-8c01-0f7c7e691959
+URL:https://auftragsregister.ch/en/auftrag/85dbed65-3d72-4f2b-8c01-0f7c7e69
+ 1959/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Appel d'offres public pour le renouvelleme
+ nt des licences Informatica
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

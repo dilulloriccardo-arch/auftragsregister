@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d7bc6a67-5abb-4bae-aa57-40aa4084c34e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Submission deadline: School Complex Zelgli\, New Construction\, BKP
+  214 Timber Frame Construction
+DESCRIPTION:Public buyer: Stadt Schlieren\, Bereich Liegenschaften\nSubmiss
+ ion deadline: 14 Dec 2026\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/d7bc6a67-5abb-4bae-aa57-40aa4084c34e/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/d7bc6a67-5abb-4bae-aa57-40aa4
+ 084c34e
+URL:https://auftragsregister.ch/en/auftrag/d7bc6a67-5abb-4bae-aa57-40aa4084
+ c34e/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: School Complex Zelgli\, New Construction\,
+  BKP 214 Timber Frame Construction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

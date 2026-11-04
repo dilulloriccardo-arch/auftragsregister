@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5fd1d1c7-32ce-47f4-b451-faed4cd41151-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261218T110000Z
+SUMMARY:Délai de remise : Transports scolaires
+DESCRIPTION:Acheteur public : Commune de Lutry (Hymexia Sàrl)\nDélai de
+  remise : 18.12.2026\, 12 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/5fd1d1c7-32ce-47f4-b451-faed4cd41151/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/5fd1d1c7-32ce-47f4-
+ b451-faed4cd41151
+URL:https://auftragsregister.ch/fr/auftrag/5fd1d1c7-32ce-47f4-b451-faed4cd4
+ 1151/
+LOCATION:Lutry
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transports scolaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:955e66cb-1efd-48fb-9525-6bc869b32fdf-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Eingabefrist: Neubau Vierfach-Kindergarten Bannfeld - BKP 214.3 Hol
+ zelementbau / Fassadenbau
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Olten Direktion Bau\nEingabefri
+ st: 14.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/955e66cb-1efd-48fb-9525-6bc869b32fdf/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/955e66cb-1efd-48fb-9525-6bc869b32fdf
+URL:https://auftragsregister.ch/de/auftrag/955e66cb-1efd-48fb-9525-6bc869b3
+ 2fdf/
+LOCATION:Olten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Vierfach-Kindergarten Bannfeld - BKP 214.3
+  Holzelementbau / Fassadenbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

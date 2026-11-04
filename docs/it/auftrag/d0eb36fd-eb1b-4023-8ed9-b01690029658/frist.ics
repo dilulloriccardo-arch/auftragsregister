@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0eb36fd-eb1b-4023-8ed9-b01690029658-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270108T225900Z
+SUMMARY:Scadenza: Mobile Umweltberatung 2027-2029 für den Kanton Luzern
+DESCRIPTION:Ente pubblico: Dienststelle Umwelt und Energie\, Kanton Luzern\
+ nScadenza: 08.01.2027\, 23:59\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/d0eb36fd-eb1b-4023-8ed9-b01690029658/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/d0eb36fd-eb1b-4023-8ed9-b0169002965
+ 8
+URL:https://auftragsregister.ch/it/auftrag/d0eb36fd-eb1b-4023-8ed9-b0169002
+ 9658/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mobile Umweltberatung 2027-2029 für den Kanton Luzer
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f1171683-9719-4372-baaf-7d4fb4b442f5-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Délai de remise : Copie Copie Projet d'extension du collège de 
+ Montreux-Est : CFC 224.1 Etanchéité
+DESCRIPTION:Acheteur public : Commune de Montreux\, Service des domaines 
+ et bâtiments\, sport (EMCO Partenaires SA)\nDélai de remise : 15.12.20
+ 26\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/auft
+ rag/f1171683-9719-4372-baaf-7d4fb4b442f5/\nPublication officielle : http
+ s://www.simap.ch/fr/project-detail/f1171683-9719-4372-baaf-7d4fb4b442f5
+URL:https://auftragsregister.ch/fr/auftrag/f1171683-9719-4372-baaf-7d4fb4b4
+ 42f5/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Copie Copie Projet d'extension du collège
+  de Montreux-Est : CFC 224.1 Etanchéité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

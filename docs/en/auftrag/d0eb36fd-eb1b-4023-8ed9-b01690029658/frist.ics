@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d0eb36fd-eb1b-4023-8ed9-b01690029658-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270108T225900Z
+SUMMARY:Submission deadline: Mobile Umweltberatung 2027-2029 für den Kanto
+ n Luzern
+DESCRIPTION:Public buyer: Dienststelle Umwelt und Energie\, Kanton Luzern\n
+ Submission deadline: 8 Jan 2027\, 23:59\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/d0eb36fd-eb1b-4023-8ed9-b01690029658/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/d0eb36fd-eb1b-4023-8ed9
+ -b01690029658
+URL:https://auftragsregister.ch/en/auftrag/d0eb36fd-eb1b-4023-8ed9-b0169002
+ 9658/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mobile Umweltberatung 2027-2029 für den K
+ anton Luzern
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

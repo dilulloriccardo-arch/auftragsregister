@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed89ba30-fedc-4dae-b681-fd92b2f63e19-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20270131T225900Z
+SUMMARY:Délai de remise : KESB-Applikation für die Stadt Zürich
+DESCRIPTION:Acheteur public : SD - Support Sozialdepartement (SDS)\nDéla
+ i de remise : 31.01.2027\, 23 h 59\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/ed89ba30-fedc-4dae-b681-fd92b2f63e19/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/ed89ba30-fedc-4
+ dae-b681-fd92b2f63e19
+URL:https://auftragsregister.ch/fr/auftrag/ed89ba30-fedc-4dae-b681-fd92b2f6
+ 3e19/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : KESB-Applikation für die Stadt Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

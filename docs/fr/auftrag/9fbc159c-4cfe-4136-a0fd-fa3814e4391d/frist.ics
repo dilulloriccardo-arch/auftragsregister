@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9fbc159c-4cfe-4136-a0fd-fa3814e4391d-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Délai de remise : (b26052-8) Chevrilles\, rénovation du centre 
+ fédéral pour requérants d’asile / CFC 272
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 16.12.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/9fbc159c-4cfe-4136-a0fd-fa3814e4391d/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/9fbc159c-4cfe
+ -4136-a0fd-fa3814e4391d
+URL:https://auftragsregister.ch/fr/auftrag/9fbc159c-4cfe-4136-a0fd-fa3814e4
+ 391d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (b26052-8) Chevrilles\, rénovation du cen
+ tre fédéral pour requérants d’asile / CFC 272
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

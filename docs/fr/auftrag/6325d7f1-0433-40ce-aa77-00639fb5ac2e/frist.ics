@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6325d7f1-0433-40ce-aa77-00639fb5ac2e-frist@auftragsregister.ch
+DTSTAMP:20261104T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Délai de remise : 00783 Gebäude BOT\, Ersatz Gewächshaus P4\, 
+ Ausschreibung Heizung+Kälte
+DESCRIPTION:Acheteur public : Universität Zürich - Bauprojektmanagement
+ \nDélai de remise : 07.12.2026\, 12 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/6325d7f1-0433-40ce-aa77-00639fb5ac2e/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/6325d7f1
+ -0433-40ce-aa77-00639fb5ac2e
+URL:https://auftragsregister.ch/fr/auftrag/6325d7f1-0433-40ce-aa77-00639fb5
+ ac2e/
+LOCATION:Zollikerstrasse 105
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 00783 Gebäude BOT\, Ersatz Gewächshaus P
+ 4\, Ausschreibung Heizung+Kälte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
