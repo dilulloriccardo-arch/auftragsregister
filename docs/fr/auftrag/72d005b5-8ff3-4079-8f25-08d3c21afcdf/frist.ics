@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72d005b5-8ff3-4079-8f25-08d3c21afcdf-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261217T110000Z
+SUMMARY:Délai de remise : CAIB_Accompagnement dans le cadrage\, l’acqu
+ isition et le déploiement d’un système d’information Achats
+DESCRIPTION:Acheteur public : CAIB (Centrale d’achats et d’ingénieri
+ e biomédicale Vaud-Genève)\nDélai de remise : 17.12.2026\, 12 h 0
+ 0\nDans le registre : https://auftragsregister.ch/fr/auftrag/72d005b5-8f
+ f3-4079-8f25-08d3c21afcdf/\nPublication officielle : https://www.simap.c
+ h/fr/project-detail/72d005b5-8ff3-4079-8f25-08d3c21afcdf
+URL:https://auftragsregister.ch/fr/auftrag/72d005b5-8ff3-4079-8f25-08d3c21a
+ fcdf/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CAIB_Accompagnement dans le cadrage\, l’
+ acquisition et le déploiement d’un système d’information Achats
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

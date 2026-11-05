@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:36546b66-e0f5-46f6-badd-97112a61dc6c-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Eingabefrist: 741.05 Strada di S. Maria Bivio Castaneda-Castaneda
+DESCRIPTION:Auftraggeber: Tiefbauamt Graubunden\nEingabefrist: 27.11.2026\,
+  23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/36546b66-
+ e0f5-46f6-badd-97112a61dc6c/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/36546b66-e0f5-46f6-badd-97112a61dc6c
+URL:https://auftragsregister.ch/de/auftrag/36546b66-e0f5-46f6-badd-97112a61
+ dc6c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 741.05 Strada di S. Maria Bivio Castaneda-Castane
+ da
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

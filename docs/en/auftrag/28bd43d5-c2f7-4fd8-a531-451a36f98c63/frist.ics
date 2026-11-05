@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28bd43d5-c2f7-4fd8-a531-451a36f98c63-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261127T090000Z
+SUMMARY:Submission deadline: Leitungsersatz und Sanierung Wuhrstrasse/Lohst
+ rasse\, Teil OST
+DESCRIPTION:Public buyer: Stadt Amriswil\nSubmission deadline: 27 Nov 202
+ 6\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag/28bd43d
+ 5-c2f7-4fd8-a531-451a36f98c63/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/28bd43d5-c2f7-4fd8-a531-451a36f98c63
+URL:https://auftragsregister.ch/en/auftrag/28bd43d5-c2f7-4fd8-a531-451a36f9
+ 8c63/
+LOCATION:Amriswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Leitungsersatz und Sanierung Wuhrstrasse/L
+ ohstrasse\, Teil OST
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

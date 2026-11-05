@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28bd43d5-c2f7-4fd8-a531-451a36f98c63-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261127T090000Z
+SUMMARY:Délai de remise : Leitungsersatz und Sanierung Wuhrstrasse/Lohst
+ rasse\, Teil OST
+DESCRIPTION:Acheteur public : Stadt Amriswil\nDélai de remise : 27.11.
+ 2026\, 10 h 00\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/28bd43d5-c2f7-4fd8-a531-451a36f98c63/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/28bd43d5-c2f7-4fd8-a531-451a36f98c63
+URL:https://auftragsregister.ch/fr/auftrag/28bd43d5-c2f7-4fd8-a531-451a36f9
+ 8c63/
+LOCATION:Amriswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Leitungsersatz und Sanierung Wuhrstrasse/L
+ ohstrasse\, Teil OST
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

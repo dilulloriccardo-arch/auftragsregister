@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8546d0c5-2eb0-4649-8801-711493332d29-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261204T130000Z
+SUMMARY:Délai de remise : Altgasse\, Gemeinde Baar: Neubau Bushaltestell
+ e und Parkplätze beim Friedhof
+DESCRIPTION:Acheteur public : Einwohnergemeinde Baar\; Tiefbau\nDélai de
+  remise : 04.12.2026\, 14 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/8546d0c5-2eb0-4649-8801-711493332d29/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/8546d0c5-2eb0-4649-
+ 8801-711493332d29
+URL:https://auftragsregister.ch/fr/auftrag/8546d0c5-2eb0-4649-8801-71149333
+ 2d29/
+LOCATION:Baar
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Altgasse\, Gemeinde Baar: Neubau Bushaltes
+ telle und Parkplätze beim Friedhof
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

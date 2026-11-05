@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ba7e87b2-b0fa-41a4-8d18-daecd117aa98-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Scadenza: 13043.10 / 213-01 Stahlbau\, Instandsetzung & Erweiterung
+  Betriebsgebäude Seepolizei und Schifffahrtskontrolle Oberrieden
+DESCRIPTION:Ente pubblico: Hochbauamt Kanton Zürich\nScadenza: 15.12.2026\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/ba7e87b2-b0f
+ a-41a4-8d18-daecd117aa98/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/ba7e87b2-b0fa-41a4-8d18-daecd117aa98
+URL:https://auftragsregister.ch/it/auftrag/ba7e87b2-b0fa-41a4-8d18-daecd117
+ aa98/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 13043.10 / 213-01 Stahlbau\, Instandsetzung & Erweite
+ rung Betriebsgebäude Seepolizei und Schifffahrtskontrolle Oberrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

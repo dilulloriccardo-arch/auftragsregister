@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:36546b66-e0f5-46f6-badd-97112a61dc6c-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Submission deadline: 741.05 Strada di S. Maria Bivio Castaneda-Cast
+ aneda
+DESCRIPTION:Public buyer: Tiefbauamt Graubunden\nSubmission deadline: 27 N
+ ov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 36546b66-e0f5-46f6-badd-97112a61dc6c/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/36546b66-e0f5-46f6-badd-97112a61dc6c
+URL:https://auftragsregister.ch/en/auftrag/36546b66-e0f5-46f6-badd-97112a61
+ dc6c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 741.05 Strada di S. Maria Bivio Castaneda-
+ Castaneda
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

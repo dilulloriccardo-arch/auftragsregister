@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bcb410b9-2d98-478c-a7b5-a8b8850cd4db-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261210T110000Z
+SUMMARY:Submission deadline: Illnau-Effretikon - Hinterbüelstrasse 11
+DESCRIPTION:Public buyer: BBS Ingenieure AG\nSubmission deadline: 10 Dec 
+ 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/bcb4
+ 10b9-2d98-478c-a7b5-a8b8850cd4db/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/bcb410b9-2d98-478c-a7b5-a8b8850cd4db
+URL:https://auftragsregister.ch/en/auftrag/bcb410b9-2d98-478c-a7b5-a8b8850c
+ d4db/
+LOCATION:Effretikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Illnau-Effretikon - Hinterbüelstrasse 11
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

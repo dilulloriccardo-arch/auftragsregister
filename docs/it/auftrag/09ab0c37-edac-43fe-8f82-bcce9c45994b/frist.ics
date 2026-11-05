@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:09ab0c37-edac-43fe-8f82-bcce9c45994b-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Scadenza: Assainissement - aménagement HDV7 Le Locle - LOT 41 _ CF
+ C 272 Vitrages intérieurs en métal et serrurerie
+DESCRIPTION:Ente pubblico: Service des bâtiments de l'Etat de Neuchâtel -
+  DOSP\nScadenza: 15.12.2026\, 23:59\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/09ab0c37-edac-43fe-8f82-bcce9c45994b/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/09ab0c37-edac-43fe-8f82-bcce9
+ c45994b
+URL:https://auftragsregister.ch/it/auftrag/09ab0c37-edac-43fe-8f82-bcce9c45
+ 994b/
+LOCATION:Le Locle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Assainissement - aménagement HDV7 Le Locle - LOT 41 
+ _ CFC 272 Vitrages intérieurs en métal et serrurerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

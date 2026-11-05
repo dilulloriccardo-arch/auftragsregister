@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2804fc83-3d5a-41e1-8cbb-55f158a0628b-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261221T100000Z
+SUMMARY:Eingabefrist: Haus im Dorf Hochfelden\, BKP 221.1 Fenster in Holz-M
+ etall
+DESCRIPTION:Auftraggeber: Gemeinde Hochfelden (L3P Architekten AG)\nEingabe
+ frist: 21.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/2804fc83-3d5a-41e1-8cbb-55f158a0628b/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/2804fc83-3d5a-41e1-8cbb-55f158a0628b
+URL:https://auftragsregister.ch/de/auftrag/2804fc83-3d5a-41e1-8cbb-55f158a0
+ 628b/
+LOCATION:Hochfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Haus im Dorf Hochfelden\, BKP 221.1 Fenster in Ho
+ lz-Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

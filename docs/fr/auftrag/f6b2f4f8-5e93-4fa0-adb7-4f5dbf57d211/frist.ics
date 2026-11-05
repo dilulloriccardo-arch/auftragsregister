@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f6b2f4f8-5e93-4fa0-adb7-4f5dbf57d211-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Délai de remise : Bau Nr. 06009 - Wesentliche Änderung Limmatta
+ lstrasse\, Abschnitt Wartauweg bis Limmattalstrasse 286\, BKP 221.2 Fenste
+ r aus Kunststoff
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Realisierung\, Fachstelle
+  Schallschutzfenster\nDélai de remise : 26.11.2026\, 16 h 00\nDans 
+ le registre : https://auftragsregister.ch/fr/auftrag/f6b2f4f8-5e93-4fa0-
+ adb7-4f5dbf57d211/\nPublication officielle : https://www.simap.ch/fr/pro
+ ject-detail/f6b2f4f8-5e93-4fa0-adb7-4f5dbf57d211
+URL:https://auftragsregister.ch/fr/auftrag/f6b2f4f8-5e93-4fa0-adb7-4f5dbf57
+ d211/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bau Nr. 06009 - Wesentliche Änderung Limm
+ attalstrasse\, Abschnitt Wartauweg bis Limmattalstrasse 286\, BKP 221.2 Fe
+ nster aus Kunststoff
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

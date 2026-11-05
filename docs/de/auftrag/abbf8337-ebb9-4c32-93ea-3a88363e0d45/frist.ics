@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abbf8337-ebb9-4c32-93ea-3a88363e0d45-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Eingabefrist: Marché de fourniture de câbles à basse et moyenne 
+ tension
+DESCRIPTION:Auftraggeber: Viteos SA\nEingabefrist: 16.12.2026\, 12.00 Uhr\
+ nIm Register: https://auftragsregister.ch/de/auftrag/abbf8337-ebb9-4c32-93
+ ea-3a88363e0d45/\nAmtliche Publikation: https://www.simap.ch/de/project-de
+ tail/abbf8337-ebb9-4c32-93ea-3a88363e0d45
+URL:https://auftragsregister.ch/de/auftrag/abbf8337-ebb9-4c32-93ea-3a88363e
+ 0d45/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Marché de fourniture de câbles à basse et moye
+ nne tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

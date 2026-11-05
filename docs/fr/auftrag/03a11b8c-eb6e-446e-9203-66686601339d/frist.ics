@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:03a11b8c-eb6e-446e-9203-66686601339d-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T090000Z
+SUMMARY:Délai de remise : MP 3531_Construction/réfection du Grenzacherw
+ eg sur le tronçon allant du Kohlistieg à la Bettingerstrasse_Travaux de 
+ maçonnerie
+DESCRIPTION:Acheteur public : Einwohnergemeinde Riehen\nDélai de remise
+  : 15.12.2026\, 10 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/03a11b8c-eb6e-446e-9203-66686601339d/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/03a11b8c-eb6e-446e-9203-66
+ 686601339d
+URL:https://auftragsregister.ch/fr/auftrag/03a11b8c-eb6e-446e-9203-66686601
+ 339d/
+LOCATION:Riehen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP 3531_Construction/réfection du Grenzac
+ herweg sur le tronçon allant du Kohlistieg à la Bettingerstrasse_Travaux
+  de maçonnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

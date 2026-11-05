@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:86584d2c-5b1a-416c-b5b4-a215ec21e649-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261202T110000Z
+SUMMARY:Délai de remise : Sanierung Kälte-/Eisbahntechnik inkl. Erweite
+ rung Technikgebäude
+DESCRIPTION:Acheteur public : KuBa Freizeitcenter AG\nDélai de remise 
+ : 02.12.2026\, 12 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/86584d2c-5b1a-416c-b5b4-a215ec21e649/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/86584d2c-5b1a-416c-b5b4-a215e
+ c21e649
+URL:https://auftragsregister.ch/fr/auftrag/86584d2c-5b1a-416c-b5b4-a215ec21
+ e649/
+LOCATION:Rheinfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Kälte-/Eisbahntechnik inkl. Erw
+ eiterung Technikgebäude
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

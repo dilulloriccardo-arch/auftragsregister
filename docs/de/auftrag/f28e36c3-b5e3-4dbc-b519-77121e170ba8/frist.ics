@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f28e36c3-b5e3-4dbc-b519-77121e170ba8-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Eingabefrist: Köniz\, Umgestaltung Haltestellen Mösliweg\, Belags
+ ersatz Landorfstrasse
+DESCRIPTION:Auftraggeber: Gemeinde Köniz\, Abteilung Finanzen und Verkehr\
+ nEingabefrist: 15.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregis
+ ter.ch/de/auftrag/f28e36c3-b5e3-4dbc-b519-77121e170ba8/\nAmtliche Publikat
+ ion: https://www.simap.ch/de/project-detail/f28e36c3-b5e3-4dbc-b519-77121e
+ 170ba8
+URL:https://auftragsregister.ch/de/auftrag/f28e36c3-b5e3-4dbc-b519-77121e17
+ 0ba8/
+LOCATION:Köniz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Köniz\, Umgestaltung Haltestellen Mösliweg\, Be
+ lagsersatz Landorfstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

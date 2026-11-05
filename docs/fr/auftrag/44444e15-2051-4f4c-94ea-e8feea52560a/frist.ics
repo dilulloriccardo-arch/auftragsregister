@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44444e15-2051-4f4c-94ea-e8feea52560a-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Délai de remise : Ersatz Höhenrettungsfahrzeug (ADL) Feuerwehr 
+ Uznach-Schmerikon
+DESCRIPTION:Acheteur public : Feuerwehr Uznach-Schmerikon\nDélai de remi
+ se : 14.12.2026\, 12 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/44444e15-2051-4f4c-94ea-e8feea52560a/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/44444e15-2051-4f4c-94ea-
+ e8feea52560a
+URL:https://auftragsregister.ch/fr/auftrag/44444e15-2051-4f4c-94ea-e8feea52
+ 560a/
+LOCATION:Uznach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatz Höhenrettungsfahrzeug (ADL) Feuerw
+ ehr Uznach-Schmerikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

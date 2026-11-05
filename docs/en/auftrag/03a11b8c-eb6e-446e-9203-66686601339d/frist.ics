@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:03a11b8c-eb6e-446e-9203-66686601339d-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T090000Z
+SUMMARY:Submission deadline: MP 3531_Neuerstellung/Erneuerung Grenzacherweg
+  im Abschnitt Kohlistieg bis Bettingerstrasse_Baumeisterarbeiten
+DESCRIPTION:Public buyer: Einwohnergemeinde Riehen\nSubmission deadline: 15
+  Dec 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/03a11b8c-eb6e-446e-9203-66686601339d/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/03a11b8c-eb6e-446e-9203-66686601339d
+URL:https://auftragsregister.ch/en/auftrag/03a11b8c-eb6e-446e-9203-66686601
+ 339d/
+LOCATION:Riehen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP 3531_Neuerstellung/Erneuerung Grenzache
+ rweg im Abschnitt Kohlistieg bis Bettingerstrasse_Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

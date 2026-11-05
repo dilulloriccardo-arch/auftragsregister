@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:24fcce72-15f6-448d-b38f-7ac269c7c007-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:1
+DTSTART:20261216T080000Z
+SUMMARY:Scadenza: Contratti quadro per l'hardware IT delle postazioni di la
+ voro
+DESCRIPTION:Ente pubblico: ETH Zürich - Procurement Services VPIN\nScadenz
+ a: 16.12.2026\, 09:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/24fcce72-15f6-448d-b38f-7ac269c7c007/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/24fcce72-15f6-448d-b38f-7ac269c7c007
+URL:https://auftragsregister.ch/it/auftrag/24fcce72-15f6-448d-b38f-7ac269c7
+ c007/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Contratti quadro per l'hardware IT delle postazioni d
+ i lavoro
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

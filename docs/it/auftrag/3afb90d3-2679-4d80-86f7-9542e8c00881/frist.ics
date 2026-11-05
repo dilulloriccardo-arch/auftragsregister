@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3afb90d3-2679-4d80-86f7-9542e8c00881-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T090000Z
+SUMMARY:Scadenza: Sanierung Götzisbodenweg
+DESCRIPTION:Ente pubblico: Gemeinde Pratteln\nScadenza: 15.12.2026\, 10:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/3afb90d3-2679-4d80-8
+ 6f7-9542e8c00881/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/3afb90d3-2679-4d80-86f7-9542e8c00881
+URL:https://auftragsregister.ch/it/auftrag/3afb90d3-2679-4d80-86f7-9542e8c0
+ 0881/
+LOCATION:Pratteln
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Götzisbodenweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

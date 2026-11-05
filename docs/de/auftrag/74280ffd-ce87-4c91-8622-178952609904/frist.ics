@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:74280ffd-ce87-4c91-8622-178952609904-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Eingabefrist: 13043.10 / 214-05 Holzbau\, Instandsetzung & Erweiter
+ ung Betriebsgebäude Seepolizei und Schifffahrtskontrolle Oberrieden
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Zürich\nEingabefrist: 15.12.20
+ 26\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/74280
+ ffd-ce87-4c91-8622-178952609904/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/74280ffd-ce87-4c91-8622-178952609904
+URL:https://auftragsregister.ch/de/auftrag/74280ffd-ce87-4c91-8622-17895260
+ 9904/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 13043.10 / 214-05 Holzbau\, Instandsetzung & Erwe
+ iterung Betriebsgebäude Seepolizei und Schifffahrtskontrolle Oberrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

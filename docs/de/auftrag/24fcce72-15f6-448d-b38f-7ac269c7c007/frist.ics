@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:24fcce72-15f6-448d-b38f-7ac269c7c007-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:1
+DTSTART:20261216T080000Z
+SUMMARY:Eingabefrist: Rahmenverträge IT Hardware für Arbeitsplätze
+DESCRIPTION:Auftraggeber: ETH Zürich - Procurement Services VPIN\nEingabef
+ rist: 16.12.2026\, 9.00 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/24fcce72-15f6-448d-b38f-7ac269c7c007/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/24fcce72-15f6-448d-b38f-7ac269c7c007
+URL:https://auftragsregister.ch/de/auftrag/24fcce72-15f6-448d-b38f-7ac269c7
+ c007/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rahmenverträge IT Hardware für Arbeitsplätze
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

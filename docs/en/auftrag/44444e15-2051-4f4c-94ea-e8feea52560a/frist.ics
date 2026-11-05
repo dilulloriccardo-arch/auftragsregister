@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44444e15-2051-4f4c-94ea-e8feea52560a-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Submission deadline: Replacement of Aerial Ladder Platform - Fire D
+ epartment Uznach-Schmerikon
+DESCRIPTION:Public buyer: Feuerwehr Uznach-Schmerikon\nSubmission deadline:
+  14 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/44444e15-2051-4f4c-94ea-e8feea52560a/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/44444e15-2051-4f4c-94ea-e8feea52560a
+URL:https://auftragsregister.ch/en/auftrag/44444e15-2051-4f4c-94ea-e8feea52
+ 560a/
+LOCATION:Uznach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Replacement of Aerial Ladder Platform - Fi
+ re Department Uznach-Schmerikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

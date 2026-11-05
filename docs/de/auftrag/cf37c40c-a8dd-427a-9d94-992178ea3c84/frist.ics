@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf37c40c-a8dd-427a-9d94-992178ea3c84-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Eingabefrist: Appel d'offre pour recherche mandataire architecte _ 
+ 4.41.040_Chateau 30 / Transfert-Moutier
+DESCRIPTION:Auftraggeber: Service des infrastructures (SIN) - Section des b
+ âtiments et des domaines (SBD)\nEingabefrist: 04.01.2027\, 12.00 Uhr\nIm
+  Register: https://auftragsregister.ch/de/auftrag/cf37c40c-a8dd-427a-9d94-
+ 992178ea3c84/\nAmtliche Publikation: https://www.simap.ch/de/project-detai
+ l/cf37c40c-a8dd-427a-9d94-992178ea3c84
+URL:https://auftragsregister.ch/de/auftrag/cf37c40c-a8dd-427a-9d94-992178ea
+ 3c84/
+LOCATION:Moutier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Appel d'offre pour recherche mandataire architect
+ e _ 4.41.040_Chateau 30 / Transfert-Moutier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

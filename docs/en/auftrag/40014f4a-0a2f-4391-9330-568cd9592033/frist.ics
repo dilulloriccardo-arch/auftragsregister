@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40014f4a-0a2f-4391-9330-568cd9592033-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Submission deadline: Landquart\, Ausbau Werkstatt thermische Fahrze
+ uge und Innenraumschaltanlage - BKP 213 Montagebau in Stahl
+DESCRIPTION:Public buyer: Rhätische Bahn AG\nSubmission deadline: 15 Dec
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/40
+ 014f4a-0a2f-4391-9330-568cd9592033/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/40014f4a-0a2f-4391-9330-568cd9592033
+URL:https://auftragsregister.ch/en/auftrag/40014f4a-0a2f-4391-9330-568cd959
+ 2033/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Landquart\, Ausbau Werkstatt thermische Fa
+ hrzeuge und Innenraumschaltanlage - BKP 213 Montagebau in Stahl
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

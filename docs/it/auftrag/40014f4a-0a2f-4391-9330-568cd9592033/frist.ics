@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40014f4a-0a2f-4391-9330-568cd9592033-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Scadenza: Landquart\, Ausbau Werkstatt thermische Fahrzeuge und Inn
+ enraumschaltanlage - BKP 213 Montagebau in Stahl
+DESCRIPTION:Ente pubblico: Rhätische Bahn AG\nScadenza: 15.12.2026\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/40014f4a-0a2f-4391-
+ 9330-568cd9592033/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/40014f4a-0a2f-4391-9330-568cd9592033
+URL:https://auftragsregister.ch/it/auftrag/40014f4a-0a2f-4391-9330-568cd959
+ 2033/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Landquart\, Ausbau Werkstatt thermische Fahrzeuge und
+  Innenraumschaltanlage - BKP 213 Montagebau in Stahl
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

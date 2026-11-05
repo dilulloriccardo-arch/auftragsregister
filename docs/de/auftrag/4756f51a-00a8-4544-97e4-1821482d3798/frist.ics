@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4756f51a-00a8-4544-97e4-1821482d3798-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Eingabefrist: Beschaffung Forstspezial-Knickschlepper
+DESCRIPTION:Auftraggeber: Zweckverband - Forstbetrieb Pontresina / Samedan\
+ nEingabefrist: 27.11.2026\, 16.00 Uhr\nIm Register: https://auftragsregis
+ ter.ch/de/auftrag/4756f51a-00a8-4544-97e4-1821482d3798/\nAmtliche Publikat
+ ion: https://www.simap.ch/de/project-detail/4756f51a-00a8-4544-97e4-182148
+ 2d3798
+URL:https://auftragsregister.ch/de/auftrag/4756f51a-00a8-4544-97e4-1821482d
+ 3798/
+LOCATION:Samedan
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung Forstspezial-Knickschlepper
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

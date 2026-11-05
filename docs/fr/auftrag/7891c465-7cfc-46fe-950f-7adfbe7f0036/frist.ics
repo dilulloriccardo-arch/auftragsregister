@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7891c465-7cfc-46fe-950f-7adfbe7f0036-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Délai de remise : Gemeinde Uetikon am See\, Alte Landstrasse/Fab
+ rikweg
+DESCRIPTION:Acheteur public : Gemeinde Uetikon am See\nDélai de remise
+  : 18.12.2026\, 11 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/7891c465-7cfc-46fe-950f-7adfbe7f0036/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/7891c465-7cfc-46fe-950f-7a
+ dfbe7f0036
+URL:https://auftragsregister.ch/fr/auftrag/7891c465-7cfc-46fe-950f-7adfbe7f
+ 0036/
+LOCATION:Uetikon am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gemeinde Uetikon am See\, Alte Landstrasse
+ /Fabrikweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

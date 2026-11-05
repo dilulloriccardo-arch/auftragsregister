@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7891c465-7cfc-46fe-950f-7adfbe7f0036-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Submission deadline: Gemeinde Uetikon am See\, Alte Landstrasse/Fab
+ rikweg
+DESCRIPTION:Public buyer: Gemeinde Uetikon am See\nSubmission deadline: 18
+  Dec 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/7891c465-7cfc-46fe-950f-7adfbe7f0036/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/7891c465-7cfc-46fe-950f-7adfbe7f0036
+URL:https://auftragsregister.ch/en/auftrag/7891c465-7cfc-46fe-950f-7adfbe7f
+ 0036/
+LOCATION:Uetikon am See
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gemeinde Uetikon am See\, Alte Landstrasse
+ /Fabrikweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

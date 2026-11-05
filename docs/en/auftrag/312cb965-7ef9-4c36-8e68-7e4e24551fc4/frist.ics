@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:312cb965-7ef9-4c36-8e68-7e4e24551fc4-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Submission deadline: Ecole du Mervelet (2380TI) photovoltaïque
+DESCRIPTION:Public buyer: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nS
+ ubmission deadline: 16 Dec 2026\, 11:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/312cb965-7ef9-4c36-8e68-7e4e24551fc4/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/312cb965-7ef9-4c36-8e68
+ -7e4e24551fc4
+URL:https://auftragsregister.ch/en/auftrag/312cb965-7ef9-4c36-8e68-7e4e2455
+ 1fc4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ecole du Mervelet (2380TI) photovoltaïque
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

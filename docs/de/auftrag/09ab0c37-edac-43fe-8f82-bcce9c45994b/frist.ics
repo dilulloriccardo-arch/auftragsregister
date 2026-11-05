@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:09ab0c37-edac-43fe-8f82-bcce9c45994b-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Eingabefrist: Assainissement - aménagement HDV7 Le Locle - LOT 41 
+ _ CFC 272 Vitrages intérieurs en métal et serrurerie
+DESCRIPTION:Auftraggeber: Service des bâtiments de l'Etat de Neuchâtel - 
+ DOSP\nEingabefrist: 15.12.2026\, 23.59 Uhr\nIm Register: https://auftrags
+ register.ch/de/auftrag/09ab0c37-edac-43fe-8f82-bcce9c45994b/\nAmtliche Pub
+ likation: https://www.simap.ch/de/project-detail/09ab0c37-edac-43fe-8f82-b
+ cce9c45994b
+URL:https://auftragsregister.ch/de/auftrag/09ab0c37-edac-43fe-8f82-bcce9c45
+ 994b/
+LOCATION:Le Locle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Assainissement - aménagement HDV7 Le Locle - LOT
+  41 _ CFC 272 Vitrages intérieurs en métal et serrurerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

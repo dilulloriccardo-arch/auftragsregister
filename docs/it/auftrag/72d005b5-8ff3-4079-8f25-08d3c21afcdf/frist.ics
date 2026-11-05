@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72d005b5-8ff3-4079-8f25-08d3c21afcdf-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261217T110000Z
+SUMMARY:Scadenza: CAIB_Accompagnement dans le cadrage\, l’acquisition et 
+ le déploiement d’un système d’information Achats
+DESCRIPTION:Ente pubblico: CAIB (Centrale d’achats et d’ingénierie bio
+ médicale Vaud-Genève)\nScadenza: 17.12.2026\, 12:00\nNel registro: https
+ ://auftragsregister.ch/it/auftrag/72d005b5-8ff3-4079-8f25-08d3c21afcdf/\nP
+ ubblicazione ufficiale: https://www.simap.ch/it/project-detail/72d005b5-8f
+ f3-4079-8f25-08d3c21afcdf
+URL:https://auftragsregister.ch/it/auftrag/72d005b5-8ff3-4079-8f25-08d3c21a
+ fcdf/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: CAIB_Accompagnement dans le cadrage\, l’acquisition
+  et le déploiement d’un système d’information Achats
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

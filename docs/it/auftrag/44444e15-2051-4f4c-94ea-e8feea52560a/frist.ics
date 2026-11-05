@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44444e15-2051-4f4c-94ea-e8feea52560a-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Scadenza: Ersatz Höhenrettungsfahrzeug (ADL) Feuerwehr Uznach-Schm
+ erikon
+DESCRIPTION:Ente pubblico: Feuerwehr Uznach-Schmerikon\nScadenza: 14.12.202
+ 6\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/44444e15-2
+ 051-4f4c-94ea-e8feea52560a/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/44444e15-2051-4f4c-94ea-e8feea52560a
+URL:https://auftragsregister.ch/it/auftrag/44444e15-2051-4f4c-94ea-e8feea52
+ 560a/
+LOCATION:Uznach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatz Höhenrettungsfahrzeug (ADL) Feuerwehr Uznach-
+ Schmerikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

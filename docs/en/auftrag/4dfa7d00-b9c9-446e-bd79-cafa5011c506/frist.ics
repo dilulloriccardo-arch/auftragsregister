@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4dfa7d00-b9c9-446e-bd79-cafa5011c506-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Submission deadline: Evaluation of ICT Infrastructure Sourcing Part
+ ners for the Municipality of Uitikon
+DESCRIPTION:Public buyer: Gemeinde Uitikon (Metagon AG)\nSubmission deadlin
+ e: 4 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/4dfa7d00-b9c9-446e-bd79-cafa5011c506/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/4dfa7d00-b9c9-446e-bd79-cafa5011c506
+URL:https://auftragsregister.ch/en/auftrag/4dfa7d00-b9c9-446e-bd79-cafa5011
+ c506/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Evaluation of ICT Infrastructure Sourcing 
+ Partners for the Municipality of Uitikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

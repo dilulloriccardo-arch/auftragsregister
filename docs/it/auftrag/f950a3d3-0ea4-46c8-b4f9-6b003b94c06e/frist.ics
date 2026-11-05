@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f950a3d3-0ea4-46c8-b4f9-6b003b94c06e-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Scadenza: Digitales Sturzpräventionssystem für das Stadtspital Z
+ ürich
+DESCRIPTION:Ente pubblico: GUD - Stadtspital Zürich (STZ)\nScadenza: 16.12
+ .2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/f950a3
+ d3-0ea4-46c8-b4f9-6b003b94c06e/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/f950a3d3-0ea4-46c8-b4f9-6b003b94c06e
+URL:https://auftragsregister.ch/it/auftrag/f950a3d3-0ea4-46c8-b4f9-6b003b94
+ c06e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Digitales Sturzpräventionssystem für das Stadtspita
+ l Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

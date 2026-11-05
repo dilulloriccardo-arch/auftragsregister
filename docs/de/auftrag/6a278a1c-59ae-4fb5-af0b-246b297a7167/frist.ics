@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a278a1c-59ae-4fb5-af0b-246b297a7167-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Eingabefrist: Assainissement - aménagement HDV7 Le Locle - LOT 39 
+ _ CFC 281.2/281.7 Revêtements de sol
+DESCRIPTION:Auftraggeber: Service des bâtiments de l'Etat de Neuchâtel - 
+ DOSP\nEingabefrist: 15.12.2026\, 23.59 Uhr\nIm Register: https://auftrags
+ register.ch/de/auftrag/6a278a1c-59ae-4fb5-af0b-246b297a7167/\nAmtliche Pub
+ likation: https://www.simap.ch/de/project-detail/6a278a1c-59ae-4fb5-af0b-2
+ 46b297a7167
+URL:https://auftragsregister.ch/de/auftrag/6a278a1c-59ae-4fb5-af0b-246b297a
+ 7167/
+LOCATION:Le Locle
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Assainissement - aménagement HDV7 Le Locle - LOT
+  39 _ CFC 281.2/281.7 Revêtements de sol
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4756f51a-00a8-4544-97e4-1821482d3798-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Délai de remise : Beschaffung Forstspezial-Knickschlepper
+DESCRIPTION:Acheteur public : Zweckverband - Forstbetrieb Pontresina / Sa
+ medan\nDélai de remise : 27.11.2026\, 16 h 00\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/4756f51a-00a8-4544-97e4-1821482d37
+ 98/\nPublication officielle : https://www.simap.ch/fr/project-detail/475
+ 6f51a-00a8-4544-97e4-1821482d3798
+URL:https://auftragsregister.ch/fr/auftrag/4756f51a-00a8-4544-97e4-1821482d
+ 3798/
+LOCATION:Samedan
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Beschaffung Forstspezial-Knickschlepper
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

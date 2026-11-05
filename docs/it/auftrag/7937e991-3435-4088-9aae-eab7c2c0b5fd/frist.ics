@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7937e991-3435-4088-9aae-eab7c2c0b5fd-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:1
+DTSTART:20261116T225900Z
+SUMMARY:Scadenza: N20.71 MP-180010 - NEB Contournement Le Locle - Auteur de
+  projet (avec DLT) pour la gestion des matériaux (ID 11989)
+DESCRIPTION:Ente pubblico: Office fédéral des routes OFROU\, Division Inf
+ rastructure routière Ouest\, filiale Estavayer-le-Lac\nScadenza: 16.11.20
+ 26\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/7937e991-
+ 3435-4088-9aae-eab7c2c0b5fd/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/7937e991-3435-4088-9aae-eab7c2c0b5fd
+URL:https://auftragsregister.ch/it/auftrag/7937e991-3435-4088-9aae-eab7c2c0
+ b5fd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N20.71 MP-180010 - NEB Contournement Le Locle - Auteu
+ r de projet (avec DLT) pour la gestion des matériaux (ID 11989)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

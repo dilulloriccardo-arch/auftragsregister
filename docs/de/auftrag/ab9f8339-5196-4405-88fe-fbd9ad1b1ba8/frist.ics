@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab9f8339-5196-4405-88fe-fbd9ad1b1ba8-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261125T104500Z
+SUMMARY:Eingabefrist: Copie ECOLE DE ‘’CORDE’’ A ARDON\, REMPLACEME
+ NT DES FENÊTRES ET CLOISONS FEU\, AILE OUEST
+DESCRIPTION:Auftraggeber: Commune d'Ardon (CEPA Sàrl)\nEingabefrist: 25.11
+ .2026\, 11.45 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ab
+ 9f8339-5196-4405-88fe-fbd9ad1b1ba8/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/ab9f8339-5196-4405-88fe-fbd9ad1b1ba8
+URL:https://auftragsregister.ch/de/auftrag/ab9f8339-5196-4405-88fe-fbd9ad1b
+ 1ba8/
+LOCATION:Ardon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Copie ECOLE DE ‘’CORDE’’ A ARDON\, REMPLA
+ CEMENT DES FENÊTRES ET CLOISONS FEU\, AILE OUEST
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

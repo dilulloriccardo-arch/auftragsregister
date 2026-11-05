@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf37c40c-a8dd-427a-9d94-992178ea3c84-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Délai de remise : Appel d'offre pour recherche mandataire archit
+ ecte _ 4.41.040_Chateau 30 / Transfert-Moutier
+DESCRIPTION:Acheteur public : Service des infrastructures (SIN) - Section
+  des bâtiments et des domaines (SBD)\nDélai de remise : 04.01.2027\, 1
+ 2 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/cf
+ 37c40c-a8dd-427a-9d94-992178ea3c84/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/cf37c40c-a8dd-427a-9d94-992178ea3c84
+URL:https://auftragsregister.ch/fr/auftrag/cf37c40c-a8dd-427a-9d94-992178ea
+ 3c84/
+LOCATION:Moutier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offre pour recherche mandataire ar
+ chitecte _ 4.41.040_Chateau 30 / Transfert-Moutier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

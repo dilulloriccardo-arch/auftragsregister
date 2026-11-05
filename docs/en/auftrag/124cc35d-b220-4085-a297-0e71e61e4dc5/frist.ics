@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:124cc35d-b220-4085-a297-0e71e61e4dc5-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Submission deadline: Muséum d'histoire naturelle (2348TI-Bis) rén
+ ovation des sièges
+DESCRIPTION:Public buyer: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nS
+ ubmission deadline: 16 Dec 2026\, 11:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/124cc35d-b220-4085-a297-0e71e61e4dc5/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/124cc35d-b220-4085-a297
+ -0e71e61e4dc5
+URL:https://auftragsregister.ch/en/auftrag/124cc35d-b220-4085-a297-0e71e61e
+ 4dc5/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Muséum d'histoire naturelle (2348TI-Bis) 
+ rénovation des sièges
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

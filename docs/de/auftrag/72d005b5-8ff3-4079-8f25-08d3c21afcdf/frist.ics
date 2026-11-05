@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72d005b5-8ff3-4079-8f25-08d3c21afcdf-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261217T110000Z
+SUMMARY:Eingabefrist: CAIB_Accompagnement dans le cadrage\, l’acquisition
+  et le déploiement d’un système d’information Achats
+DESCRIPTION:Auftraggeber: CAIB (Centrale d’achats et d’ingénierie biom
+ édicale Vaud-Genève)\nEingabefrist: 17.12.2026\, 12.00 Uhr\nIm Register
+ : https://auftragsregister.ch/de/auftrag/72d005b5-8ff3-4079-8f25-08d3c21af
+ cdf/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/72d005b
+ 5-8ff3-4079-8f25-08d3c21afcdf
+URL:https://auftragsregister.ch/de/auftrag/72d005b5-8ff3-4079-8f25-08d3c21a
+ fcdf/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CAIB_Accompagnement dans le cadrage\, l’acquisi
+ tion et le déploiement d’un système d’information Achats
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

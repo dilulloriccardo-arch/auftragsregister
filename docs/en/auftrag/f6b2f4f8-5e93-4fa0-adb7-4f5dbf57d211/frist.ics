@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f6b2f4f8-5e93-4fa0-adb7-4f5dbf57d211-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Submission deadline: Bau Nr. 06009 - Wesentliche Änderung Limmatta
+ lstrasse\, Abschnitt Wartauweg bis Limmattalstrasse 286\, BKP 221.2 Fenste
+ r aus Kunststoff
+DESCRIPTION:Public buyer: Tiefbauamt\, Abt. Realisierung\, Fachstelle Schal
+ lschutzfenster\nSubmission deadline: 26 Nov 2026\, 16:00\nIn the registe
+ r: https://auftragsregister.ch/en/auftrag/f6b2f4f8-5e93-4fa0-adb7-4f5dbf57
+ d211/\nOfficial publication: https://www.simap.ch/en/project-detail/f6b2f4
+ f8-5e93-4fa0-adb7-4f5dbf57d211
+URL:https://auftragsregister.ch/en/auftrag/f6b2f4f8-5e93-4fa0-adb7-4f5dbf57
+ d211/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bau Nr. 06009 - Wesentliche Änderung Limm
+ attalstrasse\, Abschnitt Wartauweg bis Limmattalstrasse 286\, BKP 221.2 Fe
+ nster aus Kunststoff
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

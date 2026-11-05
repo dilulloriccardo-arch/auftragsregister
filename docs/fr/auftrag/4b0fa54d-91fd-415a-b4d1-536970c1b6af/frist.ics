@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b0fa54d-91fd-415a-b4d1-536970c1b6af-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261217T103000Z
+SUMMARY:Délai de remise : Neubau Schulhaus Wolhusen\, Butzenstrasse 4\, 
+ 8910 Affoltern am Albis: BKP 421 Gärtnerarbeiten
+DESCRIPTION:Acheteur public : Stadt Affoltern am Albis Immobilienabteilun
+ g\nDélai de remise : 17.12.2026\, 11 h 30\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/4b0fa54d-91fd-415a-b4d1-536970c1b6af/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/4b0fa54
+ d-91fd-415a-b4d1-536970c1b6af
+URL:https://auftragsregister.ch/fr/auftrag/4b0fa54d-91fd-415a-b4d1-536970c1
+ b6af/
+LOCATION:Affoltern am Albis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Schulhaus Wolhusen\, Butzenstrasse 
+ 4\, 8910 Affoltern am Albis: BKP 421 Gärtnerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

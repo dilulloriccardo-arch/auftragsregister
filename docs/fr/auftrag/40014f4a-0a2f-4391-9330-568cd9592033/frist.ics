@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40014f4a-0a2f-4391-9330-568cd9592033-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Délai de remise : Landquart\, Ausbau Werkstatt thermische Fahrze
+ uge und Innenraumschaltanlage - BKP 213 Montagebau in Stahl
+DESCRIPTION:Acheteur public : Rhätische Bahn AG\nDélai de remise : 15
+ .12.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/40014f4a-0a2f-4391-9330-568cd9592033/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/40014f4a-0a2f-4391-9330-568cd9592
+ 033
+URL:https://auftragsregister.ch/fr/auftrag/40014f4a-0a2f-4391-9330-568cd959
+ 2033/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Landquart\, Ausbau Werkstatt thermische Fa
+ hrzeuge und Innenraumschaltanlage - BKP 213 Montagebau in Stahl
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

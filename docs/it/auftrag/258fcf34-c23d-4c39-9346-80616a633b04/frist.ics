@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:258fcf34-c23d-4c39-9346-80616a633b04-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20270122T225900Z
+SUMMARY:Scadenza: Mikroverunreinigung - SKP 411.1 - Baumeisterarbeiten Rüc
+ khaltebecken
+DESCRIPTION:Ente pubblico: Spitalanlagengesellschaft HOCH Health Ostschweiz
+ \nScadenza: 22.01.2027\, 23:59\nNel registro: https://auftragsregister.ch/
+ it/auftrag/258fcf34-c23d-4c39-9346-80616a633b04/\nPubblicazione ufficiale:
+  https://www.simap.ch/it/project-detail/258fcf34-c23d-4c39-9346-80616a633b
+ 04
+URL:https://auftragsregister.ch/it/auftrag/258fcf34-c23d-4c39-9346-80616a63
+ 3b04/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mikroverunreinigung - SKP 411.1 - Baumeisterarbeiten 
+ Rückhaltebecken
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

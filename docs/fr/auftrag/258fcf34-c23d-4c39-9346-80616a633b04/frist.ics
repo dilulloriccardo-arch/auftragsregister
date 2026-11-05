@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:258fcf34-c23d-4c39-9346-80616a633b04-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20270122T225900Z
+SUMMARY:Délai de remise : Mikroverunreinigung - SKP 411.1 - Baumeisterar
+ beiten Rückhaltebecken
+DESCRIPTION:Acheteur public : Spitalanlagengesellschaft HOCH Health Ostsc
+ hweiz\nDélai de remise : 22.01.2027\, 23 h 59\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/258fcf34-c23d-4c39-9346-80616a633b
+ 04/\nPublication officielle : https://www.simap.ch/fr/project-detail/258
+ fcf34-c23d-4c39-9346-80616a633b04
+URL:https://auftragsregister.ch/fr/auftrag/258fcf34-c23d-4c39-9346-80616a63
+ 3b04/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mikroverunreinigung - SKP 411.1 - Baumeist
+ erarbeiten Rückhaltebecken
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

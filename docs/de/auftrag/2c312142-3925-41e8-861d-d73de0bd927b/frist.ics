@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2c312142-3925-41e8-861d-d73de0bd927b-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Eingabefrist: 00783 Gebäude BOT P4\, Gewächshausanlage: Planung\,
+  Fabrikation und Lieferung mit Montage
+DESCRIPTION:Auftraggeber: Universität Zürich - Bauprojektmanagement\nEing
+ abefrist: 07.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/2c312142-3925-41e8-861d-d73de0bd927b/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/2c312142-3925-41e8-861d-d73de0bd927
+ b
+URL:https://auftragsregister.ch/de/auftrag/2c312142-3925-41e8-861d-d73de0bd
+ 927b/
+LOCATION:Zollikerstrasse 105
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 00783 Gebäude BOT P4\, Gewächshausanlage: Planu
+ ng\, Fabrikation und Lieferung mit Montage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

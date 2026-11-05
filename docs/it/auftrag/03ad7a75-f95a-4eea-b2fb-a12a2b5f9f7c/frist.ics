@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:03ad7a75-f95a-4eea-b2fb-a12a2b5f9f7c-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Scadenza: Châtillon (JU) - Traversée du village (1ère étape)
+DESCRIPTION:Ente pubblico: sd ingénierie jura sa\nScadenza: 03.12.2026\nNe
+ l registro: https://auftragsregister.ch/it/auftrag/03ad7a75-f95a-4eea-b2fb
+ -a12a2b5f9f7c/\nPubblicazione ufficiale: https://www.simap.ch/it/project-d
+ etail/03ad7a75-f95a-4eea-b2fb-a12a2b5f9f7c
+URL:https://auftragsregister.ch/it/auftrag/03ad7a75-f95a-4eea-b2fb-a12a2b5f
+ 9f7c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Châtillon (JU) - Traversée du village (1ère étape
+ )
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

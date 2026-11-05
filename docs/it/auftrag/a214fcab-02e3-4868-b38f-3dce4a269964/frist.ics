@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a214fcab-02e3-4868-b38f-3dce4a269964-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261201T110000Z
+SUMMARY:Scadenza: VSG Amriswil-Hefenhofen-Sommeri: Sekundarschule Grenzstra
+ sse\, Gebäude B\; Ersatz Beleuchtung und Gebäudeautomation
+DESCRIPTION:Ente pubblico: Volksschulgemeinde Amriswil-Hefenhofen-Sommeri\n
+ Scadenza: 01.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/a214fcab-02e3-4868-b38f-3dce4a269964/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/a214fcab-02e3-4868-b38f-3dce4a269964
+URL:https://auftragsregister.ch/it/auftrag/a214fcab-02e3-4868-b38f-3dce4a26
+ 9964/
+LOCATION:Amriswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: VSG Amriswil-Hefenhofen-Sommeri: Sekundarschule Grenz
+ strasse\, Gebäude B\; Ersatz Beleuchtung und Gebäudeautomation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

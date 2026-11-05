@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:21fb327e-0ddb-4609-909d-d223f8190fc8-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Submission deadline: Ponte Rià de la Molera
+DESCRIPTION:Public buyer: Comune di Lostallo\nSubmission deadline: 4 Dec 
+ 2026\nIn the register: https://auftragsregister.ch/en/auftrag/21fb327e-0dd
+ b-4609-909d-d223f8190fc8/\nOfficial publication: https://www.simap.ch/en/p
+ roject-detail/21fb327e-0ddb-4609-909d-d223f8190fc8
+URL:https://auftragsregister.ch/en/auftrag/21fb327e-0ddb-4609-909d-d223f819
+ 0fc8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ponte Rià de la Molera
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

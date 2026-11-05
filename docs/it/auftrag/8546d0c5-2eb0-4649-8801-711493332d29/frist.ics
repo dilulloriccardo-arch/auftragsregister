@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8546d0c5-2eb0-4649-8801-711493332d29-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261204T130000Z
+SUMMARY:Scadenza: Altgasse\, Gemeinde Baar: Neubau Bushaltestelle und Parkp
+ lätze beim Friedhof
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Baar\; Tiefbau\nScadenza: 04.1
+ 2.2026\, 14:00\nNel registro: https://auftragsregister.ch/it/auftrag/8546d
+ 0c5-2eb0-4649-8801-711493332d29/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/8546d0c5-2eb0-4649-8801-711493332d29
+URL:https://auftragsregister.ch/it/auftrag/8546d0c5-2eb0-4649-8801-71149333
+ 2d29/
+LOCATION:Baar
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Altgasse\, Gemeinde Baar: Neubau Bushaltestelle und P
+ arkplätze beim Friedhof
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

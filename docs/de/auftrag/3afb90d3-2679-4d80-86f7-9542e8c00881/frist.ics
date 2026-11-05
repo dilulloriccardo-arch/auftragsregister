@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3afb90d3-2679-4d80-86f7-9542e8c00881-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T090000Z
+SUMMARY:Eingabefrist: Sanierung Götzisbodenweg
+DESCRIPTION:Auftraggeber: Gemeinde Pratteln\nEingabefrist: 15.12.2026\, 10.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3afb90d3-2679
+ -4d80-86f7-9542e8c00881/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/3afb90d3-2679-4d80-86f7-9542e8c00881
+URL:https://auftragsregister.ch/de/auftrag/3afb90d3-2679-4d80-86f7-9542e8c0
+ 0881/
+LOCATION:Pratteln
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Götzisbodenweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

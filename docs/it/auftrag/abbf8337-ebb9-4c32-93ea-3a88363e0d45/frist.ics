@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abbf8337-ebb9-4c32-93ea-3a88363e0d45-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Scadenza: Marché de fourniture de câbles à basse et moyenne tens
+ ion
+DESCRIPTION:Ente pubblico: Viteos SA\nScadenza: 16.12.2026\, 12:00\nNel reg
+ istro: https://auftragsregister.ch/it/auftrag/abbf8337-ebb9-4c32-93ea-3a88
+ 363e0d45/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail
+ /abbf8337-ebb9-4c32-93ea-3a88363e0d45
+URL:https://auftragsregister.ch/it/auftrag/abbf8337-ebb9-4c32-93ea-3a88363e
+ 0d45/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Marché de fourniture de câbles à basse et moyenne 
+ tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

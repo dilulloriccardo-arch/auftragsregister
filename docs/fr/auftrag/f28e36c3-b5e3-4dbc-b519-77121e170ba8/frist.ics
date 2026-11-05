@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f28e36c3-b5e3-4dbc-b519-77121e170ba8-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Délai de remise : Köniz\, Umgestaltung Haltestellen Mösliweg\,
+  Belagsersatz Landorfstrasse
+DESCRIPTION:Acheteur public : Gemeinde Köniz\, Abteilung Finanzen und Ve
+ rkehr\nDélai de remise : 15.12.2026\, 23 h 59\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/f28e36c3-b5e3-4dbc-b519-77121e170b
+ a8/\nPublication officielle : https://www.simap.ch/fr/project-detail/f28
+ e36c3-b5e3-4dbc-b519-77121e170ba8
+URL:https://auftragsregister.ch/fr/auftrag/f28e36c3-b5e3-4dbc-b519-77121e17
+ 0ba8/
+LOCATION:Köniz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Köniz\, Umgestaltung Haltestellen Mösliw
+ eg\, Belagsersatz Landorfstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40ac59ac-85b5-4689-bddd-0da85c8613fc-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261211T100000Z
+SUMMARY:Submission deadline: CDV Locarno - Appalto per prestazioni di proge
+ ttazione da ingegnere civile fasi SIA 41-53 relative al potenziamento cana
+ lizzazione consortile tratte M3360-MSP89 in territorio del Comune di Maggi
+ a
+DESCRIPTION:Public buyer: Consorzio Depurazione Acque del Verbano\nSubmissi
+ on deadline: 11 Dec 2026\, 11:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/40ac59ac-85b5-4689-bddd-0da85c8613fc/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/40ac59ac-85b5-4689-bddd-0da85c
+ 8613fc
+URL:https://auftragsregister.ch/en/auftrag/40ac59ac-85b5-4689-bddd-0da85c86
+ 13fc/
+LOCATION:Maggia
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: CDV Locarno - Appalto per prestazioni di p
+ rogettazione da ingegnere civile fasi SIA 41-53 relative al potenziamento 
+ canalizzazione consortile tratte M3360-MSP89 in territorio del Comune di M
+ aggia
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

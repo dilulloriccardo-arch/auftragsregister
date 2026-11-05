@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4dfa7d00-b9c9-446e-bd79-cafa5011c506-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Scadenza: Evaluation ICT-Infrastruktur Sourcing Partner für die Ge
+ meinde Uitikon
+DESCRIPTION:Ente pubblico: Gemeinde Uitikon (Metagon AG)\nScadenza: 04.12.2
+ 026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/4dfa7d00
+ -b9c9-446e-bd79-cafa5011c506/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/4dfa7d00-b9c9-446e-bd79-cafa5011c506
+URL:https://auftragsregister.ch/it/auftrag/4dfa7d00-b9c9-446e-bd79-cafa5011
+ c506/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Evaluation ICT-Infrastruktur Sourcing Partner für di
+ e Gemeinde Uitikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

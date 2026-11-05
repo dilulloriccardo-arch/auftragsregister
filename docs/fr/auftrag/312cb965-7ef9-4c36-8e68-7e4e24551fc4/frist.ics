@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:312cb965-7ef9-4c36-8e68-7e4e24551fc4-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Délai de remise : Ecole du Mervelet (2380TI) photovoltaïque
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 16.12.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/312cb965-7ef9-4c36-8e68-7e4e24551fc
+ 4/\nPublication officielle : https://www.simap.ch/fr/project-detail/312c
+ b965-7ef9-4c36-8e68-7e4e24551fc4
+URL:https://auftragsregister.ch/fr/auftrag/312cb965-7ef9-4c36-8e68-7e4e2455
+ 1fc4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ecole du Mervelet (2380TI) photovoltaïque
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

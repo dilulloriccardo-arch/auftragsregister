@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f950a3d3-0ea4-46c8-b4f9-6b003b94c06e-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Submission deadline: Digitales Sturzpräventionssystem für das Sta
+ dtspital Zürich
+DESCRIPTION:Public buyer: GUD - Stadtspital Zürich (STZ)\nSubmission deadl
+ ine: 16 Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/f950a3d3-0ea4-46c8-b4f9-6b003b94c06e/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/f950a3d3-0ea4-46c8-b4f9-6b003b94c06e
+URL:https://auftragsregister.ch/en/auftrag/f950a3d3-0ea4-46c8-b4f9-6b003b94
+ c06e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Digitales Sturzpräventionssystem für das
+  Stadtspital Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf92ac73-791d-4978-8d75-35d78e4e92d3-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T160000Z
+SUMMARY:Délai de remise : Voies ferrées du quai du Général-Guisan
+DESCRIPTION:Acheteur public : Verkehrsbetriebe Zürich (VBZ)\nDélai de r
+ emise : 15.12.2026\, 17 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/cf92ac73-791d-4978-8d75-35d78e4e92d3/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/cf92ac73-791d-4978-8d
+ 75-35d78e4e92d3
+URL:https://auftragsregister.ch/fr/auftrag/cf92ac73-791d-4978-8d75-35d78e4e
+ 92d3/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Voies ferrées du quai du Général-Guisan
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

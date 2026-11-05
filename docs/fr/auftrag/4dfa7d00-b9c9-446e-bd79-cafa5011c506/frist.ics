@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4dfa7d00-b9c9-446e-bd79-cafa5011c506-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Délai de remise : Evaluation ICT-Infrastruktur Sourcing Partner 
+ für die Gemeinde Uitikon
+DESCRIPTION:Acheteur public : Gemeinde Uitikon (Metagon AG)\nDélai de re
+ mise : 04.12.2026\, 12 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/4dfa7d00-b9c9-446e-bd79-cafa5011c506/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/4dfa7d00-b9c9-446e-bd7
+ 9-cafa5011c506
+URL:https://auftragsregister.ch/fr/auftrag/4dfa7d00-b9c9-446e-bd79-cafa5011
+ c506/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Evaluation ICT-Infrastruktur Sourcing Part
+ ner für die Gemeinde Uitikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

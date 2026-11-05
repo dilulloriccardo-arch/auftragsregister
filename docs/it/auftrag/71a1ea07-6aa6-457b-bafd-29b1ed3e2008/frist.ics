@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71a1ea07-6aa6-457b-bafd-29b1ed3e2008-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261202T100000Z
+SUMMARY:Scadenza: Umbau Schulhaus Rickenbach BKP 230
+DESCRIPTION:Ente pubblico: konstruo AG Co. Architekten Kollektiv AG\nScaden
+ za: 02.12.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/71a1ea07-6aa6-457b-bafd-29b1ed3e2008/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/71a1ea07-6aa6-457b-bafd-29b1ed3e2008
+URL:https://auftragsregister.ch/it/auftrag/71a1ea07-6aa6-457b-bafd-29b1ed3e
+ 2008/
+LOCATION:Rickenbach ZH
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Umbau Schulhaus Rickenbach BKP 230
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44444e15-2051-4f4c-94ea-e8feea52560a-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: Ersatz Höhenrettungsfahrzeug (ADL) Feuerwehr Uznach-
+ Schmerikon
+DESCRIPTION:Auftraggeber: Feuerwehr Uznach-Schmerikon\nEingabefrist: 14.12.
+ 2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/444
+ 44e15-2051-4f4c-94ea-e8feea52560a/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/44444e15-2051-4f4c-94ea-e8feea52560a
+URL:https://auftragsregister.ch/de/auftrag/44444e15-2051-4f4c-94ea-e8feea52
+ 560a/
+LOCATION:Uznach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatz Höhenrettungsfahrzeug (ADL) Feuerwehr Uzn
+ ach-Schmerikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

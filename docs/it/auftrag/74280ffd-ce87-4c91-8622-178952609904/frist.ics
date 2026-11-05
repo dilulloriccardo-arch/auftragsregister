@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:74280ffd-ce87-4c91-8622-178952609904-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T150000Z
+SUMMARY:Scadenza: 13043.10 / 214-05 Holzbau\, Instandsetzung & Erweiterung 
+ Betriebsgebäude Seepolizei und Schifffahrtskontrolle Oberrieden
+DESCRIPTION:Ente pubblico: Hochbauamt Kanton Zürich\nScadenza: 15.12.2026\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/74280ffd-ce8
+ 7-4c91-8622-178952609904/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/74280ffd-ce87-4c91-8622-178952609904
+URL:https://auftragsregister.ch/it/auftrag/74280ffd-ce87-4c91-8622-17895260
+ 9904/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 13043.10 / 214-05 Holzbau\, Instandsetzung & Erweiter
+ ung Betriebsgebäude Seepolizei und Schifffahrtskontrolle Oberrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

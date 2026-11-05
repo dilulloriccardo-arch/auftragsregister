@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f6b2f4f8-5e93-4fa0-adb7-4f5dbf57d211-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Eingabefrist: Bau Nr. 06009 - Wesentliche Änderung Limmattalstrass
+ e\, Abschnitt Wartauweg bis Limmattalstrasse 286\, BKP 221.2 Fenster aus K
+ unststoff
+DESCRIPTION:Auftraggeber: Tiefbauamt\, Abt. Realisierung\, Fachstelle Schal
+ lschutzfenster\nEingabefrist: 26.11.2026\, 16.00 Uhr\nIm Register: https:
+ //auftragsregister.ch/de/auftrag/f6b2f4f8-5e93-4fa0-adb7-4f5dbf57d211/\nAm
+ tliche Publikation: https://www.simap.ch/de/project-detail/f6b2f4f8-5e93-4
+ fa0-adb7-4f5dbf57d211
+URL:https://auftragsregister.ch/de/auftrag/f6b2f4f8-5e93-4fa0-adb7-4f5dbf57
+ d211/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bau Nr. 06009 - Wesentliche Änderung Limmattalst
+ rasse\, Abschnitt Wartauweg bis Limmattalstrasse 286\, BKP 221.2 Fenster a
+ us Kunststoff
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:283bffa1-d9e2-4512-8c22-f747721cb351-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20270119T150000Z
+SUMMARY:Eingabefrist: Réaménagement des rives du lac de Nyon
+DESCRIPTION:Auftraggeber: Ville de Nyon - Service du territoire (Contour)\n
+ Eingabefrist: 19.01.2027\, 16.00 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/283bffa1-d9e2-4512-8c22-f747721cb351/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/283bffa1-d9e2-4512-8c22-f747721
+ cb351
+URL:https://auftragsregister.ch/de/auftrag/283bffa1-d9e2-4512-8c22-f747721c
+ b351/
+LOCATION:Nyon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Réaménagement des rives du lac de Nyon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

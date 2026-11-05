@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:882c6157-0375-4081-97d9-741b128ec2a5-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261210T153000Z
+SUMMARY:Eingabefrist: Centre logistique et militaire d'Aire la Ville
+DESCRIPTION:Auftraggeber: Service Achats et Contractualisation (OCBA)\nEing
+ abefrist: 10.12.2026\, 16.30 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/882c6157-0375-4081-97d9-741b128ec2a5/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/882c6157-0375-4081-97d9-741b128ec2a
+ 5
+URL:https://auftragsregister.ch/de/auftrag/882c6157-0375-4081-97d9-741b128e
+ c2a5/
+LOCATION:Aire la Ville
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Centre logistique et militaire d'Aire la Ville
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

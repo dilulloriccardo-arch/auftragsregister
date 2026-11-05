@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:158eefdc-93c1-4693-9c8b-02a883dcb337-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261204T150000Z
+SUMMARY:Submission deadline: 45790.10 / 242.00 Heizung-Erzeugung\, BD ALN S
+ TRI WÜ Ersatz Heizung\, Riedhofstrasse 62/64\, 8408 Winterthur
+DESCRIPTION:Public buyer: Hochbauamt Baubereich A\nSubmission deadline: 4 
+ Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /158eefdc-93c1-4693-9c8b-02a883dcb337/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/158eefdc-93c1-4693-9c8b-02a883dcb337
+URL:https://auftragsregister.ch/en/auftrag/158eefdc-93c1-4693-9c8b-02a883dc
+ b337/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 45790.10 / 242.00 Heizung-Erzeugung\, BD A
+ LN STRI WÜ Ersatz Heizung\, Riedhofstrasse 62/64\, 8408 Winterthur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

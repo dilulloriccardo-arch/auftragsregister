@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f6b2f4f8-5e93-4fa0-adb7-4f5dbf57d211-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261126T150000Z
+SUMMARY:Scadenza: Bau Nr. 06009 - Wesentliche Änderung Limmattalstrasse\, 
+ Abschnitt Wartauweg bis Limmattalstrasse 286\, BKP 221.2 Fenster aus Kunst
+ stoff
+DESCRIPTION:Ente pubblico: Tiefbauamt\, Abt. Realisierung\, Fachstelle Scha
+ llschutzfenster\nScadenza: 26.11.2026\, 16:00\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/f6b2f4f8-5e93-4fa0-adb7-4f5dbf57d211/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/f6b2f4f8-5e93-4fa0-
+ adb7-4f5dbf57d211
+URL:https://auftragsregister.ch/it/auftrag/f6b2f4f8-5e93-4fa0-adb7-4f5dbf57
+ d211/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bau Nr. 06009 - Wesentliche Änderung Limmattalstrass
+ e\, Abschnitt Wartauweg bis Limmattalstrasse 286\, BKP 221.2 Fenster aus K
+ unststoff
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

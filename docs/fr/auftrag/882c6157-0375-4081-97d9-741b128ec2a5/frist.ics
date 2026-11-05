@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:882c6157-0375-4081-97d9-741b128ec2a5-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261210T153000Z
+SUMMARY:Délai de remise : Centre logistique et militaire d'Aire la Ville
+DESCRIPTION:Acheteur public : Service Achats et Contractualisation (OCBA)
+ \nDélai de remise : 10.12.2026\, 16 h 30\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/882c6157-0375-4081-97d9-741b128ec2a5/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/882c6157
+ -0375-4081-97d9-741b128ec2a5
+URL:https://auftragsregister.ch/fr/auftrag/882c6157-0375-4081-97d9-741b128e
+ c2a5/
+LOCATION:Aire la Ville
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Centre logistique et militaire d'Aire la V
+ ille
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

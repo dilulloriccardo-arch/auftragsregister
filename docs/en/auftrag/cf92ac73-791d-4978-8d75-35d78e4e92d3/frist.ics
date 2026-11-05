@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf92ac73-791d-4978-8d75-35d78e4e92d3-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T160000Z
+SUMMARY:Submission deadline: Gleisanlagen General-Guisan-Quai
+DESCRIPTION:Public buyer: Verkehrsbetriebe Zürich (VBZ)\nSubmission deadli
+ ne: 15 Dec 2026\, 17:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/cf92ac73-791d-4978-8d75-35d78e4e92d3/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/cf92ac73-791d-4978-8d75-35d78e4e92d3
+URL:https://auftragsregister.ch/en/auftrag/cf92ac73-791d-4978-8d75-35d78e4e
+ 92d3/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gleisanlagen General-Guisan-Quai
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

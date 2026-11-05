@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:124cc35d-b220-4085-a297-0e71e61e4dc5-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Délai de remise : Muséum d'histoire naturelle (2348TI-Bis) rén
+ ovation des sièges
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 16.12.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/124cc35d-b220-4085-a297-0e71e61e4dc
+ 5/\nPublication officielle : https://www.simap.ch/fr/project-detail/124c
+ c35d-b220-4085-a297-0e71e61e4dc5
+URL:https://auftragsregister.ch/fr/auftrag/124cc35d-b220-4085-a297-0e71e61e
+ 4dc5/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Muséum d'histoire naturelle (2348TI-Bis) 
+ rénovation des sièges
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

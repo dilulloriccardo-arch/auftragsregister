@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f950a3d3-0ea4-46c8-b4f9-6b003b94c06e-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Délai de remise : Système numérique de prévention des chutes 
+ destiné à l’Hôpital municipal de Zurich
+DESCRIPTION:Acheteur public : GUD - Stadtspital Zürich (STZ)\nDélai de 
+ remise : 16.12.2026\, 23 h 59\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/f950a3d3-0ea4-46c8-b4f9-6b003b94c06e/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/f950a3d3-0ea4-46c8-b
+ 4f9-6b003b94c06e
+URL:https://auftragsregister.ch/fr/auftrag/f950a3d3-0ea4-46c8-b4f9-6b003b94
+ c06e/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Système numérique de prévention des chu
+ tes destiné à l’Hôpital municipal de Zurich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

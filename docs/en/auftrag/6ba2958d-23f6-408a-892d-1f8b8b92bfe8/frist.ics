@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6ba2958d-23f6-408a-892d-1f8b8b92bfe8-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Submission deadline: MP 2026.03.836 - Contrat-cadre pour la fournit
+ ure de mâts
+DESCRIPTION:Public buyer: Transports publics de la région lausannoise sa\n
+ Submission deadline: 15 Dec 2026\, 12:00\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/6ba2958d-23f6-408a-892d-1f8b8b92bfe8/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/6ba2958d-23f6-408a-892
+ d-1f8b8b92bfe8
+URL:https://auftragsregister.ch/en/auftrag/6ba2958d-23f6-408a-892d-1f8b8b92
+ bfe8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP 2026.03.836 - Contrat-cadre pour la fou
+ rniture de mâts
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

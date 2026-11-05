@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6ba2958d-23f6-408a-892d-1f8b8b92bfe8-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261215T110000Z
+SUMMARY:Scadenza: MP 2026.03.836 - Contrat-cadre pour la fourniture de mât
+ s
+DESCRIPTION:Ente pubblico: Transports publics de la région lausannoise sa\
+ nScadenza: 15.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/6ba2958d-23f6-408a-892d-1f8b8b92bfe8/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/6ba2958d-23f6-408a-892d-1f8b8b92bfe
+ 8
+URL:https://auftragsregister.ch/it/auftrag/6ba2958d-23f6-408a-892d-1f8b8b92
+ bfe8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP 2026.03.836 - Contrat-cadre pour la fourniture de 
+ mâts
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

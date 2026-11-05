@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b1605834-6ac2-4f38-b844-204295e8ee60-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261217T100000Z
+SUMMARY:Délai de remise : AMB/2026/12 - Fornitura tubi e raccordi in ghi
+ sa duttile per sistemi e condotte acqua
+DESCRIPTION:Acheteur public : Azienda Multiservizi Bellinzona (AMB)\nDél
+ ai de remise : 17.12.2026\, 11 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/b1605834-6ac2-4f38-b844-204295e8ee60/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/b1605834-6ac2-
+ 4f38-b844-204295e8ee60
+URL:https://auftragsregister.ch/fr/auftrag/b1605834-6ac2-4f38-b844-204295e8
+ ee60/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AMB/2026/12 - Fornitura tubi e raccordi in
+  ghisa duttile per sistemi e condotte acqua
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

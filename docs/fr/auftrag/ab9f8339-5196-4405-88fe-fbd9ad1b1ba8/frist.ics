@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ab9f8339-5196-4405-88fe-fbd9ad1b1ba8-frist@auftragsregister.ch
+DTSTAMP:20261105T000000Z
+SEQUENCE:0
+DTSTART:20261125T104500Z
+SUMMARY:Délai de remise : Copie ECOLE DE ‘’CORDE’’ A ARDON\, REM
+ PLACEMENT DES FENÊTRES ET CLOISONS FEU\, AILE OUEST
+DESCRIPTION:Acheteur public : Commune d'Ardon (CEPA Sàrl)\nDélai de rem
+ ise : 25.11.2026\, 11 h 45\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/ab9f8339-5196-4405-88fe-fbd9ad1b1ba8/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/ab9f8339-5196-4405-88fe
+ -fbd9ad1b1ba8
+URL:https://auftragsregister.ch/fr/auftrag/ab9f8339-5196-4405-88fe-fbd9ad1b
+ 1ba8/
+LOCATION:Ardon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Copie ECOLE DE ‘’CORDE’’ A ARDON\,
+  REMPLACEMENT DES FENÊTRES ET CLOISONS FEU\, AILE OUEST
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
