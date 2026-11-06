@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a10678f-36b0-428b-90cc-7302a76c47a5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261221T160000Z
+SUMMARY:Scadenza: Fernwärme Wil\, Tiefbau TP11.01 Zentrum Süd
+DESCRIPTION:Ente pubblico: Stadt Wil\, Technische Betriebe\, TBW\nScadenza:
+  21.12.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 8a10678f-36b0-428b-90cc-7302a76c47a5/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/8a10678f-36b0-428b-90cc-7302a76c47a5
+URL:https://auftragsregister.ch/it/auftrag/8a10678f-36b0-428b-90cc-7302a76c
+ 47a5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fernwärme Wil\, Tiefbau TP11.01 Zentrum Süd
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

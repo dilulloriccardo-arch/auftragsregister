@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1e8a471b-348b-4fe2-bd1e-48e8a123e95e-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261207T090000Z
+SUMMARY:Scadenza: Gemeinde Höri Schulhausstrasse - Tiefbau
+DESCRIPTION:Ente pubblico: Gemeinde Höri - Bau und Infrastruktur\nScadenza
+ : 07.12.2026\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag
+ /1e8a471b-348b-4fe2-bd1e-48e8a123e95e/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/1e8a471b-348b-4fe2-bd1e-48e8a123e95e
+URL:https://auftragsregister.ch/it/auftrag/1e8a471b-348b-4fe2-bd1e-48e8a123
+ e95e/
+LOCATION:Höri
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gemeinde Höri Schulhausstrasse - Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

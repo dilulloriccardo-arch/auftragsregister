@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:411fa68d-bb84-415e-bd8c-50c5d1276053-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261203T110000Z
+SUMMARY:Eingabefrist: SAL_004 Transportdienstleistungen – Strassentranspo
+ rte palettierter Ware ab Schweizerhalle\, Riburg und Bex
+DESCRIPTION:Auftraggeber: Schweizer Salinen AG\nEingabefrist: 03.12.2026\, 
+ 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/411fa68d-b
+ b84-415e-bd8c-50c5d1276053/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/411fa68d-bb84-415e-bd8c-50c5d1276053
+URL:https://auftragsregister.ch/de/auftrag/411fa68d-bb84-415e-bd8c-50c5d127
+ 6053/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: SAL_004 Transportdienstleistungen – Strassentra
+ nsporte palettierter Ware ab Schweizerhalle\, Riburg und Bex
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

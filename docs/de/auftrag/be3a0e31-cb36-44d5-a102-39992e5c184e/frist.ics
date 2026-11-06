@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be3a0e31-cb36-44d5-a102-39992e5c184e-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Eingabefrist: Extension et rénovation du Lycée-collège de St-Mau
+ rice - CFC 281.1
+DESCRIPTION:Auftraggeber: Etat du Valais\, Service immobilier et patrimoine
+  - Investissements\nEingabefrist: 18.12.2026\, 23.59 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/be3a0e31-cb36-44d5-a102-39992e5c184e/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/be3a0e31-cb
+ 36-44d5-a102-39992e5c184e
+URL:https://auftragsregister.ch/de/auftrag/be3a0e31-cb36-44d5-a102-39992e5c
+ 184e/
+LOCATION:St-Maurice
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Extension et rénovation du Lycée-collège de St
+ -Maurice - CFC 281.1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

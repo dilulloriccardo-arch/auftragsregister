@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e186182a-2205-4a93-9de3-3633407625ea-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261127T110000Z
+SUMMARY:Délai de remise : Sportanlage Gründenmoos\, Sanierung und Erneu
+ erung des Spielfelds Nr. 4 in Kunstrasen - 424 Kunstrasen
+DESCRIPTION:Acheteur public : Stadt St.Gallen\, Stadtgrün\nDélai de rem
+ ise : 27.11.2026\, 12 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/e186182a-2205-4a93-9de3-3633407625ea/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/e186182a-2205-4a93-9de3
+ -3633407625ea
+URL:https://auftragsregister.ch/fr/auftrag/e186182a-2205-4a93-9de3-36334076
+ 25ea/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sportanlage Gründenmoos\, Sanierung und E
+ rneuerung des Spielfelds Nr. 4 in Kunstrasen - 424 Kunstrasen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

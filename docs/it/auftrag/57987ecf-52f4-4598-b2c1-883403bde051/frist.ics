@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57987ecf-52f4-4598-b2c1-883403bde051-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261208T160000Z
+SUMMARY:Scadenza: 11354\, K2b\, Weggis\, Erneuerung Tunnel Rigistrasse
+DESCRIPTION:Ente pubblico: Kanton Luzern\, Verkehr und Infrastruktur (vif)\
+ , Realisierung\nScadenza: 08.12.2026\, 17:00\nNel registro: https://auftra
+ gsregister.ch/it/auftrag/57987ecf-52f4-4598-b2c1-883403bde051/\nPubblicazi
+ one ufficiale: https://www.simap.ch/it/project-detail/57987ecf-52f4-4598-b
+ 2c1-883403bde051
+URL:https://auftragsregister.ch/it/auftrag/57987ecf-52f4-4598-b2c1-883403bd
+ e051/
+LOCATION:Weggis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 11354\, K2b\, Weggis\, Erneuerung Tunnel Rigistrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

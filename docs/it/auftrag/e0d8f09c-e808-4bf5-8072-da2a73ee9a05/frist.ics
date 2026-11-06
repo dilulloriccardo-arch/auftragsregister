@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0d8f09c-e808-4bf5-8072-da2a73ee9a05-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Scadenza: Neubeschaffung ERP - ZENTRUM FÜR LABORMEDIZIN
+DESCRIPTION:Ente pubblico: Zentrum für Labormedizin\nScadenza: 18.12.2026\
+ , 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/e0d8f09c-e80
+ 8-4bf5-8072-da2a73ee9a05/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/e0d8f09c-e808-4bf5-8072-da2a73ee9a05
+URL:https://auftragsregister.ch/it/auftrag/e0d8f09c-e808-4bf5-8072-da2a73ee
+ 9a05/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubeschaffung ERP - ZENTRUM FÜR LABORMEDIZIN
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

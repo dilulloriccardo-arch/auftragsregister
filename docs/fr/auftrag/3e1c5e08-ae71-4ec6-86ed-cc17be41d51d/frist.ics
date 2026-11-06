@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e1c5e08-ae71-4ec6-86ed-cc17be41d51d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T150000Z
+SUMMARY:Délai de remise : EPFL ASB – AO N°4 – CONTROLE D'ACCES - GA
+ RDIENNAGE
+DESCRIPTION:Acheteur public : EPFL - VPF - Achats\nDélai de remise : 1
+ 6.12.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/3e1c5e08-ae71-4ec6-86ed-cc17be41d51d/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/3e1c5e08-ae71-4ec6-86ed-cc17be
+ 41d51d
+URL:https://auftragsregister.ch/fr/auftrag/3e1c5e08-ae71-4ec6-86ed-cc17be41
+ d51d/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EPFL ASB – AO N°4 – CONTROLE D'ACCES 
+ - GARDIENNAGE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18297f59-ee02-47e6-bdd4-5a9b43c50166-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T060000Z
+SUMMARY:Eingabefrist: erzo ARA\, Klärschlammtrocknung Oftringen - Pumpen u
+ nd Fördertechnik für entwässerten Klärschlamm
+DESCRIPTION:Auftraggeber: erzo ARA (Hunziker Betatech)\nEingabefrist: 16.12
+ .2026\, 7.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/182
+ 97f59-ee02-47e6-bdd4-5a9b43c50166/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/18297f59-ee02-47e6-bdd4-5a9b43c50166
+URL:https://auftragsregister.ch/de/auftrag/18297f59-ee02-47e6-bdd4-5a9b43c5
+ 0166/
+LOCATION:Oftringen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: erzo ARA\, Klärschlammtrocknung Oftringen - Pump
+ en und Fördertechnik für entwässerten Klärschlamm
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

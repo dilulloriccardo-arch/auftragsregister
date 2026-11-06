@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:24e74885-e371-419d-8774-0e57bd7563b5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Scadenza: Neubau + Erweiterung Feuerwehr Düdingen / BKP 281.1 Fuge
+ nlose Boden- und Wandbeläge
+DESCRIPTION:Ente pubblico: Gemeinde Düdingen (Brülhart Ducret AG)\nScaden
+ za: 21.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/24e74885-e371-419d-8774-0e57bd7563b5/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/24e74885-e371-419d-8774-0e57bd7563b5
+URL:https://auftragsregister.ch/it/auftrag/24e74885-e371-419d-8774-0e57bd75
+ 63b5/
+LOCATION:Düdingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau + Erweiterung Feuerwehr Düdingen / BKP 281.1 
+ Fugenlose Boden- und Wandbeläge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9565dee5-6f16-4fa4-a56b-2d13aeef8ed6-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261217T130000Z
+SUMMARY:Eingabefrist: Sanierung Strassentunnel Munt la Schera - Los 12.2 
+ – Verschiebung Niederspannungsverteilung Nord nach La Drossa
+DESCRIPTION:Auftraggeber: Engadiner Kraftwerke AG\nEingabefrist: 17.12.2026
+ \, 14.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9565dee
+ 5-6f16-4fa4-a56b-2d13aeef8ed6/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/9565dee5-6f16-4fa4-a56b-2d13aeef8ed6
+URL:https://auftragsregister.ch/de/auftrag/9565dee5-6f16-4fa4-a56b-2d13aeef
+ 8ed6/
+LOCATION:Zernez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Strassentunnel Munt la Schera - Los 12.
+ 2 – Verschiebung Niederspannungsverteilung Nord nach La Drossa
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

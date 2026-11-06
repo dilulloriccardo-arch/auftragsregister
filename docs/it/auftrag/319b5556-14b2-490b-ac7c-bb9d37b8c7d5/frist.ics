@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:319b5556-14b2-490b-ac7c-bb9d37b8c7d5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Scadenza: ZAA21 l 45405 l BKP 273.1-01 Haftraumtüren aus Holz
+DESCRIPTION:Ente pubblico: Hochbauamt\, Baubereich B\nScadenza: 15.01.2027\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/319b5556-14b
+ 2-490b-ac7c-bb9d37b8c7d5/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/319b5556-14b2-490b-ac7c-bb9d37b8c7d5
+URL:https://auftragsregister.ch/it/auftrag/319b5556-14b2-490b-ac7c-bb9d37b8
+ c7d5/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ZAA21 l 45405 l BKP 273.1-01 Haftraumtüren aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

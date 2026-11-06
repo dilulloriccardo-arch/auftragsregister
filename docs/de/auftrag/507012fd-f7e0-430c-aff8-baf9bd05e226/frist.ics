@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:507012fd-f7e0-430c-aff8-baf9bd05e226-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T130000Z
+SUMMARY:Eingabefrist: Drohnen
+DESCRIPTION:Auftraggeber: Kantonspolizei Zürich\nEingabefrist: 18.12.2026\
+ , 14.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/507012fd
+ -f7e0-430c-aff8-baf9bd05e226/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/507012fd-f7e0-430c-aff8-baf9bd05e226
+URL:https://auftragsregister.ch/de/auftrag/507012fd-f7e0-430c-aff8-baf9bd05
+ e226/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Drohnen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

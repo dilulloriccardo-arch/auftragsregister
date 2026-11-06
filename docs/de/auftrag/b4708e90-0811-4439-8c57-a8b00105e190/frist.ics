@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4708e90-0811-4439-8c57-a8b00105e190-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Eingabefrist: Sanierung Stationsstrasse/Kreuzwiesenstrasse\, Baumei
+ ster- und Belagsarbeiten
+DESCRIPTION:Auftraggeber: Gemeinde Landquart\nEingabefrist: 27.11.2026\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b4708e90-081
+ 1-4439-8c57-a8b00105e190/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/b4708e90-0811-4439-8c57-a8b00105e190
+URL:https://auftragsregister.ch/de/auftrag/b4708e90-0811-4439-8c57-a8b00105
+ e190/
+LOCATION:Igis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Stationsstrasse/Kreuzwiesenstrasse\, Ba
+ umeister- und Belagsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

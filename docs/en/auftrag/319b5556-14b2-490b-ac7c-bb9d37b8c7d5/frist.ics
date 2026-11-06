@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:319b5556-14b2-490b-ac7c-bb9d37b8c7d5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Submission deadline: ZAA21 l 45405 l BKP 273.1-01 Haftraumtüren au
+ s Holz
+DESCRIPTION:Public buyer: Hochbauamt\, Baubereich B\nSubmission deadline: 1
+ 5 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/319b5556-14b2-490b-ac7c-bb9d37b8c7d5/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/319b5556-14b2-490b-ac7c-bb9d37b8c7d5
+URL:https://auftragsregister.ch/en/auftrag/319b5556-14b2-490b-ac7c-bb9d37b8
+ c7d5/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ZAA21 l 45405 l BKP 273.1-01 Haftraumtüre
+ n aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

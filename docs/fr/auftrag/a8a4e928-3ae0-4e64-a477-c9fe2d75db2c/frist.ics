@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a8a4e928-3ae0-4e64-a477-c9fe2d75db2c-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Délai de remise : Dossier de candidature de Baumeister pour le S
+ M Bode 1\, à Saanen
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 15.12.2026\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/a8a4e928-3ae0-4e64-a477-c9fe2d75db2c/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/a8a4e928-3ae0-4e64-a477-
+ c9fe2d75db2c
+URL:https://auftragsregister.ch/fr/auftrag/a8a4e928-3ae0-4e64-a477-c9fe2d75
+ db2c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Dossier de candidature de Baumeister pour 
+ le SM Bode 1\, à Saanen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

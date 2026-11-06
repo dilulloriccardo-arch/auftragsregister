@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32f95722-1f79-413b-abc3-508ef0a93e6e-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261204T100000Z
+SUMMARY:Submission deadline: Sanierung Geissbergstrasse
+DESCRIPTION:Public buyer: Gossweiler Ingenieure AG\nSubmission deadline: 4
+  Dec 2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/32f95722-1f79-413b-abc3-508ef0a93e6e/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/32f95722-1f79-413b-abc3-508ef0a93e6e
+URL:https://auftragsregister.ch/en/auftrag/32f95722-1f79-413b-abc3-508ef0a9
+ 3e6e/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Geissbergstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

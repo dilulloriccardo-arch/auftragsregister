@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cbc65640-3374-44a1-b2f0-24b7a3712d34-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Eingabefrist: Baumeister Modernisierung Bahnhof Thurnen
+DESCRIPTION:Auftraggeber: BLS AG - Finance & SCM - Strategische Beschaffung
+ \nEingabefrist: 16.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregi
+ ster.ch/de/auftrag/cbc65640-3374-44a1-b2f0-24b7a3712d34/\nAmtliche Publika
+ tion: https://www.simap.ch/de/project-detail/cbc65640-3374-44a1-b2f0-24b7a
+ 3712d34
+URL:https://auftragsregister.ch/de/auftrag/cbc65640-3374-44a1-b2f0-24b7a371
+ 2d34/
+LOCATION:Thurnen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Baumeister Modernisierung Bahnhof Thurnen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

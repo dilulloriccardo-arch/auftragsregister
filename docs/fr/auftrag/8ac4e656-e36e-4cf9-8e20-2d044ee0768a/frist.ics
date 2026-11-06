@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ac4e656-e36e-4cf9-8e20-2d044ee0768a-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Délai de remise : Versam\, Ausbau BehiG - BKP 232 Elektroinstall
+ ationen
+DESCRIPTION:Acheteur public : Rhätische Bahn AG\nDélai de remise : 04
+ .12.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/8ac4e656-e36e-4cf9-8e20-2d044ee0768a/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/8ac4e656-e36e-4cf9-8e20-2d044ee07
+ 68a
+URL:https://auftragsregister.ch/fr/auftrag/8ac4e656-e36e-4cf9-8e20-2d044ee0
+ 768a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Versam\, Ausbau BehiG - BKP 232 Elektroins
+ tallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

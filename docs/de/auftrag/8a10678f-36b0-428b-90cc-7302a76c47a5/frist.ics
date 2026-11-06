@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a10678f-36b0-428b-90cc-7302a76c47a5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261221T160000Z
+SUMMARY:Eingabefrist: Fernwärme Wil\, Tiefbau TP11.01 Zentrum Süd
+DESCRIPTION:Auftraggeber: Stadt Wil\, Technische Betriebe\, TBW\nEingabefri
+ st: 21.12.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/8a10678f-36b0-428b-90cc-7302a76c47a5/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/8a10678f-36b0-428b-90cc-7302a76c47a5
+URL:https://auftragsregister.ch/de/auftrag/8a10678f-36b0-428b-90cc-7302a76c
+ 47a5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fernwärme Wil\, Tiefbau TP11.01 Zentrum Süd
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

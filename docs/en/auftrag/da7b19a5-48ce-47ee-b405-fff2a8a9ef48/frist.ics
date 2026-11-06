@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da7b19a5-48ce-47ee-b405-fff2a8a9ef48-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T150000Z
+SUMMARY:Submission deadline: Ersatz Katalysator-Lagen DeNOx
+DESCRIPTION:Public buyer: Stadt St.Gallen\, Entsorgung St.Gallen\nSubmissio
+ n deadline: 18 Dec 2026\, 16:00\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/da7b19a5-48ce-47ee-b405-fff2a8a9ef48/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/da7b19a5-48ce-47ee-b405-fff2a8a
+ 9ef48
+URL:https://auftragsregister.ch/en/auftrag/da7b19a5-48ce-47ee-b405-fff2a8a9
+ ef48/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatz Katalysator-Lagen DeNOx
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

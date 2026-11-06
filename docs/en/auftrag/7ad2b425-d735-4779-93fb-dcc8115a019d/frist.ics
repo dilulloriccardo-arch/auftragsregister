@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ad2b425-d735-4779-93fb-dcc8115a019d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Submission deadline: MP-200038 N28 Wildtierkorridor Schiers – Bau
+ meister Hauptarbeiten
+DESCRIPTION:Public buyer: Ufficio federale delle strade USTRA\, divisione i
+ nfrastruttura stradale Est\nSubmission deadline: 15 Jan 2027\, 16:00\nIn
+  the register: https://auftragsregister.ch/en/auftrag/7ad2b425-d735-4779-9
+ 3fb-dcc8115a019d/\nOfficial publication: https://www.simap.ch/en/project-d
+ etail/7ad2b425-d735-4779-93fb-dcc8115a019d
+URL:https://auftragsregister.ch/en/auftrag/7ad2b425-d735-4779-93fb-dcc8115a
+ 019d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-200038 N28 Wildtierkorridor Schiers –
+  Baumeister Hauptarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

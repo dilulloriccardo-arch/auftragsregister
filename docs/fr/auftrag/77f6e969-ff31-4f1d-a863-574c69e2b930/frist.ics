@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:77f6e969-ff31-4f1d-a863-574c69e2b930-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261209T090000Z
+SUMMARY:Délai de remise : Concorso opere da impresario costruttore "Sott
+ ostrutture SES e AP Avegno-Gordevio"
+DESCRIPTION:Acheteur public : Società Elettrica Sopracenerina SA (SES)\n
+ Délai de remise : 09.12.2026\, 10 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/77f6e969-ff31-4f1d-a863-574c69e2b930/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/77f6e969-f
+ f31-4f1d-a863-574c69e2b930
+URL:https://auftragsregister.ch/fr/auftrag/77f6e969-ff31-4f1d-a863-574c69e2
+ b930/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Concorso opere da impresario costruttore "
+ Sottostrutture SES e AP Avegno-Gordevio"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

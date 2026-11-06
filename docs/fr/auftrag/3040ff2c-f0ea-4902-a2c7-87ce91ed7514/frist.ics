@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3040ff2c-f0ea-4902-a2c7-87ce91ed7514-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261217T100000Z
+SUMMARY:Délai de remise : Bussigny - Collecteur d’eaux claires Buyère
+  – Sorge
+DESCRIPTION:Acheteur public : Commune de Bussigny - Service des infrastru
+ ctures (RIBI SA)\nDélai de remise : 17.12.2026\, 11 h 00\nDans le r
+ egistre : https://auftragsregister.ch/fr/auftrag/3040ff2c-f0ea-4902-a2c7
+ -87ce91ed7514/\nPublication officielle : https://www.simap.ch/fr/project
+ -detail/3040ff2c-f0ea-4902-a2c7-87ce91ed7514
+URL:https://auftragsregister.ch/fr/auftrag/3040ff2c-f0ea-4902-a2c7-87ce91ed
+ 7514/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bussigny - Collecteur d’eaux claires Buy
+ ère – Sorge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

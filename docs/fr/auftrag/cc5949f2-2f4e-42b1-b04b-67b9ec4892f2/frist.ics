@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc5949f2-2f4e-42b1-b04b-67b9ec4892f2-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Délai de remise : MO-PR : 255 Agiez 1 - 256 Arnex-sur-Orbe 2
+DESCRIPTION:Acheteur public : DGTL-Direction du cadastre et de la géoinf
+ ormation (DCG)\nDélai de remise : 16.12.2026\, 12 h 00\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/cc5949f2-2f4e-42b1-b04b-6
+ 7b9ec4892f2/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/cc5949f2-2f4e-42b1-b04b-67b9ec4892f2
+URL:https://auftragsregister.ch/fr/auftrag/cc5949f2-2f4e-42b1-b04b-67b9ec48
+ 92f2/
+LOCATION:Agiez\, 1321 Arnex-sur-Orbe
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MO-PR : 255 Agiez 1 - 256 Arnex-sur-Orbe 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

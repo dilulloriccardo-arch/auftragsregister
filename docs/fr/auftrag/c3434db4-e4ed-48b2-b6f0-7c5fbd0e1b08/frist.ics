@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c3434db4-e4ed-48b2-b6f0-7c5fbd0e1b08-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T153000Z
+SUMMARY:Délai de remise : Ecole Secondaire Noëlla Rouget à Meyrin\, co
+ nstruction d'un groupe scolaire et de salles omnisport - Lot 37A - plâtre
+ rie peinture
+DESCRIPTION:Acheteur public : Etat de Genève\, Département du Territoir
+ e - DT\, Office Cantonal des Bâtiments\nDélai de remise : 18.12.2026\,
+  16 h 30\nDans le registre : https://auftragsregister.ch/fr/auftrag/
+ c3434db4-e4ed-48b2-b6f0-7c5fbd0e1b08/\nPublication officielle : https://
+ www.simap.ch/fr/project-detail/c3434db4-e4ed-48b2-b6f0-7c5fbd0e1b08
+URL:https://auftragsregister.ch/fr/auftrag/c3434db4-e4ed-48b2-b6f0-7c5fbd0e
+ 1b08/
+LOCATION:Meyrin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ecole Secondaire Noëlla Rouget à Meyrin\
+ , construction d'un groupe scolaire et de salles omnisport - Lot 37A - pl
+ âtrerie peinture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

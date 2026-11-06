@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fcdad82d-2194-455f-b0c1-712eef005fd9-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Eingabefrist: Lot-AR22 PEINTURES INTERIEURES
+DESCRIPTION:Auftraggeber: APEC - Association intercommunale pour l'épurati
+ on des eaux usées des la Côte (bureau d'architecte Cornaz)\nEingabefrist
+ : 18.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/fcdad82d-2194-455f-b0c1-712eef005fd9/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/fcdad82d-2194-455f-b0c1-712eef005fd9
+URL:https://auftragsregister.ch/de/auftrag/fcdad82d-2194-455f-b0c1-712eef00
+ 5fd9/
+LOCATION:Gland
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Lot-AR22 PEINTURES INTERIEURES
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

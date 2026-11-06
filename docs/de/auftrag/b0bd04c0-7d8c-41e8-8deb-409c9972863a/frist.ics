@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b0bd04c0-7d8c-41e8-8deb-409c9972863a-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261201T153000Z
+SUMMARY:Eingabefrist: HEPIA - Installation d'un groupe de secours - CFC 231
+ .2 Ensemble d'appareillages et CFC 231.3 Distributions tableaux secondaire
+ s à basse tension
+DESCRIPTION:Auftraggeber: Office cantonal des bâtiments (OCBA)\nEingabefri
+ st: 01.12.2026\, 16.30 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/b0bd04c0-7d8c-41e8-8deb-409c9972863a/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/b0bd04c0-7d8c-41e8-8deb-409c9972863a
+URL:https://auftragsregister.ch/de/auftrag/b0bd04c0-7d8c-41e8-8deb-409c9972
+ 863a/
+LOCATION:Rue de la Prairie 4
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: HEPIA - Installation d'un groupe de secours - CFC
+  231.2 Ensemble d'appareillages et CFC 231.3 Distributions tableaux second
+ aires à basse tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

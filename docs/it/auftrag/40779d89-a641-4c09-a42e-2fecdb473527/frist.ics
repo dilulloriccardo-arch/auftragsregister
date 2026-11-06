@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40779d89-a641-4c09-a42e-2fecdb473527-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Scadenza: Travers/NE – Extension du poste haute tension
+DESCRIPTION:Ente pubblico: Groupe E SA - Service Achat pour les Marchés pu
+ blics\nScadenza: 04.12.2026\, 12:00\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/40779d89-a641-4c09-a42e-2fecdb473527/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/40779d89-a641-4c09-a42e-2fecd
+ b473527
+URL:https://auftragsregister.ch/it/auftrag/40779d89-a641-4c09-a42e-2fecdb47
+ 3527/
+LOCATION:Travers
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Travers/NE – Extension du poste haute tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

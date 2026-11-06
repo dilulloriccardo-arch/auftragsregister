@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2876ab08-fccc-4ff6-8eb6-46405b4dc84c-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Submission deadline: Schellenbergweg - Schellenbergstrasse\, Masans
+ erstrasse bis Giacomettistrasse\, Baumeisterarbeiten
+DESCRIPTION:Public buyer: IBC Energie Wasser Chur\nSubmission deadline: 27
+  Nov 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/2876ab08-fccc-4ff6-8eb6-46405b4dc84c/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/2876ab08-fccc-4ff6-8eb6-46405b4dc84c
+URL:https://auftragsregister.ch/en/auftrag/2876ab08-fccc-4ff6-8eb6-46405b4d
+ c84c/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schellenbergweg - Schellenbergstrasse\, Ma
+ sanserstrasse bis Giacomettistrasse\, Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

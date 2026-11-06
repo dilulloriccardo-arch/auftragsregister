@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7a2afd6a-c2bf-4fd1-97b1-79f647e4675d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261210T100000Z
+SUMMARY:Délai de remise : VCG/ACG-AUT - SC PA399 (VCG) e PA13 (ACG) - Ga
+ lleria Vedeggio Cassarate (VCG) e Galleria di Ascona (ACG) - Aggiornamento
+  dei sistemi di comando degli equipaggiamenti di esercizio e sicurezza (EE
+ S/BSA) - Opere di elettromeccanica
+DESCRIPTION:Acheteur public : Ufficio delle commesse pubbliche e della pr
+ ogrammazione\nDélai de remise : 10.12.2026\, 11 h 00\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/7a2afd6a-c2bf-4fd1-97b1-79f
+ 647e4675d/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/7a2afd6a-c2bf-4fd1-97b1-79f647e4675d
+URL:https://auftragsregister.ch/fr/auftrag/7a2afd6a-c2bf-4fd1-97b1-79f647e4
+ 675d/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : VCG/ACG-AUT - SC PA399 (VCG) e PA13 (ACG) 
+ - Galleria Vedeggio Cassarate (VCG) e Galleria di Ascona (ACG) - Aggiornam
+ ento dei sistemi di comando degli equipaggiamenti di esercizio e sicurezza
+  (EES/BSA) - Opere di elettromeccanica
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

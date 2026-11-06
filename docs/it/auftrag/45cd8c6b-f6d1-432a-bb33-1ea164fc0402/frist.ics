@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45cd8c6b-f6d1-432a-bb33-1ea164fc0402-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261201T153000Z
+SUMMARY:Scadenza: Aménagement des laboratoires du SCAV - CFC 232 Installat
+ ions électriques
+DESCRIPTION:Ente pubblico: Département du territoire - Office Cantonal des
+  bâtiments\nScadenza: 01.12.2026\, 16:30\nNel registro: https://auftragsr
+ egister.ch/it/auftrag/45cd8c6b-f6d1-432a-bb33-1ea164fc0402/\nPubblicazione
+  ufficiale: https://www.simap.ch/it/project-detail/45cd8c6b-f6d1-432a-bb33
+ -1ea164fc0402
+URL:https://auftragsregister.ch/it/auftrag/45cd8c6b-f6d1-432a-bb33-1ea164fc
+ 0402/
+LOCATION:Genève\, quai Ernest-Ansermet 22
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Aménagement des laboratoires du SCAV - CFC 232 Insta
+ llations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

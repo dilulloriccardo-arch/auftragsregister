@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e7fe7fdd-47c3-4d18-8664-9bdced80ef94-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Submission deadline: Centre de natation et salle de sport triple\, 
+ Châtel-St-Denis
+DESCRIPTION:Public buyer: ASSCOV Association des communes pour le CO de la 
+ Veveyse (d4 atelier d'architecture SA)\nSubmission deadline: 18 Dec 2026
+ \, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/e7fe7fdd
+ -47c3-4d18-8664-9bdced80ef94/\nOfficial publication: https://www.simap.ch/
+ en/project-detail/e7fe7fdd-47c3-4d18-8664-9bdced80ef94
+URL:https://auftragsregister.ch/en/auftrag/e7fe7fdd-47c3-4d18-8664-9bdced80
+ ef94/
+LOCATION:Châtel-St-Denis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Centre de natation et salle de sport tripl
+ e\, Châtel-St-Denis
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

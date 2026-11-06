@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c355f15-4be7-4c70-a77f-24ba6813e5bb-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Eingabefrist: Neubau + Erweiterung Feuerwehr Düdingen / BKP 112 R
+ ückbauarbeiten
+DESCRIPTION:Auftraggeber: Gemeinde Düdingen (Brülhart Ducret AG)\nEingabe
+ frist: 21.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/6c355f15-4be7-4c70-a77f-24ba6813e5bb/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/6c355f15-4be7-4c70-a77f-24ba6813e5bb
+URL:https://auftragsregister.ch/de/auftrag/6c355f15-4be7-4c70-a77f-24ba6813
+ e5bb/
+LOCATION:Düdingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau + Erweiterung Feuerwehr Düdingen / BKP 11
+ 2 Rückbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

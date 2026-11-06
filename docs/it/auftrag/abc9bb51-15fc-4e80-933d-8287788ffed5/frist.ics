@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abc9bb51-15fc-4e80-933d-8287788ffed5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Scadenza: (26284) 805 EnEV-Vollzugskontrollen Anhänge 4.1 & 4.2
+DESCRIPTION:Ente pubblico: Bundesamt für Energie\nScadenza: 16.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/abc9bb51-15fc-4
+ e80-933d-8287788ffed5/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/abc9bb51-15fc-4e80-933d-8287788ffed5
+URL:https://auftragsregister.ch/it/auftrag/abc9bb51-15fc-4e80-933d-8287788f
+ fed5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (26284) 805 EnEV-Vollzugskontrollen Anhänge 4.1 & 4.
+ 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

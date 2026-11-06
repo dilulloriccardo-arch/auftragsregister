@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5982c57-8ee5-4917-9132-f6b2dd0a3a60-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T090000Z
+SUMMARY:Eingabefrist: Zihlschlacht-Sitterdorf\, K120\, Sanierung Bernhauser
+ strasse innerorts
+DESCRIPTION:Auftraggeber: Kanton Thurgau\, Kantonales Tiefbauamt\nEingabefr
+ ist: 11.12.2026\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/a5982c57-8ee5-4917-9132-f6b2dd0a3a60/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/a5982c57-8ee5-4917-9132-f6b2dd0a3a60
+URL:https://auftragsregister.ch/de/auftrag/a5982c57-8ee5-4917-9132-f6b2dd0a
+ 3a60/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Zihlschlacht-Sitterdorf\, K120\, Sanierung Bernha
+ userstrasse innerorts
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8a10678f-36b0-428b-90cc-7302a76c47a5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261221T160000Z
+SUMMARY:Submission deadline: Fernwärme Wil\, civil engineering TP11.01 Cen
+ ter South
+DESCRIPTION:Public buyer: Stadt Wil\, Technische Betriebe\, TBW\nSubmission
+  deadline: 21 Dec 2026\, 17:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/8a10678f-36b0-428b-90cc-7302a76c47a5/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/8a10678f-36b0-428b-90cc-7302a76c
+ 47a5
+URL:https://auftragsregister.ch/en/auftrag/8a10678f-36b0-428b-90cc-7302a76c
+ 47a5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fernwärme Wil\, civil engineering TP11.01
+  Center South
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

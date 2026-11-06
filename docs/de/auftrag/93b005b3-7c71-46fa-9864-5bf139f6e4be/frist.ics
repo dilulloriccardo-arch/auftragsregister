@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:93b005b3-7c71-46fa-9864-5bf139f6e4be-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T160000Z
+SUMMARY:Eingabefrist: Heizungsersatz\, Waffenplatzstrasse 56/58/60\, 8002 Z
+ ürich
+DESCRIPTION:Auftraggeber: Liegenschaften Stadt Zürich (LSZ)\nEingabefrist:
+  11.12.2026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/93b005b3-7c71-46fa-9864-5bf139f6e4be/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/93b005b3-7c71-46fa-9864-5bf139f6e4be
+URL:https://auftragsregister.ch/de/auftrag/93b005b3-7c71-46fa-9864-5bf139f6
+ e4be/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Heizungsersatz\, Waffenplatzstrasse 56/58/60\, 80
+ 02 Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

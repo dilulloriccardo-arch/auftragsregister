@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fcdad82d-2194-455f-b0c1-712eef005fd9-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Scadenza: Lot-AR22 PEINTURES INTERIEURES
+DESCRIPTION:Ente pubblico: APEC - Association intercommunale pour l'épurat
+ ion des eaux usées des la Côte (bureau d'architecte Cornaz)\nScadenza: 1
+ 8.12.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/fc
+ dad82d-2194-455f-b0c1-712eef005fd9/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/fcdad82d-2194-455f-b0c1-712eef005fd9
+URL:https://auftragsregister.ch/it/auftrag/fcdad82d-2194-455f-b0c1-712eef00
+ 5fd9/
+LOCATION:Gland
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Lot-AR22 PEINTURES INTERIEURES
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

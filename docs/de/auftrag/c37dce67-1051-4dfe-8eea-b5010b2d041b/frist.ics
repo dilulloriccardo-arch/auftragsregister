@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c37dce67-1051-4dfe-8eea-b5010b2d041b-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261217T150000Z
+SUMMARY:Eingabefrist: BAV 80756 SPA Juchhof 3\, Ersatzneubau Garderobengeb
+ äude - BKP 273 Schreinerarbeiten
+DESCRIPTION:Auftraggeber: HBD - Amt für Hochbauten (AHB)\nEingabefrist: 17
+ .12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /c37dce67-1051-4dfe-8eea-b5010b2d041b/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/c37dce67-1051-4dfe-8eea-b5010b2d041b
+URL:https://auftragsregister.ch/de/auftrag/c37dce67-1051-4dfe-8eea-b5010b2d
+ 041b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BAV 80756 SPA Juchhof 3\, Ersatzneubau Garderoben
+ gebäude - BKP 273 Schreinerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

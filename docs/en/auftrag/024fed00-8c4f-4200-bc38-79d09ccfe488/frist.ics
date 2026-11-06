@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:024fed00-8c4f-4200-bc38-79d09ccfe488-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Submission deadline: MP-260024\, UPlaNS N15 Jona – Verzw. Reichen
+ burg Projektverfasser Verkehrsplanung Phasen EK bis IBN (NSG) // 31 bis 53
+  (SIA)
+DESCRIPTION:Public buyer: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nSubmission deadline: 18 Dec 2026\, 23:59\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/024fed00-8c4f-4200-bc38-79d09ccfe488/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/024fed00-8c4f-4200-
+ bc38-79d09ccfe488
+URL:https://auftragsregister.ch/en/auftrag/024fed00-8c4f-4200-bc38-79d09ccf
+ e488/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-260024\, UPlaNS N15 Jona – Verzw. Rei
+ chenburg Projektverfasser Verkehrsplanung Phasen EK bis IBN (NSG) // 31 bi
+ s 53 (SIA)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

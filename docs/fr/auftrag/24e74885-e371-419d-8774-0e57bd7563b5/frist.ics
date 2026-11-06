@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:24e74885-e371-419d-8774-0e57bd7563b5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Délai de remise : Neubau + Erweiterung Feuerwehr Düdingen / BKP
+  281.1 Fugenlose Boden- und Wandbeläge
+DESCRIPTION:Acheteur public : Gemeinde Düdingen (Brülhart Ducret AG)\nD
+ élai de remise : 21.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/24e74885-e371-419d-8774-0e57bd7563b5/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/24e74885-e3
+ 71-419d-8774-0e57bd7563b5
+URL:https://auftragsregister.ch/fr/auftrag/24e74885-e371-419d-8774-0e57bd75
+ 63b5/
+LOCATION:Düdingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau + Erweiterung Feuerwehr Düdingen /
+  BKP 281.1 Fugenlose Boden- und Wandbeläge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

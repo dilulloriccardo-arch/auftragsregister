@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:080df43f-10c9-4b22-90cc-307851877860-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Submission deadline: USZ Campus MITTE 1|2 / 364.10 Abwurfanlage fü
+ r Hauskehricht (OV)
+DESCRIPTION:Public buyer: Universitätsspital Zürich\nSubmission deadline:
+  14 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/080df43f-10c9-4b22-90cc-307851877860/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/080df43f-10c9-4b22-90cc-307851877860
+URL:https://auftragsregister.ch/en/auftrag/080df43f-10c9-4b22-90cc-30785187
+ 7860/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: USZ Campus MITTE 1|2 / 364.10 Abwurfanlage
+  für Hauskehricht (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

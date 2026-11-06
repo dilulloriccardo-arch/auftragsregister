@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:77f6e969-ff31-4f1d-a863-574c69e2b930-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261209T090000Z
+SUMMARY:Scadenza: Concorso opere da impresario costruttore "Sottostrutture 
+ SES e AP Avegno-Gordevio"
+DESCRIPTION:Ente pubblico: Società Elettrica Sopracenerina SA (SES)\nScade
+ nza: 09.12.2026\, 10:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/77f6e969-ff31-4f1d-a863-574c69e2b930/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/77f6e969-ff31-4f1d-a863-574c69e2b930
+URL:https://auftragsregister.ch/it/auftrag/77f6e969-ff31-4f1d-a863-574c69e2
+ b930/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso opere da impresario costruttore "Sottostrutt
+ ure SES e AP Avegno-Gordevio"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

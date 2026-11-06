@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:347db2ab-292a-4201-9506-019d99a54b53-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T150000Z
+SUMMARY:Eingabefrist: BKP 421 Umgebungsarbeiten Neubau und Sanierung Schulh
+ aus Worben
+DESCRIPTION:Auftraggeber: Gemeinde Worben\nEingabefrist: 18.12.2026\, 16.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/347db2ab-292a-4
+ 201-9506-019d99a54b53/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/347db2ab-292a-4201-9506-019d99a54b53
+URL:https://auftragsregister.ch/de/auftrag/347db2ab-292a-4201-9506-019d99a5
+ 4b53/
+LOCATION:Worben
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 421 Umgebungsarbeiten Neubau und Sanierung Sc
+ hulhaus Worben
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

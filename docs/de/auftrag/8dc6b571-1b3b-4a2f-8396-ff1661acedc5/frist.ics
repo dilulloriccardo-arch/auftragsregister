@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8dc6b571-1b3b-4a2f-8396-ff1661acedc5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T090000Z
+SUMMARY:Eingabefrist: Ingenieurleistungen Schaffung Radinfrastruktur St. An
+ toni
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Freiburg\nEingabefrist: 18
+ .12.2026\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /8dc6b571-1b3b-4a2f-8396-ff1661acedc5/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/8dc6b571-1b3b-4a2f-8396-ff1661acedc5
+URL:https://auftragsregister.ch/de/auftrag/8dc6b571-1b3b-4a2f-8396-ff1661ac
+ edc5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ingenieurleistungen Schaffung Radinfrastruktur St
+ . Antoni
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

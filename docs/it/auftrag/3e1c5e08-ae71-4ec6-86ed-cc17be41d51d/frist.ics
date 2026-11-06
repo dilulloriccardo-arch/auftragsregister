@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e1c5e08-ae71-4ec6-86ed-cc17be41d51d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T150000Z
+SUMMARY:Scadenza: EPFL ASB – AO N°4 – CONTROLE D'ACCES - GARDIENNAGE
+DESCRIPTION:Ente pubblico: EPFL - VPF - Achats\nScadenza: 16.12.2026\, 16:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/3e1c5e08-ae71-4ec6
+ -86ed-cc17be41d51d/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/3e1c5e08-ae71-4ec6-86ed-cc17be41d51d
+URL:https://auftragsregister.ch/it/auftrag/3e1c5e08-ae71-4ec6-86ed-cc17be41
+ d51d/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EPFL ASB – AO N°4 – CONTROLE D'ACCES - GARDIENNA
+ GE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8da311ab-18bd-454e-aec3-b39f9a66bf1c-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Eingabefrist: Ausschreibung BKP 230 Elektroanlagen
+DESCRIPTION:Auftraggeber: Wohnen und Pflege Peteracker AG\nEingabefrist: 16
+ .12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /8da311ab-18bd-454e-aec3-b39f9a66bf1c/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/8da311ab-18bd-454e-aec3-b39f9a66bf1c
+URL:https://auftragsregister.ch/de/auftrag/8da311ab-18bd-454e-aec3-b39f9a66
+ bf1c/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ausschreibung BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

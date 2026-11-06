@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f13c2cef-243c-4d8e-8004-eda6c8b98ddb-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T130000Z
+SUMMARY:Délai de remise : K23 Isenthalerstrasse\, Kehrtunnel bis Chäppe
+ licher
+DESCRIPTION:Acheteur public : Amt für Tiefbau Uri\nDélai de remise : 
+ 11.12.2026\, 14 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/f13c2cef-243c-4d8e-8004-eda6c8b98ddb/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/f13c2cef-243c-4d8e-8004-eda6c8
+ b98ddb
+URL:https://auftragsregister.ch/fr/auftrag/f13c2cef-243c-4d8e-8004-eda6c8b9
+ 8ddb/
+LOCATION:Isenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : K23 Isenthalerstrasse\, Kehrtunnel bis Ch
+ äppelicher
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

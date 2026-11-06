@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:88048b44-dcb1-4f8d-b457-768ae876149c-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Délai de remise : Neubau + Erweiterung Feuerwehr Düdingen / BKP
+  211 Baumeisterarbeiten
+DESCRIPTION:Acheteur public : Gemeinde Düdingen (Brülhart Ducret AG)\nD
+ élai de remise : 21.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/88048b44-dcb1-4f8d-b457-768ae876149c/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/88048b44-dc
+ b1-4f8d-b457-768ae876149c
+URL:https://auftragsregister.ch/fr/auftrag/88048b44-dcb1-4f8d-b457-768ae876
+ 149c/
+LOCATION:Düdingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau + Erweiterung Feuerwehr Düdingen /
+  BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

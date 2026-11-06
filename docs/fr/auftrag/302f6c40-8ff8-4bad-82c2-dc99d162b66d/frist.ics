@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:302f6c40-8ff8-4bad-82c2-dc99d162b66d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Délai de remise : STEP de Troistorrents – Renouvellement de la
+  déshydratation
+DESCRIPTION:Acheteur public : RWB Valais SA\nDélai de remise : 11.12.2
+ 026\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr/auf
+ trag/302f6c40-8ff8-4bad-82c2-dc99d162b66d/\nPublication officielle : htt
+ ps://www.simap.ch/fr/project-detail/302f6c40-8ff8-4bad-82c2-dc99d162b66d
+URL:https://auftragsregister.ch/fr/auftrag/302f6c40-8ff8-4bad-82c2-dc99d162
+ b66d/
+LOCATION:Troistorrents
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : STEP de Troistorrents – Renouvellement d
+ e la déshydratation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

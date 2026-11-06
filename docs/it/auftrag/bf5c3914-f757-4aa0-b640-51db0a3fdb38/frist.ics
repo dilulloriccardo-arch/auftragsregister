@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bf5c3914-f757-4aa0-b640-51db0a3fdb38-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270112T153000Z
+SUMMARY:Scadenza: Collège Voltaire – Projet Embrasures – Rénovation 
+ énergétique – CFC 180.1 – Travaux d'assainissement
+DESCRIPTION:Ente pubblico: Département du territoire (DT)\, Office Cantona
+ l des bâtiments (OCBA)\, Direction des Constructions (Alterego Concept SA
+ )\nScadenza: 12.01.2027\, 16:30\nNel registro: https://auftragsregister.ch
+ /it/auftrag/bf5c3914-f757-4aa0-b640-51db0a3fdb38/\nPubblicazione ufficiale
+ : https://www.simap.ch/it/project-detail/bf5c3914-f757-4aa0-b640-51db0a3fd
+ b38
+URL:https://auftragsregister.ch/it/auftrag/bf5c3914-f757-4aa0-b640-51db0a3f
+ db38/
+LOCATION:Rue de Voltaire 21
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Collège Voltaire – Projet Embrasures – Rénovati
+ on énergétique – CFC 180.1 – Travaux d'assainissement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

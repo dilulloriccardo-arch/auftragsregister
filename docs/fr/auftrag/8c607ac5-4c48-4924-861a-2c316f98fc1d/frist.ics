@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8c607ac5-4c48-4924-861a-2c316f98fc1d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Délai de remise : ZHdK ZH Gessnerallee\, Beleuchtungsersatz\, BK
+ P232-01 Elektroinstallationen
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Zürich\, Baubereich C\nD
+ élai de remise : 10.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/8c607ac5-4c48-4924-861a-2c316f98fc1d/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/8c607ac5-4c
+ 48-4924-861a-2c316f98fc1d
+URL:https://auftragsregister.ch/fr/auftrag/8c607ac5-4c48-4924-861a-2c316f98
+ fc1d/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ZHdK ZH Gessnerallee\, Beleuchtungsersatz\
+ , BKP232-01 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

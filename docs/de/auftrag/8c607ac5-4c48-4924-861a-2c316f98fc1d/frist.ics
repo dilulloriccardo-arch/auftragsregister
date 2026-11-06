@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8c607ac5-4c48-4924-861a-2c316f98fc1d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Eingabefrist: ZHdK ZH Gessnerallee\, Beleuchtungsersatz\, BKP232-01
+  Elektroinstallationen
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Zürich\, Baubereich C\nEingabe
+ frist: 10.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/8c607ac5-4c48-4924-861a-2c316f98fc1d/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/8c607ac5-4c48-4924-861a-2c316f98fc1d
+URL:https://auftragsregister.ch/de/auftrag/8c607ac5-4c48-4924-861a-2c316f98
+ fc1d/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ZHdK ZH Gessnerallee\, Beleuchtungsersatz\, BKP23
+ 2-01 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71529f9f-2a1f-4188-9ab9-aecf67641a38-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Eingabefrist: MP-260016\, Hauptinspektionen Tunnel 2027-2029
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nEingabefrist: 16.12.2026\, 23.59 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/71529f9f-2a1f-4188-9ab9-aecf67641a38/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/71529f9f-2a1f-4188-9ab9-aecf
+ 67641a38
+URL:https://auftragsregister.ch/de/auftrag/71529f9f-2a1f-4188-9ab9-aecf6764
+ 1a38/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-260016\, Hauptinspektionen Tunnel 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

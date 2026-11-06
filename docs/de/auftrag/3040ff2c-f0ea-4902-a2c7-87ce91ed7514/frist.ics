@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3040ff2c-f0ea-4902-a2c7-87ce91ed7514-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261217T100000Z
+SUMMARY:Eingabefrist: Bussigny - Collecteur d’eaux claires Buyère – So
+ rge
+DESCRIPTION:Auftraggeber: Commune de Bussigny - Service des infrastructures
+  (RIBI SA)\nEingabefrist: 17.12.2026\, 11.00 Uhr\nIm Register: https://au
+ ftragsregister.ch/de/auftrag/3040ff2c-f0ea-4902-a2c7-87ce91ed7514/\nAmtlic
+ he Publikation: https://www.simap.ch/de/project-detail/3040ff2c-f0ea-4902-
+ a2c7-87ce91ed7514
+URL:https://auftragsregister.ch/de/auftrag/3040ff2c-f0ea-4902-a2c7-87ce91ed
+ 7514/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bussigny - Collecteur d’eaux claires Buyère 
+ – Sorge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

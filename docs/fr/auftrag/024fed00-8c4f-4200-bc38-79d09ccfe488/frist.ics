@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:024fed00-8c4f-4200-bc38-79d09ccfe488-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Délai de remise : MP-260024\, UPlaNS N15 Jona – Échangeur de 
+ Reichenburg Auteur du projet – Planification du trafic Phases EK à IBN 
+ (NSG) // Phases 31 à 53 (SIA)
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA - Filiale Win
+ terthur\nDélai de remise : 18.12.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/024fed00-8c4f-4200-bc38-79d09c
+ cfe488/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /024fed00-8c4f-4200-bc38-79d09ccfe488
+URL:https://auftragsregister.ch/fr/auftrag/024fed00-8c4f-4200-bc38-79d09ccf
+ e488/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-260024\, UPlaNS N15 Jona – Échangeur
+  de Reichenburg Auteur du projet – Planification du trafic Phases EK à 
+ IBN (NSG) // Phases 31 à 53 (SIA)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

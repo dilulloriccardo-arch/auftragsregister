@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:024fed00-8c4f-4200-bc38-79d09ccfe488-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Scadenza: MP-260024\, UPlaNS N15 Jona – Verzw. Reichenburg Projek
+ tverfasser Verkehrsplanung Phasen EK bis IBN (NSG) // 31 bis 53 (SIA)
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Filiale Winterth
+ ur\nScadenza: 18.12.2026\, 23:59\nNel registro: https://auftragsregister.c
+ h/it/auftrag/024fed00-8c4f-4200-bc38-79d09ccfe488/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/024fed00-8c4f-4200-bc38-79d09ccf
+ e488
+URL:https://auftragsregister.ch/it/auftrag/024fed00-8c4f-4200-bc38-79d09ccf
+ e488/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-260024\, UPlaNS N15 Jona – Verzw. Reichenburg Pr
+ ojektverfasser Verkehrsplanung Phasen EK bis IBN (NSG) // 31 bis 53 (SIA)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

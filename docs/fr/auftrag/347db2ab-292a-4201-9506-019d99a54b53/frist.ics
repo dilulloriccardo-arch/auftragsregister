@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:347db2ab-292a-4201-9506-019d99a54b53-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T150000Z
+SUMMARY:Délai de remise : BKP 421 Umgebungsarbeiten Neubau und Sanierung
+  Schulhaus Worben
+DESCRIPTION:Acheteur public : Gemeinde Worben\nDélai de remise : 18.12
+ .2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/347db2ab-292a-4201-9506-019d99a54b53/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/347db2ab-292a-4201-9506-019d99a54b53
+URL:https://auftragsregister.ch/fr/auftrag/347db2ab-292a-4201-9506-019d99a5
+ 4b53/
+LOCATION:Worben
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 421 Umgebungsarbeiten Neubau und Sanie
+ rung Schulhaus Worben
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

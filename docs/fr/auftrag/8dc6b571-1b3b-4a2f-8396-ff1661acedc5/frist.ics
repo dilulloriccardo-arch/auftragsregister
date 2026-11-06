@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8dc6b571-1b3b-4a2f-8396-ff1661acedc5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T090000Z
+SUMMARY:Délai de remise : Prestations d'ingénierie pour la création d'
+ infrastructures cyclables à St. Antoni
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Freiburg\nDélai de 
+ remise : 18.12.2026\, 10 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/8dc6b571-1b3b-4a2f-8396-ff1661acedc5/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/8dc6b571-1b3b-4a2f-8
+ 396-ff1661acedc5
+URL:https://auftragsregister.ch/fr/auftrag/8dc6b571-1b3b-4a2f-8396-ff1661ac
+ edc5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Prestations d'ingénierie pour la créatio
+ n d'infrastructures cyclables à St. Antoni
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

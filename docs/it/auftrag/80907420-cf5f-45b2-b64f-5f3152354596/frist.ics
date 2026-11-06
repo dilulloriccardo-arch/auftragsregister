@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:80907420-cf5f-45b2-b64f-5f3152354596-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Scadenza: Prestation de mise en décharge des déchets suivants: sa
+ bles\, pierres et cailloux issus du traitement des eaux usées - cendres h
+ umides issues de l'incinération des boues d'épuration - cendres sèches 
+ issues de l'incinération des boues d'épuration
+DESCRIPTION:Ente pubblico: Epura SA - Exploitation\nScadenza: 18.12.2026\, 
+ 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/80907420-cf5f-
+ 45b2-b64f-5f3152354596/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/80907420-cf5f-45b2-b64f-5f3152354596
+URL:https://auftragsregister.ch/it/auftrag/80907420-cf5f-45b2-b64f-5f315235
+ 4596/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Prestation de mise en décharge des déchets suivants
+ : sables\, pierres et cailloux issus du traitement des eaux usées - cendr
+ es humides issues de l'incinération des boues d'épuration - cendres sèc
+ hes issues de l'incinération des boues d'épuration
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

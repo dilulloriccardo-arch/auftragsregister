@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71529f9f-2a1f-4188-9ab9-aecf67641a38-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Délai de remise : MP-260016\, inspections principales de tunnels
+  2027-2029
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA - Filiale Win
+ terthur\nDélai de remise : 16.12.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/71529f9f-2a1f-4188-9ab9-aecf67
+ 641a38/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /71529f9f-2a1f-4188-9ab9-aecf67641a38
+URL:https://auftragsregister.ch/fr/auftrag/71529f9f-2a1f-4188-9ab9-aecf6764
+ 1a38/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-260016\, inspections principales de tun
+ nels 2027-2029
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45cd8c6b-f6d1-432a-bb33-1ea164fc0402-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261201T153000Z
+SUMMARY:Eingabefrist: Aménagement des laboratoires du SCAV - CFC 232 Insta
+ llations électriques
+DESCRIPTION:Auftraggeber: Département du territoire - Office Cantonal des 
+ bâtiments\nEingabefrist: 01.12.2026\, 16.30 Uhr\nIm Register: https://au
+ ftragsregister.ch/de/auftrag/45cd8c6b-f6d1-432a-bb33-1ea164fc0402/\nAmtlic
+ he Publikation: https://www.simap.ch/de/project-detail/45cd8c6b-f6d1-432a-
+ bb33-1ea164fc0402
+URL:https://auftragsregister.ch/de/auftrag/45cd8c6b-f6d1-432a-bb33-1ea164fc
+ 0402/
+LOCATION:Genève\, quai Ernest-Ansermet 22
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Aménagement des laboratoires du SCAV - CFC 232 I
+ nstallations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3f81179d-786b-447b-a364-e0645eb83874-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T150000Z
+SUMMARY:Délai de remise : Erweiterung Schulhaus Brühl 3 (2.Etappe)\, Ge
+ benstorf\, BKP 211.5 Baumeisterarbeiten
+DESCRIPTION:Acheteur public : Gemeinde Gebenstorf\nDélai de remise : 1
+ 8.12.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/3f81179d-786b-447b-a364-e0645eb83874/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/3f81179d-786b-447b-a364-e0645e
+ b83874
+URL:https://auftragsregister.ch/fr/auftrag/3f81179d-786b-447b-a364-e0645eb8
+ 3874/
+LOCATION:Gebenstorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erweiterung Schulhaus Brühl 3 (2.Etappe)\
+ , Gebenstorf\, BKP 211.5 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:302f6c40-8ff8-4bad-82c2-dc99d162b66d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Eingabefrist: STEP de Troistorrents – Renouvellement de la déshy
+ dratation
+DESCRIPTION:Auftraggeber: RWB Valais SA\nEingabefrist: 11.12.2026\, 23.59 
+ Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/302f6c40-8ff8-4ba
+ d-82c2-dc99d162b66d/\nAmtliche Publikation: https://www.simap.ch/de/projec
+ t-detail/302f6c40-8ff8-4bad-82c2-dc99d162b66d
+URL:https://auftragsregister.ch/de/auftrag/302f6c40-8ff8-4bad-82c2-dc99d162
+ b66d/
+LOCATION:Troistorrents
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: STEP de Troistorrents – Renouvellement de la d
+ éshydratation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

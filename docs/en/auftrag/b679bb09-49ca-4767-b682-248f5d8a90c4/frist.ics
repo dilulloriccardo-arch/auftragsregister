@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b679bb09-49ca-4767-b682-248f5d8a90c4-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270111T130000Z
+SUMMARY:Submission deadline: Entretien constructif 2027 Service des Ponts e
+ t Chaussées
+DESCRIPTION:Public buyer: Service des ponts et chaussées\nSubmission deadl
+ ine: 11 Jan 2027\, 14:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/b679bb09-49ca-4767-b682-248f5d8a90c4/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/b679bb09-49ca-4767-b682-248f5d8a90c4
+URL:https://auftragsregister.ch/en/auftrag/b679bb09-49ca-4767-b682-248f5d8a
+ 90c4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Entretien constructif 2027 Service des Pon
+ ts et Chaussées
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac1f5bba-7315-4bfa-a3e5-c7169bae7957-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Délai de remise : Équipe de planification générale pour le pr
+ ojet Sirius3 – Infrastructure commune de formation et de perfectionnemen
+ t pour les sapeurs-pompiers\, la protection civile et la police cantonale
+DESCRIPTION:Acheteur public : Gebäudeversicherung Bern (GVB)\nDélai de 
+ remise : 18.12.2026\, 23 h 59\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/ac1f5bba-7315-4bfa-a3e5-c7169bae7957/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/ac1f5bba-7315-4bfa-a
+ 3e5-c7169bae7957
+URL:https://auftragsregister.ch/fr/auftrag/ac1f5bba-7315-4bfa-a3e5-c7169bae
+ 7957/
+LOCATION:Ittigen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Équipe de planification générale pour l
+ e projet Sirius3 – Infrastructure commune de formation et de perfectionn
+ ement pour les sapeurs-pompiers\, la protection civile et la police canton
+ ale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

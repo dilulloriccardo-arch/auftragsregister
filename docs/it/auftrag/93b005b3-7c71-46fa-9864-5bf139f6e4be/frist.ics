@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:93b005b3-7c71-46fa-9864-5bf139f6e4be-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T160000Z
+SUMMARY:Scadenza: Heizungsersatz\, Waffenplatzstrasse 56/58/60\, 8002 Züri
+ ch
+DESCRIPTION:Ente pubblico: Liegenschaften Stadt Zürich (LSZ)\nScadenza: 11
+ .12.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/93b
+ 005b3-7c71-46fa-9864-5bf139f6e4be/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/93b005b3-7c71-46fa-9864-5bf139f6e4be
+URL:https://auftragsregister.ch/it/auftrag/93b005b3-7c71-46fa-9864-5bf139f6
+ e4be/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Heizungsersatz\, Waffenplatzstrasse 56/58/60\, 8002 Z
+ ürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

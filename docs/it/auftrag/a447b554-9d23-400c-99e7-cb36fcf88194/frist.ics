@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a447b554-9d23-400c-99e7-cb36fcf88194-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261201T080000Z
+SUMMARY:Scadenza: 6-fach Kindergarten Kirchacker Eschenbach
+DESCRIPTION:Ente pubblico: Brandenberger+Ruosch AG (im Auftrag der Gemeinde
+  Eschenbach SG)\nScadenza: 01.12.2026\, 09:00\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/a447b554-9d23-400c-99e7-cb36fcf88194/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/a447b554-9d23-400c-
+ 99e7-cb36fcf88194
+URL:https://auftragsregister.ch/it/auftrag/a447b554-9d23-400c-99e7-cb36fcf8
+ 8194/
+LOCATION:Eschenbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 6-fach Kindergarten Kirchacker Eschenbach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

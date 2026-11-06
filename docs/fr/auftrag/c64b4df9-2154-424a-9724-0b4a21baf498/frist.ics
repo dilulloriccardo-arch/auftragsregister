@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c64b4df9-2154-424a-9724-0b4a21baf498-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270105T100000Z
+SUMMARY:Délai de remise : Livraison et installation de XX appareillages 
+ de commutation haute tension GIS triphasés encapsulés de 110 kV
+DESCRIPTION:Acheteur public : St. Gallisch Appenzellische Kraftwerke AG (
+ SAK)\nDélai de remise : 05.01.2027\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/c64b4df9-2154-424a-9724-0b4a21baf49
+ 8/\nPublication officielle : https://www.simap.ch/fr/project-detail/c64b
+ 4df9-2154-424a-9724-0b4a21baf498
+URL:https://auftragsregister.ch/fr/auftrag/c64b4df9-2154-424a-9724-0b4a21ba
+ f498/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Livraison et installation de XX appareilla
+ ges de commutation haute tension GIS triphasés encapsulés de 110 kV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

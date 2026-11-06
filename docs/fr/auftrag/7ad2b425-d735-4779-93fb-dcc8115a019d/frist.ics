@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ad2b425-d735-4779-93fb-dcc8115a019d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Délai de remise : MP-200038 N28 Wildtierkorridor Schiers - Entre
+ preneur en bâtiment Travaux principaux
+DESCRIPTION:Acheteur public : Ufficio federale delle strade USTRA\, divis
+ ione infrastruttura stradale Est\nDélai de remise : 15.01.2027\, 16 h
+  00\nDans le registre : https://auftragsregister.ch/fr/auftrag/7ad2b42
+ 5-d735-4779-93fb-dcc8115a019d/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/7ad2b425-d735-4779-93fb-dcc8115a019d
+URL:https://auftragsregister.ch/fr/auftrag/7ad2b425-d735-4779-93fb-dcc8115a
+ 019d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-200038 N28 Wildtierkorridor Schiers - E
+ ntrepreneur en bâtiment Travaux principaux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

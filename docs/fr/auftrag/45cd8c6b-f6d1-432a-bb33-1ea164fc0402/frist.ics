@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45cd8c6b-f6d1-432a-bb33-1ea164fc0402-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261201T153000Z
+SUMMARY:Délai de remise : Aménagement des laboratoires du SCAV - CFC 23
+ 2 Installations électriques
+DESCRIPTION:Acheteur public : Département du territoire - Office Cantona
+ l des bâtiments\nDélai de remise : 01.12.2026\, 16 h 30\nDans le r
+ egistre : https://auftragsregister.ch/fr/auftrag/45cd8c6b-f6d1-432a-bb33
+ -1ea164fc0402/\nPublication officielle : https://www.simap.ch/fr/project
+ -detail/45cd8c6b-f6d1-432a-bb33-1ea164fc0402
+URL:https://auftragsregister.ch/fr/auftrag/45cd8c6b-f6d1-432a-bb33-1ea164fc
+ 0402/
+LOCATION:Genève\, quai Ernest-Ansermet 22
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Aménagement des laboratoires du SCAV - CF
+ C 232 Installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

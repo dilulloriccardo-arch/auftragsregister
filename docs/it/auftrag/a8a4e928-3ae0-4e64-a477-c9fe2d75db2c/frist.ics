@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a8a4e928-3ae0-4e64-a477-c9fe2d75db2c-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Scadenza: Baumeistersubmission SM Bode 1\, Saanen
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 15.12.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/a8a4e928-3
+ ae0-4e64-a477-c9fe2d75db2c/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/a8a4e928-3ae0-4e64-a477-c9fe2d75db2c
+URL:https://auftragsregister.ch/it/auftrag/a8a4e928-3ae0-4e64-a477-c9fe2d75
+ db2c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Baumeistersubmission SM Bode 1\, Saanen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

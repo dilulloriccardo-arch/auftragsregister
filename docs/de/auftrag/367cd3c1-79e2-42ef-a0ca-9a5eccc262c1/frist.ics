@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:367cd3c1-79e2-42ef-a0ca-9a5eccc262c1-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261217T100000Z
+SUMMARY:Eingabefrist: STEP Vuippens AIS - Traitement des MP - Lot EMCR02 - 
+ Installations électriques
+DESCRIPTION:Auftraggeber: AIS - Ass. Interc. bassin Sionge\nEingabefrist: 1
+ 7.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/367cd3c1-79e2-42ef-a0ca-9a5eccc262c1/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/367cd3c1-79e2-42ef-a0ca-9a5eccc262c1
+URL:https://auftragsregister.ch/de/auftrag/367cd3c1-79e2-42ef-a0ca-9a5eccc2
+ 62c1/
+LOCATION:Vuippens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: STEP Vuippens AIS - Traitement des MP - Lot EMCR0
+ 2 - Installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

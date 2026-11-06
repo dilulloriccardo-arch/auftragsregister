@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8bb00b54-6538-4fca-9e86-da91f8dc97be-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Eingabefrist: Assainissement et agrandissement de la caserne des po
+ mpiers d’Estavayer - CFC 251 Installations sanitaires
+DESCRIPTION:Auftraggeber: Commune d'Estavayer - Service des bâtiments ( OC
+ SA o charrière architectes SA)\nEingabefrist: 11.12.2026\, 12.00 Uhr\nIm
+  Register: https://auftragsregister.ch/de/auftrag/8bb00b54-6538-4fca-9e86-
+ da91f8dc97be/\nAmtliche Publikation: https://www.simap.ch/de/project-detai
+ l/8bb00b54-6538-4fca-9e86-da91f8dc97be
+URL:https://auftragsregister.ch/de/auftrag/8bb00b54-6538-4fca-9e86-da91f8dc
+ 97be/
+LOCATION:Estavayer-le-Lac
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Assainissement et agrandissement de la caserne de
+ s pompiers d’Estavayer - CFC 251 Installations sanitaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

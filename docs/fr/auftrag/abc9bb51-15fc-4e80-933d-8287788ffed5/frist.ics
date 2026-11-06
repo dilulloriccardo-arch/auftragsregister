@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abc9bb51-15fc-4e80-933d-8287788ffed5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Délai de remise : (26284) 805 Contrôles de l’exécution des a
+ nnexes 4.1 et 4.2 OEEE
+DESCRIPTION:Acheteur public : Bundesamt für Energie\nDélai de remise 
+ : 16.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/abc9bb51-15fc-4e80-933d-8287788ffed5/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/abc9bb51-15fc-4e80-933d-82877
+ 88ffed5
+URL:https://auftragsregister.ch/fr/auftrag/abc9bb51-15fc-4e80-933d-8287788f
+ fed5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26284) 805 Contrôles de l’exécution d
+ es annexes 4.1 et 4.2 OEEE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

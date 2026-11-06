@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40779d89-a641-4c09-a42e-2fecdb473527-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Délai de remise : Travers/NE – Extension du poste haute tensio
+ n
+DESCRIPTION:Acheteur public : Groupe E SA - Service Achat pour les March
+ és publics\nDélai de remise : 04.12.2026\, 12 h 00\nDans le regist
+ re : https://auftragsregister.ch/fr/auftrag/40779d89-a641-4c09-a42e-2fec
+ db473527/\nPublication officielle : https://www.simap.ch/fr/project-deta
+ il/40779d89-a641-4c09-a42e-2fecdb473527
+URL:https://auftragsregister.ch/fr/auftrag/40779d89-a641-4c09-a42e-2fecdb47
+ 3527/
+LOCATION:Travers
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Travers/NE – Extension du poste haute te
+ nsion
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

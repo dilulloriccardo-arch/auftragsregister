@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:367cd3c1-79e2-42ef-a0ca-9a5eccc262c1-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261217T100000Z
+SUMMARY:Délai de remise : STEP Vuippens AIS - Traitement des MP - Lot EM
+ CR02 - Installations électriques
+DESCRIPTION:Acheteur public : AIS - Ass. Interc. bassin Sionge\nDélai de
+  remise : 17.12.2026\, 11 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/367cd3c1-79e2-42ef-a0ca-9a5eccc262c1/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/367cd3c1-79e2-42ef-
+ a0ca-9a5eccc262c1
+URL:https://auftragsregister.ch/fr/auftrag/367cd3c1-79e2-42ef-a0ca-9a5eccc2
+ 62c1/
+LOCATION:Vuippens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : STEP Vuippens AIS - Traitement des MP - Lo
+ t EMCR02 - Installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

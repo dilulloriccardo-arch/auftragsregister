@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da7d21a8-ba11-4c33-8efd-407d9543b27e-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Submission deadline: Magnolia Partner für Weiterentwicklung
+DESCRIPTION:Public buyer: Amt für Informatik und Organisation (AIO)\nSubmi
+ ssion deadline: 16 Dec 2026\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/da7d21a8-ba11-4c33-8efd-407d9543b27e/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/da7d21a8-ba11-4c33-8efd-407
+ d9543b27e
+URL:https://auftragsregister.ch/en/auftrag/da7d21a8-ba11-4c33-8efd-407d9543
+ b27e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Magnolia Partner für Weiterentwicklung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

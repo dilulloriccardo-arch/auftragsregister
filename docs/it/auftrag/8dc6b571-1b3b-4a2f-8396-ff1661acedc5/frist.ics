@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8dc6b571-1b3b-4a2f-8396-ff1661acedc5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T090000Z
+SUMMARY:Scadenza: Ingenieurleistungen Schaffung Radinfrastruktur St. Antoni
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Freiburg\nScadenza: 18.12
+ .2026\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/8dc6b5
+ 71-1b3b-4a2f-8396-ff1661acedc5/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/8dc6b571-1b3b-4a2f-8396-ff1661acedc5
+URL:https://auftragsregister.ch/it/auftrag/8dc6b571-1b3b-4a2f-8396-ff1661ac
+ edc5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ingenieurleistungen Schaffung Radinfrastruktur St. An
+ toni
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

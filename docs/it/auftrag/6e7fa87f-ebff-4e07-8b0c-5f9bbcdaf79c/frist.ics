@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e7fa87f-ebff-4e07-8b0c-5f9bbcdaf79c-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Scadenza: N05.60 MP-230028 - BSA Grandson - Areuse renouvellement -
+  Fourniture\, installation et mise en service de la Signalisation (y compr
+ is système de gestion) des tunnels Onnens/Concise/Lance (ID 12065)
+DESCRIPTION:Ente pubblico: Office fédéral des routes OFROU\, Division Inf
+ rastructure routière Ouest\, filiale Estavayer-le-Lac\nScadenza: 15.01.20
+ 27\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/6e7fa87f-
+ ebff-4e07-8b0c-5f9bbcdaf79c/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/6e7fa87f-ebff-4e07-8b0c-5f9bbcdaf79c
+URL:https://auftragsregister.ch/it/auftrag/6e7fa87f-ebff-4e07-8b0c-5f9bbcda
+ f79c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N05.60 MP-230028 - BSA Grandson - Areuse renouvelleme
+ nt - Fourniture\, installation et mise en service de la Signalisation (y c
+ ompris système de gestion) des tunnels Onnens/Concise/Lance (ID 12065)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

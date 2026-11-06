@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:966b4285-9efd-4ac2-92cf-2873244a8344-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Eingabefrist: Construction d'une cave\, d'un rural ainsi que l'amé
+ nagement d'un espace de réception à Châteauneuf-Sion _ CFC 295 ingénie
+ ur sanitaire
+DESCRIPTION:Auftraggeber: Service Immobilier et Patrimoine - Investissement
+  / Dienststelle für Immobilien und Bauliches Erbe - Investitionen\nEingab
+ efrist: 11.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/966b4285-9efd-4ac2-92cf-2873244a8344/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/966b4285-9efd-4ac2-92cf-2873244a8344
+URL:https://auftragsregister.ch/de/auftrag/966b4285-9efd-4ac2-92cf-2873244a
+ 8344/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Construction d'une cave\, d'un rural ainsi que l'
+ aménagement d'un espace de réception à Châteauneuf-Sion _ CFC 295 ing
+ énieur sanitaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

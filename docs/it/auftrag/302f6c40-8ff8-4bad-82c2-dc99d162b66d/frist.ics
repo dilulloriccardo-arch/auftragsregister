@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:302f6c40-8ff8-4bad-82c2-dc99d162b66d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Scadenza: STEP de Troistorrents – Renouvellement de la déshydrat
+ ation
+DESCRIPTION:Ente pubblico: RWB Valais SA\nScadenza: 11.12.2026\, 23:59\nNel
+  registro: https://auftragsregister.ch/it/auftrag/302f6c40-8ff8-4bad-82c2-
+ dc99d162b66d/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/302f6c40-8ff8-4bad-82c2-dc99d162b66d
+URL:https://auftragsregister.ch/it/auftrag/302f6c40-8ff8-4bad-82c2-dc99d162
+ b66d/
+LOCATION:Troistorrents
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: STEP de Troistorrents – Renouvellement de la déshy
+ dratation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

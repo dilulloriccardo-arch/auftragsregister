@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:37f0af24-4d96-4964-8e17-2297cb9f022b-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270112T225900Z
+SUMMARY:Submission deadline: Baumeisterarbeiten Station Randa
+DESCRIPTION:Public buyer: Beschaffungsstelle Matterhorn Gotthard Bahn\nSubm
+ ission deadline: 12 Jan 2027\, 23:59\nIn the register: https://auftragsr
+ egister.ch/en/auftrag/37f0af24-4d96-4964-8e17-2297cb9f022b/\nOfficial publ
+ ication: https://www.simap.ch/en/project-detail/37f0af24-4d96-4964-8e17-22
+ 97cb9f022b
+URL:https://auftragsregister.ch/en/auftrag/37f0af24-4d96-4964-8e17-2297cb9f
+ 022b/
+LOCATION:Randa
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Baumeisterarbeiten Station Randa
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

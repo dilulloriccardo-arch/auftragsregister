@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:080df43f-10c9-4b22-90cc-307851877860-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Eingabefrist: USZ Campus MITTE 1|2 / 364.10 Abwurfanlage für Hausk
+ ehricht (OV)
+DESCRIPTION:Auftraggeber: Universitätsspital Zürich\nEingabefrist: 14.01.
+ 2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/080
+ df43f-10c9-4b22-90cc-307851877860/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/080df43f-10c9-4b22-90cc-307851877860
+URL:https://auftragsregister.ch/de/auftrag/080df43f-10c9-4b22-90cc-30785187
+ 7860/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: USZ Campus MITTE 1|2 / 364.10 Abwurfanlage für H
+ auskehricht (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

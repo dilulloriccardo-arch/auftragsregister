@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95ef493d-8ae7-439a-bd39-c9f63d019092-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Submission deadline: Tender BKP 246 Commercial Refrigeration
+DESCRIPTION:Public buyer: Wohnen und Pflege Peteracker AG\nSubmission deadl
+ ine: 16 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/95ef493d-8ae7-439a-bd39-c9f63d019092/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/95ef493d-8ae7-439a-bd39-c9f63d019092
+URL:https://auftragsregister.ch/en/auftrag/95ef493d-8ae7-439a-bd39-c9f63d01
+ 9092/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tender BKP 246 Commercial Refrigeration
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

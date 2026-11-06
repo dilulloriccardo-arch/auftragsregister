@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:367cd3c1-79e2-42ef-a0ca-9a5eccc262c1-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261217T100000Z
+SUMMARY:Scadenza: STEP Vuippens AIS - Traitement des MP - Lot EMCR02 - Inst
+ allations électriques
+DESCRIPTION:Ente pubblico: AIS - Ass. Interc. bassin Sionge\nScadenza: 17.1
+ 2.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/367cd
+ 3c1-79e2-42ef-a0ca-9a5eccc262c1/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/367cd3c1-79e2-42ef-a0ca-9a5eccc262c1
+URL:https://auftragsregister.ch/it/auftrag/367cd3c1-79e2-42ef-a0ca-9a5eccc2
+ 62c1/
+LOCATION:Vuippens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: STEP Vuippens AIS - Traitement des MP - Lot EMCR02 - 
+ Installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

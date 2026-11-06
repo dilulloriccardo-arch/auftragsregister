@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:37f0af24-4d96-4964-8e17-2297cb9f022b-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270112T225900Z
+SUMMARY:Délai de remise : Travaux de génie civil à la gare de Randa
+DESCRIPTION:Acheteur public : Beschaffungsstelle Matterhorn Gotthard Bahn
+ \nDélai de remise : 12.01.2027\, 23 h 59\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/37f0af24-4d96-4964-8e17-2297cb9f022b/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/37f0af24
+ -4d96-4964-8e17-2297cb9f022b
+URL:https://auftragsregister.ch/fr/auftrag/37f0af24-4d96-4964-8e17-2297cb9f
+ 022b/
+LOCATION:Randa
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Travaux de génie civil à la gare de Rand
+ a
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

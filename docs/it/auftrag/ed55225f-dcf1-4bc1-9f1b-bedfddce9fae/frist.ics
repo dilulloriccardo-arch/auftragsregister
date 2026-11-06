@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed55225f-dcf1-4bc1-9f1b-bedfddce9fae-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Scadenza: Sanierung Giacomettistrasse\, Aspermontstrasse - Wiesenta
+ lstrasse / Rohrbauer
+DESCRIPTION:Ente pubblico: IBC Energie Wasser Chur\nScadenza: 27.11.2026\, 
+ 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/ed55225f-dcf1-
+ 4bc1-9f1b-bedfddce9fae/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/ed55225f-dcf1-4bc1-9f1b-bedfddce9fae
+URL:https://auftragsregister.ch/it/auftrag/ed55225f-dcf1-4bc1-9f1b-bedfddce
+ 9fae/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Giacomettistrasse\, Aspermontstrasse - Wies
+ entalstrasse / Rohrbauer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

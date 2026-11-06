@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed55225f-dcf1-4bc1-9f1b-bedfddce9fae-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Eingabefrist: Sanierung Giacomettistrasse\, Aspermontstrasse - Wies
+ entalstrasse / Rohrbauer
+DESCRIPTION:Auftraggeber: IBC Energie Wasser Chur\nEingabefrist: 27.11.2026
+ \, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ed55225
+ f-dcf1-4bc1-9f1b-bedfddce9fae/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/ed55225f-dcf1-4bc1-9f1b-bedfddce9fae
+URL:https://auftragsregister.ch/de/auftrag/ed55225f-dcf1-4bc1-9f1b-bedfddce
+ 9fae/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Giacomettistrasse\, Aspermontstrasse - 
+ Wiesentalstrasse / Rohrbauer
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d85d876-107a-45d3-9ca6-d12bae34c609-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Submission deadline: 16.0227 BB07 Forschungszentrum Medizin Univers
+ ität Bern - BKP 235.1 Schwachstromanlagen (BMA)
+DESCRIPTION:Public buyer: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nSubmission deadline: 18 Dec 2026\, 23:59\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/6d85d876-107a-45d3-9ca6-d12bae34c609/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/6d85d876-107
+ a-45d3-9ca6-d12bae34c609
+URL:https://auftragsregister.ch/en/auftrag/6d85d876-107a-45d3-9ca6-d12bae34
+ c609/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 16.0227 BB07 Forschungszentrum Medizin Uni
+ versität Bern - BKP 235.1 Schwachstromanlagen (BMA)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

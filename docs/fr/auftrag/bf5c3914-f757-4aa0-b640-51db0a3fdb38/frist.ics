@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bf5c3914-f757-4aa0-b640-51db0a3fdb38-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270112T153000Z
+SUMMARY:Délai de remise : Collège Voltaire – Projet Embrasures – R
+ énovation énergétique – CFC 180.1 – Travaux d'assainissement
+DESCRIPTION:Acheteur public : Département du territoire (DT)\, Office Ca
+ ntonal des bâtiments (OCBA)\, Direction des Constructions (Alterego Conce
+ pt SA)\nDélai de remise : 12.01.2027\, 16 h 30\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/bf5c3914-f757-4aa0-b640-51db0a3fd
+ b38/\nPublication officielle : https://www.simap.ch/fr/project-detail/bf
+ 5c3914-f757-4aa0-b640-51db0a3fdb38
+URL:https://auftragsregister.ch/fr/auftrag/bf5c3914-f757-4aa0-b640-51db0a3f
+ db38/
+LOCATION:Rue de Voltaire 21
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Collège Voltaire – Projet Embrasures 
+ – Rénovation énergétique – CFC 180.1 – Travaux d'assainissement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:482b4256-78c5-4453-906e-cbde577f48a6-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Délai de remise : Construction d'une cave\, d'un rural ainsi que
+  l'aménagement d'un espace de réception à Châteauneuf-Sion _ CFC 293 i
+ ngénieur électricien
+DESCRIPTION:Acheteur public : Service Immobilier et Patrimoine - Investis
+ sement / Dienststelle für Immobilien und Bauliches Erbe - Investitionen\n
+ Délai de remise : 11.12.2026\, 23 h 59\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/482b4256-78c5-4453-906e-cbde577f48a6/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/482b4256-7
+ 8c5-4453-906e-cbde577f48a6
+URL:https://auftragsregister.ch/fr/auftrag/482b4256-78c5-4453-906e-cbde577f
+ 48a6/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction d'une cave\, d'un rural ainsi
+  que l'aménagement d'un espace de réception à Châteauneuf-Sion _ CFC 2
+ 93 ingénieur électricien
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

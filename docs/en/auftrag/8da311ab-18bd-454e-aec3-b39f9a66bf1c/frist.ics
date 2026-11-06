@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8da311ab-18bd-454e-aec3-b39f9a66bf1c-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Submission deadline: Tender BKP 230 Electrical Installations
+DESCRIPTION:Public buyer: Wohnen und Pflege Peteracker AG\nSubmission deadl
+ ine: 16 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/8da311ab-18bd-454e-aec3-b39f9a66bf1c/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/8da311ab-18bd-454e-aec3-b39f9a66bf1c
+URL:https://auftragsregister.ch/en/auftrag/8da311ab-18bd-454e-aec3-b39f9a66
+ bf1c/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tender BKP 230 Electrical Installations
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

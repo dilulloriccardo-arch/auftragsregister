@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da7d21a8-ba11-4c33-8efd-407d9543b27e-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Délai de remise : Magnolia – Partenaire pour le développement
+  continu
+DESCRIPTION:Acheteur public : Amt für Informatik und Organisation (AIO)\
+ nDélai de remise : 16.12.2026\, 12 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/da7d21a8-ba11-4c33-8efd-407d9543b27e/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/da7d21a8-
+ ba11-4c33-8efd-407d9543b27e
+URL:https://auftragsregister.ch/fr/auftrag/da7d21a8-ba11-4c33-8efd-407d9543
+ b27e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Magnolia – Partenaire pour le développe
+ ment continu
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

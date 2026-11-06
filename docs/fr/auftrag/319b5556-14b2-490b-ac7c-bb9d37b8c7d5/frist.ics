@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:319b5556-14b2-490b-ac7c-bb9d37b8c7d5-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Délai de remise : ZAA21 | 45405 | BKP 273.1-01 portes de cellule
+ s de prison
+DESCRIPTION:Acheteur public : Hochbauamt\, Baubereich B\nDélai de remise
+  : 15.01.2027\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/319b5556-14b2-490b-ac7c-bb9d37b8c7d5/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/319b5556-14b2-490b-ac7c-bb
+ 9d37b8c7d5
+URL:https://auftragsregister.ch/fr/auftrag/319b5556-14b2-490b-ac7c-bb9d37b8
+ c7d5/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ZAA21 | 45405 | BKP 273.1-01 portes de cel
+ lules de prison
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

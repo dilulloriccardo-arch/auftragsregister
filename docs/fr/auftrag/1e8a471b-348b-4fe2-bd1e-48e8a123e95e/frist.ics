@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1e8a471b-348b-4fe2-bd1e-48e8a123e95e-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261207T090000Z
+SUMMARY:Délai de remise : Gemeinde Höri Schulhausstrasse - Tiefbau
+DESCRIPTION:Acheteur public : Gemeinde Höri - Bau und Infrastruktur\nDé
+ lai de remise : 07.12.2026\, 10 h 00\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/1e8a471b-348b-4fe2-bd1e-48e8a123e95e/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/1e8a471b-348b
+ -4fe2-bd1e-48e8a123e95e
+URL:https://auftragsregister.ch/fr/auftrag/1e8a471b-348b-4fe2-bd1e-48e8a123
+ e95e/
+LOCATION:Höri
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gemeinde Höri Schulhausstrasse - Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

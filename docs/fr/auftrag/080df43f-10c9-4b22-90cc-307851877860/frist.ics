@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:080df43f-10c9-4b22-90cc-307851877860-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Délai de remise : USZ Campus MITTE 1|2 / CVC 364.10 Goulotte à 
+ déchets
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 14.01.2027\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/080df43f-10c9-4b22-90cc-307851877860/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/080df43f-10c9-4b22-90cc-
+ 307851877860
+URL:https://auftragsregister.ch/fr/auftrag/080df43f-10c9-4b22-90cc-30785187
+ 7860/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : USZ Campus MITTE 1|2 / CVC 364.10 Goulotte
+  à déchets
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

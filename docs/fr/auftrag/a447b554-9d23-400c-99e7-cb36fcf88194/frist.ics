@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a447b554-9d23-400c-99e7-cb36fcf88194-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261201T080000Z
+SUMMARY:Délai de remise : Jardin d’enfants Kirchacker à six unités\,
+  Eschenbach SG
+DESCRIPTION:Acheteur public : Brandenberger+Ruosch AG (im Auftrag der Gem
+ einde Eschenbach SG)\nDélai de remise : 01.12.2026\, 9 h 00\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/a447b554-9d23-400c-9
+ 9e7-cb36fcf88194/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/a447b554-9d23-400c-99e7-cb36fcf88194
+URL:https://auftragsregister.ch/fr/auftrag/a447b554-9d23-400c-99e7-cb36fcf8
+ 8194/
+LOCATION:Eschenbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Jardin d’enfants Kirchacker à six unit
+ és\, Eschenbach SG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

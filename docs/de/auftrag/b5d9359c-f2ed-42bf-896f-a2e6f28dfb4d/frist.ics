@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b5d9359c-f2ed-42bf-896f-a2e6f28dfb4d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Eingabefrist: Neubau + Erweiterung Feuerwehr Düdingen / BKP 214 Mo
+ ntagebau in Holz
+DESCRIPTION:Auftraggeber: Gemeinde Düdingen (Brülhart Ducret AG)\nEingabe
+ frist: 21.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/b5d9359c-f2ed-42bf-896f-a2e6f28dfb4d/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/b5d9359c-f2ed-42bf-896f-a2e6f28dfb4d
+URL:https://auftragsregister.ch/de/auftrag/b5d9359c-f2ed-42bf-896f-a2e6f28d
+ fb4d/
+LOCATION:Düdingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau + Erweiterung Feuerwehr Düdingen / BKP 21
+ 4 Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

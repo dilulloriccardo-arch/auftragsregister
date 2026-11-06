@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfe80f34-a83b-48c8-af7c-81cca4b939d7-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Délai de remise : Neubau + Erweiterung Feuerwehr Düdingen / BKP
+  224 Abdichtungesarbeiten
+DESCRIPTION:Acheteur public : Gemeinde Düdingen (Brülhart Ducret AG)\nD
+ élai de remise : 21.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/cfe80f34-a83b-48c8-af7c-81cca4b939d7/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/cfe80f34-a8
+ 3b-48c8-af7c-81cca4b939d7
+URL:https://auftragsregister.ch/fr/auftrag/cfe80f34-a83b-48c8-af7c-81cca4b9
+ 39d7/
+LOCATION:Düdingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau + Erweiterung Feuerwehr Düdingen /
+  BKP 224 Abdichtungesarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

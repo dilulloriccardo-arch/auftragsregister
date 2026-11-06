@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:57987ecf-52f4-4598-b2c1-883403bde051-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261208T160000Z
+SUMMARY:Délai de remise : 11354\, K2b\, Weggis\, Erneuerung Tunnel Rigis
+ trasse
+DESCRIPTION:Acheteur public : Kanton Luzern\, Verkehr und Infrastruktur (
+ vif)\, Realisierung\nDélai de remise : 08.12.2026\, 17 h 00\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/57987ecf-52f4-4598-b
+ 2c1-883403bde051/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/57987ecf-52f4-4598-b2c1-883403bde051
+URL:https://auftragsregister.ch/fr/auftrag/57987ecf-52f4-4598-b2c1-883403bd
+ e051/
+LOCATION:Weggis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 11354\, K2b\, Weggis\, Erneuerung Tunnel R
+ igistrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

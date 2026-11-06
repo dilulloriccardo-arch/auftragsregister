@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e2eb6d4f-e37f-443f-80f1-f2a298fafc6d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T150000Z
+SUMMARY:Submission deadline: Rénovation centre scolaire du Mail - 23300 - 
+ Lustrerie
+DESCRIPTION:Public buyer: éorén - École obligatoire région Neuchâtel (
+ AAPA SA)\nSubmission deadline: 16 Dec 2026\, 16:00\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/e2eb6d4f-e37f-443f-80f1-f2a298fafc6d/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/e2eb6d4f-e37
+ f-443f-80f1-f2a298fafc6d
+URL:https://auftragsregister.ch/en/auftrag/e2eb6d4f-e37f-443f-80f1-f2a298fa
+ fc6d/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rénovation centre scolaire du Mail - 2330
+ 0 - Lustrerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

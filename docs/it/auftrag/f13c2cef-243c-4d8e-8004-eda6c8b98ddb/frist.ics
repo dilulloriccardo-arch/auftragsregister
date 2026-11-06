@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f13c2cef-243c-4d8e-8004-eda6c8b98ddb-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T130000Z
+SUMMARY:Scadenza: K23 Isenthalerstrasse\, Kehrtunnel bis Chäppelicher
+DESCRIPTION:Ente pubblico: Amt für Tiefbau Uri\nScadenza: 11.12.2026\, 14:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/f13c2cef-243c-4d8
+ e-8004-eda6c8b98ddb/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/f13c2cef-243c-4d8e-8004-eda6c8b98ddb
+URL:https://auftragsregister.ch/it/auftrag/f13c2cef-243c-4d8e-8004-eda6c8b9
+ 8ddb/
+LOCATION:Isenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: K23 Isenthalerstrasse\, Kehrtunnel bis Chäppelicher
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

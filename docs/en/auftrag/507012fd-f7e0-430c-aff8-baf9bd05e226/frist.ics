@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:507012fd-f7e0-430c-aff8-baf9bd05e226-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T130000Z
+SUMMARY:Submission deadline: Drones
+DESCRIPTION:Public buyer: Kantonspolizei Zürich\nSubmission deadline: 18 
+ Dec 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /507012fd-f7e0-430c-aff8-baf9bd05e226/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/507012fd-f7e0-430c-aff8-baf9bd05e226
+URL:https://auftragsregister.ch/en/auftrag/507012fd-f7e0-430c-aff8-baf9bd05
+ e226/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Drones
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

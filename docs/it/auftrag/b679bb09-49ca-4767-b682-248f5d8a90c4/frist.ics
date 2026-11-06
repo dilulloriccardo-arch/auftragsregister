@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b679bb09-49ca-4767-b682-248f5d8a90c4-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270111T130000Z
+SUMMARY:Scadenza: Entretien constructif 2027 Service des Ponts et Chaussée
+ s
+DESCRIPTION:Ente pubblico: Service des ponts et chaussées\nScadenza: 11.01
+ .2027\, 14:00\nNel registro: https://auftragsregister.ch/it/auftrag/b679bb
+ 09-49ca-4767-b682-248f5d8a90c4/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/b679bb09-49ca-4767-b682-248f5d8a90c4
+URL:https://auftragsregister.ch/it/auftrag/b679bb09-49ca-4767-b682-248f5d8a
+ 90c4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Entretien constructif 2027 Service des Ponts et Chaus
+ sées
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

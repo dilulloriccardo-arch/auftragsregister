@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be8e2756-aff7-4a8d-9ae6-c72ab6811319-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Eingabefrist: MP-LEB 2026.10.265 Echallens – Voie de rebroussemen
+ t - Travaux BT et câbles IS
+DESCRIPTION:Auftraggeber: Transports publics de la région lausannoise SA\n
+ Eingabefrist: 16.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/be8e2756-aff7-4a8d-9ae6-c72ab6811319/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/be8e2756-aff7-4a8d-9ae6-c72ab68
+ 11319
+URL:https://auftragsregister.ch/de/auftrag/be8e2756-aff7-4a8d-9ae6-c72ab681
+ 1319/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-LEB 2026.10.265 Echallens – Voie de rebrouss
+ ement - Travaux BT et câbles IS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

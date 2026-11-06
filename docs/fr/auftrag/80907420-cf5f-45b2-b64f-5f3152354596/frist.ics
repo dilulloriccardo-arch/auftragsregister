@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:80907420-cf5f-45b2-b64f-5f3152354596-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T100000Z
+SUMMARY:Délai de remise : Prestation de mise en décharge des déchets s
+ uivants: sables\, pierres et cailloux issus du traitement des eaux usées 
+ - cendres humides issues de l'incinération des boues d'épuration - cendr
+ es sèches issues de l'incinération des boues d'épuration
+DESCRIPTION:Acheteur public : Epura SA - Exploitation\nDélai de remise
+  : 18.12.2026\, 11 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/80907420-cf5f-45b2-b64f-5f3152354596/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/80907420-cf5f-45b2-b64f-5f
+ 3152354596
+URL:https://auftragsregister.ch/fr/auftrag/80907420-cf5f-45b2-b64f-5f315235
+ 4596/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Prestation de mise en décharge des déche
+ ts suivants: sables\, pierres et cailloux issus du traitement des eaux us
+ ées - cendres humides issues de l'incinération des boues d'épuration - 
+ cendres sèches issues de l'incinération des boues d'épuration
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

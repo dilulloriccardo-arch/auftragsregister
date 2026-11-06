@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ac4e656-e36e-4cf9-8e20-2d044ee0768a-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Eingabefrist: Versam\, Ausbau BehiG - BKP 232 Elektroinstallationen
+DESCRIPTION:Auftraggeber: Rhätische Bahn AG\nEingabefrist: 04.12.2026\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8ac4e656-e36
+ e-4cf9-8e20-2d044ee0768a/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/8ac4e656-e36e-4cf9-8e20-2d044ee0768a
+URL:https://auftragsregister.ch/de/auftrag/8ac4e656-e36e-4cf9-8e20-2d044ee0
+ 768a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Versam\, Ausbau BehiG - BKP 232 Elektroinstallati
+ onen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

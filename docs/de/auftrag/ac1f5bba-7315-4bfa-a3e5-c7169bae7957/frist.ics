@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac1f5bba-7315-4bfa-a3e5-c7169bae7957-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Eingabefrist: Generalplanerteam für das Projekt Sirius3 - Gemeinsa
+ me Aus- und Weiterbildungsinfrastruktur für Feuerwehr\, Zivilschutz und K
+ antonspolizei
+DESCRIPTION:Auftraggeber: Gebäudeversicherung Bern (GVB)\nEingabefrist: 18
+ .12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /ac1f5bba-7315-4bfa-a3e5-c7169bae7957/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/ac1f5bba-7315-4bfa-a3e5-c7169bae7957
+URL:https://auftragsregister.ch/de/auftrag/ac1f5bba-7315-4bfa-a3e5-c7169bae
+ 7957/
+LOCATION:Ittigen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Generalplanerteam für das Projekt Sirius3 - Geme
+ insame Aus- und Weiterbildungsinfrastruktur für Feuerwehr\, Zivilschutz u
+ nd Kantonspolizei
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

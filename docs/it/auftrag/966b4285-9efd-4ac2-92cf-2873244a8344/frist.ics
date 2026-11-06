@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:966b4285-9efd-4ac2-92cf-2873244a8344-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Scadenza: Construction d'une cave\, d'un rural ainsi que l'aménage
+ ment d'un espace de réception à Châteauneuf-Sion _ CFC 295 ingénieur s
+ anitaire
+DESCRIPTION:Ente pubblico: Service Immobilier et Patrimoine - Investissemen
+ t / Dienststelle für Immobilien und Bauliches Erbe - Investitionen\nScade
+ nza: 11.12.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auft
+ rag/966b4285-9efd-4ac2-92cf-2873244a8344/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/966b4285-9efd-4ac2-92cf-2873244a8344
+URL:https://auftragsregister.ch/it/auftrag/966b4285-9efd-4ac2-92cf-2873244a
+ 8344/
+LOCATION:Sion
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Construction d'une cave\, d'un rural ainsi que l'amé
+ nagement d'un espace de réception à Châteauneuf-Sion _ CFC 295 ingénie
+ ur sanitaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

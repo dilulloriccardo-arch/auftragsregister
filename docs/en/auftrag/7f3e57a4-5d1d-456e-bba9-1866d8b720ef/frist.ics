@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7f3e57a4-5d1d-456e-bba9-1866d8b720ef-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Submission deadline: ZAA21 l 45405 l BKP 273.1-02 Innentüren aus H
+ olz (Sicherheit)
+DESCRIPTION:Public buyer: Hochbauamt\, Baubereich B\nSubmission deadline: 1
+ 5 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/7f3e57a4-5d1d-456e-bba9-1866d8b720ef/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/7f3e57a4-5d1d-456e-bba9-1866d8b720ef
+URL:https://auftragsregister.ch/en/auftrag/7f3e57a4-5d1d-456e-bba9-1866d8b7
+ 20ef/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ZAA21 l 45405 l BKP 273.1-02 Innentüren a
+ us Holz (Sicherheit)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

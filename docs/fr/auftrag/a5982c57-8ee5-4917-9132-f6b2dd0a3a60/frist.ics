@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5982c57-8ee5-4917-9132-f6b2dd0a3a60-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T090000Z
+SUMMARY:Délai de remise : Zihlschlacht-Sitterdorf\, K120\, Sanierung Ber
+ nhauserstrasse innerorts
+DESCRIPTION:Acheteur public : Kanton Thurgau\, Kantonales Tiefbauamt\nDé
+ lai de remise : 11.12.2026\, 10 h 00\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/a5982c57-8ee5-4917-9132-f6b2dd0a3a60/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/a5982c57-8ee5
+ -4917-9132-f6b2dd0a3a60
+URL:https://auftragsregister.ch/fr/auftrag/a5982c57-8ee5-4917-9132-f6b2dd0a
+ 3a60/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Zihlschlacht-Sitterdorf\, K120\, Sanierung
+  Bernhauserstrasse innerorts
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

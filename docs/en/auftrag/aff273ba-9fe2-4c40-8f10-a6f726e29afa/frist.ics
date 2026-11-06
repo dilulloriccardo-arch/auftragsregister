@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aff273ba-9fe2-4c40-8f10-a6f726e29afa-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Submission deadline: N05.60 MP-230028 - BSA Grandson - Areuse renou
+ vellement - Fourniture\, installation et mise en service EES courant fort/
+ faible des tunnels Onnens/Concise/Lance (ID 12066)
+DESCRIPTION:Public buyer: Office fédéral des routes OFROU\, Division Infr
+ astructure routière Ouest\, filiale Estavayer-le-Lac\nSubmission deadline
+ : 15 Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/aff273ba-9fe2-4c40-8f10-a6f726e29afa/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/aff273ba-9fe2-4c40-8f10-a6f726e29afa
+URL:https://auftragsregister.ch/en/auftrag/aff273ba-9fe2-4c40-8f10-a6f726e2
+ 9afa/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: N05.60 MP-230028 - BSA Grandson - Areuse r
+ enouvellement - Fourniture\, installation et mise en service EES courant f
+ ort/faible des tunnels Onnens/Concise/Lance (ID 12066)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

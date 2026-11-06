@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:44980b8b-21d3-4d9d-8c13-2db6d4fa24c2-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261201T110000Z
+SUMMARY:Scadenza: Sportanlage Heerenschürli\, Instandsetzung KR2–KR4 - B
+ KP 4 Tiefbauarbeiten
+DESCRIPTION:Ente pubblico: TED - Grün Stadt Zürich (GSZ)\nScadenza: 01.12
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/44980b
+ 8b-21d3-4d9d-8c13-2db6d4fa24c2/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/44980b8b-21d3-4d9d-8c13-2db6d4fa24c2
+URL:https://auftragsregister.ch/it/auftrag/44980b8b-21d3-4d9d-8c13-2db6d4fa
+ 24c2/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sportanlage Heerenschürli\, Instandsetzung KR2–KR4
+  - BKP 4 Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

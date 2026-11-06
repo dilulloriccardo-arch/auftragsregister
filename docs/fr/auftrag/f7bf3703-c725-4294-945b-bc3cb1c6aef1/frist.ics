@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f7bf3703-c725-4294-945b-bc3cb1c6aef1-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Délai de remise : Schulanlage Gersag – LED-Umrüstung – Los 
+ 4 Elektroinstallationen
+DESCRIPTION:Acheteur public : Gemeinde Emmen - Departement Immobilien & S
+ port\nDélai de remise : 27.11.2026\, 16 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/f7bf3703-c725-4294-945b-bc3cb1c6aef
+ 1/\nPublication officielle : https://www.simap.ch/fr/project-detail/f7bf
+ 3703-c725-4294-945b-bc3cb1c6aef1
+URL:https://auftragsregister.ch/fr/auftrag/f7bf3703-c725-4294-945b-bc3cb1c6
+ aef1/
+LOCATION:Emmenbrücke
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Schulanlage Gersag – LED-Umrüstung – 
+ Los 4 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc5949f2-2f4e-42b1-b04b-67b9ec4892f2-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Scadenza: MO-PR : 255 Agiez 1 - 256 Arnex-sur-Orbe 2
+DESCRIPTION:Ente pubblico: DGTL-Direction du cadastre et de la géoinformat
+ ion (DCG)\nScadenza: 16.12.2026\, 12:00\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/cc5949f2-2f4e-42b1-b04b-67b9ec4892f2/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/cc5949f2-2f4e-42b1-b04b-6
+ 7b9ec4892f2
+URL:https://auftragsregister.ch/it/auftrag/cc5949f2-2f4e-42b1-b04b-67b9ec48
+ 92f2/
+LOCATION:Agiez\, 1321 Arnex-sur-Orbe
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MO-PR : 255 Agiez 1 - 256 Arnex-sur-Orbe 2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

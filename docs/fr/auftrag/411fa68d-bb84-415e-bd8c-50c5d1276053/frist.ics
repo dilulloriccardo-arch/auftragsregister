@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:411fa68d-bb84-415e-bd8c-50c5d1276053-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261203T110000Z
+SUMMARY:Délai de remise : SAL_004 Prestations de transport – transport
+ s routiers de marchandises palettisées au départ de Schweizerhalle\, Rib
+ urg et Bex
+DESCRIPTION:Acheteur public : Schweizer Salinen AG\nDélai de remise : 
+ 03.12.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/411fa68d-bb84-415e-bd8c-50c5d1276053/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/411fa68d-bb84-415e-bd8c-50c5d1
+ 276053
+URL:https://auftragsregister.ch/fr/auftrag/411fa68d-bb84-415e-bd8c-50c5d127
+ 6053/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : SAL_004 Prestations de transport – trans
+ ports routiers de marchandises palettisées au départ de Schweizerhalle\,
+  Riburg et Bex
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4e59abe1-d47d-40a8-a4d0-c88ec7cab567-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Scadenza: MP-100138\, N01/42 Werkhof Wallisellen\, Neubau - Netzwer
+ kanbindung IP-Netz
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Filiale Winterth
+ ur\nScadenza: 16.12.2026\, 23:59\nNel registro: https://auftragsregister.c
+ h/it/auftrag/4e59abe1-d47d-40a8-a4d0-c88ec7cab567/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/4e59abe1-d47d-40a8-a4d0-c88ec7ca
+ b567
+URL:https://auftragsregister.ch/it/auftrag/4e59abe1-d47d-40a8-a4d0-c88ec7ca
+ b567/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-100138\, N01/42 Werkhof Wallisellen\, Neubau - Net
+ zwerkanbindung IP-Netz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

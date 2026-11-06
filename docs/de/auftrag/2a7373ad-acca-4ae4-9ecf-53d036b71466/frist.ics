@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2a7373ad-acca-4ae4-9ecf-53d036b71466-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261217T160000Z
+SUMMARY:Eingabefrist: Neubauten «GHG Riederenholz WoKi | GHG CP-Schule» B
+ KP 292 Bauingenieur
+DESCRIPTION:Auftraggeber: blumergaignat ag\nEingabefrist: 17.12.2026\, 17.0
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2a7373ad-acca-
+ 4ae4-9ecf-53d036b71466/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/2a7373ad-acca-4ae4-9ecf-53d036b71466
+URL:https://auftragsregister.ch/de/auftrag/2a7373ad-acca-4ae4-9ecf-53d036b7
+ 1466/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubauten «GHG Riederenholz WoKi | GHG CP-Schule
+ » BKP 292 Bauingenieur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

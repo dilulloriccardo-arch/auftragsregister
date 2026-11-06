@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b0bd04c0-7d8c-41e8-8deb-409c9972863a-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261201T153000Z
+SUMMARY:Délai de remise : HEPIA - Installation d'un groupe de secours - 
+ CFC 231.2 Ensemble d'appareillages et CFC 231.3 Distributions tableaux sec
+ ondaires à basse tension
+DESCRIPTION:Acheteur public : Office cantonal des bâtiments (OCBA)\nDél
+ ai de remise : 01.12.2026\, 16 h 30\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/b0bd04c0-7d8c-41e8-8deb-409c9972863a/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/b0bd04c0-7d8c-
+ 41e8-8deb-409c9972863a
+URL:https://auftragsregister.ch/fr/auftrag/b0bd04c0-7d8c-41e8-8deb-409c9972
+ 863a/
+LOCATION:Rue de la Prairie 4
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : HEPIA - Installation d'un groupe de secour
+ s - CFC 231.2 Ensemble d'appareillages et CFC 231.3 Distributions tableaux
+  secondaires à basse tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

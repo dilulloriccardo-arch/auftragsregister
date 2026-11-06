@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cbc65640-3374-44a1-b2f0-24b7a3712d34-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Délai de remise : Entreprise de rénovation de la gare de Thurne
+ n
+DESCRIPTION:Acheteur public : BLS AG - Finance & SCM - Strategische Besch
+ affung\nDélai de remise : 16.12.2026\, 23 h 59\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/cbc65640-3374-44a1-b2f0-24b7a3712
+ d34/\nPublication officielle : https://www.simap.ch/fr/project-detail/cb
+ c65640-3374-44a1-b2f0-24b7a3712d34
+URL:https://auftragsregister.ch/fr/auftrag/cbc65640-3374-44a1-b2f0-24b7a371
+ 2d34/
+LOCATION:Thurnen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Entreprise de rénovation de la gare de Th
+ urnen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

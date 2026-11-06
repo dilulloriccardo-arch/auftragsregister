@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4708e90-0811-4439-8c57-a8b00105e190-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Scadenza: Sanierung Stationsstrasse/Kreuzwiesenstrasse\, Baumeister
+ - und Belagsarbeiten
+DESCRIPTION:Ente pubblico: Gemeinde Landquart\nScadenza: 27.11.2026\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/b4708e90-0811-4439-
+ 8c57-a8b00105e190/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/b4708e90-0811-4439-8c57-a8b00105e190
+URL:https://auftragsregister.ch/it/auftrag/b4708e90-0811-4439-8c57-a8b00105
+ e190/
+LOCATION:Igis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Stationsstrasse/Kreuzwiesenstrasse\, Baumei
+ ster- und Belagsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:93b005b3-7c71-46fa-9864-5bf139f6e4be-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261211T160000Z
+SUMMARY:Délai de remise : Heizungsersatz\, Waffenplatzstrasse 56/58/60\,
+  8002 Zürich
+DESCRIPTION:Acheteur public : Liegenschaften Stadt Zürich (LSZ)\nDélai 
+ de remise : 11.12.2026\, 17 h 00\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/93b005b3-7c71-46fa-9864-5bf139f6e4be/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/93b005b3-7c71-46f
+ a-9864-5bf139f6e4be
+URL:https://auftragsregister.ch/fr/auftrag/93b005b3-7c71-46fa-9864-5bf139f6
+ e4be/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Heizungsersatz\, Waffenplatzstrasse 56/58/
+ 60\, 8002 Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

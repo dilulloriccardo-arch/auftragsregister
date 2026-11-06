@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be8e2756-aff7-4a8d-9ae6-c72ab6811319-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Délai de remise : MP-LEB 2026.10.265 Echallens – Voie de rebro
+ ussement - Travaux BT et câbles IS
+DESCRIPTION:Acheteur public : Transports publics de la région lausannois
+ e SA\nDélai de remise : 16.12.2026\, 12 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/be8e2756-aff7-4a8d-9ae6-c72ab681131
+ 9/\nPublication officielle : https://www.simap.ch/fr/project-detail/be8e
+ 2756-aff7-4a8d-9ae6-c72ab6811319
+URL:https://auftragsregister.ch/fr/auftrag/be8e2756-aff7-4a8d-9ae6-c72ab681
+ 1319/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-LEB 2026.10.265 Echallens – Voie de r
+ ebroussement - Travaux BT et câbles IS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

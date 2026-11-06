@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:347db2ab-292a-4201-9506-019d99a54b53-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T150000Z
+SUMMARY:Scadenza: BKP 421 Umgebungsarbeiten Neubau und Sanierung Schulhaus 
+ Worben
+DESCRIPTION:Ente pubblico: Gemeinde Worben\nScadenza: 18.12.2026\, 16:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/347db2ab-292a-4201-950
+ 6-019d99a54b53/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/347db2ab-292a-4201-9506-019d99a54b53
+URL:https://auftragsregister.ch/it/auftrag/347db2ab-292a-4201-9506-019d99a5
+ 4b53/
+LOCATION:Worben
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 421 Umgebungsarbeiten Neubau und Sanierung Schulh
+ aus Worben
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

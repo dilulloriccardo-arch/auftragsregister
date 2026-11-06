@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7a8c51d8-961d-4880-9c3f-54fb344286a4-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Délai de remise : Grünanlage Hohe Promenade\, Zürich
+DESCRIPTION:Acheteur public : TED - Grün Stadt Zürich (GSZ)\nDélai de 
+ remise : 14.12.2026\, 12 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/7a8c51d8-961d-4880-9c3f-54fb344286a4/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/7a8c51d8-961d-4880-9
+ c3f-54fb344286a4
+URL:https://auftragsregister.ch/fr/auftrag/7a8c51d8-961d-4880-9c3f-54fb3442
+ 86a4/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Grünanlage Hohe Promenade\, Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

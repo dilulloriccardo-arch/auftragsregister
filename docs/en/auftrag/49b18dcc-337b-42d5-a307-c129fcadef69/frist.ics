@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49b18dcc-337b-42d5-a307-c129fcadef69-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Submission deadline: Neubau + Erweiterung Feuerwehr Düdingen / BKP
+  230 Elektroinstallationen
+DESCRIPTION:Public buyer: Gemeinde Düdingen (Brülhart Ducret AG)\nSubmiss
+ ion deadline: 21 Dec 2026\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/49b18dcc-337b-42d5-a307-c129fcadef69/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/49b18dcc-337b-42d5-a307-c129f
+ cadef69
+URL:https://auftragsregister.ch/en/auftrag/49b18dcc-337b-42d5-a307-c129fcad
+ ef69/
+LOCATION:Düdingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau + Erweiterung Feuerwehr Düdingen /
+  BKP 230 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

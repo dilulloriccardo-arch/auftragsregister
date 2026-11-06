@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c64b4df9-2154-424a-9724-0b4a21baf498-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270105T100000Z
+SUMMARY:Eingabefrist: Lieferung und Montage von drei HS-Schaltanlagen GIS 1
+ 10 kV\, dreiphasig gekapselt
+DESCRIPTION:Auftraggeber: St. Gallisch Appenzellische Kraftwerke AG (SAK)\n
+ Eingabefrist: 05.01.2027\, 11.00 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/c64b4df9-2154-424a-9724-0b4a21baf498/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/c64b4df9-2154-424a-9724-0b4a21b
+ af498
+URL:https://auftragsregister.ch/de/auftrag/c64b4df9-2154-424a-9724-0b4a21ba
+ f498/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Lieferung und Montage von drei HS-Schaltanlagen G
+ IS 110 kV\, dreiphasig gekapselt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

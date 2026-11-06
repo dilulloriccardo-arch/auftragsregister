@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ad2b425-d735-4779-93fb-dcc8115a019d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Scadenza: MP-200038 N28 Wildtierkorridor Schiers – Baumeister Hau
+ ptarbeiten
+DESCRIPTION:Ente pubblico: Ufficio federale delle strade USTRA\, divisione 
+ infrastruttura stradale Est\nScadenza: 15.01.2027\, 16:00\nNel registro: h
+ ttps://auftragsregister.ch/it/auftrag/7ad2b425-d735-4779-93fb-dcc8115a019d
+ /\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/7ad2b42
+ 5-d735-4779-93fb-dcc8115a019d
+URL:https://auftragsregister.ch/it/auftrag/7ad2b425-d735-4779-93fb-dcc8115a
+ 019d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-200038 N28 Wildtierkorridor Schiers – Baumeister
+  Hauptarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

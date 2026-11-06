@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:31d41bf1-4425-4f3e-bd5d-3fe6eadf8916-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Scadenza: Ausschreibung BKP 358 Gastroküche
+DESCRIPTION:Ente pubblico: Wohnen und Pflege Peteracker AG\nScadenza: 16.12
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/31d41b
+ f1-4425-4f3e-bd5d-3fe6eadf8916/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/31d41bf1-4425-4f3e-bd5d-3fe6eadf8916
+URL:https://auftragsregister.ch/it/auftrag/31d41bf1-4425-4f3e-bd5d-3fe6eadf
+ 8916/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung BKP 358 Gastroküche
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

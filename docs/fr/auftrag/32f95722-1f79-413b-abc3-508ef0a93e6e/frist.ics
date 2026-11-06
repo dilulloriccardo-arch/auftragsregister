@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32f95722-1f79-413b-abc3-508ef0a93e6e-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261204T100000Z
+SUMMARY:Délai de remise : Sanierung Geissbergstrasse
+DESCRIPTION:Acheteur public : Gossweiler Ingenieure AG\nDélai de remise
+  : 04.12.2026\, 11 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/32f95722-1f79-413b-abc3-508ef0a93e6e/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/32f95722-1f79-413b-abc3-50
+ 8ef0a93e6e
+URL:https://auftragsregister.ch/fr/auftrag/32f95722-1f79-413b-abc3-508ef0a9
+ 3e6e/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Geissbergstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

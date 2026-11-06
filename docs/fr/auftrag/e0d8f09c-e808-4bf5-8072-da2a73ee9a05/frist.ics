@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e0d8f09c-e808-4bf5-8072-da2a73ee9a05-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Délai de remise : Neubeschaffung ERP - ZENTRUM FÜR LABORMEDIZIN
+DESCRIPTION:Acheteur public : Zentrum für Labormedizin\nDélai de remise
+  : 18.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/e0d8f09c-e808-4bf5-8072-da2a73ee9a05/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/e0d8f09c-e808-4bf5-8072-da
+ 2a73ee9a05
+URL:https://auftragsregister.ch/fr/auftrag/e0d8f09c-e808-4bf5-8072-da2a73ee
+ 9a05/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubeschaffung ERP - ZENTRUM FÜR LABORMED
+ IZIN
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

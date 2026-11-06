@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7f3e57a4-5d1d-456e-bba9-1866d8b720ef-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Délai de remise : ZAA21 l 45405 l BKP 273.1-02 Portes intérieur
+ es en bois (sécurité)
+DESCRIPTION:Acheteur public : Hochbauamt\, Baubereich B\nDélai de remise
+  : 15.01.2027\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/7f3e57a4-5d1d-456e-bba9-1866d8b720ef/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/7f3e57a4-5d1d-456e-bba9-18
+ 66d8b720ef
+URL:https://auftragsregister.ch/fr/auftrag/7f3e57a4-5d1d-456e-bba9-1866d8b7
+ 20ef/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ZAA21 l 45405 l BKP 273.1-02 Portes intér
+ ieures en bois (sécurité)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

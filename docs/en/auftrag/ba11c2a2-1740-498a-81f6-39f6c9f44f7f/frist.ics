@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ba11c2a2-1740-498a-81f6-39f6c9f44f7f-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Submission deadline: Extension et rénovation du Lycée-collège de
+  St-Maurice - CFC 281.7
+DESCRIPTION:Public buyer: Etat du Valais\, Service immobilier et patrimoine
+  - Investissements\nSubmission deadline: 18 Dec 2026\, 23:59\nIn the reg
+ ister: https://auftragsregister.ch/en/auftrag/ba11c2a2-1740-498a-81f6-39f6
+ c9f44f7f/\nOfficial publication: https://www.simap.ch/en/project-detail/ba
+ 11c2a2-1740-498a-81f6-39f6c9f44f7f
+URL:https://auftragsregister.ch/en/auftrag/ba11c2a2-1740-498a-81f6-39f6c9f4
+ 4f7f/
+LOCATION:St-Maurice
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Extension et rénovation du Lycée-collèg
+ e de St-Maurice - CFC 281.7
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

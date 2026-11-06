@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a447b554-9d23-400c-99e7-cb36fcf88194-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261201T080000Z
+SUMMARY:Submission deadline: 6-fach Kindergarten Kirchacker Eschenbach
+DESCRIPTION:Public buyer: Brandenberger+Ruosch AG (im Auftrag der Gemeinde 
+ Eschenbach SG)\nSubmission deadline: 1 Dec 2026\, 09:00\nIn the register
+ : https://auftragsregister.ch/en/auftrag/a447b554-9d23-400c-99e7-cb36fcf88
+ 194/\nOfficial publication: https://www.simap.ch/en/project-detail/a447b55
+ 4-9d23-400c-99e7-cb36fcf88194
+URL:https://auftragsregister.ch/en/auftrag/a447b554-9d23-400c-99e7-cb36fcf8
+ 8194/
+LOCATION:Eschenbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 6-fach Kindergarten Kirchacker Eschenbach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40779d89-a641-4c09-a42e-2fecdb473527-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Submission deadline: Travers/NE – Extension du poste haute tensio
+ n
+DESCRIPTION:Public buyer: Groupe E SA - Service Achat pour les Marchés pub
+ lics\nSubmission deadline: 4 Dec 2026\, 12:00\nIn the register: https://
+ auftragsregister.ch/en/auftrag/40779d89-a641-4c09-a42e-2fecdb473527/\nOffi
+ cial publication: https://www.simap.ch/en/project-detail/40779d89-a641-4c0
+ 9-a42e-2fecdb473527
+URL:https://auftragsregister.ch/en/auftrag/40779d89-a641-4c09-a42e-2fecdb47
+ 3527/
+LOCATION:Travers
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Travers/NE – Extension du poste haute te
+ nsion
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

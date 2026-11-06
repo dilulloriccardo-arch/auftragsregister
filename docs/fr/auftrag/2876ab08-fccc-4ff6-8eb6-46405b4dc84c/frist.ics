@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2876ab08-fccc-4ff6-8eb6-46405b4dc84c-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Délai de remise : Schellenbergweg - Schellenbergstrasse\, Masans
+ erstrasse bis Giacomettistrasse\, Baumeisterarbeiten
+DESCRIPTION:Acheteur public : IBC Energie Wasser Chur\nDélai de remise
+  : 27.11.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/2876ab08-fccc-4ff6-8eb6-46405b4dc84c/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/2876ab08-fccc-4ff6-8eb6-46
+ 405b4dc84c
+URL:https://auftragsregister.ch/fr/auftrag/2876ab08-fccc-4ff6-8eb6-46405b4d
+ c84c/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Schellenbergweg - Schellenbergstrasse\, Ma
+ sanserstrasse bis Giacomettistrasse\, Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

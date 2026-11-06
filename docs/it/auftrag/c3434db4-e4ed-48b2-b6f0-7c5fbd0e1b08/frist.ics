@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c3434db4-e4ed-48b2-b6f0-7c5fbd0e1b08-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T153000Z
+SUMMARY:Scadenza: Ecole Secondaire Noëlla Rouget à Meyrin\, construction 
+ d'un groupe scolaire et de salles omnisport - Lot 37A - plâtrerie peintur
+ e
+DESCRIPTION:Ente pubblico: Etat de Genève\, Département du Territoire - D
+ T\, Office Cantonal des Bâtiments\nScadenza: 18.12.2026\, 16:30\nNel regi
+ stro: https://auftragsregister.ch/it/auftrag/c3434db4-e4ed-48b2-b6f0-7c5fb
+ d0e1b08/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/
+ c3434db4-e4ed-48b2-b6f0-7c5fbd0e1b08
+URL:https://auftragsregister.ch/it/auftrag/c3434db4-e4ed-48b2-b6f0-7c5fbd0e
+ 1b08/
+LOCATION:Meyrin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ecole Secondaire Noëlla Rouget à Meyrin\, construct
+ ion d'un groupe scolaire et de salles omnisport - Lot 37A - plâtrerie pei
+ nture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

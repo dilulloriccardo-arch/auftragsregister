@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8e3bca7e-7e85-4dda-9dc6-3c123df2461a-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261218T153000Z
+SUMMARY:Submission deadline: Ecole Secondaire Noëlla Rouget à Meyrin\, co
+ nstruction d'un groupe scolaire et de salles omnisport - Lot 36 - chapes t
+ errazzo
+DESCRIPTION:Public buyer: Etat de Genève\, Département du Territoire - DT
+ \, Office Cantonal des Bâtiments\nSubmission deadline: 18 Dec 2026\, 16
+ :30\nIn the register: https://auftragsregister.ch/en/auftrag/8e3bca7e-7e85
+ -4dda-9dc6-3c123df2461a/\nOfficial publication: https://www.simap.ch/en/pr
+ oject-detail/8e3bca7e-7e85-4dda-9dc6-3c123df2461a
+URL:https://auftragsregister.ch/en/auftrag/8e3bca7e-7e85-4dda-9dc6-3c123df2
+ 461a/
+LOCATION:Meyrin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ecole Secondaire Noëlla Rouget à Meyrin\
+ , construction d'un groupe scolaire et de salles omnisport - Lot 36 - chap
+ es terrazzo
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

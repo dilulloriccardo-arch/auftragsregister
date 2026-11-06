@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da7d21a8-ba11-4c33-8efd-407d9543b27e-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Scadenza: Magnolia Partner für Weiterentwicklung
+DESCRIPTION:Ente pubblico: Amt für Informatik und Organisation (AIO)\nScad
+ enza: 16.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/da7d21a8-ba11-4c33-8efd-407d9543b27e/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/da7d21a8-ba11-4c33-8efd-407d9543b27e
+URL:https://auftragsregister.ch/it/auftrag/da7d21a8-ba11-4c33-8efd-407d9543
+ b27e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Magnolia Partner für Weiterentwicklung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

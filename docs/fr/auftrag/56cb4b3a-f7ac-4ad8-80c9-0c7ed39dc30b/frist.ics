@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:56cb4b3a-f7ac-4ad8-80c9-0c7ed39dc30b-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Délai de remise : Ersatz HEUSSER-Heizungsversorgung durch neue H
+ eisswasser-Wärmeversorgung im HKW Aubrugg
+DESCRIPTION:Acheteur public : DIB - Elektrizitätswerk der Stadt Zürich 
+ (ewz)\nDélai de remise : 08.12.2026\, 12 h 00\nDans le registre :
+  https://auftragsregister.ch/fr/auftrag/56cb4b3a-f7ac-4ad8-80c9-0c7ed39dc3
+ 0b/\nPublication officielle : https://www.simap.ch/fr/project-detail/56c
+ b4b3a-f7ac-4ad8-80c9-0c7ed39dc30b
+URL:https://auftragsregister.ch/fr/auftrag/56cb4b3a-f7ac-4ad8-80c9-0c7ed39d
+ c30b/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatz HEUSSER-Heizungsversorgung durch ne
+ ue Heisswasser-Wärmeversorgung im HKW Aubrugg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7a8c51d8-961d-4880-9c3f-54fb344286a4-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Submission deadline: Grünanlage Hohe Promenade\, Zürich
+DESCRIPTION:Public buyer: TED - Grün Stadt Zürich (GSZ)\nSubmission deadl
+ ine: 14 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/7a8c51d8-961d-4880-9c3f-54fb344286a4/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/7a8c51d8-961d-4880-9c3f-54fb344286a4
+URL:https://auftragsregister.ch/en/auftrag/7a8c51d8-961d-4880-9c3f-54fb3442
+ 86a4/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Grünanlage Hohe Promenade\, Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

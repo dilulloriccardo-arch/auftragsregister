@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2876ab08-fccc-4ff6-8eb6-46405b4dc84c-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261127T225900Z
+SUMMARY:Scadenza: Schellenbergweg - Schellenbergstrasse\, Masanserstrasse b
+ is Giacomettistrasse\, Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: IBC Energie Wasser Chur\nScadenza: 27.11.2026\, 
+ 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/2876ab08-fccc-
+ 4ff6-8eb6-46405b4dc84c/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/2876ab08-fccc-4ff6-8eb6-46405b4dc84c
+URL:https://auftragsregister.ch/it/auftrag/2876ab08-fccc-4ff6-8eb6-46405b4d
+ c84c/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schellenbergweg - Schellenbergstrasse\, Masanserstras
+ se bis Giacomettistrasse\, Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

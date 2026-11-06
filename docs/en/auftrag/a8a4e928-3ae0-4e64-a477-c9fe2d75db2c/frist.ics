@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a8a4e928-3ae0-4e64-a477-c9fe2d75db2c-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Submission deadline: Baumeistersubmission SM Bode 1\, Saanen
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Bern\nSubmission deadline:
+  15 Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/a8a4e928-3ae0-4e64-a477-c9fe2d75db2c/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/a8a4e928-3ae0-4e64-a477-c9fe2d75db2c
+URL:https://auftragsregister.ch/en/auftrag/a8a4e928-3ae0-4e64-a477-c9fe2d75
+ db2c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Baumeistersubmission SM Bode 1\, Saanen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

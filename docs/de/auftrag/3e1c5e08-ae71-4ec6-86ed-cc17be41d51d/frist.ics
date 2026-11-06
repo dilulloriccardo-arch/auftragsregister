@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e1c5e08-ae71-4ec6-86ed-cc17be41d51d-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261216T150000Z
+SUMMARY:Eingabefrist: EPFL ASB – AO N°4 – CONTROLE D'ACCES - GARDIENNA
+ GE
+DESCRIPTION:Auftraggeber: EPFL - VPF - Achats\nEingabefrist: 16.12.2026\, 1
+ 6.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3e1c5e08-ae
+ 71-4ec6-86ed-cc17be41d51d/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/3e1c5e08-ae71-4ec6-86ed-cc17be41d51d
+URL:https://auftragsregister.ch/de/auftrag/3e1c5e08-ae71-4ec6-86ed-cc17be41
+ d51d/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: EPFL ASB – AO N°4 – CONTROLE D'ACCES - GARDI
+ ENNAGE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

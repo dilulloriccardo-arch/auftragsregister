@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f7bf3703-c725-4294-945b-bc3cb1c6aef1-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261127T150000Z
+SUMMARY:Scadenza: Schulanlage Gersag – LED-Umrüstung – Los 4 Elektroin
+ stallationen
+DESCRIPTION:Ente pubblico: Gemeinde Emmen - Departement Immobilien & Sport\
+ nScadenza: 27.11.2026\, 16:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/f7bf3703-c725-4294-945b-bc3cb1c6aef1/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/f7bf3703-c725-4294-945b-bc3cb1c6aef
+ 1
+URL:https://auftragsregister.ch/it/auftrag/f7bf3703-c725-4294-945b-bc3cb1c6
+ aef1/
+LOCATION:Emmenbrücke
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulanlage Gersag – LED-Umrüstung – Los 4 Elekt
+ roinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

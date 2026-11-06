@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7f3e57a4-5d1d-456e-bba9-1866d8b720ef-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Scadenza: ZAA21 l 45405 l BKP 273.1-02 Innentüren aus Holz (Sicher
+ heit)
+DESCRIPTION:Ente pubblico: Hochbauamt\, Baubereich B\nScadenza: 15.01.2027\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/7f3e57a4-5d1
+ d-456e-bba9-1866d8b720ef/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/7f3e57a4-5d1d-456e-bba9-1866d8b720ef
+URL:https://auftragsregister.ch/it/auftrag/7f3e57a4-5d1d-456e-bba9-1866d8b7
+ 20ef/
+LOCATION:Kloten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ZAA21 l 45405 l BKP 273.1-02 Innentüren aus Holz (Si
+ cherheit)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

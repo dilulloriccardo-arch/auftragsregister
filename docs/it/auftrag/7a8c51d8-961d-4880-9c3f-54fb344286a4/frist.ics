@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7a8c51d8-961d-4880-9c3f-54fb344286a4-frist@auftragsregister.ch
+DTSTAMP:20261106T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Scadenza: Grünanlage Hohe Promenade\, Zürich
+DESCRIPTION:Ente pubblico: TED - Grün Stadt Zürich (GSZ)\nScadenza: 14.12
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/7a8c51
+ d8-961d-4880-9c3f-54fb344286a4/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/7a8c51d8-961d-4880-9c3f-54fb344286a4
+URL:https://auftragsregister.ch/it/auftrag/7a8c51d8-961d-4880-9c3f-54fb3442
+ 86a4/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Grünanlage Hohe Promenade\, Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
