@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:103704f9-2e2f-42a7-aea4-c4f75ff5409d-frist@auftragsregister.ch
+DTSTAMP:20261107T000000Z
+SEQUENCE:0
+DTSTART:20261201T070000Z
+SUMMARY:Délai de remise : 082_214.6 Geneigte Dächer\, Unterkonstruktion
+ \, Gebäudehüllensanierung G-G-Strasse 22 - 30
+DESCRIPTION:Acheteur public : Baudepartement Stadt Zug\, Abteilung Hochba
+ u\nDélai de remise : 01.12.2026\, 8 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/103704f9-2e2f-42a7-aea4-c4f75ff5409d/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/103704f9
+ -2e2f-42a7-aea4-c4f75ff5409d
+URL:https://auftragsregister.ch/fr/auftrag/103704f9-2e2f-42a7-aea4-c4f75ff5
+ 409d/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 082_214.6 Geneigte Dächer\, Unterkonstruk
+ tion\, Gebäudehüllensanierung G-G-Strasse 22 - 30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23a93788-b73b-427d-b3c3-cc1ef02d89fd-frist@auftragsregister.ch
+DTSTAMP:20261107T000000Z
+SEQUENCE:0
+DTSTART:20261218T090000Z
+SUMMARY:Eingabefrist: Endoskopietürme für das Stadtspital Zürich
+DESCRIPTION:Auftraggeber: Stadtspital Zürich\, Departement Betrieb und Inf
+ ormatik I Medizintechnik\nEingabefrist: 18.12.2026\, 10.00 Uhr\nIm Regist
+ er: https://auftragsregister.ch/de/auftrag/23a93788-b73b-427d-b3c3-cc1ef02
+ d89fd/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/23a93
+ 788-b73b-427d-b3c3-cc1ef02d89fd
+URL:https://auftragsregister.ch/de/auftrag/23a93788-b73b-427d-b3c3-cc1ef02d
+ 89fd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Endoskopietürme für das Stadtspital Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bcc25405-550c-4bb8-97c5-ab712077d634-frist@auftragsregister.ch
+DTSTAMP:20261107T000000Z
+SEQUENCE:0
+DTSTART:20261218T225500Z
+SUMMARY:Eingabefrist: ARA Briglina Realisierung. BKP 334.01 Messtechnik
+DESCRIPTION:Auftraggeber: Zweckverband ARA Briglina – Ausbau und EMV (SPI
+ )\nEingabefrist: 18.12.2026\, 23.55 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/bcc25405-550c-4bb8-97c5-ab712077d634/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/bcc25405-550c-4bb8-97c5-ab71
+ 2077d634
+URL:https://auftragsregister.ch/de/auftrag/bcc25405-550c-4bb8-97c5-ab712077
+ d634/
+LOCATION:Gamsen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ARA Briglina Realisierung. BKP 334.01 Messtechnik
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

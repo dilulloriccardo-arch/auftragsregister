@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:53cbc2eb-a94b-4d7f-9303-1773fc46b136-frist@auftragsregister.ch
+DTSTAMP:20261107T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Scadenza: AUH-SAN\, Sanierung Dienstgebäude HKW Aubrugg\, BKP282/2
+ 83 Wand- / Deckenbekleidung
+DESCRIPTION:Ente pubblico: Elektrizitätswerk der Stadt Zürich (ewz)\nScad
+ enza: 11.01.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/53cbc2eb-a94b-4d7f-9303-1773fc46b136/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/53cbc2eb-a94b-4d7f-9303-1773fc46b136
+URL:https://auftragsregister.ch/it/auftrag/53cbc2eb-a94b-4d7f-9303-1773fc46
+ b136/
+LOCATION:Wallisellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AUH-SAN\, Sanierung Dienstgebäude HKW Aubrugg\, BKP2
+ 82/283 Wand- / Deckenbekleidung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

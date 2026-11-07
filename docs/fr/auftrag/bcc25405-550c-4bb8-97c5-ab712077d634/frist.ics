@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bcc25405-550c-4bb8-97c5-ab712077d634-frist@auftragsregister.ch
+DTSTAMP:20261107T000000Z
+SEQUENCE:0
+DTSTART:20261218T225500Z
+SUMMARY:Délai de remise : ARA Briglina Realisierung. BKP 334.01 Messtech
+ nik
+DESCRIPTION:Acheteur public : Zweckverband ARA Briglina – Ausbau und EM
+ V (SPI)\nDélai de remise : 18.12.2026\, 23 h 55\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/bcc25405-550c-4bb8-97c5-ab7120
+ 77d634/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /bcc25405-550c-4bb8-97c5-ab712077d634
+URL:https://auftragsregister.ch/fr/auftrag/bcc25405-550c-4bb8-97c5-ab712077
+ d634/
+LOCATION:Gamsen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ARA Briglina Realisierung. BKP 334.01 Mess
+ technik
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

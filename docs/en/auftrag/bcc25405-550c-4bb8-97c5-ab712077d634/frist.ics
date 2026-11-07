@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bcc25405-550c-4bb8-97c5-ab712077d634-frist@auftragsregister.ch
+DTSTAMP:20261107T000000Z
+SEQUENCE:0
+DTSTART:20261218T225500Z
+SUMMARY:Submission deadline: ARA Briglina Realisierung. BKP 334.01 Messtech
+ nik
+DESCRIPTION:Public buyer: Zweckverband ARA Briglina – Ausbau und EMV (SPI
+ )\nSubmission deadline: 18 Dec 2026\, 23:55\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/bcc25405-550c-4bb8-97c5-ab712077d634/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/bcc25405-550c-4bb8-
+ 97c5-ab712077d634
+URL:https://auftragsregister.ch/en/auftrag/bcc25405-550c-4bb8-97c5-ab712077
+ d634/
+LOCATION:Gamsen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ARA Briglina Realisierung. BKP 334.01 Mess
+ technik
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

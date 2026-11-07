@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23a93788-b73b-427d-b3c3-cc1ef02d89fd-frist@auftragsregister.ch
+DTSTAMP:20261107T000000Z
+SEQUENCE:0
+DTSTART:20261218T090000Z
+SUMMARY:Scadenza: Endoskopietürme für das Stadtspital Zürich
+DESCRIPTION:Ente pubblico: Stadtspital Zürich\, Departement Betrieb und In
+ formatik I Medizintechnik\nScadenza: 18.12.2026\, 10:00\nNel registro: htt
+ ps://auftragsregister.ch/it/auftrag/23a93788-b73b-427d-b3c3-cc1ef02d89fd/\
+ nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/23a93788-
+ b73b-427d-b3c3-cc1ef02d89fd
+URL:https://auftragsregister.ch/it/auftrag/23a93788-b73b-427d-b3c3-cc1ef02d
+ 89fd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Endoskopietürme für das Stadtspital Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

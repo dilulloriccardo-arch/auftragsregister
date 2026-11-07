@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23a93788-b73b-427d-b3c3-cc1ef02d89fd-frist@auftragsregister.ch
+DTSTAMP:20261107T000000Z
+SEQUENCE:0
+DTSTART:20261218T090000Z
+SUMMARY:Délai de remise : Endoskopietürme für das Stadtspital Zürich
+DESCRIPTION:Acheteur public : Stadtspital Zürich\, Departement Betrieb u
+ nd Informatik I Medizintechnik\nDélai de remise : 18.12.2026\, 10 h
+  00\nDans le registre : https://auftragsregister.ch/fr/auftrag/23a9378
+ 8-b73b-427d-b3c3-cc1ef02d89fd/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/23a93788-b73b-427d-b3c3-cc1ef02d89fd
+URL:https://auftragsregister.ch/fr/auftrag/23a93788-b73b-427d-b3c3-cc1ef02d
+ 89fd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Endoskopietürme für das Stadtspital Zür
+ ich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

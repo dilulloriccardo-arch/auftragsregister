@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a00e89d7-ba3f-4ff3-9a20-999bc66210bb-frist@auftragsregister.ch
+DTSTAMP:20261107T000000Z
+SEQUENCE:0
+DTSTART:20261215T170000Z
+SUMMARY:Submission deadline: Fassadensanierung Sekundarschulzentrum\, Huber
+ sdorf
+DESCRIPTION:Public buyer: Gemeinsame Schulen Unterleberberg (GSU)\nSubmissi
+ on deadline: 15 Dec 2026\, 18:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/a00e89d7-ba3f-4ff3-9a20-999bc66210bb/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/a00e89d7-ba3f-4ff3-9a20-999bc6
+ 6210bb
+URL:https://auftragsregister.ch/en/auftrag/a00e89d7-ba3f-4ff3-9a20-999bc662
+ 10bb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fassadensanierung Sekundarschulzentrum\, H
+ ubersdorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

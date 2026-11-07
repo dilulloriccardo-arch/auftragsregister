@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:507bd426-1eab-47ef-8c29-cdf39ca9c5e5-frist@auftragsregister.ch
+DTSTAMP:20261107T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261206
+DTEND;VALUE=DATE:20261207
+SUMMARY:Scadenza: Renouvellement licences Alfresco
+DESCRIPTION:Ente pubblico: OCAS Office cantonal des assurances sociales\nSc
+ adenza: 06.12.2026\nNel registro: https://auftragsregister.ch/it/auftrag/5
+ 07bd426-1eab-47ef-8c29-cdf39ca9c5e5/\nPubblicazione ufficiale: https://www
+ .simap.ch/it/project-detail/507bd426-1eab-47ef-8c29-cdf39ca9c5e5
+URL:https://auftragsregister.ch/it/auftrag/507bd426-1eab-47ef-8c29-cdf39ca9
+ c5e5/
+LOCATION:Genève 2
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Renouvellement licences Alfresco
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
