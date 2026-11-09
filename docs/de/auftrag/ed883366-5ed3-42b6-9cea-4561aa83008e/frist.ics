@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ed883366-5ed3-42b6-9cea-4561aa83008e-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261208T225900Z
+SUMMARY:Eingabefrist: Kantonsstrasse Nr. 87\, Wattwil: Floozstrasse\, Abzwe
+ iger KS13 bis Unterer Flooz
+DESCRIPTION:Auftraggeber: Kanton St.Gallen\, Tiefbauamt\, Strassenkreisinsp
+ ektorat Wattwil\nEingabefrist: 08.12.2026\, 23.59 Uhr\nIm Register: https
+ ://auftragsregister.ch/de/auftrag/ed883366-5ed3-42b6-9cea-4561aa83008e/\nA
+ mtliche Publikation: https://www.simap.ch/de/project-detail/ed883366-5ed3-
+ 42b6-9cea-4561aa83008e
+URL:https://auftragsregister.ch/de/auftrag/ed883366-5ed3-42b6-9cea-4561aa83
+ 008e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kantonsstrasse Nr. 87\, Wattwil: Floozstrasse\, A
+ bzweiger KS13 bis Unterer Flooz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

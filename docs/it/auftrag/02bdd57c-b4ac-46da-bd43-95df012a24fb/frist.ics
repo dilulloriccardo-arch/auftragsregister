@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02bdd57c-b4ac-46da-bd43-95df012a24fb-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Scadenza: (26189) 704 Prozess- und Organisationsanalyse öAV / ALK
+DESCRIPTION:Ente pubblico: Staatssekretariat für Wirtschaft SECO\nScadenza
+ : 21.12.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag
+ /02bdd57c-b4ac-46da-bd43-95df012a24fb/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/02bdd57c-b4ac-46da-bd43-95df012a24fb
+URL:https://auftragsregister.ch/it/auftrag/02bdd57c-b4ac-46da-bd43-95df012a
+ 24fb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (26189) 704 Prozess- und Organisationsanalyse öAV / 
+ ALK
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

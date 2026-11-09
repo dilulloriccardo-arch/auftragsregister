@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3b16d75-c35d-45cd-8122-3550cfdc0cb6-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261204T150000Z
+SUMMARY:Délai de remise : 13043.10 / 201-01 Spezialtiefbau\, Instandsetz
+ ung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontrolle Ob
+ errieden
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Zürich\nDélai de remise
+  : 04.12.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/d3b16d75-c35d-45cd-8122-3550cfdc0cb6/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/d3b16d75-c35d-45cd-8122-35
+ 50cfdc0cb6
+URL:https://auftragsregister.ch/fr/auftrag/d3b16d75-c35d-45cd-8122-3550cfdc
+ 0cb6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 13043.10 / 201-01 Spezialtiefbau\, Instand
+ setzung & Erweiterung Betriebsgebäude Seepolizei und Schifffahrtskontroll
+ e Oberrieden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

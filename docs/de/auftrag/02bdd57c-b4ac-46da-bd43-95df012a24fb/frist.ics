@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02bdd57c-b4ac-46da-bd43-95df012a24fb-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Eingabefrist: (26189) 704 Prozess- und Organisationsanalyse öAV / 
+ ALK
+DESCRIPTION:Auftraggeber: Staatssekretariat für Wirtschaft SECO\nEingabefr
+ ist: 21.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/02bdd57c-b4ac-46da-bd43-95df012a24fb/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/02bdd57c-b4ac-46da-bd43-95df012a24fb
+URL:https://auftragsregister.ch/de/auftrag/02bdd57c-b4ac-46da-bd43-95df012a
+ 24fb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (26189) 704 Prozess- und Organisationsanalyse öA
+ V / ALK
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

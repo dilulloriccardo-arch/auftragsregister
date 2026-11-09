@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2bcb13ee-4ec1-45bc-b2d0-83c9493d4726-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Délai de remise : Hochwasserschutz Gemeinde Wiesendangen: Fachma
+ ndat Architektur SIA-Phasen 32/33 und optional SIA-Phasen 41 - 53
+DESCRIPTION:Acheteur public : Gemeinde Wiesendangen (F. Preisig AG)\nDél
+ ai de remise : 11.12.2026\, 23 h 59\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/2bcb13ee-4ec1-45bc-b2d0-83c9493d4726/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/2bcb13ee-4ec1-
+ 45bc-b2d0-83c9493d4726
+URL:https://auftragsregister.ch/fr/auftrag/2bcb13ee-4ec1-45bc-b2d0-83c9493d
+ 4726/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Hochwasserschutz Gemeinde Wiesendangen: Fa
+ chmandat Architektur SIA-Phasen 32/33 und optional SIA-Phasen 41 - 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:140fe138-63cb-4b02-859f-ee4da823698b-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261204T160000Z
+SUMMARY:Submission deadline: Sanierung Rebbergstrasse\, Dielsdorf
+DESCRIPTION:Public buyer: Gemeinde Dielsdorf (Müller Ingenieure AG)\nSubmi
+ ssion deadline: 4 Dec 2026\, 17:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/140fe138-63cb-4b02-859f-ee4da823698b/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/140fe138-63cb-4b02-859f-ee4d
+ a823698b
+URL:https://auftragsregister.ch/en/auftrag/140fe138-63cb-4b02-859f-ee4da823
+ 698b/
+LOCATION:Dielsdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Rebbergstrasse\, Dielsdorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

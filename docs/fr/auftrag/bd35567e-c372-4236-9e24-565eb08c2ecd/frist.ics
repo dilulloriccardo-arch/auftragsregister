@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd35567e-c372-4236-9e24-565eb08c2ecd-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261214T153000Z
+SUMMARY:Délai de remise : Fenêtres et portes-fenêtres - Rénovation du
+  bâtiment PICTO Avenue Ernest-Pictet 28-30
+DESCRIPTION:Acheteur public : Etat de Genève\, Département du territoir
+ e - DT\, Office Cantonal des bâtiments (OCBA)\nDélai de remise : 14.12
+ .2026\, 16 h 30\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/bd35567e-c372-4236-9e24-565eb08c2ecd/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/bd35567e-c372-4236-9e24-565eb08c2ecd
+URL:https://auftragsregister.ch/fr/auftrag/bd35567e-c372-4236-9e24-565eb08c
+ 2ecd/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fenêtres et portes-fenêtres - Rénovatio
+ n du bâtiment PICTO Avenue Ernest-Pictet 28-30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

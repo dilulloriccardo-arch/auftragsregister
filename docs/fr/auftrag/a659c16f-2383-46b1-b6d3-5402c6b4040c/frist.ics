@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a659c16f-2383-46b1-b6d3-5402c6b4040c-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261204T150000Z
+SUMMARY:Délai de remise : PWA-T3\, T5\, T6 (sélectif) Appel d'offres po
+ ur les travaux électriques\, CFC 232 Installations basse tension
+DESCRIPTION:Acheteur public : Flughafen Zürich AG\nDélai de remise : 
+ 04.12.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/a659c16f-2383-46b1-b6d3-5402c6b4040c/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/a659c16f-2383-46b1-b6d3-5402c6
+ b4040c
+URL:https://auftragsregister.ch/fr/auftrag/a659c16f-2383-46b1-b6d3-5402c6b4
+ 040c/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : PWA-T3\, T5\, T6 (sélectif) Appel d'offre
+ s pour les travaux électriques\, CFC 232 Installations basse tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4a531af0-0afd-4088-9c1d-1a194b82e6fa-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : PHSG Gossau - BKP 242 Erdwärmesonden
+DESCRIPTION:Acheteur public : Kanton St.Gallen\, Bau- und Umweltdeparteme
+ nt\, Hochbauamt\nDélai de remise : 30.11.2026\, 23 h 59\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/4a531af0-0afd-4088-9c1d-
+ 1a194b82e6fa/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/4a531af0-0afd-4088-9c1d-1a194b82e6fa
+URL:https://auftragsregister.ch/fr/auftrag/4a531af0-0afd-4088-9c1d-1a194b82
+ e6fa/
+LOCATION:Gossau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : PHSG Gossau - BKP 242 Erdwärmesonden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

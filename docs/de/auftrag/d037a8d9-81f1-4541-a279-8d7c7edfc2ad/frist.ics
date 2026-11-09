@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d037a8d9-81f1-4541-a279-8d7c7edfc2ad-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:1
+DTSTART:20270129T100000Z
+SUMMARY:Eingabefrist: Programme de Transition Ecologique - Etat de Genève 
+ - CO Cayla - Plan Photovoltaïque - Appel d'Offres Consortium d'Entreprise
+ s
+DESCRIPTION:Auftraggeber: Office cantonal des bâtiments OCBA\nEingabefrist
+ : 29.01.2027\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/d037a8d9-81f1-4541-a279-8d7c7edfc2ad/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/d037a8d9-81f1-4541-a279-8d7c7edfc2ad
+URL:https://auftragsregister.ch/de/auftrag/d037a8d9-81f1-4541-a279-8d7c7edf
+ c2ad/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Programme de Transition Ecologique - Etat de Gen
+ ève - CO Cayla - Plan Photovoltaïque - Appel d'Offres Consortium d'Entre
+ prises
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

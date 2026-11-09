@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf8cfb05-abd3-4499-b551-747e3798e07a-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261214T153000Z
+SUMMARY:Scadenza: Couverture et ferblanterie - Rénovation du bâtiment PIC
+ TO Avenue Ernest-Pictet 28-30
+DESCRIPTION:Ente pubblico: Etat de Genève\, Département du territoire - D
+ T\, Office Cantonal des bâtiments (OCBA)\nScadenza: 14.12.2026\, 16:30\nN
+ el registro: https://auftragsregister.ch/it/auftrag/cf8cfb05-abd3-4499-b55
+ 1-747e3798e07a/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/cf8cfb05-abd3-4499-b551-747e3798e07a
+URL:https://auftragsregister.ch/it/auftrag/cf8cfb05-abd3-4499-b551-747e3798
+ e07a/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Couverture et ferblanterie - Rénovation du bâtiment
+  PICTO Avenue Ernest-Pictet 28-30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

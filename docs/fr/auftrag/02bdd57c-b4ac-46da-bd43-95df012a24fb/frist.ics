@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02bdd57c-b4ac-46da-bd43-95df012a24fb-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Délai de remise : (26189) 704 Analyse des processus et de l’or
+ ganisation SPE / AC
+DESCRIPTION:Acheteur public : Staatssekretariat für Wirtschaft SECO\nDé
+ lai de remise : 21.12.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/02bdd57c-b4ac-46da-bd43-95df012a24fb/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/02bdd57c-b4ac
+ -46da-bd43-95df012a24fb
+URL:https://auftragsregister.ch/fr/auftrag/02bdd57c-b4ac-46da-bd43-95df012a
+ 24fb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (26189) 704 Analyse des processus et de l
+ ’organisation SPE / AC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

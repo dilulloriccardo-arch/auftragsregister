@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:342148aa-249f-4fb6-8271-7a69511b4f28-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261217T103000Z
+SUMMARY:Délai de remise : École de Kalktarren\, rénovation du complexe
+  scolaire: CFC 221.2 Fenêtres et portes métalliques
+DESCRIPTION:Acheteur public : Stadt Schlieren\, Bereich Liegenschaften\nD
+ élai de remise : 17.12.2026\, 11 h 30\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/342148aa-249f-4fb6-8271-7a69511b4f28/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/342148aa-24
+ 9f-4fb6-8271-7a69511b4f28
+URL:https://auftragsregister.ch/fr/auftrag/342148aa-249f-4fb6-8271-7a69511b
+ 4f28/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École de Kalktarren\, rénovation du comp
+ lexe scolaire: CFC 221.2 Fenêtres et portes métalliques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a659c16f-2383-46b1-b6d3-5402c6b4040c-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261204T150000Z
+SUMMARY:Submission deadline: PWA-T3\, T5\, T6 (Selektiv) Ausschreibung Elek
+ tro\, BKP 232 Niederspannungsinstallationen
+DESCRIPTION:Public buyer: Flughafen Zürich AG\nSubmission deadline: 4 Dec
+  2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/a6
+ 59c16f-2383-46b1-b6d3-5402c6b4040c/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/a659c16f-2383-46b1-b6d3-5402c6b4040c
+URL:https://auftragsregister.ch/en/auftrag/a659c16f-2383-46b1-b6d3-5402c6b4
+ 040c/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: PWA-T3\, T5\, T6 (Selektiv) Ausschreibung 
+ Elektro\, BKP 232 Niederspannungsinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

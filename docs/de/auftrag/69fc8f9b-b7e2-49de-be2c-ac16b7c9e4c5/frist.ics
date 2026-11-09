@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69fc8f9b-b7e2-49de-be2c-ac16b7c9e4c5-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Eingabefrist: Compute4SBB I - Sovereign Cloud und Public Cloud
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Informatik Eink
+ auf\nEingabefrist: 04.12.2026\, 12.00 Uhr\nIm Register: https://auftragsr
+ egister.ch/de/auftrag/69fc8f9b-b7e2-49de-be2c-ac16b7c9e4c5/\nAmtliche Publ
+ ikation: https://www.simap.ch/de/project-detail/69fc8f9b-b7e2-49de-be2c-ac
+ 16b7c9e4c5
+URL:https://auftragsregister.ch/de/auftrag/69fc8f9b-b7e2-49de-be2c-ac16b7c9
+ e4c5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Compute4SBB I - Sovereign Cloud und Public Cloud
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e80556c7-6b9d-45c1-a803-9bca2a67f3a2-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Délai de remise : Aménagement d'une nouvelle piste cyclable à 
+ Chirchet (Services de circulation 2027 – 2029)
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 11.12.2026\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/e80556c7-6b9d-45c1-a803-9bca2a67f3a2/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/e80556c7-6b9d-45c1-a803-
+ 9bca2a67f3a2
+URL:https://auftragsregister.ch/fr/auftrag/e80556c7-6b9d-45c1-a803-9bca2a67
+ f3a2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Aménagement d'une nouvelle piste cyclable
+  à Chirchet (Services de circulation 2027 – 2029)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

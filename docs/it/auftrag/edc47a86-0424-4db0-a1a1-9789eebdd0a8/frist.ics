@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edc47a86-0424-4db0-a1a1-9789eebdd0a8-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Scadenza: Extension du collège de Villars-Sainte-Croix - CFC 23 - 
+ Installations électriques
+DESCRIPTION:Ente pubblico: Commune de Villars-Sainte-Croix (Atelier Cube)\n
+ Scadenza: 14.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/edc47a86-0424-4db0-a1a1-9789eebdd0a8/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/edc47a86-0424-4db0-a1a1-9789eebdd0a8
+URL:https://auftragsregister.ch/it/auftrag/edc47a86-0424-4db0-a1a1-9789eebd
+ d0a8/
+LOCATION:Villars-Sainte-Croix
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Extension du collège de Villars-Sainte-Croix - CFC 2
+ 3 - Installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

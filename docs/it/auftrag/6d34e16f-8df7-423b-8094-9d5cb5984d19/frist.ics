@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d34e16f-8df7-423b-8094-9d5cb5984d19-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Scadenza: Polizeistützpunkt und Werkhof Schmerikon - BKP 230 Elekt
+ roanlage
+DESCRIPTION:Ente pubblico: Kanton St.Gallen\, Bau- und Umweltdepartement\, 
+ Hochbauamt\nScadenza: 30.11.2026\, 23:59\nNel registro: https://auftragsre
+ gister.ch/it/auftrag/6d34e16f-8df7-423b-8094-9d5cb5984d19/\nPubblicazione 
+ ufficiale: https://www.simap.ch/it/project-detail/6d34e16f-8df7-423b-8094-
+ 9d5cb5984d19
+URL:https://auftragsregister.ch/it/auftrag/6d34e16f-8df7-423b-8094-9d5cb598
+ 4d19/
+LOCATION:Schmerikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Polizeistützpunkt und Werkhof Schmerikon - BKP 230 E
+ lektroanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

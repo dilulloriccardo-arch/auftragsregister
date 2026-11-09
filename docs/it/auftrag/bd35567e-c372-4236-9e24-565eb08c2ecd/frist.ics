@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bd35567e-c372-4236-9e24-565eb08c2ecd-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261214T153000Z
+SUMMARY:Scadenza: Fenêtres et portes-fenêtres - Rénovation du bâtiment 
+ PICTO Avenue Ernest-Pictet 28-30
+DESCRIPTION:Ente pubblico: Etat de Genève\, Département du territoire - D
+ T\, Office Cantonal des bâtiments (OCBA)\nScadenza: 14.12.2026\, 16:30\nN
+ el registro: https://auftragsregister.ch/it/auftrag/bd35567e-c372-4236-9e2
+ 4-565eb08c2ecd/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/bd35567e-c372-4236-9e24-565eb08c2ecd
+URL:https://auftragsregister.ch/it/auftrag/bd35567e-c372-4236-9e24-565eb08c
+ 2ecd/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fenêtres et portes-fenêtres - Rénovation du bâtim
+ ent PICTO Avenue Ernest-Pictet 28-30
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

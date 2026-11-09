@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a8de0a20-11f9-4809-ae11-02fc0a307ced-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Scadenza: Rahmenverträge «Prüfleistungen Hoch- und Tiefbau»
+DESCRIPTION:Ente pubblico: Swissgrid AG\nScadenza: 15.01.2027\, 23:59\nNel 
+ registro: https://auftragsregister.ch/it/auftrag/a8de0a20-11f9-4809-ae11-0
+ 2fc0a307ced/\nPubblicazione ufficiale: https://www.simap.ch/it/project-det
+ ail/a8de0a20-11f9-4809-ae11-02fc0a307ced
+URL:https://auftragsregister.ch/it/auftrag/a8de0a20-11f9-4809-ae11-02fc0a30
+ 7ced/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenverträge «Prüfleistungen Hoch- und Tiefbau»
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

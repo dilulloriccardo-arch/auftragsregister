@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d34e16f-8df7-423b-8094-9d5cb5984d19-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261130T225900Z
+SUMMARY:Délai de remise : Polizeistützpunkt und Werkhof Schmerikon - BK
+ P 230 Elektroanlage
+DESCRIPTION:Acheteur public : Kanton St.Gallen\, Bau- und Umweltdeparteme
+ nt\, Hochbauamt\nDélai de remise : 30.11.2026\, 23 h 59\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/6d34e16f-8df7-423b-8094-
+ 9d5cb5984d19/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/6d34e16f-8df7-423b-8094-9d5cb5984d19
+URL:https://auftragsregister.ch/fr/auftrag/6d34e16f-8df7-423b-8094-9d5cb598
+ 4d19/
+LOCATION:Schmerikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Polizeistützpunkt und Werkhof Schmerikon 
+ - BKP 230 Elektroanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

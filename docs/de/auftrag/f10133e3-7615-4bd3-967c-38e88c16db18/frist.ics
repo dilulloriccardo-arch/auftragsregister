@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f10133e3-7615-4bd3-967c-38e88c16db18-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:1
+DTSTART:20270129T100000Z
+SUMMARY:Eingabefrist: Programme de Transition Ecologique - Etat de Genève 
+ - CO Drize - Appel d'Offres Consortium d'Entreprises et de Mandataires
+DESCRIPTION:Auftraggeber: Office Cantonal des Bâtiments (OCBA)\nEingabefri
+ st: 29.01.2027\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/f10133e3-7615-4bd3-967c-38e88c16db18/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/f10133e3-7615-4bd3-967c-38e88c16db18
+URL:https://auftragsregister.ch/de/auftrag/f10133e3-7615-4bd3-967c-38e88c16
+ db18/
+LOCATION:Carouge
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Programme de Transition Ecologique - Etat de Gen
+ ève - CO Drize - Appel d'Offres Consortium d'Entreprises et de Mandataire
+ s
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

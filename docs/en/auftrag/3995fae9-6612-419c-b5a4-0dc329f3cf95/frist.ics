@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3995fae9-6612-419c-b5a4-0dc329f3cf95-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261130T130000Z
+SUMMARY:Submission deadline: Kantonsstrasse\; Schwärzistrasse\, Stichstras
+ se – Schweidmatt\, Deckbelagssanierung
+DESCRIPTION:Public buyer: Abteilung Tiefbau\nSubmission deadline: 30 Nov 
+ 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag/3995
+ fae9-6612-419c-b5a4-0dc329f3cf95/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/3995fae9-6612-419c-b5a4-0dc329f3cf95
+URL:https://auftragsregister.ch/en/auftrag/3995fae9-6612-419c-b5a4-0dc329f3
+ cf95/
+LOCATION:Mollis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kantonsstrasse\; Schwärzistrasse\, Stichs
+ trasse – Schweidmatt\, Deckbelagssanierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

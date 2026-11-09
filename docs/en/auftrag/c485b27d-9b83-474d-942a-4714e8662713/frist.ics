@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c485b27d-9b83-474d-942a-4714e8662713-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Submission deadline: (26217) 609 Erneuerung Articulate Subscription
+ s 2027-2031
+DESCRIPTION:Public buyer: Bundesamt für Bauten und Logistik BBL\nSubmissio
+ n deadline: 7 Dec 2026\, 23:59\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/c485b27d-9b83-474d-942a-4714e8662713/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/c485b27d-9b83-474d-942a-4714e866
+ 2713
+URL:https://auftragsregister.ch/en/auftrag/c485b27d-9b83-474d-942a-4714e866
+ 2713/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (26217) 609 Erneuerung Articulate Subscrip
+ tions 2027-2031
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

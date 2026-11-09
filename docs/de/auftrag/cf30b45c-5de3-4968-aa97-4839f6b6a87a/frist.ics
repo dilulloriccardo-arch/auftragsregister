@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cf30b45c-5de3-4968-aa97-4839f6b6a87a-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Eingabefrist: Neubau Campus Platztor - BKP 214 Montagebau in Holz i
+ nkl. Gebäudehülle
+DESCRIPTION:Auftraggeber: Kanton St.Gallen\, Bau- und Umweltdepartement\, H
+ ochbauamt\nEingabefrist: 07.12.2026\, 23.59 Uhr\nIm Register: https://auf
+ tragsregister.ch/de/auftrag/cf30b45c-5de3-4968-aa97-4839f6b6a87a/\nAmtlich
+ e Publikation: https://www.simap.ch/de/project-detail/cf30b45c-5de3-4968-a
+ a97-4839f6b6a87a
+URL:https://auftragsregister.ch/de/auftrag/cf30b45c-5de3-4968-aa97-4839f6b6
+ a87a/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Campus Platztor - BKP 214 Montagebau in Ho
+ lz inkl. Gebäudehülle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1b652c60-638d-41dc-a9f1-df054ba43885-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Délai de remise : K 40 Willisau\, Bahnübergang – Kreisel Brug
+ gmatt
+DESCRIPTION:Acheteur public : Verkehr und Infrastruktur (vif)\, zentras\,
+  Betrieb Strassen\nDélai de remise : 17.12.2026\, 23 h 59\nDans le 
+ registre : https://auftragsregister.ch/fr/auftrag/1b652c60-638d-41dc-a9f
+ 1-df054ba43885/\nPublication officielle : https://www.simap.ch/fr/projec
+ t-detail/1b652c60-638d-41dc-a9f1-df054ba43885
+URL:https://auftragsregister.ch/fr/auftrag/1b652c60-638d-41dc-a9f1-df054ba4
+ 3885/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : K 40 Willisau\, Bahnübergang – Kreisel 
+ Bruggmatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:06c26bfc-4f97-4610-be0a-97a0a1c3c9ee-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Eingabefrist: Acquisition d'un tracteur agricole de 150 CV MIN et d
+ ivers agrégats
+DESCRIPTION:Auftraggeber: Commune de Bernex - services extérieurs - MMDCon
+ sulting\nEingabefrist: 16.12.2026\, 11.00 Uhr\nIm Register: https://auftr
+ agsregister.ch/de/auftrag/06c26bfc-4f97-4610-be0a-97a0a1c3c9ee/\nAmtliche 
+ Publikation: https://www.simap.ch/de/project-detail/06c26bfc-4f97-4610-be0
+ a-97a0a1c3c9ee
+URL:https://auftragsregister.ch/de/auftrag/06c26bfc-4f97-4610-be0a-97a0a1c3
+ c9ee/
+LOCATION:Bernex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Acquisition d'un tracteur agricole de 150 CV MIN 
+ et divers agrégats
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

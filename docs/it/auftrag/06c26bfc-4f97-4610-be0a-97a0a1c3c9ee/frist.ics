@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:06c26bfc-4f97-4610-be0a-97a0a1c3c9ee-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Scadenza: Acquisition d'un tracteur agricole de 150 CV MIN et diver
+ s agrégats
+DESCRIPTION:Ente pubblico: Commune de Bernex - services extérieurs - MMDCo
+ nsulting\nScadenza: 16.12.2026\, 11:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/06c26bfc-4f97-4610-be0a-97a0a1c3c9ee/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/06c26bfc-4f97-4610-be0a-97
+ a0a1c3c9ee
+URL:https://auftragsregister.ch/it/auftrag/06c26bfc-4f97-4610-be0a-97a0a1c3
+ c9ee/
+LOCATION:Bernex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Acquisition d'un tracteur agricole de 150 CV MIN et d
+ ivers agrégats
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

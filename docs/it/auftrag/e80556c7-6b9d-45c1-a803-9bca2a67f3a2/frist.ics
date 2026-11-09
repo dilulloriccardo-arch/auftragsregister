@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e80556c7-6b9d-45c1-a803-9bca2a67f3a2-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Scadenza: Neubau Radstreifen Chirchet Dienstleistungen (Verkehrsdie
+ nst 2027 – 2029)
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 11.12.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/e80556c7-6
+ b9d-45c1-a803-9bca2a67f3a2/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/e80556c7-6b9d-45c1-a803-9bca2a67f3a2
+URL:https://auftragsregister.ch/it/auftrag/e80556c7-6b9d-45c1-a803-9bca2a67
+ f3a2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Radstreifen Chirchet Dienstleistungen (Verkehr
+ sdienst 2027 – 2029)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

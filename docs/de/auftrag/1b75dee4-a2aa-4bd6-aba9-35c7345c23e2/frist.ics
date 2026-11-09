@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1b75dee4-a2aa-4bd6-aba9-35c7345c23e2-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261221T163000Z
+SUMMARY:Eingabefrist: Schulanlage Schwerzgrueb\, BKP 23 Beleuchtung-/Vertei
+ lersatz
+DESCRIPTION:Auftraggeber: Gemeinde Uitikon\nEingabefrist: 21.12.2026\, 17.3
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/1b75dee4-a2aa-
+ 4bd6-aba9-35c7345c23e2/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/1b75dee4-a2aa-4bd6-aba9-35c7345c23e2
+URL:https://auftragsregister.ch/de/auftrag/1b75dee4-a2aa-4bd6-aba9-35c7345c
+ 23e2/
+LOCATION:Uitikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schulanlage Schwerzgrueb\, BKP 23 Beleuchtung-/Ve
+ rteilersatz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edc47a86-0424-4db0-a1a1-9789eebdd0a8-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: Extension du collège de Villars-Sainte-Croix - CFC 2
+ 3 - Installations électriques
+DESCRIPTION:Auftraggeber: Commune de Villars-Sainte-Croix (Atelier Cube)\nE
+ ingabefrist: 14.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/edc47a86-0424-4db0-a1a1-9789eebdd0a8/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/edc47a86-0424-4db0-a1a1-9789eebd
+ d0a8
+URL:https://auftragsregister.ch/de/auftrag/edc47a86-0424-4db0-a1a1-9789eebd
+ d0a8/
+LOCATION:Villars-Sainte-Croix
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Extension du collège de Villars-Sainte-Croix - C
+ FC 23 - Installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

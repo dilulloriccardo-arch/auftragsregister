@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e80556c7-6b9d-45c1-a803-9bca2a67f3a2-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Submission deadline: Neubau Radstreifen Chirchet Dienstleistungen (
+ Verkehrsdienst 2027 – 2029)
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Bern\nSubmission deadline:
+  11 Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/e80556c7-6b9d-45c1-a803-9bca2a67f3a2/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/e80556c7-6b9d-45c1-a803-9bca2a67f3a2
+URL:https://auftragsregister.ch/en/auftrag/e80556c7-6b9d-45c1-a803-9bca2a67
+ f3a2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Radstreifen Chirchet Dienstleistung
+ en (Verkehrsdienst 2027 – 2029)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a8de0a20-11f9-4809-ae11-02fc0a307ced-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Eingabefrist: Rahmenverträge «Prüfleistungen Hoch- und Tiefbau»
+DESCRIPTION:Auftraggeber: Swissgrid AG\nEingabefrist: 15.01.2027\, 23.59 U
+ hr\nIm Register: https://auftragsregister.ch/de/auftrag/a8de0a20-11f9-4809
+ -ae11-02fc0a307ced/\nAmtliche Publikation: https://www.simap.ch/de/project
+ -detail/a8de0a20-11f9-4809-ae11-02fc0a307ced
+URL:https://auftragsregister.ch/de/auftrag/a8de0a20-11f9-4809-ae11-02fc0a30
+ 7ced/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rahmenverträge «Prüfleistungen Hoch- und Tiefb
+ au»
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

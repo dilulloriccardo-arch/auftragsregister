@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa320356-97e1-4acb-b000-130a9929d8ea-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261204T110000Z
+SUMMARY:Scadenza: Unterentfelden BVZ\, Sanierung Lüftung - BKP240
+DESCRIPTION:Ente pubblico: Kanton Aargau - Departement Finanzen und Ressour
+ cen - Immobilien Aargau\nScadenza: 04.12.2026\, 12:00\nNel registro: https
+ ://auftragsregister.ch/it/auftrag/aa320356-97e1-4acb-b000-130a9929d8ea/\nP
+ ubblicazione ufficiale: https://www.simap.ch/it/project-detail/aa320356-97
+ e1-4acb-b000-130a9929d8ea
+URL:https://auftragsregister.ch/it/auftrag/aa320356-97e1-4acb-b000-130a9929
+ d8ea/
+LOCATION:Unterentfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Unterentfelden BVZ\, Sanierung Lüftung - BKP240
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:957aeb6a-b393-49b2-91ed-5f93e0205f36-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261130T220000Z
+SUMMARY:Eingabefrist: Leitungserneuerung TL Böschenbach-Hoffeld\, Etappe 4
+  – Schmutzwasser- und Wasserleitung
+DESCRIPTION:Auftraggeber: Gemeindeverwaltung Neckertal\nEingabefrist: 30.11
+ .2026\, 23.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/95
+ 7aeb6a-b393-49b2-91ed-5f93e0205f36/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/957aeb6a-b393-49b2-91ed-5f93e0205f36
+URL:https://auftragsregister.ch/de/auftrag/957aeb6a-b393-49b2-91ed-5f93e020
+ 5f36/
+LOCATION:Mogelsberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Leitungserneuerung TL Böschenbach-Hoffeld\, Etap
+ pe 4 – Schmutzwasser- und Wasserleitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

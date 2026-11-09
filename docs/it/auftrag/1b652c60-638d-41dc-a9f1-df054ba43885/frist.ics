@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1b652c60-638d-41dc-a9f1-df054ba43885-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Scadenza: K 40 Willisau\, Bahnübergang – Kreisel Bruggmatt
+DESCRIPTION:Ente pubblico: Verkehr und Infrastruktur (vif)\, zentras\, Betr
+ ieb Strassen\nScadenza: 17.12.2026\, 23:59\nNel registro: https://auftrags
+ register.ch/it/auftrag/1b652c60-638d-41dc-a9f1-df054ba43885/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/1b652c60-638d-41dc-a9f
+ 1-df054ba43885
+URL:https://auftragsregister.ch/it/auftrag/1b652c60-638d-41dc-a9f1-df054ba4
+ 3885/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: K 40 Willisau\, Bahnübergang – Kreisel Bruggmatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

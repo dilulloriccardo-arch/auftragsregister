@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:33ca180b-b2eb-4773-b4ac-90b55f73bd7d-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261217T103000Z
+SUMMARY:Scadenza: Schulhaus Kalktarren\, Sanierung Schulanlage: BKP 221.1 H
+ olz Metall Fenster
+DESCRIPTION:Ente pubblico: Stadt Schlieren\, Bereich Liegenschaften\nScaden
+ za: 17.12.2026\, 11:30\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/33ca180b-b2eb-4773-b4ac-90b55f73bd7d/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/33ca180b-b2eb-4773-b4ac-90b55f73bd7d
+URL:https://auftragsregister.ch/it/auftrag/33ca180b-b2eb-4773-b4ac-90b55f73
+ bd7d/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulhaus Kalktarren\, Sanierung Schulanlage: BKP 221
+ .1 Holz Metall Fenster
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

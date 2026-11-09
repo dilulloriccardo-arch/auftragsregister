@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2bcb13ee-4ec1-45bc-b2d0-83c9493d4726-frist@auftragsregister.ch
+DTSTAMP:20261109T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Scadenza: Hochwasserschutz Gemeinde Wiesendangen: Fachmandat Archit
+ ektur SIA-Phasen 32/33 und optional SIA-Phasen 41 - 53
+DESCRIPTION:Ente pubblico: Gemeinde Wiesendangen (F. Preisig AG)\nScadenza:
+  11.12.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 2bcb13ee-4ec1-45bc-b2d0-83c9493d4726/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/2bcb13ee-4ec1-45bc-b2d0-83c9493d4726
+URL:https://auftragsregister.ch/it/auftrag/2bcb13ee-4ec1-45bc-b2d0-83c9493d
+ 4726/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Hochwasserschutz Gemeinde Wiesendangen: Fachmandat Ar
+ chitektur SIA-Phasen 32/33 und optional SIA-Phasen 41 - 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
