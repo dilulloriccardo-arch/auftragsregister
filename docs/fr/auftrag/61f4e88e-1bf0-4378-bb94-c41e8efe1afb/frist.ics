@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61f4e88e-1bf0-4378-bb94-c41e8efe1afb-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Délai de remise : Neubau Grundwasserpumpwerk Breukholz\, Gross: 
+ Baumeisterarbeiten Aufbereitungsanlage
+DESCRIPTION:Acheteur public : Bezirk Einsiedeln\, Infrastruktur\nDélai d
+ e remise : 09.12.2026\, 16 h 00\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/61f4e88e-1bf0-4378-bb94-c41e8efe1afb/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/61f4e88e-1bf0-4378
+ -bb94-c41e8efe1afb
+URL:https://auftragsregister.ch/fr/auftrag/61f4e88e-1bf0-4378-bb94-c41e8efe
+ 1afb/
+LOCATION:Gross
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Grundwasserpumpwerk Breukholz\, Gro
+ ss: Baumeisterarbeiten Aufbereitungsanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

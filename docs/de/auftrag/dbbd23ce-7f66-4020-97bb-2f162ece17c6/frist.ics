@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dbbd23ce-7f66-4020-97bb-2f162ece17c6-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270104T160000Z
+SUMMARY:Eingabefrist: Verleih von Fachpersonal für den Einbau von Schienen
+ - und Gleisanlagen
+DESCRIPTION:Auftraggeber: Verkehrsbetriebe Zürich (VBZ)\nEingabefrist: 04.
+ 01.2027\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ dbbd23ce-7f66-4020-97bb-2f162ece17c6/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/dbbd23ce-7f66-4020-97bb-2f162ece17c6
+URL:https://auftragsregister.ch/de/auftrag/dbbd23ce-7f66-4020-97bb-2f162ece
+ 17c6/
+LOCATION:Luggwegstrasse 67
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Verleih von Fachpersonal für den Einbau von Schi
+ enen- und Gleisanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

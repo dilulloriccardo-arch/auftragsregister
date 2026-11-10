@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:99bb7b78-d59b-4b93-8dad-000da2f65a86-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Scadenza: VEB Verdrängungen B10 / B - BKP 271 Gipserarbeiten
+DESCRIPTION:Ente pubblico: Flughafen Zürich AG\nScadenza: 04.01.2027\, 12:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/99bb7b78-d59b-4b9
+ 3-8dad-000da2f65a86/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/99bb7b78-d59b-4b93-8dad-000da2f65a86
+URL:https://auftragsregister.ch/it/auftrag/99bb7b78-d59b-4b93-8dad-000da2f6
+ 5a86/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: VEB Verdrängungen B10 / B - BKP 271 Gipserarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61f4e88e-1bf0-4378-bb94-c41e8efe1afb-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Eingabefrist: Neubau Grundwasserpumpwerk Breukholz\, Gross: Baumeis
+ terarbeiten Aufbereitungsanlage
+DESCRIPTION:Auftraggeber: Bezirk Einsiedeln\, Infrastruktur\nEingabefrist: 
+ 09.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/61f4e88e-1bf0-4378-bb94-c41e8efe1afb/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/61f4e88e-1bf0-4378-bb94-c41e8efe1afb
+URL:https://auftragsregister.ch/de/auftrag/61f4e88e-1bf0-4378-bb94-c41e8efe
+ 1afb/
+LOCATION:Gross
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Grundwasserpumpwerk Breukholz\, Gross: Bau
+ meisterarbeiten Aufbereitungsanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

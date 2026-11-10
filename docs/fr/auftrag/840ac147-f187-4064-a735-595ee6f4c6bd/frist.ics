@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:840ac147-f187-4064-a735-595ee6f4c6bd-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Délai de remise : Neubau Grundwasserpumpwerk Breukholz\, Gross: 
+ Tiefbauarbeiten Transportleitung Breukholz - Gfletz
+DESCRIPTION:Acheteur public : Bezirk Einsiedeln Ressort Infrastruktur\nD
+ élai de remise : 09.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/840ac147-f187-4064-a735-595ee6f4c6bd/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/840ac147-f1
+ 87-4064-a735-595ee6f4c6bd
+URL:https://auftragsregister.ch/fr/auftrag/840ac147-f187-4064-a735-595ee6f4
+ c6bd/
+LOCATION:Gross
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Grundwasserpumpwerk Breukholz\, Gro
+ ss: Tiefbauarbeiten Transportleitung Breukholz - Gfletz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

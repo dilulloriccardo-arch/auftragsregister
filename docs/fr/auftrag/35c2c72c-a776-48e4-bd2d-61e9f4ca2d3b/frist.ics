@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:35c2c72c-a776-48e4-bd2d-61e9f4ca2d3b-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261218T150000Z
+SUMMARY:Délai de remise : Extension de la Croisée - Menuiserie - Faces 
+ EI30 (lot 808)
+DESCRIPTION:Acheteur public : DGIP - DAB (Dolci Architectes SA)\nDélai d
+ e remise : 18.12.2026\, 16 h 00\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/35c2c72c-a776-48e4-bd2d-61e9f4ca2d3b/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/35c2c72c-a776-48e4
+ -bd2d-61e9f4ca2d3b
+URL:https://auftragsregister.ch/fr/auftrag/35c2c72c-a776-48e4-bd2d-61e9f4ca
+ 2d3b/
+LOCATION:Orbe
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Extension de la Croisée - Menuiserie - Fa
+ ces EI30 (lot 808)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

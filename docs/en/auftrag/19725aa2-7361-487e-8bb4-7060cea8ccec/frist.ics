@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:19725aa2-7361-487e-8bb4-7060cea8ccec-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261231T110000Z
+SUMMARY:Submission deadline: Mobile Strassensperren für die Stadtpolizei Z
+ ürich
+DESCRIPTION:Public buyer: SID - Stadtpolizei (Stapo)\nSubmission deadline: 
+ 31 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/19725aa2-7361-487e-8bb4-7060cea8ccec/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/19725aa2-7361-487e-8bb4-7060cea8ccec
+URL:https://auftragsregister.ch/en/auftrag/19725aa2-7361-487e-8bb4-7060cea8
+ ccec/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mobile Strassensperren für die Stadtpoliz
+ ei Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

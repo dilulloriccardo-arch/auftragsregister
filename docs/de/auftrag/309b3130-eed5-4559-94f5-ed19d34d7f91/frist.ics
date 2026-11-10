@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:309b3130-eed5-4559-94f5-ed19d34d7f91-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261201T120000Z
+SUMMARY:Eingabefrist: Acquisition d’un système de gestion de la charge (
+ SGC/CMS)
+DESCRIPTION:Auftraggeber: MBC Transports de la région Morges Bière Cosson
+ ay SA - Service Achats\nEingabefrist: 01.12.2026\, 13.00 Uhr\nIm Register
+ : https://auftragsregister.ch/de/auftrag/309b3130-eed5-4559-94f5-ed19d34d7
+ f91/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/309b313
+ 0-eed5-4559-94f5-ed19d34d7f91
+URL:https://auftragsregister.ch/de/auftrag/309b3130-eed5-4559-94f5-ed19d34d
+ 7f91/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Acquisition d’un système de gestion de la char
+ ge (SGC/CMS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

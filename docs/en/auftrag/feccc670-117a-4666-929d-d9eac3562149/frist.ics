@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:feccc670-117a-4666-929d-d9eac3562149-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Submission deadline: Neubau Wohnheim Humanitas - BKP 273 Innentüre
+ n aus Holz
+DESCRIPTION:Public buyer: Humanitas Stiftung (Anderegg Partner AG)\nSubmiss
+ ion deadline: 21 Dec 2026\, 12:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/feccc670-117a-4666-929d-d9eac3562149/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/feccc670-117a-4666-929d-d9eac
+ 3562149
+URL:https://auftragsregister.ch/en/auftrag/feccc670-117a-4666-929d-d9eac356
+ 2149/
+LOCATION:Horgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Wohnheim Humanitas - BKP 273 Innent
+ üren aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

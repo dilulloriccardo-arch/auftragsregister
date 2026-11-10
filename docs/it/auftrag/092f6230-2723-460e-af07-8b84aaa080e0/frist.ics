@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:092f6230-2723-460e-af07-8b84aaa080e0-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270120T100000Z
+SUMMARY:Scadenza: Secteur des 3 rues basses (M375TI) mandat arch.-paysagist
+ e\, arch.\, ing. civil et ing. transport
+DESCRIPTION:Ente pubblico: Unité soumissions - Département de l'aménagem
+ ent\, des constructions et de la mobilité (DACM) de la Ville de Genève\n
+ Scadenza: 20.01.2027\, 11:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/092f6230-2723-460e-af07-8b84aaa080e0/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/092f6230-2723-460e-af07-8b84aaa080e0
+URL:https://auftragsregister.ch/it/auftrag/092f6230-2723-460e-af07-8b84aaa0
+ 80e0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Secteur des 3 rues basses (M375TI) mandat arch.-paysa
+ giste\, arch.\, ing. civil et ing. transport
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

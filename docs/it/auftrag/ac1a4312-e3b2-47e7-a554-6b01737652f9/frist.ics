@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac1a4312-e3b2-47e7-a554-6b01737652f9-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Scadenza: EPFL DOUBLE DECK - CFC 236.1 Groupe secours
+DESCRIPTION:Ente pubblico: EPFL - Domaine des Achats\nScadenza: 21.12.2026\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/ac1a4312-e3b
+ 2-47e7-a554-6b01737652f9/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/ac1a4312-e3b2-47e7-a554-6b01737652f9
+URL:https://auftragsregister.ch/it/auftrag/ac1a4312-e3b2-47e7-a554-6b017376
+ 52f9/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EPFL DOUBLE DECK - CFC 236.1 Groupe secours
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

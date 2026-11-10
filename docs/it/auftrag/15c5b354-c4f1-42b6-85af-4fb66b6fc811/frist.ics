@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:15c5b354-c4f1-42b6-85af-4fb66b6fc811-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Scadenza: Pose de compteurs électriques smart
+DESCRIPTION:Ente pubblico: Service Industriels de Lausanne\nScadenza: 07.01
+ .2027\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/15c5b3
+ 54-c4f1-42b6-85af-4fb66b6fc811/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/15c5b354-c4f1-42b6-85af-4fb66b6fc811
+URL:https://auftragsregister.ch/it/auftrag/15c5b354-c4f1-42b6-85af-4fb66b6f
+ c811/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Pose de compteurs électriques smart
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

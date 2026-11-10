@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e77b74ce-4ee1-48a4-8a75-630613345509-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261218T150000Z
+SUMMARY:Délai de remise : Extension de la Croisée - Maçonnerie-Béton 
+ (lot 825)
+DESCRIPTION:Acheteur public : DGIP - DAB (Dolci Architectes SA)\nDélai d
+ e remise : 18.12.2026\, 16 h 00\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/e77b74ce-4ee1-48a4-8a75-630613345509/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/e77b74ce-4ee1-48a4
+ -8a75-630613345509
+URL:https://auftragsregister.ch/fr/auftrag/e77b74ce-4ee1-48a4-8a75-63061334
+ 5509/
+LOCATION:Orbe
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Extension de la Croisée - Maçonnerie-Bé
+ ton (lot 825)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:19725aa2-7361-487e-8bb4-7060cea8ccec-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261231T110000Z
+SUMMARY:Eingabefrist: Mobile Strassensperren für die Stadtpolizei Zürich
+DESCRIPTION:Auftraggeber: SID - Stadtpolizei (Stapo)\nEingabefrist: 31.12.2
+ 026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/1972
+ 5aa2-7361-487e-8bb4-7060cea8ccec/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/19725aa2-7361-487e-8bb4-7060cea8ccec
+URL:https://auftragsregister.ch/de/auftrag/19725aa2-7361-487e-8bb4-7060cea8
+ ccec/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Mobile Strassensperren für die Stadtpolizei Zür
+ ich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:99bb7b78-d59b-4b93-8dad-000da2f65a86-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Délai de remise : VEB Verdrängungen B10 / B - BKP 271 Gipserarb
+ eiten
+DESCRIPTION:Acheteur public : Flughafen Zürich AG\nDélai de remise : 
+ 04.01.2027\, 12 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/99bb7b78-d59b-4b93-8dad-000da2f65a86/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/99bb7b78-d59b-4b93-8dad-000da2
+ f65a86
+URL:https://auftragsregister.ch/fr/auftrag/99bb7b78-d59b-4b93-8dad-000da2f6
+ 5a86/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : VEB Verdrängungen B10 / B - BKP 271 Gipse
+ rarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

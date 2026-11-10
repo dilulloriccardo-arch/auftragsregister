@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:309b3130-eed5-4559-94f5-ed19d34d7f91-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261201T120000Z
+SUMMARY:Scadenza: Acquisition d’un système de gestion de la charge (SGC/
+ CMS)
+DESCRIPTION:Ente pubblico: MBC Transports de la région Morges Bière Cosso
+ nay SA - Service Achats\nScadenza: 01.12.2026\, 13:00\nNel registro: https
+ ://auftragsregister.ch/it/auftrag/309b3130-eed5-4559-94f5-ed19d34d7f91/\nP
+ ubblicazione ufficiale: https://www.simap.ch/it/project-detail/309b3130-ee
+ d5-4559-94f5-ed19d34d7f91
+URL:https://auftragsregister.ch/it/auftrag/309b3130-eed5-4559-94f5-ed19d34d
+ 7f91/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Acquisition d’un système de gestion de la charge (
+ SGC/CMS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

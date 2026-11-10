@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dbbd23ce-7f66-4020-97bb-2f162ece17c6-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270104T160000Z
+SUMMARY:Délai de remise : Mise à disposition de personnel spécialisé 
+ pour la pose d'installations ferroviaires et de voies ferrées
+DESCRIPTION:Acheteur public : Verkehrsbetriebe Zürich (VBZ)\nDélai de r
+ emise : 04.01.2027\, 17 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/dbbd23ce-7f66-4020-97bb-2f162ece17c6/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/dbbd23ce-7f66-4020-97
+ bb-2f162ece17c6
+URL:https://auftragsregister.ch/fr/auftrag/dbbd23ce-7f66-4020-97bb-2f162ece
+ 17c6/
+LOCATION:Luggwegstrasse 67
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mise à disposition de personnel spéciali
+ sé pour la pose d'installations ferroviaires et de voies ferrées
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac1a4312-e3b2-47e7-a554-6b01737652f9-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Submission deadline: EPFL DOUBLE DECK - CFC 236.1 Groupe secours
+DESCRIPTION:Public buyer: EPFL - Domaine des Achats\nSubmission deadline: 2
+ 1 Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/ac1a4312-e3b2-47e7-a554-6b01737652f9/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/ac1a4312-e3b2-47e7-a554-6b01737652f9
+URL:https://auftragsregister.ch/en/auftrag/ac1a4312-e3b2-47e7-a554-6b017376
+ 52f9/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EPFL DOUBLE DECK - CFC 236.1 Groupe secour
+ s
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

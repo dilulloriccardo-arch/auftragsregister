@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1fa0bab9-be8f-4ed0-89cc-99dab2a90c8a-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261208T100000Z
+SUMMARY:Submission deadline: Assainissement\,aménagement de surface et vé
+ gétalisation du chemin des Hutins
+DESCRIPTION:Public buyer: Commune de Confignon\nSubmission deadline: 8 Dec
+  2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/1f
+ a0bab9-be8f-4ed0-89cc-99dab2a90c8a/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/1fa0bab9-be8f-4ed0-89cc-99dab2a90c8a
+URL:https://auftragsregister.ch/en/auftrag/1fa0bab9-be8f-4ed0-89cc-99dab2a9
+ 0c8a/
+LOCATION:Confignon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Assainissement\,aménagement de surface et
+  végétalisation du chemin des Hutins
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

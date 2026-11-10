@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dbbd23ce-7f66-4020-97bb-2f162ece17c6-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270104T160000Z
+SUMMARY:Scadenza: Verleih von Fachpersonal für den Einbau von Schienen- un
+ d Gleisanlagen
+DESCRIPTION:Ente pubblico: Verkehrsbetriebe Zürich (VBZ)\nScadenza: 04.01.
+ 2027\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/dbbd23c
+ e-7f66-4020-97bb-2f162ece17c6/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/dbbd23ce-7f66-4020-97bb-2f162ece17c6
+URL:https://auftragsregister.ch/it/auftrag/dbbd23ce-7f66-4020-97bb-2f162ece
+ 17c6/
+LOCATION:Luggwegstrasse 67
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Verleih von Fachpersonal für den Einbau von Schienen
+ - und Gleisanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e244b250-40d4-4d09-9639-296ef07ff814-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261222T110000Z
+SUMMARY:Eingabefrist: E-Learning Bibliothek
+DESCRIPTION:Auftraggeber: Kanton Zürich\nEingabefrist: 22.12.2026\, 12.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e244b250-40d4-4
+ d09-9639-296ef07ff814/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/e244b250-40d4-4d09-9639-296ef07ff814
+URL:https://auftragsregister.ch/de/auftrag/e244b250-40d4-4d09-9639-296ef07f
+ f814/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: E-Learning Bibliothek
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:15c5b354-c4f1-42b6-85af-4fb66b6fc811-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Délai de remise : Pose de compteurs électriques smart
+DESCRIPTION:Acheteur public : Service Industriels de Lausanne\nDélai de 
+ remise : 07.01.2027\, 11 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/15c5b354-c4f1-42b6-85af-4fb66b6fc811/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/15c5b354-c4f1-42b6-8
+ 5af-4fb66b6fc811
+URL:https://auftragsregister.ch/fr/auftrag/15c5b354-c4f1-42b6-85af-4fb66b6f
+ c811/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Pose de compteurs électriques smart
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

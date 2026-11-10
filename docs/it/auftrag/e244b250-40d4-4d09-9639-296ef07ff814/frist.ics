@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e244b250-40d4-4d09-9639-296ef07ff814-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261222T110000Z
+SUMMARY:Scadenza: E-Learning Bibliothek
+DESCRIPTION:Ente pubblico: Kanton Zürich\nScadenza: 22.12.2026\, 12:00\nNe
+ l registro: https://auftragsregister.ch/it/auftrag/e244b250-40d4-4d09-9639
+ -296ef07ff814/\nPubblicazione ufficiale: https://www.simap.ch/it/project-d
+ etail/e244b250-40d4-4d09-9639-296ef07ff814
+URL:https://auftragsregister.ch/it/auftrag/e244b250-40d4-4d09-9639-296ef07f
+ f814/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: E-Learning Bibliothek
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

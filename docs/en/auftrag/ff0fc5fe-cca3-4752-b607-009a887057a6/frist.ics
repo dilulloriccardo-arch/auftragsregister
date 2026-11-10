@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff0fc5fe-cca3-4752-b607-009a887057a6-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270105T110000Z
+SUMMARY:Submission deadline: Contrat-cadre Mobilité – Acquisition flotte
+  véhicules
+DESCRIPTION:Public buyer: Romande Energie SA\nSubmission deadline: 5 Jan 
+ 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/ff0f
+ c5fe-cca3-4752-b607-009a887057a6/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/ff0fc5fe-cca3-4752-b607-009a887057a6
+URL:https://auftragsregister.ch/en/auftrag/ff0fc5fe-cca3-4752-b607-009a8870
+ 57a6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Contrat-cadre Mobilité – Acquisition fl
+ otte véhicules
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

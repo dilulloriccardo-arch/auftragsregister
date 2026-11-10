@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb3324ad-96aa-4cc0-8001-9762daa5eff3-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Délai de remise : (b26012-8) Rénovation et agrandissement des s
+ erres d’Agroscope à Reckenholz / CFC 231
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 23.12.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/bb3324ad-96aa-4cc0-8001-9762daa5eff3/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/bb3324ad-96aa
+ -4cc0-8001-9762daa5eff3
+URL:https://auftragsregister.ch/fr/auftrag/bb3324ad-96aa-4cc0-8001-9762daa5
+ eff3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (b26012-8) Rénovation et agrandissement d
+ es serres d’Agroscope à Reckenholz / CFC 231
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

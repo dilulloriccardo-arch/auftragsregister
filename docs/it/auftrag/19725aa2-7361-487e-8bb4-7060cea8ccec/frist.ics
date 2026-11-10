@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:19725aa2-7361-487e-8bb4-7060cea8ccec-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261231T110000Z
+SUMMARY:Scadenza: Mobile Strassensperren für die Stadtpolizei Zürich
+DESCRIPTION:Ente pubblico: SID - Stadtpolizei (Stapo)\nScadenza: 31.12.2026
+ \, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/19725aa2-73
+ 61-487e-8bb4-7060cea8ccec/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/19725aa2-7361-487e-8bb4-7060cea8ccec
+URL:https://auftragsregister.ch/it/auftrag/19725aa2-7361-487e-8bb4-7060cea8
+ ccec/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mobile Strassensperren für die Stadtpolizei Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

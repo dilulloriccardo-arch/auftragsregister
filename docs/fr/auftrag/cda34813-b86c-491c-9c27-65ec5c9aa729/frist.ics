@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cda34813-b86c-491c-9c27-65ec5c9aa729-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261202T080000Z
+SUMMARY:Délai de remise : IWB\, Fernwärme Kernbohrungen Hausanschlüsse
+DESCRIPTION:Acheteur public : IWB Industrielle Werke Basel\nDélai de rem
+ ise : 02.12.2026\, 9 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/cda34813-b86c-491c-9c27-65ec5c9aa729/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/cda34813-b86c-491c-9c27-
+ 65ec5c9aa729
+URL:https://auftragsregister.ch/fr/auftrag/cda34813-b86c-491c-9c27-65ec5c9a
+ a729/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IWB\, Fernwärme Kernbohrungen Hausanschl
+ üsse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

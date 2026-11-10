@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9b65f9d7-7f36-4fc1-8de6-9496ab9e8fbf-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261221T090000Z
+SUMMARY:Délai de remise : STZ\, Rahmenvertrag Elektrokontrollen\, BKP 23
+ 9.25 Unabhängige Kontrollen
+DESCRIPTION:Acheteur public : Stadtspital Zürich\nDélai de remise : 2
+ 1.12.2026\, 10 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/9b65f9d7-7f36-4fc1-8de6-9496ab9e8fbf/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/9b65f9d7-7f36-4fc1-8de6-9496ab
+ 9e8fbf
+URL:https://auftragsregister.ch/fr/auftrag/9b65f9d7-7f36-4fc1-8de6-9496ab9e
+ 8fbf/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : STZ\, Rahmenvertrag Elektrokontrollen\, BK
+ P 239.25 Unabhängige Kontrollen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb3324ad-96aa-4cc0-8001-9762daa5eff3-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Eingabefrist: (b26012-8) Sanierung und Erweiterung Gewächshausarea
+ l Agroscope Reckenholz / BKP 231
+DESCRIPTION:Auftraggeber: Bundesamt für Bauten und Logistik BBL\nEingabefr
+ ist: 23.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/bb3324ad-96aa-4cc0-8001-9762daa5eff3/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/bb3324ad-96aa-4cc0-8001-9762daa5eff3
+URL:https://auftragsregister.ch/de/auftrag/bb3324ad-96aa-4cc0-8001-9762daa5
+ eff3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (b26012-8) Sanierung und Erweiterung Gewächshaus
+ areal Agroscope Reckenholz / BKP 231
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

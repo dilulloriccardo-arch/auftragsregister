@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff0fc5fe-cca3-4752-b607-009a887057a6-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270105T110000Z
+SUMMARY:Eingabefrist: Contrat-cadre Mobilité – Acquisition flotte véhic
+ ules
+DESCRIPTION:Auftraggeber: Romande Energie SA\nEingabefrist: 05.01.2027\, 12
+ .00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ff0fc5fe-cca
+ 3-4752-b607-009a887057a6/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/ff0fc5fe-cca3-4752-b607-009a887057a6
+URL:https://auftragsregister.ch/de/auftrag/ff0fc5fe-cca3-4752-b607-009a8870
+ 57a6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Contrat-cadre Mobilité – Acquisition flotte v
+ éhicules
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

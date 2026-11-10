@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff0fc5fe-cca3-4752-b607-009a887057a6-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270105T110000Z
+SUMMARY:Délai de remise : Contrat-cadre Mobilité – Acquisition flotte
+  véhicules
+DESCRIPTION:Acheteur public : Romande Energie SA\nDélai de remise : 05
+ .01.2027\, 12 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/ff0fc5fe-cca3-4752-b607-009a887057a6/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/ff0fc5fe-cca3-4752-b607-009a88705
+ 7a6
+URL:https://auftragsregister.ch/fr/auftrag/ff0fc5fe-cca3-4752-b607-009a8870
+ 57a6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat-cadre Mobilité – Acquisition fl
+ otte véhicules
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

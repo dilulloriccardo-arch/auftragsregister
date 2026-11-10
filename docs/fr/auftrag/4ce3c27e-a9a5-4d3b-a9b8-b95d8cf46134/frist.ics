@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4ce3c27e-a9a5-4d3b-a9b8-b95d8cf46134-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270119T150000Z
+SUMMARY:Délai de remise : BKP 273.3 Menuiserie courante
+DESCRIPTION:Acheteur public : Stiftung Alterswohnungen der Stadt Zürich 
+ - SAW (Fokus Baumanagement)\nDélai de remise : 19.01.2027\, 16 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/4ce3c27e-a9a
+ 5-4d3b-a9b8-b95d8cf46134/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/4ce3c27e-a9a5-4d3b-a9b8-b95d8cf46134
+URL:https://auftragsregister.ch/fr/auftrag/4ce3c27e-a9a5-4d3b-a9b8-b95d8cf4
+ 6134/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 273.3 Menuiserie courante
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

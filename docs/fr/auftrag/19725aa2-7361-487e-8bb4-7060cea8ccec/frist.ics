@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:19725aa2-7361-487e-8bb4-7060cea8ccec-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261231T110000Z
+SUMMARY:Délai de remise : Barrages routiers mobiles pour la Police munic
+ ipale de Zurich
+DESCRIPTION:Acheteur public : SID - Stadtpolizei (Stapo)\nDélai de remis
+ e : 31.12.2026\, 12 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/19725aa2-7361-487e-8bb4-7060cea8ccec/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/19725aa2-7361-487e-8bb4-7
+ 060cea8ccec
+URL:https://auftragsregister.ch/fr/auftrag/19725aa2-7361-487e-8bb4-7060cea8
+ ccec/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Barrages routiers mobiles pour la Police m
+ unicipale de Zurich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

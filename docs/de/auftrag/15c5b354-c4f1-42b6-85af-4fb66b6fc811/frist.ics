@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:15c5b354-c4f1-42b6-85af-4fb66b6fc811-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Eingabefrist: Pose de compteurs électriques smart
+DESCRIPTION:Auftraggeber: Service Industriels de Lausanne\nEingabefrist: 07
+ .01.2027\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /15c5b354-c4f1-42b6-85af-4fb66b6fc811/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/15c5b354-c4f1-42b6-85af-4fb66b6fc811
+URL:https://auftragsregister.ch/de/auftrag/15c5b354-c4f1-42b6-85af-4fb66b6f
+ c811/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Pose de compteurs électriques smart
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

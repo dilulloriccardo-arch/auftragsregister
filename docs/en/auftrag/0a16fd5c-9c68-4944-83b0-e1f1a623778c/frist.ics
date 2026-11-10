@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a16fd5c-9c68-4944-83b0-e1f1a623778c-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270106T110000Z
+SUMMARY:Submission deadline: INTEGRALES FACILITY MANAGEMENT MANDAT A16
+DESCRIPTION:Public buyer: Flughafen Zürich AG - Zentraler Einkauf\nSubmiss
+ ion deadline: 6 Jan 2027\, 12:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/0a16fd5c-9c68-4944-83b0-e1f1a623778c/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/0a16fd5c-9c68-4944-83b0-e1f1a6
+ 23778c
+URL:https://auftragsregister.ch/en/auftrag/0a16fd5c-9c68-4944-83b0-e1f1a623
+ 778c/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: INTEGRALES FACILITY MANAGEMENT MANDAT A16
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

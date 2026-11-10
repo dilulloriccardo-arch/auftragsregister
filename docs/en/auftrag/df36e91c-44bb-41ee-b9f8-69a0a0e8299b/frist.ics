@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df36e91c-44bb-41ee-b9f8-69a0a0e8299b-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261223T110000Z
+SUMMARY:Submission deadline: Delivery of an aerial rescue vehicle for the A
+ ltstätten-Eichberg fire department
+DESCRIPTION:Public buyer: Feuerwehrverbund Altstätten-Eichberg\nSubmission
+  deadline: 23 Dec 2026\, 12:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/df36e91c-44bb-41ee-b9f8-69a0a0e8299b/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/df36e91c-44bb-41ee-b9f8-69a0a0e8
+ 299b
+URL:https://auftragsregister.ch/en/auftrag/df36e91c-44bb-41ee-b9f8-69a0a0e8
+ 299b/
+LOCATION:Altstätten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Delivery of an aerial rescue vehicle for t
+ he Altstätten-Eichberg fire department
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

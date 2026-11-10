@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ad6f7e6c-036a-4985-a508-a6ab4af61b61-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Délai de remise : Réfection du pont sur la ligne CFF à Pieterl
+ en
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 15.01.2027\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/ad6f7e6c-036a-4985-a508-a6ab4af61b61/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/ad6f7e6c-036a-4985-a508-
+ a6ab4af61b61
+URL:https://auftragsregister.ch/fr/auftrag/ad6f7e6c-036a-4985-a508-a6ab4af6
+ 1b61/
+LOCATION:Pieterlen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Réfection du pont sur la ligne CFF à Pie
+ terlen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

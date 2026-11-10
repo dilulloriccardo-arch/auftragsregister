@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ad6f7e6c-036a-4985-a508-a6ab4af61b61-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Eingabefrist: Instandsetzung Brücke über SBB Pieterlen
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 15.01.
+ 2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ad6
+ f7e6c-036a-4985-a508-a6ab4af61b61/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/ad6f7e6c-036a-4985-a508-a6ab4af61b61
+URL:https://auftragsregister.ch/de/auftrag/ad6f7e6c-036a-4985-a508-a6ab4af6
+ 1b61/
+LOCATION:Pieterlen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Instandsetzung Brücke über SBB Pieterlen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

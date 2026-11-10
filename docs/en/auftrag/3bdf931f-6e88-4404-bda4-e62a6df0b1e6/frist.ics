@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3bdf931f-6e88-4404-bda4-e62a6df0b1e6-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261221T100000Z
+SUMMARY:Submission deadline: 596 Gymnase d'Echallens CFC 271 Plâtrerie
+DESCRIPTION:Public buyer: Direction générale des immeubles et du patrimoi
+ ne – DGIP\nSubmission deadline: 21 Dec 2026\, 11:00\nIn the register: 
+ https://auftragsregister.ch/en/auftrag/3bdf931f-6e88-4404-bda4-e62a6df0b1e
+ 6/\nOfficial publication: https://www.simap.ch/en/project-detail/3bdf931f-
+ 6e88-4404-bda4-e62a6df0b1e6
+URL:https://auftragsregister.ch/en/auftrag/3bdf931f-6e88-4404-bda4-e62a6df0
+ b1e6/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 596 Gymnase d'Echallens CFC 271 Plâtrerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

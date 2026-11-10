@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:659c9e27-1472-4fbf-b304-f111d23e3f85-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270112T225900Z
+SUMMARY:Délai de remise : regiosuisse : prestations de communication\, s
+ ite web et Events
+DESCRIPTION:Acheteur public : Staatssekretariat für Wirtschaft (SECO) - 
+ Standortförderung\nDélai de remise : 12.01.2027\, 23 h 59\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/659c9e27-1472-4fbf-b3
+ 04-f111d23e3f85/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/659c9e27-1472-4fbf-b304-f111d23e3f85
+URL:https://auftragsregister.ch/fr/auftrag/659c9e27-1472-4fbf-b304-f111d23e
+ 3f85/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : regiosuisse : prestations de communication
+ \, site web et Events
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

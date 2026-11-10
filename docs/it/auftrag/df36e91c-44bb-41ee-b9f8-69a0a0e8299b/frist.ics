@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df36e91c-44bb-41ee-b9f8-69a0a0e8299b-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261223T110000Z
+SUMMARY:Scadenza: Lieferung eines Hubrettungsfahrzeuges für die Feuerwehr 
+ Altstätten-Eichberg
+DESCRIPTION:Ente pubblico: Feuerwehrverbund Altstätten-Eichberg\nScadenza:
+  23.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ df36e91c-44bb-41ee-b9f8-69a0a0e8299b/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/df36e91c-44bb-41ee-b9f8-69a0a0e8299b
+URL:https://auftragsregister.ch/it/auftrag/df36e91c-44bb-41ee-b9f8-69a0a0e8
+ 299b/
+LOCATION:Altstätten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Lieferung eines Hubrettungsfahrzeuges für die Feuerw
+ ehr Altstätten-Eichberg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

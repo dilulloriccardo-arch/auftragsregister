@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2eaa3724-e522-430e-96fe-a84cabc9b759-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270111T070000Z
+SUMMARY:Submission deadline: Renouvellement de la mensuration officielle\, 
+ Gruyères\, lot 4
+DESCRIPTION:Public buyer: Amt für Geoinformation\nSubmission deadline: 11
+  Jan 2027\, 08:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/2eaa3724-e522-430e-96fe-a84cabc9b759/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/2eaa3724-e522-430e-96fe-a84cabc9b759
+URL:https://auftragsregister.ch/en/auftrag/2eaa3724-e522-430e-96fe-a84cabc9
+ b759/
+LOCATION:Gruyères
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Renouvellement de la mensuration officiell
+ e\, Gruyères\, lot 4
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

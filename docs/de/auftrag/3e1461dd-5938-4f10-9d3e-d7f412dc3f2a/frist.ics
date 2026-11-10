@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e1461dd-5938-4f10-9d3e-d7f412dc3f2a-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Eingabefrist: Protection contre les crues et renaturation de la Dra
+ nse - Secteur Condémine-Bourrigne - Travaux de génie civil
+DESCRIPTION:Auftraggeber: Commune de Martigny - Services Techniques\nEingab
+ efrist: 04.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/3e1461dd-5938-4f10-9d3e-d7f412dc3f2a/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/3e1461dd-5938-4f10-9d3e-d7f412dc3f2a
+URL:https://auftragsregister.ch/de/auftrag/3e1461dd-5938-4f10-9d3e-d7f412dc
+ 3f2a/
+LOCATION:Martigny-Combe
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Protection contre les crues et renaturation de la
+  Dranse - Secteur Condémine-Bourrigne - Travaux de génie civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

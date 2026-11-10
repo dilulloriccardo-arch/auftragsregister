@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07369b64-0dd1-4464-8bb0-989913151476-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Submission deadline: VEB Verdrängungen B10 / B - BKP 287 Baureinig
+ ung
+DESCRIPTION:Public buyer: Flughafen Zürich AG\nSubmission deadline: 4 Jan
+  2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/07
+ 369b64-0dd1-4464-8bb0-989913151476/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/07369b64-0dd1-4464-8bb0-989913151476
+URL:https://auftragsregister.ch/en/auftrag/07369b64-0dd1-4464-8bb0-98991315
+ 1476/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: VEB Verdrängungen B10 / B - BKP 287 Baure
+ inigung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e738415-91ec-4b83-ba4f-628e57cb9579-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Eingabefrist: Ecole des Grands Esserts – Chaufferie mobile Lot 1 
+ : Fourniture et mise en service Lot 2 : Raccordement et exploitation March
+ é de Fournitures
+DESCRIPTION:Auftraggeber: Services Industriels de Genève (SIG) Direction P
+ rojets Industriels et Solutions Digitales\nEingabefrist: 21.12.2026\, 12.0
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0e738415-91ec-
+ 4b83-ba4f-628e57cb9579/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/0e738415-91ec-4b83-ba4f-628e57cb9579
+URL:https://auftragsregister.ch/de/auftrag/0e738415-91ec-4b83-ba4f-628e57cb
+ 9579/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ecole des Grands Esserts – Chaufferie mobile Lo
+ t 1 : Fourniture et mise en service Lot 2 : Raccordement et exploitation M
+ arché de Fournitures
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a30a2d0-d0d9-41cb-b1ed-0380a2158131-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:1
+DTSTART:20270212T225900Z
+SUMMARY:Submission deadline: TR1360 La Punt - Filisur - Sils - Standard Iso
+ latorenketten
+DESCRIPTION:Public buyer: Swissgrid AG - Asset & Maintenance\nSubmission de
+ adline: 12 Feb 2027\, 23:59\nIn the register: https://auftragsregister.c
+ h/en/auftrag/0a30a2d0-d0d9-41cb-b1ed-0380a2158131/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/0a30a2d0-d0d9-41cb-b1ed-0380a215813
+ 1
+URL:https://auftragsregister.ch/en/auftrag/0a30a2d0-d0d9-41cb-b1ed-0380a215
+ 8131/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: TR1360 La Punt - Filisur - Sils - Standard
+  Isolatorenketten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

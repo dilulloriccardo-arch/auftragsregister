@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9b65f9d7-7f36-4fc1-8de6-9496ab9e8fbf-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261221T090000Z
+SUMMARY:Submission deadline: STZ\, Framework Agreement for Electrical Inspe
+ ctions\, BKP 239.25 Independent Inspections
+DESCRIPTION:Public buyer: Stadtspital Zürich\nSubmission deadline: 21 Dec
+  2026\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag/9b
+ 65f9d7-7f36-4fc1-8de6-9496ab9e8fbf/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/9b65f9d7-7f36-4fc1-8de6-9496ab9e8fbf
+URL:https://auftragsregister.ch/en/auftrag/9b65f9d7-7f36-4fc1-8de6-9496ab9e
+ 8fbf/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: STZ\, Framework Agreement for Electrical I
+ nspections\, BKP 239.25 Independent Inspections
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

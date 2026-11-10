@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9b65f9d7-7f36-4fc1-8de6-9496ab9e8fbf-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261221T090000Z
+SUMMARY:Eingabefrist: STZ\, Rahmenvertrag Elektrokontrollen\, BKP 239.25 Un
+ abhängige Kontrollen
+DESCRIPTION:Auftraggeber: Stadtspital Zürich\nEingabefrist: 21.12.2026\, 1
+ 0.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9b65f9d7-7f
+ 36-4fc1-8de6-9496ab9e8fbf/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/9b65f9d7-7f36-4fc1-8de6-9496ab9e8fbf
+URL:https://auftragsregister.ch/de/auftrag/9b65f9d7-7f36-4fc1-8de6-9496ab9e
+ 8fbf/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: STZ\, Rahmenvertrag Elektrokontrollen\, BKP 239.2
+ 5 Unabhängige Kontrollen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

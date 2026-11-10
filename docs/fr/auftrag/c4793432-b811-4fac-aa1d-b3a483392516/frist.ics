@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c4793432-b811-4fac-aa1d-b3a483392516-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261130T100000Z
+SUMMARY:Délai de remise : Männedorf\, Glärnischstrasse (Strassen- und 
+ Tiefbauarbeiten)
+DESCRIPTION:Acheteur public : Gemeinde Männedorf\, Abteilung Tiefbau\nD
+ élai de remise : 30.11.2026\, 11 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/c4793432-b811-4fac-aa1d-b3a483392516/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/c4793432-b8
+ 11-4fac-aa1d-b3a483392516
+URL:https://auftragsregister.ch/fr/auftrag/c4793432-b811-4fac-aa1d-b3a48339
+ 2516/
+LOCATION:Männedorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Männedorf\, Glärnischstrasse (Strassen- 
+ und Tiefbauarbeiten)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

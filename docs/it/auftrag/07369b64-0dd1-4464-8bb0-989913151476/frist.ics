@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07369b64-0dd1-4464-8bb0-989913151476-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Scadenza: VEB Verdrängungen B10 / B - BKP 287 Baureinigung
+DESCRIPTION:Ente pubblico: Flughafen Zürich AG\nScadenza: 04.01.2027\, 12:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/07369b64-0dd1-446
+ 4-8bb0-989913151476/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/07369b64-0dd1-4464-8bb0-989913151476
+URL:https://auftragsregister.ch/it/auftrag/07369b64-0dd1-4464-8bb0-98991315
+ 1476/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: VEB Verdrängungen B10 / B - BKP 287 Baureinigung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

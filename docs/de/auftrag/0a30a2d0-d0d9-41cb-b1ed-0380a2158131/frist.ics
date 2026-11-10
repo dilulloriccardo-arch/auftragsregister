@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0a30a2d0-d0d9-41cb-b1ed-0380a2158131-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:1
+DTSTART:20270212T225900Z
+SUMMARY:Eingabefrist: TR1360 La Punt - Filisur - Sils - Standard Isolatoren
+ ketten
+DESCRIPTION:Auftraggeber: Swissgrid AG - Asset & Maintenance\nEingabefrist:
+  12.02.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/0a30a2d0-d0d9-41cb-b1ed-0380a2158131/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/0a30a2d0-d0d9-41cb-b1ed-0380a2158131
+URL:https://auftragsregister.ch/de/auftrag/0a30a2d0-d0d9-41cb-b1ed-0380a215
+ 8131/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: TR1360 La Punt - Filisur - Sils - Standard Isolat
+ orenketten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:659c9e27-1472-4fbf-b304-f111d23e3f85-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270112T225900Z
+SUMMARY:Submission deadline: regiosuisse: Kommunikationsdienstleistungen\, 
+ Website und Events
+DESCRIPTION:Public buyer: Staatssekretariat für Wirtschaft (SECO) - Stando
+ rtförderung\nSubmission deadline: 12 Jan 2027\, 23:59\nIn the register:
+  https://auftragsregister.ch/en/auftrag/659c9e27-1472-4fbf-b304-f111d23e3f
+ 85/\nOfficial publication: https://www.simap.ch/en/project-detail/659c9e27
+ -1472-4fbf-b304-f111d23e3f85
+URL:https://auftragsregister.ch/en/auftrag/659c9e27-1472-4fbf-b304-f111d23e
+ 3f85/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: regiosuisse: Kommunikationsdienstleistunge
+ n\, Website und Events
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

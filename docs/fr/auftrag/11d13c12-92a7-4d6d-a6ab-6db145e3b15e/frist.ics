@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:11d13c12-92a7-4d6d-a6ab-6db145e3b15e-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261130T120000Z
+SUMMARY:Délai de remise : Himmelreich-/Falkenstrasse Bronschhofen Vergr
+ össerung Kanal
+DESCRIPTION:Acheteur public : Stadt Wil\, Departement Bau\, Umwelt und Ve
+ rkehr\, Abteilung Umwelt\nDélai de remise : 30.11.2026\, 13 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/11d13c12-92a7-4
+ d6d-a6ab-6db145e3b15e/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/11d13c12-92a7-4d6d-a6ab-6db145e3b15e
+URL:https://auftragsregister.ch/fr/auftrag/11d13c12-92a7-4d6d-a6ab-6db145e3
+ b15e/
+LOCATION:Bronschhofen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Himmelreich-/Falkenstrasse Bronschhofen Ve
+ rgrösserung Kanal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

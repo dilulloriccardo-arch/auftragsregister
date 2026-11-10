@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:feccc670-117a-4666-929d-d9eac3562149-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Délai de remise : Neubau Wohnheim Humanitas - BKP 273 Innentüre
+ n aus Holz
+DESCRIPTION:Acheteur public : Humanitas Stiftung (Anderegg Partner AG)\nD
+ élai de remise : 21.12.2026\, 12 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/feccc670-117a-4666-929d-d9eac3562149/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/feccc670-11
+ 7a-4666-929d-d9eac3562149
+URL:https://auftragsregister.ch/fr/auftrag/feccc670-117a-4666-929d-d9eac356
+ 2149/
+LOCATION:Horgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Wohnheim Humanitas - BKP 273 Innent
+ üren aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

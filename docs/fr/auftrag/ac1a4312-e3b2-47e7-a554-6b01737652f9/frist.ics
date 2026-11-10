@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac1a4312-e3b2-47e7-a554-6b01737652f9-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Délai de remise : EPFL DOUBLE DECK - CFC 236.1 Groupe secours
+DESCRIPTION:Acheteur public : EPFL - Domaine des Achats\nDélai de remise
+  : 21.12.2026\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/ac1a4312-e3b2-47e7-a554-6b01737652f9/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/ac1a4312-e3b2-47e7-a554-6b
+ 01737652f9
+URL:https://auftragsregister.ch/fr/auftrag/ac1a4312-e3b2-47e7-a554-6b017376
+ 52f9/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EPFL DOUBLE DECK - CFC 236.1 Groupe secour
+ s
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

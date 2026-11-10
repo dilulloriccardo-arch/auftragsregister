@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:309b3130-eed5-4559-94f5-ed19d34d7f91-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261201T120000Z
+SUMMARY:Submission deadline: Acquisition d’un système de gestion de la c
+ harge (SGC/CMS)
+DESCRIPTION:Public buyer: MBC Transports de la région Morges Bière Cosson
+ ay SA - Service Achats\nSubmission deadline: 1 Dec 2026\, 13:00\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/309b3130-eed5-4559-94f5-e
+ d19d34d7f91/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /309b3130-eed5-4559-94f5-ed19d34d7f91
+URL:https://auftragsregister.ch/en/auftrag/309b3130-eed5-4559-94f5-ed19d34d
+ 7f91/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Acquisition d’un système de gestion de 
+ la charge (SGC/CMS)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

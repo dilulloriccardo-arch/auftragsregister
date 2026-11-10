@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df36e91c-44bb-41ee-b9f8-69a0a0e8299b-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261223T110000Z
+SUMMARY:Eingabefrist: Lieferung eines Hubrettungsfahrzeuges für die Feuerw
+ ehr Altstätten-Eichberg
+DESCRIPTION:Auftraggeber: Feuerwehrverbund Altstätten-Eichberg\nEingabefri
+ st: 23.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/df36e91c-44bb-41ee-b9f8-69a0a0e8299b/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/df36e91c-44bb-41ee-b9f8-69a0a0e8299b
+URL:https://auftragsregister.ch/de/auftrag/df36e91c-44bb-41ee-b9f8-69a0a0e8
+ 299b/
+LOCATION:Altstätten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Lieferung eines Hubrettungsfahrzeuges für die Fe
+ uerwehr Altstätten-Eichberg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

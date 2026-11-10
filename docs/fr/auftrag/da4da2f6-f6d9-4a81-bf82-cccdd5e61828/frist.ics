@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da4da2f6-f6d9-4a81-bf82-cccdd5e61828-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270122T140000Z
+SUMMARY:Délai de remise : Restauration et rénovation dans le respect du
+  bâti existant de l’ancienne Masseria / ancien Fienile\, Novazzano – 
+ mandat d’architecte
+DESCRIPTION:Acheteur public : Comune di Novazzano\nDélai de remise : 2
+ 2.01.2027\, 15 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/da4da2f6-f6d9-4a81-bf82-cccdd5e61828/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/da4da2f6-f6d9-4a81-bf82-cccdd5
+ e61828
+URL:https://auftragsregister.ch/fr/auftrag/da4da2f6-f6d9-4a81-bf82-cccdd5e6
+ 1828/
+LOCATION:Novazzano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Restauration et rénovation dans le respec
+ t du bâti existant de l’ancienne Masseria / ancien Fienile\, Novazzano 
+ – mandat d’architecte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

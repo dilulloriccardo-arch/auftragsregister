@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61f4e88e-1bf0-4378-bb94-c41e8efe1afb-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Scadenza: Neubau Grundwasserpumpwerk Breukholz\, Gross: Baumeistera
+ rbeiten Aufbereitungsanlage
+DESCRIPTION:Ente pubblico: Bezirk Einsiedeln\, Infrastruktur\nScadenza: 09.
+ 12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/61f4
+ e88e-1bf0-4378-bb94-c41e8efe1afb/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/61f4e88e-1bf0-4378-bb94-c41e8efe1afb
+URL:https://auftragsregister.ch/it/auftrag/61f4e88e-1bf0-4378-bb94-c41e8efe
+ 1afb/
+LOCATION:Gross
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Grundwasserpumpwerk Breukholz\, Gross: Baumeis
+ terarbeiten Aufbereitungsanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

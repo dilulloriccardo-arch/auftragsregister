@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e244b250-40d4-4d09-9639-296ef07ff814-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261222T110000Z
+SUMMARY:Délai de remise : E-Learning Bibliothek
+DESCRIPTION:Acheteur public : Kanton Zürich\nDélai de remise : 22.12.
+ 2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/e244b250-40d4-4d09-9639-296ef07ff814/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/e244b250-40d4-4d09-9639-296ef07ff814
+URL:https://auftragsregister.ch/fr/auftrag/e244b250-40d4-4d09-9639-296ef07f
+ f814/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : E-Learning Bibliothek
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

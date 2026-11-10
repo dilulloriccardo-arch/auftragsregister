@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4ce3c27e-a9a5-4d3b-a9b8-b95d8cf46134-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270119T150000Z
+SUMMARY:Submission deadline: BKP 273.3 Allgemeine Schreinerarbeiten
+DESCRIPTION:Public buyer: Stiftung Alterswohnungen der Stadt Zürich - SAW 
+ (Fokus Baumanagement)\nSubmission deadline: 19 Jan 2027\, 16:00\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/4ce3c27e-a9a5-4d3b-a9b8-b
+ 95d8cf46134/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /4ce3c27e-a9a5-4d3b-a9b8-b95d8cf46134
+URL:https://auftragsregister.ch/en/auftrag/4ce3c27e-a9a5-4d3b-a9b8-b95d8cf4
+ 6134/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 273.3 Allgemeine Schreinerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ad6f7e6c-036a-4985-a508-a6ab4af61b61-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Scadenza: Instandsetzung Brücke über SBB Pieterlen
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 15.01.202
+ 7\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/ad6f7e6c-0
+ 36a-4985-a508-a6ab4af61b61/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/ad6f7e6c-036a-4985-a508-a6ab4af61b61
+URL:https://auftragsregister.ch/it/auftrag/ad6f7e6c-036a-4985-a508-a6ab4af6
+ 1b61/
+LOCATION:Pieterlen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Instandsetzung Brücke über SBB Pieterlen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

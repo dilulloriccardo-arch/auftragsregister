@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e244b250-40d4-4d09-9639-296ef07ff814-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261222T110000Z
+SUMMARY:Submission deadline: E-Learning Bibliothek
+DESCRIPTION:Public buyer: Kanton Zürich\nSubmission deadline: 22 Dec 202
+ 6\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/e244b25
+ 0-40d4-4d09-9639-296ef07ff814/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/e244b250-40d4-4d09-9639-296ef07ff814
+URL:https://auftragsregister.ch/en/auftrag/e244b250-40d4-4d09-9639-296ef07f
+ f814/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: E-Learning Bibliothek
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

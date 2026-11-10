@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1c49391e-7c0d-450c-a3a8-1b97f66b2d01-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20270201T110000Z
+SUMMARY:Eingabefrist: FONDATION DU MIDI Lot N°87 Aménagements extérieurs
+DESCRIPTION:Auftraggeber: Fondation du Midi - Nouvelle construction de l'EM
+ S des Tines à Nyon - (MAK Architecture SA p.o. Pragma Partenaires SA)\nEi
+ ngabefrist: 01.02.2027\, 12.00 Uhr\nIm Register: https://auftragsregister
+ .ch/de/auftrag/1c49391e-7c0d-450c-a3a8-1b97f66b2d01/\nAmtliche Publikation
+ : https://www.simap.ch/de/project-detail/1c49391e-7c0d-450c-a3a8-1b97f66b2
+ d01
+URL:https://auftragsregister.ch/de/auftrag/1c49391e-7c0d-450c-a3a8-1b97f66b
+ 2d01/
+LOCATION:Chemin des Tines 21 Nyon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: FONDATION DU MIDI Lot N°87 Aménagements extéri
+ eurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

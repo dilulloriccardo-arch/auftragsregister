@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:15259ad1-dc6e-46df-bf73-0495f382b445-frist@auftragsregister.ch
+DTSTAMP:20261110T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Submission deadline: Ersatzbeschaffung 4-Achs LKW durch 4-Achs-Elek
+ tro-LKW (1+3) mit Hakengerät und Winterdienstvorbereitung
+DESCRIPTION:Public buyer: Stadt Luzern\, Strasseninspektorat\nSubmission de
+ adline: 21 Dec 2026\, 16:00\nIn the register: https://auftragsregister.c
+ h/en/auftrag/15259ad1-dc6e-46df-bf73-0495f382b445/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/15259ad1-dc6e-46df-bf73-0495f382b44
+ 5
+URL:https://auftragsregister.ch/en/auftrag/15259ad1-dc6e-46df-bf73-0495f382
+ b445/
+LOCATION:Emmenbrücke
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatzbeschaffung 4-Achs LKW durch 4-Achs-
+ Elektro-LKW (1+3) mit Hakengerät und Winterdienstvorbereitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
