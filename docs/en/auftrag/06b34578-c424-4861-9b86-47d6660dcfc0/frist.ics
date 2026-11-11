@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:06b34578-c424-4861-9b86-47d6660dcfc0-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Submission deadline: Construction de l'EPSM Chanella à Rossinière
+  - CFC 211 MACONNERIE - BA
+DESCRIPTION:Public buyer: Fondation Cogest'ems (quartal)\nSubmission deadli
+ ne: 15 Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en
+ /auftrag/06b34578-c424-4861-9b86-47d6660dcfc0/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/06b34578-c424-4861-9b86-47d6660dcfc0
+URL:https://auftragsregister.ch/en/auftrag/06b34578-c424-4861-9b86-47d6660d
+ cfc0/
+LOCATION:Rossinière
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Construction de l'EPSM Chanella à Rossini
+ ère - CFC 211 MACONNERIE - BA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aaae5aa0-79b1-4002-94ab-0e44001a142d-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Scadenza: Réalisation d'une nouvelle interconnexion entre le compl
+ exte de Balessert à Founex et le réservoir de Longchamp à Grilly - part
+ ie Suisse des travaux - Forages dirigés sous l'autoroute et la Versoix
+DESCRIPTION:Ente pubblico: Services Industriels de Terre Sainte et Environs
+  SITSE (SH Ingénieurs Sàrl)\nScadenza: 21.12.2026\, 12:00\nNel registro:
+  https://auftragsregister.ch/it/auftrag/aaae5aa0-79b1-4002-94ab-0e44001a14
+ 2d/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/aaae5
+ aa0-79b1-4002-94ab-0e44001a142d
+URL:https://auftragsregister.ch/it/auftrag/aaae5aa0-79b1-4002-94ab-0e44001a
+ 142d/
+LOCATION:Founex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Réalisation d'une nouvelle interconnexion entre le c
+ omplexte de Balessert à Founex et le réservoir de Longchamp à Grilly - 
+ partie Suisse des travaux - Forages dirigés sous l'autoroute et la Versoi
+ x
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

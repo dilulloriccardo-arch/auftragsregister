@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28d46944-8956-4e9b-ac77-bb0484c75440-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Eingabefrist: CFC23-Aménagements intérieurs Jeunes 105
+DESCRIPTION:Auftraggeber: d2 Architectes et Associés SA\nEingabefrist: 10.
+ 12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ 28d46944-8956-4e9b-ac77-bb0484c75440/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/28d46944-8956-4e9b-ac77-bb0484c75440
+URL:https://auftragsregister.ch/de/auftrag/28d46944-8956-4e9b-ac77-bb0484c7
+ 5440/
+LOCATION:Carouge
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CFC23-Aménagements intérieurs Jeunes 105
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

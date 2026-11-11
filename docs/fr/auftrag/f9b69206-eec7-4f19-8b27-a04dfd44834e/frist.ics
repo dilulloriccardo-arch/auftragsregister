@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f9b69206-eec7-4f19-8b27-a04dfd44834e-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261223T160000Z
+SUMMARY:Délai de remise : EMS Riond-Vert - Prestations de services liée
+ s à la construction - CFC 294 - 297.3 Ingénieurs CVS - MCR - Physique du
+  bâtiment
+DESCRIPTION:Acheteur public : EMS Riond-Vert SA (Itten+Brechbühl SA)\nD
+ élai de remise : 23.12.2026\, 17 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/f9b69206-eec7-4f19-8b27-a04dfd44834e/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/f9b69206-ee
+ c7-4f19-8b27-a04dfd44834e
+URL:https://auftragsregister.ch/fr/auftrag/f9b69206-eec7-4f19-8b27-a04dfd44
+ 834e/
+LOCATION:Vouvry
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EMS Riond-Vert - Prestations de services l
+ iées à la construction - CFC 294 - 297.3 Ingénieurs CVS - MCR - Physiqu
+ e du bâtiment
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

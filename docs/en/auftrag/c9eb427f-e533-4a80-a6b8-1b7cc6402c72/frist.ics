@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9eb427f-e533-4a80-a6b8-1b7cc6402c72-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270108T100000Z
+SUMMARY:Submission deadline: Krankenpflegeversicherung gemäss Bundesgesetz
+  über die Krankenversicherung (KVG\, SR 832.10) inklusive Unfallversicher
+ ung für Personen aus dem Asylbereich
+DESCRIPTION:Public buyer: Versicherungsdienst Kanton Zürich\nSubmission de
+ adline: 8 Jan 2027\, 11:00\nIn the register: https://auftragsregister.ch
+ /en/auftrag/c9eb427f-e533-4a80-a6b8-1b7cc6402c72/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/c9eb427f-e533-4a80-a6b8-1b7cc6402c72
+URL:https://auftragsregister.ch/en/auftrag/c9eb427f-e533-4a80-a6b8-1b7cc640
+ 2c72/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Krankenpflegeversicherung gemäss Bundesge
+ setz über die Krankenversicherung (KVG\, SR 832.10) inklusive Unfallversi
+ cherung für Personen aus dem Asylbereich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

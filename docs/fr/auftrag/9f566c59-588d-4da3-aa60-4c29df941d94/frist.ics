@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9f566c59-588d-4da3-aa60-4c29df941d94-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Délai de remise : Sanierung Wärmeverbund Neuhof Birr / BKP 240 
+ Heizungsanlagen
+DESCRIPTION:Acheteur public : Schweizerische Pestalozzistiftung Neuhof (A
+ bicht Aarau AG)\nDélai de remise : 16.12.2026\, 12 h 00\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/9f566c59-588d-4da3-aa60-
+ 4c29df941d94/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/9f566c59-588d-4da3-aa60-4c29df941d94
+URL:https://auftragsregister.ch/fr/auftrag/9f566c59-588d-4da3-aa60-4c29df94
+ 1d94/
+LOCATION:Birr
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Wärmeverbund Neuhof Birr / BKP 
+ 240 Heizungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

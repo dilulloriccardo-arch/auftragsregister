@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9eb427f-e533-4a80-a6b8-1b7cc6402c72-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270108T100000Z
+SUMMARY:Scadenza: Krankenpflegeversicherung gemäss Bundesgesetz über die 
+ Krankenversicherung (KVG\, SR 832.10) inklusive Unfallversicherung für Pe
+ rsonen aus dem Asylbereich
+DESCRIPTION:Ente pubblico: Versicherungsdienst Kanton Zürich\nScadenza: 08
+ .01.2027\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/c9e
+ b427f-e533-4a80-a6b8-1b7cc6402c72/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/c9eb427f-e533-4a80-a6b8-1b7cc6402c72
+URL:https://auftragsregister.ch/it/auftrag/c9eb427f-e533-4a80-a6b8-1b7cc640
+ 2c72/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Krankenpflegeversicherung gemäss Bundesgesetz über 
+ die Krankenversicherung (KVG\, SR 832.10) inklusive Unfallversicherung fü
+ r Personen aus dem Asylbereich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

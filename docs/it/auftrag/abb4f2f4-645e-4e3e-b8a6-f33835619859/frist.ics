@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abb4f2f4-645e-4e3e-b8a6-f33835619859-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270105T080000Z
+SUMMARY:Scadenza: BKP 241-243 Instandsetzung Heizung SPZ Sihlhölzli
+DESCRIPTION:Ente pubblico: HBD - Immobilien Stadt Zürich (IMMO)\nScadenza:
+  05.01.2027\, 09:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ abb4f2f4-645e-4e3e-b8a6-f33835619859/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/abb4f2f4-645e-4e3e-b8a6-f33835619859
+URL:https://auftragsregister.ch/it/auftrag/abb4f2f4-645e-4e3e-b8a6-f3383561
+ 9859/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 241-243 Instandsetzung Heizung SPZ Sihlhölzli
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

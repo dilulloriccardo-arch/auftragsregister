@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8baa301e-980a-4bda-9744-e0e2244120ca-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Scadenza: Rahmenvertrag Rottenverstärkung Fahrleitung & Fahrzeuge
+DESCRIPTION:Ente pubblico: Sihltal Zürich Uetliberg Bahn SZU AG\nScadenza:
+  21.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 8baa301e-980a-4bda-9744-e0e2244120ca/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/8baa301e-980a-4bda-9744-e0e2244120ca
+URL:https://auftragsregister.ch/it/auftrag/8baa301e-980a-4bda-9744-e0e22441
+ 20ca/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenvertrag Rottenverstärkung Fahrleitung & Fahrze
+ uge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

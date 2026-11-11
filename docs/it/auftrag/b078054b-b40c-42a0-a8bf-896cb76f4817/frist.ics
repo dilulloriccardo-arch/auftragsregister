@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b078054b-b40c-42a0-a8bf-896cb76f4817-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Scadenza: Teilmobile Flugverkehrsflächenbefeuerung inkl. PAPI und 
+ Anhänger
+DESCRIPTION:Ente pubblico: armasuisse Ressourcen und Support CC WTO\nScaden
+ za: 11.01.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/b078054b-b40c-42a0-a8bf-896cb76f4817/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/b078054b-b40c-42a0-a8bf-896cb76f4817
+URL:https://auftragsregister.ch/it/auftrag/b078054b-b40c-42a0-a8bf-896cb76f
+ 4817/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Teilmobile Flugverkehrsflächenbefeuerung inkl. PAPI 
+ und Anhänger
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

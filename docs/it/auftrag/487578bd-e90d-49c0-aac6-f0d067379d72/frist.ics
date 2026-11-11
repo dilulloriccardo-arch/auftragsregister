@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:487578bd-e90d-49c0-aac6-f0d067379d72-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:Scadenza: Erweiterung & Sanierung Oberstufenzentrum Wiedlisbach OZW
+DESCRIPTION:Ente pubblico: Oberstufenzentrum Wiedlisbach OZW\nScadenza: 21.
+ 12.2026\nNel registro: https://auftragsregister.ch/it/auftrag/487578bd-e90
+ d-49c0-aac6-f0d067379d72/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/487578bd-e90d-49c0-aac6-f0d067379d72
+URL:https://auftragsregister.ch/it/auftrag/487578bd-e90d-49c0-aac6-f0d06737
+ 9d72/
+LOCATION:Wiedlisbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erweiterung & Sanierung Oberstufenzentrum Wiedlisbach
+  OZW
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

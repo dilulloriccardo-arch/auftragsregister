@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4b7bb1f-9d00-49d2-a491-9e470c75bdd6-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Délai de remise : Bau Nr. 16033 - Limmatquai\, Schiffländeplatz
+  bis Walcheplatz (Abschnitte B1 und D2\, Tiefbauarbeiten)
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Realisierung\nDélai de r
+ emise : 02.12.2026\, 16 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/b4b7bb1f-9d00-49d2-a491-9e470c75bdd6/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/b4b7bb1f-9d00-49d2-a4
+ 91-9e470c75bdd6
+URL:https://auftragsregister.ch/fr/auftrag/b4b7bb1f-9d00-49d2-a491-9e470c75
+ bdd6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bau Nr. 16033 - Limmatquai\, Schiffländep
+ latz bis Walcheplatz (Abschnitte B1 und D2\, Tiefbauarbeiten)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

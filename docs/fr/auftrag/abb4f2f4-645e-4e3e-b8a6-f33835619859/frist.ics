@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:abb4f2f4-645e-4e3e-b8a6-f33835619859-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270105T080000Z
+SUMMARY:Délai de remise : BKP 241-243 Instandsetzung Heizung SPZ Sihlhö
+ lzli
+DESCRIPTION:Acheteur public : HBD - Immobilien Stadt Zürich (IMMO)\nDél
+ ai de remise : 05.01.2027\, 9 h 00\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/abb4f2f4-645e-4e3e-b8a6-f33835619859/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/abb4f2f4-645e-4
+ e3e-b8a6-f33835619859
+URL:https://auftragsregister.ch/fr/auftrag/abb4f2f4-645e-4e3e-b8a6-f3383561
+ 9859/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 241-243 Instandsetzung Heizung SPZ Sih
+ lhölzli
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

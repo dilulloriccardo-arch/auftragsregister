@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:303bcb58-85b0-4555-ba62-d5a246fad1f5-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261222T100000Z
+SUMMARY:Scadenza: Gesamtleistungssubmission Neubau Werkhofsgebäude\, Birme
+ nstorf
+DESCRIPTION:Ente pubblico: Gemeinde Birmenstorf (Landis AG)\nScadenza: 22.1
+ 2.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/303bc
+ b58-85b0-4555-ba62-d5a246fad1f5/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/303bcb58-85b0-4555-ba62-d5a246fad1f5
+URL:https://auftragsregister.ch/it/auftrag/303bcb58-85b0-4555-ba62-d5a246fa
+ d1f5/
+LOCATION:Birmenstorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gesamtleistungssubmission Neubau Werkhofsgebäude\, B
+ irmenstorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

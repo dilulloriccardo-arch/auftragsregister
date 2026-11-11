@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7b36b904-ee45-4106-89cb-99bf3d2d3552-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261201T160000Z
+SUMMARY:Eingabefrist: TWL Altbach
+DESCRIPTION:Auftraggeber: Werke Wangen-Brüttisellen\nEingabefrist: 01.12.2
+ 026\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/7b36
+ b904-ee45-4106-89cb-99bf3d2d3552/\nAmtliche Publikation: https://www.simap
+ .ch/de/project-detail/7b36b904-ee45-4106-89cb-99bf3d2d3552
+URL:https://auftragsregister.ch/de/auftrag/7b36b904-ee45-4106-89cb-99bf3d2d
+ 3552/
+LOCATION:Brüttisellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: TWL Altbach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

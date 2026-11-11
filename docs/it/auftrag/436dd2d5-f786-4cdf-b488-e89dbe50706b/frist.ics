@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:436dd2d5-f786-4cdf-b488-e89dbe50706b-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261213T225900Z
+SUMMARY:Scadenza: Kantonales Unternehmensregister Basel-Landschaft (kUR BL)
+DESCRIPTION:Ente pubblico: Zentrale Beschaffungsstelle Kanton Basel-Landsch
+ aft\nScadenza: 13.12.2026\, 23:59\nNel registro: https://auftragsregister.
+ ch/it/auftrag/436dd2d5-f786-4cdf-b488-e89dbe50706b/\nPubblicazione ufficia
+ le: https://www.simap.ch/it/project-detail/436dd2d5-f786-4cdf-b488-e89dbe5
+ 0706b
+URL:https://auftragsregister.ch/it/auftrag/436dd2d5-f786-4cdf-b488-e89dbe50
+ 706b/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kantonales Unternehmensregister Basel-Landschaft (kUR
+  BL)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

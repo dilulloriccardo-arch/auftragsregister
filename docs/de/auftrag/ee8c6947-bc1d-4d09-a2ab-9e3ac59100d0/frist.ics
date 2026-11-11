@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee8c6947-bc1d-4d09-a2ab-9e3ac59100d0-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261211T150000Z
+SUMMARY:Eingabefrist: Mandant d’organe de révision
+DESCRIPTION:Auftraggeber: Le service achat de Groupe E SA\nEingabefrist: 11
+ .12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /ee8c6947-bc1d-4d09-a2ab-9e3ac59100d0/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/ee8c6947-bc1d-4d09-a2ab-9e3ac59100d0
+URL:https://auftragsregister.ch/de/auftrag/ee8c6947-bc1d-4d09-a2ab-9e3ac591
+ 00d0/
+LOCATION:Granges-Paccot
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Mandant d’organe de révision
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

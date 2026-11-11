@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76d4aa17-4e94-4aed-8ba0-df7922fb8a50-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Scadenza: Baumeisterarbeiten Unterwerk Stein
+DESCRIPTION:Ente pubblico: AEW Energie AG\nScadenza: 07.12.2026\, 23:59\nNe
+ l registro: https://auftragsregister.ch/it/auftrag/76d4aa17-4e94-4aed-8ba0
+ -df7922fb8a50/\nPubblicazione ufficiale: https://www.simap.ch/it/project-d
+ etail/76d4aa17-4e94-4aed-8ba0-df7922fb8a50
+URL:https://auftragsregister.ch/it/auftrag/76d4aa17-4e94-4aed-8ba0-df7922fb
+ 8a50/
+LOCATION:Stein
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Baumeisterarbeiten Unterwerk Stein
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

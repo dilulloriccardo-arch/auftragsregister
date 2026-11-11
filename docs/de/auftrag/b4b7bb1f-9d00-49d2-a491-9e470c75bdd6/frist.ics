@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4b7bb1f-9d00-49d2-a491-9e470c75bdd6-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Eingabefrist: Bau Nr. 16033 - Limmatquai\, Schiffländeplatz bis Wa
+ lcheplatz (Abschnitte B1 und D2\, Tiefbauarbeiten)
+DESCRIPTION:Auftraggeber: Tiefbauamt\, Abt. Realisierung\nEingabefrist: 02.
+ 12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ b4b7bb1f-9d00-49d2-a491-9e470c75bdd6/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/b4b7bb1f-9d00-49d2-a491-9e470c75bdd6
+URL:https://auftragsregister.ch/de/auftrag/b4b7bb1f-9d00-49d2-a491-9e470c75
+ bdd6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bau Nr. 16033 - Limmatquai\, Schiffländeplatz bi
+ s Walcheplatz (Abschnitte B1 und D2\, Tiefbauarbeiten)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

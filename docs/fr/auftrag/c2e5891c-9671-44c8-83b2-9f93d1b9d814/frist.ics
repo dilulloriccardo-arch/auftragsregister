@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c2e5891c-9671-44c8-83b2-9f93d1b9d814-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261214T103000Z
+SUMMARY:Délai de remise : Acquisition de moyens d'enseignement pour la d
+ iscipline "Éthique et cultures religieuses"
+DESCRIPTION:Acheteur public : DGIP-Direction des achats et de la logistiq
+ ue (DAL)\nDélai de remise : 14.12.2026\, 11 h 30\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/c2e5891c-9671-44c8-83b2-9f93d1
+ b9d814/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /c2e5891c-9671-44c8-83b2-9f93d1b9d814
+URL:https://auftragsregister.ch/fr/auftrag/c2e5891c-9671-44c8-83b2-9f93d1b9
+ d814/
+LOCATION:Le Mont-sur-Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition de moyens d'enseignement pour 
+ la discipline "Éthique et cultures religieuses"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

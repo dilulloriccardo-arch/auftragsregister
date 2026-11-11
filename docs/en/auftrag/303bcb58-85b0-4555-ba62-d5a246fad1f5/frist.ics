@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:303bcb58-85b0-4555-ba62-d5a246fad1f5-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261222T100000Z
+SUMMARY:Submission deadline: Gesamtleistungssubmission Neubau Werkhofsgebä
+ ude\, Birmenstorf
+DESCRIPTION:Public buyer: Gemeinde Birmenstorf (Landis AG)\nSubmission dead
+ line: 22 Dec 2026\, 11:00\nIn the register: https://auftragsregister.ch/
+ en/auftrag/303bcb58-85b0-4555-ba62-d5a246fad1f5/\nOfficial publication: ht
+ tps://www.simap.ch/en/project-detail/303bcb58-85b0-4555-ba62-d5a246fad1f5
+URL:https://auftragsregister.ch/en/auftrag/303bcb58-85b0-4555-ba62-d5a246fa
+ d1f5/
+LOCATION:Birmenstorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gesamtleistungssubmission Neubau Werkhofsg
+ ebäude\, Birmenstorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

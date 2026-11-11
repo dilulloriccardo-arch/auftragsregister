@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5e4794ba-2989-421c-b1c0-47e93cb86940-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261222T150000Z
+SUMMARY:Scadenza: Strassenraumgestaltung Fahrweid\, Fahrweidstrasse Süd\, 
+ Niederholz- und Querstrasse\, Weiningen
+DESCRIPTION:Ente pubblico: Gemeinde Weiningen\nScadenza: 22.12.2026\, 16:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/5e4794ba-2989-421c-
+ b1c0-47e93cb86940/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/5e4794ba-2989-421c-b1c0-47e93cb86940
+URL:https://auftragsregister.ch/it/auftrag/5e4794ba-2989-421c-b1c0-47e93cb8
+ 6940/
+LOCATION:Weiningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Strassenraumgestaltung Fahrweid\, Fahrweidstrasse Sü
+ d\, Niederholz- und Querstrasse\, Weiningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

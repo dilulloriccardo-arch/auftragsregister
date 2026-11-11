@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb5e9f2b-f1ce-4f56-bd5f-2c1b63360312-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270104T210000Z
+SUMMARY:Submission deadline: Thun\, Schulhaus Strättligen\, Erweiterung un
+ d Sanierung\, BKP 201.1 Baugrube und Abbruch
+DESCRIPTION:Public buyer: Stadt Thun - Amt für Stadtliegenschaften\nSubmis
+ sion deadline: 4 Jan 2027\, 22:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/fb5e9f2b-f1ce-4f56-bd5f-2c1b63360312/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/fb5e9f2b-f1ce-4f56-bd5f-2c1b6
+ 3360312
+URL:https://auftragsregister.ch/en/auftrag/fb5e9f2b-f1ce-4f56-bd5f-2c1b6336
+ 0312/
+LOCATION:Hallerstrasse 24-30
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Thun\, Schulhaus Strättligen\, Erweiterun
+ g und Sanierung\, BKP 201.1 Baugrube und Abbruch
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

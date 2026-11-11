@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:01a16dce-82be-4ba2-9d0f-49dc009c73ff-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270113T150000Z
+SUMMARY:Submission deadline: ZHAW WIN CT\, TL Neubau und Ersatzneubau l 257
+ -01 Sprinkler TL
+DESCRIPTION:Public buyer: Hochbauamt Kanton Zürich\, Baubereich C\nSubmiss
+ ion deadline: 13 Jan 2027\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/01a16dce-82be-4ba2-9d0f-49dc009c73ff/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/01a16dce-82be-4ba2-9d0f-49dc0
+ 09c73ff
+URL:https://auftragsregister.ch/en/auftrag/01a16dce-82be-4ba2-9d0f-49dc009c
+ 73ff/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ZHAW WIN CT\, TL Neubau und Ersatzneubau l
+  257-01 Sprinkler TL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

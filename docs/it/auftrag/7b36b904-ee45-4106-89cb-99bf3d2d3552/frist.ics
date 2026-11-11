@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7b36b904-ee45-4106-89cb-99bf3d2d3552-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261201T160000Z
+SUMMARY:Scadenza: TWL Altbach
+DESCRIPTION:Ente pubblico: Werke Wangen-Brüttisellen\nScadenza: 01.12.2026
+ \, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/7b36b904-ee
+ 45-4106-89cb-99bf3d2d3552/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/7b36b904-ee45-4106-89cb-99bf3d2d3552
+URL:https://auftragsregister.ch/it/auftrag/7b36b904-ee45-4106-89cb-99bf3d2d
+ 3552/
+LOCATION:Brüttisellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: TWL Altbach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

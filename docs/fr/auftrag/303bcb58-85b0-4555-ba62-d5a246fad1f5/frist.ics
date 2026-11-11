@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:303bcb58-85b0-4555-ba62-d5a246fad1f5-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261222T100000Z
+SUMMARY:Délai de remise : Gesamtleistungssubmission Neubau Werkhofsgebä
+ ude\, Birmenstorf
+DESCRIPTION:Acheteur public : Gemeinde Birmenstorf (Landis AG)\nDélai de
+  remise : 22.12.2026\, 11 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/303bcb58-85b0-4555-ba62-d5a246fad1f5/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/303bcb58-85b0-4555-
+ ba62-d5a246fad1f5
+URL:https://auftragsregister.ch/fr/auftrag/303bcb58-85b0-4555-ba62-d5a246fa
+ d1f5/
+LOCATION:Birmenstorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gesamtleistungssubmission Neubau Werkhofsg
+ ebäude\, Birmenstorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

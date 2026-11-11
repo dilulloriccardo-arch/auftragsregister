@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:28d46944-8956-4e9b-ac77-bb0484c75440-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Délai de remise : CFC23-Aménagements intérieurs Jeunes 105
+DESCRIPTION:Acheteur public : d2 Architectes et Associés SA\nDélai de r
+ emise : 10.12.2026\, 16 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/28d46944-8956-4e9b-ac77-bb0484c75440/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/28d46944-8956-4e9b-ac
+ 77-bb0484c75440
+URL:https://auftragsregister.ch/fr/auftrag/28d46944-8956-4e9b-ac77-bb0484c7
+ 5440/
+LOCATION:Carouge
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFC23-Aménagements intérieurs Jeunes 105
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

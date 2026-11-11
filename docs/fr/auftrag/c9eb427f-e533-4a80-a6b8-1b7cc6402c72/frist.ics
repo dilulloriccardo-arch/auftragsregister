@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9eb427f-e533-4a80-a6b8-1b7cc6402c72-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270108T100000Z
+SUMMARY:Délai de remise : La Direction des finances du Canton de Zurich 
+ conduit un appel d' offres pour une assurance-maladie conformément à la 
+ loi fédérale sur l'assurance-maladie (RS 832.10) y compris l'assurance-a
+ ccidents pur les personnes revelant du domaine de l'asil.
+DESCRIPTION:Acheteur public : Versicherungsdienst Kanton Zürich\nDélai 
+ de remise : 08.01.2027\, 11 h 00\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/c9eb427f-e533-4a80-a6b8-1b7cc6402c72/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/c9eb427f-e533-4a8
+ 0-a6b8-1b7cc6402c72
+URL:https://auftragsregister.ch/fr/auftrag/c9eb427f-e533-4a80-a6b8-1b7cc640
+ 2c72/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : La Direction des finances du Canton de Zur
+ ich conduit un appel d' offres pour une assurance-maladie conformément à
+  la loi fédérale sur l'assurance-maladie (RS 832.10) y compris l'assuran
+ ce-accidents pur les personnes revelant du domaine de l'asil.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

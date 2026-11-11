@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:436dd2d5-f786-4cdf-b488-e89dbe50706b-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261213T225900Z
+SUMMARY:Eingabefrist: Kantonales Unternehmensregister Basel-Landschaft (kUR
+  BL)
+DESCRIPTION:Auftraggeber: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nEingabefrist: 13.12.2026\, 23.59 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/436dd2d5-f786-4cdf-b488-e89dbe50706b/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/436dd2d5-f786-4cdf-b488-e89
+ dbe50706b
+URL:https://auftragsregister.ch/de/auftrag/436dd2d5-f786-4cdf-b488-e89dbe50
+ 706b/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kantonales Unternehmensregister Basel-Landschaft 
+ (kUR BL)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

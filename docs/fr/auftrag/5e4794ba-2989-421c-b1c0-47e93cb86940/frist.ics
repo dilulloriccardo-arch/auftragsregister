@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5e4794ba-2989-421c-b1c0-47e93cb86940-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261222T150000Z
+SUMMARY:Délai de remise : Strassenraumgestaltung Fahrweid\, Fahrweidstra
+ sse Süd\, Niederholz- und Querstrasse\, Weiningen
+DESCRIPTION:Acheteur public : Gemeinde Weiningen\nDélai de remise : 22
+ .12.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/5e4794ba-2989-421c-b1c0-47e93cb86940/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/5e4794ba-2989-421c-b1c0-47e93cb86
+ 940
+URL:https://auftragsregister.ch/fr/auftrag/5e4794ba-2989-421c-b1c0-47e93cb8
+ 6940/
+LOCATION:Weiningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Strassenraumgestaltung Fahrweid\, Fahrweid
+ strasse Süd\, Niederholz- und Querstrasse\, Weiningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

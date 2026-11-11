@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:303bcb58-85b0-4555-ba62-d5a246fad1f5-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261222T100000Z
+SUMMARY:Eingabefrist: Gesamtleistungssubmission Neubau Werkhofsgebäude\, B
+ irmenstorf
+DESCRIPTION:Auftraggeber: Gemeinde Birmenstorf (Landis AG)\nEingabefrist: 2
+ 2.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/303bcb58-85b0-4555-ba62-d5a246fad1f5/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/303bcb58-85b0-4555-ba62-d5a246fad1f5
+URL:https://auftragsregister.ch/de/auftrag/303bcb58-85b0-4555-ba62-d5a246fa
+ d1f5/
+LOCATION:Birmenstorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamtleistungssubmission Neubau Werkhofsgebäude
+ \, Birmenstorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

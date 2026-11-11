@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:921abcf2-dec4-4932-9364-6903553b8204-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Eingabefrist: AO nettoyage du site des Sciences
+DESCRIPTION:Auftraggeber: Université de Genève - Secteur Entretien & Prop
+ reté\nEingabefrist: 21.12.2026\, 12.00 Uhr\nIm Register: https://auftrag
+ sregister.ch/de/auftrag/921abcf2-dec4-4932-9364-6903553b8204/\nAmtliche Pu
+ blikation: https://www.simap.ch/de/project-detail/921abcf2-dec4-4932-9364-
+ 6903553b8204
+URL:https://auftragsregister.ch/de/auftrag/921abcf2-dec4-4932-9364-6903553b
+ 8204/
+LOCATION:Quai Ernest-Ansermet 30
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AO nettoyage du site des Sciences
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

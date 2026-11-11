@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0bb14e24-5765-40d0-ad36-70c786eca4cd-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261210T225900Z
+SUMMARY:Délai de remise : Correction de la chaussée et construction d'u
+ n trottoir sur la route de Chermoran à Bluche\, sur la RC no 47 Montana-V
+ illage - Bluche\, sur le territoire de la commune de Crans-Montana
+DESCRIPTION:Acheteur public : Département de la mobilité\, du territoir
+ e et de l'environnement\nDélai de remise : 10.12.2026\, 23 h 59\nDa
+ ns le registre : https://auftragsregister.ch/fr/auftrag/0bb14e24-5765-40
+ d0-ad36-70c786eca4cd/\nPublication officielle : https://www.simap.ch/fr/
+ project-detail/0bb14e24-5765-40d0-ad36-70c786eca4cd
+URL:https://auftragsregister.ch/fr/auftrag/0bb14e24-5765-40d0-ad36-70c786ec
+ a4cd/
+LOCATION:Randogne\, commune de Crans-Montana
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Correction de la chaussée et construction
+  d'un trottoir sur la route de Chermoran à Bluche\, sur la RC no 47 Monta
+ na-Village - Bluche\, sur le territoire de la commune de Crans-Montana
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

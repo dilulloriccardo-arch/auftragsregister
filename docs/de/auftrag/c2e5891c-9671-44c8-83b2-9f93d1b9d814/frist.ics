@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c2e5891c-9671-44c8-83b2-9f93d1b9d814-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261214T103000Z
+SUMMARY:Eingabefrist: Acquisition de moyens d'enseignement pour la discipli
+ ne "Éthique et cultures religieuses"
+DESCRIPTION:Auftraggeber: DGIP-Direction des achats et de la logistique (DA
+ L)\nEingabefrist: 14.12.2026\, 11.30 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/c2e5891c-9671-44c8-83b2-9f93d1b9d814/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/c2e5891c-9671-44c8-83b2-9f9
+ 3d1b9d814
+URL:https://auftragsregister.ch/de/auftrag/c2e5891c-9671-44c8-83b2-9f93d1b9
+ d814/
+LOCATION:Le Mont-sur-Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Acquisition de moyens d'enseignement pour la disc
+ ipline "Éthique et cultures religieuses"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

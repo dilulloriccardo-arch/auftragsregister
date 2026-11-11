@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7b36b904-ee45-4106-89cb-99bf3d2d3552-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261201T160000Z
+SUMMARY:Délai de remise : TWL Altbach
+DESCRIPTION:Acheteur public : Werke Wangen-Brüttisellen\nDélai de remis
+ e : 01.12.2026\, 17 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/7b36b904-ee45-4106-89cb-99bf3d2d3552/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/7b36b904-ee45-4106-89cb-9
+ 9bf3d2d3552
+URL:https://auftragsregister.ch/fr/auftrag/7b36b904-ee45-4106-89cb-99bf3d2d
+ 3552/
+LOCATION:Brüttisellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : TWL Altbach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

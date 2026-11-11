@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:14b3cd19-b78f-4aea-8c77-1cf588bfe26a-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Submission deadline: MP-240091 N29 Schutzbauwerke LAW Sur Gonda\, B
+ aumeister
+DESCRIPTION:Public buyer: Ufficio federale delle strade USTRA\, Divisione i
+ nfrastruttura stradale Est\nSubmission deadline: 15 Jan 2027\, 16:00\nIn
+  the register: https://auftragsregister.ch/en/auftrag/14b3cd19-b78f-4aea-8
+ c77-1cf588bfe26a/\nOfficial publication: https://www.simap.ch/en/project-d
+ etail/14b3cd19-b78f-4aea-8c77-1cf588bfe26a
+URL:https://auftragsregister.ch/en/auftrag/14b3cd19-b78f-4aea-8c77-1cf588bf
+ e26a/
+LOCATION:Bivio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-240091 N29 Schutzbauwerke LAW Sur Gonda
+ \, Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

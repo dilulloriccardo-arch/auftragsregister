@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6f66b4fb-6a28-4926-8a8c-9c4630522f28-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261222T110000Z
+SUMMARY:Délai de remise : Campus Schwarzsee Lac Noir\, rénovation bâti
+ ments A et B
+DESCRIPTION:Acheteur public : Service des Bâtiments SBat\, CAMP_Lac Noir
+  (CPSA)\nDélai de remise : 22.12.2026\, 12 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/6f66b4fb-6a28-4926-8a8c-9c4630
+ 522f28/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /6f66b4fb-6a28-4926-8a8c-9c4630522f28
+URL:https://auftragsregister.ch/fr/auftrag/6f66b4fb-6a28-4926-8a8c-9c463052
+ 2f28/
+LOCATION:Schwarzsee
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Campus Schwarzsee Lac Noir\, rénovation b
+ âtiments A et B
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

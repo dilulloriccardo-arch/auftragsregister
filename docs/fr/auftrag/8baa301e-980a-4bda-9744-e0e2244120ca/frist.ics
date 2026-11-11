@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8baa301e-980a-4bda-9744-e0e2244120ca-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Délai de remise : Contrat-cadre pour le renforcement des équipe
+ s de voie – lignes de contact et véhicules
+DESCRIPTION:Acheteur public : Sihltal Zürich Uetliberg Bahn SZU AG\nDél
+ ai de remise : 21.12.2026\, 16 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/8baa301e-980a-4bda-9744-e0e2244120ca/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/8baa301e-980a-
+ 4bda-9744-e0e2244120ca
+URL:https://auftragsregister.ch/fr/auftrag/8baa301e-980a-4bda-9744-e0e22441
+ 20ca/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat-cadre pour le renforcement des éq
+ uipes de voie – lignes de contact et véhicules
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

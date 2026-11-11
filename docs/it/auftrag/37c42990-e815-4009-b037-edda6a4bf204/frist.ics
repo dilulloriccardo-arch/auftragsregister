@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:37c42990-e815-4009-b037-edda6a4bf204-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270120T140000Z
+SUMMARY:Scadenza: 7504 BKP 224.0 Bedachungsarbeiten\, Werkhof Tiefbauamt Am
+ riswil
+DESCRIPTION:Ente pubblico: Kantonales Hochbauamt Thurgau\nScadenza: 20.01.2
+ 027\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/37c42990
+ -e815-4009-b037-edda6a4bf204/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/37c42990-e815-4009-b037-edda6a4bf204
+URL:https://auftragsregister.ch/it/auftrag/37c42990-e815-4009-b037-edda6a4b
+ f204/
+LOCATION:Amriswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 7504 BKP 224.0 Bedachungsarbeiten\, Werkhof Tiefbauam
+ t Amriswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

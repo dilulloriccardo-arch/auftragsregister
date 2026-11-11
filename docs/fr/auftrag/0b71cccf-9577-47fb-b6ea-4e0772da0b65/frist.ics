@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0b71cccf-9577-47fb-b6ea-4e0772da0b65-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261207T154500Z
+SUMMARY:Délai de remise : Animations pédagogiques dans les écoles prim
+ aires du canton de Genève (élèves de 6P à 8P)
+DESCRIPTION:Acheteur public : Services industriels de Genève (SIG) - Dir
+ ection Achats\nDélai de remise : 07.12.2026\, 16 h 45\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/0b71cccf-9577-47fb-b6ea-4e
+ 0772da0b65/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/0b71cccf-9577-47fb-b6ea-4e0772da0b65
+URL:https://auftragsregister.ch/fr/auftrag/0b71cccf-9577-47fb-b6ea-4e0772da
+ 0b65/
+LOCATION:Le Lignon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Animations pédagogiques dans les écoles 
+ primaires du canton de Genève (élèves de 6P à 8P)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f9b69206-eec7-4f19-8b27-a04dfd44834e-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261223T160000Z
+SUMMARY:Scadenza: EMS Riond-Vert - Prestations de services liées à la con
+ struction - CFC 294 - 297.3 Ingénieurs CVS - MCR - Physique du bâtiment
+DESCRIPTION:Ente pubblico: EMS Riond-Vert SA (Itten+Brechbühl SA)\nScadenz
+ a: 23.12.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/f9b69206-eec7-4f19-8b27-a04dfd44834e/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/f9b69206-eec7-4f19-8b27-a04dfd44834e
+URL:https://auftragsregister.ch/it/auftrag/f9b69206-eec7-4f19-8b27-a04dfd44
+ 834e/
+LOCATION:Vouvry
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EMS Riond-Vert - Prestations de services liées à la
+  construction - CFC 294 - 297.3 Ingénieurs CVS - MCR - Physique du bâtim
+ ent
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

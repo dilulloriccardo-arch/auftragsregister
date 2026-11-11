@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a7f1d7cc-8dc3-40fc-9f68-b75aaf9d7fb1-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Eingabefrist: Sportanlage Heerenschürli\, Instandsetzung KR2–KR4
+  - BKP 424 Kunstrasen
+DESCRIPTION:Auftraggeber: TED - Grün Stadt Zürich (GSZ)\nEingabefrist: 08
+ .12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /a7f1d7cc-8dc3-40fc-9f68-b75aaf9d7fb1/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/a7f1d7cc-8dc3-40fc-9f68-b75aaf9d7fb1
+URL:https://auftragsregister.ch/de/auftrag/a7f1d7cc-8dc3-40fc-9f68-b75aaf9d
+ 7fb1/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sportanlage Heerenschürli\, Instandsetzung KR2
+ –KR4 - BKP 424 Kunstrasen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

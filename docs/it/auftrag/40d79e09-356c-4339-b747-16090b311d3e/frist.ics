@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40d79e09-356c-4339-b747-16090b311d3e-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270204T225900Z
+SUMMARY:Scadenza: MP-130008 N02 SBT\, 2. Instandsetzung / OBL BSA+Bau Teil 
+ I
+DESCRIPTION:Ente pubblico: Eidgenössisches Departement für Umwelt\, Verke
+ hr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung 
+ Strasseninfrastruktur-Ost - F3\nScadenza: 04.02.2027\, 23:59\nNel registro
+ : https://auftragsregister.ch/it/auftrag/40d79e09-356c-4339-b747-16090b311
+ d3e/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/40d7
+ 9e09-356c-4339-b747-16090b311d3e
+URL:https://auftragsregister.ch/it/auftrag/40d79e09-356c-4339-b747-16090b31
+ 1d3e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-130008 N02 SBT\, 2. Instandsetzung / OBL BSA+Bau T
+ eil I
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

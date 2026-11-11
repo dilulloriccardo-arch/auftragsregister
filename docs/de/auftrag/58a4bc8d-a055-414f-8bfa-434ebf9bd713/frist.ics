@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:58a4bc8d-a055-414f-8bfa-434ebf9bd713-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261202T100000Z
+SUMMARY:Eingabefrist: Affaire 21-070 : BH12-16\, Rénovation Chambres 5 et 
+ 2 lits – ETAPE 4
+DESCRIPTION:Auftraggeber: CHUV - Constructions ingénierie technique et sé
+ curité (CIT-S)\nEingabefrist: 02.12.2026\, 11.00 Uhr\nIm Register: https
+ ://auftragsregister.ch/de/auftrag/58a4bc8d-a055-414f-8bfa-434ebf9bd713/\nA
+ mtliche Publikation: https://www.simap.ch/de/project-detail/58a4bc8d-a055-
+ 414f-8bfa-434ebf9bd713
+URL:https://auftragsregister.ch/de/auftrag/58a4bc8d-a055-414f-8bfa-434ebf9b
+ d713/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Affaire 21-070 : BH12-16\, Rénovation Chambres 5
+  et 2 lits – ETAPE 4
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

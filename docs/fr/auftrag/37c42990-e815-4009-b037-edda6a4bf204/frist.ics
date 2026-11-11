@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:37c42990-e815-4009-b037-edda6a4bf204-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270120T140000Z
+SUMMARY:Délai de remise : 7504 BKP 224.0 Travaux de couverture\, chantie
+ r du service des travaux publics d'Amriswil
+DESCRIPTION:Acheteur public : Kantonales Hochbauamt Thurgau\nDélai de re
+ mise : 20.01.2027\, 15 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/37c42990-e815-4009-b037-edda6a4bf204/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/37c42990-e815-4009-b03
+ 7-edda6a4bf204
+URL:https://auftragsregister.ch/fr/auftrag/37c42990-e815-4009-b037-edda6a4b
+ f204/
+LOCATION:Amriswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 7504 BKP 224.0 Travaux de couverture\, cha
+ ntier du service des travaux publics d'Amriswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

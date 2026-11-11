@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40d79e09-356c-4339-b747-16090b311d3e-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20270204T225900Z
+SUMMARY:Submission deadline: MP-130008 N02 SBT\, 2. Instandsetzung / OBL BS
+ A+Bau Teil I
+DESCRIPTION:Public buyer: Eidgenössisches Departement für Umwelt\, Verkeh
+ r\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung S
+ trasseninfrastruktur-Ost - F3\nSubmission deadline: 4 Feb 2027\, 23:59\n
+ In the register: https://auftragsregister.ch/en/auftrag/40d79e09-356c-4339
+ -b747-16090b311d3e/\nOfficial publication: https://www.simap.ch/en/project
+ -detail/40d79e09-356c-4339-b747-16090b311d3e
+URL:https://auftragsregister.ch/en/auftrag/40d79e09-356c-4339-b747-16090b31
+ 1d3e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-130008 N02 SBT\, 2. Instandsetzung / OB
+ L BSA+Bau Teil I
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

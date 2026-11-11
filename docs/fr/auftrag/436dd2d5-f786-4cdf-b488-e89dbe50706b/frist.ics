@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:436dd2d5-f786-4cdf-b488-e89dbe50706b-frist@auftragsregister.ch
+DTSTAMP:20261111T000000Z
+SEQUENCE:0
+DTSTART:20261213T225900Z
+SUMMARY:Délai de remise : Registre cantonal des entreprises BL
+DESCRIPTION:Acheteur public : Zentrale Beschaffungsstelle Kanton Basel-La
+ ndschaft\nDélai de remise : 13.12.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/436dd2d5-f786-4cdf-b488-e89dbe
+ 50706b/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /436dd2d5-f786-4cdf-b488-e89dbe50706b
+URL:https://auftragsregister.ch/fr/auftrag/436dd2d5-f786-4cdf-b488-e89dbe50
+ 706b/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Registre cantonal des entreprises BL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
