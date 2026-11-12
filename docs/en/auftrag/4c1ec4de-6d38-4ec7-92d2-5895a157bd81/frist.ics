@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c1ec4de-6d38-4ec7-92d2-5895a157bd81-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270429
+SUMMARY:Submission deadline: Beschaffung Neue Flotte 2032
+DESCRIPTION:Public buyer: BLS AG - Finance & SCM - Strategische Beschaffung
+ \nSubmission deadline: 28 Apr 2027\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/4c1ec4de-6d38-4ec7-92d2-5895a157bd81/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/4c1ec4de-6d38-4ec7-92d2-5895
+ a157bd81
+URL:https://auftragsregister.ch/en/auftrag/4c1ec4de-6d38-4ec7-92d2-5895a157
+ bd81/
+LOCATION:Spiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung Neue Flotte 2032
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df4432dd-559c-4d19-8db4-74c5c0c2efbc-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261209T225500Z
+SUMMARY:Eingabefrist: Strassensanierung H19/H6 Gletsch
+DESCRIPTION:Auftraggeber: Dienststelle für Mobilität - Kreis 1 Oberwallis
+ \nEingabefrist: 09.12.2026\, 23.55 Uhr\nIm Register: https://auftragsregi
+ ster.ch/de/auftrag/df4432dd-559c-4d19-8db4-74c5c0c2efbc/\nAmtliche Publika
+ tion: https://www.simap.ch/de/project-detail/df4432dd-559c-4d19-8db4-74c5c
+ 0c2efbc
+URL:https://auftragsregister.ch/de/auftrag/df4432dd-559c-4d19-8db4-74c5c0c2
+ efbc/
+LOCATION:Oberwald (Gemeinde Obergoms)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Strassensanierung H19/H6 Gletsch
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

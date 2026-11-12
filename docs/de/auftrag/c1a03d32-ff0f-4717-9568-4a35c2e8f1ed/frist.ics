@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c1a03d32-ff0f-4717-9568-4a35c2e8f1ed-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Eingabefrist: CFC 211.5 Maçonnerie-BA
+DESCRIPTION:Auftraggeber: Commune de Grolley-Ponthaux\nEingabefrist: 21.12.
+ 2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c1a
+ 03d32-ff0f-4717-9568-4a35c2e8f1ed/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/c1a03d32-ff0f-4717-9568-4a35c2e8f1ed
+URL:https://auftragsregister.ch/de/auftrag/c1a03d32-ff0f-4717-9568-4a35c2e8
+ f1ed/
+LOCATION:Grolley
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CFC 211.5 Maçonnerie-BA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

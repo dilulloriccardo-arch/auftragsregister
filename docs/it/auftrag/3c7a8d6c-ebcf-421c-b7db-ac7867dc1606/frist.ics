@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c7a8d6c-ebcf-421c-b7db-ac7867dc1606-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Scadenza: Energieverbund Goldach: Energiezentrale
+DESCRIPTION:Ente pubblico: Politische Gemeinde Goldach\, vertreten durch Te
+ chnische Betriebe Goldach\nScadenza: 23.12.2026\, 23:59\nNel registro: htt
+ ps://auftragsregister.ch/it/auftrag/3c7a8d6c-ebcf-421c-b7db-ac7867dc1606/\
+ nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/3c7a8d6c-
+ ebcf-421c-b7db-ac7867dc1606
+URL:https://auftragsregister.ch/it/auftrag/3c7a8d6c-ebcf-421c-b7db-ac7867dc
+ 1606/
+LOCATION:Goldach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Energieverbund Goldach: Energiezentrale
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

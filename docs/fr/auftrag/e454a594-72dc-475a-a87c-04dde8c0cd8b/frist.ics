@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e454a594-72dc-475a-a87c-04dde8c0cd8b-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20270121T150000Z
+SUMMARY:Délai de remise : USZ Campus MITTE 1|2 / CVC 358.04 Cuisine prof
+ essionnelle (équipements de restauration\, niveau A)
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 21.01.2027\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/e454a594-72dc-475a-a87c-04dde8c0cd8b/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/e454a594-72dc-475a-a87c-
+ 04dde8c0cd8b
+URL:https://auftragsregister.ch/fr/auftrag/e454a594-72dc-475a-a87c-04dde8c0
+ cd8b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : USZ Campus MITTE 1|2 / CVC 358.04 Cuisine 
+ professionnelle (équipements de restauration\, niveau A)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

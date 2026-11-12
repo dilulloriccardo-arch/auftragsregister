@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:38b0b51f-a409-4c79-b0fa-7542f29d476b-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261223T150000Z
+SUMMARY:Submission deadline: Gesamtsanierung (technische Sanierung) "Freidb
+ ad-Seebad" Spiez - Generalplanerausschreibung
+DESCRIPTION:Public buyer: Gemeinde Spiez (Panorama AG)\nSubmission deadline
+ : 23 Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/38b0b51f-a409-4c79-b0fa-7542f29d476b/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/38b0b51f-a409-4c79-b0fa-7542f29d476b
+URL:https://auftragsregister.ch/en/auftrag/38b0b51f-a409-4c79-b0fa-7542f29d
+ 476b/
+LOCATION:Spiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gesamtsanierung (technische Sanierung) "Fr
+ eidbad-Seebad" Spiez - Generalplanerausschreibung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

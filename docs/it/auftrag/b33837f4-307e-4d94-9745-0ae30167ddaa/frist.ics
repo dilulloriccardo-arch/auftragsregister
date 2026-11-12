@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b33837f4-307e-4d94-9745-0ae30167ddaa-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Scadenza: Centro Anziani Balerna - 06 CCC 244 - Opere di ventilazio
+ ne
+DESCRIPTION:Ente pubblico: Comune di Balerna\nScadenza: 22.12.2026\, 10:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/b33837f4-307e-4d94-9
+ 745-0ae30167ddaa/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/b33837f4-307e-4d94-9745-0ae30167ddaa
+URL:https://auftragsregister.ch/it/auftrag/b33837f4-307e-4d94-9745-0ae30167
+ ddaa/
+LOCATION:Balerna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Centro Anziani Balerna - 06 CCC 244 - Opere di ventil
+ azione
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

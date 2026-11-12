@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a0c63bf-3c51-4b3a-92d2-0b037263b0b9-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Eingabefrist: CFC 214 Construction en bois
+DESCRIPTION:Auftraggeber: Commune de Grolley-Ponthaux\nEingabefrist: 21.12.
+ 2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3a0
+ c63bf-3c51-4b3a-92d2-0b037263b0b9/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/3a0c63bf-3c51-4b3a-92d2-0b037263b0b9
+URL:https://auftragsregister.ch/de/auftrag/3a0c63bf-3c51-4b3a-92d2-0b037263
+ b0b9/
+LOCATION:Grolley
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CFC 214 Construction en bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

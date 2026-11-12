@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f78ef787-22ba-4034-b4e9-b76f80de11ad-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Eingabefrist: Energieverbund Goldach: Verteilnetz
+DESCRIPTION:Auftraggeber: Politische Gemeinde Goldach\, vertreten durch die
+  Technischen Betriebe Goldach\nEingabefrist: 23.12.2026\, 23.59 Uhr\nIm R
+ egister: https://auftragsregister.ch/de/auftrag/f78ef787-22ba-4034-b4e9-b7
+ 6f80de11ad/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/
+ f78ef787-22ba-4034-b4e9-b76f80de11ad
+URL:https://auftragsregister.ch/de/auftrag/f78ef787-22ba-4034-b4e9-b76f80de
+ 11ad/
+LOCATION:Goldach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Energieverbund Goldach: Verteilnetz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

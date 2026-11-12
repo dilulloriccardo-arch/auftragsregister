@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:38b0b51f-a409-4c79-b0fa-7542f29d476b-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261223T150000Z
+SUMMARY:Eingabefrist: Gesamtsanierung (technische Sanierung) "Freidbad-Seeb
+ ad" Spiez - Generalplanerausschreibung
+DESCRIPTION:Auftraggeber: Gemeinde Spiez (Panorama AG)\nEingabefrist: 23.12
+ .2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/38
+ b0b51f-a409-4c79-b0fa-7542f29d476b/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/38b0b51f-a409-4c79-b0fa-7542f29d476b
+URL:https://auftragsregister.ch/de/auftrag/38b0b51f-a409-4c79-b0fa-7542f29d
+ 476b/
+LOCATION:Spiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamtsanierung (technische Sanierung) "Freidbad-
+ Seebad" Spiez - Generalplanerausschreibung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

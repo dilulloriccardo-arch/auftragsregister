@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62a1ffbd-8a0e-472b-8135-03abc61ba380-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:1
+DTSTART:20261222T225900Z
+SUMMARY:Eingabefrist: Common Data Environment (CDE) für Bauprojekte der ET
+ H Zürich
+DESCRIPTION:Auftraggeber: ETH Zürich - Abt. Procurement Services VPIN\nEin
+ gabefrist: 22.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/62a1ffbd-8a0e-472b-8135-03abc61ba380/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/62a1ffbd-8a0e-472b-8135-03abc61ba3
+ 80
+URL:https://auftragsregister.ch/de/auftrag/62a1ffbd-8a0e-472b-8135-03abc61b
+ a380/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Common Data Environment (CDE) für Bauprojekte de
+ r ETH Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c1ec4de-6d38-4ec7-92d2-5895a157bd81-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270429
+SUMMARY:Scadenza: Beschaffung Neue Flotte 2032
+DESCRIPTION:Ente pubblico: BLS AG - Finance & SCM - Strategische Beschaffun
+ g\nScadenza: 28.04.2027\nNel registro: https://auftragsregister.ch/it/auft
+ rag/4c1ec4de-6d38-4ec7-92d2-5895a157bd81/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/4c1ec4de-6d38-4ec7-92d2-5895a157bd81
+URL:https://auftragsregister.ch/it/auftrag/4c1ec4de-6d38-4ec7-92d2-5895a157
+ bd81/
+LOCATION:Spiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung Neue Flotte 2032
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

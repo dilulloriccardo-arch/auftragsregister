@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c1ec4de-6d38-4ec7-92d2-5895a157bd81-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270429
+SUMMARY:Délai de remise : Acquisition d’une nouvelle flotte 2032
+DESCRIPTION:Acheteur public : BLS AG - Finance & SCM - Strategische Besch
+ affung\nDélai de remise : 28.04.2027\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/4c1ec4de-6d38-4ec7-92d2-5895a157bd81/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/4c1ec4de-6d38-4e
+ c7-92d2-5895a157bd81
+URL:https://auftragsregister.ch/fr/auftrag/4c1ec4de-6d38-4ec7-92d2-5895a157
+ bd81/
+LOCATION:Spiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition d’une nouvelle flotte 2032
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

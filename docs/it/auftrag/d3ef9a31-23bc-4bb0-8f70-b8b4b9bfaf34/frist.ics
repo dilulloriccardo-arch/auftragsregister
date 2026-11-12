@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3ef9a31-23bc-4bb0-8f70-b8b4b9bfaf34-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261221T100000Z
+SUMMARY:Scadenza: Ville de Nyon - Végétalisation de la Route de Divonne
+DESCRIPTION:Ente pubblico: Service des infrastructures de la Ville de Nyon 
+ (Bureau de paysage Profil Paysage)\nScadenza: 21.12.2026\, 11:00\nNel regi
+ stro: https://auftragsregister.ch/it/auftrag/d3ef9a31-23bc-4bb0-8f70-b8b4b
+ 9bfaf34/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/
+ d3ef9a31-23bc-4bb0-8f70-b8b4b9bfaf34
+URL:https://auftragsregister.ch/it/auftrag/d3ef9a31-23bc-4bb0-8f70-b8b4b9bf
+ af34/
+LOCATION:Nyon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ville de Nyon - Végétalisation de la Route de Divon
+ ne
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

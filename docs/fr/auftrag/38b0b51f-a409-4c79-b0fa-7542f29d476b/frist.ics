@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:38b0b51f-a409-4c79-b0fa-7542f29d476b-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261223T150000Z
+SUMMARY:Délai de remise : Rénovation complète (rénovation technique) 
+ de la « Freidbad-Seebad » de Spiez – Mandataire général
+DESCRIPTION:Acheteur public : Gemeinde Spiez (Panorama AG)\nDélai de rem
+ ise : 23.12.2026\, 16 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/38b0b51f-a409-4c79-b0fa-7542f29d476b/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/38b0b51f-a409-4c79-b0fa
+ -7542f29d476b
+URL:https://auftragsregister.ch/fr/auftrag/38b0b51f-a409-4c79-b0fa-7542f29d
+ 476b/
+LOCATION:Spiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation complète (rénovation techniq
+ ue) de la « Freidbad-Seebad » de Spiez – Mandataire général
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

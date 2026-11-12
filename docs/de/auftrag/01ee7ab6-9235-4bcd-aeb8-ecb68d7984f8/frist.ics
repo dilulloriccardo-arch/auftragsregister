@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:01ee7ab6-9235-4bcd-aeb8-ecb68d7984f8-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Eingabefrist: Schnabelsbergstrasse
+DESCRIPTION:Auftraggeber: Bezirk Einsiedeln Ressort Infrastruktur\nEingabef
+ rist: 09.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/01ee7ab6-9235-4bcd-aeb8-ecb68d7984f8/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/01ee7ab6-9235-4bcd-aeb8-ecb68d7984f8
+URL:https://auftragsregister.ch/de/auftrag/01ee7ab6-9235-4bcd-aeb8-ecb68d79
+ 84f8/
+LOCATION:Einsiedeln
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schnabelsbergstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

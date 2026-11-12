@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a535d22e-7c81-456e-a30f-bd6df3d593f7-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Eingabefrist: Vermarktung Werbeinventar PostAuto
+DESCRIPTION:Auftraggeber: Schweizerische Post AG - Fachstelle Beschaffung\n
+ Eingabefrist: 11.01.2027\, 12.00 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/a535d22e-7c81-456e-a30f-bd6df3d593f7/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/a535d22e-7c81-456e-a30f-bd6df3d
+ 593f7
+URL:https://auftragsregister.ch/de/auftrag/a535d22e-7c81-456e-a30f-bd6df3d5
+ 93f7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Vermarktung Werbeinventar PostAuto
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

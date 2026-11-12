@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f78ef787-22ba-4034-b4e9-b76f80de11ad-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Scadenza: Energieverbund Goldach: Verteilnetz
+DESCRIPTION:Ente pubblico: Politische Gemeinde Goldach\, vertreten durch di
+ e Technischen Betriebe Goldach\nScadenza: 23.12.2026\, 23:59\nNel registro
+ : https://auftragsregister.ch/it/auftrag/f78ef787-22ba-4034-b4e9-b76f80de1
+ 1ad/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/f78e
+ f787-22ba-4034-b4e9-b76f80de11ad
+URL:https://auftragsregister.ch/it/auftrag/f78ef787-22ba-4034-b4e9-b76f80de
+ 11ad/
+LOCATION:Goldach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Energieverbund Goldach: Verteilnetz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

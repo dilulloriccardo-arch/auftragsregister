@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2c3fbec0-8c7b-45d5-b48f-433a3e9d18fb-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261210T070000Z
+SUMMARY:Délai de remise : Neubau Wasserversorgung Lehn\, Baumeister unte
+ re Druckzone
+DESCRIPTION:Acheteur public : Wasserversorgung Lehn (Tagmar AG)\nDélai d
+ e remise : 10.12.2026\, 8 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/2c3fbec0-8c7b-45d5-b48f-433a3e9d18fb/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/2c3fbec0-8c7b-45d5-
+ b48f-433a3e9d18fb
+URL:https://auftragsregister.ch/fr/auftrag/2c3fbec0-8c7b-45d5-b48f-433a3e9d
+ 18fb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Wasserversorgung Lehn\, Baumeister 
+ untere Druckzone
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

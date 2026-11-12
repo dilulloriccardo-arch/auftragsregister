@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90e013f6-2c9d-45a3-ae19-5721d1429959-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Submission deadline: Marché 4-10 Hôtel Fraser - Lot CVC
+DESCRIPTION:Public buyer: Services Industriels de Genève (SIG) Direction P
+ rojets Industriels et Solutions Digitales\nSubmission deadline: 7 Dec 20
+ 26\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/90e013
+ f6-2c9d-45a3-ae19-5721d1429959/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/90e013f6-2c9d-45a3-ae19-5721d1429959
+URL:https://auftragsregister.ch/en/auftrag/90e013f6-2c9d-45a3-ae19-5721d142
+ 9959/
+LOCATION:Rue du Marché- 4-10
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Marché 4-10 Hôtel Fraser - Lot CVC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

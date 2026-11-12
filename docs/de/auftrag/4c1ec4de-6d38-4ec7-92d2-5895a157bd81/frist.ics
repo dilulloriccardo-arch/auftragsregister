@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c1ec4de-6d38-4ec7-92d2-5895a157bd81-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270428
+DTEND;VALUE=DATE:20270429
+SUMMARY:Eingabefrist: Beschaffung Neue Flotte 2032
+DESCRIPTION:Auftraggeber: BLS AG - Finance & SCM - Strategische Beschaffung
+ \nEingabefrist: 28.04.2027\nIm Register: https://auftragsregister.ch/de/au
+ ftrag/4c1ec4de-6d38-4ec7-92d2-5895a157bd81/\nAmtliche Publikation: https:/
+ /www.simap.ch/de/project-detail/4c1ec4de-6d38-4ec7-92d2-5895a157bd81
+URL:https://auftragsregister.ch/de/auftrag/4c1ec4de-6d38-4ec7-92d2-5895a157
+ bd81/
+LOCATION:Spiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung Neue Flotte 2032
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

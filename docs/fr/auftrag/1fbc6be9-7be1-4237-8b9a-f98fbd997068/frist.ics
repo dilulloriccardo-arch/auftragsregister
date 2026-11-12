@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1fbc6be9-7be1-4237-8b9a-f98fbd997068-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Délai de remise : Maison de retraite Balerna - 05 CCC 240/250 - 
+ Ouvrage de chauffage\, de refroidissement et d’installations sanitaires.
+DESCRIPTION:Acheteur public : Comune di Balerna\nDélai de remise : 22.
+ 12.2026\, 10 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/1fbc6be9-7be1-4237-8b9a-f98fbd997068/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/1fbc6be9-7be1-4237-8b9a-f98fbd9970
+ 68
+URL:https://auftragsregister.ch/fr/auftrag/1fbc6be9-7be1-4237-8b9a-f98fbd99
+ 7068/
+LOCATION:Balerna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Maison de retraite Balerna - 05 CCC 240/25
+ 0 - Ouvrage de chauffage\, de refroidissement et d’installations sanitai
+ res.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

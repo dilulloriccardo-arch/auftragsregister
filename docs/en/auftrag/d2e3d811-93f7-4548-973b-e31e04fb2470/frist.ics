@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2e3d811-93f7-4548-973b-e31e04fb2470-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Submission deadline: Maison de retraite Balerna - 04 CCC 23 - Trava
+ ux d'électricité
+DESCRIPTION:Public buyer: Comune di Balerna\nSubmission deadline: 22 Dec 
+ 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag/d2e3
+ d811-93f7-4548-973b-e31e04fb2470/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/d2e3d811-93f7-4548-973b-e31e04fb2470
+URL:https://auftragsregister.ch/en/auftrag/d2e3d811-93f7-4548-973b-e31e04fb
+ 2470/
+LOCATION:Balerna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Maison de retraite Balerna - 04 CCC 23 - T
+ ravaux d'électricité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

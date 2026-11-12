@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbbfd8fa-1da1-4347-a5af-1734fd97895d-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Eingabefrist: EPFL - Contrats-cadres mandataires: Architectes et Di
+ rection de projets\, Direction de Travaux\, Coordination Technique
+DESCRIPTION:Auftraggeber: EPFL VPF ACHATS\nEingabefrist: 15.01.2027\, 16.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/bbbfd8fa-1da1-4
+ 347-a5af-1734fd97895d/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/bbbfd8fa-1da1-4347-a5af-1734fd97895d
+URL:https://auftragsregister.ch/de/auftrag/bbbfd8fa-1da1-4347-a5af-1734fd97
+ 895d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: EPFL - Contrats-cadres mandataires: Architectes e
+ t Direction de projets\, Direction de Travaux\, Coordination Technique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

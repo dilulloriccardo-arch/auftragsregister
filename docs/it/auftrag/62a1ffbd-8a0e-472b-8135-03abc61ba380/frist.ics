@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62a1ffbd-8a0e-472b-8135-03abc61ba380-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:1
+DTSTART:20261222T225900Z
+SUMMARY:Scadenza: Common Data Environment (CDE) per i progetti edilizi del 
+ Politecnico federale di Zurigo (ETH)
+DESCRIPTION:Ente pubblico: ETH Zürich - Abt. Procurement Services VPIN\nSc
+ adenza: 22.12.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/a
+ uftrag/62a1ffbd-8a0e-472b-8135-03abc61ba380/\nPubblicazione ufficiale: htt
+ ps://www.simap.ch/it/project-detail/62a1ffbd-8a0e-472b-8135-03abc61ba380
+URL:https://auftragsregister.ch/it/auftrag/62a1ffbd-8a0e-472b-8135-03abc61b
+ a380/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Common Data Environment (CDE) per i progetti edilizi 
+ del Politecnico federale di Zurigo (ETH)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

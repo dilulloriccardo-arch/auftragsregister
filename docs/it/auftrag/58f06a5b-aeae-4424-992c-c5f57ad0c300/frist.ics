@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:58f06a5b-aeae-4424-992c-c5f57ad0c300-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20270121T150000Z
+SUMMARY:Scadenza: 26131 - Prestazioni d’onorario per gruppo mandatario in
+ terdisciplinare occorrenti al risanamento della Scuola media Locarno 1 nel
+  Comune di Locarno
+DESCRIPTION:Ente pubblico: Sezione della logistica - Servizio appalti\nScad
+ enza: 21.01.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/58f06a5b-aeae-4424-992c-c5f57ad0c300/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/58f06a5b-aeae-4424-992c-c5f57ad0c300
+URL:https://auftragsregister.ch/it/auftrag/58f06a5b-aeae-4424-992c-c5f57ad0
+ c300/
+LOCATION:Locarno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 26131 - Prestazioni d’onorario per gruppo mandatari
+ o interdisciplinare occorrenti al risanamento della Scuola media Locarno 1
+  nel Comune di Locarno
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

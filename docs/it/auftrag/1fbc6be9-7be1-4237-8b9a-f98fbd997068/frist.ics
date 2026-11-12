@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1fbc6be9-7be1-4237-8b9a-f98fbd997068-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Scadenza: Centro Anziani Balerna - 05 CCC 240/250 - Opere di riscal
+ damento\, raffrescamento e sanitario
+DESCRIPTION:Ente pubblico: Comune di Balerna\nScadenza: 22.12.2026\, 10:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/1fbc6be9-7be1-4237-8
+ b9a-f98fbd997068/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/1fbc6be9-7be1-4237-8b9a-f98fbd997068
+URL:https://auftragsregister.ch/it/auftrag/1fbc6be9-7be1-4237-8b9a-f98fbd99
+ 7068/
+LOCATION:Balerna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Centro Anziani Balerna - 05 CCC 240/250 - Opere di ri
+ scaldamento\, raffrescamento e sanitario
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

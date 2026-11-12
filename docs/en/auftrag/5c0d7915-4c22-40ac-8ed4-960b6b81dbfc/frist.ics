@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5c0d7915-4c22-40ac-8ed4-960b6b81dbfc-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261222T110000Z
+SUMMARY:Submission deadline: 25-08 Collège latin NE - Assainissement et r
+ éaffectation / CFC 358 Agencement de cuisine professionnelle
+DESCRIPTION:Public buyer: Ville de Neuchâtel - Service du patrimoine bâti
+ \nSubmission deadline: 22 Dec 2026\, 12:00\nIn the register: https://auf
+ tragsregister.ch/en/auftrag/5c0d7915-4c22-40ac-8ed4-960b6b81dbfc/\nOfficia
+ l publication: https://www.simap.ch/en/project-detail/5c0d7915-4c22-40ac-8
+ ed4-960b6b81dbfc
+URL:https://auftragsregister.ch/en/auftrag/5c0d7915-4c22-40ac-8ed4-960b6b81
+ dbfc/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 25-08 Collège latin NE - Assainissement e
+ t réaffectation / CFC 358 Agencement de cuisine professionnelle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

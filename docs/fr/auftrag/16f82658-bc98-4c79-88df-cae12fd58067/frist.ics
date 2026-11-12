@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16f82658-bc98-4c79-88df-cae12fd58067-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Délai de remise : Neubau Infrastrukturgebäude Marktplatz Buchs
+DESCRIPTION:Acheteur public : Stadt Buchs SG\, Bau und Infrastruktur\nDé
+ lai de remise : 02.12.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/16f82658-bc98-4c79-88df-cae12fd58067/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/16f82658-bc98
+ -4c79-88df-cae12fd58067
+URL:https://auftragsregister.ch/fr/auftrag/16f82658-bc98-4c79-88df-cae12fd5
+ 8067/
+LOCATION:Buchs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Infrastrukturgebäude Marktplatz Bu
+ chs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

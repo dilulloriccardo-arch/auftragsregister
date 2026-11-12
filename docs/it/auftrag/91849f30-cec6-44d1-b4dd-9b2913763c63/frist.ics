@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:91849f30-cec6-44d1-b4dd-9b2913763c63-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261223T090000Z
+SUMMARY:Scadenza: Mittenza für Muttenz – Kulturhaus Umnutzung und Sanier
+ ung I BKP 275 Schliessanlagen
+DESCRIPTION:Ente pubblico: Gemeinde Muttenz\nScadenza: 23.12.2026\, 10:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/91849f30-cec6-44d1-b4
+ dd-9b2913763c63/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/91849f30-cec6-44d1-b4dd-9b2913763c63
+URL:https://auftragsregister.ch/it/auftrag/91849f30-cec6-44d1-b4dd-9b291376
+ 3c63/
+LOCATION:Muttenz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Mittenza für Muttenz – Kulturhaus Umnutzung und Sa
+ nierung I BKP 275 Schliessanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

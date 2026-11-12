@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f0e46eb4-4c10-4f27-9dfe-dc3cb9abb98d-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Eingabefrist: Sanierung Billwilerstrasse
+DESCRIPTION:Auftraggeber: Politische Gemeinde Oberbüren\nEingabefrist: 09.
+ 12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ f0e46eb4-4c10-4f27-9dfe-dc3cb9abb98d/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/f0e46eb4-4c10-4f27-9dfe-dc3cb9abb98d
+URL:https://auftragsregister.ch/de/auftrag/f0e46eb4-4c10-4f27-9dfe-dc3cb9ab
+ b98d/
+LOCATION:Oberbüren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Billwilerstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

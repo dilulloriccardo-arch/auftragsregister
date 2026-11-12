@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:56433f15-4353-4887-a6e2-42507a108518-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261208T225900Z
+SUMMARY:Scadenza: Ticketing-Software für Schweizer Kulturhäuser
+DESCRIPTION:Ente pubblico: Schauspielhaus Zürich AG\nScadenza: 08.12.2026\
+ , 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/56433f15-435
+ 3-4887-a6e2-42507a108518/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/56433f15-4353-4887-a6e2-42507a108518
+URL:https://auftragsregister.ch/it/auftrag/56433f15-4353-4887-a6e2-42507a10
+ 8518/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ticketing-Software für Schweizer Kulturhäuser
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

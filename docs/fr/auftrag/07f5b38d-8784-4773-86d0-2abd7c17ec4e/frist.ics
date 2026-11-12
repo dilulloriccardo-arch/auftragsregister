@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07f5b38d-8784-4773-86d0-2abd7c17ec4e-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Délai de remise : CFC 201 Terrassement
+DESCRIPTION:Acheteur public : Commune de Grolley\nDélai de remise : 21
+ .12.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/07f5b38d-8784-4773-86d0-2abd7c17ec4e/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/07f5b38d-8784-4773-86d0-2abd7c17e
+ c4e
+URL:https://auftragsregister.ch/fr/auftrag/07f5b38d-8784-4773-86d0-2abd7c17
+ ec4e/
+LOCATION:Grolley
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFC 201 Terrassement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a2908514-a79f-432a-8325-1079ae5eb6ac-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261214T235900Z
+SUMMARY:Délai de remise : Neubau Infrastrukturgebäude Bruggerhorn St. M
+ argrethen
+DESCRIPTION:Acheteur public : Gemeinde St. Margrethen\nDélai de remise
+  : 15.12.2026\, 0 h 59\nDans le registre : https://auftragsregiste
+ r.ch/fr/auftrag/a2908514-a79f-432a-8325-1079ae5eb6ac/\nPublication officie
+ lle : https://www.simap.ch/fr/project-detail/a2908514-a79f-432a-8325-107
+ 9ae5eb6ac
+URL:https://auftragsregister.ch/fr/auftrag/a2908514-a79f-432a-8325-1079ae5e
+ b6ac/
+LOCATION:St. Margrethen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Infrastrukturgebäude Bruggerhorn S
+ t. Margrethen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

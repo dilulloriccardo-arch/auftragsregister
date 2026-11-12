@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:58f06a5b-aeae-4424-992c-c5f57ad0c300-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20270121T150000Z
+SUMMARY:Délai de remise : 26131 - Prestations rémunérées d’un group
+ ement mandataire interdisciplinaire\, nécessaires à l’assainissement d
+ e l’École secondaire Locarno 1\, sur la Commune de Locarno
+DESCRIPTION:Acheteur public : Sezione della logistica - Servizio appalti\
+ nDélai de remise : 21.01.2027\, 16 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/58f06a5b-aeae-4424-992c-c5f57ad0c300/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/58f06a5b-
+ aeae-4424-992c-c5f57ad0c300
+URL:https://auftragsregister.ch/fr/auftrag/58f06a5b-aeae-4424-992c-c5f57ad0
+ c300/
+LOCATION:Locarno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 26131 - Prestations rémunérées d’un g
+ roupement mandataire interdisciplinaire\, nécessaires à l’assainisseme
+ nt de l’École secondaire Locarno 1\, sur la Commune de Locarno
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

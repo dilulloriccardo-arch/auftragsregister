@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbbfd8fa-1da1-4347-a5af-1734fd97895d-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Submission deadline: EPFL - Contrats-cadres mandataires: Architecte
+ s et Direction de projets\, Direction de Travaux\, Coordination Technique
+DESCRIPTION:Public buyer: EPFL VPF ACHATS\nSubmission deadline: 15 Jan 20
+ 27\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/bbbfd8
+ fa-1da1-4347-a5af-1734fd97895d/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/bbbfd8fa-1da1-4347-a5af-1734fd97895d
+URL:https://auftragsregister.ch/en/auftrag/bbbfd8fa-1da1-4347-a5af-1734fd97
+ 895d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EPFL - Contrats-cadres mandataires: Archit
+ ectes et Direction de projets\, Direction de Travaux\, Coordination Techni
+ que
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

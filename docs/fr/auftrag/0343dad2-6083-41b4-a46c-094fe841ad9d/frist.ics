@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0343dad2-6083-41b4-a46c-094fe841ad9d-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261207T153000Z
+SUMMARY:Délai de remise : Co Colombières Rénovation des salles de spor
+ t et amélioration AEAI des voies de fuite en lien avec les salles de gymn
+ astique: CFC 281.2 Revetements de sols synthétiques
+DESCRIPTION:Acheteur public : Etat de Genève. Office cantonal des bâtim
+ ents (OCBA)\nDélai de remise : 07.12.2026\, 16 h 30\nDans le regist
+ re : https://auftragsregister.ch/fr/auftrag/0343dad2-6083-41b4-a46c-094f
+ e841ad9d/\nPublication officielle : https://www.simap.ch/fr/project-deta
+ il/0343dad2-6083-41b4-a46c-094fe841ad9d
+URL:https://auftragsregister.ch/fr/auftrag/0343dad2-6083-41b4-a46c-094fe841
+ ad9d/
+LOCATION:Versoix
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Co Colombières Rénovation des salles de 
+ sport et amélioration AEAI des voies de fuite en lien avec les salles de 
+ gymnastique: CFC 281.2 Revetements de sols synthétiques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

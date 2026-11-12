@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f0e46eb4-4c10-4f27-9dfe-dc3cb9abb98d-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Scadenza: Sanierung Billwilerstrasse
+DESCRIPTION:Ente pubblico: Politische Gemeinde Oberbüren\nScadenza: 09.12.
+ 2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/f0e46eb
+ 4-4c10-4f27-9dfe-dc3cb9abb98d/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/f0e46eb4-4c10-4f27-9dfe-dc3cb9abb98d
+URL:https://auftragsregister.ch/it/auftrag/f0e46eb4-4c10-4f27-9dfe-dc3cb9ab
+ b98d/
+LOCATION:Oberbüren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Billwilerstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

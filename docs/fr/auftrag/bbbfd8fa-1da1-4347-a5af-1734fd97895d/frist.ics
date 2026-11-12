@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbbfd8fa-1da1-4347-a5af-1734fd97895d-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Délai de remise : EPFL - Contrats-cadres mandataires: Architecte
+ s et Direction de projets\, Direction de Travaux\, Coordination Technique
+DESCRIPTION:Acheteur public : EPFL VPF ACHATS\nDélai de remise : 15.01
+ .2027\, 16 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/bbbfd8fa-1da1-4347-a5af-1734fd97895d/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/bbbfd8fa-1da1-4347-a5af-1734fd97895d
+URL:https://auftragsregister.ch/fr/auftrag/bbbfd8fa-1da1-4347-a5af-1734fd97
+ 895d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EPFL - Contrats-cadres mandataires: Archit
+ ectes et Direction de projets\, Direction de Travaux\, Coordination Techni
+ que
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

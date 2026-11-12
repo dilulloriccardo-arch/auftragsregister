@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:699b3d87-0897-4419-9046-1c304a0e00a0-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261210T130028Z
+SUMMARY:Délai de remise : Mehrgenerationenhaus am Chileweg\, Lendikerstr
+ asse 7\, 8484 Weisslingen - BKP Nr. 222 Spengler- und Flachdacharbeiten (O
+ V)
+DESCRIPTION:Acheteur public : Reformierte Kirchgemeinde Weisslingen (BAUS
+ TUDIO GmbH)\nDélai de remise : 10.12.2026\, 14 h 00\nDans le regist
+ re : https://auftragsregister.ch/fr/auftrag/699b3d87-0897-4419-9046-1c30
+ 4a0e00a0/\nPublication officielle : https://www.simap.ch/fr/project-deta
+ il/699b3d87-0897-4419-9046-1c304a0e00a0
+URL:https://auftragsregister.ch/fr/auftrag/699b3d87-0897-4419-9046-1c304a0e
+ 00a0/
+LOCATION:Weisslingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mehrgenerationenhaus am Chileweg\, Lendike
+ rstrasse 7\, 8484 Weisslingen - BKP Nr. 222 Spengler- und Flachdacharbeite
+ n (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

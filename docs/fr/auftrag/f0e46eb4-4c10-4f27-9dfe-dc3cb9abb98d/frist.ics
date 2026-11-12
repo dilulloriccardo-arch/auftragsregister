@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f0e46eb4-4c10-4f27-9dfe-dc3cb9abb98d-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261209T150000Z
+SUMMARY:Délai de remise : Sanierung Billwilerstrasse
+DESCRIPTION:Acheteur public : Politische Gemeinde Oberbüren\nDélai de r
+ emise : 09.12.2026\, 16 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/f0e46eb4-4c10-4f27-9dfe-dc3cb9abb98d/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/f0e46eb4-4c10-4f27-9d
+ fe-dc3cb9abb98d
+URL:https://auftragsregister.ch/fr/auftrag/f0e46eb4-4c10-4f27-9dfe-dc3cb9ab
+ b98d/
+LOCATION:Oberbüren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Billwilerstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

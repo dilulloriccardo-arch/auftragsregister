@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2c3fbec0-8c7b-45d5-b48f-433a3e9d18fb-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261210T070000Z
+SUMMARY:Scadenza: Neubau Wasserversorgung Lehn\, Baumeister untere Druckzon
+ e
+DESCRIPTION:Ente pubblico: Wasserversorgung Lehn (Tagmar AG)\nScadenza: 10.
+ 12.2026\, 08:00\nNel registro: https://auftragsregister.ch/it/auftrag/2c3f
+ bec0-8c7b-45d5-b48f-433a3e9d18fb/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/2c3fbec0-8c7b-45d5-b48f-433a3e9d18fb
+URL:https://auftragsregister.ch/it/auftrag/2c3fbec0-8c7b-45d5-b48f-433a3e9d
+ 18fb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Wasserversorgung Lehn\, Baumeister untere Druc
+ kzone
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

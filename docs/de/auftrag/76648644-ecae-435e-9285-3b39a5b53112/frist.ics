@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76648644-ecae-435e-9285-3b39a5b53112-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261222T110000Z
+SUMMARY:Eingabefrist: 25-08 Collège latin NE - Assainissement et réaffect
+ ation CFC 283.5 Faux-plafonds en toile tendue
+DESCRIPTION:Auftraggeber: Ville de Neuchâtel - Service du patrimoine bâti
+ \nEingabefrist: 22.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregi
+ ster.ch/de/auftrag/76648644-ecae-435e-9285-3b39a5b53112/\nAmtliche Publika
+ tion: https://www.simap.ch/de/project-detail/76648644-ecae-435e-9285-3b39a
+ 5b53112
+URL:https://auftragsregister.ch/de/auftrag/76648644-ecae-435e-9285-3b39a5b5
+ 3112/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 25-08 Collège latin NE - Assainissement et réaf
+ fectation CFC 283.5 Faux-plafonds en toile tendue
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

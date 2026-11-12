@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a535d22e-7c81-456e-a30f-bd6df3d593f7-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Délai de remise : Commercialisation de l’inventaire publicitai
+ re CarPostal
+DESCRIPTION:Acheteur public : Schweizerische Post AG - Fachstelle Beschaf
+ fung\nDélai de remise : 11.01.2027\, 12 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/a535d22e-7c81-456e-a30f-bd6df3d593f
+ 7/\nPublication officielle : https://www.simap.ch/fr/project-detail/a535
+ d22e-7c81-456e-a30f-bd6df3d593f7
+URL:https://auftragsregister.ch/fr/auftrag/a535d22e-7c81-456e-a30f-bd6df3d5
+ 93f7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Commercialisation de l’inventaire public
+ itaire CarPostal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

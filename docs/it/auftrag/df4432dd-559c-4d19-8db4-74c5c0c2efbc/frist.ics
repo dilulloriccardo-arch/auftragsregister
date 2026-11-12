@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:df4432dd-559c-4d19-8db4-74c5c0c2efbc-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261209T225500Z
+SUMMARY:Scadenza: Strassensanierung H19/H6 Gletsch
+DESCRIPTION:Ente pubblico: Dienststelle für Mobilität - Kreis 1 Oberwalli
+ s\nScadenza: 09.12.2026\, 23:55\nNel registro: https://auftragsregister.ch
+ /it/auftrag/df4432dd-559c-4d19-8db4-74c5c0c2efbc/\nPubblicazione ufficiale
+ : https://www.simap.ch/it/project-detail/df4432dd-559c-4d19-8db4-74c5c0c2e
+ fbc
+URL:https://auftragsregister.ch/it/auftrag/df4432dd-559c-4d19-8db4-74c5c0c2
+ efbc/
+LOCATION:Oberwald (Gemeinde Obergoms)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Strassensanierung H19/H6 Gletsch
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

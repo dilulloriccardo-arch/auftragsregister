@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a535d22e-7c81-456e-a30f-bd6df3d593f7-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Submission deadline: Vermarktung Werbeinventar PostAuto
+DESCRIPTION:Public buyer: Schweizerische Post AG - Fachstelle Beschaffung\n
+ Submission deadline: 11 Jan 2027\, 12:00\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/a535d22e-7c81-456e-a30f-bd6df3d593f7/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/a535d22e-7c81-456e-a30
+ f-bd6df3d593f7
+URL:https://auftragsregister.ch/en/auftrag/a535d22e-7c81-456e-a30f-bd6df3d5
+ 93f7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Vermarktung Werbeinventar PostAuto
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

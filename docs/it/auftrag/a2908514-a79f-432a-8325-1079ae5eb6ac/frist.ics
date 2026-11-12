@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a2908514-a79f-432a-8325-1079ae5eb6ac-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261214T235900Z
+SUMMARY:Scadenza: Neubau Infrastrukturgebäude Bruggerhorn St. Margrethen
+DESCRIPTION:Ente pubblico: Gemeinde St. Margrethen\nScadenza: 15.12.2026\, 
+ 00:59\nNel registro: https://auftragsregister.ch/it/auftrag/a2908514-a79f-
+ 432a-8325-1079ae5eb6ac/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/a2908514-a79f-432a-8325-1079ae5eb6ac
+URL:https://auftragsregister.ch/it/auftrag/a2908514-a79f-432a-8325-1079ae5e
+ b6ac/
+LOCATION:St. Margrethen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Infrastrukturgebäude Bruggerhorn St. Margreth
+ en
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

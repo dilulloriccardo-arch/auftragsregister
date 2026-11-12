@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbbfd8fa-1da1-4347-a5af-1734fd97895d-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Scadenza: EPFL - Contrats-cadres mandataires: Architectes et Direct
+ ion de projets\, Direction de Travaux\, Coordination Technique
+DESCRIPTION:Ente pubblico: EPFL VPF ACHATS\nScadenza: 15.01.2027\, 16:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/bbbfd8fa-1da1-4347-a5a
+ f-1734fd97895d/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/bbbfd8fa-1da1-4347-a5af-1734fd97895d
+URL:https://auftragsregister.ch/it/auftrag/bbbfd8fa-1da1-4347-a5af-1734fd97
+ 895d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EPFL - Contrats-cadres mandataires: Architectes et Di
+ rection de projets\, Direction de Travaux\, Coordination Technique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

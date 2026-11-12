@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:699b3d87-0897-4419-9046-1c304a0e00a0-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261210T130028Z
+SUMMARY:Eingabefrist: Mehrgenerationenhaus am Chileweg\, Lendikerstrasse 7\
+ , 8484 Weisslingen - BKP Nr. 222 Spengler- und Flachdacharbeiten (OV)
+DESCRIPTION:Auftraggeber: Reformierte Kirchgemeinde Weisslingen (BAUSTUDIO 
+ GmbH)\nEingabefrist: 10.12.2026\, 14.00 Uhr\nIm Register: https://auftrag
+ sregister.ch/de/auftrag/699b3d87-0897-4419-9046-1c304a0e00a0/\nAmtliche Pu
+ blikation: https://www.simap.ch/de/project-detail/699b3d87-0897-4419-9046-
+ 1c304a0e00a0
+URL:https://auftragsregister.ch/de/auftrag/699b3d87-0897-4419-9046-1c304a0e
+ 00a0/
+LOCATION:Weisslingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Mehrgenerationenhaus am Chileweg\, Lendikerstrass
+ e 7\, 8484 Weisslingen - BKP Nr. 222 Spengler- und Flachdacharbeiten (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:91849f30-cec6-44d1-b4dd-9b2913763c63-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261223T090000Z
+SUMMARY:Délai de remise : Mittenza für Muttenz - maison de la culture R
+ éaménagement et rénovation I BKP 275 Systèmes de fermeture
+DESCRIPTION:Acheteur public : Gemeinde Muttenz\nDélai de remise : 23.1
+ 2.2026\, 10 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/91849f30-cec6-44d1-b4dd-9b2913763c63/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/91849f30-cec6-44d1-b4dd-9b2913763c6
+ 3
+URL:https://auftragsregister.ch/fr/auftrag/91849f30-cec6-44d1-b4dd-9b291376
+ 3c63/
+LOCATION:Muttenz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mittenza für Muttenz - maison de la cultu
+ re Réaménagement et rénovation I BKP 275 Systèmes de fermeture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

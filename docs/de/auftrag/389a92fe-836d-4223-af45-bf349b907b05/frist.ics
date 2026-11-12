@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:389a92fe-836d-4223-af45-bf349b907b05-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Eingabefrist: Maison de retraite Balerna - 05 CCC 240/250 - Travaux
+  de terrassement et Entreprise de construction
+DESCRIPTION:Auftraggeber: Comune di Balerna\nEingabefrist: 22.12.2026\, 10.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/389a92fe-836d
+ -4223-af45-bf349b907b05/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/389a92fe-836d-4223-af45-bf349b907b05
+URL:https://auftragsregister.ch/de/auftrag/389a92fe-836d-4223-af45-bf349b90
+ 7b05/
+LOCATION:Balerna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Maison de retraite Balerna - 05 CCC 240/250 - Tra
+ vaux de terrassement et Entreprise de construction
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

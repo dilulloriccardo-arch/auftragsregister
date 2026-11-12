@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2c3fbec0-8c7b-45d5-b48f-433a3e9d18fb-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261210T070000Z
+SUMMARY:Eingabefrist: Neubau Wasserversorgung Lehn\, Baumeister untere Druc
+ kzone
+DESCRIPTION:Auftraggeber: Wasserversorgung Lehn (Tagmar AG)\nEingabefrist: 
+ 10.12.2026\, 8.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/2c3fbec0-8c7b-45d5-b48f-433a3e9d18fb/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/2c3fbec0-8c7b-45d5-b48f-433a3e9d18fb
+URL:https://auftragsregister.ch/de/auftrag/2c3fbec0-8c7b-45d5-b48f-433a3e9d
+ 18fb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Wasserversorgung Lehn\, Baumeister untere 
+ Druckzone
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

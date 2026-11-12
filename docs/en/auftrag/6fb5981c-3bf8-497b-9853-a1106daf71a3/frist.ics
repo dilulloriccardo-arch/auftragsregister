@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6fb5981c-3bf8-497b-9853-a1106daf71a3-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261209T130000Z
+SUMMARY:Submission deadline: ARL SA - NUOVO STABILE AUTORIMESSA MAPP. 882 C
+ ADRO - OPERE DA IMPIANTO ELETTRICO
+DESCRIPTION:Public buyer: ARL SA\nSubmission deadline: 9 Dec 2026\, 14:00
+ \nIn the register: https://auftragsregister.ch/en/auftrag/6fb5981c-3bf8-49
+ 7b-9853-a1106daf71a3/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/6fb5981c-3bf8-497b-9853-a1106daf71a3
+URL:https://auftragsregister.ch/en/auftrag/6fb5981c-3bf8-497b-9853-a1106daf
+ 71a3/
+LOCATION:Lugano - Cadro
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ARL SA - NUOVO STABILE AUTORIMESSA MAPP. 8
+ 82 CADRO - OPERE DA IMPIANTO ELETTRICO
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

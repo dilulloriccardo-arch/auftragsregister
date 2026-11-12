@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:666e8b82-b6ef-48c7-bf84-b482b9646cae-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261204T225900Z
+SUMMARY:Submission deadline: 740.00 Schanfiggerstrasse\, Ableitung Deponie 
+ Egga (Valmischein)
+DESCRIPTION:Public buyer: Tiefbauamt Graubünden\nSubmission deadline: 4 D
+ ec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 666e8b82-b6ef-48c7-bf84-b482b9646cae/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/666e8b82-b6ef-48c7-bf84-b482b9646cae
+URL:https://auftragsregister.ch/en/auftrag/666e8b82-b6ef-48c7-bf84-b482b964
+ 6cae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 740.00 Schanfiggerstrasse\, Ableitung Depo
+ nie Egga (Valmischein)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

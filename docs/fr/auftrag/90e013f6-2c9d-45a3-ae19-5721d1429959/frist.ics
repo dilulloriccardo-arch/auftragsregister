@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90e013f6-2c9d-45a3-ae19-5721d1429959-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Délai de remise : Marché 4-10 Hôtel Fraser - Lot CVC
+DESCRIPTION:Acheteur public : Services Industriels de Genève (SIG) Direc
+ tion Projets Industriels et Solutions Digitales\nDélai de remise : 07.1
+ 2.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/90e013f6-2c9d-45a3-ae19-5721d1429959/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/90e013f6-2c9d-45a3-ae19-5721d142995
+ 9
+URL:https://auftragsregister.ch/fr/auftrag/90e013f6-2c9d-45a3-ae19-5721d142
+ 9959/
+LOCATION:Rue du Marché- 4-10
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Marché 4-10 Hôtel Fraser - Lot CVC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

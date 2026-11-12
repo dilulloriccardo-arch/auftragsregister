@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:22b565c3-5c66-413c-89bd-213f467c9afd-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261223T160000Z
+SUMMARY:Scadenza: EMS Riond-Vert - Prestations de services liées à la con
+ struction - CFC 293 Ingénieurs en électricité
+DESCRIPTION:Ente pubblico: EMS Riond-Vert SA (Itten+Brechbühl SA)\nScadenz
+ a: 23.12.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/22b565c3-5c66-413c-89bd-213f467c9afd/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/22b565c3-5c66-413c-89bd-213f467c9afd
+URL:https://auftragsregister.ch/it/auftrag/22b565c3-5c66-413c-89bd-213f467c
+ 9afd/
+LOCATION:Vouvry
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EMS Riond-Vert - Prestations de services liées à la
+  construction - CFC 293 Ingénieurs en électricité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

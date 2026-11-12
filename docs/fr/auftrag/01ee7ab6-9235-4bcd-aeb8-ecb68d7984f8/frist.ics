@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:01ee7ab6-9235-4bcd-aeb8-ecb68d7984f8-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Délai de remise : Schnabelsbergstrasse
+DESCRIPTION:Acheteur public : Bezirk Einsiedeln Ressort Infrastruktur\nD
+ élai de remise : 09.12.2026\, 12 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/01ee7ab6-9235-4bcd-aeb8-ecb68d7984f8/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/01ee7ab6-92
+ 35-4bcd-aeb8-ecb68d7984f8
+URL:https://auftragsregister.ch/fr/auftrag/01ee7ab6-9235-4bcd-aeb8-ecb68d79
+ 84f8/
+LOCATION:Einsiedeln
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Schnabelsbergstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

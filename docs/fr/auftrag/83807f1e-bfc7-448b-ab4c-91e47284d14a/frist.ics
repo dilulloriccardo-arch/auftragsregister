@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83807f1e-bfc7-448b-ab4c-91e47284d14a-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261222T130000Z
+SUMMARY:Délai de remise : ARL SA – NOUVEAU BÂTIMENT DESTINÉ AU GARAG
+ E\, PARCELLE N° 882\, CADRO – ÉLÉMENTS PRÉFABRIQUÉS EN BÉTON
+DESCRIPTION:Acheteur public : ARL SA\nDélai de remise : 22.12.2026\, 1
+ 4 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/83
+ 807f1e-bfc7-448b-ab4c-91e47284d14a/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/83807f1e-bfc7-448b-ab4c-91e47284d14a
+URL:https://auftragsregister.ch/fr/auftrag/83807f1e-bfc7-448b-ab4c-91e47284
+ d14a/
+LOCATION:Lugano - Cadro
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ARL SA – NOUVEAU BÂTIMENT DESTINÉ AU G
+ ARAGE\, PARCELLE N° 882\, CADRO – ÉLÉMENTS PRÉFABRIQUÉS EN BÉTON
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:389a92fe-836d-4223-af45-bf349b907b05-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Scadenza: Centro Anziani Balerna - 02 CCC 201 ss - Opere di Scavo e
+  Impresario costruttore
+DESCRIPTION:Ente pubblico: Comune di Balerna\nScadenza: 22.12.2026\, 10:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/389a92fe-836d-4223-a
+ f45-bf349b907b05/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/389a92fe-836d-4223-af45-bf349b907b05
+URL:https://auftragsregister.ch/it/auftrag/389a92fe-836d-4223-af45-bf349b90
+ 7b05/
+LOCATION:Balerna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Centro Anziani Balerna - 02 CCC 201 ss - Opere di Sca
+ vo e Impresario costruttore
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

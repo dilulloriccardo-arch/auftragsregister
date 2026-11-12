@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16f82658-bc98-4c79-88df-cae12fd58067-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261202T225900Z
+SUMMARY:Submission deadline: Neubau Infrastrukturgebäude Marktplatz Buchs
+DESCRIPTION:Public buyer: Stadt Buchs SG\, Bau und Infrastruktur\nSubmissio
+ n deadline: 2 Dec 2026\, 23:59\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/16f82658-bc98-4c79-88df-cae12fd58067/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/16f82658-bc98-4c79-88df-cae12fd5
+ 8067
+URL:https://auftragsregister.ch/en/auftrag/16f82658-bc98-4c79-88df-cae12fd5
+ 8067/
+LOCATION:Buchs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Infrastrukturgebäude Marktplatz Bu
+ chs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

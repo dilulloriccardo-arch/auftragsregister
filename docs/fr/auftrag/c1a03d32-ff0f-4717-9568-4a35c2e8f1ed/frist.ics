@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c1a03d32-ff0f-4717-9568-4a35c2e8f1ed-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Délai de remise : CFC 211.5 Maçonnerie-BA
+DESCRIPTION:Acheteur public : Commune de Grolley-Ponthaux\nDélai de remi
+ se : 21.12.2026\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/c1a03d32-ff0f-4717-9568-4a35c2e8f1ed/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/c1a03d32-ff0f-4717-9568-
+ 4a35c2e8f1ed
+URL:https://auftragsregister.ch/fr/auftrag/c1a03d32-ff0f-4717-9568-4a35c2e8
+ f1ed/
+LOCATION:Grolley
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFC 211.5 Maçonnerie-BA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

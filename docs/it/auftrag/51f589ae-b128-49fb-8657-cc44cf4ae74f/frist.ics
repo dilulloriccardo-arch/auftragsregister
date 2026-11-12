@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:51f589ae-b128-49fb-8657-cc44cf4ae74f-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Scadenza: Sanierung Grossbachstrasse
+DESCRIPTION:Ente pubblico: Bezirk Einsiedeln Ressort Infrastruktur\nScadenz
+ a: 09.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/51f589ae-b128-49fb-8657-cc44cf4ae74f/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/51f589ae-b128-49fb-8657-cc44cf4ae74f
+URL:https://auftragsregister.ch/it/auftrag/51f589ae-b128-49fb-8657-cc44cf4a
+ e74f/
+LOCATION:Gross
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Grossbachstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

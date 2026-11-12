@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b33837f4-307e-4d94-9745-0ae30167ddaa-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Submission deadline: Maison de retraite Balerna - 06 CCC 244 - Ouvr
+ ages de ventilation
+DESCRIPTION:Public buyer: Comune di Balerna\nSubmission deadline: 22 Dec 
+ 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag/b338
+ 37f4-307e-4d94-9745-0ae30167ddaa/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/b33837f4-307e-4d94-9745-0ae30167ddaa
+URL:https://auftragsregister.ch/en/auftrag/b33837f4-307e-4d94-9745-0ae30167
+ ddaa/
+LOCATION:Balerna
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Maison de retraite Balerna - 06 CCC 244 - 
+ Ouvrages de ventilation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

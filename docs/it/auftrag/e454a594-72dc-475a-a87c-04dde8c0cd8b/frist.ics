@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e454a594-72dc-475a-a87c-04dde8c0cd8b-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20270121T150000Z
+SUMMARY:Scadenza: USZ Campus MITTE 1|2 / 358.04 Gastroküche (Gastroeinrich
+ tungen Ebene A)
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 21.01.202
+ 7\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/e454a594-7
+ 2dc-475a-a87c-04dde8c0cd8b/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/e454a594-72dc-475a-a87c-04dde8c0cd8b
+URL:https://auftragsregister.ch/it/auftrag/e454a594-72dc-475a-a87c-04dde8c0
+ cd8b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: USZ Campus MITTE 1|2 / 358.04 Gastroküche (Gastroein
+ richtungen Ebene A)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

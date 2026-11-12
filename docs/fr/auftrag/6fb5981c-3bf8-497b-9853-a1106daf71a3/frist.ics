@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6fb5981c-3bf8-497b-9853-a1106daf71a3-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART:20261209T130000Z
+SUMMARY:Délai de remise : ARL SA - NUOVO STABILE AUTORIMESSA MAPP. 882 C
+ ADRO - OPERE DA IMPIANTO ELETTRICO
+DESCRIPTION:Acheteur public : ARL SA\nDélai de remise : 09.12.2026\, 1
+ 4 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/6f
+ b5981c-3bf8-497b-9853-a1106daf71a3/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/6fb5981c-3bf8-497b-9853-a1106daf71a3
+URL:https://auftragsregister.ch/fr/auftrag/6fb5981c-3bf8-497b-9853-a1106daf
+ 71a3/
+LOCATION:Lugano - Cadro
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ARL SA - NUOVO STABILE AUTORIMESSA MAPP. 8
+ 82 CADRO - OPERE DA IMPIANTO ELETTRICO
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

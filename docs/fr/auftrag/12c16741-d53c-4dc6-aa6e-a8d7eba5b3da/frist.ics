@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12c16741-d53c-4dc6-aa6e-a8d7eba5b3da-frist@auftragsregister.ch
+DTSTAMP:20261112T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Délai de remise : CJ - Gare de Tramelan - Ascenseurs
+DESCRIPTION:Acheteur public : Département Infrastructure | INFRA\nDélai
+  de remise : 08.12.2026\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/12c16741-d53c-4dc6-aa6e-a8d7eba5b3da/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/12c16741-d53c-4dc6-aa6e-a8d7eb
+ a5b3da
+URL:https://auftragsregister.ch/fr/auftrag/12c16741-d53c-4dc6-aa6e-a8d7eba5
+ b3da/
+LOCATION:Tramelan
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CJ - Gare de Tramelan - Ascenseurs
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
