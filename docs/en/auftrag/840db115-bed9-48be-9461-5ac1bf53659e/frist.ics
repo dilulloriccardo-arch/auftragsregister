@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:840db115-bed9-48be-9461-5ac1bf53659e-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270113T100000Z
+SUMMARY:Submission deadline: STEP EHVV - GC03 Structures métalliques
+DESCRIPTION:Public buyer: Groupement CSD-WSP-Erbat-DTP (CWED)\nSubmission d
+ eadline: 13 Jan 2027\, 11:00\nIn the register: https://auftragsregister.
+ ch/en/auftrag/840db115-bed9-48be-9461-5ac1bf53659e/\nOfficial publication:
+  https://www.simap.ch/en/project-detail/840db115-bed9-48be-9461-5ac1bf5365
+ 9e
+URL:https://auftragsregister.ch/en/auftrag/840db115-bed9-48be-9461-5ac1bf53
+ 659e/
+LOCATION:La Sarraz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: STEP EHVV - GC03 Structures métalliques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

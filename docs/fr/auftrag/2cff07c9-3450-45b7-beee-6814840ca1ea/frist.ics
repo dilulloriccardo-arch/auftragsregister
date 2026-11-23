@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2cff07c9-3450-45b7-beee-6814840ca1ea-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:Délai de remise : Bauarbeiten für Werkleitungen EKT AG\, Eschik
+ ofen - Wellhausen
+DESCRIPTION:Acheteur public : EKT AG\nDélai de remise : 08.01.2027\nDa
+ ns le registre : https://auftragsregister.ch/fr/auftrag/2cff07c9-3450-45
+ b7-beee-6814840ca1ea/\nPublication officielle : https://www.simap.ch/fr/
+ project-detail/2cff07c9-3450-45b7-beee-6814840ca1ea
+URL:https://auftragsregister.ch/fr/auftrag/2cff07c9-3450-45b7-beee-6814840c
+ a1ea/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bauarbeiten für Werkleitungen EKT AG\, Es
+ chikofen - Wellhausen
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea54ff47-3da8-48d6-8ea6-0883610470e0-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Délai de remise : Nouveau siège social d'EWN : ascenseurs BKP 3
+ 61
+DESCRIPTION:Acheteur public : Kantonales Elektrizitätswerk Nidwalden\nD
+ élai de remise : 14.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/ea54ff47-3da8-48d6-8ea6-0883610470e0/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/ea54ff47-3d
+ a8-48d6-8ea6-0883610470e0
+URL:https://auftragsregister.ch/fr/auftrag/ea54ff47-3da8-48d6-8ea6-08836104
+ 70e0/
+LOCATION:Buochs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nouveau siège social d'EWN : ascenseurs B
+ KP 361
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

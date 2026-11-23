@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a62ebafc-cd5b-4188-973a-9fd8c6d90399-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270205T140000Z
+SUMMARY:Délai de remise : CFF\, Ligne 230 | Renouvellement du passage su
+ périeur du Righi à Delémont
+DESCRIPTION:Acheteur public : SBB CFF FFS Achats projets de construction 
+ Région Ouest\nDélai de remise : 05.02.2027\, 15 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/a62ebafc-cd5b-4188-973a-9f
+ d8c6d90399/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/a62ebafc-cd5b-4188-973a-9fd8c6d90399
+URL:https://auftragsregister.ch/fr/auftrag/a62ebafc-cd5b-4188-973a-9fd8c6d9
+ 0399/
+LOCATION:Delémont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFF\, Ligne 230 | Renouvellement du passag
+ e supérieur du Righi à Delémont
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

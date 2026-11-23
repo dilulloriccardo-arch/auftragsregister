@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0b89229d-5229-40e8-af62-261d32091820-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270112T100000Z
+SUMMARY:Scadenza: Renouvellement du logiciel de gestion de la production de
+ s cuisines pour les HUG
+DESCRIPTION:Ente pubblico: Centrale d'achats et d'ingénierie biomédicale 
+ Vaud-Genève (CAIB)\nScadenza: 12.01.2027\, 11:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/0b89229d-5229-40e8-af62-261d32091820/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/0b89229d-5229-4
+ 0e8-af62-261d32091820
+URL:https://auftragsregister.ch/it/auftrag/0b89229d-5229-40e8-af62-261d3209
+ 1820/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Renouvellement du logiciel de gestion de la productio
+ n des cuisines pour les HUG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

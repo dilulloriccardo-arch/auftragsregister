@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5cee16c8-edb2-47d3-8190-615e420d5cc7-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Délai de remise : Revitalisation de la Petite Glâne - Ponts (3 
+ ouvrages) sur les Communes de St-Aubin\, Missy et Vully-les-lacs
+DESCRIPTION:Acheteur public : Association intercommunale pour la revitali
+ sation de la Petite Glâne (AIRPG)\nDélai de remise : 16.12.2026\, 11
+  h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/5ce
+ e16c8-edb2-47d3-8190-615e420d5cc7/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/5cee16c8-edb2-47d3-8190-615e420d5cc7
+URL:https://auftragsregister.ch/fr/auftrag/5cee16c8-edb2-47d3-8190-615e420d
+ 5cc7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Revitalisation de la Petite Glâne - Ponts
+  (3 ouvrages) sur les Communes de St-Aubin\, Missy et Vully-les-lacs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

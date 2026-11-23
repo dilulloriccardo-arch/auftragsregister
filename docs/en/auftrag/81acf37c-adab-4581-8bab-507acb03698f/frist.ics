@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81acf37c-adab-4581-8bab-507acb03698f-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Submission deadline: BKP 201 Baugrubenaushub\, Erdbau & Pfähle
+DESCRIPTION:Public buyer: brügger architekten ag\nSubmission deadline: 11
+  Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/81acf37c-adab-4581-8bab-507acb03698f/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/81acf37c-adab-4581-8bab-507acb03698f
+URL:https://auftragsregister.ch/en/auftrag/81acf37c-adab-4581-8bab-507acb03
+ 698f/
+LOCATION:Interlaken
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 201 Baugrubenaushub\, Erdbau & Pfähle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

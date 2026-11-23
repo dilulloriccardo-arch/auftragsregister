@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1dc33582-c7c7-40f6-8bb7-98e2f241f951-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261207T150000Z
+SUMMARY:Scadenza: Bau von Fernwärmeverteilleitungen und externen Hausansch
+ lüssen\; Los 516 Konkordiastrasse Abschnitt West
+DESCRIPTION:Ente pubblico: St.Galler Stadtwerke\nScadenza: 07.12.2026\, 16:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/1dc33582-c7c7-40f
+ 6-8bb7-98e2f241f951/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/1dc33582-c7c7-40f6-8bb7-98e2f241f951
+URL:https://auftragsregister.ch/it/auftrag/1dc33582-c7c7-40f6-8bb7-98e2f241
+ f951/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bau von Fernwärmeverteilleitungen und externen Hausa
+ nschlüssen\; Los 516 Konkordiastrasse Abschnitt West
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

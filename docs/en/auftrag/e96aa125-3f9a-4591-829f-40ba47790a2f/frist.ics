@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e96aa125-3f9a-4591-829f-40ba47790a2f-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Submission deadline: Erweiterung Schule Champagne - BKP 273.1 Allg.
+  Schreinerarbeiten P1
+DESCRIPTION:Public buyer: Stadt Biel\, Abteilung Hochbau\nSubmission deadli
+ ne: 15 Jan 2027\nIn the register: https://auftragsregister.ch/en/auftrag
+ /e96aa125-3f9a-4591-829f-40ba47790a2f/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/e96aa125-3f9a-4591-829f-40ba47790a2f
+URL:https://auftragsregister.ch/en/auftrag/e96aa125-3f9a-4591-829f-40ba4779
+ 0a2f/
+LOCATION:Biel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Erweiterung Schule Champagne - BKP 273.1 A
+ llg. Schreinerarbeiten P1
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

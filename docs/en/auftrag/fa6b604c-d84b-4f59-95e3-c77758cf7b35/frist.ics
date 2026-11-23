@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa6b604c-d84b-4f59-95e3-c77758cf7b35-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270112T225900Z
+SUMMARY:Submission deadline: MP-260025 N07-76 FF-EW Brückeninstand TG\, PV
+  Bau MK+ bis IBN\, BL
+DESCRIPTION:Public buyer: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nSubmission deadline: 12 Jan 2027\, 23:59\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/fa6b604c-d84b-4f59-95e3-c77758cf7b35/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/fa6b604c-d84b-4f59-
+ 95e3-c77758cf7b35
+URL:https://auftragsregister.ch/en/auftrag/fa6b604c-d84b-4f59-95e3-c77758cf
+ 7b35/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-260025 N07-76 FF-EW Brückeninstand TG\
+ , PV Bau MK+ bis IBN\, BL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

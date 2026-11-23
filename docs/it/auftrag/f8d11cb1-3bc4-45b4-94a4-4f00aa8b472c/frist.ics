@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f8d11cb1-3bc4-45b4-94a4-4f00aa8b472c-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270119T153000Z
+SUMMARY:Scadenza: Extension de la Haute Ecole de Santé de Genève
+DESCRIPTION:Ente pubblico: Etat de Genève\, Département du Territoire - D
+ T\, Office cantonal des bâtiments - OCBA\nScadenza: 19.01.2027\, 16:30\nN
+ el registro: https://auftragsregister.ch/it/auftrag/f8d11cb1-3bc4-45b4-94a
+ 4-4f00aa8b472c/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/f8d11cb1-3bc4-45b4-94a4-4f00aa8b472c
+URL:https://auftragsregister.ch/it/auftrag/f8d11cb1-3bc4-45b4-94a4-4f00aa8b
+ 472c/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Extension de la Haute Ecole de Santé de Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

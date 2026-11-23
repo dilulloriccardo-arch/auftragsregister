@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:721c6701-1964-4b0b-a560-29f2ac232a39-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Délai de remise : Université de Saint-Gall | Rénovation des in
+ stallations de chauffage et de climatisation - BKP 242 Pompe à chaleur
+DESCRIPTION:Acheteur public : Kanton St.Gallen\, Bau- und Umweltdeparteme
+ nt\, Hochbauamt\nDélai de remise : 11.01.2027\, 23 h 59\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/721c6701-1964-4b0b-a560-
+ 29f2ac232a39/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/721c6701-1964-4b0b-a560-29f2ac232a39
+URL:https://auftragsregister.ch/fr/auftrag/721c6701-1964-4b0b-a560-29f2ac23
+ 2a39/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Université de Saint-Gall | Rénovation de
+ s installations de chauffage et de climatisation - BKP 242 Pompe à chaleu
+ r
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

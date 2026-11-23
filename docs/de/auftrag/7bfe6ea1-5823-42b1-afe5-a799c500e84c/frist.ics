@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7bfe6ea1-5823-42b1-afe5-a799c500e84c-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:1
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: SAP DevOps
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Informatik Eink
+ auf\nEingabefrist: 14.12.2026\, 12.00 Uhr\nIm Register: https://auftragsr
+ egister.ch/de/auftrag/7bfe6ea1-5823-42b1-afe5-a799c500e84c/\nAmtliche Publ
+ ikation: https://www.simap.ch/de/project-detail/7bfe6ea1-5823-42b1-afe5-a7
+ 99c500e84c
+URL:https://auftragsregister.ch/de/auftrag/7bfe6ea1-5823-42b1-afe5-a799c500
+ e84c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: SAP DevOps
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a415d9b0-926e-482f-9d7a-371935ec7c1a-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270120T100000Z
+SUMMARY:Eingabefrist: STEP EHVV - EL03 - Tableaux électriques\, MCC\, MCR 
+ et supervision
+DESCRIPTION:Auftraggeber: Groupement CSD-WSP-Erbat-DTP (CWED)\nEingabefrist
+ : 20.01.2027\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/a415d9b0-926e-482f-9d7a-371935ec7c1a/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/a415d9b0-926e-482f-9d7a-371935ec7c1a
+URL:https://auftragsregister.ch/de/auftrag/a415d9b0-926e-482f-9d7a-371935ec
+ 7c1a/
+LOCATION:La Sarraz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: STEP EHVV - EL03 - Tableaux électriques\, MCC\, 
+ MCR et supervision
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f8ded7fd-2abb-4373-9e6b-a8b5c35f1784-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270129T090000Z
+SUMMARY:Délai de remise : Ersatz Gelenk Steiger klein
+DESCRIPTION:Acheteur public : ewl Verkauf AG\nDélai de remise : 29.01.
+ 2027\, 10 h 00\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/f8ded7fd-2abb-4373-9e6b-a8b5c35f1784/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/f8ded7fd-2abb-4373-9e6b-a8b5c35f1784
+URL:https://auftragsregister.ch/fr/auftrag/f8ded7fd-2abb-4373-9e6b-a8b5c35f
+ 1784/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatz Gelenk Steiger klein
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

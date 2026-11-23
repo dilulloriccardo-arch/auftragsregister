@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a1c52e32-5226-43c3-ba60-39fca39c9db2-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261211T140000Z
+SUMMARY:Eingabefrist: Rund um den OP\, BKP 287 Baureinigung
+DESCRIPTION:Auftraggeber: Hirslanden AG\, Corporate Office (Ghisleni Partne
+ r AG)\nEingabefrist: 11.12.2026\, 15.00 Uhr\nIm Register: https://auftrag
+ sregister.ch/de/auftrag/a1c52e32-5226-43c3-ba60-39fca39c9db2/\nAmtliche Pu
+ blikation: https://www.simap.ch/de/project-detail/a1c52e32-5226-43c3-ba60-
+ 39fca39c9db2
+URL:https://auftragsregister.ch/de/auftrag/a1c52e32-5226-43c3-ba60-39fca39c
+ 9db2/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rund um den OP\, BKP 287 Baureinigung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

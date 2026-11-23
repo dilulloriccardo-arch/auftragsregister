@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90126e7a-cb61-4e08-a94c-3f552212feca-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:1
+DTSTART:20270120T225900Z
+SUMMARY:Submission deadline: Réhabilitation de la vieille galerie du Gotha
+ rd (GOE-AI) Prestations de DLL
+DESCRIPTION:Public buyer: Ferrovie federali svizzere FFS SA\nSubmission dea
+ dline: 20 Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch
+ /en/auftrag/90126e7a-cb61-4e08-a94c-3f552212feca/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/90126e7a-cb61-4e08-a94c-3f552212feca
+URL:https://auftragsregister.ch/en/auftrag/90126e7a-cb61-4e08-a94c-3f552212
+ feca/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Réhabilitation de la vieille galerie du G
+ othard (GOE-AI) Prestations de DLL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

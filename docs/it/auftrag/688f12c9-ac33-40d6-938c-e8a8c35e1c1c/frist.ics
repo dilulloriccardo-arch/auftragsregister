@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:688f12c9-ac33-40d6-938c-e8a8c35e1c1c-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270104T100000Z
+SUMMARY:Scadenza: Sanierung Lättenstrasse (Abschnitt Allmendstrasse bis Ha
+ ldenacher)
+DESCRIPTION:Ente pubblico: Gemeinde Uitikon (Landis AG)\nScadenza: 04.01.20
+ 27\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/688f12c9-
+ ac33-40d6-938c-e8a8c35e1c1c/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/688f12c9-ac33-40d6-938c-e8a8c35e1c1c
+URL:https://auftragsregister.ch/it/auftrag/688f12c9-ac33-40d6-938c-e8a8c35e
+ 1c1c/
+LOCATION:Uitikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Lättenstrasse (Abschnitt Allmendstrasse bi
+ s Haldenacher)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

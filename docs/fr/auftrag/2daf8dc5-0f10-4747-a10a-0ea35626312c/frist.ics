@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2daf8dc5-0f10-4747-a10a-0ea35626312c-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270104T150000Z
+SUMMARY:Délai de remise : Mise en page\, relecture\, impression et livra
+ ison des documents relatifs aux votations et aux élections de la ville de
+  Zurich
+DESCRIPTION:Acheteur public : Stadtkanzlei Zürich\nDélai de remise : 
+ 04.01.2027\, 16 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/2daf8dc5-0f10-4747-a10a-0ea35626312c/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/2daf8dc5-0f10-4747-a10a-0ea356
+ 26312c
+URL:https://auftragsregister.ch/fr/auftrag/2daf8dc5-0f10-4747-a10a-0ea35626
+ 312c/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mise en page\, relecture\, impression et l
+ ivraison des documents relatifs aux votations et aux élections de la vill
+ e de Zurich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

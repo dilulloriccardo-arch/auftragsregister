@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c79d49b0-c42b-4153-81dc-ed646b6a1f01-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270209T140000Z
+SUMMARY:Scadenza: Neubau Klinikum 2\, Phase 1\, SKP 272\, Sondertüren
+DESCRIPTION:Ente pubblico: Universitätsspital Basel\nScadenza: 09.02.2027\
+ , 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/c79d49b0-c42
+ b-4153-81dc-ed646b6a1f01/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/c79d49b0-c42b-4153-81dc-ed646b6a1f01
+URL:https://auftragsregister.ch/it/auftrag/c79d49b0-c42b-4153-81dc-ed646b6a
+ 1f01/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Klinikum 2\, Phase 1\, SKP 272\, Sondertüren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

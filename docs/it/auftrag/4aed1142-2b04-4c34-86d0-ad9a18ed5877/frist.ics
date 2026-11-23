@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4aed1142-2b04-4c34-86d0-ad9a18ed5877-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270112T160000Z
+SUMMARY:Scadenza: Baumeisterleistungen im Gleisbau – Wendeschleife Rehalp
+DESCRIPTION:Ente pubblico: Verkehrsbetriebe Zürich (VBZ)\nScadenza: 12.01.
+ 2027\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/4aed114
+ 2-2b04-4c34-86d0-ad9a18ed5877/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/4aed1142-2b04-4c34-86d0-ad9a18ed5877
+URL:https://auftragsregister.ch/it/auftrag/4aed1142-2b04-4c34-86d0-ad9a18ed
+ 5877/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Baumeisterleistungen im Gleisbau – Wendeschleife Re
+ halp
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

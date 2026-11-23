@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:93f48eb6-dd2b-4324-ba7f-2862fedb3a80-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270103T190000Z
+SUMMARY:Submission deadline: Achat moissonneuse-batteuse
+DESCRIPTION:Public buyer: Etablissement de détention fribourgeois EDFR\nSu
+ bmission deadline: 3 Jan 2027\, 20:00\nIn the register: https://auftrags
+ register.ch/en/auftrag/93f48eb6-dd2b-4324-ba7f-2862fedb3a80/\nOfficial pub
+ lication: https://www.simap.ch/en/project-detail/93f48eb6-dd2b-4324-ba7f-2
+ 862fedb3a80
+URL:https://auftragsregister.ch/en/auftrag/93f48eb6-dd2b-4324-ba7f-2862fedb
+ 3a80/
+LOCATION:Sugiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Achat moissonneuse-batteuse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

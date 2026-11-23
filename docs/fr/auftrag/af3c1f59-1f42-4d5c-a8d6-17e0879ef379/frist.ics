@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af3c1f59-1f42-4d5c-a8d6-17e0879ef379-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T100000Z
+SUMMARY:Délai de remise : Assainissement des ponts Charles-Galland et Sa
+ int-Victor (2384TI) fourniture garde-corps
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 13.01.2027\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/af3c1f59-1f42-4d5c-a8d6-17e0879ef37
+ 9/\nPublication officielle : https://www.simap.ch/fr/project-detail/af3c
+ 1f59-1f42-4d5c-a8d6-17e0879ef379
+URL:https://auftragsregister.ch/fr/auftrag/af3c1f59-1f42-4d5c-a8d6-17e0879e
+ f379/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assainissement des ponts Charles-Galland e
+ t Saint-Victor (2384TI) fourniture garde-corps
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

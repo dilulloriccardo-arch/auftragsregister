@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:880d0255-4685-4aa1-acb3-77cd7cc859f7-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Eingabefrist: 21019 - Michelstrasse\, Benedikt-Fontana-Weg
+DESCRIPTION:Auftraggeber: Stadt Zürich Tiefbauamt Werterhaltung\nEingabefr
+ ist: 10.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/880d0255-4685-4aa1-acb3-77cd7cc859f7/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/880d0255-4685-4aa1-acb3-77cd7cc859f7
+URL:https://auftragsregister.ch/de/auftrag/880d0255-4685-4aa1-acb3-77cd7cc8
+ 59f7/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 21019 - Michelstrasse\, Benedikt-Fontana-Weg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

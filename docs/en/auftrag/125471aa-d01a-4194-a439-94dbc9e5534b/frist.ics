@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:125471aa-d01a-4194-a439-94dbc9e5534b-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270312T140000Z
+SUMMARY:Submission deadline: AS35\, Wendegleis Aesch und ZFZ inkl. FbE Aesc
+ h Münchenstein - Aesch\, Projekt-Nr. 1161146 / 1164980
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB\, Infrastruktur 
+ – Einkauf\, Supply Chain und Produktion\, Einkauf Bauprojekte Region Mit
+ te\nSubmission deadline: 12 Mar 2027\, 15:00\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/125471aa-d01a-4194-a439-94dbc9e5534b/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/125471aa-d01a-4194
+ -a439-94dbc9e5534b
+URL:https://auftragsregister.ch/en/auftrag/125471aa-d01a-4194-a439-94dbc9e5
+ 534b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AS35\, Wendegleis Aesch und ZFZ inkl. FbE 
+ Aesch Münchenstein - Aesch\, Projekt-Nr. 1161146 / 1164980
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

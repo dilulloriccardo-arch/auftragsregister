@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8f2ef96c-4593-41db-a4e0-8e8ec5bada96-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270105T103000Z
+SUMMARY:Délai de remise : Acquisition de mobilier pour l’extension du 
+ gymnase de Bussigny
+DESCRIPTION:Acheteur public : Direction des achats et de la logistique (D
+ AL)\nDélai de remise : 05.01.2027\, 11 h 30\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/8f2ef96c-4593-41db-a4e0-8e8ec5bada96
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/8f2ef
+ 96c-4593-41db-a4e0-8e8ec5bada96
+URL:https://auftragsregister.ch/fr/auftrag/8f2ef96c-4593-41db-a4e0-8e8ec5ba
+ da96/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition de mobilier pour l’extension
+  du gymnase de Bussigny
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

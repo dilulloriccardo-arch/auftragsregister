@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dc0b48d9-bd46-44bf-927d-e09d55e3d00d-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270122T150000Z
+SUMMARY:Submission deadline: CENTRE SCOLAIRE MARLY CITÉ\, ASSAINISSEMENT E
+ T AGRANDISSEMENT\, CFC 228.3\, STORES TOILES EXTÉRIEURS
+DESCRIPTION:Public buyer: Commune de Marly\nSubmission deadline: 22 Jan 2
+ 027\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/dc0b4
+ 8d9-bd46-44bf-927d-e09d55e3d00d/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/dc0b48d9-bd46-44bf-927d-e09d55e3d00d
+URL:https://auftragsregister.ch/en/auftrag/dc0b48d9-bd46-44bf-927d-e09d55e3
+ d00d/
+LOCATION:Marly
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: CENTRE SCOLAIRE MARLY CITÉ\, ASSAINISSEME
+ NT ET AGRANDISSEMENT\, CFC 228.3\, STORES TOILES EXTÉRIEURS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

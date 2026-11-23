@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:737e0edd-0cc0-43e3-adee-907c6534dd8f-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Submission deadline: Rahmenvertrag zur Beschaffung von Hardware (No
+ tebooks inkl. Zubehör)
+DESCRIPTION:Public buyer: Sekundarstufe Uster\nSubmission deadline: 21 Dec
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/73
+ 7e0edd-0cc0-43e3-adee-907c6534dd8f/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/737e0edd-0cc0-43e3-adee-907c6534dd8f
+URL:https://auftragsregister.ch/en/auftrag/737e0edd-0cc0-43e3-adee-907c6534
+ dd8f/
+LOCATION:Uster
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rahmenvertrag zur Beschaffung von Hardware
+  (Notebooks inkl. Zubehör)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

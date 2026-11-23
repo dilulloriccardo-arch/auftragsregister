@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60475ecc-38ae-4840-aef9-613e989cffe9-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270113T100000Z
+SUMMARY:Délai de remise : Rénovation globale du Casino Théâtre (2381T
+ I) Ferblanterie
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 13.01.2027\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/60475ecc-38ae-4840-aef9-613e989cffe
+ 9/\nPublication officielle : https://www.simap.ch/fr/project-detail/6047
+ 5ecc-38ae-4840-aef9-613e989cffe9
+URL:https://auftragsregister.ch/fr/auftrag/60475ecc-38ae-4840-aef9-613e989c
+ ffe9/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rénovation globale du Casino Théâtre (2
+ 381TI) Ferblanterie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

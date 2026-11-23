@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8f2f72d9-aa4f-4f55-9577-73f335aa7904-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261209T090000Z
+SUMMARY:Délai de remise : K28 Gurtnellerbergstrasse\, Gurtnellen\, Stald
+ en bis Heimigen\, Sanierung Strassenbelag
+DESCRIPTION:Acheteur public : Amt für Tiefbau Uri\nDélai de remise : 
+ 09.12.2026\, 10 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/8f2f72d9-aa4f-4f55-9577-73f335aa7904/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/8f2f72d9-aa4f-4f55-9577-73f335
+ aa7904
+URL:https://auftragsregister.ch/fr/auftrag/8f2f72d9-aa4f-4f55-9577-73f335aa
+ 7904/
+LOCATION:Gurtnellen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : K28 Gurtnellerbergstrasse\, Gurtnellen\, S
+ talden bis Heimigen\, Sanierung Strassenbelag
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

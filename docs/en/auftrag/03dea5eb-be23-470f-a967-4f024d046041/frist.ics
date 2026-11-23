@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:03dea5eb-be23-470f-a967-4f024d046041-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270105T100000Z
+SUMMARY:Submission deadline: Renouvellement Licences Hyperviseurs VMware
+DESCRIPTION:Public buyer: Hospice général\nSubmission deadline: 5 Jan 2
+ 027\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/03dea
+ 5eb-be23-470f-a967-4f024d046041/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/03dea5eb-be23-470f-a967-4f024d046041
+URL:https://auftragsregister.ch/en/auftrag/03dea5eb-be23-470f-a967-4f024d04
+ 6041/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Renouvellement Licences Hyperviseurs VMwar
+ e
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

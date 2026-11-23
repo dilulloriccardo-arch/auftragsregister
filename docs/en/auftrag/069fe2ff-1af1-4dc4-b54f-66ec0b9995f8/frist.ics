@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:069fe2ff-1af1-4dc4-b54f-66ec0b9995f8-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261222T225900Z
+SUMMARY:Submission deadline: Burgdorf: Verkehrssanierung Lyssachschachen\; 
+ Planerleistungen Phase 41-53
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Bern\nSubmission deadline:
+  22 Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/069fe2ff-1af1-4dc4-b54f-66ec0b9995f8/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/069fe2ff-1af1-4dc4-b54f-66ec0b9995f8
+URL:https://auftragsregister.ch/en/auftrag/069fe2ff-1af1-4dc4-b54f-66ec0b99
+ 95f8/
+LOCATION:Burgdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Burgdorf: Verkehrssanierung Lyssachschache
+ n\; Planerleistungen Phase 41-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

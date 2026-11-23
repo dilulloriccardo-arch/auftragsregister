@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2709bdc1-fda2-4c28-ab44-37a9d10fdb2a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270118T225900Z
+SUMMARY:Eingabefrist: Rahmenverträge für High Performance Computing Syste
+ ms
+DESCRIPTION:Auftraggeber: ETH Zürich - Abt. Procurement Services VPIN\nEin
+ gabefrist: 18.01.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/2709bdc1-fda2-4c28-ab44-37a9d10fdb2a/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/2709bdc1-fda2-4c28-ab44-37a9d10fdb
+ 2a
+URL:https://auftragsregister.ch/de/auftrag/2709bdc1-fda2-4c28-ab44-37a9d10f
+ db2a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rahmenverträge für High Performance Computing S
+ ystems
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

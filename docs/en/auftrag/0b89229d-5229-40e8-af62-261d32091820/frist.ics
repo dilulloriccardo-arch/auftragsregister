@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0b89229d-5229-40e8-af62-261d32091820-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270112T100000Z
+SUMMARY:Submission deadline: Renouvellement du logiciel de gestion de la pr
+ oduction des cuisines pour les HUG
+DESCRIPTION:Public buyer: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nSubmission deadline: 12 Jan 2027\, 11:00\nIn the reg
+ ister: https://auftragsregister.ch/en/auftrag/0b89229d-5229-40e8-af62-261d
+ 32091820/\nOfficial publication: https://www.simap.ch/en/project-detail/0b
+ 89229d-5229-40e8-af62-261d32091820
+URL:https://auftragsregister.ch/en/auftrag/0b89229d-5229-40e8-af62-261d3209
+ 1820/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Renouvellement du logiciel de gestion de l
+ a production des cuisines pour les HUG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

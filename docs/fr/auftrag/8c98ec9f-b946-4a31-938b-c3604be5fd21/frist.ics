@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8c98ec9f-b946-4a31-938b-c3604be5fd21-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270129T100000Z
+SUMMARY:Délai de remise : Collège Bahyse II+III - Blonay-St-Légier / S
+ errurerie
+DESCRIPTION:Acheteur public : Commune de Blonay-St-Légier (Consortium FL
+ BG)\nDélai de remise : 29.01.2027\, 11 h 00\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/8c98ec9f-b946-4a31-938b-c3604be5fd21
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/8c98e
+ c9f-b946-4a31-938b-c3604be5fd21
+URL:https://auftragsregister.ch/fr/auftrag/8c98ec9f-b946-4a31-938b-c3604be5
+ fd21/
+LOCATION:Blonay
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Collège Bahyse II+III - Blonay-St-Légier
+  / Serrurerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0bb23c0f-1922-481c-86f1-c79ea1173923-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Scadenza: Werkhof Beringen - Elektroinstallationen
+DESCRIPTION:Ente pubblico: Gemeinde Beringen\nScadenza: 14.12.2026\, 12:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/0bb23c0f-1922-481c-8
+ 6f1-c79ea1173923/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/0bb23c0f-1922-481c-86f1-c79ea1173923
+URL:https://auftragsregister.ch/it/auftrag/0bb23c0f-1922-481c-86f1-c79ea117
+ 3923/
+LOCATION:Beringen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Werkhof Beringen - Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

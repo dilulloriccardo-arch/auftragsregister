@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f148e56b-e8dd-47e6-a64f-7dd808272656-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Submission deadline: (26096) 609 LEO Satellite Internet
+DESCRIPTION:Public buyer: Bundesamt für Bauten und Logistik BBL\nSubmissio
+ n deadline: 15 Jan 2027\, 23:59\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/f148e56b-e8dd-47e6-a64f-7dd808272656/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/f148e56b-e8dd-47e6-a64f-7dd8082
+ 72656
+URL:https://auftragsregister.ch/en/auftrag/f148e56b-e8dd-47e6-a64f-7dd80827
+ 2656/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (26096) 609 LEO Satellite Internet
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

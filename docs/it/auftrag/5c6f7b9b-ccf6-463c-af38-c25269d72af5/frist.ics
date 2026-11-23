@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5c6f7b9b-ccf6-463c-af38-c25269d72af5-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261215T100000Z
+SUMMARY:Scadenza: Neue mobile Landungsstege kurz/lang
+DESCRIPTION:Ente pubblico: ZSG Zürichsee Schifffahrt\nScadenza: 15.12.2026
+ \, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/5c6f7b9b-cc
+ f6-463c-af38-c25269d72af5/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/5c6f7b9b-ccf6-463c-af38-c25269d72af5
+URL:https://auftragsregister.ch/it/auftrag/5c6f7b9b-ccf6-463c-af38-c25269d7
+ 2af5/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neue mobile Landungsstege kurz/lang
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:938ab26b-6f9f-41b9-9a9a-5d816b371146-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270219T225900Z
+SUMMARY:Scadenza: N01.20 MP-260003 - EP Weyermannshaus - Wankdorf - Projekt
+ verfasser Akustik (ID 12232)
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Abteilung Strass
+ eninfrastruktur West - Filiale Thun\nScadenza: 19.02.2027\, 23:59\nNel reg
+ istro: https://auftragsregister.ch/it/auftrag/938ab26b-6f9f-41b9-9a9a-5d81
+ 6b371146/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail
+ /938ab26b-6f9f-41b9-9a9a-5d816b371146
+URL:https://auftragsregister.ch/it/auftrag/938ab26b-6f9f-41b9-9a9a-5d816b37
+ 1146/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N01.20 MP-260003 - EP Weyermannshaus - Wankdorf - Pro
+ jektverfasser Akustik (ID 12232)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

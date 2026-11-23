@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:463293cb-55cf-481e-9bf2-be1b3c8ada3a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Eingabefrist: B.10629 KUE D Instandsetzung Kältemaschinen I BKP 29
+ 3 Elektro-Ingenieur | OV
+DESCRIPTION:Auftraggeber: Universitätsspital Zürich\nEingabefrist: 11.01.
+ 2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/463
+ 293cb-55cf-481e-9bf2-be1b3c8ada3a/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/463293cb-55cf-481e-9bf2-be1b3c8ada3a
+URL:https://auftragsregister.ch/de/auftrag/463293cb-55cf-481e-9bf2-be1b3c8a
+ da3a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: B.10629 KUE D Instandsetzung Kältemaschinen I BK
+ P 293 Elektro-Ingenieur | OV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

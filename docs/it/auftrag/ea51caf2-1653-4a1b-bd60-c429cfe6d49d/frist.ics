@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea51caf2-1653-4a1b-bd60-c429cfe6d49d-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Scadenza: Beschaffung einer Automatisierungsplattform für Enzyme E
+ ngineering (APEE)
+DESCRIPTION:Ente pubblico: Universität Bern\nScadenza: 15.01.2027\, 23:59\
+ nNel registro: https://auftragsregister.ch/it/auftrag/ea51caf2-1653-4a1b-b
+ d60-c429cfe6d49d/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/ea51caf2-1653-4a1b-bd60-c429cfe6d49d
+URL:https://auftragsregister.ch/it/auftrag/ea51caf2-1653-4a1b-bd60-c429cfe6
+ d49d/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung einer Automatisierungsplattform für Enzy
+ me Engineering (APEE)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

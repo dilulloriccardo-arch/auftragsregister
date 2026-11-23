@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18c89d9b-f83b-4694-b67a-81a5d4b37d1f-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20261218T090000Z
+SUMMARY:Scadenza: Gruebstrasse\, Abschnitt Alte Landstrasse bis "Auf der Gr
+ ueb"\, L= ca. 260m'
+DESCRIPTION:Ente pubblico: Gemeinde Meilen\nScadenza: 18.12.2026\, 10:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/18c89d9b-f83b-4694-b67
+ a-81a5d4b37d1f/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/18c89d9b-f83b-4694-b67a-81a5d4b37d1f
+URL:https://auftragsregister.ch/it/auftrag/18c89d9b-f83b-4694-b67a-81a5d4b3
+ 7d1f/
+LOCATION:Meilen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gruebstrasse\, Abschnitt Alte Landstrasse bis "Auf de
+ r Grueb"\, L= ca. 260m'
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

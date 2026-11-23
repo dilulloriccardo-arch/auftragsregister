@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71dae996-fb47-4943-a73a-8b3935eecb12-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270122T103000Z
+SUMMARY:Délai de remise : MobEnfance_A1 / Mobiliers et fournitures pour 
+ les structures d'accueil de la petite enfance
+DESCRIPTION:Acheteur public : Centrale municipale d'achat et d'impression
+  de la Ville de Genève\nDélai de remise : 22.01.2027\, 11 h 30\nDa
+ ns le registre : https://auftragsregister.ch/fr/auftrag/71dae996-fb47-49
+ 43-a73a-8b3935eecb12/\nPublication officielle : https://www.simap.ch/fr/
+ project-detail/71dae996-fb47-4943-a73a-8b3935eecb12
+URL:https://auftragsregister.ch/fr/auftrag/71dae996-fb47-4943-a73a-8b3935ee
+ cb12/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MobEnfance_A1 / Mobiliers et fournitures p
+ our les structures d'accueil de la petite enfance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

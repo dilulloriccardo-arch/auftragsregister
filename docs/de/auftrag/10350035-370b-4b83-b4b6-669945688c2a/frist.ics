@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10350035-370b-4b83-b4b6-669945688c2a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261218T140000Z
+SUMMARY:Eingabefrist: Ersatz der Multifunktionsgeräte in der Gemeindeverwa
+ ltung und in den Schulen
+DESCRIPTION:Auftraggeber: Gemeindeverwaltung Worb\nEingabefrist: 18.12.2026
+ \, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/1035003
+ 5-370b-4b83-b4b6-669945688c2a/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/10350035-370b-4b83-b4b6-669945688c2a
+URL:https://auftragsregister.ch/de/auftrag/10350035-370b-4b83-b4b6-66994568
+ 8c2a/
+LOCATION:Worb
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatz der Multifunktionsgeräte in der Gemeindev
+ erwaltung und in den Schulen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

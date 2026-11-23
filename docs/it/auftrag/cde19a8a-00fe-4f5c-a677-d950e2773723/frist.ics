@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cde19a8a-00fe-4f5c-a677-d950e2773723-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Scadenza: Bauherrenunterstützung (BHU) - Kettenersatzprogramm SIA 
+ 32-53
+DESCRIPTION:Ente pubblico: Swissgrid AG - Engineering & Construction\nScade
+ nza: 15.01.2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auft
+ rag/cde19a8a-00fe-4f5c-a677-d950e2773723/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/cde19a8a-00fe-4f5c-a677-d950e2773723
+URL:https://auftragsregister.ch/it/auftrag/cde19a8a-00fe-4f5c-a677-d950e277
+ 3723/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bauherrenunterstützung (BHU) - Kettenersatzprogramm 
+ SIA 32-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

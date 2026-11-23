@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78d7cc57-5b08-4373-8945-12409b10c99a-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270115T140000Z
+SUMMARY:Submission deadline: Neubau / Umgestaltung Bahnhofplatz / Bushof / 
+ Sennhofplatz I Gesamtleitender Projektingenieur Ingenieurleistungen SIA Ph
+ . 32-53
+DESCRIPTION:Public buyer: Bezirksverwaltung Einsiedeln\nSubmission deadline
+ : 15 Jan 2027\, 15:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/78d7cc57-5b08-4373-8945-12409b10c99a/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/78d7cc57-5b08-4373-8945-12409b10c99a
+URL:https://auftragsregister.ch/en/auftrag/78d7cc57-5b08-4373-8945-12409b10
+ c99a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau / Umgestaltung Bahnhofplatz / Busho
+ f / Sennhofplatz I Gesamtleitender Projektingenieur Ingenieurleistungen SI
+ A Ph. 32-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

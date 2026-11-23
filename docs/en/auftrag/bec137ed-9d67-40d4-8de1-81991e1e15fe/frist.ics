@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bec137ed-9d67-40d4-8de1-81991e1e15fe-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270121T225900Z
+SUMMARY:Submission deadline: Stabilisation du talus jouxtant la chaussée e
+ n amont d'Euseigne\, sur la RC no 54 Sion - Les Haudères - Arolla\, sur l
+ e territoire de la commune d'Hérémence
+DESCRIPTION:Public buyer: Département de la mobilité\, du territoire et d
+ e l'environnement\nSubmission deadline: 21 Jan 2027\, 23:59\nIn the regi
+ ster: https://auftragsregister.ch/en/auftrag/bec137ed-9d67-40d4-8de1-81991
+ e1e15fe/\nOfficial publication: https://www.simap.ch/en/project-detail/bec
+ 137ed-9d67-40d4-8de1-81991e1e15fe
+URL:https://auftragsregister.ch/en/auftrag/bec137ed-9d67-40d4-8de1-81991e1e
+ 15fe/
+LOCATION:Euseigne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Stabilisation du talus jouxtant la chauss
+ ée en amont d'Euseigne\, sur la RC no 54 Sion - Les Haudères - Arolla\, 
+ sur le territoire de la commune d'Hérémence
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

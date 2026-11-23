@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7bfe6ea1-5823-42b1-afe5-a799c500e84c-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:1
+DTSTART:20261214T110000Z
+SUMMARY:Scadenza: SAP DevOps
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB\, Informatik Ein
+ kauf\nScadenza: 14.12.2026\, 12:00\nNel registro: https://auftragsregister
+ .ch/it/auftrag/7bfe6ea1-5823-42b1-afe5-a799c500e84c/\nPubblicazione uffici
+ ale: https://www.simap.ch/it/project-detail/7bfe6ea1-5823-42b1-afe5-a799c5
+ 00e84c
+URL:https://auftragsregister.ch/it/auftrag/7bfe6ea1-5823-42b1-afe5-a799c500
+ e84c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: SAP DevOps
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

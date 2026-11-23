@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:43782d64-77f9-4239-9835-ad2eba69e764-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270122T150000Z
+SUMMARY:Délai de remise : MP-230016 N13 Kreisel Thusis – Kreisel Cazis
+ \, Enterprise de Construction Rond-point de Cazis
+DESCRIPTION:Acheteur public : Ufficio federale delle strade USTRA\, divis
+ ione infrastruttura stradale Est\nDélai de remise : 22.01.2027\, 16 h
+  00\nDans le registre : https://auftragsregister.ch/fr/auftrag/43782d6
+ 4-77f9-4239-9835-ad2eba69e764/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/43782d64-77f9-4239-9835-ad2eba69e764
+URL:https://auftragsregister.ch/fr/auftrag/43782d64-77f9-4239-9835-ad2eba69
+ e764/
+LOCATION:Thusis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-230016 N13 Kreisel Thusis – Kreisel C
+ azis\, Enterprise de Construction Rond-point de Cazis
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

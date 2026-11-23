@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61adb811-374e-45cd-908c-8bfdca7d60b9-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270106T090000Z
+SUMMARY:Délai de remise : «Plattform Freizeit Luzern» Website\, Portal
+  und Fachapplikation für Freizeitangebote der Stadt Luzern
+DESCRIPTION:Acheteur public : Stadt Luzern\, Zentrale Informatikdienste\n
+ Délai de remise : 06.01.2027\, 10 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/61adb811-374e-45cd-908c-8bfdca7d60b9/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/61adb811-3
+ 74e-45cd-908c-8bfdca7d60b9
+URL:https://auftragsregister.ch/fr/auftrag/61adb811-374e-45cd-908c-8bfdca7d
+ 60b9/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : «Plattform Freizeit Luzern» Website\, Po
+ rtal und Fachapplikation für Freizeitangebote der Stadt Luzern
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

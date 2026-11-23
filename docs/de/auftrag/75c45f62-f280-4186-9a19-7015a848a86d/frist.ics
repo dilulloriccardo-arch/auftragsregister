@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:75c45f62-f280-4186-9a19-7015a848a86d-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270115T225500Z
+SUMMARY:Eingabefrist: Ersatzbeschaffung von 76 Stk. Patientenmonitoren/Defi
+ brillatoren
+DESCRIPTION:Auftraggeber: SID - Schutz & Rettung (SRZ)\nEingabefrist: 15.01
+ .2027\, 23.55 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/75
+ c45f62-f280-4186-9a19-7015a848a86d/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/75c45f62-f280-4186-9a19-7015a848a86d
+URL:https://auftragsregister.ch/de/auftrag/75c45f62-f280-4186-9a19-7015a848
+ a86d/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatzbeschaffung von 76 Stk. Patientenmonitoren/
+ Defibrillatoren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

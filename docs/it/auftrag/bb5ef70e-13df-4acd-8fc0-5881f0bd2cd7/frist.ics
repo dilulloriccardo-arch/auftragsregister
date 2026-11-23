@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb5ef70e-13df-4acd-8fc0-5881f0bd2cd7-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270211T223000Z
+SUMMARY:Scadenza: PES Sicherungsanlagen
+DESCRIPTION:Ente pubblico: Sihltal Zürich Uetliberg Bahn SZU AG\nScadenza:
+  11.02.2027\, 23:30\nNel registro: https://auftragsregister.ch/it/auftrag/
+ bb5ef70e-13df-4acd-8fc0-5881f0bd2cd7/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/bb5ef70e-13df-4acd-8fc0-5881f0bd2cd7
+URL:https://auftragsregister.ch/it/auftrag/bb5ef70e-13df-4acd-8fc0-5881f0bd
+ 2cd7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: PES Sicherungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

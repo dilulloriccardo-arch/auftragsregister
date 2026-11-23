@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e964be7-2607-4f12-a895-909eb56e8000-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Délai de remise : BAV 80746 Schulanlage Triemli\, In der Ey\, Er
+ satzneubau - CFC 281.1 Revêtements de sols sans joints
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 11.01.2027\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/6e964be7-2607-4f12-a895-909eb56e8000/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/6e964be7-2607-4f12-a
+ 895-909eb56e8000
+URL:https://auftragsregister.ch/fr/auftrag/6e964be7-2607-4f12-a895-909eb56e
+ 8000/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 80746 Schulanlage Triemli\, In der Ey\
+ , Ersatzneubau - CFC 281.1 Revêtements de sols sans joints
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

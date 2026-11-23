@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce8f1107-7a0e-4104-95ac-122c39e7f54b-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Délai de remise : Services SAP Services S/4 HANA
+DESCRIPTION:Acheteur public : Flughafen Zürich AG - Zentraler Einkauf\nD
+ élai de remise : 08.01.2027\, 12 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/ce8f1107-7a0e-4104-95ac-122c39e7f54b/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/ce8f1107-7a
+ 0e-4104-95ac-122c39e7f54b
+URL:https://auftragsregister.ch/fr/auftrag/ce8f1107-7a0e-4104-95ac-122c39e7
+ f54b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Services SAP Services S/4 HANA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

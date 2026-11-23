@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:249faf7d-31d5-4bfc-8b61-d44b8cd68670-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Scadenza: 1 Mehrzweckfahrzeug 4x4 GR 5267_B6
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 30.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/249faf7d-31d5-4
+ bfc-8b61-d44b8cd68670/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/249faf7d-31d5-4bfc-8b61-d44b8cd68670
+URL:https://auftragsregister.ch/it/auftrag/249faf7d-31d5-4bfc-8b61-d44b8cd6
+ 8670/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 1 Mehrzweckfahrzeug 4x4 GR 5267_B6
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

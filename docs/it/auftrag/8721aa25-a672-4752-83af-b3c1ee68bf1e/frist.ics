@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8721aa25-a672-4752-83af-b3c1ee68bf1e-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261211T100000Z
+SUMMARY:Scadenza: Sanierung Industriestrasse\, Aadorf
+DESCRIPTION:Ente pubblico: Gemeinde Aadorf\, Amt für Bau und Umwelt\nScade
+ nza: 11.12.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/8721aa25-a672-4752-83af-b3c1ee68bf1e/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/8721aa25-a672-4752-83af-b3c1ee68bf1e
+URL:https://auftragsregister.ch/it/auftrag/8721aa25-a672-4752-83af-b3c1ee68
+ bf1e/
+LOCATION:Aadorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Industriestrasse\, Aadorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fd06713c-ccce-4e96-becc-15b551fd1731-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270108T090000Z
+SUMMARY:Submission deadline: 271 Gipserarbeiten - Neubau Primarschule mit T
+ urnhalle Erlenstrasse\, Oberglatt
+DESCRIPTION:Public buyer: Gemeinde Oberglatt (Anderegg Partner AG)\nSubmiss
+ ion deadline: 8 Jan 2027\, 10:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/fd06713c-ccce-4e96-becc-15b551fd1731/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/fd06713c-ccce-4e96-becc-15b551
+ fd1731
+URL:https://auftragsregister.ch/en/auftrag/fd06713c-ccce-4e96-becc-15b551fd
+ 1731/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 271 Gipserarbeiten - Neubau Primarschule m
+ it Turnhalle Erlenstrasse\, Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

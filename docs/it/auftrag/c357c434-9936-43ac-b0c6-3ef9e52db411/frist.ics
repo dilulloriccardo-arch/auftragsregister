@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c357c434-9936-43ac-b0c6-3ef9e52db411-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270202T225900Z
+SUMMARY:Scadenza: N21.12 MP-200030 - NEB EM Gd-St-Bernard (Teil 1) - Lot 21
+ 2: Travaux de construction pour l'assainissement de 6 ouvrages d'art (ID 1
+ 2022)
+DESCRIPTION:Ente pubblico: Bundesamt für Strassen ASTRA - Abteilung Strass
+ eninfrastruktur West - Filiale Thun\nScadenza: 02.02.2027\, 23:59\nNel reg
+ istro: https://auftragsregister.ch/it/auftrag/c357c434-9936-43ac-b0c6-3ef9
+ e52db411/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail
+ /c357c434-9936-43ac-b0c6-3ef9e52db411
+URL:https://auftragsregister.ch/it/auftrag/c357c434-9936-43ac-b0c6-3ef9e52d
+ b411/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N21.12 MP-200030 - NEB EM Gd-St-Bernard (Teil 1) - Lo
+ t 212: Travaux de construction pour l'assainissement de 6 ouvrages d'art (
+ ID 12022)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18a12ab4-dc84-49bf-947a-c9b69ec26997-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Eingabefrist: BKP 275\, Schliessanlagen
+DESCRIPTION:Auftraggeber: Solothurner Spitäler AG - Immobilienmanagement\n
+ Eingabefrist: 17.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/18a12ab4-dc84-49bf-947a-c9b69ec26997/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/18a12ab4-dc84-49bf-947a-c9b69ec
+ 26997
+URL:https://auftragsregister.ch/de/auftrag/18a12ab4-dc84-49bf-947a-c9b69ec2
+ 6997/
+LOCATION:Olten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 275\, Schliessanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff8ccb5a-1f3f-4a26-8d06-19377deff706-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270115T110000Z
+SUMMARY:Délai de remise : AO – tpg – systèmes audio-visuel de visio
+ conférence – Fourniture\, installation et mise en service d’équipeme
+ nt et/ou de salles de réunions – Maintenance
+DESCRIPTION:Acheteur public : Transport publics genevois (tpg)\nDélai de
+  remise : 15.01.2027\, 12 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/ff8ccb5a-1f3f-4a26-8d06-19377deff706/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/ff8ccb5a-1f3f-4a26-
+ 8d06-19377deff706
+URL:https://auftragsregister.ch/fr/auftrag/ff8ccb5a-1f3f-4a26-8d06-19377def
+ f706/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AO – tpg – systèmes audio-visuel de v
+ isioconférence – Fourniture\, installation et mise en service d’équi
+ pement et/ou de salles de réunions – Maintenance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

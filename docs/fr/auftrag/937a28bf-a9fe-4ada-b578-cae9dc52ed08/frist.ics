@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:937a28bf-a9fe-4ada-b578-cae9dc52ed08-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270127T110000Z
+SUMMARY:Délai de remise : IT5050.1019 / Site du centre de données 4
+DESCRIPTION:Acheteur public : Amt für Informatik und Organisation (AIO)\
+ nDélai de remise : 27.01.2027\, 12 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/937a28bf-a9fe-4ada-b578-cae9dc52ed08/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/937a28bf-
+ a9fe-4ada-b578-cae9dc52ed08
+URL:https://auftragsregister.ch/fr/auftrag/937a28bf-a9fe-4ada-b578-cae9dc52
+ ed08/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IT5050.1019 / Site du centre de données 4
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

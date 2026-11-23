@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0bb23c0f-1922-481c-86f1-c79ea1173923-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: Werkhof Beringen - Elektroinstallationen
+DESCRIPTION:Auftraggeber: Gemeinde Beringen\nEingabefrist: 14.12.2026\, 12.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0bb23c0f-1922
+ -481c-86f1-c79ea1173923/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/0bb23c0f-1922-481c-86f1-c79ea1173923
+URL:https://auftragsregister.ch/de/auftrag/0bb23c0f-1922-481c-86f1-c79ea117
+ 3923/
+LOCATION:Beringen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Werkhof Beringen - Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

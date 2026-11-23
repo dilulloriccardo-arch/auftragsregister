@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:101671fd-99c4-4356-b967-74963492b563-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Submission deadline: Sachversicherung 2027
+DESCRIPTION:Public buyer: Insel Gruppe AG\nSubmission deadline: 10 Dec 20
+ 26\nIn the register: https://auftragsregister.ch/en/auftrag/101671fd-99c4-
+ 4356-b967-74963492b563/\nOfficial publication: https://www.simap.ch/en/pro
+ ject-detail/101671fd-99c4-4356-b967-74963492b563
+URL:https://auftragsregister.ch/en/auftrag/101671fd-99c4-4356-b967-74963492
+ b563/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sachversicherung 2027
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

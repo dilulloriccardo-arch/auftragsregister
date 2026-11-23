@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9c5f93a2-fdf9-463f-802f-0db2f7270ab0-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270208T150000Z
+SUMMARY:Submission deadline: ewzWHH/BGH\, Etappe 2\, BKP 239 AV-Ausstattung
+DESCRIPTION:Public buyer: Elektrizitätswerk der Stadt Zürich (ewz)\nSubmi
+ ssion deadline: 8 Feb 2027\, 16:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/9c5f93a2-fdf9-463f-802f-0db2f7270ab0/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/9c5f93a2-fdf9-463f-802f-0db2
+ f7270ab0
+URL:https://auftragsregister.ch/en/auftrag/9c5f93a2-fdf9-463f-802f-0db2f727
+ 0ab0/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ewzWHH/BGH\, Etappe 2\, BKP 239 AV-Ausstat
+ tung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

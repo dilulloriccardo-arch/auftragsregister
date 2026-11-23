@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46a0be4f-7007-44f6-95d0-ed69813d3205-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Délai de remise : Renouvellement des licences pour la plateforme
+  Tungsten Kofax Capture
+DESCRIPTION:Acheteur public : Staat Freiburg\, Amt für Informatik und Te
+ lekommunikation ITA\nDélai de remise : 07.01.2027\, 11 h 00\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/46a0be4f-7007-44f6-9
+ 5d0-ed69813d3205/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/46a0be4f-7007-44f6-95d0-ed69813d3205
+URL:https://auftragsregister.ch/fr/auftrag/46a0be4f-7007-44f6-95d0-ed69813d
+ 3205/
+LOCATION:Freiburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Renouvellement des licences pour la platef
+ orme Tungsten Kofax Capture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

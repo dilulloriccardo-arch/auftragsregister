@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2cff07c9-3450-45b7-beee-6814840ca1ea-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:Eingabefrist: Bauarbeiten für Werkleitungen EKT AG\, Eschikofen - 
+ Wellhausen
+DESCRIPTION:Auftraggeber: EKT AG\nEingabefrist: 08.01.2027\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/2cff07c9-3450-45b7-beee-6814840ca1ea/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/2cff07c9-34
+ 50-45b7-beee-6814840ca1ea
+URL:https://auftragsregister.ch/de/auftrag/2cff07c9-3450-45b7-beee-6814840c
+ a1ea/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bauarbeiten für Werkleitungen EKT AG\, Eschikofe
+ n - Wellhausen
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

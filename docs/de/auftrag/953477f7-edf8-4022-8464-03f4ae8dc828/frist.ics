@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:953477f7-edf8-4022-8464-03f4ae8dc828-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Eingabefrist: Hôtel-de-Ville\, La Chaux-de-Fonds_CFC273.3_Menuiser
+ ie courante agencement
+DESCRIPTION:Auftraggeber: Service bâtiments et logement\nEingabefrist: 09.
+ 12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ 953477f7-edf8-4022-8464-03f4ae8dc828/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/953477f7-edf8-4022-8464-03f4ae8dc828
+URL:https://auftragsregister.ch/de/auftrag/953477f7-edf8-4022-8464-03f4ae8d
+ c828/
+LOCATION:La Chaux de Fonds
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Hôtel-de-Ville\, La Chaux-de-Fonds_CFC273.3_Menu
+ iserie courante agencement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

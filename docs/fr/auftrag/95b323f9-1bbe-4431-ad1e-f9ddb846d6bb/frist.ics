@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95b323f9-1bbe-4431-ad1e-f9ddb846d6bb-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Délai de remise : erzo ARA\, Klärschlammtrocknung Oftringen - L
+ üftungsanlagen
+DESCRIPTION:Acheteur public : erzo ARA (Hunziker Betatech)\nDélai de rem
+ ise : 13.01.2027\, 12 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/95b323f9-1bbe-4431-ad1e-f9ddb846d6bb/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/95b323f9-1bbe-4431-ad1e
+ -f9ddb846d6bb
+URL:https://auftragsregister.ch/fr/auftrag/95b323f9-1bbe-4431-ad1e-f9ddb846
+ d6bb/
+LOCATION:Oftringen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : erzo ARA\, Klärschlammtrocknung Oftringen
+  - Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

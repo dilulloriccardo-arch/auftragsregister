@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c79d49b0-c42b-4153-81dc-ed646b6a1f01-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270209T140000Z
+SUMMARY:Eingabefrist: Neubau Klinikum 2\, Phase 1\, SKP 272\, Sondertüren
+DESCRIPTION:Auftraggeber: Universitätsspital Basel\nEingabefrist: 09.02.20
+ 27\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c79d4
+ 9b0-c42b-4153-81dc-ed646b6a1f01/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/c79d49b0-c42b-4153-81dc-ed646b6a1f01
+URL:https://auftragsregister.ch/de/auftrag/c79d49b0-c42b-4153-81dc-ed646b6a
+ 1f01/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Klinikum 2\, Phase 1\, SKP 272\, Sondertü
+ ren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ed369c7-1738-4b58-a1d1-b71c410c1be0-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270108T090000Z
+SUMMARY:Submission deadline: 273 Innentüren aus Holz - Neubau Primarschule
+  mit Turnhalle Erlenstrasse\, Oberglatt
+DESCRIPTION:Public buyer: Gemeinde Oberglatt (Anderegg Partner AG)\nSubmiss
+ ion deadline: 8 Jan 2027\, 10:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/0ed369c7-1738-4b58-a1d1-b71c410c1be0/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/0ed369c7-1738-4b58-a1d1-b71c41
+ 0c1be0
+URL:https://auftragsregister.ch/en/auftrag/0ed369c7-1738-4b58-a1d1-b71c410c
+ 1be0/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 273 Innentüren aus Holz - Neubau Primarsc
+ hule mit Turnhalle Erlenstrasse\, Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

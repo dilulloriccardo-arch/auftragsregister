@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5eac20a-ad06-42b9-a6a8-ffd50ab81182-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261217T150000Z
+SUMMARY:Submission deadline: BAV 83149 KDG Schwandenwiese\, Erweiterung - B
+ KP 242 Heizungs- und Kälteanlagen
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 17 Dec 2026\, 16:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/a5eac20a-ad06-42b9-a6a8-ffd50ab81182/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/a5eac20a-ad06-42b9-a6a8-ffd50ab81182
+URL:https://auftragsregister.ch/en/auftrag/a5eac20a-ad06-42b9-a6a8-ffd50ab8
+ 1182/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 83149 KDG Schwandenwiese\, Erweiterung
+  - BKP 242 Heizungs- und Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

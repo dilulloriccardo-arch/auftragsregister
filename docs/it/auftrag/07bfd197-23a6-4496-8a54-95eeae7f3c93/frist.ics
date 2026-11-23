@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07bfd197-23a6-4496-8a54-95eeae7f3c93-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Scadenza: KW-Rothenbrunnen\, Revision Maschinen Trafo 41 (55MVA\, 1
+ 1/60kV)
+DESCRIPTION:Ente pubblico: Elektrizitätswerk der Stadt Zürich (ewz)\nScad
+ enza: 11.01.2027\, 12:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/07bfd197-23a6-4496-8a54-95eeae7f3c93/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/07bfd197-23a6-4496-8a54-95eeae7f3c93
+URL:https://auftragsregister.ch/it/auftrag/07bfd197-23a6-4496-8a54-95eeae7f
+ 3c93/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: KW-Rothenbrunnen\, Revision Maschinen Trafo 41 (55MVA
+ \, 11/60kV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

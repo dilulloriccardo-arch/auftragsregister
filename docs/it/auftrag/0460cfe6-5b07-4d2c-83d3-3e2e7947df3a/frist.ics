@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0460cfe6-5b07-4d2c-83d3-3e2e7947df3a-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Scadenza: Erweiterung Schule Champagne - BKP 273.3 Allg. Schreinera
+ rbeiten P2
+DESCRIPTION:Ente pubblico: Stadt Biel\, Abteilung Hochbau\nScadenza: 15.01.
+ 2027\nNel registro: https://auftragsregister.ch/it/auftrag/0460cfe6-5b07-4
+ d2c-83d3-3e2e7947df3a/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/0460cfe6-5b07-4d2c-83d3-3e2e7947df3a
+URL:https://auftragsregister.ch/it/auftrag/0460cfe6-5b07-4d2c-83d3-3e2e7947
+ df3a/
+LOCATION:Biel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erweiterung Schule Champagne - BKP 273.3 Allg. Schrei
+ nerarbeiten P2
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

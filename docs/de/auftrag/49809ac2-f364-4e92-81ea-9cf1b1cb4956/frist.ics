@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49809ac2-f364-4e92-81ea-9cf1b1cb4956-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Eingabefrist: Sièges de théâtre
+DESCRIPTION:Auftraggeber: SAITRN (Théâtre du Passage)\nEingabefrist: 15.1
+ 2.2026\nIm Register: https://auftragsregister.ch/de/auftrag/49809ac2-f364-
+ 4e92-81ea-9cf1b1cb4956/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/49809ac2-f364-4e92-81ea-9cf1b1cb4956
+URL:https://auftragsregister.ch/de/auftrag/49809ac2-f364-4e92-81ea-9cf1b1cb
+ 4956/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sièges de théâtre
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

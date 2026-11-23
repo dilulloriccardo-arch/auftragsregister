@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8f6d6faf-14a5-4d25-b230-136d7f98cd97-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T160000Z
+SUMMARY:Eingabefrist: Neubauten Stiftung Schürmatt - BKP 292 Bauingenieur 
+ Holzbau
+DESCRIPTION:Auftraggeber: Stiftung Schürmatt\nEingabefrist: 17.12.2026\, 1
+ 7.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8f6d6faf-14
+ a5-4d25-b230-136d7f98cd97/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/8f6d6faf-14a5-4d25-b230-136d7f98cd97
+URL:https://auftragsregister.ch/de/auftrag/8f6d6faf-14a5-4d25-b230-136d7f98
+ cd97/
+LOCATION:Zetzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubauten Stiftung Schürmatt - BKP 292 Bauingeni
+ eur Holzbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

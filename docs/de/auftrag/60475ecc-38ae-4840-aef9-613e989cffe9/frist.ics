@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60475ecc-38ae-4840-aef9-613e989cffe9-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270113T100000Z
+SUMMARY:Eingabefrist: Rénovation globale du Casino Théâtre (2381TI) Ferb
+ lanterie
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 13.01.2027\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/60475ecc-38ae-4840-aef9-613e989cffe9/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/60475ecc-38ae-4840-aef9-613e989c
+ ffe9
+URL:https://auftragsregister.ch/de/auftrag/60475ecc-38ae-4840-aef9-613e989c
+ ffe9/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rénovation globale du Casino Théâtre (2381TI) 
+ Ferblanterie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

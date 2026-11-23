@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:178113fa-ae26-41d7-a860-bf0484045b8d-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Eingabefrist: Submission Dienstleistungen Kontrolle ruhender Verkeh
+ r
+DESCRIPTION:Auftraggeber: Stadt Frauenfeld\, Abteilung Sicherheit\nEingabef
+ rist: 07.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/178113fa-ae26-41d7-a860-bf0484045b8d/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/178113fa-ae26-41d7-a860-bf0484045b8d
+URL:https://auftragsregister.ch/de/auftrag/178113fa-ae26-41d7-a860-bf048404
+ 5b8d/
+LOCATION:Frauenfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Submission Dienstleistungen Kontrolle ruhender Ve
+ rkehr
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

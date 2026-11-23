@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5eac20a-ad06-42b9-a6a8-ffd50ab81182-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261217T150000Z
+SUMMARY:Scadenza: BAV 83149 KDG Schwandenwiese\, Erweiterung - BKP 242 Heiz
+ ungs- und Kälteanlagen
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 17.12
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/a5eac2
+ 0a-ad06-42b9-a6a8-ffd50ab81182/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/a5eac20a-ad06-42b9-a6a8-ffd50ab81182
+URL:https://auftragsregister.ch/it/auftrag/a5eac20a-ad06-42b9-a6a8-ffd50ab8
+ 1182/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 83149 KDG Schwandenwiese\, Erweiterung - BKP 242 
+ Heizungs- und Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

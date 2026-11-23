@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:801635c7-61b8-4ac1-befe-67363bfefb5b-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Délai de remise : BAV 40278 GFA Bachwiesen\, Ersatzneubau Haus A
+  - CFC 221 Fenêtres\, portes extérieures
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 14.01.2027\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/801635c7-61b8-4ac1-befe-67363bfefb5b/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/801635c7-61b8-4ac1-b
+ efe-67363bfefb5b
+URL:https://auftragsregister.ch/fr/auftrag/801635c7-61b8-4ac1-befe-67363bfe
+ fb5b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 40278 GFA Bachwiesen\, Ersatzneubau Ha
+ us A - CFC 221 Fenêtres\, portes extérieures
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

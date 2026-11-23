@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:afe2390f-327f-44ae-91e2-0e0af60c58f9-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270122T140000Z
+SUMMARY:Scadenza: BKP 273.1 Wandschränke\, Gestelle und Allg. Schreinerarb
+ eiten
+DESCRIPTION:Ente pubblico: Schule Bürglen (FoBu Arch.)\nScadenza: 22.01.20
+ 27\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/afe2390f-
+ 327f-44ae-91e2-0e0af60c58f9/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/afe2390f-327f-44ae-91e2-0e0af60c58f9
+URL:https://auftragsregister.ch/it/auftrag/afe2390f-327f-44ae-91e2-0e0af60c
+ 58f9/
+LOCATION:Bürglen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 273.1 Wandschränke\, Gestelle und Allg. Schreine
+ rarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

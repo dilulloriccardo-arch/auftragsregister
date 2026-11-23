@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a8582a5b-c7a2-4eaa-88b9-fd20aa47942b-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261211T140000Z
+SUMMARY:Délai de remise : Ersatzneubau Reservoir Aubrig - Baumeister Roh
+ bau
+DESCRIPTION:Acheteur public : Gemeinde Vorderthal\nDélai de remise : 1
+ 1.12.2026\, 15 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/a8582a5b-c7a2-4eaa-88b9-fd20aa47942b/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/a8582a5b-c7a2-4eaa-88b9-fd20aa
+ 47942b
+URL:https://auftragsregister.ch/fr/auftrag/a8582a5b-c7a2-4eaa-88b9-fd20aa47
+ 942b/
+LOCATION:Vorderthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatzneubau Reservoir Aubrig - Baumeister
+  Rohbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

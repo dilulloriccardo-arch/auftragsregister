@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:249faf7d-31d5-4bfc-8b61-d44b8cd68670-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Délai de remise : 1 Fourniture d'un véhicule polyvalent 4x4 GR 
+ 5267_B6
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 30.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/249faf7d-31d5-4bfc-8b61-d44b8cd68670/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/249faf7d-31d5-4bfc-8b61-d44b8
+ cd68670
+URL:https://auftragsregister.ch/fr/auftrag/249faf7d-31d5-4bfc-8b61-d44b8cd6
+ 8670/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 1 Fourniture d'un véhicule polyvalent 4x4
+  GR 5267_B6
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:75b6cd04-1c22-4c0d-bd99-7af457f68c30-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270115T110000Z
+SUMMARY:Eingabefrist: BKP 281.0 Unterlagsboden
+DESCRIPTION:Auftraggeber: Gemeinde Ebikon (Jung Meyerhans AG)\nEingabefrist
+ : 15.01.2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/75b6cd04-1c22-4c0d-bd99-7af457f68c30/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/75b6cd04-1c22-4c0d-bd99-7af457f68c30
+URL:https://auftragsregister.ch/de/auftrag/75b6cd04-1c22-4c0d-bd99-7af457f6
+ 8c30/
+LOCATION:Ebikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 281.0 Unterlagsboden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

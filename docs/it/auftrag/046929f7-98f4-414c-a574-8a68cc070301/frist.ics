@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:046929f7-98f4-414c-a574-8a68cc070301-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270104T150000Z
+SUMMARY:Scadenza: Ausschreibung Schülertransport Primarstufe
+DESCRIPTION:Ente pubblico: Gemeinde Grub AR\nScadenza: 04.01.2027\, 16:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/046929f7-98f4-414c-a5
+ 74-8a68cc070301/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/046929f7-98f4-414c-a574-8a68cc070301
+URL:https://auftragsregister.ch/it/auftrag/046929f7-98f4-414c-a574-8a68cc07
+ 0301/
+LOCATION:Grub AR
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung Schülertransport Primarstufe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

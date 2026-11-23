@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71dae996-fb47-4943-a73a-8b3935eecb12-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270122T103000Z
+SUMMARY:Eingabefrist: MobEnfance_A1 / Mobiliers et fournitures pour les str
+ uctures d'accueil de la petite enfance
+DESCRIPTION:Auftraggeber: Centrale municipale d'achat et d'impression de la
+  Ville de Genève\nEingabefrist: 22.01.2027\, 11.30 Uhr\nIm Register: htt
+ ps://auftragsregister.ch/de/auftrag/71dae996-fb47-4943-a73a-8b3935eecb12/\
+ nAmtliche Publikation: https://www.simap.ch/de/project-detail/71dae996-fb4
+ 7-4943-a73a-8b3935eecb12
+URL:https://auftragsregister.ch/de/auftrag/71dae996-fb47-4943-a73a-8b3935ee
+ cb12/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MobEnfance_A1 / Mobiliers et fournitures pour les
+  structures d'accueil de la petite enfance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78c46cff-1928-471c-a329-174edbfd71fa-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Scadenza: 1 Kommunalfahrzeug 4x4 GR 36'606_B6
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 30.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/78c46cff-1928-4
+ 71c-a329-174edbfd71fa/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/78c46cff-1928-471c-a329-174edbfd71fa
+URL:https://auftragsregister.ch/it/auftrag/78c46cff-1928-471c-a329-174edbfd
+ 71fa/
+LOCATION:Ilanz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 1 Kommunalfahrzeug 4x4 GR 36'606_B6
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

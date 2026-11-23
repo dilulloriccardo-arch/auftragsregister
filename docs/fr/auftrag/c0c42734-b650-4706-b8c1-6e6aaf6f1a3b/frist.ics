@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c0c42734-b650-4706-b8c1-6e6aaf6f1a3b-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:1
+DTSTART:20270528T130000Z
+SUMMARY:Délai de remise : EA 2035 Zurich Stadelhofen extension de l’in
+ stallation\, partie de projet 30101 EG gros œuvre Tunnel du Zürichberg\,
+  de Riesbach\, de quai et Tiefenbrunnen
+DESCRIPTION:Acheteur public : SBB CFF FFS Einkauf Bauprojekte Region Ost\
+ nDélai de remise : 28.05.2027\, 15 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/c0c42734-b650-4706-b8c1-6e6aaf6f1a3b/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/c0c42734-
+ b650-4706-b8c1-6e6aaf6f1a3b
+URL:https://auftragsregister.ch/fr/auftrag/c0c42734-b650-4706-b8c1-6e6aaf6f
+ 1a3b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EA 2035 Zurich Stadelhofen extension de l
+ ’installation\, partie de projet 30101 EG gros œuvre Tunnel du Zürichb
+ erg\, de Riesbach\, de quai et Tiefenbrunnen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

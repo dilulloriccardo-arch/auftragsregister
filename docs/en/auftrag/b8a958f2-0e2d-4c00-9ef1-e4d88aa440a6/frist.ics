@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b8a958f2-0e2d-4c00-9ef1-e4d88aa440a6-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Submission deadline: Mise en conformité des menuiseries extérieur
+ es de quatre immeubles (2132Bis) protections\, traitements polluants\, men
+ uiseries extérieures\, traitement des surfaces\, fermetures extérieures\
+ , menuiserie isolations des caissons de stores
+DESCRIPTION:Public buyer: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nS
+ ubmission deadline: 9 Dec 2026\, 11:00\nIn the register: https://auftrag
+ sregister.ch/en/auftrag/b8a958f2-0e2d-4c00-9ef1-e4d88aa440a6/\nOfficial pu
+ blication: https://www.simap.ch/en/project-detail/b8a958f2-0e2d-4c00-9ef1-
+ e4d88aa440a6
+URL:https://auftragsregister.ch/en/auftrag/b8a958f2-0e2d-4c00-9ef1-e4d88aa4
+ 40a6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Mise en conformité des menuiseries extér
+ ieures de quatre immeubles (2132Bis) protections\, traitements polluants\,
+  menuiseries extérieures\, traitement des surfaces\, fermetures extérieu
+ res\, menuiserie isolations des caissons de stores
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

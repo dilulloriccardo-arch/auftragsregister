@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49a4cc17-515c-42df-98b7-3f7d31f7fde3-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270115T130000Z
+SUMMARY:Submission deadline: KW Freienstein Sanierungsarbeiten Kraftwerk St
+ ahlwasserbau
+DESCRIPTION:Public buyer: toesStrom AG (Entegra Wasserkraft AG)\nSubmission
+  deadline: 15 Jan 2027\, 14:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/49a4cc17-515c-42df-98b7-3f7d31f7fde3/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/49a4cc17-515c-42df-98b7-3f7d31f7
+ fde3
+URL:https://auftragsregister.ch/en/auftrag/49a4cc17-515c-42df-98b7-3f7d31f7
+ fde3/
+LOCATION:Freienstein
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: KW Freienstein Sanierungsarbeiten Kraftwer
+ k Stahlwasserbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f086eff8-0bd4-46d5-be97-740221fdcf9b-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270122T225900Z
+SUMMARY:Délai de remise : EP Ilanz/Glion\, WE Varduz\, Neubau Tunnel Val
+  Sum Punt
+DESCRIPTION:Acheteur public : Gemeinde Ilanz/Glion\nDélai de remise : 
+ 22.01.2027\, 23 h 59\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/f086eff8-0bd4-46d5-be97-740221fdcf9b/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/f086eff8-0bd4-46d5-be97-740221
+ fdcf9b
+URL:https://auftragsregister.ch/fr/auftrag/f086eff8-0bd4-46d5-be97-740221fd
+ cf9b/
+LOCATION:Duvin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EP Ilanz/Glion\, WE Varduz\, Neubau Tunnel
+  Val Sum Punt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

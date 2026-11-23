@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1935051a-9489-4daf-b0fe-dd5a89ed7351-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:1
+DTSTART:20270112T140000Z
+SUMMARY:Scadenza: Beschaffung und Instandhaltung Hochdruckreiniger mit akku
+ betriebenem Fahrmotor
+DESCRIPTION:Ente pubblico: SBB AG\, Flottenmanagement Strassenfahrzeuge\nSc
+ adenza: 12.01.2027\, 15:00\nNel registro: https://auftragsregister.ch/it/a
+ uftrag/1935051a-9489-4daf-b0fe-dd5a89ed7351/\nPubblicazione ufficiale: htt
+ ps://www.simap.ch/it/project-detail/1935051a-9489-4daf-b0fe-dd5a89ed7351
+URL:https://auftragsregister.ch/it/auftrag/1935051a-9489-4daf-b0fe-dd5a89ed
+ 7351/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung und Instandhaltung Hochdruckreiniger mit 
+ akkubetriebenem Fahrmotor
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:79c70597-d6e3-4f8e-bee4-f691095e6aab-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Scadenza: OGER FLOR l 13606 l BKP 211-02 Baumeister
+DESCRIPTION:Ente pubblico: Hochbauamt\, Baubereich B\nScadenza: 14.01.2027\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/79c70597-d6e
+ 3-4f8e-bee4-f691095e6aab/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/79c70597-d6e3-4f8e-bee4-f691095e6aab
+URL:https://auftragsregister.ch/it/auftrag/79c70597-d6e3-4f8e-bee4-f691095e
+ 6aab/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: OGER FLOR l 13606 l BKP 211-02 Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

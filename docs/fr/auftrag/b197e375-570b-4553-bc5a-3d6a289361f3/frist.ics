@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b197e375-570b-4553-bc5a-3d6a289361f3-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Délai de remise : ARA Thurau\, Aufzüge\, BKP 261
+DESCRIPTION:Acheteur public : Abwasserverband Thurau\nDélai de remise 
+ : 29.01.2027\, 12 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/b197e375-570b-4553-bc5a-3d6a289361f3/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/b197e375-570b-4553-bc5a-3d6a2
+ 89361f3
+URL:https://auftragsregister.ch/fr/auftrag/b197e375-570b-4553-bc5a-3d6a2893
+ 61f3/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ARA Thurau\, Aufzüge\, BKP 261
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

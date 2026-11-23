@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46a0be4f-7007-44f6-95d0-ed69813d3205-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Submission deadline: Verlängerung der Lizenzen für die Plattform 
+ «Tungsten Kofax Capture»
+DESCRIPTION:Public buyer: Staat Freiburg\, Amt für Informatik und Telekomm
+ unikation ITA\nSubmission deadline: 7 Jan 2027\, 11:00\nIn the register:
+  https://auftragsregister.ch/en/auftrag/46a0be4f-7007-44f6-95d0-ed69813d32
+ 05/\nOfficial publication: https://www.simap.ch/en/project-detail/46a0be4f
+ -7007-44f6-95d0-ed69813d3205
+URL:https://auftragsregister.ch/en/auftrag/46a0be4f-7007-44f6-95d0-ed69813d
+ 3205/
+LOCATION:Freiburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Verlängerung der Lizenzen für die Plattf
+ orm «Tungsten Kofax Capture»
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

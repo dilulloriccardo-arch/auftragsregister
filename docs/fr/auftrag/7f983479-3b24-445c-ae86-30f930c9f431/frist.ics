@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7f983479-3b24-445c-ae86-30f930c9f431-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T150000Z
+SUMMARY:Délai de remise : BAV 83185 SA Rütihof\, Umbau BET für TS - BK
+ P 358 Gastroeinrichtungen (Gastro-\, Regenerierküchen)
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 13.01.2027\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/7f983479-3b24-445c-ae86-30f930c9f431/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/7f983479-3b24-445c-a
+ e86-30f930c9f431
+URL:https://auftragsregister.ch/fr/auftrag/7f983479-3b24-445c-ae86-30f930c9
+ f431/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 83185 SA Rütihof\, Umbau BET für TS 
+ - BKP 358 Gastroeinrichtungen (Gastro-\, Regenerierküchen)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

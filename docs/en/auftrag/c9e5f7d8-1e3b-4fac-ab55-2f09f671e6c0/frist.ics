@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9e5f7d8-1e3b-4fac-ab55-2f09f671e6c0-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261216T160000Z
+SUMMARY:Submission deadline: Camion poids lourd 4x4 avec élévateur à nac
+ elle hybride
+DESCRIPTION:Public buyer: Services industriels de Genève\nSubmission deadl
+ ine: 16 Dec 2026\, 17:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/c9e5f7d8-1e3b-4fac-ab55-2f09f671e6c0/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/c9e5f7d8-1e3b-4fac-ab55-2f09f671e6c0
+URL:https://auftragsregister.ch/en/auftrag/c9e5f7d8-1e3b-4fac-ab55-2f09f671
+ e6c0/
+LOCATION:Le Lignon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Camion poids lourd 4x4 avec élévateur à
+  nacelle hybride
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

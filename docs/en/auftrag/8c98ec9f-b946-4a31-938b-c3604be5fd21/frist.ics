@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8c98ec9f-b946-4a31-938b-c3604be5fd21-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270129T100000Z
+SUMMARY:Submission deadline: Collège Bahyse II+III - Blonay-St-Légier / S
+ errurerie
+DESCRIPTION:Public buyer: Commune de Blonay-St-Légier (Consortium FLBG)\nS
+ ubmission deadline: 29 Jan 2027\, 11:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/8c98ec9f-b946-4a31-938b-c3604be5fd21/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/8c98ec9f-b946-4a31-938b
+ -c3604be5fd21
+URL:https://auftragsregister.ch/en/auftrag/8c98ec9f-b946-4a31-938b-c3604be5
+ fd21/
+LOCATION:Blonay
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Collège Bahyse II+III - Blonay-St-Légier
+  / Serrurerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

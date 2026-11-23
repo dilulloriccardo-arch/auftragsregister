@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:809abdfb-dc48-4e63-8501-b5529b2540ae-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Scadenza: Markierungen Bezirk 7\; Haupt-\, Verbindungs- und Nationa
+ lstrasse N29
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 23.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/809abdfb-dc48-4
+ e63-8501-b5529b2540ae/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/809abdfb-dc48-4e63-8501-b5529b2540ae
+URL:https://auftragsregister.ch/it/auftrag/809abdfb-dc48-4e63-8501-b5529b25
+ 40ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Markierungen Bezirk 7\; Haupt-\, Verbindungs- und Nat
+ ionalstrasse N29
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

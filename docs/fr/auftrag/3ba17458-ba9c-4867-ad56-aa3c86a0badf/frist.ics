@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3ba17458-ba9c-4867-ad56-aa3c86a0badf-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261214T080000Z
+SUMMARY:Délai de remise : Submission IT-Servicebezug
+DESCRIPTION:Acheteur public : Gemeindeverwaltung Kirchdorf\nDélai de rem
+ ise : 14.12.2026\, 9 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/3ba17458-ba9c-4867-ad56-aa3c86a0badf/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/3ba17458-ba9c-4867-ad56-
+ aa3c86a0badf
+URL:https://auftragsregister.ch/fr/auftrag/3ba17458-ba9c-4867-ad56-aa3c86a0
+ badf/
+LOCATION:Kirchdorf BE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Submission IT-Servicebezug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

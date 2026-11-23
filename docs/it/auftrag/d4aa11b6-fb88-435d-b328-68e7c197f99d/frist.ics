@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d4aa11b6-fb88-435d-b328-68e7c197f99d-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20261218T110000Z
+SUMMARY:Scadenza: Neubau Reservoir Bruederhof - Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: Gemeinde Buchs ZH (EFP AG)\nScadenza: 18.12.2026
+ \, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/d4aa11b6-fb
+ 88-435d-b328-68e7c197f99d/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/d4aa11b6-fb88-435d-b328-68e7c197f99d
+URL:https://auftragsregister.ch/it/auftrag/d4aa11b6-fb88-435d-b328-68e7c197
+ f99d/
+LOCATION:Buchs ZH
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Reservoir Bruederhof - Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

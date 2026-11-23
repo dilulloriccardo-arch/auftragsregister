@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ffab66c2-e2cb-4578-b70f-67c12086fc6c-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270129T100000Z
+SUMMARY:Scadenza: CDA Pian Scairolo - appalto per gruppo di progettazione p
+ er le fasi SIA da 31 parziale a 53 relative al progetto di realizzazione i
+ mpianto di trattamento microinquinanti e ottimizzazione flussi
+DESCRIPTION:Ente pubblico: Consorzio Depurazione Acque del Pian Scairolo\nS
+ cadenza: 29.01.2027\, 11:00\nNel registro: https://auftragsregister.ch/it/
+ auftrag/ffab66c2-e2cb-4578-b70f-67c12086fc6c/\nPubblicazione ufficiale: ht
+ tps://www.simap.ch/it/project-detail/ffab66c2-e2cb-4578-b70f-67c12086fc6c
+URL:https://auftragsregister.ch/it/auftrag/ffab66c2-e2cb-4578-b70f-67c12086
+ fc6c/
+LOCATION:Figino
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: CDA Pian Scairolo - appalto per gruppo di progettazio
+ ne per le fasi SIA da 31 parziale a 53 relative al progetto di realizzazio
+ ne impianto di trattamento microinquinanti e ottimizzazione flussi
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

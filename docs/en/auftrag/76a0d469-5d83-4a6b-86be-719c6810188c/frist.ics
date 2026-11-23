@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76a0d469-5d83-4a6b-86be-719c6810188c-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270121T110000Z
+SUMMARY:Submission deadline: Juristische Unterstützung im Bereich Altlaste
+ n
+DESCRIPTION:Public buyer: Dienststelle Umwelt und Energie\, Kanton Luzern\n
+ Submission deadline: 21 Jan 2027\, 12:00\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/76a0d469-5d83-4a6b-86be-719c6810188c/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/76a0d469-5d83-4a6b-86b
+ e-719c6810188c
+URL:https://auftragsregister.ch/en/auftrag/76a0d469-5d83-4a6b-86be-719c6810
+ 188c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Juristische Unterstützung im Bereich Altl
+ asten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

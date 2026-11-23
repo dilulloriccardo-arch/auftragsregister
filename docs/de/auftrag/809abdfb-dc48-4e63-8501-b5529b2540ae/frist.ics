@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:809abdfb-dc48-4e63-8501-b5529b2540ae-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Eingabefrist: Markierungen Bezirk 7\; Haupt-\, Verbindungs- und Nat
+ ionalstrasse N29
+DESCRIPTION:Auftraggeber: Tiefbauamt Graubünden\nEingabefrist: 23.12.2026\
+ , 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/809abdfb
+ -dc48-4e63-8501-b5529b2540ae/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/809abdfb-dc48-4e63-8501-b5529b2540ae
+URL:https://auftragsregister.ch/de/auftrag/809abdfb-dc48-4e63-8501-b5529b25
+ 40ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Markierungen Bezirk 7\; Haupt-\, Verbindungs- und
+  Nationalstrasse N29
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

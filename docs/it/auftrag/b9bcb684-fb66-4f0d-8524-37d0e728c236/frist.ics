@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b9bcb684-fb66-4f0d-8524-37d0e728c236-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270117T225900Z
+SUMMARY:Scadenza: Beschaffung von Mittelspannungskabeln
+DESCRIPTION:Ente pubblico: Stadtwerk Winterthur\nScadenza: 17.01.2027\, 23:
+ 59\nNel registro: https://auftragsregister.ch/it/auftrag/b9bcb684-fb66-4f0
+ d-8524-37d0e728c236/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/b9bcb684-fb66-4f0d-8524-37d0e728c236
+URL:https://auftragsregister.ch/it/auftrag/b9bcb684-fb66-4f0d-8524-37d0e728
+ c236/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung von Mittelspannungskabeln
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

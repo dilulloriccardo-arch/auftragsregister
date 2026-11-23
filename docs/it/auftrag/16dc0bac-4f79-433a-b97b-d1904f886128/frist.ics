@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16dc0bac-4f79-433a-b97b-d1904f886128-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261216T130000Z
+SUMMARY:Scadenza: Sanierung Mangeli\, Menzingen
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Menzingen\, Abteilung Bau\nSca
+ denza: 16.12.2026\, 14:00\nNel registro: https://auftragsregister.ch/it/au
+ ftrag/16dc0bac-4f79-433a-b97b-d1904f886128/\nPubblicazione ufficiale: http
+ s://www.simap.ch/it/project-detail/16dc0bac-4f79-433a-b97b-d1904f886128
+URL:https://auftragsregister.ch/it/auftrag/16dc0bac-4f79-433a-b97b-d1904f88
+ 6128/
+LOCATION:Menzingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Mangeli\, Menzingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

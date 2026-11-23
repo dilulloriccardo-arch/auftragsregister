@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:046929f7-98f4-414c-a574-8a68cc070301-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270104T150000Z
+SUMMARY:Délai de remise : Appel d'offres pour le transport scolaire des 
+ élèves du primaire
+DESCRIPTION:Acheteur public : Gemeinde Grub AR\nDélai de remise : 04.0
+ 1.2027\, 16 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/046929f7-98f4-414c-a574-8a68cc070301/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/046929f7-98f4-414c-a574-8a68cc07030
+ 1
+URL:https://auftragsregister.ch/fr/auftrag/046929f7-98f4-414c-a574-8a68cc07
+ 0301/
+LOCATION:Grub AR
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offres pour le transport scolaire 
+ des élèves du primaire
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

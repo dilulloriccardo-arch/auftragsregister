@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbc85d6b-cb41-4048-936d-ee54e244c958-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Scadenza: Travaux de lavage et de balayage dans les tunnels du cont
+ ournement de Genève Autoroute A1 et A1AP
+DESCRIPTION:Ente pubblico: SIERA - Service Intercantonal d'Entretien du Ré
+ seau Autoroutier\nScadenza: 07.12.2026\, 12:00\nNel registro: https://auft
+ ragsregister.ch/it/auftrag/bbc85d6b-cb41-4048-936d-ee54e244c958/\nPubblica
+ zione ufficiale: https://www.simap.ch/it/project-detail/bbc85d6b-cb41-4048
+ -936d-ee54e244c958
+URL:https://auftragsregister.ch/it/auftrag/bbc85d6b-cb41-4048-936d-ee54e244
+ c958/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Travaux de lavage et de balayage dans les tunnels du 
+ contournement de Genève Autoroute A1 et A1AP
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81fa795e-d6c0-4acf-8e77-7ab7121cad1c-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Scadenza: Beschaffung von typengleichen Patrouillenfahrzeugen für 
+ die Zuger Polizei
+DESCRIPTION:Ente pubblico: Kanton Zug\, handelnd durch die Sicherheitsdirek
+ tion\nScadenza: 16.12.2026\, 23:59\nNel registro: https://auftragsregister
+ .ch/it/auftrag/81fa795e-d6c0-4acf-8e77-7ab7121cad1c/\nPubblicazione uffici
+ ale: https://www.simap.ch/it/project-detail/81fa795e-d6c0-4acf-8e77-7ab712
+ 1cad1c
+URL:https://auftragsregister.ch/it/auftrag/81fa795e-d6c0-4acf-8e77-7ab7121c
+ ad1c/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung von typengleichen Patrouillenfahrzeugen f
+ ür die Zuger Polizei
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e619a1f7-b98d-4b43-b8a5-7361c67db489-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Délai de remise : Réaménagement parking de la halle des Fêtes
+DESCRIPTION:Acheteur public : Municipalité de Savièse\nDélai de remise
+  : 10.12.2026\nDans le registre : https://auftragsregister.ch/fr/auftr
+ ag/e619a1f7-b98d-4b43-b8a5-7361c67db489/\nPublication officielle : https
+ ://www.simap.ch/fr/project-detail/e619a1f7-b98d-4b43-b8a5-7361c67db489
+URL:https://auftragsregister.ch/fr/auftrag/e619a1f7-b98d-4b43-b8a5-7361c67d
+ b489/
+LOCATION:Savièse
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Réaménagement parking de la halle des F
+ êtes
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

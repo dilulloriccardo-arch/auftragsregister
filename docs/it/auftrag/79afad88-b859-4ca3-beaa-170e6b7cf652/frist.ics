@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:79afad88-b859-4ca3-beaa-170e6b7cf652-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T090000Z
+SUMMARY:Scadenza: Manutenzione e riparazione degli impianti di rilevazione 
+ e allarme gas
+DESCRIPTION:Ente pubblico: HBD - Immobilien Stadt Zürich (IMMO)\nScadenza:
+  13.01.2027\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 79afad88-b859-4ca3-beaa-170e6b7cf652/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/79afad88-b859-4ca3-beaa-170e6b7cf652
+URL:https://auftragsregister.ch/it/auftrag/79afad88-b859-4ca3-beaa-170e6b7c
+ f652/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Manutenzione e riparazione degli impianti di rilevazi
+ one e allarme gas
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

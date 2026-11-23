@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4fc568d-9d51-4eb4-9d0b-e822b09ae7ef-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270204T150000Z
+SUMMARY:Submission deadline: Planificateur centre de maintenance et dépôt
+  - Rete Tram-Treno del Luganese (RTTL) - Tappa prioritaria
+DESCRIPTION:Public buyer: Rete Tram-Treno del Luganese SA (RTTL SA)\nSubmis
+ sion deadline: 4 Feb 2027\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/e4fc568d-9d51-4eb4-9d0b-e822b09ae7ef/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/e4fc568d-9d51-4eb4-9d0b-e822b
+ 09ae7ef
+URL:https://auftragsregister.ch/en/auftrag/e4fc568d-9d51-4eb4-9d0b-e822b09a
+ e7ef/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Planificateur centre de maintenance et dé
+ pôt - Rete Tram-Treno del Luganese (RTTL) - Tappa prioritaria
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb0906c4-ae00-47b7-b334-bd179033d4b6-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Eingabefrist: B.10629 KUE D Instandsetzung Kältemaschinen I BKP 29
+ 4 HLK-Ingenieur (Kältefachplaner inkl. Gesamtleitung und Fachkoordination
+ ) | OV
+DESCRIPTION:Auftraggeber: Universitätsspital Zürich\nEingabefrist: 11.01.
+ 2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/cb0
+ 906c4-ae00-47b7-b334-bd179033d4b6/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/cb0906c4-ae00-47b7-b334-bd179033d4b6
+URL:https://auftragsregister.ch/de/auftrag/cb0906c4-ae00-47b7-b334-bd179033
+ d4b6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: B.10629 KUE D Instandsetzung Kältemaschinen I BK
+ P 294 HLK-Ingenieur (Kältefachplaner inkl. Gesamtleitung und Fachkoordina
+ tion) | OV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

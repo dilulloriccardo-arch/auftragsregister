@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4cbd9951-8492-4882-a85a-bd57b071bd97-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Délai de remise : Markierungen Bezirk 2\; Haupt- und Verbindungs
+ strassen
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 23.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/4cbd9951-8492-4882-a85a-bd57b071bd97/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/4cbd9951-8492-4882-a85a-bd57b
+ 071bd97
+URL:https://auftragsregister.ch/fr/auftrag/4cbd9951-8492-4882-a85a-bd57b071
+ bd97/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Markierungen Bezirk 2\; Haupt- und Verbind
+ ungsstrassen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

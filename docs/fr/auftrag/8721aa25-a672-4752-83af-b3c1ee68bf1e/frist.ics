@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8721aa25-a672-4752-83af-b3c1ee68bf1e-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261211T100000Z
+SUMMARY:Délai de remise : Sanierung Industriestrasse\, Aadorf
+DESCRIPTION:Acheteur public : Gemeinde Aadorf\, Amt für Bau und Umwelt\n
+ Délai de remise : 11.12.2026\, 11 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/8721aa25-a672-4752-83af-b3c1ee68bf1e/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/8721aa25-a
+ 672-4752-83af-b3c1ee68bf1e
+URL:https://auftragsregister.ch/fr/auftrag/8721aa25-a672-4752-83af-b3c1ee68
+ bf1e/
+LOCATION:Aadorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Industriestrasse\, Aadorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

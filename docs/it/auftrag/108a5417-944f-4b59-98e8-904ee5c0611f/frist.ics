@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:108a5417-944f-4b59-98e8-904ee5c0611f-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270118T090000Z
+SUMMARY:Scadenza: MVR-N - Renforcement du pont de Toveyre - Travaux de gén
+ ie civil
+DESCRIPTION:Ente pubblico: Transports Montreux-Vevey-Riviera SA - Infrastru
+ cture Projets\nScadenza: 18.01.2027\, 10:00\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/108a5417-944f-4b59-98e8-904ee5c0611f/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/108a5417-944f-4b59-98
+ e8-904ee5c0611f
+URL:https://auftragsregister.ch/it/auftrag/108a5417-944f-4b59-98e8-904ee5c0
+ 611f/
+LOCATION:Montreux
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MVR-N - Renforcement du pont de Toveyre - Travaux de 
+ génie civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

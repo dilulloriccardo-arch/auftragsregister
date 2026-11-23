@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4f3799d7-8ebe-400a-b33f-3f44cd3b60c1-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270226T160000Z
+SUMMARY:Scadenza: 110 kV GIS-Schaltanlage dreiphasig gekapselt
+DESCRIPTION:Ente pubblico: EKT AG\nScadenza: 26.02.2027\, 17:00\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/4f3799d7-8ebe-400a-b33f-3f44cd3
+ b60c1/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/4f
+ 3799d7-8ebe-400a-b33f-3f44cd3b60c1
+URL:https://auftragsregister.ch/it/auftrag/4f3799d7-8ebe-400a-b33f-3f44cd3b
+ 60c1/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 110 kV GIS-Schaltanlage dreiphasig gekapselt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfc1664f-5469-419f-bdc4-cc056459bd1b-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Submission deadline: Modernisierung Strandbad Stansstad
+DESCRIPTION:Public buyer: Gemeinde Stansstad\nSubmission deadline: 14 Dec
+  2026\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/cf
+ c1664f-5469-419f-bdc4-cc056459bd1b/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/cfc1664f-5469-419f-bdc4-cc056459bd1b
+URL:https://auftragsregister.ch/en/auftrag/cfc1664f-5469-419f-bdc4-cc056459
+ bd1b/
+LOCATION:Stansstad
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Modernisierung Strandbad Stansstad
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

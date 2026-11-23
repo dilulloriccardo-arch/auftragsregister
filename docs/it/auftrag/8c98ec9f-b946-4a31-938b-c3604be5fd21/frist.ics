@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8c98ec9f-b946-4a31-938b-c3604be5fd21-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270129T100000Z
+SUMMARY:Scadenza: Collège Bahyse II+III - Blonay-St-Légier / Serrurerie
+DESCRIPTION:Ente pubblico: Commune de Blonay-St-Légier (Consortium FLBG)\n
+ Scadenza: 29.01.2027\, 11:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/8c98ec9f-b946-4a31-938b-c3604be5fd21/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/8c98ec9f-b946-4a31-938b-c3604be5fd21
+URL:https://auftragsregister.ch/it/auftrag/8c98ec9f-b946-4a31-938b-c3604be5
+ fd21/
+LOCATION:Blonay
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Collège Bahyse II+III - Blonay-St-Légier / Serrurer
+ ie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

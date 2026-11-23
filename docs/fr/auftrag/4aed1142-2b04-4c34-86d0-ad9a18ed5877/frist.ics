@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4aed1142-2b04-4c34-86d0-ad9a18ed5877-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270112T160000Z
+SUMMARY:Délai de remise : Baumeisterleistungen im Gleisbau – Wendeschl
+ eife Rehalp
+DESCRIPTION:Acheteur public : Verkehrsbetriebe Zürich (VBZ)\nDélai de r
+ emise : 12.01.2027\, 17 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/4aed1142-2b04-4c34-86d0-ad9a18ed5877/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/4aed1142-2b04-4c34-86
+ d0-ad9a18ed5877
+URL:https://auftragsregister.ch/fr/auftrag/4aed1142-2b04-4c34-86d0-ad9a18ed
+ 5877/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Baumeisterleistungen im Gleisbau – Wende
+ schleife Rehalp
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b984400-fa08-4ea3-a04c-ffe791efe720-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270128T225900Z
+SUMMARY:Submission deadline: Gewässerrichtplan Untere Saane\, Gesamtleitun
+ g Stv. sowie Fachplanung Wasserbau und Geschiebe
+DESCRIPTION:Public buyer: Wasserbauverband Untere Saane\nSubmission deadlin
+ e: 28 Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/
+ auftrag/3b984400-fa08-4ea3-a04c-ffe791efe720/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/3b984400-fa08-4ea3-a04c-ffe791efe720
+URL:https://auftragsregister.ch/en/auftrag/3b984400-fa08-4ea3-a04c-ffe791ef
+ e720/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gewässerrichtplan Untere Saane\, Gesamtle
+ itung Stv. sowie Fachplanung Wasserbau und Geschiebe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbee4252-5ab6-41a2-9b2e-42553bd9bb78-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Scadenza: Croix d'Or 12 - Lot CVC
+DESCRIPTION:Ente pubblico: Services Industriels de Genève (SIG) Direction 
+ Projets Industriels et Solutions Digitales\nScadenza: 11.12.2026\, 12:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/bbee4252-5ab6-41a2-9b
+ 2e-42553bd9bb78/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/bbee4252-5ab6-41a2-9b2e-42553bd9bb78
+URL:https://auftragsregister.ch/it/auftrag/bbee4252-5ab6-41a2-9b2e-42553bd9
+ bb78/
+LOCATION:Rue de la Croix d'Or 12
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Croix d'Or 12 - Lot CVC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

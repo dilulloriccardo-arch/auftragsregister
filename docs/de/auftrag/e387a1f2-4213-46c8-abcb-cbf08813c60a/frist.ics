@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e387a1f2-4213-46c8-abcb-cbf08813c60a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270112T150000Z
+SUMMARY:Eingabefrist: Rahmenvertrag\, Beratungsdienstleistungen für Digita
+ l Stadt Bern\, 6 Lose
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 12.01.2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/e387a1f2-4213-46c8-abcb-cbf08813c60a/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/e387a1f2-4213-46c8-abcb-cbf08813c60a
+URL:https://auftragsregister.ch/de/auftrag/e387a1f2-4213-46c8-abcb-cbf08813
+ c60a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rahmenvertrag\, Beratungsdienstleistungen für Di
+ gital Stadt Bern\, 6 Lose
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

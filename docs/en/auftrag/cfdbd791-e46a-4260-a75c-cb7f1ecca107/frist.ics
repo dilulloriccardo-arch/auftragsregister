@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfdbd791-e46a-4260-a75c-cb7f1ecca107-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270208T225900Z
+SUMMARY:Submission deadline: (b26057-1) Affoltern a. A.\, Lindenmoosstrasse
+ \, Etappe 2\, Erweiterung Sammlungszentrum SNM / BKP 281
+DESCRIPTION:Public buyer: Bundesamt für Bauten und Logistik BBL\nSubmissio
+ n deadline: 8 Feb 2027\, 23:59\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/cfdbd791-e46a-4260-a75c-cb7f1ecca107/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/cfdbd791-e46a-4260-a75c-cb7f1ecc
+ a107
+URL:https://auftragsregister.ch/en/auftrag/cfdbd791-e46a-4260-a75c-cb7f1ecc
+ a107/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (b26057-1) Affoltern a. A.\, Lindenmoosstr
+ asse\, Etappe 2\, Erweiterung Sammlungszentrum SNM / BKP 281
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

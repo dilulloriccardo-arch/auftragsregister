@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4aed1142-2b04-4c34-86d0-ad9a18ed5877-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270112T160000Z
+SUMMARY:Eingabefrist: Baumeisterleistungen im Gleisbau – Wendeschleife Re
+ halp
+DESCRIPTION:Auftraggeber: Verkehrsbetriebe Zürich (VBZ)\nEingabefrist: 12.
+ 01.2027\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ 4aed1142-2b04-4c34-86d0-ad9a18ed5877/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/4aed1142-2b04-4c34-86d0-ad9a18ed5877
+URL:https://auftragsregister.ch/de/auftrag/4aed1142-2b04-4c34-86d0-ad9a18ed
+ 5877/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Baumeisterleistungen im Gleisbau – Wendeschleif
+ e Rehalp
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

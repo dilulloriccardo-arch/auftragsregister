@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5ed07759-2944-454d-bd32-2322c75ccee5-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261222T225900Z
+SUMMARY:Eingabefrist: Kantonsstrasse Nr. 47\, Goldach/Tübach: Brücke Gold
+ ach
+DESCRIPTION:Auftraggeber: Kanton St.Gallen\, Tiefbauamt\, Strassen- und Kun
+ stbauten\nEingabefrist: 22.12.2026\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/5ed07759-2944-454d-bd32-2322c75ccee5/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/5ed07759-2944-454d-bd
+ 32-2322c75ccee5
+URL:https://auftragsregister.ch/de/auftrag/5ed07759-2944-454d-bd32-2322c75c
+ cee5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kantonsstrasse Nr. 47\, Goldach/Tübach: Brücke 
+ Goldach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

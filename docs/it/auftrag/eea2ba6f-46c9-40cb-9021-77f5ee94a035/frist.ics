@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eea2ba6f-46c9-40cb-9021-77f5ee94a035-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Scadenza: MP 2026.03.835 - Electrification ligne 18 - Travaux de g
+ énie civil
+DESCRIPTION:Ente pubblico: Transports publics de la région lausannoise sa\
+ nScadenza: 13.01.2027\, 12:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/eea2ba6f-46c9-40cb-9021-77f5ee94a035/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/eea2ba6f-46c9-40cb-9021-77f5ee94a03
+ 5
+URL:https://auftragsregister.ch/it/auftrag/eea2ba6f-46c9-40cb-9021-77f5ee94
+ a035/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP 2026.03.835 - Electrification ligne 18 - Travaux d
+ e génie civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

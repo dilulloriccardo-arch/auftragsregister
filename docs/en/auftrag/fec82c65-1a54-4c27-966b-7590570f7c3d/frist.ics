@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fec82c65-1a54-4c27-966b-7590570f7c3d-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Submission deadline: Renouvellement de licenses Atlassian
+DESCRIPTION:Public buyer: Romande Energie SA\nSubmission deadline: 7 Dec 
+ 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/fec8
+ 2c65-1a54-4c27-966b-7590570f7c3d/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/fec82c65-1a54-4c27-966b-7590570f7c3d
+URL:https://auftragsregister.ch/en/auftrag/fec82c65-1a54-4c27-966b-7590570f
+ 7c3d/
+LOCATION:Morges
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Renouvellement de licenses Atlassian
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

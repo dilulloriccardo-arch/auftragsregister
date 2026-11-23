@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:007590bb-cf6e-4d83-a7e8-24502cf2e535-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T103000Z
+SUMMARY:Scadenza: Schulhaus Kalktarren\, Sanierung Schulanlage: BKP 224 Bed
+ achungsarbeiten
+DESCRIPTION:Ente pubblico: Stadt Schlieren\, Bereich Liegenschaften\nScaden
+ za: 17.12.2026\, 11:30\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/007590bb-cf6e-4d83-a7e8-24502cf2e535/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/007590bb-cf6e-4d83-a7e8-24502cf2e535
+URL:https://auftragsregister.ch/it/auftrag/007590bb-cf6e-4d83-a7e8-24502cf2
+ e535/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulhaus Kalktarren\, Sanierung Schulanlage: BKP 224
+  Bedachungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

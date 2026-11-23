@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40f97fb9-324a-47e8-95b9-2d487d408d0f-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261211T090000Z
+SUMMARY:Délai de remise : 512.81 - Ecole de l'Auge - Assainissement de l
+ a production de chaleur
+DESCRIPTION:Acheteur public : Ville de Fribourg\, service d'urbanisme et 
+ d'architecture\nDélai de remise : 11.12.2026\, 10 h 00\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/40f97fb9-324a-47e8-95b9-2
+ d487d408d0f/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/40f97fb9-324a-47e8-95b9-2d487d408d0f
+URL:https://auftragsregister.ch/fr/auftrag/40f97fb9-324a-47e8-95b9-2d487d40
+ 8d0f/
+LOCATION:Fribourg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 512.81 - Ecole de l'Auge - Assainissement 
+ de la production de chaleur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

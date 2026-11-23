@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:94e11e72-6a35-49f8-aa1a-7c610f4d34b5-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Scadenza: Kantonsstrasse Nr. 17\, Schänis: Ziegelbrückstrasse\, A
+ bschnitt Federistrasse bis Hirzliblick
+DESCRIPTION:Ente pubblico: Kanton St.Gallen\, Tiefbauamt\, Strassenkreisins
+ pektorat Schmerikon\nScadenza: 15.12.2026\, 23:59\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/94e11e72-6a35-49f8-aa1a-7c610f4d34b5/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/94e11e72-6a35-4
+ 9f8-aa1a-7c610f4d34b5
+URL:https://auftragsregister.ch/it/auftrag/94e11e72-6a35-49f8-aa1a-7c610f4d
+ 34b5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kantonsstrasse Nr. 17\, Schänis: Ziegelbrückstrasse
+ \, Abschnitt Federistrasse bis Hirzliblick
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

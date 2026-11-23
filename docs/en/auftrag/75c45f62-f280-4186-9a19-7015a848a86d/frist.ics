@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:75c45f62-f280-4186-9a19-7015a848a86d-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270115T225500Z
+SUMMARY:Submission deadline: Ersatzbeschaffung von 76 Stk. Patientenmonitor
+ en/Defibrillatoren
+DESCRIPTION:Public buyer: SID - Schutz & Rettung (SRZ)\nSubmission deadline
+ : 15 Jan 2027\, 23:55\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/75c45f62-f280-4186-9a19-7015a848a86d/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/75c45f62-f280-4186-9a19-7015a848a86d
+URL:https://auftragsregister.ch/en/auftrag/75c45f62-f280-4186-9a19-7015a848
+ a86d/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatzbeschaffung von 76 Stk. Patientenmon
+ itoren/Defibrillatoren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

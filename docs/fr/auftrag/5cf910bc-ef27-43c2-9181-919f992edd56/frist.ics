@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5cf910bc-ef27-43c2-9181-919f992edd56-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Délai de remise : BKP 272 Metallbauarbeiten (Treppengeländer)
+DESCRIPTION:Acheteur public : Schulgemeinde Kreuzlingen\nDélai de remise
+  : 11.12.2026\, 12 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/5cf910bc-ef27-43c2-9181-919f992edd56/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/5cf910bc-ef27-43c2-9181-91
+ 9f992edd56
+URL:https://auftragsregister.ch/fr/auftrag/5cf910bc-ef27-43c2-9181-919f992e
+ dd56/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 272 Metallbauarbeiten (Treppengelände
+ r)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

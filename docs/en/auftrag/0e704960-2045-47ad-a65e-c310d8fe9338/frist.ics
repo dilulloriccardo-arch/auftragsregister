@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e704960-2045-47ad-a65e-c310d8fe9338-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270107T225900Z
+SUMMARY:Submission deadline: Korrosionsschutz 2027
+DESCRIPTION:Public buyer: Swissgrid AG\nSubmission deadline: 7 Jan 2027\,
+  23:59\nIn the register: https://auftragsregister.ch/en/auftrag/0e704960-2
+ 045-47ad-a65e-c310d8fe9338/\nOfficial publication: https://www.simap.ch/en
+ /project-detail/0e704960-2045-47ad-a65e-c310d8fe9338
+URL:https://auftragsregister.ch/en/auftrag/0e704960-2045-47ad-a65e-c310d8fe
+ 9338/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Korrosionsschutz 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

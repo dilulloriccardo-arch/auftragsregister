@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76a0d469-5d83-4a6b-86be-719c6810188c-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270121T110000Z
+SUMMARY:Délai de remise : Assistance juridique dans le domaine des sites
+  pollués
+DESCRIPTION:Acheteur public : Dienststelle Umwelt und Energie\, Kanton Lu
+ zern\nDélai de remise : 21.01.2027\, 12 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/76a0d469-5d83-4a6b-86be-719c6810188
+ c/\nPublication officielle : https://www.simap.ch/fr/project-detail/76a0
+ d469-5d83-4a6b-86be-719c6810188c
+URL:https://auftragsregister.ch/fr/auftrag/76a0d469-5d83-4a6b-86be-719c6810
+ 188c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assistance juridique dans le domaine des s
+ ites pollués
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

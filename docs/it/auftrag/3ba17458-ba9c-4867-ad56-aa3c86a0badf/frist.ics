@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3ba17458-ba9c-4867-ad56-aa3c86a0badf-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261214T080000Z
+SUMMARY:Scadenza: Submission IT-Servicebezug
+DESCRIPTION:Ente pubblico: Gemeindeverwaltung Kirchdorf\nScadenza: 14.12.20
+ 26\, 09:00\nNel registro: https://auftragsregister.ch/it/auftrag/3ba17458-
+ ba9c-4867-ad56-aa3c86a0badf/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/3ba17458-ba9c-4867-ad56-aa3c86a0badf
+URL:https://auftragsregister.ch/it/auftrag/3ba17458-ba9c-4867-ad56-aa3c86a0
+ badf/
+LOCATION:Kirchdorf BE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Submission IT-Servicebezug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb9c6bdf-bdc1-44a5-b264-8ff4cb85ed40-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270116T225900Z
+SUMMARY:Eingabefrist: Augst - Hauptstrasse / Instandsetzung Fussgängerunte
+ rführung und Brücken
+DESCRIPTION:Auftraggeber: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nEingabefrist: 16.01.2027\, 23.59 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/cb9c6bdf-bdc1-44a5-b264-8ff4cb85ed40/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/cb9c6bdf-bdc1-44a5-b264-8ff
+ 4cb85ed40
+URL:https://auftragsregister.ch/de/auftrag/cb9c6bdf-bdc1-44a5-b264-8ff4cb85
+ ed40/
+LOCATION:Augst
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Augst - Hauptstrasse / Instandsetzung Fussgänger
+ unterführung und Brücken
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

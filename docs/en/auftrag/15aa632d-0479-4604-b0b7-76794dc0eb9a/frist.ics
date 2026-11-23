@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:15aa632d-0479-4604-b0b7-76794dc0eb9a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261218T133000Z
+SUMMARY:Submission deadline: Costruzione nuovo campeggio alpino a Brione Ve
+ rzasca - Opere da elettricista
+DESCRIPTION:Public buyer: Patriziato di Brione Verzasca\nSubmission deadlin
+ e: 18 Dec 2026\, 14:30\nIn the register: https://auftragsregister.ch/en/
+ auftrag/15aa632d-0479-4604-b0b7-76794dc0eb9a/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/15aa632d-0479-4604-b0b7-76794dc0eb9a
+URL:https://auftragsregister.ch/en/auftrag/15aa632d-0479-4604-b0b7-76794dc0
+ eb9a/
+LOCATION:Brione Verzasca
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Costruzione nuovo campeggio alpino a Brion
+ e Verzasca - Opere da elettricista
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

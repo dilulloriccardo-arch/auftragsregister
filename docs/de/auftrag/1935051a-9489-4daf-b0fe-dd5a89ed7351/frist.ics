@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1935051a-9489-4daf-b0fe-dd5a89ed7351-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:1
+DTSTART:20270112T140000Z
+SUMMARY:Eingabefrist: Beschaffung und Instandhaltung Hochdruckreiniger mit 
+ akkubetriebenem Fahrmotor
+DESCRIPTION:Auftraggeber: SBB AG\, Flottenmanagement Strassenfahrzeuge\nEin
+ gabefrist: 12.01.2027\, 15.00 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/1935051a-9489-4daf-b0fe-dd5a89ed7351/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/1935051a-9489-4daf-b0fe-dd5a89ed73
+ 51
+URL:https://auftragsregister.ch/de/auftrag/1935051a-9489-4daf-b0fe-dd5a89ed
+ 7351/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung und Instandhaltung Hochdruckreiniger 
+ mit akkubetriebenem Fahrmotor
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

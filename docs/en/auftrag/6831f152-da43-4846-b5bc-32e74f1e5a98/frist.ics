@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6831f152-da43-4846-b5bc-32e74f1e5a98-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Submission deadline: APPEL D’OFFRES PUBLIC POUR LE DÉPLOIEMENT D
+ E MATÉRIEL INFORMATIQUE AU SEIN DU DIP
+DESCRIPTION:Public buyer: Centrale commune d'achats (CCA)\nSubmission deadl
+ ine: 11 Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/6831f152-da43-4846-b5bc-32e74f1e5a98/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/6831f152-da43-4846-b5bc-32e74f1e5a98
+URL:https://auftragsregister.ch/en/auftrag/6831f152-da43-4846-b5bc-32e74f1e
+ 5a98/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: APPEL D’OFFRES PUBLIC POUR LE DÉPLOIEME
+ NT DE MATÉRIEL INFORMATIQUE AU SEIN DU DIP
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

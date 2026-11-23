@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c0c42734-b650-4706-b8c1-6e6aaf6f1a3b-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:1
+DTSTART:20270528T130000Z
+SUMMARY:Scadenza: AS35 Zürich Stadelhofen Anlagenerweiterung\, Projektteil
+  30101 GU Rohbau Zürichberg-\, Riesbach-\, Perrontunnel und Tiefenbrunnen
+DESCRIPTION:Ente pubblico: SBB CFF FFS Einkauf Bauprojekte Region Ost\nScad
+ enza: 28.05.2027\, 15:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/c0c42734-b650-4706-b8c1-6e6aaf6f1a3b/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/c0c42734-b650-4706-b8c1-6e6aaf6f1a3b
+URL:https://auftragsregister.ch/it/auftrag/c0c42734-b650-4706-b8c1-6e6aaf6f
+ 1a3b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AS35 Zürich Stadelhofen Anlagenerweiterung\, Projekt
+ teil 30101 GU Rohbau Zürichberg-\, Riesbach-\, Perrontunnel und Tiefenbru
+ nnen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

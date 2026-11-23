@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cfee1e17-2edb-4d58-8979-c1daebe2887a-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261222T225900Z
+SUMMARY:Scadenza: Hindelbank\; Sanierung Dorfstrasse
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 22.12.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/cfee1e17-2
+ edb-4d58-8979-c1daebe2887a/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/cfee1e17-2edb-4d58-8979-c1daebe2887a
+URL:https://auftragsregister.ch/it/auftrag/cfee1e17-2edb-4d58-8979-c1daebe2
+ 887a/
+LOCATION:Hindelbank
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Hindelbank\; Sanierung Dorfstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:79c70597-d6e3-4f8e-bee4-f691095e6aab-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Eingabefrist: OGER FLOR l 13606 l BKP 211-02 Baumeister
+DESCRIPTION:Auftraggeber: Hochbauamt\, Baubereich B\nEingabefrist: 14.01.20
+ 27\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/79c70
+ 597-d6e3-4f8e-bee4-f691095e6aab/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/79c70597-d6e3-4f8e-bee4-f691095e6aab
+URL:https://auftragsregister.ch/de/auftrag/79c70597-d6e3-4f8e-bee4-f691095e
+ 6aab/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: OGER FLOR l 13606 l BKP 211-02 Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

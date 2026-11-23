@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:387b763b-dde3-44f8-9441-b916fee24790-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Submission deadline: Ersatz Röntgengeräte
+DESCRIPTION:Public buyer: Kantonsspital Winterthur - Supply Chain Managemen
+ t\nSubmission deadline: 7 Jan 2027\, 11:00\nIn the register: https://auf
+ tragsregister.ch/en/auftrag/387b763b-dde3-44f8-9441-b916fee24790/\nOfficia
+ l publication: https://www.simap.ch/en/project-detail/387b763b-dde3-44f8-9
+ 441-b916fee24790
+URL:https://auftragsregister.ch/en/auftrag/387b763b-dde3-44f8-9441-b916fee2
+ 4790/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatz Röntgengeräte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

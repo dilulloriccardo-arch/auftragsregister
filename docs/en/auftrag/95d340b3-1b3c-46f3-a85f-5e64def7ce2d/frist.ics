@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95d340b3-1b3c-46f3-a85f-5e64def7ce2d-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Submission deadline: 1 LKW mit Scherenhubbühne
+DESCRIPTION:Public buyer: Tiefbauamt Graubünden\nSubmission deadline: 30 
+ Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag
+ /95d340b3-1b3c-46f3-a85f-5e64def7ce2d/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/95d340b3-1b3c-46f3-a85f-5e64def7ce2d
+URL:https://auftragsregister.ch/en/auftrag/95d340b3-1b3c-46f3-a85f-5e64def7
+ ce2d/
+LOCATION:Thusis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 1 LKW mit Scherenhubbühne
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

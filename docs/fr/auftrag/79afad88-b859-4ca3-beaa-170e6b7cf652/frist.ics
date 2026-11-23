@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:79afad88-b859-4ca3-beaa-170e6b7cf652-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T090000Z
+SUMMARY:Délai de remise : Maintenance et remise en état des installatio
+ ns de détection et d’alarme de gaz
+DESCRIPTION:Acheteur public : HBD - Immobilien Stadt Zürich (IMMO)\nDél
+ ai de remise : 13.01.2027\, 10 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/79afad88-b859-4ca3-beaa-170e6b7cf652/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/79afad88-b859-
+ 4ca3-beaa-170e6b7cf652
+URL:https://auftragsregister.ch/fr/auftrag/79afad88-b859-4ca3-beaa-170e6b7c
+ f652/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Maintenance et remise en état des install
+ ations de détection et d’alarme de gaz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

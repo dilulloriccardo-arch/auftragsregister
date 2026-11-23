@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1f209bd9-9ce6-4f45-9af0-6ce1403fc211-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20261231T110000Z
+SUMMARY:Scadenza: 1 Tanklöschfahrzeug
+DESCRIPTION:Ente pubblico: Gebäudeversicherung Kanton Zürich\nScadenza: 3
+ 1.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/1f
+ 209bd9-9ce6-4f45-9af0-6ce1403fc211/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/1f209bd9-9ce6-4f45-9af0-6ce1403fc211
+URL:https://auftragsregister.ch/it/auftrag/1f209bd9-9ce6-4f45-9af0-6ce1403f
+ c211/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 1 Tanklöschfahrzeug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

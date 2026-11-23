@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6e964be7-2607-4f12-a895-909eb56e8000-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Submission deadline: BAV 80746 Schulanlage Triemli\, In der Ey\, Er
+ satzneubau - BKP 281.1 Fugenlose Bodenbeläge
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 11 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/6e964be7-2607-4f12-a895-909eb56e8000/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/6e964be7-2607-4f12-a895-909eb56e8000
+URL:https://auftragsregister.ch/en/auftrag/6e964be7-2607-4f12-a895-909eb56e
+ 8000/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 80746 Schulanlage Triemli\, In der Ey\
+ , Ersatzneubau - BKP 281.1 Fugenlose Bodenbeläge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

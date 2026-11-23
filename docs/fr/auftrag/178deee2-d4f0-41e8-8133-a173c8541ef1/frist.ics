@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:178deee2-d4f0-41e8-8133-a173c8541ef1-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T140000Z
+SUMMARY:Délai de remise : Fernwärme Reussbühl Ost & West\, Luzern\, Le
+ istungen Tiefbau
+DESCRIPTION:Acheteur public : Fernwärme Luzern\nDélai de remise : 17.
+ 12.2026\, 15 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/178deee2-d4f0-41e8-8133-a173c8541ef1/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/178deee2-d4f0-41e8-8133-a173c8541e
+ f1
+URL:https://auftragsregister.ch/fr/auftrag/178deee2-d4f0-41e8-8133-a173c854
+ 1ef1/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fernwärme Reussbühl Ost & West\, Luzern\
+ , Leistungen Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

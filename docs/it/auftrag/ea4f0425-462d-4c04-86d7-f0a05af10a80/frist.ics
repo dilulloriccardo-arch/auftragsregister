@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea4f0425-462d-4c04-86d7-f0a05af10a80-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270226T225900Z
+SUMMARY:Scadenza: AIS-Wandler UW Laufenburg
+DESCRIPTION:Ente pubblico: Swissgrid AG - Asset & Maintenance\nScadenza: 26
+ .02.2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/ea4
+ f0425-462d-4c04-86d7-f0a05af10a80/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/ea4f0425-462d-4c04-86d7-f0a05af10a80
+URL:https://auftragsregister.ch/it/auftrag/ea4f0425-462d-4c04-86d7-f0a05af1
+ 0a80/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AIS-Wandler UW Laufenburg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:463293cb-55cf-481e-9bf2-be1b3c8ada3a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Délai de remise : B.10629 KUE D Remise en état de machines frig
+ orifiques | CVC 293 Ingénieur électricien | OV
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 11.01.2027\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/463293cb-55cf-481e-9bf2-be1b3c8ada3a/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/463293cb-55cf-481e-9bf2-
+ be1b3c8ada3a
+URL:https://auftragsregister.ch/fr/auftrag/463293cb-55cf-481e-9bf2-be1b3c8a
+ da3a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : B.10629 KUE D Remise en état de machines 
+ frigorifiques | CVC 293 Ingénieur électricien | OV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

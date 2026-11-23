@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f148e56b-e8dd-47e6-a64f-7dd808272656-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Eingabefrist: (26096) 609 Internet via LEO Satelliten
+DESCRIPTION:Auftraggeber: Bundesamt für Bauten und Logistik BBL\nEingabefr
+ ist: 15.01.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/f148e56b-e8dd-47e6-a64f-7dd808272656/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/f148e56b-e8dd-47e6-a64f-7dd808272656
+URL:https://auftragsregister.ch/de/auftrag/f148e56b-e8dd-47e6-a64f-7dd80827
+ 2656/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (26096) 609 Internet via LEO Satelliten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

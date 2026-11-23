@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bffe17bb-2d2f-4d4c-be76-c3bcd47e98b2-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Délai de remise : Allmend-/Feldstrasse\, Bülach
+DESCRIPTION:Acheteur public : Stadt Bülach - Umwelt und Infrastruktur\nD
+ élai de remise : 08.12.2026\, 12 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/bffe17bb-2d2f-4d4c-be76-c3bcd47e98b2/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/bffe17bb-2d
+ 2f-4d4c-be76-c3bcd47e98b2
+URL:https://auftragsregister.ch/fr/auftrag/bffe17bb-2d2f-4d4c-be76-c3bcd47e
+ 98b2/
+LOCATION:Bülach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Allmend-/Feldstrasse\, Bülach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

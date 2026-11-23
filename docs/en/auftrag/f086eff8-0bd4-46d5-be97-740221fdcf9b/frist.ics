@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f086eff8-0bd4-46d5-be97-740221fdcf9b-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270122T225900Z
+SUMMARY:Submission deadline: EP Ilanz/Glion\, WE Varduz\, Neubau Tunnel Val
+  Sum Punt
+DESCRIPTION:Public buyer: Gemeinde Ilanz/Glion\nSubmission deadline: 22 Ja
+ n 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/f
+ 086eff8-0bd4-46d5-be97-740221fdcf9b/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/f086eff8-0bd4-46d5-be97-740221fdcf9b
+URL:https://auftragsregister.ch/en/auftrag/f086eff8-0bd4-46d5-be97-740221fd
+ cf9b/
+LOCATION:Duvin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EP Ilanz/Glion\, WE Varduz\, Neubau Tunnel
+  Val Sum Punt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

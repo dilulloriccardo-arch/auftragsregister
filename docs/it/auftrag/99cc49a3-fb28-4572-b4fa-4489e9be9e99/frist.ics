@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:99cc49a3-fb28-4572-b4fa-4489e9be9e99-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T150000Z
+SUMMARY:Scadenza: BAV 83185 SA Rütihof\, Umbau BET für TS - BKP 271 Gipse
+ rarbeiten
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 13.01
+ .2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/99cc49
+ a3-fb28-4572-b4fa-4489e9be9e99/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/99cc49a3-fb28-4572-b4fa-4489e9be9e99
+URL:https://auftragsregister.ch/it/auftrag/99cc49a3-fb28-4572-b4fa-4489e9be
+ 9e99/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 83185 SA Rütihof\, Umbau BET für TS - BKP 271 G
+ ipserarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a70bee09-bc74-4f90-96d2-24706fdf4064-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Submission deadline: Gesundheitszentrum Dielsdorf: Software Finanze
+ n + HRM
+DESCRIPTION:Public buyer: Gesundheitszentrum Dielsdorf\nSubmission deadline
+ : 14 Dec 2026\nIn the register: https://auftragsregister.ch/en/auftrag/a
+ 70bee09-bc74-4f90-96d2-24706fdf4064/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/a70bee09-bc74-4f90-96d2-24706fdf4064
+URL:https://auftragsregister.ch/en/auftrag/a70bee09-bc74-4f90-96d2-24706fdf
+ 4064/
+LOCATION:Dielsdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gesundheitszentrum Dielsdorf: Software Fin
+ anzen + HRM
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

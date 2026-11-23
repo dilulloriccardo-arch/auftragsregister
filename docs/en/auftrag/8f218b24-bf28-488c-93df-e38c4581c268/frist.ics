@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8f218b24-bf28-488c-93df-e38c4581c268-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270115T110000Z
+SUMMARY:Submission deadline: Réorganisation du site port et plage du Repos
+ oir
+DESCRIPTION:Public buyer: Office cantonal de l'eau (OCEAU) - Service de l'a
+ ménagement des eaux et de la pêche (SAEP)\nSubmission deadline: 15 Jan
+  2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/8f
+ 218b24-bf28-488c-93df-e38c4581c268/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/8f218b24-bf28-488c-93df-e38c4581c268
+URL:https://auftragsregister.ch/en/auftrag/8f218b24-bf28-488c-93df-e38c4581
+ c268/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Réorganisation du site port et plage du R
+ eposoir
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

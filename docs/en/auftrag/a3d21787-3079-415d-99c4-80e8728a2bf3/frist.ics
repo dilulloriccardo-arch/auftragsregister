@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a3d21787-3079-415d-99c4-80e8728a2bf3-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270129T090000Z
+SUMMARY:Submission deadline: Replacement lifting platform LU612
+DESCRIPTION:Public buyer: ewl Verkauf AG\nSubmission deadline: 29 Jan 202
+ 7\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag/a3d2178
+ 7-3079-415d-99c4-80e8728a2bf3/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/a3d21787-3079-415d-99c4-80e8728a2bf3
+URL:https://auftragsregister.ch/en/auftrag/a3d21787-3079-415d-99c4-80e8728a
+ 2bf3/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Replacement lifting platform LU612
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

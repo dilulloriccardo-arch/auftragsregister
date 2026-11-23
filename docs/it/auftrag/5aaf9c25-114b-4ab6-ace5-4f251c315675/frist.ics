@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5aaf9c25-114b-4ab6-ace5-4f251c315675-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261209T130000Z
+SUMMARY:Scadenza: Concorso per l’aggiudicazione di contratti quadro per l
+ a fornitura del lotto pasta\, cereali e prodotti affini per il biennio 202
+ 7-2028 per la Fondazione Casa per Anziani di Giubiasco
+DESCRIPTION:Ente pubblico: Fondazione Casa per Anziani di GIubiasco\nScaden
+ za: 09.12.2026\, 14:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/5aaf9c25-114b-4ab6-ace5-4f251c315675/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/5aaf9c25-114b-4ab6-ace5-4f251c315675
+URL:https://auftragsregister.ch/it/auftrag/5aaf9c25-114b-4ab6-ace5-4f251c31
+ 5675/
+LOCATION:Giubiasco
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Concorso per l’aggiudicazione di contratti quadro p
+ er la fornitura del lotto pasta\, cereali e prodotti affini per il biennio
+  2027-2028 per la Fondazione Casa per Anziani di Giubiasco
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

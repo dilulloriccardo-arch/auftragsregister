@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb9c6bdf-bdc1-44a5-b264-8ff4cb85ed40-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270116T225900Z
+SUMMARY:Délai de remise : Augst - Hauptstrasse / Instandsetzung Fussgän
+ gerunterführung und Brücken
+DESCRIPTION:Acheteur public : Zentrale Beschaffungsstelle Kanton Basel-La
+ ndschaft\nDélai de remise : 16.01.2027\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/cb9c6bdf-bdc1-44a5-b264-8ff4cb
+ 85ed40/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /cb9c6bdf-bdc1-44a5-b264-8ff4cb85ed40
+URL:https://auftragsregister.ch/fr/auftrag/cb9c6bdf-bdc1-44a5-b264-8ff4cb85
+ ed40/
+LOCATION:Augst
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Augst - Hauptstrasse / Instandsetzung Fuss
+ gängerunterführung und Brücken
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

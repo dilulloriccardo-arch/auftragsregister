@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:257b6f70-5df2-46ea-b7bb-ac8cc54a8425-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270129T090000Z
+SUMMARY:Scadenza: Rahmenverträge Dienstleister ICT-Consulting
+DESCRIPTION:Ente pubblico: Informatik Schaffhausen\nScadenza: 29.01.2027\, 
+ 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/257b6f70-5df2-
+ 46ea-b7bb-ac8cc54a8425/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/257b6f70-5df2-46ea-b7bb-ac8cc54a8425
+URL:https://auftragsregister.ch/it/auftrag/257b6f70-5df2-46ea-b7bb-ac8cc54a
+ 8425/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenverträge Dienstleister ICT-Consulting
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

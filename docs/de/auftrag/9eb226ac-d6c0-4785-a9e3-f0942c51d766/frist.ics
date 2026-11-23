@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9eb226ac-d6c0-4785-a9e3-f0942c51d766-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Eingabefrist: ARA Thurau\, Zentrifugalpumpen
+DESCRIPTION:Auftraggeber: Abwasserverband Thurau\nEingabefrist: 29.01.2027\
+ , 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9eb226ac
+ -d6c0-4785-a9e3-f0942c51d766/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/9eb226ac-d6c0-4785-a9e3-f0942c51d766
+URL:https://auftragsregister.ch/de/auftrag/9eb226ac-d6c0-4785-a9e3-f0942c51
+ d766/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ARA Thurau\, Zentrifugalpumpen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

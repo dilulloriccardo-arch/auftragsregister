@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c694042b-e37c-4233-a946-f316a9b3100f-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270122T103000Z
+SUMMARY:Submission deadline: Affaire n°20-094\, Cery Bâtiment de laborato
+ ires\, site de Cery nord à Prilly\, CFC n° 246\, chambres froides
+DESCRIPTION:Public buyer: CHUV-Construction Ingénierie Technique et Sécur
+ ité (CIT-S) - Diserens Maurel Architectes\nSubmission deadline: 22 Jan 
+ 2027\, 11:30\nIn the register: https://auftragsregister.ch/en/auftrag/c694
+ 042b-e37c-4233-a946-f316a9b3100f/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/c694042b-e37c-4233-a946-f316a9b3100f
+URL:https://auftragsregister.ch/en/auftrag/c694042b-e37c-4233-a946-f316a9b3
+ 100f/
+LOCATION:Prilly
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Affaire n°20-094\, Cery Bâtiment de labo
+ ratoires\, site de Cery nord à Prilly\, CFC n° 246\, chambres froides
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:51ef8bac-b021-4a0c-afa4-a0b795bd64e3-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:1
+DTSTART:20270105T225900Z
+SUMMARY:Scadenza: Unterhaltsreinigung neuer Hauptsitz der AEW Energie AG in
+  Aarau
+DESCRIPTION:Ente pubblico: AEW Energie AG\nScadenza: 05.01.2027\, 23:59\nNe
+ l registro: https://auftragsregister.ch/it/auftrag/51ef8bac-b021-4a0c-afa4
+ -a0b795bd64e3/\nPubblicazione ufficiale: https://www.simap.ch/it/project-d
+ etail/51ef8bac-b021-4a0c-afa4-a0b795bd64e3
+URL:https://auftragsregister.ch/it/auftrag/51ef8bac-b021-4a0c-afa4-a0b795bd
+ 64e3/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Unterhaltsreinigung neuer Hauptsitz der AEW Energie A
+ G in Aarau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

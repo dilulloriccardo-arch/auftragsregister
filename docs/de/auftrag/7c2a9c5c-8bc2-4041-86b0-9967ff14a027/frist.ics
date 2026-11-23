@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7c2a9c5c-8bc2-4041-86b0-9967ff14a027-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Eingabefrist: Wohnüberbauung Alvra Haus C und D - BKP 211 Baumeist
+ erarbeiten
+DESCRIPTION:Auftraggeber: Gemeinde La Punt Chamues-ch\nEingabefrist: 04.12.
+ 2026\nIm Register: https://auftragsregister.ch/de/auftrag/7c2a9c5c-8bc2-40
+ 41-86b0-9967ff14a027/\nAmtliche Publikation: https://www.simap.ch/de/proje
+ ct-detail/7c2a9c5c-8bc2-4041-86b0-9967ff14a027
+URL:https://auftragsregister.ch/de/auftrag/7c2a9c5c-8bc2-4041-86b0-9967ff14
+ a027/
+LOCATION:La Punt-Chamues-ch
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Wohnüberbauung Alvra Haus C und D - BKP 211 Baum
+ eisterarbeiten
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

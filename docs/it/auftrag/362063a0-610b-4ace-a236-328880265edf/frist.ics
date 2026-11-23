@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:362063a0-610b-4ace-a236-328880265edf-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270106T100000Z
+SUMMARY:Scadenza: Sportzentrum Verbier – CFC 231 Schaltschränke
+DESCRIPTION:Ente pubblico: Quartal Sàrl\nScadenza: 06.01.2027\, 11:00\nNel
+  registro: https://auftragsregister.ch/it/auftrag/362063a0-610b-4ace-a236-
+ 328880265edf/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/362063a0-610b-4ace-a236-328880265edf
+URL:https://auftragsregister.ch/it/auftrag/362063a0-610b-4ace-a236-32888026
+ 5edf/
+LOCATION:Verbier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sportzentrum Verbier – CFC 231 Schaltschränke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

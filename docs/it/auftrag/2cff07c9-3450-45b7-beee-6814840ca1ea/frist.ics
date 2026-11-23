@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2cff07c9-3450-45b7-beee-6814840ca1ea-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+SUMMARY:Scadenza: Bauarbeiten für Werkleitungen EKT AG\, Eschikofen - Well
+ hausen
+DESCRIPTION:Ente pubblico: EKT AG\nScadenza: 08.01.2027\nNel registro: http
+ s://auftragsregister.ch/it/auftrag/2cff07c9-3450-45b7-beee-6814840ca1ea/\n
+ Pubblicazione ufficiale: https://www.simap.ch/it/project-detail/2cff07c9-3
+ 450-45b7-beee-6814840ca1ea
+URL:https://auftragsregister.ch/it/auftrag/2cff07c9-3450-45b7-beee-6814840c
+ a1ea/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bauarbeiten für Werkleitungen EKT AG\, Eschikofen - 
+ Wellhausen
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

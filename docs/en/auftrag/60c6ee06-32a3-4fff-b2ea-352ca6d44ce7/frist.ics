@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60c6ee06-32a3-4fff-b2ea-352ca6d44ce7-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270117T225900Z
+SUMMARY:Submission deadline: Welding and bonding work on rails and switch c
+ omponents
+DESCRIPTION:Public buyer: Rhätische Bahn AG\nSubmission deadline: 17 Jan
+  2027\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/60
+ c6ee06-32a3-4fff-b2ea-352ca6d44ce7/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/60c6ee06-32a3-4fff-b2ea-352ca6d44ce7
+URL:https://auftragsregister.ch/en/auftrag/60c6ee06-32a3-4fff-b2ea-352ca6d4
+ 4ce7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Welding and bonding work on rails and swit
+ ch components
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4a4a4415-ba04-4ce9-8a11-1996921c981f-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Submission deadline: P22.0281 SVSA Münchenbuchsee - Bauleistungen 
+ BKP 061 Strassenbau_BKP 063 Wasserbau
+DESCRIPTION:Public buyer: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nSubmission deadline: 29 Jan 2027\, 23:59\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/4a4a4415-ba04-4ce9-8a11-1996921c981f/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/4a4a4415-ba0
+ 4-4ce9-8a11-1996921c981f
+URL:https://auftragsregister.ch/en/auftrag/4a4a4415-ba04-4ce9-8a11-1996921c
+ 981f/
+LOCATION:Münchenbuchsee
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: P22.0281 SVSA Münchenbuchsee - Bauleistun
+ gen BKP 061 Strassenbau_BKP 063 Wasserbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

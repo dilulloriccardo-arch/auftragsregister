@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cde19a8a-00fe-4f5c-a677-d950e2773723-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Submission deadline: Bauherrenunterstützung (BHU) - Kettenersatzpr
+ ogramm SIA 32-53
+DESCRIPTION:Public buyer: Swissgrid AG - Engineering & Construction\nSubmis
+ sion deadline: 15 Jan 2027\, 23:59\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/cde19a8a-00fe-4f5c-a677-d950e2773723/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/cde19a8a-00fe-4f5c-a677-d950
+ e2773723
+URL:https://auftragsregister.ch/en/auftrag/cde19a8a-00fe-4f5c-a677-d950e277
+ 3723/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bauherrenunterstützung (BHU) - Kettenersa
+ tzprogramm SIA 32-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

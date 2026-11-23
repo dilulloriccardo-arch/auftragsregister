@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41f908df-0e84-4190-9bc7-420f22b471c2-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270106T150000Z
+SUMMARY:Délai de remise : BAV 83185 SA Rütihof\, Umbau BET für TS - BK
+ P 230 Elektroanlagen
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 06.01.2027\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/41f908df-0e84-4190-9bc7-420f22b471c2/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/41f908df-0e84-4190-9
+ bc7-420f22b471c2
+URL:https://auftragsregister.ch/fr/auftrag/41f908df-0e84-4190-9bc7-420f22b4
+ 71c2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 83185 SA Rütihof\, Umbau BET für TS 
+ - BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

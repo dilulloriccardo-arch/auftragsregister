@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72defcb0-43eb-4a0b-bebf-367495b15e7c-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270122T140000Z
+SUMMARY:Délai de remise : Plaque tournante
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB Division Pr
+ oduktion Personenverkehr\nDélai de remise : 22.01.2027\, 15 h 00\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/72defcb0-43eb-4
+ a0b-bebf-367495b15e7c/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/72defcb0-43eb-4a0b-bebf-367495b15e7c
+URL:https://auftragsregister.ch/fr/auftrag/72defcb0-43eb-4a0b-bebf-367495b1
+ 5e7c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Plaque tournante
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6f649c4-48e2-4c3b-976e-f676b7a9647e-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Scadenza: EPFL Contrats cadres installateurs électriciens
+DESCRIPTION:Ente pubblico: EPFL VPF ACHATS\nScadenza: 25.01.2027\, 16:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/a6f649c4-48e2-4c3b-976
+ e-f676b7a9647e/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/a6f649c4-48e2-4c3b-976e-f676b7a9647e
+URL:https://auftragsregister.ch/it/auftrag/a6f649c4-48e2-4c3b-976e-f676b7a9
+ 647e/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: EPFL Contrats cadres installateurs électriciens
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

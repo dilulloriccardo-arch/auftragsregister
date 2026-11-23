@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0f9568ec-1d9d-49f2-81e3-576eed8d4454-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Submission deadline: Fourniture de luminaires et de leurs accessoir
+ es Poste de Foretaille
+DESCRIPTION:Public buyer: Services industriels de Genève (SIG) - Direction
+  Achats\nSubmission deadline: 22 Dec 2026\, 10:00\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/0f9568ec-1d9d-49f2-81e3-576eed8d4454/\n
+ Official publication: https://www.simap.ch/en/project-detail/0f9568ec-1d9d
+ -49f2-81e3-576eed8d4454
+URL:https://auftragsregister.ch/en/auftrag/0f9568ec-1d9d-49f2-81e3-576eed8d
+ 4454/
+LOCATION:Le Lignon (GE)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fourniture de luminaires et de leurs acces
+ soires Poste de Foretaille
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

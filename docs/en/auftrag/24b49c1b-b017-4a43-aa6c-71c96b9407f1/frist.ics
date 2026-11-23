@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:24b49c1b-b017-4a43-aa6c-71c96b9407f1-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Submission deadline: Kantonsstrasse Nr. 17\, Kaltbrunn\, Sanierung 
+ Uznacherstrasse\, Abschnitt Strassenverkehrsamt bis Bachtelstrasse
+DESCRIPTION:Public buyer: Kanton St.Gallen\, Tiefbauamt\, Strassenkreisinsp
+ ektorat Schmerikon\nSubmission deadline: 15 Dec 2026\, 23:59\nIn the reg
+ ister: https://auftragsregister.ch/en/auftrag/24b49c1b-b017-4a43-aa6c-71c9
+ 6b9407f1/\nOfficial publication: https://www.simap.ch/en/project-detail/24
+ b49c1b-b017-4a43-aa6c-71c96b9407f1
+URL:https://auftragsregister.ch/en/auftrag/24b49c1b-b017-4a43-aa6c-71c96b94
+ 07f1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kantonsstrasse Nr. 17\, Kaltbrunn\, Sanier
+ ung Uznacherstrasse\, Abschnitt Strassenverkehrsamt bis Bachtelstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bcd802c0-1e4c-478b-a1c0-8c2db7d27a37-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270106T110000Z
+SUMMARY:Submission deadline: 201.1 Demolition\, Excavation Pit\, Utility Li
+ nes
+DESCRIPTION:Public buyer: Einwohnergemeinde Stadt Sursee\nSubmission deadli
+ ne: 6 Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/
+ auftrag/bcd802c0-1e4c-478b-a1c0-8c2db7d27a37/\nOfficial publication: https
+ ://www.simap.ch/en/project-detail/bcd802c0-1e4c-478b-a1c0-8c2db7d27a37
+URL:https://auftragsregister.ch/en/auftrag/bcd802c0-1e4c-478b-a1c0-8c2db7d2
+ 7a37/
+LOCATION:Sursee
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 201.1 Demolition\, Excavation Pit\, Utilit
+ y Lines
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

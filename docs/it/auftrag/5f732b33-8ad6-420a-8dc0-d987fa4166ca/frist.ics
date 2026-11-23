@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f732b33-8ad6-420a-8dc0-d987fa4166ca-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270204T225900Z
+SUMMARY:Scadenza: MP-120065\, Erhaltungsprojekt Osttangente Basel / Bauleit
+ ung Bau (AS City)
+DESCRIPTION:Ente pubblico: Eidgenössisches Departement für Umwelt\, Verke
+ hr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung 
+ Strasseninfrastruktur-Ost - F3\nScadenza: 04.02.2027\, 23:59\nNel registro
+ : https://auftragsregister.ch/it/auftrag/5f732b33-8ad6-420a-8dc0-d987fa416
+ 6ca/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/5f73
+ 2b33-8ad6-420a-8dc0-d987fa4166ca
+URL:https://auftragsregister.ch/it/auftrag/5f732b33-8ad6-420a-8dc0-d987fa41
+ 66ca/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-120065\, Erhaltungsprojekt Osttangente Basel / Bau
+ leitung Bau (AS City)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

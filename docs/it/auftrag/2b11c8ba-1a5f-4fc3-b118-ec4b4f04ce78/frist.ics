@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2b11c8ba-1a5f-4fc3-b118-ec4b4f04ce78-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270106T225900Z
+SUMMARY:Scadenza: Gemeindezentrum Bremgarten b. Bern\, BKP 221.1 Fenster au
+ s Holz-Metall
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Bremgarten b. Bern (maurer bau
+ leitung gmbh)\nScadenza: 06.01.2027\, 23:59\nNel registro: https://auftrag
+ sregister.ch/it/auftrag/2b11c8ba-1a5f-4fc3-b118-ec4b4f04ce78/\nPubblicazio
+ ne ufficiale: https://www.simap.ch/it/project-detail/2b11c8ba-1a5f-4fc3-b1
+ 18-ec4b4f04ce78
+URL:https://auftragsregister.ch/it/auftrag/2b11c8ba-1a5f-4fc3-b118-ec4b4f04
+ ce78/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gemeindezentrum Bremgarten b. Bern\, BKP 221.1 Fenste
+ r aus Holz-Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

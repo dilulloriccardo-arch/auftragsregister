@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6017c719-f879-40b3-9199-65bbeb243236-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270111T090000Z
+SUMMARY:Scadenza: SWW Moos Überbrückungsmassnahmen\, PW Horn\, Elektroins
+ tallationen
+DESCRIPTION:Ente pubblico: Stadt Zürich Wasserversorgung\nScadenza: 11.01.
+ 2027\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/6017c71
+ 9-f879-40b3-9199-65bbeb243236/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/6017c719-f879-40b3-9199-65bbeb243236
+URL:https://auftragsregister.ch/it/auftrag/6017c719-f879-40b3-9199-65bbeb24
+ 3236/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: SWW Moos Überbrückungsmassnahmen\, PW Horn\, Elektr
+ oinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

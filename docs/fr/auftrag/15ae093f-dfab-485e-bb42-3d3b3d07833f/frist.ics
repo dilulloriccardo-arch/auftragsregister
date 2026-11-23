@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:15ae093f-dfab-485e-bb42-3d3b3d07833f-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270108T130000Z
+SUMMARY:Délai de remise : Wohnsiedlung Altwiesen\, 8051 Zürich
+DESCRIPTION:Acheteur public : Stiftung Einfach Wohnen\nDélai de remise
+  : 08.01.2027\, 14 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/15ae093f-dfab-485e-bb42-3d3b3d07833f/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/15ae093f-dfab-485e-bb42-3d
+ 3b3d07833f
+URL:https://auftragsregister.ch/fr/auftrag/15ae093f-dfab-485e-bb42-3d3b3d07
+ 833f/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wohnsiedlung Altwiesen\, 8051 Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

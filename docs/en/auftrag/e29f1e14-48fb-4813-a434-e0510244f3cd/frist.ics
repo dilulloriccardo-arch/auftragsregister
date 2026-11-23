@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e29f1e14-48fb-4813-a434-e0510244f3cd-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Submission deadline: Travaux de lavage dans les tunnels SIERA - Yve
+ rdon-Domdidier
+DESCRIPTION:Public buyer: SIERA - Service Intercantonal d'Entretien du Rés
+ eau Autoroutier\nSubmission deadline: 7 Dec 2026\, 12:00\nIn the registe
+ r: https://auftragsregister.ch/en/auftrag/e29f1e14-48fb-4813-a434-e0510244
+ f3cd/\nOfficial publication: https://www.simap.ch/en/project-detail/e29f1e
+ 14-48fb-4813-a434-e0510244f3cd
+URL:https://auftragsregister.ch/en/auftrag/e29f1e14-48fb-4813-a434-e0510244
+ f3cd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Travaux de lavage dans les tunnels SIERA -
+  Yverdon-Domdidier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

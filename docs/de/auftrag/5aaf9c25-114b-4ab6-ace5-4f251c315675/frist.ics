@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5aaf9c25-114b-4ab6-ace5-4f251c315675-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261209T130000Z
+SUMMARY:Eingabefrist: Appel d'offres pour l'attribution de contrats-cadres 
+ relatifs à la fourniture du lot « pâtes\, céréales et produits assimi
+ lés » pour la période 2027-2028 destiné à la Fondation « Casa per An
+ ziani » de Giubiasco
+DESCRIPTION:Auftraggeber: Fondazione Casa per Anziani di GIubiasco\nEingabe
+ frist: 09.12.2026\, 14.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/5aaf9c25-114b-4ab6-ace5-4f251c315675/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/5aaf9c25-114b-4ab6-ace5-4f251c315675
+URL:https://auftragsregister.ch/de/auftrag/5aaf9c25-114b-4ab6-ace5-4f251c31
+ 5675/
+LOCATION:Giubiasco
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Appel d'offres pour l'attribution de contrats-cad
+ res relatifs à la fourniture du lot « pâtes\, céréales et produits as
+ similés » pour la période 2027-2028 destiné à la Fondation « Casa pe
+ r Anziani » de Giubiasco
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

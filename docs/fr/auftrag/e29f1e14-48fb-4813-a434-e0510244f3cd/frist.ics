@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e29f1e14-48fb-4813-a434-e0510244f3cd-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Délai de remise : Travaux de lavage dans les tunnels SIERA - Yve
+ rdon-Domdidier
+DESCRIPTION:Acheteur public : SIERA - Service Intercantonal d'Entretien d
+ u Réseau Autoroutier\nDélai de remise : 07.12.2026\, 12 h 00\nDans
+  le registre : https://auftragsregister.ch/fr/auftrag/e29f1e14-48fb-4813
+ -a434-e0510244f3cd/\nPublication officielle : https://www.simap.ch/fr/pr
+ oject-detail/e29f1e14-48fb-4813-a434-e0510244f3cd
+URL:https://auftragsregister.ch/fr/auftrag/e29f1e14-48fb-4813-a434-e0510244
+ f3cd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Travaux de lavage dans les tunnels SIERA -
+  Yverdon-Domdidier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

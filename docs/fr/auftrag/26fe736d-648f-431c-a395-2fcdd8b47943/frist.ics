@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:26fe736d-648f-431c-a395-2fcdd8b47943-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270121T140000Z
+SUMMARY:Délai de remise : BKP 283.4 Deckenbekleidungen aus Holz- und Hol
+ zwerkstoffen
+DESCRIPTION:Acheteur public : Schule Bürglen (FoBu Arch.)\nDélai de rem
+ ise : 21.01.2027\, 15 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/26fe736d-648f-431c-a395-2fcdd8b47943/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/26fe736d-648f-431c-a395
+ -2fcdd8b47943
+URL:https://auftragsregister.ch/fr/auftrag/26fe736d-648f-431c-a395-2fcdd8b4
+ 7943/
+LOCATION:Bürglen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 283.4 Deckenbekleidungen aus Holz- und
+  Holzwerkstoffen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

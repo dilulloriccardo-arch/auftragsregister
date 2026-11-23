@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1297f835-84f3-442d-8b91-b4cbec59ae38-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261211T150000Z
+SUMMARY:Délai de remise : KSW Rochaden - Gastro / Pneumo - 230 Elektro
+DESCRIPTION:Acheteur public : Kantonsspital Winterthur - Baumanagement\nD
+ élai de remise : 11.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/1297f835-84f3-442d-8b91-b4cbec59ae38/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/1297f835-84
+ f3-442d-8b91-b4cbec59ae38
+URL:https://auftragsregister.ch/fr/auftrag/1297f835-84f3-442d-8b91-b4cbec59
+ ae38/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : KSW Rochaden - Gastro / Pneumo - 230 Elekt
+ ro
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

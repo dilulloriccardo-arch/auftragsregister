@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f732b33-8ad6-420a-8dc0-d987fa4166ca-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270204T225900Z
+SUMMARY:Eingabefrist: MP-120065\, Erhaltungsprojekt Osttangente Basel / Bau
+ leitung Bau (AS City)
+DESCRIPTION:Auftraggeber: Eidgenössisches Departement für Umwelt\, Verkeh
+ r\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung S
+ trasseninfrastruktur-Ost - F3\nEingabefrist: 04.02.2027\, 23.59 Uhr\nIm R
+ egister: https://auftragsregister.ch/de/auftrag/5f732b33-8ad6-420a-8dc0-d9
+ 87fa4166ca/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/
+ 5f732b33-8ad6-420a-8dc0-d987fa4166ca
+URL:https://auftragsregister.ch/de/auftrag/5f732b33-8ad6-420a-8dc0-d987fa41
+ 66ca/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-120065\, Erhaltungsprojekt Osttangente Basel /
+  Bauleitung Bau (AS City)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

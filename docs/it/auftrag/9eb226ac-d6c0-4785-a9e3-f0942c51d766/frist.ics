@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9eb226ac-d6c0-4785-a9e3-f0942c51d766-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Scadenza: ARA Thurau\, Zentrifugalpumpen
+DESCRIPTION:Ente pubblico: Abwasserverband Thurau\nScadenza: 29.01.2027\, 1
+ 2:00\nNel registro: https://auftragsregister.ch/it/auftrag/9eb226ac-d6c0-4
+ 785-a9e3-f0942c51d766/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/9eb226ac-d6c0-4785-a9e3-f0942c51d766
+URL:https://auftragsregister.ch/it/auftrag/9eb226ac-d6c0-4785-a9e3-f0942c51
+ d766/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ARA Thurau\, Zentrifugalpumpen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

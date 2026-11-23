@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69371b7d-dfa3-4ebf-9d77-fdd6c3cdc73d-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270106T090000Z
+SUMMARY:Délai de remise : Strassensanierung\, Werkleitungsbau Schaiengä
+ ssli
+DESCRIPTION:Acheteur public : Gemeinde Ettingen\nDélai de remise : 06.
+ 01.2027\, 10 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/69371b7d-dfa3-4ebf-9d77-fdd6c3cdc73d/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/69371b7d-dfa3-4ebf-9d77-fdd6c3cdc7
+ 3d
+URL:https://auftragsregister.ch/fr/auftrag/69371b7d-dfa3-4ebf-9d77-fdd6c3cd
+ c73d/
+LOCATION:Ettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Strassensanierung\, Werkleitungsbau Schaie
+ ngässli
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

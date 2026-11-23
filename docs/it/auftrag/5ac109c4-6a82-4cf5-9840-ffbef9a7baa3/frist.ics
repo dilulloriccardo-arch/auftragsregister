@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5ac109c4-6a82-4cf5-9840-ffbef9a7baa3-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261216T110000Z
+SUMMARY:Scadenza: Revitalisierung Widenbach\, Oberbüren SG
+DESCRIPTION:Ente pubblico: Politische Gemeinde Oberbüren (Fröhlich Wasser
+ bau AG)\nScadenza: 16.12.2026\, 12:00\nNel registro: https://auftragsregis
+ ter.ch/it/auftrag/5ac109c4-6a82-4cf5-9840-ffbef9a7baa3/\nPubblicazione uff
+ iciale: https://www.simap.ch/it/project-detail/5ac109c4-6a82-4cf5-9840-ffb
+ ef9a7baa3
+URL:https://auftragsregister.ch/it/auftrag/5ac109c4-6a82-4cf5-9840-ffbef9a7
+ baa3/
+LOCATION:Chrüzalber
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Revitalisierung Widenbach\, Oberbüren SG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

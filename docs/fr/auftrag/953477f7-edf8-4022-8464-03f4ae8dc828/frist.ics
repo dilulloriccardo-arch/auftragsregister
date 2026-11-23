@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:953477f7-edf8-4022-8464-03f4ae8dc828-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Délai de remise : Hôtel-de-Ville\, La Chaux-de-Fonds_CFC273.3_M
+ enuiserie courante agencement
+DESCRIPTION:Acheteur public : Service bâtiments et logement\nDélai de r
+ emise : 09.12.2026\, 12 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/953477f7-edf8-4022-8464-03f4ae8dc828/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/953477f7-edf8-4022-84
+ 64-03f4ae8dc828
+URL:https://auftragsregister.ch/fr/auftrag/953477f7-edf8-4022-8464-03f4ae8d
+ c828/
+LOCATION:La Chaux de Fonds
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Hôtel-de-Ville\, La Chaux-de-Fonds_CFC273
+ .3_Menuiserie courante agencement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18c89d9b-f83b-4694-b67a-81a5d4b37d1f-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20261218T090000Z
+SUMMARY:Submission deadline: Gruebstrasse\, Abschnitt Alte Landstrasse bis 
+ "Auf der Grueb"\, L= ca. 260m'
+DESCRIPTION:Public buyer: Gemeinde Meilen\nSubmission deadline: 18 Dec 20
+ 26\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag/18c89d
+ 9b-f83b-4694-b67a-81a5d4b37d1f/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/18c89d9b-f83b-4694-b67a-81a5d4b37d1f
+URL:https://auftragsregister.ch/en/auftrag/18c89d9b-f83b-4694-b67a-81a5d4b3
+ 7d1f/
+LOCATION:Meilen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gruebstrasse\, Abschnitt Alte Landstrasse 
+ bis "Auf der Grueb"\, L= ca. 260m'
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

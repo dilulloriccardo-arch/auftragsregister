@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:99cc49a3-fb28-4572-b4fa-4489e9be9e99-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T150000Z
+SUMMARY:Submission deadline: BAV 83185 SA Rütihof\, Umbau BET für TS - BK
+ P 271 Gipserarbeiten
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 13 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/99cc49a3-fb28-4572-b4fa-4489e9be9e99/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/99cc49a3-fb28-4572-b4fa-4489e9be9e99
+URL:https://auftragsregister.ch/en/auftrag/99cc49a3-fb28-4572-b4fa-4489e9be
+ 9e99/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 83185 SA Rütihof\, Umbau BET für TS 
+ - BKP 271 Gipserarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

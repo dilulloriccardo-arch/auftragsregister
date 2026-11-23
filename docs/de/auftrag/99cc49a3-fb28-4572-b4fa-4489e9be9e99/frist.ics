@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:99cc49a3-fb28-4572-b4fa-4489e9be9e99-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T150000Z
+SUMMARY:Eingabefrist: BAV 83185 SA Rütihof\, Umbau BET für TS - BKP 271 G
+ ipserarbeiten
+DESCRIPTION:Auftraggeber: HBD - Amt für Hochbauten (AHB)\nEingabefrist: 13
+ .01.2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /99cc49a3-fb28-4572-b4fa-4489e9be9e99/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/99cc49a3-fb28-4572-b4fa-4489e9be9e99
+URL:https://auftragsregister.ch/de/auftrag/99cc49a3-fb28-4572-b4fa-4489e9be
+ 9e99/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BAV 83185 SA Rütihof\, Umbau BET für TS - BKP 2
+ 71 Gipserarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

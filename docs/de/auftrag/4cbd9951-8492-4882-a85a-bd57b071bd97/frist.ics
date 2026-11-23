@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4cbd9951-8492-4882-a85a-bd57b071bd97-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Eingabefrist: Markierungen Bezirk 2\; Haupt- und Verbindungsstrasse
+ n
+DESCRIPTION:Auftraggeber: Tiefbauamt Graubünden\nEingabefrist: 23.12.2026\
+ , 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/4cbd9951
+ -8492-4882-a85a-bd57b071bd97/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/4cbd9951-8492-4882-a85a-bd57b071bd97
+URL:https://auftragsregister.ch/de/auftrag/4cbd9951-8492-4882-a85a-bd57b071
+ bd97/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Markierungen Bezirk 2\; Haupt- und Verbindungsstr
+ assen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

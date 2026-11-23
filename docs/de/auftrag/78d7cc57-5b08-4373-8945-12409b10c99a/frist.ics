@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78d7cc57-5b08-4373-8945-12409b10c99a-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270115T140000Z
+SUMMARY:Eingabefrist: Neubau / Umgestaltung Bahnhofplatz / Bushof / Sennhof
+ platz I Gesamtleitender Projektingenieur Ingenieurleistungen SIA Ph. 32-53
+DESCRIPTION:Auftraggeber: Bezirksverwaltung Einsiedeln\nEingabefrist: 15.01
+ .2027\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/78
+ d7cc57-5b08-4373-8945-12409b10c99a/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/78d7cc57-5b08-4373-8945-12409b10c99a
+URL:https://auftragsregister.ch/de/auftrag/78d7cc57-5b08-4373-8945-12409b10
+ c99a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau / Umgestaltung Bahnhofplatz / Bushof / Sen
+ nhofplatz I Gesamtleitender Projektingenieur Ingenieurleistungen SIA Ph. 3
+ 2-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

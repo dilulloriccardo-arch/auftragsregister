@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af463505-3ac2-41cc-baed-9432cd029a3a-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Scadenza: 1 Kommunalfahrzeug 4x4 GR 79'111_B7
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 30.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/af463505-3ac2-4
+ 1cc-baed-9432cd029a3a/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/af463505-3ac2-41cc-baed-9432cd029a3a
+URL:https://auftragsregister.ch/it/auftrag/af463505-3ac2-41cc-baed-9432cd02
+ 9a3a/
+LOCATION:Thusis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 1 Kommunalfahrzeug 4x4 GR 79'111_B7
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

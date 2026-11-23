@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:70b17255-6667-4f36-81ad-0a590e1e745d-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261222T100000Z
+SUMMARY:Délai de remise : 0813.104 - Comune di Mendrisio - Formazione ro
+ tonda Via Vignalunga\, incrocio con Via C. Maderno - Opere di pavimentazio
+ ne
+DESCRIPTION:Acheteur public : Ufficio delle commesse pubbliche e della pr
+ ogrammazione\nDélai de remise : 22.12.2026\, 11 h 00\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/70b17255-6667-4f36-81ad-0a5
+ 90e1e745d/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/70b17255-6667-4f36-81ad-0a590e1e745d
+URL:https://auftragsregister.ch/fr/auftrag/70b17255-6667-4f36-81ad-0a590e1e
+ 745d/
+LOCATION:Mendrisio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 0813.104 - Comune di Mendrisio - Formazion
+ e rotonda Via Vignalunga\, incrocio con Via C. Maderno - Opere di paviment
+ azione
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69371b7d-dfa3-4ebf-9d77-fdd6c3cdc73d-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270106T090000Z
+SUMMARY:Eingabefrist: Strassensanierung\, Werkleitungsbau Schaiengässli
+DESCRIPTION:Auftraggeber: Gemeinde Ettingen\nEingabefrist: 06.01.2027\, 10.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/69371b7d-dfa3
+ -4ebf-9d77-fdd6c3cdc73d/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/69371b7d-dfa3-4ebf-9d77-fdd6c3cdc73d
+URL:https://auftragsregister.ch/de/auftrag/69371b7d-dfa3-4ebf-9d77-fdd6c3cd
+ c73d/
+LOCATION:Ettingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Strassensanierung\, Werkleitungsbau Schaiengässl
+ i
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

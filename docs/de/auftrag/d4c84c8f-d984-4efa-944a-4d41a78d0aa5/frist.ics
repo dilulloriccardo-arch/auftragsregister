@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d4c84c8f-d984-4efa-944a-4d41a78d0aa5-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261218T225500Z
+SUMMARY:Eingabefrist: Industriestrasse\, Pulvermühlestrasse - Industriegle
+ is
+DESCRIPTION:Auftraggeber: Stadt Chur - Tiefbaudienste\nEingabefrist: 18.12.
+ 2026\, 23.55 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d4c
+ 84c8f-d984-4efa-944a-4d41a78d0aa5/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/d4c84c8f-d984-4efa-944a-4d41a78d0aa5
+URL:https://auftragsregister.ch/de/auftrag/d4c84c8f-d984-4efa-944a-4d41a78d
+ 0aa5/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Industriestrasse\, Pulvermühlestrasse - Industri
+ egleis
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

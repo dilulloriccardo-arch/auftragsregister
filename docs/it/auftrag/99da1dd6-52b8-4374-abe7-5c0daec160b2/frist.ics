@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:99da1dd6-52b8-4374-abe7-5c0daec160b2-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270125T160000Z
+SUMMARY:Scadenza: 100355 Neubau Rehaklinik Triemli\, Zürich - BKP 250 Sani
+ täranlagen
+DESCRIPTION:Ente pubblico: Stiftung Kliniken Valens (Baulink AG)\nScadenza:
+  25.01.2027\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 99da1dd6-52b8-4374-abe7-5c0daec160b2/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/99da1dd6-52b8-4374-abe7-5c0daec160b2
+URL:https://auftragsregister.ch/it/auftrag/99da1dd6-52b8-4374-abe7-5c0daec1
+ 60b2/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 100355 Neubau Rehaklinik Triemli\, Zürich - BKP 250 
+ Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

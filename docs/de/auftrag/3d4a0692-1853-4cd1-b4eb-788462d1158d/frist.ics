@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d4a0692-1853-4cd1-b4eb-788462d1158d-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270127T110000Z
+SUMMARY:Eingabefrist: 2026-900 Büromaterial
+DESCRIPTION:Auftraggeber: Kanton Luzern\, Lehrmittelverlag\, Drucksachen- u
+ nd Materialzentrale\nEingabefrist: 27.01.2027\, 12.00 Uhr\nIm Register: h
+ ttps://auftragsregister.ch/de/auftrag/3d4a0692-1853-4cd1-b4eb-788462d1158d
+ /\nAmtliche Publikation: https://www.simap.ch/de/project-detail/3d4a0692-1
+ 853-4cd1-b4eb-788462d1158d
+URL:https://auftragsregister.ch/de/auftrag/3d4a0692-1853-4cd1-b4eb-788462d1
+ 158d/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 2026-900 Büromaterial
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea4f0425-462d-4c04-86d7-f0a05af10a80-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270226T225900Z
+SUMMARY:Délai de remise : AIS – Transformateurs - Sous-station de Lauf
+ enburg
+DESCRIPTION:Acheteur public : Swissgrid AG - Asset & Maintenance\nDélai 
+ de remise : 26.02.2027\, 23 h 59\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/ea4f0425-462d-4c04-86d7-f0a05af10a80/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/ea4f0425-462d-4c0
+ 4-86d7-f0a05af10a80
+URL:https://auftragsregister.ch/fr/auftrag/ea4f0425-462d-4c04-86d7-f0a05af1
+ 0a80/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AIS – Transformateurs - Sous-station de 
+ Laufenburg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

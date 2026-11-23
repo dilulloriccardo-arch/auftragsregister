@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:14952db1-430d-417f-a44d-e57c2a785517-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270121T100000Z
+SUMMARY:Submission deadline: 0241.313-4 - Communes de Lugano et Massagno - 
+ Aménagement de la zone de la gare CFF de Lugano - Passage souterrain Genz
+ ana - Travaux de revêtement
+DESCRIPTION:Public buyer: Ufficio delle commesse pubbliche e della programm
+ azione\nSubmission deadline: 21 Jan 2027\, 11:00\nIn the register: https
+ ://auftragsregister.ch/en/auftrag/14952db1-430d-417f-a44d-e57c2a785517/\nO
+ fficial publication: https://www.simap.ch/en/project-detail/14952db1-430d-
+ 417f-a44d-e57c2a785517
+URL:https://auftragsregister.ch/en/auftrag/14952db1-430d-417f-a44d-e57c2a78
+ 5517/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 0241.313-4 - Communes de Lugano et Massagn
+ o - Aménagement de la zone de la gare CFF de Lugano - Passage souterrain 
+ Genzana - Travaux de revêtement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2812268e-17d6-49a0-bcfa-0186fecc2ab0-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270106T110000Z
+SUMMARY:Eingabefrist: Rahmenvertragspartner HR-IT-Weiterentwicklung: Dienst
+ leistungen für SAP SuccessFactors und Fiori\, aconso-Cloud und HR-IT-Proj
+ ektmanagement
+DESCRIPTION:Auftraggeber: Dienststelle Personal\nEingabefrist: 06.01.2027\,
+  12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2812268e-
+ 17d6-49a0-bcfa-0186fecc2ab0/\nAmtliche Publikation: https://www.simap.ch/d
+ e/project-detail/2812268e-17d6-49a0-bcfa-0186fecc2ab0
+URL:https://auftragsregister.ch/de/auftrag/2812268e-17d6-49a0-bcfa-0186fecc
+ 2ab0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rahmenvertragspartner HR-IT-Weiterentwicklung: Di
+ enstleistungen für SAP SuccessFactors und Fiori\, aconso-Cloud und HR-IT-
+ Projektmanagement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

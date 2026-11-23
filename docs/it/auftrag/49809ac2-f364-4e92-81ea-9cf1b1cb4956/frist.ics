@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49809ac2-f364-4e92-81ea-9cf1b1cb4956-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Scadenza: Sièges de théâtre
+DESCRIPTION:Ente pubblico: SAITRN (Théâtre du Passage)\nScadenza: 15.12.2
+ 026\nNel registro: https://auftragsregister.ch/it/auftrag/49809ac2-f364-4e
+ 92-81ea-9cf1b1cb4956/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/49809ac2-f364-4e92-81ea-9cf1b1cb4956
+URL:https://auftragsregister.ch/it/auftrag/49809ac2-f364-4e92-81ea-9cf1b1cb
+ 4956/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sièges de théâtre
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

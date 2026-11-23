@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fd06713c-ccce-4e96-becc-15b551fd1731-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270108T090000Z
+SUMMARY:Délai de remise : 271 Travaux de plâtrage - Construction d'une 
+ nouvelle école primaire avec gymnase\, Erlenstrasse\, Oberglatt
+DESCRIPTION:Acheteur public : Gemeinde Oberglatt (Anderegg Partner AG)\nD
+ élai de remise : 08.01.2027\, 10 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/fd06713c-ccce-4e96-becc-15b551fd1731/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/fd06713c-cc
+ ce-4e96-becc-15b551fd1731
+URL:https://auftragsregister.ch/fr/auftrag/fd06713c-ccce-4e96-becc-15b551fd
+ 1731/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 271 Travaux de plâtrage - Construction d'
+ une nouvelle école primaire avec gymnase\, Erlenstrasse\, Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

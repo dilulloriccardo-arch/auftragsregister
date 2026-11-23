@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8111a929-b71d-47f8-b562-7c4668492da9-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270112T090000Z
+SUMMARY:Scadenza: Transformation et rénovation du bâtiment historique du 
+ Sacré-Cœur à Estavayer-le-Lac - CFC 421 Aménagements extérieurs - Tra
+ vaux du paysagiste
+DESCRIPTION:Ente pubblico: studio WOW sa\nScadenza: 12.01.2027\, 10:00\nNel
+  registro: https://auftragsregister.ch/it/auftrag/8111a929-b71d-47f8-b562-
+ 7c4668492da9/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/8111a929-b71d-47f8-b562-7c4668492da9
+URL:https://auftragsregister.ch/it/auftrag/8111a929-b71d-47f8-b562-7c466849
+ 2da9/
+LOCATION:Estavayer-le-Lac
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Transformation et rénovation du bâtiment historique
+  du Sacré-Cœur à Estavayer-le-Lac - CFC 421 Aménagements extérieurs -
+  Travaux du paysagiste
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

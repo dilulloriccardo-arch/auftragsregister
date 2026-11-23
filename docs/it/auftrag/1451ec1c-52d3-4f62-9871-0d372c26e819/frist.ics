@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1451ec1c-52d3-4f62-9871-0d372c26e819-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261223T160000Z
+SUMMARY:Scadenza: Gesamtsanierung Schulanlage Pestalozzi Stans\, BKP 215.2 
+ Fassadenbau
+DESCRIPTION:Ente pubblico: Politische Gemeinde Stans\nScadenza: 23.12.2026\
+ , 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/1451ec1c-52d
+ 3-4f62-9871-0d372c26e819/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/1451ec1c-52d3-4f62-9871-0d372c26e819
+URL:https://auftragsregister.ch/it/auftrag/1451ec1c-52d3-4f62-9871-0d372c26
+ e819/
+LOCATION:Stans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gesamtsanierung Schulanlage Pestalozzi Stans\, BKP 21
+ 5.2 Fassadenbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

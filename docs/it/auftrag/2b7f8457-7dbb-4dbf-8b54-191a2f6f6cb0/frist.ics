@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2b7f8457-7dbb-4dbf-8b54-191a2f6f6cb0-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270118T140000Z
+SUMMARY:Scadenza: UNIVERS_Nouveau bâtiment pour l'université de Neuchâte
+ l _ Espace Tilo-Frey\, Neuchâtel _ Installations électriques courant for
+ t et courant faible _ CFC 232 / CFC 236
+DESCRIPTION:Ente pubblico: Service des bâtiments de l'Etat de Neuchâtel\n
+ Scadenza: 18.01.2027\, 15:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/2b7f8457-7dbb-4dbf-8b54-191a2f6f6cb0/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/2b7f8457-7dbb-4dbf-8b54-191a2f6f6cb0
+URL:https://auftragsregister.ch/it/auftrag/2b7f8457-7dbb-4dbf-8b54-191a2f6f
+ 6cb0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: UNIVERS_Nouveau bâtiment pour l'université de Neuch
+ âtel _ Espace Tilo-Frey\, Neuchâtel _ Installations électriques courant
+  fort et courant faible _ CFC 232 / CFC 236
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

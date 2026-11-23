@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8737402-eeae-470e-8d71-938322a91eb3-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270106T150000Z
+SUMMARY:Eingabefrist: Householder Symposium XXIII @EPFL
+DESCRIPTION:Auftraggeber: EPFL - Service des Achats\nEingabefrist: 06.01.20
+ 27\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e8737
+ 402-eeae-470e-8d71-938322a91eb3/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/e8737402-eeae-470e-8d71-938322a91eb3
+URL:https://auftragsregister.ch/de/auftrag/e8737402-eeae-470e-8d71-938322a9
+ 1eb3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Householder Symposium XXIII @EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af7210d0-c578-4544-bba4-39bfa2b3fa14-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Délai de remise : Kantonsstrasse Nr. 45\, Kirchberg: Neudorfstra
+ sse\, Ortseingang bis Sonneggweg
+DESCRIPTION:Acheteur public : Kanton St.Gallen\, Tiefbauamt\, Strassenkre
+ isinspektorat Wattwil\nDélai de remise : 15.12.2026\, 23 h 59\nDans
+  le registre : https://auftragsregister.ch/fr/auftrag/af7210d0-c578-4544
+ -bba4-39bfa2b3fa14/\nPublication officielle : https://www.simap.ch/fr/pr
+ oject-detail/af7210d0-c578-4544-bba4-39bfa2b3fa14
+URL:https://auftragsregister.ch/fr/auftrag/af7210d0-c578-4544-bba4-39bfa2b3
+ fa14/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kantonsstrasse Nr. 45\, Kirchberg: Neudorf
+ strasse\, Ortseingang bis Sonneggweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff8ccb5a-1f3f-4a26-8d06-19377deff706-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270115T110000Z
+SUMMARY:Scadenza: AO – tpg – systèmes audio-visuel de visioconférence
+  – Fourniture\, installation et mise en service d’équipement et/ou de
+  salles de réunions – Maintenance
+DESCRIPTION:Ente pubblico: Transport publics genevois (tpg)\nScadenza: 15.0
+ 1.2027\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/ff8cc
+ b5a-1f3f-4a26-8d06-19377deff706/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/ff8ccb5a-1f3f-4a26-8d06-19377deff706
+URL:https://auftragsregister.ch/it/auftrag/ff8ccb5a-1f3f-4a26-8d06-19377def
+ f706/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AO – tpg – systèmes audio-visuel de visioconfér
+ ence – Fourniture\, installation et mise en service d’équipement et/o
+ u de salles de réunions – Maintenance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

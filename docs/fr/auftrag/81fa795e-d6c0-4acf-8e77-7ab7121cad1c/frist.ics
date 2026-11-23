@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81fa795e-d6c0-4acf-8e77-7ab7121cad1c-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Délai de remise : Acquisition de véhicules de patrouille de mê
+ me type pour la police zougoise
+DESCRIPTION:Acheteur public : Kanton Zug\, handelnd durch die Sicherheits
+ direktion\nDélai de remise : 16.12.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/81fa795e-d6c0-4acf-8e77-7ab712
+ 1cad1c/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /81fa795e-d6c0-4acf-8e77-7ab7121cad1c
+URL:https://auftragsregister.ch/fr/auftrag/81fa795e-d6c0-4acf-8e77-7ab7121c
+ ad1c/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition de véhicules de patrouille de
+  même type pour la police zougoise
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

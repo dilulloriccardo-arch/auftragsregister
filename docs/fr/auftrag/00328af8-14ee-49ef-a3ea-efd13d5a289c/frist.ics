@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:00328af8-14ee-49ef-a3ea-efd13d5a289c-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270121T150000Z
+SUMMARY:Délai de remise : BAV 59016 Recyclingzentrum Juch-Areal\, Neubau
+  Juch-Areal - CFC 411 Travaux de l'entreprise de maçonnerie
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 21.01.2027\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/00328af8-14ee-49ef-a3ea-efd13d5a289c/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/00328af8-14ee-49ef-a
+ 3ea-efd13d5a289c
+URL:https://auftragsregister.ch/fr/auftrag/00328af8-14ee-49ef-a3ea-efd13d5a
+ 289c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 59016 Recyclingzentrum Juch-Areal\, Ne
+ ubau Juch-Areal - CFC 411 Travaux de l'entreprise de maçonnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f035ace0-5f70-4baa-800e-5bb7db7cd6c3-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270118T110000Z
+SUMMARY:Eingabefrist: Neubau Feuerwehr- und Werkhofgebäude mit Hauptsammel
+ stelle Gubristhof\, 8104 Weiningen
+DESCRIPTION:Auftraggeber: Rapp AG\nEingabefrist: 18.01.2027\, 12.00 Uhr\nI
+ m Register: https://auftragsregister.ch/de/auftrag/f035ace0-5f70-4baa-800e
+ -5bb7db7cd6c3/\nAmtliche Publikation: https://www.simap.ch/de/project-deta
+ il/f035ace0-5f70-4baa-800e-5bb7db7cd6c3
+URL:https://auftragsregister.ch/de/auftrag/f035ace0-5f70-4baa-800e-5bb7db7c
+ d6c3/
+LOCATION:Weiningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Feuerwehr- und Werkhofgebäude mit Hauptsa
+ mmelstelle Gubristhof\, 8104 Weiningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

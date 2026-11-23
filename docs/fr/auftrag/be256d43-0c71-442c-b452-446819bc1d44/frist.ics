@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be256d43-0c71-442c-b452-446819bc1d44-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T225900Z
+SUMMARY:Délai de remise : Strassensanierung Schwandenstrasse\, Sigriswil
+DESCRIPTION:Acheteur public : Einwohnergemeinde Sigriswil\nDélai de remi
+ se : 13.01.2027\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/be256d43-0c71-442c-b452-446819bc1d44/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/be256d43-0c71-442c-b452-
+ 446819bc1d44
+URL:https://auftragsregister.ch/fr/auftrag/be256d43-0c71-442c-b452-446819bc
+ 1d44/
+LOCATION:Schwanden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Strassensanierung Schwandenstrasse\, Sigri
+ swil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

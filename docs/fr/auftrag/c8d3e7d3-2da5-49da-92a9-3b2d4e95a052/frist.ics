@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8d3e7d3-2da5-49da-92a9-3b2d4e95a052-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270127T090000Z
+SUMMARY:Délai de remise : Beschaffung Telefonie- und Rufsystem
+DESCRIPTION:Acheteur public : Regionales Alterszentrum Embrachertal (360 
+ Kompetenzzentrum GmbH)\nDélai de remise : 27.01.2027\, 10 h 00\nDan
+ s le registre : https://auftragsregister.ch/fr/auftrag/c8d3e7d3-2da5-49d
+ a-92a9-3b2d4e95a052/\nPublication officielle : https://www.simap.ch/fr/p
+ roject-detail/c8d3e7d3-2da5-49da-92a9-3b2d4e95a052
+URL:https://auftragsregister.ch/fr/auftrag/c8d3e7d3-2da5-49da-92a9-3b2d4e95
+ a052/
+LOCATION:Embrach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Beschaffung Telefonie- und Rufsystem
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

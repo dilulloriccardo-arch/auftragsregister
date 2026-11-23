@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2b11c8ba-1a5f-4fc3-b118-ec4b4f04ce78-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270106T225900Z
+SUMMARY:Submission deadline: Gemeindezentrum Bremgarten b. Bern\, BKP 221.1
+  Fenster aus Holz-Metall
+DESCRIPTION:Public buyer: Einwohnergemeinde Bremgarten b. Bern (maurer baul
+ eitung gmbh)\nSubmission deadline: 6 Jan 2027\, 23:59\nIn the register: 
+ https://auftragsregister.ch/en/auftrag/2b11c8ba-1a5f-4fc3-b118-ec4b4f04ce7
+ 8/\nOfficial publication: https://www.simap.ch/en/project-detail/2b11c8ba-
+ 1a5f-4fc3-b118-ec4b4f04ce78
+URL:https://auftragsregister.ch/en/auftrag/2b11c8ba-1a5f-4fc3-b118-ec4b4f04
+ ce78/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gemeindezentrum Bremgarten b. Bern\, BKP 2
+ 21.1 Fenster aus Holz-Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

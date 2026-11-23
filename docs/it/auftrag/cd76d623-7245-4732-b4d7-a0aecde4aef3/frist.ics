@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cd76d623-7245-4732-b4d7-a0aecde4aef3-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270121T225900Z
+SUMMARY:Scadenza: Einführung und Integration eines SAP «Addon-Health» zu
+ r Patientenaufnahme und Patientenabrechnung
+DESCRIPTION:Ente pubblico: LUKS Spitalbetriebe AG\nScadenza: 21.01.2027\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/cd76d623-7245-4
+ 732-b4d7-a0aecde4aef3/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/cd76d623-7245-4732-b4d7-a0aecde4aef3
+URL:https://auftragsregister.ch/it/auftrag/cd76d623-7245-4732-b4d7-a0aecde4
+ aef3/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Einführung und Integration eines SAP «Addon-Health
+ » zur Patientenaufnahme und Patientenabrechnung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

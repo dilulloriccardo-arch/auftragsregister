@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60c6ee06-32a3-4fff-b2ea-352ca6d44ce7-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270117T225900Z
+SUMMARY:Eingabefrist: Schweiss- und Klebearbeiten an Schienen und Weichenba
+ uteilen
+DESCRIPTION:Auftraggeber: Rhätische Bahn AG\nEingabefrist: 17.01.2027\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/60c6ee06-32a
+ 3-4fff-b2ea-352ca6d44ce7/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/60c6ee06-32a3-4fff-b2ea-352ca6d44ce7
+URL:https://auftragsregister.ch/de/auftrag/60c6ee06-32a3-4fff-b2ea-352ca6d4
+ 4ce7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Schweiss- und Klebearbeiten an Schienen und Weich
+ enbauteilen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:27aaca5d-cfae-4a9b-9268-f3d063970db8-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:1
+DTSTART:20270125T090000Z
+SUMMARY:Scadenza: Modernisation de portes automatiques aux HUG
+DESCRIPTION:Ente pubblico: Centrale d'achats et d'ingénierie biomédicale 
+ Vaud-Genève (CAIB)\nScadenza: 25.01.2027\, 10:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/27aaca5d-cfae-4a9b-9268-f3d063970db8/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/27aaca5d-cfae-4
+ a9b-9268-f3d063970db8
+URL:https://auftragsregister.ch/it/auftrag/27aaca5d-cfae-4a9b-9268-f3d06397
+ 0db8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Modernisation de portes automatiques aux HUG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

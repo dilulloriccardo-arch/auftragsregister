@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9e5f7d8-1e3b-4fac-ab55-2f09f671e6c0-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261216T160000Z
+SUMMARY:Scadenza: Camion poids lourd 4x4 avec élévateur à nacelle hybrid
+ e
+DESCRIPTION:Ente pubblico: Services industriels de Genève\nScadenza: 16.12
+ .2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/c9e5f7
+ d8-1e3b-4fac-ab55-2f09f671e6c0/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/c9e5f7d8-1e3b-4fac-ab55-2f09f671e6c0
+URL:https://auftragsregister.ch/it/auftrag/c9e5f7d8-1e3b-4fac-ab55-2f09f671
+ e6c0/
+LOCATION:Le Lignon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Camion poids lourd 4x4 avec élévateur à nacelle hy
+ bride
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

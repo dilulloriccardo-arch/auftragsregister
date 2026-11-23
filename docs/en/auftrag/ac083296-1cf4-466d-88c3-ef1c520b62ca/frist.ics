@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac083296-1cf4-466d-88c3-ef1c520b62ca-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261218T140000Z
+SUMMARY:Submission deadline: BKP 230 Elektroanlagen
+DESCRIPTION:Public buyer: Primarschulgemeinde Bottighofen (FoBu Arch.)\nSub
+ mission deadline: 18 Dec 2026\, 15:00\nIn the register: https://auftrags
+ register.ch/en/auftrag/ac083296-1cf4-466d-88c3-ef1c520b62ca/\nOfficial pub
+ lication: https://www.simap.ch/en/project-detail/ac083296-1cf4-466d-88c3-e
+ f1c520b62ca
+URL:https://auftragsregister.ch/en/auftrag/ac083296-1cf4-466d-88c3-ef1c520b
+ 62ca/
+LOCATION:Bottighofen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

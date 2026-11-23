@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71402566-6338-4246-a794-8ed8fa9f4028-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Eingabefrist: ARA Thurau\, Ausrüstung Sand- und Fettfang
+DESCRIPTION:Auftraggeber: Abwasserverband Thurau\nEingabefrist: 29.01.2027\
+ , 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/71402566
+ -6338-4246-a794-8ed8fa9f4028/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/71402566-6338-4246-a794-8ed8fa9f4028
+URL:https://auftragsregister.ch/de/auftrag/71402566-6338-4246-a794-8ed8fa9f
+ 4028/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ARA Thurau\, Ausrüstung Sand- und Fettfang
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

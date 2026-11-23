@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8835c2f8-dca3-4c4b-85b6-b59166be4315-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261210T150000Z
+SUMMARY:Eingabefrist: BAV 83149 KDG Schwandenwiese\, Erweiterung - BKP 230 
+ Elektroanlagen
+DESCRIPTION:Auftraggeber: HBD - Amt für Hochbauten (AHB)\nEingabefrist: 10
+ .12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /8835c2f8-dca3-4c4b-85b6-b59166be4315/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/8835c2f8-dca3-4c4b-85b6-b59166be4315
+URL:https://auftragsregister.ch/de/auftrag/8835c2f8-dca3-4c4b-85b6-b59166be
+ 4315/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BAV 83149 KDG Schwandenwiese\, Erweiterung - BKP 
+ 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

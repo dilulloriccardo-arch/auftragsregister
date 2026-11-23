@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2daf8dc5-0f10-4747-a10a-0ea35626312c-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270104T150000Z
+SUMMARY:Eingabefrist: Layout\, Korrektorat\, Druck und Lieferung der Abstim
+ mungs- und Wahlunterlagen der Stadt Zürich
+DESCRIPTION:Auftraggeber: Stadtkanzlei Zürich\nEingabefrist: 04.01.2027\, 
+ 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2daf8dc5-0
+ f10-4747-a10a-0ea35626312c/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/2daf8dc5-0f10-4747-a10a-0ea35626312c
+URL:https://auftragsregister.ch/de/auftrag/2daf8dc5-0f10-4747-a10a-0ea35626
+ 312c/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Layout\, Korrektorat\, Druck und Lieferung der Ab
+ stimmungs- und Wahlunterlagen der Stadt Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

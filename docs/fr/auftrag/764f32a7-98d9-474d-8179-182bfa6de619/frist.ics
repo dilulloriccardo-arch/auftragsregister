@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:764f32a7-98d9-474d-8179-182bfa6de619-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270106T080000Z
+SUMMARY:Délai de remise : 00589 Gebäude KO2\, Ausschreibung Ersatz Elek
+ tro-Hauptverteilung\, BKP 231
+DESCRIPTION:Acheteur public : Universität Zürich - Bauprojektmanagement
+ \nDélai de remise : 06.01.2027\, 9 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/764f32a7-98d9-474d-8179-182bfa6de619/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/764f32a7-
+ 98d9-474d-8179-182bfa6de619
+URL:https://auftragsregister.ch/fr/auftrag/764f32a7-98d9-474d-8179-182bfa6d
+ e619/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 00589 Gebäude KO2\, Ausschreibung Ersatz 
+ Elektro-Hauptverteilung\, BKP 231
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

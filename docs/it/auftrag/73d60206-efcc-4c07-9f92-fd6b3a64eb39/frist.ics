@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:73d60206-efcc-4c07-9f92-fd6b3a64eb39-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270114T110000Z
+SUMMARY:Scadenza: Sanierung Rheinauerstrasse
+DESCRIPTION:Ente pubblico: Gemeinde Benken ZH\nScadenza: 14.01.2027\, 12:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/73d60206-efcc-4c07-
+ 9f92-fd6b3a64eb39/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/73d60206-efcc-4c07-9f92-fd6b3a64eb39
+URL:https://auftragsregister.ch/it/auftrag/73d60206-efcc-4c07-9f92-fd6b3a64
+ eb39/
+LOCATION:Benken ZH
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Rheinauerstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

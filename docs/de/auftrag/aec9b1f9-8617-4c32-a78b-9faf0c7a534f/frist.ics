@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aec9b1f9-8617-4c32-a78b-9faf0c7a534f-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Eingabefrist: Construction d’un nouvel ESE (Établissement Socio-
+ Éducatif) à Echichens - CFC 222 - 224 FERBLANTERIE - COUVERTURE (YC PHOT
+ OVOLTAIQUE)
+DESCRIPTION:Auftraggeber: Fondation Cité Radieuse (quartal)\nEingabefrist:
+  18.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/aec9b1f9-8617-4c32-a78b-9faf0c7a534f/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/aec9b1f9-8617-4c32-a78b-9faf0c7a534f
+URL:https://auftragsregister.ch/de/auftrag/aec9b1f9-8617-4c32-a78b-9faf0c7a
+ 534f/
+LOCATION:Echichens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Construction d’un nouvel ESE (Établissement So
+ cio-Éducatif) à Echichens - CFC 222 - 224 FERBLANTERIE - COUVERTURE (YC 
+ PHOTOVOLTAIQUE)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

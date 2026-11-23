@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:27d57881-af30-4f0d-9581-0f7f2a017d81-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270106T140000Z
+SUMMARY:Délai de remise : Nouvelle construction de l'école cantonale de
+  Stein - BKP 274.2 Cloisons modulaires
+DESCRIPTION:Acheteur public : Kanton Aargau - Departement Finanzen und Re
+ sourcen - Immobilien Aargau\nDélai de remise : 06.01.2027\, 15 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/27d57881-af3
+ 0-4f0d-9581-0f7f2a017d81/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/27d57881-af30-4f0d-9581-0f7f2a017d81
+URL:https://auftragsregister.ch/fr/auftrag/27d57881-af30-4f0d-9581-0f7f2a01
+ 7d81/
+LOCATION:Stein (AG)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nouvelle construction de l'école cantonal
+ e de Stein - BKP 274.2 Cloisons modulaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

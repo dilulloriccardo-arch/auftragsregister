@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6da88cd-5ad6-493a-82d8-b488bb24533e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Eingabefrist: Transformation et rénovation du CMB - LOT N°3 – C
+ HARPENTE METALLIQUE- CFC 213
+DESCRIPTION:Auftraggeber: Transport publics genevois (tpg)\nEingabefrist: 1
+ 1.01.2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/d6da88cd-5ad6-493a-82d8-b488bb24533e/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/d6da88cd-5ad6-493a-82d8-b488bb24533e
+URL:https://auftragsregister.ch/de/auftrag/d6da88cd-5ad6-493a-82d8-b488bb24
+ 533e/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Transformation et rénovation du CMB - LOT N°3 
+ – CHARPENTE METALLIQUE- CFC 213
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

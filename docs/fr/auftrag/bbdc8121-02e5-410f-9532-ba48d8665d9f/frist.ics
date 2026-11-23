@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbdc8121-02e5-410f-9532-ba48d8665d9f-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Délai de remise : (b26009-10) Nouveau centre d’intervention de
+  la douane de St. Margrethen / CFC 221.1
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 29.01.2027\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/bbdc8121-02e5-410f-9532-ba48d8665d9f/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/bbdc8121-02e5
+ -410f-9532-ba48d8665d9f
+URL:https://auftragsregister.ch/fr/auftrag/bbdc8121-02e5-410f-9532-ba48d866
+ 5d9f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (b26009-10) Nouveau centre d’interventio
+ n de la douane de St. Margrethen / CFC 221.1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

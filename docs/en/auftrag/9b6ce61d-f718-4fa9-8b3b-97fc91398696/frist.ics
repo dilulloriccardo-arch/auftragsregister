@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9b6ce61d-f718-4fa9-8b3b-97fc91398696-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270104T225900Z
+SUMMARY:Submission deadline: Beschaffung Tanklöschfahrzeug
+DESCRIPTION:Public buyer: Gemeinde Klosters\nSubmission deadline: 4 Jan 2
+ 027\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/9b6ce
+ 61d-f718-4fa9-8b3b-97fc91398696/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/9b6ce61d-f718-4fa9-8b3b-97fc91398696
+URL:https://auftragsregister.ch/en/auftrag/9b6ce61d-f718-4fa9-8b3b-97fc9139
+ 8696/
+LOCATION:Klosters
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung Tanklöschfahrzeug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

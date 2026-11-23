@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72ff8dfb-a1e4-4f73-a705-223ff25e5d2e-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270202T160000Z
+SUMMARY:Délai de remise : Formation des équipes de cuisine des établis
+ sements de restauration collective de l’Etat de Vaud en gestion directe
+DESCRIPTION:Acheteur public : Etat de vaud - Département de l'agricultur
+ e\, de la durabilité\, du climat et du numérique - Secrétariat généra
+ l - Office cantonal de la durabilité et du climat\nDélai de remise : 0
+ 2.02.2027\, 17 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/72ff8dfb-a1e4-4f73-a705-223ff25e5d2e/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/72ff8dfb-a1e4-4f73-a705-223ff2
+ 5e5d2e
+URL:https://auftragsregister.ch/fr/auftrag/72ff8dfb-a1e4-4f73-a705-223ff25e
+ 5d2e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Formation des équipes de cuisine des éta
+ blissements de restauration collective de l’Etat de Vaud en gestion dire
+ cte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:721c6701-1964-4b0b-a560-29f2ac232a39-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270111T225900Z
+SUMMARY:Scadenza: Universität St. Gallen | Erneuerung Wärme- und Kälteer
+ zeugung - BKP 242 Wärmepumpe
+DESCRIPTION:Ente pubblico: Kanton St.Gallen\, Bau- und Umweltdepartement\, 
+ Hochbauamt\nScadenza: 11.01.2027\, 23:59\nNel registro: https://auftragsre
+ gister.ch/it/auftrag/721c6701-1964-4b0b-a560-29f2ac232a39/\nPubblicazione 
+ ufficiale: https://www.simap.ch/it/project-detail/721c6701-1964-4b0b-a560-
+ 29f2ac232a39
+URL:https://auftragsregister.ch/it/auftrag/721c6701-1964-4b0b-a560-29f2ac23
+ 2a39/
+LOCATION:St. Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Universität St. Gallen | Erneuerung Wärme- und Käl
+ teerzeugung - BKP 242 Wärmepumpe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

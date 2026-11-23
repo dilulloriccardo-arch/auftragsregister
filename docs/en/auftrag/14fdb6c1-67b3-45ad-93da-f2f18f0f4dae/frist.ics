@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:14fdb6c1-67b3-45ad-93da-f2f18f0f4dae-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Submission deadline: Gemeinde Köniz\, Jahresvertrag Markierung 202
+ 7 bis 2030
+DESCRIPTION:Public buyer: Gemeinde Köniz\, Abteilung Finanzen und Verkehr\
+ nSubmission deadline: 15 Dec 2026\, 23:59\nIn the register: https://auft
+ ragsregister.ch/en/auftrag/14fdb6c1-67b3-45ad-93da-f2f18f0f4dae/\nOfficial
+  publication: https://www.simap.ch/en/project-detail/14fdb6c1-67b3-45ad-93
+ da-f2f18f0f4dae
+URL:https://auftragsregister.ch/en/auftrag/14fdb6c1-67b3-45ad-93da-f2f18f0f
+ 4dae/
+LOCATION:Köniz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gemeinde Köniz\, Jahresvertrag Markierung
+  2027 bis 2030
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a17b9827-0ff0-4561-80b6-2f8d878a30c0-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Submission deadline: Markierungen Bezirk 1\; Stadt Chur innerorts
+DESCRIPTION:Public buyer: Tiefbauamt Graubünden\nSubmission deadline: 23 
+ Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag
+ /a17b9827-0ff0-4561-80b6-2f8d878a30c0/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/a17b9827-0ff0-4561-80b6-2f8d878a30c0
+URL:https://auftragsregister.ch/en/auftrag/a17b9827-0ff0-4561-80b6-2f8d878a
+ 30c0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Markierungen Bezirk 1\; Stadt Chur inneror
+ ts
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

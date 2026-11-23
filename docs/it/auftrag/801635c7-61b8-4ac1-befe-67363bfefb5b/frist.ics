@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:801635c7-61b8-4ac1-befe-67363bfefb5b-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Scadenza: BAV 40278 GFA Bachwiesen\, Ersatzneubau Haus A - BKP 221 
+ Fenster\, Aussentüren\, Tore
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 14.01
+ .2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/801635
+ c7-61b8-4ac1-befe-67363bfefb5b/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/801635c7-61b8-4ac1-befe-67363bfefb5b
+URL:https://auftragsregister.ch/it/auftrag/801635c7-61b8-4ac1-befe-67363bfe
+ fb5b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 40278 GFA Bachwiesen\, Ersatzneubau Haus A - BKP 
+ 221 Fenster\, Aussentüren\, Tore
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

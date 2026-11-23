@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90126e7a-cb61-4e08-a94c-3f552212feca-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:1
+DTSTART:20270120T225900Z
+SUMMARY:Eingabefrist: Réhabilitation de la vieille galerie du Gothard (GOE
+ -AI) Prestations de DLL
+DESCRIPTION:Auftraggeber: Ferrovie federali svizzere FFS SA\nEingabefrist: 
+ 20.01.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/90126e7a-cb61-4e08-a94c-3f552212feca/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/90126e7a-cb61-4e08-a94c-3f552212feca
+URL:https://auftragsregister.ch/de/auftrag/90126e7a-cb61-4e08-a94c-3f552212
+ feca/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Réhabilitation de la vieille galerie du Gothard 
+ (GOE-AI) Prestations de DLL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

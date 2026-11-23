@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c328c044-6c28-47d9-89d7-a34420671749-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270106T140000Z
+SUMMARY:Scadenza: Neubau Kantonsschule Stein - BKP 902 Sporteinrichtungen
+DESCRIPTION:Ente pubblico: Kanton Aargau - Departement Finanzen und Resourc
+ en - Immobilien Aargau\nScadenza: 06.01.2027\, 15:00\nNel registro: https:
+ //auftragsregister.ch/it/auftrag/c328c044-6c28-47d9-89d7-a34420671749/\nPu
+ bblicazione ufficiale: https://www.simap.ch/it/project-detail/c328c044-6c2
+ 8-47d9-89d7-a34420671749
+URL:https://auftragsregister.ch/it/auftrag/c328c044-6c28-47d9-89d7-a3442067
+ 1749/
+LOCATION:Stein (AG)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Kantonsschule Stein - BKP 902 Sporteinrichtung
+ en
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

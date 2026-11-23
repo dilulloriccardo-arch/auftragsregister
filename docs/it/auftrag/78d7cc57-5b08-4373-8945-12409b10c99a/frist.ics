@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78d7cc57-5b08-4373-8945-12409b10c99a-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270115T140000Z
+SUMMARY:Scadenza: Neubau / Umgestaltung Bahnhofplatz / Bushof / Sennhofplat
+ z I Gesamtleitender Projektingenieur Ingenieurleistungen SIA Ph. 32-53
+DESCRIPTION:Ente pubblico: Bezirksverwaltung Einsiedeln\nScadenza: 15.01.20
+ 27\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/78d7cc57-
+ 5b08-4373-8945-12409b10c99a/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/78d7cc57-5b08-4373-8945-12409b10c99a
+URL:https://auftragsregister.ch/it/auftrag/78d7cc57-5b08-4373-8945-12409b10
+ c99a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau / Umgestaltung Bahnhofplatz / Bushof / Sennhof
+ platz I Gesamtleitender Projektingenieur Ingenieurleistungen SIA Ph. 32-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5025dea8-59b2-42d8-804e-fab4453ad04c-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261218T140000Z
+SUMMARY:Eingabefrist: BKP 211 Baumeisterarbeiten
+DESCRIPTION:Auftraggeber: Primarschulgemeinde Bottighofen (FoBu Arch.)\nEin
+ gabefrist: 18.12.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/5025dea8-59b2-42d8-804e-fab4453ad04c/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/5025dea8-59b2-42d8-804e-fab4453ad0
+ 4c
+URL:https://auftragsregister.ch/de/auftrag/5025dea8-59b2-42d8-804e-fab4453a
+ d04c/
+LOCATION:Bottighofen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

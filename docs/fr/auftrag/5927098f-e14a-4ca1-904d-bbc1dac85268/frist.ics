@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5927098f-e14a-4ca1-904d-bbc1dac85268-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270115T153000Z
+SUMMARY:Délai de remise : Site Gazomètres 3-5-7
+DESCRIPTION:Acheteur public : Office cantonal des bâtiments (OCBA)\nDél
+ ai de remise : 15.01.2027\, 16 h 30\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/5927098f-e14a-4ca1-904d-bbc1dac85268/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/5927098f-e14a-
+ 4ca1-904d-bbc1dac85268
+URL:https://auftragsregister.ch/fr/auftrag/5927098f-e14a-4ca1-904d-bbc1dac8
+ 5268/
+LOCATION:Rue des Gazomètres 3-5-7
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Site Gazomètres 3-5-7
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

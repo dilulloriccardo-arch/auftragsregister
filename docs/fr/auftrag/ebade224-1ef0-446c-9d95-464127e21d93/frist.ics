@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ebade224-1ef0-446c-9d95-464127e21d93-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Délai de remise : H417b Crappanairabrücke\, Baumeister- und Bel
+ agsarbeiten
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 17.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/ebade224-1ef0-446c-9d95-464127e21d93/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/ebade224-1ef0-446c-9d95-46412
+ 7e21d93
+URL:https://auftragsregister.ch/fr/auftrag/ebade224-1ef0-446c-9d95-464127e2
+ 1d93/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : H417b Crappanairabrücke\, Baumeister- und
+  Belagsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

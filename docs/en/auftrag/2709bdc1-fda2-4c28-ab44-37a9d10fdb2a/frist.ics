@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2709bdc1-fda2-4c28-ab44-37a9d10fdb2a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270118T225900Z
+SUMMARY:Submission deadline: Framework Agreements for High-Performance Comp
+ uting Systems
+DESCRIPTION:Public buyer: ETH Zürich - Abt. Procurement Services VPIN\nSub
+ mission deadline: 18 Jan 2027\, 23:59\nIn the register: https://auftrags
+ register.ch/en/auftrag/2709bdc1-fda2-4c28-ab44-37a9d10fdb2a/\nOfficial pub
+ lication: https://www.simap.ch/en/project-detail/2709bdc1-fda2-4c28-ab44-3
+ 7a9d10fdb2a
+URL:https://auftragsregister.ch/en/auftrag/2709bdc1-fda2-4c28-ab44-37a9d10f
+ db2a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Framework Agreements for High-Performance 
+ Computing Systems
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

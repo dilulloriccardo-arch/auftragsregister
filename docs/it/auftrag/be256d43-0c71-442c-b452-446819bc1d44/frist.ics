@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be256d43-0c71-442c-b452-446819bc1d44-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T225900Z
+SUMMARY:Scadenza: Strassensanierung Schwandenstrasse\, Sigriswil
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Sigriswil\nScadenza: 13.01.202
+ 7\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/be256d43-0
+ c71-442c-b452-446819bc1d44/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/be256d43-0c71-442c-b452-446819bc1d44
+URL:https://auftragsregister.ch/it/auftrag/be256d43-0c71-442c-b452-446819bc
+ 1d44/
+LOCATION:Schwanden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Strassensanierung Schwandenstrasse\, Sigriswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

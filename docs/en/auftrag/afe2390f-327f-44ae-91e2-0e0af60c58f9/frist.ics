@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:afe2390f-327f-44ae-91e2-0e0af60c58f9-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270122T140000Z
+SUMMARY:Submission deadline: BKP 273.1 Wandschränke\, Gestelle und Allg. S
+ chreinerarbeiten
+DESCRIPTION:Public buyer: Schule Bürglen (FoBu Arch.)\nSubmission deadline
+ : 22 Jan 2027\, 15:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/afe2390f-327f-44ae-91e2-0e0af60c58f9/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/afe2390f-327f-44ae-91e2-0e0af60c58f9
+URL:https://auftragsregister.ch/en/auftrag/afe2390f-327f-44ae-91e2-0e0af60c
+ 58f9/
+LOCATION:Bürglen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 273.1 Wandschränke\, Gestelle und All
+ g. Schreinerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

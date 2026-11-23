@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:178113fa-ae26-41d7-a860-bf0484045b8d-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Submission deadline: Submission Dienstleistungen Kontrolle ruhender
+  Verkehr
+DESCRIPTION:Public buyer: Stadt Frauenfeld\, Abteilung Sicherheit\nSubmissi
+ on deadline: 7 Dec 2026\, 12:00\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/178113fa-ae26-41d7-a860-bf0484045b8d/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/178113fa-ae26-41d7-a860-bf04840
+ 45b8d
+URL:https://auftragsregister.ch/en/auftrag/178113fa-ae26-41d7-a860-bf048404
+ 5b8d/
+LOCATION:Frauenfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Submission Dienstleistungen Kontrolle ruhe
+ nder Verkehr
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

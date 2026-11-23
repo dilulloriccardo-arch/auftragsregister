@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb0906c4-ae00-47b7-b334-bd179033d4b6-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Scadenza: B.10629 KUE D Instandsetzung Kältemaschinen I BKP 294 HL
+ K-Ingenieur (Kältefachplaner inkl. Gesamtleitung und Fachkoordination) | 
+ OV
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 11.01.202
+ 7\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/cb0906c4-a
+ e00-47b7-b334-bd179033d4b6/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/cb0906c4-ae00-47b7-b334-bd179033d4b6
+URL:https://auftragsregister.ch/it/auftrag/cb0906c4-ae00-47b7-b334-bd179033
+ d4b6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: B.10629 KUE D Instandsetzung Kältemaschinen I BKP 29
+ 4 HLK-Ingenieur (Kältefachplaner inkl. Gesamtleitung und Fachkoordination
+ ) | OV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5cf910bc-ef27-43c2-9181-919f992edd56-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Scadenza: BKP 272 Metallbauarbeiten (Treppengeländer)
+DESCRIPTION:Ente pubblico: Schulgemeinde Kreuzlingen\nScadenza: 11.12.2026\
+ , 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/5cf910bc-ef2
+ 7-43c2-9181-919f992edd56/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/5cf910bc-ef27-43c2-9181-919f992edd56
+URL:https://auftragsregister.ch/it/auftrag/5cf910bc-ef27-43c2-9181-919f992e
+ dd56/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 272 Metallbauarbeiten (Treppengeländer)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

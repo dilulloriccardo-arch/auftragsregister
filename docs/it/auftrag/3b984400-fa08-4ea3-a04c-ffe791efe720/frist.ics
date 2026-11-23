@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b984400-fa08-4ea3-a04c-ffe791efe720-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270128T225900Z
+SUMMARY:Scadenza: Gewässerrichtplan Untere Saane\, Gesamtleitung Stv. sowi
+ e Fachplanung Wasserbau und Geschiebe
+DESCRIPTION:Ente pubblico: Wasserbauverband Untere Saane\nScadenza: 28.01.2
+ 027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/3b984400
+ -fa08-4ea3-a04c-ffe791efe720/\nPubblicazione ufficiale: https://www.simap.
+ ch/it/project-detail/3b984400-fa08-4ea3-a04c-ffe791efe720
+URL:https://auftragsregister.ch/it/auftrag/3b984400-fa08-4ea3-a04c-ffe791ef
+ e720/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gewässerrichtplan Untere Saane\, Gesamtleitung Stv. 
+ sowie Fachplanung Wasserbau und Geschiebe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

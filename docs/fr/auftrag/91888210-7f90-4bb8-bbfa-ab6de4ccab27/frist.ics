@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:91888210-7f90-4bb8-bbfa-ab6de4ccab27-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:2
+DTSTART:20270402T130000Z
+SUMMARY:Délai de remise : AS2035 \; doublement des voies et ZFZ\, Düben
+ dorf–Uster–Aathal
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Infrastru
+ ktur – Einkauf\, Supply Chain und Produktion\, Einkauf Bau\, Region Ostp
+ rojekte\nDélai de remise : 02.04.2027\, 15 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/91888210-7f90-4bb8-bbfa-ab6de4
+ ccab27/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /91888210-7f90-4bb8-bbfa-ab6de4ccab27
+URL:https://auftragsregister.ch/fr/auftrag/91888210-7f90-4bb8-bbfa-ab6de4cc
+ ab27/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : AS2035 \; doublement des voies et ZFZ\, D
+ übendorf–Uster–Aathal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

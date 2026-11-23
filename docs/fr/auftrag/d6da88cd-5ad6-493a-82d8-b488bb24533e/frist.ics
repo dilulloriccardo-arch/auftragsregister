@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d6da88cd-5ad6-493a-82d8-b488bb24533e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Délai de remise : Transformation et rénovation du CMB - LOT N°
+ 3 – CHARPENTE METALLIQUE- CFC 213
+DESCRIPTION:Acheteur public : Transport publics genevois (tpg)\nDélai de
+  remise : 11.01.2027\, 12 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/d6da88cd-5ad6-493a-82d8-b488bb24533e/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/d6da88cd-5ad6-493a-
+ 82d8-b488bb24533e
+URL:https://auftragsregister.ch/fr/auftrag/d6da88cd-5ad6-493a-82d8-b488bb24
+ 533e/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transformation et rénovation du CMB - LOT
+  N°3 – CHARPENTE METALLIQUE- CFC 213
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:26fe736d-648f-431c-a395-2fcdd8b47943-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270121T140000Z
+SUMMARY:Eingabefrist: BKP 283.4 Deckenbekleidungen aus Holz- und Holzwerkst
+ offen
+DESCRIPTION:Auftraggeber: Schule Bürglen (FoBu Arch.)\nEingabefrist: 21.01
+ .2027\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/26
+ fe736d-648f-431c-a395-2fcdd8b47943/\nAmtliche Publikation: https://www.sim
+ ap.ch/de/project-detail/26fe736d-648f-431c-a395-2fcdd8b47943
+URL:https://auftragsregister.ch/de/auftrag/26fe736d-648f-431c-a395-2fcdd8b4
+ 7943/
+LOCATION:Bürglen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 283.4 Deckenbekleidungen aus Holz- und Holzwe
+ rkstoffen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

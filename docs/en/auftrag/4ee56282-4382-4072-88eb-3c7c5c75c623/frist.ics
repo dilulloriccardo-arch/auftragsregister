@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4ee56282-4382-4072-88eb-3c7c5c75c623-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270125T110000Z
+SUMMARY:Submission deadline: 11332\, K 15 Rothenburg - Rain\, GNP und RVA
+DESCRIPTION:Public buyer: Verkehr und Infrastruktur (vif)\, Planung Strasse
+ n\nSubmission deadline: 25 Jan 2027\, 12:00\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/4ee56282-4382-4072-88eb-3c7c5c75c623/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/4ee56282-4382-4072-
+ 88eb-3c7c5c75c623
+URL:https://auftragsregister.ch/en/auftrag/4ee56282-4382-4072-88eb-3c7c5c75
+ c623/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 11332\, K 15 Rothenburg - Rain\, GNP und R
+ VA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

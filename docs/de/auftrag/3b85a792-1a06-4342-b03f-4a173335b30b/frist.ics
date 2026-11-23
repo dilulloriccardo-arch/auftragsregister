@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b85a792-1a06-4342-b03f-4a173335b30b-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270118T225900Z
+SUMMARY:Eingabefrist: Contrat-cadre pour les investigations dans la zone de
+  voie\, du quai et des surfaces adjacentes - Région Sud.
+DESCRIPTION:Auftraggeber: Ferrovie federali svizzere FFS SA\nEingabefrist: 
+ 18.01.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/3b85a792-1a06-4342-b03f-4a173335b30b/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/3b85a792-1a06-4342-b03f-4a173335b30b
+URL:https://auftragsregister.ch/de/auftrag/3b85a792-1a06-4342-b03f-4a173335
+ b30b/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Contrat-cadre pour les investigations dans la zon
+ e de voie\, du quai et des surfaces adjacentes - Région Sud.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

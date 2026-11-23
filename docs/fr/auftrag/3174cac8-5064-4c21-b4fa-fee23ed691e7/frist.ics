@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3174cac8-5064-4c21-b4fa-fee23ed691e7-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Délai de remise : Fourniture d'une souffleuse à neige automotor
+ ice
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 30.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/3174cac8-5064-4c21-b4fa-fee23ed691e7/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/3174cac8-5064-4c21-b4fa-fee23
+ ed691e7
+URL:https://auftragsregister.ch/fr/auftrag/3174cac8-5064-4c21-b4fa-fee23ed6
+ 91e7/
+LOCATION:Thusis\, Palastrasse 5
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture d'une souffleuse à neige autom
+ otorice
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

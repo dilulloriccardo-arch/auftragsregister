@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:befd7111-723f-458f-bbc6-3440443ce116-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Délai de remise : Microscope pour Imagerie Rapide et Volumétriq
+ ue de Haute Résolution (MIRV-HR)
+DESCRIPTION:Acheteur public : UNIL-Servie de la Recherche\nDélai de remi
+ se : 11.01.2027\, 12 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/befd7111-723f-458f-bbc6-3440443ce116/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/befd7111-723f-458f-bbc6-
+ 3440443ce116
+URL:https://auftragsregister.ch/fr/auftrag/befd7111-723f-458f-bbc6-3440443c
+ e116/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Microscope pour Imagerie Rapide et Volumé
+ trique de Haute Résolution (MIRV-HR)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

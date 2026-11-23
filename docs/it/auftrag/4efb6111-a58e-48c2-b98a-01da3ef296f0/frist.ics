@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4efb6111-a58e-48c2-b98a-01da3ef296f0-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270111T100000Z
+SUMMARY:Scadenza: 596 Gymnase d'Echallens CFC 215.2\, 215.5 - Façades et r
+ evêtements extérieurs
+DESCRIPTION:Ente pubblico: Direction générale des immeubles et du patrimo
+ ine – DGIP\nScadenza: 11.01.2027\, 11:00\nNel registro: https://auftrags
+ register.ch/it/auftrag/4efb6111-a58e-48c2-b98a-01da3ef296f0/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/4efb6111-a58e-48c2-b98
+ a-01da3ef296f0
+URL:https://auftragsregister.ch/it/auftrag/4efb6111-a58e-48c2-b98a-01da3ef2
+ 96f0/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 596 Gymnase d'Echallens CFC 215.2\, 215.5 - Façades 
+ et revêtements extérieurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

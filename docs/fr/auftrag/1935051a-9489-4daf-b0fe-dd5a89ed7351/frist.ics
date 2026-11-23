@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1935051a-9489-4daf-b0fe-dd5a89ed7351-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:1
+DTSTART:20270112T140000Z
+SUMMARY:Délai de remise : Acquisition et maintenance Nettoyeurs à haute
+  pression avec moteur de traction sur batterie
+DESCRIPTION:Acheteur public : SBB AG\, Flottenmanagement Strassenfahrzeug
+ e\nDélai de remise : 12.01.2027\, 15 h 00\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/1935051a-9489-4daf-b0fe-dd5a89ed7351/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/1935051
+ a-9489-4daf-b0fe-dd5a89ed7351
+URL:https://auftragsregister.ch/fr/auftrag/1935051a-9489-4daf-b0fe-dd5a89ed
+ 7351/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition et maintenance Nettoyeurs à h
+ aute pression avec moteur de traction sur batterie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

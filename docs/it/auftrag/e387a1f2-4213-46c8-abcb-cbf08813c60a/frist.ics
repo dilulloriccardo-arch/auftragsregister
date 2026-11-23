@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e387a1f2-4213-46c8-abcb-cbf08813c60a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270112T150000Z
+SUMMARY:Scadenza: Rahmenvertrag\, Beratungsdienstleistungen für Digital St
+ adt Bern\, 6 Lose
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 12.01.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/e387a1f2-4213-46c8-abcb-cbf08813c60a/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/e387a1f2-4213-46c8-abcb-cbf08813c60a
+URL:https://auftragsregister.ch/it/auftrag/e387a1f2-4213-46c8-abcb-cbf08813
+ c60a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenvertrag\, Beratungsdienstleistungen für Digita
+ l Stadt Bern\, 6 Lose
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

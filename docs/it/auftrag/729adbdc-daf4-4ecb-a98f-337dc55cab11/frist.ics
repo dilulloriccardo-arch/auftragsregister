@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:729adbdc-daf4-4ecb-a98f-337dc55cab11-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Scadenza: Wohnen am Stadtpark: BKP 281.0 Unterlagsböden
+DESCRIPTION:Ente pubblico: Stadt Schlieren\, Bereich Liegenschaften\nScaden
+ za: 14.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/729adbdc-daf4-4ecb-a98f-337dc55cab11/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/729adbdc-daf4-4ecb-a98f-337dc55cab11
+URL:https://auftragsregister.ch/it/auftrag/729adbdc-daf4-4ecb-a98f-337dc55c
+ ab11/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wohnen am Stadtpark: BKP 281.0 Unterlagsböden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

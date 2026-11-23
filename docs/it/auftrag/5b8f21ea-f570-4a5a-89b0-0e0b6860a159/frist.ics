@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5b8f21ea-f570-4a5a-89b0-0e0b6860a159-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261223T130000Z
+SUMMARY:Scadenza: KS P\, Hinterburgmühle-Edlibach\, Neuheim/Menzingen
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Zug\nScadenza: 23.12.2026
+ \, 14:00\nNel registro: https://auftragsregister.ch/it/auftrag/5b8f21ea-f5
+ 70-4a5a-89b0-0e0b6860a159/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/5b8f21ea-f570-4a5a-89b0-0e0b6860a159
+URL:https://auftragsregister.ch/it/auftrag/5b8f21ea-f570-4a5a-89b0-0e0b6860
+ a159/
+LOCATION:Neuheim
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: KS P\, Hinterburgmühle-Edlibach\, Neuheim/Menzingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60d9b89f-dd64-41cd-89ca-3db7c98718ee-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270111T100000Z
+SUMMARY:Délai de remise : Services d'implémentation et de transformatio
+ n
+DESCRIPTION:Acheteur public : Kanton Zürich Finanzdirektion Amt für Inf
+ ormatik\nDélai de remise : 11.01.2027\, 11 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/60d9b89f-dd64-41cd-89ca-3db7c9
+ 8718ee/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /60d9b89f-dd64-41cd-89ca-3db7c98718ee
+URL:https://auftragsregister.ch/fr/auftrag/60d9b89f-dd64-41cd-89ca-3db7c987
+ 18ee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Services d'implémentation et de transform
+ ation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

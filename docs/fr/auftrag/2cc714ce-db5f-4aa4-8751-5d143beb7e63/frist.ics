@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2cc714ce-db5f-4aa4-8751-5d143beb7e63-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270108T090000Z
+SUMMARY:Délai de remise : 211 revêtement de plafond - Construction d'un
+ e nouvelle école primaire avec gymnase\, Erlenstrasse\, Oberglatt
+DESCRIPTION:Acheteur public : Gemeinde Oberglatt (Anderegg Partner AG)\nD
+ élai de remise : 08.01.2027\, 10 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/2cc714ce-db5f-4aa4-8751-5d143beb7e63/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/2cc714ce-db
+ 5f-4aa4-8751-5d143beb7e63
+URL:https://auftragsregister.ch/fr/auftrag/2cc714ce-db5f-4aa4-8751-5d143beb
+ 7e63/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 211 revêtement de plafond - Construction 
+ d'une nouvelle école primaire avec gymnase\, Erlenstrasse\, Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

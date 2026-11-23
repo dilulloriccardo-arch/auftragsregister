@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:47dec265-7fb9-4a8e-b557-f0ab7cfd961f-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T160000Z
+SUMMARY:Délai de remise : Neubauten Stiftung Schürmatt - BKP 292 Bauing
+ enieur Massivbau
+DESCRIPTION:Acheteur public : Stiftung Schürmatt\nDélai de remise : 1
+ 7.12.2026\, 17 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/47dec265-7fb9-4a8e-b557-f0ab7cfd961f/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/47dec265-7fb9-4a8e-b557-f0ab7c
+ fd961f
+URL:https://auftragsregister.ch/fr/auftrag/47dec265-7fb9-4a8e-b557-f0ab7cfd
+ 961f/
+LOCATION:Zetzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubauten Stiftung Schürmatt - BKP 292 Ba
+ uingenieur Massivbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea4f0425-462d-4c04-86d7-f0a05af10a80-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270226T225900Z
+SUMMARY:Submission deadline: AIS-Wandler UW Laufenburg
+DESCRIPTION:Public buyer: Swissgrid AG - Asset & Maintenance\nSubmission de
+ adline: 26 Feb 2027\, 23:59\nIn the register: https://auftragsregister.c
+ h/en/auftrag/ea4f0425-462d-4c04-86d7-f0a05af10a80/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/ea4f0425-462d-4c04-86d7-f0a05af10a8
+ 0
+URL:https://auftragsregister.ch/en/auftrag/ea4f0425-462d-4c04-86d7-f0a05af1
+ 0a80/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AIS-Wandler UW Laufenburg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

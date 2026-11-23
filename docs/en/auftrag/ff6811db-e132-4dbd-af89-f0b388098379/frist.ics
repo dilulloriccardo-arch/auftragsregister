@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff6811db-e132-4dbd-af89-f0b388098379-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Submission deadline: Tiefbauarbeiten Schulhaus Hegifeld
+DESCRIPTION:Public buyer: Stadtwerk Winterthur\nSubmission deadline: 14 De
+ c 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/f
+ f6811db-e132-4dbd-af89-f0b388098379/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/ff6811db-e132-4dbd-af89-f0b388098379
+URL:https://auftragsregister.ch/en/auftrag/ff6811db-e132-4dbd-af89-f0b38809
+ 8379/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tiefbauarbeiten Schulhaus Hegifeld
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

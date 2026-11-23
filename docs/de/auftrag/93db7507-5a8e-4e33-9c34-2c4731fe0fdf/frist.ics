@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:93db7507-5a8e-4e33-9c34-2c4731fe0fdf-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261211T150000Z
+SUMMARY:Eingabefrist: Weinsteig\, Instandsetzung Stützkonstruktion\, Schaf
+ fhausen
+DESCRIPTION:Auftraggeber: Tiefbau Schaffhausen\nEingabefrist: 11.12.2026\, 
+ 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/93db7507-5
+ a8e-4e33-9c34-2c4731fe0fdf/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/93db7507-5a8e-4e33-9c34-2c4731fe0fdf
+URL:https://auftragsregister.ch/de/auftrag/93db7507-5a8e-4e33-9c34-2c4731fe
+ 0fdf/
+LOCATION:Schaffhausen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Weinsteig\, Instandsetzung Stützkonstruktion\, S
+ chaffhausen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be7bdad9-d1d1-4059-9dcb-ef5e3576b564-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270122T103000Z
+SUMMARY:Scadenza: PSP - Aménagements paysagers
+DESCRIPTION:Ente pubblico: Office cantonal du génie civil (OCGC) - Service
+  des ouvrages d'art\nScadenza: 22.01.2027\, 11:30\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/be7bdad9-d1d1-4059-9dcb-ef5e3576b564/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/be7bdad9-d1d1-4
+ 059-9dcb-ef5e3576b564
+URL:https://auftragsregister.ch/it/auftrag/be7bdad9-d1d1-4059-9dcb-ef5e3576
+ b564/
+LOCATION:GRAND-SACONNEX
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: PSP - Aménagements paysagers
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

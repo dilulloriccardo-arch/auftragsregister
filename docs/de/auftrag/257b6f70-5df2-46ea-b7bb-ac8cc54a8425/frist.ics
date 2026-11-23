@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:257b6f70-5df2-46ea-b7bb-ac8cc54a8425-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270129T090000Z
+SUMMARY:Eingabefrist: Rahmenverträge Dienstleister ICT-Consulting
+DESCRIPTION:Auftraggeber: Informatik Schaffhausen\nEingabefrist: 29.01.2027
+ \, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/257b6f7
+ 0-5df2-46ea-b7bb-ac8cc54a8425/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/257b6f70-5df2-46ea-b7bb-ac8cc54a8425
+URL:https://auftragsregister.ch/de/auftrag/257b6f70-5df2-46ea-b7bb-ac8cc54a
+ 8425/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rahmenverträge Dienstleister ICT-Consulting
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

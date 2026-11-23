@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b9bcb684-fb66-4f0d-8524-37d0e728c236-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270117T225900Z
+SUMMARY:Délai de remise : Acquisition de câbles moyenne tension
+DESCRIPTION:Acheteur public : Stadtwerk Winterthur\nDélai de remise : 
+ 17.01.2027\, 23 h 59\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/b9bcb684-fb66-4f0d-8524-37d0e728c236/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/b9bcb684-fb66-4f0d-8524-37d0e7
+ 28c236
+URL:https://auftragsregister.ch/fr/auftrag/b9bcb684-fb66-4f0d-8524-37d0e728
+ c236/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition de câbles moyenne tension
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

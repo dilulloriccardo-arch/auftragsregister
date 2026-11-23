@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b17693c3-9cca-40d2-9a8b-0ccf8dca17a8-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270202T140000Z
+SUMMARY:Submission deadline: Neubau Klinikum 2\, Phase 1\, SKP 861 Patiente
+ nlifter
+DESCRIPTION:Public buyer: Universitätsspital Basel\nSubmission deadline: 2
+  Feb 2027\, 15:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/b17693c3-9cca-40d2-9a8b-0ccf8dca17a8/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/b17693c3-9cca-40d2-9a8b-0ccf8dca17a8
+URL:https://auftragsregister.ch/en/auftrag/b17693c3-9cca-40d2-9a8b-0ccf8dca
+ 17a8/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Klinikum 2\, Phase 1\, SKP 861 Pati
+ entenlifter
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

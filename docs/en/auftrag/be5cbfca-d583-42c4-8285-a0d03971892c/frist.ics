@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be5cbfca-d583-42c4-8285-a0d03971892c-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270118T100000Z
+SUMMARY:Submission deadline: SRIV Pfäffikon/Hittnau\, 337 Hittnauer-/Pfäf
+ fikerstrasse km 7.706-9.343\, Kreisel Oberhittnauerstrasse - Seewadel\, St
+ rassen- und Tiefbauarbeiten
+DESCRIPTION:Public buyer: Tiefbauamt\, Abt. Strasseninspektorat\nSubmission
+  deadline: 18 Jan 2027\, 11:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/be5cbfca-d583-42c4-8285-a0d03971892c/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/be5cbfca-d583-42c4-8285-a0d03971
+ 892c
+URL:https://auftragsregister.ch/en/auftrag/be5cbfca-d583-42c4-8285-a0d03971
+ 892c/
+LOCATION:Pfäffikon/Hittnau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: SRIV Pfäffikon/Hittnau\, 337 Hittnauer-/P
+ fäffikerstrasse km 7.706-9.343\, Kreisel Oberhittnauerstrasse - Seewadel\
+ , Strassen- und Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

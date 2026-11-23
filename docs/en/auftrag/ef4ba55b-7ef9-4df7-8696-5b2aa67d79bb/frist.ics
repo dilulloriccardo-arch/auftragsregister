@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef4ba55b-7ef9-4df7-8696-5b2aa67d79bb-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Submission deadline: Véhicules légers Ville de Lausanne - AA2027
+DESCRIPTION:Public buyer: Ville de Lausanne – FIM - Service achat et logi
+ stique Ville (SALV)\nSubmission deadline: 15 Jan 2027\, 16:00\nIn the re
+ gister: https://auftragsregister.ch/en/auftrag/ef4ba55b-7ef9-4df7-8696-5b2
+ aa67d79bb/\nOfficial publication: https://www.simap.ch/en/project-detail/e
+ f4ba55b-7ef9-4df7-8696-5b2aa67d79bb
+URL:https://auftragsregister.ch/en/auftrag/ef4ba55b-7ef9-4df7-8696-5b2aa67d
+ 79bb/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Véhicules légers Ville de Lausanne - AA2
+ 027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

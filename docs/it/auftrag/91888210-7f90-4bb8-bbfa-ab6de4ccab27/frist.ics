@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:91888210-7f90-4bb8-bbfa-ab6de4ccab27-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:2
+DTSTART:20270402T130000Z
+SUMMARY:Scadenza: AS2035\; Doppelspurausbau und ZFZ\, Dübendorf-Uster-Aath
+ al
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB\, Infrastruktur 
+ – Einkauf\, Supply Chain und Produktion\, Einkauf Bau\, Region Ostprojek
+ te\nScadenza: 02.04.2027\, 15:00\nNel registro: https://auftragsregister.c
+ h/it/auftrag/91888210-7f90-4bb8-bbfa-ab6de4ccab27/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/91888210-7f90-4bb8-bbfa-ab6de4cc
+ ab27
+URL:https://auftragsregister.ch/it/auftrag/91888210-7f90-4bb8-bbfa-ab6de4cc
+ ab27/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AS2035\; Doppelspurausbau und ZFZ\, Dübendorf-Uster-
+ Aathal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

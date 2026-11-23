@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e0064a7-0044-4089-bdca-bbf8746babb8-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270114T140000Z
+SUMMARY:Submission deadline: Arbeitskleider TBA
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Bern\nSubmission deadline:
+  14 Jan 2027\, 15:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/3e0064a7-0044-4089-bdca-bbf8746babb8/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/3e0064a7-0044-4089-bdca-bbf8746babb8
+URL:https://auftragsregister.ch/en/auftrag/3e0064a7-0044-4089-bdca-bbf8746b
+ abb8/
+LOCATION:diverse Standorte
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Arbeitskleider TBA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

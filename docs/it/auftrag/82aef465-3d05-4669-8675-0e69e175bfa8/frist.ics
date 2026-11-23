@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:82aef465-3d05-4669-8675-0e69e175bfa8-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Scadenza: OGER FLOR l 13606 l BKP 230-02 Elektroarbeiten
+DESCRIPTION:Ente pubblico: Hochbauamt\, Baubereich B\nScadenza: 14.01.2027\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/82aef465-3d0
+ 5-4669-8675-0e69e175bfa8/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/82aef465-3d05-4669-8675-0e69e175bfa8
+URL:https://auftragsregister.ch/it/auftrag/82aef465-3d05-4669-8675-0e69e175
+ bfa8/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: OGER FLOR l 13606 l BKP 230-02 Elektroarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32aa216c-870b-43d7-b8e3-23f61766d1bc-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Délai de remise : Stahlbau inkl. Brandschutz für Erweiterung Fe
+ rnheizwerk
+DESCRIPTION:Acheteur public : Stadtwerk Winterthur\nDélai de remise : 
+ 14.12.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/32aa216c-870b-43d7-b8e3-23f61766d1bc/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/32aa216c-870b-43d7-b8e3-23f617
+ 66d1bc
+URL:https://auftragsregister.ch/fr/auftrag/32aa216c-870b-43d7-b8e3-23f61766
+ d1bc/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Stahlbau inkl. Brandschutz für Erweiterun
+ g Fernheizwerk
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

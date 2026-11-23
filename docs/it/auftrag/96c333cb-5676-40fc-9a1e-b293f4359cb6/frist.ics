@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:96c333cb-5676-40fc-9a1e-b293f4359cb6-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261217T110000Z
+SUMMARY:Scadenza: Erweiterung und Sanierung Werkleitungen Geissbel - Tiefba
+ u- und Rohrlegearbeiten
+DESCRIPTION:Ente pubblico: Stadt Laufenburg\nScadenza: 17.12.2026\, 12:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/96c333cb-5676-40fc-9a
+ 1e-b293f4359cb6/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/96c333cb-5676-40fc-9a1e-b293f4359cb6
+URL:https://auftragsregister.ch/it/auftrag/96c333cb-5676-40fc-9a1e-b293f435
+ 9cb6/
+LOCATION:Sulz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Erweiterung und Sanierung Werkleitungen Geissbel - Ti
+ efbau- und Rohrlegearbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe6158ca-2fd9-44b9-bcd2-3a2e7be68602-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261210T153000Z
+SUMMARY:Délai de remise : Co Colombières Transformation des vestiaires 
+ des salles de gymnastique: CFC 251 Installations sanitaires
+DESCRIPTION:Acheteur public : Etat de Genève. Office cantonal des bâtim
+ ents (OCBA)\nDélai de remise : 10.12.2026\, 16 h 30\nDans le regist
+ re : https://auftragsregister.ch/fr/auftrag/fe6158ca-2fd9-44b9-bcd2-3a2e
+ 7be68602/\nPublication officielle : https://www.simap.ch/fr/project-deta
+ il/fe6158ca-2fd9-44b9-bcd2-3a2e7be68602
+URL:https://auftragsregister.ch/fr/auftrag/fe6158ca-2fd9-44b9-bcd2-3a2e7be6
+ 8602/
+LOCATION:Versoix
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Co Colombières Transformation des vestiai
+ res des salles de gymnastique: CFC 251 Installations sanitaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

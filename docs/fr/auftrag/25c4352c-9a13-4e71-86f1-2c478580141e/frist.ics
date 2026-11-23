@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25c4352c-9a13-4e71-86f1-2c478580141e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261218T150000Z
+SUMMARY:Délai de remise : Wasserbauplan «Hochwasserschutz Rüebeldorf\,
+  Ausbau Chalberhönibach\, 2. Ausbauetappe» und Überbauungsordnung «Hoc
+ hwasserschutz Rüebeldorf\, 2. Ausbauetappe: Ausbau Gemeindestrassen und B
+ rückenneubauten»
+DESCRIPTION:Acheteur public : Schwellenkorporation Saanen (Kissling + Zbi
+ nden AG)\nDélai de remise : 18.12.2026\, 16 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/25c4352c-9a13-4e71-86f1-2c4785
+ 80141e/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /25c4352c-9a13-4e71-86f1-2c478580141e
+URL:https://auftragsregister.ch/fr/auftrag/25c4352c-9a13-4e71-86f1-2c478580
+ 141e/
+LOCATION:Saanen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wasserbauplan «Hochwasserschutz Rüebeldo
+ rf\, Ausbau Chalberhönibach\, 2. Ausbauetappe» und Überbauungsordnung 
+ «Hochwasserschutz Rüebeldorf\, 2. Ausbauetappe: Ausbau Gemeindestrassen 
+ und Brückenneubauten»
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

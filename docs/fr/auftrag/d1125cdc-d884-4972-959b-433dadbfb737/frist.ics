@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d1125cdc-d884-4972-959b-433dadbfb737-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20261217T100000Z
+SUMMARY:Délai de remise : Erweiterung Stadtgarte\, Effretikon
+DESCRIPTION:Acheteur public : Stadt Illnau-Effretikon\, Abteilung Tiefbau
+ \nDélai de remise : 17.12.2026\, 11 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/d1125cdc-d884-4972-959b-433dadbfb737/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/d1125cdc
+ -d884-4972-959b-433dadbfb737
+URL:https://auftragsregister.ch/fr/auftrag/d1125cdc-d884-4972-959b-433dadbf
+ b737/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erweiterung Stadtgarte\, Effretikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

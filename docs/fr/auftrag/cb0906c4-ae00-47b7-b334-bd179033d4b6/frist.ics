@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb0906c4-ae00-47b7-b334-bd179033d4b6-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Délai de remise : B.10629 KUE D Remise en état de machines frig
+ orifiques | CVC 294 Ingénieur (concepteur spécialisé en froid\, incluan
+ t la direction globale et la coordination technique) | OV
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 11.01.2027\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/cb0906c4-ae00-47b7-b334-bd179033d4b6/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/cb0906c4-ae00-47b7-b334-
+ bd179033d4b6
+URL:https://auftragsregister.ch/fr/auftrag/cb0906c4-ae00-47b7-b334-bd179033
+ d4b6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : B.10629 KUE D Remise en état de machines 
+ frigorifiques | CVC 294 Ingénieur (concepteur spécialisé en froid\, inc
+ luant la direction globale et la coordination technique) | OV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

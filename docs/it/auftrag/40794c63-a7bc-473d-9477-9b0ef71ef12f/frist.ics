@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40794c63-a7bc-473d-9477-9b0ef71ef12f-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Scadenza: Bau Nr. 19174 - Opfikonstrasse
+DESCRIPTION:Ente pubblico: Tiefbauamt\, Abt. Realisierung\nScadenza: 02.12.
+ 2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/40794c6
+ 3-a7bc-473d-9477-9b0ef71ef12f/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/40794c63-a7bc-473d-9477-9b0ef71ef12f
+URL:https://auftragsregister.ch/it/auftrag/40794c63-a7bc-473d-9477-9b0ef71e
+ f12f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bau Nr. 19174 - Opfikonstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18c89d9b-f83b-4694-b67a-81a5d4b37d1f-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20261218T090000Z
+SUMMARY:Délai de remise : Gruebstrasse\, Abschnitt Alte Landstrasse bis 
+ "Auf der Grueb"\, L= ca. 260m'
+DESCRIPTION:Acheteur public : Gemeinde Meilen\nDélai de remise : 18.12
+ .2026\, 10 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/18c89d9b-f83b-4694-b67a-81a5d4b37d1f/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/18c89d9b-f83b-4694-b67a-81a5d4b37d1f
+URL:https://auftragsregister.ch/fr/auftrag/18c89d9b-f83b-4694-b67a-81a5d4b3
+ 7d1f/
+LOCATION:Meilen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gruebstrasse\, Abschnitt Alte Landstrasse 
+ bis "Auf der Grueb"\, L= ca. 260m'
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

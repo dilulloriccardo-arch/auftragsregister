@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe6158ca-2fd9-44b9-bcd2-3a2e7be68602-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261210T153000Z
+SUMMARY:Eingabefrist: Co Colombières Transformation des vestiaires des sal
+ les de gymnastique: CFC 251 Installations sanitaires
+DESCRIPTION:Auftraggeber: Etat de Genève. Office cantonal des bâtiments (
+ OCBA)\nEingabefrist: 10.12.2026\, 16.30 Uhr\nIm Register: https://auftrag
+ sregister.ch/de/auftrag/fe6158ca-2fd9-44b9-bcd2-3a2e7be68602/\nAmtliche Pu
+ blikation: https://www.simap.ch/de/project-detail/fe6158ca-2fd9-44b9-bcd2-
+ 3a2e7be68602
+URL:https://auftragsregister.ch/de/auftrag/fe6158ca-2fd9-44b9-bcd2-3a2e7be6
+ 8602/
+LOCATION:Versoix
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Co Colombières Transformation des vestiaires des
+  salles de gymnastique: CFC 251 Installations sanitaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

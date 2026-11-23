@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a1c52e32-5226-43c3-ba60-39fca39c9db2-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261211T140000Z
+SUMMARY:Scadenza: Rund um den OP\, BKP 287 Baureinigung
+DESCRIPTION:Ente pubblico: Hirslanden AG\, Corporate Office (Ghisleni Partn
+ er AG)\nScadenza: 11.12.2026\, 15:00\nNel registro: https://auftragsregist
+ er.ch/it/auftrag/a1c52e32-5226-43c3-ba60-39fca39c9db2/\nPubblicazione uffi
+ ciale: https://www.simap.ch/it/project-detail/a1c52e32-5226-43c3-ba60-39fc
+ a39c9db2
+URL:https://auftragsregister.ch/it/auftrag/a1c52e32-5226-43c3-ba60-39fca39c
+ 9db2/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rund um den OP\, BKP 287 Baureinigung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f162c86c-f1b9-4cb5-a137-557a4e53a380-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270114T090000Z
+SUMMARY:Submission deadline: Stadthof- / Dreilindenstrasse Gesamtplanerauss
+ schreibung SIA Phasen 31 bis 53
+DESCRIPTION:Public buyer: Stadt Luzern\, Tiefbauamt\nSubmission deadline: 1
+ 4 Jan 2027\, 10:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/f162c86c-f1b9-4cb5-a137-557a4e53a380/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/f162c86c-f1b9-4cb5-a137-557a4e53a380
+URL:https://auftragsregister.ch/en/auftrag/f162c86c-f1b9-4cb5-a137-557a4e53
+ a380/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Stadthof- / Dreilindenstrasse Gesamtplaner
+ aussschreibung SIA Phasen 31 bis 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

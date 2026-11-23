@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea51caf2-1653-4a1b-bd60-c429cfe6d49d-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Eingabefrist: Beschaffung einer Automatisierungsplattform für Enzy
+ me Engineering (APEE)
+DESCRIPTION:Auftraggeber: Universität Bern\nEingabefrist: 15.01.2027\, 23.
+ 59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ea51caf2-1653
+ -4a1b-bd60-c429cfe6d49d/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/ea51caf2-1653-4a1b-bd60-c429cfe6d49d
+URL:https://auftragsregister.ch/de/auftrag/ea51caf2-1653-4a1b-bd60-c429cfe6
+ d49d/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung einer Automatisierungsplattform für 
+ Enzyme Engineering (APEE)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

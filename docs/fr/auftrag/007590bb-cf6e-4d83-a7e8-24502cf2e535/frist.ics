@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:007590bb-cf6e-4d83-a7e8-24502cf2e535-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T103000Z
+SUMMARY:Délai de remise : École de Kalktarren\, rénovation du complexe
+  scolaire: CFC 224 Couverture des combles / toitures inclinées
+DESCRIPTION:Acheteur public : Stadt Schlieren\, Bereich Liegenschaften\nD
+ élai de remise : 17.12.2026\, 11 h 30\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/007590bb-cf6e-4d83-a7e8-24502cf2e535/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/007590bb-cf
+ 6e-4d83-a7e8-24502cf2e535
+URL:https://auftragsregister.ch/fr/auftrag/007590bb-cf6e-4d83-a7e8-24502cf2
+ e535/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École de Kalktarren\, rénovation du comp
+ lexe scolaire: CFC 224 Couverture des combles / toitures inclinées
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

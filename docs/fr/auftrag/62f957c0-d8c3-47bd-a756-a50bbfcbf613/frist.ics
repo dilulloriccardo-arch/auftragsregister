@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62f957c0-d8c3-47bd-a756-a50bbfcbf613-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Délai de remise : BKP 221.6 Aussentüren-Fenster aus Metall
+DESCRIPTION:Acheteur public : Sihltal Zürich Uetliberg Bahn SZU AG\nDél
+ ai de remise : 08.01.2027\, 12 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/62f957c0-d8c3-47bd-a756-a50bbfcbf613/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/62f957c0-d8c3-
+ 47bd-a756-a50bbfcbf613
+URL:https://auftragsregister.ch/fr/auftrag/62f957c0-d8c3-47bd-a756-a50bbfcb
+ f613/
+LOCATION:Adliswi
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 221.6 Aussentüren-Fenster aus Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

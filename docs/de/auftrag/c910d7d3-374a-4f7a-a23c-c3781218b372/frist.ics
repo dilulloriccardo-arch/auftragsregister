@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c910d7d3-374a-4f7a-a23c-c3781218b372-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270112T090000Z
+SUMMARY:Eingabefrist: Transformation et rénovation du bâtiment historique
+  du Sacré-Cœur à Estavayer-le-Lac - CFC 411 Aménagements extérieurs -
+  Génie civil
+DESCRIPTION:Auftraggeber: studio WOW sa\nEingabefrist: 12.01.2027\, 10.00 
+ Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c910d7d3-374a-4f7
+ a-a23c-c3781218b372/\nAmtliche Publikation: https://www.simap.ch/de/projec
+ t-detail/c910d7d3-374a-4f7a-a23c-c3781218b372
+URL:https://auftragsregister.ch/de/auftrag/c910d7d3-374a-4f7a-a23c-c3781218
+ b372/
+LOCATION:Estavayer-le-Lac
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Transformation et rénovation du bâtiment histor
+ ique du Sacré-Cœur à Estavayer-le-Lac - CFC 411 Aménagements extérieu
+ rs - Génie civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

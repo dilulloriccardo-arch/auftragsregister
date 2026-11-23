@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:26fe736d-648f-431c-a395-2fcdd8b47943-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270121T140000Z
+SUMMARY:Scadenza: BKP 283.4 Deckenbekleidungen aus Holz- und Holzwerkstoffe
+ n
+DESCRIPTION:Ente pubblico: Schule Bürglen (FoBu Arch.)\nScadenza: 21.01.20
+ 27\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/26fe736d-
+ 648f-431c-a395-2fcdd8b47943/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/26fe736d-648f-431c-a395-2fcdd8b47943
+URL:https://auftragsregister.ch/it/auftrag/26fe736d-648f-431c-a395-2fcdd8b4
+ 7943/
+LOCATION:Bürglen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 283.4 Deckenbekleidungen aus Holz- und Holzwerkst
+ offen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02ea5839-9582-4cef-a269-faf64efa35a5-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Submission deadline: ARA Thurau\, Ausrüstung Gasproduktion
+DESCRIPTION:Public buyer: Abwasserverband Thurau\nSubmission deadline: 29 
+ Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /02ea5839-9582-4cef-a269-faf64efa35a5/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/02ea5839-9582-4cef-a269-faf64efa35a5
+URL:https://auftragsregister.ch/en/auftrag/02ea5839-9582-4cef-a269-faf64efa
+ 35a5/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ARA Thurau\, Ausrüstung Gasproduktion
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

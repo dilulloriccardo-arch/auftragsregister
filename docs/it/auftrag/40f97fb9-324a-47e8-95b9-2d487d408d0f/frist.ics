@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40f97fb9-324a-47e8-95b9-2d487d408d0f-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261211T090000Z
+SUMMARY:Scadenza: 512.81 - Ecole de l'Auge - Assainissement de la productio
+ n de chaleur
+DESCRIPTION:Ente pubblico: Ville de Fribourg\, service d'urbanisme et d'arc
+ hitecture\nScadenza: 11.12.2026\, 10:00\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/40f97fb9-324a-47e8-95b9-2d487d408d0f/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/40f97fb9-324a-47e8-95b9-2
+ d487d408d0f
+URL:https://auftragsregister.ch/it/auftrag/40f97fb9-324a-47e8-95b9-2d487d40
+ 8d0f/
+LOCATION:Fribourg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 512.81 - Ecole de l'Auge - Assainissement de la produ
+ ction de chaleur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

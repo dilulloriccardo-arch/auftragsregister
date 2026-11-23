@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4593ca1a-b1a4-4e4a-baf6-e70f106b331f-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270105T224500Z
+SUMMARY:Submission deadline: Supply of API standard pipes and pup joints fo
+ r Bäumlihof stage 6
+DESCRIPTION:Public buyer: Schweizer Salinen AG\nSubmission deadline: 5 Jan
+  2027\, 23:45\nIn the register: https://auftragsregister.ch/en/auftrag/45
+ 93ca1a-b1a4-4e4a-baf6-e70f106b331f/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/4593ca1a-b1a4-4e4a-baf6-e70f106b331f
+URL:https://auftragsregister.ch/en/auftrag/4593ca1a-b1a4-4e4a-baf6-e70f106b
+ 331f/
+LOCATION:Möhlin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Supply of API standard pipes and pup joint
+ s for Bäumlihof stage 6
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

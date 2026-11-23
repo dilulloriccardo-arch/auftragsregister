@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb5ef70e-13df-4acd-8fc0-5881f0bd2cd7-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270211T223000Z
+SUMMARY:Submission deadline: PES Railway Signalling Systems
+DESCRIPTION:Public buyer: Sihltal Zürich Uetliberg Bahn SZU AG\nSubmission
+  deadline: 11 Feb 2027\, 23:30\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/bb5ef70e-13df-4acd-8fc0-5881f0bd2cd7/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/bb5ef70e-13df-4acd-8fc0-5881f0bd
+ 2cd7
+URL:https://auftragsregister.ch/en/auftrag/bb5ef70e-13df-4acd-8fc0-5881f0bd
+ 2cd7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: PES Railway Signalling Systems
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbdc8121-02e5-410f-9532-ba48d8665d9f-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Eingabefrist: (b26009-10) Neubau Interventionszentrum Zoll St. Marg
+ rethen / BKP 221.1
+DESCRIPTION:Auftraggeber: Bundesamt für Bauten und Logistik BBL\nEingabefr
+ ist: 29.01.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/bbdc8121-02e5-410f-9532-ba48d8665d9f/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/bbdc8121-02e5-410f-9532-ba48d8665d9f
+URL:https://auftragsregister.ch/de/auftrag/bbdc8121-02e5-410f-9532-ba48d866
+ 5d9f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (b26009-10) Neubau Interventionszentrum Zoll St. 
+ Margrethen / BKP 221.1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

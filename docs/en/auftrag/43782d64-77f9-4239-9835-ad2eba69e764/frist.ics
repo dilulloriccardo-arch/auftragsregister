@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:43782d64-77f9-4239-9835-ad2eba69e764-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270122T150000Z
+SUMMARY:Submission deadline: MP-230016 N13 Kreisel Thusis – Kreisel Cazis
+ \, Baumeister Kreisel Cazis
+DESCRIPTION:Public buyer: Ufficio federale delle strade USTRA\, divisione i
+ nfrastruttura stradale Est\nSubmission deadline: 22 Jan 2027\, 16:00\nIn
+  the register: https://auftragsregister.ch/en/auftrag/43782d64-77f9-4239-9
+ 835-ad2eba69e764/\nOfficial publication: https://www.simap.ch/en/project-d
+ etail/43782d64-77f9-4239-9835-ad2eba69e764
+URL:https://auftragsregister.ch/en/auftrag/43782d64-77f9-4239-9835-ad2eba69
+ e764/
+LOCATION:Thusis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-230016 N13 Kreisel Thusis – Kreisel C
+ azis\, Baumeister Kreisel Cazis
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

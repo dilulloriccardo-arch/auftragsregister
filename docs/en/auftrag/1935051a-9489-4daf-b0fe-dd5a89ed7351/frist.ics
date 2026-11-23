@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1935051a-9489-4daf-b0fe-dd5a89ed7351-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:1
+DTSTART:20270112T140000Z
+SUMMARY:Submission deadline: Beschaffung und Instandhaltung Hochdruckreinig
+ er mit akkubetriebenem Fahrmotor
+DESCRIPTION:Public buyer: SBB AG\, Flottenmanagement Strassenfahrzeuge\nSub
+ mission deadline: 12 Jan 2027\, 15:00\nIn the register: https://auftrags
+ register.ch/en/auftrag/1935051a-9489-4daf-b0fe-dd5a89ed7351/\nOfficial pub
+ lication: https://www.simap.ch/en/project-detail/1935051a-9489-4daf-b0fe-d
+ d5a89ed7351
+URL:https://auftragsregister.ch/en/auftrag/1935051a-9489-4daf-b0fe-dd5a89ed
+ 7351/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung und Instandhaltung Hochdruckre
+ iniger mit akkubetriebenem Fahrmotor
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

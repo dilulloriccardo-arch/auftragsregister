@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18a12ab4-dc84-49bf-947a-c9b69ec26997-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Scadenza: BKP 275\, Schliessanlagen
+DESCRIPTION:Ente pubblico: Solothurner Spitäler AG - Immobilienmanagement\
+ nScadenza: 17.12.2026\, 23:59\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/18a12ab4-dc84-49bf-947a-c9b69ec26997/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/18a12ab4-dc84-49bf-947a-c9b69ec2699
+ 7
+URL:https://auftragsregister.ch/it/auftrag/18a12ab4-dc84-49bf-947a-c9b69ec2
+ 6997/
+LOCATION:Olten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 275\, Schliessanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

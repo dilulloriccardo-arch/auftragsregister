@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbee4252-5ab6-41a2-9b2e-42553bd9bb78-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Submission deadline: Croix d'Or 12 - Lot CVC
+DESCRIPTION:Public buyer: Services Industriels de Genève (SIG) Direction P
+ rojets Industriels et Solutions Digitales\nSubmission deadline: 11 Dec 2
+ 026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/bbee4
+ 252-5ab6-41a2-9b2e-42553bd9bb78/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/bbee4252-5ab6-41a2-9b2e-42553bd9bb78
+URL:https://auftragsregister.ch/en/auftrag/bbee4252-5ab6-41a2-9b2e-42553bd9
+ bb78/
+LOCATION:Rue de la Croix d'Or 12
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Croix d'Or 12 - Lot CVC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

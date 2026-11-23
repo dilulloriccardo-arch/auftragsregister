@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f872482e-d8b8-4dce-821d-e96ce80c605c-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270218T225900Z
+SUMMARY:Submission deadline: Anlagenverkabelung (NS) Bundle 2026-2
+DESCRIPTION:Public buyer: Swissgrid AG - Asset & Maintenance\nSubmission de
+ adline: 18 Feb 2027\, 23:59\nIn the register: https://auftragsregister.c
+ h/en/auftrag/f872482e-d8b8-4dce-821d-e96ce80c605c/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/f872482e-d8b8-4dce-821d-e96ce80c605
+ c
+URL:https://auftragsregister.ch/en/auftrag/f872482e-d8b8-4dce-821d-e96ce80c
+ 605c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Anlagenverkabelung (NS) Bundle 2026-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

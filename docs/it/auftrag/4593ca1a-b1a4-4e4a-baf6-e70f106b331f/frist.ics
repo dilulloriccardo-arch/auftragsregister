@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4593ca1a-b1a4-4e4a-baf6-e70f106b331f-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270105T224500Z
+SUMMARY:Scadenza: Lieferung von API-Standardrohren und Pup Joints für Bäu
+ mlihof Etappe 6
+DESCRIPTION:Ente pubblico: Schweizer Salinen AG\nScadenza: 05.01.2027\, 23:
+ 45\nNel registro: https://auftragsregister.ch/it/auftrag/4593ca1a-b1a4-4e4
+ a-baf6-e70f106b331f/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/4593ca1a-b1a4-4e4a-baf6-e70f106b331f
+URL:https://auftragsregister.ch/it/auftrag/4593ca1a-b1a4-4e4a-baf6-e70f106b
+ 331f/
+LOCATION:Möhlin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Lieferung von API-Standardrohren und Pup Joints für 
+ Bäumlihof Etappe 6
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

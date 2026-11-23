@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:140e60e7-5f06-4b02-b8eb-9c837e6f9387-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Délai de remise : Assainissement et agrandissement de la caserne
+  des pompiers d’Estavayer - CFC 211 Travaux de l'entreprise de maçonner
+ ie
+DESCRIPTION:Acheteur public : Commune d'Estavayer - Service des bâtiment
+ s ( OCSA o charrière architectes SA)\nDélai de remise : 22.01.2027\, 1
+ 2 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/14
+ 0e60e7-5f06-4b02-b8eb-9c837e6f9387/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/140e60e7-5f06-4b02-b8eb-9c837e6f9387
+URL:https://auftragsregister.ch/fr/auftrag/140e60e7-5f06-4b02-b8eb-9c837e6f
+ 9387/
+LOCATION:Estavayer-le-Lac
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assainissement et agrandissement de la cas
+ erne des pompiers d’Estavayer - CFC 211 Travaux de l'entreprise de maço
+ nnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

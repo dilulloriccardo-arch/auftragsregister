@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23342ae2-89be-41e5-bc53-0f33a4385ae4-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Scadenza: Markierungen Bezirk 4\; Haupt- und Verbindungsstrassen
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 23.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/23342ae2-89be-4
+ 1e5-bc53-0f33a4385ae4/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/23342ae2-89be-41e5-bc53-0f33a4385ae4
+URL:https://auftragsregister.ch/it/auftrag/23342ae2-89be-41e5-bc53-0f33a438
+ 5ae4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Markierungen Bezirk 4\; Haupt- und Verbindungsstrasse
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

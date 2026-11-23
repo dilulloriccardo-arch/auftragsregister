@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:178113fa-ae26-41d7-a860-bf0484045b8d-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Délai de remise : Submission Dienstleistungen Kontrolle ruhender
+  Verkehr
+DESCRIPTION:Acheteur public : Stadt Frauenfeld\, Abteilung Sicherheit\nD
+ élai de remise : 07.12.2026\, 12 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/178113fa-ae26-41d7-a860-bf0484045b8d/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/178113fa-ae
+ 26-41d7-a860-bf0484045b8d
+URL:https://auftragsregister.ch/fr/auftrag/178113fa-ae26-41d7-a860-bf048404
+ 5b8d/
+LOCATION:Frauenfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Submission Dienstleistungen Kontrolle ruhe
+ nder Verkehr
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

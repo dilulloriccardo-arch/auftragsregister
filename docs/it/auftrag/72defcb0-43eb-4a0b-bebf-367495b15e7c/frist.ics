@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72defcb0-43eb-4a0b-bebf-367495b15e7c-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270122T140000Z
+SUMMARY:Scadenza: Drehscheibe (Plaque tournante)
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB Division Produkt
+ ion Personenverkehr\nScadenza: 22.01.2027\, 15:00\nNel registro: https://a
+ uftragsregister.ch/it/auftrag/72defcb0-43eb-4a0b-bebf-367495b15e7c/\nPubbl
+ icazione ufficiale: https://www.simap.ch/it/project-detail/72defcb0-43eb-4
+ a0b-bebf-367495b15e7c
+URL:https://auftragsregister.ch/it/auftrag/72defcb0-43eb-4a0b-bebf-367495b1
+ 5e7c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Drehscheibe (Plaque tournante)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

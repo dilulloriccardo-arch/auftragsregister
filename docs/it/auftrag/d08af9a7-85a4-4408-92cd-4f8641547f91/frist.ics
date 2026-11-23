@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d08af9a7-85a4-4408-92cd-4f8641547f91-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Scadenza: Acquisition de mobilier pour le nouvel établissement de 
+ l'ESSC\, Pompaples
+DESCRIPTION:Ente pubblico: Irbis Consulting SA\nScadenza: 13.01.2027\, 12:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/d08af9a7-85a4-4408
+ -92cd-4f8641547f91/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/d08af9a7-85a4-4408-92cd-4f8641547f91
+URL:https://auftragsregister.ch/it/auftrag/d08af9a7-85a4-4408-92cd-4f864154
+ 7f91/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Acquisition de mobilier pour le nouvel établissement
+  de l'ESSC\, Pompaples
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

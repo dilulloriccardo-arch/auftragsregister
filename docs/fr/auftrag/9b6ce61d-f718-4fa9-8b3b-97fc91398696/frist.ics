@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9b6ce61d-f718-4fa9-8b3b-97fc91398696-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270104T225900Z
+SUMMARY:Délai de remise : Acquisition camion-citerne de pompier
+DESCRIPTION:Acheteur public : Gemeinde Klosters\nDélai de remise : 04.
+ 01.2027\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/9b6ce61d-f718-4fa9-8b3b-97fc91398696/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/9b6ce61d-f718-4fa9-8b3b-97fc913986
+ 96
+URL:https://auftragsregister.ch/fr/auftrag/9b6ce61d-f718-4fa9-8b3b-97fc9139
+ 8696/
+LOCATION:Klosters
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Acquisition camion-citerne de pompier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

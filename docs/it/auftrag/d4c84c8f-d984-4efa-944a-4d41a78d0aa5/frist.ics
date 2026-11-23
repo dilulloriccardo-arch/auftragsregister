@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d4c84c8f-d984-4efa-944a-4d41a78d0aa5-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261218T225500Z
+SUMMARY:Scadenza: Industriestrasse\, Pulvermühlestrasse - Industriegleis
+DESCRIPTION:Ente pubblico: Stadt Chur - Tiefbaudienste\nScadenza: 18.12.202
+ 6\, 23:55\nNel registro: https://auftragsregister.ch/it/auftrag/d4c84c8f-d
+ 984-4efa-944a-4d41a78d0aa5/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/d4c84c8f-d984-4efa-944a-4d41a78d0aa5
+URL:https://auftragsregister.ch/it/auftrag/d4c84c8f-d984-4efa-944a-4d41a78d
+ 0aa5/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Industriestrasse\, Pulvermühlestrasse - Industriegle
+ is
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

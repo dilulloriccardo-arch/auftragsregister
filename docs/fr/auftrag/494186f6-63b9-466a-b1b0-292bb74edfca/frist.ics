@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:494186f6-63b9-466a-b1b0-292bb74edfca-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Délai de remise : Modernisierung Strandbad Stansstad
+DESCRIPTION:Acheteur public : Gemeinde Stansstad\nDélai de remise : 14
+ .12.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/494186f6-63b9-466a-b1b0-292bb74edfca/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/494186f6-63b9-466a-b1b0-292bb74ed
+ fca
+URL:https://auftragsregister.ch/fr/auftrag/494186f6-63b9-466a-b1b0-292bb74e
+ dfca/
+LOCATION:Stansstad
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Modernisierung Strandbad Stansstad
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

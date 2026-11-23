@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:801635c7-61b8-4ac1-befe-67363bfefb5b-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Submission deadline: BAV 40278 GFA Bachwiesen\, Ersatzneubau Haus A
+  - BKP 221 Fenster\, Aussentüren\, Tore
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 14 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/801635c7-61b8-4ac1-befe-67363bfefb5b/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/801635c7-61b8-4ac1-befe-67363bfefb5b
+URL:https://auftragsregister.ch/en/auftrag/801635c7-61b8-4ac1-befe-67363bfe
+ fb5b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 40278 GFA Bachwiesen\, Ersatzneubau Ha
+ us A - BKP 221 Fenster\, Aussentüren\, Tore
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

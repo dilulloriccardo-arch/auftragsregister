@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b24b24a5-a231-44b8-9062-3415ec6ebc6b-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Délai de remise : Markierungen Bezirk 5\; Haupt-\, Verbindungs- 
+ und Nationalstrasse N28
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 23.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/b24b24a5-a231-44b8-9062-3415ec6ebc6b/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/b24b24a5-a231-44b8-9062-3415e
+ c6ebc6b
+URL:https://auftragsregister.ch/fr/auftrag/b24b24a5-a231-44b8-9062-3415ec6e
+ bc6b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Markierungen Bezirk 5\; Haupt-\, Verbindun
+ gs- und Nationalstrasse N28
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

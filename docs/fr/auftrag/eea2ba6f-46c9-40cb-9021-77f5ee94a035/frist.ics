@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eea2ba6f-46c9-40cb-9021-77f5ee94a035-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Délai de remise : MP 2026.03.835 - Electrification ligne 18 - Tr
+ avaux de génie civil
+DESCRIPTION:Acheteur public : Transports publics de la région lausannois
+ e sa\nDélai de remise : 13.01.2027\, 12 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/eea2ba6f-46c9-40cb-9021-77f5ee94a03
+ 5/\nPublication officielle : https://www.simap.ch/fr/project-detail/eea2
+ ba6f-46c9-40cb-9021-77f5ee94a035
+URL:https://auftragsregister.ch/fr/auftrag/eea2ba6f-46c9-40cb-9021-77f5ee94
+ a035/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP 2026.03.835 - Electrification ligne 18 
+ - Travaux de génie civil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4a03a05-de07-4ee4-b9f9-9fdba1be99fc-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Scadenza: Markierungen Bezirk 1\, 2 und 7\; Nationalstrasse N13
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 23.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/b4a03a05-de07-4
+ ee4-b9f9-9fdba1be99fc/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/b4a03a05-de07-4ee4-b9f9-9fdba1be99fc
+URL:https://auftragsregister.ch/it/auftrag/b4a03a05-de07-4ee4-b9f9-9fdba1be
+ 99fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Markierungen Bezirk 1\, 2 und 7\; Nationalstrasse N13
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

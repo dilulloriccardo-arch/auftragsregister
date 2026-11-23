@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23b53401-63d8-4aff-9aae-e1807d7636d9-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Eingabefrist: Neubau Burgfelderstrasse 251\, BKP 273.3 Allgemeine S
+ chreinerarbeiten
+DESCRIPTION:Auftraggeber: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nEingab
+ efrist: 21.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/
+ de/auftrag/23b53401-63d8-4aff-9aae-e1807d7636d9/\nAmtliche Publikation: ht
+ tps://www.simap.ch/de/project-detail/23b53401-63d8-4aff-9aae-e1807d7636d9
+URL:https://auftragsregister.ch/de/auftrag/23b53401-63d8-4aff-9aae-e1807d76
+ 36d9/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Burgfelderstrasse 251\, BKP 273.3 Allgemei
+ ne Schreinerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

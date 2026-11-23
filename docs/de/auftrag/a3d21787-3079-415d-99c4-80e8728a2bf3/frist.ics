@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a3d21787-3079-415d-99c4-80e8728a2bf3-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270129T090000Z
+SUMMARY:Eingabefrist: Ersatz Gelenksteiger LU612
+DESCRIPTION:Auftraggeber: ewl Verkauf AG\nEingabefrist: 29.01.2027\, 10.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/a3d21787-3079-4
+ 15d-99c4-80e8728a2bf3/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/a3d21787-3079-415d-99c4-80e8728a2bf3
+URL:https://auftragsregister.ch/de/auftrag/a3d21787-3079-415d-99c4-80e8728a
+ 2bf3/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatz Gelenksteiger LU612
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

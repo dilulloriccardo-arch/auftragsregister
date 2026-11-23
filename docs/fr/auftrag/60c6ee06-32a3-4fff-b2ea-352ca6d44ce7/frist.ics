@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60c6ee06-32a3-4fff-b2ea-352ca6d44ce7-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270117T225900Z
+SUMMARY:Délai de remise : Schweiss- und Klebearbeiten an Schienen und We
+ ichenbauteilen
+DESCRIPTION:Acheteur public : Rhätische Bahn AG\nDélai de remise : 17
+ .01.2027\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/60c6ee06-32a3-4fff-b2ea-352ca6d44ce7/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/60c6ee06-32a3-4fff-b2ea-352ca6d44
+ ce7
+URL:https://auftragsregister.ch/fr/auftrag/60c6ee06-32a3-4fff-b2ea-352ca6d4
+ 4ce7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Schweiss- und Klebearbeiten an Schienen un
+ d Weichenbauteilen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d49fca4e-8f1a-41f3-bffe-794b7f62202d-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261217T150000Z
+SUMMARY:Eingabefrist: Eau potable - Lovatens\, Prévonloup & Billens-Hennen
+ s
+DESCRIPTION:Auftraggeber: Ribi SA\, ingénieurs hydrauliciens\nEingabefrist
+ : 17.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auf
+ trag/d49fca4e-8f1a-41f3-bffe-794b7f62202d/\nAmtliche Publikation: https://
+ www.simap.ch/de/project-detail/d49fca4e-8f1a-41f3-bffe-794b7f62202d
+URL:https://auftragsregister.ch/de/auftrag/d49fca4e-8f1a-41f3-bffe-794b7f62
+ 202d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Eau potable - Lovatens\, Prévonloup & Billens-He
+ nnens
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

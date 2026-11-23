@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4cbd9951-8492-4882-a85a-bd57b071bd97-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Scadenza: Demarcazioni Circondario 2\; strade principali e di colle
+ gamento
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 23.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/4cbd9951-8492-4
+ 882-a85a-bd57b071bd97/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/4cbd9951-8492-4882-a85a-bd57b071bd97
+URL:https://auftragsregister.ch/it/auftrag/4cbd9951-8492-4882-a85a-bd57b071
+ bd97/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Demarcazioni Circondario 2\; strade principali e di c
+ ollegamento
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

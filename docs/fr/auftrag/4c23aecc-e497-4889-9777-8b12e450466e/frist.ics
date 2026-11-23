@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c23aecc-e497-4889-9777-8b12e450466e-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20261216T103000Z
+SUMMARY:Délai de remise : Strassen- und Werkleitungsbau Kirchweg / Stadt
+ weg\, Gemeinde Feuerthalen
+DESCRIPTION:Acheteur public : Gemeinde Feuerthalen\nDélai de remise : 
+ 16.12.2026\, 11 h 30\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/4c23aecc-e497-4889-9777-8b12e450466e/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/4c23aecc-e497-4889-9777-8b12e4
+ 50466e
+URL:https://auftragsregister.ch/fr/auftrag/4c23aecc-e497-4889-9777-8b12e450
+ 466e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Strassen- und Werkleitungsbau Kirchweg / S
+ tadtweg\, Gemeinde Feuerthalen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

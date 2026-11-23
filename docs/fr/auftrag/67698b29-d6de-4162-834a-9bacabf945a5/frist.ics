@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:67698b29-d6de-4162-834a-9bacabf945a5-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270108T130000Z
+SUMMARY:Délai de remise : Wohnsiedlung Altwiesen\, 8051 Zürich
+DESCRIPTION:Acheteur public : Stiftung Einfach Wohnen (SEW)\nDélai de re
+ mise : 08.01.2027\, 14 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/67698b29-d6de-4162-834a-9bacabf945a5/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/67698b29-d6de-4162-834
+ a-9bacabf945a5
+URL:https://auftragsregister.ch/fr/auftrag/67698b29-d6de-4162-834a-9bacabf9
+ 45a5/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wohnsiedlung Altwiesen\, 8051 Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

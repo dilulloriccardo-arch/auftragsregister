@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:09f25b8b-663a-4e92-8669-a04e0e073556-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261218T123000Z
+SUMMARY:Eingabefrist: Costruzione nuovo campeggio alpino a Brione Verzasca 
+ - Opere da installatore di impianti RVCS
+DESCRIPTION:Auftraggeber: Patriziato di Brione Verzasca\nEingabefrist: 18.1
+ 2.2026\, 13.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0
+ 9f25b8b-663a-4e92-8669-a04e0e073556/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/09f25b8b-663a-4e92-8669-a04e0e073556
+URL:https://auftragsregister.ch/de/auftrag/09f25b8b-663a-4e92-8669-a04e0e07
+ 3556/
+LOCATION:Brione Verzasca
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Costruzione nuovo campeggio alpino a Brione Verza
+ sca - Opere da installatore di impianti RVCS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

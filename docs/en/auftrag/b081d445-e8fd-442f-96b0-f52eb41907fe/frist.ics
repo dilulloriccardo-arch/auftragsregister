@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b081d445-e8fd-442f-96b0-f52eb41907fe-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261224T110000Z
+SUMMARY:Submission deadline: Tender BKP 248.2 Cold Rooms
+DESCRIPTION:Public buyer: Wohnen und Pflege Peteracker AG\nSubmission deadl
+ ine: 24 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/b081d445-e8fd-442f-96b0-f52eb41907fe/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/b081d445-e8fd-442f-96b0-f52eb41907fe
+URL:https://auftragsregister.ch/en/auftrag/b081d445-e8fd-442f-96b0-f52eb419
+ 07fe/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tender BKP 248.2 Cold Rooms
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

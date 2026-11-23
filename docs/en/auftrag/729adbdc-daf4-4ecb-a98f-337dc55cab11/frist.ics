@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:729adbdc-daf4-4ecb-a98f-337dc55cab11-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Submission deadline: Wohnen am Stadtpark: BKP 281.0 Screed Flooring
+DESCRIPTION:Public buyer: Stadt Schlieren\, Bereich Liegenschaften\nSubmiss
+ ion deadline: 14 Dec 2026\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/729adbdc-daf4-4ecb-a98f-337dc55cab11/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/729adbdc-daf4-4ecb-a98f-337dc
+ 55cab11
+URL:https://auftragsregister.ch/en/auftrag/729adbdc-daf4-4ecb-a98f-337dc55c
+ ab11/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wohnen am Stadtpark: BKP 281.0 Screed Floo
+ ring
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

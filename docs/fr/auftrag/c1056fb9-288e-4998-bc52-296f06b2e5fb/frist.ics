@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c1056fb9-288e-4998-bc52-296f06b2e5fb-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Délai de remise : 1 Kommunalfahrzeug 4x4 GR 51'285_B2
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 30.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/c1056fb9-288e-4998-bc52-296f06b2e5fb/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/c1056fb9-288e-4998-bc52-296f0
+ 6b2e5fb
+URL:https://auftragsregister.ch/fr/auftrag/c1056fb9-288e-4998-bc52-296f06b2
+ e5fb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 1 Kommunalfahrzeug 4x4 GR 51'285_B2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

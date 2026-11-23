@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:70a77c17-4eb8-4548-958e-eac1f0da0e7e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Scadenza: Fernwärmeprojekt Neftenbach 2027 - 2030
+DESCRIPTION:Ente pubblico: Energieverbund Neftenbach AG (HOLINGER AG)\nScad
+ enza: 09.12.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/70a77c17-4eb8-4548-958e-eac1f0da0e7e/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/70a77c17-4eb8-4548-958e-eac1f0da0e7e
+URL:https://auftragsregister.ch/it/auftrag/70a77c17-4eb8-4548-958e-eac1f0da
+ 0e7e/
+LOCATION:neftenbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fernwärmeprojekt Neftenbach 2027 - 2030
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

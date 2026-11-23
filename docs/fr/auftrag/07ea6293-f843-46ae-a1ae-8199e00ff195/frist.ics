@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07ea6293-f843-46ae-a1ae-8199e00ff195-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261221T103000Z
+SUMMARY:Délai de remise : Affaire n° 26-029: Cité RUBIX phase 2 au niv
+ eau 07 du bâtiment BH du CHUV"\, CFC n° 244
+DESCRIPTION:Acheteur public : CHUV - Constructions ingénierie technique 
+ et sécurité (CIT-S)\nDélai de remise : 21.12.2026\, 11 h 30\nDans
+  le registre : https://auftragsregister.ch/fr/auftrag/07ea6293-f843-46ae
+ -a1ae-8199e00ff195/\nPublication officielle : https://www.simap.ch/fr/pr
+ oject-detail/07ea6293-f843-46ae-a1ae-8199e00ff195
+URL:https://auftragsregister.ch/fr/auftrag/07ea6293-f843-46ae-a1ae-8199e00f
+ f195/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Affaire n° 26-029: Cité RUBIX phase 2 au
+  niveau 07 du bâtiment BH du CHUV"\, CFC n° 244
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

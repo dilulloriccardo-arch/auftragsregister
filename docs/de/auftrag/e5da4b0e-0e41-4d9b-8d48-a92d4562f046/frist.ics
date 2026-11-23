@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5da4b0e-0e41-4d9b-8d48-a92d4562f046-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Eingabefrist: Susch\, Bahnhofumbau - Kabelverlegung\, Spleissung un
+ d Messungen
+DESCRIPTION:Auftraggeber: Rhätische Bahn AG\nEingabefrist: 11.12.2026\, 23
+ .59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e5da4b0e-0e4
+ 1-4d9b-8d48-a92d4562f046/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/e5da4b0e-0e41-4d9b-8d48-a92d4562f046
+URL:https://auftragsregister.ch/de/auftrag/e5da4b0e-0e41-4d9b-8d48-a92d4562
+ f046/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Susch\, Bahnhofumbau - Kabelverlegung\, Spleissun
+ g und Messungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

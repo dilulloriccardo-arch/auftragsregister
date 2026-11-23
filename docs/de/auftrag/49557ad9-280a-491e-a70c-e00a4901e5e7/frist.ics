@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49557ad9-280a-491e-a70c-e00a4901e5e7-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270119T150000Z
+SUMMARY:Eingabefrist: CFC 251 Installations sanitaires
+DESCRIPTION:Auftraggeber: Commune de Grolley-Ponthaux\nEingabefrist: 19.01.
+ 2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/495
+ 57ad9-280a-491e-a70c-e00a4901e5e7/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/49557ad9-280a-491e-a70c-e00a4901e5e7
+URL:https://auftragsregister.ch/de/auftrag/49557ad9-280a-491e-a70c-e00a4901
+ e5e7/
+LOCATION:Grolley
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CFC 251 Installations sanitaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

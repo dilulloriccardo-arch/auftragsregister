@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:05ae9160-8126-4e10-8b65-9aeeb36e1c1a-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261218T140000Z
+SUMMARY:Eingabefrist: BKP 214 Montagebau in Holz
+DESCRIPTION:Auftraggeber: Primarschulgemeinde Bottighofen (FoBu Arch.)\nEin
+ gabefrist: 18.12.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/05ae9160-8126-4e10-8b65-9aeeb36e1c1a/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/05ae9160-8126-4e10-8b65-9aeeb36e1c
+ 1a
+URL:https://auftragsregister.ch/de/auftrag/05ae9160-8126-4e10-8b65-9aeeb36e
+ 1c1a/
+LOCATION:Bottighofen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 214 Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

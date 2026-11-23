@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5aaf9c25-114b-4ab6-ace5-4f251c315675-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261209T130000Z
+SUMMARY:Submission deadline: Appel d'offres pour l'attribution de contrats-
+ cadres relatifs à la fourniture du lot « pâtes\, céréales et produits
+  assimilés » pour la période 2027-2028 destiné à la Fondation « Casa
+  per Anziani » de Giubiasco
+DESCRIPTION:Public buyer: Fondazione Casa per Anziani di GIubiasco\nSubmiss
+ ion deadline: 9 Dec 2026\, 14:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/5aaf9c25-114b-4ab6-ace5-4f251c315675/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/5aaf9c25-114b-4ab6-ace5-4f251c
+ 315675
+URL:https://auftragsregister.ch/en/auftrag/5aaf9c25-114b-4ab6-ace5-4f251c31
+ 5675/
+LOCATION:Giubiasco
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Appel d'offres pour l'attribution de contr
+ ats-cadres relatifs à la fourniture du lot « pâtes\, céréales et prod
+ uits assimilés » pour la période 2027-2028 destiné à la Fondation « 
+ Casa per Anziani » de Giubiasco
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

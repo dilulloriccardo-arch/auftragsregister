@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5ed07759-2944-454d-bd32-2322c75ccee5-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261222T225900Z
+SUMMARY:Submission deadline: Kantonsstrasse Nr. 47\, Goldach/Tübach: Brüc
+ ke Goldach
+DESCRIPTION:Public buyer: Kanton St.Gallen\, Tiefbauamt\, Strassen- und Kun
+ stbauten\nSubmission deadline: 22 Dec 2026\, 23:59\nIn the register: htt
+ ps://auftragsregister.ch/en/auftrag/5ed07759-2944-454d-bd32-2322c75ccee5/\
+ nOfficial publication: https://www.simap.ch/en/project-detail/5ed07759-294
+ 4-454d-bd32-2322c75ccee5
+URL:https://auftragsregister.ch/en/auftrag/5ed07759-2944-454d-bd32-2322c75c
+ cee5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kantonsstrasse Nr. 47\, Goldach/Tübach: B
+ rücke Goldach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

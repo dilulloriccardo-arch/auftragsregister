@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:953477f7-edf8-4022-8464-03f4ae8dc828-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Scadenza: Hôtel-de-Ville\, La Chaux-de-Fonds_CFC273.3_Menuiserie c
+ ourante agencement
+DESCRIPTION:Ente pubblico: Service bâtiments et logement\nScadenza: 09.12.
+ 2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/953477f
+ 7-edf8-4022-8464-03f4ae8dc828/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/953477f7-edf8-4022-8464-03f4ae8dc828
+URL:https://auftragsregister.ch/it/auftrag/953477f7-edf8-4022-8464-03f4ae8d
+ c828/
+LOCATION:La Chaux de Fonds
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Hôtel-de-Ville\, La Chaux-de-Fonds_CFC273.3_Menuiser
+ ie courante agencement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

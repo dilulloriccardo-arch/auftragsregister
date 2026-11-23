@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72ff8dfb-a1e4-4f73-a705-223ff25e5d2e-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270202T160000Z
+SUMMARY:Scadenza: Formation des équipes de cuisine des établissements de 
+ restauration collective de l’Etat de Vaud en gestion directe
+DESCRIPTION:Ente pubblico: Etat de vaud - Département de l'agriculture\, d
+ e la durabilité\, du climat et du numérique - Secrétariat général - O
+ ffice cantonal de la durabilité et du climat\nScadenza: 02.02.2027\, 17:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/72ff8dfb-a1e4-4f73
+ -a705-223ff25e5d2e/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/72ff8dfb-a1e4-4f73-a705-223ff25e5d2e
+URL:https://auftragsregister.ch/it/auftrag/72ff8dfb-a1e4-4f73-a705-223ff25e
+ 5d2e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Formation des équipes de cuisine des établissements
+  de restauration collective de l’Etat de Vaud en gestion directe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

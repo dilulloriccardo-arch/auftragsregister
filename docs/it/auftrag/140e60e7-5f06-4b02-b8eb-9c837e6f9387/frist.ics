@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:140e60e7-5f06-4b02-b8eb-9c837e6f9387-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Scadenza: Assainissement et agrandissement de la caserne des pompie
+ rs d’Estavayer - CFC 211 Travaux de l'entreprise de maçonnerie
+DESCRIPTION:Ente pubblico: Commune d'Estavayer - Service des bâtiments ( O
+ CSA o charrière architectes SA)\nScadenza: 22.01.2027\, 12:00\nNel regist
+ ro: https://auftragsregister.ch/it/auftrag/140e60e7-5f06-4b02-b8eb-9c837e6
+ f9387/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/14
+ 0e60e7-5f06-4b02-b8eb-9c837e6f9387
+URL:https://auftragsregister.ch/it/auftrag/140e60e7-5f06-4b02-b8eb-9c837e6f
+ 9387/
+LOCATION:Estavayer-le-Lac
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Assainissement et agrandissement de la caserne des po
+ mpiers d’Estavayer - CFC 211 Travaux de l'entreprise de maçonnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

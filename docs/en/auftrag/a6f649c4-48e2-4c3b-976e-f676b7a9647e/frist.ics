@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6f649c4-48e2-4c3b-976e-f676b7a9647e-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Submission deadline: EPFL Contrats cadres installateurs électricie
+ ns
+DESCRIPTION:Public buyer: EPFL VPF ACHATS\nSubmission deadline: 25 Jan 20
+ 27\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/a6f649
+ c4-48e2-4c3b-976e-f676b7a9647e/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/a6f649c4-48e2-4c3b-976e-f676b7a9647e
+URL:https://auftragsregister.ch/en/auftrag/a6f649c4-48e2-4c3b-976e-f676b7a9
+ 647e/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: EPFL Contrats cadres installateurs électr
+ iciens
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

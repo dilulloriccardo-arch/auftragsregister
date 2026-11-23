@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d5a7c2d9-1613-495e-8ccf-0ba8010c232b-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261218T110000Z
+SUMMARY:Submission deadline: Neubau Blockrampe als Ersatz der Sohlschwellen
+  KW Tinizong
+DESCRIPTION:Public buyer: Elektrizitätswerk der Stadt Zürich (ewz)\nSubmi
+ ssion deadline: 18 Dec 2026\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/d5a7c2d9-1613-495e-8ccf-0ba8010c232b/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/d5a7c2d9-1613-495e-8ccf-0ba
+ 8010c232b
+URL:https://auftragsregister.ch/en/auftrag/d5a7c2d9-1613-495e-8ccf-0ba8010c
+ 232b/
+LOCATION:Tinizong
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Blockrampe als Ersatz der Sohlschwe
+ llen KW Tinizong
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

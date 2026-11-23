@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4172d283-5cf3-47f9-9d3d-723a44f44562-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Délai de remise : Ausbau Waldstrasse Giebel - Sulzi\, 3765 Oberw
+ il i.S.
+DESCRIPTION:Acheteur public : Bäuertgemeinde Oberwil i.S.\, Waldwegantei
+ ler Bannwald - Neuenberg (N11 Bauingenieure GmbH)\nDélai de remise : 22
+ .12.2026\nDans le registre : https://auftragsregister.ch/fr/auftrag/4172
+ d283-5cf3-47f9-9d3d-723a44f44562/\nPublication officielle : https://www.
+ simap.ch/fr/project-detail/4172d283-5cf3-47f9-9d3d-723a44f44562
+URL:https://auftragsregister.ch/fr/auftrag/4172d283-5cf3-47f9-9d3d-723a44f4
+ 4562/
+LOCATION:Oberwil i.S.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausbau Waldstrasse Giebel - Sulzi\, 3765 O
+ berwil i.S.
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

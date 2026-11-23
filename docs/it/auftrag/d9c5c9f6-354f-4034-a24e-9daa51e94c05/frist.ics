@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d9c5c9f6-354f-4034-a24e-9daa51e94c05-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261211T100000Z
+SUMMARY:Scadenza: Flachdachsanierung des Schulhaus Risi Schulhauses Risi an
+  der Ammerswilerstrasse 2\, 5605 Dottikon\, sowie der Bibliothek/Vereinsra
+ um an der Bahnhofstrasse 28\, 5605 Dottikon.
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Dottikon\nScadenza: 11.12.2026
+ \, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/d9c5c9f6-35
+ 4f-4034-a24e-9daa51e94c05/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/d9c5c9f6-354f-4034-a24e-9daa51e94c05
+URL:https://auftragsregister.ch/it/auftrag/d9c5c9f6-354f-4034-a24e-9daa51e9
+ 4c05/
+LOCATION:Dottikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Flachdachsanierung des Schulhaus Risi Schulhauses Ris
+ i an der Ammerswilerstrasse 2\, 5605 Dottikon\, sowie der Bibliothek/Verei
+ nsraum an der Bahnhofstrasse 28\, 5605 Dottikon.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

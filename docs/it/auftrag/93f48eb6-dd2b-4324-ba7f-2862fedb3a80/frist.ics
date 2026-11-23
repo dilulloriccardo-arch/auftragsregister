@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:93f48eb6-dd2b-4324-ba7f-2862fedb3a80-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270103T190000Z
+SUMMARY:Scadenza: Achat moissonneuse-batteuse
+DESCRIPTION:Ente pubblico: Etablissement de détention fribourgeois EDFR\nS
+ cadenza: 03.01.2027\, 20:00\nNel registro: https://auftragsregister.ch/it/
+ auftrag/93f48eb6-dd2b-4324-ba7f-2862fedb3a80/\nPubblicazione ufficiale: ht
+ tps://www.simap.ch/it/project-detail/93f48eb6-dd2b-4324-ba7f-2862fedb3a80
+URL:https://auftragsregister.ch/it/auftrag/93f48eb6-dd2b-4324-ba7f-2862fedb
+ 3a80/
+LOCATION:Sugiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Achat moissonneuse-batteuse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

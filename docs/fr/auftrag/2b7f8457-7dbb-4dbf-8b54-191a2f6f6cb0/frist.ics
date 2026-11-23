@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2b7f8457-7dbb-4dbf-8b54-191a2f6f6cb0-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270118T140000Z
+SUMMARY:Délai de remise : UNIVERS_Nouveau bâtiment pour l'université d
+ e Neuchâtel _ Espace Tilo-Frey\, Neuchâtel _ Installations électriques 
+ courant fort et courant faible _ CFC 232 / CFC 236
+DESCRIPTION:Acheteur public : Service des bâtiments de l'Etat de Neuchâ
+ tel\nDélai de remise : 18.01.2027\, 15 h 00\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/2b7f8457-7dbb-4dbf-8b54-191a2f6f6cb0
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/2b7f8
+ 457-7dbb-4dbf-8b54-191a2f6f6cb0
+URL:https://auftragsregister.ch/fr/auftrag/2b7f8457-7dbb-4dbf-8b54-191a2f6f
+ 6cb0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : UNIVERS_Nouveau bâtiment pour l'universit
+ é de Neuchâtel _ Espace Tilo-Frey\, Neuchâtel _ Installations électriq
+ ues courant fort et courant faible _ CFC 232 / CFC 236
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c80b3452-7cd0-4ed7-8d04-1229e53478a8-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Scadenza: Baumeisterarbeiten Instandsetzung Lehnenbrücken Stinkhal
+ tiwald 2\, Reichenbach
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 11.12.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/c80b3452-7
+ cd0-4ed7-8d04-1229e53478a8/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/c80b3452-7cd0-4ed7-8d04-1229e53478a8
+URL:https://auftragsregister.ch/it/auftrag/c80b3452-7cd0-4ed7-8d04-1229e534
+ 78a8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Baumeisterarbeiten Instandsetzung Lehnenbrücken Stin
+ khaltiwald 2\, Reichenbach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

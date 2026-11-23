@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92225684-cfa4-43fb-8d00-5f5dd40a65a6-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261210T140000Z
+SUMMARY:Eingabefrist: Sanierung Bürkihof\, inkl. Werkleitungen
+DESCRIPTION:Auftraggeber: Gemeinde Berikon\nEingabefrist: 10.12.2026\, 15.0
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/92225684-cfa4-
+ 43fb-8d00-5f5dd40a65a6/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/92225684-cfa4-43fb-8d00-5f5dd40a65a6
+URL:https://auftragsregister.ch/de/auftrag/92225684-cfa4-43fb-8d00-5f5dd40a
+ 65a6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Bürkihof\, inkl. Werkleitungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

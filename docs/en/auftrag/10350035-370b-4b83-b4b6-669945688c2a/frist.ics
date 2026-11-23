@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10350035-370b-4b83-b4b6-669945688c2a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261218T140000Z
+SUMMARY:Submission deadline: Ersatz der Multifunktionsgeräte in der Gemein
+ deverwaltung und in den Schulen
+DESCRIPTION:Public buyer: Gemeindeverwaltung Worb\nSubmission deadline: 18
+  Dec 2026\, 15:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/10350035-370b-4b83-b4b6-669945688c2a/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/10350035-370b-4b83-b4b6-669945688c2a
+URL:https://auftragsregister.ch/en/auftrag/10350035-370b-4b83-b4b6-66994568
+ 8c2a/
+LOCATION:Worb
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ersatz der Multifunktionsgeräte in der Ge
+ meindeverwaltung und in den Schulen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

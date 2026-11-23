@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e0064a7-0044-4089-bdca-bbf8746babb8-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270114T140000Z
+SUMMARY:Délai de remise : Vêtements de travail OPC
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 14.01.2027\, 15 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/3e0064a7-0044-4089-bdca-bbf8746babb8/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/3e0064a7-0044-4089-bdca-
+ bbf8746babb8
+URL:https://auftragsregister.ch/fr/auftrag/3e0064a7-0044-4089-bdca-bbf8746b
+ abb8/
+LOCATION:diverse Standorte
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Vêtements de travail OPC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

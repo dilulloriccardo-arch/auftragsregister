@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:66f87b24-6cc6-41d1-b709-3b8997bce282-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261214T140000Z
+SUMMARY:Scadenza: Digitalisierung & Sharing der SBB Strassenfahrzeuge
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB\, Informatik Ein
+ kauf\nScadenza: 14.12.2026\, 15:00\nNel registro: https://auftragsregister
+ .ch/it/auftrag/66f87b24-6cc6-41d1-b709-3b8997bce282/\nPubblicazione uffici
+ ale: https://www.simap.ch/it/project-detail/66f87b24-6cc6-41d1-b709-3b8997
+ bce282
+URL:https://auftragsregister.ch/it/auftrag/66f87b24-6cc6-41d1-b709-3b8997bc
+ e282/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Digitalisierung & Sharing der SBB Strassenfahrzeuge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

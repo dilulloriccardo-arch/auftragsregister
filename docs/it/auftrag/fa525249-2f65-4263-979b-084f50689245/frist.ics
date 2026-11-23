@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa525249-2f65-4263-979b-084f50689245-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270128T103000Z
+SUMMARY:Scadenza: Intelligentes Messsystem iMS - Zuzwil
+DESCRIPTION:Ente pubblico: Politische Gemeinde Zuzwil (IBG Engineering AG)\
+ nScadenza: 28.01.2027\, 11:30\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/fa525249-2f65-4263-979b-084f50689245/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/fa525249-2f65-4263-979b-084f5068924
+ 5
+URL:https://auftragsregister.ch/it/auftrag/fa525249-2f65-4263-979b-084f5068
+ 9245/
+LOCATION:Zuzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Intelligentes Messsystem iMS - Zuzwil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

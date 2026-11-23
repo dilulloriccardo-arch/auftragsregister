@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2efe5d03-a873-4cdf-a7b0-405021c661cc-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261218T110000Z
+SUMMARY:Scadenza: Compute4SBB II - Data Center
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB\, Informatik Ein
+ kauf\nScadenza: 18.12.2026\, 12:00\nNel registro: https://auftragsregister
+ .ch/it/auftrag/2efe5d03-a873-4cdf-a7b0-405021c661cc/\nPubblicazione uffici
+ ale: https://www.simap.ch/it/project-detail/2efe5d03-a873-4cdf-a7b0-405021
+ c661cc
+URL:https://auftragsregister.ch/it/auftrag/2efe5d03-a873-4cdf-a7b0-405021c6
+ 61cc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Compute4SBB II - Data Center
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

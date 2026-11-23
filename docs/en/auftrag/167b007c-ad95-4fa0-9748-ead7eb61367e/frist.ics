@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:167b007c-ad95-4fa0-9748-ead7eb61367e-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Submission deadline: MP 3454 Iris von Roten-Platz - Baumeister- und
+  Tiefbauarbeiten
+DESCRIPTION:Public buyer: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nSubmis
+ sion deadline: 4 Jan 2027\, 12:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/167b007c-ad95-4fa0-9748-ead7eb61367e/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/167b007c-ad95-4fa0-9748-ead7e
+ b61367e
+URL:https://auftragsregister.ch/en/auftrag/167b007c-ad95-4fa0-9748-ead7eb61
+ 367e/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP 3454 Iris von Roten-Platz - Baumeister-
+  und Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

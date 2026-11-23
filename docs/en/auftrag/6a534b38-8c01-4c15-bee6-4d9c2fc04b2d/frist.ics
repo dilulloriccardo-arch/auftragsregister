@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6a534b38-8c01-4c15-bee6-4d9c2fc04b2d-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261211T130000Z
+SUMMARY:Submission deadline: K23 Isenthalerstrasse\, Kehrtunnel bis Chäppe
+ licher\, Fahrzeugrückhaltesystem
+DESCRIPTION:Public buyer: Amt für Tiefbau Uri\nSubmission deadline: 11 De
+ c 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag/6
+ a534b38-8c01-4c15-bee6-4d9c2fc04b2d/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/6a534b38-8c01-4c15-bee6-4d9c2fc04b2d
+URL:https://auftragsregister.ch/en/auftrag/6a534b38-8c01-4c15-bee6-4d9c2fc0
+ 4b2d/
+LOCATION:Isenthal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: K23 Isenthalerstrasse\, Kehrtunnel bis Ch
+ äppelicher\, Fahrzeugrückhaltesystem
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

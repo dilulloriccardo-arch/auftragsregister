@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:387b763b-dde3-44f8-9441-b916fee24790-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Scadenza: Ersatz Röntgengeräte
+DESCRIPTION:Ente pubblico: Kantonsspital Winterthur - Supply Chain Manageme
+ nt\nScadenza: 07.01.2027\, 11:00\nNel registro: https://auftragsregister.c
+ h/it/auftrag/387b763b-dde3-44f8-9441-b916fee24790/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/387b763b-dde3-44f8-9441-b916fee2
+ 4790
+URL:https://auftragsregister.ch/it/auftrag/387b763b-dde3-44f8-9441-b916fee2
+ 4790/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatz Röntgengeräte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

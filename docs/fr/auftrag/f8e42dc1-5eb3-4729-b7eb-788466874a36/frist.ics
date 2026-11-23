@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f8e42dc1-5eb3-4729-b7eb-788466874a36-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Délai de remise : P+R Grand Saconnex - Lot 6 Ferblanterie / Couv
+ erture
+DESCRIPTION:Acheteur public : Fondation des Parkings - Service des achats
+ \nDélai de remise : 04.01.2027\, 12 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/f8e42dc1-5eb3-4729-b7eb-788466874a36/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/f8e42dc1
+ -5eb3-4729-b7eb-788466874a36
+URL:https://auftragsregister.ch/fr/auftrag/f8e42dc1-5eb3-4729-b7eb-78846687
+ 4a36/
+LOCATION:Voie-des-Traz\, 6 1218 Grand Saconnex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : P+R Grand Saconnex - Lot 6 Ferblanterie / 
+ Couverture
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

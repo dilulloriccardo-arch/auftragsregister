@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f732b33-8ad6-420a-8dc0-d987fa4166ca-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270204T225900Z
+SUMMARY:Submission deadline: MP-120065\, Erhaltungsprojekt Osttangente Base
+ l / Bauleitung Bau (AS City)
+DESCRIPTION:Public buyer: Eidgenössisches Departement für Umwelt\, Verkeh
+ r\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung S
+ trasseninfrastruktur-Ost - F3\nSubmission deadline: 4 Feb 2027\, 23:59\n
+ In the register: https://auftragsregister.ch/en/auftrag/5f732b33-8ad6-420a
+ -8dc0-d987fa4166ca/\nOfficial publication: https://www.simap.ch/en/project
+ -detail/5f732b33-8ad6-420a-8dc0-d987fa4166ca
+URL:https://auftragsregister.ch/en/auftrag/5f732b33-8ad6-420a-8dc0-d987fa41
+ 66ca/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-120065\, Erhaltungsprojekt Osttangente 
+ Basel / Bauleitung Bau (AS City)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

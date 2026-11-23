@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:65f725ff-5ad6-4aba-88cb-42fd0a28b3a7-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270121T140000Z
+SUMMARY:Submission deadline: BKP 421 Umgebungsarbeiten
+DESCRIPTION:Public buyer: Schule Bürglen (FoBu Arch.)\nSubmission deadline
+ : 21 Jan 2027\, 15:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/65f725ff-5ad6-4aba-88cb-42fd0a28b3a7/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/65f725ff-5ad6-4aba-88cb-42fd0a28b3a7
+URL:https://auftragsregister.ch/en/auftrag/65f725ff-5ad6-4aba-88cb-42fd0a28
+ b3a7/
+LOCATION:Bürglen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 421 Umgebungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

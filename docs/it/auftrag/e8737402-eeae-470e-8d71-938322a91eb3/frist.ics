@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8737402-eeae-470e-8d71-938322a91eb3-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270106T150000Z
+SUMMARY:Scadenza: Householder Symposium XXIII @EPFL
+DESCRIPTION:Ente pubblico: EPFL - Service des Achats\nScadenza: 06.01.2027\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/e8737402-eea
+ e-470e-8d71-938322a91eb3/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/e8737402-eeae-470e-8d71-938322a91eb3
+URL:https://auftragsregister.ch/it/auftrag/e8737402-eeae-470e-8d71-938322a9
+ 1eb3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Householder Symposium XXIII @EPFL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

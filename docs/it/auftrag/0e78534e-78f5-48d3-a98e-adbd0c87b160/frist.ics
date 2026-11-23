@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e78534e-78f5-48d3-a98e-adbd0c87b160-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261223T160000Z
+SUMMARY:Scadenza: Gesamtsanierung Schulanlage Pestalozzi Stans\, BKP 221.1 
+ Fenster aus Holz und Holz-Metall
+DESCRIPTION:Ente pubblico: Politische Gemeinde Stans\nScadenza: 23.12.2026\
+ , 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/0e78534e-78f
+ 5-48d3-a98e-adbd0c87b160/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/0e78534e-78f5-48d3-a98e-adbd0c87b160
+URL:https://auftragsregister.ch/it/auftrag/0e78534e-78f5-48d3-a98e-adbd0c87
+ b160/
+LOCATION:Stans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gesamtsanierung Schulanlage Pestalozzi Stans\, BKP 22
+ 1.1 Fenster aus Holz und Holz-Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

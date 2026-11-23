@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:125471aa-d01a-4194-a439-94dbc9e5534b-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270312T140000Z
+SUMMARY:Eingabefrist: AS35\, Wendegleis Aesch und ZFZ inkl. FbE Aesch Münc
+ henstein - Aesch\, Projekt-Nr. 1161146 / 1164980
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Infrastruktur 
+ – Einkauf\, Supply Chain und Produktion\, Einkauf Bauprojekte Region Mit
+ te\nEingabefrist: 12.03.2027\, 15.00 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/125471aa-d01a-4194-a439-94dbc9e5534b/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/125471aa-d01a-4194-a439-94d
+ bc9e5534b
+URL:https://auftragsregister.ch/de/auftrag/125471aa-d01a-4194-a439-94dbc9e5
+ 534b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AS35\, Wendegleis Aesch und ZFZ inkl. FbE Aesch M
+ ünchenstein - Aesch\, Projekt-Nr. 1161146 / 1164980
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:91888210-7f90-4bb8-bbfa-ab6de4ccab27-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:2
+DTSTART:20270402T130000Z
+SUMMARY:Submission deadline: AS2035\; Doppelspurausbau und ZFZ\, Dübendorf
+ -Uster-Aathal
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB\, Infrastruktur 
+ – Einkauf\, Supply Chain und Produktion\, Einkauf Bau\, Region Ostprojek
+ te\nSubmission deadline: 2 Apr 2027\, 15:00\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/91888210-7f90-4bb8-bbfa-ab6de4ccab27/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/91888210-7f90-4bb8-
+ bbfa-ab6de4ccab27
+URL:https://auftragsregister.ch/en/auftrag/91888210-7f90-4bb8-bbfa-ab6de4cc
+ ab27/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: AS2035\; Doppelspurausbau und ZFZ\, Düben
+ dorf-Uster-Aathal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

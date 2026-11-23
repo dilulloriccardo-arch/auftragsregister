@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac1f9157-bcca-4443-b494-bb03bd8b3fdf-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Scadenza: Externe Dienstleistungen zur Prüfung bei Bau- und Planun
+ gsvorhaben
+DESCRIPTION:Ente pubblico: Abteilung Landschaft und Gewässer (ALG)\nScaden
+ za: 23.12.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/ac1f9157-bcca-4443-b494-bb03bd8b3fdf/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/ac1f9157-bcca-4443-b494-bb03bd8b3fdf
+URL:https://auftragsregister.ch/it/auftrag/ac1f9157-bcca-4443-b494-bb03bd8b
+ 3fdf/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Externe Dienstleistungen zur Prüfung bei Bau- und Pl
+ anungsvorhaben
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

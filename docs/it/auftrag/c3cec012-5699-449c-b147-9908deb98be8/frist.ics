@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c3cec012-5699-449c-b147-9908deb98be8-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Scadenza: Assainissement de la Maison du Concert / 244 Installation
+ s de ventilation
+DESCRIPTION:Ente pubblico: Ville de Neuchâtel - Service du patrimoine bât
+ i\nScadenza: 08.12.2026\, 12:00\nNel registro: https://auftragsregister.ch
+ /it/auftrag/c3cec012-5699-449c-b147-9908deb98be8/\nPubblicazione ufficiale
+ : https://www.simap.ch/it/project-detail/c3cec012-5699-449c-b147-9908deb98
+ be8
+URL:https://auftragsregister.ch/it/auftrag/c3cec012-5699-449c-b147-9908deb9
+ 8be8/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Assainissement de la Maison du Concert / 244 Installa
+ tions de ventilation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

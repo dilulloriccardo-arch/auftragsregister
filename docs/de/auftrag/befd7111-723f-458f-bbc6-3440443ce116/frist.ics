@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:befd7111-723f-458f-bbc6-3440443ce116-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Eingabefrist: Microscope pour Imagerie Rapide et Volumétrique de H
+ aute Résolution (MIRV-HR)
+DESCRIPTION:Auftraggeber: UNIL-Servie de la Recherche\nEingabefrist: 11.01.
+ 2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/bef
+ d7111-723f-458f-bbc6-3440443ce116/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/befd7111-723f-458f-bbc6-3440443ce116
+URL:https://auftragsregister.ch/de/auftrag/befd7111-723f-458f-bbc6-3440443c
+ e116/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Microscope pour Imagerie Rapide et Volumétrique 
+ de Haute Résolution (MIRV-HR)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d5c8071c-7581-452c-b9a1-57a8cabf9ccb-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261208T100000Z
+SUMMARY:Délai de remise : Zerstörungsfreie Werkstoffprüfung an Fahrwer
+ kskomponenten
+DESCRIPTION:Acheteur public : Basler Verkehrs-Betriebe (BVB)\nDélai de r
+ emise : 08.12.2026\, 11 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/d5c8071c-7581-452c-b9a1-57a8cabf9ccb/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/d5c8071c-7581-452c-b9
+ a1-57a8cabf9ccb
+URL:https://auftragsregister.ch/fr/auftrag/d5c8071c-7581-452c-b9a1-57a8cabf
+ 9ccb/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Zerstörungsfreie Werkstoffprüfung an Fah
+ rwerkskomponenten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

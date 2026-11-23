@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:937a28bf-a9fe-4ada-b578-cae9dc52ed08-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270127T110000Z
+SUMMARY:Submission deadline: IT5050.1019 / Rechenzentrumsstandort 4
+DESCRIPTION:Public buyer: Amt für Informatik und Organisation (AIO)\nSubmi
+ ssion deadline: 27 Jan 2027\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/937a28bf-a9fe-4ada-b578-cae9dc52ed08/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/937a28bf-a9fe-4ada-b578-cae
+ 9dc52ed08
+URL:https://auftragsregister.ch/en/auftrag/937a28bf-a9fe-4ada-b578-cae9dc52
+ ed08/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: IT5050.1019 / Rechenzentrumsstandort 4
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

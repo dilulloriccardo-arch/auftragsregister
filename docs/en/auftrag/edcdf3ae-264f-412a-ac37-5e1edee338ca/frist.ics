@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edcdf3ae-264f-412a-ac37-5e1edee338ca-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Submission deadline: Sistemazione esterna Centro sportivo e risanam
+ ento Via Centro sportivo Grono
+DESCRIPTION:Public buyer: Comune politico di Grono\nSubmission deadline: 14
+  Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/edcdf3ae-264f-412a-ac37-5e1edee338ca/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/edcdf3ae-264f-412a-ac37-5e1edee338ca
+URL:https://auftragsregister.ch/en/auftrag/edcdf3ae-264f-412a-ac37-5e1edee3
+ 38ca/
+LOCATION:Grono
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sistemazione esterna Centro sportivo e ris
+ anamento Via Centro sportivo Grono
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

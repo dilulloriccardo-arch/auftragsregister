@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:65f725ff-5ad6-4aba-88cb-42fd0a28b3a7-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270121T140000Z
+SUMMARY:Scadenza: BKP 421 Umgebungsarbeiten
+DESCRIPTION:Ente pubblico: Schule Bürglen (FoBu Arch.)\nScadenza: 21.01.20
+ 27\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/65f725ff-
+ 5ad6-4aba-88cb-42fd0a28b3a7/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/65f725ff-5ad6-4aba-88cb-42fd0a28b3a7
+URL:https://auftragsregister.ch/it/auftrag/65f725ff-5ad6-4aba-88cb-42fd0a28
+ b3a7/
+LOCATION:Bürglen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 421 Umgebungsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

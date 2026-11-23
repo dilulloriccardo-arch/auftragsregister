@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4a4a4415-ba04-4ce9-8a11-1996921c981f-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Délai de remise : P22.0281 OCRN Münchenbuchsee - Prestations de
+  construction CFC 061 Routes et CFC 063 Voies navigables
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 29.01.2027\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/4a4a4415-ba04-4ce9-8a11-1
+ 996921c981f/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/4a4a4415-ba04-4ce9-8a11-1996921c981f
+URL:https://auftragsregister.ch/fr/auftrag/4a4a4415-ba04-4ce9-8a11-1996921c
+ 981f/
+LOCATION:Münchenbuchsee
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : P22.0281 OCRN Münchenbuchsee - Prestation
+ s de construction CFC 061 Routes et CFC 063 Voies navigables
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

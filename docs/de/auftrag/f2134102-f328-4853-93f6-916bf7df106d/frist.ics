@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f2134102-f328-4853-93f6-916bf7df106d-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: Werkhof Beringen - Montagebau in Holz
+DESCRIPTION:Auftraggeber: Gemeinde Beringen\nEingabefrist: 14.12.2026\, 12.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/f2134102-f328
+ -4853-93f6-916bf7df106d/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/f2134102-f328-4853-93f6-916bf7df106d
+URL:https://auftragsregister.ch/de/auftrag/f2134102-f328-4853-93f6-916bf7df
+ 106d/
+LOCATION:Beringen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Werkhof Beringen - Montagebau in Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

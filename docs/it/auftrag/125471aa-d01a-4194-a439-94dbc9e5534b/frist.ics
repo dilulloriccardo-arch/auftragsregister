@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:125471aa-d01a-4194-a439-94dbc9e5534b-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270312T140000Z
+SUMMARY:Scadenza: AS35\, Wendegleis Aesch und ZFZ inkl. FbE Aesch Münchens
+ tein - Aesch\, Projekt-Nr. 1161146 / 1164980
+DESCRIPTION:Ente pubblico: Schweizerische Bundesbahnen SBB\, Infrastruktur 
+ – Einkauf\, Supply Chain und Produktion\, Einkauf Bauprojekte Region Mit
+ te\nScadenza: 12.03.2027\, 15:00\nNel registro: https://auftragsregister.c
+ h/it/auftrag/125471aa-d01a-4194-a439-94dbc9e5534b/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/125471aa-d01a-4194-a439-94dbc9e5
+ 534b
+URL:https://auftragsregister.ch/it/auftrag/125471aa-d01a-4194-a439-94dbc9e5
+ 534b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AS35\, Wendegleis Aesch und ZFZ inkl. FbE Aesch Münc
+ henstein - Aesch\, Projekt-Nr. 1161146 / 1164980
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb13fafa-d8ef-4922-a470-8da2ca11c859-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270128T150000Z
+SUMMARY:Délai de remise : USZ Campus MITTE 1|2 / CVC 273.18 Portes - paq
+ uet 8 (Trappes de visite)
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 28.01.2027\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/bb13fafa-d8ef-4922-a470-8da2ca11c859/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/bb13fafa-d8ef-4922-a470-
+ 8da2ca11c859
+URL:https://auftragsregister.ch/fr/auftrag/bb13fafa-d8ef-4922-a470-8da2ca11
+ c859/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : USZ Campus MITTE 1|2 / CVC 273.18 Portes -
+  paquet 8 (Trappes de visite)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

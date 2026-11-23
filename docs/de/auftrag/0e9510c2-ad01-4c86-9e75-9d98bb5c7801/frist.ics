@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e9510c2-ad01-4c86-9e75-9d98bb5c7801-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Eingabefrist: OGER FLOR l 13606 l BKP 261-01 Aufzug
+DESCRIPTION:Auftraggeber: Hochbauamt\, Baubereich B\nEingabefrist: 14.01.20
+ 27\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0e951
+ 0c2-ad01-4c86-9e75-9d98bb5c7801/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/0e9510c2-ad01-4c86-9e75-9d98bb5c7801
+URL:https://auftragsregister.ch/de/auftrag/0e9510c2-ad01-4c86-9e75-9d98bb5c
+ 7801/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: OGER FLOR l 13606 l BKP 261-01 Aufzug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

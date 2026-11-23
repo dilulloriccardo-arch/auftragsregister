@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:371ea965-dbd1-4d57-9708-4ec8a1a2f711-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270108T090000Z
+SUMMARY:Scadenza: 281.0 Unterlagsböden - Neubau Primarschule mit Turnhalle
+  Erlenstrasse\, Oberglatt
+DESCRIPTION:Ente pubblico: Gemeinde Oberglatt (Anderegg Partner AG)\nScaden
+ za: 08.01.2027\, 10:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/371ea965-dbd1-4d57-9708-4ec8a1a2f711/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/371ea965-dbd1-4d57-9708-4ec8a1a2f711
+URL:https://auftragsregister.ch/it/auftrag/371ea965-dbd1-4d57-9708-4ec8a1a2
+ f711/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 281.0 Unterlagsböden - Neubau Primarschule mit Turnh
+ alle Erlenstrasse\, Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3feeff6-b4ae-4673-877a-1423c4ced793-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270112T110000Z
+SUMMARY:Submission deadline: BKP 233.2 Lieferung Leuchten und Lampen Foodha
+ ll
+DESCRIPTION:Public buyer: Flughafen Zürich AG - ELP\nSubmission deadline: 
+ 12 Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/b3feeff6-b4ae-4673-877a-1423c4ced793/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/b3feeff6-b4ae-4673-877a-1423c4ced793
+URL:https://auftragsregister.ch/en/auftrag/b3feeff6-b4ae-4673-877a-1423c4ce
+ d793/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 233.2 Lieferung Leuchten und Lampen Fo
+ odhall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

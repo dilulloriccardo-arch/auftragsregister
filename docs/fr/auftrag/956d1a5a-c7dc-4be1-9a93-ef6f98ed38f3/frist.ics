@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:956d1a5a-c7dc-4be1-9a93-ef6f98ed38f3-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270128T150000Z
+SUMMARY:Délai de remise : FORUM UZH | Tabliers anti-fumée CFC 276-01\, 
+ WG16
+DESCRIPTION:Acheteur public : Kanton Zürich Hochbauaumt\, Baubereich D\n
+ Délai de remise : 28.01.2027\, 16 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/956d1a5a-c7dc-4be1-9a93-ef6f98ed38f3/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/956d1a5a-c
+ 7dc-4be1-9a93-ef6f98ed38f3
+URL:https://auftragsregister.ch/fr/auftrag/956d1a5a-c7dc-4be1-9a93-ef6f98ed
+ 38f3/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : FORUM UZH | Tabliers anti-fumée CFC 276-0
+ 1\, WG16
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

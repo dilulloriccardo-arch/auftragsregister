@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:42191c94-6410-407b-bfcd-237d2809f161-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Délai de remise : Retrofit lampes fluorescentes en LED (2385) In
+ stallations électriques
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 16.12.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/42191c94-6410-407b-bfcd-237d2809f16
+ 1/\nPublication officielle : https://www.simap.ch/fr/project-detail/4219
+ 1c94-6410-407b-bfcd-237d2809f161
+URL:https://auftragsregister.ch/fr/auftrag/42191c94-6410-407b-bfcd-237d2809
+ f161/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Retrofit lampes fluorescentes en LED (2385
+ ) Installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

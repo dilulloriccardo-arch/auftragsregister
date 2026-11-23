@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f77736f4-906d-4478-b9c3-564d71af691e-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270126T160000Z
+SUMMARY:Scadenza: Konzessionen\, Neuvergabe Plakatierung
+DESCRIPTION:Ente pubblico: Fachstelle Beschaffungswesen Stadt Bern\nScadenz
+ a: 26.01.2027\, 17:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/f77736f4-906d-4478-b9c3-564d71af691e/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/f77736f4-906d-4478-b9c3-564d71af691e
+URL:https://auftragsregister.ch/it/auftrag/f77736f4-906d-4478-b9c3-564d71af
+ 691e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Konzessionen\, Neuvergabe Plakatierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

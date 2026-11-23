@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25bfd0c9-bdd4-4485-8c02-f1dcdf221bdb-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261214T153000Z
+SUMMARY:Délai de remise : BRENAZ : Création de postes de formation atel
+ ier cuisine
+DESCRIPTION:Acheteur public : Office cantonal des bâtiments (OCBA)\nDél
+ ai de remise : 14.12.2026\, 16 h 30\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/25bfd0c9-bdd4-4485-8c02-f1dcdf221bdb/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/25bfd0c9-bdd4-
+ 4485-8c02-f1dcdf221bdb
+URL:https://auftragsregister.ch/fr/auftrag/25bfd0c9-bdd4-4485-8c02-f1dcdf22
+ 1bdb/
+LOCATION:Puplinge
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BRENAZ : Création de postes de formation 
+ atelier cuisine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

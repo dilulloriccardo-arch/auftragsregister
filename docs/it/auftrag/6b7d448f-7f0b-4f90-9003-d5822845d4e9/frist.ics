@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b7d448f-7f0b-4f90-9003-d5822845d4e9-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261216T033000Z
+SUMMARY:Scadenza: 10132005028 - PTE PV - CO Foron - Appel d'offres Etanché
+ ité / Ferblanterie
+DESCRIPTION:Ente pubblico: Etat de Genève\, Département du territoire - D
+ T\, Office cantonal des bâtiments\nScadenza: 16.12.2026\, 04:30\nNel regi
+ stro: https://auftragsregister.ch/it/auftrag/6b7d448f-7f0b-4f90-9003-d5822
+ 845d4e9/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/
+ 6b7d448f-7f0b-4f90-9003-d5822845d4e9
+URL:https://auftragsregister.ch/it/auftrag/6b7d448f-7f0b-4f90-9003-d5822845
+ d4e9/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 10132005028 - PTE PV - CO Foron - Appel d'offres Etan
+ chéité / Ferblanterie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

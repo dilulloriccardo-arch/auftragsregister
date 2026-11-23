@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:79d52671-319e-4286-8e51-42c7ad37aa16-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270114T090000Z
+SUMMARY:Scadenza: Acquisition de compteurs (GRID) d’énergie électrique 
+ industriel pour montage en rack 19’’
+DESCRIPTION:Ente pubblico: Services industriels de Genève (SIG) - Directio
+ n Achats\nScadenza: 14.01.2027\, 10:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/79d52671-319e-4286-8e51-42c7ad37aa16/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/79d52671-319e-4286-8e51-42
+ c7ad37aa16
+URL:https://auftragsregister.ch/it/auftrag/79d52671-319e-4286-8e51-42c7ad37
+ aa16/
+LOCATION:Le Lignon (GE)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Acquisition de compteurs (GRID) d’énergie électri
+ que industriel pour montage en rack 19’’
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

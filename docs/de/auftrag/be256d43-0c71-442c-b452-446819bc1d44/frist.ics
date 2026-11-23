@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be256d43-0c71-442c-b452-446819bc1d44-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T225900Z
+SUMMARY:Eingabefrist: Strassensanierung Schwandenstrasse\, Sigriswil
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Sigriswil\nEingabefrist: 13.01.
+ 2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/be2
+ 56d43-0c71-442c-b452-446819bc1d44/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/be256d43-0c71-442c-b452-446819bc1d44
+URL:https://auftragsregister.ch/de/auftrag/be256d43-0c71-442c-b452-446819bc
+ 1d44/
+LOCATION:Schwanden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Strassensanierung Schwandenstrasse\, Sigriswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

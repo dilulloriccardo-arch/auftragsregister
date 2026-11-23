@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:02ea5839-9582-4cef-a269-faf64efa35a5-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Eingabefrist: ARA Thurau\, Ausrüstung Gasproduktion
+DESCRIPTION:Auftraggeber: Abwasserverband Thurau\nEingabefrist: 29.01.2027\
+ , 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/02ea5839
+ -9582-4cef-a269-faf64efa35a5/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/02ea5839-9582-4cef-a269-faf64efa35a5
+URL:https://auftragsregister.ch/de/auftrag/02ea5839-9582-4cef-a269-faf64efa
+ 35a5/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ARA Thurau\, Ausrüstung Gasproduktion
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

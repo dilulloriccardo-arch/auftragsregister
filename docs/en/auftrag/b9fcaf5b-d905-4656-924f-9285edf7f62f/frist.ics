@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b9fcaf5b-d905-4656-924f-9285edf7f62f-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270107T110000Z
+SUMMARY:Submission deadline: Lindenbachstrasse Tiefbauarbeiten
+DESCRIPTION:Public buyer: DIB - Elektrizitätswerk der Stadt Zürich (ewz)\
+ nSubmission deadline: 7 Jan 2027\, 12:00\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/b9fcaf5b-d905-4656-924f-9285edf7f62f/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/b9fcaf5b-d905-4656-924
+ f-9285edf7f62f
+URL:https://auftragsregister.ch/en/auftrag/b9fcaf5b-d905-4656-924f-9285edf7
+ f62f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Lindenbachstrasse Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

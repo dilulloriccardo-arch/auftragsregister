@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2b3210fe-3790-467c-a865-17b8ede25146-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Submission deadline: Neubau Hauptsitz EWN: Pfähle BKP 171
+DESCRIPTION:Public buyer: Kantonales Elektrizitätswerk Nidwalden\nSubmissi
+ on deadline: 14 Dec 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/2b3210fe-3790-467c-a865-17b8ede25146/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/2b3210fe-3790-467c-a865-17b8ed
+ e25146
+URL:https://auftragsregister.ch/en/auftrag/2b3210fe-3790-467c-a865-17b8ede2
+ 5146/
+LOCATION:Buochs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Hauptsitz EWN: Pfähle BKP 171
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

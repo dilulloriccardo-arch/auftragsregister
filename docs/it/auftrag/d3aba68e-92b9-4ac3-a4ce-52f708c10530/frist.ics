@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3aba68e-92b9-4ac3-a4ce-52f708c10530-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261204T090000Z
+SUMMARY:Scadenza: Amriswil\, Poststrasse Süd\, Werkleitungen und Trafostat
+ ion
+DESCRIPTION:Ente pubblico: Regio Energie Amriswil (REA)\nScadenza: 04.12.20
+ 26\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/d3aba68e-
+ 92b9-4ac3-a4ce-52f708c10530/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/d3aba68e-92b9-4ac3-a4ce-52f708c10530
+URL:https://auftragsregister.ch/it/auftrag/d3aba68e-92b9-4ac3-a4ce-52f708c1
+ 0530/
+LOCATION:Amriswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Amriswil\, Poststrasse Süd\, Werkleitungen und Trafo
+ station
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

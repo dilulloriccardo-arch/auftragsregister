@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d9e7328f-cedb-4bbd-b763-bb7af5d25f86-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270115T100000Z
+SUMMARY:Eingabefrist: STEP Echallens - CFC 3 - ELME81 - Vannes à tiroir et
+  papillon + clapets anti-retour
+DESCRIPTION:Auftraggeber: ASET / Association intercommunale STEP Echallens 
+ Talent (TRITON)\nEingabefrist: 15.01.2027\, 11.00 Uhr\nIm Register: https
+ ://auftragsregister.ch/de/auftrag/d9e7328f-cedb-4bbd-b763-bb7af5d25f86/\nA
+ mtliche Publikation: https://www.simap.ch/de/project-detail/d9e7328f-cedb-
+ 4bbd-b763-bb7af5d25f86
+URL:https://auftragsregister.ch/de/auftrag/d9e7328f-cedb-4bbd-b763-bb7af5d2
+ 5f86/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: STEP Echallens - CFC 3 - ELME81 - Vannes à tiroi
+ r et papillon + clapets anti-retour
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

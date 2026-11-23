@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:167b007c-ad95-4fa0-9748-ead7eb61367e-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Délai de remise : MP 3454 Iris von Roten-Platz - Baumeister- und
+  Tiefbauarbeiten
+DESCRIPTION:Acheteur public : Bau- und Verkehrsdepartement des Kantons Ba
+ sel-Stadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\n
+ Délai de remise : 04.01.2027\, 12 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/167b007c-ad95-4fa0-9748-ead7eb61367e/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/167b007c-a
+ d95-4fa0-9748-ead7eb61367e
+URL:https://auftragsregister.ch/fr/auftrag/167b007c-ad95-4fa0-9748-ead7eb61
+ 367e/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP 3454 Iris von Roten-Platz - Baumeister-
+  und Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

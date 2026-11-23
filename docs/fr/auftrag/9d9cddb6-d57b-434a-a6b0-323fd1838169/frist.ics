@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9d9cddb6-d57b-434a-a6b0-323fd1838169-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Délai de remise : 1 LKW 4x4 GR 44'018_B4
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 30.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/9d9cddb6-d57b-434a-a6b0-323fd1838169/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/9d9cddb6-d57b-434a-a6b0-323fd
+ 1838169
+URL:https://auftragsregister.ch/fr/auftrag/9d9cddb6-d57b-434a-a6b0-323fd183
+ 8169/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 1 LKW 4x4 GR 44'018_B4
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40794c63-a7bc-473d-9477-9b0ef71ef12f-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Eingabefrist: Bau Nr. 19174 - Opfikonstrasse
+DESCRIPTION:Auftraggeber: Tiefbauamt\, Abt. Realisierung\nEingabefrist: 02.
+ 12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ 40794c63-a7bc-473d-9477-9b0ef71ef12f/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/40794c63-a7bc-473d-9477-9b0ef71ef12f
+URL:https://auftragsregister.ch/de/auftrag/40794c63-a7bc-473d-9477-9b0ef71e
+ f12f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bau Nr. 19174 - Opfikonstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4a03a05-de07-4ee4-b9f9-9fdba1be99fc-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Délai de remise : Markierungen Bezirk 1\, 2 und 7\; Nationalstra
+ sse N13
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 23.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/b4a03a05-de07-4ee4-b9f9-9fdba1be99fc/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/b4a03a05-de07-4ee4-b9f9-9fdba
+ 1be99fc
+URL:https://auftragsregister.ch/fr/auftrag/b4a03a05-de07-4ee4-b9f9-9fdba1be
+ 99fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Markierungen Bezirk 1\, 2 und 7\; National
+ strasse N13
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

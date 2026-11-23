@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c6647e2-9cee-4ce0-bd9c-60fcded9288b-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Eingabefrist: Transformation et rénovation du CMB - LOT N°4 – F
+ ACADE METALLIQUE
+DESCRIPTION:Auftraggeber: Transport publics genevois (tpg)\nEingabefrist: 1
+ 1.01.2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/4c6647e2-9cee-4ce0-bd9c-60fcded9288b/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/4c6647e2-9cee-4ce0-bd9c-60fcded9288b
+URL:https://auftragsregister.ch/de/auftrag/4c6647e2-9cee-4ce0-bd9c-60fcded9
+ 288b/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Transformation et rénovation du CMB - LOT N°4 
+ – FACADE METALLIQUE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bcd802c0-1e4c-478b-a1c0-8c2db7d27a37-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270106T110000Z
+SUMMARY:Eingabefrist: 201.1 Rückbau\, Baugrube\, Werkleitungen
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Stadt Sursee\nEingabefrist: 06.
+ 01.2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ bcd802c0-1e4c-478b-a1c0-8c2db7d27a37/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/bcd802c0-1e4c-478b-a1c0-8c2db7d27a37
+URL:https://auftragsregister.ch/de/auftrag/bcd802c0-1e4c-478b-a1c0-8c2db7d2
+ 7a37/
+LOCATION:Sursee
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 201.1 Rückbau\, Baugrube\, Werkleitungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

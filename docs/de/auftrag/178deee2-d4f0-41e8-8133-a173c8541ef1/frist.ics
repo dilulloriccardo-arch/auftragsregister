@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:178deee2-d4f0-41e8-8133-a173c8541ef1-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T140000Z
+SUMMARY:Eingabefrist: Fernwärme Reussbühl Ost & West\, Luzern\, Leistunge
+ n Tiefbau
+DESCRIPTION:Auftraggeber: Fernwärme Luzern\nEingabefrist: 17.12.2026\, 15.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/178deee2-d4f0
+ -41e8-8133-a173c8541ef1/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/178deee2-d4f0-41e8-8133-a173c8541ef1
+URL:https://auftragsregister.ch/de/auftrag/178deee2-d4f0-41e8-8133-a173c854
+ 1ef1/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fernwärme Reussbühl Ost & West\, Luzern\, Leist
+ ungen Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

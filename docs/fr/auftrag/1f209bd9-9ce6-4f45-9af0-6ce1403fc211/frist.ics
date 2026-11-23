@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1f209bd9-9ce6-4f45-9af0-6ce1403fc211-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20261231T110000Z
+SUMMARY:Délai de remise : 1 véhicule tonne-pompe
+DESCRIPTION:Acheteur public : Gebäudeversicherung Kanton Zürich\nDélai
+  de remise : 31.12.2026\, 12 h 00\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/1f209bd9-9ce6-4f45-9af0-6ce1403fc211/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/1f209bd9-9ce6-4f
+ 45-9af0-6ce1403fc211
+URL:https://auftragsregister.ch/fr/auftrag/1f209bd9-9ce6-4f45-9af0-6ce1403f
+ c211/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 1 véhicule tonne-pompe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

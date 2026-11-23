@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45c475f4-38e6-4994-986c-b0bbf5d35509-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:1
+DTSTART:20270108T225900Z
+SUMMARY:Scadenza: (26254) 998 Reinigungsarbeiten FLEX und GENORA
+DESCRIPTION:Ente pubblico: Eidgenössisches Nuklearsicherheitsinspektorat E
+ NSI\nScadenza: 08.01.2027\, 23:59\nNel registro: https://auftragsregister.
+ ch/it/auftrag/45c475f4-38e6-4994-986c-b0bbf5d35509/\nPubblicazione ufficia
+ le: https://www.simap.ch/it/project-detail/45c475f4-38e6-4994-986c-b0bbf5d
+ 35509
+URL:https://auftragsregister.ch/it/auftrag/45c475f4-38e6-4994-986c-b0bbf5d3
+ 5509/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: (26254) 998 Reinigungsarbeiten FLEX und GENORA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

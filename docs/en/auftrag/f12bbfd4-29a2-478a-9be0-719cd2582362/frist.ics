@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f12bbfd4-29a2-478a-9be0-719cd2582362-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270113T070000Z
+SUMMARY:Submission deadline: Fernwärme Halte\, Ebikon\, Leistungen Tiefbau
+DESCRIPTION:Public buyer: Fernwärme Luzern AG\nSubmission deadline: 13 Ja
+ n 2027\, 08:00\nIn the register: https://auftragsregister.ch/en/auftrag/f
+ 12bbfd4-29a2-478a-9be0-719cd2582362/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/f12bbfd4-29a2-478a-9be0-719cd2582362
+URL:https://auftragsregister.ch/en/auftrag/f12bbfd4-29a2-478a-9be0-719cd258
+ 2362/
+LOCATION:Ebikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fernwärme Halte\, Ebikon\, Leistungen Tie
+ fbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

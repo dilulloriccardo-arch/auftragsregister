@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a415d9b0-926e-482f-9d7a-371935ec7c1a-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270120T100000Z
+SUMMARY:Scadenza: STEP EHVV - EL03 - Tableaux électriques\, MCC\, MCR et s
+ upervision
+DESCRIPTION:Ente pubblico: Groupement CSD-WSP-Erbat-DTP (CWED)\nScadenza: 2
+ 0.01.2027\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/a4
+ 15d9b0-926e-482f-9d7a-371935ec7c1a/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/a415d9b0-926e-482f-9d7a-371935ec7c1a
+URL:https://auftragsregister.ch/it/auftrag/a415d9b0-926e-482f-9d7a-371935ec
+ 7c1a/
+LOCATION:La Sarraz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: STEP EHVV - EL03 - Tableaux électriques\, MCC\, MCR 
+ et supervision
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

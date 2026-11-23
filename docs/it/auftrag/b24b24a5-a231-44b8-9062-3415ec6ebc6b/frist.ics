@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b24b24a5-a231-44b8-9062-3415ec6ebc6b-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Scadenza: Markierungen Bezirk 5\; Haupt-\, Verbindungs- und Nationa
+ lstrasse N28
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 23.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/b24b24a5-a231-4
+ 4b8-9062-3415ec6ebc6b/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/b24b24a5-a231-44b8-9062-3415ec6ebc6b
+URL:https://auftragsregister.ch/it/auftrag/b24b24a5-a231-44b8-9062-3415ec6e
+ bc6b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Markierungen Bezirk 5\; Haupt-\, Verbindungs- und Nat
+ ionalstrasse N28
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

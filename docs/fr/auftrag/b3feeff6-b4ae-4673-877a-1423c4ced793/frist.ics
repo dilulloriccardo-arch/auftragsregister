@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3feeff6-b4ae-4673-877a-1423c4ced793-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270112T110000Z
+SUMMARY:Délai de remise : BKP 233.2 Fourniture de luminaires et de lampe
+ s pour le Foodhall
+DESCRIPTION:Acheteur public : Flughafen Zürich AG - ELP\nDélai de remis
+ e : 12.01.2027\, 12 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/b3feeff6-b4ae-4673-877a-1423c4ced793/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/b3feeff6-b4ae-4673-877a-1
+ 423c4ced793
+URL:https://auftragsregister.ch/fr/auftrag/b3feeff6-b4ae-4673-877a-1423c4ce
+ d793/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 233.2 Fourniture de luminaires et de l
+ ampes pour le Foodhall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

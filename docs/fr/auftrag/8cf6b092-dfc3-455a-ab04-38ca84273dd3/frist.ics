@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8cf6b092-dfc3-455a-ab04-38ca84273dd3-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Délai de remise : CFC 281.1 Revêtements de sol sans joints & CF
+ C 282.0 Revêtements muraux sans joints
+DESCRIPTION:Acheteur public : Gemeinde Ebikon (Jung Meyerhans AG)\nDélai
+  de remise : 22.01.2027\, 12 h 00\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/8cf6b092-dfc3-455a-ab04-38ca84273dd3/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/8cf6b092-dfc3-45
+ 5a-ab04-38ca84273dd3
+URL:https://auftragsregister.ch/fr/auftrag/8cf6b092-dfc3-455a-ab04-38ca8427
+ 3dd3/
+LOCATION:Ebikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFC 281.1 Revêtements de sol sans joints 
+ & CFC 282.0 Revêtements muraux sans joints
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

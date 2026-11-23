@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:698da892-1b93-41f6-b78f-92e9034458d1-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Submission deadline: Kantonsstrasse Nr. 15-1\, Eschenbach\, St.Gall
+ enkappel\, Sanierung Rickenstrasse\, Abschnitt Bauwilerweg - Gerendingerst
+ rasse
+DESCRIPTION:Public buyer: Kanton St.Gallen\, Tiefbauamt\, Strassenkreisinsp
+ ektorat Schmerikon\nSubmission deadline: 15 Dec 2026\, 23:59\nIn the reg
+ ister: https://auftragsregister.ch/en/auftrag/698da892-1b93-41f6-b78f-92e9
+ 034458d1/\nOfficial publication: https://www.simap.ch/en/project-detail/69
+ 8da892-1b93-41f6-b78f-92e9034458d1
+URL:https://auftragsregister.ch/en/auftrag/698da892-1b93-41f6-b78f-92e90344
+ 58d1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kantonsstrasse Nr. 15-1\, Eschenbach\, St.
+ Gallenkappel\, Sanierung Rickenstrasse\, Abschnitt Bauwilerweg - Gerending
+ erstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

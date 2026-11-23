@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07bbd207-6a24-4729-8dea-d201f6333909-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:1
+DTSTART:20270106T225900Z
+SUMMARY:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 112 S
+ chadstoffsanierung
+DESCRIPTION:Acheteur public : Einwohnergemeinde Bremgarten b. Bern (maure
+ r bauleitung gmbh)\nDélai de remise : 06.01.2027\, 23 h 59\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/07bbd207-6a24-4729-8d
+ ea-d201f6333909/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/07bbd207-6a24-4729-8dea-d201f6333909
+URL:https://auftragsregister.ch/fr/auftrag/07bbd207-6a24-4729-8dea-d201f633
+ 3909/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 1
+ 12 Schadstoffsanierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

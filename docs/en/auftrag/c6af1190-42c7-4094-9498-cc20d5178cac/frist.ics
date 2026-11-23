@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c6af1190-42c7-4094-9498-cc20d5178cac-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Submission deadline: OGER FLOR l 13606 l BKP 242-02 Heizung
+DESCRIPTION:Public buyer: Hochbauamt\, Baubereich B\nSubmission deadline: 1
+ 4 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/c6af1190-42c7-4094-9498-cc20d5178cac/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/c6af1190-42c7-4094-9498-cc20d5178cac
+URL:https://auftragsregister.ch/en/auftrag/c6af1190-42c7-4094-9498-cc20d517
+ 8cac/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: OGER FLOR l 13606 l BKP 242-02 Heizung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:27d57881-af30-4f0d-9581-0f7f2a017d81-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270106T140000Z
+SUMMARY:Submission deadline: Neubau Kantonsschule Stein - BKP 274.2 Element
+ trennwände
+DESCRIPTION:Public buyer: Kanton Aargau - Departement Finanzen und Resource
+ n - Immobilien Aargau\nSubmission deadline: 6 Jan 2027\, 15:00\nIn the r
+ egister: https://auftragsregister.ch/en/auftrag/27d57881-af30-4f0d-9581-0f
+ 7f2a017d81/\nOfficial publication: https://www.simap.ch/en/project-detail/
+ 27d57881-af30-4f0d-9581-0f7f2a017d81
+URL:https://auftragsregister.ch/en/auftrag/27d57881-af30-4f0d-9581-0f7f2a01
+ 7d81/
+LOCATION:Stein (AG)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Kantonsschule Stein - BKP 274.2 Ele
+ menttrennwände
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

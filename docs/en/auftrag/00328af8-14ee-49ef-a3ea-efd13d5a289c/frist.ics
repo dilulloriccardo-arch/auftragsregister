@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:00328af8-14ee-49ef-a3ea-efd13d5a289c-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270121T150000Z
+SUMMARY:Submission deadline: BAV 59016 Recyclingzentrum Juch-Areal\, Neubau
+  Juch-Areal - BKP 411 Baumeisterarbeiten
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 21 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/00328af8-14ee-49ef-a3ea-efd13d5a289c/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/00328af8-14ee-49ef-a3ea-efd13d5a289c
+URL:https://auftragsregister.ch/en/auftrag/00328af8-14ee-49ef-a3ea-efd13d5a
+ 289c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 59016 Recyclingzentrum Juch-Areal\, Ne
+ ubau Juch-Areal - BKP 411 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

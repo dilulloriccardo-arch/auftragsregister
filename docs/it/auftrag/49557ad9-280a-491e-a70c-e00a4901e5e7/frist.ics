@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49557ad9-280a-491e-a70c-e00a4901e5e7-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270119T150000Z
+SUMMARY:Scadenza: CFC 251 Installations sanitaires
+DESCRIPTION:Ente pubblico: Commune de Grolley-Ponthaux\nScadenza: 19.01.202
+ 7\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/49557ad9-2
+ 80a-491e-a70c-e00a4901e5e7/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/49557ad9-280a-491e-a70c-e00a4901e5e7
+URL:https://auftragsregister.ch/it/auftrag/49557ad9-280a-491e-a70c-e00a4901
+ e5e7/
+LOCATION:Grolley
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: CFC 251 Installations sanitaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

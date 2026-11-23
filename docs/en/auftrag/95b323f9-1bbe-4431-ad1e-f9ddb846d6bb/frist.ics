@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95b323f9-1bbe-4431-ad1e-f9ddb846d6bb-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Submission deadline: erzo ARA\, Klärschlammtrocknung Oftringen - L
+ üftungsanlagen
+DESCRIPTION:Public buyer: erzo ARA (Hunziker Betatech)\nSubmission deadline
+ : 13 Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/95b323f9-1bbe-4431-ad1e-f9ddb846d6bb/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/95b323f9-1bbe-4431-ad1e-f9ddb846d6bb
+URL:https://auftragsregister.ch/en/auftrag/95b323f9-1bbe-4431-ad1e-f9ddb846
+ d6bb/
+LOCATION:Oftringen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: erzo ARA\, Klärschlammtrocknung Oftringen
+  - Lüftungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

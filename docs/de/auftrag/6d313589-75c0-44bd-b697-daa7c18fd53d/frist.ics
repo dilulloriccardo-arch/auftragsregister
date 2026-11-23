@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d313589-75c0-44bd-b697-daa7c18fd53d-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Eingabefrist: BAV 82163 GFA Bombach\, temporäre Erweiterung/provis
+ orischer Neubau\, Generalplanungsleistungen (unter Vorbehalt der Kreditgen
+ ehmigung)
+DESCRIPTION:Auftraggeber: HBD - Amt für Hochbauten (AHB)\nEingabefrist: 15
+ .12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /6d313589-75c0-44bd-b697-daa7c18fd53d/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/6d313589-75c0-44bd-b697-daa7c18fd53d
+URL:https://auftragsregister.ch/de/auftrag/6d313589-75c0-44bd-b697-daa7c18f
+ d53d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BAV 82163 GFA Bombach\, temporäre Erweiterung/pr
+ ovisorischer Neubau\, Generalplanungsleistungen (unter Vorbehalt der Kredi
+ tgenehmigung)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

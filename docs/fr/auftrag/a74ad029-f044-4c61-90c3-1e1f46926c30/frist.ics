@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a74ad029-f044-4c61-90c3-1e1f46926c30-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270208T225900Z
+SUMMARY:Délai de remise : N01.20 MP-260003 - EP Weyermannshaus - Wankdor
+ f - Projektverfasser BSA - Phase EK – PGV - (ID 12231)
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA - Abteilung S
+ trasseninfrastruktur West - Filiale Thun\nDélai de remise : 08.02.2027\
+ , 23 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag
+ /a74ad029-f044-4c61-90c3-1e1f46926c30/\nPublication officielle : https:/
+ /www.simap.ch/fr/project-detail/a74ad029-f044-4c61-90c3-1e1f46926c30
+URL:https://auftragsregister.ch/fr/auftrag/a74ad029-f044-4c61-90c3-1e1f4692
+ 6c30/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : N01.20 MP-260003 - EP Weyermannshaus - Wan
+ kdorf - Projektverfasser BSA - Phase EK – PGV - (ID 12231)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25c4352c-9a13-4e71-86f1-2c478580141e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261218T150000Z
+SUMMARY:Submission deadline: Wasserbauplan «Hochwasserschutz Rüebeldorf\,
+  Ausbau Chalberhönibach\, 2. Ausbauetappe» und Überbauungsordnung «Hoc
+ hwasserschutz Rüebeldorf\, 2. Ausbauetappe: Ausbau Gemeindestrassen und B
+ rückenneubauten»
+DESCRIPTION:Public buyer: Schwellenkorporation Saanen (Kissling + Zbinden A
+ G)\nSubmission deadline: 18 Dec 2026\, 16:00\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/25c4352c-9a13-4e71-86f1-2c478580141e/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/25c4352c-9a13-4e71
+ -86f1-2c478580141e
+URL:https://auftragsregister.ch/en/auftrag/25c4352c-9a13-4e71-86f1-2c478580
+ 141e/
+LOCATION:Saanen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wasserbauplan «Hochwasserschutz Rüebeldo
+ rf\, Ausbau Chalberhönibach\, 2. Ausbauetappe» und Überbauungsordnung 
+ «Hochwasserschutz Rüebeldorf\, 2. Ausbauetappe: Ausbau Gemeindestrassen 
+ und Brückenneubauten»
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

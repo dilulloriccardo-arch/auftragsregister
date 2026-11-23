@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ac1f9157-bcca-4443-b494-bb03bd8b3fdf-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Eingabefrist: Externe Dienstleistungen zur Prüfung bei Bau- und Pl
+ anungsvorhaben
+DESCRIPTION:Auftraggeber: Abteilung Landschaft und Gewässer (ALG)\nEingabe
+ frist: 23.12.2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/ac1f9157-bcca-4443-b494-bb03bd8b3fdf/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/ac1f9157-bcca-4443-b494-bb03bd8b3fdf
+URL:https://auftragsregister.ch/de/auftrag/ac1f9157-bcca-4443-b494-bb03bd8b
+ 3fdf/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Externe Dienstleistungen zur Prüfung bei Bau- un
+ d Planungsvorhaben
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

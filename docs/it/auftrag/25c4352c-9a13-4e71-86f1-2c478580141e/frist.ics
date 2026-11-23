@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25c4352c-9a13-4e71-86f1-2c478580141e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261218T150000Z
+SUMMARY:Scadenza: Wasserbauplan «Hochwasserschutz Rüebeldorf\, Ausbau Cha
+ lberhönibach\, 2. Ausbauetappe» und Überbauungsordnung «Hochwasserschu
+ tz Rüebeldorf\, 2. Ausbauetappe: Ausbau Gemeindestrassen und Brückenneub
+ auten»
+DESCRIPTION:Ente pubblico: Schwellenkorporation Saanen (Kissling + Zbinden 
+ AG)\nScadenza: 18.12.2026\, 16:00\nNel registro: https://auftragsregister.
+ ch/it/auftrag/25c4352c-9a13-4e71-86f1-2c478580141e/\nPubblicazione ufficia
+ le: https://www.simap.ch/it/project-detail/25c4352c-9a13-4e71-86f1-2c47858
+ 0141e
+URL:https://auftragsregister.ch/it/auftrag/25c4352c-9a13-4e71-86f1-2c478580
+ 141e/
+LOCATION:Saanen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wasserbauplan «Hochwasserschutz Rüebeldorf\, Ausbau
+  Chalberhönibach\, 2. Ausbauetappe» und Überbauungsordnung «Hochwasser
+ schutz Rüebeldorf\, 2. Ausbauetappe: Ausbau Gemeindestrassen und Brücken
+ neubauten»
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

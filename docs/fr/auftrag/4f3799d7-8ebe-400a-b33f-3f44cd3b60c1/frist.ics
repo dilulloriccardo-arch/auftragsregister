@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4f3799d7-8ebe-400a-b33f-3f44cd3b60c1-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270226T160000Z
+SUMMARY:Délai de remise : 110 kV GIS-Schaltanlage dreiphasig gekapselt
+DESCRIPTION:Acheteur public : EKT AG\nDélai de remise : 26.02.2027\, 1
+ 7 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/4f
+ 3799d7-8ebe-400a-b33f-3f44cd3b60c1/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/4f3799d7-8ebe-400a-b33f-3f44cd3b60c1
+URL:https://auftragsregister.ch/fr/auftrag/4f3799d7-8ebe-400a-b33f-3f44cd3b
+ 60c1/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 110 kV GIS-Schaltanlage dreiphasig gekapse
+ lt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

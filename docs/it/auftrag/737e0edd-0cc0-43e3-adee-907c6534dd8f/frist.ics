@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:737e0edd-0cc0-43e3-adee-907c6534dd8f-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Scadenza: Rahmenvertrag zur Beschaffung von Hardware (Notebooks ink
+ l. Zubehör)
+DESCRIPTION:Ente pubblico: Sekundarstufe Uster\nScadenza: 21.12.2026\, 23:5
+ 9\nNel registro: https://auftragsregister.ch/it/auftrag/737e0edd-0cc0-43e3
+ -adee-907c6534dd8f/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/737e0edd-0cc0-43e3-adee-907c6534dd8f
+URL:https://auftragsregister.ch/it/auftrag/737e0edd-0cc0-43e3-adee-907c6534
+ dd8f/
+LOCATION:Uster
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rahmenvertrag zur Beschaffung von Hardware (Notebooks
+  inkl. Zubehör)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

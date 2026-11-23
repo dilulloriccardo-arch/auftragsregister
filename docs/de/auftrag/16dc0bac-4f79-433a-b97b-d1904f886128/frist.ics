@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16dc0bac-4f79-433a-b97b-d1904f886128-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261216T130000Z
+SUMMARY:Eingabefrist: Sanierung Mangeli\, Menzingen
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Menzingen\, Abteilung Bau\nEing
+ abefrist: 16.12.2026\, 14.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/16dc0bac-4f79-433a-b97b-d1904f886128/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/16dc0bac-4f79-433a-b97b-d1904f88612
+ 8
+URL:https://auftragsregister.ch/de/auftrag/16dc0bac-4f79-433a-b97b-d1904f88
+ 6128/
+LOCATION:Menzingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Mangeli\, Menzingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

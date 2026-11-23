@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5d1355d9-bc9e-4a42-9315-689920c73cb8-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270129T150000Z
+SUMMARY:Eingabefrist: CERM - Centre d'entretien routier des montagnes - La 
+ Chaux-de-Fonds - LOT E03_Installations électriques - CFC 23
+DESCRIPTION:Auftraggeber: Service des bâtiments de l'Etat de Neuchâtel - 
+ DOSP\nEingabefrist: 29.01.2027\, 16.00 Uhr\nIm Register: https://auftrags
+ register.ch/de/auftrag/5d1355d9-bc9e-4a42-9315-689920c73cb8/\nAmtliche Pub
+ likation: https://www.simap.ch/de/project-detail/5d1355d9-bc9e-4a42-9315-6
+ 89920c73cb8
+URL:https://auftragsregister.ch/de/auftrag/5d1355d9-bc9e-4a42-9315-689920c7
+ 3cb8/
+LOCATION:La Chaux-de-Fonds
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CERM - Centre d'entretien routier des montagnes -
+  La Chaux-de-Fonds - LOT E03_Installations électriques - CFC 23
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

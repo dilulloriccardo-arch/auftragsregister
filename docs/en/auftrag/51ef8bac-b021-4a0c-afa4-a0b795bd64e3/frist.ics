@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:51ef8bac-b021-4a0c-afa4-a0b795bd64e3-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:1
+DTSTART:20270105T225900Z
+SUMMARY:Submission deadline: Unterhaltsreinigung neuer Hauptsitz der AEW En
+ ergie AG in Aarau
+DESCRIPTION:Public buyer: AEW Energie AG\nSubmission deadline: 5 Jan 2027
+ \, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/51ef8bac
+ -b021-4a0c-afa4-a0b795bd64e3/\nOfficial publication: https://www.simap.ch/
+ en/project-detail/51ef8bac-b021-4a0c-afa4-a0b795bd64e3
+URL:https://auftragsregister.ch/en/auftrag/51ef8bac-b021-4a0c-afa4-a0b795bd
+ 64e3/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Unterhaltsreinigung neuer Hauptsitz der AE
+ W Energie AG in Aarau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

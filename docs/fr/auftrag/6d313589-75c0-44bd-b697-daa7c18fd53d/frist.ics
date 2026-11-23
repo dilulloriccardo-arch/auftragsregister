@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d313589-75c0-44bd-b697-daa7c18fd53d-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Délai de remise : BAV 82163 GFA Bombach\, extension temporaire/n
+ ouvelle construction provisoire\, prestations de planification générale 
+ (sous réserve de l'octroi du crédit)
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 15.12.2026\, 23 h 59\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/6d313589-75c0-44bd-b697-daa7c18fd53d/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/6d313589-75c0-44bd-b
+ 697-daa7c18fd53d
+URL:https://auftragsregister.ch/fr/auftrag/6d313589-75c0-44bd-b697-daa7c18f
+ d53d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 82163 GFA Bombach\, extension temporai
+ re/nouvelle construction provisoire\, prestations de planification génér
+ ale (sous réserve de l'octroi du crédit)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

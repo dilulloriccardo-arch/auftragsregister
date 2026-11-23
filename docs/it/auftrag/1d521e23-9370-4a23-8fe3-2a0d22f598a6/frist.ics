@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1d521e23-9370-4a23-8fe3-2a0d22f598a6-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270118T110000Z
+SUMMARY:Scadenza: Campus Schwarzsee Lac Noir\, rénovation bâtiments A et 
+ B
+DESCRIPTION:Ente pubblico: Service des Bâtiments SBat\, CAMP_Lac Noir (CPS
+ A)\nScadenza: 18.01.2027\, 12:00\nNel registro: https://auftragsregister.c
+ h/it/auftrag/1d521e23-9370-4a23-8fe3-2a0d22f598a6/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/1d521e23-9370-4a23-8fe3-2a0d22f5
+ 98a6
+URL:https://auftragsregister.ch/it/auftrag/1d521e23-9370-4a23-8fe3-2a0d22f5
+ 98a6/
+LOCATION:Schwarzsee
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Campus Schwarzsee Lac Noir\, rénovation bâtiments A
+  et B
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

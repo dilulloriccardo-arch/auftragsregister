@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10350035-370b-4b83-b4b6-669945688c2a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261218T140000Z
+SUMMARY:Scadenza: Ersatz der Multifunktionsgeräte in der Gemeindeverwaltun
+ g und in den Schulen
+DESCRIPTION:Ente pubblico: Gemeindeverwaltung Worb\nScadenza: 18.12.2026\, 
+ 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/10350035-370b-
+ 4b83-b4b6-669945688c2a/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/10350035-370b-4b83-b4b6-669945688c2a
+URL:https://auftragsregister.ch/it/auftrag/10350035-370b-4b83-b4b6-66994568
+ 8c2a/
+LOCATION:Worb
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatz der Multifunktionsgeräte in der Gemeindeverwa
+ ltung und in den Schulen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

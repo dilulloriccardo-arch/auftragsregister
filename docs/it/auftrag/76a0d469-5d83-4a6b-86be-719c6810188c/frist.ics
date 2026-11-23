@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:76a0d469-5d83-4a6b-86be-719c6810188c-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270121T110000Z
+SUMMARY:Scadenza: Juristische Unterstützung im Bereich Altlasten
+DESCRIPTION:Ente pubblico: Dienststelle Umwelt und Energie\, Kanton Luzern\
+ nScadenza: 21.01.2027\, 12:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/76a0d469-5d83-4a6b-86be-719c6810188c/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/76a0d469-5d83-4a6b-86be-719c6810188
+ c
+URL:https://auftragsregister.ch/it/auftrag/76a0d469-5d83-4a6b-86be-719c6810
+ 188c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Juristische Unterstützung im Bereich Altlasten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

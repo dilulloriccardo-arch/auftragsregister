@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d9ac8a5-3139-4922-84d9-41c70e768fd8-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Submission deadline: Tennis du Châtaignier - Centrale solaire phot
+ ovoltaïque
+DESCRIPTION:Public buyer: SI-REN SA\nSubmission deadline: 14 Jan 2027\, 1
+ 6:00\nIn the register: https://auftragsregister.ch/en/auftrag/6d9ac8a5-313
+ 9-4922-84d9-41c70e768fd8/\nOfficial publication: https://www.simap.ch/en/p
+ roject-detail/6d9ac8a5-3139-4922-84d9-41c70e768fd8
+URL:https://auftragsregister.ch/en/auftrag/6d9ac8a5-3139-4922-84d9-41c70e76
+ 8fd8/
+LOCATION:Le Mont-sur-Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tennis du Châtaignier - Centrale solaire 
+ photovoltaïque
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

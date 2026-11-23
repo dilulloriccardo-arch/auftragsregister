@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9fbddb0-fdf8-4d55-bb78-36d9e0fc5463-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270115T130000Z
+SUMMARY:Submission deadline: Kantonsstrasse\; Verbindungsstrasse Leimen-Hol
+ enstein\, Planerleistungen Phase 31-53
+DESCRIPTION:Public buyer: Abteilung Tiefbau\nSubmission deadline: 15 Jan 
+ 2027\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag/e9fb
+ ddb0-fdf8-4d55-bb78-36d9e0fc5463/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/e9fbddb0-fdf8-4d55-bb78-36d9e0fc5463
+URL:https://auftragsregister.ch/en/auftrag/e9fbddb0-fdf8-4d55-bb78-36d9e0fc
+ 5463/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kantonsstrasse\; Verbindungsstrasse Leimen
+ -Holenstein\, Planerleistungen Phase 31-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

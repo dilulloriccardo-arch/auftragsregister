@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b7c68f7-189c-4cef-be07-7117116a653f-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Eingabefrist: ZELG-22400 Bedachungs- und Spenglerarbeiten
+DESCRIPTION:Auftraggeber: Primarschulgemeinde Romanshorn\nEingabefrist: 08.
+ 01.2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/
+ 6b7c68f7-189c-4cef-be07-7117116a653f/\nAmtliche Publikation: https://www.s
+ imap.ch/de/project-detail/6b7c68f7-189c-4cef-be07-7117116a653f
+URL:https://auftragsregister.ch/de/auftrag/6b7c68f7-189c-4cef-be07-7117116a
+ 653f/
+LOCATION:Romanshorn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: ZELG-22400 Bedachungs- und Spenglerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

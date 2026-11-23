@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f872482e-d8b8-4dce-821d-e96ce80c605c-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270218T225900Z
+SUMMARY:Scadenza: Anlagenverkabelung (NS) Bundle 2026-2
+DESCRIPTION:Ente pubblico: Swissgrid AG - Asset & Maintenance\nScadenza: 18
+ .02.2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/f87
+ 2482e-d8b8-4dce-821d-e96ce80c605c/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/f872482e-d8b8-4dce-821d-e96ce80c605c
+URL:https://auftragsregister.ch/it/auftrag/f872482e-d8b8-4dce-821d-e96ce80c
+ 605c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Anlagenverkabelung (NS) Bundle 2026-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

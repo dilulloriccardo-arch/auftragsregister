@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:70b17255-6667-4f36-81ad-0a590e1e745d-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261222T100000Z
+SUMMARY:Eingabefrist: 0813.104 - Comune di Mendrisio - Formazione rotonda V
+ ia Vignalunga\, incrocio con Via C. Maderno - Opere di pavimentazione
+DESCRIPTION:Auftraggeber: Ufficio delle commesse pubbliche e della programm
+ azione\nEingabefrist: 22.12.2026\, 11.00 Uhr\nIm Register: https://auftra
+ gsregister.ch/de/auftrag/70b17255-6667-4f36-81ad-0a590e1e745d/\nAmtliche P
+ ublikation: https://www.simap.ch/de/project-detail/70b17255-6667-4f36-81ad
+ -0a590e1e745d
+URL:https://auftragsregister.ch/de/auftrag/70b17255-6667-4f36-81ad-0a590e1e
+ 745d/
+LOCATION:Mendrisio
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 0813.104 - Comune di Mendrisio - Formazione roton
+ da Via Vignalunga\, incrocio con Via C. Maderno - Opere di pavimentazione
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

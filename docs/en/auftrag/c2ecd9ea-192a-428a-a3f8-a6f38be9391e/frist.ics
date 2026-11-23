@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c2ecd9ea-192a-428a-a3f8-a6f38be9391e-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Submission deadline: Neubau Burgfelderstrasse 251\, BKP 281.0 Unter
+ lagsböden
+DESCRIPTION:Public buyer: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nSubmis
+ sion deadline: 21 Dec 2026\, 12:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/c2ecd9ea-192a-428a-a3f8-a6f38be9391e/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/c2ecd9ea-192a-428a-a3f8-a6f3
+ 8be9391e
+URL:https://auftragsregister.ch/en/auftrag/c2ecd9ea-192a-428a-a3f8-a6f38be9
+ 391e/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Burgfelderstrasse 251\, BKP 281.0 U
+ nterlagsböden
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

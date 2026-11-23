@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:79fc1287-9a6a-4445-882f-2bf42f05b3b1-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Eingabefrist: Réfection Rue de la Poya et Rue des Vignes à Conthe
+ y
+DESCRIPTION:Auftraggeber: Commune de Conthey\nEingabefrist: 11.12.2026\nIm 
+ Register: https://auftragsregister.ch/de/auftrag/79fc1287-9a6a-4445-882f-2
+ bf42f05b3b1/\nAmtliche Publikation: https://www.simap.ch/de/project-detail
+ /79fc1287-9a6a-4445-882f-2bf42f05b3b1
+URL:https://auftragsregister.ch/de/auftrag/79fc1287-9a6a-4445-882f-2bf42f05
+ b3b1/
+LOCATION:Conthey
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Réfection Rue de la Poya et Rue des Vignes à Co
+ nthey
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

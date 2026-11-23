@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41f908df-0e84-4190-9bc7-420f22b471c2-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270106T150000Z
+SUMMARY:Submission deadline: BAV 83185 SA Rütihof\, Umbau BET für TS - BK
+ P 230 Elektroanlagen
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 6 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/en
+ /auftrag/41f908df-0e84-4190-9bc7-420f22b471c2/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/41f908df-0e84-4190-9bc7-420f22b471c2
+URL:https://auftragsregister.ch/en/auftrag/41f908df-0e84-4190-9bc7-420f22b4
+ 71c2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 83185 SA Rütihof\, Umbau BET für TS 
+ - BKP 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

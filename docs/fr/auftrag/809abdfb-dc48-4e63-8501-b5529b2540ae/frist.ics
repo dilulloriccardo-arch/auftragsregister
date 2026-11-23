@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:809abdfb-dc48-4e63-8501-b5529b2540ae-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Délai de remise : Markierungen Bezirk 7\; Haupt-\, Verbindungs- 
+ und Nationalstrasse N29
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 23.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/809abdfb-dc48-4e63-8501-b5529b2540ae/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/809abdfb-dc48-4e63-8501-b5529
+ b2540ae
+URL:https://auftragsregister.ch/fr/auftrag/809abdfb-dc48-4e63-8501-b5529b25
+ 40ae/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Markierungen Bezirk 7\; Haupt-\, Verbindun
+ gs- und Nationalstrasse N29
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

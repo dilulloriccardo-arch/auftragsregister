@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:737e0edd-0cc0-43e3-adee-907c6534dd8f-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Délai de remise : Contrat-cadre pour l’acquisition de matérie
+ l informatique (ordinateurs portables y compris les accessoires)
+DESCRIPTION:Acheteur public : Sekundarstufe Uster\nDélai de remise : 2
+ 1.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/737e0edd-0cc0-43e3-adee-907c6534dd8f/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/737e0edd-0cc0-43e3-adee-907c65
+ 34dd8f
+URL:https://auftragsregister.ch/fr/auftrag/737e0edd-0cc0-43e3-adee-907c6534
+ dd8f/
+LOCATION:Uster
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat-cadre pour l’acquisition de mat
+ ériel informatique (ordinateurs portables y compris les accessoires)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

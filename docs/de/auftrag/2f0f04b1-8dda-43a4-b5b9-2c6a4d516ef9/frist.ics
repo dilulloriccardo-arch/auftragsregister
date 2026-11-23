@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2f0f04b1-8dda-43a4-b5b9-2c6a4d516ef9-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: Fassaden-Sandwichelementen
+DESCRIPTION:Auftraggeber: Stadtwerk Winterthur\nEingabefrist: 14.12.2026\, 
+ 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2f0f04b1-8
+ dda-43a4-b5b9-2c6a4d516ef9/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/2f0f04b1-8dda-43a4-b5b9-2c6a4d516ef9
+URL:https://auftragsregister.ch/de/auftrag/2f0f04b1-8dda-43a4-b5b9-2c6a4d51
+ 6ef9/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fassaden-Sandwichelementen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

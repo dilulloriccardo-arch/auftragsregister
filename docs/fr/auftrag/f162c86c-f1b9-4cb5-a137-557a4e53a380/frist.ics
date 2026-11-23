@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f162c86c-f1b9-4cb5-a137-557a4e53a380-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270114T090000Z
+SUMMARY:Délai de remise : Stadthof- / Dreilindenstrasse Gesamplaneraussc
+ hreibung SIA Phasen 31 bis 53
+DESCRIPTION:Acheteur public : Stadt Luzern\, Tiefbauamt\nDélai de remise
+  : 14.01.2027\, 10 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/f162c86c-f1b9-4cb5-a137-557a4e53a380/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/f162c86c-f1b9-4cb5-a137-55
+ 7a4e53a380
+URL:https://auftragsregister.ch/fr/auftrag/f162c86c-f1b9-4cb5-a137-557a4e53
+ a380/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Stadthof- / Dreilindenstrasse Gesamplanera
+ usschreibung SIA Phasen 31 bis 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

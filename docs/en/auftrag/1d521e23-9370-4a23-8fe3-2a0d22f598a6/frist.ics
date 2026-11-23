@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1d521e23-9370-4a23-8fe3-2a0d22f598a6-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270118T110000Z
+SUMMARY:Submission deadline: Campus Schwarzsee Lac Noir\, rénovation bâti
+ ments A et B
+DESCRIPTION:Public buyer: Service des Bâtiments SBat\, CAMP_Lac Noir (CPSA
+ )\nSubmission deadline: 18 Jan 2027\, 12:00\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/1d521e23-9370-4a23-8fe3-2a0d22f598a6/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/1d521e23-9370-4a23-
+ 8fe3-2a0d22f598a6
+URL:https://auftragsregister.ch/en/auftrag/1d521e23-9370-4a23-8fe3-2a0d22f5
+ 98a6/
+LOCATION:Schwarzsee
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Campus Schwarzsee Lac Noir\, rénovation b
+ âtiments A et B
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

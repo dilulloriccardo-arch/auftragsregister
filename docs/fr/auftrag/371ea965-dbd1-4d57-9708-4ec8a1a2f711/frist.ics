@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:371ea965-dbd1-4d57-9708-4ec8a1a2f711-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270108T090000Z
+SUMMARY:Délai de remise : 281.0 Chapes - Construction d'une nouvelle éc
+ ole primaire avec gymnase\, Erlenstrasse\, Oberglatt
+DESCRIPTION:Acheteur public : Gemeinde Oberglatt (Anderegg Partner AG)\nD
+ élai de remise : 08.01.2027\, 10 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/371ea965-dbd1-4d57-9708-4ec8a1a2f711/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/371ea965-db
+ d1-4d57-9708-4ec8a1a2f711
+URL:https://auftragsregister.ch/fr/auftrag/371ea965-dbd1-4d57-9708-4ec8a1a2
+ f711/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 281.0 Chapes - Construction d'une nouvelle
+  école primaire avec gymnase\, Erlenstrasse\, Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

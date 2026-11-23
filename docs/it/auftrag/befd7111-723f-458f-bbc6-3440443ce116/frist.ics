@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:befd7111-723f-458f-bbc6-3440443ce116-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Scadenza: Microscope pour Imagerie Rapide et Volumétrique de Haute
+  Résolution (MIRV-HR)
+DESCRIPTION:Ente pubblico: UNIL-Servie de la Recherche\nScadenza: 11.01.202
+ 7\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/befd7111-7
+ 23f-458f-bbc6-3440443ce116/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/befd7111-723f-458f-bbc6-3440443ce116
+URL:https://auftragsregister.ch/it/auftrag/befd7111-723f-458f-bbc6-3440443c
+ e116/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Microscope pour Imagerie Rapide et Volumétrique de H
+ aute Résolution (MIRV-HR)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5f732b33-8ad6-420a-8dc0-d987fa4166ca-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270204T225900Z
+SUMMARY:Délai de remise : MP-120065\, projet de maintenance de la tangen
+ te Est de Bâle / Direction des travaux de construction (AS City)
+DESCRIPTION:Acheteur public : Eidgenössisches Departement für Umwelt\, 
+ Verkehr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abtei
+ lung Strasseninfrastruktur-Ost - F3\nDélai de remise : 04.02.2027\, 23
+  h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/5f7
+ 32b33-8ad6-420a-8dc0-d987fa4166ca/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/5f732b33-8ad6-420a-8dc0-d987fa4166ca
+URL:https://auftragsregister.ch/fr/auftrag/5f732b33-8ad6-420a-8dc0-d987fa41
+ 66ca/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-120065\, projet de maintenance de la ta
+ ngente Est de Bâle / Direction des travaux de construction (AS City)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

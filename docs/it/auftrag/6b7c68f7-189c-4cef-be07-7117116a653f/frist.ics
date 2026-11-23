@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b7c68f7-189c-4cef-be07-7117116a653f-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Scadenza: ZELG-22400 Bedachungs- und Spenglerarbeiten
+DESCRIPTION:Ente pubblico: Primarschulgemeinde Romanshorn\nScadenza: 08.01.
+ 2027\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/6b7c68f
+ 7-189c-4cef-be07-7117116a653f/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/6b7c68f7-189c-4cef-be07-7117116a653f
+URL:https://auftragsregister.ch/it/auftrag/6b7c68f7-189c-4cef-be07-7117116a
+ 653f/
+LOCATION:Romanshorn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ZELG-22400 Bedachungs- und Spenglerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

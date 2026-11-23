@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:70a77c17-4eb8-4548-958e-eac1f0da0e7e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Délai de remise : Fernwärmeprojekt Neftenbach 2027 - 2030
+DESCRIPTION:Acheteur public : Energieverbund Neftenbach AG (HOLINGER AG)\
+ nDélai de remise : 09.12.2026\, 11 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/70a77c17-4eb8-4548-958e-eac1f0da0e7e/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/70a77c17-
+ 4eb8-4548-958e-eac1f0da0e7e
+URL:https://auftragsregister.ch/fr/auftrag/70a77c17-4eb8-4548-958e-eac1f0da
+ 0e7e/
+LOCATION:neftenbach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fernwärmeprojekt Neftenbach 2027 - 2030
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5cf910bc-ef27-43c2-9181-919f992edd56-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Submission deadline: BKP 272 Metalwork (for stair railings / handra
+ ils)
+DESCRIPTION:Public buyer: Schulgemeinde Kreuzlingen\nSubmission deadline: 1
+ 1 Dec 2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/5cf910bc-ef27-43c2-9181-919f992edd56/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/5cf910bc-ef27-43c2-9181-919f992edd56
+URL:https://auftragsregister.ch/en/auftrag/5cf910bc-ef27-43c2-9181-919f992e
+ dd56/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 272 Metalwork (for stair railings / ha
+ ndrails)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

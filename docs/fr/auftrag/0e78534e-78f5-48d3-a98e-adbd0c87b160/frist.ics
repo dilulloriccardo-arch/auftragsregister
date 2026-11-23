@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e78534e-78f5-48d3-a98e-adbd0c87b160-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261223T160000Z
+SUMMARY:Délai de remise : Gesamtsanierung Schulanlage Pestalozzi Stans\,
+  CFC 221.1 Fenêtres en bois et bois-métal
+DESCRIPTION:Acheteur public : Politische Gemeinde Stans\nDélai de remise
+  : 23.12.2026\, 17 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/0e78534e-78f5-48d3-a98e-adbd0c87b160/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/0e78534e-78f5-48d3-a98e-ad
+ bd0c87b160
+URL:https://auftragsregister.ch/fr/auftrag/0e78534e-78f5-48d3-a98e-adbd0c87
+ b160/
+LOCATION:Stans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gesamtsanierung Schulanlage Pestalozzi Sta
+ ns\, CFC 221.1 Fenêtres en bois et bois-métal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

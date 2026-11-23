@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:125471aa-d01a-4194-a439-94dbc9e5534b-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270312T140000Z
+SUMMARY:Délai de remise : 2.1_Ausschreibung_WERK
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Infrastru
+ ktur – Einkauf\, Supply Chain und Produktion\, Einkauf Bauprojekte Regio
+ n Mitte\nDélai de remise : 12.03.2027\, 15 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/125471aa-d01a-4194-a439-94dbc9
+ e5534b/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /125471aa-d01a-4194-a439-94dbc9e5534b
+URL:https://auftragsregister.ch/fr/auftrag/125471aa-d01a-4194-a439-94dbc9e5
+ 534b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 2.1_Ausschreibung_WERK
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

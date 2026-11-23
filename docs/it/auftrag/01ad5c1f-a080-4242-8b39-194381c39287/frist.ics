@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:01ad5c1f-a080-4242-8b39-194381c39287-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270112T110000Z
+SUMMARY:Scadenza: Instandstellung Gastroküche Enzmannbau\, BKP 258 Küchen
+ einrichtungen
+DESCRIPTION:Ente pubblico: Kanton Luzern\, Dienststelle Immobilien\nScadenz
+ a: 12.01.2027\, 12:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/01ad5c1f-a080-4242-8b39-194381c39287/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/01ad5c1f-a080-4242-8b39-194381c39287
+URL:https://auftragsregister.ch/it/auftrag/01ad5c1f-a080-4242-8b39-194381c3
+ 9287/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Instandstellung Gastroküche Enzmannbau\, BKP 258 Kü
+ cheneinrichtungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

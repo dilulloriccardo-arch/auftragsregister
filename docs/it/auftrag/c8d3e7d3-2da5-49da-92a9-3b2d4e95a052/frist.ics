@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c8d3e7d3-2da5-49da-92a9-3b2d4e95a052-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270127T090000Z
+SUMMARY:Scadenza: Beschaffung Telefonie- und Rufsystem
+DESCRIPTION:Ente pubblico: Regionales Alterszentrum Embrachertal (360 Kompe
+ tenzzentrum GmbH)\nScadenza: 27.01.2027\, 10:00\nNel registro: https://auf
+ tragsregister.ch/it/auftrag/c8d3e7d3-2da5-49da-92a9-3b2d4e95a052/\nPubblic
+ azione ufficiale: https://www.simap.ch/it/project-detail/c8d3e7d3-2da5-49d
+ a-92a9-3b2d4e95a052
+URL:https://auftragsregister.ch/it/auftrag/c8d3e7d3-2da5-49da-92a9-3b2d4e95
+ a052/
+LOCATION:Embrach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung Telefonie- und Rufsystem
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d8c30782-81f5-4aba-9eb6-ffa6d6c16dde-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270108T130000Z
+SUMMARY:Eingabefrist: Wohnsiedlung Altwiesen\, 8051 Zürich
+DESCRIPTION:Auftraggeber: Stiftung Einfach Wohnen (SEW)\nEingabefrist: 08.0
+ 1.2027\, 14.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d
+ 8c30782-81f5-4aba-9eb6-ffa6d6c16dde/\nAmtliche Publikation: https://www.si
+ map.ch/de/project-detail/d8c30782-81f5-4aba-9eb6-ffa6d6c16dde
+URL:https://auftragsregister.ch/de/auftrag/d8c30782-81f5-4aba-9eb6-ffa6d6c1
+ 6dde/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Wohnsiedlung Altwiesen\, 8051 Zürich
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d08af9a7-85a4-4408-92cd-4f8641547f91-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Submission deadline: Acquisition de mobilier pour le nouvel établi
+ ssement de l'ESSC\, Pompaples
+DESCRIPTION:Public buyer: Irbis Consulting SA\nSubmission deadline: 13 Jan
+  2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/d0
+ 8af9a7-85a4-4408-92cd-4f8641547f91/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/d08af9a7-85a4-4408-92cd-4f8641547f91
+URL:https://auftragsregister.ch/en/auftrag/d08af9a7-85a4-4408-92cd-4f864154
+ 7f91/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Acquisition de mobilier pour le nouvel ét
+ ablissement de l'ESSC\, Pompaples
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

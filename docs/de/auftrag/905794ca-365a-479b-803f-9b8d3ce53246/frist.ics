@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:905794ca-365a-479b-803f-9b8d3ce53246-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261211T140000Z
+SUMMARY:Eingabefrist: Rund um den OP\, BKP 561 Bewachung durch Dritte
+DESCRIPTION:Auftraggeber: Hirslanden AG\, Corporate Office (Ghisleni Partne
+ r AG)\nEingabefrist: 11.12.2026\, 15.00 Uhr\nIm Register: https://auftrag
+ sregister.ch/de/auftrag/905794ca-365a-479b-803f-9b8d3ce53246/\nAmtliche Pu
+ blikation: https://www.simap.ch/de/project-detail/905794ca-365a-479b-803f-
+ 9b8d3ce53246
+URL:https://auftragsregister.ch/de/auftrag/905794ca-365a-479b-803f-9b8d3ce5
+ 3246/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rund um den OP\, BKP 561 Bewachung durch Dritte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

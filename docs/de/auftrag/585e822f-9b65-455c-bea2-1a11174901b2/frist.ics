@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:585e822f-9b65-455c-bea2-1a11174901b2-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T160000Z
+SUMMARY:Eingabefrist: Neubauten Stiftung Schürmatt - BKP 293 Elektroplanun
+ g inkl. PV-Anlage und GA
+DESCRIPTION:Auftraggeber: Stiftung Schürmatt\nEingabefrist: 17.12.2026\, 1
+ 7.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/585e822f-9b
+ 65-455c-bea2-1a11174901b2/\nAmtliche Publikation: https://www.simap.ch/de/
+ project-detail/585e822f-9b65-455c-bea2-1a11174901b2
+URL:https://auftragsregister.ch/de/auftrag/585e822f-9b65-455c-bea2-1a111749
+ 01b2/
+LOCATION:Zetzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubauten Stiftung Schürmatt - BKP 293 Elektropl
+ anung inkl. PV-Anlage und GA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

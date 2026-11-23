@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a1c52e32-5226-43c3-ba60-39fca39c9db2-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261211T140000Z
+SUMMARY:Délai de remise : Rund um den OP\, BKP 287 Baureinigung
+DESCRIPTION:Acheteur public : Hirslanden AG\, Corporate Office (Ghisleni 
+ Partner AG)\nDélai de remise : 11.12.2026\, 15 h 00\nDans le regist
+ re : https://auftragsregister.ch/fr/auftrag/a1c52e32-5226-43c3-ba60-39fc
+ a39c9db2/\nPublication officielle : https://www.simap.ch/fr/project-deta
+ il/a1c52e32-5226-43c3-ba60-39fca39c9db2
+URL:https://auftragsregister.ch/fr/auftrag/a1c52e32-5226-43c3-ba60-39fca39c
+ 9db2/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rund um den OP\, BKP 287 Baureinigung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

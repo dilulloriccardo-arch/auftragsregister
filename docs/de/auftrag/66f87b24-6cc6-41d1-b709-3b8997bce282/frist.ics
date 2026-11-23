@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:66f87b24-6cc6-41d1-b709-3b8997bce282-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261214T140000Z
+SUMMARY:Eingabefrist: Digitalisierung & Sharing der SBB Strassenfahrzeuge
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Informatik Eink
+ auf\nEingabefrist: 14.12.2026\, 15.00 Uhr\nIm Register: https://auftragsr
+ egister.ch/de/auftrag/66f87b24-6cc6-41d1-b709-3b8997bce282/\nAmtliche Publ
+ ikation: https://www.simap.ch/de/project-detail/66f87b24-6cc6-41d1-b709-3b
+ 8997bce282
+URL:https://auftragsregister.ch/de/auftrag/66f87b24-6cc6-41d1-b709-3b8997bc
+ e282/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Digitalisierung & Sharing der SBB Strassenfahrzeu
+ ge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

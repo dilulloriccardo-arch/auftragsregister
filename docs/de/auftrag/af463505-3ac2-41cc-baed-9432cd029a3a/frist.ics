@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af463505-3ac2-41cc-baed-9432cd029a3a-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Eingabefrist: 1 Kommunalfahrzeug 4x4 GR 79'111_B7
+DESCRIPTION:Auftraggeber: Tiefbauamt Graubünden\nEingabefrist: 30.12.2026\
+ , 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/af463505
+ -3ac2-41cc-baed-9432cd029a3a/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/af463505-3ac2-41cc-baed-9432cd029a3a
+URL:https://auftragsregister.ch/de/auftrag/af463505-3ac2-41cc-baed-9432cd02
+ 9a3a/
+LOCATION:Thusis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 1 Kommunalfahrzeug 4x4 GR 79'111_B7
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

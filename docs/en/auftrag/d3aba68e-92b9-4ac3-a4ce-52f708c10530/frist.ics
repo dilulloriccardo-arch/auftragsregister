@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3aba68e-92b9-4ac3-a4ce-52f708c10530-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261204T090000Z
+SUMMARY:Submission deadline: Amriswil\, Poststrasse Süd\, Werkleitungen un
+ d Trafostation
+DESCRIPTION:Public buyer: Regio Energie Amriswil (REA)\nSubmission deadline
+ : 4 Dec 2026\, 10:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/d3aba68e-92b9-4ac3-a4ce-52f708c10530/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/d3aba68e-92b9-4ac3-a4ce-52f708c10530
+URL:https://auftragsregister.ch/en/auftrag/d3aba68e-92b9-4ac3-a4ce-52f708c1
+ 0530/
+LOCATION:Amriswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Amriswil\, Poststrasse Süd\, Werkleitunge
+ n und Trafostation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:99da1dd6-52b8-4374-abe7-5c0daec160b2-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270125T160000Z
+SUMMARY:Submission deadline: 100355 New-build Triemli Rehabilitation Clinic
+ \, Zurich – BKP 250 Sanitary facilities
+DESCRIPTION:Public buyer: Stiftung Kliniken Valens (Baulink AG)\nSubmission
+  deadline: 25 Jan 2027\, 17:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/99da1dd6-52b8-4374-abe7-5c0daec160b2/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/99da1dd6-52b8-4374-abe7-5c0daec1
+ 60b2
+URL:https://auftragsregister.ch/en/auftrag/99da1dd6-52b8-4374-abe7-5c0daec1
+ 60b2/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 100355 New-build Triemli Rehabilitation Cl
+ inic\, Zurich – BKP 250 Sanitary facilities
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

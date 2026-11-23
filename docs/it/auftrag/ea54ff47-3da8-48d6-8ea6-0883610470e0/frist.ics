@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ea54ff47-3da8-48d6-8ea6-0883610470e0-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Scadenza: Neubau Hauptsitz EWN: Aufzüge BKP 361
+DESCRIPTION:Ente pubblico: Kantonales Elektrizitätswerk Nidwalden\nScadenz
+ a: 14.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/ea54ff47-3da8-48d6-8ea6-0883610470e0/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/ea54ff47-3da8-48d6-8ea6-0883610470e0
+URL:https://auftragsregister.ch/it/auftrag/ea54ff47-3da8-48d6-8ea6-08836104
+ 70e0/
+LOCATION:Buochs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Hauptsitz EWN: Aufzüge BKP 361
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

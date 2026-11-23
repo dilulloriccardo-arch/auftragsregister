@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:81fa795e-d6c0-4acf-8e77-7ab7121cad1c-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261216T225900Z
+SUMMARY:Submission deadline: Beschaffung von typengleichen Patrouillenfahrz
+ eugen für die Zuger Polizei
+DESCRIPTION:Public buyer: Kanton Zug\, handelnd durch die Sicherheitsdirekt
+ ion\nSubmission deadline: 16 Dec 2026\, 23:59\nIn the register: https://
+ auftragsregister.ch/en/auftrag/81fa795e-d6c0-4acf-8e77-7ab7121cad1c/\nOffi
+ cial publication: https://www.simap.ch/en/project-detail/81fa795e-d6c0-4ac
+ f-8e77-7ab7121cad1c
+URL:https://auftragsregister.ch/en/auftrag/81fa795e-d6c0-4acf-8e77-7ab7121c
+ ad1c/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung von typengleichen Patrouillenf
+ ahrzeugen für die Zuger Polizei
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

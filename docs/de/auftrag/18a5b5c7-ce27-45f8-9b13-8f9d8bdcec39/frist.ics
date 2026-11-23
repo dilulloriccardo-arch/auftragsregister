@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18a5b5c7-ce27-45f8-9b13-8f9d8bdcec39-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Eingabefrist: Neubau Gemeindehaus Bonstetten
+DESCRIPTION:Auftraggeber: Gemeinde Bonstetten\nEingabefrist: 16.12.2026\nIm
+  Register: https://auftragsregister.ch/de/auftrag/18a5b5c7-ce27-45f8-9b13-
+ 8f9d8bdcec39/\nAmtliche Publikation: https://www.simap.ch/de/project-detai
+ l/18a5b5c7-ce27-45f8-9b13-8f9d8bdcec39
+URL:https://auftragsregister.ch/de/auftrag/18a5b5c7-ce27-45f8-9b13-8f9d8bdc
+ ec39/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Gemeindehaus Bonstetten
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

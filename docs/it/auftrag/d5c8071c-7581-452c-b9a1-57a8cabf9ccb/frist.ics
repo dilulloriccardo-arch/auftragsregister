@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d5c8071c-7581-452c-b9a1-57a8cabf9ccb-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261208T100000Z
+SUMMARY:Scadenza: Zerstörungsfreie Werkstoffprüfung an Fahrwerkskomponent
+ en
+DESCRIPTION:Ente pubblico: Basler Verkehrs-Betriebe (BVB)\nScadenza: 08.12.
+ 2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/d5c8071
+ c-7581-452c-b9a1-57a8cabf9ccb/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/d5c8071c-7581-452c-b9a1-57a8cabf9ccb
+URL:https://auftragsregister.ch/it/auftrag/d5c8071c-7581-452c-b9a1-57a8cabf
+ 9ccb/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Zerstörungsfreie Werkstoffprüfung an Fahrwerkskompo
+ nenten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

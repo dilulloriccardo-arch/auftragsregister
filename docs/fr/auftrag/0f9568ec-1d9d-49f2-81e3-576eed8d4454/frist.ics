@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0f9568ec-1d9d-49f2-81e3-576eed8d4454-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Délai de remise : Fourniture de luminaires et de leurs accessoir
+ es Poste de Foretaille
+DESCRIPTION:Acheteur public : Services industriels de Genève (SIG) - Dir
+ ection Achats\nDélai de remise : 22.12.2026\, 10 h 00\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/0f9568ec-1d9d-49f2-81e3-57
+ 6eed8d4454/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/0f9568ec-1d9d-49f2-81e3-576eed8d4454
+URL:https://auftragsregister.ch/fr/auftrag/0f9568ec-1d9d-49f2-81e3-576eed8d
+ 4454/
+LOCATION:Le Lignon (GE)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture de luminaires et de leurs acces
+ soires Poste de Foretaille
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

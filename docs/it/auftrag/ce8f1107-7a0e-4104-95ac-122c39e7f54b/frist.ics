@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce8f1107-7a0e-4104-95ac-122c39e7f54b-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Scadenza: SAP Dienstleistungen S/4 HANA
+DESCRIPTION:Ente pubblico: Flughafen Zürich AG - Zentraler Einkauf\nScaden
+ za: 08.01.2027\, 12:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/ce8f1107-7a0e-4104-95ac-122c39e7f54b/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/ce8f1107-7a0e-4104-95ac-122c39e7f54b
+URL:https://auftragsregister.ch/it/auftrag/ce8f1107-7a0e-4104-95ac-122c39e7
+ f54b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: SAP Dienstleistungen S/4 HANA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

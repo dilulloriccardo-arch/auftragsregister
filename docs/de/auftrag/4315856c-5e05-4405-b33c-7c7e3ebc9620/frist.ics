@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4315856c-5e05-4405-b33c-7c7e3ebc9620-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261222T225900Z
+SUMMARY:Eingabefrist: Burgdorf\; Verkehrssanierung Kirchbergstrasse-Bahnhof
+ \; Planerleistungen Phase 32-53
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 22.12.
+ 2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/431
+ 5856c-5e05-4405-b33c-7c7e3ebc9620/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/4315856c-5e05-4405-b33c-7c7e3ebc9620
+URL:https://auftragsregister.ch/de/auftrag/4315856c-5e05-4405-b33c-7c7e3ebc
+ 9620/
+LOCATION:Burgdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Burgdorf\; Verkehrssanierung Kirchbergstrasse-Bah
+ nhof\; Planerleistungen Phase 32-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

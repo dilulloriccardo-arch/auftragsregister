@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:db9a0c78-f9c7-49e0-8f68-9cfa8b60decc-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261207T225900Z
+SUMMARY:Submission deadline: Ecône - Nouveau poste\, Travaux gros œuvre
+DESCRIPTION:Public buyer: FMV SA\nSubmission deadline: 7 Dec 2026\, 23:59
+ \nIn the register: https://auftragsregister.ch/en/auftrag/db9a0c78-f9c7-49
+ e0-8f68-9cfa8b60decc/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/db9a0c78-f9c7-49e0-8f68-9cfa8b60decc
+URL:https://auftragsregister.ch/en/auftrag/db9a0c78-f9c7-49e0-8f68-9cfa8b60
+ decc/
+LOCATION:Riddes
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ecône - Nouveau poste\, Travaux gros œuv
+ re
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

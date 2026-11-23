@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:75c45f62-f280-4186-9a19-7015a848a86d-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270115T225500Z
+SUMMARY:Scadenza: Ersatzbeschaffung von 76 Stk. Patientenmonitoren/Defibril
+ latoren
+DESCRIPTION:Ente pubblico: SID - Schutz & Rettung (SRZ)\nScadenza: 15.01.20
+ 27\, 23:55\nNel registro: https://auftragsregister.ch/it/auftrag/75c45f62-
+ f280-4186-9a19-7015a848a86d/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/75c45f62-f280-4186-9a19-7015a848a86d
+URL:https://auftragsregister.ch/it/auftrag/75c45f62-f280-4186-9a19-7015a848
+ a86d/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ersatzbeschaffung von 76 Stk. Patientenmonitoren/Defi
+ brillatoren
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

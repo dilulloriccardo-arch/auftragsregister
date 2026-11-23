@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:568b688e-ce0c-4a7e-a2ee-cb56672f8ac6-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Scadenza: Wohnen am Stadtpark: BKP 257 Sprinkleranlagen
+DESCRIPTION:Ente pubblico: Stadt Schlieren\, Bereich Liegenschaften\nScaden
+ za: 14.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/568b688e-ce0c-4a7e-a2ee-cb56672f8ac6/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/568b688e-ce0c-4a7e-a2ee-cb56672f8ac6
+URL:https://auftragsregister.ch/it/auftrag/568b688e-ce0c-4a7e-a2ee-cb56672f
+ 8ac6/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wohnen am Stadtpark: BKP 257 Sprinkleranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

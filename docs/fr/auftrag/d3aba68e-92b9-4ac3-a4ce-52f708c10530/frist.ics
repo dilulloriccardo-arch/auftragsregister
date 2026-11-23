@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d3aba68e-92b9-4ac3-a4ce-52f708c10530-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261204T090000Z
+SUMMARY:Délai de remise : Amriswil\, Poststrasse Süd\, Werkleitungen un
+ d Trafostation
+DESCRIPTION:Acheteur public : Regio Energie Amriswil (REA)\nDélai de rem
+ ise : 04.12.2026\, 10 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/d3aba68e-92b9-4ac3-a4ce-52f708c10530/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/d3aba68e-92b9-4ac3-a4ce
+ -52f708c10530
+URL:https://auftragsregister.ch/fr/auftrag/d3aba68e-92b9-4ac3-a4ce-52f708c1
+ 0530/
+LOCATION:Amriswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Amriswil\, Poststrasse Süd\, Werkleitunge
+ n und Trafostation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

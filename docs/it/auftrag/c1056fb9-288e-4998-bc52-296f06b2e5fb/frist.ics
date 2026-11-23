@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c1056fb9-288e-4998-bc52-296f06b2e5fb-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Scadenza: 1 Veicolo comunale 4x4 GR 51'285_B2
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 30.12.2026\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/c1056fb9-288e-4
+ 998-bc52-296f06b2e5fb/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/c1056fb9-288e-4998-bc52-296f06b2e5fb
+URL:https://auftragsregister.ch/it/auftrag/c1056fb9-288e-4998-bc52-296f06b2
+ e5fb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 1 Veicolo comunale 4x4 GR 51'285_B2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

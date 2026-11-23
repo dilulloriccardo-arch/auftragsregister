@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4172d283-5cf3-47f9-9d3d-723a44f44562-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Eingabefrist: Ausbau Waldstrasse Giebel - Sulzi\, 3765 Oberwil i.S.
+DESCRIPTION:Auftraggeber: Bäuertgemeinde Oberwil i.S.\, Waldweganteiler Ba
+ nnwald - Neuenberg (N11 Bauingenieure GmbH)\nEingabefrist: 22.12.2026\nIm 
+ Register: https://auftragsregister.ch/de/auftrag/4172d283-5cf3-47f9-9d3d-7
+ 23a44f44562/\nAmtliche Publikation: https://www.simap.ch/de/project-detail
+ /4172d283-5cf3-47f9-9d3d-723a44f44562
+URL:https://auftragsregister.ch/de/auftrag/4172d283-5cf3-47f9-9d3d-723a44f4
+ 4562/
+LOCATION:Oberwil i.S.
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ausbau Waldstrasse Giebel - Sulzi\, 3765 Oberwil 
+ i.S.
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

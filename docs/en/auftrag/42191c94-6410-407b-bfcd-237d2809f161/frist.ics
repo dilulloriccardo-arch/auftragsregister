@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:42191c94-6410-407b-bfcd-237d2809f161-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261216T100000Z
+SUMMARY:Submission deadline: Retrofit lampes fluorescentes en LED (2385) In
+ stallations électriques
+DESCRIPTION:Public buyer: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nS
+ ubmission deadline: 16 Dec 2026\, 11:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/42191c94-6410-407b-bfcd-237d2809f161/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/42191c94-6410-407b-bfcd
+ -237d2809f161
+URL:https://auftragsregister.ch/en/auftrag/42191c94-6410-407b-bfcd-237d2809
+ f161/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Retrofit lampes fluorescentes en LED (2385
+ ) Installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

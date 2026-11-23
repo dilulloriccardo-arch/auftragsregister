@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3cd60a9-4499-48d6-9c11-729ee53cbab5-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Scadenza: Ausbau ARA Reuss-Schachen: Sanitäranlagen
+DESCRIPTION:Ente pubblico: Abwasserverband Reuss-Schachen\nScadenza: 13.01.
+ 2027\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/b3cd60a
+ 9-4499-48d6-9c11-729ee53cbab5/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/b3cd60a9-4499-48d6-9c11-729ee53cbab5
+URL:https://auftragsregister.ch/it/auftrag/b3cd60a9-4499-48d6-9c11-729ee53c
+ bab5/
+LOCATION:Merenschwand
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausbau ARA Reuss-Schachen: Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

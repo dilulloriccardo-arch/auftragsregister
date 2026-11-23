@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:79afad88-b859-4ca3-beaa-170e6b7cf652-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T090000Z
+SUMMARY:Submission deadline: Maintenance and repair of gas detection and al
+ arm systems
+DESCRIPTION:Public buyer: HBD - Immobilien Stadt Zürich (IMMO)\nSubmission
+  deadline: 13 Jan 2027\, 10:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/79afad88-b859-4ca3-beaa-170e6b7cf652/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/79afad88-b859-4ca3-beaa-170e6b7c
+ f652
+URL:https://auftragsregister.ch/en/auftrag/79afad88-b859-4ca3-beaa-170e6b7c
+ f652/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Maintenance and repair of gas detection an
+ d alarm systems
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

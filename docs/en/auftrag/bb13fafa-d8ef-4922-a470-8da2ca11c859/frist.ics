@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb13fafa-d8ef-4922-a470-8da2ca11c859-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270128T150000Z
+SUMMARY:Submission deadline: USZ Campus MITTE 1|2 / BKP 273.18 Türen Paket
+  8\, Revisionstüren (OV)
+DESCRIPTION:Public buyer: Universitätsspital Zürich\nSubmission deadline:
+  28 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/bb13fafa-d8ef-4922-a470-8da2ca11c859/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/bb13fafa-d8ef-4922-a470-8da2ca11c859
+URL:https://auftragsregister.ch/en/auftrag/bb13fafa-d8ef-4922-a470-8da2ca11
+ c859/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: USZ Campus MITTE 1|2 / BKP 273.18 Türen P
+ aket 8\, Revisionstüren (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

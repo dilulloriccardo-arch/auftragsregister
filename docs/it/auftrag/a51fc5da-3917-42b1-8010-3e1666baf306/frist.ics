@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a51fc5da-3917-42b1-8010-3e1666baf306-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261203T150000Z
+SUMMARY:Scadenza: BAV 83253 SA Falletsche\, Teilinstandsetzung Sporthalle -
+  BKP 273.3 Allgemeine Schreinerarbeiten
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 03.12
+ .2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/a51fc5
+ da-3917-42b1-8010-3e1666baf306/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/a51fc5da-3917-42b1-8010-3e1666baf306
+URL:https://auftragsregister.ch/it/auftrag/a51fc5da-3917-42b1-8010-3e1666ba
+ f306/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 83253 SA Falletsche\, Teilinstandsetzung Sporthal
+ le - BKP 273.3 Allgemeine Schreinerarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

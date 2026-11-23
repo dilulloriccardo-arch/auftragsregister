@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3dae841b-e60f-451b-850f-a2b87a697e70-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: Georges-Favon 7 – Lot CVC
+DESCRIPTION:Auftraggeber: Services Industriels de Genève (SIG) Direction P
+ rojets Industriels et Solutions Digitales\nEingabefrist: 14.12.2026\, 12.0
+ 0 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3dae841b-e60f-
+ 451b-850f-a2b87a697e70/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/3dae841b-e60f-451b-850f-a2b87a697e70
+URL:https://auftragsregister.ch/de/auftrag/3dae841b-e60f-451b-850f-a2b87a69
+ 7e70/
+LOCATION:Bd Georges-Favon 7
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Georges-Favon 7 – Lot CVC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

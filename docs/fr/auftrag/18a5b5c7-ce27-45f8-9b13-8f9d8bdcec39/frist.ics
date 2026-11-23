@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18a5b5c7-ce27-45f8-9b13-8f9d8bdcec39-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Délai de remise : Neubau Gemeindehaus Bonstetten
+DESCRIPTION:Acheteur public : Gemeinde Bonstetten\nDélai de remise : 1
+ 6.12.2026\nDans le registre : https://auftragsregister.ch/fr/auftrag/18a
+ 5b5c7-ce27-45f8-9b13-8f9d8bdcec39/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/18a5b5c7-ce27-45f8-9b13-8f9d8bdcec39
+URL:https://auftragsregister.ch/fr/auftrag/18a5b5c7-ce27-45f8-9b13-8f9d8bdc
+ ec39/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubau Gemeindehaus Bonstetten
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

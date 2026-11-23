@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edcdf3ae-264f-412a-ac37-5e1edee338ca-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Scadenza: Sistemazione esterna Centro sportivo e risanamento Via Ce
+ ntro sportivo Grono
+DESCRIPTION:Ente pubblico: Comune politico di Grono\nScadenza: 14.12.2026\,
+  23:59\nNel registro: https://auftragsregister.ch/it/auftrag/edcdf3ae-264f
+ -412a-ac37-5e1edee338ca/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/edcdf3ae-264f-412a-ac37-5e1edee338ca
+URL:https://auftragsregister.ch/it/auftrag/edcdf3ae-264f-412a-ac37-5e1edee3
+ 38ca/
+LOCATION:Grono
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sistemazione esterna Centro sportivo e risanamento Vi
+ a Centro sportivo Grono
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

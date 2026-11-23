@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25bfd0c9-bdd4-4485-8c02-f1dcdf221bdb-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261214T153000Z
+SUMMARY:Scadenza: BRENAZ : Création de postes de formation atelier cuisine
+DESCRIPTION:Ente pubblico: Office cantonal des bâtiments (OCBA)\nScadenza:
+  14.12.2026\, 16:30\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 25bfd0c9-bdd4-4485-8c02-f1dcdf221bdb/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/25bfd0c9-bdd4-4485-8c02-f1dcdf221bdb
+URL:https://auftragsregister.ch/it/auftrag/25bfd0c9-bdd4-4485-8c02-f1dcdf22
+ 1bdb/
+LOCATION:Puplinge
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BRENAZ : Création de postes de formation atelier cui
+ sine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

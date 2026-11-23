@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bcd802c0-1e4c-478b-a1c0-8c2db7d27a37-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270106T110000Z
+SUMMARY:Délai de remise : 201.1 Rückbau\, Baugrube\, Werkleitungen
+DESCRIPTION:Acheteur public : Einwohnergemeinde Stadt Sursee\nDélai de r
+ emise : 06.01.2027\, 12 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/bcd802c0-1e4c-478b-a1c0-8c2db7d27a37/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/bcd802c0-1e4c-478b-a1
+ c0-8c2db7d27a37
+URL:https://auftragsregister.ch/fr/auftrag/bcd802c0-1e4c-478b-a1c0-8c2db7d2
+ 7a37/
+LOCATION:Sursee
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 201.1 Rückbau\, Baugrube\, Werkleitungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

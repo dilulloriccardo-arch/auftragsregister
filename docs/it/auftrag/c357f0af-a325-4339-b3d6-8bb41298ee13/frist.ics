@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c357f0af-a325-4339-b3d6-8bb41298ee13-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Scadenza: ARA Thurau\, Phosphatfällung
+DESCRIPTION:Ente pubblico: Abwasserverband Thurau\nScadenza: 29.01.2027\, 1
+ 2:00\nNel registro: https://auftragsregister.ch/it/auftrag/c357f0af-a325-4
+ 339-b3d6-8bb41298ee13/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/c357f0af-a325-4339-b3d6-8bb41298ee13
+URL:https://auftragsregister.ch/it/auftrag/c357f0af-a325-4339-b3d6-8bb41298
+ ee13/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ARA Thurau\, Phosphatfällung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

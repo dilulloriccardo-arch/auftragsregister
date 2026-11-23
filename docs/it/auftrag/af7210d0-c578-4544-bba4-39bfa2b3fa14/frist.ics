@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af7210d0-c578-4544-bba4-39bfa2b3fa14-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Scadenza: Kantonsstrasse Nr. 45\, Kirchberg: Neudorfstrasse\, Ortse
+ ingang bis Sonneggweg
+DESCRIPTION:Ente pubblico: Kanton St.Gallen\, Tiefbauamt\, Strassenkreisins
+ pektorat Wattwil\nScadenza: 15.12.2026\, 23:59\nNel registro: https://auft
+ ragsregister.ch/it/auftrag/af7210d0-c578-4544-bba4-39bfa2b3fa14/\nPubblica
+ zione ufficiale: https://www.simap.ch/it/project-detail/af7210d0-c578-4544
+ -bba4-39bfa2b3fa14
+URL:https://auftragsregister.ch/it/auftrag/af7210d0-c578-4544-bba4-39bfa2b3
+ fa14/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kantonsstrasse Nr. 45\, Kirchberg: Neudorfstrasse\, O
+ rtseingang bis Sonneggweg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

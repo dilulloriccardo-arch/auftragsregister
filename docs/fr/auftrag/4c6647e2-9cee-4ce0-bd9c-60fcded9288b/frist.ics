@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c6647e2-9cee-4ce0-bd9c-60fcded9288b-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Délai de remise : Transformation et rénovation du CMB - LOT N°
+ 4 – FACADE METALLIQUE
+DESCRIPTION:Acheteur public : Transport publics genevois (tpg)\nDélai de
+  remise : 11.01.2027\, 12 h 00\nDans le registre : https://auftrag
+ sregister.ch/fr/auftrag/4c6647e2-9cee-4ce0-bd9c-60fcded9288b/\nPublication
+  officielle : https://www.simap.ch/fr/project-detail/4c6647e2-9cee-4ce0-
+ bd9c-60fcded9288b
+URL:https://auftragsregister.ch/fr/auftrag/4c6647e2-9cee-4ce0-bd9c-60fcded9
+ 288b/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Transformation et rénovation du CMB - LOT
+  N°4 – FACADE METALLIQUE
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

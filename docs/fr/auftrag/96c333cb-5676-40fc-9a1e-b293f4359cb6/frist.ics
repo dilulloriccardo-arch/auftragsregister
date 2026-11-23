@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:96c333cb-5676-40fc-9a1e-b293f4359cb6-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261217T110000Z
+SUMMARY:Délai de remise : Erweiterung und Sanierung Werkleitungen Geissb
+ el - Tiefbau- und Rohrlegearbeiten
+DESCRIPTION:Acheteur public : Stadt Laufenburg\nDélai de remise : 17.1
+ 2.2026\, 12 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/96c333cb-5676-40fc-9a1e-b293f4359cb6/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/96c333cb-5676-40fc-9a1e-b293f4359cb
+ 6
+URL:https://auftragsregister.ch/fr/auftrag/96c333cb-5676-40fc-9a1e-b293f435
+ 9cb6/
+LOCATION:Sulz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Erweiterung und Sanierung Werkleitungen Ge
+ issbel - Tiefbau- und Rohrlegearbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

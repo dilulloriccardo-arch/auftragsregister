@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c328c044-6c28-47d9-89d7-a34420671749-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270106T140000Z
+SUMMARY:Délai de remise : Nouvelle construction de l'école cantonale de
+  Stein - BKP 902 Installations sportives
+DESCRIPTION:Acheteur public : Kanton Aargau - Departement Finanzen und Re
+ sourcen - Immobilien Aargau\nDélai de remise : 06.01.2027\, 15 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/c328c044-6c2
+ 8-47d9-89d7-a34420671749/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/c328c044-6c28-47d9-89d7-a34420671749
+URL:https://auftragsregister.ch/fr/auftrag/c328c044-6c28-47d9-89d7-a3442067
+ 1749/
+LOCATION:Stein (AG)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nouvelle construction de l'école cantonal
+ e de Stein - BKP 902 Installations sportives
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

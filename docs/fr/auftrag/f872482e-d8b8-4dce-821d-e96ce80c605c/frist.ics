@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f872482e-d8b8-4dce-821d-e96ce80c605c-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270218T225900Z
+SUMMARY:Délai de remise : Anlagenverkabelung (NS) Bundle 2026-2
+DESCRIPTION:Acheteur public : Swissgrid AG - Asset & Maintenance\nDélai 
+ de remise : 18.02.2027\, 23 h 59\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/f872482e-d8b8-4dce-821d-e96ce80c605c/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/f872482e-d8b8-4dc
+ e-821d-e96ce80c605c
+URL:https://auftragsregister.ch/fr/auftrag/f872482e-d8b8-4dce-821d-e96ce80c
+ 605c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Anlagenverkabelung (NS) Bundle 2026-2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

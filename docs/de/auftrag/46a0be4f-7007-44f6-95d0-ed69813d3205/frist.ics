@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:46a0be4f-7007-44f6-95d0-ed69813d3205-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Eingabefrist: Verlängerung der Lizenzen für die Plattform «Tungs
+ ten Kofax Capture»
+DESCRIPTION:Auftraggeber: Staat Freiburg\, Amt für Informatik und Telekomm
+ unikation ITA\nEingabefrist: 07.01.2027\, 11.00 Uhr\nIm Register: https:/
+ /auftragsregister.ch/de/auftrag/46a0be4f-7007-44f6-95d0-ed69813d3205/\nAmt
+ liche Publikation: https://www.simap.ch/de/project-detail/46a0be4f-7007-44
+ f6-95d0-ed69813d3205
+URL:https://auftragsregister.ch/de/auftrag/46a0be4f-7007-44f6-95d0-ed69813d
+ 3205/
+LOCATION:Freiburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Verlängerung der Lizenzen für die Plattform «T
+ ungsten Kofax Capture»
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

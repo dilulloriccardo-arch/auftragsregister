@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:91bc013f-9886-4e32-b287-b26e54c01129-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T160000Z
+SUMMARY:Délai de remise : Neubauten Stiftung Schürmatt - BKP 294/295 HL
+ KKS-\, MSRL-Planung inkl. räumliche und technische Fachkoordination
+DESCRIPTION:Acheteur public : Stiftung Schürmatt\nDélai de remise : 1
+ 7.12.2026\, 17 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/91bc013f-9886-4e32-b287-b26e54c01129/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/91bc013f-9886-4e32-b287-b26e54
+ c01129
+URL:https://auftragsregister.ch/fr/auftrag/91bc013f-9886-4e32-b287-b26e54c0
+ 1129/
+LOCATION:Zetzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neubauten Stiftung Schürmatt - BKP 294/29
+ 5 HLKKS-\, MSRL-Planung inkl. räumliche und technische Fachkoordination
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

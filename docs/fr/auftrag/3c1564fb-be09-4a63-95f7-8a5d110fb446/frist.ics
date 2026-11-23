@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c1564fb-be09-4a63-95f7-8a5d110fb446-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270106T150000Z
+SUMMARY:Délai de remise : BAV 83185 SA Rütihof\, Umbau BET für TS - BK
+ P 244 Lufttechnische Anlagen
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 06.01.2027\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/3c1564fb-be09-4a63-95f7-8a5d110fb446/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/3c1564fb-be09-4a63-9
+ 5f7-8a5d110fb446
+URL:https://auftragsregister.ch/fr/auftrag/3c1564fb-be09-4a63-95f7-8a5d110f
+ b446/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 83185 SA Rütihof\, Umbau BET für TS 
+ - BKP 244 Lufttechnische Anlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9fbddb0-fdf8-4d55-bb78-36d9e0fc5463-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270115T130000Z
+SUMMARY:Délai de remise : Route de liaison Leimen–Holenstein \; presta
+ tions de planification selon les phases SIA 31 à 53
+DESCRIPTION:Acheteur public : Abteilung Tiefbau\nDélai de remise : 15.
+ 01.2027\, 14 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/e9fbddb0-fdf8-4d55-bb78-36d9e0fc5463/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/e9fbddb0-fdf8-4d55-bb78-36d9e0fc54
+ 63
+URL:https://auftragsregister.ch/fr/auftrag/e9fbddb0-fdf8-4d55-bb78-36d9e0fc
+ 5463/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Route de liaison Leimen–Holenstein \; pr
+ estations de planification selon les phases SIA 31 à 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

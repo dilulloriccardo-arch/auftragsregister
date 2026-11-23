@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2efe5d03-a873-4cdf-a7b0-405021c661cc-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261218T110000Z
+SUMMARY:Délai de remise : Compute4SBB II - Data Center
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Informati
+ k Einkauf\nDélai de remise : 18.12.2026\, 12 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/2efe5d03-a873-4cdf-a7b0-405021
+ c661cc/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /2efe5d03-a873-4cdf-a7b0-405021c661cc
+URL:https://auftragsregister.ch/fr/auftrag/2efe5d03-a873-4cdf-a7b0-405021c6
+ 61cc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Compute4SBB II - Data Center
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

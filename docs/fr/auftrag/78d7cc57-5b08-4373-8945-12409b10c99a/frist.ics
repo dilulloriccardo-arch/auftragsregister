@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78d7cc57-5b08-4373-8945-12409b10c99a-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270115T140000Z
+SUMMARY:Délai de remise : Nouvelle construction / Réaménagement de la 
+ place de la Gare / Gare routière / Sennhofplatz | Ingénieur-projet respo
+ nsable de l'ensemble – Prestations d'ingénierie SIA\, phases 32 à 53
+DESCRIPTION:Acheteur public : Bezirksverwaltung Einsiedeln\nDélai de rem
+ ise : 15.01.2027\, 15 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/78d7cc57-5b08-4373-8945-12409b10c99a/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/78d7cc57-5b08-4373-8945
+ -12409b10c99a
+URL:https://auftragsregister.ch/fr/auftrag/78d7cc57-5b08-4373-8945-12409b10
+ c99a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nouvelle construction / Réaménagement de
+  la place de la Gare / Gare routière / Sennhofplatz | Ingénieur-projet r
+ esponsable de l'ensemble – Prestations d'ingénierie SIA\, phases 32 à 
+ 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

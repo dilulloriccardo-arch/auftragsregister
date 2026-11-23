@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:50206512-ce16-4584-b701-49ed341253f9-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270115T120000Z
+SUMMARY:Scadenza: Installation photovoltaïque pour l’hôpital de Riaz 
+ – l'HFR
+DESCRIPTION:Ente pubblico: HFR | hôpital fribourgeois - freiburger spital\
+ nScadenza: 15.01.2027\, 13:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/50206512-ce16-4584-b701-49ed341253f9/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/50206512-ce16-4584-b701-49ed341253f
+ 9
+URL:https://auftragsregister.ch/it/auftrag/50206512-ce16-4584-b701-49ed3412
+ 53f9/
+LOCATION:HFR Riaz Hôpital Cantonal\, Rue de l’Hôpital 9
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Installation photovoltaïque pour l’hôpital de Ria
+ z – l'HFR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

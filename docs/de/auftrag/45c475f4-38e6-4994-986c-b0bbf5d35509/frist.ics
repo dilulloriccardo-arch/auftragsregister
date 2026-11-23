@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45c475f4-38e6-4994-986c-b0bbf5d35509-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:1
+DTSTART:20270108T225900Z
+SUMMARY:Eingabefrist: (26254) 998 Reinigungsarbeiten FLEX und GENORA
+DESCRIPTION:Auftraggeber: Eidgenössisches Nuklearsicherheitsinspektorat EN
+ SI\nEingabefrist: 08.01.2027\, 23.59 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/45c475f4-38e6-4994-986c-b0bbf5d35509/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/45c475f4-38e6-4994-986c-b0b
+ bf5d35509
+URL:https://auftragsregister.ch/de/auftrag/45c475f4-38e6-4994-986c-b0bbf5d3
+ 5509/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (26254) 998 Reinigungsarbeiten FLEX und GENORA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

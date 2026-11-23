@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:17d021fe-9ffb-4aef-a32c-6f69b9614185-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270122T150000Z
+SUMMARY:Délai de remise : CENTRE SCOLAIRE MARLY CITÉ\, ASSAINISSEMENT E
+ T AGRANDISSEMENT\, CFC 283\, FAUX-PLAFONDS
+DESCRIPTION:Acheteur public : Commune de Marly\nDélai de remise : 22.0
+ 1.2027\, 16 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/17d021fe-9ffb-4aef-a32c-6f69b9614185/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/17d021fe-9ffb-4aef-a32c-6f69b961418
+ 5
+URL:https://auftragsregister.ch/fr/auftrag/17d021fe-9ffb-4aef-a32c-6f69b961
+ 4185/
+LOCATION:Marly
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CENTRE SCOLAIRE MARLY CITÉ\, ASSAINISSEME
+ NT ET AGRANDISSEMENT\, CFC 283\, FAUX-PLAFONDS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

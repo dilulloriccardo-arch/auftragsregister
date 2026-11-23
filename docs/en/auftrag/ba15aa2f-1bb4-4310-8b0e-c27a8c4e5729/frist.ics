@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ba15aa2f-1bb4-4310-8b0e-c27a8c4e5729-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261221T100000Z
+SUMMARY:Submission deadline: Actions à Performance Energétique (APE) pour
+  les bâtiments de la Cité Hospitalière du CHUV - Travaux d'optimisation
+  de l'éclairage CFC 283 Faux-plafonds
+DESCRIPTION:Public buyer: CHUV - Constructions ingénierie technique et sé
+ curité (CIT-S)\nSubmission deadline: 21 Dec 2026\, 11:00\nIn the regist
+ er: https://auftragsregister.ch/en/auftrag/ba15aa2f-1bb4-4310-8b0e-c27a8c4
+ e5729/\nOfficial publication: https://www.simap.ch/en/project-detail/ba15a
+ a2f-1bb4-4310-8b0e-c27a8c4e5729
+URL:https://auftragsregister.ch/en/auftrag/ba15aa2f-1bb4-4310-8b0e-c27a8c4e
+ 5729/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Actions à Performance Energétique (APE) 
+ pour les bâtiments de la Cité Hospitalière du CHUV - Travaux d'optimisa
+ tion de l'éclairage CFC 283 Faux-plafonds
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

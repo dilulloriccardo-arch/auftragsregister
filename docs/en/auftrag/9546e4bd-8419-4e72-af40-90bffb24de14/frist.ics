@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9546e4bd-8419-4e72-af40-90bffb24de14-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270128T225900Z
+SUMMARY:Submission deadline: MP-100138\, N01/42\, Werkhof Wallisellen\, Neu
+ bau
+DESCRIPTION:Public buyer: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nSubmission deadline: 28 Jan 2027\, 23:59\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/9546e4bd-8419-4e72-af40-90bffb24de14/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/9546e4bd-8419-4e72-
+ af40-90bffb24de14
+URL:https://auftragsregister.ch/en/auftrag/9546e4bd-8419-4e72-af40-90bffb24
+ de14/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-100138\, N01/42\, Werkhof Wallisellen\,
+  Neubau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b8a958f2-0e2d-4c00-9ef1-e4d88aa440a6-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Délai de remise : Mise en conformité des menuiseries extérieur
+ es de quatre immeubles (2132Bis) protections\, traitements polluants\, men
+ uiseries extérieures\, traitement des surfaces\, fermetures extérieures\
+ , menuiserie isolations des caissons de stores
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 09.12.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/b8a958f2-0e2d-4c00-9ef1-e4d88aa440a
+ 6/\nPublication officielle : https://www.simap.ch/fr/project-detail/b8a9
+ 58f2-0e2d-4c00-9ef1-e4d88aa440a6
+URL:https://auftragsregister.ch/fr/auftrag/b8a958f2-0e2d-4c00-9ef1-e4d88aa4
+ 40a6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mise en conformité des menuiseries extér
+ ieures de quatre immeubles (2132Bis) protections\, traitements polluants\,
+  menuiseries extérieures\, traitement des surfaces\, fermetures extérieu
+ res\, menuiserie isolations des caissons de stores
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

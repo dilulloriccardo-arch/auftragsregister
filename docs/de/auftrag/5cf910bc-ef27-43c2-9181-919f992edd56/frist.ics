@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5cf910bc-ef27-43c2-9181-919f992edd56-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261211T110000Z
+SUMMARY:Eingabefrist: BKP 272 Metallbauarbeiten (Treppengeländer)
+DESCRIPTION:Auftraggeber: Schulgemeinde Kreuzlingen\nEingabefrist: 11.12.20
+ 26\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/5cf91
+ 0bc-ef27-43c2-9181-919f992edd56/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/5cf910bc-ef27-43c2-9181-919f992edd56
+URL:https://auftragsregister.ch/de/auftrag/5cf910bc-ef27-43c2-9181-919f992e
+ dd56/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 272 Metallbauarbeiten (Treppengeländer)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

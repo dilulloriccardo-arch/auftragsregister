@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c6af1190-42c7-4094-9498-cc20d5178cac-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Scadenza: OGER FLOR l 13606 l BKP 242-02 Heizung
+DESCRIPTION:Ente pubblico: Hochbauamt\, Baubereich B\nScadenza: 14.01.2027\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/c6af1190-42c
+ 7-4094-9498-cc20d5178cac/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/c6af1190-42c7-4094-9498-cc20d5178cac
+URL:https://auftragsregister.ch/it/auftrag/c6af1190-42c7-4094-9498-cc20d517
+ 8cac/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: OGER FLOR l 13606 l BKP 242-02 Heizung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c4401bd2-b1e8-450a-a1a1-203405021fb0-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261211T220000Z
+SUMMARY:Eingabefrist: Beschaffung Forstspezial-Knickschlepper
+DESCRIPTION:Auftraggeber: Revier forestel La Punt Chamues-ch / Madulain\nEi
+ ngabefrist: 11.12.2026\, 23.00 Uhr\nIm Register: https://auftragsregister
+ .ch/de/auftrag/c4401bd2-b1e8-450a-a1a1-203405021fb0/\nAmtliche Publikation
+ : https://www.simap.ch/de/project-detail/c4401bd2-b1e8-450a-a1a1-203405021
+ fb0
+URL:https://auftragsregister.ch/de/auftrag/c4401bd2-b1e8-450a-a1a1-20340502
+ 1fb0/
+LOCATION:La Punt Chamues-ch
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung Forstspezial-Knickschlepper
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

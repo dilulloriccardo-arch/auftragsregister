@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10350035-370b-4b83-b4b6-669945688c2a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261218T140000Z
+SUMMARY:Délai de remise : Ersatz der Multifunktionsgeräte in der Gemein
+ deverwaltung und in den Schulen
+DESCRIPTION:Acheteur public : Gemeindeverwaltung Worb\nDélai de remise
+  : 18.12.2026\, 15 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/10350035-370b-4b83-b4b6-669945688c2a/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/10350035-370b-4b83-b4b6-66
+ 9945688c2a
+URL:https://auftragsregister.ch/fr/auftrag/10350035-370b-4b83-b4b6-66994568
+ 8c2a/
+LOCATION:Worb
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ersatz der Multifunktionsgeräte in der Ge
+ meindeverwaltung und in den Schulen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5da4b0e-0e41-4d9b-8d48-a92d4562f046-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Scadenza: Susch\, Bahnhofumbau - Kabelverlegung\, Spleissung und Me
+ ssungen
+DESCRIPTION:Ente pubblico: Rhätische Bahn AG\nScadenza: 11.12.2026\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/e5da4b0e-0e41-4d9b-
+ 8d48-a92d4562f046/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/e5da4b0e-0e41-4d9b-8d48-a92d4562f046
+URL:https://auftragsregister.ch/it/auftrag/e5da4b0e-0e41-4d9b-8d48-a92d4562
+ f046/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Susch\, Bahnhofumbau - Kabelverlegung\, Spleissung un
+ d Messungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

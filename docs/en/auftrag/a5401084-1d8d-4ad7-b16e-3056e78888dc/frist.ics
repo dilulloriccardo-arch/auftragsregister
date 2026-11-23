@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a5401084-1d8d-4ad7-b16e-3056e78888dc-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270108T150000Z
+SUMMARY:Submission deadline: MP-200051 N13 EP16 Landquart-Grenze GR/SG PUN 
+ - Bauherrenlabor
+DESCRIPTION:Public buyer: Ufficio federale delle strade USTRA\, divisione i
+ nfrastruttura stradale Est\nSubmission deadline: 8 Jan 2027\, 16:00\nIn 
+ the register: https://auftragsregister.ch/en/auftrag/a5401084-1d8d-4ad7-b1
+ 6e-3056e78888dc/\nOfficial publication: https://www.simap.ch/en/project-de
+ tail/a5401084-1d8d-4ad7-b16e-3056e78888dc
+URL:https://auftragsregister.ch/en/auftrag/a5401084-1d8d-4ad7-b16e-3056e788
+ 88dc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP-200051 N13 EP16 Landquart-Grenze GR/SG 
+ PUN - Bauherrenlabor
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c1056fb9-288e-4998-bc52-296f06b2e5fb-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Submission deadline: 1 Kommunalfahrzeug 4x4 GR 51'285_B2
+DESCRIPTION:Public buyer: Tiefbauamt Graubünden\nSubmission deadline: 30 
+ Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag
+ /c1056fb9-288e-4998-bc52-296f06b2e5fb/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/c1056fb9-288e-4998-bc52-296f06b2e5fb
+URL:https://auftragsregister.ch/en/auftrag/c1056fb9-288e-4998-bc52-296f06b2
+ e5fb/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 1 Kommunalfahrzeug 4x4 GR 51'285_B2
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

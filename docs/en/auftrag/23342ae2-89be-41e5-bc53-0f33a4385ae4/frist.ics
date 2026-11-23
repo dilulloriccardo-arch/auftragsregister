@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:23342ae2-89be-41e5-bc53-0f33a4385ae4-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Submission deadline: Markierungen Bezirk 4\; Haupt- und Verbindungs
+ strassen
+DESCRIPTION:Public buyer: Tiefbauamt Graubünden\nSubmission deadline: 23 
+ Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag
+ /23342ae2-89be-41e5-bc53-0f33a4385ae4/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/23342ae2-89be-41e5-bc53-0f33a4385ae4
+URL:https://auftragsregister.ch/en/auftrag/23342ae2-89be-41e5-bc53-0f33a438
+ 5ae4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Markierungen Bezirk 4\; Haupt- und Verbind
+ ungsstrassen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

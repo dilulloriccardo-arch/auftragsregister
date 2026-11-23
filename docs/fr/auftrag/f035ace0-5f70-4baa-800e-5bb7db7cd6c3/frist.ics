@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f035ace0-5f70-4baa-800e-5bb7db7cd6c3-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270118T110000Z
+SUMMARY:Délai de remise : Nouveau bâtiment abritant une caserne de pomp
+ iers et un dépôt de maintenance avec point de collecte principal Grubris
+ thof\, 8104 Weiningen
+DESCRIPTION:Acheteur public : Rapp AG\nDélai de remise : 18.01.2027\, 
+ 12 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/f
+ 035ace0-5f70-4baa-800e-5bb7db7cd6c3/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/f035ace0-5f70-4baa-800e-5bb7db7cd6c3
+URL:https://auftragsregister.ch/fr/auftrag/f035ace0-5f70-4baa-800e-5bb7db7c
+ d6c3/
+LOCATION:Weiningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nouveau bâtiment abritant une caserne de 
+ pompiers et un dépôt de maintenance avec point de collecte principal Gru
+ bristhof\, 8104 Weiningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

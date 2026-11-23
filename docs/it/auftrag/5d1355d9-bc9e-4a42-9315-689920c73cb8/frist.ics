@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5d1355d9-bc9e-4a42-9315-689920c73cb8-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270129T150000Z
+SUMMARY:Scadenza: CERM - Centre d'entretien routier des montagnes - La Chau
+ x-de-Fonds - LOT E03_Installations électriques - CFC 23
+DESCRIPTION:Ente pubblico: Service des bâtiments de l'Etat de Neuchâtel -
+  DOSP\nScadenza: 29.01.2027\, 16:00\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/5d1355d9-bc9e-4a42-9315-689920c73cb8/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/5d1355d9-bc9e-4a42-9315-68992
+ 0c73cb8
+URL:https://auftragsregister.ch/it/auftrag/5d1355d9-bc9e-4a42-9315-689920c7
+ 3cb8/
+LOCATION:La Chaux-de-Fonds
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: CERM - Centre d'entretien routier des montagnes - La 
+ Chaux-de-Fonds - LOT E03_Installations électriques - CFC 23
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

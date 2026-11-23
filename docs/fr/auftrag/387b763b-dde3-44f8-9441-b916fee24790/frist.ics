@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:387b763b-dde3-44f8-9441-b916fee24790-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270107T100000Z
+SUMMARY:Délai de remise : Remplacement des appareils de radiographie
+DESCRIPTION:Acheteur public : Kantonsspital Winterthur - Supply Chain Man
+ agement\nDélai de remise : 07.01.2027\, 11 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/387b763b-dde3-44f8-9441-b916fe
+ e24790/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /387b763b-dde3-44f8-9441-b916fee24790
+URL:https://auftragsregister.ch/fr/auftrag/387b763b-dde3-44f8-9441-b916fee2
+ 4790/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Remplacement des appareils de radiographie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

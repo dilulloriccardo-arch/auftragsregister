@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3174cac8-5064-4c21-b4fa-fee23ed691e7-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Submission deadline: 1 Schneefrässchleuder GR 5'190_B7
+DESCRIPTION:Public buyer: Tiefbauamt Graubünden\nSubmission deadline: 30 
+ Dec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag
+ /3174cac8-5064-4c21-b4fa-fee23ed691e7/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/3174cac8-5064-4c21-b4fa-fee23ed691e7
+URL:https://auftragsregister.ch/en/auftrag/3174cac8-5064-4c21-b4fa-fee23ed6
+ 91e7/
+LOCATION:Thusis\, Palastrasse 5
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 1 Schneefrässchleuder GR 5'190_B7
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

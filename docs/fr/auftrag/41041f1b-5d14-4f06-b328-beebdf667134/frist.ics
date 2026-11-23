@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:41041f1b-5d14-4f06-b328-beebdf667134-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261222T060000Z
+SUMMARY:Délai de remise : Ausschreibung Tanklöschfahrzeug / Klein-TLF /
+  MLF
+DESCRIPTION:Acheteur public : Ostschweizer Feuerwehr-Ausbildungszentrum\n
+ Délai de remise : 22.12.2026\, 7 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/41041f1b-5d14-4f06-b328-beebdf667134/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/41041f1b-5d
+ 14-4f06-b328-beebdf667134
+URL:https://auftragsregister.ch/fr/auftrag/41041f1b-5d14-4f06-b328-beebdf66
+ 7134/
+LOCATION:Bernhardzell
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausschreibung Tanklöschfahrzeug / Klein-T
+ LF / MLF
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78c46cff-1928-471c-a329-174edbfd71fa-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Délai de remise : 1 Kommunalfahrzeug 4x4 GR 36'606_B6
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 30.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/78c46cff-1928-471c-a329-174edbfd71fa/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/78c46cff-1928-471c-a329-174ed
+ bfd71fa
+URL:https://auftragsregister.ch/fr/auftrag/78c46cff-1928-471c-a329-174edbfd
+ 71fa/
+LOCATION:Ilanz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 1 Kommunalfahrzeug 4x4 GR 36'606_B6
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

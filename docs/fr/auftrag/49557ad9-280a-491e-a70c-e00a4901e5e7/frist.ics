@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:49557ad9-280a-491e-a70c-e00a4901e5e7-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270119T150000Z
+SUMMARY:Délai de remise : CFC 251 Installations sanitaires
+DESCRIPTION:Acheteur public : Commune de Grolley-Ponthaux\nDélai de remi
+ se : 19.01.2027\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/49557ad9-280a-491e-a70c-e00a4901e5e7/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/49557ad9-280a-491e-a70c-
+ e00a4901e5e7
+URL:https://auftragsregister.ch/fr/auftrag/49557ad9-280a-491e-a70c-e00a4901
+ e5e7/
+LOCATION:Grolley
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFC 251 Installations sanitaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

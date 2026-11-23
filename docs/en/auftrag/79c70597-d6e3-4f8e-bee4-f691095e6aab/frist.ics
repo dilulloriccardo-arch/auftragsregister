@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:79c70597-d6e3-4f8e-bee4-f691095e6aab-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Submission deadline: OGER FLOR l 13606 l BKP 211-02 Baumeister
+DESCRIPTION:Public buyer: Hochbauamt\, Baubereich B\nSubmission deadline: 1
+ 4 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/79c70597-d6e3-4f8e-bee4-f691095e6aab/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/79c70597-d6e3-4f8e-bee4-f691095e6aab
+URL:https://auftragsregister.ch/en/auftrag/79c70597-d6e3-4f8e-bee4-f691095e
+ 6aab/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: OGER FLOR l 13606 l BKP 211-02 Baumeister
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

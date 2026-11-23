@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2812268e-17d6-49a0-bcfa-0186fecc2ab0-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270106T110000Z
+SUMMARY:Délai de remise : Partenaire du contrat-cadre « Développement 
+ informatique RH » : services liés à SAP SuccessFactors et Fiori\, acons
+ o Cloud et gestion de projets informatiques RH
+DESCRIPTION:Acheteur public : Dienststelle Personal\nDélai de remise :
+  06.01.2027\, 12 h 00\nDans le registre : https://auftragsregister.c
+ h/fr/auftrag/2812268e-17d6-49a0-bcfa-0186fecc2ab0/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/2812268e-17d6-49a0-bcfa-0186fe
+ cc2ab0
+URL:https://auftragsregister.ch/fr/auftrag/2812268e-17d6-49a0-bcfa-0186fecc
+ 2ab0/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Partenaire du contrat-cadre « Développem
+ ent informatique RH » : services liés à SAP SuccessFactors et Fiori\, a
+ conso Cloud et gestion de projets informatiques RH
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

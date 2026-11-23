@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:842c2312-3a87-44b5-842c-f2f6fcfb710d-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270104T225900Z
+SUMMARY:Submission deadline: Disposal of untreated incinerator bottom ash f
+ rom the Winterthur Waste-to-Energy Plant.
+DESCRIPTION:Public buyer: Stadtwerk Winterthur\nSubmission deadline: 4 Jan
+  2027\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/84
+ 2c2312-3a87-44b5-842c-f2f6fcfb710d/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/842c2312-3a87-44b5-842c-f2f6fcfb710d
+URL:https://auftragsregister.ch/en/auftrag/842c2312-3a87-44b5-842c-f2f6fcfb
+ 710d/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Disposal of untreated incinerator bottom a
+ sh from the Winterthur Waste-to-Energy Plant.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

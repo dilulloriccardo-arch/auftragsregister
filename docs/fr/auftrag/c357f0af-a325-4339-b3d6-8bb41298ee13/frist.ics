@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c357f0af-a325-4339-b3d6-8bb41298ee13-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Délai de remise : ARA Thurau\, Phosphatfällung
+DESCRIPTION:Acheteur public : Abwasserverband Thurau\nDélai de remise 
+ : 29.01.2027\, 12 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/c357f0af-a325-4339-b3d6-8bb41298ee13/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/c357f0af-a325-4339-b3d6-8bb41
+ 298ee13
+URL:https://auftragsregister.ch/fr/auftrag/c357f0af-a325-4339-b3d6-8bb41298
+ ee13/
+LOCATION:Uzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ARA Thurau\, Phosphatfällung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

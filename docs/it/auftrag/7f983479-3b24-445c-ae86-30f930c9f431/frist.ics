@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7f983479-3b24-445c-ae86-30f930c9f431-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T150000Z
+SUMMARY:Scadenza: BAV 83185 SA Rütihof\, Umbau BET für TS - BKP 358 Gastr
+ oeinrichtungen (Gastro-\, Regenerierküchen)
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 13.01
+ .2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/7f9834
+ 79-3b24-445c-ae86-30f930c9f431/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/7f983479-3b24-445c-ae86-30f930c9f431
+URL:https://auftragsregister.ch/it/auftrag/7f983479-3b24-445c-ae86-30f930c9
+ f431/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 83185 SA Rütihof\, Umbau BET für TS - BKP 358 G
+ astroeinrichtungen (Gastro-\, Regenerierküchen)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

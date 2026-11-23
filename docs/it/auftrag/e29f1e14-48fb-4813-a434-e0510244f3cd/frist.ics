@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e29f1e14-48fb-4813-a434-e0510244f3cd-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Scadenza: Travaux de lavage dans les tunnels SIERA - Yverdon-Domdid
+ ier
+DESCRIPTION:Ente pubblico: SIERA - Service Intercantonal d'Entretien du Ré
+ seau Autoroutier\nScadenza: 07.12.2026\, 12:00\nNel registro: https://auft
+ ragsregister.ch/it/auftrag/e29f1e14-48fb-4813-a434-e0510244f3cd/\nPubblica
+ zione ufficiale: https://www.simap.ch/it/project-detail/e29f1e14-48fb-4813
+ -a434-e0510244f3cd
+URL:https://auftragsregister.ch/it/auftrag/e29f1e14-48fb-4813-a434-e0510244
+ f3cd/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Travaux de lavage dans les tunnels SIERA - Yverdon-Do
+ mdidier
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7bfcf026-8858-40b3-94e7-6fd97b7e0906-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270128T110000Z
+SUMMARY:Eingabefrist: CAMPAGNE D'ENTRETIEN 2027 – 2029 DES ESPACES VERTS 
+ SUR LE RESEAU ROUTIER CANTONAL DE GENEVE - TRAVAUX D'ENTRETIEN DE SURFACES
+  HERBACEES ET RECONVERSION DE SURFACES
+DESCRIPTION:Auftraggeber: Département de la santé et des mobilités (DSM)
+  - Office cantonal du génie civil - Service de la maintenance des routes 
+ cantonales\nEingabefrist: 28.01.2027\, 12.00 Uhr\nIm Register: https://au
+ ftragsregister.ch/de/auftrag/7bfcf026-8858-40b3-94e7-6fd97b7e0906/\nAmtlic
+ he Publikation: https://www.simap.ch/de/project-detail/7bfcf026-8858-40b3-
+ 94e7-6fd97b7e0906
+URL:https://auftragsregister.ch/de/auftrag/7bfcf026-8858-40b3-94e7-6fd97b7e
+ 0906/
+LOCATION:Canton de Genève - Routes cantonales
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CAMPAGNE D'ENTRETIEN 2027 – 2029 DES ESPACES VE
+ RTS SUR LE RESEAU ROUTIER CANTONAL DE GENEVE - TRAVAUX D'ENTRETIEN DE SURF
+ ACES HERBACEES ET RECONVERSION DE SURFACES
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

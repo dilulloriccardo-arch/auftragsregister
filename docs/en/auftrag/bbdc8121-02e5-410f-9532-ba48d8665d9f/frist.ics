@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bbdc8121-02e5-410f-9532-ba48d8665d9f-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Submission deadline: (b26009-10) Neubau Interventionszentrum Zoll S
+ t. Margrethen / BKP 221.1
+DESCRIPTION:Public buyer: Bundesamt für Bauten und Logistik BBL\nSubmissio
+ n deadline: 29 Jan 2027\, 23:59\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/bbdc8121-02e5-410f-9532-ba48d8665d9f/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/bbdc8121-02e5-410f-9532-ba48d86
+ 65d9f
+URL:https://auftragsregister.ch/en/auftrag/bbdc8121-02e5-410f-9532-ba48d866
+ 5d9f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: (b26009-10) Neubau Interventionszentrum Zo
+ ll St. Margrethen / BKP 221.1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

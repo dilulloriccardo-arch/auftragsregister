@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b081d445-e8fd-442f-96b0-f52eb41907fe-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261224T110000Z
+SUMMARY:Scadenza: Ausschreibung BKP 248.2 Kühlräume
+DESCRIPTION:Ente pubblico: Wohnen und Pflege Peteracker AG\nScadenza: 24.12
+ .2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/b081d4
+ 45-e8fd-442f-96b0-f52eb41907fe/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/b081d445-e8fd-442f-96b0-f52eb41907fe
+URL:https://auftragsregister.ch/it/auftrag/b081d445-e8fd-442f-96b0-f52eb419
+ 07fe/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung BKP 248.2 Kühlräume
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

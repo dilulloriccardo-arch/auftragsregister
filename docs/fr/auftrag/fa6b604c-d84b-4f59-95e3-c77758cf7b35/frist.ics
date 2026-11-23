@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fa6b604c-d84b-4f59-95e3-c77758cf7b35-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270112T225900Z
+SUMMARY:Délai de remise : MP-260025\, N07-76 FF-EW Remise en état de po
+ nts TG\, RP construction CM+ à IBN\, BL jusqu’à MES\, DT
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA - Filiale Win
+ terthur\nDélai de remise : 12.01.2027\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/fa6b604c-d84b-4f59-95e3-c77758
+ cf7b35/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /fa6b604c-d84b-4f59-95e3-c77758cf7b35
+URL:https://auftragsregister.ch/fr/auftrag/fa6b604c-d84b-4f59-95e3-c77758cf
+ 7b35/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MP-260025\, N07-76 FF-EW Remise en état d
+ e ponts TG\, RP construction CM+ à IBN\, BL jusqu’à MES\, DT
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

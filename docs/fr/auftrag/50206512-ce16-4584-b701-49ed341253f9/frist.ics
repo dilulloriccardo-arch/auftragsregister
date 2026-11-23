@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:50206512-ce16-4584-b701-49ed341253f9-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270115T120000Z
+SUMMARY:Délai de remise : Installation photovoltaïque pour l’hôpital
+  de Riaz – l'HFR
+DESCRIPTION:Acheteur public : HFR | hôpital fribourgeois - freiburger sp
+ ital\nDélai de remise : 15.01.2027\, 13 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/50206512-ce16-4584-b701-49ed341253f
+ 9/\nPublication officielle : https://www.simap.ch/fr/project-detail/5020
+ 6512-ce16-4584-b701-49ed341253f9
+URL:https://auftragsregister.ch/fr/auftrag/50206512-ce16-4584-b701-49ed3412
+ 53f9/
+LOCATION:HFR Riaz Hôpital Cantonal\, Rue de l’Hôpital 9
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Installation photovoltaïque pour l’hôp
+ ital de Riaz – l'HFR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

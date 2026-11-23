@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72defcb0-43eb-4a0b-bebf-367495b15e7c-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270122T140000Z
+SUMMARY:Eingabefrist: Drehscheibe (Plaque tournante)
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB Division Produkti
+ on Personenverkehr\nEingabefrist: 22.01.2027\, 15.00 Uhr\nIm Register: ht
+ tps://auftragsregister.ch/de/auftrag/72defcb0-43eb-4a0b-bebf-367495b15e7c/
+ \nAmtliche Publikation: https://www.simap.ch/de/project-detail/72defcb0-43
+ eb-4a0b-bebf-367495b15e7c
+URL:https://auftragsregister.ch/de/auftrag/72defcb0-43eb-4a0b-bebf-367495b1
+ 5e7c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Drehscheibe (Plaque tournante)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

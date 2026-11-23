@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a70bee09-bc74-4f90-96d2-24706fdf4064-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Eingabefrist: Gesundheitszentrum Dielsdorf: Software Finanzen + HRM
+DESCRIPTION:Auftraggeber: Gesundheitszentrum Dielsdorf\nEingabefrist: 14.12
+ .2026\nIm Register: https://auftragsregister.ch/de/auftrag/a70bee09-bc74-4
+ f90-96d2-24706fdf4064/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/a70bee09-bc74-4f90-96d2-24706fdf4064
+URL:https://auftragsregister.ch/de/auftrag/a70bee09-bc74-4f90-96d2-24706fdf
+ 4064/
+LOCATION:Dielsdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesundheitszentrum Dielsdorf: Software Finanzen +
+  HRM
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

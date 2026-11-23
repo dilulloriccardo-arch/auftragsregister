@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:069fe2ff-1af1-4dc4-b54f-66ec0b9995f8-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261222T225900Z
+SUMMARY:Scadenza: Burgdorf: Verkehrssanierung Lyssachschachen\; Planerleist
+ ungen Phase 41-53
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 22.12.202
+ 6\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/069fe2ff-1
+ af1-4dc4-b54f-66ec0b9995f8/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/069fe2ff-1af1-4dc4-b54f-66ec0b9995f8
+URL:https://auftragsregister.ch/it/auftrag/069fe2ff-1af1-4dc4-b54f-66ec0b99
+ 95f8/
+LOCATION:Burgdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Burgdorf: Verkehrssanierung Lyssachschachen\; Planerl
+ eistungen Phase 41-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

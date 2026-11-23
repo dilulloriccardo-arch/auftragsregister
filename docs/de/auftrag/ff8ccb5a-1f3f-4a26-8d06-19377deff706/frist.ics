@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff8ccb5a-1f3f-4a26-8d06-19377deff706-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270115T110000Z
+SUMMARY:Eingabefrist: AO – tpg – systèmes audio-visuel de visioconfér
+ ence – Fourniture\, installation et mise en service d’équipement et/o
+ u de salles de réunions – Maintenance
+DESCRIPTION:Auftraggeber: Transport publics genevois (tpg)\nEingabefrist: 1
+ 5.01.2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/ff8ccb5a-1f3f-4a26-8d06-19377deff706/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/ff8ccb5a-1f3f-4a26-8d06-19377deff706
+URL:https://auftragsregister.ch/de/auftrag/ff8ccb5a-1f3f-4a26-8d06-19377def
+ f706/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: AO – tpg – systèmes audio-visuel de visiocon
+ férence – Fourniture\, installation et mise en service d’équipement 
+ et/ou de salles de réunions – Maintenance
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c80b3452-7cd0-4ed7-8d04-1229e53478a8-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Délai de remise : Travaux de maçonnerie et de remise en état d
+ es ponts à poutres en treillis\, Stinkhaltiwald 2\, Reichenbach
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 11.12.2026\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/c80b3452-7cd0-4ed7-8d04-1229e53478a8/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/c80b3452-7cd0-4ed7-8d04-
+ 1229e53478a8
+URL:https://auftragsregister.ch/fr/auftrag/c80b3452-7cd0-4ed7-8d04-1229e534
+ 78a8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Travaux de maçonnerie et de remise en ét
+ at des ponts à poutres en treillis\, Stinkhaltiwald 2\, Reichenbach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

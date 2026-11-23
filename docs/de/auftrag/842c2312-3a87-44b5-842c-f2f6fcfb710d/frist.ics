@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:842c2312-3a87-44b5-842c-f2f6fcfb710d-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270104T225900Z
+SUMMARY:Eingabefrist: Entsorgung von unberaubter Schlacke der KVA Winterthu
+ r
+DESCRIPTION:Auftraggeber: Stadtwerk Winterthur\nEingabefrist: 04.01.2027\, 
+ 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/842c2312-3
+ a87-44b5-842c-f2f6fcfb710d/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/842c2312-3a87-44b5-842c-f2f6fcfb710d
+URL:https://auftragsregister.ch/de/auftrag/842c2312-3a87-44b5-842c-f2f6fcfb
+ 710d/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Entsorgung von unberaubter Schlacke der KVA Winte
+ rthur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

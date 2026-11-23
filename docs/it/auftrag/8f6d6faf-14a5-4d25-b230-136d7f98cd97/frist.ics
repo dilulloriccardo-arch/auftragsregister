@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8f6d6faf-14a5-4d25-b230-136d7f98cd97-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T160000Z
+SUMMARY:Scadenza: Neubauten Stiftung Schürmatt - BKP 292 Bauingenieur Holz
+ bau
+DESCRIPTION:Ente pubblico: Stiftung Schürmatt\nScadenza: 17.12.2026\, 17:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/8f6d6faf-14a5-4d25
+ -b230-136d7f98cd97/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/8f6d6faf-14a5-4d25-b230-136d7f98cd97
+URL:https://auftragsregister.ch/it/auftrag/8f6d6faf-14a5-4d25-b230-136d7f98
+ cd97/
+LOCATION:Zetzwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubauten Stiftung Schürmatt - BKP 292 Bauingenieur 
+ Holzbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

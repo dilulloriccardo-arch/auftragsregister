@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e8ebf36d-79db-4732-92da-57df276b3606-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270108T130000Z
+SUMMARY:Submission deadline: Fourniture de carburants d’aviation 2027–2
+ 030 – Aérodrome de Riviera (LSPR)\, Lodrino
+DESCRIPTION:Public buyer: Riviera Airport SA\nSubmission deadline: 8 Jan 
+ 2027\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag/e8eb
+ f36d-79db-4732-92da-57df276b3606/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/e8ebf36d-79db-4732-92da-57df276b3606
+URL:https://auftragsregister.ch/en/auftrag/e8ebf36d-79db-4732-92da-57df276b
+ 3606/
+LOCATION:Lodrino
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fourniture de carburants d’aviation 2027
+ –2030 – Aérodrome de Riviera (LSPR)\, Lodrino
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

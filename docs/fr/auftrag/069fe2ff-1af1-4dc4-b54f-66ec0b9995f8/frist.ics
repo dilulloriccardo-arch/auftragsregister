@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:069fe2ff-1af1-4dc4-b54f-66ec0b9995f8-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261222T225900Z
+SUMMARY:Délai de remise : Burgdorf : réaménagement routier à Lyssachs
+ chachen \; prestations de conception\, phases 41 à 53
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 22.12.2026\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/069fe2ff-1af1-4dc4-b54f-66ec0b9995f8/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/069fe2ff-1af1-4dc4-b54f-
+ 66ec0b9995f8
+URL:https://auftragsregister.ch/fr/auftrag/069fe2ff-1af1-4dc4-b54f-66ec0b99
+ 95f8/
+LOCATION:Burgdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Burgdorf : réaménagement routier à Lyss
+ achschachen \; prestations de conception\, phases 41 à 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

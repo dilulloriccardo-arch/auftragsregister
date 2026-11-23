@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b47c6414-587f-4a64-8a23-7b9f723ba6ef-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270108T225900Z
+SUMMARY:Submission deadline: Würenlos IO/AO\; K423 Schulstrasse
+DESCRIPTION:Public buyer: Abteilung Tiefbau (ATB)\nSubmission deadline: 8 
+ Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag
+ /b47c6414-587f-4a64-8a23-7b9f723ba6ef/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/b47c6414-587f-4a64-8a23-7b9f723ba6ef
+URL:https://auftragsregister.ch/en/auftrag/b47c6414-587f-4a64-8a23-7b9f723b
+ a6ef/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Würenlos IO/AO\; K423 Schulstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

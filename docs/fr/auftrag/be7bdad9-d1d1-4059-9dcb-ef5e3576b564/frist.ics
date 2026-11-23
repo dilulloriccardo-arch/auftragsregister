@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be7bdad9-d1d1-4059-9dcb-ef5e3576b564-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270122T103000Z
+SUMMARY:Délai de remise : PSP - Aménagements paysagers
+DESCRIPTION:Acheteur public : Office cantonal du génie civil (OCGC) - Se
+ rvice des ouvrages d'art\nDélai de remise : 22.01.2027\, 11 h 30\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/be7bdad9-d1d1-4
+ 059-9dcb-ef5e3576b564/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/be7bdad9-d1d1-4059-9dcb-ef5e3576b564
+URL:https://auftragsregister.ch/fr/auftrag/be7bdad9-d1d1-4059-9dcb-ef5e3576
+ b564/
+LOCATION:GRAND-SACONNEX
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : PSP - Aménagements paysagers
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

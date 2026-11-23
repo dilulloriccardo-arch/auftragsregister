@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f0bf091d-7ca2-4e71-8f75-5ed7a212361e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270124T225900Z
+SUMMARY:Délai de remise : Plattform-Service für ein Dokumentenmanagemen
+ t-System
+DESCRIPTION:Acheteur public : Informatik Aargau\nDélai de remise : 24.
+ 01.2027\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/f0bf091d-7ca2-4e71-8f75-5ed7a212361e/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/f0bf091d-7ca2-4e71-8f75-5ed7a21236
+ 1e
+URL:https://auftragsregister.ch/fr/auftrag/f0bf091d-7ca2-4e71-8f75-5ed7a212
+ 361e/
+LOCATION:Unterentfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Plattform-Service für ein Dokumentenmanag
+ ement-System
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

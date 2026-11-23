@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2b3210fe-3790-467c-a865-17b8ede25146-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Délai de remise : Nouveau siège social d'EWN : pieux CFC 171
+DESCRIPTION:Acheteur public : Kantonales Elektrizitätswerk Nidwalden\nD
+ élai de remise : 14.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/2b3210fe-3790-467c-a865-17b8ede25146/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/2b3210fe-37
+ 90-467c-a865-17b8ede25146
+URL:https://auftragsregister.ch/fr/auftrag/2b3210fe-3790-467c-a865-17b8ede2
+ 5146/
+LOCATION:Buochs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nouveau siège social d'EWN : pieux CFC 17
+ 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

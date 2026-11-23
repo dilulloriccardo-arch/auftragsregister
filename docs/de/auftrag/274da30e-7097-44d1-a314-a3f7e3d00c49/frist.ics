@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:274da30e-7097-44d1-a314-a3f7e3d00c49-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Eingabefrist: Neubau Radstreifen Limpach – Zelgstrasse Planerleis
+ tungen Phasen 32 - 53
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 21.12.
+ 2026\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/274
+ da30e-7097-44d1-a314-a3f7e3d00c49/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/274da30e-7097-44d1-a314-a3f7e3d00c49
+URL:https://auftragsregister.ch/de/auftrag/274da30e-7097-44d1-a314-a3f7e3d0
+ 0c49/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Radstreifen Limpach – Zelgstrasse Planer
+ leistungen Phasen 32 - 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

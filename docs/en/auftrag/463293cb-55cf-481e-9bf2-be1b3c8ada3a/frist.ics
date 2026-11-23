@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:463293cb-55cf-481e-9bf2-be1b3c8ada3a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Submission deadline: B.10629 KUE D Instandsetzung Kältemaschinen I
+  BKP 293 Elektro-Ingenieur | OV
+DESCRIPTION:Public buyer: Universitätsspital Zürich\nSubmission deadline:
+  11 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/463293cb-55cf-481e-9bf2-be1b3c8ada3a/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/463293cb-55cf-481e-9bf2-be1b3c8ada3a
+URL:https://auftragsregister.ch/en/auftrag/463293cb-55cf-481e-9bf2-be1b3c8a
+ da3a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: B.10629 KUE D Instandsetzung Kältemaschin
+ en I BKP 293 Elektro-Ingenieur | OV
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

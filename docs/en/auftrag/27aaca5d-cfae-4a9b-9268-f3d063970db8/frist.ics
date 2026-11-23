@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:27aaca5d-cfae-4a9b-9268-f3d063970db8-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:1
+DTSTART:20270125T090000Z
+SUMMARY:Submission deadline: Modernisation de portes automatiques aux HUG
+DESCRIPTION:Public buyer: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nSubmission deadline: 25 Jan 2027\, 10:00\nIn the reg
+ ister: https://auftragsregister.ch/en/auftrag/27aaca5d-cfae-4a9b-9268-f3d0
+ 63970db8/\nOfficial publication: https://www.simap.ch/en/project-detail/27
+ aaca5d-cfae-4a9b-9268-f3d063970db8
+URL:https://auftragsregister.ch/en/auftrag/27aaca5d-cfae-4a9b-9268-f3d06397
+ 0db8/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Modernisation de portes automatiques aux H
+ UG
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

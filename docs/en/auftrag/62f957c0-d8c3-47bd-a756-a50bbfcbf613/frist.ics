@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:62f957c0-d8c3-47bd-a756-a50bbfcbf613-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Submission deadline: BKP 221.6 Exterior Metal Doors and Windows
+DESCRIPTION:Public buyer: Sihltal Zürich Uetliberg Bahn SZU AG\nSubmission
+  deadline: 8 Jan 2027\, 12:00\nIn the register: https://auftragsregister
+ .ch/en/auftrag/62f957c0-d8c3-47bd-a756-a50bbfcbf613/\nOfficial publication
+ : https://www.simap.ch/en/project-detail/62f957c0-d8c3-47bd-a756-a50bbfcbf
+ 613
+URL:https://auftragsregister.ch/en/auftrag/62f957c0-d8c3-47bd-a756-a50bbfcb
+ f613/
+LOCATION:Adliswi
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 221.6 Exterior Metal Doors and Windows
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

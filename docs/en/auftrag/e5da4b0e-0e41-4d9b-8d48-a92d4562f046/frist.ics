@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e5da4b0e-0e41-4d9b-8d48-a92d4562f046-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261211T225900Z
+SUMMARY:Submission deadline: Susch\, Bahnhofumbau - Kabelverlegung\, Spleis
+ sung und Messungen
+DESCRIPTION:Public buyer: Rhätische Bahn AG\nSubmission deadline: 11 Dec
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/e5
+ da4b0e-0e41-4d9b-8d48-a92d4562f046/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/e5da4b0e-0e41-4d9b-8d48-a92d4562f046
+URL:https://auftragsregister.ch/en/auftrag/e5da4b0e-0e41-4d9b-8d48-a92d4562
+ f046/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Susch\, Bahnhofumbau - Kabelverlegung\, Sp
+ leissung und Messungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

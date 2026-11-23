@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b17693c3-9cca-40d2-9a8b-0ccf8dca17a8-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270202T140000Z
+SUMMARY:Eingabefrist: Neubau Klinikum 2\, Phase 1\, SKP 861 Patientenlifter
+DESCRIPTION:Auftraggeber: Universitätsspital Basel\nEingabefrist: 02.02.20
+ 27\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b1769
+ 3c3-9cca-40d2-9a8b-0ccf8dca17a8/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/b17693c3-9cca-40d2-9a8b-0ccf8dca17a8
+URL:https://auftragsregister.ch/de/auftrag/b17693c3-9cca-40d2-9a8b-0ccf8dca
+ 17a8/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Klinikum 2\, Phase 1\, SKP 861 Patientenli
+ fter
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

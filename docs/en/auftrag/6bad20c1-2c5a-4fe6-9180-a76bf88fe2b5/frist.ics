@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6bad20c1-2c5a-4fe6-9180-a76bf88fe2b5-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270119T130000Z
+SUMMARY:Submission deadline: RC 401 - Prilly\, Jouxtens-Mézery\, Romanel-s
+ ur-Lausanne - Sécurisation des cyclistes - CP4600009194
+DESCRIPTION:Public buyer: Direction générale de la mobilité et des route
+ s - Division infrastructures\nSubmission deadline: 19 Jan 2027\, 14:00\n
+ In the register: https://auftragsregister.ch/en/auftrag/6bad20c1-2c5a-4fe6
+ -9180-a76bf88fe2b5/\nOfficial publication: https://www.simap.ch/en/project
+ -detail/6bad20c1-2c5a-4fe6-9180-a76bf88fe2b5
+URL:https://auftragsregister.ch/en/auftrag/6bad20c1-2c5a-4fe6-9180-a76bf88f
+ e2b5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: RC 401 - Prilly\, Jouxtens-Mézery\, Roman
+ el-sur-Lausanne - Sécurisation des cyclistes - CP4600009194
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

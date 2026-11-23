@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:75c45f62-f280-4186-9a19-7015a848a86d-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270115T225500Z
+SUMMARY:Délai de remise : Remplacement de 76 moniteurs de surveillance /
+  défibrillateurs
+DESCRIPTION:Acheteur public : SID - Schutz & Rettung (SRZ)\nDélai de rem
+ ise : 15.01.2027\, 23 h 55\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/75c45f62-f280-4186-9a19-7015a848a86d/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/75c45f62-f280-4186-9a19
+ -7015a848a86d
+URL:https://auftragsregister.ch/fr/auftrag/75c45f62-f280-4186-9a19-7015a848
+ a86d/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Remplacement de 76 moniteurs de surveillan
+ ce / défibrillateurs
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

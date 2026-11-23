@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1dba8b48-37f5-4071-9422-995a95a6289a-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261214T103000Z
+SUMMARY:Eingabefrist: Ausbau Selhofstrasse\, Hallau
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Hallau\nEingabefrist: 14.12.202
+ 6\, 11.30 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/1dba8b
+ 48-37f5-4071-9422-995a95a6289a/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/1dba8b48-37f5-4071-9422-995a95a6289a
+URL:https://auftragsregister.ch/de/auftrag/1dba8b48-37f5-4071-9422-995a95a6
+ 289a/
+LOCATION:Hallau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ausbau Selhofstrasse\, Hallau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

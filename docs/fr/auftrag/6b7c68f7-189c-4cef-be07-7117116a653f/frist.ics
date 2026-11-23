@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6b7c68f7-189c-4cef-be07-7117116a653f-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Délai de remise : ZELG-22400 Travaux de couverture et de ferblan
+ terie
+DESCRIPTION:Acheteur public : Primarschulgemeinde Romanshorn\nDélai de r
+ emise : 08.01.2027\, 12 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/6b7c68f7-189c-4cef-be07-7117116a653f/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/6b7c68f7-189c-4cef-be
+ 07-7117116a653f
+URL:https://auftragsregister.ch/fr/auftrag/6b7c68f7-189c-4cef-be07-7117116a
+ 653f/
+LOCATION:Romanshorn
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ZELG-22400 Travaux de couverture et de fer
+ blanterie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

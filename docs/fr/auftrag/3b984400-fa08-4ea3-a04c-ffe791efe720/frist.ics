@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b984400-fa08-4ea3-a04c-ffe791efe720-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270128T225900Z
+SUMMARY:Délai de remise : Plan directeur des cours d’eau de la Basse-S
+ arine : direction adjointe du projet\, ainsi que planification spécialis
+ ée en génie hydraulique et gestion des sédiments
+DESCRIPTION:Acheteur public : Wasserbauverband Untere Saane\nDélai de re
+ mise : 28.01.2027\, 23 h 59\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/3b984400-fa08-4ea3-a04c-ffe791efe720/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/3b984400-fa08-4ea3-a04
+ c-ffe791efe720
+URL:https://auftragsregister.ch/fr/auftrag/3b984400-fa08-4ea3-a04c-ffe791ef
+ e720/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Plan directeur des cours d’eau de la Bas
+ se-Sarine : direction adjointe du projet\, ainsi que planification spécia
+ lisée en génie hydraulique et gestion des sédiments
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

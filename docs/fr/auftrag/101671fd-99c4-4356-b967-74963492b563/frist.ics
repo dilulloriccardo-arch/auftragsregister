@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:101671fd-99c4-4356-b967-74963492b563-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:Délai de remise : Assurance des biens et assurance contre les pe
+ rtes d'exploitation
+DESCRIPTION:Acheteur public : Insel Gruppe AG\nDélai de remise : 10.12
+ .2026\nDans le registre : https://auftragsregister.ch/fr/auftrag/101671f
+ d-99c4-4356-b967-74963492b563/\nPublication officielle : https://www.sim
+ ap.ch/fr/project-detail/101671fd-99c4-4356-b967-74963492b563
+URL:https://auftragsregister.ch/fr/auftrag/101671fd-99c4-4356-b967-74963492
+ b563/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assurance des biens et assurance contre le
+ s pertes d'exploitation
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

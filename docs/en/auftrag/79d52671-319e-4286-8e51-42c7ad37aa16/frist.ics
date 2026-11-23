@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:79d52671-319e-4286-8e51-42c7ad37aa16-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270114T090000Z
+SUMMARY:Submission deadline: Acquisition de compteurs (GRID) d’énergie 
+ électrique industriel pour montage en rack 19’’
+DESCRIPTION:Public buyer: Services industriels de Genève (SIG) - Direction
+  Achats\nSubmission deadline: 14 Jan 2027\, 10:00\nIn the register: http
+ s://auftragsregister.ch/en/auftrag/79d52671-319e-4286-8e51-42c7ad37aa16/\n
+ Official publication: https://www.simap.ch/en/project-detail/79d52671-319e
+ -4286-8e51-42c7ad37aa16
+URL:https://auftragsregister.ch/en/auftrag/79d52671-319e-4286-8e51-42c7ad37
+ aa16/
+LOCATION:Le Lignon (GE)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Acquisition de compteurs (GRID) d’énerg
+ ie électrique industriel pour montage en rack 19’’
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

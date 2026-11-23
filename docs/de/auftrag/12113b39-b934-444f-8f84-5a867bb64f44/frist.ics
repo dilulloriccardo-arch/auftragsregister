@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12113b39-b934-444f-8f84-5a867bb64f44-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Eingabefrist: Gaswerkareal\, Gesamtsanierung Werkstattgebäude\, Pl
+ anerwahlverfahren für Architektur\, Bauphysik und Gebäudetechnik
+DESCRIPTION:Auftraggeber: Fachstelle Beschaffungswesen Stadt Bern\nEingabef
+ rist: 15.01.2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/12113b39-b934-444f-8f84-5a867bb64f44/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/12113b39-b934-444f-8f84-5a867bb64f44
+URL:https://auftragsregister.ch/de/auftrag/12113b39-b934-444f-8f84-5a867bb6
+ 4f44/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gaswerkareal\, Gesamtsanierung Werkstattgebäude\
+ , Planerwahlverfahren für Architektur\, Bauphysik und Gebäudetechnik
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

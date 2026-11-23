@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee6e5ba1-09e3-4fd8-9d16-a2a8bbd52b6b-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Scadenza: Sanierung Haldenstrasse Einführung Trennsystem\, Neubau 
+ Wasserleitung\, Strasseninstandstellung
+DESCRIPTION:Ente pubblico: Gemeinde Emmen - Direktion Bau und Umwelt\nScade
+ nza: 21.12.2026\, 23:59\nNel registro: https://auftragsregister.ch/it/auft
+ rag/ee6e5ba1-09e3-4fd8-9d16-a2a8bbd52b6b/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/ee6e5ba1-09e3-4fd8-9d16-a2a8bbd52b6b
+URL:https://auftragsregister.ch/it/auftrag/ee6e5ba1-09e3-4fd8-9d16-a2a8bbd5
+ 2b6b/
+LOCATION:Emmenbrücke
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Haldenstrasse Einführung Trennsystem\, Neu
+ bau Wasserleitung\, Strasseninstandstellung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

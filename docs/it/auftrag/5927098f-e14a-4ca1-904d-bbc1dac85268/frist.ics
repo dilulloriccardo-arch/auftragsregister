@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5927098f-e14a-4ca1-904d-bbc1dac85268-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270115T153000Z
+SUMMARY:Scadenza: Site Gazomètres 3-5-7
+DESCRIPTION:Ente pubblico: Office cantonal des bâtiments (OCBA)\nScadenza:
+  15.01.2027\, 16:30\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 5927098f-e14a-4ca1-904d-bbc1dac85268/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/5927098f-e14a-4ca1-904d-bbc1dac85268
+URL:https://auftragsregister.ch/it/auftrag/5927098f-e14a-4ca1-904d-bbc1dac8
+ 5268/
+LOCATION:Rue des Gazomètres 3-5-7
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Site Gazomètres 3-5-7
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

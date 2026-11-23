@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1f209bd9-9ce6-4f45-9af0-6ce1403fc211-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20261231T110000Z
+SUMMARY:Submission deadline: 1 Tanklöschfahrzeug
+DESCRIPTION:Public buyer: Gebäudeversicherung Kanton Zürich\nSubmission d
+ eadline: 31 Dec 2026\, 12:00\nIn the register: https://auftragsregister.
+ ch/en/auftrag/1f209bd9-9ce6-4f45-9af0-6ce1403fc211/\nOfficial publication:
+  https://www.simap.ch/en/project-detail/1f209bd9-9ce6-4f45-9af0-6ce1403fc2
+ 11
+URL:https://auftragsregister.ch/en/auftrag/1f209bd9-9ce6-4f45-9af0-6ce1403f
+ c211/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 1 Tanklöschfahrzeug
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

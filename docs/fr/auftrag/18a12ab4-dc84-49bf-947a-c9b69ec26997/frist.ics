@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18a12ab4-dc84-49bf-947a-c9b69ec26997-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Délai de remise : BKP 275\, Schliessanlagen
+DESCRIPTION:Acheteur public : Solothurner Spitäler AG - Immobilienmanage
+ ment\nDélai de remise : 17.12.2026\, 23 h 59\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/18a12ab4-dc84-49bf-947a-c9b69ec2699
+ 7/\nPublication officielle : https://www.simap.ch/fr/project-detail/18a1
+ 2ab4-dc84-49bf-947a-c9b69ec26997
+URL:https://auftragsregister.ch/fr/auftrag/18a12ab4-dc84-49bf-947a-c9b69ec2
+ 6997/
+LOCATION:Olten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 275\, Schliessanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

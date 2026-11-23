@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:60d9b89f-dd64-41cd-89ca-3db7c98718ee-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270111T100000Z
+SUMMARY:Submission deadline: Implementation & Transformation Services
+DESCRIPTION:Public buyer: Kanton Zürich Finanzdirektion Amt für Informati
+ k\nSubmission deadline: 11 Jan 2027\, 11:00\nIn the register: https://au
+ ftragsregister.ch/en/auftrag/60d9b89f-dd64-41cd-89ca-3db7c98718ee/\nOffici
+ al publication: https://www.simap.ch/en/project-detail/60d9b89f-dd64-41cd-
+ 89ca-3db7c98718ee
+URL:https://auftragsregister.ch/en/auftrag/60d9b89f-dd64-41cd-89ca-3db7c987
+ 18ee/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Implementation & Transformation Services
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd6a1a02-8276-4b94-9cc2-ba6af96c8127-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261209T110000Z
+SUMMARY:Scadenza: Netzausbau Fernwärme Neudorf und Oberdorf
+DESCRIPTION:Ente pubblico: Energieverbund Wädenswil AG\nScadenza: 09.12.20
+ 26\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/dd6a1a02-
+ 8276-4b94-9cc2-ba6af96c8127/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/dd6a1a02-8276-4b94-9cc2-ba6af96c8127
+URL:https://auftragsregister.ch/it/auftrag/dd6a1a02-8276-4b94-9cc2-ba6af96c
+ 8127/
+LOCATION:Wädenswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Netzausbau Fernwärme Neudorf und Oberdorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

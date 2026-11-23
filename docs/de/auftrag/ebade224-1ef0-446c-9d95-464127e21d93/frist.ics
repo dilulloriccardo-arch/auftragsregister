@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ebade224-1ef0-446c-9d95-464127e21d93-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Eingabefrist: H417b Crappanairabrücke\, Baumeister- und Belagsarbe
+ iten
+DESCRIPTION:Auftraggeber: Tiefbauamt Graubünden\nEingabefrist: 17.12.2026\
+ , 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/ebade224
+ -1ef0-446c-9d95-464127e21d93/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/ebade224-1ef0-446c-9d95-464127e21d93
+URL:https://auftragsregister.ch/de/auftrag/ebade224-1ef0-446c-9d95-464127e2
+ 1d93/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: H417b Crappanairabrücke\, Baumeister- und Belags
+ arbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

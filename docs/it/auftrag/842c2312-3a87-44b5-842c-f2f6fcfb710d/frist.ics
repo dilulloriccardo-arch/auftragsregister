@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:842c2312-3a87-44b5-842c-f2f6fcfb710d-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270104T225900Z
+SUMMARY:Scadenza: Entsorgung von unberaubter Schlacke der KVA Winterthur
+DESCRIPTION:Ente pubblico: Stadtwerk Winterthur\nScadenza: 04.01.2027\, 23:
+ 59\nNel registro: https://auftragsregister.ch/it/auftrag/842c2312-3a87-44b
+ 5-842c-f2f6fcfb710d/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/842c2312-3a87-44b5-842c-f2f6fcfb710d
+URL:https://auftragsregister.ch/it/auftrag/842c2312-3a87-44b5-842c-f2f6fcfb
+ 710d/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Entsorgung von unberaubter Schlacke der KVA Winterthu
+ r
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

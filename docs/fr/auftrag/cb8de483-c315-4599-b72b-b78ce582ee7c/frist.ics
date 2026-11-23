@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb8de483-c315-4599-b72b-b78ce582ee7c-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261215T100000Z
+SUMMARY:Délai de remise : Umbau Schulhaus Rickenbach BKP 211
+DESCRIPTION:Acheteur public : konstruo AG Co. Architekten Kollektiv AG\nD
+ élai de remise : 15.12.2026\, 11 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/cb8de483-c315-4599-b72b-b78ce582ee7c/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/cb8de483-c3
+ 15-4599-b72b-b78ce582ee7c
+URL:https://auftragsregister.ch/fr/auftrag/cb8de483-c315-4599-b72b-b78ce582
+ ee7c/
+LOCATION:Rickenbach ZH
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Umbau Schulhaus Rickenbach BKP 211
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

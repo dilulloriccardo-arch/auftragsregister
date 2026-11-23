@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8f218b24-bf28-488c-93df-e38c4581c268-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270115T110000Z
+SUMMARY:Eingabefrist: Réorganisation du site port et plage du Reposoir
+DESCRIPTION:Auftraggeber: Office cantonal de l'eau (OCEAU) - Service de l'a
+ ménagement des eaux et de la pêche (SAEP)\nEingabefrist: 15.01.2027\, 12
+ .00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8f218b24-bf2
+ 8-488c-93df-e38c4581c268/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/8f218b24-bf28-488c-93df-e38c4581c268
+URL:https://auftragsregister.ch/de/auftrag/8f218b24-bf28-488c-93df-e38c4581
+ c268/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Réorganisation du site port et plage du Reposoir
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

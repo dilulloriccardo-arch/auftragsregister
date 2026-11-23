@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32aa216c-870b-43d7-b8e3-23f61766d1bc-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Eingabefrist: Stahlbau inkl. Brandschutz für Erweiterung Fernheizw
+ erk
+DESCRIPTION:Auftraggeber: Stadtwerk Winterthur\nEingabefrist: 14.12.2026\, 
+ 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/32aa216c-8
+ 70b-43d7-b8e3-23f61766d1bc/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/32aa216c-870b-43d7-b8e3-23f61766d1bc
+URL:https://auftragsregister.ch/de/auftrag/32aa216c-870b-43d7-b8e3-23f61766
+ d1bc/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Stahlbau inkl. Brandschutz für Erweiterung Fernh
+ eizwerk
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

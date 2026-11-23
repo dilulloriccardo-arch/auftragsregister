@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d9e7328f-cedb-4bbd-b763-bb7af5d25f86-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270115T100000Z
+SUMMARY:Délai de remise : STEP Echallens - CFC 3 - ELME81 - Vannes à ti
+ roir et papillon + clapets anti-retour
+DESCRIPTION:Acheteur public : ASET / Association intercommunale STEP Echa
+ llens Talent (TRITON)\nDélai de remise : 15.01.2027\, 11 h 00\nDans
+  le registre : https://auftragsregister.ch/fr/auftrag/d9e7328f-cedb-4bbd
+ -b763-bb7af5d25f86/\nPublication officielle : https://www.simap.ch/fr/pr
+ oject-detail/d9e7328f-cedb-4bbd-b763-bb7af5d25f86
+URL:https://auftragsregister.ch/fr/auftrag/d9e7328f-cedb-4bbd-b763-bb7af5d2
+ 5f86/
+LOCATION:Echallens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : STEP Echallens - CFC 3 - ELME81 - Vannes 
+ à tiroir et papillon + clapets anti-retour
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

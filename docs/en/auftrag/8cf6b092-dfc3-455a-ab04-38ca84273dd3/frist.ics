@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8cf6b092-dfc3-455a-ab04-38ca84273dd3-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Submission deadline: BKP 281.1 Fugenlose Bodenbeläge & BKP 282.0 F
+ ugenlose Wandbeläge
+DESCRIPTION:Public buyer: Gemeinde Ebikon (Jung Meyerhans AG)\nSubmission d
+ eadline: 22 Jan 2027\, 12:00\nIn the register: https://auftragsregister.
+ ch/en/auftrag/8cf6b092-dfc3-455a-ab04-38ca84273dd3/\nOfficial publication:
+  https://www.simap.ch/en/project-detail/8cf6b092-dfc3-455a-ab04-38ca84273d
+ d3
+URL:https://auftragsregister.ch/en/auftrag/8cf6b092-dfc3-455a-ab04-38ca8427
+ 3dd3/
+LOCATION:Ebikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 281.1 Fugenlose Bodenbeläge & BKP 282
+ .0 Fugenlose Wandbeläge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

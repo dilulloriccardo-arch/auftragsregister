@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95f814c1-99eb-4be9-bd04-1ba867c8ec65-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270108T090000Z
+SUMMARY:Délai de remise : 273.1 Armoires murales / travaux de menuiserie
+  généraux - Construction d'une nouvelle école primaire avec gymnase\, E
+ rlenstrasse\, Oberglatt
+DESCRIPTION:Acheteur public : Gemeinde Oberglatt (Anderegg Partner AG)\nD
+ élai de remise : 08.01.2027\, 10 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/95f814c1-99eb-4be9-bd04-1ba867c8ec65/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/95f814c1-99
+ eb-4be9-bd04-1ba867c8ec65
+URL:https://auftragsregister.ch/fr/auftrag/95f814c1-99eb-4be9-bd04-1ba867c8
+ ec65/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 273.1 Armoires murales / travaux de menuis
+ erie généraux - Construction d'une nouvelle école primaire avec gymnase
+ \, Erlenstrasse\, Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

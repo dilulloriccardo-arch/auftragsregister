@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:82aef465-3d05-4669-8675-0e69e175bfa8-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270114T150000Z
+SUMMARY:Submission deadline: OGER FLOR l 13606 l BKP 230-02 Elektroarbeiten
+DESCRIPTION:Public buyer: Hochbauamt\, Baubereich B\nSubmission deadline: 1
+ 4 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/82aef465-3d05-4669-8675-0e69e175bfa8/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/82aef465-3d05-4669-8675-0e69e175bfa8
+URL:https://auftragsregister.ch/en/auftrag/82aef465-3d05-4669-8675-0e69e175
+ bfa8/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: OGER FLOR l 13606 l BKP 230-02 Elektroarbe
+ iten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

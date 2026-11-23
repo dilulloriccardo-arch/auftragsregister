@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7c2a9c5c-8bc2-4041-86b0-9967ff14a027-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Submission deadline: Wohnüberbauung Alvra Haus C und D - BKP 211 B
+ aumeisterarbeiten
+DESCRIPTION:Public buyer: Gemeinde La Punt Chamues-ch\nSubmission deadline:
+  4 Dec 2026\nIn the register: https://auftragsregister.ch/en/auftrag/7c2
+ a9c5c-8bc2-4041-86b0-9967ff14a027/\nOfficial publication: https://www.sima
+ p.ch/en/project-detail/7c2a9c5c-8bc2-4041-86b0-9967ff14a027
+URL:https://auftragsregister.ch/en/auftrag/7c2a9c5c-8bc2-4041-86b0-9967ff14
+ a027/
+LOCATION:La Punt-Chamues-ch
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wohnüberbauung Alvra Haus C und D - BKP 2
+ 11 Baumeisterarbeiten
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

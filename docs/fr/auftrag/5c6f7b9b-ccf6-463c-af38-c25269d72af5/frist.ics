@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5c6f7b9b-ccf6-463c-af38-c25269d72af5-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261215T100000Z
+SUMMARY:Délai de remise : Neue mobile Landungsstege kurz/lang
+DESCRIPTION:Acheteur public : ZSG Zürichsee Schifffahrt\nDélai de remis
+ e : 15.12.2026\, 11 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/5c6f7b9b-ccf6-463c-af38-c25269d72af5/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/5c6f7b9b-ccf6-463c-af38-c
+ 25269d72af5
+URL:https://auftragsregister.ch/fr/auftrag/5c6f7b9b-ccf6-463c-af38-c25269d7
+ 2af5/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Neue mobile Landungsstege kurz/lang
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

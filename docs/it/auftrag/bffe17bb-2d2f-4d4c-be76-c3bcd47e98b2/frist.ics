@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bffe17bb-2d2f-4d4c-be76-c3bcd47e98b2-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Scadenza: Allmend-/Feldstrasse\, Bülach
+DESCRIPTION:Ente pubblico: Stadt Bülach - Umwelt und Infrastruktur\nScaden
+ za: 08.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/bffe17bb-2d2f-4d4c-be76-c3bcd47e98b2/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/bffe17bb-2d2f-4d4c-be76-c3bcd47e98b2
+URL:https://auftragsregister.ch/it/auftrag/bffe17bb-2d2f-4d4c-be76-c3bcd47e
+ 98b2/
+LOCATION:Bülach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Allmend-/Feldstrasse\, Bülach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

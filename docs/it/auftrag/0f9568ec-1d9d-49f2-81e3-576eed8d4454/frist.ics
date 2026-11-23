@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0f9568ec-1d9d-49f2-81e3-576eed8d4454-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261222T090000Z
+SUMMARY:Scadenza: Fourniture de luminaires et de leurs accessoires Poste de
+  Foretaille
+DESCRIPTION:Ente pubblico: Services industriels de Genève (SIG) - Directio
+ n Achats\nScadenza: 22.12.2026\, 10:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/0f9568ec-1d9d-49f2-81e3-576eed8d4454/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/0f9568ec-1d9d-49f2-81e3-57
+ 6eed8d4454
+URL:https://auftragsregister.ch/it/auftrag/0f9568ec-1d9d-49f2-81e3-576eed8d
+ 4454/
+LOCATION:Le Lignon (GE)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fourniture de luminaires et de leurs accessoires Post
+ e de Foretaille
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

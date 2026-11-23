@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:75b6cd04-1c22-4c0d-bd99-7af457f68c30-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270115T110000Z
+SUMMARY:Délai de remise : CFC 281.0 Couches support compos.\, chapes
+DESCRIPTION:Acheteur public : Gemeinde Ebikon (Jung Meyerhans AG)\nDélai
+  de remise : 15.01.2027\, 12 h 00\nDans le registre : https://auft
+ ragsregister.ch/fr/auftrag/75b6cd04-1c22-4c0d-bd99-7af457f68c30/\nPublicat
+ ion officielle : https://www.simap.ch/fr/project-detail/75b6cd04-1c22-4c
+ 0d-bd99-7af457f68c30
+URL:https://auftragsregister.ch/fr/auftrag/75b6cd04-1c22-4c0d-bd99-7af457f6
+ 8c30/
+LOCATION:Ebikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFC 281.0 Couches support compos.\, chapes
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

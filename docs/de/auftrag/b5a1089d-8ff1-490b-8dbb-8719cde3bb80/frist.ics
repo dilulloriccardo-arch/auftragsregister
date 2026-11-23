@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b5a1089d-8ff1-490b-8dbb-8719cde3bb80-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T225900Z
+SUMMARY:Eingabefrist: Fernwärmenetz Villmergen (2. Etappe)
+DESCRIPTION:Auftraggeber: Gemeindewerke Villmergen (Scheidegger + Partner A
+ G)\nEingabefrist: 13.01.2027\, 23.59 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/b5a1089d-8ff1-490b-8dbb-8719cde3bb80/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/b5a1089d-8ff1-490b-8dbb-871
+ 9cde3bb80
+URL:https://auftragsregister.ch/de/auftrag/b5a1089d-8ff1-490b-8dbb-8719cde3
+ bb80/
+LOCATION:Villmergen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fernwärmenetz Villmergen (2. Etappe)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

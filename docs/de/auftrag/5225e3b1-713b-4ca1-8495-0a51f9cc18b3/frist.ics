@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5225e3b1-713b-4ca1-8495-0a51f9cc18b3-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270128T225900Z
+SUMMARY:Eingabefrist: MP-160010 N01/42\, 46 Verzw. ZH-Nord – Verzw. ZH-Os
+ t – Verzw. Brüttisellen
+DESCRIPTION:Auftraggeber: Bundesamt für Strassen ASTRA - Filiale Winterthu
+ r\nEingabefrist: 28.01.2027\, 23.59 Uhr\nIm Register: https://auftragsreg
+ ister.ch/de/auftrag/5225e3b1-713b-4ca1-8495-0a51f9cc18b3/\nAmtliche Publik
+ ation: https://www.simap.ch/de/project-detail/5225e3b1-713b-4ca1-8495-0a51
+ f9cc18b3
+URL:https://auftragsregister.ch/de/auftrag/5225e3b1-713b-4ca1-8495-0a51f9cc
+ 18b3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP-160010 N01/42\, 46 Verzw. ZH-Nord – Verzw. Z
+ H-Ost – Verzw. Brüttisellen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

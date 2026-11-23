@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b081d445-e8fd-442f-96b0-f52eb41907fe-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261224T110000Z
+SUMMARY:Eingabefrist: Ausschreibung BKP 248.2 Kühlräume
+DESCRIPTION:Auftraggeber: Wohnen und Pflege Peteracker AG\nEingabefrist: 24
+ .12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /b081d445-e8fd-442f-96b0-f52eb41907fe/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/b081d445-e8fd-442f-96b0-f52eb41907fe
+URL:https://auftragsregister.ch/de/auftrag/b081d445-e8fd-442f-96b0-f52eb419
+ 07fe/
+LOCATION:Rafz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ausschreibung BKP 248.2 Kühlräume
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

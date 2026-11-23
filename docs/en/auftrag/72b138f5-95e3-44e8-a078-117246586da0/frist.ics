@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:72b138f5-95e3-44e8-a078-117246586da0-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270104T090000Z
+SUMMARY:Submission deadline: Schulanlage Rothus - BKP 281.4 Klinkerbeläge
+DESCRIPTION:Public buyer: Confirm AG\nSubmission deadline: 4 Jan 2027\, 1
+ 0:00\nIn the register: https://auftragsregister.ch/en/auftrag/72b138f5-95e
+ 3-44e8-a078-117246586da0/\nOfficial publication: https://www.simap.ch/en/p
+ roject-detail/72b138f5-95e3-44e8-a078-117246586da0
+URL:https://auftragsregister.ch/en/auftrag/72b138f5-95e3-44e8-a078-11724658
+ 6da0/
+LOCATION:Bollingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schulanlage Rothus - BKP 281.4 Klinkerbel
+ äge
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

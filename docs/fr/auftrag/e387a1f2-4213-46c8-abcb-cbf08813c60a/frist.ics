@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e387a1f2-4213-46c8-abcb-cbf08813c60a-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270112T150000Z
+SUMMARY:Délai de remise : Contrat-cadre\, prestations de conseil pour «
+  Digital Stadt Bern »\, 6 lots
+DESCRIPTION:Acheteur public : Fachstelle Beschaffungswesen Stadt Bern\nD
+ élai de remise : 12.01.2027\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/e387a1f2-4213-46c8-abcb-cbf08813c60a/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/e387a1f2-42
+ 13-46c8-abcb-cbf08813c60a
+URL:https://auftragsregister.ch/fr/auftrag/e387a1f2-4213-46c8-abcb-cbf08813
+ c60a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat-cadre\, prestations de conseil pou
+ r « Digital Stadt Bern »\, 6 lots
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

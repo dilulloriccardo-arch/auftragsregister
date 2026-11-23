@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8f2ef96c-4593-41db-a4e0-8e8ec5bada96-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270105T103000Z
+SUMMARY:Scadenza: Acquisition de mobilier pour l’extension du gymnase de 
+ Bussigny
+DESCRIPTION:Ente pubblico: Direction des achats et de la logistique (DAL)\n
+ Scadenza: 05.01.2027\, 11:30\nNel registro: https://auftragsregister.ch/it
+ /auftrag/8f2ef96c-4593-41db-a4e0-8e8ec5bada96/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/8f2ef96c-4593-41db-a4e0-8e8ec5bada96
+URL:https://auftragsregister.ch/it/auftrag/8f2ef96c-4593-41db-a4e0-8e8ec5ba
+ da96/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Acquisition de mobilier pour l’extension du gymnase
+  de Bussigny
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

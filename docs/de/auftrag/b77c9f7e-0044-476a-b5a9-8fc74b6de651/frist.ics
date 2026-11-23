@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b77c9f7e-0044-476a-b5a9-8fc74b6de651-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270125T110000Z
+SUMMARY:Eingabefrist: BKP 211.0 Baumeisterarbeiten - Neubau Feuerwehr- und 
+ Werkhofgebäude mit Hauptsammelstelle Gubristhof\, 8104 Weiningen
+DESCRIPTION:Auftraggeber: Rapp AG\nEingabefrist: 25.01.2027\, 12.00 Uhr\nI
+ m Register: https://auftragsregister.ch/de/auftrag/b77c9f7e-0044-476a-b5a9
+ -8fc74b6de651/\nAmtliche Publikation: https://www.simap.ch/de/project-deta
+ il/b77c9f7e-0044-476a-b5a9-8fc74b6de651
+URL:https://auftragsregister.ch/de/auftrag/b77c9f7e-0044-476a-b5a9-8fc74b6d
+ e651/
+LOCATION:Weiningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 211.0 Baumeisterarbeiten - Neubau Feuerwehr- 
+ und Werkhofgebäude mit Hauptsammelstelle Gubristhof\, 8104 Weiningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

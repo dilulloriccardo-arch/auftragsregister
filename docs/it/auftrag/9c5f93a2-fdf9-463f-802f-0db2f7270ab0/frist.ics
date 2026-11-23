@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9c5f93a2-fdf9-463f-802f-0db2f7270ab0-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270208T150000Z
+SUMMARY:Scadenza: ewzWHH/BGH\, Etappe 2\, BKP 239 AV-Ausstattung
+DESCRIPTION:Ente pubblico: Elektrizitätswerk der Stadt Zürich (ewz)\nScad
+ enza: 08.02.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/9c5f93a2-fdf9-463f-802f-0db2f7270ab0/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/9c5f93a2-fdf9-463f-802f-0db2f7270ab0
+URL:https://auftragsregister.ch/it/auftrag/9c5f93a2-fdf9-463f-802f-0db2f727
+ 0ab0/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ewzWHH/BGH\, Etappe 2\, BKP 239 AV-Ausstattung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

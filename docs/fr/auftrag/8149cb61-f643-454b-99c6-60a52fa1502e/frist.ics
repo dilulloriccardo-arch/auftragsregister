@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8149cb61-f643-454b-99c6-60a52fa1502e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270106T150000Z
+SUMMARY:Délai de remise : USZ Campus MITTE 1|2 / CVC 235.42 Interphone (
+ OV)
+DESCRIPTION:Acheteur public : Universitätsspital Zürich\nDélai de remi
+ se : 06.01.2027\, 16 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/8149cb61-f643-454b-99c6-60a52fa1502e/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/8149cb61-f643-454b-99c6-
+ 60a52fa1502e
+URL:https://auftragsregister.ch/fr/auftrag/8149cb61-f643-454b-99c6-60a52fa1
+ 502e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : USZ Campus MITTE 1|2 / CVC 235.42 Interpho
+ ne (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:367bfebf-42e3-4031-9888-336b24ed0674-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261214T100000Z
+SUMMARY:Submission deadline: Ville de Lancy Avenue Eugène-Lance et Chemin 
+ des Anémones Projet d'aménagement
+DESCRIPTION:Public buyer: Ville de Lancy\nSubmission deadline: 14 Dec 202
+ 6\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/367bfeb
+ f-42e3-4031-9888-336b24ed0674/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/367bfebf-42e3-4031-9888-336b24ed0674
+URL:https://auftragsregister.ch/en/auftrag/367bfebf-42e3-4031-9888-336b24ed
+ 0674/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ville de Lancy Avenue Eugène-Lance et Che
+ min des Anémones Projet d'aménagement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

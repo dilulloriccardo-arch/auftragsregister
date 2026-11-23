@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b85a792-1a06-4342-b03f-4a173335b30b-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270118T225900Z
+SUMMARY:Délai de remise : Contrat-cadre pour les investigations dans la 
+ zone de voie\, du quai et des surfaces adjacentes - Région Sud.
+DESCRIPTION:Acheteur public : Ferrovie federali svizzere FFS SA\nDélai d
+ e remise : 18.01.2027\, 23 h 59\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/3b85a792-1a06-4342-b03f-4a173335b30b/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/3b85a792-1a06-4342
+ -b03f-4a173335b30b
+URL:https://auftragsregister.ch/fr/auftrag/3b85a792-1a06-4342-b03f-4a173335
+ b30b/
+LOCATION:Bellinzona
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrat-cadre pour les investigations dans
+  la zone de voie\, du quai et des surfaces adjacentes - Région Sud.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

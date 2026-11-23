@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:257b6f70-5df2-46ea-b7bb-ac8cc54a8425-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270129T090000Z
+SUMMARY:Délai de remise : Contrats-cadres avec des prestataires de servi
+ ces de conseil en TIC
+DESCRIPTION:Acheteur public : Informatik Schaffhausen\nDélai de remise
+  : 29.01.2027\, 10 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/257b6f70-5df2-46ea-b7bb-ac8cc54a8425/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/257b6f70-5df2-46ea-b7bb-ac
+ 8cc54a8425
+URL:https://auftragsregister.ch/fr/auftrag/257b6f70-5df2-46ea-b7bb-ac8cc54a
+ 8425/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrats-cadres avec des prestataires de s
+ ervices de conseil en TIC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

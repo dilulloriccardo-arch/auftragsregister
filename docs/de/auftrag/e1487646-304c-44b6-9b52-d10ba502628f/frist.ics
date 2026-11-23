@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e1487646-304c-44b6-9b52-d10ba502628f-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261214T150000Z
+SUMMARY:Eingabefrist: Neubau Hauptsitz EWN: Baugrubenaushub BKP 201 (beinha
+ ltet auch BKP 172\, BKP 176\, BKP 209)
+DESCRIPTION:Auftraggeber: Kantonales Elektrizitätswerk Nidwalden\nEingabef
+ rist: 14.12.2026\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/e1487646-304c-44b6-9b52-d10ba502628f/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/e1487646-304c-44b6-9b52-d10ba502628f
+URL:https://auftragsregister.ch/de/auftrag/e1487646-304c-44b6-9b52-d10ba502
+ 628f/
+LOCATION:Buochs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Hauptsitz EWN: Baugrubenaushub BKP 201 (be
+ inhaltet auch BKP 172\, BKP 176\, BKP 209)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

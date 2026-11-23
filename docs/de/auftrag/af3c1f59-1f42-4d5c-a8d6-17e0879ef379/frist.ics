@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af3c1f59-1f42-4d5c-a8d6-17e0879ef379-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270113T100000Z
+SUMMARY:Eingabefrist: Assainissement des ponts Charles-Galland et Saint-Vic
+ tor (2384TI) fourniture garde-corps
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 13.01.2027\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/af3c1f59-1f42-4d5c-a8d6-17e0879ef379/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/af3c1f59-1f42-4d5c-a8d6-17e0879e
+ f379
+URL:https://auftragsregister.ch/de/auftrag/af3c1f59-1f42-4d5c-a8d6-17e0879e
+ f379/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Assainissement des ponts Charles-Galland et Saint
+ -Victor (2384TI) fourniture garde-corps
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

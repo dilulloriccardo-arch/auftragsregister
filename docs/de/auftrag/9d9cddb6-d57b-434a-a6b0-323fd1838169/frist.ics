@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9d9cddb6-d57b-434a-a6b0-323fd1838169-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261230T225900Z
+SUMMARY:Eingabefrist: 1 LKW 4x4 GR 44'018_B4
+DESCRIPTION:Auftraggeber: Tiefbauamt Graubünden\nEingabefrist: 30.12.2026\
+ , 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9d9cddb6
+ -d57b-434a-a6b0-323fd1838169/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/9d9cddb6-d57b-434a-a6b0-323fd1838169
+URL:https://auftragsregister.ch/de/auftrag/9d9cddb6-d57b-434a-a6b0-323fd183
+ 8169/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 1 LKW 4x4 GR 44'018_B4
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

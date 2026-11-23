@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3feeff6-b4ae-4673-877a-1423c4ced793-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270112T110000Z
+SUMMARY:Scadenza: BKP 233.2 Lieferung Leuchten und Lampen Foodhall
+DESCRIPTION:Ente pubblico: Flughafen Zürich AG - ELP\nScadenza: 12.01.2027
+ \, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/b3feeff6-b4
+ ae-4673-877a-1423c4ced793/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/b3feeff6-b4ae-4673-877a-1423c4ced793
+URL:https://auftragsregister.ch/it/auftrag/b3feeff6-b4ae-4673-877a-1423c4ce
+ d793/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 233.2 Lieferung Leuchten und Lampen Foodhall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:14952db1-430d-417f-a44d-e57c2a785517-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270121T100000Z
+SUMMARY:Délai de remise : 0241.313-4 - Communes de Lugano et Massagno - 
+ Aménagement de la zone de la gare CFF de Lugano - Passage souterrain Genz
+ ana - Travaux de revêtement
+DESCRIPTION:Acheteur public : Ufficio delle commesse pubbliche e della pr
+ ogrammazione\nDélai de remise : 21.01.2027\, 11 h 00\nDans le regis
+ tre : https://auftragsregister.ch/fr/auftrag/14952db1-430d-417f-a44d-e57
+ c2a785517/\nPublication officielle : https://www.simap.ch/fr/project-det
+ ail/14952db1-430d-417f-a44d-e57c2a785517
+URL:https://auftragsregister.ch/fr/auftrag/14952db1-430d-417f-a44d-e57c2a78
+ 5517/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 0241.313-4 - Communes de Lugano et Massagn
+ o - Aménagement de la zone de la gare CFF de Lugano - Passage souterrain 
+ Genzana - Travaux de revêtement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8149cb61-f643-454b-99c6-60a52fa1502e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270106T150000Z
+SUMMARY:Scadenza: USZ Campus MITTE 1|2 / 235.42 Gegensprechanlage (OV)
+DESCRIPTION:Ente pubblico: Universitätsspital Zürich\nScadenza: 06.01.202
+ 7\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/8149cb61-f
+ 643-454b-99c6-60a52fa1502e/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/8149cb61-f643-454b-99c6-60a52fa1502e
+URL:https://auftragsregister.ch/it/auftrag/8149cb61-f643-454b-99c6-60a52fa1
+ 502e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: USZ Campus MITTE 1|2 / 235.42 Gegensprechanlage (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

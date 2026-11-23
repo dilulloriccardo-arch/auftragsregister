@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cc0d649d-8821-43ef-b954-f889163bc364-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Délai de remise : Appel d'offres en procédure ouverte à groupe
+ ment de planification générale pour la planification territoriale et le 
+ projet d'infrastructures de mobilité du secteur cœur du site stratégiqu
+ e de développement (SSDA) Morges Est
+DESCRIPTION:Acheteur public : Région Morges (Contour Gestion de projets 
+ SA)\nDélai de remise : 29.01.2027\, 23 h 59\nDans le registre : h
+ ttps://auftragsregister.ch/fr/auftrag/cc0d649d-8821-43ef-b954-f889163bc364
+ /\nPublication officielle : https://www.simap.ch/fr/project-detail/cc0d6
+ 49d-8821-43ef-b954-f889163bc364
+URL:https://auftragsregister.ch/fr/auftrag/cc0d649d-8821-43ef-b954-f889163b
+ c364/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offres en procédure ouverte à gr
+ oupement de planification générale pour la planification territoriale et
+  le projet d'infrastructures de mobilité du secteur cœur du site straté
+ gique de développement (SSDA) Morges Est
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:668f190d-09d3-471d-8733-c60330f77a77-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270121T140000Z
+SUMMARY:Délai de remise : BKP 273.3 Innentüren und Wandverkleidungen au
+ s Holz
+DESCRIPTION:Acheteur public : Schule Bürglen (FoBu Arch.)\nDélai de rem
+ ise : 21.01.2027\, 15 h 00\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/668f190d-09d3-471d-8733-c60330f77a77/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/668f190d-09d3-471d-8733
+ -c60330f77a77
+URL:https://auftragsregister.ch/fr/auftrag/668f190d-09d3-471d-8733-c60330f7
+ 7a77/
+LOCATION:Bürglen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 273.3 Innentüren und Wandverkleidunge
+ n aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

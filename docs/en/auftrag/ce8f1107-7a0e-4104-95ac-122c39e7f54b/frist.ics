@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ce8f1107-7a0e-4104-95ac-122c39e7f54b-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270108T110000Z
+SUMMARY:Submission deadline: SAP Dienstleistungen S/4 HANA
+DESCRIPTION:Public buyer: Flughafen Zürich AG - Zentraler Einkauf\nSubmiss
+ ion deadline: 8 Jan 2027\, 12:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/ce8f1107-7a0e-4104-95ac-122c39e7f54b/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/ce8f1107-7a0e-4104-95ac-122c39
+ e7f54b
+URL:https://auftragsregister.ch/en/auftrag/ce8f1107-7a0e-4104-95ac-122c39e7
+ f54b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: SAP Dienstleistungen S/4 HANA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

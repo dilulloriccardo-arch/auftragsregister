@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c3cec012-5699-449c-b147-9908deb98be8-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261208T110000Z
+SUMMARY:Délai de remise : Assainissement de la Maison du Concert / 244 I
+ nstallations de ventilation
+DESCRIPTION:Acheteur public : Ville de Neuchâtel - Service du patrimoine
+  bâti\nDélai de remise : 08.12.2026\, 12 h 00\nDans le registre 
+ : https://auftragsregister.ch/fr/auftrag/c3cec012-5699-449c-b147-9908deb98
+ be8/\nPublication officielle : https://www.simap.ch/fr/project-detail/c3
+ cec012-5699-449c-b147-9908deb98be8
+URL:https://auftragsregister.ch/fr/auftrag/c3cec012-5699-449c-b147-9908deb9
+ 8be8/
+LOCATION:Neuchâtel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assainissement de la Maison du Concert / 2
+ 44 Installations de ventilation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

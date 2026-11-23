@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07ea6293-f843-46ae-a1ae-8199e00ff195-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20261221T103000Z
+SUMMARY:Scadenza: Affaire n° 26-029: Cité RUBIX phase 2 au niveau 07 du b
+ âtiment BH du CHUV"\, CFC n° 244
+DESCRIPTION:Ente pubblico: CHUV - Constructions ingénierie technique et s
+ écurité (CIT-S)\nScadenza: 21.12.2026\, 11:30\nNel registro: https://auf
+ tragsregister.ch/it/auftrag/07ea6293-f843-46ae-a1ae-8199e00ff195/\nPubblic
+ azione ufficiale: https://www.simap.ch/it/project-detail/07ea6293-f843-46a
+ e-a1ae-8199e00ff195
+URL:https://auftragsregister.ch/it/auftrag/07ea6293-f843-46ae-a1ae-8199e00f
+ f195/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Affaire n° 26-029: Cité RUBIX phase 2 au niveau 07 
+ du bâtiment BH du CHUV"\, CFC n° 244
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

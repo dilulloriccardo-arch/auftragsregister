@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b9bcb684-fb66-4f0d-8524-37d0e728c236-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270117T225900Z
+SUMMARY:Submission deadline: Beschaffung von Mittelspannungskabeln
+DESCRIPTION:Public buyer: Stadtwerk Winterthur\nSubmission deadline: 17 Ja
+ n 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/b
+ 9bcb684-fb66-4f0d-8524-37d0e728c236/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/b9bcb684-fb66-4f0d-8524-37d0e728c236
+URL:https://auftragsregister.ch/en/auftrag/b9bcb684-fb66-4f0d-8524-37d0e728
+ c236/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung von Mittelspannungskabeln
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

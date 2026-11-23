@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e704960-2045-47ad-a65e-c310d8fe9338-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270107T225900Z
+SUMMARY:Délai de remise : Travaux de protection contre la corrosion 2027
+DESCRIPTION:Acheteur public : Swissgrid AG\nDélai de remise : 07.01.20
+ 27\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr/auft
+ rag/0e704960-2045-47ad-a65e-c310d8fe9338/\nPublication officielle : http
+ s://www.simap.ch/fr/project-detail/0e704960-2045-47ad-a65e-c310d8fe9338
+URL:https://auftragsregister.ch/fr/auftrag/0e704960-2045-47ad-a65e-c310d8fe
+ 9338/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Travaux de protection contre la corrosion 
+ 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

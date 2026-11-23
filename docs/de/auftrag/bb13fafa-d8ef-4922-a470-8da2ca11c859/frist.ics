@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb13fafa-d8ef-4922-a470-8da2ca11c859-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20270128T150000Z
+SUMMARY:Eingabefrist: USZ Campus MITTE 1|2 / BKP 273.18 Türen Paket 8\, Re
+ visionstüren (OV)
+DESCRIPTION:Auftraggeber: Universitätsspital Zürich\nEingabefrist: 28.01.
+ 2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/bb1
+ 3fafa-d8ef-4922-a470-8da2ca11c859/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/bb13fafa-d8ef-4922-a470-8da2ca11c859
+URL:https://auftragsregister.ch/de/auftrag/bb13fafa-d8ef-4922-a470-8da2ca11
+ c859/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: USZ Campus MITTE 1|2 / BKP 273.18 Türen Paket 8\
+ , Revisionstüren (OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

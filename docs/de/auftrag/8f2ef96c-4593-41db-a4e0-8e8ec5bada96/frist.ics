@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8f2ef96c-4593-41db-a4e0-8e8ec5bada96-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270105T103000Z
+SUMMARY:Eingabefrist: Acquisition de mobilier pour l’extension du gymnase
+  de Bussigny
+DESCRIPTION:Auftraggeber: Direction des achats et de la logistique (DAL)\nE
+ ingabefrist: 05.01.2027\, 11.30 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/8f2ef96c-4593-41db-a4e0-8e8ec5bada96/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/8f2ef96c-4593-41db-a4e0-8e8ec5ba
+ da96
+URL:https://auftragsregister.ch/de/auftrag/8f2ef96c-4593-41db-a4e0-8e8ec5ba
+ da96/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Acquisition de mobilier pour l’extension du gym
+ nase de Bussigny
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

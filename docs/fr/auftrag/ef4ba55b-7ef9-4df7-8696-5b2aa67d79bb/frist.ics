@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ef4ba55b-7ef9-4df7-8696-5b2aa67d79bb-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Délai de remise : Véhicules légers Ville de Lausanne - AA2027
+DESCRIPTION:Acheteur public : Ville de Lausanne – FIM - Service achat e
+ t logistique Ville (SALV)\nDélai de remise : 15.01.2027\, 16 h 00\n
+ Dans le registre : https://auftragsregister.ch/fr/auftrag/ef4ba55b-7ef9-
+ 4df7-8696-5b2aa67d79bb/\nPublication officielle : https://www.simap.ch/f
+ r/project-detail/ef4ba55b-7ef9-4df7-8696-5b2aa67d79bb
+URL:https://auftragsregister.ch/fr/auftrag/ef4ba55b-7ef9-4df7-8696-5b2aa67d
+ 79bb/
+LOCATION:Renens
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Véhicules légers Ville de Lausanne - AA2
+ 027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

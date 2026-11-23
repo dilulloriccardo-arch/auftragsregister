@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92225684-cfa4-43fb-8d00-5f5dd40a65a6-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261210T140000Z
+SUMMARY:Délai de remise : Sanierung Bürkihof\, inkl. Werkleitungen
+DESCRIPTION:Acheteur public : Gemeinde Berikon\nDélai de remise : 10.1
+ 2.2026\, 15 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/92225684-cfa4-43fb-8d00-5f5dd40a65a6/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/92225684-cfa4-43fb-8d00-5f5dd40a65a
+ 6
+URL:https://auftragsregister.ch/fr/auftrag/92225684-cfa4-43fb-8d00-5f5dd40a
+ 65a6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Bürkihof\, inkl. Werkleitungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

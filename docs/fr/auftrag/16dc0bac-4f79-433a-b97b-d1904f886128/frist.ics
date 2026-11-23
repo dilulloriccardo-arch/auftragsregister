@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16dc0bac-4f79-433a-b97b-d1904f886128-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261216T130000Z
+SUMMARY:Délai de remise : Sanierung Mangeli\, Menzingen
+DESCRIPTION:Acheteur public : Einwohnergemeinde Menzingen\, Abteilung Bau
+ \nDélai de remise : 16.12.2026\, 14 h 00\nDans le registre : http
+ s://auftragsregister.ch/fr/auftrag/16dc0bac-4f79-433a-b97b-d1904f886128/\n
+ Publication officielle : https://www.simap.ch/fr/project-detail/16dc0bac
+ -4f79-433a-b97b-d1904f886128
+URL:https://auftragsregister.ch/fr/auftrag/16dc0bac-4f79-433a-b97b-d1904f88
+ 6128/
+LOCATION:Menzingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Mangeli\, Menzingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

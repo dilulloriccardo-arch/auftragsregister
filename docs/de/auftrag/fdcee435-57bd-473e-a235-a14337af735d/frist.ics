@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fdcee435-57bd-473e-a235-a14337af735d-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270121T110000Z
+SUMMARY:Eingabefrist: Zone de développement industriel et artisanal ECOPAR
+ C INDUSTRIEL DES CHERPINES Communes de Confignon et Plan-les-Ouates
+DESCRIPTION:Auftraggeber: FTI Fondation pour les terrains industriels de Ge
+ nève\nEingabefrist: 21.01.2027\, 12.00 Uhr\nIm Register: https://auftrag
+ sregister.ch/de/auftrag/fdcee435-57bd-473e-a235-a14337af735d/\nAmtliche Pu
+ blikation: https://www.simap.ch/de/project-detail/fdcee435-57bd-473e-a235-
+ a14337af735d
+URL:https://auftragsregister.ch/de/auftrag/fdcee435-57bd-473e-a235-a14337af
+ 735d/
+LOCATION:Plan-les-Ouates
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Zone de développement industriel et artisanal EC
+ OPARC INDUSTRIEL DES CHERPINES Communes de Confignon et Plan-les-Ouates
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

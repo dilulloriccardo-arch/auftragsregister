@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cde19a8a-00fe-4f5c-a677-d950e2773723-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Délai de remise : Appui au maître d'ouvrage (BAMO) - Programme 
+ de remplacement des chaînes SIA 32-53
+DESCRIPTION:Acheteur public : Swissgrid AG - Engineering & Construction\n
+ Délai de remise : 15.01.2027\, 23 h 59\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/cde19a8a-00fe-4f5c-a677-d950e2773723/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/cde19a8a-0
+ 0fe-4f5c-a677-d950e2773723
+URL:https://auftragsregister.ch/fr/auftrag/cde19a8a-00fe-4f5c-a677-d950e277
+ 3723/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appui au maître d'ouvrage (BAMO) - Progra
+ mme de remplacement des chaînes SIA 32-53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

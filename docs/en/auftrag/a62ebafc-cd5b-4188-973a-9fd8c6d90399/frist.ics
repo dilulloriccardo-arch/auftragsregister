@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a62ebafc-cd5b-4188-973a-9fd8c6d90399-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270205T140000Z
+SUMMARY:Submission deadline: SBB\, Linie 230 | Erneuerung der Überführung
+  Righi in Delémont
+DESCRIPTION:Public buyer: SBB CFF FFS Achats projets de construction Régio
+ n Ouest\nSubmission deadline: 5 Feb 2027\, 15:00\nIn the register: https
+ ://auftragsregister.ch/en/auftrag/a62ebafc-cd5b-4188-973a-9fd8c6d90399/\nO
+ fficial publication: https://www.simap.ch/en/project-detail/a62ebafc-cd5b-
+ 4188-973a-9fd8c6d90399
+URL:https://auftragsregister.ch/en/auftrag/a62ebafc-cd5b-4188-973a-9fd8c6d9
+ 0399/
+LOCATION:Delémont
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: SBB\, Linie 230 | Erneuerung der Überfüh
+ rung Righi in Delémont
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

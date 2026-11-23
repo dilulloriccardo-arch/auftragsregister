@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9e5f7d8-1e3b-4fac-ab55-2f09f671e6c0-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261216T160000Z
+SUMMARY:Délai de remise : Camion poids lourd 4x4 avec élévateur à nac
+ elle hybride
+DESCRIPTION:Acheteur public : Services industriels de Genève\nDélai de 
+ remise : 16.12.2026\, 17 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/c9e5f7d8-1e3b-4fac-ab55-2f09f671e6c0/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/c9e5f7d8-1e3b-4fac-a
+ b55-2f09f671e6c0
+URL:https://auftragsregister.ch/fr/auftrag/c9e5f7d8-1e3b-4fac-ab55-2f09f671
+ e6c0/
+LOCATION:Le Lignon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Camion poids lourd 4x4 avec élévateur à
+  nacelle hybride
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

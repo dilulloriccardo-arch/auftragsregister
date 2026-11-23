@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20a3760d-9630-404f-9df2-98fc63986c5b-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270106T100000Z
+SUMMARY:Délai de remise : Centre sportif de Verbier - CFC 235.83 Surveil
+ lance vidéo et interphonie d'urgence
+DESCRIPTION:Acheteur public : Quartal Sàrl\nDélai de remise : 06.01.2
+ 027\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr/auf
+ trag/20a3760d-9630-404f-9df2-98fc63986c5b/\nPublication officielle : htt
+ ps://www.simap.ch/fr/project-detail/20a3760d-9630-404f-9df2-98fc63986c5b
+URL:https://auftragsregister.ch/fr/auftrag/20a3760d-9630-404f-9df2-98fc6398
+ 6c5b/
+LOCATION:Verbier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Centre sportif de Verbier - CFC 235.83 Sur
+ veillance vidéo et interphonie d'urgence
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

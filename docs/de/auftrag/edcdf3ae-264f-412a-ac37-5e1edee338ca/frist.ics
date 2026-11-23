@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:edcdf3ae-264f-412a-ac37-5e1edee338ca-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261214T225900Z
+SUMMARY:Eingabefrist: Sistemazione esterna Centro sportivo e risanamento Vi
+ a Centro sportivo Grono
+DESCRIPTION:Auftraggeber: Comune politico di Grono\nEingabefrist: 14.12.202
+ 6\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/edcdf3
+ ae-264f-412a-ac37-5e1edee338ca/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/edcdf3ae-264f-412a-ac37-5e1edee338ca
+URL:https://auftragsregister.ch/de/auftrag/edcdf3ae-264f-412a-ac37-5e1edee3
+ 38ca/
+LOCATION:Grono
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sistemazione esterna Centro sportivo e risanament
+ o Via Centro sportivo Grono
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

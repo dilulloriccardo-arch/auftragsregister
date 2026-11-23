@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0e704960-2045-47ad-a65e-c310d8fe9338-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270107T225900Z
+SUMMARY:Scadenza: Korrosionsschutz 2027
+DESCRIPTION:Ente pubblico: Swissgrid AG\nScadenza: 07.01.2027\, 23:59\nNel 
+ registro: https://auftragsregister.ch/it/auftrag/0e704960-2045-47ad-a65e-c
+ 310d8fe9338/\nPubblicazione ufficiale: https://www.simap.ch/it/project-det
+ ail/0e704960-2045-47ad-a65e-c310d8fe9338
+URL:https://auftragsregister.ch/it/auftrag/0e704960-2045-47ad-a65e-c310d8fe
+ 9338/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Korrosionsschutz 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

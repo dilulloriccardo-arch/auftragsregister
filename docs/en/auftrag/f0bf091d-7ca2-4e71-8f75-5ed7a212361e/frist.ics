@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f0bf091d-7ca2-4e71-8f75-5ed7a212361e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270124T225900Z
+SUMMARY:Submission deadline: Platform service for a document management sys
+ tem
+DESCRIPTION:Public buyer: Informatik Aargau\nSubmission deadline: 24 Jan 
+ 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/f0bf
+ 091d-7ca2-4e71-8f75-5ed7a212361e/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/f0bf091d-7ca2-4e71-8f75-5ed7a212361e
+URL:https://auftragsregister.ch/en/auftrag/f0bf091d-7ca2-4e71-8f75-5ed7a212
+ 361e/
+LOCATION:Unterentfelden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Platform service for a document management
+  system
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

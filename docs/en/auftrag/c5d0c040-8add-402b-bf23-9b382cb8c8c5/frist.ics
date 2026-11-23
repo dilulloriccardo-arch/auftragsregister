@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c5d0c040-8add-402b-bf23-9b382cb8c8c5-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270114T100000Z
+SUMMARY:Submission deadline: Contrat-cadre - Travaux de menuiserie - Confec
+ tion\, agencement\, réparation et entretien
+DESCRIPTION:Public buyer: Hospice général\nSubmission deadline: 14 Jan 
+ 2027\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/c5d0
+ c040-8add-402b-bf23-9b382cb8c8c5/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/c5d0c040-8add-402b-bf23-9b382cb8c8c5
+URL:https://auftragsregister.ch/en/auftrag/c5d0c040-8add-402b-bf23-9b382cb8
+ c8c5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Contrat-cadre - Travaux de menuiserie - Co
+ nfection\, agencement\, réparation et entretien
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

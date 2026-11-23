@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40794c63-a7bc-473d-9477-9b0ef71ef12f-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261202T150000Z
+SUMMARY:Délai de remise : Bau Nr. 19174 - Opfikonstrasse
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Realisierung\nDélai de r
+ emise : 02.12.2026\, 16 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/40794c63-a7bc-473d-9477-9b0ef71ef12f/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/40794c63-a7bc-473d-94
+ 77-9b0ef71ef12f
+URL:https://auftragsregister.ch/fr/auftrag/40794c63-a7bc-473d-9477-9b0ef71e
+ f12f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bau Nr. 19174 - Opfikonstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

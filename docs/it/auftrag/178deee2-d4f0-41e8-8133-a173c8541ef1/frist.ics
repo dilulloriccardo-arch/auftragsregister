@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:178deee2-d4f0-41e8-8133-a173c8541ef1-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261217T140000Z
+SUMMARY:Scadenza: Fernwärme Reussbühl Ost & West\, Luzern\, Leistungen Ti
+ efbau
+DESCRIPTION:Ente pubblico: Fernwärme Luzern\nScadenza: 17.12.2026\, 15:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/178deee2-d4f0-41e8-8
+ 133-a173c8541ef1/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/178deee2-d4f0-41e8-8133-a173c8541ef1
+URL:https://auftragsregister.ch/it/auftrag/178deee2-d4f0-41e8-8133-a173c854
+ 1ef1/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fernwärme Reussbühl Ost & West\, Luzern\, Leistunge
+ n Tiefbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

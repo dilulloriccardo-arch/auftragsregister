@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:281b359c-cad0-47eb-9de7-ead95dc0a276-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261207T110000Z
+SUMMARY:Scadenza: Submission Sicherheitsdienstleistungen öffentlicher Raum
+DESCRIPTION:Ente pubblico: Stadt Frauenfeld\, Abteilung Sicherheit\nScadenz
+ a: 07.12.2026\, 12:00\nNel registro: https://auftragsregister.ch/it/auftra
+ g/281b359c-cad0-47eb-9de7-ead95dc0a276/\nPubblicazione ufficiale: https://
+ www.simap.ch/it/project-detail/281b359c-cad0-47eb-9de7-ead95dc0a276
+URL:https://auftragsregister.ch/it/auftrag/281b359c-cad0-47eb-9de7-ead95dc0
+ a276/
+LOCATION:Frauenfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Submission Sicherheitsdienstleistungen öffentlicher 
+ Raum
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

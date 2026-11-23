@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:95f814c1-99eb-4be9-bd04-1ba867c8ec65-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270108T090000Z
+SUMMARY:Scadenza: 273.1 Wandschränke / allg. Schreinerarbeiten - Neubau Pr
+ imarschule mit Turnhalle Erlenstrasse\, Oberglatt
+DESCRIPTION:Ente pubblico: Gemeinde Oberglatt (Anderegg Partner AG)\nScaden
+ za: 08.01.2027\, 10:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/95f814c1-99eb-4be9-bd04-1ba867c8ec65/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/95f814c1-99eb-4be9-bd04-1ba867c8ec65
+URL:https://auftragsregister.ch/it/auftrag/95f814c1-99eb-4be9-bd04-1ba867c8
+ ec65/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 273.1 Wandschränke / allg. Schreinerarbeiten - Neuba
+ u Primarschule mit Turnhalle Erlenstrasse\, Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

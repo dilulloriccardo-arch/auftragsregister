@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20a3760d-9630-404f-9df2-98fc63986c5b-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270106T100000Z
+SUMMARY:Submission deadline: Sportzentrum Verbier – CFC 235.83 Videoüber
+ wachung und Notrufanlage
+DESCRIPTION:Public buyer: Quartal Sàrl\nSubmission deadline: 6 Jan 2027\
+ , 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/20a3760d-
+ 9630-404f-9df2-98fc63986c5b/\nOfficial publication: https://www.simap.ch/e
+ n/project-detail/20a3760d-9630-404f-9df2-98fc63986c5b
+URL:https://auftragsregister.ch/en/auftrag/20a3760d-9630-404f-9df2-98fc6398
+ 6c5b/
+LOCATION:Verbier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sportzentrum Verbier – CFC 235.83 Video
+ überwachung und Notrufanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

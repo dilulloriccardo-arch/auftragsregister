@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:362063a0-610b-4ace-a236-328880265edf-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270106T100000Z
+SUMMARY:Submission deadline: Sportzentrum Verbier – CFC 231 Schaltschrän
+ ke
+DESCRIPTION:Public buyer: Quartal Sàrl\nSubmission deadline: 6 Jan 2027\
+ , 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/362063a0-
+ 610b-4ace-a236-328880265edf/\nOfficial publication: https://www.simap.ch/e
+ n/project-detail/362063a0-610b-4ace-a236-328880265edf
+URL:https://auftragsregister.ch/en/auftrag/362063a0-610b-4ace-a236-32888026
+ 5edf/
+LOCATION:Verbier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sportzentrum Verbier – CFC 231 Schaltsch
+ ränke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

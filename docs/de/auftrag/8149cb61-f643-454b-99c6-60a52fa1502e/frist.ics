@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8149cb61-f643-454b-99c6-60a52fa1502e-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270106T150000Z
+SUMMARY:Eingabefrist: USZ Campus MITTE 1|2 / 235.42 Gegensprechanlage (OV)
+DESCRIPTION:Auftraggeber: Universitätsspital Zürich\nEingabefrist: 06.01.
+ 2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/814
+ 9cb61-f643-454b-99c6-60a52fa1502e/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/8149cb61-f643-454b-99c6-60a52fa1502e
+URL:https://auftragsregister.ch/de/auftrag/8149cb61-f643-454b-99c6-60a52fa1
+ 502e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: USZ Campus MITTE 1|2 / 235.42 Gegensprechanlage (
+ OV)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

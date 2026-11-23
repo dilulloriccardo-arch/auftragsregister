@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:842c2312-3a87-44b5-842c-f2f6fcfb710d-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270104T225900Z
+SUMMARY:Délai de remise : Entsorgung von unberaubter Schlacke der KVA Wi
+ nterthur
+DESCRIPTION:Acheteur public : Stadtwerk Winterthur\nDélai de remise : 
+ 04.01.2027\, 23 h 59\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/842c2312-3a87-44b5-842c-f2f6fcfb710d/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/842c2312-3a87-44b5-842c-f2f6fc
+ fb710d
+URL:https://auftragsregister.ch/fr/auftrag/842c2312-3a87-44b5-842c-f2f6fcfb
+ 710d/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Entsorgung von unberaubter Schlacke der KV
+ A Winterthur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

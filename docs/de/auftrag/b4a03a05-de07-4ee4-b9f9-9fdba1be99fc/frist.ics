@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4a03a05-de07-4ee4-b9f9-9fdba1be99fc-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Eingabefrist: Markierungen Bezirk 1\, 2 und 7\; Nationalstrasse N13
+DESCRIPTION:Auftraggeber: Tiefbauamt Graubünden\nEingabefrist: 23.12.2026\
+ , 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b4a03a05
+ -de07-4ee4-b9f9-9fdba1be99fc/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/b4a03a05-de07-4ee4-b9f9-9fdba1be99fc
+URL:https://auftragsregister.ch/de/auftrag/b4a03a05-de07-4ee4-b9f9-9fdba1be
+ 99fc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Markierungen Bezirk 1\, 2 und 7\; Nationalstrasse
+  N13
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

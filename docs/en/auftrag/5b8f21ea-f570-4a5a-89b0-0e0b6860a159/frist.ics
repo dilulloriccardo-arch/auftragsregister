@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5b8f21ea-f570-4a5a-89b0-0e0b6860a159-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261223T130000Z
+SUMMARY:Submission deadline: KS P\, Hinterburgmühle-Edlibach\, Neuheim/Men
+ zingen
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Zug\nSubmission deadline: 
+ 23 Dec 2026\, 14:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/5b8f21ea-f570-4a5a-89b0-0e0b6860a159/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/5b8f21ea-f570-4a5a-89b0-0e0b6860a159
+URL:https://auftragsregister.ch/en/auftrag/5b8f21ea-f570-4a5a-89b0-0e0b6860
+ a159/
+LOCATION:Neuheim
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: KS P\, Hinterburgmühle-Edlibach\, Neuheim
+ /Menzingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

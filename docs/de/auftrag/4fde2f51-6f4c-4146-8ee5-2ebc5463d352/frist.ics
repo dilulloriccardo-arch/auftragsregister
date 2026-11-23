@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4fde2f51-6f4c-4146-8ee5-2ebc5463d352-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261209T130000Z
+SUMMARY:Eingabefrist: H19.2 Oberalpstrasse\, Andermatt\, Schöni\, Sanierun
+ g Stützmauer 2. Etappe
+DESCRIPTION:Auftraggeber: Amt für Tiefbau Uri\nEingabefrist: 09.12.2026\, 
+ 14.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/4fde2f51-6
+ f4c-4146-8ee5-2ebc5463d352/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/4fde2f51-6f4c-4146-8ee5-2ebc5463d352
+URL:https://auftragsregister.ch/de/auftrag/4fde2f51-6f4c-4146-8ee5-2ebc5463
+ d352/
+LOCATION:Andermatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: H19.2 Oberalpstrasse\, Andermatt\, Schöni\, Sani
+ erung Stützmauer 2. Etappe
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

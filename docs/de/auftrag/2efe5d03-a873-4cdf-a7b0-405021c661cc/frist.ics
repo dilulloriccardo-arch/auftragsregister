@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2efe5d03-a873-4cdf-a7b0-405021c661cc-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20261218T110000Z
+SUMMARY:Eingabefrist: Compute4SBB II - Data Center
+DESCRIPTION:Auftraggeber: Schweizerische Bundesbahnen SBB\, Informatik Eink
+ auf\nEingabefrist: 18.12.2026\, 12.00 Uhr\nIm Register: https://auftragsr
+ egister.ch/de/auftrag/2efe5d03-a873-4cdf-a7b0-405021c661cc/\nAmtliche Publ
+ ikation: https://www.simap.ch/de/project-detail/2efe5d03-a873-4cdf-a7b0-40
+ 5021c661cc
+URL:https://auftragsregister.ch/de/auftrag/2efe5d03-a873-4cdf-a7b0-405021c6
+ 61cc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Compute4SBB II - Data Center
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

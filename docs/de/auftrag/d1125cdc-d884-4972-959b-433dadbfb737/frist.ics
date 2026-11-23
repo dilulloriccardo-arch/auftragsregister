@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d1125cdc-d884-4972-959b-433dadbfb737-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20261217T100000Z
+SUMMARY:Eingabefrist: Erweiterung Stadtgarte\, Effretikon
+DESCRIPTION:Auftraggeber: Stadt Illnau-Effretikon\, Abteilung Tiefbau\nEing
+ abefrist: 17.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.c
+ h/de/auftrag/d1125cdc-d884-4972-959b-433dadbfb737/\nAmtliche Publikation: 
+ https://www.simap.ch/de/project-detail/d1125cdc-d884-4972-959b-433dadbfb73
+ 7
+URL:https://auftragsregister.ch/de/auftrag/d1125cdc-d884-4972-959b-433dadbf
+ b737/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Erweiterung Stadtgarte\, Effretikon
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

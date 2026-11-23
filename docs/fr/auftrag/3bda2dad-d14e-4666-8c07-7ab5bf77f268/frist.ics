@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3bda2dad-d14e-4666-8c07-7ab5bf77f268-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Délai de remise : Cordiers 8 - Démolition et reconstruction d'u
+ n immeuble (2383) charpente bois
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 09.12.2026\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/3bda2dad-d14e-4666-8c07-7ab5bf77f26
+ 8/\nPublication officielle : https://www.simap.ch/fr/project-detail/3bda
+ 2dad-d14e-4666-8c07-7ab5bf77f268
+URL:https://auftragsregister.ch/fr/auftrag/3bda2dad-d14e-4666-8c07-7ab5bf77
+ f268/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Cordiers 8 - Démolition et reconstruction
+  d'un immeuble (2383) charpente bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

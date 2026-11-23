@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:03dea5eb-be23-470f-a967-4f024d046041-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20270105T100000Z
+SUMMARY:Eingabefrist: Renouvellement Licences Hyperviseurs VMware
+DESCRIPTION:Auftraggeber: Hospice général\nEingabefrist: 05.01.2027\, 11.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/03dea5eb-be23
+ -470f-a967-4f024d046041/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/03dea5eb-be23-470f-a967-4f024d046041
+URL:https://auftragsregister.ch/de/auftrag/03dea5eb-be23-470f-a967-4f024d04
+ 6041/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Renouvellement Licences Hyperviseurs VMware
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

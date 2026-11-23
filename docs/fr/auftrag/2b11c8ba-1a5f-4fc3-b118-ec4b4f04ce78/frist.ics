@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2b11c8ba-1a5f-4fc3-b118-ec4b4f04ce78-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270106T225900Z
+SUMMARY:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 221.1
+  Fenster aus Holz-Metall
+DESCRIPTION:Acheteur public : Einwohnergemeinde Bremgarten b. Bern (maure
+ r bauleitung gmbh)\nDélai de remise : 06.01.2027\, 23 h 59\nDans le
+  registre : https://auftragsregister.ch/fr/auftrag/2b11c8ba-1a5f-4fc3-b1
+ 18-ec4b4f04ce78/\nPublication officielle : https://www.simap.ch/fr/proje
+ ct-detail/2b11c8ba-1a5f-4fc3-b118-ec4b4f04ce78
+URL:https://auftragsregister.ch/fr/auftrag/2b11c8ba-1a5f-4fc3-b118-ec4b4f04
+ ce78/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gemeindezentrum Bremgarten b. Bern\, BKP 2
+ 21.1 Fenster aus Holz-Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

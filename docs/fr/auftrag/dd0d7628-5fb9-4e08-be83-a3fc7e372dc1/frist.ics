@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dd0d7628-5fb9-4e08-be83-a3fc7e372dc1-frist@auftragsregister.ch
+DTSTAMP:20261116T000000Z
+SEQUENCE:0
+DTSTART:20261215T225900Z
+SUMMARY:Délai de remise : Kantonsstrasse Nr. 15\, Rapperswil-Jona: Ricke
+ nstrasse\, Abschnitt Sägerei Gebert bis Eingangstor Wagen\, Etappe West
+DESCRIPTION:Acheteur public : Kanton St.Gallen\, Tiefbauamt\, Strassenkre
+ isinspektorat Schmerikon\nDélai de remise : 15.12.2026\, 23 h 59\nD
+ ans le registre : https://auftragsregister.ch/fr/auftrag/dd0d7628-5fb9-4
+ e08-be83-a3fc7e372dc1/\nPublication officielle : https://www.simap.ch/fr
+ /project-detail/dd0d7628-5fb9-4e08-be83-a3fc7e372dc1
+URL:https://auftragsregister.ch/fr/auftrag/dd0d7628-5fb9-4e08-be83-a3fc7e37
+ 2dc1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Kantonsstrasse Nr. 15\, Rapperswil-Jona: R
+ ickenstrasse\, Abschnitt Sägerei Gebert bis Eingangstor Wagen\, Etappe We
+ st
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5fcf6875-cf97-4bc9-b516-5fbffcf9f05b-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20261217T150000Z
+SUMMARY:Scadenza: Eau potable 2 - Lovatens\, Prévonloup & Billens-Hennens
+DESCRIPTION:Ente pubblico: Ribi SA\, ingénieurs hydrauliciens\nScadenza: 1
+ 7.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/5f
+ cf6875-cf97-4bc9-b516-5fbffcf9f05b/\nPubblicazione ufficiale: https://www.
+ simap.ch/it/project-detail/5fcf6875-cf97-4bc9-b516-5fbffcf9f05b
+URL:https://auftragsregister.ch/it/auftrag/5fcf6875-cf97-4bc9-b516-5fbffcf9
+ f05b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Eau potable 2 - Lovatens\, Prévonloup & Billens-Henn
+ ens
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

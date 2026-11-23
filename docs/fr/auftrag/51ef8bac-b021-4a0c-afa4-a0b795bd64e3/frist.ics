@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:51ef8bac-b021-4a0c-afa4-a0b795bd64e3-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:1
+DTSTART:20270105T225900Z
+SUMMARY:Délai de remise : Nettoyage d'entretien du nouveau siège social
+  d'AEW Energie AG à Aarau
+DESCRIPTION:Acheteur public : AEW Energie AG\nDélai de remise : 05.01.
+ 2027\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/51ef8bac-b021-4a0c-afa4-a0b795bd64e3/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/51ef8bac-b021-4a0c-afa4-a0b795bd64e3
+URL:https://auftragsregister.ch/fr/auftrag/51ef8bac-b021-4a0c-afa4-a0b795bd
+ 64e3/
+LOCATION:Aarau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nettoyage d'entretien du nouveau siège so
+ cial d'AEW Energie AG à Aarau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

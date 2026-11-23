@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61adb811-374e-45cd-908c-8bfdca7d60b9-frist@auftragsregister.ch
+DTSTAMP:20261119T000000Z
+SEQUENCE:0
+DTSTART:20270106T090000Z
+SUMMARY:Scadenza: «Plattform Freizeit Luzern» Website\, Portal und Fachap
+ plikation für Freizeitangebote der Stadt Luzern
+DESCRIPTION:Ente pubblico: Stadt Luzern\, Zentrale Informatikdienste\nScade
+ nza: 06.01.2027\, 10:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/61adb811-374e-45cd-908c-8bfdca7d60b9/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/61adb811-374e-45cd-908c-8bfdca7d60b9
+URL:https://auftragsregister.ch/it/auftrag/61adb811-374e-45cd-908c-8bfdca7d
+ 60b9/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: «Plattform Freizeit Luzern» Website\, Portal und Fa
+ chapplikation für Freizeitangebote der Stadt Luzern
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

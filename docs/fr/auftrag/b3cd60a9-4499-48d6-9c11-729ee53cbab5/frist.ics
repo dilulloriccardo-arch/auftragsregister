@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b3cd60a9-4499-48d6-9c11-729ee53cbab5-frist@auftragsregister.ch
+DTSTAMP:20261118T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Délai de remise : Ausbau ARA Reuss-Schachen: Sanitäranlagen
+DESCRIPTION:Acheteur public : Abwasserverband Reuss-Schachen\nDélai de r
+ emise : 13.01.2027\, 12 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/b3cd60a9-4499-48d6-9c11-729ee53cbab5/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/b3cd60a9-4499-48d6-9c
+ 11-729ee53cbab5
+URL:https://auftragsregister.ch/fr/auftrag/b3cd60a9-4499-48d6-9c11-729ee53c
+ bab5/
+LOCATION:Merenschwand
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausbau ARA Reuss-Schachen: Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

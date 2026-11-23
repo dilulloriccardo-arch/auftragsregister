@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6017c719-f879-40b3-9199-65bbeb243236-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:0
+DTSTART:20270111T090000Z
+SUMMARY:Délai de remise : SWW Moos Überbrückungsmassnahmen\, PW Horn\,
+  Elektroinstallationen
+DESCRIPTION:Acheteur public : Stadt Zürich Wasserversorgung\nDélai de r
+ emise : 11.01.2027\, 10 h 00\nDans le registre : https://auftragsr
+ egister.ch/fr/auftrag/6017c719-f879-40b3-9199-65bbeb243236/\nPublication o
+ fficielle : https://www.simap.ch/fr/project-detail/6017c719-f879-40b3-91
+ 99-65bbeb243236
+URL:https://auftragsregister.ch/fr/auftrag/6017c719-f879-40b3-9199-65bbeb24
+ 3236/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : SWW Moos Überbrückungsmassnahmen\, PW Ho
+ rn\, Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

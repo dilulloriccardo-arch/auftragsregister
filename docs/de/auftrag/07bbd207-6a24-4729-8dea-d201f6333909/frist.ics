@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:07bbd207-6a24-4729-8dea-d201f6333909-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:1
+DTSTART:20270106T225900Z
+SUMMARY:Eingabefrist: Gemeindezentrum Bremgarten b. Bern\, BKP 112 Schadsto
+ ffsanierung
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Bremgarten b. Bern (maurer baul
+ eitung gmbh)\nEingabefrist: 06.01.2027\, 23.59 Uhr\nIm Register: https://
+ auftragsregister.ch/de/auftrag/07bbd207-6a24-4729-8dea-d201f6333909/\nAmtl
+ iche Publikation: https://www.simap.ch/de/project-detail/07bbd207-6a24-472
+ 9-8dea-d201f6333909
+URL:https://auftragsregister.ch/de/auftrag/07bbd207-6a24-4729-8dea-d201f633
+ 3909/
+LOCATION:Bremgarten b.Bern\, Johanniterstrasse 24
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gemeindezentrum Bremgarten b. Bern\, BKP 112 Scha
+ dstoffsanierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

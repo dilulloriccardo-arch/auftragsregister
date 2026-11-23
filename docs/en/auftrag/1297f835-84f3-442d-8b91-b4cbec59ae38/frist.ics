@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1297f835-84f3-442d-8b91-b4cbec59ae38-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261211T150000Z
+SUMMARY:Submission deadline: KSW Rochaden - Gastro / Pneumo - 230 Elektro
+DESCRIPTION:Public buyer: Kantonsspital Winterthur - Baumanagement\nSubmiss
+ ion deadline: 11 Dec 2026\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/1297f835-84f3-442d-8b91-b4cbec59ae38/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/1297f835-84f3-442d-8b91-b4cbe
+ c59ae38
+URL:https://auftragsregister.ch/en/auftrag/1297f835-84f3-442d-8b91-b4cbec59
+ ae38/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: KSW Rochaden - Gastro / Pneumo - 230 Elekt
+ ro
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

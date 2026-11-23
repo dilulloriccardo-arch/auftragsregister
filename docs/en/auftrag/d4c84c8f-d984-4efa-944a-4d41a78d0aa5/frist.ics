@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d4c84c8f-d984-4efa-944a-4d41a78d0aa5-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20261218T225500Z
+SUMMARY:Submission deadline: Industriestrasse\, Pulvermühlestrasse - Indus
+ triegleis
+DESCRIPTION:Public buyer: Stadt Chur - Tiefbaudienste\nSubmission deadline:
+  18 Dec 2026\, 23:55\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/d4c84c8f-d984-4efa-944a-4d41a78d0aa5/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/d4c84c8f-d984-4efa-944a-4d41a78d0aa5
+URL:https://auftragsregister.ch/en/auftrag/d4c84c8f-d984-4efa-944a-4d41a78d
+ 0aa5/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Industriestrasse\, Pulvermühlestrasse - I
+ ndustriegleis
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

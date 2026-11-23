@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90126e7a-cb61-4e08-a94c-3f552212feca-frist@auftragsregister.ch
+DTSTAMP:20261121T000000Z
+SEQUENCE:1
+DTSTART:20270120T225900Z
+SUMMARY:Scadenza: Risanamento galleria Gottardo vecchia (GOE-AI) Prestazion
+ i di DLL
+DESCRIPTION:Ente pubblico: Ferrovie federali svizzere FFS SA\nScadenza: 20.
+ 01.2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/9012
+ 6e7a-cb61-4e08-a94c-3f552212feca/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/90126e7a-cb61-4e08-a94c-3f552212feca
+URL:https://auftragsregister.ch/it/auftrag/90126e7a-cb61-4e08-a94c-3f552212
+ feca/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Risanamento galleria Gottardo vecchia (GOE-AI) Presta
+ zioni di DLL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

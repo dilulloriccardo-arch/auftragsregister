@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32aa216c-870b-43d7-b8e3-23f61766d1bc-frist@auftragsregister.ch
+DTSTAMP:20261113T000000Z
+SEQUENCE:0
+DTSTART:20261214T110000Z
+SUMMARY:Scadenza: Stahlbau inkl. Brandschutz für Erweiterung Fernheizwerk
+DESCRIPTION:Ente pubblico: Stadtwerk Winterthur\nScadenza: 14.12.2026\, 12:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/32aa216c-870b-43d
+ 7-b8e3-23f61766d1bc/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/32aa216c-870b-43d7-b8e3-23f61766d1bc
+URL:https://auftragsregister.ch/it/auftrag/32aa216c-870b-43d7-b8e3-23f61766
+ d1bc/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Stahlbau inkl. Brandschutz für Erweiterung Fernheizw
+ erk
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

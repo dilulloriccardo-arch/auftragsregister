@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bb5ef70e-13df-4acd-8fc0-5881f0bd2cd7-frist@auftragsregister.ch
+DTSTAMP:20261117T000000Z
+SEQUENCE:0
+DTSTART:20270211T223000Z
+SUMMARY:Eingabefrist: PES Sicherungsanlagen
+DESCRIPTION:Auftraggeber: Sihltal Zürich Uetliberg Bahn SZU AG\nEingabefri
+ st: 11.02.2027\, 23.30 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/bb5ef70e-13df-4acd-8fc0-5881f0bd2cd7/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/bb5ef70e-13df-4acd-8fc0-5881f0bd2cd7
+URL:https://auftragsregister.ch/de/auftrag/bb5ef70e-13df-4acd-8fc0-5881f0bd
+ 2cd7/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: PES Sicherungsanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

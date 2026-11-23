@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3bda2dad-d14e-4666-8c07-7ab5bf77f268-frist@auftragsregister.ch
+DTSTAMP:20261114T000000Z
+SEQUENCE:0
+DTSTART:20261209T100000Z
+SUMMARY:Eingabefrist: Cordiers 8 - Démolition et reconstruction d'un immeu
+ ble (2383) charpente bois
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 09.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/3bda2dad-d14e-4666-8c07-7ab5bf77f268/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/3bda2dad-d14e-4666-8c07-7ab5bf77
+ f268
+URL:https://auftragsregister.ch/de/auftrag/3bda2dad-d14e-4666-8c07-7ab5bf77
+ f268/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Cordiers 8 - Démolition et reconstruction d'un i
+ mmeuble (2383) charpente bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

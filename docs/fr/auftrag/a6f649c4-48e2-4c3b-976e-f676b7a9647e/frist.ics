@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a6f649c4-48e2-4c3b-976e-f676b7a9647e-frist@auftragsregister.ch
+DTSTAMP:20261123T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Délai de remise : EPFL Contrats cadres installateurs électricie
+ ns
+DESCRIPTION:Acheteur public : EPFL VPF ACHATS\nDélai de remise : 25.01
+ .2027\, 16 h 00\nDans le registre : https://auftragsregister.ch/fr/a
+ uftrag/a6f649c4-48e2-4c3b-976e-f676b7a9647e/\nPublication officielle : h
+ ttps://www.simap.ch/fr/project-detail/a6f649c4-48e2-4c3b-976e-f676b7a9647e
+URL:https://auftragsregister.ch/fr/auftrag/a6f649c4-48e2-4c3b-976e-f676b7a9
+ 647e/
+LOCATION:Lausanne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : EPFL Contrats cadres installateurs électr
+ iciens
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

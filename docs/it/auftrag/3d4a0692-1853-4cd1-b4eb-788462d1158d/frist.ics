@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d4a0692-1853-4cd1-b4eb-788462d1158d-frist@auftragsregister.ch
+DTSTAMP:20261120T000000Z
+SEQUENCE:0
+DTSTART:20270127T110000Z
+SUMMARY:Scadenza: 2026-900 Büromaterial
+DESCRIPTION:Ente pubblico: Kanton Luzern\, Lehrmittelverlag\, Drucksachen- 
+ und Materialzentrale\nScadenza: 27.01.2027\, 12:00\nNel registro: https://
+ auftragsregister.ch/it/auftrag/3d4a0692-1853-4cd1-b4eb-788462d1158d/\nPubb
+ licazione ufficiale: https://www.simap.ch/it/project-detail/3d4a0692-1853-
+ 4cd1-b4eb-788462d1158d
+URL:https://auftragsregister.ch/it/auftrag/3d4a0692-1853-4cd1-b4eb-788462d1
+ 158d/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 2026-900 Büromaterial
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
