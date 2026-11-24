@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b35ac771-2ef6-4326-9bc4-9492a9f68da1-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:Submission deadline: Sanierung und Neubau Lidostrasse - Gärtnerarb
+ eiten
+DESCRIPTION:Public buyer: Tiefbauamt Stadt Luzern\nSubmission deadline: 5 
+ Jan 2027\nIn the register: https://auftragsregister.ch/en/auftrag/b35ac77
+ 1-2ef6-4326-9bc4-9492a9f68da1/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/b35ac771-2ef6-4326-9bc4-9492a9f68da1
+URL:https://auftragsregister.ch/en/auftrag/b35ac771-2ef6-4326-9bc4-9492a9f6
+ 8da1/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung und Neubau Lidostrasse - Gärtne
+ rarbeiten
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

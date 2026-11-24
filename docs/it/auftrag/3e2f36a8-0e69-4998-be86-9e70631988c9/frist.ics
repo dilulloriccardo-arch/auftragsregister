@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e2f36a8-0e69-4998-be86-9e70631988c9-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270105T150000Z
+SUMMARY:Scadenza: Betrieblicher und baulicher Unterhalt Abwasseranlagen
+DESCRIPTION:Ente pubblico: Gemeinde Oberkirch\nScadenza: 05.01.2027\, 16:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/3e2f36a8-0e69-4998-
+ be86-9e70631988c9/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/3e2f36a8-0e69-4998-be86-9e70631988c9
+URL:https://auftragsregister.ch/it/auftrag/3e2f36a8-0e69-4998-be86-9e706319
+ 88c9/
+LOCATION:Oberkirch
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Betrieblicher und baulicher Unterhalt Abwasseranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

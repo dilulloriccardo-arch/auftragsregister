@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e2f36a8-0e69-4998-be86-9e70631988c9-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270105T150000Z
+SUMMARY:Submission deadline: Operational and structural maintenance of wast
+ ewater systems
+DESCRIPTION:Public buyer: Gemeinde Oberkirch\nSubmission deadline: 5 Jan 
+ 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/3e2f
+ 36a8-0e69-4998-be86-9e70631988c9/\nOfficial publication: https://www.simap
+ .ch/en/project-detail/3e2f36a8-0e69-4998-be86-9e70631988c9
+URL:https://auftragsregister.ch/en/auftrag/3e2f36a8-0e69-4998-be86-9e706319
+ 88c9/
+LOCATION:Oberkirch
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Operational and structural maintenance of 
+ wastewater systems
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

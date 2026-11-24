@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:52be6ed9-ad0b-4b97-9887-ba49a3152115-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Eingabefrist: FPO Chamoson - LOT 273.100 Armoires encastrées\, pla
+ cards\, étagères
+DESCRIPTION:Auftraggeber: Foyer Pierre Olivier (Pragma Partenaires SA)\nEin
+ gabefrist: 22.01.2027\, 12.00 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/52be6ed9-ad0b-4b97-9887-ba49a3152115/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/52be6ed9-ad0b-4b97-9887-ba49a31521
+ 15
+URL:https://auftragsregister.ch/de/auftrag/52be6ed9-ad0b-4b97-9887-ba49a315
+ 2115/
+LOCATION:Chamoson
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: FPO Chamoson - LOT 273.100 Armoires encastrées\,
+  placards\, étagères
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

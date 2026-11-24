@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4f65df93-d5c8-480d-a3e1-0975305c8e9c-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Submission deadline: Tender for the Supply and Installation of Adhe
+ sive Films
+DESCRIPTION:Public buyer: Flughafen Zürich AG - Zentraler Einkauf\nSubmiss
+ ion deadline: 11 Jan 2027\, 12:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/4f65df93-d5c8-480d-a3e1-0975305c8e9c/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/4f65df93-d5c8-480d-a3e1-09753
+ 05c8e9c
+URL:https://auftragsregister.ch/en/auftrag/4f65df93-d5c8-480d-a3e1-0975305c
+ 8e9c/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Tender for the Supply and Installation of 
+ Adhesive Films
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

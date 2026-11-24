@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:05c01cf1-27bf-4ef3-a934-c6d4cc8b9d45-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270115T210000Z
+SUMMARY:Eingabefrist: VSZK - Ausschreibung BKP 274 Geländer Atrium
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Schwyz\nEingabefrist: 15.01.202
+ 7\, 22.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/05c01c
+ f1-27bf-4ef3-a934-c6d4cc8b9d45/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/05c01cf1-27bf-4ef3-a934-c6d4cc8b9d45
+URL:https://auftragsregister.ch/de/auftrag/05c01cf1-27bf-4ef3-a934-c6d4cc8b
+ 9d45/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: VSZK - Ausschreibung BKP 274 Geländer Atrium
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

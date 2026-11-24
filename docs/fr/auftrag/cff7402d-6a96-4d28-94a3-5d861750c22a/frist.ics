@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cff7402d-6a96-4d28-94a3-5d861750c22a-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Délai de remise : Verpflegung Tagesstrukturen Primarschule Oberg
+ latt
+DESCRIPTION:Acheteur public : Primarschule Oberglatt\nDélai de remise 
+ : 11.01.2027\, 12 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/cff7402d-6a96-4d28-94a3-5d861750c22a/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/cff7402d-6a96-4d28-94a3-5d861
+ 750c22a
+URL:https://auftragsregister.ch/fr/auftrag/cff7402d-6a96-4d28-94a3-5d861750
+ c22a/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Verpflegung Tagesstrukturen Primarschule O
+ berglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

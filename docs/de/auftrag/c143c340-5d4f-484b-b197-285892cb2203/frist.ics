@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c143c340-5d4f-484b-b197-285892cb2203-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270108T225900Z
+SUMMARY:Eingabefrist: Contracting Mélèzes Susten - BKP 240 Heizungsanlage
+DESCRIPTION:Auftraggeber: IMION AG\nEingabefrist: 08.01.2027\, 23.59 Uhr\n
+ Im Register: https://auftragsregister.ch/de/auftrag/c143c340-5d4f-484b-b19
+ 7-285892cb2203/\nAmtliche Publikation: https://www.simap.ch/de/project-det
+ ail/c143c340-5d4f-484b-b197-285892cb2203
+URL:https://auftragsregister.ch/de/auftrag/c143c340-5d4f-484b-b197-285892cb
+ 2203/
+LOCATION:Leuk (Susten)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Contracting Mélèzes Susten - BKP 240 Heizungsan
+ lage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

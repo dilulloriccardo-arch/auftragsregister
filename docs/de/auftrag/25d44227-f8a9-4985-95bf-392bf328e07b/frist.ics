@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25d44227-f8a9-4985-95bf-392bf328e07b-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270201T110000Z
+SUMMARY:Eingabefrist: Fourniture de trois (3) transformateurs de puissance 
+ de 23 MVA pour le site d’Hauterive (FR)
+DESCRIPTION:Auftraggeber: Groupe E SA - Service Achat pour les Marchés pub
+ lics\nEingabefrist: 01.02.2027\, 12.00 Uhr\nIm Register: https://auftrags
+ register.ch/de/auftrag/25d44227-f8a9-4985-95bf-392bf328e07b/\nAmtliche Pub
+ likation: https://www.simap.ch/de/project-detail/25d44227-f8a9-4985-95bf-3
+ 92bf328e07b
+URL:https://auftragsregister.ch/de/auftrag/25d44227-f8a9-4985-95bf-392bf328
+ e07b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Fourniture de trois (3) transformateurs de puissa
+ nce de 23 MVA pour le site d’Hauterive (FR)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

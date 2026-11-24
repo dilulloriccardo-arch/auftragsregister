@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:748e3801-bf63-4176-899e-62cefef74a8e-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270128T225900Z
+SUMMARY:Délai de remise : N01\, MP-160084\, raccordement Rothrist – Re
+ nouvellement du système de nœuds : planificateur acoustique
+DESCRIPTION:Acheteur public : Bundesamt für Strassen ASTRA -Abteilung St
+ rasseninfrastruktur-Ost - F3 Zofingen\nDélai de remise : 28.01.2027\, 2
+ 3 h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/74
+ 8e3801-bf63-4176-899e-62cefef74a8e/\nPublication officielle : https://ww
+ w.simap.ch/fr/project-detail/748e3801-bf63-4176-899e-62cefef74a8e
+URL:https://auftragsregister.ch/fr/auftrag/748e3801-bf63-4176-899e-62cefef7
+ 4a8e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : N01\, MP-160084\, raccordement Rothrist 
+ – Renouvellement du système de nœuds : planificateur acoustique
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

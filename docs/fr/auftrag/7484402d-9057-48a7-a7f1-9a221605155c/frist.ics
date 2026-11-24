@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7484402d-9057-48a7-a7f1-9a221605155c-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Délai de remise : Container Übungsanlage Feuerwehr
+DESCRIPTION:Acheteur public : Feuerpolizei des Kantons Schaffhausen\nDél
+ ai de remise : 21.12.2026\, 16 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/7484402d-9057-48a7-a7f1-9a221605155c/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/7484402d-9057-
+ 48a7-a7f1-9a221605155c
+URL:https://auftragsregister.ch/fr/auftrag/7484402d-9057-48a7-a7f1-9a221605
+ 155c/
+LOCATION:Beringen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Container Übungsanlage Feuerwehr
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

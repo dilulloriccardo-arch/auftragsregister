@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12d751d6-e3d2-4c41-9999-698568399bba-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Scadenza: 11746 Ersatz KS Lichtsignalanlagen Sursee Münsterstrasse
+  (LSA154)\, Oberkirch Länggass (LSA120)
+DESCRIPTION:Ente pubblico: Verkehr und Infrastruktur (vif)\, zentras\, Betr
+ ieb Strassen\nScadenza: 11.01.2027\, 16:00\nNel registro: https://auftrags
+ register.ch/it/auftrag/12d751d6-e3d2-4c41-9999-698568399bba/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/12d751d6-e3d2-4c41-999
+ 9-698568399bba
+URL:https://auftragsregister.ch/it/auftrag/12d751d6-e3d2-4c41-9999-69856839
+ 9bba/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 11746 Ersatz KS Lichtsignalanlagen Sursee Münsterstr
+ asse (LSA154)\, Oberkirch Länggass (LSA120)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

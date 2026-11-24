@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:12d751d6-e3d2-4c41-9999-698568399bba-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Eingabefrist: 11746 Ersatz KS Lichtsignalanlagen Sursee Münsterstr
+ asse (LSA154)\, Oberkirch Länggass (LSA120)
+DESCRIPTION:Auftraggeber: Verkehr und Infrastruktur (vif)\, zentras\, Betri
+ eb Strassen\nEingabefrist: 11.01.2027\, 16.00 Uhr\nIm Register: https://a
+ uftragsregister.ch/de/auftrag/12d751d6-e3d2-4c41-9999-698568399bba/\nAmtli
+ che Publikation: https://www.simap.ch/de/project-detail/12d751d6-e3d2-4c41
+ -9999-698568399bba
+URL:https://auftragsregister.ch/de/auftrag/12d751d6-e3d2-4c41-9999-69856839
+ 9bba/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 11746 Ersatz KS Lichtsignalanlagen Sursee Münste
+ rstrasse (LSA154)\, Oberkirch Länggass (LSA120)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

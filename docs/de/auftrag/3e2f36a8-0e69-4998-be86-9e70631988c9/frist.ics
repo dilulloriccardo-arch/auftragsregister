@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e2f36a8-0e69-4998-be86-9e70631988c9-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270105T150000Z
+SUMMARY:Eingabefrist: Betrieblicher und baulicher Unterhalt Abwasseranlagen
+DESCRIPTION:Auftraggeber: Gemeinde Oberkirch\nEingabefrist: 05.01.2027\, 16
+ .00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3e2f36a8-0e6
+ 9-4998-be86-9e70631988c9/\nAmtliche Publikation: https://www.simap.ch/de/p
+ roject-detail/3e2f36a8-0e69-4998-be86-9e70631988c9
+URL:https://auftragsregister.ch/de/auftrag/3e2f36a8-0e69-4998-be86-9e706319
+ 88c9/
+LOCATION:Oberkirch
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Betrieblicher und baulicher Unterhalt Abwasseranl
+ agen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25d44227-f8a9-4985-95bf-392bf328e07b-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270201T110000Z
+SUMMARY:Scadenza: Fourniture de trois (3) transformateurs de puissance de 2
+ 3 MVA pour le site d’Hauterive (FR)
+DESCRIPTION:Ente pubblico: Groupe E SA - Service Achat pour les Marchés pu
+ blics\nScadenza: 01.02.2027\, 12:00\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/25d44227-f8a9-4985-95bf-392bf328e07b/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/25d44227-f8a9-4985-95bf-392bf
+ 328e07b
+URL:https://auftragsregister.ch/it/auftrag/25d44227-f8a9-4985-95bf-392bf328
+ e07b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fourniture de trois (3) transformateurs de puissance 
+ de 23 MVA pour le site d’Hauterive (FR)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eed491a4-4954-495a-bcfb-cf4a72a5fab1-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270126T103000Z
+SUMMARY:Eingabefrist: Prestations de nettoyage pour quatre sites du Service
+  des automobiles et de la navigation
+DESCRIPTION:Auftraggeber: DGIP-Direction des achats et de la logistique (DA
+ L)\nEingabefrist: 26.01.2027\, 11.30 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/eed491a4-4954-495a-bcfb-cf4a72a5fab1/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/eed491a4-4954-495a-bcfb-cf4
+ a72a5fab1
+URL:https://auftragsregister.ch/de/auftrag/eed491a4-4954-495a-bcfb-cf4a72a5
+ fab1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Prestations de nettoyage pour quatre sites du Ser
+ vice des automobiles et de la navigation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

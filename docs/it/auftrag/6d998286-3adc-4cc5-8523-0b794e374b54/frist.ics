@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d998286-3adc-4cc5-8523-0b794e374b54-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270120T110000Z
+SUMMARY:Scadenza: MP 2026.09.866 - Profil sécurité système information
+DESCRIPTION:Ente pubblico: Transports publics de la région lausannoise sa\
+ nScadenza: 20.01.2027\, 12:00\nNel registro: https://auftragsregister.ch/i
+ t/auftrag/6d998286-3adc-4cc5-8523-0b794e374b54/\nPubblicazione ufficiale: 
+ https://www.simap.ch/it/project-detail/6d998286-3adc-4cc5-8523-0b794e374b5
+ 4
+URL:https://auftragsregister.ch/it/auftrag/6d998286-3adc-4cc5-8523-0b794e37
+ 4b54/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP 2026.09.866 - Profil sécurité système informati
+ on
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

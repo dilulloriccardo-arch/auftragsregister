@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0c002718-648a-4237-9a6f-7c91a42b58fe-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270114T110000Z
+SUMMARY:Eingabefrist: Submission Gesamtprojektleitung
+DESCRIPTION:Auftraggeber: VBG Verkehrsbetriebe Glattal AG\nEingabefrist: 14
+ .01.2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /0c002718-648a-4237-9a6f-7c91a42b58fe/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/0c002718-648a-4237-9a6f-7c91a42b58fe
+URL:https://auftragsregister.ch/de/auftrag/0c002718-648a-4237-9a6f-7c91a42b
+ 58fe/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Submission Gesamtprojektleitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

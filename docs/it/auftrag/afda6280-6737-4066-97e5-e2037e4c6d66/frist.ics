@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:afda6280-6737-4066-97e5-e2037e4c6d66-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270119T090000Z
+SUMMARY:Scadenza: Miete von Kaffeemaschinen für das Stadtspital Zürich
+DESCRIPTION:Ente pubblico: Stadtspital Zürich\nScadenza: 19.01.2027\, 10:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/afda6280-6737-4066
+ -97e5-e2037e4c6d66/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/afda6280-6737-4066-97e5-e2037e4c6d66
+URL:https://auftragsregister.ch/it/auftrag/afda6280-6737-4066-97e5-e2037e4c
+ 6d66/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Miete von Kaffeemaschinen für das Stadtspital Züric
+ h
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:05bf1f75-e00a-4f50-99e5-1b4ac43918a6-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Délai de remise : Baumeisterarbeiten Leitungsersatz Grämlis\, H
+ orw
+DESCRIPTION:Acheteur public : Gemeinde Horw\, Tiefbau\nDélai de remise
+  : 25.01.2027\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/05bf1f75-e00a-4f50-99e5-1b4ac43918a6/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/05bf1f75-e00a-4f50-99e5-1b
+ 4ac43918a6
+URL:https://auftragsregister.ch/fr/auftrag/05bf1f75-e00a-4f50-99e5-1b4ac439
+ 18a6/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Baumeisterarbeiten Leitungsersatz Grämlis
+ \, Horw
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

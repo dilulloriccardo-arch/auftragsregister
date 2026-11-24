@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb79ebf7-a363-4a4c-ba68-1cd7ae7dd323-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270226T100000Z
+SUMMARY:Délai de remise : Generalplanung Ausbau Biologie - ARA Laufäcke
+ r
+DESCRIPTION:Acheteur public : Abwasserverband Region Baden Wettingen\nDé
+ lai de remise : 26.02.2027\, 11 h 00\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/eb79ebf7-a363-4a4c-ba68-1cd7ae7dd323/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/eb79ebf7-a363
+ -4a4c-ba68-1cd7ae7dd323
+URL:https://auftragsregister.ch/fr/auftrag/eb79ebf7-a363-4a4c-ba68-1cd7ae7d
+ d323/
+LOCATION:Turgi
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Generalplanung Ausbau Biologie - ARA Lauf
+ äcker
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

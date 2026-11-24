@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e85de3d1-7128-4745-bcda-d2344aba0b3b-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270113T160000Z
+SUMMARY:Submission deadline: Schwimmbad Andelfingen BKP 421 Umgebungsarbeit
+ en
+DESCRIPTION:Public buyer: Gemeinde Andelfingen\nSubmission deadline: 13 Ja
+ n 2027\, 17:00\nIn the register: https://auftragsregister.ch/en/auftrag/e
+ 85de3d1-7128-4745-bcda-d2344aba0b3b/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/e85de3d1-7128-4745-bcda-d2344aba0b3b
+URL:https://auftragsregister.ch/en/auftrag/e85de3d1-7128-4745-bcda-d2344aba
+ 0b3b/
+LOCATION:Andelfingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schwimmbad Andelfingen BKP 421 Umgebungsar
+ beiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

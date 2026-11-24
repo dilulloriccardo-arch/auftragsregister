@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d0fe86f-15de-4e54-b159-34ed43a53b5f-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270119T225900Z
+SUMMARY:Délai de remise : Installation d'un nouveau système de feux de 
+ signalisation 3000-027 (076) à la Guisanplatz\, à Berne (unité de comma
+ nde comprise)
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 19.01.2027\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/3d0fe86f-15de-4e54-b159-34ed43a53b5f/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/3d0fe86f-15de-4e54-b159-
+ 34ed43a53b5f
+URL:https://auftragsregister.ch/fr/auftrag/3d0fe86f-15de-4e54-b159-34ed43a5
+ 3b5f/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Installation d'un nouveau système de feux
+  de signalisation 3000-027 (076) à la Guisanplatz\, à Berne (unité de c
+ ommande comprise)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

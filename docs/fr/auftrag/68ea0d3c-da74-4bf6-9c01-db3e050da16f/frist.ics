@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:68ea0d3c-da74-4bf6-9c01-db3e050da16f-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270205T150000Z
+SUMMARY:Délai de remise : 14034.12 / 240-01 Erdsonden\, NHF NT Museumsar
+ eal Anpassungen_Fabrikgebäude
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Zürich\nDélai de remise
+  : 05.02.2027\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/68ea0d3c-da74-4bf6-9c01-db3e050da16f/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/68ea0d3c-da74-4bf6-9c01-db
+ 3e050da16f
+URL:https://auftragsregister.ch/fr/auftrag/68ea0d3c-da74-4bf6-9c01-db3e050d
+ a16f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 14034.12 / 240-01 Erdsonden\, NHF NT Museu
+ msareal Anpassungen_Fabrikgebäude
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d4d815c1-f0fc-477f-a1ee-289ba08821aa-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Scadenza: WV Gemeinde Illgau - Neubau Reservoir Kaltenbrunnen
+DESCRIPTION:Ente pubblico: WV Gemeinde Illgau\nScadenza: 21.12.2026\, 12:00
+ \nNel registro: https://auftragsregister.ch/it/auftrag/d4d815c1-f0fc-477f-
+ a1ee-289ba08821aa/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/d4d815c1-f0fc-477f-a1ee-289ba08821aa
+URL:https://auftragsregister.ch/it/auftrag/d4d815c1-f0fc-477f-a1ee-289ba088
+ 21aa/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: WV Gemeinde Illgau - Neubau Reservoir Kaltenbrunnen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

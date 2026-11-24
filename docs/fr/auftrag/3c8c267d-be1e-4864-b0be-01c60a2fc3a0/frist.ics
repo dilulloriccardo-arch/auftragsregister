@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c8c267d-be1e-4864-b0be-01c60a2fc3a0-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Délai de remise : ARA Seetal\, Submission Generalplaner SIA-Phas
+ en 32 - 53
+DESCRIPTION:Acheteur public : Abwasserverband Region Lenzburg (AVRL)\nDé
+ lai de remise : 15.01.2027\, 16 h 00\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/3c8c267d-be1e-4864-b0be-01c60a2fc3a0/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/3c8c267d-be1e
+ -4864-b0be-01c60a2fc3a0
+URL:https://auftragsregister.ch/fr/auftrag/3c8c267d-be1e-4864-b0be-01c60a2f
+ c3a0/
+LOCATION:Wildegg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ARA Seetal\, Submission Generalplaner SIA-
+ Phasen 32 - 53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

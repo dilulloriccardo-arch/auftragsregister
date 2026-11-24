@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc012bf1-366e-4765-be14-d58c8f85d447-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270121T150000Z
+SUMMARY:Scadenza: 26135 - Opere da sottofondi e pavimenti interni impianti 
+ sportivi occorrenti al rinnovo e risanamento della scuola media e palestra
+  di Acquarossa
+DESCRIPTION:Ente pubblico: Sezione della logistica - Servizio appalti\nScad
+ enza: 21.01.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/bc012bf1-366e-4765-be14-d58c8f85d447/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/bc012bf1-366e-4765-be14-d58c8f85d447
+URL:https://auftragsregister.ch/it/auftrag/bc012bf1-366e-4765-be14-d58c8f85
+ d447/
+LOCATION:Acquarossa
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 26135 - Opere da sottofondi e pavimenti interni impia
+ nti sportivi occorrenti al rinnovo e risanamento della scuola media e pale
+ stra di Acquarossa
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

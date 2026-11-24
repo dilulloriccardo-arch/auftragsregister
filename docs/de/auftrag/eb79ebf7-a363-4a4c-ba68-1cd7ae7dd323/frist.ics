@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb79ebf7-a363-4a4c-ba68-1cd7ae7dd323-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270226T100000Z
+SUMMARY:Eingabefrist: Generalplanung Ausbau Biologie - ARA Laufäcker
+DESCRIPTION:Auftraggeber: Abwasserverband Region Baden Wettingen\nEingabefr
+ ist: 26.02.2027\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/eb79ebf7-a363-4a4c-ba68-1cd7ae7dd323/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/eb79ebf7-a363-4a4c-ba68-1cd7ae7dd323
+URL:https://auftragsregister.ch/de/auftrag/eb79ebf7-a363-4a4c-ba68-1cd7ae7d
+ d323/
+LOCATION:Turgi
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Generalplanung Ausbau Biologie - ARA Laufäcker
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b648c676-bb88-4356-94e3-b39e6a19fbcf-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20261220T225900Z
+SUMMARY:Délai de remise : Assistance au maître d’ouvrage – Contrat-
+ cadre (phases SIA 3 à 5)
+DESCRIPTION:Acheteur public : Zentrale Beschaffungsstelle Kanton Basel-La
+ ndschaft\nDélai de remise : 20.12.2026\, 23 h 59\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/b648c676-bb88-4356-94e3-b39e6a
+ 19fbcf/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /b648c676-bb88-4356-94e3-b39e6a19fbcf
+URL:https://auftragsregister.ch/fr/auftrag/b648c676-bb88-4356-94e3-b39e6a19
+ fbcf/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Assistance au maître d’ouvrage – Cont
+ rat-cadre (phases SIA 3 à 5)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

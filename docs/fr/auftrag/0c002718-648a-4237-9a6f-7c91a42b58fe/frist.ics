@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0c002718-648a-4237-9a6f-7c91a42b58fe-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270114T110000Z
+SUMMARY:Délai de remise : Submission Gesamtprojektleitung
+DESCRIPTION:Acheteur public : VBG Verkehrsbetriebe Glattal AG\nDélai de 
+ remise : 14.01.2027\, 12 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/0c002718-648a-4237-9a6f-7c91a42b58fe/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/0c002718-648a-4237-9
+ a6f-7c91a42b58fe
+URL:https://auftragsregister.ch/fr/auftrag/0c002718-648a-4237-9a6f-7c91a42b
+ 58fe/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Submission Gesamtprojektleitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

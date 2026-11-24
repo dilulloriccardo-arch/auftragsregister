@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:52be6ed9-ad0b-4b97-9887-ba49a3152115-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Délai de remise : FPO Chamoson - LOT 273.100 Armoires encastrée
+ s\, placards\, étagères
+DESCRIPTION:Acheteur public : Foyer Pierre Olivier (Pragma Partenaires SA
+ )\nDélai de remise : 22.01.2027\, 12 h 00\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/52be6ed9-ad0b-4b97-9887-ba49a3152115/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/52be6ed
+ 9-ad0b-4b97-9887-ba49a3152115
+URL:https://auftragsregister.ch/fr/auftrag/52be6ed9-ad0b-4b97-9887-ba49a315
+ 2115/
+LOCATION:Chamoson
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : FPO Chamoson - LOT 273.100 Armoires encast
+ rées\, placards\, étagères
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

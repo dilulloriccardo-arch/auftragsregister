@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d998286-3adc-4cc5-8523-0b794e374b54-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270120T110000Z
+SUMMARY:Submission deadline: MP 2026.09.866 - Profil sécurité système in
+ formation
+DESCRIPTION:Public buyer: Transports publics de la région lausannoise sa\n
+ Submission deadline: 20 Jan 2027\, 12:00\nIn the register: https://auftr
+ agsregister.ch/en/auftrag/6d998286-3adc-4cc5-8523-0b794e374b54/\nOfficial 
+ publication: https://www.simap.ch/en/project-detail/6d998286-3adc-4cc5-852
+ 3-0b794e374b54
+URL:https://auftragsregister.ch/en/auftrag/6d998286-3adc-4cc5-8523-0b794e37
+ 4b54/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: MP 2026.09.866 - Profil sécurité systèm
+ e information
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cff7402d-6a96-4d28-94a3-5d861750c22a-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Scadenza: Verpflegung Tagesstrukturen Primarschule Oberglatt
+DESCRIPTION:Ente pubblico: Primarschule Oberglatt\nScadenza: 11.01.2027\, 1
+ 2:00\nNel registro: https://auftragsregister.ch/it/auftrag/cff7402d-6a96-4
+ d28-94a3-5d861750c22a/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/cff7402d-6a96-4d28-94a3-5d861750c22a
+URL:https://auftragsregister.ch/it/auftrag/cff7402d-6a96-4d28-94a3-5d861750
+ c22a/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Verpflegung Tagesstrukturen Primarschule Oberglatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

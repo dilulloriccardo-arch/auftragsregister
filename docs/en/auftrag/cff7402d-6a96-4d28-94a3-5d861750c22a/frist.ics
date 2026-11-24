@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cff7402d-6a96-4d28-94a3-5d861750c22a-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Submission deadline: Catering (meals) for the day-care structures a
+ t Oberglatt Primary School
+DESCRIPTION:Public buyer: Primarschule Oberglatt\nSubmission deadline: 11 
+ Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag
+ /cff7402d-6a96-4d28-94a3-5d861750c22a/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/cff7402d-6a96-4d28-94a3-5d861750c22a
+URL:https://auftragsregister.ch/en/auftrag/cff7402d-6a96-4d28-94a3-5d861750
+ c22a/
+LOCATION:Oberglatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Catering (meals) for the day-care structur
+ es at Oberglatt Primary School
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

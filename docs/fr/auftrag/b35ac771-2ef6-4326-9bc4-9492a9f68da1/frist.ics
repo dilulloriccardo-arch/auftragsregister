@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b35ac771-2ef6-4326-9bc4-9492a9f68da1-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:Délai de remise : Sanierung und Neubau Lidostrasse - Gärtnerarb
+ eiten
+DESCRIPTION:Acheteur public : Tiefbauamt Stadt Luzern\nDélai de remise
+  : 05.01.2027\nDans le registre : https://auftragsregister.ch/fr/auftr
+ ag/b35ac771-2ef6-4326-9bc4-9492a9f68da1/\nPublication officielle : https
+ ://www.simap.ch/fr/project-detail/b35ac771-2ef6-4326-9bc4-9492a9f68da1
+URL:https://auftragsregister.ch/fr/auftrag/b35ac771-2ef6-4326-9bc4-9492a9f6
+ 8da1/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung und Neubau Lidostrasse - Gärtne
+ rarbeiten
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

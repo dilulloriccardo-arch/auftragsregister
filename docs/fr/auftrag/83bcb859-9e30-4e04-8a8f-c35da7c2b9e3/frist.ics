@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83bcb859-9e30-4e04-8a8f-c35da7c2b9e3-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Délai de remise : Getränke
+DESCRIPTION:Acheteur public : Kantonspolizei Zürich\nDélai de remise 
+ : 25.01.2027\, 16 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/83bcb859-9e30-4e04-8a8f-c35da7c2b9e3/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/83bcb859-9e30-4e04-8a8f-c35da
+ 7c2b9e3
+URL:https://auftragsregister.ch/fr/auftrag/83bcb859-9e30-4e04-8a8f-c35da7c2
+ b9e3/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Getränke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

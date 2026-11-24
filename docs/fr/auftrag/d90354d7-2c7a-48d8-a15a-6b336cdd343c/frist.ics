@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d90354d7-2c7a-48d8-a15a-6b336cdd343c-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270210T140000Z
+SUMMARY:Délai de remise : Prestations de restauration CFIS
+DESCRIPTION:Acheteur public : Bundesamt für Rüstung armasuisse\nDélai 
+ de remise : 10.02.2027\, 15 h 00\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/d90354d7-2c7a-48d8-a15a-6b336cdd343c/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/d90354d7-2c7a-48d
+ 8-a15a-6b336cdd343c
+URL:https://auftragsregister.ch/fr/auftrag/d90354d7-2c7a-48d8-a15a-6b336cdd
+ 343c/
+LOCATION:Schwarzenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Prestations de restauration CFIS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

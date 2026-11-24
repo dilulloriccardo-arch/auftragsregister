@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d90354d7-2c7a-48d8-a15a-6b336cdd343c-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270210T140000Z
+SUMMARY:Scadenza: Gastronomieleistungen EAZS
+DESCRIPTION:Ente pubblico: Bundesamt für Rüstung armasuisse\nScadenza: 10
+ .02.2027\, 15:00\nNel registro: https://auftragsregister.ch/it/auftrag/d90
+ 354d7-2c7a-48d8-a15a-6b336cdd343c/\nPubblicazione ufficiale: https://www.s
+ imap.ch/it/project-detail/d90354d7-2c7a-48d8-a15a-6b336cdd343c
+URL:https://auftragsregister.ch/it/auftrag/d90354d7-2c7a-48d8-a15a-6b336cdd
+ 343c/
+LOCATION:Schwarzenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gastronomieleistungen EAZS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

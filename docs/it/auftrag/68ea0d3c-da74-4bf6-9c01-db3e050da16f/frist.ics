@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:68ea0d3c-da74-4bf6-9c01-db3e050da16f-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270205T150000Z
+SUMMARY:Scadenza: 14034.12 / 240-01 Erdsonden\, NHF NT Museumsareal Anpassu
+ ngen_Fabrikgebäude
+DESCRIPTION:Ente pubblico: Hochbauamt Kanton Zürich\nScadenza: 05.02.2027\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/68ea0d3c-da7
+ 4-4bf6-9c01-db3e050da16f/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/68ea0d3c-da74-4bf6-9c01-db3e050da16f
+URL:https://auftragsregister.ch/it/auftrag/68ea0d3c-da74-4bf6-9c01-db3e050d
+ a16f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 14034.12 / 240-01 Erdsonden\, NHF NT Museumsareal Anp
+ assungen_Fabrikgebäude
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d0fe86f-15de-4e54-b159-34ed43a53b5f-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270119T225900Z
+SUMMARY:Eingabefrist: Neubau Lichtsignalanlage 3000-027 (076) Guisanplatz\,
+  Bern (inklusive Steuergerät)
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 19.01.
+ 2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3d0
+ fe86f-15de-4e54-b159-34ed43a53b5f/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/3d0fe86f-15de-4e54-b159-34ed43a53b5f
+URL:https://auftragsregister.ch/de/auftrag/3d0fe86f-15de-4e54-b159-34ed43a5
+ 3b5f/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Lichtsignalanlage 3000-027 (076) Guisanpla
+ tz\, Bern (inklusive Steuergerät)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

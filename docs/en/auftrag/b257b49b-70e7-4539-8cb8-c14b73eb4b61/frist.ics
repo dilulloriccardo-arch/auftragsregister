@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b257b49b-70e7-4539-8cb8-c14b73eb4b61-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Submission deadline: Acquisition de microscopes opératoires
+DESCRIPTION:Public buyer: Centrale d'achats et d'ingénierie biomédicale V
+ aud-Genève (CAIB)\nSubmission deadline: 15 Jan 2027\, 23:59\nIn the reg
+ ister: https://auftragsregister.ch/en/auftrag/b257b49b-70e7-4539-8cb8-c14b
+ 73eb4b61/\nOfficial publication: https://www.simap.ch/en/project-detail/b2
+ 57b49b-70e7-4539-8cb8-c14b73eb4b61
+URL:https://auftragsregister.ch/en/auftrag/b257b49b-70e7-4539-8cb8-c14b73eb
+ 4b61/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Acquisition de microscopes opératoires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

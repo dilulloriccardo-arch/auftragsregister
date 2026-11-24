@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c9d2b68e-1eaf-4bc5-b0e0-e4068a5941e9-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270115T160000Z
+SUMMARY:Eingabefrist: Sanierung Sandbuck- und Stigstrasse\, Neerach
+DESCRIPTION:Auftraggeber: Gemeinde Neerach (Müller Ingenieure AG)\nEingabe
+ frist: 15.01.2027\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/c9d2b68e-1eaf-4bc5-b0e0-e4068a5941e9/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/c9d2b68e-1eaf-4bc5-b0e0-e4068a5941e9
+URL:https://auftragsregister.ch/de/auftrag/c9d2b68e-1eaf-4bc5-b0e0-e4068a59
+ 41e9/
+LOCATION:Neerach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Sandbuck- und Stigstrasse\, Neerach
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

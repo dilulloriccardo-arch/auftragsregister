@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d90354d7-2c7a-48d8-a15a-6b336cdd343c-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270210T140000Z
+SUMMARY:Submission deadline: Gastronomieleistungen EAZS
+DESCRIPTION:Public buyer: Bundesamt für Rüstung armasuisse\nSubmission de
+ adline: 10 Feb 2027\, 15:00\nIn the register: https://auftragsregister.c
+ h/en/auftrag/d90354d7-2c7a-48d8-a15a-6b336cdd343c/\nOfficial publication: 
+ https://www.simap.ch/en/project-detail/d90354d7-2c7a-48d8-a15a-6b336cdd343
+ c
+URL:https://auftragsregister.ch/en/auftrag/d90354d7-2c7a-48d8-a15a-6b336cdd
+ 343c/
+LOCATION:Schwarzenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Gastronomieleistungen EAZS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

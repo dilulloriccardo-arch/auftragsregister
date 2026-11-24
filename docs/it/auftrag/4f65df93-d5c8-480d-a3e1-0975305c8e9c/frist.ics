@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4f65df93-d5c8-480d-a3e1-0975305c8e9c-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Scadenza: Ausschreibung Lieferung und Montage von Folien
+DESCRIPTION:Ente pubblico: Flughafen Zürich AG - Zentraler Einkauf\nScaden
+ za: 11.01.2027\, 12:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/4f65df93-d5c8-480d-a3e1-0975305c8e9c/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/4f65df93-d5c8-480d-a3e1-0975305c8e9c
+URL:https://auftragsregister.ch/it/auftrag/4f65df93-d5c8-480d-a3e1-0975305c
+ 8e9c/
+LOCATION:Zürich-Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung Lieferung und Montage von Folien
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

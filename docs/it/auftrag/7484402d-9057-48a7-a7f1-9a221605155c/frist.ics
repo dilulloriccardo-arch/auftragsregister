@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7484402d-9057-48a7-a7f1-9a221605155c-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20261221T150000Z
+SUMMARY:Scadenza: Container Übungsanlage Feuerwehr
+DESCRIPTION:Ente pubblico: Feuerpolizei des Kantons Schaffhausen\nScadenza:
+  21.12.2026\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 7484402d-9057-48a7-a7f1-9a221605155c/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/7484402d-9057-48a7-a7f1-9a221605155c
+URL:https://auftragsregister.ch/it/auftrag/7484402d-9057-48a7-a7f1-9a221605
+ 155c/
+LOCATION:Beringen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Container Übungsanlage Feuerwehr
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

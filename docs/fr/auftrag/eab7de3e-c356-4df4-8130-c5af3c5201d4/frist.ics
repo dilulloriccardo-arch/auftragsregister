@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eab7de3e-c356-4df4-8130-c5af3c5201d4-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Délai de remise : Beschaffung Druckerflotte
+DESCRIPTION:Acheteur public : Gemeinde Möhlin\nDélai de remise : 15.0
+ 1.2027\, 23 h 59\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/eab7de3e-c356-4df4-8130-c5af3c5201d4/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/eab7de3e-c356-4df4-8130-c5af3c5201d
+ 4
+URL:https://auftragsregister.ch/fr/auftrag/eab7de3e-c356-4df4-8130-c5af3c52
+ 01d4/
+LOCATION:Möhlin
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Beschaffung Druckerflotte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f55e59c7-42bb-4728-8f73-21e262d95f18-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270104T150000Z
+SUMMARY:Eingabefrist: Dématérialisation du courrier entrant
+DESCRIPTION:Auftraggeber: Service Achat pour les marchés publics\nEingabef
+ rist: 04.01.2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de
+ /auftrag/f55e59c7-42bb-4728-8f73-21e262d95f18/\nAmtliche Publikation: http
+ s://www.simap.ch/de/project-detail/f55e59c7-42bb-4728-8f73-21e262d95f18
+URL:https://auftragsregister.ch/de/auftrag/f55e59c7-42bb-4728-8f73-21e262d9
+ 5f18/
+LOCATION:Granges-Paccot
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Dématérialisation du courrier entrant
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

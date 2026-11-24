@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bc012bf1-366e-4765-be14-d58c8f85d447-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270121T150000Z
+SUMMARY:Délai de remise : 26135 - Travaux de chapes et de revêtements d
+ e sol intérieurs pour installations sportives nécessaires à la rénovat
+ ion et à la réhabilitation du collège et du gymnase Acquarossa
+DESCRIPTION:Acheteur public : Sezione della logistica - Servizio appalti\
+ nDélai de remise : 21.01.2027\, 16 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/bc012bf1-366e-4765-be14-d58c8f85d447/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/bc012bf1-
+ 366e-4765-be14-d58c8f85d447
+URL:https://auftragsregister.ch/fr/auftrag/bc012bf1-366e-4765-be14-d58c8f85
+ d447/
+LOCATION:Acquarossa
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 26135 - Travaux de chapes et de revêtemen
+ ts de sol intérieurs pour installations sportives nécessaires à la rén
+ ovation et à la réhabilitation du collège et du gymnase Acquarossa
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

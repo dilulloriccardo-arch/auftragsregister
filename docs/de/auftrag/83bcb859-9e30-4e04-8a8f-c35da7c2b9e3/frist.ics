@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83bcb859-9e30-4e04-8a8f-c35da7c2b9e3-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Eingabefrist: Getränke
+DESCRIPTION:Auftraggeber: Kantonspolizei Zürich\nEingabefrist: 25.01.2027\
+ , 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/83bcb859
+ -9e30-4e04-8a8f-c35da7c2b9e3/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/83bcb859-9e30-4e04-8a8f-c35da7c2b9e3
+URL:https://auftragsregister.ch/de/auftrag/83bcb859-9e30-4e04-8a8f-c35da7c2
+ b9e3/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Getränke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

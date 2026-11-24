@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d4d815c1-f0fc-477f-a1ee-289ba08821aa-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20261221T110000Z
+SUMMARY:Submission deadline: WV Gemeinde Illgau - Neubau Reservoir Kaltenbr
+ unnen
+DESCRIPTION:Public buyer: WV Gemeinde Illgau\nSubmission deadline: 21 Dec
+  2026\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/d4
+ d815c1-f0fc-477f-a1ee-289ba08821aa/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/d4d815c1-f0fc-477f-a1ee-289ba08821aa
+URL:https://auftragsregister.ch/en/auftrag/d4d815c1-f0fc-477f-a1ee-289ba088
+ 21aa/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: WV Gemeinde Illgau - Neubau Reservoir Kalt
+ enbrunnen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

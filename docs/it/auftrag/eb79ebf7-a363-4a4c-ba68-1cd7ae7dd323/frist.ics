@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb79ebf7-a363-4a4c-ba68-1cd7ae7dd323-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270226T100000Z
+SUMMARY:Scadenza: Generalplanung Ausbau Biologie - ARA Laufäcker
+DESCRIPTION:Ente pubblico: Abwasserverband Region Baden Wettingen\nScadenza
+ : 26.02.2027\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag
+ /eb79ebf7-a363-4a4c-ba68-1cd7ae7dd323/\nPubblicazione ufficiale: https://w
+ ww.simap.ch/it/project-detail/eb79ebf7-a363-4a4c-ba68-1cd7ae7dd323
+URL:https://auftragsregister.ch/it/auftrag/eb79ebf7-a363-4a4c-ba68-1cd7ae7d
+ d323/
+LOCATION:Turgi
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Generalplanung Ausbau Biologie - ARA Laufäcker
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

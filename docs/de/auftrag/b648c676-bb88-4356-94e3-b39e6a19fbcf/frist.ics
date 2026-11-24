@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b648c676-bb88-4356-94e3-b39e6a19fbcf-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20261220T225900Z
+SUMMARY:Eingabefrist: Bauherrenunterstützung - Rahmenvertrag (SIA-Phasen 3
+  bis 5)
+DESCRIPTION:Auftraggeber: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nEingabefrist: 20.12.2026\, 23.59 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/b648c676-bb88-4356-94e3-b39e6a19fbcf/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/b648c676-bb88-4356-94e3-b39
+ e6a19fbcf
+URL:https://auftragsregister.ch/de/auftrag/b648c676-bb88-4356-94e3-b39e6a19
+ fbcf/
+LOCATION:Liestal
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bauherrenunterstützung - Rahmenvertrag (SIA-Phas
+ en 3 bis 5)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

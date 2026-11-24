@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:25d44227-f8a9-4985-95bf-392bf328e07b-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270201T110000Z
+SUMMARY:Délai de remise : Fourniture de trois (3) transformateurs de pui
+ ssance de 23 MVA pour le site d’Hauterive (FR)
+DESCRIPTION:Acheteur public : Groupe E SA - Service Achat pour les March
+ és publics\nDélai de remise : 01.02.2027\, 12 h 00\nDans le regist
+ re : https://auftragsregister.ch/fr/auftrag/25d44227-f8a9-4985-95bf-392b
+ f328e07b/\nPublication officielle : https://www.simap.ch/fr/project-deta
+ il/25d44227-f8a9-4985-95bf-392bf328e07b
+URL:https://auftragsregister.ch/fr/auftrag/25d44227-f8a9-4985-95bf-392bf328
+ e07b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fourniture de trois (3) transformateurs de
+  puissance de 23 MVA pour le site d’Hauterive (FR)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

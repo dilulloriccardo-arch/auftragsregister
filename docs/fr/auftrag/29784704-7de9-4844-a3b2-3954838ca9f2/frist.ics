@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:29784704-7de9-4844-a3b2-3954838ca9f2-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Délai de remise : Abwasserleitungen Saanematte / Regenbecken Gst
+ aad
+DESCRIPTION:Acheteur public : Einwohnergemeinde Saanen\nDélai de remise
+  : 15.01.2027\nDans le registre : https://auftragsregister.ch/fr/auftr
+ ag/29784704-7de9-4844-a3b2-3954838ca9f2/\nPublication officielle : https
+ ://www.simap.ch/fr/project-detail/29784704-7de9-4844-a3b2-3954838ca9f2
+URL:https://auftragsregister.ch/fr/auftrag/29784704-7de9-4844-a3b2-3954838c
+ a9f2/
+LOCATION:Gstaad
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Abwasserleitungen Saanematte / Regenbecken
+  Gstaad
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

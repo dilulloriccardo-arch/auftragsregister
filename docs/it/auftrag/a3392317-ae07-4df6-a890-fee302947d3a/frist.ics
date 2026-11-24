@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a3392317-ae07-4df6-a890-fee302947d3a-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270115T210000Z
+SUMMARY:Scadenza: VSZK - Ausschreibung BKP 213 Montagebau in Stahl
+DESCRIPTION:Ente pubblico: Hochbauamt Kanton Schwyz\nScadenza: 15.01.2027\,
+  22:00\nNel registro: https://auftragsregister.ch/it/auftrag/a3392317-ae07
+ -4df6-a890-fee302947d3a/\nPubblicazione ufficiale: https://www.simap.ch/it
+ /project-detail/a3392317-ae07-4df6-a890-fee302947d3a
+URL:https://auftragsregister.ch/it/auftrag/a3392317-ae07-4df6-a890-fee30294
+ 7d3a/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: VSZK - Ausschreibung BKP 213 Montagebau in Stahl
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

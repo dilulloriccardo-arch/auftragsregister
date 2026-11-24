@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3c8c267d-be1e-4864-b0be-01c60a2fc3a0-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Submission deadline: Seetal WWTP\, Tender for General Planner Servi
+ ces\, SIA Phases 32–53
+DESCRIPTION:Public buyer: Abwasserverband Region Lenzburg (AVRL)\nSubmissio
+ n deadline: 15 Jan 2027\, 16:00\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/3c8c267d-be1e-4864-b0be-01c60a2fc3a0/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/3c8c267d-be1e-4864-b0be-01c60a2
+ fc3a0
+URL:https://auftragsregister.ch/en/auftrag/3c8c267d-be1e-4864-b0be-01c60a2f
+ c3a0/
+LOCATION:Wildegg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Seetal WWTP\, Tender for General Planner S
+ ervices\, SIA Phases 32–53
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

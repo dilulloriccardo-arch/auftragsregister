@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eed491a4-4954-495a-bcfb-cf4a72a5fab1-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270126T103000Z
+SUMMARY:Scadenza: Prestations de nettoyage pour quatre sites du Service des
+  automobiles et de la navigation
+DESCRIPTION:Ente pubblico: DGIP-Direction des achats et de la logistique (D
+ AL)\nScadenza: 26.01.2027\, 11:30\nNel registro: https://auftragsregister.
+ ch/it/auftrag/eed491a4-4954-495a-bcfb-cf4a72a5fab1/\nPubblicazione ufficia
+ le: https://www.simap.ch/it/project-detail/eed491a4-4954-495a-bcfb-cf4a72a
+ 5fab1
+URL:https://auftragsregister.ch/it/auftrag/eed491a4-4954-495a-bcfb-cf4a72a5
+ fab1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Prestations de nettoyage pour quatre sites du Service
+  des automobiles et de la navigation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

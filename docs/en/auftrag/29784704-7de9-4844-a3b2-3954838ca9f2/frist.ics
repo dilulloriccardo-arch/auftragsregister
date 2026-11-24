@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:29784704-7de9-4844-a3b2-3954838ca9f2-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Submission deadline: Abwasserleitungen Saanematte / Regenbecken Gst
+ aad
+DESCRIPTION:Public buyer: Einwohnergemeinde Saanen\nSubmission deadline: 15
+  Jan 2027\nIn the register: https://auftragsregister.ch/en/auftrag/29784
+ 704-7de9-4844-a3b2-3954838ca9f2/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/29784704-7de9-4844-a3b2-3954838ca9f2
+URL:https://auftragsregister.ch/en/auftrag/29784704-7de9-4844-a3b2-3954838c
+ a9f2/
+LOCATION:Gstaad
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Abwasserleitungen Saanematte / Regenbecken
+  Gstaad
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

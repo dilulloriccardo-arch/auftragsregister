@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:15a3887a-89a2-4d44-b08a-ea9cbe23ecff-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270119T150000Z
+SUMMARY:Submission deadline: Schallschutzprogramm Flughafen Zürich (selekt
+ ives Verfahren 1. Stufe) - Präqualifikation Fensterbauer (Holz\, Holz-Met
+ all und Kunststoff)\, Massnahmen 2027-2028
+DESCRIPTION:Public buyer: Flughafen Zürich AG - Schallschutz\nSubmission d
+ eadline: 19 Jan 2027\, 16:00\nIn the register: https://auftragsregister.
+ ch/en/auftrag/15a3887a-89a2-4d44-b08a-ea9cbe23ecff/\nOfficial publication:
+  https://www.simap.ch/en/project-detail/15a3887a-89a2-4d44-b08a-ea9cbe23ec
+ ff
+URL:https://auftragsregister.ch/en/auftrag/15a3887a-89a2-4d44-b08a-ea9cbe23
+ ecff/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schallschutzprogramm Flughafen Zürich (se
+ lektives Verfahren 1. Stufe) - Präqualifikation Fensterbauer (Holz\, Holz
+ -Metall und Kunststoff)\, Massnahmen 2027-2028
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

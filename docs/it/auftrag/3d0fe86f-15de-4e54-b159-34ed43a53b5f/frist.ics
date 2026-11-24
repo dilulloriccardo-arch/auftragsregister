@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3d0fe86f-15de-4e54-b159-34ed43a53b5f-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270119T225900Z
+SUMMARY:Scadenza: Neubau Lichtsignalanlage 3000-027 (076) Guisanplatz\, Ber
+ n (inklusive Steuergerät)
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 19.01.202
+ 7\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/3d0fe86f-1
+ 5de-4e54-b159-34ed43a53b5f/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/3d0fe86f-15de-4e54-b159-34ed43a53b5f
+URL:https://auftragsregister.ch/it/auftrag/3d0fe86f-15de-4e54-b159-34ed43a5
+ 3b5f/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Lichtsignalanlage 3000-027 (076) Guisanplatz\,
+  Bern (inklusive Steuergerät)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

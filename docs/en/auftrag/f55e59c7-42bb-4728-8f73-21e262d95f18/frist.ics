@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f55e59c7-42bb-4728-8f73-21e262d95f18-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270104T150000Z
+SUMMARY:Submission deadline: Dématérialisation du courrier entrant
+DESCRIPTION:Public buyer: Service Achat pour les marchés publics\nSubmissi
+ on deadline: 4 Jan 2027\, 16:00\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/f55e59c7-42bb-4728-8f73-21e262d95f18/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/f55e59c7-42bb-4728-8f73-21e262d
+ 95f18
+URL:https://auftragsregister.ch/en/auftrag/f55e59c7-42bb-4728-8f73-21e262d9
+ 5f18/
+LOCATION:Granges-Paccot
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Dématérialisation du courrier entrant
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

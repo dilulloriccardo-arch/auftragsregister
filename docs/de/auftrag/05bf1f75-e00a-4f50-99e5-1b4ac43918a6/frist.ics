@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:05bf1f75-e00a-4f50-99e5-1b4ac43918a6-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Eingabefrist: Baumeisterarbeiten Leitungsersatz Grämlis\, Horw
+DESCRIPTION:Auftraggeber: Gemeinde Horw\, Tiefbau\nEingabefrist: 25.01.2027
+ \, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/05bf1f7
+ 5-e00a-4f50-99e5-1b4ac43918a6/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/05bf1f75-e00a-4f50-99e5-1b4ac43918a6
+URL:https://auftragsregister.ch/de/auftrag/05bf1f75-e00a-4f50-99e5-1b4ac439
+ 18a6/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Baumeisterarbeiten Leitungsersatz Grämlis\, Horw
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

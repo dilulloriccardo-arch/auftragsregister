@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78828226-cce3-415a-8b96-40042ebd0d73-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270104T150000Z
+SUMMARY:Submission deadline: Elektro-Kehrichtsammelfahrzeug 6x2 mit Nachlau
+ fachse\, Breite 2.55 m\, Max. Höhe 3.40 m\, rechtsgelenkt\, Sammelkastenv
+ olumen ohne Mulde min. 19.5 m3
+DESCRIPTION:Public buyer: Stadt Luzern\, Strasseninspektorat\nSubmission de
+ adline: 4 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch
+ /en/auftrag/78828226-cce3-415a-8b96-40042ebd0d73/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/78828226-cce3-415a-8b96-40042ebd0d73
+URL:https://auftragsregister.ch/en/auftrag/78828226-cce3-415a-8b96-40042ebd
+ 0d73/
+LOCATION:Emmenbrücke
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Elektro-Kehrichtsammelfahrzeug 6x2 mit Nac
+ hlaufachse\, Breite 2.55 m\, Max. Höhe 3.40 m\, rechtsgelenkt\, Sammelkas
+ tenvolumen ohne Mulde min. 19.5 m3
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:68ea0d3c-da74-4bf6-9c01-db3e050da16f-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270205T150000Z
+SUMMARY:Eingabefrist: 14034.12 / 240-01 Erdsonden\, NHF NT Museumsareal Anp
+ assungen_Fabrikgebäude
+DESCRIPTION:Auftraggeber: Hochbauamt Kanton Zürich\nEingabefrist: 05.02.20
+ 27\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/68ea0
+ d3c-da74-4bf6-9c01-db3e050da16f/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/68ea0d3c-da74-4bf6-9c01-db3e050da16f
+URL:https://auftragsregister.ch/de/auftrag/68ea0d3c-da74-4bf6-9c01-db3e050d
+ a16f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 14034.12 / 240-01 Erdsonden\, NHF NT Museumsareal
+  Anpassungen_Fabrikgebäude
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

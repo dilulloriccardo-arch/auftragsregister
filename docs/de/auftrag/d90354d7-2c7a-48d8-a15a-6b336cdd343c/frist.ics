@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d90354d7-2c7a-48d8-a15a-6b336cdd343c-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270210T140000Z
+SUMMARY:Eingabefrist: Gastronomieleistungen EAZS
+DESCRIPTION:Auftraggeber: Bundesamt für Rüstung armasuisse\nEingabefrist:
+  10.02.2027\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auft
+ rag/d90354d7-2c7a-48d8-a15a-6b336cdd343c/\nAmtliche Publikation: https://w
+ ww.simap.ch/de/project-detail/d90354d7-2c7a-48d8-a15a-6b336cdd343c
+URL:https://auftragsregister.ch/de/auftrag/d90354d7-2c7a-48d8-a15a-6b336cdd
+ 343c/
+LOCATION:Schwarzenburg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gastronomieleistungen EAZS
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

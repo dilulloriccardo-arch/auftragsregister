@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:37cdbd58-9104-4f44-a3cc-8589ef1792c4-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Eingabefrist: Beschaffung Kommunalfahrzeug / Geräteträger mit Hak
+ engerät und Anbaugeräten
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Urtenen-Schönbühl\nEingabefri
+ st: 15.01.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/37cdbd58-9104-4f44-a3cc-8589ef1792c4/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/37cdbd58-9104-4f44-a3cc-8589ef1792c4
+URL:https://auftragsregister.ch/de/auftrag/37cdbd58-9104-4f44-a3cc-8589ef17
+ 92c4/
+LOCATION:Urtenen-Schönbühl
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beschaffung Kommunalfahrzeug / Geräteträger mit
+  Hakengerät und Anbaugeräten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

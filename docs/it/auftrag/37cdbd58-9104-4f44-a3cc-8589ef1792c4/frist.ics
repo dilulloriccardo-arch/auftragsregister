@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:37cdbd58-9104-4f44-a3cc-8589ef1792c4-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Scadenza: Beschaffung Kommunalfahrzeug / Geräteträger mit Hakenge
+ rät und Anbaugeräten
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Urtenen-Schönbühl\nScadenza:
+  15.01.2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/
+ 37cdbd58-9104-4f44-a3cc-8589ef1792c4/\nPubblicazione ufficiale: https://ww
+ w.simap.ch/it/project-detail/37cdbd58-9104-4f44-a3cc-8589ef1792c4
+URL:https://auftragsregister.ch/it/auftrag/37cdbd58-9104-4f44-a3cc-8589ef17
+ 92c4/
+LOCATION:Urtenen-Schönbühl
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung Kommunalfahrzeug / Geräteträger mit Hak
+ engerät und Anbaugeräten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

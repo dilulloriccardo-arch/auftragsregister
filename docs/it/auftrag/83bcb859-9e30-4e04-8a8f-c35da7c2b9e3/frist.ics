@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:83bcb859-9e30-4e04-8a8f-c35da7c2b9e3-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Scadenza: Getränke
+DESCRIPTION:Ente pubblico: Kantonspolizei Zürich\nScadenza: 25.01.2027\, 1
+ 6:00\nNel registro: https://auftragsregister.ch/it/auftrag/83bcb859-9e30-4
+ e04-8a8f-c35da7c2b9e3/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/83bcb859-9e30-4e04-8a8f-c35da7c2b9e3
+URL:https://auftragsregister.ch/it/auftrag/83bcb859-9e30-4e04-8a8f-c35da7c2
+ b9e3/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Getränke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

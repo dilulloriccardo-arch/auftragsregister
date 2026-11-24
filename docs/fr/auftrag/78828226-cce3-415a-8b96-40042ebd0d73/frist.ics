@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78828226-cce3-415a-8b96-40042ebd0d73-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270104T150000Z
+SUMMARY:Délai de remise : Véhicule électrique de collecte des déchets
+  6x2 avec essieu suiveur\, largeur 2\,55 m\, hauteur max. 3\,40 m\, condui
+ te à droite\, volume de la caisse de collecte (hors benne) : 19\,5 m³ mi
+ nimum.
+DESCRIPTION:Acheteur public : Stadt Luzern\, Strasseninspektorat\nDélai 
+ de remise : 04.01.2027\, 16 h 00\nDans le registre : https://auftr
+ agsregister.ch/fr/auftrag/78828226-cce3-415a-8b96-40042ebd0d73/\nPublicati
+ on officielle : https://www.simap.ch/fr/project-detail/78828226-cce3-415
+ a-8b96-40042ebd0d73
+URL:https://auftragsregister.ch/fr/auftrag/78828226-cce3-415a-8b96-40042ebd
+ 0d73/
+LOCATION:Emmenbrücke
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Véhicule électrique de collecte des déc
+ hets 6x2 avec essieu suiveur\, largeur 2\,55 m\, hauteur max. 3\,40 m\, co
+ nduite à droite\, volume de la caisse de collecte (hors benne) : 19\,5 m
+ ³ minimum.
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

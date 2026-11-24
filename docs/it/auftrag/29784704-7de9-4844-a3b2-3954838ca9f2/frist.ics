@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:29784704-7de9-4844-a3b2-3954838ca9f2-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:Scadenza: Abwasserleitungen Saanematte / Regenbecken Gstaad
+DESCRIPTION:Ente pubblico: Einwohnergemeinde Saanen\nScadenza: 15.01.2027\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/29784704-7de9-4844-a3
+ b2-3954838ca9f2/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/29784704-7de9-4844-a3b2-3954838ca9f2
+URL:https://auftragsregister.ch/it/auftrag/29784704-7de9-4844-a3b2-3954838c
+ a9f2/
+LOCATION:Gstaad
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Abwasserleitungen Saanematte / Regenbecken Gstaad
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

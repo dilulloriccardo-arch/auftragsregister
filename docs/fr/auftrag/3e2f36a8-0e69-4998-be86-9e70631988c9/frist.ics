@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3e2f36a8-0e69-4998-be86-9e70631988c9-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270105T150000Z
+SUMMARY:Délai de remise : Betrieblicher und baulicher Unterhalt Abwasser
+ anlagen
+DESCRIPTION:Acheteur public : Gemeinde Oberkirch\nDélai de remise : 05
+ .01.2027\, 16 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/3e2f36a8-0e69-4998-be86-9e70631988c9/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/3e2f36a8-0e69-4998-be86-9e7063198
+ 8c9
+URL:https://auftragsregister.ch/fr/auftrag/3e2f36a8-0e69-4998-be86-9e706319
+ 88c9/
+LOCATION:Oberkirch
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Betrieblicher und baulicher Unterhalt Abwa
+ sseranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:afda6280-6737-4066-97e5-e2037e4c6d66-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270119T090000Z
+SUMMARY:Submission deadline: Rental of Coffee Machines for the Zurich City 
+ Hospital
+DESCRIPTION:Public buyer: Stadtspital Zürich\nSubmission deadline: 19 Jan
+  2027\, 10:00\nIn the register: https://auftragsregister.ch/en/auftrag/af
+ da6280-6737-4066-97e5-e2037e4c6d66/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/afda6280-6737-4066-97e5-e2037e4c6d66
+URL:https://auftragsregister.ch/en/auftrag/afda6280-6737-4066-97e5-e2037e4c
+ 6d66/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rental of Coffee Machines for the Zurich C
+ ity Hospital
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

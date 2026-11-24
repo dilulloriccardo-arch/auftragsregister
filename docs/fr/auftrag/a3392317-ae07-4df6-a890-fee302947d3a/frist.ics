@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a3392317-ae07-4df6-a890-fee302947d3a-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270115T210000Z
+SUMMARY:Délai de remise : VSZK – Appel d’offres CFC 213 Construction
+  métallique (montage)
+DESCRIPTION:Acheteur public : Hochbauamt Kanton Schwyz\nDélai de remise
+  : 15.01.2027\, 22 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/a3392317-ae07-4df6-a890-fee302947d3a/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/a3392317-ae07-4df6-a890-fe
+ e302947d3a
+URL:https://auftragsregister.ch/fr/auftrag/a3392317-ae07-4df6-a890-fee30294
+ 7d3a/
+LOCATION:Schwyz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : VSZK – Appel d’offres CFC 213 Construc
+ tion métallique (montage)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

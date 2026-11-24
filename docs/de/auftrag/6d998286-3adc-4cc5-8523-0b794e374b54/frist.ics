@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6d998286-3adc-4cc5-8523-0b794e374b54-frist@auftragsregister.ch
+DTSTAMP:20261124T000000Z
+SEQUENCE:0
+DTSTART:20270120T110000Z
+SUMMARY:Eingabefrist: MP 2026.09.866 - Profil sécurité système informati
+ on
+DESCRIPTION:Auftraggeber: Transports publics de la région lausannoise sa\n
+ Eingabefrist: 20.01.2027\, 12.00 Uhr\nIm Register: https://auftragsregist
+ er.ch/de/auftrag/6d998286-3adc-4cc5-8523-0b794e374b54/\nAmtliche Publikati
+ on: https://www.simap.ch/de/project-detail/6d998286-3adc-4cc5-8523-0b794e3
+ 74b54
+URL:https://auftragsregister.ch/de/auftrag/6d998286-3adc-4cc5-8523-0b794e37
+ 4b54/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: MP 2026.09.866 - Profil sécurité système infor
+ mation
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
