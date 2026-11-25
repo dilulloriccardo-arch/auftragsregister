@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1807c165-e4de-4b47-9c7c-4d35f12354c4-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Délai de remise : CPC 272.2 Construction métallique brute
+DESCRIPTION:Acheteur public : Flughafen Zürich AG - ELP\nDélai de remis
+ e : 13.01.2027\, 12 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/1807c165-e4de-4b47-9c7c-4d35f12354c4/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/1807c165-e4de-4b47-9c7c-4
+ d35f12354c4
+URL:https://auftragsregister.ch/fr/auftrag/1807c165-e4de-4b47-9c7c-4d35f123
+ 54c4/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CPC 272.2 Construction métallique brute
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

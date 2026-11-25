@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff6c889e-27a8-4f5b-9cf6-08a3f3751442-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270121T140000Z
+SUMMARY:Eingabefrist: Känerkinden - Hauptstrasse / Strasseninstandsetzung 
+ innerorts
+DESCRIPTION:Auftraggeber: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nEingabefrist: 21.01.2027\, 15.00 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/ff6c889e-27a8-4f5b-9cf6-08a3f3751442/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/ff6c889e-27a8-4f5b-9cf6-08a
+ 3f3751442
+URL:https://auftragsregister.ch/de/auftrag/ff6c889e-27a8-4f5b-9cf6-08a3f375
+ 1442/
+LOCATION:Känerkinden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Känerkinden - Hauptstrasse / Strasseninstandsetz
+ ung innerorts
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0323fa2b-1ff7-44cd-bbbc-6dc2bc68d779-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270202T170000Z
+SUMMARY:Submission deadline: Kantonale Lösung für die Zeitwirtschaft
+DESCRIPTION:Public buyer: Kanton St.Gallen\, Finanzdepartement\, Personalam
+ t\nSubmission deadline: 2 Feb 2027\, 18:00\nIn the register: https://auf
+ tragsregister.ch/en/auftrag/0323fa2b-1ff7-44cd-bbbc-6dc2bc68d779/\nOfficia
+ l publication: https://www.simap.ch/en/project-detail/0323fa2b-1ff7-44cd-b
+ bbc-6dc2bc68d779
+URL:https://auftragsregister.ch/en/auftrag/0323fa2b-1ff7-44cd-bbbc-6dc2bc68
+ d779/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kantonale Lösung für die Zeitwirtschaft
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:475e0b9b-2010-4abc-a0ad-69a3a8b35ed1-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20261221T153000Z
+SUMMARY:Délai de remise : HEPIA - Installation d'un groupe de secours / 
+ CFC23 - Installations électriques
+DESCRIPTION:Acheteur public : Office cantonal des bâtiments (OCBA)\nDél
+ ai de remise : 21.12.2026\, 16 h 30\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/475e0b9b-2010-4abc-a0ad-69a3a8b35ed1/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/475e0b9b-2010-
+ 4abc-a0ad-69a3a8b35ed1
+URL:https://auftragsregister.ch/fr/auftrag/475e0b9b-2010-4abc-a0ad-69a3a8b3
+ 5ed1/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : HEPIA - Installation d'un groupe de secour
+ s / CFC23 - Installations électriques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

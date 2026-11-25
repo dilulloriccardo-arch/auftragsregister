@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a3de7faa-86c7-4e32-ab62-cae6acb8a916-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270114T110000Z
+SUMMARY:Submission deadline: HLKS-Installationen + Pelletskessel
+DESCRIPTION:Public buyer: DIB - Elektrizitätswerk der Stadt Zürich (ewz)\
+ nSubmission deadline: 14 Jan 2027\, 12:00\nIn the register: https://auft
+ ragsregister.ch/en/auftrag/a3de7faa-86c7-4e32-ab62-cae6acb8a916/\nOfficial
+  publication: https://www.simap.ch/en/project-detail/a3de7faa-86c7-4e32-ab
+ 62-cae6acb8a916
+URL:https://auftragsregister.ch/en/auftrag/a3de7faa-86c7-4e32-ab62-cae6acb8
+ a916/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: HLKS-Installationen + Pelletskessel
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

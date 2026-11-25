@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40cea7a1-fea8-4803-a7c4-5d31ba3e283f-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Submission deadline: WV Gemeinde Jonen - Neubau Reservoir Dorf
+DESCRIPTION:Public buyer: Gemeinde Jonen\nSubmission deadline: 11 Jan 202
+ 7\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/40cea7a
+ 1-fea8-4803-a7c4-5d31ba3e283f/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/40cea7a1-fea8-4803-a7c4-5d31ba3e283f
+URL:https://auftragsregister.ch/en/auftrag/40cea7a1-fea8-4803-a7c4-5d31ba3e
+ 283f/
+LOCATION:Jonen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: WV Gemeinde Jonen - Neubau Reservoir Dorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

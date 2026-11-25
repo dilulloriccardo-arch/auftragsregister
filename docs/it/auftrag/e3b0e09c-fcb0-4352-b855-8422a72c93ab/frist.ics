@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3b0e09c-fcb0-4352-b855-8422a72c93ab-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Scadenza: VEB Verdrängungen B10 / B - BKP 244 Lufttechnische Anlag
+ en
+DESCRIPTION:Ente pubblico: Flughafen Zürich AG\nScadenza: 22.01.2027\, 12:
+ 00\nNel registro: https://auftragsregister.ch/it/auftrag/e3b0e09c-fcb0-435
+ 2-b855-8422a72c93ab/\nPubblicazione ufficiale: https://www.simap.ch/it/pro
+ ject-detail/e3b0e09c-fcb0-4352-b855-8422a72c93ab
+URL:https://auftragsregister.ch/it/auftrag/e3b0e09c-fcb0-4352-b855-8422a72c
+ 93ab/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: VEB Verdrängungen B10 / B - BKP 244 Lufttechnische A
+ nlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

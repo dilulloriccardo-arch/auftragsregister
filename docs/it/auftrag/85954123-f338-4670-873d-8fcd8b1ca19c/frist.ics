@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85954123-f338-4670-873d-8fcd8b1ca19c-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270122T160000Z
+SUMMARY:Scadenza: Sicherheitsdienstleistungen für das Kinderspital-Areal Z
+ ürich-Hottingen
+DESCRIPTION:Ente pubblico: Immobilienamt\nScadenza: 22.01.2027\, 17:00\nNel
+  registro: https://auftragsregister.ch/it/auftrag/85954123-f338-4670-873d-
+ 8fcd8b1ca19c/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/85954123-f338-4670-873d-8fcd8b1ca19c
+URL:https://auftragsregister.ch/it/auftrag/85954123-f338-4670-873d-8fcd8b1c
+ a19c/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sicherheitsdienstleistungen für das Kinderspital-Are
+ al Zürich-Hottingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61388f79-c5fd-450e-bdc8-81cb04ccb5e1-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20261216T160000Z
+SUMMARY:Scadenza: Réhabilitation du collège d'Yvorne - travaux d'électri
+ cité
+DESCRIPTION:Ente pubblico: Commune d'Yvorne (dom-aa)\nScadenza: 16.12.2026\
+ , 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/61388f79-c5f
+ d-450e-bdc8-81cb04ccb5e1/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/61388f79-c5fd-450e-bdc8-81cb04ccb5e1
+URL:https://auftragsregister.ch/it/auftrag/61388f79-c5fd-450e-bdc8-81cb04cc
+ b5e1/
+LOCATION:Yvorne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Réhabilitation du collège d'Yvorne - travaux d'éle
+ ctricité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

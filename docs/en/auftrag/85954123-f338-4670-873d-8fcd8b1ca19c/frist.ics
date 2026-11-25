@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85954123-f338-4670-873d-8fcd8b1ca19c-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270122T160000Z
+SUMMARY:Submission deadline: Sicherheitsdienstleistungen für das Kinderspi
+ tal-Areal Zürich-Hottingen
+DESCRIPTION:Public buyer: Immobilienamt\nSubmission deadline: 22 Jan 2027
+ \, 17:00\nIn the register: https://auftragsregister.ch/en/auftrag/85954123
+ -f338-4670-873d-8fcd8b1ca19c/\nOfficial publication: https://www.simap.ch/
+ en/project-detail/85954123-f338-4670-873d-8fcd8b1ca19c
+URL:https://auftragsregister.ch/en/auftrag/85954123-f338-4670-873d-8fcd8b1c
+ a19c/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sicherheitsdienstleistungen für das Kinde
+ rspital-Areal Zürich-Hottingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

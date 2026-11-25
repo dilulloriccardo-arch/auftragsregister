@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20524995-eec4-41d2-a43e-46bbfdb6a64d-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270205T225900Z
+SUMMARY:Submission deadline: Sanierung Uettligen Innerorts Planerleistungen
+  inkl. Gesamtleitung SIA-Teilphasen 31 – 53\; Anwendung BIM-Methode
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Bern\nSubmission deadline:
+  5 Feb 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/auf
+ trag/20524995-eec4-41d2-a43e-46bbfdb6a64d/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/20524995-eec4-41d2-a43e-46bbfdb6a64d
+URL:https://auftragsregister.ch/en/auftrag/20524995-eec4-41d2-a43e-46bbfdb6
+ a64d/
+LOCATION:Uettligen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sanierung Uettligen Innerorts Planerleistu
+ ngen inkl. Gesamtleitung SIA-Teilphasen 31 – 53\; Anwendung BIM-Methode
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

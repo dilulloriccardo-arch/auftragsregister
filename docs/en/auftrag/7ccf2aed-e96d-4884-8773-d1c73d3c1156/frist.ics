@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ccf2aed-e96d-4884-8773-d1c73d3c1156-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Submission deadline: VEB Verdrängungen B10 / B - BKP 250 Sanitära
+ nlagen
+DESCRIPTION:Public buyer: Flughafen Zürich AG\nSubmission deadline: 22 Ja
+ n 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/7
+ ccf2aed-e96d-4884-8773-d1c73d3c1156/\nOfficial publication: https://www.si
+ map.ch/en/project-detail/7ccf2aed-e96d-4884-8773-d1c73d3c1156
+URL:https://auftragsregister.ch/en/auftrag/7ccf2aed-e96d-4884-8773-d1c73d3c
+ 1156/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: VEB Verdrängungen B10 / B - BKP 250 Sanit
+ äranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

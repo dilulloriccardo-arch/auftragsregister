@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90b09a41-675d-454c-aee5-fc39b751cfa0-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270105T100000Z
+SUMMARY:Scadenza: Projet GVA Core - Intégration solution ERP - SAP S4/HANA
+DESCRIPTION:Ente pubblico: Genève Aéroport\nScadenza: 05.01.2027\, 11:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/90b09a41-675d-454c-a
+ ee5-fc39b751cfa0/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/90b09a41-675d-454c-aee5-fc39b751cfa0
+URL:https://auftragsregister.ch/it/auftrag/90b09a41-675d-454c-aee5-fc39b751
+ cfa0/
+LOCATION:GENEVE 15
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Projet GVA Core - Intégration solution ERP - SAP S4/
+ HANA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1237e064-71c7-4133-8626-68a7993205ff-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Scadenza: Gesamtsanierung Oberstufe Stammheim\, Unterstammheim
+DESCRIPTION:Ente pubblico: Gemeinde Stammheim (Meyerstegemann Architekten A
+ G)\nScadenza: 22.01.2027\nNel registro: https://auftragsregister.ch/it/auf
+ trag/1237e064-71c7-4133-8626-68a7993205ff/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/1237e064-71c7-4133-8626-68a7993205ff
+URL:https://auftragsregister.ch/it/auftrag/1237e064-71c7-4133-8626-68a79932
+ 05ff/
+LOCATION:Unterstammheim
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Gesamtsanierung Oberstufe Stammheim\, Unterstammheim
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

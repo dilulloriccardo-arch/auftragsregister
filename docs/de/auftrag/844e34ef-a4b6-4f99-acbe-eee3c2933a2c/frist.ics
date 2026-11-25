@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:844e34ef-a4b6-4f99-acbe-eee3c2933a2c-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270111T100000Z
+SUMMARY:Eingabefrist: Lieferung einer neuen Ambulanz vom Typ C Kastenwagen
+DESCRIPTION:Auftraggeber: Organisation Cantonale Valaisanne des Secours - K
+ antonale Walliser Rettungsorganisation\nEingabefrist: 11.01.2027\, 11.00 
+ Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/844e34ef-a4b6-4f9
+ 9-acbe-eee3c2933a2c/\nAmtliche Publikation: https://www.simap.ch/de/projec
+ t-detail/844e34ef-a4b6-4f99-acbe-eee3c2933a2c
+URL:https://auftragsregister.ch/de/auftrag/844e34ef-a4b6-4f99-acbe-eee3c293
+ 3a2c/
+LOCATION:Visp
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Lieferung einer neuen Ambulanz vom Typ C Kastenwa
+ gen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

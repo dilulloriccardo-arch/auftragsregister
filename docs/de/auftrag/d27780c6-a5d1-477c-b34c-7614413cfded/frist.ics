@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d27780c6-a5d1-477c-b34c-7614413cfded-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Eingabefrist: VEB Verdrängungen B10 / B - BKP 240 Heizung / Kälte
+DESCRIPTION:Auftraggeber: Flughafen Zürich AG\nEingabefrist: 22.01.2027\, 
+ 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d27780c6-a
+ 5d1-477c-b34c-7614413cfded/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/d27780c6-a5d1-477c-b34c-7614413cfded
+URL:https://auftragsregister.ch/de/auftrag/d27780c6-a5d1-477c-b34c-7614413c
+ fded/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: VEB Verdrängungen B10 / B - BKP 240 Heizung / K
+ älte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

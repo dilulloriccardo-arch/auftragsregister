@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b4217d0-e4ca-4538-b6a6-5a9bdb55fe4b-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270121T160000Z
+SUMMARY:Submission deadline: ICT Dienstleistungen Innosuisse
+DESCRIPTION:Public buyer: Innosuisse - Schweizerische Agentur für Innovati
+ onsförderung\nSubmission deadline: 21 Jan 2027\, 17:00\nIn the register
+ : https://auftragsregister.ch/en/auftrag/3b4217d0-e4ca-4538-b6a6-5a9bdb55f
+ e4b/\nOfficial publication: https://www.simap.ch/en/project-detail/3b4217d
+ 0-e4ca-4538-b6a6-5a9bdb55fe4b
+URL:https://auftragsregister.ch/en/auftrag/3b4217d0-e4ca-4538-b6a6-5a9bdb55
+ fe4b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ICT Dienstleistungen Innosuisse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

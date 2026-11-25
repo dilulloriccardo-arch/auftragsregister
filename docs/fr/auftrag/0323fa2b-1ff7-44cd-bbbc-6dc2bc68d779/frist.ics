@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0323fa2b-1ff7-44cd-bbbc-6dc2bc68d779-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270202T170000Z
+SUMMARY:Délai de remise : Solution cantonale pour la gestion du temps de
+  travail
+DESCRIPTION:Acheteur public : Kanton St.Gallen\, Finanzdepartement\, Pers
+ onalamt\nDélai de remise : 02.02.2027\, 18 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/0323fa2b-1ff7-44cd-bbbc-6dc2bc
+ 68d779/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /0323fa2b-1ff7-44cd-bbbc-6dc2bc68d779
+URL:https://auftragsregister.ch/fr/auftrag/0323fa2b-1ff7-44cd-bbbc-6dc2bc68
+ d779/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Solution cantonale pour la gestion du temp
+ s de travail
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

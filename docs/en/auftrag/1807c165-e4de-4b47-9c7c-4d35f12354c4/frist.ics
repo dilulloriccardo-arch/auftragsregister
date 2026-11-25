@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1807c165-e4de-4b47-9c7c-4d35f12354c4-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Submission deadline: BKP 272.2 Grobmetallbau
+DESCRIPTION:Public buyer: Flughafen Zürich AG - ELP\nSubmission deadline: 
+ 13 Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/auf
+ trag/1807c165-e4de-4b47-9c7c-4d35f12354c4/\nOfficial publication: https://
+ www.simap.ch/en/project-detail/1807c165-e4de-4b47-9c7c-4d35f12354c4
+URL:https://auftragsregister.ch/en/auftrag/1807c165-e4de-4b47-9c7c-4d35f123
+ 54c4/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 272.2 Grobmetallbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

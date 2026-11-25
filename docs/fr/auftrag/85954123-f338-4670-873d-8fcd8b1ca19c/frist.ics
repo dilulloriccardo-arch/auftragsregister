@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85954123-f338-4670-873d-8fcd8b1ca19c-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270122T160000Z
+SUMMARY:Délai de remise : Sicherheitsdienstleistungen für das Kinderspi
+ tal-Areal Zürich-Hottingen
+DESCRIPTION:Acheteur public : Immobilienamt\nDélai de remise : 22.01.2
+ 027\, 17 h 00\nDans le registre : https://auftragsregister.ch/fr/auf
+ trag/85954123-f338-4670-873d-8fcd8b1ca19c/\nPublication officielle : htt
+ ps://www.simap.ch/fr/project-detail/85954123-f338-4670-873d-8fcd8b1ca19c
+URL:https://auftragsregister.ch/fr/auftrag/85954123-f338-4670-873d-8fcd8b1c
+ a19c/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sicherheitsdienstleistungen für das Kinde
+ rspital-Areal Zürich-Hottingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

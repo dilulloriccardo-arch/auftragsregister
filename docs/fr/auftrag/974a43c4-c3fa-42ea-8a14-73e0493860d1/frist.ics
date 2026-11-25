@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:974a43c4-c3fa-42ea-8a14-73e0493860d1-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270127T225900Z
+SUMMARY:Délai de remise : (b26072) Macolin\, Maison Schachenmann\, Réno
+ vation avec optimisation de l'espace\, Architecte / CFC 291
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 27.01.2027\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/974a43c4-c3fa-42ea-8a14-73e0493860d1/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/974a43c4-c3fa
+ -42ea-8a14-73e0493860d1
+URL:https://auftragsregister.ch/fr/auftrag/974a43c4-c3fa-42ea-8a14-73e04938
+ 60d1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (b26072) Macolin\, Maison Schachenmann\, R
+ énovation avec optimisation de l'espace\, Architecte / CFC 291
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

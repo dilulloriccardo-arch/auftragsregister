@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e3b0e09c-fcb0-4352-b855-8422a72c93ab-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Délai de remise : VEB Verdrängungen B10 / B - BKP 244 Lufttechn
+ ische Anlagen
+DESCRIPTION:Acheteur public : Flughafen Zürich AG\nDélai de remise : 
+ 22.01.2027\, 12 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/e3b0e09c-fcb0-4352-b855-8422a72c93ab/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/e3b0e09c-fcb0-4352-b855-8422a7
+ 2c93ab
+URL:https://auftragsregister.ch/fr/auftrag/e3b0e09c-fcb0-4352-b855-8422a72c
+ 93ab/
+LOCATION:Zürich Flughafen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : VEB Verdrängungen B10 / B - BKP 244 Luftt
+ echnische Anlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

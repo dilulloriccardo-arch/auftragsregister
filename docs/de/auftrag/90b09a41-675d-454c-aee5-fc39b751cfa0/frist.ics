@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:90b09a41-675d-454c-aee5-fc39b751cfa0-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270105T100000Z
+SUMMARY:Eingabefrist: Projet GVA Core - Intégration solution ERP - SAP S4/
+ HANA
+DESCRIPTION:Auftraggeber: Genève Aéroport\nEingabefrist: 05.01.2027\, 11.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/90b09a41-675d
+ -454c-aee5-fc39b751cfa0/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/90b09a41-675d-454c-aee5-fc39b751cfa0
+URL:https://auftragsregister.ch/de/auftrag/90b09a41-675d-454c-aee5-fc39b751
+ cfa0/
+LOCATION:GENEVE 15
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Projet GVA Core - Intégration solution ERP - SAP
+  S4/HANA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

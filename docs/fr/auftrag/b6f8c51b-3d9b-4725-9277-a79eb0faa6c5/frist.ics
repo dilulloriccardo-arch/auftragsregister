@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b6f8c51b-3d9b-4725-9277-a79eb0faa6c5-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270111T100000Z
+SUMMARY:Délai de remise : CALORE SA -VERBANO 2030 - IMPRESARIO COSTRUTTO
+ RE - TAPPA 3
+DESCRIPTION:Acheteur public : Calore SA\nDélai de remise : 11.01.2027\
+ , 11 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag
+ /b6f8c51b-3d9b-4725-9277-a79eb0faa6c5/\nPublication officielle : https:/
+ /www.simap.ch/fr/project-detail/b6f8c51b-3d9b-4725-9277-a79eb0faa6c5
+URL:https://auftragsregister.ch/fr/auftrag/b6f8c51b-3d9b-4725-9277-a79eb0fa
+ a6c5/
+LOCATION:Locarno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CALORE SA -VERBANO 2030 - IMPRESARIO COSTR
+ UTTORE - TAPPA 3
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

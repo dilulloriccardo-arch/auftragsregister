@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0323fa2b-1ff7-44cd-bbbc-6dc2bc68d779-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270202T170000Z
+SUMMARY:Scadenza: Kantonale Lösung für die Zeitwirtschaft
+DESCRIPTION:Ente pubblico: Kanton St.Gallen\, Finanzdepartement\, Personala
+ mt\nScadenza: 02.02.2027\, 18:00\nNel registro: https://auftragsregister.c
+ h/it/auftrag/0323fa2b-1ff7-44cd-bbbc-6dc2bc68d779/\nPubblicazione ufficial
+ e: https://www.simap.ch/it/project-detail/0323fa2b-1ff7-44cd-bbbc-6dc2bc68
+ d779
+URL:https://auftragsregister.ch/it/auftrag/0323fa2b-1ff7-44cd-bbbc-6dc2bc68
+ d779/
+LOCATION:St.Gallen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kantonale Lösung für die Zeitwirtschaft
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

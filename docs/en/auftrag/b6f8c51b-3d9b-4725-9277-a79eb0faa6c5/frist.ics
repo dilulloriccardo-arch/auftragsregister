@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b6f8c51b-3d9b-4725-9277-a79eb0faa6c5-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270111T100000Z
+SUMMARY:Submission deadline: CALORE SA -VERBANO 2030 - IMPRESARIO COSTRUTTO
+ RE - TAPPA 3
+DESCRIPTION:Public buyer: Calore SA\nSubmission deadline: 11 Jan 2027\, 1
+ 1:00\nIn the register: https://auftragsregister.ch/en/auftrag/b6f8c51b-3d9
+ b-4725-9277-a79eb0faa6c5/\nOfficial publication: https://www.simap.ch/en/p
+ roject-detail/b6f8c51b-3d9b-4725-9277-a79eb0faa6c5
+URL:https://auftragsregister.ch/en/auftrag/b6f8c51b-3d9b-4725-9277-a79eb0fa
+ a6c5/
+LOCATION:Locarno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: CALORE SA -VERBANO 2030 - IMPRESARIO COSTR
+ UTTORE - TAPPA 3
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

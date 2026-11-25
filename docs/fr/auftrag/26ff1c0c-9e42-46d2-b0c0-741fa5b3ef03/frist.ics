@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:26ff1c0c-9e42-46d2-b0c0-741fa5b3ef03-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Délai de remise : Gesamtsanierung Oberstufe Stammheim\, Untersta
+ mmheim
+DESCRIPTION:Acheteur public : Gemeinde Stammheim (Meyerstegemann Architek
+ ten AG)\nDélai de remise : 22.01.2027\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/26ff1c0c-9e42-46d2-b0c0-741fa5b3ef03/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/26ff1c0c-9e42-4
+ 6d2-b0c0-741fa5b3ef03
+URL:https://auftragsregister.ch/fr/auftrag/26ff1c0c-9e42-46d2-b0c0-741fa5b3
+ ef03/
+LOCATION:Unterstammheim
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Gesamtsanierung Oberstufe Stammheim\, Unte
+ rstammheim
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

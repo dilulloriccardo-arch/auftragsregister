@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20524995-eec4-41d2-a43e-46bbfdb6a64d-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270205T225900Z
+SUMMARY:Délai de remise : Réfection du centre-ville d'Uettligen : prest
+ ations de conception\, y compris la gestion globale des phases SIA 31 à 5
+ 3 \; utilisation de la méthode BIM
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 05.02.2027\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/20524995-eec4-41d2-a43e-46bbfdb6a64d/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/20524995-eec4-41d2-a43e-
+ 46bbfdb6a64d
+URL:https://auftragsregister.ch/fr/auftrag/20524995-eec4-41d2-a43e-46bbfdb6
+ a64d/
+LOCATION:Uettligen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Réfection du centre-ville d'Uettligen : p
+ restations de conception\, y compris la gestion globale des phases SIA 31 
+ à 53 \; utilisation de la méthode BIM
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9877ad64-5310-48d6-99cd-4c2e5844074b-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270120T140000Z
+SUMMARY:Délai de remise : Nouvelle construction de l'école cantonale de
+  Stein - BKP 271 Travaux de plâtrage
+DESCRIPTION:Acheteur public : Kanton Aargau - Departement Finanzen und Re
+ sourcen - Immobilien Aargau\nDélai de remise : 20.01.2027\, 15 h 00
+ \nDans le registre : https://auftragsregister.ch/fr/auftrag/9877ad64-531
+ 0-48d6-99cd-4c2e5844074b/\nPublication officielle : https://www.simap.ch
+ /fr/project-detail/9877ad64-5310-48d6-99cd-4c2e5844074b
+URL:https://auftragsregister.ch/fr/auftrag/9877ad64-5310-48d6-99cd-4c2e5844
+ 074b/
+LOCATION:Stein (AG)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nouvelle construction de l'école cantonal
+ e de Stein - BKP 271 Travaux de plâtrage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

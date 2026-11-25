@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:40cea7a1-fea8-4803-a7c4-5d31ba3e283f-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Eingabefrist: WV Gemeinde Jonen - Neubau Reservoir Dorf
+DESCRIPTION:Auftraggeber: Gemeinde Jonen\nEingabefrist: 11.01.2027\, 12.00
+  Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/40cea7a1-fea8-4
+ 803-a7c4-5d31ba3e283f/\nAmtliche Publikation: https://www.simap.ch/de/proj
+ ect-detail/40cea7a1-fea8-4803-a7c4-5d31ba3e283f
+URL:https://auftragsregister.ch/de/auftrag/40cea7a1-fea8-4803-a7c4-5d31ba3e
+ 283f/
+LOCATION:Jonen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: WV Gemeinde Jonen - Neubau Reservoir Dorf
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

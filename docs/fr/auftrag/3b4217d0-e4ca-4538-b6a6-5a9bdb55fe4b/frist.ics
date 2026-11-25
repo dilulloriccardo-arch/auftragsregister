@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b4217d0-e4ca-4538-b6a6-5a9bdb55fe4b-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270121T160000Z
+SUMMARY:Délai de remise : ICT Dienstleistungen Innosuisse
+DESCRIPTION:Acheteur public : Innosuisse - Schweizerische Agentur für In
+ novationsförderung\nDélai de remise : 21.01.2027\, 17 h 00\nDans l
+ e registre : https://auftragsregister.ch/fr/auftrag/3b4217d0-e4ca-4538-b
+ 6a6-5a9bdb55fe4b/\nPublication officielle : https://www.simap.ch/fr/proj
+ ect-detail/3b4217d0-e4ca-4538-b6a6-5a9bdb55fe4b
+URL:https://auftragsregister.ch/fr/auftrag/3b4217d0-e4ca-4538-b6a6-5a9bdb55
+ fe4b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : ICT Dienstleistungen Innosuisse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61388f79-c5fd-450e-bdc8-81cb04ccb5e1-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20261216T160000Z
+SUMMARY:Délai de remise : Réhabilitation du collège d'Yvorne - travaux
+  d'électricité
+DESCRIPTION:Acheteur public : Commune d'Yvorne (dom-aa)\nDélai de remise
+  : 16.12.2026\, 17 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/61388f79-c5fd-450e-bdc8-81cb04ccb5e1/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/61388f79-c5fd-450e-bdc8-81
+ cb04ccb5e1
+URL:https://auftragsregister.ch/fr/auftrag/61388f79-c5fd-450e-bdc8-81cb04cc
+ b5e1/
+LOCATION:Yvorne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Réhabilitation du collège d'Yvorne - tra
+ vaux d'électricité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

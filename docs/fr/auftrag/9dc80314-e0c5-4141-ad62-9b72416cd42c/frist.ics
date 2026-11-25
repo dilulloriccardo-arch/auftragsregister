@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9dc80314-e0c5-4141-ad62-9b72416cd42c-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270203T150000Z
+SUMMARY:Délai de remise : Campus de Horw\, travaux de rénovation et d'a
+ grandissement\, CFC 559.03 Assurance qualité CVCSE GA (chauffage\, ventil
+ ation\, climatisation\, sanitaire\, électricité\, automatisation des bâ
+ timents)
+DESCRIPTION:Acheteur public : Kanton Luzern\, Dienststelle Immobilien\nD
+ élai de remise : 03.02.2027\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/9dc80314-e0c5-4141-ad62-9b72416cd42c/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/9dc80314-e0
+ c5-4141-ad62-9b72416cd42c
+URL:https://auftragsregister.ch/fr/auftrag/9dc80314-e0c5-4141-ad62-9b72416c
+ d42c/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Campus de Horw\, travaux de rénovation et
+  d'agrandissement\, CFC 559.03 Assurance qualité CVCSE GA (chauffage\, ve
+ ntilation\, climatisation\, sanitaire\, électricité\, automatisation des
+  bâtiments)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

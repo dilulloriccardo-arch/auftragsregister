@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b6fc5103-7d6f-4f28-8b1c-6325d7a2683c-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270118T150000Z
+SUMMARY:Scadenza: 11168 K 65 / K 65c Buchrain\, Hauptstrasse\, Optimierung 
+ Anschluss Buchrain\, Planungsleistung
+DESCRIPTION:Ente pubblico: Kanton Luzern\, Dienststelle Verkehr und Infrast
+ ruktur (vif)\nScadenza: 18.01.2027\, 16:00\nNel registro: https://auftrags
+ register.ch/it/auftrag/b6fc5103-7d6f-4f28-8b1c-6325d7a2683c/\nPubblicazion
+ e ufficiale: https://www.simap.ch/it/project-detail/b6fc5103-7d6f-4f28-8b1
+ c-6325d7a2683c
+URL:https://auftragsregister.ch/it/auftrag/b6fc5103-7d6f-4f28-8b1c-6325d7a2
+ 683c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 11168 K 65 / K 65c Buchrain\, Hauptstrasse\, Optimier
+ ung Anschluss Buchrain\, Planungsleistung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

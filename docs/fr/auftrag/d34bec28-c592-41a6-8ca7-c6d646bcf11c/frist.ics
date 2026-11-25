@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d34bec28-c592-41a6-8ca7-c6d646bcf11c-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Délai de remise : (b26068) Macolin Grand Hôtel et Bellavista
+DESCRIPTION:Acheteur public : Bundesamt für Bauten und Logistik BBL\nDé
+ lai de remise : 21.12.2026\, 23 h 59\nDans le registre : https://a
+ uftragsregister.ch/fr/auftrag/d34bec28-c592-41a6-8ca7-c6d646bcf11c/\nPubli
+ cation officielle : https://www.simap.ch/fr/project-detail/d34bec28-c592
+ -41a6-8ca7-c6d646bcf11c
+URL:https://auftragsregister.ch/fr/auftrag/d34bec28-c592-41a6-8ca7-c6d646bc
+ f11c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : (b26068) Macolin Grand Hôtel et Bellavist
+ a
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

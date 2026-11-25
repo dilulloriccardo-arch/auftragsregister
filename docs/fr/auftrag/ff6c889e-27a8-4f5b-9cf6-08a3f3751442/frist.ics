@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff6c889e-27a8-4f5b-9cf6-08a3f3751442-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270121T140000Z
+SUMMARY:Délai de remise : Känerkinden - Hauptstrasse / Strasseninstands
+ etzung innerorts
+DESCRIPTION:Acheteur public : Zentrale Beschaffungsstelle Kanton Basel-La
+ ndschaft\nDélai de remise : 21.01.2027\, 15 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/ff6c889e-27a8-4f5b-9cf6-08a3f3
+ 751442/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /ff6c889e-27a8-4f5b-9cf6-08a3f3751442
+URL:https://auftragsregister.ch/fr/auftrag/ff6c889e-27a8-4f5b-9cf6-08a3f375
+ 1442/
+LOCATION:Känerkinden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Känerkinden - Hauptstrasse / Strasseninst
+ andsetzung innerorts
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

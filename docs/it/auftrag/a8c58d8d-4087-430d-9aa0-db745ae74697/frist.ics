@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a8c58d8d-4087-430d-9aa0-db745ae74697-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270120T100000Z
+SUMMARY:Scadenza: 3192.301 Comune di Lugano - Sezione Valcolla - Ripristino
+  collegamento stradale zona Lavinone-Valcolla - Opere da impresario costru
+ ttore
+DESCRIPTION:Ente pubblico: Ufficio delle commesse pubbliche e della program
+ mazione\nScadenza: 20.01.2027\, 11:00\nNel registro: https://auftragsregis
+ ter.ch/it/auftrag/a8c58d8d-4087-430d-9aa0-db745ae74697/\nPubblicazione uff
+ iciale: https://www.simap.ch/it/project-detail/a8c58d8d-4087-430d-9aa0-db7
+ 45ae74697
+URL:https://auftragsregister.ch/it/auftrag/a8c58d8d-4087-430d-9aa0-db745ae7
+ 4697/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 3192.301 Comune di Lugano - Sezione Valcolla - Ripris
+ tino collegamento stradale zona Lavinone-Valcolla - Opere da impresario co
+ struttore
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9dc80314-e0c5-4141-ad62-9b72416cd42c-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270203T150000Z
+SUMMARY:Submission deadline: Campus Horw\, Realisierung Erneuerung und Erwe
+ iterung\, BKP 559.03 Qualitätssicherung HLKSE GA (Heizung\, Lüftung\, Kl
+ ima\, Sanitär\, Elektro\, Gebäudeautomation)
+DESCRIPTION:Public buyer: Kanton Luzern\, Dienststelle Immobilien\nSubmissi
+ on deadline: 3 Feb 2027\, 16:00\nIn the register: https://auftragsregist
+ er.ch/en/auftrag/9dc80314-e0c5-4141-ad62-9b72416cd42c/\nOfficial publicati
+ on: https://www.simap.ch/en/project-detail/9dc80314-e0c5-4141-ad62-9b72416
+ cd42c
+URL:https://auftragsregister.ch/en/auftrag/9dc80314-e0c5-4141-ad62-9b72416c
+ d42c/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Campus Horw\, Realisierung Erneuerung und 
+ Erweiterung\, BKP 559.03 Qualitätssicherung HLKSE GA (Heizung\, Lüftung\
+ , Klima\, Sanitär\, Elektro\, Gebäudeautomation)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

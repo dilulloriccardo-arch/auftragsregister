@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cd844897-d77f-46a3-9ec5-d65e98edd805-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261224
+SUMMARY:Délai de remise : Ausbau Fernwärme Burgerbeunden\, Baumeister- 
+ und Rohrbauarbeiten
+DESCRIPTION:Acheteur public : Energie Service Biel/Bienne (ESB)\nDélai d
+ e remise : 23.12.2026\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/cd844897-d77f-46a3-9ec5-d65e98edd805/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/cd844897-d77f-46a3-9ec5-d65e98
+ edd805
+URL:https://auftragsregister.ch/fr/auftrag/cd844897-d77f-46a3-9ec5-d65e98ed
+ d805/
+LOCATION:Nidau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausbau Fernwärme Burgerbeunden\, Baumeist
+ er- und Rohrbauarbeiten
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

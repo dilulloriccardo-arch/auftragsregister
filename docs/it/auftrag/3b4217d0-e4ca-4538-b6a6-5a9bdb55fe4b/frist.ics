@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3b4217d0-e4ca-4538-b6a6-5a9bdb55fe4b-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270121T160000Z
+SUMMARY:Scadenza: ICT Dienstleistungen Innosuisse
+DESCRIPTION:Ente pubblico: Innosuisse - Schweizerische Agentur für Innovat
+ ionsförderung\nScadenza: 21.01.2027\, 17:00\nNel registro: https://auftra
+ gsregister.ch/it/auftrag/3b4217d0-e4ca-4538-b6a6-5a9bdb55fe4b/\nPubblicazi
+ one ufficiale: https://www.simap.ch/it/project-detail/3b4217d0-e4ca-4538-b
+ 6a6-5a9bdb55fe4b
+URL:https://auftragsregister.ch/it/auftrag/3b4217d0-e4ca-4538-b6a6-5a9bdb55
+ fe4b/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: ICT Dienstleistungen Innosuisse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9877ad64-5310-48d6-99cd-4c2e5844074b-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270120T140000Z
+SUMMARY:Submission deadline: Neubau Kantonsschule Stein - BKP 271 Gipserarb
+ eiten
+DESCRIPTION:Public buyer: Kanton Aargau - Departement Finanzen und Resource
+ n - Immobilien Aargau\nSubmission deadline: 20 Jan 2027\, 15:00\nIn the 
+ register: https://auftragsregister.ch/en/auftrag/9877ad64-5310-48d6-99cd-4
+ c2e5844074b/\nOfficial publication: https://www.simap.ch/en/project-detail
+ /9877ad64-5310-48d6-99cd-4c2e5844074b
+URL:https://auftragsregister.ch/en/auftrag/9877ad64-5310-48d6-99cd-4c2e5844
+ 074b/
+LOCATION:Stein (AG)
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Kantonsschule Stein - BKP 271 Gipse
+ rarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

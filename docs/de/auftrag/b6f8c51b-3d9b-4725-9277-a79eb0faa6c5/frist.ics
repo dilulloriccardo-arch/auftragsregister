@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b6f8c51b-3d9b-4725-9277-a79eb0faa6c5-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270111T100000Z
+SUMMARY:Eingabefrist: CALORE SA -VERBANO 2030 - IMPRESARIO COSTRUTTORE - TA
+ PPA 3
+DESCRIPTION:Auftraggeber: Calore SA\nEingabefrist: 11.01.2027\, 11.00 Uhr\
+ nIm Register: https://auftragsregister.ch/de/auftrag/b6f8c51b-3d9b-4725-92
+ 77-a79eb0faa6c5/\nAmtliche Publikation: https://www.simap.ch/de/project-de
+ tail/b6f8c51b-3d9b-4725-9277-a79eb0faa6c5
+URL:https://auftragsregister.ch/de/auftrag/b6f8c51b-3d9b-4725-9277-a79eb0fa
+ a6c5/
+LOCATION:Locarno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: CALORE SA -VERBANO 2030 - IMPRESARIO COSTRUTTORE 
+ - TAPPA 3
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

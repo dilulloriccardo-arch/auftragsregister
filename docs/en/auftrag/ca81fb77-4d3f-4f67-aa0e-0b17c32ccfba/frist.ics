@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ca81fb77-4d3f-4f67-aa0e-0b17c32ccfba-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270115T110000Z
+SUMMARY:Submission deadline: Appel d’offres public pour l’acquisition d
+ e timbres\, coussins encreurs et encres ainsi que pour l'impression de div
+ erses cartes\, au travers d'un catalogue géré en punchout avec de la per
+ sonnalisation pour la République et Canton de Genève
+DESCRIPTION:Public buyer: Centrale commune d'achats (CCA)\nSubmission deadl
+ ine: 15 Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/ca81fb77-4d3f-4f67-aa0e-0b17c32ccfba/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/ca81fb77-4d3f-4f67-aa0e-0b17c32ccfba
+URL:https://auftragsregister.ch/en/auftrag/ca81fb77-4d3f-4f67-aa0e-0b17c32c
+ cfba/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Appel d’offres public pour l’acquisiti
+ on de timbres\, coussins encreurs et encres ainsi que pour l'impression de
+  diverses cartes\, au travers d'un catalogue géré en punchout avec de la
+  personnalisation pour la République et Canton de Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

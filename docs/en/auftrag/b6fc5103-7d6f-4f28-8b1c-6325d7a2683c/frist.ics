@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b6fc5103-7d6f-4f28-8b1c-6325d7a2683c-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270118T150000Z
+SUMMARY:Submission deadline: 11168 K 65 / K 65c Buchrain\, Hauptstrasse\, O
+ ptimierung Anschluss Buchrain\, Planungsleistung
+DESCRIPTION:Public buyer: Kanton Luzern\, Dienststelle Verkehr und Infrastr
+ uktur (vif)\nSubmission deadline: 18 Jan 2027\, 16:00\nIn the register: 
+ https://auftragsregister.ch/en/auftrag/b6fc5103-7d6f-4f28-8b1c-6325d7a2683
+ c/\nOfficial publication: https://www.simap.ch/en/project-detail/b6fc5103-
+ 7d6f-4f28-8b1c-6325d7a2683c
+URL:https://auftragsregister.ch/en/auftrag/b6fc5103-7d6f-4f28-8b1c-6325d7a2
+ 683c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 11168 K 65 / K 65c Buchrain\, Hauptstrasse
+ \, Optimierung Anschluss Buchrain\, Planungsleistung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:61388f79-c5fd-450e-bdc8-81cb04ccb5e1-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20261216T160000Z
+SUMMARY:Eingabefrist: Réhabilitation du collège d'Yvorne - travaux d'éle
+ ctricité
+DESCRIPTION:Auftraggeber: Commune d'Yvorne (dom-aa)\nEingabefrist: 16.12.20
+ 26\, 17.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/61388
+ f79-c5fd-450e-bdc8-81cb04ccb5e1/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/61388f79-c5fd-450e-bdc8-81cb04ccb5e1
+URL:https://auftragsregister.ch/de/auftrag/61388f79-c5fd-450e-bdc8-81cb04cc
+ b5e1/
+LOCATION:Yvorne
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Réhabilitation du collège d'Yvorne - travaux d'
+ électricité
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

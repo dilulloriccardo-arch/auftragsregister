@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ca81fb77-4d3f-4f67-aa0e-0b17c32ccfba-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270115T110000Z
+SUMMARY:Eingabefrist: Appel d’offres public pour l’acquisition de timbr
+ es\, coussins encreurs et encres ainsi que pour l'impression de diverses c
+ artes\, au travers d'un catalogue géré en punchout avec de la personnali
+ sation pour la République et Canton de Genève
+DESCRIPTION:Auftraggeber: Centrale commune d'achats (CCA)\nEingabefrist: 15
+ .01.2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /ca81fb77-4d3f-4f67-aa0e-0b17c32ccfba/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/ca81fb77-4d3f-4f67-aa0e-0b17c32ccfba
+URL:https://auftragsregister.ch/de/auftrag/ca81fb77-4d3f-4f67-aa0e-0b17c32c
+ cfba/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Appel d’offres public pour l’acquisition de t
+ imbres\, coussins encreurs et encres ainsi que pour l'impression de divers
+ es cartes\, au travers d'un catalogue géré en punchout avec de la person
+ nalisation pour la République et Canton de Genève
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:20524995-eec4-41d2-a43e-46bbfdb6a64d-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270205T225900Z
+SUMMARY:Scadenza: Sanierung Uettligen Innerorts Planerleistungen inkl. Gesa
+ mtleitung SIA-Teilphasen 31 – 53\; Anwendung BIM-Methode
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 05.02.202
+ 7\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/20524995-e
+ ec4-41d2-a43e-46bbfdb6a64d/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/20524995-eec4-41d2-a43e-46bbfdb6a64d
+URL:https://auftragsregister.ch/it/auftrag/20524995-eec4-41d2-a43e-46bbfdb6
+ a64d/
+LOCATION:Uettligen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Uettligen Innerorts Planerleistungen inkl. 
+ Gesamtleitung SIA-Teilphasen 31 – 53\; Anwendung BIM-Methode
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:844e34ef-a4b6-4f99-acbe-eee3c2933a2c-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270111T100000Z
+SUMMARY:Délai de remise : Lieferung einer neuen Ambulanz vom Typ C Kaste
+ nwagen
+DESCRIPTION:Acheteur public : Organisation Cantonale Valaisanne des Secou
+ rs - Kantonale Walliser Rettungsorganisation\nDélai de remise : 11.01.2
+ 027\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr/auf
+ trag/844e34ef-a4b6-4f99-acbe-eee3c2933a2c/\nPublication officielle : htt
+ ps://www.simap.ch/fr/project-detail/844e34ef-a4b6-4f99-acbe-eee3c2933a2c
+URL:https://auftragsregister.ch/fr/auftrag/844e34ef-a4b6-4f99-acbe-eee3c293
+ 3a2c/
+LOCATION:Visp
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Lieferung einer neuen Ambulanz vom Typ C K
+ astenwagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

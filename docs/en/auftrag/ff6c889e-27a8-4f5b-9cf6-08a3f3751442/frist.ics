@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ff6c889e-27a8-4f5b-9cf6-08a3f3751442-frist@auftragsregister.ch
+DTSTAMP:20261125T000000Z
+SEQUENCE:0
+DTSTART:20270121T140000Z
+SUMMARY:Submission deadline: Känerkinden - Hauptstrasse / Strasseninstands
+ etzung innerorts
+DESCRIPTION:Public buyer: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nSubmission deadline: 21 Jan 2027\, 15:00\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/ff6c889e-27a8-4f5b-9cf6-08a3f3751442/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/ff6c889e-27a8-4f5b
+ -9cf6-08a3f3751442
+URL:https://auftragsregister.ch/en/auftrag/ff6c889e-27a8-4f5b-9cf6-08a3f375
+ 1442/
+LOCATION:Känerkinden
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Känerkinden - Hauptstrasse / Strasseninst
+ andsetzung innerorts
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
