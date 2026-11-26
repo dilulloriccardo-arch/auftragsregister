@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:082d04e5-bd3d-431b-b188-c61d88a385b5-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Délai de remise : H13 Teilausbau Rüti - Splügen ARA\, Baumeist
+ er- und Belagsarbeiten
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 17.12.2026\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/082d04e5-bd3d-431b-b188-c61d88a385b5/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/082d04e5-bd3d-431b-b188-c61d8
+ 8a385b5
+URL:https://auftragsregister.ch/fr/auftrag/082d04e5-bd3d-431b-b188-c61d88a3
+ 85b5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : H13 Teilausbau Rüti - Splügen ARA\, Baum
+ eister- und Belagsarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

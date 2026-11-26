@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ece88efa-f436-4792-b33b-a23a91903f0a-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:1
+DTSTART:20270112T225900Z
+SUMMARY:Scadenza: Beschaffung Büromobiliar
+DESCRIPTION:Ente pubblico: AEW Energie AG\nScadenza: 12.01.2027\, 23:59\nNe
+ l registro: https://auftragsregister.ch/it/auftrag/ece88efa-f436-4792-b33b
+ -a23a91903f0a/\nPubblicazione ufficiale: https://www.simap.ch/it/project-d
+ etail/ece88efa-f436-4792-b33b-a23a91903f0a
+URL:https://auftragsregister.ch/it/auftrag/ece88efa-f436-4792-b33b-a23a9190
+ 3f0a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung Büromobiliar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

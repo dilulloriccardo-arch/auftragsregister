@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f7340c06-62cd-4d51-8e82-882a47e159e1-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Submission deadline: Wald wastewater treatment plant\, removal of m
+ icropollutants: ozonation equipment
+DESCRIPTION:Public buyer: Gemeinde Wald ZH\, Abteilung Infrastruktur\nSubmi
+ ssion deadline: 29 Jan 2027\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/f7340c06-62cd-4d51-8e82-882a47e159e1/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/f7340c06-62cd-4d51-8e82-882
+ a47e159e1
+URL:https://auftragsregister.ch/en/auftrag/f7340c06-62cd-4d51-8e82-882a47e1
+ 59e1/
+LOCATION:Wald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wald wastewater treatment plant\, removal 
+ of micropollutants: ozonation equipment
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

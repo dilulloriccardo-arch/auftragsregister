@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:43b585f3-e513-4a34-9341-217402d47bf5-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270111T154500Z
+SUMMARY:Délai de remise : Mandat de contrôles indépendants de niveau 2
+  (N2) – Risques d'approvisionnement en énergies
+DESCRIPTION:Acheteur public : Services industriels de Genève (SIG) - Dir
+ ection Achats\nDélai de remise : 11.01.2027\, 16 h 45\nDans le regi
+ stre : https://auftragsregister.ch/fr/auftrag/43b585f3-e513-4a34-9341-21
+ 7402d47bf5/\nPublication officielle : https://www.simap.ch/fr/project-de
+ tail/43b585f3-e513-4a34-9341-217402d47bf5
+URL:https://auftragsregister.ch/fr/auftrag/43b585f3-e513-4a34-9341-217402d4
+ 7bf5/
+LOCATION:Le Lignon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mandat de contrôles indépendants de nive
+ au 2 (N2) – Risques d'approvisionnement en énergies
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

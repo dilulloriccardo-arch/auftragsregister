@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f04885c1-6cc3-4710-842a-0ee5ebbad91e-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270203T100000Z
+SUMMARY:Scadenza: Rue des Plantaporrêts\, aménagement en zone piétonne (
+ M377TI) mandat pluridisciplinaire (architecte paysagiste et/ou architecte\
+ , d'un-e ingénieure civile\, d'une ingénieur-e environnement\, d'un-e co
+ ncepeur-trice lumière)
+DESCRIPTION:Ente pubblico: Unité soumissions - Département de l'aménagem
+ ent\, des constructions et de la mobilité (DACM) de la Ville de Genève\n
+ Scadenza: 03.02.2027\, 11:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/f04885c1-6cc3-4710-842a-0ee5ebbad91e/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/f04885c1-6cc3-4710-842a-0ee5ebbad91e
+URL:https://auftragsregister.ch/it/auftrag/f04885c1-6cc3-4710-842a-0ee5ebba
+ d91e/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rue des Plantaporrêts\, aménagement en zone piéton
+ ne (M377TI) mandat pluridisciplinaire (architecte paysagiste et/ou archite
+ cte\, d'un-e ingénieure civile\, d'une ingénieur-e environnement\, d'un-
+ e concepeur-trice lumière)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

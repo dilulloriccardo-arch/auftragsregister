@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32f315df-2635-4082-90e3-06eff4b5b7ab-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Submission deadline: Klärwerk Wald\, Elimination von Mikroverunrei
+ nigungen: BKP 211 Baumeisterarbeiten
+DESCRIPTION:Public buyer: Gemeinde Wald ZH\, Abteilung Infrastruktur\nSubmi
+ ssion deadline: 29 Jan 2027\, 12:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/32f315df-2635-4082-90e3-06eff4b5b7ab/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/32f315df-2635-4082-90e3-06e
+ ff4b5b7ab
+URL:https://auftragsregister.ch/en/auftrag/32f315df-2635-4082-90e3-06eff4b5
+ b7ab/
+LOCATION:Wald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Klärwerk Wald\, Elimination von Mikroveru
+ nreinigungen: BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c0242aca-07c7-4372-b740-946169f2139c-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270113T100000Z
+SUMMARY:Scadenza: Rue de Lausanne 30 et 32 (2316Bis) Chauffage\, ventilatio
+ n\, MCR
+DESCRIPTION:Ente pubblico: Unité soumissions - Département de l'aménagem
+ ent\, des constructions et de la mobilité (DACM) de la Ville de Genève\n
+ Scadenza: 13.01.2027\, 11:00\nNel registro: https://auftragsregister.ch/it
+ /auftrag/c0242aca-07c7-4372-b740-946169f2139c/\nPubblicazione ufficiale: h
+ ttps://www.simap.ch/it/project-detail/c0242aca-07c7-4372-b740-946169f2139c
+URL:https://auftragsregister.ch/it/auftrag/c0242aca-07c7-4372-b740-946169f2
+ 139c/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Rue de Lausanne 30 et 32 (2316Bis) Chauffage\, ventil
+ ation\, MCR
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

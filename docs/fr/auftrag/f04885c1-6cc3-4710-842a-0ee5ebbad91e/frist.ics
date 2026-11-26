@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f04885c1-6cc3-4710-842a-0ee5ebbad91e-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270203T100000Z
+SUMMARY:Délai de remise : Rue des Plantaporrêts\, aménagement en zone 
+ piétonne (M377TI) mandat pluridisciplinaire (architecte paysagiste et/ou 
+ architecte\, d'un-e ingénieure civile\, d'une ingénieur-e environnement\
+ , d'un-e concepeur-trice lumière)
+DESCRIPTION:Acheteur public : Unité soumissions - Département de l'amé
+ nagement\, des constructions et de la mobilité (DACM) de la Ville de Gen
+ ève\nDélai de remise : 03.02.2027\, 11 h 00\nDans le registre : 
+ https://auftragsregister.ch/fr/auftrag/f04885c1-6cc3-4710-842a-0ee5ebbad91
+ e/\nPublication officielle : https://www.simap.ch/fr/project-detail/f048
+ 85c1-6cc3-4710-842a-0ee5ebbad91e
+URL:https://auftragsregister.ch/fr/auftrag/f04885c1-6cc3-4710-842a-0ee5ebba
+ d91e/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Rue des Plantaporrêts\, aménagement en z
+ one piétonne (M377TI) mandat pluridisciplinaire (architecte paysagiste et
+ /ou architecte\, d'un-e ingénieure civile\, d'une ingénieur-e environnem
+ ent\, d'un-e concepeur-trice lumière)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

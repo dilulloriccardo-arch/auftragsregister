@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d39dc4b8-a007-43da-8ef8-4b545f8e3f72-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270119T150000Z
+SUMMARY:Délai de remise : KZN l 46024 l BKP 379-01 Bühneneinrichtungen
+DESCRIPTION:Acheteur public : Hochbauamt\, Baubereich B\nDélai de remise
+  : 19.01.2027\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/d39dc4b8-a007-43da-8ef8-4b545f8e3f72/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/d39dc4b8-a007-43da-8ef8-4b
+ 545f8e3f72
+URL:https://auftragsregister.ch/fr/auftrag/d39dc4b8-a007-43da-8ef8-4b545f8e
+ 3f72/
+LOCATION:Birchstrasse 97
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : KZN l 46024 l BKP 379-01 Bühneneinrichtun
+ gen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

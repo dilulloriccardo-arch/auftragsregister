@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:32f315df-2635-4082-90e3-06eff4b5b7ab-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Délai de remise : Klärwerk Wald\, Elimination von Mikroverunrei
+ nigungen: BKP 211 Baumeisterarbeiten
+DESCRIPTION:Acheteur public : Gemeinde Wald ZH\, Abteilung Infrastruktur\
+ nDélai de remise : 29.01.2027\, 12 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/32f315df-2635-4082-90e3-06eff4b5b7ab/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/32f315df-
+ 2635-4082-90e3-06eff4b5b7ab
+URL:https://auftragsregister.ch/fr/auftrag/32f315df-2635-4082-90e3-06eff4b5
+ b7ab/
+LOCATION:Wald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Klärwerk Wald\, Elimination von Mikroveru
+ nreinigungen: BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

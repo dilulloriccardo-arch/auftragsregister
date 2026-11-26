@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f7340c06-62cd-4d51-8e82-882a47e159e1-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Délai de remise : Klärwerk Wald\, Elimination von Mikroverunrei
+ nigungen: BKP 641 Ozonausrüstung
+DESCRIPTION:Acheteur public : Gemeinde Wald ZH\, Abteilung Infrastruktur\
+ nDélai de remise : 29.01.2027\, 12 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/f7340c06-62cd-4d51-8e82-882a47e159e1/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/f7340c06-
+ 62cd-4d51-8e82-882a47e159e1
+URL:https://auftragsregister.ch/fr/auftrag/f7340c06-62cd-4d51-8e82-882a47e1
+ 59e1/
+LOCATION:Wald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Klärwerk Wald\, Elimination von Mikroveru
+ nreinigungen: BKP 641 Ozonausrüstung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

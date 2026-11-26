@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:88f99988-50ec-4189-bacd-241ef8f4d67d-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270223T225900Z
+SUMMARY:Scadenza: N01.10 MP-130060 - Upn.Oulens-Essert-Pittet+PUN - Mandata
+ ire APR + DLT BSA - phases MP/DP à 53\, Upn. Ou-lens-Essert-Pittet + PUN 
+ (ID 12108)
+DESCRIPTION:Ente pubblico: Office fédéral des routes OFROU\, Division Inf
+ rastructure routière Ouest\, filiale Estavayer-le-Lac\nScadenza: 23.02.20
+ 27\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/88f99988-
+ 50ec-4189-bacd-241ef8f4d67d/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/88f99988-50ec-4189-bacd-241ef8f4d67d
+URL:https://auftragsregister.ch/it/auftrag/88f99988-50ec-4189-bacd-241ef8f4
+ d67d/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N01.10 MP-130060 - Upn.Oulens-Essert-Pittet+PUN - Man
+ dataire APR + DLT BSA - phases MP/DP à 53\, Upn. Ou-lens-Essert-Pittet + 
+ PUN (ID 12108)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

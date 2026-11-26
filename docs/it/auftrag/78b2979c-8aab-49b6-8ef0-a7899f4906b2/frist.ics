@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:78b2979c-8aab-49b6-8ef0-a7899f4906b2-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20261223T100000Z
+SUMMARY:Scadenza: Travaux de réseau de chauffage à distance "copropriét
+ é Hogarlan" (tuyauterie)
+DESCRIPTION:Ente pubblico: CADIOM SA (Perreten et Milleret)\nScadenza: 23.1
+ 2.2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/78b29
+ 79c-8aab-49b6-8ef0-a7899f4906b2/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/78b2979c-8aab-49b6-8ef0-a7899f4906b2
+URL:https://auftragsregister.ch/it/auftrag/78b2979c-8aab-49b6-8ef0-a7899f49
+ 06b2/
+LOCATION:LANCY
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Travaux de réseau de chauffage à distance "copropri
+ été Hogarlan" (tuyauterie)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5578f291-659d-493a-92ba-846f6b90889a-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Submission deadline: 741.00 Strada della Calanca Bivio Castaneda - 
+ Molina 2027
+DESCRIPTION:Public buyer: Tiefbauamt Graubunden\nSubmission deadline: 18 D
+ ec 2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/
+ 5578f291-659d-493a-92ba-846f6b90889a/\nOfficial publication: https://www.s
+ imap.ch/en/project-detail/5578f291-659d-493a-92ba-846f6b90889a
+URL:https://auftragsregister.ch/en/auftrag/5578f291-659d-493a-92ba-846f6b90
+ 889a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 741.00 Strada della Calanca Bivio Castaned
+ a - Molina 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

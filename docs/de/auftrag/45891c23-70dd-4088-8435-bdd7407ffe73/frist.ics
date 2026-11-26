@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45891c23-70dd-4088-8435-bdd7407ffe73-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20261211T140000Z
+SUMMARY:Eingabefrist: Wärmeverbund Utenberg Stadt Luzern
+DESCRIPTION:Auftraggeber: Stadt Luzern\, Baudirektion\, Immobilien\nEingabe
+ frist: 11.12.2026\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/45891c23-70dd-4088-8435-bdd7407ffe73/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/45891c23-70dd-4088-8435-bdd7407ffe73
+URL:https://auftragsregister.ch/de/auftrag/45891c23-70dd-4088-8435-bdd7407f
+ fe73/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Wärmeverbund Utenberg Stadt Luzern
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

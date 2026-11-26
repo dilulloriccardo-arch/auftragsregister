@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:71a0e71e-6bb8-4ee4-bc40-cd41527b1d57-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270115T153000Z
+SUMMARY:Submission deadline: COLLEGE VOLTAIRE Bâtiment principal – réno
+ vation au standard HPE Réno
+DESCRIPTION:Public buyer: Etat de Genève\, Département du territoire - DT
+ \, Office des bâtiments\nSubmission deadline: 15 Jan 2027\, 16:30\nIn t
+ he register: https://auftragsregister.ch/en/auftrag/71a0e71e-6bb8-4ee4-bc4
+ 0-cd41527b1d57/\nOfficial publication: https://www.simap.ch/en/project-det
+ ail/71a0e71e-6bb8-4ee4-bc40-cd41527b1d57
+URL:https://auftragsregister.ch/en/auftrag/71a0e71e-6bb8-4ee4-bc40-cd41527b
+ 1d57/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: COLLEGE VOLTAIRE Bâtiment principal – r
+ énovation au standard HPE Réno
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

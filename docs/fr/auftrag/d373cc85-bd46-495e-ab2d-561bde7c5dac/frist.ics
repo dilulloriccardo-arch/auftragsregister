@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d373cc85-bd46-495e-ab2d-561bde7c5dac-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Délai de remise : CPC 221.4 / 221.6 Fenêtres et portes métalli
+ ques en aluminium\, Thun Polygon\, rénovation de l'enveloppe du bâtiment
+  et des installations techniques du bâtiment
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  12.01.2027\nDans le registre : https://auftragsregister.ch/fr/auftrag/d
+ 373cc85-bd46-495e-ab2d-561bde7c5dac/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/d373cc85-bd46-495e-ab2d-561bde7c5dac
+URL:https://auftragsregister.ch/fr/auftrag/d373cc85-bd46-495e-ab2d-561bde7c
+ 5dac/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CPC 221.4 / 221.6 Fenêtres et portes mét
+ alliques en aluminium\, Thun Polygon\, rénovation de l'enveloppe du bâti
+ ment et des installations techniques du bâtiment
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

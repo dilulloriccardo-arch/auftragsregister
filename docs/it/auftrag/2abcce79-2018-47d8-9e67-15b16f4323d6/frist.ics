@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2abcce79-2018-47d8-9e67-15b16f4323d6-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270125T225900Z
+SUMMARY:Scadenza: 745.05 Sculmserstrasse\, SK Fapiogn - Sigl Ault\, Baumeis
+ terarbeiten
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubünden\nScadenza: 25.01.2027\, 2
+ 3:59\nNel registro: https://auftragsregister.ch/it/auftrag/2abcce79-2018-4
+ 7d8-9e67-15b16f4323d6/\nPubblicazione ufficiale: https://www.simap.ch/it/p
+ roject-detail/2abcce79-2018-47d8-9e67-15b16f4323d6
+URL:https://auftragsregister.ch/it/auftrag/2abcce79-2018-47d8-9e67-15b16f43
+ 23d6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 745.05 Sculmserstrasse\, SK Fapiogn - Sigl Ault\, Bau
+ meisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

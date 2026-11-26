@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ebb72b4-fddf-47a4-8f9a-99d8c953fc9b-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Délai de remise : UZH\, Construction d'une nouvelle centrale én
+ ergétique du cluster 4 | CPC 246-01 : machine de chauffage/refroidissemen
+ t
+DESCRIPTION:Acheteur public : Kanton Zürich Hochbauaumt\, Baubereich D\n
+ Délai de remise : 25.01.2027\, 16 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/1ebb72b4-fddf-47a4-8f9a-99d8c953fc9b/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/1ebb72b4-f
+ ddf-47a4-8f9a-99d8c953fc9b
+URL:https://auftragsregister.ch/fr/auftrag/1ebb72b4-fddf-47a4-8f9a-99d8c953
+ fc9b/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : UZH\, Construction d'une nouvelle centrale
+  énergétique du cluster 4 | CPC 246-01 : machine de chauffage/refroidiss
+ ement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

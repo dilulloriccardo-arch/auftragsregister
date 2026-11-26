@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d373cc85-bd46-495e-ab2d-561bde7c5dac-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Scadenza: BKP 221.4 / 221.6 Metallfenster- und Türen aus Aluminium
+ \, Thun Polygon\, Sanierung Gebäudehülle Haustechnik
+DESCRIPTION:Ente pubblico: armasuisse Immobilien\nScadenza: 12.01.2027\nNel
+  registro: https://auftragsregister.ch/it/auftrag/d373cc85-bd46-495e-ab2d-
+ 561bde7c5dac/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/d373cc85-bd46-495e-ab2d-561bde7c5dac
+URL:https://auftragsregister.ch/it/auftrag/d373cc85-bd46-495e-ab2d-561bde7c
+ 5dac/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 221.4 / 221.6 Metallfenster- und Türen aus Alumi
+ nium\, Thun Polygon\, Sanierung Gebäudehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:50b778fe-1031-4c24-ac57-3efaf2e734a9-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20261218T140000Z
+SUMMARY:Délai de remise : Pfungen\, Buckstrasse - Strassensanierung mit 
+ Werkleitungen
+DESCRIPTION:Acheteur public : F+H Partner AG\nDélai de remise : 18.12.
+ 2026\, 15 h 00\nDans le registre : https://auftragsregister.ch/fr/au
+ ftrag/50b778fe-1031-4c24-ac57-3efaf2e734a9/\nPublication officielle : ht
+ tps://www.simap.ch/fr/project-detail/50b778fe-1031-4c24-ac57-3efaf2e734a9
+URL:https://auftragsregister.ch/fr/auftrag/50b778fe-1031-4c24-ac57-3efaf2e7
+ 34a9/
+LOCATION:Pfungen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Pfungen\, Buckstrasse - Strassensanierung 
+ mit Werkleitungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

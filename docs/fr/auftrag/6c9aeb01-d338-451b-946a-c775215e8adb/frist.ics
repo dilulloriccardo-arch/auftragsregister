@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c9aeb01-d338-451b-946a-c775215e8adb-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270121T160000Z
+SUMMARY:Délai de remise : 789 NB Schulhaus- & 3-fach Kindergarten Malerv
+ a Sargans - TO2 Schulhaus - BKP 333 Beleuchtung
+DESCRIPTION:Acheteur public : Politische Gemeinde Sargans\nDélai de remi
+ se : 21.01.2027\, 17 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/6c9aeb01-d338-451b-946a-c775215e8adb/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/6c9aeb01-d338-451b-946a-
+ c775215e8adb
+URL:https://auftragsregister.ch/fr/auftrag/6c9aeb01-d338-451b-946a-c775215e
+ 8adb/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 789 NB Schulhaus- & 3-fach Kindergarten Ma
+ lerva Sargans - TO2 Schulhaus - BKP 333 Beleuchtung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2abcce79-2018-47d8-9e67-15b16f4323d6-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270125T225900Z
+SUMMARY:Délai de remise : 745.05 Sculmserstrasse\, SK Fapiogn - Sigl Aul
+ t\, Baumeisterarbeiten
+DESCRIPTION:Acheteur public : Tiefbauamt Graubünden\nDélai de remise 
+ : 25.01.2027\, 23 h 59\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/2abcce79-2018-47d8-9e67-15b16f4323d6/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/2abcce79-2018-47d8-9e67-15b16
+ f4323d6
+URL:https://auftragsregister.ch/fr/auftrag/2abcce79-2018-47d8-9e67-15b16f43
+ 23d6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 745.05 Sculmserstrasse\, SK Fapiogn - Sigl
+  Ault\, Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

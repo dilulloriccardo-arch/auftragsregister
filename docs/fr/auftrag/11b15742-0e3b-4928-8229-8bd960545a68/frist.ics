@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:11b15742-0e3b-4928-8229-8bd960545a68-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270119T150000Z
+SUMMARY:Délai de remise : KZN l 46024 l BKP 211-01 Baumeisterarbeiten
+DESCRIPTION:Acheteur public : Hochbauamt\, Baubereich B\nDélai de remise
+  : 19.01.2027\, 16 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/11b15742-0e3b-4928-8229-8bd960545a68/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/11b15742-0e3b-4928-8229-8b
+ d960545a68
+URL:https://auftragsregister.ch/fr/auftrag/11b15742-0e3b-4928-8229-8bd96054
+ 5a68/
+LOCATION:Birchstrasse 97
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : KZN l 46024 l BKP 211-01 Baumeisterarbeite
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

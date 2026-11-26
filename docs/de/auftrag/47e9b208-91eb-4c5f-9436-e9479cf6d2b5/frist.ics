@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:47e9b208-91eb-4c5f-9436-e9479cf6d2b5-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270118T110000Z
+SUMMARY:Eingabefrist: Serviceunterstützung Messaging und SQL
+DESCRIPTION:Auftraggeber: Informatik Schaffhausen\nEingabefrist: 18.01.2027
+ \, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/47e9b20
+ 8-91eb-4c5f-9436-e9479cf6d2b5/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/47e9b208-91eb-4c5f-9436-e9479cf6d2b5
+URL:https://auftragsregister.ch/de/auftrag/47e9b208-91eb-4c5f-9436-e9479cf6
+ d2b5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Serviceunterstützung Messaging und SQL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

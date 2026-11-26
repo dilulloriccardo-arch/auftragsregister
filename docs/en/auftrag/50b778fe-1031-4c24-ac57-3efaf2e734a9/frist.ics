@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:50b778fe-1031-4c24-ac57-3efaf2e734a9-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20261218T140000Z
+SUMMARY:Submission deadline: Pfungen\, Buckstrasse - Strassensanierung mit 
+ Werkleitungen
+DESCRIPTION:Public buyer: F+H Partner AG\nSubmission deadline: 18 Dec 202
+ 6\, 15:00\nIn the register: https://auftragsregister.ch/en/auftrag/50b778f
+ e-1031-4c24-ac57-3efaf2e734a9/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/50b778fe-1031-4c24-ac57-3efaf2e734a9
+URL:https://auftragsregister.ch/en/auftrag/50b778fe-1031-4c24-ac57-3efaf2e7
+ 34a9/
+LOCATION:Pfungen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Pfungen\, Buckstrasse - Strassensanierung 
+ mit Werkleitungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

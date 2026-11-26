@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5578f291-659d-493a-92ba-846f6b90889a-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20261218T225900Z
+SUMMARY:Scadenza: 741.00 Strada della Calanca Bivio Castaneda - Molina 2027
+DESCRIPTION:Ente pubblico: Tiefbauamt Graubunden\nScadenza: 18.12.2026\, 23
+ :59\nNel registro: https://auftragsregister.ch/it/auftrag/5578f291-659d-49
+ 3a-92ba-846f6b90889a/\nPubblicazione ufficiale: https://www.simap.ch/it/pr
+ oject-detail/5578f291-659d-493a-92ba-846f6b90889a
+URL:https://auftragsregister.ch/it/auftrag/5578f291-659d-493a-92ba-846f6b90
+ 889a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 741.00 Strada della Calanca Bivio Castaneda - Molina 
+ 2027
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

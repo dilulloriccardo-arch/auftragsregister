@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d56316fb-dd76-4bb4-8d0f-396b10aad330-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270106T150000Z
+SUMMARY:Délai de remise : Dienstleistungen für IT- und Digitalisierungs
+ projekte
+DESCRIPTION:Acheteur public : Spital Männedorf AG\nDélai de remise : 
+ 06.01.2027\, 16 h 00\nDans le registre : https://auftragsregister.ch
+ /fr/auftrag/d56316fb-dd76-4bb4-8d0f-396b10aad330/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/d56316fb-dd76-4bb4-8d0f-396b10
+ aad330
+URL:https://auftragsregister.ch/fr/auftrag/d56316fb-dd76-4bb4-8d0f-396b10aa
+ d330/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Dienstleistungen für IT- und Digitalisier
+ ungsprojekte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:03908cda-1c41-4727-9a16-e543288e59d8-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Scadenza: BKP 271 Gipserarbeiten Thun Polygon\, Sanierung Gebäudeh
+ ülle Haustechnik
+DESCRIPTION:Ente pubblico: armasuisse Immobilien\nScadenza: 12.01.2027\nNel
+  registro: https://auftragsregister.ch/it/auftrag/03908cda-1c41-4727-9a16-
+ e543288e59d8/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/03908cda-1c41-4727-9a16-e543288e59d8
+URL:https://auftragsregister.ch/it/auftrag/03908cda-1c41-4727-9a16-e543288e
+ 59d8/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 271 Gipserarbeiten Thun Polygon\, Sanierung Gebä
+ udehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

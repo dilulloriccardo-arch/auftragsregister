@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c9aeb01-d338-451b-946a-c775215e8adb-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270121T160000Z
+SUMMARY:Scadenza: 789 NB Schulhaus- & 3-fach Kindergarten Malerva Sargans -
+  TO2 Schulhaus - BKP 333 Beleuchtung
+DESCRIPTION:Ente pubblico: Politische Gemeinde Sargans\nScadenza: 21.01.202
+ 7\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/6c9aeb01-d
+ 338-451b-946a-c775215e8adb/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/6c9aeb01-d338-451b-946a-c775215e8adb
+URL:https://auftragsregister.ch/it/auftrag/6c9aeb01-d338-451b-946a-c775215e
+ 8adb/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 789 NB Schulhaus- & 3-fach Kindergarten Malerva Sarga
+ ns - TO2 Schulhaus - BKP 333 Beleuchtung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

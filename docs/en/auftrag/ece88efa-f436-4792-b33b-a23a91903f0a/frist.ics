@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ece88efa-f436-4792-b33b-a23a91903f0a-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:1
+DTSTART:20270112T225900Z
+SUMMARY:Submission deadline: Beschaffung Büromobiliar
+DESCRIPTION:Public buyer: AEW Energie AG\nSubmission deadline: 12 Jan 202
+ 7\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/ece88ef
+ a-f436-4792-b33b-a23a91903f0a/\nOfficial publication: https://www.simap.ch
+ /en/project-detail/ece88efa-f436-4792-b33b-a23a91903f0a
+URL:https://auftragsregister.ch/en/auftrag/ece88efa-f436-4792-b33b-a23a9190
+ 3f0a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung Büromobiliar
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

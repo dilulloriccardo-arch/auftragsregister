@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:929cd2f8-b4c5-4863-9a18-d67265c4b2ed-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Délai de remise : Prestations de mandataires généraux / d'ing
+ énieurs pour la rénovation de la centrale hydroélectrique de Papieri\, 
+ Bischofszell (TG) (phases SIA 41 à 53)
+DESCRIPTION:Acheteur public : Kraftwerk Papieri\, Bischofzell (Koch Gener
+ alunternehmen AG)\nDélai de remise : 15.01.2027\, 16 h 00\nDans le 
+ registre : https://auftragsregister.ch/fr/auftrag/929cd2f8-b4c5-4863-9a1
+ 8-d67265c4b2ed/\nPublication officielle : https://www.simap.ch/fr/projec
+ t-detail/929cd2f8-b4c5-4863-9a18-d67265c4b2ed
+URL:https://auftragsregister.ch/fr/auftrag/929cd2f8-b4c5-4863-9a18-d67265c4
+ b2ed/
+LOCATION:Bischofszell
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Prestations de mandataires généraux / d'
+ ingénieurs pour la rénovation de la centrale hydroélectrique de Papieri
+ \, Bischofszell (TG) (phases SIA 41 à 53)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

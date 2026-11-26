@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:45891c23-70dd-4088-8435-bdd7407ffe73-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20261211T140000Z
+SUMMARY:Délai de remise : Wärmeverbund Utenberg Stadt Luzern
+DESCRIPTION:Acheteur public : Stadt Luzern\, Baudirektion\, Immobilien\nD
+ élai de remise : 11.12.2026\, 15 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/45891c23-70dd-4088-8435-bdd7407ffe73/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/45891c23-70
+ dd-4088-8435-bdd7407ffe73
+URL:https://auftragsregister.ch/fr/auftrag/45891c23-70dd-4088-8435-bdd7407f
+ fe73/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wärmeverbund Utenberg Stadt Luzern
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

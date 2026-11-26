@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:929cd2f8-b4c5-4863-9a18-d67265c4b2ed-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Submission deadline: Erneuerung Wehr Ghögg und Fassung\, Kraftwerk
+  Papieri\, Bischofszell (TG) (SIA Phasen 41-53)
+DESCRIPTION:Public buyer: Kraftwerk Papieri\, Bischofzell (Koch Generalunte
+ rnehmen AG)\nSubmission deadline: 15 Jan 2027\, 16:00\nIn the register: 
+ https://auftragsregister.ch/en/auftrag/929cd2f8-b4c5-4863-9a18-d67265c4b2e
+ d/\nOfficial publication: https://www.simap.ch/en/project-detail/929cd2f8-
+ b4c5-4863-9a18-d67265c4b2ed
+URL:https://auftragsregister.ch/en/auftrag/929cd2f8-b4c5-4863-9a18-d67265c4
+ b2ed/
+LOCATION:Bischofszell
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Erneuerung Wehr Ghögg und Fassung\, Kraft
+ werk Papieri\, Bischofszell (TG) (SIA Phasen 41-53)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

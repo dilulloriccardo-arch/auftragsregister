@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:65c891b7-da29-4e30-8468-85bf299f1ed4-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270120T100000Z
+SUMMARY:Eingabefrist: Mise en conformité des fenêtres de bâtiments\, lot
+  6 (2375) Fenêtres en bois
+DESCRIPTION:Auftraggeber: Unité soumissions - Département de l'aménageme
+ nt\, des constructions et de la mobilité (DACM) de la Ville de Genève\nE
+ ingabefrist: 20.01.2027\, 11.00 Uhr\nIm Register: https://auftragsregiste
+ r.ch/de/auftrag/65c891b7-da29-4e30-8468-85bf299f1ed4/\nAmtliche Publikatio
+ n: https://www.simap.ch/de/project-detail/65c891b7-da29-4e30-8468-85bf299f
+ 1ed4
+URL:https://auftragsregister.ch/de/auftrag/65c891b7-da29-4e30-8468-85bf299f
+ 1ed4/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Mise en conformité des fenêtres de bâtiments\,
+  lot 6 (2375) Fenêtres en bois
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f7340c06-62cd-4d51-8e82-882a47e159e1-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Scadenza: Klärwerk Wald\, Elimination von Mikroverunreinigungen: B
+ KP 641 Ozonausrüstung
+DESCRIPTION:Ente pubblico: Gemeinde Wald ZH\, Abteilung Infrastruktur\nScad
+ enza: 29.01.2027\, 12:00\nNel registro: https://auftragsregister.ch/it/auf
+ trag/f7340c06-62cd-4d51-8e82-882a47e159e1/\nPubblicazione ufficiale: https
+ ://www.simap.ch/it/project-detail/f7340c06-62cd-4d51-8e82-882a47e159e1
+URL:https://auftragsregister.ch/it/auftrag/f7340c06-62cd-4d51-8e82-882a47e1
+ 59e1/
+LOCATION:Wald
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Klärwerk Wald\, Elimination von Mikroverunreinigunge
+ n: BKP 641 Ozonausrüstung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

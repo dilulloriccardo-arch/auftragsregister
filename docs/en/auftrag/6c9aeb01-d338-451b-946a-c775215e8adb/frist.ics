@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c9aeb01-d338-451b-946a-c775215e8adb-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270121T160000Z
+SUMMARY:Submission deadline: 789 NB Malerva Sargans School Building & 3-Cla
+ ssroom Kindergarten - TO2 School Building - BKP 333 Lighting
+DESCRIPTION:Public buyer: Politische Gemeinde Sargans\nSubmission deadline:
+  21 Jan 2027\, 17:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/6c9aeb01-d338-451b-946a-c775215e8adb/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/6c9aeb01-d338-451b-946a-c775215e8adb
+URL:https://auftragsregister.ch/en/auftrag/6c9aeb01-d338-451b-946a-c775215e
+ 8adb/
+LOCATION:Sargans
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 789 NB Malerva Sargans School Building & 3
+ -Classroom Kindergarten - TO2 School Building - BKP 333 Lighting
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

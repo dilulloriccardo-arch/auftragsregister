@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:11b15742-0e3b-4928-8229-8bd960545a68-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270119T150000Z
+SUMMARY:Scadenza: KZN l 46024 l BKP 211-01 Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: Hochbauamt\, Baubereich B\nScadenza: 19.01.2027\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/11b15742-0e3
+ b-4928-8229-8bd960545a68/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/11b15742-0e3b-4928-8229-8bd960545a68
+URL:https://auftragsregister.ch/it/auftrag/11b15742-0e3b-4928-8229-8bd96054
+ 5a68/
+LOCATION:Birchstrasse 97
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: KZN l 46024 l BKP 211-01 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

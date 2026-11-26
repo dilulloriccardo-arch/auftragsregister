@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:75a47b61-a030-43a9-9c86-7e5ad2c2edc2-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270111T103000Z
+SUMMARY:Submission deadline: RespeChartAli_A1 / Evaluation environnementale
+  des services de restauration
+DESCRIPTION:Public buyer: Centrale municipale d'achat et d'impression de la
+  Ville de Genève\nSubmission deadline: 11 Jan 2027\, 11:30\nIn the regi
+ ster: https://auftragsregister.ch/en/auftrag/75a47b61-a030-43a9-9c86-7e5ad
+ 2c2edc2/\nOfficial publication: https://www.simap.ch/en/project-detail/75a
+ 47b61-a030-43a9-9c86-7e5ad2c2edc2
+URL:https://auftragsregister.ch/en/auftrag/75a47b61-a030-43a9-9c86-7e5ad2c2
+ edc2/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: RespeChartAli_A1 / Evaluation environnemen
+ tale des services de restauration
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

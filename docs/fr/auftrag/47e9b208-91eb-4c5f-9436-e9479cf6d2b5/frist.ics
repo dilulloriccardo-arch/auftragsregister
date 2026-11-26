@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:47e9b208-91eb-4c5f-9436-e9479cf6d2b5-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270118T110000Z
+SUMMARY:Délai de remise : Serviceunterstützung Messaging und SQL
+DESCRIPTION:Acheteur public : Informatik Schaffhausen\nDélai de remise
+  : 18.01.2027\, 12 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/47e9b208-91eb-4c5f-9436-e9479cf6d2b5/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/47e9b208-91eb-4c5f-9436-e9
+ 479cf6d2b5
+URL:https://auftragsregister.ch/fr/auftrag/47e9b208-91eb-4c5f-9436-e9479cf6
+ d2b5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Serviceunterstützung Messaging und SQL
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

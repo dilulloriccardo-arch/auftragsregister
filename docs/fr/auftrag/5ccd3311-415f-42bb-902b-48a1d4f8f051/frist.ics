@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5ccd3311-415f-42bb-902b-48a1d4f8f051-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Délai de remise : CFC 113 Sites contaminés\, Polygon de Thoune\
+ , assainissement de l'enveloppe du bâtiment et des installations techniqu
+ es
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  12.01.2027\nDans le registre : https://auftragsregister.ch/fr/auftrag/5
+ ccd3311-415f-42bb-902b-48a1d4f8f051/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/5ccd3311-415f-42bb-902b-48a1d4f8f051
+URL:https://auftragsregister.ch/fr/auftrag/5ccd3311-415f-42bb-902b-48a1d4f8
+ f051/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CFC 113 Sites contaminés\, Polygon de Tho
+ une\, assainissement de l'enveloppe du bâtiment et des installations tech
+ niques
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

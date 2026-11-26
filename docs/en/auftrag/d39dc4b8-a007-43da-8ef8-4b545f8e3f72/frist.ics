@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d39dc4b8-a007-43da-8ef8-4b545f8e3f72-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270119T150000Z
+SUMMARY:Submission deadline: KZN l 46024 l BKP 379-01 Bühneneinrichtungen
+DESCRIPTION:Public buyer: Hochbauamt\, Baubereich B\nSubmission deadline: 1
+ 9 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/d39dc4b8-a007-43da-8ef8-4b545f8e3f72/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/d39dc4b8-a007-43da-8ef8-4b545f8e3f72
+URL:https://auftragsregister.ch/en/auftrag/d39dc4b8-a007-43da-8ef8-4b545f8e
+ 3f72/
+LOCATION:Birchstrasse 97
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: KZN l 46024 l BKP 379-01 Bühneneinrichtun
+ gen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

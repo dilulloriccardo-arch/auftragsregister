@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5ccd3311-415f-42bb-902b-48a1d4f8f051-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Submission deadline: BKP 113 Altlasten\, Thun Polygon\, Sanierung G
+ ebäudehülle Haustechnik
+DESCRIPTION:Public buyer: armasuisse Immobilien\nSubmission deadline: 12 J
+ an 2027\nIn the register: https://auftragsregister.ch/en/auftrag/5ccd3311
+ -415f-42bb-902b-48a1d4f8f051/\nOfficial publication: https://www.simap.ch/
+ en/project-detail/5ccd3311-415f-42bb-902b-48a1d4f8f051
+URL:https://auftragsregister.ch/en/auftrag/5ccd3311-415f-42bb-902b-48a1d4f8
+ f051/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BKP 113 Altlasten\, Thun Polygon\, Sanieru
+ ng Gebäudehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

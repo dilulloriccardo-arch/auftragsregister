@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ebb72b4-fddf-47a4-8f9a-99d8c953fc9b-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Scadenza: Neubau Energiezentrale Cluster 4 | BKP 246 Wärme-/Kälte
+ maschine
+DESCRIPTION:Ente pubblico: Kanton Zürich Hochbauaumt\, Baubereich D\nScade
+ nza: 25.01.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/1ebb72b4-fddf-47a4-8f9a-99d8c953fc9b/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/1ebb72b4-fddf-47a4-8f9a-99d8c953fc9b
+URL:https://auftragsregister.ch/it/auftrag/1ebb72b4-fddf-47a4-8f9a-99d8c953
+ fc9b/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Energiezentrale Cluster 4 | BKP 246 Wärme-/K
+ ältemaschine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

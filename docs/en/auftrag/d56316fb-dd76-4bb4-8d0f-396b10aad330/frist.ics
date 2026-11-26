@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d56316fb-dd76-4bb4-8d0f-396b10aad330-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270106T150000Z
+SUMMARY:Submission deadline: Dienstleistungen für IT- und Digitalisierungs
+ projekte
+DESCRIPTION:Public buyer: Spital Männedorf AG\nSubmission deadline: 6 Jan
+  2027\, 16:00\nIn the register: https://auftragsregister.ch/en/auftrag/d5
+ 6316fb-dd76-4bb4-8d0f-396b10aad330/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/d56316fb-dd76-4bb4-8d0f-396b10aad330
+URL:https://auftragsregister.ch/en/auftrag/d56316fb-dd76-4bb4-8d0f-396b10aa
+ d330/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Dienstleistungen für IT- und Digitalisier
+ ungsprojekte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

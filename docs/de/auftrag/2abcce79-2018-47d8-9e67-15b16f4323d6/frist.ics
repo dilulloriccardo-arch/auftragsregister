@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2abcce79-2018-47d8-9e67-15b16f4323d6-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270125T225900Z
+SUMMARY:Eingabefrist: 745.05 Sculmserstrasse\, SK Fapiogn - Sigl Ault\, Bau
+ meisterarbeiten
+DESCRIPTION:Auftraggeber: Tiefbauamt Graubünden\nEingabefrist: 25.01.2027\
+ , 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/2abcce79
+ -2018-47d8-9e67-15b16f4323d6/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/2abcce79-2018-47d8-9e67-15b16f4323d6
+URL:https://auftragsregister.ch/de/auftrag/2abcce79-2018-47d8-9e67-15b16f43
+ 23d6/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 745.05 Sculmserstrasse\, SK Fapiogn - Sigl Ault\,
+  Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

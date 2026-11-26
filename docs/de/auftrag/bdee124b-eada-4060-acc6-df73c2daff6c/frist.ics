@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:bdee124b-eada-4060-acc6-df73c2daff6c-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20261223T100000Z
+SUMMARY:Eingabefrist: Travaux de génie civil pour réseau de chauffage à 
+ distance "copropriété Hogarlan"
+DESCRIPTION:Auftraggeber: CADIOM SA (Perreten et Milleret)\nEingabefrist: 2
+ 3.12.2026\, 11.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftra
+ g/bdee124b-eada-4060-acc6-df73c2daff6c/\nAmtliche Publikation: https://www
+ .simap.ch/de/project-detail/bdee124b-eada-4060-acc6-df73c2daff6c
+URL:https://auftragsregister.ch/de/auftrag/bdee124b-eada-4060-acc6-df73c2da
+ ff6c/
+LOCATION:LANCY
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Travaux de génie civil pour réseau de chauffage
+  à distance "copropriété Hogarlan"
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

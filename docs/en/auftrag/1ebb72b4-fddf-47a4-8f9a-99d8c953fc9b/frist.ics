@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1ebb72b4-fddf-47a4-8f9a-99d8c953fc9b-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Submission deadline: Neubau Energiezentrale Cluster 4 | BKP 246 Wä
+ rme-/Kältemaschine
+DESCRIPTION:Public buyer: Kanton Zürich Hochbauaumt\, Baubereich D\nSubmis
+ sion deadline: 25 Jan 2027\, 16:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/1ebb72b4-fddf-47a4-8f9a-99d8c953fc9b/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/1ebb72b4-fddf-47a4-8f9a-99d8
+ c953fc9b
+URL:https://auftragsregister.ch/en/auftrag/1ebb72b4-fddf-47a4-8f9a-99d8c953
+ fc9b/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Energiezentrale Cluster 4 | BKP 246
+  Wärme-/Kältemaschine
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

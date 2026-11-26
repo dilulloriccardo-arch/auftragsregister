@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d56316fb-dd76-4bb4-8d0f-396b10aad330-frist@auftragsregister.ch
+DTSTAMP:20261126T000000Z
+SEQUENCE:0
+DTSTART:20270106T150000Z
+SUMMARY:Eingabefrist: Dienstleistungen für IT- und Digitalisierungsprojekt
+ e
+DESCRIPTION:Auftraggeber: Spital Männedorf AG\nEingabefrist: 06.01.2027\, 
+ 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/d56316fb-d
+ d76-4bb4-8d0f-396b10aad330/\nAmtliche Publikation: https://www.simap.ch/de
+ /project-detail/d56316fb-dd76-4bb4-8d0f-396b10aad330
+URL:https://auftragsregister.ch/de/auftrag/d56316fb-dd76-4bb4-8d0f-396b10aa
+ d330/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Dienstleistungen für IT- und Digitalisierungspro
+ jekte
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
