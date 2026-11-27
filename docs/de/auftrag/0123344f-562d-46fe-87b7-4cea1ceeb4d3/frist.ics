@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0123344f-562d-46fe-87b7-4cea1ceeb4d3-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270219T225900Z
+SUMMARY:Eingabefrist: Murgenthal IO\, K101\; BehiG-Bushaltestelle und Belag
+ ssanierung Bahnhof
+DESCRIPTION:Auftraggeber: Abteilung Tiefbau (ATB)\nEingabefrist: 19.02.2027
+ \, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/0123344
+ f-562d-46fe-87b7-4cea1ceeb4d3/\nAmtliche Publikation: https://www.simap.ch
+ /de/project-detail/0123344f-562d-46fe-87b7-4cea1ceeb4d3
+URL:https://auftragsregister.ch/de/auftrag/0123344f-562d-46fe-87b7-4cea1cee
+ b4d3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Murgenthal IO\, K101\; BehiG-Bushaltestelle und B
+ elagssanierung Bahnhof
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

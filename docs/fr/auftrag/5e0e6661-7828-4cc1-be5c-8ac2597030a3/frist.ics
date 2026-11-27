@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5e0e6661-7828-4cc1-be5c-8ac2597030a3-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261222T100000Z
+SUMMARY:Délai de remise : Fernwärme Quimby-Kreisel\, Thurgauerstrasse\,
+  Glattpark
+DESCRIPTION:Acheteur public : Energie Opfikon AG\nDélai de remise : 22
+ .12.2026\, 11 h 00\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/5e0e6661-7828-4cc1-be5c-8ac2597030a3/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/5e0e6661-7828-4cc1-be5c-8ac259703
+ 0a3
+URL:https://auftragsregister.ch/fr/auftrag/5e0e6661-7828-4cc1-be5c-8ac25970
+ 30a3/
+LOCATION:Glattpark
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Fernwärme Quimby-Kreisel\, Thurgauerstras
+ se\, Glattpark
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

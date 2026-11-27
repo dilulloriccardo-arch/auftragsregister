@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee6ff6e4-db30-41ab-a604-48ba47529764-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:Submission deadline: Ecole de Grône - Agrandissement du centre sco
+ laire
+DESCRIPTION:Public buyer: Commune de Grône\nSubmission deadline: 19 Jan 
+ 2027\nIn the register: https://auftragsregister.ch/en/auftrag/ee6ff6e4-db3
+ 0-41ab-a604-48ba47529764/\nOfficial publication: https://www.simap.ch/en/p
+ roject-detail/ee6ff6e4-db30-41ab-a604-48ba47529764
+URL:https://auftragsregister.ch/en/auftrag/ee6ff6e4-db30-41ab-a604-48ba4752
+ 9764/
+LOCATION:Grône
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ecole de Grône - Agrandissement du centre
+  scolaire
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

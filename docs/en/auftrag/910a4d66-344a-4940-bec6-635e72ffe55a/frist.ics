@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:910a4d66-344a-4940-bec6-635e72ffe55a-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270212T150000Z
+SUMMARY:Submission deadline: 13785 / 285-02 Restaurator\, Kirche Grossmüns
+ ter\, Instandsetzung + Optimierung
+DESCRIPTION:Public buyer: Hochbauamt\, Baubereich A\nSubmission deadline: 1
+ 2 Feb 2027\, 16:00\nIn the register: https://auftragsregister.ch/en/auft
+ rag/910a4d66-344a-4940-bec6-635e72ffe55a/\nOfficial publication: https://w
+ ww.simap.ch/en/project-detail/910a4d66-344a-4940-bec6-635e72ffe55a
+URL:https://auftragsregister.ch/en/auftrag/910a4d66-344a-4940-bec6-635e72ff
+ e55a/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: 13785 / 285-02 Restaurator\, Kirche Grossm
+ ünster\, Instandsetzung + Optimierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c4a4de09-b387-4688-9189-1b8e496845c5-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261217T110000Z
+SUMMARY:Délai de remise : Renouvellement Omnissa Horizon et composants a
+ ssociés
+DESCRIPTION:Acheteur public : OCAS Office cantonal des assurances sociale
+ s\nDélai de remise : 17.12.2026\, 12 h 00\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/c4a4de09-b387-4688-9189-1b8e496845c5/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/c4a4de0
+ 9-b387-4688-9189-1b8e496845c5
+URL:https://auftragsregister.ch/fr/auftrag/c4a4de09-b387-4688-9189-1b8e4968
+ 45c5/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Renouvellement Omnissa Horizon et composan
+ ts associés
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

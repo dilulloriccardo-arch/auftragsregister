@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3146be65-a9db-4cb1-964e-f9dcc0539e9c-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Délai de remise : SRIV Herrliberg\, 712 Forchstrasse\, km 2.780 
+ - 2.900\, Arbachstrasse - Chapfstrasse\, Wasser-/Tief- und Strassenbauarbe
+ iten
+DESCRIPTION:Acheteur public : Tiefbauamt\, Abt. Strasseninspektorat\nDél
+ ai de remise : 04.01.2027\, 12 h 00\nDans le registre : https://au
+ ftragsregister.ch/fr/auftrag/3146be65-a9db-4cb1-964e-f9dcc0539e9c/\nPublic
+ ation officielle : https://www.simap.ch/fr/project-detail/3146be65-a9db-
+ 4cb1-964e-f9dcc0539e9c
+URL:https://auftragsregister.ch/fr/auftrag/3146be65-a9db-4cb1-964e-f9dcc053
+ 9e9c/
+LOCATION:Herrliberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : SRIV Herrliberg\, 712 Forchstrasse\, km 2.
+ 780 - 2.900\, Arbachstrasse - Chapfstrasse\, Wasser-/Tief- und Strassenbau
+ arbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

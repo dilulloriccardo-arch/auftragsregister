@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b621acd3-7862-4d32-b5d5-7e91aade5981-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Scadenza: 23 Elektroinstallationen
+DESCRIPTION:Ente pubblico: Stadt Wetzikon Immobilien\nScadenza: 21.12.2026\
+ , 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/b621acd3-786
+ 2-4d32-b5d5-7e91aade5981/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/b621acd3-7862-4d32-b5d5-7e91aade5981
+URL:https://auftragsregister.ch/it/auftrag/b621acd3-7862-4d32-b5d5-7e91aade
+ 5981/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 23 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

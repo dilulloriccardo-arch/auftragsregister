@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7ff61f75-9a6d-426c-ba43-b344e30e7e4b-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270121T225900Z
+SUMMARY:Scadenza: Réfection de la chaussée sur la route d'Ypresse à Vex\
+ , sur la RC no 603 Raccordement à Les Prasses et à Ypresses
+DESCRIPTION:Ente pubblico: Département de la mobilité\, du territoire et 
+ de l'environnement\nScadenza: 21.01.2027\, 23:59\nNel registro: https://au
+ ftragsregister.ch/it/auftrag/7ff61f75-9a6d-426c-ba43-b344e30e7e4b/\nPubbli
+ cazione ufficiale: https://www.simap.ch/it/project-detail/7ff61f75-9a6d-42
+ 6c-ba43-b344e30e7e4b
+URL:https://auftragsregister.ch/it/auftrag/7ff61f75-9a6d-426c-ba43-b344e30e
+ 7e4b/
+LOCATION:Vex
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Réfection de la chaussée sur la route d'Ypresse à 
+ Vex\, sur la RC no 603 Raccordement à Les Prasses et à Ypresses
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

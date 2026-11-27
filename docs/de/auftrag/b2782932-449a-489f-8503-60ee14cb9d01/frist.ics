@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2782932-449a-489f-8503-60ee14cb9d01-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270112T090000Z
+SUMMARY:Eingabefrist: DAO_O_6556-2025-166_Sécheron
+DESCRIPTION:Auftraggeber: Services industriels de Genève (SIG) - Direction
+  Achats\nEingabefrist: 12.01.2027\, 10.00 Uhr\nIm Register: https://auftr
+ agsregister.ch/de/auftrag/b2782932-449a-489f-8503-60ee14cb9d01/\nAmtliche 
+ Publikation: https://www.simap.ch/de/project-detail/b2782932-449a-489f-850
+ 3-60ee14cb9d01
+URL:https://auftragsregister.ch/de/auftrag/b2782932-449a-489f-8503-60ee14cb
+ 9d01/
+LOCATION:Sécheron
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: DAO_O_6556-2025-166_Sécheron
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

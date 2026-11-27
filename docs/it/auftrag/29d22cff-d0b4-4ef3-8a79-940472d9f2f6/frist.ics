@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:29d22cff-d0b4-4ef3-8a79-940472d9f2f6-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T090000Z
+SUMMARY:Scadenza: Kultur- und Sporthalle Murten - 244 Lufttechnische Anlage
+ n
+DESCRIPTION:Ente pubblico: Murten · Liegenschaftsverwaltung\nScadenza: 22.
+ 01.2027\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/29d2
+ 2cff-d0b4-4ef3-8a79-940472d9f2f6/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/29d22cff-d0b4-4ef3-8a79-940472d9f2f6
+URL:https://auftragsregister.ch/it/auftrag/29d22cff-d0b4-4ef3-8a79-940472d9
+ f2f6/
+LOCATION:Murten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kultur- und Sporthalle Murten - 244 Lufttechnische An
+ lagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

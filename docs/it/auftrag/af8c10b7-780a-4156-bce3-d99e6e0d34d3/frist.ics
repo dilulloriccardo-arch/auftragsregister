@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af8c10b7-780a-4156-bce3-d99e6e0d34d3-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270125T225900Z
+SUMMARY:Scadenza: N03\, MP-090063\, EP Verzw. Augst - Rheinfelden sowie N02
+ \, MP-090050 EP Verzw. Augst - Sissach / Fachmandat Verfahrensingenieur SA
+ BA
+DESCRIPTION:Ente pubblico: Eidgenössisches Departement für Umwelt\, Verke
+ hr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung 
+ Strasseninfrastruktur-Ost - F3\nScadenza: 25.01.2027\, 23:59\nNel registro
+ : https://auftragsregister.ch/it/auftrag/af8c10b7-780a-4156-bce3-d99e6e0d3
+ 4d3/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/af8c
+ 10b7-780a-4156-bce3-d99e6e0d34d3
+URL:https://auftragsregister.ch/it/auftrag/af8c10b7-780a-4156-bce3-d99e6e0d
+ 34d3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: N03\, MP-090063\, EP Verzw. Augst - Rheinfelden sowie
+  N02\, MP-090050 EP Verzw. Augst - Sissach / Fachmandat Verfahrensingenieu
+ r SABA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

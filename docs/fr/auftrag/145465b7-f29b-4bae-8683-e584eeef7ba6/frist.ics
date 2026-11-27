@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:145465b7-f29b-4bae-8683-e584eeef7ba6-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261221T103000Z
+SUMMARY:Délai de remise : Ausbau Güterstrasse LuthernBad - HinterEy\, 6
+ 156 Luthern
+DESCRIPTION:Acheteur public : Gemeinde Luthern (PlanQuadrat AG\, Bauingen
+ ieure + Planer)\nDélai de remise : 21.12.2026\, 11 h 30\nDans le re
+ gistre : https://auftragsregister.ch/fr/auftrag/145465b7-f29b-4bae-8683-
+ e584eeef7ba6/\nPublication officielle : https://www.simap.ch/fr/project-
+ detail/145465b7-f29b-4bae-8683-e584eeef7ba6
+URL:https://auftragsregister.ch/fr/auftrag/145465b7-f29b-4bae-8683-e584eeef
+ 7ba6/
+LOCATION:Luthern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ausbau Güterstrasse LuthernBad - HinterEy
+ \, 6156 Luthern
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

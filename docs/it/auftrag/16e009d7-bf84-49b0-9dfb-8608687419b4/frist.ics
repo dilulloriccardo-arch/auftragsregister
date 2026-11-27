@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:16e009d7-bf84-49b0-9dfb-8608687419b4-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261218T190000Z
+SUMMARY:Scadenza: MFH Niederhof Etappe 3\, Gunzgen - Elektroanlage
+DESCRIPTION:Ente pubblico: Bürgergemeinde Gunzgen\nScadenza: 18.12.2026\, 
+ 20:00\nNel registro: https://auftragsregister.ch/it/auftrag/16e009d7-bf84-
+ 49b0-9dfb-8608687419b4/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/16e009d7-bf84-49b0-9dfb-8608687419b4
+URL:https://auftragsregister.ch/it/auftrag/16e009d7-bf84-49b0-9dfb-86086874
+ 19b4/
+LOCATION:Gunzgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MFH Niederhof Etappe 3\, Gunzgen - Elektroanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

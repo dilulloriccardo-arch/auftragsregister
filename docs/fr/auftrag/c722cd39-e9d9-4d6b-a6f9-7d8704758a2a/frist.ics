@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c722cd39-e9d9-4d6b-a6f9-7d8704758a2a-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T225900Z
+SUMMARY:Délai de remise : Frick IO\; K488\, Instandsetzung B-7479A Durch
+ lass Feihalterbach obere
+DESCRIPTION:Acheteur public : Abteilung Tiefbau (ATB)\nDélai de remise
+  : 22.01.2027\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/c722cd39-e9d9-4d6b-a6f9-7d8704758a2a/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/c722cd39-e9d9-4d6b-a6f9-7d
+ 8704758a2a
+URL:https://auftragsregister.ch/fr/auftrag/c722cd39-e9d9-4d6b-a6f9-7d870475
+ 8a2a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Frick IO\; K488\, Instandsetzung B-7479A D
+ urchlass Feihalterbach obere
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

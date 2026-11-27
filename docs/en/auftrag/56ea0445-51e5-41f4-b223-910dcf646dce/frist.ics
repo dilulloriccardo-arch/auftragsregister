@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:56ea0445-51e5-41f4-b223-910dcf646dce-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270107T225900Z
+SUMMARY:Submission deadline: BAV 83368 Schulanlage Sihlweid\, Instandsetzun
+ g\, Generalplanungsleistungen (unter Vorbehalt der Kreditgenehmigung)
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 7 Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch/en
+ /auftrag/56ea0445-51e5-41f4-b223-910dcf646dce/\nOfficial publication: http
+ s://www.simap.ch/en/project-detail/56ea0445-51e5-41f4-b223-910dcf646dce
+URL:https://auftragsregister.ch/en/auftrag/56ea0445-51e5-41f4-b223-910dcf64
+ 6dce/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 83368 Schulanlage Sihlweid\, Instandse
+ tzung\, Generalplanungsleistungen (unter Vorbehalt der Kreditgenehmigung)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

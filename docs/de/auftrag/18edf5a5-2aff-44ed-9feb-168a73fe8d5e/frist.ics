@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18edf5a5-2aff-44ed-9feb-168a73fe8d5e-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Eingabefrist: Travaux de génie civil pour la construction du Torre
+ nt de Montagnon-Chaudanne amont
+DESCRIPTION:Auftraggeber: Gaetan dubuis\nEingabefrist: 17.12.2026\nIm Regis
+ ter: https://auftragsregister.ch/de/auftrag/18edf5a5-2aff-44ed-9feb-168a73
+ fe8d5e/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/18ed
+ f5a5-2aff-44ed-9feb-168a73fe8d5e
+URL:https://auftragsregister.ch/de/auftrag/18edf5a5-2aff-44ed-9feb-168a73fe
+ 8d5e/
+LOCATION:Leytron
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Travaux de génie civil pour la construction du T
+ orrent de Montagnon-Chaudanne amont
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

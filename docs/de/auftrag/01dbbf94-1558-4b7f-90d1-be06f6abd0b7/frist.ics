@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:01dbbf94-1558-4b7f-90d1-be06f6abd0b7-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Eingabefrist: Réaménagement de l’Avenue de la Gare – Commune 
+ de la Tour-de-Peilz
+DESCRIPTION:Auftraggeber: Commune de La Tour-de-Peilz (MCR & Associés SA)\
+ nEingabefrist: 22.01.2027\, 12.00 Uhr\nIm Register: https://auftragsregis
+ ter.ch/de/auftrag/01dbbf94-1558-4b7f-90d1-be06f6abd0b7/\nAmtliche Publikat
+ ion: https://www.simap.ch/de/project-detail/01dbbf94-1558-4b7f-90d1-be06f6
+ abd0b7
+URL:https://auftragsregister.ch/de/auftrag/01dbbf94-1558-4b7f-90d1-be06f6ab
+ d0b7/
+LOCATION:La Tour-de-Peilz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Réaménagement de l’Avenue de la Gare – Comm
+ une de la Tour-de-Peilz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

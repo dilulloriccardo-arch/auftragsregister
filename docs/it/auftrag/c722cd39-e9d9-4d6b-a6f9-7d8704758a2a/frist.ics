@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c722cd39-e9d9-4d6b-a6f9-7d8704758a2a-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T225900Z
+SUMMARY:Scadenza: Frick IO\; K488\, Instandsetzung B-7479A Durchlass Feihal
+ terbach obere
+DESCRIPTION:Ente pubblico: Abteilung Tiefbau (ATB)\nScadenza: 22.01.2027\, 
+ 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/c722cd39-e9d9-
+ 4d6b-a6f9-7d8704758a2a/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/c722cd39-e9d9-4d6b-a6f9-7d8704758a2a
+URL:https://auftragsregister.ch/it/auftrag/c722cd39-e9d9-4d6b-a6f9-7d870475
+ 8a2a/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Frick IO\; K488\, Instandsetzung B-7479A Durchlass Fe
+ ihalterbach obere
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

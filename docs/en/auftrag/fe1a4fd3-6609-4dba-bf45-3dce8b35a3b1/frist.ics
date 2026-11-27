@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fe1a4fd3-6609-4dba-bf45-3dce8b35a3b1-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270113T110000Z
+SUMMARY:Submission deadline: Sekundarschule Leonhard\, Sanierung Turnhallen
+ dach und Pausenplatz\, BKP 211 Baumeisterarbeiten
+DESCRIPTION:Public buyer: Bau- und Verkehrsdepartement des Kantons Basel-St
+ adt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nSubmis
+ sion deadline: 13 Jan 2027\, 12:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/fe1a4fd3-6609-4dba-bf45-3dce8b35a3b1/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/fe1a4fd3-6609-4dba-bf45-3dce
+ 8b35a3b1
+URL:https://auftragsregister.ch/en/auftrag/fe1a4fd3-6609-4dba-bf45-3dce8b35
+ a3b1/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sekundarschule Leonhard\, Sanierung Turnha
+ llendach und Pausenplatz\, BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

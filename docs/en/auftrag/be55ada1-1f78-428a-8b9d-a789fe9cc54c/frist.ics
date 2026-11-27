@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be55ada1-1f78-428a-8b9d-a789fe9cc54c-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270118T225900Z
+SUMMARY:Submission deadline: Unterbortstrasse Saanen - Erstellung Böschung
+ sstützmauer inkl. neuer Entwässerungsleitung
+DESCRIPTION:Public buyer: Einwohnergemeinde Saanen\nSubmission deadline: 18
+  Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/be55ada1-1f78-428a-8b9d-a789fe9cc54c/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/be55ada1-1f78-428a-8b9d-a789fe9cc54c
+URL:https://auftragsregister.ch/en/auftrag/be55ada1-1f78-428a-8b9d-a789fe9c
+ c54c/
+LOCATION:Saanen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Unterbortstrasse Saanen - Erstellung Bösc
+ hungsstützmauer inkl. neuer Entwässerungsleitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

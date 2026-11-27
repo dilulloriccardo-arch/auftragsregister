@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9333d362-1328-425a-91ce-8baffb94975a-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Submission deadline: Wohnen am Stadtpark: BKP 281.1 PU and Epoxy Re
+ sin Flooring
+DESCRIPTION:Public buyer: Stadt Schlieren\, Bereich Liegenschaften\nSubmiss
+ ion deadline: 11 Jan 2027\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/9333d362-1328-425a-91ce-8baffb94975a/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/9333d362-1328-425a-91ce-8baff
+ b94975a
+URL:https://auftragsregister.ch/en/auftrag/9333d362-1328-425a-91ce-8baffb94
+ 975a/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wohnen am Stadtpark: BKP 281.1 PU and Epox
+ y Resin Flooring
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

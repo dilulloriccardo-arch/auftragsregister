@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6af6358b-55a3-45c8-886e-8acf3168ff2d-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Submission deadline: Schule Moosmatt Luzern\, Gesamtsanierung und E
+ rweiterung\, BKP 233 Leuchten und Lampen Bestandsbau
+DESCRIPTION:Public buyer: Stadt Luzern\, Baudirektion\, Immobilien\nSubmiss
+ ion deadline: 11 Jan 2027\, 12:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/6af6358b-55a3-45c8-886e-8acf3168ff2d/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/6af6358b-55a3-45c8-886e-8acf3
+ 168ff2d
+URL:https://auftragsregister.ch/en/auftrag/6af6358b-55a3-45c8-886e-8acf3168
+ ff2d/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schule Moosmatt Luzern\, Gesamtsanierung u
+ nd Erweiterung\, BKP 233 Leuchten und Lampen Bestandsbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

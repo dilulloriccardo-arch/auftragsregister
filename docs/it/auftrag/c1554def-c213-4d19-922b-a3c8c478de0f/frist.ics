@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c1554def-c213-4d19-922b-a3c8c478de0f-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270125T150000Z
+SUMMARY:Scadenza: BAV 80746 Schulanlage Triemli\, In der Ey\, Ersatzneubau 
+ - BKP 277 Elementwände
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 25.01
+ .2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/c1554d
+ ef-c213-4d19-922b-a3c8c478de0f/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/c1554def-c213-4d19-922b-a3c8c478de0f
+URL:https://auftragsregister.ch/it/auftrag/c1554def-c213-4d19-922b-a3c8c478
+ de0f/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 80746 Schulanlage Triemli\, In der Ey\, Ersatzneu
+ bau - BKP 277 Elementwände
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:277798f3-73be-48e3-9696-e7df6c1473a1-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270112T100000Z
+SUMMARY:Submission deadline: Migrazione a SAP S/4
+DESCRIPTION:Public buyer: Società Elettrica Sopracenerina SA (SES)\nSubmis
+ sion deadline: 12 Jan 2027\, 11:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/277798f3-73be-48e3-9696-e7df6c1473a1/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/277798f3-73be-48e3-9696-e7df
+ 6c1473a1
+URL:https://auftragsregister.ch/en/auftrag/277798f3-73be-48e3-9696-e7df6c14
+ 73a1/
+LOCATION:Locarno
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Migrazione a SAP S/4
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e58ba3d1-8184-4f6a-848d-1ace0d811344-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Eingabefrist: BKP 272 Metallbauarbeiten Thun\, Polygon\, Sanierung 
+ Gebäudehülle Haustechnik
+DESCRIPTION:Auftraggeber: armasuisse Immobilien\nEingabefrist: 12.01.2027\n
+ Im Register: https://auftragsregister.ch/de/auftrag/e58ba3d1-8184-4f6a-848
+ d-1ace0d811344/\nAmtliche Publikation: https://www.simap.ch/de/project-det
+ ail/e58ba3d1-8184-4f6a-848d-1ace0d811344
+URL:https://auftragsregister.ch/de/auftrag/e58ba3d1-8184-4f6a-848d-1ace0d81
+ 1344/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 272 Metallbauarbeiten Thun\, Polygon\, Sanier
+ ung Gebäudehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

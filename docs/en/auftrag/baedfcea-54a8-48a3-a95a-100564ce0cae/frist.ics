@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:baedfcea-54a8-48a3-a95a-100564ce0cae-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T080000Z
+SUMMARY:Submission deadline: SRIV Uetikon am See/Männedorf\, 17 Seestrasse
+ \, km 41.080-41.605\, Haus Nr. 133 bis Gerbeweg\, Tiefbauarbeiten
+DESCRIPTION:Public buyer: Tiefbauamt\, Abt. Strasseninspektorat\nSubmission
+  deadline: 11 Jan 2027\, 09:00\nIn the register: https://auftragsregiste
+ r.ch/en/auftrag/baedfcea-54a8-48a3-a95a-100564ce0cae/\nOfficial publicatio
+ n: https://www.simap.ch/en/project-detail/baedfcea-54a8-48a3-a95a-100564ce
+ 0cae
+URL:https://auftragsregister.ch/en/auftrag/baedfcea-54a8-48a3-a95a-100564ce
+ 0cae/
+LOCATION:Uetikon am See/Männedorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: SRIV Uetikon am See/Männedorf\, 17 Seestr
+ asse\, km 41.080-41.605\, Haus Nr. 133 bis Gerbeweg\, Tiefbauarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:08f486d9-a0ae-465e-91de-45d50c5f5395-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270215T110000Z
+SUMMARY:Délai de remise : Appel d'offres Lot B.04 : Construction métall
+ ique (hall ferroviaire + abris)
+DESCRIPTION:Acheteur public : Schweizerische Südostbahn AG (SOB) F&S-LOG
+ -E\nDélai de remise : 15.02.2027\, 12 h 00\nDans le registre : ht
+ tps://auftragsregister.ch/fr/auftrag/08f486d9-a0ae-465e-91de-45d50c5f5395/
+ \nPublication officielle : https://www.simap.ch/fr/project-detail/08f486
+ d9-a0ae-465e-91de-45d50c5f5395
+URL:https://auftragsregister.ch/fr/auftrag/08f486d9-a0ae-465e-91de-45d50c5f
+ 5395/
+LOCATION:Wattwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offres Lot B.04 : Construction mé
+ tallique (hall ferroviaire + abris)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

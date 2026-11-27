@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8dd1bf77-d9db-41f6-8b85-349a71af2ae0-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261218T080000Z
+SUMMARY:Scadenza: IWB\, TBA Tiefbauarbeiten Aescherstrasse
+DESCRIPTION:Ente pubblico: IWB Industrielle Werke Basel\nScadenza: 18.12.20
+ 26\, 09:00\nNel registro: https://auftragsregister.ch/it/auftrag/8dd1bf77-
+ d9db-41f6-8b85-349a71af2ae0/\nPubblicazione ufficiale: https://www.simap.c
+ h/it/project-detail/8dd1bf77-d9db-41f6-8b85-349a71af2ae0
+URL:https://auftragsregister.ch/it/auftrag/8dd1bf77-d9db-41f6-8b85-349a71af
+ 2ae0/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: IWB\, TBA Tiefbauarbeiten Aescherstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

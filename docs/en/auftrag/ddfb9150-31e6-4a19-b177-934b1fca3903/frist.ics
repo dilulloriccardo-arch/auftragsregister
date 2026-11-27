@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ddfb9150-31e6-4a19-b177-934b1fca3903-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Submission deadline: Landquart\, Gleis- und Perronanlage Phase B\, 
+ Elektroanlagen
+DESCRIPTION:Public buyer: Rhätische Bahn AG\nSubmission deadline: 23 Dec
+  2026\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/dd
+ fb9150-31e6-4a19-b177-934b1fca3903/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/ddfb9150-31e6-4a19-b177-934b1fca3903
+URL:https://auftragsregister.ch/en/auftrag/ddfb9150-31e6-4a19-b177-934b1fca
+ 3903/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Landquart\, Gleis- und Perronanlage Phase 
+ B\, Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

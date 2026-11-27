@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c1fd61fb-a85e-49f8-8816-e240f9f50074-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270119T225900Z
+SUMMARY:Submission deadline: Schüler:innentransport Gemeinde Schwarzenburg
+DESCRIPTION:Public buyer: Gemeinde Schwarzenburg\nSubmission deadline: 19 
+ Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag
+ /c1fd61fb-a85e-49f8-8816-e240f9f50074/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/c1fd61fb-a85e-49f8-8816-e240f9f50074
+URL:https://auftragsregister.ch/en/auftrag/c1fd61fb-a85e-49f8-8816-e240f9f5
+ 0074/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Schüler:innentransport Gemeinde Schwarzen
+ burg
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a68e62d-4ffe-4069-adc6-8895e88f2da0-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270131T225900Z
+SUMMARY:Eingabefrist: Planerleistungen SIA Phase 31- 33\, Wasserbauplan Kle
+ ine Aare\, Bödeli
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 31.01.
+ 2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/3a6
+ 8e62d-4ffe-4069-adc6-8895e88f2da0/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/3a68e62d-4ffe-4069-adc6-8895e88f2da0
+URL:https://auftragsregister.ch/de/auftrag/3a68e62d-4ffe-4069-adc6-8895e88f
+ 2da0/
+LOCATION:Unterseen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Planerleistungen SIA Phase 31- 33\, Wasserbauplan
+  Kleine Aare\, Bödeli
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

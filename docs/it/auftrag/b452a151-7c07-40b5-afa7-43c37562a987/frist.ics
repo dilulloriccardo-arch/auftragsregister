@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b452a151-7c07-40b5-afa7-43c37562a987-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Scadenza: Fenster aus Holz-Metall
+DESCRIPTION:Ente pubblico: Gemeindeverwaltung Horw\nScadenza: 17.12.2026\, 
+ 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/b452a151-7c07-
+ 40b5-afa7-43c37562a987/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/b452a151-7c07-40b5-afa7-43c37562a987
+URL:https://auftragsregister.ch/it/auftrag/b452a151-7c07-40b5-afa7-43c37562
+ a987/
+LOCATION:Horw
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Fenster aus Holz-Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

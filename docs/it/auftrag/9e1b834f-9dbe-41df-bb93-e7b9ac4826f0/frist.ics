@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9e1b834f-9dbe-41df-bb93-e7b9ac4826f0-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Scadenza: 24 Heizungsanlage
+DESCRIPTION:Ente pubblico: Stadt Wetzikon Immobilien\nScadenza: 21.12.2026\
+ , 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/9e1b834f-9db
+ e-41df-bb93-e7b9ac4826f0/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/9e1b834f-9dbe-41df-bb93-e7b9ac4826f0
+URL:https://auftragsregister.ch/it/auftrag/9e1b834f-9dbe-41df-bb93-e7b9ac48
+ 26f0/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 24 Heizungsanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

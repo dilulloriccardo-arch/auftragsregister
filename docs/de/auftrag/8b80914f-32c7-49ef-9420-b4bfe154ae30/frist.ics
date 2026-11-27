@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8b80914f-32c7-49ef-9420-b4bfe154ae30-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270125T100000Z
+SUMMARY:Eingabefrist: Groupement de mandataires avec pilote génie civil po
+ ur le projet Colocalisation de barres d'arrêt SUD
+DESCRIPTION:Auftraggeber: Genève Aéroport\nEingabefrist: 25.01.2027\, 11.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/8b80914f-32c7
+ -49ef-9420-b4bfe154ae30/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/8b80914f-32c7-49ef-9420-b4bfe154ae30
+URL:https://auftragsregister.ch/de/auftrag/8b80914f-32c7-49ef-9420-b4bfe154
+ ae30/
+LOCATION:GENEVE 15
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Groupement de mandataires avec pilote génie civi
+ l pour le projet Colocalisation de barres d'arrêt SUD
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

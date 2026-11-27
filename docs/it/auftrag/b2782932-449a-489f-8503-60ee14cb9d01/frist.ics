@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b2782932-449a-489f-8503-60ee14cb9d01-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270112T090000Z
+SUMMARY:Scadenza: DAO_O_6556-2025-166_Sécheron
+DESCRIPTION:Ente pubblico: Services industriels de Genève (SIG) - Directio
+ n Achats\nScadenza: 12.01.2027\, 10:00\nNel registro: https://auftragsregi
+ ster.ch/it/auftrag/b2782932-449a-489f-8503-60ee14cb9d01/\nPubblicazione uf
+ ficiale: https://www.simap.ch/it/project-detail/b2782932-449a-489f-8503-60
+ ee14cb9d01
+URL:https://auftragsregister.ch/it/auftrag/b2782932-449a-489f-8503-60ee14cb
+ 9d01/
+LOCATION:Sécheron
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: DAO_O_6556-2025-166_Sécheron
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

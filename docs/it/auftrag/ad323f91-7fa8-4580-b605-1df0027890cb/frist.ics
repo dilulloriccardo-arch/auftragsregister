@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ad323f91-7fa8-4580-b605-1df0027890cb-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270128T100000Z
+SUMMARY:Scadenza: Baumeisterarbeiten Regenbecken Melcher und Arealgestaltun
+ g alte ARA Elsau
+DESCRIPTION:Ente pubblico: Gemeinde Elsau\nScadenza: 28.01.2027\, 11:00\nNe
+ l registro: https://auftragsregister.ch/it/auftrag/ad323f91-7fa8-4580-b605
+ -1df0027890cb/\nPubblicazione ufficiale: https://www.simap.ch/it/project-d
+ etail/ad323f91-7fa8-4580-b605-1df0027890cb
+URL:https://auftragsregister.ch/it/auftrag/ad323f91-7fa8-4580-b605-1df00278
+ 90cb/
+LOCATION:Elsau
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Baumeisterarbeiten Regenbecken Melcher und Arealgesta
+ ltung alte ARA Elsau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ca7359f-5eb6-488e-b298-cf40e8d3d035-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Submission deadline: Wohnen am Stadtpark: BKP 281.5 Artificial Ston
+ e Flooring
+DESCRIPTION:Public buyer: Stadt Schlieren\, Bereich Liegenschaften\nSubmiss
+ ion deadline: 11 Jan 2027\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/0ca7359f-5eb6-488e-b298-cf40e8d3d035/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/0ca7359f-5eb6-488e-b298-cf40e
+ 8d3d035
+URL:https://auftragsregister.ch/en/auftrag/0ca7359f-5eb6-488e-b298-cf40e8d3
+ d035/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wohnen am Stadtpark: BKP 281.5 Artificial 
+ Stone Flooring
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

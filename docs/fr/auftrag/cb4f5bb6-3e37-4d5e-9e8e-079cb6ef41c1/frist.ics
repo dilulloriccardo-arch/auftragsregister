@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb4f5bb6-3e37-4d5e-9e8e-079cb6ef41c1-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Délai de remise : Sanierung Primarschule Kleinhüningen - BKP 22
+ 7/ 285.1 Äussere und Innere Oberflächenbehandlungen
+DESCRIPTION:Acheteur public : Bau- und Verkehrsdepartement des Kantons Ba
+ sel-Stadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\n
+ Délai de remise : 11.01.2027\, 12 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/cb4f5bb6-3e37-4d5e-9e8e-079cb6ef41c1/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/cb4f5bb6-3
+ e37-4d5e-9e8e-079cb6ef41c1
+URL:https://auftragsregister.ch/fr/auftrag/cb4f5bb6-3e37-4d5e-9e8e-079cb6ef
+ 41c1/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sanierung Primarschule Kleinhüningen - BK
+ P 227/ 285.1 Äussere und Innere Oberflächenbehandlungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

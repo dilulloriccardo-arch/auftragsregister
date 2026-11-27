@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:863fb4e7-8eb3-4bd3-94c6-6543240ea366-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Délai de remise : 25 Sanitärinstallationen
+DESCRIPTION:Acheteur public : Stadt Wetzikon Immobilien\nDélai de remise
+  : 21.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/863fb4e7-8eb3-4bd3-94c6-6543240ea366/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/863fb4e7-8eb3-4bd3-94c6-65
+ 43240ea366
+URL:https://auftragsregister.ch/fr/auftrag/863fb4e7-8eb3-4bd3-94c6-6543240e
+ a366/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 25 Sanitärinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:43142f02-8f43-44f3-af1a-db4ccc289a59-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Délai de remise : CPC 228.2 Systèmes de protection solaire\, Th
+ un Polygon\, rénovation de l'enveloppe du bâtiment et des installations 
+ techniques
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  12.01.2027\nDans le registre : https://auftragsregister.ch/fr/auftrag/4
+ 3142f02-8f43-44f3-af1a-db4ccc289a59/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/43142f02-8f43-44f3-af1a-db4ccc289a59
+URL:https://auftragsregister.ch/fr/auftrag/43142f02-8f43-44f3-af1a-db4ccc28
+ 9a59/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CPC 228.2 Systèmes de protection solaire\
+ , Thun Polygon\, rénovation de l'enveloppe du bâtiment et des installati
+ ons techniques
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

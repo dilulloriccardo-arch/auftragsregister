@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:af8c10b7-780a-4156-bce3-d99e6e0d34d3-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270125T225900Z
+SUMMARY:Submission deadline: N03\, MP-090063\, EP Verzw. Augst - Rheinfelde
+ n sowie N02\, MP-090050 EP Verzw. Augst - Sissach / Fachmandat Verfahrensi
+ ngenieur SABA
+DESCRIPTION:Public buyer: Eidgenössisches Departement für Umwelt\, Verkeh
+ r\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung S
+ trasseninfrastruktur-Ost - F3\nSubmission deadline: 25 Jan 2027\, 23:59\
+ nIn the register: https://auftragsregister.ch/en/auftrag/af8c10b7-780a-415
+ 6-bce3-d99e6e0d34d3/\nOfficial publication: https://www.simap.ch/en/projec
+ t-detail/af8c10b7-780a-4156-bce3-d99e6e0d34d3
+URL:https://auftragsregister.ch/en/auftrag/af8c10b7-780a-4156-bce3-d99e6e0d
+ 34d3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: N03\, MP-090063\, EP Verzw. Augst - Rheinf
+ elden sowie N02\, MP-090050 EP Verzw. Augst - Sissach / Fachmandat Verfahr
+ ensingenieur SABA
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

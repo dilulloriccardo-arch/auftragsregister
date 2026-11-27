@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6af6358b-55a3-45c8-886e-8acf3168ff2d-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Délai de remise : École Moosmatt Lucerne\, rénovation complèt
+ e et extension\, BKP 233 Éclairage et luminaires – Bâtiment existant
+DESCRIPTION:Acheteur public : Stadt Luzern\, Baudirektion\, Immobilien\nD
+ élai de remise : 11.01.2027\, 12 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/6af6358b-55a3-45c8-886e-8acf3168ff2d/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/6af6358b-55
+ a3-45c8-886e-8acf3168ff2d
+URL:https://auftragsregister.ch/fr/auftrag/6af6358b-55a3-45c8-886e-8acf3168
+ ff2d/
+LOCATION:Luzern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : École Moosmatt Lucerne\, rénovation comp
+ lète et extension\, BKP 233 Éclairage et luminaires – Bâtiment exista
+ nt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

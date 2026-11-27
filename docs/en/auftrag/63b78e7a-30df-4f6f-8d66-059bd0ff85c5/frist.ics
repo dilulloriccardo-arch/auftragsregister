@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:63b78e7a-30df-4f6f-8d66-059bd0ff85c5-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270302T140000Z
+SUMMARY:Submission deadline: Neubau Klinikum 2\, Phase 1\, SKP 346\, Kälte
+  & Kühlräume
+DESCRIPTION:Public buyer: Universitätsspital Basel\nSubmission deadline: 2
+  Mar 2027\, 15:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/63b78e7a-30df-4f6f-8d66-059bd0ff85c5/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/63b78e7a-30df-4f6f-8d66-059bd0ff85c5
+URL:https://auftragsregister.ch/en/auftrag/63b78e7a-30df-4f6f-8d66-059bd0ff
+ 85c5/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Klinikum 2\, Phase 1\, SKP 346\, K
+ älte & Kühlräume
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dca5538f-ff2d-4fc3-8058-0e3481a58682-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Submission deadline: Replacement of UCC Infrastructure
+DESCRIPTION:Public buyer: Schweizerische Epilepsie Stiftung\nSubmission dea
+ dline: 22 Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch
+ /en/auftrag/dca5538f-ff2d-4fc3-8058-0e3481a58682/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/dca5538f-ff2d-4fc3-8058-0e3481a58682
+URL:https://auftragsregister.ch/en/auftrag/dca5538f-ff2d-4fc3-8058-0e3481a5
+ 8682/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Replacement of UCC Infrastructure
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

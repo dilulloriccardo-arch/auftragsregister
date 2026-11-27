@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c327e94e-bcb6-4a7a-b006-048e06e37b68-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270121T225900Z
+SUMMARY:Eingabefrist: Baumeister Instandsetzung Lehnenbrücke Guntenstutz 3
+ \, Sigriswil
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 21.01.
+ 2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c32
+ 7e94e-bcb6-4a7a-b006-048e06e37b68/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/c327e94e-bcb6-4a7a-b006-048e06e37b68
+URL:https://auftragsregister.ch/de/auftrag/c327e94e-bcb6-4a7a-b006-048e06e3
+ 7b68/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Baumeister Instandsetzung Lehnenbrücke Guntenstu
+ tz 3\, Sigriswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

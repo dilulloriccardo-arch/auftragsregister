@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6ffb288c-f595-4a8b-bda1-f52097c7ba77-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261222T150000Z
+SUMMARY:Submission deadline: Neubau Hauptsitz EWN: Baumeisterarbeiten BKP 2
+ 11.5
+DESCRIPTION:Public buyer: Kantonales Elektrizitätswerk Nidwalden\nSubmissi
+ on deadline: 22 Dec 2026\, 16:00\nIn the register: https://auftragsregis
+ ter.ch/en/auftrag/6ffb288c-f595-4a8b-bda1-f52097c7ba77/\nOfficial publicat
+ ion: https://www.simap.ch/en/project-detail/6ffb288c-f595-4a8b-bda1-f52097
+ c7ba77
+URL:https://auftragsregister.ch/en/auftrag/6ffb288c-f595-4a8b-bda1-f52097c7
+ ba77/
+LOCATION:Buochs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Neubau Hauptsitz EWN: Baumeisterarbeiten B
+ KP 211.5
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

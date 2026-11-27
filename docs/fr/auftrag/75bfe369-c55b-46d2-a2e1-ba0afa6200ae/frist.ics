@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:75bfe369-c55b-46d2-a2e1-ba0afa6200ae-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270119T140000Z
+SUMMARY:Délai de remise : 1301 BKP 227.1 Äussere Malerarbeiten\, Pädag
+ ogische Maturitätsschule Kreuzlingen
+DESCRIPTION:Acheteur public : Kantonales Hochbauamt Thurgau\nDélai de re
+ mise : 19.01.2027\, 15 h 00\nDans le registre : https://auftragsre
+ gister.ch/fr/auftrag/75bfe369-c55b-46d2-a2e1-ba0afa6200ae/\nPublication of
+ ficielle : https://www.simap.ch/fr/project-detail/75bfe369-c55b-46d2-a2e
+ 1-ba0afa6200ae
+URL:https://auftragsregister.ch/fr/auftrag/75bfe369-c55b-46d2-a2e1-ba0afa62
+ 00ae/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 1301 BKP 227.1 Äussere Malerarbeiten\, P
+ ädagogische Maturitätsschule Kreuzlingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

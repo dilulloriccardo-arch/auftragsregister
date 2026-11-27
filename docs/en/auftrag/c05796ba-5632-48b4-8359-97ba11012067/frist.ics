@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c05796ba-5632-48b4-8359-97ba11012067-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Submission deadline: Wohnen am Stadtpark: BKP 281.2 Linoleum\, Parq
+ uet and Carpet Flooring
+DESCRIPTION:Public buyer: Stadt Schlieren\, Bereich Liegenschaften\nSubmiss
+ ion deadline: 11 Jan 2027\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/c05796ba-5632-48b4-8359-97ba11012067/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/c05796ba-5632-48b4-8359-97ba1
+ 1012067
+URL:https://auftragsregister.ch/en/auftrag/c05796ba-5632-48b4-8359-97ba1101
+ 2067/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wohnen am Stadtpark: BKP 281.2 Linoleum\, 
+ Parquet and Carpet Flooring
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6ffb288c-f595-4a8b-bda1-f52097c7ba77-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261222T150000Z
+SUMMARY:Délai de remise : Nouveau siège social d'EWN : travaux de maço
+ nnerie CFC 211.5
+DESCRIPTION:Acheteur public : Kantonales Elektrizitätswerk Nidwalden\nD
+ élai de remise : 22.12.2026\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/6ffb288c-f595-4a8b-bda1-f52097c7ba77/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/6ffb288c-f5
+ 95-4a8b-bda1-f52097c7ba77
+URL:https://auftragsregister.ch/fr/auftrag/6ffb288c-f595-4a8b-bda1-f52097c7
+ ba77/
+LOCATION:Buochs
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Nouveau siège social d'EWN : travaux de m
+ açonnerie CFC 211.5
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

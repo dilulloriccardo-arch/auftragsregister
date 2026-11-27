@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb9f2f43-9e90-4a8f-9744-0f181e043b31-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270215T115900Z
+SUMMARY:Scadenza: Ausschreibung Los B.06 Holzbau / Fenster-Holz-Metall
+DESCRIPTION:Ente pubblico: Schweizerische Südostbahn AG (SOB) F&S-LOG-E\nS
+ cadenza: 15.02.2027\, 12:59\nNel registro: https://auftragsregister.ch/it/
+ auftrag/eb9f2f43-9e90-4a8f-9744-0f181e043b31/\nPubblicazione ufficiale: ht
+ tps://www.simap.ch/it/project-detail/eb9f2f43-9e90-4a8f-9744-0f181e043b31
+URL:https://auftragsregister.ch/it/auftrag/eb9f2f43-9e90-4a8f-9744-0f181e04
+ 3b31/
+LOCATION:Wattwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ausschreibung Los B.06 Holzbau / Fenster-Holz-Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

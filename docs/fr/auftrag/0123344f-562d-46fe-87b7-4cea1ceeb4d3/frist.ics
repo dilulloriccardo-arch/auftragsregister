@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0123344f-562d-46fe-87b7-4cea1ceeb4d3-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270219T225900Z
+SUMMARY:Délai de remise : Murgenthal IO\, K101\; arrêt de bus conforme 
+ à la loi sur l'égalité des personnes handicapées (BehiG) et réfection
+  du revêtement de la gare
+DESCRIPTION:Acheteur public : Abteilung Tiefbau (ATB)\nDélai de remise
+  : 19.02.2027\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/0123344f-562d-46fe-87b7-4cea1ceeb4d3/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/0123344f-562d-46fe-87b7-4c
+ ea1ceeb4d3
+URL:https://auftragsregister.ch/fr/auftrag/0123344f-562d-46fe-87b7-4cea1cee
+ b4d3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Murgenthal IO\, K101\; arrêt de bus confo
+ rme à la loi sur l'égalité des personnes handicapées (BehiG) et réfec
+ tion du revêtement de la gare
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

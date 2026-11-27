@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:64311b7e-31e2-482d-896d-5036dedab783-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270119T130000Z
+SUMMARY:Scadenza: KS B\, Buonaserstrasse\, Gemeinde Risch\, Kreisel Dorfmat
+ t
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Zug\nScadenza: 19.01.2027
+ \, 14:00\nNel registro: https://auftragsregister.ch/it/auftrag/64311b7e-31
+ e2-482d-896d-5036dedab783/\nPubblicazione ufficiale: https://www.simap.ch/
+ it/project-detail/64311b7e-31e2-482d-896d-5036dedab783
+URL:https://auftragsregister.ch/it/auftrag/64311b7e-31e2-482d-896d-5036deda
+ b783/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: KS B\, Buonaserstrasse\, Gemeinde Risch\, Kreisel Dor
+ fmatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

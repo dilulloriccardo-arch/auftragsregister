@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18edf5a5-2aff-44ed-9feb-168a73fe8d5e-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Scadenza: Travaux de génie civil pour la construction du Torrent d
+ e Montagnon-Chaudanne amont
+DESCRIPTION:Ente pubblico: Gaetan dubuis\nScadenza: 17.12.2026\nNel registr
+ o: https://auftragsregister.ch/it/auftrag/18edf5a5-2aff-44ed-9feb-168a73fe
+ 8d5e/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/18e
+ df5a5-2aff-44ed-9feb-168a73fe8d5e
+URL:https://auftragsregister.ch/it/auftrag/18edf5a5-2aff-44ed-9feb-168a73fe
+ 8d5e/
+LOCATION:Leytron
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Travaux de génie civil pour la construction du Torre
+ nt de Montagnon-Chaudanne amont
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

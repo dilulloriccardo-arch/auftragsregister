@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eeeb3b51-c68d-449a-8ae0-c8ca022b29bf-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270209T110000Z
+SUMMARY:Délai de remise : Appel d'offres Lot B.18 Installations CVC
+DESCRIPTION:Acheteur public : Schweizerische Südostbahn AG (SOB) F&S-LOG
+ -E\nDélai de remise : 09.02.2027\, 12 h 00\nDans le registre : ht
+ tps://auftragsregister.ch/fr/auftrag/eeeb3b51-c68d-449a-8ae0-c8ca022b29bf/
+ \nPublication officielle : https://www.simap.ch/fr/project-detail/eeeb3b
+ 51-c68d-449a-8ae0-c8ca022b29bf
+URL:https://auftragsregister.ch/fr/auftrag/eeeb3b51-c68d-449a-8ae0-c8ca022b
+ 29bf/
+LOCATION:Wattwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offres Lot B.18 Installations CVC
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

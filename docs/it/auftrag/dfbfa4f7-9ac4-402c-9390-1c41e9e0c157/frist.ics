@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dfbfa4f7-9ac4-402c-9390-1c41e9e0c157-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Scadenza: BKP 287 Baureinigung\, Thun Polygon\, Sanierung Gebäudeh
+ ülle Haustechnik
+DESCRIPTION:Ente pubblico: armasuisse Immobilien\nScadenza: 12.01.2027\nNel
+  registro: https://auftragsregister.ch/it/auftrag/dfbfa4f7-9ac4-402c-9390-
+ 1c41e9e0c157/\nPubblicazione ufficiale: https://www.simap.ch/it/project-de
+ tail/dfbfa4f7-9ac4-402c-9390-1c41e9e0c157
+URL:https://auftragsregister.ch/it/auftrag/dfbfa4f7-9ac4-402c-9390-1c41e9e0
+ c157/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 287 Baureinigung\, Thun Polygon\, Sanierung Gebä
+ udehülle Haustechnik
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

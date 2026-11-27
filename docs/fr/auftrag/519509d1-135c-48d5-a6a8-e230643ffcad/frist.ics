@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:519509d1-135c-48d5-a6a8-e230643ffcad-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Délai de remise : Mandat de gestion pour la ville d'Adliswil
+DESCRIPTION:Acheteur public : Stadt Adliswil Planung Werke (Holinger AG)\
+ nDélai de remise : 15.01.2027\, 16 h 00\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/519509d1-135c-48d5-a6a8-e230643ffcad/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/519509d1-
+ 135c-48d5-a6a8-e230643ffcad
+URL:https://auftragsregister.ch/fr/auftrag/519509d1-135c-48d5-a6a8-e230643f
+ fcad/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Mandat de gestion pour la ville d'Adliswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

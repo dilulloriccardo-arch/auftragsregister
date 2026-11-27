@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:06d676b1-239a-4c7a-a364-acfc87810bcc-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270120T150000Z
+SUMMARY:Délai de remise : BAV 27635 Wohnsiedlung Harsplen Witikon\, Neub
+ au - CFC 175 Etanchement des ouvrages enterrés
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 20.01.2027\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/06d676b1-239a-4c7a-a364-acfc87810bcc/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/06d676b1-239a-4c7a-a
+ 364-acfc87810bcc
+URL:https://auftragsregister.ch/fr/auftrag/06d676b1-239a-4c7a-a364-acfc8781
+ 0bcc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 27635 Wohnsiedlung Harsplen Witikon\, 
+ Neubau - CFC 175 Etanchement des ouvrages enterrés
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

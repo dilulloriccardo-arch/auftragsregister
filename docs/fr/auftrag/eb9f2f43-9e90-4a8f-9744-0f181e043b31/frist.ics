@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb9f2f43-9e90-4a8f-9744-0f181e043b31-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270215T115900Z
+SUMMARY:Délai de remise : Appel d'offres Lot B.06 Construction en bois /
+  Fenêtres en bois et métal
+DESCRIPTION:Acheteur public : Schweizerische Südostbahn AG (SOB) F&S-LOG
+ -E\nDélai de remise : 15.02.2027\, 12 h 59\nDans le registre : ht
+ tps://auftragsregister.ch/fr/auftrag/eb9f2f43-9e90-4a8f-9744-0f181e043b31/
+ \nPublication officielle : https://www.simap.ch/fr/project-detail/eb9f2f
+ 43-9e90-4a8f-9744-0f181e043b31
+URL:https://auftragsregister.ch/fr/auftrag/eb9f2f43-9e90-4a8f-9744-0f181e04
+ 3b31/
+LOCATION:Wattwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offres Lot B.06 Construction en bo
+ is / Fenêtres en bois et métal
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

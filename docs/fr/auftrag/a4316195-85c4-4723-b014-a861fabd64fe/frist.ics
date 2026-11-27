@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a4316195-85c4-4723-b014-a861fabd64fe-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261218T225500Z
+SUMMARY:Délai de remise : Bushaltestellen 2027\, Los 1
+DESCRIPTION:Acheteur public : Stadt Chur\, Tiefbaudienste\nDélai de remi
+ se : 18.12.2026\, 23 h 55\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/a4316195-85c4-4723-b014-a861fabd64fe/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/a4316195-85c4-4723-b014-
+ a861fabd64fe
+URL:https://auftragsregister.ch/fr/auftrag/a4316195-85c4-4723-b014-a861fabd
+ 64fe/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Bushaltestellen 2027\, Los 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8f3aa1ed-d7ed-48f9-b6b2-6435136cfad7-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270226T225900Z
+SUMMARY:Scadenza: P21.0442 – Bern\, KAPO\, Bahnhofplatz 10\, Mieterausbau
+  - Elektroanlagen
+DESCRIPTION:Ente pubblico: Amt für Grundstücke und Gebäude des Kantons B
+ ern (AGG)\nScadenza: 26.02.2027\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/8f3aa1ed-d7ed-48f9-b6b2-6435136cfad7/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/8f3aa1ed-d7ed-48f9-b6b2-6
+ 435136cfad7
+URL:https://auftragsregister.ch/it/auftrag/8f3aa1ed-d7ed-48f9-b6b2-6435136c
+ fad7/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: P21.0442 – Bern\, KAPO\, Bahnhofplatz 10\, Mieterau
+ sbau - Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7057ba66-5fb7-4e60-a4d7-4e2cd3cf14f1-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270208T225900Z
+SUMMARY:Eingabefrist: (b26057-4) Affoltern a. A.\, Lindenmoosstrasse\, Etap
+ pe 2\, Erweiterung Sammlungszentrum SNM / BKP 224
+DESCRIPTION:Auftraggeber: Bundesamt für Bauten und Logistik BBL\nEingabefr
+ ist: 08.02.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/
+ auftrag/7057ba66-5fb7-4e60-a4d7-4e2cd3cf14f1/\nAmtliche Publikation: https
+ ://www.simap.ch/de/project-detail/7057ba66-5fb7-4e60-a4d7-4e2cd3cf14f1
+URL:https://auftragsregister.ch/de/auftrag/7057ba66-5fb7-4e60-a4d7-4e2cd3cf
+ 14f1/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: (b26057-4) Affoltern a. A.\, Lindenmoosstrasse\, 
+ Etappe 2\, Erweiterung Sammlungszentrum SNM / BKP 224
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

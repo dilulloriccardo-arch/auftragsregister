@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:08f486d9-a0ae-465e-91de-45d50c5f5395-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270215T110000Z
+SUMMARY:Eingabefrist: Ausschreibung Los B.04 Stahlbau (Gleishalle + Unterst
+ ände)
+DESCRIPTION:Auftraggeber: Schweizerische Südostbahn AG (SOB) F&S-LOG-E\nEi
+ ngabefrist: 15.02.2027\, 12.00 Uhr\nIm Register: https://auftragsregister
+ .ch/de/auftrag/08f486d9-a0ae-465e-91de-45d50c5f5395/\nAmtliche Publikation
+ : https://www.simap.ch/de/project-detail/08f486d9-a0ae-465e-91de-45d50c5f5
+ 395
+URL:https://auftragsregister.ch/de/auftrag/08f486d9-a0ae-465e-91de-45d50c5f
+ 5395/
+LOCATION:Wattwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ausschreibung Los B.04 Stahlbau (Gleishalle + Unt
+ erstände)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

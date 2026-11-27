@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ebb492a-f4c1-4915-98a2-5d9fbd890b92-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270120T225900Z
+SUMMARY:Délai de remise : IMPACT / HIMB – Lieferung von Stahlplatten u
+ nd bearbeiteten Stahlkomponenten
+DESCRIPTION:Acheteur public : Paul Scherrer Institut (PSI)\nDélai de rem
+ ise : 20.01.2027\, 23 h 59\nDans le registre : https://auftragsreg
+ ister.ch/fr/auftrag/8ebb492a-f4c1-4915-98a2-5d9fbd890b92/\nPublication off
+ icielle : https://www.simap.ch/fr/project-detail/8ebb492a-f4c1-4915-98a2
+ -5d9fbd890b92
+URL:https://auftragsregister.ch/fr/auftrag/8ebb492a-f4c1-4915-98a2-5d9fbd89
+ 0b92/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : IMPACT / HIMB – Lieferung von Stahlplatt
+ en und bearbeiteten Stahlkomponenten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

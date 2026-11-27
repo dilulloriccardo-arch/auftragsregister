@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e79e2f01-86c4-4312-91c2-efe76cabef72-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270204T150000Z
+SUMMARY:Scadenza: BAV 83173 SA Hirschengraben\, Umbau Tagesschule - BKP 211
+  Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 04.02
+ .2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/e79e2f
+ 01-86c4-4312-91c2-efe76cabef72/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/e79e2f01-86c4-4312-91c2-efe76cabef72
+URL:https://auftragsregister.ch/it/auftrag/e79e2f01-86c4-4312-91c2-efe76cab
+ ef72/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 83173 SA Hirschengraben\, Umbau Tagesschule - BKP
+  211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fef4bd02-a16a-42c6-b92f-42acfcb98d14-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T090000Z
+SUMMARY:Submission deadline: Kultur- und Sporthalle Murten - 201 Baugrube i
+ nkl. Spezialtiefbau & Abbruch Bestand
+DESCRIPTION:Public buyer: Murten · Liegenschaftsverwaltung\nSubmission dea
+ dline: 22 Jan 2027\, 10:00\nIn the register: https://auftragsregister.ch
+ /en/auftrag/fef4bd02-a16a-42c6-b92f-42acfcb98d14/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/fef4bd02-a16a-42c6-b92f-42acfcb98d14
+URL:https://auftragsregister.ch/en/auftrag/fef4bd02-a16a-42c6-b92f-42acfcb9
+ 8d14/
+LOCATION:Murten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kultur- und Sporthalle Murten - 201 Baugru
+ be inkl. Spezialtiefbau & Abbruch Bestand
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

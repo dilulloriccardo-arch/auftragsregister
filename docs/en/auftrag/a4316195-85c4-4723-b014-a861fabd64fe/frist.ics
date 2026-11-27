@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a4316195-85c4-4723-b014-a861fabd64fe-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261218T225500Z
+SUMMARY:Submission deadline: Bushaltestellen 2027\, Los 1
+DESCRIPTION:Public buyer: Stadt Chur\, Tiefbaudienste\nSubmission deadline:
+  18 Dec 2026\, 23:55\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/a4316195-85c4-4723-b014-a861fabd64fe/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/a4316195-85c4-4723-b014-a861fabd64fe
+URL:https://auftragsregister.ch/en/auftrag/a4316195-85c4-4723-b014-a861fabd
+ 64fe/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bushaltestellen 2027\, Los 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8b80914f-32c7-49ef-9420-b4bfe154ae30-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270125T100000Z
+SUMMARY:Scadenza: Groupement de mandataires avec pilote génie civil pour l
+ e projet Colocalisation de barres d'arrêt SUD
+DESCRIPTION:Ente pubblico: Genève Aéroport\nScadenza: 25.01.2027\, 11:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/8b80914f-32c7-49ef-9
+ 420-b4bfe154ae30/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/8b80914f-32c7-49ef-9420-b4bfe154ae30
+URL:https://auftragsregister.ch/it/auftrag/8b80914f-32c7-49ef-9420-b4bfe154
+ ae30/
+LOCATION:GENEVE 15
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Groupement de mandataires avec pilote génie civil po
+ ur le projet Colocalisation de barres d'arrêt SUD
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:145465b7-f29b-4bae-8683-e584eeef7ba6-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261221T103000Z
+SUMMARY:Submission deadline: Ausbau Güterstrasse LuthernBad - HinterEy\, 6
+ 156 Luthern
+DESCRIPTION:Public buyer: Gemeinde Luthern (PlanQuadrat AG\, Bauingenieure 
+ + Planer)\nSubmission deadline: 21 Dec 2026\, 11:30\nIn the register: ht
+ tps://auftragsregister.ch/en/auftrag/145465b7-f29b-4bae-8683-e584eeef7ba6/
+ \nOfficial publication: https://www.simap.ch/en/project-detail/145465b7-f2
+ 9b-4bae-8683-e584eeef7ba6
+URL:https://auftragsregister.ch/en/auftrag/145465b7-f29b-4bae-8683-e584eeef
+ 7ba6/
+LOCATION:Luthern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausbau Güterstrasse LuthernBad - HinterEy
+ \, 6156 Luthern
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8f3aa1ed-d7ed-48f9-b6b2-6435136cfad7-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270226T225900Z
+SUMMARY:Eingabefrist: P21.0442 – Bern\, KAPO\, Bahnhofplatz 10\, Mieterau
+ sbau - Elektroanlagen
+DESCRIPTION:Auftraggeber: Amt für Grundstücke und Gebäude des Kantons Be
+ rn (AGG)\nEingabefrist: 26.02.2027\, 23.59 Uhr\nIm Register: https://auft
+ ragsregister.ch/de/auftrag/8f3aa1ed-d7ed-48f9-b6b2-6435136cfad7/\nAmtliche
+  Publikation: https://www.simap.ch/de/project-detail/8f3aa1ed-d7ed-48f9-b6
+ b2-6435136cfad7
+URL:https://auftragsregister.ch/de/auftrag/8f3aa1ed-d7ed-48f9-b6b2-6435136c
+ fad7/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: P21.0442 – Bern\, KAPO\, Bahnhofplatz 10\, Miet
+ erausbau - Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

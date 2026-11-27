@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:be55ada1-1f78-428a-8b9d-a789fe9cc54c-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270118T225900Z
+SUMMARY:Eingabefrist: Unterbortstrasse Saanen - Erstellung Böschungsstütz
+ mauer inkl. neuer Entwässerungsleitung
+DESCRIPTION:Auftraggeber: Einwohnergemeinde Saanen\nEingabefrist: 18.01.202
+ 7\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/be55ad
+ a1-1f78-428a-8b9d-a789fe9cc54c/\nAmtliche Publikation: https://www.simap.c
+ h/de/project-detail/be55ada1-1f78-428a-8b9d-a789fe9cc54c
+URL:https://auftragsregister.ch/de/auftrag/be55ada1-1f78-428a-8b9d-a789fe9c
+ c54c/
+LOCATION:Saanen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Unterbortstrasse Saanen - Erstellung Böschungsst
+ ützmauer inkl. neuer Entwässerungsleitung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

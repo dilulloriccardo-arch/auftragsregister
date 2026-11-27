@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4c8d1ec4-c6fd-4a57-a40b-fcad26689c6e-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T090000Z
+SUMMARY:Scadenza: Kultur- und Sporthalle Murten - 230 Elektroanlagen
+DESCRIPTION:Ente pubblico: Murten · Liegenschaftsverwaltung\nScadenza: 22.
+ 01.2027\, 10:00\nNel registro: https://auftragsregister.ch/it/auftrag/4c8d
+ 1ec4-c6fd-4a57-a40b-fcad26689c6e/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/4c8d1ec4-c6fd-4a57-a40b-fcad26689c6e
+URL:https://auftragsregister.ch/it/auftrag/4c8d1ec4-c6fd-4a57-a40b-fcad2668
+ 9c6e/
+LOCATION:Murten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Kultur- und Sporthalle Murten - 230 Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

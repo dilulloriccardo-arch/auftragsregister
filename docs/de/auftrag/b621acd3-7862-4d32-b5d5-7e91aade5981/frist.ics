@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b621acd3-7862-4d32-b5d5-7e91aade5981-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Eingabefrist: 23 Elektroinstallationen
+DESCRIPTION:Auftraggeber: Stadt Wetzikon Immobilien\nEingabefrist: 21.12.20
+ 26\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b621a
+ cd3-7862-4d32-b5d5-7e91aade5981/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/b621acd3-7862-4d32-b5d5-7e91aade5981
+URL:https://auftragsregister.ch/de/auftrag/b621acd3-7862-4d32-b5d5-7e91aade
+ 5981/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 23 Elektroinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

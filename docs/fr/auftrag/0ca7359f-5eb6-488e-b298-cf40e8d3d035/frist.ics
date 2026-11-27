@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ca7359f-5eb6-488e-b298-cf40e8d3d035-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Délai de remise : Wohnen am Stadtpark: BKP 281.5 Bodenbeläge au
+ s Kunststein
+DESCRIPTION:Acheteur public : Stadt Schlieren\, Bereich Liegenschaften\nD
+ élai de remise : 11.01.2027\, 16 h 00\nDans le registre : https:/
+ /auftragsregister.ch/fr/auftrag/0ca7359f-5eb6-488e-b298-cf40e8d3d035/\nPub
+ lication officielle : https://www.simap.ch/fr/project-detail/0ca7359f-5e
+ b6-488e-b298-cf40e8d3d035
+URL:https://auftragsregister.ch/fr/auftrag/0ca7359f-5eb6-488e-b298-cf40e8d3
+ d035/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Wohnen am Stadtpark: BKP 281.5 Bodenbeläg
+ e aus Kunststein
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

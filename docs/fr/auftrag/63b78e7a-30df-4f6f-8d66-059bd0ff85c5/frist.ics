@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:63b78e7a-30df-4f6f-8d66-059bd0ff85c5-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270302T140000Z
+SUMMARY:Délai de remise : Construction du nouveau centre hospitalier 2\,
+  phase 1\, SKP 346\, froid et chambres froides
+DESCRIPTION:Acheteur public : Universitätsspital Basel\nDélai de remise
+  : 02.03.2027\, 15 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/63b78e7a-30df-4f6f-8d66-059bd0ff85c5/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/63b78e7a-30df-4f6f-8d66-05
+ 9bd0ff85c5
+URL:https://auftragsregister.ch/fr/auftrag/63b78e7a-30df-4f6f-8d66-059bd0ff
+ 85c5/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction du nouveau centre hospitalier
+  2\, phase 1\, SKP 346\, froid et chambres froides
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

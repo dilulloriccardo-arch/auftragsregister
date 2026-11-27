@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4e76fafe-ade1-4875-aa22-f3ca00e51820-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270106T225900Z
+SUMMARY:Délai de remise : Porte-engins à quatre roues motrices d'au moi
+ ns 290 PS\, empattement d'environ 3 200 mm\, poids total d'environ 14 t\, 
+ plate-forme de chargement
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 06.01.2027\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/4e76fafe-ade1-4875-aa22-f3ca00e51820/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/4e76fafe-ade1-4875-aa22-
+ f3ca00e51820
+URL:https://auftragsregister.ch/fr/auftrag/4e76fafe-ade1-4875-aa22-f3ca00e5
+ 1820/
+LOCATION:Spiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Porte-engins à quatre roues motrices d'au
+  moins 290 PS\, empattement d'environ 3 200 mm\, poids total d'environ 14 
+ t\, plate-forme de chargement
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

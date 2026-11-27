@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b9a32a09-18ee-400b-b0ab-08135561cfe9-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T090000Z
+SUMMARY:Délai de remise : Salle culturelle et sportive de Morat – 379 
+ Équipements scéniques
+DESCRIPTION:Acheteur public : Murten · Liegenschaftsverwaltung\nDélai d
+ e remise : 22.01.2027\, 10 h 00\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/b9a32a09-18ee-400b-b0ab-08135561cfe9/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/b9a32a09-18ee-400b
+ -b0ab-08135561cfe9
+URL:https://auftragsregister.ch/fr/auftrag/b9a32a09-18ee-400b-b0ab-08135561
+ cfe9/
+LOCATION:Murten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Salle culturelle et sportive de Morat – 
+ 379 Équipements scéniques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

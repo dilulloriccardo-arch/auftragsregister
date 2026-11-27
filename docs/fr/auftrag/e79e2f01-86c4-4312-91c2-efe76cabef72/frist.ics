@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e79e2f01-86c4-4312-91c2-efe76cabef72-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270204T150000Z
+SUMMARY:Délai de remise : BAV 83173 SA Hirschengraben\, Umbau Tagesschul
+ e - BKP 211 Baumeisterarbeiten
+DESCRIPTION:Acheteur public : HBD - Amt für Hochbauten (AHB)\nDélai de 
+ remise : 04.02.2027\, 16 h 00\nDans le registre : https://auftrags
+ register.ch/fr/auftrag/e79e2f01-86c4-4312-91c2-efe76cabef72/\nPublication 
+ officielle : https://www.simap.ch/fr/project-detail/e79e2f01-86c4-4312-9
+ 1c2-efe76cabef72
+URL:https://auftragsregister.ch/fr/auftrag/e79e2f01-86c4-4312-91c2-efe76cab
+ ef72/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BAV 83173 SA Hirschengraben\, Umbau Tagess
+ chule - BKP 211 Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

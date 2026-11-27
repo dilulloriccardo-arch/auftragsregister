@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c4cb0e0f-f74b-49b1-8d2d-ef98057746f3-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T090000Z
+SUMMARY:Délai de remise : Salle culturelle et sportive de Morat – 250 
+ Installations sanitaires
+DESCRIPTION:Acheteur public : Murten · Liegenschaftsverwaltung\nDélai d
+ e remise : 22.01.2027\, 10 h 00\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/c4cb0e0f-f74b-49b1-8d2d-ef98057746f3/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/c4cb0e0f-f74b-49b1
+ -8d2d-ef98057746f3
+URL:https://auftragsregister.ch/fr/auftrag/c4cb0e0f-f74b-49b1-8d2d-ef980577
+ 46f3/
+LOCATION:Murten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Salle culturelle et sportive de Morat – 
+ 250 Installations sanitaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

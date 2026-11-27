@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eeeb3b51-c68d-449a-8ae0-c8ca022b29bf-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270209T110000Z
+SUMMARY:Submission deadline: Ausschreibung Los B.18 HLK-Anlagen
+DESCRIPTION:Public buyer: Schweizerische Südostbahn AG (SOB) F&S-LOG-E\nSu
+ bmission deadline: 9 Feb 2027\, 12:00\nIn the register: https://auftrags
+ register.ch/en/auftrag/eeeb3b51-c68d-449a-8ae0-c8ca022b29bf/\nOfficial pub
+ lication: https://www.simap.ch/en/project-detail/eeeb3b51-c68d-449a-8ae0-c
+ 8ca022b29bf
+URL:https://auftragsregister.ch/en/auftrag/eeeb3b51-c68d-449a-8ae0-c8ca022b
+ 29bf/
+LOCATION:Wattwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibung Los B.18 HLK-Anlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

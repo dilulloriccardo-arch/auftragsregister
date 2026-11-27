@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:06d676b1-239a-4c7a-a364-acfc87810bcc-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270120T150000Z
+SUMMARY:Scadenza: BAV 27635 Wohnsiedlung Harsplen Witikon\, Neubau - BKP 17
+ 5 Grundwasserabdichtungen
+DESCRIPTION:Ente pubblico: HBD - Amt für Hochbauten (AHB)\nScadenza: 20.01
+ .2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/06d676
+ b1-239a-4c7a-a364-acfc87810bcc/\nPubblicazione ufficiale: https://www.sima
+ p.ch/it/project-detail/06d676b1-239a-4c7a-a364-acfc87810bcc
+URL:https://auftragsregister.ch/it/auftrag/06d676b1-239a-4c7a-a364-acfc8781
+ 0bcc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BAV 27635 Wohnsiedlung Harsplen Witikon\, Neubau - BK
+ P 175 Grundwasserabdichtungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

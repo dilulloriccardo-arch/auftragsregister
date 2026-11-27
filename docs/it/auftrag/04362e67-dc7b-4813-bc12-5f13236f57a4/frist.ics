@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:04362e67-dc7b-4813-bc12-5f13236f57a4-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270125T110000Z
+SUMMARY:Scadenza: AO – tpg – Solution Evertrust Horizon – Gestion du 
+ cycle des certificats – Inventaire des certificats – Gestion centralis
+ ée des demandes\, renouvellements et révocations – Automatisation du d
+ éploiement et du renouvellement des certificats – Intégratio
+DESCRIPTION:Ente pubblico: Transport publics genevois (tpg)\nScadenza: 25.0
+ 1.2027\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/04362
+ e67-dc7b-4813-bc12-5f13236f57a4/\nPubblicazione ufficiale: https://www.sim
+ ap.ch/it/project-detail/04362e67-dc7b-4813-bc12-5f13236f57a4
+URL:https://auftragsregister.ch/it/auftrag/04362e67-dc7b-4813-bc12-5f13236f
+ 57a4/
+LOCATION:Grand-Lancy
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: AO – tpg – Solution Evertrust Horizon – Gestion
+  du cycle des certificats – Inventaire des certificats – Gestion centr
+ alisée des demandes\, renouvellements et révocations – Automatisation 
+ du déploiement et du renouvellement des certificats – Intégratio
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

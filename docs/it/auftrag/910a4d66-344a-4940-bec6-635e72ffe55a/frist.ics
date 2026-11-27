@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:910a4d66-344a-4940-bec6-635e72ffe55a-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270212T150000Z
+SUMMARY:Scadenza: 13785 / 285-02 Restaurator\, Kirche Grossmünster\, Insta
+ ndsetzung + Optimierung
+DESCRIPTION:Ente pubblico: Hochbauamt\, Baubereich A\nScadenza: 12.02.2027\
+ , 16:00\nNel registro: https://auftragsregister.ch/it/auftrag/910a4d66-344
+ a-4940-bec6-635e72ffe55a/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/910a4d66-344a-4940-bec6-635e72ffe55a
+URL:https://auftragsregister.ch/it/auftrag/910a4d66-344a-4940-bec6-635e72ff
+ e55a/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 13785 / 285-02 Restaurator\, Kirche Grossmünster\, I
+ nstandsetzung + Optimierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

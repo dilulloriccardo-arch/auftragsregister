@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b72b3ad8-86be-4f1d-b785-ebec588dc4cc-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261222T100000Z
+SUMMARY:Scadenza: Chilbergstrasse\, Sanierung\, 8376 Fischingen
+DESCRIPTION:Ente pubblico: Politische Gemeinde Fischingen\nScadenza: 22.12.
+ 2026\, 11:00\nNel registro: https://auftragsregister.ch/it/auftrag/b72b3ad
+ 8-86be-4f1d-b785-ebec588dc4cc/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/b72b3ad8-86be-4f1d-b785-ebec588dc4cc
+URL:https://auftragsregister.ch/it/auftrag/b72b3ad8-86be-4f1d-b785-ebec588d
+ c4cc/
+LOCATION:Fischingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Chilbergstrasse\, Sanierung\, 8376 Fischingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

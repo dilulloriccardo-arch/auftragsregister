@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c4a4de09-b387-4688-9189-1b8e496845c5-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261217T110000Z
+SUMMARY:Eingabefrist: Renouvellement Omnissa Horizon et composants associé
+ s
+DESCRIPTION:Auftraggeber: OCAS Office cantonal des assurances sociales\nEin
+ gabefrist: 17.12.2026\, 12.00 Uhr\nIm Register: https://auftragsregister.
+ ch/de/auftrag/c4a4de09-b387-4688-9189-1b8e496845c5/\nAmtliche Publikation:
+  https://www.simap.ch/de/project-detail/c4a4de09-b387-4688-9189-1b8e496845
+ c5
+URL:https://auftragsregister.ch/de/auftrag/c4a4de09-b387-4688-9189-1b8e4968
+ 45c5/
+LOCATION:Genève
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Renouvellement Omnissa Horizon et composants asso
+ ciés
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

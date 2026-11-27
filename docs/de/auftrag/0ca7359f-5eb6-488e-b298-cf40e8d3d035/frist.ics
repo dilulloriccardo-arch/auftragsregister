@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ca7359f-5eb6-488e-b298-cf40e8d3d035-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Eingabefrist: Wohnen am Stadtpark: BKP 281.5 Bodenbeläge aus Kunst
+ stein
+DESCRIPTION:Auftraggeber: Stadt Schlieren\, Bereich Liegenschaften\nEingabe
+ frist: 11.01.2027\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/d
+ e/auftrag/0ca7359f-5eb6-488e-b298-cf40e8d3d035/\nAmtliche Publikation: htt
+ ps://www.simap.ch/de/project-detail/0ca7359f-5eb6-488e-b298-cf40e8d3d035
+URL:https://auftragsregister.ch/de/auftrag/0ca7359f-5eb6-488e-b298-cf40e8d3
+ d035/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Wohnen am Stadtpark: BKP 281.5 Bodenbeläge aus K
+ unststein
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

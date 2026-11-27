@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a067e59d-5161-4f0e-b80e-45850ca7761d-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:Eingabefrist: Kollegium Brig - Sanierung Internat / BKP 281.2 Boden
+ beläge aus Kunststoffen\, Textilien und dgl. (Südtrakt)
+DESCRIPTION:Auftraggeber: Departement für Finanzen und Energie\, Dienstste
+ lle für Immobilien und Bauliches Erbe\nEingabefrist: 26.01.2027\nIm Regis
+ ter: https://auftragsregister.ch/de/auftrag/a067e59d-5161-4f0e-b80e-45850c
+ a7761d/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/a067
+ e59d-5161-4f0e-b80e-45850ca7761d
+URL:https://auftragsregister.ch/de/auftrag/a067e59d-5161-4f0e-b80e-45850ca7
+ 761d/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kollegium Brig - Sanierung Internat / BKP 281.2 B
+ odenbeläge aus Kunststoffen\, Textilien und dgl. (Südtrakt)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

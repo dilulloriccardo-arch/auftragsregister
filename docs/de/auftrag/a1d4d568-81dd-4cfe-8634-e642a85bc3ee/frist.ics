@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a1d4d568-81dd-4cfe-8634-e642a85bc3ee-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Eingabefrist: Beratungs- und Supportleistungen für das bestehende 
+ Cisco-System für einheitliche Kommunikation und Zusammenarbeit des Kanton
+ s Wallis
+DESCRIPTION:Auftraggeber: Service cantonal de l'informatique / Kantonale Di
+ enststelle für Informatik\nEingabefrist: 22.01.2027\, 12.00 Uhr\nIm Regi
+ ster: https://auftragsregister.ch/de/auftrag/a1d4d568-81dd-4cfe-8634-e642a
+ 85bc3ee/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/a1d
+ 4d568-81dd-4cfe-8634-e642a85bc3ee
+URL:https://auftragsregister.ch/de/auftrag/a1d4d568-81dd-4cfe-8634-e642a85b
+ c3ee/
+LOCATION:Sitten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Beratungs- und Supportleistungen für das bestehe
+ nde Cisco-System für einheitliche Kommunikation und Zusammenarbeit des Ka
+ ntons Wallis
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

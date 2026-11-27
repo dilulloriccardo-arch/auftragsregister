@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ea7964c-cf70-4638-a3a1-f6138125e7af-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270125T140000Z
+SUMMARY:Submission deadline: Arisdorf - Deponie Elbisgraben / Elektroanlage
+ n
+DESCRIPTION:Public buyer: Zentrale Beschaffungsstelle Kanton Basel-Landscha
+ ft\nSubmission deadline: 25 Jan 2027\, 15:00\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/8ea7964c-cf70-4638-a3a1-f6138125e7af/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/8ea7964c-cf70-4638
+ -a3a1-f6138125e7af
+URL:https://auftragsregister.ch/en/auftrag/8ea7964c-cf70-4638-a3a1-f6138125
+ e7af/
+LOCATION:Arisdorf
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Arisdorf - Deponie Elbisgraben / Elektroan
+ lagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

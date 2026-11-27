@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:43831532-0982-4613-80fb-476aec730091-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261218T190000Z
+SUMMARY:Délai de remise : MFH Niederhof Etappe 3\, Gunzgen - Sanitäranl
+ age
+DESCRIPTION:Acheteur public : Bürgergemeinde Gunzgen\nDélai de remise
+  : 18.12.2026\, 20 h 00\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/43831532-0982-4613-80fb-476aec730091/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/43831532-0982-4613-80fb-47
+ 6aec730091
+URL:https://auftragsregister.ch/fr/auftrag/43831532-0982-4613-80fb-476aec73
+ 0091/
+LOCATION:Gunzgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : MFH Niederhof Etappe 3\, Gunzgen - Sanitä
+ ranlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

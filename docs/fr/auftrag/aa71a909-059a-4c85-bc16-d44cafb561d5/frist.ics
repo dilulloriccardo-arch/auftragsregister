@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa71a909-059a-4c85-bc16-d44cafb561d5-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270125T225900Z
+SUMMARY:Délai de remise : N03\, MP-090063\, EP échangeur Augst - Rheinf
+ elden / Auteur du projet Trafic à partir de PI/Pdét
+DESCRIPTION:Acheteur public : Eidgenössisches Departement für Umwelt\, 
+ Verkehr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abtei
+ lung Strasseninfrastruktur-Ost - F3\nDélai de remise : 25.01.2027\, 23
+  h 59\nDans le registre : https://auftragsregister.ch/fr/auftrag/aa7
+ 1a909-059a-4c85-bc16-d44cafb561d5/\nPublication officielle : https://www
+ .simap.ch/fr/project-detail/aa71a909-059a-4c85-bc16-d44cafb561d5
+URL:https://auftragsregister.ch/fr/auftrag/aa71a909-059a-4c85-bc16-d44cafb5
+ 61d5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : N03\, MP-090063\, EP échangeur Augst - Rh
+ einfelden / Auteur du projet Trafic à partir de PI/Pdét
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

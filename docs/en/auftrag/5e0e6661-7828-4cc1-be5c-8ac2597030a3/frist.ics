@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:5e0e6661-7828-4cc1-be5c-8ac2597030a3-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261222T100000Z
+SUMMARY:Submission deadline: Fernwärme Quimby-Kreisel\, Thurgauerstrasse\,
+  Glattpark
+DESCRIPTION:Public buyer: Energie Opfikon AG\nSubmission deadline: 22 Dec
+  2026\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/5e
+ 0e6661-7828-4cc1-be5c-8ac2597030a3/\nOfficial publication: https://www.sim
+ ap.ch/en/project-detail/5e0e6661-7828-4cc1-be5c-8ac2597030a3
+URL:https://auftragsregister.ch/en/auftrag/5e0e6661-7828-4cc1-be5c-8ac25970
+ 30a3/
+LOCATION:Glattpark
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Fernwärme Quimby-Kreisel\, Thurgauerstras
+ se\, Glattpark
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

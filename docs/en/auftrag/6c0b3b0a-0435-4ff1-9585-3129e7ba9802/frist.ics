@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c0b3b0a-0435-4ff1-9585-3129e7ba9802-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Submission deadline: Delivery of Category 2 Tank Firefighting Vehic
+ le – Pizol 20
+DESCRIPTION:Public buyer: Feuerwehr Pizol\nSubmission deadline: 11 Jan 20
+ 27\, 12:00\nIn the register: https://auftragsregister.ch/en/auftrag/6c0b3b
+ 0a-0435-4ff1-9585-3129e7ba9802/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/6c0b3b0a-0435-4ff1-9585-3129e7ba9802
+URL:https://auftragsregister.ch/en/auftrag/6c0b3b0a-0435-4ff1-9585-3129e7ba
+ 9802/
+LOCATION:Mels
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Delivery of Category 2 Tank Firefighting V
+ ehicle – Pizol 20
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

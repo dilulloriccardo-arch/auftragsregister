@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8ebb492a-f4c1-4915-98a2-5d9fbd890b92-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270120T225900Z
+SUMMARY:Submission deadline: IMPACT / HIMB – Supply of steel plates and m
+ achined steel components
+DESCRIPTION:Public buyer: Paul Scherrer Institut (PSI)\nSubmission deadline
+ : 20 Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/a
+ uftrag/8ebb492a-f4c1-4915-98a2-5d9fbd890b92/\nOfficial publication: https:
+ //www.simap.ch/en/project-detail/8ebb492a-f4c1-4915-98a2-5d9fbd890b92
+URL:https://auftragsregister.ch/en/auftrag/8ebb492a-f4c1-4915-98a2-5d9fbd89
+ 0b92/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: IMPACT / HIMB – Supply of steel plates a
+ nd machined steel components
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

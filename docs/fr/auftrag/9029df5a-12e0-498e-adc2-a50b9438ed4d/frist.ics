@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9029df5a-12e0-498e-adc2-a50b9438ed4d-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270115T225900Z
+SUMMARY:Délai de remise : Construction du Campus EDHEA et Ecole de coutu
+ re du Valais à Sierre - CFC 277.1 / 273.0
+DESCRIPTION:Acheteur public : Service immobilier et patrimoine / Dienstst
+ elle für Immobilien und Bauliches Erbe - Investissements / Investitionen\
+ nDélai de remise : 15.01.2027\, 23 h 59\nDans le registre : https
+ ://auftragsregister.ch/fr/auftrag/9029df5a-12e0-498e-adc2-a50b9438ed4d/\nP
+ ublication officielle : https://www.simap.ch/fr/project-detail/9029df5a-
+ 12e0-498e-adc2-a50b9438ed4d
+URL:https://auftragsregister.ch/fr/auftrag/9029df5a-12e0-498e-adc2-a50b9438
+ ed4d/
+LOCATION:Sierre
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Construction du Campus EDHEA et Ecole de c
+ outure du Valais à Sierre - CFC 277.1 / 273.0
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

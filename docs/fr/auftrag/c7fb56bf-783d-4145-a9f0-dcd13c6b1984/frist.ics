@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c7fb56bf-783d-4145-a9f0-dcd13c6b1984-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270118T150000Z
+SUMMARY:Délai de remise : Contrats-cadres d'acquisition de matériel ser
+ veur
+DESCRIPTION:Acheteur public : Kantonspolizei Zürich\nDélai de remise 
+ : 18.01.2027\, 16 h 00\nDans le registre : https://auftragsregister.
+ ch/fr/auftrag/c7fb56bf-783d-4145-a9f0-dcd13c6b1984/\nPublication officiell
+ e : https://www.simap.ch/fr/project-detail/c7fb56bf-783d-4145-a9f0-dcd13
+ c6b1984
+URL:https://auftragsregister.ch/fr/auftrag/c7fb56bf-783d-4145-a9f0-dcd13c6b
+ 1984/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Contrats-cadres d'acquisition de matériel
+  serveur
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

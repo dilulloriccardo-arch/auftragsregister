@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:910a4d66-344a-4940-bec6-635e72ffe55a-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270212T150000Z
+SUMMARY:Eingabefrist: 13785 / 285-02 Restaurator\, Kirche Grossmünster\, I
+ nstandsetzung + Optimierung
+DESCRIPTION:Auftraggeber: Hochbauamt\, Baubereich A\nEingabefrist: 12.02.20
+ 27\, 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/910a4
+ d66-344a-4940-bec6-635e72ffe55a/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/910a4d66-344a-4940-bec6-635e72ffe55a
+URL:https://auftragsregister.ch/de/auftrag/910a4d66-344a-4940-bec6-635e72ff
+ e55a/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 13785 / 285-02 Restaurator\, Kirche Grossmünster
+ \, Instandsetzung + Optimierung
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

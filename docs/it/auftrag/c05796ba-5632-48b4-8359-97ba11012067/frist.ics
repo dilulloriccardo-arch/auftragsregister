@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c05796ba-5632-48b4-8359-97ba11012067-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Scadenza: Wohnen am Stadtpark: BKP 281.2 Bodenbeläge aus Linoleum\
+ , Teppich\, Holz
+DESCRIPTION:Ente pubblico: Stadt Schlieren\, Bereich Liegenschaften\nScaden
+ za: 11.01.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/c05796ba-5632-48b4-8359-97ba11012067/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/c05796ba-5632-48b4-8359-97ba11012067
+URL:https://auftragsregister.ch/it/auftrag/c05796ba-5632-48b4-8359-97ba1101
+ 2067/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wohnen am Stadtpark: BKP 281.2 Bodenbeläge aus Linol
+ eum\, Teppich\, Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

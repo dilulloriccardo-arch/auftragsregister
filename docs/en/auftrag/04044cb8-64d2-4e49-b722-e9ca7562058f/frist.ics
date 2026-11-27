@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:04044cb8-64d2-4e49-b722-e9ca7562058f-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Submission deadline: Beschaffung 80-MVA-Transformator
+DESCRIPTION:Public buyer: Repower AG\nSubmission deadline: 29 Jan 2027\, 
+ 23:59\nIn the register: https://auftragsregister.ch/en/auftrag/04044cb8-64
+ d2-4e49-b722-e9ca7562058f/\nOfficial publication: https://www.simap.ch/en/
+ project-detail/04044cb8-64d2-4e49-b722-e9ca7562058f
+URL:https://auftragsregister.ch/en/auftrag/04044cb8-64d2-4e49-b722-e9ca7562
+ 058f/
+LOCATION:Klosters
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Beschaffung 80-MVA-Transformator
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

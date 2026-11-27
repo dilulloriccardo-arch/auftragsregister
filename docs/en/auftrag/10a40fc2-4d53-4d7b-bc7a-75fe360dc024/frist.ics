@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10a40fc2-4d53-4d7b-bc7a-75fe360dc024-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T090000Z
+SUMMARY:Submission deadline: Kultur- und Sporthalle Murten - 211 Baumeister
+ arbeiten
+DESCRIPTION:Public buyer: Murten · Liegenschaftsverwaltung\nSubmission dea
+ dline: 22 Jan 2027\, 10:00\nIn the register: https://auftragsregister.ch
+ /en/auftrag/10a40fc2-4d53-4d7b-bc7a-75fe360dc024/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/10a40fc2-4d53-4d7b-bc7a-75fe360dc024
+URL:https://auftragsregister.ch/en/auftrag/10a40fc2-4d53-4d7b-bc7a-75fe360d
+ c024/
+LOCATION:Murten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kultur- und Sporthalle Murten - 211 Baumei
+ sterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

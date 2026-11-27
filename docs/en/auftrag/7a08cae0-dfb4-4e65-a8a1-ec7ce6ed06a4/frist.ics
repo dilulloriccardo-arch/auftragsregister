@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7a08cae0-dfb4-4e65-a8a1-ec7ce6ed06a4-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Submission deadline: Wohnen am Stadtpark: BKP 283.1 Metal Ceiling C
+ laddings
+DESCRIPTION:Public buyer: Stadt Schlieren\, Bereich Liegenschaften\nSubmiss
+ ion deadline: 11 Jan 2027\, 16:00\nIn the register: https://auftragsregi
+ ster.ch/en/auftrag/7a08cae0-dfb4-4e65-a8a1-ec7ce6ed06a4/\nOfficial publica
+ tion: https://www.simap.ch/en/project-detail/7a08cae0-dfb4-4e65-a8a1-ec7ce
+ 6ed06a4
+URL:https://auftragsregister.ch/en/auftrag/7a08cae0-dfb4-4e65-a8a1-ec7ce6ed
+ 06a4/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wohnen am Stadtpark: BKP 283.1 Metal Ceili
+ ng Claddings
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

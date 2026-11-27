@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4ea43aa2-a435-4d44-ae47-03a7368049d2-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270120T130000Z
+SUMMARY:Submission deadline: ROKS TP5: Sanierung Triebwasserweg S-chanf-Ova
+  Spin Los 2 – Betonsanierung und Fahrbahnabdichtung Unteres Aquädukt
+DESCRIPTION:Public buyer: Engadiner Kraftwerke AG\nSubmission deadline: 20
+  Jan 2027\, 14:00\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/4ea43aa2-a435-4d44-ae47-03a7368049d2/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/4ea43aa2-a435-4d44-ae47-03a7368049d2
+URL:https://auftragsregister.ch/en/auftrag/4ea43aa2-a435-4d44-ae47-03a73680
+ 49d2/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ROKS TP5: Sanierung Triebwasserweg S-chanf
+ -Ova Spin Los 2 – Betonsanierung und Fahrbahnabdichtung Unteres Aquäduk
+ t
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

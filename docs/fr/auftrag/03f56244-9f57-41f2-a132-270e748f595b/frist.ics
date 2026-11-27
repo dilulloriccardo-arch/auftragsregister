@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:03f56244-9f57-41f2-a132-270e748f595b-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261217T150000Z
+SUMMARY:Délai de remise : Schulanlage Schönengrund inklusive aller zuge
+ hörigen Satellitenstandorte\; BKP 235.8 / 275 Schliessanlage ZuKo
+DESCRIPTION:Acheteur public : Amt für Städtebau\nDélai de remise : 1
+ 7.12.2026\, 16 h 00\nDans le registre : https://auftragsregister.ch/
+ fr/auftrag/03f56244-9f57-41f2-a132-270e748f595b/\nPublication officielle
+  : https://www.simap.ch/fr/project-detail/03f56244-9f57-41f2-a132-270e74
+ 8f595b
+URL:https://auftragsregister.ch/fr/auftrag/03f56244-9f57-41f2-a132-270e748f
+ 595b/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Schulanlage Schönengrund inklusive aller 
+ zugehörigen Satellitenstandorte\; BKP 235.8 / 275 Schliessanlage ZuKo
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

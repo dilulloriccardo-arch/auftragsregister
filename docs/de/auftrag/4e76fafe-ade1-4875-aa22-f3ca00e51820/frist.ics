@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4e76fafe-ade1-4875-aa22-f3ca00e51820-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270106T225900Z
+SUMMARY:Eingabefrist: Allrad-Geräteträger mit mind. 290 PS\, Radstand ca.
+  3200mm Gesamtgewicht ca. 14t\, Ladebrücke
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Bern\nEingabefrist: 06.01.
+ 2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/4e7
+ 6fafe-ade1-4875-aa22-f3ca00e51820/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/4e76fafe-ade1-4875-aa22-f3ca00e51820
+URL:https://auftragsregister.ch/de/auftrag/4e76fafe-ade1-4875-aa22-f3ca00e5
+ 1820/
+LOCATION:Spiez
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Allrad-Geräteträger mit mind. 290 PS\, Radstand
+  ca. 3200mm Gesamtgewicht ca. 14t\, Ladebrücke
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

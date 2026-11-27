@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cb4f5bb6-3e37-4d5e-9e8e-079cb6ef41c1-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Scadenza: Sanierung Primarschule Kleinhüningen - BKP 227/ 285.1 Ä
+ ussere und Innere Oberflächenbehandlungen
+DESCRIPTION:Ente pubblico: Bau- und Verkehrsdepartement des Kantons Basel-S
+ tadt\, Kantonale Fachstelle für öffentliche Beschaffungen (KFöB)\nScade
+ nza: 11.01.2027\, 12:00\nNel registro: https://auftragsregister.ch/it/auft
+ rag/cb4f5bb6-3e37-4d5e-9e8e-079cb6ef41c1/\nPubblicazione ufficiale: https:
+ //www.simap.ch/it/project-detail/cb4f5bb6-3e37-4d5e-9e8e-079cb6ef41c1
+URL:https://auftragsregister.ch/it/auftrag/cb4f5bb6-3e37-4d5e-9e8e-079cb6ef
+ 41c1/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Sanierung Primarschule Kleinhüningen - BKP 227/ 285.
+ 1 Äussere und Innere Oberflächenbehandlungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

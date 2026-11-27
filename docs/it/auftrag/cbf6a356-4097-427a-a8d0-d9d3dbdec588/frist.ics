@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:cbf6a356-4097-427a-a8d0-d9d3dbdec588-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261221T140000Z
+SUMMARY:Scadenza: BKP 221.1 Fenster aus Holz-Metall\, Sanierung Schulhaus T
+ rakt C\, Neugass 6\, 6018 Buttisholz
+DESCRIPTION:Ente pubblico: Gemeinde Buttisholz (Lampart Architektur AG)\nSc
+ adenza: 21.12.2026\, 15:00\nNel registro: https://auftragsregister.ch/it/a
+ uftrag/cbf6a356-4097-427a-a8d0-d9d3dbdec588/\nPubblicazione ufficiale: htt
+ ps://www.simap.ch/it/project-detail/cbf6a356-4097-427a-a8d0-d9d3dbdec588
+URL:https://auftragsregister.ch/it/auftrag/cbf6a356-4097-427a-a8d0-d9d3dbde
+ c588/
+LOCATION:Buttisholz
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 221.1 Fenster aus Holz-Metall\, Sanierung Schulha
+ us Trakt C\, Neugass 6\, 6018 Buttisholz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

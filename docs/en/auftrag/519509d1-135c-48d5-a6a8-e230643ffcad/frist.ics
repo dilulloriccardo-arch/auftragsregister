@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:519509d1-135c-48d5-a6a8-e230643ffcad-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270115T150000Z
+SUMMARY:Submission deadline: Betriebsführungsmandat Wasserversorgung Adlis
+ wil
+DESCRIPTION:Public buyer: Stadt Adliswil Planung Werke (Holinger AG)\nSubmi
+ ssion deadline: 15 Jan 2027\, 16:00\nIn the register: https://auftragsre
+ gister.ch/en/auftrag/519509d1-135c-48d5-a6a8-e230643ffcad/\nOfficial publi
+ cation: https://www.simap.ch/en/project-detail/519509d1-135c-48d5-a6a8-e23
+ 0643ffcad
+URL:https://auftragsregister.ch/en/auftrag/519509d1-135c-48d5-a6a8-e230643f
+ fcad/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Betriebsführungsmandat Wasserversorgung A
+ dliswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

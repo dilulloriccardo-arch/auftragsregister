@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:18edf5a5-2aff-44ed-9feb-168a73fe8d5e-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261217
+DTEND;VALUE=DATE:20261218
+SUMMARY:Submission deadline: Travaux de génie civil pour la construction d
+ u Torrent de Montagnon-Chaudanne amont
+DESCRIPTION:Public buyer: Gaetan dubuis\nSubmission deadline: 17 Dec 2026
+ \nIn the register: https://auftragsregister.ch/en/auftrag/18edf5a5-2aff-44
+ ed-9feb-168a73fe8d5e/\nOfficial publication: https://www.simap.ch/en/proje
+ ct-detail/18edf5a5-2aff-44ed-9feb-168a73fe8d5e
+URL:https://auftragsregister.ch/en/auftrag/18edf5a5-2aff-44ed-9feb-168a73fe
+ 8d5e/
+LOCATION:Leytron
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Travaux de génie civil pour la constructi
+ on du Torrent de Montagnon-Chaudanne amont
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:aa71a909-059a-4c85-bc16-d44cafb561d5-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270125T225900Z
+SUMMARY:Scadenza: MP-090063\, EP Verzw. Augst - Rheinfelden / Projektverfas
+ ser Verkehr ab Phase MP/DP
+DESCRIPTION:Ente pubblico: Eidgenössisches Departement für Umwelt\, Verke
+ hr\, Energie und Kommunikation - Bundesamt für Strassen ASTRA -Abteilung 
+ Strasseninfrastruktur-Ost - F3\nScadenza: 25.01.2027\, 23:59\nNel registro
+ : https://auftragsregister.ch/it/auftrag/aa71a909-059a-4c85-bc16-d44cafb56
+ 1d5/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/aa71
+ a909-059a-4c85-bc16-d44cafb561d5
+URL:https://auftragsregister.ch/it/auftrag/aa71a909-059a-4c85-bc16-d44cafb5
+ 61d5/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MP-090063\, EP Verzw. Augst - Rheinfelden / Projektve
+ rfasser Verkehr ab Phase MP/DP
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

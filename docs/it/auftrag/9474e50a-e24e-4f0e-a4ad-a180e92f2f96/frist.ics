@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9474e50a-e24e-4f0e-a4ad-a180e92f2f96-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261218T150000Z
+SUMMARY:Scadenza: BKP 230 Elektroanlagen\, inkl. PV-Anlage - Sanierung Kirc
+ hmatt\, Erstfeld
+DESCRIPTION:Ente pubblico: Röm.-kath. Pfarramt St. Ambrosius (Büro für B
+ auökonomie AG)\nScadenza: 18.12.2026\, 16:00\nNel registro: https://auftr
+ agsregister.ch/it/auftrag/9474e50a-e24e-4f0e-a4ad-a180e92f2f96/\nPubblicaz
+ ione ufficiale: https://www.simap.ch/it/project-detail/9474e50a-e24e-4f0e-
+ a4ad-a180e92f2f96
+URL:https://auftragsregister.ch/it/auftrag/9474e50a-e24e-4f0e-a4ad-a180e92f
+ 2f96/
+LOCATION:Erstfeld
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 230 Elektroanlagen\, inkl. PV-Anlage - Sanierung 
+ Kirchmatt\, Erstfeld
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

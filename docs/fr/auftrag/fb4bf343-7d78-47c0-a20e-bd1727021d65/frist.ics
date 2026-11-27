@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb4bf343-7d78-47c0-a20e-bd1727021d65-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270108T225900Z
+SUMMARY:Délai de remise : Böztal (Hornussen) AO\, K116
+DESCRIPTION:Acheteur public : Abteilung Tiefbau (ATB)\nDélai de remise
+  : 08.01.2027\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/fb4bf343-7d78-47c0-a20e-bd1727021d65/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/fb4bf343-7d78-47c0-a20e-bd
+ 1727021d65
+URL:https://auftragsregister.ch/fr/auftrag/fb4bf343-7d78-47c0-a20e-bd172702
+ 1d65/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Böztal (Hornussen) AO\, K116
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

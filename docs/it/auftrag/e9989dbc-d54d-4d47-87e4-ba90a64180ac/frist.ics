@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e9989dbc-d54d-4d47-87e4-ba90a64180ac-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270203T225900Z
+SUMMARY:Scadenza: St. Moritz – Tirano\, Galleria Lunga\, km 25.269 – 25
+ .899\, Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: Rhätische Bahn AG\nScadenza: 03.02.2027\, 23:59
+ \nNel registro: https://auftragsregister.ch/it/auftrag/e9989dbc-d54d-4d47-
+ 87e4-ba90a64180ac/\nPubblicazione ufficiale: https://www.simap.ch/it/proje
+ ct-detail/e9989dbc-d54d-4d47-87e4-ba90a64180ac
+URL:https://auftragsregister.ch/it/auftrag/e9989dbc-d54d-4d47-87e4-ba90a641
+ 80ac/
+LOCATION:Poschiavo
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: St. Moritz – Tirano\, Galleria Lunga\, km 25.269 
+ – 25.899\, Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

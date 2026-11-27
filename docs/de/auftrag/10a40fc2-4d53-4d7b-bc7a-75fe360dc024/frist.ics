@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10a40fc2-4d53-4d7b-bc7a-75fe360dc024-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T090000Z
+SUMMARY:Eingabefrist: Kultur- und Sporthalle Murten - 211 Baumeisterarbeite
+ n
+DESCRIPTION:Auftraggeber: Murten · Liegenschaftsverwaltung\nEingabefrist: 
+ 22.01.2027\, 10.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/10a40fc2-4d53-4d7b-bc7a-75fe360dc024/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/10a40fc2-4d53-4d7b-bc7a-75fe360dc024
+URL:https://auftragsregister.ch/de/auftrag/10a40fc2-4d53-4d7b-bc7a-75fe360d
+ c024/
+LOCATION:Murten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Kultur- und Sporthalle Murten - 211 Baumeisterarb
+ eiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

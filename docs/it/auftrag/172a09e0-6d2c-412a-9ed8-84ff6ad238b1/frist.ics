@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:172a09e0-6d2c-412a-9ed8-84ff6ad238b1-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270226T225900Z
+SUMMARY:Scadenza: P21.0442 – Bern\, KAPO\, Bahnhofplatz 10\, Mieterausbau
+  - Gipserarbeiten
+DESCRIPTION:Ente pubblico: Amt für Grundstücke und Gebäude des Kantons B
+ ern (AGG)\nScadenza: 26.02.2027\, 23:59\nNel registro: https://auftragsreg
+ ister.ch/it/auftrag/172a09e0-6d2c-412a-9ed8-84ff6ad238b1/\nPubblicazione u
+ fficiale: https://www.simap.ch/it/project-detail/172a09e0-6d2c-412a-9ed8-8
+ 4ff6ad238b1
+URL:https://auftragsregister.ch/it/auftrag/172a09e0-6d2c-412a-9ed8-84ff6ad2
+ 38b1/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: P21.0442 – Bern\, KAPO\, Bahnhofplatz 10\, Mieterau
+ sbau - Gipserarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

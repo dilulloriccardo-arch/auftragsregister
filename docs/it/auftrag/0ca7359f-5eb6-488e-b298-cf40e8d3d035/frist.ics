@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0ca7359f-5eb6-488e-b298-cf40e8d3d035-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Scadenza: Wohnen am Stadtpark: BKP 281.5 Bodenbeläge aus Kunststei
+ n
+DESCRIPTION:Ente pubblico: Stadt Schlieren\, Bereich Liegenschaften\nScaden
+ za: 11.01.2027\, 16:00\nNel registro: https://auftragsregister.ch/it/auftr
+ ag/0ca7359f-5eb6-488e-b298-cf40e8d3d035/\nPubblicazione ufficiale: https:/
+ /www.simap.ch/it/project-detail/0ca7359f-5eb6-488e-b298-cf40e8d3d035
+URL:https://auftragsregister.ch/it/auftrag/0ca7359f-5eb6-488e-b298-cf40e8d3
+ d035/
+LOCATION:Schlieren
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wohnen am Stadtpark: BKP 281.5 Bodenbeläge aus Kunst
+ stein
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

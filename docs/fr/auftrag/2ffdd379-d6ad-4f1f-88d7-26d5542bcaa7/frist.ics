@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2ffdd379-d6ad-4f1f-88d7-26d5542bcaa7-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270215T110000Z
+SUMMARY:Délai de remise : Appel d'offres Lot B.02 - Entreprise de bâtim
+ ent
+DESCRIPTION:Acheteur public : Schweizerische Südostbahn AG (SOB) F&S-LOG
+ -E\nDélai de remise : 15.02.2027\, 12 h 00\nDans le registre : ht
+ tps://auftragsregister.ch/fr/auftrag/2ffdd379-d6ad-4f1f-88d7-26d5542bcaa7/
+ \nPublication officielle : https://www.simap.ch/fr/project-detail/2ffdd3
+ 79-d6ad-4f1f-88d7-26d5542bcaa7
+URL:https://auftragsregister.ch/fr/auftrag/2ffdd379-d6ad-4f1f-88d7-26d5542b
+ caa7/
+LOCATION:Wattwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Appel d'offres Lot B.02 - Entreprise de b
+ âtiment
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

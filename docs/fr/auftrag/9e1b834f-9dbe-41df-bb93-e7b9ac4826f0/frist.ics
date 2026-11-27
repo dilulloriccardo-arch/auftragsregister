@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9e1b834f-9dbe-41df-bb93-e7b9ac4826f0-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Délai de remise : 24 Heizungsanlage
+DESCRIPTION:Acheteur public : Stadt Wetzikon Immobilien\nDélai de remise
+  : 21.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/9e1b834f-9dbe-41df-bb93-e7b9ac4826f0/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/9e1b834f-9dbe-41df-bb93-e7
+ b9ac4826f0
+URL:https://auftragsregister.ch/fr/auftrag/9e1b834f-9dbe-41df-bb93-e7b9ac48
+ 26f0/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 24 Heizungsanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7a926d26-4bbb-4bbd-81fc-cc4d7891e6d7-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261218T190000Z
+SUMMARY:Scadenza: MFH Niederhof Etappe 3\, Gunzgen - Baumeisterarbeiten
+DESCRIPTION:Ente pubblico: Bürgergemeinde Gunzgen\nScadenza: 18.12.2026\, 
+ 20:00\nNel registro: https://auftragsregister.ch/it/auftrag/7a926d26-4bbb-
+ 4bbd-81fc-cc4d7891e6d7/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/7a926d26-4bbb-4bbd-81fc-cc4d7891e6d7
+URL:https://auftragsregister.ch/it/auftrag/7a926d26-4bbb-4bbd-81fc-cc4d7891
+ e6d7/
+LOCATION:Gunzgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MFH Niederhof Etappe 3\, Gunzgen - Baumeisterarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

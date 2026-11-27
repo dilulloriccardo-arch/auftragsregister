@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a68e62d-4ffe-4069-adc6-8895e88f2da0-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270131T225900Z
+SUMMARY:Délai de remise : Planerleistungen SIA Phase 31- 33\, Wasserbaup
+ lan Kleine Aare\, Bödeli
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Bern\nDélai de remi
+ se : 31.01.2027\, 23 h 59\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/3a68e62d-4ffe-4069-adc6-8895e88f2da0/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/3a68e62d-4ffe-4069-adc6-
+ 8895e88f2da0
+URL:https://auftragsregister.ch/fr/auftrag/3a68e62d-4ffe-4069-adc6-8895e88f
+ 2da0/
+LOCATION:Unterseen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Planerleistungen SIA Phase 31- 33\, Wasser
+ bauplan Kleine Aare\, Bödeli
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

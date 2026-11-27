@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:9e1b834f-9dbe-41df-bb93-e7b9ac4826f0-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Eingabefrist: 24 Heizungsanlage
+DESCRIPTION:Auftraggeber: Stadt Wetzikon Immobilien\nEingabefrist: 21.12.20
+ 26\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/9e1b8
+ 34f-9dbe-41df-bb93-e7b9ac4826f0/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/9e1b834f-9dbe-41df-bb93-e7b9ac4826f0
+URL:https://auftragsregister.ch/de/auftrag/9e1b834f-9dbe-41df-bb93-e7b9ac48
+ 26f0/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: 24 Heizungsanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

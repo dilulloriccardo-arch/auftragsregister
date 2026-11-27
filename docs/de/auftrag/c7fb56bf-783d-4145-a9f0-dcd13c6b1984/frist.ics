@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c7fb56bf-783d-4145-a9f0-dcd13c6b1984-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270118T150000Z
+SUMMARY:Eingabefrist: Rahmenverträge Beschaffung Server-Hardware
+DESCRIPTION:Auftraggeber: Kantonspolizei Zürich\nEingabefrist: 18.01.2027\
+ , 16.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/c7fb56bf
+ -783d-4145-a9f0-dcd13c6b1984/\nAmtliche Publikation: https://www.simap.ch/
+ de/project-detail/c7fb56bf-783d-4145-a9f0-dcd13c6b1984
+URL:https://auftragsregister.ch/de/auftrag/c7fb56bf-783d-4145-a9f0-dcd13c6b
+ 1984/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Rahmenverträge Beschaffung Server-Hardware
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

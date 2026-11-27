@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:10a40fc2-4d53-4d7b-bc7a-75fe360dc024-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T090000Z
+SUMMARY:Délai de remise : Salle culturelle et sportive de Morat – 211 
+ Travaux d'entreprise de maçonnerie
+DESCRIPTION:Acheteur public : Murten · Liegenschaftsverwaltung\nDélai d
+ e remise : 22.01.2027\, 10 h 00\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/10a40fc2-4d53-4d7b-bc7a-75fe360dc024/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/10a40fc2-4d53-4d7b
+ -bc7a-75fe360dc024
+URL:https://auftragsregister.ch/fr/auftrag/10a40fc2-4d53-4d7b-bc7a-75fe360d
+ c024/
+LOCATION:Murten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Salle culturelle et sportive de Morat – 
+ 211 Travaux d'entreprise de maçonnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

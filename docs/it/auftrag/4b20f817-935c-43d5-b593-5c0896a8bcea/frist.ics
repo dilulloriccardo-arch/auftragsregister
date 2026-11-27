@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b20f817-935c-43d5-b593-5c0896a8bcea-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270113T133000Z
+SUMMARY:Scadenza: COS - Cornaredo Sud ¦ 021 - Recinzioni pista di atletica
+DESCRIPTION:Ente pubblico: Città di Lugano - Edilizia pubblica\nScadenza: 
+ 13.01.2027\, 14:30\nNel registro: https://auftragsregister.ch/it/auftrag/4
+ b20f817-935c-43d5-b593-5c0896a8bcea/\nPubblicazione ufficiale: https://www
+ .simap.ch/it/project-detail/4b20f817-935c-43d5-b593-5c0896a8bcea
+URL:https://auftragsregister.ch/it/auftrag/4b20f817-935c-43d5-b593-5c0896a8
+ bcea/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: COS - Cornaredo Sud ¦ 021 - Recinzioni pista di atle
+ tica
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

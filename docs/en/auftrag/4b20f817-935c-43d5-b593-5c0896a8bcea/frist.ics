@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4b20f817-935c-43d5-b593-5c0896a8bcea-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270113T133000Z
+SUMMARY:Submission deadline: COS - Cornaredo Sud ¦ 021 - Clôtures de pist
+ e d’athlétisme
+DESCRIPTION:Public buyer: Città di Lugano - Edilizia pubblica\nSubmission 
+ deadline: 13 Jan 2027\, 14:30\nIn the register: https://auftragsregister
+ .ch/en/auftrag/4b20f817-935c-43d5-b593-5c0896a8bcea/\nOfficial publication
+ : https://www.simap.ch/en/project-detail/4b20f817-935c-43d5-b593-5c0896a8b
+ cea
+URL:https://auftragsregister.ch/en/auftrag/4b20f817-935c-43d5-b593-5c0896a8
+ bcea/
+LOCATION:Lugano
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: COS - Cornaredo Sud ¦ 021 - Clôtures de 
+ piste d’athlétisme
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

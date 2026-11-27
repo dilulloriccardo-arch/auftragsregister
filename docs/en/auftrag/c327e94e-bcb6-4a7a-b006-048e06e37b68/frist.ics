@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c327e94e-bcb6-4a7a-b006-048e06e37b68-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270121T225900Z
+SUMMARY:Submission deadline: Baumeister Instandsetzung Lehnenbrücke Gunten
+ stutz 3\, Sigriswil
+DESCRIPTION:Public buyer: Tiefbauamt des Kantons Bern\nSubmission deadline:
+  21 Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/c327e94e-bcb6-4a7a-b006-048e06e37b68/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/c327e94e-bcb6-4a7a-b006-048e06e37b68
+URL:https://auftragsregister.ch/en/auftrag/c327e94e-bcb6-4a7a-b006-048e06e3
+ 7b68/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Baumeister Instandsetzung Lehnenbrücke Gu
+ ntenstutz 3\, Sigriswil
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

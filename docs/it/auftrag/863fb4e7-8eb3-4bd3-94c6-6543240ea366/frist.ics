@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:863fb4e7-8eb3-4bd3-94c6-6543240ea366-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Scadenza: 25 Sanitärinstallationen
+DESCRIPTION:Ente pubblico: Stadt Wetzikon Immobilien\nScadenza: 21.12.2026\
+ , 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/863fb4e7-8eb
+ 3-4bd3-94c6-6543240ea366/\nPubblicazione ufficiale: https://www.simap.ch/i
+ t/project-detail/863fb4e7-8eb3-4bd3-94c6-6543240ea366
+URL:https://auftragsregister.ch/it/auftrag/863fb4e7-8eb3-4bd3-94c6-6543240e
+ a366/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: 25 Sanitärinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb1a5ce5-7e31-4293-b6ed-3381fbd75a12-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Submission deadline: Bereitstellung eines Telekommunikationsingenie
+ urs bzw. einer Telekommunikationsingenieurin mit Spezialisierung auf Zabbi
+ x (60 %)
+DESCRIPTION:Public buyer: Service cantonal de l'informatique / Kantonale Di
+ enststelle für Informatik\nSubmission deadline: 17 Dec 2026\, 23:59\nIn
+  the register: https://auftragsregister.ch/en/auftrag/fb1a5ce5-7e31-4293-b
+ 6ed-3381fbd75a12/\nOfficial publication: https://www.simap.ch/en/project-d
+ etail/fb1a5ce5-7e31-4293-b6ed-3381fbd75a12
+URL:https://auftragsregister.ch/en/auftrag/fb1a5ce5-7e31-4293-b6ed-3381fbd7
+ 5a12/
+LOCATION:Sitten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Bereitstellung eines Telekommunikationsing
+ enieurs bzw. einer Telekommunikationsingenieurin mit Spezialisierung auf Z
+ abbix (60 %)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

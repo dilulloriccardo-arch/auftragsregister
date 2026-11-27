@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e58ba3d1-8184-4f6a-848d-1ace0d811344-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270112
+DTEND;VALUE=DATE:20270113
+SUMMARY:Délai de remise : CPC 272 Travaux de construction métallique à
+  Thoune\, Polygon\, rénovation de l'enveloppe du bâtiment et des install
+ ations techniques du bâtiment
+DESCRIPTION:Acheteur public : armasuisse Immobilien\nDélai de remise :
+  12.01.2027\nDans le registre : https://auftragsregister.ch/fr/auftrag/e
+ 58ba3d1-8184-4f6a-848d-1ace0d811344/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/e58ba3d1-8184-4f6a-848d-1ace0d811344
+URL:https://auftragsregister.ch/fr/auftrag/e58ba3d1-8184-4f6a-848d-1ace0d81
+ 1344/
+LOCATION:Thun
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : CPC 272 Travaux de construction métalliqu
+ e à Thoune\, Polygon\, rénovation de l'enveloppe du bâtiment et des ins
+ tallations techniques du bâtiment
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

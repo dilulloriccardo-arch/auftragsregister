@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:64311b7e-31e2-482d-896d-5036dedab783-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270119T130000Z
+SUMMARY:Délai de remise : KS B\, Buonaserstrasse\, Gemeinde Risch\, Krei
+ sel Dorfmatt
+DESCRIPTION:Acheteur public : Tiefbauamt des Kantons Zug\nDélai de remis
+ e : 19.01.2027\, 14 h 00\nDans le registre : https://auftragsregis
+ ter.ch/fr/auftrag/64311b7e-31e2-482d-896d-5036dedab783/\nPublication offic
+ ielle : https://www.simap.ch/fr/project-detail/64311b7e-31e2-482d-896d-5
+ 036dedab783
+URL:https://auftragsregister.ch/fr/auftrag/64311b7e-31e2-482d-896d-5036deda
+ b783/
+LOCATION:Zug
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : KS B\, Buonaserstrasse\, Gemeinde Risch\, 
+ Kreisel Dorfmatt
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

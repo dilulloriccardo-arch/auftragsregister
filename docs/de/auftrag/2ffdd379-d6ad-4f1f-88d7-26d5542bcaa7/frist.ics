@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2ffdd379-d6ad-4f1f-88d7-26d5542bcaa7-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270215T110000Z
+SUMMARY:Eingabefrist: Ausschreibung Los B.02 Baumeister Hochbau
+DESCRIPTION:Auftraggeber: Schweizerische Südostbahn AG (SOB) F&S-LOG-E\nEi
+ ngabefrist: 15.02.2027\, 12.00 Uhr\nIm Register: https://auftragsregister
+ .ch/de/auftrag/2ffdd379-d6ad-4f1f-88d7-26d5542bcaa7/\nAmtliche Publikation
+ : https://www.simap.ch/de/project-detail/2ffdd379-d6ad-4f1f-88d7-26d5542bc
+ aa7
+URL:https://auftragsregister.ch/de/auftrag/2ffdd379-d6ad-4f1f-88d7-26d5542b
+ caa7/
+LOCATION:Wattwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ausschreibung Los B.02 Baumeister Hochbau
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

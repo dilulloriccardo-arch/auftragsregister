@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:03f56244-9f57-41f2-a132-270e748f595b-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261217T150000Z
+SUMMARY:Scadenza: Schulanlage Schönengrund inklusive aller zugehörigen Sa
+ tellitenstandorte\; BKP 235.8 / 275 Schliessanlage ZuKo
+DESCRIPTION:Ente pubblico: Amt für Städtebau\nScadenza: 17.12.2026\, 16:0
+ 0\nNel registro: https://auftragsregister.ch/it/auftrag/03f56244-9f57-41f2
+ -a132-270e748f595b/\nPubblicazione ufficiale: https://www.simap.ch/it/proj
+ ect-detail/03f56244-9f57-41f2-a132-270e748f595b
+URL:https://auftragsregister.ch/it/auftrag/03f56244-9f57-41f2-a132-270e748f
+ 595b/
+LOCATION:Winterthur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Schulanlage Schönengrund inklusive aller zugehörige
+ n Satellitenstandorte\; BKP 235.8 / 275 Schliessanlage ZuKo
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

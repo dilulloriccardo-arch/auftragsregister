@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb1a5ce5-7e31-4293-b6ed-3381fbd75a12-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261217T225900Z
+SUMMARY:Eingabefrist: Bereitstellung eines Telekommunikationsingenieurs bzw
+ . einer Telekommunikationsingenieurin mit Spezialisierung auf Zabbix (60 %
+ )
+DESCRIPTION:Auftraggeber: Service cantonal de l'informatique / Kantonale Di
+ enststelle für Informatik\nEingabefrist: 17.12.2026\, 23.59 Uhr\nIm Regi
+ ster: https://auftragsregister.ch/de/auftrag/fb1a5ce5-7e31-4293-b6ed-3381f
+ bd75a12/\nAmtliche Publikation: https://www.simap.ch/de/project-detail/fb1
+ a5ce5-7e31-4293-b6ed-3381fbd75a12
+URL:https://auftragsregister.ch/de/auftrag/fb1a5ce5-7e31-4293-b6ed-3381fbd7
+ 5a12/
+LOCATION:Sitten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Bereitstellung eines Telekommunikationsingenieurs
+  bzw. einer Telekommunikationsingenieurin mit Spezialisierung auf Zabbix (
+ 60 %)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

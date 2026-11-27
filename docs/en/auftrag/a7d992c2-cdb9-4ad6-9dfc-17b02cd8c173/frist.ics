@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a7d992c2-cdb9-4ad6-9dfc-17b02cd8c173-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270125T110100Z
+SUMMARY:Submission deadline: Ausschreibung Los B.19 Sanitäranlagen
+DESCRIPTION:Public buyer: Schweizerische Südostbahn AG (SOB) F&S-LOG-E\nSu
+ bmission deadline: 25 Jan 2027\, 12:01\nIn the register: https://auftrag
+ sregister.ch/en/auftrag/a7d992c2-cdb9-4ad6-9dfc-17b02cd8c173/\nOfficial pu
+ blication: https://www.simap.ch/en/project-detail/a7d992c2-cdb9-4ad6-9dfc-
+ 17b02cd8c173
+URL:https://auftragsregister.ch/en/auftrag/a7d992c2-cdb9-4ad6-9dfc-17b02cd8
+ c173/
+LOCATION:Wattwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibung Los B.19 Sanitäranlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ddfb9150-31e6-4a19-b177-934b1fca3903-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261223T225900Z
+SUMMARY:Délai de remise : Landquart\, Gleis- und Perronanlage Phase B\, 
+ Elektroanlagen
+DESCRIPTION:Acheteur public : Rhätische Bahn AG\nDélai de remise : 23
+ .12.2026\, 23 h 59\nDans le registre : https://auftragsregister.ch/f
+ r/auftrag/ddfb9150-31e6-4a19-b177-934b1fca3903/\nPublication officielle 
+ : https://www.simap.ch/fr/project-detail/ddfb9150-31e6-4a19-b177-934b1fca3
+ 903
+URL:https://auftragsregister.ch/fr/auftrag/ddfb9150-31e6-4a19-b177-934b1fca
+ 3903/
+LOCATION:Landquart
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Landquart\, Gleis- und Perronanlage Phase 
+ B\, Elektroanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

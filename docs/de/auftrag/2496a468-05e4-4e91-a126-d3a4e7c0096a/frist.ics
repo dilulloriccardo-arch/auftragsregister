@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2496a468-05e4-4e91-a126-d3a4e7c0096a-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:Eingabefrist: Gesamtsanierung Oberstufe Stammheim\, Unterstammheim
+DESCRIPTION:Auftraggeber: Gemeinde Stammheim (Meyerstegemann Architekten AG
+ )\nEingabefrist: 22.01.2027\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/2496a468-05e4-4e91-a126-d3a4e7c0096a/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/2496a468-05e4-4e91-a126-d3a4e7c0096a
+URL:https://auftragsregister.ch/de/auftrag/2496a468-05e4-4e91-a126-d3a4e7c0
+ 096a/
+LOCATION:Unterstammheim
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamtsanierung Oberstufe Stammheim\, Unterstammh
+ eim
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

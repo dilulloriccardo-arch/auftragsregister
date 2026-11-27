@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:0123344f-562d-46fe-87b7-4cea1ceeb4d3-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270219T225900Z
+SUMMARY:Submission deadline: Murgenthal IO\, K101\; BehiG-Bushaltestelle un
+ d Belagssanierung Bahnhof
+DESCRIPTION:Public buyer: Abteilung Tiefbau (ATB)\nSubmission deadline: 19
+  Feb 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/auftr
+ ag/0123344f-562d-46fe-87b7-4cea1ceeb4d3/\nOfficial publication: https://ww
+ w.simap.ch/en/project-detail/0123344f-562d-46fe-87b7-4cea1ceeb4d3
+URL:https://auftragsregister.ch/en/auftrag/0123344f-562d-46fe-87b7-4cea1cee
+ b4d3/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Murgenthal IO\, K101\; BehiG-Bushaltestell
+ e und Belagssanierung Bahnhof
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

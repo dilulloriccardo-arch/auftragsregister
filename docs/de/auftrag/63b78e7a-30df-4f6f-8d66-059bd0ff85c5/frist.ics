@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:63b78e7a-30df-4f6f-8d66-059bd0ff85c5-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270302T140000Z
+SUMMARY:Eingabefrist: Neubau Klinikum 2\, Phase 1\, SKP 346\, Kälte & Küh
+ lräume
+DESCRIPTION:Auftraggeber: Universitätsspital Basel\nEingabefrist: 02.03.20
+ 27\, 15.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/63b78
+ e7a-30df-4f6f-8d66-059bd0ff85c5/\nAmtliche Publikation: https://www.simap.
+ ch/de/project-detail/63b78e7a-30df-4f6f-8d66-059bd0ff85c5
+URL:https://auftragsregister.ch/de/auftrag/63b78e7a-30df-4f6f-8d66-059bd0ff
+ 85c5/
+LOCATION:Basel
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Neubau Klinikum 2\, Phase 1\, SKP 346\, Kälte & 
+ Kühlräume
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:43831532-0982-4613-80fb-476aec730091-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261218T190000Z
+SUMMARY:Scadenza: MFH Niederhof Etappe 3\, Gunzgen - Sanitäranlage
+DESCRIPTION:Ente pubblico: Bürgergemeinde Gunzgen\nScadenza: 18.12.2026\, 
+ 20:00\nNel registro: https://auftragsregister.ch/it/auftrag/43831532-0982-
+ 4613-80fb-476aec730091/\nPubblicazione ufficiale: https://www.simap.ch/it/
+ project-detail/43831532-0982-4613-80fb-476aec730091
+URL:https://auftragsregister.ch/it/auftrag/43831532-0982-4613-80fb-476aec73
+ 0091/
+LOCATION:Gunzgen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: MFH Niederhof Etappe 3\, Gunzgen - Sanitäranlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:6c0b3b0a-0435-4ff1-9585-3129e7ba9802-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T110000Z
+SUMMARY:Scadenza: Lieferung Tanklöschfahrzeug Kat. 2 Pizol 20
+DESCRIPTION:Ente pubblico: Feuerwehr Pizol\nScadenza: 11.01.2027\, 12:00\nN
+ el registro: https://auftragsregister.ch/it/auftrag/6c0b3b0a-0435-4ff1-958
+ 5-3129e7ba9802/\nPubblicazione ufficiale: https://www.simap.ch/it/project-
+ detail/6c0b3b0a-0435-4ff1-9585-3129e7ba9802
+URL:https://auftragsregister.ch/it/auftrag/6c0b3b0a-0435-4ff1-9585-3129e7ba
+ 9802/
+LOCATION:Mels
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Lieferung Tanklöschfahrzeug Kat. 2 Pizol 20
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

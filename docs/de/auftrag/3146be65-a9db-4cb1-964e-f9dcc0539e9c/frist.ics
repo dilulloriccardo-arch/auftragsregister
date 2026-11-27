@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3146be65-a9db-4cb1-964e-f9dcc0539e9c-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270104T110000Z
+SUMMARY:Eingabefrist: SRIV Herrliberg\, 712 Forchstrasse\, km 2.780 - 2.900
+ \, Arbachstrasse - Chapfstrasse\, Wasser-/Tief- und Strassenbauarbeiten
+DESCRIPTION:Auftraggeber: Tiefbauamt\, Abt. Strasseninspektorat\nEingabefri
+ st: 04.01.2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/a
+ uftrag/3146be65-a9db-4cb1-964e-f9dcc0539e9c/\nAmtliche Publikation: https:
+ //www.simap.ch/de/project-detail/3146be65-a9db-4cb1-964e-f9dcc0539e9c
+URL:https://auftragsregister.ch/de/auftrag/3146be65-a9db-4cb1-964e-f9dcc053
+ 9e9c/
+LOCATION:Herrliberg
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: SRIV Herrliberg\, 712 Forchstrasse\, km 2.780 - 2
+ .900\, Arbachstrasse - Chapfstrasse\, Wasser-/Tief- und Strassenbauarbeite
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

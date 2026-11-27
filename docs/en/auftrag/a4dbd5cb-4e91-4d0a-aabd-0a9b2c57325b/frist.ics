@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a4dbd5cb-4e91-4d0a-aabd-0a9b2c57325b-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T090000Z
+SUMMARY:Submission deadline: Kultur- und Sporthalle Murten - 242 Heizungsan
+ lagen / 246 Kälteanlagen
+DESCRIPTION:Public buyer: Murten · Liegenschaftsverwaltung\nSubmission dea
+ dline: 22 Jan 2027\, 10:00\nIn the register: https://auftragsregister.ch
+ /en/auftrag/a4dbd5cb-4e91-4d0a-aabd-0a9b2c57325b/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/a4dbd5cb-4e91-4d0a-aabd-0a9b2c57325b
+URL:https://auftragsregister.ch/en/auftrag/a4dbd5cb-4e91-4d0a-aabd-0a9b2c57
+ 325b/
+LOCATION:Murten
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Kultur- und Sporthalle Murten - 242 Heizun
+ gsanlagen / 246 Kälteanlagen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

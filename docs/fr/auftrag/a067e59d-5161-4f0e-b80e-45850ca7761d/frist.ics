@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a067e59d-5161-4f0e-b80e-45850ca7761d-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:Délai de remise : Collège de Brique - Rénovation de l'internat
+  / CFC 281.2 Revêtements de sol en matières (tract sud)
+DESCRIPTION:Acheteur public : Departement für Finanzen und Energie\, Die
+ nststelle für Immobilien und Bauliches Erbe\nDélai de remise : 26.01.2
+ 027\nDans le registre : https://auftragsregister.ch/fr/auftrag/a067e59d-
+ 5161-4f0e-b80e-45850ca7761d/\nPublication officielle : https://www.simap
+ .ch/fr/project-detail/a067e59d-5161-4f0e-b80e-45850ca7761d
+URL:https://auftragsregister.ch/fr/auftrag/a067e59d-5161-4f0e-b80e-45850ca7
+ 761d/
+LOCATION:Brig-Glis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Collège de Brique - Rénovation de l'inte
+ rnat / CFC 281.2 Revêtements de sol en matières (tract sud)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:eb9f2f43-9e90-4a8f-9744-0f181e043b31-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270215T115900Z
+SUMMARY:Submission deadline: Ausschreibung Los B.06 Holzbau / Fenster-Holz-
+ Metall
+DESCRIPTION:Public buyer: Schweizerische Südostbahn AG (SOB) F&S-LOG-E\nSu
+ bmission deadline: 15 Feb 2027\, 12:59\nIn the register: https://auftrag
+ sregister.ch/en/auftrag/eb9f2f43-9e90-4a8f-9744-0f181e043b31/\nOfficial pu
+ blication: https://www.simap.ch/en/project-detail/eb9f2f43-9e90-4a8f-9744-
+ 0f181e043b31
+URL:https://auftragsregister.ch/en/auftrag/eb9f2f43-9e90-4a8f-9744-0f181e04
+ 3b31/
+LOCATION:Wattwil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Ausschreibung Los B.06 Holzbau / Fenster-H
+ olz-Metall
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

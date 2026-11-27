@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3a68e62d-4ffe-4069-adc6-8895e88f2da0-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270131T225900Z
+SUMMARY:Scadenza: Planerleistungen SIA Phase 31- 33\, Wasserbauplan Kleine 
+ Aare\, Bödeli
+DESCRIPTION:Ente pubblico: Tiefbauamt des Kantons Bern\nScadenza: 31.01.202
+ 7\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/3a68e62d-4
+ ffe-4069-adc6-8895e88f2da0/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/3a68e62d-4ffe-4069-adc6-8895e88f2da0
+URL:https://auftragsregister.ch/it/auftrag/3a68e62d-4ffe-4069-adc6-8895e88f
+ 2da0/
+LOCATION:Unterseen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Planerleistungen SIA Phase 31- 33\, Wasserbauplan Kle
+ ine Aare\, Bödeli
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:244d1912-19bf-4df6-85c8-504b5cd6c761-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270111T150000Z
+SUMMARY:Submission deadline: Rüeggisingerstrasse\, Gersagplatz – Hammer 
+ roundabout\, renovation and redesign
+DESCRIPTION:Public buyer: Gemeinde Emmen - Departement Tiefbau und Werke\nS
+ ubmission deadline: 11 Jan 2027\, 16:00\nIn the register: https://auftra
+ gsregister.ch/en/auftrag/244d1912-19bf-4df6-85c8-504b5cd6c761/\nOfficial p
+ ublication: https://www.simap.ch/en/project-detail/244d1912-19bf-4df6-85c8
+ -504b5cd6c761
+URL:https://auftragsregister.ch/en/auftrag/244d1912-19bf-4df6-85c8-504b5cd6
+ c761/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Rüeggisingerstrasse\, Gersagplatz – Ham
+ mer roundabout\, renovation and redesign
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c6d03e47-2b72-46a3-b0fe-575393ce16c7-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261223T160000Z
+SUMMARY:Scadenza: Ferme Hoffman – Prés-Grange - Réaménagement d’une 
+ habitation\, d’une grange et de ses annexes en locaux multifonctions com
+ munaux
+DESCRIPTION:Ente pubblico: Commune de Corsier (CBN Architectes)\nScadenza: 
+ 23.12.2026\, 17:00\nNel registro: https://auftragsregister.ch/it/auftrag/c
+ 6d03e47-2b72-46a3-b0fe-575393ce16c7/\nPubblicazione ufficiale: https://www
+ .simap.ch/it/project-detail/c6d03e47-2b72-46a3-b0fe-575393ce16c7
+URL:https://auftragsregister.ch/it/auftrag/c6d03e47-2b72-46a3-b0fe-575393ce
+ 16c7/
+LOCATION:Corsier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ferme Hoffman – Prés-Grange - Réaménagement d’
+ une habitation\, d’une grange et de ses annexes en locaux multifonctions
+  communaux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

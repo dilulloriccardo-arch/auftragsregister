@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:06d676b1-239a-4c7a-a364-acfc87810bcc-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270120T150000Z
+SUMMARY:Submission deadline: BAV 27635 Wohnsiedlung Harsplen Witikon\, Neub
+ au - BKP 175 Grundwasserabdichtungen
+DESCRIPTION:Public buyer: HBD - Amt für Hochbauten (AHB)\nSubmission deadl
+ ine: 20 Jan 2027\, 16:00\nIn the register: https://auftragsregister.ch/e
+ n/auftrag/06d676b1-239a-4c7a-a364-acfc87810bcc/\nOfficial publication: htt
+ ps://www.simap.ch/en/project-detail/06d676b1-239a-4c7a-a364-acfc87810bcc
+URL:https://auftragsregister.ch/en/auftrag/06d676b1-239a-4c7a-a364-acfc8781
+ 0bcc/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: BAV 27635 Wohnsiedlung Harsplen Witikon\, 
+ Neubau - BKP 175 Grundwasserabdichtungen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:172a09e0-6d2c-412a-9ed8-84ff6ad238b1-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270226T225900Z
+SUMMARY:Délai de remise : P21.0442 – Bern\, POCA\, Bahnhofplatz 10\, a
+ ménagements locatifs\, travaux de plâtrerie
+DESCRIPTION:Acheteur public : Amt für Grundstücke und Gebäude des Kant
+ ons Bern (AGG)\nDélai de remise : 26.02.2027\, 23 h 59\nDans le reg
+ istre : https://auftragsregister.ch/fr/auftrag/172a09e0-6d2c-412a-9ed8-8
+ 4ff6ad238b1/\nPublication officielle : https://www.simap.ch/fr/project-d
+ etail/172a09e0-6d2c-412a-9ed8-84ff6ad238b1
+URL:https://auftragsregister.ch/fr/auftrag/172a09e0-6d2c-412a-9ed8-84ff6ad2
+ 38b1/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : P21.0442 – Bern\, POCA\, Bahnhofplatz 10
+ \, aménagements locatifs\, travaux de plâtrerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

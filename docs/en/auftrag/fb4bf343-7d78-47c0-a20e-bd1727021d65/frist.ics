@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:fb4bf343-7d78-47c0-a20e-bd1727021d65-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270108T225900Z
+SUMMARY:Submission deadline: Böztal (Hornussen) AO\, K116
+DESCRIPTION:Public buyer: Abteilung Tiefbau (ATB)\nSubmission deadline: 8 
+ Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch/en/auftrag
+ /fb4bf343-7d78-47c0-a20e-bd1727021d65/\nOfficial publication: https://www.
+ simap.ch/en/project-detail/fb4bf343-7d78-47c0-a20e-bd1727021d65
+URL:https://auftragsregister.ch/en/auftrag/fb4bf343-7d78-47c0-a20e-bd172702
+ 1d65/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Böztal (Hornussen) AO\, K116
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

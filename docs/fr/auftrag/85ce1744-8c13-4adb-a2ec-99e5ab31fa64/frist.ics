@@ -1,0 +1,31 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:85ce1744-8c13-4adb-a2ec-99e5ab31fa64-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261223T160000Z
+SUMMARY:Délai de remise : Ferme Hoffman – Prés-Grange - Réaménageme
+ nt d’une habitation\, d’une grange et de ses annexes en locaux multifo
+ nctions communaux
+DESCRIPTION:Acheteur public : Commune de Corsier (CBN Architectes)\nDéla
+ i de remise : 23.12.2026\, 17 h 00\nDans le registre : https://auf
+ tragsregister.ch/fr/auftrag/85ce1744-8c13-4adb-a2ec-99e5ab31fa64/\nPublica
+ tion officielle : https://www.simap.ch/fr/project-detail/85ce1744-8c13-4
+ adb-a2ec-99e5ab31fa64
+URL:https://auftragsregister.ch/fr/auftrag/85ce1744-8c13-4adb-a2ec-99e5ab31
+ fa64/
+LOCATION:Corsier
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Ferme Hoffman – Prés-Grange - Réaména
+ gement d’une habitation\, d’une grange et de ses annexes en locaux mul
+ tifonctions communaux
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

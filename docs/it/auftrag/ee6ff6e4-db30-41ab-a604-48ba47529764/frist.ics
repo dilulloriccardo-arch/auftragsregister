@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ee6ff6e4-db30-41ab-a604-48ba47529764-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:Scadenza: Ecole de Grône - Agrandissement du centre scolaire
+DESCRIPTION:Ente pubblico: Commune de Grône\nScadenza: 19.01.2027\nNel reg
+ istro: https://auftragsregister.ch/it/auftrag/ee6ff6e4-db30-41ab-a604-48ba
+ 47529764/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail
+ /ee6ff6e4-db30-41ab-a604-48ba47529764
+URL:https://auftragsregister.ch/it/auftrag/ee6ff6e4-db30-41ab-a604-48ba4752
+ 9764/
+LOCATION:Grône
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Ecole de Grône - Agrandissement du centre scolaire
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

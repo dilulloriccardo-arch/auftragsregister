@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a4316195-85c4-4723-b014-a861fabd64fe-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261218T225500Z
+SUMMARY:Scadenza: Bushaltestellen 2027\, Los 1
+DESCRIPTION:Ente pubblico: Stadt Chur\, Tiefbaudienste\nScadenza: 18.12.202
+ 6\, 23:55\nNel registro: https://auftragsregister.ch/it/auftrag/a4316195-8
+ 5c4-4723-b014-a861fabd64fe/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/a4316195-85c4-4723-b014-a861fabd64fe
+URL:https://auftragsregister.ch/it/auftrag/a4316195-85c4-4723-b014-a861fabd
+ 64fe/
+LOCATION:Chur
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Bushaltestellen 2027\, Los 1
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

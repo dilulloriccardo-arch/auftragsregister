@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:c67b386c-a3ad-4c61-9cf1-01469182864d-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20261221T225900Z
+SUMMARY:Délai de remise : 244 Lüftungsanlage
+DESCRIPTION:Acheteur public : Stadt Wetzikon Immobilien\nDélai de remise
+  : 21.12.2026\, 23 h 59\nDans le registre : https://auftragsregist
+ er.ch/fr/auftrag/c67b386c-a3ad-4c61-9cf1-01469182864d/\nPublication offici
+ elle : https://www.simap.ch/fr/project-detail/c67b386c-a3ad-4c61-9cf1-01
+ 469182864d
+URL:https://auftragsregister.ch/fr/auftrag/c67b386c-a3ad-4c61-9cf1-01469182
+ 864d/
+LOCATION:Wetzikon
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : 244 Lüftungsanlage
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

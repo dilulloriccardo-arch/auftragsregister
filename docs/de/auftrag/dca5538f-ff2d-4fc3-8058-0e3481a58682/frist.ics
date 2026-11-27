@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:dca5538f-ff2d-4fc3-8058-0e3481a58682-frist@auftragsregister.ch
+DTSTAMP:20261127T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Eingabefrist: Ersatz Telefonie
+DESCRIPTION:Auftraggeber: Schweizerische Epilepsie Stiftung\nEingabefrist: 
+ 22.01.2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftr
+ ag/dca5538f-ff2d-4fc3-8058-0e3481a58682/\nAmtliche Publikation: https://ww
+ w.simap.ch/de/project-detail/dca5538f-ff2d-4fc3-8058-0e3481a58682
+URL:https://auftragsregister.ch/de/auftrag/dca5538f-ff2d-4fc3-8058-0e3481a5
+ 8682/
+LOCATION:Zürich
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Ersatz Telefonie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
