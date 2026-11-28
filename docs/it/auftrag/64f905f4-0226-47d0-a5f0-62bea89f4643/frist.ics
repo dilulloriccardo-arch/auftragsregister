@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:64f905f4-0226-47d0-a5f0-62bea89f4643-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Scadenza: Spital Bülach\, Erweiterung und Erneuerung Behandlungstr
+ akt\, SKP 273.40 Schachtabschlüsse aus Holz
+DESCRIPTION:Ente pubblico: Spital Bülach AG (Immopro)\nScadenza: 22.01.202
+ 7\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/64f905f4-0
+ 226-47d0-a5f0-62bea89f4643/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/64f905f4-0226-47d0-a5f0-62bea89f4643
+URL:https://auftragsregister.ch/it/auftrag/64f905f4-0226-47d0-a5f0-62bea89f
+ 4643/
+LOCATION:Bülach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Spital Bülach\, Erweiterung und Erneuerung Behandlun
+ gstrakt\, SKP 273.40 Schachtabschlüsse aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

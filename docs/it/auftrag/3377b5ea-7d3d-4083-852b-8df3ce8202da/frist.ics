@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3377b5ea-7d3d-4083-852b-8df3ce8202da-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270108T130000Z
+SUMMARY:Scadenza: Beschaffung von 3 Personentransportfahrzeuge (PTF 2) 2 & 
+ 1 Mehrzweckfahrzeug (MZF)
+DESCRIPTION:Ente pubblico: Gemeinde Zurzach\nScadenza: 08.01.2027\, 14:00\n
+ Nel registro: https://auftragsregister.ch/it/auftrag/3377b5ea-7d3d-4083-85
+ 2b-8df3ce8202da/\nPubblicazione ufficiale: https://www.simap.ch/it/project
+ -detail/3377b5ea-7d3d-4083-852b-8df3ce8202da
+URL:https://auftragsregister.ch/it/auftrag/3377b5ea-7d3d-4083-852b-8df3ce82
+ 02da/
+LOCATION:5330 Bad Zurzach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Beschaffung von 3 Personentransportfahrzeuge (PTF 2) 
+ 2 & 1 Mehrzweckfahrzeug (MZF)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

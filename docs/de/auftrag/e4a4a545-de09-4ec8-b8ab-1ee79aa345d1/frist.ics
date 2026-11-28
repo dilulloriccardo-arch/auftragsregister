@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4a4a545-de09-4ec8-b8ab-1ee79aa345d1-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270209T100000Z
+SUMMARY:Eingabefrist: Sacs poubelles - Contrat-Cadre
+DESCRIPTION:Auftraggeber: Genève Aéroport\nEingabefrist: 09.02.2027\, 11.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/e4a4a545-de09
+ -4ec8-b8ab-1ee79aa345d1/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/e4a4a545-de09-4ec8-b8ab-1ee79aa345d1
+URL:https://auftragsregister.ch/de/auftrag/e4a4a545-de09-4ec8-b8ab-1ee79aa3
+ 45d1/
+LOCATION:GENEVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sacs poubelles - Contrat-Cadre
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

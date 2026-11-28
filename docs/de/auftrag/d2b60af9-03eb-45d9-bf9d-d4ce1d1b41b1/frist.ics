@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:d2b60af9-03eb-45d9-bf9d-d4ce1d1b41b1-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270111T100000Z
+SUMMARY:Eingabefrist: Gesamterneuerung Lido Hallenbad Weggis - BKP 201 Abbr
+ uch- und Aushubarbeiten
+DESCRIPTION:Auftraggeber: Gemeinde Weggis (Freitag Architektur GmbH)\nEinga
+ befrist: 11.01.2027\, 11.00 Uhr\nIm Register: https://auftragsregister.ch
+ /de/auftrag/d2b60af9-03eb-45d9-bf9d-d4ce1d1b41b1/\nAmtliche Publikation: h
+ ttps://www.simap.ch/de/project-detail/d2b60af9-03eb-45d9-bf9d-d4ce1d1b41b1
+URL:https://auftragsregister.ch/de/auftrag/d2b60af9-03eb-45d9-bf9d-d4ce1d1b
+ 41b1/
+LOCATION:Weggis
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Gesamterneuerung Lido Hallenbad Weggis - BKP 201 
+ Abbruch- und Aushubarbeiten
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

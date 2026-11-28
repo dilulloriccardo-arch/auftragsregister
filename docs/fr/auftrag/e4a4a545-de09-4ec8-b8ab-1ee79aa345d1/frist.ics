@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4a4a545-de09-4ec8-b8ab-1ee79aa345d1-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270209T100000Z
+SUMMARY:Délai de remise : Sacs poubelles - Contrat-Cadre
+DESCRIPTION:Acheteur public : Genève Aéroport\nDélai de remise : 09.
+ 02.2027\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/e4a4a545-de09-4ec8-b8ab-1ee79aa345d1/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/e4a4a545-de09-4ec8-b8ab-1ee79aa345
+ d1
+URL:https://auftragsregister.ch/fr/auftrag/e4a4a545-de09-4ec8-b8ab-1ee79aa3
+ 45d1/
+LOCATION:GENEVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sacs poubelles - Contrat-Cadre
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

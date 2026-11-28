@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4ec05d4-7ef7-49db-9afe-7fa324949ce6-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Eingabefrist: Stahlbauarbeiten Bushaltestelle Bärenplatz Kreuzling
+ en
+DESCRIPTION:Auftraggeber: Bauverwaltung Kreuzlingen (Grosjean Architekten A
+ G)\nEingabefrist: 29.01.2027\, 12.00 Uhr\nIm Register: https://auftragsre
+ gister.ch/de/auftrag/b4ec05d4-7ef7-49db-9afe-7fa324949ce6/\nAmtliche Publi
+ kation: https://www.simap.ch/de/project-detail/b4ec05d4-7ef7-49db-9afe-7fa
+ 324949ce6
+URL:https://auftragsregister.ch/de/auftrag/b4ec05d4-7ef7-49db-9afe-7fa32494
+ 9ce6/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Stahlbauarbeiten Bushaltestelle Bärenplatz Kreuz
+ lingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

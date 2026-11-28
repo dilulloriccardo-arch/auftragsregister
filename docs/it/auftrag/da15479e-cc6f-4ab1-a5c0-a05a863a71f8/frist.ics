@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da15479e-cc6f-4ab1-a5c0-a05a863a71f8-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Scadenza: Spital Bülach\, Erweiterung und Erneuerung Behandlungstr
+ akt\, SKP 272.21 allg. Metallbauarbeiten (Stahlbau)
+DESCRIPTION:Ente pubblico: Spital Bülach AG (Immopro)\nScadenza: 22.01.202
+ 7\, 12:00\nNel registro: https://auftragsregister.ch/it/auftrag/da15479e-c
+ c6f-4ab1-a5c0-a05a863a71f8/\nPubblicazione ufficiale: https://www.simap.ch
+ /it/project-detail/da15479e-cc6f-4ab1-a5c0-a05a863a71f8
+URL:https://auftragsregister.ch/it/auftrag/da15479e-cc6f-4ab1-a5c0-a05a863a
+ 71f8/
+LOCATION:Bülach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Spital Bülach\, Erweiterung und Erneuerung Behandlun
+ gstrakt\, SKP 272.21 allg. Metallbauarbeiten (Stahlbau)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

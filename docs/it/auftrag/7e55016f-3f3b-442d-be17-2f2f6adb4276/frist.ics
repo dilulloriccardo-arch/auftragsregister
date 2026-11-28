@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:7e55016f-3f3b-442d-be17-2f2f6adb4276-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20261218T070000Z
+SUMMARY:Scadenza: Neubau Wasserversorgung Lehn\, Sanitärarbeiten untere Dr
+ uckzone
+DESCRIPTION:Ente pubblico: Wasserversorgung Lehn (Tagmar AG)\nScadenza: 18.
+ 12.2026\, 08:00\nNel registro: https://auftragsregister.ch/it/auftrag/7e55
+ 016f-3f3b-442d-be17-2f2f6adb4276/\nPubblicazione ufficiale: https://www.si
+ map.ch/it/project-detail/7e55016f-3f3b-442d-be17-2f2f6adb4276
+URL:https://auftragsregister.ch/it/auftrag/7e55016f-3f3b-442d-be17-2f2f6adb
+ 4276/
+LOCATION:Escholzmatt
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Neubau Wasserversorgung Lehn\, Sanitärarbeiten unter
+ e Druckzone
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f2a83b34-3f36-4a2c-8b54-d7025d366dff-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Submission deadline: ARA Briglina Realisierung - BKP 351.01 Sanitä
+ rinstallationen
+DESCRIPTION:Public buyer: Zweckverband ARA Briglina – Ausbau und EMV\nSub
+ mission deadline: 22 Jan 2027\, 12:00\nIn the register: https://auftrags
+ register.ch/en/auftrag/f2a83b34-3f36-4a2c-8b54-d7025d366dff/\nOfficial pub
+ lication: https://www.simap.ch/en/project-detail/f2a83b34-3f36-4a2c-8b54-d
+ 7025d366dff
+URL:https://auftragsregister.ch/en/auftrag/f2a83b34-3f36-4a2c-8b54-d7025d36
+ 6dff/
+LOCATION:Gamsen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: ARA Briglina Realisierung - BKP 351.01 San
+ itärinstallationen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

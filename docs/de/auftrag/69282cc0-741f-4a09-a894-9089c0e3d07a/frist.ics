@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69282cc0-741f-4a09-a894-9089c0e3d07a-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270208T100000Z
+SUMMARY:Eingabefrist: Filtres pour installations de ventilation – Contrat
+ -Cadre
+DESCRIPTION:Auftraggeber: Genève Aéroport\nEingabefrist: 08.02.2027\, 11.
+ 00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/69282cc0-741f
+ -4a09-a894-9089c0e3d07a/\nAmtliche Publikation: https://www.simap.ch/de/pr
+ oject-detail/69282cc0-741f-4a09-a894-9089c0e3d07a
+URL:https://auftragsregister.ch/de/auftrag/69282cc0-741f-4a09-a894-9089c0e3
+ d07a/
+LOCATION:GENEVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Filtres pour installations de ventilation – Con
+ trat-Cadre
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

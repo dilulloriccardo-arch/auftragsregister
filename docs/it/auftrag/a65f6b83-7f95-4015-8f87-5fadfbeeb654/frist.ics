@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a65f6b83-7f95-4015-8f87-5fadfbeeb654-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Scadenza: Wasserleitungsersatz Dorfstrasse - Pilgerstrasse
+DESCRIPTION:Ente pubblico: Gemeindeverband Wasserversorgung Oberhof-Wölfli
+ nswil\nScadenza: 29.01.2027\, 23:59\nNel registro: https://auftragsregiste
+ r.ch/it/auftrag/a65f6b83-7f95-4015-8f87-5fadfbeeb654/\nPubblicazione uffic
+ iale: https://www.simap.ch/it/project-detail/a65f6b83-7f95-4015-8f87-5fadf
+ beeb654
+URL:https://auftragsregister.ch/it/auftrag/a65f6b83-7f95-4015-8f87-5fadfbee
+ b654/
+LOCATION:Oberhof
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Wasserleitungsersatz Dorfstrasse - Pilgerstrasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

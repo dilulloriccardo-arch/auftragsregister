@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4be548d7-9e78-4079-acf5-368a90918f8b-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:1
+DTSTART:20270125T225900Z
+SUMMARY:Submission deadline: DHCP\, DNS\, IP-Adressmanagement (DDI)
+DESCRIPTION:Public buyer: SBB CFF FFS Infrastruktur Telecom\nSubmission dea
+ dline: 25 Jan 2027\, 23:59\nIn the register: https://auftragsregister.ch
+ /en/auftrag/4be548d7-9e78-4079-acf5-368a90918f8b/\nOfficial publication: h
+ ttps://www.simap.ch/en/project-detail/4be548d7-9e78-4079-acf5-368a90918f8b
+URL:https://auftragsregister.ch/en/auftrag/4be548d7-9e78-4079-acf5-368a9091
+ 8f8b/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: DHCP\, DNS\, IP-Adressmanagement (DDI)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

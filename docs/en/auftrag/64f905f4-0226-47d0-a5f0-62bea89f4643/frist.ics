@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:64f905f4-0226-47d0-a5f0-62bea89f4643-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Submission deadline: Spital Bülach\, Erweiterung und Erneuerung Be
+ handlungstrakt\, SKP 273.40 Schachtabschlüsse aus Holz
+DESCRIPTION:Public buyer: Spital Bülach AG (Immopro)\nSubmission deadline:
+  22 Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/64f905f4-0226-47d0-a5f0-62bea89f4643/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/64f905f4-0226-47d0-a5f0-62bea89f4643
+URL:https://auftragsregister.ch/en/auftrag/64f905f4-0226-47d0-a5f0-62bea89f
+ 4643/
+LOCATION:Bülach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Spital Bülach\, Erweiterung und Erneuerun
+ g Behandlungstrakt\, SKP 273.40 Schachtabschlüsse aus Holz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

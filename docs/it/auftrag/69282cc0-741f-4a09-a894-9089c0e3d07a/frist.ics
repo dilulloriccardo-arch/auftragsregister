@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69282cc0-741f-4a09-a894-9089c0e3d07a-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270208T100000Z
+SUMMARY:Scadenza: Filtres pour installations de ventilation – Contrat-Cad
+ re
+DESCRIPTION:Ente pubblico: Genève Aéroport\nScadenza: 08.02.2027\, 11:00\
+ nNel registro: https://auftragsregister.ch/it/auftrag/69282cc0-741f-4a09-a
+ 894-9089c0e3d07a/\nPubblicazione ufficiale: https://www.simap.ch/it/projec
+ t-detail/69282cc0-741f-4a09-a894-9089c0e3d07a
+URL:https://auftragsregister.ch/it/auftrag/69282cc0-741f-4a09-a894-9089c0e3
+ d07a/
+LOCATION:GENEVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Filtres pour installations de ventilation – Contrat
+ -Cadre
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

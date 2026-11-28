@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ffc6a13a-e5e6-4b89-93da-2a68df510e73-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Scadenza: Construction de l'EPSM Chanella à Rossinière - CFC 222 
+ Ferblanterie et couverture photovoltaîques
+DESCRIPTION:Ente pubblico: Fondation Cogest'ems (quartal)\nScadenza: 29.01.
+ 2027\, 23:59\nNel registro: https://auftragsregister.ch/it/auftrag/ffc6a13
+ a-e5e6-4b89-93da-2a68df510e73/\nPubblicazione ufficiale: https://www.simap
+ .ch/it/project-detail/ffc6a13a-e5e6-4b89-93da-2a68df510e73
+URL:https://auftragsregister.ch/it/auftrag/ffc6a13a-e5e6-4b89-93da-2a68df51
+ 0e73/
+LOCATION:Rossinière
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: Construction de l'EPSM Chanella à Rossinière - CFC 
+ 222 Ferblanterie et couverture photovoltaîques
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3377b5ea-7d3d-4083-852b-8df3ce8202da-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270108T130000Z
+SUMMARY:Submission deadline: Procurement of 3 personnel transport vehicles 
+ and 1 multi-purpose vehicle
+DESCRIPTION:Public buyer: Gemeinde Zurzach\nSubmission deadline: 8 Jan 20
+ 27\, 14:00\nIn the register: https://auftragsregister.ch/en/auftrag/3377b5
+ ea-7d3d-4083-852b-8df3ce8202da/\nOfficial publication: https://www.simap.c
+ h/en/project-detail/3377b5ea-7d3d-4083-852b-8df3ce8202da
+URL:https://auftragsregister.ch/en/auftrag/3377b5ea-7d3d-4083-852b-8df3ce82
+ 02da/
+LOCATION:5330 Bad Zurzach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Procurement of 3 personnel transport vehic
+ les and 1 multi-purpose vehicle
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

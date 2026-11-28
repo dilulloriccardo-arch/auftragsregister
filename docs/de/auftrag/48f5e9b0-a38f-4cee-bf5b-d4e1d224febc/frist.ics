@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:48f5e9b0-a38f-4cee-bf5b-d4e1d224febc-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270205T153000Z
+SUMMARY:Eingabefrist: Eisanlagen Lido\, Walter Denzler-Strasse 4\, 8640 Rap
+ perswil - BKP 246 Kälteersatz
+DESCRIPTION:Auftraggeber: Stadt Rapperswil-Jona\; Ressort Bau und Liegensch
+ aften\; Fachbereich Infrastruktur\nEingabefrist: 05.02.2027\, 16.30 Uhr\n
+ Im Register: https://auftragsregister.ch/de/auftrag/48f5e9b0-a38f-4cee-bf5
+ b-d4e1d224febc/\nAmtliche Publikation: https://www.simap.ch/de/project-det
+ ail/48f5e9b0-a38f-4cee-bf5b-d4e1d224febc
+URL:https://auftragsregister.ch/de/auftrag/48f5e9b0-a38f-4cee-bf5b-d4e1d224
+ febc/
+LOCATION:Rapperswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Eisanlagen Lido\, Walter Denzler-Strasse 4\, 8640
+  Rapperswil - BKP 246 Kälteersatz
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

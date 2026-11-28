@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:48f5e9b0-a38f-4cee-bf5b-d4e1d224febc-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270205T153000Z
+SUMMARY:Submission deadline: Eisanlagen Lido\, Walter Denzler-Strasse 4\, 8
+ 640 Rapperswil - BKP 246 Replacement refrigeration system
+DESCRIPTION:Public buyer: Stadt Rapperswil-Jona\; Ressort Bau und Liegensch
+ aften\; Fachbereich Infrastruktur\nSubmission deadline: 5 Feb 2027\, 16:
+ 30\nIn the register: https://auftragsregister.ch/en/auftrag/48f5e9b0-a38f-
+ 4cee-bf5b-d4e1d224febc/\nOfficial publication: https://www.simap.ch/en/pro
+ ject-detail/48f5e9b0-a38f-4cee-bf5b-d4e1d224febc
+URL:https://auftragsregister.ch/en/auftrag/48f5e9b0-a38f-4cee-bf5b-d4e1d224
+ febc/
+LOCATION:Rapperswil
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Eisanlagen Lido\, Walter Denzler-Strasse 4
+ \, 8640 Rapperswil - BKP 246 Replacement refrigeration system
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

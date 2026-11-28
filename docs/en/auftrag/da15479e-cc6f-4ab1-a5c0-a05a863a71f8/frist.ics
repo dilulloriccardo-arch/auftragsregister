@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da15479e-cc6f-4ab1-a5c0-a05a863a71f8-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Submission deadline: Spital Bülach\, Erweiterung und Erneuerung Be
+ handlungstrakt\, SKP 272.21 allg. Metallbauarbeiten (Stahlbau)
+DESCRIPTION:Public buyer: Spital Bülach AG (Immopro)\nSubmission deadline:
+  22 Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/da15479e-cc6f-4ab1-a5c0-a05a863a71f8/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/da15479e-cc6f-4ab1-a5c0-a05a863a71f8
+URL:https://auftragsregister.ch/en/auftrag/da15479e-cc6f-4ab1-a5c0-a05a863a
+ 71f8/
+LOCATION:Bülach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Spital Bülach\, Erweiterung und Erneuerun
+ g Behandlungstrakt\, SKP 272.21 allg. Metallbauarbeiten (Stahlbau)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

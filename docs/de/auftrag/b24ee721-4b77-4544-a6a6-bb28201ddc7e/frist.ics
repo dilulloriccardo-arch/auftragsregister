@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b24ee721-4b77-4544-a6a6-bb28201ddc7e-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Eingabefrist: Sanierung Dorfstrasse - Pilgerstrasse mit Werkleitung
+ en und Bachdurchlässen
+DESCRIPTION:Auftraggeber: Gemeinde Oberhof\nEingabefrist: 29.01.2027\, 23.5
+ 9 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/b24ee721-4b77-
+ 4544-a6a6-bb28201ddc7e/\nAmtliche Publikation: https://www.simap.ch/de/pro
+ ject-detail/b24ee721-4b77-4544-a6a6-bb28201ddc7e
+URL:https://auftragsregister.ch/de/auftrag/b24ee721-4b77-4544-a6a6-bb28201d
+ dc7e/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Sanierung Dorfstrasse - Pilgerstrasse mit Werklei
+ tungen und Bachdurchlässen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

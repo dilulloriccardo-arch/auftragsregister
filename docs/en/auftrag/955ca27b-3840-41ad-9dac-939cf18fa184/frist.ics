@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:955ca27b-3840-41ad-9dac-939cf18fa184-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Submission deadline: Spital Bülach\, Erweiterung und Erneuerung Be
+ handlungstrakt\, SKP 277.20 Feststehende Elementwände
+DESCRIPTION:Public buyer: Spital Bülach AG (Immopro)\nSubmission deadline:
+  22 Jan 2027\, 12:00\nIn the register: https://auftragsregister.ch/en/au
+ ftrag/955ca27b-3840-41ad-9dac-939cf18fa184/\nOfficial publication: https:/
+ /www.simap.ch/en/project-detail/955ca27b-3840-41ad-9dac-939cf18fa184
+URL:https://auftragsregister.ch/en/auftrag/955ca27b-3840-41ad-9dac-939cf18f
+ a184/
+LOCATION:Bülach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Spital Bülach\, Erweiterung und Erneuerun
+ g Behandlungstrakt\, SKP 277.20 Feststehende Elementwände
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

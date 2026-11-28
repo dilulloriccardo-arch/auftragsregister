@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e4a4a545-de09-4ec8-b8ab-1ee79aa345d1-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270209T100000Z
+SUMMARY:Submission deadline: Sacs poubelles - Contrat-Cadre
+DESCRIPTION:Public buyer: Genève Aéroport\nSubmission deadline: 9 Feb 2
+ 027\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/e4a4a
+ 545-de09-4ec8-b8ab-1ee79aa345d1/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/e4a4a545-de09-4ec8-b8ab-1ee79aa345d1
+URL:https://auftragsregister.ch/en/auftrag/e4a4a545-de09-4ec8-b8ab-1ee79aa3
+ 45d1/
+LOCATION:GENEVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Sacs poubelles - Contrat-Cadre
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

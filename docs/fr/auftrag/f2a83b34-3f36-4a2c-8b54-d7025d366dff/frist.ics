@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:f2a83b34-3f36-4a2c-8b54-d7025d366dff-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Délai de remise : Réalisation ARA Briglina - 351.01 Installatio
+ ns sanitaires
+DESCRIPTION:Acheteur public : Zweckverband ARA Briglina – Ausbau und EM
+ V\nDélai de remise : 22.01.2027\, 12 h 00\nDans le registre : htt
+ ps://auftragsregister.ch/fr/auftrag/f2a83b34-3f36-4a2c-8b54-d7025d366dff/\
+ nPublication officielle : https://www.simap.ch/fr/project-detail/f2a83b3
+ 4-3f36-4a2c-8b54-d7025d366dff
+URL:https://auftragsregister.ch/fr/auftrag/f2a83b34-3f36-4a2c-8b54-d7025d36
+ 6dff/
+LOCATION:Gamsen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Réalisation ARA Briglina - 351.01 Install
+ ations sanitaires
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

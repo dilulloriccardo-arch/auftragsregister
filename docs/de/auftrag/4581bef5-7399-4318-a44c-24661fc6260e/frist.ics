@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4581bef5-7399-4318-a44c-24661fc6260e-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270126T225900Z
+SUMMARY:Eingabefrist: PCAM 11089 – Düdingen\, Valtraloc - Bauarbeiten
+DESCRIPTION:Auftraggeber: Tiefbauamt des Kantons Freiburg\nEingabefrist: 26
+ .01.2027\, 23.59 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag
+ /4581bef5-7399-4318-a44c-24661fc6260e/\nAmtliche Publikation: https://www.
+ simap.ch/de/project-detail/4581bef5-7399-4318-a44c-24661fc6260e
+URL:https://auftragsregister.ch/de/auftrag/4581bef5-7399-4318-a44c-24661fc6
+ 260e/
+LOCATION:Düdingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: PCAM 11089 – Düdingen\, Valtraloc - Bauarbeite
+ n
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

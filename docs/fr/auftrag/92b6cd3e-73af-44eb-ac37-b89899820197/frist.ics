@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92b6cd3e-73af-44eb-ac37-b89899820197-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270129T140000Z
+SUMMARY:Délai de remise : Sous-station de Zollikofen – Travaux de maç
+ onnerie
+DESCRIPTION:Acheteur public : Schweizerische Bundesbahnen SBB\, Infrastru
+ ktur - Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\n
+ Délai de remise : 29.01.2027\, 15 h 00\nDans le registre : https:
+ //auftragsregister.ch/fr/auftrag/92b6cd3e-73af-44eb-ac37-b89899820197/\nPu
+ blication officielle : https://www.simap.ch/fr/project-detail/92b6cd3e-7
+ 3af-44eb-ac37-b89899820197
+URL:https://auftragsregister.ch/fr/auftrag/92b6cd3e-73af-44eb-ac37-b8989982
+ 0197/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Sous-station de Zollikofen – Travaux de 
+ maçonnerie
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4ec05d4-7ef7-49db-9afe-7fa324949ce6-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Délai de remise : Stahlbauarbeiten Bushaltestelle Bärenplatz Kr
+ euzlingen
+DESCRIPTION:Acheteur public : Bauverwaltung Kreuzlingen (Grosjean Archite
+ kten AG)\nDélai de remise : 29.01.2027\, 12 h 00\nDans le registre
+  : https://auftragsregister.ch/fr/auftrag/b4ec05d4-7ef7-49db-9afe-7fa324
+ 949ce6/\nPublication officielle : https://www.simap.ch/fr/project-detail
+ /b4ec05d4-7ef7-49db-9afe-7fa324949ce6
+URL:https://auftragsregister.ch/fr/auftrag/b4ec05d4-7ef7-49db-9afe-7fa32494
+ 9ce6/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Stahlbauarbeiten Bushaltestelle Bärenplat
+ z Kreuzlingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

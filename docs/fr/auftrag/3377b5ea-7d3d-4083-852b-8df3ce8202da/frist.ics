@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:3377b5ea-7d3d-4083-852b-8df3ce8202da-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270108T130000Z
+SUMMARY:Délai de remise : Beschaffung von 3 Personentransportfahrzeuge (
+ PTF 2) 2 & 1 Mehrzweckfahrzeug (MZF)
+DESCRIPTION:Acheteur public : Gemeinde Zurzach\nDélai de remise : 08.0
+ 1.2027\, 14 h 00\nDans le registre : https://auftragsregister.ch/fr/
+ auftrag/3377b5ea-7d3d-4083-852b-8df3ce8202da/\nPublication officielle : 
+ https://www.simap.ch/fr/project-detail/3377b5ea-7d3d-4083-852b-8df3ce8202d
+ a
+URL:https://auftragsregister.ch/fr/auftrag/3377b5ea-7d3d-4083-852b-8df3ce82
+ 02da/
+LOCATION:5330 Bad Zurzach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Beschaffung von 3 Personentransportfahrzeu
+ ge (PTF 2) 2 & 1 Mehrzweckfahrzeug (MZF)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:a65f6b83-7f95-4015-8f87-5fadfbeeb654-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270129T225900Z
+SUMMARY:Submission deadline: Wasserleitungsersatz Dorfstrasse - Pilgerstras
+ se
+DESCRIPTION:Public buyer: Gemeindeverband Wasserversorgung Oberhof-Wölflin
+ swil\nSubmission deadline: 29 Jan 2027\, 23:59\nIn the register: https:/
+ /auftragsregister.ch/en/auftrag/a65f6b83-7f95-4015-8f87-5fadfbeeb654/\nOff
+ icial publication: https://www.simap.ch/en/project-detail/a65f6b83-7f95-40
+ 15-8f87-5fadfbeeb654
+URL:https://auftragsregister.ch/en/auftrag/a65f6b83-7f95-4015-8f87-5fadfbee
+ b654/
+LOCATION:Oberhof
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Wasserleitungsersatz Dorfstrasse - Pilgers
+ trasse
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

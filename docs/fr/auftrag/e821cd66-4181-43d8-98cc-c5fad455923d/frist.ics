@@ -1,0 +1,30 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e821cd66-4181-43d8-98cc-c5fad455923d-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270201T110000Z
+SUMMARY:Délai de remise : BKP 250.0 Installations sanitaires - Construct
+ ion d'un bâtiment pour les pompiers et les services techniques\, avec cen
+ tre de collecte principal Gubristhof\, 8104 Weiningen
+DESCRIPTION:Acheteur public : Rapp AG\nDélai de remise : 01.02.2027\, 
+ 12 h 00\nDans le registre : https://auftragsregister.ch/fr/auftrag/e
+ 821cd66-4181-43d8-98cc-c5fad455923d/\nPublication officielle : https://w
+ ww.simap.ch/fr/project-detail/e821cd66-4181-43d8-98cc-c5fad455923d
+URL:https://auftragsregister.ch/fr/auftrag/e821cd66-4181-43d8-98cc-c5fad455
+ 923d/
+LOCATION:Weiningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : BKP 250.0 Installations sanitaires - Const
+ ruction d'un bâtiment pour les pompiers et les services techniques\, avec
+  centre de collecte principal Gubristhof\, 8104 Weiningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:955ca27b-3840-41ad-9dac-939cf18fa184-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Délai de remise : Hôpital de Bülach\, Agrandissement et rénov
+ ation de l’aile de traitement D\, CFC 277.20 Cloisons fixes
+DESCRIPTION:Acheteur public : Spital Bülach AG (Immopro)\nDélai de remi
+ se : 22.01.2027\, 12 h 00\nDans le registre : https://auftragsregi
+ ster.ch/fr/auftrag/955ca27b-3840-41ad-9dac-939cf18fa184/\nPublication offi
+ cielle : https://www.simap.ch/fr/project-detail/955ca27b-3840-41ad-9dac-
+ 939cf18fa184
+URL:https://auftragsregister.ch/fr/auftrag/955ca27b-3840-41ad-9dac-939cf18f
+ a184/
+LOCATION:Bülach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Hôpital de Bülach\, Agrandissement et r
+ énovation de l’aile de traitement D\, CFC 277.20 Cloisons fixes
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

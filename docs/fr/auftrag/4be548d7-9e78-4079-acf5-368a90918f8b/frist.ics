@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:4be548d7-9e78-4079-acf5-368a90918f8b-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:1
+DTSTART:20270125T225900Z
+SUMMARY:Délai de remise : DHCP\, DNS\, IP-Adressmanagement (DDI)
+DESCRIPTION:Acheteur public : SBB CFF FFS Infrastruktur Telecom\nDélai d
+ e remise : 25.01.2027\, 23 h 59\nDans le registre : https://auftra
+ gsregister.ch/fr/auftrag/4be548d7-9e78-4079-acf5-368a90918f8b/\nPublicatio
+ n officielle : https://www.simap.ch/fr/project-detail/4be548d7-9e78-4079
+ -acf5-368a90918f8b
+URL:https://auftragsregister.ch/fr/auftrag/4be548d7-9e78-4079-acf5-368a9091
+ 8f8b/
+LOCATION:Bern
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : DHCP\, DNS\, IP-Adressmanagement (DDI)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

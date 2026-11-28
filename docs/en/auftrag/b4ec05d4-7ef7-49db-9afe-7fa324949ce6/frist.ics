@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:b4ec05d4-7ef7-49db-9afe-7fa324949ce6-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270129T110000Z
+SUMMARY:Submission deadline: Steelwork for bus stop Bärenplatz in Kreuzlin
+ gen
+DESCRIPTION:Public buyer: Bauverwaltung Kreuzlingen (Grosjean Architekten A
+ G)\nSubmission deadline: 29 Jan 2027\, 12:00\nIn the register: https://a
+ uftragsregister.ch/en/auftrag/b4ec05d4-7ef7-49db-9afe-7fa324949ce6/\nOffic
+ ial publication: https://www.simap.ch/en/project-detail/b4ec05d4-7ef7-49db
+ -9afe-7fa324949ce6
+URL:https://auftragsregister.ch/en/auftrag/b4ec05d4-7ef7-49db-9afe-7fa32494
+ 9ce6/
+LOCATION:Kreuzlingen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Steelwork for bus stop Bärenplatz in Kreu
+ zlingen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

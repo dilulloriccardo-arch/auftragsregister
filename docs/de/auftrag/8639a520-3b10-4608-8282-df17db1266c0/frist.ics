@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:8639a520-3b10-4608-8282-df17db1266c0-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270201T110000Z
+SUMMARY:Eingabefrist: BKP 242.0 HLK - Neubau Feuerwehr- und Werkhofgebäude
+  mit Hauptsammelstelle Gubristhof\, 8104 Weiningen
+DESCRIPTION:Auftraggeber: Rapp AG\nEingabefrist: 01.02.2027\, 12.00 Uhr\nI
+ m Register: https://auftragsregister.ch/de/auftrag/8639a520-3b10-4608-8282
+ -df17db1266c0/\nAmtliche Publikation: https://www.simap.ch/de/project-deta
+ il/8639a520-3b10-4608-8282-df17db1266c0
+URL:https://auftragsregister.ch/de/auftrag/8639a520-3b10-4608-8282-df17db12
+ 66c0/
+LOCATION:Weiningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: BKP 242.0 HLK - Neubau Feuerwehr- und Werkhofgeb
+ äude mit Hauptsammelstelle Gubristhof\, 8104 Weiningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

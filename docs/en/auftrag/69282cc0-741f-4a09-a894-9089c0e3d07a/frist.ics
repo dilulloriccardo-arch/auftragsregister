@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69282cc0-741f-4a09-a894-9089c0e3d07a-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270208T100000Z
+SUMMARY:Submission deadline: Filtres pour installations de ventilation – 
+ Contrat-Cadre
+DESCRIPTION:Public buyer: Genève Aéroport\nSubmission deadline: 8 Feb 2
+ 027\, 11:00\nIn the register: https://auftragsregister.ch/en/auftrag/69282
+ cc0-741f-4a09-a894-9089c0e3d07a/\nOfficial publication: https://www.simap.
+ ch/en/project-detail/69282cc0-741f-4a09-a894-9089c0e3d07a
+URL:https://auftragsregister.ch/en/auftrag/69282cc0-741f-4a09-a894-9089c0e3
+ d07a/
+LOCATION:GENEVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: Filtres pour installations de ventilation 
+ – Contrat-Cadre
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

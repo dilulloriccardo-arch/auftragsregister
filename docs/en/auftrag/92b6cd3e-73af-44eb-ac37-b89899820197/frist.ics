@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:92b6cd3e-73af-44eb-ac37-b89899820197-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270129T140000Z
+SUMMARY:Submission deadline: UW Zollikofen -Baumeisterarbeiten-
+DESCRIPTION:Public buyer: Schweizerische Bundesbahnen SBB\, Infrastruktur -
+  Einkauf\, Supply Chain und Produktion\, Einkauf Bau Standort Bern\nSubmis
+ sion deadline: 29 Jan 2027\, 15:00\nIn the register: https://auftragsreg
+ ister.ch/en/auftrag/92b6cd3e-73af-44eb-ac37-b89899820197/\nOfficial public
+ ation: https://www.simap.ch/en/project-detail/92b6cd3e-73af-44eb-ac37-b898
+ 99820197
+URL:https://auftragsregister.ch/en/auftrag/92b6cd3e-73af-44eb-ac37-b8989982
+ 0197/
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Submission deadline: UW Zollikofen -Baumeisterarbeiten-
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

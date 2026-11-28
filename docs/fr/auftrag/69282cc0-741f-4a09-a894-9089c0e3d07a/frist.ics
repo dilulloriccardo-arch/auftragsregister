@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:69282cc0-741f-4a09-a894-9089c0e3d07a-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270208T100000Z
+SUMMARY:Délai de remise : Filtres pour installations de ventilation – 
+ Contrat-Cadre
+DESCRIPTION:Acheteur public : Genève Aéroport\nDélai de remise : 08.
+ 02.2027\, 11 h 00\nDans le registre : https://auftragsregister.ch/fr
+ /auftrag/69282cc0-741f-4a09-a894-9089c0e3d07a/\nPublication officielle :
+  https://www.simap.ch/fr/project-detail/69282cc0-741f-4a09-a894-9089c0e3d0
+ 7a
+URL:https://auftragsregister.ch/fr/auftrag/69282cc0-741f-4a09-a894-9089c0e3
+ d07a/
+LOCATION:GENEVE
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Délai de remise : Filtres pour installations de ventilation 
+ – Contrat-Cadre
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

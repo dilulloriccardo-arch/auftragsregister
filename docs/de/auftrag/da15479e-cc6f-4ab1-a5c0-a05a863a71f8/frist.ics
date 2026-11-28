@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:da15479e-cc6f-4ab1-a5c0-a05a863a71f8-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270122T110000Z
+SUMMARY:Eingabefrist: Spital Bülach\, Erweiterung und Erneuerung Behandlun
+ gstrakt\, SKP 272.21 allg. Metallbauarbeiten (Stahlbau)
+DESCRIPTION:Auftraggeber: Spital Bülach AG (Immopro)\nEingabefrist: 22.01.
+ 2027\, 12.00 Uhr\nIm Register: https://auftragsregister.ch/de/auftrag/da1
+ 5479e-cc6f-4ab1-a5c0-a05a863a71f8/\nAmtliche Publikation: https://www.sima
+ p.ch/de/project-detail/da15479e-cc6f-4ab1-a5c0-a05a863a71f8
+URL:https://auftragsregister.ch/de/auftrag/da15479e-cc6f-4ab1-a5c0-a05a863a
+ 71f8/
+LOCATION:Bülach
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Eingabefrist: Spital Bülach\, Erweiterung und Erneuerung Behan
+ dlungstrakt\, SKP 272.21 allg. Metallbauarbeiten (Stahlbau)
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

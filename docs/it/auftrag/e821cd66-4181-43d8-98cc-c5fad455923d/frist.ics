@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//auftragsregister.ch//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:e821cd66-4181-43d8-98cc-c5fad455923d-frist@auftragsregister.ch
+DTSTAMP:20261128T000000Z
+SEQUENCE:0
+DTSTART:20270201T110000Z
+SUMMARY:Scadenza: BKP 250.0 Sanitärinstallationen - Neubau Feuerwehr- und 
+ Werkhofgebäude mit Hauptsammelstelle Gubristhof\, 8104 Weiningen
+DESCRIPTION:Ente pubblico: Rapp AG\nScadenza: 01.02.2027\, 12:00\nNel regis
+ tro: https://auftragsregister.ch/it/auftrag/e821cd66-4181-43d8-98cc-c5fad4
+ 55923d/\nPubblicazione ufficiale: https://www.simap.ch/it/project-detail/e
+ 821cd66-4181-43d8-98cc-c5fad455923d
+URL:https://auftragsregister.ch/it/auftrag/e821cd66-4181-43d8-98cc-c5fad455
+ 923d/
+LOCATION:Weiningen
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Scadenza: BKP 250.0 Sanitärinstallationen - Neubau Feuerwehr- 
+ und Werkhofgebäude mit Hauptsammelstelle Gubristhof\, 8104 Weiningen
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR
